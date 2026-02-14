@@ -1,0 +1,994 @@
+---
+title: "Wrangling ICE Detention Data"
+author: "Carwil Bjork-James"
+format: 
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    code-fold: true
+editor: visual
+---
+
+# Data Sources
+
+We will work from the data spreadsheets provided online at ICE's [Detention Management](https://www.ice.gov/detain/detention-management) page, but will always maintain our own archived versions (as data files in our repository) and check that they are stored on the Internet Archive Wayback Machine for future use.
+
+As of February 4, 2026, we can find:
+
+-   [ Detention FY 2026 YTD, Alternatives to Detention FY 2026 YTD and Facilities FY 2026 YTD, Footnotes (221 KB)](https://www.ice.gov/doclib/detention/FY26_detentionStats02022026.xlsx) `FY26_detentionStats02022026.xlsx`
+
+-   [ Detention FY 2025 YTD, Alternatives to Detention FY 2025 YTD and Facilities FY 2025 YTD, Footnotes (1.5 MB)](https://www.ice.gov/doclib/detention/FY25_detentionStats09242025.xlsx) `FY25_detentionStats09242025.xlsx`
+
+-   [ FY 2024 Detention Statistics](https://www.ice.gov/doclib/detention/FY24_detentionStats.xlsx) `FY24-detentionstats.xlsx`
+
+-   [ FY 2023 Detention Statistics](https://www.ice.gov/doclib/detention/FY23_detentionStats.xlsx) `FY23-detentionstats.xlsx`
+
+-   [ FY 2022 Detention Statistics](https://www.ice.gov/doclib/detention/FY22-detentionStats.xlsx) `FY22-detentionStats.xlsx`
+
+-   [ FY 2021 Detention Statistics](https://www.ice.gov/doclib/detention/FY21-detentionstats.xlsx) `FY21-detentionStats.xlsx`
+
+-   [ FY 2020 Detention Statistics](https://www.ice.gov/doclib/detention/FY20-detentionstats.xlsx) `FY20-detentionstats.xlsx`
+
+-   [ FY 2019 Detention Statistics](https://www.ice.gov/doclib/detention/FY19-detentionstats.xlsx) `FY19-detentionstats.xlsx`
+
+There are subtle changes between the Facilities page on each of these, which will have to take into account as we import them. The import code I created for the first time was built around the FY2026 spreadsheet.
+
+The clean import script for the FY 2026 data is [shared as a gist here](https://gist.github.com/CarwilB/6bf4ab7bbd05c8c0a02552402f17d4f2). Feel free to use or modify it.
+
+## Initial Import
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r libraries}
+#| echo: false
+#| message: false
+library(readxl)
+library(libr)
+library(httr)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(purrr)
+library(tibble)
+```
+
+This code for the download only needs to executed once. The `eval: false` option disables the execution of the code chunk.
+
+```{r download-one-spreadsheet}
+#| eval: false
+
+# Simple single-file version
+data_url <- "https://www.ice.gov/doclib/detention/FY26_detentionStats02022026.xlsx"
+local_file <- "data/FY26_detentionStats02022026.xlsx"
+sheet_name <- "Facilities FY26"
+
+httr::GET(data_url, write_disk(local_file, overwrite = TRUE))
+```
+
+In scaling up to the set of spreadsheets, I had to think about which specifics from them affected my code. This metadata is what I included here: the fiscal year, filenames, name of the sheet within the .xlsx document, position of the header rows, and rightmost column of the data.
+
+This allows for some automatically calculated data for later use, such as the first data row and the number of that rightmost column.
+
+```{r spreadsheet-metadata}
+# Tibble with multiple years
+data_file_info <- tibble(
+  year_name = c("FY19", "FY20", "FY21", "FY22", "FY23",
+    "FY24", "FY25", "FY26"),
+  year = c(2019:2026),
+  url = c("https://www.ice.gov/doclib/detention/FY19-detentionstats.xlsx",
+    "https://www.ice.gov/doclib/detention/FY20-detentionstats.xlsx",
+    "https://www.ice.gov/doclib/detention/FY21-detentionstats.xlsx",
+    "https://www.ice.gov/doclib/detention/FY22-detentionStats.xlsx",
+    "https://www.ice.gov/doclib/detention/FY23_detentionStats.xlsx",
+    "https://www.ice.gov/doclib/detention/FY24_detentionStats.xlsx",
+    "https://www.ice.gov/doclib/detention/FY25_detentionStats09242025.xlsx",
+    "https://www.ice.gov/doclib/detention/FY26_detentionStats02022026.xlsx"),
+  local_file = c("data/FY19-detentionstats.xlsx",
+    "data/FY20-detentionstats.xlsx",
+    "data/FY21-detentionstats.xlsx",
+    "data/FY22-detentionStats.xlsx",
+    "data/FY23_detentionStats.xlsx",
+    "data/FY24_detentionStats.xlsx",
+    "data/FY25_detentionStats09242025.xlsx",
+    "data/FY26_detentionStats02022026.xlsx"),
+  sheet_name = c("Facilities FY19", "Facilities EOYFY20 ", "Facilities FY21 YTD",
+    "Facilities FY22", "Facilities EOFY23",
+    "Facilities EOFY24", "Facilities FY25", "Facilities FY26"),
+  header_rows = list(c(5,7), c(5,7), c(5,7), c(5,7), c(4,6),
+                  c(5,7), c(5,7), c(9,10)),
+  right_column= c("AE", "AE", "AE", "AD", "AG",
+    "AB", "AB", "AA")
+)
+
+LETTERS_PLUS <- c(LETTERS, paste0("A", LETTERS), paste0("B", LETTERS))
+
+data_file_info <- data_file_info %>%
+  rowwise() %>%
+  mutate(
+    first_header_row = unlist(header_rows)[[1]],
+    second_header_row = unlist(header_rows)[[2]],
+    first_data_row = max(unlist(header_rows)) + 1,
+    right_column_num = which(LETTERS_PLUS == right_column)) %>%
+  select(-header_rows)
+
+```
+
+```{r download-multiple-spreadsheets}
+#| eval: false
+
+# Download all files
+for (i in 1:nrow(data_file_info)) {
+  httr::GET(data_file_info$url[i],
+    write_disk(data_file_info$local_file[i], overwrite = FALSE))
+}
+```
+# Importing the variables
+
+Next we import the two-line headers and combine them into variable names. This took a fair amount of experimentation the first time.
+
+```{r import-variable-names}
+#| message: false
+header_rows <- function(data_file_info_row){
+  with(data_file_info_row, {
+    first_row <- read_excel(
+      local_file,
+      sheet = sheet_name,
+      range = cell_limits(
+        ul = c(first_header_row, 1),
+        lr = c(first_header_row, right_column_num)
+      ),
+      col_names = FALSE
+    )
+    second_row <- read_excel(
+      local_file,
+      sheet = sheet_name,
+      range = cell_limits(
+        ul = c(second_header_row, 1),
+        lr = c(second_header_row, right_column_num)
+      ),
+      col_names = FALSE
+    )
+    rbind(first_row, second_row)
+  })
+}
+
+# This single call generates the headers for FY26 as a test
+# raw_headers <- header_rows(data_file_info %>% filter(year_name == "FY26"))
+
+# Create a list of headers for each spreadsheet
+raw_headers_list <- map(1:nrow(data_file_info), function(i) {
+  header_rows(data_file_info[i, ])
+})
+names(raw_headers_list) <- data_file_info$year_name
+```
+
+```{r clean-variable-names}
+# 2. Create Clean Variable Names
+#    - Transpose headers to columns for easier filling
+#    - Fill the top header row (Row 9) downward to cover merged cells
+#    - Remove "FY26"
+#    - Combine Top and Bottom headers
+#    - Format to snake_case (lowercase with underscores)
+clean_variable_names_from_header <- function(raw_headers) {
+  clean_names <- raw_headers %>%
+    t() %>%
+    as.data.frame() %>%
+    fill(V1) %>%                                     # Propagate Row 9 headers
+    mutate(
+      # Remove "FY26" and extra whitespace from both header parts
+      V1 = str_trim(str_remove_all(V1, "FY\\d\\d")),
+      V1 = str_remove_all(V1, ":"), # Remove colons if present
+      V2 = str_trim(str_remove_all(V2, "FY\\d\\d")),
+      V2 = str_remove_all(V2, ":"),
+
+      V1 = case_when( # clean extra words
+        str_detect(V1, "This list") ~ "Facility",
+        V1 == "Facility Information" ~ "Facility",
+#        str_detect(V1, "Average Length of Stay") ~ "ALOS",
+        V1 == "ADP Detainee Classification Level" ~ "ADP Detainee Classification",
+        V1 == "ADP Detainee Security Level" ~ "ADP Detainee Security",
+        V1 == "ADP ICE Threat Level" ~ "ADP",
+        V1 == "ADP Mandatory" ~ "ADP",
+        V1 == "Contract Facility Inspections Information" ~ "Inspections",
+
+        TRUE ~ V1
+      ),
+
+      # Combine Row 9 (V1) and Row 10 (V2)
+      combined = paste(V1, V2),
+
+      # Clean: Lowercase, replace special chars with _, remove duplicates
+      var_name = tolower(combined),
+      var_name = str_replace_all(var_name, "[^a-z0-9]+", "_"),
+      var_name = str_remove_all(var_name, "^_+|_+$") # Remove leading/trailing _
+    ) %>%
+    pull(var_name)
+  clean_names
+}
+
+clean_names_list <- map(raw_headers_list, clean_variable_names_from_header)
+names(clean_names_list) <- data_file_info$year_name
+# clean_names_list$FY24 # This would print out the variables from one sheet
+```
+
+Now we need to check if the variables are the same across multiple years. (Hopefully some of our simplifying helped with that.) This graphing package may seem like overkill, but it really simplified my work here.
+
+```{r compare-variable-names}
+#| warning: false
+library(UpSetR)
+upset_plot <- upset(fromList(clean_names_list),
+                    sets = names(clean_names_list),
+                    order.by = "freq")  # Visual intersection analysis
+upset_plot
+
+# Create a dataframe showing which variables are in which lists
+presence_matrix <- clean_names_list %>%
+  imap_dfr(~ tibble(variable = .x, list_name = .y)) %>%
+  mutate(present = TRUE) %>%
+  pivot_wider(names_from = list_name, values_from = present, values_fill = FALSE)
+```
+
+Looking at that graph, I see that most variables are there in all the data sheets, but there are some differences. We can use the `presence_matrix` dataframe to see which variables are missing from which years.
+
+```{r find-variable-differences}
+# Find FY23-only variables
+vars_in_all <- presence_matrix %>%
+  filter(rowSums(select(., -variable)) == ncol(select(., -variable))) %>%
+  pull(variable)
+
+fy23_only <- presence_matrix %>%
+  filter(FY23 == TRUE & rowSums(select(., -variable, -FY23)) == 0) %>%
+  pull(variable)
+not_in_fy23_22 <- presence_matrix %>%
+  filter(FY23 == FALSE) %>%
+  filter(FY22 == FALSE) %>%
+  pull(variable)
+not_in_fy23 <- presence_matrix %>%
+  filter(FY23 == FALSE) %>%
+  pull(variable)
+```
+
+- **`r length(vars_in_all)` variables in all sheets:** `r vars_in_all`
+- **Variables not in all sheets:** `r setdiff(unlist(clean_names_list), vars_in_all)`
+- **`r length(fy23_only)` variables only in FY23:** `r fy23_only`
+
+Fortunately, nearly all variables are in all years. And the differences in the variables seem to all consist in how inspections are reparted. We may want to think through how to re-create `inspections_last_inspection_date` based on the other data, but I'll ignore that problem for now.
+
+# Importing the data
+
+```{r import-data}
+clean_facility_names <- function(x) {
+  # 1. Base conversion to Title Case
+  x <- str_to_title(x)
+
+  # 2. Typos and Truncations found in your specific list
+  x <- str_replace_all(x, "Facili\\b", "Facility")       # Fixes #3
+  x <- str_replace_all(x, "Processsing", "Processing")   # Fixes #155
+
+  # 3. Expansion Map (Abbreviations -> Full Words)
+  #    Using word boundaries (\\b) to prevent replacing inside other words.
+  expansions <- c(
+    "\\bDept\\.?\\b" = "Department",
+    "\\bCtr\\.?\\b"  = "Center",
+    "\\bCorr\\.?\\b" = "Correctional",
+    "\\bInst\\.?\\b" = "Institution",
+    "\\bFed\\.?\\b"  = "Federal",
+    "\\bDet\\.?\\b"  = "Detention",
+    "\\bFac\\.?\\b"  = "Facility",
+    "\\bCo\\.?\\b"   = "County"
+  )
+
+  x <- str_replace_all(x, expansions)
+
+  # 4. Acronym Restoration (Re-capitalizing)
+  #    These were turned into "Ice", "Mdc" etc. by str_to_title
+  acronyms <- c(
+    "\\bOf\\b" = "of", # keep "of" lowercase
+    "\\bUs\\b" = "US", # keep "US" uppercase; this would'nt work on general text
+    "\\bIce\\b" = "ICE",
+    "\\bEro\\b" = "ERO",
+    "\\bMdc\\b" = "MDC",
+    "\\bCca\\b" = "CCA",
+    "\\bFci\\b" = "FCI",
+    "\\bFdc\\b" = "FDC",
+    "\\bJtf\\b" = "JTF",
+    "\\bSsm\\b" = "SSM",
+    "\\bTgk\\b" = "TGK",
+    "\\bIpc\\b" = "IPC",
+    "\\bSpc\\b" = "SPC",
+    "\\bIah\\b" = "IAH",
+    "\\bClipc\\b" = "CLIPC",
+    "\\bDigsa\\b" = "DIGSA",
+    "\\bIgsa\\b" = "IGSA"
+  )
+
+  x <- str_replace_all(x, acronyms)
+
+  # 5. State Abbreviation Expansions
+  #    Handles both (FL) and comma formats like ", NM"
+  states <- c(
+    "\\(Fl\\)" = "(Florida)",
+    "\\(In\\)" = "(Indiana)",
+    "\\(Mo\\)" = "(Missouri)",
+    "\\(Mt\\)" = "(Montana)",
+    "\\(Ne\\)" = "(Nebraska)",
+    "\\(Ny\\)" = "(New York)",
+    "\\(Tx\\)" = "(Texas)",
+    "\\(Ut\\)" = "(Utah)",
+    ", Nm\\b"  = ", New Mexico",
+    ", Mt\\b"  = ", Montana"
+  )
+
+  x <- str_replace_all(x, states)
+
+  return(x)
+}
+
+
+# 4. Import the "Facilities" sheet
+# facilities_data <- read_xlsx(local_file, sheet = sheet_name)
+
+read_facilities_data <- function(data_file_info_row){
+  with(data_file_info_row, {
+    read_xlsx(
+      local_file,
+      sheet = sheet_name,
+      range = cell_limits(ul = c(first_data_row, 1), lr = c(NA, right_column_num)),
+      col_names = clean_names_list[[year_name]] # Use precomputed clean names
+                                                # A more elegant programming approach,
+                                                # might incorporate them into data_file_info
+    )
+  })
+}
+
+fix_city_names <- function(x) {
+  x <- str_replace_all(x, "Ft.lauderdale", "Fort Lauderdale")
+  x <- str_replace_all(x, "Ft. Lauderdale", "Fort Lauderdale")
+  x <- str_replace_all(x, "Cottonwood Fall", "Cottonwood Falls")
+  x <- str_replace_all(x, "Sault Ste Marie", "Sault Ste. Marie")
+  x <- str_replace_all(x, "Bunkerhill", "Bunker Hill")
+  x <- str_replace_all(x, "Mcelhattan", "McElhattan") 
+  x <- str_replace_all(x, "Mcfarland", "McFarland")
+  x <- str_replace_all(x, "Mccook", "McCook")
+  x <- str_replace_all(x, "Mccall", "McCall")
+  x
+}
+
+clean_facilities_data <- function(facilities_data) {
+  numerical_columns = c("facility_average_length_of_stay_alos", "adp_detainee_classification_level_a",
+                        "adp_detainee_classification_level_b", "adp_detainee_classification_level_c",
+                        "adp_detainee_classification_level_d", "adp_criminality_male_crim",
+                        "adp_criminality_male_non_crim", "adp_criminality_female_crim",
+                        "adp_criminality_female_non_crim", "adp_ice_threat_level_1",
+                        "adp_ice_threat_level_2", "adp_ice_threat_level_3", "adp_no_ice_threat_level",
+                        "adp_mandatory", "inspections_guaranteed_minimum")
+  numerical_columns_present <- numerical_columns[numerical_columns %in% names(facilities_data)]
+
+  facilities_data_clean <- facilities_data %>%
+    mutate(
+      # 1. Convert specific columns to Numeric and round to 1 decimal
+      across(
+        .cols = facility_average_length_of_stay_alos:adp_mandatory,
+        .fns = ~ round(as.numeric(.), 1)
+      ),
+
+      # 2. Convert Guaranteed Minimum to Integer
+      inspections_guaranteed_minimum = as.integer(inspections_guaranteed_minimum),
+
+      # Standardize Last Inspection Type values
+      inspections_last_inspection_type = case_when(
+        inspections_last_inspection_type %in% c("PRE-OCCUPANCY", "Pre-Occupancy") ~
+          "PREOCC", # Standardize Pre-Occupancy
+        TRUE ~ inspections_last_inspection_type
+      ),
+
+      # Adjust capitalization
+      facility_name = clean_facility_names(facility_name),
+      facility_city = str_to_title(facility_city),
+      facility_address = str_to_title(facility_address),
+      facility_male_female = str_to_title(facility_male_female),
+      
+      # Some minor name clean up
+      facility_city = fix_city_names(facility_city),
+
+      # 4. Ensure all other columns are Characters (as requested)
+      #    We exclude the columns we just processed to avoid overwriting them
+      across(
+        .cols = -numerical_columns_present,
+        .fns = as.character
+      )
+    ) 
+  guantanamo_patch <- tibble(
+    facility_name = "JTF Camp Six",
+    facility_city = "Guantanamo Bay",
+    facility_state = "Cuba",
+    facility_address = "Bldg 2144, U.S. Naval Station Guantanamo Bay",
+  )
+  facilities_data_clean <- facilities_data_clean %>%
+    rows_update(guantanamo_patch, by = "facility_name", unmatched = "ignore")
+      # ignore because the Guantanamo patch doesn't apply to earlier years
+    
+  facilities_data_clean
+}
+
+aggregate_facilties_data <- function(facilities_data) {
+  facilities_data <- facilities_data %>%
+    mutate(
+      sum_classification_levels = rowSums(
+        select(., starts_with("adp_detainee_classification_level_")),
+        na.rm = TRUE
+      ),
+      sum_criminality_levels = rowSums(
+        select(., starts_with("adp_criminality_")),
+        na.rm = TRUE
+      ),
+      sum_threat_levels = rowSums(
+        select(., starts_with("adp_ice_threat_level_")|(starts_with("adp_no_ice_threat_level"))),
+        na.rm = TRUE
+      )
+    ) %>%
+    mutate(
+      share_non_crim = (adp_criminality_male_non_crim + adp_criminality_female_non_crim) / sum_criminality_levels,
+      share_no_threat = ( adp_no_ice_threat_level) / sum_threat_levels
+    ) %>%
+  # Assign type
+    mutate(
+      facility_type_wiki = case_when(
+        str_detect(facility_type_detailed, "IGSA") ~ "Jail",
+        str_detect(facility_type_detailed, "USMS IGA") ~ "Jail",
+        str_detect(facility_type_detailed, "DIGSA") ~ "Dedicated Migrant Detention Center",
+        str_detect(facility_type_detailed, "STATE") ~ "State Migrant Detention Center",
+        str_detect(facility_type_detailed, "BOP") ~ "Federal Prison",
+        str_detect(facility_type_detailed, "Family") ~ "Private Family Detention Center",
+        str_detect(facility_type_detailed, "CDF") ~ "Private Migrant Detention Center",
+        str_detect(facility_type_detailed, "USMS CDF") ~ "Private Migrant Detention Center",
+        str_detect(facility_type_detailed, "SPC") ~ "ICE Migrant Detention Center",
+        str_detect(facility_type_detailed, "STAGING") ~ "ICE Short-Term Migrant Detention Center",
+        str_detect(facility_type_detailed, "DOD") ~ "Military Detention Center",
+        TRUE ~ "Other"
+      )
+    )
+}
+
+# facilities_data_list <- map(1:nrow(data_file_info), function(i)
+#   read_facilities_data(data_file_info[i, ])
+# )
+# names(facilities_data_list) <- 
+
+facilities_data_list <- map(1:nrow(data_file_info), function(i)
+  read_facilities_data(data_file_info[i, ]) %>%
+    clean_facilities_data() %>%
+    aggregate_facilties_data()
+)
+names(facilities_data_list) <- data_file_info$year_name
+
+```
+
+```{r facility-name-alignment}
+# Check for facility name alignment across years
+facility_names_list <- map(facilities_data_list, ~ {
+  if ("facility_name" %in% names(.x)) {
+    unique(.x$facility_name)
+  } else {
+    character(0)
+  }
+})
+
+names(facility_names_list) <- names(clean_names_list)
+
+upset_plot_2 <- upset(fromList(facility_names_list),
+                    sets = names(facility_names_list),
+                    keep.order = T,
+                    order.by = "degree")  # Visual intersection analysis
+upset_plot_2
+
+presence_matrix_facilities <- facility_names_list %>%
+  imap_dfr(~ tibble(facility_name = .x, list_name = .y)) %>%
+  mutate(present = TRUE) %>%
+  pivot_wider(names_from = list_name, values_from = present, values_fill = FALSE)
+
+presence_matrix_facilities <- presence_matrix_facilities %>%
+  mutate(num_lists_present = rowSums(select(., -facility_name)))
+
+presence_matrix_facilities %>% count(num_lists_present)
+
+presence_matrix_facilities %>%
+  filter((num_lists_present == 1) & (FY26)) %>%
+  pull(facility_name)
+
+all_facility_names <- unlist(facility_names_list, use.names = FALSE)
+
+current_facility_names <- unique(facility_names_list$FY26)
+
+```
+
+# Harmonize Names with Wikipedia Page
+```{r harmonize-with-wikipedia}
+library(httr)
+library(rvest)
+
+# 1. Define URL and Fetch Page
+url <- "https://en.wikipedia.org/w/index.php?title=List_of_immigrant_detention_sites_in_the_United_States&oldid=1334453072"
+response <- GET(url)
+page <- read_html(content(response, as = "text"))
+
+# 2. Select the target table node
+table_node <- html_element(page, "table.wikitable")
+
+# 3. Extract the standard table text
+w_detention_sites_tb <- html_table(table_node)
+
+# 4. Extract links from the first column specifically
+# We select all rows, then extract the 'href' from the 'a' tag in the first 'td'
+rows <- html_elements(table_node, "tr")
+
+# Note: We use map_chr to ensure we handle rows without links (like headers) correctly
+links <- map_chr(rows, function(row) {
+  # Look for the first data cell, then an anchor tag inside it
+  link_node <- html_element(row, "td:first-child a")
+  href <- html_attr(link_node, "href")
+  
+  if (is.na(href)) {
+    return(NA_character_)
+  } else {
+    # Construct full URL
+    return(paste0("https://en.wikipedia.org", href))
+  }
+})
+
+# 5. Clean and Merge
+# Remove the first element of links if it corresponds to the header row
+if (length(links) > nrow(w_detention_sites_tb)) {
+  links <- links[(length(links) - nrow(w_detention_sites_tb) + 1):length(links)]
+}
+
+w_detention_sites_tb <- w_detention_sites_tb %>%
+  add_column(link = links, .after = 1) %>%
+  as_tibble()
+
+clean_variable_names <- function(df) {
+  df %>%
+    rename_with(~ str_replace_all(., "[^a-zA-Z0-9]+", "_")) %>%
+    rename_with(~ str_remove_all(., "^_+|_+$")) %>%
+    rename_with(tolower)
+}
+
+w_detention_sites_tb <- clean_variable_names(w_detention_sites_tb) %>%
+  mutate(
+    wiki_slug = case_when(
+      str_detect(link, "/wiki/") ~ {
+        # Extract everything after /wiki/
+        slug <- str_extract(link, "(?<=/wiki/).*")
+        str_replace_all(slug, "_", " ")
+      },
+      TRUE ~ ""  # Return empty string if /wiki/ is not found
+    )
+  ) %>%
+  separate(location, into = c("city", "state"), 
+             sep = ",\\s*", extra = "merge", fill = "right")
+
+# Optional: Final cleanup of text and brackets
+w_detention_sites_tb <- w_detention_sites_tb %>%
+  mutate(across(where(is.character), ~ gsub("\\[\\d+\\]", "", .)))
+
+print(w_detention_sites_tb)
+
+```
+
+```{r check-wikipedia-alignment}
+compare_ice_wiki_duplicates <- function(ice_df, wiki_df) {
+  
+  # 1. Prepare ICE Data
+  ice_clean <- ice_df %>%
+    transmute(
+      original_name = facility_name,
+      clean_name  = str_to_upper(str_trim(facility_name)),
+      clean_city  = str_to_upper(str_trim(facility_city)),
+      # Standardizing state to full name upper case to match wiki
+      clean_state = str_to_upper(state.name[match(facility_state, state.abb)]),
+      source      = "ICE"
+    )
+
+  # 2. Prepare Wikipedia Data
+  wiki_clean <- wiki_df %>%
+#    separate(location, into = c("city", "state"), 
+#             sep = ",\\s*", extra = "merge", fill = "right") %>%
+    transmute(
+      original_name = name, # Use lowercase 'name'
+      clean_name  = str_to_upper(str_trim(name)),
+      clean_city  = str_to_upper(str_trim(city)),
+      clean_state = str_to_upper(str_trim(state)),
+      source      = "Wiki"
+    )
+
+  # 3. Combine and find location-based variants
+  comparison <- bind_rows(ice_clean, wiki_clean) %>%
+    filter(!is.na(clean_city), !is.na(clean_state)) %>%
+    group_by(clean_city, clean_state) %>%
+    summarise(
+      num_variants = n_distinct(clean_name),
+      in_both = all(c("ICE", "Wiki") %in% source),
+      
+      # Extract names assigned to ICE source
+      ice_variants = paste(unique(original_name[source == "ICE"]), collapse = " | "),
+      
+      # Extract names assigned to Wiki source
+      wiki_variants = paste(unique(original_name[source == "Wiki"]), collapse = " | "),
+      
+      # Keep the combined version for reference
+      all_name_variants = paste(unique(original_name), collapse = " | "),
+      
+      sources = paste(unique(source), collapse = " & "),
+      .groups = "drop"
+    ) %>%
+    filter(num_variants > 1) %>%
+    mutate(location = paste(clean_city, clean_state, sep = ", ")) %>%
+    select(location, num_variants, in_both, ice_variants, wiki_variants, all_name_variants, sources) %>%
+    arrange(desc(num_variants), desc(in_both))
+
+  return(comparison)
+}
+
+names_with_wikilinks <- w_detention_sites_tb %>%
+  filter(wiki_slug != "") %>%
+  pull(name)
+
+names_with_management_info <- w_detention_sites_tb %>%
+  filter(management != "") %>%
+  pull(name)
+
+duplicate_table <- compare_ice_wiki_duplicates(facilities_data_list$FY26,
+                                               w_detention_sites_tb) %>%
+  filter(in_both) %>% 
+  filter(num_variants >= 2) %>% 
+  select(ice_variants, wiki_variants, location) %>%
+  mutate(has_wiki_link = case_when(
+    str_detect(wiki_variants, "\\|") ~ FALSE,  # "multiple wiki variants",
+    str_trim(wiki_variants) %in% names_with_wikilinks ~ TRUE,
+    TRUE ~ FALSE)) %>%
+  mutate(has_management_info = case_when(
+    str_detect(wiki_variants, "\\|") ~ FALSE,  # "multiple wiki
+    str_trim(wiki_variants) %in% names_with_management_info ~ TRUE,
+    TRUE ~ FALSE))
+
+wiki_name_match_table <- duplicate_table %>%
+  filter(!str_detect(ice_variants, "\\|")) %>%
+  filter(!str_detect(wiki_variants, "\\|")) %>% 
+  filter(has_wiki_link | has_management_info)
+
+# hand verified
+does_not_match <- c("Farmville Detention Center", 
+                    "Dallas County Jail - Lew Sterrett Justice Center",
+                    "Leavenworth US Penitentiary",
+                    "IAH Secure Adult Detention Facility (Polk)",
+                    "FDC Philadelphia",
+                    "El Valle Detention Facility",
+                    "Greene County Jail")
+
+wiki_name_match_table <- wiki_name_match_table %>% 
+  filter(!(ice_variants %in% does_not_match))
+
+nrow(wiki_name_match_table) 
+
+```
+
+Current status: 
+- 36 city/state matches, most of which are the same facility with different names (`duplicate_table %>% filter(in_both) %>% filter(num_variants ==2) %>% select(4, 5) %>% print(n=100)`)
+- 50 with the same name in FY26 ICE data and on Wikipedia (` which(current_facility_names %in% w_detention_sites_tb$Name)`)
+
+But 223 are listed for FY26 altogether and 395 are on the Wikipedia page. So a lot more to characterize. (Most of these might by in other places and the city/state data might be enough for that; just 17 on the Wikipedia page lack a location `w_detention_sites_tb %>% filter(Location=="")`, but 15 of these have a link.)
+
+Next step is to check for how many of the items with Wikipedia links are in these sets, because those matches are most important.
+
+Further step is to merge these tables together and integrate the Wikipedia links and useful Wikipedia data, which is mostly the Management column.
+
+```{r add-match-table-to-fy26-ice-data}
+# Generate a match table based on city/state matches and Wikipedia links
+
+
+# Add a match column to the FY26 ICE data 
+# indicating if there's a Wikipedia match
+facilities_data_merged <- list()
+facilities_data_merged$FY26 <- facilities_data_list$FY26 %>%
+  mutate(
+    clean_state = state.name[match(facility_state, state.abb)]
+  ) %>%
+  mutate(wiki_match = case_when(
+    # Condition 1: Exact match in the main wiki table
+    facility_name %in% w_detention_sites_tb$name ~ facility_name,
+    
+    # Condition 2: Match via the lookup table
+    facility_name %in% wiki_name_match_table$ice_variants ~ 
+      wiki_name_match_table$wiki_variants[match(facility_name, wiki_name_match_table$ice_variants)],
+    TRUE ~ NA_character_
+  )) %>%
+  left_join(
+    select(w_detention_sites_tb, name, state, wiki_slug, management),
+    by = c("wiki_match" = "name", "clean_state" = "state")
+  ) 
+
+facilities_data_merged$FY26 %>% 
+  filter(!is.na(wiki_match)) %>%
+  relocate(facility_name, wiki_match, wiki_slug, management) %>% print(n=100)
+  
+
+contractors_fy26_patch <-
+  read.csv(here::here("data","contractors-patch-fy26.csv")) 
+names(contractors_fy26_patch) <- c("facility_name", "location", "management")
+
+facilities_data_merged$FY26 <- facilities_data_merged$FY26 %>%
+  rows_update(select(contractors_fy26_patch, facility_name, management),
+              by ="facility_name",
+              unmatched = "ignore") 
+```
+
+
+```{r format-wikitable}
+facilities_wikitable_from_merged <- function(facilties_data, year_name) {
+  wiki_table <- facilties_data %>%
+    mutate(
+      facility_name_wiki = case_when(
+        facility_name == wiki_slug ~ paste0("[[", facility_name, "]]"),
+        wiki_slug != "" ~ paste0("[[", wiki_slug, "|", facility_name, "]]"),
+        TRUE ~ facility_name
+      ),
+      city_state = paste0(facility_city, ", ", facility_state),
+      city_state_wiki = paste0("[[", city_state, "]]"),
+      status = paste0("In use (", year_name, ")"),
+      location = city_state_wiki,
+      authority = facility_type_detailed,
+      #           management = "",
+      average_daily_population = round(sum_criminality_levels),
+      minimum_capacity = inspections_guaranteed_minimum,
+      demographics = facility_male_female) %>%
+    select(
+      facility_name_wiki,
+      status,
+      location,
+      facility_type_wiki,
+      authority,
+      management,
+      average_daily_population,
+      minimum_capacity,
+      demographics)
+} 
+
+
+  
+# Function to print a data frame as a MediaWiki table
+
+table_column_names <- c(
+    "Facility Name",
+    "Status (year)",
+    "Location",
+    "Facility Type",
+    "Authority",
+    "Management",
+    "Average Daily Population",
+    "Minimum Capacity",
+    "Demographics"
+  )
+
+get_wikitable <- function(df, caption = NULL, class = "wikitable sortable",
+                            column_names = NULL) {
+  # Initialize an empty character vector to store lines
+  out <- c()
+
+  # 1. Start Table
+  out <- c(out, paste0('{| class="', class, '"'))
+
+  # 2. Add Caption (Optional)
+  if (!is.null(caption)) {
+    out <- c(out, paste0("|+ ", caption))
+  }
+
+  # 3. Header Row
+  # Use provided column_names if available, otherwise use dataframe names
+  if (is.null(column_names)) {
+    column_names <- names(df)
+  }
+  
+  # Use ! for headers, separating with !!
+  out <- c(out, paste0("! ", paste(column_names, collapse = " !! ")))
+
+  # 4. Data Rows
+  formatted_rows <- apply(df, 1, function(row) {
+    # Convert to character and escape pipes
+    row_clean <- gsub("\\|", "|", as.character(row))
+    # Replace NAs with empty string
+    row_clean[is.na(row_clean)] <- ""
+
+    paste0("| ", paste(row_clean, collapse = " || "))
+  })
+
+  # Add each row preceded by the row separator |-
+  # Interleave "|-" with the formatted row strings
+  out <- c(out, paste0("|-\n", formatted_rows))
+
+  # 5. End Table
+  out <- c(out, "|}")
+
+  # Combine all elements into a single string separated by newlines
+  return(paste(out, collapse = "\n"))
+}
+```
+
+```{r enable-copy-to-wikitext, echo=FALSE}
+source(here::here("src","gh-copy-assets.R"), local = knitr::knit_global())
+include_table_assets() # This injects the CSS and JS once
+```
+
+```{r output-wikitable}
+facilities_wikitable <- facilities_data_merged$FY26 %>% 
+  facilities_wikitable_from_merged(year_name = "FY26")
+
+
+
+
+
+year_name <- "FY26"
+get_wikitable(facilities_wikitable, 
+                  caption = paste0("ICE Detention Facilities in ", year_name),
+                  column_names = table_column_names) %>%
+  copy_to_clipboard_button_wt()
+```
+
+Update complete.
+
+```{r treemap}
+library(treemap)
+
+facilities_data_current <- facilities_data_merged$FY26 %>%
+  mutate(
+    adp = rowSums(select(., starts_with("adp_criminality_")), na.rm = TRUE),
+    management = replace_na(management, "")
+  )
+
+facilities_data_current %>%
+  group_by(facility_type_wiki, facility_state) %>%
+  summarise(total_adp = sum(adp))
+
+library(treemapify)
+library(dplyr)
+
+# 1. Prepare your data
+# We group by both levels to get the aggregate 'value' for each state within each type
+library(dplyr)
+library(tidyr) # for replace_na
+
+plot_data <- facilities_data_current %>%
+  # 1. First, handle the NAs in management so the logic works
+  mutate(management = replace_na(as.character(management), "")) %>%
+  
+  # 2. Group by ALL variables you need for the final label
+  group_by(facility_type_wiki, facility_state, facility_name, management) %>%
+  
+  # 3. Sum the ADP
+  summarise(total_adp = sum(adp, na.rm = TRUE), .groups = "drop") %>%
+  
+  # 4. Filter and Round
+  filter(total_adp > 0) %>%
+  mutate(total_adp = round(total_adp)) %>%
+  
+  # 5. Create the label now that management is present in the dataframe
+  mutate(display_label = case_when(
+    management == "" ~ paste0(facility_name, " (", facility_state, ")\n", 
+                              format(total_adp, big.mark = ",")),
+    TRUE             ~ paste0(facility_name, " (", management, " / ", facility_state, ")\n", 
+                              format(total_adp, big.mark = ","))
+  ))
+
+# 2. Create the Plot
+p <- ggplot(plot_data, aes(
+    area = total_adp, 
+    fill = facility_type_wiki, 
+    label = display_label, 
+    subgroup = facility_type_wiki
+  )) +
+  # Main tiles - thin white lines for the "leaf" nodes
+  geom_treemap(color = "white", size = 0.5) + 
+  
+  # Thicker borders to define the Facility Type groups
+  geom_treemap_subgroup_border(color = "white", size = 2.5) +
+  
+  # Child labels (State + ADP) in top-left
+  geom_treemap_text(
+    colour = "black", 
+    place = "topleft", 
+    size = 9, 
+    grow = FALSE, 
+    reflow = TRUE,
+    padding.x = unit(1.5, "mm"),
+    padding.y = unit(1.5, "mm"),
+    min.size = 4 # Smallest font size to allow before hiding text
+  ) +
+  
+  # Visual Styling
+  scale_fill_brewer(palette = "Set3") + # Soft, categorical D3-like palette
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    plot.title = element_text(face = "bold")
+  ) +
+  labs(
+    title = "Average Daily Population of detainees by facility type",
+    fill = "Facility Type",
+    caption = "Box area is proportional to Total ADP"
+  )
+
+print(p)
+
+```
+
+```{r treemap-2}
+# 1. Data Preparation
+plot_data <- facilities_data_current %>%
+  # Handle NAs immediately
+  mutate(management = replace_na(as.character(management), "")) %>%
+  # Group by the three nesting levels + management for the label
+  group_by(facility_state, facility_type_wiki, facility_name, management) %>%
+  summarise(total_adp = sum(adp, na.rm = TRUE), .groups = "drop") %>%
+  filter(total_adp > 0) %>%
+  mutate(
+    total_adp = round(total_adp),
+    # Constructing the requested label
+    display_label = case_when(
+      management == "" ~ paste0(facility_name, " (", facility_state, ")\n", 
+                                format(total_adp, big.mark = ",")),
+      TRUE             ~ paste0(facility_name, " (", management, " ", facility_state, ")\n", 
+                                format(total_adp, big.mark = ","))
+    )
+  )
+
+# 2. Create the Triple-Nested Treemap
+p <- ggplot(plot_data, aes(
+    area = total_adp, 
+    fill = facility_state,          # Color by State for high-level visual grouping
+    label = display_label, 
+    subgroup = facility_state,      # Level 1: State
+    subgroup2 = facility_type_wiki  # Level 2: Type
+  )) +
+  # Main tiles for individual facilities
+  geom_treemap(color = "white", size = 0.5) + 
+  
+  # Thick borders for States
+  geom_treemap_subgroup_border(color = "white", size = 4) +
+  
+  # Thinner borders for Facility Types within states
+  geom_treemap_subgroup2_border(color = "white", size = 1.5, linetype = "dashed") +
+  
+  # State Labels (Upper Left of the state block)
+  geom_treemap_subgroup_text(
+    place = "topleft", 
+    grow = FALSE, 
+    alpha = 0.7, 
+    colour = "white", 
+    fontface = "bold",
+    size = 14
+  ) +
+  
+  # Individual Facility Labels (The detailed labels)
+  geom_treemap_text(
+    colour = "black", 
+    place = "topleft", 
+    size = 9,             # Smaller size for high density
+    grow = FALSE, 
+    reflow = TRUE,
+    padding.x = unit(1, "mm"),
+    padding.y = unit(1, "mm"),
+    min.size = 3
+  ) +
+  
+  # Styling
+  scale_fill_viridis_d(option = "turbo", guide = "none") + 
+  theme_minimal() +
+  labs(
+    title = "Facility ADP: Nested by State and Type",
+    subtitle = "Solid lines: State | Dashed lines: Facility Type",
+    caption = "Area represents Total ADP"
+  )
+
+print(p)
+```
