@@ -52,6 +52,7 @@ library(stringr)
 library(tidyr)
 library(purrr)
 library(tibble)
+library(WikipediR)
 ```
 
 This code for the download only needs to executed once. The `eval: false` option disables the execution of the code chunk.
@@ -322,6 +323,23 @@ clean_facility_names <- function(x) {
   )
 
   x <- str_replace_all(x, states)
+  
+  # Facility Name Specific Fixes
+  names <- c(
+    "CCA, Florence Correctional Center" = "Central Arizona Florence Correctional Complex",
+    "Eloy Federal Contract Facility" = "Eloy Detention Center",
+    "T Don Hutto Detention Center" = "T. Don Hutto Detention Center",
+    "Torrance/Estancia, New Mexico" = "Torrance County Detention Facility",
+    "Houston Contract Detention Facility" = "Houston Processing Center",
+    "Elizabeth Contract Detention Facility" = "Elizabeth Detention Center",
+    "Folkston D Ray ICE Processing Center" = "Folkston ICE Processing Center",
+     "Robert A Deyton Detention Facility" = "Robert A. Deyton Detention Center",
+    "ERO El Paso Camp East Montana" = "Camp East Montana",
+    "Port Isabel SPC" = "Port Isabel Detention Center",
+    "Bluebonnet Detention Facility" = "Bluebonnet Detention Center"
+  )
+  
+  x <- str_replace_all(x, names)
 
   return(x)
 }
@@ -545,8 +563,17 @@ if (length(links) > nrow(w_detention_sites_tb)) {
 }
 
 w_detention_sites_tb <- w_detention_sites_tb %>%
-  add_column(link = links, .after = 1) %>%
-  as_tibble()
+  add_column(link = links, .after = 1)%>%
+  mutate(linked_article = case_when(
+    str_detect(link, "/wiki/") ~ {
+      # Extract everything after /wiki/
+      slug <- str_extract(link, "(?<=/wiki/).*")
+      str_replace_all(slug, "_", " ")
+    },
+    TRUE ~ NA_character_),
+    #extract text befoe any parentheses or brackets for the primary name
+    primary_name = str_extract(Name, "^[^\\(]+") # Extract text before any parentheses
+  )
 
 clean_variable_names <- function(df) {
   df %>%
@@ -684,6 +711,55 @@ Next step is to check for how many of the items with Wikipedia links are in thes
 
 Further step is to merge these tables together and integrate the Wikipedia links and useful Wikipedia data, which is mostly the Management column.
 
+```{r search-wikipedia-for-matches-to-fy26}
+source("src/add-wikipedia-matches.R")
+
+# To generate this table, we're actually inserting this code
+# AFTER the next chunk (add-match-table-to-fy26-ice-data), but
+# it's easier to insert the results here instead of making a 
+# more complex case_when statement.
+
+# Heads up: this is a very slow function call!
+# facilities_fy26_wiki_matches <- facilities_data_merged$FY26 %>%
+#  add_wikipedia_matches(name_col = "facility_name")
+# saveRDS(facilities_fy26_wiki_matches, here::here("data", "facilities_fy26_wiki_matches.rds"))
+#
+facilities_fy26_wiki_matches <- readRDS(here::here("data", "facilities_fy26_wiki_matches.rds"))
+
+facilities_fy26_wiki_matches %>% 
+  count(!is.na(wiki_match), wikipedia_match) %>%
+  rename(previous_match = 1,
+         match_by_wikipedia_search = 2)
+  
+
+facilities_fy26_wiki_matches %>% 
+  filter(wikipedia_match) %>% 
+  select(1, facility_state, 36) 
+
+exclude_list <- c("Boone County Jail",
+                  "Davis County",
+                  "Douglas County",
+                  "Franklin County Jail", # needs new page for new jail in C, PA
+                  "Jefferson County Jail", # no page for Idaho jail
+                  "Lawrence County",
+                  "Pottawattamie County Jail", # references historic site; needs new page
+                  "Southern Regional"
+                  )
+
+facilities_fy26_wiki_match_list <- facilities_fy26_wiki_matches %>%
+  filter(wikipedia_match) %>% 
+  filter(!is.na(wiki_match)) %>% #new matches only
+  filter(!facility_name %in% exclude_list) %>%
+  select(1, wikipedia_title) 
+
+
+
+# Notes on better names:
+# "Davis County" > "Davis County Correctional Facility" (Utah) / no wiki page
+# "Southern Regional" > "Southern Regional Jail and Correctional Facility"
+
+```
+
 ```{r add-match-table-to-fy26-ice-data}
 # Generate a match table based on city/state matches and Wikipedia links
 
@@ -702,6 +778,11 @@ facilities_data_merged$FY26 <- facilities_data_list$FY26 %>%
     # Condition 2: Match via the lookup table
     facility_name %in% wiki_name_match_table$ice_variants ~ 
       wiki_name_match_table$wiki_variants[match(facility_name, wiki_name_match_table$ice_variants)],
+    
+    # Condition 3: Match via the Wikipedia search function
+    facility_name %in% facilities_fy26_wiki_match_list$facility_name ~
+      facilities_fy26_wiki_match_list$wikipedia_title[match(facility_name, facilities_fy26_wiki_match_list$facility_name)],
+    
     TRUE ~ NA_character_
   )) %>%
   left_join(
@@ -713,10 +794,37 @@ facilities_data_merged$FY26 %>%
   filter(!is.na(wiki_match)) %>%
   relocate(facility_name, wiki_match, wiki_slug, management) %>% print(n=100)
   
+# Hunting for extra matches to perfect this patch
+#
+# ice_fy26_locations <- facilities_data_merged$FY26 %>% 
+#   transmute(facility_name, location = paste0(facility_city, ", ", facility_state))
+# 
+# contractors_fy26_patch %>%
+#   mutate(matched = facility_name %in% facilities_data_merged$FY26$facility_name) %>% 
+#   filter(!matched) %>% 
+#   mutate(matched_location = location %in% ice_fy26_locations$location) %>%
+#   mutate(matched_ice_facility = ice_fy26_locations$facility_name[match(location, ice_fy26_locations$location)]) %>%
+#   arrange(matched_location) %>%
+#   filter(matched_location) %>%
+#   select(1, 6, 2) -> contractors_fy26_location_matches
+# 
+# contractors_fy26_location_matches[c(5, 8, 16), c(1,2)] %>% dput
 
 contractors_fy26_patch <-
   read.csv(here::here("data","contractors-patch-fy26.csv")) 
 names(contractors_fy26_patch) <- c("facility_name", "location", "management")
+
+name_fixes <- tibble(facility_name = c("Dallas Transitional Center", 
+                       "West Tennessee Detention Facility"),
+                     matched_ice_facility = c("Dallas County Jail - Lew Sterrett Justice Center", 
+                            "Western Tennessee Detention Facility")
+                     )
+
+contractors_fy26_patch <- contractors_fy26_patch %>%
+  left_join(name_fixes, by = "facility_name") %>%
+  mutate(facility_name = coalesce(matched_ice_facility, facility_name)) %>%
+  select(-matched_ice_facility)
+
 
 facilities_data_merged$FY26 <- facilities_data_merged$FY26 %>%
   rows_update(select(contractors_fy26_patch, facility_name, management),
@@ -725,13 +833,22 @@ facilities_data_merged$FY26 <- facilities_data_merged$FY26 %>%
 ```
 
 
+
 ```{r format-wikitable}
 facilities_wikitable_from_merged <- function(facilties_data, year_name) {
+  if (!"wiki_match" %in% names(facilties_data)) {
+    facilities_data <- facilities_data %>%
+      mutate(
+        wiki_match = NA_character_
+      )
+  }
+  
   wiki_table <- facilties_data %>%
     mutate(
       facility_name_wiki = case_when(
         facility_name == wiki_slug ~ paste0("[[", facility_name, "]]"),
         wiki_slug != "" ~ paste0("[[", wiki_slug, "|", facility_name, "]]"),
+        (wiki_match != "") & (!is.na(wiki_match)) ~ paste0("[[", wiki_match, "|", facility_name, "]]"),
         TRUE ~ facility_name
       ),
       city_state = paste0(facility_city, ", ", facility_state),
@@ -839,6 +956,7 @@ Update complete.
 
 ```{r treemap}
 library(treemap)
+library(ggplot2)
 
 facilities_data_current <- facilities_data_merged$FY26 %>%
   mutate(
