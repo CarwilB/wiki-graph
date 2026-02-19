@@ -423,146 +423,163 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, states)</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x)</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Import the "Facilities" sheet</span></span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="co"># facilities_data &lt;- read_xlsx(local_file, sheet = sheet_name)</span></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>read_facilities_data <span class="ot">&lt;-</span> <span class="cf">function</span>(data_file_info_row){</span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(data_file_info_row, {</span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_xlsx</span>(</span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>      local_file,</span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>      <span class="at">sheet =</span> sheet_name,</span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a>      <span class="at">range =</span> <span class="fu">cell_limits</span>(<span class="at">ul =</span> <span class="fu">c</span>(first_data_row, <span class="dv">1</span>), <span class="at">lr =</span> <span class="fu">c</span>(<span class="cn">NA</span>, right_column_num)),</span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>      <span class="at">col_names =</span> clean_names_list[[year_name]] <span class="co"># Use precomputed clean names</span></span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>                                                <span class="co"># A more elegant programming approach,</span></span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>                                                <span class="co"># might incorporate them into data_file_info</span></span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Facility Name Specific Fixes</span></span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>  names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>    <span class="st">"CCA, Florence Correctional Center"</span> <span class="ot">=</span> <span class="st">"Central Arizona Florence Correctional Complex"</span>,</span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Eloy Federal Contract Facility"</span> <span class="ot">=</span> <span class="st">"Eloy Detention Center"</span>,</span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>    <span class="st">"T Don Hutto Detention Center"</span> <span class="ot">=</span> <span class="st">"T. Don Hutto Detention Center"</span>,</span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Torrance/Estancia, New Mexico"</span> <span class="ot">=</span> <span class="st">"Torrance County Detention Facility"</span>,</span>
+<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Houston Contract Detention Facility"</span> <span class="ot">=</span> <span class="st">"Houston Processing Center"</span>,</span>
+<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Elizabeth Contract Detention Facility"</span> <span class="ot">=</span> <span class="st">"Elizabeth Detention Center"</span>,</span>
+<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Folkston D Ray ICE Processing Center"</span> <span class="ot">=</span> <span class="st">"Folkston ICE Processing Center"</span>,</span>
+<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>     <span class="st">"Robert A Deyton Detention Facility"</span> <span class="ot">=</span> <span class="st">"Robert A. Deyton Detention Center"</span>,</span>
+<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ERO El Paso Camp East Montana"</span> <span class="ot">=</span> <span class="st">"Camp East Montana"</span>,</span>
+<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Port Isabel SPC"</span> <span class="ot">=</span> <span class="st">"Port Isabel Detention Center"</span>,</span>
+<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Bluebonnet Detention Facility"</span> <span class="ot">=</span> <span class="st">"Bluebonnet Detention Center"</span></span>
+<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, names)</span>
+<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x)</span>
 <span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>fix_city_names <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Ft.lauderdale"</span>, <span class="st">"Fort Lauderdale"</span>)</span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Ft. Lauderdale"</span>, <span class="st">"Fort Lauderdale"</span>)</span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Cottonwood Fall"</span>, <span class="st">"Cottonwood Falls"</span>)</span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Sault Ste Marie"</span>, <span class="st">"Sault Ste. Marie"</span>)</span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Bunkerhill"</span>, <span class="st">"Bunker Hill"</span>)</span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mcelhattan"</span>, <span class="st">"McElhattan"</span>) </span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mcfarland"</span>, <span class="st">"McFarland"</span>)</span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mccook"</span>, <span class="st">"McCook"</span>)</span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mccall"</span>, <span class="st">"McCall"</span>)</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>  x</span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>clean_facilities_data <span class="ot">&lt;-</span> <span class="cf">function</span>(facilities_data) {</span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>  numerical_columns <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"facility_average_length_of_stay_alos"</span>, <span class="st">"adp_detainee_classification_level_a"</span>,</span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_detainee_classification_level_b"</span>, <span class="st">"adp_detainee_classification_level_c"</span>,</span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_detainee_classification_level_d"</span>, <span class="st">"adp_criminality_male_crim"</span>,</span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_criminality_male_non_crim"</span>, <span class="st">"adp_criminality_female_crim"</span>,</span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_criminality_female_non_crim"</span>, <span class="st">"adp_ice_threat_level_1"</span>,</span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_ice_threat_level_2"</span>, <span class="st">"adp_ice_threat_level_3"</span>, <span class="st">"adp_no_ice_threat_level"</span>,</span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_mandatory"</span>, <span class="st">"inspections_guaranteed_minimum"</span>)</span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a>  numerical_columns_present <span class="ot">&lt;-</span> numerical_columns[numerical_columns <span class="sc">%in%</span> <span class="fu">names</span>(facilities_data)]</span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a>  facilities_data_clean <span class="ot">&lt;-</span> facilities_data <span class="sc">%&gt;%</span></span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a>      <span class="co"># 1. Convert specific columns to Numeric and round to 1 decimal</span></span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>      <span class="fu">across</span>(</span>
-<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a>        <span class="at">.cols =</span> facility_average_length_of_stay_alos<span class="sc">:</span>adp_mandatory,</span>
-<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a>        <span class="at">.fns =</span> <span class="sc">~</span> <span class="fu">round</span>(<span class="fu">as.numeric</span>(.), <span class="dv">1</span>)</span>
-<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a>      ),</span>
-<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>      <span class="co"># 2. Convert Guaranteed Minimum to Integer</span></span>
-<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a>      <span class="at">inspections_guaranteed_minimum =</span> <span class="fu">as.integer</span>(inspections_guaranteed_minimum),</span>
-<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Standardize Last Inspection Type values</span></span>
-<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a>      <span class="at">inspections_last_inspection_type =</span> <span class="fu">case_when</span>(</span>
-<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a>        inspections_last_inspection_type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"PRE-OCCUPANCY"</span>, <span class="st">"Pre-Occupancy"</span>) <span class="sc">~</span></span>
-<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a>          <span class="st">"PREOCC"</span>, <span class="co"># Standardize Pre-Occupancy</span></span>
-<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> inspections_last_inspection_type</span>
-<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a>      ),</span>
-<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Adjust capitalization</span></span>
-<span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_name =</span> <span class="fu">clean_facility_names</span>(facility_name),</span>
-<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_city =</span> <span class="fu">str_to_title</span>(facility_city),</span>
-<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_address =</span> <span class="fu">str_to_title</span>(facility_address),</span>
-<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_male_female =</span> <span class="fu">str_to_title</span>(facility_male_female),</span>
-<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Some minor name clean up</span></span>
-<span id="cb9-133"><a href="#cb9-133" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_city =</span> <span class="fu">fix_city_names</span>(facility_city),</span>
-<span id="cb9-134"><a href="#cb9-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-135"><a href="#cb9-135" aria-hidden="true" tabindex="-1"></a>      <span class="co"># 4. Ensure all other columns are Characters (as requested)</span></span>
-<span id="cb9-136"><a href="#cb9-136" aria-hidden="true" tabindex="-1"></a>      <span class="co">#    We exclude the columns we just processed to avoid overwriting them</span></span>
-<span id="cb9-137"><a href="#cb9-137" aria-hidden="true" tabindex="-1"></a>      <span class="fu">across</span>(</span>
-<span id="cb9-138"><a href="#cb9-138" aria-hidden="true" tabindex="-1"></a>        <span class="at">.cols =</span> <span class="sc">-</span>numerical_columns_present,</span>
-<span id="cb9-139"><a href="#cb9-139" aria-hidden="true" tabindex="-1"></a>        <span class="at">.fns =</span> as.character</span>
-<span id="cb9-140"><a href="#cb9-140" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb9-141"><a href="#cb9-141" aria-hidden="true" tabindex="-1"></a>    ) </span>
-<span id="cb9-142"><a href="#cb9-142" aria-hidden="true" tabindex="-1"></a>  guantanamo_patch <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb9-143"><a href="#cb9-143" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_name =</span> <span class="st">"JTF Camp Six"</span>,</span>
-<span id="cb9-144"><a href="#cb9-144" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_city =</span> <span class="st">"Guantanamo Bay"</span>,</span>
-<span id="cb9-145"><a href="#cb9-145" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_state =</span> <span class="st">"Cuba"</span>,</span>
-<span id="cb9-146"><a href="#cb9-146" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_address =</span> <span class="st">"Bldg 2144, U.S. Naval Station Guantanamo Bay"</span>,</span>
-<span id="cb9-147"><a href="#cb9-147" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb9-148"><a href="#cb9-148" aria-hidden="true" tabindex="-1"></a>  facilities_data_clean <span class="ot">&lt;-</span> facilities_data_clean <span class="sc">%&gt;%</span></span>
-<span id="cb9-149"><a href="#cb9-149" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rows_update</span>(guantanamo_patch, <span class="at">by =</span> <span class="st">"facility_name"</span>, <span class="at">unmatched =</span> <span class="st">"ignore"</span>)</span>
-<span id="cb9-150"><a href="#cb9-150" aria-hidden="true" tabindex="-1"></a>      <span class="co"># ignore because the Guantanamo patch doesn't apply to earlier years</span></span>
-<span id="cb9-151"><a href="#cb9-151" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-152"><a href="#cb9-152" aria-hidden="true" tabindex="-1"></a>  facilities_data_clean</span>
-<span id="cb9-153"><a href="#cb9-153" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-154"><a href="#cb9-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-155"><a href="#cb9-155" aria-hidden="true" tabindex="-1"></a>aggregate_facilties_data <span class="ot">&lt;-</span> <span class="cf">function</span>(facilities_data) {</span>
-<span id="cb9-156"><a href="#cb9-156" aria-hidden="true" tabindex="-1"></a>  facilities_data <span class="ot">&lt;-</span> facilities_data <span class="sc">%&gt;%</span></span>
-<span id="cb9-157"><a href="#cb9-157" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb9-158"><a href="#cb9-158" aria-hidden="true" tabindex="-1"></a>      <span class="at">sum_classification_levels =</span> <span class="fu">rowSums</span>(</span>
-<span id="cb9-159"><a href="#cb9-159" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_detainee_classification_level_"</span>)),</span>
-<span id="cb9-160"><a href="#cb9-160" aria-hidden="true" tabindex="-1"></a>        <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
-<span id="cb9-161"><a href="#cb9-161" aria-hidden="true" tabindex="-1"></a>      ),</span>
-<span id="cb9-162"><a href="#cb9-162" aria-hidden="true" tabindex="-1"></a>      <span class="at">sum_criminality_levels =</span> <span class="fu">rowSums</span>(</span>
-<span id="cb9-163"><a href="#cb9-163" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_criminality_"</span>)),</span>
-<span id="cb9-164"><a href="#cb9-164" aria-hidden="true" tabindex="-1"></a>        <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
-<span id="cb9-165"><a href="#cb9-165" aria-hidden="true" tabindex="-1"></a>      ),</span>
-<span id="cb9-166"><a href="#cb9-166" aria-hidden="true" tabindex="-1"></a>      <span class="at">sum_threat_levels =</span> <span class="fu">rowSums</span>(</span>
-<span id="cb9-167"><a href="#cb9-167" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_ice_threat_level_"</span>)<span class="sc">|</span>(<span class="fu">starts_with</span>(<span class="st">"adp_no_ice_threat_level"</span>))),</span>
-<span id="cb9-168"><a href="#cb9-168" aria-hidden="true" tabindex="-1"></a>        <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
-<span id="cb9-169"><a href="#cb9-169" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb9-170"><a href="#cb9-170" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
-<span id="cb9-171"><a href="#cb9-171" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb9-172"><a href="#cb9-172" aria-hidden="true" tabindex="-1"></a>      <span class="at">share_non_crim =</span> (adp_criminality_male_non_crim <span class="sc">+</span> adp_criminality_female_non_crim) <span class="sc">/</span> sum_criminality_levels,</span>
-<span id="cb9-173"><a href="#cb9-173" aria-hidden="true" tabindex="-1"></a>      <span class="at">share_no_threat =</span> ( adp_no_ice_threat_level) <span class="sc">/</span> sum_threat_levels</span>
-<span id="cb9-174"><a href="#cb9-174" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
-<span id="cb9-175"><a href="#cb9-175" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assign type</span></span>
-<span id="cb9-176"><a href="#cb9-176" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb9-177"><a href="#cb9-177" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_type_wiki =</span> <span class="fu">case_when</span>(</span>
-<span id="cb9-178"><a href="#cb9-178" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"IGSA"</span>) <span class="sc">~</span> <span class="st">"Jail"</span>,</span>
-<span id="cb9-179"><a href="#cb9-179" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"USMS IGA"</span>) <span class="sc">~</span> <span class="st">"Jail"</span>,</span>
-<span id="cb9-180"><a href="#cb9-180" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"DIGSA"</span>) <span class="sc">~</span> <span class="st">"Dedicated Migrant Detention Center"</span>,</span>
-<span id="cb9-181"><a href="#cb9-181" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"STATE"</span>) <span class="sc">~</span> <span class="st">"State Migrant Detention Center"</span>,</span>
-<span id="cb9-182"><a href="#cb9-182" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"BOP"</span>) <span class="sc">~</span> <span class="st">"Federal Prison"</span>,</span>
-<span id="cb9-183"><a href="#cb9-183" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"Family"</span>) <span class="sc">~</span> <span class="st">"Private Family Detention Center"</span>,</span>
-<span id="cb9-184"><a href="#cb9-184" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"CDF"</span>) <span class="sc">~</span> <span class="st">"Private Migrant Detention Center"</span>,</span>
-<span id="cb9-185"><a href="#cb9-185" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"USMS CDF"</span>) <span class="sc">~</span> <span class="st">"Private Migrant Detention Center"</span>,</span>
-<span id="cb9-186"><a href="#cb9-186" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"SPC"</span>) <span class="sc">~</span> <span class="st">"ICE Migrant Detention Center"</span>,</span>
-<span id="cb9-187"><a href="#cb9-187" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"STAGING"</span>) <span class="sc">~</span> <span class="st">"ICE Short-Term Migrant Detention Center"</span>,</span>
-<span id="cb9-188"><a href="#cb9-188" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"DOD"</span>) <span class="sc">~</span> <span class="st">"Military Detention Center"</span>,</span>
-<span id="cb9-189"><a href="#cb9-189" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Other"</span></span>
-<span id="cb9-190"><a href="#cb9-190" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb9-191"><a href="#cb9-191" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb9-192"><a href="#cb9-192" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-193"><a href="#cb9-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-194"><a href="#cb9-194" aria-hidden="true" tabindex="-1"></a><span class="co"># facilities_data_list &lt;- map(1:nrow(data_file_info), function(i)</span></span>
-<span id="cb9-195"><a href="#cb9-195" aria-hidden="true" tabindex="-1"></a><span class="co">#   read_facilities_data(data_file_info[i, ])</span></span>
-<span id="cb9-196"><a href="#cb9-196" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span>
-<span id="cb9-197"><a href="#cb9-197" aria-hidden="true" tabindex="-1"></a><span class="co"># names(facilities_data_list) &lt;- </span></span>
-<span id="cb9-198"><a href="#cb9-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-199"><a href="#cb9-199" aria-hidden="true" tabindex="-1"></a>facilities_data_list <span class="ot">&lt;-</span> <span class="fu">map</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(data_file_info), <span class="cf">function</span>(i)</span>
-<span id="cb9-200"><a href="#cb9-200" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_facilities_data</span>(data_file_info[i, ]) <span class="sc">%&gt;%</span></span>
-<span id="cb9-201"><a href="#cb9-201" aria-hidden="true" tabindex="-1"></a>    <span class="fu">clean_facilities_data</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb9-202"><a href="#cb9-202" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aggregate_facilties_data</span>()</span>
-<span id="cb9-203"><a href="#cb9-203" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Import the "Facilities" sheet</span></span>
+<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a><span class="co"># facilities_data &lt;- read_xlsx(local_file, sheet = sheet_name)</span></span>
+<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>read_facilities_data <span class="ot">&lt;-</span> <span class="cf">function</span>(data_file_info_row){</span>
+<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(data_file_info_row, {</span>
+<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_xlsx</span>(</span>
+<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>      local_file,</span>
+<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>      <span class="at">sheet =</span> sheet_name,</span>
+<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>      <span class="at">range =</span> <span class="fu">cell_limits</span>(<span class="at">ul =</span> <span class="fu">c</span>(first_data_row, <span class="dv">1</span>), <span class="at">lr =</span> <span class="fu">c</span>(<span class="cn">NA</span>, right_column_num)),</span>
+<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>      <span class="at">col_names =</span> clean_names_list[[year_name]] <span class="co"># Use precomputed clean names</span></span>
+<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>                                                <span class="co"># A more elegant programming approach,</span></span>
+<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>                                                <span class="co"># might incorporate them into data_file_info</span></span>
+<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a>fix_city_names <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Ft.lauderdale"</span>, <span class="st">"Fort Lauderdale"</span>)</span>
+<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Ft. Lauderdale"</span>, <span class="st">"Fort Lauderdale"</span>)</span>
+<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Cottonwood Fall"</span>, <span class="st">"Cottonwood Falls"</span>)</span>
+<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Sault Ste Marie"</span>, <span class="st">"Sault Ste. Marie"</span>)</span>
+<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Bunkerhill"</span>, <span class="st">"Bunker Hill"</span>)</span>
+<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mcelhattan"</span>, <span class="st">"McElhattan"</span>) </span>
+<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mcfarland"</span>, <span class="st">"McFarland"</span>)</span>
+<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mccook"</span>, <span class="st">"McCook"</span>)</span>
+<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(x, <span class="st">"Mccall"</span>, <span class="st">"McCall"</span>)</span>
+<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a>  x</span>
+<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a>clean_facilities_data <span class="ot">&lt;-</span> <span class="cf">function</span>(facilities_data) {</span>
+<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>  numerical_columns <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"facility_average_length_of_stay_alos"</span>, <span class="st">"adp_detainee_classification_level_a"</span>,</span>
+<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_detainee_classification_level_b"</span>, <span class="st">"adp_detainee_classification_level_c"</span>,</span>
+<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_detainee_classification_level_d"</span>, <span class="st">"adp_criminality_male_crim"</span>,</span>
+<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_criminality_male_non_crim"</span>, <span class="st">"adp_criminality_female_crim"</span>,</span>
+<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_criminality_female_non_crim"</span>, <span class="st">"adp_ice_threat_level_1"</span>,</span>
+<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_ice_threat_level_2"</span>, <span class="st">"adp_ice_threat_level_3"</span>, <span class="st">"adp_no_ice_threat_level"</span>,</span>
+<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"adp_mandatory"</span>, <span class="st">"inspections_guaranteed_minimum"</span>)</span>
+<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a>  numerical_columns_present <span class="ot">&lt;-</span> numerical_columns[numerical_columns <span class="sc">%in%</span> <span class="fu">names</span>(facilities_data)]</span>
+<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a>  facilities_data_clean <span class="ot">&lt;-</span> facilities_data <span class="sc">%&gt;%</span></span>
+<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a>      <span class="co"># 1. Convert specific columns to Numeric and round to 1 decimal</span></span>
+<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a>      <span class="fu">across</span>(</span>
+<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a>        <span class="at">.cols =</span> facility_average_length_of_stay_alos<span class="sc">:</span>adp_mandatory,</span>
+<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a>        <span class="at">.fns =</span> <span class="sc">~</span> <span class="fu">round</span>(<span class="fu">as.numeric</span>(.), <span class="dv">1</span>)</span>
+<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-133"><a href="#cb9-133" aria-hidden="true" tabindex="-1"></a>      <span class="co"># 2. Convert Guaranteed Minimum to Integer</span></span>
+<span id="cb9-134"><a href="#cb9-134" aria-hidden="true" tabindex="-1"></a>      <span class="at">inspections_guaranteed_minimum =</span> <span class="fu">as.integer</span>(inspections_guaranteed_minimum),</span>
+<span id="cb9-135"><a href="#cb9-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-136"><a href="#cb9-136" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Standardize Last Inspection Type values</span></span>
+<span id="cb9-137"><a href="#cb9-137" aria-hidden="true" tabindex="-1"></a>      <span class="at">inspections_last_inspection_type =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-138"><a href="#cb9-138" aria-hidden="true" tabindex="-1"></a>        inspections_last_inspection_type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"PRE-OCCUPANCY"</span>, <span class="st">"Pre-Occupancy"</span>) <span class="sc">~</span></span>
+<span id="cb9-139"><a href="#cb9-139" aria-hidden="true" tabindex="-1"></a>          <span class="st">"PREOCC"</span>, <span class="co"># Standardize Pre-Occupancy</span></span>
+<span id="cb9-140"><a href="#cb9-140" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> inspections_last_inspection_type</span>
+<span id="cb9-141"><a href="#cb9-141" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb9-142"><a href="#cb9-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-143"><a href="#cb9-143" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Adjust capitalization</span></span>
+<span id="cb9-144"><a href="#cb9-144" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_name =</span> <span class="fu">clean_facility_names</span>(facility_name),</span>
+<span id="cb9-145"><a href="#cb9-145" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_city =</span> <span class="fu">str_to_title</span>(facility_city),</span>
+<span id="cb9-146"><a href="#cb9-146" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_address =</span> <span class="fu">str_to_title</span>(facility_address),</span>
+<span id="cb9-147"><a href="#cb9-147" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_male_female =</span> <span class="fu">str_to_title</span>(facility_male_female),</span>
+<span id="cb9-148"><a href="#cb9-148" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb9-149"><a href="#cb9-149" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Some minor name clean up</span></span>
+<span id="cb9-150"><a href="#cb9-150" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_city =</span> <span class="fu">fix_city_names</span>(facility_city),</span>
+<span id="cb9-151"><a href="#cb9-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-152"><a href="#cb9-152" aria-hidden="true" tabindex="-1"></a>      <span class="co"># 4. Ensure all other columns are Characters (as requested)</span></span>
+<span id="cb9-153"><a href="#cb9-153" aria-hidden="true" tabindex="-1"></a>      <span class="co">#    We exclude the columns we just processed to avoid overwriting them</span></span>
+<span id="cb9-154"><a href="#cb9-154" aria-hidden="true" tabindex="-1"></a>      <span class="fu">across</span>(</span>
+<span id="cb9-155"><a href="#cb9-155" aria-hidden="true" tabindex="-1"></a>        <span class="at">.cols =</span> <span class="sc">-</span>numerical_columns_present,</span>
+<span id="cb9-156"><a href="#cb9-156" aria-hidden="true" tabindex="-1"></a>        <span class="at">.fns =</span> as.character</span>
+<span id="cb9-157"><a href="#cb9-157" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb9-158"><a href="#cb9-158" aria-hidden="true" tabindex="-1"></a>    ) </span>
+<span id="cb9-159"><a href="#cb9-159" aria-hidden="true" tabindex="-1"></a>  guantanamo_patch <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb9-160"><a href="#cb9-160" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_name =</span> <span class="st">"JTF Camp Six"</span>,</span>
+<span id="cb9-161"><a href="#cb9-161" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_city =</span> <span class="st">"Guantanamo Bay"</span>,</span>
+<span id="cb9-162"><a href="#cb9-162" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_state =</span> <span class="st">"Cuba"</span>,</span>
+<span id="cb9-163"><a href="#cb9-163" aria-hidden="true" tabindex="-1"></a>    <span class="at">facility_address =</span> <span class="st">"Bldg 2144, U.S. Naval Station Guantanamo Bay"</span>,</span>
+<span id="cb9-164"><a href="#cb9-164" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-165"><a href="#cb9-165" aria-hidden="true" tabindex="-1"></a>  facilities_data_clean <span class="ot">&lt;-</span> facilities_data_clean <span class="sc">%&gt;%</span></span>
+<span id="cb9-166"><a href="#cb9-166" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rows_update</span>(guantanamo_patch, <span class="at">by =</span> <span class="st">"facility_name"</span>, <span class="at">unmatched =</span> <span class="st">"ignore"</span>)</span>
+<span id="cb9-167"><a href="#cb9-167" aria-hidden="true" tabindex="-1"></a>      <span class="co"># ignore because the Guantanamo patch doesn't apply to earlier years</span></span>
+<span id="cb9-168"><a href="#cb9-168" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-169"><a href="#cb9-169" aria-hidden="true" tabindex="-1"></a>  facilities_data_clean</span>
+<span id="cb9-170"><a href="#cb9-170" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-171"><a href="#cb9-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-172"><a href="#cb9-172" aria-hidden="true" tabindex="-1"></a>aggregate_facilties_data <span class="ot">&lt;-</span> <span class="cf">function</span>(facilities_data) {</span>
+<span id="cb9-173"><a href="#cb9-173" aria-hidden="true" tabindex="-1"></a>  facilities_data <span class="ot">&lt;-</span> facilities_data <span class="sc">%&gt;%</span></span>
+<span id="cb9-174"><a href="#cb9-174" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb9-175"><a href="#cb9-175" aria-hidden="true" tabindex="-1"></a>      <span class="at">sum_classification_levels =</span> <span class="fu">rowSums</span>(</span>
+<span id="cb9-176"><a href="#cb9-176" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_detainee_classification_level_"</span>)),</span>
+<span id="cb9-177"><a href="#cb9-177" aria-hidden="true" tabindex="-1"></a>        <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb9-178"><a href="#cb9-178" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb9-179"><a href="#cb9-179" aria-hidden="true" tabindex="-1"></a>      <span class="at">sum_criminality_levels =</span> <span class="fu">rowSums</span>(</span>
+<span id="cb9-180"><a href="#cb9-180" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_criminality_"</span>)),</span>
+<span id="cb9-181"><a href="#cb9-181" aria-hidden="true" tabindex="-1"></a>        <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb9-182"><a href="#cb9-182" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb9-183"><a href="#cb9-183" aria-hidden="true" tabindex="-1"></a>      <span class="at">sum_threat_levels =</span> <span class="fu">rowSums</span>(</span>
+<span id="cb9-184"><a href="#cb9-184" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_ice_threat_level_"</span>)<span class="sc">|</span>(<span class="fu">starts_with</span>(<span class="st">"adp_no_ice_threat_level"</span>))),</span>
+<span id="cb9-185"><a href="#cb9-185" aria-hidden="true" tabindex="-1"></a>        <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb9-186"><a href="#cb9-186" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb9-187"><a href="#cb9-187" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb9-188"><a href="#cb9-188" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb9-189"><a href="#cb9-189" aria-hidden="true" tabindex="-1"></a>      <span class="at">share_non_crim =</span> (adp_criminality_male_non_crim <span class="sc">+</span> adp_criminality_female_non_crim) <span class="sc">/</span> sum_criminality_levels,</span>
+<span id="cb9-190"><a href="#cb9-190" aria-hidden="true" tabindex="-1"></a>      <span class="at">share_no_threat =</span> ( adp_no_ice_threat_level) <span class="sc">/</span> sum_threat_levels</span>
+<span id="cb9-191"><a href="#cb9-191" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb9-192"><a href="#cb9-192" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assign type</span></span>
+<span id="cb9-193"><a href="#cb9-193" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb9-194"><a href="#cb9-194" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_type_wiki =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-195"><a href="#cb9-195" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"IGSA"</span>) <span class="sc">~</span> <span class="st">"Jail"</span>,</span>
+<span id="cb9-196"><a href="#cb9-196" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"USMS IGA"</span>) <span class="sc">~</span> <span class="st">"Jail"</span>,</span>
+<span id="cb9-197"><a href="#cb9-197" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"DIGSA"</span>) <span class="sc">~</span> <span class="st">"Dedicated Migrant Detention Center"</span>,</span>
+<span id="cb9-198"><a href="#cb9-198" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"STATE"</span>) <span class="sc">~</span> <span class="st">"State Migrant Detention Center"</span>,</span>
+<span id="cb9-199"><a href="#cb9-199" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"BOP"</span>) <span class="sc">~</span> <span class="st">"Federal Prison"</span>,</span>
+<span id="cb9-200"><a href="#cb9-200" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"Family"</span>) <span class="sc">~</span> <span class="st">"Private Family Detention Center"</span>,</span>
+<span id="cb9-201"><a href="#cb9-201" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"CDF"</span>) <span class="sc">~</span> <span class="st">"Private Migrant Detention Center"</span>,</span>
+<span id="cb9-202"><a href="#cb9-202" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"USMS CDF"</span>) <span class="sc">~</span> <span class="st">"Private Migrant Detention Center"</span>,</span>
+<span id="cb9-203"><a href="#cb9-203" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"SPC"</span>) <span class="sc">~</span> <span class="st">"ICE Migrant Detention Center"</span>,</span>
+<span id="cb9-204"><a href="#cb9-204" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"STAGING"</span>) <span class="sc">~</span> <span class="st">"ICE Short-Term Migrant Detention Center"</span>,</span>
+<span id="cb9-205"><a href="#cb9-205" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(facility_type_detailed, <span class="st">"DOD"</span>) <span class="sc">~</span> <span class="st">"Military Detention Center"</span>,</span>
+<span id="cb9-206"><a href="#cb9-206" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Other"</span></span>
+<span id="cb9-207"><a href="#cb9-207" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb9-208"><a href="#cb9-208" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-209"><a href="#cb9-209" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-210"><a href="#cb9-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-211"><a href="#cb9-211" aria-hidden="true" tabindex="-1"></a><span class="co"># facilities_data_list &lt;- map(1:nrow(data_file_info), function(i)</span></span>
+<span id="cb9-212"><a href="#cb9-212" aria-hidden="true" tabindex="-1"></a><span class="co">#   read_facilities_data(data_file_info[i, ])</span></span>
+<span id="cb9-213"><a href="#cb9-213" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span>
+<span id="cb9-214"><a href="#cb9-214" aria-hidden="true" tabindex="-1"></a><span class="co"># names(facilities_data_list) &lt;- </span></span>
+<span id="cb9-215"><a href="#cb9-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-216"><a href="#cb9-216" aria-hidden="true" tabindex="-1"></a>facilities_data_list <span class="ot">&lt;-</span> <span class="fu">map</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(data_file_info), <span class="cf">function</span>(i)</span>
+<span id="cb9-217"><a href="#cb9-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_facilities_data</span>(data_file_info[i, ]) <span class="sc">%&gt;%</span></span>
+<span id="cb9-218"><a href="#cb9-218" aria-hidden="true" tabindex="-1"></a>    <span class="fu">clean_facilities_data</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb9-219"><a href="#cb9-219" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aggregate_facilties_data</span>()</span>
+<span id="cb9-220"><a href="#cb9-220" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: There was 1 warning in `mutate()`.
@@ -635,13 +652,13 @@ Caused by warning:
   num_lists_present     n
               &lt;dbl&gt; &lt;int&gt;
 1                 1   120
-2                 2   103
-3                 3    48
-4                 4    28
-5                 5    20
-6                 6     8
+2                 2   102
+3                 3    47
+4                 4    27
+5                 5    19
+6                 6     9
 7                 7    15
-8                 8    57</code></pre>
+8                 8    58</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -663,7 +680,7 @@ Caused by warning:
 [11] "Diamondback Correctional Facility"                       
 [12] "Dona Ana County Detention Center"                        
 [13] "El Paso County Detention Facility"                       
-[14] "ERO El Paso Camp East Montana"                           
+[14] "Camp East Montana"                                       
 [15] "Farmville Detention Center"                              
 [16] "Finney County Jail"                                      
 [17] "Florida Soft-Sided Facility"                             
@@ -740,38 +757,47 @@ Caused by warning:
 <span id="cb19-37"><a href="#cb19-37" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb19-38"><a href="#cb19-38" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-39"><a href="#cb19-39" aria-hidden="true" tabindex="-1"></a>w_detention_sites_tb <span class="ot">&lt;-</span> w_detention_sites_tb <span class="sc">%&gt;%</span></span>
-<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_column</span>(<span class="at">link =</span> links, <span class="at">.after =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
-<span id="cb19-42"><a href="#cb19-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-43"><a href="#cb19-43" aria-hidden="true" tabindex="-1"></a>clean_variable_names <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
-<span id="cb19-44"><a href="#cb19-44" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">%&gt;%</span></span>
-<span id="cb19-45"><a href="#cb19-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace_all</span>(., <span class="st">"[^a-zA-Z0-9]+"</span>, <span class="st">"_"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb19-46"><a href="#cb19-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_remove_all</span>(., <span class="st">"^_+|_+$"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb19-47"><a href="#cb19-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(tolower)</span>
-<span id="cb19-48"><a href="#cb19-48" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb19-49"><a href="#cb19-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-50"><a href="#cb19-50" aria-hidden="true" tabindex="-1"></a>w_detention_sites_tb <span class="ot">&lt;-</span> <span class="fu">clean_variable_names</span>(w_detention_sites_tb) <span class="sc">%&gt;%</span></span>
-<span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-52"><a href="#cb19-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">wiki_slug =</span> <span class="fu">case_when</span>(</span>
-<span id="cb19-53"><a href="#cb19-53" aria-hidden="true" tabindex="-1"></a>      <span class="fu">str_detect</span>(link, <span class="st">"/wiki/"</span>) <span class="sc">~</span> {</span>
-<span id="cb19-54"><a href="#cb19-54" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Extract everything after /wiki/</span></span>
-<span id="cb19-55"><a href="#cb19-55" aria-hidden="true" tabindex="-1"></a>        slug <span class="ot">&lt;-</span> <span class="fu">str_extract</span>(link, <span class="st">"(?&lt;=/wiki/).*"</span>)</span>
-<span id="cb19-56"><a href="#cb19-56" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_replace_all</span>(slug, <span class="st">"_"</span>, <span class="st">" "</span>)</span>
-<span id="cb19-57"><a href="#cb19-57" aria-hidden="true" tabindex="-1"></a>      },</span>
-<span id="cb19-58"><a href="#cb19-58" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">""</span>  <span class="co"># Return empty string if /wiki/ is not found</span></span>
-<span id="cb19-59"><a href="#cb19-59" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb19-60"><a href="#cb19-60" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb19-61"><a href="#cb19-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(location, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"city"</span>, <span class="st">"state"</span>), </span>
-<span id="cb19-62"><a href="#cb19-62" aria-hidden="true" tabindex="-1"></a>             <span class="at">sep =</span> <span class="st">",</span><span class="sc">\\</span><span class="st">s*"</span>, <span class="at">extra =</span> <span class="st">"merge"</span>, <span class="at">fill =</span> <span class="st">"right"</span>)</span>
-<span id="cb19-63"><a href="#cb19-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-64"><a href="#cb19-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Optional: Final cleanup of text and brackets</span></span>
-<span id="cb19-65"><a href="#cb19-65" aria-hidden="true" tabindex="-1"></a>w_detention_sites_tb <span class="ot">&lt;-</span> w_detention_sites_tb <span class="sc">%&gt;%</span></span>
-<span id="cb19-66"><a href="#cb19-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.character), <span class="sc">~</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">[</span><span class="sc">\\</span><span class="st">d+</span><span class="sc">\\</span><span class="st">]"</span>, <span class="st">""</span>, .)))</span>
-<span id="cb19-67"><a href="#cb19-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-68"><a href="#cb19-68" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(w_detention_sites_tb)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_column</span>(<span class="at">link =</span> links, <span class="at">.after =</span> <span class="dv">1</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">linked_article =</span> <span class="fu">case_when</span>(</span>
+<span id="cb19-42"><a href="#cb19-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_detect</span>(link, <span class="st">"/wiki/"</span>) <span class="sc">~</span> {</span>
+<span id="cb19-43"><a href="#cb19-43" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Extract everything after /wiki/</span></span>
+<span id="cb19-44"><a href="#cb19-44" aria-hidden="true" tabindex="-1"></a>      slug <span class="ot">&lt;-</span> <span class="fu">str_extract</span>(link, <span class="st">"(?&lt;=/wiki/).*"</span>)</span>
+<span id="cb19-45"><a href="#cb19-45" aria-hidden="true" tabindex="-1"></a>      <span class="fu">str_replace_all</span>(slug, <span class="st">"_"</span>, <span class="st">" "</span>)</span>
+<span id="cb19-46"><a href="#cb19-46" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb19-47"><a href="#cb19-47" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>),</span>
+<span id="cb19-48"><a href="#cb19-48" aria-hidden="true" tabindex="-1"></a>    <span class="co">#extract text befoe any parentheses or brackets for the primary name</span></span>
+<span id="cb19-49"><a href="#cb19-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">primary_name =</span> <span class="fu">str_extract</span>(Name, <span class="st">"^[^</span><span class="sc">\\</span><span class="st">(]+"</span>) <span class="co"># Extract text before any parentheses</span></span>
+<span id="cb19-50"><a href="#cb19-50" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-52"><a href="#cb19-52" aria-hidden="true" tabindex="-1"></a>clean_variable_names <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb19-53"><a href="#cb19-53" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">%&gt;%</span></span>
+<span id="cb19-54"><a href="#cb19-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace_all</span>(., <span class="st">"[^a-zA-Z0-9]+"</span>, <span class="st">"_"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb19-55"><a href="#cb19-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_remove_all</span>(., <span class="st">"^_+|_+$"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb19-56"><a href="#cb19-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(tolower)</span>
+<span id="cb19-57"><a href="#cb19-57" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-58"><a href="#cb19-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-59"><a href="#cb19-59" aria-hidden="true" tabindex="-1"></a>w_detention_sites_tb <span class="ot">&lt;-</span> <span class="fu">clean_variable_names</span>(w_detention_sites_tb) <span class="sc">%&gt;%</span></span>
+<span id="cb19-60"><a href="#cb19-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-61"><a href="#cb19-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">wiki_slug =</span> <span class="fu">case_when</span>(</span>
+<span id="cb19-62"><a href="#cb19-62" aria-hidden="true" tabindex="-1"></a>      <span class="fu">str_detect</span>(link, <span class="st">"/wiki/"</span>) <span class="sc">~</span> {</span>
+<span id="cb19-63"><a href="#cb19-63" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Extract everything after /wiki/</span></span>
+<span id="cb19-64"><a href="#cb19-64" aria-hidden="true" tabindex="-1"></a>        slug <span class="ot">&lt;-</span> <span class="fu">str_extract</span>(link, <span class="st">"(?&lt;=/wiki/).*"</span>)</span>
+<span id="cb19-65"><a href="#cb19-65" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_replace_all</span>(slug, <span class="st">"_"</span>, <span class="st">" "</span>)</span>
+<span id="cb19-66"><a href="#cb19-66" aria-hidden="true" tabindex="-1"></a>      },</span>
+<span id="cb19-67"><a href="#cb19-67" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">""</span>  <span class="co"># Return empty string if /wiki/ is not found</span></span>
+<span id="cb19-68"><a href="#cb19-68" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb19-69"><a href="#cb19-69" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb19-70"><a href="#cb19-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(location, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"city"</span>, <span class="st">"state"</span>), </span>
+<span id="cb19-71"><a href="#cb19-71" aria-hidden="true" tabindex="-1"></a>             <span class="at">sep =</span> <span class="st">",</span><span class="sc">\\</span><span class="st">s*"</span>, <span class="at">extra =</span> <span class="st">"merge"</span>, <span class="at">fill =</span> <span class="st">"right"</span>)</span>
+<span id="cb19-72"><a href="#cb19-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-73"><a href="#cb19-73" aria-hidden="true" tabindex="-1"></a><span class="co"># Optional: Final cleanup of text and brackets</span></span>
+<span id="cb19-74"><a href="#cb19-74" aria-hidden="true" tabindex="-1"></a>w_detention_sites_tb <span class="ot">&lt;-</span> w_detention_sites_tb <span class="sc">%&gt;%</span></span>
+<span id="cb19-75"><a href="#cb19-75" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.character), <span class="sc">~</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">[</span><span class="sc">\\</span><span class="st">d+</span><span class="sc">\\</span><span class="st">]"</span>, <span class="st">""</span>, .)))</span>
+<span id="cb19-76"><a href="#cb19-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-77"><a href="#cb19-77" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(w_detention_sites_tb)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 395 × 13
+<pre><code># A tibble: 395 × 15
    name           link  status_year city  state facility_type security authority
    &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;    
  1 Adelanto ICE … http… In use (20… Adel… Cali… Prison        ""       DHS/ICE  
@@ -785,9 +811,9 @@ Caused by warning:
  9 Alexandria Ci… http… In use (20… Alex… Virg… Prison        "Secure" DHS/ICE  
 10 Allegheny Cou… http… In use (20… Pitt… Penn… Prison        "Secure" DHS/ICE  
 # ℹ 385 more rows
-# ℹ 5 more variables: management &lt;chr&gt;, capacity &lt;chr&gt;,
+# ℹ 7 more variables: management &lt;chr&gt;, capacity &lt;chr&gt;,
 #   max_single_day_pop &lt;chr&gt;, demographicsand_segregation &lt;chr&gt;,
-#   wiki_slug &lt;chr&gt;</code></pre>
+#   linked_article &lt;chr&gt;, primary_name &lt;chr&gt;, wiki_slug &lt;chr&gt;</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -898,109 +924,234 @@ Caused by warning:
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a match table based on city/state matches and Wikipedia links</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"src/add-wikipedia-matches.R"</span>)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a match column to the FY26 ICE data </span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># indicating if there's a Wikipedia match</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>facilities_data_merged <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>facilities_data_merged<span class="sc">$</span>FY26 <span class="ot">&lt;-</span> facilities_data_list<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span></span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">clean_state =</span> state.name[<span class="fu">match</span>(facility_state, state.abb)]</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">wiki_match =</span> <span class="fu">case_when</span>(</span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Condition 1: Exact match in the main wiki table</span></span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>    facility_name <span class="sc">%in%</span> w_detention_sites_tb<span class="sc">$</span>name <span class="sc">~</span> facility_name,</span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Condition 2: Match via the lookup table</span></span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>    facility_name <span class="sc">%in%</span> wiki_name_match_table<span class="sc">$</span>ice_variants <span class="sc">~</span> </span>
-<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>      wiki_name_match_table<span class="sc">$</span>wiki_variants[<span class="fu">match</span>(facility_name, wiki_name_match_table<span class="sc">$</span>ice_variants)],</span>
-<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span></span>
-<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
-<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(w_detention_sites_tb, name, state, wiki_slug, management),</span>
-<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"wiki_match"</span> <span class="ot">=</span> <span class="st">"name"</span>, <span class="st">"clean_state"</span> <span class="ot">=</span> <span class="st">"state"</span>)</span>
-<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a>  ) </span>
-<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a>facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span> </span>
-<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(wiki_match)) <span class="sc">%&gt;%</span></span>
-<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(facility_name, wiki_match, wiki_slug, management) <span class="sc">%&gt;%</span> <span class="fu">print</span>(<span class="at">n=</span><span class="dv">100</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co"># To generate this table, we're actually inserting this code</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># AFTER the next chunk (add-match-table-to-fy26-ice-data), but</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># it's easier to insert the results here instead of making a </span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="co"># more complex case_when statement.</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Heads up: this is a very slow function call!</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># facilities_fy26_wiki_matches &lt;- facilities_data_merged$FY26 %&gt;%</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="co">#  add_wikipedia_matches(name_col = "facility_name")</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(facilities_fy26_wiki_matches, here::here("data", "facilities_fy26_wiki_matches.rds"))</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>facilities_fy26_wiki_matches <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"facilities_fy26_wiki_matches.rds"</span>))</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>facilities_fy26_wiki_matches <span class="sc">%&gt;%</span> </span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(<span class="sc">!</span><span class="fu">is.na</span>(wiki_match), wikipedia_match) <span class="sc">%&gt;%</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">previous_match =</span> <span class="dv">1</span>,</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>         <span class="at">match_by_wikipedia_search =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 71 × 37
+<pre><code>  previous_match match_by_wikipedia_search   n
+1          FALSE                     FALSE 147
+2          FALSE                      TRUE   4
+3           TRUE                     FALSE  52
+4           TRUE                      TRUE  22</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>facilities_fy26_wiki_matches <span class="sc">%&gt;%</span> </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(wikipedia_match) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span>, facility_state, <span class="dv">36</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                           facility_name facility_state
+1       Adams County Correctional Center             MS
+2         Baker Correctional Institution             FL
+3                      Boone County Jail             KY
+4            Broward Transitional Center             FL
+5      Cibola County Correctional Center             NM
+6                 Cumberland County Jail             ME
+7                           Davis County             UT
+8                         Douglas County             WI
+9                  Eden Detention Center             TX
+10                  Franklin County Jail             PA
+11        Glades County Detention Center             FL
+12         Irwin County Detention Center             GA
+13                 Jefferson County Jail             ID
+14                       Lawrence County             SD
+15      North Lake Correctional Facility             MI
+16    Northeast Ohio Correctional Center             OH
+17            Otay Mesa Detention Center             CA
+18 Plymouth County Correctional Facility             MA
+19             Pottawattamie County Jail             IA
+20          Richwood Correctional Center             LA
+21           Rio Grande Detention Center             TX
+22 South Louisiana ICE Processing Center             LA
+23                     Southern Regional             WV
+24              Stewart Detention Center             GA
+25       Val Verde Correctional Facility             TX
+26              Winn Correctional Center             LA
+                         wiki_slug
+1                             &lt;NA&gt;
+2                             &lt;NA&gt;
+3                Boone County Jail
+4      Broward Transitional Center
+5                             &lt;NA&gt;
+6           Cumberland County Jail
+7                             &lt;NA&gt;
+8                             &lt;NA&gt;
+9                             &lt;NA&gt;
+10                            &lt;NA&gt;
+11  Glades County Detention Center
+12   Irwin County Detention Center
+13                            &lt;NA&gt;
+14                            &lt;NA&gt;
+15                            &lt;NA&gt;
+16                            &lt;NA&gt;
+17                            &lt;NA&gt;
+18    Plymouth House of Correction
+19       Pottawattamie County Jail
+20                            &lt;NA&gt;
+21     Rio Grande Detention Center
+22                            &lt;NA&gt;
+23                            &lt;NA&gt;
+24        Stewart Detention Center
+25 Val Verde Correctional Facility
+26                            &lt;NA&gt;</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>exclude_list <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Boone County Jail"</span>,</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Davis County"</span>,</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Douglas County"</span>,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Franklin County Jail"</span>, <span class="co"># needs new page for new jail in C, PA</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Jefferson County Jail"</span>, <span class="co"># no page for Idaho jail</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Lawrence County"</span>,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Pottawattamie County Jail"</span>, <span class="co"># references historic site; needs new page</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"Southern Regional"</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>                  )</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>facilities_fy26_wiki_match_list <span class="ot">&lt;-</span> facilities_fy26_wiki_matches <span class="sc">%&gt;%</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(wikipedia_match) <span class="sc">%&gt;%</span> </span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(wiki_match)) <span class="sc">%&gt;%</span> <span class="co">#new matches only</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>facility_name <span class="sc">%in%</span> exclude_list) <span class="sc">%&gt;%</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span>, wikipedia_title) </span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Notes on better names:</span></span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a><span class="co"># "Davis County" &gt; "Davis County Correctional Facility" (Utah) / no wiki page</span></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="co"># "Southern Regional" &gt; "Southern Regional Jail and Correctional Facility"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a match table based on city/state matches and Wikipedia links</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a match column to the FY26 ICE data </span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># indicating if there's a Wikipedia match</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>facilities_data_merged <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>facilities_data_merged<span class="sc">$</span>FY26 <span class="ot">&lt;-</span> facilities_data_list<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">clean_state =</span> state.name[<span class="fu">match</span>(facility_state, state.abb)]</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">wiki_match =</span> <span class="fu">case_when</span>(</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Condition 1: Exact match in the main wiki table</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>    facility_name <span class="sc">%in%</span> w_detention_sites_tb<span class="sc">$</span>name <span class="sc">~</span> facility_name,</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Condition 2: Match via the lookup table</span></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>    facility_name <span class="sc">%in%</span> wiki_name_match_table<span class="sc">$</span>ice_variants <span class="sc">~</span> </span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>      wiki_name_match_table<span class="sc">$</span>wiki_variants[<span class="fu">match</span>(facility_name, wiki_name_match_table<span class="sc">$</span>ice_variants)],</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Condition 3: Match via the Wikipedia search function</span></span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>    facility_name <span class="sc">%in%</span> facilities_fy26_wiki_match_list<span class="sc">$</span>facility_name <span class="sc">~</span></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>      facilities_fy26_wiki_match_list<span class="sc">$</span>wikipedia_title[<span class="fu">match</span>(facility_name, facilities_fy26_wiki_match_list<span class="sc">$</span>facility_name)],</span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(w_detention_sites_tb, name, state, wiki_slug, management),</span>
+<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"wiki_match"</span> <span class="ot">=</span> <span class="st">"name"</span>, <span class="st">"clean_state"</span> <span class="ot">=</span> <span class="st">"state"</span>)</span>
+<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a>facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span> </span>
+<span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(wiki_match)) <span class="sc">%&gt;%</span></span>
+<span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(facility_name, wiki_match, wiki_slug, management) <span class="sc">%&gt;%</span> <span class="fu">print</span>(<span class="at">n=</span><span class="dv">100</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 75 × 37
    facility_name  wiki_match wiki_slug management facility_address facility_city
    &lt;chr&gt;          &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;            &lt;chr&gt;        
  1 Adams County … Adams Cou…  &lt;NA&gt;      &lt;NA&gt;      20 Hobo Fork Rd. Natchez      
  2 Adelanto ICE … Adelanto … "Adelant… "GEO Grou… 10250 Rancho Ro… Adelanto     
- 3 Boone County … Boone Cou… "Boone C… "Boone Co… 3020 Conrad Lane Burlington   
- 4 Broward Trans… Broward T… "Broward… "Geo Grou… 3900 North Powe… Pompano Beach
- 5 Butler County… Butler Co…  &lt;NA&gt;      &lt;NA&gt;      705 Hanover Str… Hamilton     
- 6 Cambria Count… Cambria C… "Cambria… "Cambria … 425 Manor Drive  Ebensburg    
- 7 Cass County J… Cass Coun… ""        ""         336 Main Street  Plattsmouth  
- 8 Central Louis… LaSalle D… "LaSalle… "Geo Grou… 830 Pinehill Ro… Jena         
- 9 Chase County … Chase Cou… ""        ""         301 South Walnu… Cottonwood F…
-10 Chippewa Coun… Chippewa … ""        "Chippewa… 325 Court Street Sault Ste. M…
-11 Cibola County… Cibola Co…  &lt;NA&gt;      &lt;NA&gt;      2000 Cibola Loop Milan        
-12 Clinton Count… Clinton C… ""        ""         58 Pine Mountai… McElhattan   
-13 Clinton Count… Clinton C… ""        ""         25 Mccarthy Dri… Plattsburgh  
-14 Clinton Count… Clinton C…  &lt;NA&gt;      &lt;NA&gt;      301 E Walnut St… Frankfort    
-15 Cumberland Co… Cumberlan… "Cumberl… ""         50 County Way    Portland     
-16 Delaney Hall … Delaney H… ""        "GEO Grou… 451 Doremus Ave… Newark       
-17 Denver Contra… Aurora Co… ""        "GEO Grou… 3130 Oakland St  Aurora       
-18 Dilley Immigr… South Tex… "South T… "CoreCivi… 300 El Rancho W… Dilley       
-19 Dodge County … Dodge Cou… ""        "Dodge Co… 215 West Centra… Juneau       
-20 Eden Detentio… Eden Dete…  &lt;NA&gt;      &lt;NA&gt;      702 E Broadway … Eden         
-21 El Paso Servi… El Paso S… ""        "ICE"      8915 Montana Av… El Paso      
-22 Elizabeth Con… Elizabeth… ""        "Correcti… 625 Evans Street Elizabeth    
-23 Eloy Federal … Eloy Dete… "Eloy De… "Correcti… 1705 East Hanna… Eloy         
-24 Erie County J… Erie Coun… ""        "Erie Cou… Department Of C… Erie         
-25 Etowah County… Etowah Co… ""        "Etowah C… 827 Forrest Ave… Gadsden      
-26 Farmville Det… Farmville…  &lt;NA&gt;      &lt;NA&gt;      508 Waterworks … Farmville    
-27 Franklin Coun… Franklin …  &lt;NA&gt;      &lt;NA&gt;      625 Franklin Fa… Chambersburg 
-28 Glades County… Glades Co… "Glades … "Glades C… 1297 East Sr 78  Moore Haven  
-29 Grayson Count… Grayson C… ""        ""         320 Shaw Statio… Leitchfield  
-30 Hardin County… Hardin Co… ""        ""         1116 14th Avenue Eldora       
-31 Honolulu Fede… Honolulu … "Federal… "Federal … 351 Elliott St.  Honolulu     
-32 Irwin County … Irwin Cou… "Irwin C… "LaSalle … 132 Cotton Drive Ocilla       
-33 Jefferson Cou… Jefferson…  &lt;NA&gt;      &lt;NA&gt;      219 East Fremon… Rigby        
-34 Limestone Cou… Limestone… ""        "Communit… 910 North Tyus … Groesbeck    
-35 Lincoln Count… Lincoln C…  &lt;NA&gt;      &lt;NA&gt;      3020 N Jeffers   North Platte 
-36 Linn County J… Linn Coun… ""        "Linn Cou… 53 3rd Avenue B… Cedar Rapids 
-37 Madison Count… Madison C…  &lt;NA&gt;      &lt;NA&gt;      2935 Highway 51  Canton       
-38 Marion County… Marion Co… ""        ""         695 Justice Way  Indianapolis 
-39 Miller County… Miller Co… ""        ""         2300 East Street Texarkana    
-40 Minicassia De… Minicassi… ""        ""         1415 Albion Ave… Burley       
-41 Minnehaha Cou… Minnehaha… ""        ""         500 North Minne… Sioux Falls  
-42 Moshannon Val… Moshannon… "Moshann… "The GEO … 555 Geo Drive    Philipsburg  
-43 Natrona Count… Natrona C… ""        ""         1100 Bruce Lane  Casper       
-44 Niagara Count… Niagara C… ""        "New York… 5526 Niagara St… Lockport     
-45 North Lake Co… North Lak…  &lt;NA&gt;      &lt;NA&gt;      1805 W 32nd St   Baldwin      
-46 Northern Regi… Northern … ""        ""         Rd. 2, Box 1     Moundsville  
-47 Otero County … Otero Cou… "Otero C… "Manageme… 26 Mcgregor Ran… Chaparral    
-48 Pine Prairie … Pine Prai… ""        "LCS Corr… 1133 Hampton Du… Pine Prairie 
-49 Pinellas Coun… Pinellas … "Pinella… ""         14400 49th Stre… Clearwater   
-50 Plymouth Coun… Plymouth … "Plymout… "Plymouth… 26 Long Pond Ro… Plymouth     
-51 Polk County J… Polk Coun… ""        ""         1985 Ne 51st Pl… Des Moines   
-52 Pottawattamie… Pottawatt… "Pottawa… "Pottawat… 1400 Big Lake R… Council Bluf…
-53 Richwood Corr… Richwood …  &lt;NA&gt;      &lt;NA&gt;      180 Pine Bayou … Monroe       
-54 Rio Grande De… Rio Grand… "Rio Gra… "GEO Grou… 1001 San Rio Bo… Laredo       
-55 Riverside Reg… Riverside… ""        ""         1000 River Road  Hopewell     
-56 Rockingham Co… Rockingha… ""        ""         25 South Libert… Harrisonburg 
-57 Sebastian Cou… Sebastian… ""        ""         801 South A Str… Fort Smith   
-58 Seneca County… Seneca Co… ""        "Seneca C… 3040 South Stat… Tiffin       
-59 Sherburne Cou… Sherburne… ""        "Sherburn… 13880 Business … Elk River    
-60 South Louisia… South Lou…  &lt;NA&gt;      &lt;NA&gt;      3843 Stagg Aven… Basile       
-61 Stewart Deten… Stewart D… "Stewart… "Correcti… 146 Cca Road     Lumpkin      
-62 T Don Hutto D… T. Don Hu… "T. Don … "Correcti… 1001 Welch Stre… Taylor       
-63 Torrance/Esta… Torrance … ""        "Correcti… 209 County Road… Estancia     
-64 Val Verde Cor… Val Verde… "Val Ver… "GEO Grou… 253 Farm To Mar… Del Rio      
-65 Washington Co… Washingto… "Washing… ""         1155 West Clyde… Fayetteville 
-66 Washington Co… Purgatory… "Purgato… ""         750 South 5300 … Hurricane    
-67 Washoe County… Washoe Co… ""        "Washoe C… 911 Parr Blvd 7… Reno         
-68 Weber County … Weber Cou… ""        ""         721 West 12th S… Ogden        
-69 Western Tenne… West Tenn… ""        "Correcti… 6299 Finde Naif… Mason        
-70 Winn Correcti… Winn Corr…  &lt;NA&gt;      &lt;NA&gt;      560 Gum Spring … Winnfield    
-71 Wyatt Detenti… Wyatt Det… "Wyatt D… "Central … 950 High Street  Central Falls
+ 3 Baker Correct… Baker Cor…  &lt;NA&gt;      &lt;NA&gt;      20706 Us 90 W    Sanderson    
+ 4 Boone County … Boone Cou… "Boone C… "Boone Co… 3020 Conrad Lane Burlington   
+ 5 Broward Trans… Broward T… "Broward… "Geo Grou… 3900 North Powe… Pompano Beach
+ 6 Butler County… Butler Co…  &lt;NA&gt;      &lt;NA&gt;      705 Hanover Str… Hamilton     
+ 7 Cambria Count… Cambria C… "Cambria… "Cambria … 425 Manor Drive  Ebensburg    
+ 8 Cass County J… Cass Coun… ""        ""         336 Main Street  Plattsmouth  
+ 9 Central Louis… LaSalle D… "LaSalle… "Geo Grou… 830 Pinehill Ro… Jena         
+10 Chase County … Chase Cou… ""        ""         301 South Walnu… Cottonwood F…
+11 Chippewa Coun… Chippewa … ""        "Chippewa… 325 Court Street Sault Ste. M…
+12 Cibola County… Cibola Co…  &lt;NA&gt;      &lt;NA&gt;      2000 Cibola Loop Milan        
+13 Clinton Count… Clinton C… ""        ""         58 Pine Mountai… McElhattan   
+14 Clinton Count… Clinton C… ""        ""         25 Mccarthy Dri… Plattsburgh  
+15 Clinton Count… Clinton C…  &lt;NA&gt;      &lt;NA&gt;      301 E Walnut St… Frankfort    
+16 Cumberland Co… Cumberlan… "Cumberl… ""         50 County Way    Portland     
+17 Delaney Hall … Delaney H… ""        "GEO Grou… 451 Doremus Ave… Newark       
+18 Denver Contra… Aurora Co… ""        "GEO Grou… 3130 Oakland St  Aurora       
+19 Dilley Immigr… South Tex… "South T… "CoreCivi… 300 El Rancho W… Dilley       
+20 Dodge County … Dodge Cou… ""        "Dodge Co… 215 West Centra… Juneau       
+21 Eden Detentio… Eden Dete…  &lt;NA&gt;      &lt;NA&gt;      702 E Broadway … Eden         
+22 El Paso Servi… El Paso S… ""        "ICE"      8915 Montana Av… El Paso      
+23 Elizabeth Det… Elizabeth…  &lt;NA&gt;      &lt;NA&gt;      625 Evans Street Elizabeth    
+24 Eloy Detentio… Eloy Dete… "Eloy De… "Correcti… 1705 East Hanna… Eloy         
+25 Erie County J… Erie Coun… ""        "Erie Cou… Department Of C… Erie         
+26 Camp East Mon… Camp East…  &lt;NA&gt;      &lt;NA&gt;      6920 Digital Rd  El Paso      
+27 Etowah County… Etowah Co… ""        "Etowah C… 827 Forrest Ave… Gadsden      
+28 Farmville Det… Farmville…  &lt;NA&gt;      &lt;NA&gt;      508 Waterworks … Farmville    
+29 Franklin Coun… Franklin …  &lt;NA&gt;      &lt;NA&gt;      625 Franklin Fa… Chambersburg 
+30 Glades County… Glades Co… "Glades … "Glades C… 1297 East Sr 78  Moore Haven  
+31 Grayson Count… Grayson C… ""        ""         320 Shaw Statio… Leitchfield  
+32 Hardin County… Hardin Co… ""        ""         1116 14th Avenue Eldora       
+33 Honolulu Fede… Honolulu … "Federal… "Federal … 351 Elliott St.  Honolulu     
+34 Irwin County … Irwin Cou… "Irwin C… "LaSalle … 132 Cotton Drive Ocilla       
+35 Jefferson Cou… Jefferson…  &lt;NA&gt;      &lt;NA&gt;      219 East Fremon… Rigby        
+36 Limestone Cou… Limestone… ""        "Communit… 910 North Tyus … Groesbeck    
+37 Lincoln Count… Lincoln C…  &lt;NA&gt;      &lt;NA&gt;      3020 N Jeffers   North Platte 
+38 Linn County J… Linn Coun… ""        "Linn Cou… 53 3rd Avenue B… Cedar Rapids 
+39 Madison Count… Madison C…  &lt;NA&gt;      &lt;NA&gt;      2935 Highway 51  Canton       
+40 Marion County… Marion Co… ""        ""         695 Justice Way  Indianapolis 
+41 Miller County… Miller Co… ""        ""         2300 East Street Texarkana    
+42 Minicassia De… Minicassi… ""        ""         1415 Albion Ave… Burley       
+43 Minnehaha Cou… Minnehaha… ""        ""         500 North Minne… Sioux Falls  
+44 Moshannon Val… Moshannon… "Moshann… "The GEO … 555 Geo Drive    Philipsburg  
+45 Natrona Count… Natrona C… ""        ""         1100 Bruce Lane  Casper       
+46 Niagara Count… Niagara C… ""        "New York… 5526 Niagara St… Lockport     
+47 North Lake Co… North Lak…  &lt;NA&gt;      &lt;NA&gt;      1805 W 32nd St   Baldwin      
+48 Northeast Ohi… Northeast…  &lt;NA&gt;      &lt;NA&gt;      2240 Hubbard Ro… Youngstown   
+49 Northern Regi… Northern … ""        ""         Rd. 2, Box 1     Moundsville  
+50 Otay Mesa Det… Otay Mesa…  &lt;NA&gt;      &lt;NA&gt;      7488 Calzada De… San Diego    
+51 Otero County … Otero Cou… "Otero C… "Manageme… 26 Mcgregor Ran… Chaparral    
+52 Pine Prairie … Pine Prai… ""        "LCS Corr… 1133 Hampton Du… Pine Prairie 
+53 Pinellas Coun… Pinellas … "Pinella… ""         14400 49th Stre… Clearwater   
+54 Plymouth Coun… Plymouth … "Plymout… "Plymouth… 26 Long Pond Ro… Plymouth     
+55 Polk County J… Polk Coun… ""        ""         1985 Ne 51st Pl… Des Moines   
+56 Pottawattamie… Pottawatt… "Pottawa… "Pottawat… 1400 Big Lake R… Council Bluf…
+57 Richwood Corr… Richwood …  &lt;NA&gt;      &lt;NA&gt;      180 Pine Bayou … Monroe       
+58 Rio Grande De… Rio Grand… "Rio Gra… "GEO Grou… 1001 San Rio Bo… Laredo       
+59 Riverside Reg… Riverside… ""        ""         1000 River Road  Hopewell     
+60 Rockingham Co… Rockingha… ""        ""         25 South Libert… Harrisonburg 
+61 Sebastian Cou… Sebastian… ""        ""         801 South A Str… Fort Smith   
+62 Seneca County… Seneca Co… ""        "Seneca C… 3040 South Stat… Tiffin       
+63 Sherburne Cou… Sherburne… ""        "Sherburn… 13880 Business … Elk River    
+64 South Louisia… South Lou…  &lt;NA&gt;      &lt;NA&gt;      3843 Stagg Aven… Basile       
+65 Stewart Deten… Stewart D… "Stewart… "Correcti… 146 Cca Road     Lumpkin      
+66 T. Don Hutto … T. Don Hu… "T. Don … "Correcti… 1001 Welch Stre… Taylor       
+67 Torrance Coun… Torrance … ""        "Correcti… 209 County Road… Estancia     
+68 Val Verde Cor… Val Verde… "Val Ver… "GEO Grou… 253 Farm To Mar… Del Rio      
+69 Washington Co… Washingto… "Washing… ""         1155 West Clyde… Fayetteville 
+70 Washington Co… Purgatory… "Purgato… ""         750 South 5300 … Hurricane    
+71 Washoe County… Washoe Co… ""        "Washoe C… 911 Parr Blvd 7… Reno         
+72 Weber County … Weber Cou… ""        ""         721 West 12th S… Ogden        
+73 Western Tenne… West Tenn… ""        "Correcti… 6299 Finde Naif… Mason        
+74 Winn Correcti… Winn Corr…  &lt;NA&gt;      &lt;NA&gt;      560 Gum Spring … Winnfield    
+75 Wyatt Detenti… Wyatt Det… "Wyatt D… "Central … 950 High Street  Central Falls
 # ℹ 31 more variables: facility_state &lt;chr&gt;, facility_zip &lt;chr&gt;,
 #   facility_aor &lt;chr&gt;, facility_type_detailed &lt;chr&gt;,
 #   facility_male_female &lt;chr&gt;, facility_average_length_of_stay_alos &lt;dbl&gt;,
@@ -1011,106 +1162,142 @@ Caused by warning:
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>contractors_fy26_patch <span class="ot">&lt;-</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"contractors-patch-fy26.csv"</span>)) </span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(contractors_fy26_patch) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"facility_name"</span>, <span class="st">"location"</span>, <span class="st">"management"</span>)</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>facilities_data_merged<span class="sc">$</span>FY26 <span class="ot">&lt;-</span> facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rows_update</span>(<span class="fu">select</span>(contractors_fy26_patch, facility_name, management),</span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">by =</span><span class="st">"facility_name"</span>,</span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>              <span class="at">unmatched =</span> <span class="st">"ignore"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hunting for extra matches to perfect this patch</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ice_fy26_locations &lt;- facilities_data_merged$FY26 %&gt;% </span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   transmute(facility_name, location = paste0(facility_city, ", ", facility_state))</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="co"># contractors_fy26_patch %&gt;%</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   mutate(matched = facility_name %in% facilities_data_merged$FY26$facility_name) %&gt;% </span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   filter(!matched) %&gt;% </span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   mutate(matched_location = location %in% ice_fy26_locations$location) %&gt;%</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   mutate(matched_ice_facility = ice_fy26_locations$facility_name[match(location, ice_fy26_locations$location)]) %&gt;%</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co">#   arrange(matched_location) %&gt;%</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="co">#   filter(matched_location) %&gt;%</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="co">#   select(1, 6, 2) -&gt; contractors_fy26_location_matches</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a><span class="co"># contractors_fy26_location_matches[c(5, 8, 16), c(1,2)] %&gt;% dput</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>contractors_fy26_patch <span class="ot">&lt;-</span></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"contractors-patch-fy26.csv"</span>)) </span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(contractors_fy26_patch) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"facility_name"</span>, <span class="st">"location"</span>, <span class="st">"management"</span>)</span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>name_fixes <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">facility_name =</span> <span class="fu">c</span>(<span class="st">"Dallas Transitional Center"</span>, </span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"West Tennessee Detention Facility"</span>),</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>                     <span class="at">matched_ice_facility =</span> <span class="fu">c</span>(<span class="st">"Dallas County Jail - Lew Sterrett Justice Center"</span>, </span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>                            <span class="st">"Western Tennessee Detention Facility"</span>)</span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>                     )</span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>contractors_fy26_patch <span class="ot">&lt;-</span> contractors_fy26_patch <span class="sc">%&gt;%</span></span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(name_fixes, <span class="at">by =</span> <span class="st">"facility_name"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">facility_name =</span> <span class="fu">coalesce</span>(matched_ice_facility, facility_name)) <span class="sc">%&gt;%</span></span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>matched_ice_facility)</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a>facilities_data_merged<span class="sc">$</span>FY26 <span class="ot">&lt;-</span> facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span></span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rows_update</span>(<span class="fu">select</span>(contractors_fy26_patch, facility_name, management),</span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a>              <span class="at">by =</span><span class="st">"facility_name"</span>,</span>
+<span id="cb30-36"><a href="#cb30-36" aria-hidden="true" tabindex="-1"></a>              <span class="at">unmatched =</span> <span class="st">"ignore"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>facilities_wikitable_from_merged <span class="ot">&lt;-</span> <span class="cf">function</span>(facilties_data, year_name) {</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  wiki_table <span class="ot">&lt;-</span> facilties_data <span class="sc">%&gt;%</span></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_name_wiki =</span> <span class="fu">case_when</span>(</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>        facility_name <span class="sc">==</span> wiki_slug <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, facility_name, <span class="st">"]]"</span>),</span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>        wiki_slug <span class="sc">!=</span> <span class="st">""</span> <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, wiki_slug, <span class="st">"|"</span>, facility_name, <span class="st">"]]"</span>),</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> facility_name</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>      ),</span>
-<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">city_state =</span> <span class="fu">paste0</span>(facility_city, <span class="st">", "</span>, facility_state),</span>
-<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">city_state_wiki =</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, city_state, <span class="st">"]]"</span>),</span>
-<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">status =</span> <span class="fu">paste0</span>(<span class="st">"In use ("</span>, year_name, <span class="st">")"</span>),</span>
-<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">location =</span> city_state_wiki,</span>
-<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">authority =</span> facility_type_detailed,</span>
-<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>      <span class="co">#           management = "",</span></span>
-<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">average_daily_population =</span> <span class="fu">round</span>(sum_criminality_levels),</span>
-<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">minimum_capacity =</span> inspections_guaranteed_minimum,</span>
-<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">demographics =</span> facility_male_female) <span class="sc">%&gt;%</span></span>
-<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(</span>
-<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>      facility_name_wiki,</span>
-<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>      status,</span>
-<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>      location,</span>
-<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>      facility_type_wiki,</span>
-<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>      authority,</span>
-<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>      management,</span>
-<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>      average_daily_population,</span>
-<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>      minimum_capacity,</span>
-<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>      demographics)</span>
-<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>} </span>
-<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to print a data frame as a MediaWiki table</span></span>
-<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>table_column_names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Facility Name"</span>,</span>
-<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Status (year)"</span>,</span>
-<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Location"</span>,</span>
-<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Facility Type"</span>,</span>
-<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Authority"</span>,</span>
-<span id="cb26-40"><a href="#cb26-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Management"</span>,</span>
-<span id="cb26-41"><a href="#cb26-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Average Daily Population"</span>,</span>
-<span id="cb26-42"><a href="#cb26-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Minimum Capacity"</span>,</span>
-<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Demographics"</span></span>
-<span id="cb26-44"><a href="#cb26-44" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb26-45"><a href="#cb26-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-46"><a href="#cb26-46" aria-hidden="true" tabindex="-1"></a>get_wikitable <span class="ot">&lt;-</span> <span class="cf">function</span>(df, <span class="at">caption =</span> <span class="cn">NULL</span>, <span class="at">class =</span> <span class="st">"wikitable sortable"</span>,</span>
-<span id="cb26-47"><a href="#cb26-47" aria-hidden="true" tabindex="-1"></a>                            <span class="at">column_names =</span> <span class="cn">NULL</span>) {</span>
-<span id="cb26-48"><a href="#cb26-48" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize an empty character vector to store lines</span></span>
-<span id="cb26-49"><a href="#cb26-49" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
-<span id="cb26-50"><a href="#cb26-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-51"><a href="#cb26-51" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 1. Start Table</span></span>
-<span id="cb26-52"><a href="#cb26-52" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">'{| class="'</span>, class, <span class="st">'"'</span>))</span>
-<span id="cb26-53"><a href="#cb26-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-54"><a href="#cb26-54" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 2. Add Caption (Optional)</span></span>
-<span id="cb26-55"><a href="#cb26-55" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(caption)) {</span>
-<span id="cb26-56"><a href="#cb26-56" aria-hidden="true" tabindex="-1"></a>    out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">"|+ "</span>, caption))</span>
-<span id="cb26-57"><a href="#cb26-57" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb26-58"><a href="#cb26-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-59"><a href="#cb26-59" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 3. Header Row</span></span>
-<span id="cb26-60"><a href="#cb26-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use provided column_names if available, otherwise use dataframe names</span></span>
-<span id="cb26-61"><a href="#cb26-61" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(column_names)) {</span>
-<span id="cb26-62"><a href="#cb26-62" aria-hidden="true" tabindex="-1"></a>    column_names <span class="ot">&lt;-</span> <span class="fu">names</span>(df)</span>
-<span id="cb26-63"><a href="#cb26-63" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb26-64"><a href="#cb26-64" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb26-65"><a href="#cb26-65" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use ! for headers, separating with !!</span></span>
-<span id="cb26-66"><a href="#cb26-66" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">"! "</span>, <span class="fu">paste</span>(column_names, <span class="at">collapse =</span> <span class="st">" !! "</span>)))</span>
-<span id="cb26-67"><a href="#cb26-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-68"><a href="#cb26-68" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 4. Data Rows</span></span>
-<span id="cb26-69"><a href="#cb26-69" aria-hidden="true" tabindex="-1"></a>  formatted_rows <span class="ot">&lt;-</span> <span class="fu">apply</span>(df, <span class="dv">1</span>, <span class="cf">function</span>(row) {</span>
-<span id="cb26-70"><a href="#cb26-70" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert to character and escape pipes</span></span>
-<span id="cb26-71"><a href="#cb26-71" aria-hidden="true" tabindex="-1"></a>    row_clean <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">|"</span>, <span class="st">"|"</span>, <span class="fu">as.character</span>(row))</span>
-<span id="cb26-72"><a href="#cb26-72" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace NAs with empty string</span></span>
-<span id="cb26-73"><a href="#cb26-73" aria-hidden="true" tabindex="-1"></a>    row_clean[<span class="fu">is.na</span>(row_clean)] <span class="ot">&lt;-</span> <span class="st">""</span></span>
-<span id="cb26-74"><a href="#cb26-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-75"><a href="#cb26-75" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(<span class="st">"| "</span>, <span class="fu">paste</span>(row_clean, <span class="at">collapse =</span> <span class="st">" || "</span>))</span>
-<span id="cb26-76"><a href="#cb26-76" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb26-77"><a href="#cb26-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-78"><a href="#cb26-78" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add each row preceded by the row separator |-</span></span>
-<span id="cb26-79"><a href="#cb26-79" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Interleave "|-" with the formatted row strings</span></span>
-<span id="cb26-80"><a href="#cb26-80" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">"|-</span><span class="sc">\n</span><span class="st">"</span>, formatted_rows))</span>
-<span id="cb26-81"><a href="#cb26-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-82"><a href="#cb26-82" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 5. End Table</span></span>
-<span id="cb26-83"><a href="#cb26-83" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="st">"|}"</span>)</span>
-<span id="cb26-84"><a href="#cb26-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-85"><a href="#cb26-85" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Combine all elements into a single string separated by newlines</span></span>
-<span id="cb26-86"><a href="#cb26-86" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">paste</span>(out, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>))</span>
-<span id="cb26-87"><a href="#cb26-87" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>facilities_wikitable_from_merged <span class="ot">&lt;-</span> <span class="cf">function</span>(facilties_data, year_name) {</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="st">"wiki_match"</span> <span class="sc">%in%</span> <span class="fu">names</span>(facilties_data)) {</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    facilities_data <span class="ot">&lt;-</span> facilities_data <span class="sc">%&gt;%</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">wiki_match =</span> <span class="cn">NA_character_</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  wiki_table <span class="ot">&lt;-</span> facilties_data <span class="sc">%&gt;%</span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">facility_name_wiki =</span> <span class="fu">case_when</span>(</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>        facility_name <span class="sc">==</span> wiki_slug <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, facility_name, <span class="st">"]]"</span>),</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>        wiki_slug <span class="sc">!=</span> <span class="st">""</span> <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, wiki_slug, <span class="st">"|"</span>, facility_name, <span class="st">"]]"</span>),</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>        (wiki_match <span class="sc">!=</span> <span class="st">""</span>) <span class="sc">&amp;</span> (<span class="sc">!</span><span class="fu">is.na</span>(wiki_match)) <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, wiki_match, <span class="st">"|"</span>, facility_name, <span class="st">"]]"</span>),</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> facility_name</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">city_state =</span> <span class="fu">paste0</span>(facility_city, <span class="st">", "</span>, facility_state),</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">city_state_wiki =</span> <span class="fu">paste0</span>(<span class="st">"[["</span>, city_state, <span class="st">"]]"</span>),</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">status =</span> <span class="fu">paste0</span>(<span class="st">"In use ("</span>, year_name, <span class="st">")"</span>),</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">location =</span> city_state_wiki,</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">authority =</span> facility_type_detailed,</span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>      <span class="co">#           management = "",</span></span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">average_daily_population =</span> <span class="fu">round</span>(sum_criminality_levels),</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">minimum_capacity =</span> inspections_guaranteed_minimum,</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">demographics =</span> facility_male_female) <span class="sc">%&gt;%</span></span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(</span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>      facility_name_wiki,</span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>      status,</span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>      location,</span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>      facility_type_wiki,</span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>      authority,</span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a>      management,</span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a>      average_daily_population,</span>
+<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a>      minimum_capacity,</span>
+<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a>      demographics)</span>
+<span id="cb31-36"><a href="#cb31-36" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb31-37"><a href="#cb31-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-38"><a href="#cb31-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-39"><a href="#cb31-39" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb31-40"><a href="#cb31-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to print a data frame as a MediaWiki table</span></span>
+<span id="cb31-41"><a href="#cb31-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-42"><a href="#cb31-42" aria-hidden="true" tabindex="-1"></a>table_column_names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb31-43"><a href="#cb31-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Facility Name"</span>,</span>
+<span id="cb31-44"><a href="#cb31-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Status (year)"</span>,</span>
+<span id="cb31-45"><a href="#cb31-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Location"</span>,</span>
+<span id="cb31-46"><a href="#cb31-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Facility Type"</span>,</span>
+<span id="cb31-47"><a href="#cb31-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Authority"</span>,</span>
+<span id="cb31-48"><a href="#cb31-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Management"</span>,</span>
+<span id="cb31-49"><a href="#cb31-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Average Daily Population"</span>,</span>
+<span id="cb31-50"><a href="#cb31-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Minimum Capacity"</span>,</span>
+<span id="cb31-51"><a href="#cb31-51" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Demographics"</span></span>
+<span id="cb31-52"><a href="#cb31-52" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb31-53"><a href="#cb31-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-54"><a href="#cb31-54" aria-hidden="true" tabindex="-1"></a>get_wikitable <span class="ot">&lt;-</span> <span class="cf">function</span>(df, <span class="at">caption =</span> <span class="cn">NULL</span>, <span class="at">class =</span> <span class="st">"wikitable sortable"</span>,</span>
+<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a>                            <span class="at">column_names =</span> <span class="cn">NULL</span>) {</span>
+<span id="cb31-56"><a href="#cb31-56" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize an empty character vector to store lines</span></span>
+<span id="cb31-57"><a href="#cb31-57" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb31-58"><a href="#cb31-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-59"><a href="#cb31-59" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 1. Start Table</span></span>
+<span id="cb31-60"><a href="#cb31-60" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">'{| class="'</span>, class, <span class="st">'"'</span>))</span>
+<span id="cb31-61"><a href="#cb31-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-62"><a href="#cb31-62" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 2. Add Caption (Optional)</span></span>
+<span id="cb31-63"><a href="#cb31-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(caption)) {</span>
+<span id="cb31-64"><a href="#cb31-64" aria-hidden="true" tabindex="-1"></a>    out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">"|+ "</span>, caption))</span>
+<span id="cb31-65"><a href="#cb31-65" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-66"><a href="#cb31-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-67"><a href="#cb31-67" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 3. Header Row</span></span>
+<span id="cb31-68"><a href="#cb31-68" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use provided column_names if available, otherwise use dataframe names</span></span>
+<span id="cb31-69"><a href="#cb31-69" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(column_names)) {</span>
+<span id="cb31-70"><a href="#cb31-70" aria-hidden="true" tabindex="-1"></a>    column_names <span class="ot">&lt;-</span> <span class="fu">names</span>(df)</span>
+<span id="cb31-71"><a href="#cb31-71" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-72"><a href="#cb31-72" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb31-73"><a href="#cb31-73" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use ! for headers, separating with !!</span></span>
+<span id="cb31-74"><a href="#cb31-74" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">"! "</span>, <span class="fu">paste</span>(column_names, <span class="at">collapse =</span> <span class="st">" !! "</span>)))</span>
+<span id="cb31-75"><a href="#cb31-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-76"><a href="#cb31-76" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 4. Data Rows</span></span>
+<span id="cb31-77"><a href="#cb31-77" aria-hidden="true" tabindex="-1"></a>  formatted_rows <span class="ot">&lt;-</span> <span class="fu">apply</span>(df, <span class="dv">1</span>, <span class="cf">function</span>(row) {</span>
+<span id="cb31-78"><a href="#cb31-78" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert to character and escape pipes</span></span>
+<span id="cb31-79"><a href="#cb31-79" aria-hidden="true" tabindex="-1"></a>    row_clean <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">|"</span>, <span class="st">"|"</span>, <span class="fu">as.character</span>(row))</span>
+<span id="cb31-80"><a href="#cb31-80" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace NAs with empty string</span></span>
+<span id="cb31-81"><a href="#cb31-81" aria-hidden="true" tabindex="-1"></a>    row_clean[<span class="fu">is.na</span>(row_clean)] <span class="ot">&lt;-</span> <span class="st">""</span></span>
+<span id="cb31-82"><a href="#cb31-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-83"><a href="#cb31-83" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(<span class="st">"| "</span>, <span class="fu">paste</span>(row_clean, <span class="at">collapse =</span> <span class="st">" || "</span>))</span>
+<span id="cb31-84"><a href="#cb31-84" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb31-85"><a href="#cb31-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-86"><a href="#cb31-86" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add each row preceded by the row separator |-</span></span>
+<span id="cb31-87"><a href="#cb31-87" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Interleave "|-" with the formatted row strings</span></span>
+<span id="cb31-88"><a href="#cb31-88" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="fu">paste0</span>(<span class="st">"|-</span><span class="sc">\n</span><span class="st">"</span>, formatted_rows))</span>
+<span id="cb31-89"><a href="#cb31-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-90"><a href="#cb31-90" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 5. End Table</span></span>
+<span id="cb31-91"><a href="#cb31-91" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">c</span>(out, <span class="st">"|}"</span>)</span>
+<span id="cb31-92"><a href="#cb31-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-93"><a href="#cb31-93" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Combine all elements into a single string separated by newlines</span></span>
+<span id="cb31-94"><a href="#cb31-94" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">paste</span>(out, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>))</span>
+<span id="cb31-95"><a href="#cb31-95" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
@@ -1153,30 +1340,30 @@ Caused by warning:
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>facilities_wikitable <span class="ot">&lt;-</span> facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span> </span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facilities_wikitable_from_merged</span>(<span class="at">year_name =</span> <span class="st">"FY26"</span>)</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>year_name <span class="ot">&lt;-</span> <span class="st">"FY26"</span></span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="fu">get_wikitable</span>(facilities_wikitable, </span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>                  <span class="at">caption =</span> <span class="fu">paste0</span>(<span class="st">"ICE Detention Facilities in "</span>, year_name),</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>                  <span class="at">column_names =</span> table_column_names) <span class="sc">%&gt;%</span></span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">copy_to_clipboard_button_wt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>facilities_wikitable <span class="ot">&lt;-</span> facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span> </span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facilities_wikitable_from_merged</span>(<span class="at">year_name =</span> <span class="st">"FY26"</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>year_name <span class="ot">&lt;-</span> <span class="st">"FY26"</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="fu">get_wikitable</span>(facilities_wikitable, </span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>                  <span class="at">caption =</span> <span class="fu">paste0</span>(<span class="st">"ICE Detention Facilities in "</span>, year_name),</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>                  <span class="at">column_names =</span> table_column_names) <span class="sc">%&gt;%</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">copy_to_clipboard_button_wt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<button class="copy-btn" onclick="copyTableToClipboard('copy_target_5144', this)">Copy WikiText</button>
-<textarea id="copy_target_5144" style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" readonly="TRUE">{| class="wikitable sortable"
+<button class="copy-btn" onclick="copyTableToClipboard('copy_target_9080', this)">Copy WikiText</button>
+<textarea id="copy_target_9080" style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" readonly="TRUE">{| class="wikitable sortable"
 |+ ICE Detention Facilities in FY26
 ! Facility Name !! Status (year) !! Location !! Facility Type !! Authority !! Management !! Average Daily Population !! Minimum Capacity !! Demographics
 |-
-| Adams County Correctional Center || In use (FY26) || [[Natchez, MS]] || Jail || DIGSA ||  || 2162 || 1436 || Male
+| [[Adams County Correctional Center|Adams County Correctional Center]] || In use (FY26) || [[Natchez, MS]] || Jail || DIGSA ||  || 2162 || 1436 || Male
 |-
 | [[Adelanto Detention Center|Adelanto ICE Processing Center]] || In use (FY26) || [[Adelanto, CA]] || Private Migrant Detention Center || CDF || GEO Group || 1807 ||  640 || Male
 |-
-| Alexandria Staging Facility || In use (FY26) || [[Alexandria, LA]] || ICE Short-Term Migrant Detention Center || STAGING ||  ||  413 ||  || Male
+| Alexandria Staging Facility || In use (FY26) || [[Alexandria, LA]] || ICE Short-Term Migrant Detention Center || STAGING || GEO Group ||  413 ||  || Male
 |-
 | Allegany County Jail || In use (FY26) || [[Belmont, NY]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
 |-
@@ -1184,7 +1371,7 @@ Caused by warning:
 |-
 | Anchorage Correctional Complex || In use (FY26) || [[Anchorage, AK]] || Jail || USMS IGA ||  ||    3 ||  || Male
 |-
-| Baker Correctional Institution || In use (FY26) || [[Sanderson, FL]] || State Migrant Detention Center || STATE ||  ||  859 ||  || Male
+| [[Baker Correctional Institution|Baker Correctional Institution]] || In use (FY26) || [[Sanderson, FL]] || State Migrant Detention Center || STATE ||  ||  859 ||  || Male
 |-
 | Baker County Sheriff Department. || In use (FY26) || [[Macclenny, FL]] || Jail || IGSA ||  ||  287 ||  250 || Female/Male
 |-
@@ -1192,7 +1379,7 @@ Caused by warning:
 |-
 | Berlin Federal. Correctional. Institution. || In use (FY26) || [[Berlin, NH]] || Federal Prison || BOP ||  ||  202 ||  || Male
 |-
-| Bluebonnet Detention Facility || In use (FY26) || [[Anson, TX]] || Jail || DIGSA ||  || 1044 ||  750 || Female/Male
+| Bluebonnet Detention Center || In use (FY26) || [[Anson, TX]] || Jail || DIGSA ||  || 1044 ||  750 || Female/Male
 |-
 | [[Boone County Jail]] || In use (FY26) || [[Burlington, KY]] || Jail || USMS IGA || Boone County Sheriff's Department ||  201 ||  || Female/Male
 |-
@@ -1202,13 +1389,13 @@ Caused by warning:
 |-
 | Broward County Jail || In use (FY26) || [[Fort Lauderdale, FL]] || Jail || IGSA ||  ||    3 ||  || Female/Male
 |-
-| [[Broward Transitional Center]] || In use (FY26) || [[Pompano Beach, FL]] || Private Migrant Detention Center || CDF || Geo Group(formerly Wackenhut Corrections Corporation) ||  679 ||  700 || Female/Male
+| [[Broward Transitional Center]] || In use (FY26) || [[Pompano Beach, FL]] || Private Migrant Detention Center || CDF || GEO Group ||  679 ||  700 || Female/Male
 |-
 | Buffalo Service Processing Center || In use (FY26) || [[Batavia, NY]] || ICE Migrant Detention Center || SPC ||  ||  738 ||  400 || Male
 |-
 | Burleigh County || In use (FY26) || [[Bismarck, ND]] || Jail || USMS IGA ||  ||   17 ||  || Female/Male
 |-
-| Butler County Jail || In use (FY26) || [[Hamilton, OH]] || Jail || USMS IGA ||  ||  360 ||  || Female/Male
+| [[Butler County Jail|Butler County Jail]] || In use (FY26) || [[Hamilton, OH]] || Jail || USMS IGA ||  ||  360 ||  || Female/Male
 |-
 | Calhoun County Correctional Center || In use (FY26) || [[Battle Creek, MI]] || Jail || IGSA ||  ||  173 ||   75 || Female/Male
 |-
@@ -1222,23 +1409,23 @@ Caused by warning:
 |-
 | Cascade County Jail, Montana || In use (FY26) || [[Great Falls, MT]] || Jail || USMS IGA ||  ||    4 ||  || Male
 |-
-| Cass County Jail || In use (FY26) || [[Plattsmouth, NE]] || Jail || USMS IGA ||  ||   15 ||  || Female/Male
+| [[Cass County Jail|Cass County Jail]] || In use (FY26) || [[Plattsmouth, NE]] || Jail || USMS IGA ||  ||   15 ||  || Female/Male
 |-
-| CCA, Florence Correctional Center || In use (FY26) || [[Florence, AZ]] || Private Migrant Detention Center || USMS CDF ||  ||  517 ||  || Male
+| Central Arizona Florence Correctional Complex || In use (FY26) || [[Florence, AZ]] || Private Migrant Detention Center || USMS CDF || CoreCivic ||  517 ||  || Male
 |-
 | [[LaSalle Detention Center|Central Louisiana ICE Processing Center (CLIPC)]] || In use (FY26) || [[Jena, LA]] || Jail || IGSA || Geo Group/ICE Detention and Removal Operations || 1173 || 1170 || Male
 |-
-| Chase County Jail || In use (FY26) || [[Cottonwood Falls, KS]] || Jail || IGSA ||  ||  112 ||  || Female/Male
+| [[Chase County Jail|Chase County Jail]] || In use (FY26) || [[Cottonwood Falls, KS]] || Jail || IGSA ||  ||  112 ||  || Female/Male
 |-
 | Chavez Detention Center || In use (FY26) || [[Roswell, NM]] || Jail || USMS IGA ||  ||    2 ||  || Female/Male
 |-
-| Chippewa County SSM || In use (FY26) || [[Sault Ste. Marie, MI]] || Jail || IGSA || Chippewa County Sheriff's Department ||   38 ||  || Male
+| [[Chippewa County Jail|Chippewa County SSM]] || In use (FY26) || [[Sault Ste. Marie, MI]] || Jail || IGSA || Chippewa County Sheriff's Department ||   38 ||  || Male
 |-
 | Chittenden Regional Correctional Facility || In use (FY26) || [[South Burlington, VT]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
 |-
 | Christian County Jail || In use (FY26) || [[Hopkinsville, KY]] || Jail || USMS IGA ||  ||  101 ||  || Female/Male
 |-
-| Cibola County Correctional Center || In use (FY26) || [[Milan, NM]] || Jail || IGSA ||  ||  231 ||  || Male
+| [[Cibola County Correctional Center|Cibola County Correctional Center]] || In use (FY26) || [[Milan, NM]] || Jail || IGSA || CoreCivic ||  231 ||  || Male
 |-
 | Cimmarron Correctional Facility || In use (FY26) || [[Cushing, OK]] || Jail || USMS IGA ||  ||  588 ||  || Male
 |-
@@ -1246,11 +1433,11 @@ Caused by warning:
 |-
 | Clay County Justice Center || In use (FY26) || [[Brazil, IN]] || Jail || USMS IGA ||  ||  238 ||  || Female/Male
 |-
-| Clinton County Correctional Facility || In use (FY26) || [[McElhattan, PA]] || Jail || USMS IGA ||  ||   92 ||  || Female/Male
+| [[Clinton County Correctional Facility|Clinton County Correctional Facility]] || In use (FY26) || [[McElhattan, PA]] || Jail || USMS IGA ||  ||   92 ||  || Female/Male
 |-
-| Clinton County Jail || In use (FY26) || [[Plattsburgh, NY]] || Jail || USMS IGA ||  ||    4 ||  || Female/Male
+| [[Clinton County Jail|Clinton County Jail]] || In use (FY26) || [[Plattsburgh, NY]] || Jail || USMS IGA ||  ||    4 ||  || Female/Male
 |-
-| Clinton County Jail || In use (FY26) || [[Frankfort, IN]] || Jail || USMS IGA ||  ||   26 ||  || Female/Male
+| [[Clinton County Jail|Clinton County Jail]] || In use (FY26) || [[Frankfort, IN]] || Jail || USMS IGA ||  ||   26 ||  || Female/Male
 |-
 | Coastal Bend Detention Facility || In use (FY26) || [[Robstown, TX]] || Jail || USMS IGA ||  ||   56 ||  || Female/Male
 |-
@@ -1264,25 +1451,25 @@ Caused by warning:
 |-
 | Dakota County Jail || In use (FY26) || [[Dakota City, NE]] || Jail || USMS IGA ||  ||   27 ||  || Female/Male
 |-
-| Dallas County Jail - Lew Sterrett Justice Center || In use (FY26) || [[Dallas, TX]] || Jail || USMS IGA ||  ||    1 ||  || Female/Male
+| Dallas County Jail - Lew Sterrett Justice Center || In use (FY26) || [[Dallas, TX]] || Jail || USMS IGA || CoreCivic ||    1 ||  || Female/Male
 |-
 | Daviess County Detention || In use (FY26) || [[Owensboro, KY]] || Jail || USMS IGA ||  ||   25 ||  || Female/Male
 |-
 | Davis County || In use (FY26) || [[Farmington, UT]] || Jail || IGSA ||  ||    4 ||  || Female/Male
 |-
-| Delaney Hall Detention Facility || In use (FY26) || [[Newark, NJ]] || Private Migrant Detention Center || CDF || GEO Group ||  905 ||  700 || Female/Male
+| [[Delaney Hall|Delaney Hall Detention Facility]] || In use (FY26) || [[Newark, NJ]] || Private Migrant Detention Center || CDF || GEO Group ||  905 ||  700 || Female/Male
 |-
-| Denver Contract Detention Facility || In use (FY26) || [[Aurora, CO]] || Private Migrant Detention Center || CDF || GEO Group || 1226 ||  600 || Female/Male
+| [[Aurora Contract Detention Facility(ICE Processing Center)|Denver Contract Detention Facility]] || In use (FY26) || [[Aurora, CO]] || Private Migrant Detention Center || CDF || GEO Group || 1226 ||  600 || Female/Male
 |-
 | Department of Corrections Hagatna || In use (FY26) || [[Hagatna, GU]] || Jail || USMS IGA ||  ||   16 ||  || Male
 |-
 | Desert View Annex || In use (FY26) || [[Adelanto, CA]] || Private Migrant Detention Center || CDF || GEO Group ||  411 ||  480 || Male
 |-
-| Diamondback Correctional Facility || In use (FY26) || [[Watonga, OK]] || Jail || DIGSA ||  ||   64 || 1200 || Female/Male
+| Diamondback Correctional Facility || In use (FY26) || [[Watonga, OK]] || Jail || DIGSA || CoreCivic ||   64 || 1200 || Female/Male
 |-
-| [[South Texas Family Residential Center|Dilley Immigration Processing Center]] || In use (FY26) || [[Dilley, TX]] || Other || FAMILY || CoreCivic formerly known as Corrections Corporation of America (CCA) ||  867 || 2400 || Female/Male
+| [[South Texas Family Residential Center|Dilley Immigration Processing Center]] || In use (FY26) || [[Dilley, TX]] || Other || FAMILY || CoreCivic ||  867 || 2400 || Female/Male
 |-
-| Dodge County Jail || In use (FY26) || [[Juneau, WI]] || Jail || USMS IGA || Dodge County Sheriff's Department ||  100 ||  || Female/Male
+| [[Dodge County Detention Facility(Dodge County Jail)|Dodge County Jail]] || In use (FY26) || [[Juneau, WI]] || Jail || USMS IGA || Dodge County Sheriff's Department ||  100 ||  || Female/Male
 |-
 | Dona Ana County Detention Center || In use (FY26) || [[Las Cruces, NM]] || Jail || USMS IGA ||  ||    1 ||  || Female/Male
 |-
@@ -1292,27 +1479,27 @@ Caused by warning:
 |-
 | Daviess County Detention || In use (FY26) || [[Martinsburg, WV]] || Jail || IGSA ||  ||   13 ||  || Female/Male
 |-
-| Eden Detention Center || In use (FY26) || [[Eden, TX]] || Jail || USMS IGA ||  ||  476 ||  || Male
+| [[Eden Detention Center|Eden Detention Center]] || In use (FY26) || [[Eden, TX]] || Jail || USMS IGA || CoreCivic ||  476 ||  || Male
 |-
 | El Paso County Detention Facility || In use (FY26) || [[El Paso, TX]] || Jail || IGSA ||  ||    2 ||  || Female/Male
 |-
-| El Paso Service Processing Center || In use (FY26) || [[El Paso, TX]] || ICE Migrant Detention Center || SPC || ICE ||  805 ||  450 || Female/Male
+| [[El Paso Service Processing Center|El Paso Service Processing Center]] || In use (FY26) || [[El Paso, TX]] || ICE Migrant Detention Center || SPC || ICE ||  805 ||  450 || Female/Male
 |-
 | El Valle Detention Facility || In use (FY26) || [[Raymondville, TX]] || Jail || DIGSA ||  ||  941 ||  600 || Female/Male
 |-
-| Elizabeth Contract Detention Facility || In use (FY26) || [[Elizabeth, NJ]] || Private Migrant Detention Center || CDF || Corrections Corporation of America ||  305 ||  285 || Female/Male
+| [[Elizabeth Detention Center|Elizabeth Detention Center]] || In use (FY26) || [[Elizabeth, NJ]] || Private Migrant Detention Center || CDF || CoreCivic ||  305 ||  285 || Female/Male
 |-
 | Elmore County Jail || In use (FY26) || [[Mountain Home, ID]] || Jail || USMS IGA ||  ||    9 ||  || Female/Male
 |-
-| [[Eloy Detention Center|Eloy Federal Contract Facility]] || In use (FY26) || [[Eloy, AZ]] || Jail || DIGSA || Corrections Corporation of America || 1332 ||  900 || Female/Male
+| [[Eloy Detention Center]] || In use (FY26) || [[Eloy, AZ]] || Jail || DIGSA || CoreCivic || 1332 ||  900 || Female/Male
 |-
-| Erie County Jail || In use (FY26) || [[Erie, PA]] || Jail || USMS IGA || Erie County Sheriff's Office ||   15 ||  || Male
+| [[Erie County Jail|Erie County Jail]] || In use (FY26) || [[Erie, PA]] || Jail || USMS IGA || Erie County Sheriff's Office ||   15 ||  || Male
 |-
-| ERO El Paso Camp East Montana || In use (FY26) || [[El Paso, TX]] || Private Migrant Detention Center || CDF || Acquisition Logistics LLC || 2952 ||  || Female/Male
+| [[Camp East Montana|Camp East Montana]] || In use (FY26) || [[El Paso, TX]] || Private Migrant Detention Center || CDF || Acquisition Logistics LLC || 2952 ||  || Female/Male
 |-
-| Etowah County Jail || In use (FY26) || [[Gadsden, AL]] || Jail || USMS IGA || Etowah County Sheriff's Department ||   74 ||  || Male
+| [[Etowah County Jail|Etowah County Jail]] || In use (FY26) || [[Gadsden, AL]] || Jail || USMS IGA || Etowah County Sheriff's Department ||   74 ||  || Male
 |-
-| Farmville Detention Center || In use (FY26) || [[Farmville, VA]] || Jail || DIGSA ||  ||  714 ||  459 || Male
+| [[Farmville Detention Center|Farmville Detention Center]] || In use (FY26) || [[Farmville, VA]] || Jail || DIGSA || CoreCivic ||  714 ||  459 || Male
 |-
 | Fayette County Detention Center || In use (FY26) || [[Lexington, KY]] || Jail || USMS IGA ||  ||    2 ||  || Female/Male
 |-
@@ -1332,11 +1519,11 @@ Caused by warning:
 |-
 | Folkston Annex IPC || In use (FY26) || [[Folkston, GA]] || Jail || DIGSA ||  ||  276 ||  338 || Male
 |-
-| Folkston D Ray ICE Processing Center || In use (FY26) || [[Folkston, GA]] || Jail || DIGSA ||  ||  942 || 1308 || Male
+| Folkston ICE Processing Center || In use (FY26) || [[Folkston, GA]] || Jail || DIGSA ||  ||  942 || 1308 || Male
 |-
 | Folkston Main IPC || In use (FY26) || [[Folkston, GA]] || Jail || DIGSA ||  ||  700 ||  544 || Male
 |-
-| Franklin County Jail || In use (FY26) || [[Chambersburg, PA]] || Jail || USMS IGA ||  ||    1 ||  || 
+| [[Franklin County Jail|Franklin County Jail]] || In use (FY26) || [[Chambersburg, PA]] || Jail || USMS IGA ||  ||    1 ||  || 
 |-
 | Freeborn County Adult Detention Center || In use (FY26) || [[Albert Lea, MN]] || Jail || IGSA ||  ||   82 ||  || Male
 |-
@@ -1350,7 +1537,7 @@ Caused by warning:
 |-
 | Grand Forks County Correctional Facility || In use (FY26) || [[Grand Forks, ND]] || Jail || USMS IGA ||  ||   20 ||  || Female/Male
 |-
-| Grayson County Jail || In use (FY26) || [[Leitchfield, KY]] || Jail || USMS IGA ||  ||  158 ||  || Female/Male
+| [[Grayson County Jail|Grayson County Jail]] || In use (FY26) || [[Leitchfield, KY]] || Jail || USMS IGA ||  ||  158 ||  || Female/Male
 |-
 | Greene County Jail || In use (FY26) || [[Springfield, MO]] || Jail || USMS IGA ||  ||  270 ||  || Female/Male
 |-
@@ -1358,7 +1545,7 @@ Caused by warning:
 |-
 | Hancock County Public Safety Complex || In use (FY26) || [[Bay St. Louis, MS]] || Jail || IGSA ||  ||   27 ||  || Female/Male
 |-
-| Hardin County Jail || In use (FY26) || [[Eldora, IA]] || Jail || USMS IGA ||  ||   42 ||  || Female/Male
+| [[Hardin County Jail|Hardin County Jail]] || In use (FY26) || [[Eldora, IA]] || Jail || USMS IGA ||  ||   42 ||  || Female/Male
 |-
 | Henderson Detention || In use (FY26) || [[Henderson, NV]] || Jail || USMS IGA ||  ||   91 ||  || Female/Male
 |-
@@ -1368,7 +1555,7 @@ Caused by warning:
 |-
 | Hopkins County Jail || In use (FY26) || [[Madisonville, KY]] || Jail || USMS IGA ||  ||  164 ||  || Female/Male
 |-
-| Houston Contract Detention Facility || In use (FY26) || [[Houston, TX]] || Private Migrant Detention Center || CDF || CoreCivic ||  883 ||  750 || Female/Male
+| Houston Processing Center || In use (FY26) || [[Houston, TX]] || Private Migrant Detention Center || CDF || CoreCivic ||  883 ||  750 || Female/Male
 |-
 | IAH Secure Adult Detention Facility (Polk) || In use (FY26) || [[Livingston, TX]] || Jail || DIGSA ||  ||  872 ||  350 || Male
 |-
@@ -1378,7 +1565,7 @@ Caused by warning:
 |-
 | Jackson Parish Correctional Center || In use (FY26) || [[Jonesboro, LA]] || Jail || IGSA ||  || 1192 ||  500 || Male
 |-
-| Jefferson County Jail || In use (FY26) || [[Rigby, ID]] || Jail || IGSA ||  ||    7 ||  || Female/Male
+| [[Jefferson County Jail|Jefferson County Jail]] || In use (FY26) || [[Rigby, ID]] || Jail || IGSA ||  ||    7 ||  || Female/Male
 |-
 | Joe Corley Processing Center || In use (FY26) || [[Conroe, TX]] || Jail || IGSA ||  ||  942 ||  || Male
 |-
@@ -1390,7 +1577,7 @@ Caused by warning:
 |-
 | Karnes County Correctional Center || In use (FY26) || [[Karnes City, TX]] || Jail || USMS IGA ||  ||    2 ||  || Female/Male
 |-
-| Karnes County Immigration Processing Center || In use (FY26) || [[Karnes City, TX]] || Jail || DIGSA ||  || 1199 ||  928 || Female/Male
+| Karnes County Immigration Processing Center || In use (FY26) || [[Karnes City, TX]] || Jail || DIGSA || GEO Group || 1199 ||  928 || Female/Male
 |-
 | Kay County Justice Facility || In use (FY26) || [[Newkirk, OK]] || Jail || IGSA ||  ||  158 ||  || Female/Male
 |-
@@ -1406,7 +1593,7 @@ Caused by warning:
 |-
 | Laramie County Jail || In use (FY26) || [[Cheyenne, WY]] || Jail || USMS IGA ||  ||    4 ||  || Female/Male
 |-
-| Laredo Processing Center || In use (FY26) || [[Laredo, TX]] || Jail || DIGSA ||  ||  368 ||  || Female/Male
+| Laredo Processing Center || In use (FY26) || [[Laredo, TX]] || Jail || DIGSA || CoreCivic ||  368 ||  || Female/Male
 |-
 | Laurel County Correctional Center || In use (FY26) || [[London, KY]] || Jail || USMS IGA ||  ||    1 ||  || Female/Male
 |-
@@ -1416,11 +1603,11 @@ Caused by warning:
 |-
 | Lexington County Jail || In use (FY26) || [[Lexington, SC]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
 |-
-| Limestone County Detention Center || In use (FY26) || [[Groesbeck, TX]] || Jail || USMS IGA || Community Education Centers Inc. ||  254 ||  || Male
+| [[Limestone County Detention Center|Limestone County Detention Center]] || In use (FY26) || [[Groesbeck, TX]] || Jail || USMS IGA || Community Education Centers Inc. ||  254 ||  || Male
 |-
-| Lincoln County Jail || In use (FY26) || [[North Platte, NE]] || Jail || USMS IGA ||  ||   27 ||  || Female/Male
+| [[Lincoln County Jail|Lincoln County Jail]] || In use (FY26) || [[North Platte, NE]] || Jail || USMS IGA ||  ||   27 ||  || Female/Male
 |-
-| Linn County Jail || In use (FY26) || [[Cedar Rapids, IA]] || Jail || USMS IGA || Linn County Sheriff ||   39 ||  || Female/Male
+| [[Linn County Correctional Center(Linn County Jail)|Linn County Jail]] || In use (FY26) || [[Cedar Rapids, IA]] || Jail || USMS IGA || Linn County Sheriff ||   39 ||  || Female/Male
 |-
 | Logan County Jail || In use (FY26) || [[Guthrie, OK]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
 |-
@@ -1428,11 +1615,11 @@ Caused by warning:
 |-
 | Lubbock County Detention Center || In use (FY26) || [[Lubbock, TX]] || Jail || USMS IGA ||  ||    3 ||  || Female/Male
 |-
-| Madison County Jail || In use (FY26) || [[Canton, MS]] || Jail || USMS IGA ||  ||    9 ||  || Female/Male
+| [[Madison County Jail|Madison County Jail]] || In use (FY26) || [[Canton, MS]] || Jail || USMS IGA ||  ||    9 ||  || Female/Male
 |-
 | Mahoning County Jail || In use (FY26) || [[Youngstown, OH]] || Jail || USMS IGA ||  ||   89 ||  || Female/Male
 |-
-| Marion County Jail || In use (FY26) || [[Indianapolis, IN]] || Jail || USMS IGA ||  ||   55 ||  || Female/Male
+| [[Marion County Jail|Marion County Jail]] || In use (FY26) || [[Indianapolis, IN]] || Jail || USMS IGA ||  ||   55 ||  || Female/Male
 |-
 | Martin County Jail || In use (FY26) || [[Stuart, FL]] || Jail || USMS IGA ||  ||    6 ||  || Female/Male
 |-
@@ -1446,11 +1633,11 @@ Caused by warning:
 |-
 | Miami Staging Facility || In use (FY26) || [[Miami, FL]] || ICE Short-Term Migrant Detention Center || STAGING ||  ||   20 ||  || Female/Male
 |-
-| Miller County Jail || In use (FY26) || [[Texarkana, AR]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
+| [[Miller County Jail|Miller County Jail]] || In use (FY26) || [[Texarkana, AR]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
 |-
-| Minicassia Detention Center || In use (FY26) || [[Burley, ID]] || Jail || USMS IGA ||  ||    4 ||  || Female/Male
+| [[Minicassia Detention Center|Minicassia Detention Center]] || In use (FY26) || [[Burley, ID]] || Jail || USMS IGA ||  ||    4 ||  || Female/Male
 |-
-| Minnehaha County Jail || In use (FY26) || [[Sioux Falls, SD]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
+| [[Minnehaha County Jail|Minnehaha County Jail]] || In use (FY26) || [[Sioux Falls, SD]] || Jail || USMS IGA ||  ||    5 ||  || Female/Male
 |-
 | Monroe County Detention-Dorm || In use (FY26) || [[Monroe, MI]] || Jail || IGSA ||  ||  124 ||  || Male
 |-
@@ -1462,23 +1649,23 @@ Caused by warning:
 |-
 | Nassau County Correctional Center || In use (FY26) || [[East Meadow, NY]] || Jail || USMS IGA ||  ||   12 ||  || Female/Male
 |-
-| Natrona County Jail || In use (FY26) || [[Casper, WY]] || Jail || USMS IGA ||  ||   14 ||  || Female/Male
+| [[Natrona County Jail|Natrona County Jail]] || In use (FY26) || [[Casper, WY]] || Jail || USMS IGA ||  ||   14 ||  || Female/Male
 |-
 | Nelson Coleman Correction || In use (FY26) || [[Killona, LA]] || Jail || USMS IGA ||  ||    3 ||  || Male
 |-
-| Nevada Southern Detention Center || In use (FY26) || [[Pahrump, NV]] || Private Migrant Detention Center || USMS CDF ||  ||  457 ||  || Male
+| Nevada Southern Detention Center || In use (FY26) || [[Pahrump, NV]] || Private Migrant Detention Center || USMS CDF || CoreCivic ||  457 ||  || Male
 |-
 | New Hanover County Jail || In use (FY26) || [[Castle Hayne, NC]] || Jail || USMS IGA ||  ||    4 ||  || Female/Male
 |-
-| Niagara County Jail || In use (FY26) || [[Lockport, NY]] || Jail || USMS IGA || New York State Commission of Correction ||   12 ||  || Female/Male
+| [[Niagara County Jail|Niagara County Jail]] || In use (FY26) || [[Lockport, NY]] || Jail || USMS IGA || New York State Commission of Correction ||   12 ||  || Female/Male
 |-
 | North Central Regional Jail || In use (FY26) || [[Greenwood, WV]] || Jail || IGSA ||  ||    3 ||  || 
 |-
-| North Lake Correctional Facility || In use (FY26) || [[Baldwin, MI]] || Private Migrant Detention Center || CDF || GEO Group || 1413 || 1800 || Female/Male
+| [[North Lake Correctional Facility|North Lake Correctional Facility]] || In use (FY26) || [[Baldwin, MI]] || Private Migrant Detention Center || CDF || GEO Group || 1413 || 1800 || Female/Male
 |-
-| Northeast Ohio Correctional Center || In use (FY26) || [[Youngstown, OH]] || Jail || USMS IGA ||  ||  208 ||  || Male
+| [[Northeast Ohio Correctional Center|Northeast Ohio Correctional Center]] || In use (FY26) || [[Youngstown, OH]] || Jail || USMS IGA || CoreCivic ||  208 ||  || Male
 |-
-| Northern Regional Jail || In use (FY26) || [[Moundsville, WV]] || Jail || IGSA ||  ||   28 ||  || Female/Male
+| [[Northern Regional Jail|Northern Regional Jail]] || In use (FY26) || [[Moundsville, WV]] || Jail || IGSA ||  ||   28 ||  || Female/Male
 |-
 | Northwest ICE Processing Center || In use (FY26) || [[Tacoma, WA]] || Private Migrant Detention Center || CDF || GEO Group || 1380 || 1181 || Female/Male
 |-
@@ -1492,7 +1679,7 @@ Caused by warning:
 |-
 | Orange County Jail (New York) || In use (FY26) || [[Goshen, NY]] || Jail || IGSA ||  ||  166 ||  || Male
 |-
-| Otay Mesa Detention Center || In use (FY26) || [[San Diego, CA]] || Private Migrant Detention Center || CDF || CoreCivic || 1487 ||  750 || Female/Male
+| [[Otay Mesa Detention Center|Otay Mesa Detention Center]] || In use (FY26) || [[San Diego, CA]] || Private Migrant Detention Center || CDF || CoreCivic || 1487 ||  750 || Female/Male
 |-
 | [[Otero County Prison Facility|Otero County Processing Center]] || In use (FY26) || [[Chaparral, NM]] || Jail || DIGSA || Management and Training Corporation ||  896 ||  500 || Female/Male
 |-
@@ -1508,15 +1695,15 @@ Caused by warning:
 |-
 | Pike County Jail || In use (FY26) || [[Lords Valley, PA]] || Jail || IGSA ||  ||  241 ||  100 || Male
 |-
-| Pine Prairie ICE Processing Center || In use (FY26) || [[Pine Prairie, LA]] || Jail || DIGSA || LCS Corrections Services ||  903 ||  || Male
+| [[Pine Prairie Correctional Center|Pine Prairie ICE Processing Center]] || In use (FY26) || [[Pine Prairie, LA]] || Jail || DIGSA || GEO Group ||  903 ||  || Male
 |-
 | [[Pinellas County Jail]] || In use (FY26) || [[Clearwater, FL]] || Jail || USMS IGA ||  ||   38 ||  || Female/Male
 |-
 | [[Plymouth House of Correction|Plymouth County Correctional Facility]] || In use (FY26) || [[Plymouth, MA]] || Jail || IGSA || Plymouth County ||  506 ||  || Male
 |-
-| Polk County Jail || In use (FY26) || [[Des Moines, IA]] || Jail || USMS IGA ||  ||   53 ||  || Female/Male
+| [[Polk County Jail|Polk County Jail]] || In use (FY26) || [[Des Moines, IA]] || Jail || USMS IGA ||  ||   53 ||  || Female/Male
 |-
-| Port Isabel SPC || In use (FY26) || [[Los Fresnos, TX]] || ICE Migrant Detention Center || SPC ||  || 1274 ||  650 || Female/Male
+| Port Isabel Detention Center || In use (FY26) || [[Los Fresnos, TX]] || ICE Migrant Detention Center || SPC ||  || 1274 ||  650 || Female/Male
 |-
 | [[Pottawattamie County Jail]] || In use (FY26) || [[Council Bluffs, IA]] || Jail || USMS IGA || Pottawattamie County Sheriff ||   31 ||  || Female/Male
 |-
@@ -1524,19 +1711,19 @@ Caused by warning:
 |-
 | Putnam County Sheriff || In use (FY26) || [[Cookeville, TN]] || Jail || USMS IGA ||  ||   18 ||  || 
 |-
-| Richwood Correctional Center || In use (FY26) || [[Monroe, LA]] || Jail || IGSA ||  || 1084 ||  677 || Female/Male
+| [[Richwood Correctional Center|Richwood Correctional Center]] || In use (FY26) || [[Monroe, LA]] || Jail || IGSA ||  || 1084 ||  677 || Female/Male
 |-
 | [[Rio Grande Detention Center]] || In use (FY26) || [[Laredo, TX]] || Private Migrant Detention Center || USMS CDF || GEO Group ||  623 ||  275 || Male
 |-
 | River Correctional Center || In use (FY26) || [[Ferriday, LA]] || Jail || IGSA ||  ||  586 ||  361 || Male
 |-
-| Riverside Regional Jail || In use (FY26) || [[Hopewell, VA]] || Jail || USMS IGA ||  ||   99 ||  || Female/Male
+| [[Riverside Regional Jail|Riverside Regional Jail]] || In use (FY26) || [[Hopewell, VA]] || Jail || USMS IGA ||  ||   99 ||  || Female/Male
 |-
 | Roanoke City Jail || In use (FY26) || [[Roanoke, VA]] || Jail || USMS IGA ||  ||    1 ||  || Female/Male
 |-
-| Robert A Deyton Detention Facility || In use (FY26) || [[Lovejoy, GA]] || Jail || USMS IGA ||  ||   12 ||  || Male
+| Robert A. Deyton Detention Center || In use (FY26) || [[Lovejoy, GA]] || Jail || USMS IGA ||  ||   12 ||  || Male
 |-
-| Rockingham County Jail || In use (FY26) || [[Harrisonburg, VA]] || Jail || USMS IGA ||  ||    1 ||  || Female/Male
+| [[Rockingham County Jail|Rockingham County Jail]] || In use (FY26) || [[Harrisonburg, VA]] || Jail || USMS IGA ||  ||    1 ||  || Female/Male
 |-
 | Saipan Department of Corrections (Susupe) || In use (FY26) || [[Saipan, MP]] || Jail || USMS IGA ||  ||   21 ||  || Female/Male
 |-
@@ -1550,17 +1737,17 @@ Caused by warning:
 |-
 | Sauk County Sheriff || In use (FY26) || [[Baraboo, WI]] || Jail || USMS IGA ||  ||   14 ||  || Female/Male
 |-
-| Sebastian County Detention Center || In use (FY26) || [[Fort Smith, AR]] || Jail || USMS IGA ||  ||    2 ||  || Female/Male
+| [[Sebastian County Detention Center|Sebastian County Detention Center]] || In use (FY26) || [[Fort Smith, AR]] || Jail || USMS IGA ||  ||    2 ||  || Female/Male
 |-
-| Seneca County Jail || In use (FY26) || [[Tiffin, OH]] || Jail || IGSA || Seneca County Sheriff's Office ||   60 ||  || Female/Male
+| [[Seneca County Jail|Seneca County Jail]] || In use (FY26) || [[Tiffin, OH]] || Jail || IGSA || Seneca County Sheriff's Office ||   60 ||  || Female/Male
 |-
-| Sherburne County Jail || In use (FY26) || [[Elk River, MN]] || Jail || USMS IGA || Sherburne County Sheriff's Department ||  102 ||  || Male
+| [[Sherburne County Jail|Sherburne County Jail]] || In use (FY26) || [[Elk River, MN]] || Jail || USMS IGA || Sherburne County Sheriff's Department ||  102 ||  || Male
 |-
 | Sioux County Jail || In use (FY26) || [[Orange City, IA]] || Jail || USMS IGA ||  ||   12 ||  || Female/Male
 |-
 | South Central Regional Jail || In use (FY26) || [[Charleston, WV]] || Jail || IGSA ||  ||   32 ||  || Male
 |-
-| South Louisiana ICE Processing Center || In use (FY26) || [[Basile, LA]] || Jail || DIGSA ||  ||  978 ||  700 || Female/Male
+| [[South Louisiana ICE Processing Center|South Louisiana ICE Processing Center]] || In use (FY26) || [[Basile, LA]] || Jail || DIGSA || GEO Group ||  978 ||  700 || Female/Male
 |-
 | South Texas ICE Processing Center || In use (FY26) || [[Pearsall, TX]] || Private Migrant Detention Center || CDF || GEO Group || 1756 || 1350 || Female/Male
 |-
@@ -1572,17 +1759,17 @@ Caused by warning:
 |-
 | Ste. Genevieve County Sheriff/Jail || In use (FY26) || [[Ste. Genevieve, MO]] || Jail || USMS IGA ||  ||  114 ||  || Female/Male
 |-
-| [[Stewart Detention Center]] || In use (FY26) || [[Lumpkin, GA]] || Jail || DIGSA || Corrections Corporation of America || 2011 || 1600 || Female/Male
+| [[Stewart Detention Center]] || In use (FY26) || [[Lumpkin, GA]] || Jail || DIGSA || CoreCivic || 2011 || 1600 || Female/Male
 |-
 | Strafford County Corrections || In use (FY26) || [[Dover, NH]] || Jail || IGSA ||  ||  146 ||  || Female/Male
 |-
 | Sweetwater County Jail || In use (FY26) || [[Rock Springs, WY]] || Jail || USMS IGA ||  ||    9 ||  || Female/Male
 |-
-| [[T. Don Hutto Family Residential Facility|T Don Hutto Detention Center]] || In use (FY26) || [[Taylor, TX]] || Private Migrant Detention Center || CDF || Corrections Corporation of America ||  458 ||  461 || Male
+| [[T. Don Hutto Family Residential Facility|T. Don Hutto Detention Center]] || In use (FY26) || [[Taylor, TX]] || Private Migrant Detention Center || CDF || CoreCivic ||  458 ||  461 || Male
 |-
 | Tooele County Jail || In use (FY26) || [[Tooele, UT]] || Jail || USMS IGA ||  ||   10 ||  || Female/Male
 |-
-| Torrance/Estancia, New Mexico || In use (FY26) || [[Estancia, NM]] || Jail || IGSA || Corrections Corporation of America ||  371 ||  505 || Male
+| [[Torrance County Detention Facility(Torrance / Estancia, NM)|Torrance County Detention Facility]] || In use (FY26) || [[Estancia, NM]] || Jail || IGSA || CoreCivic ||  371 ||  505 || Male
 |-
 | Tulsa County Jail (David L. Moss Justice Center) || In use (FY26) || [[Tulsa, OK]] || Jail || IGSA ||  ||   43 ||  || Female/Male
 |-
@@ -1604,24 +1791,222 @@ Caused by warning:
 |-
 | [[Purgatory Correctional Facility|Washington County Jail (Purgatory Correctional Facility)]] || In use (FY26) || [[Hurricane, UT]] || Jail || USMS IGA ||  ||   12 ||  || Female/Male
 |-
-| Washoe County Jail || In use (FY26) || [[Reno, NV]] || Jail || USMS IGA || Washoe County Sheriff's Office ||   51 ||  || Female/Male
+| [[Washoe County Jail|Washoe County Jail]] || In use (FY26) || [[Reno, NV]] || Jail || USMS IGA || Washoe County Sheriff's Office ||   51 ||  || Female/Male
 |-
 | Waukesha County Jail || In use (FY26) || [[Waukesha, WI]] || Jail || USMS IGA ||  ||    3 ||  || Female/Male
 |-
 | Webb County Detention Center (CCA) || In use (FY26) || [[Laredo, TX]] || Jail || DIGSA ||  ||  443 ||  250 || Female/Male
 |-
-| Weber County Jail || In use (FY26) || [[Ogden, UT]] || Jail || USMS IGA ||  ||    6 ||  || Female/Male
+| [[Weber County Jail|Weber County Jail]] || In use (FY26) || [[Ogden, UT]] || Jail || USMS IGA ||  ||    6 ||  || Female/Male
 |-
 | Western Regional Jail And Correctional Facility || In use (FY26) || [[Barboursville, WV]] || Jail || IGSA ||  ||    8 ||  || Female/Male
 |-
-| Western Tennessee Detention Facility || In use (FY26) || [[Mason, TN]] || Jail || DIGSA || Corrections Corporation of America ||  275 ||  450 || Female/Male
+| [[West Tennessee Detention Facility|Western Tennessee Detention Facility]] || In use (FY26) || [[Mason, TN]] || Jail || DIGSA || CoreCivic ||  275 ||  450 || Female/Male
 |-
-| Winn Correctional Center || In use (FY26) || [[Winnfield, LA]] || Jail || DIGSA ||  || 1546 ||  946 || Male
+| [[Winn Correctional Center|Winn Correctional Center]] || In use (FY26) || [[Winnfield, LA]] || Jail || DIGSA ||  || 1546 ||  946 || Male
 |-
 | Woodbury County Jail || In use (FY26) || [[Sioux City, IA]] || Jail || USMS IGA ||  ||   63 ||  || Female/Male
 |-
 | [[Wyatt Detention Center]] || In use (FY26) || [[Central Falls, RI]] || Jail || USMS IGA || Central Falls Detention Facility Corporation ||  114 ||  || Female/Male
 |}</textarea>
+</div>
+</div>
+<p>Update complete.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(treemap)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>facilities_data_current <span class="ot">&lt;-</span> facilities_data_merged<span class="sc">$</span>FY26 <span class="sc">%&gt;%</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">adp =</span> <span class="fu">rowSums</span>(<span class="fu">select</span>(., <span class="fu">starts_with</span>(<span class="st">"adp_criminality_"</span>)), <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">management =</span> <span class="fu">replace_na</span>(management, <span class="st">""</span>)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>facilities_data_current <span class="sc">%&gt;%</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(facility_type_wiki, facility_state) <span class="sc">%&gt;%</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_adp =</span> <span class="fu">sum</span>(adp))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'facility_type_wiki'. You can override
+using the `.groups` argument.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 71 × 3
+# Groups:   facility_type_wiki [8]
+   facility_type_wiki           facility_state total_adp
+   &lt;chr&gt;                        &lt;chr&gt;              &lt;dbl&gt;
+ 1 Federal Prison               FL                 459. 
+ 2 Federal Prison               GA                 107. 
+ 3 Federal Prison               HI                  79.6
+ 4 Federal Prison               KS                  57.9
+ 5 Federal Prison               NH                 202. 
+ 6 Federal Prison               NY                 111. 
+ 7 Federal Prison               PA                  98.4
+ 8 ICE Migrant Detention Center AZ                 330. 
+ 9 ICE Migrant Detention Center FL                 866. 
+10 ICE Migrant Detention Center NY                 738. 
+# ℹ 61 more rows</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(treemapify)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Prepare your data</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co"># We group by both levels to get the aggregate 'value' for each state within each type</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr) <span class="co"># for replace_na</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>plot_data <span class="ot">&lt;-</span> facilities_data_current <span class="sc">%&gt;%</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 1. First, handle the NAs in management so the logic works</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">management =</span> <span class="fu">replace_na</span>(<span class="fu">as.character</span>(management), <span class="st">""</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 2. Group by ALL variables you need for the final label</span></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(facility_type_wiki, facility_state, facility_name, management) <span class="sc">%&gt;%</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 3. Sum the ADP</span></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_adp =</span> <span class="fu">sum</span>(adp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 4. Filter and Round</span></span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_adp <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">total_adp =</span> <span class="fu">round</span>(total_adp)) <span class="sc">%&gt;%</span></span>
+<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 5. Create the label now that management is present in the dataframe</span></span>
+<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">display_label =</span> <span class="fu">case_when</span>(</span>
+<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a>    management <span class="sc">==</span> <span class="st">""</span> <span class="sc">~</span> <span class="fu">paste0</span>(facility_name, <span class="st">" ("</span>, facility_state, <span class="st">")</span><span class="sc">\n</span><span class="st">"</span>, </span>
+<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">format</span>(total_adp, <span class="at">big.mark =</span> <span class="st">","</span>)),</span>
+<span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span>             <span class="sc">~</span> <span class="fu">paste0</span>(facility_name, <span class="st">" ("</span>, management, <span class="st">" / "</span>, facility_state, <span class="st">")</span><span class="sc">\n</span><span class="st">"</span>, </span>
+<span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">format</span>(total_adp, <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb36-29"><a href="#cb36-29" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb36-30"><a href="#cb36-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-31"><a href="#cb36-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Create the Plot</span></span>
+<span id="cb36-32"><a href="#cb36-32" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(plot_data, <span class="fu">aes</span>(</span>
+<span id="cb36-33"><a href="#cb36-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">area =</span> total_adp, </span>
+<span id="cb36-34"><a href="#cb36-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> facility_type_wiki, </span>
+<span id="cb36-35"><a href="#cb36-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> display_label, </span>
+<span id="cb36-36"><a href="#cb36-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">subgroup =</span> facility_type_wiki</span>
+<span id="cb36-37"><a href="#cb36-37" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
+<span id="cb36-38"><a href="#cb36-38" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Main tiles - thin white lines for the "leaf" nodes</span></span>
+<span id="cb36-39"><a href="#cb36-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb36-40"><a href="#cb36-40" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-41"><a href="#cb36-41" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Thicker borders to define the Facility Type groups</span></span>
+<span id="cb36-42"><a href="#cb36-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap_subgroup_border</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb36-43"><a href="#cb36-43" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-44"><a href="#cb36-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Child labels (State + ADP) in top-left</span></span>
+<span id="cb36-45"><a href="#cb36-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap_text</span>(</span>
+<span id="cb36-46"><a href="#cb36-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> <span class="st">"black"</span>, </span>
+<span id="cb36-47"><a href="#cb36-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">place =</span> <span class="st">"topleft"</span>, </span>
+<span id="cb36-48"><a href="#cb36-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">9</span>, </span>
+<span id="cb36-49"><a href="#cb36-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">grow =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb36-50"><a href="#cb36-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">reflow =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb36-51"><a href="#cb36-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">padding.x =</span> <span class="fu">unit</span>(<span class="fl">1.5</span>, <span class="st">"mm"</span>),</span>
+<span id="cb36-52"><a href="#cb36-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">padding.y =</span> <span class="fu">unit</span>(<span class="fl">1.5</span>, <span class="st">"mm"</span>),</span>
+<span id="cb36-53"><a href="#cb36-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">min.size =</span> <span class="dv">4</span> <span class="co"># Smallest font size to allow before hiding text</span></span>
+<span id="cb36-54"><a href="#cb36-54" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb36-55"><a href="#cb36-55" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb36-56"><a href="#cb36-56" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Visual Styling</span></span>
+<span id="cb36-57"><a href="#cb36-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set3"</span>) <span class="sc">+</span> <span class="co"># Soft, categorical D3-like palette</span></span>
+<span id="cb36-58"><a href="#cb36-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb36-59"><a href="#cb36-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb36-60"><a href="#cb36-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb36-61"><a href="#cb36-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>)</span>
+<span id="cb36-62"><a href="#cb36-62" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb36-63"><a href="#cb36-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb36-64"><a href="#cb36-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Average Daily Population of detainees by facility type"</span>,</span>
+<span id="cb36-65"><a href="#cb36-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Facility Type"</span>,</span>
+<span id="cb36-66"><a href="#cb36-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Box area is proportional to Total ADP"</span></span>
+<span id="cb36-67"><a href="#cb36-67" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb36-68"><a href="#cb36-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-69"><a href="#cb36-69" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="import-ice-detention_files/figure-html/treemap-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Data Preparation</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plot_data <span class="ot">&lt;-</span> facilities_data_current <span class="sc">%&gt;%</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Handle NAs immediately</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">management =</span> <span class="fu">replace_na</span>(<span class="fu">as.character</span>(management), <span class="st">""</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group by the three nesting levels + management for the label</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(facility_state, facility_type_wiki, facility_name, management) <span class="sc">%&gt;%</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_adp =</span> <span class="fu">sum</span>(adp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_adp <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_adp =</span> <span class="fu">round</span>(total_adp),</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Constructing the requested label</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">display_label =</span> <span class="fu">case_when</span>(</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>      management <span class="sc">==</span> <span class="st">""</span> <span class="sc">~</span> <span class="fu">paste0</span>(facility_name, <span class="st">" ("</span>, facility_state, <span class="st">")</span><span class="sc">\n</span><span class="st">"</span>, </span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>                                <span class="fu">format</span>(total_adp, <span class="at">big.mark =</span> <span class="st">","</span>)),</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>             <span class="sc">~</span> <span class="fu">paste0</span>(facility_name, <span class="st">" ("</span>, management, <span class="st">" "</span>, facility_state, <span class="st">")</span><span class="sc">\n</span><span class="st">"</span>, </span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>                                <span class="fu">format</span>(total_adp, <span class="at">big.mark =</span> <span class="st">","</span>))</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Create the Triple-Nested Treemap</span></span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(plot_data, <span class="fu">aes</span>(</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">area =</span> total_adp, </span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> facility_state,          <span class="co"># Color by State for high-level visual grouping</span></span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> display_label, </span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">subgroup =</span> facility_state,      <span class="co"># Level 1: State</span></span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">subgroup2 =</span> facility_type_wiki  <span class="co"># Level 2: Type</span></span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Main tiles for individual facilities</span></span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-31"><a href="#cb37-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Thick borders for States</span></span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap_subgroup_border</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Thinner borders for Facility Types within states</span></span>
+<span id="cb37-35"><a href="#cb37-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap_subgroup2_border</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">1.5</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb37-36"><a href="#cb37-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-37"><a href="#cb37-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># State Labels (Upper Left of the state block)</span></span>
+<span id="cb37-38"><a href="#cb37-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap_subgroup_text</span>(</span>
+<span id="cb37-39"><a href="#cb37-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">place =</span> <span class="st">"topleft"</span>, </span>
+<span id="cb37-40"><a href="#cb37-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">grow =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb37-41"><a href="#cb37-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb37-42"><a href="#cb37-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> <span class="st">"white"</span>, </span>
+<span id="cb37-43"><a href="#cb37-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">fontface =</span> <span class="st">"bold"</span>,</span>
+<span id="cb37-44"><a href="#cb37-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">14</span></span>
+<span id="cb37-45"><a href="#cb37-45" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb37-46"><a href="#cb37-46" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-47"><a href="#cb37-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Individual Facility Labels (The detailed labels)</span></span>
+<span id="cb37-48"><a href="#cb37-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_treemap_text</span>(</span>
+<span id="cb37-49"><a href="#cb37-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> <span class="st">"black"</span>, </span>
+<span id="cb37-50"><a href="#cb37-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">place =</span> <span class="st">"topleft"</span>, </span>
+<span id="cb37-51"><a href="#cb37-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">9</span>,             <span class="co"># Smaller size for high density</span></span>
+<span id="cb37-52"><a href="#cb37-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">grow =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb37-53"><a href="#cb37-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">reflow =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb37-54"><a href="#cb37-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">padding.x =</span> <span class="fu">unit</span>(<span class="dv">1</span>, <span class="st">"mm"</span>),</span>
+<span id="cb37-55"><a href="#cb37-55" aria-hidden="true" tabindex="-1"></a>    <span class="at">padding.y =</span> <span class="fu">unit</span>(<span class="dv">1</span>, <span class="st">"mm"</span>),</span>
+<span id="cb37-56"><a href="#cb37-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">min.size =</span> <span class="dv">3</span></span>
+<span id="cb37-57"><a href="#cb37-57" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb37-58"><a href="#cb37-58" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb37-59"><a href="#cb37-59" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Styling</span></span>
+<span id="cb37-60"><a href="#cb37-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">option =</span> <span class="st">"turbo"</span>, <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span> </span>
+<span id="cb37-61"><a href="#cb37-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb37-62"><a href="#cb37-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb37-63"><a href="#cb37-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Facility ADP: Nested by State and Type"</span>,</span>
+<span id="cb37-64"><a href="#cb37-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Solid lines: State | Dashed lines: Facility Type"</span>,</span>
+<span id="cb37-65"><a href="#cb37-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Area represents Total ADP"</span></span>
+<span id="cb37-66"><a href="#cb37-66" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-67"><a href="#cb37-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-68"><a href="#cb37-68" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="import-ice-detention_files/figure-html/treemap-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
