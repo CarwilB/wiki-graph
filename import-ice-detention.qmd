@@ -17,21 +17,21 @@ We will work from the data spreadsheets provided online at ICE's [Detention Mana
 
 As of February 4, 2026, we can find:
 
--   [ Detention FY 2026 YTD, Alternatives to Detention FY 2026 YTD and Facilities FY 2026 YTD, Footnotes (221 KB)](https://www.ice.gov/doclib/detention/FY26_detentionStats02022026.xlsx) `FY26_detentionStats02022026.xlsx`
+-   [Detention FY 2026 YTD, Alternatives to Detention FY 2026 YTD and Facilities FY 2026 YTD, Footnotes (221 KB)](https://www.ice.gov/doclib/detention/FY26_detentionStats02022026.xlsx) `FY26_detentionStats02022026.xlsx`
 
--   [ Detention FY 2025 YTD, Alternatives to Detention FY 2025 YTD and Facilities FY 2025 YTD, Footnotes (1.5 MB)](https://www.ice.gov/doclib/detention/FY25_detentionStats09242025.xlsx) `FY25_detentionStats09242025.xlsx`
+-   [Detention FY 2025 YTD, Alternatives to Detention FY 2025 YTD and Facilities FY 2025 YTD, Footnotes (1.5 MB)](https://www.ice.gov/doclib/detention/FY25_detentionStats09242025.xlsx) `FY25_detentionStats09242025.xlsx`
 
--   [ FY 2024 Detention Statistics](https://www.ice.gov/doclib/detention/FY24_detentionStats.xlsx) `FY24-detentionstats.xlsx`
+-   [FY 2024 Detention Statistics](https://www.ice.gov/doclib/detention/FY24_detentionStats.xlsx) `FY24-detentionstats.xlsx`
 
--   [ FY 2023 Detention Statistics](https://www.ice.gov/doclib/detention/FY23_detentionStats.xlsx) `FY23-detentionstats.xlsx`
+-   [FY 2023 Detention Statistics](https://www.ice.gov/doclib/detention/FY23_detentionStats.xlsx) `FY23-detentionstats.xlsx`
 
--   [ FY 2022 Detention Statistics](https://www.ice.gov/doclib/detention/FY22-detentionStats.xlsx) `FY22-detentionStats.xlsx`
+-   [FY 2022 Detention Statistics](https://www.ice.gov/doclib/detention/FY22-detentionStats.xlsx) `FY22-detentionStats.xlsx`
 
--   [ FY 2021 Detention Statistics](https://www.ice.gov/doclib/detention/FY21-detentionstats.xlsx) `FY21-detentionStats.xlsx`
+-   [FY 2021 Detention Statistics](https://www.ice.gov/doclib/detention/FY21-detentionstats.xlsx) `FY21-detentionStats.xlsx`
 
--   [ FY 2020 Detention Statistics](https://www.ice.gov/doclib/detention/FY20-detentionstats.xlsx) `FY20-detentionstats.xlsx`
+-   [FY 2020 Detention Statistics](https://www.ice.gov/doclib/detention/FY20-detentionstats.xlsx) `FY20-detentionstats.xlsx`
 
--   [ FY 2019 Detention Statistics](https://www.ice.gov/doclib/detention/FY19-detentionstats.xlsx) `FY19-detentionstats.xlsx`
+-   [FY 2019 Detention Statistics](https://www.ice.gov/doclib/detention/FY19-detentionstats.xlsx) `FY19-detentionstats.xlsx`
 
 There are subtle changes between the Facilities page on each of these, which will have to take into account as we import them. The import code I created for the first time was built around the FY2026 spreadsheet.
 
@@ -125,6 +125,7 @@ for (i in 1:nrow(data_file_info)) {
     write_disk(data_file_info$local_file[i], overwrite = FALSE))
 }
 ```
+
 # Importing the variables
 
 Next we import the two-line headers and combine them into variable names. This took a fair amount of experimentation the first time.
@@ -251,9 +252,9 @@ not_in_fy23 <- presence_matrix %>%
   pull(variable)
 ```
 
-- **`r length(vars_in_all)` variables in all sheets:** `r vars_in_all`
-- **Variables not in all sheets:** `r setdiff(unlist(clean_names_list), vars_in_all)`
-- **`r length(fy23_only)` variables only in FY23:** `r fy23_only`
+-   **`r length(vars_in_all)` variables in all sheets:** `r vars_in_all`
+-   **Variables not in all sheets:** `r setdiff(unlist(clean_names_list), vars_in_all)`
+-   **`r length(fy23_only)` variables only in FY23:** `r fy23_only`
 
 Fortunately, nearly all variables are in all years. And the differences in the variables seem to all consist in how inspections are reparted. We may want to think through how to re-create `inspections_last_inspection_date` based on the other data, but I'll ignore that problem for now.
 
@@ -485,7 +486,7 @@ names(facilities_data_list) <- data_file_info$year_name
 ```
 
 ```{r facility-name-alignment}
-# Check for facility name alignment across years
+# Check for facility name alignment across years (exact name match only)
 facility_names_list <- map(facilities_data_list, ~ {
   if ("facility_name" %in% names(.x)) {
     unique(.x$facility_name)
@@ -522,7 +523,316 @@ current_facility_names <- unique(facility_names_list$FY26)
 
 ```
 
+```{r facility-crosswalk}
+# Build a canonical facility crosswalk across all years.
+#
+# Matching strategy (two passes):
+#   1. Exact match on facility_name + facility_city + facility_state
+#   2. Within the same ZIP code, fuzzy address string similarity (OSA >= 0.80)
+#      resolves cases where the same physical facility appears under a different
+#      name in different years (e.g. name changes, abbreviation differences).
+#
+# Result: `facility_crosswalk`  -- maps every (name, city, state) variant to a
+#                                   canonical_id and canonical_name (most-recent year)
+#         `facility_presence`   -- one row per canonical facility; TRUE/FALSE columns
+#                                   for each fiscal year
+
+library(stringdist)
+
+year_order <- c("FY19","FY20","FY21","FY22","FY23","FY24","FY25","FY26")
+
+# ── Pool all distinct (name, city, state, address, zip) combos ───────────────
+all_facilities_norm <- facilities_data_list |>
+  imap_dfr(\(df, yr) df |>
+    select(facility_name, facility_city, facility_state,
+           facility_address, facility_zip) |>
+    mutate(year = yr)) |>
+  mutate(
+    zip5      = str_pad(facility_zip, width = 5, side = "left", pad = "0"),
+    addr_norm = str_to_upper(str_trim(str_squish(facility_address)))
+  )
+
+# ── Pass 1: assign a provisional ID per exact name+city+state combo ──────────
+facility_key_exact <- all_facilities_norm |>
+  select(facility_name, facility_city, facility_state, addr_norm, zip5) |>
+  distinct() |>
+  group_by(facility_name, facility_city, facility_state) |>
+  summarise(addr_norm = first(addr_norm), zip5 = first(zip5), .groups = "drop") |>
+  mutate(facility_id = row_number())
+
+# ── Pass 2: fuzzy address merge within same ZIP ───────────────────────────────
+# Compute pairwise OSA similarity for all facility pairs sharing a ZIP code
+merge_candidates <- facility_key_exact |>
+  filter(!is.na(addr_norm), !is.na(zip5)) |>
+  group_by(zip5) |>
+  filter(n() > 1) |>
+  group_modify(\(grp, key) {
+    n <- nrow(grp)
+    pairs <- expand.grid(i = seq_len(n), j = seq_len(n)) |> filter(i < j)
+    pairs |> transmute(
+      facility_id_a = grp$facility_id[i],
+      facility_id_b = grp$facility_id[j],
+      addr_a        = grp$addr_norm[i],
+      addr_b        = grp$addr_norm[j],
+      addr_dist     = stringdist(addr_a, addr_b, method = "osa"),
+      addr_sim      = 1 - addr_dist / pmax(nchar(addr_a), nchar(addr_b))
+    )
+  }) |>
+  ungroup()
+
+strong_addr_matches <- merge_candidates |> filter(addr_sim >= 0.80)
+
+# ── Manual merge blocks: same-ZIP facilities incorrectly joined by fuzzy match ─
+# These are genuinely distinct facilities that happen to share a ZIP and similar
+# street addresses.
+#
+# Folkston, GA (31537): Main IPC (3026 Hwy 252) and Annex IPC (3424 Hwy 252)
+#   are two separate detention facilities on the same highway.
+# Conroe, TX (77301): Joe Corley (500 Hilbig Rd) and Montgomery ICE (806 Hilbig Rd)
+#   are two separate facilities on the same road.
+do_not_merge <- tribble(
+  ~name_a,                           ~name_b,
+  "Folkston Main IPC",               "Annex - Folkston IPC",
+  "Folkston Main IPC",               "Folkston Annex IPC",
+  "Main - Folkston IPC (D Ray James)","Annex - Folkston IPC",
+  "Main - Folkston IPC (D Ray James)","Folkston Annex IPC",
+  "Joe Corley Processing Center",    "Montgomery ICE Processing Center",
+  "Joe Corley ICE Processing Center","Montgomery ICE Processing Center"
+) |>
+  left_join(facility_key_exact |> select(facility_name, facility_id),
+            by = c("name_a" = "facility_name")) |>
+  rename(id_a = facility_id) |>
+  left_join(facility_key_exact |> select(facility_name, facility_id),
+            by = c("name_b" = "facility_name")) |>
+  rename(id_b = facility_id)
+
+strong_addr_matches <- strong_addr_matches |>
+  anti_join(do_not_merge, by = c("facility_id_a" = "id_a", "facility_id_b" = "id_b")) |>
+  anti_join(do_not_merge, by = c("facility_id_a" = "id_b", "facility_id_b" = "id_a"))
+
+# Union-find: cluster facility_ids connected by address similarity
+ids    <- facility_key_exact$facility_id
+parent <- setNames(ids, ids)
+
+find_root <- function(x) {
+  while (parent[as.character(x)] != x) x <- parent[as.character(x)]
+  x
+}
+union_ids <- function(a, b) {
+  ra <- find_root(a); rb <- find_root(b)
+  if (ra != rb) parent[as.character(ra)] <<- rb
+}
+
+for (i in seq_len(nrow(strong_addr_matches)))
+  union_ids(strong_addr_matches$facility_id_a[i],
+            strong_addr_matches$facility_id_b[i])
+
+canonical_map <- tibble(facility_id = ids) |>
+  mutate(canonical_id = map_int(facility_id, find_root))
+
+# ── Choose canonical name: the most-recent year's name per cluster ───────────
+all_facilities_keyed <- all_facilities_norm |>
+  left_join(
+    facility_key_exact |> select(facility_name, facility_city, facility_state, facility_id),
+    by = c("facility_name","facility_city","facility_state")
+  ) |>
+  left_join(canonical_map, by = "facility_id")
+
+canonical_names <- all_facilities_keyed |>
+  mutate(year_rank = match(year, year_order)) |>
+  group_by(canonical_id) |>
+  slice_max(year_rank, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  select(canonical_id, canonical_name = facility_name,
+         canonical_city = facility_city, canonical_state = facility_state)
+
+# ── Manual canonical name overrides ──────────────────────────────────────────
+# Applied after the most-recent-year default, where a more stable or descriptive
+# name is preferable. Each entry gives the name of any variant in the cluster
+# (used to look up the canonical_id) plus the desired canonical_name.
+canonical_name_overrides <- tribble(
+  ~lookup_name,                        ~canonical_name,                          ~canonical_city,     ~canonical_state,
+  # More stable older name preferred over a brief recent rename
+  "Adams County Detention Center",     "Adams County Detention Center (Mississippi)", "Natchez",      "MS",
+  "Phelps County Jail",                "Phelps County Jail (Nebraska)",           "Holdrege",          "NE",
+  "Nye County Detention Center, Southern (Pahrump)","Nye County Detention Center (Nevada)", "Pahrump",   "NV",
+  # Disambiguated name preferred (parenthetical dropped from most-recent)
+  "Baker County Sheriff Department.",  "Baker County Sheriff's Office",           "Macclenny",         "FL",
+  "Buffalo (Batavia) Service Processing Center", "Buffalo (Batavia) Service Processing Center", "Batavia", "NY",
+  # Most-recent name is already best; just ensure it is used
+  "Farmville Detention Center",        "Farmville Detention Center",             "Farmville",          "VA",
+  "Northwest ICE Processing Center",   "Northwest ICE Processing Center",        "Tacoma",             "WA"
+) |>
+  left_join(facility_key_exact |> select(facility_name, facility_id),
+            by = c("lookup_name" = "facility_name")) |>
+  left_join(canonical_map, by = "facility_id") |>
+  select(canonical_id, canonical_name, canonical_city, canonical_state) |>
+  filter(!is.na(canonical_id))
+
+canonical_names <- canonical_names |>
+  rows_update(canonical_name_overrides, by = "canonical_id", unmatched = "ignore")
+
+# ── Crosswalk: every name variant → canonical_id + canonical_name ────────────
+facility_crosswalk <- facility_key_exact |>
+  left_join(canonical_map, by = "facility_id") |>
+  left_join(canonical_names, by = "canonical_id") |>
+  select(facility_id, canonical_id, canonical_name, canonical_city, canonical_state,
+         facility_name, facility_city, facility_state)
+
+# ── Presence matrix: one row per canonical facility × year ───────────────────
+facility_presence <- all_facilities_keyed |>
+  left_join(canonical_names, by = "canonical_id") |>
+  select(canonical_id, canonical_name, canonical_city, canonical_state, year) |>
+  distinct() |>
+  mutate(present = TRUE) |>
+  pivot_wider(names_from = year, values_from = present, values_fill = FALSE,
+              names_sort = FALSE) |>
+  select(canonical_id, canonical_name, canonical_city, canonical_state,
+         any_of(year_order)) |>
+  mutate(n_years = rowSums(across(any_of(year_order))))
+
+cat(glue::glue(
+  "Canonical facilities: {nrow(facility_presence)}",
+  " (from {nrow(facility_key_exact)} exact name+city+state variants,",
+  " {nrow(strong_addr_matches)} address-based merges)\n"
+))
+facility_presence |> count(n_years, name = "n_facilities")
+```
+
+```{r attach-canonical-ids}
+# Attach canonical_id and canonical_name to every row in facilities_data_list.
+# Uses the crosswalk built above; the join key is (facility_name, facility_city,
+# facility_state), which is guaranteed to match because the crosswalk was built
+# from the same source data.
+facilities_data_list <- imap(facilities_data_list, \(df, yr) {
+  df |>
+    left_join(
+      facility_crosswalk |>
+        select(facility_name, facility_city, facility_state,
+               canonical_id, canonical_name),
+      by = c("facility_name", "facility_city", "facility_state")
+    )
+})
+```
+
+```{r rebuild-facility-presence}
+# Rebuild facility_presence from the keyed data and add trajectory labels.
+#
+# trajectory categories:
+#   continuous      — present in every fiscal year in the dataset
+#   persistent_gaps — appears in both the first and most recent year, but missing
+#                     at least one year in between
+#   closed          — present in the first year, absent from the most recent year
+#   new             — absent from the first year, present in the most recent year
+#   transient       — present in neither the first nor most recent year
+
+year_cols_present <- year_order[year_order %in% names(facilities_data_list)]
+first_year        <- head(year_cols_present, 1)
+most_recent_year  <- tail(year_cols_present, 1)
+
+facility_presence <- facilities_data_list |>
+  imap_dfr(\(df, yr) df |>
+    select(canonical_id, canonical_name) |>
+    distinct() |>
+    mutate(year = yr)) |>
+  mutate(present = TRUE) |>
+  pivot_wider(names_from = year, values_from = present,
+              values_fill = FALSE, names_sort = FALSE) |>
+  select(canonical_id, canonical_name, any_of(year_cols_present)) |>
+  mutate(n_years = rowSums(across(any_of(year_cols_present)))) |>
+  rowwise() |>
+  mutate(
+    first_seen = year_cols_present[c_across(any_of(year_cols_present))][1],
+    last_seen  = tail(year_cols_present[c_across(any_of(year_cols_present))], 1)
+  ) |>
+  ungroup() |>
+  mutate(
+    trajectory = case_when(
+      first_seen == first_year & last_seen == most_recent_year &
+        n_years == length(year_cols_present)       ~ "continuous",
+      first_seen == first_year & last_seen == most_recent_year ~ "persistent_gaps",
+      first_seen == first_year & last_seen != most_recent_year ~ "closed",
+      first_seen != first_year & last_seen == most_recent_year ~ "new",
+      TRUE                                                      ~ "transient"
+    )
+  )
+
+facility_presence <- facility_presence |>
+  mutate(
+    n_years_current = {
+      # For each row, walk backwards from most_recent_year through year_order
+      # and count consecutive TRUE values; stop at first FALSE or if not in current year
+      apply(pick(all_of(year_order)), 1, function(row) {
+        if (!isTRUE(row[most_recent_year])) return(0L)
+        count <- 0L
+        for (yr in rev(year_order)) {
+          if (isTRUE(row[yr])) count <- count + 1L else break
+        }
+        count
+      })
+    }
+  )
+
+facility_presence <- facility_presence |>
+  mutate(
+    n_years_initial = apply(pick(all_of(year_order)), 1, function(row) {
+      if (!isTRUE(row[first_year])) return(0L)
+      count <- 0L
+      for (yr in year_order) {
+        if (isTRUE(row[yr])) count <- count + 1L else break
+      }
+      count
+    })
+  )
+
+# facility_presence |> count(n_years_initial)
+# 
+# facility_presence |> count(n_years_current)
+
+facility_presence |> count(trajectory, name = "n_facilities") |> arrange(desc(n_facilities))
+```
+
+```{r save-facility-tables}
+saveRDS(facility_crosswalk, here::here("data", "facility_crosswalk.rds"))
+saveRDS(facility_presence,  here::here("data", "facility_presence.rds"))
+write.csv(facility_crosswalk, here::here("data", "facility_crosswalk.csv"), row.names = FALSE)
+write.csv(facility_presence,  here::here("data", "facility_presence.csv"),  row.names = FALSE)
+```
+
+```{r build-panel}
+# Bind all annual tables into a single panel dataset.
+#
+# Columns present in only some years (all in the inspections_* namespace) become
+# NA for years where they weren't reported -- this is correct and expected.
+# The 30 variables common to every year are fully populated.
+#
+# Key columns added:
+#   fiscal_year   — FY19 through FY26 (character, ordered by year_order)
+#   canonical_id  — stable facility identifier across years (from facility_crosswalk)
+#   canonical_name — preferred display name for the facility
+
+facilities_panel <- facilities_data_list |>
+  imap_dfr(\(df, yr) df |> mutate(fiscal_year = yr)) |>
+  relocate(fiscal_year, canonical_id, canonical_name,
+           facility_name, facility_city, facility_state)
+
+saveRDS(facilities_panel, here::here("data", "facilities_panel.rds"))
+write.csv(facilities_panel, here::here("data", "facilities_panel.csv"), row.names = FALSE)
+
+# System-wide ADP by year (quick sanity check)
+facilities_panel |>
+  mutate(fiscal_year = factor(fiscal_year, levels = year_order)) |>
+  group_by(fiscal_year) |>
+  summarise(
+    n_facilities = n(),
+    total_adp    = sum(sum_criminality_levels, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  arrange(fiscal_year)
+```
+
 # Harmonize Names with Wikipedia Page
+
 ```{r harmonize-with-wikipedia}
 library(httr)
 library(rvest)
@@ -701,9 +1011,7 @@ nrow(wiki_name_match_table)
 
 ```
 
-Current status: 
-- 36 city/state matches, most of which are the same facility with different names (`duplicate_table %>% filter(in_both) %>% filter(num_variants ==2) %>% select(4, 5) %>% print(n=100)`)
-- 50 with the same name in FY26 ICE data and on Wikipedia (` which(current_facility_names %in% w_detention_sites_tb$Name)`)
+Current status: - 36 city/state matches, most of which are the same facility with different names (`duplicate_table %>% filter(in_both) %>% filter(num_variants ==2) %>% select(4, 5) %>% print(n=100)`) - 50 with the same name in FY26 ICE data and on Wikipedia (`which(current_facility_names %in% w_detention_sites_tb$Name)`)
 
 But 223 are listed for FY26 altogether and 395 are on the Wikipedia page. So a lot more to characterize. (Most of these might by in other places and the city/state data might be enough for that; just 17 on the Wikipedia page lack a location `w_detention_sites_tb %>% filter(Location=="")`, but 15 of these have a link.)
 
@@ -832,8 +1140,6 @@ facilities_data_merged$FY26 <- facilities_data_merged$FY26 %>%
               unmatched = "ignore") 
 ```
 
-
-
 ```{r format-wikitable}
 facilities_wikitable_from_merged <- function(facilties_data, year_name) {
   if (!"wiki_match" %in% names(facilties_data)) {
@@ -954,7 +1260,13 @@ get_wikitable(facilities_wikitable,
 
 Update complete.
 
+:::{.column-screen-inset-right}
+
 ```{r treemap}
+#| fig-width: 14  # Increase this to fill the inset/screen space
+#| fig-asp: 0.618 # Controls the height relative to width
+#| out-width: "100%"
+#| 
 library(treemap)
 library(ggplot2)
 
@@ -967,6 +1279,12 @@ facilities_data_current <- facilities_data_merged$FY26 %>%
 facilities_data_current %>%
   group_by(facility_type_wiki, facility_state) %>%
   summarise(total_adp = sum(adp))
+
+facility_presence %>% 
+  filter(FY26 & !FY24) %>% 
+  filter((n_years_current==1)|(n_years_current==2)) |> 
+  pull(canonical_id) -> facilities_trump_years
+
 
 library(treemapify)
 library(dplyr)
@@ -984,26 +1302,36 @@ plot_data <- facilities_data_current %>%
   group_by(facility_type_wiki, facility_state, facility_name, management) %>%
   
   # 3. Sum the ADP
-  summarise(total_adp = sum(adp, na.rm = TRUE), .groups = "drop") %>%
+  summarise(
+    total_adp = sum(adp, na.rm = TRUE),
+    canonical_id = first(canonical_id),
+    .groups = "drop"
+  ) %>%
   
   # 4. Filter and Round
   filter(total_adp > 0) %>%
   mutate(total_adp = round(total_adp)) %>%
   
   # 5. Create the label now that management is present in the dataframe
-  mutate(display_label = case_when(
-    management == "" ~ paste0(facility_name, " (", facility_state, ")\n", 
-                              format(total_adp, big.mark = ",")),
-    TRUE             ~ paste0(facility_name, " (", management, " / ", facility_state, ")\n", 
-                              format(total_adp, big.mark = ","))
-  ))
+  mutate(
+    display_label = case_when(
+      management == "" ~ paste0(facility_name, " (", facility_state, ")\n", 
+                                format(total_adp, big.mark = ",")),
+      TRUE             ~ paste0(facility_name, " (", management, " / ", facility_state, ")\n", 
+                                format(total_adp, big.mark = ","))
+    ),
+    trump_facility = canonical_id %in% facilities_trump_years,
+    label_fontface = if_else(trump_facility, "bold", "plain")
+  )
+
 
 # 2. Create the Plot
 p <- ggplot(plot_data, aes(
     area = total_adp, 
     fill = facility_type_wiki, 
     label = display_label, 
-    subgroup = facility_type_wiki
+    subgroup = facility_type_wiki,
+    fontface = label_fontface
   )) +
   # Main tiles - thin white lines for the "leaf" nodes
   geom_treemap(color = "white", size = 0.5) + 
@@ -1041,6 +1369,10 @@ print(p)
 ```
 
 ```{r treemap-2}
+#| fig-width: 14  # Increase this to fill the inset/screen space
+#| fig-asp: 0.618 # Controls the height relative to width
+#| out-width: "100%"
+
 # 1. Data Preparation
 plot_data <- facilities_data_current %>%
   # Handle NAs immediately
@@ -1109,4 +1441,191 @@ p <- ggplot(plot_data, aes(
   )
 
 print(p)
+```
+:::
+
+## Interactive Map
+
+```{r, facilities-map-1}
+facilities_map_df <- canonical_geocoded_final |>
+  filter(!is.na(lat), !is.na(long)) |>
+  left_join(
+    facility_presence |> select(canonical_id, first_seen, last_seen, open_fy26 = FY26),
+    by = "canonical_id"
+  ) |>
+  mutate(
+    status = if_else(open_fy26 | is.na(open_fy26), "open", "closed"),
+    # Open: colour by first_seen; closed: colour by last_seen
+    open_year = factor(
+      if_else(status == "open", first_seen, NA_character_),
+      levels = c("FY19","FY20","FY21","FY22","FY23","FY24","FY25","FY26")
+    ),
+    closed_year = factor(
+      if_else(status == "closed", last_seen, NA_character_),
+      levels = c("FY19","FY20","FY21","FY22","FY23","FY24","FY25","FY26")
+    ),
+    label = paste0(canonical_name, "\n(", canonical_city, ", ", canonical_state, ")")
+  )
+
+facility_mapview <- function(dataset_sf) {
+  open_sf   <- dataset_sf |> filter(status == "open")
+  closed_sf <- dataset_sf |> filter(status == "closed")
+
+  popup_cols <- c("canonical_name", "canonical_city", "canonical_state",
+                  "first_seen", "last_seen", "status", "geocode_method")
+
+  fy_levels <- c("FY19","FY20","FY21","FY22","FY23","FY24","FY25","FY26")
+  n         <- length(fy_levels)
+
+  # Blue: earlier = lighter, more recent = darker
+  open_pal   <- colorRampPalette(c("#c6dbef", "#08306b"))(n)
+  # Red flipped: earlier closures lighter, more recent closures darker
+  closed_pal <- colorRampPalette(c("#fee0d2", "#67000d"))(n)
+
+  m_open <- mapview(
+    open_sf,
+    layer.name  = "Open since at least",
+    label       = "label",
+    zcol        = "open_year",
+    col.regions = open_pal,
+    labFormat   = leaflet::labelFormat(big.mark = ""),
+    cex         = 6,
+    popup       = popupTable(open_sf, zcol = popup_cols)
+  )
+
+  m_closed <- mapview(
+    closed_sf,
+    layer.name  = "Closed: last seen in",
+    label       = "label",
+    zcol        = "closed_year",
+    col.regions = closed_pal,
+    labFormat   = leaflet::labelFormat(big.mark = ""),
+    cex         = 6,
+    alpha       = 0.6,
+    popup       = popupTable(closed_sf, zcol = popup_cols)
+  )
+
+  m_open + m_closed
+}
+
+facilities_sf <- entries_to_sf(facilities_map_df)
+facilities_map1 <- facility_mapview(facilities_sf)
+
+facilities_map1
+```
+
+```{r export-map-1}
+mapview::mapshot2(
+  facilities_map1,
+  url           = "facilities_map_1.html",
+  selfcontained = TRUE
+)
+```
+
+## Second Interactive Map
+
+```{r facilities-map-2}
+library(mapview)
+
+# For each facility, take ADP from its latest available fiscal year.
+latest_adp <- facilities_panel |>
+  arrange(canonical_id, desc(fiscal_year)) |>
+  group_by(canonical_id) |>
+  slice(1) |>
+  ungroup() |>
+  transmute(
+    canonical_id,
+    adp          = round(sum_criminality_levels),
+    adp_fy       = fiscal_year        # which year the figure comes from
+  )
+
+facilities_sf <- facilities_sf |>
+  left_join(latest_adp, by = "canonical_id")
+
+facilities_map <- mapview(
+  facilities_sf,
+  zcol        = "status",
+  label       = "label",
+  layer.name  = "Facility Status",
+  cex         = scales::rescale(
+    ifelse(is.na(facilities_sf$adp), 0, facilities_sf$adp),
+    to = c(2, 14)
+  ),
+  popup       = leafpop::popupTable(
+    facilities_sf,
+    zcol = c("canonical_name", "canonical_city", "canonical_state",
+             "first_seen", "last_seen", "status", "adp", "adp_fy",
+             "geocode_method")
+  )
+)
+
+facilities_map
+```
+
+```{r export-map-2}
+mapview::mapshot2(
+  facilities_map,
+  url           = "facilities_map.html",
+  selfcontained = TRUE
+)
+```
+
+## Third Interactive Map
+
+```{r facilities-map-3}
+# Join ADP onto the SF object built in facilities-map-1
+facilities_sf_adp <- facilities_sf |>
+  left_join(latest_adp, by = "canonical_id")
+
+facility_mapview_adp <- function(dataset_sf) {
+  open_sf   <- dataset_sf |> filter(status == "open")
+  closed_sf <- dataset_sf |> filter(status == "closed")
+
+  popup_cols <- c("canonical_name", "canonical_city", "canonical_state",
+                  "first_seen", "last_seen", "status", "adp", "adp_fy",
+                  "geocode_method")
+
+  fy_levels <- c("FY19","FY20","FY21","FY22","FY23","FY24","FY25","FY26")
+  n         <- length(fy_levels)
+
+  # Blue: earlier = lighter, more recent = darker
+  open_pal   <- colorRampPalette(c("#c6dbef", "#08306b"))(n)
+  # Red: earlier closures lighter, more recent closures darker
+  closed_pal <- colorRampPalette(c("#fee0d2", "#67000d"))(n)
+
+  # Scale circle sizes by ADP across both layers together so sizes are comparable
+  all_adp <- ifelse(is.na(dataset_sf$adp), 0, dataset_sf$adp)
+  adp_range <- range(all_adp)
+  scale_adp <- function(x) {
+    scales::rescale(ifelse(is.na(x), 0, x), to = c(3, 16), from = adp_range)
+  }
+
+  m_open <- mapview(
+    open_sf,
+    layer.name  = "Open since at least",
+    label       = "label",
+    zcol        = "open_year",
+    col.regions = open_pal,
+    labFormat   = leaflet::labelFormat(big.mark = ""),
+    cex         = scale_adp(open_sf$adp),
+    popup       = popupTable(open_sf, zcol = popup_cols)
+  )
+
+  m_closed <- mapview(
+    closed_sf,
+    layer.name  = "Closed: last seen in",
+    label       = "label",
+    zcol        = "closed_year",
+    col.regions = closed_pal,
+    labFormat   = leaflet::labelFormat(big.mark = ""),
+    cex         = scale_adp(closed_sf$adp),
+    alpha       = 0.6,
+    popup       = popupTable(closed_sf, zcol = popup_cols)
+  )
+
+  m_open + m_closed
+}
+
+facilities_map3 <- facility_mapview_adp(facilities_sf_adp)
+facilities_map3
 ```
