@@ -1,0 +1,622 @@
+---
+title: "INE–IGM Community Crosswalk: Methods and Results"
+subtitle: "Bolivia Community Geography Project"
+date: "2026-02-23"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+    number-sections: true
+execute:
+  warning: false
+  message: false
+---
+
+::: {.callout-note}
+This report was generated using AI under general human direction. At the time of generation, the contents have not been comprehensively reviewed by a human analyst.
+
+<!--
+To indicate human review: Delete the line above about contents not being reviewed, and replace this comment with:
+The contents have been reviewed and validated by [Your Name], [Your Role] on [Date].
+-->
+:::
+
+```{r}
+#| label: setup
+#| code-fold: false
+library(tidyverse)
+library(sf)
+library(knitr)
+
+crosswalk <- readRDS("../data/crosswalk_ine_igm.rds")
+```
+
+## Introduction
+
+This document describes the construction of a crosswalk linking the Bolivian
+National Statistics Institute (INE) community registry to point locations from
+the Instituto Geográfico Militar (IGM). The goal is to assign each of the
+19,418 communities in the INE registry a geographic identifier (`id_unico`)
+from the IGM settlement point dataset, enabling downstream linkage to
+coordinates and Wikidata entities.
+
+The two datasets do not share a common key. Matching proceeds by community
+name within department, with a multi-stage spatial disambiguation pipeline to
+resolve cases where the same name appears in more than one location.
+
+## Data Sources
+
+Four datasets feed the pipeline.
+
+**INE community registry** (`CLASIF_UB_GEOG_COMUNIDAD.xlsx`). The official
+INE classification of urban geographical locations (*clasificación de
+ubicaciones geográficas*), containing 19,418 communities. Each row carries an
+11-digit `Codigo` that encodes department, province, municipality, canton, and
+a community sequence number (see @sec-ine-codes). Administrative hierarchy
+columns (`DEPARTAMENTO`, `PROVINCIA`, `MUNICIPIO`) and their numeric segment
+codes (`DEP`, `PRO`, `MUN`) are also present.
+
+**IGM settlement points** (`localizacion_poblaciones_2016.json`). A GeoJSON
+point dataset of 23,891 Bolivian settlements compiled by the IGM in 2016. The
+key fields used here are `id_unico` (a unique point identifier), `nombre_dep`
+(department name), `nombre_c_1` (settlement name, uppercase), and `tipo_area`
+(settlement type: `cp` = population centre, `cpd` = dispersed population
+centre, `ci` = urban centre, `dis` = dispersed).
+
+**GADM Bolivia level-3 boundaries** (`gadm41_BOL_3.gpkg`). Municipality
+(level-3) polygon boundaries from the Global Administrative Areas database
+(GADM v4.1). Used to spatially assign each IGM point to a municipality and
+thereby resolve name ambiguities.
+
+**USCA community polygons** (`etnicidad_tenencia/usca_final.shp`). Community-
+level multipolygon boundaries from the Unidades Socio-Culturales Agrarias
+(USCA) dataset, covering 14,426 features. Each polygon carries a 10-digit INE
+code (`cod10dig`), which maps to `Codigo` after prepending a leading zero. Used
+as a final spatial disambiguation layer for cases that GADM could not resolve.
+
+## INE Code Structure {#sec-ine-codes}
+
+Each INE community code (`Codigo`) is an 11-character string with a fixed
+leading zero followed by five numeric fields:
+
+```
+0  |  DD  |  PP  |  MM  |  C  |  SSS
+   dept   prov   mun   canton  seq
+```
+
+| Position | Width | Field        | Description                       |
+|----------|-------|--------------|-----------------------------------|
+| 1        | 1     | Leading zero | Fixed padding                     |
+| 2–3      | 2     | `DD`         | Department code                   |
+| 4–5      | 2     | `PP`         | Province code                     |
+| 6–7      | 2     | `MM`         | Municipality code                 |
+| 8        | 1     | `C`          | Canton code                       |
+| 9–11     | 3     | `SSS`        | Community sequence number         |
+
+The USCA shapefile uses a 10-digit form (the leading zero is absent). To
+join USCA codes to INE `Codigo` values, prepend a zero: `paste0("0",
+cod10dig)`.
+
+## Matching Pipeline
+
+The pipeline proceeds in eight stages, each producing a more complete and
+resolved crosswalk. The central challenge is that the IGM dataset contains no
+municipality field — only department and name — so names that recur within a
+department cannot be disambiguated by name alone.
+
+### Name normalization
+
+```{r}
+#| label: normalization
+normalize_match_key <- function(x) {
+  x |>
+    str_trim() |>
+    str_squish() |>
+    str_to_upper() |>
+    str_replace_all("[^\x20-\x7E]", "") |>
+    str_replace_all("[^A-Z0-9 ]", " ") |>
+    str_squish()
+}
+```
+
+Both datasets are normalized before any join. The `normalize_match_key()`
+function strips non-ASCII characters (encoding artifacts introduced by
+accented letters in different encodings), collapses punctuation and symbols
+to spaces, squishes runs of whitespace, and uppercases everything. This
+handles the most common source of spurious non-matches: encoding differences
+between the INE Excel file and the IGM GeoJSON.
+
+A small number of INE names are known to differ from their IGM counterparts
+for reasons beyond encoding — abbreviations, historical name changes, or
+alternative place names. These are corrected with explicit overrides before
+the normalized key is computed:
+
+| INE name | IGM name | Reason |
+|---|---|---|
+| `OKINAWA 1` | `OKINAWA UNO` | Abbreviated ordinal |
+| `TAIPIPLAYA` | `TANIPLAYA` | Alternative spelling |
+| `MUYUPAMPA` | `VILLA VACA GUZMAN` | Historical name change |
+| `VACAS K UCHU` | `VACAS KUCHU` | Spacing artifact |
+| `VALLE DE CONCEPCION` | `CONCEPCION` | Short-form name in IGM |
+
+### Initial join: department + name
+
+```{r}
+#| label: initial-join
+ine_geog_2013 <- readxl::read_excel("../data/CLASIF_UB_GEOG_COMUNIDAD.xlsx") |>
+  rename(
+    department  = DEPARTAMENTO,
+    province    = PROVINCIA,
+    municipality = MUNICIPIO
+  ) |>
+  mutate(
+    cod.prov = paste0(DEP, PRO),
+    cod.mun  = paste0(DEP, PRO, MUN),
+    cod.com  = Codigo,
+    cod.dep  = DEP
+  )
+
+geo <- st_read("../data/localizacion_poblaciones_2016.json", quiet = TRUE)
+
+geo_norm <- geo |>
+  st_drop_geometry() |>
+  mutate(
+    nombre_c_1 = str_trim(nombre_c_1),
+    match_key  = normalize_match_key(nombre_c_1)
+  )
+
+ine_norm <- ine_geog_2013 |>
+  mutate(
+    com_name  = str_trim(`CIUDAD/COMUNIDAD`),
+    match_key = case_when(
+      com_name == "OKINAWA 1"                      ~ normalize_match_key("OKINAWA UNO"),
+      com_name == "3o GRUPO VALLE HERMOSO"          ~ normalize_match_key("3O GRUPO VALLE HERMOSO"),
+      com_name == "TAIPIPLAYA"                      ~ normalize_match_key("TANIPLAYA"),
+      com_name == "SINDICATO AGRARIO IMILLA IMILLA" ~ normalize_match_key("SINDICATO AGRARIO IMILLA"),
+      com_name == "VALLE SACTA (Disperso)"           ~ normalize_match_key("VALLE SACTA (DISPERSO)"),
+      com_name == "VALLE DE CONCEPCION"             ~ normalize_match_key("CONCEPCION"),
+      com_name == "VACAS K UCHU"                    ~ normalize_match_key("VACAS KUCHU"),
+      com_name == "MUYUPAMPA"                       ~ normalize_match_key("VILLA VACA GUZMAN"),
+      TRUE                                          ~ normalize_match_key(com_name)
+    )
+  )
+
+crosswalk_raw <- ine_norm |>
+  select(Codigo, department, municipality, com_name, match_key) |>
+  left_join(
+    geo_norm |> select(nombre_dep, nombre_c_1, id_unico, match_key),
+    by           = c("department" = "nombre_dep", "match_key"),
+    relationship = "many-to-many"
+  )
+
+match_counts <- crosswalk_raw |>
+  filter(!is.na(id_unico)) |>
+  group_by(Codigo) |>
+  summarise(n_geo = n_distinct(id_unico), .groups = "drop")
+```
+
+The initial join matches on the pair `(department, normalized_name)`. Because
+the IGM dataset carries no municipality information, any community name that
+appears in two or more municipalities within the same department produces
+multiple candidate matches. These are flagged as *ambiguous* and carried
+forward to the disambiguation stages.
+
+After this stage, records fall into three preliminary categories:
+
+- **Unique** — exactly one IGM point matches the name within the department.
+- **Ambiguous** — two or more IGM points match.
+- **Unmatched** — no IGM point with that name exists in the department.
+
+### Stage 1: Direct unique matches
+
+```{r}
+#| label: stage1
+crosswalk_geo_ine_s1 <- crosswalk_raw |>
+  left_join(match_counts, by = "Codigo") |>
+  mutate(
+    n_geo        = coalesce(n_geo, 0L),
+    match_status = case_when(
+      is.na(id_unico) ~ "unmatched",
+      n_geo == 1       ~ "unique",
+      n_geo > 1        ~ "ambiguous"
+    )
+  ) |>
+  select(Codigo, department, municipality, com_name, id_unico, match_status, n_geo)
+```
+
+Records with exactly one matching IGM point are immediately assigned
+`match_status = "unique"`. This accounts for the large majority of the
+registry.
+
+### Stage 2: GADM spatial municipality join
+
+```{r}
+#| label: stage2
+gadm_path <- "../data/gadm41_BOL_3.gpkg"
+mun_boundaries <- st_read(gadm_path, layer = "ADM_ADM_3", quiet = TRUE)
+
+gadm_lookup <- mun_boundaries |>
+  st_drop_geometry() |>
+  select(gadm_dep = NAME_1, gadm_prov = NAME_2, gadm_mun = NAME_3) |>
+  mutate(
+    dep_key = normalize_match_key(gadm_dep),
+    mun_key = normalize_match_key(gadm_mun)
+  )
+
+ine_mun_lookup <- ine_geog_2013 |>
+  select(department, province, municipality, cod.mun) |>
+  distinct() |>
+  mutate(
+    dep_key = normalize_match_key(department),
+    mun_key = normalize_match_key(municipality)
+  )
+```
+
+To resolve ambiguous matches, each IGM point is spatially assigned to a GADM
+municipality polygon using `st_within`. Points that fall on or outside polygon
+boundaries (e.g. border settlements) are snapped to the nearest polygon using
+`st_nearest_feature` as a fallback.
+
+Municipality names differ substantially between the INE and GADM datasets —
+different spellings, abbreviations, historical renames, and cases where GADM
+uses a province name where INE uses a municipality name. A manual crosswalk
+of 44 municipality name pairs resolves these discrepancies, covering all 339
+INE municipalities.
+
+Once each IGM point is tagged with a municipality code, the ambiguous
+crosswalk entries are filtered to keep only the candidate whose assigned
+municipality matches the INE record's municipality. If this filter reduces
+the candidate set to exactly one point, the record is resolved as
+`unique_via_spatial`.
+
+### Stage 3: Name-proximity fallback
+
+```{r}
+#| label: stage3
+ine_name_to_mun <- ine_norm |>
+  select(department, match_key, municipality, cod.mun) |>
+  distinct() |>
+  group_by(department, match_key) |>
+  filter(n_distinct(municipality) == 1) |>
+  ungroup() |>
+  select(department, match_key, municipality_ine = municipality, cod.mun_ine = cod.mun)
+
+mun_sf <- mun_boundaries |>
+  mutate(
+    dep_key = normalize_match_key(NAME_1),
+    mun_key = normalize_match_key(NAME_3)
+  ) |>
+  inner_join(
+    bind_rows(
+      ine_mun_lookup |>
+        inner_join(gadm_lookup |> select(dep_key, mun_key, gadm_mun, gadm_prov),
+                   by = c("dep_key", "mun_key")) |>
+        select(cod.mun, department, municipality, gadm_mun),
+      tribble(
+        ~department,  ~municipality,               ~gadm_mun,
+        "La Paz",     "La Paz",                    "Nuestra Señora de La Paz",
+        "La Paz",     "Callapa",                   "Santiago de Callapa",
+        "Beni",       "Rurrenabaque",              "Puerto Menor de Rurrenabaque",
+        "Chuquisaca", "Muyupampa",                 "Villa Vaca Guzmán"
+      ) |>
+        left_join(ine_mun_lookup |> select(department, municipality, cod.mun),
+                  by = c("department", "municipality"))
+    ) |>
+      mutate(
+        dep_key = normalize_match_key(department),
+        mun_key = normalize_match_key(gadm_mun)
+      ),
+    by = c("dep_key", "mun_key")
+  ) |>
+  select(cod.mun, department, municipality)
+```
+
+A small number of IGM points are placed outside their true GADM polygon by
+the spatial join — typically because they lie very close to a border or
+because the GADM boundaries do not perfectly align with the IGM point
+locations. For INE records whose community name is unambiguous *within* the
+department (i.e., the name maps to only one municipality in the INE list),
+the correct municipality is known even without spatial containment. In these
+cases, the candidate IGM point closest to that municipality's centroid is
+selected, resolving the record as `unique_via_name`.
+
+### Stage 4: USCA polygon containment
+
+```{r}
+#| label: stage4
+usca_valid <- st_make_valid(
+  st_read("../data/etnicidad_tenencia/usca_final.shp", quiet = TRUE)
+)
+
+igm_spatial_ine <- st_join(
+  geo |> select(id_unico),
+  usca_valid |> select(cod10dig),
+  join = st_within
+) |>
+  st_drop_geometry() |>
+  distinct(id_unico, .keep_all = TRUE) |>
+  mutate(
+    spatial_ine = if_else(!is.na(cod10dig), paste0("0", cod10dig), NA_character_)
+  ) |>
+  select(id_unico, spatial_ine)
+```
+
+For records still ambiguous after Stages 2 and 3, the USCA community polygon
+layer provides a finer spatial filter. Each IGM point is matched to the USCA
+polygon it falls within (using `st_within`), and the resulting USCA code is
+compared directly to the INE `Codigo`. If exactly one of the candidate points
+falls inside the USCA polygon corresponding to the INE code, that point is
+assigned as `unique_via_usca`.
+
+The USCA dataset uses 10-digit codes; a leading zero is prepended before
+comparison.
+
+### Stage 5: Canton-split detection
+
+```{r}
+#| label: stage5
+id_set_sig <- crosswalk |>
+  filter(match_status == "ambiguous_canton_split" | match_status == "ambiguous") |>
+  filter(!is.na(id_unico)) |>
+  group_by(Codigo) |>
+  summarise(id_key = paste(sort(unique(id_unico)), collapse = "|"), .groups = "drop")
+
+canton_split_map <- id_set_sig |>
+  group_by(id_key) |>
+  filter(n() > 1) |>
+  mutate(canton_split_group = min(Codigo)) |>
+  ungroup() |>
+  select(Codigo, canton_split_group)
+```
+
+Bolivia's canton boundaries were reorganised after the 2001 census. As a
+result, some communities appear in the INE registry under two or more
+`Codigo` values that differ only in the canton digit (position 8) — with
+the department, province, municipality, and community sequence number
+unchanged. These sibling codes all match the same pool of IGM candidate
+points.
+
+To detect these groups, each remaining ambiguous `Codigo` is fingerprinted
+by the sorted set of its candidate `id_unico` values. Any two codes that
+share an identical fingerprint are placed in the same canton-split group,
+identified by the lowest `Codigo` in the group (`canton_split_group`). These
+records are labelled `ambiguous_canton_split`.
+
+The many-to-one mapping (multiple INE codes → same IGM points) is **expected
+and correct** for these groups. To build a deduplicated community key, use:
+
+```r
+community_key <- coalesce(canton_split_group, Codigo)
+```
+
+### Stage 6: Dispersed settlement reclassification
+
+```{r}
+#| label: stage6
+pure_dis_codes <- crosswalk |>
+  filter(match_status %in% c("ambiguous", "ambiguous_no_spatial")) |>
+  filter(!is.na(id_unico)) |>
+  left_join(
+    geo |> st_drop_geometry() |> select(id_unico, tipo_area),
+    by = "id_unico"
+  ) |>
+  group_by(Codigo) |>
+  filter(all(tipo_area == "dis")) |>
+  pull(Codigo) |>
+  unique()
+```
+
+The IGM dataset uses `tipo_area = "dis"` to flag dispersed settlements —
+rural communities spread across a wide area rather than concentrated at a
+single point. For such communities, the IGM frequently records multiple
+points, each representing a cluster or hamlet within the broader settlement.
+
+When all candidate IGM points for an ambiguous INE record carry `tipo_area
+== "dis"`, no single point is more authoritative than the others. These
+records are reclassified as `ambiguous_dispersed`, signalling to downstream
+users that the full candidate pool should be treated as a coordinate
+envelope rather than forcing a single selection.
+
+### Stage 7: Cross-municipality adjacency splitting
+
+```{r}
+#| label: stage7
+cross_mun_summary <- crosswalk |>
+  filter(match_status == "ambiguous_no_spatial") |>
+  group_by(department, com_name) |>
+  summarise(n_mun = n_distinct(municipality), .groups = "drop") |>
+  count(n_mun)
+```
+
+Some records are labelled `ambiguous_no_spatial` because the same community
+name appears in two municipalities within the same department and the GADM
+spatial join could not assign the points unambiguously. However, if the two
+municipalities are geographically non-adjacent, the candidate IGM points can
+be partitioned by which municipality polygon they fall within — and that
+partition resolves the ambiguity.
+
+For each `ambiguous_no_spatial` group spanning exactly two municipalities,
+the pipeline tests whether those municipalities are adjacent (`st_touches`).
+For non-adjacent pairs, the candidate points are spatially split between the
+two municipality polygons. Each INE record then receives only the points
+assigned to its municipality:
+
+- If the split leaves a single point: `unique_via_spatial`
+- If multiple points remain (all dispersed): `ambiguous_dispersed`
+
+### Stage 8: Mixed-type resolution
+
+```{r}
+#| label: stage8
+type_resolution_note <- crosswalk |>
+  filter(match_status == "unique_via_spatial") |>
+  nrow()
+```
+
+For any ambiguous records still remaining after Stage 7, the `tipo_area`
+field provides a final resolution heuristic. Named population centres
+(`cp`, `cpd`) and urban centres (`ci`) are more specific geographic entities
+than dispersed points (`dis`). If a candidate pool contains exactly one
+point of the highest-priority type, that point is selected:
+
+| Priority | `tipo_area` | Description |
+|----------|-------------|-------------|
+| 1 | `cp`, `cpd` | Population centre / dispersed population centre |
+| 2 | `ci`        | Urban/city centre |
+| 3 | `dis`       | Dispersed settlement |
+
+A code is resolved as `unique_via_spatial` when the top-ranked type appears
+exactly once. If multiple candidates share the top rank, the record remains
+ambiguous.
+
+## Results
+
+```{r}
+#| label: results-table
+status_counts <- crosswalk |>
+  distinct(Codigo, match_status) |>
+  count(match_status, name = "n_codes") |>
+  arrange(desc(n_codes))
+
+status_counts |>
+  mutate(
+    pct = scales::percent(n_codes / sum(n_codes), accuracy = 0.1)
+  ) |>
+  rename(
+    `Match status`   = match_status,
+    `INE codes`      = n_codes,
+    `Share`          = pct
+  ) |>
+  kable(align = c("l", "r", "r"))
+```
+
+```{r}
+#| label: results-plot
+#| fig-height: 4
+status_counts |>
+  mutate(
+    match_status = fct_reorder(match_status, n_codes),
+    resolved     = str_starts(match_status, "unique")
+  ) |>
+  ggplot(aes(x = n_codes, y = match_status, fill = resolved)) +
+  geom_col() +
+  scale_fill_manual(
+    values = c("TRUE" = "#2a9d8f", "FALSE" = "#e9c46a"),
+    labels = c("TRUE" = "Resolved", "FALSE" = "Ambiguous / unmatched"),
+    name   = NULL
+  ) +
+  scale_x_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.05))) +
+  labs(
+    x = "Number of INE codes",
+    y = NULL,
+    title = "INE–IGM crosswalk match status",
+    subtitle = "19,418 communities across Bolivia"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| label: resolved-summary
+n_resolved <- crosswalk |>
+  distinct(Codigo, match_status) |>
+  filter(str_starts(match_status, "unique")) |>
+  nrow()
+
+n_total <- n_distinct(crosswalk$Codigo)
+```
+
+Of the `r scales::comma(n_total)` INE community codes,
+`r scales::comma(n_resolved)`
+(`r scales::percent(n_resolved / n_total, accuracy = 0.1)`) are resolved to
+a unique IGM point by at least one matching stage.
+
+## Match Status Reference
+
+```{r}
+#| label: status-reference
+status_ref <- tribble(
+  ~Status,                  ~Description,
+  "unique",                 "Direct 1-to-1 name match within department.",
+  "unique_via_spatial",     "Ambiguous name resolved by GADM municipality boundary, cross-municipality adjacency splitting, or population-centre type priority.",
+  "unique_via_name",        "Ambiguous name resolved by selecting the IGM point closest to the correct municipality centroid.",
+  "unique_via_usca",        "Ambiguous name resolved by USCA community polygon containment.",
+  "ambiguous_canton_split", "Same community listed under multiple canton codes due to administrative reorganisation. All sibling codes share the same IGM candidate pool; many-to-one mapping is expected.",
+  "ambiguous_dispersed",    "All IGM candidates are tipo_area == 'dis' (dispersed). The IGM recorded multiple points for the same settlement. Treat all candidates as a valid coordinate pool.",
+  "ambiguous",              "Genuinely repeated name within the same municipality. The correct point cannot be determined automatically.",
+  "ambiguous_no_spatial",   "Name recurs across municipalities; no spatial disambiguation succeeded.",
+  "unmatched",              "No IGM point with a matching name found."
+)
+
+status_ref |>
+  left_join(
+    crosswalk |>
+      distinct(Codigo, match_status) |>
+      count(match_status, name = "N"),
+    by = c("Status" = "match_status")
+  ) |>
+  mutate(N = coalesce(N, 0L)) |>
+  rename(`Match status` = Status, `N (INE codes)` = N) |>
+  kable()
+```
+
+**Canton-split groups** can be identified and deduplicated as follows:
+
+```r
+# Build a deduplicated community key (one per physical place)
+community_key <- coalesce(canton_split_group, Codigo)
+```
+
+## Usage
+
+### Loading the crosswalk
+
+```{r}
+#| label: usage-load
+#| eval: false
+crosswalk <- readRDS("data/crosswalk_ine_igm.rds")
+# or
+crosswalk <- read_csv("data/crosswalk_ine_igm.csv")
+```
+
+### Joining to the INE community list
+
+```{r}
+#| label: usage-join
+#| eval: false
+library(tidyverse)
+
+ine_geog_2013 |>
+  left_join(
+    crosswalk |> select(Codigo, id_unico, match_status, canton_split_group),
+    by = "Codigo"
+  )
+```
+
+### Joining to IGM coordinates
+
+```{r}
+#| label: usage-coords
+#| eval: false
+library(sf)
+
+igm_sf <- st_read("data/localizacion_poblaciones_2016.json", quiet = TRUE)
+
+# Resolved records only
+crosswalk |>
+  filter(str_starts(match_status, "unique")) |>
+  left_join(igm_sf |> st_drop_geometry(), by = "id_unico")
+```
+
+### Looking up a single INE code
+
+The `ine_match_status()` function (defined in `ine_community_mapping.R`)
+returns a human-readable summary for any INE code, accepting both the
+11-digit `Codigo` form and the 10-digit USCA `cod10dig` form:
+
+```r
+source("ine_community_mapping.R")
+ine_match_status("01010101001")
+```
