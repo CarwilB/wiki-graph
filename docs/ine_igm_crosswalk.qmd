@@ -1,0 +1,81 @@
+
+---
+title: "INE–IGM Community Crosswalk: Methods and Results"
+subtitle: "Bolivia Community Geography Project"
+date: "2026-02-23"
+author: ""
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+    embed-resources: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+::: {.callout-note}
+This report was generated using AI under general human direction. At the time of generation, the contents have not been comprehensively reviewed by a human analyst.
+
+<!--
+To indicate human review: Delete the line above about contents not being reviewed, and replace this comment with:
+The contents have been reviewed and validated by [Your Name], [Your Role] on [Date].
+-->
+:::
+
+## Introduction
+
+This document describes the methods and results for constructing a crosswalk between two Bolivian community geography systems:
+
+- **INE codes** — 11-digit identifiers from Bolivia's National Statistics Institute (Instituto Nacional de Estadística), attached to 19,418 communities as classified in the INE's geographic community registry.
+- **IGM identifiers** (`id_unico`) — unique point identifiers from Bolivia's Military Geographic Institute (Instituto Geográfico Militar), covering 23,891 settlement points in the 2016 *Localización de Poblaciones* dataset.
+
+The goal is to link each INE community code to its corresponding IGM point, which in turn carries WGS84 coordinates and can be linked to Wikidata entities. The crosswalk is the foundational step for any downstream spatial or knowledge-graph analysis of Bolivian community data.
+
+The output is saved as `data/crosswalk_ine_igm.rds` (and `.csv`) and contains one row per INE code–IGM point candidate pair, along with a `match_status` field that describes the quality and method of each match.
+
+## Data Sources
+
+### INE Community List
+
+```{r}
+#| label: load-ine
+library(tidyverse)
+library(sf)
+
+ine_geog_2013 <- readxl::read_excel("../data/CLASIF_UB_GEOG_COMUNIDAD.xlsx") |>
+  rename(
+    department   = DEPARTAMENTO,
+    province     = PROVINCIA,
+    municipality = MUNICIPIO
+  ) |>
+  mutate(
+    cod.prov = paste0(DEP, PRO),
+    cod.mun  = paste0(DEP, PRO, MUN),
+    cod.com  = Codigo
+  ) |>
+  rename(cod.dep = DEP)
+```
+
+`CLASIF_UB_GEOG_COMUNIDAD.xlsx` contains `r nrow(ine_geog_2013)` communities classified within Bolivia's administrative hierarchy: department → province → municipality → canton → community. Each community has an 11-digit `Codigo` field (described in detail below) and a plain-text name (`CIUDAD/COMUNIDAD`).
+
+### IGM Settlement Points
+
+```{r}
+#| label: load-igm
+geo <- st_read("../data/localizacion_poblaciones_2016.json", quiet = TRUE)
+```
+
+The IGM GeoJSON contains `r nrow(geo)` settlement points. Each point carries:
+
+- `id_unico` — a unique integer identifier
+- `nombre_dep` — department name (uppercase)
+- `nombre_c_1` — settlement name (uppercase)
+- `tipo_area` — area type: `cp` (population centre), `cpd` (dispersed population centre), `ci` (urban centre), `dis` (dispersed settlement)
+- `tipo_pobla` — population type
+- WGS84 point geometry
+
+Both `id_unico` in the IGM dataset
