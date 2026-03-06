@@ -16,15 +16,15 @@
 #' @examples
 #' departments |> add_wikidata_property("P14142", name = "ine_code")
 add_wikidata_property <- function(df, property, name = property) {
-  
+
   if (!"qid" %in% names(df)) stop("df must contain a 'qid' column")
   if (!grepl("^P\\d+$", property)) stop("property must be in format 'P123'")
-  
+
   qids <- df$qid
-  
+
   values <- map_chr(qids, function(qid) {
     Sys.sleep(0.1)
-    
+
     tryCatch({
       r <- GET(
         "https://www.wikidata.org/w/api.php",
@@ -35,22 +35,22 @@ add_wikidata_property <- function(df, property, name = property) {
           props = "claims"
         )
       )
-      
+
       entity <- fromJSON(content(r, "text", encoding = "UTF-8"))$entities[[qid]]
       claims <- entity$claims[[property]]
-      
+
       if (is.null(claims) || nrow(claims) == 0) {
         return(NA_character_)
       }
-      
+
       if (nrow(claims) > 1) {
         message(qid, " has ", nrow(claims), " values for ", property,
                 "; using the first (rank: ", claims$rank[1], ")")
       }
-      
+
       snak <- claims$mainsnak[1, ]
       dv   <- snak$datavalue[[1]]
-      
+
       # Dispatch on value type
       if (is.data.frame(dv)) {
         # Entity/item type: return the QID
@@ -61,13 +61,13 @@ add_wikidata_property <- function(df, property, name = property) {
       } else {
         as.character(dv)
       }
-      
+
     }, error = function(e) {
       message("Error on ", qid, ": ", conditionMessage(e))
       NA_character_
     })
   })
-  
+
   df[[name]] <- values
   df
 }
@@ -88,6 +88,9 @@ add_wikidata_property <- function(df, property, name = property) {
 #'   properties. If shorter than \code{property}, missing names fall back to
 #'   the property ID. If longer, the extra names are ignored and a message is
 #'   issued. Default is \code{NULL} (use property IDs as column names).
+#' @param country Character. Optional Wikidata QID of a country (e.g., "Q750"
+#'   for Bolivia). When supplied, only instances whose P17 (country) statement
+#'   matches this QID are returned. Default is \code{NULL} (no country filter).
 #' @param languages Character vector. Language codes for labels and descriptions.
 #'   Default is c("en", "es").
 #' @param limit Integer. Maximum number of results to return. Default is 1000.
@@ -111,6 +114,7 @@ add_wikidata_property <- function(df, property, name = property) {
 get_wikidata_instances <- function(class_qid,
                                    property = NULL,
                                    property_names = NULL,
+                                   country = NULL,
                                    languages = c("en", "es"),
                                    limit = 1000) {
 
@@ -136,14 +140,23 @@ get_wikidata_instances <- function(class_qid,
   if (!grepl("^Q\\d+$", class_qid)) {
     stop("class_qid must be in format 'Q123'")
   }
+  if (!is.null(country) && !grepl("^Q\\d+$", country)) {
+    stop("country must be in format 'Q123'")
+  }
 
   # Build SPARQL query to get all instances
+  country_triple <- if (!is.null(country)) {
+    sprintf("  ?item wdt:P17 wd:%s .\n", country)
+  } else {
+    ""
+  }
+
   sparql_query <- sprintf('
 SELECT DISTINCT ?item WHERE {
   ?item wdt:P31 wd:%s .
-}
+%s}
 LIMIT %d
-', class_qid, limit)
+', class_qid, country_triple, limit)
 
   # Query Wikidata SPARQL endpoint
   endpoint <- "https://query.wikidata.org/sparql"

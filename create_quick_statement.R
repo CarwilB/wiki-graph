@@ -126,12 +126,14 @@ create_quick_statement <- function(qid,
   }
 
   # Add qualifiers if provided
+  # QuickStatements qualifier syntax: qalXXX (not PXX), e.g. qal585 for P585
   if (!is.null(qualifiers)) {
     for (qual_prop in names(qualifiers)) {
       if (!grepl("^P\\d+$", qual_prop)) {
         stop(paste("Qualifier property must be in format 'P123':", qual_prop))
       }
-      command_parts <- c(command_parts, qual_prop, qualifiers[[qual_prop]])
+      qal_label <- paste0("qal", gsub("^P", "", qual_prop))
+      command_parts <- c(command_parts, qal_label, qualifiers[[qual_prop]])
     }
   }
 
@@ -199,6 +201,49 @@ add_quick_statement_column <- function(dataframe, qid_col, property, value_col, 
   dataframe %>%
     rowwise() %>%
     mutate(quick_statement = create_quick_statement({{ qid_col }}, property, {{ value_col }}, ...)) %>%
+    ungroup()
+}
+
+#' Add a QuickStatements Column with Qualifiers to a Data Frame
+#'
+#' Like \code{add_quick_statement_column} but exposes the \code{qualifiers}
+#' argument so that each statement can carry qualifier triples. Qualifier
+#' properties are given as \code{"P123"} and are automatically converted to the
+#' QuickStatements \code{qalXXX} token format required by the API.
+#'
+#' @param dataframe A data frame (or tibble).
+#' @param qid_col Unquoted column name containing Wikidata item IDs.
+#' @param property Character. The property ID (e.g., \code{"P1098"}).
+#' @param value_col Unquoted column name containing statement values.
+#' @param qualifiers Named list of qualifier property → value pairs. Names must
+#'   be property IDs in format \code{"P123"}. Values are raw QuickStatements
+#'   tokens: item QIDs (\code{"Q750"}), dates
+#'   (\code{"+2024-01-01T00:00:00Z/9"}), or plain quantities (\code{"42"}).
+#'   All values in the list are applied uniformly to every row.
+#' @param ... Additional named arguments passed to \code{create_quick_statement()}
+#'   (e.g., \code{type}, \code{reference_qid}, \code{reference_url}).
+#'
+#' @return The input data frame with an additional \code{quick_statement} column.
+#'
+#' @examples
+#' cuadro39_speakers %>%
+#'   add_quick_statement_column_q(
+#'     qid, "P1098", c2024_total,
+#'     qualifiers = list(P276 = "Q750", P585 = "+2024-01-01T00:00:00Z/9"),
+#'     type = "quantity",
+#'     reference_qid = "Q12345"
+#'   )
+#'
+#' @export
+add_quick_statement_column_q <- function(dataframe, qid_col, property, value_col,
+                                          qualifiers = NULL, ...) {
+  dataframe %>%
+    rowwise() %>%
+    mutate(quick_statement = create_quick_statement(
+      {{ qid_col }}, property, as.character({{ value_col }}),
+      qualifiers = qualifiers,
+      ...
+    )) %>%
     ungroup()
 }
 

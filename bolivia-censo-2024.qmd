@@ -1,0 +1,1176 @@
+---
+title: "Bolivia Census 2024 — Person-level data"
+format: html
+execute:
+  warning: false
+  message: false
+---
+
+## Setup
+
+The person-level file (`Persona_CPV-2024.csv`) is \~3 GB with **11,365,333 rows × 118 columns**, so we use the `arrow` package to query it lazily via dplyr without loading it into memory. Only call `collect()` after filtering/aggregating to a manageable size.
+
+The codebook is parsed from `BOL-INE-CPV-2024.xml` (DDI format, 184 variables).
+
+```{r}
+#| label: setup
+library(arrow)
+library(xml2)
+library(tidyverse)
+
+DATA_DIR     <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+PERSONA_CSV  <- file.path(DATA_DIR, "Persona_CPV-2024.csv")
+CODEBOOK_RDS <- "../bolivia-data/Censo 2024/codebook_persona.rds"
+PUEBLO_CATS  <- "../bolivia-data/Censo 2024/pueblo_cats.rds"
+```
+
+## Codebook
+
+The DDI XML (`BOL-INE-CPV-2024.xml`) contains 184 variable entries. For categorical variables the response categories are embedded in the `qstnLit` CDATA field; derived variables (e.g. `NIVEL_EDU`, `IDIOMA_MAT`, `CONDACT_19`) have only a text description. The codebook is pre-parsed and saved as an RDS for convenience.
+
+```{r}
+#| label: codebook
+codebook <- readRDS(CODEBOOK_RDS)
+
+# Helper: look up a variable label by name
+cb_label <- function(varname) {
+  codebook |>
+    filter(variable == toupper(varname)) |>
+    pull(label)
+}
+
+codebook |> select(variable, label) |> print(n = 40)
+```
+
+## Open dataset lazily
+
+```{r}
+#| label: open-dataset
+ds <- open_dataset(PERSONA_CSV, format = "csv", delimiter = ";")
+
+cat(sprintf("Rows: %s  |  Columns: %d\n",
+            format(nrow(ds), big.mark = ","),
+            length(ds$schema$names)))
+```
+
+## 10,000-row sample
+
+A pre-drawn random sample is used for initial exploration so we avoid re-reading the full file on every render. The sample was drawn with `set.seed(8143)`.
+
+```{r}
+#| label: load-sample
+persona_sample <- readRDS(file.path(DATA_DIR, "Persona_CPV-2024_sample10k.rds"))
+
+glimpse(persona_sample)
+```
+
+## Example: lazy aggregation on full dataset
+
+Use `arrow`/dplyr verbs on `ds` and only `collect()` the summary:
+
+```{r}
+#| label: age-by-dept
+#| eval: false   # remove to run against full file
+age_by_dept <- ds |>
+  group_by(idep) |>
+  summarise(
+    n          = n(),
+    mean_age   = mean(p26_edad, na.rm = TRUE),
+    median_age = median(p26_edad, na.rm = TRUE)
+  ) |>
+  collect() |>
+  arrange(idep)
+
+age_by_dept
+```
+
+------------------------------------------------------------------------
+
+## Indigenous self-identification (p32)
+
+There are three variables covering indigenous/afro-bolivian identity:
+
+| Variable | Type | Description |
+|------------------------|------------------------|------------------------|
+| `p32_pueblo_per` | Raw | Yes/No: self-identifies with an indigenous/afro-bolivian group (1 = Sí, 2 = No, 9 = Sin respuesta) |
+| `p32_pueblo_cod` | Raw | Specific group code as written/transcribed; 145 categories including generic terms (9xx) and foreign groups (5xx) |
+| `p32_pueblos` | Derived | CTAI-consolidated reference list; 58 categories, re-coding subgroups into broader groups and generic terms into "Otras declaraciones" |
+
+The 9xx codes in `p32_pueblo_cod` represent respondents who said "Yes" but used a generic term rather than a specific group name: `905` = Campesino, `903` = Indígena, `904` = Originario, etc. These are reclassified to "Otras declaraciones" in the derived `p32_pueblos`.
+
+A lookup table for `p32_pueblo_cod` is saved at `pueblo_cats.rds` (145 rows). The `p32_pueblos` codes follow a re-numbered scheme (1–58) documented in the variable dictionary.
+
+```{r}
+#| label: pueblo-lookup
+pueblo_cats <- readRDS(PUEBLO_CATS)
+
+# Category labels for p32_pueblos (from variable dictionary Excel)
+# Re-numbered 1–58 CTAI reference list
+pueblos_cats <- tribble(
+  ~code, ~label,
+  1,  "Afroboliviano",         2,  "Araona",            3,  "Aymara",
+  4,  "Ayoreo",                5,  "Baure",             6,  "Canichana",
+  7,  "Cavineño",              8,  "Cayubaba",          9,  "Chácobo",
+  10, "Charka Qhara Qhara",   11,  "Chichas",          12,  "Chiquitano",
+  13, "Chuwi",                14,  "Ese Ejja",          15,  "Guaraní",
+  16, "Guarasu´we",           17,  "Gwarayu",           18,  "Itonama",
+  19, "Jach'a Carangas",      20,  "Jalq'a",            21,  "Joaquiniano",
+  22, "Kallawaya",            23,  "Killacas",           24,  "Leco",
+  25, "Lípez",                26,  "Lupaca",             27,  "Machineri",
+  28, "Maropa",               29,  "Mojeño",             30,  "Mojeño Ignaciano",
+  31, "Mojeño Trinitario",    32,  "Moré",               33,  "Mosetén",
+  34, "Movima",               35,  "Pacahuara",          36,  "Pakajaqi",
+  37, "Paunaca",              38,  "Puquina",            39,  "Qhapaq Uma Suyu",
+  40, "Quechua",              41,  "Qullas",             42,  "Raqaypampa",
+  43, "Sirionó",              44,  "Sora",               45,  "Tacana",
+  46, "Tapiete",              47,  "Toromona",           48,  "Tsimane´",
+  49, "Uru-Chipaya",          50,  "Weenhayek",          51,  "Yaminawa",
+  52, "Yampara",              53,  "Yuqui",              54,  "Yurakaré",
+  55, "Quechua - Aymara",     56,  "Más de una descripción",
+  57, "Otras declaraciones",  58,  "Otros pueblos indígenas extranjeros",
+  98, "No se autoidentifica", 99,  "Sin respuesta"
+)
+```
+
+### Yes/No rate
+
+```{r}
+#| label: per-distribution
+per_labels <- c("1" = "Sí", "2" = "No", "9" = "Sin respuesta")
+
+persona_sample |>
+  count(p32_pueblo_per, name = "n") |>
+  mutate(
+    label = recode(as.character(p32_pueblo_per), !!!per_labels),
+    pct   = round(100 * n / sum(n), 1)
+  ) |>
+  select(label, n, pct)
+```
+
+In the sample, 37.5% self-identify with an indigenous or afro-bolivian group; 60% do not; 2.5% gave no response.
+
+### Distribution of specific groups (p32_pueblo_cod)
+
+```{r}
+#| label: pueblo-cod-dist
+persona_sample |>
+  filter(!is.na(p32_pueblo_cod)) |>
+  count(p32_pueblo_cod, sort = TRUE, name = "n") |>
+  left_join(pueblo_cats, by = c("p32_pueblo_cod" = "code")) |>
+  mutate(
+    label              = coalesce(label, paste0("Code ", p32_pueblo_cod)),
+    pct_of_identifiers = round(100 * n / sum(n), 1),
+    pct_of_total       = round(100 * n / nrow(persona_sample), 1)
+  ) |>
+  select(code = p32_pueblo_cod, label, n, pct_of_identifiers, pct_of_total)
+```
+
+```{r}
+#| label: pueblo-cod-plot
+#| fig-height: 8
+persona_sample |>
+  filter(!is.na(p32_pueblo_cod)) |>
+  count(p32_pueblo_cod, name = "n") |>
+  left_join(pueblo_cats, by = c("p32_pueblo_cod" = "code")) |>
+  mutate(
+    label = coalesce(label, paste0("Code ", p32_pueblo_cod)),
+    label = fct_reorder(label, n)
+  ) |>
+  filter(n >= 5) |>
+  ggplot(aes(x = n, y = label)) +
+  geom_col() +
+  labs(
+    title    = "Self-identified indigenous/afro-bolivian group (p32_pueblo_cod)",
+    subtitle = "10,000-row sample | groups with n ≥ 5 shown",
+    x = "Count", y = NULL
+  )
+```
+
+### Comparing p32_pueblo_cod (raw) vs p32_pueblos (derived)
+
+`p32_pueblo_cod` records exactly what the respondent said (145 raw categories); `p32_pueblos` is a CTAI-reconciled version (58 categories) that:
+
+1.  **Consolidates** subgroups into broader groups (e.g. Bésiro → Chiquitano, Trinitario → Mojeño Trinitario)
+2.  **Folds** generic terms (Campesino, Indígena, Originario, etc.) into "Otras declaraciones"
+
+```{r}
+#| label: p32-comparison
+p32_compare <- persona_sample |>
+  select(p32_pueblo_per, p32_pueblo_cod, p32_pueblos) |>
+  mutate(
+    per_label     = recode(as.character(p32_pueblo_per), !!!per_labels, .default = NA_character_),
+    cod_label     = pueblo_cats$label[match(p32_pueblo_cod, pueblo_cats$code)],
+    pueblos_label = pueblos_cats$label[match(p32_pueblos, pueblos_cats$code)]
+  )
+
+# Among "Sí" respondents: rows where cod and pueblos differ
+p32_compare |>
+  filter(p32_pueblo_per == 1) |>
+  count(cod_label, pueblos_label, sort = TRUE) |>
+  filter(cod_label != pueblos_label) |>
+  rename(`p32_pueblo_cod` = cod_label, `p32_pueblos` = pueblos_label)
+```
+
+```{r}
+#| label: p32-match-summary
+p32_compare |>
+  filter(p32_pueblo_per == 1) |>
+  mutate(
+    outcome = case_when(
+      cod_label == pueblos_label                     ~ "Exact match",
+      pueblos_label == "Otras declaraciones"         ~ "Generic term → Otras declaraciones",
+      !is.na(cod_label) & cod_label != pueblos_label ~ "Subgroup consolidated"
+    )
+  ) |>
+  count(outcome) |>
+  mutate(pct = round(100 * n / sum(n), 1)) |>
+  arrange(desc(n))
+```
+
+Among the 3,755 self-identifiers in the sample:
+
+-   **86.7%** have identical codes in both variables
+-   **12.6%** used a generic term (Campesino, Indígena, etc.) in `p32_pueblo_cod`, reclassified to "Otras declaraciones" in `p32_pueblos`
+-   **0.7%** named a subgroup that was merged into a broader group in `p32_pueblos`
+
+For most analyses, `p32_pueblos` is preferable as it uses the official CTAI reconciliation. Use `p32_pueblo_cod` if you need the finer-grained raw categories or want to study the generic-term responses separately.
+
+------------------------------------------------------------------------
+
+## Language and identity alignment (idioma_mat × p32_pueblos)
+
+`idioma_mat` records the mother tongue (first language learned at home); 83 categories covering Bolivian indigenous languages, foreign languages, and special codes (`998` = No habla, `994` = Lenguaje de señas). The dominant categories in the sample are Castellano (74.4%), Quechua (12.5%), and Aymara (7.3%).
+
+```{r}
+#| label: idioma-cats
+# Key idioma_mat category labels (from variable dictionary Excel)
+idioma_cats <- tribble(
+  ~code, ~label,
+     1, "Araona",              2, "Aymara",               3, "Baure",
+     4, "Bésiro",              5, "Canichana",             6, "Castellano",
+     7, "Kabineña",            8, "Cayubaba",              9, "Chácobo",
+    10, "Tsimane´",           11, "Ese Ejja",             12, "Guaraní",
+    13, "Guarasu´we",         14, "Gwarayu",              15, "Itonama",
+    16, "Leco",               17, "Kallawaya",            18, "Machineri",
+    19, "Maropa",             20, "Mojeño Ignaciano",     21, "Mojeño Trinitario",
+    22, "Moré",               23, "Mosetén",              24, "Movima",
+    25, "Pacahuara",          26, "Puquina",              27, "Quechua",
+    28, "Sirionó",            29, "Tacana",               30, "Tapiete",
+    32, "Uru-Chipaya",        33, "Weenhayek",            34, "Yaminawa",
+    35, "Yuqui",              36, "Yurakaré",             37, "Zamuco",
+    94, "Afroboliviano",     991, "Otras declaraciones", 992, "Otro idioma extranjero",
+   994, "Lenguaje de señas", 998, "No habla"
+)
+```
+
+```{r}
+#| label: idioma-dist
+persona_sample |>
+  count(idioma_mat, sort = TRUE) |>
+  left_join(idioma_cats, by = c("idioma_mat" = "code")) |>
+  mutate(
+    label = coalesce(label, if_else(is.na(idioma_mat), "(NA / not asked)", paste0("Code ", idioma_mat))),
+    pct   = round(100 * n / nrow(persona_sample), 1)
+  ) |>
+  select(code = idioma_mat, label, n, pct)
+```
+
+### Alignment: does language match identity?
+
+For each indigenous-language speaker, `p32_pueblos` responses are classified as:
+
+-   **Matching group** — identity name corresponds to the language (e.g. Quechua speaker → Quechua identity)
+-   **Different group** — identifies with a named but different group
+-   **Generic identity** — said "Sí" but used a generic term (→ "Otras declaraciones" in `p32_pueblos`)
+-   **Does not identify** — `p32_pueblos == "No se autoidentifica"`
+
+Two apparent mismatches are actually coherent: Kabineña speakers identify as **Cavineño** (same group, different spelling conventions), and Zamuco speakers identify as **Ayoreo** (Zamuco is the language name; Ayoreo is the ethnonym used in identity contexts).
+
+```{r}
+#| label: alignment-setup
+indigenous_langs <- c(
+  "Quechua", "Aymara", "Guaraní", "Tsimane´", "Gwarayu", "Weenhayek",
+  "Mojeño Trinitario", "Kabineña", "Chácobo", "Tacana", "Zamuco",
+  "Ese Ejja", "Mojeño Ignaciano", "Uru-Chipaya", "Yurakaré", "Bésiro",
+  "Mosetén", "Weenhayek"
+)
+
+
+# Note: Afroboliviano is excluded from linguistic analysis. The census records
+# "Afroboliviano" as a language code (code 94), but this is generally understood
+# to be a Spanish variety rather than a distinct language. The ~450 reported speakers
+# are treated here as a data artefact rather than a separate language group.
+
+# indigenous_langs_core <- c(
+#   "Quechua", "Aymara", "Guaraní", "Tsimane´", "Gwarayu", "Weenhayek",
+#   "Mojeño Trinitario", "Kabineña", "Chácobo", "Tacana", "Zamuco",
+#   "Ese Ejja", "Mojeño Ignaciano", "Uru-Chipaya", "Yurakaré", "Afroboliviano"
+# )
+
+cross <- persona_sample |>
+  mutate(
+    idioma_label  = idioma_cats$label[match(idioma_mat, idioma_cats$code)],
+    pueblos_label = pueblos_cats$label[match(p32_pueblos, pueblos_cats$code)]
+  )
+
+classify_alignment <- function(idioma, pueblos) {
+  case_when(
+    pueblos == "No se autoidentifica"                                       ~ "Does not identify",
+    pueblos == "Sin respuesta"                                              ~ "No response",
+    pueblos == "Otras declaraciones"                                        ~ "Generic identity",
+    str_detect(pueblos, fixed(idioma, ignore_case = TRUE)) |
+      str_detect(idioma, fixed(pueblos, ignore_case = TRUE))               ~ "Matching group",
+    !is.na(pueblos)                                                         ~ "Different group",
+    TRUE                                                                    ~ "No identity data"
+  )
+}
+```
+
+```{r}
+#| label: alignment-table
+cross |>
+  filter(idioma_label %in% indigenous_langs) |>
+  mutate(outcome = classify_alignment(idioma_label, pueblos_label)) |>
+  count(idioma_label, outcome) |>
+  group_by(idioma_label) |>
+  mutate(total = sum(n), pct = round(100 * n / total, 0)) |>
+  ungroup() |>
+  select(idioma_label, outcome, pct) |>
+  pivot_wider(names_from = outcome, values_from = pct, values_fill = 0) |>
+  arrange(desc(`Matching group`))
+```
+
+```{r}
+#| label: alignment-plot
+#| fig-height: 7
+cross |>
+  filter(idioma_label %in% indigenous_langs) |>
+  mutate(
+    outcome = classify_alignment(idioma_label, pueblos_label),
+    outcome = factor(outcome, levels = c(
+      "Matching group", "Different group", "Generic identity",
+      "Does not identify", "No response", "No identity data"
+    ))
+  ) |>
+  count(idioma_label, outcome) |>
+  group_by(idioma_label) |>
+  mutate(pct = n / sum(n)) |>
+  ungroup() |>
+  mutate(idioma_label = fct_reorder(idioma_label, pct * (outcome == "Matching group"), sum)) |>
+  ggplot(aes(x = pct, y = idioma_label, fill = outcome)) +
+  geom_col() +
+  scale_x_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = c(
+    "Matching group"    = "#2166ac",
+    "Different group"   = "#74add1",
+    "Generic identity"  = "#fee090",
+    "Does not identify" = "#d73027",
+    "No response"       = "#bababa",
+    "No identity data"  = "#f5f5f5"
+  )) +
+  labs(
+    title    = "Alignment between mother tongue and indigenous identity",
+    subtitle = "idioma_mat vs p32_pueblos | 10,000-row sample",
+    x = "Share of speakers", y = NULL, fill = NULL
+  ) +
+  theme(legend.position = "bottom")
+```
+
+### Castellano speakers who self-identify as indigenous
+
+A meaningful share of Spanish mother-tongue speakers still self-identify with an indigenous group, reflecting language shift without loss of ethnic identity.
+
+```{r}
+#| label: castellano-identifiers
+cross |>
+  filter(
+    idioma_label == "Castellano",
+    !pueblos_label %in% c("No se autoidentifica", "Sin respuesta"),
+    !is.na(pueblos_label)
+  ) |>
+  count(pueblos_label, sort = TRUE) |>
+  mutate(
+    pct_of_castellano_speakers = round(
+      100 * n / sum(cross$idioma_label == "Castellano", na.rm = TRUE), 1
+    )
+  ) |>
+  rename(identity = pueblos_label)
+```
+
+Among Castellano speakers: \~19% (≈1,400 of the 7,400 in the sample) still self-identify as indigenous. Aymara and Quechua lead, but Chiquitano, Guaraní, Tacana, and Afroboliviano are also notable — groups from lowland regions where Spanish may have displaced indigenous languages more thoroughly.
+
+------------------------------------------------------------------------
+
+## Full-census language–identity alignment: proportions and counts
+
+The sample results above are based on 10,000 rows, leaving small groups with very few observations. The full 11.4M-person dataset is queried lazily via `arrow` — only the grouped counts are collected.
+
+```{r}
+#| label: full-cross-collect
+#| cache: true
+full_cross <- ds |>
+  group_by(idioma_mat, p32_pueblos) |>
+  summarise(n = n(), .groups = "drop") |>
+  collect()
+```
+
+```{r}
+#| label: full-alignment
+full_cross_decoded <- full_cross |>
+  mutate(
+    idioma_label  = idioma_cats$label[match(idioma_mat, idioma_cats$code)],
+    pueblos_label = pueblos_cats$label[match(p32_pueblos, pueblos_cats$code)]
+  )
+
+# Kabineña→Cavineño and Zamuco→Ayoreo are naming convention differences (same group),
+# so they are treated as matching in the classifier.
+classify_alignment2 <- function(idioma, pueblos) {
+  equiv <- c("Kabineña" = "Cavineño", "Zamuco" = "Ayoreo")
+  expected <- coalesce(equiv[idioma], idioma)
+  case_when(
+    str_detect(pueblos, fixed(expected, ignore_case = TRUE)) |
+      str_detect(expected, fixed(pueblos, ignore_case = TRUE))  ~ "Matching group",
+    pueblos == "No se autoidentifica"                           ~ "Does not identify",
+    pueblos == "Sin respuesta"                                  ~ "No response",
+    pueblos == "Otras declaraciones"                            ~ "Generic identity",
+    !is.na(pueblos)                                             ~ "Different group",
+    TRUE                                                        ~ "No identity data"
+  )
+}
+
+langs_with_castellano <- c(indigenous_langs, "Castellano")
+
+alignment_full <- full_cross_decoded |>
+  filter(!is.na(idioma_label), idioma_label %in% langs_with_castellano) |>
+  mutate(outcome = classify_alignment2(idioma_label, pueblos_label)) |>
+  group_by(idioma_label, outcome) |>
+  summarise(n = sum(n), .groups = "drop") |>
+  group_by(idioma_label) |>
+  mutate(total = sum(n), pct = round(100 * n / total, 1)) |>
+  ungroup()
+
+# Alias used in the count-plot chunks below
+alignment_full2 <- alignment_full
+
+alignment_full |>
+  select(idioma_label, outcome, pct, total) |>
+  pivot_wider(names_from = outcome, values_from = pct, values_fill = 0) |>
+  arrange(desc(total))
+```
+
+Key findings from the full census:
+
+-   **Kabineña** (893 speakers, 94% matching) and **Zamuco** (1,771 speakers, 83% matching) are naming convention differences: Kabineña = Cavineño and Zamuco = Ayoreo in the CTAI list.
+-   **Afroboliviano** (451 speakers): 99.8% matching — the tightest alignment of any group.
+-   **Tsimane´** (18,848 speakers): 95% matching, the highest rate among groups of meaningful size.
+-   **Quechua** (1.42M speakers): 66% match, 20% don't identify — widespread language retention without ethnic self-identification.
+-   **Castellano** (8.5M speakers): 23% (≈1.98M people) self-identify as indigenous despite Spanish being their mother tongue, representing language shift without loss of identity.
+-   **Kabineña** (893 speakers, 94% matching) and **Zamuco** (1,771 speakers, 83% matching) are naming convention differences: Kabineña = Cavineño and Zamuco = Ayoreo in the CTAI list.
+-   **Tsimane´** (18,848 speakers): 95% matching, the highest rate among groups of meaningful size.
+
+### Sub-ethnic identities among Quechua speakers
+
+Among Quechua speakers who identify with a *different* named group (\~57,000 people), the top categories are Andean pre-colonial ayllus and confederacies — groups whose members speak Quechua but resist the pan-ethnic label:
+
+```{r}
+#| label: quechua-different
+quechua_total <- alignment_full |>
+  filter(idioma_label == "Quechua") |>
+  pull(total) |>
+  first()
+
+full_cross_decoded |>
+  filter(
+    idioma_label == "Quechua",
+    !pueblos_label %in% c("No se autoidentifica", "Sin respuesta",
+                          "Otras declaraciones", "Quechua"),
+    !is.na(pueblos_label)
+  ) |>
+  group_by(pueblos_label) |>
+  summarise(n = sum(n), .groups = "drop") |>
+  mutate(pct_of_quechua_speakers = round(100 * n / quechua_total, 2)) |>
+  arrange(desc(n)) |>
+  head(15)
+```
+
+### Full-census alignment plots
+
+```{r}
+#| label: full-alignment-plot-setup
+outcome_levels <- c(
+  "Matching group", "Identifies as indigenous", "Different group",
+  "Generic identity", "Does not identify", "No response", "No identity data"
+)
+outcome_colors <- c(
+  "Matching group"           = "#2166ac",
+  "Identifies as indigenous" = "#74add1",
+  "Different group"          = "#74add1",
+  "Generic identity"         = "#fee090",
+  "Does not identify"        = "#d73027",
+  "No response"              = "#bababa",
+  "No identity data"         = "#f5f5f5"
+)
+
+# Build a shared ordered plot data frame
+make_plot_df <- function(outcome_map) {
+  alignment_full |>
+    mutate(
+      outcome_plot  = outcome_map[outcome],
+      outcome_plot  = if_else(
+        idioma_label == "Castellano" & outcome == "Different group",
+        outcome_map[["Identifies as indigenous"]],
+        outcome_plot
+      ),
+      is_castellano = idioma_label == "Castellano",
+      match_pct     = if_else(outcome == "Matching group", pct, 0)
+    ) |>
+    group_by(idioma_label) |>
+    mutate(sort_val = sum(match_pct)) |>
+    ungroup() |>
+    mutate(
+      idioma_label = fct_reorder(idioma_label, if_else(is_castellano, -Inf, sort_val))
+    )
+}
+
+label_data <- alignment_full |>
+  group_by(idioma_label) |>
+  summarise(total = first(total), .groups = "drop") |>
+  mutate(
+    is_castellano = idioma_label == "Castellano",
+    idioma_label  = fct_reorder(idioma_label, if_else(is_castellano, -Inf, 0))
+  )
+
+make_bar_plot <- function(df, lvls, cols, title, subtitle, x_label) {
+  df |>
+    mutate(outcome_plot = factor(outcome_plot, levels = lvls)) |>
+    ggplot(aes(x = pct / 100, y = idioma_label, fill = outcome_plot)) +
+    geom_col() +
+    geom_text(
+      data = label_data,
+      aes(x = 1.02, y = idioma_label, label = scales::comma(total)),
+      inherit.aes = FALSE, hjust = 0, size = 2.8
+    ) +
+    scale_x_continuous(
+      labels = scales::percent_format(),
+      expand = expansion(mult = c(0, 0.15))
+    ) +
+    scale_fill_manual(values = cols, drop = FALSE) +
+    labs(title = title, subtitle = subtitle, x = x_label, y = NULL, fill = NULL) +
+    theme_minimal(base_size = 11) +
+    theme(legend.position = "bottom")
+}
+```
+
+#### English
+
+```{r}
+#| label: full-alignment-plot-en
+#| fig-height: 8
+en_map <- c(
+  "Matching group"    = "Matching group",
+  "Different group"   = "Different group",
+  "Identifies as indigenous" = "Identifies as indigenous",
+  "Generic identity"  = "Generic identity",
+  "Does not identify" = "Does not identify",
+  "No response"       = "No response",
+  "No identity data"  = "No identity data"
+)
+
+make_bar_plot(
+  make_plot_df(en_map),
+  lvls     = outcome_levels,
+  cols     = outcome_colors,
+  title    = "Alignment between mother tongue and indigenous identity — full census",
+  subtitle = "idioma_mat vs p32_pueblos | n = 11,365,333 | numbers show total speakers",
+  x_label  = "Share of speakers"
+)
+```
+
+#### Spanish / Español
+
+```{r}
+#| label: full-alignment-plot-es
+#| fig-height: 8
+outcome_levels_es <- c(
+  "Grupo coincidente", "Se autoidentifica como indígena", "Grupo diferente",
+  "Identidad genérica", "No se autoidentifica", "Sin respuesta", "Sin datos de identidad"
+)
+outcome_colors_es <- c(
+  "Grupo coincidente"               = "#2166ac",
+  "Se autoidentifica como indígena" = "#74add1",
+  "Grupo diferente"                 = "#74add1",
+  "Identidad genérica"              = "#fee090",
+  "No se autoidentifica"            = "#d73027",
+  "Sin respuesta"                   = "#bababa",
+  "Sin datos de identidad"          = "#f5f5f5"
+)
+es_map <- c(
+  "Matching group"           = "Grupo coincidente",
+  "Different group"          = "Grupo diferente",
+  "Identifies as indigenous" = "Se autoidentifica como indígena",
+  "Generic identity"         = "Identidad genérica",
+  "Does not identify"        = "No se autoidentifica",
+  "No response"              = "Sin respuesta",
+  "No identity data"         = "Sin datos de identidad"
+)
+
+make_bar_plot(
+  make_plot_df(es_map),
+  lvls     = outcome_levels_es,
+  cols     = outcome_colors_es,
+  title    = "Alineación entre lengua materna e identidad indígena — censo completo",
+  subtitle = "idioma_mat vs p32_pueblos | n = 11.365.333 | números: total de hablantes",
+  x_label  = "Proporción de hablantes"
+)
+```
+
+------------------------------------------------------------------------
+
+## Full-census language–identity alignment: counts (aggregated)
+
+The same data as above, displayed as **population counts** rather than percentages, with all languages except Quechua, Aymara, Guaraní, and Castellano collapsed into "Other indigenous language" / "Otro idioma nativo".
+
+```{r}
+#| label: count-plot-setup
+keep_langs  <- c("Guaraní", "Aymara", "Quechua", "Castellano")
+
+count_df <- alignment_full2 |>
+  mutate(idioma_grp = if_else(idioma_label %in% keep_langs, idioma_label, "Other indigenous language")) |>
+  group_by(idioma_grp, outcome) |>
+  summarise(n = sum(n), .groups = "drop") |>
+  group_by(idioma_grp) |>
+  mutate(total = sum(n)) |>
+  ungroup()
+
+make_count_plot_df <- function(outcome_map, other_lbl) {
+  count_df |>
+    mutate(
+      outcome_plot = outcome_map[outcome],
+      outcome_plot = if_else(
+        idioma_grp == "Castellano" & outcome == "Different group",
+        outcome_map[["Identifies as indigenous"]],
+        outcome_plot
+      ),
+      is_castellano = idioma_grp == "Castellano",
+      match_n       = if_else(outcome == "Matching group", n, 0L),
+      idioma_grp    = if_else(idioma_grp == "Other indigenous language", other_lbl, idioma_grp)
+    ) |>
+    group_by(idioma_grp) |>
+    mutate(sort_val = sum(match_n)) |>
+    ungroup() |>
+    mutate(
+      idioma_grp = fct_reorder(idioma_grp, if_else(is_castellano, -Inf, as.double(sort_val)))
+    )
+}
+
+make_count_bar <- function(df, lvls, cols, title, subtitle, x_label) {
+  ggplot(df |> mutate(outcome_plot = factor(outcome_plot, levels = lvls)),
+         aes(x = n, y = idioma_grp, fill = outcome_plot)) +
+    geom_col() +
+    geom_text(
+      data = df |> group_by(idioma_grp) |> summarise(total = first(total)),
+      aes(x = total * 1.02, y = idioma_grp, label = scales::comma(total)),
+      inherit.aes = FALSE, hjust = 0, size = 3
+    ) +
+    scale_x_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.15))) +
+    scale_fill_manual(values = cols, drop = FALSE) +
+    labs(title = title, subtitle = subtitle, x = x_label, y = NULL, fill = NULL) +
+    theme_minimal(base_size = 11) +
+    theme(legend.position = "bottom")
+}
+```
+
+#### English (counts)
+
+```{r}
+#| label: count-plot-en
+#| fig-height: 5
+make_count_bar(
+  make_count_plot_df(en_map, "Other indigenous language"),
+  lvls     = outcome_levels,
+  cols     = outcome_colors,
+  title    = "Mother tongue and indigenous identity — full census (counts)",
+  subtitle = "idioma_mat vs p32_pueblos | n = 11,365,333",
+  x_label  = "Number of persons"
+)
+```
+
+#### Spanish / Español (conteos)
+
+```{r}
+#| label: count-plot-es
+#| fig-height: 5
+make_count_bar(
+  make_count_plot_df(es_map, "Otro idioma nativo"),
+  lvls     = outcome_levels_es,
+  cols     = outcome_colors_es,
+  title    = "Lengua materna e identidad indígena — censo completo (conteos)",
+  subtitle = "idioma_mat vs p32_pueblos | n = 11.365.333",
+  x_label  = "Número de personas"
+)
+```
+
+Amend
+
+------------------------------------------------------------------------
+
+## Age, language shift, and indigenous identity
+
+A key question is whether younger generations are less likely to both speak an indigenous language *and* self-identify as indigenous. The full census allows us to examine this cleanly, again via lazy aggregation.
+
+```{r}
+#| label: age-cross-collect
+#| cache: true
+age_cross <- ds |>
+  filter(!is.na(p26_edad), !is.na(idioma_mat), !is.na(p32_pueblos)) |>
+  mutate(
+    age_group = case_when(
+      p26_edad <  15 ~ "0–14",
+      p26_edad <  30 ~ "15–29",
+      p26_edad <  45 ~ "30–44",
+      p26_edad <  60 ~ "45–59",
+      TRUE           ~ "60+"
+    )
+  ) |>
+  group_by(idioma_mat, p32_pueblos, age_group) |>
+  summarise(n = n(), .groups = "drop") |>
+  collect() |>
+  mutate(
+    idioma_label  = idioma_cats$label[match(idioma_mat, idioma_cats$code)],
+    pueblos_label = pueblos_cats$label[match(p32_pueblos, pueblos_cats$code)],
+    age_group     = factor(age_group, levels = c("0–14","15–29","30–44","45–59","60+"))
+  )
+```
+
+### Self-identification rate by age
+
+The share of the population that self-identifies as indigenous declines markedly in younger cohorts, from 49% of 60+ year-olds to 28% of 0–14 year-olds.
+
+```{r}
+#| label: id-rate-by-age
+total_by_age <- age_cross |>
+  group_by(age_group) |>
+  summarise(total_pop = sum(n), .groups = "drop")
+
+identifies_by_age <- age_cross |>
+  filter(!pueblos_label %in% c("No se autoidentifica", "Sin respuesta"),
+         !is.na(pueblos_label)) |>
+  group_by(age_group) |>
+  summarise(n_identifies = sum(n), .groups = "drop")
+
+total_by_age |>
+  left_join(identifies_by_age, by = "age_group") |>
+  mutate(pct_identifies = round(100 * n_identifies / total_pop, 1))
+```
+
+### Mother tongue of self-identifiers, by age
+
+Among those who *do* self-identify, the proportion who also speak an indigenous mother tongue drops sharply with youth: from 76% in the 60+ cohort to just 22% in the 0–14 cohort. The inverse — self-identifying as indigenous while having Castellano as mother tongue — rises from 24% among elders to 72% among children.
+
+```{r}
+#| label: lang-by-age
+indigenous_identifies <- age_cross |>
+  filter(!pueblos_label %in% c("No se autoidentifica", "Sin respuesta"),
+         !is.na(pueblos_label)) |>
+  mutate(
+    lang_group = case_when(
+      idioma_label == "Castellano" ~ "Castellano",
+      !is.na(idioma_label) & idioma_label != "No habla" ~ "Indigenous language",
+      TRUE ~ "Other/unknown"
+    )
+  ) |>
+  group_by(age_group, lang_group) |>
+  summarise(n = sum(n), .groups = "drop") |>
+  group_by(age_group) |>
+  mutate(total = sum(n), pct = round(100 * n / total, 1)) |>
+  ungroup()
+
+indigenous_identifies |>
+  filter(lang_group %in% c("Castellano", "Indigenous language")) |>
+  select(age_group, lang_group, n, pct)
+```
+
+```{r}
+#| label: age-language-plot
+#| fig-height: 6
+library(patchwork)
+
+p_rate <- total_by_age |>
+  left_join(identifies_by_age, by = "age_group") |>
+  mutate(pct = n_identifies / total_pop) |>
+  ggplot(aes(x = age_group, y = pct, group = 1)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 3) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(0, 0.55)) +
+  labs(
+    title = "A. Indigenous self-identification rate by age group",
+    x = "Age group", y = "% of age group"
+  ) +
+  theme_minimal(base_size = 11)
+
+p_lang <- indigenous_identifies |>
+  filter(lang_group %in% c("Castellano", "Indigenous language")) |>
+  mutate(
+    lang_group = factor(lang_group, levels = c("Indigenous language", "Castellano")),
+    pct_val    = pct / 100
+  ) |>
+  ggplot(aes(x = age_group, y = pct_val, fill = lang_group)) +
+  geom_col() +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(
+    values = c("Indigenous language" = "#2166ac", "Castellano" = "#d73027"),
+    name = "Mother tongue"
+  ) +
+  labs(
+    title = "B. Mother tongue of indigenous self-identifiers, by age",
+    x = "Age group", y = "% of self-identifiers"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+
+p_rate / p_lang
+```
+
+These two panels together capture a generational divergence: identity is partially decoupling from language. The 0–14 cohort has the lowest self-identification rate of any age group AND, among those who do identify, the highest share with Castellano as mother tongue. This is consistent with ongoing language shift — Spanish replacing indigenous languages across generations — while ethnic identity persists, albeit at lower rates, among some families.
+
+A caveat: the 0–14 cohort's responses are partially proxy-reported by parents, which may introduce different patterns from adult self-reporting.
+
+------------------------------------------------------------------------
+
+## Daily language use vs mother tongue (idioma_mayor_uso × idioma_mat)
+
+`idioma_mayor_uso` records the language used most frequently in daily life. Cross-referencing it against `idioma_mat` (mother tongue) reveals whether people who *learned* an indigenous language still *use* it, or have shifted to Spanish in daily practice.
+
+```{r}
+#| label: lang-use-collect
+#| cache: true
+lang_use <- ds |>
+  filter(!is.na(idioma_mat), !is.na(idioma_mayor_uso)) |>
+  group_by(idioma_mat, idioma_mayor_uso) |>
+  summarise(n = n(), .groups = "drop") |>
+  collect() |>
+  mutate(
+    mat_label = idioma_cats$label[match(idioma_mat,       idioma_cats$code)],
+    uso_label = idioma_cats$label[match(idioma_mayor_uso, idioma_cats$code)]
+  )
+
+lang_use_age <- ds |>
+  filter(!is.na(idioma_mat), !is.na(idioma_mayor_uso)) |>
+  mutate(
+    age_group = case_when(
+      p26_edad <  15 ~ "0–14",
+      p26_edad <  30 ~ "15–29",
+      p26_edad <  45 ~ "30–44",
+      p26_edad <  60 ~ "45–59",
+      TRUE           ~ "60+"
+    )
+  ) |>
+  group_by(idioma_mat, idioma_mayor_uso, age_group) |>
+  summarise(n = n(), .groups = "drop") |>
+  collect() |>
+  mutate(
+    mat_label = idioma_cats$label[match(idioma_mat,       idioma_cats$code)],
+    uso_label = idioma_cats$label[match(idioma_mayor_uso, idioma_cats$code)],
+    age_group = factor(age_group, levels = c("0–14","15–29","30–44","45–59","60+"))
+  )
+```
+
+### Overall retention rates
+
+For each indigenous-language mother-tongue group, the share who still use that same language as their primary daily language:
+
+```{r}
+#| label: retention-table
+lang_use |>
+  filter(mat_label %in% indigenous_langs) |>
+  mutate(
+    uso_group = case_when(
+      uso_label == mat_label    ~ "Same indigenous language",
+      uso_label == "Castellano" ~ "Castellano",
+      uso_label %in% indigenous_langs ~ "Different indigenous language",
+      uso_label == "No habla"   ~ "No habla",
+      TRUE                      ~ "Other/foreign"
+    )
+  ) |>
+  group_by(mat_label, uso_group) |>
+  summarise(n = sum(n), .groups = "drop") |>
+  group_by(mat_label) |>
+  mutate(total = sum(n), pct = round(100 * n / total, 1)) |>
+  ungroup() |>
+  select(mat_label, uso_group, pct, total) |>
+  pivot_wider(names_from = uso_group, values_from = pct, values_fill = 0) |>
+  arrange(desc(`Same indigenous language`))
+```
+
+Retention is very high (\>90%) for geographically remote or numerically small groups (Chácobo, Tsimane´, Weenhayek, Zamuco, Uru-Chipaya). The two largest groups, Quechua (69%) and Aymara (65%), show substantially more shift to Castellano. Mojeño Ignaciano has the lowest retention at 43%.
+
+### Retention by age: four largest languages
+
+```{r}
+#| label: retention-by-age-facet
+#| fig-height: 5
+big_four <- c("Quechua", "Aymara", "Guaraní", "Tsimane´")
+
+lang_use_age |>
+  filter(mat_label %in% big_four) |>
+  mutate(
+    uso_group = case_when(
+      uso_label == mat_label    ~ "Same language",
+      uso_label == "Castellano" ~ "Castellano",
+      TRUE                      ~ "Other"
+    ),
+    uso_group = factor(uso_group, levels = c("Same language", "Other", "Castellano"))
+  ) |>
+  group_by(mat_label, age_group, uso_group) |>
+  summarise(n = sum(n), .groups = "drop") |>
+  group_by(mat_label, age_group) |>
+  mutate(pct = n / sum(n)) |>
+  ungroup() |>
+  ggplot(aes(x = age_group, y = pct, fill = uso_group)) +
+  geom_col() +
+  facet_wrap(~ mat_label, nrow = 1) +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(
+    values = c("Same language" = "#2166ac", "Other" = "#92c5de", "Castellano" = "#d73027"),
+    name = "Daily language"
+  ) +
+  labs(
+    title    = "Daily language use among indigenous mother-tongue speakers, by age",
+    subtitle = "idioma_mayor_uso | full census",
+    x = "Age group", y = "Share of speakers"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    legend.position = "bottom",
+    axis.text.x     = element_text(angle = 45, hjust = 1),
+    strip.text      = element_text(face = "bold")
+  )
+```
+
+For Quechua and Aymara, the relationship with age is non-monotonic: retention is relatively high among children (0–14), dips sharply in the 15–29 and 30–44 cohorts (working-age adults most exposed to Spanish in school and the labour market), then partially recovers among older adults. This could reflect a lifecycle effect (adults shift to Spanish for work, revert in later life) or a cohort effect (older generations genuinely retained more). Tsimane´ shows near-flat, near-complete retention across all age groups — consistent with geographic isolation. Guaraní has a more monotonic decline with age, with its youngest speakers at 94% retention.
+
+### Heatmap: retention across all 16 groups and all age cohorts
+
+```{r}
+#| label: retention-heatmap
+#| fig-height: 6
+lang_use_age |>
+  filter(mat_label %in% indigenous_langs) |>
+  group_by(mat_label, age_group) |>
+  summarise(
+    total    = sum(n),
+    n_retain = sum(n[which(uso_label == mat_label)]),
+    pct      = round(100 * n_retain / total, 1),
+    .groups  = "drop"
+  ) |>
+  group_by(mat_label) |>
+  mutate(overall = sum(n_retain) / sum(total)) |>
+  ungroup() |>
+  mutate(mat_label = fct_reorder(mat_label, overall)) |>
+  ggplot(aes(x = age_group, y = mat_label, fill = pct)) +
+  geom_tile(color = "white", linewidth = 0.4) +
+  geom_text(aes(label = paste0(pct, "%")), size = 2.8) +
+  scale_fill_distiller(palette = "RdYlBu", direction = 1,
+                       name = "% using same\nlanguage daily",
+                       limits = c(0, 100)) +
+  labs(
+    title    = "Language retention: % using mother tongue as primary daily language",
+    subtitle = "idioma_mayor_uso vs idioma_mat | full census",
+    x = "Age group", y = NULL
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(panel.grid = element_blank())
+```
+
+Notable patterns in the heatmap:
+
+-   **Tacana** and **Mojeño Ignaciano** have strikingly low retention among 60+ speakers (31% and 49% respectively), suggesting these languages have been under pressure for several generations, not just recently.
+-   **Gwarayu** shows a dip in middle-age cohorts (30–44: 68%) but higher retention among both the young (93%) and old (85%) — possibly reflecting a revitalisation effort or migration patterns.
+-   The 0–14 column is generally higher than 15–29 across most languages. This likely reflects that young children who speak an indigenous language at home have not yet entered school or the labour market, where Spanish dominates.
+
+------------------------------------------------------------------------
+
+## Retention by stratum: Urban/Rural and indigenous identity
+
+The aggregates below are pre-collected and joined with the Vivienda file's `urbrur` column (1 = Urbana, 2 = Rural), then re-aggregated by stratum. All persona rows joined perfectly (0 NA dwelling keys).
+
+```{r}
+#| label: strat-load
+BASE_DATA <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+
+lang_use_urban    <- readRDS(file.path(BASE_DATA, "lang_use_urban.rds"))
+lang_use_identity <- readRDS(file.path(BASE_DATA, "lang_use_identity.rds"))
+
+# Helper: compute retention rate per language per stratum
+compute_retention <- function(df, strat_col) {
+  df |>
+    mutate(
+      mat_label = idioma_cats$label[match(idioma_mat,       idioma_cats$code)],
+      uso_label = idioma_cats$label[match(idioma_mayor_uso, idioma_cats$code)]
+    ) |>
+    filter(mat_label %in% indigenous_langs) |>
+    group_by(across(all_of(c("mat_label", strat_col)))) |>
+    summarise(
+      total    = sum(n),
+      n_retain = sum(n[which(mat_label == uso_label)]),
+      pct      = round(100 * n_retain / total, 1),
+      .groups  = "drop"
+    )
+}
+
+# Language order by overall retention (from lang_use)
+lang_order <- lang_use |>
+  mutate(
+    mat_label = idioma_cats$label[match(idioma_mat, idioma_cats$code)],
+    uso_label = idioma_cats$label[match(idioma_mayor_uso, idioma_cats$code)]
+  ) |>
+  filter(mat_label %in% indigenous_langs) |>
+  group_by(mat_label) |>
+  summarise(overall = sum(n[which(mat_label == uso_label)]) / sum(n), .groups = "drop") |>
+  arrange(overall)
+
+ret_urban <- compute_retention(lang_use_urban, "urbrur_label") |>
+  mutate(mat_label = factor(mat_label, levels = lang_order$mat_label))
+
+ret_identity <- compute_retention(lang_use_identity, "identifies") |>
+  mutate(mat_label = factor(mat_label, levels = lang_order$mat_label))
+```
+
+```{r}
+#| label: strat-plots
+#| fig-height: 6
+#| fig-width: 11
+p_urban <- ggplot(ret_urban,
+       aes(x = pct, y = mat_label, color = urbrur_label, shape = urbrur_label)) +
+  geom_line(aes(group = mat_label), color = "grey70", linewidth = 0.6) +
+  geom_point(size = 3) +
+  scale_x_continuous(limits = c(0, 100), labels = \(x) paste0(x, "%")) +
+  scale_color_manual(values = c("Urban" = "#d73027", "Rural" = "#2166ac"), name = NULL) +
+  scale_shape_manual(values = c("Urban" = 16, "Rural" = 15), name = NULL) +
+  labs(
+    title    = "Language retention: Urban vs Rural",
+    subtitle = "% using mother tongue as primary daily language",
+    x = "Retention rate", y = NULL
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+
+p_identity <- ggplot(ret_identity,
+       aes(x = pct, y = mat_label, color = identifies, shape = identifies)) +
+  geom_line(aes(group = mat_label), color = "grey70", linewidth = 0.6) +
+  geom_point(size = 3) +
+  scale_x_continuous(limits = c(0, 100), labels = \(x) paste0(x, "%")) +
+  scale_color_manual(
+    values = c("Self-identifies" = "#2166ac", "Does not identify" = "#d73027"), name = NULL
+  ) +
+  scale_shape_manual(
+    values = c("Self-identifies" = 16, "Does not identify" = 15), name = NULL
+  ) +
+  labs(
+    title    = "Language retention: Indigenous self-identifiers vs non-identifiers",
+    subtitle = "% using mother tongue as primary daily language",
+    x = "Retention rate", y = NULL
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+
+p_urban | p_identity
+```
+
+**Urban/Rural** (left panel): The urban/rural gap is large and consistent. Rural speakers retain their mother tongue at much higher rates — the gap exceeds 35 percentage points for Quechua, Aymara, Guaraní, Kabineña, and Tsimane´. The two exceptions are Ese Ejja (similar in both, \~90%) and Mojeño Ignaciano (urban slightly *higher* than rural at 45% vs 37%, both low). Uru-Chipaya has one of the largest gaps (rural 96%, urban 40%), consistent with a small, isolated community whose urban migrants shift rapidly to Spanish.
+
+**Indigenous self-identification** (right panel): Self-identifiers consistently retain their mother tongue at higher rates than non-identifiers. The gap is most pronounced for languages with lower overall retention — Guaraní (82% vs 41%), Aymara (67% vs 48%), Kabineña (78% vs 12%). Among the most isolated groups (Tsimane´, Weenhayek, Zamuco, Uru-Chipaya), retention is near-complete for self-identifiers but remains moderately high even among non-identifiers, suggesting those communities have little exit from the language regardless of how individuals choose to identify.
+
+------------------------------------------------------------------------
+
+## Retention heatmaps by stratum and age
+
+The four heatmaps below replicate the overall retention-by-age heatmap for each of the two stratification pairs. Pre-collected aggregates are loaded from disk.
+
+```{r}
+#| label: strat-age-load
+lang_age_urban    <- readRDS(file.path(BASE_DATA, "lang_age_urban.rds"))
+lang_age_identity <- readRDS(file.path(BASE_DATA, "lang_age_identity.rds"))
+
+retention_heatmap_data <- function(df, strat_col) {
+  df |>
+    mutate(
+      mat_label = idioma_cats$label[match(idioma_mat,       idioma_cats$code)],
+      uso_label = idioma_cats$label[match(idioma_mayor_uso, idioma_cats$code)]
+    ) |>
+    filter(mat_label %in% indigenous_langs) |>
+    group_by(across(all_of(c("mat_label", strat_col, "age_group")))) |>
+    summarise(
+      total    = sum(n),
+      n_retain = sum(n[which(mat_label == uso_label)]),
+      pct      = round(100 * n_retain / total, 1),
+      .groups  = "drop"
+    ) |>
+    mutate(mat_label = factor(mat_label, levels = lang_order$mat_label))
+}
+
+hm_urban    <- retention_heatmap_data(lang_age_urban,    "urbrur_label")
+hm_identity <- retention_heatmap_data(lang_age_identity, "identifies")
+
+make_heatmap <- function(data, strat_col, strat_val, title, show_y = TRUE) {
+  d <- data |> filter(.data[[strat_col]] == strat_val)
+  p <- ggplot(d, aes(x = age_group, y = mat_label, fill = pct)) +
+    geom_tile(color = "white", linewidth = 0.4) +
+    geom_text(aes(label = paste0(pct, "%")), size = 2.5) +
+    scale_fill_distiller(palette = "RdYlBu", direction = 1,
+                         limits = c(0, 100), name = "Retention\n(%)") +
+    labs(title = title, x = NULL, y = NULL) +
+    theme_minimal(base_size = 10) +
+    theme(panel.grid  = element_blank(),
+          plot.title  = element_text(size = 10, face = "bold"),
+          legend.key.height = unit(0.8, "cm"))
+  if (!show_y) p <- p + theme(axis.text.y = element_blank())
+  p
+}
+```
+
+### Rural vs Urban
+
+```{r}
+#| label: heatmap-urban-rural
+#| fig-height: 7
+#| fig-width: 11
+(make_heatmap(hm_urban, "urbrur_label", "Rural", "Rural", show_y = TRUE) |
+ make_heatmap(hm_urban, "urbrur_label", "Urban", "Urban", show_y = FALSE)) +
+  plot_annotation(
+    title    = "Language retention by age: Rural vs Urban",
+    subtitle = "% of indigenous mother-tongue speakers using same language daily | full census",
+    theme    = theme(plot.title    = element_text(face = "bold"),
+                     plot.subtitle = element_text(size = 9))
+  ) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "right")
+```
+
+Urban retention is substantially lower for nearly every language and every age group. The most dramatic contrasts are in Quechua (rural 0–14: 90%, urban 0–14: 52%) and Aymara (rural 0–14: 87%, urban 0–14: 41%), showing that urban language shift begins early in childhood. Tsimane´ is the notable exception: even urban Tsimane´ children retain at 77%, suggesting that community ties or residential clustering maintain the language even in city settings. In rural areas, most languages show the expected U-shape (high retention among children and elders, dip among working-age adults); the urban panels flatten this pattern, with low retention sustained across all ages.
+
+Tacana and Mojeño Ignaciano stand out: both show near-zero or very low retention among 45–59 year-olds in rural areas (60% and 29% respectively), indicating that language shift among these groups pre-dates urbanisation and reflects longer-term community-level decline.
+
+### Self-identifies vs Does not identify
+
+```{r}
+#| label: heatmap-identity
+#| fig-height: 7
+#| fig-width: 11
+(make_heatmap(hm_identity, "identifies", "Self-identifies",  "Self-identifies",   show_y = TRUE) |
+ make_heatmap(hm_identity, "identifies", "Does not identify","Does not identify", show_y = FALSE)) +
+  plot_annotation(
+    title    = "Language retention by age: Self-identifies as indigenous vs Does not identify",
+    subtitle = "% of indigenous mother-tongue speakers using same language daily | full census",
+    theme    = theme(plot.title    = element_text(face = "bold"),
+                     plot.subtitle = element_text(size = 9))
+  ) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "right")
+```
+
+Self-identifiers consistently retain at higher rates. The "Does not identify" panel shows substantially lower retention across all languages, but the pattern is noisier — several cells for smaller languages (Kabineña, Tacana, Mojeño Ignaciano) are based on very small counts and should be interpreted with caution.
+
+For the largest groups, the gap is substantial and age-graded. Among Quechua speakers aged 15–29: self-identifiers retain at 66%, non-identifiers at 47%. For Aymara: 65% vs 45%. This suggests that ethnic identity and daily language use are mutually reinforcing — people who have shifted to Spanish in daily life are also less likely to self-identify, and vice versa — though causality cannot be established from cross-sectional data.
+
+Among the most isolated groups (Tsimane´, Weenhayek, Zamuco, Uru-Chipaya), the "Does not identify" column remains relatively high (60–100%), consistent with community-level language maintenance that is independent of individual identity choices. Kabineña non-identifiers aged 30–44 and 45–59 show 0% retention (very small n), while self-identifiers in those cohorts retain at 47–80% — the sharpest identity-linked divergence in the dataset.

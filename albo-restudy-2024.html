@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bolivia Census 2024 — Albó indicators of indigenous identity and language</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="albo-restudy-2024_files/libs/clipboard/clipboard.min.js"></script>
+<script src="albo-restudy-2024_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="albo-restudy-2024_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="albo-restudy-2024_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="albo-restudy-2024_files/libs/quarto-html/popper.min.js"></script>
+<script src="albo-restudy-2024_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="albo-restudy-2024_files/libs/quarto-html/anchor.min.js"></script>
+<link href="albo-restudy-2024_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="albo-restudy-2024_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="albo-restudy-2024_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="albo-restudy-2024_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="albo-restudy-2024_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bolivia Census 2024 — Albó indicators of indigenous identity and language</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Xavier Albó’s framework for studying indigenous identity distinguishes between several dimensions that the census allows us to measure independently:</p>
+<ol type="1">
+<li><strong>Self-identification</strong> with an indigenous or Afrobolivian group (Q1)</li>
+<li><strong>Language match</strong>: whether the language(s) a person speaks correspond to their declared identity (Q2)</li>
+<li><strong>Childhood language</strong>: whether they learned an indigenous language as a child (Q3)</li>
+<li><strong>Castellano use</strong>: whether they speak Spanish as any of their current languages (C)</li>
+</ol>
+<p>These four boolean variables — <code>albo_q1</code>, <code>albo_q2</code>, <code>albo_q3</code>, <code>albo_c</code> — are pre-computed for all 11,365,333 persons and saved as <code>albo_vars.rds</code>. This document describes their construction, validates them against the raw census variables, and begins exploring what they reveal.</p>
+<hr>
+</section>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(arrow)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>DATA_DIR <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/Censo 2024/base_datos_csv_2024"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>CENSO_DIR <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/Censo 2024"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="lookup-tables" class="level3">
+<h3 class="anchored" data-anchor-id="lookup-tables">Lookup tables</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p32_pueblos: CTAI-consolidated identity groups (58 categories + 98/99)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pueblos_cats <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>code, <span class="sc">~</span>label,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>,  <span class="st">"Afroboliviano"</span>,         <span class="dv">2</span>,  <span class="st">"Araona"</span>,            <span class="dv">3</span>,  <span class="st">"Aymara"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dv">4</span>,  <span class="st">"Ayoreo"</span>,                <span class="dv">5</span>,  <span class="st">"Baure"</span>,             <span class="dv">6</span>,  <span class="st">"Canichana"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dv">7</span>,  <span class="st">"Cavineño"</span>,              <span class="dv">8</span>,  <span class="st">"Cayubaba"</span>,          <span class="dv">9</span>,  <span class="st">"Chácobo"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dv">10</span>, <span class="st">"Charka Qhara Qhara"</span>,   <span class="dv">11</span>,  <span class="st">"Chichas"</span>,          <span class="dv">12</span>,  <span class="st">"Chiquitano"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="dv">13</span>, <span class="st">"Chuwi"</span>,                <span class="dv">14</span>,  <span class="st">"Ese Ejja"</span>,          <span class="dv">15</span>,  <span class="st">"Guaraní"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="dv">16</span>, <span class="st">"Guarasu´we"</span>,           <span class="dv">17</span>,  <span class="st">"Gwarayu"</span>,           <span class="dv">18</span>,  <span class="st">"Itonama"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="dv">19</span>, <span class="st">"Jach'a Carangas"</span>,      <span class="dv">20</span>,  <span class="st">"Jalq'a"</span>,            <span class="dv">21</span>,  <span class="st">"Joaquiniano"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="dv">22</span>, <span class="st">"Kallawaya"</span>,            <span class="dv">23</span>,  <span class="st">"Killacas"</span>,           <span class="dv">24</span>,  <span class="st">"Leco"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="dv">25</span>, <span class="st">"Lípez"</span>,                <span class="dv">26</span>,  <span class="st">"Lupaca"</span>,             <span class="dv">27</span>,  <span class="st">"Machineri"</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="dv">28</span>, <span class="st">"Maropa"</span>,               <span class="dv">29</span>,  <span class="st">"Mojeño"</span>,             <span class="dv">30</span>,  <span class="st">"Mojeño Ignaciano"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="dv">31</span>, <span class="st">"Mojeño Trinitario"</span>,    <span class="dv">32</span>,  <span class="st">"Moré"</span>,               <span class="dv">33</span>,  <span class="st">"Mosetén"</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="dv">34</span>, <span class="st">"Movima"</span>,               <span class="dv">35</span>,  <span class="st">"Pacahuara"</span>,          <span class="dv">36</span>,  <span class="st">"Pakajaqi"</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="dv">37</span>, <span class="st">"Paunaca"</span>,              <span class="dv">38</span>,  <span class="st">"Puquina"</span>,            <span class="dv">39</span>,  <span class="st">"Qhapaq Uma Suyu"</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="dv">40</span>, <span class="st">"Quechua"</span>,              <span class="dv">41</span>,  <span class="st">"Qullas"</span>,             <span class="dv">42</span>,  <span class="st">"Raqaypampa"</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="dv">43</span>, <span class="st">"Sirionó"</span>,              <span class="dv">44</span>,  <span class="st">"Sora"</span>,               <span class="dv">45</span>,  <span class="st">"Tacana"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="dv">46</span>, <span class="st">"Tapiete"</span>,              <span class="dv">47</span>,  <span class="st">"Toromona"</span>,           <span class="dv">48</span>,  <span class="st">"Tsimane´"</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="dv">49</span>, <span class="st">"Uru-Chipaya"</span>,          <span class="dv">50</span>,  <span class="st">"Weenhayek"</span>,          <span class="dv">51</span>,  <span class="st">"Yaminawa"</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="dv">52</span>, <span class="st">"Yampara"</span>,              <span class="dv">53</span>,  <span class="st">"Yuqui"</span>,              <span class="dv">54</span>,  <span class="st">"Yurakaré"</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="dv">55</span>, <span class="st">"Quechua - Aymara"</span>,     <span class="dv">56</span>,  <span class="st">"Más de una descripción"</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="dv">57</span>, <span class="st">"Otras declaraciones"</span>,  <span class="dv">58</span>,  <span class="st">"Otros pueblos indígenas extranjeros"</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="dv">98</span>, <span class="st">"No se autoidentifica"</span>, <span class="dv">99</span>,  <span class="st">"Sin respuesta"</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># idioma_mat / idioma_mayor_uso / p33x spoken-language codes</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>idioma_cats <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>code, <span class="sc">~</span>label,</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>     <span class="dv">1</span>, <span class="st">"Araona"</span>,              <span class="dv">2</span>, <span class="st">"Aymara"</span>,               <span class="dv">3</span>, <span class="st">"Baure"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>     <span class="dv">4</span>, <span class="st">"Bésiro"</span>,              <span class="dv">5</span>, <span class="st">"Canichana"</span>,             <span class="dv">6</span>, <span class="st">"Castellano"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>     <span class="dv">7</span>, <span class="st">"Kabineña"</span>,            <span class="dv">8</span>, <span class="st">"Cayubaba"</span>,              <span class="dv">9</span>, <span class="st">"Chácobo"</span>,</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="dv">10</span>, <span class="st">"Tsimane´"</span>,           <span class="dv">11</span>, <span class="st">"Ese Ejja"</span>,             <span class="dv">12</span>, <span class="st">"Guaraní"</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="dv">13</span>, <span class="st">"Guarasu´we"</span>,         <span class="dv">14</span>, <span class="st">"Gwarayu"</span>,              <span class="dv">15</span>, <span class="st">"Itonama"</span>,</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    <span class="dv">16</span>, <span class="st">"Leco"</span>,               <span class="dv">17</span>, <span class="st">"Kallawaya"</span>,            <span class="dv">18</span>, <span class="st">"Machineri"</span>,</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="dv">19</span>, <span class="st">"Maropa"</span>,             <span class="dv">20</span>, <span class="st">"Mojeño Ignaciano"</span>,     <span class="dv">21</span>, <span class="st">"Mojeño Trinitario"</span>,</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="dv">22</span>, <span class="st">"Moré"</span>,               <span class="dv">23</span>, <span class="st">"Mosetén"</span>,              <span class="dv">24</span>, <span class="st">"Movima"</span>,</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="dv">25</span>, <span class="st">"Pacahuara"</span>,          <span class="dv">26</span>, <span class="st">"Puquina"</span>,              <span class="dv">27</span>, <span class="st">"Quechua"</span>,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="dv">28</span>, <span class="st">"Sirionó"</span>,            <span class="dv">29</span>, <span class="st">"Tacana"</span>,               <span class="dv">30</span>, <span class="st">"Tapiete"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="dv">32</span>, <span class="st">"Uru-Chipaya"</span>,        <span class="dv">33</span>, <span class="st">"Weenhayek"</span>,            <span class="dv">34</span>, <span class="st">"Yaminawa"</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    <span class="dv">35</span>, <span class="st">"Yuqui"</span>,              <span class="dv">36</span>, <span class="st">"Yurakaré"</span>,             <span class="dv">37</span>, <span class="st">"Zamuco"</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="dv">94</span>, <span class="st">"Afroboliviano"</span>,     <span class="dv">991</span>, <span class="st">"Otras declaraciones"</span>, <span class="dv">992</span>, <span class="st">"Otro idioma extranjero"</span>,</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>   <span class="dv">994</span>, <span class="st">"Lenguaje de señas"</span>, <span class="dv">998</span>, <span class="st">"No habla"</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+</section>
+<section id="variable-construction" class="level2">
+<h2 class="anchored" data-anchor-id="variable-construction">Variable construction</h2>
+<section id="source-variables" class="level3">
+<h3 class="anchored" data-anchor-id="source-variables">Source variables</h3>
+<p>The four Albó indicators are derived from the following raw census variables:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Raw variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>p32_pueblo_per</code></td>
+<td>Indigenous self-identification: 1 = Sí, 2 = No, 9 = Sin respuesta</td>
+</tr>
+<tr class="even">
+<td><code>p32_pueblos</code></td>
+<td>CTAI-reconciled identity group (58 categories); derived from <code>p32_pueblo_cod</code></td>
+</tr>
+<tr class="odd">
+<td><code>p331_idiohab1_cod</code></td>
+<td>First spoken language (current use)</td>
+</tr>
+<tr class="even">
+<td><code>p332_idiohab2_cod</code></td>
+<td>Second spoken language (current use)</td>
+</tr>
+<tr class="odd">
+<td><code>p333_idiohab3_cod</code></td>
+<td>Third spoken language (current use)</td>
+</tr>
+<tr class="even">
+<td><code>p341_idiomat_cod</code></td>
+<td>Language learned as a child (NA if respondent answered “No” to p34)</td>
+</tr>
+<tr class="odd">
+<td><code>p342_idiomat_no</code></td>
+<td>= 1 when respondent did not learn any language as a child</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="indicator-definitions" class="level3">
+<h3 class="anchored" data-anchor-id="indicator-definitions">Indicator definitions</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Shown for documentation; albo_vars.rds is the pre-computed output.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_q1: Self-identifies with an indigenous or Afrobolivian group</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_q1 &lt;- p32_pueblo_per == 1</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_q2: Speaks a language that corresponds to their declared identity.</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># For named groups with a known language (e.g. Quechua → code 27, Chiquitano</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># → Bésiro code 4, Ayoreo → Zamuco code 37), albo_q2 is TRUE when any of</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># p331/p332/p333 is in that language's code set.</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># For groups that use the "any indigenous language" rule — generic identities</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># (Otras declaraciones = 57, Quechua-Aymara = 55, Más de una descripción = 56)</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># AND groups with no separate census language (Afroboliviano = 1, Chuwi = 13,</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Paunaca = 37, Toromona = 47, foreign groups = 58) — albo_q2 is TRUE when</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># any of p331/p332/p333 is an indigenous language code (1–5 or 7–37).</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Always FALSE if albo_q1 is FALSE.</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_q3: Learned an indigenous language as a child</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_q3 &lt;- !is.na(p341_idiomat_cod) &amp; p341_idiomat_cod != 6 &amp; p341_idiomat_cod != 999</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_c: Speaks Castellano (as any of their current languages)</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co"># albo_c &lt;- any of p331/p332/p333 == 6</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="notable-mapping-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="notable-mapping-decisions">Notable mapping decisions</h3>
+<p>Two naming-convention differences affect the language–identity crosswalk:</p>
+<ul>
+<li><strong>Kabineña</strong> (code 7 in <code>idioma_mat</code>) = <strong>Cavineño</strong> (code 7 in <code>p32_pueblos</code>): same community, different orthographic conventions.</li>
+<li><strong>Zamuco</strong> (code 37 in <code>idioma_mat</code>) = <strong>Ayoreo</strong> (code 4 in <code>p32_pueblos</code>): Zamuco is the ISO language name; Ayoreo is the ethnonym used in identity contexts.</li>
+</ul>
+<p>Several Andean sub-ethnic identities map to the major Andean languages:</p>
+<ul>
+<li>Quechua sub-groups (Charka Qhara Qhara, Chichas, Jalq’a, Yampara, Lípez, Raqaypampa) → Quechua (27)</li>
+<li>Aymara sub-groups (Qullas, Killacas, Jach’a Carangas, Lupaca, Pakajaqi, Sora, Qhapaq Uma Suyu) → Aymara (2)</li>
+<li>Mojeño (29, the generic parent code) → Mojeño Ignaciano (20) or Trinitario (21)</li>
+<li>Joaquiniano (21) → Maropa (19)</li>
+<li>Chiquitano (12) → Bésiro (4)</li>
+<li>Ayoreo (4) → Zamuco (37)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="load-pre-computed-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-pre-computed-data">Load pre-computed data</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>albo_vars     <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">file.path</span>(DATA_DIR, <span class="st">"albo_vars.rds"</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>cel_geo       <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">file.path</span>(DATA_DIR, <span class="st">"cel_geo.rds"</span>))</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Also load the pre-drawn 10k sample for any person-level illustration</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>persona_sample <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">file.path</span>(DATA_DIR, <span class="st">"Persona_CPV-2024_sample10k.rds"</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"albo_vars dimensions:"</span>, <span class="fu">nrow</span>(albo_vars), <span class="st">"×"</span>, <span class="fu">ncol</span>(albo_vars), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>albo_vars dimensions: 11365333 × 10 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(albo_vars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 11,365,333
+Columns: 10
+$ idep    &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ iprov   &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ imun    &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ urbrur  &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ albo_q1 &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FAL…
+$ albo_q2 &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FAL…
+$ albo_q3 &lt;lgl&gt; FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FA…
+$ albo_c  &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TR…
+$ cel     &lt;dbl&gt; 1, 2, 0, 0, 6, 5, 6, 0, 5, 0, 0, 0, 0, 0, 4, 6, 0, 2, 5, 7, 2,…
+$ cel_q2  &lt;lgl&gt; TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE…</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="prevalence-of-each-indicator" class="level2">
+<h2 class="anchored" data-anchor-id="prevalence-of-each-indicator">Prevalence of each indicator</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Q1: Self-identifies (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(<span class="fu">mean</span>(albo_q1) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Q2: Language match (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(<span class="fu">mean</span>(albo_q2) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>),</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Q3: Indigenous childhood language (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(<span class="fu">mean</span>(albo_q3) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>),</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">C: Speaks Castellano (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(<span class="fu">mean</span>(albo_c) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"Indicator"</span>, <span class="at">values_to =</span> <span class="st">"Value"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 2
+  Indicator                                  Value
+  &lt;chr&gt;                                      &lt;dbl&gt;
+1 n                                     11365333  
+2 Q1: Self-identifies (%)                     37.9
+3 Q2: Language match (%)                      25.9
+4 Q3: Indigenous childhood language (%)       21.3
+5 C: Speaks Castellano (%)                    92.6</code></pre>
+</div>
+</div>
+<p>Among the full population of 11.4M:</p>
+<ul>
+<li><strong>37.9%</strong> self-identify as indigenous or Afrobolivian (Q1).</li>
+<li><strong>25.9%</strong> speak a language corresponding to their declared identity (Q2). The gap between Q1 and Q2 (≈12 pp) represents self-identifiers who have shifted to Spanish.</li>
+<li><strong>21.3%</strong> learned an indigenous language as a child (Q3). This is slightly lower than Q2, which is consistent: some people who learned an indigenous language as a child no longer speak it as adults, while some people speak an indigenous language now but via a path other than home transmission.</li>
+<li><strong>92.6%</strong> speak Castellano as one of their current languages (C).</li>
+</ul>
+<hr>
+</section>
+<section id="cross-tabulation-of-the-four-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="cross-tabulation-of-the-four-indicators">Cross-tabulation of the four indicators</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(albo_q1, albo_q2, albo_q3, albo_c) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">2</span>),</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">c</span>(albo_q1, albo_q2, albo_q3, albo_c), \(x) <span class="fu">if_else</span>(x, <span class="st">"Y"</span>, <span class="st">"N"</span>))</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Q1 =</span> albo_q1, <span class="at">Q2 =</span> albo_q2, <span class="at">Q3 =</span> albo_q3, <span class="at">C =</span> albo_c) <span class="sc">|&gt;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12 × 6
+   Q1    Q2    Q3    C           n   pct
+   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt;
+ 1 N     N     N     Y     6222999 54.8 
+ 2 Y     Y     Y     Y     1539123 13.5 
+ 3 Y     N     N     Y     1244819 11.0 
+ 4 Y     Y     N     Y     1067481  9.39
+ 5 N     N     Y     Y      398595  3.51
+ 6 N     N     N     N      337176  2.97
+ 7 Y     Y     Y     N      314790  2.77
+ 8 N     N     Y     N      104079  0.92
+ 9 Y     N     Y     Y       54261  0.48
+10 Y     N     N     N       52586  0.46
+11 Y     Y     N     N       24523  0.22
+12 Y     N     Y     N        4901  0.04</code></pre>
+</div>
+</div>
+<p>The four most common profiles are:</p>
+<ol type="1">
+<li><strong>N/N/N/Y</strong> — Does not identify, no indigenous language (child or adult), speaks Spanish. The large non-indigenous majority.</li>
+<li><strong>Y/Y/Y/Y</strong> — Identifies, speaks the identity language, learned it as a child, and also speaks Spanish. The “full” indigenous profile with Spanish bilingualism.</li>
+<li><strong>Y/N/N/Y</strong> — Identifies but has shifted to Spanish on all three dimensions. Identity without language.</li>
+<li><strong>Y/Y/Y/N</strong> — Identifies, speaks the identity language, learned it as a child, no Spanish. Monolingual indigenous speakers.</li>
+</ol>
+<hr>
+</section>
+<section id="albó-typology" class="level2">
+<h2 class="anchored" data-anchor-id="albó-typology">Albó typology</h2>
+<p>A simplified typology collapses Q1–Q3 into mutually exclusive categories, following Albó’s original framing:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="ot">&lt;-</span> albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">albo_type =</span> <span class="fu">case_when</span>(</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>      <span class="sc">!</span>albo_q1              <span class="sc">~</span> <span class="st">"No identity"</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>      albo_q1 <span class="sc">&amp;</span>  albo_q2 <span class="sc">&amp;</span>  albo_q3 <span class="sc">~</span> <span class="st">"Identity + language + childhood"</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>      albo_q1 <span class="sc">&amp;</span>  albo_q2 <span class="sc">&amp;</span> <span class="sc">!</span>albo_q3 <span class="sc">~</span> <span class="st">"Identity + language (no childhood)"</span>,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>      albo_q1 <span class="sc">&amp;</span> <span class="sc">!</span>albo_q2 <span class="sc">&amp;</span>  albo_q3 <span class="sc">~</span> <span class="st">"Identity + childhood (no current language)"</span>,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>      albo_q1 <span class="sc">&amp;</span> <span class="sc">!</span>albo_q2 <span class="sc">&amp;</span> <span class="sc">!</span>albo_q3 <span class="sc">~</span> <span class="st">"Identity only"</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">albo_type =</span> <span class="fu">factor</span>(albo_type, <span class="at">levels =</span> <span class="fu">c</span>(</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Identity + language + childhood"</span>,</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Identity + language (no childhood)"</span>,</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Identity + childhood (no current language)"</span>,</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Identity only"</span>,</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>      <span class="st">"No identity"</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(albo_type) <span class="sc">|&gt;</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(albo_type)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 3
+  albo_type                                        n   pct
+  &lt;fct&gt;                                        &lt;int&gt; &lt;dbl&gt;
+1 Identity + language + childhood            1853913  16.3
+2 Identity + language (no childhood)         1092004   9.6
+3 Identity + childhood (no current language)   59162   0.5
+4 Identity only                              1297405  11.4
+5 No identity                                7062849  62.1</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>type_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Identity + language + childhood"</span>          <span class="ot">=</span> <span class="st">"#2166ac"</span>,</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Identity + language (no childhood)"</span>       <span class="ot">=</span> <span class="st">"#74add1"</span>,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Identity + childhood (no current language)"</span> <span class="ot">=</span> <span class="st">"#fee090"</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Identity only"</span>                            <span class="ot">=</span> <span class="st">"#f46d43"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"No identity"</span>                              <span class="ot">=</span> <span class="st">"#d9d9d9"</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(albo_type) <span class="sc">|&gt;</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct      =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n),</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">albo_type =</span> <span class="fu">fct_rev</span>(albo_type)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> albo_type, <span class="at">fill =</span> albo_type)) <span class="sc">+</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(pct <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)),</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(),</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.12</span>))) <span class="sc">+</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> type_colors) <span class="sc">+</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Albó typology of indigenous identity and language"</span>,</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024 | n = 11,365,333"</span>,</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/typology-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="typology-by-urbanrural" class="level2">
+<h2 class="anchored" data-anchor-id="typology-by-urbanrural">Typology by urban/rural</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>urbrur_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Urban"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"Rural"</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">urbrur_label =</span> urbrur_labels[<span class="fu">as.character</span>(urbrur)]) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(urbrur_label)) <span class="sc">|&gt;</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(urbrur_label, albo_type) <span class="sc">|&gt;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(urbrur_label) <span class="sc">|&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">albo_type =</span> <span class="fu">fct_rev</span>(albo_type)) <span class="sc">|&gt;</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> albo_type, <span class="at">fill =</span> albo_type)) <span class="sc">+</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(pct <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)),</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(),</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.14</span>))) <span class="sc">+</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> type_colors) <span class="sc">+</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> urbrur_label) <span class="sc">+</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Albó typology by urban/rural"</span>,</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024"</span>,</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/typology-urban-rural-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="typology-by-department" class="level2">
+<h2 class="anchored" data-anchor-id="typology-by-department">Typology by department</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dept_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Chuquisaca"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"La Paz"</span>, <span class="st">"3"</span> <span class="ot">=</span> <span class="st">"Cochabamba"</span>,</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span> <span class="ot">=</span> <span class="st">"Oruro"</span>,      <span class="st">"5"</span> <span class="ot">=</span> <span class="st">"Potosí"</span>, <span class="st">"6"</span> <span class="ot">=</span> <span class="st">"Tarija"</span>,</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span> <span class="ot">=</span> <span class="st">"Santa Cruz"</span>, <span class="st">"8"</span> <span class="ot">=</span> <span class="st">"Beni"</span>,   <span class="st">"9"</span> <span class="ot">=</span> <span class="st">"Pando"</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept =</span> dept_labels[<span class="fu">as.character</span>(idep)]) <span class="sc">|&gt;</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(dept, albo_type) <span class="sc">|&gt;</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(dept) <span class="sc">|&gt;</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept, albo_type, pct) <span class="sc">|&gt;</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> albo_type, <span class="at">values_from =</span> pct, <span class="at">values_fill =</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="st">`</span><span class="at">Identity + language + childhood</span><span class="st">`</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 6
+  dept      Identity + language …¹ Identity + language …² Identity + childhood…³
+  &lt;chr&gt;                      &lt;dbl&gt;                  &lt;dbl&gt;                  &lt;dbl&gt;
+1 Pando                        3.1                    4.5                    0.3
+2 Tarija                       3.7                    2.5                    0.2
+3 Santa Cr…                    4.6                    2.9                    0.3
+4 Beni                         5.8                    3.2                    0.3
+5 Oruro                       16.5                   16.6                    0.5
+6 La Paz                      20                     15.5                    0.9
+7 Cochabam…                   24.4                   11.3                    0.4
+8 Chuquisa…                   25.5                    9.1                    0.3
+9 Potosí                      36                     13.8                    0.7
+# ℹ abbreviated names: ¹​`Identity + language + childhood`,
+#   ²​`Identity + language (no childhood)`,
+#   ³​`Identity + childhood (no current language)`
+# ℹ 2 more variables: `Identity only` &lt;dbl&gt;, `No identity` &lt;dbl&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept =</span> dept_labels[<span class="fu">as.character</span>(idep)]) <span class="sc">|&gt;</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(dept, albo_type) <span class="sc">|&gt;</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(dept) <span class="sc">|&gt;</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct  =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n),</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">dept =</span> <span class="fu">fct_reorder</span>(dept, pct <span class="sc">*</span> (albo_type <span class="sc">==</span> <span class="st">"Identity + language + childhood"</span>), sum)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> dept, <span class="at">fill =</span> albo_type)) <span class="sc">+</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> type_colors) <span class="sc">+</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Albó typology by department"</span>,</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024"</span>,</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">fill =</span> <span class="cn">NULL</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>) <span class="sc">+</span></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">nrow =</span> <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/typology-dept-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="q2-among-self-identifiers-language-match-rate-by-identity-group" class="level2">
+<h2 class="anchored" data-anchor-id="q2-among-self-identifiers-language-match-rate-by-identity-group">Q2 among self-identifiers: language match rate by identity group</h2>
+<p>Among those who self-identify (albo_q1 = TRUE), what share also speaks the language of their declared identity (albo_q2 = TRUE)? This is loaded from the person file to get group-level counts.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>ds <span class="ot">&lt;-</span> <span class="fu">open_dataset</span>(</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">file.path</span>(DATA_DIR, <span class="st">"Persona_CPV-2024.csv"</span>),</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">format =</span> <span class="st">"csv"</span>, <span class="at">delimiter =</span> <span class="st">";"</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>q2_by_group <span class="ot">&lt;-</span> ds <span class="sc">|&gt;</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(p32_pueblo_per <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(p32_pueblos,</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>         p331_idiohab1_cod, p332_idiohab2_cod, p333_idiohab3_cod) <span class="sc">|&gt;</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">collect</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-derive albo_q2 logic per group using the same crosswalk as albo_vars.rds</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (See variable construction section for mapping rules)</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>indigenous_idioma_codes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">7</span><span class="sc">:</span><span class="dv">37</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>generic_groups_v2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">13</span>L, <span class="dv">37</span>L, <span class="dv">47</span>L, <span class="dv">55</span>L, <span class="dv">56</span>L, <span class="dv">57</span>L, <span class="dv">58</span>L)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Flat lookup: one row per (pueblos_code, single idioma_code) pairing</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>lookup_flat <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>pueblos_code, <span class="sc">~</span>idioma_code,</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="dv">2</span>L,  <span class="dv">1</span>L,   <span class="co"># Araona</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="dv">3</span>L,  <span class="dv">2</span>L,   <span class="co"># Aymara</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  <span class="dv">4</span>L,  <span class="dv">37</span>L,  <span class="co"># Ayoreo -&gt; Zamuco</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="dv">5</span>L,  <span class="dv">3</span>L,   <span class="co"># Baure</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  <span class="dv">6</span>L,  <span class="dv">5</span>L,   <span class="co"># Canichana</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>  <span class="dv">7</span>L,  <span class="dv">7</span>L,   <span class="co"># Cavineño = Kabineña</span></span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  <span class="dv">8</span>L,  <span class="dv">8</span>L,   <span class="co"># Cayubaba</span></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>  <span class="dv">9</span>L,  <span class="dv">9</span>L,   <span class="co"># Chácobo</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>  <span class="dv">10</span>L, <span class="dv">27</span>L,  <span class="co"># Charka Qhara Qhara -&gt; Quechua</span></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>  <span class="dv">11</span>L, <span class="dv">27</span>L,  <span class="co"># Chichas -&gt; Quechua</span></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>  <span class="dv">12</span>L, <span class="dv">4</span>L,   <span class="co"># Chiquitano -&gt; Bésiro</span></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>  <span class="dv">14</span>L, <span class="dv">11</span>L,  <span class="co"># Ese Ejja</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>  <span class="dv">15</span>L, <span class="dv">12</span>L,  <span class="co"># Guaraní</span></span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>  <span class="dv">16</span>L, <span class="dv">13</span>L,  <span class="co"># Guarasu'we</span></span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>  <span class="dv">17</span>L, <span class="dv">14</span>L,  <span class="co"># Gwarayu</span></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>  <span class="dv">18</span>L, <span class="dv">15</span>L,  <span class="co"># Itonama</span></span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>  <span class="dv">19</span>L, <span class="dv">2</span>L,   <span class="co"># Jach'a Carangas -&gt; Aymara</span></span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>  <span class="dv">20</span>L, <span class="dv">27</span>L,  <span class="co"># Jalq'a -&gt; Quechua</span></span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a>  <span class="dv">21</span>L, <span class="dv">19</span>L,  <span class="co"># Joaquiniano -&gt; Maropa</span></span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>  <span class="dv">22</span>L, <span class="dv">17</span>L,  <span class="co"># Kallawaya</span></span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>  <span class="dv">23</span>L, <span class="dv">2</span>L,   <span class="co"># Killacas -&gt; Aymara</span></span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>  <span class="dv">24</span>L, <span class="dv">16</span>L,  <span class="co"># Leco</span></span>
+<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a>  <span class="dv">25</span>L, <span class="dv">27</span>L,  <span class="co"># Lípez -&gt; Quechua</span></span>
+<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a>  <span class="dv">26</span>L, <span class="dv">2</span>L,   <span class="co"># Lupaca -&gt; Aymara</span></span>
+<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a>  <span class="dv">27</span>L, <span class="dv">18</span>L,  <span class="co"># Machineri</span></span>
+<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>  <span class="dv">28</span>L, <span class="dv">19</span>L,  <span class="co"># Maropa</span></span>
+<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>  <span class="dv">29</span>L, <span class="dv">20</span>L,  <span class="co"># Mojeño -&gt; Mojeño Ignaciano</span></span>
+<span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a>  <span class="dv">29</span>L, <span class="dv">21</span>L,  <span class="co"># Mojeño -&gt; Mojeño Trinitario</span></span>
+<span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a>  <span class="dv">30</span>L, <span class="dv">20</span>L,  <span class="co"># Mojeño Ignaciano</span></span>
+<span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a>  <span class="dv">31</span>L, <span class="dv">21</span>L,  <span class="co"># Mojeño Trinitario</span></span>
+<span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a>  <span class="dv">32</span>L, <span class="dv">22</span>L,  <span class="co"># Moré</span></span>
+<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a>  <span class="dv">33</span>L, <span class="dv">23</span>L,  <span class="co"># Mosetén</span></span>
+<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a>  <span class="dv">34</span>L, <span class="dv">24</span>L,  <span class="co"># Movima</span></span>
+<span id="cb20-43"><a href="#cb20-43" aria-hidden="true" tabindex="-1"></a>  <span class="dv">35</span>L, <span class="dv">25</span>L,  <span class="co"># Pacahuara</span></span>
+<span id="cb20-44"><a href="#cb20-44" aria-hidden="true" tabindex="-1"></a>  <span class="dv">36</span>L, <span class="dv">2</span>L,   <span class="co"># Pakajaqi -&gt; Aymara</span></span>
+<span id="cb20-45"><a href="#cb20-45" aria-hidden="true" tabindex="-1"></a>  <span class="dv">38</span>L, <span class="dv">26</span>L,  <span class="co"># Puquina</span></span>
+<span id="cb20-46"><a href="#cb20-46" aria-hidden="true" tabindex="-1"></a>  <span class="dv">39</span>L, <span class="dv">2</span>L,   <span class="co"># Qhapaq Uma Suyu -&gt; Aymara</span></span>
+<span id="cb20-47"><a href="#cb20-47" aria-hidden="true" tabindex="-1"></a>  <span class="dv">40</span>L, <span class="dv">27</span>L,  <span class="co"># Quechua</span></span>
+<span id="cb20-48"><a href="#cb20-48" aria-hidden="true" tabindex="-1"></a>  <span class="dv">41</span>L, <span class="dv">2</span>L,   <span class="co"># Qullas -&gt; Aymara</span></span>
+<span id="cb20-49"><a href="#cb20-49" aria-hidden="true" tabindex="-1"></a>  <span class="dv">42</span>L, <span class="dv">27</span>L,  <span class="co"># Raqaypampa -&gt; Quechua</span></span>
+<span id="cb20-50"><a href="#cb20-50" aria-hidden="true" tabindex="-1"></a>  <span class="dv">43</span>L, <span class="dv">28</span>L,  <span class="co"># Sirionó</span></span>
+<span id="cb20-51"><a href="#cb20-51" aria-hidden="true" tabindex="-1"></a>  <span class="dv">44</span>L, <span class="dv">2</span>L,   <span class="co"># Sora -&gt; Aymara</span></span>
+<span id="cb20-52"><a href="#cb20-52" aria-hidden="true" tabindex="-1"></a>  <span class="dv">45</span>L, <span class="dv">29</span>L,  <span class="co"># Tacana</span></span>
+<span id="cb20-53"><a href="#cb20-53" aria-hidden="true" tabindex="-1"></a>  <span class="dv">46</span>L, <span class="dv">30</span>L,  <span class="co"># Tapiete</span></span>
+<span id="cb20-54"><a href="#cb20-54" aria-hidden="true" tabindex="-1"></a>  <span class="dv">48</span>L, <span class="dv">10</span>L,  <span class="co"># Tsimane'</span></span>
+<span id="cb20-55"><a href="#cb20-55" aria-hidden="true" tabindex="-1"></a>  <span class="dv">49</span>L, <span class="dv">32</span>L,  <span class="co"># Uru-Chipaya</span></span>
+<span id="cb20-56"><a href="#cb20-56" aria-hidden="true" tabindex="-1"></a>  <span class="dv">50</span>L, <span class="dv">33</span>L,  <span class="co"># Weenhayek</span></span>
+<span id="cb20-57"><a href="#cb20-57" aria-hidden="true" tabindex="-1"></a>  <span class="dv">51</span>L, <span class="dv">34</span>L,  <span class="co"># Yaminawa</span></span>
+<span id="cb20-58"><a href="#cb20-58" aria-hidden="true" tabindex="-1"></a>  <span class="dv">52</span>L, <span class="dv">27</span>L,  <span class="co"># Yampara -&gt; Quechua</span></span>
+<span id="cb20-59"><a href="#cb20-59" aria-hidden="true" tabindex="-1"></a>  <span class="dv">53</span>L, <span class="dv">35</span>L,  <span class="co"># Yuqui</span></span>
+<span id="cb20-60"><a href="#cb20-60" aria-hidden="true" tabindex="-1"></a>  <span class="dv">54</span>L, <span class="dv">36</span>L,  <span class="co"># Yurakaré</span></span>
+<span id="cb20-61"><a href="#cb20-61" aria-hidden="true" tabindex="-1"></a>  <span class="dv">55</span>L, <span class="dv">2</span>L,   <span class="co"># Quechua-Aymara -&gt; Aymara</span></span>
+<span id="cb20-62"><a href="#cb20-62" aria-hidden="true" tabindex="-1"></a>  <span class="dv">55</span>L, <span class="dv">27</span>L   <span class="co"># Quechua-Aymara -&gt; Quechua</span></span>
+<span id="cb20-63"><a href="#cb20-63" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-64"><a href="#cb20-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-65"><a href="#cb20-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Build lookup matrix (99 pueblos codes × 38 idioma codes)</span></span>
+<span id="cb20-66"><a href="#cb20-66" aria-hidden="true" tabindex="-1"></a>valid_match_q2 <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="cn">FALSE</span>, <span class="at">nrow =</span> <span class="dv">99</span>L, <span class="at">ncol =</span> <span class="dv">38</span>L)</span>
+<span id="cb20-67"><a href="#cb20-67" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(lookup_flat))) {</span>
+<span id="cb20-68"><a href="#cb20-68" aria-hidden="true" tabindex="-1"></a>  pc <span class="ot">&lt;-</span> lookup_flat<span class="sc">$</span>pueblos_code[i]</span>
+<span id="cb20-69"><a href="#cb20-69" aria-hidden="true" tabindex="-1"></a>  ic <span class="ot">&lt;-</span> lookup_flat<span class="sc">$</span>idioma_code[i]</span>
+<span id="cb20-70"><a href="#cb20-70" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (ic <span class="sc">&lt;=</span> <span class="dv">38</span>L) valid_match_q2[pc, ic] <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb20-71"><a href="#cb20-71" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb20-72"><a href="#cb20-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Generic + Afro + unmatched groups: any indigenous language (codes 1-5, 7-37)</span></span>
+<span id="cb20-73"><a href="#cb20-73" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (g <span class="cf">in</span> generic_groups_v2) {</span>
+<span id="cb20-74"><a href="#cb20-74" aria-hidden="true" tabindex="-1"></a>  valid_match_q2[g, indigenous_idioma_codes[indigenous_idioma_codes <span class="sc">&lt;=</span> <span class="dv">38</span>L]] <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb20-75"><a href="#cb20-75" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb20-76"><a href="#cb20-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-77"><a href="#cb20-77" aria-hidden="true" tabindex="-1"></a>p32  <span class="ot">&lt;-</span> q2_by_group<span class="sc">$</span>p32_pueblos</span>
+<span id="cb20-78"><a href="#cb20-78" aria-hidden="true" tabindex="-1"></a>l1   <span class="ot">&lt;-</span> q2_by_group<span class="sc">$</span>p331_idiohab1_cod</span>
+<span id="cb20-79"><a href="#cb20-79" aria-hidden="true" tabindex="-1"></a>l2   <span class="ot">&lt;-</span> q2_by_group<span class="sc">$</span>p332_idiohab2_cod</span>
+<span id="cb20-80"><a href="#cb20-80" aria-hidden="true" tabindex="-1"></a>l3   <span class="ot">&lt;-</span> q2_by_group<span class="sc">$</span>p333_idiohab3_cod</span>
+<span id="cb20-81"><a href="#cb20-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-82"><a href="#cb20-82" aria-hidden="true" tabindex="-1"></a>p32s <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(p32) <span class="sc">|</span> p32 <span class="sc">&gt;</span> <span class="dv">99</span>L, <span class="dv">0</span>L, p32)</span>
+<span id="cb20-83"><a href="#cb20-83" aria-hidden="true" tabindex="-1"></a>l1s  <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(l1)  <span class="sc">|</span> l1  <span class="sc">&gt;</span> <span class="dv">38</span>L, <span class="dv">0</span>L, l1)</span>
+<span id="cb20-84"><a href="#cb20-84" aria-hidden="true" tabindex="-1"></a>l2s  <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(l2)  <span class="sc">|</span> l2  <span class="sc">&gt;</span> <span class="dv">38</span>L, <span class="dv">0</span>L, l2)</span>
+<span id="cb20-85"><a href="#cb20-85" aria-hidden="true" tabindex="-1"></a>l3s  <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(l3)  <span class="sc">|</span> l3  <span class="sc">&gt;</span> <span class="dv">38</span>L, <span class="dv">0</span>L, l3)</span>
+<span id="cb20-86"><a href="#cb20-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-87"><a href="#cb20-87" aria-hidden="true" tabindex="-1"></a>has <span class="ot">&lt;-</span> p32s <span class="sc">&gt;</span> <span class="dv">0</span>L</span>
+<span id="cb20-88"><a href="#cb20-88" aria-hidden="true" tabindex="-1"></a>q2v <span class="ot">&lt;-</span> <span class="fu">logical</span>(<span class="fu">nrow</span>(q2_by_group))</span>
+<span id="cb20-89"><a href="#cb20-89" aria-hidden="true" tabindex="-1"></a>q2v[has] <span class="ot">&lt;-</span> valid_match_q2[<span class="fu">cbind</span>(p32s[has], <span class="fu">pmax</span>(l1s[has], <span class="dv">1</span>L))]</span>
+<span id="cb20-90"><a href="#cb20-90" aria-hidden="true" tabindex="-1"></a>q2v[has] <span class="ot">&lt;-</span> q2v[has] <span class="sc">|</span> (l2s[has] <span class="sc">&gt;</span> <span class="dv">0</span>L <span class="sc">&amp;</span> valid_match_q2[<span class="fu">cbind</span>(p32s[has], <span class="fu">pmax</span>(l2s[has], <span class="dv">1</span>L))])</span>
+<span id="cb20-91"><a href="#cb20-91" aria-hidden="true" tabindex="-1"></a>q2v[has] <span class="ot">&lt;-</span> q2v[has] <span class="sc">|</span> (l3s[has] <span class="sc">&gt;</span> <span class="dv">0</span>L <span class="sc">&amp;</span> valid_match_q2[<span class="fu">cbind</span>(p32s[has], <span class="fu">pmax</span>(l3s[has], <span class="dv">1</span>L))])</span>
+<span id="cb20-92"><a href="#cb20-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-93"><a href="#cb20-93" aria-hidden="true" tabindex="-1"></a>q2_by_group <span class="sc">|&gt;</span></span>
+<span id="cb20-94"><a href="#cb20-94" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb20-95"><a href="#cb20-95" aria-hidden="true" tabindex="-1"></a>    <span class="at">pueblos_label =</span> pueblos_cats<span class="sc">$</span>label[<span class="fu">match</span>(p32_pueblos, pueblos_cats<span class="sc">$</span>code)],</span>
+<span id="cb20-96"><a href="#cb20-96" aria-hidden="true" tabindex="-1"></a>    <span class="at">albo_q2       =</span> q2v</span>
+<span id="cb20-97"><a href="#cb20-97" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb20-98"><a href="#cb20-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pueblos_label) <span class="sc">|&gt;</span></span>
+<span id="cb20-99"><a href="#cb20-99" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb20-100"><a href="#cb20-100" aria-hidden="true" tabindex="-1"></a>    <span class="at">n        =</span> <span class="fu">n</span>(),</span>
+<span id="cb20-101"><a href="#cb20-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_q2     =</span> <span class="fu">sum</span>(albo_q2),</span>
+<span id="cb20-102"><a href="#cb20-102" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_q2   =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n_q2 <span class="sc">/</span> n, <span class="dv">1</span>),</span>
+<span id="cb20-103"><a href="#cb20-103" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups  =</span> <span class="st">"drop"</span></span>
+<span id="cb20-104"><a href="#cb20-104" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb20-105"><a href="#cb20-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(pueblos_label),</span>
+<span id="cb20-106"><a href="#cb20-106" aria-hidden="true" tabindex="-1"></a>         <span class="sc">!</span>pueblos_label <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"No se autoidentifica"</span>, <span class="st">"Sin respuesta"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb20-107"><a href="#cb20-107" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb20-108"><a href="#cb20-108" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">60</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 57 × 4
+   pueblos_label                             n    n_q2 pct_q2
+   &lt;chr&gt;                                 &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;
+ 1 Quechua                             1646811 1366157   83  
+ 2 Aymara                              1595045 1073487   67.3
+ 3 Otras declaraciones                  544984  319905   58.7
+ 4 Guaraní                              103712   56633   54.6
+ 5 Chiquitano                            98983    5244    5.3
+ 6 Chichas                               29561   13327   45.1
+ 7 Afroboliviano                         25168    6417   25.5
+ 8 Tsimane´                              22343   18897   84.6
+ 9 Charka Qhara Qhara                    20323   16710   82.2
+10 Gwarayu                               20154    9065   45  
+11 Tacana                                19847    3402   17.1
+12 Mojeño Trinitario                     19354    2973   15.4
+13 Leco                                  19110    2212   11.6
+14 Kallawaya                             15384     225    1.5
+15 Movima                                10654     683    6.4
+16 Mojeño Ignaciano                       9076    1074   11.8
+17 Jach'a Carangas                        8299    3310   39.9
+18 Yurakaré                               6480    1986   30.6
+19 Jalq'a                                 6241    5749   92.1
+20 Mojeño                                 6109     600    9.8
+21 Itonama                                5612     298    5.3
+22 Weenhayek                              5588    4942   88.4
+23 Quechua - Aymara                       5526    3904   70.6
+24 Más de una descripción                 5492    1623   29.6
+25 Cavineño                               5344    2049   38.3
+26 Yampara                                4383    3898   88.9
+27 Mosetén                                4099    1766   43.1
+28 Uru-Chipaya                            3822    2462   64.4
+29 Killacas                               3812    1245   32.7
+30 Lípez                                  2922    2077   71.1
+31 Maropa                                 2797     486   17.4
+32 Pakajaqi                               2715    1084   39.9
+33 Qullas                                 2449    2170   88.6
+34 Raqaypampa                             2330    2239   96.1
+35 Joaquiniano                            1992       0    0  
+36 Puquina                                1944     181    9.3
+37 Ese Ejja                               1927    1523   79  
+38 Ayoreo                                 1890    1559   82.5
+39 Baure                                  1618      93    5.7
+40 Chácobo                                1530    1273   83.2
+41 Cayubaba                               1064      43    4  
+42 Lupaca                                 1031     918   89  
+43 Otros pueblos indígenas extranjeros     943     209   22.2
+44 Canichana                               865      33    3.8
+45 Sirionó                                 722     386   53.5
+46 Chuwi                                   495     486   98.2
+47 Yuqui                                   478     358   74.9
+48 Sora                                    453      79   17.4
+49 Yaminawa                                228     138   60.5
+50 Moré                                    212     108   50.9
+51 Guarasu´we                              149       2    1.3
+52 Araona                                  147      98   66.7
+53 Tapiete                                 104      64   61.5
+54 Machineri                                72      31   43.1
+55 Pacahuara                                70      31   44.3
+56 Toromona                                 14       1    7.1
+57 Paunaca                                   7       4   57.1</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="q3-childhood-language-acquisition" class="level2">
+<h2 class="anchored" data-anchor-id="q3-childhood-language-acquisition">Q3: Childhood language acquisition</h2>
+<p>albo_q3 captures whether the respondent learned an indigenous language as a child (<code>p341_idiomat_cod</code> not NA, not 6 = Castellano, not 999 = Sin respuesta).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Among self-identifiers: what share learned an indigenous language as a child?</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(albo_q1) <span class="sc">|&gt;</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">n      =</span> <span class="fu">n</span>(),</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_q3 =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> <span class="fu">mean</span>(albo_q3), <span class="dv">1</span>),</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">albo_q1 =</span> <span class="fu">if_else</span>(albo_q1, <span class="st">"Self-identifies"</span>, <span class="st">"Does not identify"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  albo_q1                 n pct_q3
+  &lt;chr&gt;               &lt;int&gt;  &lt;dbl&gt;
+1 Does not identify 7062849    7.1
+2 Self-identifies   4302484   44.5</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># How do Q2 (current language match) and Q3 (childhood language) diverge?</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(albo_q1) <span class="sc">|&gt;</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(albo_q2, albo_q3) <span class="sc">|&gt;</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct      =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>),</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">label_q2 =</span> <span class="fu">if_else</span>(albo_q2, <span class="st">"Speaks identity language"</span>, <span class="st">"Does not speak identity language"</span>),</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">label_q3 =</span> <span class="fu">if_else</span>(albo_q3, <span class="st">"Learned indigenous</span><span class="sc">\n</span><span class="st">language as child"</span>, <span class="st">"Did not learn</span><span class="sc">\n</span><span class="st">as child"</span>)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(label_q2, label_q3, n, pct) <span class="sc">|&gt;</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  label_q2                         label_q3                              n   pct
+  &lt;chr&gt;                            &lt;chr&gt;                             &lt;int&gt; &lt;dbl&gt;
+1 Speaks identity language         "Learned indigenous\nlanguage a… 1.85e6  43.1
+2 Does not speak identity language "Did not learn\nas child"        1.30e6  30.2
+3 Speaks identity language         "Did not learn\nas child"        1.09e6  25.4
+4 Does not speak identity language "Learned indigenous\nlanguage a… 5.92e4   1.4</code></pre>
+</div>
+</div>
+<p>The most notable cell is self-identifiers who <strong>learned</strong> an indigenous language as a child (Q3 = TRUE) but <strong>no longer</strong> speak the corresponding identity language daily (Q2 = FALSE): this is the clearest signal of post-childhood language shift — a person who was raised in an indigenous-language household but has since shifted to Spanish.</p>
+<hr>
+</section>
+<section id="castellano-albo_c-by-group" class="level2">
+<h2 class="anchored" data-anchor-id="castellano-albo_c-by-group">Castellano (albo_c) by group</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Castellano use by Albó typology</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(albo_type) <span class="sc">|&gt;</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">n      =</span> <span class="fu">n</span>(),</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_c  =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> <span class="fu">mean</span>(albo_c), <span class="dv">1</span>),</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 3
+  albo_type                                        n pct_c
+  &lt;fct&gt;                                        &lt;int&gt; &lt;dbl&gt;
+1 Identity + language + childhood            1853913  83  
+2 Identity + language (no childhood)         1092004  97.8
+3 Identity + childhood (no current language)   59162  91.7
+4 Identity only                              1297405  95.9
+5 No identity                                7062849  93.8</code></pre>
+</div>
+</div>
+<p>The share speaking Castellano is near-universal (&gt;97%) even among self- identifiers who speak their identity language and learned it as a child. The only group where Castellano use is notably lower is “Identity + language + childhood” — i.e., people with the deepest indigenous-language profile — which still shows ~83% Castellano use, consistent with widespread functional bilingualism.</p>
+<hr>
+<hr>
+</section>
+<section id="condición-étnico-lingüística-cel" class="level2">
+<h2 class="anchored" data-anchor-id="condición-étnico-lingüística-cel">Condición Étnico-Lingüística (CEL)</h2>
+<p>Albó and Romero defined a seven-level ordinal scale — the <em>Condición Étnico-Lingüística</em> (CEL) — combining the three questions and Castellano use into a single indicator of ethnic-linguistic position. Two additional half-step levels (1.5 and 4.5) capture empirically common combinations not in the original scale.</p>
+<section id="scale-definition" class="level3">
+<h3 class="anchored" data-anchor-id="scale-definition">Scale definition</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>CEL</th>
+<th>Q1</th>
+<th>Q2</th>
+<th>Q3</th>
+<th>C</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7</td>
+<td>S</td>
+<td>S</td>
+<td>S</td>
+<td>N</td>
+<td>Pertenece, habla, aprendió — sin castellano</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>S</td>
+<td>S</td>
+<td>S</td>
+<td>S</td>
+<td>Pertenece, habla, aprendió — con castellano</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>S</td>
+<td>S</td>
+<td>N</td>
+<td>S</td>
+<td>Pertenece, habla, no aprendió</td>
+</tr>
+<tr class="even">
+<td>4.5</td>
+<td>S</td>
+<td>N</td>
+<td>S</td>
+<td>S</td>
+<td>Pertenece, no habla, pero aprendió como niño</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>S</td>
+<td>N</td>
+<td>N</td>
+<td>S</td>
+<td>Pertenece, no habla, no aprendió</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>N</td>
+<td>S</td>
+<td>S</td>
+<td>N</td>
+<td>No pertenece, pero habla y aprendió — sin castellano</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>N</td>
+<td>S</td>
+<td>S</td>
+<td>S</td>
+<td>No pertenece, pero habla y aprendió — con castellano</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>N</td>
+<td>S</td>
+<td>N</td>
+<td>S</td>
+<td>No pertenece, habla, no aprendió</td>
+</tr>
+<tr class="odd">
+<td>1.5</td>
+<td>N</td>
+<td>N</td>
+<td>S</td>
+<td>S</td>
+<td>No pertenece, no habla, pero aprendió como niño</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>S</td>
+<td>No pertenece, no habla, no aprendió</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note on Q2 for non-identifiers</strong>: For people who self-identify (Q1 = TRUE), Q2 tests whether their spoken language matches their declared identity group (per the <code>albo_q2</code> crosswalk). For non-identifiers (Q1 = FALSE), there is no declared identity to match against, so Q2 reduces to: <em>does the person speak any Bolivian indigenous language</em> (idioma codes 1–5 or 7–37)? This is captured in the <code>cel_q2</code> column. <code>albo_q2</code> and <code>cel_q2</code> are identical for identifiers; they differ only for non-identifiers.</p>
+</section>
+<section id="compute-cel" class="level3">
+<h3 class="anchored" data-anchor-id="compute-cel">Compute CEL</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cel_q2 and cel are pre-computed in albo_vars.rds.</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The CEL assignment logic:</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   cel_q2  = albo_q2                          (for identifiers, Q1 = TRUE)</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co">#           = speaks any indigenous language    (for non-identifiers, Q1 = FALSE)</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co">#             (codes 1–5 or 7–37 in p331/p332/p333)</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   cel = case_when(</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co">#      albo_q1 &amp;  cel_q2 &amp;  albo_q3 &amp; !albo_c  ~  7,</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co">#      albo_q1 &amp;  cel_q2 &amp;  albo_q3 &amp;  albo_c  ~  6,</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="co">#      albo_q1 &amp;  cel_q2 &amp; !albo_q3             ~  5,</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="co">#      albo_q1 &amp; !cel_q2 &amp;  albo_q3             ~  4.5,</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a><span class="co">#      albo_q1 &amp; !cel_q2 &amp; !albo_q3             ~  4,</span></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="co">#     !albo_q1 &amp;  cel_q2 &amp;  albo_q3 &amp; !albo_c  ~  3,</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="co">#     !albo_q1 &amp;  cel_q2 &amp;  albo_q3 &amp;  albo_c  ~  2,</span></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="co">#     !albo_q1 &amp;  cel_q2 &amp; !albo_q3             ~  1,</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="co">#     !albo_q1 &amp; !cel_q2 &amp;  albo_q3             ~  1.5,</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a><span class="co">#     !albo_q1 &amp; !cel_q2 &amp; !albo_q3             ~  0</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="co">#   )</span></span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(cel) <span class="sc">|&gt;</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">2</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(cel)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+     cel       n   pct
+   &lt;dbl&gt;   &lt;int&gt; &lt;dbl&gt;
+ 1   0   6031823 53.1 
+ 2   1    528352  4.65
+ 3   1.5  125982  1.11
+ 4   2    332018  2.92
+ 5   3     44674  0.39
+ 6   4   1297405 11.4 
+ 7   4.5   59162  0.52
+ 8   5   1092004  9.61
+ 9   6   1539123 13.5 
+10   7    314790  2.77</code></pre>
+</div>
+</div>
+</section>
+<section id="cel-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="cel-distribution">CEL distribution</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cel_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"0"</span>   <span class="ot">=</span> <span class="st">"0 — No identity, no language"</span>,</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span>   <span class="ot">=</span> <span class="st">"1 — No identity, speaks (no childhood)"</span>,</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1.5"</span> <span class="ot">=</span> <span class="st">"1.5 — No identity, childhood language only"</span>,</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2"</span>   <span class="ot">=</span> <span class="st">"2 — No identity, speaks + childhood (bilingual)"</span>,</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"3"</span>   <span class="ot">=</span> <span class="st">"3 — No identity, speaks + childhood (monolingual)"</span>,</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span>   <span class="ot">=</span> <span class="st">"4 — Identity only"</span>,</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4.5"</span> <span class="ot">=</span> <span class="st">"4.5 — Identity + childhood (no current language)"</span>,</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"5"</span>   <span class="ot">=</span> <span class="st">"5 — Identity + language (no childhood)"</span>,</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"6"</span>   <span class="ot">=</span> <span class="st">"6 — Identity + language + childhood (bilingual)"</span>,</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span>   <span class="ot">=</span> <span class="st">"7 — Identity + language + childhood (monolingual)"</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>cel_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"0"</span>   <span class="ot">=</span> <span class="st">"#d9d9d9"</span>,</span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span>   <span class="ot">=</span> <span class="st">"#fee0b6"</span>,</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1.5"</span> <span class="ot">=</span> <span class="st">"#fdb863"</span>,</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2"</span>   <span class="ot">=</span> <span class="st">"#e08214"</span>,</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"3"</span>   <span class="ot">=</span> <span class="st">"#b35806"</span>,</span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span>   <span class="ot">=</span> <span class="st">"#cce5ff"</span>,</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4.5"</span> <span class="ot">=</span> <span class="st">"#74add1"</span>,</span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"5"</span>   <span class="ot">=</span> <span class="st">"#4393c3"</span>,</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"6"</span>   <span class="ot">=</span> <span class="st">"#2166ac"</span>,</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span>   <span class="ot">=</span> <span class="st">"#053061"</span></span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(cel) <span class="sc">|&gt;</span></span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct      =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n),</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_chr  =</span> <span class="fu">as.character</span>(cel),</span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_lbl  =</span> cel_labels[cel_chr],</span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_lbl  =</span> <span class="fu">fct_reorder</span>(cel_lbl, cel)</span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> cel_lbl, <span class="at">fill =</span> cel_chr)) <span class="sc">+</span></span>
+<span id="cb30-36"><a href="#cb30-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-37"><a href="#cb30-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(pct <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)),</span>
+<span id="cb30-38"><a href="#cb30-38" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
+<span id="cb30-39"><a href="#cb30-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(),</span>
+<span id="cb30-40"><a href="#cb30-40" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.14</span>))) <span class="sc">+</span></span>
+<span id="cb30-41"><a href="#cb30-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cel_colors) <span class="sc">+</span></span>
+<span id="cb30-42"><a href="#cb30-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb30-43"><a href="#cb30-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Condición Étnico-Lingüística (CEL) — Bolivia CPV 2024"</span>,</span>
+<span id="cb30-44"><a href="#cb30-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"n = 11,365,333"</span>,</span>
+<span id="cb30-45"><a href="#cb30-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb30-46"><a href="#cb30-46" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb30-47"><a href="#cb30-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/cel-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cel-by-urbanrural" class="level3">
+<h3 class="anchored" data-anchor-id="cel-by-urbanrural">CEL by urban/rural</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>urbrur_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Urban"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"Rural"</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">urbrur_label =</span> urbrur_labels[<span class="fu">as.character</span>(urbrur)]) <span class="sc">|&gt;</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(urbrur_label)) <span class="sc">|&gt;</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(urbrur_label, cel) <span class="sc">|&gt;</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(urbrur_label) <span class="sc">|&gt;</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct     =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n),</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_chr =</span> <span class="fu">as.character</span>(cel),</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_lbl =</span> cel_labels[cel_chr],</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_lbl =</span> <span class="fu">fct_reorder</span>(cel_lbl, cel)</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> cel_lbl, <span class="at">fill =</span> cel_chr)) <span class="sc">+</span></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(pct <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)),</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(),</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.16</span>))) <span class="sc">+</span></span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cel_colors) <span class="sc">+</span></span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> urbrur_label) <span class="sc">+</span></span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"CEL by urban/rural"</span>,</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024"</span>,</span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/cel-urban-rural-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cel-by-department" class="level3">
+<h3 class="anchored" data-anchor-id="cel-by-department">CEL by department</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>dept_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Chuquisaca"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"La Paz"</span>,    <span class="st">"3"</span> <span class="ot">=</span> <span class="st">"Cochabamba"</span>,</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span> <span class="ot">=</span> <span class="st">"Oruro"</span>,      <span class="st">"5"</span> <span class="ot">=</span> <span class="st">"Potosí"</span>,    <span class="st">"6"</span> <span class="ot">=</span> <span class="st">"Tarija"</span>,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span> <span class="ot">=</span> <span class="st">"Santa Cruz"</span>, <span class="st">"8"</span> <span class="ot">=</span> <span class="st">"Beni"</span>,      <span class="st">"9"</span> <span class="ot">=</span> <span class="st">"Pando"</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept =</span> dept_labels[<span class="fu">as.character</span>(idep)]) <span class="sc">|&gt;</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(dept, cel) <span class="sc">|&gt;</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(dept) <span class="sc">|&gt;</span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct     =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n),</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_chr =</span> <span class="fu">as.character</span>(cel),</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">dept    =</span> <span class="fu">fct_reorder</span>(dept, pct <span class="sc">*</span> (cel <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">7</span>)), sum)</span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> dept, <span class="at">fill =</span> cel_chr)) <span class="sc">+</span></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cel_colors, <span class="at">labels =</span> cel_labels, <span class="at">name =</span> <span class="st">"CEL"</span>) <span class="sc">+</span></span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Indigenous ethno-linguistic identity by department"</span>,</span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024"</span>,</span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position  =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb32-29"><a href="#cb32-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">0.6</span>, <span class="st">"cm"</span>)</span>
+<span id="cb32-30"><a href="#cb32-30" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb32-31"><a href="#cb32-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">ncol =</span> <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/cel-dept-total-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>dept_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Chuquisaca"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"La Paz"</span>,    <span class="st">"3"</span> <span class="ot">=</span> <span class="st">"Cochabamba"</span>,</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span> <span class="ot">=</span> <span class="st">"Oruro"</span>,      <span class="st">"5"</span> <span class="ot">=</span> <span class="st">"Potosí"</span>,    <span class="st">"6"</span> <span class="ot">=</span> <span class="st">"Tarija"</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span> <span class="ot">=</span> <span class="st">"Santa Cruz"</span>, <span class="st">"8"</span> <span class="ot">=</span> <span class="st">"Beni"</span>,      <span class="st">"9"</span> <span class="ot">=</span> <span class="st">"Pando"</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>cel_labels_en <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"0"</span>   <span class="ot">=</span> <span class="st">"0 \u2014 No identity, no language"</span>,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span>   <span class="ot">=</span> <span class="st">"1 \u2014 No identity, speaks (no childhood)"</span>,</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1.5"</span> <span class="ot">=</span> <span class="st">"1.5 \u2014 No identity, childhood only"</span>,</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2"</span>   <span class="ot">=</span> <span class="st">"2 \u2014 No identity, speaks + childhood (bilingual)"</span>,</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"3"</span>   <span class="ot">=</span> <span class="st">"3 \u2014 No identity, speaks + childhood (monolingual)"</span>,</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span>   <span class="ot">=</span> <span class="st">"4 \u2014 Identity only"</span>,</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4.5"</span> <span class="ot">=</span> <span class="st">"4.5 \u2014 Identity + childhood (no current language)"</span>,</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"5"</span>   <span class="ot">=</span> <span class="st">"5 \u2014 Identity + language (no childhood)"</span>,</span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"6"</span>   <span class="ot">=</span> <span class="st">"6 \u2014 Identity + language + childhood (bilingual)"</span>,</span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span>   <span class="ot">=</span> <span class="st">"7 \u2014 Identity + language + childhood (monolingual)"</span></span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>cel_labels_es <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"0"</span>   <span class="ot">=</span> <span class="st">"0 \u2014 Sin identidad, sin lengua"</span>,</span>
+<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span>   <span class="ot">=</span> <span class="st">"1 \u2014 Sin identidad, habla (sin infancia)"</span>,</span>
+<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1.5"</span> <span class="ot">=</span> <span class="st">"1.5 \u2014 Sin identidad, solo aprendió de niño"</span>,</span>
+<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2"</span>   <span class="ot">=</span> <span class="st">"2 \u2014 Sin identidad, habla + aprendió (bilingüe)"</span>,</span>
+<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"3"</span>   <span class="ot">=</span> <span class="st">"3 \u2014 Sin identidad, habla + aprendió (monolingüe)"</span>,</span>
+<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span>   <span class="ot">=</span> <span class="st">"4 \u2014 Solo identidad"</span>,</span>
+<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4.5"</span> <span class="ot">=</span> <span class="st">"4.5 \u2014 Identidad + aprendió (sin lengua actual)"</span>,</span>
+<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>  <span class="st">"5"</span>   <span class="ot">=</span> <span class="st">"5 \u2014 Identidad + lengua (sin infancia)"</span>,</span>
+<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a>  <span class="st">"6"</span>   <span class="ot">=</span> <span class="st">"6 \u2014 Identidad + lengua + aprendió (bilingüe)"</span>,</span>
+<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span>   <span class="ot">=</span> <span class="st">"7 \u2014 Identidad + lengua + aprendió (monolingüe)"</span></span>
+<span id="cb33-31"><a href="#cb33-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb33-32"><a href="#cb33-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-33"><a href="#cb33-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Rank departments by overall share at CEL 6–7 (most indigenous = highest rank)</span></span>
+<span id="cb33-34"><a href="#cb33-34" aria-hidden="true" tabindex="-1"></a>dept_rank <span class="ot">&lt;-</span> albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb33-35"><a href="#cb33-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept =</span> dept_labels[<span class="fu">as.character</span>(idep)]) <span class="sc">|&gt;</span></span>
+<span id="cb33-36"><a href="#cb33-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(dept, cel) <span class="sc">|&gt;</span></span>
+<span id="cb33-37"><a href="#cb33-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(dept) <span class="sc">|&gt;</span></span>
+<span id="cb33-38"><a href="#cb33-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb33-39"><a href="#cb33-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">score =</span> <span class="fu">sum</span>(pct <span class="sc">*</span> (cel <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">7</span>))), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-40"><a href="#cb33-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(score) <span class="sc">|&gt;</span></span>
+<span id="cb33-41"><a href="#cb33-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept_rank =</span> <span class="fu">row_number</span>())</span>
+<span id="cb33-42"><a href="#cb33-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-43"><a href="#cb33-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Shared plot data: department × urban/rural</span></span>
+<span id="cb33-44"><a href="#cb33-44" aria-hidden="true" tabindex="-1"></a>cel_dept_df <span class="ot">&lt;-</span> albo_vars <span class="sc">|&gt;</span></span>
+<span id="cb33-45"><a href="#cb33-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept =</span> dept_labels[<span class="fu">as.character</span>(idep)]) <span class="sc">|&gt;</span></span>
+<span id="cb33-46"><a href="#cb33-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(dept, urbrur, cel) <span class="sc">|&gt;</span></span>
+<span id="cb33-47"><a href="#cb33-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(dept, urbrur) <span class="sc">|&gt;</span></span>
+<span id="cb33-48"><a href="#cb33-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb33-49"><a href="#cb33-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb33-50"><a href="#cb33-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(dept_rank <span class="sc">|&gt;</span> <span class="fu">select</span>(dept, dept_rank), <span class="at">by =</span> <span class="st">"dept"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-51"><a href="#cb33-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb33-52"><a href="#cb33-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">urb_order =</span> <span class="fu">if_else</span>(urbrur <span class="sc">==</span> <span class="dv">1</span>L, <span class="dv">0</span>L, <span class="dv">1</span>L),   <span class="co"># Urban=0, Rural=1</span></span>
+<span id="cb33-53"><a href="#cb33-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">y_pos     =</span> dept_rank <span class="sc">*</span> <span class="dv">2</span> <span class="sc">-</span> urb_order,</span>
+<span id="cb33-54"><a href="#cb33-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">cel_chr   =</span> <span class="fu">as.character</span>(cel)</span>
+<span id="cb33-55"><a href="#cb33-55" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb33-56"><a href="#cb33-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-57"><a href="#cb33-57" aria-hidden="true" tabindex="-1"></a><span class="co"># English chart</span></span>
+<span id="cb33-58"><a href="#cb33-58" aria-hidden="true" tabindex="-1"></a>cel_dept_df <span class="sc">|&gt;</span></span>
+<span id="cb33-59"><a href="#cb33-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">bar_label =</span> <span class="fu">fct_reorder</span>(</span>
+<span id="cb33-60"><a href="#cb33-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(dept, <span class="st">" \u2013 "</span>, <span class="fu">if_else</span>(urbrur <span class="sc">==</span> <span class="dv">1</span>, <span class="st">"Urban"</span>, <span class="st">"Rural"</span>)), y_pos</span>
+<span id="cb33-61"><a href="#cb33-61" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span></span>
+<span id="cb33-62"><a href="#cb33-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> bar_label, <span class="at">fill =</span> cel_chr)) <span class="sc">+</span></span>
+<span id="cb33-63"><a href="#cb33-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb33-64"><a href="#cb33-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb33-65"><a href="#cb33-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cel_colors, <span class="at">labels =</span> cel_labels_en, <span class="at">name =</span> <span class="st">"CEL"</span>) <span class="sc">+</span></span>
+<span id="cb33-66"><a href="#cb33-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb33-67"><a href="#cb33-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Indigenous ethno-linguistic identity by department and urban/rural"</span>,</span>
+<span id="cb33-68"><a href="#cb33-68" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024"</span>,</span>
+<span id="cb33-69"><a href="#cb33-69" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of population"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb33-70"><a href="#cb33-70" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb33-71"><a href="#cb33-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb33-72"><a href="#cb33-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb33-73"><a href="#cb33-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position  =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb33-74"><a href="#cb33-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">0.6</span>, <span class="st">"cm"</span>)</span>
+<span id="cb33-75"><a href="#cb33-75" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb33-76"><a href="#cb33-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">ncol =</span> <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/cel-dept-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Spanish chart (reuses cel_dept_df and dept_rank from chunk above)</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>cel_dept_df <span class="sc">|&gt;</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">bar_label =</span> <span class="fu">fct_reorder</span>(</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(dept, <span class="st">" \u2013 "</span>, <span class="fu">if_else</span>(urbrur <span class="sc">==</span> <span class="dv">1</span>, <span class="st">"Urbano"</span>, <span class="st">"Rural"</span>)), y_pos</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> bar_label, <span class="at">fill =</span> cel_chr)) <span class="sc">+</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cel_colors, <span class="at">labels =</span> cel_labels_es, <span class="at">name =</span> <span class="st">"CEL"</span>) <span class="sc">+</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title    =</span> <span class="st">"Identidad etno-ling\u00fcística ind\u00edgena por departamento y área"</span>,</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Bolivia CPV 2024"</span>,</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Proporción de la población"</span>, <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position  =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">0.6</span>, <span class="st">"cm"</span>)</span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">ncol =</span> <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="albo-restudy-2024_files/figure-html/cel-dept-es-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cel-municipality-groups-albó-romero" class="level3">
+<h3 class="anchored" data-anchor-id="cel-municipality-groups-albó-romero">CEL municipality groups (Albó-Romero)</h3>
+<p>Albó and Romero further classified municipalities into nine groups (A–I) based on the share of their population at three CEL thresholds: <code>cel_5plus</code> (CEL ≥ 5), <code>cel_4plus</code> (CEL ≥ 4), and <code>cel_2plus</code> (CEL ≥ 2). Each municipality is assigned to the first group whose thresholds it meets.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>CEL ≥ 5</th>
+<th>CEL ≥ 4</th>
+<th>CEL ≥ 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>≥ 90%</td>
+<td>≥ 90%</td>
+<td>≥ 90%</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>&gt; 67%</td>
+<td>&gt; 80%</td>
+<td>&gt; 90%</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>&gt; 50%</td>
+<td>&gt; 67%</td>
+<td>&gt; 67%</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>&gt; 33%</td>
+<td>&gt; 50%</td>
+<td>&gt; 67%</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>—</td>
+<td>—</td>
+<td>&gt; 75%</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>—</td>
+<td>—</td>
+<td>&gt; 50%</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>—</td>
+<td>—</td>
+<td>&gt; 33%</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>—</td>
+<td>—</td>
+<td>&gt; 10%</td>
+</tr>
+<tr class="odd">
+<td>I</td>
+<td>&lt; 10% in all categories</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>dept_names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Chuquisaca"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"La Paz"</span>,   <span class="st">"3"</span> <span class="ot">=</span> <span class="st">"Cochabamba"</span>,</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"4"</span> <span class="ot">=</span> <span class="st">"Oruro"</span>,      <span class="st">"5"</span> <span class="ot">=</span> <span class="st">"Potosí"</span>,   <span class="st">"6"</span> <span class="ot">=</span> <span class="st">"Tarija"</span>,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"7"</span> <span class="ot">=</span> <span class="st">"Santa Cruz"</span>, <span class="st">"8"</span> <span class="ot">=</span> <span class="st">"Beni"</span>,     <span class="st">"9"</span> <span class="ot">=</span> <span class="st">"Pando"</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>albo_groups <span class="ot">&lt;-</span> cel_geo <span class="sc">|&gt;</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(municipality), <span class="fu">is.na</span>(urban_rural)) <span class="sc">|&gt;</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(department, province, municipality, cel_2plus, cel_4plus, cel_5plus) <span class="sc">|&gt;</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">albo_group =</span> <span class="fu">case_when</span>(</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;=</span> <span class="dv">90</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;=</span> <span class="dv">90</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;=</span> <span class="dv">90</span> <span class="sc">~</span> <span class="st">"A"</span>,</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;</span>  <span class="dv">80</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;</span>  <span class="dv">90</span> <span class="sc">~</span> <span class="st">"B"</span>,</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;</span>  <span class="dv">50</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">~</span> <span class="st">"C"</span>,</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;</span>  <span class="dv">33</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;</span>  <span class="dv">50</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">~</span> <span class="st">"D"</span>,</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">75</span>                                      <span class="sc">~</span> <span class="st">"E"</span>,</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">50</span>                                      <span class="sc">~</span> <span class="st">"F"</span>,</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">33</span>                                      <span class="sc">~</span> <span class="st">"G"</span>,</span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">10</span>                                      <span class="sc">~</span> <span class="st">"H"</span>,</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>                                                 <span class="sc">~</span> <span class="st">"I"</span></span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Wide table: groups × departments</span></span>
+<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>all_groups <span class="ot">&lt;-</span> LETTERS[<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>]</span>
+<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a>dept_cols  <span class="ot">&lt;-</span> <span class="fu">as.character</span>(dept_names)</span>
+<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a>total_muns <span class="ot">&lt;-</span> <span class="fu">nrow</span>(albo_groups)</span>
+<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-29"><a href="#cb35-29" aria-hidden="true" tabindex="-1"></a>wide <span class="ot">&lt;-</span> albo_groups <span class="sc">|&gt;</span></span>
+<span id="cb35-30"><a href="#cb35-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept_name =</span> dept_names[<span class="fu">as.character</span>(department)]) <span class="sc">|&gt;</span></span>
+<span id="cb35-31"><a href="#cb35-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(albo_group, dept_name) <span class="sc">|&gt;</span></span>
+<span id="cb35-32"><a href="#cb35-32" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">names_from =</span> dept_name, <span class="at">values_from =</span> n, <span class="at">values_fill =</span> <span class="dv">0</span>L)</span>
+<span id="cb35-33"><a href="#cb35-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-34"><a href="#cb35-34" aria-hidden="true" tabindex="-1"></a>wide <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">albo_group =</span> all_groups) <span class="sc">|&gt;</span></span>
+<span id="cb35-35"><a href="#cb35-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(wide, <span class="at">by =</span> <span class="st">"albo_group"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb35-36"><a href="#cb35-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(dept_cols), <span class="sc">~</span> <span class="fu">replace_na</span>(., <span class="dv">0</span>L))) <span class="sc">|&gt;</span></span>
+<span id="cb35-37"><a href="#cb35-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb35-38"><a href="#cb35-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total      =</span> <span class="fu">rowSums</span>(<span class="fu">pick</span>(<span class="fu">all_of</span>(dept_cols)), <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb35-39"><a href="#cb35-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">Pct        =</span> <span class="fu">sprintf</span>(<span class="st">"%.1f%%"</span>, Total <span class="sc">/</span> total_muns <span class="sc">*</span> <span class="dv">100</span>),</span>
+<span id="cb35-40"><a href="#cb35-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">Cumulative =</span> <span class="fu">cumsum</span>(Total)</span>
+<span id="cb35-41"><a href="#cb35-41" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb35-42"><a href="#cb35-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-43"><a href="#cb35-43" aria-hidden="true" tabindex="-1"></a>total_row <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">albo_group =</span> <span class="st">"Total"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb35-44"><a href="#cb35-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(</span>
+<span id="cb35-45"><a href="#cb35-45" aria-hidden="true" tabindex="-1"></a>    wide <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(dept_cols), sum)),</span>
+<span id="cb35-46"><a href="#cb35-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(<span class="at">Total =</span> <span class="fu">sum</span>(wide<span class="sc">$</span>Total), <span class="at">Pct =</span> <span class="st">""</span>, <span class="at">Cumulative =</span> <span class="fu">as.double</span>(<span class="cn">NA</span>))</span>
+<span id="cb35-47"><a href="#cb35-47" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb35-48"><a href="#cb35-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-49"><a href="#cb35-49" aria-hidden="true" tabindex="-1"></a>tbl_data <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(wide, total_row)</span>
+<span id="cb35-50"><a href="#cb35-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-51"><a href="#cb35-51" aria-hidden="true" tabindex="-1"></a>tbl_data <span class="sc">|&gt;</span></span>
+<span id="cb35-52"><a href="#cb35-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb35-53"><a href="#cb35-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
+<span id="cb35-54"><a href="#cb35-54" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_of</span>(dept_cols),</span>
+<span id="cb35-55"><a href="#cb35-55" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span> <span class="fu">if_else</span>(albo_group <span class="sc">!=</span> <span class="st">"Total"</span> <span class="sc">&amp;</span> (<span class="fu">is.na</span>(.) <span class="sc">|</span> . <span class="sc">==</span> <span class="dv">0</span>L), <span class="cn">NA_integer_</span>, <span class="fu">as.integer</span>(.))</span>
+<span id="cb35-56"><a href="#cb35-56" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb35-57"><a href="#cb35-57" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(dept_cols), <span class="sc">~</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(.), <span class="st">""</span>, <span class="fu">as.character</span>(.))),</span>
+<span id="cb35-58"><a href="#cb35-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">Cumulative =</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(Cumulative), <span class="st">""</span>, <span class="fu">as.character</span>(<span class="fu">as.integer</span>(Cumulative))),</span>
+<span id="cb35-59"><a href="#cb35-59" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total      =</span> <span class="fu">if_else</span>(Total <span class="sc">==</span> <span class="dv">0</span>, <span class="st">""</span>, <span class="fu">as.character</span>(<span class="fu">as.integer</span>(Total))),</span>
+<span id="cb35-60"><a href="#cb35-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">Pct        =</span> <span class="fu">if_else</span>(Total <span class="sc">==</span> <span class="st">""</span> <span class="sc">|</span> Total <span class="sc">==</span> <span class="st">"0"</span>, <span class="st">""</span>, Pct)</span>
+<span id="cb35-61"><a href="#cb35-61" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb35-62"><a href="#cb35-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Group =</span> albo_group, <span class="st">`</span><span class="at">%</span><span class="st">`</span> <span class="ot">=</span> Pct, <span class="at">Cum. =</span> Cumulative) <span class="sc">|&gt;</span></span>
+<span id="cb35-63"><a href="#cb35-63" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">align =</span> <span class="fu">c</span>(<span class="st">"l"</span>, <span class="fu">rep</span>(<span class="st">"r"</span>, <span class="fu">length</span>(dept_cols) <span class="sc">+</span> <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Group</th>
+<th style="text-align: right;">Chuquisaca</th>
+<th style="text-align: right;">Cochabamba</th>
+<th style="text-align: right;">La Paz</th>
+<th style="text-align: right;">Oruro</th>
+<th style="text-align: right;">Potosí</th>
+<th style="text-align: right;">Santa Cruz</th>
+<th style="text-align: right;">Beni</th>
+<th style="text-align: right;">Pando</th>
+<th style="text-align: right;">Tarija</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">%</th>
+<th style="text-align: right;">Cum.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">14.0%</td>
+<td style="text-align: right;">48</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">99</td>
+<td style="text-align: right;">28.9%</td>
+<td style="text-align: right;">147</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">7.3%</td>
+<td style="text-align: right;">172</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1.2%</td>
+<td style="text-align: right;">176</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">15.7%</td>
+<td style="text-align: right;">230</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">G</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">10.8%</td>
+<td style="text-align: right;">267</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">H</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">18.1%</td>
+<td style="text-align: right;">329</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4.1%</td>
+<td style="text-align: right;">343</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Total</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">343</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="notes-on-variable-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="notes-on-variable-limitations">Notes on variable limitations</h2>
+<ul>
+<li><p><strong>albo_q2 for generic identities</strong> (Otras declaraciones, Quechua-Aymara, Más de una descripción) and <strong>groups with no distinct census language</strong> (Afroboliviano, Chuwi, Paunaca, Toromona, foreign groups): counted as TRUE if the respondent speaks <em>any</em> Bolivian indigenous language (codes 1–5 or 7–37). Afroboliviano in particular refers to a Spanish variety of the La Paz Yungas, not a structurally distinct language; including it on the “any indigenous language” rule means Afroboliviano identifiers who are also Quechua or Aymara speakers will score Q2 = TRUE.</p></li>
+<li><p><strong>p341_idiomat_cod</strong> (childhood language, Q3): code 999 is treated as non-response and excluded (same as NA). Code 6 = Castellano is excluded (learning Spanish as a child does not count as learning an indigenous language).</p></li>
+<li><p><strong>albo_c</strong> captures <em>current</em> Castellano use via p331/p332/p333. It does not capture whether someone learned Spanish as a child or speaks it fluently; only that they list it as one of up to three current languages.</p></li>
+<li><p><strong>urbrur</strong> is sourced from the Vivienda (household) file and joined on <code>idep + iprov + imun + i00</code>. All 11,365,333 person rows matched exactly (0 NAs).</p></li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

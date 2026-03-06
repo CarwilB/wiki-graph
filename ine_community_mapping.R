@@ -20,7 +20,7 @@ ine_geog_2013 <- ine_geog_2013 %>%
 library(sf)
 library(stringdist)
 
-geo <- st_read("data/localizacion_poblaciones_2016.json", quiet = TRUE)
+geo <- st_read("data/geocode/localizacion_poblaciones_2016.json", quiet = TRUE)
 
 # Verify that both id fields are truly unique identifiers
 stopifnot(n_distinct(geo$id_unico)         == nrow(geo))
