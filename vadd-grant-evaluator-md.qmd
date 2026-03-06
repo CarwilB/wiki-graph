@@ -1,0 +1,64 @@
+---
+title: "Summer Research Grant Evaluator"
+author: "Carwil Bjork-James"
+format: 
+  html:
+    toc: true
+    theme: cosmo
+---
+
+## Evaluation Rubric Reference
+
+| Arena | Exceptional (100%) | Above Average (75%) | Average (50%–33%) | Below Average / Poor (25%–0%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Research Potential** | **6 Points**: Innovative, methodologically sound, essential to dissertation. | **4.5 Points**: Strong goals; contributes substantially but may lack deep innovation. | **3 Points**: Adequate goals but conventional. Research is purely supplemental. | **1.5 Points**: Lacks clarity or feasible methods. Limited value to dissertation. |
+| **Professional Development** | **3 Points**: Clear plan for dissemination/training. All prep complete. | **2 Points**: Good plan but less detailed. Student is on track with prep. | **1 Point**: Plan is vague. Unclear how training facilitates execution. | **0 Points**: No clear plan. No discussion of preparedness. |
+| **Budget & Justification** | **3 Points**: Comprehensive and fully justified. Costs are essential/research-oriented. | **2 Points**: Generally reasonable. Majority of costs are justified and essential. | **1 Point**: Some costs justified, others not clearly connected to research. | **0 Points**: Poorly constructed. Costs not justified or relevant. |
+
+---
+
+## Interactive Scorer
+
+| Arena | Exceptional | Above Average | Average | Below Average | Points |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Research (6)** | <input type="radio" name="res" value="6" onclick="calc()"> | <input type="radio" name="res" value="4.5" onclick="calc()"> | <input type="radio" name="res" value="3" onclick="calc()"> | <input type="radio" name="res" value="1.5" onclick="calc()"> | <span id="res-val">—</span> |
+| **Prof Dev (3)** | <input type="radio" name="prof" value="3" onclick="calc()"> | <input type="radio" name="prof" value="2" onclick="calc()"> | <input type="radio" name="prof" value="1" onclick="calc()"> | <input type="radio" name="prof" value="0" onclick="calc()"> | <span id="prof-val">—</span> |
+| **Budget (3)** | <input type="radio" name="bud" value="3" onclick="calc()"> | <input type="radio" name="bud" value="2" onclick="calc()"> | <input type="radio" name="bud" value="1" onclick="calc()"> | <input type="radio" name="bud" value="0" onclick="calc()"> | <span id="bud-val">—</span> |
+
+```{=html}
+<h3>Score: <span id="total">—</span> / 12</h3>
+<button onclick="resetScorer()">Reset</button>
+
+<br><br>
+<label for="comments"><strong>Comments</strong></label><br>
+<textarea id="comments" rows="5" style="width:100%; max-width:600px;"></textarea>
+```
+
+```{=html}
+<script>
+function calc() {
+  let res  = document.querySelector('input[name="res"]:checked');
+  let prof = document.querySelector('input[name="prof"]:checked');
+  let bud  = document.querySelector('input[name="bud"]:checked');
+
+  document.getElementById('res-val').innerText  = res  ? res.value  : '—';
+  document.getElementById('prof-val').innerText = prof ? prof.value : '—';
+  document.getElementById('bud-val').innerText  = bud  ? bud.value  : '—';
+
+  if (res && prof && bud) {
+    let total = parseFloat(res.value) + parseFloat(prof.value) + parseFloat(bud.value);
+    document.getElementById('total').innerText = total.toFixed(1);
+  } else {
+    document.getElementById('total').innerText = '—';
+  }
+}
+
+function resetScorer() {
+  document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
+  ['res-val', 'prof-val', 'bud-val', 'total'].forEach(id => {
+    document.getElementById(id).innerText = '—';
+  });
+  document.getElementById('comments').value = '';
+}
+</script>
+```
