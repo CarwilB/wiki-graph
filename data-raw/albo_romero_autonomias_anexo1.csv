@@ -1,0 +1,328 @@
+codigo,sec,municipality,cel_0_nnn,cel_1_nsn,cel_2_nss,cel_3_nss,cel_4_snn,cel_5_ssnc,cel_6_sssc,cel_7_sss,crit_orig_5a7,crit_orig_4a7,crit_orig_2a7,pueblos_orig,observaciones,department,province
+010101,Cp,Sucre,21.1,8.4,4.9,1.1,20.6,14.8,20.4,8.8,44,64.6,70.6,Q,gran contraste con área rural,Chuquisaca,Oropeza
+010102,1,Yotala,1.4,1.2,2.6,1.9,5.8,7.9,42.9,36.2,87,92.8,97.3,Q,NA,Chuquisaca,Oropeza
+010103,2,Poroma,0.1,0.2,0.8,2.1,0.5,0.7,26.9,68.7,96.3,96.8,99.7,Q,NA,Chuquisaca,Oropeza
+010201,1,Azurduy,29.1,2.6,1.4,3.6,15.2,3.1,7.4,37.7,48.2,63.4,68.4,Q,en frontera étnica-ling,Chuquisaca,Azurduy
+010202,2,Tarvita,1.6,1.1,2.7,6.7,2.6,2.8,21.8,60.7,85.3,87.9,97.3,Q,NA,Chuquisaca,Azurduy
+010301,1,Zudañez,0.7,0.8,1.2,0.8,5.3,7.9,37.7,45.7,91.3,96.6,98.6,Q,NA,Chuquisaca,Zudañez
+010302,2,Presto,0.3,0.4,0.6,2.5,0.9,2,16.3,76.9,95.2,96.1,99.2,Q,NA,Chuquisaca,Zudañez
+010303,3,Mojocoya,0.5,0.5,2.2,1.8,5,5.8,44.8,39.4,90,95,99,Q,NA,Chuquisaca,Zudañez
+010304,4,Icla,0.8,0.3,0.9,1.6,1,1.2,30.2,63.9,95.3,96.3,98.8,Q,NA,Chuquisaca,Zudañez
+010401,1,Padilla,38.2,3.6,0.7,0,43.3,7.4,4.8,1.9,14.1,57.4,58.1,Q,en frontera étnica-ling,Chuquisaca,Tomina
+010402,2,Tomina,2.6,1.4,4.7,5.6,4.1,5.2,33.4,43,81.6,85.7,96,Q,NA,Chuquisaca,Tomina
+010403,3,Sopachuy,1.1,0.9,3.2,8.2,6.2,7.9,24.2,48.4,80.5,86.7,98.1,Q,NA,Chuquisaca,Tomina
+010404,4,Villa Alcalá,51.8,12.4,3,1,16.6,5.2,6.7,3.4,15.3,31.9,35.9,Q,en frontera étnica-ling,Chuquisaca,Tomina
+010405,5,El Villar,31.4,7.1,3.1,0.7,39.4,9.3,6.5,2.5,18.3,57.7,61.5,Q,en frontera étnica-ling,Chuquisaca,Tomina
+010501,1,Monteagudo,68,4.4,1.3,0.2,17.9,3,4.2,0.9,8.1,26,27.5,G(Q),en frontera étnica-ling,Chuquisaca,Hernando Siles
+010502,2,Huacareta,51.9,3.7,1.7,0.1,16.6,4.8,16,5.2,26,42.6,44.4,G,NA,Chuquisaca,Hernando Siles
+010601,1,Tarabuco,0.3,0.5,1.3,3.4,1.4,2.7,24.3,66,93,94.4,99.1,Q,NA,Chuquisaca,Yamparaez
+010602,2,Yamparáez,0.2,0.4,1.2,1,1.9,2.2,37.9,55.3,95.4,97.3,99.5,Q,NA,Chuquisaca,Yamparaez
+010701,1,Camargo,44.7,3,2.2,1.4,18.2,5.6,17.1,7.9,30.6,48.8,52.4,Q,en frontera étnica-ling,Chuquisaca,Nor Cinti
+010702,2,San Lucas,0.2,0.2,1.1,1.8,1.7,2.6,36.3,56.2,95.1,96.8,99.7,Q,NA,Chuquisaca,Nor Cinti
+010703,3,Incahuasi,6.3,2.9,3.6,2.9,15.1,9.9,26.8,32.5,69.2,84.3,90.8,Q,NA,Chuquisaca,Nor Cinti
+010801,1,Villa Serrano,54.2,5.9,1.5,0.8,17.2,3.6,7.6,9.1,20.3,37.5,39.8,Q,en frontera étnica-ling,Chuquisaca,Belisario Boeto
+010901,1,Villa Abecia,70.1,4.8,2.6,0.4,14.6,3.9,3.3,0.3,7.5,22.1,25.1,Q,NA,Chuquisaca,Sud Cinti
+010902,2,Culpina,52.9,3.2,3.6,1.2,23.1,5,7.7,3.2,15.9,39,43.8,Q,en frontera étnica-ling,Chuquisaca,Sud Cinti
+010903,3,Las Carreras,78.5,2.7,3.6,0.4,7.1,1.2,5.6,0.8,7.6,14.7,18.7,NA,(Q),Chuquisaca,Sud Cinti
+011001,1,Muyupampa,46,4.7,1.9,0.3,19.5,6,13.9,7.6,27.5,47,49.2,G(Q),NA,Chuquisaca,Luis Calvo
+011002,2,Huacaya,29.2,1.7,2.7,0.5,27.3,10.8,23,4.8,38.6,65.9,69.1,G,NA,Chuquisaca,Luis Calvo
+011003,3,Macharetí,55.3,2.3,1.3,0.1,25.1,5.1,9.2,1.6,15.9,41,42.4,G,NA,Chuquisaca,Luis Calvo
+020101,Cp,La Paz,29.8,4.8,2,0.1,34.9,13.6,13.4,1.3,28.3,63.2,65.3,Ay,ciudad multiétnica,La Paz,Murillo
+020102,1,Palca,0.9,0.7,2.8,2.2,6.6,7.6,43.5,35.6,86.7,93.3,98.3,Ay,NA,La Paz,Murillo
+020103,2,Mecapaca,2.4,1.1,1.5,0.5,18.1,17,41.7,17.7,76.4,94.5,96.5,Ay,NA,La Paz,Murillo
+020104,3,Achocalla,3.4,1.9,2.3,0.6,22,19.2,37.1,13.5,69.8,91.8,94.7,Ay,NA,La Paz,Murillo
+020105,4,El Alto,11.3,3.3,2.4,0.3,37.5,18,23.7,3.5,45.2,82.7,85.4,Ay,ciudad multiétnica,La Paz,Murillo
+020201,1,Achacachi,0.5,0.6,1.6,1.2,7,9.6,46.6,32.7,88.9,95.9,98.7,Ay,NA,La Paz,Omasuyos
+020202,2,Ancoraimes,0.1,0.1,1.7,2.9,1.9,2.9,41.3,48.9,93.1,95,99.6,Ay,NA,La Paz,Omasuyos
+020301,1,Coro Coro,1.5,1.1,2,1.6,13.1,15.6,43.8,21.3,80.7,93.8,97.4,Ay,NA,La Paz,Pacajes
+020302,2,Caquiaviri,0.4,0.2,1.3,0.9,6.3,9.2,58,23.6,90.8,97.1,99.3,Ay,NA,La Paz,Pacajes
+020303,3,Calacoto,1.1,1.2,3,1.5,8.6,12.6,46.4,25.6,84.6,93.2,97.7,Ay,NA,La Paz,Pacajes
+020304,4,Comanche,0.2,0.3,0.7,0.2,6.1,11.5,59.1,21.9,92.5,98.6,99.5,Ay,NA,La Paz,Pacajes
+020305,5,Charaña,2.2,1.4,2.6,0.5,17.9,26.1,38.7,10.5,75.3,93.2,96.3,Ay,NA,La Paz,Pacajes
+020306,6,Waldo Ballivian,0.4,0.3,6.4,2.1,5.8,15.9,51.4,17.7,85,90.8,99.3,Ay,NA,La Paz,Pacajes
+020307,7,Nazacara de Pacajes,0.4,0,0,0,4.7,14.5,64.5,16,95,99.7,99.7,Ay,NA,La Paz,Pacajes
+020308,8,Callapa,0.2,0.2,1.9,1.1,4.2,4.9,56.1,31.3,92.3,96.5,99.5,Ay,NA,La Paz,Pacajes
+020401,1,Pto Acosta,0.3,0.2,0.8,1.1,3.2,4.4,42,48,94.4,97.6,99.5,Ay,NA,La Paz,Camacho
+020402,2,Mocomoco,0.2,0.2,1,3.1,2.5,2.5,28.5,62,93,95.5,99.6,Ay(Q),NA,La Paz,Camacho
+020403,3,Pto. Carabuco,0.7,0.4,1.6,2,4.7,6.4,41.3,43,90.7,95.4,99,Ay,NA,La Paz,Camacho
+020501,1,Chuma,0.3,0.4,1.5,2.2,1.9,3.1,39.8,50.9,93.8,95.7,99.4,AyQ,NA,La Paz,Muñecas
+020502,2,Ayata,0.1,0.4,2.5,4.3,0.4,0.9,25.2,66.2,92.3,92.7,99.5,AyQ,NA,La Paz,Muñecas
+020503,3,Aucapata,1,0.3,2.2,3.7,2.6,3,35.8,51.4,90.2,92.8,98.7,AyQ,NA,La Paz,Muñecas
+020601,1,Sorata,1.4,0.9,1.6,1.6,7.9,8.7,42.3,35.6,86.6,94.5,97.7,Ay,NA,La Paz,Larecaja
+020602,2,Guanay,18.1,2.2,2.2,0.3,37,10.7,23.2,6.5,40.4,77.4,79.9,AyQ,O leco; colonización,La Paz,Larecaja
+020603,3,Tacacoma,2.2,1.1,2.3,2.3,13.5,12.3,41.9,24.4,78.6,92.1,96.7,Ay(Q),NA,La Paz,Larecaja
+020604,4,Quiabaya,0.5,0.4,2.3,2.7,5.1,6.7,42.6,39.7,89,94.1,99.1,Ay,NA,La Paz,Larecaja
+020605,5,Combaya,0,0.1,0.6,1.3,2,1.8,42.6,51.6,96,98,99.9,Ay,NA,La Paz,Larecaja
+020606,6,Tipuani,23.1,4.9,3.5,0.4,35.1,13.9,17.7,1.4,33,68.1,72,AyQ,minería oro multiétnica. leco,La Paz,Larecaja
+020607,7,Mapiri,12.5,5.3,4.9,0.4,31.2,17.3,24.8,3.6,45.7,76.9,82.2,NA,(Ay)Q coloniz multiétnica y cast,La Paz,Larecaja
+020608,8,Teoponte,18.5,2.3,2,0.5,30.7,11.6,28.1,6.3,46,76.7,79.2,Ay(Q)O,leco; minería oro multiétnica,La Paz,Larecaja
+020701,1,Apolo,3.2,3,5.4,1.6,5.6,6.9,47.5,26.8,81.2,86.8,93.8,AyQ,O leco,La Paz,Franz Tamayo
+020702,2,Pelechuco,0.2,0.3,2,1.1,2.6,3.4,54.7,35.8,93.9,96.5,99.6,AyQ,NA,La Paz,Franz Tamayo
+020801,1,Viacha,6.5,2.7,1.9,0.5,25.5,17.2,33.9,11.9,63,88.5,90.9,Ay,NA,La Paz,Ingavi
+020802,2,Guaqui,2,1.5,2.3,1.1,11.5,13.5,44.7,23.4,81.6,93.1,96.5,Ay,NA,La Paz,Ingavi
+020803,3,Tiahuanacu,0.4,0.3,1.2,0.8,5.3,10.2,46.6,35.1,91.9,97.2,99.2,Ay,NA,La Paz,Ingavi
+020804,4,Desaguadero,1.6,1.2,1.6,0.6,17.2,17.1,41.3,19.4,77.8,95,97.2,Ay,NA,La Paz,Ingavi
+020805,5,SAndrés de Machaca,0.4,0.3,1.1,1.3,6.9,7,51.9,31,89.9,96.8,99.2,Ay,NA,La Paz,Ingavi
+020806,6,Jesús de Machaca,0.4,0.2,1.6,1.5,3.9,6.8,54.2,31.3,92.3,96.2,99.3,Ay,uru iruitu,La Paz,Ingavi
+020807,7,Taraco,0.2,0.4,1.4,1,4.5,7.9,53.8,30.7,92.4,96.9,99.3,Ay,NA,La Paz,Ingavi
+020901,1,Luribay,2.1,1.7,2.1,1.6,12.8,13.4,42.6,23.6,79.6,92.4,96.1,Ay,NA,La Paz,Loayza
+020902,2,Sapahaqui,1,0.9,1.6,1.3,8.4,12.1,50.5,24.1,86.7,95.1,98,Ay,NA,La Paz,Loayza
+020903,3,Yaco,0.4,0.5,1.1,0.7,7.5,11.2,56.5,22.3,90,97.5,99.3,Ay,NA,La Paz,Loayza
+020904,4,Malla,0.4,0.3,3.8,2.2,4.5,5.1,58,25.7,88.8,93.3,99.3,Ay,NA,La Paz,Loayza
+020905,5,Cairoma,1.8,1.5,3.2,1.5,14.7,16.8,44.7,15.9,77.4,92.1,96.8,Ay,NA,La Paz,Loayza
+021001,1,Inquisivi,0.5,0.4,1.1,0.8,6.3,6.8,55.8,28.2,90.8,97.1,99,Ay(Q),NA,La Paz,Inquisivi
+021002,2,Quime,6.1,2.7,1.5,0.3,26.5,21.7,32.6,8.6,62.9,89.4,91.2,Ay,NA,La Paz,Inquisivi
+021003,3,Cajuata,14.8,4.5,2.3,0.3,32.5,16.5,24.2,4.9,45.6,78.1,80.7,Ay(Q),NA,La Paz,Inquisivi
+021004,4,Colquiri,2.8,1.2,2,1.1,11.8,8.4,45.7,26.9,81,92.8,95.9,Ay,NA,La Paz,Inquisivi
+021005,5,Ichoca,0.7,0.5,1.4,0.8,9.4,11.2,58.8,17.3,87.3,96.7,98.9,Ay,NA,La Paz,Inquisivi
+021006,6,Licoma,6.5,3.5,2.3,0.1,31.3,22.9,26.9,6.6,56.4,87.7,90.1,Ay(Q),NA,La Paz,Inquisivi
+021101,1,Chulumani,12,3.1,1.2,0.2,40.3,20.6,18.3,4.3,43.2,83.5,84.9,Ay,NA,La Paz,Sud Yungas
+021102,2,Irupana,17.3,4.8,2.9,0.6,27.7,14.3,24,8.4,46.7,74.4,77.9,Ay,NA,La Paz,Sud Yungas
+021103,3,Yanacachi,10.2,3.1,1.5,0.7,37.7,21,19.9,5.7,46.6,84.3,86.5,Ay,NA,La Paz,Sud Yungas
+021104,4,Palos Blancos,15.4,2,2.1,0.4,33.1,12.9,28.9,5.1,46.9,80,82.5,Ay,O mosetenes. Q [chiman],La Paz,Sud Yungas
+021105,5,La Asunta,6.3,1.9,1.8,0.4,33,17.4,31.2,7.8,56.4,89.4,91.6,Ay,NA,La Paz,Sud Yungas
+021201,1,Pucarani,0.5,0.5,2.7,2.5,4.1,6.3,47.8,35.5,89.6,93.7,98.9,Ay,NA,La Paz,Los Andes
+021202,2,Laja,0.3,0.3,2,1.8,3.7,6.8,47.3,37.7,91.8,95.5,99.3,Ay,NA,La Paz,Los Andes
+021203,3,Batallas,0.3,0.5,1.5,1.4,7.2,10,47.8,31.4,89.2,96.4,99.3,Ay,NA,La Paz,Los Andes
+021204,4,Puerto Suárez,0.4,0.3,2.1,1.8,2.7,5.3,48.2,39.4,92.9,95.6,99.5,Ay,NA,La Paz,Los Andes
+021301,1,Sica Sica,0.8,0.5,1.1,0.7,12.1,12.6,53.2,19,84.8,96.9,98.7,Ay,NA,La Paz,Aroma
+021302,2,Umala,0.5,0.2,1,0.2,11,11.7,56.6,18.8,87.1,98.1,99.3,Ay,NA,La Paz,Aroma
+021303,3,Ayo Ayo,1.1,0.9,2,2.5,9.3,14.4,48.1,21.8,84.3,93.6,98.1,Ay,NA,La Paz,Aroma
+021304,4,Calamarca,0.2,0.2,1.3,0.6,6.5,9.1,61.7,20.4,91.2,97.7,99.6,Ay,NA,La Paz,Aroma
+021305,5,Patacamaya,3.3,1.6,2.7,1,16.4,13.8,45.5,15.6,74.9,91.3,95,Ay,NA,La Paz,Aroma
+021306,6,Colquencha,0.6,1,1.5,0.9,11,16.3,48.6,20.2,85.1,96.1,98.5,Ay,NA,La Paz,Aroma
+021307,7,Collana,0.7,0.4,0.9,0.4,17.2,20.5,50.8,9.2,80.5,97.7,99,Ay,NA,La Paz,Aroma
+021401,1,Coroico,9.1,2.5,1.4,0.2,31.2,20.7,28.6,6.4,55.7,86.9,88.5,Ay,NA,La Paz,Nor Yungas
+021402,2,Coripata,2.3,1.2,0.6,0.1,30.7,27.2,29.6,8.2,65,95.7,96.4,Ay,NA,La Paz,Nor Yungas
+021501,1,Ixiamas,56,2.9,2.2,0.5,20.6,6.2,8.7,3,17.9,38.5,41.2,O,takana (Q.Ay),La Paz,Abel Iturralde
+021502,2,San Buenaventura,41.3,2.3,0.9,0.3,33.1,10.1,9.9,2.1,22.1,55.2,56.4,O,takana (Q.Ay),La Paz,Abel Iturralde
+021601,1,Charazani,0.1,0.1,0.9,1.2,1.3,1.7,42.2,52.4,96.3,97.6,99.7,AyQ,NA,La Paz,Bautista Saavedra
+021602,2,Curva,0,0.2,0.4,0.3,0.8,1.4,47.3,49.6,98.3,99.1,99.8,AyQ,NA,La Paz,Bautista Saavedra
+021701,1,Copacabana,1.1,0.7,0.6,0.2,12,14.6,48.7,22.2,85.5,97.5,98.3,Ay,NA,La Paz,Manco Kapac
+021702,2,San Pedro de Tiquina,1.4,0.9,2.4,1.4,13.5,16,41,23.3,80.3,93.8,97.6,Ay,NA,La Paz,Manco Kapac
+021703,3,Tito Yupanqui,0.2,0.3,0.7,0.2,9,8.6,50.1,30.9,89.6,98.6,99.5,Ay,NA,La Paz,Manco Kapac
+021801,1,SPedro Cuarahuara,0.1,0.1,1.7,1,4.4,6.3,59.8,26.7,92.8,97.2,99.9,Ay,NA,La Paz,Gualberto Villarroel
+021802,2,Papel Pampa,0.5,0.6,3.8,0.7,7.4,9,56.3,21.6,86.9,94.3,98.8,Ay,NA,La Paz,Gualberto Villarroel
+021803,3,Chacarilla,0.1,0.1,1.4,0.5,4.3,4.6,65.9,23.1,93.6,97.9,99.8,Ay,NA,La Paz,Gualberto Villarroel
+021901,1,Sant Machaca,1,0.7,1.1,1,12.2,13.2,52.3,18.5,84,96.2,98.3,Ay,NA,La Paz,José Manuel Pando
+021902,2,Catacora,0.3,0.2,1.2,0.2,13.1,14.9,54.6,15.6,85.1,98.2,99.6,Ay,NA,La Paz,José Manuel Pando
+022001,1,Caranavi,10.9,2.9,2.6,0.5,29.8,16.2,30.7,6.5,53.4,83.2,86.3,Ay,colonización multiétnica,La Paz,Caranavi
+030101,Cp,Cochabamba,25.9,7.8,3.1,0.3,29.4,15.7,15.7,2.1,33.5,62.9,66.3,Q(A),ciudad multiétnica,Cochabamba,Cercado
+030201,1,Aiquile,1.8,1.8,2.7,4.1,5.3,6.5,26.7,51.2,84.4,89.7,96.5,Q,NA,Cochabamba,Campero
+030202,2,Pasorapa,53.1,2.8,2.2,0.9,24.8,3.5,6.2,6.5,16.2,41,44.1,NA,(Q) frontera con castellano,Cochabamba,Campero
+030203,3,Omereque,3.8,3,6.3,2.8,14,12.2,29.4,28.5,70.1,84.1,93.2,Q,NA,Cochabamba,Campero
+030301,1,Independencia,0.5,0.6,1,1.2,1.8,3.4,28.3,63.2,94.9,96.7,98.9,Q,NA,Cochabamba,Ayopaya
+030302,2,Morochata,0.2,0.2,2.5,3.7,0.8,1.2,39.1,52.4,92.7,93.5,99.7,Q(Ay),NA,Cochabamba,Ayopaya
+030401,1,Tarata,1.9,2.7,3.6,3,8.4,11.4,38.4,30.6,80.4,88.8,95.4,Q,NA,Cochabamba,Esteban Arze
+030402,2,Anzaldo,0,0.1,0.6,2.3,0.9,1.8,25.6,68.6,96,96.9,99.8,Q,NA,Cochabamba,Esteban Arze
+030403,3,Arbieto,1.7,2.4,4,1.6,8.2,12.2,47.2,22.8,82.2,90.4,96,Q,NA,Cochabamba,Esteban Arze
+030404,4,Sacabamba,0.1,0.1,0.7,1.7,1.6,1.7,40.4,53.7,95.8,97.4,99.8,Q,NA,Cochabamba,Esteban Arze
+030501,1,Arani,0.9,2.5,5,2.9,4.3,8.9,42.8,32.6,84.3,88.6,96.5,Q,NA,Cochabamba,Arani
+030502,2,Vacas,0.2,0.1,1.6,3.2,0.7,1.2,32.2,60.9,94.3,95,99.8,Q,NA,Cochabamba,Arani
+030601,1,Arque,0.1,0.1,0.9,3.3,0.8,1.7,15,78,94.7,95.5,99.7,Q,NA,Cochabamba,Arque
+030602,2,Tacopaya,0.1,0.1,0.5,1.5,0.5,1.2,27.9,68.1,97.2,97.7,99.7,Q,NA,Cochabamba,Arque
+030701,1,Capinota,2.1,2.4,4,1.9,8.8,11.2,34.8,34.7,80.7,89.5,95.4,Q,NA,Cochabamba,Capinota
+030702,2,Santivañez,0.6,1,2.6,2.5,7.1,9.8,45.7,30.7,86.2,93.3,98.4,Q,NA,Cochabamba,Capinota
+030703,3,Sicaya,0.1,0.3,1.3,1.3,1.7,3.6,37.8,54,95.4,97.1,99.7,Q,NA,Cochabamba,Capinota
+030801,1,Cliza,2.6,3.6,5.2,1.3,9.3,18.7,44,15.2,77.9,87.2,93.7,Q,NA,Cochabamba,German Jordán
+030802,2,Toko,0.5,1,2.7,2.1,3.6,9.1,51,29.9,90,93.6,98.4,Q,NA,Cochabamba,German Jordán
+030803,3,Tolata,4.4,4.7,5.8,1.4,15,18.2,35.5,15.1,68.8,83.8,91,Q,NA,Cochabamba,German Jordán
+030901,1,Quillacollo,15.5,6.8,3.4,0.4,28.1,19.3,21.1,5.3,45.7,73.8,77.6,Q,NA,Cochabamba,Quillacollo
+030902,2,Sipe Sipe,3.4,3.2,3.6,1.5,14.5,17.5,35.9,20.5,73.9,88.4,93.5,Q,NA,Cochabamba,Quillacollo
+030903,3,Tiquipaya,14.5,6,4,0.7,26.8,17.6,22.5,7.7,47.8,74.6,79.3,Q,NA,Cochabamba,Quillacollo
+030904,4,Vinto,7.9,3.8,2.9,0.6,24.5,20.6,29.2,10.5,60.3,84.8,88.3,Q,NA,Cochabamba,Quillacollo
+030905,5,Colcapirhua,19.8,6.9,3.6,0.4,31,18.6,17,2.8,38.4,69.4,73.4,Q,NA,Cochabamba,Quillacollo
+031001,1,Sacaba,15.1,5.7,4,0.7,21.7,15.6,26.8,10.4,52.8,74.5,79.2,Q,NA,Cochabamba,Chapare
+031002,2,Colomi,0.5,0.8,2.7,1.2,4,6.5,50,34.2,90.7,94.7,98.6,Q,NA,Cochabamba,Chapare
+031003,3,Villa Tunari,3.1,1.7,3.4,1.4,10.8,9.7,45.8,24.1,79.6,90.4,95.2,Q(Ay.O),yurakaré. coloniz. cocalera,Cochabamba,Chapare
+031101,1,Tapacarí,0.1,0.1,1.2,2.5,1,1.3,29.8,64,95.1,96.1,99.8,Q(Ay),NA,Cochabamba,Tapacarí
+031201,1,Totora,0.3,0.4,0.8,1.5,2,4.2,32.7,58,94.9,96.9,99.2,Q,NA,Cochabamba,Carrasco
+031202,2,Pojo,1.6,1.2,3,3.5,1.7,4.2,34.5,50.3,89,90.7,97.2,Q,NA,Cochabamba,Carrasco
+031203,3,Pocona,0.1,0.1,1.7,2.5,1,1.4,34.5,58.6,94.5,95.5,99.7,Q,NA,Cochabamba,Carrasco
+031204,4,Chimoré,8.6,2.6,3.7,1.3,16.8,11.2,38.1,17.8,67.1,83.9,88.9,Q,coloniz. Cocalera; yurakaré,Cochabamba,Carrasco
+031205,5,Puerto Villarroel,6.3,2,3.7,1.5,11.8,8.2,46.1,20.4,74.7,86.5,91.7,Q(O),col. cocalera; yurakaré. yuki,Cochabamba,Carrasco
+031206,6,Entre Rios,7.4,2.7,4.7,1.5,18,9.6,41.8,14.4,65.8,83.8,90,Q,colonización cocalera,Cochabamba,Carrasco
+031301,1,Mizque,0.5,0.6,1.2,3,1.9,3.4,25.4,64.1,92.9,94.8,99,Q,NA,Cochabamba,Mizque
+031302,2,Vila Vila,0.1,0.1,1,5,0.9,2.4,13.8,76.7,92.9,93.8,99.8,Q,NA,Cochabamba,Mizque
+031303,3,Alalay,0,0,0.3,2.5,0.3,0.8,20.6,75.5,96.9,97.2,100,Q,NA,Cochabamba,Mizque
+031401,1,Punata,4.8,7.1,7.7,2,9.8,17,36.8,14.7,68.5,78.3,88,Q,NA,Cochabamba,Punata
+031402,2,Villa Rivero,0.9,1.5,1.6,1.4,2.7,5,49,37.9,91.9,94.6,97.6,Q,NA,Cochabamba,Punata
+031403,3,San Benito,2.6,2.9,4.6,1.3,9.9,15.7,43.9,19,78.6,88.5,94.4,Q,NA,Cochabamba,Punata
+031404,4,Tacachi,0.4,1.4,3.2,2.2,6.4,8.7,45.7,32.1,86.5,92.9,98.3,Q,NA,Cochabamba,Punata
+031405,5,Cuchumuela,0.1,0.2,1.4,3.4,2.7,3.7,38.9,49.7,92.3,95,99.8,Q,NA,Cochabamba,Punata
+031501,1,Bolívar,0.2,0.2,1.1,2.1,1,2.1,33.2,60.1,95.4,96.4,99.6,Q,NA,Cochabamba,Bolívar
+031601,1,Tiraque,1.9,1.2,3.8,2.9,6.1,5.3,41.5,37.1,83.9,90,96.7,Q,NA,Cochabamba,Tiraque
+040101,Cp,Oruro,28.3,7.4,2.5,0.1,31.8,15.6,12.8,1.3,29.7,61.5,64.1,AyQ,ciudad multiétnica,Oruro,Cercado
+040102,1,Caracollo,3.7,1.7,2.7,1,19.2,15.9,43.9,11.8,71.6,90.8,94.5,Ay(Q),NA,Oruro,Cercado
+040103,2,El Choro,1.3,1,2.8,0.6,13.4,16.5,54.1,10.3,80.9,94.3,97.7,Q(Ay),NA,Oruro,Cercado
+040104,3,Soracachi,0.4,0.5,2,1.1,5.3,6.4,60.9,23.4,90.7,96,99.1,Ay,NA,Oruro,Cercado
+040201,1,Challapata,3,1.5,3.4,1,13.6,11.6,43.8,22.2,77.6,91.2,95.6,Q(Ay),uru murato,Oruro,Abaroa
+040202,2,Quillacas,2.2,1.1,1.7,0.2,25.6,21,39,9.3,69.3,94.9,96.8,Ay(Q),NA,Oruro,Abaroa
+040301,1,Corque,0.6,0.3,0.6,0.3,10.2,12.7,60.7,14.6,88,98.2,99.1,Ay(Q),NA,Oruro,Carangas
+040302,2,Choque Cota,0.9,0.7,0.5,0.5,15,20.2,46.3,15.9,82.4,97.4,98.4,Ay,NA,Oruro,Carangas
+040401,1,Curahuara de Carangas,1.3,0.8,2.2,1.4,15.9,19.9,44.7,13.7,78.3,94.2,97.8,Ay,NA,Oruro,Sajama
+040402,2,Turco,0.8,0.3,0.7,0.2,16,23.3,48.7,10,82,98,98.9,Ay,NA,Oruro,Sajama
+040501,1,Huachacalla,4.8,2.2,1.4,0.1,32.5,24,30.5,4.5,59,91.5,93,Ay,influencia C de Chile,Oruro,Litoral
+040502,2,Escara,0.5,0.2,0.2,0,21.3,20.2,51.9,5.6,77.7,99,99.2,Ay,NA,Oruro,Litoral
+040503,3,Cruz de Machacamarca,1.2,0.9,1.1,0.2,30.7,18.8,39.7,7.3,65.8,96.5,97.8,Ay,NA,Oruro,Litoral
+040504,4,Yunguyo de Litoral,3.8,1.4,0.5,0,32.5,23.9,29.7,8.1,61.7,94.2,94.7,Ay,NA,Oruro,Litoral
+040505,5,Esmeralda,0.9,0,3.4,0.6,22,14.1,49.1,10,73.2,95.2,99.2,Ay,NA,Oruro,Litoral
+040601,1,Poopó,2.7,1.5,1.6,0.4,21.2,19.4,41.4,11.8,72.6,93.8,95.8,Q(Ay.O),minas. uru murato,Oruro,Poopo
+040602,2,Pazña,6.8,3.1,2.2,0.4,25.5,19.1,35.1,7.9,62.1,87.6,90.2,Q(Ay),minas,Oruro,Poopo
+040603,3,Antequera,8.7,3.3,2.2,0.5,24.9,15.4,36.7,8.4,60.5,85.4,88.1,Q(Ay),minas,Oruro,Poopo
+040701,1,Huanuni,12.6,7.2,3.6,0.6,25.5,19.4,23.8,7.4,50.6,76.1,80.3,Q(Ay),minas,Oruro,Pantaleon Dalence
+040702,2,Machacamarca,9.5,4.8,1.9,0.3,21.7,24.5,30.3,6.9,61.7,83.4,85.6,Q(Ay),minas,Oruro,Pantaleon Dalence
+040801,1,Salinas de GMendoza,1.7,0.8,1.1,0.5,20.4,23,44.4,8.2,75.6,96,97.6,Ay(Q),NA,Oruro,Ladislao Cabrera
+040802,2,Pampa Aullagas,0.5,0.3,0.5,0.1,19,14.1,55.6,10,79.7,98.7,99.3,Ay(Q),NA,Oruro,Ladislao Cabrera
+040901,1,Sabaya,4.1,1.7,1.9,0.4,33.5,26.5,28.1,3.8,58.4,91.9,94.2,Ay,influencia C de Chile,Oruro,Sabaya
+040902,2,Coipasa,0.5,0.5,0.2,0,50.6,29.2,17.7,1.2,48.1,98.7,98.9,Ay,influencia C de Chile,Oruro,Sabaya
+040903,3,Chipaya,0.1,0.4,1,0.6,1.8,2.3,67,26.8,96.1,97.9,99.5,O,uru chipaya,Oruro,Sabaya
+041001,1,Toledo,1.7,1,1.8,0.7,19,15.6,44.9,15.2,75.7,94.7,97.2,Ay(Q),NA,Oruro,Saucari
+041101,1,Eucaliptus,3,1.3,2,0.8,20.8,15.7,39.5,17.1,72.3,93.1,95.9,Ay,NA,Oruro,Tomas Barron
+041201,1,Sant Andamarca,0.5,0.6,2.3,0.5,10,9.7,58.6,17.8,86.1,96.1,98.9,Ay(Q),Orinoca: nació Evo Morales,Oruro,Sur Carangas
+041202,2,Belén de Andamarca,0.4,0.3,0.5,0.2,12.3,10.5,55.8,19.9,86.2,98.5,99.2,Ay(Q),NA,Oruro,Sur Carangas
+041301,1,San Pedro de Totora,0.1,0.2,1.2,0.8,4.7,7.2,59.7,26.2,93.1,97.8,99.8,Ay,NA,Oruro,San Pedro de Totora
+041401,1,Huari,3.2,1.8,2.4,0.6,15.8,11.6,44.1,20.4,76.1,91.9,94.9,Ay(Q),obreros cervecería,Oruro,Sebastián Pagador
+041501,1,La Rivera,8.1,2.2,0,0,29.7,44.4,14.4,1.1,59.9,89.6,89.6,Ay,frontera Chile,Oruro,Mejillones
+041502,2,Todos Santos,4.7,0.6,0,0,40.6,28.6,22.2,3.3,54.1,94.7,94.7,Ay,frontera Chile,Oruro,Mejillones
+041503,3,Carangas,40.5,8.5,0.9,0,30.2,10,9.7,0.3,20,50.2,51.1,Ay,frontera Chile,Oruro,Mejillones
+041601,1,Huayllamarca,0.6,0.5,1.9,2,10.1,11.6,54.3,18.9,84.8,94.9,98.8,Ay,NA,Oruro,Nor Carangas
+050101,Cp,Potosí,15.2,8.6,3.2,0.5,25.7,21.2,19.8,5.8,46.8,72.5,76.2,Q,ciudad multiétnica,Potosi,Tomas Frias
+050102,1,Tinguipaya,0.1,0.1,0.9,3.2,0.9,1.2,22.1,71.4,94.7,95.6,99.7,Q,NA,Potosi,Tomas Frias
+050103,2,Yocalla,0.9,1.1,2.3,0.9,7.6,9.4,52.1,25.7,87.2,94.8,98,Q,NA,Potosi,Tomas Frias
+050104,3,Urmiri,0.2,0.2,1.8,1.3,3.5,3.7,59,30.3,93,96.5,99.6,AyQ,NA,Potosi,Tomas Frias
+050201,1,Uncía,3,2.5,2.3,2,7.6,7.6,38.1,36.8,82.5,90.1,94.4,AyQ,minas y ayllus,Potosi,Rafael Bustillo
+050202,2,Chayanta,0.2,0.3,0.5,0.6,3.3,7.2,40.4,47.4,95,98.3,99.4,AyQ,minas y ayllus,Potosi,Rafael Bustillo
+050203,3,Llallagua,6.4,4.4,2.1,0.6,22.8,23.5,24.4,15.7,63.6,86.4,89.1,AyQ,minas y ayllus,Potosi,Rafael Bustillo
+050301,1,Betanzos,0.5,0.7,1.9,1.2,2.7,4,41.8,47.3,93.1,95.8,98.9,Q,NA,Potosi,Cornelio Saavedra
+050302,2,Chaquí,0.2,0.3,0.8,1,4.6,6.4,46.7,40,93.1,97.7,99.5,Q,NA,Potosi,Cornelio Saavedra
+050303,3,Tacobamba,0,0.1,0.5,1.6,0.8,1.5,20.7,74.6,96.8,97.6,99.7,Q,NA,Potosi,Cornelio Saavedra
+050401,1,Colquechaca,0.1,0.2,0.6,2.3,1.1,2.7,24.4,68.6,95.7,96.8,99.7,Q,NA,Potosi,Chayanta
+050402,2,Ravelo,0,0.1,0.8,3.2,0.4,1,21.2,73.2,95.4,95.8,99.8,Q,NA,Potosi,Chayanta
+050403,3,Pocoata,0.1,0.2,1.7,4.7,1.2,2.7,31.5,57.9,92.1,93.3,99.7,Q,NA,Potosi,Chayanta
+050404,4,Ocurí,0.1,0.2,1,3.1,0.8,1.5,20.3,73,94.8,95.6,99.7,Q,NA,Potosi,Chayanta
+050501,1,SP Buenavista,0.1,0.1,1.4,5.2,0.4,1.5,18.3,73,92.8,93.2,99.8,Q,NA,Potosi,Charcas
+050502,2,Toro Toro,0.1,0.1,0.5,2.4,0.8,1.8,25.8,68.6,96.2,97,99.9,Q,NA,Potosi,Charcas
+050601,1,Cotagaita,2.7,2.4,3,1.2,9.2,10.9,48.5,22.2,81.6,90.8,95,Q,NA,Potosi,Nor Chichas
+050602,2,Vitichi,0.7,1.2,3.6,2.5,1.9,3.6,46,40.4,90,91.9,98,Q,NA,Potosi,Nor Chichas
+050701,1,Sacaca,0.3,0.5,0.8,2.6,1.4,2.9,28.2,63.1,94.2,95.6,99,AyQ,NA,Potosi,Alonso de Ibañez
+050702,2,Caripuyo,0.2,0.3,0.8,0.9,1.1,2,52.3,42.5,96.8,97.9,99.6,AyQ,NA,Potosi,Alonso de Ibañez
+050801,1,Tupiza,26.1,6.6,3.7,0.4,27.2,16,16.9,3,35.9,63.1,67.2,Q,C por minas + front. Argent.,Potosi,Sur Chichas
+050802,2,Atocha,14,7.2,4.3,0.5,30.4,21.8,18,3.8,43.6,74,78.8,Q,C por minas + front. Argent.,Potosi,Sur Chichas
+050901,1,Colcha K,1.7,1,2.3,0.4,12.9,17.6,54.3,9.8,81.7,94.6,97.3,Q,NA,Potosi,Nor Lípez
+050902,2,San Pedro de Quemes,42,6.6,1.4,0,28,13.6,8.2,0.1,21.9,49.9,51.3,Ay,influencia C de Chile,Potosi,Nor Lípez
+051001,1,SPablo Lipez,15.1,1.1,1.7,0.3,11.4,7.8,49.2,13.2,70.2,81.6,83.6,Q,NA,Potosi,Sur Lípez
+051002,2,Mojinete,0,0.2,0,0.2,10,13.8,61.7,14.2,89.7,99.7,99.9,Q,NA,Potosi,Sur Lípez
+051003,3,San Antonio de Esmoruco,0.6,0.9,7.5,1,10.4,6.6,60.5,12.5,79.6,90,98.5,Q,NA,Potosi,Sur Lípez
+051101,1,Puna,0.3,0.4,1.4,1.6,2.2,3.2,39.9,51,94.1,96.3,99.3,Q,NA,Potosi,José Maria Linares
+051102,2,"Caiza ""D""",0.9,0.9,1.3,1.7,5.9,7.8,55.1,26.5,89.4,95.3,98.3,Q,NA,Potosi,José Maria Linares
+051201,1,Uyuni,14.1,4.7,2.8,0.3,29.6,17.9,25.2,5.4,48.5,78.1,81.2,Q(Ay),nudo ferrov. a Argent Chile,Potosi,Antonio Quijarro
+051202,2,Tomave,0.6,0.5,1.5,0.5,9.7,12.1,54.7,20.4,87.2,96.9,98.9,Q,NA,Potosi,Antonio Quijarro
+051203,3,Porco,2.7,1.6,2.5,0.5,22.3,16,40.4,13.9,70.3,92.6,95.6,Q,NA,Potosi,Antonio Quijarro
+051301,1,Arampampa,0.2,0.2,1.7,6.2,0.7,1.6,25.9,63.5,91,91.7,99.6,NA,%,Potosi,Bernardino Bilbao Rioja
+051302,2,Acasio,0.1,0.4,1,2.3,0.7,1.6,21.9,72.1,95.6,96.3,99.6,Q,NA,Potosi,Bernardino Bilbao Rioja
+051401,1,Llica,3.9,2.2,1,0,36.4,30.3,23.6,2.6,56.5,92.9,93.9,Ay,influencia C de Chile,Potosi,Daniel Campos
+051402,2,Tahua,1.7,1,0.4,0.1,33.9,34.5,26,2.6,63.1,97,97.5,Ay,NA,Potosi,Daniel Campos
+051501,1,Villazón,33.9,6.6,4.4,0.4,26.7,10.7,14.9,2.3,27.9,54.6,59.4,Q,C por frontera Argentina,Potosi,Modesto Omiste
+051601,1,SAgustín,0.3,0.9,3.8,0.2,5.5,8.9,65.4,15,89.3,94.8,98.8,Q,NA,Potosi,Enrique Baldivieso
+060101,Cp,Tarija,75.4,2.6,1.6,0.1,12.3,3.1,4.5,0.4,8,20.3,22,NA,inmigrantes Q,Tarija,Cercado
+060201,1,Padcaya,94.9,0.8,0.4,0,2.2,0.3,1.2,0.1,1.6,3.8,4.2,NA,NA,Tarija,Aniceto Arce
+060202,2,Bermejo,71.2,2.6,2.4,0.2,13.1,2.9,6.9,0.7,10.5,23.6,26.2,NA,inmigrantes Q,Tarija,Aniceto Arce
+060301,1,Yacuiba,61.8,3.1,2.6,0.3,17.3,4.2,9,1.6,14.8,32.1,35,G,O G weenhayek,Tarija,Gran Chaco
+060302,2,Caraparí,78.8,1.4,1.5,0.3,10.6,1.2,5,1.3,7.5,18.1,19.9,G,NA,Tarija,Gran Chaco
+060303,3,Villamontes,73.1,1.9,1.3,0.4,11.3,2.6,6.3,3.1,12,23.3,25,O,weenhayek. [G],Tarija,Gran Chaco
+060401,1,Uriondo,95,0.7,0.8,0,2.2,0.2,0.9,0.1,1.2,3.4,4.2,NA,NA,Tarija,Aviles
+060402,2,Yunchará,90.4,1.1,0.5,0,6.5,0.7,0.7,0,1.4,7.9,8.4,Q,residual,Tarija,Aviles
+060501,1,San Lorenzo,95.4,0.9,0.4,0.1,2.1,0.3,0.7,0.1,1.1,3.2,3.7,NA,NA,Tarija,Méndez
+060502,2,El Puente,95.3,0.7,0.6,0.1,2.1,0.4,0.8,0.1,1.3,3.4,4.1,NA,NA,Tarija,Méndez
+060601,1,Entre Ríos,75.8,0.9,0.8,0.1,10.1,1.4,8.5,2.4,12.3,22.4,23.3,G,NA,Tarija,Burnet O' Oconnor
+070101,Cp,Sta Cruz de la Sierra,61.4,2.5,1.7,0.1,23.4,4.1,6.2,0.5,10.8,34.2,36,Q(ChG),ciudad multiétnica,Santa Cruz,Andrés Ibañez
+070102,1,Cotoca,59.8,1.7,2,0.2,21.8,2.7,9.9,1.8,14.4,36.2,38.4,Q(Ch),NA,Santa Cruz,Andrés Ibañez
+070103,2,Porongo,70.5,1.7,1.4,0.2,14.7,2.3,7.4,1.8,11.5,26.2,27.8,Q,NA,Santa Cruz,Andrés Ibañez
+070104,3,La Guardia,61.3,2.4,2.4,0.2,20.1,3.4,8.7,1.5,13.6,33.7,36.3,Q,NA,Santa Cruz,Andrés Ibañez
+070105,4,El Torno,54.8,3.1,3.2,0.4,18.1,4.1,13.3,3,20.4,38.5,42.1,Q,NA,Santa Cruz,Andrés Ibañez
+070201,1,Warnes,59.6,2,2.3,0.3,22.3,3.4,8.5,1.5,13.4,35.7,38.3,Q(G),zafra caña,Santa Cruz,Warnes
+070202,2,Okinawa Uno,61.6,1.3,1.3,0.1,26.4,2.2,5.9,1.1,9.2,35.6,37,Q(Ch),NA,Santa Cruz,Warnes
+070301,1,S Ignacio de Velasco,16.9,0.4,0.2,0,76.2,2.7,3,0.7,6.4,82.6,82.8,Ch,NA,Santa Cruz,Velasco
+070302,2,S Miguel de Velasco,6.5,0.1,0.1,0,89,2.6,1.5,0.1,4.2,93.2,93.3,Ch,(ayoreo?),Santa Cruz,Velasco
+070303,3,San Rafael,19.3,0.4,0,0,77.6,1.5,1,0.1,2.6,80.2,80.2,Ch,NA,Santa Cruz,Velasco
+070401,1,Buena Vista,54.6,1.9,2.7,0.7,17.3,4.1,14.3,4.3,22.7,40,43.4,Q,NA,Santa Cruz,Ichilo
+070402,2,San Carlos,59.3,2,2.8,0.6,17.6,3.7,11.3,2.6,17.6,35.2,38.6,Q,NA,Santa Cruz,Ichilo
+070403,3,Yapacaní,25.9,3.5,3.9,0.7,27.2,9.9,23.5,5.5,38.9,66.1,70.7,Q(O),coloniz. yuracaré,Santa Cruz,Ichilo
+070404,4,San Juan,52,2.2,2.6,0.5,24.3,4.3,11.3,2.7,18.3,42.6,45.7,Q,NA,Santa Cruz,Ichilo
+070501,1,SJosé de Chiquitos,36,0.5,0.2,0,60.3,1,1.5,0.5,3,63.3,63.5,Ch,(O) ayoreo,Santa Cruz,Chiquitos
+070502,2,Pailón,68.4,0.9,0.6,0.1,22.5,1.7,4.7,1.1,7.5,30,30.7,C(Q.O),ayoreo,Santa Cruz,Chiquitos
+070503,3,Roboré,22.5,0.6,0.2,0.1,73.2,1.5,1.3,0.6,3.4,76.6,76.9,Ch(O),ayoreo,Santa Cruz,Chiquitos
+070601,1,Portachuelo,84.8,0.8,0.8,0.1,8.7,1,3.3,0.4,4.7,13.4,14.3,NA,%,Santa Cruz,Sara
+070602,2,Santa Rosa del Sara,56.8,2.1,3,1.2,14.9,3.4,15,3.6,22,36.9,41.1,Q,NA,Santa Cruz,Sara
+070603,3,Colpa Belgica,73.1,2.3,0.9,0.2,16.3,1.9,4.7,0.7,7.3,23.6,24.7,G,ingenio azúcar,Santa Cruz,Sara
+070701,1,Lagunillas,30.6,1.4,0.9,0.3,14.7,6.6,32.9,12.6,52.1,66.8,68,G,NA,Santa Cruz,Cordillera
+070702,2,Charagua,29,1.3,0.8,1.5,23.9,8.8,21.8,13,43.6,67.5,69.8,G,NA,Santa Cruz,Cordillera
+070703,3,Cabezas,72.9,1.3,0.9,0.2,15.6,2.8,5.4,1,9.2,24.8,25.9,G.Q,NA,Santa Cruz,Cordillera
+070704,4,Cuevo,46,2.9,1.7,0.2,18.5,7.5,18.6,4.6,30.7,49.2,51.1,G,Conflicto Alto Parapetí,Santa Cruz,Cordillera
+070705,5,Gutiérrez,7.9,1.2,1.8,0.6,14.9,7.8,41.3,24.4,73.5,88.4,90.8,G,NA,Santa Cruz,Cordillera
+070706,6,Camiri,57.1,2.9,1.8,0.6,23.7,4,7,2.8,13.8,37.5,39.9,G,NA,Santa Cruz,Cordillera
+070707,7,Boyuibe,45.9,2.3,1.5,0,27.1,8.5,13.1,1.6,23.2,50.3,51.8,G,NA,Santa Cruz,Cordillera
+070801,1,Vallegrande,94.2,0.9,0.3,0.1,2.6,0.5,1.1,0.2,1.8,4.4,4.8,NA,NA,Santa Cruz,Vallegrande
+070802,2,Trigal,94.8,0.8,0.4,0,1.7,0.5,1.3,0.4,2.2,3.9,4.3,NA,NA,Santa Cruz,Vallegrande
+070803,3,Moro Moro,96.3,0.3,0,0,1.7,0.3,1.3,0.1,1.7,3.4,3.4,NA,NA,Santa Cruz,Vallegrande
+070804,4,Postrer Valle,93.9,0.6,0.2,0,4.3,0.3,0.5,0.2,1,5.3,5.5,NA,NA,Santa Cruz,Vallegrande
+070805,5,Pucara,96.7,0.9,0.3,0.2,1.2,0.2,0.1,0.4,0.7,1.9,2.4,NA,NA,Santa Cruz,Vallegrande
+070901,1,Samaipata,75.2,1.2,1.4,0.2,8.6,2,9.9,1.6,13.5,22.1,23.7,Q,NA,Santa Cruz,Florida
+070902,2,Pampa Grande,67.1,2.9,4.2,0.7,6.8,2.3,12.8,3.2,18.3,25.1,30,Q,NA,Santa Cruz,Florida
+070903,3,Mairana,64.6,2.7,3.2,0.5,10.5,2.3,11.4,4.9,18.6,29.1,32.8,Q,NA,Santa Cruz,Florida
+070904,4,Quirusillas,89.9,0.8,1.4,0.3,3.2,1.1,2.8,0.5,4.4,7.6,9.3,NA,NA,Santa Cruz,Florida
+071001,1,Montero,59.4,2.9,2.6,0.3,19.9,4.5,8.9,1.4,14.8,34.7,37.6,Q,NA,Santa Cruz,Obispo Santiestevan
+071002,2,Gral. Saavedra,55.6,3.4,3.3,0.9,16.2,4.1,12.8,3.8,20.7,36.9,41.1,Q(G),NA,Santa Cruz,Obispo Santiestevan
+071003,3,Mineros,61.3,3.1,2.6,0.3,17.8,4.1,9.6,1.2,14.9,32.7,35.6,Q,NA,Santa Cruz,Obispo Santiestevan
+071004,4,Fernández Alonso,21.3,2.8,2.3,0.6,34.6,9.7,23.7,4.9,38.3,72.9,75.8,Q,NA,Santa Cruz,Obispo Santiestevan
+071005,5,San Pedro,26.9,2.4,2.1,0.3,34.9,8.1,20.7,4.6,33.4,68.3,70.7,Q,NA,Santa Cruz,Obispo Santiestevan
+071101,1,Concepción,20.9,0.4,0.4,0,69.3,3.7,4.5,0.8,9,78.3,78.7,Ch(O),ayoreo,Santa Cruz,Ñuflo de Chávez
+071102,2,San Javier,23.8,0.4,0.3,0,70.7,2,2.7,0.2,4.9,75.6,75.9,Ch,NA,Santa Cruz,Ñuflo de Chávez
+071103,3,San Ramón,50.2,1,0.9,0.1,39.6,3,4.6,0.7,8.3,47.9,48.9,Q,NA,Santa Cruz,Ñuflo de Chávez
+071104,4,San Julián,28.6,2.5,3.9,0.8,25.9,7.1,25.2,6.1,38.4,64.3,69,Q,NA,Santa Cruz,Ñuflo de Chávez
+071105,5,San Antonio de Lomerío,6.8,0.7,0.1,0.1,53.2,20.7,16.1,2.2,39,92.2,92.4,NA,ª sec S Miguel,Santa Cruz,Ñuflo de Chávez
+071106,6,Cuatro Cañadas,45.2,2,2.5,0.5,23.1,5.2,18.2,3.3,26.7,49.8,52.8,Q(O),ayoreo,Santa Cruz,Ñuflo de Chávez
+071201,1,San Matías,37.7,0.6,0.2,0,58.5,1.7,1.2,0.1,3,61.5,61.7,Ch,NA,Santa Cruz,Angel Sandoval
+071301,1,Comarapa,37.8,5.7,5.3,1.5,16.8,6.8,19.4,6.9,33.1,49.9,56.7,Q,NA,Santa Cruz,Manuel Maria Caballero
+071302,2,Saipina,56.4,5.2,5.7,0.6,11.8,4.5,13.1,2.6,20.2,32,38.3,Q,NA,Santa Cruz,Manuel Maria Caballero
+071401,1,Pto Suarez,49.5,1,0.3,0,45.2,1.6,2,0.4,4,49.2,49.5,Ch,NA,Santa Cruz,German Busch
+071402,2,Puerto Quijarro,45.4,1.8,1,0,42.1,4.3,4.7,0.5,9.5,51.6,52.6,Ch(Q),NA,Santa Cruz,German Busch
+071403,3,Carmen Rivero Torrez,25.9,0.4,0.2,0.1,66.2,1.3,4.4,1.5,7.2,73.4,73.7,Ch(O),ayoreo,Santa Cruz,German Busch
+071501,1,Ascensión de Guarayos,31,2.2,2.1,0.9,31.7,6.7,19,6.5,32.2,63.9,66.9,O(Q),Guarayo; algunos Ch y G,Santa Cruz,Guarayos
+071502,2,Urubichá,2.1,0.9,1,1.1,5.8,5.5,29.2,54.3,89,94.8,96.9,O,Guarayo,Santa Cruz,Guarayos
+071503,3,El Puente,37.6,1.5,1.1,0.2,34.3,6.5,15.3,3.6,25.4,59.7,61,Q.O,Guarayo,Santa Cruz,Guarayos
+080101,Cp,Trinidad,54.3,1.2,0.5,0.1,39.3,2.2,2.1,0.3,4.6,43.9,44.5,M,ciudad multiétnica,Beni,Cercado
+080102,1,San Javier,62.4,0.7,0,0,34.7,1,0.8,0.4,2.2,36.9,36.9,M(O),canichana,Beni,Cercado
+080201,1,Riberalta,87.7,0.9,0.3,0.1,8.2,1.1,1.2,0.5,2.8,11,11.4,NA,takana. chácobo. pakawara,Beni,Vaca Diez
+080202,2,Guayaramerín,85.7,1.2,0.4,0.1,10.5,1,1,0.2,2.2,12.7,13.2,NA,chácobo,Beni,Vaca Diez
+080301,1,Reyes,35.4,0.6,0.1,0,58.9,2.4,1.7,0.9,5,63.9,64,O,Reyesano. takana,Beni,José Ballivián
+080302,2,San Borja,53.3,1.5,0.7,0.7,16.8,4.2,10.3,12.5,27,43.8,45.2,O,chimán. reyesano,Beni,José Ballivián
+080303,3,Santa Rosa,87.3,1,0.3,0,10.4,0.5,0.5,0,1,11.4,11.7,NA,NA,Beni,José Ballivián
+080304,4,Rurrenabaque,50.8,1.9,1.1,0.2,23.7,5,13,4.3,22.3,46,47.3,O,AyQ takana. chimán. reyesano,Beni,José Ballivián
+080401,1,Sta Ana de Yacuma,48,1.2,0.3,0.6,43.2,2.9,2.5,1.4,6.8,50,50.9,O,movima. chimán,Beni,Yacuma
+080402,2,Exaltación,69.1,0.9,0.1,0.1,25.2,2.6,1.8,0.3,4.7,29.9,30.1,O,movima,Beni,Yacuma
+080501,1,San Ignacio,14.8,0.7,0.4,0.1,63.7,7.3,9.4,3.6,20.3,84,84.5,M(Os),movima. chimán. yurakaré,Beni,Moxos
+080601,1,Loreto,36.4,1.2,0.6,0.1,50.8,3.9,2.6,4.3,10.8,61.6,62.3,M(O),yurakaré,Beni,Marban
+080602,2,San Andrés,51.8,0.5,0.4,0.3,39.9,1.9,3.1,2.2,7.2,47.1,47.8,M(Q),movima,Beni,Marban
+080701,1,San Joaquín,68.7,1.1,0.1,0.1,27.9,1.4,0.6,0.1,2.1,30,30.2,O(M),baure. movima. joaq. itonam,Beni,Mamore
+080702,2,San Ramón,85.5,0.4,0.2,0.1,13.1,0.3,0.4,0,0.7,13.8,14.1,O,itonama,Beni,Mamore
+080703,3,Puerto Siles,65.9,0.2,0.2,0,32.2,1,0.2,0.2,1.4,33.6,33.8,O,joaquiniano,Beni,Mamore
+080801,1,Magdalena,78.2,0.8,0.3,0.1,15.6,3.6,1,0.4,5,20.6,21,O,itonama,Beni,Itenez
+080802,2,Baures,86.2,1.3,0.4,0.1,9.7,0.6,1.3,0.4,2.3,12,12.5,O,baure,Beni,Itenez
+080803,3,Huacaraje,86.8,0.5,0,0,12,0.4,0.2,0,0.6,12.6,12.6,NA,NA,Beni,Itenez
+090101,Cp,Cobija,77.8,2.2,0.9,0.1,12.5,3.3,3,0.2,6.5,19,20,NA,NA,Pando,Nicolás Suárez
+090102,1,Porvenir,94,0.6,0.5,0.2,3.2,0.5,0.9,0.2,1.6,4.8,5.5,NA,NA,Pando,Nicolás Suárez
+090103,2,Bolpebra,82,1.2,0.9,0.2,7.2,2.3,5.2,1,8.5,15.7,16.8,NA,machineri. yaminawa,Pando,Nicolás Suárez
+090104,3,Bella Flor,91,1.3,0.2,0.1,5.3,1.3,0.8,0.1,2.2,7.5,7.8,NA,NA,Pando,Nicolás Suárez
+090201,1,Puerto Rico,91.6,0.7,0.1,0.1,5.7,0.8,0.9,0,1.7,7.4,7.6,NA,NA,Pando,Manuripi
+090202,2,San Pedro,81.9,0.3,0.1,0,16.8,0.4,0.4,0.1,0.9,17.7,17.8,O,takana. cavineño,Pando,Manuripi
+090203,3,Filadelfia,93.8,1,0.3,0.1,3.9,0.5,0.3,0.1,0.9,4.8,5.2,NA,NA,Pando,Manuripi
+090301,1,Gonz Moreno,67.1,0.7,0.2,0.3,18.5,1.1,8.5,3.5,13.1,31.6,32.1,O,ese ejja. takana. cavineño,Pando,Madre de Dios
+090302,2,San Lorenzo,74.8,0.8,0.1,0,19.7,3.8,0.7,0.1,4.6,24.3,24.4,O,takana. cavineño,Pando,Madre de Dios
+090303,3,El Sena,87.3,1.1,0.3,0.1,9.4,1.1,0.8,0,1.9,11.3,11.7,NA,takana,Pando,Madre de Dios
+090401,1,Santa Rosa,95,0.8,0.4,0.3,2.6,0.3,0.5,0,0.8,3.4,4.1,NA,NA,Pando,Abuna
+090402,2,Ingavi,93.2,0.4,0.1,0.1,4.4,1.4,0.1,0.2,1.7,6.1,6.3,NA,NA,Pando,Abuna
+090501,1,Nva Esperanza,63.9,3.3,13.2,2,5.6,1.2,8.4,2.5,12.1,17.7,32.9,Q,NA,Pando,Federico Román
+090502,2,Loma Alta,98.5,0.1,0,0,0.8,0.5,0.1,0,0.6,1.4,1.4,NA,NA,Pando,Federico Román
+090503,3,Santos Mercado,94.4,1.1,0.9,0,2.2,0.6,0.4,0.4,1.4,3.6,4.5,NA,NA,Pando,Federico Román
