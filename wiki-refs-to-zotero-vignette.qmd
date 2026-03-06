@@ -1,0 +1,309 @@
+---
+title: "Importing Wikipedia References into Zotero"
+subtitle: "A walkthrough using `wiki-refs-to-zotero.R`"
+author: ""
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    theme: cosmo
+execute:
+  eval: false
+  echo: true
+  warning: false
+---
+
+## Overview
+
+`wiki-refs-to-zotero.R` extracts every citation template from a Wikipedia
+article and imports the references into your Zotero library as a new
+collection.  It handles the two Wikipedia citation styles — inline
+`{{Cite book|...}}` templates and `{{harvc}}` book-section entries in a
+"Sources" section — as well as mixed articles that use both.
+
+The workflow has three logical phases:
+
+1. **Parse** — fetch the wikitext and extract citation templates into a tidy
+   tibble.
+2. **Enrich** *(optional)* — look up DOIs and ISBNs via the c2z package to
+   fill in metadata that Wikipedia citations sometimes omit (e.g. publisher,
+   full date, correct author names).
+3. **Import** — post the references to a new Zotero collection via the Zotero
+   REST API.
+
+A **dry run** separates phases 1–2 from phase 3.  Use it to inspect and clean
+up the parsed references before committing anything to Zotero.  Because dry
+runs return the fully-parsed tibble, you can complete the import later with a
+single function call — no second Wikipedia fetch required.
+
+## Prerequisites
+
+```{r}
+#| label: setup
+library(WikipediR)   # MediaWiki API client
+library(tidyverse)
+library(stringi)
+library(httr2)
+library(c2z)         # Zotero API helpers (ZoteroDoi, ZoteroIsbn, ZoteroPost)
+
+source("wiki-refs-to-zotero.R")
+```
+
+You also need a Zotero API key with **write** access.  Store it as an
+environment variable (e.g. in `.Renviron`) so you never hardcode credentials:
+
+```
+ZOTERO_USER_ID = 1234567
+ZOTERO_API_KEY = aBcDeFgHiJkLmNoPqRsTuVwX
+```
+
+Your user ID appears in your Zotero profile URL:
+`https://www.zotero.org/`**`yourusername`**.
+
+## Example page
+
+Throughout this vignette we use the article
+[Meiō incident](https://en.wikipedia.org/wiki/Me%C3%B6_incident)
+(`"Meiō_incident"`), a well-referenced article with a mix of journal articles,
+books, and book sections.  Swap it for any Wikipedia page title.
+
+## Step 1 — Dry run
+
+`wiki_refs_pipeline()` defaults to `dry_run = TRUE`, so the call below fetches
+and parses everything without touching Zotero.
+
+```{r}
+#| label: dry-run
+refs <- wiki_refs_pipeline(
+  page_name     = "Meiō_incident",
+  enrich        = TRUE,       # resolve DOIs and ISBNs via c2z
+  zotero_import = TRUE,       # prepare for import (but don't post yet)
+  user_id       = Sys.getenv("ZOTERO_USER_ID"),
+  api_key       = Sys.getenv("ZOTERO_API_KEY"),
+  dry_run       = TRUE        # <-- inspect only; nothing is posted
+)
+```
+
+You will see progress messages like:
+
+```
+Fetching wikitext for: Meiō_incident
+Extracting citations...
+Found 48 citation templates (before dedup)
+Deduplicating...
+Unique references: 44
+Enriching via c2z: 11 DOI(s), 8 ISBN(s) to look up
+Enrichment: 9 via DOI, 7 via ISBN, 3 failed, 25 skipped (no identifier)
+DRY RUN: Would create collection 'Meiō incident' with 44 new item(s) and 0 moved item(s).
+```
+
+## Step 2 — Inspect the results
+
+```{r}
+#| label: inspect
+# Overview of reference types
+refs |> count(itemType, sort = TRUE)
+
+# Quick look at the first few rows
+refs |>
+  select(itemType, first_author, year, title) |>
+  head(10)
+
+# Check enrichment outcomes
+refs |> count(.enrich_status)
+```
+
+Look for:
+
+- **Missing titles** (`is.na(title)`) — these may be bare `<ref>` notes rather
+  than bibliographic entries, or templates with unusual field names.
+- **`itemType == "document"`** rows — the catch-all for templates the parser
+  did not recognise.
+- **`enrich_status == "failed"`** — the DOI or ISBN was present but the lookup
+  returned nothing (often an older or non-CrossRef DOI).
+
+```{r}
+#| label: problem-rows
+# Flag anything that might need manual review
+refs |>
+  filter(is.na(title) | itemType == "document" | .enrich_status == "failed") |>
+  select(itemType, first_author, year, title, DOI, ISBN, .enrich_status)
+```
+
+::: {.callout-note}
+The `refs` tibble is a plain tibble — you can edit it with standard dplyr
+verbs before posting.  For example, to fix a title:
+
+```r
+refs <- refs |>
+  mutate(title = if_else(
+    first_author == "Smith" & year == "2003",
+    "The corrected title",
+    title
+  ))
+```
+:::
+
+## Step 3 — Check for existing Zotero items (optional)
+
+If you have already imported some of these references into Zotero from a
+different source, `check_library_for_refs()` will identify them and let you
+choose to move the existing items into the new collection rather than
+duplicating them.
+
+```{r}
+#| label: check-existing
+refs <- check_library_for_refs(
+  refs,
+  user_id = Sys.getenv("ZOTERO_USER_ID"),
+  api_key = Sys.getenv("ZOTERO_API_KEY")
+)
+```
+
+The function queries your entire library, finds matches by DOI → ISBN →
+normalised title + year, and shows an interactive side-by-side comparison for
+each candidate.  You respond with:
+
+- **y** — accept this match (move the existing item, don't create a new one)
+- **n** — decline (create a new item as normal)
+- **a** — accept this and all remaining matches
+- **s** — stop prompting (treat all remaining candidates as new items)
+
+After the loop you will see a summary:
+
+```
+Result: 3 existing item(s) to move, 41 new item(s) to create.
+```
+
+## Step 4 — Post to Zotero
+
+Once you are satisfied with `refs`, call `post_refs_to_zotero()`.  This is the
+only step that writes to Zotero; it uses the tibble already in memory and does
+**not** re-fetch Wikipedia.
+
+```{r}
+#| label: post
+result <- post_refs_to_zotero(
+  refs,
+  collection_name = "Meiō incident",
+  user_id         = Sys.getenv("ZOTERO_USER_ID"),
+  api_key         = Sys.getenv("ZOTERO_API_KEY")
+)
+```
+
+Open Zotero (or refresh your web library) and the new collection should appear
+with all references in it.
+
+## Step 5 — Retrieve Zotero item keys (optional)
+
+If you want to cite these items programmatically — for example, to build a
+Pandoc bibliography or link references to other data — retrieve the Zotero
+keys that were assigned on import:
+
+```{r}
+#| label: fetch-keys
+refs_with_keys <- fetch_zotero_keys(
+  refs,
+  user_id        = Sys.getenv("ZOTERO_USER_ID"),
+  api_key        = Sys.getenv("ZOTERO_API_KEY"),
+  collection_key = "XXXXXXXX"   # 8-char key shown in Zotero URL
+)
+
+refs_with_keys |>
+  select(first_author, year, title, zotero_key, zotero_match) |>
+  head(10)
+```
+
+`zotero_match` tells you how each ref was identified: `"doi"`, `"isbn"`,
+`"title_year"`, or `"unmatched"`.
+
+You can find the collection key by looking at your library URL after clicking
+the new collection, or with a quick httr2 call:
+
+```{r}
+#| label: find-collection-key
+request("https://api.zotero.org") |>
+  req_url_path_append("users", Sys.getenv("ZOTERO_USER_ID"), "collections") |>
+  req_headers(
+    `Zotero-API-Version` = "3",
+    Authorization = paste("Bearer", Sys.getenv("ZOTERO_API_KEY"))
+  ) |>
+  req_perform() |>
+  resp_body_json(simplifyVector = TRUE) |>
+  (\(x) tibble(key = x$key, name = x$data$name))() |>
+  filter(name == "Meiō incident")
+```
+
+## One-step workflow (no dry run)
+
+If you trust the parser and don't need to review the results first, you can
+run the entire pipeline in a single call:
+
+```{r}
+#| label: one-step
+refs <- wiki_refs_pipeline(
+  page_name       = "Meiō_incident",
+  enrich          = TRUE,
+  zotero_import   = TRUE,
+  check_existing  = TRUE,
+  fetch_keys      = TRUE,
+  user_id         = Sys.getenv("ZOTERO_USER_ID"),
+  api_key         = Sys.getenv("ZOTERO_API_KEY"),
+  dry_run         = FALSE   # <-- post immediately
+)
+```
+
+When `fetch_keys = TRUE` and `dry_run = FALSE`, the pipeline automatically
+calls `fetch_zotero_keys()` after import, so the returned tibble already
+contains `zotero_key` and `zotero_match` columns.
+
+## RIS export
+
+At any point after parsing you can export to RIS (for import into Mendeley,
+EndNote, or other reference managers):
+
+```{r}
+#| label: ris-export
+export_ris(refs, "meio_incident.ris")
+```
+
+## Continuing after a dry run — summary
+
+The key insight is that `wiki_refs_pipeline()` returns the fully-parsed (and
+optionally enriched) tibble regardless of `dry_run`.  The dry-run flag only
+suppresses the Zotero API write.  So the two-step pattern is:
+
+```{r}
+#| label: two-step-summary
+# ── Step 1: fetch, parse, enrich ─────────────────────────────────────────────
+refs <- wiki_refs_pipeline(
+  "Meiō_incident",
+  enrich        = TRUE,
+  zotero_import = TRUE,
+  user_id       = Sys.getenv("ZOTERO_USER_ID"),
+  api_key       = Sys.getenv("ZOTERO_API_KEY"),
+  dry_run       = TRUE    # nothing written to Zotero
+)
+
+# ... inspect, filter, or edit `refs` here ...
+
+# ── Step 2: post (no second Wikipedia fetch) ─────────────────────────────────
+post_refs_to_zotero(
+  refs,
+  collection_name = "Meiō incident",
+  user_id         = Sys.getenv("ZOTERO_USER_ID"),
+  api_key         = Sys.getenv("ZOTERO_API_KEY")
+)
+```
+
+## Troubleshooting
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| `No citation templates found` warning | Page uses author-date style (`{{sfn}}`) without a "References" section containing `{{cite ...}}` templates | Check the raw wikitext; `{{sfn}}` articles embed full citations in a `{{cite ...}}` template in a "Sources" section — make sure that section exists |
+| Many `itemType == "document"` rows | Unusual template name not in the recognised list | Check `.template_name` column and extend `cite_patterns` in the script if needed |
+| `enrich_status == "failed"` for a DOI | DOI is not in CrossRef (e.g. non-CrossRef publisher) | No automated fix; edit the row manually |
+| Zotero API 403 error | API key lacks write permission | Generate a new key at `zotero.org/settings/keys` with "Allow write access" |
+| Duplicate items created | `check_existing` was `FALSE` or a match was declined | Delete duplicates in Zotero; re-run with `check_existing = TRUE` |
