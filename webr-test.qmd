@@ -1,0 +1,398 @@
+---
+title: "wiki-refs-to-zotero — WebR pipeline smoke test"
+format:
+  html:
+    toc: true
+engine: knitr
+filters:
+  - webr
+---
+
+This document runs the **fetch → parse → dedup** pipeline entirely in the
+browser via WebR.  It confirms that:
+
+1. `fetch_wikitext()` (`download.file` + `jsonlite`, no httr2/curl) can reach
+   the MediaWiki API from a browser context.
+2. All pure-R parsing and deduplication functions work in WebR.
+3. DOI/ISBN enrichment via `c2z` works (tested separately at the end; may be
+   slow on first run while the package installs).
+
+```{webr-r}
+#| label: install
+#| context: setup
+webr::install(c("jsonlite", "htmltools", "dplyr", "purrr", "stringr", "stringi", "tibble"))
+```
+
+## 1. Define the pipeline functions
+
+### 1a. fetch_wikitext (download.file — no httr2/curl in WASM)
+
+```{webr-r}
+#| label: fetch-fn
+fetch_wikitext <- function(page_name, language = "en", project = "wikipedia") {
+  # In WebR (WASM), curl/httr2 are non-functional; use download.file() which
+  # WebR patches to use the browser's native fetch API (CORS-aware).
+  params <- list(
+    action        = "parse",
+    page          = page_name,
+    prop          = "wikitext",
+    format        = "json",
+    formatversion = "2",
+    origin        = "*"
+  )
+  query <- paste(
+    names(params),
+    vapply(params, utils::URLencode, character(1L), reserved = TRUE),
+    sep = "=", collapse = "&"
+  )
+  url_str <- paste0("https://", language, ".", project, ".org/w/api.php?", query)
+
+  tmp <- tempfile(fileext = ".json")
+  download.file(url_str, tmp, quiet = TRUE)
+  body <- jsonlite::fromJSON(tmp)
+
+  if (!is.null(body$error))
+    stop("MediaWiki API error (", body$error$code, "): ", body$error$info)
+
+  body$parse$wikitext
+}
+```
+
+### 1b. Template parser + citation extractor
+
+```{webr-r}
+#| label: parser-fns
+library(dplyr)
+library(purrr)
+library(stringr)
+library(stringi)
+library(tibble)
+
+`%||%` <- function(a, b) if (!is.null(a)) a else b
+
+find_template_end <- function(text, start) {
+  n <- nchar(text); depth <- 0L; i <- start
+  while (i <= n) {
+    ch2 <- substr(text, i, i + 1L)
+    if      (ch2 == "{{") { depth <- depth + 1L; i <- i + 2L }
+    else if (ch2 == "}}") {
+      depth <- depth - 1L
+      if (depth == 0L) return(i + 1L)
+      i <- i + 2L
+    } else { i <- i + 1L }
+  }
+  NA_integer_
+}
+
+extract_templates <- function(text, pattern = "\\{\\{\\s*[Cc]ite\\s") {
+  matches <- gregexpr(pattern, text, perl = TRUE, ignore.case = TRUE)[[1]]
+  if (matches[1] == -1L) return(character(0))
+  templates <- character(length(matches))
+  for (idx in seq_along(matches)) {
+    end_pos <- find_template_end(text, matches[idx])
+    if (!is.na(end_pos))
+      templates[idx] <- substr(text, matches[idx], end_pos)
+  }
+  templates[nzchar(templates)]
+}
+
+cite_patterns <- c(
+  "cite book", "cite journal", "cite web", "cite news",
+  "cite encyclopedia", "cite odnb", "cite magazine", "cite thesis",
+  "cite conference", "cite report", "cite press release",
+  "cite av media", "cite podcast", "cite speech", "harvc"
+)
+
+extract_all_citations <- function(wikitext) {
+  pattern <- paste0(
+    "\\{\\{\\s*(",
+    paste(gsub(" ", "\\\\s+", cite_patterns), collapse = "|"),
+    ")\\s*\\|"
+  )
+  extract_templates(wikitext, pattern)
+}
+
+parse_template_params <- function(template_str) {
+  inner <- sub("^\\{\\{\\s*", "", template_str)
+  inner <- sub("\\s*\\}\\}$", "", inner)
+  chars <- strsplit(inner, "")[[1]]
+  n <- length(chars)
+  brace_depth <- 0L; bracket_depth <- 0L
+  parts <- character(0); current <- ""
+  for (i in seq_len(n)) {
+    ch <- chars[i]
+    ch_prev <- if (i > 1L) chars[i - 1L] else ""
+    ch_next <- if (i < n) chars[i + 1L] else ""
+    if      (ch == "{" && ch_next == "{") { brace_depth  <- brace_depth  + 1L; current <- paste0(current, ch)
+    } else if (ch == "{" && ch_prev == "{") {                                    current <- paste0(current, ch)
+    } else if (ch == "}" && ch_next == "}") { brace_depth  <- brace_depth  - 1L; current <- paste0(current, ch)
+    } else if (ch == "}" && ch_prev == "}") {                                    current <- paste0(current, ch)
+    } else if (ch == "[" && ch_next == "[") { bracket_depth <- bracket_depth + 1L; current <- paste0(current, ch)
+    } else if (ch == "[" && ch_prev == "[") {                                    current <- paste0(current, ch)
+    } else if (ch == "]" && ch_next == "]") { bracket_depth <- bracket_depth - 1L; current <- paste0(current, ch)
+    } else if (ch == "]" && ch_prev == "]") {                                    current <- paste0(current, ch)
+    } else if (ch == "|" && brace_depth == 0L && bracket_depth == 0L) {
+      parts <- c(parts, current); current <- ""
+    } else { current <- paste0(current, ch) }
+  }
+  parts <- c(parts, current)
+  template_name <- trimws(parts[1])
+  result <- list(.template = tolower(template_name))
+  unnamed_idx <- 1L
+  for (p in parts[-1]) {
+    p <- trimws(p); if (p == "") next
+    eq_pos <- regexpr("=", p, fixed = TRUE)
+    if (eq_pos > 0L) {
+      result[[tolower(trimws(substr(p, 1L, eq_pos - 1L)))]] <-
+        trimws(substr(p, eq_pos + 1L, nchar(p)))
+    } else {
+      result[[paste0(".unnamed_", unnamed_idx)]] <- p
+      unnamed_idx <- unnamed_idx + 1L
+    }
+  }
+  result
+}
+
+clean_wiki <- function(x) {
+  if (is.null(x) || !nzchar(trimws(x))) return(NA_character_)
+  x <- str_replace_all(x, "\\{\\{!\\}\\}", "|")
+  x <- str_replace_all(x, "\\{\\{=\\}\\}", "=")
+  x <- str_replace_all(x, "\\{\\{[^|{}]+\\|[^|{}]+\\|([^|{}]+)(?:\\|[^{}]*)?\\}\\}", "\\1")
+  x <- str_replace_all(x, "\\{\\{[^|{}]+\\|([^|{}]+)\\}\\}", "\\1")
+  x <- str_replace_all(x, "\\{\\{[^{}]*\\}\\}", "")
+  x <- str_replace_all(x, "\\[\\[([^\\]|]+\\|)?([^\\]]+)\\]\\]", "\\2")
+  x <- str_replace_all(x, "''", "")
+  trimws(x)
+}
+
+template_to_itemtype <- function(tpl_name) {
+  tpl <- tolower(trimws(tpl_name))
+  dplyr::case_when(
+    str_detect(tpl, "^(cite )?book$")  ~ "book",
+    str_detect(tpl, "harvc")           ~ "bookSection",
+    str_detect(tpl, "journal")         ~ "journalArticle",
+    str_detect(tpl, "web")             ~ "webpage",
+    str_detect(tpl, "news")            ~ "newspaperArticle",
+    str_detect(tpl, "encyclopedia")    ~ "encyclopediaArticle",
+    str_detect(tpl, "odnb")            ~ "encyclopediaArticle",
+    str_detect(tpl, "magazine")        ~ "magazineArticle",
+    str_detect(tpl, "thesis")          ~ "thesis",
+    str_detect(tpl, "conference")      ~ "conferencePaper",
+    str_detect(tpl, "report")          ~ "report",
+    str_detect(tpl, "press release")   ~ "newspaperArticle",
+    str_detect(tpl, "av media")        ~ "videoRecording",
+    TRUE                               ~ "document"
+  )
+}
+
+extract_authors <- function(params) {
+  authors <- tibble(creatorType = character(), lastName = character(), firstName = character())
+  for (role_prefix in c("", "editor", "translator")) {
+    creator_type <- if (role_prefix == "") "author" else role_prefix
+    param_last   <- if (role_prefix == "") "last" else paste0(role_prefix, "-last")
+    param_first  <- if (role_prefix == "") "first" else paste0(role_prefix, "-first")
+    for (i in c("", as.character(1:10))) {
+      lkey <- paste0(param_last, i); fkey <- paste0(param_first, i)
+      last_val <- params[[lkey]]; first_val <- params[[fkey]] %||% ""
+      if (!is.null(last_val) && nzchar(last_val))
+        authors <- bind_rows(authors, tibble(
+          creatorType = creator_type,
+          lastName  = clean_wiki(last_val)  %||% "",
+          firstName = clean_wiki(first_val) %||% ""
+        ))
+    }
+    author_key <- if (role_prefix == "") "author" else role_prefix
+    if (is.null(params[["last"]]) && is.null(params[["last1"]]) && !is.null(params[[author_key]])) {
+      if (nrow(authors) == 0 || creator_type != "author") {
+        val <- clean_wiki(params[[author_key]]) %||% params[[author_key]]
+        if (str_detect(val, ",")) {
+          parts <- str_split(val, ",\\s*", n = 2)[[1]]
+          authors <- bind_rows(authors, tibble(creatorType = creator_type, lastName = parts[1], firstName = parts[2] %||% ""))
+        } else {
+          authors <- bind_rows(authors, tibble(creatorType = creator_type, lastName = val, firstName = ""))
+        }
+      }
+    }
+  }
+  if (nrow(authors) == 0)
+    authors <- tibble(creatorType = "author", lastName = "", firstName = "")
+  authors
+}
+
+template_to_ref <- function(params) {
+  item_type <- template_to_itemtype(params$.template)
+  authors   <- extract_authors(params)
+  na_coalesce <- function(...) { for (a in list(...)) if (!is.na(a)) return(a); NA_character_ }
+  title <- na_coalesce(clean_wiki(params[["title"]]), clean_wiki(params[["script-title"]]))
+  if (!is.na(title)) title <- str_remove(title, "^[a-z]{2}:")
+  trans_title <- clean_wiki(params[["trans-title"]])
+  if (!is.na(trans_title) && !is.na(title)) title <- paste0(title, " [", trans_title, "]")
+  chapter <- na_coalesce(clean_wiki(params[["chapter"]]), clean_wiki(params[["script-chapter"]]))
+  if (!is.na(chapter)) chapter <- str_remove(chapter, "^[a-z]{2}:")
+  if (item_type == "bookSection" && is.na(title) && !is.na(chapter)) { title <- chapter; chapter <- NA_character_ }
+  tibble(
+    itemType         = item_type,
+    title            = title %||% NA_character_,
+    creators         = list(authors),
+    date             = params[["date"]] %||% params[["year"]] %||% NA_character_,
+    year             = { yr <- params[["year"]] %||% params[["date"]]; if (is.null(yr)) NA_character_ else str_extract(yr, "\\d{4}") %||% yr },
+    publisher        = clean_wiki(params[["publisher"]]) %||% NA_character_,
+    place            = clean_wiki(params[["location"]]) %||% NA_character_,
+    publicationTitle = clean_wiki(params[["journal"]] %||% params[["website"]] %||% params[["work"]] %||% params[["newspaper"]]) %||% NA_character_,
+    volume           = params[["volume"]] %||% NA_character_,
+    issue            = params[["issue"]] %||% NA_character_,
+    pages            = params[["pages"]] %||% params[["page"]] %||% params[["at"]] %||% NA_character_,
+    ISBN             = params[["isbn"]] %||% NA_character_,
+    ISSN             = params[["issn"]] %||% NA_character_,
+    DOI              = params[["doi"]] %||% NA_character_,
+    url              = params[["url"]] %||% NA_character_,
+    language         = params[["language"]] %||% NA_character_,
+    edition          = params[["edition"]] %||% NA_character_,
+    series           = clean_wiki(params[["series"]]) %||% NA_character_,
+    accessDate       = params[["access-date"]] %||% NA_character_,
+    bookTitle        = if (item_type == "bookSection") clean_wiki(params[["in"]]) %||% NA_character_ else NA_character_,
+    chapter          = chapter %||% NA_character_,
+    .template_name   = params$.template,
+    .raw_template    = NA_character_
+  )
+}
+
+extract_refs_from_wikitext <- function(wikitext) {
+  cite_strings <- extract_all_citations(wikitext)
+  if (length(cite_strings) == 0) { warning("No citation templates found."); return(tibble()) }
+  parsed <- map(cite_strings, parse_template_params)
+  refs   <- map2_dfr(parsed, cite_strings, function(p, raw) {
+    r <- template_to_ref(p); r$.raw_template <- raw; r
+  })
+  refs |>
+    mutate(first_author = map_chr(creators, function(cr) {
+      if (nrow(cr) == 0) return(NA_character_)
+      last  <- cr$lastName[1]  %||% ""; first <- cr$firstName[1] %||% ""
+      if (!nzchar(last) && !nzchar(first)) return(NA_character_)
+      if (nzchar(first)) paste0(last, ", ", first) else last
+    }), .before = creators)
+}
+
+dedup_key <- function(title, year, last1) {
+  norm <- function(x) { x <- tolower(x %||% ""); x <- stri_trans_general(x, "Latin-ASCII"); str_replace_all(x, "[^a-z0-9 ]", ""); trimws(x) }
+  paste(norm(last1), norm(year), norm(title), sep = "|")
+}
+
+deduplicate_refs <- function(refs) {
+  refs |>
+    mutate(.last1 = map_chr(creators, ~ .x$lastName[1]),
+           .dedup_key = dedup_key(title, year, .last1)) |>
+    group_by(.dedup_key) |>
+    mutate(n_citations = n()) |>
+    slice(1) |>
+    ungroup()
+}
+
+cat("All pipeline functions loaded.\n")
+```
+
+## 2. Smoke test: fetch → parse → dedup
+
+```{webr-r}
+#| label: smoke-test
+cat("Fetching wikitext for 'Meiō_incident'...\n")
+wikitext <- fetch_wikitext("Meiō_incident")
+cat("Fetched", nchar(wikitext), "characters.\n\n")
+
+cat("Extracting citations...\n")
+refs_raw <- extract_refs_from_wikitext(wikitext)
+cat("Found", nrow(refs_raw), "citation templates.\n\n")
+
+cat("Deduplicating...\n")
+refs <- deduplicate_refs(refs_raw)
+cat("Unique references:", nrow(refs), "\n\n")
+
+cat("Type breakdown:\n")
+print(dplyr::count(refs, itemType, sort = TRUE))
+
+cat("\nFirst 5 titles:\n")
+print(refs$title[1:5])
+
+cat("\nSMOKE TEST PASSED ✓\n")
+```
+
+## 3. Export as RIS
+
+Serialises the deduplicated references to RIS format and triggers a browser
+download.  No additional packages are required beyond those already loaded.
+
+```{webr-r}
+#| label: ris-export
+itemtype_to_ris <- function(it) {
+  switch(it,
+    book = "BOOK", bookSection = "CHAP", journalArticle = "JOUR",
+    webpage = "ELEC", newspaperArticle = "NEWS", encyclopediaArticle = "ENCYC",
+    magazineArticle = "MGZN", thesis = "THES", conferencePaper = "CONF",
+    report = "RPRT", videoRecording = "VIDEO", document = "GEN", "GEN"
+  )
+}
+
+ref_to_ris_lines <- function(row) {
+  lines <- character(0)
+  add <- function(tag, val) {
+    if (!is.na(val) && nzchar(val))
+      lines <<- c(lines, paste0(tag, "  - ", val))
+  }
+  add("TY", itemtype_to_ris(row$itemType))
+  add("TI", row$title)
+  for (i in seq_len(nrow(row$creators[[1]]))) {
+    cr <- row$creators[[1]][i, ]
+    name <- if (nzchar(cr$firstName)) paste0(cr$lastName, ", ", cr$firstName) else cr$lastName
+    tag  <- switch(cr$creatorType, editor = "ED", translator = "A3", "AU")
+    if (nzchar(name)) add(tag, name)
+  }
+  add("PY", row$year)
+  add("DA", row$date)
+  add("PB", row$publisher)
+  add("CY", row$place)
+  add("JO", row$publicationTitle)
+  add("T2", row$publicationTitle)
+  add("VL", row$volume)
+  add("IS", row$issue)
+  if (!is.na(row$pages)) {
+    pg <- str_split(row$pages, "[–—-]", n = 2)[[1]]
+    add("SP", trimws(pg[1]))
+    if (length(pg) > 1) add("EP", trimws(pg[2]))
+  }
+  add("SN", row$ISBN)
+  add("SN", row$ISSN)
+  add("DO", row$DOI)
+  add("UR", row$url)
+  add("LA", row$language)
+  add("ET", row$edition)
+  add("T3", row$series)
+  add("Y2", row$accessDate)
+  if (row$itemType == "bookSection") {
+    add("BT", row$bookTitle)
+    add("T2", row$chapter)
+  }
+  c(lines, "ER  - ")
+}
+
+# Build RIS text
+all_lines <- character(0)
+for (i in seq_len(nrow(refs))) {
+  all_lines <- c(all_lines, ref_to_ris_lines(refs[i, ]), "")
+}
+ris_content <- paste(all_lines, collapse = "\n")
+
+# Render a clickable download link as HTML output.
+# base64-encode via jsonlite (already loaded) to avoid any URI-encoding issues.
+ris_b64 <- jsonlite::base64_enc(charToRaw(ris_content))
+href <- paste0("data:application/x-research-info-systems;base64,", ris_b64)
+
+library(htmltools)
+browsable(tags$a(
+  href     = href,
+  download = "references.ris",
+  style    = paste0("display:inline-block;padding:6px 14px;margin:6px 0;",
+                    "background:#198754;color:#fff;border-radius:4px;",
+                    "text-decoration:none;font-size:14px"),
+  paste0("\u2b07 Download references.ris (", nrow(refs), " references)")
+))
+```

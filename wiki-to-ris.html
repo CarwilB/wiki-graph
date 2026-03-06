@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wikipedia → RIS</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 680px;
+      margin: 44px auto;
+      padding: 0 20px;
+      color: #212529;
+      line-height: 1.5;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: .2rem; }
+    .lead { color: #6c757d; margin-top: 0; font-size: .92rem; }
+
+    /* Input row */
+    .row { display: flex; gap: 8px; margin: 18px 0 10px; }
+    input[type=text] {
+      flex: 1; padding: 7px 11px; font-size: 1rem;
+      border: 1px solid #ced4da; border-radius: 4px; outline: none;
+    }
+    input[type=text]:focus { border-color: #86b7fe; box-shadow: 0 0 0 3px rgba(13,110,253,.2); }
+    select { padding: 7px 10px; font-size: 1rem; border: 1px solid #ced4da; border-radius: 4px; }
+    #fetchBtn { padding: 7px 18px; font-size: 1rem; border: none; border-radius: 4px;
+                background: #0d6efd; color: #fff; cursor: pointer; white-space: nowrap; }
+    #fetchBtn:disabled { background: #6c757d; cursor: default; }
+
+    /* Status */
+    #status { min-height: 1.5em; font-size: .9rem; color: #495057; }
+    #status.error { color: #dc3545; }
+
+    /* Result panel */
+    #result { display: none; margin-top: 14px; }
+
+    .result-header {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 10px;
+      background: #d1e7dd; border: 1px solid #a3cfbb;
+      border-radius: 6px 6px 0 0; padding: 12px 16px;
+    }
+    .result-header p { margin: 0; font-size: .95rem; color: #0a3622; font-weight: 500; }
+    #downloadLink {
+      display: inline-block; padding: 7px 18px;
+      background: #198754; color: #fff; border-radius: 4px;
+      text-decoration: none; font-size: .95rem; font-weight: 500; white-space: nowrap;
+    }
+    #downloadLink:hover { background: #146c43; }
+
+    /* Type breakdown */
+    .type-breakdown {
+      border: 1px solid #dee2e6; border-top: none;
+      padding: 12px 16px; background: #f8f9fa;
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .type-badge {
+      background: #e9ecef; border-radius: 12px;
+      padding: 3px 10px; font-size: .82rem; color: #495057;
+    }
+    .type-badge span { font-weight: 600; color: #212529; }
+
+    /* Reference list */
+    details {
+      border: 1px solid #dee2e6; border-top: none;
+      border-radius: 0 0 6px 6px; background: #fff;
+    }
+    summary {
+      padding: 10px 16px; cursor: pointer; font-size: .9rem;
+      color: #495057; user-select: none; list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "▶ "; font-size: .75rem; }
+    details[open] summary::before { content: "▼ "; }
+    summary:hover { background: #f8f9fa; }
+
+    .ref-list { padding: 0 16px 12px; margin: 0; list-style: none; }
+    .ref-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: .875rem;
+    }
+    .ref-list li:last-child { border-bottom: none; }
+    .ref-title { font-style: italic; }
+    .ref-meta  { color: #6c757d; }
+    .ref-type  {
+      font-size: .72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .03em; color: #6c757d;
+      background: #f0f0f0; border-radius: 3px; padding: 1px 5px; margin-left: 4px;
+    }
+
+    .note { font-size: .78rem; color: #868e96; margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Wikipedia → RIS</h1>
+  <p class="lead">Extract references from a Wikipedia article and download them as a RIS file.
+    Runs entirely in your browser — no server or sign-in required.</p>
+
+  <div class="row">
+    <input type="text" id="pageInput" placeholder="e.g. Meiō_incident" autocomplete="off" />
+    <select id="langSelect" title="Wikipedia language edition">
+      <option value="en">en</option>
+      <option value="es">es</option>
+      <option value="fr">fr</option>
+      <option value="de">de</option>
+      <option value="pt">pt</option>
+      <option value="it">it</option>
+      <option value="ja">ja</option>
+      <option value="zh">zh</option>
+      <option value="ar">ar</option>
+      <option value="ru">ru</option>
+    </select>
+    <button id="fetchBtn">Extract</button>
+  </div>
+
+  <div id="status"></div>
+
+  <div id="result">
+    <div class="result-header">
+      <p id="resultMsg"></p>
+      <a id="downloadLink" href="#">⬇ Download RIS</a>
+    </div>
+    <div class="type-breakdown" id="typeBreakdown"></div>
+    <details>
+      <summary id="refListSummary">Show all references</summary>
+      <ul class="ref-list" id="refList"></ul>
+    </details>
+  </div>
+
+  <p class="note">
+    Supports: Cite book · Cite journal · Cite web · Cite news · Cite encyclopedia ·
+    Cite magazine · Cite thesis · Cite conference · Cite report · Harvc.
+    Duplicates (same first author + year + title) are merged.
+  </p>
+
+<script>
+"use strict";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 1. Fetch wikitext
+// ─────────────────────────────────────────────────────────────────────────────
+async function fetchWikitext(pageName, lang) {
+  const params = new URLSearchParams({
+    action: "parse", page: pageName, prop: "wikitext",
+    format: "json", formatversion: "2", origin: "*"
+  });
+  const resp = await fetch(`https://${lang}.wikipedia.org/w/api.php?${params}`);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  const data = await resp.json();
+  if (data.error) throw new Error(`MediaWiki: ${data.error.info}`);
+  return data.parse.wikitext;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2. Template extraction
+// ─────────────────────────────────────────────────────────────────────────────
+function findTemplateEnd(text, start) {
+  let depth = 0, i = start;
+  while (i < text.length) {
+    if      (text[i] === "{" && text[i+1] === "{") { depth++; i += 2; }
+    else if (text[i] === "}" && text[i+1] === "}") { if (--depth === 0) return i + 2; i += 2; }
+    else i++;
+  }
+  return -1;
+}
+
+// NOTE: regex must be reset (lastIndex = 0) before each use
+const CITE_RE = /\{\{\s*(?:cite book|cite journal|cite web|cite news|cite encyclopedia|cite odnb|cite magazine|cite thesis|cite conference|cite report|cite press release|cite av media|cite podcast|cite speech|harvc)\s*\|/gi;
+
+function extractAllCitations(wikitext) {
+  const results = [];
+  CITE_RE.lastIndex = 0;
+  let m;
+  while ((m = CITE_RE.exec(wikitext)) !== null) {
+    const end = findTemplateEnd(wikitext, m.index);
+    if (end !== -1) results.push(wikitext.slice(m.index, end));
+  }
+  return results;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 3. Parse template parameters (depth-aware pipe splitting)
+// ─────────────────────────────────────────────────────────────────────────────
+function parseTemplateParams(templateStr) {
+  const inner = templateStr.replace(/^\{\{\s*/, "").replace(/\s*\}\}$/, "");
+  const parts = [];
+  let cur = "", bd = 0, kd = 0;
+  for (let i = 0; i < inner.length; i++) {
+    const c = inner[i], nx = inner[i+1], pv = inner[i-1];
+    if      (c === "{" && nx === "{") { bd++; cur += c; }
+    else if (c === "{" && pv === "{") {       cur += c; }
+    else if (c === "}" && nx === "}") { bd--; cur += c; }
+    else if (c === "}" && pv === "}") {       cur += c; }
+    else if (c === "[" && nx === "[") { kd++; cur += c; }
+    else if (c === "[" && pv === "[") {       cur += c; }
+    else if (c === "]" && nx === "]") { kd--; cur += c; }
+    else if (c === "]" && pv === "]") {       cur += c; }
+    else if (c === "|" && bd === 0 && kd === 0) { parts.push(cur); cur = ""; }
+    else cur += c;
+  }
+  parts.push(cur);
+
+  const p = { _template: parts[0].trim().toLowerCase() };
+  let u = 1;
+  for (let j = 1; j < parts.length; j++) {
+    const s = parts[j].trim();
+    if (!s) continue;
+    const eq = s.indexOf("=");
+    if (eq > 0) p[s.slice(0, eq).trim().toLowerCase()] = s.slice(eq + 1).trim();
+    else p[`_u${u++}`] = s;
+  }
+  return p;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 4. Clean wiki markup
+// ─────────────────────────────────────────────────────────────────────────────
+function cleanWiki(x) {
+  if (!x || !x.trim()) return null;
+  return x
+    .replace(/\{\{!\}\}/g, "|")
+    .replace(/\{\{=\}\}/g, "=")
+    .replace(/\{\{[^|{}]+\|[^|{}]+\|([^|{}]+)(?:\|[^{}]*)?\}\}/g, "$1")
+    .replace(/\{\{[^|{}]+\|([^|{}]+)\}\}/g, "$1")
+    .replace(/\{\{[^{}]*\}\}/g, "")
+    .replace(/\[\[(?:[^\]|]+\|)?([^\]]+)\]\]/g, "$1")
+    .replace(/''/g, "")
+    .trim() || null;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 5. Item type
+// ─────────────────────────────────────────────────────────────────────────────
+function templateToItemType(tpl) {
+  if (/^(cite )?book$/i.test(tpl))    return "book";
+  if (/harvc/i.test(tpl))             return "bookSection";
+  if (/journal/i.test(tpl))           return "journalArticle";
+  if (/web/i.test(tpl))               return "webpage";
+  if (/press.release/i.test(tpl))     return "newspaperArticle";
+  if (/news/i.test(tpl))              return "newspaperArticle";
+  if (/encyclopedia|odnb/i.test(tpl)) return "encyclopediaArticle";
+  if (/magazine/i.test(tpl))          return "magazineArticle";
+  if (/thesis/i.test(tpl))            return "thesis";
+  if (/conference/i.test(tpl))        return "conferencePaper";
+  if (/report/i.test(tpl))            return "report";
+  if (/av.media/i.test(tpl))          return "videoRecording";
+  return "document";
+}
+
+const TYPE_LABEL = {
+  book: "Book", bookSection: "Book chapter", journalArticle: "Journal article",
+  webpage: "Webpage", newspaperArticle: "News article", encyclopediaArticle: "Encyclopedia",
+  magazineArticle: "Magazine", thesis: "Thesis", conferencePaper: "Conference paper",
+  report: "Report", videoRecording: "Video", document: "Document"
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 6. Extract authors
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Parse Vancouver-style vauthors: "Smith AB, Jones CD, van den Berg E, ..."
+// Each token is "Surname Initials" where Initials = 1–4 uppercase letters.
+function parseVauthors(str) {
+  if (!str || !str.trim()) return [];
+  return str.split(/,\s+/)
+    .map(s => {
+      s = s.trim();
+      if (!s || /^et\.?\s*al\.?$/i.test(s)) return null;
+      // Last token = initials if it is 1–4 uppercase letters (no lowercase)
+      const m = s.match(/^(.+?)\s+([A-Z]{1,4})$/);
+      if (m) return { type: "author", last: m[1].trim(), first: m[2] };
+      return { type: "author", last: s, first: "" };
+    })
+    .filter(Boolean);
+}
+
+function extractAuthors(p) {
+  const people = [];
+
+  // Vancouver bulk author field (|vauthors=) — most common in science articles
+  if (p["vauthors"]) {
+    people.push(...parseVauthors(p["vauthors"]));
+  }
+
+  // Editors in Vancouver style (|veditors=)
+  if (p["veditors"]) {
+    parseVauthors(p["veditors"]).forEach(a => { a.type = "editor"; people.push(a); });
+  }
+
+  // Standard last/first and author= params
+  const ROLES = [
+    { type: "author",     lk: "last",            fk: "first",            ck: "author"     },
+    { type: "editor",     lk: "editor-last",     fk: "editor-first",     ck: "editor"     },
+    { type: "translator", lk: "translator-last", fk: "translator-first", ck: "translator" },
+  ];
+  for (const r of ROLES) {
+    // Skip last/first scan if vauthors already populated authors for this role
+    const alreadyHave = people.some(x => x.type === r.type);
+    if (!alreadyHave) {
+      for (let i = 0; i <= 10; i++) {
+        const s = i === 0 ? "" : String(i);
+        const last = p[r.lk + s];
+        if (last && last.trim())
+          people.push({ type: r.type, last: cleanWiki(last) || last.trim(),
+                        first: cleanWiki(p[r.fk + s] || "") || "" });
+      }
+      // Combined "author=Full Name" or "author=Org Name"
+      const combined = p[r.ck];
+      if (combined && combined.trim() && !p[r.lk] && !p[r.lk + "1"]) {
+        const val = cleanWiki(combined) || combined.trim();
+        if (val.includes(",")) {
+          const [last, first] = val.split(/,\s*/, 2);
+          people.push({ type: r.type, last: last.trim(), first: (first || "").trim() });
+        } else {
+          people.push({ type: r.type, last: val, first: "" });
+        }
+      }
+    }
+  }
+
+  if (people.length === 0) people.push({ type: "author", last: "", first: "" });
+  return people;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 7. Template → reference object
+// ─────────────────────────────────────────────────────────────────────────────
+function templateToRef(p) {
+  const itemType = templateToItemType(p._template);
+  const authors  = extractAuthors(p);
+  const rawDate  = p["date"] || p["year"] || null;
+  const year     = rawDate ? ((rawDate.match(/\d{4}/) || [])[0] || rawDate) : null;
+
+  let title = cleanWiki(p["title"]) || cleanWiki(p["script-title"]);
+  if (title) title = title.replace(/^[a-z]{2}:/, "");
+  const tt = cleanWiki(p["trans-title"]);
+  if (title && tt) title += ` [${tt}]`;
+
+  let chapter = cleanWiki(p["chapter"]) || cleanWiki(p["script-chapter"]);
+  if (chapter) chapter = chapter.replace(/^[a-z]{2}:/, "");
+  if (itemType === "bookSection" && !title && chapter) { title = chapter; chapter = null; }
+
+  return {
+    itemType, title, authors, date: rawDate, year,
+    publisher:        cleanWiki(p["publisher"]),
+    place:            cleanWiki(p["location"]),
+    publicationTitle: cleanWiki(p["journal"] || p["website"] || p["work"] || p["newspaper"]),
+    volume:  p["volume"]      || null,
+    issue:   p["issue"]       || null,
+    pages:   p["pages"]       || p["page"] || p["at"] || null,
+    isbn:    p["isbn"]        || null,
+    issn:    p["issn"]        || null,
+    doi:     p["doi"]         || null,
+    url:     p["url"]         || null,
+    language:    p["language"]    || null,
+    edition:     p["edition"]     || null,
+    series:      cleanWiki(p["series"]),
+    accessDate:  p["access-date"] || null,
+    bookTitle: itemType === "bookSection" ? (cleanWiki(p["in"]) || null) : null,
+    chapter
+  };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 8. Deduplicate
+// ─────────────────────────────────────────────────────────────────────────────
+function norm(s) {
+  if (!s) return "";
+  return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^a-z0-9]/g, "");
+}
+function deduplicateRefs(refs) {
+  const seen = new Map();
+  for (const ref of refs) {
+    const k = `${norm(ref.authors[0]?.last)}|${norm(ref.year)}|${norm(ref.title)}`;
+    if (!seen.has(k)) seen.set(k, ref);
+  }
+  return [...seen.values()];
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 9. RIS serialisation
+// ─────────────────────────────────────────────────────────────────────────────
+const RIS_TYPE = {
+  book:"BOOK", bookSection:"CHAP", journalArticle:"JOUR", webpage:"ELEC",
+  newspaperArticle:"NEWS", encyclopediaArticle:"ENCYC", magazineArticle:"MGZN",
+  thesis:"THES", conferencePaper:"CONF", report:"RPRT", videoRecording:"VIDEO", document:"GEN"
+};
+
+function refToRisLines(ref) {
+  const lines = [];
+  const add = (tag, val) => { if (val != null && String(val).trim()) lines.push(`${tag}  - ${val}`); };
+  add("TY", RIS_TYPE[ref.itemType] || "GEN");
+  add("TI", ref.title);
+  for (const a of ref.authors) {
+    const tag  = a.type === "editor" ? "ED" : a.type === "translator" ? "A3" : "AU";
+    const name = a.first ? `${a.last}, ${a.first}` : a.last;
+    if (name.trim()) add(tag, name);
+  }
+  add("PY", ref.year);  add("DA", ref.date);
+  add("PB", ref.publisher); add("CY", ref.place);
+  add("JO", ref.publicationTitle); add("T2", ref.publicationTitle);
+  add("VL", ref.volume); add("IS", ref.issue);
+  if (ref.pages) {
+    const pg = ref.pages.split(/[–—-]/);
+    add("SP", pg[0].trim());
+    if (pg[1]) add("EP", pg[1].trim());
+  }
+  add("SN", ref.isbn); add("SN", ref.issn);
+  add("DO", ref.doi);  add("UR", ref.url);
+  add("LA", ref.language); add("ET", ref.edition);
+  add("T3", ref.series);   add("Y2", ref.accessDate);
+  if (ref.itemType === "bookSection") { add("BT", ref.bookTitle); add("T2", ref.chapter); }
+  lines.push("ER  - ");
+  return lines;
+}
+
+function buildRis(refs) {
+  return refs.flatMap(r => [...refToRisLines(r), ""]).join("\n");
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 10. UI helpers
+// ─────────────────────────────────────────────────────────────────────────────
+function esc(s) {
+  if (!s) return "";
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function renderSummary(refs, totalTemplates) {
+  // Type breakdown
+  const counts = {};
+  for (const r of refs) counts[r.itemType] = (counts[r.itemType] || 0) + 1;
+  const breakdown = document.getElementById("typeBreakdown");
+  breakdown.innerHTML = Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([t, n]) => `<span class="type-badge"><span>${n}</span> ${TYPE_LABEL[t] || t}</span>`)
+    .join("");
+
+  // Reference list
+  const list = document.getElementById("refList");
+  list.innerHTML = refs.map((r, i) => {
+    const au    = r.authors[0];
+    const auStr = au && au.last ? (au.first ? `${au.last}, ${au.first}` : au.last) : "";
+    const year  = r.year ? ` (${r.year})` : "";
+    const venue = r.publicationTitle || r.publisher || "";
+    return `<li>
+      <strong>${i + 1}.</strong>
+      ${auStr ? `<span class="ref-meta">${esc(auStr)}${year}.</span> ` : ""}
+      <span class="ref-title">${esc(r.title || "(no title)")}</span>
+      ${venue ? `<span class="ref-meta"> — ${esc(venue)}</span>` : ""}
+      <span class="ref-type">${TYPE_LABEL[r.itemType] || r.itemType}</span>
+    </li>`;
+  }).join("");
+
+  const dupes = totalTemplates - refs.length;
+  document.getElementById("refListSummary").textContent =
+    `Show all ${refs.length} references` + (dupes > 0 ? ` (${dupes} duplicate${dupes > 1 ? "s" : ""} removed)` : "");
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 11. Main
+// ─────────────────────────────────────────────────────────────────────────────
+const statusEl  = document.getElementById("status");
+const resultDiv = document.getElementById("result");
+const fetchBtn  = document.getElementById("fetchBtn");
+const dlLink    = document.getElementById("downloadLink");
+
+function setStatus(msg, isError = false) {
+  statusEl.textContent = msg;
+  statusEl.className   = isError ? "error" : "";
+}
+
+let currentBlobUrl = null;
+
+fetchBtn.addEventListener("click", async () => {
+  const pageName = document.getElementById("pageInput").value.trim();
+  const lang     = document.getElementById("langSelect").value;
+  if (!pageName) { setStatus("Please enter a Wikipedia page title.", true); return; }
+
+  fetchBtn.disabled       = true;
+  resultDiv.style.display = "none";
+  setStatus("Fetching wikitext…");
+
+  try {
+    const wikitext  = await fetchWikitext(pageName, lang);
+
+    setStatus("Extracting citation templates…");
+    const templates = extractAllCitations(wikitext);
+
+    if (templates.length === 0) {
+      setStatus("No recognised citation templates found on this page.", true);
+      return;
+    }
+
+    setStatus(`Parsing ${templates.length} template(s)…`);
+    const refs   = templates.map(t => templateToRef(parseTemplateParams(t)));
+    const unique = deduplicateRefs(refs);
+    const ris    = buildRis(unique);
+
+    // Attach download link
+    if (currentBlobUrl) URL.revokeObjectURL(currentBlobUrl);
+    currentBlobUrl  = URL.createObjectURL(new Blob([ris], { type: "application/x-research-info-systems" }));
+    const filename  = pageName.replace(/\s+/g, "_").replace(/[^\w\-]/g, "") + ".ris";
+    dlLink.href     = currentBlobUrl;
+    dlLink.download = filename;
+    dlLink.textContent = `⬇ Download ${filename}`;
+
+    // Summary counts
+    document.getElementById("resultMsg").textContent =
+      `${unique.length} reference${unique.length !== 1 ? "s" : ""} extracted from "${pageName}"`;
+
+    renderSummary(unique, templates.length);
+
+    resultDiv.style.display = "block";   // ← must be "block", not ""
+    setStatus("");
+  } catch (e) {
+    setStatus(`Error: ${e.message}`, true);
+  } finally {
+    fetchBtn.disabled = false;
+  }
+});
+
+document.getElementById("pageInput").addEventListener("keydown", e => {
+  if (e.key === "Enter") fetchBtn.click();
+});
+</script>
+</body>
+</html>

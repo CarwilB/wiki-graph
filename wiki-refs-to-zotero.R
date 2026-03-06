@@ -6,7 +6,6 @@
 #   2. Author-date {{sfn}} with full entries in Sources/Works Cited sections
 #   3. Mixed (both in the same article)
 
-library(WikipediR)
 library(tidyverse)
 library(stringi)
 library(httr2)
@@ -16,17 +15,69 @@ library(c2z)
 # 1. Fetch wikitext
 # =============================================================================
 
+#' Fetch the wikitext source of a Wikipedia page.
+#'
+#' Calls the MediaWiki \code{parse} API directly via \pkg{httr2} and returns
+#' the raw wikitext string.  Uses \code{formatversion=2} so the wikitext is
+#' returned as a plain string (no \code{$`*`} wrapper).  Note that this
+#' function always hits the network — there is no local cache.
+#'
+#' This implementation has no dependency on \pkg{WikipediR} and works in
+#' browser-based WebR/Shinylive environments where Wikipedia's CORS headers
+#' permit the request.
+#'
+#' @param page_name Page title as it appears in the URL
+#'   (e.g. \code{"Human_genetic_variation"}).  Spaces may be written as
+#'   underscores or left as literal spaces.
+#' @param language Two-letter language code for the Wikipedia edition.
+#'   Default \code{"en"}.
+#' @param project MediaWiki project name.  Default \code{"wikipedia"}.
+#' @return A single character string containing the raw wikitext of the page.
+#' @examples
+#' \dontrun{
+#' wikitext <- fetch_wikitext("Meiō_incident")
+#' }
 fetch_wikitext <- function(page_name, language = "en", project = "wikipedia") {
-  page <- page_content(language, project, page_name = page_name, as_wikitext = TRUE)
-  page$parse$wikitext$`*`
+  resp <- request(paste0("https://", language, ".", project, ".org/w/api.php")) |>
+    req_url_query(
+      action        = "parse",
+      page          = page_name,
+      prop          = "wikitext",
+      format        = "json",
+      formatversion = "2"
+    ) |>
+    req_error(is_error = \(r) FALSE) |>
+    req_perform()
+
+  if (resp_status(resp) != 200L) {
+    stop("MediaWiki API returned HTTP ", resp_status(resp), " for: ", page_name)
+  }
+
+  body <- resp_body_json(resp)
+
+  if (!is.null(body$error)) {
+    stop("MediaWiki API error (", body$error$code, "): ", body$error$info)
+  }
+
+  body$parse$wikitext   # formatversion=2 returns a plain string
 }
 
 # =============================================================================
 # 2. Template parser
 # =============================================================================
 
-# Find matching closing braces for a template starting at position `start`
-# (start points to the first `{` of `{{`).
+#' Find the closing \code{\}\}} for a wikitext template.
+#'
+#' Scans \code{text} from character position \code{start}, tracking brace depth
+#' to correctly handle nested templates, and returns the position immediately
+#' after the matching \code{\}\}}.
+#'
+#' @param text The full wikitext string.
+#' @param start Integer; position of the first \code{\{} of the opening
+#'   \code{\{\{}.
+#' @return Integer position of the character immediately after the closing
+#'   \code{\}\}}, or \code{NA_integer_} if the braces are unmatched.
+#' @keywords internal
 find_template_end <- function(text, start) {
   n <- nchar(text)
   depth <- 0
@@ -48,8 +99,19 @@ find_template_end <- function(text, start) {
   NA_integer_ # unmatched
 }
 
-# Extract all top-level templates matching a pattern from wikitext.
-# Returns a character vector of full template strings (including {{ }}).
+#' Extract top-level wikitext templates matching a regex pattern.
+#'
+#' Finds all occurrences of \code{pattern} in \code{text}, then uses
+#' \code{\link{find_template_end}} to locate the matching closing \code{\}\}}
+#' for each, correctly handling nested templates.
+#'
+#' @param text Wikitext string to search.
+#' @param pattern Regular expression matched against the opening of each
+#'   template.  Default matches any \code{\{\{Cite }} or \code{\{\{cite }}
+#'   variant.
+#' @return Character vector of complete template strings, each including the
+#'   outer \code{\{\{} and \code{\}\}}.
+#' @keywords internal
 extract_templates <- function(text, pattern = "\\{\\{\\s*[Cc]ite\\s") {
   matches <- gregexpr(pattern, text, perl = TRUE, ignore.case = TRUE)[[1]]
   if (matches[1] == -1) return(character(0))
@@ -67,8 +129,19 @@ extract_templates <- function(text, pattern = "\\{\\{\\s*[Cc]ite\\s") {
   templates[nzchar(templates)]
 }
 
-# Parse a single template string into a named list.
-# Handles nested templates by treating them as opaque strings.
+#' Parse a wikitext template string into a named list.
+#'
+#' Splits the template on top-level \code{|} delimiters (ignoring pipes inside
+#' nested \code{\{\{\}\}} or \code{[[\,]]} structures) and parses each
+#' \code{key = value} pair into a named list element.  The template name is
+#' stored as \code{.template} (lowercased).  Positional (unnamed) parameters
+#' are stored as \code{.unnamed_1}, \code{.unnamed_2}, etc.
+#'
+#' @param template_str A single complete template string, e.g.
+#'   \code{"\{\{Cite book|last=Smith|first=J.|year=2020\}\}"}.
+#' @return A named list.  Always includes \code{.template} (character).  All
+#'   other keys correspond to template parameter names (lowercased).
+#' @keywords internal
 parse_template_params <- function(template_str) {
   # Strip outer {{ and }}
   inner <- sub("^\\{\\{\\s*", "", template_str)
@@ -142,6 +215,18 @@ cite_patterns <- c(
   "harvc"
 )
 
+#' Extract all recognised citation templates from wikitext.
+#'
+#' Scans the wikitext for any of the supported Wikipedia citation template
+#' names: Cite book, Cite journal, Cite web, Cite news, Cite encyclopedia,
+#' Cite magazine, Cite thesis, Cite conference, Cite report, Cite press
+#' release, Cite av media, Cite podcast, Cite speech, and harvc.
+#'
+#' @param wikitext Raw wikitext string as returned by
+#'   \code{\link{fetch_wikitext}}.
+#' @return Character vector of complete template strings (each including
+#'   its outer \code{\{\{} and \code{\}\}}).
+#' @keywords internal
 extract_all_citations <- function(wikitext) {
   # Pattern matches {{Cite book, {{cite journal, {{harvc, etc.
   # Case insensitive
@@ -153,7 +238,15 @@ extract_all_citations <- function(wikitext) {
   extract_templates(wikitext, pattern)
 }
 
-# Also extract bare <ref> tags that DON'T contain a cite template
+#' Extract \code{<ref>} contents that contain no citation template.
+#'
+#' Finds all \code{<ref>...</ref>} blocks whose content does not include a
+#' \code{\{\{Cite }} template.  These are typically plain-text footnotes or
+#' explanatory notes rather than bibliographic references.
+#'
+#' @param wikitext Raw wikitext string.
+#' @return Character vector of raw (untemplated) \code{<ref>} content strings.
+#' @keywords internal
 extract_bare_refs <- function(wikitext) {
   # Find all <ref...>...</ref> blocks
   ref_pattern <- "<ref[^>]*>(.*?)</ref>"
@@ -170,12 +263,24 @@ extract_bare_refs <- function(wikitext) {
 # 4. Map parsed templates → reference tibble
 # =============================================================================
 
-# Strip Wikipedia markup from a string value:
-#   [[Link|Display text]] → Display text
-#   [[Display text]]      → Display text
-#   ''italic''            → italic
-#   {{Template|id|text}}  → text  (inline display templates)
-# Returns NA_character_ for NULL or empty input.
+#' Strip Wikipedia markup from a string.
+#'
+#' Removes or unwraps common wikitext constructs:
+#' \itemize{
+#'   \item \code{[[Link|Display]]} and \code{[[Display]]} wikilinks →
+#'     display text only
+#'   \item \code{''italic''} → plain text
+#'   \item Inline display templates \code{\{\{Name|arg|display\}\}} →
+#'     display text
+#'   \item Remaining bare templates → empty string
+#'   \item \code{\{\{!\}\}} and \code{\{\{=\}\}} escape sequences →
+#'     literal \code{|} and \code{=}
+#' }
+#'
+#' @param x A character string, or \code{NULL}.
+#' @return A trimmed character string, or \code{NA_character_} if the input is
+#'   \code{NULL} or blank after stripping.
+#' @keywords internal
 clean_wiki <- function(x) {
   if (is.null(x) || !nzchar(trimws(x))) return(NA_character_)
   x <- str_replace_all(x, "\\{\\{!\\}\\}", "|")          # {{!}} → literal pipe
@@ -194,7 +299,16 @@ clean_wiki <- function(x) {
   trimws(x)
 }
 
-# Normalize a template name to a Zotero itemType
+#' Map a Wikipedia citation template name to a Zotero item type.
+#'
+#' @param tpl_name Character; template name as stored in \code{.template}
+#'   (already lowercased by \code{\link{parse_template_params}}).
+#' @return One of the Zotero item type strings: \code{"book"},
+#'   \code{"bookSection"}, \code{"journalArticle"}, \code{"webpage"},
+#'   \code{"newspaperArticle"}, \code{"encyclopediaArticle"},
+#'   \code{"magazineArticle"}, \code{"thesis"}, \code{"conferencePaper"},
+#'   \code{"report"}, \code{"videoRecording"}, or \code{"document"}.
+#' @keywords internal
 template_to_itemtype <- function(tpl_name) {
   tpl <- tolower(trimws(tpl_name))
   case_when(
@@ -215,8 +329,20 @@ template_to_itemtype <- function(tpl_name) {
   )
 }
 
-# Extract authors from parsed template params.
-# Wikipedia uses last/first, last1/first1, last2/first2, ... or author=
+#' Extract creator metadata from parsed template parameters.
+#'
+#' Handles Wikipedia's various author-naming conventions:
+#' \code{last}/\code{first}, \code{last1}/\code{first1}, \ldots up to
+#' \code{last10}/\code{first10}, as well as single-string \code{author=}
+#' parameters.  Also extracts editors (\code{editor-last}/\code{editor-first})
+#' and translators.
+#'
+#' @param params Named list as returned by \code{\link{parse_template_params}}.
+#' @return A tibble with columns \code{creatorType} (\code{"author"},
+#'   \code{"editor"}, or \code{"translator"}), \code{lastName}, and
+#'   \code{firstName}.  Always has at least one row; uses empty strings for
+#'   unknown names.
+#' @keywords internal
 extract_authors <- function(params) {
   authors <- tibble(creatorType = character(), lastName = character(), firstName = character())
 
@@ -291,7 +417,23 @@ extract_authors <- function(params) {
   authors
 }
 
-# Convert a parsed template to a one-row reference tibble
+#' Convert a parsed citation template to a one-row reference tibble.
+#'
+#' Maps template parameter names to the internal reference schema used
+#' throughout this script.  Strips Wikipedia markup from string fields via
+#' \code{\link{clean_wiki}}.  For \code{harvc} (book-section) templates, maps
+#' \code{chapter} to title and \code{in} to \code{bookTitle}.  When both
+#' \code{title} and \code{trans-title} are present, appends the translation in
+#' brackets.
+#'
+#' @param params Named list as returned by \code{\link{parse_template_params}}.
+#' @return A one-row tibble with columns \code{itemType}, \code{title},
+#'   \code{creators}, \code{date}, \code{year}, \code{publisher}, \code{place},
+#'   \code{publicationTitle}, \code{volume}, \code{issue}, \code{pages},
+#'   \code{ISBN}, \code{ISSN}, \code{DOI}, \code{url}, \code{language},
+#'   \code{edition}, \code{series}, \code{accessDate}, \code{bookTitle},
+#'   \code{chapter}, \code{.template_name}, \code{.raw_template}.
+#' @keywords internal
 template_to_ref <- function(params) {
   item_type <- template_to_itemtype(params$.template)
   authors <- extract_authors(params)
@@ -371,6 +513,23 @@ template_to_ref <- function(params) {
 # 5. Build reference data frame from wikitext
 # =============================================================================
 
+#' Extract all citations from a wikitext string into a reference tibble.
+#'
+#' Combines \code{\link{extract_all_citations}} (template-based references) and
+#' \code{\link{extract_bare_refs}} (plain \code{<ref>} notes), parses each
+#' template, and adds a convenience \code{first_author} column for inspection.
+#' Issues a warning if no citation templates are found.
+#'
+#' @param wikitext Raw wikitext string as returned by
+#'   \code{\link{fetch_wikitext}}.
+#' @return A tibble with one row per citation template found.  Columns follow
+#'   the schema described in \code{\link{template_to_ref}}, plus
+#'   \code{first_author} (character, for display only).
+#' @examples
+#' \dontrun{
+#' wikitext <- fetch_wikitext("Meiō_incident")
+#' refs_raw <- extract_refs_from_wikitext(wikitext)
+#' }
 extract_refs_from_wikitext <- function(wikitext) {
   # Extract all citation templates
   cite_strings <- extract_all_citations(wikitext)
@@ -427,6 +586,17 @@ extract_refs_from_wikitext <- function(wikitext) {
 # 6. Deduplication
 # =============================================================================
 
+#' Build a normalised deduplication key for a reference.
+#'
+#' Concatenates the first author's last name, publication year, and title after
+#' lowercasing, stripping diacritics (via \pkg{stringi}), and removing all
+#' non-alphanumeric characters.
+#'
+#' @param title Character; reference title.
+#' @param year  Character; four-digit year string, or \code{NA}.
+#' @param last1 Character; first author's last name, or \code{NA}.
+#' @return A character string of the form \code{"lastname|year|title"}.
+#' @keywords internal
 dedup_key <- function(title, year, last1) {
   # Normalize: lowercase, strip diacritics, strip punctuation
   norm <- function(x) {
@@ -438,6 +608,16 @@ dedup_key <- function(title, year, last1) {
   paste(norm(last1), norm(year), norm(title), sep = "|")
 }
 
+#' Remove duplicate citations from a reference tibble.
+#'
+#' References sharing the same \code{\link{dedup_key}} (normalised last name +
+#' year + title) are considered duplicates.  The first occurrence is retained
+#' and a \code{n_citations} column records how many times that reference
+#' appeared in the wikitext.
+#'
+#' @param refs A tibble as returned by \code{\link{extract_refs_from_wikitext}}.
+#' @return The deduplicated tibble with two extra columns: \code{.dedup_key}
+#'   (character) and \code{n_citations} (integer).
 deduplicate_refs <- function(refs) {
   refs <- refs |>
     mutate(
@@ -457,6 +637,13 @@ deduplicate_refs <- function(refs) {
 # 7. RIS export  (uses enriched refs if enrichment has been run)
 # =============================================================================
 
+#' Convert a Zotero item type string to a RIS type code.
+#'
+#' @param it Character; a Zotero item type such as \code{"book"} or
+#'   \code{"journalArticle"}.
+#' @return A RIS \code{TY} code string.  Unrecognised types return
+#'   \code{"GEN"}.
+#' @keywords internal
 itemtype_to_ris <- function(it) {
   switch(it,
     "book"                = "BOOK",
@@ -475,6 +662,16 @@ itemtype_to_ris <- function(it) {
   )
 }
 
+#' Serialise one reference row to RIS-format lines.
+#'
+#' Produces a character vector of \code{TAG  - value} lines (plus a closing
+#' \code{ER  - } record) suitable for writing to a \code{.ris} file.
+#' Page ranges with an en-dash or hyphen are split into \code{SP}/\code{EP}
+#' tags.
+#'
+#' @param row A one-row tibble from a refs data frame.
+#' @return Character vector of RIS lines for this reference.
+#' @keywords internal
 ref_to_ris_lines <- function(row) {
   lines <- character(0)
   add <- function(tag, val) {
@@ -536,6 +733,21 @@ ref_to_ris_lines <- function(row) {
   lines
 }
 
+#' Write a reference tibble to a RIS file.
+#'
+#' Converts each row to RIS format via \code{\link{ref_to_ris_lines}} and
+#' writes all records to \code{file}, separated by blank lines.
+#'
+#' @param refs A refs tibble (e.g. from \code{\link{deduplicate_refs}} or
+#'   \code{\link{enrich_refs}}).
+#' @param file Path to the output \code{.ris} file.  Created or overwritten.
+#' @return \code{NULL}, invisibly.  Emits a message with the count of
+#'   references written.
+#' @examples
+#' \dontrun{
+#' refs <- wiki_refs_pipeline("Meiō_incident", enrich = FALSE)
+#' export_ris(refs, "meio_incident.ris")
+#' }
 export_ris <- function(refs, file) {
   all_lines <- character(0)
   for (i in seq_len(nrow(refs))) {
@@ -549,8 +761,17 @@ export_ris <- function(refs, file) {
 # 8. DOI / ISBN enrichment via c2z
 # =============================================================================
 
-# Overlay fields from a c2z $data row onto our ref row, preferring c2z values
-# for non-empty fields and falling back to wiki-parsed values.
+#' Merge metadata from a c2z enrichment result into a ref row.
+#'
+#' Prefers non-empty values from \code{enriched_row} (a row of the
+#' \code{$data} tibble returned by \code{ZoteroDoi} or \code{ZoteroIsbn})
+#' over the wiki-parsed values in \code{ref_row}, falling back to the wiki
+#' value for any field the enriched source leaves blank.
+#'
+#' @param ref_row One-row tibble from the refs data frame.
+#' @param enriched_row One-row tibble from a c2z \code{$data} result.
+#' @return The updated \code{ref_row} with enriched fields overlaid.
+#' @keywords internal
 .merge_enriched <- function(ref_row, enriched_row) {
   prefer <- function(new_val, old_val) {
     new_str <- if (is.null(new_val) || length(new_val) == 0) NA_character_
@@ -598,8 +819,18 @@ export_ris <- function(refs, file) {
   ref_row
 }
 
-# Try to enrich a single reference row via DOI or ISBN lookup.
-# Returns the row with `.enrich_status` set to "doi", "isbn", "skipped", or "failed".
+#' Enrich a single reference row via DOI or ISBN lookup.
+#'
+#' Attempts a DOI lookup first (via \code{c2z::ZoteroDoi}), then falls back to
+#' an ISBN lookup (via \code{c2z::ZoteroIsbn}).  On success, overlays the
+#' richer metadata using \code{\link{.merge_enriched}}.
+#'
+#' @param ref_row A one-row tibble from the refs data frame.
+#' @return The same row with fields updated where enrichment succeeded, plus a
+#'   new character column \code{.enrich_status}: \code{"doi"}, \code{"isbn"},
+#'   \code{"failed"} (identifier present but lookup returned no data), or
+#'   \code{"skipped"} (no DOI or ISBN present).
+#' @keywords internal
 enrich_ref <- function(ref_row) {
   doi  <- ref_row$DOI
   isbn <- ref_row$ISBN
@@ -640,7 +871,16 @@ enrich_ref <- function(ref_row) {
   ref_row
 }
 
-# Enrich all refs in a tibble. Returns the tibble with an added `.enrich_status` column.
+#' Enrich all references in a tibble via DOI and ISBN lookups.
+#'
+#' Iterates over every row, calling \code{\link{enrich_ref}} for each, with a
+#' progress bar.  Emits a summary message showing how many references were
+#' enriched via DOI, ISBN, failed, or skipped.
+#'
+#' @param refs A refs tibble (e.g. from \code{\link{deduplicate_refs}}).
+#' @return The same tibble with enriched field values where lookups succeeded,
+#'   and a new \code{.enrich_status} column added.
+#' @seealso \code{\link{enrich_ref}}
 enrich_refs <- function(refs) {
   n_doi  <- sum(!is.na(refs$DOI)  & nzchar(refs$DOI  %||% ""), na.rm = TRUE)
   n_isbn <- sum(!is.na(refs$ISBN) & nzchar(refs$ISBN %||% ""), na.rm = TRUE)
@@ -672,7 +912,17 @@ enrich_refs <- function(refs) {
 # 10. Zotero import
 # =============================================================================
 
-# Parse access dates to ISO 8601 (YYYY-MM-DD) as required by the Zotero API.
+#' Format an access date string for the Zotero API.
+#'
+#' Attempts to parse common date formats (\code{"\%d \%B \%Y"},
+#' \code{"\%B \%d, \%Y"}, \code{"\%Y-\%m-\%d"}, \code{"\%Y/\%m/\%d"}) and
+#' returns the result in ISO 8601 (\code{YYYY-MM-DD}) format, as required by
+#' the Zotero REST API.
+#'
+#' @param x Character; raw access-date string from a citation template.
+#' @return An ISO 8601 date string, or \code{""} if \code{x} is \code{NA},
+#'   blank, or cannot be parsed.
+#' @keywords internal
 .format_access_date <- function(x) {
   if (is.na(x) || !nzchar(x)) return("")
   fmts <- c("%d %B %Y", "%B %d, %Y", "%Y-%m-%d", "%Y/%m/%d")
@@ -683,14 +933,26 @@ enrich_refs <- function(refs) {
   "" # can't parse — omit rather than send a bad value
 }
 
-# Build a one-row Zotero item tibble with only the fields valid for that type.
-# Field names follow the Zotero API schema strictly.
-#
-# Key mappings that differ from our internal schema:
-#   book/thesis      : pages  → numPages
-#   webpage          : publicationTitle → websiteTitle
-#   encyclopediaArticle : publicationTitle → encyclopediaTitle
-#   thesis           : publisher → university
+#' Convert one ref row to a Zotero API item tibble.
+#'
+#' Builds a tibble whose column names and field semantics match the Zotero REST
+#' API for the specific \code{itemType} of the reference.  Key schema
+#' differences from the internal ref schema:
+#' \itemize{
+#'   \item \code{book} and \code{thesis}: \code{pages} → \code{numPages}
+#'   \item \code{webpage}: \code{publicationTitle} → \code{websiteTitle}
+#'   \item \code{encyclopediaArticle}: \code{publicationTitle} →
+#'     \code{encyclopediaTitle}
+#'   \item \code{thesis}: \code{publisher} → \code{university}
+#'   \item \code{report}: \code{publisher} → \code{institution}
+#'   \item \code{conferencePaper}: \code{publicationTitle} →
+#'     \code{proceedingsTitle}
+#' }
+#' A fresh Zotero item key is generated via \code{c2z::ZoteroKey()}.
+#'
+#' @param row A one-row tibble from the refs data frame.
+#' @return A one-row tibble formatted for the Zotero REST API.
+#' @keywords internal
 ref_to_zotero_item <- function(row) {
   acc <- .format_access_date(row$accessDate %||% "")
 
@@ -829,19 +1091,62 @@ ref_to_zotero_item <- function(row) {
   as_tibble(c(base, extra))
 }
 
+#' Convert a full reference tibble to Zotero API items.
+#'
+#' Applies \code{\link{ref_to_zotero_item}} to every row and row-binds the
+#' results.
+#'
+#' @param refs A refs tibble (e.g. from \code{\link{enrich_refs}} or
+#'   \code{\link{deduplicate_refs}}).
+#' @return A tibble of Zotero API items, one row per reference.
+#' @keywords internal
 refs_to_zotero_items <- function(refs) {
   map_dfr(seq_len(nrow(refs)), function(i) ref_to_zotero_item(refs[i, ]))
 }
 
+#' Import a reference tibble into a new Zotero collection.
+#'
+#' Creates a new Zotero collection named \code{collection_name} and posts all
+#' new items to it.  If \code{\link{check_library_for_refs}} has been run
+#' beforehand, references already in the library (\code{import_action ==
+#' "add_to_collection"}) are moved into the new collection instead of being
+#' re-created.
+#'
+#' @param refs A refs tibble, optionally with \code{import_action} and
+#'   \code{existing_key} columns from \code{\link{check_library_for_refs}}.
+#' @param collection_name Name for the new Zotero collection.
+#' @param user_id Zotero user ID (character or numeric).
+#' @param api_key Zotero API key with write access.
+#' @param user Logical; if \code{FALSE} treat \code{user_id} as a group ID.
+#'   Default \code{TRUE}.
+#' @param group_id Group ID, used when \code{user = FALSE}.
+#' @param dry_run If \code{TRUE}, print what would be posted but do not call
+#'   the Zotero API.  Returns the pre-built c2z Zotero list.  Default
+#'   \code{FALSE}.
+#' @return The c2z Zotero list returned by \code{ZoteroPost()}, or (dry run)
+#'   the pre-built list without posting.
+#' @seealso \code{\link{post_refs_to_zotero}}, \code{\link{wiki_refs_pipeline}}
 import_to_zotero <- function(refs, collection_name,
                               user_id = NULL, api_key = NULL,
                               user = TRUE, group_id = NULL,
                               dry_run = FALSE) {
-  # Set up Zotero connection
-  id <- if (user) user_id else group_id
+  # If check_library_for_refs has been run, split refs by import_action.
+  # Otherwise treat all refs as new items.
+  if ("import_action" %in% names(refs)) {
+    new_refs      <- filter(refs, import_action == "create_new")
+    existing_keys <- refs |>
+      filter(import_action == "add_to_collection") |>
+      pull(existing_key) |>
+      na.omit() |>
+      as.character()
+  } else {
+    new_refs      <- refs
+    existing_keys <- character(0)
+  }
+
+  id     <- if (user) user_id else group_id
   zotero <- Zotero(user = user, id = id, api = api_key)
 
-  # Generate the collection key upfront so we can embed it in each item
   collection_key <- ZoteroKey()
 
   zotero$collections <- tibble(
@@ -851,24 +1156,36 @@ import_to_zotero <- function(refs, collection_name,
     parentCollection = "FALSE"
   )
 
-  # Convert refs to Zotero items and assign them all to the new collection.
+  # Convert new refs to Zotero items, each assigned to the new collection.
   # The Zotero API requires each item to carry the key(s) of its collection(s).
-  zotero$items <- refs_to_zotero_items(refs) |>
-    mutate(collections = map(seq_len(n()), \(i) collection_key))
+  zotero$items <- if (nrow(new_refs) > 0) {
+    refs_to_zotero_items(new_refs) |>
+      mutate(collections = map(seq_len(n()), \(i) collection_key))
+  } else {
+    NULL
+  }
 
   if (dry_run) {
-    message("DRY RUN: Would post ", nrow(zotero$items), " items to collection '",
-            collection_name, "'")
+    message(sprintf(
+      "DRY RUN: Would create collection '%s' with %d new item(s) and %d moved item(s).",
+      collection_name, nrow(new_refs), length(existing_keys)
+    ))
     return(zotero)
   }
 
-  # Post to Zotero
   result <- ZoteroPost(
     zotero,
     post.collections = TRUE,
-    post.items = TRUE,
+    post.items       = !is.null(zotero$items),
     post.attachments = FALSE
   )
+
+  # Move accepted existing items into the new collection
+  if (length(existing_keys) > 0) {
+    message("Moving ", length(existing_keys), " existing item(s) into collection...")
+    add_items_to_collection(existing_keys, collection_key,
+                            user_id = user_id, api_key = api_key, user = user)
+  }
 
   result
 }
@@ -900,21 +1217,278 @@ post_refs_to_zotero <- function(refs, collection_name,
 }
 
 # =============================================================================
-# 12. Fetch citation keys from Zotero
+# 12. Library deduplication check
+# =============================================================================
+
+#' Fetch top-level items from a Zotero library or collection.
+#'
+#' Paginates through the Zotero REST API (100 items per page), handling
+#' \code{429}/\code{503} rate-limit responses via \pkg{httr2}'s retry
+#' mechanism.  Returns a normalised lookup tibble used internally by
+#' \code{\link{check_library_for_refs}} and \code{\link{fetch_zotero_keys}}.
+#'
+#' @param user_id Zotero user ID.
+#' @param api_key Zotero API key (read access sufficient).
+#' @param user Logical; if \code{FALSE} treat \code{user_id} as a group ID.
+#'   Default \code{TRUE}.
+#' @param collection_key Optional 8-character Zotero collection key.  If
+#'   supplied, only items in that collection are fetched.
+#' @return A tibble with columns \code{key}, \code{title}, \code{DOI},
+#'   \code{ISBN}, \code{date}, \code{publisher}, \code{first_author}, and
+#'   normalised lookup columns \code{doi_norm}, \code{isbn_norm},
+#'   \code{title_norm}, \code{year_norm}.
+#' @keywords internal
+.fetch_zotero_items <- function(user_id, api_key, user = TRUE,
+                                 collection_key = NULL) {
+  entity    <- if (user) "users" else "groups"
+  item_path <- if (!is.null(collection_key))
+    paste0("collections/", collection_key, "/items/top")
+  else
+    "items/top"
+  endpoint <- paste0(
+    "https://api.zotero.org/", entity, "/", user_id, "/", item_path
+  )
+
+  base_req <- request(endpoint) |>
+    req_headers(
+      "Zotero-API-Key"     = api_key,
+      "Zotero-API-Version" = "3"
+    ) |>
+    req_retry(
+      max_tries    = 4,
+      is_transient = \(r) resp_status(r) %in% c(429, 503),
+      after        = \(r) {
+        val <- resp_header(r, "Backoff") %||% resp_header(r, "Retry-After")
+        if (!is.null(val)) as.numeric(val) else NULL
+      }
+    )
+
+  fetch_page <- function(start) {
+    base_req |>
+      req_url_query(limit = 100, start = start) |>
+      req_perform() |>
+      resp_body_json(simplifyVector = FALSE)
+  }
+
+  first_resp <- base_req |>
+    req_url_query(limit = 100, start = 0) |>
+    req_perform()
+
+  total <- as.integer(resp_header(first_resp, "Total-Results") %||% "0")
+  raw   <- resp_body_json(first_resp, simplifyVector = FALSE)
+
+  if (total > 100) {
+    offsets <- seq(100, total - 1, by = 100)
+    raw <- c(raw, list_flatten(map(offsets, fetch_page)))
+  }
+
+  if (length(raw) == 0) return(tibble())
+
+  pluck_field <- function(item, field) {
+    v <- item$data[[field]]
+    if (is.null(v) || !nzchar(as.character(v))) NA_character_ else as.character(v)
+  }
+
+  first_author_name <- function(item) {
+    cr <- item$data$creators
+    if (is.null(cr) || length(cr) == 0) return(NA_character_)
+    authors <- Filter(\(c) identical(c$creatorType, "author"), cr)
+    if (length(authors) == 0) authors <- cr[1]
+    a     <- authors[[1]]
+    last  <- a$lastName  %||% ""
+    first <- a$firstName %||% ""
+    if (nzchar(last) && nzchar(first)) paste0(last, ", ", first)
+    else if (nzchar(last)) last
+    else NA_character_
+  }
+
+  norm <- function(x) {
+    x <- tolower(coalesce(as.character(x), ""))
+    x <- stri_trans_general(x, "Latin-ASCII")
+    str_replace_all(x, "[^a-z0-9]", "")
+  }
+
+  tibble(
+    key          = map_chr(raw, \(x) x$key),
+    title        = map_chr(raw, \(x) pluck_field(x, "title")),
+    DOI          = map_chr(raw, \(x) pluck_field(x, "DOI")),
+    ISBN         = map_chr(raw, \(x) pluck_field(x, "ISBN")),
+    date         = map_chr(raw, \(x) pluck_field(x, "date")),
+    publisher    = map_chr(raw, \(x) pluck_field(x, "publisher")),
+    first_author = map_chr(raw, first_author_name)
+  ) |>
+    mutate(
+      doi_norm   = norm(DOI),
+      isbn_norm  = norm(ISBN),
+      title_norm = norm(title),
+      year_norm  = coalesce(str_extract(coalesce(date, ""), "\\d{4}"), "")
+    )
+}
+
+#' Add existing Zotero items to a collection via the REST API.
+#'
+#' @param item_keys Character vector of Zotero item keys.
+#' @param collection_key Destination collection key.
+#' @param user_id Zotero user ID.
+#' @param api_key Zotero API key (write access).
+#' @param user Logical; if FALSE treat user_id as group ID.
+add_items_to_collection <- function(item_keys, collection_key,
+                                     user_id, api_key, user = TRUE) {
+  entity   <- if (user) "users" else "groups"
+  endpoint <- paste0(
+    "https://api.zotero.org/", entity, "/", user_id,
+    "/collections/", collection_key, "/items"
+  )
+
+  base_req <- request(endpoint) |>
+    req_headers(
+      "Zotero-API-Key"     = api_key,
+      "Zotero-API-Version" = "3"
+    ) |>
+    req_retry(
+      max_tries    = 3,
+      is_transient = \(r) resp_status(r) %in% c(429, 503)
+    )
+
+  # Zotero accepts up to 50 item keys per request
+  chunks <- split(item_keys, ceiling(seq_along(item_keys) / 50))
+  walk(chunks, \(chunk) {
+    base_req |>
+      req_body_json(chunk) |>
+      req_perform()
+  })
+
+  invisible(item_keys)
+}
+
+#' Check a refs tibble against the existing Zotero library for duplicates.
+#'
+#' For each ref that matches an existing Zotero item (by DOI, ISBN, or
+#' normalised title + year), records the match and reports it to the user via
+#' \code{message()}.  All matches are automatically accepted: the existing item
+#' will be added to the new collection rather than re-created.  No interactive
+#' prompting is performed, so this function is safe to use in non-interactive
+#' contexts (scripts, WebR, Shinylive, etc.).
+#'
+#' @param refs A refs tibble (as returned by \code{\link{wiki_refs_pipeline}}
+#'   or \code{\link{extract_refs_from_wikitext}}).
+#' @param user_id Zotero user ID.
+#' @param api_key Zotero API key (read access sufficient).
+#' @param user Logical; if \code{FALSE} treat \code{user_id} as a group ID.
+#'   Default \code{TRUE}.
+#' @return \code{refs} with three new columns:
+#'   \describe{
+#'     \item{\code{existing_key}}{Key of the matching Zotero item, or
+#'       \code{NA}.}
+#'     \item{\code{import_action}}{\code{"add_to_collection"} when a match was
+#'       found; \code{"create_new"} otherwise.}
+#'     \item{\code{duplicate_how}}{How the match was found: \code{"DOI"},
+#'       \code{"ISBN"}, \code{"title + year"}, or \code{NA}.}
+#'   }
+check_library_for_refs <- function(refs, user_id, api_key, user = TRUE) {
+  message("Fetching library items for duplicate check...")
+  library_items <- .fetch_zotero_items(user_id = user_id, api_key = api_key,
+                                        user = user)
+  message(nrow(library_items), " existing item(s) in library.")
+
+  refs$existing_key  <- NA_character_
+  refs$import_action <- "create_new"
+  refs$duplicate_how <- NA_character_
+
+  if (nrow(library_items) == 0) return(refs)
+
+  norm <- function(x) {
+    x <- tolower(coalesce(as.character(x), ""))
+    x <- stri_trans_general(x, "Latin-ASCII")
+    str_replace_all(x, "[^a-z0-9]", "")
+  }
+
+  find_candidate <- function(ref) {
+    doi  <- norm(ref$DOI)
+    isbn <- norm(ref$ISBN)
+    titl <- norm(ref$title)
+    yr   <- ref$year %||% ""
+
+    if (nzchar(doi)) {
+      hit <- filter(library_items, doi_norm == doi)
+      if (nrow(hit)) return(list(item = hit[1, ], how = "DOI"))
+    }
+    if (nzchar(isbn)) {
+      hit <- filter(library_items, isbn_norm == isbn)
+      if (nrow(hit)) return(list(item = hit[1, ], how = "ISBN"))
+    }
+    if (nzchar(titl) && nzchar(yr)) {
+      hit <- filter(library_items, title_norm == titl, year_norm == yr)
+      if (nrow(hit)) return(list(item = hit[1, ], how = "title + year"))
+    }
+    NULL
+  }
+
+  fmt_field <- function(x, w = 48) {
+    x <- if (is.na(x) || !nzchar(x %||% "")) "(none)" else as.character(x)
+    if (nchar(x) > w) paste0(substr(x, 1, w - 1), "\u2026") else x
+  }
+
+  report_match <- function(ref, zot, how, idx, total) {
+    rule <- strrep("\u2500", 105)
+    msg_lines <- c(
+      rule,
+      sprintf(" [%d/%d] Duplicate found via %s \u2192 will add to collection instead of re-creating", idx, total, how),
+      rule,
+      sprintf("  %-18s  %-48s  %-48s", "Field", "Wikipedia ref", "Existing Zotero item"),
+      sprintf("  %-18s  %-48s  %-48s", strrep("-", 18), strrep("-", 48), strrep("-", 48)),
+      sprintf("  %-18s  %-48s  %-48s", "Title",     fmt_field(ref$title),        fmt_field(zot$title)),
+      sprintf("  %-18s  %-48s  %-48s", "Author(s)", fmt_field(ref$first_author), fmt_field(zot$first_author)),
+      sprintf("  %-18s  %-48s  %-48s", "Year",      fmt_field(ref$year),         fmt_field(zot$year_norm)),
+      sprintf("  %-18s  %-48s  %-48s", "Publisher", fmt_field(ref$publisher),    fmt_field(zot$publisher)),
+      sprintf("  %-18s  %-48s  %-48s", "DOI",       fmt_field(ref$DOI),          fmt_field(zot$DOI)),
+      sprintf("  %-18s  %-48s  %-48s", "ISBN",      fmt_field(ref$ISBN),         fmt_field(zot$ISBN)),
+      sprintf("  %-18s  %-48s",        "Zotero key", fmt_field(zot$key)),
+      rule
+    )
+    message(paste(msg_lines, collapse = "\n"))
+  }
+
+  candidates   <- map(seq_len(nrow(refs)), \(i) find_candidate(refs[i, ]))
+  n_candidates <- sum(map_lgl(candidates, Negate(is.null)))
+
+  if (n_candidates == 0) {
+    message("No duplicates found — all references will be created as new items.")
+    return(refs)
+  }
+
+  message(n_candidates, " duplicate(s) found in your Zotero library:")
+
+  match_count <- 0L
+  for (i in seq_len(nrow(refs))) {
+    cand <- candidates[[i]]
+    if (is.null(cand)) next
+    match_count <- match_count + 1L
+    report_match(refs[i, ], cand$item, cand$how, match_count, n_candidates)
+    refs$existing_key[i]  <- cand$item$key
+    refs$import_action[i] <- "add_to_collection"
+    refs$duplicate_how[i] <- cand$how
+  }
+
+  message(sprintf(
+    "Result: %d existing item(s) will be added to the new collection, %d new item(s) will be created.",
+    sum(refs$import_action == "add_to_collection"),
+    sum(refs$import_action == "create_new")
+  ))
+
+  refs
+}
+
+# =============================================================================
+# 13. Fetch citation keys from Zotero
 # =============================================================================
 
 #' Look up Zotero item keys for each row in a refs tibble.
 #'
-#' Queries the Zotero REST API directly (via httr2) to fetch top-level items
-#' from the library or a specific collection, then matches each row back using
-#' DOI → ISBN → normalised title + year (in that priority order). Handles
-#' pagination automatically and retries on 429 / 503 responses, honouring the
-#' Zotero `Backoff` header.
-#'
-#' The result is the original tibble with two new columns appended:
-#'   - `zotero_key`   : Zotero item key (e.g. "A3D88AEA"), NA if unmatched
-#'   - `zotero_match` : how the match was made ("doi", "isbn", "title_year",
-#'                      or "unmatched")
+#' Fetches top-level items from the Zotero library or a specific collection
+#' (via `.fetch_zotero_items()`) and matches each row back using
+#' DOI → ISBN → normalised title + year. Typically called automatically by
+#' `wiki_refs_pipeline()` after a successful import.
 #'
 #' @param refs A refs tibble (as returned by `wiki_refs_pipeline()` or
 #'   `extract_refs_from_wikitext()`).
@@ -925,99 +1499,34 @@ post_refs_to_zotero <- function(refs, collection_name,
 #'   supplied, only items in that collection are fetched; otherwise the whole
 #'   library is searched.
 #' @return `refs` with `zotero_key` and `zotero_match` columns added.
+#'   `zotero_match` is one of "doi", "isbn", "title_year", or "unmatched".
 fetch_zotero_keys <- function(refs,
                                user_id = NULL, api_key = NULL,
                                user = TRUE, collection_key = NULL) {
-  entity    <- if (user) "users" else "groups"
-  item_path <- if (!is.null(collection_key))
-    paste0("collections/", collection_key, "/items/top")
-  else
-    "items/top"
-  endpoint <- paste0(
-    "https://api.zotero.org/", entity, "/", user_id, "/", item_path
-  )
-
-  # Base request template: auth headers + retry logic
-  base_req <- request(endpoint) |>
-    req_headers(
-      "Zotero-API-Key"     = api_key,
-      "Zotero-API-Version" = "3"
-    ) |>
-    req_retry(
-      max_tries    = 4,
-      is_transient = \(r) resp_status(r) %in% c(429, 503),
-      # Honour Zotero's Backoff header; fall back to exponential backoff
-      after        = \(r) {
-        val <- resp_header(r, "Backoff") %||% resp_header(r, "Retry-After")
-        if (!is.null(val)) as.numeric(val) else NULL
-      }
-    )
-
-  # Fetch one page (start = 0-indexed offset)
-  fetch_page <- function(start) {
-    base_req |>
-      req_url_query(limit = 100, start = start) |>
-      req_perform() |>
-      resp_body_json(simplifyVector = FALSE)
-  }
-
   message(
     "Fetching Zotero items",
     if (!is.null(collection_key)) paste0(" (collection: ", collection_key, ")")
     else " (full library)", "..."
   )
 
-  # First page — also read Total-Results to know if we need to paginate
-  first_resp <- base_req |>
-    req_url_query(limit = 100, start = 0) |>
-    req_perform()
+  lookup <- .fetch_zotero_items(user_id       = user_id,
+                                 api_key       = api_key,
+                                 user          = user,
+                                 collection_key = collection_key)
 
-  total <- as.integer(resp_header(first_resp, "Total-Results") %||% "0")
-  raw   <- resp_body_json(first_resp, simplifyVector = FALSE)
+  message("Fetched ", nrow(lookup), " item(s).")
 
-  if (total > 100) {
-    offsets <- seq(100, total - 1, by = 100)
-    more    <- map(offsets, fetch_page)
-    raw     <- c(raw, list_flatten(more))
-  }
-
-  message("Fetched ", length(raw), " item(s).")
-
-  if (length(raw) == 0) {
+  if (nrow(lookup) == 0) {
     warning("No items returned from Zotero; all rows will be unmatched.")
     return(mutate(refs, zotero_key = NA_character_, zotero_match = "unmatched"))
   }
 
-  # Extract key fields from each item's `data` sub-object
-  pluck_field <- function(item, field) {
-    v <- item$data[[field]]
-    if (is.null(v) || !nzchar(v)) NA_character_ else as.character(v)
-  }
-
-  lookup <- tibble(
-    key   = map_chr(raw, \(x) x$key),
-    title = map_chr(raw, \(x) pluck_field(x, "title")),
-    DOI   = map_chr(raw, \(x) pluck_field(x, "DOI")),
-    ISBN  = map_chr(raw, \(x) pluck_field(x, "ISBN")),
-    date  = map_chr(raw, \(x) pluck_field(x, "date"))
-  )
-
-  # Normalise: lowercase → strip diacritics → keep alphanumerics only
   norm <- function(x) {
     x <- tolower(coalesce(as.character(x), ""))
     x <- stri_trans_general(x, "Latin-ASCII")
     str_replace_all(x, "[^a-z0-9]", "")
   }
 
-  lookup <- lookup |>
-    mutate(
-      doi_norm   = norm(DOI),
-      isbn_norm  = norm(ISBN),
-      title_norm = norm(title),
-      year_norm  = coalesce(str_extract(coalesce(date, ""), "\\d{4}"), "")
-    )
-
-  # Match a single refs row → c(key, match_type)
   match_row <- function(ref) {
     doi  <- norm(ref$DOI)
     isbn <- norm(ref$ISBN)
@@ -1028,12 +1537,10 @@ fetch_zotero_keys <- function(refs,
       hit <- filter(lookup, doi_norm == doi)
       if (nrow(hit)) return(c(hit$key[1], "doi"))
     }
-
     if (nzchar(isbn)) {
       hit <- filter(lookup, isbn_norm == isbn)
       if (nrow(hit)) return(c(hit$key[1], "isbn"))
     }
-
     if (nzchar(titl)) {
       hit <- filter(lookup, title_norm == titl)
       if (nrow(hit)) {
@@ -1044,7 +1551,6 @@ fetch_zotero_keys <- function(refs,
         return(c(hit$key[1], "title_year"))
       }
     }
-
     c(NA_character_, "unmatched")
   }
 
@@ -1065,34 +1571,84 @@ fetch_zotero_keys <- function(refs,
 }
 
 # =============================================================================
-# 13. Main pipeline
+# 14. Main pipeline
 # =============================================================================
 
-#' Extract Wikipedia references and optionally import to Zotero
+#' Extract Wikipedia references and optionally import to Zotero.
 #'
-#' @param page_name Wikipedia page name (as in URL, e.g. "Elizabeth_Lyon_(criminal)")
-#' @param language Wikipedia language code, default "en"
-#' @param ris_file Path to write RIS file (NULL to skip)
-#' @param enrich Whether to enrich refs with richer metadata via DOI/ISBN lookups
-#'   using c2z's ZoteroDoi/ZoteroIsbn. Default TRUE.
-#' @param zotero_import Whether to import to Zotero. Default FALSE.
-#' @param collection_name Zotero collection name (default: page title with
-#'   underscores replaced by spaces)
-#' @param user_id Zotero user ID.
-#' @param api_key Zotero API key (write access).
-#' @param read_api_key Zotero API key for reading items back after import. If
-#'   NULL, falls back to `api_key`. Useful when write and read keys differ.
-#' @param fetch_keys If TRUE (default) and `zotero_import = TRUE` and
-#'   `dry_run = FALSE`, call `fetch_zotero_keys()` after import to add
-#'   `zotero_key` and `zotero_match` columns to the returned tibble.
-#' @param dry_run If TRUE, don't actually post to Zotero. Default TRUE.
-#' @return A tibble of deduplicated (and optionally enriched) references, with
-#'   `zotero_key` / `zotero_match` columns when keys were fetched.
+#' The main entry point for the pipeline.  Fetches wikitext for
+#' \code{page_name}, extracts and deduplicates all citation templates,
+#' optionally enriches metadata via DOI/ISBN lookups, optionally exports to
+#' RIS, and optionally imports to a Zotero collection.
+#'
+#' \strong{Typical two-step workflow:}
+#' Run first with \code{dry_run = TRUE} (the default) to inspect parsed
+#' references.  Then pass the returned tibble to
+#' \code{\link{post_refs_to_zotero}} to complete the import without fetching
+#' Wikipedia again.
+#'
+#' @param page_name Wikipedia page title as it appears in the URL (e.g.
+#'   \code{"Elizabeth_Lyon_(criminal)"}).  Underscores and spaces are both
+#'   accepted.
+#' @param language Two-letter Wikipedia language code.  Default \code{"en"}.
+#' @param ris_file Path to write a RIS export file.  \code{NULL} to skip.
+#'   Default \code{NULL}.
+#' @param enrich Logical; if \code{TRUE} (default), enrich metadata via DOI
+#'   and ISBN lookups using \code{c2z::ZoteroDoi} / \code{c2z::ZoteroIsbn}.
+#' @param zotero_import Logical; if \code{TRUE}, create a Zotero collection and
+#'   post items.  Requires \code{user_id} and \code{api_key}.  Default
+#'   \code{FALSE}.
+#' @param check_existing Logical; if \code{TRUE} (default) and
+#'   \code{zotero_import = TRUE}, query the library for duplicates via
+#'   \code{\link{check_library_for_refs}}.  Matches are reported to the user
+#'   via \code{message()} and automatically accepted: the existing Zotero item
+#'   is added to the new collection instead of being re-created.
+#' @param collection_name Name for the new Zotero collection.  Defaults to the
+#'   page title with underscores replaced by spaces.
+#' @param user_id Zotero user ID (character or numeric).
+#' @param api_key Zotero API key with write access.
+#' @param read_api_key Zotero API key for read-only operations (duplicate check
+#'   and key fetch).  Falls back to \code{api_key} if \code{NULL}.
+#' @param fetch_keys Logical; if \code{TRUE} (default) and
+#'   \code{zotero_import = TRUE} and \code{dry_run = FALSE}, call
+#'   \code{\link{fetch_zotero_keys}} after import to add \code{zotero_key} and
+#'   \code{zotero_match} columns to the returned tibble.
+#' @param dry_run Logical; if \code{TRUE} (default), skip all Zotero API
+#'   writes.  The pipeline still fetches Wikipedia, parses refs, and optionally
+#'   enriches them.
+#' @return A tibble of deduplicated (and optionally enriched) references.
+#'   Additional columns are present depending on options:
+#'   \code{zotero_key} and \code{zotero_match} (when \code{fetch_keys = TRUE}),
+#'   \code{existing_key} and \code{import_action} (when
+#'   \code{check_existing = TRUE}).
+#' @examples
+#' \dontrun{
+#' # Step 1: dry run to inspect
+#' refs <- wiki_refs_pipeline(
+#'   "Meiō_incident",
+#'   enrich       = TRUE,
+#'   zotero_import = TRUE,
+#'   user_id      = Sys.getenv("ZOTERO_USER_ID"),
+#'   api_key      = Sys.getenv("ZOTERO_API_KEY"),
+#'   dry_run      = TRUE
+#' )
+#'
+#' # Step 2: satisfied? post without re-fetching Wikipedia
+#' post_refs_to_zotero(
+#'   refs,
+#'   collection_name = "Meiō incident",
+#'   user_id         = Sys.getenv("ZOTERO_USER_ID"),
+#'   api_key         = Sys.getenv("ZOTERO_API_KEY")
+#' )
+#' }
+#' @seealso \code{\link{post_refs_to_zotero}}, \code{\link{export_ris}},
+#'   \code{\link{check_library_for_refs}}, \code{\link{fetch_zotero_keys}}
 wiki_refs_pipeline <- function(page_name,
                                 language = "en",
                                 ris_file = NULL,
                                 enrich = TRUE,
                                 zotero_import = FALSE,
+                                check_existing = TRUE,
                                 collection_name = NULL,
                                 user_id = NULL,
                                 api_key = NULL,
@@ -1110,7 +1666,6 @@ wiki_refs_pipeline <- function(page_name,
   refs <- deduplicate_refs(refs)
   message("Unique references: ", nrow(refs))
 
-  # Summary
   message("\nReference types:")
   print(count(refs, itemType, sort = TRUE))
 
@@ -1121,6 +1676,16 @@ wiki_refs_pipeline <- function(page_name,
 
   if (!is.null(ris_file)) {
     export_ris(refs, ris_file)
+  }
+
+  if (zotero_import && check_existing) {
+    message("\nChecking for existing items in Zotero library...")
+    refs <- check_library_for_refs(
+      refs,
+      user_id = user_id,
+      api_key = read_api_key %||% api_key,
+      user    = TRUE
+    )
   }
 
   imported_collection_key <- NULL
