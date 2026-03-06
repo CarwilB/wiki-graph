@@ -1,0 +1,114 @@
+---
+title: "Summer Research Grant Evaluator"
+author: "Carwil Bjork-James"
+format: 
+  html:
+    toc: true
+    theme: cosmo
+---
+
+## Evaluation Rubric Reference
+
+| Arena | Exceptional (100%) | Above Average (75%) | Average (50%–33%) | Below Average / Poor (25%–0%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Research Potential** | **6 Points**: Innovative, methodologically sound, essential to dissertation. | **4.5 Points**: Strong goals; contributes substantially but may lack deep innovation. | **3 Points**: Adequate goals but conventional. Research is purely supplemental. | **1.5 Points**: Lacks clarity or feasible methods. Limited value to dissertation. |
+| **Professional Development** | **3 Points**: Clear plan for dissemination/training. All prep complete. | **2 Points**: Good plan but less detailed. Student is on track with prep. | **1 Point**: Plan is vague. Unclear how training facilitates execution. | **0 Points**: No clear plan. No discussion of preparedness. |
+| **Budget & Justification** | **3 Points**: Comprehensive and fully justified. Costs are essential/research-oriented. | **2 Points**: Generally reasonable. Majority of costs are justified and essential. | **1 Point**: Some costs justified, others not clearly connected to research. | **0 Points**: Poorly constructed. Costs not justified or relevant. |
+
+---
+
+## Interactive Scorer
+
+```{ojs}
+//| echo: false
+
+// 1. INPUTS
+viewof nominee = Inputs.text({label: "Nominee Name", placeholder: "Enter name..."})
+
+viewof resPotential = Inputs.range([1.5, 6], {
+  step: 1.5, 
+  value: 3, 
+  label: md`**Research Potential** (1.5 - 6)`
+})
+
+viewof profDev = Inputs.range([0, 3], {
+  step: 1, 
+  value: 1, 
+  label: md`**Professional Dev.** (0 - 3)`
+})
+
+viewof budgetJust = Inputs.range([0, 3], {
+  step: 1, 
+  value: 1, 
+  label: md`**Budget Detail** (0 - 3)`
+})
+
+viewof notes = Inputs.textarea({
+  label: "Evaluation Notes", 
+  placeholder: "Enter strengths, weaknesses, or specific justifications...",
+  width: "100%",
+  rows: 5
+})
+
+// 2. CALCULATIONS
+totalScore = resPotential + profDev + budgetJust
+
+// 3. DISPLAY SUMMARY
+md`
+### Summary for: **${nominee || "Unnamed Nominee"}**
+**Total Score: ${totalScore.toFixed(1)} / 12**
+`
+
+// 4. ACTION BUTTONS (Download and Reset)
+html`
+  <div style="display: flex; gap: 10px; margin-top: 20px;">
+    <button id="downloadBtn" style="padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px;">Download Evaluation (.txt)</button>
+    <button id="resetBtn" style="padding: 10px 20px; cursor: pointer; background: #6c757d; color: white; border: none; border-radius: 4px;">Reset Form</button>
+  </div>
+`
+
+// 5. BUTTON LOGIC
+// Handle Download
+document.querySelector("#downloadBtn").onclick = () => {
+  const content = `Grant Evaluation: ${nominee}
+Date: ${new Date().toLocaleDateString()}
+------------------------------------------
+Research Potential: ${resPotential} / 6
+Professional Dev:   ${profDev} / 3
+Budget Detail:      ${budgetJust} / 3
+------------------------------------------
+TOTAL SCORE:        ${totalScore.toFixed(1)} / 12
+
+NOTES:
+${notes}
+`;
+  const blob = new Blob([content], {type: "text/plain"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${nominee.replace(/\s+/g, '_') || "evaluation"}_score.txt`;
+  a.click();
+  URL.revokeObjectURL(url);
+};
+
+// Handle Reset
+document.querySelector("#resetBtn").onclick = () => {
+  // OJS views are reactive; resetting the underlying DOM values 
+  // requires re-assigning them through the viewof interface
+  viewof nominee.value = "";
+  viewof nominee.dispatchEvent(new CustomEvent("input"));
+  
+  viewof resPotential.value = 3;
+  viewof resPotential.dispatchEvent(new CustomEvent("input"));
+  
+  viewof profDev.value = 1;
+  viewof profDev.dispatchEvent(new CustomEvent("input"));
+  
+  viewof budgetJust.value = 1;
+  viewof budgetJust.dispatchEvent(new CustomEvent("input"));
+  
+  viewof notes.value = "";
+  viewof notes.dispatchEvent(new CustomEvent("input"));
+};
+```
+
