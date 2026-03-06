@@ -35,6 +35,15 @@ genetic_variation_refs <- wiki_refs_pipeline("Human_genetic_variation",
                                              api_key = Sys.getenv("zotero_access_key"),
                                              dry_run = FALSE)
 
+genetic_variation_refs_k <- fetch_zotero_keys(genetic_variation_refs,
+                                              user_id = "1531198",
+                                              api_key = Sys.getenv("zotero_access_key"),
+                                              collection_key = "FVGQ3ENK")
+
+fetch_zotero_keys <- function(refs,
+                              user_id = NULL, api_key = NULL,
+                              user = TRUE, collection_key = NULL)
+
 post_refs_to_zotero(
   genetic_variation_refs,
   collection_name = "Human_genetic_variation",
