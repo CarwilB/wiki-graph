@@ -1,3 +1,5 @@
+source("src/str-equivalent.R")
+
 muni_id_lookup_table <- readr::read_rds("data/muni_id_lookup_table.rds")
 
 #' Rename Columns in a Dataframe for Standardization
