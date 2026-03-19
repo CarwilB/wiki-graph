@@ -1,0 +1,819 @@
+---
+title: "Bolivia 2025 General Election — Results by Geography"
+author: "JCR Björk"
+date: "2026-03-15"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    fig-width: 10
+    fig-height: 8
+execute:
+  warning: false
+  message: false
+  freeze: auto
+---
+
+```{r setup}
+library(tidyverse)
+library(sf)
+library(patchwork)
+```
+
+## Data preparation
+
+### Load raw election data and rename party columns
+
+```{r load-data}
+# Column rename map (OEP camelCase → snake_case)
+geo_renames <- c(
+  mesa_code   = "CodigoMesa",
+  mesa_number = "NumeroMesa",
+  registered  = "InscritosHabilitados",
+  country_code = "CodigoPais",
+  country_name = "NombrePais",
+  dept_code   = "CodigoDepartamento",
+  dept_name   = "NombreDepartamento",
+  prov_code   = "CodigoProvincia",
+  prov_name   = "NombreProvincia",
+  mun_code    = "CodigoSeccion",
+  mun_name    = "NombreMunicipio",
+  localidad_code = "CodigoLocalidad",
+  localidad_name = "NombreLocalidad",
+  recinto_code   = "CodigoRecinto",
+  recinto_name   = "NombreRecinto"
+)
+
+vote_renames <- c(
+  valid_votes = "VotoValido",
+  blank_votes = "VotoBlanco",
+  null_votes  = "TotalVotoNulo",
+  votes_cast  = "VotoEmitido"
+)
+
+# --- First round (all three races) -------------------------------------------
+
+raw_1v <- read_csv(
+  "data-raw/EG2025_20250824_235619_5976286028509320003.csv",
+  show_col_types = FALSE
+) |>
+  filter(NombrePais == "BOLIVIA")
+
+# Ballot slot → party mapping (confirmed against OEP separata)
+party_renames_1v <- c(
+  AP         = "Voto1",
+  LyP_ADN    = "Voto2",
+  APB_SUMATE = "Voto3",
+  LIBRE      = "Voto5",
+  FP         = "Voto6",
+  MAS_IPSP   = "Voto7",
+  UNIDAD     = "Voto9",
+  PDC        = "Voto10"
+)
+
+elections_1v <- raw_1v |>
+  rename(!!!party_renames_1v) |>
+  rename(race = Descripcion) |>
+  rename(!!!geo_renames) |>
+  rename(!!!vote_renames)
+
+parties_main <- c("AP", "LyP_ADN", "APB_SUMATE", "LIBRE", "FP", "MAS_IPSP", "UNIDAD", "PDC")
+parties_especial <- c(parties_main, "Voto11", "Voto12")
+
+# --- Second round (presidential only) ----------------------------------------
+
+raw_2v <- read_csv(
+  "data-raw/EG2025_2v_20251026_235911_6311285959951043675.csv",
+  show_col_types = FALSE
+) |>
+  filter(NombrePais == "BOLIVIA")
+
+elections_2v <- raw_2v |>
+  rename(!!!geo_renames) |>
+  rename(!!!vote_renames)
+
+parties_2v <- c("PDC", "LIBRE")
+```
+
+### Load GADM boundary files and lookup tables
+
+```{r load-gadm}
+muni_lookup <- readRDS("data/muni_id_lookup_table.rds")
+prov_lookup <- readRDS("data/prov_id_lookup_table.rds")
+
+gadm1 <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_1", quiet = TRUE) |>
+  select(NAME_1, geom)
+gadm2 <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_2", quiet = TRUE) |>
+  select(NAME_1, NAME_2, geom)
+gadm3 <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3", quiet = TRUE) |>
+  select(NAME_1, NAME_2, NAME_3, geom)
+```
+
+### Build OEP → INE → GADM crosswalk
+
+OEP geographic codes map directly to INE codes: `id_prov` = `sprintf("%02d%02d",
+dept, prov)` and `id_muni` = `sprintf("%02d%02d%02d", dept, prov, seccion)`.
+We use the pre-built lookup tables (`prov_id_lookup_table`, `muni_id_lookup_table`)
+to get the GADM name variants for spatial joins. TIOC/AIOC indigenous
+autonomies created after the GADM vintage will not match.
+
+```{r crosswalk}
+dept_to_gadm <- tibble(
+  dept_code = 1:9,
+  dept_gadm = c("Chuquisaca", "La Paz", "Cochabamba", "Oruro", "Potosí",
+                "Tarija", "Santa Cruz", "Beni", "Pando")
+)
+
+prov_to_gadm <- prov_lookup |>
+  select(id_prov, province_gadm) |>
+  mutate(dept_code = as.integer(substr(id_prov, 1, 2)),
+         prov_code = as.integer(substr(id_prov, 3, 4))) |>
+  left_join(dept_to_gadm, by = "dept_code")
+
+muni_to_gadm <- muni_lookup |>
+  select(id_muni, muni_gadm, department) |>
+  mutate(dept_code = as.integer(substr(id_muni, 1, 2)),
+         prov_code = as.integer(substr(id_muni, 3, 4)),
+         mun_code  = as.integer(substr(id_muni, 5, 6))) |>
+  left_join(dept_to_gadm, by = "dept_code")
+
+cat("Province lookup:", nrow(prov_to_gadm), "rows,",
+    sum(is.na(prov_to_gadm$province_gadm)), "missing GADM name\n")
+cat("Municipality lookup:", nrow(muni_to_gadm), "rows,",
+    sum(is.na(muni_to_gadm$muni_gadm)), "missing GADM name\n")
+```
+
+### Aggregation functions
+
+```{r agg-functions}
+aggregate_results <- function(data, ..., parties) {
+  data |>
+    group_by(...) |>
+    summarise(
+      mesas = n(),
+      registered = sum(registered),
+      votes_cast = sum(votes_cast),
+      valid_votes = sum(valid_votes),
+      null_votes = sum(null_votes),
+      blank_votes = sum(blank_votes),
+      across(all_of(parties), sum),
+      .groups = "drop"
+    ) |>
+    mutate(
+      turnout_pct = votes_cast / registered * 100,
+      null_pct = null_votes / votes_cast * 100,
+      across(all_of(parties), ~ . / valid_votes * 100, .names = "{.col}_pct")
+    )
+}
+```
+
+## First-round presidential results {#sec-presidente}
+
+### Department level
+
+```{r pres-dept}
+pres_1v <- elections_1v |> filter(race == "PRESIDENTE")
+
+pres_dept <- aggregate_results(pres_1v, dept_code, dept_name,
+                               parties = parties_main)
+pres_dept |>
+  select(dept_name, mesas, registered, turnout_pct, null_pct,
+         all_of(paste0(parties_main, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(registered))
+```
+
+### Province level
+
+```{r pres-prov}
+pres_prov <- aggregate_results(
+  pres_1v,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  parties = parties_main
+)
+
+pres_prov |>
+  select(dept_name, prov_name, valid_votes,
+         all_of(paste0(parties_main, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(dept_name, desc(valid_votes)) |>
+  head(20)
+```
+
+### Municipality level
+
+```{r pres-mun}
+pres_mun <- aggregate_results(
+  pres_1v,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  mun_code, mun_name,
+  parties = parties_main
+)
+
+pres_mun |>
+  select(dept_name, mun_name, valid_votes,
+         all_of(paste0(parties_main, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(valid_votes)) |>
+  head(20)
+```
+
+### Presidential choropleths
+
+```{r pres-choropleths}
+#| fig-height: 40
+#| fig-width: 10
+
+# --- Choropleth helpers -------------------------------------------------------
+party_colors <- c(
+  AP = "#3B8CC4", LyP_ADN = "#1A1A1A", APB_SUMATE = "#6B2D8B",
+  LIBRE = "#D42E2E", FP = "#A8DCF0", MAS_IPSP = "#1B3D8F",
+  UNIDAD = "#E8A838", PDC = "#2E7D7B",
+  Voto11 = "#7B5B3A", Voto12 = "#5A7B3A"
+)
+
+party_labels <- c(
+  AP = "AP", LyP_ADN = "LyP ADN", APB_SUMATE = "APB Súmate",
+  LIBRE = "LIBRE", FP = "FP", MAS_IPSP = "MAS-IPSP",
+  UNIDAD = "UNIDAD", PDC = "PDC",
+  Voto11 = "Voto 11", Voto12 = "Voto 12"
+)
+
+make_choropleth <- function(geo_sf, data, join_cols, pct_col, title,
+                            fill_color = "#2E7D7B") {
+  df_joined <- geo_sf |>
+    left_join(data, by = join_cols)
+
+  ggplot(df_joined) +
+    geom_sf(aes(fill = .data[[pct_col]]), color = "white", linewidth = 0.15) +
+    scale_fill_gradient(low = "white", high = fill_color,
+                        name = "% vote share", na.value = "grey85",
+                        limits = c(0, NA)) +
+    labs(title = title) +
+    theme_void(base_size = 9) +
+    theme(legend.position = "bottom",
+          legend.key.width = unit(1.2, "cm"),
+          plot.title = element_text(face = "bold", size = 10))
+}
+
+choropleth_panel <- function(agg_dept, agg_prov, agg_mun,
+                             parties,
+                             race_label = "Presidential") {
+  dept_joined <- agg_dept |>
+    left_join(dept_to_gadm, by = "dept_code")
+
+  prov_joined <- agg_prov |>
+    left_join(prov_to_gadm, by = c("dept_code", "prov_code"))
+
+  mun_joined <- agg_mun |>
+    left_join(muni_to_gadm, by = c("dept_code", "prov_code", "mun_code"))
+
+  plots <- list()
+
+  for (party in parties) {
+    pct <- paste0(party, "_pct")
+    color <- party_colors[[party]] %||% "#555555"
+    label <- party_labels[[party]] %||% party
+
+    # Shared scale: 0 to max across all three geographic levels
+    pct_max <- max(
+      c(dept_joined[[pct]], prov_joined[[pct]], mun_joined[[pct]]),
+      na.rm = TRUE
+    )
+    shared_limits <- c(0, pct_max)
+
+    p_dept <- make_choropleth(
+      gadm1, dept_joined,
+      c("NAME_1" = "dept_gadm"),
+      pct, paste0(label, " — Department"), color
+    ) + scale_fill_gradient(low = "white", high = color, name = "%",
+                            na.value = "grey85", limits = shared_limits)
+
+    p_prov <- make_choropleth(
+      gadm2, prov_joined,
+      c("NAME_1" = "dept_gadm", "NAME_2" = "province_gadm"),
+      pct, paste0(label, " — Province"), color
+    ) + scale_fill_gradient(low = "white", high = color, name = "%",
+                            na.value = "grey85", limits = shared_limits)
+
+    p_mun <- make_choropleth(
+      gadm3, mun_joined,
+      c("NAME_1" = "dept_gadm", "NAME_3" = "muni_gadm"),
+      pct, paste0(label, " — Municipality"), color
+    ) + scale_fill_gradient(low = "white", high = color, name = "%",
+                            na.value = "grey85", limits = shared_limits)
+
+    plots[[party]] <- p_dept + p_prov + p_mun +
+      plot_layout(ncol = 3, widths = c(1, 1, 1))
+  }
+
+  wrap_plots(plots, ncol = 1) +
+    plot_annotation(title = paste(race_label, "vote share by party"),
+                    theme = theme(plot.title = element_text(face = "bold", size = 14)))
+}
+
+choropleth_panel(pres_dept, pres_prov, pres_mun,
+                 parties_main, "Presidential (first round)")
+```
+
+## Diputado Uninominal results {#sec-uninominal}
+
+### Department level
+
+```{r uni-dept}
+uni <- elections_1v |> filter(race == "DIPUTADO CIRCUNSCRIPCIÓN UNINOMINAL")
+
+uni_dept <- aggregate_results(uni, dept_code, dept_name,
+                              parties = parties_main)
+uni_dept |>
+  select(dept_name, mesas, registered, turnout_pct, null_pct,
+         all_of(paste0(parties_main, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(registered))
+```
+
+### Province level
+
+```{r uni-prov}
+uni_prov <- aggregate_results(
+  uni,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  parties = parties_main
+)
+```
+
+### Municipality level
+
+```{r uni-mun}
+uni_mun <- aggregate_results(
+  uni,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  mun_code, mun_name,
+  parties = parties_main
+)
+
+uni_mun |>
+  select(dept_name, mun_name, valid_votes,
+         all_of(paste0(parties_main, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(valid_votes)) |>
+  head(20)
+```
+
+### Uninominal choropleths
+
+```{r uni-choropleths}
+#| fig-height: 40
+#| fig-width: 10
+
+choropleth_panel(uni_dept, uni_prov, uni_mun,
+                 parties_main, "Diputado Uninominal")
+```
+
+## Diputado Circunscripción Especial results {#sec-especial}
+
+The 7 indigenous circunscripciones especiales cover specific regions. Voto11
+and Voto12 are additional parties that only contest this race.
+
+### Department level
+
+```{r esp-dept}
+esp <- elections_1v |> filter(race == "DIPUTADO CIRCUNSCRIPCIÓN ESPECIAL")
+
+esp_dept <- aggregate_results(esp, dept_code, dept_name,
+                              parties = parties_especial)
+esp_dept |>
+  select(dept_name, mesas, valid_votes,
+         all_of(paste0(parties_especial, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(valid_votes))
+```
+
+### Province level
+
+```{r esp-prov}
+esp_prov <- aggregate_results(
+  esp,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  parties = parties_especial
+)
+```
+
+### Municipality level
+
+```{r esp-mun}
+esp_mun <- aggregate_results(
+  esp,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  mun_code, mun_name,
+  parties = parties_especial
+)
+```
+
+### Especial choropleths
+
+The especial race only covers municipalities within the 7 indigenous
+circunscripciones — most of the country will appear grey.
+
+```{r esp-choropleths}
+#| fig-height: 50
+#| fig-width: 10
+
+choropleth_panel(esp_dept, esp_prov, esp_mun,
+                 parties_especial, "Diputado Circunscripción Especial")
+```
+
+## Null vote rate {#sec-nulos}
+
+The null vote rate was remarkably high nationally (19.9%), driven by
+Cochabamba (33.3%). These maps show the geographic pattern.
+
+```{r nulo-choropleths}
+#| fig-height: 6
+#| fig-width: 10
+
+nulo_dept <- pres_dept |>
+  left_join(dept_to_gadm, by = "dept_code")
+nulo_prov <- pres_prov |>
+  left_join(prov_to_gadm, by = c("dept_code", "prov_code"))
+nulo_mun <- pres_mun |>
+  left_join(muni_to_gadm, by = c("dept_code", "prov_code", "mun_code"))
+
+p_nulo_dept <- make_choropleth(
+  gadm1, nulo_dept,
+  c("NAME_1" = "dept_gadm"),
+  "null_pct", "Null vote % — Department", "#8B0000"
+) + scale_fill_gradient(low = "white", high = "#8B0000", name = "%",
+                        na.value = "grey85")
+
+p_nulo_prov <- make_choropleth(
+  gadm2, nulo_prov,
+  c("NAME_1" = "dept_gadm", "NAME_2" = "province_gadm"),
+  "null_pct", "Null vote % — Province", "#8B0000"
+) + scale_fill_gradient(low = "white", high = "#8B0000", name = "%",
+                        na.value = "grey85")
+
+p_nulo_mun <- make_choropleth(
+  gadm3, nulo_mun,
+  c("NAME_1" = "dept_gadm", "NAME_3" = "muni_gadm"),
+  "null_pct", "Null vote % — Municipality", "#8B0000"
+) + scale_fill_gradient(low = "white", high = "#8B0000", name = "%",
+                        na.value = "grey85")
+
+p_nulo_dept + p_nulo_prov + p_nulo_mun +
+  plot_layout(ncol = 3) +
+  plot_annotation(title = "Presidential null vote rate (first round)",
+                  theme = theme(plot.title = element_text(face = "bold", size = 14)))
+```
+
+## Vote in 30 largest municipalities {#sec-top30}
+
+```{r top30-setup}
+# Name mapping: display name → OEP election data name
+top30_display <- c(
+  "Santa Cruz de la Sierra", "El Alto", "La Paz", "Cochabamba",
+  "Oruro", "Sucre", "Tarija", "Sacaba", "Potosí", "Quillacollo",
+  "Warnes", "La Guardia", "Trinidad", "Montero", "Viacha", "Riberalta",
+  "Cotoca", "Yacuiba", "Villa Tunari", "San Ignacio de Velasco",
+  "Colcapirhua", "Puerto Villarroel", "Tiquipaya", "Caranavi",
+  "Yapacaní", "Vinto", "Sipesipe", "El Torno", "Cobija", "Pailón"
+)
+
+oep_name_map <- c(
+  "Santa Cruz de la Sierra" = "Santa Cruz de La Sierra",
+  "La Paz" = "Nuestra Señora de La Paz",
+  "San Ignacio de Velasco" = "San Ignacio"
+)
+
+top30_oep <- ifelse(top30_display %in% names(oep_name_map),
+                    oep_name_map[top30_display],
+                    top30_display)
+
+top30_dept <- pres_mun |>
+  filter(mun_name %in% top30_oep) |>
+  # Disambiguate San Ignacio: de Velasco is in Santa Cruz (dept 7)
+  filter(!(mun_name == "San Ignacio" & dept_code == 8)) |>
+  select(dept_code, dept_name, mun_name) |>
+  mutate(display_name = names(oep_name_map)[match(mun_name, oep_name_map)],
+         display_name = coalesce(display_name, mun_name))
+
+top30_ordered <- top30_dept |>
+  mutate(orig_pos = match(display_name, top30_display)) |>
+  arrange(dept_code, orig_pos)
+
+group1_names <- top30_ordered$mun_name[1:15]
+group2_names <- top30_ordered$mun_name[16:30]
+group1_display <- top30_ordered$display_name[1:15]
+group2_display <- top30_ordered$display_name[16:30]
+group1_depts <- top30_ordered$dept_name[1:15]
+group2_depts <- top30_ordered$dept_name[16:30]
+
+pres_top30 <- pres_mun |>
+  filter(mun_name %in% top30_oep) |>
+  filter(!(mun_name == "San Ignacio" & dept_code == 8))
+
+cat_colors <- c(
+  setNames(party_colors[parties_main], party_labels[parties_main]),
+  "Blank" = "grey70", "Null" = "grey40"
+)
+
+make_top30_chart <- function(data, oep_names, display_names, dept_names,
+                             parties, subtitle) {
+  df <- data |>
+    filter(mun_name %in% oep_names) |>
+    pivot_longer(cols = c(all_of(parties), null_votes, blank_votes),
+                 names_to = "category", values_to = "votes") |>
+    mutate(pct = votes / votes_cast * 100) |>
+    mutate(
+      category = recode(category, !!!party_labels,
+                        null_votes = "Null", blank_votes = "Blank"),
+      category = factor(category,
+                        levels = c(rev(party_labels[parties]), "Blank", "Null")),
+      display_name = names(oep_name_map)[match(mun_name, oep_name_map)],
+      display_name = coalesce(display_name, mun_name)
+    )
+
+  label_lookup <- setNames(
+    paste0(display_names, " (", dept_names, ")"),
+    display_names
+  )
+
+  df <- df |>
+    mutate(display_label = label_lookup[display_name],
+           display_label = factor(display_label, levels = rev(label_lookup)))
+
+  ggplot(df, aes(x = pct, y = display_label, fill = category)) +
+    geom_col(position = "stack", width = 0.75) +
+    scale_fill_manual(values = cat_colors, name = NULL) +
+    scale_x_continuous(labels = \(x) paste0(x, "%")) +
+    labs(x = "% of votes cast", y = NULL, subtitle = subtitle) +
+    theme_minimal(base_size = 11) +
+    theme(legend.position = "right")
+}
+```
+
+```{r top30-chart1}
+#| fig-height: 7
+#| fig-width: 9
+
+make_top30_chart(pres_top30, group1_names, group1_display, group1_depts,
+                 parties_main, "Municipalities 1–15 (sorted by department)")
+```
+
+```{r top30-chart2}
+#| fig-height: 7
+#| fig-width: 9
+
+make_top30_chart(pres_top30, group2_names, group2_display, group2_depts,
+                 parties_main, "Municipalities 16–30 (sorted by department)")
+```
+
+## Vote by Albó municipality category {#sec-albo-groups}
+
+Municipalities are classified A through I based on their CEL (Condición
+Étnico-Lingüística) profile from the 2024 census, following Albó & Romero's
+framework as implemented in `albo-restudy-2024.qmd`. Category A represents
+the most strongly indigenous-language municipalities; category I the least.
+
+```{r albo-vote-by-category}
+#| fig-height: 6
+#| fig-width: 9
+
+cel_geo <- readRDS("../bolivia-data/Censo 2024/base_datos_csv_2024/cel_geo.rds")
+
+albo_groups <- cel_geo |>
+  filter(!is.na(municipality), is.na(urban_rural)) |>
+  select(department, province, municipality, cel_2plus, cel_4plus, cel_5plus) |>
+  mutate(
+    albo_group = case_when(
+      cel_5plus >= 90 & cel_4plus >= 90 & cel_2plus >= 90 ~ "A",
+      cel_5plus >  67 & cel_4plus >  80 & cel_2plus >  90 ~ "B",
+      cel_5plus >  50 & cel_4plus >  67 & cel_2plus >  67 ~ "C",
+      cel_5plus >  33 & cel_4plus >  50 & cel_2plus >  67 ~ "D",
+      cel_2plus >  75                                      ~ "E",
+      cel_2plus >  50                                      ~ "F",
+      cel_2plus >  33                                      ~ "G",
+      cel_2plus >  10                                      ~ "H",
+      TRUE                                                 ~ "I"
+    )
+  )
+
+pres_by_albo <- elections_1v |>
+  filter(race == "PRESIDENTE") |>
+  left_join(albo_groups |> select(department, province, municipality, albo_group),
+            by = c("dept_code" = "department",
+                   "prov_code" = "province",
+                   "mun_code" = "municipality")) |>
+  filter(!is.na(albo_group)) |>
+  group_by(albo_group) |>
+  summarise(
+    across(all_of(parties_main), sum),
+    null_votes = sum(null_votes),
+    blank_votes = sum(blank_votes),
+    votes_cast = sum(votes_cast),
+    .groups = "drop"
+  )
+
+pres_albo_long <- pres_by_albo |>
+  pivot_longer(cols = c(all_of(parties_main), null_votes, blank_votes),
+               names_to = "category", values_to = "votes") |>
+  mutate(pct = votes / votes_cast * 100) |>
+  mutate(
+    category = recode(category, !!!party_labels,
+                      null_votes = "Null", blank_votes = "Blank"),
+    category = factor(category,
+                      levels = c(rev(party_labels[parties_main]), "Blank", "Null"))
+  )
+
+n_munis <- albo_groups |> count(albo_group)
+
+ggplot(pres_albo_long, aes(x = albo_group, y = pct, fill = category)) +
+  geom_col(position = "stack", width = 0.75) +
+  geom_text(
+    data = n_munis,
+    aes(x = albo_group, y = -1.5, label = paste0("n=", n), fill = NULL),
+    size = 2.8, color = "grey40"
+  ) +
+  scale_fill_manual(values = cat_colors, name = NULL) +
+  scale_y_continuous(labels = \(x) paste0(x, "%"), expand = expansion(add = c(3, 1))) +
+  labs(
+    x = "Albó municipality category",
+    y = "% of votes cast",
+    title = "Presidential vote composition by Albó CEL category (first round)",
+    subtitle = "Municipalities classified A (most indigenous-language) to I (least)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "right")
+```
+
+## Second-round presidential results {#sec-segunda-vuelta}
+
+```{r pres2-dept}
+pres_2v <- elections_2v
+
+pres2_dept <- aggregate_results(pres_2v, dept_code, dept_name,
+                                parties = parties_2v)
+pres2_dept |>
+  select(dept_name, mesas, registered, turnout_pct, null_pct,
+         all_of(paste0(parties_2v, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(registered))
+```
+
+```{r pres2-prov}
+pres2_prov <- aggregate_results(
+  pres_2v,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  parties = parties_2v
+)
+```
+
+```{r pres2-mun}
+pres2_mun <- aggregate_results(
+  pres_2v,
+  dept_code, dept_name,
+  prov_code, prov_name,
+  mun_code, mun_name,
+  parties = parties_2v
+)
+
+pres2_mun |>
+  select(dept_name, mun_name, valid_votes,
+         all_of(paste0(parties_2v, "_pct"))) |>
+  mutate(across(where(is.numeric), ~ round(., 1))) |>
+  arrange(desc(valid_votes)) |>
+  head(20)
+```
+
+### Second-round choropleths
+
+```{r pres2-choropleths}
+#| fig-height: 12
+#| fig-width: 10
+
+choropleth_panel(pres2_dept, pres2_prov, pres2_mun,
+                 parties_2v, "Presidential (second round)")
+```
+
+### Second-round null vote rate
+
+```{r nulo2-choropleths}
+#| fig-height: 6
+#| fig-width: 10
+
+nulo2_dept <- pres2_dept |>
+  left_join(dept_to_gadm, by = "dept_code")
+nulo2_prov <- pres2_prov |>
+  left_join(prov_to_gadm, by = c("dept_code", "prov_code"))
+nulo2_mun <- pres2_mun |>
+  left_join(muni_to_gadm, by = c("dept_code", "prov_code", "mun_code"))
+
+p_nulo2_dept <- make_choropleth(
+  gadm1, nulo2_dept,
+  c("NAME_1" = "dept_gadm"),
+  "null_pct", "Null vote % — Department", "#8B0000"
+) + scale_fill_gradient(low = "white", high = "#8B0000", name = "%",
+                        na.value = "grey85")
+
+p_nulo2_prov <- make_choropleth(
+  gadm2, nulo2_prov,
+  c("NAME_1" = "dept_gadm", "NAME_2" = "province_gadm"),
+  "null_pct", "Null vote % — Province", "#8B0000"
+) + scale_fill_gradient(low = "white", high = "#8B0000", name = "%",
+                        na.value = "grey85")
+
+p_nulo2_mun <- make_choropleth(
+  gadm3, nulo2_mun,
+  c("NAME_1" = "dept_gadm", "NAME_3" = "muni_gadm"),
+  "null_pct", "Null vote % — Municipality", "#8B0000"
+) + scale_fill_gradient(low = "white", high = "#8B0000", name = "%",
+                        na.value = "grey85")
+
+p_nulo2_dept + p_nulo2_prov + p_nulo2_mun +
+  plot_layout(ncol = 3) +
+  plot_annotation(title = "Presidential null vote rate (second round)",
+                  theme = theme(plot.title = element_text(face = "bold", size = 14)))
+```
+
+### Second-round top 30 municipalities
+
+```{r pres2-top30-setup}
+pres2_top30 <- pres2_mun |>
+  filter(mun_name %in% top30_oep) |>
+  filter(!(mun_name == "San Ignacio" & dept_code == 8))
+```
+
+```{r pres2-top30-chart1}
+#| fig-height: 7
+#| fig-width: 9
+
+make_top30_chart(pres2_top30, group1_names, group1_display, group1_depts,
+                 parties_2v, "Second round — Municipalities 1–15 (sorted by department)")
+```
+
+```{r pres2-top30-chart2}
+#| fig-height: 7
+#| fig-width: 9
+
+make_top30_chart(pres2_top30, group2_names, group2_display, group2_depts,
+                 parties_2v, "Second round — Municipalities 16–30 (sorted by department)")
+```
+
+### Second-round vote by Albó municipality category
+
+```{r albo-vote-2v}
+#| fig-height: 6
+#| fig-width: 9
+
+pres2_by_albo <- elections_2v |>
+  left_join(albo_groups |> select(department, province, municipality, albo_group),
+            by = c("dept_code" = "department",
+                   "prov_code" = "province",
+                   "mun_code" = "municipality")) |>
+  filter(!is.na(albo_group)) |>
+  group_by(albo_group) |>
+  summarise(
+    across(all_of(parties_2v), sum),
+    null_votes = sum(null_votes),
+    blank_votes = sum(blank_votes),
+    votes_cast = sum(votes_cast),
+    .groups = "drop"
+  )
+
+pres2_albo_long <- pres2_by_albo |>
+  pivot_longer(cols = c(all_of(parties_2v), null_votes, blank_votes),
+               names_to = "category", values_to = "votes") |>
+  mutate(pct = votes / votes_cast * 100) |>
+  mutate(
+    category = recode(category, !!!party_labels,
+                      null_votes = "Null", blank_votes = "Blank"),
+    category = factor(category,
+                      levels = c(rev(party_labels[parties_2v]), "Blank", "Null"))
+  )
+
+ggplot(pres2_albo_long, aes(x = albo_group, y = pct, fill = category)) +
+  geom_col(position = "stack", width = 0.75) +
+  geom_text(
+    data = n_munis,
+    aes(x = albo_group, y = -1.5, label = paste0("n=", n), fill = NULL),
+    size = 2.8, color = "grey40"
+  ) +
+  scale_fill_manual(values = cat_colors, name = NULL) +
+  scale_y_continuous(labels = \(x) paste0(x, "%"), expand = expansion(add = c(3, 1))) +
+  labs(
+    x = "Albó municipality category",
+    y = "% of votes cast",
+    title = "Presidential vote composition by Albó CEL category (second round)",
+    subtitle = "Municipalities classified A (most indigenous-language) to I (least)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "right")
+```

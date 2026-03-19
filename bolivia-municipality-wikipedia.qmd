@@ -1,0 +1,248 @@
+---
+title: "Bolivia Municipality Wikipedia Pages"
+author: "Carwil Bjork-James"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    code-fold: true
+editor: visual
+---
+
+# Overview
+
+This document scrapes English Wikipedia for all pages in the
+[Municipalities of Bolivia](https://en.wikipedia.org/wiki/Category:Municipalities_of_Bolivia)
+category tree, extracts structured information from each page, and compares the
+coverage with Wikidata's inventory of Bolivian municipalities.
+
+```{r setup}
+#| message: false
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(WikipediR)
+
+source("src/wikipedia-tools.R")
+source("get_wikidata_instances.R")
+```
+
+# 1. Discover municipality pages from Wikipedia category
+
+We start by listing the subcategories of
+`Category:Municipalities of Bolivia`, keeping only those whose name begins
+with "Municipalities" (i.e. excluding "Categories by city in Bolivia" and
+other non-municipal subcategories).
+
+```{r get-subcategories}
+top_cat <- "Category:Municipalities_of_Bolivia"
+subcats <- get_subcategories(top_cat)
+subcats
+
+# Keep only subcategories beginning with "Municipalities"
+muni_subcats <- subcats |>
+  filter(str_detect(title, "^Category:Municipalities"))
+
+muni_subcats
+```
+
+Now collect all article pages from each subcategory, plus any pages listed
+directly under the top-level category.
+
+```{r get-all-pages}
+# Pages directly in the top-level category
+top_pages <- get_category_pages(top_cat)
+
+# Pages in each "Municipalities of ..." subcategory
+subcat_pages <- map_dfr(muni_subcats$title, function(cat) {
+  Sys.sleep(0.3)
+  get_category_pages(cat) |>
+    mutate(source_category = cat)
+})
+
+# Combine and deduplicate
+all_muni_pages <- bind_rows(
+  top_pages |> mutate(source_category = top_cat),
+  subcat_pages
+) |>
+  distinct(title, .keep_all = TRUE) |>
+  # Drop any remaining category or template pages
+  filter(ns == 0)
+
+message(nrow(all_muni_pages), " unique municipality article pages found")
+```
+
+# 2. Fetch page metadata (page length + Wikidata QID)
+
+```{r page-info}
+page_info <- get_page_info_batch(all_muni_pages$title)
+
+muni_df <- all_muni_pages |>
+  select(-pageid) |>
+  left_join(page_info, by = "title")
+```
+
+# 3. Cache and parse wikitext
+
+We cache each page's raw wikitext to `wikipedia-pages/bolivia/` so that
+subsequent runs don't re-download.
+
+```{r cache-wikitext}
+cache_dir <- "wikipedia-pages/bolivia"
+dir.create(cache_dir, showWarnings = FALSE, recursive = TRUE)
+
+# Fetch / load cached wikitext for every page
+muni_df <- muni_df |>
+  mutate(wikitext = map_chr(title, function(t) {
+    txt <- cache_wikitext(t, cache_dir)
+    if (is.null(txt)) NA_character_ else txt
+  }, .progress = "Fetching wikitext"))
+```
+
+# 4. Extract structured fields from each page
+
+## 4a. Character count, citations, and census years
+
+```{r extract-counts}
+muni_df <- muni_df |>
+  mutate(
+    n_chars = nchar(wikitext),
+    n_citations = map_int(wikitext, count_citations),
+    n_refs = map_int(wikitext, count_refs),
+    census_years = map(wikitext, extract_census_years),
+    census_years_str = map_chr(census_years, ~ paste(.x, collapse = ", "))
+  )
+```
+
+## 4b. Infobox fields
+
+Parse the main infobox from each article and extract every key–value pair.
+We first collect all infobox data as a list column, then pivot the most
+common fields into their own columns.
+
+```{r extract-infoboxes}
+muni_df <- muni_df |>
+  mutate(infobox_raw = map(wikitext, extract_infobox))
+
+# Identify which infobox keys appear most often
+all_keys <- muni_df |>
+  filter(!map_lgl(infobox_raw, is.null)) |>
+  pull(infobox_raw) |>
+  map(names) |>
+  unlist() |>
+  # Normalise key names to lowercase with underscores
+  str_to_lower() |>
+  str_replace_all("\\s+", "_")
+
+key_freq <- tibble(key = all_keys) |>
+  count(key, sort = TRUE)
+
+key_freq |> print(n = 40)
+```
+
+```{r pivot-infobox}
+# For each page, create a one-row tibble of cleaned infobox values
+infobox_tbl <- muni_df |>
+  transmute(
+    title,
+    infobox_row = map(infobox_raw, function(ib) {
+      if (is.null(ib)) return(tibble())
+      # Normalise key names
+      names(ib) <- names(ib) |>
+        str_to_lower() |>
+        str_replace_all("\\s+", "_")
+      # Clean values
+      ib <- map(ib, clean_infobox_value)
+      as_tibble(ib)
+    })
+  ) |>
+  unnest(infobox_row, keep_empty = TRUE)
+
+# Join back to main table (keeping the infobox columns separate for clarity)
+muni_result <- muni_df |>
+  select(-infobox_raw, -wikitext) |>
+  left_join(infobox_tbl, by = "title")
+```
+
+# 5. Compare with Wikidata
+
+Query Wikidata for all items that are instances of **municipality of Bolivia**
+([Q1062710](https://www.wikidata.org/wiki/Q1062710)), then compare with the
+Wikipedia category listing.
+
+```{r wikidata-query}
+# Q1062710 = "municipality of Bolivia"
+wd_munis <- get_wikidata_instances(
+  "Q1062710",
+  property = c("P131"),
+  property_names = c("located_in"),
+  country = "Q750",
+  languages = c("en", "es"),
+  limit = 500
+)
+
+# Extract English Wikipedia article title from the sitelinks
+wd_munis <- wd_munis |>
+  mutate(
+    en_wiki_title = map_chr(wikipedia_articles, function(arts) {
+      if (length(arts) == 0) return(NA_character_)
+      en_art <- arts[str_detect(arts, "^en:")]
+      if (length(en_art) == 0) return(NA_character_)
+      str_replace(en_art[1], "^en:\\s*", "")
+    })
+  )
+```
+
+```{r compare-lists}
+# Pages found in Wikipedia category but not in Wikidata
+wp_only <- muni_result |>
+  filter(!wikidata_qid %in% wd_munis$qid | is.na(wikidata_qid))
+
+# Wikidata items with no Wikipedia category page
+wd_only <- wd_munis |>
+  filter(!qid %in% muni_result$wikidata_qid)
+
+# Both
+in_both <- muni_result |>
+  filter(wikidata_qid %in% wd_munis$qid)
+
+cat(glue::glue(
+  "Wikipedia category pages: {nrow(muni_result)}\n",
+  "Wikidata 'municipality of Bolivia' items: {nrow(wd_munis)}\n",
+  "In both: {nrow(in_both)}\n",
+  "Wikipedia only: {nrow(wp_only)}\n",
+  "Wikidata only (no category page): {nrow(wd_only)}\n"
+))
+```
+
+### Pages in Wikipedia category but not Wikidata
+
+```{r wp-only-table}
+wp_only |>
+  select(title, wikidata_qid, n_chars, n_citations) |>
+  arrange(title)
+```
+
+### Wikidata items with no Wikipedia category page
+
+```{r wd-only-table}
+wd_only |>
+  select(qid, label_en, label_es, en_wiki_title) |>
+  arrange(label_en)
+```
+
+# 6. Summary table
+
+```{r save-results}
+# Save the main result
+saveRDS(muni_result, "data/bolivia_municipality_wikipedia.rds")
+write_csv(muni_result |> select(-census_years),
+          "data/bolivia_municipality_wikipedia.csv")
+
+muni_result |>
+  select(title, wikidata_qid, page_length, n_chars, n_citations, n_refs,
+         census_years_str) |>
+  arrange(title) |>
+  head(20)
+```

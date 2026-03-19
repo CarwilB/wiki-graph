@@ -1,0 +1,164 @@
+---
+# Provenance metadata for Bolivia 2025 general election results
+# Mesa-level data for first round (1v) and second round (2v)
+
+source:
+  title: "Resultados Elecciones Generales 2025 — Cómputo oficial"
+  institution: "Tribunal Supremo Electoral / Órgano Electoral Plurinacional (OEP)"
+  country: Bolivia
+
+first_round:
+  election_date: "2025-08-17"
+  election_type: "Elecciones Generales 2025, primera vuelta"
+  race: "Presidenta o Presidente, Vicepresidenta o Vicepresidente"
+  url: "https://computo2025-1v.oep.org.bo"
+  verification_document:
+    title: "Separata resultados EG2025"
+    url: "https://web.oep.org.bo/wp-content/uploads/2025/08/30-08-2025-Separata-resultados-EG2025.pdf"
+    date: "2025-08-30"
+    note: "Page 4 contains national + exterior presidential totals that match the CSV exactly."
+
+  raw_file:
+    filename: "data-raw/EG2025_20250824_235619_5976286028509320003.csv"
+    format: "CSV (comma-delimited)"
+    rows: 69279
+    columns: 38
+    description: >
+      Mesa-level results for all three races (Presidente, Diputado
+      Circunscripción Uninominal, Diputado Circunscripción Especial).
+      Downloaded from the OEP computo portal on 2025-08-24.
+
+  ballot_slot_mapping:
+    Voto1:  "AP (Acción Popular)"
+    Voto2:  "LyP ADN (Libertad y Progreso — Acción Democrática Nacionalista)"
+    Voto3:  "APB SÚMATE"
+    Voto4:  "(vacant — 0 votes)"
+    Voto5:  "LIBRE"
+    Voto6:  "FP (Frente Popular)"
+    Voto7:  "MAS-IPSP (Movimiento al Socialismo — Instrumento Político por la Soberanía de los Pueblos)"
+    Voto8:  "MORENA (0 votes)"
+    Voto9:  "UNIDAD"
+    Voto10: "PDC (Partido Demócrata Cristiano)"
+
+  summary_statistics:
+    scope: "Nacional + Exterior"
+    mesas: 35253
+    ciudadanos_inscritos: 7936515
+    votos_emitidos: 6900418
+    participacion_pct: 86.95
+    votos_validos: 5356534
+    votos_nulos: 1371049
+    votos_nulos_pct: 19.87
+    votos_blancos: 172835
+    votos_blancos_pct: 2.50
+    results:
+      - party: AP
+        votes: 456002
+        pct: 8.51
+      - party: LyP ADN
+        votes: 77576
+        pct: 1.45
+      - party: APB SÚMATE
+        votes: 361640
+        pct: 6.75
+      - party: LIBRE
+        votes: 1430176
+        pct: 26.70
+      - party: FP
+        votes: 89253
+        pct: 1.67
+      - party: MAS-IPSP
+        votes: 169887
+        pct: 3.17
+      - party: UNIDAD
+        votes: 1054568
+        pct: 19.69
+      - party: PDC
+        votes: 1717432
+        pct: 32.06
+
+  outputs:
+    - file: "data/eg2025_presidente_mesa.rds"
+      description: >
+        Mesa-level presidential results (first round). 35,253 rows × 27 columns.
+        All column names in snake_case. Party vote columns retain original
+        party abbreviations (AP, LyP_ADN, APB_SUMATE, LIBRE, FP, MAS_IPSP,
+        UNIDAD, PDC). Load with readRDS().
+    - file: "data/eg2025_presidente_mesa.csv"
+      description: "Same as above in CSV format."
+
+second_round:
+  election_date: "2025-10-26"
+  election_type: "Elecciones Generales 2025, segunda vuelta"
+  race: "Presidenta o Presidente, Vicepresidenta o Vicepresidente"
+  url: "https://computo2025-2v.oep.org.bo"
+  candidates:
+    - party: PDC
+      candidate: "Tuto Quiroga"
+    - party: LIBRE
+      candidate: "Andrónico Rodríguez"
+
+  raw_file:
+    filename: "data-raw/EG2025_2v_20251026_235911_6311285959951043675.csv"
+    format: "CSV (comma-delimited)"
+    rows: 35253
+    columns: 28
+    description: >
+      Mesa-level results for the presidential second round only.
+      Downloaded from the OEP computo portal on 2025-10-26. Party
+      columns already named PDC and LIBRE in the raw file.
+
+  summary_statistics:
+    scope: "Nacional + Exterior"
+    mesas: 35253
+    ciudadanos_inscritos: 7936515
+    votos_emitidos: 6771811
+    participacion_pct: 85.32
+    votos_validos: 6404195
+    votos_nulos: 317847
+    votos_nulos_pct: 4.69
+    votos_blancos: 49769
+    votos_blancos_pct: 0.73
+    results:
+      - party: PDC
+        votes: 3519534
+        pct: 54.96
+      - party: LIBRE
+        votes: 2884661
+        pct: 45.04
+
+  outputs:
+    - file: "data/eg2025_2v_presidente_mesa.rds"
+      description: >
+        Mesa-level presidential results (second round). 35,253 rows × 21 columns.
+        All column names in snake_case. Two party vote columns: PDC, LIBRE.
+        Load with readRDS().
+    - file: "data/eg2025_2v_presidente_mesa.csv"
+      description: "Same as above in CSV format."
+
+import:
+  script: "import-eg2025.R"
+  date: "2026-03-15"
+  handling_notes:
+    - >
+      First round: filtered to Descripcion == "PRESIDENTE" (35,253 of 69,279 mesas).
+    - >
+      First round: renamed Voto1–Voto10 to party abbreviations. Ballot slot mapping
+      confirmed by exact vote-total match against the official OEP separata (p. 4).
+    - >
+      First round: dropped Voto4 (vacant, 0 votes), Voto8/MORENA (0 votes), Voto11
+      (412 votes total), and Voto12 (2,266 votes total).
+    - >
+      Second round: party columns already named PDC and LIBRE in the raw file.
+      No ballot slot remapping needed.
+    - >
+      All geographic/vote columns renamed from OEP camelCase to snake_case.
+      Party abbreviations kept as-is (proper nouns, not camelCase).
+    - >
+      Dropped VotoNuloDirecto, VotoNuloDeclinacion (retained null_votes =
+      TotalVotoNulo which is their sum), VotoValidoReal, and VotoEmitidoReal
+      (duplicates of valid_votes and votes_cast).
+    - >
+      All columns retained as-is (no recoding or imputation). Geographic codes
+      (dept_code, prov_code, mun_code) are OEP internal codes, not INE codes.
+      Department codes 1–9 match INE ordering.

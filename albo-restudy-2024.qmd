@@ -1,6 +1,10 @@
 ---
 title: "Bolivia Census 2024 — Albó indicators of indigenous identity and language"
-format: html
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+    df-print: kable
 execute:
   warning: false
   message: false
@@ -263,6 +267,36 @@ albo_vars |>
   mutate(pct = round(100 * n / sum(n), 1)) |>
   arrange(albo_type)
 ```
+```{r}
+#| label: shared-aesthetics
+cel_colors_8 <- c(
+  "0" = "#d9d9d9", "1" = "#fdb863", "2" = "#e08214", "3" = "#b35806",
+  "4" = "#cce5ff", "5" = "#4393c3", "6" = "#2166ac", "7" = "#053061"
+)
+
+cel_labels_en <- c(
+  "0" = "0 — No identity, no language",
+  "1" = "1 — No identity, speaks",
+  "2" = "2 — No identity, speaks + childhood (bilingual)",
+  "3" = "3 — No identity, speaks + childhood (monolingual)",
+  "4" = "4 — Identity only",
+  "5" = "5 — Identity + language (no childhood)",
+  "6" = "6 — Identity + language + childhood (bilingual)",
+  "7" = "7 — Identity + language + childhood (monolingual)"
+)
+
+cel_labels_es <- c(
+  "0" = "0 — Sin identidad, sin lengua",
+  "1" = "1 — Sin identidad, habla",
+  "2" = "2 — Sin identidad, habla + aprendió (bilingüe)",
+  "3" = "3 — Sin identidad, habla + aprendió (monolingüe)",
+  "4" = "4 — Solo identidad",
+  "5" = "5 — Identidad + lengua (sin infancia)",
+  "6" = "6 — Identidad + lengua + aprendió (bilingüe)",
+  "7" = "7 — Identidad + lengua + aprendió (monolingüe)"
+)
+```
+
 
 ```{r}
 #| label: typology-plot
@@ -647,8 +681,7 @@ albo_vars |>
 ### CEL distribution
 
 ```{r}
-#| label: cel-plot
-#| fig-height: 5
+#| label: cel-labels-colors
 cel_labels <- c(
   "0"   = "0 — No identity, no language",
   "1"   = "1 — No identity, speaks (no childhood)",
@@ -674,7 +707,13 @@ cel_colors <- c(
   "6"   = "#2166ac",
   "7"   = "#053061"
 )
+```
 
+#### 2024 CEL distribution
+
+```{r}
+#| label: cel-plot-2024
+#| fig-height: 5
 albo_vars |>
   count(cel) |>
   mutate(
@@ -696,6 +735,68 @@ albo_vars |>
     x = "Share of population", y = NULL
   ) +
   theme_minimal(base_size = 11)
+```
+
+#### 2001 vs. 2024 comparison
+
+The 2001 distribution comes from Cuadro 8.1 (p. 190) of Molina Barrios & Albó
+(2006), based on the 2001 Census. The original Albó scale defines 8 integer
+levels (0–7); the 2024 restudy adds half-steps 1.5 and 4.5 for trait
+combinations not in the original scheme. For comparability, 2024 half-steps are
+collapsed to their floor values (1.5 → 1, 4.5 → 4).
+
+```{r}
+#| label: cel-2001-vs-2024
+#| fig-height: 5.5
+
+# 2001 data from Molina Barrios & Albó (2006), Cuadro 8.1
+molina_albo_8_1_en <- readRDS("data/molina_albo_8_1_en.rds")
+
+cel_2001 <- molina_albo_8_1_en |>
+  transmute(cel = as.numeric(cel), pct = pop_total / sum(pop_total)) |>
+  mutate(year = "2001")
+
+# 2024 data with half-steps collapsed to floor
+cel_2024 <- albo_vars |>
+  mutate(cel = floor(cel)) |>
+  count(cel) |>
+  mutate(pct = n / sum(n), year = "2024") |>
+  select(cel, pct, year)
+
+cel_labels_int <- c(
+  "0" = "0 — No identity, no language",
+  "1" = "1 — No identity, speaks (no childhood)",
+  "2" = "2 — No identity, speaks + childhood (bilingual)",
+  "3" = "3 — No identity, speaks + childhood (monolingual)",
+  "4" = "4 — Identity only",
+  "5" = "5 — Identity + language (no childhood)",
+  "6" = "6 — Identity + language + childhood (bilingual)",
+  "7" = "7 — Identity + language + childhood (monolingual)"
+)
+
+bind_rows(cel_2001, cel_2024) |>
+  mutate(
+    cel_chr = as.character(cel),
+    cel_lbl = cel_labels_int[cel_chr],
+    cel_lbl = fct_reorder(cel_lbl, cel)
+  ) |>
+  ggplot(aes(x = pct, y = cel_lbl, fill = year)) +
+  geom_col(position = "dodge") +
+  geom_text(
+    aes(label = paste0(round(pct * 100, 1), "%")),
+    position = position_dodge(width = 0.9),
+    hjust = -0.1, size = 3
+  ) +
+  scale_x_continuous(labels = scales::percent_format(),
+                     expand = expansion(mult = c(0, 0.18))) +
+  scale_fill_manual(values = c("2001" = "#7570b3", "2024" = "#1b9e77")) +
+  labs(
+    title    = "CEL distribution: 2001 vs. 2024",
+    subtitle = "2001: Molina Barrios & Albó (2006), Cuadro 8.1 (n = 7,640,023)\n2024: CPV 2024, all persons (n = 11,365,333). Half-steps collapsed to floor.",
+    x = "Share of population", y = NULL, fill = NULL
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "top")
 ```
 
 ### CEL by urban/rural
@@ -775,17 +876,21 @@ albo_vars |>
 ```{r}
 #| label: cel-mun-top30
 #| fig-height: 10
+ine_geog_2013 <- readRDS("data/ine_geog_2013.rds")
+
 mun_names_lookup <- ine_geog_2013 |>
   distinct(cod.dep, PRO, MUN, department, municipality) |>
   mutate(across(c(cod.dep, PRO, MUN), as.integer))
 
-cel_geo |>
+top30 <- cel_geo |>
   filter(!is.na(municipality), is.na(urban_rural)) |>
   left_join(mun_names_lookup,
     by = c("department" = "cod.dep", "province" = "PRO", "municipality" = "MUN")
   ) |>
   arrange(desc(n_total)) |>
-  head(30) |>
+  head(30)
+  
+top30 |>  
   pivot_longer(
     cols      = c(cel_0, cel_1, cel_1.5, cel_2, cel_3, cel_4, cel_4.5, cel_5, cel_6, cel_7),
     names_to  = "cel_chr",
@@ -817,6 +922,8 @@ cel_geo |>
 ```{r}
 #| label: cel-mun-top30-2001
 #| fig-height: 10
+albo_romero <- readRDS("data-raw/albo_romero_autonomias_anexo1.rds")
+
 # Name crosswalk: 2001 abbreviations → 2024 canonical names
 name_xwalk_2001 <- c(
   "Sta Cruz de la Sierra" = "Santa Cruz de la Sierra",
@@ -837,7 +944,7 @@ cel_cols_2001 <- c(
 )
 
 # Y-axis order: same 2024 population ranking (ascending = most populous at top)
-top30_order <- top30 |> arrange(n_total) |> pull(mun_name)
+top30_order <- top30 |> arrange(n_total) |> pull(municipality.y)
 
 albo_romero |>
   mutate(

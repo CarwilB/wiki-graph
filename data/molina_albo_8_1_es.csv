@@ -1,0 +1,10 @@
+"categoria","pertenece_indigena","habla_su_lengua","aprendio_lengua_ninez","habla_castellano","codigo_abreviado","poblacion_0_14","poblacion_15_mas","poblacion_total","porcentaje_15_mas"
+"7","Sí","Sí","Sí","No","SSS-c",321054,565336,886390,11.5
+"6","Sí","Sí","Sí","Sí","SSS+c",315169,1209636,1524805,24.7
+"5","Sí","Sí","No","Sí","SSN+c",154854,588989,743843,12
+"4","Sí","No","No","Sí","SNN",1041070,683224,1724294,13.9
+"3","No","Sí","Sí","No","NSS-c",15204,36935,52139,0.8
+"2","No","Sí","Sí","Sí","NSS+c",22524,145119,167643,3
+"1","No","Sí","No","Sí","NSN",24289,224538,248827,4.6
+"0","No","No","No","Sí","NNN",841698,1450384,2292082,29.6
+"Total",NA,NA,NA,NA,NA,2735862,4904161,7640023,100

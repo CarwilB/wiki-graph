@@ -1,0 +1,286 @@
+---
+title: "CEL distribution grid — departments × top municipalities, 2001 vs 2024"
+format: html
+execute:
+  warning: false
+  message: false
+---
+
+Population-weighted CEL distribution for each of Bolivia's nine departments,
+broken out by the three most populous municipalities (by 2024 census population)
+plus the remaining population. Each cell shows a stacked bar for 2001 (top) and
+2024 (bottom). CEL half-steps (1.5 and 4.5) in the 2024 data are merged into
+their adjacent integer levels for visual parity with the 2001 scale.
+
+```{r}
+#| label: setup
+library(tidyverse)
+
+DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+```
+
+```{r}
+#| label: load-data
+albo_2001 <- readRDS("data-raw/albo_romero_autonomias_anexo1.rds")
+
+cel_2024_all <- readRDS(file.path(DATA_DIR, "cel_geo.rds")) |>
+  filter(!is.na(municipality), is.na(urban_rural)) |>
+  mutate(cod_mun = sprintf("%02d%02d%02d", department, province, municipality))
+
+pop <- readRDS("data/census_table_municipios_2012u.rds") |>
+  select(cod.mun, mun_name = municipality, t_2001, t_2012)
+
+dept_names <- c(
+  "1" = "Chuquisaca", "2" = "La Paz", "3" = "Cochabamba",
+  "4" = "Oruro",      "5" = "Potosi", "6" = "Tarija",
+  "7" = "Santa Cruz", "8" = "Beni",   "9" = "Pando"
+)
+```
+
+```{r}
+#| label: build-long-data
+
+# --- 2001: reshape to long CEL levels ---
+cel_cols_2001 <- c(
+  cel_0_nnn = "0", cel_1_nsn = "1", cel_2_nss = "2", cel_3_nss = "3",
+  cel_4_snn = "4", cel_5_ssnc = "5", cel_6_sssc = "6", cel_7_sss = "7"
+)
+
+long_2001 <- albo_2001 |>
+  left_join(pop |> select(cod.mun, mun_name, t_2001), by = c("codigo" = "cod.mun")) |>
+  select(codigo, department, mun_name, t_2001, all_of(names(cel_cols_2001))) |>
+  pivot_longer(cols = all_of(names(cel_cols_2001)), names_to = "var", values_to = "pct") |>
+  mutate(cel = cel_cols_2001[var], year = "2001")
+
+# --- 2024: reshape to long, merging half-steps for parity with 2001 ---
+long_2024 <- cel_2024_all |>
+  left_join(pop |> select(cod.mun, mun_name), by = c("cod_mun" = "cod.mun")) |>
+  mutate(department = dept_names[as.character(department)]) |>
+  select(cod_mun, department, mun_name, n_total,
+         cel_0, cel_1, `cel_1.5`, cel_2, cel_3, cel_4, `cel_4.5`, cel_5, cel_6, cel_7) |>
+  mutate(cel_1 = cel_1 + `cel_1.5`, cel_4 = cel_4 + `cel_4.5`) |>
+  select(-`cel_1.5`, -`cel_4.5`) |>
+  pivot_longer(cols = starts_with("cel_"), names_to = "var", values_to = "pct") |>
+  mutate(cel = sub("cel_", "", var), year = "2024", codigo = cod_mun, pop_wt = n_total)
+
+# Use n_total as the population weight for 2001 rows too
+long_2001 <- long_2001 |> mutate(pop_wt = t_2001)
+
+# --- Identify top 3 per department by 2024 population (n_total) ---
+top3 <- cel_2024_all |>
+  left_join(pop |> select(cod.mun, mun_name), by = c("cod_mun" = "cod.mun")) |>
+  mutate(department = dept_names[as.character(department)]) |>
+  distinct(cod_mun, department, mun_name, n_total) |>
+  group_by(department) |>
+  slice_max(n_total, n = 3) |>
+  mutate(rank = row_number(desc(n_total))) |>
+  ungroup() |>
+  select(codigo = cod_mun, department, mun_name_top3 = mun_name, rank)
+
+tag_slot <- function(df) {
+  df |>
+    left_join(top3 |> select(codigo, department, rank),
+              by = c("codigo", "department")) |>
+    mutate(
+      slot = case_when(rank == 1 ~ "1st", rank == 2 ~ "2nd",
+                       rank == 3 ~ "3rd", TRUE ~ "Rest"),
+      slot = factor(slot, levels = c("1st", "2nd", "3rd", "Rest"))
+    )
+}
+
+long_2001_tagged <- tag_slot(long_2001)
+long_2024_tagged <- tag_slot(long_2024)
+
+# Aggregate "Rest" as population-weighted average
+agg_rest <- function(df) {
+  top <- df |> filter(slot != "Rest")
+  rest <- df |>
+    filter(slot == "Rest") |>
+    group_by(department, cel, year, slot) |>
+    summarise(pct = weighted.mean(pct, pop_wt, na.rm = TRUE),
+              mun_name = "Rest", .groups = "drop")
+  bind_rows(top, rest)
+}
+
+combined <- bind_rows(agg_rest(long_2001_tagged), agg_rest(long_2024_tagged))
+
+# Slot labels: municipality name for top 3 (from 2024 ranking)
+slot_labels <- top3 |>
+  mutate(slot = case_when(rank == 1 ~ "1st", rank == 2 ~ "2nd", rank == 3 ~ "3rd")) |>
+  select(department, slot, mun_name = mun_name_top3) |>
+  mutate(slot = factor(slot, levels = c("1st", "2nd", "3rd", "Rest"))) |>
+  bind_rows(
+    tibble(department = unique(top3$department),
+           slot = factor("Rest", levels = c("1st", "2nd", "3rd", "Rest")),
+           mun_name = "Rest")
+  )
+
+combined <- combined |>
+  left_join(slot_labels |> rename(slot_label = mun_name),
+            by = c("department", "slot"))
+
+# Order departments by overall indigenous share (CEL ≥ 4 in 2001, pop-weighted)
+dept_order <- albo_2001 |>
+  left_join(pop |> select(cod.mun, t_2001), by = c("codigo" = "cod.mun")) |>
+  group_by(department) |>
+  summarise(score = weighted.mean(crit_orig_4a7, t_2001, na.rm = TRUE)) |>
+  arrange(desc(score)) |>
+  pull(department)
+
+combined <- combined |>
+  mutate(
+    department = factor(department, levels = dept_order),
+    cel = factor(cel, levels = as.character(0:7)),
+    year = factor(year, levels = c("2024", "2001"))
+  )
+```
+
+```{r}
+#| label: shared-aesthetics
+cel_colors_8 <- c(
+  "0" = "#d9d9d9", "1" = "#fdb863", "2" = "#e08214", "3" = "#b35806",
+  "4" = "#cce5ff", "5" = "#4393c3", "6" = "#2166ac", "7" = "#053061"
+)
+
+cel_labels_en <- c(
+  "0" = "0 — No identity, no language",
+  "1" = "1 — No identity, speaks",
+  "2" = "2 — No identity, speaks + childhood (bilingual)",
+  "3" = "3 — No identity, speaks + childhood (monolingual)",
+  "4" = "4 — Identity only",
+  "5" = "5 — Identity + language (no childhood)",
+  "6" = "6 — Identity + language + childhood (bilingual)",
+  "7" = "7 — Identity + language + childhood (monolingual)"
+)
+
+cel_labels_es <- c(
+  "0" = "0 — Sin identidad, sin lengua",
+  "1" = "1 — Sin identidad, habla",
+  "2" = "2 — Sin identidad, habla + aprendió (bilingüe)",
+  "3" = "3 — Sin identidad, habla + aprendió (monolingüe)",
+  "4" = "4 — Solo identidad",
+  "5" = "5 — Identidad + lengua (sin infancia)",
+  "6" = "6 — Identidad + lengua + aprendió (bilingüe)",
+  "7" = "7 — Identidad + lengua + aprendió (monolingüe)"
+)
+
+slot_names_en <- c("1st" = "1st largest", "2nd" = "2nd largest",
+                   "3rd" = "3rd largest", "Rest" = "Remaining")
+
+slot_names_es <- c("1st" = "1er municipio", "2nd" = "2do municipio",
+                   "3rd" = "3er municipio", "Rest" = "Resto")
+
+# Municipality-name annotations with 2024 population counts
+top3_pop <- long_2024_tagged |>
+  filter(slot != "Rest", cel == "0") |>
+  distinct(department, slot, pop_wt)
+
+rest_pop <- long_2024_tagged |>
+  filter(slot == "Rest", cel == "0") |>
+  group_by(department) |>
+  summarise(pop_wt = sum(pop_wt, na.rm = TRUE), .groups = "drop") |>
+  mutate(slot = factor("Rest", levels = c("1st", "2nd", "3rd", "Rest")))
+
+all_pop <- bind_rows(top3_pop, rest_pop)
+
+mun_labels <- combined |>
+  distinct(department, slot, slot_label) |>
+  left_join(all_pop, by = c("department", "slot")) |>
+  mutate(
+    pop_str = scales::comma(round(pop_wt)),
+    label_text = if_else(slot == "Rest", "Rest", slot_label),
+    label_full = paste0(label_text, "\n", pop_str)
+  )
+
+mun_labels_es <- mun_labels |>
+  mutate(
+    label_text = if_else(label_text == "Rest", "Resto", label_text),
+    label_full = sub("^Rest\n", "Resto\n", label_full)
+  )
+```
+
+:::{.column-page-inset}
+```{r}
+#| label: cel-grid-en
+#| fig-height: 12
+#| fig-width: 14
+
+ggplot(combined, aes(x = pct / 100, y = year, fill = cel)) +
+  geom_col(width = 0.7) +
+  geom_text(
+    data = mun_labels,
+    aes(x = 0.5, y = 2.7, label = label_full),
+    inherit.aes = FALSE, size = 3, lineheight = 0.85, color = "grey10"
+  ) +
+  facet_grid(
+    department ~ slot,
+    switch = "y",
+    labeller = labeller(slot = slot_names_en)
+  ) +
+  scale_x_continuous(labels = scales::percent_format(), breaks = c(0, 0.5, 1)) +
+  scale_fill_manual(values = cel_colors_8, labels = cel_labels_en, name = "CEL") +
+  labs(
+    title = "CEL distribution by department and municipality — 2001 vs 2024",
+    subtitle = "Top 3 municipalities by 2024 population + remaining (pop-weighted avg)",
+    x = "Share of population", y = NULL
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(
+    strip.text.y.left = element_text(angle = 0, hjust = 1, face = "bold", size = 9),
+    strip.text.x = element_text(size = 10, face = "italic", color = "grey30",
+                                margin = margin(t = 15, b = 10)),
+    legend.position = "bottom",
+    legend.key.width = unit(0.5, "cm"),
+    panel.spacing.x = unit(0.3, "lines"),
+    panel.spacing.y = unit(0.5, "lines"),
+    axis.text.y = element_text(size = 8),
+    panel.grid.major.y = element_blank(),
+    plot.margin = margin(t = 15, r = 5, b = 5, l = 5)
+  ) +
+  guides(fill = guide_legend(ncol = 2)) +
+  coord_cartesian(clip = "off")
+```
+:::
+
+:::{.column-page-inset}
+```{r}
+#| label: cel-grid-es
+#| fig-height: 12
+#| fig-width: 14
+
+ggplot(combined, aes(x = pct / 100, y = year, fill = cel)) +
+  geom_col(width = 0.7) +
+  geom_text(
+    data = mun_labels_es,
+    aes(x = 0.5, y = 2.7, label = label_full),
+    inherit.aes = FALSE, size = 3, lineheight = 0.85, color = "grey10"
+  ) +
+  facet_grid(
+    department ~ slot,
+    switch = "y",
+    labeller = labeller(slot = slot_names_es)
+  ) +
+  scale_x_continuous(labels = scales::percent_format(), breaks = c(0, 0.5, 1)) +
+  scale_fill_manual(values = cel_colors_8, labels = cel_labels_es, name = "CEL") +
+  labs(
+    title = "Distribución CEL por departamento y municipio — 2001 vs 2024",
+    subtitle = "3 municipios más poblados (población 2024) + resto (promedio ponderado)",
+    x = "Proporción de la población", y = NULL
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(
+    strip.text.y.left = element_text(angle = 0, hjust = 1, face = "bold", size = 9),
+    strip.text.x = element_text(size = 10, face = "italic", color = "grey30",
+                                margin = margin(t = 15, b = 10)),
+    legend.position = "bottom",
+    legend.key.width = unit(0.5, "cm"),
+    panel.spacing.x = unit(0.3, "lines"),
+    panel.spacing.y = unit(0.5, "lines"),
+    axis.text.y = element_text(size = 8),
+    panel.grid.major.y = element_blank(),
+    plot.margin = margin(t = 15, r = 5, b = 5, l = 5)
+  ) +
+  guides(fill = guide_legend(ncol = 2)) +
+  coord_cartesian(clip = "off")
+```
+:::
