@@ -1,0 +1,67 @@
+---
+# Provenance metadata for Cuadro 8.1 from Molina Barrios & Albó (2006)
+# Two derived tables: molina_albo_8_1_es (Spanish) and molina_albo_8_1_en (English)
+
+source:
+  title: "Gama étnica y lingüística de la población boliviana"
+  authors:
+    - family: Molina Barrios
+      given: Ramiro
+    - family: Albó
+      given: Xavier
+  date: 2006
+  publisher: Sistema de las Naciones Unidas en Bolivia
+  location: "La Paz, Bolivia"
+  isbn: "978-99905-860-0-8"
+  table: "Cuadro 8.1"
+  table_title: "Bolivia: Condición étnico-lingüística (CEL) de la población"
+  page: 190
+  underlying_data: "INE - Censo Nacional de Población y Vivienda 2001"
+  source_note: "Fuente: INE - Censo Nacional 2001. Elaboración propia. La Paz, Bolivia. 2004."
+
+import:
+  method: "Manual transcription from scanned page image"
+  script: "molina-albo-2006.R"
+  date: "2026-03-14"
+  handling_notes:
+    - "Period thousands separators removed from population columns; converted to integer."
+    - "Commas replaced with periods for decimal representation in percentage column."
+    - "Superscript footnote markers removed from cell values by hand."
+    - >
+      Footnote content preserved below under published_notes rather than
+      encoded in the data.
+    - >
+      Bold/non-bold formatting in the original table (indicating dominant vs.
+      deducible traits per category) is not encoded in the data.
+
+published_notes:
+  formatting:
+    - "Negrilla: rasgos más determinantes de cada categoría o combinación."
+    - "Sin negrilla: otros rasgos deducibles de los anteriores (por ejemplo 'habla castellano') o muy poco frecuentes."
+  footnotes:
+    - category: 5
+      code: "S S N (S/N)"
+      marker: "a"
+      text: "Un 0,17% no sabe castellano."
+    - category: 4
+      code: "S N (N/S)"
+      marker: "b"
+      text: "Un 0,48% aprendió la lengua de niño pero ya la olvidó."
+    - category: 0
+      code: "N N N (S/N)"
+      marker: "c"
+      text: "Un 0,06% no sabe castellano."
+
+outputs:
+  - file: molina_albo_8_1_es.rds
+    description: >
+      Spanish-language version, faithful to original column names.
+      Includes the "Total" summary row. 9 rows × 10 columns.
+  - file: molina_albo_8_1_es.csv
+    description: "Same as above in CSV format."
+  - file: molina_albo_8_1_en.rds
+    description: >
+      English-language analytic version. Total row excluded; Sí/No columns
+      converted to logical; column names translated. 8 rows × 10 columns.
+  - file: molina_albo_8_1_en.csv
+    description: "Same as above in CSV format."

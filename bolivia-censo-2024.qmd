@@ -425,7 +425,7 @@ full_cross_decoded <- full_cross |>
 # Kabineña→Cavineño and Zamuco→Ayoreo are naming convention differences (same group),
 # so they are treated as matching in the classifier.
 classify_alignment2 <- function(idioma, pueblos) {
-  equiv <- c("Kabineña" = "Cavineño", "Zamuco" = "Ayoreo")
+  equiv <- c("Kabineña" = "Cavineño", "Zamuco" = "Ayoreo", "Bésiro" = "Chiquitano")
   expected <- coalesce(equiv[idioma], idioma)
   case_when(
     str_detect(pueblos, fixed(expected, ignore_case = TRUE)) |
@@ -502,11 +502,11 @@ outcome_levels <- c(
   "Generic identity", "Does not identify", "No response", "No identity data"
 )
 outcome_colors <- c(
-  "Matching group"           = "#2166ac",
-  "Identifies as indigenous" = "#74add1",
-  "Different group"          = "#74add1",
-  "Generic identity"         = "#fee090",
-  "Does not identify"        = "#d73027",
+  "Matching group"           = "#b35806",
+  "Identifies as indigenous" = "#e08214",
+  "Different group"          = "#fdb863",
+  "Generic identity"         = "#fee0b6",
+  "Does not identify"        = "#4a5568",
   "No response"              = "#bababa",
   "No identity data"         = "#f5f5f5"
 )
@@ -596,11 +596,11 @@ outcome_levels_es <- c(
   "Identidad genérica", "No se autoidentifica", "Sin respuesta", "Sin datos de identidad"
 )
 outcome_colors_es <- c(
-  "Grupo coincidente"               = "#2166ac",
-  "Se autoidentifica como indígena" = "#74add1",
-  "Grupo diferente"                 = "#74add1",
-  "Identidad genérica"              = "#fee090",
-  "No se autoidentifica"            = "#d73027",
+  "Grupo coincidente"               = "#b35806",
+  "Se autoidentifica como indígena" = "#e08214",
+  "Grupo diferente"                 = "#fdb863",
+  "Identidad genérica"              = "#fee0b6",
+  "No se autoidentifica"            = "#4a5568",
   "Sin respuesta"                   = "#bababa",
   "Sin datos de identidad"          = "#f5f5f5"
 )
@@ -632,51 +632,146 @@ The same data as above, displayed as **population counts** rather than percentag
 
 ```{r}
 #| label: count-plot-setup
+library(ggrepel)
+
 keep_langs  <- c("Guaraní", "Aymara", "Quechua", "Castellano")
+lang_order  <- c("Castellano", "Other indigenous language", "Guaraní", "Aymara", "Quechua")
+lang_order_es <- c("Castellano", "Otro idioma nativo", "Guaraní", "Aymara", "Quechua")
+
+# Categories by side
+right_cats <- c("Matching group", "Identifies as indigenous", "Different group",
+                "Generic identity")
+left_cats  <- c("Does not identify", "No response")
 
 count_df <- alignment_full2 |>
-  mutate(idioma_grp = if_else(idioma_label %in% keep_langs, idioma_label, "Other indigenous language")) |>
+  mutate(idioma_grp = if_else(idioma_label %in% keep_langs, idioma_label,
+                              "Other indigenous language")) |>
   group_by(idioma_grp, outcome) |>
   summarise(n = sum(n), .groups = "drop") |>
   group_by(idioma_grp) |>
   mutate(total = sum(n)) |>
   ungroup()
 
-make_count_plot_df <- function(outcome_map, other_lbl) {
+make_count_diverging_df <- function(outcome_map, other_lbl, lang_lvls) {
   count_df |>
     mutate(
       outcome_plot = outcome_map[outcome],
+      # Castellano has no "Matching group"; remap "Different group" → identifies
       outcome_plot = if_else(
         idioma_grp == "Castellano" & outcome == "Different group",
         outcome_map[["Identifies as indigenous"]],
         outcome_plot
       ),
-      is_castellano = idioma_grp == "Castellano",
-      match_n       = if_else(outcome == "Matching group", n, 0L),
-      idioma_grp    = if_else(idioma_grp == "Other indigenous language", other_lbl, idioma_grp)
+      idioma_grp = if_else(idioma_grp == "Other indigenous language",
+                           other_lbl, idioma_grp)
     ) |>
-    group_by(idioma_grp) |>
-    mutate(sort_val = sum(match_n)) |>
-    ungroup() |>
+    # Collapse duplicates from Castellano remapping
+    group_by(idioma_grp, outcome_plot, total) |>
+    summarise(n = sum(n), .groups = "drop") |>
     mutate(
-      idioma_grp = fct_reorder(idioma_grp, if_else(is_castellano, -Inf, as.double(sort_val)))
+      side   = if_else(outcome_plot %in% outcome_map[left_cats], "left", "right"),
+      n_plot = if_else(side == "left", -n, n),
+      idioma_grp = factor(idioma_grp, levels = lang_lvls)
     )
 }
 
-make_count_bar <- function(df, lvls, cols, title, subtitle, x_label) {
-  ggplot(df |> mutate(outcome_plot = factor(outcome_plot, levels = lvls)),
-         aes(x = n, y = idioma_grp, fill = outcome_plot)) +
-    geom_col() +
-    geom_text(
-      data = df |> group_by(idioma_grp) |> summarise(total = first(total)),
-      aes(x = total * 1.02, y = idioma_grp, label = scales::comma(total)),
-      inherit.aes = FALSE, hjust = 0, size = 3
+label_compact <- function(x) {
+  case_when(
+    abs(x) >= 1e6 ~ paste0(round(abs(x) / 1e6, 1), "M"),
+    abs(x) >= 1e3 ~ paste0(round(abs(x) / 1e3, 1), "K"),
+    TRUE           ~ as.character(abs(x))
+  )
+}
+
+make_count_diverging <- function(df, lvls_right, lvls_left, cols, title,
+                                 subtitle, x_label, arrow_left, arrow_right,
+                                 base_size = 11) {
+  # Font sizes scale with base_size
+  seg_label_size  <- base_size * 0.23
+  total_label_size <- base_size * 0.27
+
+  # Factor order: right categories (inner → outer), then left (inner → outer)
+  df <- df |>
+    mutate(outcome_plot = factor(outcome_plot, levels = c(lvls_right, lvls_left)))
+
+  # Compute label positions (desc: ggplot2 stacks last level closest to axis)
+  seg_labs <- df |>
+    arrange(idioma_grp, side, desc(outcome_plot)) |>
+    group_by(idioma_grp, side) |>
+    mutate(
+      abs_cum   = cumsum(n),
+      abs_start = abs_cum - n,
+      mid       = if_else(side == "left",
+                          -(abs_start + abs_cum) / 2,
+                           (abs_start + abs_cum) / 2)
+    ) |>
+    ungroup() |>
+    # Label segments > 20k, > 3% of total, and < 85% (dominant segments are obvious)
+    filter(n > 20000, n / total > 0.03, n / total < 0.85) |>
+    mutate(label = label_compact(n))
+
+  # Right-side total (identifies) for end-of-bar labels
+  right_totals <- df |>
+    filter(side == "right") |>
+    group_by(idioma_grp) |>
+    summarise(right_total = sum(n), .groups = "drop")
+
+  # Y-axis labels: language name + total on a second line
+  y_labels <- df |>
+    group_by(idioma_grp) |>
+    summarise(total = first(total), .groups = "drop") |>
+    mutate(y_lab = paste0(idioma_grp, "\nn = ", scales::comma(total))) |>
+    pull(y_lab, name = idioma_grp)
+
+  df <- df |>
+    mutate(idioma_grp = factor(y_labels[as.character(idioma_grp)],
+                               levels = y_labels))
+
+  right_totals <- right_totals |>
+    mutate(idioma_grp = factor(y_labels[as.character(idioma_grp)],
+                               levels = y_labels))
+  seg_labs <- seg_labs |>
+    mutate(idioma_grp = factor(y_labels[as.character(idioma_grp)],
+                               levels = y_labels))
+
+  ggplot(df, aes(x = n_plot, y = idioma_grp, fill = outcome_plot)) +
+    geom_col(width = 0.7) +
+    geom_text_repel(
+      data = seg_labs,
+      aes(x = mid, y = idioma_grp, label = label),
+      inherit.aes = FALSE, size = seg_label_size, fontface = "bold",
+      direction = "x", nudge_y = 0.48,
+      segment.size = 0.25, segment.color = "grey50",
+      min.segment.length = 0,
+      box.padding = 0.2, force = 3, max.overlaps = 20
     ) +
-    scale_x_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.15))) +
-    scale_fill_manual(values = cols, drop = FALSE) +
-    labs(title = title, subtitle = subtitle, x = x_label, y = NULL, fill = NULL) +
-    theme_minimal(base_size = 11) +
-    theme(legend.position = "bottom")
+    geom_text(
+      data = right_totals,
+      aes(x = right_total * 1.02, y = idioma_grp,
+          label = scales::comma(right_total)),
+      inherit.aes = FALSE, hjust = 0, size = total_label_size, fontface = "bold"
+    ) +
+    geom_vline(xintercept = 0, linewidth = 0.4) +
+    scale_x_continuous(
+      labels = function(x) scales::comma(abs(x)),
+      expand = expansion(mult = c(0.10, 0.15))
+    ) +
+    scale_fill_manual(
+      values = cols,
+      breaks = c(rev(lvls_right), lvls_left),
+      drop = FALSE
+    ) +
+    labs(
+      title    = title,
+      subtitle = paste0(subtitle, "\n\u2190 ", arrow_left,
+                        "          ", arrow_right, " \u2192"),
+      x = x_label, y = NULL, fill = NULL
+    ) +
+    theme_minimal(base_size = base_size) +
+    theme(
+      legend.position  = "bottom",
+      panel.grid.major.y = element_blank()
+    )
 }
 ```
 
@@ -684,14 +779,19 @@ make_count_bar <- function(df, lvls, cols, title, subtitle, x_label) {
 
 ```{r}
 #| label: count-plot-en
-#| fig-height: 5
-make_count_bar(
-  make_count_plot_df(en_map, "Other indigenous language"),
-  lvls     = outcome_levels,
-  cols     = outcome_colors,
-  title    = "Mother tongue and indigenous identity — full census (counts)",
-  subtitle = "idioma_mat vs p32_pueblos | n = 11,365,333",
-  x_label  = "Number of persons"
+#| fig-width: 10
+#| fig-height: 5.5
+make_count_diverging(
+  make_count_diverging_df(en_map, "Other indigenous language", lang_order),
+  lvls_right  = c("Generic identity", "Different group",
+                   "Identifies as indigenous", "Matching group"),
+  lvls_left   = c("No response", "Does not identify"),
+  cols        = outcome_colors,
+  title       = "Mother tongue and indigenous identity — CNPV 2024 (counts)",
+  subtitle    = "idioma_mat vs p32_pueblos | n = 11,365,333",
+  x_label     = "Number of persons",
+  arrow_left  = "Does not identify / No response",
+  arrow_right = "Identifies as indigenous"
 )
 ```
 
@@ -699,18 +799,206 @@ make_count_bar(
 
 ```{r}
 #| label: count-plot-es
-#| fig-height: 5
-make_count_bar(
-  make_count_plot_df(es_map, "Otro idioma nativo"),
-  lvls     = outcome_levels_es,
-  cols     = outcome_colors_es,
-  title    = "Lengua materna e identidad indígena — censo completo (conteos)",
-  subtitle = "idioma_mat vs p32_pueblos | n = 11.365.333",
-  x_label  = "Número de personas"
+#| fig-width: 10
+#| fig-height: 5.5
+make_count_diverging(
+  make_count_diverging_df(es_map, "Otro idioma nativo", lang_order_es),
+  lvls_right  = c("Identidad genérica", "Grupo diferente",
+                   "Se autoidentifica como indígena", "Grupo coincidente"),
+  lvls_left   = c("Sin respuesta", "No se autoidentifica"),
+  cols        = outcome_colors_es,
+  title       = "Lengua materna e identidad indígena — CNPV 2024 (conteos)",
+  subtitle    = "idioma_mat vs p32_pueblos | n = 11.365.333",
+  x_label     = "Número de personas",
+  arrow_left  = "No se autoidentifica / Sin respuesta",
+  arrow_right = "Se autoidentifica como indígena"
 )
+``` 
+
+#### Editorial version (English)
+
+```{r}
+#| label: count-plot-editorial
+#| fig-width: 12
+#| fig-height: 5.5
+div_df <- make_count_diverging_df(en_map, "Other indigenous language", lang_order) |>
+  mutate(outcome_plot = factor(outcome_plot, levels = c(
+    "Generic identity", "Different group", "Identifies as indigenous", "Matching group",
+    "No response", "Does not identify"
+  )))
+
+x_range_div <- max(abs(div_df$n_plot))
+
+# Segment labels — 5% threshold keeps it clean
+seg_labs_ed <- div_df |>
+  arrange(idioma_grp, side, desc(outcome_plot)) |>
+  group_by(idioma_grp, side) |>
+  mutate(
+    abs_cum   = cumsum(n),
+    abs_start = abs_cum - n,
+    mid       = if_else(side == "left",
+                        -(abs_start + abs_cum) / 2,
+                         (abs_start + abs_cum) / 2)
+  ) |>
+  ungroup() |>
+  filter(n > 20000, n / total > 0.05, n / total < 0.85) |>
+  mutate(
+    label    = label_compact(n),
+    text_col = if_else(
+      outcome_plot %in% c("Matching group", "Does not identify",
+                          "Identifies as indigenous"),
+      "white", "grey20"
+    )
+  )
+
+seg_inside <- seg_labs_ed |> filter(n > x_range_div * 0.05)
+seg_above  <- seg_labs_ed |> filter(n <= x_range_div * 0.05)
+
+right_totals_ed <- div_df |>
+  filter(side == "right") |>
+  group_by(idioma_grp) |>
+  summarise(right_total = sum(n), .groups = "drop")
+
+# Y-axis labels: bold name + non-bold total on second line
+y_labs_ed <- div_df |>
+  group_by(idioma_grp) |>
+  summarise(total = first(total), .groups = "drop") |>
+  mutate(y_lab = paste0(idioma_grp, "\nn = ", scales::comma(total))) |>
+  pull(y_lab, name = idioma_grp)
+
+# Remap factor levels for all data frames
+div_df <- div_df |>
+  mutate(idioma_grp = factor(y_labs_ed[as.character(idioma_grp)],
+                             levels = y_labs_ed))
+seg_inside <- seg_inside |>
+  mutate(idioma_grp = factor(y_labs_ed[as.character(idioma_grp)],
+                             levels = y_labs_ed))
+seg_above <- seg_above |>
+  mutate(idioma_grp = factor(y_labs_ed[as.character(idioma_grp)],
+                             levels = y_labs_ed))
+right_totals_ed <- right_totals_ed |>
+  mutate(idioma_grp = factor(y_labs_ed[as.character(idioma_grp)],
+                             levels = y_labs_ed))
+
+bs <- 14
+
+ggplot(div_df, aes(x = n_plot, y = idioma_grp, fill = outcome_plot)) +
+  geom_col(width = 0.65, show.legend = FALSE) +
+  geom_text(
+    data = seg_inside,
+    aes(x = mid, y = idioma_grp, label = label, color = text_col),
+    inherit.aes = FALSE, size = bs * 0.26, fontface = "bold"
+  ) +
+  scale_color_identity() +
+  geom_text_repel(
+    data = seg_above,
+    aes(x = mid, y = idioma_grp, label = label),
+    inherit.aes = FALSE, size = bs * 0.21, fontface = "bold",
+    color = "grey30",
+    direction = "x", nudge_y = 0.44,
+    segment.size = 0.2, segment.color = "grey60",
+    min.segment.length = 0,
+    box.padding = 0.15, force = 3, max.overlaps = 20
+  ) +
+  geom_text(
+    data = right_totals_ed,
+    aes(x = right_total * 1.02, y = idioma_grp,
+        label = scales::comma(right_total)),
+    inherit.aes = FALSE, hjust = 0, size = bs * 0.26, fontface = "bold",
+    color = "grey30"
+  ) +
+  geom_vline(xintercept = 0, linewidth = 1.2, color = "grey20") +
+  annotate("text", x = -2500000, y = 5.7,
+           label = "\u2190  Does not identify / No response",
+           size = bs * 0.26, fontface = "bold", color = "#4a5568", hjust = 0.5) +
+  annotate("text", x = 1500000, y = 5.7,
+           label = "Identifies as indigenous  \u2192",
+           size = bs * 0.26, fontface = "bold", color = "#b35806", hjust = 0.5) +
+  scale_x_continuous(
+    labels = function(x) scales::comma(abs(x)),
+    expand = expansion(mult = c(0.08, 0.14))
+  ) +
+  scale_fill_manual(values = outcome_colors) +
+  coord_cartesian(clip = "off", ylim = c(0.4, 5.5)) +
+  labs(
+    title    = "Mother tongue and indigenous identity \u2014 CNPV 2024",
+    subtitle = "idioma_mat vs p32_pueblos  |  n = 11,365,333",
+    x = NULL, y = NULL
+  ) +
+  theme_void(base_size = bs) +
+  theme(
+    plot.title    = element_text(face = "bold", size = rel(1.35), margin = margin(b = 3)),
+    plot.subtitle = element_text(color = "grey40", size = rel(0.8), margin = margin(b = 16)),
+    plot.margin   = margin(20, 30, 10, 10),
+    axis.text.y   = element_text(hjust = 1, color = "grey20",
+                                 size = rel(0.85), margin = margin(r = 8)),
+    axis.text.x   = element_text(color = "grey50", size = rel(0.6), margin = margin(t = 5))
+  )
 ```
 
-Amend
+------------------------------------------------------------------------
+
+## CEL distribution: 2001 vs. 2024
+
+The Condición Étnico-Lingüística (CEL) scale captures the intensity of indigenous identity and language use, combining Xavier Albó's conceptual framework: self-identification (Q1), language match (Q2), childhood language acquisition (Q3), and Spanish fluency (C). The 2024 census data allows direct comparison with Albó's own 2001 analysis from the 1992 census baseline.
+
+```{r}
+#| label: cel-distribution-comparison
+#| fig-width: 14
+#| fig-height: 6
+
+source("cel_helpers.R")
+
+molina_albo_8_1_en <- readRDS("data/molina_albo_8_1_en.rds")
+
+cel_2001 <- molina_albo_8_1_en |>
+  transmute(cel = as.numeric(cel), pct = pop_total / sum(pop_total)) |>
+  mutate(year = "2001")
+
+cel_2024 <- albo_vars |>
+  mutate(cel = floor(cel)) |>
+  count(cel) |>
+  mutate(pct = n / sum(n), year = "2024") |>
+  select(cel, pct, year)
+
+cel_labels_int <- c(
+  "0" = "0 — No identity,\nno language",
+  "1" = "1 — No identity,\nspeaks (no childhood)",
+  "2" = "2 — No identity,\nspeaks + childhood\n(bilingual)",
+  "3" = "3 — No identity,\nspeaks + childhood\n(monolingual)",
+  "4" = "4 — Identity only",
+  "5" = "5 — Identity +\nlanguage (no childhood)",
+  "6" = "6 — Identity +\nlanguage + childhood\n(bilingual)",
+  "7" = "7 — Identity +\nlanguage + childhood\n(monolingual)"
+)
+
+# Collapse cel_colors for integer levels (0–7)
+cel_colors_int <- cel_colors[c("0","1","2","3","4","5","6","7")]
+
+plot_data <- bind_rows(cel_2001, cel_2024) |>
+  mutate(
+    cel_chr = as.character(cel),
+    cel_lbl = cel_labels_int[cel_chr],
+    cel_lbl = fct_reorder(cel_lbl, cel)
+  )
+
+ggplot(plot_data, aes(x = pct, y = cel_lbl, fill = cel_chr)) +
+  geom_col() +
+  geom_text(
+    aes(label = paste0(round(pct * 100, 1), "%")),
+    hjust = -0.1, size = 3
+  ) +
+  scale_x_continuous(labels = scales::percent_format(),
+                     expand = expansion(mult = c(0, 0.18))) +
+  scale_fill_manual(values = cel_colors_int, guide = "none") +
+  facet_wrap(~ year, ncol = 2) +
+  labs(
+    title    = "CEL distribution: 2001 vs. 2024",
+    subtitle = "2001: Molina Barrios & Albó (2006), Cuadro 8.1 (n = 7,640,023)\n2024: CPV 2024, all persons (n = 11,365,333). Half-steps collapsed to floor.",
+    x = "Share of population", y = NULL
+  ) +
+  theme_minimal(base_size = 11)
+```
 
 ------------------------------------------------------------------------
 
@@ -904,15 +1192,17 @@ lang_use |>
 
 Retention is very high (\>90%) for geographically remote or numerically small groups (Chácobo, Tsimane´, Weenhayek, Zamuco, Uru-Chipaya). The two largest groups, Quechua (69%) and Aymara (65%), show substantially more shift to Castellano. Mojeño Ignaciano has the lowest retention at 43%.
 
-### Retention by age: four largest languages
+### Daily language use among indigenous mother-tongue speakers, by age
 
 ```{r}
-#| label: retention-by-age-facet
-#| fig-height: 5
-big_four <- c("Quechua", "Aymara", "Guaraní", "Tsimane´")
+#| label: retention-by-age-16-languages
+#| fig-height: 11
+#| fig-width: 14
+
+indigenous_langs_16 <- indigenous_langs[1:16]
 
 lang_use_age |>
-  filter(mat_label %in% big_four) |>
+  filter(mat_label %in% indigenous_langs_16) |>
   mutate(
     uso_group = case_when(
       uso_label == mat_label    ~ "Same language",
@@ -926,9 +1216,17 @@ lang_use_age |>
   group_by(mat_label, age_group) |>
   mutate(pct = n / sum(n)) |>
   ungroup() |>
+  # Order languages by overall retention rate
+  mutate(
+    mat_label = fct_reorder(
+      mat_label,
+      ifelse(uso_group == "Same language", pct, 0),
+      .fun = sum, .desc = TRUE
+    )
+  ) |>
   ggplot(aes(x = age_group, y = pct, fill = uso_group)) +
   geom_col() +
-  facet_wrap(~ mat_label, nrow = 1) +
+  facet_wrap(~ mat_label, ncol = 4, nrow = 4) +
   scale_y_continuous(labels = scales::percent_format()) +
   scale_fill_manual(
     values = c("Same language" = "#2166ac", "Other" = "#92c5de", "Castellano" = "#d73027"),
@@ -936,18 +1234,25 @@ lang_use_age |>
   ) +
   labs(
     title    = "Daily language use among indigenous mother-tongue speakers, by age",
-    subtitle = "idioma_mayor_uso | full census",
+    subtitle = "idioma_mayor_uso by age group | 16 indigenous languages | full census",
     x = "Age group", y = "Share of speakers"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 10) +
   theme(
     legend.position = "bottom",
-    axis.text.x     = element_text(angle = 45, hjust = 1),
-    strip.text      = element_text(face = "bold")
+    axis.text.x     = element_text(angle = 45, hjust = 1, size = 8),
+    axis.text.y     = element_text(size = 8),
+    strip.text      = element_text(face = "bold", size = 9),
+    panel.spacing   = unit(0.5, "lines")
   )
 ```
 
-For Quechua and Aymara, the relationship with age is non-monotonic: retention is relatively high among children (0–14), dips sharply in the 15–29 and 30–44 cohorts (working-age adults most exposed to Spanish in school and the labour market), then partially recovers among older adults. This could reflect a lifecycle effect (adults shift to Spanish for work, revert in later life) or a cohort effect (older generations genuinely retained more). Tsimane´ shows near-flat, near-complete retention across all age groups — consistent with geographic isolation. Guaraní has a more monotonic decline with age, with its youngest speakers at 94% retention.
+The grid reveals striking variation in age-graded language retention across Bolivia's indigenous languages:
+
+- **High overall retention** (Quechua, Aymara, Guaraní) show non-monotonic patterns: children and elders retain the language more than working-age adults, suggesting lifecycle or generational effects tied to schooling and labour market participation.
+- **Near-complete retention** across all ages (Tsimane´, Chácobo, Weenhayek, Zamuco, Uru-Chipaya) reflects geographic isolation and smaller speaker populations with tight-knit speech communities.
+- **Low retention languages** (Mojeño Ignaciano, Tacana) show weak maintenance even among older speakers, indicating decades-long pressure.
+- **Middle-ground cases** (Guarayo, Maropa, Moxo) show variable patterns: some age cohorts retain the language moderately, others have largely shifted to Castellano.
 
 ### Heatmap: retention across all 16 groups and all age cohorts
 
@@ -1135,16 +1440,20 @@ make_heatmap <- function(data, strat_col, strat_val, title, show_y = TRUE) {
 #| label: heatmap-urban-rural
 #| fig-height: 7
 #| fig-width: 11
-(make_heatmap(hm_urban, "urbrur_label", "Rural", "Rural", show_y = TRUE) |
- make_heatmap(hm_urban, "urbrur_label", "Urban", "Urban", show_y = FALSE)) +
+library(patchwork)
+
+# Wrap the operation to ensure S7 doesn't intercept it incorrectly
+combined_plot <- (make_heatmap(hm_urban, "urbrur_label", "Rural", "Rural", show_y = TRUE) |
+                  make_heatmap(hm_urban, "urbrur_label", "Urban", "Urban", show_y = FALSE)) +
   plot_annotation(
     title    = "Language retention by age: Rural vs Urban",
     subtitle = "% of indigenous mother-tongue speakers using same language daily | full census",
     theme    = theme(plot.title    = element_text(face = "bold"),
                      plot.subtitle = element_text(size = 9))
   ) +
-  plot_layout(guides = "collect") &
-  theme(legend.position = "right")
+  plot_layout(guides = "collect")
+
+combined_plot & theme(legend.position = "right")
 ```
 
 Urban retention is substantially lower for nearly every language and every age group. The most dramatic contrasts are in Quechua (rural 0–14: 90%, urban 0–14: 52%) and Aymara (rural 0–14: 87%, urban 0–14: 41%), showing that urban language shift begins early in childhood. Tsimane´ is the notable exception: even urban Tsimane´ children retain at 77%, suggesting that community ties or residential clustering maintain the language even in city settings. In rural areas, most languages show the expected U-shape (high retention among children and elders, dip among working-age adults); the urban panels flatten this pattern, with low retention sustained across all ages.

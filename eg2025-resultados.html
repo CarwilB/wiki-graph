@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="JCR Björk">
+<meta name="dcterms.date" content="2026-03-15">
+
+<title>Bolivia 2025 General Election — Results by Geography</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="eg2025-resultados_files/libs/clipboard/clipboard.min.js"></script>
+<script src="eg2025-resultados_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="eg2025-resultados_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="eg2025-resultados_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="eg2025-resultados_files/libs/quarto-html/popper.min.js"></script>
+<script src="eg2025-resultados_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="eg2025-resultados_files/libs/quarto-html/anchor.min.js"></script>
+<link href="eg2025-resultados_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="eg2025-resultados_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="eg2025-resultados_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="eg2025-resultados_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="eg2025-resultados_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link active" data-scroll-target="#data-preparation">Data preparation</a>
+  <ul class="collapse">
+  <li><a href="#load-raw-election-data-and-rename-party-columns" id="toc-load-raw-election-data-and-rename-party-columns" class="nav-link" data-scroll-target="#load-raw-election-data-and-rename-party-columns">Load raw election data and rename party columns</a></li>
+  <li><a href="#load-gadm-boundary-files-and-lookup-tables" id="toc-load-gadm-boundary-files-and-lookup-tables" class="nav-link" data-scroll-target="#load-gadm-boundary-files-and-lookup-tables">Load GADM boundary files and lookup tables</a></li>
+  <li><a href="#build-oep-ine-gadm-crosswalk" id="toc-build-oep-ine-gadm-crosswalk" class="nav-link" data-scroll-target="#build-oep-ine-gadm-crosswalk">Build OEP → INE → GADM crosswalk</a></li>
+  <li><a href="#aggregation-functions" id="toc-aggregation-functions" class="nav-link" data-scroll-target="#aggregation-functions">Aggregation functions</a></li>
+  </ul></li>
+  <li><a href="#sec-presidente" id="toc-sec-presidente" class="nav-link" data-scroll-target="#sec-presidente">First-round presidential results</a>
+  <ul class="collapse">
+  <li><a href="#department-level" id="toc-department-level" class="nav-link" data-scroll-target="#department-level">Department level</a></li>
+  <li><a href="#province-level" id="toc-province-level" class="nav-link" data-scroll-target="#province-level">Province level</a></li>
+  <li><a href="#municipality-level" id="toc-municipality-level" class="nav-link" data-scroll-target="#municipality-level">Municipality level</a></li>
+  <li><a href="#presidential-choropleths" id="toc-presidential-choropleths" class="nav-link" data-scroll-target="#presidential-choropleths">Presidential choropleths</a></li>
+  </ul></li>
+  <li><a href="#sec-uninominal" id="toc-sec-uninominal" class="nav-link" data-scroll-target="#sec-uninominal">Diputado Uninominal results</a>
+  <ul class="collapse">
+  <li><a href="#department-level-1" id="toc-department-level-1" class="nav-link" data-scroll-target="#department-level-1">Department level</a></li>
+  <li><a href="#province-level-1" id="toc-province-level-1" class="nav-link" data-scroll-target="#province-level-1">Province level</a></li>
+  <li><a href="#municipality-level-1" id="toc-municipality-level-1" class="nav-link" data-scroll-target="#municipality-level-1">Municipality level</a></li>
+  <li><a href="#uninominal-choropleths" id="toc-uninominal-choropleths" class="nav-link" data-scroll-target="#uninominal-choropleths">Uninominal choropleths</a></li>
+  </ul></li>
+  <li><a href="#sec-especial" id="toc-sec-especial" class="nav-link" data-scroll-target="#sec-especial">Diputado Circunscripción Especial results</a>
+  <ul class="collapse">
+  <li><a href="#department-level-2" id="toc-department-level-2" class="nav-link" data-scroll-target="#department-level-2">Department level</a></li>
+  <li><a href="#province-level-2" id="toc-province-level-2" class="nav-link" data-scroll-target="#province-level-2">Province level</a></li>
+  <li><a href="#municipality-level-2" id="toc-municipality-level-2" class="nav-link" data-scroll-target="#municipality-level-2">Municipality level</a></li>
+  <li><a href="#especial-choropleths" id="toc-especial-choropleths" class="nav-link" data-scroll-target="#especial-choropleths">Especial choropleths</a></li>
+  </ul></li>
+  <li><a href="#sec-nulos" id="toc-sec-nulos" class="nav-link" data-scroll-target="#sec-nulos">Null vote rate</a></li>
+  <li><a href="#sec-top30" id="toc-sec-top30" class="nav-link" data-scroll-target="#sec-top30">Vote in 30 largest municipalities</a></li>
+  <li><a href="#sec-albo-groups" id="toc-sec-albo-groups" class="nav-link" data-scroll-target="#sec-albo-groups">Vote by Albó municipality category</a></li>
+  <li><a href="#sec-segunda-vuelta" id="toc-sec-segunda-vuelta" class="nav-link" data-scroll-target="#sec-segunda-vuelta">Second-round presidential results</a>
+  <ul class="collapse">
+  <li><a href="#second-round-choropleths" id="toc-second-round-choropleths" class="nav-link" data-scroll-target="#second-round-choropleths">Second-round choropleths</a></li>
+  <li><a href="#second-round-null-vote-rate" id="toc-second-round-null-vote-rate" class="nav-link" data-scroll-target="#second-round-null-vote-rate">Second-round null vote rate</a></li>
+  <li><a href="#second-round-top-30-municipalities" id="toc-second-round-top-30-municipalities" class="nav-link" data-scroll-target="#second-round-top-30-municipalities">Second-round top 30 municipalities</a></li>
+  <li><a href="#second-round-vote-by-albó-municipality-category" id="toc-second-round-vote-by-albó-municipality-category" class="nav-link" data-scroll-target="#second-round-vote-by-albó-municipality-category">Second-round vote by Albó municipality category</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bolivia 2025 General Election — Results by Geography</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>JCR Björk </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 15, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">Data preparation</h2>
+<section id="load-raw-election-data-and-rename-party-columns" class="level3">
+<h3 class="anchored" data-anchor-id="load-raw-election-data-and-rename-party-columns">Load raw election data and rename party columns</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Column rename map (OEP camelCase → snake_case)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>geo_renames <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">mesa_code   =</span> <span class="st">"CodigoMesa"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mesa_number =</span> <span class="st">"NumeroMesa"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">registered  =</span> <span class="st">"InscritosHabilitados"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">country_code =</span> <span class="st">"CodigoPais"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">country_name =</span> <span class="st">"NombrePais"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">dept_code   =</span> <span class="st">"CodigoDepartamento"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">dept_name   =</span> <span class="st">"NombreDepartamento"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">prov_code   =</span> <span class="st">"CodigoProvincia"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">prov_name   =</span> <span class="st">"NombreProvincia"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">mun_code    =</span> <span class="st">"CodigoSeccion"</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">mun_name    =</span> <span class="st">"NombreMunicipio"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">localidad_code =</span> <span class="st">"CodigoLocalidad"</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">localidad_name =</span> <span class="st">"NombreLocalidad"</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">recinto_code   =</span> <span class="st">"CodigoRecinto"</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">recinto_name   =</span> <span class="st">"NombreRecinto"</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>vote_renames <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">valid_votes =</span> <span class="st">"VotoValido"</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">blank_votes =</span> <span class="st">"VotoBlanco"</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">null_votes  =</span> <span class="st">"TotalVotoNulo"</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">votes_cast  =</span> <span class="st">"VotoEmitido"</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># --- First round (all three races) -------------------------------------------</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>raw_1v <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="st">"data-raw/EG2025_20250824_235619_5976286028509320003.csv"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">show_col_types =</span> <span class="cn">FALSE</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(NombrePais <span class="sc">==</span> <span class="st">"BOLIVIA"</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Ballot slot → party mapping (confirmed against OEP separata)</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>party_renames_1v <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">AP         =</span> <span class="st">"Voto1"</span>,</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">LyP_ADN    =</span> <span class="st">"Voto2"</span>,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">APB_SUMATE =</span> <span class="st">"Voto3"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">LIBRE      =</span> <span class="st">"Voto5"</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">FP         =</span> <span class="st">"Voto6"</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">MAS_IPSP   =</span> <span class="st">"Voto7"</span>,</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">UNIDAD     =</span> <span class="st">"Voto9"</span>,</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">PDC        =</span> <span class="st">"Voto10"</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>elections_1v <span class="ot">&lt;-</span> raw_1v <span class="sc">|&gt;</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="sc">!!!</span>party_renames_1v) <span class="sc">|&gt;</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">race =</span> Descripcion) <span class="sc">|&gt;</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="sc">!!!</span>geo_renames) <span class="sc">|&gt;</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="sc">!!!</span>vote_renames)</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>parties_main <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"AP"</span>, <span class="st">"LyP_ADN"</span>, <span class="st">"APB_SUMATE"</span>, <span class="st">"LIBRE"</span>, <span class="st">"FP"</span>, <span class="st">"MAS_IPSP"</span>, <span class="st">"UNIDAD"</span>, <span class="st">"PDC"</span>)</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>parties_especial <span class="ot">&lt;-</span> <span class="fu">c</span>(parties_main, <span class="st">"Voto11"</span>, <span class="st">"Voto12"</span>)</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Second round (presidential only) ----------------------------------------</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>raw_2v <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>  <span class="st">"data-raw/EG2025_2v_20251026_235911_6311285959951043675.csv"</span>,</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  <span class="at">show_col_types =</span> <span class="cn">FALSE</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(NombrePais <span class="sc">==</span> <span class="st">"BOLIVIA"</span>)</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>elections_2v <span class="ot">&lt;-</span> raw_2v <span class="sc">|&gt;</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="sc">!!!</span>geo_renames) <span class="sc">|&gt;</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="sc">!!!</span>vote_renames)</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>parties_2v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"PDC"</span>, <span class="st">"LIBRE"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="load-gadm-boundary-files-and-lookup-tables" class="level3">
+<h3 class="anchored" data-anchor-id="load-gadm-boundary-files-and-lookup-tables">Load GADM boundary files and lookup tables</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>muni_lookup <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/muni_id_lookup_table.rds"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>prov_lookup <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/prov_id_lookup_table.rds"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>gadm1 <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/gadm41_BOL_3.gpkg"</span>, <span class="at">layer =</span> <span class="st">"ADM_ADM_1"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(NAME_1, geom)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>gadm2 <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/gadm41_BOL_3.gpkg"</span>, <span class="at">layer =</span> <span class="st">"ADM_ADM_2"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(NAME_1, NAME_2, geom)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>gadm3 <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/gadm41_BOL_3.gpkg"</span>, <span class="at">layer =</span> <span class="st">"ADM_ADM_3"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(NAME_1, NAME_2, NAME_3, geom)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="build-oep-ine-gadm-crosswalk" class="level3">
+<h3 class="anchored" data-anchor-id="build-oep-ine-gadm-crosswalk">Build OEP → INE → GADM crosswalk</h3>
+<p>OEP geographic codes map directly to INE codes: <code>id_prov</code> = <code>sprintf("%02d%02d", dept, prov)</code> and <code>id_muni</code> = <code>sprintf("%02d%02d%02d", dept, prov, seccion)</code>. We use the pre-built lookup tables (<code>prov_id_lookup_table</code>, <code>muni_id_lookup_table</code>) to get the GADM name variants for spatial joins. TIOC/AIOC indigenous autonomies created after the GADM vintage will not match.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dept_to_gadm <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">dept_code =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">dept_gadm =</span> <span class="fu">c</span>(<span class="st">"Chuquisaca"</span>, <span class="st">"La Paz"</span>, <span class="st">"Cochabamba"</span>, <span class="st">"Oruro"</span>, <span class="st">"Potosí"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Tarija"</span>, <span class="st">"Santa Cruz"</span>, <span class="st">"Beni"</span>, <span class="st">"Pando"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>prov_to_gadm <span class="ot">&lt;-</span> prov_lookup <span class="sc">|&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id_prov, province_gadm) <span class="sc">|&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept_code =</span> <span class="fu">as.integer</span>(<span class="fu">substr</span>(id_prov, <span class="dv">1</span>, <span class="dv">2</span>)),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">prov_code =</span> <span class="fu">as.integer</span>(<span class="fu">substr</span>(id_prov, <span class="dv">3</span>, <span class="dv">4</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(dept_to_gadm, <span class="at">by =</span> <span class="st">"dept_code"</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>muni_to_gadm <span class="ot">&lt;-</span> muni_lookup <span class="sc">|&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id_muni, muni_gadm, department) <span class="sc">|&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dept_code =</span> <span class="fu">as.integer</span>(<span class="fu">substr</span>(id_muni, <span class="dv">1</span>, <span class="dv">2</span>)),</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">prov_code =</span> <span class="fu">as.integer</span>(<span class="fu">substr</span>(id_muni, <span class="dv">3</span>, <span class="dv">4</span>)),</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>         <span class="at">mun_code  =</span> <span class="fu">as.integer</span>(<span class="fu">substr</span>(id_muni, <span class="dv">5</span>, <span class="dv">6</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(dept_to_gadm, <span class="at">by =</span> <span class="st">"dept_code"</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Province lookup:"</span>, <span class="fu">nrow</span>(prov_to_gadm), <span class="st">"rows,"</span>,</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sum</span>(<span class="fu">is.na</span>(prov_to_gadm<span class="sc">$</span>province_gadm)), <span class="st">"missing GADM name</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Province lookup: 112 rows, 0 missing GADM name</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Municipality lookup:"</span>, <span class="fu">nrow</span>(muni_to_gadm), <span class="st">"rows,"</span>,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sum</span>(<span class="fu">is.na</span>(muni_to_gadm<span class="sc">$</span>muni_gadm)), <span class="st">"missing GADM name</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Municipality lookup: 341 rows, 2 missing GADM name</code></pre>
+</div>
+</div>
+</section>
+<section id="aggregation-functions" class="level3">
+<h3 class="anchored" data-anchor-id="aggregation-functions">Aggregation functions</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>aggregate_results <span class="ot">&lt;-</span> <span class="cf">function</span>(data, ..., parties) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(...) <span class="sc">|&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">mesas =</span> <span class="fu">n</span>(),</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">registered =</span> <span class="fu">sum</span>(registered),</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">votes_cast =</span> <span class="fu">sum</span>(votes_cast),</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">valid_votes =</span> <span class="fu">sum</span>(valid_votes),</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">null_votes =</span> <span class="fu">sum</span>(null_votes),</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">blank_votes =</span> <span class="fu">sum</span>(blank_votes),</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">across</span>(<span class="fu">all_of</span>(parties), sum),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">turnout_pct =</span> votes_cast <span class="sc">/</span> registered <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">null_pct =</span> null_votes <span class="sc">/</span> votes_cast <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">across</span>(<span class="fu">all_of</span>(parties), <span class="sc">~</span> . <span class="sc">/</span> valid_votes <span class="sc">*</span> <span class="dv">100</span>, <span class="at">.names =</span> <span class="st">"{.col}_pct"</span>)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+</section>
+<section id="sec-presidente" class="level2">
+<h2 class="anchored" data-anchor-id="sec-presidente">First-round presidential results</h2>
+<section id="department-level" class="level3">
+<h3 class="anchored" data-anchor-id="department-level">Department level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pres_1v <span class="ot">&lt;-</span> elections_1v <span class="sc">|&gt;</span> <span class="fu">filter</span>(race <span class="sc">==</span> <span class="st">"PRESIDENTE"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>pres_dept <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(pres_1v, dept_code, dept_name,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">parties =</span> parties_main)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>pres_dept <span class="sc">|&gt;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mesas, registered, turnout_pct, null_pct,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_main, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(registered))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 13
+  dept_name  mesas registered turnout_pct null_pct AP_pct LyP_ADN_pct
+  &lt;chr&gt;      &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;
+1 Santa Cruz  9115    2071967        87.7     13.5    5.3         0.9
+2 La Paz      9099    2047825        91.2     18      9.1         1.9
+3 Cochabamba  6346    1443013        89       33.3   12.6         1.5
+4 Potosí      2377     487029        90.1     25     10.9         2  
+5 Tarija      1814     394539        86.7     12.7    8.3         1.5
+6 Chuquisaca  1815     384825        86.8     19.3    8.4         1.5
+7 Oruro       1693     363225        91.1     18.4    8           2.1
+8 Beni        1373     296173        84.7     11.1    6.3         0.9
+9 Pando        394      78611        83.6     13.8    8.8         1.1
+# ℹ 6 more variables: APB_SUMATE_pct &lt;dbl&gt;, LIBRE_pct &lt;dbl&gt;, FP_pct &lt;dbl&gt;,
+#   MAS_IPSP_pct &lt;dbl&gt;, UNIDAD_pct &lt;dbl&gt;, PDC_pct &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="province-level" class="level3">
+<h3 class="anchored" data-anchor-id="province-level">Province level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pres_prov <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  pres_1v,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_main</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>pres_prov <span class="sc">|&gt;</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, prov_name, valid_votes,</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_main, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(dept_name, <span class="fu">desc</span>(valid_votes)) <span class="sc">|&gt;</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 11
+   dept_name  prov_name  valid_votes AP_pct LyP_ADN_pct APB_SUMATE_pct LIBRE_pct
+   &lt;chr&gt;      &lt;chr&gt;            &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+ 1 Beni       Cercado          73432    4.1         0.8           10.8      27.4
+ 2 Beni       Vaca Diez        70120    5.2         0.9           16.4      21.4
+ 3 Beni       General J…       34688    8.5         1.2            6.8      21.4
+ 4 Beni       Iténez            8995   10.5         0.7            4.3      39.5
+ 5 Beni       Yacuma            8253    7.7         0.7            5.1      27  
+ 6 Beni       Moxos             7649   17.3         1.4            6.9      19.5
+ 7 Beni       Marbán            6321   13.3         1.6            7.9      18.9
+ 8 Beni       Mamoré            4894    4.2         0.7            3.8      23.3
+ 9 Chuquisaca Oropeza         185746    5.2         1.2            5.4      36.4
+10 Chuquisaca Nor Cinti        15631   19.4         2.6            5.8      11.6
+11 Chuquisaca Hernando …       13524    8.4         1.9            6.1      26.3
+12 Chuquisaca Tomina            8846   18.2         2.2           10.3      13.5
+13 Chuquisaca Luis Calvo        7538   12.8         1.6            7.3      25.9
+14 Chuquisaca Sud Cinti         6336   20.9         2.9            7.4      12.7
+15 Chuquisaca Zudáñez           5881   28.1         2.6            3.8       9.6
+16 Chuquisaca Yamparáez         4378   19.3         2.5            4.8       9.5
+17 Chuquisaca Azurduy           4139   17.2         3              6.2      12.5
+18 Chuquisaca Belisario…        3752   13.3         2.1            7.7      13.2
+19 Cochabamba Cercado         394814    7.9         1.3           17.4      35.2
+20 Cochabamba Quillacol…      202038   10.8         1.6           16        25.7
+# ℹ 4 more variables: FP_pct &lt;dbl&gt;, MAS_IPSP_pct &lt;dbl&gt;, UNIDAD_pct &lt;dbl&gt;,
+#   PDC_pct &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="municipality-level" class="level3">
+<h3 class="anchored" data-anchor-id="municipality-level">Municipality level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pres_mun <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  pres_1v,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  mun_code, mun_name,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_main</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>pres_mun <span class="sc">|&gt;</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mun_name, valid_votes,</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_main, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(valid_votes)) <span class="sc">|&gt;</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 11
+   dept_name  mun_name   valid_votes AP_pct LyP_ADN_pct APB_SUMATE_pct LIBRE_pct
+   &lt;chr&gt;      &lt;chr&gt;            &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+ 1 Santa Cruz Santa Cru…      908038    4           0.7            4.7      43.5
+ 2 La Paz     El Alto         570493    7.5         2.2            2.8      10.9
+ 3 La Paz     Nuestra S…      537444    5.3         1.6            3.6      28.2
+ 4 Cochabamba Cochabamba      394814    7.9         1.3           17.4      35.2
+ 5 Oruro      Oruro           189564    5.5         2              5.5      29.8
+ 6 Chuquisaca Sucre           180602    4.6         1.2            5.4      37.1
+ 7 Tarija     Tarija          142837    5.5         1.5            5.2      23.5
+ 8 Potosí     Potosí          136291    4.4         1.5            5.4      35.6
+ 9 Cochabamba Sacaba          102104   12.9         1.6           14.7      28.2
+10 Cochabamba Quillacol…       86823   10.1         1.5           16.6      25.3
+11 Santa Cruz Warnes           77703    6.2         1              5.5      28.4
+12 Beni       Trinidad         71488    3.8         0.7           10.8      27.6
+13 Santa Cruz La Guardia       68931    6.4         1.1            4.9      31.1
+14 Santa Cruz Montero          63139    5.7         1              4.9      26.4
+15 Beni       Riberalta        49465    5.5         1.1           20.4      18.2
+16 Tarija     Yacuiba          48546   10.7         1.4            5.8      21.9
+17 La Paz     Viacha           47532    9.6         2.2            2.9       7.1
+18 Santa Cruz Cotoca           41953    5.7         0.8            4.9      27.7
+19 Cochabamba Colcapirh…       35658    7.7         1.3           17.4      32.6
+20 Cochabamba Tiquipaya        33604   10.5         1.5           17.4      32  
+# ℹ 4 more variables: FP_pct &lt;dbl&gt;, MAS_IPSP_pct &lt;dbl&gt;, UNIDAD_pct &lt;dbl&gt;,
+#   PDC_pct &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="presidential-choropleths" class="level3">
+<h3 class="anchored" data-anchor-id="presidential-choropleths">Presidential choropleths</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Choropleth helpers -------------------------------------------------------</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>party_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">AP =</span> <span class="st">"#3B8CC4"</span>, <span class="at">LyP_ADN =</span> <span class="st">"#1A1A1A"</span>, <span class="at">APB_SUMATE =</span> <span class="st">"#6B2D8B"</span>,</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">LIBRE =</span> <span class="st">"#D42E2E"</span>, <span class="at">FP =</span> <span class="st">"#A8DCF0"</span>, <span class="at">MAS_IPSP =</span> <span class="st">"#1B3D8F"</span>,</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">UNIDAD =</span> <span class="st">"#E8A838"</span>, <span class="at">PDC =</span> <span class="st">"#2E7D7B"</span>,</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Voto11 =</span> <span class="st">"#7B5B3A"</span>, <span class="at">Voto12 =</span> <span class="st">"#5A7B3A"</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>party_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">AP =</span> <span class="st">"AP"</span>, <span class="at">LyP_ADN =</span> <span class="st">"LyP ADN"</span>, <span class="at">APB_SUMATE =</span> <span class="st">"APB Súmate"</span>,</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">LIBRE =</span> <span class="st">"LIBRE"</span>, <span class="at">FP =</span> <span class="st">"FP"</span>, <span class="at">MAS_IPSP =</span> <span class="st">"MAS-IPSP"</span>,</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">UNIDAD =</span> <span class="st">"UNIDAD"</span>, <span class="at">PDC =</span> <span class="st">"PDC"</span>,</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Voto11 =</span> <span class="st">"Voto 11"</span>, <span class="at">Voto12 =</span> <span class="st">"Voto 12"</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>make_choropleth <span class="ot">&lt;-</span> <span class="cf">function</span>(geo_sf, data, join_cols, pct_col, title,</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>                            <span class="at">fill_color =</span> <span class="st">"#2E7D7B"</span>) {</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  df_joined <span class="ot">&lt;-</span> geo_sf <span class="sc">|&gt;</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(data, <span class="at">by =</span> join_cols)</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(df_joined) <span class="sc">+</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">fill =</span> .data[[pct_col]]), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">linewidth =</span> <span class="fl">0.15</span>) <span class="sc">+</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> fill_color,</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>                        <span class="at">name =</span> <span class="st">"% vote share"</span>, <span class="at">na.value =</span> <span class="st">"grey85"</span>,</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>                        <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="cn">NA</span>)) <span class="sc">+</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> title) <span class="sc">+</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_void</span>(<span class="at">base_size =</span> <span class="dv">9</span>) <span class="sc">+</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>          <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">1.2</span>, <span class="st">"cm"</span>),</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">10</span>))</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>choropleth_panel <span class="ot">&lt;-</span> <span class="cf">function</span>(agg_dept, agg_prov, agg_mun,</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>                             parties,</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>                             <span class="at">race_label =</span> <span class="st">"Presidential"</span>) {</span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>  dept_joined <span class="ot">&lt;-</span> agg_dept <span class="sc">|&gt;</span></span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(dept_to_gadm, <span class="at">by =</span> <span class="st">"dept_code"</span>)</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>  prov_joined <span class="ot">&lt;-</span> agg_prov <span class="sc">|&gt;</span></span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(prov_to_gadm, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span>, <span class="st">"prov_code"</span>))</span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>  mun_joined <span class="ot">&lt;-</span> agg_mun <span class="sc">|&gt;</span></span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(muni_to_gadm, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span>, <span class="st">"prov_code"</span>, <span class="st">"mun_code"</span>))</span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>  plots <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (party <span class="cf">in</span> parties) {</span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>    pct <span class="ot">&lt;-</span> <span class="fu">paste0</span>(party, <span class="st">"_pct"</span>)</span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>    color <span class="ot">&lt;-</span> party_colors[[party]] <span class="sc">%||%</span> <span class="st">"#555555"</span></span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>    label <span class="ot">&lt;-</span> party_labels[[party]] <span class="sc">%||%</span> party</span>
+<span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Shared scale: 0 to max across all three geographic levels</span></span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a>    pct_max <span class="ot">&lt;-</span> <span class="fu">max</span>(</span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>      <span class="fu">c</span>(dept_joined[[pct]], prov_joined[[pct]], mun_joined[[pct]]),</span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a>      <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a>    shared_limits <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, pct_max)</span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-59"><a href="#cb15-59" aria-hidden="true" tabindex="-1"></a>    p_dept <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb15-60"><a href="#cb15-60" aria-hidden="true" tabindex="-1"></a>      gadm1, dept_joined,</span>
+<span id="cb15-61"><a href="#cb15-61" aria-hidden="true" tabindex="-1"></a>      <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>),</span>
+<span id="cb15-62"><a href="#cb15-62" aria-hidden="true" tabindex="-1"></a>      pct, <span class="fu">paste0</span>(label, <span class="st">" — Department"</span>), color</span>
+<span id="cb15-63"><a href="#cb15-63" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> color, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb15-64"><a href="#cb15-64" aria-hidden="true" tabindex="-1"></a>                            <span class="at">na.value =</span> <span class="st">"grey85"</span>, <span class="at">limits =</span> shared_limits)</span>
+<span id="cb15-65"><a href="#cb15-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-66"><a href="#cb15-66" aria-hidden="true" tabindex="-1"></a>    p_prov <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb15-67"><a href="#cb15-67" aria-hidden="true" tabindex="-1"></a>      gadm2, prov_joined,</span>
+<span id="cb15-68"><a href="#cb15-68" aria-hidden="true" tabindex="-1"></a>      <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>, <span class="st">"NAME_2"</span> <span class="ot">=</span> <span class="st">"province_gadm"</span>),</span>
+<span id="cb15-69"><a href="#cb15-69" aria-hidden="true" tabindex="-1"></a>      pct, <span class="fu">paste0</span>(label, <span class="st">" — Province"</span>), color</span>
+<span id="cb15-70"><a href="#cb15-70" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> color, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb15-71"><a href="#cb15-71" aria-hidden="true" tabindex="-1"></a>                            <span class="at">na.value =</span> <span class="st">"grey85"</span>, <span class="at">limits =</span> shared_limits)</span>
+<span id="cb15-72"><a href="#cb15-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-73"><a href="#cb15-73" aria-hidden="true" tabindex="-1"></a>    p_mun <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb15-74"><a href="#cb15-74" aria-hidden="true" tabindex="-1"></a>      gadm3, mun_joined,</span>
+<span id="cb15-75"><a href="#cb15-75" aria-hidden="true" tabindex="-1"></a>      <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>, <span class="st">"NAME_3"</span> <span class="ot">=</span> <span class="st">"muni_gadm"</span>),</span>
+<span id="cb15-76"><a href="#cb15-76" aria-hidden="true" tabindex="-1"></a>      pct, <span class="fu">paste0</span>(label, <span class="st">" — Municipality"</span>), color</span>
+<span id="cb15-77"><a href="#cb15-77" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> color, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb15-78"><a href="#cb15-78" aria-hidden="true" tabindex="-1"></a>                            <span class="at">na.value =</span> <span class="st">"grey85"</span>, <span class="at">limits =</span> shared_limits)</span>
+<span id="cb15-79"><a href="#cb15-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-80"><a href="#cb15-80" aria-hidden="true" tabindex="-1"></a>    plots[[party]] <span class="ot">&lt;-</span> p_dept <span class="sc">+</span> p_prov <span class="sc">+</span> p_mun <span class="sc">+</span></span>
+<span id="cb15-81"><a href="#cb15-81" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plot_layout</span>(<span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">widths =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>))</span>
+<span id="cb15-82"><a href="#cb15-82" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb15-83"><a href="#cb15-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-84"><a href="#cb15-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">wrap_plots</span>(plots, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb15-85"><a href="#cb15-85" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot_annotation</span>(<span class="at">title =</span> <span class="fu">paste</span>(race_label, <span class="st">"vote share by party"</span>),</span>
+<span id="cb15-86"><a href="#cb15-86" aria-hidden="true" tabindex="-1"></a>                    <span class="at">theme =</span> <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>)))</span>
+<span id="cb15-87"><a href="#cb15-87" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-88"><a href="#cb15-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-89"><a href="#cb15-89" aria-hidden="true" tabindex="-1"></a><span class="fu">choropleth_panel</span>(pres_dept, pres_prov, pres_mun,</span>
+<span id="cb15-90"><a href="#cb15-90" aria-hidden="true" tabindex="-1"></a>                 parties_main, <span class="st">"Presidential (first round)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/pres-choropleths-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-uninominal" class="level2">
+<h2 class="anchored" data-anchor-id="sec-uninominal">Diputado Uninominal results</h2>
+<section id="department-level-1" class="level3">
+<h3 class="anchored" data-anchor-id="department-level-1">Department level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>uni <span class="ot">&lt;-</span> elections_1v <span class="sc">|&gt;</span> <span class="fu">filter</span>(race <span class="sc">==</span> <span class="st">"DIPUTADO CIRCUNSCRIPCIÓN UNINOMINAL"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>uni_dept <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(uni, dept_code, dept_name,</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parties =</span> parties_main)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>uni_dept <span class="sc">|&gt;</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mesas, registered, turnout_pct, null_pct,</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_main, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(registered))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 13
+  dept_name  mesas registered turnout_pct null_pct AP_pct LyP_ADN_pct
+  &lt;chr&gt;      &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;
+1 La Paz      8975    2028188        91.2     17.7    8.1         2  
+2 Santa Cruz  8866    2027462        87.6     12      4.4         2.3
+3 Cochabamba  6326    1440069        89       32.4   11.9         1.6
+4 Potosí      2377     487029        90.1     23.2   10.8         2.8
+5 Tarija      1770     388244        86.8     11.3    8.6         1.7
+6 Chuquisaca  1815     384825        86.8     17.6    8.7         1.7
+7 Oruro       1685     362051        91.1     18.4    8.3         1.7
+8 Beni        1268     280179        84.5      9      6.3         1.2
+9 Pando        361      74289        83.4     12.1    9.3         1.8
+# ℹ 6 more variables: APB_SUMATE_pct &lt;dbl&gt;, LIBRE_pct &lt;dbl&gt;, FP_pct &lt;dbl&gt;,
+#   MAS_IPSP_pct &lt;dbl&gt;, UNIDAD_pct &lt;dbl&gt;, PDC_pct &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="province-level-1" class="level3">
+<h3 class="anchored" data-anchor-id="province-level-1">Province level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>uni_prov <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  uni,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_main</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="municipality-level-1" class="level3">
+<h3 class="anchored" data-anchor-id="municipality-level-1">Municipality level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>uni_mun <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  uni,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  mun_code, mun_name,</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_main</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>uni_mun <span class="sc">|&gt;</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mun_name, valid_votes,</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_main, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(valid_votes)) <span class="sc">|&gt;</span></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 11
+   dept_name  mun_name   valid_votes AP_pct LyP_ADN_pct APB_SUMATE_pct LIBRE_pct
+   &lt;chr&gt;      &lt;chr&gt;            &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+ 1 Santa Cruz Santa Cru…      807050    3.6         1.9            4.8      42.6
+ 2 La Paz     Nuestra S…      473814    5.5         2              6.3      24.2
+ 3 La Paz     El Alto         461351    6.5         2.4            6.2      12.8
+ 4 Cochabamba Cochabamba      352780    7.7         1.3           20.2      29.5
+ 5 Oruro      Oruro           161467    5           1.7            8.5      24.6
+ 6 Chuquisaca Sucre           154156    5.4         1.3           10.3      31.5
+ 7 Tarija     Tarija          122067    5.3         2.4            7.6      29.6
+ 8 Potosí     Potosí          113933    2.3         2              5.4      32.2
+ 9 Cochabamba Sacaba           89675   12.6         1.5           18.4      24.1
+10 Cochabamba Quillacol…       73254   11.7         1.7           22.2      24.1
+11 Santa Cruz Warnes           66088    5.3         3.5            7.7      35.3
+12 Beni       Trinidad         61067    6.3         0.6           12.6      34.2
+13 Santa Cruz La Guardia       59746    6.5         8.7            5.6      29.9
+14 Santa Cruz Montero          55048    5.1         0.9            4.7      28.7
+15 Tarija     Yacuiba          40584   10.6         0.9            5.7      26.2
+16 Beni       Riberalta        38825    6.2         3.2           18.3      21  
+17 La Paz     Viacha           38363    6.1         1.7            4.5      15  
+18 Santa Cruz Cotoca           35809    6.4         2.1            5.1      27.3
+19 Cochabamba Colcapirh…       31734    8.2         1.3           22.1      28.4
+20 Cochabamba Tiquipaya        29062   11.7         1.5           23.4      29.7
+# ℹ 4 more variables: FP_pct &lt;dbl&gt;, MAS_IPSP_pct &lt;dbl&gt;, UNIDAD_pct &lt;dbl&gt;,
+#   PDC_pct &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="uninominal-choropleths" class="level3">
+<h3 class="anchored" data-anchor-id="uninominal-choropleths">Uninominal choropleths</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">choropleth_panel</span>(uni_dept, uni_prov, uni_mun,</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>                 parties_main, <span class="st">"Diputado Uninominal"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/uni-choropleths-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-especial" class="level2">
+<h2 class="anchored" data-anchor-id="sec-especial">Diputado Circunscripción Especial results</h2>
+<p>The 7 indigenous circunscripciones especiales cover specific regions. Voto11 and Voto12 are additional parties that only contest this race.</p>
+<section id="department-level-2" class="level3">
+<h3 class="anchored" data-anchor-id="department-level-2">Department level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>esp <span class="ot">&lt;-</span> elections_1v <span class="sc">|&gt;</span> <span class="fu">filter</span>(race <span class="sc">==</span> <span class="st">"DIPUTADO CIRCUNSCRIPCIÓN ESPECIAL"</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>esp_dept <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(esp, dept_code, dept_name,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parties =</span> parties_especial)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>esp_dept <span class="sc">|&gt;</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mesas, valid_votes,</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_especial, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(valid_votes))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 13
+  dept_name mesas valid_votes AP_pct LyP_ADN_pct APB_SUMATE_pct LIBRE_pct FP_pct
+  &lt;chr&gt;     &lt;dbl&gt;       &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;     &lt;dbl&gt;  &lt;dbl&gt;
+1 Santa Cr…   249       20109   12.7         1.5            3.4      25      4.6
+2 La Paz      124        9222   13.1         1.3           14.1       6.4    1.3
+3 Beni        105        5932   25.5         2              5.3      29.4    1.5
+4 Tarija       44        3171   14.8         1.1            1.6      16.9    0.7
+5 Pando        33        1683   21.9         2.3            0        15.9    9.2
+6 Cochabam…    20        1075   21.1         2.3            0         8.9    1.1
+7 Oruro         8         642   45           1.9            0         0     29.1
+# ℹ 5 more variables: MAS_IPSP_pct &lt;dbl&gt;, UNIDAD_pct &lt;dbl&gt;, PDC_pct &lt;dbl&gt;,
+#   Voto11_pct &lt;dbl&gt;, Voto12_pct &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="province-level-2" class="level3">
+<h3 class="anchored" data-anchor-id="province-level-2">Province level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>esp_prov <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  esp,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_especial</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="municipality-level-2" class="level3">
+<h3 class="anchored" data-anchor-id="municipality-level-2">Municipality level</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>esp_mun <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  esp,</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  mun_code, mun_name,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_especial</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="especial-choropleths" class="level3">
+<h3 class="anchored" data-anchor-id="especial-choropleths">Especial choropleths</h3>
+<p>The especial race only covers municipalities within the 7 indigenous circunscripciones — most of the country will appear grey.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">choropleth_panel</span>(esp_dept, esp_prov, esp_mun,</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                 parties_especial, <span class="st">"Diputado Circunscripción Especial"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/esp-choropleths-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-nulos" class="level2">
+<h2 class="anchored" data-anchor-id="sec-nulos">Null vote rate</h2>
+<p>The null vote rate was remarkably high nationally (19.9%), driven by Cochabamba (33.3%). These maps show the geographic pattern.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>nulo_dept <span class="ot">&lt;-</span> pres_dept <span class="sc">|&gt;</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(dept_to_gadm, <span class="at">by =</span> <span class="st">"dept_code"</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>nulo_prov <span class="ot">&lt;-</span> pres_prov <span class="sc">|&gt;</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(prov_to_gadm, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span>, <span class="st">"prov_code"</span>))</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>nulo_mun <span class="ot">&lt;-</span> pres_mun <span class="sc">|&gt;</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(muni_to_gadm, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span>, <span class="st">"prov_code"</span>, <span class="st">"mun_code"</span>))</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>p_nulo_dept <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  gadm1, nulo_dept,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>),</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"null_pct"</span>, <span class="st">"Null vote % — Department"</span>, <span class="st">"#8B0000"</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"#8B0000"</span>, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>                        <span class="at">na.value =</span> <span class="st">"grey85"</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>p_nulo_prov <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>  gadm2, nulo_prov,</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>, <span class="st">"NAME_2"</span> <span class="ot">=</span> <span class="st">"province_gadm"</span>),</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"null_pct"</span>, <span class="st">"Null vote % — Province"</span>, <span class="st">"#8B0000"</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"#8B0000"</span>, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>                        <span class="at">na.value =</span> <span class="st">"grey85"</span>)</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>p_nulo_mun <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a>  gadm3, nulo_mun,</span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>, <span class="st">"NAME_3"</span> <span class="ot">=</span> <span class="st">"muni_gadm"</span>),</span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"null_pct"</span>, <span class="st">"Null vote % — Municipality"</span>, <span class="st">"#8B0000"</span></span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"#8B0000"</span>, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a>                        <span class="at">na.value =</span> <span class="st">"grey85"</span>)</span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a>p_nulo_dept <span class="sc">+</span> p_nulo_prov <span class="sc">+</span> p_nulo_mun <span class="sc">+</span></span>
+<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_layout</span>(<span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_annotation</span>(<span class="at">title =</span> <span class="st">"Presidential null vote rate (first round)"</span>,</span>
+<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a>                  <span class="at">theme =</span> <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/nulo-choropleths-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-top30" class="level2">
+<h2 class="anchored" data-anchor-id="sec-top30">Vote in 30 largest municipalities</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Name mapping: display name → OEP election data name</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>top30_display <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Santa Cruz de la Sierra"</span>, <span class="st">"El Alto"</span>, <span class="st">"La Paz"</span>, <span class="st">"Cochabamba"</span>,</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Oruro"</span>, <span class="st">"Sucre"</span>, <span class="st">"Tarija"</span>, <span class="st">"Sacaba"</span>, <span class="st">"Potosí"</span>, <span class="st">"Quillacollo"</span>,</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Warnes"</span>, <span class="st">"La Guardia"</span>, <span class="st">"Trinidad"</span>, <span class="st">"Montero"</span>, <span class="st">"Viacha"</span>, <span class="st">"Riberalta"</span>,</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Cotoca"</span>, <span class="st">"Yacuiba"</span>, <span class="st">"Villa Tunari"</span>, <span class="st">"San Ignacio de Velasco"</span>,</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Colcapirhua"</span>, <span class="st">"Puerto Villarroel"</span>, <span class="st">"Tiquipaya"</span>, <span class="st">"Caranavi"</span>,</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Yapacaní"</span>, <span class="st">"Vinto"</span>, <span class="st">"Sipesipe"</span>, <span class="st">"El Torno"</span>, <span class="st">"Cobija"</span>, <span class="st">"Pailón"</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>oep_name_map <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Santa Cruz de la Sierra"</span> <span class="ot">=</span> <span class="st">"Santa Cruz de La Sierra"</span>,</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"La Paz"</span> <span class="ot">=</span> <span class="st">"Nuestra Señora de La Paz"</span>,</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"San Ignacio de Velasco"</span> <span class="ot">=</span> <span class="st">"San Ignacio"</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>top30_oep <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(top30_display <span class="sc">%in%</span> <span class="fu">names</span>(oep_name_map),</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>                    oep_name_map[top30_display],</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>                    top30_display)</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>top30_dept <span class="ot">&lt;-</span> pres_mun <span class="sc">|&gt;</span></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(mun_name <span class="sc">%in%</span> top30_oep) <span class="sc">|&gt;</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Disambiguate San Ignacio: de Velasco is in Santa Cruz (dept 7)</span></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>(mun_name <span class="sc">==</span> <span class="st">"San Ignacio"</span> <span class="sc">&amp;</span> dept_code <span class="sc">==</span> <span class="dv">8</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_code, dept_name, mun_name) <span class="sc">|&gt;</span></span>
+<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">display_name =</span> <span class="fu">names</span>(oep_name_map)[<span class="fu">match</span>(mun_name, oep_name_map)],</span>
+<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a>         <span class="at">display_name =</span> <span class="fu">coalesce</span>(display_name, mun_name))</span>
+<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a>top30_ordered <span class="ot">&lt;-</span> top30_dept <span class="sc">|&gt;</span></span>
+<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">orig_pos =</span> <span class="fu">match</span>(display_name, top30_display)) <span class="sc">|&gt;</span></span>
+<span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(dept_code, orig_pos)</span>
+<span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-33"><a href="#cb28-33" aria-hidden="true" tabindex="-1"></a>group1_names <span class="ot">&lt;-</span> top30_ordered<span class="sc">$</span>mun_name[<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>]</span>
+<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a>group2_names <span class="ot">&lt;-</span> top30_ordered<span class="sc">$</span>mun_name[<span class="dv">16</span><span class="sc">:</span><span class="dv">30</span>]</span>
+<span id="cb28-35"><a href="#cb28-35" aria-hidden="true" tabindex="-1"></a>group1_display <span class="ot">&lt;-</span> top30_ordered<span class="sc">$</span>display_name[<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>]</span>
+<span id="cb28-36"><a href="#cb28-36" aria-hidden="true" tabindex="-1"></a>group2_display <span class="ot">&lt;-</span> top30_ordered<span class="sc">$</span>display_name[<span class="dv">16</span><span class="sc">:</span><span class="dv">30</span>]</span>
+<span id="cb28-37"><a href="#cb28-37" aria-hidden="true" tabindex="-1"></a>group1_depts <span class="ot">&lt;-</span> top30_ordered<span class="sc">$</span>dept_name[<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>]</span>
+<span id="cb28-38"><a href="#cb28-38" aria-hidden="true" tabindex="-1"></a>group2_depts <span class="ot">&lt;-</span> top30_ordered<span class="sc">$</span>dept_name[<span class="dv">16</span><span class="sc">:</span><span class="dv">30</span>]</span>
+<span id="cb28-39"><a href="#cb28-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-40"><a href="#cb28-40" aria-hidden="true" tabindex="-1"></a>pres_top30 <span class="ot">&lt;-</span> pres_mun <span class="sc">|&gt;</span></span>
+<span id="cb28-41"><a href="#cb28-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(mun_name <span class="sc">%in%</span> top30_oep) <span class="sc">|&gt;</span></span>
+<span id="cb28-42"><a href="#cb28-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>(mun_name <span class="sc">==</span> <span class="st">"San Ignacio"</span> <span class="sc">&amp;</span> dept_code <span class="sc">==</span> <span class="dv">8</span>))</span>
+<span id="cb28-43"><a href="#cb28-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-44"><a href="#cb28-44" aria-hidden="true" tabindex="-1"></a>cat_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb28-45"><a href="#cb28-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setNames</span>(party_colors[parties_main], party_labels[parties_main]),</span>
+<span id="cb28-46"><a href="#cb28-46" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Blank"</span> <span class="ot">=</span> <span class="st">"grey70"</span>, <span class="st">"Null"</span> <span class="ot">=</span> <span class="st">"grey40"</span></span>
+<span id="cb28-47"><a href="#cb28-47" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-49"><a href="#cb28-49" aria-hidden="true" tabindex="-1"></a>make_top30_chart <span class="ot">&lt;-</span> <span class="cf">function</span>(data, oep_names, display_names, dept_names,</span>
+<span id="cb28-50"><a href="#cb28-50" aria-hidden="true" tabindex="-1"></a>                             parties, subtitle) {</span>
+<span id="cb28-51"><a href="#cb28-51" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> data <span class="sc">|&gt;</span></span>
+<span id="cb28-52"><a href="#cb28-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(mun_name <span class="sc">%in%</span> oep_names) <span class="sc">|&gt;</span></span>
+<span id="cb28-53"><a href="#cb28-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(<span class="fu">all_of</span>(parties), null_votes, blank_votes),</span>
+<span id="cb28-54"><a href="#cb28-54" aria-hidden="true" tabindex="-1"></a>                 <span class="at">names_to =</span> <span class="st">"category"</span>, <span class="at">values_to =</span> <span class="st">"votes"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-55"><a href="#cb28-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">pct =</span> votes <span class="sc">/</span> votes_cast <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-56"><a href="#cb28-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb28-57"><a href="#cb28-57" aria-hidden="true" tabindex="-1"></a>      <span class="at">category =</span> <span class="fu">recode</span>(category, <span class="sc">!!!</span>party_labels,</span>
+<span id="cb28-58"><a href="#cb28-58" aria-hidden="true" tabindex="-1"></a>                        <span class="at">null_votes =</span> <span class="st">"Null"</span>, <span class="at">blank_votes =</span> <span class="st">"Blank"</span>),</span>
+<span id="cb28-59"><a href="#cb28-59" aria-hidden="true" tabindex="-1"></a>      <span class="at">category =</span> <span class="fu">factor</span>(category,</span>
+<span id="cb28-60"><a href="#cb28-60" aria-hidden="true" tabindex="-1"></a>                        <span class="at">levels =</span> <span class="fu">c</span>(<span class="fu">rev</span>(party_labels[parties]), <span class="st">"Blank"</span>, <span class="st">"Null"</span>)),</span>
+<span id="cb28-61"><a href="#cb28-61" aria-hidden="true" tabindex="-1"></a>      <span class="at">display_name =</span> <span class="fu">names</span>(oep_name_map)[<span class="fu">match</span>(mun_name, oep_name_map)],</span>
+<span id="cb28-62"><a href="#cb28-62" aria-hidden="true" tabindex="-1"></a>      <span class="at">display_name =</span> <span class="fu">coalesce</span>(display_name, mun_name)</span>
+<span id="cb28-63"><a href="#cb28-63" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb28-64"><a href="#cb28-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-65"><a href="#cb28-65" aria-hidden="true" tabindex="-1"></a>  label_lookup <span class="ot">&lt;-</span> <span class="fu">setNames</span>(</span>
+<span id="cb28-66"><a href="#cb28-66" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(display_names, <span class="st">" ("</span>, dept_names, <span class="st">")"</span>),</span>
+<span id="cb28-67"><a href="#cb28-67" aria-hidden="true" tabindex="-1"></a>    display_names</span>
+<span id="cb28-68"><a href="#cb28-68" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb28-69"><a href="#cb28-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-70"><a href="#cb28-70" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span></span>
+<span id="cb28-71"><a href="#cb28-71" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">display_label =</span> label_lookup[display_name],</span>
+<span id="cb28-72"><a href="#cb28-72" aria-hidden="true" tabindex="-1"></a>           <span class="at">display_label =</span> <span class="fu">factor</span>(display_label, <span class="at">levels =</span> <span class="fu">rev</span>(label_lookup)))</span>
+<span id="cb28-73"><a href="#cb28-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-74"><a href="#cb28-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> pct, <span class="at">y =</span> display_label, <span class="at">fill =</span> category)) <span class="sc">+</span></span>
+<span id="cb28-75"><a href="#cb28-75" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"stack"</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb28-76"><a href="#cb28-76" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cat_colors, <span class="at">name =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb28-77"><a href="#cb28-77" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> \(x) <span class="fu">paste0</span>(x, <span class="st">"%"</span>)) <span class="sc">+</span></span>
+<span id="cb28-78"><a href="#cb28-78" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"% of votes cast"</span>, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">subtitle =</span> subtitle) <span class="sc">+</span></span>
+<span id="cb28-79"><a href="#cb28-79" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb28-80"><a href="#cb28-80" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"right"</span>)</span>
+<span id="cb28-81"><a href="#cb28-81" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make_top30_chart</span>(pres_top30, group1_names, group1_display, group1_depts,</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>                 parties_main, <span class="st">"Municipalities 1–15 (sorted by department)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/top30-chart1-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make_top30_chart</span>(pres_top30, group2_names, group2_display, group2_depts,</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>                 parties_main, <span class="st">"Municipalities 16–30 (sorted by department)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/top30-chart2-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-albo-groups" class="level2">
+<h2 class="anchored" data-anchor-id="sec-albo-groups">Vote by Albó municipality category</h2>
+<p>Municipalities are classified A through I based on their CEL (Condición Étnico-Lingüística) profile from the 2024 census, following Albó &amp; Romero’s framework as implemented in <code>albo-restudy-2024.qmd</code>. Category A represents the most strongly indigenous-language municipalities; category I the least.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>cel_geo <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"../bolivia-data/Censo 2024/base_datos_csv_2024/cel_geo.rds"</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>albo_groups <span class="ot">&lt;-</span> cel_geo <span class="sc">|&gt;</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(municipality), <span class="fu">is.na</span>(urban_rural)) <span class="sc">|&gt;</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(department, province, municipality, cel_2plus, cel_4plus, cel_5plus) <span class="sc">|&gt;</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">albo_group =</span> <span class="fu">case_when</span>(</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;=</span> <span class="dv">90</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;=</span> <span class="dv">90</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;=</span> <span class="dv">90</span> <span class="sc">~</span> <span class="st">"A"</span>,</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;</span>  <span class="dv">80</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;</span>  <span class="dv">90</span> <span class="sc">~</span> <span class="st">"B"</span>,</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;</span>  <span class="dv">50</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">~</span> <span class="st">"C"</span>,</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>      cel_5plus <span class="sc">&gt;</span>  <span class="dv">33</span> <span class="sc">&amp;</span> cel_4plus <span class="sc">&gt;</span>  <span class="dv">50</span> <span class="sc">&amp;</span> cel_2plus <span class="sc">&gt;</span>  <span class="dv">67</span> <span class="sc">~</span> <span class="st">"D"</span>,</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">75</span>                                      <span class="sc">~</span> <span class="st">"E"</span>,</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">50</span>                                      <span class="sc">~</span> <span class="st">"F"</span>,</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">33</span>                                      <span class="sc">~</span> <span class="st">"G"</span>,</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>      cel_2plus <span class="sc">&gt;</span>  <span class="dv">10</span>                                      <span class="sc">~</span> <span class="st">"H"</span>,</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>                                                 <span class="sc">~</span> <span class="st">"I"</span></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>pres_by_albo <span class="ot">&lt;-</span> elections_1v <span class="sc">|&gt;</span></span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(race <span class="sc">==</span> <span class="st">"PRESIDENTE"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(albo_groups <span class="sc">|&gt;</span> <span class="fu">select</span>(department, province, municipality, albo_group),</span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span> <span class="ot">=</span> <span class="st">"department"</span>,</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"prov_code"</span> <span class="ot">=</span> <span class="st">"province"</span>,</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"mun_code"</span> <span class="ot">=</span> <span class="st">"municipality"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(albo_group)) <span class="sc">|&gt;</span></span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(albo_group) <span class="sc">|&gt;</span></span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(parties_main), sum),</span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">null_votes =</span> <span class="fu">sum</span>(null_votes),</span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">blank_votes =</span> <span class="fu">sum</span>(blank_votes),</span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">votes_cast =</span> <span class="fu">sum</span>(votes_cast),</span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-36"><a href="#cb31-36" aria-hidden="true" tabindex="-1"></a>pres_albo_long <span class="ot">&lt;-</span> pres_by_albo <span class="sc">|&gt;</span></span>
+<span id="cb31-37"><a href="#cb31-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(<span class="fu">all_of</span>(parties_main), null_votes, blank_votes),</span>
+<span id="cb31-38"><a href="#cb31-38" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"category"</span>, <span class="at">values_to =</span> <span class="st">"votes"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb31-39"><a href="#cb31-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> votes <span class="sc">/</span> votes_cast <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span></span>
+<span id="cb31-40"><a href="#cb31-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb31-41"><a href="#cb31-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">category =</span> <span class="fu">recode</span>(category, <span class="sc">!!!</span>party_labels,</span>
+<span id="cb31-42"><a href="#cb31-42" aria-hidden="true" tabindex="-1"></a>                      <span class="at">null_votes =</span> <span class="st">"Null"</span>, <span class="at">blank_votes =</span> <span class="st">"Blank"</span>),</span>
+<span id="cb31-43"><a href="#cb31-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">category =</span> <span class="fu">factor</span>(category,</span>
+<span id="cb31-44"><a href="#cb31-44" aria-hidden="true" tabindex="-1"></a>                      <span class="at">levels =</span> <span class="fu">c</span>(<span class="fu">rev</span>(party_labels[parties_main]), <span class="st">"Blank"</span>, <span class="st">"Null"</span>))</span>
+<span id="cb31-45"><a href="#cb31-45" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb31-46"><a href="#cb31-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-47"><a href="#cb31-47" aria-hidden="true" tabindex="-1"></a>n_munis <span class="ot">&lt;-</span> albo_groups <span class="sc">|&gt;</span> <span class="fu">count</span>(albo_group)</span>
+<span id="cb31-48"><a href="#cb31-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-49"><a href="#cb31-49" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pres_albo_long, <span class="fu">aes</span>(<span class="at">x =</span> albo_group, <span class="at">y =</span> pct, <span class="at">fill =</span> category)) <span class="sc">+</span></span>
+<span id="cb31-50"><a href="#cb31-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"stack"</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb31-51"><a href="#cb31-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb31-52"><a href="#cb31-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> n_munis,</span>
+<span id="cb31-53"><a href="#cb31-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> albo_group, <span class="at">y =</span> <span class="sc">-</span><span class="fl">1.5</span>, <span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">"n="</span>, n), <span class="at">fill =</span> <span class="cn">NULL</span>),</span>
+<span id="cb31-54"><a href="#cb31-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fl">2.8</span>, <span class="at">color =</span> <span class="st">"grey40"</span></span>
+<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb31-56"><a href="#cb31-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cat_colors, <span class="at">name =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb31-57"><a href="#cb31-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> \(x) <span class="fu">paste0</span>(x, <span class="st">"%"</span>), <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>))) <span class="sc">+</span></span>
+<span id="cb31-58"><a href="#cb31-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb31-59"><a href="#cb31-59" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Albó municipality category"</span>,</span>
+<span id="cb31-60"><a href="#cb31-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"% of votes cast"</span>,</span>
+<span id="cb31-61"><a href="#cb31-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Presidential vote composition by Albó CEL category (first round)"</span>,</span>
+<span id="cb31-62"><a href="#cb31-62" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Municipalities classified A (most indigenous-language) to I (least)"</span></span>
+<span id="cb31-63"><a href="#cb31-63" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb31-64"><a href="#cb31-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb31-65"><a href="#cb31-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"right"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/albo-vote-by-category-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-segunda-vuelta" class="level2">
+<h2 class="anchored" data-anchor-id="sec-segunda-vuelta">Second-round presidential results</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pres_2v <span class="ot">&lt;-</span> elections_2v</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>pres2_dept <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(pres_2v, dept_code, dept_name,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                                <span class="at">parties =</span> parties_2v)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>pres2_dept <span class="sc">|&gt;</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mesas, registered, turnout_pct, null_pct,</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_2v, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(registered))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 7
+  dept_name  mesas registered turnout_pct null_pct PDC_pct LIBRE_pct
+  &lt;chr&gt;      &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+1 Santa Cruz  9115    2071967        86.2      3.6    38.5      61.5
+2 La Paz      9099    2047825        90.2      4.8    66        34  
+3 Cochabamba  6346    1443013        87.1      5.7    61.3      38.7
+4 Potosí      2377     487029        88.3      7.2    63.4      36.6
+5 Tarija      1814     394539        84.6      4.3    49.7      50.3
+6 Chuquisaca  1815     384825        83.8      5.2    53.7      46.3
+7 Oruro       1693     363225        89.6      4.8    60.4      39.6
+8 Beni        1373     296173        82.7      3.5    46        54  
+9 Pando        394      78611        81.6      3.3    54.8      45.2</code></pre>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>pres2_prov <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  pres_2v,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_2v</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pres2_mun <span class="ot">&lt;-</span> <span class="fu">aggregate_results</span>(</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  pres_2v,</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  dept_code, dept_name,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  prov_code, prov_name,</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  mun_code, mun_name,</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">parties =</span> parties_2v</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>pres2_mun <span class="sc">|&gt;</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(dept_name, mun_name, valid_votes,</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>         <span class="fu">all_of</span>(<span class="fu">paste0</span>(parties_2v, <span class="st">"_pct"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(., <span class="dv">1</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(valid_votes)) <span class="sc">|&gt;</span></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 5
+   dept_name  mun_name                 valid_votes PDC_pct LIBRE_pct
+   &lt;chr&gt;      &lt;chr&gt;                          &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+ 1 Santa Cruz Santa Cruz de La Sierra       971029    30.3      69.7
+ 2 La Paz     El Alto                       657544    71.7      28.3
+ 3 La Paz     Nuestra Señora de La Paz      565803    41.7      58.3
+ 4 Cochabamba Cochabamba                    456718    45        55  
+ 5 Oruro      Oruro                         209101    50.7      49.3
+ 6 Chuquisaca Sucre                         196077    41.8      58.2
+ 7 Tarija     Tarija                        152820    41.8      58.2
+ 8 Potosí     Potosí                        145843    40.4      59.6
+ 9 Cochabamba Sacaba                        129705    56.4      43.6
+10 Cochabamba Quillacollo                   104554    55.9      44.1
+11 Santa Cruz Warnes                         88615    45.6      54.4
+12 Santa Cruz La Guardia                     78727    45.6      54.4
+13 Beni       Trinidad                       74955    35        65  
+14 Santa Cruz Montero                        74380    46.7      53.3
+15 La Paz     Viacha                         58153    80.5      19.5
+16 Tarija     Yacuiba                        54378    54.9      45.1
+17 Beni       Riberalta                      53399    48.1      51.9
+18 Cochabamba Villa Tunari                   48122    95.2       4.8
+19 Santa Cruz Cotoca                         47114    41.6      58.4
+20 Cochabamba Tiquipaya                      39251    49        51  </code></pre>
+</div>
+</div>
+<section id="second-round-choropleths" class="level3">
+<h3 class="anchored" data-anchor-id="second-round-choropleths">Second-round choropleths</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">choropleth_panel</span>(pres2_dept, pres2_prov, pres2_mun,</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>                 parties_2v, <span class="st">"Presidential (second round)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/pres2-choropleths-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="second-round-null-vote-rate" class="level3">
+<h3 class="anchored" data-anchor-id="second-round-null-vote-rate">Second-round null vote rate</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>nulo2_dept <span class="ot">&lt;-</span> pres2_dept <span class="sc">|&gt;</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(dept_to_gadm, <span class="at">by =</span> <span class="st">"dept_code"</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>nulo2_prov <span class="ot">&lt;-</span> pres2_prov <span class="sc">|&gt;</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(prov_to_gadm, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span>, <span class="st">"prov_code"</span>))</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>nulo2_mun <span class="ot">&lt;-</span> pres2_mun <span class="sc">|&gt;</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(muni_to_gadm, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span>, <span class="st">"prov_code"</span>, <span class="st">"mun_code"</span>))</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>p_nulo2_dept <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>  gadm1, nulo2_dept,</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>),</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"null_pct"</span>, <span class="st">"Null vote % — Department"</span>, <span class="st">"#8B0000"</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"#8B0000"</span>, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>                        <span class="at">na.value =</span> <span class="st">"grey85"</span>)</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>p_nulo2_prov <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>  gadm2, nulo2_prov,</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>, <span class="st">"NAME_2"</span> <span class="ot">=</span> <span class="st">"province_gadm"</span>),</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"null_pct"</span>, <span class="st">"Null vote % — Province"</span>, <span class="st">"#8B0000"</span></span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"#8B0000"</span>, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a>                        <span class="at">na.value =</span> <span class="st">"grey85"</span>)</span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>p_nulo2_mun <span class="ot">&lt;-</span> <span class="fu">make_choropleth</span>(</span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>  gadm3, nulo2_mun,</span>
+<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"NAME_1"</span> <span class="ot">=</span> <span class="st">"dept_gadm"</span>, <span class="st">"NAME_3"</span> <span class="ot">=</span> <span class="st">"muni_gadm"</span>),</span>
+<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"null_pct"</span>, <span class="st">"Null vote % — Municipality"</span>, <span class="st">"#8B0000"</span></span>
+<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"#8B0000"</span>, <span class="at">name =</span> <span class="st">"%"</span>,</span>
+<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a>                        <span class="at">na.value =</span> <span class="st">"grey85"</span>)</span>
+<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-29"><a href="#cb38-29" aria-hidden="true" tabindex="-1"></a>p_nulo2_dept <span class="sc">+</span> p_nulo2_prov <span class="sc">+</span> p_nulo2_mun <span class="sc">+</span></span>
+<span id="cb38-30"><a href="#cb38-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_layout</span>(<span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb38-31"><a href="#cb38-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_annotation</span>(<span class="at">title =</span> <span class="st">"Presidential null vote rate (second round)"</span>,</span>
+<span id="cb38-32"><a href="#cb38-32" aria-hidden="true" tabindex="-1"></a>                  <span class="at">theme =</span> <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/nulo2-choropleths-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="second-round-top-30-municipalities" class="level3">
+<h3 class="anchored" data-anchor-id="second-round-top-30-municipalities">Second-round top 30 municipalities</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>pres2_top30 <span class="ot">&lt;-</span> pres2_mun <span class="sc">|&gt;</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(mun_name <span class="sc">%in%</span> top30_oep) <span class="sc">|&gt;</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>(mun_name <span class="sc">==</span> <span class="st">"San Ignacio"</span> <span class="sc">&amp;</span> dept_code <span class="sc">==</span> <span class="dv">8</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make_top30_chart</span>(pres2_top30, group1_names, group1_display, group1_depts,</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>                 parties_2v, <span class="st">"Second round — Municipalities 1–15 (sorted by department)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/pres2-top30-chart1-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make_top30_chart</span>(pres2_top30, group2_names, group2_display, group2_depts,</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>                 parties_2v, <span class="st">"Second round — Municipalities 16–30 (sorted by department)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/pres2-top30-chart2-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="second-round-vote-by-albó-municipality-category" class="level3">
+<h3 class="anchored" data-anchor-id="second-round-vote-by-albó-municipality-category">Second-round vote by Albó municipality category</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>pres2_by_albo <span class="ot">&lt;-</span> elections_2v <span class="sc">|&gt;</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(albo_groups <span class="sc">|&gt;</span> <span class="fu">select</span>(department, province, municipality, albo_group),</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"dept_code"</span> <span class="ot">=</span> <span class="st">"department"</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"prov_code"</span> <span class="ot">=</span> <span class="st">"province"</span>,</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"mun_code"</span> <span class="ot">=</span> <span class="st">"municipality"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(albo_group)) <span class="sc">|&gt;</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(albo_group) <span class="sc">|&gt;</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(parties_2v), sum),</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">null_votes =</span> <span class="fu">sum</span>(null_votes),</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">blank_votes =</span> <span class="fu">sum</span>(blank_votes),</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">votes_cast =</span> <span class="fu">sum</span>(votes_cast),</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>pres2_albo_long <span class="ot">&lt;-</span> pres2_by_albo <span class="sc">|&gt;</span></span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(<span class="fu">all_of</span>(parties_2v), null_votes, blank_votes),</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"category"</span>, <span class="at">values_to =</span> <span class="st">"votes"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct =</span> votes <span class="sc">/</span> votes_cast <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span></span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">category =</span> <span class="fu">recode</span>(category, <span class="sc">!!!</span>party_labels,</span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>                      <span class="at">null_votes =</span> <span class="st">"Null"</span>, <span class="at">blank_votes =</span> <span class="st">"Blank"</span>),</span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">category =</span> <span class="fu">factor</span>(category,</span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a>                      <span class="at">levels =</span> <span class="fu">c</span>(<span class="fu">rev</span>(party_labels[parties_2v]), <span class="st">"Blank"</span>, <span class="st">"Null"</span>))</span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-27"><a href="#cb42-27" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pres2_albo_long, <span class="fu">aes</span>(<span class="at">x =</span> albo_group, <span class="at">y =</span> pct, <span class="at">fill =</span> category)) <span class="sc">+</span></span>
+<span id="cb42-28"><a href="#cb42-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"stack"</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb42-29"><a href="#cb42-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb42-30"><a href="#cb42-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> n_munis,</span>
+<span id="cb42-31"><a href="#cb42-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> albo_group, <span class="at">y =</span> <span class="sc">-</span><span class="fl">1.5</span>, <span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">"n="</span>, n), <span class="at">fill =</span> <span class="cn">NULL</span>),</span>
+<span id="cb42-32"><a href="#cb42-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fl">2.8</span>, <span class="at">color =</span> <span class="st">"grey40"</span></span>
+<span id="cb42-33"><a href="#cb42-33" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb42-34"><a href="#cb42-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> cat_colors, <span class="at">name =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb42-35"><a href="#cb42-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> \(x) <span class="fu">paste0</span>(x, <span class="st">"%"</span>), <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>))) <span class="sc">+</span></span>
+<span id="cb42-36"><a href="#cb42-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb42-37"><a href="#cb42-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Albó municipality category"</span>,</span>
+<span id="cb42-38"><a href="#cb42-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"% of votes cast"</span>,</span>
+<span id="cb42-39"><a href="#cb42-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Presidential vote composition by Albó CEL category (second round)"</span>,</span>
+<span id="cb42-40"><a href="#cb42-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Municipalities classified A (most indigenous-language) to I (least)"</span></span>
+<span id="cb42-41"><a href="#cb42-41" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb42-42"><a href="#cb42-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb42-43"><a href="#cb42-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"right"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eg2025-resultados_files/figure-html/albo-vote-2v-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

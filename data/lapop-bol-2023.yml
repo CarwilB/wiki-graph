@@ -1,0 +1,160 @@
+---
+# Provenance metadata for LAPOP AmericasBarometer Bolivia 2023
+# Imported from Stata .dta file: BOL_2023_LAPOP_AmericasBarometer_v1.0_w.dta
+
+source:
+  title: "AmericasBarometer 2023"
+  authors:
+    - institution: "Latin American Public Opinion Project (LAPOP)"
+  date: 2023
+  publisher: "LAPOP Lab, Vanderbilt University"
+  location: "Nashville, TN"
+  url: "http://datasets.americasbarometer.org/database/index.php?freeUser=true"
+  country: Bolivia
+  country_code: 10
+  dataset_version: "v1.0"
+  sample_size: 1706
+  fieldwork_year: 2023
+  survey_language: "Spanish (all interviews)"
+  description: >
+    Nationally representative face-to-face survey of adults (18+) in Bolivia.
+    Part of the AmericasBarometer series conducted across Latin America and the
+    Caribbean. Covers political attitudes, democratic values, corruption,
+    security, economic perceptions, indigenous identity, and language.
+  citation: >
+    LAPOP Lab, AmericasBarometer 2023. Available at
+    www.LapopSurveys.org.
+  license: >
+    Free registration required for download. Terms of use at
+    http://datasets.americasbarometer.org/database/index.php?freeUser=true.
+
+import:
+  method: "Read from Stata .dta file using haven::read_dta()"
+  raw_file: "data-raw/BOL_2023_LAPOP_AmericasBarometer_v1.0_w.dta"
+  raw_file_alt: "data-raw/BOL_2023_LAPOP_AmericasBarometer_v1.0_w.sav"
+  script: "lapop-bol-2023.R"
+  date: "2026-03-15"
+  handling_notes:
+    - >
+      Raw file has 1,706 rows × 208 columns. All columns are haven-labelled
+      doubles (dbl+lbl). Value labels are in Spanish.
+    - >
+      Stata tagged NA values (NA(a), NA(b), NA(c)) encode "No sabe",
+      "No responde", and "Inaplicable" respectively. These are collapsed to
+      plain NA during import via zap_missing().
+    - >
+      Factor versions of labelled columns created with as_factor() for
+      analysis convenience. Original numeric codes preserved in separate columns.
+    - >
+      Survey design variables: `wt` (sampling weight, all = 1 in this file),
+      `upm` (primary sampling unit), `strata` (stratification variable),
+      `estratopri` (region), `estratosec` (municipality size).
+
+survey_design:
+  weight: wt
+  psu: upm
+  strata: strata
+  stratification:
+    estratopri:
+      1001: "La Paz"
+      1002: "Santa Cruz"
+      1003: "Cochabamba"
+      1010: "Beni-Pando"
+      1011: "Potosí-Oruro"
+      1012: "Chuquisaca-Tarija"
+    estratosec:
+      1: "Grande (>100,000)"
+      2: "Mediana (25,000–100,000)"
+      3: "Pequeña (<25,000)"
+
+key_variables:
+  demographics:
+    - variable: q1tc_r
+      label: "Género"
+      values: { 1: "Hombre/masculino", 2: "Mujer/femenino", 3: "No binario" }
+    - variable: q2
+      label: "Edad"
+      type: continuous
+    - variable: edre
+      label: "Nivel de educación"
+      values: { 0: "Ninguna", 1: "Primaria incompleta", 2: "Primaria completa",
+                3: "Secundaria incompleta", 4: "Secundaria completa",
+                5: "Superior incompleta", 6: "Superior completa" }
+    - variable: q11n
+      label: "Estado civil"
+    - variable: ocup4a
+      label: "Situación laboral"
+    - variable: q10inc
+      label: "Ingresos mensuales (15 tramos en Bs.)"
+
+  geography:
+    - variable: prov
+      label: "Departamento (código INE provincial)"
+      note: "5-digit INE province code, not department code"
+    - variable: municipio
+      label: "Municipio (código INE 7 dígitos)"
+    - variable: ur
+      label: "Urbanización"
+      values: { 1: "Urbano", 2: "Rural" }
+
+  ethnicity_language:
+    - variable: etid
+      label: "Raza/etnicidad autopercibida"
+      values: { 1: "Blanca", 2: "Mestiza", 3: "Indígena-originaria",
+                4: "Negra", 5: "Mulata", 7: "Otra" }
+    - variable: boletidnew
+      label: "Se identifica como indígena"
+      values: { 1: "Sí", 2: "No" }
+    - variable: boletidnewb
+      label: "Grupo indígena específico"
+      values: { 1: "Quechua", 2: "Aymara", 3: "Guaraní", 4: "Chiquitano",
+                5: "Mojeño", 6: "Afroboliviano", 7: "Otro",
+                8: "No especifica, indígena nomás" }
+    - variable: leng1
+      label: "Lengua materna"
+      values: { 1001: "Castellano", 1002: "Quechua", 1003: "Aymara",
+                1004: "Otro nativo", 1005: "Otro extranjero", 1006: "Guaraní" }
+    - variable: leng4
+      label: "Idiomas de los padres"
+      values: { 1: "Solo castellano", 2: "Castellano + nativo",
+                3: "Solo nativo", 4: "Castellano + extranjero",
+                5: "Solo extranjero" }
+
+  political_attitudes:
+    - variable: l1n
+      label: "Escala izquierda/derecha (1–10)"
+    - variable: ing4
+      label: "Apoyo a la democracia (1–7)"
+    - variable: pn4
+      label: "Satisfacción con la democracia"
+    - variable: m1
+      label: "Aprobación del trabajo del ejecutivo"
+    - variable: b21a
+      label: "Confianza en el presidente (1–7)"
+
+  trust_battery:
+    note: "All on 1–7 scale"
+    variables: [b1, b2, b3, b4, b6, b10a, b11, b12, b13, b18, b20, b21, b21a,
+                b31, b32, b37, b47a, bolb23a, bolb50]
+
+notes:
+  - >
+    185 of 208 variables contain some missing values. Many variables are
+    split-ballot (only asked of a random half-sample), explaining ~50% NA
+    rates on items like jc10/jc13/jc15a/jc16a, chm1bn/chm2bn, d5newa/d7a, etc.
+  - >
+    The `wt` column is all 1.0 in this file. LAPOP typically provides
+    post-stratification weights; check for updated weight files.
+  - >
+    Province codes in `prov` are 5-digit INE codes (DDPPP). Municipality codes
+    in `municipio` are 7-digit (DDPPPNN). These differ from the 11-digit
+    community codes used in the census crosswalk.
+
+outputs:
+  - file: data/lapop_bol_2023.rds
+    description: >
+      Full dataset with haven labels stripped (zap_labels + zap_missing).
+      Factor columns for key categorical variables appended with _f suffix.
+      1,706 rows.
+  - file: data/lapop_bol_2023.csv
+    description: "Same as above in CSV format. Factor columns exported as character."

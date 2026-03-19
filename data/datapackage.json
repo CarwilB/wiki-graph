@@ -1,0 +1,152 @@
+{
+  "name": "molina-albo-2006-cuadro-8-1",
+  "title": "Bolivia: Condición étnico-lingüística (CEL) de la población — Cuadro 8.1",
+  "description": "Tabulation of Bolivia's population by ethno-linguistic condition (CEL), from Cuadro 8.1 (p. 190) of Molina Barrios & Albó (2006). Based on the 2001 Bolivian Census. Two versions: Spanish (original column names, with Total row) and English (analytic column names, Total row excluded, Sí/No converted to logical).",
+  "licenses": [
+    {
+      "name": "proprietary",
+      "title": "Published book — reproduced for research purposes"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gama étnica y lingüística de la población boliviana",
+      "path": "https://www.worldcat.org/title/71163389",
+      "authors": "Ramiro Molina Barrios; Xavier Albó",
+      "date": "2006",
+      "publisher": "Sistema de las Naciones Unidas en Bolivia",
+      "location": "La Paz, Bolivia",
+      "isbn": "978-99905-860-0-8"
+    },
+    {
+      "title": "INE - Censo Nacional de Población y Vivienda 2001",
+      "description": "Underlying data source cited in the table"
+    }
+  ],
+  "resources": [
+    {
+      "name": "molina_albo_8_1_es",
+      "path": "molina_albo_8_1_es.csv",
+      "description": "Spanish-language version faithful to the original table, including the Total row.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "categoria",
+            "type": "string",
+            "description": "CEL category (7–0) or 'Total'"
+          },
+          {
+            "name": "pertenece_indigena",
+            "type": "string",
+            "description": "Self-identifies as indigenous? Sí/No"
+          },
+          {
+            "name": "habla_su_lengua",
+            "type": "string",
+            "description": "Speaks their indigenous language? Sí/No"
+          },
+          {
+            "name": "aprendio_lengua_ninez",
+            "type": "string",
+            "description": "Learned indigenous language in childhood? Sí/No"
+          },
+          {
+            "name": "habla_castellano",
+            "type": "string",
+            "description": "Speaks Spanish? Sí/No"
+          },
+          {
+            "name": "codigo_abreviado",
+            "type": "string",
+            "description": "Abbreviated code for the trait combination (e.g. SSS+c)"
+          },
+          {
+            "name": "poblacion_0_14",
+            "type": "integer",
+            "description": "Population aged 0–14"
+          },
+          {
+            "name": "poblacion_15_mas",
+            "type": "integer",
+            "description": "Population aged 15+"
+          },
+          {
+            "name": "poblacion_total",
+            "type": "integer",
+            "description": "Total population"
+          },
+          {
+            "name": "porcentaje_15_mas",
+            "type": "number",
+            "description": "Percentage of 15+ population"
+          }
+        ]
+      }
+    },
+    {
+      "name": "molina_albo_8_1_en",
+      "path": "molina_albo_8_1_en.csv",
+      "description": "English-language analytic version. Total row excluded; Sí/No converted to logical.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "cel",
+            "type": "string",
+            "description": "CEL level (7–0)"
+          },
+          {
+            "name": "albo_q1",
+            "type": "boolean",
+            "description": "Self-identifies as indigenous (Q1)"
+          },
+          {
+            "name": "albo_q2",
+            "type": "boolean",
+            "description": "Speaks their indigenous language (Q2)"
+          },
+          {
+            "name": "albo_q3",
+            "type": "boolean",
+            "description": "Learned indigenous language in childhood (Q3)"
+          },
+          {
+            "name": "albo_c",
+            "type": "boolean",
+            "description": "Speaks Spanish (C)"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Abbreviated code for the trait combination"
+          },
+          {
+            "name": "pop_0_14",
+            "type": "integer",
+            "description": "Population aged 0–14"
+          },
+          {
+            "name": "pop_15_plus",
+            "type": "integer",
+            "description": "Population aged 15+"
+          },
+          {
+            "name": "pop_total",
+            "type": "integer",
+            "description": "Total population"
+          },
+          {
+            "name": "pct_15_plus",
+            "type": "number",
+            "description": "Percentage of 15+ population"
+          }
+        ]
+      }
+    }
+  ]
+}

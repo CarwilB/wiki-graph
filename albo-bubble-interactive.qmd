@@ -1,0 +1,227 @@
+---
+title: "Indigenous identity vs. language — interactive bubble charts"
+format: html
+execute:
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(plotly)
+
+DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+```
+
+```{r}
+#| label: load-data
+albo_2001 <- readRDS("data-raw/albo_romero_autonomias_anexo1.rds")
+
+cel_2024 <- readRDS(file.path(DATA_DIR, "cel_geo.rds")) |>
+  filter(!is.na(municipality), is.na(urban_rural)) |>
+  mutate(cod_mun = sprintf("%02d%02d%02d", department, province, municipality))
+
+pop <- readRDS("data/census_table_municipios_2012u.rds") |>
+  select(cod.mun, mun_name = municipality, t_2001, t_2012)
+
+assign_albo_group <- function(cel_5plus, cel_4plus, cel_2plus) {
+  case_when(
+    cel_5plus >= 90 & cel_4plus >= 90 & cel_2plus >= 90 ~ "A",
+    cel_5plus >  67 & cel_4plus >  80 & cel_2plus >  90 ~ "B",
+    cel_5plus >  50 & cel_4plus >  67 & cel_2plus >  67 ~ "C",
+    cel_5plus >  33 & cel_4plus >  50 & cel_2plus >  67 ~ "D",
+    cel_2plus >  75                                      ~ "E",
+    cel_2plus >  50                                      ~ "F",
+    cel_2plus >  33                                      ~ "G",
+    cel_2plus >  10                                      ~ "H",
+    TRUE                                                 ~ "I"
+  )
+}
+
+albo_2001 <- albo_2001 |>
+  mutate(group_2001 = assign_albo_group(crit_orig_5a7, crit_orig_4a7, crit_orig_2a7))
+
+cel_2024 <- cel_2024 |>
+  mutate(group_2024 = assign_albo_group(cel_5plus, cel_4plus, cel_2plus))
+
+comparison <- albo_2001 |>
+  select(codigo, department,
+         group_2001, cel5_2001 = crit_orig_5a7, cel4_2001 = crit_orig_4a7,
+         cel2_2001 = crit_orig_2a7) |>
+  inner_join(
+    cel_2024 |>
+      select(cod_mun, group_2024, cel5_2024 = cel_5plus, cel4_2024 = cel_4plus,
+             cel2_2024 = cel_2plus, n_2024 = n_total),
+    by = c("codigo" = "cod_mun")
+  ) |>
+  left_join(pop |> select(cod.mun, mun_name, t_2001, t_2012),
+            by = c("codigo" = "cod.mun"))
+```
+
+```{r}
+#| label: shared-config
+dept_colors <- c(
+  "Chuquisaca" = "#e6194b", "La Paz" = "#3cb44b", "Cochabamba" = "#ffe119",
+  "Oruro" = "#4363d8",      "Potosi" = "#f58231", "Tarija" = "#911eb4",
+  "Santa Cruz" = "#f032e6", "Beni" = "#42d4f4",   "Pando" = "#bfef45"
+)
+
+n <- nrow(comparison)
+
+hover_txt <- paste0(
+  "<b>", comparison$mun_name, "</b> (", comparison$department, ")<br>",
+  "CEL ≥ 2: ", round(comparison$cel2_2001, 1), "% → ",
+  round(comparison$cel2_2024, 1), "%<br>",
+  "CEL ≥ 5: ", round(comparison$cel5_2001, 1), "% → ",
+  round(comparison$cel5_2024, 1), "%<br>",
+  "Group: ", comparison$group_2001, " → ", comparison$group_2024
+)
+
+hover_2001 <- paste0(hover_txt, "<br>Pop 2001: ", scales::comma(comparison$t_2001))
+hover_2024 <- paste0(hover_txt, "<br>Pop 2024: ", scales::comma(comparison$n_2024))
+
+# JS template for hover arrow show/hide
+js_hover_fn <- "
+function(el) {
+  el.on('plotly_hover', function(data) {
+    var pt = data.points[0];
+    var rowIdx = pt.customdata;
+    if (rowIdx == null) return;
+    var update = {};
+    update['annotations[' + rowIdx + '].visible'] = true;
+    Plotly.relayout(el, update);
+  });
+  el.on('plotly_unhover', function(data) {
+    var pt = data.points[0];
+    var rowIdx = pt.customdata;
+    if (rowIdx == null) return;
+    var update = {};
+    update['annotations[' + rowIdx + '].visible'] = false;
+    Plotly.relayout(el, update);
+  });
+}
+"
+
+x_title <- "% with any indigenous dimension (CEL ≥ 2)"
+y_title <- "% with identity + language (CEL ≥ 5)"
+```
+
+Hover over any bubble to see an arrow showing the municipality's movement
+between 2001 and 2024. In the **2001** chart, the arrow points *from* the
+bubble to the 2024 position. In the **2024** chart, the arrow comes *from*
+the 2001 position to the bubble.
+
+### Census 2001
+
+```{r}
+#| label: plotly-2001
+#| fig-height: 10
+#| fig-width: 6.25
+
+fig_2001 <- plot_ly() |>
+  add_trace(x = c(0, 100), y = c(0, 100), type = "scatter", mode = "lines",
+            line = list(dash = "dash", color = "grey70", width = 1),
+            showlegend = FALSE, hoverinfo = "skip")
+
+ann_2001 <- lapply(seq_len(n), function(i) {
+  list(
+    x = comparison$cel2_2024[i], y = comparison$cel5_2024[i],
+    ax = comparison$cel2_2001[i], ay = comparison$cel5_2001[i],
+    xref = "x", yref = "y", axref = "x", ayref = "y",
+    showarrow = TRUE, arrowhead = 2, arrowsize = 1.2, arrowwidth = 1.5,
+    arrowcolor = "rgba(80,80,80,0.6)", visible = FALSE
+  )
+})
+
+for (dept in names(dept_colors)) {
+  idx <- which(comparison$department == dept)
+  if (length(idx) == 0) next
+  fig_2001 <- fig_2001 |>
+    add_trace(
+      x = comparison$cel2_2001[idx],
+      y = comparison$cel5_2001[idx],
+      customdata = idx - 1L,
+      type = "scatter", mode = "markers",
+      marker = list(
+        size = sqrt(comparison$t_2001[idx] / 300),
+        color = dept_colors[dept], opacity = 0.6,
+        line = list(width = 0.5, color = "white")
+      ),
+      text = hover_2001[idx], hoverinfo = "text",
+      name = dept
+    )
+}
+
+fig_2001 |>
+  layout(
+    title = list(
+      text = paste0("Census 2001<br><sup>Hover to see shift to 2024</sup>"),
+      y = 0.98
+    ),
+    xaxis = list(title = x_title, range = c(-2, 105)),
+    yaxis = list(title = y_title, range = c(-2, 105)),
+    annotations = ann_2001,
+    legend = list(orientation = "h", y = -0.08),
+    hovermode = "closest",
+    height = 750, width = 470
+  ) |>
+  htmlwidgets::onRender(js_hover_fn)
+```
+
+### Census 2024
+
+```{r}
+#| label: plotly-2024
+#| fig-height: 10
+#| fig-width: 6.25
+
+fig_2024 <- plot_ly() |>
+  add_trace(x = c(0, 100), y = c(0, 100), type = "scatter", mode = "lines",
+            line = list(dash = "dash", color = "grey70", width = 1),
+            showlegend = FALSE, hoverinfo = "skip")
+
+ann_2024 <- lapply(seq_len(n), function(i) {
+  list(
+    x = comparison$cel2_2024[i], y = comparison$cel5_2024[i],
+    ax = comparison$cel2_2001[i], ay = comparison$cel5_2001[i],
+    xref = "x", yref = "y", axref = "x", ayref = "y",
+    showarrow = TRUE, arrowhead = 2, arrowsize = 1.2, arrowwidth = 1.5,
+    arrowcolor = "rgba(80,80,80,0.6)", visible = FALSE
+  )
+})
+
+for (dept in names(dept_colors)) {
+  idx <- which(comparison$department == dept)
+  if (length(idx) == 0) next
+  fig_2024 <- fig_2024 |>
+    add_trace(
+      x = comparison$cel2_2024[idx],
+      y = comparison$cel5_2024[idx],
+      customdata = idx - 1L,
+      type = "scatter", mode = "markers",
+      marker = list(
+        size = sqrt(comparison$n_2024[idx] / 300),
+        color = dept_colors[dept], opacity = 0.6,
+        line = list(width = 0.5, color = "white")
+      ),
+      text = hover_2024[idx], hoverinfo = "text",
+      name = dept
+    )
+}
+
+fig_2024 |>
+  layout(
+    title = list(
+      text = paste0("Census 2024<br><sup>Hover to see shift from 2001</sup>"),
+      y = 0.98
+    ),
+    xaxis = list(title = x_title, range = c(-2, 105)),
+    yaxis = list(title = y_title, range = c(-2, 105)),
+    annotations = ann_2024,
+    legend = list(orientation = "h", y = -0.08),
+    hovermode = "closest",
+    height = 750, width = 470
+  ) |>
+  htmlwidgets::onRender(js_hover_fn)
+```
