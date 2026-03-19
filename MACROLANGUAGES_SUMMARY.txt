@@ -1,0 +1,86 @@
+
+MACROLANGUAGES ENHANCED WITH SIL REFERENCE NAMES
+================================================
+
+DATA SOURCES:
+- ISO 639-3 SIL Macrolanguage Mappings: https://iso639-3.sil.org/code_tables/macrolanguage_mappings/read
+- linguameta_metadata: 7,511 language records
+- macrolanguages (existing): 459 relationships (63 macrolanguages × constituent members)
+
+KEY STATISTICS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Total Macrolanguages: 63
+Total Member Languages: 459
+
+LINGUAMETA COVERAGE:
+  ✓ Members with metadata in linguameta: 431 (93.9%)
+  ✗ Members absent from linguameta: 28 (6.1%)
+
+NAME CONSISTENCY (Members in both SIL and linguameta):
+  Total members in both sources: 431 (100% of linguameta members)
+  Names that MATCH: 411 (95.4%)
+  Names that DIFFER: 20 (4.6%)
+
+SOURCES OF NAME DIFFERENCES (20 cases):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CAPITALIZATION (6 cases):
+   - Case/punctuation differences, usually in proper nouns or compound names
+   - Examples:
+     • Ta'Izzi-Adeni Arabic → Ta'izzi-Adeni Arabic (case of 'izzi')
+     • Buhi'Non Bikol → Buhi'non Bikol (capitalization of 'non')
+
+2. SIL ADDS CLARIFICATION (9 cases):
+   - SIL appends '(individual language)' to distinguish from macrolanguage
+   - Example: Dogri → Dogri (individual language)
+   - Affected macrolanguages: doi, kok (×2), msa, nep, swa, zza (×2)
+
+3. SUBSTANTIVE NAME DIFFERENCES (5 cases):
+   - Significant naming divergences between sources
+   - Examples:
+     • North Levantine Arabic (linguameta) ≠ Levantine Arabic (SIL)
+     • Sorani Kurdish (linguameta) ≠ Central Kurdish (SIL)
+     • Konkani (linguameta) ≠ Goan Konkani (SIL)
+
+INCOMPLETE LINGUAMETA COVERAGE (12 macrolanguages <100%):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Macrolanguage         Code   Members   In linguameta   Missing
+─────────────────────────────────────────────────────────────
+Chinese               zho      19           15          4 (21%)
+Gbaya (CAR)           gba       7            6          1 (14%)
+Lahnda                lah       8            7          1 (13%)
+Mandingo              man       7            6          1 (14%)
+Bikol                 bik       9            8          1 (11%)
+Zhuang                zha      18           16          2 (11%)
+Malagasy              mlg      12           11          1 (8%)
+Malay (macrolanguage) msa      37           35          2 (5%)
+Hmong                 hmn      26           25          1 (4%)
+Arabic                ara      30           29          1 (3%)
+Quechua               que      44           42          2 (5%)
+Zapotec               zap      59           58          1 (2%)
+
+OUTPUT FILES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+macrolanguages_enhanced_sil.csv (459 rows × 12 columns):
+  - macro_code: ISO 639-3 macrolanguage code
+  - macro_name_sil: SIL reference name for macrolanguage
+  - member_code: ISO 639-3 member language code
+  - member_status: Active/Deprecated/Retired
+  - in_linguameta: TRUE/FALSE flag for metadata presence
+  - member_name_linguameta: Name from linguameta (if available)
+  - member_name_sil: SIL reference name
+  - member_endonym: Self-designation (if available)
+  - member_n_speakers: Estimated speaker count
+  - member_endangerment: Endangerment status
+  - member_glottocode: Glottocode identifier
+  - names_differ: TRUE if linguameta and SIL names differ
+
+TABLE SCHEMA:
+For each row (member language):
+  - Row identifier: macro_code + member_code
+  - Macro-level: name from SIL
+  - Member-level: linguameta metadata + SIL name + name consistency check
+

@@ -1,0 +1,251 @@
+---
+title: "Global Language Diversity on Wikipedia"
+description: "A table showing the relationship between language speaker populations and Wikipedia article counts."
+author: "Carwil Bjork-James"
+date: "February 1, 2026"
+format: 
+  html:
+    self-contained: true
+    page-layout: full
+    toc: true
+---
+
+# Languages and Wikipedia Articles
+
+![The largest Wikipedia editions by number of articles, 2024 (CC-0 [Arief Azazie Zain](https://commons.wikimedia.org/wiki/User:Arief_Azazie_Zain "User:Arief Azazie Zain")) ](/images/wikipedia/List_of_Wikipedia_articles_by_language_-_March_2024.svg.png){alt="The largest Wikipedia editions by number of articles"}
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(rvest)
+library(knitr)
+library(kableExtra)
+library(stringi)
+library(viridis)
+library(kableExtra)
+library(scales)
+```
+
+:::{.column-page-inset-right}
+```{r language-diversity-table, echo=FALSE, message=FALSE, warning=FALSE}
+# 1. Load data
+langs_df <- read_csv('../data/data-Mww3K.csv')
+
+# 2. Scrape live Wikipedia data
+wiki_url <- "https://en.wikipedia.org/wiki/List_of_Wikipedias"
+wiki_html <- read_html(wiki_url)
+
+# Find the correct table (usually the one with 'Articles' in header)
+wiki_table <- wiki_html %>%
+  html_table() %>%
+  keep(~ "Articles" %in% names(.)) %>%
+  .[[1]]
+
+# Clean Wikipedia data
+wiki_clean <- wiki_table %>%
+  select(Language, Articles) %>%
+  mutate(Articles = as.numeric(gsub(",", "", Articles))) %>%
+  mutate(Language = case_when(Language == "Kurdish (Sorani)" ~ "Central Kurdish",
+                              TRUE ~ Language)) %>%
+  mutate(Language = str_remove(Language, "\\s?\\(.*")) %>%
+  filter(Articles > 0)
+
+# 3. Handle specific naming mismatches
+mapping <- c(
+  "Mandarin Chinese" = "Chinese",
+  "Standard Arabic" = "Arabic",
+  "Standard German" = "German",
+  "Standard Hindi" = "Hindi",
+  "Japanese" = "Japanese",
+  "Brazilian Portuguese" = "Portuguese",
+  "Standard Malay" = "Malay",
+  "Nigerian Pidgin" = "Nigerian Pidgin",
+  "Standard Italian" = "Italian",
+  "Standard Japanese" = "Japanese",
+  "Standard Turkish" = "Turkish",
+  "Yue Chinese" = "Cantonese",
+  "Min Nan Chinese" = "Southern Min",
+  "Min Dong Chinese" = "Eastern Min",
+  "Éwé" = "Ewe",
+  "Chichewa"         = "Chewa",
+  "Sunda"            = "Sundanese",
+  "Setswana"         = "Tswana",
+  "Southern Sotho"   = "Southern Sotho",
+  "Rundi"            = "Kirundi",
+  "Jula"             = "Dyula",
+  "Bamanankan"        = "Bambara",
+  "Swiss German"    = "Alemannic",
+    "Ganda" = "Luganda",
+  "North Azerbaijani" = "Azerbaijani",
+  "Tigrigna" = "Tigrinya",
+  "Gikuyu" = "Kikuyu",
+  "Koongo" = "Kongo",
+  "Madura" = "Madurese",
+  "Santhali" = "Santali",
+  "Merina Malagasy" = "Malagasy",
+  "Paraguayan Guaraní" = "Guarani",
+  "Tachelhit" = "Shilha",
+  "Sicillian" = "Sicilian",
+  "Napoletano" = "Neapolitan",
+  "Bugis" = "Buginese",
+  "Moore" = "Mooré",
+  "Swati" = "Swazi",
+  # Regional variants
+  "Levantine Arabic" = "Arabic",
+  "Sudanese Arabic" = "Arabic",
+  "Algerian Arabic" = "Arabic",
+  "Sa'idi Arabic" = "Arabic",
+  "Najdi Arabic" = "Arabic",
+  "Mesopotamian Arabic" = "Arabic",
+  "Sanaani Arabic" = "Arabic",
+  "Ta'izzi-Adeni Arabic" = "Arabic",      
+  "Tunisian Arabic" = "Arabic",          
+  "Gulf Arabic" = "Arabic",               
+  "Hijazi Arabic" = "Arabic",             
+  "North Mesopotamian Arabic" = "Arabic",
+  "Libyan Arabic" = "Arabic",
+  "Hadrami Arabic" = "Arabic",
+  "Hassaniyya" = "Arabic",
+  "Pulaar" = "Fula",
+  "Pular" = "Fula",
+  "Nigerian Fulfulde" = "Fula",
+  "Adamawa Fulfulde" = "Fula",
+  "Dari" = "Persian",
+  "Iranian Persian" = "Persian",
+  "Eastern Punjabi" = "Punjabi",
+  "Northern Uzbek" = "Uzbek",
+  "Southern Uzbek" = "Uzbek",
+  "Northern Kurdish" = "Kurdish",
+  "Southern Sotho" = "Sotho",
+  "Northeastern Thai" = "Thai",
+  "Northern Thai"     = "Thai",
+  "Southern Thai"   = "Thai",
+  "Northern Pashto" = "Pashto",
+  "Southern Pashto" = "Pashto",
+  "Central Pashto" = "Pashto",
+  "West Central Oromo" = "Oromo",
+  "Eastern Oromo" = "Oromo",
+  "Borana-Arsi-Guji Oromo" = "Oromo",
+  "Gheg Albanian" = "Albanian"
+)
+
+
+# gemini_map <- c(
+#   "Ganda" = "Luganda",
+#   "North Azerbaijani" = "Azerbaijani",
+#   "Tigrigna" = "Tigrinya",
+#   "Gikuyu" = "Kikuyu",
+#   "Koongo" = "Kongo",
+#   "Madura" = "Madurese",
+#   "Santhali" = "Santali",
+#   "Merina Malagasy" = "Malagasy",
+#   "Paraguayan Guaraní" = "Guarani",
+#   "Tachelhit" = "Shilha",
+#   "Sicillian" = "Sicilian",
+#   "Bugis" = "Buginese"
+# )
+# gemini_list <- unname(gemini_map)
+# which(gemini_list %in% wiki_clean$Language)
+
+text_to_num <- function(text) {
+  text <- str_replace_all(text, ",", "")
+  multipliers <- c(k = 1e3, K = 1e3, M = 1e6, B = 1e9)
+  pattern <- "([0-9.]+)\\s*([KMBk]?)"
+  
+  as.numeric(sapply(text, function(x) {
+    matches <- str_match(x, pattern)
+    if (is.na(matches[1,1])) {
+      return(NA)
+    }
+    number <- as.numeric(matches[1,2])
+    suffix <- matches[1,3]
+    if (suffix != "") {
+      number * multipliers[[suffix]]
+    } else {
+      number
+    }
+  }))
+}
+
+# 4. Process Data
+final_df <- langs_df %>%
+  mutate(match_name = ifelse(`English exonym` %in% names(mapping), 
+                             mapping[`English exonym`], 
+                             `English exonym`)) %>%
+  left_join(wiki_clean, by = c("match_name" = "Language")) %>%
+  mutate(Articles = replace_na(Articles, 0)) %>%
+  # Create numerical value for number of speakers
+  mutate(
+    speaker_pop = text_to_num(`total pop.`)
+  ) %>%
+  # Fix Indian Sign Language endonym
+  mutate(
+    endonym = ifelse(`English exonym` == "Indian Sign Language", "भारतीय सांकेतिक भाषा", endonym)
+  ) %>%
+  # Logic for English name + Autonym (Italicized if Roman)
+  mutate(
+    is_roman = stri_detect_regex(endonym, "^[\\p{Script=Latin}[:punct:][:space:]]+$"),
+    autonym_fmt = ifelse(is_roman, paste0(" <i>", endonym, "</i>"), paste0(" ", endonym)),
+    Language_Display = paste0(rank, ". ", `English exonym`, " <br>", autonym_fmt, "")
+  )
+
+# 5. Define the Color Scale
+# We use a White -> LightBlue -> SteelBlue gradient.
+# Using log1p (log + 1) transformation is CRITICAL here; 
+# otherwise, only English (7M articles) would be colored, and everything else would look white.
+color_pal <- col_numeric(
+  palette = c("#ffffff", "#74a9cf", "#0570b0"),
+  domain = log1p(c(final_df$speaker_pop,1000000))
+)
+speakers_row_colors <- color_pal(log1p(final_df$speaker_pop))
+
+row_colors <- case_when(
+    final_df$Articles == 0          ~ "#ffffff", # White
+    final_df$Articles < 10000        ~ "#c0f8d3", # Very light green
+    final_df$Articles < 100000       ~ "#a6dbbd", # Lighter green
+    final_df$Articles < 1000000      ~ "#addd8e", # Lighter green
+    final_df$Articles < 5000000     ~ "#d9ef8b", # Yellow-green (Strong)
+    final_df$Articles >= 5000000    ~ "#d4ee00"  # Saturated Greenish Yellow (Strongest)
+  )
+
+row_colors <- case_when(
+    final_df$Articles == 0          ~ "#ffffff", # White
+    final_df$Articles < 10000       ~ "#e6f7f0", # Pale aqua (lighter blend of green/blue)
+    final_df$Articles < 100000      ~ "#bae4d7", # Soft aqua green
+    final_df$Articles < 1000000     ~ "#82c9a5", # Muted green
+    final_df$Articles < 5000000     ~ "#c1d383", # Soft yellow-green
+    final_df$Articles >= 5000000    ~ "#aed800"  # Mellow greenish yellow (less saturated)
+  )
+
+row_colors <- case_when(
+    final_df$Articles == 0          ~ "#ffffff", # White
+    final_df$Articles < 10000       ~ "#e6f7f0", # Pale aqua
+    final_df$Articles < 100000      ~ "#bae4d7", # Soft aqua green
+    final_df$Articles < 1000000     ~ "#82c9a5", # Muted green
+    final_df$Articles < 4000000     ~ "#c1d383", # Soft yellow-green
+    final_df$Articles >= 4000000    ~ "#ffd700"  # Vibrant gold (eye-catching)
+  )
+# 6. Generate Table with kableExtra
+final_df %>% 
+  mutate(Articles = format(Articles, big.mark=",")) %>%
+  select(Language_Display, `language family (branch)`, `total pop.`, Articles) %>%
+  kable(
+    format = "html", 
+    escape = FALSE,
+    col.names = c("Language", "Language Family (Branch)", 
+                  "Total Speakers<br>(Native + L2)",
+                  "Wikipedia Articles"),
+    align = "llrr"
+  ) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), 
+                font_size = 14,
+                htmltable_class = "table table-hover table-condensed") %>%
+  # Apply colors to the background of all three columns
+  column_spec(1, width = "50%") %>%
+  column_spec(2, width = "30%") %>%
+  column_spec(3, background = speakers_row_colors, width = "10%") %>%
+  column_spec(4, background = row_colors, width = "10%") %>%
+  # Ensure the header remains readable and white
+  row_spec(0, background = "white", color = "black", bold = TRUE)
+
+```
+:::

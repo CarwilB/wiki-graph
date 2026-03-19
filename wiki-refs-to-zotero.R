@@ -212,6 +212,8 @@ cite_patterns <- c(
   "cite encyclopedia", "cite odnb", "cite magazine", "cite thesis",
   "cite conference", "cite report", "cite press release",
   "cite av media", "cite podcast", "cite speech",
+  "Citation",
+  "Cite EB1911",
   "harvc"
 )
 
@@ -254,8 +256,8 @@ extract_bare_refs <- function(wikitext) {
   if (nrow(refs) == 0) return(character(0))
 
   ref_contents <- refs[, 2]
-  # Filter to those that don't contain a {{cite or {{Cite template
-  is_bare <- !str_detect(ref_contents, regex("\\{\\{\\s*cite\\s", ignore_case = TRUE))
+  # Filter to those that don't contain a recognised citation template
+  is_bare <- !str_detect(ref_contents, regex("\\{\\{\\s*(cite\\s|citation\\s*\\|)", ignore_case = TRUE))
   ref_contents[is_bare & nzchar(trimws(ref_contents))]
 }
 
@@ -309,7 +311,7 @@ clean_wiki <- function(x) {
 #'   \code{"magazineArticle"}, \code{"thesis"}, \code{"conferencePaper"},
 #'   \code{"report"}, \code{"videoRecording"}, or \code{"document"}.
 #' @keywords internal
-template_to_itemtype <- function(tpl_name) {
+template_to_itemtype <- function(tpl_name, params = NULL) {
   tpl <- tolower(trimws(tpl_name))
   case_when(
     str_detect(tpl, "^(cite )?book$") ~ "book",
@@ -319,14 +321,30 @@ template_to_itemtype <- function(tpl_name) {
     str_detect(tpl, "news")           ~ "newspaperArticle",
     str_detect(tpl, "encyclopedia")   ~ "encyclopediaArticle",
     str_detect(tpl, "odnb")           ~ "encyclopediaArticle",
+    str_detect(tpl, "eb1911")         ~ "encyclopediaArticle",
     str_detect(tpl, "magazine")       ~ "magazineArticle",
     str_detect(tpl, "thesis")         ~ "thesis",
     str_detect(tpl, "conference")     ~ "conferencePaper",
     str_detect(tpl, "report")         ~ "report",
     str_detect(tpl, "press release")  ~ "newspaperArticle",
     str_detect(tpl, "av media")       ~ "videoRecording",
+    # {{Citation}} is generic: infer type from parameters
+    str_detect(tpl, "^citation$")     ~ .citation_itemtype(params),
     TRUE                              ~ "document"
   )
+}
+
+# Infer item type for the generic {{Citation}} template based on which
+# parameters are present.
+.citation_itemtype <- function(params) {
+  if (is.null(params)) return("book")
+  has <- function(k) !is.null(params[[k]])
+  if (has("chapter") || has("chapter-url")) "bookSection"
+  else if (has("journal") || has("periodical")) "journalArticle"
+  else if (has("newspaper")) "newspaperArticle"
+  else if (has("magazine")) "magazineArticle"
+  else if (has("encyclopedia")) "encyclopediaArticle"
+  else "book"
 }
 
 #' Extract creator metadata from parsed template parameters.
@@ -435,7 +453,7 @@ extract_authors <- function(params) {
 #'   \code{chapter}, \code{.template_name}, \code{.raw_template}.
 #' @keywords internal
 template_to_ref <- function(params) {
-  item_type <- template_to_itemtype(params$.template)
+  item_type <- template_to_itemtype(params$.template, params)
   authors <- extract_authors(params)
 
   # Extract year from date field
@@ -455,25 +473,42 @@ template_to_ref <- function(params) {
     NA_character_
   }
 
-  # Title: prefer title, fall back to script-title (for Japanese etc.)
-  title <- na_coalesce(clean_wiki(params[["title"]]), clean_wiki(params[["script-title"]]))
-  # For script-title, strip the language prefix like "ja:"
-  if (!is.na(title)) title <- str_remove(title, "^[a-z]{2}:")
+  tpl_lower <- tolower(trimws(params$.template))
 
-  # Trans-title: use if present
-  trans_title <- clean_wiki(params[["trans-title"]])
-  if (!is.na(trans_title) && !is.na(title)) {
-    title <- paste0(title, " [", trans_title, "]")
-  }
-
-  # Chapter (for harvc / bookSection)
-  chapter <- na_coalesce(clean_wiki(params[["chapter"]]), clean_wiki(params[["script-chapter"]]))
-  if (!is.na(chapter)) chapter <- str_remove(chapter, "^[a-z]{2}:")
-
-  # For bookSection (harvc), use chapter as the title if title is missing
-  if (item_type == "bookSection" && is.na(title) && !is.na(chapter)) {
-    title <- chapter
+  # {{Cite EB1911}}: wstitle → title, fixed encyclopediaTitle
+  if (str_detect(tpl_lower, "eb1911")) {
+    title <- clean_wiki(params[["wstitle"]]) %||% NA_character_
     chapter <- NA_character_
+    book_title <- "Encyclop\u00e6dia Britannica (11th ed.)"
+  } else {
+    # Title: prefer title, fall back to script-title (for Japanese etc.)
+    title <- na_coalesce(clean_wiki(params[["title"]]), clean_wiki(params[["script-title"]]))
+    # For script-title, strip the language prefix like "ja:"
+    if (!is.na(title)) title <- str_remove(title, "^[a-z]{2}:")
+
+    # Trans-title: use if present
+    trans_title <- clean_wiki(params[["trans-title"]])
+    if (!is.na(trans_title) && !is.na(title)) {
+      title <- paste0(title, " [", trans_title, "]")
+    }
+
+    # Chapter (for harvc / bookSection / Citation with chapter=)
+    chapter <- na_coalesce(clean_wiki(params[["chapter"]]), clean_wiki(params[["script-chapter"]]))
+    if (!is.na(chapter)) chapter <- str_remove(chapter, "^[a-z]{2}:")
+
+    # For bookSection, the chapter name is the item title and the book title
+    # is the container.  Applies to harvc and {{Citation}} with chapter=.
+    if (item_type == "bookSection" && !is.na(chapter)) {
+      book_title <- title  # the {{Citation}} title= is the book
+      title <- chapter
+      chapter <- NA_character_
+    } else if (item_type == "bookSection" && is.na(chapter) && is.na(title)) {
+      book_title <- NA_character_
+    } else {
+      book_title <- if (item_type == "bookSection") {
+        clean_wiki(params[["in"]]) %||% NA_character_
+      } else NA_character_
+    }
   }
 
   tibble(
@@ -493,15 +528,12 @@ template_to_ref <- function(params) {
     ISBN             = params[["isbn"]] %||% NA_character_,
     ISSN             = params[["issn"]] %||% NA_character_,
     DOI              = params[["doi"]] %||% NA_character_,
-    url              = params[["url"]] %||% NA_character_,
+    url              = params[["url"]] %||% params[["chapter-url"]] %||% NA_character_,
     language         = params[["language"]] %||% NA_character_,
     edition          = params[["edition"]] %||% NA_character_,
     series           = clean_wiki(params[["series"]]) %||% NA_character_,
     accessDate       = params[["access-date"]] %||% NA_character_,
-    bookTitle        = if (item_type == "bookSection") {
-                         # harvc uses "in" param to reference parent book
-                         clean_wiki(params[["in"]]) %||% NA_character_
-                       } else NA_character_,
+    bookTitle        = book_title %||% NA_character_,
     chapter          = chapter %||% NA_character_,
     # Raw template for debugging
     .template_name   = params$.template,
@@ -598,12 +630,16 @@ extract_refs_from_wikitext <- function(wikitext) {
 #' @return A character string of the form \code{"lastname|year|title"}.
 #' @keywords internal
 dedup_key <- function(title, year, last1) {
-  # Normalize: lowercase, strip diacritics, strip punctuation
+  # Normalize: decode HTML entities, lowercase, strip diacritics,
+  # strip punctuation, collapse whitespace
   norm <- function(x) {
-    x <- tolower(x %||% "")
+    x <- x %||% ""
+    x <- str_replace_all(x, "&nbsp;", " ")
+    x <- str_replace_all(x, "&#\\d+;", " ")
+    x <- tolower(x)
     x <- stri_trans_general(x, "Latin-ASCII")
     x <- str_replace_all(x, "[^a-z0-9 ]", "")
-    trimws(x)
+    str_squish(x)
   }
   paste(norm(last1), norm(year), norm(title), sep = "|")
 }
@@ -847,7 +883,7 @@ enrich_ref <- function(ref_row) {
       ZoteroDoi(doi, silent = TRUE),
       error = function(e) NULL
     )
-    if (!is.null(result) && !is.null(result[["data"]]) && nrow(result[["data"]]) > 0) {
+    if (!is.null(result) && is.data.frame(result[["data"]]) && NROW(result[["data"]]) > 0) {
       ref_row <- .merge_enriched(ref_row, result[["data"]][1, ])
       ref_row$.enrich_status <- "doi"
       return(ref_row)
@@ -860,7 +896,7 @@ enrich_ref <- function(ref_row) {
       ZoteroIsbn(isbn, silent = TRUE),
       error = function(e) NULL
     )
-    if (!is.null(result) && !is.null(result[["data"]]) && nrow(result[["data"]]) > 0) {
+    if (!is.null(result) && is.data.frame(result[["data"]]) && NROW(result[["data"]]) > 0) {
       ref_row <- .merge_enriched(ref_row, result[["data"]][1, ])
       ref_row$.enrich_status <- "isbn"
       return(ref_row)
@@ -956,13 +992,32 @@ enrich_refs <- function(refs) {
 ref_to_zotero_item <- function(row) {
   acc <- .format_access_date(row$accessDate %||% "")
 
+
+  # Convert creators to a list-of-lists for the Zotero API.  Creators with a
+  # non-empty firstName get {creatorType, lastName, firstName}; those without
+  # (institutional authors) get {creatorType, name} — the two formats are
+  # mutually exclusive per the API spec.
+  creators_tbl <- row$creators[[1]]
+  creators <- if (!is.null(creators_tbl) && nrow(creators_tbl) > 0) {
+    lapply(seq_len(nrow(creators_tbl)), \(j) {
+      cr <- creators_tbl[j, ]
+      if (nzchar(cr$firstName)) {
+        list(creatorType = cr$creatorType, lastName = cr$lastName, firstName = cr$firstName)
+      } else {
+        list(creatorType = cr$creatorType, name = cr$lastName)
+      }
+    })
+  } else {
+    list(list(creatorType = "author", name = ""))
+  }
+
   # Fields present on every item type
   base <- list(
     key        = ZoteroKey(),
     version    = 0L,
     itemType   = row$itemType,
     title      = row$title    %||% "",
-    creators   = row$creators,
+    creators   = list(creators),
     date       = row$date     %||% "",
     language   = row$language %||% "",
     url        = row$url      %||% "",
@@ -1327,6 +1382,10 @@ post_refs_to_zotero <- function(refs, collection_name,
 
 #' Add existing Zotero items to a collection via the REST API.
 #'
+#' Uses PATCH semantics: for each item, adds the collection key to the item's
+#' `collections` array.  Items are batched into groups of up to 50 and POSTed
+#' with `collections` set to include the target collection key.
+#'
 #' @param item_keys Character vector of Zotero item keys.
 #' @param collection_key Destination collection key.
 #' @param user_id Zotero user ID.
@@ -1335,12 +1394,9 @@ post_refs_to_zotero <- function(refs, collection_name,
 add_items_to_collection <- function(item_keys, collection_key,
                                      user_id, api_key, user = TRUE) {
   entity   <- if (user) "users" else "groups"
-  endpoint <- paste0(
-    "https://api.zotero.org/", entity, "/", user_id,
-    "/collections/", collection_key, "/items"
-  )
+  prefix   <- paste0("https://api.zotero.org/", entity, "/", user_id)
 
-  base_req <- request(endpoint) |>
+  base_req <- request(paste0(prefix, "/items")) |>
     req_headers(
       "Zotero-API-Key"     = api_key,
       "Zotero-API-Version" = "3"
@@ -1350,13 +1406,44 @@ add_items_to_collection <- function(item_keys, collection_key,
       is_transient = \(r) resp_status(r) %in% c(429, 503)
     )
 
-  # Zotero accepts up to 50 item keys per request
-  chunks <- split(item_keys, ceiling(seq_along(item_keys) / 50))
-  walk(chunks, \(chunk) {
+  # First, fetch current version and collections for each item so we don't
+  # clobber existing collection memberships.
+  fetch_req <- request(prefix) |>
+    req_headers(
+      "Zotero-API-Key"     = api_key,
+      "Zotero-API-Version" = "3"
+    )
+
+  # Fetch items in batches of 50 (API limit for itemKey filter)
+  key_chunks <- split(item_keys, ceiling(seq_along(item_keys) / 50))
+  item_data <- list()
+  for (chunk in key_chunks) {
+    resp <- fetch_req |>
+      req_url_path_append("items") |>
+      req_url_query(itemKey = paste(chunk, collapse = ","), limit = 50) |>
+      req_perform() |>
+      resp_body_json(simplifyVector = FALSE)
+    item_data <- c(item_data, resp)
+  }
+
+  # Build PATCH payloads: add collection_key to each item's collections
+  patches <- map(item_data, \(item) {
+    existing_cols <- item$data$collections %||% list()
+    all_cols <- unique(c(as.character(existing_cols), collection_key))
+    list(
+      key         = item$key,
+      version     = item$version,
+      collections = all_cols
+    )
+  })
+
+  # POST batches of up to 50 (POST with key+version = PATCH semantics)
+  patch_chunks <- split(patches, ceiling(seq_along(patches) / 50))
+  for (chunk in patch_chunks) {
     base_req |>
       req_body_json(chunk) |>
       req_perform()
-  })
+  }
 
   invisible(item_keys)
 }
@@ -1643,8 +1730,9 @@ fetch_zotero_keys <- function(refs,
 #' }
 #' @seealso \code{\link{post_refs_to_zotero}}, \code{\link{export_ris}},
 #'   \code{\link{check_library_for_refs}}, \code{\link{fetch_zotero_keys}}
-wiki_refs_pipeline <- function(page_name,
+wiki_refs_pipeline <- function(page_name = NULL,
                                 language = "en",
+                                wikitext = NULL,
                                 ris_file = NULL,
                                 enrich = TRUE,
                                 zotero_import = FALSE,
@@ -1655,15 +1743,58 @@ wiki_refs_pipeline <- function(page_name,
                                 read_api_key = NULL,
                                 fetch_keys = TRUE,
                                 dry_run = TRUE) {
-  message("Fetching wikitext for: ", page_name)
-  wikitext <- fetch_wikitext(page_name, language = language)
+
+  # Track which stages completed; attached to the result as an attribute
+  status <- list(
+    extract    = FALSE,
+    dedup      = FALSE,
+    enrich     = FALSE,
+    ris_export = FALSE,
+    check_existing = FALSE,
+    zotero_import  = FALSE,
+    fetch_keys     = FALSE,
+    errors     = character()
+  )
+
+  # Helper: run a pipeline stage, updating `refs` on success and recording
+
+  # errors on failure.  On error, emits a warning and returns `refs` unchanged.
+
+  safe_stage <- function(stage_name, expr) {
+    tryCatch(
+      {
+        result <- expr
+        status[[stage_name]] <<- TRUE
+        result
+      },
+      error = function(e) {
+        msg <- sprintf("Pipeline stage '%s' failed: %s", stage_name, conditionMessage(e))
+        warning(msg, call. = FALSE, immediate. = TRUE)
+        status$errors <<- c(status$errors, msg)
+        NULL
+      }
+    )
+  }
+
+  if (is.null(wikitext)) {
+    if (is.null(page_name)) stop("Either `page_name` or `wikitext` must be provided.")
+    message("Fetching wikitext for: ", page_name)
+    wikitext <- fetch_wikitext(page_name, language = language)
+  } else {
+    message("Using supplied wikitext (", nchar(wikitext), " characters)")
+  }
 
   message("Extracting citations...")
-  refs <- extract_refs_from_wikitext(wikitext)
+  refs <- safe_stage("extract", extract_refs_from_wikitext(wikitext))
+  if (is.null(refs)) {
+    warning("Extraction failed — nothing to return.", call. = FALSE, immediate. = TRUE)
+    return(structure(tibble(), .pipeline_status = status))
+  }
   message("Found ", nrow(refs), " citation templates (before dedup)")
 
   message("Deduplicating...")
-  refs <- deduplicate_refs(refs)
+  deduped <- safe_stage("dedup", deduplicate_refs(refs))
+  if (!is.null(deduped)) refs <- deduped
   message("Unique references: ", nrow(refs))
 
   message("\nReference types:")
@@ -1671,21 +1802,23 @@ wiki_refs_pipeline <- function(page_name,
 
   if (enrich) {
     message("\nEnriching metadata via DOI/ISBN...")
-    refs <- enrich_refs(refs)
+    enriched <- safe_stage("enrich", enrich_refs(refs))
+    if (!is.null(enriched)) refs <- enriched
   }
 
   if (!is.null(ris_file)) {
-    export_ris(refs, ris_file)
+    safe_stage("ris_export", export_ris(refs, ris_file))
   }
 
   if (zotero_import && check_existing) {
     message("\nChecking for existing items in Zotero library...")
-    refs <- check_library_for_refs(
+    checked <- safe_stage("check_existing", check_library_for_refs(
       refs,
       user_id = user_id,
       api_key = read_api_key %||% api_key,
       user    = TRUE
-    )
+    ))
+    if (!is.null(checked)) refs <- checked
   }
 
   imported_collection_key <- NULL
@@ -1693,23 +1826,31 @@ wiki_refs_pipeline <- function(page_name,
   if (zotero_import) {
     cname <- collection_name %||% str_replace_all(page_name, "_", " ")
     message("\nImporting to Zotero collection: ", cname)
-    result <- import_to_zotero(refs, cname,
-                               user_id = user_id, api_key = api_key,
-                               dry_run = dry_run)
-    if (!dry_run && !is.null(result$collections)) {
+    result <- safe_stage("zotero_import", import_to_zotero(
+      refs, cname,
+      user_id = user_id, api_key = api_key,
+      dry_run = dry_run
+    ))
+    if (!is.null(result) && !dry_run && !is.null(result$collections)) {
       imported_collection_key <- result$collections$key[1]
     }
   }
 
   if (fetch_keys && !dry_run && !is.null(imported_collection_key)) {
     message("\nFetching Zotero keys for imported items...")
-    refs <- fetch_zotero_keys(
+    keyed <- safe_stage("fetch_keys", fetch_zotero_keys(
       refs,
       user_id        = user_id,
       api_key        = read_api_key %||% api_key,
       collection_key = imported_collection_key
-    )
+    ))
+    if (!is.null(keyed)) refs <- keyed
   }
 
-  refs
+  if (length(status$errors) > 0) {
+    message("\nPipeline completed with ", length(status$errors), " error(s). ",
+            "Returning refs as of last successful stage.")
+  }
+
+  structure(refs, .pipeline_status = status)
 }
