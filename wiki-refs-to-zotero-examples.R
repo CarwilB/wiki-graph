@@ -17,6 +17,7 @@ meio_refs <- wiki_refs_pipeline("Meiō_incident",
                    api_key = Sys.getenv("zotero_access_key"),
                    dry_run = FALSE)
 
+
 post_refs_to_zotero(
   meio_refs,
   collection_name = "Meiō incident",
@@ -75,3 +76,17 @@ collections <- tibble(
 collections |>
   filter(name == "Human_genetic_variation") |>
   pull(key)
+
+
+brooklyn_r <- wiki_refs_pipeline("Brooklyn",
+                                ris_file = "data/brooklyn_r.ris",
+                                zotero_import = TRUE,
+                                user_id = "1531198",
+                                enrich = TRUE,
+                                api_key = Sys.getenv("zotero_access_key_write"),
+                                dry_run = FALSE)
+
+source("wiki-refs-to-zotero.R")
+
+test <- wiki_refs_pipeline(wikitext = brooklyn_wikitext, enrich = FALSE, zotero_import = FALSE)
+cat("Rows:", nrow(test), "\n")

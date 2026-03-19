@@ -1,0 +1,460 @@
+"macro_code","macro_name","member_code","member_status","english_name","endonym","iso_639_3_code","iso_639_2b_code","glottocode","wikidata_id","wikidata_description","n_speakers","endangerment","writing_systems","locales","cldr_official_status","in_linguameta"
+"aka","Akan","fat","A","Fanti",NA,"fat",NA,"fant1241","Q35570",NA,1900000,NA,"Latn","GH",NA,TRUE
+"aka","Akan","twi","A","Twi",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"ara","Arabic","aao","A","Algerian Saharan Arabic",NA,"aao",NA,"alge1240","Q56725",NA,310000,"Not endangered","Arab","DZ",NA,TRUE
+"ara","Arabic","abh","A","Tajiki Arabic",NA,"abh",NA,"taji1248","Q56833","dialect of Arabic language",NA,"Definitely endangered","Arab","AF, TJ, UZ",NA,TRUE
+"ara","Arabic","abv","A","Baharna Arabic","العربية البحرانية","abv",NA,"baha1259","Q56576",NA,730000,"Not endangered","Arab","BH",NA,TRUE
+"ara","Arabic","acm","A","Mesopotamian Arabic","لهجة بلاد ما بين النهرين","acm",NA,"meso1252","Q56232","continuum of mutually-intelligible varieties of Arabic",1.7e+07,"Not endangered","Arab","IQ",NA,TRUE
+"ara","Arabic","acq","A","Ta'izzi-Adeni Arabic","لهجة تعزية-عدنية","acq",NA,"taiz1242","Q56579","dialect of Arabic spoken primarily in the Republic of Yemen and the Republic of Djibouti",1.2e+07,"Not endangered","Arab","YE",NA,TRUE
+"ara","Arabic","acw","A","Hijazi Arabic","حجازي","acw",NA,"hija1235","Q56608","variety of Arabic spoken in the Hejaz region of Saudi Arabia",1.1e+07,"Not endangered","Arab","SA",NA,TRUE
+"ara","Arabic","acx","A","Omani Arabic","اللهجة العمانية","acx",NA,"oman1239","Q56630","variety of Peninsular Arabic spoken in Oman",3200000,"Not endangered","Arab","OM",NA,TRUE
+"ara","Arabic","acy","A","Cypriot Arabic",NA,"acy",NA,"cypr1248","Q56416","moribund variety of Arabic spoken by the Maronite community of Cyprus.",NA,"Definitely endangered","Arab, Grek, Latn","CY",NA,TRUE
+"ara","Arabic","adf","A","Dhofari Arabic",NA,"adf",NA,"dhof1235","Q56565",NA,130000,"Not endangered","Arab","OM",NA,TRUE
+"ara","Arabic","aeb","A","Tunisian Arabic","Tounsi","aeb",NA,"tuni1259","Q56240","arabic dialect spoken in Tunisia",NA,"Not endangered","Arab, Latn","TN",NA,TRUE
+"ara","Arabic","aec","A","Saidi Arabic","صعيدى","aec",NA,"said1239","Q56592","variety of Arabic spoken by the Ṣa‘īdi people south of Cairo, Egypt to the border of Sudan",2.5e+07,"Not endangered","Arab","EG",NA,TRUE
+"ara","Arabic","afb","A","Gulf Arabic","خليجي","afb",NA,"gulf1241","Q56385","variety of the Arabic language spoken in Eastern Arabia around the coasts of the Persian Gulf",NA,"Not endangered",NA,NA,NA,TRUE
+"ara","Arabic","ajp","R","South Levantine Arabic",NA,"ajp",NA,"sout3123","Q55633582","subdivision of Levantine Arabic",NA,"Not endangered",NA,NA,NA,TRUE
+"ara","Arabic","apc","A","Levantine Arabic","اللهجة الشامية","apc",NA,"nort3139","Q22809485","dialect of Levantine Arabic",NA,"Not endangered",NA,NA,NA,TRUE
+"ara","Arabic","apd","A","Sudanese Arabic","لهجة سودانية","apd",NA,"suda1236","Q56573",NA,3.7e+07,"Not endangered","Arab","SD",NA,TRUE
+"ara","Arabic","arb","A","Standard Arabic",NA,"arb",NA,"stan1318","Q56467","the standardized and literary variety of Arabic used in writing and in most formal speech",NA,"Not endangered",NA,NA,NA,TRUE
+"ara","Arabic","arq","A","Algerian Arabic","الدارجة الجزائرية","arq",NA,"alge1239","Q56499","Maghrebi dialect of the Arabic language spoken in Algeria",3.6e+07,"Not endangered","Arab","DZ",NA,TRUE
+"ara","Arabic","ars","A","Najdi Arabic",NA,"ars",NA,"najd1235","Q56574","dialect Saudi Arabia",1e+06,"Not endangered","Arab","SA",NA,TRUE
+"ara","Arabic","ary","A","Moroccan Arabic","الداريجة المغريبية","ary",NA,"moro1292","Q56426","Maghrebi dialect of the Arabic language spoken in Morocco",3.1e+07,"Not endangered","Arab, Latn","MA",NA,TRUE
+"ara","Arabic","arz","A","Egyptian Arabic","اللغه المصريه الحديثه","arz",NA,"egyp1253","Q29919","Arabic dialect spoken in Egypt",7.8e+07,"Not endangered","Arab","EG",NA,TRUE
+"ara","Arabic","auz","A","Uzbeki Arabic",NA,"auz",NA,"uzbe1248","Q3399507","variety of Arabic spoken in Uzbekistan",NA,"Definitely endangered","Arab","UZ",NA,TRUE
+"ara","Arabic","avl","A","Eastern Egyptian Bedawi Arabic",NA,"avl",NA,"east2690","Q56714","variety of Arabic spoken by Bedouins mostly in eastern Egypt in the Sinai Peninsula and along the north of the Red Sea, and also in the South of Jordan, and the north-west corner of Saudi Arabia",2800000,"Not endangered","Arab","EG",NA,TRUE
+"ara","Arabic","ayh","A","Hadrami Arabic",NA,"ayh",NA,"hadr1236","Q3510366","variety of the Arabic language",5100000,"Not endangered","Arab","YE",NA,TRUE
+"ara","Arabic","ayl","A","Libyan Arabic","ليبي","ayl",NA,"liby1240","Q56503","dialect of the language as spoken in the North African country",5600000,"Not endangered","Arab","LY",NA,TRUE
+"ara","Arabic","ayn","A","Sanaani Arabic",NA,"ayn",NA,"sana1295","Q1686766","cluster of varieties of Arabic spoken in Yemen and southwestern Saudi Arabia",1.3e+07,"Not endangered","Arab","YE",NA,TRUE
+"ara","Arabic","ayp","A","North Mesopotamian Arabic","لهجة موصلية","ayp",NA,"nort3142","Q56577","Arabic dialect",1e+07,"Not endangered","Arab","IQ",NA,TRUE
+"ara","Arabic","bbz","R","Babalia Creole Arabic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"ara","Arabic","pga","A","Sudanese Creole Arabic",NA,"pga",NA,"suda1237","Q1262143","lingua franca spoken in South Sudan",250000,"Not endangered","Latn","SS",NA,TRUE
+"ara","Arabic","shu","A","Chadian Arabic","لهجة تشادية","shu",NA,"chad1249","Q56497","variant of Arabic spoken in Chad",2300000,"Not endangered","Arab","TD",NA,TRUE
+"ara","Arabic","ssh","A","Shihhi Arabic",NA,"ssh",NA,"shih1239","Q56571",NA,38000,"Not endangered","Arab","AE, OM",NA,TRUE
+"aym","Aymara","ayc","A","Southern Aymara",NA,"ayc",NA,"sout2996","Q3508036",NA,NA,"Not endangered","Latn","PE",NA,TRUE
+"aym","Aymara","ayr","A","Central Aymara",NA,"ayr",NA,"cent2142","Q20526610",NA,1700000,"Vulnerable","Latn","BO",NA,TRUE
+"aze","Azerbaijani","azb","A","South Azerbaijani","تۆرکجه","azb",NA,"sout2697","Q3449805","Turkic language",2.4e+07,"Not endangered","Arab","IR",NA,TRUE
+"aze","Azerbaijani","azj","A","North Azerbaijani",NA,"azj",NA,"nort2697","Q3515311",NA,2.4e+07,"Not endangered","Latn","AZ",NA,TRUE
+"bal","Baluchi","bcc","A","Southern Balochi","بلوچی‎","bcc",NA,"sout2642","Q12634001","group of Balochi dialects",3800000,"Not endangered","Arab","PK",NA,TRUE
+"bal","Baluchi","bgn","A","Western Balochi","رخشانین بلوچی","bgn",NA,"west2368","Q12645561","group of Balochi dialects",1300000,"Not endangered","Arab","PK",NA,TRUE
+"bal","Baluchi","bgp","A","Eastern Balochi","بلوچی","bgp",NA,"east2304","Q12952252",NA,1800000,"Not endangered","Arab, Latn","PK",NA,TRUE
+"bik","Bikol","bcl","A","Central Bikol","Bikol Sentral","bcl",NA,"cent2087","Q33284","Austronesian language spoken in the Philippines",2500000,"Not endangered","Latn","PH",NA,TRUE
+"bik","Bikol","bhk","R","Albay Bicolano",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"bik","Bikol","bln","A","Southern Catanduanes Bikol",NA,"bln",NA,"sout2912","Q7569754",NA,140000,"Not endangered","Latn","PH",NA,TRUE
+"bik","Bikol","bto","A","Rinconada Bikol","Rinconada","bto",NA,"irig1242","Q12633026","Bikol language spoken in Camarines Sur, Bicol Region",310000,"Not endangered","Latn","PH",NA,TRUE
+"bik","Bikol","cts","A","Northern Catanduanes Bikol",NA,"cts",NA,"nort2883","Q7130477","Bikol language spoken in the Philippines",78000,"Not endangered","Latn","PH",NA,TRUE
+"bik","Bikol","fbl","A","West Albay Bikol",NA,"fbl",NA,NA,NA,NA,2500000,NA,"Latn","PH",NA,TRUE
+"bik","Bikol","lbl","A","Libon Bikol",NA,"lbl",NA,"libo1242","Q18664462",NA,NA,"Not endangered",NA,"PH",NA,TRUE
+"bik","Bikol","rbl","A","Miraya Bikol",NA,"rbl",NA,NA,NA,NA,3e+05,NA,"Latn","PH",NA,TRUE
+"bik","Bikol","ubl","A","Buhi'non Bikol",NA,"ubl",NA,"buhi1243","Q18664494",NA,NA,"Not endangered",NA,"PH",NA,TRUE
+"bnc","Bontok","ebk","A","Eastern Bontok",NA,"ebk",NA,NA,NA,NA,41000,NA,"Latn","PH",NA,TRUE
+"bnc","Bontok","lbk","A","Central Bontok",NA,"lbk",NA,"cent2292","Q63257803","Bontoc language of the Philippines",20000,"Not endangered","Latn","PH",NA,TRUE
+"bnc","Bontok","obk","A","Southern Bontok",NA,"obk",NA,NA,NA,NA,NA,NA,"Latn","PH",NA,TRUE
+"bnc","Bontok","rbk","A","Northern Bontok",NA,"rbk",NA,NA,NA,NA,NA,NA,NA,NA,NA,TRUE
+"bnc","Bontok","vbk","A","Southwestern Bontok",NA,"vbk",NA,NA,NA,NA,NA,NA,"Latn",NA,NA,TRUE
+"bua","Buriat","bxm","A","Mongolia Buriat",NA,"bxm",NA,"mong1330","Q12637238","Buryat language",NA,"Vulnerable","Cyrl","MN",NA,TRUE
+"bua","Buriat","bxr","A","Russia Buriat","Буряад хэлэн","bxr",NA,"russ1264","Q16116629","Buryat language",NA,"Definitely endangered","Cyrl","MN, RU",NA,TRUE
+"bua","Buriat","bxu","A","China Buriat",NA,"bxu",NA,"chin1476","Q20527417","Buryat language",NA,"Vulnerable",NA,"CN, MN, RU",NA,TRUE
+"chm","Mari (Russia)","mhr","A","Eastern Mari","олык марий","mhr",NA,"east2328","Q3906614","Mari language in the Uralic language family",470000,"Vulnerable","Cyrl","RU",NA,TRUE
+"chm","Mari (Russia)","mrj","A","Western Mari","Мары йӹлмӹ","mrj",NA,"west2392",NA,NA,30000,"Vulnerable","Cyrl","RU",NA,TRUE
+"cre","Cree","crj","A","Southern East Cree",NA,"crj",NA,"sout2978","Q12953464",NA,13000,"Vulnerable","Cans","CA",NA,TRUE
+"cre","Cree","crk","A","Plains Cree",NA,"crk",NA,"plai1258","Q56699",NA,4100,"Severely endangered","Cans, Latn","CA",NA,TRUE
+"cre","Cree","crl","A","Northern East Cree",NA,"crl",NA,"nort1552","Q12642195","variety of East Cree spoken in Canada",380,"Vulnerable","Cans","CA",NA,TRUE
+"cre","Cree","crm","A","Moose Cree",NA,"crm",NA,"moos1236","Q3446671",NA,3000,"Vulnerable","Cans","CA",NA,TRUE
+"cre","Cree","csw","A","Swampy Cree",NA,"csw",NA,"swam1239","Q56696","Algonquian language of Canada",1800,"Vulnerable","Cans, Latn","CA",NA,TRUE
+"cre","Cree","cwd","A","Woods Cree",NA,"cwd",NA,"wood1236","Q56305","Algonquian language of Canada",35000,"Vulnerable","Cans, Latn","CA",NA,TRUE
+"del","Delaware","umu","A","Munsee",NA,"umu",NA,"muns1251","Q56547","Algonquian language",2,"Critically endangered","Latn","CA",NA,TRUE
+"del","Delaware","unm","A","Unami",NA,"unm",NA,"unam1242","Q3549180",NA,0,"Extinct","Latn","US",NA,TRUE
+"den","Slave (Athapascan)","scs","A","North Slavey",NA,"scs",NA,"nort2942","Q20628",NA,2100,"Definitely endangered","Cans, Latn","CA",NA,TRUE
+"den","Slave (Athapascan)","xsl","A","South Slavey",NA,"xsl",NA,"sout2959","Q28552",NA,NA,"Definitely endangered","Latn","CA",NA,TRUE
+"din","Dinka","dib","A","South Central Dinka",NA,"dib",NA,"sout2833","Q35154","language of Sudan and South Sudan",250000,"Not endangered","Latn","SS",NA,TRUE
+"din","Dinka","dik","A","Southwestern Dinka",NA,"dik",NA,"sout2832","Q36540","language of South Sudan",450000,"Not endangered","Latn","SS",NA,TRUE
+"din","Dinka","dip","A","Northeastern Dinka",NA,"dip",NA,"nort2815","Q36246","language of South Sudan",5320000,"Not endangered","Latn","SD, SS",NA,TRUE
+"din","Dinka","diw","A","Northwestern Dinka",NA,"diw",NA,"nort2816","Q36249","language of South Sudan",NA,"Not endangered","Latn","SD",NA,TRUE
+"din","Dinka","dks","A","Southeastern Dinka",NA,"dks",NA,"sout2834","Q36538","language of South Sudan",250000,"Not endangered","Latn","SS",NA,TRUE
+"doi","Dogri (macrolanguage)","dgo","A","Dogri",NA,"dgo",NA,"dogr1250","Q32730","Indo-Aryan language spoken in India and Pakistan",2300000,"Not endangered","Deva","IN",NA,TRUE
+"doi","Dogri (macrolanguage)","xnr","A","Kangri","कांगड़ी","xnr",NA,"kang1280","Q2331560",NA,2100000,"Definitely endangered","Deva","IN",NA,TRUE
+"est","Estonian","ekk","A","Standard Estonian","eesti","ekk",NA,"esto1258","Q12361545","normative form of the Estonian language",NA,"Not endangered","Latn","EE",NA,TRUE
+"est","Estonian","vro","A","Võro","Võro kiil","vro",NA,"sout2679","Q32762","language belonging to the Finnic branch of the Uralic languages",70000,"Vulnerable","Latn","EE",NA,TRUE
+"fas","Persian","pes","A","Iranian Persian",NA,"pes",NA,"west2369","Q3513637","dialect of the Persian language",1.2e+07,"Not endangered","Arab","AF, AZ, IQ, IR, TM, TR",NA,TRUE
+"fas","Persian","prs","A","Dari",NA,"prs",NA,"dari1249","Q178440","dialect of the Persian language spoken in Afghanistan",9600000,"Not endangered","Arab","AF",NA,TRUE
+"ful","Fulah","ffm","A","Maasina Fulfulde",NA,"ffm",NA,"maas1239","Q3915322",NA,1500000,"Not endangered","Latn","ML",NA,TRUE
+"ful","Fulah","fub","A","Adamawa Fulfulde",NA,"fub",NA,"adam1253","Q34776","language of Nigeria",NA,"Not endangered","Latn","CM",NA,TRUE
+"ful","Fulah","fuc","A","Pulaar",NA,"fuc",NA,"pula1263","Q1420205","language spoken by Fula people and Tukolor",3700000,"Not endangered","Latn","SN",NA,TRUE
+"ful","Fulah","fue","A","Borgu Fulfulde",NA,"fue",NA,"borg1235","Q12952426",NA,6e+05,"Not endangered","Arab, Latn","BJ",NA,TRUE
+"ful","Fulah","fuf","A","Pular","Fuuta Jalon","fuf",NA,"pula1262","Q3915357",NA,3e+06,"Not endangered","Latn","GN",NA,TRUE
+"ful","Fulah","fuh","A","Western Niger Fulfulde",NA,"fuh",NA,"west2454","Q12952430",NA,NA,"Not endangered","Latn","NE",NA,TRUE
+"ful","Fulah","fui","A","Bagirmi Fulfulde",NA,"fui",NA,"bagi1244","Q11003859",NA,NA,"Not endangered","Arab, Latn","TD",NA,TRUE
+"ful","Fulah","fuq","A","Central-Eastern Niger Fulfulde",NA,"fuq",NA,"cent2018","Q12628799",NA,1600000,"Not endangered","Latn","NE",NA,TRUE
+"ful","Fulah","fuv","A","Nigerian Fulfulde",NA,"fuv",NA,"nige1253","Q36129","language of Nigeria",1.4e+07,"Not endangered","Latn","NG",NA,TRUE
+"gba","Gbaya (Central African Republic)","bdt","A","Bokoto",NA,"bdt",NA,"boko1261","Q4938812",NA,130000,"Not endangered","Latn","CF",NA,TRUE
+"gba","Gbaya (Central African Republic)","gbp","A","Gbaya-Bossangoa","Gbɛ́yá","gbp",NA,"gbay1287","Q11011295",NA,250000,"Not endangered","Latn","CF",NA,TRUE
+"gba","Gbaya (Central African Republic)","gbq","A","Gbaya-Bozoum",NA,"gbq",NA,"gbay1286","Q4952879",NA,NA,"Not endangered","Latn","CF",NA,TRUE
+"gba","Gbaya (Central African Republic)","gmm","A","Gbaya-Mbodomo",NA,"gmm",NA,"gbay1281","Q6799713",NA,8000,"Not endangered","Latn","CF",NA,TRUE
+"gba","Gbaya (Central African Republic)","gso","A","Southwest Gbaya","Ɓìyàndà","gso",NA,"sout2785","Q4919322",NA,2e+05,"Not endangered","Latn","CF",NA,TRUE
+"gba","Gbaya (Central African Republic)","gya","A","Northwest Gbaya",NA,"gya",NA,"nort2775","Q36594",NA,260000,"Not endangered","Latn","CM",NA,TRUE
+"gba","Gbaya (Central African Republic)","mdo","R","Southwest Gbaya",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"gon","Gondi","esg","A","Aheri Gondi","గోండి","esg",NA,NA,NA,NA,150000,NA,"Deva, Gonm","IN",NA,TRUE
+"gon","Gondi","ggo","R","Southern Gondi",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"gon","Gondi","gno","A","Northern Gondi","गोंडी","gno",NA,"nort2702","Q21154926",NA,2700000,"Vulnerable","Deva, Gonm, Telu","IN",NA,TRUE
+"gon","Gondi","wsg","A","Adilabad Gondi",NA,"wsg",NA,NA,NA,NA,3e+05,NA,"Deva, Gonm, Tulu","IN",NA,TRUE
+"grb","Grebo","gbo","A","Northern Grebo","Kréébo","gbo",NA,"nort2810","Q11157042",NA,390000,"Not endangered","Latn","LR",NA,TRUE
+"grb","Grebo","gec","A","Gboloo Grebo","Kréébo","gec",NA,"gbol1235","Q11019342",NA,390000,"Not endangered","Latn","LR",NA,TRUE
+"grb","Grebo","grj","A","Southern Grebo",NA,"grj",NA,"sout2826","Q3914444",NA,NA,"Not endangered","Latn","CI, LR",NA,TRUE
+"grb","Grebo","grv","A","Central Grebo",NA,"grv",NA,"cent2041","Q18385114",NA,390000,"Not endangered","Latn","LR",NA,TRUE
+"grb","Grebo","gry","A","Barclayville Grebo",NA,"gry",NA,"barc1235","Q3914444",NA,390000,"Not endangered","Latn","LR",NA,TRUE
+"grn","Guarani","gnw","A","Western Bolivian Guaraní",NA,"gnw",NA,"west2640","Q3775037",NA,7000,"Definitely endangered","Latn","BO",NA,TRUE
+"grn","Guarani","gug","A","Paraguayan Guaraní",NA,"gug",NA,"para1311","Q17478066",NA,4800000,"Not endangered","Latn","PY",NA,TRUE
+"grn","Guarani","gui","A","Eastern Bolivian Guaraní",NA,"gui",NA,"east2555","Q2963912",NA,81000,"Vulnerable","Latn","BO",NA,TRUE
+"grn","Guarani","gun","A","Mbyá Guaraní",NA,"gun",NA,"mbya1239","Q3915584",NA,15000,"Vulnerable","Latn","PY",NA,TRUE
+"grn","Guarani","nhd","A","Chiripá",NA,"nhd",NA,"chir1286","Q2873230","Dialect of the Guarani language. It is spoken in the Atlantic Forest of Paraguay, Argentina, and south of Brazil",16000,"Definitely endangered","Latn","PY",NA,TRUE
+"hai","Haida","hax","A","Southern Haida",NA,"hax",NA,"sout2956","Q12953543","dialect of Haida, a Canadian indigenous language isolate",13,"Critically endangered","Latn","CA",NA,TRUE
+"hai","Haida","hdn","A","Northern Haida",NA,"hdn",NA,"nort2938","Q20054484","dialect of Haida, a Canadian/Alaskan indigenous language isolate",14,"Critically endangered","Latn","CA",NA,TRUE
+"hbs","Serbo-Croatian","bos","A","Bosnian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"hbs","Serbo-Croatian","cnr","A","Montenegrin","crnogorski","cnr",NA,"mont1282","Q8821","normative variety of Serbo-Croatian in Montenegro",2e+05,"Not endangered","Cyrl, Latn","ME",NA,TRUE
+"hbs","Serbo-Croatian","hrv","A","Croatian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"hbs","Serbo-Croatian","srp","A","Serbian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"hmn","Hmong","blu","R","Hmong Njua",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"hmn","Hmong","cqd","A","Chuanqiandian Cluster Miao",NA,"cqd",NA,"chua1256","Q3307894","West Hmongic dialect continuum",3700000,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hea","A","Northern Qiandong Miao","Hmub","hea",NA,"nort2747","Q3138832",NA,1200000,"Not endangered","Latn","CN",NA,TRUE
+"hmn","Hmong","hma","A","Southern Mashan Hmong",NA,"hma",NA,"sout1556","Q12953560","Hmongic language spoken by the Miao people in China",NA,"Vulnerable","Latn","CN",NA,TRUE
+"hmn","Hmong","hmc","A","Central Huishui Hmong",NA,"hmc",NA,"cent2013","Q12953558","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmd","A","Large Flowery Miao",NA,"hmd",NA,"larg1235","Q1108934",NA,3e+05,"Not endangered","Hmng, Latn, Plrd","CN",NA,TRUE
+"hmn","Hmong","hme","A","Eastern Huishui Hmong",NA,"hme",NA,"east2372","Q12953559","Hmongic language spoken by the Miao people in China",NA,"Vulnerable",NA,"CN",NA,TRUE
+"hmn","Hmong","hmg","A","Southwestern Guiyang Hmong",NA,"hmg",NA,"sout2756","Q27478542","Hmongic language spoken by the Miao people in China",190000,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmh","A","Southwestern Huishui Hmong",NA,"hmh",NA,"sout2755","Q12953565","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmi","A","Northern Huishui Hmong",NA,"hmi",NA,"nort2749","Q27434946","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmj","A","Ge",NA,"hmj",NA,"geee1239","Q11251864",NA,60000,"Vulnerable",NA,"CN",NA,TRUE
+"hmn","Hmong","hml","A","Luopohe Hmong",NA,"hml",NA,"luop1235","Q14468943",NA,40000,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmm","A","Central Mashan Hmong",NA,"hmm",NA,"cent1394","Q12953561","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmp","A","Northern Mashan Hmong",NA,"hmp",NA,"nort1546","Q12953564","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmq","A","Eastern Qiandong Miao",NA,"hmq",NA,"east2370","Q27431369","Hmongic language spoken by the Miao people in China",350000,"Not endangered","Latn","CN",NA,TRUE
+"hmn","Hmong","hms","A","Southern Qiandong Miao",NA,"hms",NA,"sout2754","Q12953562","Hmongic language spoken by the Miao people in China",5e+05,"Not endangered","Latn","CN",NA,TRUE
+"hmn","Hmong","hmw","A","Western Mashan Hmong",NA,"hmw",NA,"west1507","Q12953563","Hmongic language spoken by the Miao people in China",140000,"Vulnerable",NA,"CN",NA,TRUE
+"hmn","Hmong","hmy","A","Southern Guiyang Hmong",NA,"hmy",NA,"sout1555","Q12953553","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","hmz","A","Hmong Shua",NA,"hmz",NA,"hmon1331","Q25559603",NA,250000,"Not endangered","Latn, Plrd","CN",NA,TRUE
+"hmn","Hmong","hnj","A","Hmong Njua","𞄀𞄄𞄰𞄩𞄍𞄜𞄰","hnj",NA,"hmon1264","Q3138831",NA,276000,"Not endangered","Hmng, Laoo, Latn","CN, LA",NA,TRUE
+"hmn","Hmong","hrm","A","Horned Miao",NA,"hrm",NA,"horn1235","Q63213949",NA,8,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","huj","A","Northern Guiyang Hmong",NA,"huj",NA,"nort1545","Q12953554","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","mmr","A","Western Xiangxi Miao","Dut Xongb","mmr",NA,"west2430","Q3307901","Hmongic language spoken by the Miao people in China",9e+05,"Not endangered","Latn","CN",NA,TRUE
+"hmn","Hmong","muq","A","Eastern Xiangxi Miao",NA,"muq",NA,"east2371","Q27431376","Hmongic language spoken by the Miao people in China",NA,"Not endangered",NA,"CN",NA,TRUE
+"hmn","Hmong","mww","A","Hmong Daw","us Hmoob","mww",NA,"hmon1333","Q3138829",NA,3400000,"Not endangered","Hmng, Laoo, Latn","CN, LA",NA,TRUE
+"hmn","Hmong","sfm","A","Small Flowery Miao",NA,"sfm",NA,"smal1236","Q7542773",NA,84000,"Not endangered",NA,"CN",NA,TRUE
+"iku","Inuktitut","ike","A","Eastern Canadian Inuktitut",NA,"ike",NA,"east2534","Q4126517",NA,34000,"Vulnerable","Cans","CA",NA,TRUE
+"iku","Inuktitut","ikt","A","Inuinnaqtun",NA,"ikt",NA,"west2618","Q27990","Inuit language varieties spoken in Canada",NA,"Vulnerable","Cans, Latn","CA",NA,TRUE
+"ipk","Inupiaq","esi","A","North Alaskan Inupiatun",NA,"esi",NA,"nort2943",NA,NA,6700,"Severely endangered","Latn","US",NA,TRUE
+"ipk","Inupiaq","esk","A","Northwest Alaska Inupiatun",NA,"esk",NA,"nort2945","Q25559714",NA,1200,"Severely endangered","Latn","US",NA,TRUE
+"jrb","Judeo-Arabic","ajt","R","Judeo-Tunisian Arabic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"jrb","Judeo-Arabic","aju","A","Judeo-Moroccan Arabic",NA,"aju",NA,"jude1265","Q56595","Judeo-Arabic variety of Morocco",66000,"Not endangered","Hebr","MA",NA,TRUE
+"jrb","Judeo-Arabic","jye","A","Judeo-Yemeni Arabic",NA,"jye",NA,"jude1267","Q56596","Judeo-Arabic variety of Yemen",NA,"Vulnerable",NA,"IL, YE",NA,TRUE
+"jrb","Judeo-Arabic","yhd","A","Judeo-Iraqi Arabic",NA,"yhd",NA,"jude1266","Q56599","Judeo-Arabic variety of Iraqi Jews",97000,"Not endangered","Hebr","IL",NA,TRUE
+"jrb","Judeo-Arabic","yud","A","Judeo-Tripolitanian Arabic",NA,"yud",NA,"jude1264","Q56598","Judeo-Arabic variety of Libya",35000,"Vulnerable",NA,"IL, IT",NA,TRUE
+"kau","Kanuri","kby","A","Manga Kanuri",NA,"kby",NA,"mang1399","Q12952572",NA,480000,"Not endangered","Arab, Latn","NE",NA,TRUE
+"kau","Kanuri","knc","A","Central Kanuri",NA,"knc",NA,"cent2050","Q15637215","Saharan language",3200000,"Not endangered","Latn","NG",NA,TRUE
+"kau","Kanuri","krt","A","Tumari Kanuri",NA,"krt",NA,"tuma1248","Q11033658",NA,NA,"Not endangered","Latn","NE, TD",NA,TRUE
+"kln","Kalenjin","enb","A","Markweeta","Markweeta","enb",NA,"mark1255","Q56874",NA,180000,"Definitely endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","eyo","A","Keiyo","Elgeyo","eyo",NA,"keiy1238","Q56856",NA,310000,"Not endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","niq","A","Nandi","Naandi","niq",NA,"nand1266","Q6956591","Nilotic language",950000,"Not endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","oki","A","Okiek",NA,"oki",NA,"okie1245","Q56367",NA,79000,"Severely endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","pko","A","Pökoot","Pokot","pko",NA,"poko1263","Q36323",NA,370000,"Not endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","sgc","A","Kipsigis","Kipsigis","sgc",NA,"kips1239","Q56339",NA,1900000,"Not endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","spy","A","Sabaot",NA,"spy",NA,"saba1262","Q7395896",NA,240000,"Definitely endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","tec","A","Terik","Nyang’ori","tec",NA,"teri1244","Q3518379",NA,3e+05,"Not endangered","Latn","KE",NA,TRUE
+"kln","Kalenjin","tuy","A","Tugen",NA,"tuy",NA,"tuge1241","Q3541935",NA,140000,"Not endangered","Latn","KE",NA,TRUE
+"kok","Konkani (macrolanguage)","gom","A","Goan Konkani","कोंकणी","gom",NA,"goan1235","Q5575236",NA,4200000,"Not endangered","Deva, Latn","IN",NA,TRUE
+"kok","Konkani (macrolanguage)","knn","A","Konkani",NA,"knn",NA,"konk1267","Q6733387",NA,2400000,"Not endangered","Deva","IN",NA,TRUE
+"kom","Komi","koi","A","Komi-Permyak","Перем коми","koi",NA,"komi1269","Q56318","Uralic language spoken in Perm Krai, Russia",64000,"Vulnerable","Cyrl","RU","Regional official [RU]",TRUE
+"kom","Komi","kpv","A","Komi-Zyrian",NA,"kpv",NA,"komi1268","Q34114",NA,160000,"Vulnerable","Cyrl","RU",NA,TRUE
+"kon","Kongo","kng","A","Koongo",NA,"kng",NA,"koon1244",NA,NA,5e+06,"Not endangered","Latn","CD",NA,TRUE
+"kon","Kongo","kwy","A","San Salvador Kongo",NA,"kwy",NA,"sans1272","Q11017686",NA,NA,"Not endangered","Latn","CD",NA,TRUE
+"kon","Kongo","ldi","A","Laari",NA,"ldi",NA,"laar1238","Q12952693",NA,NA,"Not endangered","Latn","CG",NA,TRUE
+"kpe","Kpelle","gkp","A","Guinea Kpelle","Kpɛlɛɛ","gkp",NA,"guin1254","Q11052867",NA,460000,"Not endangered","Latn","GN",NA,TRUE
+"kpe","Kpelle","xpe","A","Liberia Kpelle","Kpɛlɛɛ","xpe",NA,"libe1247","Q20527226",NA,760000,"Not endangered","Kpel, Latn","LR",NA,TRUE
+"kur","Kurdish","ckb","A","Central Kurdish","سۆرانی","ckb",NA,"cent1972","Q36811","Kurdish language spoken in Iraq and Iran",11100000,"Not endangered","Arab","IQ, IR","Regional official [IQ]",TRUE
+"kur","Kurdish","kmr","A","Northern Kurdish",NA,"kmr",NA,"nort2641","Q36163","a Kurdish language spoken in eastern Turkey, northern Syria, northern Iraq and in Armenia",NA,"Not endangered","Latn","TR",NA,TRUE
+"kur","Kurdish","sdh","A","Southern Kurdish","کوردی خوارین","sdh",NA,"sout2640","Q1496597","variety of Kurdish comprising several dialects of Northwestern Iranian languages spoken in the south of Kurdistan (in upper Mesopotamia, to the west of Iran and east of Iraq)",3100000,"Not endangered","Arab","IR",NA,TRUE
+"lah","Lahnda","hnd","A","Southern Hindko","ہندکو","hnd",NA,"sout2668","Q382273","language of Pakistan",960000,"Not endangered","Arab","PK",NA,TRUE
+"lah","Lahnda","hno","A","Northern Hindko","Hindko","hno",NA,"nort2662","Q6346358","Hindko dialect associated with the region around and north of Abottabad",4e+06,"Not endangered","Arab","PK",NA,TRUE
+"lah","Lahnda","jat","A","Jakati",NA,"jat",NA,"jaka1245","Q4159744","language spoken in Afghanistan",7000,NA,"Arab","AF, UA",NA,TRUE
+"lah","Lahnda","phr","A","Pahari-Potwari","پوٹھواری","phr",NA,"paha1251","Q33739","distinctive western Punjabi dialect",2500000,"Not endangered","Arab","PK",NA,TRUE
+"lah","Lahnda","pmu","R","Mirpur Panjabi",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"lah","Lahnda","pnb","A","Western Panjabi","شاہ مُکھی","pnb",NA,"west2386","Q1389492","spurious identity for purported distinct language of Pakistani Punjab maintained by SIL International, as documented in ISO 639-3 standard and Ethnologue",1.13e+08,"Not endangered","Arab","PK",NA,TRUE
+"lah","Lahnda","skr","A","Saraiki","سرائیکی","skr",NA,"sera1259","Q33902","Indo-Aryan language spoken in Pakistan",2.8e+07,"Not endangered","Arab","PK",NA,TRUE
+"lah","Lahnda","xhe","A","Khetrani",NA,"xhe",NA,"khet1238","Q2614111",NA,1e+05,"Not endangered",NA,"PK",NA,TRUE
+"lav","Latvian","ltg","A","Latgalian","Latgalīšu","ltg",NA,"east2282","Q36212","historical variety of Latvian, sometimes considered a separate Baltic language",170000,"Not endangered","Latn","LV",NA,TRUE
+"lav","Latvian","lvs","A","Standard Latvian","Стандард Латвиан","lvs",NA,"stan1325",NA,NA,1,"Not endangered","Latn","LV",NA,TRUE
+"luy","Luyia","bxk","A","Bukusu","Lubukusu","bxk",NA,"buku1249","Q32930","dialect of the Masaba language",1400000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","ida","A","Idakho-Isukha-Tiriki","Luidakho","ida",NA,"idak1243","Q12952512",NA,6e+05,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lkb","A","Kabras","LuKabarasi","lkb",NA,"kabr1240","Q63257894",NA,250000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lko","A","Khayo",NA,"lko",NA,"khay1238","Q6401095",NA,120000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lks","A","Kisa",NA,"lks",NA,"kisa1263","Q63259208",NA,140000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lri","A","Marachi","Olumarachi","lri",NA,"mara1393","Q6754565",NA,160000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lrm","A","Marama","OluMarama","lrm",NA,"mara1392","Q63259319",NA,150000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lsm","A","Saamia","Olusaamia","lsm",NA,"saam1283","Q35893",NA,480000,"Not endangered","Latn","UG",NA,TRUE
+"luy","Luyia","lto","A","Tsotso",NA,"lto",NA,"tsot1241","Q63259915",NA,120000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lts","A","Tachoni",NA,"lts",NA,"tach1242","Q63283459",NA,120000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","lwg","A","Wanga","Oluwanga","lwg",NA,"wang1294","Q63283476",NA,310000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","nle","A","East Nyala","LuNyala","nle",NA,"east2409","Q25559347",NA,270000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","nyd","A","Nyore","Olunyore","nyd",NA,"nyor1244","Q7071227","Bantu language",310000,"Not endangered","Latn","KE",NA,TRUE
+"luy","Luyia","rag","A","Logooli","Lulogooli","rag",NA,"logo1258","Q6667767",NA,620000,"Not endangered","Latn","KE",NA,TRUE
+"man","Mandingo","emk","A","Eastern Maninkakan",NA,"emk",NA,"east2426","Q11002130",NA,7100000,"Not endangered","Arab, Latn, Nkoo","GN, ML",NA,TRUE
+"man","Mandingo","mku","A","Konyanka Maninka","Maninkakan","mku",NA,"kony1250","Q11163298",NA,210000,"Not endangered","Latn, Nkoo","GN, ML",NA,TRUE
+"man","Mandingo","mlq","A","Western Maninkakan",NA,"mlq",NA,"west2500","Q11028033",NA,1600000,"Not endangered","Latn","ML, SN",NA,TRUE
+"man","Mandingo","mnk","A","Mandinka",NA,"mnk",NA,"mand1436","Q33678","Mande language spoken by the Mandinka people of West Africa",2100000,"Not endangered","Arab, Latn, Nkoo","011, SN",NA,TRUE
+"man","Mandingo","msc","A","Sankaran Maninka",NA,"msc",NA,"sank1253","Q11155812",NA,3300000,"Not endangered","Latn, Nkoo","GN, ML",NA,TRUE
+"man","Mandingo","mwk","A","Kita Maninkakan",NA,"mwk",NA,"kita1249",NA,NA,980000,"Not endangered","Latn","ML",NA,TRUE
+"man","Mandingo","myq","R","Forest Maninka",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"mlg","Malagasy","bhr","A","Bara Malagasy",NA,"bhr",NA,"bara1369","Q2114962",NA,720000,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","bjq","R","Southern Betsimisaraka Malagasy",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"mlg","Malagasy","bmm","A","Northern Betsimisaraka Malagasy","Betsimisaraka","bmm",NA,"nort2890","Q2548276",NA,1300000,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","bzc","A","Southern Betsimisaraka Malagasy","Betsimisaraka","bzc",NA,"sout2920",NA,NA,2e+06,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","msh","A","Masikoro Malagasy",NA,"msh",NA,"masi1268","Q1976816",NA,550000,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","plt","A","Plateau Malagasy",NA,"plt",NA,"plat1254","Q15069308",NA,NA,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","skg","A","Sakalava Malagasy","Sakalava","skg",NA,"saka1291","Q12952768",NA,1210000,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","tdx","A","Tandroy-Mahafaly Malagasy","Antandroy","tdx",NA,"tand1256","Q2852592","dialect of Malagasy",NA,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","tkg","A","Tesaka Malagasy",NA,"tkg",NA,"tesa1236","Q2852547",NA,1100000,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","txy","A","Tanosy Malagasy",NA,"txy",NA,"tano1246","Q2852610",NA,640000,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","xmv","A","Antankarana Malagasy",NA,"xmv",NA,"anta1255","Q2167573",NA,2.5e+07,"Not endangered","Latn","MG",NA,TRUE
+"mlg","Malagasy","xmw","A","Tsimihety Malagasy",NA,"xmw",NA,"tsim1257","Q3541574",NA,1600000,"Not endangered","Latn","MG",NA,TRUE
+"mon","Mongolian","khk","A","Halh Mongolian",NA,"khk",NA,"halh1238","Q6399808",NA,5200000,"Definitely endangered","Cyrl","MN",NA,TRUE
+"mon","Mongolian","mvf","A","Peripheral Mongolian",NA,"mvf",NA,"peri1253","Q3320659",NA,3400000,"Vulnerable","Latn, Mong","CN",NA,TRUE
+"msa","Malay (macrolanguage)","bjn","A","Banjar","Banjar","bjn",NA,"banj1239",NA,NA,4e+06,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","btj","A","Bacanese Malay",NA,"btj",NA,"baca1243","Q8828608","language in North Maluku",4500,"Critically endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","bve","A","Berau Malay",NA,"bve",NA,"bera1262","Q3915770","Coastal Dayak language spoken by Berau people",11000,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","bvu","A","Bukit Malay",NA,"bvu",NA,"buki1247","Q9230148",NA,4100000,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","coa","A","Cocos Islands Malay",NA,"coa",NA,"coco1260","Q3441699","dialect under the Betawic family language spoken in Cocos Islands, Australia",1100,"Definitely endangered","Latn","MY",NA,TRUE
+"msa","Malay (macrolanguage)","dup","A","Duano",NA,"dup",NA,"duan1242","Q3040468",NA,16000,"Definitely endangered","Latn","ID, MY",NA,TRUE
+"msa","Malay (macrolanguage)","hji","A","Haji",NA,"hji",NA,"haji1235","Q5639933","language in Indonesia",NA,"Not endangered",NA,"ID",NA,TRUE
+"msa","Malay (macrolanguage)","ind","A","Indonesian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"msa","Malay (macrolanguage)","jak","A","Jakun",NA,"jak",NA,"jaku1244","Q4216968",NA,NA,"Vulnerable",NA,"MY",NA,TRUE
+"msa","Malay (macrolanguage)","jax","A","Jambi Malay","Baso Jambi","jax",NA,"jamb1236","Q3915769","language in Indonesia",1e+06,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","kvb","A","Kubu",NA,"kvb",NA,"kubu1239","Q6441341","indigenous language of Kubu people native to South Sumatra and Jambi",10000,"Vulnerable","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","kvr","A","Kerinci","Kinci","kvr",NA,"keri1250","Q3195442","Western Sumatran language of Kerinci people originating from Kerinci region in Sumatra",370000,"Vulnerable","Latn, Rjng","ID",NA,TRUE
+"msa","Malay (macrolanguage)","kxd","A","Brunei","Brunei","kxd",NA,"brun1242","Q3182878","standard Malay dialect spoken in Brunei",320000,"Not endangered","Latn","BN",NA,TRUE
+"msa","Malay (macrolanguage)","lce","A","Loncong",NA,"lce",NA,"lonc1237","Q3058192","language in Indonesia",420,"Vulnerable",NA,"ID",NA,TRUE
+"msa","Malay (macrolanguage)","lcf","A","Lubu",NA,"lcf",NA,"lubu1241","Q3264685","language in Indonesia",30000,"Not endangered",NA,"ID",NA,TRUE
+"msa","Malay (macrolanguage)","liw","A","Col",NA,"liw",NA,"coll1240","Q2981948","language in Indonesia",150000,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","max","A","North Moluccan Malay","Bahasa Pasar","max",NA,"nort2828","Q7056136",NA,7e+05,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","meo","A","Kedah Malay","Pelat Utagha","meo",NA,"keda1251","Q4925684","dialect of Malay spoken in Kedah and Perlis",2600000,"Not endangered","Latn","MY",NA,TRUE
+"msa","Malay (macrolanguage)","mfa","A","Pattani Malay","بهاس جاوي","mfa",NA,"patt1249","Q1199751","dialect of Malay spoken in Pattani, Kelantan, and Terengganu",3400000,NA,"Arab","TH",NA,TRUE
+"msa","Malay (macrolanguage)","mfb","A","Bangka","Bahasa Bangka","mfb",NA,"bang1365","Q3258818","Malayic language spoken in Indonesia",340000,"Critically endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","min","A","Minangkabau","Baso Minangkabau","min",NA,"mina1268","Q13324","Minangkabauic language spoken predominantly by the Minangkabau ethnic group",8e+06,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","mly","R","Malay",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"msa","Malay (macrolanguage)","mqg","A","Kota Bangun Kutai Malay",NA,"mqg",NA,"kota1275","Q12952778",NA,3e+05,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","msi","A","Sabah Malay","Sabah Melayu","msi",NA,"saba1263","Q10867404","pidginised local trade language of Sabah",3e+06,"Not endangered","Latn","MY",NA,TRUE
+"msa","Malay (macrolanguage)","mui","A","Musi","Baso Palembang","mui",NA,"musi1241","Q615660","indigenous language spoken by Musi people native to Musi regions in South Sumatra",3100000,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","orn","A","Orang Kanaq",NA,"orn",NA,"oran1258","Q3449510","Aboriginal Malay language",NA,"Severely endangered",NA,"MY",NA,TRUE
+"msa","Malay (macrolanguage)","ors","A","Orang Seletar",NA,"ors",NA,"oran1259","Q4208197",NA,1080,"Definitely endangered",NA,"MY, SG",NA,TRUE
+"msa","Malay (macrolanguage)","pel","A","Pekal",NA,"pel",NA,"peka1242","Q3241781","language in Indonesia",NA,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","pse","A","Central Malay","Bahasa Pasemah","pse",NA,"cent2053","Q3367751","language in Indonesia",1600000,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","tmw","A","Temuan",NA,"tmw",NA,"temu1239","Q3025610",NA,NA,"Definitely endangered",NA,"MY",NA,TRUE
+"msa","Malay (macrolanguage)","urk","A","Urak Lawoi'",NA,"urk",NA,"urak1238","Q2031144",NA,5000,"Definitely endangered","Thai","TH",NA,TRUE
+"msa","Malay (macrolanguage)","vkk","A","Kaur",NA,"vkk",NA,"kaur1269","Q6378867","language in Indonesia",NA,"Not endangered",NA,"ID",NA,TRUE
+"msa","Malay (macrolanguage)","vkt","A","Tenggarong Kutai Malay","Kutai Tenggarong","vkt",NA,"teng1267","Q12683226","Coastal Dayak language spoken by the Tenggarongs",3e+05,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","xmm","A","Manado Malay","Bahasa Manado","xmm",NA,"mala1481","Q1068112","creole language spoken in Manado",850000,"Not endangered","Latn","ID",NA,TRUE
+"msa","Malay (macrolanguage)","zlm","A","Malay",NA,"zlm",NA,"mala1479","Q12636082","colloquial variety of the Malay language spoken in Malaysia, Indonesia, Singapore and Brunei",NA,"Not endangered","Latn","MY",NA,TRUE
+"msa","Malay (macrolanguage)","zmi","A","Negeri Sembilan Malay","bahasa Melayu Negeri Sembilan","zmi",NA,"nege1240","Q3915909","Dialect in Malaysia",390000,"Vulnerable","Latn","MY",NA,TRUE
+"msa","Malay (macrolanguage)","zsm","A","Standard Malay",NA,"zsm",NA,"stan1306","Q15065","standard Malay dialect spoken in Malaysia",NA,"Not endangered","Latn","MY",NA,TRUE
+"mwr","Marwari","dhd","A","Dhundari","ढूंढारी","dhd",NA,"dhun1238","Q633359",NA,9600000,"Not endangered","Deva","IN",NA,TRUE
+"mwr","Marwari","mtr","A","Mewari","मेवाड़ी","mtr",NA,"mewa1249","Q2992857","Indo-Aryan language of India",1300000,"Not endangered","Deva","IN",NA,TRUE
+"mwr","Marwari","mve","A","Marwari (Pakistan)","مارواري","mve",NA,"marw1256",NA,NA,220000,"Not endangered","Arab","PK",NA,TRUE
+"mwr","Marwari","rwr","A","Marwari (India)","मारवाड़ी","rwr",NA,"marw1260",NA,NA,2.2e+07,"Not endangered","Deva","IN",NA,TRUE
+"mwr","Marwari","swv","A","Shekhawati","शेखावाटी","swv",NA,"shek1243","Q3915429",NA,3700000,"Not endangered","Deva","IN",NA,TRUE
+"mwr","Marwari","wry","A","Merwari","मेरवारी","wry",NA,"merw1238","Q11732445",NA,3900000,"Not endangered","Deva","IN",NA,TRUE
+"nep","Nepali (macrolanguage)","dty","A","Dotyali","डोटेली","dty",NA,"doty1234","Q18415595","Indo-Aryan language",760000,"Not endangered","Deva","NP",NA,TRUE
+"nep","Nepali (macrolanguage)","npi","A","Nepali","नेपाली","npi",NA,"nepa1254","Q33823","official language of Nepal",1.6e+07,"Not endangered","Deva","NP",NA,TRUE
+"nor","Norwegian","nno","A","Norwegian Nynorsk",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"nor","Norwegian","nob","A","Norwegian Bokmål",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"oji","Ojibwa","ciw","A","Chippewa",NA,"ciw",NA,"chip1241","Q2963878","Algonquian language; southwestern variety of Ojibwe",NA,"Definitely endangered","Latn","CA, US",NA,TRUE
+"oji","Ojibwa","ojb","A","Northwestern Ojibwa",NA,"ojb",NA,"nort2961","Q7060356","Ojibwe dialect in Canada",20000,"Vulnerable","Cans, Latn","CA",NA,TRUE
+"oji","Ojibwa","ojc","A","Central Ojibwa",NA,"ojc",NA,"cent2136","Q5061548",NA,NA,"Definitely endangered","Latn","CA, US",NA,TRUE
+"oji","Ojibwa","ojg","A","Eastern Ojibwa",NA,"ojg",NA,"east2542","Q5330342",NA,NA,"Definitely endangered","Latn","CA",NA,TRUE
+"oji","Ojibwa","ojs","A","Severn Ojibwa",NA,"ojs",NA,"seve1240","Q56494",NA,15000,"Vulnerable","Cans","CA",NA,TRUE
+"oji","Ojibwa","ojw","A","Western Ojibwa",NA,"ojw",NA,"west1510","Q3474222",NA,NA,"Definitely endangered","Latn","CA",NA,TRUE
+"oji","Ojibwa","otw","A","Ottawa",NA,"otw",NA,"otta1242","Q133678","Native American dialect",13000,"Severely endangered","Latn","CA",NA,TRUE
+"ori","Oriya (macrolanguage)","ory","A","Odia",NA,"ory",NA,"oriy1255",NA,NA,3.5e+07,"Not endangered","Orya","IN",NA,TRUE
+"ori","Oriya (macrolanguage)","spv","A","Sambalpuri","ସମ୍ବଲପୁରୀ","spv",NA,"samb1325",NA,NA,520000,"Not endangered","Orya","IN",NA,TRUE
+"orm","Oromo","gax","A","Borana-Arsi-Guji Oromo",NA,"gax",NA,"bora1271","Q2910610",NA,3900000,"Not endangered","Latn","ET",NA,TRUE
+"orm","Oromo","gaz","A","West Central Oromo",NA,"gaz",NA,"west2721","Q12639015",NA,NA,"Not endangered","Latn","ET",NA,TRUE
+"orm","Oromo","hae","A","Eastern Oromo","Oromoo","hae",NA,"east2652","Q5330355",NA,4500000,"Not endangered","Latn","ET",NA,TRUE
+"orm","Oromo","orc","A","Orma",NA,"orc",NA,"orma1241","Q2919128",NA,69000,"Not endangered","Latn","KE",NA,TRUE
+"pus","Pushto","pbt","A","Southern Pashto",NA,"pbt",NA,"sout2649","Q16112855","Pashto dialect",14920000,"Not endangered","Arab","AF, IR, PK, TJ, TM",NA,TRUE
+"pus","Pushto","pbu","A","Northern Pashto",NA,"pbu",NA,"nort2646","Q12642194",NA,NA,"Not endangered","Arab","AF, IN, PK",NA,TRUE
+"pus","Pushto","pst","A","Central Pashto",NA,"pst",NA,"cent1973","Q5061628",NA,6500000,"Not endangered","Arab, Latn","PK",NA,TRUE
+"que","Quechua","cqu","R","Chilean Quechua",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"que","Quechua","qub","A","Huallaga Huánuco Quechua",NA,"qub",NA,"hual1241","Q35492",NA,40000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qud","A","Calderón Highland Quichua",NA,"qud",NA,"cald1236","Q25559690",NA,1200000,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","quf","A","Lambayeque Quechua",NA,"quf",NA,"lamb1276","Q35519","language spoken in Lambayeque, Peru",20000,"Definitely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qug","A","Chimborazo Highland Quichua",NA,"qug",NA,"chim1302","Q12953845",NA,960000,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","quh","A","South Bolivian Quechua","Runasimi","quh",NA,"sout2991","Q1307730",NA,2800000,"Not endangered","Latn","BO",NA,TRUE
+"que","Quechua","quk","A","Chachapoyas Quechua",NA,"quk",NA,"chac1250","Q35138",NA,NA,"Definitely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qul","A","North Bolivian Quechua",NA,"qul",NA,"nort2976","Q3409819",NA,120000,"Not endangered","Latn","BO",NA,TRUE
+"que","Quechua","qup","A","Southern Pastaza Quechua",NA,"qup",NA,"sout2990","Q25559692",NA,1200000,"Not endangered","Latn","PE",NA,TRUE
+"que","Quechua","qur","A","Yanahuanca Pasco Quechua",NA,"qur",NA,"yana1272","Q42305075",NA,NA,"Definitely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qus","A","Santiago del Estero Quichua",NA,"qus",NA,"sant1432","Q35168","dialect of Southern Quechua spoken in Argentina",60000,"Vulnerable","Latn","AR",NA,TRUE
+"que","Quechua","quw","A","Tena Lowland Quichua",NA,"quw",NA,"tena1240","Q62387937",NA,1200000,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","qux","A","Yauyos Quechua",NA,"qux",NA,"yauy1235","Q36964",NA,13000,"Critically endangered","Latn","PE",NA,TRUE
+"que","Quechua","quy","A","Ayacucho Quechua","Chanka runasimi","quy",NA,"ayac1239","Q35145","dialect of the Southern Quechua language",9e+05,"Not endangered","Latn","PE",NA,TRUE
+"que","Quechua","quz","A","Cusco Quechua",NA,"quz",NA,"cusc1236","Q35147",NA,1500000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qva","A","Ambo-Pasco Quechua",NA,"qva",NA,"ambo1252","Q12953835",NA,90000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qvc","A","Cajamarca Quechua",NA,"qvc",NA,"caja1238","Q35112",NA,30000,"Definitely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qve","A","Eastern Apurímac Quechua",NA,"qve",NA,"east2551","Q12953838",NA,1500000,"Not endangered","Latn","PE",NA,TRUE
+"que","Quechua","qvh","A","Huamalíes-Dos de Mayo Huánuco Quechua",NA,"qvh",NA,"huam1248","Q25559676",NA,72000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qvi","A","Imbabura Highland Quichua",NA,"qvi",NA,"imba1240","Q25559701",NA,3e+05,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","qvj","A","Loja Highland Quichua",NA,"qvj",NA,"loja1235","Q25559700",NA,30000,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","qvl","A","Cajatambo North Lima Quechua",NA,"qvl",NA,"caja1239","Q12953839",NA,NA,"Severely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qvm","A","Margos-Yarowilca-Lauricocha Quechua",NA,"qvm",NA,"marg1254","Q25559675",NA,83000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qvn","A","North Junín Quechua",NA,"qvn",NA,"nort2980","Q12953844","Language dialect of Quechua",60000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qvo","A","Napo Lowland Quechua",NA,"qvo",NA,"napo1242","Q25559706",NA,1200000,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","qvp","A","Pacaraos Quechua",NA,"qvp",NA,"paca1245","Q36331",NA,NA,"Severely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qvs","A","San Martín Quechua",NA,"qvs",NA,"sanm1289","Q35880",NA,15000,"Severely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qvw","A","Huaylla Wanca Quechua","Wanka Nunashimi","qvw",NA,"huay1241","Q65659285","Quechua dialect spoken in Huancayo and Chupaca provinces",270000,"Not endangered","Latn","PE",NA,TRUE
+"que","Quechua","qvz","A","Northern Pastaza Quichua",NA,"qvz",NA,"nort2973","Q12953848",NA,NA,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","qwa","A","Corongo Ancash Quechua",NA,"qwa",NA,"coro1247","Q12953841",NA,4000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qwc","A","Classical Quechua",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"que","Quechua","qwh","A","Huaylas Ancash Quechua","Nunashimi","qwh",NA,"huay1240","Q6094343","Quechuan language of Peru spoken in the Callejón de Huaylas",340000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qws","A","Sihuas Ancash Quechua",NA,"qws",NA,"sihu1235","Q42308366",NA,10000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qxa","A","Chiquián Ancash Quechua",NA,"qxa",NA,"chiq1249","Q25559677",NA,190000,"Severely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qxc","A","Chincha Quechua",NA,"qxc",NA,"chin1483","Q25559686",NA,NA,"Extinct","Latn","PE",NA,TRUE
+"que","Quechua","qxh","A","Panao Huánuco Quechua",NA,"qxh",NA,"pana1306","Q63308389",NA,190000,"Severely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qxl","A","Salasaca Highland Quichua",NA,"qxl",NA,"sala1272","Q12953847",NA,1200000,"Definitely endangered","Latn","EC",NA,TRUE
+"que","Quechua","qxn","A","Northern Conchucos Ancash Quechua",NA,"qxn",NA,"nort2979","Q25559688",NA,250000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qxo","A","Southern Conchucos Ancash Quechua","Huaylay","qxo",NA,"sout2992","Q12953840",NA,920000,"Vulnerable","Latn","PE",NA,TRUE
+"que","Quechua","qxp","A","Puno Quechua",NA,"qxp",NA,"puno1238","Q7260479","dialect of the Southern Quechua language",5e+05,"Not endangered","Latn","PE",NA,TRUE
+"que","Quechua","qxr","A","Cañar Highland Quichua",NA,"qxr",NA,"cana1262","Q12953846",NA,2e+05,"Vulnerable","Latn","EC",NA,TRUE
+"que","Quechua","qxt","A","Santa Ana de Tusi Pasco Quechua",NA,"qxt",NA,"sant1433","Q12953831",NA,NA,"Severely endangered","Latn","PE",NA,TRUE
+"que","Quechua","qxu","A","Arequipa-La Unión Quechua",NA,"qxu",NA,"areq1237","Q12953837",NA,19000,"Not endangered","Latn","PE",NA,TRUE
+"que","Quechua","qxw","A","Jauja Wanca Quechua",NA,"qxw",NA,"jauj1238","Q12953843","dialect of Wanka Quechua, a variety of the Quechua language spoken in Jauja",23000,"Severely endangered","Latn","PE",NA,TRUE
+"raj","Rajasthani","bgq","A","Bagri","बागड़ी","bgq",NA,"bagr1243","Q2426319","Indian language",2300000,"Not endangered","Arab, Deva","IN, PK",NA,TRUE
+"raj","Rajasthani","gda","A","Gade Lohar",NA,"gda",NA,"gade1236","Q12953671",NA,20000,"Not endangered","Sind","PK",NA,TRUE
+"raj","Rajasthani","gju","A","Gujari","گوجری","gju",NA,"guja1253","Q3241731","variety of Rajasthani spoken by the Gujars",1460000,"Not endangered","Arab, Deva","IN, PK",NA,TRUE
+"raj","Rajasthani","hoj","A","Hadothi","हरौती","hoj",NA,"hado1235","Q33227","dialect of Rajasthani language, spoken in the Hadoti region of India",1100000,"Not endangered","Deva","IN",NA,TRUE
+"raj","Rajasthani","mup","A","Malvi","मालवी","mup",NA,"malv1243","Q33413",NA,5400000,"Not endangered","Deva","IN",NA,TRUE
+"raj","Rajasthani","wbr","A","Wagdi","वागड़ी","wbr",NA,"wagd1238","Q7959490",NA,2e+06,"Not endangered","Deva","IN",NA,TRUE
+"rom","Romany","rmc","A","Carpathian Romani",NA,"rmc",NA,"carp1235","Q5045611","group of dialects of the Romani language",120000,"Not endangered","Latn","UA",NA,TRUE
+"rom","Romany","rmf","A","Kalo Finnish Romani","kaalengo tšimb","rmf",NA,"kalo1256","Q2093214",NA,5000,"Definitely endangered","Latn","FI",NA,TRUE
+"rom","Romany","rml","A","Baltic Romani",NA,"rml",NA,"balt1257","Q513736",NA,50000,"Vulnerable","Cyrl","PL",NA,TRUE
+"rom","Romany","rmn","A","Balkan Romani","Романи","rmn",NA,"balk1252","Q1256701","Romani language",590000,"Not endangered","Cyrl, Grek, Latn","BG, GR, MK, RS",NA,TRUE
+"rom","Romany","rmo","A","Sinte Romani",NA,"rmo",NA,"sint1235","Q1793299",NA,24000,"Not endangered","Latn","AT, CH, CZ, DE, FR, HR, IT, KZ, ME, NL, PL, RS, SI",NA,TRUE
+"rom","Romany","rmw","A","Welsh Romani",NA,"rmw",NA,"wels1246","Q2097387",NA,NA,"Definitely endangered",NA,"GB",NA,TRUE
+"rom","Romany","rmy","A","Vlax Romani","Romani čhib","rmy",NA,"vlax1238","Q2669199","dialect group of the Romani language",310000,"Not endangered","Latn","AL, RO",NA,TRUE
+"san","Sanskrit","cls","A","Classical Sanskrit",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"san","Sanskrit","vsn","A","Vedic Sanskrit",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"sqi","Albanian","aae","A","Arbëreshë Albanian",NA,"aae",NA,"arbe1236","Q1075302","Albanian dialect spoken in Italy",1e+05,"Vulnerable","Latn","IT",NA,TRUE
+"sqi","Albanian","aat","A","Arvanitika Albanian",NA,"aat",NA,"arva1236","Q29347","variety of Albanian traditionally spoken languages by the Arvanites, a population group in Greece",50000,"Vulnerable","Latn","GR",NA,TRUE
+"sqi","Albanian","aln","A","Gheg Albanian",NA,"aln",NA,"gheg1238","Q181037","one of the two major varieties of Albanian",4100000,"Not endangered","Latn","RS",NA,TRUE
+"sqi","Albanian","als","A","Tosk Albanian","Schwyzertüütsch","als",NA,"tosk1239","Q180937","southern group of dialects of the Albanian language",1800000,"Not endangered","Latn","AL",NA,TRUE
+"srd","Sardinian","sdc","A","Sassarese Sardinian","sassaresu","sdc",NA,"sass1235","Q845441","Romance (transitional) language variety, closely related to Sardinian and especially Corsican",110000,"Not endangered","Latn","IT",NA,TRUE
+"srd","Sardinian","sdn","A","Gallurese Sardinian",NA,"sdn",NA,"gall1276","Q612220",NA,1e+05,"Not endangered","Latn","IT",NA,TRUE
+"srd","Sardinian","src","A","Logudorese Sardinian","sardu logudoresu","src",NA,"logu1236","Q777974","dialect of the Sardinian language",5e+05,"Definitely endangered","Latn","IT",NA,TRUE
+"srd","Sardinian","sro","A","Campidanese Sardinian","sardu campidanesu","sro",NA,"camp1261","Q35348","dialect of the Sardinian language",1e+06,"Vulnerable","Latn","IT",NA,TRUE
+"swa","Swahili (macrolanguage)","swc","A","Congo Swahili",NA,"swc",NA,"cong1236","Q10961696",NA,9100000,"Not endangered","Latn","CD",NA,TRUE
+"swa","Swahili (macrolanguage)","swh","A","Swahili",NA,"swh",NA,"swah1253","Q3197533","language with code ""swh"", official variety of swahili",NA,"Not endangered","Latn","BI, KE, MZ, RW, SO, TZ, UG",NA,TRUE
+"syr","Syriac","aii","A","Assyrian Neo-Aramaic","ܣܘܪܝܬ","aii",NA,"assy1241","Q29440","Neo-Aramaic dialect",830000,"Vulnerable","Syrc, Syrn","145, IQ, SY",NA,TRUE
+"syr","Syriac","cld","A","Chaldean Neo-Aramaic",NA,"cld",NA,"chal1275","Q33236","Northeastern Neo-Aramaic dialect spoken on the plain of Mosul in northern Iraq",8e+05,"Definitely endangered","Syrn","IQ",NA,TRUE
+"tmh","Tamashek","taq","A","Tamasheq","Tamasheq","taq",NA,"tama1365","Q4670066",NA,5e+05,"Definitely endangered","Latn","ML",NA,TRUE
+"tmh","Tamashek","thv","A","Tahaggart Tamahaq",NA,"thv",NA,"taha1241","Q56703",NA,132000,"Vulnerable",NA,"DZ, LY, ML, NE",NA,TRUE
+"tmh","Tamashek","thz","A","Tayart Tamajeq",NA,"thz",NA,"taya1257","Q56388",NA,250000,"Vulnerable","Latn, Tfng","NE",NA,TRUE
+"tmh","Tamashek","ttq","A","Tawallammat Tamajaq",NA,"ttq",NA,"tawa1286","Q56390",NA,8e+05,"Not endangered","Arab, Latn, Tfng","NE",NA,TRUE
+"uzb","Uzbek","uzn","A","Northern Uzbek",NA,"uzn",NA,"nort2690","Q1066766",NA,2.8e+07,"Not endangered","Cyrl, Latn","UZ",NA,TRUE
+"uzb","Uzbek","uzs","A","Southern Uzbek","اوزبیک تورکچه","uzs",NA,"sout2699","Q1066787","Variant of the Uzbek language spoken in modern day Afghanistan",4200000,"Not endangered","Arab","AF",NA,TRUE
+"yid","Yiddish","ydd","A","Eastern Yiddish",NA,"ydd",NA,"east2295","Q12953980",NA,1500000,"Not endangered","Hebr","IL",NA,TRUE
+"yid","Yiddish","yih","A","Western Yiddish",NA,"yih",NA,"west2361","Q6593714",NA,NA,"Extinct",NA,"BE, CH, DE, FR, HU, IL, NL",NA,TRUE
+"zap","Zapotec","zaa","A","Sierra de Juárez Zapotec",NA,"zaa",NA,"sier1250","Q12953989",NA,7000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zab","A","Western Tlacolula Valley Zapotec",NA,"zab",NA,"sanj1284","Q5614751",NA,29000,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zac","A","Ocotlán Zapotec",NA,"zac",NA,"ocot1244","Q7076643",NA,15000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zad","A","Cajonos Zapotec",NA,"zad",NA,"cajo1238","Q5017997",NA,5000,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zae","A","Yareni Zapotec",NA,"zae",NA,"yare1249","Q12645368",NA,7000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zaf","A","Ayoquesco Zapotec",NA,"zaf",NA,"ayoq1235","Q4831570",NA,880,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zai","A","Isthmus Zapotec",NA,"zai",NA,"isth1244","Q56728",NA,85000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zam","A","Miahuatlán Zapotec",NA,"zam",NA,"miah1235","Q13541830",NA,1000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zao","A","Ozolotepec Zapotec",NA,"zao",NA,"ozol1235","Q7116610",NA,6500,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zaq","A","Aloápam Zapotec",NA,"zaq",NA,"aloa1235","Q4734726",NA,3400,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zar","A","Rincón Zapotec",NA,"zar",NA,"rinc1236","Q7334628",NA,41000,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zas","A","Santo Domingo Albarradas Zapotec",NA,"zas",NA,"sant1450","Q4709425",NA,5500,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zat","A","Tabaa Zapotec",NA,"zat",NA,"taba1268","Q7672849",NA,2000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zav","A","Yatzachi Zapotec",NA,"zav",NA,"yatz1235","Q8050301",NA,2500,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zaw","A","Mitla Zapotec",NA,"zaw",NA,"mitl1236","Q3053288",NA,20000,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zax","A","Xadani Zapotec",NA,"zax",NA,"xada1235","Q8042823","Zapotec language of Oaxaca, Mexico",NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zca","A","Coatecas Altas Zapotec",NA,"zca",NA,"coat1244","Q5138603",NA,4900,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zcd","A","Las Delicias Zapotec",NA,"zcd",NA,NA,NA,NA,41000,NA,"Latn","MX",NA,TRUE
+"zap","Zapotec","zoo","A","Asunción Mixtepec Zapotec",NA,"zoo",NA,"asun1236","Q4811888",NA,NA,"Severely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpa","A","Lachiguiri Zapotec",NA,"zpa",NA,"lach1250","Q6468403",NA,5000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpb","A","Yautepec Zapotec",NA,"zpb",NA,"yaut1235","Q7413392",NA,NA,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpc","A","Choapan Zapotec",NA,"zpc",NA,"choa1237","Q5103425",NA,12000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpd","A","Southeastern Ixtlán Zapotec",NA,"zpd",NA,"sout3005","Q8050392",NA,6000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpe","A","Petapa Zapotec",NA,"zpe",NA,"peta1247","Q7171675",NA,8000,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpf","A","San Pedro Quiatoni Zapotec",NA,"zpf",NA,"sanp1261","Q7271640",NA,15000,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpg","A","Guevea De Humboldt Zapotec",NA,"zpg",NA,"guev1238","Q13459953",NA,4700,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zph","A","Totomachapan Zapotec",NA,"zph",NA,"toto1308","Q7828390",NA,NA,"Severely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpi","A","Santa María Quiegolani Zapotec",NA,"zpi",NA,"sant1451","Q7271823",NA,2000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpj","A","Quiavicuzas Zapotec",NA,"zpj",NA,"quia1235","Q7271642",NA,4000,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpk","A","Tlacolulita Zapotec",NA,"zpk",NA,"tlac1240","Q7810685",NA,NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpl","A","Lachixío Zapotec",NA,"zpl",NA,"lach1249","Q6468420",NA,3000,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpm","A","Mixtepec Zapotec",NA,"zpm",NA,"mixt1426","Q7414598",NA,7000,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpn","A","Santa Inés Yatzechi Zapotec",NA,"zpn",NA,"sant1447","Q8050300",NA,2200,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpo","A","Amatlán Zapotec",NA,"zpo",NA,"amat1238","Q4740613",NA,10000,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpp","A","El Alto Zapotec",NA,"zpp",NA,"elal1235","Q8074100","Zapotec language of Oaxaca, Mexico",NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpq","A","Zoogocho Zapotec",NA,"zpq",NA,"zoog1238","Q8074100","Zapotec language of Oaxaca, Mexico",1400,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpr","A","Santiago Xanica Zapotec",NA,"zpr",NA,"sant1452","Q8042924",NA,2500,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zps","A","Coatlán Zapotec",NA,"zps",NA,"coat1243","Q7420514",NA,NA,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpt","A","San Vicente Coatlán Zapotec",NA,"zpt",NA,"sanv1242","Q13541831",NA,3400,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpu","A","Yalálag Zapotec",NA,"zpu",NA,"yala1267","Q8047534",NA,3500,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpv","A","Chichicapan Zapotec",NA,"zpv",NA,"chic1274","Q5096050",NA,2700,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpw","A","Zaniza Zapotec",NA,"zpw",NA,"zani1235","Q8066220",NA,NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpx","A","San Baltazar Loxicha Zapotec",NA,"zpx",NA,"sanb1241","Q7413390",NA,NA,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","zpy","A","Mazaltepec Zapotec",NA,"zpy",NA,"maza1294","Q6798223",NA,2200,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zpz","A","Texmelucan Zapotec",NA,"zpz",NA,"texm1235","Q7708357",NA,4100,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zsr","A","Southern Rincon Zapotec",NA,"zsr",NA,"sout3004","Q12954000",NA,41000,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","ztc","R","Lachirioag Zapotec",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zap","Zapotec","zte","A","Elotepec Zapotec",NA,"zte",NA,"elot1235","Q5367223",NA,NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","ztg","A","Xanaguía Zapotec",NA,"ztg",NA,"xana1235","Q8042887",NA,2500,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","ztl","A","Lapaguía-Guivini Zapotec",NA,"ztl",NA,"lapa1249","Q6488084",NA,4200,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","ztm","A","San Agustín Mixtepec Zapotec",NA,"ztm",NA,"sana1286","Q7413220",NA,NA,"Severely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","ztn","A","Santa Catarina Albarradas Zapotec",NA,"ztn",NA,"sant1448","Q7419277",NA,NA,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","ztp","A","Loxicha Zapotec",NA,"ztp",NA,"loxi1235","Q6694268",NA,NA,"Vulnerable","Latn","MX",NA,TRUE
+"zap","Zapotec","ztq","A","Quioquitani-Quierí Zapotec",NA,"ztq",NA,"quio1241","Q3574818",NA,4000,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zts","A","Tilquiapan Zapotec",NA,"zts",NA,"tilq1235","Q7802959",NA,5000,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","ztt","A","Tejalapan Zapotec",NA,"ztt",NA,"teja1235","Q13510225",NA,NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","ztu","A","Güilá Zapotec",NA,"ztu",NA,"guil1236","Q5626813",NA,9500,"Not endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","ztx","A","Zaachila Zapotec",NA,"ztx",NA,"zaac1239","Q8063390",NA,NA,"Definitely endangered","Latn","MX",NA,TRUE
+"zap","Zapotec","zty","A","Yatee Zapotec",NA,"zty",NA,"yate1242","Q3574815",NA,5000,"Not endangered","Latn","MX",NA,TRUE
+"zha","Zhuang","ccx","R","Northern Zhuang",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zha","Zhuang","ccy","R","Southern Zhuang",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zha","Zhuang","zch","A","Central Hongshuihe Zhuang",NA,"zch",NA,"cent2009","Q63341278",NA,NA,"Not endangered",NA,"CN",NA,TRUE
+"zha","Zhuang","zeh","A","Eastern Hongshuihe Zhuang",NA,"zeh",NA,"east2363","Q13634282",NA,1200000,"Not endangered",NA,"CN",NA,TRUE
+"zha","Zhuang","zgb","A","Guibei Zhuang",NA,"zgb",NA,"guib1245","Q17651534",NA,NA,"Not endangered",NA,"CN",NA,TRUE
+"zha","Zhuang","zgm","A","Minz Zhuang",NA,"zgm",NA,"minz1236","Q6862618",NA,180000,"Not endangered","Hani","CN",NA,TRUE
+"zha","Zhuang","zgn","A","Guibian Zhuang",NA,"zgn",NA,"guib1244","Q17651536",NA,1e+06,"Not endangered",NA,"CN",NA,TRUE
+"zha","Zhuang","zhd","A","Dai Zhuang",NA,"zhd",NA,"daiz1235","Q5209052",NA,1e+05,"Vulnerable","Hani, Latn","CN",NA,TRUE
+"zha","Zhuang","zhn","A","Nong Zhuang",NA,"zhn",NA,"nong1247","Q7049385",NA,6e+05,"Not endangered","Latn","CN",NA,TRUE
+"zha","Zhuang","zlj","A","Liujiang Zhuang",NA,"zlj",NA,"liuj1238","Q17651540",NA,NA,"Not endangered",NA,"CN",NA,TRUE
+"zha","Zhuang","zln","A","Lianshan Zhuang",NA,"zln",NA,"lian1252","Q63341346",NA,NA,NA,NA,"CN",NA,TRUE
+"zha","Zhuang","zlq","A","Liuqian Zhuang",NA,"zlq",NA,"liuq1235","Q63341349",NA,NA,"Vulnerable",NA,"CN",NA,TRUE
+"zha","Zhuang","zqe","A","Qiubei Zhuang",NA,"zqe",NA,"qiub1238","Q17651542",NA,140000,"Not endangered","Hani, Latn","CN",NA,TRUE
+"zha","Zhuang","zyb","A","Yongbei Zhuang",NA,"zyb",NA,"yong1276","Q8054983",NA,2e+06,"Not endangered","Hani, Latn","CN",NA,TRUE
+"zha","Zhuang","zyg","A","Yang Zhuang",NA,"zyg",NA,"yang1286","Q8048537",NA,NA,"Not endangered",NA,"CN, VN",NA,TRUE
+"zha","Zhuang","zyj","A","Youjiang Zhuang","Gangjdoj","zyj",NA,"youj1238","Q8057765",NA,870000,"Not endangered","Latn","CN",NA,TRUE
+"zha","Zhuang","zyn","A","Yongnan Zhuang",NA,"zyn",NA,"yong1275","Q8055032",NA,NA,"Not endangered",NA,"CN, VN",NA,TRUE
+"zha","Zhuang","zzj","A","Zuojiang Zhuang",NA,"zzj",NA,"zuoj1238","Q13848149","Dialect-bund in Zhuang languages",NA,"Not endangered","Latn","CN, VN",NA,TRUE
+"zho","Chinese","cdo","A","Min Dong Chinese","Mìng-dĕ̤ng-ngṳ̄","cdo",NA,"mind1253","Q36455","branch of the Min group of Sinitic languages of China",9500000,"Not endangered","Latn","CN",NA,TRUE
+"zho","Chinese","cjy","A","Jinyu Chinese","晋语","cjy",NA,"jiny1235","Q56479","branch of Chinese spoken in parts of northern China",6.3e+07,"Not endangered","Hans","CN",NA,TRUE
+"zho","Chinese","cmn","A","Mandarin Chinese","普通话","cmn",NA,"mand1415","Q9192","major branch of Chinese spoken across most of northern and southwestern China",1288700000,"Not endangered","Hans, Hant, Latn","CN, HK, SG, TW","Official [TW]",TRUE
+"zho","Chinese","cnp","A","Northern Ping Chinese",NA,"cnp",NA,NA,NA,NA,NA,NA,"Hans","CN",NA,TRUE
+"zho","Chinese","cpx","A","Pu-Xian Chinese","Pó-sing-gṳ̂","cpx",NA,"puxi1243","Q56583",NA,2600000,"Not endangered","Latn","CN",NA,TRUE
+"zho","Chinese","csp","A","Southern Ping Chinese",NA,"csp",NA,NA,NA,NA,NA,NA,"Hans","CN",NA,TRUE
+"zho","Chinese","czh","A","Huizhou Chinese","徽州話","czh",NA,"huiz1242","Q56546","Sinitic language",4600000,"Not endangered",NA,"CN",NA,TRUE
+"zho","Chinese","czo","A","Min Zhong Chinese","Mǐnzhōngyǔ","czo",NA,"minz1235","Q56435",NA,NA,"Not endangered","Latn","CN",NA,TRUE
+"zho","Chinese","gan","A","Gan Chinese","贛語","gan",NA,"ganc1239","Q33475","member of the Sinitic languages of the Sino-Tibetan language family spoken as the native language by the people in the Jiangxi province of China",2.4e+07,"Not endangered","Hant","CN",NA,TRUE
+"zho","Chinese","hak","A","Hakka Chinese","客家話","hak",NA,"hakk1236","Q33375","primary branch of Chinese originating in Southern China",3.2e+07,"Not endangered","Latn","CN",NA,TRUE
+"zho","Chinese","hnm","A","Hainanese",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zho","Chinese","hsn","A","Xiang Chinese","湘語","hsn",NA,"xian1251","Q13220","Chinese language spoken mainly in Hunan province",4e+07,"Not endangered","Hans, Hant, Latn","CN",NA,TRUE
+"zho","Chinese","luh","A","Leizhou Chinese",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zho","Chinese","lzh","A","Literary Chinese",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zho","Chinese","mnp","A","Min Bei Chinese","Mâing-bă̤-ngṳ̌","mnp",NA,"minb1244","Q36457","Chinese language",2200000,"Not endangered","Latn","CN",NA,TRUE
+"zho","Chinese","nan","A","Min Nan Chinese","Min Nan","nan",NA,"minn1241","Q36495","branch of the Min Chinese language",4.2e+07,"Not endangered","Hans, Hant, Latn","CN, TW",NA,TRUE
+"zho","Chinese","sjc","A","Shaojiang Chinese",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+"zho","Chinese","wuu","A","Wu Chinese","吳語","wuu",NA,"wuch1236","Q34290","Sinitic language",8.4e+07,"Not endangered","Hans","CN",NA,TRUE
+"zho","Chinese","yue","A","Yue Chinese","廣東話","yue",NA,"yuec1235","Q7033959","primary branch of Chinese spoken in southern China",7.9e+07,"Not endangered","Hans, Hant","CN, HK, MO",NA,TRUE
+"zza","Zaza","diq","A","Dimli","Dimilkî","diq",NA,"diml1238",NA,NA,1600000,"Vulnerable","Latn","TR",NA,TRUE
+"zza","Zaza","kiu","A","Kirmanjki","Kirmanckî","kiu",NA,"kirm1248","Q6023868","dialect of Zazaki",160000,"Not endangered","Latn","TR",NA,TRUE

@@ -1,0 +1,482 @@
+---
+title: "Bolivia Municipality Wikipedia & Wikidata Cleanup Tracker"
+author: "Carwil Bjork-James"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+editor: visual
+---
+
+# Overview
+
+This document tracks the state of English Wikipedia pages and Wikidata items for Bolivia's 340 municipalities. It checks:
+
+1.  **Wikidata completeness**: Are all 339 municipalities represented as `instance of: municipality of Bolivia` (Q1062710)?
+2.  **Wikipedia category coverage**: Which pages exist in the `Municipalities of Bolivia` category tree?
+3.  **Expected page existence**: For each of 336 expected municipality page titles, does the page exist?
+4.  **Wikidata item type**: For existing pages not matched to Wikidata municipality items, is the linked Wikidata item actually a province, locality, or something else?
+
+Re-render this document after editing Wikipedia/Wikidata to update all tables.
+
+```{r setup}
+#| message: false
+library(tidyverse)
+library(httr2)
+library(httr)
+library(jsonlite)
+library(WikipediR)
+library(glue)
+library(knitr)
+
+source("src/wikipedia-tools.R")
+source("get_wikidata_instances.R")
+```
+
+# 1. Expected municipality page names
+
+The canonical list of 336 expected Wikipedia page titles was manually constructed from INE's 340-municipality list (`muni_id_lookup_table`), applying Wikipedia disambiguation conventions (e.g. "Municipality, Department" for shared names). Four capital-city municipalities use their city page name instead.
+
+This mapping is saved in `data/page_dept_map.rds`.
+
+```{r load-page-names}
+page_dept_map <- readRDS("data/page_dept_map.rds")
+muni_pages <- page_dept_map$page
+
+message(length(muni_pages), " expected municipality page titles")
+```
+
+# 2. Query Wikidata for municipality items
+
+Retrieve all Wikidata items that are `instance of: municipality of Bolivia` (Q1062710), with their English Wikipedia sitelinks.
+
+```{r wikidata-query}
+#| cache: true
+wd_munis <- get_wikidata_instances(
+  "Q1062710",
+  property = c("P131"),
+  property_names = c("located_in"),
+  country = "Q750",
+  languages = c("en", "es"),
+  limit = 500
+)
+
+# Extract English Wikipedia article title from sitelinks
+wd_munis <- wd_munis |>
+  mutate(
+    en_wiki_title = map_chr(wikipedia_articles, function(arts) {
+      if (length(arts) == 0) return(NA_character_)
+      en_art <- arts[str_detect(arts, "^en:")]
+      if (length(en_art) == 0) return(NA_character_)
+      str_replace(en_art[1], "^en:\\s*", "")
+    })
+  )
+
+message(nrow(wd_munis), " Wikidata items with instance_of = municipality of Bolivia")
+```
+
+# 3. Discover Wikipedia category pages
+
+Scrape all article pages listed in the `Category:Municipalities of Bolivia` tree (top-level + per-department subcategories).
+
+```{r discover-category-pages}
+#| cache: true
+top_cat <- "Category:Municipalities_of_Bolivia"
+subcats <- get_subcategories(top_cat)
+
+muni_subcats <- subcats |>
+  filter(str_detect(title, "^Category:Municipalities"))
+
+# Pages directly in the top-level category
+top_pages <- get_category_pages(top_cat)
+
+# Pages in each department subcategory
+subcat_pages <- map_dfr(muni_subcats$title, function(cat) {
+  Sys.sleep(0.3)
+  get_category_pages(cat) |>
+    mutate(source_category = cat)
+})
+
+all_muni_pages <- bind_rows(
+  top_pages |> mutate(source_category = top_cat),
+  subcat_pages
+) |>
+  distinct(title, .keep_all = TRUE) |>
+  filter(ns == 0)
+
+message(nrow(all_muni_pages), " unique pages in Wikipedia municipality categories")
+```
+
+## Category page summary
+
+```{r category-summary}
+all_muni_pages |>
+  count(source_category, name = "n_pages") |>
+  arrange(source_category) |>
+  kable()
+```
+
+# 4. Fetch page metadata
+
+```{r page-metadata}
+#| cache: true
+page_info <- get_page_info_batch(all_muni_pages$title)
+
+muni_df <- all_muni_pages |>
+  select(-pageid) |>
+  left_join(page_info, by = "title")
+
+message(nrow(muni_df), " pages with metadata")
+```
+
+# 5. Compare Wikipedia categories with Wikidata
+
+```{r compare-wp-wd}
+wp_only <- muni_df |>
+  filter(!wikidata_qid %in% wd_munis$qid | is.na(wikidata_qid))
+
+wd_only <- wd_munis |>
+  filter(!qid %in% muni_df$wikidata_qid)
+
+in_both <- muni_df |>
+  filter(wikidata_qid %in% wd_munis$qid)
+
+comparison_summary <- tribble(
+  ~Category, ~Count,
+  "Wikipedia category pages", nrow(muni_df),
+  "Wikidata municipality items", nrow(wd_munis),
+  "In both", nrow(in_both),
+  "Wikipedia category only", nrow(wp_only),
+  "Wikidata only (no category page)", nrow(wd_only)
+)
+
+comparison_summary |> kable()
+```
+
+### Pages in Wikipedia category but not Wikidata
+
+These are pages categorised as municipalities but whose Wikidata item is not typed as `municipality of Bolivia`:
+
+```{r wp-only-table}
+wp_only |>
+  select(title, wikidata_qid, page_length) |>
+  arrange(title) |>
+  kable()
+```
+
+### Wikidata municipality items without a Wikipedia category page
+
+```{r wd-only-table}
+wd_only |>
+  select(qid, label_en, label_es, en_wiki_title) |>
+  arrange(label_en) |>
+  kable()
+```
+
+# 6. Check expected page existence
+
+For each of the 336 expected municipality page titles, check whether the page actually exists on English Wikipedia.
+
+```{r check-page-existence}
+#| cache: true
+check_pages_exist_batch <- function(titles, lang = "en") {
+  api_url <- paste0("https://", lang, ".wikipedia.org/w/api.php")
+  batches <- split(titles, ceiling(seq_along(titles) / 50))
+  results <- list()
+
+  for (batch in batches) {
+    Sys.sleep(0.2)
+    resp <- httr::GET(api_url, query = list(
+      action = "query",
+      titles = paste(batch, collapse = "|"),
+      format = "json",
+      redirects = 1
+    ))
+    json <- fromJSON(content(resp, "text", encoding = "UTF-8"),
+                     simplifyVector = FALSE)
+
+    found_titles <- map_chr(json$query$pages, ~ .x$title %||% NA_character_)
+    missing <- map_lgl(json$query$pages, ~ !is.null(.x$missing))
+
+    for (i in seq_along(json$query$pages)) {
+      results[[length(results) + 1]] <- tibble(
+        title = found_titles[i],
+        exists = !missing[i]
+      )
+    }
+  }
+  bind_rows(results)
+}
+
+# Query Wikipedia for all expected page names
+existence_raw <- check_pages_exist_batch(muni_pages)
+
+# Match back to original page names (redirects may change titles)
+page_existence <- tibble(page = muni_pages) |>
+  left_join(existence_raw, by = c("page" = "title")) |>
+  mutate(exists = coalesce(exists, FALSE))
+```
+
+## Summary
+
+```{r existence-summary}
+existence_counts <- page_existence |>
+  count(exists) |>
+  mutate(status = if_else(exists, "Page exists", "No page")) |>
+  select(status, n)
+
+existence_counts |> kable()
+```
+
+### Pages that exist
+
+```{r existing-pages-table}
+page_existence |>
+  filter(exists) |>
+  left_join(page_dept_map, by = "page") |>
+  select(page, department) |>
+  arrange(department, page) |>
+  kable()
+```
+
+### Pages that do NOT exist (need to be created)
+
+```{r missing-pages-table}
+page_existence |>
+  filter(!exists) |>
+  left_join(page_dept_map, by = "page") |>
+  select(page, department) |>
+  arrange(department, page) |>
+  kable()
+```
+
+# 7. Classify existing pages by Wikidata item type
+
+Some existing Wikipedia pages may be linked to a Wikidata item that represents a **province** or **locality** rather than a municipality. These need new dedicated municipality pages (or Wikidata corrections).
+
+We check this for existing pages that were *not* matched to the Wikidata `municipality of Bolivia` query.
+
+```{r identify-mismatched-pages}
+existing_pages_df <- page_existence |> filter(exists)
+
+# Pages already matched to a proper Wikidata municipality item
+matched_to_wd <- existing_pages_df |>
+  inner_join(wd_munis, by = c("page" = "en_wiki_title"))
+
+# Pages that exist but aren't matched
+existing_not_in_wd <- existing_pages_df |>
+  anti_join(wd_munis, by = c("page" = "en_wiki_title"))
+
+message(nrow(existing_not_in_wd),
+        " existing pages not matched to a Wikidata municipality item")
+```
+
+```{r get-qids-for-unmatched}
+#| cache: true
+# Get Wikidata QIDs for unmatched pages via Wikipedia API
+get_wikidata_qids <- function(titles) {
+  resp <- request("https://en.wikipedia.org/w/api.php") |>
+    req_url_query(
+      action = "query",
+      titles = paste(titles, collapse = "|"),
+      prop = "pageprops",
+      ppprop = "wikibase_item",
+      format = "json",
+      redirects = 1
+    ) |>
+    req_perform() |>
+    resp_body_json()
+
+  page_data <- resp$query$pages
+  tibble(
+    pageid = map_int(page_data, ~ as.integer(.x$pageid %||% NA)),
+    title = map_chr(page_data, ~ .x$title %||% NA_character_),
+    qid = map_chr(page_data, ~ .x$pageprops$wikibase_item %||% NA_character_)
+  )
+}
+
+qid_results <- get_wikidata_qids(existing_not_in_wd$page)
+```
+
+```{r query-instance-of}
+#| cache: true
+# Query Wikidata for instance_of (P31) for each QID
+get_instance_of <- function(qids) {
+  qid_values <- paste(paste0("wd:", qids), collapse = " ")
+
+  query <- glue('
+    SELECT ?item ?itemLabel ?instanceOf ?instanceOfLabel WHERE {{
+      VALUES ?item {{ {qid_values} }}
+      ?item wdt:P31 ?instanceOf .
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    }}
+  ')
+
+  resp <- request("https://query.wikidata.org/sparql") |>
+    req_url_query(query = query, format = "json") |>
+    req_headers(`User-Agent` = "WikiGraph/1.0 (research project)") |>
+    req_perform() |>
+    resp_body_json()
+
+  bindings <- resp$results$bindings
+  tibble(
+    qid = map_chr(bindings, ~ sub("http://www.wikidata.org/entity/", "",
+                                   .x$item$value)),
+    item_label = map_chr(bindings, ~ .x$itemLabel$value),
+    instance_of_qid = map_chr(bindings, ~ sub("http://www.wikidata.org/entity/", "",
+                                               .x$instanceOf$value)),
+    instance_of_label = map_chr(bindings, ~ .x$instanceOfLabel$value)
+  )
+}
+
+valid_qids <- qid_results$qid[!is.na(qid_results$qid)]
+instance_data <- get_instance_of(valid_qids)
+```
+
+```{r classify-pages}
+page_categories <- qid_results |>
+  left_join(
+    instance_data |>
+      group_by(qid) |>
+      summarise(
+        all_types = paste(instance_of_label, collapse = "; "),
+        is_municipality = any(instance_of_qid == "Q1062710"),
+        is_province = any(instance_of_qid == "Q1062593"),
+        is_locality = any(instance_of_qid %in% c(
+          "Q515", "Q532", "Q486972", "Q3957",
+          "Q1549591", "Q200250", "Q51929311", "Q5712544"
+        )),
+        .groups = "drop"
+      ),
+    by = "qid"
+  ) |>
+  mutate(
+    category = case_when(
+      is_municipality ~ "municipality (OK)",
+      is_province ~ "province",
+      is_locality ~ "locality",
+      TRUE ~ "other/unknown"
+    )
+  )
+```
+
+## Summary by Wikidata item type
+
+```{r type-summary}
+page_categories |>
+  count(category, name = "n_pages") |>
+  arrange(desc(n_pages)) |>
+  kable()
+```
+
+### Province items (page redirects to province article)
+
+These existing page titles redirect to a Wikidata item typed as `province of Bolivia`. A new municipality page and Wikidata item are needed.
+
+```{r province-pages}
+page_categories |>
+  filter(category == "province") |>
+  select(
+    `Expected page` = title,
+    `Redirects to QID` = qid,
+    `Wikidata types` = all_types
+  ) |>
+  kable()
+```
+
+### Locality items (page is about the city/town, not the municipality)
+
+These existing page titles link to a Wikidata item for the settlement rather than the municipality. A new municipality page is needed.
+
+```{r locality-pages}
+page_categories |>
+  filter(category == "locality") |>
+  select(
+    `Expected page` = title,
+    `Current QID` = qid,
+    `Wikidata types` = all_types
+  ) |>
+  kable()
+```
+
+### Title-mismatch municipalities (already correct in Wikidata)
+
+These pages exist and are properly typed as municipalities in Wikidata but weren't matched due to title differences between the expected page name and the actual Wikidata English label.
+
+```{r title-mismatch-pages}
+page_categories |>
+  filter(category == "municipality (OK)") |>
+  left_join(existing_not_in_wd |> select(page), 
+            by = c("title" = "page")) |>
+  select(
+    `Expected page name` = title,
+    QID = qid
+  ) |>
+  kable()
+```
+
+# 8. Combined action list
+
+## Municipalities needing new Wikipedia pages
+
+This combines (a) expected pages that don't exist at all with (b) pages that exist but are linked to the wrong Wikidata item type.
+
+```{r combined-action-list}
+# Pages that don't exist
+no_page <- page_existence |>
+  filter(!exists) |>
+  left_join(page_dept_map, by = "page") |>
+  mutate(reason = "No page exists")
+
+# Pages that exist but redirect to province or locality
+wrong_type <- page_categories |>
+  filter(category %in% c("province", "locality")) |>
+  left_join(
+    existing_not_in_wd |>
+      left_join(page_dept_map, by = "page"),
+    by = c("title" = "page")
+  ) |>
+  transmute(
+    page = title,
+    department,
+    reason = glue("Existing page is {category} ({qid})")
+  )
+
+action_list <- bind_rows(no_page |> select(page, department, reason),
+                         wrong_type) |>
+  arrange(department, page)
+
+message(nrow(action_list), " municipalities need new or corrected Wikipedia pages")
+```
+
+```{r action-list-table}
+action_list |>
+  select(Page = page, Department = department, Reason = reason) |>
+  kable()
+```
+
+## Summary by department
+
+```{r dept-summary}
+dept_summary <- page_dept_map |>
+  left_join(page_existence, by = "page") |>
+  left_join(
+    page_categories |> select(title, category),
+    by = c("page" = "title")
+  ) |>
+  mutate(
+    status = case_when(
+      !exists ~ "No page",
+      category == "province" ~ "Redirects to province",
+      category == "locality" ~ "Links to locality",
+      TRUE ~ "OK"
+    )
+  ) |>
+  count(department, status) |>
+  pivot_wider(names_from = status, values_from = n, values_fill = 0)
+
+dept_summary |> kable()
+```

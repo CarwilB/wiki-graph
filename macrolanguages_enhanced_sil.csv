@@ -1,0 +1,460 @@
+"macro_code","macro_name_sil","member_code","member_status","in_linguameta","member_name_linguameta","member_name_sil","member_endonym","member_n_speakers","member_endangerment","member_glottocode","names_differ"
+"aka","Akan","fat","A",TRUE,"Fanti","Fanti",NA,1900000,NA,"fant1241",FALSE
+"aka","Akan","twi","A",FALSE,NA,"Twi",NA,NA,NA,NA,NA
+"ara","Arabic","aao","A",TRUE,"Algerian Saharan Arabic","Algerian Saharan Arabic",NA,310000,"Not endangered","alge1240",FALSE
+"ara","Arabic","abh","A",TRUE,"Tajiki Arabic","Tajiki Arabic",NA,NA,"Definitely endangered","taji1248",FALSE
+"ara","Arabic","abv","A",TRUE,"Baharna Arabic","Baharna Arabic","العربية البحرانية",730000,"Not endangered","baha1259",FALSE
+"ara","Arabic","acm","A",TRUE,"Mesopotamian Arabic","Mesopotamian Arabic","لهجة بلاد ما بين النهرين",1.7e+07,"Not endangered","meso1252",FALSE
+"ara","Arabic","acq","A",TRUE,"Ta'Izzi-Adeni Arabic","Ta'izzi-Adeni Arabic","لهجة تعزية-عدنية",1.2e+07,"Not endangered","taiz1242",TRUE
+"ara","Arabic","acw","A",TRUE,"Hijazi Arabic","Hijazi Arabic","حجازي",1.1e+07,"Not endangered","hija1235",FALSE
+"ara","Arabic","acx","A",TRUE,"Omani Arabic","Omani Arabic","اللهجة العمانية",3200000,"Not endangered","oman1239",FALSE
+"ara","Arabic","acy","A",TRUE,"Cypriot Arabic","Cypriot Arabic",NA,NA,"Definitely endangered","cypr1248",FALSE
+"ara","Arabic","adf","A",TRUE,"Dhofari Arabic","Dhofari Arabic",NA,130000,"Not endangered","dhof1235",FALSE
+"ara","Arabic","aeb","A",TRUE,"Tunisian Arabic","Tunisian Arabic","Tounsi",NA,"Not endangered","tuni1259",FALSE
+"ara","Arabic","aec","A",TRUE,"Saidi Arabic","Saidi Arabic","صعيدى",2.5e+07,"Not endangered","said1239",FALSE
+"ara","Arabic","afb","A",TRUE,"Gulf Arabic","Gulf Arabic","خليجي",NA,"Not endangered","gulf1241",FALSE
+"ara","Arabic","ajp","R",TRUE,"South Levantine Arabic","South Levantine Arabic",NA,NA,"Not endangered","sout3123",FALSE
+"ara","Arabic","apc","A",TRUE,"North Levantine Arabic","Levantine Arabic","اللهجة الشامية",NA,"Not endangered","nort3139",TRUE
+"ara","Arabic","apd","A",TRUE,"Sudanese Arabic","Sudanese Arabic","لهجة سودانية",3.7e+07,"Not endangered","suda1236",FALSE
+"ara","Arabic","arb","A",TRUE,"Standard Arabic","Standard Arabic",NA,NA,"Not endangered","stan1318",FALSE
+"ara","Arabic","arq","A",TRUE,"Algerian Arabic","Algerian Arabic","الدارجة الجزائرية",3.6e+07,"Not endangered","alge1239",FALSE
+"ara","Arabic","ars","A",TRUE,"Najdi Arabic","Najdi Arabic",NA,1e+06,"Not endangered","najd1235",FALSE
+"ara","Arabic","ary","A",TRUE,"Moroccan Arabic","Moroccan Arabic","الداريجة المغريبية",3.1e+07,"Not endangered","moro1292",FALSE
+"ara","Arabic","arz","A",TRUE,"Egyptian Arabic","Egyptian Arabic","اللغه المصريه الحديثه",7.8e+07,"Not endangered","egyp1253",FALSE
+"ara","Arabic","auz","A",TRUE,"Uzbeki Arabic","Uzbeki Arabic",NA,NA,"Definitely endangered","uzbe1248",FALSE
+"ara","Arabic","avl","A",TRUE,"Eastern Egyptian Bedawi Arabic","Eastern Egyptian Bedawi Arabic",NA,2800000,"Not endangered","east2690",FALSE
+"ara","Arabic","ayh","A",TRUE,"Hadrami Arabic","Hadrami Arabic",NA,5100000,"Not endangered","hadr1236",FALSE
+"ara","Arabic","ayl","A",TRUE,"Libyan Arabic","Libyan Arabic","ليبي",5600000,"Not endangered","liby1240",FALSE
+"ara","Arabic","ayn","A",TRUE,"Sanaani Arabic","Sanaani Arabic",NA,1.3e+07,"Not endangered","sana1295",FALSE
+"ara","Arabic","ayp","A",TRUE,"North Mesopotamian Arabic","North Mesopotamian Arabic","لهجة موصلية",1e+07,"Not endangered","nort3142",FALSE
+"ara","Arabic","bbz","R",FALSE,NA,"Babalia Creole Arabic",NA,NA,NA,NA,NA
+"ara","Arabic","pga","A",TRUE,"Sudanese Creole Arabic","Sudanese Creole Arabic",NA,250000,"Not endangered","suda1237",FALSE
+"ara","Arabic","shu","A",TRUE,"Chadian Arabic","Chadian Arabic","لهجة تشادية",2300000,"Not endangered","chad1249",FALSE
+"ara","Arabic","ssh","A",TRUE,"Shihhi Arabic","Shihhi Arabic",NA,38000,"Not endangered","shih1239",FALSE
+"aym","Aymara","ayc","A",TRUE,"Southern Aymara","Southern Aymara",NA,NA,"Not endangered","sout2996",FALSE
+"aym","Aymara","ayr","A",TRUE,"Central Aymara","Central Aymara",NA,1700000,"Vulnerable","cent2142",FALSE
+"aze","Azerbaijani","azb","A",TRUE,"South Azerbaijani","South Azerbaijani","تۆرکجه",2.4e+07,"Not endangered","sout2697",FALSE
+"aze","Azerbaijani","azj","A",TRUE,"North Azerbaijani","North Azerbaijani",NA,2.4e+07,"Not endangered","nort2697",FALSE
+"bal","Baluchi","bcc","A",TRUE,"Southern Balochi","Southern Balochi","بلوچی‎",3800000,"Not endangered","sout2642",FALSE
+"bal","Baluchi","bgn","A",TRUE,"Western Balochi","Western Balochi","رخشانین بلوچی",1300000,"Not endangered","west2368",FALSE
+"bal","Baluchi","bgp","A",TRUE,"Eastern Balochi","Eastern Balochi","بلوچی",1800000,"Not endangered","east2304",FALSE
+"bik","Bikol","bcl","A",TRUE,"Central Bikol","Central Bikol","Bikol Sentral",2500000,"Not endangered","cent2087",FALSE
+"bik","Bikol","bhk","R",FALSE,NA,"Albay Bicolano",NA,NA,NA,NA,NA
+"bik","Bikol","bln","A",TRUE,"Southern Catanduanes Bikol","Southern Catanduanes Bikol",NA,140000,"Not endangered","sout2912",FALSE
+"bik","Bikol","bto","A",TRUE,"Rinconada Bikol","Rinconada Bikol","Rinconada",310000,"Not endangered","irig1242",FALSE
+"bik","Bikol","cts","A",TRUE,"Northern Catanduanes Bikol","Northern Catanduanes Bikol",NA,78000,"Not endangered","nort2883",FALSE
+"bik","Bikol","fbl","A",TRUE,"West Albay Bikol","West Albay Bikol",NA,2500000,NA,NA,FALSE
+"bik","Bikol","lbl","A",TRUE,"Libon Bikol","Libon Bikol",NA,NA,"Not endangered","libo1242",FALSE
+"bik","Bikol","rbl","A",TRUE,"Miraya Bikol","Miraya Bikol",NA,3e+05,NA,NA,FALSE
+"bik","Bikol","ubl","A",TRUE,"Buhi'Non Bikol","Buhi'non Bikol",NA,NA,"Not endangered","buhi1243",TRUE
+"bnc","Bontok","ebk","A",TRUE,"Eastern Bontok","Eastern Bontok",NA,41000,NA,NA,FALSE
+"bnc","Bontok","lbk","A",TRUE,"Central Bontok","Central Bontok",NA,20000,"Not endangered","cent2292",FALSE
+"bnc","Bontok","obk","A",TRUE,"Southern Bontok","Southern Bontok",NA,NA,NA,NA,FALSE
+"bnc","Bontok","rbk","A",TRUE,"Northern Bontok","Northern Bontok",NA,NA,NA,NA,FALSE
+"bnc","Bontok","vbk","A",TRUE,"Southwestern Bontok","Southwestern Bontok",NA,NA,NA,NA,FALSE
+"bua","Buriat","bxm","A",TRUE,"Mongolia Buriat","Mongolia Buriat",NA,NA,"Vulnerable","mong1330",FALSE
+"bua","Buriat","bxr","A",TRUE,"Russia Buriat","Russia Buriat","Буряад хэлэн",NA,"Definitely endangered","russ1264",FALSE
+"bua","Buriat","bxu","A",TRUE,"China Buriat","China Buriat",NA,NA,"Vulnerable","chin1476",FALSE
+"chm","Mari (Russia)","mhr","A",TRUE,"Eastern Mari","Eastern Mari","олык марий",470000,"Vulnerable","east2328",FALSE
+"chm","Mari (Russia)","mrj","A",TRUE,"Western Mari","Western Mari","Мары йӹлмӹ",30000,"Vulnerable","west2392",FALSE
+"cre","Cree","crj","A",TRUE,"Southern East Cree","Southern East Cree",NA,13000,"Vulnerable","sout2978",FALSE
+"cre","Cree","crk","A",TRUE,"Plains Cree","Plains Cree",NA,4100,"Severely endangered","plai1258",FALSE
+"cre","Cree","crl","A",TRUE,"Northern East Cree","Northern East Cree",NA,380,"Vulnerable","nort1552",FALSE
+"cre","Cree","crm","A",TRUE,"Moose Cree","Moose Cree",NA,3000,"Vulnerable","moos1236",FALSE
+"cre","Cree","csw","A",TRUE,"Swampy Cree","Swampy Cree",NA,1800,"Vulnerable","swam1239",FALSE
+"cre","Cree","cwd","A",TRUE,"Woods Cree","Woods Cree",NA,35000,"Vulnerable","wood1236",FALSE
+"del","Delaware","umu","A",TRUE,"Munsee","Munsee",NA,2,"Critically endangered","muns1251",FALSE
+"del","Delaware","unm","A",TRUE,"Unami","Unami",NA,0,"Extinct","unam1242",FALSE
+"den","Slave (Athapascan)","scs","A",TRUE,"North Slavey","North Slavey",NA,2100,"Definitely endangered","nort2942",FALSE
+"den","Slave (Athapascan)","xsl","A",TRUE,"South Slavey","South Slavey",NA,NA,"Definitely endangered","sout2959",FALSE
+"din","Dinka","dib","A",TRUE,"South Central Dinka","South Central Dinka",NA,250000,"Not endangered","sout2833",FALSE
+"din","Dinka","dik","A",TRUE,"Southwestern Dinka","Southwestern Dinka",NA,450000,"Not endangered","sout2832",FALSE
+"din","Dinka","dip","A",TRUE,"Northeastern Dinka","Northeastern Dinka",NA,5320000,"Not endangered","nort2815",FALSE
+"din","Dinka","diw","A",TRUE,"Northwestern Dinka","Northwestern Dinka",NA,NA,"Not endangered","nort2816",FALSE
+"din","Dinka","dks","A",TRUE,"Southeastern Dinka","Southeastern Dinka",NA,250000,"Not endangered","sout2834",FALSE
+"doi","Dogri (macrolanguage)","dgo","A",TRUE,"Dogri","Dogri (individual language)",NA,2300000,"Not endangered","dogr1250",TRUE
+"doi","Dogri (macrolanguage)","xnr","A",TRUE,"Kangri","Kangri","कांगड़ी",2100000,"Definitely endangered","kang1280",FALSE
+"est","Estonian","ekk","A",TRUE,"Standard Estonian","Standard Estonian","eesti",NA,"Not endangered","esto1258",FALSE
+"est","Estonian","vro","A",TRUE,"Võro","Võro","Võro kiil",70000,"Vulnerable","sout2679",FALSE
+"fas","Persian","pes","A",TRUE,"Iranian Persian","Iranian Persian",NA,1.2e+07,"Not endangered","west2369",FALSE
+"fas","Persian","prs","A",TRUE,"Dari","Dari",NA,9600000,"Not endangered","dari1249",FALSE
+"ful","Fulah","ffm","A",TRUE,"Maasina Fulfulde","Maasina Fulfulde",NA,1500000,"Not endangered","maas1239",FALSE
+"ful","Fulah","fub","A",TRUE,"Adamawa Fulfulde","Adamawa Fulfulde",NA,NA,"Not endangered","adam1253",FALSE
+"ful","Fulah","fuc","A",TRUE,"Pulaar","Pulaar",NA,3700000,"Not endangered","pula1263",FALSE
+"ful","Fulah","fue","A",TRUE,"Borgu Fulfulde","Borgu Fulfulde",NA,6e+05,"Not endangered","borg1235",FALSE
+"ful","Fulah","fuf","A",TRUE,"Pular","Pular","Fuuta Jalon",3e+06,"Not endangered","pula1262",FALSE
+"ful","Fulah","fuh","A",TRUE,"Western Niger Fulfulde","Western Niger Fulfulde",NA,NA,"Not endangered","west2454",FALSE
+"ful","Fulah","fui","A",TRUE,"Bagirmi Fulfulde","Bagirmi Fulfulde",NA,NA,"Not endangered","bagi1244",FALSE
+"ful","Fulah","fuq","A",TRUE,"Central-Eastern Niger Fulfulde","Central-Eastern Niger Fulfulde",NA,1600000,"Not endangered","cent2018",FALSE
+"ful","Fulah","fuv","A",TRUE,"Nigerian Fulfulde","Nigerian Fulfulde",NA,1.4e+07,"Not endangered","nige1253",FALSE
+"gba","Gbaya (Central African Republic)","bdt","A",TRUE,"Bokoto","Bokoto",NA,130000,"Not endangered","boko1261",FALSE
+"gba","Gbaya (Central African Republic)","gbp","A",TRUE,"Gbaya-Bossangoa","Gbaya-Bossangoa","Gbɛ́yá",250000,"Not endangered","gbay1287",FALSE
+"gba","Gbaya (Central African Republic)","gbq","A",TRUE,"Gbaya-Bozoum","Gbaya-Bozoum",NA,NA,"Not endangered","gbay1286",FALSE
+"gba","Gbaya (Central African Republic)","gmm","A",TRUE,"Gbaya-Mbodomo","Gbaya-Mbodomo",NA,8000,"Not endangered","gbay1281",FALSE
+"gba","Gbaya (Central African Republic)","gso","A",TRUE,"Southwest Gbaya","Southwest Gbaya","Ɓìyàndà",2e+05,"Not endangered","sout2785",FALSE
+"gba","Gbaya (Central African Republic)","gya","A",TRUE,"Northwest Gbaya","Northwest Gbaya",NA,260000,"Not endangered","nort2775",FALSE
+"gba","Gbaya (Central African Republic)","mdo","R",FALSE,NA,"Southwest Gbaya",NA,NA,NA,NA,NA
+"gon","Gondi","esg","A",TRUE,"Aheri Gondi","Aheri Gondi","గోండి",150000,NA,NA,FALSE
+"gon","Gondi","ggo","R",FALSE,NA,"Southern Gondi",NA,NA,NA,NA,NA
+"gon","Gondi","gno","A",TRUE,"Northern Gondi","Northern Gondi","गोंडी",2700000,"Vulnerable","nort2702",FALSE
+"gon","Gondi","wsg","A",TRUE,"Adilabad Gondi","Adilabad Gondi",NA,3e+05,NA,NA,FALSE
+"grb","Grebo","gbo","A",TRUE,"Northern Grebo","Northern Grebo","Kréébo",390000,"Not endangered","nort2810",FALSE
+"grb","Grebo","gec","A",TRUE,"Gboloo Grebo","Gboloo Grebo","Kréébo",390000,"Not endangered","gbol1235",FALSE
+"grb","Grebo","grj","A",TRUE,"Southern Grebo","Southern Grebo",NA,NA,"Not endangered","sout2826",FALSE
+"grb","Grebo","grv","A",TRUE,"Central Grebo","Central Grebo",NA,390000,"Not endangered","cent2041",FALSE
+"grb","Grebo","gry","A",TRUE,"Barclayville Grebo","Barclayville Grebo",NA,390000,"Not endangered","barc1235",FALSE
+"grn","Guarani","gnw","A",TRUE,"Western Bolivian Guaraní","Western Bolivian Guaraní",NA,7000,"Definitely endangered","west2640",FALSE
+"grn","Guarani","gug","A",TRUE,"Paraguayan Guaraní","Paraguayan Guaraní",NA,4800000,"Not endangered","para1311",FALSE
+"grn","Guarani","gui","A",TRUE,"Eastern Bolivian Guaraní","Eastern Bolivian Guaraní",NA,81000,"Vulnerable","east2555",FALSE
+"grn","Guarani","gun","A",TRUE,"Mbyá Guaraní","Mbyá Guaraní",NA,15000,"Vulnerable","mbya1239",FALSE
+"grn","Guarani","nhd","A",TRUE,"Chiripá","Chiripá",NA,16000,"Definitely endangered","chir1286",FALSE
+"hai","Haida","hax","A",TRUE,"Southern Haida","Southern Haida",NA,13,"Critically endangered","sout2956",FALSE
+"hai","Haida","hdn","A",TRUE,"Northern Haida","Northern Haida",NA,14,"Critically endangered","nort2938",FALSE
+"hbs","Serbo-Croatian","bos","A",FALSE,NA,"Bosnian",NA,NA,NA,NA,NA
+"hbs","Serbo-Croatian","cnr","A",TRUE,"Montenegrin","Montenegrin","crnogorski",2e+05,"Not endangered","mont1282",FALSE
+"hbs","Serbo-Croatian","hrv","A",FALSE,NA,"Croatian",NA,NA,NA,NA,NA
+"hbs","Serbo-Croatian","srp","A",FALSE,NA,"Serbian",NA,NA,NA,NA,NA
+"hmn","Hmong","blu","R",FALSE,NA,"Hmong Njua",NA,NA,NA,NA,NA
+"hmn","Hmong","cqd","A",TRUE,"Chuanqiandian Cluster Miao","Chuanqiandian Cluster Miao",NA,3700000,"Not endangered","chua1256",FALSE
+"hmn","Hmong","hea","A",TRUE,"Northern Qiandong Miao","Northern Qiandong Miao","Hmub",1200000,"Not endangered","nort2747",FALSE
+"hmn","Hmong","hma","A",TRUE,"Southern Mashan Hmong","Southern Mashan Hmong",NA,NA,"Vulnerable","sout1556",FALSE
+"hmn","Hmong","hmc","A",TRUE,"Central Huishui Hmong","Central Huishui Hmong",NA,NA,"Not endangered","cent2013",FALSE
+"hmn","Hmong","hmd","A",TRUE,"Large Flowery Miao","Large Flowery Miao",NA,3e+05,"Not endangered","larg1235",FALSE
+"hmn","Hmong","hme","A",TRUE,"Eastern Huishui Hmong","Eastern Huishui Hmong",NA,NA,"Vulnerable","east2372",FALSE
+"hmn","Hmong","hmg","A",TRUE,"Southwestern Guiyang Hmong","Southwestern Guiyang Hmong",NA,190000,"Not endangered","sout2756",FALSE
+"hmn","Hmong","hmh","A",TRUE,"Southwestern Huishui Hmong","Southwestern Huishui Hmong",NA,NA,"Not endangered","sout2755",FALSE
+"hmn","Hmong","hmi","A",TRUE,"Northern Huishui Hmong","Northern Huishui Hmong",NA,NA,"Not endangered","nort2749",FALSE
+"hmn","Hmong","hmj","A",TRUE,"Ge","Ge",NA,60000,"Vulnerable","geee1239",FALSE
+"hmn","Hmong","hml","A",TRUE,"Luopohe Hmong","Luopohe Hmong",NA,40000,"Not endangered","luop1235",FALSE
+"hmn","Hmong","hmm","A",TRUE,"Central Mashan Hmong","Central Mashan Hmong",NA,NA,"Not endangered","cent1394",FALSE
+"hmn","Hmong","hmp","A",TRUE,"Northern Mashan Hmong","Northern Mashan Hmong",NA,NA,"Not endangered","nort1546",FALSE
+"hmn","Hmong","hmq","A",TRUE,"Eastern Qiandong Miao","Eastern Qiandong Miao",NA,350000,"Not endangered","east2370",FALSE
+"hmn","Hmong","hms","A",TRUE,"Southern Qiandong Miao","Southern Qiandong Miao",NA,5e+05,"Not endangered","sout2754",FALSE
+"hmn","Hmong","hmw","A",TRUE,"Western Mashan Hmong","Western Mashan Hmong",NA,140000,"Vulnerable","west1507",FALSE
+"hmn","Hmong","hmy","A",TRUE,"Southern Guiyang Hmong","Southern Guiyang Hmong",NA,NA,"Not endangered","sout1555",FALSE
+"hmn","Hmong","hmz","A",TRUE,"Hmong Shua","Hmong Shua",NA,250000,"Not endangered","hmon1331",FALSE
+"hmn","Hmong","hnj","A",TRUE,"Hmong Njua","Hmong Njua","𞄀𞄄𞄰𞄩𞄍𞄜𞄰",276000,"Not endangered","hmon1264",FALSE
+"hmn","Hmong","hrm","A",TRUE,"Horned Miao","Horned Miao",NA,8,"Not endangered","horn1235",FALSE
+"hmn","Hmong","huj","A",TRUE,"Northern Guiyang Hmong","Northern Guiyang Hmong",NA,NA,"Not endangered","nort1545",FALSE
+"hmn","Hmong","mmr","A",TRUE,"Western Xiangxi Miao","Western Xiangxi Miao","Dut Xongb",9e+05,"Not endangered","west2430",FALSE
+"hmn","Hmong","muq","A",TRUE,"Eastern Xiangxi Miao","Eastern Xiangxi Miao",NA,NA,"Not endangered","east2371",FALSE
+"hmn","Hmong","mww","A",TRUE,"Hmong Daw","Hmong Daw","us Hmoob",3400000,"Not endangered","hmon1333",FALSE
+"hmn","Hmong","sfm","A",TRUE,"Small Flowery Miao","Small Flowery Miao",NA,84000,"Not endangered","smal1236",FALSE
+"iku","Inuktitut","ike","A",TRUE,"Eastern Canadian Inuktitut","Eastern Canadian Inuktitut",NA,34000,"Vulnerable","east2534",FALSE
+"iku","Inuktitut","ikt","A",TRUE,"Inuinnaqtun","Inuinnaqtun",NA,NA,"Vulnerable","west2618",FALSE
+"ipk","Inupiaq","esi","A",TRUE,"North Alaskan Inupiatun","North Alaskan Inupiatun",NA,6700,"Severely endangered","nort2943",FALSE
+"ipk","Inupiaq","esk","A",TRUE,"Northwest Alaska Inupiatun","Northwest Alaska Inupiatun",NA,1200,"Severely endangered","nort2945",FALSE
+"jrb","Judeo-Arabic","ajt","R",FALSE,NA,"Judeo-Tunisian Arabic",NA,NA,NA,NA,NA
+"jrb","Judeo-Arabic","aju","A",TRUE,"Judeo-Moroccan Arabic","Judeo-Moroccan Arabic",NA,66000,"Not endangered","jude1265",FALSE
+"jrb","Judeo-Arabic","jye","A",TRUE,"Judeo-Yemeni Arabic","Judeo-Yemeni Arabic",NA,NA,"Vulnerable","jude1267",FALSE
+"jrb","Judeo-Arabic","yhd","A",TRUE,"Judeo-Iraqi Arabic","Judeo-Iraqi Arabic",NA,97000,"Not endangered","jude1266",FALSE
+"jrb","Judeo-Arabic","yud","A",TRUE,"Judeo-Tripolitanian Arabic","Judeo-Tripolitanian Arabic",NA,35000,"Vulnerable","jude1264",FALSE
+"kau","Kanuri","kby","A",TRUE,"Manga Kanuri","Manga Kanuri",NA,480000,"Not endangered","mang1399",FALSE
+"kau","Kanuri","knc","A",TRUE,"Central Kanuri","Central Kanuri",NA,3200000,"Not endangered","cent2050",FALSE
+"kau","Kanuri","krt","A",TRUE,"Tumari Kanuri","Tumari Kanuri",NA,NA,"Not endangered","tuma1248",FALSE
+"kln","Kalenjin","enb","A",TRUE,"Markweeta","Markweeta","Markweeta",180000,"Definitely endangered","mark1255",FALSE
+"kln","Kalenjin","eyo","A",TRUE,"Keiyo","Keiyo","Elgeyo",310000,"Not endangered","keiy1238",FALSE
+"kln","Kalenjin","niq","A",TRUE,"Nandi","Nandi","Naandi",950000,"Not endangered","nand1266",FALSE
+"kln","Kalenjin","oki","A",TRUE,"Okiek","Okiek",NA,79000,"Severely endangered","okie1245",FALSE
+"kln","Kalenjin","pko","A",TRUE,"Pökoot","Pökoot","Pokot",370000,"Not endangered","poko1263",FALSE
+"kln","Kalenjin","sgc","A",TRUE,"Kipsigis","Kipsigis","Kipsigis",1900000,"Not endangered","kips1239",FALSE
+"kln","Kalenjin","spy","A",TRUE,"Sabaot","Sabaot",NA,240000,"Definitely endangered","saba1262",FALSE
+"kln","Kalenjin","tec","A",TRUE,"Terik","Terik","Nyang’ori",3e+05,"Not endangered","teri1244",FALSE
+"kln","Kalenjin","tuy","A",TRUE,"Tugen","Tugen",NA,140000,"Not endangered","tuge1241",FALSE
+"kok","Konkani (macrolanguage)","gom","A",TRUE,"Konkani","Goan Konkani","कोंकणी",4200000,"Not endangered","goan1235",TRUE
+"kok","Konkani (macrolanguage)","knn","A",TRUE,"Konkani","Konkani (individual language)",NA,2400000,"Not endangered","konk1267",TRUE
+"kom","Komi","koi","A",TRUE,"Komi-Permyak","Komi-Permyak","Перем коми",64000,"Vulnerable","komi1269",FALSE
+"kom","Komi","kpv","A",TRUE,"Komi-Zyrian","Komi-Zyrian",NA,160000,"Vulnerable","komi1268",FALSE
+"kon","Kongo","kng","A",TRUE,"Koongo","Koongo",NA,5e+06,"Not endangered","koon1244",FALSE
+"kon","Kongo","kwy","A",TRUE,"San Salvador Kongo","San Salvador Kongo",NA,NA,"Not endangered","sans1272",FALSE
+"kon","Kongo","ldi","A",TRUE,"Laari","Laari",NA,NA,"Not endangered","laar1238",FALSE
+"kpe","Kpelle","gkp","A",TRUE,"Guinea Kpelle","Guinea Kpelle","Kpɛlɛɛ",460000,"Not endangered","guin1254",FALSE
+"kpe","Kpelle","xpe","A",TRUE,"Liberia Kpelle","Liberia Kpelle","Kpɛlɛɛ",760000,"Not endangered","libe1247",FALSE
+"kur","Kurdish","ckb","A",TRUE,"Sorani Kurdish","Central Kurdish","سۆرانی",11100000,"Not endangered","cent1972",TRUE
+"kur","Kurdish","kmr","A",TRUE,"Northern Kurdish","Northern Kurdish",NA,NA,"Not endangered","nort2641",FALSE
+"kur","Kurdish","sdh","A",TRUE,"Southern Kurdish","Southern Kurdish","کوردی خوارین",3100000,"Not endangered","sout2640",FALSE
+"lah","Lahnda","hnd","A",TRUE,"Southern Hindko","Southern Hindko","ہندکو",960000,"Not endangered","sout2668",FALSE
+"lah","Lahnda","hno","A",TRUE,"Northern Hindko","Northern Hindko","Hindko",4e+06,"Not endangered","nort2662",FALSE
+"lah","Lahnda","jat","A",TRUE,"Jakati","Jakati",NA,7000,NA,"jaka1245",FALSE
+"lah","Lahnda","phr","A",TRUE,"Pahari-Potwari","Pahari-Potwari","پوٹھواری",2500000,"Not endangered","paha1251",FALSE
+"lah","Lahnda","pmu","R",FALSE,NA,"Mirpur Panjabi",NA,NA,NA,NA,NA
+"lah","Lahnda","pnb","A",TRUE,"Western Panjabi","Western Panjabi","شاہ مُکھی",1.13e+08,"Not endangered","west2386",FALSE
+"lah","Lahnda","skr","A",TRUE,"Saraiki","Saraiki","سرائیکی",2.8e+07,"Not endangered","sera1259",FALSE
+"lah","Lahnda","xhe","A",TRUE,"Khetrani","Khetrani",NA,1e+05,"Not endangered","khet1238",FALSE
+"lav","Latvian","ltg","A",TRUE,"Latgalian","Latgalian","Latgalīšu",170000,"Not endangered","east2282",FALSE
+"lav","Latvian","lvs","A",TRUE,"Standard Latvian","Standard Latvian","Стандард Латвиан",1,"Not endangered","stan1325",FALSE
+"luy","Luyia","bxk","A",TRUE,"Bukusu","Bukusu","Lubukusu",1400000,"Not endangered","buku1249",FALSE
+"luy","Luyia","ida","A",TRUE,"Idakho-Isukha-Tiriki","Idakho-Isukha-Tiriki","Luidakho",6e+05,"Not endangered","idak1243",FALSE
+"luy","Luyia","lkb","A",TRUE,"Kabras","Kabras","LuKabarasi",250000,"Not endangered","kabr1240",FALSE
+"luy","Luyia","lko","A",TRUE,"Khayo","Khayo",NA,120000,"Not endangered","khay1238",FALSE
+"luy","Luyia","lks","A",TRUE,"Kisa","Kisa",NA,140000,"Not endangered","kisa1263",FALSE
+"luy","Luyia","lri","A",TRUE,"Marachi","Marachi","Olumarachi",160000,"Not endangered","mara1393",FALSE
+"luy","Luyia","lrm","A",TRUE,"Marama","Marama","OluMarama",150000,"Not endangered","mara1392",FALSE
+"luy","Luyia","lsm","A",TRUE,"Saamia","Saamia","Olusaamia",480000,"Not endangered","saam1283",FALSE
+"luy","Luyia","lto","A",TRUE,"Tsotso","Tsotso",NA,120000,"Not endangered","tsot1241",FALSE
+"luy","Luyia","lts","A",TRUE,"Tachoni","Tachoni",NA,120000,"Not endangered","tach1242",FALSE
+"luy","Luyia","lwg","A",TRUE,"Wanga","Wanga","Oluwanga",310000,"Not endangered","wang1294",FALSE
+"luy","Luyia","nle","A",TRUE,"East Nyala","East Nyala","LuNyala",270000,"Not endangered","east2409",FALSE
+"luy","Luyia","nyd","A",TRUE,"Nyore","Nyore","Olunyore",310000,"Not endangered","nyor1244",FALSE
+"luy","Luyia","rag","A",TRUE,"Logooli","Logooli","Lulogooli",620000,"Not endangered","logo1258",FALSE
+"man","Mandingo","emk","A",TRUE,"Eastern Maninkakan","Eastern Maninkakan",NA,7100000,"Not endangered","east2426",FALSE
+"man","Mandingo","mku","A",TRUE,"Konyanka Maninka","Konyanka Maninka","Maninkakan",210000,"Not endangered","kony1250",FALSE
+"man","Mandingo","mlq","A",TRUE,"Western Maninkakan","Western Maninkakan",NA,1600000,"Not endangered","west2500",FALSE
+"man","Mandingo","mnk","A",TRUE,"Mandinka","Mandinka",NA,2100000,"Not endangered","mand1436",FALSE
+"man","Mandingo","msc","A",TRUE,"Sankaran Maninka","Sankaran Maninka",NA,3300000,"Not endangered","sank1253",FALSE
+"man","Mandingo","mwk","A",TRUE,"Kita Maninkakan","Kita Maninkakan",NA,980000,"Not endangered","kita1249",FALSE
+"man","Mandingo","myq","R",FALSE,NA,"Forest Maninka",NA,NA,NA,NA,NA
+"mlg","Malagasy","bhr","A",TRUE,"Bara Malagasy","Bara Malagasy",NA,720000,"Not endangered","bara1369",FALSE
+"mlg","Malagasy","bjq","R",FALSE,NA,"Southern Betsimisaraka Malagasy",NA,NA,NA,NA,NA
+"mlg","Malagasy","bmm","A",TRUE,"Northern Betsimisaraka Malagasy","Northern Betsimisaraka Malagasy","Betsimisaraka",1300000,"Not endangered","nort2890",FALSE
+"mlg","Malagasy","bzc","A",TRUE,"Southern Betsimisaraka Malagasy","Southern Betsimisaraka Malagasy","Betsimisaraka",2e+06,"Not endangered","sout2920",FALSE
+"mlg","Malagasy","msh","A",TRUE,"Masikoro Malagasy","Masikoro Malagasy",NA,550000,"Not endangered","masi1268",FALSE
+"mlg","Malagasy","plt","A",TRUE,"Plateau Malagasy","Plateau Malagasy",NA,NA,"Not endangered","plat1254",FALSE
+"mlg","Malagasy","skg","A",TRUE,"Sakalava Malagasy","Sakalava Malagasy","Sakalava",1210000,"Not endangered","saka1291",FALSE
+"mlg","Malagasy","tdx","A",TRUE,"Tandroy-Mahafaly Malagasy","Tandroy-Mahafaly Malagasy","Antandroy",NA,"Not endangered","tand1256",FALSE
+"mlg","Malagasy","tkg","A",TRUE,"Tesaka Malagasy","Tesaka Malagasy",NA,1100000,"Not endangered","tesa1236",FALSE
+"mlg","Malagasy","txy","A",TRUE,"Tanosy Malagasy","Tanosy Malagasy",NA,640000,"Not endangered","tano1246",FALSE
+"mlg","Malagasy","xmv","A",TRUE,"Antankarana Malagasy","Antankarana Malagasy",NA,2.5e+07,"Not endangered","anta1255",FALSE
+"mlg","Malagasy","xmw","A",TRUE,"Tsimihety Malagasy","Tsimihety Malagasy",NA,1600000,"Not endangered","tsim1257",FALSE
+"mon","Mongolian","khk","A",TRUE,"Halh Mongolian","Halh Mongolian",NA,5200000,"Definitely endangered","halh1238",FALSE
+"mon","Mongolian","mvf","A",TRUE,"Peripheral Mongolian","Peripheral Mongolian",NA,3400000,"Vulnerable","peri1253",FALSE
+"msa","Malay (macrolanguage)","bjn","A",TRUE,"Banjar","Banjar","Banjar",4e+06,"Not endangered","banj1239",FALSE
+"msa","Malay (macrolanguage)","btj","A",TRUE,"Bacanese Malay","Bacanese Malay",NA,4500,"Critically endangered","baca1243",FALSE
+"msa","Malay (macrolanguage)","bve","A",TRUE,"Berau Malay","Berau Malay",NA,11000,"Not endangered","bera1262",FALSE
+"msa","Malay (macrolanguage)","bvu","A",TRUE,"Bukit Malay","Bukit Malay",NA,4100000,"Not endangered","buki1247",FALSE
+"msa","Malay (macrolanguage)","coa","A",TRUE,"Cocos Islands Malay","Cocos Islands Malay",NA,1100,"Definitely endangered","coco1260",FALSE
+"msa","Malay (macrolanguage)","dup","A",TRUE,"Duano","Duano",NA,16000,"Definitely endangered","duan1242",FALSE
+"msa","Malay (macrolanguage)","hji","A",TRUE,"Haji","Haji",NA,NA,"Not endangered","haji1235",FALSE
+"msa","Malay (macrolanguage)","ind","A",FALSE,NA,"Indonesian",NA,NA,NA,NA,NA
+"msa","Malay (macrolanguage)","jak","A",TRUE,"Jakun","Jakun",NA,NA,"Vulnerable","jaku1244",FALSE
+"msa","Malay (macrolanguage)","jax","A",TRUE,"Jambi Malay","Jambi Malay","Baso Jambi",1e+06,"Not endangered","jamb1236",FALSE
+"msa","Malay (macrolanguage)","kvb","A",TRUE,"Kubu","Kubu",NA,10000,"Vulnerable","kubu1239",FALSE
+"msa","Malay (macrolanguage)","kvr","A",TRUE,"Kerinci","Kerinci","Kinci",370000,"Vulnerable","keri1250",FALSE
+"msa","Malay (macrolanguage)","kxd","A",TRUE,"Brunei","Brunei","Brunei",320000,"Not endangered","brun1242",FALSE
+"msa","Malay (macrolanguage)","lce","A",TRUE,"Loncong","Loncong",NA,420,"Vulnerable","lonc1237",FALSE
+"msa","Malay (macrolanguage)","lcf","A",TRUE,"Lubu","Lubu",NA,30000,"Not endangered","lubu1241",FALSE
+"msa","Malay (macrolanguage)","liw","A",TRUE,"Col","Col",NA,150000,"Not endangered","coll1240",FALSE
+"msa","Malay (macrolanguage)","max","A",TRUE,"North Moluccan Malay","North Moluccan Malay","Bahasa Pasar",7e+05,"Not endangered","nort2828",FALSE
+"msa","Malay (macrolanguage)","meo","A",TRUE,"Kedah Malay","Kedah Malay","Pelat Utagha",2600000,"Not endangered","keda1251",FALSE
+"msa","Malay (macrolanguage)","mfa","A",TRUE,"Pattani Malay","Pattani Malay","بهاس جاوي",3400000,NA,"patt1249",FALSE
+"msa","Malay (macrolanguage)","mfb","A",TRUE,"Bangka","Bangka","Bahasa Bangka",340000,"Critically endangered","bang1365",FALSE
+"msa","Malay (macrolanguage)","min","A",TRUE,"Minangkabau","Minangkabau","Baso Minangkabau",8e+06,"Not endangered","mina1268",FALSE
+"msa","Malay (macrolanguage)","mly","R",FALSE,NA,"Malay (individual language)",NA,NA,NA,NA,NA
+"msa","Malay (macrolanguage)","mqg","A",TRUE,"Kota Bangun Kutai Malay","Kota Bangun Kutai Malay",NA,3e+05,"Not endangered","kota1275",FALSE
+"msa","Malay (macrolanguage)","msi","A",TRUE,"Sabah Malay","Sabah Malay","Sabah Melayu",3e+06,"Not endangered","saba1263",FALSE
+"msa","Malay (macrolanguage)","mui","A",TRUE,"Musi","Musi","Baso Palembang",3100000,"Not endangered","musi1241",FALSE
+"msa","Malay (macrolanguage)","orn","A",TRUE,"Orang Kanaq","Orang Kanaq",NA,NA,"Severely endangered","oran1258",FALSE
+"msa","Malay (macrolanguage)","ors","A",TRUE,"Orang Seletar","Orang Seletar",NA,1080,"Definitely endangered","oran1259",FALSE
+"msa","Malay (macrolanguage)","pel","A",TRUE,"Pekal","Pekal",NA,NA,"Not endangered","peka1242",FALSE
+"msa","Malay (macrolanguage)","pse","A",TRUE,"Central Malay","Central Malay","Bahasa Pasemah",1600000,"Not endangered","cent2053",FALSE
+"msa","Malay (macrolanguage)","tmw","A",TRUE,"Temuan","Temuan",NA,NA,"Definitely endangered","temu1239",FALSE
+"msa","Malay (macrolanguage)","urk","A",TRUE,"Urak Lawoi'","Urak Lawoi'",NA,5000,"Definitely endangered","urak1238",FALSE
+"msa","Malay (macrolanguage)","vkk","A",TRUE,"Kaur","Kaur",NA,NA,"Not endangered","kaur1269",FALSE
+"msa","Malay (macrolanguage)","vkt","A",TRUE,"Tenggarong Kutai Malay","Tenggarong Kutai Malay","Kutai Tenggarong",3e+05,"Not endangered","teng1267",FALSE
+"msa","Malay (macrolanguage)","xmm","A",TRUE,"Manado Malay","Manado Malay","Bahasa Manado",850000,"Not endangered","mala1481",FALSE
+"msa","Malay (macrolanguage)","zlm","A",TRUE,"Malay","Malay (individual language)",NA,NA,"Not endangered","mala1479",TRUE
+"msa","Malay (macrolanguage)","zmi","A",TRUE,"Negeri Sembilan Malay","Negeri Sembilan Malay","bahasa Melayu Negeri Sembilan",390000,"Vulnerable","nege1240",FALSE
+"msa","Malay (macrolanguage)","zsm","A",TRUE,"Standard Malay","Standard Malay",NA,NA,"Not endangered","stan1306",FALSE
+"mwr","Marwari","dhd","A",TRUE,"Dhundari","Dhundari","ढूंढारी",9600000,"Not endangered","dhun1238",FALSE
+"mwr","Marwari","mtr","A",TRUE,"Mewari","Mewari","मेवाड़ी",1300000,"Not endangered","mewa1249",FALSE
+"mwr","Marwari","mve","A",TRUE,"Marwari","Marwari (Pakistan)","مارواري",220000,"Not endangered","marw1256",TRUE
+"mwr","Marwari","rwr","A",TRUE,"Marwari","Marwari (India)","मारवाड़ी",2.2e+07,"Not endangered","marw1260",TRUE
+"mwr","Marwari","swv","A",TRUE,"Shekhawati","Shekhawati","शेखावाटी",3700000,"Not endangered","shek1243",FALSE
+"mwr","Marwari","wry","A",TRUE,"Merwari","Merwari","मेरवारी",3900000,"Not endangered","merw1238",FALSE
+"nep","Nepali (macrolanguage)","dty","A",TRUE,"Dotyali","Dotyali","डोटेली",760000,"Not endangered","doty1234",FALSE
+"nep","Nepali (macrolanguage)","npi","A",TRUE,"Nepali","Nepali (individual language)","नेपाली",1.6e+07,"Not endangered","nepa1254",TRUE
+"nor","Norwegian","nno","A",FALSE,NA,"Norwegian Nynorsk",NA,NA,NA,NA,NA
+"nor","Norwegian","nob","A",FALSE,NA,"Norwegian Bokmål",NA,NA,NA,NA,NA
+"oji","Ojibwa","ciw","A",TRUE,"Chippewa","Chippewa",NA,NA,"Definitely endangered","chip1241",FALSE
+"oji","Ojibwa","ojb","A",TRUE,"Northwestern Ojibwa","Northwestern Ojibwa",NA,20000,"Vulnerable","nort2961",FALSE
+"oji","Ojibwa","ojc","A",TRUE,"Central Ojibwa","Central Ojibwa",NA,NA,"Definitely endangered","cent2136",FALSE
+"oji","Ojibwa","ojg","A",TRUE,"Eastern Ojibwa","Eastern Ojibwa",NA,NA,"Definitely endangered","east2542",FALSE
+"oji","Ojibwa","ojs","A",TRUE,"Severn Ojibwa","Severn Ojibwa",NA,15000,"Vulnerable","seve1240",FALSE
+"oji","Ojibwa","ojw","A",TRUE,"Western Ojibwa","Western Ojibwa",NA,NA,"Definitely endangered","west1510",FALSE
+"oji","Ojibwa","otw","A",TRUE,"Ottawa","Ottawa",NA,13000,"Severely endangered","otta1242",FALSE
+"ori","Oriya (macrolanguage)","ory","A",TRUE,"Odia","Odia",NA,3.5e+07,"Not endangered","oriy1255",FALSE
+"ori","Oriya (macrolanguage)","spv","A",TRUE,"Sambalpuri","Sambalpuri","ସମ୍ବଲପୁରୀ",520000,"Not endangered","samb1325",FALSE
+"orm","Oromo","gax","A",TRUE,"Borana-Arsi-Guji Oromo","Borana-Arsi-Guji Oromo",NA,3900000,"Not endangered","bora1271",FALSE
+"orm","Oromo","gaz","A",TRUE,"West Central Oromo","West Central Oromo",NA,NA,"Not endangered","west2721",FALSE
+"orm","Oromo","hae","A",TRUE,"Eastern Oromo","Eastern Oromo","Oromoo",4500000,"Not endangered","east2652",FALSE
+"orm","Oromo","orc","A",TRUE,"Orma","Orma",NA,69000,"Not endangered","orma1241",FALSE
+"pus","Pushto","pbt","A",TRUE,"Southern Pashto","Southern Pashto",NA,14920000,"Not endangered","sout2649",FALSE
+"pus","Pushto","pbu","A",TRUE,"Northern Pashto","Northern Pashto",NA,NA,"Not endangered","nort2646",FALSE
+"pus","Pushto","pst","A",TRUE,"Central Pashto","Central Pashto",NA,6500000,"Not endangered","cent1973",FALSE
+"que","Quechua","cqu","R",FALSE,NA,"Chilean Quechua",NA,NA,NA,NA,NA
+"que","Quechua","qub","A",TRUE,"Huallaga Huánuco Quechua","Huallaga Huánuco Quechua",NA,40000,"Vulnerable","hual1241",FALSE
+"que","Quechua","qud","A",TRUE,"Calderón Highland Quichua","Calderón Highland Quichua",NA,1200000,"Vulnerable","cald1236",FALSE
+"que","Quechua","quf","A",TRUE,"Lambayeque Quechua","Lambayeque Quechua",NA,20000,"Definitely endangered","lamb1276",FALSE
+"que","Quechua","qug","A",TRUE,"Chimborazo Highland Quichua","Chimborazo Highland Quichua",NA,960000,"Vulnerable","chim1302",FALSE
+"que","Quechua","quh","A",TRUE,"South Bolivian Quechua","South Bolivian Quechua","Runasimi",2800000,"Not endangered","sout2991",FALSE
+"que","Quechua","quk","A",TRUE,"Chachapoyas Quechua","Chachapoyas Quechua",NA,NA,"Definitely endangered","chac1250",FALSE
+"que","Quechua","qul","A",TRUE,"North Bolivian Quechua","North Bolivian Quechua",NA,120000,"Not endangered","nort2976",FALSE
+"que","Quechua","qup","A",TRUE,"Southern Pastaza Quechua","Southern Pastaza Quechua",NA,1200000,"Not endangered","sout2990",FALSE
+"que","Quechua","qur","A",TRUE,"Yanahuanca Pasco Quechua","Yanahuanca Pasco Quechua",NA,NA,"Definitely endangered","yana1272",FALSE
+"que","Quechua","qus","A",TRUE,"Santiago Del Estero Quichua","Santiago del Estero Quichua",NA,60000,"Vulnerable","sant1432",TRUE
+"que","Quechua","quw","A",TRUE,"Tena Lowland Quichua","Tena Lowland Quichua",NA,1200000,"Vulnerable","tena1240",FALSE
+"que","Quechua","qux","A",TRUE,"Yauyos Quechua","Yauyos Quechua",NA,13000,"Critically endangered","yauy1235",FALSE
+"que","Quechua","quy","A",TRUE,"Ayacucho Quechua","Ayacucho Quechua","Chanka runasimi",9e+05,"Not endangered","ayac1239",FALSE
+"que","Quechua","quz","A",TRUE,"Cusco Quechua","Cusco Quechua",NA,1500000,"Vulnerable","cusc1236",FALSE
+"que","Quechua","qva","A",TRUE,"Ambo-Pasco Quechua","Ambo-Pasco Quechua",NA,90000,"Vulnerable","ambo1252",FALSE
+"que","Quechua","qvc","A",TRUE,"Cajamarca Quechua","Cajamarca Quechua",NA,30000,"Definitely endangered","caja1238",FALSE
+"que","Quechua","qve","A",TRUE,"Eastern Apurímac Quechua","Eastern Apurímac Quechua",NA,1500000,"Not endangered","east2551",FALSE
+"que","Quechua","qvh","A",TRUE,"Huamalíes-Dos De Mayo Huánuco Quechua","Huamalíes-Dos de Mayo Huánuco Quechua",NA,72000,"Vulnerable","huam1248",TRUE
+"que","Quechua","qvi","A",TRUE,"Imbabura Highland Quichua","Imbabura Highland Quichua",NA,3e+05,"Vulnerable","imba1240",FALSE
+"que","Quechua","qvj","A",TRUE,"Loja Highland Quichua","Loja Highland Quichua",NA,30000,"Vulnerable","loja1235",FALSE
+"que","Quechua","qvl","A",TRUE,"Cajatambo North Lima Quechua","Cajatambo North Lima Quechua",NA,NA,"Severely endangered","caja1239",FALSE
+"que","Quechua","qvm","A",TRUE,"Margos-Yarowilca-Lauricocha Quechua","Margos-Yarowilca-Lauricocha Quechua",NA,83000,"Vulnerable","marg1254",FALSE
+"que","Quechua","qvn","A",TRUE,"North Junín Quechua","North Junín Quechua",NA,60000,"Vulnerable","nort2980",FALSE
+"que","Quechua","qvo","A",TRUE,"Napo Lowland Quechua","Napo Lowland Quechua",NA,1200000,"Vulnerable","napo1242",FALSE
+"que","Quechua","qvp","A",TRUE,"Pacaraos Quechua","Pacaraos Quechua",NA,NA,"Severely endangered","paca1245",FALSE
+"que","Quechua","qvs","A",TRUE,"San Martín Quechua","San Martín Quechua",NA,15000,"Severely endangered","sanm1289",FALSE
+"que","Quechua","qvw","A",TRUE,"Huaylla Wanca Quechua","Huaylla Wanca Quechua","Wanka Nunashimi",270000,"Not endangered","huay1241",FALSE
+"que","Quechua","qvz","A",TRUE,"Northern Pastaza Quichua","Northern Pastaza Quichua",NA,NA,"Vulnerable","nort2973",FALSE
+"que","Quechua","qwa","A",TRUE,"Corongo Ancash Quechua","Corongo Ancash Quechua",NA,4000,"Vulnerable","coro1247",FALSE
+"que","Quechua","qwc","A",FALSE,NA,"Classical Quechua",NA,NA,NA,NA,NA
+"que","Quechua","qwh","A",TRUE,"Huaylas Ancash Quechua","Huaylas Ancash Quechua","Nunashimi",340000,"Vulnerable","huay1240",FALSE
+"que","Quechua","qws","A",TRUE,"Sihuas Ancash Quechua","Sihuas Ancash Quechua",NA,10000,"Vulnerable","sihu1235",FALSE
+"que","Quechua","qxa","A",TRUE,"Chiquián Ancash Quechua","Chiquián Ancash Quechua",NA,190000,"Severely endangered","chiq1249",FALSE
+"que","Quechua","qxc","A",TRUE,"Chincha Quechua","Chincha Quechua",NA,NA,"Extinct","chin1483",FALSE
+"que","Quechua","qxh","A",TRUE,"Panao Huánuco Quechua","Panao Huánuco Quechua",NA,190000,"Severely endangered","pana1306",FALSE
+"que","Quechua","qxl","A",TRUE,"Salasaca Highland Quichua","Salasaca Highland Quichua",NA,1200000,"Definitely endangered","sala1272",FALSE
+"que","Quechua","qxn","A",TRUE,"Northern Conchucos Ancash Quechua","Northern Conchucos Ancash Quechua",NA,250000,"Vulnerable","nort2979",FALSE
+"que","Quechua","qxo","A",TRUE,"Southern Conchucos Ancash Quechua","Southern Conchucos Ancash Quechua","Huaylay",920000,"Vulnerable","sout2992",FALSE
+"que","Quechua","qxp","A",TRUE,"Puno Quechua","Puno Quechua",NA,5e+05,"Not endangered","puno1238",FALSE
+"que","Quechua","qxr","A",TRUE,"Cañar Highland Quichua","Cañar Highland Quichua",NA,2e+05,"Vulnerable","cana1262",FALSE
+"que","Quechua","qxt","A",TRUE,"Santa Ana De Tusi Pasco Quechua","Santa Ana de Tusi Pasco Quechua",NA,NA,"Severely endangered","sant1433",TRUE
+"que","Quechua","qxu","A",TRUE,"Arequipa-La Unión Quechua","Arequipa-La Unión Quechua",NA,19000,"Not endangered","areq1237",FALSE
+"que","Quechua","qxw","A",TRUE,"Jauja Wanca Quechua","Jauja Wanca Quechua",NA,23000,"Severely endangered","jauj1238",FALSE
+"raj","Rajasthani","bgq","A",TRUE,"Bagri","Bagri","बागड़ी",2300000,"Not endangered","bagr1243",FALSE
+"raj","Rajasthani","gda","A",TRUE,"Gade Lohar","Gade Lohar",NA,20000,"Not endangered","gade1236",FALSE
+"raj","Rajasthani","gju","A",TRUE,"Gujari","Gujari","گوجری",1460000,"Not endangered","guja1253",FALSE
+"raj","Rajasthani","hoj","A",TRUE,"Hadothi","Hadothi","हरौती",1100000,"Not endangered","hado1235",FALSE
+"raj","Rajasthani","mup","A",TRUE,"Malvi","Malvi","मालवी",5400000,"Not endangered","malv1243",FALSE
+"raj","Rajasthani","wbr","A",TRUE,"Wagdi","Wagdi","वागड़ी",2e+06,"Not endangered","wagd1238",FALSE
+"rom","Romany","rmc","A",TRUE,"Carpathian Romani","Carpathian Romani",NA,120000,"Not endangered","carp1235",FALSE
+"rom","Romany","rmf","A",TRUE,"Kalo Finnish Romani","Kalo Finnish Romani","kaalengo tšimb",5000,"Definitely endangered","kalo1256",FALSE
+"rom","Romany","rml","A",TRUE,"Baltic Romani","Baltic Romani",NA,50000,"Vulnerable","balt1257",FALSE
+"rom","Romany","rmn","A",TRUE,"Balkan Romani","Balkan Romani","Романи",590000,"Not endangered","balk1252",FALSE
+"rom","Romany","rmo","A",TRUE,"Sinte Romani","Sinte Romani",NA,24000,"Not endangered","sint1235",FALSE
+"rom","Romany","rmw","A",TRUE,"Welsh Romani","Welsh Romani",NA,NA,"Definitely endangered","wels1246",FALSE
+"rom","Romany","rmy","A",TRUE,"Vlax Romani","Vlax Romani","Romani čhib",310000,"Not endangered","vlax1238",FALSE
+"san","Sanskrit","cls","A",FALSE,NA,"Classical Sanskrit",NA,NA,NA,NA,NA
+"san","Sanskrit","vsn","A",FALSE,NA,"Vedic Sanskrit",NA,NA,NA,NA,NA
+"sqi","Albanian","aae","A",TRUE,"Arbëreshë Albanian","Arbëreshë Albanian",NA,1e+05,"Vulnerable","arbe1236",FALSE
+"sqi","Albanian","aat","A",TRUE,"Arvanitika Albanian","Arvanitika Albanian",NA,50000,"Vulnerable","arva1236",FALSE
+"sqi","Albanian","aln","A",TRUE,"Gheg Albanian","Gheg Albanian",NA,4100000,"Not endangered","gheg1238",FALSE
+"sqi","Albanian","als","A",TRUE,"Tosk Albanian","Tosk Albanian","Schwyzertüütsch",1800000,"Not endangered","tosk1239",FALSE
+"srd","Sardinian","sdc","A",TRUE,"Sassarese Sardinian","Sassarese Sardinian","sassaresu",110000,"Not endangered","sass1235",FALSE
+"srd","Sardinian","sdn","A",TRUE,"Gallurese Sardinian","Gallurese Sardinian",NA,1e+05,"Not endangered","gall1276",FALSE
+"srd","Sardinian","src","A",TRUE,"Logudorese Sardinian","Logudorese Sardinian","sardu logudoresu",5e+05,"Definitely endangered","logu1236",FALSE
+"srd","Sardinian","sro","A",TRUE,"Campidanese Sardinian","Campidanese Sardinian","sardu campidanesu",1e+06,"Vulnerable","camp1261",FALSE
+"swa","Swahili (macrolanguage)","swc","A",TRUE,"Congo Swahili","Congo Swahili",NA,9100000,"Not endangered","cong1236",FALSE
+"swa","Swahili (macrolanguage)","swh","A",TRUE,"Swahili","Swahili (individual language)",NA,NA,"Not endangered","swah1253",TRUE
+"syr","Syriac","aii","A",TRUE,"Assyrian Neo-Aramaic","Assyrian Neo-Aramaic","ܣܘܪܝܬ",830000,"Vulnerable","assy1241",FALSE
+"syr","Syriac","cld","A",TRUE,"Chaldean Neo-Aramaic","Chaldean Neo-Aramaic",NA,8e+05,"Definitely endangered","chal1275",FALSE
+"tmh","Tamashek","taq","A",TRUE,"Tamasheq","Tamasheq","Tamasheq",5e+05,"Definitely endangered","tama1365",FALSE
+"tmh","Tamashek","thv","A",TRUE,"Tahaggart Tamahaq","Tahaggart Tamahaq",NA,132000,"Vulnerable","taha1241",FALSE
+"tmh","Tamashek","thz","A",TRUE,"Tayart Tamajeq","Tayart Tamajeq",NA,250000,"Vulnerable","taya1257",FALSE
+"tmh","Tamashek","ttq","A",TRUE,"Tawallammat Tamajaq","Tawallammat Tamajaq",NA,8e+05,"Not endangered","tawa1286",FALSE
+"uzb","Uzbek","uzn","A",TRUE,"Northern Uzbek","Northern Uzbek",NA,2.8e+07,"Not endangered","nort2690",FALSE
+"uzb","Uzbek","uzs","A",TRUE,"Southern Uzbek","Southern Uzbek","اوزبیک تورکچه",4200000,"Not endangered","sout2699",FALSE
+"yid","Yiddish","ydd","A",TRUE,"Eastern Yiddish","Eastern Yiddish",NA,1500000,"Not endangered","east2295",FALSE
+"yid","Yiddish","yih","A",TRUE,"Western Yiddish","Western Yiddish",NA,NA,"Extinct","west2361",FALSE
+"zap","Zapotec","zaa","A",TRUE,"Sierra De Juárez Zapotec","Sierra de Juárez Zapotec",NA,7000,"Vulnerable","sier1250",TRUE
+"zap","Zapotec","zab","A",TRUE,"Western Tlacolula Valley Zapotec","Western Tlacolula Valley Zapotec",NA,29000,"Definitely endangered","sanj1284",FALSE
+"zap","Zapotec","zac","A",TRUE,"Ocotlán Zapotec","Ocotlán Zapotec",NA,15000,"Vulnerable","ocot1244",FALSE
+"zap","Zapotec","zad","A",TRUE,"Cajonos Zapotec","Cajonos Zapotec",NA,5000,"Not endangered","cajo1238",FALSE
+"zap","Zapotec","zae","A",TRUE,"Yareni Zapotec","Yareni Zapotec",NA,7000,"Vulnerable","yare1249",FALSE
+"zap","Zapotec","zaf","A",TRUE,"Ayoquesco Zapotec","Ayoquesco Zapotec",NA,880,"Definitely endangered","ayoq1235",FALSE
+"zap","Zapotec","zai","A",TRUE,"Isthmus Zapotec","Isthmus Zapotec",NA,85000,"Vulnerable","isth1244",FALSE
+"zap","Zapotec","zam","A",TRUE,"Miahuatlán Zapotec","Miahuatlán Zapotec",NA,1000,"Vulnerable","miah1235",FALSE
+"zap","Zapotec","zao","A",TRUE,"Ozolotepec Zapotec","Ozolotepec Zapotec",NA,6500,"Vulnerable","ozol1235",FALSE
+"zap","Zapotec","zaq","A",TRUE,"Aloápam Zapotec","Aloápam Zapotec",NA,3400,"Not endangered","aloa1235",FALSE
+"zap","Zapotec","zar","A",TRUE,"Rincón Zapotec","Rincón Zapotec",NA,41000,"Definitely endangered","rinc1236",FALSE
+"zap","Zapotec","zas","A",TRUE,"Santo Domingo Albarradas Zapotec","Santo Domingo Albarradas Zapotec",NA,5500,"Definitely endangered","sant1450",FALSE
+"zap","Zapotec","zat","A",TRUE,"Tabaa Zapotec","Tabaa Zapotec",NA,2000,"Vulnerable","taba1268",FALSE
+"zap","Zapotec","zav","A",TRUE,"Yatzachi Zapotec","Yatzachi Zapotec",NA,2500,"Vulnerable","yatz1235",FALSE
+"zap","Zapotec","zaw","A",TRUE,"Mitla Zapotec","Mitla Zapotec",NA,20000,"Not endangered","mitl1236",FALSE
+"zap","Zapotec","zax","A",TRUE,"Xadani Zapotec","Xadani Zapotec",NA,NA,"Definitely endangered","xada1235",FALSE
+"zap","Zapotec","zca","A",TRUE,"Coatecas Altas Zapotec","Coatecas Altas Zapotec",NA,4900,"Not endangered","coat1244",FALSE
+"zap","Zapotec","zcd","A",TRUE,"Las Delicias Zapotec","Las Delicias Zapotec",NA,41000,NA,NA,FALSE
+"zap","Zapotec","zoo","A",TRUE,"Asunción Mixtepec Zapotec","Asunción Mixtepec Zapotec",NA,NA,"Severely endangered","asun1236",FALSE
+"zap","Zapotec","zpa","A",TRUE,"Lachiguiri Zapotec","Lachiguiri Zapotec",NA,5000,"Vulnerable","lach1250",FALSE
+"zap","Zapotec","zpb","A",TRUE,"Yautepec Zapotec","Yautepec Zapotec",NA,NA,"Vulnerable","yaut1235",FALSE
+"zap","Zapotec","zpc","A",TRUE,"Choapan Zapotec","Choapan Zapotec",NA,12000,"Vulnerable","choa1237",FALSE
+"zap","Zapotec","zpd","A",TRUE,"Southeastern Ixtlán Zapotec","Southeastern Ixtlán Zapotec",NA,6000,"Vulnerable","sout3005",FALSE
+"zap","Zapotec","zpe","A",TRUE,"Petapa Zapotec","Petapa Zapotec",NA,8000,"Definitely endangered","peta1247",FALSE
+"zap","Zapotec","zpf","A",TRUE,"San Pedro Quiatoni Zapotec","San Pedro Quiatoni Zapotec",NA,15000,"Not endangered","sanp1261",FALSE
+"zap","Zapotec","zpg","A",TRUE,"Guevea De Humboldt Zapotec","Guevea De Humboldt Zapotec",NA,4700,"Not endangered","guev1238",FALSE
+"zap","Zapotec","zph","A",TRUE,"Totomachapan Zapotec","Totomachapan Zapotec",NA,NA,"Severely endangered","toto1308",FALSE
+"zap","Zapotec","zpi","A",TRUE,"Santa María Quiegolani Zapotec","Santa María Quiegolani Zapotec",NA,2000,"Vulnerable","sant1451",FALSE
+"zap","Zapotec","zpj","A",TRUE,"Quiavicuzas Zapotec","Quiavicuzas Zapotec",NA,4000,"Not endangered","quia1235",FALSE
+"zap","Zapotec","zpk","A",TRUE,"Tlacolulita Zapotec","Tlacolulita Zapotec",NA,NA,"Definitely endangered","tlac1240",FALSE
+"zap","Zapotec","zpl","A",TRUE,"Lachixío Zapotec","Lachixío Zapotec",NA,3000,"Definitely endangered","lach1249",FALSE
+"zap","Zapotec","zpm","A",TRUE,"Mixtepec Zapotec","Mixtepec Zapotec",NA,7000,"Definitely endangered","mixt1426",FALSE
+"zap","Zapotec","zpn","A",TRUE,"Santa Inés Yatzechi Zapotec","Santa Inés Yatzechi Zapotec",NA,2200,"Vulnerable","sant1447",FALSE
+"zap","Zapotec","zpo","A",TRUE,"Amatlán Zapotec","Amatlán Zapotec",NA,10000,"Vulnerable","amat1238",FALSE
+"zap","Zapotec","zpp","A",TRUE,"El Alto Zapotec","El Alto Zapotec",NA,NA,"Definitely endangered","elal1235",FALSE
+"zap","Zapotec","zpq","A",TRUE,"Zoogocho Zapotec","Zoogocho Zapotec",NA,1400,"Vulnerable","zoog1238",FALSE
+"zap","Zapotec","zpr","A",TRUE,"Santiago Xanica Zapotec","Santiago Xanica Zapotec",NA,2500,"Vulnerable","sant1452",FALSE
+"zap","Zapotec","zps","A",TRUE,"Coatlán Zapotec","Coatlán Zapotec",NA,NA,"Vulnerable","coat1243",FALSE
+"zap","Zapotec","zpt","A",TRUE,"San Vicente Coatlán Zapotec","San Vicente Coatlán Zapotec",NA,3400,"Vulnerable","sanv1242",FALSE
+"zap","Zapotec","zpu","A",TRUE,"Yalálag Zapotec","Yalálag Zapotec",NA,3500,"Not endangered","yala1267",FALSE
+"zap","Zapotec","zpv","A",TRUE,"Chichicapan Zapotec","Chichicapan Zapotec",NA,2700,"Vulnerable","chic1274",FALSE
+"zap","Zapotec","zpw","A",TRUE,"Zaniza Zapotec","Zaniza Zapotec",NA,NA,"Definitely endangered","zani1235",FALSE
+"zap","Zapotec","zpx","A",TRUE,"San Baltazar Loxicha Zapotec","San Baltazar Loxicha Zapotec",NA,NA,"Vulnerable","sanb1241",FALSE
+"zap","Zapotec","zpy","A",TRUE,"Mazaltepec Zapotec","Mazaltepec Zapotec",NA,2200,"Definitely endangered","maza1294",FALSE
+"zap","Zapotec","zpz","A",TRUE,"Texmelucan Zapotec","Texmelucan Zapotec",NA,4100,"Definitely endangered","texm1235",FALSE
+"zap","Zapotec","zsr","A",TRUE,"Southern Rincon Zapotec","Southern Rincon Zapotec",NA,41000,"Definitely endangered","sout3004",FALSE
+"zap","Zapotec","ztc","R",FALSE,NA,"Lachirioag Zapotec",NA,NA,NA,NA,NA
+"zap","Zapotec","zte","A",TRUE,"Elotepec Zapotec","Elotepec Zapotec",NA,NA,"Definitely endangered","elot1235",FALSE
+"zap","Zapotec","ztg","A",TRUE,"Xanaguía Zapotec","Xanaguía Zapotec",NA,2500,"Vulnerable","xana1235",FALSE
+"zap","Zapotec","ztl","A",TRUE,"Lapaguía-Guivini Zapotec","Lapaguía-Guivini Zapotec",NA,4200,"Vulnerable","lapa1249",FALSE
+"zap","Zapotec","ztm","A",TRUE,"San Agustín Mixtepec Zapotec","San Agustín Mixtepec Zapotec",NA,NA,"Severely endangered","sana1286",FALSE
+"zap","Zapotec","ztn","A",TRUE,"Santa Catarina Albarradas Zapotec","Santa Catarina Albarradas Zapotec",NA,NA,"Vulnerable","sant1448",FALSE
+"zap","Zapotec","ztp","A",TRUE,"Loxicha Zapotec","Loxicha Zapotec",NA,NA,"Vulnerable","loxi1235",FALSE
+"zap","Zapotec","ztq","A",TRUE,"Quioquitani-Quierí Zapotec","Quioquitani-Quierí Zapotec",NA,4000,"Not endangered","quio1241",FALSE
+"zap","Zapotec","zts","A",TRUE,"Tilquiapan Zapotec","Tilquiapan Zapotec",NA,5000,"Not endangered","tilq1235",FALSE
+"zap","Zapotec","ztt","A",TRUE,"Tejalapan Zapotec","Tejalapan Zapotec",NA,NA,"Definitely endangered","teja1235",FALSE
+"zap","Zapotec","ztu","A",TRUE,"Güilá Zapotec","Güilá Zapotec",NA,9500,"Not endangered","guil1236",FALSE
+"zap","Zapotec","ztx","A",TRUE,"Zaachila Zapotec","Zaachila Zapotec",NA,NA,"Definitely endangered","zaac1239",FALSE
+"zap","Zapotec","zty","A",TRUE,"Yatee Zapotec","Yatee Zapotec",NA,5000,"Not endangered","yate1242",FALSE
+"zha","Zhuang","ccx","R",FALSE,NA,"Northern Zhuang",NA,NA,NA,NA,NA
+"zha","Zhuang","ccy","R",FALSE,NA,"Southern Zhuang",NA,NA,NA,NA,NA
+"zha","Zhuang","zch","A",TRUE,"Central Hongshuihe Zhuang","Central Hongshuihe Zhuang",NA,NA,"Not endangered","cent2009",FALSE
+"zha","Zhuang","zeh","A",TRUE,"Eastern Hongshuihe Zhuang","Eastern Hongshuihe Zhuang",NA,1200000,"Not endangered","east2363",FALSE
+"zha","Zhuang","zgb","A",TRUE,"Guibei Zhuang","Guibei Zhuang",NA,NA,"Not endangered","guib1245",FALSE
+"zha","Zhuang","zgm","A",TRUE,"Minz Zhuang","Minz Zhuang",NA,180000,"Not endangered","minz1236",FALSE
+"zha","Zhuang","zgn","A",TRUE,"Guibian Zhuang","Guibian Zhuang",NA,1e+06,"Not endangered","guib1244",FALSE
+"zha","Zhuang","zhd","A",TRUE,"Dai Zhuang","Dai Zhuang",NA,1e+05,"Vulnerable","daiz1235",FALSE
+"zha","Zhuang","zhn","A",TRUE,"Nong Zhuang","Nong Zhuang",NA,6e+05,"Not endangered","nong1247",FALSE
+"zha","Zhuang","zlj","A",TRUE,"Liujiang Zhuang","Liujiang Zhuang",NA,NA,"Not endangered","liuj1238",FALSE
+"zha","Zhuang","zln","A",TRUE,"Lianshan Zhuang","Lianshan Zhuang",NA,NA,NA,"lian1252",FALSE
+"zha","Zhuang","zlq","A",TRUE,"Liuqian Zhuang","Liuqian Zhuang",NA,NA,"Vulnerable","liuq1235",FALSE
+"zha","Zhuang","zqe","A",TRUE,"Qiubei Zhuang","Qiubei Zhuang",NA,140000,"Not endangered","qiub1238",FALSE
+"zha","Zhuang","zyb","A",TRUE,"Yongbei Zhuang","Yongbei Zhuang",NA,2e+06,"Not endangered","yong1276",FALSE
+"zha","Zhuang","zyg","A",TRUE,"Yang Zhuang","Yang Zhuang",NA,NA,"Not endangered","yang1286",FALSE
+"zha","Zhuang","zyj","A",TRUE,"Youjiang Zhuang","Youjiang Zhuang","Gangjdoj",870000,"Not endangered","youj1238",FALSE
+"zha","Zhuang","zyn","A",TRUE,"Yongnan Zhuang","Yongnan Zhuang",NA,NA,"Not endangered","yong1275",FALSE
+"zha","Zhuang","zzj","A",TRUE,"Zuojiang Zhuang","Zuojiang Zhuang",NA,NA,"Not endangered","zuoj1238",FALSE
+"zho","Chinese","cdo","A",TRUE,"Min Dong Chinese","Min Dong Chinese","Mìng-dĕ̤ng-ngṳ̄",9500000,"Not endangered","mind1253",FALSE
+"zho","Chinese","cjy","A",TRUE,"Jinyu Chinese","Jinyu Chinese","晋语",6.3e+07,"Not endangered","jiny1235",FALSE
+"zho","Chinese","cmn","A",TRUE,"Mandarin Chinese","Mandarin Chinese","普通话",1288700000,"Not endangered","mand1415",FALSE
+"zho","Chinese","cnp","A",TRUE,"Northern Pinghua","Northern Ping Chinese",NA,NA,NA,NA,TRUE
+"zho","Chinese","cpx","A",TRUE,"Pu-Xian Chinese","Pu-Xian Chinese","Pó-sing-gṳ̂",2600000,"Not endangered","puxi1243",FALSE
+"zho","Chinese","csp","A",TRUE,"Southern Pinghua","Southern Ping Chinese",NA,NA,NA,NA,TRUE
+"zho","Chinese","czh","A",TRUE,"Huizhou Chinese","Huizhou Chinese","徽州話",4600000,"Not endangered","huiz1242",FALSE
+"zho","Chinese","czo","A",TRUE,"Min Zhong Chinese","Min Zhong Chinese","Mǐnzhōngyǔ",NA,"Not endangered","minz1235",FALSE
+"zho","Chinese","gan","A",TRUE,"Gan Chinese","Gan Chinese","贛語",2.4e+07,"Not endangered","ganc1239",FALSE
+"zho","Chinese","hak","A",TRUE,"Hakka Chinese","Hakka Chinese","客家話",3.2e+07,"Not endangered","hakk1236",FALSE
+"zho","Chinese","hnm","A",FALSE,NA,"Hainanese",NA,NA,NA,NA,NA
+"zho","Chinese","hsn","A",TRUE,"Xiang Chinese","Xiang Chinese","湘語",4e+07,"Not endangered","xian1251",FALSE
+"zho","Chinese","luh","A",FALSE,NA,"Leizhou Chinese",NA,NA,NA,NA,NA
+"zho","Chinese","lzh","A",FALSE,NA,"Literary Chinese",NA,NA,NA,NA,NA
+"zho","Chinese","mnp","A",TRUE,"Min Bei Chinese","Min Bei Chinese","Mâing-bă̤-ngṳ̌",2200000,"Not endangered","minb1244",FALSE
+"zho","Chinese","nan","A",TRUE,"Min Nan Chinese","Min Nan Chinese","Min Nan",4.2e+07,"Not endangered","minn1241",FALSE
+"zho","Chinese","sjc","A",FALSE,NA,"Shaojiang Chinese",NA,NA,NA,NA,NA
+"zho","Chinese","wuu","A",TRUE,"Wu Chinese","Wu Chinese","吳語",8.4e+07,"Not endangered","wuch1236",FALSE
+"zho","Chinese","yue","A",TRUE,"Yue Chinese","Yue Chinese","廣東話",7.9e+07,"Not endangered","yuec1235",FALSE
+"zza","Zaza","diq","A",TRUE,"Dimli","Dimli (individual language)","Dimilkî",1600000,"Vulnerable","diml1238",TRUE
+"zza","Zaza","kiu","A",TRUE,"Kirmanjki","Kirmanjki (individual language)","Kirmanckî",160000,"Not endangered","kirm1248",TRUE
