@@ -56,6 +56,8 @@ All files live under `../bolivia-data/Censo 2024/` (relative to the wiki-graph p
 | `lang_age_identity.rds` | `idioma_mat × idioma_mayor_uso × identifies × age_group`. 1,829 rows. |
 | `albo_vars.rds` | Person-level indicators (11,365,333 rows). Columns: `idep`, `iprov`, `imun`, `urbrur`, `albo_q1`, `albo_q2`, `albo_q3`, `albo_c`, `cel_q2`, `cel`. Load with `readRDS()`. |
 | `albo_vars.csv` | Same as CSV. |
+| `muni_pop_all.rds` | Total census population per municipality. 343 rows, columns `muni_code` (chr, 6-digit) and `n_total` (int). Pre-computed from full `persona_geo` dataset; used in bubble charts. |
+| `other_lang_labels.rds` | Per-municipality labels for the top-2 non-Quechua/Aymara/Castellano/Guaraní mother tongues in the top-30 "other indigenous" speaker municipalities. 30 rows, columns `muni_code` and `right_label` (chr). |
 | `cel_geo.rds` | CEL geographic summary table (1,214 rows). Columns: `department`, `province`, `municipality` (INE codes, NA when aggregated), `urban_rural` ("Urban"/"Rural"/NA), `n_total`, `cel_0` … `cel_7` (% at each level, incl. 1.5 and 4.5), `cel_2plus`, `cel_4plus`, `cel_5plus` (% with CEL ≥ threshold). Covers: national, dept, prov, mun, and all four × urban/rural. Load with `readRDS()`. |
 | `cel_geo.csv` | Same as CSV. |
 

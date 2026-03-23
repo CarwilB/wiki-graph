@@ -1,0 +1,820 @@
+---
+title: "Intergenerational Language Transmission"
+subtitle: "Household-level analysis — Bolivia CNPV 2024"
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+    code-tools: true
+    toc: true
+    toc-depth: 3
+execute:
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+library(sf)
+library(patchwork)
+library(plotly)
+
+source("cel_helpers.R")   # loads muni_lookup, idioma_cats, etc.
+
+DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+
+aymara_transmission_clean  <- readRDS("data/aymara_transmission_by_muni.rds")
+quechua_transmission_clean <- readRDS("data/quechua_transmission_by_muni.rds")
+guarani_transmission_clean <- readRDS("data/guarani_transmission_by_muni.rds")
+other_transmission_clean   <- readRDS("data/other_transmission_by_muni.rds")
+
+muni_pop_all      <- readRDS("data/muni_pop_all.rds")
+other_lang_labels <- readRDS("data/other_lang_labels.rds")
+
+cel_geo <- readRDS(file.path(DATA_DIR, "cel_geo.rds"))
+```
+
+For each child aged 0–14, we identify parents in the same dwelling (head of household and spouse, `p24_parentes` codes 1 and 2). We then ask: among children whose parent speaks Aymara (or Quechua, Guaraní, etc.) as a mother tongue, what percentage currently speak that language themselves (in any of their three `p331`/`p332`/`p333` slots)?
+
+This is a direct measure of parental language transmission — not of cultural identity, but of whether the language is actively spoken to children at home.
+
+```{r}
+#| label: national-totals
+
+aymara_nat  <- aymara_transmission_clean  |>
+  summarise(n = sum(n_children_with_parent), s = sum(n_children_speak_aymara))
+quechua_nat <- quechua_transmission_clean |>
+  summarise(n = sum(n_children_with_parent), s = sum(n_children_speak_quechua))
+guarani_nat <- guarani_transmission_clean |>
+  summarise(n = sum(n_children_with_parent), s = sum(n_children_speak_guarani))
+other_nat   <- other_transmission_clean   |>
+  summarise(n = sum(n_children_with_parent), s = sum(n_children_speak_other))
+
+cat(sprintf("Aymara  — %s children with Aymara-speaking parent(s); %s speak Aymara (%.1f%%)\n",
+    scales::comma(aymara_nat$n), scales::comma(aymara_nat$s),
+    100 * aymara_nat$s / aymara_nat$n))
+cat(sprintf("Quechua — %s children with Quechua-speaking parent(s); %s speak Quechua (%.1f%%)\n",
+    scales::comma(quechua_nat$n), scales::comma(quechua_nat$s),
+    100 * quechua_nat$s / quechua_nat$n))
+cat(sprintf("Guaraní — %s children with Guaraní-speaking parent(s); %s speak Guaraní (%.1f%%)\n",
+    scales::comma(guarani_nat$n), scales::comma(guarani_nat$s),
+    100 * guarani_nat$s / guarani_nat$n))
+cat(sprintf("Other   — %s children with other-indigenous-speaking parent(s); %s speak same language (%.1f%%)\n",
+    scales::comma(other_nat$n), scales::comma(other_nat$s),
+    100 * other_nat$s / other_nat$n))
+```
+
+National transmission rates vary markedly across language families. **Guaraní (56%) and other indigenous languages (68%) transmit at considerably higher rates than Aymara (29%) or Quechua (40%).** This reflects the geographic and demographic context: Guaraní and smaller lowland languages are concentrated in tight-knit, often rural communities where Spanish pressure is lower, whereas Aymara and Quechua speakers include large urban populations (El Alto, La Paz, Cochabamba) where language shift is most pronounced.
+
+```{r}
+#| label: gadm-setup
+
+gadm_bol    <- read_sf("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3")
+gadm_joined <- gadm_bol |>
+  left_join(
+    muni_lookup |> select(id_muni, muni_gadm, department) |> distinct(),
+    by = c("NAME_3" = "muni_gadm", "NAME_1" = "department")
+  )
+```
+
+```{r}
+#| label: helpers
+
+# ── Bar chart: top N municipalities by speaker count ─────────────────────────
+top30_chart <- function(transmission_df, speaker_col, lang_name, fill_colour,
+                        min_parents = 10, n = 30) {
+  transmission_df |>
+    filter(!is.na(.data[[speaker_col]])) |>
+    slice_max(order_by = .data[[speaker_col]], n = n) |>
+    left_join(
+      muni_lookup |> select(id_muni, muni_ine, department) |> distinct(),
+      by = c("muni_code" = "id_muni")
+    ) |>
+    mutate(
+      label     = coalesce(paste0(muni_ine, " (", department, ")"),
+                           paste0("(", muni_code, ")")),
+      label     = fct_reorder(label, .data[[speaker_col]]),
+      show_rate = if_else(n_children_with_parent >= min_parents,
+                          transmission_rate, NA_real_)
+    ) |>
+    ggplot(aes(x = show_rate, y = label)) +
+    geom_col(fill = fill_colour, alpha = 0.8, na.rm = TRUE) +
+    geom_text(
+      aes(label = if_else(!is.na(show_rate),
+                          scales::percent(show_rate, accuracy = 1), "—"),
+          x     = if_else(!is.na(show_rate), show_rate + 0.01, 0.01)),
+      hjust = 0, size = 3.2, color = "grey30"
+    ) +
+    scale_x_continuous(
+      labels = scales::percent_format(),
+      expand = expansion(mult = c(0, 0.18))
+    ) +
+    labs(
+      title    = paste0(lang_name, " transmission — top 30 municipalities by speaker count"),
+      subtitle = paste0("Bolivia CNPV 2024  |  bars suppressed where <",
+                        min_parents, " speaking parents"),
+      x = "Transmission rate", y = NULL
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      plot.title         = element_text(face = "bold", margin = margin(b = 3)),
+      plot.subtitle      = element_text(color = "grey40", size = rel(0.82),
+                                        margin = margin(b = 8)),
+      panel.grid.major.y = element_blank()
+    )
+}
+
+# ── Interactive bubble chart: prevalence vs. transmission ────────────────────
+bubble_chart_ly <- function(transmission_df, speaker_col, parent_col, child_speak_col,
+                             lang_name, fill_colour, muni_pop, min_parents = 10, n = 50) {
+
+  plot_data <- transmission_df |>
+    filter(!is.na(.data[[speaker_col]]),
+           n_children_with_parent >= min_parents) |>
+    slice_max(order_by = .data[[speaker_col]], n = n) |>
+    left_join(muni_pop, by = "muni_code") |>
+    left_join(
+      muni_lookup |> select(id_muni, muni_ine, department) |> distinct(),
+      by = c("muni_code" = "id_muni")
+    ) |>
+    mutate(
+      speaker_share = .data[[speaker_col]] / n_total,
+      muni_label    = coalesce(muni_ine, muni_code),
+      tooltip = paste0(
+        "<b>", muni_label, "</b>   ", department, "<br>",
+        "<br>",
+        "Total population: ", scales::comma(n_total), "<br>",
+        "Speakers: ", scales::comma(.data[[speaker_col]]), "<br>",
+        "Speaking parents: ", scales::comma(.data[[parent_col]]), "<br>",
+        "Children with parent: ", scales::comma(n_children_with_parent), "<br>",
+        "Children speaking: ", scales::comma(.data[[child_speak_col]]), "<br>",
+        "Transmission: ", scales::percent(transmission_rate, accuracy = 1)
+      )
+    )
+
+  plot_data <- plot_data |> mutate(.size = .data[[speaker_col]])
+
+  plot_ly(
+    data      = plot_data,
+    x         = ~speaker_share,
+    y         = ~transmission_rate,
+    size      = ~.size,
+    sizes     = c(36, 53^2),
+    text      = ~tooltip,
+    hoverinfo = "text",
+    type      = "scatter",
+    mode      = "markers",
+    marker    = list(
+      color    = fill_colour,
+      opacity  = 0.75,
+      sizemode = "area",
+      line     = list(color = "white", width = 1.5)
+    )
+  ) |>
+    layout(
+      title = list(
+        text = paste0(lang_name, " \u2014 prevalence vs. transmission rate<br>",
+                      "<sup>Bolivia CNPV 2024 \u2502 top ", n,
+                      " municipalities by speaker count</sup>"),
+        font = list(size = 14)
+      ),
+      xaxis = list(
+        title      = paste0("Share of municipal population (", lang_name, " mother tongue)"),
+        tickformat = ".0%",
+        zeroline   = FALSE
+      ),
+      yaxis = list(
+        title      = "Transmission rate",
+        tickformat = ".0%",
+        range      = c(0, 1),
+        zeroline   = FALSE,
+        scaleanchor = "x",
+        scaleratio = 1
+        ),
+      hoverlabel = list(
+        bgcolor     = "white",
+        bordercolor = "#cccccc",
+        font        = list(color = "#333333", size = 12)
+      ),
+      showlegend = FALSE
+    )
+}
+```
+
+## Choropleths: speakers and transmission rate
+
+### Aymara
+
+```{r}
+#| label: aymara-choropleth
+#| fig-width: 13
+#| fig-height: 7
+
+aymara_choropleth <- gadm_joined |>
+  left_join(aymara_transmission_clean, by = c("id_muni" = "muni_code")) |>
+  mutate(
+    transmission_mapped = if_else(
+      !is.na(n_parents_aymara) & n_parents_aymara >= 100,
+      transmission_rate, NA_real_
+    )
+  )
+
+p_map_speakers <- ggplot(aymara_choropleth) +
+  geom_sf(aes(fill = n_speakers_aymara), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "Reds", direction = 1, na.value = "grey90",
+    labels = scales::comma, name = "Speakers",
+    trans = "log10", breaks = c(100, 1000, 10000, 100000),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title = "Aymara speakers") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_map_transmission <- ggplot(aymara_choropleth) +
+  geom_sf(aes(fill = transmission_mapped), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "Blues", direction = 1, na.value = "grey90",
+    labels = scales::percent_format(accuracy = 1),
+    name = "Transmission rate", limits = c(0, 1),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title    = "Aymara transmission rate",
+       subtitle = "(only shown where ≥100 Aymara-speaking parents)") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 2)),
+    plot.subtitle   = element_text(color = "grey40", size = rel(0.72), hjust = 0.5,
+                                   margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_map_speakers | p_map_transmission
+```
+
+Aymara speakers are concentrated in the altiplano (La Paz and Oruro departments), with a secondary presence in Cochabamba and Santa Cruz. Rural altiplano municipalities around Lake Titicaca show the highest transmission (40–65%). El Alto and La Paz city show much lower transmission (12% and 7% respectively) despite having the largest absolute speaker populations, consistent with urban language shift.
+
+```{r}
+#| label: aymara-top30
+#| fig-height: 9
+
+top30_chart(aymara_transmission_clean, "n_speakers_aymara", "Aymara", "#d62728",
+            min_parents = 100)
+```
+
+```{r}
+#| label: aymara-bubble
+#| fig-width: 6
+#| fig-height: 6
+
+
+bubble_chart_ly(aymara_transmission_clean,
+                speaker_col     = "n_speakers_aymara",
+                parent_col      = "n_parents_aymara",
+                child_speak_col = "n_children_speak_aymara",
+                lang_name       = "Aymara",
+                fill_colour     = "#d62728",
+                muni_pop        = muni_pop_all,
+                min_parents     = 100)
+```
+
+### Quechua
+
+```{r}
+#| label: quechua-choropleth
+#| fig-width: 13
+#| fig-height: 7
+
+quechua_choropleth <- gadm_joined |>
+  left_join(quechua_transmission_clean, by = c("id_muni" = "muni_code")) |>
+  mutate(
+    transmission_mapped = if_else(
+      !is.na(n_parents_quechua) & n_parents_quechua >= 100,
+      transmission_rate, NA_real_
+    )
+  )
+
+p_q_speakers <- ggplot(quechua_choropleth) +
+  geom_sf(aes(fill = n_speakers_quechua), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "Oranges", direction = 1, na.value = "grey90",
+    labels = scales::comma, name = "Speakers",
+    trans = "log10", breaks = c(100, 1000, 10000, 100000),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title = "Quechua speakers") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_q_transmission <- ggplot(quechua_choropleth) +
+  geom_sf(aes(fill = transmission_mapped), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "YlOrBr", direction = 1, na.value = "grey90",
+    labels = scales::percent_format(accuracy = 1),
+    name = "Transmission rate", limits = c(0, 1),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title    = "Quechua transmission rate",
+       subtitle = "(only shown where ≥100 Quechua-speaking parents)") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 2)),
+    plot.subtitle   = element_text(color = "grey40", size = rel(0.72), hjust = 0.5,
+                                   margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_q_speakers | p_q_transmission
+```
+
+Quechua has a broader geographic footprint than Aymara, spanning the Andean valleys from Potosí through Cochabamba to southern Chuquisaca. Transmission is highest in the rural valley municipalities of Potosí and Chuquisaca (often 60–80%) and lowest in urban cores (Cochabamba city ~15%, Potosí city ~25%).
+
+```{r}
+#| label: quechua-top30
+#| fig-height: 9
+
+top30_chart(quechua_transmission_clean, "n_speakers_quechua", "Quechua", "#ff7f0e",
+            min_parents = 100)
+```
+
+```{r}
+#| label: quechua-bubble
+#| fig-width: 6
+#| fig-height: 6
+
+bubble_chart_ly(quechua_transmission_clean,
+                speaker_col     = "n_speakers_quechua",
+                parent_col      = "n_parents_quechua",
+                child_speak_col = "n_children_speak_quechua",
+                lang_name       = "Quechua",
+                fill_colour     = "#ff7f0e",
+                muni_pop        = muni_pop_all,
+                min_parents     = 100)
+```
+
+### Guaraní
+
+```{r}
+#| label: guarani-choropleth
+#| fig-width: 13
+#| fig-height: 7
+
+guarani_choropleth <- gadm_joined |>
+  left_join(guarani_transmission_clean, by = c("id_muni" = "muni_code")) |>
+  mutate(
+    transmission_mapped = if_else(
+      !is.na(n_parents_guarani) & n_parents_guarani >= 20,
+      transmission_rate, NA_real_
+    )
+  )
+
+p_g_speakers <- ggplot(guarani_choropleth) +
+  geom_sf(aes(fill = n_speakers_guarani), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "Greens", direction = 1, na.value = "grey90",
+    labels = scales::comma, name = "Speakers",
+    trans = "log10", breaks = c(10, 100, 1000, 10000),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title = "Guaraní speakers") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_g_transmission <- ggplot(guarani_choropleth) +
+  geom_sf(aes(fill = transmission_mapped), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "BuGn", direction = 1, na.value = "grey90",
+    labels = scales::percent_format(accuracy = 1),
+    name = "Transmission rate", limits = c(0, 1),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title    = "Guaraní transmission rate",
+       subtitle = "(only shown where ≥20 Guaraní-speaking parents)") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 2)),
+    plot.subtitle   = element_text(color = "grey40", size = rel(0.72), hjust = 0.5,
+                                   margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_g_speakers | p_g_transmission
+```
+
+Guaraní is concentrated in the Chaco lowlands of Tarija, Chuquisaca, and Santa Cruz. The transmission map is shown at a lower threshold (≥20 Guaraní-speaking parents) given smaller community sizes. High-transmission municipalities cluster in the Chaco Boreal where Guaraní-speaking communities are most intact.
+
+```{r}
+#| label: guarani-top30
+#| fig-height: 9
+
+top30_chart(guarani_transmission_clean, "n_speakers_guarani", "Guaraní", "#2ca02c",
+            min_parents = 20)
+```
+
+```{r}
+#| label: guarani-bubble
+#| fig-width: 6
+#| fig-height: 6
+
+bubble_chart_ly(guarani_transmission_clean,
+                speaker_col     = "n_speakers_guarani",
+                parent_col      = "n_parents_guarani",
+                child_speak_col = "n_children_speak_guarani",
+                lang_name       = "Guaraní",
+                fill_colour     = "#2ca02c",
+                muni_pop        = muni_pop_all,
+                min_parents     = 20)
+```
+
+### Other indigenous languages
+
+The "other" category aggregates all indigenous languages other than Aymara, Quechua, and Guaraní (codes 1–37 in the census, excluding 2, 12, 27). Transmission is evaluated language-specifically — a child is counted as "speaking" only if they speak the same language as their parent, not just any indigenous language. This group includes Tsimane´, Chiquitano (Bésiro), Moxeño, Mosetén, Cavineño, Uru-Chipaya, Tacana, and dozens of smaller lowland languages.
+
+```{r}
+#| label: other-choropleth
+#| fig-width: 13
+#| fig-height: 7
+
+other_choropleth <- gadm_joined |>
+  left_join(other_transmission_clean, by = c("id_muni" = "muni_code")) |>
+  mutate(
+    transmission_mapped = if_else(
+      !is.na(n_parents_other) & n_parents_other >= 10,
+      transmission_rate, NA_real_
+    )
+  )
+
+p_o_speakers <- ggplot(other_choropleth) +
+  geom_sf(aes(fill = n_speakers_other), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "Purples", direction = 1, na.value = "grey90",
+    labels = scales::comma, name = "Speakers",
+    trans = "log10", breaks = c(10, 100, 1000, 10000),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title = "Other indigenous language speakers") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_o_transmission <- ggplot(other_choropleth) +
+  geom_sf(aes(fill = transmission_mapped), color = "white", linewidth = 0.1) +
+  scale_fill_distiller(
+    palette = "BuPu", direction = 1, na.value = "grey90",
+    labels = scales::percent_format(accuracy = 1),
+    name = "Transmission rate", limits = c(0, 1),
+    guide = guide_colorbar(barwidth = 8, barheight = 0.5, title.position = "top")
+  ) +
+  labs(title    = "Other indigenous transmission rate",
+       subtitle = "(only shown where ≥10 speaking parents)") +
+  theme_void(base_size = 11) +
+  theme(
+    plot.title      = element_text(face = "bold", hjust = 0.5, margin = margin(b = 2)),
+    plot.subtitle   = element_text(color = "grey40", size = rel(0.72), hjust = 0.5,
+                                   margin = margin(b = 6)),
+    legend.position = "bottom",
+    legend.title    = element_text(size = rel(0.75), hjust = 0.5),
+    legend.text     = element_text(size = rel(0.65))
+  )
+
+p_o_speakers | p_o_transmission
+```
+
+```{r}
+#| label: other-top30
+#| fig-height: 9
+
+local({
+  fill_colour <- "#9467bd"
+  speaker_col <- "n_speakers_other"
+  min_parents <- 10
+  n           <- 30
+
+  plot_data <- other_transmission_clean |>
+    filter(!is.na(.data[[speaker_col]])) |>
+    slice_max(order_by = .data[[speaker_col]], n = n) |>
+    left_join(
+      muni_lookup |> select(id_muni, muni_ine, department) |> distinct(),
+      by = c("muni_code" = "id_muni")
+    ) |>
+    left_join(other_lang_labels, by = "muni_code") |>
+    mutate(
+      label     = coalesce(paste0(muni_ine, " (", department, ")"),
+                           paste0("(", muni_code, ")")),
+      label     = fct_reorder(label, .data[[speaker_col]]),
+      show_rate = if_else(n_children_with_parent >= min_parents,
+                          transmission_rate, NA_real_)
+    )
+
+  ggplot(plot_data, aes(x = show_rate, y = label)) +
+    geom_col(fill = fill_colour, alpha = 0.8, na.rm = TRUE) +
+    geom_text(
+      aes(label = if_else(!is.na(show_rate),
+                          scales::percent(show_rate, accuracy = 1), "—"),
+          x     = if_else(!is.na(show_rate), show_rate + 0.01, 0.01)),
+      hjust = 0, size = 3.2, color = "grey30"
+    ) +
+    geom_text(
+      aes(x = Inf, label = right_label),
+      hjust = 1.05, size = 2.8, color = "grey45", na.rm = TRUE
+    ) +
+    scale_x_continuous(
+      labels = scales::percent_format(),
+      expand = expansion(mult = c(0, 0.55))
+    ) +
+    labs(
+      title    = "Other indigenous transmission — top 30 municipalities by speaker count",
+      subtitle = paste0(
+        "Bolivia CNPV 2024  |  bars suppressed where <", min_parents,
+        " speaking parents  |  right labels: top 2 other-language mother tongues (% of pop.)"
+      ),
+      x = "Transmission rate", y = NULL
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      plot.title         = element_text(face = "bold", margin = margin(b = 3)),
+      plot.subtitle      = element_text(color = "grey40", size = rel(0.82),
+                                        margin = margin(b = 8)),
+      panel.grid.major.y = element_blank()
+    )
+})
+```
+
+```{r}
+#| label: other-bubble
+#| fig-width: 6
+#| fig-height: 6
+
+bubble_chart_ly(other_transmission_clean,
+                speaker_col     = "n_speakers_other",
+                parent_col      = "n_parents_other",
+                child_speak_col = "n_children_speak_other",
+                lang_name       = "Other indigenous",
+                fill_colour     = "#9467bd",
+                muni_pop        = muni_pop_all,
+                min_parents     = 10)
+```
+
+## Combined: prevalence vs. transmission rate
+
+```{r}
+#| label: combined-bubble
+#| fig-width: 6
+#| fig-height: 6
+
+lang_colors <- c(
+  "Aymara"           = "#d62728",
+  "Quechua"          = "#ff7f0e",
+  "Guaraní"          = "#2ca02c",
+  "Other indigenous" = "#9467bd"
+)
+
+combined_data <- bind_rows(
+  aymara_transmission_clean |>
+    filter(!is.na(n_speakers_aymara), n_children_with_parent >= 100) |>
+    slice_max(n_speakers_aymara, n = 50) |>
+    transmute(muni_code, language = "Aymara",
+              n_speakers = n_speakers_aymara, n_parents = n_parents_aymara,
+              n_children_with_parent,
+              n_children_speaking = n_children_speak_aymara,
+              transmission_rate),
+  quechua_transmission_clean |>
+    filter(!is.na(n_speakers_quechua), n_children_with_parent >= 100) |>
+    slice_max(n_speakers_quechua, n = 50) |>
+    transmute(muni_code, language = "Quechua",
+              n_speakers = n_speakers_quechua, n_parents = n_parents_quechua,
+              n_children_with_parent,
+              n_children_speaking = n_children_speak_quechua,
+              transmission_rate),
+  guarani_transmission_clean |>
+    filter(!is.na(n_speakers_guarani), n_children_with_parent >= 20) |>
+    slice_max(n_speakers_guarani, n = 50) |>
+    transmute(muni_code, language = "Guaraní",
+              n_speakers = n_speakers_guarani, n_parents = n_parents_guarani,
+              n_children_with_parent,
+              n_children_speaking = n_children_speak_guarani,
+              transmission_rate),
+  other_transmission_clean |>
+    filter(!is.na(n_speakers_other), n_children_with_parent >= 10) |>
+    slice_max(n_speakers_other, n = 50) |>
+    transmute(muni_code, language = "Other indigenous",
+              n_speakers = n_speakers_other, n_parents = n_parents_other,
+              n_children_with_parent,
+              n_children_speaking = n_children_speak_other,
+              transmission_rate)
+) |>
+  left_join(muni_pop_all, by = "muni_code") |>
+  left_join(
+    muni_lookup |> select(id_muni, muni_ine, department) |> distinct(),
+    by = c("muni_code" = "id_muni")
+  ) |>
+  mutate(
+    speaker_share = n_speakers / n_total,
+    language      = factor(language, levels = names(lang_colors)),
+    muni_label    = coalesce(muni_ine, muni_code),
+    tooltip = paste0(
+      "<b>", muni_label, "</b>   ", department, "<br>",
+      language, "<br>",
+      "<br>",
+      "Total population: ", scales::comma(n_total), "<br>",
+      "Speakers: ", scales::comma(n_speakers), "<br>",
+      "Speaking parents: ", scales::comma(n_parents), "<br>",
+      "Children with parent: ", scales::comma(n_children_with_parent), "<br>",
+      "Children speaking: ", scales::comma(n_children_speaking), "<br>",
+      "Transmission: ", scales::percent(transmission_rate, accuracy = 1)
+    )
+  )
+
+plot_ly(
+  data      = combined_data,
+  x         = ~speaker_share,
+  y         = ~transmission_rate,
+  size      = ~n_speakers,
+  sizes     = c(10, 60),
+  color     = ~language,
+  colors    = lang_colors,
+  text      = ~tooltip,
+  hoverinfo = "text",
+  type      = "scatter",
+  mode      = "markers",
+  marker    = list(
+    opacity  = 0.65,
+    sizemode = "diameter",
+    line     = list(color = "white", width = 1)
+  )
+) |>
+  layout(
+    title = list(
+      text = paste0("Language prevalence vs. transmission rate \u2014 all four language groups<br>",
+                    "<sup>Bolivia CNPV 2024 \u2502 top 50 municipalities per language by speaker count</sup>"),
+      font = list(size = 14)
+    ),
+    xaxis = list(
+      title      = "Share of municipal population (mother tongue)",
+      tickformat = ".0%",
+      zeroline   = FALSE
+    ),
+    yaxis = list(
+        title      = "Transmission rate",
+        tickformat = ".0%",
+        range      = c(0, 1),
+        zeroline   = FALSE,
+        scaleanchor = "x",
+        scaleratio = 1
+        ),
+    legend = list(
+      title = list(text = ""),
+      orientation = "v"
+    ),
+    hoverlabel = list(
+      bgcolor     = "white",
+      bordercolor = "#cccccc",
+      font        = list(color = "#333333", size = 12)
+    )
+  )
+```
+
+## Transmission by Albó-Romero municipality group
+
+```{r}
+#| label: transmission-albo-setup
+
+albo_classify <- function(cel_5plus, cel_4plus, cel_2plus) {
+  dplyr::case_when(
+    cel_5plus >= 0.90 & cel_4plus >= 0.90 & cel_2plus >= 0.90 ~ "A",
+    cel_5plus >  0.67 & cel_4plus >  0.80 & cel_2plus >  0.90 ~ "B",
+    cel_5plus >  0.50 & cel_4plus >  0.67 & cel_2plus >  0.67 ~ "C",
+    cel_5plus >  0.33 & cel_4plus >  0.50 & cel_2plus >  0.67 ~ "D",
+    cel_2plus >  0.75                                          ~ "E",
+    cel_2plus >  0.50                                          ~ "F",
+    cel_2plus >  0.33                                          ~ "G",
+    cel_2plus >  0.10                                          ~ "H",
+    TRUE                                                        ~ "I"
+  )
+}
+
+cel_geo_muni <- cel_geo |>
+  filter(!is.na(municipality), is.na(urban_rural)) |>
+  mutate(
+    muni_code  = sprintf("%02d%02d%02d", department, province, municipality),
+    albo_group = albo_classify(cel_5plus / 100, cel_4plus / 100, cel_2plus / 100)
+  ) |>
+  select(muni_code, albo_group) |>
+  distinct()
+
+by_albo <- function(df, speak_col, parent_col, speaker_col) {
+  df |>
+    left_join(cel_geo_muni, by = "muni_code") |>
+    filter(!is.na(albo_group)) |>
+    group_by(albo_group) |>
+    summarise(
+      n_municipalities    = n(),
+      n_total_speakers    = sum(.data[[speaker_col]], na.rm = TRUE),
+      n_total_parents     = sum(.data[[parent_col]],  na.rm = TRUE),
+      n_total_children    = sum(n_children_with_parent, na.rm = TRUE),
+      n_speaking          = sum(.data[[speak_col]],   na.rm = TRUE),
+      transmission_median = median(transmission_rate, na.rm = TRUE),
+      transmission_mean   = mean(transmission_rate,   na.rm = TRUE),
+      transmission_q25    = quantile(transmission_rate, 0.25, na.rm = TRUE),
+      transmission_q75    = quantile(transmission_rate, 0.75, na.rm = TRUE),
+      .groups = "drop"
+    ) |>
+    arrange(factor(albo_group, levels = c("A","B","C","D","E","F","G","H","I")))
+}
+
+aymara_by_albo  <- by_albo(aymara_transmission_clean,
+                            "n_children_speak_aymara",  "n_parents_aymara",  "n_speakers_aymara")
+quechua_by_albo <- by_albo(quechua_transmission_clean,
+                            "n_children_speak_quechua", "n_parents_quechua", "n_speakers_quechua")
+guarani_by_albo <- by_albo(guarani_transmission_clean,
+                            "n_children_speak_guarani", "n_parents_guarani", "n_speakers_guarani")
+other_by_albo   <- by_albo(other_transmission_clean,
+                            "n_children_speak_other",   "n_parents_other",   "n_speakers_other")
+```
+
+```{r}
+#| label: transmission-albo-plot
+#| fig-width: 12
+#| fig-height: 5.5
+
+albo_levels <- c("B","C","D","E","F","G","H","I")
+
+lang_colors <- c(
+  "Aymara"  = "#d62728",
+  "Quechua" = "#ff7f0e",
+  "Guaraní" = "#2ca02c",
+  "Other"   = "#9467bd"
+)
+
+albo_compare <- bind_rows(
+  aymara_by_albo  |> mutate(language = "Aymara"),
+  quechua_by_albo |> mutate(language = "Quechua"),
+  guarani_by_albo |> mutate(language = "Guaraní"),
+  other_by_albo   |> mutate(language = "Other")
+) |>
+  filter(albo_group %in% albo_levels) |>
+  mutate(
+    albo_group = factor(albo_group, levels = albo_levels),
+    language   = factor(language, levels = names(lang_colors))
+  )
+
+ggplot(albo_compare, aes(x = albo_group, y = transmission_median, fill = language)) +
+  geom_col(position = "dodge", width = 0.75, alpha = 0.85) +
+  geom_errorbar(
+    aes(ymin = transmission_q25, ymax = transmission_q75),
+    position = position_dodge(0.75),
+    width = 0.25, linewidth = 0.7, color = "grey40"
+  ) +
+  scale_fill_manual(values = lang_colors) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  labs(
+    title    = "Intergenerational language transmission by Albó-Romero municipality group",
+    subtitle = "% of children with a language-speaking parent who speak that language themselves\nMedian with interquartile range  |  Bolivia CNPV 2024",
+    x = "Albó-Romero municipality group",
+    y = "Transmission rate (median)",
+    fill = NULL
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold", margin = margin(b = 4)),
+    plot.subtitle      = element_text(color = "grey40", size = rel(0.85), margin = margin(b = 10)),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    legend.position    = "bottom"
+  )
+```
+
+- **Aymara and Quechua** follow the expected gradient — transmission collapses as CEL concentration falls. Group B: Aymara 40%, Quechua 54%. Groups F–I: Aymara near zero, Quechua 7–17%.
+- **Guaraní** shows near-zero transmission in Groups B–F (which are Andean municipalities where almost no Guaraní speakers live) and rises only in Groups G–H — the Chaco lowland municipalities where Guaraní communities are actually located. The Albó grouping is calibrated to Andean populations and does not capture Guaraní community strength.
+- **Other indigenous languages** show a similarly non-monotonic pattern, peaking in Groups D–E, which happen to include isolated lowland municipalities with strong small-language communities (e.g. Tsimane´, Chiquitano, Moxeño territory). The median near zero in several groups reflects that few municipalities in those groups have meaningful speaker populations for any single "other" language.
+- The consistently higher national rates for Guaraní (56%) and other languages (68%) relative to Aymara and Quechua are partly a selection effect: smaller languages survive in more isolated communities, and it is precisely those communities that remain in the dataset.
