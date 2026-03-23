@@ -1260,8 +1260,7 @@ get_wikitable(facilities_wikitable,
 
 Update complete.
 
-:::{.column-screen-inset-right}
-
+::: column-screen-inset-right
 ```{r treemap}
 #| fig-width: 14  # Increase this to fill the inset/screen space
 #| fig-asp: 0.618 # Controls the height relative to width

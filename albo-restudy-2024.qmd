@@ -37,6 +37,9 @@ variables, and begins exploring what they reveal.
 library(arrow)
 library(tidyverse)
 library(patchwork)
+library(ggrepel)
+
+source("butterfly_helpers.R")
 
 DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
 CENSO_DIR <- "../bolivia-data/Censo 2024"
@@ -835,6 +838,460 @@ albo_vars |>
   theme(strip.text = element_text(face = "bold"))
 ```
 
+### CEL by urban/rural: diverging bar chart (counts)
+
+```{r}
+#| label: cel-urbrur-diverging
+#| fig-width: 14
+#| fig-height: 5
+
+cel_labels_int <- c(
+  "0" = "0 — No identity, no language",
+  "1" = "1 — No identity, speaks (no childhood)",
+  "2" = "2 — No identity, speaks + childhood (bilingual)",
+  "3" = "3 — No identity, speaks + childhood (monolingual)",
+  "4" = "4 — Identity only",
+  "5" = "5 — Identity + language (no childhood)",
+  "6" = "6 — Identity + language + childhood (bilingual)",
+  "7" = "7 — Identity + language + childhood (monolingual)"
+)
+
+cel_text_colors <- c(
+  "0" = "white", "1" = "grey20", "1.5" = "grey20", "2" = "grey20", "3" = "white",
+  "4" = "grey20", "4.5" = "grey20", "5" = "white", "6" = "white", "7" = "white"
+)
+
+urbrur_labels <- c("1" = "Urban", "2" = "Rural")
+
+cel_urbrur <- albo_vars |>
+  mutate(urbrur_label = urbrur_labels[as.character(urbrur)]) |>
+  filter(!is.na(urbrur_label), !is.na(cel)) |>
+  count(urbrur_label, cel) |>
+  mutate(cel_chr = as.character(cel))
+
+guage YOu 
+```
+
+### CEL by age group: diverging bar chart (counts)
+
+```{r}
+#| label: cel-age-diverging
+#| fig-width: 14
+#| fig-height: 6.5
+
+# Need age from person file
+ds_persona <- open_dataset(
+  file.path(DATA_DIR, "Persona_CPV-2024.csv"),
+  format = "csv", delimiter = ";"
+)
+
+age_col <- ds_persona |>
+  select(p26_edad) |>
+  collect()
+
+albo_vars$age <- age_col$p26_edad
+
+cel_age <- albo_vars |>
+  mutate(age_group = case_when(
+    age <  15 ~ "0-14",
+    age <  30 ~ "15-29",
+    age <  45 ~ "30-44",
+    age <  60 ~ "45-59",
+    TRUE      ~ "60+"
+  )) |>
+  filter(!is.na(cel), !is.na(age_group)) |>
+  count(age_group, cel) |>
+  mutate(cel_chr = as.character(cel))
+
+make_butterfly(
+  cel_age,
+  group_var = "age_group",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution by age group — CNPV 2024",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 11,365,333",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### Indigenous language by age group: diverging butterfly (dual scales)
+
+```{r}
+#| label: lang-age-diverging
+#| fig-width: 14
+#| fig-height: 8
+
+# Load census language data and prepare by age group
+ds_persona <- open_dataset(
+  file.path(DATA_DIR, "Persona_CPV-2024.csv"),
+  format = "csv", delimiter = ";"
+)
+
+lang_data <- ds_persona |>
+  select(p26_edad, idioma_mat) |>
+  collect()
+
+# Filter for indigenous languages (codes 1-5, 7-37) with >2000 speakers
+indigenous_lang_codes <- c(1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37)
+
+lang_age_data <- lang_data |>
+  filter(idioma_mat %in% indigenous_lang_codes) |>
+  mutate(age_group = case_when(
+    p26_edad < 15 ~ "0-14",
+    p26_edad < 30 ~ "15-29",
+    p26_edad < 45 ~ "30-44",
+    p26_edad < 60 ~ "45-59",
+    TRUE ~ "60+"
+  )) |>
+  group_by(age_group, idioma_mat) |>
+  count() |>
+  ungroup() |>
+  # Filter to languages with >2000 speakers
+  group_by(idioma_mat) |>
+  filter(sum(n) > 2000) |>
+  ungroup() |>
+  # Add language labels
+  left_join(idioma_cats |> rename(idioma_mat = code), by = "idioma_mat") |>
+  filter(!is.na(label))
+
+# Split into large (Aymara/Quechua) and small languages
+age_order <- c("0-14", "15-29", "30-44", "45-59", "60+")
+
+large_lang_colors <- c("Aymara" = "#d62728", "Quechua" = "#ff7f0e")
+small_lang_colors <- c("Guaraní" = "#1f77b4", "Tsimane´" = "#2ca02c", 
+                       "Gwarayu" = "#9467bd", "Weenhayek" = "#8c564b")
+
+large_lang_age <- lang_age_data |>
+  filter(label %in% c("Aymara", "Quechua")) |>
+  rename(n_speakers = n, language = label) |>
+  select(age_group, language, n_speakers) |>
+  mutate(age_group = factor(age_group, levels = age_order))
+
+small_lang_age <- lang_age_data |>
+  filter(!label %in% c("Aymara", "Quechua")) |>
+  rename(n_speakers = n, language = label) |>
+  select(age_group, language, n_speakers) |>
+  mutate(age_group = factor(age_group, levels = age_order))
+
+p_large <- make_butterfly(
+  large_lang_age,
+  group_var = "age_group",
+  category_var = "language",
+  n_var = "n_speakers",
+  left_cats = "Aymara",
+  right_cats = "Quechua",
+  colors_map = large_lang_colors,
+  title = "Aymara & Quechua by age group — CNPV 2024",
+  subtitle = "Combined: 2,200,862 speakers",
+  arrow_left = "← Aymara",
+  arrow_right = "Quechua →",
+  base_size = 12
+)
+
+p_small <- make_butterfly(
+  small_lang_age,
+  group_var = "age_group",
+  category_var = "language",
+  n_var = "n_speakers",
+  left_cats = c("Guaraní", "Gwarayu"),
+  right_cats = c("Tsimane´", "Weenhayek"),
+  colors_map = small_lang_colors,
+  category_labels = c("Guaraní" = "Guaraní", "Gwarayu" = "Gwarayu", 
+                      "Tsimane´" = "Tsimane´", "Weenhayek" = "Weenhayek"),
+  title = "Smaller indigenous languages by age group — CNPV 2024",
+  subtitle = "Combined: 77,826 speakers (languages with >2,000 speakers)",
+  arrow_left = "← Lowland groups",
+  arrow_right = "Amazon →",
+  base_size = 12
+)
+
+p_large / p_small
+```
+
+### Maternal language composition: national butterfly charts
+
+The following two charts show the distribution of the three major maternal 
+languages (Aymara, Quechua, Castellano) across CEL categories at the national 
+level, grouped first by language and then by age.
+
+```{r}
+#| label: lang-maternal-butterfly
+#| fig-width: 14
+#| fig-height: 5.5
+
+# Load language data (full, not filtered)
+ds_persona_lang <- open_dataset(
+  file.path(DATA_DIR, "Persona_CPV-2024.csv"),
+  format = "csv", delimiter = ";"
+)
+
+lang_data_full <- ds_persona_lang |>
+  select(p26_edad, idioma_mat) |>
+  collect()
+
+# Prepare national data by maternal language
+# Merge by row position with albo_vars (which has CEL)
+nacional_by_lang <- tibble(
+  idioma_mat = lang_data_full$idioma_mat,
+  p26_edad = lang_data_full$p26_edad,
+  cel = albo_vars$cel
+) |>
+  filter(idioma_mat %in% c(2, 6, 27)) |>
+  mutate(
+    lang_label = case_when(
+      idioma_mat == 2 ~ "Aymara",
+      idioma_mat == 6 ~ "Castellano",
+      idioma_mat == 27 ~ "Quechua",
+      TRUE ~ NA_character_
+    ),
+    cel_chr = factor(as.character(cel),
+                     levels = c("0", "1", "1.5", "2", "3", "4", "4.5", "5", "6", "7"))
+  ) |>
+  filter(!is.na(lang_label), !is.na(cel_chr)) |>
+  group_by(lang_label, cel_chr) |>
+  count() |>
+  ungroup()
+
+# Create butterfly
+make_butterfly(
+  nacional_by_lang,
+  group_var = "lang_label",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution by maternal language — Bolivia CNPV 2024",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 11,365,333",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### Maternal language by age group: national butterfly
+
+```{r}
+#| label: lang-age-butterfly
+#| fig-width: 14
+#| fig-height: 6.5
+
+# Prepare national data by age group
+nacional_by_age <- tibble(
+  idioma_mat = lang_data_full$idioma_mat,
+  p26_edad = lang_data_full$p26_edad,
+  cel = albo_vars$cel
+) |>
+  filter(idioma_mat %in% c(2, 6, 27)) |>
+  mutate(
+    lang_label = case_when(
+      idioma_mat == 2 ~ "Aymara",
+      idioma_mat == 6 ~ "Castellano",
+      idioma_mat == 27 ~ "Quechua",
+      TRUE ~ NA_character_
+    ),
+    age_group = cut(p26_edad, breaks = c(0, 15, 30, 45, 60, Inf),
+                    labels = c("0-14", "15-29", "30-44", "45-59", "60+"),
+                    right = FALSE, include.lowest = TRUE),
+    cel_chr = factor(as.character(cel),
+                     levels = c("0", "1", "1.5", "2", "3", "4", "4.5", "5", "6", "7"))
+  ) |>
+  filter(!is.na(lang_label), !is.na(age_group), !is.na(cel_chr)) |>
+  group_by(lang_label, cel_chr) |>
+  count() |>
+  ungroup()
+
+# Create butterfly - group by language
+make_butterfly(
+  nacional_by_age,
+  group_var = "lang_label",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution by maternal language — Bolivia CNPV 2024",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  Major languages only",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### CEL distribution by major indigenous languages (excluding Castellano)
+
+```{r}
+#| label: lang-major-indigenous-butterfly
+#| fig-width: 14
+#| fig-height: 5.5
+
+# Prepare national data for 4 major indigenous languages
+# Aymara (2), Quechua (27), Guaraní (12), Tsimané (10) - excluding Castellano
+major_lang_codes_no_cast <- c(2, 27, 12, 10)
+
+nacional_by_lang_no_cast <- tibble(
+  idioma_mat = lang_data_full$idioma_mat,
+  cel = albo_vars$cel
+) |>
+  filter(idioma_mat %in% major_lang_codes_no_cast) |>
+  left_join(
+    idioma_cats |> rename(idioma_mat = code),
+    by = "idioma_mat"
+  ) |>
+  filter(!is.na(label)) |>
+  mutate(
+    lang_label = label,
+    cel_chr = factor(as.character(cel),
+                     levels = c("0", "1", "1.5", "2", "3", "4", "4.5", "5", "6", "7"))
+  ) |>
+  filter(!is.na(cel_chr)) |>
+  group_by(lang_label, cel_chr) |>
+  count() |>
+  ungroup()
+
+# Create butterfly
+make_butterfly(
+  nacional_by_lang_no_cast,
+  group_var = "lang_label",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution by major indigenous languages — Bolivia CNPV 2024",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  Aymara, Quechua, Guaraní, Tsimané",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### CEL distribution by indigenous language: mid-sized communities
+
+```{r}
+#| label: lang-small-indigenous-butterfly
+#| fig-width: 14
+#| fig-height: 6.5
+
+# Prepare national data for all smaller indigenous languages
+# (all indigenous codes except the 4 major + Castellano)
+indigenous_codes <- c(1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37)
+remaining_indigenous_codes <- setdiff(indigenous_codes, c(2, 6, 27, 12, 10))
+
+nacional_by_lang_small_custom <- tibble(
+  idioma_mat = lang_data_full$idioma_mat,
+  cel = albo_vars$cel
+) |>
+  filter(idioma_mat %in% remaining_indigenous_codes) |>
+  left_join(
+    idioma_cats |> rename(idioma_mat = code),
+    by = "idioma_mat"
+  ) |>
+  filter(!is.na(label)) |>
+  mutate(
+    lang_label = label,
+    cel_chr = factor(as.character(cel),
+                     levels = c("0", "1", "1.5", "2", "3", "4", "4.5", "5", "6", "7"))
+  ) |>
+  filter(!is.na(cel_chr)) |>
+  group_by(lang_label, cel_chr) |>
+  count() |>
+  ungroup()
+
+# Filter to languages >= 926 speakers (Yurakaré and larger)
+min_speakers <- 926
+nacional_by_lang_filtered <- nacional_by_lang_small_custom |>
+  group_by(lang_label) |>
+  summarise(total = sum(n), .groups = "drop") |>
+  filter(total >= min_speakers) |>
+  pull(lang_label)
+
+# Prepare for diverging chart
+nacional_small_filtered <- nacional_by_lang_small_custom |>
+  filter(lang_label %in% nacional_by_lang_filtered) |>
+  mutate(
+    side = if_else(as.integer(cel_chr) <= 5, "left", "right"),
+    count_plot = if_else(side == "left", -n, n)
+  )
+
+# Order by total count
+lang_order_filtered <- nacional_small_filtered |>
+  group_by(lang_label) |>
+  summarise(total = sum(n), .groups = "drop") |>
+  arrange(desc(total)) |>
+  pull(lang_label)
+
+nacional_small_filtered <- nacional_small_filtered |>
+  mutate(lang_label = factor(lang_label, levels = lang_order_filtered))
+
+# Create plot with labels above bars and vertical spacing
+ggplot(nacional_small_filtered, aes(x = count_plot, y = lang_label, fill = cel_chr)) +
+  geom_col(width = 0.6) +
+  geom_vline(xintercept = 0, linewidth = 1.2, color = "grey20") +
+  # Bar value labels (inside bars)
+  geom_text(
+    aes(label = scales::comma(n)),
+    position = position_stack(vjust = 0.5),
+    size = 2.3, fontface = "bold", color = "white",
+    inherit.aes = TRUE
+  ) +
+  # Language labels ABOVE the bars (outside)
+  geom_text(
+    aes(x = 0, y = as.numeric(lang_label) + 0.45, label = lang_label),
+    inherit.aes = FALSE,
+    hjust = 0.5, vjust = 0,
+    size = 3, fontface = "bold", color = "grey20"
+  ) +
+  scale_x_continuous(
+    labels = function(x) scales::comma(abs(x)),
+    expand = expansion(mult = c(0.12, 0.12))
+  ) +
+  scale_y_discrete(expand = expansion(mult = c(0.08, 0.08))) +
+  scale_fill_manual(
+    values = cel_colors,
+    labels = cel_labels_int,
+    name = NULL,
+    guide = guide_legend(nrow = 2, override.aes = list(size = 4))
+  ) +
+  annotate("text", x = -3000, y = Inf, vjust = 1.1,
+           label = "← No indigenous identity (CEL 0–3)",
+           size = 3.2, fontface = "bold", color = "#4a5568", hjust = 0.5) +
+  annotate("text", x = 3000, y = Inf, vjust = 1.1,
+           label = "Indigenous identity (CEL 4–7) →",
+           size = 3.2, fontface = "bold", color = "#2166ac", hjust = 0.5) +
+  labs(
+    title = "CEL distribution by indigenous language: mid-sized communities — Bolivia CNPV 2024",
+    subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  10 language groups (≥926 speakers)",
+    x = NULL, y = NULL
+  ) +
+  theme_void(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = rel(1.3), margin = margin(b = 3)),
+    plot.subtitle = element_text(color = "grey40", size = rel(0.8), margin = margin(b = 16)),
+    plot.margin = margin(25, 30, 10, 10),
+    axis.text.x = element_text(color = "grey50", size = rel(0.6), margin = margin(t = 5)),
+    legend.position = "bottom",
+    legend.text = element_text(size = rel(0.65)),
+    legend.key.size = unit(0.4, "cm"),
+    legend.spacing.x = unit(0.15, "cm"),
+    legend.margin = margin(t = 10)
+  ) +
+  coord_cartesian(clip = "off")
+```
+
 ### CEL by department
 
 ```{r}
@@ -1178,6 +1635,223 @@ tbl_data |>
   rename(Group = albo_group, `%` = Pct, Cum. = Cumulative) |>
   knitr::kable(align = c("l", rep("r", length(dept_cols) + 3)))
 ```
+
+------------------------------------------------------------------------
+
+## El Alto: Linguistic diversity in a highland city
+
+El Alto (La Paz municipal district code 020105) sits at 4,100+ meters elevation
+on the Altiplano overlooking La Paz, with a population of ~888,000 according to
+the 2024 Census. Originally a transit town serving La Paz airport, El Alto has
+grown into Bolivia's second-largest city, attracting rural migrants from across
+the Andean region—particularly Aymara and Quechua speakers from the surrounding
+highlands and provinces.
+
+This section applies the Albó framework to El Alto's three major maternal language
+groups—Aymara, Quechua, and Castellano—examining how CEL status (indigenous
+identity, language use, and childhood exposure) varies by age cohort within each
+language group.
+
+### CEL distribution among Aymara speakers by age
+
+```{r}
+#| label: elalto-aymara-cel-age
+#| fig-width: 14
+#| fig-height: 5.5
+
+source("butterfly_helpers.R")
+source("cel_helpers.R")
+
+# Load El Alto full census data with CEL computed
+ds_persona <- open_dataset(
+  file.path(DATA_DIR, "Persona_CPV-2024.csv"),
+  format = "csv", delimiter = ";"
+)
+
+el_alto_full <- ds_persona |>
+  filter(idep == 2L, iprov == 1L, imun == 5L) |>
+  select(
+    idep, iprov, imun, i00, p26_edad, p25_sexo,
+    idioma_mat,
+    p32_pueblo_per, p32_pueblos,
+    p331_idiohab1_cod, p332_idiohab2_cod, p333_idiohab3_cod,
+    p341_idiomat_cod
+  ) |>
+  collect()
+
+el_alto_full <- el_alto_full |>
+  mutate(
+    cel = compute_cel(pick(everything())),
+    cel_chr = factor(as.character(cel),
+                     levels = c("0", "1", "1.5", "2", "3", "4", "4.5", "5", "6", "7")),
+    age_group = cut(p26_edad, breaks = c(0, 15, 30, 45, 60, Inf),
+                    labels = c("0-14", "15-29", "30-44", "45-59", "60+"),
+                    right = FALSE, include.lowest = TRUE),
+    lang_label = case_when(
+      idioma_mat == 2 ~ "Aymara",
+      idioma_mat == 6 ~ "Castellano",
+      idioma_mat == 27 ~ "Quechua",
+      TRUE ~ NA_character_
+    )
+  )
+
+# Prepare data
+el_alto_by_lang_age <- el_alto_full |>
+  filter(!is.na(lang_label), !is.na(cel_chr)) |>
+  group_by(age_group, lang_label, cel_chr) |>
+  count() |>
+  ungroup()
+
+# Aymara chart
+aymara_data <- el_alto_by_lang_age |> filter(lang_label == "Aymara")
+make_butterfly(
+  aymara_data,
+  group_var = "age_group",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution among Aymara speakers by age — El Alto",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 124,697",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### CEL distribution among Quechua speakers by age
+
+```{r}
+#| label: elalto-quechua-cel-age
+#| fig-width: 14
+#| fig-height: 5.5
+
+quechua_data <- el_alto_by_lang_age |> filter(lang_label == "Quechua")
+make_butterfly(
+  quechua_data,
+  group_var = "age_group",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution among Quechua speakers by age — El Alto",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 7,739",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### CEL distribution among Castellano speakers by age
+
+```{r}
+#| label: elalto-castellano-cel-age
+#| fig-width: 14
+#| fig-height: 5.5
+
+castellano_data <- el_alto_by_lang_age |> filter(lang_label == "Castellano")
+make_butterfly(
+  castellano_data,
+  group_var = "age_group",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution among Castellano speakers by age — El Alto",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 721,060",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### CEL distribution by maternal language — All El Alto residents
+
+```{r}
+#| label: elalto-lang-all
+#| fig-width: 14
+#| fig-height: 5.5
+
+# All El Alto residents, grouped by maternal language
+el_alto_lang_grouped <- el_alto_by_lang_age |>
+  group_by(lang_label, cel_chr) |>
+  summarise(n = sum(n), .groups = "drop")
+
+make_butterfly(
+  el_alto_lang_grouped,
+  group_var = "lang_label",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution by maternal language — All El Alto residents",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 853,496",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### CEL distribution by age group — All El Alto residents
+
+```{r}
+#| label: elalto-age-all
+#| fig-width: 14
+#| fig-height: 6
+
+# All El Alto residents, grouped by age
+el_alto_age_grouped <- el_alto_by_lang_age |>
+  group_by(age_group, cel_chr) |>
+  summarise(n = sum(n), .groups = "drop")
+
+make_butterfly(
+  el_alto_age_grouped,
+  group_var = "age_group",
+  category_var = "cel_chr",
+  n_var = "n",
+  left_cats = c("0", "1", "1.5", "2", "3"),
+  right_cats = c("4", "4.5", "5", "6", "7"),
+  colors_map = cel_colors,
+  category_labels = cel_labels_int,
+  text_colors = cel_text_colors,
+  title = "CEL distribution by age group — All El Alto residents",
+  subtitle = "Condición Étnico-Lingüística (Albó & Romero)  |  n = 853,496",
+  arrow_left = "← No indigenous identity (CEL 0–3)",
+  arrow_right = "Indigenous identity (CEL 4–7) →",
+  base_size = 14
+)
+```
+
+### Summary
+
+The three charts reveal starkly different linguistic-cultural profiles within El
+Alto:
+
+**Aymara speakers** show strong indigenous identity across all age groups, with
+CEL 6–7 (full bilingual or monolingual indigenous) dominating even in younger
+cohorts. This reflects Aymara's prestige and institutional presence in El Alto's
+migrant communities.
+
+**Quechua speakers** are rarer (7,739 total) and show more dispersion across CEL
+levels, with significant numbers in CEL 0–3 (no indigenous identity despite
+speaking Quechua). This mirrors broader patterns of Quechua marginalization.
+
+**Castellano speakers** overwhelmingly cluster in CEL 0–3, particularly in
+children (0–14), indicating Spanish-dominant households without indigenous
+identity or childhood language exposure. The sharp age gradient shows rapid
+intergenerational language shift away from indigenous languages.
 
 ------------------------------------------------------------------------
 

@@ -5,15 +5,27 @@ library(tidyverse)
 library(arrow)
 
 # ── Lookup tables ──
-muni_lookup <- readRDS("data/muni_id_lookup_table.rds")
+muni_lookup <- readRDS("data/muni_id_lookup_table.rds") |>
+  # Add TIOC/AIOC municipalities absent from the GADM-derived lookup
+  bind_rows(tibble(
+    id_muni    = "080901",
+    muni_ine   = "Territorio Indígena Multiétnico",
+    department = "Beni"
+  ))
 prov_id_lookup_table <- readRDS("data/prov_id_lookup_table.rds")
 idioma_cats <- readRDS("data/idioma_cats.rds")
 
 # ── CEL color palette ──
 cel_colors <- c(
-  "0" = "#d9d9d9", "1" = "#fee0b6", "1.5" = "#fdb863",
-  "2" = "#e08214", "3" = "#b35806", "4" = "#cce5ff",
-  "4.5" = "#74add1", "5" = "#4393c3", "6" = "#2166ac",
+  "0" = "#d9d9d9",
+  "1" = "#fee0b6",
+  "1.5" = "#fdb863",
+  "2" = "#e08214",
+  "3" = "#b35806",
+  "4" = "#cce5ff",
+  "4.5" = "#74add1",
+  "5" = "#4393c3",
+  "6" = "#2166ac",
   "7" = "#053061"
 )
 
@@ -24,20 +36,65 @@ cel_colors <- c(
 .generic_groups <- c(1L, 13L, 37L, 47L, 55L, 56L, 57L, 58L)
 
 .lookup_flat <- tribble(
-  ~pc, ~ic,
-  2L,  1L, 3L,  2L, 4L,  37L, 5L,  3L, 6L,  5L, 7L,  7L, 8L,  8L, 9L,  9L,
-  10L, 27L, 11L, 27L, 12L, 4L, 14L, 11L, 15L, 12L, 16L, 13L, 17L, 14L,
-  18L, 15L, 19L, 2L, 20L, 27L, 21L, 19L, 22L, 17L, 23L, 2L, 24L, 16L,
-  25L, 27L, 26L, 2L, 27L, 18L, 28L, 19L, 29L, 20L, 29L, 21L, 30L, 20L,
-  31L, 21L, 32L, 22L, 33L, 23L, 34L, 24L, 35L, 25L, 36L, 2L, 38L, 26L,
-  39L, 2L, 40L, 27L, 41L, 2L, 42L, 27L, 43L, 28L, 44L, 2L, 45L, 29L,
-  46L, 30L, 48L, 10L, 49L, 32L, 50L, 33L, 51L, 34L, 52L, 27L, 53L, 35L,
-  54L, 36L, 55L, 2L, 55L, 27L
+  ~pueblos_code, ~idioma_code,
+  2L,  1L,   # Araona
+  3L,  2L,   # Aymara
+  4L,  37L,  # Ayoreo -> Zamuco
+  5L,  3L,   # Baure
+  6L,  5L,   # Canichana
+  7L,  7L,   # Cavineño = Kabineña
+  8L,  8L,   # Cayubaba
+  9L,  9L,   # Chácobo
+  10L, 27L,  # Charka Qhara Qhara -> Quechua
+  11L, 27L,  # Chichas -> Quechua
+  12L, 4L,   # Chiquitano -> Bésiro
+  14L, 11L,  # Ese Ejja
+  15L, 12L,  # Guaraní
+  16L, 13L,  # Guarasu'we
+  17L, 14L,  # Gwarayu
+  18L, 15L,  # Itonama
+  19L, 2L,   # Jach'a Carangas -> Aymara
+  20L, 27L,  # Jalq'a -> Quechua
+  21L, 19L,  # Joaquiniano -> Maropa
+  22L, 17L,  # Kallawaya
+  23L, 2L,   # Killacas -> Aymara
+  24L, 16L,  # Leco
+  25L, 27L,  # Lípez -> Quechua
+  26L, 2L,   # Lupaca -> Aymara
+  27L, 18L,  # Machineri
+  28L, 19L,  # Maropa
+  29L, 20L,  # Mojeño -> Mojeño Ignaciano
+  29L, 21L,  # Mojeño -> Mojeño Trinitario
+  30L, 20L,  # Mojeño Ignaciano
+  31L, 21L,  # Mojeño Trinitario
+  32L, 22L,  # Moré
+  33L, 23L,  # Mosetén
+  34L, 24L,  # Movima
+  35L, 25L,  # Pacahuara
+  36L, 2L,   # Pakajaqi -> Aymara
+  38L, 26L,  # Puquina
+  39L, 2L,   # Qhapaq Uma Suyu -> Aymara
+  40L, 27L,  # Quechua
+  41L, 2L,   # Qullas -> Aymara
+  42L, 27L,  # Raqaypampa -> Quechua
+  43L, 28L,  # Sirionó
+  44L, 2L,   # Sora -> Aymara
+  45L, 29L,  # Tacana
+  46L, 30L,  # Tapiete
+  48L, 10L,  # Tsimane'
+  49L, 32L,  # Uru-Chipaya
+  50L, 33L,  # Weenhayek
+  51L, 34L,  # Yaminawa
+  52L, 27L,  # Yampara -> Quechua
+  53L, 35L,  # Yuqui
+  54L, 36L,  # Yurakaré
+  55L, 2L,   # Quechua-Aymara -> Aymara
+  55L, 27L   # Quechua-Aymara -> Quechua
 )
 
 .valid_match_q2 <- matrix(FALSE, nrow = 99L, ncol = 38L)
 for (i in seq_len(nrow(.lookup_flat))) {
-  .valid_match_q2[.lookup_flat$pc[i], .lookup_flat$ic[i]] <- TRUE
+  .valid_match_q2[.lookup_flat$pueblos_code[i], .lookup_flat$idioma_code[i]] <- TRUE
 }
 for (g in .generic_groups) {
   .valid_match_q2[g, .indigenous_idioma_codes[.indigenous_idioma_codes <= 38L]] <- TRUE
