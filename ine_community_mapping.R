@@ -72,6 +72,7 @@ ine_norm <- ine_geog_2013 |>
       com_name == "VACAS K UCHU"                     ~ normalize_match_key("VACAS KUCHU"),
       # Municipality alias: Muyupampa = Villa Vaca Guzmán
       com_name == "MUYUPAMPA"                        ~ normalize_match_key("VILLA VACA GUZMAN"),
+      com_name == "REYES"                            ~ normalize_match_key("SANTOS REYES"),
       # All other names: normalize encoding artifacts via key
       TRUE                                           ~ normalize_match_key(com_name)
     )
@@ -625,18 +626,19 @@ crosswalk_geo_ine <- bind_rows(
   resolvable_mixed
 )
 
-# crosswalk_geo_ine |> count(match_status)
-# unique:                  13,998  (direct name match)
-# unique_via_spatial:       4,138  (resolved by GADM, adjacency split, or population-centre selection)
-# unique_via_name:             23  (unambiguous name, closest to correct municipality centroid)
-# unique_via_usca:            142  (resolved by USCA community polygon spatial join)
-# ambiguous_canton_split:   1,518  (same community renumbered across cantons; N codes -> same IGM pool)
-# ambiguous_dispersed:        992  (all candidates are dispersed-type points; treat as coordinate pool)
-# ambiguous_no_spatial:         8  (SANTA ANA/San Javier: two cp points 133 km apart; unresolvable)
-# unmatched:                    5  (no geo entry exists)
+crosswalk_geo_ine |> count(match_status)
+# unique:                  13,999  (direct name match)
+# unique_via_spatial:       3,613  (resolved by GADM, adjacency split, or population-centre selection)
+# unique_via_name:            276  (unambiguous name, closest to correct municipality centroid)
+# unique_via_usca:            170  (resolved by USCA community polygon spatial join)
+# ambiguous_canton_split:     914  (same community renumbered across cantons; N codes -> same IGM pool)
+# ambiguous_dispersed:      2,738  (all candidates are dispersed-type points; treat as coordinate pool)
+# ambiguous_no_spatial:        28  (SANTA ANA/San Javier: two cp points 133 km apart; unresolvable)
+# unmatched:                    4  (no geo entry exists)
 
 # Save crosswalk for use in downstream scripts
-saveRDS(crosswalk_geo_ine, "data/crosswalk_ine_igm.rds")
+source("src/update-versioned-archive.R")
+update_versioned_archive(crosswalk_geo_ine, "data/crosswalk_ine_igm.rds")
 write.csv(crosswalk_geo_ine, "data/crosswalk_ine_igm.csv", row.names = FALSE)
 
 # ---------------------------------------------------------------------------
