@@ -3,6 +3,8 @@ library(httr)
 library(jsonlite)
 library(tidyverse)
 
+source("src/wikipedia-tools.R")
+source("get_wikidata_instances.R")
 
 census_table_2012 <- readRDS("data/census_table_municipios_2012u.rds")
 muni_lookup_ine <- census_table_2012 %>%
@@ -20,6 +22,8 @@ dep_lookup_ine <- census_table_2012 %>%
 dep_lookup_ine <- dep_lookup_ine %>%
   mutate(label_en = paste(department, "Department"))
 
+# retrieve instances of "department of Bolivia" (Q250050)
+#   with their QIDs and labels in English and Spanish
 departments_wd <- get_wikidata_instances("Q250050", languages = c("en", "es"))
 
 departments <- departments_wd %>%
@@ -30,6 +34,8 @@ departments <- departments %>%
 
 departments_1 <- departments %>%
   rowwise() %>%
+  # Add QuickStatement naming the INE Code (P14142) for each department
+  # This is cited to a 2013 INE dataset that includes all the codes
   mutate(quick_statement=create_quick_statement(qid, "P14142", cod.dep,
                                                 reference_qid = "Q138354774")) %>%
   ungroup()
@@ -97,13 +103,38 @@ provinces_without_suffix <- provinces_without_suffix %>%
   add_quick_statement_column(qid, property="L", value=str_c(.data$label_en, " Province (", department, ")"), lang="en")
 writeLines(provinces_without_suffix$quick_statement)
 
+# And in Spanish, we usually but not always have "Provincia de…"
+provinces_without_prefix_es <- provinces %>%
+  filter(!str_detect(label_es, "Provincia de") | str_detect(label_es, "Cercado"))
+
+provinces %>%
+  filter(str_starts(label_es, "Cercado")) %>%
+  add_quick_statement_column(qid, property="L", value=str_c("Provincia de ", .data$label_es, " (", department, ")"), lang="es") %>%
+  pull(quick_statement) %>%
+  writeLines()
+
+provinces %>%
+  filter(label_es == "Provincia de Cercado") %>%
+  add_quick_statement_column(qid, property="L", value=str_c(.data$label_es, " (", department, ")"), lang="es") %>%
+  pull(quick_statement) %>%
+  writeLines()
+
+provinces %>%
+  filter(!str_starts(tolower(label_es), "provincia")) %>%
+  add_quick_statement_column(qid, property="L", value=str_c("Provincia de ", .data$label_es, " (", department, ")"), lang="es") %>%
+  pull(quick_statement) %>%
+  writeLines()
+
+
 # We only had to run that once. Let's go back and check our work:
 provinces <- get_wikidata_instances("Q1062593", c("P131", "P17"), c("located_in", "country"))
 # get department names from the table we've already imported
 provinces <- provinces %>%
   left_join(select(departments, qid, department), by=join_by("located_in"=="qid")) %>%
   relocate(department, .after="located_in")
-# Note that if we recreate provinces_without_suffix, it now has zero items.
+# Note that if we recreate provinces_without_suffix, it now has four items,
+# just the Cercado provinces, which now have their department in parentheses in
+# the label.
 provinces <- provinces |>
   mutate(province = str_extract(label_en, "^(.+)\\s+Province", group = 1))
 
@@ -148,7 +179,7 @@ provinces_ine <- provinces_ine %>% add_quick_statement_column(qid, "P14142", cod
 writeLines(provinces_ine$quick_statement)
 
 # Municipalities
-municipalities_wd <- get_wikidata_instances("Q1062710",  c("P131", "P17"), c("located_in", "country"))
+municipalities_wd2 <- get_wikidata_instances("Q1062710",  c("P131", "P17", "P14142", "P1082"), c("located_in", "country", "ine_code", "population"))
 # finds 351 instances, but there are 339 municipalities, so that could be a problem
 
 # much editing…
