@@ -179,7 +179,10 @@ provinces_ine <- provinces_ine %>% add_quick_statement_column(qid, "P14142", cod
 writeLines(provinces_ine$quick_statement)
 
 # Municipalities
-municipalities_wd2 <- get_wikidata_instances("Q1062710",  c("P131", "P17", "P14142", "P1082"), c("located_in", "country", "ine_code", "population"))
+municipalities_wd2 <- get_wikidata_instances("Q1062710",
+                           c("P131", "P17", "P14142", "P1082"),
+                           c("located_in", "country", "ine_code", "population"),
+                           numeric_properties = "population")
 # finds 351 instances, but there are 339 municipalities, so that could be a problem
 
 # much editing…

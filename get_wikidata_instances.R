@@ -104,16 +104,9 @@ add_wikidata_property <- function(df, property, name = property) {
           map_chr(seq_len(nrow(p_df)), function(j) {
             dv <- p_df$mainsnak[j, ]$datavalue[[1]]
             if (is.data.frame(dv) && "amount" %in% names(dv)) {
-              # Quantity value — strip the leading "+" and return as string
-              as.character(sub("^\\+", "", dv$amount))
-            } else if (is.data.frame(dv) && "id" %in% names(dv)) {
-              # Entity/item value
-              as.character(dv$id)
-            } else if (is.character(dv)) {
-              # Plain string / external-id / url
-              dv
-            } else {
-              as.character(dv)
+              sub("^\\+", "", dv$amount)          # quantity: strip leading "+", keep as char for now
+            } else if (is.data.frame(dv)) {
+              as.character(dv$id)                  # entity/item value
             }
           })
         } else character(0)
@@ -308,7 +301,9 @@ get_wikidata_instances <- function(class_qid,
                                    languages      = c("en", "es"),
                                    limit          = 1000,
                                    batch_size     = 50,
-                                   batch_delay    = 1) {
+                                   batch_delay    = 1,
+                                   numeric_properties = NULL) {
+  numeric_properties <- as.character(numeric_properties)  # handles length-1 string
 
   # Resolve column names for extra properties
   if (!is.null(property)) {
@@ -353,6 +348,12 @@ get_wikidata_instances <- function(class_qid,
 
   # Convert to tibble and simplify single-value list columns
   result_df <- bind_rows(items_data) |> simplify_list_columns()
+
+  # Coerce declared numeric columns from character to numeric
+  for (nm in numeric_properties) {
+    if (nm %in% names(result_df))
+      result_df[[nm]] <- as.numeric(result_df[[nm]])
+  }
 
   message("Successfully retrieved ", nrow(result_df), " items")
   result_df
