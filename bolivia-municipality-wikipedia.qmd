@@ -12,10 +12,7 @@ editor: visual
 
 # Overview
 
-This document scrapes English Wikipedia for all pages in the
-[Municipalities of Bolivia](https://en.wikipedia.org/wiki/Category:Municipalities_of_Bolivia)
-category tree, extracts structured information from each page, and compares the
-coverage with Wikidata's inventory of Bolivian municipalities.
+This document scrapes English Wikipedia for all pages in the [Municipalities of Bolivia](https://en.wikipedia.org/wiki/Category:Municipalities_of_Bolivia) category tree, extracts structured information from each page, and compares the coverage with Wikidata's inventory of Bolivian municipalities.
 
 ```{r setup}
 #| message: false
@@ -30,10 +27,7 @@ source("get_wikidata_instances.R")
 
 # 1. Discover municipality pages from Wikipedia category
 
-We start by listing the subcategories of
-`Category:Municipalities of Bolivia`, keeping only those whose name begins
-with "Municipalities" (i.e. excluding "Categories by city in Bolivia" and
-other non-municipal subcategories).
+We start by listing the subcategories of `Category:Municipalities of Bolivia`, keeping only those whose name begins with "Municipalities" (i.e. excluding "Categories by city in Bolivia" and other non-municipal subcategories).
 
 ```{r get-subcategories}
 top_cat <- "Category:Municipalities_of_Bolivia"
@@ -47,8 +41,7 @@ muni_subcats <- subcats |>
 muni_subcats
 ```
 
-Now collect all article pages from each subcategory, plus any pages listed
-directly under the top-level category.
+Now collect all article pages from each subcategory, plus any pages listed directly under the top-level category.
 
 ```{r get-all-pages}
 # Pages directly in the top-level category
@@ -85,8 +78,7 @@ muni_df <- all_muni_pages |>
 
 # 3. Cache and parse wikitext
 
-We cache each page's raw wikitext to `wikipedia-pages/bolivia/` so that
-subsequent runs don't re-download.
+We cache each page's raw wikitext to `wikipedia-pages/bolivia/` so that subsequent runs don't re-download.
 
 ```{r cache-wikitext}
 cache_dir <- "wikipedia-pages/bolivia"
@@ -117,9 +109,7 @@ muni_df <- muni_df |>
 
 ## 4b. Infobox fields
 
-Parse the main infobox from each article and extract every key–value pair.
-We first collect all infobox data as a list column, then pivot the most
-common fields into their own columns.
+Parse the main infobox from each article and extract every key–value pair. We first collect all infobox data as a list column, then pivot the most common fields into their own columns.
 
 ```{r extract-infoboxes}
 muni_df <- muni_df |>
@@ -167,9 +157,7 @@ muni_result <- muni_df |>
 
 # 5. Compare with Wikidata
 
-Query Wikidata for all items that are instances of **municipality of Bolivia**
-([Q1062710](https://www.wikidata.org/wiki/Q1062710)), then compare with the
-Wikipedia category listing.
+Query Wikidata for all items that are instances of **municipality of Bolivia** ([Q1062710](https://www.wikidata.org/wiki/Q1062710)), then compare with the Wikipedia category listing.
 
 ```{r wikidata-query}
 # Q1062710 = "municipality of Bolivia"
