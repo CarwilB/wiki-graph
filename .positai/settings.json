@@ -14,10 +14,15 @@
     },
     "read": {
       "*.png": "allow"
+    },
+    "bash": {
+      "ls *": "allow",
+      "grep *": "allow",
+      "awk '{print $9, \"(\" $5 \")\"}'": "allow"
     }
   },
   "model": {
-    "id": "claude-haiku-4-5",
+    "id": "claude-sonnet-4-6",
     "provider": "positai"
   }
 }
