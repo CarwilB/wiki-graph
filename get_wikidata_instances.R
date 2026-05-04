@@ -52,11 +52,11 @@ add_wikidata_property <- function(df, property, name = property) {
       dv   <- snak$datavalue[[1]]
 
       # Dispatch on value type
-      if (is.data.frame(dv)) {
-        # Entity/item type: return the QID
+      if (is.data.frame(dv) && "amount" %in% names(dv)) {
+        sub("^\\+", "", dv$amount[[1]])
+      } else if (is.data.frame(dv)) {
         as.character(dv$id)
       } else if (is.character(dv)) {
-        # String / external-id / url
         dv
       } else {
         as.character(dv)
@@ -72,12 +72,130 @@ add_wikidata_property <- function(df, property, name = property) {
   df
 }
 
+# ---- .extract_numeric_list_property -----------------------------------------
+# Internal helper: extract all claims for a single quantity property from one
+# entity, including per-claim year (P585 qualifier) and reference (P854 URL
+# or P248 "stated in" QID). Returns a flat named list of scalars suitable for
+# inclusion in a bind_rows() record.
+#
+# Output columns for pname = "population", max_vals = 10:
+#   population         — most recent value (numeric; sorted by year desc, NAs last)
+#   population_n       — total number of claims (integer)
+#   population_1       — value of claim 1 (numeric)
+#   population_1_year  — year of claim 1 (integer, from P585, or NA)
+#   population_1_ref   — reference of claim 1 (character URL or "wd:Qxxx", or NA)
+#   ... up to population_10 / population_10_year / population_10_ref
+
+.extract_numeric_list_property <- function(entity, pid, pname, max_vals = 10) {
+
+  # All-NA result returned when property is absent or empty
+  empty_result <- function() {
+    out <- list()
+    out[[pname]]               <- NA_real_
+    out[[paste0(pname, "_n")]] <- 0L
+    for (i in seq_len(max_vals)) {
+      out[[paste0(pname, "_", i)]]          <- NA_real_
+      out[[paste0(pname, "_", i, "_year")]] <- NA_integer_
+      out[[paste0(pname, "_", i, "_ref")]]  <- NA_character_
+    }
+    out
+  }
+
+  if (!pid %in% names(entity$claims)) return(empty_result())
+  claims_df <- entity$claims[[pid]]
+  if (is.null(claims_df) || nrow(claims_df) == 0) return(empty_result())
+
+  n_claims <- nrow(claims_df)
+
+  # Extract (amount, year, ref) for each claim row
+  records <- lapply(seq_len(n_claims), function(i) {
+
+    # ---- amount ----
+    amount <- tryCatch({
+      dv <- claims_df$mainsnak[i, ]$datavalue[[1]]
+      if (is.data.frame(dv) && "amount" %in% names(dv))
+        as.numeric(sub("^\\+", "", dv$amount[[1]]))
+      else NA_real_
+    }, error = function(e) NA_real_)
+
+    # ---- year from P585 (point in time) qualifier ----
+    year <- tryCatch({
+      qual <- claims_df$qualifiers[[i]]
+      if (!is.null(qual) && "P585" %in% names(qual)) {
+        p585_df  <- qual[["P585"]]
+        dv       <- p585_df$datavalue[[1]]
+        # fromJSON() may produce a list (with $value$time) or a data frame
+        time_str <- if (is.list(dv) && !is.data.frame(dv)) {
+          dv$value$time
+        } else if (is.data.frame(dv) && "time" %in% names(dv)) {
+          dv$time[[1]]
+        } else NULL
+        if (!is.null(time_str) && !is.na(time_str))
+          as.integer(regmatches(time_str, regexpr("\\d{4}", time_str)))
+        else NA_integer_
+      } else NA_integer_
+    }, error = function(e) NA_integer_)
+
+    # ---- ref: prefer P854 (reference URL), fallback P248 (stated in) ----
+    ref <- tryCatch({
+      refs <- claims_df$references[[i]]
+      if (!is.null(refs) && length(refs) > 0) {
+        snaks <- refs[[1]]$snaks
+        if (!is.null(snaks) && "P854" %in% names(snaks)) {
+          # P854 is a URL string value
+          dv <- snaks[["P854"]][[1]]$datavalue[[1]]
+          if (is.character(dv))    dv
+          else if (is.list(dv))   as.character(dv$value)
+          else                    NA_character_
+        } else if (!is.null(snaks) && "P248" %in% names(snaks)) {
+          # P248 is an entity value
+          dv  <- snaks[["P248"]][[1]]$datavalue[[1]]
+          qid_val <- if (is.data.frame(dv) && "id" %in% names(dv)) dv$id[[1]]
+                     else if (is.list(dv))                          dv$value$id
+                     else                                           NA_character_
+          if (!is.null(qid_val) && !is.na(qid_val)) paste0("wd:", qid_val)
+          else NA_character_
+        } else NA_character_
+      } else NA_character_
+    }, error = function(e) NA_character_)
+
+    list(amount = amount, year = year, ref = ref)
+  })
+
+  # Sort by year descending, NAs last
+  years <- sapply(records, function(r) if (is.null(r$year) || is.na(r$year)) NA_integer_ else r$year)
+  ord   <- order(is.na(years), -ifelse(is.na(years), 0L, years))
+  records <- records[ord]
+  n <- length(records)
+
+  # Build the flat output list
+  out <- list()
+  out[[pname]]               <- records[[1]]$amount   # most recent
+  out[[paste0(pname, "_n")]] <- n
+
+  for (i in seq_len(max_vals)) {
+    if (i <= n) {
+      out[[paste0(pname, "_", i)]]          <- records[[i]]$amount
+      out[[paste0(pname, "_", i, "_year")]] <- records[[i]]$year
+      out[[paste0(pname, "_", i, "_ref")]]  <- records[[i]]$ref
+    } else {
+      out[[paste0(pname, "_", i)]]          <- NA_real_
+      out[[paste0(pname, "_", i, "_year")]] <- NA_integer_
+      out[[paste0(pname, "_", i, "_ref")]]  <- NA_character_
+    }
+  }
+
+  out
+}
+
 # ---- .parse_entity -----------------------------------------------------------
 # Internal helper: parse a single Wikidata entity object into a named list
 # suitable for bind_rows(). Used by get_wikidata_instances() and
 # resume_get_wikidata_instances().
 
-.parse_entity <- function(entity, qid, property, property_names, languages) {
+.parse_entity <- function(entity, qid, property, property_names, languages,
+                           numeric_list_properties     = NULL,
+                           numeric_list_property_names = NULL) {
 
   # Extract labels
   labels_list <- map(languages, function(lang) {
@@ -104,9 +222,13 @@ add_wikidata_property <- function(df, property, name = property) {
           map_chr(seq_len(nrow(p_df)), function(j) {
             dv <- p_df$mainsnak[j, ]$datavalue[[1]]
             if (is.data.frame(dv) && "amount" %in% names(dv)) {
-              sub("^\\+", "", dv$amount)          # quantity: strip leading "+", keep as char for now
+              sub("^\\+", "", dv$amount[[1]])   # quantity: strip leading "+"
             } else if (is.data.frame(dv)) {
-              as.character(dv$id)                  # entity/item value
+              as.character(dv$id)               # entity/item value
+            } else if (is.character(dv)) {
+              dv                                # plain string / URL
+            } else {
+              as.character(dv)
             }
           })
         } else character(0)
@@ -114,6 +236,20 @@ add_wikidata_property <- function(df, property, name = property) {
       setNames(list(list(vals)), pname)
     })
     unlist(prop_values, recursive = FALSE)
+  } else list()
+
+  # Extract numeric list properties (multi-value quantities with year + ref)
+  numeric_list_cols <- if (!is.null(numeric_list_properties)) {
+    result <- list()
+    for (i in seq_along(numeric_list_properties)) {
+      extracted <- .extract_numeric_list_property(
+        entity,
+        pid   = numeric_list_properties[i],
+        pname = numeric_list_property_names[i]
+      )
+      result <- c(result, extracted)
+    }
+    result
   } else list()
 
   # Extract all P31 (instance of) statements
@@ -144,6 +280,7 @@ add_wikidata_property <- function(df, property, name = property) {
     labels_list,
     descriptions_list,
     extra_props,
+    numeric_list_cols,
     list(
       instance_of        = list(instance_of),
       wikipedia_articles = list(wiki_articles)
@@ -157,7 +294,9 @@ add_wikidata_property <- function(df, property, name = property) {
 # Returns a list of parsed entity records suitable for bind_rows().
 
 .fetch_qids_in_batches <- function(qids, property, property_names, languages,
-                                   batch_size = 50, batch_delay = 1) {
+                                   batch_size = 50, batch_delay = 1,
+                                   numeric_list_properties     = NULL,
+                                   numeric_list_property_names = NULL) {
 
   batches    <- split(qids, ceiling(seq_along(qids) / batch_size))
   n_batches  <- length(batches)
@@ -192,7 +331,8 @@ add_wikidata_property <- function(df, property, name = property) {
           all_parsed[[idx]] <- NULL
         } else {
           all_parsed[[idx]] <- tryCatch(
-            .parse_entity(entity, qid, property, property_names, languages),
+            .parse_entity(entity, qid, property, property_names, languages,
+                          numeric_list_properties, numeric_list_property_names),
             error = function(e) {
               message("  Error parsing ", qid, ": ", e$message)
               NULL
@@ -257,70 +397,92 @@ add_wikidata_property <- function(df, property, name = property) {
 #' and Wikipedia articles.
 #'
 #' Items are fetched from the Wikidata API in batches of \code{batch_size}
-#' (default 50, the API maximum) to avoid rate-limiting errors that occur
-#' when retrieving hundreds of items one-by-one.
+#' (default 50, the API maximum) to avoid rate-limiting errors.
 #'
 #' @param class_qid Character. The Wikidata QID of the class (e.g., "Q250050")
 #' @param property Character or character vector. Optional property ID(s) to
 #'   retrieve as additional columns (e.g., \code{"P131"} or
 #'   \code{c("P131", "P17")}). Default is \code{NULL}.
 #' @param property_names Character vector. Column names to use for the extra
-#'   properties. If shorter than \code{property}, missing names fall back to
-#'   the property ID. If longer, the extra names are ignored and a message is
-#'   issued. Default is \code{NULL} (use property IDs as column names).
+#'   properties. Default is \code{NULL} (use property IDs as column names).
 #' @param country Character. Optional Wikidata QID of a country (e.g., "Q750"
-#'   for Bolivia). When supplied, only instances whose P17 (country) statement
-#'   matches this QID are returned. Default is \code{NULL} (no country filter).
+#'   for Bolivia). Default is \code{NULL} (no country filter).
 #' @param languages Character vector. Language codes for labels and descriptions.
 #'   Default is c("en", "es").
 #' @param limit Integer. Maximum number of results to return. Default is 1000.
 #' @param batch_size Integer. Number of items per API request (max 50).
 #'   Default is 50.
 #' @param batch_delay Numeric. Seconds to wait between batches. Default is 1.
+#' @param numeric_list_properties Character vector of property IDs (e.g.,
+#'   \code{"P1082"}) whose values are Wikidata quantity statements that may
+#'   have multiple claims (e.g. population figures across years). These must
+#'   NOT also appear in \code{property}. For each property named \code{pname}
+#'   in \code{numeric_list_property_names}, the following columns are added:
+#'   \describe{
+#'     \item{pname}{Most recent value (numeric; sorted by P585 year desc).}
+#'     \item{pname_n}{Total number of claims (integer).}
+#'     \item{pname_1 … pname_10}{Individual values (numeric).}
+#'     \item{pname_1_year … pname_10_year}{Year from P585 qualifier (integer).}
+#'     \item{pname_1_ref … pname_10_ref}{Reference URL (P854) or
+#'       \code{"wd:Qxxx"} (P248), or \code{NA} (character).}
+#'   }
+#' @param numeric_list_property_names Character vector. Column name prefixes
+#'   for each entry in \code{numeric_list_properties}. Defaults to the
+#'   property IDs if \code{NULL}.
 #'
-#' @return A tibble with columns:
-#'   - qid: Item QID
-#'   - label_XX: Label in each requested language
-#'   - description_XX: Description in each requested language
-#'   - One list column per entry in \code{property} (named by \code{property_names})
-#'   - instance_of: List column of all P31 values
-#'   - wikipedia_articles: List column of Wikipedia sitelinks
+#' @return A tibble with columns as described above.
 #'
 #' @examples
 #' get_wikidata_instances("Q250050", languages = c("en", "es"))
 #'
-#' get_wikidata_instances("Q1062593",
-#'                        property = c("P131", "P31"),
-#'                        property_names = c("located_in", "instance_of"))
+#' get_wikidata_instances(
+#'   "Q1062710",
+#'   property                    = c("P131", "P17", "P14142"),
+#'   property_names              = c("located_in", "country", "ine_code"),
+#'   numeric_list_properties     = "P1082",
+#'   numeric_list_property_names = "population"
+#' )
 #'
 #' @export
 get_wikidata_instances <- function(class_qid,
-                                   property       = NULL,
-                                   property_names = NULL,
-                                   country        = NULL,
-                                   languages      = c("en", "es"),
-                                   limit          = 1000,
-                                   batch_size     = 50,
-                                   batch_delay    = 1,
-                                   numeric_properties = NULL) {
-  numeric_properties <- as.character(numeric_properties)  # handles length-1 string
+                                   property                    = NULL,
+                                   property_names              = NULL,
+                                   country                     = NULL,
+                                   languages                   = c("en", "es"),
+                                   limit                       = 1000,
+                                   batch_size                  = 50,
+                                   batch_delay                 = 1,
+                                   numeric_list_properties     = NULL,
+                                   numeric_list_property_names = NULL) {
 
-  # Resolve column names for extra properties
+  # Resolve column names for regular extra properties
   if (!is.null(property)) {
     n_prop  <- length(property)
     n_names <- length(property_names)
-
     if (n_names > n_prop) {
       message("property_names has more entries (", n_names, ") than property (",
               n_prop, "); extra names will be ignored.")
       property_names <- property_names[seq_len(n_prop)]
     } else if (n_names < n_prop) {
-      if (n_names > 0) {
+      if (n_names > 0)
         message("property_names has fewer entries (", n_names, ") than property (",
                 n_prop, "); falling back to property IDs for unnamed columns.")
-      }
       property_names <- c(property_names, property[(n_names + 1):n_prop])
     }
+  }
+
+  # Resolve column name prefixes for numeric list properties
+  numeric_list_properties <- as.character(numeric_list_properties)
+  if (length(numeric_list_properties) > 0) {
+    if (is.null(numeric_list_property_names))
+      numeric_list_property_names <- numeric_list_properties
+    n_nlp  <- length(numeric_list_properties)
+    n_nlpn <- length(numeric_list_property_names)
+    if (n_nlpn < n_nlp)
+      numeric_list_property_names <- c(numeric_list_property_names,
+                                       numeric_list_properties[(n_nlpn + 1):n_nlp])
+    if (n_nlpn > n_nlp)
+      numeric_list_property_names <- numeric_list_property_names[seq_len(n_nlp)]
   }
 
   # Validate input
@@ -343,17 +505,12 @@ get_wikidata_instances <- function(class_qid,
 
   # Step 2: fetch in batches
   items_data <- .fetch_qids_in_batches(
-    qids, property, property_names, languages, batch_size, batch_delay
+    qids, property, property_names, languages, batch_size, batch_delay,
+    numeric_list_properties, numeric_list_property_names
   )
 
   # Convert to tibble and simplify single-value list columns
   result_df <- bind_rows(items_data) |> simplify_list_columns()
-
-  # Coerce declared numeric columns from character to numeric
-  for (nm in numeric_properties) {
-    if (nm %in% names(result_df))
-      result_df[[nm]] <- as.numeric(result_df[[nm]])
-  }
 
   message("Successfully retrieved ", nrow(result_df), " items")
   result_df
@@ -364,10 +521,9 @@ get_wikidata_instances <- function(class_qid,
 #' Resume a Partially-Completed get_wikidata_instances() Query
 #'
 #' Use this when \code{get_wikidata_instances()} was interrupted part-way
-#' through (e.g. due to a network error or rate-limit rejection) and you have
-#' a partial result. The function re-runs the SPARQL query to obtain the full
-#' QID list, skips any QIDs already present in \code{partial_result}, fetches
-#' the remainder in batches, then returns the combined, de-duplicated tibble.
+#' through and you have a partial result. Re-runs the SPARQL query to obtain
+#' the full QID list, skips already-retrieved QIDs, fetches the remainder in
+#' batches, then returns the combined, de-duplicated tibble.
 #'
 #' @param partial_result A tibble previously returned (or partially returned)
 #'   by \code{get_wikidata_instances()}. Must contain a \code{qid} column.
@@ -376,34 +532,38 @@ get_wikidata_instances <- function(class_qid,
 #' @param property_names Character vector. Same value used in the original call.
 #' @param country Character. Same value used in the original call.
 #' @param languages Character vector. Same value used in the original call.
-#' @param limit Integer. Same value used in the original call. Default 1000.
+#' @param limit Integer. Default 1000.
 #' @param batch_size Integer. Items per API request (max 50). Default 50.
 #' @param batch_delay Numeric. Seconds between batches. Default 1.
+#' @param numeric_list_properties Character vector. Same value used in the
+#'   original call. Default \code{NULL}.
+#' @param numeric_list_property_names Character vector. Same value used in the
+#'   original call. Default \code{NULL}.
 #'
 #' @return A tibble with the same columns as \code{get_wikidata_instances()},
 #'   containing all items (previously retrieved + newly fetched).
 #'
 #' @examples
-#' # Original call was interrupted:
-#' # municipalities_wd <- get_wikidata_instances("Q1062710", c("P131","P17"),
-#' #                                              c("located_in","country"))
-#' # Resume with what was saved:
 #' municipalities_wd <- resume_get_wikidata_instances(
 #'   municipalities_wd, "Q1062710",
-#'   property       = c("P131", "P17"),
-#'   property_names = c("located_in", "country")
+#'   property                    = c("P131", "P17", "P14142"),
+#'   property_names              = c("located_in", "country", "ine_code"),
+#'   numeric_list_properties     = "P1082",
+#'   numeric_list_property_names = "population"
 #' )
 #'
 #' @export
 resume_get_wikidata_instances <- function(partial_result,
                                           class_qid,
-                                          property       = NULL,
-                                          property_names = NULL,
-                                          country        = NULL,
-                                          languages      = c("en", "es"),
-                                          limit          = 1000,
-                                          batch_size     = 50,
-                                          batch_delay    = 1) {
+                                          property                    = NULL,
+                                          property_names              = NULL,
+                                          country                     = NULL,
+                                          languages                   = c("en", "es"),
+                                          limit                       = 1000,
+                                          batch_size                  = 50,
+                                          batch_delay                 = 1,
+                                          numeric_list_properties     = NULL,
+                                          numeric_list_property_names = NULL) {
 
   if (!"qid" %in% names(partial_result))
     stop("partial_result must contain a 'qid' column")
@@ -411,15 +571,28 @@ resume_get_wikidata_instances <- function(partial_result,
     stop("class_qid must be in format 'Q123'")
   batch_size <- min(as.integer(batch_size), 50L)
 
-  # Resolve property names the same way as get_wikidata_instances()
+  # Resolve property names
   if (!is.null(property)) {
     n_prop  <- length(property)
     n_names <- length(property_names)
-    if (n_names > n_prop) {
+    if (n_names > n_prop)
       property_names <- property_names[seq_len(n_prop)]
-    } else if (n_names < n_prop) {
+    else if (n_names < n_prop)
       property_names <- c(property_names, property[(n_names + 1):n_prop])
-    }
+  }
+
+  # Resolve numeric list property names
+  numeric_list_properties <- as.character(numeric_list_properties)
+  if (length(numeric_list_properties) > 0) {
+    if (is.null(numeric_list_property_names))
+      numeric_list_property_names <- numeric_list_properties
+    n_nlp  <- length(numeric_list_properties)
+    n_nlpn <- length(numeric_list_property_names)
+    if (n_nlpn < n_nlp)
+      numeric_list_property_names <- c(numeric_list_property_names,
+                                       numeric_list_properties[(n_nlpn + 1):n_nlp])
+    if (n_nlpn > n_nlp)
+      numeric_list_property_names <- numeric_list_property_names[seq_len(n_nlp)]
   }
 
   # Step 1: re-run SPARQL to get the complete QID list
@@ -447,9 +620,11 @@ resume_get_wikidata_instances <- function(partial_result,
   message("Fetching remaining ", length(remaining), " items in batches of ",
           batch_size, "...")
   new_items <- .fetch_qids_in_batches(
-    remaining, property, property_names, languages, batch_size, batch_delay
+    remaining, property, property_names, languages, batch_size, batch_delay,
+    numeric_list_properties, numeric_list_property_names
   )
 
+  # Simplify each half before binding so column types match
   new_df <- bind_rows(new_items) |> simplify_list_columns()
 
   combined <- bind_rows(partial_result, new_df) |>
