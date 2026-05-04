@@ -12,7 +12,7 @@
 library(dplyr)
 library(stringr)
 
-crosswalk_geo_ine <- readRDS("data/crosswalk_ine_igm.rds")
+crosswalk_geo_ine <- readRDS(here::here("data", "crosswalk_ine_igm.rds"))
 
 # ---------------------------------------------------------------------------
 # match_status values (shared by both functions)
@@ -195,6 +195,7 @@ igm_match_status <- function(id_unico, crosswalk = crosswalk_geo_ine) {
 
   # --- 1. Normalise: append "-D" if absent -----------------------------------
   id_unico <- as.character(id_unico)
+  id_unico <- str_trim(id_unico)
   id_unico <- ifelse(!str_ends(id_unico, "-D"), paste0(id_unico, "-D"), id_unico)
 
   rows <- crosswalk[!is.na(crosswalk$id_unico) & crosswalk$id_unico == id_unico, ]

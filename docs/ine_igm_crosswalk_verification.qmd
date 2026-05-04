@@ -1,0 +1,343 @@
+---
+title: "INE–IGM Community Crosswalk Verification"
+subtitle: "Analysis of mapping ambiguities, duplicates, and data quality issues"
+author: ""
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: true
+    code-summary: "Show code"
+    fig-width: 10
+    fig-height: 6
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(tidyverse)
+
+# Load the crosswalk
+source(here::here("ine_igm_community_crosswalk.R"))
+```
+
+## Overview
+
+The INE–IGM community crosswalk maps 11-digit INE community codes (`Codigo`) to geographic points in the IGM `localizacion_poblaciones_2016` dataset (identified by `id_unico`). This analysis examines mapping ambiguities and data quality issues revealed by the crosswalk construction process.
+
+**Key metrics**:
+- Total INE communities: {{nrow(distinct(crosswalk_geo_ine, Codigo))}}
+- Unique IGM points involved in crosswalk: {{n_distinct(crosswalk_geo_ine$id_unico)}}
+- Total crosswalk rows (many-to-many): {{nrow(crosswalk_geo_ine)}}
+- Duplicate mappings (id_unico with n>1): {{nrow(crosswalk_geo_ine |> count(id_unico) |> filter(n > 1))}}
+
+## Match Status Distribution
+
+```{r}
+#| label: match-status-summary
+
+match_summary <- crosswalk_geo_ine |>
+  count(match_status) |>
+  arrange(desc(n)) |>
+  mutate(
+    pct = round(100 * n / sum(n), 1),
+    match_status = fct_reorder(match_status, n)
+  )
+
+match_summary |>
+  ggplot(aes(y = match_status, x = n, fill = match_status)) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = sprintf("%d (%.1f%%)", n, pct)), hjust = -0.1, size = 3) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(
+    title = "Match Status Distribution",
+    x = "Number of INE Codes",
+    y = NULL
+  ) +
+  theme_minimal()
+
+match_summary
+```
+
+## Duplicate Mappings Analysis
+
+When a single `id_unico` maps to multiple INE `Codigo` entries, it indicates either:
+1. **Intentional** many-to-one mapping (canon splits, dispersed settlements)
+2. **Unintentional** convergence through ambiguity resolution heuristics
+
+### Duplicate Counts by Match Status
+
+```{r}
+#| label: duplicates-by-status
+
+duplicates <- crosswalk_geo_ine |>
+  count(id_unico) |>
+  filter(n > 1)
+
+dup_by_status <- crosswalk_geo_ine |>
+  semi_join(duplicates, by = "id_unico") |>
+  group_by(match_status) |>
+  summarise(
+    n_rows = n(),
+    n_unique_ids = n_distinct(id_unico),
+    n_unique_codigos = n_distinct(Codigo),
+    avg_codigos_per_id = round(mean(n()), 2),
+    .groups = "drop"
+  ) |>
+  arrange(desc(n_rows))
+
+dup_by_status |>
+  ggplot(aes(y = fct_reorder(match_status, n_rows), x = n_rows, fill = match_status)) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = n_rows), hjust = -0.1, size = 3) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(
+    title = "Duplicate Mappings by Resolution Method",
+    subtitle = "Total rows where one id_unico maps to multiple Codigos",
+    x = "Number of rows",
+    y = NULL
+  ) +
+  theme_minimal()
+
+dup_by_status
+```
+
+### Breakdown
+
+**Intentional duplicates (3,426 rows / 86%)**:
+
+- **Dispersed settlements** (2,254 rows): 939 IGM points representing the same dispersed community. The IGM dataset intentionally recorded multiple points for dispersed settlements.
+- **Canton splits** (914 rows): 436 IGM points shared by 421 different INE codes because the same community was renumbered during canton boundary reorganization.
+- **Name matches at all levels** (258 rows): Multiple INE codes with identical community name, municipality, province, and department. Codes were assigned as new cantons were added to a municipality; the last two digits of each Codigo (the community sequence number within the canton) are typically identical across the group. These almost certainly correspond to a single community. See Section 4.1 for examples.
+
+**Unintended duplicates (509 rows / 13%)**:
+
+- **Spatial resolution** (401 rows): Ambiguous names where multiple Codigos converged on the same point after GADM municipality boundary filtering.
+- **USCA polygon** (108 rows): Multiple Codigos resolved via USCA community boundary spatial join.
+
+**Edge cases (40 rows / 1%)**:
+
+- **Ambiguous (unresolved)** (28 rows): Still-ambiguous after all spatial steps.
+- **Other** (12 rows): Rare cases.
+
+## Same Name, Same ID Convergence
+
+How many cases have different Codigos with identical `com_name` mapping to the same `id_unico`?
+
+```{r}
+#| label: same-name-convergence
+
+same_name_same_id <- crosswalk_geo_ine |>
+  group_by(id_unico, com_name) |>
+  summarise(
+    n_codigos = n_distinct(Codigo),
+    .groups = "drop"
+  ) |>
+  filter(n_codigos > 1)
+
+convergence_by_status <- crosswalk_geo_ine |>
+  group_by(id_unico, com_name, match_status) |>
+  summarise(
+    n_codigos = n_distinct(Codigo),
+    .groups = "drop"
+  ) |>
+  filter(n_codigos > 1) |>
+  group_by(match_status) |>
+  summarise(
+    n_pairs = n(),
+    total_duplicate_codigos = sum(n_codigos),
+    avg_codigos_per_pair = round(mean(n_codigos), 2),
+    max_codigos = max(n_codigos),
+    .groups = "drop"
+  ) |>
+  arrange(desc(n_pairs))
+
+convergence_by_status |>
+  ggplot(aes(y = fct_reorder(match_status, n_pairs), x = n_pairs, fill = match_status)) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = n_pairs), hjust = -0.1, size = 3) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(
+    title = "Convergence Pairs by Method",
+    subtitle = "Cases where different Codigos with same com_name → same id_unico",
+    x = "Number of (id_unico, com_name) pairs",
+    y = NULL
+  ) +
+  theme_minimal()
+
+convergence_by_status
+```
+
+**Total pairs with multiple Codigos**: {{nrow(same_name_same_id)}}
+
+Of these, {{nrow(convergence_by_status)}} match_status groups account for the convergence. The largest contributors are:
+- **ambiguous_dispersed**: {{convergence_by_status |> filter(match_status == "ambiguous_dispersed") |> pull(n_pairs)}} pairs — inherent to IGM's multi-point recording of dispersed settlements
+- **ambiguous_canton_split**: {{convergence_by_status |> filter(match_status == "ambiguous_canton_split") |> pull(n_pairs)}} pairs — expected due to historical canton reorganization
+
+## Cross-Municipality vs Same-Municipality Convergence
+
+### unique_via_name Cases
+
+**Name matches at all levels (258 rows, 127 pairs)**: These are multiple INE codes with the same names for community, municipality, province, and department. They have been recoded as new cantons are added to a municipality. Often these codes have the same two final digits. It is highly likely they correspond to a single community.
+
+All 127 pairs are within the same municipality — none span municipal boundaries — which is consistent with canton renumbering rather than genuine geographic duplication.
+
+**Five representative examples** (note identical last two digits within each group):
+
+```{r}
+#| label: via-name-examples
+
+crosswalk_geo_ine |>
+  filter(
+    match_status == "unique_via_name",
+    id_unico %in% c("2182984311-D", "2574485871-D", "3462128806-D",
+                    "4175616540-D", "4543857044-D")
+  ) |>
+  mutate(`Last 2` = str_sub(Codigo, -2)) |>
+  select(Codigo, `Last 2`, `Community` = com_name, Municipality = municipality) |>
+  arrange(Community, Codigo) |>
+  knitr::kable()
+```
+
+### unique_via_spatial Cases
+
+```{r}
+#| label: via-spatial-analysis
+
+via_spatial_multi_mun <- crosswalk_geo_ine |>
+  filter(match_status == "unique_via_spatial") |>
+  group_by(id_unico, com_name) |>
+  summarise(
+    n_codigos = n_distinct(Codigo),
+    n_municipalities = n_distinct(municipality),
+    municipalities = paste(sort(unique(municipality)), collapse = " | "),
+    .groups = "drop"
+  ) |>
+  filter(n_codigos > 1)
+
+multi_mun_spatial <- via_spatial_multi_mun |>
+  filter(n_municipalities > 1)
+
+cat("unique_via_spatial (n =", nrow(via_spatial_multi_mun), "pairs with multiple Codigos)\n")
+cat("  - Cross-municipality:", nrow(multi_mun_spatial), "(", 
+    round(100 * nrow(multi_mun_spatial) / nrow(via_spatial_multi_mun), 1), "%)\n", sep = "")
+cat("  - Same municipality:", nrow(via_spatial_multi_mun) - nrow(multi_mun_spatial), "(", 
+    round(100 * (nrow(via_spatial_multi_mun) - nrow(multi_mun_spatial)) / nrow(via_spatial_multi_mun), 1), "%)\n", sep = "")
+```
+
+**79% are cross-municipality convergences**, where the same place name appears in multiple municipalities but IGM only has one geopoint. This is the most problematic pattern for downstream geocoding work.
+
+**Top examples** by number of municipalities involved:
+
+```{r}
+#| label: via-spatial-examples
+
+via_spatial_multi_mun |>
+  arrange(desc(n_municipalities), desc(n_codigos)) |>
+  slice(1:12) |>
+  select(com_name, n_codigos, n_municipalities, municipalities)
+```
+
+### Risk Assessment
+
+```{r}
+#| label: risk-assessment
+
+risk_table <- tibble(
+  category = c(
+    "unique_via_spatial (cross mun)",
+    "unique_via_name",
+    "ambiguous_dispersed",
+    "ambiguous_canton_split"
+  ),
+  n_pairs = c(
+    48,
+    127,
+    658,
+    436
+  ),
+  risk_level = c(
+    "High",
+    "Low",
+    "Low",
+    "Low"
+  ),
+  reason = c(
+    "Same name across municipalities → one IGM point; cannot disambiguate",
+    "Intentional: same community recoded as new cantons added; same last two digits",
+    "Intentional: IGM recorded multiple dispersed points",
+    "Intentional: documented canton reorganization"
+  )
+)
+
+risk_table
+```
+
+## Specific Problem Cases
+
+### VILUYO (unique_via_spatial, 10 municipalities)
+
+```{r}
+#| label: viluyo-case
+
+viluyo <- crosswalk_geo_ine |>
+  filter(id_unico == "3548609828-D", match_status == "unique_via_spatial")
+
+viluyo |>
+  select(Codigo, municipality, com_name) |>
+  arrange(municipality)
+```
+
+**Issue**: "VILUYO" appears in 10 different municipalities across Potosí department. All 10 INE codes map to a single IGM geopoint. This could indicate:
+- VILUYO is a common/generic place name (like "New Village")
+- IGM only documented one instance
+- Data quality issue: INE duplicated a location
+
+**Recommendation**: Manual verification needed if precise geocoding is required.
+
+### CONDOR NAZA (unique_via_name, 4 codes in same municipality)
+
+```{r}
+#| label: condor-case
+
+condor <- crosswalk_geo_ine |>
+  filter(id_unico == "4543857044-D", match_status == "unique_via_name")
+
+condor |>
+  mutate(`Last 2` = str_sub(Codigo, -2)) |>
+  select(Codigo, `Last 2`, municipality, com_name)
+```
+
+**Explanation**: Four INE codes in S.P. De Buena Vista (Potosí) all record the same community "CONDOR NAZA" with identical final digits (`28`). The codes differ only in the canton segment, reflecting successive recodings as cantons were subdivided. This is the same canton-renumbering pattern as `ambiguous_canton_split`, identified here through the name-proximity resolution path.
+
+## Summary and Recommendations
+
+### Data Quality Findings
+
+1. **86% of convergences are intentional**: canton splits, dispersed settlements, and same-community recodings across new cantons (`unique_via_name`). All are well-documented by `match_status` labeling.
+
+2. **13% involve unintended convergence** through disambiguation heuristics:
+   - **48 cases** (`unique_via_spatial`, cross-municipality): Same name appears across different municipalities but IGM has only one geopoint — high risk for precise geocoding.
+   - **13 cases** (`unique_via_spatial`, same-municipality): Likely further canton-renumbering cases not caught by earlier steps.
+
+3. **Geographic generics**: Common place names (VILUYO, PAMPA GRANDE, SAN ANTONIO) appear repeatedly across municipalities. Whether these are:
+   - Genuinely distinct locations poorly covered by IGM
+   - The same community recorded multiple times in INE
+   - Locally common names used independently in different municipalities
+   
+   ...cannot be determined automatically.
+
+### For Downstream Use
+
+- **For census/analysis work**: Use the full crosswalk; `match_status` indicates confidence level
+- **For precise geocoding**: Filter to `match_status %in% c("unique", "unique_via_spatial", "unique_via_usca", "unique_via_name")` and manually verify `unique_via_spatial` cross-municipality cases (see Section 5)
+- **For geographic-dispersed communities**: Treat `ambiguous_dispersed` and `ambiguous_canton_split` as coordinate pools, not single points
+
+### Suggested Verification Steps
+
+1. Spot-check high-priority cases (VILUYO, PAMPA GRANDE, etc.) against local administrative maps
+2. Cross-reference INE canton-split documentation for expected duplications
+3. For census analysis, confirm `match_status` distribution hasn't changed in latest INE release

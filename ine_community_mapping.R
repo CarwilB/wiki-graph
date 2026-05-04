@@ -1,5 +1,5 @@
 # INE excel sheet with list of communities, matched to larger administrative entities
-ine_geog_2013 <- readxl::read_excel("data/CLASIF_UB_GEOG_COMUNIDAD.xlsx")
+ine_geog_2013 <- readxl::read_excel(here::here("data","CLASIF_UB_GEOG_COMUNIDAD.xlsx"))
 ine_geog_2013 <- ine_geog_2013 %>%
   rename(
     department = DEPARTAMENTO,
@@ -20,7 +20,7 @@ ine_geog_2013 <- ine_geog_2013 %>%
 library(sf)
 library(stringdist)
 
-geo <- st_read("data/geocode/localizacion_poblaciones_2016.json", quiet = TRUE)
+geo <- st_read(here::here("data", "geocode", "localizacion_poblaciones_2016.json"), quiet = TRUE)
 
 # Verify that both id fields are truly unique identifiers
 stopifnot(n_distinct(geo$id_unico)         == nrow(geo))
@@ -117,7 +117,7 @@ crosswalk_geo_ine <- crosswalk_raw |>
 # ---------------------------------------------------------------------------
 
 # Download GADM Bolivia level-3 (municipality) boundaries if not cached
-gadm_path <- "data/gadm41_BOL_3.gpkg"
+gadm_path <- here::here("data", "gadm41_BOL_3.gpkg")
 if (!file.exists(gadm_path)) {
   download.file(
     "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_BOL.gpkg",
@@ -362,7 +362,7 @@ crosswalk_geo_ine <- bind_rows(
 # that point is assigned as unique_via_usca.
 
 usca_valid <- st_make_valid(
-  st_read("data/igm_localizacion_2016/../etnicidad_tenencia/usca_final.shp", quiet = TRUE)
+  st_read(here::here("data", "etnicidad_tenencia","usca_final.shp"), quiet = TRUE)
 )
 
 # Spatial join: each IGM point gets the USCA cod10dig of the polygon it falls within
@@ -637,9 +637,9 @@ crosswalk_geo_ine |> count(match_status)
 # unmatched:                    4  (no geo entry exists)
 
 # Save crosswalk for use in downstream scripts
-source("src/update-versioned-archive.R")
-update_versioned_archive(crosswalk_geo_ine, "data/crosswalk_ine_igm.rds")
-write.csv(crosswalk_geo_ine, "data/crosswalk_ine_igm.csv", row.names = FALSE)
+source(here::here("src", "update-versioned-archive.R"))
+update_versioned_archive(crosswalk_geo_ine, here::here("data", "crosswalk_ine_igm.rds"))
+write.csv(crosswalk_geo_ine, here::here("data", "crosswalk_ine_igm.csv"), row.names = FALSE)
 
 # ---------------------------------------------------------------------------
 # ine_match_status(): look up the crosswalk status for an INE community code

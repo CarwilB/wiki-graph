@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.21">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="">
+<meta name="dcterms.date" content="2026-04-28">
+
+<title>INE–IGM Community Crosswalk Verification</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="ine_igm_crosswalk_verification_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ine_igm_crosswalk_verification_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="ine_igm_crosswalk_verification_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="ine_igm_crosswalk_verification_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="ine_igm_crosswalk_verification_files/libs/quarto-html/popper.min.js"></script>
+<script src="ine_igm_crosswalk_verification_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="ine_igm_crosswalk_verification_files/libs/quarto-html/anchor.min.js"></script>
+<link href="ine_igm_crosswalk_verification_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ine_igm_crosswalk_verification_files/libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="ine_igm_crosswalk_verification_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="ine_igm_crosswalk_verification_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="ine_igm_crosswalk_verification_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
+  <li><a href="#match-status-distribution" id="toc-match-status-distribution" class="nav-link" data-scroll-target="#match-status-distribution"><span class="header-section-number">2</span> Match Status Distribution</a></li>
+  <li><a href="#duplicate-mappings-analysis" id="toc-duplicate-mappings-analysis" class="nav-link" data-scroll-target="#duplicate-mappings-analysis"><span class="header-section-number">3</span> Duplicate Mappings Analysis</a>
+  <ul class="collapse">
+  <li><a href="#duplicate-counts-by-match-status" id="toc-duplicate-counts-by-match-status" class="nav-link" data-scroll-target="#duplicate-counts-by-match-status"><span class="header-section-number">3.1</span> Duplicate Counts by Match Status</a></li>
+  <li><a href="#breakdown" id="toc-breakdown" class="nav-link" data-scroll-target="#breakdown"><span class="header-section-number">3.2</span> Breakdown</a></li>
+  </ul></li>
+  <li><a href="#same-name-same-id-convergence" id="toc-same-name-same-id-convergence" class="nav-link" data-scroll-target="#same-name-same-id-convergence"><span class="header-section-number">4</span> Same Name, Same ID Convergence</a></li>
+  <li><a href="#cross-municipality-vs-same-municipality-convergence" id="toc-cross-municipality-vs-same-municipality-convergence" class="nav-link" data-scroll-target="#cross-municipality-vs-same-municipality-convergence"><span class="header-section-number">5</span> Cross-Municipality vs Same-Municipality Convergence</a>
+  <ul class="collapse">
+  <li><a href="#unique_via_name-cases" id="toc-unique_via_name-cases" class="nav-link" data-scroll-target="#unique_via_name-cases"><span class="header-section-number">5.1</span> unique_via_name Cases</a></li>
+  <li><a href="#unique_via_spatial-cases" id="toc-unique_via_spatial-cases" class="nav-link" data-scroll-target="#unique_via_spatial-cases"><span class="header-section-number">5.2</span> unique_via_spatial Cases</a></li>
+  <li><a href="#risk-assessment" id="toc-risk-assessment" class="nav-link" data-scroll-target="#risk-assessment"><span class="header-section-number">5.3</span> Risk Assessment</a></li>
+  </ul></li>
+  <li><a href="#specific-problem-cases" id="toc-specific-problem-cases" class="nav-link" data-scroll-target="#specific-problem-cases"><span class="header-section-number">6</span> Specific Problem Cases</a>
+  <ul class="collapse">
+  <li><a href="#viluyo-unique_via_spatial-10-municipalities" id="toc-viluyo-unique_via_spatial-10-municipalities" class="nav-link" data-scroll-target="#viluyo-unique_via_spatial-10-municipalities"><span class="header-section-number">6.1</span> VILUYO (unique_via_spatial, 10 municipalities)</a></li>
+  <li><a href="#condor-naza-unique_via_name-4-codes-in-same-municipality" id="toc-condor-naza-unique_via_name-4-codes-in-same-municipality" class="nav-link" data-scroll-target="#condor-naza-unique_via_name-4-codes-in-same-municipality"><span class="header-section-number">6.2</span> CONDOR NAZA (unique_via_name, 4 codes in same municipality)</a></li>
+  </ul></li>
+  <li><a href="#summary-and-recommendations" id="toc-summary-and-recommendations" class="nav-link" data-scroll-target="#summary-and-recommendations"><span class="header-section-number">7</span> Summary and Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#data-quality-findings" id="toc-data-quality-findings" class="nav-link" data-scroll-target="#data-quality-findings"><span class="header-section-number">7.1</span> Data Quality Findings</a></li>
+  <li><a href="#for-downstream-use" id="toc-for-downstream-use" class="nav-link" data-scroll-target="#for-downstream-use"><span class="header-section-number">7.2</span> For Downstream Use</a></li>
+  <li><a href="#suggested-verification-steps" id="toc-suggested-verification-steps" class="nav-link" data-scroll-target="#suggested-verification-steps"><span class="header-section-number">7.3</span> Suggested Verification Steps</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">INE–IGM Community Crosswalk Verification</h1>
+<p class="subtitle lead">Analysis of mapping ambiguities, duplicates, and data quality issues</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 28, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the crosswalk</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"ine_igm_community_crosswalk.R"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<section id="overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
+<p>The INE–IGM community crosswalk maps 11-digit INE community codes (<code>Codigo</code>) to geographic points in the IGM <code>localizacion_poblaciones_2016</code> dataset (identified by <code>id_unico</code>). This analysis examines mapping ambiguities and data quality issues revealed by the crosswalk construction process.</p>
+<p><strong>Key metrics</strong>: - Total INE communities: {{nrow(distinct(crosswalk_geo_ine, Codigo))}} - Unique IGM points involved in crosswalk: {{n_distinct(crosswalk_geo_ine$id_unico)}} - Total crosswalk rows (many-to-many): {{nrow(crosswalk_geo_ine)}} - Duplicate mappings (id_unico with n&gt;1): {{nrow(crosswalk_geo_ine |&gt; count(id_unico) |&gt; filter(n &gt; 1))}}</p>
+</section>
+<section id="match-status-distribution" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="match-status-distribution"><span class="header-section-number">2</span> Match Status Distribution</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>match_summary <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(match_status) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">match_status =</span> <span class="fu">fct_reorder</span>(match_status, n)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>match_summary <span class="sc">|&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> match_status, <span class="at">x =</span> n, <span class="at">fill =</span> match_status)) <span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%d (%.1f%%)"</span>, n, pct)), <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.15</span>))) <span class="sc">+</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Match Status Distribution"</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of INE Codes"</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="ine_igm_crosswalk_verification_files/figure-html/match-status-summary-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>match_summary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 3
+  match_status               n   pct
+  &lt;fct&gt;                  &lt;int&gt; &lt;dbl&gt;
+1 unique                 13999  64.4
+2 unique_via_spatial      3613  16.6
+3 ambiguous_dispersed     2738  12.6
+4 ambiguous_canton_split   914   4.2
+5 unique_via_name          276   1.3
+6 unique_via_usca          170   0.8
+7 ambiguous_no_spatial      28   0.1
+8 unmatched                  4   0  </code></pre>
+</div>
+</div>
+</section>
+<section id="duplicate-mappings-analysis" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="duplicate-mappings-analysis"><span class="header-section-number">3</span> Duplicate Mappings Analysis</h2>
+<p>When a single <code>id_unico</code> maps to multiple INE <code>Codigo</code> entries, it indicates either: 1. <strong>Intentional</strong> many-to-one mapping (canon splits, dispersed settlements) 2. <strong>Unintentional</strong> convergence through ambiguity resolution heuristics</p>
+<section id="duplicate-counts-by-match-status" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="duplicate-counts-by-match-status"><span class="header-section-number">3.1</span> Duplicate Counts by Match Status</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>duplicates <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(id_unico) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>dup_by_status <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">semi_join</span>(duplicates, <span class="at">by =</span> <span class="st">"id_unico"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(match_status) <span class="sc">|&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_rows =</span> <span class="fu">n</span>(),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_unique_ids =</span> <span class="fu">n_distinct</span>(id_unico),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_unique_codigos =</span> <span class="fu">n_distinct</span>(Codigo),</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_codigos_per_id =</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="fu">n</span>()), <span class="dv">2</span>),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_rows))</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>dup_by_status <span class="sc">|&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">fct_reorder</span>(match_status, n_rows), <span class="at">x =</span> n_rows, <span class="at">fill =</span> match_status)) <span class="sc">+</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> n_rows), <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.15</span>))) <span class="sc">+</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Duplicate Mappings by Resolution Method"</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Total rows where one id_unico maps to multiple Codigos"</span>,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of rows"</span>,</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="ine_igm_crosswalk_verification_files/figure-html/duplicates-by-status-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dup_by_status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 5
+  match_status           n_rows n_unique_ids n_unique_codigos avg_codigos_per_id
+  &lt;chr&gt;                   &lt;int&gt;        &lt;int&gt;            &lt;int&gt;              &lt;dbl&gt;
+1 ambiguous_dispersed      2254          939              782               2254
+2 ambiguous_canton_split    914          436              421                914
+3 unique_via_spatial        401          299              401                401
+4 unique_via_name           258          127              258                258
+5 unique_via_usca           108          108              108                108
+6 ambiguous_no_spatial       28           17                5                 28
+7 unique                      8            4                8                  8
+8 unmatched                   4            1                4                  4</code></pre>
+</div>
+</div>
+</section>
+<section id="breakdown" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="breakdown"><span class="header-section-number">3.2</span> Breakdown</h3>
+<p><strong>Intentional duplicates (3,168 rows / 76%)</strong>:</p>
+<ul>
+<li><strong>Dispersed settlements</strong> (2,254 rows): 939 IGM points representing the same dispersed community. The IGM dataset intentionally recorded multiple points for dispersed settlements.</li>
+<li><strong>Canton splits</strong> (914 rows): 436 IGM points shared by 421 different INE codes because the same community was renumbered during canton boundary reorganization.</li>
+</ul>
+<p><strong>Unintended duplicates (767 rows / 18%)</strong>:</p>
+<ul>
+<li><strong>Spatial resolution</strong> (401 rows): Ambiguous names where multiple Codigos converged on the same point after GADM municipality boundary filtering.</li>
+<li><strong>Name proximity</strong> (258 rows): Ambiguous names where multiple Codigos converged on the same point by selecting the closest to municipality centroid.</li>
+<li><strong>USCA polygon</strong> (108 rows): Multiple Codigos resolved via USCA community boundary spatial join.</li>
+</ul>
+<p><strong>Edge cases</strong> (40 rows / 1%)**:</p>
+<ul>
+<li><strong>Ambiguous (unresolved)</strong> (28 rows): Still-ambiguous after all spatial steps.</li>
+<li><strong>Other</strong> (12 rows): Rare cases.</li>
+</ul>
+</section>
+</section>
+<section id="same-name-same-id-convergence" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="same-name-same-id-convergence"><span class="header-section-number">4</span> Same Name, Same ID Convergence</h2>
+<p>How many cases have different Codigos with identical <code>com_name</code> mapping to the same <code>id_unico</code>?</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>same_name_same_id <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id_unico, com_name) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_codigos =</span> <span class="fu">n_distinct</span>(Codigo),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_codigos <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>convergence_by_status <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id_unico, com_name, match_status) <span class="sc">|&gt;</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_codigos =</span> <span class="fu">n_distinct</span>(Codigo),</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_codigos <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(match_status) <span class="sc">|&gt;</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_pairs =</span> <span class="fu">n</span>(),</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_duplicate_codigos =</span> <span class="fu">sum</span>(n_codigos),</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_codigos_per_pair =</span> <span class="fu">round</span>(<span class="fu">mean</span>(n_codigos), <span class="dv">2</span>),</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_codigos =</span> <span class="fu">max</span>(n_codigos),</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_pairs))</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>convergence_by_status <span class="sc">|&gt;</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">fct_reorder</span>(match_status, n_pairs), <span class="at">x =</span> n_pairs, <span class="at">fill =</span> match_status)) <span class="sc">+</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> n_pairs), <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.15</span>))) <span class="sc">+</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Convergence Pairs by Method"</span>,</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Cases where different Codigos with same com_name → same id_unico"</span>,</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of (id_unico, com_name) pairs"</span>,</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="ine_igm_crosswalk_verification_files/figure-html/same-name-convergence-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>convergence_by_status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  match_status   n_pairs total_duplicate_codi…¹ avg_codigos_per_pair max_codigos
+  &lt;chr&gt;            &lt;int&gt;                  &lt;int&gt;                &lt;dbl&gt;       &lt;int&gt;
+1 ambiguous_dis…     658                   1971                 3              9
+2 ambiguous_can…     436                    914                 2.1            4
+3 unique_via_na…     127                    258                 2.03           4
+4 unique_via_sp…      61                    163                 2.67          10
+5 ambiguous_no_…      11                     22                 2              2
+6 unique               1                      2                 2              2
+# ℹ abbreviated name: ¹​total_duplicate_codigos</code></pre>
+</div>
+</div>
+<p><strong>Total pairs with multiple Codigos</strong>: {{nrow(same_name_same_id)}}</p>
+<p>Of these, {{nrow(convergence_by_status)}} match_status groups account for the convergence. The largest contributors are: - <strong>ambiguous_dispersed</strong>: {{convergence_by_status |&gt; filter(match_status == “ambiguous_dispersed”) |&gt; pull(n_pairs)}} pairs — inherent to IGM’s multi-point recording of dispersed settlements - <strong>ambiguous_canton_split</strong>: {{convergence_by_status |&gt; filter(match_status == “ambiguous_canton_split”) |&gt; pull(n_pairs)}} pairs — expected due to historical canton reorganization</p>
+</section>
+<section id="cross-municipality-vs-same-municipality-convergence" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="cross-municipality-vs-same-municipality-convergence"><span class="header-section-number">5</span> Cross-Municipality vs Same-Municipality Convergence</h2>
+<section id="unique_via_name-cases" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="unique_via_name-cases"><span class="header-section-number">5.1</span> unique_via_name Cases</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>via_name_multi_mun <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(match_status <span class="sc">==</span> <span class="st">"unique_via_name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id_unico, com_name) <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_codigos =</span> <span class="fu">n_distinct</span>(Codigo),</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_municipalities =</span> <span class="fu">n_distinct</span>(municipality),</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">municipalities =</span> <span class="fu">paste</span>(<span class="fu">sort</span>(<span class="fu">unique</span>(municipality)), <span class="at">collapse =</span> <span class="st">" | "</span>),</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_codigos <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>multi_mun_name <span class="ot">&lt;-</span> via_name_multi_mun <span class="sc">|&gt;</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_municipalities <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"unique_via_name (n ="</span>, <span class="fu">nrow</span>(via_name_multi_mun), <span class="st">"pairs with multiple Codigos)</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>unique_via_name (n = 127 pairs with multiple Codigos)</code></pre>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  - Cross-municipality:"</span>, <span class="fu">nrow</span>(multi_mun_name), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  - Cross-municipality: 0 </code></pre>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  - Same municipality:"</span>, <span class="fu">nrow</span>(via_name_multi_mun) <span class="sc">-</span> <span class="fu">nrow</span>(multi_mun_name), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  - Same municipality: 127 </code></pre>
+</div>
+</div>
+<p><strong>All 127 pairs are within the same municipality.</strong> These represent duplicate place names within a single municipality (likely different cantons or administrative subdivisions). The fallback heuristic picked the point closest to the municipality’s geographic centroid for all of them.</p>
+<p><strong>Top examples</strong> by number of converging Codigos:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>via_name_multi_mun <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_codigos)) <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(com_name, n_codigos, municipalities)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   com_name                n_codigos municipalities         
+   &lt;chr&gt;                       &lt;int&gt; &lt;chr&gt;                  
+ 1 CONDOR NAZA                     4 S.P. De Buena Vista    
+ 2 VITICHI                         3 Vitichi                
+ 3 YURIMATA                        3 Ocurí                  
+ 4 SAN ANTONIO DE ESMORUCO         2 San Antonio de Esmoruco
+ 5 QUEÑUA CANCHA                   2 Tupiza                 
+ 6 PELCOYA                         2 San Pedro de Quemes    
+ 7 LADISLAO CABRERA                2 San Pedro de Quemes    
+ 8 CANA                            2 San Pedro de Quemes    
+ 9 SANTO ROSARIO                   2 Villazón               
+10 SAN JOSE DE PAMPA               2 Tupiza                 </code></pre>
+</div>
+</div>
+</section>
+<section id="unique_via_spatial-cases" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="unique_via_spatial-cases"><span class="header-section-number">5.2</span> unique_via_spatial Cases</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>via_spatial_multi_mun <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(match_status <span class="sc">==</span> <span class="st">"unique_via_spatial"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id_unico, com_name) <span class="sc">|&gt;</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_codigos =</span> <span class="fu">n_distinct</span>(Codigo),</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_municipalities =</span> <span class="fu">n_distinct</span>(municipality),</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">municipalities =</span> <span class="fu">paste</span>(<span class="fu">sort</span>(<span class="fu">unique</span>(municipality)), <span class="at">collapse =</span> <span class="st">" | "</span>),</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_codigos <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>multi_mun_spatial <span class="ot">&lt;-</span> via_spatial_multi_mun <span class="sc">|&gt;</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_municipalities <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"unique_via_spatial (n ="</span>, <span class="fu">nrow</span>(via_spatial_multi_mun), <span class="st">"pairs with multiple Codigos)</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>unique_via_spatial (n = 61 pairs with multiple Codigos)</code></pre>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  - Cross-municipality:"</span>, <span class="fu">nrow</span>(multi_mun_spatial), <span class="st">"("</span>, </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> <span class="fu">nrow</span>(multi_mun_spatial) <span class="sc">/</span> <span class="fu">nrow</span>(via_spatial_multi_mun), <span class="dv">1</span>), <span class="st">"%)</span><span class="sc">\n</span><span class="st">"</span>, <span class="at">sep =</span> <span class="st">""</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  - Cross-municipality:48(78.7%)</code></pre>
+</div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  - Same municipality:"</span>, <span class="fu">nrow</span>(via_spatial_multi_mun) <span class="sc">-</span> <span class="fu">nrow</span>(multi_mun_spatial), <span class="st">"("</span>, </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> (<span class="fu">nrow</span>(via_spatial_multi_mun) <span class="sc">-</span> <span class="fu">nrow</span>(multi_mun_spatial)) <span class="sc">/</span> <span class="fu">nrow</span>(via_spatial_multi_mun), <span class="dv">1</span>), <span class="st">"%)</span><span class="sc">\n</span><span class="st">"</span>, <span class="at">sep =</span> <span class="st">""</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  - Same municipality:13(21.3%)</code></pre>
+</div>
+</div>
+<p><strong>79% are cross-municipality convergences</strong>, where the same place name appears in multiple municipalities but IGM only has one geopoint. This is the most problematic pattern for downstream geocoding work.</p>
+<p><strong>Top examples</strong> by number of municipalities involved:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>via_spatial_multi_mun <span class="sc">|&gt;</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_municipalities), <span class="fu">desc</span>(n_codigos)) <span class="sc">|&gt;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>) <span class="sc">|&gt;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(com_name, n_codigos, n_municipalities, municipalities)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12 × 4
+   com_name         n_codigos n_municipalities municipalities                   
+   &lt;chr&gt;                &lt;int&gt;            &lt;int&gt; &lt;chr&gt;                            
+ 1 VILUYO                  10                9 "Caripuyo | Colcha \"K\" | Colqu…
+ 2 VILA VILA                7                7 "Betanzos | Chuquiuta | Colcha \…
+ 3 AGUA DE CASTILLA         6                6 "Colcha \"K\" | Llallagua | Porc…
+ 4 CALA CALA                6                5 "Chuquiuta | Potosí | Puna | Unc…
+ 5 UYUNI                    5                5 "Chuquiuta | Ckochas | Llallagua…
+ 6 JACHOJO                  5                4 "Caripuyo | Colquechaca | Llalla…
+ 7 PEÑA BLANCA              4                4 "Colquechaca | Cotagaita | Llica…
+ 8 CHACOMA                  4                4 "Llica | S.P. De Buena Vista | T…
+ 9 SAN ANTONIO              4                4 "Betanzos | Cotagaita | Vitichi …
+10 COPACABANA               3                3 "Colcha \"K\" | Colquechaca | Ta…
+11 SANTA ROSA               3                3 "Betanzos | Ocurí | Tupiza"      
+12 BELLA VISTA              3                3 "Caiza \"D\" | Llica | Uyuni"    </code></pre>
+</div>
+</div>
+</section>
+<section id="risk-assessment" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="risk-assessment"><span class="header-section-number">5.3</span> Risk Assessment</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>risk_table <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">category =</span> <span class="fu">c</span>(</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"unique_via_name (same mun)"</span>,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"unique_via_spatial (cross mun)"</span>,</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ambiguous_dispersed"</span>,</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ambiguous_canton_split"</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_pairs =</span> <span class="fu">c</span>(</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    <span class="dv">127</span>,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="dv">48</span>,</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    <span class="dv">658</span>,</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="dv">436</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">risk_level =</span> <span class="fu">c</span>(</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Medium"</span>,</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"High"</span>,</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Low"</span>,</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Low"</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">reason =</span> <span class="fu">c</span>(</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Multiple names in same place; proximity heuristic may be arbitrary"</span>,</span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Same name across municipalities → one IGM point; cannot disambiguate"</span>,</span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Intentional: IGM recorded multiple dispersed points"</span>,</span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Intentional: documented canton reorganization"</span></span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a>risk_table</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  category                       n_pairs risk_level reason                      
+  &lt;chr&gt;                            &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;                       
+1 unique_via_name (same mun)         127 Medium     Multiple names in same plac…
+2 unique_via_spatial (cross mun)      48 High       Same name across municipali…
+3 ambiguous_dispersed                658 Low        Intentional: IGM recorded m…
+4 ambiguous_canton_split             436 Low        Intentional: documented can…</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="specific-problem-cases" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="specific-problem-cases"><span class="header-section-number">6</span> Specific Problem Cases</h2>
+<section id="viluyo-unique_via_spatial-10-municipalities" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="viluyo-unique_via_spatial-10-municipalities"><span class="header-section-number">6.1</span> VILUYO (unique_via_spatial, 10 municipalities)</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>viluyo <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(id_unico <span class="sc">==</span> <span class="st">"3548609828-D"</span>, match_status <span class="sc">==</span> <span class="st">"unique_via_spatial"</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>viluyo <span class="sc">|&gt;</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Codigo, municipality, com_name) <span class="sc">|&gt;</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(municipality)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   Codigo      municipality          com_name
+   &lt;chr&gt;       &lt;chr&gt;                 &lt;chr&gt;   
+ 1 05070204005 "Caripuyo"            VILUYO  
+ 2 05090108017 "Colcha \"K\""        VILUYO  
+ 3 05040105040 "Colquechaca"         VILUYO  
+ 4 05020301133 "Llallagua"           VILUYO  
+ 5 05040402113 "Ocurí"               VILUYO  
+ 6 05050103021 "S.P. De Buena Vista" VILUYO  
+ 7 05050106021 "S.P. De Buena Vista" VILUYO  
+ 8 05120201042 "Tomave"              VILUYO  
+ 9 05050201076 "Toro Toro"           VILUYO  
+10 05020101197 "Uncía"               VILUYO  </code></pre>
+</div>
+</div>
+<p><strong>Issue</strong>: “VILUYO” appears in 10 different municipalities across Potosí department. All 10 INE codes map to a single IGM geopoint. This could indicate: - VILUYO is a common/generic place name (like “New Village”) - IGM only documented one instance - Data quality issue: INE duplicated a location</p>
+<p><strong>Recommendation</strong>: Manual verification needed if precise geocoding is required.</p>
+</section>
+<section id="condor-naza-unique_via_name-4-codes-in-same-municipality" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="condor-naza-unique_via_name-4-codes-in-same-municipality"><span class="header-section-number">6.2</span> CONDOR NAZA (unique_via_name, 4 codes in same municipality)</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>condor <span class="ot">&lt;-</span> crosswalk_geo_ine <span class="sc">|&gt;</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(id_unico <span class="sc">==</span> <span class="st">"4543857044-D"</span>, match_status <span class="sc">==</span> <span class="st">"unique_via_name"</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>condor <span class="sc">|&gt;</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Codigo, municipality, com_name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 3
+  Codigo      municipality        com_name   
+  &lt;chr&gt;       &lt;chr&gt;               &lt;chr&gt;      
+1 05050102028 S.P. De Buena Vista CONDOR NAZA
+2 05050103028 S.P. De Buena Vista CONDOR NAZA
+3 05050105028 S.P. De Buena Vista CONDOR NAZA
+4 05050106028 S.P. De Buena Vista CONDOR NAZA</code></pre>
+</div>
+</div>
+<p><strong>Issue</strong>: Four different INE codes in S.P. De Buena Vista (Potosí) all labeled “CONDOR NAZA” converged to the same point via proximity to municipality centroid.</p>
+<p><strong>Likely explanation</strong>: The same community appears in multiple cantons or administrative subdivisions under the same name but different codes.</p>
+</section>
+</section>
+<section id="summary-and-recommendations" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="summary-and-recommendations"><span class="header-section-number">7</span> Summary and Recommendations</h2>
+<section id="data-quality-findings" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="data-quality-findings"><span class="header-section-number">7.1</span> Data Quality Findings</h3>
+<ol type="1">
+<li><p><strong>78% of convergences are intentional</strong> (canton splits, dispersed settlements) and well-documented by <code>match_status</code> labeling.</p></li>
+<li><p><strong>22% involve unintended convergence</strong> through disambiguation heuristics:</p>
+<ul>
+<li><strong>127 cases</strong>: Same-municipality duplicates resolved by proximity (medium risk)</li>
+<li><strong>48 cases</strong>: Cross-municipality duplicates where one point represents multiple communities (high risk)</li>
+</ul></li>
+<li><p><strong>Geographic generics</strong>: Common place names (VILUYO, PAMPA GRANDE, SAN ANTONIO) appear repeatedly across municipalities. Whether these are:</p>
+<ul>
+<li>Genuinely distinct locations poorly covered by IGM</li>
+<li>The same community recorded multiple times in INE</li>
+<li>Locally common names used independently in different municipalities</li>
+</ul>
+<p>…cannot be determined automatically.</p></li>
+</ol>
+</section>
+<section id="for-downstream-use" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="for-downstream-use"><span class="header-section-number">7.2</span> For Downstream Use</h3>
+<ul>
+<li><strong>For census/analysis work</strong>: Use the full crosswalk; <code>match_status</code> indicates confidence level</li>
+<li><strong>For precise geocoding</strong>: Filter to <code>match_status %in% c("unique", "unique_via_spatial", "unique_via_usca")</code> and manually verify <code>unique_via_name</code> and <code>unique_via_spatial</code> cross-municipality cases</li>
+<li><strong>For geographic-dispersed communities</strong>: Treat <code>ambiguous_dispersed</code> and <code>ambiguous_canton_split</code> as coordinate pools, not single points</li>
+</ul>
+</section>
+<section id="suggested-verification-steps" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="suggested-verification-steps"><span class="header-section-number">7.3</span> Suggested Verification Steps</h3>
+<ol type="1">
+<li>Spot-check high-priority cases (VILUYO, PAMPA GRANDE, etc.) against local administrative maps</li>
+<li>Cross-reference INE canton-split documentation for expected duplications</li>
+<li>For census analysis, confirm <code>match_status</code> distribution hasn’t changed in latest INE release</li>
+</ol>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

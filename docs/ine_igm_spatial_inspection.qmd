@@ -1,0 +1,160 @@
+---
+title: "INE–IGM Spatial Inspection: Multi-Code Points"
+subtitle: "Manual review of IGM points claimed by multiple INE community codes via unique_via_spatial resolution"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    self-contained: true
+    code-fold: true
+    code-summary: "Show code"
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+#| cache: true
+
+library(tidyverse)
+library(sf)
+library(ggplot2)
+
+# Crosswalk (loads crosswalk_geo_ine)
+source(here::here("ine_community_mapping.R"))
+ 
+# Spatial helper functions (point_to_municipality, inspect_shared_point)
+source(here::here("src", "point_municipality_lookup.R"))
+
+# IGM geographic points
+geo <- st_read(here::here("data", "geocode", "localizacion_poblaciones_2016.json"), quiet = TRUE)
+
+# GADM municipality boundaries (with INE cod.mun, saved from ine_community_mapping.R)
+mun_sf <- readRDS(here::here("data", "mun_sf.rds"))
+```
+
+```{r}
+#| label: build-id-vectors
+
+# Reproduce the same_mun_ids / cross_mun_ids vectors used in the main analysis
+multi_code_id <- crosswalk_geo_ine |>
+  filter(match_status == "unique_via_spatial") |>
+  count(id_unico) |>
+  filter(n > 1) |>
+  pull(id_unico)
+
+same_mun_ids <- crosswalk_geo_ine |>
+  filter(match_status == "unique_via_spatial", id_unico %in% multi_code_id) |>
+  group_by(id_unico) |>
+  filter(n_distinct(municipality) == 1) |>
+  pull(id_unico) |>
+  unique()
+
+cross_mun_ids <- crosswalk_geo_ine |>
+  filter(match_status == "unique_via_spatial", id_unico %in% multi_code_id) |>
+  group_by(id_unico) |>
+  filter(n_distinct(municipality) > 1) |>
+  pull(id_unico) |>
+  unique()
+```
+
+## Background
+
+During crosswalk construction, `unique_via_spatial` codes were resolved by selecting
+the single IGM candidate whose GADM municipality polygon contained the INE code's
+municipality. When multiple INE codes were resolved this way and all converged on the
+same IGM point, that point appears here.
+
+There are two distinct patterns:
+
+- **Same-municipality cases** (`r length(same_mun_ids)` points): all converging codes
+  are in the same INE municipality. Pattern is consistent with canton renumbering,
+  analogous to `unique_via_name` duplicates.
+
+- **Cross-municipality cases** (`r length(cross_mun_ids)` points): converging codes
+  span *different* INE municipalities. A single IGM point serves as the resolved
+  location for communities in multiple municipalities — whether due to a common
+  place name or incomplete IGM coverage is unresolved.
+
+**Important**: Bolivia expanded from roughly 100 to 340 municipalities between 1994
+and 2010. The GADM boundaries represent the current (~340-municipality) structure;
+INE codes in this crosswalk may reflect earlier, broader municipal units. No single
+answer is assumed correct. Each map below shows:
+
+- **Colored polygons**: all GADM municipality boundaries referenced by INE codes
+  mapping to this point
+- **Thick gray border**: the municipality currently containing the point (GADM)
+- **Red dot**: the IGM point itself
+
+## Same-Municipality Cases (`r length(same_mun_ids)` points)
+
+All converging codes are within a single INE municipality. Likely canton
+renumbering — the same community appears under multiple codes as canton
+boundaries were redrawn over time.
+
+```{r}
+#| label: same-mun-maps
+#| message: false
+#| warning: false
+#| cache: true
+#| results: asis
+
+same_mun_results <- purrr::map(same_mun_ids, inspect_shared_point)
+
+for (result in same_mun_results) {
+  cat("\n\n###", result$heading, "\n\n")
+  cat("**Current GADM municipality:**", result$current_mun_label, "\n\n")
+  if (length(result$unmatched_muns) > 0) {
+    cat(paste0(
+      "**\u26a0 Municipality names not in current GADM (historical boundaries):** ",
+      paste(result$unmatched_muns, collapse = ", "), "\n\n"
+    ))
+  }
+  cat(knitr::kable(result$table, format = "pipe") |> paste(collapse = "\n"))
+  cat("\n\n")
+  print(result$map)
+  cat("\n\n---\n\n")
+}
+```
+
+## Cross-Municipality Cases (`r length(cross_mun_ids)` points)
+
+Converging codes span *different* INE municipalities. Each map shows how far
+apart the referenced municipalities are, which helps assess whether convergence
+is plausible (nearby municipalities, shifted boundaries) or suspicious (distant
+municipalities, probably a common generic name with incomplete IGM coverage).
+
+```{r}
+#| label: cross-mun-maps
+#| message: false
+#| warning: false
+#| cache: true
+#| results: asis
+
+# Sort by descending number of municipalities to show most complex cases first
+cross_mun_order <- crosswalk_geo_ine |>
+  filter(match_status == "unique_via_spatial", id_unico %in% cross_mun_ids) |>
+  group_by(id_unico) |>
+  summarise(n_mun = n_distinct(municipality), .groups = "drop") |>
+  arrange(desc(n_mun)) |>
+  pull(id_unico)
+
+cross_mun_results <- purrr::map(cross_mun_order, inspect_shared_point)
+
+for (result in cross_mun_results) {
+  cat("\n\n###", result$heading, "\n\n")
+  cat("**Current GADM municipality:**", result$current_mun_label, "\n\n")
+  if (length(result$unmatched_muns) > 0) {
+    cat(paste0(
+      "**\u26a0 Municipality names not in current GADM (historical boundaries):** ",
+      paste(result$unmatched_muns, collapse = ", "), "\n\n"
+    ))
+  }
+  cat(knitr::kable(result$table, format = "pipe") |> paste(collapse = "\n"))
+  cat("\n\n")
+  print(result$map)
+  cat("\n\n---\n\n")
+}
+```
