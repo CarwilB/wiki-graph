@@ -25,9 +25,9 @@ library(WikipediR)
 
 We create two functions to create redirects on Wikipedia:
 
--   `create_redirect(from_title, to_title)`: Generates a link to create a redirect from `from_title` to `to_title` if the `from_title` page does not already exist.
+- `create_redirect(from_title, to_title)`: Generates a link to create a redirect from `from_title` to `to_title` if the `from_title` page does not already exist.
 
--   `create_multiple_redirects_to_one(redirects_from, redirect_to)`: Uses `create_redirect` to generate multiple redirects from a list of titles to a single target title.
+- `create_multiple_redirects_to_one(redirects_from, redirect_to)`: Uses `create_redirect` to generate multiple redirects from a list of titles to a single target title.
 
 ```{r redirect-functions}
 create_redirect <- function(from_title, to_title) {
@@ -131,6 +131,10 @@ create_multiple_redirects_to_one( c("Achonechy", "Aconechos", "Akenatzy",
 
 `r create_multiple_redirects_to_one( c("Achonechy", "Aconechos", "Akenatzy", "Hockinechy", "Occaneches", "Occaanechy", "Occhonechee", "Occonacheans", "Occoneechee", "Ockanechees", "Ockanigee", "Okenechee", "Acconeechy", "Occaneeches", "Ochineeches", "Ockinagee"), "Occaneechi")`
 
+## ICE detention expansion
+
+`r create_multiple_redirects_to_one(c("Oakwood ICE detention facility", "Socorro ICE detention facility", "Roxbury ICE detention facility", "Romulus ICE detention facility", "Surprise ICE detention facility", "Social Circle ICE detention facility", "Tremont ICE detention facility", "San Antonio ICE detention facility", "Hagerstown ICE detention facility", "Hamburg ICE detention facility ", "Oakwood ICE warehouse", "Socorro ICE warehouse", "Roxbury ICE warehouse", "Romulus ICE warehouse", "Surprise ICE warehouse", "Social Circle ICE warehouse", "Tremont ICE warehouse", "San Antonio ICE warehouse", "Hagerstown ICE warehouse", "Hamburg ICE warehouse"), "ICE detention expansion plan")`
+
 ```{r, include=FALSE}
 #| results: asis
 
@@ -157,4 +161,6 @@ create_multiple_redirects_to_one( c("Achonechy", "Aconechos", "Akenatzy",
               "Occonacheans", "Occoneechee", "Ockanechees", "Ockanigee", 
               "Okenechee", "Acconeechy", "Occaneeches", "Ochineeches", 
               "Ockinagee"), "Occaneechi")
+
+create_multiple_redirects_to_one(c("Oakwood ICE detention facility", "Socorro ICE detention facility", "Roxbury ICE detention facility", "Romulus ICE detention facility", "Surprise ICE detention facility", "Social Circle ICE detention facility", "Tremont ICE detention facility", "San Antonio ICE detention facility", "Hagerstown ICE detention facility", "Hamburg ICE detention facility ", "Oakwood ICE warehouse", "Socorro ICE warehouse", "Roxbury ICE warehouse", "Romulus ICE warehouse", "Surprise ICE warehouse", "Social Circle ICE warehouse", "Tremont ICE warehouse", "San Antonio ICE warehouse", "Hagerstown ICE warehouse", "Hamburg ICE warehouse"), "ICE detention expansion plan")
 ```
