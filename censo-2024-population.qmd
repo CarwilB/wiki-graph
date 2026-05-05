@@ -1,0 +1,117 @@
+---
+title: "Bolivia 2024 Census: Population by Geography"
+format: html
+---
+
+```{r setup}
+library(readxl)
+library(tidyverse)
+```
+
+## Load and clean
+
+Source: sheet "1" of `POBLACION.xlsx`. The header spans Excel rows 5–7; data begins at row 9. Excel column A is blank and is dropped automatically by `read_excel`, so 24 columns remain (B–Y).
+
+- **Cols 1–6** (B–G): row counter, geographic level, departamento, provincia, municipio, area
+- **Cols 7–15** (H–P): population counts for 2001 / 2012 / 2024 × (total, hombre, mujer)
+- **Cols 16–24** (Q–Y): derived percentages, same structure
+
+Within each geographic level, rows come in triples: the entity total (area = entity name), then "Urbana", then "Rural".
+
+```{r load}
+raw <- read_excel(
+  "../bolivia-data/Censo 2024/POBLACION.xlsx",
+  sheet     = "1",
+  col_names = FALSE,
+  skip      = 8   # rows 1–8: title, three header rows, blank separator
+)
+
+col_names <- c(
+  "row_num",
+  "nivel",
+  "departamento",
+  "provincia",
+  "municipio",
+  "area",
+  "pop_2001_total",  "pop_2001_hombre",  "pop_2001_mujer",
+  "pop_2012_total",  "pop_2012_hombre",  "pop_2012_mujer",
+  "pop_2024_total",  "pop_2024_hombre",  "pop_2024_mujer",
+  "pct_2001_total",  "pct_2001_hombre",  "pct_2001_mujer",
+  "pct_2012_total",  "pct_2012_hombre",  "pct_2012_mujer",
+  "pct_2024_total",  "pct_2024_hombre",  "pct_2024_mujer"
+)
+
+names(raw) <- col_names
+
+pop_raw <- raw |>
+  mutate(
+    row_num = as.integer(row_num),
+    across(starts_with("pop_") | starts_with("pct_"), as.numeric)
+  ) |>
+  # Drop footnote/blank rows at the bottom (no row number)
+  filter(!is.na(row_num))
+```
+
+## Disaggregate by geographic level
+
+Each level has "total" rows (area = entity name) and subdivision rows (area = "Urbana" or "Rural").
+
+```{r disaggregate}
+subdivisions <- c("Urbana", "Rural")
+
+pop_country        <- pop_raw |> filter(nivel == "País")
+
+pop_dept           <- pop_raw |>
+  filter(nivel == "Departamento", !area %in% subdivisions)
+
+pop_dept_urb_rural <- pop_raw |>
+  filter(nivel == "Departamento",  area %in% subdivisions)
+
+pop_prov           <- pop_raw |>
+  filter(nivel == "Provincia",     !area %in% subdivisions)
+
+pop_prov_urb_rural <- pop_raw |>
+  filter(nivel == "Provincia",      area %in% subdivisions)
+
+pop_muni           <- pop_raw |>
+  filter(nivel == "Municipio/TIOC", !area %in% subdivisions)
+
+pop_muni_urb_rural <- pop_raw |>
+  filter(nivel == "Municipio/TIOC",  area %in% subdivisions)
+```
+
+## Quick checks
+
+```{r checks}
+cat("Country rows:           ", nrow(pop_country),       "\n")
+cat("Dept totals:            ", nrow(pop_dept),           "\n")
+cat("Dept urban+rural rows:  ", nrow(pop_dept_urb_rural), "\n")
+cat("Province totals:        ", nrow(pop_prov),           "\n")
+cat("Province urban+rural:   ", nrow(pop_prov_urb_rural), "\n")
+cat("Municipality totals:    ", nrow(pop_muni),           "\n")
+cat("Municipality urb+rural: ", nrow(pop_muni_urb_rural), "\n")
+```
+
+```{r preview-dept}
+pop_dept |>
+  select(departamento, pop_2024_total, pop_2024_hombre, pop_2024_mujer)
+```
+
+```{r preview-muni}
+pop_muni |>
+  select(departamento, provincia, municipio, pop_2024_total, pop_2024_hombre, pop_2024_mujer) |>
+  head(12)
+```
+
+## Save outputs
+
+```{r save}
+saveRDS(pop_raw,           "data/poblacion_raw.rds")
+saveRDS(pop_country,       "data/poblacion_pais.rds")
+saveRDS(pop_dept,          "data/poblacion_departamento.rds")
+saveRDS(pop_dept_urb_rural,"data/poblacion_departamento_urb_rural.rds")
+saveRDS(pop_prov,          "data/poblacion_provincia.rds")
+saveRDS(pop_prov_urb_rural,"data/poblacion_provincia_urb_rural.rds")
+saveRDS(pop_muni,          "data/poblacion_municipio.rds")
+saveRDS(pop_muni_urb_rural,"data/poblacion_municipio_urb_rural.rds")
+```
