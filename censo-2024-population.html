@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bolivia 2024 Census: Population by Geography</title>
+<title>Bolivia 2024 Census: Population and Ethnic Identification by Geography</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bolivia 2024 Census: Population by Geography</h1>
+<h1 class="title">Bolivia 2024 Census: Population and Ethnic Identification by Geography</h1>
 </div>
 
 
@@ -115,8 +115,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
 </div>
-<section id="load-and-clean" class="level2">
-<h2 class="anchored" data-anchor-id="load-and-clean">Load and clean</h2>
+<section id="part-1-population-by-geography-poblacion.xlsx" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-population-by-geography-poblacion.xlsx">Part 1: Population by Geography (<code>POBLACION.xlsx</code>)</h2>
 <p>Source: sheet “1” of <code>POBLACION.xlsx</code>. The header spans Excel rows 5–7; data begins at row 9. Excel column A is blank and is dropped automatically by <code>read_excel</code>, so 24 columns remain (B–Y).</p>
 <ul>
 <li><strong>Cols 1–6</strong> (B–G): row counter, geographic level, departamento, provincia, municipio, area</li>
@@ -184,12 +184,10 @@ de Estadística'</code></pre>
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">"pop_"</span>) <span class="sc">|</span> <span class="fu">starts_with</span>(<span class="st">"pct_"</span>), as.numeric)</span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Drop footnote/blank rows at the bottom (no row number)</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
-<section id="disaggregate-by-geographic-level" class="level2">
-<h2 class="anchored" data-anchor-id="disaggregate-by-geographic-level">Disaggregate by geographic level</h2>
+<section id="disaggregate-by-geographic-level" class="level3">
+<h3 class="anchored" data-anchor-id="disaggregate-by-geographic-level">Disaggregate by geographic level</h3>
 <p>Each level has “total” rows (area = entity name) and subdivision rows (area = “Urbana” or “Rural”).</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>subdivisions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Urbana"</span>, <span class="st">"Rural"</span>)</span>
@@ -215,8 +213,8 @@ de Estadística'</code></pre>
 <span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>,  area <span class="sc">%in%</span> subdivisions)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="quick-checks" class="level2">
-<h2 class="anchored" data-anchor-id="quick-checks">Quick checks</h2>
+<section id="quick-checks" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checks">Quick checks</h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Country rows:           "</span>, <span class="fu">nrow</span>(pop_country),       <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -289,18 +287,473 @@ de Estadística'</code></pre>
 </div>
 </div>
 </section>
-<section id="save-outputs" class="level2">
-<h2 class="anchored" data-anchor-id="save-outputs">Save outputs</h2>
+<section id="save-population-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="save-population-outputs">Save population outputs</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_raw,           <span class="st">"data/poblacion_raw.rds"</span>)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_country,       <span class="st">"data/poblacion_pais.rds"</span>)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_dept,          <span class="st">"data/poblacion_departamento.rds"</span>)</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_dept_urb_rural,<span class="st">"data/poblacion_departamento_urb_rural.rds"</span>)</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_prov,          <span class="st">"data/poblacion_provincia.rds"</span>)</span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_prov_urb_rural,<span class="st">"data/poblacion_provincia_urb_rural.rds"</span>)</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_muni,          <span class="st">"data/poblacion_municipio.rds"</span>)</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_muni_urb_rural,<span class="st">"data/poblacion_municipio_urb_rural.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This code will not be run, since the data is already saved.</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_raw,           <span class="st">"data/poblacion_raw.rds"</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_country,       <span class="st">"data/poblacion_pais.rds"</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_dept,          <span class="st">"data/poblacion_departamento.rds"</span>)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_dept_urb_rural,<span class="st">"data/poblacion_departamento_urb_rural.rds"</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_prov,          <span class="st">"data/poblacion_provincia.rds"</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_prov_urb_rural,<span class="st">"data/poblacion_provincia_urb_rural.rds"</span>)</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_muni,          <span class="st">"data/poblacion_municipio.rds"</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(pop_muni_urb_rural,<span class="st">"data/poblacion_municipio_urb_rural.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<hr>
+</section>
+</section>
+<section id="part-2-ethnic-self-identification-autoidentificacion.xlsx-sheet-3" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-ethnic-self-identification-autoidentificacion.xlsx-sheet-3">Part 2: Ethnic Self-Identification (<code>AUTOIDENTIFICACION.xlsx</code>, sheet 3)</h2>
+<p>Source: sheet “3” of <code>AUTOIDENTIFICACION.xlsx</code>. This table reports, for each geographic unit and urban/rural subdivision, the number of people who declared belonging to each of 133 indigenous nations, pueblos, and ethnic categories in the 2024 census. The <code>total</code> column is the count of all declarations (a person who identified with multiple groups is counted once per declaration).</p>
+<p>The header spans two rows (Excel rows 5–6):</p>
+<ul>
+<li><strong>Row 5</strong> geographic keys + <code>TOTAL</code> + merged header “DECLARACIONES DE AUTOIDENTIFICACIÓN CENSO 2024” spanning all ethnic-group columns.</li>
+<li><strong>Row 6</strong> individual ethnic-group names (133 names, cols 7–139).</li>
+</ul>
+<p>Data begins at row 7. Footnote rows at the bottom of the sheet (with long <code>nivel</code> strings) are removed during cleaning.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>auto_path <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/Censo 2024/AUTOIDENTIFICACION.xlsx"</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Row 6 of the sheet holds the 133 ethnic-group names; those become the trailing</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># column names. Read it separately before reading the data.</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>ethnic_group_names <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  auto_path,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">sheet     =</span> <span class="st">"3"</span>,</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">skip      =</span> <span class="dv">5</span>,   <span class="co"># skip rows 1–5; row 6 is the one we want</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_max     =</span> <span class="dv">1</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unlist</span>(<span class="at">use.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...1`
+• `` -&gt; `...2`
+• `` -&gt; `...3`
+• `` -&gt; `...4`
+• `` -&gt; `...5`
+• `` -&gt; `...6`
+• `` -&gt; `...7`
+• `` -&gt; `...8`
+• `` -&gt; `...9`
+• `` -&gt; `...10`
+• `` -&gt; `...11`
+• `` -&gt; `...12`
+• `` -&gt; `...13`
+• `` -&gt; `...14`
+• `` -&gt; `...15`
+• `` -&gt; `...16`
+• `` -&gt; `...17`
+• `` -&gt; `...18`
+• `` -&gt; `...19`
+• `` -&gt; `...20`
+• `` -&gt; `...21`
+• `` -&gt; `...22`
+• `` -&gt; `...23`
+• `` -&gt; `...24`
+• `` -&gt; `...25`
+• `` -&gt; `...26`
+• `` -&gt; `...27`
+• `` -&gt; `...28`
+• `` -&gt; `...29`
+• `` -&gt; `...30`
+• `` -&gt; `...31`
+• `` -&gt; `...32`
+• `` -&gt; `...33`
+• `` -&gt; `...34`
+• `` -&gt; `...35`
+• `` -&gt; `...36`
+• `` -&gt; `...37`
+• `` -&gt; `...38`
+• `` -&gt; `...39`
+• `` -&gt; `...40`
+• `` -&gt; `...41`
+• `` -&gt; `...42`
+• `` -&gt; `...43`
+• `` -&gt; `...44`
+• `` -&gt; `...45`
+• `` -&gt; `...46`
+• `` -&gt; `...47`
+• `` -&gt; `...48`
+• `` -&gt; `...49`
+• `` -&gt; `...50`
+• `` -&gt; `...51`
+• `` -&gt; `...52`
+• `` -&gt; `...53`
+• `` -&gt; `...54`
+• `` -&gt; `...55`
+• `` -&gt; `...56`
+• `` -&gt; `...57`
+• `` -&gt; `...58`
+• `` -&gt; `...59`
+• `` -&gt; `...60`
+• `` -&gt; `...61`
+• `` -&gt; `...62`
+• `` -&gt; `...63`
+• `` -&gt; `...64`
+• `` -&gt; `...65`
+• `` -&gt; `...66`
+• `` -&gt; `...67`
+• `` -&gt; `...68`
+• `` -&gt; `...69`
+• `` -&gt; `...70`
+• `` -&gt; `...71`
+• `` -&gt; `...72`
+• `` -&gt; `...73`
+• `` -&gt; `...74`
+• `` -&gt; `...75`
+• `` -&gt; `...76`
+• `` -&gt; `...77`
+• `` -&gt; `...78`
+• `` -&gt; `...79`
+• `` -&gt; `...80`
+• `` -&gt; `...81`
+• `` -&gt; `...82`
+• `` -&gt; `...83`
+• `` -&gt; `...84`
+• `` -&gt; `...85`
+• `` -&gt; `...86`
+• `` -&gt; `...87`
+• `` -&gt; `...88`
+• `` -&gt; `...89`
+• `` -&gt; `...90`
+• `` -&gt; `...91`
+• `` -&gt; `...92`
+• `` -&gt; `...93`
+• `` -&gt; `...94`
+• `` -&gt; `...95`
+• `` -&gt; `...96`
+• `` -&gt; `...97`
+• `` -&gt; `...98`
+• `` -&gt; `...99`
+• `` -&gt; `...100`
+• `` -&gt; `...101`
+• `` -&gt; `...102`
+• `` -&gt; `...103`
+• `` -&gt; `...104`
+• `` -&gt; `...105`
+• `` -&gt; `...106`
+• `` -&gt; `...107`
+• `` -&gt; `...108`
+• `` -&gt; `...109`
+• `` -&gt; `...110`
+• `` -&gt; `...111`
+• `` -&gt; `...112`
+• `` -&gt; `...113`
+• `` -&gt; `...114`
+• `` -&gt; `...115`
+• `` -&gt; `...116`
+• `` -&gt; `...117`
+• `` -&gt; `...118`
+• `` -&gt; `...119`
+• `` -&gt; `...120`
+• `` -&gt; `...121`
+• `` -&gt; `...122`
+• `` -&gt; `...123`
+• `` -&gt; `...124`
+• `` -&gt; `...125`
+• `` -&gt; `...126`
+• `` -&gt; `...127`
+• `` -&gt; `...128`
+• `` -&gt; `...129`
+• `` -&gt; `...130`
+• `` -&gt; `...131`
+• `` -&gt; `...132`
+• `` -&gt; `...133`</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assemble the full column-name vector: 6 geographic keys + 133 ethnic groups.</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>auto_col_names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"nivel"</span>, <span class="st">"departamento"</span>, <span class="st">"provincia"</span>, <span class="st">"municipio"</span>, <span class="st">"area"</span>, <span class="st">"total"</span>,</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  ethnic_group_names</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Read data rows (starting at Excel row 7).</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>auto_raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  auto_path,</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">sheet     =</span> <span class="st">"3"</span>,</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">skip      =</span> <span class="dv">6</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...1`
+• `` -&gt; `...2`
+• `` -&gt; `...3`
+• `` -&gt; `...4`
+• `` -&gt; `...5`
+• `` -&gt; `...6`
+• `` -&gt; `...7`
+• `` -&gt; `...8`
+• `` -&gt; `...9`
+• `` -&gt; `...10`
+• `` -&gt; `...11`
+• `` -&gt; `...12`
+• `` -&gt; `...13`
+• `` -&gt; `...14`
+• `` -&gt; `...15`
+• `` -&gt; `...16`
+• `` -&gt; `...17`
+• `` -&gt; `...18`
+• `` -&gt; `...19`
+• `` -&gt; `...20`
+• `` -&gt; `...21`
+• `` -&gt; `...22`
+• `` -&gt; `...23`
+• `` -&gt; `...24`
+• `` -&gt; `...25`
+• `` -&gt; `...26`
+• `` -&gt; `...27`
+• `` -&gt; `...28`
+• `` -&gt; `...29`
+• `` -&gt; `...30`
+• `` -&gt; `...31`
+• `` -&gt; `...32`
+• `` -&gt; `...33`
+• `` -&gt; `...34`
+• `` -&gt; `...35`
+• `` -&gt; `...36`
+• `` -&gt; `...37`
+• `` -&gt; `...38`
+• `` -&gt; `...39`
+• `` -&gt; `...40`
+• `` -&gt; `...41`
+• `` -&gt; `...42`
+• `` -&gt; `...43`
+• `` -&gt; `...44`
+• `` -&gt; `...45`
+• `` -&gt; `...46`
+• `` -&gt; `...47`
+• `` -&gt; `...48`
+• `` -&gt; `...49`
+• `` -&gt; `...50`
+• `` -&gt; `...51`
+• `` -&gt; `...52`
+• `` -&gt; `...53`
+• `` -&gt; `...54`
+• `` -&gt; `...55`
+• `` -&gt; `...56`
+• `` -&gt; `...57`
+• `` -&gt; `...58`
+• `` -&gt; `...59`
+• `` -&gt; `...60`
+• `` -&gt; `...61`
+• `` -&gt; `...62`
+• `` -&gt; `...63`
+• `` -&gt; `...64`
+• `` -&gt; `...65`
+• `` -&gt; `...66`
+• `` -&gt; `...67`
+• `` -&gt; `...68`
+• `` -&gt; `...69`
+• `` -&gt; `...70`
+• `` -&gt; `...71`
+• `` -&gt; `...72`
+• `` -&gt; `...73`
+• `` -&gt; `...74`
+• `` -&gt; `...75`
+• `` -&gt; `...76`
+• `` -&gt; `...77`
+• `` -&gt; `...78`
+• `` -&gt; `...79`
+• `` -&gt; `...80`
+• `` -&gt; `...81`
+• `` -&gt; `...82`
+• `` -&gt; `...83`
+• `` -&gt; `...84`
+• `` -&gt; `...85`
+• `` -&gt; `...86`
+• `` -&gt; `...87`
+• `` -&gt; `...88`
+• `` -&gt; `...89`
+• `` -&gt; `...90`
+• `` -&gt; `...91`
+• `` -&gt; `...92`
+• `` -&gt; `...93`
+• `` -&gt; `...94`
+• `` -&gt; `...95`
+• `` -&gt; `...96`
+• `` -&gt; `...97`
+• `` -&gt; `...98`
+• `` -&gt; `...99`
+• `` -&gt; `...100`
+• `` -&gt; `...101`
+• `` -&gt; `...102`
+• `` -&gt; `...103`
+• `` -&gt; `...104`
+• `` -&gt; `...105`
+• `` -&gt; `...106`
+• `` -&gt; `...107`
+• `` -&gt; `...108`
+• `` -&gt; `...109`
+• `` -&gt; `...110`
+• `` -&gt; `...111`
+• `` -&gt; `...112`
+• `` -&gt; `...113`
+• `` -&gt; `...114`
+• `` -&gt; `...115`
+• `` -&gt; `...116`
+• `` -&gt; `...117`
+• `` -&gt; `...118`
+• `` -&gt; `...119`
+• `` -&gt; `...120`
+• `` -&gt; `...121`
+• `` -&gt; `...122`
+• `` -&gt; `...123`
+• `` -&gt; `...124`
+• `` -&gt; `...125`
+• `` -&gt; `...126`
+• `` -&gt; `...127`
+• `` -&gt; `...128`
+• `` -&gt; `...129`
+• `` -&gt; `...130`
+• `` -&gt; `...131`
+• `` -&gt; `...132`
+• `` -&gt; `...133`
+• `` -&gt; `...134`
+• `` -&gt; `...135`
+• `` -&gt; `...136`
+• `` -&gt; `...137`
+• `` -&gt; `...138`
+• `` -&gt; `...139`</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(auto_raw) <span class="ot">&lt;-</span> auto_col_names</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>auto_raw <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(total, <span class="fu">all_of</span>(ethnic_group_names)), as.numeric)) <span class="sc">|&gt;</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Drop footnote rows: they have very long nivel strings, not short level names</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(nivel), <span class="fu">nchar</span>(nivel) <span class="sc">&lt;=</span> <span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="disaggregate-by-geographic-level-1" class="level3">
+<h3 class="anchored" data-anchor-id="disaggregate-by-geographic-level-1">Disaggregate by geographic level</h3>
+<p>The row structure mirrors Part 1: each geographic entity appears three times (total, Urbana, Rural). The <code>nivel</code> labels used here are identical to those in <code>POBLACION.xlsx</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>auto_country        <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span> <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"País"</span>,            <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>auto_dept           <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Departamento"</span>, <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>auto_dept_urb_rural <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Departamento"</span>,  area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>auto_prov           <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Provincia"</span>,     <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>auto_prov_urb_rural <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Provincia"</span>,      area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>auto_muni           <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>, <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>auto_muni_urb_rural <span class="ot">&lt;-</span> auto_raw <span class="sc">|&gt;</span></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>,  area <span class="sc">%in%</span> subdivisions)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="quick-checks-1" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checks-1">Quick checks</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Country rows:           "</span>, <span class="fu">nrow</span>(auto_country),       <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Country rows:            1 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Dept totals:            "</span>, <span class="fu">nrow</span>(auto_dept),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Dept totals:             9 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Dept urban+rural rows:  "</span>, <span class="fu">nrow</span>(auto_dept_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Dept urban+rural rows:   18 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Province totals:        "</span>, <span class="fu">nrow</span>(auto_prov),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Province totals:         113 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Province urban+rural:   "</span>, <span class="fu">nrow</span>(auto_prov_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Province urban+rural:    226 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Municipality totals:    "</span>, <span class="fu">nrow</span>(auto_muni),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Municipality totals:     343 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Municipality urb+rural: "</span>, <span class="fu">nrow</span>(auto_muni_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Municipality urb+rural:  686 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total declarations by department (top 5 groups)</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>top5 <span class="ot">&lt;-</span> auto_muni <span class="sc">|&gt;</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">all_of</span>(ethnic_group_names)) <span class="sc">|&gt;</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), sum, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"grupo"</span>, <span class="at">values_to =</span> <span class="st">"n"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(n, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There was 1 warning in `summarise()`.
+ℹ In argument: `across(everything(), sum, na.rm = TRUE)`.
+Caused by warning:
+! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
+Supply arguments directly to `.fns` through an anonymous function instead.
+
+  # Previously
+  across(a:b, mean, na.rm = TRUE)
+
+  # Now
+  across(a:b, \(x) mean(x, na.rm = TRUE))</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>auto_dept <span class="sc">|&gt;</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento, total, Quechua, Aymara, Chiquitano, Guaraní, Mojeño) <span class="sc">|&gt;</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 7
+  departamento   total Quechua  Aymara Chiquitano Guaraní Mojeño
+  &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+1 La Paz       1634410   76005 1310994        218    1348    205
+2 Cochabamba    877433  710734   60279        330    1418    515
+3 Potosí        521133  376443   22210         42     283     10
+4 Santa Cruz    495519  147860   31075      95788   74612   1711
+5 Oruro         278498   97411  149113         23     147     17
+6 Chuquisaca    256185  208839    2549        167   11138     45
+7 Beni          137900    6753    8113        783     306   3343
+8 Tarija         65680   19737    4548         91   13773     24
+9 Pando          35726    2392    5367         35      84     50</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>auto_muni <span class="sc">|&gt;</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento, provincia, municipio, total, Quechua, Aymara) <span class="sc">|&gt;</span></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12 × 6
+   departamento provincia municipio total Quechua Aymara
+   &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+ 1 Chuquisaca   Oropeza   Sucre     85346   68404   1910
+ 2 Chuquisaca   Oropeza   Yotala     5994    5113     17
+ 3 Chuquisaca   Oropeza   Poroma    11149    9408      9
+ 4 Chuquisaca   Azurduy   Azurduy    4041    3771      8
+ 5 Chuquisaca   Azurduy   Tarvita   12926   12363     21
+ 6 Chuquisaca   Zudáñez   Zudáñez    9948    9337     24
+ 7 Chuquisaca   Zudáñez   Presto     9163    8557      2
+ 8 Chuquisaca   Zudáñez   Mojocoya   5765    5461      6
+ 9 Chuquisaca   Zudáñez   Icla       7915    7563     15
+10 Chuquisaca   Tomina    Padilla    1768    1503     14
+11 Chuquisaca   Tomina    Tomina     6022    5540     16
+12 Chuquisaca   Tomina    Sopachuy   5314    5093      5</code></pre>
+</div>
+</div>
+</section>
+<section id="save-ethnic-identification-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="save-ethnic-identification-outputs">Save ethnic identification outputs</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_raw,           <span class="st">"data/autoidentificacion_raw.rds"</span>)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_country,       <span class="st">"data/autoidentificacion_pais.rds"</span>)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_dept,          <span class="st">"data/autoidentificacion_departamento.rds"</span>)</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_dept_urb_rural,<span class="st">"data/autoidentificacion_departamento_urb_rural.rds"</span>)</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_prov,          <span class="st">"data/autoidentificacion_provincia.rds"</span>)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_prov_urb_rural,<span class="st">"data/autoidentificacion_provincia_urb_rural.rds"</span>)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_muni,          <span class="st">"data/autoidentificacion_municipio.rds"</span>)</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(auto_muni_urb_rural,<span class="st">"data/autoidentificacion_municipio_urb_rural.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
 </section>
 
 </main>

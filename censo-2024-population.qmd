@@ -1,5 +1,5 @@
 ---
-title: "Bolivia 2024 Census: Population by Geography"
+title: "Bolivia 2024 Census: Population and Ethnic Identification by Geography"
 format: html
 ---
 
@@ -8,7 +8,7 @@ library(readxl)
 library(tidyverse)
 ```
 
-## Load and clean
+## Part 1: Population by Geography (`POBLACION.xlsx`)
 
 Source: sheet "1" of `POBLACION.xlsx`. The header spans Excel rows 5–7; data begins at row 9. Excel column A is blank and is dropped automatically by `read_excel`, so 24 columns remain (B–Y).
 
@@ -18,7 +18,7 @@ Source: sheet "1" of `POBLACION.xlsx`. The header spans Excel rows 5–7; data b
 
 Within each geographic level, rows come in triples: the entity total (area = entity name), then "Urbana", then "Rural".
 
-```{r load}
+```{r load-population}
 raw <- read_excel(
   "../bolivia-data/Censo 2024/POBLACION.xlsx",
   sheet     = "1",
@@ -48,15 +48,14 @@ pop_raw <- raw |>
     row_num = as.integer(row_num),
     across(starts_with("pop_") | starts_with("pct_"), as.numeric)
   ) |>
-  # Drop footnote/blank rows at the bottom (no row number)
   filter(!is.na(row_num))
 ```
 
-## Disaggregate by geographic level
+### Disaggregate by geographic level
 
 Each level has "total" rows (area = entity name) and subdivision rows (area = "Urbana" or "Rural").
 
-```{r disaggregate}
+```{r disaggregate-population}
 subdivisions <- c("Urbana", "Rural")
 
 pop_country        <- pop_raw |> filter(nivel == "País")
@@ -80,9 +79,9 @@ pop_muni_urb_rural <- pop_raw |>
   filter(nivel == "Municipio/TIOC",  area %in% subdivisions)
 ```
 
-## Quick checks
+### Quick checks
 
-```{r checks}
+```{r checks-population}
 cat("Country rows:           ", nrow(pop_country),       "\n")
 cat("Dept totals:            ", nrow(pop_dept),           "\n")
 cat("Dept urban+rural rows:  ", nrow(pop_dept_urb_rural), "\n")
@@ -103,9 +102,12 @@ pop_muni |>
   head(12)
 ```
 
-## Save outputs
+### Save population outputs
 
-```{r save}
+```{r save-population}
+#| eval: false
+#| echo: true
+# This code will not be run, since the data is already saved.
 saveRDS(pop_raw,           "data/poblacion_raw.rds")
 saveRDS(pop_country,       "data/poblacion_pais.rds")
 saveRDS(pop_dept,          "data/poblacion_departamento.rds")
@@ -114,4 +116,129 @@ saveRDS(pop_prov,          "data/poblacion_provincia.rds")
 saveRDS(pop_prov_urb_rural,"data/poblacion_provincia_urb_rural.rds")
 saveRDS(pop_muni,          "data/poblacion_municipio.rds")
 saveRDS(pop_muni_urb_rural,"data/poblacion_municipio_urb_rural.rds")
+```
+
+---
+
+## Part 2: Ethnic Self-Identification (`AUTOIDENTIFICACION.xlsx`, sheet 3)
+
+Source: sheet "3" of `AUTOIDENTIFICACION.xlsx`. This table reports, for each geographic
+unit and urban/rural subdivision, the number of people who declared belonging to each of
+133 indigenous nations, pueblos, and ethnic categories in the 2024 census. The `total`
+column is the count of all declarations (a person who identified with multiple groups is
+counted once per declaration).
+
+The header spans two rows (Excel rows 5–6):
+
+- **Row 5** geographic keys + `TOTAL` + merged header "DECLARACIONES DE AUTOIDENTIFICACIÓN
+  CENSO 2024" spanning all ethnic-group columns.
+- **Row 6** individual ethnic-group names (133 names, cols 7–139).
+
+Data begins at row 7. Footnote rows at the bottom of the sheet (with long `nivel` strings)
+are removed during cleaning.
+
+```{r load-autoidentificacion}
+auto_path <- "../bolivia-data/Censo 2024/AUTOIDENTIFICACION.xlsx"
+
+# Row 6 of the sheet holds the 133 ethnic-group names; those become the trailing
+# column names. Read it separately before reading the data.
+ethnic_group_names <- read_excel(
+  auto_path,
+  sheet     = "3",
+  col_names = FALSE,
+  skip      = 5,   # skip rows 1–5; row 6 is the one we want
+  n_max     = 1
+) |>
+  unlist(use.names = FALSE)
+
+# Assemble the full column-name vector: 6 geographic keys + 133 ethnic groups.
+auto_col_names <- c(
+  "nivel", "departamento", "provincia", "municipio", "area", "total",
+  ethnic_group_names
+)
+
+# Read data rows (starting at Excel row 7).
+auto_raw <- read_excel(
+  auto_path,
+  sheet     = "3",
+  col_names = FALSE,
+  skip      = 6
+)
+names(auto_raw) <- auto_col_names
+
+auto_raw <- auto_raw |>
+  mutate(across(c(total, all_of(ethnic_group_names)), as.numeric)) |>
+  # Drop footnote rows: they have very long nivel strings, not short level names
+  filter(!is.na(nivel), nchar(nivel) <= 20)
+```
+
+### Disaggregate by geographic level
+
+The row structure mirrors Part 1: each geographic entity appears three times (total,
+Urbana, Rural). The `nivel` labels used here are identical to those in `POBLACION.xlsx`.
+
+```{r disaggregate-autoidentificacion}
+auto_country        <- auto_raw |> filter(nivel == "País",            !area %in% subdivisions)
+
+auto_dept           <- auto_raw |>
+  filter(nivel == "Departamento", !area %in% subdivisions)
+
+auto_dept_urb_rural <- auto_raw |>
+  filter(nivel == "Departamento",  area %in% subdivisions)
+
+auto_prov           <- auto_raw |>
+  filter(nivel == "Provincia",     !area %in% subdivisions)
+
+auto_prov_urb_rural <- auto_raw |>
+  filter(nivel == "Provincia",      area %in% subdivisions)
+
+auto_muni           <- auto_raw |>
+  filter(nivel == "Municipio/TIOC", !area %in% subdivisions)
+
+auto_muni_urb_rural <- auto_raw |>
+  filter(nivel == "Municipio/TIOC",  area %in% subdivisions)
+```
+
+### Quick checks
+
+```{r checks-autoidentificacion}
+cat("Country rows:           ", nrow(auto_country),       "\n")
+cat("Dept totals:            ", nrow(auto_dept),           "\n")
+cat("Dept urban+rural rows:  ", nrow(auto_dept_urb_rural), "\n")
+cat("Province totals:        ", nrow(auto_prov),           "\n")
+cat("Province urban+rural:   ", nrow(auto_prov_urb_rural), "\n")
+cat("Municipality totals:    ", nrow(auto_muni),           "\n")
+cat("Municipality urb+rural: ", nrow(auto_muni_urb_rural), "\n")
+```
+
+```{r preview-auto-dept}
+# Total declarations by department (top 5 groups)
+top5 <- auto_muni |>
+  select(all_of(ethnic_group_names)) |>
+  summarise(across(everything(), sum, na.rm = TRUE)) |>
+  pivot_longer(everything(), names_to = "grupo", values_to = "n") |>
+  slice_max(n, n = 5)
+
+auto_dept |>
+  select(departamento, total, Quechua, Aymara, Chiquitano, Guaraní, Mojeño) |>
+  arrange(desc(total))
+```
+
+```{r preview-auto-muni}
+auto_muni |>
+  select(departamento, provincia, municipio, total, Quechua, Aymara) |>
+  head(12)
+```
+
+### Save ethnic identification outputs
+
+```{r save-autoidentificacion}
+saveRDS(auto_raw,           "data/autoidentificacion_raw.rds")
+saveRDS(auto_country,       "data/autoidentificacion_pais.rds")
+saveRDS(auto_dept,          "data/autoidentificacion_departamento.rds")
+saveRDS(auto_dept_urb_rural,"data/autoidentificacion_departamento_urb_rural.rds")
+saveRDS(auto_prov,          "data/autoidentificacion_provincia.rds")
+saveRDS(auto_prov_urb_rural,"data/autoidentificacion_provincia_urb_rural.rds")
+saveRDS(auto_muni,          "data/autoidentificacion_municipio.rds")
+saveRDS(auto_muni_urb_rural,"data/autoidentificacion_municipio_urb_rural.rds")
 ```
