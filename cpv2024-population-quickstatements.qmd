@@ -1,0 +1,263 @@
+---
+title: "Bolivia CPV 2024: Population QuickStatements for Wikidata"
+format: html
+---
+
+## Overview
+
+This document adds P1082 (population) statements to Wikidata items for Bolivia's 339
+municipalities using census counts from three surveys: 2001, 2012, and 2024 (CPV 2024).
+Each statement is sourced to Q139668018 (the Wikidata item for the CPV 2024 publication)
+and carries a P585 (point in time) qualifier for the relevant census year.
+
+Before adding new statements, a small number of pre-existing P1082 claims on seven items
+must be removed. Those items were tagged during a prior data-cleaning pass; their existing
+values are undated or unreferenced and would otherwise create duplicates.
+
+## Setup
+
+```{r setup}
+library(tidyverse)
+library(readr)
+library(httr)
+library(jsonlite)
+
+source("create_quick_statement.R")
+source("get_wikidata_instances.R")
+```
+
+```{r load-data}
+muni_id_lookup_table <- readRDS("../ultimate-consequences/data/muni_id_lookup_table.rds")
+pop_muni             <- readRDS("data/poblacion_municipio.rds")
+```
+
+## Step 1: Fetch current Wikidata municipality data
+
+A single `get_wikidata_instances()` call retrieves every Bolivian municipality item,
+collecting both the INE code (P14142) used for QID mapping and any existing P1082
+(population) claims needed to generate the removal statements in the next step.
+
+```{r fetch-wd-municipalities}
+municipalities_wd <- get_wikidata_instances(
+  "Q1062710",
+  property                    = "P14142",
+  property_names              = "ine_code",
+  numeric_list_properties     = "P1082",
+  numeric_list_property_names = "population"
+)
+
+cat("Municipality items retrieved:", nrow(municipalities_wd), "\n")
+cat("Items with INE code:         ", sum(!is.na(municipalities_wd$ine_code)), "\n")
+cat("Items with P1082:            ", sum(municipalities_wd$population_n > 0, na.rm = TRUE), "\n")
+```
+
+## Step 2: Remove pre-existing P1082 claims
+
+Seven items carry one or more P1082 statements that were added before this
+structured import. They must be deleted first, or QuickStatements will create
+duplicate claims.
+
+`make_p1082_removals()` extracts the current claim values from the already-fetched
+`municipalities_wd` tibble (no second API call needed) and emits one removal line
+per claim in QuickStatements batch syntax (`-QID | P1082 | value`).
+
+```{r fn-make-removals}
+#' Generate QuickStatements removal lines for all P1082 claims on a set of items.
+#'
+#' @param municipalities_wd Tibble returned by get_wikidata_instances(), which must
+#'   include population_n, population_1 … population_N columns (numeric list
+#'   property columns produced when numeric_list_properties = "P1082").
+#' @param target_qids Character vector of QIDs whose P1082 claims should be removed.
+#'
+#' @return A tibble with columns `qid`, `label_es`, `claim_slot`, `value`, and
+#'   `removal_statement` (the QuickStatements deletion line).
+make_p1082_removals <- function(municipalities_wd, target_qids) {
+  df <- municipalities_wd |>
+    filter(qid %in% target_qids)
+
+  if (nrow(df) == 0) stop("None of target_qids found in municipalities_wd.")
+
+  # Identify the per-claim value columns: population_1, population_2, ...
+  # (exclude population, population_n, population_*_year, population_*_ref)
+  value_cols <- names(df) |>
+    str_subset("^population_\\d+$")
+
+  df |>
+    select(qid, label_es, all_of(value_cols)) |>
+    pivot_longer(
+      cols      = all_of(value_cols),
+      names_to  = "claim_slot",
+      values_to = "value"
+    ) |>
+    filter(!is.na(value)) |>
+    mutate(
+      value_str         = as.character(as.integer(value)),
+      removal_statement = str_c("-", qid, " | P1082 | ", value_str)
+    ) |>
+    select(qid, label_es, claim_slot, value, removal_statement)
+}
+```
+
+```{r make-removals}
+qids_to_clear <- c(
+  "Q628665",  # Porco
+  "Q1516972", # Pojo
+  "Q1814603", # Loreto
+  "Q1814613", # Exaltación
+  "Q1814898", # San Buenaventura
+  "Q1814929", # Corocoro
+  "Q1952982"  # (label missing in WD)
+)
+
+removals <- make_p1082_removals(municipalities_wd, qids_to_clear)
+removals
+```
+
+Copy the lines below into QuickStatements batch mode and run them **before** proceeding
+to Step 4.
+
+```{r print-removals}
+writeLines(removals$removal_statement)
+```
+
+## Step 3: Build the municipality–QID population table
+
+The join chain:
+
+1. **pop_muni → muni_id_lookup_table** on `municipio == muni_cpv2024` and
+   `departamento == department`. The department key is required because many
+   municipality names (e.g. "San Pedro", "Santa Rosa") are shared across departments;
+   omitting it inflates the row count from 340 to 369.
+2. **muni_id_lookup_table → Wikidata** on `id_muni == ine_code` using the
+   `municipalities_wd` tibble already in hand.
+
+TIOC rows in `pop_muni` (e.g. "TIOC-Raqaypampa", "TIOC-Territorio Indígena
+Multiétnico") have no matching `muni_cpv2024` in the lookup table and will produce
+`NA` after the join; they are dropped and reported to the console.
+
+```{r fn-build-pop-table}
+#' Join pop_muni to Wikidata QIDs through muni_id_lookup_table.
+#'
+#' @param pop_muni    Tibble of municipality-level population rows from CPV 2024.
+#' @param lookup      muni_id_lookup_table with columns id_muni, muni_cpv2024,
+#'   and department.
+#' @param ine_qid_map Tibble with columns id_muni (INE 6-digit code) and qid.
+#'   Must have NA rows filtered out before calling (to avoid spurious TIOC matches).
+#'
+#' @return A tibble of matched rows, one per municipality, with all pop_muni
+#'   columns plus id_muni and qid. Unmatched rows are dropped and messaged.
+build_population_qs_table <- function(pop_muni, lookup, ine_qid_map) {
+  ine_qid_map <- ine_qid_map |> filter(!is.na(id_muni))
+
+  joined <- pop_muni |>
+    left_join(
+      lookup |> select(id_muni, muni_cpv2024, department),
+      by = c("municipio" = "muni_cpv2024", "departamento" = "department")
+    ) |>
+    left_join(ine_qid_map, by = "id_muni")
+
+  unmatched <- joined |> filter(is.na(qid))
+  if (nrow(unmatched) > 0) {
+    message(nrow(unmatched), " pop_muni row(s) had no QID match and will be dropped:")
+    walk(unmatched$municipio, ~ message("  - ", .x))
+  }
+
+  joined |> filter(!is.na(qid))
+}
+```
+
+```{r build-pop-table}
+ine_qid_map <- municipalities_wd |>
+  select(qid, id_muni = ine_code)
+
+pop_qs <- build_population_qs_table(pop_muni, muni_id_lookup_table, ine_qid_map)
+
+cat("Rows in pop_qs:", nrow(pop_qs), "\n")
+cat("Distinct QIDs: ", n_distinct(pop_qs$qid), "\n")
+
+pop_qs |>
+  select(departamento, municipio, id_muni, qid,
+         pop_2001_total, pop_2012_total, pop_2024_total) |>
+  head(10)
+```
+
+## Step 4: Generate P1082 QuickStatements
+
+One QuickStatements column per census year is produced using
+`add_quick_statement_column_q()`. Each statement carries:
+
+- a P585 (point in time) qualifier at year-level precision (`/9`);
+- S248 sourcing to **Q139668018** (CPV 2024).
+
+The three columns are stacked into a single output file ready for batch upload.
+
+```{r fn-year-qualifier}
+p585_for_year <- function(year) sprintf("+%d-01-01T00:00:00Z/9", year)
+SOURCE_QID <- "Q139668018"
+```
+
+```{r generate-qs}
+pop_qs_with_statements <- pop_qs |>
+
+  add_quick_statement_column_q(
+    qid, "P1082", pop_2001_total,
+    qualifiers    = list(P585 = p585_for_year(2001)),
+    type          = "quantity",
+    reference_qid = SOURCE_QID
+  ) |>
+  rename(qs_2001 = quick_statement) |>
+
+  add_quick_statement_column_q(
+    qid, "P1082", pop_2012_total,
+    qualifiers    = list(P585 = p585_for_year(2012)),
+    type          = "quantity",
+    reference_qid = SOURCE_QID
+  ) |>
+  rename(qs_2012 = quick_statement) |>
+
+  add_quick_statement_column_q(
+    qid, "P1082", pop_2024_total,
+    qualifiers    = list(P585 = p585_for_year(2024)),
+    type          = "quantity",
+    reference_qid = SOURCE_QID
+  ) |>
+  rename(qs_2024 = quick_statement)
+
+pop_qs_with_statements |>
+  select(municipio, qid, qs_2001, qs_2012, qs_2024) |>
+  head(5)
+```
+
+```{r stack-statements}
+all_statements <- pop_qs_with_statements |>
+  arrange(qid) |>
+  select(qid, qs_2001, qs_2012, qs_2024) |>
+  pivot_longer(cols = starts_with("qs_"), values_to = "statement") |>
+  pull(statement)
+
+cat("Total QuickStatements lines:", length(all_statements), "\n")
+```
+
+## Step 5: Review and export
+
+Preview the first 15 lines to sanity-check the format before upload.
+
+```{r preview-statements}
+writeLines(head(all_statements, 15))
+```
+
+Export to a plain-text file for pasting into the QuickStatements batch interface at
+<https://quickstatements.toolforge.org/>.
+
+```{r export}
+writeLines(all_statements, "data/cpv2024_population_quickstatements.txt")
+cat("Written to data/cpv2024_population_quickstatements.txt\n")
+```
+
+The expected format of each line is:
+
+```
+QID | P1082 | <count> | qal585 | +YYYY-01-01T00:00:00Z/9 | S248 | Q139668018 | S813 | +YYYY-MM-DDT00:00:00Z/11
+```
+
+Run the removal batch (Step 2) first, then submit this file.

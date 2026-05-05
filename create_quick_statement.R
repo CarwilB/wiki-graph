@@ -126,13 +126,14 @@ create_quick_statement <- function(qid,
   }
 
   # Add qualifiers if provided
-  # QuickStatements qualifier syntax: qalXXX (not PXX), e.g. qal585 for P585
+  # QuickStatements qualifier syntax: P585
+  # NOT qalXXX (not PXX), e.g. qal585 for P585; that's for CSV
   if (!is.null(qualifiers)) {
     for (qual_prop in names(qualifiers)) {
       if (!grepl("^P\\d+$", qual_prop)) {
         stop(paste("Qualifier property must be in format 'P123':", qual_prop))
       }
-      qal_label <- paste0("qal", gsub("^P", "", qual_prop))
+      qal_label <-  qual_prop
       command_parts <- c(command_parts, qal_label, qualifiers[[qual_prop]])
     }
   }

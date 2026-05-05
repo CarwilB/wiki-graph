@@ -17,20 +17,20 @@ source("wiki-refs-to-zotero.R")
 # =============================================================================
 
 # Wikipedia page title (use underscores for spaces, e.g., "Albert_Einstein")
-WIKIPEDIA_PAGE <- "Meiō_incident"
+WIKIPEDIA_PAGE <- "Senkata_massacre"
 
 # Wikipedia language edition (default: "en" for English)
 WIKIPEDIA_LANG <- "en"
 
 # Name for the Zotero collection (default: WIKIPEDIA_PAGE with spaces)
-ZOTERO_COLLECTION <- "Meiō incident"
+ZOTERO_COLLECTION <- "Senkata massacre"
 
 # =============================================================================
 # DO NOT EDIT BELOW THIS LINE
 # =============================================================================
 
 ZOTERO_USER_ID <- Sys.getenv("ZOTERO_USER_ID")
-ZOTERO_API_KEY <- Sys.getenv("ZOTERO_API_KEY")
+ZOTERO_API_KEY <- Sys.getenv("zotero_access_key_write")
 
 if (!nzchar(ZOTERO_USER_ID) || !nzchar(ZOTERO_API_KEY)) {
   stop(

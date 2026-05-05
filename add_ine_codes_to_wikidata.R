@@ -401,7 +401,23 @@ writeLines(muni_reconnect$removal_quick_statement)
 writeLines(muni_reconnect$quick_statement)
 
 
-
-
-
+##
+municipalities_wd2 <- get_wikidata_instances(
+  "Q1062710",
+  c("P131", "P17", "P14142"),
+  c("located_in", "country", "ine_code"),
+  numeric_list_properties      = "P1082",
+  numeric_list_property_names  = "population"
+)
+municipalities_wd2 <- municipalities_wd2 |>
+  tidyr::hoist(located_in,
+               loc_1_qid = 1,
+               loc_2_qid = 2)
+municipalities_wd2. <- municipalities_wd2 |>
+  mutate(loc_1_type = case_when(
+    loc_1_qid %in% provinces$qid ~ "province",
+    loc_1_qid %in% departments$qid ~ "department",
+    loc_1_qid == "Q750" ~ "country", # Bolivia's QID
+    TRUE ~ NA_character_
+  ))
 
