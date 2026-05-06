@@ -299,9 +299,7 @@ add_wikidata_property <- function(df, property, name = property) {
 .fetch_qids_in_batches <- function(qids, property, property_names, languages,
                                    batch_size = 50, batch_delay = 1,
                                    numeric_list_properties     = NULL,
-                                   numeric_list_property_names = NULL,
-                                   entity_props               = "labels|descriptions|claims|sitelinks") {
-
+                                   numeric_list_property_names = NULL) {
   batches    <- split(qids, ceiling(seq_along(qids) / batch_size))
   n_batches  <- length(batches)
   api_url    <- "https://www.wikidata.org/w/api.php"
@@ -327,12 +325,24 @@ add_wikidata_property <- function(df, property, name = property) {
 
       item_data <- fromJSON(content(api_response, "text", encoding = "UTF-8"))
       entities  <- item_data$entities
+      if (any(batch %in% c("Q32","Q33","Q38","Q228"))) {
+        message("DEBUG status_code: ", httr::status_code(api_response))
+        txt <- httr::content(api_response, "text", encoding="UTF-8")
+        message("DEBUG first 200 chars: ", substr(txt, 1, 200))
+        message("DEBUG has entities names? ", !is.null(names(entities)))
+        message("DEBUG entities name sample: ", paste(head(names(entities), 20), collapse=","))
+        message("DEBUG Q32 in names(entities): ", "Q32" %in% names(entities))
+      }
 
       for (qid in batch) {
         entity <- entities[[qid]]
-
-        missing_flag <- is.null(entity) || (is.list(entity) && "missing" %in% names(entity))
-
+        if (qid %in% c("Q32","Q33","Q38", "Q228", "Q252")) {
+          message("DEBUG ", qid, " names(entity) = ", paste(names(entity), collapse=","))
+          message("DEBUG ", qid, " class(entity) = ", paste(class(entity), collapse=","))
+          message("DEBUG ", qid, " missing field is: ", paste(capture.output(str(entity$missing)), collapse=" "))
+        }
+        missing_flag <- is.null(entity) || (is.list(entity) &&
+                                              "missing" %in% names(entity))
         if (missing_flag) {
           message("  Item ", qid, " missing or not found; skipping.")
           all_parsed[[idx]] <- NULL
