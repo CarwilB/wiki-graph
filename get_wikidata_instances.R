@@ -216,7 +216,7 @@ add_wikidata_property <- function(df, property, name = property) {
     prop_values <- map(seq_along(property), function(i) {
       pid   <- property[i]
       pname <- property_names[i]
-      vals  <- if (pid %in% names(entity$claims)) {
+      vals  <- if ("claims" %in% names(entity) && pid %in% names(entity$claims)) {
         p_df <- entity$claims[[pid]]
         if (nrow(p_df) > 0) {
           map_chr(seq_len(nrow(p_df)), function(j) {
@@ -240,6 +240,9 @@ add_wikidata_property <- function(df, property, name = property) {
 
   # Extract numeric list properties (multi-value quantities with year + ref)
   numeric_list_cols <- if (!is.null(numeric_list_properties)) {
+    if (!"claims" %in% names(entity)) {
+      stop("numeric_list_properties requested but entity has no 'claims' (did you request props without 'claims'?)")
+    }
     result <- list()
     for (i in seq_along(numeric_list_properties)) {
       extracted <- .extract_numeric_list_property(
@@ -253,7 +256,7 @@ add_wikidata_property <- function(df, property, name = property) {
   } else list()
 
   # Extract all P31 (instance of) statements
-  instance_of <- if ("P31" %in% names(entity$claims)) {
+  instance_of <- if ("claims" %in% names(entity) && "P31" %in% names(entity$claims)) {
     p31_df <- entity$claims$P31
     if (nrow(p31_df) > 0) {
       map_chr(seq_len(nrow(p31_df)), function(i) {
@@ -296,7 +299,8 @@ add_wikidata_property <- function(df, property, name = property) {
 .fetch_qids_in_batches <- function(qids, property, property_names, languages,
                                    batch_size = 50, batch_delay = 1,
                                    numeric_list_properties     = NULL,
-                                   numeric_list_property_names = NULL) {
+                                   numeric_list_property_names = NULL,
+                                   entity_props               = "labels|descriptions|claims|sitelinks") {
 
   batches    <- split(qids, ceiling(seq_along(qids) / batch_size))
   n_batches  <- length(batches)
@@ -316,7 +320,7 @@ add_wikidata_property <- function(df, property, name = property) {
           action = "wbgetentities",
           ids    = paste(batch, collapse = "|"),
           format = "json",
-          props  = "labels|descriptions|claims|sitelinks"
+          props  = entity_props
         ),
         user_agent("WikidataR-instances-retrieval")
       )
@@ -326,7 +330,10 @@ add_wikidata_property <- function(df, property, name = property) {
 
       for (qid in batch) {
         entity <- entities[[qid]]
-        if (is.null(entity) || isTRUE(entity$missing == "")) {
+
+        missing_flag <- is.null(entity) || (is.list(entity) && "missing" %in% names(entity))
+
+        if (missing_flag) {
           message("  Item ", qid, " missing or not found; skipping.")
           all_parsed[[idx]] <- NULL
         } else {
@@ -429,6 +436,9 @@ add_wikidata_property <- function(df, property, name = property) {
 #' @param numeric_list_property_names Character vector. Column name prefixes
 #'   for each entry in \code{numeric_list_properties}. Defaults to the
 #'   property IDs if \code{NULL}.
+#' @param entity_props Character. Pipe-separated list of Wikidata entity props
+#'   to request from \code{wbgetentities} (e.g. "labels|sitelinks"). Default is
+#'   "labels|descriptions|claims|sitelinks".
 #'
 #' @return A tibble with columns as described above.
 #'
@@ -453,7 +463,8 @@ get_wikidata_instances <- function(class_qid,
                                    batch_size                  = 50,
                                    batch_delay                 = 1,
                                    numeric_list_properties     = NULL,
-                                   numeric_list_property_names = NULL) {
+                                   numeric_list_property_names = NULL,
+                                   entity_props                = "labels|descriptions|claims|sitelinks") {
 
   # Resolve column names for regular extra properties
   if (!is.null(property)) {
@@ -492,6 +503,14 @@ get_wikidata_instances <- function(class_qid,
     stop("country must be in format 'Q123'")
   batch_size <- min(as.integer(batch_size), 50L)
 
+  # Validate props requirements based on requested features
+  if (!is.null(property) && length(property) > 0 && !grepl("(^|\\|)claims(\\||$)", entity_props)) {
+    stop("property=... requires entity_props to include 'claims' (so we can read property values).")
+  }
+  if (!is.null(numeric_list_properties) && length(numeric_list_properties) > 0 && !grepl("(^|\\|)claims(\\||$)", entity_props)) {
+    stop("numeric_list_properties requires entity_props to include 'claims'.")
+  }
+
   # Step 1: SPARQL — get all QIDs
   qids <- .sparql_get_qids(class_qid, country, limit)
 
@@ -506,7 +525,8 @@ get_wikidata_instances <- function(class_qid,
   # Step 2: fetch in batches
   items_data <- .fetch_qids_in_batches(
     qids, property, property_names, languages, batch_size, batch_delay,
-    numeric_list_properties, numeric_list_property_names
+    numeric_list_properties, numeric_list_property_names,
+    entity_props = entity_props
   )
 
   # Convert to tibble and simplify single-value list columns
@@ -539,6 +559,8 @@ get_wikidata_instances <- function(class_qid,
 #'   original call. Default \code{NULL}.
 #' @param numeric_list_property_names Character vector. Same value used in the
 #'   original call. Default \code{NULL}.
+#' @param entity_props Character. Same value used in the original call.
+#'   Default "labels|descriptions|claims|sitelinks".
 #'
 #' @return A tibble with the same columns as \code{get_wikidata_instances()},
 #'   containing all items (previously retrieved + newly fetched).
@@ -563,7 +585,8 @@ resume_get_wikidata_instances <- function(partial_result,
                                           batch_size                  = 50,
                                           batch_delay                 = 1,
                                           numeric_list_properties     = NULL,
-                                          numeric_list_property_names = NULL) {
+                                          numeric_list_property_names = NULL,
+                                          entity_props                = "labels|descriptions|claims|sitelinks") {
 
   if (!"qid" %in% names(partial_result))
     stop("partial_result must contain a 'qid' column")
@@ -595,6 +618,14 @@ resume_get_wikidata_instances <- function(partial_result,
       numeric_list_property_names <- numeric_list_property_names[seq_len(n_nlp)]
   }
 
+  # Validate props requirements
+  if (!is.null(property) && length(property) > 0 && !grepl("(^|\\|)claims(\\||$)", entity_props)) {
+    stop("property=... requires entity_props to include 'claims'.")
+  }
+  if (!is.null(numeric_list_properties) && length(numeric_list_properties) > 0 && !grepl("(^|\\|)claims(\\||$)", entity_props)) {
+    stop("numeric_list_properties requires entity_props to include 'claims'.")
+  }
+
   # Step 1: re-run SPARQL to get the complete QID list
   message("Re-running SPARQL query for ", class_qid, "...")
   all_qids <- .sparql_get_qids(class_qid, country, limit)
@@ -621,7 +652,8 @@ resume_get_wikidata_instances <- function(partial_result,
           batch_size, "...")
   new_items <- .fetch_qids_in_batches(
     remaining, property, property_names, languages, batch_size, batch_delay,
-    numeric_list_properties, numeric_list_property_names
+    numeric_list_properties, numeric_list_property_names,
+    entity_props = entity_props
   )
 
   # Simplify each half before binding so column types match
