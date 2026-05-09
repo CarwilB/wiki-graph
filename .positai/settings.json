@@ -20,9 +20,5 @@
       "grep *": "allow",
       "awk '{print $9, \"(\" $5 \")\"}'": "allow"
     }
-  },
-  "model": {
-    "id": "claude-sonnet-4-6",
-    "provider": "positai"
   }
 }

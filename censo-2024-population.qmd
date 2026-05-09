@@ -67,16 +67,132 @@ pop_dept_urb_rural <- pop_raw |>
   filter(nivel == "Departamento",  area %in% subdivisions)
 
 pop_prov           <- pop_raw |>
-  filter(nivel == "Provincia",     !area %in% subdivisions)
+  filter(nivel == "Provincia",     !area %in% subdivisions) |> 
+  filter(provincia != "Territorio Indígena Multiétnico")
 
 pop_prov_urb_rural <- pop_raw |>
-  filter(nivel == "Provincia",      area %in% subdivisions)
+  filter(nivel == "Provincia",      area %in% subdivisions) |> 
+  filter(provincia != "Territorio Indígena Multiétnico")
 
 pop_muni           <- pop_raw |>
   filter(nivel == "Municipio/TIOC", !area %in% subdivisions)
 
 pop_muni_urb_rural <- pop_raw |>
   filter(nivel == "Municipio/TIOC",  area %in% subdivisions)
+```
+
+```{r expand-prov-lookup-table}
+#| eval: false
+prov_id_lookup_table <- readRDS("data/prov_id_lookup_table.rds")
+prov_id_lookup_long <- prov_id_lookup_table |> 
+  pivot_longer(cols = starts_with("province"), names_to = "prov_list", values_to = "province") 
+prov_id_lookup <- prov_id_lookup_long |>
+  distinct(id_prov, department, province)
+
+pop_prov_with_id <- pop_prov |> left_join(prov_id_lookup, by = c("provincia" = "province", 
+                                             "departamento" = "department")) 
+pop_prov_with_id |> filter(is.na(id_prov)) |> select(departamento, provincia, id_prov) ->
+  pop_prov_missing_id
+
+prov_id_no_match <- prov_id_lookup |> 
+  anti_join(pop_prov, by = c("province" = "provincia", 
+                             "department" = "departamento"))
+
+# Manual matches: pop_prov_missing_id → id_prov (same dept, similar name)
+# Beni / Territorio Indígena Multiétnico is a TIOC with no standard province code
+manual_prov_match <- tribble(
+  ~provincia,                    ~departamento,  ~id_prov,
+  "Sur Yungas",                  "La Paz",       "0211",  # Sud Yungas
+  "Sur Lípez",                   "Potosí",       "0510",  # Sur Lipez / Sud Lípez
+  "General Bernardino Bilbao",   "Potosí",       "0513",  # General Bilbao
+  "Avilez",                      "Tarija",       "0604",  # Avilés
+  "Valle Grande",                "Santa Cruz",   "0708",  # Vallegrande
+  "Obispo Santisteban",          "Santa Cruz",   "0710",  # Obispo Santistéban
+  "Ñuflo de Chávez",             "Santa Cruz",   "0711",  # Ñuflo De Chávez
+  "Ángel Sandoval",              "Santa Cruz",   "0712"   # Angel Sandoval
+)
+
+# Build cpv2024 name → id_prov lookup from auto-matched + manual rows
+cpv_prov_name_lookup <- pop_prov_with_id |>
+  filter(!is.na(id_prov)) |>
+  select(id_prov, prov_cpv2024 = provincia) |>
+  bind_rows(manual_prov_match |> select(id_prov, prov_cpv2024 = provincia)) |>
+  distinct(id_prov, .keep_all = TRUE)
+
+# Add prov_cpv2024 column to prov_id_lookup_table
+prov_id_lookup_table <- readRDS("data/prov_id_lookup_table.rds") # reload for clean merge
+prov_id_lookup_table <- prov_id_lookup_table |>
+  left_join(cpv_prov_name_lookup, by = "id_prov") |> 
+  relocate(prov_cpv2024, .before=department) |> 
+  rename(province_cpv2024 = prov_cpv2024) |>
+  # recount distinct province names per department to identify duplicates
+  rowwise() |> mutate(
+    n_unique = n_distinct(c(province_gb2014, province_anexo, province_census, 
+                            province_gadm, province_cpv2024), na.rm = TRUE)
+  ) |> 
+  ungroup()
+
+# saveRDS(prov_id_lookup_table, "data/prov_id_lookup_table.rds")
+# 
+# source("src/update-versioned-archive.R")
+# update_versioned_archive(prov_id_lookup_table, "../ultimate-consequences/data/prov_id_lookup_table.rds")
+
+```
+
+```{r add-ine-code}
+muni_id_lookup_table <- readRDS("data/muni_id_lookup_table.rds")
+crosswalk_muni <- muni_id_lookup_table |>
+  select(muni_cpv2024, department, id_muni) |> 
+   rename(ine_code = id_muni)
+
+prov_id_lookup_table <- readRDS("data/prov_id_lookup_table.rds")
+crosswalk_prov <- prov_id_lookup_table |>
+  select(province_cpv2024, department, id_prov) |>
+  rename(ine_code = id_prov)
+
+dep_crosswalk <- crosswalk_prov |> 
+  mutate(id_dep = str_extract(ine_code, "^\\d{2}")) |>
+  select(-province_cpv2024, -ine_code)
+
+muni_id_lookup_long <- muni_id_lookup_table %>%
+  select(id_muni, department, muni_list) %>%
+  unnest(muni_list) %>%
+  rename(municipality_name = muni_list) %>%
+  # Clean names to ensure matches (optional but recommended)
+  mutate(municipality_name = trimws((municipality_name)),
+         department = trimws((department)))
+
+pop_muni <- pop_muni |> left_join(crosswalk_muni, by = c("municipio" = "muni_cpv2024", 
+                                             "departamento" = "department")) |> 
+  relocate(ine_code, municipio, provincia, departamento, area, nivel) 
+
+pop_muni_urb_rural <- pop_muni_urb_rural |> 
+  left_join(crosswalk_muni, by = c("municipio" = "muni_cpv2024", 
+                                             "departamento" = "department")) |> 
+  relocate(ine_code, municipio, provincia, departamento, area, nivel)
+
+
+pop_prov <- pop_prov |> left_join(crosswalk_prov, by = c("provincia" = "province_cpv2024", 
+                                             "departamento" = "department")) |> 
+  relocate(ine_code, provincia, departamento, area, nivel) |> 
+  select(-municipio)
+
+pop_prov_urb_rural <- pop_prov_urb_rural |> 
+  left_join(crosswalk_prov, by = c("provincia" = "province_cpv2024", 
+                                             "departamento" = "department")) |> 
+  relocate(ine_code, provincia, departamento, area, nivel) |> 
+  select(-municipio)
+
+pop_dept <- pop_dept |> 
+  left_join(dep_crosswalk, by = c("departamento" = "department")) |> 
+  relocate(id_dep, departamento, area, nivel) |> 
+  select(-provincia, -municipio)
+
+pop_dept_urb_rural <- pop_dept_urb_rural |> 
+  left_join(dep_crosswalk, by = c("departamento" = "department")) |> 
+  relocate(id_dep, departamento, area, nivel) |> 
+  select(-provincia, -municipio)
+
 ```
 
 ### Quick checks
@@ -104,19 +220,68 @@ pop_muni |>
 
 ### Save population outputs
 
-```{r save-population}
+```{r prep-for-saving}
 #| eval: false
 #| echo: true
-# This code will not be run, since the data is already saved.
-saveRDS(pop_raw,           "data/poblacion_raw.rds")
-saveRDS(pop_country,       "data/poblacion_pais.rds")
-saveRDS(pop_dept,          "data/poblacion_departamento.rds")
-saveRDS(pop_dept_urb_rural,"data/poblacion_departamento_urb_rural.rds")
-saveRDS(pop_prov,          "data/poblacion_provincia.rds")
-saveRDS(pop_prov_urb_rural,"data/poblacion_provincia_urb_rural.rds")
-saveRDS(pop_muni,          "data/poblacion_municipio.rds")
-saveRDS(pop_muni_urb_rural,"data/poblacion_municipio_urb_rural.rds")
+
+# These have all Spanish names except for "pop" which should be "pob"
+es_var_name_fix <- function(x) {
+  x |> rename_with(~ stringr::str_replace(., "^pop", "pob"), starts_with("pop"))
+}
+
+pop_raw_es <- es_var_name_fix(pop_raw)
+pop_country_es <- es_var_name_fix(pop_country)
+pop_dept_es <- es_var_name_fix(pop_dept)
+pop_dept_urb_rural_es <- es_var_name_fix(pop_dept_urb_rural)
+pop_prov_es <- es_var_name_fix(pop_prov)
+pop_prov_urb_rural_es <- es_var_name_fix(pop_prov_urb_rural)
+pop_muni_es <- es_var_name_fix(pop_muni)
+pop_muni_urb_rural_es <- es_var_name_fix(pop_muni_urb_rural)
+
+english_var_name_fix <- function(x) {
+  x |> rename(department = departamento, province = provincia, 
+              municipality = municipio, level = nivel) |>
+    rename_with(~ stringr::str_replace(., "_mujer", "_female"), ends_with("mujer")) |>
+    rename_with(~ stringr::str_replace(., "_hombre", "_male"), ends_with("hombre"))
+}
+
+pop_raw_en <- english_var_name_fix(pop_raw)
+pop_country_en <- english_var_name_fix(pop_country)
+pop_dept_en <- english_var_name_fix(pop_dept)
+pop_dept_urb_rural_en <- english_var_name_fix(pop_dept_urb_rural)
+pop_prov_en <- english_var_name_fix(pop_prov)
+pop_prov_urb_rural_en <- english_var_name_fix(pop_prov_urb_rural)
+pop_muni_en <- english_var_name_fix(pop_muni)
+pop_muni_urb_rural_en <- english_var_name_fix(pop_muni_urb_rural)
+
 ```
+
+```{r save-population data }
+#| eval: false
+#| echo: true
+
+# This code will not be run, since the data is already saved.
+saveRDS(pop_raw,           "data/cpv2024/poblacion_raw.rds")
+saveRDS(pop_country,       "data/cpv2024/poblacion_pais.rds")
+saveRDS(pop_dept,          "data/cpv2024/poblacion_departamento.rds")
+saveRDS(pop_dept_urb_rural,"data/cpv2024/poblacion_departamento_urb_rural.rds")
+saveRDS(pop_prov,          "data/cpv2024/poblacion_provincia.rds")
+saveRDS(pop_prov_urb_rural,"data/cpv2024/poblacion_provincia_urb_rural.rds")
+saveRDS(pop_muni,          "data/cpv2024/poblacion_municipio.rds")
+saveRDS(pop_muni_urb_rural,"data/cpv2024/poblacion_municipio_urb_rural.rds")
+
+# This code will not be run, since the data is already saved.
+saveRDS(pop_raw_en,           "data/cpv2024/population_raw.rds")
+saveRDS(pop_country_en,       "data/cpv2024/population_country.rds")
+saveRDS(pop_dept_en,          "data/cpv2024/population_department.rds")
+saveRDS(pop_dept_urb_rural_en,"data/cpv2024/population_department_urb_rural.rds")
+saveRDS(pop_prov_en,          "data/cpv2024/population_province.rds")
+saveRDS(pop_prov_urb_rural_en,"data/cpv2024/population_province_urb_rural.rds")
+saveRDS(pop_muni_en,          "data/cpv2024/population_municipality.rds")
+saveRDS(pop_muni_urb_rural_en,"data/cpv2024/population_municipality_urb_rural.rds")
+
+```
+
 
 ---
 
@@ -233,12 +398,12 @@ auto_muni |>
 ### Save ethnic identification outputs
 
 ```{r save-autoidentificacion}
-saveRDS(auto_raw,           "data/autoidentificacion_raw.rds")
-saveRDS(auto_country,       "data/autoidentificacion_pais.rds")
-saveRDS(auto_dept,          "data/autoidentificacion_departamento.rds")
-saveRDS(auto_dept_urb_rural,"data/autoidentificacion_departamento_urb_rural.rds")
-saveRDS(auto_prov,          "data/autoidentificacion_provincia.rds")
-saveRDS(auto_prov_urb_rural,"data/autoidentificacion_provincia_urb_rural.rds")
-saveRDS(auto_muni,          "data/autoidentificacion_municipio.rds")
-saveRDS(auto_muni_urb_rural,"data/autoidentificacion_municipio_urb_rural.rds")
+saveRDS(auto_raw,           "data/cpv2024/autoidentificacion_raw.rds")
+saveRDS(auto_country,       "data/cpv2024/autoidentificacion_pais.rds")
+saveRDS(auto_dept,          "data/cpv2024/autoidentificacion_departamento.rds")
+saveRDS(auto_dept_urb_rural,"data/cpv2024/autoidentificacion_departamento_urb_rural.rds")
+saveRDS(auto_prov,          "data/cpv2024/autoidentificacion_provincia.rds")
+saveRDS(auto_prov_urb_rural,"data/cpv2024/autoidentificacion_provincia_urb_rural.rds")
+saveRDS(auto_muni,          "data/cpv2024/autoidentificacion_municipio.rds")
+saveRDS(auto_muni_urb_rural,"data/cpv2024/autoidentificacion_municipio_urb_rural.rds")
 ```

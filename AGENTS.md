@@ -59,5 +59,30 @@ For manually transcribed published tables:
 
 ---
 
-**Last updated**: April 2026  
+## Chat Archiving
+
+**Archive every chat session** to `.positai/chats/` in the project root as a markdown file.
+
+**When to archive**:
+- Whenever `/compact` is called
+- Whenever a new chat is opened (archive the outgoing session before context resets)
+
+**File naming**: `.positai/chats/YYYY-MM-DD_HH-MM_<short-slug>.md` (e.g., `2026-05-08_16-14_ine-municipality-matching.md`)
+
+**File format**:
+```markdown
+# Chat: <title>
+**Date**: YYYY-MM-DD  
+**Project**: wiki-graph  
+
+## Summary
+<2–4 sentence summary of what was accomplished or decided>
+
+## Transcript
+<full or condensed conversation>
+```
+
+---
+
+**Last updated**: May 2026  
 **To work on a project**, see its documentation file above (e.g., `PROJECTS-CENSUS.md` for census details).
