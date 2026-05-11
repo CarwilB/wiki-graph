@@ -1,0 +1,43 @@
+---
+title: "Country Populations on Wikidata"
+format: html
+editor: visual
+---
+
+## Setup
+
+```{r setup}
+library(tidyverse)
+library(readr)
+library(httr)
+library(jsonlite)
+
+source("create_quick_statement.R")
+source("get_wikidata_instances.R")
+source("src/update-versioned-archive.R")
+```
+
+## Step 1: Fetch current Wikidata country population data
+
+A single `get_wikidata_instances()` call retrieves every Bolivian municipality item,
+collecting both the INE code (P14142) used for QID mapping and any existing P1082
+(population) claims needed to generate the removal statements in the next step.
+
+```{r fetch-country-data}
+# Fetch current Wikidata country data (all countries), including population claims
+countries_wd <- get_wikidata_instances(
+  class_qid                  = "Q6256",     # country
+  property                   = "P297",    
+  property_names             = "iso_code_2",  
+  numeric_list_properties     = "P1082",
+  numeric_list_property_names = "population",
+  limit                      = 500,         # adjust upward if you want more
+  batch_size                 = 20
+)
+
+cat("Country items retrieved:", nrow(countries_wd), "\n")
+cat("Items with P1082:       ", sum(countries_wd$population_n > 0, na.rm = TRUE), "\n")
+
+update_versioned_archive(countries_wd, "data/country_population_wikidata.RDS")
+
+```

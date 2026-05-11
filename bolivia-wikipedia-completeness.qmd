@@ -1,0 +1,274 @@
+---
+title: "Bolivia Municipalities on Wikipedia: Coverage by Language"
+author: "Carwil Bjork-James"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    code-fold: true
+execute:
+  warning: false
+  message: false
+---
+
+## Overview
+
+This document maps the completeness of Wikipedia coverage for Bolivia's 336
+official municipalities across four Wikipedias: **English**, **Spanish**,
+**Quechua**, and **Aymara**. Coverage is defined as having a Wikipedia article
+linked from Wikidata via sitelinks.
+
+The maps are designed to support Wikipedia editors who want to identify
+municipalities lacking articles in one or more languages. They connect to the
+deeper article-quality analysis in
+[`bolivia-municipality-wikipedia.qmd`](bolivia-municipality-wikipedia.qmd),
+which examines article content and structure on English Wikipedia.
+
+---
+
+## Setup
+
+```{r setup}
+library(tidyverse)
+library(sf)
+library(patchwork)
+library(httr)
+library(jsonlite)
+
+source("wikidata_presence_matrix.R")
+source("get_wikidata_instances.R")
+```
+
+---
+
+## Fetch data from Wikidata
+
+### Wikipedia presence matrix
+
+We query Wikidata for all items that are instances of
+[municipality of Bolivia (Q1062710)](https://www.wikidata.org/wiki/Q1062710)
+and build a presence matrix indicating which Wikipedia language editions have an
+article for each municipality.
+
+Results are cached to `data/bo_municipality_wiki_presence.rds` so that
+subsequent renders do not repeat the API calls.
+
+```{r fetch-presence}
+#| cache: false
+
+presence_cache <- "data/bo_municipality_wiki_presence.rds"
+
+if (file.exists(presence_cache)) {
+  bo_municipality_wiki_presence <- readRDS(presence_cache)
+} else {
+  bo_municipality_wiki_presence <- wikidata_instance_wikipedia_presence(
+    class_qid  = "Q1062710",   # municipality of Bolivia
+    languages  = NULL,         # auto-discover all languages present
+    limit      = 500,
+    batch_size = 20
+  )
+  saveRDS(bo_municipality_wiki_presence, presence_cache)
+}
+```
+
+### INE codes (P14142)
+
+We retrieve the INE municipal code (property
+[P14142](https://www.wikidata.org/wiki/Property:P14142)) for each municipality.
+These 6-digit codes (e.g. `010101`) allow us to join Wikidata entities to the
+GADM boundary file via a pre-built crosswalk.
+
+```{r fetch-ine-codes}
+#| cache: false
+
+ine_cache <- "data/municipalities_wd_ine.rds"
+
+if (file.exists(ine_cache)) {
+  municipalities_wd_ine <- readRDS(ine_cache)
+} else {
+  municipalities_wd_ine <- get_wikidata_instances(
+    class_qid      = "Q1062710",
+    property       = "P14142",
+    property_names = "ine_code",
+    languages      = c("en", "es"),
+    limit          = 500,
+    batch_size     = 20
+  )
+  saveRDS(municipalities_wd_ine, ine_cache)
+}
+```
+
+---
+
+## Build map dataset
+
+We join the presence matrix to INE codes, then match to GADM boundaries through
+the pre-built lookup table.
+
+```{r build-map-data}
+gadm_sf     <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3",
+                       quiet = TRUE) |>
+  select(NAME_1, NAME_3, geom)
+gadm_lookup <- readRDS("data/gadm_lookup.rds")
+
+# Join presence matrix → INE codes → GADM crosswalk → spatial boundaries
+map_data <- gadm_sf |>
+  inner_join(
+    gadm_lookup |> select(gadm_dep, gadm_mun, cod.mun),
+    by = c("NAME_1" = "gadm_dep", "NAME_3" = "gadm_mun")
+  ) |>
+  left_join(
+    bo_municipality_wiki_presence$data |>
+      select(qid, en, es, qu, ay) |>
+      left_join(
+        municipalities_wd_ine |> select(qid, ine_code),
+        by = "qid"
+      ),
+    by = c("cod.mun" = "ine_code")
+  ) |>
+  mutate(
+    across(c(en, es, qu, ay),
+           ~ factor(case_when(
+             .x == 1L ~ "Has article",
+             .x == 0L ~ "No article",
+             TRUE      ~ "Not in Wikidata"
+           ), levels = c("Has article", "No article", "Not in Wikidata")))
+  )
+```
+
+---
+
+## Coverage summary
+
+```{r coverage-table}
+# Count municipalities with / without an article per Wikipedia
+coverage_summary <- map_data |>
+  st_drop_geometry() |>
+  summarise(across(c(en, es, qu, ay), list(
+    has    = ~ sum(.x == "Has article",      na.rm = TRUE),
+    no     = ~ sum(.x == "No article",       na.rm = TRUE),
+    absent = ~ sum(.x == "Not in Wikidata" | is.na(.x), na.rm = TRUE)
+  ))) |>
+  pivot_longer(everything(),
+               names_to  = c("language", ".value"),
+               names_sep = "_") |>
+  mutate(
+    wikipedia = c(en = "English", es = "Spanish", qu = "Quechua", ay = "Aymara")[language],
+    pct_has   = round(100 * has / (has + no + absent), 1)
+  ) |>
+  select(wikipedia, has, no, absent, pct_has)
+
+coverage_summary |>
+  rename(
+    Wikipedia      = wikipedia,
+    `Has article`  = has,
+    `No article`   = no,
+    `Not in WD`    = absent,
+    `% covered`    = pct_has
+  ) |>
+  knitr::kable(caption = "Municipality article coverage by Wikipedia language edition")
+```
+
+---
+
+## Maps
+
+Colors indicate whether Wikidata links the municipality to a Wikipedia article
+in each language. Grey polygons are municipalities present in GADM but not
+matched through Wikidata.
+
+```{r map-colors}
+presence_colors <- c(
+  "Has article"     = "#2166ac",
+  "No article"      = "#f7f7f7",
+  "Not in Wikidata" = "#cccccc"
+)
+```
+
+```{r map-function}
+#| include: false
+make_presence_map <- function(data, col, title) {
+  ggplot(data) +
+    geom_sf(aes(fill = .data[[col]]), color = "white", linewidth = 0.12) +
+    scale_fill_manual(
+      values   = presence_colors,
+      na.value = "#eeeeee",
+      name     = NULL,
+      drop     = FALSE
+    ) +
+    labs(title = title) +
+    theme_void(base_size = 10) +
+    theme(
+      plot.title    = element_text(face = "bold", hjust = 0.5, size = 11),
+      legend.position = "bottom"
+    )
+}
+```
+
+```{r maps-individual}
+#| fig-height: 22
+#| fig-width: 6
+
+p_en <- make_presence_map(map_data, "en", "English Wikipedia")
+p_es <- make_presence_map(map_data, "es", "Spanish Wikipedia")
+p_qu <- make_presence_map(map_data, "qu", "Quechua Wikipedia")
+p_ay <- make_presence_map(map_data, "ay", "Aymara Wikipedia")
+
+p_en / p_es / p_qu / p_ay +
+  plot_annotation(
+    title   = "Bolivia: Municipal Wikipedia Coverage by Language",
+    caption = "Source: Wikidata (Q1062710 instances); boundaries: GADM 4.1",
+    theme   = theme(plot.title = element_text(face = "bold", size = 14, hjust = 0.5))
+  )
+```
+
+---
+
+## Municipalities missing across multiple Wikipedias
+
+Municipalities with no article in any of the four languages are the highest-priority
+targets for new articles. The table below lists them, ordered by INE code.
+
+```{r missing-all-four}
+map_data |>
+  st_drop_geometry() |>
+  filter(
+    en == "No article",
+    es == "No article",
+    qu == "No article",
+    ay == "No article"
+  ) |>
+  left_join(
+    municipalities_wd_ine |> select(ine_code, label_en, label_es),
+    by = c("cod.mun" = "ine_code")
+  ) |>
+  select(
+    `INE code`  = cod.mun,
+    `Name (EN)` = label_en,
+    `Name (ES)` = label_es,
+    English     = en,
+    Spanish     = es,
+    Quechua     = qu,
+    Aymara      = ay
+  ) |>
+  arrange(`INE code`) |>
+  knitr::kable(caption = "Municipalities with no article in English, Spanish, Quechua, or Aymara")
+```
+
+---
+
+## Next steps
+
+The deeper analysis of existing English Wikipedia articles — article length,
+citations, infobox completeness, and census data quality — is in
+[`bolivia-municipality-wikipedia.qmd`](bolivia-municipality-wikipedia.qmd),
+with results saved to `data/bolivia_municipality_wikipedia.rds`.
+
+Future work here will:
+
+- Add a table of municipalities missing only in one language, to guide targeted
+  translation campaigns
+- Link article quality metrics (from `bolivia_municipality_wikipedia.rds`) to
+  the coverage maps
+- Track changes over time as new articles are created
