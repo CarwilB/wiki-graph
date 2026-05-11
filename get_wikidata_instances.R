@@ -1,84 +1,61 @@
-# ---- get_wikidata_subclasses -------------------------------------------------
+# ---- resume_get_wikidata_subclasses ------------------------------------------
 
-#' Get All Subclasses of a Wikidata Class
+#' Resume a Partially-Completed get_wikidata_subclasses() Query
 #'
-#' Convenience wrapper for \code{get_wikidata_instances()} that automatically
-#' sets \code{object_type = "subclass"}. Retrieves all subclasses (P279) of a
-#' given class from Wikidata with their labels, descriptions, optional extra
-#' properties, subclass-of statements, and Wikipedia articles.
+#' Convenience wrapper for \code{resume_get_wikidata_instances()} that
+#' automatically sets \code{object_type = "subclass"}. Use this when
+#' \code{get_wikidata_subclasses()} was interrupted part-way through and you
+#' have a partial result. Re-runs the SPARQL query to obtain the full QID list,
+#' skips already-retrieved QIDs, fetches the remainder in batches, then returns
+#' the combined, de-duplicated tibble.
 #'
-#' Items are fetched from the Wikidata API in batches of \code{batch_size}
-#' (default 50, the API maximum) to avoid rate-limiting errors.
+#' @param partial_result A tibble previously returned (or partially returned)
+#'   by \code{get_wikidata_subclasses()}. Must contain a \code{qid} column.
+#' @param class_qid Character. Same value used in the original call.
+#' @param property Character vector. Same value used in the original call.
+#' @param property_names Character vector. Same value used in the original call.
+#' @param country Character. Same value used in the original call.
+#' @param languages Character vector. Same value used in the original call.
+#' @param limit Integer. Default 1000.
+#' @param batch_size Integer. Items per API request (max 50). Default 50.
+#' @param batch_delay Numeric. Seconds between batches. Default 1.
+#' @param numeric_list_properties Character vector. Same value used in the
+#'   original call. Default \code{NULL}.
+#' @param numeric_list_property_names Character vector. Same value used in the
+#'   original call. Default \code{NULL}.
+#' @param entity_props Character. Same value used in the original call.
+#'   Default "labels|descriptions|claims|sitelinks".
 #'
-#' @param class_qid Character. The Wikidata QID of the class (e.g., "Q34770"
-#'   for language)
-#' @param property Character or character vector. Optional property ID(s) to
-#'   retrieve as additional columns (e.g., \code{"P131"} or
-#'   \code{c("P131", "P17")}). Default is \code{NULL}.
-#' @param property_names Character vector. Column names to use for the extra
-#'   properties. Default is \code{NULL} (use property IDs as column names).
-#' @param country Character. Optional Wikidata QID of a country (e.g., "Q750"
-#'   for Bolivia). Default is \code{NULL} (no country filter).
-#' @param languages Character vector. Language codes for labels and descriptions.
-#'   Default is c("en", "es").
-#' @param limit Integer. Maximum number of results to return. Default is 1000.
-#' @param batch_size Integer. Number of items per API request (max 50).
-#'   Default is 50.
-#' @param batch_delay Numeric. Seconds to wait between batches. Default is 1.
-#' @param numeric_list_properties Character vector of property IDs (e.g.,
-#'   \code{"P1082"}) whose values are Wikidata quantity statements that may
-#'   have multiple claims. These must NOT also appear in \code{property}.
-#'   For each property named \code{pname} in \code{numeric_list_property_names},
-#'   the following columns are added:
-#'   \describe{
-#'     \item{pname}{Most recent value (numeric; sorted by P585 year desc).}
-#'     \item{pname_n}{Total number of claims (integer).}
-#'     \item{pname_1 … pname_10}{Individual values (numeric).}
-#'     \item{pname_1_year … pname_10_year}{Year from P585 qualifier (integer).}
-#'     \item{pname_1_ref … pname_10_ref}{Reference URL (P854) or
-#'       \code{"wd:Qxxx"} (P248), or \code{NA} (character).}
-#'   }
-#' @param numeric_list_property_names Character vector. Column name prefixes
-#'   for each entry in \code{numeric_list_properties}. Defaults to the
-#'   property IDs if \code{NULL}.
-#' @param entity_props Character. Pipe-separated list of Wikidata entity props
-#'   to request from \code{wbgetentities} (e.g. "labels|sitelinks"). Default is
-#'   "labels|descriptions|claims|sitelinks".
-#'
-#' @return A tibble with columns:
-#'   - qid
-#'   - label_<lang>, description_<lang> for each language
-#'   - Columns from \code{property} and \code{numeric_list_properties}
-#'   - subclass_of (QIDs of parent classes from P279)
-#'   - wikipedia_articles
+#' @return A tibble with the same columns as \code{get_wikidata_subclasses()},
+#'   containing all items (previously retrieved + newly fetched).
 #'
 #' @examples
-#' # Get all language subclasses
+#' # Start a subclass retrieval
 #' language_types <- get_wikidata_subclasses("Q34770", limit = 500)
 #'
-#' # Get subclasses with additional properties
-#' organism_subclasses <- get_wikidata_subclasses(
-#'   "Q7239",  # organism
-#'   property = c("P31", "P279"),
-#'   property_names = c("instance_of", "parent_class"),
-#'   languages = c("en", "es", "de"),
-#'   limit = 1000
+#' # If interrupted, resume from partial result
+#' language_types_complete <- resume_get_wikidata_subclasses(
+#'   language_types,
+#'   "Q34770",
+#'   limit = 500
 #' )
 #'
 #' @export
-get_wikidata_subclasses <- function(class_qid,
-                                    property                    = NULL,
-                                    property_names              = NULL,
-                                    country                     = NULL,
-                                    languages                   = c("en", "es"),
-                                    limit                       = 1000,
-                                    batch_size                  = 50,
-                                    batch_delay                 = 1,
-                                    numeric_list_properties     = NULL,
-                                    numeric_list_property_names = NULL,
-                                    entity_props                = "labels|descriptions|claims|sitelinks") {
+resume_get_wikidata_subclasses <- function(partial_result,
+                                           class_qid,
+                                           property                    = NULL,
+                                           property_names              = NULL,
+                                           country                     = NULL,
+                                           languages                   = c("en", "es"),
+                                           limit                       = 1000,
+                                           batch_size                  = 50,
+                                           batch_delay                 = 1,
+                                           numeric_list_properties     = NULL,
+                                           numeric_list_property_names = NULL,
+                                           entity_props                = "labels|descriptions|claims|sitelinks") {
 
-  get_wikidata_instances(
+  resume_get_wikidata_instances(
+    partial_result                  = partial_result,
     class_qid                       = class_qid,
     property                        = property,
     property_names                  = property_names,
