@@ -34,7 +34,7 @@ library(purrr)
 library(tidyr)
 
 source("wikidata_presence_matrix.R")
-source("get_wikidata_instances.R")
+source("R/get_wikidata_instances.R")
 
 # ---- 1. ADM2 registry -------------------------------------------------------
 #

@@ -1,6 +1,6 @@
 # Examples and tests for create_quick_statement()
 # Source the main function first
-source("create_quick_statement.R")
+source("R/create_quick_statement.R")
 
 # ============================================================================
 # STRING EXAMPLES

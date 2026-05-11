@@ -33,7 +33,7 @@ library(glue)
 library(knitr)
 
 source("src/wikipedia-tools.R")
-source("get_wikidata_instances.R")
+source("R/get_wikidata_instances.R")
 ```
 
 # 1. Expected municipality page names

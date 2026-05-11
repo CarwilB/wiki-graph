@@ -37,7 +37,7 @@ library(httr)
 library(jsonlite)
 
 source("wikidata_presence_matrix.R")
-source("get_wikidata_instances.R")
+source("R/get_wikidata_instances.R")
 ```
 
 ---

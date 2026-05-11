@@ -19,7 +19,7 @@ The `create_quick_statement()` function creates properly formatted QuickStatemen
 Simply source the function file:
 
 ```r
-source("create_quick_statement.R")
+source("R/create_quick_statement.R")
 ```
 
 ## Basic Usage

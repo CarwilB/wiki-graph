@@ -4,7 +4,7 @@ library(jsonlite)
 library(tidyverse)
 
 source("src/wikipedia-tools.R")
-source("get_wikidata_instances.R")
+source("R/get_wikidata_instances.R")
 
 census_table_2012 <- readRDS("data/census_table_municipios_2012u.rds")
 muni_lookup_ine <- census_table_2012 %>%

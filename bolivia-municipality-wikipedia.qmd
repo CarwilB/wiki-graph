@@ -22,7 +22,7 @@ library(jsonlite)
 library(WikipediR)
 
 source("src/wikipedia-tools.R")
-source("get_wikidata_instances.R")
+source("R/get_wikidata_instances.R")
 ```
 
 # 1. Discover municipality pages from Wikipedia category
