@@ -1,12 +1,13 @@
 ---
 title: "Bolivia CPV 2024: Population QuickStatements for Wikidata"
 format: html
+freeze: true
 ---
 
 ::: callout-note
 ## AI-generated text, click for process details
 
-*This page was generated using the Posit AI plug-in running Claude Sonnet 4.6, operating in my repository wiki-graph, which already contained the functions referenced here. The prompt I used was:*
+*This page was first generated using the Posit AI plug-in running Claude Sonnet 4.6, operating in my repository wiki-graph, which already contained the functions referenced here. The prompt I used was:*
 
 For each of the following tasks, build functions and embed the process in a qmd that explains the needed steps.
 
@@ -16,7 +17,7 @@ We're going to build a new table building off of pop_muni, with qid values added
 
 Each row will drive a series of columns with quickstatements produced by add_quick_statement_column, one for each of the three total population columns. These quickstatements will add a value for P1082 (population) for the corresponding year of the census. All will be sourced to Q139668018.
 
-*The page reflects manual and automated revisions to the code following a debugging process.*
+*The page reflects extensive manual and automated revisions to the code following a debugging process. Several sections below were added by hand.*
 :::
 
 ## Overview
@@ -41,9 +42,9 @@ source("get_wikidata_instances.R")
 
 ```{r load-data}
 muni_id_lookup_table <- readRDS("../ultimate-consequences/data/muni_id_lookup_table.rds")
-pop_muni             <- readRDS("data/poblacion_municipio.rds")
-pop_prov             <- readRDS("data/poblacion_provincia.rds")
-pop_dept             <- readRDS("data/poblacion_departamento.rds")
+pop_muni             <- readRDS("data/cpv2024/poblacion_municipio.rds")
+pop_prov             <- readRDS("data/cpv2024/poblacion_provincia.rds")
+pop_dept             <- readRDS("data/cpv2024/poblacion_departamento.rds")
 ```
 
 ```{r constants}
@@ -193,7 +194,7 @@ cat("Distinct QIDs: ", n_distinct(pop_qs$qid), "\n")
 
 pop_qs |>
   select(departamento, municipio, id_muni, qid,
-         pop_2001_total, pop_2012_total, pop_2024_total) |>
+         pob_2001_total, pob_2012_total, pob_2024_total) |>
   head(10)
 ```
 
@@ -205,12 +206,16 @@ Unlike municipalities, we can map provinces and departments directly via the INE
 - Provinces: 4-digit INE code (`DEP` + `PRO`), matching `cod.prov`.
 
 ```{r fetch-wd-departments-provinces}
-departments_wd <- get_wikidata_instances(
-  DEPARTMENT_CLASS_QID,
-  property       = "P14142",
-  property_names = "ine_code",
-  country        = BOLIVIA_QID
-)
+# departments_wd <- get_wikidata_instances(
+#   DEPARTMENT_CLASS_QID,
+#   property       = "P14142",
+#   property_names = "ine_code",
+#   country        = BOLIVIA_QID,
+#   numeric_list_properties      = "P1082",
+#   numeric_list_property_names  = "population"
+# )
+
+departments_wd <- readRDS("data/wikiadata-bo-departments.RDS")
 
 department_ine_lookup <- departments_wd |> 
                            filter(!is.na(ine_code)) |> 
@@ -219,21 +224,62 @@ department_ine_lookup <- departments_wd |>
                            select(ine_code, department, dep_qid) |> 
                            arrange(ine_code)
 
-provinces_wd <- get_wikidata_instances(
-  PROVINCE_CLASS_QID,
-  property       = "P14142",
-  property_names = "ine_code",
-  country        = BOLIVIA_QID
-)
 
-provinces_wd <- provinces_wd |> 
-  mutate(dep_ine = str_sub(ine_code, 1, 2)) |>
-  left_join(department_ine_lookup, by=join_by(dep_ine == ine_code))
+
+# provinces_wd <- get_wikidata_instances(
+#   PROVINCE_CLASS_QID,
+#   property = c("P131", "P17", "P14142"),
+#   property_names = c("located_in", "country", "ine_code"),
+#   numeric_list_properties      = "P1082",
+#   numeric_list_property_names  = "population"
+# )
+# 
+# provinces_wd <- provinces_wd |> 
+#   mutate(dep_ine = str_sub(ine_code, 1, 2)) |>
+#   left_join(department_ine_lookup, by=join_by(dep_ine == ine_code))
+
+provinces_wd <- readRDS("data/wikiadata-bo-provinces.RDS")
 
 cat("Department items retrieved:", nrow(departments_wd), "\n")
 cat("Departments with INE code: ", sum(!is.na(departments_wd$ine_code)), "\n")
 cat("Province items retrieved:  ", nrow(provinces_wd), "\n")
 cat("Provinces with INE code:   ", sum(!is.na(provinces_wd$ine_code)), "\n")
+```
+
+Wikidata already has some values for population. Let's examine them. All nine departments have two values for population. Most provinces have no population data.
+
+```{r existing-population-data}
+departments_wd <- departments_wd |> filter(!is.na(ine_code)) # filter out Litoral
+     # One Bolivian department has not been controlled by Bolivia since the 19th century
+     # It has no INE code.
+
+departments_wd |> count(population_n) 
+
+provinces_wd |> count(population_n)
+
+departments_wd |> 
+  select(qid, label_en, ine_code, population_1, population_1_year, population_1_ref,
+         population_2, population_2_year, population_2_ref)
+
+provinces_wd |> filter(population_n > 0) |> 
+  select(qid, label_en, ine_code, population_1, population_1_year, 
+                                  population_2, population_2_year)
+
+province_pop_qids <- provinces_wd |> filter(population_n > 0) |> pull(qid)
+
+```
+
+Looking at the results we see our task: We will have to double-check departmental population values against our new sources and add infromation for 2001. We can clear the five undated data points for province populations.
+
+```{r remove province-population-data}
+qids_to_clear <- province_pop_qids
+removals_prov <- make_p1082_removals(provinces_wd, qids_to_clear)
+```
+
+Copy the lines below into QuickStatements batch mode and run them **before** proceeding to Step 4.
+
+```{r print-removals-2}
+writeLines(removals_prov$removal_statement)
 ```
 
 ## Step 5: Build province/department population tables via INE codes
@@ -246,23 +292,6 @@ The CPV 2024 population extracts already include department/province names. We a
 
 Note: Wikidata province labels are not perfectly standardized (e.g. multiple "Cercado" provinces). We therefore match primarily by INE code (P14142). Where that is missing, we fall back to a conservative name+department join and report unmatched rows.
 
-```{r fn-normalize-ine-code}
-# Ensure INE codes are treated as fixed-width strings for joining.
-normalize_ine_code <- function(x, width) {
-  x_chr <- as.character(x)
-  x_chr <- str_trim(x_chr)
-  x_chr[x_chr == ""] <- NA_character_
-  str_pad(x_chr, width = width, side = "left", pad = "0")
-}
-```
-
-```{r prep-wd-ine-codes}
-departments_wd <- departments_wd |>
-  mutate(ine_code = normalize_ine_code(ine_code, 2))
-
-provinces_wd <- provinces_wd |>
-  mutate(ine_code = normalize_ine_code(ine_code, 4))
-```
 
 ```{r build-dept-pop-table}
 # pop_dept has one row per department; create dept INE code = 2 digits.
@@ -282,13 +311,13 @@ wd_dept_name <- departments_wd |>
       str_replace("Potosí", "Potosi")
   )
 
+# pop_dept_qs <- pop_dept |>
+#   left_join(wd_dept_name, join_by(id_dep==ine_code)) |> 
+#   relocate(id_dep, departamento, qid)
+
 pop_dept_qs <- pop_dept |>
-  mutate(
-    dept_name = departamento |>
-      str_trim() |>
-      str_replace("Potosí", "Potosi")
-  ) |>
-  left_join(wd_dept_name, by = "dept_name")
+  left_join(departments_wd, join_by(id_dep==ine_code)) |> 
+  relocate(id_dep, departamento, qid)
 
 unmatched <- pop_dept_qs |> filter(is.na(qid))
 if (nrow(unmatched) > 0) {
@@ -331,6 +360,10 @@ pop_prov_qs <- pop_prov |>
   left_join(wd_prov_lookup |> select(qid, province, department, ine_code),
             by = c("province" = "province", "department" = "department"))
 
+pop_prov_qs <- pop_prov |>
+  left_join(provinces_wd, join_by(ine_code)) |> 
+  relocate(ine_code, provincia, qid)
+
 unmatched_prov <- pop_prov_qs |> filter(is.na(qid))
 if (nrow(unmatched_prov) > 0) {
   message(nrow(unmatched_prov), " province row(s) had no QID match and will be dropped (inspect manually):")
@@ -340,7 +373,50 @@ if (nrow(unmatched_prov) > 0) {
 pop_prov_qs <- pop_prov_qs |> filter(!is.na(qid))
 ```
 
-## Step 6: Generate P1082 QuickStatements (municipalities, provinces, departments)
+## Step 6: Compare existing and new population data in departments
+
+Looking at the existing population data on Wikidata for departments, we see the 
+most recent year is 2024 (the census year) for all nine. The one older year
+is 2012 for seven departments. These are the values that might match up.
+
+```{r compare-dept-population}
+pop_dept_qs |> 
+  count(population_1_year)
+pop_dept_qs |> 
+  count(population_2_year)
+
+pop_dept_qs |> 
+  filter(population_1_year == 2024) |>
+  select(1:3, pob_2024_total, population_1, population_1_year, population_1_ref) |>
+  mutate(match = pob_2024_total == population_1)  |> 
+  relocate(match, .after = qid)
+
+pop_dept_qs |> 
+  filter(population_2_year == 2012) |>
+  select(1:3, pob_2012_total, population_2, population_2_year, population_2_ref) |> 
+  mutate(match = pob_2012_total == population_2) |> 
+  relocate(match, .after = qid)
+
+pop_dept_qs |> 
+  filter(population_2_year != 2012) |>
+  select(1:3,  population_2, population_2_year, population_2_ref) 
+```
+The 2024 data are close, but unequal in all values. These values were initial releases by the Census and we will delete them to update them.
+
+The 2012 data match in two cases, but none of theme are cited. We'll delete all of these as well and replace them all with new, cited information.
+
+Finally, we have two data points, without source, for 2016 and 2020. Since we are adding authoritative numbers for 2012 and 2024, we will delete these as well to avoid confusion.
+
+Copy the lines below into QuickStatements batch mode and run them **before** proceeding to Step 7.
+
+```{r make-dept-removals}
+qids_to_clear <- departments_wd$qid
+removals_dep <- make_p1082_removals(departments_wd, qids_to_clear)
+writeLines(removals_dep$removal_statement)
+```
+
+
+## Step 7: Generate P1082 QuickStatements (municipalities, provinces, departments)
 
 One QuickStatements column per census year is produced using `add_quick_statement_column_q()`.
 
@@ -361,21 +437,21 @@ add_quick_statement_column_q <- function(dataframe, qid_col, property, value_col
 ```{r generate-qs-muni}
 pop_qs_with_statements_muni <- pop_qs |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2001_total,
+    qid, "P1082", pob_2001_total,
     qualifiers    = list(P585 = p585_for_year(2001)),
     type          = "quantity",
     reference_qid = SOURCE_QID
   ) |>
   rename(qs_2001 = quick_statement) |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2012_total,
+    qid, "P1082", pob_2012_total,
     qualifiers    = list(P585 = p585_for_year(2012)),
     type          = "quantity",
     reference_qid = SOURCE_QID
   ) |>
   rename(qs_2012 = quick_statement) |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2024_total,
+    qid, "P1082", pob_2024_total,
     qualifiers    = list(P585 = p585_for_year(2024)),
     type          = "quantity",
     reference_qid = SOURCE_QID
@@ -386,21 +462,21 @@ pop_qs_with_statements_muni <- pop_qs |>
 ```{r generate-qs-dept}
 pop_qs_with_statements_dept <- pop_dept_qs |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2001_total,
+    qid, "P1082", pob_2001_total,
     qualifiers    = list(P585 = p585_for_year(2001)),
     type          = "quantity",
     reference_qid = SOURCE_QID
   ) |>
   rename(qs_2001 = quick_statement) |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2012_total,
+    qid, "P1082", pob_2012_total,
     qualifiers    = list(P585 = p585_for_year(2012)),
     type          = "quantity",
     reference_qid = SOURCE_QID
   ) |>
   rename(qs_2012 = quick_statement) |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2024_total,
+    qid, "P1082", pob_2024_total,
     qualifiers    = list(P585 = p585_for_year(2024)),
     type          = "quantity",
     reference_qid = SOURCE_QID
@@ -411,21 +487,21 @@ pop_qs_with_statements_dept <- pop_dept_qs |>
 ```{r generate-qs-province}
 pop_qs_with_statements_prov <- pop_prov_qs |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2001_total,
+    qid, "P1082", pob_2001_total,
     qualifiers    = list(P585 = p585_for_year(2001)),
     type          = "quantity",
     reference_qid = SOURCE_QID
   ) |>
   rename(qs_2001 = quick_statement) |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2012_total,
+    qid, "P1082", pob_2012_total,
     qualifiers    = list(P585 = p585_for_year(2012)),
     type          = "quantity",
     reference_qid = SOURCE_QID
   ) |>
   rename(qs_2012 = quick_statement) |>
   add_quick_statement_column_q(
-    qid, "P1082", pop_2024_total,
+    qid, "P1082", pob_2024_total,
     qualifiers    = list(P585 = p585_for_year(2024)),
     type          = "quantity",
     reference_qid = SOURCE_QID
@@ -434,8 +510,14 @@ pop_qs_with_statements_prov <- pop_prov_qs |>
 ```
 
 ```{r stack-statements}
-all_statements <- bind_rows(
-  pop_qs_with_statements_muni |> select(qid, qs_2001, qs_2012, qs_2024),
+muni_statements <- 
+  pop_qs_with_statements_muni |> select(qid, qs_2001, qs_2012, qs_2024) |>
+  distinct() |>
+  arrange(qid) |>
+  pivot_longer(cols = starts_with("qs_"), values_to = "statement") |>
+  pull(statement)
+
+other_statements <- bind_rows(
   pop_qs_with_statements_prov |> select(qid, qs_2001, qs_2012, qs_2024),
   pop_qs_with_statements_dept |> select(qid, qs_2001, qs_2012, qs_2024)
 ) |>
@@ -444,7 +526,7 @@ all_statements <- bind_rows(
   pivot_longer(cols = starts_with("qs_"), values_to = "statement") |>
   pull(statement)
 
-cat("Total QuickStatements lines:", length(all_statements), "\n")
+cat("Total QuickStatements lines:", length(muni_statements)+length(other_statements), "\n")
 ```
 
 ## Step 7: Review and export
@@ -452,21 +534,26 @@ cat("Total QuickStatements lines:", length(all_statements), "\n")
 Preview the first 15 lines to sanity-check the format before upload.
 
 ```{r preview-statements}
-writeLines(head(all_statements, 15))
+writeLines(head(other_statements, 15))
 ```
 
 Export to a plain-text file for pasting into the QuickStatements batch interface at <https://qs-dev.toolforge.org/>.
 
 ```{r export}
 #| eval: false
-writeLines(all_statements, "data/cpv2024_population_quickstatements.txt")
-cat("Written to data/cpv2024_population_quickstatements.txt\n")
+# writeLines(all_statements, "data/cpv2024_population_quickstatements.txt")
+writeLines(muni_statements, "data/cpv2024_population_quickstatements_municipalities.txt")
+writeLines(other_statements, "data/cpv2024_population_quickstatements_dept_prov.txt")
+
+# cat("Written to data/cpv2024_population_quickstatements.txt\n")
+cat("Written municipality statements to data/cpv2024_population_quickstatements_municipalities.txt\n")
+cat("Written department/province statements to data/cpv2024_population_quickstatements_dept_prov.txt\n")
 ```
 
 The expected format of each line is:
 
 ```         
-QID | P1082 | <count> | qal585 | +YYYY-01-01T00:00:00Z/9 | S248 | Q139668018 | S813 | +YYYY-MM-DDT00:00:00Z/11
+QID | P1082 | <count> | P585 | +YYYY-01-01T00:00:00Z/9 | S248 | Q139668018 | S813 | +YYYY-MM-DDT00:00:00Z/11
 ```
 
 Run the removal batch (Step 2) first, then submit the export file.
