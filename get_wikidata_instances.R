@@ -204,6 +204,40 @@ add_wikidata_property <- function(df, property, name = property) {
   out
 }
 
+# ---- .extract_instance_or_subclass ------------------------------------------
+# Internal helper: extract all P31 (instance of) or P279 (subclass of) statements
+# from a single entity, returning a character vector of QIDs.
+
+.extract_instance_or_subclass <- function(entity, property_id = "P31") {
+  if ("claims" %in% names(entity) && property_id %in% names(entity$claims)) {
+    p_df <- entity$claims[[property_id]]
+    if (nrow(p_df) > 0) {
+      map_chr(seq_len(nrow(p_df)), function(i) {
+        p_df$mainsnak[i, ]$datavalue[[1]]$id
+      })
+    } else character(0)
+  } else character(0)
+}
+
+# ---- .build_sparql_query ------------------------------------------------
+# Internal helper: build a SPARQL query to retrieve items that are instances
+# (P31) or subclasses (P279) of a given class.
+
+.build_sparql_query <- function(class_qid, country = NULL, property_id = "P31", limit = 1000) {
+  if (!property_id %in% c("P31", "P279")) {
+    stop("property_id must be 'P31' (instance of) or 'P279' (subclass of)")
+  }
+
+  country_triple <- if (!is.null(country)) {
+    sprintf("  ?item wdt:P17 wd:%s .\n", country)
+  } else ""
+
+  sprintf(
+    'SELECT DISTINCT ?item WHERE {\n  ?item wdt:%s wd:%s .\n%s}\nLIMIT %d\n',
+    property_id, class_qid, country_triple, limit
+  )
+}
+
 # ---- .parse_entity -----------------------------------------------------------
 # Internal helper: parse a single Wikidata entity object into a named list
 # suitable for bind_rows(). Used by get_wikidata_instances() and
@@ -211,7 +245,8 @@ add_wikidata_property <- function(df, property, name = property) {
 
 .parse_entity <- function(entity, qid, property, property_names, languages,
                            numeric_list_properties     = NULL,
-                           numeric_list_property_names = NULL) {
+                           numeric_list_property_names = NULL,
+                           object_type                 = "instance") {
 
   # Extract labels
   labels_list <- map(languages, function(lang) {
@@ -271,15 +306,10 @@ add_wikidata_property <- function(df, property, name = property) {
     result
   } else list()
 
-  # Extract all P31 (instance of) statements
-  instance_of <- if ("claims" %in% names(entity) && "P31" %in% names(entity$claims)) {
-    p31_df <- entity$claims$P31
-    if (nrow(p31_df) > 0) {
-      map_chr(seq_len(nrow(p31_df)), function(i) {
-        p31_df$mainsnak[i, ]$datavalue[[1]]$id
-      })
-    } else character(0)
-  } else character(0)
+  # Extract P31 (instance of) or P279 (subclass of) statements
+  property_id <- if (object_type == "instance") "P31" else "P279"
+  column_name <- if (object_type == "instance") "instance_of" else "subclass_of"
+  hierarchy_vals <- .extract_instance_or_subclass(entity, property_id)
 
   # Extract Wikipedia sitelinks
   wiki_articles <- if (!is.null(entity$sitelinks) && length(entity$sitelinks) > 0) {
@@ -294,17 +324,18 @@ add_wikidata_property <- function(df, property, name = property) {
     articles[!is.na(articles)]
   } else character(0)
 
-  c(
+  # Build the output list dynamically
+  out <- c(
     list(qid = qid),
     labels_list,
     descriptions_list,
     extra_props,
     numeric_list_cols,
-    list(
-      instance_of        = list(instance_of),
-      wikipedia_articles = list(wiki_articles)
-    )
+    setNames(list(list(hierarchy_vals)), column_name),
+    list(wikipedia_articles = list(wiki_articles))
   )
+
+  out
 }
 
 # ---- .fetch_qids_in_batches --------------------------------------------------
@@ -316,7 +347,8 @@ add_wikidata_property <- function(df, property, name = property) {
                                    batch_size = 20, batch_delay = 1,
                                    numeric_list_properties     = NULL,
                                    numeric_list_property_names = NULL,
-                                   entity_props               = "labels|descriptions|claims|sitelinks") {
+                                   entity_props               = "labels|descriptions|claims|sitelinks",
+                                   object_type                = "instance") {
 
   batches    <- split(qids, ceiling(seq_along(qids) / batch_size))
   n_batches  <- length(batches)
@@ -364,7 +396,8 @@ add_wikidata_property <- function(df, property, name = property) {
         } else {
           all_parsed[[idx]] <- tryCatch(
             .parse_entity(entity, qid, property, property_names, languages,
-                          numeric_list_properties, numeric_list_property_names),
+                          numeric_list_properties, numeric_list_property_names,
+                          object_type),
             error = function(e) {
               message("  Error parsing ", qid, ": ", e$message)
               NULL
@@ -391,15 +424,8 @@ add_wikidata_property <- function(df, property, name = property) {
 # ---- .sparql_get_qids --------------------------------------------------------
 # Internal helper: run the SPARQL query and return a character vector of QIDs.
 
-.sparql_get_qids <- function(class_qid, country, limit) {
-  country_triple <- if (!is.null(country)) {
-    sprintf("  ?item wdt:P17 wd:%s .\n", country)
-  } else ""
-
-  sparql_query <- sprintf(
-    'SELECT DISTINCT ?item WHERE {\n  ?item wdt:P31 wd:%s .\n%s}\nLIMIT %d\n',
-    class_qid, country_triple, limit
-  )
+.sparql_get_qids <- function(class_qid, country, limit, property_id = "P31") {
+  sparql_query <- .build_sparql_query(class_qid, country, property_id, limit)
 
   response <- GET(
     url   = "https://query.wikidata.org/sparql",
@@ -424,9 +450,9 @@ add_wikidata_property <- function(df, property, name = property) {
 
 #' Get All Instances of a Wikidata Class
 #'
-#' Retrieves all instances (P31) of a given class from Wikidata with their
-#' labels, descriptions, optional extra properties, instance-of statements,
-#' and Wikipedia articles.
+#' Retrieves all instances (P31) or subclasses (P279) of a given class from
+#' Wikidata with their labels, descriptions, optional extra properties,
+#' instance-of/subclass-of statements, and Wikipedia articles.
 #'
 #' Items are fetched from the Wikidata API in batches of \code{batch_size}
 #' (default 50, the API maximum) to avoid rate-limiting errors.
@@ -464,8 +490,16 @@ add_wikidata_property <- function(df, property, name = property) {
 #' @param entity_props Character. Pipe-separated list of Wikidata entity props
 #'   to request from \code{wbgetentities} (e.g. "labels|sitelinks"). Default is
 #'   "labels|descriptions|claims|sitelinks".
+#' @param object_type Character. Either "instance" (default) to retrieve items
+#'   where P31 (instance of) equals \code{class_qid}, or "subclass" to retrieve
+#'   items where P279 (subclass of) equals \code{class_qid}.
 #'
-#' @return A tibble with columns as described above.
+#' @return A tibble with columns:
+#'   - qid
+#'   - label_<lang>, description_<lang> for each language
+#'   - Columns from \code{property} and \code{numeric_list_properties}
+#'   - instance_of (if object_type="instance") or subclass_of (if object_type="subclass")
+#'   - wikipedia_articles
 #'
 #' @examples
 #' get_wikidata_instances("Q250050", languages = c("en", "es"))
@@ -478,6 +512,9 @@ add_wikidata_property <- function(df, property, name = property) {
 #'   numeric_list_property_names = "population"
 #' )
 #'
+#' # Retrieve subclasses instead of instances
+#' get_wikidata_instances("Q34770", object_type = "subclass")
+#'
 #' @export
 get_wikidata_instances <- function(class_qid,
                                    property                    = NULL,
@@ -489,7 +526,13 @@ get_wikidata_instances <- function(class_qid,
                                    batch_delay                 = 1,
                                    numeric_list_properties     = NULL,
                                    numeric_list_property_names = NULL,
-                                   entity_props                = "labels|descriptions|claims|sitelinks") {
+                                   entity_props                = "labels|descriptions|claims|sitelinks",
+                                   object_type                 = "instance") {
+
+  # Validate object_type
+  if (!object_type %in% c("instance", "subclass")) {
+    stop('object_type must be "instance" or "subclass"')
+  }
 
   # Resolve column names for regular extra properties
   if (!is.null(property)) {
@@ -536,22 +579,27 @@ get_wikidata_instances <- function(class_qid,
     stop("numeric_list_properties requires entity_props to include 'claims'.")
   }
 
+  # Determine property ID and message suffix
+  property_id <- if (object_type == "instance") "P31" else "P279"
+  type_label <- if (object_type == "instance") "instances" else "subclasses"
+
   # Step 1: SPARQL — get all QIDs
-  qids <- .sparql_get_qids(class_qid, country, limit)
+  qids <- .sparql_get_qids(class_qid, country, limit, property_id)
 
   if (length(qids) == 0) {
-    message("No instances found for ", class_qid)
+    message("No ", type_label, " found for ", class_qid)
     return(tibble())
   }
 
-  message("Found ", length(qids), " instances. Retrieving details in batches of ",
+  message("Found ", length(qids), " ", type_label, ". Retrieving details in batches of ",
           batch_size, "...")
 
   # Step 2: fetch in batches
   items_data <- .fetch_qids_in_batches(
     qids, property, property_names, languages, batch_size, batch_delay,
     numeric_list_properties, numeric_list_property_names,
-    entity_props = entity_props
+    entity_props = entity_props,
+    object_type = object_type
   )
 
   # Convert to tibble and simplify single-value list columns
@@ -586,6 +634,8 @@ get_wikidata_instances <- function(class_qid,
 #'   original call. Default \code{NULL}.
 #' @param entity_props Character. Same value used in the original call.
 #'   Default "labels|descriptions|claims|sitelinks".
+#' @param object_type Character. Either "instance" or "subclass". Default
+#'   "instance". Must match the original call.
 #'
 #' @return A tibble with the same columns as \code{get_wikidata_instances()},
 #'   containing all items (previously retrieved + newly fetched).
@@ -611,12 +661,15 @@ resume_get_wikidata_instances <- function(partial_result,
                                           batch_delay                 = 1,
                                           numeric_list_properties     = NULL,
                                           numeric_list_property_names = NULL,
-                                          entity_props                = "labels|descriptions|claims|sitelinks") {
+                                          entity_props                = "labels|descriptions|claims|sitelinks",
+                                          object_type                 = "instance") {
 
   if (!"qid" %in% names(partial_result))
     stop("partial_result must contain a 'qid' column")
   if (!grepl("^Q\\d+$", class_qid))
     stop("class_qid must be in format 'Q123'")
+  if (!object_type %in% c("instance", "subclass"))
+    stop('object_type must be "instance" or "subclass"')
   batch_size <- min(as.integer(batch_size), 50L)
 
   # Resolve property names
@@ -651,12 +704,16 @@ resume_get_wikidata_instances <- function(partial_result,
     stop("numeric_list_properties requires entity_props to include 'claims'.")
   }
 
+  # Determine property ID
+  property_id <- if (object_type == "instance") "P31" else "P279"
+  type_label <- if (object_type == "instance") "instances" else "subclasses"
+
   # Step 1: re-run SPARQL to get the complete QID list
   message("Re-running SPARQL query for ", class_qid, "...")
-  all_qids <- .sparql_get_qids(class_qid, country, limit)
+  all_qids <- .sparql_get_qids(class_qid, country, limit, property_id)
 
   if (length(all_qids) == 0) {
-    message("No instances found for ", class_qid)
+    message("No ", type_label, " found for ", class_qid)
     return(partial_result)
   }
 
@@ -678,7 +735,8 @@ resume_get_wikidata_instances <- function(partial_result,
   new_items <- .fetch_qids_in_batches(
     remaining, property, property_names, languages, batch_size, batch_delay,
     numeric_list_properties, numeric_list_property_names,
-    entity_props = entity_props
+    entity_props = entity_props,
+    object_type = object_type
   )
 
   # Simplify each half before binding so column types match
