@@ -868,8 +868,6 @@ cel_urbrur <- albo_vars |>
   filter(!is.na(urbrur_label), !is.na(cel)) |>
   count(urbrur_label, cel) |>
   mutate(cel_chr = as.character(cel))
-
-guage YOu 
 ```
 
 ### CEL by age group: diverging bar chart (counts)

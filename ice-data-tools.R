@@ -65,53 +65,53 @@ column_types %>%
 
 
 #leftover data handling code
-mutate(
-  # 3. Handle the Mixed Date/Text Column
-  #    First, extract the "Scheduled" text into a new column
-  scheduled_inspection =if ("inspections_last_inspection_end_date" %in% names(.) &&
-                            is.character(.data$inspections_last_inspection_end_date)) {
-    case_when(
-      !str_detect(inspections_last_inspection_end_date, "^[0-9]+$") ~ inspections_last_inspection_end_date,
-      TRUE ~ NA_character_
-    )
-  },
-  #    Then, convert the Excel serial numbers (e.g., "45321") to Date objects
-  #    Non-numeric strings (like "Scheduled FY27") become NA here
-  across(
-    matches("^inspections.*date") & where(is.character),
-    ~ case_when(
-      str_detect(., "^[0-9]+$") ~
-        as.Date(as.numeric(.), origin = "1899-12-30"),
-      TRUE ~ as.Date(NA)
-    )
-  )
-
-  ## --
-
-  # Quick check for non-numeric values in inspections_guaranteed_minimum
-  map_dfr(facilities_data_list, ~ {
-    if ("inspections_guaranteed_minimum" %in% names(.x)) {
-      col_values <- .x$inspections_guaranteed_minimum
-      non_numeric <- col_values[is.na(suppressWarnings(as.numeric(col_values))) & !is.na(col_values)]
-
-      if (length(non_numeric) > 0) {
-        tibble(
-          tibble_name = deparse(substitute(.x)),
-          non_numeric_values = unique(non_numeric),
-          count = map_int(unique(non_numeric), ~ sum(col_values == .x, na.rm = TRUE))
-        )
-      } else {
-        tibble(
-          tibble_name = deparse(substitute(.x)),
-          non_numeric_values = "All values are numeric or NA",
-          count = 0L
-        )
-      }
-    } else {
-      tibble(
-        tibble_name = deparse(substitute(.x)),
-        non_numeric_values = "Column not found",
-        count = 0L
-      )
-    }
-  }, .id = "list_index")
+# mutate(
+#   # 3. Handle the Mixed Date/Text Column
+#   #    First, extract the "Scheduled" text into a new column
+#   scheduled_inspection =if ("inspections_last_inspection_end_date" %in% names(.) &&
+#                             is.character(.data$inspections_last_inspection_end_date)) {
+#     case_when(
+#       !str_detect(inspections_last_inspection_end_date, "^[0-9]+$") ~ inspections_last_inspection_end_date,
+#       TRUE ~ NA_character_
+#     )
+#   },
+#   #    Then, convert the Excel serial numbers (e.g., "45321") to Date objects
+#   #    Non-numeric strings (like "Scheduled FY27") become NA here
+#   across(
+#     matches("^inspections.*date") & where(is.character),
+#     ~ case_when(
+#       str_detect(., "^[0-9]+$") ~
+#         as.Date(as.numeric(.), origin = "1899-12-30"),
+#       TRUE ~ as.Date(NA)
+#     )
+#   )
+#
+#   ## --
+#
+#   # Quick check for non-numeric values in inspections_guaranteed_minimum
+#   map_dfr(facilities_data_list, ~ {
+#     if ("inspections_guaranteed_minimum" %in% names(.x)) {
+#       col_values <- .x$inspections_guaranteed_minimum
+#       non_numeric <- col_values[is.na(suppressWarnings(as.numeric(col_values))) & !is.na(col_values)]
+#
+#       if (length(non_numeric) > 0) {
+#         tibble(
+#           tibble_name = deparse(substitute(.x)),
+#           non_numeric_values = unique(non_numeric),
+#           count = map_int(unique(non_numeric), ~ sum(col_values == .x, na.rm = TRUE))
+#         )
+#       } else {
+#         tibble(
+#           tibble_name = deparse(substitute(.x)),
+#           non_numeric_values = "All values are numeric or NA",
+#           count = 0L
+#         )
+#       }
+#     } else {
+#       tibble(
+#         tibble_name = deparse(substitute(.x)),
+#         non_numeric_values = "Column not found",
+#         count = 0L
+#       )
+#     }
+#   }, .id = "list_index")

@@ -103,28 +103,27 @@ cuadro39 <- read_csv(
 # cuadro39
 
 
-# Save as both RDS and CSV
-saveRDS(cuadro39, "../bolivia-data/Censo 2024/cuadro39_idioma_mayor_uso.rds")
-write_csv(cuadro39, "../bolivia-data/Censo 2024/cuadro39_idioma_mayor_uso.csv")
-cat("Saved. Rows:", nrow(cuadro39), "\n")
-print(cuadro39, n = Inf)
-
-
-base_path <- "data/"
-
-tail_rows <- cuadro39[82:83, ]
-
+# # Save as both RDS and CSV
+# saveRDS(cuadro39, "../bolivia-data/Censo 2024/cuadro39_idioma_mayor_uso.rds")
+# write_csv(cuadro39, "../bolivia-data/Censo 2024/cuadro39_idioma_mayor_uso.csv")
+# cat("Saved. Rows:", nrow(cuadro39), "\n")
+# print(cuadro39, n = Inf)
+#
+#
+# base_path <- "data/"
+#
+# tail_rows <- cuadro39[82:83, ]
+#
 cuadro39_nacional <- bind_rows(cuadro39[1:42, ], tail_rows)
 cuadro39_extranjero <- bind_rows(cuadro39[c(1, 43:81), ], tail_rows)
+#
+# saveRDS(cuadro39_nacional,   paste0(base_path, "cuadro39_nacional.rds"))
+# saveRDS(cuadro39_extranjero, paste0(base_path, "cuadro39_extranjero.rds"))
+# write_csv(cuadro39_nacional,   paste0(base_path, "cuadro39_nacional.csv"))
+# write_csv(cuadro39_extranjero, paste0(base_path, "cuadro39_extranjero.csv"))
+#
+# cat("cuadro39_nacional:   ", nrow(cuadro39_nacional),   "rows\n")
+# cat("cuadro39_extranjero: ", nrow(cuadro39_extranjero), "rows\n")
+#
+# get_wikidata_instances("Q34770", country = "Q750") -> langs_bo_wikidata
 
-saveRDS(cuadro39_nacional,   paste0(base_path, "cuadro39_nacional.rds"))
-saveRDS(cuadro39_extranjero, paste0(base_path, "cuadro39_extranjero.rds"))
-write_csv(cuadro39_nacional,   paste0(base_path, "cuadro39_nacional.csv"))
-write_csv(cuadro39_extranjero, paste0(base_path, "cuadro39_extranjero.csv"))
-
-cat("cuadro39_nacional:   ", nrow(cuadro39_nacional),   "rows\n")
-cat("cuadro39_extranjero: ", nrow(cuadro39_extranjero), "rows\n")
-
-get_wikidata_instances("Q34770", country = "Q750") -> langs_bo_wikidata
-
-source(here::here(""))
