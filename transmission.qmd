@@ -23,7 +23,7 @@ library(plotly)
 
 source("cel_helpers.R")   # loads muni_lookup, idioma_cats, etc.
 
-DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+DATA_DIR <- "../bolivia-data/censo_2024/base_datos_csv_2024"
 
 aymara_transmission_clean  <- readRDS("data/aymara_transmission_by_muni.rds")
 quechua_transmission_clean <- readRDS("data/quechua_transmission_by_muni.rds")

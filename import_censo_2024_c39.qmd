@@ -25,7 +25,7 @@ Source: pp. 138–140 of *RESULTADOS BOLIVIA_CENSO_2024_WEB.pdf*.
 #| label: setup
 library(tidyverse)
 
-CENSO_DIR <- "../bolivia-data/Censo 2024"
+CENSO_DIR <- "../bolivia-data/censo_2024"
 DATA_DIR  <- "data"
 ```
 

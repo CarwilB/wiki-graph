@@ -104,8 +104,8 @@ cuadro39 <- read_csv(
 
 
 # # Save as both RDS and CSV
-# saveRDS(cuadro39, "../bolivia-data/Censo 2024/cuadro39_idioma_mayor_uso.rds")
-# write_csv(cuadro39, "../bolivia-data/Censo 2024/cuadro39_idioma_mayor_uso.csv")
+# saveRDS(cuadro39, "../bolivia-data/censo_2024/cuadro39_idioma_mayor_uso.rds")
+# write_csv(cuadro39, "../bolivia-data/censo_2024/cuadro39_idioma_mayor_uso.csv")
 # cat("Saved. Rows:", nrow(cuadro39), "\n")
 # print(cuadro39, n = Inf)
 #

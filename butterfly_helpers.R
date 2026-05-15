@@ -543,8 +543,8 @@ make_butterfly <- function(
 #' @keywords internal
 make_municipality_butterflies <- function(
     geo_code,
-    persona_path = "../bolivia-data/Censo 2024/base_datos_csv_2024/Persona_CPV-2024.csv",
-    vivienda_path = "../bolivia-data/Censo 2024/base_datos_csv_2024/Vivienda_CPV-2024.csv",
+    persona_path = "../bolivia-data/censo_2024/base_datos_csv_2024/Persona_CPV-2024.csv",
+    vivienda_path = "../bolivia-data/censo_2024/base_datos_csv_2024/Vivienda_CPV-2024.csv",
     idioma_cats = NULL,
     min_speakers = 100
 ) {

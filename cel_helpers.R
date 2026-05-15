@@ -155,8 +155,8 @@ read_census_geo <- function(
     geo_codes,
     urban_rural = NULL,
     extra_cols = character(),
-    persona_path = "../bolivia-data/Censo 2024/base_datos_csv_2024/Persona_CPV-2024.csv",
-    vivienda_path = "../bolivia-data/Censo 2024/base_datos_csv_2024/Vivienda_CPV-2024.csv"
+    persona_path = "../bolivia-data/censo_2024/base_datos_csv_2024/Persona_CPV-2024.csv",
+    vivienda_path = "../bolivia-data/censo_2024/base_datos_csv_2024/Vivienda_CPV-2024.csv"
 ) {
   geo_codes <- as.character(geo_codes)
   geo_codes <- ifelse(nchar(geo_codes) == 1, paste0("0", geo_codes), geo_codes)

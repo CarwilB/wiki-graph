@@ -15,7 +15,7 @@ library(patchwork)
 library(scales)
 
 # ── Paths ──
-DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+DATA_DIR <- "../bolivia-data/censo_2024/base_datos_csv_2024"
 PERSONA_PATH <- file.path(DATA_DIR, "Persona_CPV-2024.csv")
 VIVIENDA_PATH <- file.path(DATA_DIR, "Vivienda_CPV-2024.csv")
 

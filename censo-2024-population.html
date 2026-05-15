@@ -126,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Within each geographic level, rows come in triples: the entity total (area = entity name), then “Urbana”, then “Rural”.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"../bolivia-data/Censo 2024/POBLACION.xlsx"</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"../bolivia-data/censo_2024/POBLACION.xlsx"</span>,</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">sheet     =</span> <span class="st">"1"</span>,</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_names =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">skip      =</span> <span class="dv">8</span>   <span class="co"># rows 1–8: title, three header rows, blank separator</span></span>
@@ -313,7 +313,7 @@ de Estadística'</code></pre>
 </ul>
 <p>Data begins at row 7. Footnote rows at the bottom of the sheet (with long <code>nivel</code> strings) are removed during cleaning.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>auto_path <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/Censo 2024/AUTOIDENTIFICACION.xlsx"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>auto_path <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/censo_2024/AUTOIDENTIFICACION.xlsx"</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Row 6 of the sheet holds the 133 ethnic-group names; those become the trailing</span></span>
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># column names. Read it separately before reading the data.</span></span>

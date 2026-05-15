@@ -586,7 +586,7 @@ the most strongly indigenous-language municipalities; category I the least.
 #| fig-height: 6
 #| fig-width: 9
 
-cel_geo <- readRDS("../bolivia-data/Censo 2024/base_datos_csv_2024/cel_geo.rds")
+cel_geo <- readRDS("../bolivia-data/censo_2024/base_datos_csv_2024/cel_geo.rds")
 
 albo_groups <- cel_geo |>
   filter(!is.na(municipality), is.na(urban_rural)) |>

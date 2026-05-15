@@ -16,7 +16,7 @@ their adjacent integer levels for visual parity with the 2001 scale.
 #| label: setup
 library(tidyverse)
 
-DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+DATA_DIR <- "../bolivia-data/censo_2024/base_datos_csv_2024"
 ```
 
 ```{r}

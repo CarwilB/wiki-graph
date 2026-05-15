@@ -8,8 +8,8 @@ analyze_child_parent_cel <- function(
     age_max = 14,
     age_min = 0,
     idioma_filter = NULL,
-    persona_path = "../bolivia-data/Censo 2024/base_datos_csv_2024/Persona_CPV-2024.csv",
-    vivienda_path = "../bolivia-data/Censo 2024/base_datos_csv_2024/Vivienda_CPV-2024.csv"
+    persona_path = "../bolivia-data/censo_2024/base_datos_csv_2024/Persona_CPV-2024.csv",
+    vivienda_path = "../bolivia-data/censo_2024/base_datos_csv_2024/Vivienda_CPV-2024.csv"
 ) {
   # child_filter: "age_0_14" (default) or "idioma" (use idioma_filter)
   # idioma_filter: character label to filter idioma_label (e.g., "No habla")

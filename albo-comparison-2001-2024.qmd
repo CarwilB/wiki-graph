@@ -37,7 +37,7 @@ library(tidyverse)
 library(patchwork)
 library(sf)
 
-DATA_DIR <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+DATA_DIR <- "../bolivia-data/censo_2024/base_datos_csv_2024"
 ```
 
 ------------------------------------------------------------------------

@@ -32,8 +32,8 @@ sampling frame.
 library(arrow)
 library(tidyverse)
 
-DATA_DIR  <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
-CENSO_DIR <- "../bolivia-data/Censo 2024"
+DATA_DIR  <- "../bolivia-data/censo_2024/base_datos_csv_2024"
+CENSO_DIR <- "../bolivia-data/censo_2024"
 
 lapop <- readRDS("data/lapop_bol_2023.rds")
 idioma_cats <- readRDS("data/idioma_cats.rds")

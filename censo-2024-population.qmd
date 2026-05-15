@@ -20,7 +20,7 @@ Within each geographic level, rows come in triples: the entity total (area = ent
 
 ```{r load-population}
 raw <- read_excel(
-  "../bolivia-data/Censo 2024/POBLACION.xlsx",
+  "../bolivia-data/censo_2024/POBLACION.xlsx",
   sheet     = "1",
   col_names = FALSE,
   skip      = 8   # rows 1–8: title, three header rows, blank separator
@@ -316,7 +316,7 @@ Data begins at row 7. Footnote rows at the bottom of the sheet (with long `nivel
 are removed during cleaning.
 
 ```{r load-autoidentificacion}
-auto_path <- "../bolivia-data/Censo 2024/AUTOIDENTIFICACION.xlsx"
+auto_path <- "../bolivia-data/censo_2024/AUTOIDENTIFICACION.xlsx"
 
 # Row 6 of the sheet holds the 133 ethnic-group names; those become the trailing
 # column names. Read it separately before reading the data.

@@ -4,7 +4,7 @@ Person-level microdata analysis focused on indigenous identity and language. Inf
 
 ## Data Location
 
-All files: `~/Dropbox (Personal)/R/bolivia-data/Censo 2024/`
+All files: `~/Dropbox (Personal)/R/bolivia-data/censo_2024/`
 
 ## Key Files
 
@@ -107,5 +107,7 @@ Function returns list: `$data` (tibble with CEL, `cel_chr` factor, `age_group`, 
 ## Key Documents
 
 - `bolivia-censo-2024.qmd` — Main census analysis
+- `albo-bubble-interactive.qmd` Municipality-level interactive CEL bubble chart
+- `albo-comparison-2001-2024.qmd` — Comparison of 2001 and 2024 census results
 - `albo-restudy-2024.qmd` — CEL scale study
 - `albo-cel-grid-dept.qmd` — CEL visualizations by department

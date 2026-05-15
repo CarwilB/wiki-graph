@@ -18,10 +18,10 @@ library(arrow)
 library(xml2)
 library(tidyverse)
 
-DATA_DIR     <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+DATA_DIR     <- "../bolivia-data/censo_2024/base_datos_csv_2024"
 PERSONA_CSV  <- file.path(DATA_DIR, "Persona_CPV-2024.csv")
-CODEBOOK_RDS <- "../bolivia-data/Censo 2024/codebook_persona.rds"
-PUEBLO_CATS  <- "../bolivia-data/Censo 2024/pueblo_cats.rds"
+CODEBOOK_RDS <- "../bolivia-data/censo_2024/codebook_persona.rds"
+PUEBLO_CATS  <- "../bolivia-data/censo_2024/pueblo_cats.rds"
 ```
 
 ```{r}
@@ -1314,7 +1314,7 @@ The aggregates below are pre-collected and joined with the Vivienda file's `urbr
 
 ```{r}
 #| label: strat-load
-BASE_DATA <- "../bolivia-data/Censo 2024/base_datos_csv_2024"
+BASE_DATA <- "../bolivia-data/censo_2024/base_datos_csv_2024"
 
 lang_use_urban    <- readRDS(file.path(BASE_DATA, "lang_use_urban.rds"))
 lang_use_identity <- readRDS(file.path(BASE_DATA, "lang_use_identity.rds"))
