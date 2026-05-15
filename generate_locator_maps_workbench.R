@@ -46,7 +46,15 @@ params <- list(
 
   # between NE country boundaries and GADM. Increase if you see slivers of
   # blue ocean between Bolivia and neighbours; decrease if it bleeds over.
-  bolivia_cream_buffer = 0.02,
+  bolivia_cream_buffer = 0,
+
+  # --- Tripoint gap fixes ---
+  # The Bolivia-buffer clips a small tail off Chile-Peru and Peru-Brazil borders
+  # near their tripoints with Bolivia. These buffers recover those tails by
+  # widening the intersection search around each neighbour's boundary.
+  # Tune independently: Peru-Brazil resolved at 0.20; Chile-Peru may need more.
+  tripoint_buf_chile_peru  = 0.40,  # degrees; increase if gap persists
+  tripoint_buf_peru_brazil = 0.20,  # degrees
 
   # --- Output ---
   output_dir = "output/locator_maps/workbench",
@@ -159,22 +167,66 @@ prepare_shared_layers <- function(p = params) {
                                 keep_shapes = TRUE)
 
   # Bolivia cream fill (buffered to close NE/GADM gap)
-  bol_cream <- st_buffer(bol_outline_s, dist = p$bolivia_cream_buffer)
+  # bol_cream <- st_buffer(bol_outline_s, dist = p$bolivia_cream_buffer)
+  bol_cream <- bol_outline_raw
 
-  # Neighbour borders with Bolivia-facing segments removed
-  bol_buf <- st_buffer(bol_outline_s, dist = p$bolivia_cream_buffer * 2)
+  # Neighbour borders with Bolivia-facing segments removed.
+  # Uses NE's own Bolivia polygon (not GADM) for coordinate consistency.
+  # A small buffer removes Bolivia-facing segments cleanly, but clips a tiny
+  # tail off Chile-Peru and Peru-Brazil borders near their Bolivia tripoints.
+  # Those two borders are added back via direct polygon intersection, which
+  # gives the exact shared edge with no Bolivia influence.
+  ne_bolivia_buf <- ne_countries_10m |>
+    filter(ADMIN == "Bolivia") |>
+    st_make_valid() |>
+    st_buffer(dist = 0.001)
+
   nb_borders <- ne_neighbors |>
     st_boundary() |>
-    st_difference(bol_buf)
+    st_difference(ne_bolivia_buf)
+
+  # Tripoint fix: the Bolivia buffer clips a small tail off the Chile-Peru and
+  # Peru-Brazil borders near their tripoints with Bolivia. Recover those tails
+  # by intersecting Peru's boundary with a wide buffer around each neighbour's
+  # boundary. 0.20° is large enough to bridge the ~0.12° gap at both tripoints;
+  # any tiny extra segment of Peru's Bolivia-facing border captured by the wide
+  # buffer will be hidden under Bolivia's cream fill.
+  shared_border <- function(anchor_country, buffer_country, buf = 0.20) {
+    a <- ne_countries_10m |> filter(ADMIN == anchor_country) |> st_make_valid()
+    b <- ne_countries_10m |> filter(ADMIN == buffer_country) |> st_make_valid()
+    st_intersection(st_boundary(a), st_buffer(st_boundary(b), buf)) |>
+      select(geometry)
+  }
+
+  nb_borders <- bind_rows(
+    nb_borders |> select(geometry),
+    shared_border("Peru", "Chile",  p$tripoint_buf_chile_peru),
+    shared_border("Peru", "Brazil", p$tripoint_buf_peru_brazil)
+  )
+
+  # Gap fill: NE neighbour polygons don't perfectly reach GADM Bolivia's border,
+  # leaving thin blue-background strips. Fix: buffer GADM Bolivia outward, then
+  # subtract all NE polygons. Whatever remains is the uncovered gap — draw gray.
+  # Use GEOS (planar) mode; s2 rejects the degenerate vertices that arise when
+  # unioning polygons that share near-identical border segments.
+  ne_bolivia_NE <- ne_countries_10m |> filter(ADMIN == "Bolivia") |> st_make_valid()
+  sf_use_s2(FALSE)
+  ne_all_union  <- st_union(st_union(ne_neighbors), ne_bolivia_NE)
+  gap_fill <- st_difference(
+    st_buffer(bol_outline_raw, 0.05),
+    ne_all_union
+  ) |> st_make_valid() |> st_as_sf()
+  sf_use_s2(TRUE)
 
   list(
-    ne_neighbors    = ne_neighbors,
-    titicaca_full   = titicaca_full,
-    mun_regular     = mun_regular_s,
-    mun_lake        = mun_lake_s,
-    bol_outline     = bol_outline_s,
-    bol_cream       = bol_cream,
-    neighbor_borders = nb_borders
+    ne_neighbors     = ne_neighbors,
+    titicaca_full    = titicaca_full,
+    mun_regular      = mun_regular_s,
+    mun_lake         = mun_lake_s,
+    bol_outline      = bol_outline_s,
+    bol_cream        = bol_cream,
+    neighbor_borders = nb_borders,
+    gap_fill         = gap_fill
   )
 }
 
@@ -205,10 +257,13 @@ generate_locator_map <- function(gadm_name_3, layers, p = params) {
     # 2. Lake Titicaca incl. Peruvian waters (NE)
     geom_sf(data = layers$titicaca_full,
             fill = colors_2012$water_bodies, color = NA) +
-    # 3. Bolivia cream fill (buffered to hide NE/GADM gap)
+    # 3. Gap fill: gray strips where NE neighbour polygons fall short of GADM Bolivia
+    geom_sf(data = layers$gap_fill,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 4. Bolivia cream fill
     geom_sf(data = layers$bol_cream,
             fill = colors_2012$surrounding_internal, color = NA) +
-    # 4. Other municipalities
+    # 5. Other municipalities
     geom_sf(data = others,
             fill = colors_2012$surrounding_internal,
             color = colors_2012$borders, linewidth = p$lw_mun_borders) +
@@ -245,6 +300,53 @@ generate_locator_map <- function(gadm_name_3, layers, p = params) {
 
   list(gadm_name = gadm_name_3, file = out_path,
        size_kb = round(file.size(out_path) / 1024, 1))
+}
+
+
+# ==============================================================================
+# §6b — EXTERNAL-ONLY DIAGNOSTIC MAP
+# Renders just the neighboring countries and Titicaca — no Bolivia components.
+# Useful for inspecting neighbor geometry, border trimming, and alignment
+# against Bolivia's outline before layering in the full map.
+# ==============================================================================
+
+generate_locator_map_external <- function(layers, p = params) {
+
+  map_w <- (p$bbox_xmax - p$bbox_xmin) *
+    cos(((p$bbox_ymin + p$bbox_ymax) / 2) * pi / 180) /
+    (p$bbox_ymax - p$bbox_ymin) * p$map_height
+
+  plot <- ggplot() +
+    # 1. Neighbouring countries
+    geom_sf(data = layers$ne_neighbors,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 2. Lake Titicaca (NE)
+    geom_sf(data = layers$titicaca_full,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 3. Gap fill: gray strips where NE polygons fall short of GADM Bolivia
+    geom_sf(data = layers$gap_fill,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 4. Neighbour borders (Bolivia-facing segments removed per current params)
+    geom_sf(data = layers$neighbor_borders,
+            fill = NA, color = colors_2012$borders,
+            linewidth = p$lw_neighbor_borders) +
+    coord_sf(xlim   = c(p$bbox_xmin, p$bbox_xmax),
+             ylim   = c(p$bbox_ymin, p$bbox_ymax),
+             expand = FALSE, datum = NA) +
+    theme_void() +
+    theme(
+      plot.background  = element_rect(fill = colors_2012$water_bodies, color = NA),
+      panel.background = element_rect(fill = colors_2012$water_bodies, color = NA),
+      plot.margin      = unit(c(0, 0, 0, 0), "mm")
+    )
+
+  dir.create(p$output_dir, recursive = TRUE, showWarnings = FALSE)
+  out_path <- file.path(p$output_dir, "external_only_diagnostic.svg")
+  ggsave(out_path, plot, device = "svg",
+         width = map_w, height = p$map_height, units = "in")
+
+  cat("External diagnostic map written to", out_path, "\n")
+  invisible(out_path)
 }
 
 
