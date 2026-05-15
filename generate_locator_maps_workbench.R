@@ -47,6 +47,7 @@ params <- list(
   # between NE country boundaries and GADM. Increase if you see slivers of
   # blue ocean between Bolivia and neighbours; decrease if it bleeds over.
   bolivia_cream_buffer = 0,
+  bolivia_grey_buffer = 0.55,
 
   # --- Tripoint gap fixes ---
   # The Bolivia-buffer clips a small tail off Chile-Peru and Peru-Brazil borders
@@ -213,12 +214,27 @@ prepare_shared_layers <- function(p = params) {
   sf_use_s2(FALSE)
   ne_all_union  <- st_union(st_union(ne_neighbors), ne_bolivia_NE)
   gap_fill <- st_difference(
-    st_buffer(bol_outline_raw, 0.05),
+    st_buffer(bol_outline_raw, p$bolivia_grey_buffer),
     ne_all_union
   ) |> st_make_valid() |> st_as_sf()
   sf_use_s2(TRUE)
 
+  # Background rectangle covering the full bbox; drawn first so any gaps between
+  # NE polygons fall back to the neighbor color rather than the blue background.
+  bbox_bg <- st_as_sfc(st_bbox(c(
+    xmin = p$bbox_xmin, xmax = p$bbox_xmax,
+    ymin = p$bbox_ymin, ymax = p$bbox_ymax
+  ), crs = 4326)) |> st_as_sf()
+
+  # Ocean: bbox minus all land polygons. Captures the Pacific in the SW corner
+  # (and any other non-land area within the bbox) to be drawn blue.
+  sf_use_s2(FALSE)
+  pacific <- st_difference(bbox_bg, ne_all_union) |> st_make_valid() |> st_as_sf()
+  sf_use_s2(TRUE)
+
   list(
+    bbox_bg          = bbox_bg,
+    pacific          = pacific,
     ne_neighbors     = ne_neighbors,
     titicaca_full    = titicaca_full,
     mun_regular      = mun_regular_s,
@@ -251,13 +267,19 @@ generate_locator_map <- function(gadm_name_3, layers, p = params) {
     (p$bbox_ymax - p$bbox_ymin) * p$map_height
 
   plot <- ggplot() +
-    # 1. Neighbouring countries (full NE resolution — no simplification on coasts)
+    # 0. Full-bbox gray background — ensures any gap between NE polygons is gray
+    geom_sf(data = layers$bbox_bg,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 1. Ocean (bbox minus all land) — Pacific in the SW corner
+    geom_sf(data = layers$pacific,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 2. Neighbouring countries (full NE resolution — no simplification on coasts)
     geom_sf(data = layers$ne_neighbors,
             fill = colors_2012$surrounding_external, color = NA) +
-    # 2. Lake Titicaca incl. Peruvian waters (NE)
+    # 3. Lake Titicaca incl. Peruvian waters (NE)
     geom_sf(data = layers$titicaca_full,
             fill = colors_2012$water_bodies, color = NA) +
-    # 3. Gap fill: gray strips where NE neighbour polygons fall short of GADM Bolivia
+    # 4. Gap fill: gray strips where NE neighbour polygons fall short of GADM Bolivia
     geom_sf(data = layers$gap_fill,
             fill = colors_2012$surrounding_external, color = NA) +
     # 4. Bolivia cream fill
@@ -317,13 +339,19 @@ generate_locator_map_external <- function(layers, p = params) {
     (p$bbox_ymax - p$bbox_ymin) * p$map_height
 
   plot <- ggplot() +
-    # 1. Neighbouring countries
+    # 0. Full-bbox gray background — ensures any gap between NE polygons is gray
+    geom_sf(data = layers$bbox_bg,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 1. Ocean (bbox minus all land) — Pacific in the SW corner
+    geom_sf(data = layers$pacific,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 2. Neighbouring countries
     geom_sf(data = layers$ne_neighbors,
             fill = colors_2012$surrounding_external, color = NA) +
-    # 2. Lake Titicaca (NE)
+    # 3. Lake Titicaca (NE)
     geom_sf(data = layers$titicaca_full,
             fill = colors_2012$water_bodies, color = NA) +
-    # 3. Gap fill: gray strips where NE polygons fall short of GADM Bolivia
+    # 4. Gap fill: gray strips where NE polygons fall short of GADM Bolivia
     geom_sf(data = layers$gap_fill,
             fill = colors_2012$surrounding_external, color = NA) +
     # 4. Neighbour borders (Bolivia-facing segments removed per current params)
