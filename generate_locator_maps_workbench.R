@@ -9,6 +9,7 @@
 
 library(sf)
 library(dplyr)
+library(tibble)
 library(ggplot2)
 library(rmapshaper)
 
@@ -66,32 +67,34 @@ params <- list(
 # ==============================================================================
 # §2 — MUNICIPALITY SELECTION
 # ==============================================================================
-# Option A: Test a handful of municipalities (use GADM NAME_3 values).
+# Option A: Test a handful of municipalities.
 #           These are intentionally diverse: big city, small highland,
 #           lowland, border, lake-adjacent.
 # Option B: Set run_all = TRUE to generate all ~339 maps.
 
 run_all <- FALSE
 
-test_municipalities <- c(
-  "Nuestra Señora de La Paz",
-  "Santa Cruz de la Sierra",
-  "Sucre",
-  "Cobija",
-  "Oruro",
-  "Cochabamba",
-  "Trinidad",
-  "Tarija",
-  "Potosí"
+test_municipalities_tbl <- tribble(
+  ~municipality,                     ~department,
+  "Trinidad",                  "Beni",
+  "Sucre",                     "Chuquisaca",
+  "Cochabamba",                "Cochabamba",
+  "Nuestra Señora de La Paz",  "La Paz",
+  "Oruro",                     "Oruro",
+  "Cobija",                    "Pando",
+  "Potosí",                    "Potosí",
+  "Santa Cruz de la Sierra",   "Santa Cruz",
+  "Tarija",                    "Tarija"
 )
 
 # Per-municipality parameter overrides. Use this to experiment with different
 # simplification levels or line widths for specific municipalities.
-# Keys are GADM NAME_3 values; values are named lists that override `params`.
+# Keys are "municipality|department" (e.g. "Cobija|Pando"); values are named
+# lists that override `params`.
 # Example:
 #   per_muni_overrides <- list(
-#     "Cobija" = list(simp_municipalities = 0.10, lw_target_border = 0.6),
-#     "Nuestra Señora de La Paz" = list(simp_municipalities = 0.02)
+#     "Cobija|Pando"                = list(simp_municipalities = 0.10, lw_target_border = 0.6),
+#     "Nuestra Señora de La Paz|La Paz" = list(simp_municipalities = 0.02)
 #   )
 per_muni_overrides <- list()
 
@@ -115,6 +118,12 @@ colors_2012 <- list(
 
 cat("Loading GADM...\n")
 gadm <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3", quiet = TRUE)
+
+dupe_muni_names <- gadm |>
+  st_drop_geometry() |>
+  count(NAME_3) |>
+  filter(n > 1) |>
+  pull(NAME_3)
 
 cat("Loading Natural Earth countries (10m)...\n")
 ne_countries_path <- file.path(tempdir(), "ne_10m_admin_0_countries.shp")
@@ -251,15 +260,15 @@ prepare_shared_layers <- function(p = params) {
 # §6 — MAP GENERATION FUNCTION
 # ==============================================================================
 
-generate_locator_map <- function(gadm_name_3, layers, p = params) {
+generate_locator_map <- function(municipality, department, layers, p = params) {
 
-  target <- layers$mun_regular |> filter(NAME_3 == gadm_name_3)
+  target <- layers$mun_regular |> filter(NAME_3 == municipality, NAME_1 == department)
   if (nrow(target) == 0) {
-    warning("Municipality not found in GADM: ", gadm_name_3)
+    warning("Municipality not found in GADM: ", municipality, " (", department, ")")
     return(invisible(NULL))
   }
 
-  others <- layers$mun_regular |> filter(NAME_3 != gadm_name_3)
+  others <- layers$mun_regular |> filter(!(NAME_3 == municipality & NAME_1 == department))
 
   # Map dimensions
   map_w <- (p$bbox_xmax - p$bbox_xmin) *
@@ -315,13 +324,21 @@ generate_locator_map <- function(gadm_name_3, layers, p = params) {
     )
 
   dir.create(p$output_dir, recursive = TRUE, showWarnings = FALSE)
-  safe_name <- gsub("[^a-zA-Z0-9_-]", "_", gadm_name_3)
-  out_path  <- file.path(p$output_dir, paste0(safe_name, "_locator_map.svg"))
+  clean_muni <- stringi::stri_trans_general(municipality, "Latin-ASCII")
+  clean_dept <- stringi::stri_trans_general(department,   "Latin-ASCII")
+  if (municipality %in% dupe_muni_names) {
+    safe_name  <- gsub("[^a-zA-Z0-9_-]", "_",
+                       paste0(clean_muni, "_(", clean_dept, ")"))
+  } else {
+    safe_name <- gsub("[^a-zA-Z0-9_-]", "_", clean_muni)
+  }
+
+  out_path   <- file.path(p$output_dir, paste0(safe_name, "_muni_locator_map.svg"))
   ggsave(out_path, plot, device = "svg",
          width = map_w, height = p$map_height, units = "in")
 
-  list(gadm_name = gadm_name_3, file = out_path,
-       size_kb = round(file.size(out_path) / 1024, 1))
+  list(municipality = municipality, department = department,
+       file = out_path, size_kb = round(file.size(out_path) / 1024, 1))
 }
 
 
@@ -382,41 +399,42 @@ generate_locator_map_external <- function(layers, p = params) {
 # §7 — RUN
 # ==============================================================================
 
-# Build the municipality list
+# Build the municipality tibble
 if (run_all) {
-  muni_list <- gadm |>
+  muni_tbl <- gadm |>
     st_drop_geometry() |>
     filter(NAME_3 != "Lago Titicaca") |>
-    distinct(NAME_3) |>
-    arrange(NAME_3) |>
-    pull(NAME_3)
-  cat("BATCH MODE:", length(muni_list), "municipalities\n")
+    distinct(municipality = NAME_3, department = NAME_1) |>
+    arrange(department, municipality)
+  cat("BATCH MODE:", nrow(muni_tbl), "municipalities\n")
 } else {
-  muni_list <- test_municipalities
-  cat("TEST MODE:", length(muni_list), "municipalities\n")
+  muni_tbl <- test_municipalities_tbl
+  cat("TEST MODE:", nrow(muni_tbl), "municipalities\n")
 }
 
 # Prepare shared layers with default params
 shared_layers <- prepare_shared_layers(params)
 
 # Generate maps
-results <- vector("list", length(muni_list))
+results <- vector("list", nrow(muni_tbl))
 t0 <- Sys.time()
 
-for (i in seq_along(muni_list)) {
-  mun_name <- muni_list[i]
+for (i in seq_len(nrow(muni_tbl))) {
+  mun_name  <- muni_tbl$municipality[i]
+  dept_name <- muni_tbl$department[i]
+  muni_key  <- paste0(mun_name, "|", dept_name)
 
   # Merge per-municipality overrides into params
   p_this <- params
-  if (mun_name %in% names(per_muni_overrides)) {
-    overrides <- per_muni_overrides[[mun_name]]
+  if (muni_key %in% names(per_muni_overrides)) {
+    overrides <- per_muni_overrides[[muni_key]]
     for (nm in names(overrides)) p_this[[nm]] <- overrides[[nm]]
 
     # If simplification changed, re-prepare layers for this municipality
     simp_changed <- any(c("simp_municipalities", "simp_bolivia_outline") %in%
                           names(overrides))
     if (simp_changed) {
-      cat("  [override] Re-simplifying layers for", mun_name, "\n")
+      cat("  [override] Re-simplifying layers for", mun_name, "(", dept_name, ")\n")
       layers_this <- prepare_shared_layers(p_this)
     } else {
       layers_this <- shared_layers
@@ -425,14 +443,14 @@ for (i in seq_along(muni_list)) {
     layers_this <- shared_layers
   }
 
-  results[[i]] <- generate_locator_map(mun_name, layers_this, p_this)
+  results[[i]] <- generate_locator_map(mun_name, dept_name, layers_this, p_this)
 
   # Progress
   elapsed <- as.numeric(difftime(Sys.time(), t0, units = "secs"))
   rate    <- elapsed / i
-  eta     <- rate * (length(muni_list) - i)
-  cat(sprintf("[%3d/%d] %-40s  %5.1f KB  (ETA %s)\n",
-              i, length(muni_list), mun_name,
+  eta     <- rate * (nrow(muni_tbl) - i)
+  cat(sprintf("[%3d/%d] %-40s %-15s  %5.1f KB  (ETA %s)\n",
+              i, nrow(muni_tbl), mun_name, dept_name,
               results[[i]]$size_kb %||% NA,
               if (eta > 60) sprintf("%.0f min", eta / 60) else sprintf("%.0f s", eta)))
 }

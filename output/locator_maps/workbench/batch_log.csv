@@ -1,10 +1,10 @@
-"gadm_name","file","size_kb"
-"Nuestra Señora de La Paz","output/locator_maps/workbench/Nuestra_Se_ora_de_La_Paz_locator_map.svg",2364.5
-"Santa Cruz de la Sierra","output/locator_maps/workbench/Santa_Cruz_de_la_Sierra_locator_map.svg",2364.5
-"Sucre","output/locator_maps/workbench/Sucre_locator_map.svg",2364.5
-"Cobija","output/locator_maps/workbench/Cobija_locator_map.svg",2364.5
-"Oruro","output/locator_maps/workbench/Oruro_locator_map.svg",2364.5
-"Cochabamba","output/locator_maps/workbench/Cochabamba_locator_map.svg",2364.5
-"Trinidad","output/locator_maps/workbench/Trinidad_locator_map.svg",2364.5
-"Tarija","output/locator_maps/workbench/Tarija_locator_map.svg",2364.5
-"Potosí","output/locator_maps/workbench/Potos__locator_map.svg",2364.5
+"municipality","department","file","size_kb"
+"Trinidad","Beni","output/locator_maps/workbench/Trinidad_muni_locator_map.svg",2364.5
+"Sucre","Chuquisaca","output/locator_maps/workbench/Sucre_muni_locator_map.svg",2364.5
+"Cochabamba","Cochabamba","output/locator_maps/workbench/Cochabamba_muni_locator_map.svg",2364.5
+"Nuestra Señora de La Paz","La Paz","output/locator_maps/workbench/Nuestra_Senora_de_La_Paz_muni_locator_map.svg",2364.5
+"Oruro","Oruro","output/locator_maps/workbench/Oruro_muni_locator_map.svg",2364.5
+"Cobija","Pando","output/locator_maps/workbench/Cobija_muni_locator_map.svg",2364.5
+"Potosí","Potosí","output/locator_maps/workbench/Potosi_muni_locator_map.svg",2364.5
+"Santa Cruz de la Sierra","Santa Cruz","output/locator_maps/workbench/Santa_Cruz_de_la_Sierra_muni_locator_map.svg",2364.5
+"Tarija","Tarija","output/locator_maps/workbench/Tarija_muni_locator_map.svg",2364.5
