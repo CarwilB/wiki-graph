@@ -1,0 +1,286 @@
+---
+title: "Bolivia Municipal Locator Maps: Production Process"
+author: "Carwil Bjork-James"
+date: "2026-05-15"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float: true
+    code-fold: true
+    code-summary: "Show code"
+    theme: cosmo
+---
+
+## Overview
+
+This document describes the pipeline used to generate and upload 339 SVG locator maps — one per Bolivian municipality — to Wikimedia Commons. The maps follow the [Wikipedia 2012 cartographic convention](https://commons.wikimedia.org/wiki/Category:SVG_locator_maps_(location_map_scheme)) used for locator maps across Wikipedia. The goal is to provide a complete, reproducible template that could be adapted for any country with GADM administrative boundary data.
+
+All maps were uploaded to Commons under the category [Locator maps of municipalities in Bolivia](https://commons.wikimedia.org/wiki/Category:Locator_maps_of_municipalities_in_Bolivia). The batch was uploaded by bot account [Carwil\@Bolivia_locator_maps](https://commons.wikimedia.org/wiki/Special:Contributions/Carwil@Bolivia_locator_maps) on 2026-05-15.
+
+------------------------------------------------------------------------
+
+## What Was Produced
+
+- **339 SVG locator maps**, one per municipality
+- Uploaded to Wikimedia Commons (318 in the main batch; the first \~19 in an earlier test run)
+- Each file includes multilingual descriptions (English, Spanish, Catalan, Quechua), CC0 license, and structured data claims: *depicts* (P180 → Wikidata QID of the municipality), *copyright license* (P275 → CC0 1.0), and *copyright status* (P6216 → public domain)
+- A complete upload log (`commons_upload_log.rds` / `commons_upload_log.csv`) records Commons filenames, page URLs, M-IDs, Wikidata QIDs, and upload date for all 320 rows in the main batch
+
+------------------------------------------------------------------------
+
+## Data Sources
+
+| Source | Layer | Purpose |
+|----|----|----|
+| [GADM v4.1](https://gadm.org/) | `gadm41_BOL_3.gpkg` (ADM_3) | Municipality polygons |
+| GADM v4.1 | ADM_2 | Province outlines |
+| GADM v4.1 | ADM_1 | Department outlines |
+| [Natural Earth 10m cultural](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/) | `ne_10m_admin_0_countries` | Neighboring countries (Peru, Brazil, Argentina, Paraguay, Chile) |
+| [Natural Earth 10m physical](https://www.naturalearthdata.com/downloads/10m-physical-vectors/) | `ne_10m_lakes` | Lake Titicaca (Bolivia–Peru border) |
+
+GADM and Natural Earth use slightly different Bolivia border geometries, which creates thin slivers where the two data sources meet. This is handled through a gap-fill layer (see §4.4 below).
+
+------------------------------------------------------------------------
+
+## Map Design
+
+### Color Scheme (Wikipedia 2012)
+
+| Element               | Hex       | Role                                       |
+|-----------------------|-----------|--------------------------------------------|
+| Territory of interest | `#C12838` | Target municipality (red)                  |
+| Surrounding internal  | `#FDFBEA` | Other Bolivian municipalities (pale cream) |
+| Surrounding external  | `#DFDFDF` | Neighboring countries (light gray)         |
+| Borders               | `#656565` | All political boundaries (dark gray)       |
+| Water bodies          | `#C7E7FB` | Ocean, lakes (light blue)                  |
+
+### Layer Order
+
+Maps are composed from bottom to top:
+
+1.  Full bounding-box background (gray) — ensures NE polygon gaps fall to gray
+2.  Ocean / Pacific coast (blue) — bounding box minus all land polygons
+3.  Neighboring countries (gray fill, no stroke)
+4.  Lake Titicaca from Natural Earth (blue fill)
+5.  Gap-fill layer (gray) — covers slivers where NE polygons fall short of GADM Bolivia
+6.  Bolivia cream fill (unbuffered GADM union)
+7.  All other Bolivian municipalities (cream fill, thin gray borders at 0.15 lw)
+8.  Lago Titicaca GADM polygons (blue fill) — two municipality-level polygons
+9.  **Target municipality** (red fill, gray border at 0.40 lw)
+10. Provincial borders (0.25 lw)
+11. Departmental borders (0.38 lw)
+12. Neighbor country borders, Bolivia-facing segments removed (0.45 lw)
+13. Bolivia international border — GADM outline (0.55 lw)
+
+All layers are rendered with `theme_void()`, zero margins, and a blue background to represent the ocean.
+
+### Bounding Box
+
+The fixed bounding box covers all of Bolivia with generous margins:
+
+``` r
+bbox_xmin = -71.0,  bbox_xmax = -56.8
+bbox_ymin = -24.0,  bbox_ymax =  -9.0
+```
+
+Using a fixed box means every map shows the same geographic extent, which is standard practice for within-country locator maps. Map width is computed automatically from the aspect ratio at the median latitude:
+
+``` r
+map_w <- (bbox_xmax - bbox_xmin) *
+  cos(((bbox_ymin + bbox_ymax) / 2) * pi / 180) /
+  (bbox_ymax - bbox_ymin) * map_height
+```
+
+------------------------------------------------------------------------
+
+## Generation: `generate_locator_maps_workbench.R`
+
+The workbench script is organized into seven sections. **All tunable parameters are at the top** in a single `params` list, making it easy to adjust simplification levels, line widths, and output paths before running the batch.
+
+### §1 — Parameters
+
+The `params` list controls simplification (`keep` ratios via `rmapshaper::ms_simplify()`), border line widths, the bounding box, and the output directory. The final batch used:
+
+- `simp_municipalities = 0.05` (5% of vertices kept)
+- `simp_bolivia_outline = 0.05`
+- `simp_neighbors = 0.03`
+- `simp_titicaca = 0.10`
+
+At 5% simplification, each SVG is approximately 2.8 MB. Higher `keep` values produce larger files; lower values may drop small municipalities.
+
+### §2 — Municipality Selection
+
+The script supports two modes:
+
+- **Test mode** (`run_all = FALSE`): a hand-picked set of nine geographically diverse capitals (one per department)
+- **Batch mode** (`run_all = TRUE`): all 339 municipalities from GADM
+
+A `per_muni_overrides` list allows individual municipalities to use different simplification levels or line widths without re-running the full batch:
+
+``` r
+per_muni_overrides <- list(
+  "Cobija|Pando" = list(simp_municipalities = 0.10, lw_target_border = 0.6)
+)
+```
+
+When a simplification override is present, the script re-runs `prepare_shared_layers()` for that municipality; otherwise the shared layers are reused.
+
+### §3 — Shared Layers (`prepare_shared_layers()`)
+
+Computing and simplifying the background layers (neighbors, outlines, gap fill) is expensive. `prepare_shared_layers()` runs once and returns a named list used by every map. This is the key performance optimization: the per-municipality loop only needs to filter the municipality layer, not reprocess all geometry.
+
+**Key implementation details:**
+
+- Neighbor borders are computed by `st_difference()`-ing the neighboring country boundaries from a small Bolivia buffer (`dist = 0.001`). This removes Bolivia-facing segments cleanly.
+- A tripoint fix adds back the Chile–Peru and Peru–Brazil borders near Bolivia by using `st_intersection()` with a wider buffer (0.40° and 0.20° respectively). Without this, the buffer clips a small tail off those borders.
+- The **gap-fill layer** is computed as the Bolivia outline buffered outward by 0.55° minus the Natural Earth country union. The resulting geometry covers thin slivers and is rendered as gray.
+- `sf_use_s2(FALSE)` is toggled around GEOS-dependent operations (union of near-identical polygon edges) to avoid spurious vertex errors.
+
+### §4 — Map Generation (`generate_locator_map()`)
+
+For each municipality, the function:
+
+1.  Filters `mun_regular` to the target municipality
+2.  Constructs the map using the layer ordering above
+3.  Resolves the display name from `muni_id_lookup_table` (which maps GADM names to official INE names with correct diacritics)
+4.  Constructs a safe ASCII filename by stripping accents with `stringi::stri_trans_general(..., "Latin-ASCII")`
+5.  Saves as SVG to `output/locator_maps/muni-maps-final/`
+
+**Naming convention**: filenames use the official INE name (e.g., `Potosi_muni_locator_map.svg` locally; `Potosí muni locator map.svg` on Commons). For the 14 municipalities that share a name, the department is appended in parentheses:
+
+```         
+El_Puente_(Santa_Cruz)_muni_locator_map.svg
+El_Puente_(Tarija)_muni_locator_map.svg
+```
+
+The batch loop writes a CSV summary (`batch_log.csv`) recording municipality, department, local file path, and SVG size.
+
+------------------------------------------------------------------------
+
+## Upload: `upload_to_commons.R`
+
+### §1 — Upload Metadata Table
+
+`upload_meta` is built by joining `results_df` (from the workbench script) with `muni_id_lookup_table` (for `id_muni`) and `municipalities_wd_ine` (for the Wikidata QID). It adds the Commons filename using the same disambiguation logic as the workbench script. A warning is emitted for any municipality missing a QID before uploading begins.
+
+### §2 — Wikitext
+
+Each file gets a wikitext description page built by `build_wikitext()` with descriptions in four languages:
+
+- **English**: "Locator map showing \[municipality\] Municipality in a map of Bolivian municipalities, provinces, and departments"
+- **Spanish**: equivalent
+- **Catalan**: with correct elision (*de* / *d'* before vowels)
+- **Quechua**
+
+License: `{{self|cc-zero}}` (CC0 public domain dedication). Category: `[[Category:Locator maps of municipalities in Bolivia]]`.
+
+### §3 — API Session
+
+The script uses `httr2` with a persistent cookie file (`tempfile()`) to maintain a login session across all uploads. CSRF tokens are refreshed every 50 uploads as a safeguard against session expiry.
+
+### §4 — Dry Run
+
+A `dry_run <- TRUE` flag at the top of §4 lets you preview the first three wikitext blocks and inspect the metadata table without uploading. Set to `FALSE` to proceed.
+
+### §5 — Upload Loop
+
+For each municipality the loop:
+
+1.  Checks the local SVG exists
+2.  Checks whether the file already exists on Commons (`file_exists_on_commons()`) — skips if so
+3.  Uploads the SVG with `upload_file()`
+4.  Looks up the page ID (returned in the API response, or via a fallback title query) and derives the M-ID (`paste0("M", page_id)`)
+5.  Adds three structured data claims via `add_sdc_for_file()`: *depicts* (P180), *copyright license* (P275 → CC0 1.0, Q6938433), *copyright status* (P6216 → public domain, Q19652)
+6.  Sets SDC captions in all four languages via `add_sdc_captions()`
+7.  Sleeps 1.5 seconds between uploads (\~40/minute, well within Commons bot rate limits)
+
+### §6 — Upload Log
+
+After the loop, `commons_upload_full` is saved as both RDS and CSV to `output/locator_maps/muni-maps-final/`. This table merges all `upload_meta` columns with the Commons-specific fields added during upload:
+
+| Column             | Description                                            |
+|--------------------|--------------------------------------------------------|
+| `municipality`     | Official INE name                                      |
+| `department`       | Bolivian department                                    |
+| `id_muni`          | 6-digit INE municipality code                          |
+| `qid`              | Wikidata QID                                           |
+| `commons_filename` | Filename on Commons (with accents, spaces)             |
+| `commons_url`      | Full URL (`https://commons.wikimedia.org/wiki/File:…`) |
+| `mid`              | Commons media identifier (M-ID) for SDC                |
+| `upload_date`      | Date uploaded (`YYYY-MM-DD`; `NA` for skipped rows)    |
+| `status`           | `"uploaded"` / `"already_exists"` / `"error"`          |
+| `file`             | Local SVG path                                         |
+| `size_kb`          | SVG file size in KB                                    |
+| `muni_gadm`        | Original GADM name (for diagnostics)                   |
+
+------------------------------------------------------------------------
+
+## Results
+
+| Metric                     | Value      |
+|----------------------------|------------|
+| Maps generated             | 339        |
+| Maps uploaded (main batch) | 318        |
+| Already existed on Commons | 2          |
+| Average SVG size           | 2,837 KB   |
+| Upload date                | 2026-05-15 |
+| Wikidata QIDs linked       | 320 / 320  |
+
+------------------------------------------------------------------------
+
+## Sample Maps
+
+Representative examples across Bolivia's geography and departments:
+
+| Municipality | Department | Commons page |
+|----|----|----|
+| Sucre | Chuquisaca | [Sucre muni locator map](https://commons.wikimedia.org/wiki/File:Sucre_muni_locator_map.svg) |
+| Oruro | Oruro | [Oruro muni locator map](https://commons.wikimedia.org/wiki/File:Oruro_muni_locator_map.svg) |
+| Potosí | Potosí | [Potosí muni locator map](https://commons.wikimedia.org/wiki/File:Potosí_muni_locator_map.svg) |
+| Santa Cruz de la Sierra | Santa Cruz | [Santa Cruz de la Sierra muni locator map](https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_la_Sierra_muni_locator_map.svg) |
+| Cobija | Pando | [Cobija muni locator map](https://commons.wikimedia.org/wiki/File:Cobija_muni_locator_map.svg) |
+| Tarija | Tarija | [Tarija muni locator map](https://commons.wikimedia.org/wiki/File:Tarija_muni_locator_map.svg) |
+| El Puente (disambiguation) | Santa Cruz | [El Puente (Santa Cruz) muni locator map](https://commons.wikimedia.org/wiki/File:El_Puente_(Santa_Cruz)_muni_locator_map.svg) |
+| El Puente (disambiguation) | Tarija | [El Puente (Tarija) muni locator map](https://commons.wikimedia.org/wiki/File:El_Puente_(Tarija)_muni_locator_map.svg) |
+
+------------------------------------------------------------------------
+
+## Commons Pages
+
+- **Category**: [Locator maps of municipalities in Bolivia](https://commons.wikimedia.org/wiki/Category:Locator_maps_of_municipalities_in_Bolivia)
+- **Bot contributions**: [Carwil\@Bolivia_locator_maps](https://commons.wikimedia.org/wiki/Special:Contributions/Carwil@Bolivia_locator_maps)
+
+------------------------------------------------------------------------
+
+## Adapting for Another Country
+
+The pipeline is generic. To adapt it:
+
+**1. Replace GADM data**
+
+Download GADM for your country at level 2 or 3 (whichever is the target administrative level). Update the `st_read()` calls and the `NAME_3`/`NAME_1` column references to match the GADM field names for your country.
+
+**2. Adjust neighboring countries**
+
+In `prepare_shared_layers()`, change the `filter(ADMIN %in% c(...))` to list your country's neighbors.
+
+**3. Update the bounding box**
+
+Change `bbox_xmin`, `bbox_xmax`, `bbox_ymin`, `bbox_ymax` in `params` to cover your country.
+
+**4. Check for lake or coastal features**
+
+If your country has major internal lakes (like Titicaca), add them from the Natural Earth lakes dataset or handle them similarly. If your country has a coastline, the gap-fill and ocean logic should generalize without changes.
+
+**5. Adjust the tripoint fix**
+
+The Chile–Peru–Brazil tripoint fix is Bolivia-specific. For other countries, inspect the neighbor border joins for similar gaps near tripoints and adjust accordingly.
+
+**6. Update wikitext and categories**
+
+Change the descriptions in `build_descriptions()` and the category in `build_wikitext()` to match the new country and administrative level. Update the Wikidata properties accordingly if depicting a different administrative level.
+
+**7. Update the municipality name lookup**
+
+The `muni_id_lookup_table` and `municipalities_wd_ine` are Bolivia-specific. For another country you need an equivalent table mapping GADM names to display names and Wikidata QIDs.

@@ -1,4 +1,4 @@
-# generate_locator_maps_workbench.R
+# generate_locator_maps_workbench_hd.R
 # Bolivia Municipal Locator Maps — Experimentation & Batch Script
 #
 # This script consolidates all map generation into one place with tuneable
@@ -61,7 +61,7 @@ params <- list(
   tripoint_buf_peru_brazil = 0.20,  # degrees
 
   # --- Output ---
-  output_dir = "output/locator_maps/muni-maps-final",
+  output_dir = "output/locator_maps/workbench_hd",
   map_height = 10   # inches; width auto-calculated from aspect ratio
 )
 
@@ -115,13 +115,35 @@ colors_2012 <- list(
 
 
 # ==============================================================================
-# §4 — LOAD SOURCE DATA
+# §4 — LOAD SOURCE DATA  (OCHA COD-AB-BOL)
 # ==============================================================================
+# Source: OCHA Common Operational Datasets – Bolivia Administrative Boundaries
+# Downloaded from: humdata.org  (bol_admin_boundaries.shp/)
+#
+# Layers used:
+#   bol_admin3  — 339 municipalities (ADM3); no Lago Titicaca row
+#   bol_admin2  — 112 provinces (ADM2)
+#   bol_admin1  —   9 departments (ADM1)
+#
+# OCHA uses adm3_name / adm2_name / adm1_name.  They are renamed at load
+# time to NAME_3 / NAME_2 / NAME_1 so that all downstream code (§5–§7) is
+# unchanged.  Because OCHA carries no "Lago Titicaca" municipality polygon,
+# mun_lake in §5 will be an empty sf object; Lake Titicaca is rendered
+# instead via the Natural Earth lakes layer (titicaca_full).
 
-cat("Loading GADM...\n")
-gadm      <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3", quiet = TRUE)
-gadm_adm2 <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_2", quiet = TRUE)
-gadm_adm1 <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_1", quiet = TRUE)
+ocha_dir <- "../ultimate-consequences/maps/humdata.org_cod-ab-bol/bol_admin_boundaries.shp"
+
+cat("Loading OCHA admin3 (municipalities)...\n")
+gadm <- st_read(file.path(ocha_dir, "bol_admin3.shp"), quiet = TRUE) |>
+  rename(NAME_3 = adm3_name, NAME_2 = adm2_name, NAME_1 = adm1_name)
+
+cat("Loading OCHA admin2 (provinces)...\n")
+gadm_adm2 <- st_read(file.path(ocha_dir, "bol_admin2.shp"), quiet = TRUE) |>
+  rename(NAME_2 = adm2_name, NAME_1 = adm1_name)
+
+cat("Loading OCHA admin1 (departments)...\n")
+gadm_adm1 <- st_read(file.path(ocha_dir, "bol_admin1.shp"), quiet = TRUE) |>
+  rename(NAME_1 = adm1_name)
 
 dupe_muni_names <- gadm |>
   st_drop_geometry() |>
@@ -184,8 +206,12 @@ prepare_shared_layers <- function(p = params) {
   # Simplify
   mun_regular_s <- ms_simplify(mun_regular, keep = p$simp_municipalities,
                                 keep_shapes = TRUE)
-  mun_lake_s    <- ms_simplify(mun_lake, keep = p$simp_municipalities,
-                                keep_shapes = TRUE)
+  # OCHA has no "Lago Titicaca" municipality; guard against empty input
+  mun_lake_s <- if (nrow(mun_lake) > 0) {
+    ms_simplify(mun_lake, keep = p$simp_municipalities, keep_shapes = TRUE)
+  } else {
+    mun_lake
+  }
   bol_outline_s <- ms_simplify(bol_outline_raw, keep = p$simp_bolivia_outline,
                                 keep_shapes = TRUE)
   prov_s        <- ms_simplify(gadm_adm2 |> st_make_valid(),
@@ -501,3 +527,237 @@ cat("\n",
 log_path <- file.path(params$output_dir, "batch_log.csv")
 write.csv(results_df, log_path, row.names = FALSE)
 cat("Log written to", log_path, "\n")
+
+
+# ==============================================================================
+# §8 — PROVINCIAL LOCATOR MAPS
+# ==============================================================================
+# Generates one locator map per province (112 total), highlighting all
+# municipalities in the target province in red.  Municipality borders are shown
+# within non-target areas; the target province boundary is redrawn boldly on
+# top for clarity.  Reuses shared_layers from §7 (same bbox and simplification).
+#
+# Layer order (matches municipality maps):
+#   0  gray bbox background
+#   1  blue ocean (Pacific)
+#   2  gray neighbouring countries
+#   3  blue Lake Titicaca (NE)
+#   4  gray gap fill
+#   5  cream Bolivia fill
+#   6  cream other municipalities  (with faint muni borders)
+#   7  blue Lake Titicaca GADM polygons
+#   8  red target-province municipalities  (no internal borders → clean fill)
+#   9  all province outlines  (lw_prov_borders)
+#  10  target province outline redrawn  (lw_target_border — makes it stand out)
+#  11  departmental outlines  (lw_dept_borders)
+#  12  neighbour borders
+#  13  Bolivia international border
+
+
+# ==============================================================================
+# §8a — PARAMETERS & PROVINCE SELECTION
+# ==============================================================================
+
+params_prov <- modifyList(params, list(
+  output_dir = "output/locator_maps/prov-maps-hd",
+  lw_mun_borders       = 0.10,   # internal municipality boundaries
+  lw_prov_borders      = 0.30,  # provincial boundaries
+  lw_dept_borders      = 0.50   # departmental boundaries
+  ))
+
+# Province names that appear in more than one department — need dept disambiguator.
+dupe_prov_names <- gadm_adm2 |>
+  st_drop_geometry() |>
+  count(NAME_2) |>
+  filter(n > 1) |>
+  pull(NAME_2)
+
+prov_run_all <- FALSE
+
+# Intentionally diverse test set: capital provinces, Cercado duplicate, large/small.
+test_provinces_tbl <- tribble(
+  ~province,                    ~department,
+  "Cercado",                    "Cochabamba",   # duplicate name — triggers disambiguator
+  "Cercado",                    "Oruro",
+  "Oropeza",                    "Chuquisaca",   # includes Sucre
+  "Pedro Domingo Murillo",      "La Paz",       # includes La Paz city
+  "Andrés Ibáñez",              "Santa Cruz",   # includes Santa Cruz city
+  "Tomás Frías",                "Potosí",       # includes Potosí city
+  "Iténez",                     "Beni",         # lowland, large
+  "Méndez",                     "Tarija"
+)
+
+# Per-province parameter overrides (same structure as per_muni_overrides).
+# Keys are "province|department".
+per_prov_overrides <- list()
+
+
+# ==============================================================================
+# §8b — PROVINCE MAP GENERATION FUNCTION
+# ==============================================================================
+
+generate_prov_locator_map <- function(province, department, layers, p = params_prov) {
+
+  # All municipalities in the target province
+  target <- layers$mun_regular |>
+    filter(NAME_2 == province, NAME_1 == department)
+  if (nrow(target) == 0) {
+    warning("Province not found in layer data: ", province, " (", department, ")")
+    return(invisible(NULL))
+  }
+
+  others <- layers$mun_regular |>
+    filter(!(NAME_2 == province & NAME_1 == department))
+
+  # Target province outline (for bold redraw on top of red fill)
+  target_prov <- layers$prov_outline |>
+    filter(NAME_2 == province, NAME_1 == department)
+
+  map_w <- (p$bbox_xmax - p$bbox_xmin) *
+    cos(((p$bbox_ymin + p$bbox_ymax) / 2) * pi / 180) /
+    (p$bbox_ymax - p$bbox_ymin) * p$map_height
+
+  plot <- ggplot() +
+    # 0. Full-bbox gray background
+    geom_sf(data = layers$bbox_bg,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 1. Ocean (Pacific)
+    geom_sf(data = layers$pacific,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 2. Neighbouring countries
+    geom_sf(data = layers$ne_neighbors,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 3. Lake Titicaca (NE, incl. Peruvian waters)
+    geom_sf(data = layers$titicaca_full,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 4. Gap fill
+    geom_sf(data = layers$gap_fill,
+            fill = colors_2012$surrounding_external, color = NA) +
+    # 5. Bolivia cream fill
+    geom_sf(data = layers$bol_cream,
+            fill = colors_2012$surrounding_internal, color = NA) +
+    # 6. Other municipalities (cream with faint borders)
+    geom_sf(data = others,
+            fill = colors_2012$surrounding_internal,
+            color = colors_2012$borders, linewidth = p$lw_mun_borders) +
+    # 7. Lake Titicaca GADM polygons
+    geom_sf(data = layers$mun_lake,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 8. Target province municipalities (red, no internal borders)
+    geom_sf(data = target,
+            fill = colors_2012$territory_of_interest, color = NA) +
+    # 9. All province outlines
+    geom_sf(data = layers$prov_outline,
+            fill = NA, color = colors_2012$borders,
+            linewidth = p$lw_prov_borders) +
+    # 10. Target province outline redrawn boldly
+    geom_sf(data = target_prov,
+            fill = NA, color = colors_2012$borders,
+            linewidth = p$lw_target_border) +
+    # 11. Departmental boundaries
+    geom_sf(data = layers$dept_outline,
+            fill = NA, color = colors_2012$borders,
+            linewidth = p$lw_dept_borders) +
+    # 12. Neighbour borders (Bolivia side removed)
+    geom_sf(data = layers$neighbor_borders,
+            fill = NA, color = colors_2012$borders,
+            linewidth = p$lw_neighbor_borders) +
+    # 13. Bolivia international border
+    geom_sf(data = layers$bol_outline,
+            fill = NA, color = colors_2012$borders,
+            linewidth = p$lw_bolivia_outline) +
+    coord_sf(xlim   = c(p$bbox_xmin, p$bbox_xmax),
+             ylim   = c(p$bbox_ymin, p$bbox_ymax),
+             expand = FALSE, datum = NA) +
+    theme_void() +
+    theme(
+      plot.background  = element_rect(fill = colors_2012$water_bodies, color = NA),
+      panel.background = element_rect(fill = colors_2012$water_bodies, color = NA),
+      plot.margin      = unit(c(0, 0, 0, 0), "mm")
+    )
+
+  dir.create(p$output_dir, recursive = TRUE, showWarnings = FALSE)
+
+  clean_name <- stringi::stri_trans_general(province,   "Latin-ASCII")
+  clean_dept <- stringi::stri_trans_general(department, "Latin-ASCII")
+  if (province %in% dupe_prov_names) {
+    safe_name <- gsub("[^a-zA-Z0-9_()-]", "_",
+                      paste0(clean_name, "_(", clean_dept, ")"))
+  } else {
+    safe_name <- gsub("[^a-zA-Z0-9_-]", "_", clean_name)
+  }
+
+  out_path <- file.path(p$output_dir, paste0(safe_name, "_prov_locator_map.svg"))
+  ggsave(out_path, plot, device = "svg",
+         width = map_w, height = p$map_height, units = "in")
+
+  list(province = province, department = department,
+       file = out_path, size_kb = round(file.size(out_path) / 1024, 1))
+}
+
+
+# ==============================================================================
+# §8c — RUN PROVINCIAL MAPS
+# ==============================================================================
+
+if (prov_run_all) {
+  prov_tbl <- gadm_adm2 |>
+    st_drop_geometry() |>
+    distinct(province = NAME_2, department = NAME_1) |>
+    arrange(department, province)
+  cat("BATCH MODE:", nrow(prov_tbl), "provinces\n")
+} else {
+  prov_tbl <- test_provinces_tbl
+  cat("TEST MODE:", nrow(prov_tbl), "provinces\n")
+}
+
+# Reuse shared_layers prepared in §7 (same bbox and simplification settings).
+# If §7 has not been run yet, uncomment the next line:
+# shared_layers <- prepare_shared_layers(params)
+
+prov_results <- vector("list", nrow(prov_tbl))
+t0_prov <- Sys.time()
+
+for (i in seq_len(nrow(prov_tbl))) {
+  prov_name <- prov_tbl$province[i]
+  dept_name <- prov_tbl$department[i]
+  prov_key  <- paste0(prov_name, "|", dept_name)
+
+  p_this <- params_prov
+  if (prov_key %in% names(per_prov_overrides)) {
+    overrides <- per_prov_overrides[[prov_key]]
+    for (nm in names(overrides)) p_this[[nm]] <- overrides[[nm]]
+
+    simp_changed <- any(c("simp_municipalities", "simp_bolivia_outline") %in%
+                          names(overrides))
+    if (simp_changed) {
+      cat("  [override] Re-simplifying layers for", prov_name, "(", dept_name, ")\n")
+      layers_this <- prepare_shared_layers(p_this)
+    } else {
+      layers_this <- shared_layers
+    }
+  } else {
+    layers_this <- shared_layers
+  }
+
+  prov_results[[i]] <- generate_prov_locator_map(prov_name, dept_name, layers_this, p_this)
+
+  elapsed <- as.numeric(difftime(Sys.time(), t0_prov, units = "secs"))
+  rate    <- elapsed / i
+  eta     <- rate * (nrow(prov_tbl) - i)
+  cat(sprintf("[%3d/%d] %-40s %-15s  %5.1f KB  (ETA %s)\n",
+              i, nrow(prov_tbl), prov_name, dept_name,
+              prov_results[[i]]$size_kb %||% NA,
+              if (eta > 60) sprintf("%.0f min", eta / 60) else sprintf("%.0f s", eta)))
+}
+
+prov_results_df <- do.call(rbind, lapply(Filter(Negate(is.null), prov_results), as.data.frame))
+cat("\n",
+    nrow(prov_results_df), "maps generated |",
+    "avg", round(mean(prov_results_df$size_kb), 0), "KB |",
+    "total", round(sum(prov_results_df$size_kb) / 1024, 1), "MB |",
+    round(as.numeric(difftime(Sys.time(), t0_prov, units = "secs")), 0), "sec\n")
+
+prov_log_path <- file.path(params_prov$output_dir, "batch_log.csv")
+write.csv(prov_results_df, prov_log_path, row.names = FALSE)
+cat("Log written to", prov_log_path, "\n")

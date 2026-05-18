@@ -11,3 +11,6 @@
 bolivia-censo-2024_cache/html/*
 
 docs/ine_igm_spatial_inspection_cache/
+output/locator_maps/workbench/*
+output/locator_maps/*map.svg
+output/locator_maps/*/*map.svg
