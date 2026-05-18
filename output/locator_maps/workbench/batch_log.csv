@@ -1,10 +1,340 @@
 "municipality","department","file","size_kb"
-"Trinidad","Beni","output/locator_maps/workbench/Trinidad_muni_locator_map.svg",2364.5
-"Sucre","Chuquisaca","output/locator_maps/workbench/Sucre_muni_locator_map.svg",2364.5
-"Cochabamba","Cochabamba","output/locator_maps/workbench/Cochabamba_muni_locator_map.svg",2364.5
-"Nuestra Señora de La Paz","La Paz","output/locator_maps/workbench/Nuestra_Senora_de_La_Paz_muni_locator_map.svg",2364.5
-"Oruro","Oruro","output/locator_maps/workbench/Oruro_muni_locator_map.svg",2364.5
-"Cobija","Pando","output/locator_maps/workbench/Cobija_muni_locator_map.svg",2364.5
-"Potosí","Potosí","output/locator_maps/workbench/Potosi_muni_locator_map.svg",2364.5
-"Santa Cruz de la Sierra","Santa Cruz","output/locator_maps/workbench/Santa_Cruz_de_la_Sierra_muni_locator_map.svg",2364.5
-"Tarija","Tarija","output/locator_maps/workbench/Tarija_muni_locator_map.svg",2364.5
+"Baures","Beni","output/locator_maps/workbench/Baures_muni_locator_map.svg",2837.4
+"Exaltación","Beni","output/locator_maps/workbench/Exaltacion_muni_locator_map.svg",2837.4
+"Guayaramerín","Beni","output/locator_maps/workbench/Guayaramerin_muni_locator_map.svg",2837.4
+"Huacaraje","Beni","output/locator_maps/workbench/Huacaraje_muni_locator_map.svg",2837.4
+"Loreto","Beni","output/locator_maps/workbench/Loreto_muni_locator_map.svg",2837.4
+"Magdalena","Beni","output/locator_maps/workbench/Magdalena_muni_locator_map.svg",2837.4
+"Puerto Menor de Rurrenabaque","Beni","output/locator_maps/workbench/Puerto_Menor_de_Rurrenabaque_muni_locator_map.svg",2837.4
+"Puerto Siles","Beni","output/locator_maps/workbench/Puerto_Siles_muni_locator_map.svg",2837.4
+"Reyes","Beni","output/locator_maps/workbench/Reyes_muni_locator_map.svg",2837.4
+"Riberalta","Beni","output/locator_maps/workbench/Riberalta_muni_locator_map.svg",2837.4
+"San Andrés","Beni","output/locator_maps/workbench/San_Andres_muni_locator_map.svg",2837.4
+"San Borja","Beni","output/locator_maps/workbench/San_Borja_muni_locator_map.svg",2837.4
+"San Ignacio","Beni","output/locator_maps/workbench/San_Ignacio__Beni__muni_locator_map.svg",2837.4
+"San Javier","Beni","output/locator_maps/workbench/San_Javier__Beni__muni_locator_map.svg",2837.4
+"San Joaquín","Beni","output/locator_maps/workbench/San_Joaquin_muni_locator_map.svg",2837.4
+"San Ramón","Beni","output/locator_maps/workbench/San_Ramon__Beni__muni_locator_map.svg",2837.4
+"Santa Ana","Beni","output/locator_maps/workbench/Santa_Ana_muni_locator_map.svg",2837.4
+"Santa Rosa","Beni","output/locator_maps/workbench/Santa_Rosa__Beni__muni_locator_map.svg",2837.4
+"Trinidad","Beni","output/locator_maps/workbench/Trinidad_muni_locator_map.svg",2837.4
+"Alcalá","Chuquisaca","output/locator_maps/workbench/Alcala_muni_locator_map.svg",2837.4
+"Azurduy","Chuquisaca","output/locator_maps/workbench/Azurduy_muni_locator_map.svg",2837.4
+"Camargo","Chuquisaca","output/locator_maps/workbench/Camargo_muni_locator_map.svg",2837.4
+"Culpina","Chuquisaca","output/locator_maps/workbench/Culpina_muni_locator_map.svg",2837.4
+"El Villar","Chuquisaca","output/locator_maps/workbench/El_Villar_muni_locator_map.svg",2837.4
+"Huacareta","Chuquisaca","output/locator_maps/workbench/Huacareta_muni_locator_map.svg",2837.4
+"Huacaya","Chuquisaca","output/locator_maps/workbench/Huacaya_muni_locator_map.svg",2837.4
+"Incahuasi","Chuquisaca","output/locator_maps/workbench/Incahuasi_muni_locator_map.svg",2837.4
+"Las Carreras","Chuquisaca","output/locator_maps/workbench/Las_Carreras_muni_locator_map.svg",2837.4
+"Macharetí","Chuquisaca","output/locator_maps/workbench/Machareti_muni_locator_map.svg",2837.4
+"Mojocoya","Chuquisaca","output/locator_maps/workbench/Mojocoya_muni_locator_map.svg",2837.4
+"Monteagudo","Chuquisaca","output/locator_maps/workbench/Monteagudo_muni_locator_map.svg",2837.4
+"Padilla","Chuquisaca","output/locator_maps/workbench/Padilla_muni_locator_map.svg",2837.4
+"Poroma","Chuquisaca","output/locator_maps/workbench/Poroma_muni_locator_map.svg",2837.4
+"Presto","Chuquisaca","output/locator_maps/workbench/Presto_muni_locator_map.svg",2837.4
+"San Lucas","Chuquisaca","output/locator_maps/workbench/San_Lucas_muni_locator_map.svg",2837.4
+"Sopachui","Chuquisaca","output/locator_maps/workbench/Sopachui_muni_locator_map.svg",2837.4
+"Sucre","Chuquisaca","output/locator_maps/workbench/Sucre_muni_locator_map.svg",2837.4
+"Tarabuco","Chuquisaca","output/locator_maps/workbench/Tarabuco_muni_locator_map.svg",2837.4
+"Tarvita","Chuquisaca","output/locator_maps/workbench/Tarvita_muni_locator_map.svg",2837.4
+"Tomina","Chuquisaca","output/locator_maps/workbench/Tomina_muni_locator_map.svg",2837.4
+"Villa Abecia","Chuquisaca","output/locator_maps/workbench/Villa_Abecia_muni_locator_map.svg",2837.4
+"Villa Charcas","Chuquisaca","output/locator_maps/workbench/Villa_Charcas_muni_locator_map.svg",2837.4
+"Villa Ricardo Mugia - Icla","Chuquisaca","output/locator_maps/workbench/Villa_Ricardo_Mugia_-_Icla_muni_locator_map.svg",2837.4
+"Villa Serrano","Chuquisaca","output/locator_maps/workbench/Villa_Serrano_muni_locator_map.svg",2837.4
+"Villa Vaca Guzmán","Chuquisaca","output/locator_maps/workbench/Villa_Vaca_Guzman_muni_locator_map.svg",2837.4
+"Yamparáez","Chuquisaca","output/locator_maps/workbench/Yamparaez_muni_locator_map.svg",2837.4
+"Yotala","Chuquisaca","output/locator_maps/workbench/Yotala_muni_locator_map.svg",2837.4
+"Zudañez","Chuquisaca","output/locator_maps/workbench/Zudanez_muni_locator_map.svg",2837.4
+"Aiquile","Cochabamba","output/locator_maps/workbench/Aiquile_muni_locator_map.svg",2837.4
+"Alalay","Cochabamba","output/locator_maps/workbench/Alalay_muni_locator_map.svg",2837.4
+"Anzaldo","Cochabamba","output/locator_maps/workbench/Anzaldo_muni_locator_map.svg",2837.4
+"Arani","Cochabamba","output/locator_maps/workbench/Arani_muni_locator_map.svg",2837.4
+"Arbieto","Cochabamba","output/locator_maps/workbench/Arbieto_muni_locator_map.svg",2837.4
+"Arque","Cochabamba","output/locator_maps/workbench/Arque_muni_locator_map.svg",2837.4
+"Ayopaya","Cochabamba","output/locator_maps/workbench/Ayopaya_muni_locator_map.svg",2837.4
+"Bolivar","Cochabamba","output/locator_maps/workbench/Bolivar_muni_locator_map.svg",2837.4
+"Capinota","Cochabamba","output/locator_maps/workbench/Capinota_muni_locator_map.svg",2837.4
+"Chimoré","Cochabamba","output/locator_maps/workbench/Chimore_muni_locator_map.svg",2837.4
+"Cliza","Cochabamba","output/locator_maps/workbench/Cliza_muni_locator_map.svg",2837.4
+"Cocapata","Cochabamba","output/locator_maps/workbench/Cocapata_muni_locator_map.svg",2837.4
+"Cochabamba","Cochabamba","output/locator_maps/workbench/Cochabamba_muni_locator_map.svg",2837.4
+"Colcapirhua","Cochabamba","output/locator_maps/workbench/Colcapirhua_muni_locator_map.svg",2837.4
+"Colomi","Cochabamba","output/locator_maps/workbench/Colomi_muni_locator_map.svg",2837.4
+"Entre Ríos","Cochabamba","output/locator_maps/workbench/Entre_Rios__Cochabamba__muni_locator_map.svg",2837.4
+"Mizque","Cochabamba","output/locator_maps/workbench/Mizque_muni_locator_map.svg",2837.4
+"Morochata","Cochabamba","output/locator_maps/workbench/Morochata_muni_locator_map.svg",2837.4
+"Omereque","Cochabamba","output/locator_maps/workbench/Omereque_muni_locator_map.svg",2837.4
+"Pasorapa","Cochabamba","output/locator_maps/workbench/Pasorapa_muni_locator_map.svg",2837.4
+"Pocona","Cochabamba","output/locator_maps/workbench/Pocona_muni_locator_map.svg",2837.4
+"Pojo","Cochabamba","output/locator_maps/workbench/Pojo_muni_locator_map.svg",2837.4
+"Puerto Villarroel","Cochabamba","output/locator_maps/workbench/Puerto_Villarroel_muni_locator_map.svg",2837.4
+"Punata","Cochabamba","output/locator_maps/workbench/Punata_muni_locator_map.svg",2837.4
+"Quillacollo","Cochabamba","output/locator_maps/workbench/Quillacollo_muni_locator_map.svg",2837.4
+"Sacaba","Cochabamba","output/locator_maps/workbench/Sacaba_muni_locator_map.svg",2837.4
+"Sacabamba","Cochabamba","output/locator_maps/workbench/Sacabamba_muni_locator_map.svg",2837.4
+"San Benito","Cochabamba","output/locator_maps/workbench/San_Benito_muni_locator_map.svg",2837.4
+"Santivañez","Cochabamba","output/locator_maps/workbench/Santivanez_muni_locator_map.svg",2837.4
+"Shinahota","Cochabamba","output/locator_maps/workbench/Shinahota_muni_locator_map.svg",2837.4
+"Sicaya","Cochabamba","output/locator_maps/workbench/Sicaya_muni_locator_map.svg",2837.4
+"Sipesipe","Cochabamba","output/locator_maps/workbench/Sipesipe_muni_locator_map.svg",2837.4
+"Tacachi","Cochabamba","output/locator_maps/workbench/Tacachi_muni_locator_map.svg",2837.4
+"Tacopaya","Cochabamba","output/locator_maps/workbench/Tacopaya_muni_locator_map.svg",2837.4
+"Tapacarí","Cochabamba","output/locator_maps/workbench/Tapacari_muni_locator_map.svg",2837.4
+"Tarata","Cochabamba","output/locator_maps/workbench/Tarata_muni_locator_map.svg",2837.4
+"Tiquipaya","Cochabamba","output/locator_maps/workbench/Tiquipaya_muni_locator_map.svg",2837.4
+"Tiraque","Cochabamba","output/locator_maps/workbench/Tiraque_muni_locator_map.svg",2837.4
+"Toco","Cochabamba","output/locator_maps/workbench/Toco_muni_locator_map.svg",2837.4
+"Tolata","Cochabamba","output/locator_maps/workbench/Tolata_muni_locator_map.svg",2837.4
+"Totora","Cochabamba","output/locator_maps/workbench/Totora__Cochabamba__muni_locator_map.svg",2837.4
+"Vacas","Cochabamba","output/locator_maps/workbench/Vacas_muni_locator_map.svg",2837.4
+"Vila Vila","Cochabamba","output/locator_maps/workbench/Vila_Vila_muni_locator_map.svg",2837.4
+"Villa Gualberto Villarroel","Cochabamba","output/locator_maps/workbench/Villa_Gualberto_Villarroel_muni_locator_map.svg",2837.4
+"Villa Rivero","Cochabamba","output/locator_maps/workbench/Villa_Rivero_muni_locator_map.svg",2837.4
+"Villa Tunari","Cochabamba","output/locator_maps/workbench/Villa_Tunari_muni_locator_map.svg",2837.4
+"Vinto","Cochabamba","output/locator_maps/workbench/Vinto_muni_locator_map.svg",2837.4
+"Achacachi","La Paz","output/locator_maps/workbench/Achacachi_muni_locator_map.svg",2837.4
+"Achocalla","La Paz","output/locator_maps/workbench/Achocalla_muni_locator_map.svg",2837.4
+"Alto Beni","La Paz","output/locator_maps/workbench/Alto_Beni_muni_locator_map.svg",2837.4
+"Apolo","La Paz","output/locator_maps/workbench/Apolo_muni_locator_map.svg",2837.4
+"Aucapata","La Paz","output/locator_maps/workbench/Aucapata_muni_locator_map.svg",2837.4
+"Ayata","La Paz","output/locator_maps/workbench/Ayata_muni_locator_map.svg",2837.4
+"Ayo Ayo","La Paz","output/locator_maps/workbench/Ayo_Ayo_muni_locator_map.svg",2837.4
+"Batallas","La Paz","output/locator_maps/workbench/Batallas_muni_locator_map.svg",2837.4
+"Cairoma","La Paz","output/locator_maps/workbench/Cairoma_muni_locator_map.svg",2837.4
+"Cajuata","La Paz","output/locator_maps/workbench/Cajuata_muni_locator_map.svg",2837.4
+"Calacoto","La Paz","output/locator_maps/workbench/Calacoto_muni_locator_map.svg",2837.4
+"Calamarca","La Paz","output/locator_maps/workbench/Calamarca_muni_locator_map.svg",2837.4
+"Caquiaviri","La Paz","output/locator_maps/workbench/Caquiaviri_muni_locator_map.svg",2837.4
+"Caranavi","La Paz","output/locator_maps/workbench/Caranavi_muni_locator_map.svg",2837.4
+"Catacora","La Paz","output/locator_maps/workbench/Catacora_muni_locator_map.svg",2837.4
+"Chacarilla","La Paz","output/locator_maps/workbench/Chacarilla_muni_locator_map.svg",2837.4
+"Charazani","La Paz","output/locator_maps/workbench/Charazani_muni_locator_map.svg",2837.4
+"Charaña","La Paz","output/locator_maps/workbench/Charana_muni_locator_map.svg",2837.4
+"Chua Cocani","La Paz","output/locator_maps/workbench/Chua_Cocani_muni_locator_map.svg",2837.4
+"Chulumani","La Paz","output/locator_maps/workbench/Chulumani_muni_locator_map.svg",2837.4
+"Chuma","La Paz","output/locator_maps/workbench/Chuma_muni_locator_map.svg",2837.4
+"Collana","La Paz","output/locator_maps/workbench/Collana_muni_locator_map.svg",2837.4
+"Colquencha","La Paz","output/locator_maps/workbench/Colquencha_muni_locator_map.svg",2837.4
+"Colquiri","La Paz","output/locator_maps/workbench/Colquiri_muni_locator_map.svg",2837.4
+"Comanche","La Paz","output/locator_maps/workbench/Comanche_muni_locator_map.svg",2837.4
+"Combaya","La Paz","output/locator_maps/workbench/Combaya_muni_locator_map.svg",2837.4
+"Copacabana","La Paz","output/locator_maps/workbench/Copacabana_muni_locator_map.svg",2837.4
+"Coripata","La Paz","output/locator_maps/workbench/Coripata_muni_locator_map.svg",2837.4
+"Corocoro","La Paz","output/locator_maps/workbench/Corocoro_muni_locator_map.svg",2837.4
+"Coroico","La Paz","output/locator_maps/workbench/Coroico_muni_locator_map.svg",2837.4
+"Curva","La Paz","output/locator_maps/workbench/Curva_muni_locator_map.svg",2837.4
+"Desaguadero","La Paz","output/locator_maps/workbench/Desaguadero_muni_locator_map.svg",2837.4
+"El Alto","La Paz","output/locator_maps/workbench/El_Alto_muni_locator_map.svg",2837.4
+"Escoma","La Paz","output/locator_maps/workbench/Escoma_muni_locator_map.svg",2837.4
+"Guanay","La Paz","output/locator_maps/workbench/Guanay_muni_locator_map.svg",2837.4
+"Huarina","La Paz","output/locator_maps/workbench/Huarina_muni_locator_map.svg",2837.4
+"Huatajata","La Paz","output/locator_maps/workbench/Huatajata_muni_locator_map.svg",2837.4
+"Humanata","La Paz","output/locator_maps/workbench/Humanata_muni_locator_map.svg",2837.4
+"Ichoca","La Paz","output/locator_maps/workbench/Ichoca_muni_locator_map.svg",2837.4
+"Inquisivi","La Paz","output/locator_maps/workbench/Inquisivi_muni_locator_map.svg",2837.4
+"Irupana","La Paz","output/locator_maps/workbench/Irupana_muni_locator_map.svg",2837.4
+"Ixiamas","La Paz","output/locator_maps/workbench/Ixiamas_muni_locator_map.svg",2837.4
+"Jesús de Machaka","La Paz","output/locator_maps/workbench/Jesus_de_Machaka_muni_locator_map.svg",2837.4
+"La (Marka) San Andrés de Machaca","La Paz","output/locator_maps/workbench/La__Marka__San_Andres_de_Machaca_muni_locator_map.svg",2837.4
+"La Asunta","La Paz","output/locator_maps/workbench/La_Asunta_muni_locator_map.svg",2837.4
+"Laja","La Paz","output/locator_maps/workbench/Laja_muni_locator_map.svg",2837.4
+"Luribay","La Paz","output/locator_maps/workbench/Luribay_muni_locator_map.svg",2837.4
+"Malla","La Paz","output/locator_maps/workbench/Malla_muni_locator_map.svg",2837.4
+"Mapiri","La Paz","output/locator_maps/workbench/Mapiri_muni_locator_map.svg",2837.4
+"Mecapaca","La Paz","output/locator_maps/workbench/Mecapaca_muni_locator_map.svg",2837.4
+"Mocomoco","La Paz","output/locator_maps/workbench/Mocomoco_muni_locator_map.svg",2837.4
+"Nazacara de Pacajes","La Paz","output/locator_maps/workbench/Nazacara_de_Pacajes_muni_locator_map.svg",2837.4
+"Nuestra Señora de La Paz","La Paz","output/locator_maps/workbench/Nuestra_Senora_de_La_Paz_muni_locator_map.svg",2837.4
+"Palca","La Paz","output/locator_maps/workbench/Palca_muni_locator_map.svg",2837.4
+"Palos Blancos","La Paz","output/locator_maps/workbench/Palos_Blancos_muni_locator_map.svg",2837.4
+"Papel Pampa","La Paz","output/locator_maps/workbench/Papel_Pampa_muni_locator_map.svg",2837.4
+"Patacamaya","La Paz","output/locator_maps/workbench/Patacamaya_muni_locator_map.svg",2837.4
+"Pelechuco","La Paz","output/locator_maps/workbench/Pelechuco_muni_locator_map.svg",2837.4
+"Pucarani","La Paz","output/locator_maps/workbench/Pucarani_muni_locator_map.svg",2837.4
+"Puerto Acosta","La Paz","output/locator_maps/workbench/Puerto_Acosta_muni_locator_map.svg",2837.4
+"Puerto Mayor de Carabuco","La Paz","output/locator_maps/workbench/Puerto_Mayor_de_Carabuco_muni_locator_map.svg",2837.4
+"Puerto Mayor de Guaqui","La Paz","output/locator_maps/workbench/Puerto_Mayor_de_Guaqui_muni_locator_map.svg",2837.4
+"Puerto Pérez","La Paz","output/locator_maps/workbench/Puerto_Perez_muni_locator_map.svg",2837.4
+"Quiabaya","La Paz","output/locator_maps/workbench/Quiabaya_muni_locator_map.svg",2837.4
+"Quime","La Paz","output/locator_maps/workbench/Quime_muni_locator_map.svg",2837.4
+"San Buenaventura","La Paz","output/locator_maps/workbench/San_Buenaventura_muni_locator_map.svg",2837.4
+"San Pedro de Curahuara","La Paz","output/locator_maps/workbench/San_Pedro_de_Curahuara_muni_locator_map.svg",2837.4
+"San Pedro de Tiquina","La Paz","output/locator_maps/workbench/San_Pedro_de_Tiquina_muni_locator_map.svg",2837.4
+"Santiago de Callapa","La Paz","output/locator_maps/workbench/Santiago_de_Callapa_muni_locator_map.svg",2837.4
+"Santiago de Huata","La Paz","output/locator_maps/workbench/Santiago_de_Huata_muni_locator_map.svg",2837.4
+"Santiago de Machaca","La Paz","output/locator_maps/workbench/Santiago_de_Machaca_muni_locator_map.svg",2837.4
+"Sapahaqui","La Paz","output/locator_maps/workbench/Sapahaqui_muni_locator_map.svg",2837.4
+"Sicasica","La Paz","output/locator_maps/workbench/Sicasica_muni_locator_map.svg",2837.4
+"Sorata","La Paz","output/locator_maps/workbench/Sorata_muni_locator_map.svg",2837.4
+"Tacacoma","La Paz","output/locator_maps/workbench/Tacacoma_muni_locator_map.svg",2837.4
+"Taraco","La Paz","output/locator_maps/workbench/Taraco_muni_locator_map.svg",2837.4
+"Teoponte","La Paz","output/locator_maps/workbench/Teoponte_muni_locator_map.svg",2837.4
+"Tiahuanacu","La Paz","output/locator_maps/workbench/Tiahuanacu_muni_locator_map.svg",2837.4
+"Tipuani","La Paz","output/locator_maps/workbench/Tipuani_muni_locator_map.svg",2837.4
+"Tito Yupanqui","La Paz","output/locator_maps/workbench/Tito_Yupanqui_muni_locator_map.svg",2837.4
+"Umala","La Paz","output/locator_maps/workbench/Umala_muni_locator_map.svg",2837.4
+"Viacha","La Paz","output/locator_maps/workbench/Viacha_muni_locator_map.svg",2837.4
+"Villa Ancoraimes","La Paz","output/locator_maps/workbench/Villa_Ancoraimes_muni_locator_map.svg",2837.4
+"Villa Libertad Licoma","La Paz","output/locator_maps/workbench/Villa_Libertad_Licoma_muni_locator_map.svg",2837.4
+"Waldo Ballivian","La Paz","output/locator_maps/workbench/Waldo_Ballivian_muni_locator_map.svg",2837.4
+"Yaco","La Paz","output/locator_maps/workbench/Yaco_muni_locator_map.svg",2837.4
+"Yanacachi","La Paz","output/locator_maps/workbench/Yanacachi_muni_locator_map.svg",2837.4
+"Andamarca","Oruro","output/locator_maps/workbench/Andamarca_muni_locator_map.svg",2837.4
+"Antequera","Oruro","output/locator_maps/workbench/Antequera_muni_locator_map.svg",2837.4
+"Belén de Andamarca","Oruro","output/locator_maps/workbench/Belen_de_Andamarca_muni_locator_map.svg",2837.4
+"Caracollo","Oruro","output/locator_maps/workbench/Caracollo_muni_locator_map.svg",2837.4
+"Carangas","Oruro","output/locator_maps/workbench/Carangas_muni_locator_map.svg",2837.4
+"Challapata","Oruro","output/locator_maps/workbench/Challapata_muni_locator_map.svg",2837.4
+"Chipaya","Oruro","output/locator_maps/workbench/Chipaya_muni_locator_map.svg",2837.4
+"Choquecota","Oruro","output/locator_maps/workbench/Choquecota_muni_locator_map.svg",2837.4
+"Coipasa","Oruro","output/locator_maps/workbench/Coipasa_muni_locator_map.svg",2837.4
+"Corque","Oruro","output/locator_maps/workbench/Corque_muni_locator_map.svg",2837.4
+"Cruz de Machacamarca","Oruro","output/locator_maps/workbench/Cruz_de_Machacamarca_muni_locator_map.svg",2837.4
+"Curahuara de Carangas","Oruro","output/locator_maps/workbench/Curahuara_de_Carangas_muni_locator_map.svg",2837.4
+"El Choro","Oruro","output/locator_maps/workbench/El_Choro_muni_locator_map.svg",2837.4
+"Escara","Oruro","output/locator_maps/workbench/Escara_muni_locator_map.svg",2837.4
+"Esmeralda","Oruro","output/locator_maps/workbench/Esmeralda_muni_locator_map.svg",2837.4
+"Eucaliptus","Oruro","output/locator_maps/workbench/Eucaliptus_muni_locator_map.svg",2837.4
+"Huachacalla","Oruro","output/locator_maps/workbench/Huachacalla_muni_locator_map.svg",2837.4
+"Huanuni","Oruro","output/locator_maps/workbench/Huanuni_muni_locator_map.svg",2837.4
+"Huayllamarca","Oruro","output/locator_maps/workbench/Huayllamarca_muni_locator_map.svg",2837.4
+"La Rivera","Oruro","output/locator_maps/workbench/La_Rivera_muni_locator_map.svg",2837.4
+"Machacamarca","Oruro","output/locator_maps/workbench/Machacamarca_muni_locator_map.svg",2837.4
+"Oruro","Oruro","output/locator_maps/workbench/Oruro_muni_locator_map.svg",2837.4
+"Pampa Aullagas","Oruro","output/locator_maps/workbench/Pampa_Aullagas_muni_locator_map.svg",2837.4
+"Paria","Oruro","output/locator_maps/workbench/Paria_muni_locator_map.svg",2837.4
+"Pazña","Oruro","output/locator_maps/workbench/Pazna_muni_locator_map.svg",2837.4
+"Poopó","Oruro","output/locator_maps/workbench/Poopo_muni_locator_map.svg",2837.4
+"Sabaya","Oruro","output/locator_maps/workbench/Sabaya_muni_locator_map.svg",2837.4
+"Salinas de Garcí Mendoza","Oruro","output/locator_maps/workbench/Salinas_de_Garci_Mendoza_muni_locator_map.svg",2837.4
+"Santiago de Huari","Oruro","output/locator_maps/workbench/Santiago_de_Huari_muni_locator_map.svg",2837.4
+"Santuario de Quillacas","Oruro","output/locator_maps/workbench/Santuario_de_Quillacas_muni_locator_map.svg",2837.4
+"Todos Santos","Oruro","output/locator_maps/workbench/Todos_Santos_muni_locator_map.svg",2837.4
+"Toledo","Oruro","output/locator_maps/workbench/Toledo_muni_locator_map.svg",2837.4
+"Totora","Oruro","output/locator_maps/workbench/Totora__Oruro__muni_locator_map.svg",2837.4
+"Turco","Oruro","output/locator_maps/workbench/Turco_muni_locator_map.svg",2837.4
+"Yunguyo del Litoral","Oruro","output/locator_maps/workbench/Yunguyo_del_Litoral_muni_locator_map.svg",2837.4
+"Bella Flor","Pando","output/locator_maps/workbench/Bella_Flor_muni_locator_map.svg",2837.4
+"Bolpebra","Pando","output/locator_maps/workbench/Bolpebra_muni_locator_map.svg",2837.4
+"Cobija","Pando","output/locator_maps/workbench/Cobija_muni_locator_map.svg",2837.4
+"Filadelfia","Pando","output/locator_maps/workbench/Filadelfia_muni_locator_map.svg",2837.4
+"Ingavi","Pando","output/locator_maps/workbench/Ingavi_muni_locator_map.svg",2837.4
+"Nueva Esperanza","Pando","output/locator_maps/workbench/Nueva_Esperanza_muni_locator_map.svg",2837.4
+"Porvenir","Pando","output/locator_maps/workbench/Porvenir_muni_locator_map.svg",2837.4
+"Puerto Gonzalo Moreno","Pando","output/locator_maps/workbench/Puerto_Gonzalo_Moreno_muni_locator_map.svg",2837.4
+"Puerto Rico","Pando","output/locator_maps/workbench/Puerto_Rico_muni_locator_map.svg",2837.4
+"San Lorenzo","Pando","output/locator_maps/workbench/San_Lorenzo__Pando__muni_locator_map.svg",2837.4
+"San Pedro","Pando","output/locator_maps/workbench/San_Pedro__Pando__muni_locator_map.svg",2837.4
+"Santa Rosa","Pando","output/locator_maps/workbench/Santa_Rosa__Pando__muni_locator_map.svg",2837.4
+"Santos Mercado","Pando","output/locator_maps/workbench/Santos_Mercado_muni_locator_map.svg",2837.4
+"Sena","Pando","output/locator_maps/workbench/Sena_muni_locator_map.svg",2837.4
+"Villa Nueva","Pando","output/locator_maps/workbench/Villa_Nueva_muni_locator_map.svg",2837.4
+"Acasio","Potosí","output/locator_maps/workbench/Acasio_muni_locator_map.svg",2837.4
+"Arampampa","Potosí","output/locator_maps/workbench/Arampampa_muni_locator_map.svg",2837.4
+"Atocha","Potosí","output/locator_maps/workbench/Atocha_muni_locator_map.svg",2837.4
+"Betanzos","Potosí","output/locator_maps/workbench/Betanzos_muni_locator_map.svg",2837.4
+"Caiza ""D""","Potosí","output/locator_maps/workbench/Caiza__D__muni_locator_map.svg",2837.4
+"Caripuyo","Potosí","output/locator_maps/workbench/Caripuyo_muni_locator_map.svg",2837.4
+"Chaquí","Potosí","output/locator_maps/workbench/Chaqui_muni_locator_map.svg",2837.4
+"Chayanta","Potosí","output/locator_maps/workbench/Chayanta_muni_locator_map.svg",2837.4
+"Chuquihuta Ayllu Jucumani","Potosí","output/locator_maps/workbench/Chuquihuta_Ayllu_Jucumani_muni_locator_map.svg",2837.4
+"Ckochas","Potosí","output/locator_maps/workbench/Ckochas_muni_locator_map.svg",2837.4
+"Colcha ""K""","Potosí","output/locator_maps/workbench/Colcha__K__muni_locator_map.svg",2837.4
+"Colquechaca","Potosí","output/locator_maps/workbench/Colquechaca_muni_locator_map.svg",2837.4
+"Cotagaita","Potosí","output/locator_maps/workbench/Cotagaita_muni_locator_map.svg",2837.4
+"Llallagua","Potosí","output/locator_maps/workbench/Llallagua_muni_locator_map.svg",2837.4
+"Llica","Potosí","output/locator_maps/workbench/Llica_muni_locator_map.svg",2837.4
+"Mojinete","Potosí","output/locator_maps/workbench/Mojinete_muni_locator_map.svg",2837.4
+"Ocurí","Potosí","output/locator_maps/workbench/Ocuri_muni_locator_map.svg",2837.4
+"Pocoata","Potosí","output/locator_maps/workbench/Pocoata_muni_locator_map.svg",2837.4
+"Porco","Potosí","output/locator_maps/workbench/Porco_muni_locator_map.svg",2837.4
+"Potosí","Potosí","output/locator_maps/workbench/Potosi_muni_locator_map.svg",2837.4
+"Puna","Potosí","output/locator_maps/workbench/Puna_muni_locator_map.svg",2837.4
+"Ravelo","Potosí","output/locator_maps/workbench/Ravelo_muni_locator_map.svg",2837.4
+"Sacaca","Potosí","output/locator_maps/workbench/Sacaca_muni_locator_map.svg",2837.4
+"San Agustín","Potosí","output/locator_maps/workbench/San_Agustin_muni_locator_map.svg",2837.4
+"San Antonio de Esmoruco","Potosí","output/locator_maps/workbench/San_Antonio_de_Esmoruco_muni_locator_map.svg",2837.4
+"San Pablo","Potosí","output/locator_maps/workbench/San_Pablo_muni_locator_map.svg",2837.4
+"San Pedro","Potosí","output/locator_maps/workbench/San_Pedro__Potosi__muni_locator_map.svg",2837.4
+"San Pedro de Quemes","Potosí","output/locator_maps/workbench/San_Pedro_de_Quemes_muni_locator_map.svg",2837.4
+"Tacobamba","Potosí","output/locator_maps/workbench/Tacobamba_muni_locator_map.svg",2837.4
+"Tahua","Potosí","output/locator_maps/workbench/Tahua_muni_locator_map.svg",2837.4
+"Tinguipaya","Potosí","output/locator_maps/workbench/Tinguipaya_muni_locator_map.svg",2837.4
+"Tomave","Potosí","output/locator_maps/workbench/Tomave_muni_locator_map.svg",2837.4
+"Toro Toro","Potosí","output/locator_maps/workbench/Toro_Toro_muni_locator_map.svg",2837.4
+"Tupiza","Potosí","output/locator_maps/workbench/Tupiza_muni_locator_map.svg",2837.4
+"Uncía","Potosí","output/locator_maps/workbench/Uncia_muni_locator_map.svg",2837.4
+"Urmiri","Potosí","output/locator_maps/workbench/Urmiri_muni_locator_map.svg",2837.4
+"Uyuni","Potosí","output/locator_maps/workbench/Uyuni_muni_locator_map.svg",2837.4
+"Villazón","Potosí","output/locator_maps/workbench/Villazon_muni_locator_map.svg",2837.4
+"Vitiche","Potosí","output/locator_maps/workbench/Vitiche_muni_locator_map.svg",2837.4
+"Yocalla","Potosí","output/locator_maps/workbench/Yocalla_muni_locator_map.svg",2837.4
+"Ascención de Guarayos","Santa Cruz","output/locator_maps/workbench/Ascencion_de_Guarayos_muni_locator_map.svg",2837.4
+"Boyuibe","Santa Cruz","output/locator_maps/workbench/Boyuibe_muni_locator_map.svg",2837.4
+"Buena Vista","Santa Cruz","output/locator_maps/workbench/Buena_Vista_muni_locator_map.svg",2837.4
+"Cabezas","Santa Cruz","output/locator_maps/workbench/Cabezas_muni_locator_map.svg",2837.4
+"Camiri","Santa Cruz","output/locator_maps/workbench/Camiri_muni_locator_map.svg",2837.4
+"Charagua","Santa Cruz","output/locator_maps/workbench/Charagua_muni_locator_map.svg",2837.4
+"Colpa Bélgica","Santa Cruz","output/locator_maps/workbench/Colpa_Belgica_muni_locator_map.svg",2837.4
+"Comarapa","Santa Cruz","output/locator_maps/workbench/Comarapa_muni_locator_map.svg",2837.4
+"Concepción","Santa Cruz","output/locator_maps/workbench/Concepcion_muni_locator_map.svg",2837.4
+"Cotoca","Santa Cruz","output/locator_maps/workbench/Cotoca_muni_locator_map.svg",2837.4
+"Cuatro Cañadas","Santa Cruz","output/locator_maps/workbench/Cuatro_Canadas_muni_locator_map.svg",2837.4
+"Cuevo","Santa Cruz","output/locator_maps/workbench/Cuevo_muni_locator_map.svg",2837.4
+"El Carmen Rivero Tórrez","Santa Cruz","output/locator_maps/workbench/El_Carmen_Rivero_Torrez_muni_locator_map.svg",2837.4
+"El Puente","Santa Cruz","output/locator_maps/workbench/El_Puente__Santa_Cruz__muni_locator_map.svg",2837.4
+"El Torno","Santa Cruz","output/locator_maps/workbench/El_Torno_muni_locator_map.svg",2837.4
+"Fernández Alonso","Santa Cruz","output/locator_maps/workbench/Fernandez_Alonso_muni_locator_map.svg",2837.4
+"General Saavedra","Santa Cruz","output/locator_maps/workbench/General_Saavedra_muni_locator_map.svg",2837.4
+"Gutiérrez","Santa Cruz","output/locator_maps/workbench/Gutierrez_muni_locator_map.svg",2837.4
+"La Guardia","Santa Cruz","output/locator_maps/workbench/La_Guardia_muni_locator_map.svg",2837.4
+"Lagunillas","Santa Cruz","output/locator_maps/workbench/Lagunillas_muni_locator_map.svg",2837.4
+"Mairana","Santa Cruz","output/locator_maps/workbench/Mairana_muni_locator_map.svg",2837.4
+"Mineros","Santa Cruz","output/locator_maps/workbench/Mineros_muni_locator_map.svg",2837.4
+"Montero","Santa Cruz","output/locator_maps/workbench/Montero_muni_locator_map.svg",2837.4
+"Moromoro","Santa Cruz","output/locator_maps/workbench/Moromoro_muni_locator_map.svg",2837.4
+"Okinawa Uno","Santa Cruz","output/locator_maps/workbench/Okinawa_Uno_muni_locator_map.svg",2837.4
+"Pailón","Santa Cruz","output/locator_maps/workbench/Pailon_muni_locator_map.svg",2837.4
+"Pampa Grande","Santa Cruz","output/locator_maps/workbench/Pampa_Grande_muni_locator_map.svg",2837.4
+"Porongo","Santa Cruz","output/locator_maps/workbench/Porongo_muni_locator_map.svg",2837.4
+"Portachuelo","Santa Cruz","output/locator_maps/workbench/Portachuelo_muni_locator_map.svg",2837.4
+"Postrervalle","Santa Cruz","output/locator_maps/workbench/Postrervalle_muni_locator_map.svg",2837.4
+"Pucará","Santa Cruz","output/locator_maps/workbench/Pucara_muni_locator_map.svg",2837.4
+"Puerto Quijarro","Santa Cruz","output/locator_maps/workbench/Puerto_Quijarro_muni_locator_map.svg",2837.4
+"Puerto Suarez","Santa Cruz","output/locator_maps/workbench/Puerto_Suarez_muni_locator_map.svg",2837.4
+"Quirusillas","Santa Cruz","output/locator_maps/workbench/Quirusillas_muni_locator_map.svg",2837.4
+"Roboré","Santa Cruz","output/locator_maps/workbench/Robore_muni_locator_map.svg",2837.4
+"Saipina","Santa Cruz","output/locator_maps/workbench/Saipina_muni_locator_map.svg",2837.4
+"Samaipata","Santa Cruz","output/locator_maps/workbench/Samaipata_muni_locator_map.svg",2837.4
+"San Antonio de Lomerio","Santa Cruz","output/locator_maps/workbench/San_Antonio_de_Lomerio_muni_locator_map.svg",2837.4
+"San Carlos","Santa Cruz","output/locator_maps/workbench/San_Carlos_muni_locator_map.svg",2837.4
+"San Ignacio","Santa Cruz","output/locator_maps/workbench/San_Ignacio__Santa_Cruz__muni_locator_map.svg",2837.4
+"San Javier","Santa Cruz","output/locator_maps/workbench/San_Javier__Santa_Cruz__muni_locator_map.svg",2837.4
+"San José","Santa Cruz","output/locator_maps/workbench/San_Jose_muni_locator_map.svg",2837.4
+"San Juan","Santa Cruz","output/locator_maps/workbench/San_Juan_muni_locator_map.svg",2837.4
+"San Julián","Santa Cruz","output/locator_maps/workbench/San_Julian_muni_locator_map.svg",2837.4
+"San Matías","Santa Cruz","output/locator_maps/workbench/San_Matias_muni_locator_map.svg",2837.4
+"San Miguel","Santa Cruz","output/locator_maps/workbench/San_Miguel_muni_locator_map.svg",2837.4
+"San Pedro","Santa Cruz","output/locator_maps/workbench/San_Pedro__Santa_Cruz__muni_locator_map.svg",2837.4
+"San Rafael","Santa Cruz","output/locator_maps/workbench/San_Rafael_muni_locator_map.svg",2837.4
+"San Ramón","Santa Cruz","output/locator_maps/workbench/San_Ramon__Santa_Cruz__muni_locator_map.svg",2837.4
+"Santa Cruz de la Sierra","Santa Cruz","output/locator_maps/workbench/Santa_Cruz_de_la_Sierra_muni_locator_map.svg",2837.4
+"Santa Rosa","Santa Cruz","output/locator_maps/workbench/Santa_Rosa__Santa_Cruz__muni_locator_map.svg",2837.4
+"Trigal","Santa Cruz","output/locator_maps/workbench/Trigal_muni_locator_map.svg",2837.4
+"Urubicha","Santa Cruz","output/locator_maps/workbench/Urubicha_muni_locator_map.svg",2837.4
+"Vallegrande","Santa Cruz","output/locator_maps/workbench/Vallegrande_muni_locator_map.svg",2837.4
+"Warnes","Santa Cruz","output/locator_maps/workbench/Warnes_muni_locator_map.svg",2837.4
+"Yapacaní","Santa Cruz","output/locator_maps/workbench/Yapacani_muni_locator_map.svg",2837.4
+"Bermejo","Tarija","output/locator_maps/workbench/Bermejo_muni_locator_map.svg",2837.4
+"Caraparí","Tarija","output/locator_maps/workbench/Carapari_muni_locator_map.svg",2837.4
+"El Puente","Tarija","output/locator_maps/workbench/El_Puente__Tarija__muni_locator_map.svg",2837.4
+"Entre Ríos","Tarija","output/locator_maps/workbench/Entre_Rios__Tarija__muni_locator_map.svg",2837.4
+"Padcaya","Tarija","output/locator_maps/workbench/Padcaya_muni_locator_map.svg",2837.4
+"San Lorenzo","Tarija","output/locator_maps/workbench/San_Lorenzo__Tarija__muni_locator_map.svg",2837.4
+"Tarija","Tarija","output/locator_maps/workbench/Tarija_muni_locator_map.svg",2837.4
+"Uriondo","Tarija","output/locator_maps/workbench/Uriondo_muni_locator_map.svg",2837.4
+"Villa Montes","Tarija","output/locator_maps/workbench/Villa_Montes_muni_locator_map.svg",2837.4
+"Yacuiba","Tarija","output/locator_maps/workbench/Yacuiba_muni_locator_map.svg",2837.4
+"Yunchará","Tarija","output/locator_maps/workbench/Yunchara_muni_locator_map.svg",2837.4
