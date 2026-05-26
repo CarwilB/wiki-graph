@@ -115,6 +115,11 @@ Parse the main infobox from each article and extract every key–value pair. We 
 muni_df <- muni_df |>
   mutate(infobox_raw = map(wikitext, extract_infobox))
 
+muni_df <- muni_df |>
+  mutate(infobox_fields = map(infobox_raw, \(x) names(x)[x != ""])) |>
+  mutate(n_fields = lengths(infobox_fields)) |>
+  mutate(infobox_values = map(infobox_raw, \(x) unname(x[x != ""])))
+
 # Identify which infobox keys appear most often
 all_keys <- muni_df |>
   filter(!map_lgl(infobox_raw, is.null)) |>
@@ -125,10 +130,16 @@ all_keys <- muni_df |>
   str_to_lower() |>
   str_replace_all("\\s+", "_")
 
-key_freq <- tibble(key = all_keys) |>
+filled_keys <- muni_df |> 
+  pull(infobox_fields) |> 
+  unlist() 
+
+key_freq <- tibble(key = filled_keys) |>
   count(key, sort = TRUE)
 
 key_freq |> print(n = 40)
+
+
 ```
 
 ```{r pivot-infobox}

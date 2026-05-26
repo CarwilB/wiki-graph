@@ -193,7 +193,7 @@ make_presence_map <- function(data, col, title) {
     geom_sf(aes(fill = .data[[col]]), color = "white", linewidth = 0.12) +
     scale_fill_manual(
       values   = presence_colors,
-      na.value = "#eeeeee",
+      na.value = "#cccccc",
       name     = NULL,
       drop     = FALSE
     ) +
@@ -206,23 +206,26 @@ make_presence_map <- function(data, col, title) {
 }
 ```
 
+:::{.column-page-inset-right}
 ```{r maps-individual}
-#| fig-height: 22
-#| fig-width: 6
+#| fig-height: 8
+#| fig-width: 22
 
 p_en <- make_presence_map(map_data, "en", "English Wikipedia")
 p_es <- make_presence_map(map_data, "es", "Spanish Wikipedia")
 p_qu <- make_presence_map(map_data, "qu", "Quechua Wikipedia")
 p_ay <- make_presence_map(map_data, "ay", "Aymara Wikipedia")
 
-p_en / p_es / p_qu / p_ay +
+p_en + p_es + p_qu + p_ay +
+  plot_layout(ncol = 4) +
   plot_annotation(
     title   = "Bolivia: Municipal Wikipedia Coverage by Language",
     caption = "Source: Wikidata (Q1062710 instances); boundaries: GADM 4.1",
-    theme   = theme(plot.title = element_text(face = "bold", size = 14, hjust = 0.5))
+    theme   = theme(plot.title = element_text(face = "bold", size = 18, hjust = 0.5))
   )
-```
 
+```
+:::
 ---
 
 ## Municipalities missing across multiple Wikipedias
