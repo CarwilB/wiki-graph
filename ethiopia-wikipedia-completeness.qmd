@@ -1,0 +1,680 @@
+---
+title: "Ethiopia: Admin Boundary–Wikidata Crosswalk"
+author: "Carwil Bjork-James"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+execute:
+  warning: false
+  message: false
+---
+
+## Overview
+
+Ethiopia has three administrative levels below the national level:
+
+| Level | Name | Count |
+|-------|------|-------|
+| Admin 1 | Region | 15 |
+| Admin 2 | Zone | 107 |
+| Admin 3 | Woreda (District) | 1,148 |
+
+This document builds a crosswalk between the official OCHA/UN admin boundary
+file (`maps/eth_admin_boundaries.xlsx`) and Wikidata items for each level.
+Working top-down (Region → Zone → Woreda) lets us use parent-level QID matches
+to disambiguate child items that share names across regions.
+
+The ultimate goal is a three-level crosswalk table
+`data/eth_admin_crosswalk.rds` linking each official pcode to its Wikidata QID.
+
+---
+
+## Setup
+
+```{r setup}
+library(tidyverse)
+library(readxl)
+library(httr)
+library(jsonlite)
+
+source("R/get_wikidata_instances.R")
+```
+
+### Reusable helper functions
+
+The functions below are designed to be country-agnostic and can be reused for
+other countries with an OCHA-style admin boundary Excel file.
+
+```{r helpers}
+# ---- load_admin_sheet -------------------------------------------------------
+#' Load one admin sheet from an OCHA-style boundaries Excel file.
+#' Saves the result as an RDS for downstream use and returns it invisibly.
+#'
+#' @param xlsx_path  Path to the Excel workbook.
+#' @param sheet      Sheet name (e.g. "eth_admin1").
+#' @param rds_path   Where to write the cached RDS.
+#' @param key_cols   Character vector of columns to keep (NULL = keep all).
+load_admin_sheet <- function(xlsx_path, sheet, rds_path, key_cols = NULL) {
+  df <- read_excel(xlsx_path, sheet = sheet)
+  if (!is.null(key_cols)) df <- select(df, any_of(key_cols))
+  saveRDS(df, rds_path)
+  message("Saved ", nrow(df), " rows → ", rds_path)
+  invisible(df)
+}
+
+# ---- fetch_wikidata_cached --------------------------------------------------
+#' Fetch Wikidata instances for an admin class, with RDS caching.
+#'
+#' Arguments mirror get_wikidata_instances(); the result is saved to
+#' `cache_path` on first run and reloaded on subsequent runs.
+fetch_wikidata_cached <- function(class_qid,
+                                  cache_path,
+                                  property       = NULL,
+                                  property_names = NULL,
+                                  languages      = c("en", "am", "om", "so", "ti", "aa"),
+                                  limit          = 1000,
+                                  batch_size     = 30,
+                                  force          = FALSE) {
+  if (!force && file.exists(cache_path)) {
+    cached <- readRDS(cache_path)
+    # Re-fetch automatically if this cache predates alias support
+    if (any(str_starts(names(cached), "aliases_"))) {
+      message("Loading cached data from ", cache_path)
+      return(cached)
+    }
+    message("Cache at ", cache_path, " predates alias support; re-fetching...")
+  }
+  result <- get_wikidata_instances(
+    class_qid      = class_qid,
+    property       = property,
+    property_names = property_names,
+    languages      = languages,
+    limit          = limit,
+    batch_size     = batch_size
+  )
+  saveRDS(result, cache_path)
+  message("Saved ", nrow(result), " rows → ", cache_path)
+  result
+}
+
+# ---- normalize_place_name ---------------------------------------------------
+#' Normalize a place-name vector for fuzzy matching.
+#'
+#' Strips parenthetical disambiguation, comma-suffixes (", Region"),
+#' and a configurable set of common administrative-level words
+#' ("woreda", "town", "special", etc.).
+#'
+#' @param x          Character vector of names.
+#' @param strip_terms Extra words to remove (in addition to defaults).
+normalize_place_name <- function(x, strip_terms = NULL) {
+  default_strip <- c("woreda", "town", "special", "zone", "district",
+                     "region", "city", "municipality")
+  all_strip <- paste(
+    c(default_strip, strip_terms),
+    collapse = "|"
+  )
+  pattern <- paste0("\\b(", all_strip, ")\\b")
+  x |>
+    str_to_lower() |>
+    str_remove_all("\\s*\\(.*?\\)") |>   # remove (TG), (Oromia), etc.
+    str_remove_all(",.*$") |>            # remove ", Somali", ", SNNPR"
+    str_remove_all(pattern) |>
+    str_squish()
+}
+
+# ---- match_admin_names ------------------------------------------------------
+#' Match official admin names to Wikidata labels in up to four rounds.
+#'
+#' Round 1: exact lower-case match on the primary label.
+#' Round 2: normalized match (strip admin-level words, disambiguations).
+#' Round 3: exact lower-case match against any Wikidata alias.
+#' Round 4: normalized match against any Wikidata alias.
+#'
+#' Rounds 3–4 require `wd_df` to contain `aliases_*` list columns
+#' (produced automatically when `entity_props` includes "aliases").
+#'
+#' Returns the official data frame with a `qid` column and a `match_round`
+#' column ("exact", "normalized", "alias_exact", "alias_normalized", or NA).
+#'
+#' @param official_df   Data frame with official boundary records.
+#' @param official_col  Name of the column containing official place names.
+#' @param wd_df         Wikidata data frame with a `qid` column.
+#' @param wd_label_col  Name of the label column in wd_df (default "label_en").
+#' @param strip_terms   Extra words to strip in normalization rounds.
+match_admin_names <- function(official_df,
+                              official_col,
+                              wd_df,
+                              wd_label_col = "label_en",
+                              strip_terms  = NULL) {
+
+  off_lower <- str_to_lower(official_df[[official_col]])
+  wd_lower  <- str_to_lower(wd_df[[wd_label_col]])
+
+  off_norm  <- normalize_place_name(official_df[[official_col]], strip_terms)
+  wd_norm   <- normalize_place_name(wd_df[[wd_label_col]],       strip_terms)
+
+  # Round 1: exact lower-case
+  r1 <- match(off_lower, wd_lower)
+  matched_qid <- wd_df$qid[r1]
+  match_round <- if_else(!is.na(r1), "exact", NA_character_)
+
+  # Round 2: normalized (only for still-unmatched)
+  r2 <- match(off_norm, wd_norm)
+  fill_r2 <- is.na(matched_qid) & !is.na(r2)
+  matched_qid[fill_r2] <- wd_df$qid[r2[fill_r2]]
+  match_round[fill_r2] <- "normalized"
+
+  # Rounds 3 & 4: match against Wikidata aliases
+  alias_cols <- names(wd_df)[str_starts(names(wd_df), "aliases_")]
+  if (length(alias_cols) > 0 && any(is.na(matched_qid))) {
+
+    # Aliases are stored as ", "-collapsed strings; split them into one row each
+    alias_long <- wd_df |>
+      select(qid, all_of(alias_cols)) |>
+      pivot_longer(-qid, names_to = "lang_col", values_to = "aliases_str") |>
+      filter(!is.na(aliases_str)) |>
+      mutate(alias = str_split(aliases_str, ",\\s*")) |>
+      unnest(alias) |>
+      filter(nzchar(alias)) |>
+      mutate(
+        alias_lower = str_to_lower(alias),
+        alias_norm  = normalize_place_name(alias, strip_terms)
+      )
+
+    # Round 3: exact alias match
+    unmatched_idx <- which(is.na(matched_qid))
+    candidate3 <- tibble(idx = unmatched_idx, name_lower = off_lower[unmatched_idx]) |>
+      left_join(alias_long |> distinct(alias_lower, qid),
+                by = c("name_lower" = "alias_lower")) |>
+      filter(!is.na(qid)) |>
+      distinct(idx, .keep_all = TRUE)
+    matched_qid[candidate3$idx] <- candidate3$qid
+    match_round[candidate3$idx] <- "alias_exact"
+
+    # Round 4: normalized alias match
+    unmatched_idx2 <- which(is.na(matched_qid))
+    candidate4 <- tibble(idx = unmatched_idx2, name_norm = off_norm[unmatched_idx2]) |>
+      left_join(alias_long |> distinct(alias_norm, qid),
+                by = c("name_norm" = "alias_norm")) |>
+      filter(!is.na(qid)) |>
+      distinct(idx, .keep_all = TRUE)
+    matched_qid[candidate4$idx] <- candidate4$qid
+    match_round[candidate4$idx] <- "alias_normalized"
+  }
+
+  official_df |>
+    mutate(
+      qid         = matched_qid,
+      match_round = match_round
+    )
+}
+
+# ---- report_match_status ----------------------------------------------------
+#' Print a tidy match-status summary for one admin level.
+report_match_status <- function(matched_df, level_name, n_official, n_wd) {
+  n_exact      <- sum(matched_df$match_round == "exact",            na.rm = TRUE)
+  n_norm       <- sum(matched_df$match_round == "normalized",       na.rm = TRUE)
+  n_alias_ex   <- sum(matched_df$match_round == "alias_exact",      na.rm = TRUE)
+  n_alias_norm <- sum(matched_df$match_round == "alias_normalized", na.rm = TRUE)
+  n_man        <- sum(matched_df$match_round == "manual",           na.rm = TRUE)
+  n_total      <- n_exact + n_norm + n_alias_ex + n_alias_norm + n_man
+  n_unmatched  <- sum(is.na(matched_df$qid))
+
+  tibble(
+    Level           = level_name,
+    `Official`      = n_official,
+    `In WD`         = n_wd,
+    `Exact`         = n_exact,
+    `Normalized`    = n_norm,
+    `Alias exact`   = n_alias_ex,
+    `Alias norm`    = n_alias_norm,
+    `Manual`        = n_man,
+    `Total matched` = n_total,
+    `Unmatched`     = n_unmatched
+  )
+}
+```
+
+---
+
+## Load official admin boundaries
+
+All three admin levels come from a single OCHA-sourced Excel workbook.
+We load each sheet, keep only the essential columns, and save as RDS so
+downstream scripts can work without the xlsx dependency.
+
+```{r load-admin-boundaries}
+admin1_rds <- "data/eth_admin1.rds"
+admin2_rds <- "data/eth_admin2.rds"
+admin3_rds <- "data/eth_admin3.rds"
+
+xlsx_path  <- "maps/eth_admin_boundaries.xlsx"
+
+# Columns we care about at each level (add more if needed)
+admin1_cols <- c("adm1_pcode", "adm1_name", "adm0_pcode", "adm0_name")
+admin2_cols <- c("adm2_pcode", "adm2_name", "adm1_pcode", "adm1_name")
+admin3_cols <- c("adm3_pcode", "adm3_name", "adm3_alt_name",
+                 "adm2_pcode", "adm2_name",
+                 "adm1_pcode", "adm1_name",
+                 "area_sqkm")
+
+eth_admin1 <- load_admin_sheet(xlsx_path, "eth_admin1", admin1_rds, admin1_cols)
+eth_admin2 <- load_admin_sheet(xlsx_path, "eth_admin2", admin2_rds, admin2_cols)
+eth_admin3 <- load_admin_sheet(xlsx_path, "eth_admin3", admin3_rds, admin3_cols)
+```
+
+Quick sanity check — does the table describe a complete three-level hierarchy?
+
+```{r admin-counts}
+tribble(
+  ~Level,    ~Expected, ~Found,
+  "Region",  15L,       n_distinct(eth_admin3$adm1_pcode),
+  "Zone",   107L,       n_distinct(eth_admin3$adm2_pcode),
+  "Woreda", 1148L,      n_distinct(eth_admin3$adm3_pcode)
+) |>
+  mutate(OK = if_else(Expected == Found, "✓", "✗")) |>
+  knitr::kable(caption = "Official admin hierarchy counts")
+```
+
+---
+
+## Level 1 — Regions (Admin1)
+
+**Wikidata class:** [region of Ethiopia (Q1057504)](https://www.wikidata.org/wiki/Q1057504)
+
+With only 15 regions, this level is small enough to match almost entirely
+by name. We fetch P131 (located in / country) to verify items are genuinely
+Ethiopian regions, and P17 (country) as a secondary check.
+
+```{r fetch-regions}
+regions_wd <- fetch_wikidata_cached(
+  class_qid      = "Q1057504",
+  cache_path     = "data/et_regions_wd.rds",
+  property       = c("P131", "P17"),
+  property_names = c("located_in", "country"),
+  languages      = c("en", "am", "om", "so", "ti", "aa"),
+  limit          = 50,
+  batch_size     = 30
+)
+
+cat("Wikidata returned", nrow(regions_wd), "items for Q1057504\n")
+regions_wd |> select(qid, label_en, label_am, located_in, country)
+```
+
+### Name matching
+
+```{r match-regions}
+# Build a clean lookup from the official table (one row per region)
+admin1_official <- eth_admin1 |>
+  distinct(adm1_pcode, adm1_name)
+
+regions_matched <- match_admin_names(
+  official_df  = admin1_official,
+  official_col = "adm1_name",
+  wd_df        = regions_wd
+)
+
+# Review results
+regions_matched |>
+  select(adm1_pcode, adm1_name, qid, match_round) |>
+  arrange(adm1_pcode) |>
+  knitr::kable(caption = "Admin1 (Region) name-match results")
+```
+
+### Unmatched regions
+
+```{r regions-unmatched}
+unmatched_official_r1 <- regions_matched |> filter(is.na(qid))
+unmatched_wd_r1 <- regions_wd |>
+  filter(!qid %in% regions_matched$qid)
+
+cat("Official regions without a WD match:\n")
+print(unmatched_official_r1 |> select(adm1_pcode, adm1_name))
+
+cat("\nWD items not matched to any official region:\n")
+print(unmatched_wd_r1 |> select(qid, label_en, label_am))
+```
+
+### Manual matches
+
+Add pairs here as you identify them from the unmatched output above.
+
+```{r regions-manual}
+# Format: tibble(adm1_pcode = ..., qid = ...)
+# Example (fill in as needed):
+#   "ET07" → Q... (Central Ethiopia)
+region_manual_matches <- tribble(
+  ~adm1_pcode, ~qid,
+  # Post-2023 SNNPR successor regions: WD labels use "Regional State" suffix
+  "ET07", "Q122415622",   # Central Ethiopia  → Central Ethiopia Regional State
+  "ET08", "Q122148951",   # South Ethiopia    → South Ethiopia Regional State
+  "ET11", "Q109788993"    # South West Ethiopia → Southwest Ethiopia Regional State
+  # ET99 (Contested) has no single WD item; intentionally left unmatched
+)
+
+# Apply manual matches
+if (nrow(region_manual_matches) > 0) {
+  regions_matched <- rows_patch(
+    regions_matched,
+    region_manual_matches |> mutate(match_round = "manual"),
+    by = "adm1_pcode",
+    unmatched = "ignore"
+  )
+}
+```
+
+### Save & report
+
+```{r regions-save}
+saveRDS(regions_matched, "data/et_regions_matched.rds")
+
+report_match_status(regions_matched, "Region (Admin1)",
+                    n_official = nrow(admin1_official),
+                    n_wd       = nrow(regions_wd)) |>
+  knitr::kable()
+```
+
+---
+
+## Level 2 — Zones (Admin2)
+
+**Wikidata class:** [zone of Ethiopia (Q219875)](https://www.wikidata.org/wiki/Q219875)
+
+With 107 zones we have more name collisions (some zone names appear in multiple
+regions), so we use the region QIDs from Level 1 to disambiguate: after round-2
+name matching, we verify that the matched WD item's `located_in` agrees with
+the region's QID.
+
+```{r fetch-zones}
+zones_wd <- fetch_wikidata_cached(
+  class_qid      = "Q219875",
+  cache_path     = "data/et_zones_wd.rds",
+  property       = c("P131", "P17"),
+  property_names = c("located_in", "country"),
+  languages      = c("en", "am", "om", "so", "ti", "aa"),
+  limit          = 200,
+  batch_size     = 30
+)
+
+cat("Wikidata returned", nrow(zones_wd), "items for Q219875\n")
+```
+
+### Name matching (with region disambiguation)
+
+```{r match-zones}
+# Build official zone lookup with the parent region QID attached
+admin2_official <- eth_admin2 |>
+  distinct(adm2_pcode, adm2_name, adm1_pcode) |>
+  left_join(regions_matched |> select(adm1_pcode, region_qid = qid),
+            by = "adm1_pcode")
+
+# Round 1 + 2 name match
+zones_matched <- match_admin_names(
+  official_df  = admin2_official,
+  official_col = "adm2_name",
+  wd_df        = zones_wd
+)
+
+# Region-consistency check: flag matches where WD located_in ≠ region QID
+zones_wd_located <- zones_wd |> select(qid, wd_located_in = located_in)
+
+zones_matched <- zones_matched |>
+  left_join(zones_wd_located, by = "qid") |>
+  mutate(
+    region_consistent = case_when(
+      is.na(qid)            ~ NA,
+      is.na(region_qid)     ~ NA,     # official region has no QID yet
+      is.na(wd_located_in)  ~ NA,     # WD item has no P131
+      wd_located_in == region_qid ~ TRUE,
+      TRUE                  ~ FALSE
+    )
+  )
+
+# Summary
+cat("Matched:", sum(!is.na(zones_matched$qid)), "/", nrow(admin2_official), "\n")
+cat("Region-consistent:", sum(zones_matched$region_consistent == TRUE, na.rm = TRUE), "\n")
+cat("Region-inconsistent:", sum(zones_matched$region_consistent == FALSE, na.rm = TRUE), "\n")
+```
+
+### Review problematic zones
+
+```{r zones-inspect}
+# Unmatched official zones
+zones_matched |>
+  filter(is.na(qid)) |>
+  select(adm2_pcode, adm2_name, adm1_pcode) |>
+  arrange(adm1_pcode) |>
+  knitr::kable(caption = "Official zones with no WD match")
+
+# Inconsistent region assignments (name matched but wrong region)
+zones_matched |>
+  filter(region_consistent == FALSE) |>
+  select(adm2_pcode, adm2_name, region_qid, qid, wd_located_in, match_round) |>
+  knitr::kable(caption = "Zone name matches with wrong parent region")
+
+# WD zones not matched to any official zone
+zones_wd |>
+  filter(!qid %in% zones_matched$qid) |>
+  select(qid, label_en, label_am, located_in) |>
+  knitr::kable(caption = "WD zone items not matched to any official zone")
+```
+
+### Manual matches
+
+```{r zones-manual}
+zone_manual_matches <- tribble(
+  ~adm2_pcode, ~qid
+  # Fill from inspection above
+)
+
+if (nrow(zone_manual_matches) > 0) {
+  zones_matched <- rows_patch(
+    zones_matched,
+    zone_manual_matches |> mutate(match_round = "manual"),
+    by = "adm2_pcode",
+    unmatched = "ignore"
+  )
+}
+```
+
+### Save & report
+
+```{r zones-save}
+saveRDS(zones_matched, "data/et_zones_matched.rds")
+
+report_match_status(zones_matched, "Zone (Admin2)",
+                    n_official = nrow(admin2_official),
+                    n_wd       = nrow(zones_wd)) |>
+  knitr::kable()
+```
+
+---
+
+## Level 3 — Woredas / Districts (Admin3)
+
+**Wikidata class:** [woreda of Ethiopia (Q690840)](https://www.wikidata.org/wiki/Q690840)
+
+With 1,148 woredas this is the hardest level: names are most variable between
+sources, and many woreda names repeat across regions. We use zone QIDs from
+Level 2 as the primary disambiguation key, and also retrieve the OpenStreetMap
+relation ID (P402) for later spatial cross-checks.
+
+```{r fetch-woredas}
+woredas_wd <- fetch_wikidata_cached(
+  class_qid      = "Q690840",
+  cache_path     = "data/et_woredas_wd.rds",
+  property       = c("P131", "P402"),
+  property_names = c("located_in", "openstreetmap_code"),
+  languages      = c("en", "am", "om", "so", "ti", "aa"),
+  limit          = 1200,
+  batch_size     = 30
+)
+
+cat("Wikidata returned", nrow(woredas_wd), "items for Q690840\n")
+```
+
+### Name matching (with zone disambiguation)
+
+```{r match-woredas}
+# Official woreda table with parent zone QID
+admin3_official <- eth_admin3 |>
+  distinct(adm3_pcode, adm3_name, adm3_alt_name, adm2_pcode, adm1_pcode) |>
+  left_join(zones_matched  |> select(adm2_pcode, zone_qid   = qid), by = "adm2_pcode") |>
+  left_join(regions_matched|> select(adm1_pcode, region_qid = qid), by = "adm1_pcode")
+
+# Round 1 + 2 name match
+woredas_matched <- match_admin_names(
+  official_df  = admin3_official,
+  official_col = "adm3_name",
+  wd_df        = woredas_wd,
+  # Strip Ethiopia-specific admin-level words from comparison
+  strip_terms  = c("liyu", "special", "ketema", "awraja")
+)
+
+# Zone-consistency check
+wd_located <- woredas_wd |> select(qid, wd_located_in = located_in)
+
+woredas_matched <- woredas_matched |>
+  left_join(wd_located, by = "qid") |>
+  mutate(
+    zone_consistent = case_when(
+      is.na(qid)           ~ NA,
+      is.na(zone_qid)      ~ NA,
+      is.na(wd_located_in) ~ NA,
+      wd_located_in == zone_qid ~ TRUE,
+      TRUE                 ~ FALSE
+    )
+  )
+
+cat("Matched:", sum(!is.na(woredas_matched$qid)), "/ 1148\n")
+cat("Zone-consistent:", sum(woredas_matched$zone_consistent == TRUE,  na.rm = TRUE), "\n")
+cat("Zone-inconsistent:", sum(woredas_matched$zone_consistent == FALSE, na.rm = TRUE), "\n")
+```
+
+### Match summary by region
+
+```{r woredas-by-region}
+woredas_matched |>
+  group_by(adm1_pcode) |>
+  summarise(
+    woredas   = n(),
+    matched   = sum(!is.na(qid)),
+    pct       = round(100 * matched / woredas),
+    zone_ok   = sum(zone_consistent == TRUE,  na.rm = TRUE),
+    zone_bad  = sum(zone_consistent == FALSE, na.rm = TRUE),
+    .groups   = "drop"
+  ) |>
+  left_join(eth_admin1 |> distinct(adm1_pcode, adm1_name), by = "adm1_pcode") |>
+  select(adm1_name, woredas, matched, pct, zone_ok, zone_bad) |>
+  arrange(desc(woredas)) |>
+  knitr::kable(caption = "Woreda match coverage by region")
+```
+
+### Unmatched official woredas
+
+```{r woredas-unmatched}
+woredas_matched |>
+  filter(is.na(qid)) |>
+  select(adm3_pcode, adm3_name, adm3_alt_name, adm2_pcode) |>
+  arrange(adm3_pcode) |>
+  knitr::kable(caption = "Official woredas with no WD match (for manual review)")
+```
+
+### WD items not matched to any official woreda
+
+These may be historical woredas, recently renamed units, or items that need
+label corrections on Wikidata.
+
+```{r woredas-wd-unmatched}
+woredas_wd |>
+  filter(!qid %in% woredas_matched$qid) |>
+  select(qid, label_en, label_am, located_in) |>
+  arrange(label_en) |>
+  knitr::kable(caption = "WD woreda items not matched to any official woreda")
+```
+
+### Manual matches
+
+```{r woredas-manual}
+# This table will grow as you work through the unmatched items above.
+# Format: adm3_pcode (from official) ↔ qid (from Wikidata)
+woreda_manual_matches <- tribble(
+  ~adm3_pcode, ~qid
+  # "ET010101", "Q..."
+)
+
+if (nrow(woreda_manual_matches) > 0) {
+  woredas_matched <- rows_patch(
+    woredas_matched,
+    woreda_manual_matches |> mutate(match_round = "manual"),
+    by = "adm3_pcode",
+    unmatched = "ignore"
+  )
+}
+```
+
+### Save & report
+
+```{r woredas-save}
+saveRDS(woredas_matched, "data/et_woredas_matched.rds")
+
+report_match_status(woredas_matched, "Woreda (Admin3)",
+                    n_official = nrow(admin3_official),
+                    n_wd       = nrow(woredas_wd)) |>
+  knitr::kable()
+```
+
+---
+
+## Combined crosswalk
+
+Once matching is reasonably complete, assemble the full three-level crosswalk
+and save it as a single reference table.
+
+```{r crosswalk}
+eth_admin_crosswalk <- eth_admin3 |>
+  distinct(adm3_pcode, adm3_name, adm2_pcode, adm2_name, adm1_pcode, adm1_name) |>
+  left_join(
+    woredas_matched  |> select(adm3_pcode, woreda_qid  = qid, woreda_match = match_round),
+    by = "adm3_pcode"
+  ) |>
+  left_join(
+    zones_matched    |> select(adm2_pcode, zone_qid    = qid, zone_match   = match_round),
+    by = "adm2_pcode"
+  ) |>
+  left_join(
+    regions_matched  |> select(adm1_pcode, region_qid  = qid, region_match = match_round),
+    by = "adm1_pcode"
+  )
+
+saveRDS(eth_admin_crosswalk, "data/eth_admin_crosswalk.rds")
+
+# Summary
+eth_admin_crosswalk |>
+  summarise(
+    total_woredas     = n(),
+    woreda_qid_found  = sum(!is.na(woreda_qid)),
+    zone_qid_found    = sum(!is.na(zone_qid)),
+    region_qid_found  = sum(!is.na(region_qid))
+  ) |>
+  pivot_longer(everything()) |>
+  knitr::kable(caption = "Crosswalk coverage summary")
+```
+
+---
+
+## Next steps
+
+- Work through the **manual match tables** at each level, using the unmatched
+  output as a guide. Start with Admin1 (15 items) and Admin2 (107 items) before
+  tackling the 1,148 woredas.
+- For hard name mismatches, add the Wikidata `label_am` (Amharic) column to
+  the comparison — many Amharic names are more consistent with the official
+  coding than English transliterations.
+- Once the crosswalk is sufficiently complete, prepare **QuickStatements** to
+  add OCHA pcodes (P300 or a new property) to Wikidata items.
+- Consider a spatial join using OSM relation IDs (P402) or boundary geometry to
+  resolve remaining unmatched items.
