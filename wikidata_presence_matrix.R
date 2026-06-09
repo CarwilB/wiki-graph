@@ -59,11 +59,6 @@ wikidata_instance_wikipedia_presence <- function(class_qid,
   stopifnot(is.character(class_qid), length(class_qid) == 1)
   if (!is.null(languages)) stopifnot(is.character(languages), length(languages) >= 1)
 
-  if (!requireNamespace("dplyr", quietly = TRUE)) stop("Need dplyr")
-  if (!requireNamespace("purrr", quietly = TRUE)) stop("Need purrr")
-  if (!requireNamespace("stringr", quietly = TRUE)) stop("Need stringr")
-  if (!requireNamespace("tibble", quietly = TRUE)) stop("Need tibble")
-
   # 1) Fetch instances (this already includes wikipedia_articles list-column)
   inst <- get_wikidata_instances(
     class_qid   = class_qid,

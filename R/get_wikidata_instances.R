@@ -262,6 +262,19 @@ add_wikidata_property <- function(df, property, name = property) {
   })
   names(descriptions_list) <- paste0("description_", languages)
 
+  # Extract aliases collapsed to a single ", "-separated string per language.
+  # Using a scalar here avoids bind_rows() length-mismatch errors.
+  aliases_list <- map(languages, function(lang) {
+    if (!is.null(entity$aliases) && lang %in% names(entity$aliases)) {
+      al <- entity$aliases[[lang]]
+      vals <- if (is.data.frame(al) && "value" %in% names(al)) al$value
+              else if (is.list(al)) map_chr(al, ~ .x$value)
+              else character(0)
+      if (length(vals) == 0) NA_character_ else paste(vals, collapse = ", ")
+    } else NA_character_
+  })
+  names(aliases_list) <- paste0("aliases_", languages)
+
   # Extract extra properties as list columns
   extra_props <- if (!is.null(property)) {
     prop_values <- map(seq_along(property), function(i) {
@@ -329,6 +342,7 @@ add_wikidata_property <- function(df, property, name = property) {
     list(qid = qid),
     labels_list,
     descriptions_list,
+    aliases_list,
     extra_props,
     numeric_list_cols,
     setNames(list(list(hierarchy_vals)), column_name),
@@ -347,7 +361,7 @@ add_wikidata_property <- function(df, property, name = property) {
                                    batch_size = 20, batch_delay = 1,
                                    numeric_list_properties     = NULL,
                                    numeric_list_property_names = NULL,
-                                   entity_props               = "labels|descriptions|claims|sitelinks",
+                                   entity_props               = "labels|descriptions|claims|sitelinks|aliases",
                                    object_type                = "instance") {
 
   batches    <- split(qids, ceiling(seq_along(qids) / batch_size))
@@ -526,7 +540,7 @@ get_wikidata_instances <- function(class_qid,
                                    batch_delay                 = 1,
                                    numeric_list_properties     = NULL,
                                    numeric_list_property_names = NULL,
-                                   entity_props                = "labels|descriptions|claims|sitelinks",
+                                   entity_props                = "labels|descriptions|claims|sitelinks|aliases",
                                    object_type                 = "instance") {
 
   # Validate object_type
@@ -661,7 +675,7 @@ resume_get_wikidata_instances <- function(partial_result,
                                           batch_delay                 = 1,
                                           numeric_list_properties     = NULL,
                                           numeric_list_property_names = NULL,
-                                          entity_props                = "labels|descriptions|claims|sitelinks",
+                                          entity_props                = "labels|descriptions|claims|sitelinks|aliases",
                                           object_type                 = "instance") {
 
   if (!"qid" %in% names(partial_result))
