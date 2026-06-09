@@ -1,11 +1,28 @@
 ---
 title: "Bolivia 2024 Census: Population and Ethnic Identification by Geography"
-format: html
+format: 
+  html:
+    code-tools: true
 ---
 
+This script ingests the published data tables produced by the Bolivian Instituto Nacional de Estadística ([website](https://www.ine.gob.bo/)\|Wikipedia) based on the 2024 Census, officially the Censo de Población y Vivienda 2024, which is [described in Spanish here](https://cpv2024.ine.gob.bo/index.php/censo-2024/). Data from the Census is published online in both tabulated and microdata (one-person, one-line, without names) format.
+
+In this script, I'm working with the published, tabulated data created by INE rather than producing my own summaries of the microdata. The 18 tabulated datasets ([available here](https://cpv2024.ine.gob.bo/index.php/tabulados-sobre-la-tematica-pobreza/)) are organized by topic and included information for four geographic levels, as well as for rural and urban subsets within each of them. They are formatted into Excel sheets with 1398 lines of data for all of these levels, interleaved in a human readable format.
+
+The advantage of using these documents in that one can cite them directly, rather than introducing my own (unpublished) data analysis into the chain of citation, adding an extra verification step to scholarly publications and to create a non-independent source if used on Wikipedia.
+
+But I still want to be able to automate the process of reading the numbers off these sheets. That's what this script accomplishes.
+
+Here's the format that the script has to untangle:
+
+![](images/POBLACION-row-structure.png){fig-alt="A section of an Excel spreadsheet with eight headers and a dozen or so lines, with different levels of detail from \"País\" to \"Municipio/TIOC	Chuquisaca	Oropeza	Yotala	Urbana\""}
+
+
 ```{r setup}
+#| message: false
 library(readxl)
 library(tidyverse)
+library(kableExtra)
 ```
 
 ## Part 1: Population by Geography (`POBLACION.xlsx`)
@@ -19,6 +36,7 @@ Source: sheet "1" of `POBLACION.xlsx`. The header spans Excel rows 5–7; data b
 Within each geographic level, rows come in triples: the entity total (area = entity name), then "Urbana", then "Rural".
 
 ```{r load-population}
+#| message: false
 raw <- read_excel(
   "../bolivia-data/censo_2024/POBLACION.xlsx",
   sheet     = "1",
@@ -186,6 +204,8 @@ pop_dept_urb_rural <- add_ine_code_dept(pop_dept_urb_rural)
 ### Quick checks
 
 ```{r checks-population}
+#| echo: false
+#| asis: true
 cat("Country rows:           ", nrow(pop_country),       "\n")
 cat("Dept totals:            ", nrow(pop_dept),           "\n")
 cat("Dept urban+rural rows:  ", nrow(pop_dept_urb_rural), "\n")
@@ -197,19 +217,20 @@ cat("Municipality urb+rural: ", nrow(pop_muni_urb_rural), "\n")
 
 ```{r preview-dept}
 pop_dept |>
-  select(departamento, pop_2024_total, pop_2024_hombre, pop_2024_mujer)
+  select(departamento, pop_2024_total, pop_2024_hombre, pop_2024_mujer) |>
+  kbl() |> kable_classic()
 ```
 
 ```{r preview-muni}
 pop_muni |>
   select(departamento, provincia, municipio, pop_2024_total, pop_2024_hombre, pop_2024_mujer) |>
-  head(12)
+  head(12) |>
+  kbl() |> kable_classic()
 ```
 
 ### Save population outputs
 
 ```{r prep-for-saving}
-#| eval: false
 #| echo: true
 
 # These have all Spanish names except for "pop" which should be "pob"
@@ -250,6 +271,8 @@ pop_muni_urb_rural_en <- english_var_name_fix(pop_muni_urb_rural)
 ```
 
 ```{r checks-output}
+#| echo: false
+#| asis: true
 cat("English output datasets:\n")
 cat("Country rows:           ", nrow(pop_country_en),        "\n")
 cat("Dept totals:            ", nrow(pop_dept_en),            "\n")
@@ -269,7 +292,7 @@ cat("Municipality totals:    ", nrow(pop_muni_es),            "\n")
 cat("Municipality urb+rural: ", nrow(pop_muni_urb_rural_es),  "\n")
 ```
 
-```{r save-population data }
+```{r save-population-data }
 #| eval: false
 #| echo: true
 
@@ -295,27 +318,21 @@ saveRDS(pop_muni_urb_rural_en,"data/cpv2024/population_municipality_urb_rural.rd
 
 ```
 
-
----
+------------------------------------------------------------------------
 
 ## Part 2: Ethnic Self-Identification (`AUTOIDENTIFICACION.xlsx`, sheet 3)
 
-Source: sheet "3" of `AUTOIDENTIFICACION.xlsx`. This table reports, for each geographic
-unit and urban/rural subdivision, the number of people who declared belonging to each of
-133 indigenous nations, pueblos, and ethnic categories in the 2024 census. The `total`
-column is the count of all declarations (a person who identified with multiple groups is
-counted once per declaration).
+Source: sheet "3" of `AUTOIDENTIFICACION.xlsx`. This table reports, for each geographic unit and urban/rural subdivision, the number of people who declared belonging to each of 133 indigenous nations, pueblos, and ethnic categories in the 2024 census. The `total` column is the count of all declarations (a person who identified with multiple groups is counted once per declaration).
 
 The header spans two rows (Excel rows 5–6):
 
-- **Row 5** geographic keys + `TOTAL` + merged header "DECLARACIONES DE AUTOIDENTIFICACIÓN
-  CENSO 2024" spanning all ethnic-group columns.
+- **Row 5** geographic keys + `TOTAL` + merged header "DECLARACIONES DE AUTOIDENTIFICACIÓN CENSO 2024" spanning all ethnic-group columns.
 - **Row 6** individual ethnic-group names (133 names, cols 7–139).
 
-Data begins at row 7. Footnote rows at the bottom of the sheet (with long `nivel` strings)
-are removed during cleaning.
+Data begins at row 7. Footnote rows at the bottom of the sheet (with long `nivel` strings) are removed during cleaning.
 
 ```{r load-autoidentificacion}
+#| message: false
 auto_path <- "../bolivia-data/censo_2024/AUTOIDENTIFICACION.xlsx"
 
 # Row 6 of the sheet holds the 133 ethnic-group names; those become the trailing
@@ -352,8 +369,7 @@ auto_raw <- auto_raw |>
 
 ### Disaggregate by geographic level
 
-The row structure mirrors Part 1: each geographic entity appears three times (total,
-Urbana, Rural). The `nivel` labels used here are identical to those in `POBLACION.xlsx`.
+The row structure mirrors Part 1: each geographic entity appears three times (total, Urbana, Rural). The `nivel` labels used here are identical to those in `POBLACION.xlsx`.
 
 ```{r disaggregate-autoidentificacion}
 auto_country        <- auto_raw |> filter(nivel == "País",            !area %in% subdivisions)
@@ -389,6 +405,8 @@ auto_dept_urb_rural <- add_ine_code_dept(auto_dept_urb_rural)
 ### Quick checks
 
 ```{r checks-autoidentificacion}
+#| echo: false
+#| asis: true
 cat("Country rows:           ", nrow(auto_country),       "\n")
 cat("Dept totals:            ", nrow(auto_dept),           "\n")
 cat("Dept urban+rural rows:  ", nrow(auto_dept_urb_rural), "\n")
@@ -408,14 +426,16 @@ top5 <- auto_muni |>
 
 auto_dept |>
   select(departamento, total, Quechua, Aymara, Chiquitano, Guaraní, Mojeño) |>
-  arrange(desc(total))
+  arrange(desc(total)) |>
+  kbl() |> kable_classic()
 ```
 
 ```{r preview-auto-muni}
 auto_muni |>
   select(departamento, provincia, municipio, total, Quechua, Aymara) |>
   arrange(desc(total)) |> 
-  head(12)
+  head(12) |>
+  kbl() |> kable_classic()
 ```
 
 ### Save ethnic identification outputs
@@ -451,4 +471,311 @@ saveRDS(auto_prov_en,          "data/cpv2024/autoidentificacion_province.rds")
 saveRDS(auto_prov_urb_rural_en,"data/cpv2024/autoidentificacion_province_urb_rural.rds")
 saveRDS(auto_muni_en,          "data/cpv2024/autoidentificacion_municipality.rds")
 saveRDS(auto_muni_urb_rural_en,"data/cpv2024/autoidentificacion_municipality_urb_rural.rds")
+```
+
+------------------------------------------------------------------------
+
+## Part 3: Language Use and Functionalizing the Process
+
+### Helper functions
+
+```{r part3-helpers}
+# ── Constants ────────────────────────────────────────────────────────────────
+
+# Group suffix map: cleaned group label → suffix appended to language name.
+# Empty string = no suffix (Idiomas oficiales is the default group).
+default_group_suffix_map <- c(
+  "idiomas_oficiales"   = "",
+  "idioma_oficiales"    = "",    # typo present in 2024 section of IDIOMAS_2
+  "idiomas_extranjeros" = "ext"
+)
+
+# Subdivision values keyed by the last_var column name.
+last_var_subdivisions <- list(
+  area = c("Urbana", "Rural"),
+  sexo = c("Hombres", "Mujeres")
+)
+
+# ── clean_label ───────────────────────────────────────────────────────────────
+# Normalise a string for use as a column name segment:
+# strip footnote markers (e.g. "(2)") → lowercase → strip accents →
+# non-alphanumeric runs → "_" → trim edge "_"
+clean_label <- function(x) {
+  x |>
+    (\(s) gsub("\\(\\d+\\)", "", s))() |>   # remove footnote markers like (2), (4)
+    tolower() |>
+    stringi::stri_trans_general("Latin-ASCII") |>
+    (\(s) gsub("[^a-z0-9]+", "_", s))() |>
+    (\(s) gsub("^_+|_+$", "", s))()
+}
+
+# ── parse_tab_headers ─────────────────────────────────────────────────────────
+# Reads the multi-row header block and returns a character vector of column
+# names, constructed bottom-to-top:
+#   individual language name → group suffix → year
+#
+# For aggregate columns (no language name in the deepest row), the cleaned
+# group label is used as the base name instead.
+#
+# Parameters:
+#   header_skip      Excel rows to skip before the year-label row.
+#                    Default 4: row 5 = year, row 6 = group, row 7 = lang.
+#   n_geo_cols       Fixed geo columns at the left (default 5).
+#   last_var         Name for the 5th geo column (default "area").
+#   group_suffix_map Named character vector: clean group label → suffix string.
+parse_tab_headers <- function(
+    path,
+    sheet,
+    n_geo_cols       = 5,
+    header_skip      = 4,
+    last_var         = "area",
+    geo_col_names    = NULL,      # override default geo column names if needed
+    group_suffix_map = default_group_suffix_map
+) {
+  if (is.null(geo_col_names))
+    geo_col_names <- c("nivel", "departamento", "provincia", "municipio", last_var)
+  stopifnot(length(geo_col_names) == n_geo_cols)
+
+  h <- read_excel(path, sheet = sheet, col_names = FALSE,
+                  skip = header_skip, n_max = 3)
+
+  data_names <- h |>
+    mutate(hrow = row_number()) |>
+    pivot_longer(-hrow, names_to = "col", values_to = "val") |>
+    mutate(col_pos = as.integer(str_extract(col, "\\d+"))) |>
+    filter(col_pos > n_geo_cols) |>
+    select(hrow, col_pos, val) |>
+    pivot_wider(names_from = hrow, values_from = val, names_prefix = "row") |>
+    arrange(col_pos) |>
+    # row1 = year, row2 = group — both use merged cells, so fill forward NAs
+    fill(row1, row2, .direction = "down") |>
+    mutate(
+      year_c  = clean_label(row1),
+      group_c = clean_label(row2),
+      lang_c  = if_else(!is.na(row3), clean_label(row3), NA_character_),
+      suffix  = unname(group_suffix_map[group_c]),
+      col_name = case_when(
+        # Aggregate column: the group itself is the variable
+        is.na(lang_c)            ~ paste(group_c, year_c, sep = "_"),
+        # Regular column, default group (no suffix or unknown group)
+        is.na(suffix) | suffix == "" ~ paste(lang_c, year_c, sep = "_"),
+        # Regular column with an explicit suffix (e.g. "ext")
+        TRUE                     ~ paste(lang_c, suffix, year_c, sep = "_")
+      )
+    ) |>
+    pull(col_name)
+
+  c(geo_col_names, data_names)
+}
+
+# ── read_tab_raw ──────────────────────────────────────────────────────────────
+# Loads one Excel sheet using parse_tab_headers() for column names, then
+# performs standard row-level cleaning (drop NA nivel, drop footnote rows).
+#
+# data_skip: Excel rows to skip before data begins (default 7 for IDIOMAS_2).
+read_tab_raw <- function(
+    path,
+    sheet,
+    stem,
+    n_geo_cols       = 5,
+    header_skip      = 4,
+    data_skip        = 7,
+    last_var         = "area",
+    group_suffix_map = default_group_suffix_map
+) {
+  col_names <- parse_tab_headers(
+    path, sheet,
+    n_geo_cols       = n_geo_cols,
+    header_skip      = header_skip,
+    last_var         = last_var,
+    group_suffix_map = group_suffix_map
+  )
+
+  df <- read_excel(path, sheet = sheet, col_names = FALSE, skip = data_skip)
+  names(df) <- col_names
+
+  df |>
+    mutate(across(-all_of(col_names[seq_len(n_geo_cols)]), as.numeric)) |>
+    filter(!is.na(nivel), nchar(nivel) <= 20)
+}
+
+# ── disaggregate_tab ──────────────────────────────────────────────────────────
+# Splits a raw frame into a named list of geographic slices.
+#
+# last_var controls both the subdivision column name and which values count as
+# subdivisions (looked up from last_var_subdivisions):
+#   "area" (default) → c("Urbana", "Rural"),  keys: *_urb_rural
+#   "sexo"           → c("Hombres", "Mujeres"), keys: *_sexo
+disaggregate_tab <- function(raw_df, last_var = "area") {
+  subdivisions <- last_var_subdivisions[[last_var]]
+  if (is.null(subdivisions)) {
+    stop("Unknown last_var '", last_var, "'. Known: ",
+         paste(names(last_var_subdivisions), collapse = ", "))
+  }
+  sub_suffix <- switch(last_var, area = "urb_rural", sexo = "sexo", last_var)
+
+  is_sub  <- function(df) df[[last_var]] %in% subdivisions
+  drop_tim <- function(df) filter(df, provincia != "Territorio Indígena Multiétnico")
+
+  level_map <- c(dept = "Departamento", prov = "Provincia", muni = "Municipio/TIOC")
+
+  lst <- list(
+    raw     = raw_df,
+    country = filter(raw_df, nivel == "País")
+  )
+
+  for (key in names(level_map)) {
+    base <- filter(raw_df, nivel == level_map[[key]])
+    if (key == "prov") base <- drop_tim(base)
+    lst[[key]]                               <- filter(base, !is_sub(base))
+    lst[[paste(key, sub_suffix, sep = "_")]] <- filter(base,  is_sub(base))
+  }
+  lst
+}
+
+# ── attach_ine_codes ──────────────────────────────────────────────────────────
+# Applies add_ine_code_dept/prov/muni() to matching list slots.
+# last_var: if not "area", temporarily renames the column to "area" before
+# calling the helpers (which hardcode that name) and renames it back after.
+attach_ine_codes <- function(lst, last_var = "area") {
+  needs_rename <- last_var != "area"
+  prep   <- function(df) if (needs_rename) rename(df, area = all_of(last_var)) else df
+  unprep <- function(df) if (needs_rename) rename(df, !!last_var := area) else df
+
+  for (key in names(lst)) {
+    if (!is.data.frame(lst[[key]])) next
+    if (startsWith(key, "dept")) lst[[key]] <- unprep(add_ine_code_dept(prep(lst[[key]])))
+    if (startsWith(key, "prov")) lst[[key]] <- unprep(add_ine_code_prov(prep(lst[[key]])))
+    if (startsWith(key, "muni")) lst[[key]] <- unprep(add_ine_code_muni(prep(lst[[key]])))
+  }
+  lst
+}
+
+# ── save_tab ──────────────────────────────────────────────────────────────────
+# Saves each data-frame slot as {dir}/{stem}_{key}.rds.
+#
+# save_last_var_only: if TRUE, only save slots whose key contains last_var
+# (e.g. "dept_sexo", "prov_sexo", "muni_sexo"). Use this when a second
+# breakdown (sex) shares a stem with an existing breakdown (area) to avoid
+# overwriting the totals and the other subdivision's files.
+save_tab <- function(lst, stem, dir = "data/cpv2024/",
+                     last_var = NULL, save_last_var_only = FALSE) {
+  for (key in names(lst)) {
+    if (!is.data.frame(lst[[key]])) next
+    if (save_last_var_only && !is.null(last_var) && !grepl(last_var, key)) next
+    saveRDS(lst[[key]], file.path(dir, paste0(stem, "_", key, ".rds")))
+  }
+  invisible(lst)
+}
+```
+
+### Language declared spoken (`IDIOMAS_2.xlsx`, sheet "8")
+
+Source: sheet "8" of `IDIOMAS_2.xlsx`. This table counts, for each geographic unit and urban/rural subdivision, how many people declared speaking each language in 2012 and 2024. The header spans three rows (Excel rows 5–7): year block (2012 / 2024), group within year (Idiomas oficiales / Idiomas extranjeros / aggregate subtotals), and individual language name.
+
+```{r load-idiomas-hablados}
+#| message: false
+path_idiomas2 <- "../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/IDIOMAS_2.xlsx"
+
+idiomas_hablados_raw <- read_tab_raw(
+  path  = path_idiomas2,
+  sheet = "8",
+  stem  = "idiomas_hablados"
+)
+```
+
+```{r disaggregate-idiomas-hablados}
+idiomas_hablados <- idiomas_hablados_raw |>
+  disaggregate_tab(last_var = "area") |>
+  attach_ine_codes()
+```
+
+### Quick checks
+
+```{r checks-idiomas-hablados}
+#| echo: false
+#| asis: true
+cat("Raw rows:               ", nrow(idiomas_hablados$raw),            "\n")
+cat("Country rows:           ", nrow(idiomas_hablados$country),        "\n")
+cat("Dept totals:            ", nrow(idiomas_hablados$dept),           "\n")
+cat("Dept urb+rural:         ", nrow(idiomas_hablados$dept_urb_rural), "\n")
+cat("Province totals:        ", nrow(idiomas_hablados$prov),           "\n")
+cat("Province urb+rural:     ", nrow(idiomas_hablados$prov_urb_rural), "\n")
+cat("Municipality totals:    ", nrow(idiomas_hablados$muni),           "\n")
+cat("Municipality urb+rural: ", nrow(idiomas_hablados$muni_urb_rural), "\n")
+```
+
+```{r preview-col-names-idiomas}
+# Verify naming convention: first 12 data column names
+names(idiomas_hablados$raw)[6:17]
+names(idiomas_hablados$raw)[80:92]
+```
+
+```{r preview-idiomas-dept}
+idiomas_hablados$dept |>
+  select(departamento, castellano_2024, quechua_2024, aymara_2024, guarani_2024, kabinena_2024) |>
+  arrange(desc(castellano_2024)) |>
+  kbl() |> kable_classic()
+```
+
+### Save language outputs
+
+```{r save-idiomas-hablados}
+#| eval: false
+save_tab(idiomas_hablados, "idiomas_hablados")
+```
+
+------------------------------------------------------------------------
+
+## Part 4: Languages Spoken by Sex (`IDIOMAS_2.xlsx`, sheet "7")
+
+Source: sheet "7" of `IDIOMAS_2.xlsx`. Same language counts as Part 3, but the within-entity breakdown is by sex (Hombres / Mujeres) rather than area. The 5th geo column is `SEXO`; total rows carry the geographic name in that column.
+
+```{r load-idiomas-hablados-s}
+#| message: false
+idiomas_hablados_s_raw <- read_tab_raw(
+  path     = path_idiomas2,
+  sheet    = "7",
+  stem     = "idiomas_hablados_s",
+  last_var = "sexo"
+)
+```
+
+```{r disaggregate-idiomas-hablados-s}
+idiomas_hablados_s <- idiomas_hablados_s_raw |>
+  disaggregate_tab(last_var = "sexo") |>
+  attach_ine_codes(last_var = "sexo")
+```
+
+### Quick checks
+
+```{r checks-idiomas-hablados-s}
+#| echo: false
+#| asis: true
+cat("Raw rows:          ", nrow(idiomas_hablados_s$raw),        "\n")
+cat("Country rows:      ", nrow(idiomas_hablados_s$country),    "\n")
+cat("Dept totals:       ", nrow(idiomas_hablados_s$dept),       "\n")
+cat("Dept by sex:       ", nrow(idiomas_hablados_s$dept_sexo),  "\n")
+cat("Province totals:   ", nrow(idiomas_hablados_s$prov),       "\n")
+cat("Province by sex:   ", nrow(idiomas_hablados_s$prov_sexo),  "\n")
+cat("Muni totals:       ", nrow(idiomas_hablados_s$muni),       "\n")
+cat("Muni by sex:       ", nrow(idiomas_hablados_s$muni_sexo),  "\n")
+```
+
+```{r preview-idiomas-s-dept}
+idiomas_hablados_s$dept_sexo |>
+  select(departamento, sexo, castellano_2024, quechua_2024, aymara_2024) |>
+  arrange(departamento, sexo) |>
+  head(18) |>
+  kbl() |> kable_classic()
+```
+
+### Save
+
+```{r save-idiomas-hablados-s}
+#| eval: false
+# Use the shared stem; save_last_var_only keeps only the *_sexo slots,
+# leaving the area-breakdown files from Part 3 untouched.
+save_tab(idiomas_hablados_s, "idiomas_hablados",
+         last_var = "sexo", save_last_var_only = TRUE)
 ```
