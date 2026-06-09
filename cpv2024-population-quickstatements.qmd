@@ -537,7 +537,7 @@ Preview the first 15 lines to sanity-check the format before upload.
 writeLines(head(other_statements, 15))
 ```
 
-Export to a plain-text file for pasting into the QuickStatements batch interface at <https://qs-dev.toolforge.org/>.
+Export to a plain-text file for pasting into the QuickStatements batch interface at <https://qs-dev.toolforge.org/>. This website offers another round of previewing, showing what changes are being made, how they ore sourced etc. It's also possible to execute just the initial lines, look at the results on wikidata.org, then proceed.
 
 ```{r export}
 #| eval: false

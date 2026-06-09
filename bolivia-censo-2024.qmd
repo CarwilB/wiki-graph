@@ -409,7 +409,7 @@ cross |>
   rename(identity = pueblos_label)
 ```
 
-Among Castellano speakers: \~19% (≈1,400 of the 7,400 in the sample) still self-identify as indigenous. Aymara and Quechua lead, but Chiquitano, Guaraní, Tacana, and Afroboliviano are also notable — groups from lowland regions where Spanish may have displaced indigenous languages more thoroughly.
+Among Castellano speakers: \~19% (≈1,400 of the 7,400 in the sample) self-identify as indigenous. Aymara and Quechua lead, but Chiquitano, Guaraní, Tacana, Chichas and Afroboliviano are also notable<s> — groups from lowland regions where Spanish may have displaced indigenous languages more thoroughly</s>.
 
 ------------------------------------------------------------------------
 
@@ -482,7 +482,7 @@ Key findings from the full census:
 
 ### Sub-ethnic identities among Quechua speakers
 
-Among Quechua speakers who identify with a *different* named group (\~57,000 people), the top categories are Andean pre-colonial ayllus and confederacies — groups whose members speak Quechua but resist the pan-ethnic label:
+Among Quechua speakers who identify with a *different* named group (\~57,000 people), the top categories are Andean pre-colonial ayllus and confederacies — groups whose members speak Quechua but don't adopt the pan-ethnic label:
 
 ```{r}
 #| label: quechua-different
@@ -1187,6 +1187,9 @@ lang_use |>
   mutate(
     uso_group = case_when(
       uso_label == mat_label    ~ "Same indigenous language",
+      # idioma_mat == idioma_mayor_uso ~ "Same indigenous language", # adding this fallback
+      #                  # since at least on language is not catching with label matching
+      #                  # - Tsimane´
       uso_label == "Castellano" ~ "Castellano",
       uso_label %in% indigenous_langs ~ "Different indigenous language",
       uso_label == "No habla"   ~ "No habla",

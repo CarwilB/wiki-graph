@@ -12,11 +12,11 @@ execute:
 
 ## Background
 
-Xavier Albó's framework for studying indigenous identity distinguishes between
-several dimensions that the census allows us to measure independently:
+Xavier Albó and Ramiro Malina's framework for studying indigenous identity 
+distinguishes between several dimensions that the census allows us to measure independently:
 
 1. **Self-identification** with an indigenous or Afrobolivian group (Q1)
-2. **Language match**: whether the language(s) a person speaks correspond to
+2. **Language match**: whether the person speaks a language that corresponds to
    their declared identity (Q2)
 3. **Childhood language**: whether they learned an indigenous language as a
    child (Q3)
@@ -629,6 +629,19 @@ levels (1.5 and 4.5) capture empirically common combinations not in the
 original scale.
 
 ### Scale definition
+
+| CEL | Q1 | Q2 | Q3 | C | Description |
+|-----|----|----|----|----|-------------|
+| 7 | Y | Y | Y | N | Belongs to an indigenous people, speaks an indigenous language, learned an indigenous language as a child, without Spanish |
+| 6 | Y | Y | Y | Y | Belongs, speaks, learned, with Spanish |
+| 5 | Y | Y | N | Y | Belongs, speaks, didn't learn as a child |
+| 4.5 | Y | N | Y | Y | Belongs, doesn't speak, but learned as a child |
+| 4 | Y | N | N | Y | Belongs, doesn't speak, didn't learn |
+| 3 | N | Y | Y | N | Doesn't belong, but speaks and learned, without Spanish |
+| 2 | N | Y | Y | Y | Doesn't belong, but speaks and learned, with Spanish |
+| 1 | N | Y | N | Y | Doesn't belong, speaks, didn't learn as a child |
+| 1.5 | N | N | Y | Y | Doesn't belong, doesn't speak, but learned as a child |
+| 0 | N | N | N | Y | Doesn't belong, doesn't speak, didn't learn |
 
 | CEL | Q1 | Q2 | Q3 | C | Description |
 |-----|----|----|----|----|-------------|
