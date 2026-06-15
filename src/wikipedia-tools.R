@@ -314,11 +314,15 @@ get_page_info_batch <- function(titles, lang = "en") {
 
 # ---- Wikitext parsing helpers --------------------------------------------------
 
-#' Extract the main infobox from wikitext as a named list
+#' Extract the raw wikitext of the main infobox template
 #'
+#' Isolates the complete infobox template (from {{ to matching }}) from wikitext.
 #' Handles nested templates via recursive brace matching.
 #' Returns NULL if no infobox found.
-extract_infobox <- function(wikitext) {
+#'
+#' @param wikitext The raw wikitext string
+#' @return A string containing the full infobox template wikitext, or NULL
+extract_infobox_wikitext <- function(wikitext) {
   if (is.null(wikitext)) return(NULL)
 
   # Find the start of an infobox template
@@ -350,7 +354,19 @@ extract_infobox <- function(wikitext) {
   }
 
   if (is.na(end_pos)) return(NULL)
-  infobox_text <- substr(txt, 1, end_pos)
+  substr(txt, 1, end_pos)
+}
+
+#' Extract the main infobox from wikitext as a named list
+#'
+#' Parses the raw infobox wikitext (obtained via extract_infobox_wikitext)
+#' into a named list of field-value pairs.
+#' Returns NULL if no infobox found.
+extract_infobox <- function(wikitext) {
+  if (is.null(wikitext)) return(NULL)
+
+  infobox_text <- extract_infobox_wikitext(wikitext)
+  if (is.null(infobox_text)) return(NULL)
 
   # Parse pipe-delimited parameters
   # Remove the outer {{ and }} and the template name line
@@ -375,6 +391,26 @@ extract_infobox <- function(wikitext) {
     }
   }
   result
+}
+
+#' Extract infobox as a named list of cleaned text values
+#'
+#' @param wikitext The raw wikitext string
+#' @return A named character vector of cleaned values, or NULL if no infobox found
+extract_infobox_as_list <- function(wikitext) {
+  infobox_raw <- extract_infobox(wikitext)
+  if (is.null(infobox_raw)) return(NULL)
+
+  # Clean all values and remove those that become empty/NA
+  cleaned <- map_chr(infobox_raw, clean_infobox_value)
+
+  # Keep only non-empty/non-NA elements
+  keep <- !is.na(cleaned) & cleaned != ""
+
+  if (!any(keep)) return(NULL)
+
+  # Return as a named character vector
+  as.character(cleaned[keep][names(cleaned)[keep]])
 }
 
 #' Split a string on "|" characters that are not inside {{ }}

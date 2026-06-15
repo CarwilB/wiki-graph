@@ -90,6 +90,10 @@ muni_df <- muni_df |>
     txt <- cache_wikitext(t, cache_dir)
     if (is.null(txt)) NA_character_ else txt
   }, .progress = "Fetching wikitext"))
+
+muni_df <- muni_df |>
+  mutate(wikipedia_url = paste0("https://en.wikipedia.org/wiki/", gsub(" ", "_", title)))
+
 ```
 
 # 4. Extract structured fields from each page
@@ -113,12 +117,20 @@ Parse the main infobox from each article and extract every key–value pair. We 
 
 ```{r extract-infoboxes}
 muni_df <- muni_df |>
-  mutate(infobox_raw = map(wikitext, extract_infobox))
+  mutate(
+    infobox_wikitext = map_chr(wikitext, function(w) {
+      txt <- extract_infobox_wikitext(w)
+      if (is.null(txt)) NA_character_ else txt
+    }),
+    infobox_raw = map(wikitext, extract_infobox)
+  )
+
+is_blank <- \(v) v == "" | trimws(v) == "" | startsWith(trimws(v), "<!--")
 
 muni_df <- muni_df |>
-  mutate(infobox_fields = map(infobox_raw, \(x) names(x)[x != ""])) |>
+  mutate(infobox_fields = map(infobox_raw, \(x) names(x)[!is_blank(x)])) |>
   mutate(n_fields = lengths(infobox_fields)) |>
-  mutate(infobox_values = map(infobox_raw, \(x) unname(x[x != ""])))
+  mutate(infobox_values = map(infobox_raw, \(x) unname(x[!is_blank(x)])))
 
 # Identify which infobox keys appear most often
 all_keys <- muni_df |>
@@ -136,11 +148,56 @@ filled_keys <- muni_df |>
 
 key_freq <- tibble(key = filled_keys) |>
   count(key, sort = TRUE)
-
-key_freq |> print(n = 40)
-
-
 ```
+
+## 4c. Infobox structure and field coverage
+
+### Template used
+
+Nearly all Bolivia municipality articles use the general-purpose `{{Infobox settlement}}` template rather than a Bolivia-specific template. This template defines a large number of fields — most of which are left blank in any given article. The raw wikitext for **Vacas Municipality** (Cochabamba) illustrates the structure:
+
+```{r vacas-example}
+#| echo: false
+muni_df |>
+  filter(str_detect(title, "Vacas")) |>
+  pull(infobox_wikitext) |>
+  cat()
+```
+
+The template includes many placeholder fields with no value — lines like `|nickname =` or `|image_flag =`. These are excluded from `infobox_fields` and `infobox_values` by the `is_blank()` filter (which also drops values that are only whitespace or HTML comments). In the Vacas example, the substantively filled fields include `official_name`, `native_name`, `settlement_type`, the subdivision hierarchy, `seat`, `leader_title`/`leader_name`, `established_date`, `area_total_km2`, `population_total`, `population_as_of`, `coordinates`, `elevation_m`, and `area_code`.
+
+### Field frequency across all articles
+
+The table and chart below show how many of the `r nrow(muni_df)` municipality articles contain a non-blank value for each field.
+
+```{r key-freq-table}
+n_articles <- sum(!map_lgl(muni_df$infobox_raw, is.null))
+
+key_freq |>
+  mutate(pct = round(100 * n / n_articles, 1)) |>
+  rename(field = key, articles = n, `% of articles` = pct) |>
+  print(n = 40)
+```
+
+```{r key-freq-plot}
+key_freq |>
+  filter(n >= 5) |>
+  mutate(key = fct_reorder(key, n)) |>
+  ggplot(aes(x = n, y = key)) +
+  geom_col() +
+  labs(
+    x = "Number of articles with a non-blank value",
+    y = NULL,
+    title = "Infobox field coverage across Bolivia municipality articles"
+  )
+```
+
+A few observations stand out:
+
+- **Universal fields** (≥185 of 187 articles): `settlement_type`, `subdivision_type`/`subdivision_name` (country, department, province), and `official_name`. These form the reliable core of the infobox data.
+- **Near-universal but slightly less complete**: `unit_pref`, `utc_offset`, `timezone`, `pushpin_map_caption`, and `seat_type` — present in ~178 articles, suggesting a handful of older or stub articles lack them.
+- **Geographic/demographic fields with partial coverage**: `coordinates` (157), `population_total` (153), `leader_name` (92), `elevation_m` (79), `image_skyline` (78), `area_total_km2` (73).
+- **Sparse fields**: `established_date` (10), `population_density_km2` (16), and `native_name` (33) are present in only a minority of articles. Population density in particular appears to be rarely maintained.
 
 ```{r pivot-infobox}
 # For each page, create a one-row tibble of cleaned infobox values
@@ -231,7 +288,208 @@ wd_only |>
   arrange(label_en)
 ```
 
-# 6. Summary table
+# 6. Infobox completeness maps
+
+These choropleths use the GADM boundary file and the same join infrastructure as
+[`bolivia-wikipedia-completeness.qmd`](bolivia-wikipedia-completeness.qmd),
+linking `muni_result` to spatial boundaries via Wikidata QIDs and INE codes.
+
+White = no English Wikipedia article; grey = has article but field absent or
+not parseable; colors = field value as described per map.
+
+```{r map-setup}
+library(sf)
+
+gadm_sf      <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3",
+                         quiet = TRUE) |>
+  select(NAME_1, NAME_3, geom)
+gadm_lookup  <- readRDS("data/gadm_lookup.rds")
+municipalities_wd_ine <- readRDS("data/municipalities_wd_ine.rds")
+
+# Join muni_result fields to INE codes
+map_info <- municipalities_wd_ine |>
+  select(qid, ine_code) |>
+  left_join(
+    muni_result |>
+      select(wikidata_qid, n_fields, population_as_of, leader_name) |>
+      mutate(
+        has_article = TRUE,
+        pop_year = case_when(
+          str_detect(population_as_of, "2024") ~ "2024",
+          TRUE ~ population_as_of
+        ) |> factor(levels = c("No article", "2001", "2010", "2011",
+                               "2012", "2020", "2024")),
+        leader_year = str_extract(leader_name, "\\b(20\\d{2})\\b") |>
+          factor(levels = c("No article", "2007", "2008", "2010",
+                            "2021", "2022", "2026"))
+      ),
+    by = c("qid" = "wikidata_qid")
+  ) |>
+  replace_na(list(has_article = FALSE))
+
+# Build spatial dataset
+infobox_map_data <- gadm_sf |>
+  inner_join(
+    gadm_lookup |> select(gadm_dep, gadm_mun, cod.mun),
+    by = c("NAME_1" = "gadm_dep", "NAME_3" = "gadm_mun")
+  ) |>
+  left_join(map_info, by = c("cod.mun" = "ine_code")) |>
+  mutate(
+    # Recode discrete variables so "No article" renders as white
+    # rather than collapsing with grey (field absent)
+    pop_year    = if_else(!has_article, factor("No article", levels(pop_year)),
+                          pop_year),
+    leader_year = if_else(!has_article, factor("No article", levels(leader_year)),
+                          leader_year)
+  )
+```
+
+```{r map-theme}
+#| include: false
+theme_bolivia_map <- function() {
+  theme_void(base_size = 11) +
+    theme(
+      plot.title      = element_text(face = "bold", hjust = 0.5, size = 12),
+      plot.caption    = element_text(hjust = 0.5, size = 8, color = "grey50"),
+      legend.position = "bottom"
+    )
+}
+```
+
+## 6a. Number of infobox fields filled
+
+White = no Wikipedia article; grey = article exists but no infobox found.
+Color runs from pale (few fields filled) to dark blue (many fields).
+
+```{r map-n-fields}
+#| fig-height: 6
+#| fig-width: 7
+
+ggplot() +
+  # White base for all polygons (= "no article" default)
+  geom_sf(data = infobox_map_data, fill = "white", color = "grey80",
+          linewidth = 0.12) +
+  # Colored layer only for municipalities with an article
+  geom_sf(data = infobox_map_data |> filter(has_article),
+          aes(fill = n_fields), color = "white", linewidth = 0.12) +
+  scale_fill_distiller(
+    palette   = "Blues",
+    direction = 1,
+    na.value  = "#cccccc",
+    name      = "Fields filled",
+    limits    = c(0, NA)
+  ) +
+  labs(
+    title   = "Bolivia: Infobox fields filled per municipality article",
+    caption = "Source: English Wikipedia; boundaries: GADM 4.1.\nWhite = no article; grey = article with no infobox."
+  ) +
+  theme_bolivia_map()
+```
+
+## 6b. Census year used for population figures
+
+Most articles cite the **2001** census. A small number have been updated to 2012 or 2024.
+
+```{r map-pop-year}
+#| fig-height: 6
+#| fig-width: 7
+
+pop_year_colors <- c(
+  "No article" = "white",
+  "2001"       = "#d1e5f0",
+  "2010"       = "#92c5de",
+  "2011"       = "#4393c3",
+  "2012"       = "#2166ac",
+  "2020"       = "#fddbc7",
+  "2024"       = "#d6604d"
+)
+
+ggplot(infobox_map_data) +
+  geom_sf(aes(fill = pop_year), color = "grey80", linewidth = 0.12) +
+  scale_fill_manual(
+    values   = pop_year_colors,
+    na.value = "#cccccc",
+    name     = "Census year",
+    drop     = FALSE
+  ) +
+  labs(
+    title   = "Bolivia: Census year cited in Wikipedia population figures",
+    caption = "Source: English Wikipedia (population_as_of infobox field); boundaries: GADM 4.1.\nWhite = no article; grey = article with field absent."
+  ) +
+  theme_bolivia_map()
+```
+
+## 6c. Mayor election year
+
+The year in parentheses after the mayor's name in `leader_name` indicates when
+that person's term began. Most articles reflect the **2007** Bolivian municipal
+elections and have not been updated since. Bolivia's most recent municipal
+elections were in **2021**; national elections in **2026**.
+
+```{r map-leader-year}
+#| fig-height: 6
+#| fig-width: 7
+
+leader_year_colors <- c(
+  "No article" = "white",
+  "2007"       = "#4575b4",
+  "2008"       = "#74add1",
+  "2010"       = "#abd9e9",
+  "2021"       = "#fdae61",
+  "2022"       = "#f46d43",
+  "2026"       = "#d73027"
+)
+
+# Labels: append * to years present in scale but absent from data
+leader_year_labels <- c(
+  "No article" = "No article",
+  "2007"       = "2007",
+  "2008"       = "2008",
+  "2010"       = "2010",
+  "2021"       = "2021*",
+  "2022"       = "2022",
+  "2026"       = "2026*"
+)
+
+ggplot(infobox_map_data) +
+  geom_sf(aes(fill = leader_year), color = "grey80", linewidth = 0.12) +
+  scale_fill_manual(
+    values   = leader_year_colors,
+    labels   = leader_year_labels,
+    na.value = "#cccccc",
+    name     = "Election year",
+    drop     = FALSE
+  ) +
+  # override.aes forces correct colors for factor levels with no mapped data;
+  # append the na.value color so the count matches (7 levels + NA = 8 entries)
+  guides(fill = guide_legend(
+    override.aes = list(fill = c(unname(leader_year_colors), "#cccccc"))
+  )) +
+  labs(
+    title   = "Bolivia: Election year of mayor named in Wikipedia infobox",
+    caption = "Source: English Wikipedia (leader_name infobox field); boundaries: GADM 4.1.\nWhite = no article; grey = article with no dated leader. * = no municipalities currently listed."
+  ) +
+  theme_bolivia_map()
+```
+
+## 6d. Infobox field count summary
+
+```{r n-fields-table}
+muni_result |>
+  filter(title != "Municipalities of Bolivia") |>
+  select(title, wikidata_qid, n_fields) |>
+  arrange(desc(n_fields)) |>
+  mutate(rank = row_number()) |>
+  filter(rank <= 10 | rank >= (n() - 9)) |>
+  mutate(group = if_else(rank <= 10, "Most complete", "Least complete")) |>
+  select(group, title, n_fields) |>
+  knitr::kable(
+    col.names = c("", "Municipality", "Fields filled"),
+    caption   = "Bolivia municipality Wikipedia articles ranked by infobox fields filled (top 10 and bottom 10)"
+  )
+```
+
+# 7. Summary table
 
 ```{r save-results}
 # Save the main result
