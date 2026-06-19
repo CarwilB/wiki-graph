@@ -722,7 +722,17 @@ idiomas_hablados$dept |>
 
 ```{r save-idiomas-hablados}
 #| eval: false
+#| echo: true
+
+# ── Spanish ──────────────────────────────────────────────────────────────────
 save_tab(idiomas_hablados, "idiomas_hablados")
+
+# ── English ──────────────────────────────────────────────────────────────────
+idiomas_hablados_en <- lapply(idiomas_hablados, function(df) {
+  if (!is.data.frame(df)) return(df)
+  english_var_name_fix(df)
+})
+save_tab(idiomas_hablados_en, "languages_spoken")
 ```
 
 ------------------------------------------------------------------------
@@ -774,8 +784,220 @@ idiomas_hablados_s$dept_sexo |>
 
 ```{r save-idiomas-hablados-s}
 #| eval: false
+#| echo: true
+
+# ── Spanish ──────────────────────────────────────────────────────────────────
 # Use the shared stem; save_last_var_only keeps only the *_sexo slots,
 # leaving the area-breakdown files from Part 3 untouched.
 save_tab(idiomas_hablados_s, "idiomas_hablados",
          last_var = "sexo", save_last_var_only = TRUE)
+
+# ── English ──────────────────────────────────────────────────────────────────
+idiomas_hablados_s_en <- lapply(idiomas_hablados_s, function(df) {
+  if (!is.data.frame(df)) return(df)
+  english_var_name_fix(df) |>
+    rename(sex = any_of("sexo"))
+})
+save_tab(idiomas_hablados_s_en, "languages_spoken",
+         last_var = "sexo", save_last_var_only = TRUE)
+```
+
+------------------------------------------------------------------------
+
+## Part 5: Population by Age Group (`POBLACION.xlsx`, sheet "3")
+
+Source: sheet "3" of `POBLACION.xlsx`. This table reports population by quinquennial age group (0–4 through 95+) for each geographic unit, with separate blocks for total, urban, and rural populations. Unlike the other sheets, the 6th column (`age_area`) serves double duty: it carries area markers ("Urbana", "Rural", or the entity name for totals) **and** age-group labels within each block.
+
+Each geographic entity therefore spans 63 rows:
+
+- **Total block** (21 rows): entity name, then 20 age groups
+- **Urbana block** (21 rows): "Urbana", then 20 age groups
+- **Rural block** (21 rows): "Rural", then 20 age groups
+
+Data columns are simpler than sheet "1": population counts only (no percentages), giving 9 data columns (2001 / 2012 / 2024 × total / hombre / mujer).
+
+```{r load-population-age}
+#| message: false
+age_groups <- c(
+  "0 a 4", "5 a 9", "10 a 14", "15 a 19", "20 a 24", "25 a 29",
+  "30 a 34", "35 a 39", "40 a 44", "45 a 49", "50 a 54", "55 a 59",
+  "60 a 64", "65 a 69", "70 a 74", "75 a 79", "80 a 84", "85 a 89",
+  "90 a 94", "95 o más"
+)
+
+raw_age <- read_excel(
+  "../bolivia-data/censo_2024/POBLACION.xlsx",
+  sheet     = "3",
+  col_names = FALSE,
+  skip      = 7
+)
+
+age_col_names <- c(
+  "row_num", "nivel", "departamento", "provincia", "municipio", "age_area",
+  "pop_2001_total", "pop_2001_hombre", "pop_2001_mujer",
+  "pop_2012_total", "pop_2012_hombre", "pop_2012_mujer",
+  "pop_2024_total", "pop_2024_hombre", "pop_2024_mujer"
+)
+
+names(raw_age) <- age_col_names
+
+raw_age <- raw_age |>
+  mutate(
+    row_num = as.integer(row_num),
+    across(starts_with("pop_"), as.numeric)
+  ) |>
+  filter(!is.na(row_num))
+```
+
+### Parse area and age group
+
+The `age_area` column encodes both the area (total / Urbana / Rural) and the age group. Area-marker rows carry the entity name or "Urbana" / "Rural"; the subsequent 20 rows in each block carry age-group labels. We assign `area` by forward-filling from these markers.
+
+```{r parse-area-age}
+pop_age_raw <- raw_age |>
+  mutate(
+    is_age_group = age_area %in% age_groups,
+    # Area markers: "Urbana", "Rural", or the entity-name total row
+    area = case_when(
+      age_area == "Urbana" ~ "Urbana",
+      age_area == "Rural"  ~ "Rural",
+      !is_age_group        ~ "Total",
+      TRUE                 ~ NA_character_
+    )
+  ) |>
+  fill(area, .direction = "down") |>
+  mutate(
+    grupo_edad = if_else(is_age_group, age_area, "Total")
+  ) |>
+  select(-age_area, -is_age_group) |>
+  relocate(area, grupo_edad, .after = municipio)
+```
+
+### Disaggregate by geographic level
+
+```{r disaggregate-population-age}
+subdivisions_age <- c("Urbana", "Rural")
+
+pop_age_country <- pop_age_raw |> filter(nivel == "País")
+
+pop_age_dept <- pop_age_raw |>
+  filter(nivel == "Departamento", !area %in% subdivisions_age)
+
+pop_age_dept_urb_rural <- pop_age_raw |>
+  filter(nivel == "Departamento", area %in% subdivisions_age)
+
+pop_age_prov <- pop_age_raw |>
+  filter(nivel == "Provincia", !area %in% subdivisions_age) |>
+  filter(provincia != "Territorio Indígena Multiétnico")
+
+pop_age_prov_urb_rural <- pop_age_raw |>
+  filter(nivel == "Provincia", area %in% subdivisions_age) |>
+  filter(provincia != "Territorio Indígena Multiétnico")
+
+pop_age_muni <- pop_age_raw |>
+  filter(nivel == "Municipio/TIOC", !area %in% subdivisions_age)
+
+pop_age_muni_urb_rural <- pop_age_raw |>
+  filter(nivel == "Municipio/TIOC", area %in% subdivisions_age)
+```
+
+```{r add-ine-code-population-age}
+# The add_ine_code helpers expect an "area" column; here we already have one
+# but it holds "Total" for the total rows. Temporarily swap it for the helpers.
+add_ine_code_muni_age <- function(df) {
+  df |>
+    left_join(crosswalk_muni, by = c("municipio" = "muni_cpv2024",
+                                     "departamento" = "department")) |>
+    relocate(ine_code, municipio, provincia, departamento, area, grupo_edad, nivel)
+}
+
+add_ine_code_prov_age <- function(df) {
+  df |>
+    left_join(crosswalk_prov, by = c("provincia" = "province_cpv2024",
+                                     "departamento" = "department")) |>
+    relocate(ine_code, provincia, departamento, area, grupo_edad, nivel) |>
+    select(-municipio)
+}
+
+add_ine_code_dept_age <- function(df) {
+  df |>
+    left_join(dep_crosswalk, by = c("departamento" = "department")) |>
+    relocate(id_dep, departamento, area, grupo_edad, nivel) |>
+    select(-provincia, -municipio)
+}
+
+pop_age_muni           <- add_ine_code_muni_age(pop_age_muni)
+pop_age_muni_urb_rural <- add_ine_code_muni_age(pop_age_muni_urb_rural)
+pop_age_prov           <- add_ine_code_prov_age(pop_age_prov)
+pop_age_prov_urb_rural <- add_ine_code_prov_age(pop_age_prov_urb_rural)
+pop_age_dept           <- add_ine_code_dept_age(pop_age_dept)
+pop_age_dept_urb_rural <- add_ine_code_dept_age(pop_age_dept_urb_rural)
+```
+
+### Quick checks
+
+```{r checks-population-age}
+#| echo: false
+#| asis: true
+cat("Raw rows:               ", nrow(pop_age_raw),            "\n")
+cat("Country rows:           ", nrow(pop_age_country),        "\n")
+cat("Dept totals:            ", nrow(pop_age_dept),           "\n")
+cat("Dept urban+rural rows:  ", nrow(pop_age_dept_urb_rural), "\n")
+cat("Province totals:        ", nrow(pop_age_prov),           "\n")
+cat("Province urban+rural:   ", nrow(pop_age_prov_urb_rural), "\n")
+cat("Municipality totals:    ", nrow(pop_age_muni),           "\n")
+cat("Municipality urb+rural: ", nrow(pop_age_muni_urb_rural), "\n")
+```
+
+```{r preview-population-age-dept}
+pop_age_dept |>
+  filter(grupo_edad != "Total") |>
+  select(departamento, grupo_edad, pop_2024_total) |>
+  head(21) |>
+  kbl() |> kable_classic()
+```
+
+### Save population by age outputs
+
+```{r save-population-age}
+#| eval: true
+#| echo: true
+
+# ── Spanish ──────────────────────────────────────────────────────────────────
+pop_age_es_fix <- function(df) {
+  df |>
+    rename_with(~ stringr::str_replace(., "^pop", "pob"), starts_with("pop"))
+}
+
+saveRDS(pop_age_es_fix(pop_age_raw),            "data/cpv2024/poblacion_edad_raw.rds")
+saveRDS(pop_age_es_fix(pop_age_country),        "data/cpv2024/poblacion_edad_pais.rds")
+saveRDS(pop_age_es_fix(pop_age_dept),           "data/cpv2024/poblacion_edad_departamento.rds")
+saveRDS(pop_age_es_fix(pop_age_dept_urb_rural), "data/cpv2024/poblacion_edad_departamento_urb_rural.rds")
+saveRDS(pop_age_es_fix(pop_age_prov),           "data/cpv2024/poblacion_edad_provincia.rds")
+saveRDS(pop_age_es_fix(pop_age_prov_urb_rural), "data/cpv2024/poblacion_edad_provincia_urb_rural.rds")
+saveRDS(pop_age_es_fix(pop_age_muni),           "data/cpv2024/poblacion_edad_municipio.rds")
+saveRDS(pop_age_es_fix(pop_age_muni_urb_rural), "data/cpv2024/poblacion_edad_municipio_urb_rural.rds")
+
+# ── English ──────────────────────────────────────────────────────────────────
+pop_age_en_fix <- function(df) {
+  df |>
+    rename(
+      department  = any_of("departamento"),
+      province    = any_of("provincia"),
+      municipality = any_of("municipio"),
+      level       = any_of("nivel"),
+      age_group   = grupo_edad
+    ) |>
+    rename_with(~ stringr::str_replace(., "_mujer", "_female"), ends_with("mujer")) |>
+    rename_with(~ stringr::str_replace(., "_hombre", "_male"), ends_with("hombre"))
+}
+
+saveRDS(pop_age_en_fix(pop_age_raw),            "data/cpv2024/population_age_raw.rds")
+saveRDS(pop_age_en_fix(pop_age_country),        "data/cpv2024/population_age_country.rds")
+saveRDS(pop_age_en_fix(pop_age_dept),           "data/cpv2024/population_age_department.rds")
+saveRDS(pop_age_en_fix(pop_age_dept_urb_rural), "data/cpv2024/population_age_department_urb_rural.rds")
+saveRDS(pop_age_en_fix(pop_age_prov),           "data/cpv2024/population_age_province.rds")
+saveRDS(pop_age_en_fix(pop_age_prov_urb_rural), "data/cpv2024/population_age_province_urb_rural.rds")
+saveRDS(pop_age_en_fix(pop_age_muni),           "data/cpv2024/population_age_municipality.rds")
+saveRDS(pop_age_en_fix(pop_age_muni_urb_rural), "data/cpv2024/population_age_municipality_urb_rural.rds")
 ```
