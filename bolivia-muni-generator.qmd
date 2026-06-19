@@ -1,0 +1,118 @@
+---
+title: "Bolivia 2026 — Tablas del Concejo Municipal"
+subtitle: "Wikitext listo para copiar a Wikipedia"
+format:
+  html:
+    code-fold: true
+    toc: false
+    self-contained: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(dplyr)
+library(purrr)
+library(htmltools)
+
+source("src/wikipedia-tools.R")
+source("src/gh-copy-assets.R")
+
+muni_lookup  <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
+concejo_data <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
+```
+
+```{r}
+#| label: helpers
+#| include: false
+
+# Renders a wikitext copy block (button + visible pre + hidden textarea)
+wikitext_block <- function(id, label, content) {
+  tagList(
+    tags$button(
+      class = "copy-btn",
+      style = "margin-bottom: 6px;",
+      onclick = sprintf("copyTableToClipboard('%s', this)", id),
+      label
+    ),
+    tags$pre(
+      tags$code(content),
+      style = paste(
+        "background-color: #f6f8fa; padding: 10px; border-radius: 6px;",
+        "overflow-x: auto; font-size: 11px; white-space: pre; margin: 0;"
+      )
+    ),
+    tags$textarea(
+      id = id,
+      style = "position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;",
+      readonly = TRUE,
+      content
+    )
+  )
+}
+
+# Renders a collapsible <details> block for one municipality.
+# Left panel: English kable preview. Right panel: Spanish wikitext + copy button.
+muni_block <- function(id_muni, muni_name, department, council_wikitext, concejo) {
+  kbl <- build_council_kable_en(id_muni, data = concejo)
+
+  tagList(
+    tags$details(
+      tags$summary(
+        tags$strong(muni_name),
+        tags$span(
+          paste0(" \u2014 ", department),
+          style = "color: #586069; font-weight: normal;"
+        ),
+        tags$code(
+          paste0(" [", id_muni, "]"),
+          style = "font-size: 11px; color: #999; margin-left: 6px;"
+        )
+      ),
+      tags$div(
+        style = "display:flex; gap:14px; align-items:flex-start; margin-top:8px; font-size:12px;",
+        tags$div(style = "flex:1 1 0; min-width:0; overflow-x:auto;", kbl),
+        tags$div(
+          style = "flex:1 1 0; min-width:0;",
+          wikitext_block(
+            id      = paste0("concejo_", id_muni),
+            label   = "Copiar tabla del concejo",
+            content = council_wikitext
+          )
+        )
+      )
+    ),
+    tags$hr(style = "border:none; border-top:1px solid #e1e4e8; margin:4px 0;")
+  )
+}
+
+# Renders all municipality blocks sorted by id_muni
+render_muni_blocks <- function(lookup, concejo) {
+  ids <- lookup |>
+    filter(id_muni %in% unique(concejo$id_muni)) |>
+    arrange(id_muni) |>
+    select(id_muni, muni_anexo, department)
+
+  blocks <- pmap(ids, function(id_muni, muni_anexo, department) {
+    wt <- build_council_wikitable_es(id_muni, data = concejo)
+    muni_block(id_muni, muni_anexo, department, wt, concejo)
+  })
+
+  tagList(blocks)
+}
+```
+
+```{r}
+#| label: assets
+#| echo: false
+#| results: asis
+include_table_assets()
+```
+
+```{r}
+#| label: council-tables
+#| echo: false
+#| results: asis
+render_muni_blocks(muni_lookup, concejo_data)
+```

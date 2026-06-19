@@ -59,25 +59,53 @@ process_municipality <- function(page, i, anchors, words_df) {
 
   # --- Vote table (full-width header band) ---
   dynamic_box <- c(0, top_anchors[i] - 5, page$width, bottom_anchors[i] - 5)
-  table_data  <- page$crop(dynamic_box)$extract_table()
 
-  if (is.null(table_data) || length(table_data) == 0)
+  # CHANGE: Use extract_tables() plural to capture split horizontal tables
+  vote_tables <- page$crop(dynamic_box)$extract_tables()
+
+  if (length(vote_tables) == 0)
     stop("Top vote table missing or unreadable.")
 
-  tbl_matrix <- do.call(rbind, lapply(table_data, function(row) {
+  # 1. Parse the primary top table
+  tbl_matrix1 <- do.call(rbind, lapply(vote_tables[[1]], function(row) {
     sapply(row, function(cell) if (is.null(cell)) NA else as.character(cell))
   }))
 
-  header_text <- paste(tbl_matrix[1, ], collapse = " ")
+  header_text <- paste(tbl_matrix1[1, ], collapse = " ")
   muni_name   <- str_match(header_text, "MUNICIPIO:\\s*(.*?)\\s*\\(PROVINCIA:")[, 2]
   prov_name   <- str_match(header_text, "PROVINCIA:\\s*(.*?)\\)")[, 2]
   if (is.na(muni_name)) muni_name <- "UNKNOWN_MUNI"
   if (is.na(prov_name)) prov_name <- "UNKNOWN_PROV"
 
-  headers <- tbl_matrix[2, ]
-  vote_df  <- as.data.frame(tbl_matrix[3:4, ], stringsAsFactors = FALSE)
+  headers <- tbl_matrix1[2, ]
+  vote_df  <- as.data.frame(tbl_matrix1[3:4, ], stringsAsFactors = FALSE)
   colnames(vote_df) <- headers
 
+  # 2. Merge any split continuation tables (handling the second horizontal table)
+  if (length(vote_tables) > 1) {
+    for (t in 2:length(vote_tables)) {
+      tbl_matrix_sub <- do.call(rbind, lapply(vote_tables[[t]], function(row) {
+        sapply(row, function(cell) if (is.null(cell)) NA else as.character(cell))
+      }))
+
+      # Ensure it's a valid continuation (Header row + 2 data rows)
+      if (nrow(tbl_matrix_sub) >= 3) {
+        headers_sub <- tbl_matrix_sub[1, ]
+        vote_df_sub <- as.data.frame(tbl_matrix_sub[2:3, ], stringsAsFactors = FALSE)
+        colnames(vote_df_sub) <- headers_sub
+
+        # Drop the redundant 'AUTORIDAD' column to cleanly horizontal bind
+        if (grepl("AUTORIDAD", headers_sub[1], ignore.case = TRUE)) {
+          vote_df_sub <- vote_df_sub[, -1, drop = FALSE]
+        }
+
+        vote_df <- cbind(vote_df, vote_df_sub)
+      }
+    }
+  }
+
+  # 3. Clean specific column names
+  # n_cols evaluates dynamically, so it always targets the true final 6 summary columns
   n_cols <- ncol(vote_df)
   if (n_cols >= 7) {
     cols_to_clean <- c(1, (n_cols - 5):n_cols)
@@ -85,6 +113,17 @@ process_municipality <- function(page, i, anchors, words_df) {
       str_to_lower() |>
       stri_trans_general("Latin-ASCII")
   }
+
+  # 4. Convert Bolivian formatted strings to R numerics
+  # Applies to all columns except the first one (Autoridad)
+  vote_df <- vote_df |>
+    mutate(across(-1, ~ {
+      .x |>
+        str_remove_all("%") |>          # Strip percentage signs
+        str_remove_all("\\.") |>        # Remove the thousands separator
+        str_replace_all(",", ".") |>    # Swap the decimal comma to a period
+        as.numeric()                    # Cast to double/numeric
+    }))
 
   # --- Section boundaries (truncate above IOC table if present) ---
   true_section_bottom <- if (i < length(top_anchors)) top_anchors[i + 1] - 5 else page$height
@@ -227,7 +266,7 @@ concejales_df    <- data.frame(municipio = character(), provincia = character(),
                                 autoridad = character(), silla = character(),
                                 tipo = character(), nombre = character(),
                                 sigla = character(), stringsAsFactors = FALSE)
-muni_concejal_ioc <- data.frame(municipio = character(), provincia = character(),
+muni_concejal_ioc_df <- data.frame(municipio = character(), provincia = character(),
                                 autoridad = character(), pueblo = character(),
                                 silla = character(), tipo = character(),
                                 nombre = character(), pendiente = logical(),
@@ -319,7 +358,7 @@ for (page_num in 24:total_pages - 1) {
       if (!is.null(result$concejal_rows))
         concejales_df <- rbind(concejales_df, result$concejal_rows)
       if (!is.null(result$ioc_rows))
-        muni_concejal_ioc <- rbind(muni_concejal_ioc, result$ioc_rows)
+        muni_concejal_ioc_df <- rbind(muni_concejal_ioc_df, result$ioc_rows)
 
     }, error = function(e) {
       message(sprintf("   [!] Error parsing municipality %d on page %d: %s",
@@ -342,7 +381,7 @@ saveRDS(
     concejales_df     = concejales_df,
     alcaldes_df       = alcaldes_df,
     muni_roster_df    = muni_roster_df,
-    muni_concejal_ioc = muni_concejal_ioc,
+    muni_concejal_ioc_df = muni_concejal_ioc_df,
     error_log         = error_log
   ),
   here::here("data", "oep2026_raw.rds")

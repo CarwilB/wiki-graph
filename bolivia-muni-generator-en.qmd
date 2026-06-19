@@ -1,0 +1,481 @@
+---
+title: "Bolivia 2026 — Municipal Council Tables"
+subtitle: "Wikitext ready to copy to Wikipedia"
+format:
+  html:
+    code-fold: true
+    toc: false
+    self-contained: true
+---
+
+## Template
+
+Each municipality section contains two copyable blocks:
+
+**Copy intro** — two paragraphs:
+
+> The Mayor of `[Municipality]` is `[Name]`, who was elected in the [March 2026 elections](https://en.wikipedia.org/wiki/2026_Bolivian_regional_elections).
+
+> `[Municipality]` Municipality has `[5 / 7 / 9 / 11]` council seats, as do all `[municipalities with populations up to 15,000]` / `[between 15,001 and 50,000]` / `[between 50,001 and 75,000]` / `[over 75,000]` / `[department capitals]`. *(IOC municipalities only:)* One of those seats is an Indigenous seat assigned by the `[pueblo]` according to its own norms and procedures.
+
+**Copy council table** — a wikitable of council members, one row per seat/type:
+
+```
+{| class="wikitable"
+! Seat !! Type !! Name !! Party / Political Organization
+|-
+| rowspan="2" | [N] || Member || [Name] || rowspan="2" | [Party]
+|-
+| Alternate || ''[Alternate name]''
+...
+|}
+```
+
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(dplyr)
+library(purrr)
+library(htmltools)
+library(english)
+
+source("src/wikipedia-tools.R")
+source("src/gh-copy-assets.R")
+
+muni_lookup       <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
+prov_lookup       <- readRDS(here::here("data", "prov_id_lookup_table.rds"))
+muni_roster       <- readRDS(here::here("data", "oep2026", "muni_roster.rds"))
+concejo_data      <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
+concejal_summary  <- readRDS(here::here("data", "oep2026", "concejal_summary.rds"))
+muni_concejal_ioc <- readRDS(here::here("data", "oep2026", "muni_concejal_ioc.rds"))
+alcaldes          <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
+
+roster_pages <- muni_roster |> select(id_muni, page)
+
+# Expected seat counts by census population — mirrors cleaning script section 3b
+pop_muni         <- readRDS(here::here("data", "cpv2024", "population_municipality.rds")) |>
+  select(id_muni = ine_code, pop_2024 = pop_2024_total)
+dept_capital_ids <- paste0(sprintf("%02d", 1:9), "0101")
+
+# Municipality areas from admin3 boundary file
+area_muni <- readxl::read_excel(here::here("maps", "bol_admin_boundaries.xlsx"),
+                                  sheet = "bol_admin3") |>
+  mutate(id_muni = stringr::str_sub(adm3_pcode, 3, 8)) |>
+  select(id_muni, area_sqkm)
+
+# Add id_prov if not already present, then build province-context lookup
+muni_lookup <- muni_lookup |>
+  mutate(id_prov = stringr::str_sub(id_muni, 1, 4))
+
+prov_counts <- muni_lookup |> dplyr::count(id_prov, name = "n_prov_munis")
+
+muni_province_context <- muni_lookup |>
+  select(id_muni, id_prov, muni_anexo) |>
+  left_join(prov_counts, by = "id_prov") |>
+  left_join(pop_muni,    by = "id_muni") |>
+  left_join(area_muni,   by = "id_muni") |>
+  left_join(prov_lookup |> select(id_prov, department), by = "id_prov") |>
+  group_by(id_prov) |>
+  mutate(
+    area_rank = rank(-area_sqkm, ties.method = "first"),  # 1 = largest
+    pop_rank  = rank(-pop_2024,  ties.method = "first")   # 1 = most populous
+  ) |>
+  ungroup() |>
+  mutate(nat_pop_rank = rank(-pop_2024, ties.method = "first")) |>
+  group_by(department) |>
+  mutate(dept_pop_rank = rank(-pop_2024, ties.method = "first")) |>
+  ungroup()
+
+concejal_expected <- concejal_summary |>
+  left_join(pop_muni, by = "id_muni") |>
+  mutate(
+    es_capital = id_muni %in% dept_capital_ids,
+    sillas_esperadas = case_when(
+      es_capital | pop_2024 > 75000 ~ 11L,
+      pop_2024   > 50000            ~  9L,
+      pop_2024   > 15000            ~  7L,
+      !is.na(pop_2024)              ~  5L,
+      TRUE                          ~ NA_integer_
+    )
+  )
+```
+
+
+```{r}
+#| label: helpers
+#| include: false
+
+# Process wikitext for in-page display:
+#   - <ref>...</ref>  →  superscript [refN] (numbered from ref_offset + 1)
+#   - [[Target|Disp]] →  HTML anchor
+#   - everything else HTML-escaped so wikitext syntax shows literally
+# Returns list(html = character, refs = character vector of ref contents).
+process_for_display <- function(text, ref_offset = 0L) {
+  refs <- character(0)
+
+  # Step 1: swap <ref>...</ref> for safe placeholder tokens
+  processed <- stringr::str_replace_all(text, "<ref>(.*?)</ref>", function(m) {
+    n    <- length(refs) + 1L
+    refs <<- c(refs, stringr::str_match(m, "<ref>(.*?)</ref>")[1, 2])
+    sprintf("REFSUP_%d_END", n + ref_offset)
+  })
+
+  # Step 2: HTML-escape (turns < > & into entities, leaves placeholders intact)
+  escaped <- htmltools::htmlEscape(processed)
+
+  # Step 3: convert [[wikilinks]] to anchors
+  escaped <- stringr::str_replace_all(
+    escaped, "\\[\\[([^|\\]]+)\\|([^\\]]+)\\]\\]",
+    function(m) {
+      p <- stringr::str_match(m, "\\[\\[([^|\\]]+)\\|([^\\]]+)\\]\\]")
+      paste0('<a href="', wikipedia_url_for(p[, 2]), '" target="_blank">', p[, 3], "</a>")
+    }
+  )
+  escaped <- stringr::str_replace_all(
+    escaped, "\\[\\[([^\\]]+)\\]\\]",
+    function(m) {
+      tgt <- stringr::str_match(m, "\\[\\[([^\\]]+)\\]\\]")[, 2]
+      paste0('<a href="', wikipedia_url_for(tgt), '" target="_blank">', tgt, "</a>")
+    }
+  )
+
+  # Step 4: restore placeholders as blue superscripts
+  for (i in seq_along(refs)) {
+    n_abs <- i + ref_offset
+    escaped <- stringr::str_replace_all(
+      escaped,
+      sprintf("REFSUP_%d_END", n_abs),
+      sprintf('<sup style="color:#06c;font-size:9px;">[ref%d]</sup>', n_abs)
+    )
+  }
+
+  list(html = escaped, refs = refs)
+}
+
+# Render a footnotes section below a display block.
+refs_footnotes <- function(refs, ref_offset = 0L) {
+  if (length(refs) == 0) return(NULL)
+  tags$div(
+    style = "margin-top:5px; padding-top:4px; border-top:1px solid #e1e4e8;",
+    lapply(seq_along(refs), function(i) {
+      tags$p(
+        tags$b(paste0("ref", i + ref_offset, ":")), " ", refs[[i]],
+        style = "font-size:10px; font-family:monospace; margin:1px 0; color:#555; word-break:break-all;"
+      )
+    })
+  )
+}
+
+# Wikitext copy block: button + display (with ref superscripts) + hidden textarea.
+wikitext_block <- function(id, label, content) {
+  disp <- process_for_display(content)
+  tagList(
+    tags$button(
+      class = "copy-btn",
+      style = "margin-bottom:6px;",
+      onclick = sprintf("copyTableToClipboard('%s', this)", id),
+      label
+    ),
+    tags$pre(
+      HTML(disp$html),
+      style = paste(
+        "background-color:#f6f8fa; padding:10px; border-radius:6px;",
+        "overflow-x:auto; font-size:11px; white-space:pre; margin:0;"
+      )
+    ),
+    refs_footnotes(disp$refs),
+    tags$textarea(
+      id = id,
+      style = "position:absolute; left:-9999px; height:0; width:0; overflow:hidden;",
+      readonly = TRUE,
+      content
+    )
+  )
+}
+
+# Citation for INE 2024 census population data, appended to all population sentences
+.ine_pop_ref <- paste0(
+  "<ref>{{Cite",
+  "| last = Instituto Nacional de Estadística",
+  "| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC",
+  "| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download",
+  "| date = 2025}}</ref>"
+)
+
+# Compose a population-rank sentence for municipalities that are among the most
+# populous nationally (top 2), in their department (top 2), or in their province
+# (rank 1, only for provinces with 3+ municipalities). Returns NULL when none apply.
+compose_pop_rank_sentence_en <- function(id_muni, muni_pc) {
+  row <- muni_pc[muni_pc$id_muni == id_muni, ]
+
+  # National top-2
+  if (!is.na(row$nat_pop_rank) && row$nat_pop_rank <= 2) {
+    ord <- if (row$nat_pop_rank == 1) "most" else "second most"
+    return(paste0("It is the ", ord, " populous municipality in [[Bolivia]].",
+                  .ine_pop_ref))
+  }
+
+  # Department top-2
+  if (!is.na(row$dept_pop_rank) && row$dept_pop_rank <= 2) {
+    ord      <- if (row$dept_pop_rank == 1) "most" else "second most"
+    dept_lnk <- paste0("[[", row$department, " Department]]")
+    return(paste0("It is the ", ord, " populous municipality in ", dept_lnk, ".",
+                  .ine_pop_ref))
+  }
+
+  # Province most populous (only for provinces with 3+ municipalities)
+  if (!is.na(row$pop_rank) && row$pop_rank == 1 && row$n_prov_munis >= 3) {
+    id_prov   <- stringr::str_sub(id_muni, 1, 4)
+    prov_name <- prov_lookup$province_anexo[prov_lookup$id_prov == id_prov]
+    return(paste0("It is the most populous municipality in [[",
+                  prov_name, " Province]].", .ine_pop_ref))
+  }
+
+  NULL
+}
+
+# Compose the province-context sentence appended to the lead, for municipalities
+# in 1- or 2-municipality provinces. Returns NULL for 3+ municipality provinces.
+compose_province_context_en <- function(id_muni, muni_pc, prov_lkp) {
+  row       <- muni_pc[muni_pc$id_muni == id_muni, ]
+  id_prov   <- stringr::str_sub(id_muni, 1, 4)
+  prov_name <- prov_lkp$province_anexo[prov_lkp$id_prov == id_prov]
+  muni_name <- row$muni_anexo
+  prov_link <- paste0("[[", prov_name, " Province]]")
+  n         <- row$n_prov_munis
+
+  if (n == 1) {
+    return(paste0(
+      muni_name, " Municipality is the only municipality in ",
+      prov_link, " and its boundaries are identical."
+    ))
+  }
+
+  if (n == 2 && !is.na(row$area_rank) && !is.na(row$pop_rank)) {
+    larger   <- row$area_rank == 1
+    more_pop <- row$pop_rank  == 1
+    return(dplyr::case_when(
+       larger &  more_pop ~ paste0(muni_name, " Municipality is the larger and more populous of the two municipalities in ", prov_link, "."),
+       larger & !more_pop ~ paste0(muni_name, " Municipality covers the larger area of the two municipalities in ", prov_link, ", but it is less populous."),
+      !larger &  more_pop ~ paste0(muni_name, " Municipality is the more populous of the two municipalities in ", prov_link, ", but it covers a smaller area."),
+      TRUE                ~ paste0(muni_name, " Municipality is the smaller and less populous of the two municipalities in ", prov_link, ".")
+    ))
+  }
+
+  NULL
+}
+
+# Compose the Wikipedia lead sentence for a municipality (wikitext).
+# Uses muni_anexo and province_anexo as display text; ordinal from last 2 digits
+# of id_muni via english::ordinal().
+compose_lead_sentence_en <- function(id_muni, muni_lkp, prov_lkp) {
+  muni_row <- muni_lkp[muni_lkp$id_muni == id_muni, ]
+  id_prov  <- substr(id_muni, 1, 4)
+  prov_row <- prov_lkp[prov_lkp$id_prov == id_prov, ]
+  muni_num <- as.integer(substr(id_muni, 5, 6))
+
+  lead <- paste0(
+    "'''", muni_row$muni_anexo, " Municipality''' is the ",
+    english::ordinal(muni_num),
+    " [[Municipalities of Bolivia|municipal section]] of the",
+    " [[", prov_row$province_anexo, " Province]]",
+    " in the [[", prov_row$department, " Department]]",
+    " in [[Bolivia]]."
+  )
+
+  pop_rank <- compose_pop_rank_sentence_en(id_muni, muni_province_context)
+  context  <- compose_province_context_en(id_muni, muni_province_context, prov_lkp)
+
+  parts <- c(lead, pop_rank, context)
+  paste(parts[!sapply(parts, is.null)], collapse = " ")
+}
+
+# Compose the mayor sentence for a municipality (wikitext).
+compose_mayor_sentence_en <- function(id_muni, muni_name, alcaldes_data,
+                                       page_number) {
+  row    <- alcaldes_data[alcaldes_data$id_muni == id_muni, ]
+  nombre <- stringr::str_to_title(row$nombre[1])
+  ref    <- paste0("<ref>",
+                   source_ref_with_page_number(page_number, source_ref_en),
+                   "</ref>")
+  paste0(
+    "The Mayor of ", muni_name, " is ", nombre,
+    ", who was elected in the ",
+    "[[2026 Bolivian regional elections|March 2026 elections]].",
+    ref
+  )
+}
+
+# Compose the council intro sentence for a municipality.
+# Returns one sentence for non-IOC municipalities, two for IOC ones.
+compose_council_sentence_en <- function(id_muni, muni_name,
+                                         concejal_exp, ioc_data) {
+  row <- concejal_exp[concejal_exp$id_muni == id_muni, ]
+
+  range_phrase <- dplyr::case_when(
+    row$es_capital & row$pop_2024 > 75000 ~
+      "department capitals and municipalities with populations over 75,000",
+    row$es_capital ~
+      "department capitals",
+    row$pop_2024 > 75000 ~
+      "municipalities with populations over 75,000",
+    row$pop_2024 > 50000 ~
+      "municipalities with populations between 50,001 and 75,000",
+    row$pop_2024 > 15000 ~
+      "municipalities with populations between 15,001 and 50,000",
+    TRUE ~
+      "municipalities with populations up to 15,000"
+  )
+
+  s1 <- paste0(
+    muni_name, " has a municipal council with ", row$sillas_esperadas,
+    " seats, as do all ", range_phrase, ".",
+    "<ref>{{Cite news| title = A más población, los municipios tienen más concejales, según la ley| work = Los Tiempos| access-date = 2026-06-19| date = 2026-02-08| url = https://www.lostiempos.com/actualidad/pais/20260208/mas-poblacion-municipios-tienen-mas-concejales-ley}}</ref>"
+  )
+
+  ioc_rows <- ioc_data[ioc_data$id_muni == id_muni, ]
+  if (nrow(ioc_rows) > 0) {
+    pueblo <- stringr::str_to_title(ioc_rows$pueblo[1])
+    s2 <- paste0(
+      "One of those seats is an Indigenous seat assigned by the ",
+      pueblo, " according to its own norms and procedures."
+    )
+    paste(s1, s2)
+  } else {
+    s1
+  }
+}
+
+muni_block <- function(id_muni, muni_name, department, concejo) {
+  page <- roster_pages$page[roster_pages$id_muni == id_muni]
+  src  <- source_ref_with_page_number(page, source_ref_en)
+
+  # Lead sentence
+  lead_wt   <- compose_lead_sentence_en(id_muni, muni_lookup, prov_lookup)
+  lead_disp <- process_for_display(lead_wt)
+
+  # Wikitext for both government paragraphs (combined into one copy target)
+  mayor_wt   <- compose_mayor_sentence_en(id_muni, muni_name, alcaldes, page)
+  council_wt <- compose_council_sentence_en(id_muni, muni_name,
+                                             concejal_expected, muni_concejal_ioc)
+  intro_wt   <- paste0(mayor_wt, "\n\n", council_wt)
+
+  # Display: process each sentence separately so refs are numbered sequentially
+  mayor_disp   <- process_for_display(mayor_wt, ref_offset = 0L)
+  council_disp <- process_for_display(council_wt, ref_offset = length(mayor_disp$refs))
+  all_intro_refs <- c(mayor_disp$refs, council_disp$refs)
+
+  tagList(
+    tags$details(
+      tags$summary(
+        tags$strong(muni_name),
+        tags$span(
+          paste0(" \u2014 ", department),
+          style = "color: #586069; font-weight: normal;"
+        ),
+        tags$code(
+          paste0(" [", id_muni, "]"),
+          style = "font-size: 11px; color: #999; margin-left: 6px;"
+        )
+      ),
+      # Lead sentence — separate copy block
+      tags$div(
+        style = "margin-top:8px; margin-bottom:10px;",
+        tags$button(
+          class = "copy-btn",
+          style = "margin-bottom:6px;",
+          onclick = sprintf("copyTableToClipboard('lead_en_%s', this)", id_muni),
+          "Copy lead wikitext"
+        ),
+        tags$p(HTML(lead_disp$html), style = "font-size:12px; margin:4px 0 0; color:#333;"),
+        tags$textarea(
+          id       = paste0("lead_en_", id_muni),
+          style    = "position:absolute; left:-9999px; height:0; width:0; overflow:hidden;",
+          readonly = TRUE,
+          lead_wt
+        )
+      ),
+      # Government section — mayor + council intro, one button copies both
+      tags$div(
+        style = "margin-top:8px; margin-bottom:10px;",
+        tags$button(
+          class = "copy-btn",
+          style = "margin-bottom:6px;",
+          onclick = sprintf("copyTableToClipboard('intro_en_%s', this)", id_muni),
+          "Copy government wikitext"
+        ),
+        tags$p(HTML(mayor_disp$html),   style = "font-size:12px; margin:4px 0 4px; color:#333;"),
+        tags$p(HTML(council_disp$html),  style = "font-size:12px; margin:0 0 0;    color:#333;"),
+        refs_footnotes(all_intro_refs),
+        tags$textarea(
+          id       = paste0("intro_en_", id_muni),
+          style    = "position:absolute; left:-9999px; height:0; width:0; overflow:hidden;",
+          readonly = TRUE,
+          intro_wt
+        )
+      ),
+      # Side-by-side kable + wikitable
+      tags$div(
+        style = "display:flex; gap:14px; align-items:flex-start; font-size:12px;",
+        tags$div(
+          style = "flex:1 1 0; min-width:0; overflow-x:auto;",
+          build_council_kable_en(id_muni, data = concejo)
+        ),
+        tags$div(
+          style = "flex:1 1 0; min-width:0;",
+          wikitext_block(
+            id      = paste0("concejo_en_", id_muni),
+            label   = "Copy council table",
+            content = build_council_wikitable_en(id_muni, data = concejo,
+                                                  source = source_wikitext_en,
+                                                  source_refs = src)
+          )
+        )
+      )
+    ),
+    tags$hr(style = "border:none; border-top:1px solid #e1e4e8; margin:4px 0;")
+  )
+}
+
+render_muni_blocks <- function(lookup, concejo) {
+  ids <- lookup |>
+    filter(id_muni %in% unique(concejo$id_muni)) |>
+    arrange(id_muni) |>
+    select(id_muni, muni_anexo, department)
+
+  tagList(pmap(ids, function(id_muni, muni_anexo, department) {
+    muni_block(id_muni, muni_anexo, department, concejo)
+  }))
+}
+```
+
+```{r source-data}
+source_wikitext_en = "Supreme Electoral Tribunal."
+source_wikitext_es = "Tribunal Supremo Electoral."
+
+source_ref_en  <- "{{Cite report| publisher = Órgano Electoral Plurinacional| last1 = Órgano Electoral Plurinacional| last2 = Tribunal Supremo Electoral| title = Publicación de resultados Elecciones Subnacionales 2026: Elección de Autoridades Políticas Departamentales Regionales y Municipales 2026 (Primera y Segunda Vuelta Electoral)| series = Separata de información pública| date = 2026-04-23}}"
+source_ref_es <- source_ref_en
+
+source_ref_with_page_number <- function(page_number, source_ref) {
+  source_ref_minus_end <- sub("\\}\\}$", "", source_ref)
+  paste0(source_ref_minus_end, " | page = ", page_number, " }}")
+}
+
+```
+
+```{r}
+#| label: assets
+#| echo: false
+#| results: asis
+include_table_assets()
+```
+
+```{r}
+#| label: council-tables
+#| echo: false
+#| results: asis
+render_muni_blocks(muni_lookup, concejo_data)
+```

@@ -185,11 +185,202 @@ add_wikipedia_matches <- function(df, name_col = "name", lang = "en",
   out
 }
 
+# ---- Wikipedia URL helpers ----------------------------------------------------
+
+#' Build a full Wikipedia URL from a page title
+#'
+#' @param title Page title (spaces are converted to underscores)
+#' @param lang  Language code (default "en")
+#' @return Character string URL
+wikipedia_url_for <- function(title, lang = "en") {
+  paste0("https://", lang, ".wikipedia.org/wiki/", gsub(" ", "_", title))
+}
+
+# ---- Bolivia municipal council wikitable --------------------------------------
+
+# Language label sets used by both the wikitable and kable builders.
+.council_labels <- list(
+  es = list(
+    seat         = "N.\u00b0",
+    type         = "Tipo",
+    name         = "Nombre",
+    party        = "Partido / Organizaci\u00f3n Pol\u00edtica",
+    member       = "Titular",
+    alt          = "Suplente",
+    pending      = "Por definir",
+    source_label = "Fuente"
+  ),
+  en = list(
+    seat         = "Seat",
+    type         = "Type",
+    name         = "Name",
+    party        = "Party / Political Organization",
+    member       = "Member",
+    alt          = "Alternate",
+    pending      = "TBD",
+    source_label = "Source"
+  )
+)
+
+# Internal: build council wikitable for a given language
+.build_council_wikitable <- function(id_muni_code, data, caption, source,
+                                     source_refs, lang) {
+  lb <- .council_labels[[lang]]
+
+  df <- data |>
+    filter(id_muni == id_muni_code) |>
+    arrange(silla, if_else(tipo == "TITULAR", 1L, 2L))
+
+  if (nrow(df) == 0) return("")
+
+  nombre_cell <- function(row) {
+    if (isTRUE(row$pendiente) || is.na(row$nombre) || row$nombre == "") {
+      lb$pending
+    } else {
+      str_to_title(row$nombre)
+    }
+  }
+
+  partido_cell <- function(row) {
+    if (isTRUE(row$esp_ioc) && !is.na(row$pueblo) && row$pueblo != "") {
+      str_to_title(row$pueblo)
+    } else if (!is.na(row$sigla) && row$sigla != "") {
+      row$sigla
+    } else {
+      ""
+    }
+  }
+
+  lines <- '{| class="wikitable"'
+  if (!is.null(caption)) lines <- c(lines, paste0("|+ ", caption))
+  lines <- c(lines, sprintf("! %s !! %s !! %s !! %s",
+                             lb$seat, lb$type, lb$name, lb$party))
+
+  for (s in unique(df$silla)) {
+    seat <- df[df$silla == s, ]
+    n    <- nrow(seat)
+
+    same_party <- n == 2 && {
+      p1 <- partido_cell(seat[1, ]); p2 <- partido_cell(seat[2, ])
+      p1 != "" && identical(p1, p2)
+    }
+
+    for (i in seq_len(n)) {
+      row  <- seat[i, ]
+      tipo <- if (row$tipo == "TITULAR") lb$member else lb$alt
+      nom  <- nombre_cell(row)
+      if (row$tipo == "SUPLENTE") nom <- paste0("''", nom, "''")
+      part <- partido_cell(row)
+
+      lines <- c(lines, "|-")
+
+      if (n == 2 && i == 1) {
+        if (same_party) {
+          lines <- c(lines, sprintf('| rowspan="2" | %d || %s || %s || rowspan="2" | %s',
+                                     s, tipo, nom, part))
+        } else {
+          lines <- c(lines, sprintf('| rowspan="2" | %d || %s || %s || %s',
+                                     s, tipo, nom, part))
+        }
+      } else if (n == 2 && i == 2) {
+        if (same_party) {
+          lines <- c(lines, sprintf("| %s || %s", tipo, nom))
+        } else {
+          lines <- c(lines, sprintf("| %s || %s || %s", tipo, nom, part))
+        }
+      } else {
+        lines <- c(lines, sprintf("| %d || %s || %s || %s", s, tipo, nom, part))
+      }
+    }
+  }
+
+  # Source row — mirrors get_wikitable() behaviour
+  if (!is.null(source)) {
+    source_text <- paste0("'''", lb$source_label, ":''' ", source)
+    if (!is.null(source_refs)) {
+      source_text <- paste0(source_text, "<ref>", source_refs, "</ref>")
+    }
+    lines <- c(lines, "|-", paste0('|colspan="4"|', source_text))
+  }
+
+  lines <- c(lines, "|}")
+  paste(lines, collapse = "\n")
+}
+
+# Internal: build council kable for a given language
+.build_council_kable <- function(id_muni_code, data, lang) {
+  lb <- .council_labels[[lang]]
+
+  df <- data |>
+    filter(id_muni == id_muni_code) |>
+    arrange(silla, if_else(tipo == "TITULAR", 1L, 2L)) |>
+    mutate(
+      .name = case_when(
+        isTRUE(pendiente) | is.na(nombre) | nombre == "" ~
+          paste0("<em>", lb$pending, "</em>"),
+        tipo == "SUPLENTE" ~ paste0("<em>", str_to_title(nombre), "</em>"),
+        TRUE ~ str_to_title(nombre)
+      ),
+      .party = case_when(
+        isTRUE(esp_ioc) & !is.na(pueblo) & pueblo != "" ~ str_to_title(pueblo),
+        !is.na(sigla) & sigla != "" ~ sigla,
+        TRUE ~ ""
+      ),
+      .type = if_else(tipo == "TITULAR", lb$member, lb$alt)
+    )
+
+  # Build column-name-safe data frame for kable
+  out <- data.frame(
+    seat  = df$silla,
+    type  = df$.type,
+    name  = df$.name,
+    party = df$.party,
+    stringsAsFactors = FALSE,
+    check.names = FALSE
+  )
+  names(out) <- c(lb$seat, lb$type, lb$name, lb$party)
+
+  htmltools::HTML(
+    knitr::kable(out, format = "html", escape = FALSE,
+                 table.attr = 'class="table table-sm table-striped" style="font-size:11px;width:100%;"')
+  )
+}
+
+#' @describeIn build_council_wikitable_es Spanish MediaWiki council table
+build_council_wikitable_es <- function(id_muni_code, data = muni_concejo_comb,
+                                       caption = NULL, source = NULL,
+                                       source_refs = NULL) {
+  .build_council_wikitable(id_muni_code, data, caption, source, source_refs,
+                            lang = "es")
+}
+
+#' @describeIn build_council_wikitable_en English MediaWiki council table
+build_council_wikitable_en <- function(id_muni_code, data = muni_concejo_comb,
+                                       caption = NULL, source = NULL,
+                                       source_refs = NULL) {
+  .build_council_wikitable(id_muni_code, data, caption, source, source_refs,
+                            lang = "en")
+}
+
+#' @describeIn build_council_kable_es Spanish HTML kable preview
+build_council_kable_es <- function(id_muni_code, data = muni_concejo_comb) {
+  .build_council_kable(id_muni_code, data, lang = "es")
+}
+
+#' @describeIn build_council_kable_en English HTML kable preview
+build_council_kable_en <- function(id_muni_code, data = muni_concejo_comb) {
+  .build_council_kable(id_muni_code, data, lang = "en")
+}
+
+# Backward-compatible aliases
+build_council_wikitable <- build_council_wikitable_es
+build_council_kable     <- build_council_kable_en
+
 # ---- MediaWiki table formatter (from import-ice-detention.qmd) ----------------
 
 #' Format a data frame as a MediaWiki wikitable string
 get_wikitable <- function(df, caption = NULL, class = "wikitable sortable",
-                          column_names = NULL) {
+                          column_names = NULL, source = NULL, source_refs = NULL) {
   out <- c()
   out <- c(out, paste0('{| class="', class, '"'))
   if (!is.null(caption)) out <- c(out, paste0("|+ ", caption))
@@ -202,7 +393,24 @@ get_wikitable <- function(df, caption = NULL, class = "wikitable sortable",
     row_clean[is.na(row_clean)] <- ""
     paste0("| ", paste(row_clean, collapse = " || "))
   })
+
+  # Paste data rows
   out <- c(out, paste0("|-\n", formatted_rows))
+
+  # Append Source row if provided
+  if (!is.null(source)) {
+    source_text <- paste0("'''Source:''' ", source)
+
+    # Append the reference tag if source_refs is provided
+    if (!is.null(source_refs)) {
+      source_text <- paste0(source_text, "<ref>", source_refs, "</ref>")
+    }
+
+    # Calculate colspan based on the number of columns
+    num_cols <- length(column_names)
+    out <- c(out, "|-", paste0('|colspan="', num_cols, '"|', source_text))
+  }
+
   out <- c(out, "|}")
   paste(out, collapse = "\n")
 }
