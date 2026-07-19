@@ -123,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This document maps the completeness of Wikipedia coverage for Bolivia’s 336 official municipalities across four Wikipedias: <strong>English</strong>, <strong>Spanish</strong>, <strong>Quechua</strong>, and <strong>Aymara</strong>. Coverage is defined as having a Wikipedia article linked from Wikidata via sitelinks.</p>
+<p>This document maps the completeness of Wikipedia coverage for Bolivia’s 336 official municipalities across six Wikipedias: <strong>English</strong>, <strong>Spanish</strong>, <strong>Quechua</strong>, <strong>Aymara</strong>, <strong>German</strong>, and <strong>Portuguese</strong>. Coverage is defined as having a Wikipedia article linked from Wikidata via sitelinks.</p>
 <p>The maps are designed to support Wikipedia editors who want to identify municipalities lacking articles in one or more languages. They connect to the deeper article-quality analysis in <a href="bolivia-municipality-wikipedia.qmd"><code>bolivia-municipality-wikipedia.qmd</code></a>, which examines article content and structure on English Wikipedia.</p>
 <hr>
 </section>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    bo_municipality_wiki_presence<span class="sc">$</span>data <span class="sc">|&gt;</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(qid, en, es, qu, ay) <span class="sc">|&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(qid, en, es, qu, ay, de, pt) <span class="sc">|&gt;</span></span>
 <span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">left_join</span>(</span>
 <span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        municipalities_wd_ine <span class="sc">|&gt;</span> <span class="fu">select</span>(qid, ine_code),</span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">by =</span> <span class="st">"qid"</span></span>
@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"cod.mun"</span> <span class="ot">=</span> <span class="st">"ine_code"</span>)</span>
 <span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">c</span>(en, es, qu, ay),</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">c</span>(en, es, qu, ay, de, pt),</span>
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>           <span class="sc">~</span> <span class="fu">factor</span>(<span class="fu">case_when</span>(</span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>             .x <span class="sc">==</span> <span class="dv">1</span>L <span class="sc">~</span> <span class="st">"Has article"</span>,</span>
 <span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>             .x <span class="sc">==</span> <span class="dv">0</span>L <span class="sc">~</span> <span class="st">"No article"</span>,</span>
@@ -241,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Count municipalities with / without an article per Wikipedia</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>coverage_summary <span class="ot">&lt;-</span> map_data <span class="sc">|&gt;</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">|&gt;</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">c</span>(en, es, qu, ay), <span class="fu">list</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">c</span>(en, es, qu, ay, de, pt), <span class="fu">list</span>(</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">has    =</span> <span class="sc">~</span> <span class="fu">sum</span>(.x <span class="sc">==</span> <span class="st">"Has article"</span>,      <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">no     =</span> <span class="sc">~</span> <span class="fu">sum</span>(.x <span class="sc">==</span> <span class="st">"No article"</span>,       <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">absent =</span> <span class="sc">~</span> <span class="fu">sum</span>(.x <span class="sc">==</span> <span class="st">"Not in Wikidata"</span> <span class="sc">|</span> <span class="fu">is.na</span>(.x), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
@@ -250,20 +250,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to  =</span> <span class="fu">c</span>(<span class="st">"language"</span>, <span class="st">".value"</span>),</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">wikipedia =</span> <span class="fu">c</span>(<span class="at">en =</span> <span class="st">"English"</span>, <span class="at">es =</span> <span class="st">"Spanish"</span>, <span class="at">qu =</span> <span class="st">"Quechua"</span>, <span class="at">ay =</span> <span class="st">"Aymara"</span>)[language],</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_has   =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> has <span class="sc">/</span> (has <span class="sc">+</span> no <span class="sc">+</span> absent), <span class="dv">1</span>)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(wikipedia, has, no, absent, pct_has)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>coverage_summary <span class="sc">|&gt;</span></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">Wikipedia      =</span> wikipedia,</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Has article</span><span class="st">`</span>  <span class="ot">=</span> has,</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">No article</span><span class="st">`</span>   <span class="ot">=</span> no,</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Not in WD</span><span class="st">`</span>    <span class="ot">=</span> absent,</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">% covered</span><span class="st">`</span>    <span class="ot">=</span> pct_has</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">"Municipality article coverage by Wikipedia language edition"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">wikipedia =</span> <span class="fu">c</span>(<span class="at">en =</span> <span class="st">"English"</span>, <span class="at">es =</span> <span class="st">"Spanish"</span>, <span class="at">qu =</span> <span class="st">"Quechua"</span>, <span class="at">ay =</span> <span class="st">"Aymara"</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>                  <span class="at">de =</span> <span class="st">"German"</span>, <span class="at">pt =</span> <span class="st">"Portuguese"</span>)[language],</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_has   =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> has <span class="sc">/</span> (has <span class="sc">+</span> no <span class="sc">+</span> absent), <span class="dv">1</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(wikipedia, has, no, absent, pct_has)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>coverage_summary <span class="sc">|&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">Wikipedia      =</span> wikipedia,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Has article</span><span class="st">`</span>  <span class="ot">=</span> has,</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">No article</span><span class="st">`</span>   <span class="ot">=</span> no,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Not in WD</span><span class="st">`</span>    <span class="ot">=</span> absent,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">% covered</span><span class="st">`</span>    <span class="ot">=</span> pct_has</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">"Municipality article coverage by Wikipedia language edition"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -306,6 +307,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0.6</td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;">German</td>
+<td style="text-align: right;">339</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Portuguese</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">330</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2.7</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -321,7 +336,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>presence_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Has article"</span>     <span class="ot">=</span> <span class="st">"#2166ac"</span>,</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"No article"</span>      <span class="ot">=</span> <span class="st">"#f7f7f7"</span>,</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Not in Wikidata"</span> <span class="ot">=</span> <span class="st">"#cccccc"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Not in Wikidata"</span> <span class="ot">=</span> <span class="st">"#aaaaaa"</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
@@ -333,19 +348,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>p_es <span class="ot">&lt;-</span> <span class="fu">make_presence_map</span>(map_data, <span class="st">"es"</span>, <span class="st">"Spanish Wikipedia"</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>p_qu <span class="ot">&lt;-</span> <span class="fu">make_presence_map</span>(map_data, <span class="st">"qu"</span>, <span class="st">"Quechua Wikipedia"</span>)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>p_ay <span class="ot">&lt;-</span> <span class="fu">make_presence_map</span>(map_data, <span class="st">"ay"</span>, <span class="st">"Aymara Wikipedia"</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>p_en <span class="sc">+</span> p_es <span class="sc">+</span> p_qu <span class="sc">+</span> p_ay <span class="sc">+</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_layout</span>(<span class="at">ncol =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_annotation</span>(</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title   =</span> <span class="st">"Bolivia: Municipal Wikipedia Coverage by Language"</span>,</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Wikidata (Q1062710 instances); boundaries: GADM 4.1"</span>,</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">theme   =</span> <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>))</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>p_de <span class="ot">&lt;-</span> <span class="fu">make_presence_map</span>(map_data, <span class="st">"de"</span>, <span class="st">"German Wikipedia"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>p_pt <span class="ot">&lt;-</span> <span class="fu">make_presence_map</span>(map_data, <span class="st">"pt"</span>, <span class="st">"Portuguese Wikipedia"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>p_lg <span class="ot">&lt;-</span> <span class="fu">make_legend_panel</span>(map_data)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Flat layout: legend in row 1 col 4, spacer in row 2 col 4</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>design <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="st">ABCD</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="st">####</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="st">EFG#</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>p_en <span class="sc">+</span> p_es <span class="sc">+</span> p_qu <span class="sc">+</span> p_lg <span class="sc">+</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  p_ay <span class="sc">+</span> p_de <span class="sc">+</span> p_pt <span class="sc">+</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_layout</span>(<span class="at">design =</span> design, <span class="at">heights =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">0.08</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_annotation</span>(</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">title   =</span> <span class="st">"Bolivia: Municipal Wikipedia Coverage by Language"</span>,</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Wikidata (Q1062710 instances); boundaries: GADM 4.1"</span>,</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">theme   =</span> <span class="fu">theme</span>(</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">28</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>)</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display page-columns page-full">
 <div class="page-columns page-full">
 <figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="bolivia-wikipedia-completeness_files/figure-html/maps-individual-1.png" class="img-fluid figure-img column-page-inset-right" width="2112"></p>
+<p class="page-columns page-full"><img src="bolivia-wikipedia-completeness_files/figure-html/map-panel-1.png" class="img-fluid figure-img column-page-inset-right" width="2304"></p>
 </figure>
 </div>
 </div>
@@ -366,34 +394,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    es <span class="sc">==</span> <span class="st">"No article"</span>,</span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    qu <span class="sc">==</span> <span class="st">"No article"</span>,</span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    ay <span class="sc">==</span> <span class="st">"No article"</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    municipalities_wd_ine <span class="sc">|&gt;</span> <span class="fu">select</span>(ine_code, label_en, label_es),</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"cod.mun"</span> <span class="ot">=</span> <span class="st">"ine_code"</span>)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">INE code</span><span class="st">`</span>  <span class="ot">=</span> cod.mun,</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Name (EN)</span><span class="st">`</span> <span class="ot">=</span> label_en,</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Name (ES)</span><span class="st">`</span> <span class="ot">=</span> label_es,</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">English     =</span> en,</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">Spanish     =</span> es,</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">Quechua     =</span> qu,</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">Aymara      =</span> ay</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="st">`</span><span class="at">INE code</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">"Municipalities with no article in English, Spanish, Quechua, or Aymara"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#    de == "No article",</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">#    pt == "No article"</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    municipalities_wd_ine <span class="sc">|&gt;</span> <span class="fu">select</span>(ine_code, label_en, label_es),</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"cod.mun"</span> <span class="ot">=</span> <span class="st">"ine_code"</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">INE code</span><span class="st">`</span>  <span class="ot">=</span> cod.mun,</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Name (EN)</span><span class="st">`</span> <span class="ot">=</span> label_en,</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Name (ES)</span><span class="st">`</span> <span class="ot">=</span> label_es,</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">English     =</span> en,</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">Spanish     =</span> es,</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">Quechua     =</span> qu,</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">Aymara      =</span> ay,</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">German      =</span> de,</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">Portuguese  =</span> pt</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="st">`</span><span class="at">INE code</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">"Municipalities with no article in English, Spanish, Quechua, or Aymara"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>Municipalities with no article in English, Spanish, Quechua, or Aymara</caption>
 <colgroup>
+<col style="width: 6%">
+<col style="width: 24%">
+<col style="width: 18%">
 <col style="width: 8%">
-<col style="width: 29%">
-<col style="width: 22%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -404,6 +438,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <th style="text-align: left;">Spanish</th>
 <th style="text-align: left;">Quechua</th>
 <th style="text-align: left;">Aymara</th>
+<th style="text-align: left;">German</th>
+<th style="text-align: left;">Portuguese</th>
 </tr>
 </thead>
 <tbody>
@@ -415,6 +451,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
+<td style="text-align: left;">No article</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">031501</td>
@@ -423,6 +461,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
 <td style="text-align: left;">No article</td>
 </tr>
 <tr class="odd">
@@ -433,6 +473,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
+<td style="text-align: left;">No article</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">041101</td>
@@ -441,6 +483,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
 <td style="text-align: left;">No article</td>
 </tr>
 <tr class="odd">
@@ -451,6 +495,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
+<td style="text-align: left;">No article</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">051501</td>
@@ -459,6 +505,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
 <td style="text-align: left;">No article</td>
 </tr>
 <tr class="odd">
@@ -469,6 +517,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
+<td style="text-align: left;">No article</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">060101</td>
@@ -477,6 +527,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
 <td style="text-align: left;">No article</td>
 </tr>
 <tr class="odd">
@@ -487,6 +539,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
+<td style="text-align: left;">No article</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">071201</td>
@@ -495,6 +549,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
 <td style="text-align: left;">No article</td>
+<td style="text-align: left;">No article</td>
+<td style="text-align: left;">Has article</td>
 <td style="text-align: left;">No article</td>
 </tr>
 </tbody>

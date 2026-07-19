@@ -15,8 +15,9 @@ execute:
 ## Overview
 
 This document maps the completeness of Wikipedia coverage for Bolivia's 336
-official municipalities across four Wikipedias: **English**, **Spanish**,
-**Quechua**, and **Aymara**. Coverage is defined as having a Wikipedia article
+official municipalities across six Wikipedias: **English**, **Spanish**,
+**Quechua**, **Aymara**, **German**, and **Portuguese**. 
+Coverage is defined as having a Wikipedia article
 linked from Wikidata via sitelinks.
 
 The maps are designed to support Wikipedia editors who want to identify
@@ -120,7 +121,7 @@ map_data <- gadm_sf |>
   ) |>
   left_join(
     bo_municipality_wiki_presence$data |>
-      select(qid, en, es, qu, ay) |>
+      select(qid, en, es, qu, ay, de, pt) |>
       left_join(
         municipalities_wd_ine |> select(qid, ine_code),
         by = "qid"
@@ -128,7 +129,7 @@ map_data <- gadm_sf |>
     by = c("cod.mun" = "ine_code")
   ) |>
   mutate(
-    across(c(en, es, qu, ay),
+    across(c(en, es, qu, ay, de, pt),
            ~ factor(case_when(
              .x == 1L ~ "Has article",
              .x == 0L ~ "No article",
@@ -145,7 +146,7 @@ map_data <- gadm_sf |>
 # Count municipalities with / without an article per Wikipedia
 coverage_summary <- map_data |>
   st_drop_geometry() |>
-  summarise(across(c(en, es, qu, ay), list(
+  summarise(across(c(en, es, qu, ay, de, pt), list(
     has    = ~ sum(.x == "Has article",      na.rm = TRUE),
     no     = ~ sum(.x == "No article",       na.rm = TRUE),
     absent = ~ sum(.x == "Not in Wikidata" | is.na(.x), na.rm = TRUE)
@@ -154,7 +155,8 @@ coverage_summary <- map_data |>
                names_to  = c("language", ".value"),
                names_sep = "_") |>
   mutate(
-    wikipedia = c(en = "English", es = "Spanish", qu = "Quechua", ay = "Aymara")[language],
+    wikipedia = c(en = "English", es = "Spanish", qu = "Quechua", ay = "Aymara",
+                  de = "German", pt = "Portuguese")[language],
     pct_has   = round(100 * has / (has + no + absent), 1)
   ) |>
   select(wikipedia, has, no, absent, pct_has)
@@ -182,46 +184,83 @@ matched through Wikidata.
 presence_colors <- c(
   "Has article"     = "#2166ac",
   "No article"      = "#f7f7f7",
-  "Not in Wikidata" = "#cccccc"
+  "Not in Wikidata" = "#aaaaaa"
 )
 ```
 
-```{r map-function}
+```{r map-helpers}
 #| include: false
+
 make_presence_map <- function(data, col, title) {
+  bb <- sf::st_bbox(data)
   ggplot(data) +
     geom_sf(aes(fill = .data[[col]]), color = "white", linewidth = 0.12) +
     scale_fill_manual(
       values   = presence_colors,
-      na.value = "#cccccc",
+      na.value = "#aaaaaa",
       name     = NULL,
       drop     = FALSE
     ) +
+    coord_sf(xlim = bb[c("xmin", "xmax")], ylim = bb[c("ymin", "ymax")],
+             expand = FALSE) +
     labs(title = title) +
     theme_void(base_size = 10) +
     theme(
-      plot.title    = element_text(face = "bold", hjust = 0.5, size = 11),
-      legend.position = "bottom"
+      plot.title      = element_text(face = "bold", hjust = 0.5, size = 22),
+      legend.position = "none"
     )
+}
+
+make_legend_panel <- function(data) {
+  legend_plot <- ggplot(data) +
+    geom_sf(aes(fill = en), color = "white", linewidth = 0.12) +
+    scale_fill_manual(
+      values   = presence_colors,
+      na.value = "#aaaaaa",
+      name     = NULL,
+      drop     = FALSE
+    ) +
+    theme_void() +
+    theme(
+      legend.position  = "inside",
+      legend.position.inside = c(0.5, 0.5),
+      legend.text      = element_text(size = 16),
+      legend.key.size  = unit(1.8, "cm"),
+      legend.key.spacing = unit(0.5, "cm")
+    )
+  wrap_elements(full = cowplot::get_legend(legend_plot))
 }
 ```
 
 :::{.column-page-inset-right}
-```{r maps-individual}
-#| fig-height: 8
-#| fig-width: 22
+```{r map-panel}
+#| fig-height: 18
+#| fig-width: 24
 
 p_en <- make_presence_map(map_data, "en", "English Wikipedia")
 p_es <- make_presence_map(map_data, "es", "Spanish Wikipedia")
 p_qu <- make_presence_map(map_data, "qu", "Quechua Wikipedia")
 p_ay <- make_presence_map(map_data, "ay", "Aymara Wikipedia")
+p_de <- make_presence_map(map_data, "de", "German Wikipedia")
+p_pt <- make_presence_map(map_data, "pt", "Portuguese Wikipedia")
+p_lg <- make_legend_panel(map_data)
 
-p_en + p_es + p_qu + p_ay +
-  plot_layout(ncol = 4) +
+# Flat layout: legend in row 1 col 4, spacer in row 2 col 4
+design <- "
+ABCD
+####
+EFG#
+"
+
+p_en + p_es + p_qu + p_lg +
+  p_ay + p_de + p_pt +
+  plot_layout(design = design, heights = c(1, 0.08, 1)) +
   plot_annotation(
     title   = "Bolivia: Municipal Wikipedia Coverage by Language",
     caption = "Source: Wikidata (Q1062710 instances); boundaries: GADM 4.1",
-    theme   = theme(plot.title = element_text(face = "bold", size = 18, hjust = 0.5))
+    theme   = theme(
+      plot.title = element_text(face = "bold", size = 28, hjust = 0.5)
+    )
   )
 
 ```
@@ -241,6 +280,8 @@ map_data |>
     es == "No article",
     qu == "No article",
     ay == "No article"
+#    de == "No article",
+#    pt == "No article"
   ) |>
   left_join(
     municipalities_wd_ine |> select(ine_code, label_en, label_es),
@@ -253,7 +294,9 @@ map_data |>
     English     = en,
     Spanish     = es,
     Quechua     = qu,
-    Aymara      = ay
+    Aymara      = ay,
+    German      = de,
+    Portuguese  = pt
   ) |>
   arrange(`INE code`) |>
   knitr::kable(caption = "Municipalities with no article in English, Spanish, Quechua, or Aymara")
