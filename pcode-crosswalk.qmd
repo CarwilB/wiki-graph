@@ -1,0 +1,658 @@
+---
+title: "Wikidata QID ↔ OCHA Pcode Crosswalk"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+execute:
+  cache: true
+  warning: false
+  message: false
+knitr:
+  opts_chunk:
+    cache.path: "data/cache/knitr-pcode/"
+---
+
+## Overview
+
+This document builds and evaluates a crosswalk between Wikidata QIDs and OCHA
+p-codes from the Global Administrative Boundaries GDB
+(`maps/global_admin_boundaries_matched_latest.gdb`), which contains:
+
+- **ADM2**: 19,705 features (provinces, departments, cantons, municipalities)
+- **ADM3**: 55,622 features (municipalities, districts, communes, parishes)
+
+Six countries that appear in the Wikipedia presence analysis are **absent from
+the GDB** (Argentina, Brazil, Paraguay, Suriname, Uruguay, Cuba, Puerto Rico)
+and are excluded throughout. The 15 remaining countries in both datasets are
+the focus here.
+
+Two strategies are applied in priority order:
+
+1. **Code-based** — for countries where a Wikidata external-ID property
+   directly encodes the pcode suffix (e.g. P14142 for Bolivia, P7325 for
+   Colombia). These are the most reliable matches and are preferred wherever
+   available.
+2. **Name-based** — normalized string matching between Wikidata labels and GDB
+   name columns, with accent and admin-type prefix stripping. For countries
+   with many duplicate sub-unit names (Venezuela, Panama), a hierarchical
+   second pass uses P131 (parent admin unit) to anchor items before matching.
+
+The pipeline is implemented in `src/pcode-crosswalk.R`. QuickStatements to
+add P7590 (OCHA P-code) to matched items are generated at the end of this
+document but are **not executed** — a manual quality review is expected first.
+
+---
+
+## Setup
+
+```{r setup}
+#| cache: false
+library(sf)
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(tidyr)
+library(tibble)
+library(stringi)
+library(ggplot2)
+
+source("src/pcode-crosswalk.R")
+source("R/create_quick_statement.R")
+```
+
+---
+
+## Data
+
+### GDB layers
+
+```{r load-gdb}
+GDB_PATH <- "maps/global_admin_boundaries_matched_latest.gdb"
+
+adm2_sf <- st_read(GDB_PATH, layer = "admin2", quiet = TRUE)
+adm3_sf <- st_read(GDB_PATH, layer = "admin3", quiet = TRUE)
+
+cat("ADM2:", nrow(adm2_sf), "features\n")
+cat("ADM3:", nrow(adm3_sf), "features\n")
+```
+
+### Countries present in both datasets
+
+The 15 countries present in both the GDB and the Wikipedia presence analysis,
+with their ISO 3166-1 alpha-2 codes used to join the two sources:
+
+```{r country-map}
+# Countries in the Wikipedia presence analysis (from wikipedia-admin-presence.qmd)
+# that also appear in the GDB
+our_countries_gdb <- tribble(
+  ~country,              ~country_qid, ~iso2,
+  "Bolivia",             "Q750",       "BO",
+  "Chile",               "Q298",       "CL",
+  "Colombia",            "Q739",       "CO",
+  "Costa Rica",          "Q800",       "CR",
+  "Dominican Republic",  "Q786",       "DO",
+  "Ecuador",             "Q736",       "EC",
+  "El Salvador",         "Q792",       "SV",
+  "Guatemala",           "Q774",       "GT",
+  "Haiti",               "Q790",       "HT",
+  "Honduras",            "Q783",       "HN",
+  "Mexico",              "Q96",        "MX",
+  "Nicaragua",           "Q811",       "NI",
+  "Panama",              "Q804",       "PA",
+  "Peru",                "Q419",       "PE",
+  "Venezuela",           "Q717",       "VE"
+)
+
+knitr::kable(
+  our_countries_gdb |> select(country, iso2),
+  caption = "Countries present in both the GDB and the Wikipedia presence analysis"
+)
+```
+
+### GDB working tables
+
+Strip geometry, attach country labels, and select the columns used for
+matching and name lookups.
+
+```{r build-gdb-tables}
+adm2_gdb <- adm2_sf |>
+  st_drop_geometry() |>
+  inner_join(our_countries_gdb |> select(country, iso2), by = "iso2") |>
+  select(country, iso2, adm0_pcode, adm1_pcode, adm2_pcode,
+         adm2_name, adm2_name1, adm2_name2, adm2_name3)
+
+adm3_gdb <- adm3_sf |>
+  st_drop_geometry() |>
+  inner_join(our_countries_gdb |> select(country, iso2), by = "iso2") |>
+  select(country, iso2, adm1_pcode, adm2_pcode, adm3_pcode,
+         adm3_name, adm3_name1, adm3_name2, adm3_name3)
+
+cat("ADM2 rows in scope:", nrow(adm2_gdb), "\n")
+cat("ADM3 rows in scope:", nrow(adm3_gdb), "\n")
+```
+
+### Wikidata items
+
+`all_data` is loaded from the cached presence-matrix pipeline in
+`wikipedia-admin-presence.qmd`. It provides one row per Wikidata item with
+its English and Spanish labels and admin level.
+
+```{r load-all-data}
+# Load presence data from the admin presence pipeline cache
+sa_adm2_all   <- readRDS("data/cache/sa_adm2_all.rds")
+sa_adm3_all   <- readRDS("data/cache/sa_adm3_all.rds")
+newc_adm2_all <- readRDS("data/cache/newc_adm2_all.rds")
+newc_adm3_all <- readRDS("data/cache/newc_adm3_all.rds")
+
+brazil_cache <- "data/cache/sa_adm2_brazil_df.rds"
+all_tiers <- list(sa_adm2_all, sa_adm3_all, newc_adm2_all, newc_adm3_all)
+if (file.exists(brazil_cache)) all_tiers <- c(all_tiers, list(readRDS(brazil_cache)))
+
+all_data <- bind_rows(all_tiers)
+
+# Keep only the columns used by the crosswalk pipeline
+all_data <- all_data |>
+  select(qid, country, adm_level, label_en, label_es) |>
+  filter(country %in% our_countries_gdb$country)
+
+cat("Wikidata items in scope:", nrow(all_data), "\n")
+cat("Countries:", n_distinct(all_data$country), "\n")
+all_data |> count(adm_level)
+```
+
+---
+
+## Code-based property reference
+
+The following table records which Wikidata property encodes the pcode suffix
+for each country. The pcode is reconstructed as `paste0(iso2, property_value)`.
+Property coverage was verified by sampling items and comparing constructed
+codes against the GDB pcode lists.
+
+```{r code-properties-table}
+knitr::kable(
+  PCODE_CODE_PROPERTIES |>
+    mutate(adm_levels = map_chr(adm_levels, paste, collapse = " + ")) |>
+    select(Country = country, Property = pid, `ISO2 prefix` = iso2,
+           `Admin levels` = adm_levels),
+  caption = "Wikidata properties used for code-based pcode matching"
+)
+```
+
+Properties investigated but not adopted:
+
+| Country | Property | Reason not used |
+|---------|----------|-----------------|
+| Argentina | P4833 (INDEC) | Argentina absent from GDB |
+| Colombia | P2082 | Not populated on sampled items; P7325 preferred |
+| Haiti | P1370 | Very sparse — most arrondissements lack it |
+| All | P7590 (OCHA P-code) | Not yet populated — this crosswalk will add it |
+
+---
+
+## Name-matching methodology
+
+For countries without a reliable code property, labels are normalized and
+compared to GDB name columns:
+
+1. **Normalize**: lowercase → Latin-ASCII transliteration (strip accents) →
+   collapse non-alphanumeric characters to spaces → trim.
+2. **Strip admin-type prefix**: remove leading tokens such as "Cantón",
+   "Provincia de", "Municipio de" etc. (both languages, both normalized and
+   stripped variants are compared).
+3. **Match within country**: inner join on `(country, normalized_name)`.
+   Only one-to-one matches are kept (`n_gdb_hits == 1`).
+4. **Hierarchical pass (Venezuela, Panama)**: for ADM3 items with ambiguous
+   country-level matches, fetch the P131 parent via SPARQL, look the parent
+   up in the ADM2 crosswalk, and re-match within the confirmed parent unit.
+
+---
+
+## Build the crosswalk
+
+```{r build-crosswalk}
+#| cache: true
+#| cache-extra: !expr digest::digest(readLines("src/pcode-crosswalk.R"))
+crosswalk <- build_pcode_crosswalk(
+  all_data               = all_data,
+  adm2_gdb               = adm2_gdb,
+  adm3_gdb               = adm3_gdb,
+  hierarchical_countries = c("Venezuela", "Panama"),
+  sparql_batch_size      = 300,
+  sparql_delay           = 0.4,
+  cache_file             = "data/cache/crosswalk_qid_pcode.rds"
+)
+
+cat("Total matched items:", nrow(crosswalk), "\n")
+cat("Unique QIDs:        ", n_distinct(crosswalk$qid), "\n")
+```
+
+---
+
+## Coverage summary
+
+```{r coverage-table}
+gdb_countries <- our_countries_gdb$country
+
+total_in_scope <- all_data |>
+  count(country, adm_level, name = "n_wikidata")
+
+coverage <- crosswalk |>
+  count(country, adm_level, match_method, name = "n_matched") |>
+  left_join(total_in_scope, by = c("country", "adm_level")) |>
+  mutate(pct = round(100 * n_matched / n_wikidata, 1))
+
+# Roll up to country × adm_level for a clean summary
+coverage_summary <- crosswalk |>
+  count(country, adm_level, name = "n_matched") |>
+  left_join(total_in_scope, by = c("country", "adm_level")) |>
+  mutate(
+    pct            = round(100 * n_matched / n_wikidata, 1),
+    primary_method = case_when(
+      country == "Bolivia"    ~ "code (P14142)",
+      country == "Colombia"   ~ "code (P7325)",
+      country == "Mexico"     ~ "code (P3801)",
+      country == "Costa Rica" & adm_level == "ADM3" ~ "code (P281)",
+      country == "Chile"      & adm_level == "ADM3" ~ "code (P6929)",
+      TRUE ~ "name match"
+    )
+  ) |>
+  arrange(country, adm_level)
+
+knitr::kable(
+  coverage_summary |>
+    select(Country = country, Level = adm_level,
+           `WD items` = n_wikidata, Matched = n_matched,
+           `%` = pct, `Primary method` = primary_method),
+  caption = "Crosswalk coverage by country and administrative level"
+)
+```
+
+```{r fig-coverage}
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Crosswalk coverage (%) by country and admin level, coloured by match strategy"
+coverage_summary |>
+  mutate(
+    strategy = if_else(str_starts(primary_method, "code"), "Code-based", "Name-based"),
+    country  = reorder(country, pct, FUN = mean)
+  ) |>
+  ggplot(aes(x = pct, y = country, fill = strategy)) +
+  geom_col(position = position_dodge2(preserve = "single", padding = 0.15)) +
+  geom_vline(xintercept = 100, linetype = "dashed", linewidth = 0.4) +
+  facet_wrap(~ adm_level) +
+  scale_fill_manual(values = c("Code-based" = "#2166AC", "Name-based" = "#F4A582")) +
+  scale_x_continuous(limits = c(0, 105), breaks = seq(0, 100, 25)) +
+  labs(x = "% of Wikidata items matched", y = NULL, fill = "Strategy") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+### Unmatched items
+
+```{r unmatched-summary}
+unmatched <- all_data |>
+  anti_join(crosswalk, by = "qid") |>
+  count(country, adm_level, name = "n_unmatched") |>
+  left_join(total_in_scope, by = c("country", "adm_level")) |>
+  mutate(pct_unmatched = round(100 * n_unmatched / n_wikidata, 1)) |>
+  filter(n_unmatched > 0) |>
+  arrange(desc(n_unmatched))
+
+knitr::kable(
+  unmatched |>
+    select(Country = country, Level = adm_level,
+           Unmatched = n_unmatched, `Total WD` = n_wikidata,
+           `% unmatched` = pct_unmatched),
+  caption = "Unmatched Wikidata items by country and level"
+)
+```
+
+The largest gaps are:
+
+- **Venezuela ADM2/ADM3**: municipality names repeat heavily across states;
+  a full state-level hierarchical pass via P131 would recover many of the
+  remaining ~400 unmatched items.
+- **Ecuador ADM3**: many parish names are non-unique across cantons and
+  Wikidata coverage of parishes is incomplete.
+- **Chile ADM3**: P6929 covers ~58%; the remainder have no P6929 value in
+  Wikidata.
+- **Panama ADM3**: corregimiento names repeat within districts.
+
+---
+
+## Quality check
+
+### Match method breakdown
+
+```{r method-breakdown}
+crosswalk |>
+  count(match_method, name = "n") |>
+  mutate(
+    pct      = round(100 * n / nrow(crosswalk), 1),
+    strategy = if_else(str_starts(match_method, "code"), "Code-based", "Name-based")
+  ) |>
+  arrange(strategy, match_method) |>
+  knitr::kable(caption = "Crosswalk entries by match method")
+```
+
+### Spot-check: name-matched items
+
+The function below pulls a stratified sample of name-matched items and shows
+the Wikidata label alongside the GDB name it matched. Scan for false positives
+(same normalized string, different real-world unit).
+
+```{r spot-check-fn}
+#| cache: false
+spot_check_name_matches <- function(crosswalk, all_data, adm2_gdb, adm3_gdb,
+                                    country_filter = NULL, n = 20, seed = 5501) {
+  set.seed(seed)
+
+  xw <- crosswalk |>
+    filter(str_starts(match_method, "name")) |>
+    left_join(all_data |> select(qid, label_en, label_es), by = "qid")
+
+  if (!is.null(country_filter)) xw <- xw |> filter(country %in% country_filter)
+
+  adm2_names <- adm2_gdb |> distinct(adm2_pcode, gdb_name = adm2_name)
+  adm3_names <- adm3_gdb |> distinct(adm3_pcode, gdb_name = adm3_name)
+
+  xw |>
+    left_join(adm2_names, by = "adm2_pcode") |>
+    left_join(adm3_names, by = "adm3_pcode") |>
+    mutate(gdb_name = coalesce(gdb_name.x, gdb_name.y)) |>
+    select(qid, country, adm_level, match_method,
+           wd_label_en = label_en, wd_label_es = label_es,
+           gdb_name, pcode) |>
+    slice_sample(n = min(n, nrow(xw)))
+}
+```
+
+```{r spot-check-display}
+spot_check_name_matches(crosswalk, all_data, adm2_gdb, adm3_gdb, n = 30) |>
+  knitr::kable(caption = "Random sample of name-matched items for review")
+```
+
+### Code-matched sample
+
+Code matches are structurally reliable (property value = numeric pcode suffix),
+but it is worth confirming a few against the GDB name to catch any systematic
+encoding errors.
+
+```{r code-match-sample}
+set.seed(1783)
+
+adm2_names <- adm2_gdb |> distinct(adm2_pcode, gdb_name_adm2 = adm2_name)
+adm3_names <- adm3_gdb |> distinct(adm3_pcode, gdb_name_adm3 = adm3_name)
+
+crosswalk |>
+  filter(str_starts(match_method, "code")) |>
+  left_join(all_data |> select(qid, label_en), by = "qid") |>
+  left_join(adm2_names, by = "adm2_pcode") |>
+  left_join(adm3_names, by = "adm3_pcode") |>
+  mutate(gdb_name = coalesce(gdb_name_adm2, gdb_name_adm3)) |>
+  select(qid, country, adm_level, pcode, match_method, label_en, gdb_name) |>
+  group_by(match_method) |>
+  slice_sample(n = 5) |>
+  ungroup() |>
+  knitr::kable(caption = "Sample of code-matched items (5 per property)")
+```
+
+### Hierarchical ADM3 matches
+
+These 210 items were ambiguous at the country level but resolved via P131.
+A higher proportion of these merit individual review.
+
+```{r hierarchical-sample}
+set.seed(2290)
+
+crosswalk |>
+  filter(match_method == "name_adm3_hierarchical") |>
+  left_join(all_data |> select(qid, label_en, label_es), by = "qid") |>
+  left_join(adm3_names, by = "adm3_pcode") |>
+  select(qid, country, pcode, adm2_pcode, wd_label_en = label_en,
+         wd_label_es = label_es, gdb_name = gdb_name_adm3) |>
+  slice_sample(n = 20) |>
+  knitr::kable(caption = "Sample of hierarchically resolved ADM3 matches")
+```
+
+### Items with duplicate GDB names (potential false positives)
+
+Name matches where the GDB contains more than one unit with the same
+normalized name in the same country are by construction excluded from the
+crosswalk (`n_gdb_hits == 1` filter). This section documents how many items
+were dropped for this reason per country.
+
+```{r ambiguous-counts}
+#| cache: false
+
+# Re-run the name join without the n_gdb_hits filter to count ambiguous cases
+normalize_admin_name <- function(x) {
+  x |> str_to_lower() |> stri_trans_general("Latin-ASCII") |>
+    str_replace_all("[^a-z0-9]+", " ") |> str_squish()
+}
+
+wd_adm2_labels <- all_data |>
+  filter(adm_level == "ADM2") |>
+  pivot_longer(c(label_en, label_es), values_to = "raw", names_to = "lang") |>
+  filter(!is.na(raw)) |>
+  mutate(norm = normalize_admin_name(raw)) |>
+  distinct(qid, country, norm)
+
+gdb_adm2_norm <- adm2_gdb |>
+  pivot_longer(starts_with("adm2_name"), values_to = "raw", names_to = "nv") |>
+  filter(!is.na(raw), raw != "") |>
+  mutate(norm = normalize_admin_name(raw)) |>
+  distinct(country, adm2_pcode, norm)
+
+wd_adm2_labels |>
+  inner_join(gdb_adm2_norm, by = c("country", "norm"),
+             relationship = "many-to-many") |>
+  group_by(qid, country) |>
+  summarise(n_gdb_hits = n_distinct(adm2_pcode), .groups = "drop") |>
+  filter(n_gdb_hits > 1) |>
+  count(country, name = "n_ambiguous") |>
+  arrange(desc(n_ambiguous)) |>
+  knitr::kable(caption = "ADM2 items dropped due to ambiguous name match (>1 GDB unit)")
+```
+
+---
+
+## Unmatched entities — high-coverage countries {#sec-unmatched}
+
+For country × level combinations with ≥ 85% match rate the residual gap is
+small enough to inspect unit by unit. Both sides of the join are shown: Wikidata
+items with no pcode, and GDB units with no QID.
+
+```{r high-coverage-strata}
+#| cache: false
+high_coverage <- coverage_summary |>
+  filter(pct >= 85) |>
+  select(country, adm_level, n_matched, n_wikidata, pct)
+
+knitr::kable(
+  high_coverage |>
+    select(Country = country, Level = adm_level,
+           Matched = n_matched, `WD total` = n_wikidata, `%` = pct),
+  caption = "Country × level strata with ≥ 85% match rate"
+)
+```
+
+### Unmatched Wikidata items
+
+These items exist in Wikidata but have no GDB pcode in the crosswalk. Likely
+causes in high-coverage countries: the unit was created, renamed, or split
+after the GDB snapshot; the Wikidata label is in an unexpected language or
+spelling; or the Wikidata item covers a slightly different geographic entity
+(e.g. a city item vs. a municipality item).
+
+```{r unmatched-wd}
+#| cache: false
+unmatched_wd <- all_data |>
+  semi_join(high_coverage, by = c("country", "adm_level")) |>
+  anti_join(crosswalk,  by = "qid") |>
+  mutate(
+    wd_link = paste0("[", qid, "](https://www.wikidata.org/wiki/", qid, ")")
+  ) |>
+  arrange(country, adm_level, label_en) |>
+  select(Country = country, Level = adm_level,
+         QID = wd_link, `Label (en)` = label_en, `Label (es)` = label_es)
+
+cat(nrow(unmatched_wd), "unmatched Wikidata items across",
+    n_distinct(paste(unmatched_wd$Country, unmatched_wd$Level)), "strata\n")
+
+knitr::kable(unmatched_wd,
+             caption = "Wikidata items with no GDB pcode (high-coverage strata)")
+```
+
+### Unmatched GDB units
+
+These GDB units have no matched Wikidata item. Likely causes: the unit has no
+Wikidata item yet (a gap in Wikidata coverage); the GDB reflects a more recent
+or more granular boundary dataset than what Wikidata tracks; or the pcode
+belongs to a sub-division that Wikidata models at a different level.
+
+```{r unmatched-gdb}
+#| cache: false
+# ADM2 GDB units with no crosswalk entry, for high-coverage countries
+unmatched_gdb_adm2 <- adm2_gdb |>
+  semi_join(high_coverage |> filter(adm_level == "ADM2"), by = "country") |>
+  filter(!adm2_pcode %in% crosswalk$pcode) |>
+  mutate(adm_level = "ADM2") |>
+  select(Country = country, Level = adm_level, Pcode = adm2_pcode,
+         `ADM1 pcode` = adm1_pcode, `GDB name` = adm2_name)
+
+# ADM3 GDB units with no crosswalk entry, for high-coverage countries
+unmatched_gdb_adm3 <- adm3_gdb |>
+  semi_join(high_coverage |> filter(adm_level == "ADM3"), by = "country") |>
+  filter(!adm3_pcode %in% crosswalk$pcode) |>
+  mutate(adm_level = "ADM3") |>
+  select(Country = country, Level = adm_level, Pcode = adm3_pcode,
+         `ADM1 pcode` = adm1_pcode, `GDB name` = adm3_name)
+
+unmatched_gdb <- bind_rows(unmatched_gdb_adm2, unmatched_gdb_adm3) |>
+  arrange(Country, Level, Pcode)
+
+cat(nrow(unmatched_gdb), "unmatched GDB units across",
+    n_distinct(paste(unmatched_gdb$Country, unmatched_gdb$Level)), "strata\n")
+
+knitr::kable(unmatched_gdb,
+             caption = "GDB units with no matched Wikidata QID (high-coverage strata)")
+```
+
+### Summary: gap by country
+
+```{r gap-summary}
+#| cache: false
+wd_gap <- unmatched_wd |>
+  count(Country, Level, name = "unmatched_wd")
+
+gdb_gap <- unmatched_gdb |>
+  count(Country, Level, name = "unmatched_gdb")
+
+high_coverage |>
+  left_join(wd_gap,  by = c("country" = "Country", "adm_level" = "Level")) |>
+  left_join(gdb_gap, by = c("country" = "Country", "adm_level" = "Level")) |>
+  replace_na(list(unmatched_wd = 0L, unmatched_gdb = 0L)) |>
+  mutate(
+    `Unmatched WD`  = unmatched_wd,
+    `Unmatched GDB` = unmatched_gdb
+  ) |>
+  select(Country = country, Level = adm_level, `%` = pct,
+         `Unmatched WD`, `Unmatched GDB`) |>
+  knitr::kable(caption = "Residual gap on each side for high-coverage strata")
+```
+
+---
+
+## QuickStatements
+
+The function `make_pcode_quickstatements()` generates Wikidata QuickStatements
+to add **P7590** (OCHA P-code) to matched items. It takes the crosswalk, a
+country name, and optional reference metadata, and returns a tibble with one
+row per item.
+
+**No statements are executed here.** Run the quality checks above first, then
+call the function with appropriate `methods` and `reference_*` arguments for
+each country.
+
+### Function signature
+
+```r
+make_pcode_quickstatements(
+  crosswalk,
+  country,                        # e.g. "Bolivia"
+  pid            = "P7590",       # OCHA P-code property
+  adm_levels     = c("ADM2","ADM3"),
+  methods        = NULL,          # NULL = all; or e.g. c("code_P14142")
+  reference_qid  = NULL,          # Wikidata item for "stated in" (P248)
+  reference_url  = NULL,          # URL for P854
+  retrieved_date = Sys.Date(),
+  output_file    = NULL           # write TSV if provided
+)
+```
+
+### Preview: Bolivia (code-matched items only)
+
+Bolivia is used as the preview country because all its matches are
+code-based (P14142) and therefore require no additional name-match review.
+
+```{r qs-preview}
+qs_bolivia <- make_pcode_quickstatements(
+  crosswalk     = crosswalk,
+  country       = "Bolivia",
+  methods       = c("code_P14142"),       # code-confirmed only
+  reference_url = "https://data.humdata.org/dataset/global-administrative-unit-layers"
+)
+
+cat("Statements to generate:", nrow(qs_bolivia), "\n\n")
+cat("Sample (first 5):\n")
+cat(head(qs_bolivia$quick_statement, 5), sep = "\n")
+```
+
+```{r qs-preview-table}
+qs_bolivia |>
+  select(qid, adm_level, pcode, match_method, quick_statement) |>
+  head(10) |>
+  knitr::kable(caption = "First 10 QuickStatements for Bolivia (not yet uploaded)")
+```
+
+### Generating statements for other countries
+
+Once the quality review is complete for a given country, write its statements
+to a file and review in the QuickStatements batch tool before submitting:
+
+```r
+# Example — do not run until quality review is done
+make_pcode_quickstatements(
+  crosswalk     = crosswalk,
+  country       = "Mexico",
+  methods       = "code_P3801",
+  reference_url = "https://data.humdata.org/dataset/global-administrative-unit-layers",
+  output_file   = "data/qs_mexico_pcode.tsv"
+)
+```
+
+| Country | Recommended methods before upload | Notes |
+|---------|----------------------------------|-------|
+| Bolivia | `code_P14142` | 100% coverage, no review needed |
+| Colombia | `code_P7325` | 99% coverage, spot-check recommended |
+| Mexico | `code_P3801` | 99% ADM2 coverage |
+| Costa Rica ADM3 | `code_P281` | 99% ADM3; ADM2 by name needs review |
+| Chile ADM3 | `code_P6929` | 58% coverage; name matches need review |
+| All others | `name_adm2`, `name_adm3` | Review spot-check table above first |
+
+---
+
+## Session info
+
+```{r session-info}
+#| cache: false
+sessionInfo()
+```
