@@ -1,0 +1,516 @@
+---
+title: "Bolivia 2026 — Municipality Infoboxes"
+subtitle: "{{Infobox settlement}} wikitext ready to copy to Wikipedia"
+params:
+  wiki_filter: "new"   # "existing", "new", or "all"
+format:
+  html:
+    code-fold: true
+    toc: false
+    self-contained: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(dplyr)
+library(purrr)
+library(htmltools)
+
+source("src/wikipedia-tools.R")
+source("src/gh-copy-assets.R")
+
+muni_lookup  <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
+prov_lookup  <- readRDS(here::here("data", "prov_id_lookup_table.rds"))
+concejo_data <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
+alcaldes     <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
+
+bo_municipality_wiki_presence <- readRDS(here::here("data", "bo_municipality_wiki_presence.rds"))
+municipalities_wd_ine <- readRDS(here::here("data", "municipalities_wd_ine.rds"))
+
+
+# Population
+pop_muni <- readRDS(here::here("data", "cpv2024", "population_municipality.rds")) |>
+  select(id_muni = ine_code, municipality, department, province,
+         pop_2024 = pop_2024_total, pop_2012 = pop_2012_total,
+         pop_2001 = pop_2001_total)
+
+pop_muni_ur <- readRDS(here::here("data", "cpv2024", "population_municipality_urb_rural.rds")) |>
+  select(id_muni = ine_code, area, pop_2024 = pop_2024_total)
+
+# Ethnic identification
+auto_data <- readRDS(here::here("data", "cpv2024", "autoidentificacion_municipio.rds"))
+
+# Municipality areas from admin boundaries
+area_muni <- readxl::read_excel(here::here("maps", "bol_admin_boundaries.xlsx"),
+                                sheet = "bol_admin3") |>
+  mutate(id_muni = stringr::str_sub(adm3_pcode, 3, 8)) |>
+  select(id_muni, area_sqkm)
+
+# Municipality coordinate ranges from shapefile
+admin3_shp <- sf::st_read(
+  here::here("../ultimate-consequences/maps/humdata.org_cod-ab-bol/bol_admin_boundaries.shp/bol_admin3.shp"),
+  quiet = TRUE
+)
+coord_ranges <- purrr::map_df(seq_len(nrow(admin3_shp)), function(i) {
+  row <- admin3_shp[i, ]
+  bbox <- sf::st_bbox(row$geometry)
+  tibble::tibble(
+    id_muni = substr(row$adm3_pcode, 3, 8),
+    lat_min = bbox[["ymin"]],
+    lat_max = bbox[["ymax"]],
+    lon_min = bbox[["xmin"]],
+    lon_max = bbox[["xmax"]]
+  )
+})
+
+# Locator map filenames from Commons upload log
+commons_log <- readr::read_csv(
+  here::here("output", "locator_maps", "muni-maps-final", "commons_upload_log.csv"),
+  show_col_types = FALSE
+) |>
+  select(id_muni, commons_filename) |>
+  filter(!is.na(commons_filename))
+
+# Wikidata QID ↔ INE crosswalk (reused for multiple lookups)
+wd_ine <- readRDS(here::here("data", "municipalities_wd_ine.rds")) |>
+  select(qid, ine_code)
+
+# Wikidata image properties: flag (P41), coat of arms (P94), seal (P158),
+# inception (P571). Refreshed by running the block in bolivia-muni-infobox-en.qmd
+# (see "Refresh Wikidata images" section) or manually via SPARQL.
+# To refresh: run the SPARQL query at the top of the helpers chunk and saveRDS().
+wd_images <- readRDS(here::here("data", "muni_wd_images.rds"))
+
+# P402 (OSM relation ID) presence — from saved Wikidata snapshot
+# To refresh: source("R/get_wikidata_instances.R"), then run:
+#   get_wikidata_instances("Q1062710", property = "P402",
+#     property_names = "osm_relation_id", country = "Q750") |>
+#     saveRDS("data/municipalities_wd_p402.rds")
+wd_p402 <- readRDS(here::here("data", "municipalities_wd_p402.rds"))
+munis_with_p402 <- wd_p402 |>
+  filter(!is.na(osm_relation_id)) |>
+  left_join(wd_ine, by = "qid") |>
+  filter(!is.na(ine_code)) |>
+  pull(ine_code)
+
+# Wikipedia presence filter
+wiki_presence <- bo_municipality_wiki_presence$data |>
+  left_join(wd_ine, by = "qid") |>
+  filter(!is.na(ine_code))
+
+munis_with_enwiki <- wiki_presence |> filter(en > 0) |> pull(ine_code)
+
+if (params$wiki_filter == "existing") {
+  muni_lookup <- muni_lookup |> filter(id_muni %in% munis_with_enwiki)
+} else if (params$wiki_filter == "new") {
+  muni_lookup <- muni_lookup |> filter(!id_muni %in% munis_with_enwiki)
+}
+
+# Add id_prov to muni_lookup
+muni_lookup <- muni_lookup |>
+  mutate(id_prov = stringr::str_sub(id_muni, 1, 4))
+```
+
+```{r}
+#| label: helpers
+#| include: false
+
+# ── Coordinate range formatter ──────────────────────────────────────────────
+# Converts decimal degree ranges to DMS format: "38°24′ N to 41°59′ N"
+fmt_coord_range <- function(lat_min, lat_max, lon_min, lon_max) {
+  dec_to_dms <- function(dec, pos_char, neg_char) {
+    hemi <- if (dec >= 0) pos_char else neg_char
+    dec  <- abs(dec)
+    d    <- floor(dec)
+    m    <- floor((dec - d) * 60)
+    if (m == 60) { d <- d + 1; m <- 0 }
+    sprintf("%d°%d′ %s", d, m, hemi)
+  }
+  lat_min_str <- dec_to_dms(lat_min, "N", "S")
+  lat_max_str <- dec_to_dms(lat_max, "N", "S")
+  lon_min_str <- dec_to_dms(lon_min, "E", "W")
+  lon_max_str <- dec_to_dms(lon_max, "E", "W")
+  
+  list(
+    latitude = paste(lat_min_str, "to", lat_max_str),
+    longitude = paste(lon_min_str, "to", lon_max_str)
+  )
+}
+
+# ── Top ethnicities ──────────────────────────────────────────────────────────
+# Returns a wikitext string of ethnic groups declared by ≥ threshold of pop.
+# Uses Wikipedia article names where a standard link exists.
+ethnicity_wikilinks <- c(
+  "Quechua"      = "[[Quechua people|Quechua]]",
+  "Aymara"       = "[[Aymara people|Aymara]]",
+  "Chiquitano"   = "[[Chiquitano people|Chiquitano]]",
+  "Guaran\u00ed" = "[[Guaran\u00ed people|Guaran\u00ed]]",
+  "Moje\u00f1o"  = "[[Moxo people|Moje\u00f1o]]",
+  "Afroboliviano" = "[[Afro-Bolivians|Afroboliviano]]",
+  "Uru"          = "[[Uru people|Uru]]",
+  "Chipaya"      = "[[Chipaya people|Chipaya]]",
+  "Yuracar\u00e9" = "[[Yuqui people|Yuracar\u00e9]]",
+  "Movima"       = "[[Movima people|Movima]]",
+  "Tacana"       = "[[Tacana people|Tacana]]",
+  "Guaran\u00ed" = "[[Guaran\u00ed people|Guaran\u00ed]]",
+  "Weenhayek"    = "[[Weenhayek people|Weenhayek]]",
+  "Tsimane"      = "[[Tsimane|Tsimane]]",
+  "Ayoreo"       = "[[Ayoreo people|Ayoreo]]",
+  "Ese Ejja"     = "[[Ese Ejja people|Ese Ejja]]",
+  "Leco"         = "[[Leco people|Leco]]",
+  "Kallawaya"    = "[[Kallawaya people|Kallawaya]]",
+  "Moseten"      = "[[Moset\u00e9n people|Moseten]]"
+)
+
+get_top_ethnicities <- function(id, auto_data, pop_total, threshold = 0.01) {
+  row <- auto_data |> filter(ine_code == id) |> slice(1)
+  if (nrow(row) == 0) return("")
+
+  meta_cols <- c("ine_code", "municipio", "provincia", "departamento",
+                 "area", "nivel", "total", "municipality", "province",
+                 "department", "level", "row_num")
+  grp_cols <- setdiff(names(row), meta_cols)
+
+  groups <- tibble(
+    group = grp_cols,
+    n     = sapply(grp_cols, function(col) as.double(row[[col]]))
+  ) |>
+    filter(n / pop_total >= threshold) |>
+    arrange(desc(n))
+
+  # Exclude non-specific / non-ethnic categories (substring match)
+  groups <- groups |>
+    filter(!grepl("Campesino|Originario", group))
+
+  if (nrow(groups) == 0) return("")
+
+  # Translate and link group names
+  linked <- sapply(groups$group, function(g) {
+    if (grepl("Sin especificar", g, fixed = TRUE)) {
+      "Unspecified Indigenous"
+    } else if (g %in% names(ethnicity_wikilinks)) {
+      ethnicity_wikilinks[[g]]
+    } else {
+      # Strip any trailing parenthetical footnote marker
+      trimws(sub("\\s*\\(.*", "", g))
+    }
+  }, USE.NAMES = FALSE)
+
+  ine_ref <- paste0(
+    "<ref>{{Cite",
+    "| last = Instituto Nacional de Estadística",
+    "| title = Autoidentificación con alguna nación pueblo indígena originario campesino y afroboliviano: Tabulados por Municipio/TIOC",
+    "| date = 2025",
+    " |url = https://nube.ine.gob.bo/index.php/s/Mu3eStaUZfi97Vp/download",
+    "}}</ref>"
+  )
+
+  paste0(paste(linked, collapse = ", "), ine_ref)
+}
+
+# ── Infobox builder ──────────────────────────────────────────────────────────
+build_infobox <- function(id, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
+                          area_muni, alcaldes, auto_data,
+                          commons_log, munis_with_p402, coord_ranges,
+                          wd_images = NULL) {
+  ml <- muni_lookup |> filter(id_muni == id) |> slice(1)
+  if (nrow(ml) == 0) return(NULL)
+
+  muni_name  <- ml$muni_anexo
+  department <- ml$department
+  id_prov    <- ml$id_prov
+
+  # Province name (use cpv2024 name if available, fall back to anexo)
+  prov_row <- prov_lookup |> filter(id_prov == .env$id_prov) |> slice(1)
+  prov_name <- if (nrow(prov_row) > 0) {
+    coalesce(prov_row$province_cpv2024, prov_row$province_anexo)
+  } else NA_character_
+
+  # Population
+  pop_row <- pop_muni |> filter(id_muni == id) |> slice(1)
+  pop_total <- if (nrow(pop_row) > 0) pop_row$pop_2024 else NA_real_
+
+  urban_pop <- pop_muni_ur |> filter(id_muni == id, area == "Urbana") |>
+    pull(pop_2024) |> (\(x) if (length(x) == 0) NA_real_ else x)()
+  rural_pop <- pop_muni_ur |> filter(id_muni == id, area == "Rural") |>
+    pull(pop_2024) |> (\(x) if (length(x) == 0) NA_real_ else x)()
+
+  # Area and coordinates
+  geo <- area_muni |> filter(id_muni == id) |> slice(1)
+  area_km2   <- if (nrow(geo) > 0) round(geo$area_sqkm) else ""
+  
+  # Coordinate ranges (formatted as Latitude/Longitude fields)
+  lat_str <- ""
+  lon_str <- ""
+  coord_row <- coord_ranges |> filter(id_muni == id) |> slice(1)
+  if (nrow(coord_row) > 0) {
+    coord_fmt <- fmt_coord_range(coord_row$lat_min, coord_row$lat_max,
+                                  coord_row$lon_min, coord_row$lon_max)
+    lat_str <- coord_fmt$latitude
+    lon_str <- coord_fmt$longitude
+  }
+
+  # Population density
+  density_km2 <- if (!is.na(pop_total) && nrow(geo) > 0 && !is.na(geo$area_sqkm) && geo$area_sqkm > 0) {
+    round(pop_total / geo$area_sqkm)
+  } else ""
+
+  # Mayor (source data is ALL CAPS; convert to title case)
+  alc <- alcaldes |> filter(id_muni == id) |> slice(1)
+  mayor_str <- if (nrow(alc) > 0) {
+    name_tc <- stringr::str_to_title(alc$nombre)
+    paste0(name_tc, " (", alc$sigla, ", 2026)")
+  } else ""
+
+  # Ethnicities
+  eth_str <- if (!is.na(pop_total)) {
+    get_top_ethnicities(id, auto_data, pop_total)
+  } else ""
+
+  # Build department and province wikilinks
+  dept_link <- sprintf("[[%s Department|%s]]", department, department)
+  prov_link <- if (!is.na(prov_name)) {
+    sprintf("[[%s Province|%s]]", prov_name, prov_name)
+  } else ""
+
+  # Pushpin map caption
+  pushpin_caption <- sprintf("Location of %s Municipality within Bolivia", muni_name)
+
+  # Locator map from Commons upload log
+  map_row <- commons_log |> filter(id_muni == id) |> slice(1)
+  map_file    <- if (nrow(map_row) > 0) map_row$commons_filename else ""
+  map_caption <- if (nzchar(map_file)) {
+    sprintf("Location of the %s Municipality within Bolivia", muni_name)
+  } else ""
+
+  # OSM maplink: only include if Wikidata item has P402
+  map1_str <- if (id %in% munis_with_p402) {
+    "{{maplink |type=shape |stroke-width=3 |fill=#999999 |frame=yes |plain=yes |frame-align=center |zoom=8}}"
+  } else ""
+
+  # Format numbers with commas
+  fn <- function(x) if (is.na(x) || x == "") "" else format(as.numeric(x), big.mark = ",", scientific = FALSE)
+
+  # Wikidata image properties
+  img_row      <- if (!is.null(wd_images)) wd_images |> filter(ine_code == id) |> slice(1) else tibble()
+  flag_file    <- if (nrow(img_row) > 0 && !is.na(img_row$flag_file))    img_row$flag_file    else ""
+  coat_file    <- if (nrow(img_row) > 0 && !is.na(img_row$coat_file))    img_row$coat_file    else ""
+  seal_file    <- if (nrow(img_row) > 0 && !is.na(img_row$seal_file))    img_row$seal_file    else ""
+  inc_date     <- if (nrow(img_row) > 0 && !is.na(img_row$inception_date)) img_row$inception_date else ""
+  commons_cat  <- if (nrow(img_row) > 0 && !is.na(img_row$commons_cat))  img_row$commons_cat  else ""
+
+  paste0(
+'{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = ', muni_name, '
+|other_name             =
+|native_name            =
+|nickname               =
+|settlement_type        = Municipality
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          =
+|imagesize              =
+|image_caption          =
+|image_flag             = ', flag_file, '
+|flag_size              = ', if (nzchar(flag_file)) "150px" else "", '
+|image_seal             = ', seal_file, '
+|seal_size              = ', if (nzchar(seal_file)) "100px" else "", '
+|image_shield           = ', coat_file, '
+|shield_size            = ', if (nzchar(coat_file)) "100px" else "", '
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = ', map_file, '
+|mapsize                = 300px
+|map_caption            = ', map_caption, '
+|image_map1             = ', map1_str, '
+|mapsize1               =
+|map_caption1           =
+|image_dot_map          =
+|pushpin_map            = Bolivia
+|pushpin_label_position = bottom
+|pushpin_map_caption    = ', pushpin_caption, '
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Bolivia.svg|25px]] [[Bolivia]]
+|subdivision_type1      = [[Departments of Bolivia|Department]]
+|subdivision_name1      = ', dept_link, '
+|subdivision_type2      = [[Provinces of Bolivia|Province]]
+|subdivision_name2      = ', prov_link, '
+|subdivision_type4      = [[Cantons of Bolivia|Cantons]]
+|subdivision_name4      =
+<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
+|seat_type              = Seat
+|seat                   =
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = Mayor
+|leader_name            = ', mayor_str, '
+|leader_title1          =
+|leader_name1           =
+|established_title      = ', if (nzchar(inc_date)) "Established" else "", '
+|established_date       = ', inc_date, '
+<!-- Area    --------------------->
+|area_magnitude         =
+|unit_pref              = Metric
+|area_footnotes         =
+|area_total_km2         = ', fn(area_km2), '
+|area_land_km2          =
+|area_water_km2         =
+<!-- Population   ----------------------->
+|population_as_of               = 2024
+|population_footnotes           =
+|population_note                = [[2024 Bolivian census]]
+|population_total               = ', fn(pop_total), '
+|population_density_km2         = ', fn(density_km2), '
+|population_urban               = ', fn(urban_pop), '
+|population_blank1_title        = Indigenous ethnicities
+|population_blank1              = ', eth_str, '
+<!-- General information  --------------->
+|timezone               = [[Time in Bolivia|BOT]]
+|utc_offset             = -4
+|latitude               = ', lat_str, '
+|longitude              = ', lon_str, '
+|elevation_footnotes    =
+|elevation_m            =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =
+|postal_code            =
+|area_code              =
+|website                =
+|commons                = ', commons_cat, '
+|footnotes              =
+}}')
+}
+
+# ── Wikitext copy block ──────────────────────────────────────────────────────
+wikitext_block <- function(id, label, content) {
+  tagList(
+    tags$button(
+      class = "copy-btn",
+      style = "margin-bottom: 6px;",
+      onclick = sprintf("copyTableToClipboard('%s', this)", id),
+      label
+    ),
+    tags$pre(
+      tags$code(content),
+      style = paste(
+        "background-color: #f6f8fa; padding: 10px; border-radius: 6px;",
+        "overflow-x: auto; font-size: 11px; white-space: pre; margin: 0;"
+      )
+    ),
+    tags$textarea(
+      id = id,
+      style = "position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;",
+      readonly = TRUE,
+      content
+    )
+  )
+}
+
+# ── Municipality block ───────────────────────────────────────────────────────
+muni_block <- function(id_muni, muni_name, department, infobox_wikitext) {
+  # Read pre-generated full page wikitext if available
+  page_wt_path <- here::here("output", "bolivia-municipality-wikitext",
+                              paste0(id_muni, ".txt"))
+  page_wt <- if (file.exists(page_wt_path)) {
+    paste(readLines(page_wt_path, warn = FALSE), collapse = "\n")
+  } else NULL
+
+  tagList(
+    tags$details(
+      tags$summary(
+        tags$strong(muni_name),
+        tags$span(
+          paste0(" \u2014 ", department),
+          style = "color: #586069; font-weight: normal;"
+        ),
+        tags$code(
+          paste0(" [", id_muni, "]"),
+          style = "font-size: 11px; color: #999; margin-left: 6px;"
+        )
+      ),
+      tags$div(
+        style = "margin-top: 8px; font-size: 12px;",
+        wikitext_block(
+          id      = paste0("infobox_", id_muni),
+          label   = "Copy infobox",
+          content = infobox_wikitext
+        ),
+        if (!is.null(page_wt)) tagList(
+          tags$div(style = "margin-top: 8px;"),
+          tags$button(
+            class   = "copy-btn",
+            onclick = sprintf("copyTableToClipboard('page_en_%s', this)", id_muni),
+            "Copy page Wikitext"
+          ),
+          tags$textarea(
+            id       = paste0("page_en_", id_muni),
+            style    = "position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;",
+            readonly = TRUE,
+            page_wt
+          )
+        )
+      )
+    ),
+    tags$hr(style = "border:none; border-top:1px solid #e1e4e8; margin:4px 0;")
+  )
+}
+
+# ── Render all blocks ────────────────────────────────────────────────────────
+render_muni_blocks <- function(lookup) {
+  ids <- lookup |>
+    arrange(id_muni) |>
+    select(id_muni, muni_anexo, department)
+
+  tagList(pmap(ids, function(id_muni, muni_anexo, department) {
+    ib <- build_infobox(id_muni, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
+                        area_muni, alcaldes, auto_data,
+                        commons_log, munis_with_p402, coord_ranges,
+                        wd_images = wd_images)
+    if (is.null(ib)) return(NULL)
+    muni_block(id_muni, muni_anexo, department, ib)
+  }))
+}
+```
+
+```{r}
+#| label: assets
+#| echo: false
+#| results: asis
+include_table_assets()
+```
+
+::: {style="font-size: 11px; margin-bottom: 1em;"}
+
+Each municipality has two copy buttons:
+
+- **Copy infobox** — the `{{Infobox settlement}}` template with population, area, coordinates, mayor, and ethnic group data from the 2024 census.
+- **Copy page Wikitext** *(when available)* — the full article text assembled in section order: lead sentence → `==Government==` (mayor paragraph, council size paragraph, council table) → `==Population==` (census population table, population pyramid) → `==Languages and Indigenous identification==` (ethnic identity table, languages table) → `==Communities==`. Generated by the [article content page](bolivia-muni-generator-en.html); render that page first to produce these files.
+
+:::
+
+```{r}
+#| label: filter-summary
+#| echo: false
+#| results: asis
+n_total <- nrow(muni_lookup)
+filter_label <- switch(params$wiki_filter,
+  existing = "with an existing English Wikipedia article",
+  new      = "without an English Wikipedia article (new)",
+  "all (no filter applied)"
+)
+cat(sprintf("**Rendering infoboxes for %d municipalities %s.**\n\n", n_total, filter_label))
+```
+
+```{r}
+#| label: infobox-blocks
+#| echo: false
+#| results: asis
+render_muni_blocks(muni_lookup)
+```

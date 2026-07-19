@@ -1,0 +1,383 @@
+---
+title: "Bolivia Municipalities — Flag & Coat of Arms Wikidata Review"
+subtitle: "Visual check before running QuickStatements to add P41 (flag image) and P94 (coat of arms image)"
+date: today
+format:
+  html:
+    embed-resources: false
+    toc: true
+    toc-depth: 2
+    code-fold: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(dplyr)
+library(purrr)
+library(htmltools)
+
+d <- readRDS(here::here("data", "wd_flag_coat_review.rds"))
+list2env(d, envir = .GlobalEnv)
+```
+
+```{r helpers}
+# ── URL builders ──────────────────────────────────────────────────────────────
+
+# Thumbnail URL via Special:Redirect (avoids CORS issues with direct thumb URLs)
+commons_thumb <- function(file, width = 120) {
+  enc <- utils::URLencode(file, reserved = TRUE)
+  paste0(
+    "https://commons.wikimedia.org/w/index.php",
+    "?title=Special:Redirect/file/", enc,
+    "&width=", width
+  )
+}
+
+# File description page on Commons
+commons_link <- function(file) {
+  enc <- utils::URLencode(file, reserved = TRUE)
+  paste0("https://commons.wikimedia.org/wiki/File:", enc)
+}
+
+# Wikidata item page
+wd_link <- function(qid) paste0("https://www.wikidata.org/wiki/", qid)
+
+# ── Review table builder ──────────────────────────────────────────────────────
+# Builds a full section: controls bar + scrollable table.
+# section: short ID used in CSS class names and element IDs ("flag" or "coat")
+# prop_id: Wikidata property being set ("P41" or "P94")
+
+make_review_section <- function(data, section, prop_id) {
+  n <- nrow(data)
+
+  # Escape double-quotes inside HTML data attribute values
+  attr_esc <- function(x) gsub('"', "&quot;", x, fixed = TRUE)
+
+  rows_html <- map_chr(seq_len(n), function(i) {
+    row       <- data[i, ]
+    qs_esc    <- attr_esc(row$quick_statement)
+    thumb     <- commons_thumb(row$file)
+    file_page <- commons_link(row$file)
+    item_page <- wd_link(row$qid)
+    fname_esc <- htmlEscape(row$file)
+
+    paste0(
+      '<tr>',
+        # Checkbox
+        '<td style="text-align:center;vertical-align:middle;padding:6px 10px;width:36px">',
+          '<input type="checkbox" class="', section, '-check"',
+          ' data-qs="', qs_esc, '"',
+          ' checked',
+          ' onchange="updateCount(\'', section, '\')">',
+        '</td>',
+        # Image from Commons
+        '<td style="text-align:center;vertical-align:middle;padding:4px;width:120px">',
+          '<a href="', file_page, '" target="_blank" rel="noreferrer">',
+            '<img src="', thumb, '"',
+            ' style="max-height:90px;max-width:110px;display:block;margin:auto"',
+            ' loading="lazy"',
+            ' onerror="this.replaceWith(document.createTextNode(\'(no preview)\'))">',
+          '</a>',
+        '</td>',
+        # Municipality → Wikidata link
+        '<td style="vertical-align:middle;padding:6px 10px">',
+          '<a href="', item_page, '" target="_blank" rel="noreferrer">',
+            htmlEscape(row$muni_name),
+          '</a>',
+        '</td>',
+        # Department
+        '<td style="vertical-align:middle;padding:6px 10px;color:#555">',
+          htmlEscape(row$department),
+        '</td>',
+        # Commons filename → file page link
+        '<td style="vertical-align:middle;padding:6px 10px;font-size:11px;',
+            'font-family:monospace;max-width:250px;word-break:break-all">',
+          '<a href="', file_page, '" target="_blank" rel="noreferrer">',
+            fname_esc,
+          '</a>',
+        '</td>',
+      '</tr>'
+    )
+  })
+
+  # Controls bar
+  controls <- paste0(
+    '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;',
+         'margin-bottom:10px;padding:8px;background:#f6f8fa;border-radius:6px;',
+         'border:1px solid #e1e4e8">',
+      '<button class="btn btn-sm btn-outline-secondary"',
+        ' onclick="selectSection(\'', section, '\',true)">Select all</button>',
+      '<button class="btn btn-sm btn-outline-secondary"',
+        ' onclick="selectSection(\'', section, '\',false)">Deselect all</button>',
+      '<span id="', section, '-count" style="color:#586069;font-size:13px">',
+        n, ' selected',
+      '</span>',
+      '<button id="', section, '-copy-btn"',
+        ' class="btn btn-sm btn-primary"',
+        ' style="margin-left:auto"',
+        ' onclick="copySection(\'', section, '\')">',
+        'Copy selected QuickStatements',
+      '</button>',
+    '</div>'
+  )
+
+  table_html <- paste0(
+    '<div style="overflow-x:auto">',
+    '<table class="table table-sm table-hover" style="font-size:13px;min-width:700px">',
+    '<thead class="table-light"><tr>',
+      '<th></th>',
+      '<th>Image</th>',
+      '<th>Municipality</th>',
+      '<th>Department</th>',
+      '<th>', prop_id, ' value (Commons filename)</th>',
+    '</tr></thead>',
+    '<tbody>',
+    paste(rows_html, collapse = ""),
+    '</tbody></table></div>'
+  )
+
+  HTML(paste0(controls, table_html))
+}
+
+# ── Overlap / info table (no checkboxes) ────────────────────────────────────
+make_info_table <- function(data, file_col) {
+  if (nrow(data) == 0) return(HTML("<p><em>None.</em></p>"))
+
+  rows_html <- map_chr(seq_len(nrow(data)), function(i) {
+    row       <- data[i, ]
+    file      <- row[[file_col]]
+    thumb     <- commons_thumb(file, width = 80)
+    file_page <- commons_link(file)
+    item_page <- wd_link(row$qid)
+
+    paste0(
+      '<tr>',
+        '<td style="text-align:center;padding:4px;width:100px">',
+          '<a href="', file_page, '" target="_blank" rel="noreferrer">',
+            '<img src="', thumb, '"',
+            ' style="max-height:70px;max-width:90px;display:block;margin:auto"',
+            ' loading="lazy"',
+            ' onerror="this.replaceWith(document.createTextNode(\'(no preview)\'))">',
+          '</a>',
+        '</td>',
+        '<td style="vertical-align:middle;padding:6px 10px">',
+          '<a href="', item_page, '" target="_blank" rel="noreferrer">',
+            htmlEscape(row$muni_name),
+          '</a>',
+        '</td>',
+        '<td style="vertical-align:middle;padding:6px 10px;color:#555">',
+          htmlEscape(row$department),
+        '</td>',
+        '<td style="vertical-align:middle;padding:6px 10px;font-size:11px;',
+            'font-family:monospace;max-width:300px;word-break:break-all">',
+          '<a href="', file_page, '" target="_blank" rel="noreferrer">',
+            htmlEscape(file),
+          '</a>',
+        '</td>',
+      '</tr>'
+    )
+  })
+
+  HTML(paste0(
+    '<div style="overflow-x:auto">',
+    '<table class="table table-sm table-hover" style="font-size:13px">',
+    '<thead class="table-light"><tr>',
+      '<th>Image</th><th>Municipality</th><th>Department</th><th>Commons filename</th>',
+    '</tr></thead>',
+    '<tbody>', paste(rows_html, collapse = ""), '</tbody>',
+    '</table></div>'
+  ))
+}
+```
+
+```{r javascript, results='asis'}
+# Inline JavaScript for checkbox interactivity
+cat('<script>
+function updateCount(section) {
+  var n = document.querySelectorAll("." + section + "-check:checked").length;
+  var el = document.getElementById(section + "-count");
+  if (el) el.textContent = n + " selected";
+}
+
+function selectSection(section, checked) {
+  document.querySelectorAll("." + section + "-check").forEach(function(cb) {
+    cb.checked = checked;
+  });
+  updateCount(section);
+}
+
+function copySection(section) {
+  var checked = document.querySelectorAll("." + section + "-check:checked");
+  if (checked.length === 0) { alert("Nothing selected."); return; }
+  var lines = [];
+  checked.forEach(function(cb) { lines.push(cb.dataset.qs); });
+  var text = lines.join("\\n");
+  var btn = document.getElementById(section + "-copy-btn");
+
+  function flashSuccess() {
+    btn.textContent = "\\u2713 Copied " + lines.length + " statement" +
+      (lines.length === 1 ? "" : "s") + "!";
+    btn.classList.replace("btn-primary", "btn-success");
+    setTimeout(function() {
+      btn.textContent = "Copy selected QuickStatements";
+      btn.classList.replace("btn-success", "btn-primary");
+    }, 3000);
+  }
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(flashSuccess).catch(function() {
+      fallbackCopy(text, flashSuccess);
+    });
+  } else {
+    fallbackCopy(text, flashSuccess);
+  }
+}
+
+function fallbackCopy(text, callback) {
+  var ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.cssText = "position:fixed;left:-9999px;top:-9999px";
+  document.body.appendChild(ta);
+  ta.focus(); ta.select();
+  document.execCommand("copy");
+  document.body.removeChild(ta);
+  if (callback) callback();
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  ["flag", "coat"].forEach(function(s) { updateCount(s); });
+});
+</script>')
+```
+
+## How to use
+
+1. Scroll through each section and visually verify the images are correct municipal flags / coats of arms.
+2. Uncheck any rows that look wrong (wrong municipality, poor quality, duplicates, etc.).
+3. Click **Copy selected QuickStatements** to copy the tab-separated statements.
+4. Paste into [QuickStatements](https://quickstatements.toolforge.org/#/batch) and run.
+
+All images load directly from Wikimedia Commons — an internet connection is required.
+
+::: {.callout-note}
+## Data sources
+
+- **Proposed additions** — cross-check of [Category:Flags of municipalities of Bolivia](https://commons.wikimedia.org/wiki/Category:Flags_of_municipalities_of_Bolivia) and [Category:Coats of arms of municipalities of Bolivia](https://commons.wikimedia.org/wiki/Category:Coats_of_arms_of_municipalities_of_Bolivia) against existing Wikidata P41/P94 claims for the `Q1062710` (Municipality of Bolivia) class.
+- **Matching** — filenames decoded from Wikidata SPARQL; Commons filenames matched to municipalities by name extraction + fuzzy string match. A few ambiguous files were excluded (see [Unmatched files] below).
+- **Snapshot date** — `r format(file.mtime(here::here("data","wd_flag_coat_review.rds")), "%B %d, %Y")`. To refresh, re-run the cross-check block in the analysis session and re-save `data/wd_flag_coat_review.rds`.
+:::
+
+## Impact
+
+The goal of this review is to improve the coverage of municipal flags and coats of arms in Wikidata, which in turn will allow the generated infoboxes on English Wikipedia to include these images. If fully implemented (and you need to check for errors first):
+
+Of the 195 Bolivian municipality articles currently on English Wikipedia, only 6 include a flag image and 1 includes a seal in the infobox. The generated infoboxes produced by bolivia-muni-infobox-en.qmd would cover all 340 municipalities, and by pulling images already linked in Wikidata, 107 of those would include a flag and 3 would include a coat of arms — a dramatic improvement in coverage, though 65 of those 107 flags correspond to municipalities that already have a Wikipedia article (the remaining 42 would be on new pages). If the new Commons-matched images are first added to Wikidata via the QuickStatements outputs, the generated infoboxes would expand further to 175 municipalities with flags and 41 with coats of arms — representing 22 of the 195 existing articles gaining a coat for the first time, and 96 total existing articles with a flag.
+
+
+---
+
+## Flags (P41) — `r nrow(review_flags)` proposed additions {#sec-flags}
+
+These `r nrow(review_flags)` municipalities have a flag image in the Commons category but **no P41 claim** in Wikidata. The QuickStatement adds the Commons filename as the value of P41 (flag image).
+
+```{r flag-table, results='asis'}
+make_review_section(review_flags, "flag", "P41")
+```
+
+---
+
+## Coats of Arms (P94) — `r nrow(review_coats)` proposed additions {#sec-coats}
+
+These `r nrow(review_coats)` municipalities have a coat of arms / escudo in the Commons category but **no P94 claim** in Wikidata.
+
+::: {.callout-warning}
+Several of these images have low-quality or unofficial-looking filenames (e.g. `ESCUDO OFICIAL-GOBIERNO AUTONOMO...`, `FB IMG escudo de colquechaca.jpg`). Review carefully before accepting.
+:::
+
+```{r coat-table, results='asis'}
+make_review_section(review_coats, "coat", "P94")
+```
+
+---
+
+## Already linked in Wikidata {#sec-overlap}
+
+These files appear in the Commons category **and** are already referenced by a Wikidata P41/P94 claim. No action needed — shown here for confirmation.
+
+### Flags (P41) — `r nrow(flag_overlap)` confirmed
+
+```{r flag-overlap, results='asis'}
+make_info_table(flag_overlap, "flag_file")
+```
+
+### Coats of Arms (P94) — `r nrow(coat_overlap)` confirmed
+
+```{r coat-overlap, results='asis'}
+make_info_table(coat_overlap, "coat_file")
+```
+
+---
+
+## Wikidata claims outside this Commons category {#sec-wd-only}
+
+These municipalities already have a P41 or P94 claim in Wikidata, but the linked file is **not** in the Commons category we checked. They may be in a subcategory, use a different filename, or be in a different category entirely. No action needed here.
+
+- **`r nrow(wd_flags_not_in_commons)`** municipalities have P41 pointing to a flag not in this Commons category.
+- **`r nrow(wd_coats_not_in_commons)`** municipalities have P94 pointing to a coat not in this Commons category.
+
+```{r wd-flags-outside, results='asis'}
+make_info_table(wd_flags_not_in_commons, "flag_file")
+```
+
+---
+
+## Unmatched Commons files {#sec-unmatched}
+
+These files in the Commons categories could not be reliably matched to a specific municipality and were excluded from the QuickStatements. Manual assignment may be possible for some.
+
+### Flags
+
+```{r unmatched-flags, results='asis'}
+flags_unmatched |>
+  mutate(
+    Image = paste0(
+      '<a href="', commons_link(file), '" target="_blank" rel="noreferrer">',
+        '<img src="', commons_thumb(file, 80), '"',
+        ' style="max-height:60px" loading="lazy"',
+        ' onerror="this.replaceWith(document.createTextNode(\'—\'))">',
+      '</a>'
+    )
+  ) |>
+  select(Image, file, reason) |>
+  knitr::kable(
+    col.names = c("", "File", "Reason not assigned"),
+    escape    = FALSE,
+    format    = "html"
+  ) |>
+  kableExtra::kable_styling(font_size = 12, full_width = FALSE)
+```
+
+### Coats of Arms
+
+```{r unmatched-coats, results='asis'}
+coats_unmatched |>
+  mutate(
+    Image = paste0(
+      '<a href="', commons_link(file), '" target="_blank" rel="noreferrer">',
+        '<img src="', commons_thumb(file, 80), '"',
+        ' style="max-height:60px" loading="lazy"',
+        ' onerror="this.replaceWith(document.createTextNode(\'—\'))">',
+      '</a>'
+    )
+  ) |>
+  select(Image, file, reason) |>
+  knitr::kable(
+    col.names = c("", "File", "Reason not assigned"),
+    escape    = FALSE,
+    format    = "html"
+  ) |>
+  kableExtra::kable_styling(font_size = 12, full_width = FALSE)
+```
