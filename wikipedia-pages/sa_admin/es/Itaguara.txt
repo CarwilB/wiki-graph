@@ -1,0 +1,53 @@
+{{Ficha de entidad subnacional
+|nombre = Itaguara
+|imagen = Vista parcial de Itaguara MG.JPG
+|unidad = [[Municipio]]
+|tipo_superior_1 = [[Anexo:Estados de Brasil|Estado]]
+|superior_1 = {{BRA|MG}}
+|tipo_superior_3 = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3 = [[Mesorregión Metropolitana de Belo Horizonte|Metropolitana de Belo Horizonte]]
+|tipo_superior_4 = [[Microrregiones de Brasil|Microrregión]]
+|superior_4 = [[Microrregión de Itaguara|Itaguara]]
+|bandera = no
+|escudo = Brasaoitaguara.jpg
+|mapa = MinasGerais Municip Itaguara.svg
+|tamaño_mapa = 260px
+|pie_mapa = Mapa
+|dirigentes_títulos = [[Prefecto]]
+|altitud = 
+|superficie = 410.719
+|superficie_post =<ref name="IBGE_Área">{{cita web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial|fecha=10 de octubre de 2002|autor=IBGE|editorial=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|población = 13278
+|población_año = Estimación [[IBGE]]/2018<ref name="IBGE_Pop_2018">{{cita web |url=https://www.ibge.gov.br/estatisticas-novoportal/sociais/populacao/9103-estimativas-de-populacao.html?&t=downloads |título= Estimativa de População 2018 IBGE Ciudades |autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|fecha=31 de julio de 2018}}</ref>
+|PIB = {{formatnum:131245.329}} mil
+|PIB_per_capita = 10243.94
+|PIB_tipo = PIB ([[IBGE]]/2008)<ref name="IBGE_PIB">{{cita web|url =http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |título=Produto Interno Bruto dos Municípios 2004-2008 |editorial = Instituto Brasileiro de Geografia e Estatística }}</ref>
+|IDH = 0.691
+|IDH año = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{cita web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |título=Ranking decrescente do IDH-M dos municípios do Brasil |año=2010 |obra=Atlas do Desenvolvimento Humano |editorial=Programa das Nações Unidas para o Desenvolvimento (PNUD) |fechaacceso=16 de enero de 2019 |fechaarchivo=6 de agosto de 2013 |urlarchivo=https://web.archive.org/web/20130806022754/http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |deadurl=yes }}</ref>
+|campo1_nombre = Datos mesorregión
+|campo1 = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |título=Divisão Territorial do Brasil |fecha=1 de julio de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |editorial=Instituto Brasileiro de Geografia e Estatística (IBGE) |fechaacceso=16 de enero de 2019 |urlarchivo=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip |fechaarchivo=14 de junio de 2020 }}</ref>
+|campo2_nombre = Datos microrregión
+|campo2 = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+}}
+'''Itaguara''' es un [[municipio]] [[brasil]]eño del [[estados del Brasil|estado]] de [[Minas Gerais]]. Su población estimada en 2018 es de 13&nbsp;278 habitantes, según el [[Instituto Brasileño de Geografía y Estadística]] (IBGE).<ref name="IBGE_Pop_2018"/>
+
+== Toponimia ==
+Itaguara es una palabra de origen [[Lenguas tupí-guaraní|tupí-guaraní]]. Significa «piedra del lobo», a través de la unión de itá (piedra) y guará (lobo).<ref>{{Cita web|url=https://www.fflch.usp.br/dlcv/tupi/vocabulario.htm|título=VOCABULÁRIO TUPI-PORTUGUÊS DAS LIÇÕES|fecha=4 de febrero de 2012|sitioweb=web.archive.org|autor=Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo|fechaacceso=16 de enero de 2019|fechaarchivo=4 de febrero de 2012|urlarchivo=https://web.archive.org/web/20120204195417/https://www.fflch.usp.br/dlcv/tupi/vocabulario.htm|deadurl=}}</ref>
+
+== Historia ==
+El distrito fue creado con la denominación de Nossa senhora das Dores da Conquista, por la ley provincial número 1667, del 14 de septiembre de 1870. En la división administrativa de 1911, aparece con el nombre de Conquista, integrando el municipio de [[Itaúna]]. En 1923, fue elevado a la categoría de municipio.<ref name="historia">{{cita web| url =https://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/itaguara.pdf|título=Itaguara - Histórico |autor = IBGE }}</ref>
+
+== Clima ==
+Según la [[clasificación climática de Köppen]], el municipio se encuentra en el [[Clima oceánico|clima templado húmedo ''Cwb'']].<ref name="Clima">{{cita web
+| url = http://koeppen-geiger.vu-wien.ac.at/pics/kottek_et_al_2006.gif |título=World Map of the Köppen-Geiger climate classification |obra=World Map of the Köppen-Geiger climate classification |editorial=Institute for Veterinary Public Health}}</ref>
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|Itaguara}}
+* [https://www.itaguara.mg.gov.br/ Sitio web oficial] {{pt}}.
+{{Traducido ref|pt|Itaguara|trad=parcial}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Minas Gerais]]

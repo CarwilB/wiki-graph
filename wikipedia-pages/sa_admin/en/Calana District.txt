@@ -1,0 +1,121 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Calana District
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              = 
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| map_alt                 = 
+| map_caption             = Location of Calana District in the [[Tacna Province]]
+| coordinates             = {{coord|17.9389|S|70.1862|W|region:PE_type:adm3rd_source:wikidata-and-enwiki-cat-tree_region:PE|display=inline,title}}
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = Peru
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Tacna Region|Tacna]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Tacna Province|Tacna]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = August 20, 1872
+| seat_type               = [[Capital city|Capital]]
+| seat                    = [[Calana]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Juan Ramos Arocutipa
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 108.38
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 875
+| population_footnotes    = 
+| population_total        = 2394
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 230103
+| website                 = 
+| footnotes               = 
+}}
+
+[[File:Distrito_Calana.jpg | thumb|right | alt=Map showing district Calana, Tacna, Peru. | Map showing district Calana, Tacna, Peru.]]
+'''Calana District''' is one of ten [[Districts of Peru|districts]] of [[Tacna Province]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=April 23, 2008 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y
+|collapsed = Y
+|location = Calana, elevation {{convert|785|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 26.4
+|Feb high C = 27.1
+|Mar high C = 26.4
+|Apr high C = 24.4
+|May high C = 22.3
+|Jun high C = 20.5
+|Jul high C = 19.9
+|Aug high C = 20.4
+|Sep high C = 21.5
+|Oct high C = 22.8
+|Nov high C = 24.0
+|Dec high C = 25.3
+|year high C = 
+|Jan low C = 15.1
+|Feb low C = 15.6
+|Mar low C = 14.6
+|Apr low C = 12.6
+|May low C = 10.2
+|Jun low C = 8.2
+|Jul low C = 7.5
+|Aug low C = 8.0
+|Sep low C = 9.2
+|Oct low C = 10.6
+|Nov low C = 12.0
+|Dec low C = 13.4
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 4.1
+|Feb precipitation mm = 2.5
+|Mar precipitation mm = 0.9
+|Apr precipitation mm = 0.4
+|May precipitation mm = 1.6
+|Jun precipitation mm = 1.9
+|Jul precipitation mm = 2.9
+|Aug precipitation mm = 2.9
+|Sep precipitation mm = 2.6
+|Oct precipitation mm = 1.1
+|Nov precipitation mm = 1.1
+|Dec precipitation mm = 1.3
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climaticás Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 6 November 2023}}</ref>
+}}
+
+== References ==
+{{Reflist}}
+
+{{Districts of Tacna Province}}
+
+[[Category:Districts of the Department of Tacna]]
+
+{{Tacna-geo-stub}}

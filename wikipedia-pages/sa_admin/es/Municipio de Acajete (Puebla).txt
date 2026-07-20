@@ -1,0 +1,430 @@
+{{Ficha de entidad subnacional
+| nombre               = Municipio de Acajete
+| país                 = [[México]]
+| unidad               = [[Anexo:Municipios de Puebla|Municipio]]
+| tipo_superior_1      = [[Anexo:Entidades federativas de México|Estado]]
+| superior_1           = [[Puebla]]
+| tipo_superior_2      = [[Área Metropolitana]]
+| superior_2           = [[Zona Metropolitana de Puebla]]
+| imagen               = {{Imagen múltiple
+ | posición_tabla = center
+ | ancho_total    = 280
+ | perrow         = 1/2
+ 
+ | foto1          = Sierra de Acajete.jpg
+ | foto2          = Templo Santa María Nenetzintla 1.jpg
+ | foto3          = México 150 Libre Sentido a Puebla Capital.jpg
+}}
+| pie_de_imagen        = [[El Pinal (Puebla)|Cerro El Pinal]], localidad de [[Santa María Nenetzintla]] y [[Carretera Federal 150D]].
+| mapa                 = {{Map draw|geotype=geoshape|width=250|height=250|align=center|zoom=10|fill=#4D87CA|fill-opacity=0.1}}
+
+| capital_denominación = Cabecera municipal
+| capital              = [[Acajete (Puebla)|Acajete]]
+| dirigentes_títulos   = Presidente municipal
+| dirigentes_nombres   = [[Archivo:Morena logo (alt).svg|20px|link=Movimiento de Regeneración Nacional]] Cristian Flores Flores {{small|([[Anexo:Presidentes municipales de Puebla (2024-2027)|2024-2027]])}}
+| subdivisión          = 9 juntas auxiliares
+| superficie           = 185.46
+| población            = 72894
+| población_año        = 2020
+| población_post       = <ref name="INEGI">{{cita web |url=https://www.inegi.org.mx/sistemas/olap/consulta/general_ver4/MDXQueryDatos.asp?#Regreso&c= |título=Principales resultados por locadensidy estado (ITER) |año=2020 |autor=Instituto Nacional de Estadística y Geografía}}</ref>
+| densidad             = 393
+| página web           = 
+| apodo                = 
+| fecha_de_creación    = 1895
+| elevación_alta       = 3 200
+| elevación_baja       = 2 280
+| gentilicio           = acajetense
+| IDH                  = 0.705
+| IDH año              = 2023
+| IDH categoría        = <span style="color:#009900;">'''Alto'''
+| horario              = [[UTC-06:00|UTC -6]]
+}}
+El '''municipio de Acajete''' es uno de los [[Anexo:Municipios de Puebla|217 municipios]] que conforman al estado [[México|mexicano]] de [[Puebla]]. Se encuentra ubicado al centro del estado, y su cabecera es la población del [[Acajete (Puebla)|mismo nombre]].
+
+== Geografía ==
+El municipio de Acajete se encuentra localizado en la zona central del estado de Puebla, al oriente de la [[Zona metropolitana de Puebla-Tlaxcala]]. Tiene una extensión territorial de 177.419 kilómetros cuadrados que representan el 0.52% de la superficie total del estado. Sus coordenadas geográfica extremas son 19° 00' - 19° 12' de latitud norte y 97° 50' - 98° 01' de longitud oeste; su altitud va de un máximo de 3 200 a un mínimo de 2 280 metros sobre el nivel del mar.
+
+El territorio limita al oeste con el [[municipio de Tepatlaxco de Hidalgo]], al suroeste con el [[municipio de Amozoc]], al sur con el [[municipio de Cuautinchán]], al sureste y este con el [[municipio de Tepeaca]] y al noreste con el [[municipio de Nopalucan]]. Al norte limita con el estado de [[Tlaxcala]], correspondiendo estos límites al [[municipio de Ziltlaltépec de Trinidad Sánchez Santos]] y al [[municipio de Huamantla]].
+
+=== Clima ===
+<!--Comienzo de plantilla-->
+{{Clima
+|lugar   = Acajete, Puebla.
+<!--Las temperaturas máximas registradas son opcionales-->
+<!--Temperaturas máximas (ºC)-->   <!--Temperaturas máximas registradas (ºC)-->
+|ene_max = 22.3                        |ene_max_reg = 24.0
+|feb_max = 23.4                        |feb_max_reg = 25.6
+|mar_max = 26.4                        |mar_max_reg = 32.5
+|abr_max = 27.0                        |abr_max_reg = 31.0
+|may_max = 26.2                        |may_max_reg = 29.5
+|jun_max = 24.5                        |jun_max_reg = 26.8
+|jul_max = 24.1                        |jul_max_reg = 26.2
+|ago_max = 24.6                        |ago_max_reg = 33.7
+|sep_max = 23.7                        |sep_max_reg = 26.0
+|oct_max = 24.2                        |oct_max_reg = 26.4
+|nov_max = 23.9                        |nov_max_reg = 25.4
+|dic_max = 23.0                        |dic_max_reg = 24.1
+|anual_max = 24.4                      |anual_max_reg = 33.7
+<!--Las temperaturas mínimas registradas son opcionales-->
+<!--Temperaturas mínimas (ºC)-->   <!--Temperaturas mínimas registradas (ºC)-->
+|ene_min = 3.6                        |ene_min_reg = 1.5
+|feb_min = 3.9                        |feb_min_reg = 1.7
+|mar_min = 5.2                        |mar_min_reg = 2.9
+|abr_min = 6.6                        |abr_min_reg = 5.0
+|may_min = 7.3                        |may_min_reg = 3.8
+|jun_min = 7.8                        |jun_min_reg = 5.1
+|jul_min = 7.0                        |jul_min_reg = 5.0
+|ago_min = 7.7                        |ago_min_reg = 4.5
+|sep_min = 7.6                        |sep_min_reg = 6.1
+|oct_min = 6.4                        |oct_min_reg = 5.4
+|nov_min = 5.2                        |nov_min_reg = 3.8
+|dic_min = 4.0                        |dic_min_reg = 2.2
+|anual_min = 6.0                      |anual_min_reg = 1.5
+<!--Temperatura diaria promedio (ºC)-->
+|ene_prom = 12.9
+|feb_prom = 13.7
+|mar_prom = 15.8
+|abr_prom = 16.8
+|may_prom = 16.8
+|jun_prom = 16.2
+|jul_prom = 15.6
+|ago_prom = 16.2
+|sep_prom = 16.6
+|oct_prom = 15.3
+|nov_prom = 14.6
+|dic_prom = 13.5
+|anual_prom = 15.3<!--Opcional, si no se especifica, hace el cálculo automáticamente con los datos de los 12 meses -->
+<!--Precipitación total (mm)-->
+|ene_precip = 11.7
+|feb_precip = 12.2
+|mar_precip = 10.8
+|abr_precip = 32.0
+|may_precip = 117.7
+|jun_precip = 160.9
+|jul_precip = 111.0
+|ago_precip = 125.0
+|sep_precip = 116.7
+|oct_precip = 57.2
+|nov_precip = 14.8
+|dic_precip = 2.3
+|anual_precip = 772.3<!--Opcional, si no se especifica, hace el cálculo automáticamente con los datos de los 12 meses -->
+|fuente  = Centro Meteorológico Nacional<ref>{{cita web
+ |url         =http://smn.cna.gob.mx/climatologia/normales/estacion/pue/NORMAL21136.TXT
+ |título         =Datos climáticos oficiales sobre Acajete
+ |editor         =Centro Meteorológico Nacional
+ |año         =2000
+ |fechaacceso         =28 de octubre de 2011
+ }}</ref>
+|fechaacceso  = 28 de octubre de 2011
+}}
+
+== Demografía ==
+De acuerdo al Censo de Población y Vivienda realizado en 2020 por el [[Instituto Nacional de Estadística y Geografía]]; el municipio de Acajete posee una población de 72&nbsp;894 habitantes.<ref name="INEGI"/>
+
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de Acajete contaba con 66 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Puebla|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197940.pdf|fechaacceso=febrero de 2026|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2026|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|210010001
+|[[Acajete (Puebla)|'''Acajete''']]
+| align="right" |13&nbsp;922
+|-
+|210010015
+|[[Santa Isabel Tepetzala]]
+| align="right" |11&nbsp;507
+|-
+|210010017
+|[[San Juan Tepulco]]
+| align="right" |10&nbsp;288
+|-
+|210010004
+|[[La Magdalena Tetela Morelos]]
+| align="right" |7&nbsp;613
+|-
+|210010006
+|[[San Agustín Tlaxco]]
+| align="right" |6&nbsp;995
+|-
+|210010011
+|[[San Jerónimo Ocotitlán]]
+| align="right" |5&nbsp;560
+|-
+|210010016
+|[[Santa María Nenetzintla]]
+| align="right" |4&nbsp;667
+|-
+|210010033
+|[[Tlacamilco]]
+| align="right" |3&nbsp;583
+|-
+|210010024
+|[[Apango de Zaragoza]]
+| align="right" |3&nbsp;032
+|-
+|210010007
+|[[San Antonio Tlacamilco]]
+| align="right" |2&nbsp;179
+|-
+| colspan="2" |''Otras localidades''
+| align="right" |3&nbsp;548
+|-
+! colspan="2" |Total municipal
+!72&nbsp;894
+|}
+
+== Política ==
+
+=== Representación legislativa ===
+Para la elección de diputados locales al [[Congreso de Puebla]] y de diputados federales a la [[Cámara de Diputados (México)|Cámara de Diputados]] federal, el municipio de Acajete se encuentra integrado en los siguientes distritos electorales:
+
+'''Local:'''
+* [[Distrito electoral local de 12 de Puebla]] con cabecera en [[Amozoc]].<ref>{{cita web |url = http://cartografia.ife.org.mx//descargas/distritacion2017/local/21/D21.pdf |título = Descriptivo de la distritación Local, Puebla, 2015 | fechaacceso = 10 de septiembre de 2019 |autor = Instituto Nacional Electoral}}</ref>
+
+'''Federal:'''
+* [[Distrito electoral federal 7 de Puebla]] con cabecera en [[Tepeaca]].<ref>{{cita web |url = http://cartografia.ife.org.mx//descargas/distritacion2017/federal/21/D21.pdf |título = Descriptivo de la distritación Federal, Puebla, Marzo de 2017 | fechaacceso = 10 de septiembre de 2019 |autor = Instituto Nacional Electoral}}</ref>
+
+=== Subdivisión administrativa ===
+El municipio de divide para su régimen interior en nueve juntas auxiliares, que se integran por un presidente municipal auxiliar y cuatro miembros electos popularmente por los habitantes de la comunidad, por un período de tres años, designándose en plebiscito el último domingo del mes de enero del año que corresponda, para tomar posesión el segundo domingo del mismo año. Las nueve juntas Auxiliares son:
+
+*Santa María Nenetzintla
+*La Magdalena Tetela
+*San Antonio Tlacamilco
+*Santa Isabel Tepetzala
+*San Jerónimo Ocotitlán
+*San Agustín Tlaxco
+*San Juan Tepulco
+*Tlacamilco
+*Apango de Zaragoza
+
+=== Presidentes municipales ===
+<center>
+{| class="wikitable" width=500px
+|-
+! colspan="3" width=500px| '''''Presidentes Municipales de Acajete'''''<ref>Fuente: http://www.e-local.gob.mx {{Wayback|url=http://www.e-local.gob.mx/ |date=20070209231450 }}</ref>
+|-
+! rowspan="2" width=300px| Nombre !! colspan="2" width=200px| Período
+|-
+! width=100px| Inicio !! width=100px| Término
+|-
+| align="center" | Juan Montero Romero
+| align="center" | 1939
+| align="center" | 1940
+|-
+| align="center" | Fernando García
+| align="center" | 1941
+| align="center" | 1943
+|-
+| align="center" | Casto Salazar Ita
+| align="center" | 1943
+| align="center" | 1945
+|-
+| align="center" | Victoriano Loranca
+| align="center" | 1945
+| align="center" | 1947
+|-
+| align="center" | Serafín Sánchez
+| colspan="2" align="center" | 1947
+|-
+| align="center" | Victoriano Loranca
+| colspan="2" align="center" | 1947
+|-
+| align="center" | Serafín Sánchez
+| colspan="2" align="center" | 1948
+|-
+| align="center" | Trinidad Juárez López
+| align="center" | 1948
+| align="center" | 1950
+|-
+| align="center" | Heriberto Ramírez
+| align="center" | 1950
+| align="center" | 1951
+|-
+| align="center" | Rafael Sánchez Loranca
+| align="center" | 1951
+| align="center" | 1954
+|-
+| align="center" | Arturo Cervantes Gutiérrez
+| colspan="2" align="center" | 1954
+|-
+| align="center" | Juan Montero Romero
+| align="center" | 1954
+| align="center" | 1957
+|-
+| align="center" | Alejandro Contreras Sánchez
+| align="center" | 1957
+| align="center" | 1960
+|-
+| align="center" | Miguel Ángel Navarro Jaramillo
+| align="center" | 1960
+| align="center" | 1961
+|-
+| align="center" | Juana Morales de Vargas
+| colspan="2" align="center" | 1961
+|-
+| align="center" | Ángel Rodríguez García
+| colspan="2" align="center" | 1961
+|-
+| align="center" | Juan Ramírez Reyes
+| align="center" | 1961
+| align="center" | 1963
+|-
+| align="center" | Rafael Rodríguez Gómez
+| align="center" | 1963
+| align="center" | 1966
+|-
+| align="center" | Lauro Loranca Loranca
+| align="center" | 1966
+| align="center" | 1969
+|-
+| align="center" | Agustín Sánchez Jiménez
+| align="center" | 1969
+| align="center" | 1972
+|-
+| align="center" | Román De Ita Flores
+| align="center" | 1972
+| align="center" | 1974
+|-
+| align="center" | José López Hernández
+| align="center" | 1974
+| align="center" | 1975
+|-
+| align="center" | Manuel Vargas Reyes
+| align="center" | 1975
+| align="center" | 1976
+|-
+| align="center" | Arturo Díaz Maldonado
+| colspan="2" align="center" | 1976
+|-
+| align="center" | Nicolás Montero Juárez
+| align="center" | 1976
+| align="center" | 1978
+|-
+| align="center" | Josaphat Aguilar Olivares
+| align="center" | 1978
+| align="center" | 1981
+|-
+| align="center" |Silvino López Hernández
+| align="center" |1981
+| align="center" |1981
+|-
+| align="center" | Martín González García
+| align="center" | 1981
+| align="center" | 1983
+|-
+| align="center" | Rafael Rodríguez Gómez
+| align="center" | 1983
+| align="center" | 1984
+|-
+| align="center" | Martín Barranco López
+| align="center" | 1984
+| align="center" | 1986
+|-
+| align="center" | Enrique Loranca Díaz
+| align="center" | 1987
+| align="center" | 1988
+|-
+| align="center" | Benjamín Jiménez Sosa
+| align="center" | 1988
+| align="center" | 1990
+|-
+| align="center" | Orlando León Barranco
+| align="center" | 1990
+| align="center" | 1993
+|-
+| align="center" | Victoria López León
+| align="center" | 1993
+| align="center" | 1996
+|-
+| align="center" | Juan Sergio Salazar Vargas
+| align="center" | 1996
+| align="center" | 1999
+|-
+| align="center" | Jorge Rosas Barranco
+| align="center" | 1999
+| align="center" | 2000
+|-
+| align="center" | Miguel Ángel Adauta Hoyos
+| align="center" | 2000
+| align="center" | 2002
+|-
+| align="center" | Fidel Flores Jiménez
+| align="center" | 2002
+| align="center" | 2005
+|-
+| align="center" | Roberto Alejandro Contreras Bretón
+| align="center" | 2005
+| align="center" | 2008
+|-
+| align="center" | Carmelo Montero Barranco
+| align="center" | 2008
+| align="center" | 2011
+|-
+| align="center" | Rogelio Leon Barranco
+| align="center" | 2011
+| align="center" | 2013
+|-
+| align="center" | Antonio Aguilar Reyes
+| align="center" | 2014
+| align="center" | 2018
+|-
+| align="center" | Roberto Ramírez Cervantes
+| align="center" |2018
+| align="center" |2021
+|-
+| align="center" | David Meléndez López
+| align="center" | 2021
+| align="center" | 2024
+|-
+| align="center" | Cristian Flores Flores
+| align="center" | 2024
+| align="center" | Actualmente
+|}
+</center>
+
+== Véase también ==
+* [[Elecciones estatales extraordinarias de Puebla de 2014]]
+* [[El Pinal (Puebla)]]
+
+== Referencias ==
+{{listaref|2}}
+
+== Fuentes ==
+* {{Cita web
+|1 = 
+|apellido = Instituto Nacional para el Federalismo y el Desarrollo Municipal
+|nombre = Secretaría de Gobernación
+|enlaceautor = Secretaría de Gobernación (México)
+|título = Enciclopedia de los Municipios de México
+|año = 2005
+|Edición = 
+|ubicación = 
+|editorial = 
+|id = 
+|url = http://siglo.inafed.gob.mx/enciclopedia/EMM21puebla/municipios/21001a.html
+|fechaacceso = 10 de septiembre de 2019
+}}
+* {{cita web|apellido = Instituto Nacional de Estadística y Geografía 
+|enlaceautor = Instituto Nacional de Estadística y Geografía
+|título = Compendio de información geográfica municipal 2010. Acajete, Puebla.
+|año = 2010
+|url = http://www.inegi.org.mx/geo/contenidos/topografia/compendio.aspx
+|fechaacceso = 10 de septiembre de 2019
+}}
+* {{cita web
+|apellido = Secretaría de Desarrollo Social
+|enlaceautor = Secretaría de Desarrollo Social (México)
+|título = Unidad de Microrregiones, Cédula de Identificación Municipal. Acajete, Puebla.
+|año = 2017
+|url = http://www.microrregiones.gob.mx/zap/datGenerales.aspx?entra=nacion&ent=21&mun=001
+|fechaacceso = 10 de septiembre de 2019
+}}
+
+== Enlaces externos ==
+* {{commonscat|Acajete Municipality, Puebla}}
+* [https://web.archive.org/web/20150630204116/http://www.acajetepuebla.gob.mx/ Sitio web del gobierno municipal de Acajete.]
+
+{{Control de autoridades}}
+[[Categoría:Municipio de Acajete (Puebla)| ]]

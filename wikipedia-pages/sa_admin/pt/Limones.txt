@@ -1,0 +1,51 @@
+{{Info/Assentamento
+|nome                   = Limones
+|nome_nativo            = 
+|assentamento_tipo        = [[Corregimientos do Panamá|Corregimiento]]
+|imagem_horizonte          = 
+|imagem_legenda          = 
+|imagem_alt              = 
+|mapa_alfinete            = Panamá
+|coordenadas_display    = inline,title
+|coordenadas_região     = PA
+|subdivisão_tipo       = País
+|subdivisão_nome       = {{flag|Panamá}}
+|subdivisão_tipo1      = [[Províncias do Panamá|Proviíncia]]
+|subdivisão_nome1      = [[Chiriquí (província)|Chiriquí]]
+|subdivisão_tipo2      = [[Distritos do Panamá|Distrito]]
+|subdivisão_nome2      = [[Barú (distrito de Chiriquí)|Barú]]
+|líder_título           = 
+|líder_nome            = 
+|estabelecido_título      = Estabelecido
+|estabelecido_data       = 
+|área_terra_km2          = 53.8
+|área_notas         = <ref name=inec>[http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls "Cuadro 11 (Superficie, población y densidad de población en la República...)" [Table 11 (Area, population, and population density in the Republic...)]] {{webarchive|url=https://web.archive.org/web/20160304030354/http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls |data=04-03-2016}} (.xls). In {{citar web|título=Resultados Finales Básicos |trans-title=Basic Final Results |url=https://www.contraloria.gob.pa/inec/publicaciones/Publicaciones.aspx?ID_SUBCATEGORIA=59&ID_PUBLICACION=360&ID_IDIOMA=1&ID_CATEGORIA=13 |publicado=[[National Institute of Statistics and Census of Panama]] |acessodata=26 de maio de 2015 |language=Espanhol |deadurl=yes |arquivourl=https://web.archive.org/web/20150710070123/http://www.contraloria.gob.pa/inec/Publicaciones/Publicaciones.aspx?ID_SUBCATEGORIA=59&ID_PUBLICACION=360&ID_IDIOMA=1&ID_CATEGORIA=13 |arquivodata=10 de julho de 2015 |df= }}</ref>
+|população_em       = 2010
+|população_total       = 1040
+|população_notas   = <ref name=inec/>
+|população_densidade_km2 = 19.3
+|população_nota        = Densidade da população calculada com base na área da terra.
+|timezone             = [[Zona de Tempo Oriental|EST]]
+|utc_offset           = −5
+|latd                   = 
+|latm                   = 
+|lats                   = 
+|latNS                  = 
+|longd                  = 
+|longm                  = 
+|longs                  = 
+|longEW                 = }}
+
+'''Limones''' é um [[Corregimientos do Panamá|corregimiento]] em [[Barú (distrito de Chiriquí)|Barú (distrito)]], [[Chiriquí (província)]], [[Panamá]]. Tem uma área de terra de 53,8 quilômetros quadrados (20,8 /sq mi) e tinha uma população de 1.040 a partir de 2010, dando-lhe uma densidade populacional de {{convert|19.3|PD/sqkm|PD/sqmi}}.<ref name=inec/> A sua população a partir de 1990 era 974; A sua população a partir de 2000 foi de 948.<ref name=inec/>
+
+{{Referências}}
+{{reflist}}
+
+{{Província de Chiriquí}}
+
+{{coord|8.0997|N|82.8667|W|source:wikidata|display=title}}
+
+{{DEFAULTSORT:Limones, Chiriqui}}
+[[Categoria:Corregimentos da província de Chiriquí]]
+
+{{Esboço-geopa}}

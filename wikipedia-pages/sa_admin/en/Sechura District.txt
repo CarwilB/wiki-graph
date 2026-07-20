@@ -1,0 +1,147 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Sechura
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = Catedral de Sechura.jpg
+| image_alt               = 
+| image_caption           = [[Sechura]] cathedral
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Sechura in the [[Sechura Province|Sechura]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Piura Region|Piura]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Sechura Province|Sechura]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Sechura]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Justo Eche Morales 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 5711.25
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 
+| population_footnotes    = 
+| population_total        = 44590 
+| population_as_of        = 2017
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 
+| website                 = 
+| footnotes               = 
+}}
+
+The '''Sechura District''' is one of the six districts that make up the [[Sechura Province]] in the [[Piura Region]] of [[Peru]].
+
+== History ==
+
+{{Empty section|date=February 2014}}
+
+== Geography ==
+
+{{Empty section|date=February 2014}}
+
+== Authorities ==
+
+=== Mayors ===
+* 2011-2014: José Bernardo Pazo Nunura, [[Partido Humanista Peruano]].
+* 2007-2010: Santos Valentín Querevalú Periche, Movimiento de Desarrollo Local.
+* 2003-2006 / 1994-1998: Justo Eche Morales, Movimiento Independiente Sechura Rumbo al Progreso.
+* 1999-2002: Porfirio Idelfonso Ayala Morán, Movimiento Independiente Unidos por el Cambio
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Chusis, Sechura, elevation {{convert|8|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 31.9
+|Feb high C = 32.8
+|Mar high C = 32.7
+|Apr high C = 31.7
+|May high C = 29.5
+|Jun high C = 27.2
+|Jul high C = 26.1
+|Aug high C = 26.0
+|Sep high C = 26.7
+|Oct high C = 27.3
+|Nov high C = 28.2
+|Dec high C = 30.1
+|year high C = 
+|Jan low C = 21.7
+|Feb low C = 22.9
+|Mar low C = 22.6
+|Apr low C = 21.2
+|May low C = 19.7
+|Jun low C = 18.4
+|Jul low C = 17.4
+|Aug low C = 17.1
+|Sep low C = 17.1
+|Oct low C = 17.4
+|Nov low C = 17.9
+|Dec low C = 19.6
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 18.0
+|Feb precipitation mm = 15.8
+|Mar precipitation mm = 36.2
+|Apr precipitation mm = 5.8
+|May precipitation mm = 0.6
+|Jun precipitation mm = 0.1
+|Jul precipitation mm = 0.2
+|Aug precipitation mm = 0.0
+|Sep precipitation mm = 0.0
+|Oct precipitation mm = 0.2
+|Nov precipitation mm = 0.6
+|Dec precipitation mm = 3.1
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+== See also ==
+* [[Administrative divisions of Peru]]
+
+==References==
+{{reflist}}
+
+== External links ==
+* [http://www.inei.gob.pe INEI Peru] {{Webarchive|url=https://web.archive.org/web/19970412040139/http://www.inei.gob.pe/ |date=1997-04-12 }}
+
+{{Districts of Sechura Province}}
+{{coord|5.5575|S|80.8223|W|source:wikidata-and-enwiki-cat-tree_region:PE|display=title}}
+
+[[Category:Districts of the Department of Piura]]
+[[Category:Districts of the Sechura province]]
+
+
+{{Piura-geo-stub}}

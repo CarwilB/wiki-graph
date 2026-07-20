@@ -1,0 +1,102 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Los Arabos
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Los Arabos entering municipality.jpg
+|imagesize              = 
+|image_caption          = Sign seen when entering the municipality from [[Santo Domingo, Cuba|Santo Domingo]]
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = Coat of arms of Los Arabos.jpg
+|shield_size            = 120x90px
+|image_map              = Los Arabos (Cuban municipal map).png
+|map_caption            = Los Arabos municipality (red) within <br> Matanzas Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Matanzas Province|Matanzas]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = Established
+|established_date2      = 1876
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 762
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 23,111
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|44|24|N|80|42|58|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 75
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-52
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Los Arabos''' is a municipality and town in the [[Matanzas Province]] of [[Cuba]]. It is located in the eastern part of the province, bordering the province of [[Villa Clara Province|Villa Clara]].
+
+==History==
+The municipality was divided into the [[Former barrios of Cuba|barrios]] of Cabecera (municipal seat), Macagua, Monte Alto and San Pedro de Mayabón.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/marabos/index.htm|title=Los Arabos|author=Guije.com|accessdate=2007-10-07|language=es}}</ref>
+
+==Demographics==
+In 2022, the municipality of Los Arabos had a population of 25,702.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|762|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-07}}</ref> it has a population density of {{convert|30|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Los Arabos
+ | N  = [[Corralillo]] ([[Villa Clara Province|Villa Clara]])
+ | E  = [[Santo Domingo, Cuba|Santo Domingo]] ([[Villa Clara Province|Villa Clara]])
+ | SE = [[Rodas]] ([[Cienfuegos Province|Cienfuegos]])
+ | S  = [[Aguada de Pasajeros]] ([[Cienfuegos Province|Cienfuegos]])
+ | SW = [[Calimete]]
+ | W  = [[Colón, Cuba|Colón]]
+}}
+{{Municipalities in Matanzas}}
+
+[[Category:Populated places in Matanzas Province]]
+
+
+{{Cuba-geo-stub}}

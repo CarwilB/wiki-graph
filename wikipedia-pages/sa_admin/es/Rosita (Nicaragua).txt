@@ -1,0 +1,89 @@
+{{Ficha de entidad subnacional
+| nombre = Rosita
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Región autónoma]]
+| superior_1 = {{NIC|CN}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.9860
+ |longitude= -84.2660
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=8}}
+| elevación_media = 58
+| superficie = 2,205
+| superficie_puesto = 12
+| número_entidades = 153
+| población_puesto = 51
+| población_año = 2023
+| población = 39527
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/costa_caribe_norte/9115__rosita/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 16590
+| densidad = 17.92
+| fundación = 6 de noviembre de 1989 ({{Edad|6|11|1989}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 72200
+}}
+'''Rosita''' es un [[Anexo:Municipios de Nicaragua|municipio]] de la [[Región Autónoma de la Costa Caribe Norte]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte con el municipio de [[Waspán]], al sur con los municipios de [[Prinzapolka]] y [[Bonanza (Nicaragua)|Bonanza]], al este con los municipios de [[Puerto Cabezas]] y Prinzapolka, y al oeste con el municipio de [[Siuna]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=15 de marzo de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref>
+
+La cabecera municipal está ubicada a 480 kilómetros de la capital de [[Managua]].
+
+== Historia ==
+El municipio, antes conocido como Santa Rita, creció como poblado en la década de los años 1940, cuando se inició la explotación minera por la Rosario Mining Company. Exploraciones entre 1951 y 1955 condujeron al descubrimiento y la explotación del mineral de [[cobre]], que dejó de extraerse en 1975 con la caída del precio de este metal. Tras ser la mina nacionalizada en 1979, se abandonó y desmanteló totalmente en 1982.<ref name='INIFOM'/>
+
+Rosita se convirtió en el municipio de Prinzapolka en 1971, pero en 1989 Rosita se separó de Prinzapolka para formar su propio municipio. En 2005, Rosita fue elevada al rango de ciudad.
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 20,379 (51.6%)
+| valor1 = 51.6
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 19,148 (48.4%)
+| valor2 = 48.4
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 22,937 (58%)
+| valor1 = 58
+| color1 = #109618
+| etiqueta2 = Urbano: 16,590 (42%)
+| valor2 = 42
+| color2 = #FF9900
+}}
+Rosita tiene una población actual de 39,527 habitantes. De la población total, el 51.6% son hombres y el 48.4% son mujeres. Casi el 42% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima subtropical]] muy húmedo, con precipitaciones anuales que oscilan entre los 1900 y 3290 mm.<ref name='INIFOM'/>
+
+== Localidades ==
+El caso urbano de la capital, Rosita, se divide en 11 barrios y el área rural en 81 comunidades.<ref name='INIFOM'/>
+
+== Economía ==
+La principal actividad económica es la agricultura, con un suelo muy pobre que hace que el índice de desempleo sea del 80%.<ref name='INIFOM'/>
+
+== Cultura ==
+Como el municipio es multiétnico (sumos, misquitos, criollos y mestizos), cada etnia tiene sus propias fiestas, las que se celebran principalmente en las comunidades rurales, manteniendo las costumbres de sus antepasados.<ref name='INIFOM'/>
+
+Las comidas típicas son el wabul hecho con plátanos, yuca o quequisque y la buña, hecha con pihibaye, yuca y frutas del período.
+
+== Transporte ==
+El municipio está ubicado a lo largo de la carretera principal entre el occidente de Nicaragua y la ciudad de Puerto Cabezas en el [[Mar Caribe]]. Rosita tiene un aeropuerto pequeño que, sin embargo, carece de tráfico regular ([[Asociación Internacional de Transporte Aéreo|IATA]]: RFS).
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de la RAAN]]

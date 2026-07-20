@@ -1,0 +1,428 @@
+{{Ficha de entidad subnacional
+| unidad = [[Anexo:Municipios de Guatemala|Municipio]]
+| tipo_superior_1 = [[Departamentos de Guatemala|Departamento]]
+| superior_1 = {{GTM|AV}}
+| mapa_alternativo = Relief map of Guatemala.jpg
+| bandera = Coat of arms Chisec.jpg
+| escudo = 
+| mapa_loc = Guatemala
+| mapa_loc_1 = Alta Verapaz
+| imagen = Laguna de sepalau.jpg
+| pie_de_imagen = 
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = 
+| fundación = 1813
+| gentilicio = 
+| idioma = [[Idioma español|Español]]<ref name=asamblea85/>
+| otros_idiomas = [[Idioma quekchí|Q'eqch'i]] <br /> [[Idioma poqomchí|Poqomchí]]
+| fiestas_mayores = 29 de junio
+| superficie_post = <small>Antes de la fundación de [[Raxruhá]]</small>
+| población = 106 084
+| población_año = 2021
+| población_post = <ref name=INE>{{harvnb|Instituto Nacional de Estadística (INE)|2019|p=}}</ref>
+| clima = [[#Clima|tropical, Af]]
+| miembro_de = [http://anam.org.gt Asociación Nacional de Municipalidades de Guatemala]
+| página web = munichisec.gob.gt
+| mapa = {{map draw
+ | latitude  = 15.8874
+ | longitude = -90.3227
+ | height    = 300 
+ | width     = 300
+ | zoom      = 9,9
+ | geotype   = geoshape
+ | ids       = Q275980
+ | stroke    = 	#ED1C24
+ | text      =      Límite territorial de Chisec.<br>Pulse para ver mapa interactivo.
+ | stroke-width   = 2.2
+ | stroke-opacity = 1
+ | fill-opacity   = 0.2
+ | title          = Chisec
+}}
+| pie_mapa = Mapa interactivo de Chisec.
+| IDH año = 2018
+| IDH = 0,533
+| IDH puesto = [[Anexo:Departamentos de Guatemala por IDH |Puesto 318]]
+| IDH categoría = <span style="color:#E60026;">'''Bajo'''</span>
+}}
+'''Chisec''' (del [[Idioma quekchí|Q'ekch'i]], significa ''[[#Toponimia|hoja cortante y lacerante]]'')<ref name=escalante>{{harvnb|Escalante Herrera|2007|p=}}</ref> es un [[#Gobierno municipal|municipio]] del departamento de [[Departamento de Alta Verapaz|Alta Verapaz]] en la [[República de Guatemala]]. Ubicado en el norte del país, es parte de la [[#Franja Transversal del Norte|Franja Transversal del Norte]] desde 1970. El idioma más usado es el [[Idioma quekchí|q'eqchi']] pero el idioma oficial es el [[idioma español|español]] y se usa como segunda lengua; en una proporción mucho menor se habla el idioma Poqomchi.{{harvnp|Municipalidad de Chisec|s.f.|p=}} 
+
+En el municipio se cultiva la [[#Cultivo de palma africana|palma africana]] a gran escala y existen [[#Petróleo|pozos petroleros]] de la empresa francesa PERENCO en [[#Petróleo|Rubelsanto]].
+
+== Toponimia ==
+
+El [[topónimo]] «Chisec» proviene de las raíces [[idioma quekchí|Q'ekch'i]] Chi (español: «en») y Sec (español: "navajuela") y quierde decir «hoja cortante y lacerante».<ref name=escalante/>
+
+== Geografía física ==
+
+=== Clima ===
+
+La cabecera municipal de Chisec tiene clima tropical ([[Clasificación de Köppen]]: ''Af'').
+
+{{Weather box
+|location = Chisec
+|metric first = yes
+|single line = yes
+|Jan mean C = 23.1
+|Feb mean C = 24.0
+|Mar mean C = 25.6
+|Apr mean C = 26.8
+|May mean C = 27.2
+|Jun mean C = 27.3
+|Jul mean C = 26.5
+|Aug mean C = 26.5
+|Sep mean C = 26.3
+|Oct mean C = 25.8
+|Nov mean C = 24.7
+|Dec mean C = 23.1
+|year mean C = 
+|Jan high C = 27.8
+|Feb high C = 29.6
+|Mar high C = 31.0
+|Apr high C = 32.4
+|May high C = 32.4
+|Jun high C = 32.1
+|Jul high C = 30.8
+|Aug high C = 31.1
+|Sep high C = 30.8
+|Oct high C = 30.1
+|Nov high C = 29.1
+|Dec high C = 27.9
+|year high C = 
+|Jan low C = 18.4
+|Feb low C = 18.4
+|Mar low C = 20.2
+|Apr low C = 21.2
+|May low C = 22.1
+|Jun low C = 22.5
+|Jul low C = 22.2
+|Aug low C = 22.0
+|Sep low C = 21.9
+|Oct low C = 21.5
+|Nov low C = 20.3
+|Dec low C = 18.3
+|year low C = 
+|Jan precipitation mm = 152
+|Feb precipitation mm = 96
+|Mar precipitation mm = 98
+|Apr precipitation mm = 99
+|May precipitation mm = 214
+|Jun precipitation mm = 385
+|Jul precipitation mm = 387
+|Aug precipitation mm = 343
+|Sep precipitation mm = 427
+|Oct precipitation mm = 386
+|Nov precipitation mm = 252
+|Dec precipitation mm = 184
+|year precipitation mm =
+|source 1 = Climate-Data.org<ref name="Climate-Data.org">
+{{cita web|url=https://en.climate-data.org/location/54066/
+|título= Climate: Chisec
+|fechaacceso = 19 de agosto de 2015
+|website= Climate-Data.org|idioma=en}}</ref>
+}}
+
+=== Ubicación geográfica ===
+Chisec está en el departamento de [[Alta Verapaz]] y sus colindancias son: 
+* Norte: [[Sayaxché]], municipio del departamento de [[Petén]]
+* Noroeste: [[Benemérito de las Américas.(municipio)|Benemérito de las Américas]]
+* Sur: [[Cobán]] y [[San Pedro Carchá]], municipios del departamento de [[Alta Verapaz]].
+* Este: [[Raxruhá]], municipio del departamento de Alta Verapaz<ref name=segeplan>{{harvnb|SEGEPLAN|s.f.|p=}}</ref>
+* Oeste: 
+** [[Cobán]], municipio del departamento de Alta Verapaz 
+** [[Ixcán]], municipio del [[departamento de Quiché]]<ref name=segeplan/>
+{{Ubicación geográfica
+|Centro=Chisec
+|Norte=[[Sayaxché]]
+Noreste=[[Benemérito de las Américas (municipio)|Benemérito de las Américas]]
+|Sur=[[Cobán]]<br />[[San Pedro Carchá]]<ref name=segeplan/>
+|Este=[[Raxruhá]]<ref name=segeplan/>
+|Oeste=[[Cobán]]<br />[[Ixcán]]
+}}
+
+== Gobierno municipal ==
+{{AP|Municipios de Guatemala}}
+
+Los municipios se encuentran regulados en diversas leyes de la República, que establecen su forma de organización, lo relativo a la conformación de sus órganos administrativos y los tributos destinados para los mismos.  Aunque se trata de entidades autónomas, se encuentran sujetas a la legislación nacional. Las principales leyes que rigen a los municipios en Guatemala desde 1985 son:
+
+<div align=center>
+{| class="wikitable mw-collapsible" width=80% style='font-size:0.9em' 
+|+Principales leyes que rigen a los municipios de Guatemala
+|-style=color:white;
+!style="background:#659ec7;" align=center width=6%|N.º
+!style="background:#659ec7;" align=center|Ley
+!style="background:#659ec7;" align=center|Descripción
+|-
+!style=background:lemonchiffon;|1
+|[[Constitución de Guatemala|Constitución Política de la República de Guatemala]]
+|Tiene una regulación legal específica para los municipios en los artículos 253 al 262.
+|-
+!style=background:lemonchiffon;|2
+|Ley Electoral y de Partidos Políticos
+|Ley de carácter constitucional aplicable a los municipios en el tema de la conformación de sus autoridades electas. 
+|-
+!style=background:lemonchiffon;|3
+|Código Municipal
+|Decreto 12-2002 del [[Congreso de la República de Guatemala]]. Tiene la categoría de ley ordinaria y contiene preceptos generales aplicables a todos  los municipios, e inclusive contiene legislación referente a la creación de los municipios.                 
+|-
+!style=background:lemonchiffon;|4
+|Ley de Servicio Municipal
+|Decreto 1-87 del Congreso de la República de Guatemala. Regula las relaciones entra la municipalidad y los servidores públicos en materia laboral. Tiene su base constitucional en el artículo 262 de la constitución que ordena la emisión de la misma. 
+|-
+!style=background:lemonchiffon;|5
+|[[Ley General de Descentralización de Guatemala|Ley General de Descentralización]]
+|Decreto 14-2002 del Congreso de la República de Guatemala. Regula el deber constitucional del Estado, y por ende del municipio, de promover y aplicar la descentralización y desconcentración económica y administrativa. 
+|}
+</div>
+
+El gobierno de los municipios de Guatemala está a cargo de un Concejo Municipal<ref name=asamblea85/> mientras que el código municipal —que tiene carácter de ley ordinaria y contiene disposiciones que se aplican a todos los municipios de Guatemala— establece que «el concejo municipal es el órgano colegiado superior de deliberación y de decisión de los asuntos municipales […] y tiene su sede en la circunscripción de la cabecera municipal». Por último, el artículo 33 del mencionado código establece que «[le] corresponde con exclusividad al concejo municipal el ejercicio del gobierno del municipio».<ref name=congreso2012/>
+
+El concejo municipal se integra con el alcalde, los síndicos y concejales, electos directamente por sufragio universal y secreto para un período de cuatro años, pudiendo ser reelectos.<ref name=asamblea85>{{harvnb|Asamblea Constituyente|1985|p=}}</ref><ref name=congreso2012>{{harvnb|Congreso de Guatemala|2012|p=}}</ref>
+
+Existen también las Alcaldías Auxiliares, los Comités Comunitarios de Desarrollo (COCODE), el Comité Municipal del Desarrollo (COMUDE), las asociaciones culturales y las comisiones de trabajo. Los alcaldes auxiliares son elegidos por las comunidades de acuerdo a sus principios, valores, procedimientos y tradiciones, estos se reúnen con el alcalde municipal el primer domingo de cada mes. Los Comités Comunitarios de Desarrollo y el Consejo Municipal de Desarrollo tiene como función organizar y facilitar la participación de las comunidades priorizando necesidades y problemas.
+
+Los alcaldes que ha habido en el municipio son:
+
+* 2012-2016: Selvin Reyes{{harvnp|Prensa Libre|2011|p=}}
+
+== Historia ==
+{{AP|Historia de Guatemala}}
+
+{{caja de cita|alineación=center|ancho=70%|Palacio Nacional, Guatemala, 25 de septiembre de 1972.<br /> «Considerando que desde hace varios años existe desacuerdo entre los municipios de [[Santa María Cahabón]] y [[San Pedro Carchá]], ambos del departamento de Alta Verapaz, con relación al límite jurisdiccional, cuestión que también afecta al municipio de Chisec, cuyo territorio colinda con el área en disputa y en tal virtud, los linderos que procede a fijar, deberán comprender a los tres municipios.»}}
+
+El pueblo originalmente se llamaba «Espíritu Santo», y fue fundado en 1813, pero posteriormente se le cambió el nombre a «Chisec», que en dialecto q’eqchi significa «Navajuela»<ref group=Nota>Hoja lacerante cortante.</ref> Chisec no figuraba en la nómina de ciudades, villas y pueblos del reino de Guatemala, ni entre los pueblos en que la Asamblea Nacional Constituyente dividió el territorio del Estado de Guatemala, en decreto del 12 de septiembre de 1839.{{harvnp|Pineda Mont|1859|pp=452-453}} Pero el pueblo de Chisec aparece oficialmente como tal en la tabla de distritos territoriales, anexo al Decreto Gubernativo número 301 del 28 de diciembre de 1883. Como Chisec, ya aparece en la demarcación Política de la República de Guatemala, oficina de Estadística 1892. El Acuerdo Gubernativo que estableció el nuevo lindero parcial fue decretado el 25 de septiembre de 1972.
+
+El municipio de Chisec, fue fundado por grupos de diferentes orígenes, entre los que destacan personas de [[San Pedro Carchá]]. Su primer intendente municipal era de esa localidad y se llamaba José Caal. La comunicación a la cabecera departamental era bastante difícil ya que solo se contaba con un extravío que comunicaba al municipio de San Pedro Carcha vía Campur y posteriormente a la cabecera departamental de Cobán.
+
+=== Franja Transversal del Norte ===
+{{AP|Franja Transversal del Norte}}
+
+{{Mapa de localización|Guatemala
+| mapa_alternativo = Franja transversal guate relief.jpg
+| ancho   = 250
+| alineación   = right
+| pie = Ubicación de Chisec en la [[Franja Transversal del Norte]]
+| alt     = Mapa de Guatemala y de la Franja Transversal del Norte
+| etiqueta   = Chisec
+| tamaño_etiqueta = 90 
+| posición   = right
+| color_etiqueta = white <!-- naranja -->
+| marca       = Orange_pog.svg
+| lat_gra = 
+| lon_gra = 
+}}
+
+Tras la contrarrevolución de 1954, el gobierno guatemalteco creó el Consejo de Planificación Económica (CNPE) y empezó a utilizar estrategias de libre mercado, asesorado por el [[Banco Mundial]] y la Administración de Cooperación Internacional (ICA) del gobierno de los Estados Unidos.{{sfn|Solano|2012|p=3}}  El CNPE y la ICA creó la Dirección General de Asuntos Agrarios (DGAA) la cual se encargó de desmantelar y anular los efectos del [[Decreto 900]] de Reforma Agragia del gobierno de [[Jacobo Árbenz Guzmán]].{{sfn|Solano|2012|p=4}}  La DGAA se encargó de la faja geográfica que colindaba con el límite departamental de Petén y las fronteras de Belice, Honduras y México, y que con el tiempo se llamaría Franja Transversal del Norte (FTN).
+
+El primer proyecto colonizador en la FTN fue el de Sebol-Chinajá, en [[Alta Verapaz]].  [[Fray Bartolomé de las Casas (Guatemala)|Sebol]], en ese entonces, era considerado como un punto estratégico y vía fluvial a través del río Cancuén, que comunicaba con Petén hasta el río Usumacinta en la frontera con México y la única carretera que existía era la de terracería que construyó el presidente [[Lázaro Chacón]] en 1928.{{sfn|Solano|2012|p=11}}  En 1958, durante el gobierno del general [[Miguel Ydígoras Fuentes]] el Banco Interamericano de Desarrollo (BID) financió proyectos de infraestructura en Sebol.{{sfn|Solano|2012|p=4}}<ref group=Nota>Sebol finalmente adoptó el nombre de «Fray Bartolomé de las Casas», municipio creado en 1983 en [[Alta Verapaz]].</ref>  En 1960, el entonces capitán del [[Fuerzas Armadas de Guatemala|Ejército de Guatemala]] [[Fernando Romeo Lucas García]] heredó las fincas Saquixquib y Punta de Boloncó al nororiente de Sebol, [[Alta Verapaz]], con una extensión de 15 caballerías cada una.  En 1963 compró la finca «San Fernando» El Palmar de Sejux con una extensión de 8 caballerías, y finalmente cmpró la finca «Sepur», cercana a «San Fernando», con una extensión de 18 caballerías.{{sfn|Solano|2012|p=10}}  Durante estos años fue diputado en el congreso de Guatemala y cabildeó para impulsar la inversión en esa zona del país.{{sfn|Solano|2012|p=10}}
+
+{{caja de cita|alineación=izquierda|«Se declara de interés público y de urgencia nacional, el establecimiento de Zonas de Desarrollo Agrario en el área comprendida, dentro de los municipios: San Ana Huista, San Antonio Huista, Nentón, Jacaltenango, [[San Mateo Ixcatán]], y Santa Cruz Barillas en [[Huehuetenango]]; [[Chajul]] y San Miguel Uspantán en el Quiché; [[Cobán]], Chisec, [[San Pedro Carchá]], Lanquín, Senahú, Cahabón y Chahal, en Alta Verapaz y la totalidad del departamento de [[Izabal]].»|Decreto 60-70, artículo 1o.{{sfn|Solano|2012|p=15}}}}
+
+En esos años, la importancia de la región estaba en la ganadería, la explotación de madera preciosas para exportación y la riqueza arqueológica.  Contratos madereros se dieron a empresas trasnacionales, como la Murphy Pacific Corporation de California, que invirtió 30 millones de dólares para la colonización del sur de Petén y Alta Verapaz, y formó la Compañía Impulsadora del Norte, S.A.  La colonización del área se hizo por medio de un proceso por el que se otorgaban tierras en zonas inhóspitas de la FTN a campesinos.{{sfn|Solano|2012|p=12}}
+
+En 1962, la DGAA se convirtió en el Instituto Nacional de Transformación Agraria (INTA), por el decreto 1551 que creó la ley de Transformación Agraria.  En 1964, el INTA definió la geografía de la FTN como la parte norte de los departamentos de [[Huehuetenango]], [[Departamento de Quiché|Quiché]], [[Alta Verapaz]] e [[Izabal]] y ese mismo año sacerdotes de la orden [[Maryknoll]] y de la Orden del Sagrado Corazón iniciaron el primer proceso de colonización, junto con el INTA, llevando a pobladores de [[Huehuetenango]] al sector de [[Ixcán]] en [[Departamento de Quiché|Quiché]].{{sfn|Solano|2012|p=13}}
+
+La Franja Transversal del Norte fue creada oficialmente durante el gobierno del general [[Carlos Arana Osorio]] en 1970, mediante el Decreto 60-70 en el [[Congreso de la República de Guatemala|Congreso de la República]], para el establecimiento de desarrollo agrario.<ref name=wikiguate>{{cita web|url=http://wikiguate.com.gt/wiki/Franja_Transversal_del_Norte|publicación=Wikiguate|título=Franja Transversal del Norte|fechaacceso=30 de octubre de 2014|urlarchivo=https://web.archive.org/web/20141031093752/http://wikiguate.com.gt/wiki/Franja_Transversal_del_Norte|fechaarchivo=31 de octubre de 2014}}</ref>
+
+=== Masacre de Chisec en 1995 ===
+
+La comunidad Aurora 8 de Octubre se encuentra entre los municipios de Chisec y Cantabal] en octubre de 1994 refugiados retornados<ref group=Nota>445 venían de campamentos en Quintana Roo, México, y 558 de una comunidad de refugiados en el norte del Quiché, llamada Victoria 20 de Enero</ref> llegaron a la finca Xama'n,{{harvnp|Guerrero|1995|p=Introducción}} finca había sido propiedad del expresidente general [[Kjell Eugenio Laugerud]].{{harvnp|Solano|2012|p=3-24}} Los refugiados negociaron su llegada con las cuarenta familias que habitaban la finca y la compartieron con ellas. En su mayoría, los refugiados de la cooperativa son de los pueblos Q'ekch'í, Mam, Kajobal e Ixil; los miembros de la cooperativa Aurora 8 de Octubre huyeron de la violencia política que azotó Guatemala en los años 80. De acuerdo con el propio ejército, en aquellos años la estrategia contrainsurgente de "tierra arrasada" llevó a la destrucción de 440 aldeas.<ref group=Nota>Esa época dejó más de un millón de desplazados y 200 mil refugiados. La gran mayoría de los que huyeron regresaron más tarde y en diferentes momentos políticos a sus lugares de origen, pero 45 mil se quedaron en campamentos de refugiados en México.</ref> 
+
+El 5 de octubre de 1995, a mediodía, una patrulla del ejército entró a los terrenos de la cooperativa y luego de breves palabras con los pobladores, abrió fuego, matando ahí mismo a 10 personas dos mujeres, dos niños y seis hombres e hiriendo por lo menos a otras 13. La masacre fue la más grave ocurrida en el país desde la matanza de 13 indígenas en [[Santiago Atitlán]], [[Sololá]], en 1990.{{harvnp|Guerrero|1995|p=Introducción}}
+
+Aunque las versiones sobre la masacre varían, todas coinciden en los elementos más importantes: 26 soldados entraron en los terrenos pertenecientes a la cooperativa y luego de un intercambio de palabras empezaron a disparar. El 8 de octubre, el ministro de Defensa, general Mario René Enríquez, renunció de su cargo y el presidente [[Ramiro de León Carpio]] nombró en su lugar al general Marco Antonio González Taracena, que fungía como jefe del Estado Mayor de la Defensa Nacional y era el representante del ejército en las negociaciones de paz.
+
+Hasta el día de la masacre, Aurora 8 de Octubre, con su población de mil trescientas personas, era considerada como una de las comunidades de refugiados más tranquilas. No había conflictos con comunidades vecinas ni presencia de grupos armados. 
+
+Fuentes oficiales que se consideraban de la línea modernizante del ejército consideraron que la matanza de Chisec fue el producto de una política equivocada de la línea dura del ejército quienes no estaban de acuerdo con el proceso de paz y apoyaban a los agroexportadores en sus críticas, ya que ellos mismos eran parte del grupo agroexportador y tenían intereses económicos muy poderosos en la [[Franja Transversal del Norte]], de la que Chisec es parte.{{harvnp|Guerrero|1995|p=Ejército preocupado}}
+
+La decisión del Presidente de aceptar la renuncia de su Ministro de Defensa identificado con los moderados en el ejército obedeció a la necesidad que tenía el gobierno en ese momento de mostrar la voluntad de hacer cambios después de la conmoción nacional e internacional causada por la tragedia de Chisec.<ref group=Nota>El sucesor de Enríquez, el general González Teracena, era considerado también de línea institucionalista del Ejército.</ref>{{harvnp|Guerrero|1995|p=Ejército preocupado}}
+
+El 8 de octubre, la Premio Nobel de la Paz, [[Rigoberta Menchú]], anunció que los pobladores de la cooperativa donde ocurrió la matanza la han nombrado como acusadora formal ante los tribunales de justicia que van a conocer del caso. El suceso conmovió tanto al país que durante la noche del 9 de octubre abundaron los rumores de un posible golpe de Estado y las radios informaban sobre movimientos de tanques en la capital y en la carretera al Atlántico.{{harvnp|Guerrero|1995|p=Su futuro es incerto}}
+
+== Idioma ==
+
+La mayoría habla el idioma Qeqchi; y en menor proporción se utiliza el Poqomchi<ref group=Nota>Aunque quienes lo hablan se ven obligados a aprender el Qeqchi</ref> y el castellano como. Otros idiomas minoritarios son: Achi, Quiche, Man, que lo hablan personas que se trasladaron para esta región durante la [[guerra civil de Guatemala]].
+
+== Ferias ==
+
+En el municipio de Chisec, se realizan dos ferias. La primera se llama Feria Campesina que se realiza en la segunda semana de diciembre de cada año, la organizan grupos de campesinos que tienen diversidad de cultivos en sus parcelas y en honor al mercado campesino que se realiza los días sábados, donde los mismos campesinos ofrecen sus productos frescos, sin ingredientes químicos, en estas fiestas se llevan a cabo varias actividades en honor a los pueblos indígenas y la soberanía alimentaria. Y la segunda feria es la patronal que se realiza en la segunda semana del mes de junio, el principal organizador es la municipalidad de Chisec, donde gastan unos setenta y cinco mil quetzales. Durante la celebración de la feria patronal se pueden observar actividades culturales y deportivos, entre otras.
+
+== Economía ==
+
+=== Petróleo ===
+
+[[Archivo:Guatepetroleo.jpg|miniaturadeimagen|200px|Reservas petroleras de Guatemala.{{harvnp|Citation Resources|2013|p=}}]]
+
+En 1971 se desalojó a los indígenas q'eqchí's del área de Cancuén, en el sur de Petén y al norte de Chisec, porque se consideraba que poseía petróleo; se utilizó al ejército para desalojar a veinticuatro aldeas del área.{{harvnp|Solano|2012|p=11}}
+
+Desde 1974, se venía explotando crudo comercialmente en las cercanías de la FTN a raíz de los descubrimientos realizados por las petroleras Basic Resources y Shenandoah Oil, que operaban conjuntamente en el campo petrolero de Rubelsanto, [[Alta Verapaz]]. En 1976, cuando el presidente Laugerud García llegó a visitar la cooperativa Mayalán en el sector de [[Ixcán]], Quiché —el cual se había poblado apenas diez años antes— dijo:  «Mayalán está asentada en la cima del oro», dejando entrever que la Franja Transversal del Norte ya no sería dedicada a la agricultura ni al movimiento cooperativista, sino que sería utilizada por objetivos estratégicos de explotación de recursos naturales.{{harvnp|Solano|2012|p=18}} Tras esa visita presidencial, ambas compañías petroleras realizaron exploraciones en tierras de Xalbal, muy cerca de Mayalán en el [[Ixcán]], donde perforaron el pozo «San Lucas» con resultados infructuosos. Esas exploraciones, que abrieron el camino para futuros experimentos petroleros en Ixcán, y el resto de la FTN, también fueron el principal motivo para la construcción de la carretera de terracería que recorre la Franja. Shenandoah Oil, el Instituto Nacional de Transformación Agraria (INTA) y el Batallón de Ingenieros del Ejército se coordinaron para construir ese corredor entre 1975 y 1979, lo que a la postre permitió que políticos, militares y empresarios poderosos de la época se adueñaran de muchas de las tierras con riqueza maderera y potencial petrolero.{{harvnp|Solano|2012|p=19}}
+
+Altos oficiales guatemaltecos se convirtieron entonces en grandes terratenientes e inversionistas aprovechando las políticas de traslado de campesinos, acceso a información privilegiada, ampliación del crédito público y grandes proyectos de desarrollo; el Ejército entró en el mundo de los negocios con el Banco del Ejército, fondos de pensión y otros.{{harvnp|Solano|2012|p=24}}
+
+=== Cultivo de palma africana ===
+
+[[Archivo:Guatemalapalma2014.JPG|200px|miniaturadeimagen|Áreas de cultivo de palma africana en Guatemala en 2014.{{harvnp|Solano|15 de julio de 2015|p=6}}]]
+
+Satisfacer la demanda de aceites y grasas comestibles del mercado interno y parte del mercado externo ayuda a explicar por qué el aceite de palma ganó terreno desplazando otros aceites, lo que ha conducido al surgimiento de nuevas empresas asociadas a grandes capitales, en una nueva fase inversionista que se observa particularmente en los territorios que conforman la [[Franja Transversal del Norte]]. Convertirse en uno de los principales países agroexportadores de aceite de palma es el objetivo que ha motivado que las empresas palmeras se hayan enfrascado en una etapa de creciente producción, pese a la tendencia decreciente del precio internacional de ese aceite. El área de mayor dinamismo se observa en los municipios de Chisec y [[Cobán]], Alta Verapaz; [[Ixcán]], Quiché, y [[Sayaxché]], Petén, donde opera Palmas del Ixcán, S.A. (PALIX), con plantaciones propias y productores independientes. Algo parecido ocurre en los municipios de [[Fray Bartolomé de las Casas (Guatemala)|Fray Bartolomé de Las Casas]] y [[Chahal]], Alta Verapaz; y [[Livingston (Izabal)]], Izabal; y [[San Luis (Petén)|San Luis]], [[Petén]], donde la empresa Naturaceites se ha posicionado.<ref name=enfoque/>
+
+La lógica para introducir la palma africana proviene de la sustitución gradual de las plantaciones de algodón en la zona. ltivo del algodón. A partir de la década de 1990 uno de los principales productores de algodón de Guatemala, la familia Molina Espinoza, comenzó a reconvertir zonas algodoneras y ganaderas de su propiedad, en plantaciones de palma africana. Con la destrucción de plantaciones bananeras en [[Izaba]]  debido a huracanes, otros grupos empresariales como Agroamérica, de la familia Bolaños Valle, y Naturaceites -antes INDESA-, de la familia Maegli-Müeller, sustituyeron parte del cultivo de banano por el de palma africana.<ref name=enfoque>{{harvnb|Solano|15 de julio de 2015|p=1}}</ref> Los inversionistas en palma africana ampliaron sus plantaciones desde la costa sur hacia el norte del país, adquiriendo tierras en la Franja Transversal del Norte y [[Petén]]; para 2014 se estimó que el área sembrada de palma africana tenía una extensión de ciento treinta mil hectáreas.{{harvnp|Solano|15 de julio de 2015|p=5}}  El proyecto se fundó exclusivamente para la producción de agrodiésel de palma, el cual se vendería como materia prima bajo contrato a Green Earth Fuels (GEF), para su procesamiento y posterior transformación en plantas en los [[Estados Unidos]].{{harvnp|Solano|15 de julio de 2015|p=8}}
+
+La empresa Green Earth Fuels se caracteriza por ser una productora de agrocombustibles de materias primas agrícolas diferentes; originalemtne, en la empresa PALIX los únicos socios eran GEF (99.999%) y el empresario guatemalteco José Miguel Enrique Arriola Fuxet (0.001%) con un capital inicial de US$29.4 millones. Pero en 2010 Arriola Fuxet se retiró como socio quedando la empresa completamente en manos de estadounidenses. El proyecto se perfilaba como una mega inversión en agrodiésel de palma, que aprovecharía las ventajas que le representaba el asfaltado de la carretera de la FTN, que estaba en marcha desde el gobierno de [[Óscar Berger Perdomo]] y que la conectaría con el puerto de [[Santo Tomás de Castilla]].{{harvnp|Solano|15 de julio de 2015|p=13}}  Pero la caída de los precios del aceite de palma y la prohibición en Estados Unidos del uso de aceite de palma para la producción de agrodiésel -debido a la presión de los productores de maíz de ese país- condujeron a que GEF se retirara del proyecto.<ref name=enfoque14>{{harvnb|Solano|15 de julio de 2015|p=14}}</ref> 
+
+Tras el retiro de GEF PALIX pasó a ser parte del grupo Tecún de la familia Maegli-Müeller, quienes también poseen la empresa Naturaceites que tiene plantaciones de palma africana en [[Fray Bartolomé de las Casas (Guatemala)|Fray Bartolomé de las Casas]] y [[Chahal]] en Alta Verapaz, en [[El Estor]] y [[Livingston (Izabal)|Livingston]], [[Izabal]] y en [[San Luis (Petén)|San Luis]], [[Petén]].<ref name=enfoque14/> En 2014, en la frontera entre Guatemala y México delimitada por el río Salinas, PALIX tiene sus una de sus plantaciones en la comunidad de La Soledad; en el área de Ixcán hay productores independientes de palma en la región bordeada por el [[río Chixoy]] y la frontera con [[México]], en donde se encuentran las comunidades de Vista Hermosa, Providencia, Santa Cruz y Laz Flores; finalmente, en el área petrolera de [[Rubelsanto]] - por donde pasa la carretera de la FTN- alberga a pequeños productores independientes y se encuentran las grandes plantaciones de PALIX y de otras empresas asociadas.<ref name=enfoque17>{{harvnb|Solano|20 de julio de 2015|p=17}}</ref>  Existen denuncias por contaminación en el río El Jute que pasa por la finca Chiriviscal en la carretera de la FTN.<ref name=enfoque17/>
+
+== Cultura y educación ==
+{{VT|Educación en Guatemala}}
+
+* Comida típica: Es el denominado Caldo de Chunto o Kak ik, elaborado por mujeres de la región, éste es acompañado de tamalitos de masa los tradicionales pochitos, sin dejar atrás la bebida el cotizado boj, bebida hecha con jugo de caña, el cacao, el pinol.
+* Traje típico: Chisec adoptó el mismo traje típico de San Pedro Carcha que consiste en una enagua de color negro, con franjas blancas, güipil color blanco y perrajes, así como en las trenzas usan el respectivo tupuy de color rojo combinado con amarillo.
+
+=== Himno Oficial ===
+
+<div align=center style='font-size:0.9em'>
+{|class="mw-collapsible mw-collapsed wikitable" width=40%
+|+style="color:black;"|Canto a Chisec<br/>Letra y Música: Genner Isaac Lima Reyes<ref>{{cita web|autor=Lima Reyes, Genner Isaac|título=Video Canto a Chisec|publicación=YouTube|url=http://www.youtube.com/watch?v=kUfzP7_XHNY|fechaacceso=2 de noviembre de 2014|ref=harv}}</ref>
+|-
+|<div align=center>
+I<br /><br />
+Quiero contarles amigos<br />
+de mi tierra de promisión<br />
+Chisec entre navajuelas<br />
+tierra de gran corazón.<br /><br />
+CORO<br /><br />
+Mi Chisec <br />
+está llena de riquezas<br />
+el oro verde y el oro negro<br />
+es la tierra de ganaderos<br />
+y también del agricultor.<br /><br />
+II<br /><br />
+Chisec tiene gran riqueza<br />
+porque Dios lo ha bendecido.<br />
+Pedacito de mi Guatemala,<br />
+pero grande de corazón.<br /><br /></center>
+|<div align=center>
+CORO<br /><br />
+Mi Chisec<br />
+está llena de riquezas,<br />
+sus cuevas y sus montañas,<br />
+sus ríos y sus lagunas,<br />
+lo convierten en único pueblo.<br /><br />
+III<br /><br />
+Sus hombres, mujeres y niños,<br />
+son personas trabajadoras,<br />
+soñadoras de un mejor futuro;<br />
+por eso trabajan de corazón.<br /><br />
+CORO<br /><br />
+Mi Chisec<br />
+está llena de riquezas.<br />
+Cuando vengan a visitarnos<br />
+verán que no estoy mintiendo,<br />
+porque Chisec,<br />
+es tierra de promisión.<br /></div>
+|}
+</div>
+
+En el municipio existen grupos marimbisticos que han logrado sobresalir en el ámbito musical y una de ellas es la Marimba Xrabin Chisec cuyo nombre en el idioma Q'eqchi' significa «La hija de Chisec».  Esta agrupación musical compuso la pieza «Las Cumbres de Chisec», que es una composición melódica para marimba, sin letra.
+
+=== Centros educativos ===
+
+En el municipio existen centros educativos para todos los niveles; he aquí el listado de los mismos:
+
+<div align=center style='font-size:0.9em'>
+{|class="mw-collapsible mw-collapsed wikitable" width=40%
+|+style="color:black;"|Centro educativos en Chisec
+|-style="color:white;"
+!style="background:blue;" align=center|Nivel
+!style="background:blue;" align=center|Nombre
+!style="background:blue;" align=center|Jornada
+|-
+!style="background:lemonchiffon;"|PrePrimaria
+|Escuela de Parvulos «Vilma Coy Duering»||Matutina
+|-
+!style="background:lemonchiffon;" rowspan=5|Primaria
+|Escuela Oficial Urbana Mixta «30 de Junio»||Matutina y vespertina
+|-
+|Colegio Galilea||Matutina
+|-
+|Escuela Oficial Urbana Mixta «San Juan Bosco»||Matutina
+|-
+|Escuela Oficial Urbana Mixta «Barrio Nazareth»||Matutina
+|-
+|INEGUA Educación por Madurez||Nocturna
+|-
+!style="background:lemonchiffon;" rowspan=5|Básico
+|Instituto de Educación Básica||Vespertina
+|-
+|Colegio Galilea||Matutina
+|-
+|INEGUA Educación por Madurez||Nocturna
+|-
+|Liceo Universitario del Norte||Matutina 
+|-
+|Asdechi||
+|-
+!style="background:lemonchiffon;" rowspan=7|Diversificado
+|-
+|Colegio «Nuevo Chisec» (Magisterio)||
+|-
+|Liceo Universitario del Norte (Bachillerato, Perito Contador)||
+|-
+|Escuela Normal Bilingüe «Intercultural» (Magisterio Gratuito)||
+|-
+|Asdechi (Bachillerato, Perito Contador)||
+|-
+|Colegio Galilea (Bachilleratos)||Matutina
+|-
+|INEGUA (Bachillerato, Perito Contador, Secretariado)||Nocturna
+|}
+</div>
+
+La educación superior en el municipio es impartida por tres universidades:
+# [[Universidad San Carlos de Guatemala]]
+# Universidad Panamericana
+# Universidad Rural de Guatemala
+
+== Véase también ==
+{{Portal|Guatemala|Geografía}}
+* [[Cobán]]
+* [[Elecciones municipales de Guatemala de 2015]]
+* [[Fray Bartolomé de las Casas (Municipio)|Fray Bartolomé de las Casas]]
+* [[Historia Territorial de Guatemala]]
+* [[Organización territorial de Guatemala]]
+
+== Notas ==
+{{listaref|group=Nota}}
+
+== Referencias ==
+{{listaref|2}}
+
+== Bibliografía ==
+{{Refcomienza}}
+* {{cita libro|autor=Asamblea Constituyente|título=Constitución Política de la República de Guatemala|año=1985|editorial=Gobierno de Guatemala|ubicación=Guatemala|url=http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf|urlarchivo=https://web.archive.org/web/20160202083342/http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf|fechaarchivo=2 de febrero de 2016}}
+* {{cita publicación|autor=Citation Resources|año=2013|url=http://www.oilcouncil.com/sites/default/files/Citation%20Mike%20Realini_0.pdf|título=Guatemalan Oil Production and Exploration|idioma=en|publicación=Oil Council|urlarchivo=https://web.archive.org/web/20150218010548/http://www.oilcouncil.com/sites/default/files/Citation%20Mike%20Realini_0.pdf|fechaarchivo=18 de febrero de 2015|ubicación=Perth, Washington, Estados Unidos}}
+* {{cita libro|autor=Congreso de Guatemala|título=Código Municipal de Guatemala|año=2012|editorial=Gobierno de Guatemala|ubicación=Guatemala|url=http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf|urlarchivo=https://web.archive.org/web/20150807042527/http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf|fechaarchivo=7 de agosto de 2015}}
+* {{cita web|apellido=Escalante Herrera|nombre=Marco Antonio|título=Breve información sobre Chisec|url=http://www.pbase.com/m_escalante_herrera/chisec|sitioweb=Pbase.com|ubicación=Guatemala|año=2007|fechaacceso=2011}}
+* {{cita publicación|url=http://www.envio.org.ni/articulo/168|publicación=Revista Envío|título=Masacre en Chisec; la sangre se repite|nombre=Gonzalo|apellido=Guerrero|año=1995|número=165|fechaacceso=2 de noviembre de 2014}}
+* {{cita libro|apellido=IEPALA|título=Guatemala, un futuro próximo|url=http://books.google.com/books?id=1xFMbBqjzmsC&printsec=frontcover#v=onepage&q&f=false|editorial=Artigrafía|ubicación=Madrid, España|editor=Instituto de Estudios Políticos para América Latina y Africa|año=1980|isbn=9788485436101}}
+* {{Cita web|autor = Instituto Nacional de Estadística (INE)|título = XI Censo Nacional de Poblacion y VI de Habitación (Censo 2002)|año = 2002|ubicación = Guatemala|sitioweb = Ine.gob.gt|url = http://www.ine.gob.gt/index.php?option=com_content&view=article&id=75%3Acenso2002&catid=42%3Ademografiaypoblacion&Itemid=69|fechaacceso = 2008|urlarchivo = https://web.archive.org/web/20080824044850/http://www.ine.gob.gt/index.php?option=com_content&view=article&id=75%3Acenso2002&catid=42%3Ademografiaypoblacion&Itemid=69|fechaarchivo = 24 de agosto de 2008}}
+* {{cita publicación|apellido=Justice Republic|título=Entrevista completa Ríos Montt: Yo controlo al ejército|publicación=YouTube|año=2013|fechaacceso=22 de octubre de 2014|url=http://www.youtube.com/watch?v=PT2tYCvIgUI}}
+* {{cita web|autor=Municipalidad de Chisec|fecha=s.f.|url=http://munichisec.gob.gt/index.php?option=com_content&view=article&id=48&Itemid=61|publicación=Municipalidad de Chisec, sitio web oficial|título=Monografía del municipio|fechaacceso=28 de noviembre de 2012|urlarchivo=https://web.archive.org/web/20110921134516/http://munichisec.gob.gt/index.php?option=com_content&view=article&id=48&Itemid=61|fechaarchivo=21 de septiembre de 2011}}
+* {{cita libro|apellido=Pineda Mont|nombre=Manuel|título=Recopilación de las leyes de Guatemala, compuesta y arreglada a virtud de orden especial del Gobierno Supremo de la República|volumen=Tomo I|año=1859|editorial=Imprenta de la Paz|url=https://archive.org/details/recopilaciondela01manuguat}}
+* {{cita publicación|autor=Prensa Libre|url=http://www.prensalibre.com/departamental/Ganadores-poder-local_PREFIL20110913_0002.pdf| título=Ganadores del poder local en las elecciones de Guatemala 2011|año=2011|ubicación=Guatemala|publicación=[[Prensa Libre]]|fechaacceso=13 de septiembre de 2011|urlarchivo=https://web.archive.org/web/20111201004550/http://prensalibre.com/departamental/Ganadores-poder-local_PREFIL20110913_0002.pdf|fechaarchivo=1 de diciembre de 2011}}
+* {{cita web|autor=SEGEPLAN|título=Municipios de Alta Verapaz, Guatemala|url=http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=2:alta-verapaz&Itemid=333|ubicación=Guatemala|website=Secretaría General de Planificación y Programación de la Presidencia de la República|año=s.f.|fechaacceso=30 de junio de 2015|urlarchivo=https://web.archive.org/web/20150630153430/http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=2%3Aalta-verapaz&Itemid=333|fechaarchivo=30 de junio de 2015}}
+* {{cita libro|url=http://www.albedrio.org/htm/documentos/EstudioFranjaTransversalNorteCEDFOG.pdf|apellido=Solano|nombre=Luis|título=Contextualización histórica de la Franja Transversal del Norte (FTN)|editorial=Centro de Estudios y Documentación de la Frontera Occidental de Guatemala, CEDFOG|año=2012|fechaacceso=31 de octubre de 2014|ref=harv|urlarchivo=https://web.archive.org/web/20141113172058/http://www.albedrio.org/htm/documentos/EstudioFranjaTransversalNorteCEDFOG.pdf|fechaarchivo=31 de noviembre de 2014}}
+* {{cita publicación|apellido=Solano|nombre=Luis|máscaraautor=1|url=http://www.albedrio.org/htm/otrosdocs/comunicados/EnfoqueNo.36-PalmaafricanaFTN-2015.pdf |título=Palma Africana y empresas se expanden aceleradamente a lo largo de la FTN|publicación=Revista Enfoque|número=36|fecha=15 de julio de 2015|fechaacceso=19 de julio de 2015|ubicación=Guatemala|urlarchivo=https://web.archive.org/web/20150720045208/http://www.albedrio.org/htm/otrosdocs/comunicados/EnfoqueNo.36-PalmaafricanaFTN-2015.pdf|fechaarchivo=19 de julio de 2015}}
+{{Reftermina}}
+
+== Enlaces externos ==
+* [http://www.munichisec.gob.gt/ Portal Oficial de la Municipalidad de Chisec, Alta Verapaz.]
+* {{cita web|url=http://www.chimaltenango.org/departamentos/region-norte/alta-verapaz/chisec|publicación=Chimaltenango en línea|título=Información Completa sobre Chisec|urlarchivo=https://web.archive.org/web/20140523144050/http://www.chimaltenango.org/departamentos/region-norte/alta-verapaz/chisec|fechaarchivo=23 de mayo de 2014}}
+* [https://web.archive.org/web/20130820131611/http://www.michisec.jimdo.com/ Esta es mi Tierra]
+* [https://web.archive.org/web/20050820163846/http://visitchisec.com/ Visita Chisec]
+* [https://web.archive.org/web/20120817000222/http://www.puertamundomaya.com.gt/ Comunidad Eco-turística de Chisec]
+* [https://web.archive.org/web/20130820131617/http://www.chisecmusic.jimdo.com/ Chisec Music]
+
+{{Departamento de Alta Verapaz}}
+{{Control de autoridades}}
+[[Categoría:Municipios de Alta Verapaz]]
+[[Categoría:Franja Transversal del Norte de Guatemala]]

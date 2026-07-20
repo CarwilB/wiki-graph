@@ -1,0 +1,72 @@
+{{Info/Município do Brasil
+<!-- GeoID=2209906 -->
+<!-- Cabeçalho -->
+| nome                 = São João da Serra
+| foto                 = Igreja matriz de São João da Serra (Piauí) (2).jpg
+| leg_foto             = Arco monumental na praça da igreja matriz de São João da Serra.
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = 
+| bandeira             = 
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = <!-- a Cidade de São João da Serra- (letra)Dr. João Batista Cardoso (Musica)Prof. Milton nascimento (arranjo)Prof. Ney Izidio -->
+| aniversário          ={{dtlink|19|12|1963|idade}}
+| fundação             ={{nowrap|{{dtlink|19|12|1963|idade}}}}
+| gentílico            =serrajoense
+| lema                 = 
+| prefeito             = João Francisco Gomes da Rocha
+| partido              = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Piaui Municip SaoJoaodaSerra.svg
+| latP                 = S | latG = 05 | latM = 30 | latS = 50
+| lonP                 = O | lonG = 41 | lonM = 53 | lonS = 56
+| estado               = Piauí
+| mesorregião          = [[Mesorregião do Centro-Norte Piauiense|Centro-Norte Piauiense]]
+| data_mesorregião     = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Campo Maior|Campo Maior]]
+| data_microrregião    = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Novo Santo Antônio (Piauí)|Novo Santo Antônio]], [[Castelo do Piauí]], [[São Miguel do Tapuio]] e [[Alto Longá]] <!-- Sentido horário, começando pelo norte. -->
+| dist_capital         = 120
+<!-- Características geográficas -->
+| área                 = 962.258
+| área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 6157
+| data_pop             = [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude             = 
+| clima                = ''tropical típico''
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.549 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib                  = {{formatnum:21076.809}} mil
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 3071.08
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+'''São João da Serra''' é um [[Município (Brasil)|município brasileiro]] no estado do [[Piauí]], mais especificamente, na microrregião de [[Microrregião de Campo Maior|Campo Maior]]. A cidade está a uma altitude de {{fmtn|155|m}}.
+
+== História ==
+Emancipado em {{DataExt|19|12|1963}}, após o desmembramento de [[Castelo do Piauí]], o município conta com uma área total de {{fmtn|962,2|km²}}. Com apenas {{fmtn|6760}} habitantes, apresenta uma [[densidade demográfica]] de {{fmtn|7,05|h/km²}}.
+
+De 14 a 24 de junho ocorre os festejos em nome de [[João Batista|São João Batista]] padroeiro da cidade. As atrações turísticas da região são a Cachoeira do Contente, a três quilômetros da sede  e a Barragem do Rio Poty, na divisa com [[Alto Longá]].
+== Galeria ==
+<gallery>
+Igreja matriz de São João da Serra (Piauí) bis (2).jpg|Edifício da Paróquia São João Batista, a igreja matriz de São João da Serra.
+Edifício da Paróquia São João Batista (São João da Serra-PI).jpg|Cruzeiro da praça.
+</gallery>
+{{Referências}}
+
+==Ligações externas==
+* [http://www.saojoaodaserra.pi.gov.br/ Página da Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Piauí}}
+{{Municípios do Piauí}}
+{{Carnaubais do Piauí}}
+{{Portal3|Piauí}}
+[[Categoria:Carnaubais (Piauí)]]
+{{DEFAULTSORT:Sao Joao Serra (Piaui)}}
+[[Categoria:Municípios do Piauí|Sao joao serra]]
+[[Categoria:Fundações no Piauí em 1963]]

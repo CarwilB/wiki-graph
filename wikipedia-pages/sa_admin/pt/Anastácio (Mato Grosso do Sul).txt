@@ -1,0 +1,605 @@
+{{Mais notas|data=janeiro de 2022}}
+{{Info/Município do Brasil
+<!-- GeoID=5000708 -->
+<!-- Cabeçalho -->| nome = Anastácio
+| apelido = <!-- Dados gerais -->
+| foto = 
+| bandeira = Band_Anastacio.png
+| brasão = 
+| link_hino = 
+| aniversário = 8 de maio
+| fundação = {{nowrap|{{dtlink|18|3|1964|idade}}}}
+| emancipação = {{Dtlink|8|5|1965|idade}}<br>- de [[Aquidauana]]
+| gentílico = [[wikt:anastaciano|anastaciano/anastaciana]]
+| lema = 
+| padroeiro = [[Nossa Senhora de Lourdes]]
+| prefeito = Manoel Aparecido da Silva
+| partido = [[Partido da Social Democracia Brasileira|PSDB]]
+| fim_mandato = 2028
+| CEP = 79210-000
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Anastacio location map.svg
+| estado = Mato Grosso do Sul
+| latP = S
+| latG = 20
+| latM = 29
+| latS = 02
+| lonP = O
+| lonG = 55
+| lonM = 48
+| lonS = 25
+| mesorregião = [[Mesorregião dos Pantanais Sul-Mato-Grossenses|Pantanais Sul-Mato-Grossenses]]
+| microrregião = [[Microrregião de Aquidauana|Aquidauana]]
+| região_metropolitana = 
+| vizinhos = [[Aquidauana]], [[Bonito (Mato Grosso do Sul)|Bonito]], [[Dois Irmãos do Buriti]], [[Miranda]], [[Maracajú]], [[Nioaque]].
+| dist_capital = 128
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->| área = 2949.206 <!--favor manter o formato-->
+| área_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 39º]]
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = {{Formatnum:4.552}}
+| área_urbana_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 18º]]
+| área_urbana_ref = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos = [[Anastácio]] (sede)KM 21, Pulador, Chora, Chora
+| população = 24642 <!--favor manter o formato-->
+| população_pos = [[Lista de municípios de Mato Grosso do Sul por população|MS: 18º]]
+| densidade = {{fmtn|8.117|hab/km²}}
+| altitude = 160
+| altitude_ref = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima = [[tropical]]
+| sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.725 <!--favor manter o formato-->
+| gini = {{Formatnum:0.44}}
+| pib = {{formatnum:204244.477}} mil
+| pib_per_capita = 8875.56
+| idh_pos = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 49º]]
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 43º]]
+| pib_pos = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 24º]]
+| leg_foto = 
+| link_brasão = www.anastcio.ms.gov.br/Arquivos/image/prefeitura
+| link_bandeira = 
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| data_pop = [[IBGE]]/2014<ref name="IBGE_Pop_2014">{{citar web |url= http://www.ibge.gov.br/home/estatistica/populacao/estimativa2014/|título=Estimativa populacional 2014 IBGE| obra = Estimativa populacional 2014|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=1 de julho de 2014 |acessodata = 29 de agosto de 2014}}</ref>
+| data_idh = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| data_gini = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| data_pib = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| data_pib_per_capita = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+<!-- Página oficial -->| site = [http://www.anastacio.ms.gov.br/ www.anastacio.ms.gov.br]
+}}
+'''Anastácio''' é um [[município]] [[brasileiro]] da [[região Centro-Oeste do Brasil]], situado no [[Unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]]. Conecta-se com o município de [[Aquidauana]] através da Ponte da Amizade que cruza o [[Rio Aquidauana]]. Sua população, de acordo com estimativas de 2014 do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), era de {{fmtn|24642}} habitantes.
+
+==Geografia==
+===Localização===
+O município de Anastácio está localizado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], nos [[Mesorregião dos Pantanais Sul-Mato-Grossenses|Pantanais Sul-Mato-Grossenses]] ([[Microrregião de Aquidauana]]). Possui [[latitude]] de 20º29’01” e [[longitude]] de 55°48’25”. Distâncias:
+* {{fmtn|136|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]) 
+* {{fmtn|1162|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+; Solo
+
+No município de Anastácio são encontrados os seguintes tipos de solos: Predomínio do Latossolo Vermelho-escuro álico de textura média, que são solos minerais, não hidromórficos, altamente intemperizados, profundos, bem drenados, sendo encontrados geralmente em regiões planas ou suave onduladas, Argissolos, solos minerais não hidromórficos, com horizonte B textural e argila de atividade baixa e de Neossolo Quartzarênico  de baixa fertilidade natural, são solos pouco desenvolvidos, profundos e muito profundos, excessivamente drenados, mas com baixa capacidade de retenção de água, tornando esse solo  desaconselhável à utilização agrícola. Tem ocorrência mais significativa na porção Centro-sul do município, Gleissolos, solos que apresentam horizonte superficial menos espesso, com cores mais claras e menores teores de matéria orgânica.
+
+; Relevo
+
+Está a uma altitude de {{fmtn|160|m}}. Predomina as formas dissecados tabulares e colinosas com declividades ainda suaves e onduladas de até 11° no extremo sudoeste, contém também modelados de acumulação em área pantaneira. O município de Anastácio divide-se em duas Regiões: 
+* Região da Depressão do Alto Paraguai, que se divide em duas unidades geomorfológicas: Depressão de Miranda e Piemontes da Serra de Maracaju; 
+* Região dos Planaltos da Borda Ocidental da Bacia do Paraná, com três unidades geomorfológicas: Segundo Patamar da Borda  Ocidental, Terceiro Patamar da Borda Ocidental e Planalto de Maracaju.
+ 
+Apresenta relevo plano, geralmente elaborado por várias fases de retomada erosiva, relevos elaborados pela ação fluvial apresentando topos colinosos tabulares ou aguçados, definidos pela combinação das variáveis densidade de drenagem e declividade das vertentes e áreas planas resultante de acumulação fluvial, sujeita a inundações periódicas.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[Aw]]), marcado pelas cheias que acontecem de outubro a abril, quando a temperatura ultrapassa os 40&nbsp;°C. De meados de julho até o final de setembro, a região é atingida pela seca, quando quando há ocorrência de geadas e a temperatura fica em média á 15&nbsp;°C. Sua média anual é de 27&nbsp;°C.
+
+Normais climatológicos de Anastácio:
+ 
+{| class="wikitable"
+! style="background: #99CCCC; color: #000080" height="17" | Mês
+! style="background: #99CCCC; color:#000080;" | Jan
+! style="background: #99CCCC; color:#000080;" | Fev
+! style="background: #99CCCC; color:#000080;" | Mar
+! style="background: #99CCCC; color:#000080;" | Abr
+! style="background: #99CCCC; color:#000080;" | Mai
+! style="background: #99CCCC; color:#000080;" | Jun
+! style="background: #99CCCC; color:#000080;" | Jul
+! style="background: #99CCCC; color:#000080;" | Ago
+! style="background: #99CCCC; color:#000080;" | Set
+! style="background: #99CCCC; color:#000080;" | Out
+! style="background: #99CCCC; color:#000080;" | Nov
+! style="background: #99CCCC; color:#000080;" | Dez
+! style="background: #99CCCC; color:#000080;" | Ano
+|-
+! style="background: #99CCCC; color:#000080;" height="16;" | Temperatura Média [[Celsius|°C]]
+| style="background: #FFCC66; color: black;" | 25.8
+| style="background: #FFCC66; color: black;" | 26
+| style="background: #FFCC66; color: black;" | 25.7
+| style="background: #FFCC66; color: black;" | 23.7
+| style="background: #FFCC66; color: black;" | 20.6
+| style="background: #FFCC66; color: black;" | 20.1
+| style="background: #FFCC66; color: black;" | 19.1
+| style="background: #FFCC66; color: black;" | 24.8
+| style="background: #FFCC66; color: black;" | 23.5
+| style="background: #FFCC66; color: black;" | 24.7
+| style="background: #FFCC66; color: black;" | 25.5
+| style="background: #FFCC66; color: black;" | 26.1
+| style="background: #20E020;" | 23.6
+|-
+! style="background: #99CCCC; color:#000080;" | T. Mínima Absoluta °C
+| style="background: #FFFF99; color: black;" | 15
+| style="background: #FFFF99; color: black;" | 12.4
+| style="background: #FFFF99; color: black;" | 8.2
+| style="background: #FFFF99; color: black;" | 7.4
+| style="background: #FFFF99; color: black;" | 3.4
+| style="background: #FFFF99; color: black;" | 0
+| style="background: #FFFF99; color: black;" | -1.2 ''(1)''
+| style="background: #FFFF99; color: black;" | 0.2
+| style="background: #FFFF99; color: black;" | 2.8
+| style="background: #FFFF99; color: black;" | 7
+| style="background: #FFFF99; color: black;" | 10.8
+| style="background: #FFFF99; color: black;" | 11
+| style="background: #20E020;" | -1.2
+|-
+! style="background: #99CCCC; color:#000080;" | T. Mínima Média °C
+| style="background: #FFFF99; color: black;" | 21.8
+| style="background: #FFFF99; color: black;" | 21.8
+| style="background: #FFFF99; color: black;" | 21.2
+| style="background: #FFFF99; color: black;" | 18.7
+| style="background: #FFFF99; color: black;" | 15.6
+| style="background: #FFFF99; color: black;" | 14.1
+| style="background: #FFFF99; color: black;" | 12.5
+| style="background: #FFFF99; color: black;" | 14.4
+| style="background: #FFFF99; color: black;" | 17.1
+| style="background: #FFFF99; color: black;" | 19
+| style="background: #FFFF99; color: black;" | 19.8
+| style="background: #FFFF99; color: black;" | 21.5
+| style="background: #20E020;" | 18.1
+|-
+! style="background: #99CCCC; color:#000080;" | T. Máxima Média °C
+| style="background: #FF8000; color:#000000;" | 31.8
+| style="background: #FF8000; color:#000000;" | 32.6
+| style="background: #FF8000; color:#000000;" | 32.3
+| style="background: #FF8000; color:#000000;" | 30.9
+| style="background: #FF8000; color:#000000;" | 28.2
+| style="background: #FF8000; color:#000000;" | 27.6
+| style="background: #FF8000; color:#000000;" | 28
+| style="background: #FF8000; color:#000000;" | 30.3
+| style="background: #FF8000; color:#000000;" | 31.7
+| style="background: #FF8000; color:#000000;" | 31.7
+| style="background: #FF8000; color:#000000;" | 32.6
+| style="background: #FF8000; color:#000000;" | 32.7
+| style="background: #20E020;" | 30.9
+|-
+! style="background: #99CCCC; color:#000080;" | T. Máxima Absoluta °C
+| style="background: #FF8000; color:#000000;" | 37.5
+| style="background: #FF8000; color:#000000;" | 38.5
+| style="background: #FF8000; color:#000000;" | 38.4
+| style="background: #FF8000; color:#000000;" | 37.7
+| style="background: #FF8000; color:#000000;" | 35
+| style="background: #FF8000; color:#000000;" | 35.2
+| style="background: #FF8000; color:#000000;" | 35.3
+| style="background: #FF8000; color:#000000;" | 39.3
+| style="background: #FF8000; color:#000000;" | 40.8 ''(2)'' 
+| style="background: #FF8000; color:#000000;" | 39.8
+| style="background: #FF8000; color:#000000;" | 39.4
+| style="background: #FF8000; color:#000000;" | 39.2
+| style="background: #20E020;" | 40.8
+|-
+! style="background: #99CCCC; color:#000080;" | Prec. Média [[Milímetro|mm]]
+| style="background: #30FF80;" | 293.5
+| style="background: #30FF80;" | 144.3
+| style="background: #30FF80;" | 129.2
+| style="background: #30FF80;" | 105
+| style="background: #30FF80;" | 99.1
+| style="background: #30FF80;" | 56.2
+| style="background: #30FF80;" | 42.8
+| style="background: #30FF80;" | 40.6
+| style="background: #30FF80;" | 97
+| style="background: #30FF80;" | 133.9
+| style="background: #30FF80;" | 167.8
+| style="background: #30FF80;" | 228.3
+| style="background: #20E020;" | 1537.7
+|-
+! style="background: #99CCCC; color:#000080;" | Prec. Máxima 24h mm
+| style="background: #30FF80;" | 89.8
+| style="background: #30FF80;" | 82.6
+| style="background: #30FF80;" | 80.8
+| style="background: #30FF80;" | 133.3 ''(3)''
+| style="background: #30FF80;" | 75.4
+| style="background: #30FF80;" | 62
+| style="background: #30FF80;" | 68.6
+| style="background: #30FF80;" | 58.6
+| style="background: #30FF80;" | 65.4
+| style="background: #30FF80;" | 70.3
+| style="background: #30FF80;" | 90.4
+| style="background: #30FF80;" | 97.6
+| style="background: #20E020;" | 133.3 
+|-
+! style="background: #99CCCC; color:#000080;" | Umidade Rel. do Ar %
+| style="background: #30FF80;" | 82
+| style="background: #30FF80;" | 81
+| style="background: #30FF80;" | 80
+| style="background: #30FF80;" | 82
+| style="background: #30FF80;" | 79
+| style="background: #30FF80;" | 76
+| style="background: #30FF80;" | 73
+| style="background: #30FF80;" | 64
+| style="background: #30FF80;" | 67
+| style="background: #30FF80;" | 72
+| style="background: #30FF80;" | 75
+| style="background: #30FF80;" | 81
+| style="background: #20E020;" | 76
+|}
+
+# '' Julho de 1921; ''
+# '' Setembro de 1926; ''
+# '' Abril de 1924. ''
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do rio Paraguai]], pertencente á [[Bacia do Rio da Prata]]. O município de Anastácio situa-se no médio curso da Bacia do Rio Miranda, que abrange uma área de aproximadamente 3 mil km² na porção centro-oeste do Estado de Mato Grosso do Sul. Rios do município:
+* [[Rio Aquidauana]]: afluente pela margem direita do rio Miranda, com 620&nbsp;km de extensão. Navegável da foz até a cidade de Aquidauana. Nasce na serra de Maracaju, acima e ao oeste de São Gabriel do Oeste e percorre o vale entre as serras da Boa Sentença e Maracaju. Banha a cidade de Anastácio e faz divisa  com o município de Aquidauana. Parte significativa do rio encontra-se no Pantanal. 
+* [[Rio Dois Irmãos]]: afluente pela margem esquerda do rio Aquidauana, desaguando nele entre Camisão e Piraputanga. É formado por dois rios, conhecidos como Braço Direito e Braço Esquerdo, nascendo ambos na serra de Maracaju. Faz  divisa entre município de Dois Irmãos do Buriti e o de Anastácio.   
+* [[Rio Miranda]]: afluente pela margem esquerda do rio Paraguai. Extensão: 700&nbsp;km, 200&nbsp;km navegáveis. Seus formadores nascem na serra de Maracaju, no município de Jardim. Faz divisa entre os municípios de Nioaque e Anastácio. Passa nas proximidades da cidade de Miranda. Deságua no rio Paraguai na altura do distrito de Albuquerque (Corumbá). Extensão: 318&nbsp;km; navegável da foz à cidade de Miranda. 
+* Rio Nioaque: afluente pela margem direita do rio Miranda, no município de Nioaque. Nasce na serra de Maracaju, passa pelo município de Nioaque, fazendo divisa entre este município e o de Anastácio.
+
+; Vegetação
+
+A cobertura vegetal atual é representada por proporções iguais de vegetação nativa, caracterizada pelo Cerrado Arbóreo Denso (Cerradão), Cerrado Arbóreo  Aberto (Campo Cerrado), Savana Parque (Campo Sujo), Contato Savana/Floresta Estacional e pela pastagem plantada.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação ao [[Meridiano de Greenwich]] ([[Tempo Universal Coordenado]]).
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|2949.206|km²}}. A área urbana totaliza {{fmtn|4.552|km²}} segundo a [[Embrapa Monitoramento por Satélite]].
+ 
+;Subdivisões
+
+Além da sede, Anastácio possui uma aldeia indígena urbana da etnia [[Terenas|Terena]] denominada ALDEINHA, configurando-se como um bairro da cidade, destacando-se pelo contraste do ponto de vista organizacional. As festas e eventos da comunidade da Aldeinha são realizados esporadicamente, principalmente no Dia do Índio. Esse eventos ocorrem todos os anos. Na oportunidade os índios desenvolvem coreografias típicas, tais como a dança do Bate-pau e a dança da Ema.
+
+;Arredores
+
+Os vizinhos de Anastácio são [[Aquidauana]] (conurbada), [[Bonito (Mato Grosso do Sul)|Bonito]], [[Dois Irmãos do Buriti]], [[Miranda]], [[Maracajú]], [[Nioaque]].
+
+==História==
+No começo da colonização da região sudoeste do então Estado de Mato Grosso, os rios - entre eles o Aquidauana - se constituíam nas principais vias de acesso e de escoamento de toda a região. Por volta de 1870 começou a ocorrer a ocupação das terras e povoamento da região. Em 1872, um italiano, Vicente Anastácio estabeleceu-se na região ao comprar uma Fazenda denominada Santa Maria, na margem esquerda do rio de mesmo nome próxima de onde futuramente se localizaria a cidade de Anastácio. Em 15 de agosto de 1892 o povoado denominado Aquidauana foi fundado. Foi ali onde nasceram os primeiros estabelecimentos comerciais, entre os quais a Casa Cândia.
+
+Com a chegada da Estrada de Ferro Noroeste do Brasil, o centro da povoação - em função dos trilhos - transferiu-se para a margem direita do rio (Onde cresceu a cidade de Aquidauana). Um novo núcleo se forma ali, a partir de então inicia-se o processo de emancipação de Anastácio. Antes de se tornar município, Anastácio virou distrito de Aquidauana em 20 de novembro de 1958, pela Lei n°1.164 e, alguns anos depois, se eleva à categoria de município, pela Lei n°2.143, de 18 de março de 1964, da [[Assembleia Legislativa de Mato Grosso]]. Em 8 de maio de 1965 ocorre o desmembramento definitivo e em 1977 Anastácio passa a fazer parte do atual estado de Mato Grosso do Sul.
+
+==Política==
+===Prefeito e Ex prefeitos.===
+
+Prefeitos e Vice-Prefeitos da cidade de Anastácio/MS. &nbsp; 
+{| class="wikitable"
+|
+|-
+|16° Prefeito
+|-
+|'''Douglas Melo Figueiredo'''
+
+Prefeito
+|-
+|Laércio Valério da Silva 
+Vice-prefeito 
+|-
+|1 de janeiro de 2013 a 31 de dezembro de 2016
+|}
+{| class="wikitable"
+|
+|-
+|15° Prefeito
+|-
+|'''Douglas Melo Figueiredo'''
+
+Prefeito
+|-
+|
+|-
+|22 de outubro de 2010 a 31 de dezembro de 2012
+|}
+{| class="wikitable"
+|
+|-
+|14° Prefeito
+|-
+|'''Cláudio Valério da Silva'''
+
+Prefeito
+|-
+|Douglas Melo Figueiredo
+
+Vice-Prefeito
+|-
+|1 de janeiro de 2009 a 21 de outubro de 2010
+|}
+{| class="wikitable"
+|
+|-
+|13° Prefeito
+|-
+|'''Cláudio Valério da Silva'''
+
+Prefeito
+|-
+|Severino Doca da Costa Cardoso
+
+Vice-Prefeito
+|-
+|1 de janeiro de 2005 a 31 de dezembro de 2008
+|}
+{| class="wikitable"
+|
+|-
+|12° Prefeito
+|-
+|'''Nildo Alves de Albres'''
+
+Prefeito
+|-
+|Geraldo da Conceição
+
+Vice-Prefeito
+|-
+|1 de janeiro de 2001 a 31 de dezembro de 2004
+|}
+{| class="wikitable"
+|
+|-
+|11° Prefeito
+|-
+|'''Nildo Alves de Albres'''
+
+Prefeito
+|-
+|Sales de Arruda Braga
+
+Vice-Prefeito
+|-
+|1 de janeiro de 1997 a 31 de dezembro de 2000
+|}
+{| class="wikitable"
+|
+|-
+|10° Prefeito
+|-
+|'''Cláudio Valério da Silva'''
+
+Prefeito
+|-
+|Severino Doca da Costa Cardoso
+
+Vice-Prefeito
+|-
+|1 de janeiro de 1993 a 31 de dezembro de 1996
+|}
+{| class="wikitable"
+|
+|-
+|9° Prefeito
+|-
+|'''Assunção Santu Cabral de Arruda'''
+
+Prefeito
+|-
+|Luiz de Moraes
+
+Vice-Prefeito
+|-
+|1 de janeiro de 1989 a 31 de dezembro de 1992
+|}
+{| class="wikitable"
+|
+|-
+|8° Prefeito
+|-
+|'''Waldomiro dos Santos Nogueira'''
+
+Prefeito
+|-
+|
+|-
+|15 de maio de 1986 a 31 de dezembro de 1988
+|}
+{| class="wikitable"
+|
+|-
+|7° Prefeito
+|-
+|'''Cláudio Valério da Silva'''
+
+Prefeito
+|-
+|Waldomiro dos Santos Nogueira
+
+Vice-Prefeito
+|-
+|1 de fevereiro de 1983 a 14 de maio de 1986
+|}
+{| class="wikitable"
+|
+|-
+|6° Prefeito
+|-
+|'''Antônio Clementino da Silva'''
+
+Prefeito
+|-
+|João da Costa
+
+Vice-Prefeito
+|-
+|1 de fevereiro de 1977 a 31 de janeiro de 1983
+
+(prorrogado por 2 anos pelo
+
+regime militar)
+|}
+{| class="wikitable"
+|
+|-
+|5° Prefeito
+|-
+|'''Alarico David Medeiros Sobrinho'''
+
+Prefeito
+|-
+|Jessé Neves Queiroz
+
+Vice-Prefeito
+|-
+|31 de janeiro de 1973 a 31 de janeiro de 1977
+|}
+{| class="wikitable"
+|
+|-
+|4° Prefeito
+|-
+|'''Walter Figueiredo'''
+
+Prefeito
+|-
+|Antônio Clementino da Silva
+
+Vice-Prefeito
+|-
+|31 de janeiro de 1970 a 30 de janeiro de 1973
+|}
+{| class="wikitable"
+|
+|-
+|3° Prefeito
+|-
+|'''Vicente Medeiros'''
+
+Prefeito
+|-
+|carlos Ney Louzardo
+
+Vice-Prefeito
+|-
+|31 de janeiro de 1967 a 31 de janeiro de 1970
+|}
+{| class="wikitable"
+|
+|-
+|2° Prefeito
+|-
+|'''Alcebíades Alves de Albres'''
+
+Prefeito
+|-
+|(Mandato de Almiro Flores Nogueira)
+|-
+|1 de junho de 1966 a 30 de janeiro de 1967
+|}
+{| class="wikitable"
+|
+|-
+|1° Prefeito
+|-
+|'''Almiro Flores Nogueira'''
+
+Prefeito
+|-
+|Alcebíades Alves de Albres
+
+Vice-Prefeito
+|-
+|8 de maio de 1965 a 30 de janeiro de 1966
+|}
+
+O município de Anastácio tem como atual prefeito o servidor público municipal Manoel Aparecido da Silva. O prefeito nasceu em 07/05/1965 em Aquidauana (MS) e possui ensino médio completo.
+
+===Hino===
+Letra: Orlando Antunes Batista<br /> 
+Música: Lino Marques Mendonça.
+
+Anastácio rincão no mapa varonil<br /> 
+Marchas do passado cheio de glórias<br /> 
+Da divisão fazendo lemas de vitórias<br /> 
+Fará histórias sob o céu de anil.
+
+Entoemos no portal do pantanal<br /> 
+Nosso belo hino de alegria<br /> 
+No amanhã que se faz todo dia<br /> 
+Salve, Anastácio, terra triunfal!
+
+Porto das mil esperanças do passado<br /> 
+És mais um coração na margem plantado.<br /> 
+Nascendo as tuas fronteiras no ideal,<br /> 
+Avanças a um futuro mais leal.
+
+Entoemos no portal do pantanal<br /> 
+Nosso belo hino de alegria<br /> 
+No amanhã que se faz todo dia<br /> 
+Salve, Anastácio, terra triunfal!
+
+Do lado do coração foste erguido<br /> 
+Serás sempre um torrão amigo.<br /> 
+Anastácio será imagem colossal,<br /> 
+Vivendo uma paisagem sem igual.
+
+Entoemos no portal do pantanal<br /> 
+Nosso belo hino de alegria<br /> 
+No amanhã que se faz todo dia<br /> 
+Salve, Anastácio, terra triunfal
+
+==Turismo== 
+O município de Anastácio possui um potencial turístico cuja estruturação, como atividade econômica, está sendo planejada. Várias áreas de Conservação foram implantadas, aproveitando sua forte tendência ao turismo científico-cultural, ao ecoturismo e ao turismo de aventura. Anastácio contempla de natureza exuberante e fortes apelos culturais, como a Retirada da Laguna, da qual a região foi palco.  
+===Turismo Aventura===
+Atividades: Escaladas, Espeleologia, Jeep Safaris. 
+===Turismo Cultural=== 
+Atividades: Dança, Folclore, Gastronomia.
+====Eventos==== 
+* Aniversário do Município – [8 de Maio]
+* Carnaval de rua.
+* Feira permanente do produtor rural
+* Festa da farinha
+
+===Pontos turísticos===
+;Natureza
+* Morro do Chapéu
+* Morro Azul
+* Rio Aquidauana
+* Pesqueiro 110
+* Cachoeira São Manuel
+* Pesqueiro Caiçara
+;Chácaras e sítios
+* Chácara Recanto dos Ipês
+* Sitio Ana Paula
+* Sítio Primavera (Casa da Farinha)
+* Sítios Arqueológicos
+;Casarios
+* Casario da Casa Cândia
+* Casario do Casarão da Família Anastácio
+* Unidade Conservação Monumento Natural da Moraria de Anastácio
+;Museu
+* Museu Aberto Retirada da Laguna.
+;Outros
+* Ponte Velha (ligando Anastácio a Aquidauana)
+* Prainha de Anastácio
+* Academia da terceira idade (ao ar livre)
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Anastácio (Brazil)
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.anastacio.ms.gov.br/ www.anastacio.ms.gov.br - Página oficial]
+
+{{Subdivisões de Complexo do Pantanal}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Anastácio (Mato Grosso do Sul)| ]]
+[[Categoria:Complexo do Pantanal]]
+[[Categoria:Fundações em Mato Grosso em 1964]]

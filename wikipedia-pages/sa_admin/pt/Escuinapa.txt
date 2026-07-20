@@ -1,0 +1,55 @@
+{{Info/Assentamento/México|
+|get_wikidata =<!--se omisso ou diferente de 'n', usa alguns dados da wikidata quando não indicados explicitamente-->
+|nome         =Escuinapa
+|nome_nativo  =
+|outro_nome   =
+|imagens_tamanho  =<!--sem px; por defeito: 300-->
+|imagem           =
+|imagem_tamanho   =
+|imagem_legenda   =
+|imagem_bandeira  =
+|bandeira_tamanho =
+|bandeira_link    =
+|imagem_escudo    =Seal of Escuinapa.png
+|escudo_tamanho   =
+|apelido          =
+|lema             =
+|imagem_mapa      =
+|mapa_tamanho     =
+|mapa_legenda     =
+|imagem_mapa1     =
+|mapa_tamanho1    =
+|mapa_legenda1    =
+
+|latd=22|latm=27|lats=59
+|longd=105|longm=26|longs=16
+|coord_sufixo =
+|coord_escala       =
+|omite_coord_título =
+|timezone         =[[UTC-7]]
+|utc_offset       =
+|timezone_DST     =
+|utc_offset_DST   =
+|estado           =[[Sinaloa]]
+
+|população_notas  =
+|população_total  =
+|população_em     =
+|população_est    =
+|população_est_em =
+|população_urbana =
+|população_metro  =
+|população_obs    =
+
+|sítio =
+|notas =
+}}
+'''Escuinapa''' é um município do estado de [[Sinaloa]], no noroeste do [[México]].<ref>{{citar web|título=- |url=http://www.e-local.gob.mx/work/templates/enciclo/sinaloa/ |obra=Enciclopedia de los Municipios de México |acessodata=11 de janeiro de 2010 |urlmorta= sim|arquivourl=https://web.archive.org/web/20070128142000/http://www.e-local.gob.mx/work/templates/enciclo/sinaloa/ |arquivodata=28 de janeiro de 2007 |df= }}</ref> O assento principal é [[Escuinapa de Hidalgo]]. Antigamente, o território era habitado por povos [[astecas]] que fundaram uma cidade chamada Ahuchén. Devido a problemas de saúde e roubos, os moradores imigraram duas vezes até estabelecerem a cidade de Izquinapa, atual Escuinapa.<ref>{{citar web|url=http://siglo.inafed.gob.mx/enciclopedia/EMM25sinaloa/municipios/25009a.html|título=ESCUINAPA DE HIDALGO|publicado=siglo.inafed.gob.mx|língua=es|acessodata=15/07/2019|wayb=20180223142816}}</ref>
+
+{{Referências}}
+
+{{Esboço-geomx}}
+{{Commonscat|Escuinapa Municipality}}
+{{Portal3|Geografia|México}}
+
+[[Categoria:Municípios de Sinaloa]]

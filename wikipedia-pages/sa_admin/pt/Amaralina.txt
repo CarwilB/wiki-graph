@@ -1,0 +1,72 @@
+{{ver desambig|este=o município|o bairro|Amaralina (Salvador)}}
+{{Info/Município do Brasil
+<!-- GeoID=5200829 -->
+<!-- Cabeçalho -->
+| nome                 = Amaralina
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = Brasão de Amaralina.jpg
+| bandeira             = Bandeira de Amaralina.jpg
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 
+| fundação             ={{nowrap|{{dtlink|27|12|1995|idade}}}} 
+| gentílico            = amaralinense
+| lema                 = 
+| prefeito             = Dasio Marques Ferreira<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/go/amaralina|título=Candidatos a vereador Amaralina-GO|publicado=Estadão|acessodata =1 de junho de 2021}}</ref>
+| partido              = [[Democratas (Brasil)|DEM]] 
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Goias Municip Amaralina.svg
+| latP                 = S | latG = 13 | latM = 55 | latS = 33
+| lonP                 = O | lonG = 49 | lonM = 17 | lonS = 49
+| estado               = Goiás
+| mesorregião          = [[Mesorregião do Norte Goiano|Norte Goiano]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Porangatu|Porangatu]]
+| data_microrregião    = IBGE/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             =[[Mutunópolis]], [[Porangatu]], [[Bonópolis]], [[Mundo Novo (Goiás)|Mundo Novo]], [[Santa Terezinha de Goiás]] e [[Mara Rosa]]
+| dist_capital         = 364
+<!-- Características geográficas -->
+| área                 = 1412.909
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 dez. 2010|data=10 out. 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 3875
+| data_pop             = [[IBGE]]/2021<ref name="IBGE_População">{{Citar web |url=https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2021/estimativa_dou_2021.pdf |título = Estimativas da população residente no Brasil e Unidades da Federação com data de referência em 1º de julho de 2021 |data = 27 de agosto de 2021 |acessodata = 28 de agosto de 2021 |publicado = Instituto Brasileiro de Geografia e Estatística (IBGE) }}</ref>
+| altitude             = 
+| clima                = 
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.609 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de julho de 2013}}</ref>
+| pib                  = {{formatnum:34509.369}} mil
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+| pib_per_capita       = 9423.64
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Amaralina''' é um [[Município (Brasil)|município brasileiro]] do [[Interior de Goiás|interior]] do [[Unidades federativas do Brasil|estado]] de [[Goiás]], [[Região Centro-Oeste do Brasil|Região Centro-Oeste]] do país. Sua população estimada em 2021 era de {{formatnum|3875}} habitantes.
+
+==Hidrografia==
+* [[Rio dos Bois (Goiás)|Rio dos Bois]]
+* Rio Gregório
+* Rio São Domingos
+
+== Ver também ==
+* [[Lista de municípios de Goiás]]
+* [[Lista de municípios do Brasil]]
+
+{{referências}}
+
+==Ligações externas==
+* [http://www.amaralina.go.gov.br/ Página da Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Municípios de Goiás]]
+[[Categoria:Fundações em Goiás em 1995]]

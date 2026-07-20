@@ -1,0 +1,131 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name          = Las Tablas District
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|settlement_type        = [[Districts of Panama|District]] 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = Las Tablas.jpg
+|imagesize              = 300px
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = Escudo del municipio de Las Tablas.svg
+|shield_size            =
+|image_map              = Panamá - Los Santos - Las Tablas.svg
+|mapsize                = 300px
+|map_caption            = 
+|pushpin_map            = Panama<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =right
+|pushpin_mapsize        =300
+|pushpin_map_caption    =Location of the district capital in Panama
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Panama}}
+|subdivision_type1      = [[Provinces of Panama|Province]]
+|subdivision_name1      = [[Los Santos Province]]
+|subdivision_type2      =Capital
+|subdivision_name2      = [[Las Tablas, Los Santos|Las Tablas]]
+|subdivision_type3      =
+|subdivision_name3      = 
+|<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           =711 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of               =2020
+|population_footnotes           =<ref>{{Cite web |title=Las Tablas (District, Panama) - Population Statistics, Charts, Map and Location |url=https://www.citypopulation.de/en/panama/admin/los_santos/0702__las_tablas/ |access-date=2023-10-05 |website=www.citypopulation.de}}</ref>
+|population_note                =
+|population_total               =29,531
+|population_density_km2         =41.5
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               =[[Eastern Time Zone|ETZ]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|7|46|N|80|17|W|region:PA|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}}
+
+'''Las Tablas District''' is a [[Districts of Panama|district]] (''distrito'') of [[Los Santos Province]] in [[Panama]]. The population according to the [[2000 Panamanian census|2000 census]] was 24,298.<ref name="Statoids">{{cite web|url=http://www.statoids.com/ypa.html|title=Districts of Panama|publisher=Statoids|access-date=April 12, 2009}}</ref> The district covers a total area of {{convert|698|km²}}. The capital lies at the city of [[Las Tablas, Los Santos|Las Tablas]].<ref name="Statoids"/>
+
+==Administrative divisions==
+Las Tablas District is divided administratively into the following ''[[Corregimientos of Panama|corregimientos]]'':
+
+{{col-begin|width=40%}}
+{{col-break}}
+*[[Las Tablas, Los Santos|Santa Librada de Las Tablas]] (capital)
+*[[Bajo Corral]]
+*[[Bayano, Los Santos|Bayano]]
+*[[El Carate]]
+*[[El Cocal]]
+*[[El Manantial, Los Santos|El Manantial]]
+*[[El Muñoz]]
+*[[El Pedregoso, Los Santos|El Pedregoso]]
+*[[La Laja]]
+*[[La Miel]]
+*[[La Palma, Los Santos|La Palma]]
+*[[La Tiza]]
+{{col-break}}
+*[[Las Palmitas, Los Santos|Las Palmitas]]
+*[[Las Tablas Abajo]]
+*[[Nuario]]
+*[[Palmira, Los Santos|Palmira]]
+*[[Peña Blanca, Los Santos|Peña Blanca]]
+*[[Río Hondo, Los Santos|Río Hondo]]
+*[[San José, Los Santos|San José]]
+*[[San Miguel, Los Santos|San Miguel]]
+*[[Santo Domingo, Los Santos|Santo Domingo]]
+*[[El Sesteadero]]
+*[[Valle Rico]]
+*[[Vallerriquito]]
+{{col-end}}
+
+==References==
+{{Reflist}}
+
+{{Los Santos Province}}
+{{Districts of Panama}}
+
+{{Coord|7|46|N|80|17|W|region:PA-7_type:adm2nd|display=title}}
+
+[[Category:Districts of Los Santos Province]]
+
+
+{{LosSantos-geo-stub}}

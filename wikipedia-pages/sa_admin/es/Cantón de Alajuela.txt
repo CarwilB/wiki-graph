@@ -1,0 +1,231 @@
+{{otros usos|Alajuela (desambiguación)}}
+{{Ficha de entidad subnacional
+| nombre = Alajuela
+| nombre original = Cantón de Alajuela
+| nombre completo = Cantón de Alajuela
+| unidad = [[Cantones de Costa Rica|Cantón]]
+| tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+| superior_1 = {{CRI|A}}
+| bandera_borde = si
+| mapa = Costa Rica - Alajuela - Alajuela.svg
+| tamaño_mapa = 250px
+| pie_mapa = Ubicación del cantón de Alajuela en la provincia homónima
+| imagen = Santamaria, Juan -monumento Alajuela 04.jpg
+| pie_de_imagen = Monumento al alajuelense [[Juan Santamaría]], héroe nacional.
+| capital = [[Alajuela (distrito)|Alajuela]]
+| capital_coor = 10_09_54_N_84_15_59_W 10°09'54"N, 84°15'59"O
+| subdivisión = [[Anexo:Distritos de la provincia de Alajuela|14 distritos]]
+| dirigentes_títulos = [[Régimen municipal de Costa Rica|Alcalde]]<br /><br />[[Concejo Municipal de Alajuela|Presidente municipal]]
+| dirigentes_nombres = [[Roberto Thompson Chacón]] ([[Partido Liberación Nacional|PLN]]) <br /><br />Francisco Sánchez Gómez ([[Partidos cantonales de Costa Rica|PRA]])
+| gentilicio = Alajuelense
+| fundación_fechas = 7 de diciembre de 1848
+| clima = Valle Central<ref>{{cita web |url=http://www.imn.ac.cr/publicaciones/estudios/Reg_climaCR.pdf |formato=PDF |título=Regiones y subregiones climáticas de Costa Rica |editorial=Instituto Meteorológico Nacional |urlarchivo=https://web.archive.org/web/20120105104758/http://www.imn.ac.cr/publicaciones/estudios/Reg_climaCR.pdf |fechaarchivo=5 de enero de 2012 }}</ref>
+| horario = [[UTC]]-6
+| imageninferior = Catedral, Alajuela.JPG
+| imageninferior_tamaño = 250px
+| imageninferior_pie = [[Catedral de Nuestra Señora del Pilar (Alajuela)|Catedral de Nuestra Señora del Pilar]], en la ciudad de Alajuela.
+| página web = www.munialajuela.go.cr/
+| país = 
+| mapa1 = {{map draw
+ |zoom=9
+ |align=center
+ |geotype1=geoshape
+ |ids1=Q2672761
+ |coordinates=10.163979,-84.2645463
+ |stroke1=#d40000
+ |fill-opacity1=0.0
+ |geotype2=geoshape
+ |ids2=Q37104
+ |title2=[[Alajuela (distrito)|Alajuela]]
+ |description2=Distrito N.º 1
+ |fill2=#ffffb3
+ |fill-opacity2=0.75
+ |stroke-width2=0.5
+ |geotype3=geoshape
+ |ids3=Q3211839
+ |title3=[[San José de Alajuela|San José]]
+ |description3=Distrito N.º 2
+ |fill3=#bebada
+ |fill-opacity3=0.75
+ |stroke-width3=0.5
+ |geotype4=geoshape
+ |ids4=Q3660746
+ |title4=[[Carrizal de Alajuela|Carrizal]]
+ |description4=Distrito N.º 3
+ |fill4=#fb8072
+ |fill-opacity4=0.75
+ |stroke-width4=0.5
+ |geotype5=geoshape
+ |ids5=Q61678022
+ |title5=[[San Antonio de Alajuela|San Antonio]]
+ |description5=Distrito N.º 4
+ |fill5=#80b1d3
+ |fill-opacity5=0.75
+ |stroke-width5=0.5
+ |geotype6=geoshape
+ |ids6=Q3780108
+ |title6=[[Guácima de Alajuela|Guácima]]
+ |description6=Distrito N.º 5
+ |fill6=#fdb462
+ |fill-opacity6=0.75
+ |stroke-width6=0.5
+ |geotype7=geoshape
+ |ids7=Q3947361
+ |title7=[[San Isidro de Alajuela|San Isidro]]
+ |description7=Distrito N.º 6
+ |fill7=#b3de69
+ |fill-opacity7=0.75
+ |stroke-width7=0.5
+ |geotype8=geoshape
+ |ids8=Q3944212
+ |title8=[[Sabanilla (Alajuela)|Sabanilla]]
+ |description8=Distrito N.º 7
+ |fill8=#fccde5
+ |fill-opacity8=0.75
+ |stroke-width8=0.5
+ |geotype9=geoshape
+ |ids9=Q3947867
+ |title9=[[San Rafael de Alajuela|San Rafael]]
+ |description9=Distrito N.º 8
+ |fill9=#d9d9d9
+ |fill-opacity9=0.75
+ |stroke-width9=0.5
+ |geotype10=geoshape
+ |ids10=Q3943216
+ |title10=[[Río Segundo de Alajuela|Río Segundo]]
+ |description10=Distrito N.º 9
+ |fill10=#bc80bd
+ |fill-opacity10=0.75
+ |stroke-width10=0.5
+ |geotype11=geoshape
+ |ids11=Q3705910
+ |title11=[[Desamparados de Alajuela|Desamparados]]
+ |description11=Distrito N.º 10
+ |fill11=#ccebc5
+ |fill-opacity11=0.75
+ |stroke-width11=0.5
+ |geotype12=geoshape
+ |ids12=Q4000714
+ |title12=[[Turrúcares]]
+ |description12=Distrito N.º 11
+ |fill12=#ffed6f
+ |fill-opacity12=0.75
+ |stroke-width12=0.5
+ |geotype13=geoshape
+ |ids13=Q3980585
+ |title13=[[Tambor de Alajuela|Tambor]]
+ |description13=Distrito N.º 12
+ |fill13=#8dd3c7
+ |fill-opacity13=0.75
+ |stroke-width13=0.5
+ |geotype14=geoshape
+ |ids14=Q3820871
+ |title14=[[Garita (Alajuela)|La Garita]]
+ |description14=Distrito N.º 13
+ |fill14=#ffffb3
+ |fill-opacity14=0.75
+ |stroke-width14=0.5
+ |geotype15=geoshape
+ |ids15=Q3950395
+ |title15=[[Sarapiquí (Alajuela)|Sarapiquí]]
+ |description15=Distrito N.º 14
+ |fill15=#bebada
+ |fill-opacity15=0.75
+ |stroke-width15=0.5
+ |geotype16=Point
+ |coordinates16=10.01715927765749, -84.21019623035048
+ |title16=Municipalidad de Alajuela
+ |description16=[[Alajuela (distrito)|Alajuela]]
+ |marker-symbol16=town-hall
+ }}
+| población = 321 872
+}}
+{{Población histórica por censo de Costa Rica}}
+'''Alajuela''' es el cantón número 1 de la [[provincia de Alajuela]], [[Costa Rica]]. Está localizado en el [[Valle Central de Costa Rica|Valle Central]] del país. Posee un área de 388.43 km² y se encuentra dividido en 14 distritos. Limita al este con los cantones de [[cantón de Sarapiquí|Sarapiquí]], [[cantón de Heredia|Heredia]], [[cantón de Belén|Belén]] y [[Cantón de Santa Bárbara|Santa Bárbara]], al sur con [[Cantón de Santa Ana (Costa Rica)|Santa Ana]] y [[cantón de Mora|Mora]], al oeste con [[cantón de Atenas|Atenas]], [[cantón de Grecia|Grecia]], [[cantón de Poás|Poás]] y [[cantón de Sarchí|Sarchí]], y al norte con [[Cantón de Río Cuarto]]. Fue fundado el 7 de diciembre de 1848. Su cabecera es la ciudad de [[Alajuela (ciudad)|Alajuela]].
+
+El eje principal del cantón es la ciudad de Alajuela, la segunda ciudad más poblada del país después de la capital nacional, [[San José (Costa Rica)|San José]]. En Alajuela se encuentra el principal aeropuerto de Costa Rica, el [[Aeropuerto Internacional Juan Santamaría]], llamado de esta forma en honor al [[Juan Santamaría|héroe nacional]] nacido en Alajuela. El cantón posee una economía basada en el comercio y los servicios. En lo agrícola, se produce café y caña de azúcar principalmente. La mayoría de la producción de ganado de engorde y de leche tiene lugar en las regiones vecinas al cantón. Alajuela es asiento de industrias, empresas manufactureras, cooperativas y zonas francas. También es centro de actividades recreativas, turísticas, deportivas y culturales.
+
+Alajuela es puerta de acceso a dos de los más importantes parques nacionales del país: los volcanes [[volcán Poás|Poás]] y [[volcán Arenal|Arenal]].
+
+== Historia ==
+La [[Constitución Política de Costa Rica de 1949]], en el artículo 8° estableció por primera vez las denominaciones de Provincia de Alajuela, Cantón de Alajuela y Distrito de Alajuela.
+
+De conformidad con la anterior disposición, en la Ley n.º 36 del 7 de diciembre del mismo año, en el artículo 8°, se creó Alajuela como cantón número uno de la provincia del mismo nombre, con seis distritos parroquiales.
+
+En 1958 se inauguró el Aeropuerto Internacional del Coco, y rebautizado [[Aeropuerto Internacional Juan Santamaría]] en 1971. Fue renovado en los primeros años del siglo{{esd}}XXI, pues el edificio anterior no daba abasto con las exigencias y el volumen de pasajeros que estaba llegando al país. La transformación estuvo a cargo del [[arquitecto]] costarricense Javier Rojas.
+
+== Geografía ==
+{{Cita geográfica de región de Costa Rica}}
+
+La anchura máxima es de cincuenta y nueve kilómetros, en dirección noreste a suroeste, desde la intersección de la línea imaginaria límite con la [[Provincia de Heredia]], en el Río Sardinal, a unos 3200 metros al norte del poblado Bajo Latas, en el distrito de Sarapiquí, hasta la confluencia de los Ríos [[río Virilla|Virilla]] y Grande. 
+
+== Distritos ==
+El cantón central de Alajuela se compone de los siguientes distritos:
+
+# [[Alajuela (distrito)|Alajuela]]
+# [[San José de Alajuela|San José]]
+# [[Carrizal de Alajuela|Carrizal]]
+# [[San Antonio de Alajuela|San Antonio]]
+# [[Guácima de Alajuela|La Guácima]]
+# [[San Isidro de Alajuela|San Isidro]]
+# [[Sabanilla (Alajuela)|Sabanilla]]
+# [[San Rafael de Alajuela|San Rafael]] 
+# [[Río Segundo de Alajuela|Río Segundo]]
+# [[Desamparados de Alajuela|Desamparados]]
+# [[Turrúcares]]
+# [[Tambor de Alajuela|Tambor]]
+# [[Garita (Alajuela)|La Garita]]
+# [[Sarapiquí (Alajuela)|Sarapiquí]]
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}
+
+De acuerdo con el [[Censo costarricense de 2011|Censo Nacional de 2011]], la población del cantón era de 254&nbsp;886 habitantes, de los cuales el 10,1&nbsp;% había nacido en el extranjero. El mismo censo indicó la existencia de 72&nbsp;031 viviendas ocupadas, de las cuales el 68,9&nbsp;% se encontraba en buen estado, mientras que el 4,3&nbsp;% presentaba condiciones de hacinamiento. El 88,0&nbsp;% de los habitantes residía en áreas urbanas.
+
+Entre otros datos, el nivel de alfabetismo del cantón es del 98,2&nbsp;%, con una escolaridad promedio de 8,7 años.
+
+Para el año 2012 presentaba un alto índice de desarrollo humano (0.749) según el [[Programa de las Naciones Unidas para el Desarrollo]].<ref>{{cita web |url=http://www.pnud.or.cr/mapa-cantonal/desarrollo-humano.html |título=Atlas del Desarrollo Humano Cantonal de Costa Rica 2012 |fechaacceso=18 de marzo de 2016 |apellido= |nombre= |fecha= |sitioweb=http://www.pnud.or.cr/ |editorial= |idioma=español |cita= |urlarchivo=https://web.archive.org/web/20160305064457/http://www.pnud.or.cr/mapa-cantonal/desarrollo-humano.html |fechaarchivo=5 de marzo de 2016 }}</ref>
+
+El cantón de Alajuela es el segundo en población de Costa Rica. El 59&nbsp;% afirma ser costarricense (ascendencia española o mestiza), el 23&nbsp;% tiene ascendencia italiana, 11&nbsp;% ascendencia brasileña, 7&nbsp;% china y 5&nbsp;% judía.{{cita requerida}}
+
+== Economía ==
+En la región donde se ubica, se produce tradicionalmente [[café]], [[azúcar]] y [[ganado]] para [[carne]] y [[leche]], y Alajuela cumple un papel como centro de comercialización y distribución para estos productos.
+
+También es un importante centro industrial con todas sus zonas francas, como el Coyol Free Zone & Business Park, el [[parque industrial]] más grande de [[Centroamérica]]. La principal [[industria]] de la ciudad son las [[Fábrica|fábricas]] de [[alta tecnología]], como Boston Scientific, Hologic, Beam One, ST Jude Medical, MOOG, SENSIENT, y otras.
+
+El Censo Nacional de 2011 detalla que la población económicamente activa se distribuye de la siguiente manera:
+* Sector Primario: 5,8%
+* Sector Secundario: 26,9%
+* Sector Terciario: 67,3%
+
+=== Atracciones turísticas ===
+En el centro de la ciudad, a la par del Parque de Alajuela, también conocido como "Parque de los Mangos",<ref>{{Cita web|url=http://alajuelenses.com/historia-de-alajuela-costa-rica.htm|título=ALAJUELENSES.COM - La Historia de Alajuela|fechaacceso=2026-05-31|sitioweb=alajuelenses.com|urlarchivo=https://web.archive.org/web/20110812102620/http://alajuelenses.com/historia-de-alajuela-costa-rica.htm|fechaarchivo=2011-08-12}}</ref> se encuentra la [[Catedral de Alajuela]], cuya característica principal es su impresionante cúpula roja. Este parque es el sitio ideal para frecuentar y mezclarse con los habitantes locales, quienes frecuentan el parque especialmente en las tardes. 
+
+Una cuadra más hacia el oeste del parque se encuentra el Mercado Central de Alajuela, un excelente sitio para sus compras. Al norte del Parque Central se encuentra el [[Museo Histórico Cultural Juan Santamaría]]. Este museo almacena muchos mapas históricos, artefactos y retratos de la campaña de 1856 - 1857, guerra contra los filibusteros. 
+
+Al oeste, en el distrito [[Garita (Alajuela)|La Garita]], se encuentran los terrenos del [[Rescate Wildlife Rescue Center]] (antes Rescate Animal Zoo Ave).
+
+== Administración y política ==
+Entre el 2006 y el 2010, la alcaldesa fue Joyce Zürcher Blen ([[Partido Liberación Nacional|PLN]]), que fue desacreditada por la [[Contraloría General de la República de Costa Rica|Contraloría General de la República]] a causa de múltiples acusaciones de [[corrupción política]] y utilizar de manera inapropiada fondos públicos a través de su gestión.<ref name="dup-0-59">https://web.archive.org/web/20100926172935/http://www2.prensalibre.cr/pl/nacional/32319-tse-cancelo-credencial-a-joyce-zuercher.html La Prensa Libre - ''TSE canceló credencial a Joyce Zürcher''</ref><ref name="dup-1-36">http://www.nacion.com/2010-09-17/ElPais/UltimaHora/ElPais2525634.aspx {{Wayback|url=http://www.nacion.com/2010-09-17/ElPais/UltimaHora/ElPais2525634.aspx |date=20100920161713 }} La Nación - ''TSE deja fuera del cargo a alcaldesa de Alajuela, Joyce Zürcher''</ref>
+
+Entre el 2006 y el 2010, la alcaldesa fue Joyce Zürcher Blen ([[Partido Liberación Nacional|PLN]]), que fue desacreditada por la [[Contraloría General de la República de Costa Rica|Contraloría General de la República]] a causa de múltiples acusaciones de [[corrupción política]] y utilizar de manera inapropiada fondos públicos a través de su gestión.<ref name="dup-0-59" /><ref name="dup-1-36" />
+
+{{VT|Anexo:Alcaldes de Alajuela}}
+{{VT|Concejo Municipal de Alajuela}}
+
+== Infraestructura ==
+La ciudad de Alajuela cuenta con seis grandes construcciones de gran valor arquitectónico: la Catedral de Alajuela, el edificio Luis Alberto Monge (antiguo Instituto de Alajuela), [[Museo Histórico Cultural Juan Santamaría|Museo Histórico Cultural Juan Santamaría (antiguos cuarteles]]), la casa de la Cultura Alajuelense (antigua casa del expresidente de Costa Rica, general [[Tomás Guardia Gutiérrez]] 1870-1882), el Palacio Municipal y el Teatro Municipal.
+
+===Transporte===
+El cantón es atravesado por la [[Carretera Interamericana Norte]], la ruta 27 San José - Caldera. A nivel de ferrovías, el cantón es atravesado por dos líneas que hacen conjunción en el poblado de Ciruelas, la línea principal del ferrocarril al Pacífico y el ramal del Ferrocarril Ciruelas - Alajuela y el ramal Alajuela - Heredia. Junto a Alajuela se encuentra el [[Aeropuerto Internacional Juan Santamaría]], la terminal aérea más importante del país.
+
+==== Ciclismo urbano ====
+[[Archivo:Logo Alajuela en Cleta 2022.png|miniaturadeimagen|Logo del Colectivo Alajuela en Cleta]]En el año 2012, la Municipalidad de Alajuela declaró al cantón bici-amigable.<ref>{{Cita libro|título=Comunicación de acuerdo de Consejo Municipal de Alajuela, artículo No. 1, Cap. VIII de la Sesión Ordinaria No. 07-2014 del 18 de febrero del 2014|url=http://archive.org/details/dr-0350-sm-2014|fecha=2014-02-25|fechaacceso=2026-03-28}}</ref> Alajuela en Cleta es un colectivo de activismo ciclista que lleva a cabo actividades recreativas y de incidencia política en la ciudad de [[Alajuela (distrito)|Alajuela]]. El colectivo fue fundado de forma orgánica en marzo de 2015 luego de una "cleteada nocturna" de invitación abierta convocada por medio de redes sociales.  Desde entonces, el colectivo continuó organizando “cleteadas nocturnas” con el objetivo de promover el uso de la bicicleta como medio de transporte y la apropiación del espacio público en Alajuela.<ref>{{Cite web|url=https://web.archive.org/web/20220904143009/https://la.network/alajuela-en-cleta-activismo-comprometido-con-la-movilidad-en-bici/|title=Alajuela en Cleta: activismo comprometido con la movilidad en bici|website=LA Network|access-date=2026-02-11|date=2022-09-04}}</ref><ref>{{Cite web|url=https://www.periodicomitierra.com/index.php/actualidad/terceros-sabados-de-cada-mes-alajuela-disfrutara-de-una-cleteada-nocturna|title=Terceros sábados de cada mes Alajuela disfrutará de una “Cleteada Nocturna”|website=Mi Tierra|access-date=2026-02-11|date=2022-05-19}}</ref><ref>{{Cite web|url=https://elsoldeoccidente.com/cantonales/cleteros-nocturnos-recorren-alajuela/|title=Cleteros nocturnos recorren Alajuela|website=El Sol de Occidente|access-date=2026-02-11|date=2022-05-27}}</ref> En 2022, la alcaldía del municipio conformó la comisión "Municipalidad en Cleta", con la participación de integrantes del colectivo Alajuela en Cleta, con la intención de promover la bicicleta como medio de transporte.<ref>{{Cita libro|título=Conformación de comisión Municipalidad en Cleta|url=https://archive.org/details/ma-a-1644-2022|fecha=2022-05-03|fechaacceso=2026-03-28}}</ref>  La radial de El Coyol, en el [[San José de Alajuela|distrito San José]], cuenta con una ciclovía segregada en ambos sentidos, desarrollada por el [[Ministerio de Obras Públicas y Transportes]] (MOPT).<ref>{{Cita web|url=https://www.mopt.go.cr/noticias/2024/en-diciembre-arrancara-construccion-de-calle-completa-coyol-arrocera-en-alajuela|título=En diciembre arrancará construcción de “calle completa” Coyol-Arrocera en Alajuela {{!}} www.mopt.go.cr|fechaacceso=2026-05-16|sitioweb=www.mopt.go.cr}}</ref>[[Archivo:Ciclovía de la calle completa del Coyol en Alajuela.jpg|miniaturadeimagen|Ciclovía de la calle del Coyol en Alajuela, en el sector cercano a urbanización Loma 2000. La foto muestra la ciclovía en dirección este-oeste.]] 
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+* [https://web.archive.org/web/20110812102620/http://alajuelenses.com/historia-de-alajuela-costa-rica.htm Historia de Alajuela]
+
+{{Control de autoridades}}
+[[Categoría:Cantones de la provincia de Alajuela|Alajuela]]

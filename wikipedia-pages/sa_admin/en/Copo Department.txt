@@ -1,0 +1,72 @@
+{{one source|date=February 2025}}
+
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Copo Department
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| settlement_type         = [[Departments of Argentina|Department]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              = 
+| flag_alt                = 
+| nickname                = 
+| motto                   = 
+| image_map               = Departamento Copo (Santiago del Estero - Argentina).png
+| map_alt                 = 
+| mapsize                 = 180px
+| map_caption             = Location of Copo Department within Santiago del Estero Province
+| pushpin_map             = <!-- Argentina -->
+| pushpin_label_position  = 
+| pushpin_map_alt         = 
+| pushpin_map_caption     = Location of Copo Department within Santiago del Estero Province
+| coordinates             = {{coord|25|48|22|S|62|49|53|W|region:AR_type:adm2nd|display=inline,title}}
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Argentina}}
+| subdivision_type1       = [[Provinces of Argentina|Province]]
+| subdivision_name1       = [[Santiago del Estero Province|Santiago del Estero]]
+| established_title       = 
+| established_date        = 
+| founder                 = 
+| seat_type               = Head town
+| seat                    = [[Monte Quemado]]
+| government_footnotes    = 
+| leader_party            = 
+| leader_title            = 
+| leader_name             = 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 12604
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 
+| population_footnotes    = 
+| population_total        = 35741<ref>{{cite web|url=https://telencuestas.com/censos-de-poblacion/argentina/2022/santiago-del-estero/copo|title=Población de Copo, Santiago del Estero, en 2022|publisher=Telencuestas|access-date=15 February 2025|language=es}}</ref>
+| population_as_of        = 2022
+| population_density_km2  = auto
+| population_demonym      = 
+| population_note         = 
+| timezone1               = [[Time in Argentina|ART]]
+| utc_offset1             = -3
+| postal_code_type        = 
+| postal_code             = 
+| area_code_type          = 
+| area_code               = 
+| iso_code                = 
+| website                 = <!-- [http://www.example.com example.com] -->
+| footnotes               = 
+}}
+
+'''Copo Department''' ({{langx|es|Departamento Copo}}) is a [[Departments of Argentina|department of Argentina]] in [[Santiago del Estero Province]]. The capital city of the department is situated in [[Monte Quemado]].
+
+==References==
+{{reflist}}
+
+{{Departments of Santiago del Estero Province}}
+
+[[Category:Departments of Santiago del Estero Province]]
+
+{{SantiagodelEstero-geo-stub}}

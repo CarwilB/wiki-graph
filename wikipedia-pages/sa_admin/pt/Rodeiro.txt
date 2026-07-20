@@ -1,0 +1,65 @@
+{{Ver desambig|o município da Galiza|Rodeiro (Espanha)}}
+{{Info/Município do Brasil
+<!-- GeoID=3156304 -->
+<!-- Cabeçalho -->
+| nome                 = Rodeiro
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = 
+| bandeira             = 
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 
+| fundação             ={{nowrap|{{dtlink|30|12|1962|idade}}}}
+| gentílico            =rodeirense <ref name = IBGE>{{citar web|URL=https://cidades.ibge.gov.br/brasil/mg/rodeiro/panorama|título=IBGE|publicado=Censo Demográfico - 2022}}</ref>
+| lema                 = 
+| padroeiro            = [[São Sebastião]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=2 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+| CEP                  = 36510-000 a 36511-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito             = José Carlos Ferreira<ref>{{citar web |url=https://divulgacandcontas.tse.jus.br/divulga/#/candidato/SUDESTE/MG/2045202024/130002016360/2024/51250|título=TSE|publicado=Divulgação de Candidaturas e Contas Eleitorais - Resultado / 2024}}</ref>
+| partido              = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = MinasGerais Municip Rodeiro.svg
+| latP                 = S | latG = 21 | latM = 12 | latS = 00
+| lonP                 = O | lonG = 42 | lonM = 51 | lonS = 54
+| estado               = Minas Gerais
+| mesorregião          = [[Mesorregião da Zona da Mata|Zona da Mata]]
+| data_mesorregião     = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Ubá|Ubá]]
+| data_microrregião    = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Ubá]], [[Astolfo Dutra]], [[Dona Eusébia]], [[Guidoval]]
+| dist_capital         = 290
+<!-- Características geográficas -->
+| área                 = 72.673
+| área_ref             = <ref name =IBGE/>
+| população            = 8664
+| data_pop             = Censo [[IBGE]]/[[2022]]<ref name=IBGE/>
+| altitude             = 345
+| clima                = [[Clima tropical|tropical]]
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.668 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/[[2010]]<ref name=IDH>{{citar web |url=https://www.undp.org/pt/brazil/idhm-municipios-2010|titulo=PNUD|publicado=Índice de Desenvolvimento Humano Municipal - 2010}}</ref>
+| pib                  = {{formatnum:550096.162}} mil
+| data_pib             = [[IBGE]]/[[2021]]<ref name=PIB>{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3156304|titulo=PIB por Município |publicado=Produto Interno Bruto dos Municípios - 2021}}</ref>
+| pib_per_capita       = 66014.18
+| data_pib_per_capita  = [[IBGE]]/[[2021]]<ref name=PIB/>
+| site_prefeitura      = [http://www.rodeiro.mg.gov.br www.rodeiro.mg.gov.br]
+| site_câmara          = [http://www.rodeiro.mg.leg.br www.rodeiro.mg.leg.br]
+}}
+'''Rodeiro''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Sua população recenseada em 2022 era de 8 664 habitantes. <ref name = IBGE/>
+
+Desmembrou-se do município de [[Ubá]], do qual era distrito, em 30 de dezembro de 1962, conforme a Lei nº 2.764.<ref>{{citar web|url=https://cidades.ibge.gov.br/brasil/mg/rodeiro/historico|título=Rodeiro|autor=|data=|publicado=IBGE Cidades|acessodata=7/1/2022}}</ref>
+
+==Geografia ==
+Localiza-se na Mesorregião [[Zona da Mata Mineira]]. <ref name = IBGE/>
+
+{{Referências}}
+{{Esboço-municípiosbr/Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1962]]

@@ -1,0 +1,135 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name          =     Atenguillo 
+|native_name            =  <!-- for cities whose native name is not in English -->
+|other_name             =
+|settlement_type        = Municipality and town
+|image_skyline          = 
+|imagesize              =300px
+|image_caption          =
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =ETT
+|image_shield           = Atenguillo.png
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_map              = File:Atenguillo (municipio de Jalisco).png
+|mapsize                = 200px
+|map_caption            = Location of the municipality in Jalisco
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|pushpin_map            = Mexico <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = above
+|pushpin_mapsize        = 300
+|pushpin_map_caption    = Location in Mexico
+<!-- Location ------------------>
+|coordinates            = {{coord|20|17|N|104|24|W|region:MX|display=inline,title}}
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Mexico}}
+|subdivision_type1      = [[Administrative divisions of Mexico|State]]
+|subdivision_type2      = 
+|subdivision_type3      = 
+|subdivision_type4      = 
+|subdivision_name1      = [[Jalisco]]
+|subdivision_name2      =
+|subdivision_name3      = 
+|subdivision_name4      =
+<!-- Politics ----------------->
+|established_title      = <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1             =
+|unit_pref                = 
+|area_footnotes           =
+|area_magnitude           = 
+|area_total_km2           = 610.2  
+|area_total_sq_mi         =
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_land_sq_mi          =
+|area_water_km2           =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        = Town
+|area_blank1_km2          = 1.16
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|population_total               = 4176 
+|population_as_of               = 2020 census
+|population_footnotes           = <ref>[http://www.citypopulation.de/en/mexico/admin/jalisco/14012__atenguillo/ Citypopulation.de] Population of Ayenguillo municipality with localities</ref>
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_blank1_title        = Town
+|population_blank1              = 1589
+|population_density_blank1_km2  = auto  
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|population_blank2_title        =
+|population_blank2              =
+|population_note                =
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =48100
+|area_code              =388
+|website                = 
+|footnotes              =
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  
+|dot_y =
+|leader_title2          =
+|leader_name2           =
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|timezone               =
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+}}
+''' Atenguillo  ''' is a town and [[municipalities of Jalisco|municipality]], in [[Jalisco]] in central-western [[Mexico]]. The municipality covers an area of  610.2 km<sup>2</sup>.
+
+As of 2005, the municipality had a population of 4107.<ref>{{cite web|title=Atenguillo |url=http://www.e-local.gob.mx/work/templates/enciclo/jalisco/mpios/14012a.htm |work=Enciclopedia de los Municipios de México |publisher=[[Instituto Nacional para el Federalismo y el Desarrollo Municipal]] |access-date=April 13, 2009 |url-status=dead |archive-url=https://web.archive.org/web/20050728122810/http://www.e-local.gob.mx/work/templates/enciclo/jalisco/mpios/14012a.htm |archive-date=July 28, 2005 }}</ref>
+
+==References==
+{{Reflist}}
+
+{{Jalisco-geo-stub}}
+{{Jalisco}}
+
+[[Category:Municipalities of Jalisco]]

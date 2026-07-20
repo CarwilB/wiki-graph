@@ -1,0 +1,64 @@
+{{Info/Município do Brasil
+<!-- GeoID=2928307 -->
+<!-- Cabeçalho -->
+| nome = Santanópolis
+| foto = 
+| leg_foto = 
+| apelido = 
+<!-- Dados gerais -->
+| brasão = SANTANOPOLIS BRASAO.jpg
+| bandeira = BANDEIRA DE SANTANÓPOLIS.jpg
+| link_brasão = 
+| link_bandeira =
+| link_hino = 
+| aniversário ={{nowrap|{{dtlink|13|7|1962|idade}}}}
+| fundação =13 de julho
+| gentílico = [[wikt:santanopolinense|santanopolinense]]
+| lema = Florescemos para o Bem
+| prefeito = Gilson Cerqueira Almeida<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/ba/santanopolis|título=Candidatos a vereador Santanópolis-BA|publicado=Estadão|acessodata =10 de junho de 2021}}</ref>
+| partido = [[Progressistas|PP]]
+| fim_mandato = 2024
+<!-- Localização -->
+| mapa = Bahia Municip Santanopolis.svg
+| latP = S
+| latG = 12
+| latM = 01
+| latS = 01
+| lonP = O
+| lonG = 38
+| lonM = 52
+| lonS = 01
+| estado = Bahia
+| mesorregião = [[Mesorregião do Centro-Norte Baiano|Centro Norte Baiano]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Feira de Santana|Feira de Santana]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Área de Expansão Metropolitana de Feira de Santana]]
+| vizinhos = [[Feira de Santana]], [[Santa Bárbara (Bahia)|Santa Bárbara]], [[Lamarão]], [[Água Fria (Bahia)|Água Fria]], [[Irará]] e [[Coração de Maria]]
+| dist_capital = 147
+<!-- Características geográficas -->| área = 250.027
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 dez. 2010|data=10 out. 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 9023
+| população_ref = <ref name="IBGE_POP">{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=41105&t=resultados|título=Estimativas da população residente para os municípios e para as unidades da federação - IBGE|publicado=www.ibge.gov.br|acessodata=12 de setembro de 2024}}</ref>
+| data_pop = 2024
+| altitude = 
+| clima = 
+| sigla_clima = 
+<!-- Indicadores -->
+| idh = 0.592 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=25 de agosto de 2013}}</ref>
+| pib = {{formatnum:68861.31}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2021/base/base_de_dados_2010_2021_xlsx.zip|titulo=Produto Interno Bruto dos Municípios - 2010 à 2021|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=12 de setembro de 2024}}</ref>
+| pib_per_capita = 7662.32
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| site_prefeitura     = [http://www.santanopolis.ba.gov.br/ santanopolis.ba.gov.br]
+}}
+'''Santanópolis''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] da [[Bahia]] localizado na [[Área de Expansão Metropolitana de Feira de Santana]].
+
+{{Referências}}
+
+{{Esboço-municípiosbr/Bahia}}
+{{Municípios da Bahia}}
+
+[[Categoria:Municípios da Bahia]]
+[[Categoria:Fundações na Bahia em 1962]]

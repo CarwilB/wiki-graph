@@ -1,0 +1,261 @@
+{{Ficha de entidad subnacional
+| unidad = [[Anexo:Municipios de Guatemala|Municipio]]
+| tipo_superior_1 = [[Departamentos de Guatemala|Departamento]]
+| superior_1 = {{GTM|AV}}
+| mapa_alternativo = Relief map of Guatemala.jpg
+| bandera = Bandera de Cahabon.jpg
+| escudo = 
+| mapa_loc = Guatemala
+| mapa_loc_1 = Alta Verapaz
+| imagen = 
+| pie_de_imagen = 
+| dirigentes_títulos = Alcalde <div style='font-size:0.8em'>(2016-2020)</div>
+| dirigentes_nombres = Mariano Caal<ref name=alcalde2015>{{harvnb|CRN Noticias|8 de septiembre de 2015|p=}}</ref>
+| fundación = 
+| gentilicio = cahabonero/a
+| idioma = [[Idioma español|Español]]
+| otros_idiomas = [[Idioma quekchí|q'ek'chi]] <br /> [[Idioma poqomchí|P'oqomchí]]
+| fiestas_mayores = 8 de septiembre
+| población_post = <ref name=INE>{{harvnb|Instituto Nacional de Estadística (INE)|2002|p=}}</ref>
+| página web = 
+| clima = [[#Clima|tropical, Af]]
+| miembro_de = [http://anam.org.gt Asociación Nacional de Municipalidades de Guatemala]
+| mapa = {{map draw
+ | latitude  = 15.5827
+ | longitude = -89.7394
+ | height    = 300 
+ | width     = 300
+ | zoom      = 10
+ | geotype   = geoshape
+ | ids       = Q332147
+ | stroke    = 	#ED1C24
+ | text      =      Límite territorial de Santa María Chabón.<br>Pulse para ver mapa interactivo.
+ | stroke-width   = 2.2
+ | stroke-opacity = 1
+ | fill-opacity   = 0.2
+ | title          = Santa María Chabón, Guatemala
+}}
+| IDH año = 2018
+| IDH = 0,525
+| IDH puesto = [[Anexo:Departamentos de Guatemala por IDH |Puesto 326]]
+| IDH categoría = <span style="color:#E60026;">'''Bajo'''</span>
+}}
+'''Cahabón''' es un [[#Gobierno municipal|municipio]] ubicado en el departamento de [[Departamento de Alta Verapaz|Alta Verapaz]] en la [[República de Guatemala]]; se encuentra al norte del país. El nombre del municipio se debe al nombre del [[río Cahabón]]. En el municipio se producen maderas preciosas como caoba y cedro. Las fiestas patronales se celebran del 1 al 8 de septiembre.{{harvnp|Escalante Herrera|2007|p=}}
+
+Tras la [[#Época colonial: doctrina de los dominicos|Capitulaciones de Tezulutlán]] —que fueron la conquista pacífica de la [[Verapaz (Guatemala)|Verapaz]]— los frailes dominicos establecieron doctrinas y conventos en la región y Cahabán fue una doctrina de ese convento.  En 1754, los dominicos tuvieron que entregar sus reducciones al clero secular y las doctrinas se convirtieron en curatos, quedando así hasta la [[Independencia de Centroamérica]].
+
+Después de la [[#Tras la independencia de Centroamérica|Independencia]], Cahabón fue uno de los municipios originales del Estado de Guatemala en 1825, ubicado en el departamento de [[Verapaz (Guatemala)|Verapaz]] cuya cabecera era [[Cobán]].{{harvnp|Pineda de Mont|1869|p=468}}  La constitución del Estado de Guatemala también estableció los circuitos para la administración de justicia y menciona que el poblado de Cahabón —llamado entonces Cajavon— era parte del Circuito del mismo nombre en el Distrito N.º 5 ([[Verapaz (Guatemala)|Verapaz]]).{{harvnp|Pineda de Mont|1869|p=467}} 
+
+En 1970 fue incorporado a la [[#La Franja Transveral del Norte|Franja Transversal del Norte]] por el gobierno de [[Carlos Arana Osorio]].
+
+== Geografía física ==
+
+=== Clima ===
+
+La cabecera municipal de Cahabón tiene clima tropical ([[Clasificación de Köppen]]: ''Af'').
+{{Weather box
+|location = Cahabón
+|metric first = yes
+|single line = yes
+|Jan mean C = 23.4
+|Feb mean C = 24.2
+|Mar mean C = 25.7
+|Apr mean C = 26.8
+|May mean C = 27.3
+|Jun mean C = 27.5
+|Jul mean C = 26.7
+|Aug mean C = 26.7
+|Sep mean C = 26.7
+|Oct mean C = 26.0
+|Nov mean C = 24.6
+|Dec mean C = 23.5
+|year mean C = 
+|Jan high C = 27.4
+|Feb high C = 29.3
+|Mar high C = 30.7
+|Apr high C = 32.2
+|May high C = 32.1
+|Jun high C = 32.1
+|Jul high C = 30.7
+|Aug high C = 31.0
+|Sep high C = 31.0
+|Oct high C = 30.1
+|Nov high C = 28.5
+|Dec high C = 27.7
+|year high C = 
+|Jan low C = 19.4
+|Feb low C = 19.2
+|Mar low C = 20.7
+|Apr low C = 21.5
+|May low C = 22.5
+|Jun low C = 22.9
+|Jul low C = 22.7
+|Aug low C = 22.5
+|Sep low C = 22.4
+|Oct low C = 22.0
+|Nov low C = 20.8
+|Dec low C = 19.4
+|year low C = 
+|Jan precipitation mm = 134
+|Feb precipitation mm = 75
+|Mar precipitation mm = 64
+|Apr precipitation mm = 83
+|May precipitation mm = 146
+|Jun precipitation mm = 425
+|Jul precipitation mm = 411
+|Aug precipitation mm = 269
+|Sep precipitation mm = 320
+|Oct precipitation mm = 307
+|Nov precipitation mm = 189
+|Dec precipitation mm = 138
+|year precipitation mm =
+|source 1 = Climate-Data.org<ref name="Climate-Data.org">
+{{cita web|url=https://en.climate-data.org/location/46094/
+|título= Climate: Cahabón
+|fechaacceso = 19 de agosto de 2015
+|website= Climate-Data.org|idioma=en}}</ref>
+}}
+
+=== Ubicación geográfica ===
+
+Cahabón está en el departamento de [[Alta Verapaz]] y sus colindancias son las siguientes:
+
+* Norte: [[Fray Bartolomé de las Casas (Guatemala)|Fray Bartolomé de las Casas]], municipio del departamento de Alta Verapaz
+* Sur: [[Senahú]], municipio del departamento de Alta Verapaz
+* Este: [[El Estor]], municipio del departamento de [[Izabal]]
+* Oeste: [[San Pedro Carchá]] y [[Lanquín]], municipios de Alta Verapaz<ref name=segeplan/>
+
+{{Ubicación geográfica
+|centro=Cahabón
+|Norte=[[Fray Bartolomé de las Casas (Guatemala)|Fray Bartolomé de las Casas]]
+|Sur = [[Senahú]]<ref name=segeplan/>
+|Este = [[El Estor]]<ref name=segeplan>{{harvnb|SEGEPLAN|s.f.|p=}}</ref>
+|Oeste= [[San Pedro Carchá]]<br />[[Lanquín]]
+}}
+
+== Gobierno municipal ==
+{{AP|Municipios de Guatemala}}
+
+Los municipios se encuentran regulados en diversas leyes de la República, que establecen su forma de organización, lo relativo a la conformación de sus órganos administrativos y los tributos destinados para los mismos.  Aunque se trata de entidades autónomas, se encuentran sujetos a la legislación nacional y las principales leyes que los rigen desde 1985 son:
+
+<div align=center>
+{| class="wikitable mw-collapsible" width=80% style='font-size:0.9em' 
+|+Principales leyes que rigen a los municipios de Guatemala
+|-style=color:white;
+!style="background:#659ec7;" align=center width=6%|N.º
+!style="background:#659ec7;" align=center|Ley
+!style="background:#659ec7;" align=center|Descripción
+|-
+!style=background:lemonchiffon;|1
+|[[Constitución de Guatemala|Constitución Política de la República de Guatemala]]
+|Tiene una regulación legal específica para los municipios en los artículos 253 al 262.
+|-
+!style=background:lemonchiffon;|2
+|Ley Electoral y de Partidos Políticos
+|Ley de carácter constitucional aplicable a los municipios en el tema de la conformación de sus autoridades electas. 
+|-
+!style=background:lemonchiffon;|3
+|Código Municipal
+|Decreto 12-2002 del [[Congreso de la República de Guatemala]]. Tiene la categoría de ley ordinaria y contiene preceptos generales aplicables a todos  los municipios, e inclusive contiene legislación referente a la creación de los municipios.                 
+|-
+!style=background:lemonchiffon;|4
+|Ley de Servicio Municipal
+|Decreto 1-87 del Congreso de la República de Guatemala. Regula las relaciones entra la municipalidad y los servidores públicos en materia laboral. Tiene su base constitucional en el artículo 262 de la constitución que ordena la emisión de la misma. 
+|-
+!style=background:lemonchiffon;|5
+|[[Ley General de Descentralización de Guatemala|Ley General de Descentralización]]
+|Decreto 14-2002 del Congreso de la República de Guatemala. Regula el deber constitucional del Estado, y por ende del municipio, de promover y aplicar la descentralización y desconcentración económica y administrativa. 
+|}
+</div>
+
+El gobierno de los municipios está a cargo de un Concejo Municipal<ref name=asamblea85/> mientras que el código municipal —ley ordinaria que contiene disposiciones que se aplican a todos los municipios— establece que «el concejo municipal es el órgano colegiado superior de deliberación y de decisión de los asuntos municipales […] y tiene su sede en la circunscripción de la cabecera municipal»; el artículo 33 del mencionado código establece que «[le] corresponde con exclusividad al concejo municipal el ejercicio del gobierno del municipio».<ref name=congreso2012/>
+
+El concejo municipal se integra con el alcalde, los síndicos y concejales, electos directamente por sufragio universal y secreto para un período de cuatro años, pudiendo ser reelectos.<ref name=asamblea85>{{harvnb|Asamblea Constituyente|1985|p=}}</ref><ref name=congreso2012>{{harvnb|Congreso de Guatemala|2012|p=}}</ref>
+
+Existen también las Alcaldías Auxiliares, los Comités Comunitarios de Desarrollo (COCODE), el Comité Municipal del Desarrollo (COMUDE), las asociaciones culturales y las comisiones de trabajo. Los alcaldes auxiliares son elegidos por las comunidades de acuerdo a sus principios y tradiciones, y se reúnen con el alcalde municipal el primer domingo de cada mes, mientras que los Comités Comunitarios de Desarrollo y el Comité Municipal de Desarrollo organizan y facilitan la participación de las comunidades priorizando necesidades y problemas.
+
+Los alcaldes que ha habido en el municipio son:
+
+* 2012-2016: Rubén Darío Rosales{{harvnp|Prensa Libre|2011|p=}}
+* 2016-2020: Mariano Caal<ref name=alcalde2015/>
+
+== Historia ==
+{{AP|Historia de Guatemala}}
+
+=== Época colonial: doctrina de los dominicos ===
+
+[[Archivo:Orderofpreachears.png|miniaturadeimagen|140px|izquierda|Escudo de la [[Orden de Predicadores]].]]
+
+La Corona española se enfocó en la catequización de los indígenas; las congregaciones fundadas por los misioneros reales en el Nuevo Mundo fueron llamadas «doctrinas de indios» o simplemente «doctrinas».<ref name=vanoss17>{{harvnb|van Oss|1986|p=17-19}}</ref> Originalmente, los frailes tenían únicamente una misión temporal: enseñarle la fe católica a los indígenas, para luego dar paso a parroquias seculares como las establecidas en España; con este fin, los frailes debían haber enseñado los evangelios y el idioma español a los nativos.<ref name=vanoss17/> Ya cuando los indígenas estuvieran catequizados y hablaran español, podrían empezar a vivir en parroquias y a contribuir con el diezmo, como hacían los peninsulares.<ref name=vanoss53>{{harvnb|van Oss|1986|p=53}}</ref>
+
+Pero este plan nunca se llevó a cabo, principalmente porque la corona perdió el control de las órdenes regulares tan pronto como los miembros de éstas se embarcaron para América.<ref name=vanoss25>{{harvnb|van Oss|1986|p=25}}</ref> Por otra parte, protegidos por sus privilegios apostólicos para ayudar a la conversión de los indígenas, los misioneros solamente atendieron a la autoridad de sus priores y provinciales, y no a la de las autoridades españolas ni a las de los obispos. Los provinciales de las órdenes, a su vez, únicamente rendían cuentas a los líderes de su orden y no a la corona; una vez habían establecido una doctrina, protegían sus intereses en ella, incluso en contra de los intereses del rey y de esta forma las doctrinas pasaron a ser pueblos de indios que se quedaron establecidos para todo el resto de la colonia.<ref name=vanoss53/>
+
+Las doctrinas fueron fundadas a discreción de los frailes, ya que tenían libertad completa para establecer comunidades para catequizar a los indígenas, con la esperanza de que estas pasaran con el tiempo a la jurisdicción de una parroquia secular a la que se le pagaría el diezmo; en realidad, lo que ocurrió fue que las doctrinas crecieron sin control y nunca pasaron al control de parroquias.<ref name=vanoss53/> La administración colectiva por parte del grupo de frailes eran la característica más importante de las doctrinas ya que garantizaba la continuación del sistema de la comunidad en caso falleciese uno de los dirigentes.{{harvnp|van Oss|1986|p=54}}
+
+En 1638, los dominicos separaron a sus grandes doctrinas —que les representaban considerables ingresos económicos— en grupos centrados en sus seis conventos:{{harvnp|Belaubre|2001|p=39}} Los conventos estaban en: la ciudad de [[Santiago de los Caballeros de Guatemala]], [[Amatitlán (departamento)|Amatitlán]], [[Verapaz (Guatemala)|Verapaz]], [[Sonsonate]], [[San Salvador]] y [[Sacapulas]].{{harvnp|Belaubre|2001|p=39}} Específicamente en la Verapaz, la doctrina abarcaba los poblados de Cahabón, [[Cobán]], [[San Juan Chamelco|Chamelco]], [[San Cristóbal Verapaz|San Cristóbal]] y [[Tactic]].{{harvnp|Belaubre|2001|p=39}}
+
+[[Archivo:Carlos de Borbón, rey de las Dos Sicilias.jpg|200px|miniaturadeimagen|Rey [[Carlos III de España]], promotor de las reformas borbónicas.]]
+
+En 1754, en virtud de una [[Real cédula|Real Cédula]] parte de las [[Reformas Borbónicas]], todos los curatos de las órdenes regulares fueron traspasados al [[clero secular]].{{harvnp|Juarros|1818|p=338}} En 1765 se publicaron las reformas borbónicas de la Corona española, que pretendían recuperar el poder real sobre las colonias y aumentar la recaudación fiscal.{{harvnp|Melchor Toledo|2011|p=110}}{{harvnp|Estrada Herrera|s.f.|pp=3-4}} Con estas reformas se crearon los estancos para controlar la producción de las bebidas embriagantes, el tabaco, la pólvora, los naipes y el patio de gallos. La real hacienda subastaba el estanco anualmente y un particular lo compraba, convirtiéndose así en el dueño del monopolio de cierto producto. Ese mismo año se crearon cuatro subdelegaciones de la Real Hacienda en [[San Salvador]], Ciudad Real, [[Comayagua]] y [[León (Nicaragua)|León]] y la estructura político administrativa de la [[Capitanía General de Guatemala]] cambió a quince provincias:<ref name=melchor111>{{harvnb|Melchor Toledo|2011|p=111}}</ref>
+
+Además de esta redistribución administrativa, la Corona española estableció una política tendiente a disminuir el poder de la [[Iglesia católica]],{{harvnp|Melchor Toledo|2011|p=111}} el cual hasta ese momento era prácticamente absoluto sobre los vasallos españoles. Esta política de disminución de poder de la iglesia se basaba en la [[Ilustración]]{{harvnp|Melchor Toledo|2011|p=112}}
+
+=== Tras la independencia de Centroamérica ===
+{{AP|Independencia de Centroamérica}}
+
+[[Archivo:Map_of_Journey.jpg|200px|miniaturadeimagen|Mapa de Guatemala en 1839, elaborado por el arquitecto británico [[Frederick Catherwood]], quien visitó Guatemala en compañía del explorador estadounidense [[John Lloyd Stephens]] en comisión del presidente de los Estados Unidos, [[Martin Van Buren]].{{harvnp|Stephens|Catherwood|1854|p=1}}]]
+
+El [[Estado liberal de Guatemala (1829-1840)|Estado de Guatemala]] fue definido de la siguiente forma por la Asamblea Constituyente de dicho estado que emitió la constitución del mismo el 11 de octubre de 1825: «el estado conservará la denominación de ''Estado de Guatemala'' y lo forman los pueblos de Guatemala, reunidos en un solo cuerpo.  El estado de Guatemala es soberano, independiente y libre en su gobierno y administración interior.»<ref name=mont463>{{harvnb|Pineda de Mont|1869|p=463}}</ref>
+
+Cahabón fue uno de los municipios originales del Estado de Guatemala en 1825; se encontraba en el departamento de [[Verapaz (Guatemala)|Verapaz]] cuya cabecera era [[Cobán]] y tenía a los municipios de Cobán, [[Cahabón]], [[Tactic]], [[Salamá]] y [[Rabinal]], además del distrito de [[Petén]].{{harvnp|Pineda de Mont|1869|p=468}}
+
+La constitución del Estado de Guatemala promulgada el 11 de octubre de 1825 también estableció los circuitos para la administración de justicia en el territorio del Estado y menciona que el poblado de Cahabón —llamado entonces Cajavon— era parte del Circuito del mismo nombre en el Distrito N.º 5 ([[Verapaz (Guatemala)|Verapaz]]) junto con [[Lanquín]].{{harvnp|Pineda de Mont|1869|p=467}}
+
+=== La Franja Transversal del Norte ===
+{{AP|Franja Transversal del Norte}}
+
+La [[Franja Transversal del Norte]] fue creada oficialmente durante el gobierno del general [[Carlos Arana Osorio]] en 1970, mediante el Decreto 60-70 en el [[Congreso de la República de Guatemala|Congreso de la República]], para el establecimiento de desarrollo agrario.<ref name=wikiguate>{{cita web|url=http://wikiguate.com.gt/wiki/Franja_Transversal_del_Norte|publicación=Wikiguate|título=Franja Transversal del Norte|fechaacceso=30 de octubre de 2014|urlarchivo=https://web.archive.org/web/20141031093752/http://wikiguate.com.gt/wiki/Franja_Transversal_del_Norte|fechaarchivo=31 de octubre de 2014}}</ref> Las Zonas de Desarrollo Agrario estaban comprendidas dentro de los municipios: [[Santa Ana Huista]], [[San Antonio Huista]], [[Nentón]], [[Jacaltenango]], [[San Mateo Ixcatán]], y [[Santa Cruz Barillas]] en [[Huehuetenango]]; [[Chajul]] y [[Uspantán|San Miguel Uspantán]] en Quiché; [[Cobán]], [[Chisec]], [[San Pedro Carchá]], [[Lanquín]], [[Senahú]], Cahabón y [[Chahal]], en [[Alta Verapaz]] y la totalidad del departamento de [[Izabal]].{{harvnp|Solano|2012|p=15}}
+
+A mediados de la década de 19170, se descubrió petróleo en la zona y altos oficiales guatemaltecos —incluyendo los expresidentes [[Fernando Romeo Lucas García]] y [[Kjell Eugenio Laugerud García]]— se convirtieron entonces en grandes terratenientes e inversionistas aprovechando las políticas de traslado de campesinos, acceso a información privilegiada, ampliación del crédito público y grandes proyectos de desarrollo; de hecho, la oficialidad guatemalteca formó el Banco del Ejército, y diversificó sus fondos de pensión.{{harvnp|Solano|2012|p=24}}  Pero la presencia del [[Ejército Guerrillero de los Pobres]] en el [[departamento de Quiché]], especialmente en la región petrolera de [[Ixcán]], hizo que la guerra civil se recrudeciera en el área y los proyectos no se llevaran a cabo.  La región quedó en un parcial abandono hasta 2008, que se inició la construcción de la carretera en la franja.
+
+[[Archivo:FTNprojects.jpg|miniaturadeimagen|620px|center|Ubicación de proyectos gubernamentales y de masacres en el área de la [[Franja Transversal del Norte]]. Obsérvese el campo petrolero de Atzam que se encuentra operativo en Ixcán.]]
+
+== Deportes ==
+El municipio tiene un club deportivo de [[fútbol]] llamado [[Deportivo Cahabón]] que juega en el [[estadio Santa María]]. Y está en la tercera división.<ref>http://www.deportivocahabon.blogspot.com/</ref>
+
+==Véase también==
+{{Portal|Guatemala|Geografía}}
+* [[Elecciones municipales de Guatemala de 2015]]
+* [[Franja Transversal del Norte]]
+* [[Historia Territorial de Guatemala]]
+* [[Organización territorial de Guatemala]]
+
+==Notas y referencias ==
+{{listaref|group=lower-alpha}}
+=== Referencias ===
+{{listaref|2}}
+
+=== Bibliografía ===
+{{refcomienza}}
+* {{cita libro|autor=Asamblea Constituyente|título=Constitución Política de la República de Guatemala|año=1985|editorial=Gobierno de Guatemala|ubicación=Guatemala|url=http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf|urlarchivo=https://web.archive.org/web/20160202083342/http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf|fechaarchivo=2 de febrero de 2016}}
+* {{cita publicación|apellido=Belaubre|nombre=Christopohe|título=Poder y redes sociales en Centroamérica: el caso de la Orden de los Dominicos (1757-1829)|publicación=Mesoamérica|volumen=41|año=2001|ref=harv|url=http://dialnet.unirioja.es/descarga/articulo/2458303.pdf|urlarchivo=https://web.archive.org/web/20150121173246/http://dialnet.unirioja.es/descarga/articulo/2458303.pdf|fechaarchivo=21 de enero de 2015}}
+* {{cita libro|autor=Congreso de Guatemala|título=Código Municipal de Guatemala|año=2012|editorial=Gobierno de Guatemala|ubicación=Guatemala|url=http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf|urlarchivo=https://web.archive.org/web/20150807042527/http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf|fechaarchivo=7 de agosto de 2015}}
+* {{cita web|autor=CRN Noticias|url=http://crnnoticias.com/alcaldes-de-alta-verapaz/|website=CRN Noticias|título=Alcaldes de Alta Verapaz|ubicación=Guatemala|fecha=8 de septiembre de 2015|fechaacceso=8 de septiembre de 2015|urlarchivo=https://web.archive.org/web/20150908100151/http://crnnoticias.com/alcaldes-de-alta-verapaz/|fechaarchivo=8 de septiembre de 2015}}
+* {{cita web|url=http://www.pbase.com/m_escalante_herrera/cahabon|título=Cahabón|publicación=Pbase.com|apellido=Escalante Herrera|nombre=Marco Antonio|año=2007|fechaacceso=17 de noviembre de 2014|urlarchivo=https://web.archive.org/web/20100531091010/http://www.pbase.com/m_escalante_herrera/cahabon|fechaarchivo=31 de mayo de 2010}}
+* {{cita publicación|url=http://www.fuac.edu.co/recursos_web/descargas/grafia/borbon.pdf|título=Marco y propósitos generales de las Reformas Borbónicas|apellido=Estrada Herrera|nombre=Fabiola|fecha=s.f.|editorial=Fundación Universidad Autónoma de Colombia|urlarchivo=https://web.archive.org/web/20150727222406/http://www.fuac.edu.co/recursos_web/descargas/grafia/borbon.pdf|fechaarchivo=27 de julio de 2015}}
+* {{Cita web|autor = Instituto Nacional de Estadística (INE)|título = XI Censo Nacional de Población y VI de Habitación (Censo 2002)|año = 2002|ubicación = Guatemala|sitioweb = Ine.gob.gt|url = http://www.ine.gob.gt/index.php?option=com_content&view=article&id=75%3Acenso2002&catid=42%3Ademografiaypoblacion&Itemid=69|fechaacceso = 2008|urlarchivo = https://web.archive.org/web/20080824044850/http://www.ine.gob.gt/index.php?option=com_content&view=article&id=75%3Acenso2002&catid=42%3Ademografiaypoblacion&Itemid=69|fechaarchivo = 24 de agosto de 2008}}
+* {{cita libro|apellido=Juarros|nombre=Domingo|título=Compendio de la historia de la Ciudad de Guatemala|año=1818|editorial=Ignacio Beteta|ubicación=Guatemala|url=https://archive.org/stream/compendiodelahis21juar#page/n3/mode/2up}}
+* {{cita publicación|apellido=Melchor Toledo|nombre=Johann Estuardo|título=El arte religioso de la Antigua Guatemala, 1773-1821; crónica de la emigración de sus imágenes|publicación=tesis doctoral en Historia del Arte|editorial=[[Universidad Nacional Autónoma de México]]|año=2011|ubicación=México, D.F.|url=http://132.248.9.195/ptd2012/febrero/0677645/0677645_A1.pdf|fechaacceso=10 de noviembre de 2014}}
+* {{cita libro|apellido=Pineda de Mont|nombre=Manuel|año=1869|título=Recopilación de las leyes de Guatemala, 1821-1869|volumen=I|ubicación=Guatemala|editorial=Imprenta de la Paz en el Palacio|url=https://archive.org/details/recopilacindelas01guat}}
+* {{cita publicación|autor=Prensa Libre|url=http://www.prensalibre.com/departamental/Ganadores-poder-local_PREFIL20110913_0002.pdf| título=Ganadores del poder local en las elecciones de Guatemala 2011|año=2011|fechaacceso=13 de septiembre de 2011|ubicación=Guatemala|publicación=[[Prensa Libre]]|urlarchivo=https://web.archive.org/web/20111201004550/http://prensalibre.com/departamental/Ganadores-poder-local_PREFIL20110913_0002.pdf|fechaarchivo=1 de diciembre de 2011}}
+* {{cita web|autor=SEGEPLAN|título=Municipios de Alta Verapaz, Guatemala|url=http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=2:alta-verapaz&Itemid=333|ubicación=Guatemala|website=Secretaría General de Planificación y Programación de la Presidencia de la República|año=s.f.|fechaacceso=30 de junio de 2015|urlarchivo=https://web.archive.org/web/20150630153430/http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=2:alta-verapaz&Itemid=333|fechaarchivo=30 de junio de 2015}}
+* {{cita libro|título=Catholic Colonialism: A Parish History of Guatemala, 1524-1821|apellido=van Oss|nombre=Adriaan C.|idioma=en|url=http://books.google.com/books?id=apazT06Y15cC&pg=PA37&lpg=PA37|año=1986|editorial=[[Cambridge University Press]]|ubicación=Cambridge, [[Inglaterra]]}}
+{{reftermina}}
+
+== Enlaces externos ==
+* [https://web.archive.org/web/20130622034922/http://municahabon.gob.gt/ Municipalidad de Santa María Cahabón]
+
+{{Departamento de Alta Verapaz}}
+{{Control de autoridades}}
+[[Categoría:Departamentos y municipios originales de Guatemala]]
+[[Categoría:Municipios de Alta Verapaz]]

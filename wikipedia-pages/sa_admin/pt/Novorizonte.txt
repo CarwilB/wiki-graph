@@ -1,0 +1,71 @@
+{{distinguir|Novo Horizonte}}
+{{Info/Município do Brasil
+<!-- GeoID=3145372 -->
+<!-- Cabeçalho -->
+| nome                 = Novorizonte
+| foto                 =
+| leg_foto             = Vista Panorâmica de Novorizonte
+| apelido              = Novô
+| padroeiro            = [[Nossa Senhora da Conceição]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=4 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             =
+| link_brasão          =
+| link_bandeira        =
+| link_hino            =
+| CEP                  = 39568-000 a 39568-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| emancipação          ={{nowrap|{{dtlink|21|12|1995|idade}}}}
+| fundação             ={{nowrap|{{dtlink|21|12|1995|idade}}}}
+| gentílico            = novorizontino<ref name=IBGE>{{citar web |url= https://cidades.ibge.gov.br/brasil/mg/novorizonte/panorama|titulo=IBGE |publicado=Censo Demográfico - 2022 }}</ref>
+| lema                 =
+| prefeito             = Cleber Nascimento de Pinho<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/mg/novorizonte|título=Candidatos a vereador Novorizonte-MG|publicado=Estadão|acessodata =15 de maio de 2021}}</ref>
+| partido              = [[PODE]]
+| fim_mandato          = 2024 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+<!-- Localização -->
+| mapa                 = MinasGerais Municip Novorizonte.svg
+| latP                 = S | latG = 16 | latM = 01 | latS = 01
+| lonP                 = O | lonG = 42 | lonM = 24 | lonS = 28
+| estado               = Minas Gerais
+| mesorregião          = [[Mesorregião do Norte de Minas|Norte de Minas]]
+| data_mesorregião     = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Salinas|Salinas]]
+| data_microrregião    = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana =
+| vizinhos             = [[Rio Pardo de Minas]], [[Salinas (Minas Gerais)|Salinas]] e [[Fruta de Leite]]
+| dist_capital         = 664<ref name="DER/MG">{{citar web |url=http://www.der.mg.gov.br/distancias-bhmunicipios |titulo=distancias-bhmunicipios |obra=Distâncias BH/Municípios |publicado=Departamento de Estradas de Rodagem de Minas Gerais (DER/MG) |acessodata=19 de agosto de 2009 |arquivourl=https://web.archive.org/web/20090821173321/http://www.der.mg.gov.br/distancias-bhmunicipios |arquivodata=2009-08-21 |urlmorta=yes }}</ref>
+<!-- Características geográficas -->
+| área                 = 271.610
+| área_ref             =<ref name =IBGE/>
+| população            = 4571
+| data_pop             = Censo [[IBGE]]/2022<ref name=IBGE/>
+| altitude             = 900<ref name=" Assembléia Legislativa MG ">{{citar web  | url    = http://www.almg.gov.br/index.asp?grupo=estado&diretorio=munmg&arquivo=municipios# |titulo= O Estado: Municípios Mineiros |obra=O Estado: Municípios Mineiros |publicado=Assembléia Legislativa do Estado de Minas Gerais  |acessodata=1 de março de 2010}}</ref>
+| clima                = [[semiárido]]<ref name="vetmedunivienna">{{citar web  | url    = http://koeppen-geiger.vu-wien.ac.at/pics/kottek_et_al_2006.gif |titulo=World Map of the Köppen-Geiger climate classification |obra=World Map of the Köppen-Geiger climate classification |publicado=Institute for Veterinary Public Health  | acessodata=24 de fevereiro de 2010}}</ref>
+| sigla_clima          = Bsh
+<!-- Indicadores -->
+| idh                  = 0.648 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib                  = {{formatnum:18605.765}} mil
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 3653.92
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+| site_prefeitura      = [http://www.novorizonte.mg.gov.br/ novorizonte.mg.gov.br]
+| site_câmara          = [http://www.novorizonte.mg.leg.br/ novorizonte.mg.leg.br]
+}}
+'''Novorizonte''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Em 2022, sua população era de 4 571 habitantes.<ref name=IBGE/> Está localizado na mesorregião do [[Norte de Minas]] e microrregião de [[Lista de microrregiões de Minas Gerais|Salinas]]. Compõe com outros municípios da região o [[Alto Rio Pardo]].
+
+== História ==
+O município de Novorizonte foi criado pela lei estadual nº 12030, de 21 de dezembro de 1995, desmembrado de [[Salinas (Minas Gerais)|Salinas]].<ref>{{citar web |url= http://www.ibge.gov.br/cidadesat/historicos_cidades/historico_conteudo.php?codmun=314537 |titulo=IBGE - cidades@ - Histórico - NOVORIZONTE (mg) |primeiro= |último= |obra=ibge.gov.br |acessodata=19 de junho de 2012}}</ref>
+
+{{Referências}}
+
+== Ligações externas ==
+{{Commonscat}}
+* [http://www.novorizonte.mg.gov.br Prefeitura de Novorizonte]
+* [http://www.novorizonte.mg.leg.br/ Câmara municipal de Novorizonte]
+* [http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=314537 ibge.gov.br: Perfil do município]
+
+{{Esboço-municípiosbr/Minas Gerais}}
+{{Portal3|Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1995]]

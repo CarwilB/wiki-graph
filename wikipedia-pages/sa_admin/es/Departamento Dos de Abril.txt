@@ -1,0 +1,62 @@
+{{Ficha de entidad subnacional
+| nombre             = Dos de Abril
+| nombre completo    = Dos de Abril
+| unidad             = [[Departamentos y partidos de la Argentina|Departamento]]
+| tipo_superior_1    = [[Provincias de la Argentina|Provincia]]
+| superior_1         = {{Bandera2|Provincia del Chaco}}
+| mapa               = Dos de Abril (Provincia del Chaco - Argentina).svg
+| mapa_loc           = 
+| capital            = [[Hermoso Campo]]
+| capital_denominación = [[Capital (política)|Cabecera]]
+| subdivisión        = [[Anexo:Municipios del Chaco|1 municipio]]:<br />[[Hermoso Campo]]
+| superficie         = 1594
+| superficie_puesto  = 
+| superficie_post    = 
+| población          = 8319<ref name="INDEC">{{cita web |url=https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf |título=Cuadro 1.4 Provincia del Chaco. Población por sexo registrado al nacer y edad mediana, según departamento. - Año 2022 |publicación=Censo Nacional de Población, Hogares y Viviendas 2022. - Resultados definitivos |editorial=Instituto Nacional de Estadística y Censos (INDEC) |ubicación=Buenos Aires |fecha= Noviembre de 2023 |isbn=978-950-896-632-2 |página=33}}</ref>
+| población_puesto   = [[Anexo:Departamentos de la Provincia del Chaco|24]]
+| población_año      = 2022
+| población_urb      = (2010) 5011<ref name = "City Loc"/>
+| población_post     = 
+| densidad           = 5.219<ref name = "City">{{cita web |url=https://www.citypopulation.de/en/argentina/admin/chaco/22039__dos_de_abril/ |título=Dos de Abril - Department in Chaco (Argentina) |publicación=Citypopulation |idioma=en |fecha=28 de noviembre de 2023}}</ref>
+| densidad_año       = 2022
+| ciudad_grande      = [[Hermoso Campo]]
+| capital_población  = (2010) 5011<ref name = "City Loc">{{cita web |url=https://www.citypopulation.de/en/argentina/chaco/22039__dos_de_abril/ |título=Dos de Abril - Department in Chaco - Localities|publicación=CityPopulation |fecha=26 de diciembre de 2013 |idioma=inglés}}</ref>
+| capital_coor       = 27_36_37_S_61_20_39_W
+}}
+'''Dos de Abril''' es un departamento en la [[provincia del Chaco]], [[Argentina]].
+
+Se estableció mediante la Ley Provincial 3814 de 1992 sobre la base de territorio que antes pertenecía a los departamentos [[Departamento Fray Justo Santa María de Oro|Fray Justo Santa María de Oro]] y [[Departamento Doce de Octubre|Doce de Octubre]].<ref>{{cita publicación |url=https://biblioteca.indec.gob.ar/bases/minde/4si20_25.pdf |título=Situación demográfica de la Provincia del Chaco |número= 25-Serie
+análisis demográfico |editorial=Instituto Nacional de Estadística y Censos |página=13 }}</ref>
+
+El nombre homenajea a los [[Día del Veterano y de los Caídos en la Guerra de Malvinas|combatientes en la Guerra de Malvinas]].
+
+== Límites ==
+Limita al norte y oeste con el [[departamento 12 de Octubre]], al este con el [[Departamento Mayor Luis Jorge Fontana|departamento Mayor Luis Fontana]], al sur y sudoeste con el [[departamento Fray Justo Santa María de Oro]].
+
+== Demografía ==
+Cuenta con {{indec|8319|2022}}, lo que representa un incremento promedio anual del 0.98% frente a los {{indec|7432|2010}} del censo anterior.<ref name = "City"/> La mediana de edad se estableció en 31 años.<ref name="INDEC"/>
+
+{{Gráfica de evolución|tipo=demográfica|color_30=blue|nombre= Departamento Dos de Abril|altura=300|anchura=300|2001|7435|2010|7432|2022|8319|notas=<small>Fuente: Censos nacionales del [[INDEC]]</small>}}
+
+== Localidades ==
+La mayor parte de la población se concentra en la [[Hermoso Campo|ciudad cabecera]]. El resto de la población es de carácter rural y en gran parte se encuentra dispersa.<ref name = "City Loc"/>
+{| class="wikitable"
+|- bgcolor="#e0e0e0"
+!Cabecera<br><small>(Población 2010)</small>
+!Localidades<br><small>(Población 2010)</small>
+|-
+| [[Hermoso Campo]] <small>({{formatnum|5011}} hab.)</small>
+|
+* [[Itín]] <small>({{formatnum|441}} hab.)</small>
+|-|- bgcolor="#f0f0f0"
+|}
+
+== Economía ==
+La economía del departamento Dos de Abril se basa en el [[sector primario]]. Junto con otros departamentos del centro-oeste de la provincia integra una región conocida como «Domo Agrícola», caracterizada por la producción agrícola. 
+Junto con el sur del departamento Almirante Brown y los departamentos 9 de Julio, Chacabuco, Doce de Octubre y General Belgrano conforma un área que concentra el 61% de la superficie en producción de la provincia.<ref>{{cita publicación |url=https://repositorio.inta.gob.ar/xmlui/bitstream/handle/20.500.12123/10601/INTA_CRChacoFormosa_Piedra_D_sector_agropecuario_agroindustrial_provincia_Chaco.pdf?sequence=1&isAllowed=y |título=El sector agropecuario/agroindustrial de la provincia del Chaco |autor1=Piedra, Diana |autor2=Pellerano, Laura |autor3=Tortarolo, Gabriel |autor4=Ordenavía, María Noelia |autor5=D’Angelo, María Leonor |editorial=Instituto Nacional de Tecnología Agropecuaria |año=2020 |páginas=11 y 13}}</ref>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento Dos de Abril| ]]

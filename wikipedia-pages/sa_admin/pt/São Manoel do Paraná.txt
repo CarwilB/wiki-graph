@@ -1,0 +1,59 @@
+{{Info/Município do Brasil
+<!-- GeoID=4125555 -->
+<!-- Cabeçalho -->
+| nome                 = São Manoel do Paraná
+| foto                 = 
+| leg_foto             = Vista aérea da Cidade
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = Brasao em PNG PRONTO.png
+| bandeira             = Bandeira Municipal São Manoel do Paraná.jpg
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          =13 de setembro
+| gentílico            =sãomanoelense do Paraná
+| fundação             ={{nowrap|{{dtlink|13|9|1993|idade}}}}
+| lema                 = 
+| prefeito             = Agnaldo Trevisan
+| partido              = [[PSB]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Parana Municip SaoManoeldoParana.svg
+| latP                 = S | latG = 23 | latM = 24 | latS = 10
+| lonP                 = O | lonG = 52 | lonM = 38 | lonS = 38
+| estado               = Paraná
+| mesorregião          = [[Mesorregião do Noroeste Paranaense|Noroeste Paranaense]]
+| data_mesorregião     = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Cianorte|Cianorte]]
+| data_microrregião    = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Rondon (Paraná)|Rondon]], [[Indianópolis (Paraná)|Indianópolis]], [[Paraíso do Norte]], [[São Carlos do Ivaí]] e [[Japurá (Paraná)|Japurá]]
+| dist_capital         = 570
+<!-- Características geográficas -->
+| área                 = 95.382
+| área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 2098
+| data_pop             = Censo [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude             = 399
+| clima                = Tropical
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.750
+| data_idh             = [[PNUD]]/2000
+| pib                  = {{formatnum:19867.383}} mil
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 9185.11
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+| site_prefeitura      = {{url|saomanoeldoparana.pr.gov.br}}
+}}
+'''São Manoel do Paraná''' é um [[Município (Brasil)|município brasileiro]] do [[Estados do Brasil|estado]] do [[Paraná]]. Sua população estimada em 2010 era de 2.098 habitantes. O nome é em homenagem a [[Manoel (mártir)|São Manoel]], um santo e [[mártir]] católico persa, porém a [[Orago|padroeira]] do município é [[Nossa Senhora do Rosário do Rocio|Nossa Senhora do Rocio]].
+{{Referências}}
+
+{{Esboço-municípiosbr/Paraná}}
+
+{{Portal3|Brasil|Paraná}}
+
+{{DEFAULTSORT:Sao Manoel Parana}}
+[[Categoria:Municípios do Paraná]]
+[[Categoria:Fundações no Paraná em 1990]]

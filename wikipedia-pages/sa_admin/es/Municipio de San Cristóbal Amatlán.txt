@@ -1,0 +1,109 @@
+{{Ficha de entidad subnacional
+|nombre                = Municipio de<br>San Cristóbal Amatlán
+|país                  = [[México]]
+|unidad                = [[Municipios de México|Municipio]]
+|tipo_superior_1       = [[Organización territorial de México|Estado]]
+|superior_1            = [[Oaxaca]]
+|tipo_superior_2       = [[Regiones de Oaxaca|Región]]
+|superior_2            = [[Región Sierra Sur|Sierra sur]]
+|tipo_superior_3       = [[Distritos de Oaxaca|Distrito]]
+|superior_3            = [[Distrito de Miahuatlán|Miahuatlán]]
+|imagen                = 
+|pie_de_imagen         = 
+|mapa                  = {{Map draw|geotype=geoshape|width=250|height=300|align=center|zoom=11|fill=#4D87CA|fill-opacity=0.1}}
+
+|capital_denominación  = Cabecera municipal
+|capital               = [[San Cristóbal Amatlán]]
+|dirigentes_títulos    = Presidente municipal
+|dirigentes_nombres    = 
+|subdivisión           = 6 localidades
+|fundación             = 1715
+|patrón                = [[Cristóbal de Licia|San Cristóbal]]
+|fiestas_mayores       = 23 de julio
+
+|superficie            = 110.40
+|superficie_post       = <ref name="INEGI">{{cita web |url=http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |título=México en cifras. Oaxaca |autor=INEGI |fechaacceso=septiembre de 2015 |fecha=2010 |urlarchivo=https://web.archive.org/web/20131029194731/http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |fechaarchivo=29 de octubre de 2013 }}</ref>
+|población             = 5024
+|población_año         = 2010
+|población_post        = <ref name="INEGI" />
+|altitud               = 1700
+|elevación_alta        = 3100
+|elevación_baja        = 1400
+|horario               = [[UTC|UTC -6]]
+
+|código_postal         = 
+|prefijo telefónico    = 
+|página web            = 
+}}
+El '''municipio de San Cristóbal Amatlán''' {{etimología|náhuatl|amatl, tlan|amate, lugar|Entre los amates}} es uno de los [[Anexo:Municipios de Oaxaca|570 municipios]] que conforman al estado [[México|mexicano]] de [[Oaxaca]]. Pertenece al [[distrito de Miahuatlán]], dentro de la [[Región Sierra Sur|región sierra sur]]. Su cabecera es la localidad de [[San Cristóbal Amatlán]].<ref>{{cita web
+ | url       = http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20126a.html
+ | título       = Oaxaca. San Cristóbal Amatlán
+ | fechaacceso       = 2 de septiembre de 2015
+ | autor       = INAFED
+ | fecha       = 2012
+ | fechaarchivo       = 24 de septiembre de 2015
+ | urlarchivo       = https://web.archive.org/web/20150924044242/http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20126a.html
+ | deadurl       = yes
+ }}</ref>
+
+== Geografía ==
+El municipio abarca 110.40 km² y se encuentra a una altitud promedio de 1700 {{esd|[[m s. n. m.]]}}, oscilando entre 3100 y 1400 {{esd|[[m s. n. m.]]}}<ref name="INEGI" /><ref>{{cita web
+ | url       = http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20126.pdf
+ | título       = Pontuario de información municipal. San Cristóbal Amatlán
+ | fechaacceso       = 2 de septiembre de 2015
+ | autor       = INEGI
+ | fecha       = 2010
+ | urlarchivo       = https://web.archive.org/web/20160304203834/http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20126.pdf
+ | fechaarchivo       = 4 de marzo de 2016
+ }}</ref>
+
+== Demografía ==
+
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de San Cristóbal Amatlán contaba con 8 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Oaxaca|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197933.pdf|fechaacceso=enero de 2026|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2026|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|201260001
+|'''[[San Cristóbal Amatlán]]'''
+| align="right" |4&nbsp;316
+|-
+|201260002
+|San Agustín Mixtepec
+| align="right" |427
+|-
+|201260008
+|Los Sabinos
+| align="right" |219
+|-
+|201260003
+|San Andrés Mixtepec
+| align="right" |180
+|-
+|201260004
+|San Lorenzo Mixtepec
+| align="right" |131
+|-
+|201260006
+|Loma de la Palma
+| align="right" |71
+|-
+|201260007
+|Barrio Santa Cecilia
+| align="right" |47
+|-
+|201260009
+|Rancho San Isidro
+| align="right" |5
+|-
+! colspan="2" |Total municipal
+!5&nbsp;396
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipio de San Cristóbal Amatlán| ]]

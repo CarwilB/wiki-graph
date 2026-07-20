@@ -1,0 +1,47 @@
+{{Info/Assentamento
+|nome_oficial          = Santa Rosa
+|assentamento_tipo        = [[Municípios da Bolívia|Município]]
+<!-- images and maps  ----------->
+|imagem_horizonte          =Santa Rosa del Yacuma, Beni.JPG
+|imagem_tamanho             =
+|imagem_legenda          = Santa Rosa de(l) Yacuma
+|latd  = 13 |latm  = 00 |lats  =00 |latNS  = S
+|longd = 66 |longm = 40 |longs =00 |longEW = W
+|mapa_alfinete            = Bolívia <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|mapa_alfinete_posição = bottom
+|mapa_alfinete_legenda    = Location within Bolivia
+|coordinates_display    = inline,title
+|coordinates_region     = BO
+|subdivisão_tipo       = País
+|subdivisão_nome       = [[Bolívia]]
+|subdivisão_tipo1      = [[Departamentos da Bolívia|Departamento]]
+|subdivisão_nome1      = [[Beni (departamento)|Beni]]
+|subdivisão_tipo2      = [[Províncias da Bolívia|Província]]
+|subdivisão_nome2      = [[José Ballivián (província)|José Ballivián]]
+|seat_type              = Seat
+|seat                   = [[Santa Rosa de Yacuma|Santa Rosa]]
+|unit_pref              = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|área_total_km2         = 
+|elevação_m            = 
+|população_em       = 2001
+|população_notas   =
+|população_total       =  
+|população_densidade_km2 = <!--auto-->
+|timezone               = -4
+|utc_offset             = -4
+|website                = 
+|notas              = 
+}}
+
+'''Santa Rosa''' ou '''Santa Rosa de(l) Yacuma''' é um [[Municípios da Bolívia|município]] da  [[José Ballivián (província)|província de José Ballivián]] no [[Beni (departamento)|departamento de Beni]] da [[Bolívia]]. A sede do município é a cidade de [[Santa Rosa de Yacuma]].
+
+== Referências ==
+{{Reflist}}
+* {{es icon}} [https://web.archive.org/web/20091027220541/http://www.ine.gov.bo/ Instituto Nacional de Estadistica de Bolivia  (INE)]
+
+<!--Navigation box--><br />
+{{Departamento de Beni}}
+
+{{esboço-geobo}}
+[[Categoria:Municípios do departamento de Beni]]
+[[Categoria:Municípios da Bolívia]]

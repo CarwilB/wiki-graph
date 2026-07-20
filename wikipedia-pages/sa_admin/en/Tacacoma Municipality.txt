@@ -1,0 +1,172 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+<!-- Basic info  ---------------->
+|official_name          = Tacacoma Municipality
+|other_name             =
+|native_name            = 
+|nickname               = 
+|settlement_type        = Municipality 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 250px
+|image_caption          =  
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            =Bolivia <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location of the Tacacoma Municipality within Bolivia
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Bolivia.svg|25px]] [[Bolivia]]
+|subdivision_type1      = [[Departments of Bolivia|Department]]
+|subdivision_name1      = [[La Paz Department (Bolivia)|La Paz Department]]
+|subdivision_type2      = [[Provinces of Bolivia|Province]]
+|subdivision_name2      = [[Larecaja Province]]
+<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
+|seat_type              = Seat
+|seat                   = [[Tacacoma]] 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        = 
+|leader_title           = Mayor
+|leader_name            = Carlos Mamani Rodriguez  (2007)
+|leader_title1          =President<!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           = Guido Machicado Pizza (2007)
+|leader_title2          = 
+|leader_name2           = 
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|established_title      = Foundation<!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           = 815 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               = 2001
+|population_footnotes           =
+|population_note                =
+|population_total               = 6269
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =
+|population_blank2_title        =Religions
+|population_blank2              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = BOT
+|utc_offset             = -4
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|-15.5834|-68.7167|region:BO-L_type:adm3rd|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 3000 
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}} 
+'''Tacacoma Municipality''' is the third [[Municipalities of Bolivia|municipal section]] of the [[Larecaja Province]] in the  [[La Paz Department (Bolivia)|La Paz Department]], [[Bolivia]]. Its seat is [[Tacacoma]].
+
+== Languages ==
+The languages spoken in the Tacacoma Municipality are mainly Aymara, Spanish and Quechua.  
+
+{|class="wikitable" border="1" style="width:30%;" border="1"
+|-bgcolor=silver
+! '''Language'''
+! '''Inhabitants'''
+|-
+|[[Quechua languages|Quechua]]
+|align="right"  |1.058
+|-
+|[[Aymara language|Aymara]]
+|align="right" |4.389
+|-
+|[[Guaraní language|Guaraní]]
+|align="right" |1
+|-
+|Another native 
+|align="right" |17
+|-
+|[[Spanish language|Spanish]] 
+|align="right" |4.321
+|-
+|Foreign
+|align="right" |6
+|-
+|Only native
+|align="right" |1.599
+|-
+|Native and Spanish
+|align="right" |3.389
+|-
+|Only Spanish
+|align="right" |933
+|-
+|}
+
+<small>Ref.: obd.descentralizacion.gov.bo</small>
+
+== References ==
+* [http://www.ine.gob.bo/comunitaria/comunitariaVer.aspx?Depto=02&Prov=06&Seccion=03 www.ine.gob.bo / census 2001: Tacacoma Municipality]
+== External links ==
+* [https://web.archive.org/web/20090418123538/http://www.aguabolivia.org/situacionaguaX/Riego/mapas/lapaz/larecaja.htm Old map of Larecaja Province (showing its previous political division)]
+
+{{La Paz Department}}
+
+[[Category:Municipalities of La Paz Department (Bolivia)]]
+
+{{LarecajaProvince-geo-stub}}

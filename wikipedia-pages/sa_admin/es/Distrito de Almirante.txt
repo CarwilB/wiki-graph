@@ -1,0 +1,53 @@
+{{Ficha de entidad subnacional
+| nombre = Almirante
+| nombre_oficial = Almirante
+| unidad = [[Anexo:Distritos de Panamá|Distrito]]
+| capital = [[Almirante (Bocas del Toro)|Almirante]]
+| tipo_superior_1 = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+| superior_1 = {{PAN|1}}
+| tipo_div_1 = Corregimientos
+| div_1 = 10
+| lema = 
+| bandera = no
+| escudo = no
+| mapa = Panamá - Bocas de Toro - Almirante.svg
+ |mapa1 = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=8}}
+| imagen = ...a reflection of life... - panoramio.jpg
+| pie_de_imagen = 
+| superficie = 1936.2
+| elevación_media = 
+| fundación = 
+| población = 28368
+| población_año = 2023
+| población_post = <ref name="censo">{{cita web |url=https://www.inec.gob.pa/archivos/P0705547520231109105354CUADRO%2010.pdf |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=17 de diciembre de 2025 |obra=Censos de 2000 a 2023 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+| gentilicio = 
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = 
+| página web = https://almirante.municipios.gob.pa
+}}
+
+'''Almirante''' es un distrito de la provincia [[Panamá|panameña]] de [[Provincia de Bocas del Toro|Bocas del Toro]] y fue creado por la Ley 39 del 8 de junio de 2015, segregándose del [[distrito de Changuinola]].<ref name="Ley">[https://www.gacetaoficial.gob.pa/pdfTemp/27801_A/51095.pdf Ley 39 de 2015 que crea el distrito de Almirante, segregado del distrito de Changuinola]</ref>
+
+== División política ==
+El distrito se compone de los siguientes diez corregimientos:<ref name="Ley"/><ref name="censo"/>
+
+* [[Almirante (Bocas del Toro)|Almirante]]
+* [[Bajo Culubre]]
+* [[Barriada Guaymí]]
+* [[Barrio Francés]]
+* [[Cauchero (Bocas del Toro)|Cauchero]]
+* [[Ceiba (Bocas del Toro)|Ceiba]]
+* [[Miraflores (Bocas del Toro)|Miraflores]]
+* [[Nance de Riscó]]
+* [[Valle de Aguas Arriba]]
+* [[Valle de Riscó]]
+
+== Referencias ==
+{{listaref}}
+{{Control de autoridades}}
+[[Categoría:Distritos de Bocas del Toro|Almirante]]

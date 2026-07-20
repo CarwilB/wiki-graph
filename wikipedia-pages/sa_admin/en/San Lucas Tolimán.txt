@@ -1,0 +1,371 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = San Lucas Tolimán<!-- at least one of the first two fields must be filled in -->
+| official_name           = 
+| native_name             = 
+| native_name_lang        = 
+| other_name              = 
+| settlement_type         = Municipality of [[Guatemala]]
+<!-- images, nickname, motto --->
+| image_skyline           = San_Lucas_Toliman.jpg
+| imagesize               = 
+| image_alt               = 
+| image_caption           = Street of San Lucas Tolimán
+| image_flag              = 
+| flag_size               = 
+| flag_alt                = 
+| flag_link               =
+| image_seal              = 
+| seal_size               = 
+| seal_alt                = 
+| seal_link               = 
+| image_shield            = 
+| shield_size             = 
+| shield_alt              = 
+| shield_link             = 
+| image_blank_emblem      = 
+| blank_emblem_type       = <!-- defaults to Logo -->
+| blank_emblem_size       = 
+| blank_emblem_alt        = 
+| blank_emblem_link       = 
+| nickname                = 
+| motto                   = 
+| anthem                  = 
+<!-- maps and coordinates ------>
+| pushpin_map             = Guatemala 
+| pushpin_label_position  = <!-- position of the pushpin label: left, right, top, bottom, none -->
+| pushpin_mapsize         = 
+| pushpin_map_caption     = location in Guatemala
+| pushpin_map_alt1        = 
+| pushpin_mapsize1        = 
+| coordinates             = {{coord|14|38|N|91|8|W|region:GT|display=inline}}
+| coor_pinpoint           = <!-- to specify exact location of coordinates (was coor_type) -->
+| coordinates_footnotes   = GNS-enwiki<!-- for references: use <ref> tags -->
+<!-- location ------------------>
+| subdivision_type        = Country
+|subdivision_name       = [[Image:Flag of Guatemala.svg|25px]] [[Guatemala]]
+|subdivision_type1      = [[Departments of Guatemala|Department]] 
+|subdivision_name1      = [[Image:Flag of Sololá Department.svg|25px]] [[Sololá Department|Sololá]]
+| subdivision_type2       = 
+| subdivision_name2       = <!-- etc., subdivision_type6 / subdivision_name6 -->
+<!-- established --------------->
+| established_title       = Catholic mission built<!-- Settled -->
+| established_date        = 1584
+| established_title1      = <!-- Incorporated (town) -->
+| established_date1       = 
+| established_title2      = <!-- Incorporated (city) -->
+| established_date2       = 
+| established_title3      = 
+| established_date3       = 
+| extinct_title           = 
+| extinct_date            = 
+| founder                 = 
+| named_for               = 
+<!-- government type, leaders -->
+| government_footnotes    = <!-- for references: use <ref> tags -->
+| government_type         = municipal
+| leader_party            = LIDER
+| leader_title            = Mayor
+| leader_name             = Moisés Miza Castro<ref>{{cite web|url=http://www.municipalidadesdeguatemala.info/alcaldes-16/alcaldes-solola-16.php |title=Alcaldes electos en el departamento de Sololá |website=Municipalidades de Guatemala |date=7 September 2015 |access-date=12 October 2015 |location=Guatemala |language=es |url-status=usurped |archive-url=https://web.archive.org/web/20151012152026/http://www.municipalidadesdeguatemala.info/alcaldes-16/alcaldes-solola-16.php |archive-date=October 12, 2015 }}</ref>
+| leader_title1           = 
+| leader_name1            = <!-- etc., up to leader_title4 / leader_name4 -->
+<!-- display settings  --------->
+| total_type              = <!-- to set a non-standard label for total area and population rows -->
+| unit_pref               = <!-- enter: Imperial, to display imperial before metric -->
+<!-- area ---------------------->
+| area_footnotes          = <!-- for references: use <ref> tags -->
+| area_magnitude          = <!-- use only to set a special wikilink -->
+| area_total_km2          = <!-- ALL fields with measurements have automatic unit conversion -->
+| area_total_sq_mi        = <!-- see table @ Template:Infobox settlement for details -->
+| area_land_km2           = 
+| area_land_sq_mi         = 
+| area_water_km2          = 
+| area_water_sq_mi        = 
+| area_water_percent      = 
+| area_urban_footnotes    = <!-- for references: use <ref> tags -->
+| area_urban_km2          = 
+| area_urban_sq_mi        = 
+| area_metro_footnotes    = <!-- for references: use <ref> tags -->
+| area_metro_km2          = 
+| area_metro_sq_mi        = 
+| area_rank               = 
+| area_blank1_title       = 
+| area_blank1_km2         = 
+| area_blank1_sq_mi       = 
+| area_blank2_title       = 
+| area_blank2_km2         = 
+| area_blank2_sq_mi       = 
+| area_note               = 
+<!-- elevation ----------------->
+| elevation_footnotes     = <!-- for references: use <ref> tags -->
+| elevation_m             = 1700
+| elevation_ft            = 
+| elevation_max_footnotes = <!-- for references: use <ref> tags -->
+| elevation_max_m         = 3144
+| elevation_max_ft        = 
+| elevation_min_footnotes = <!-- for references: use <ref> tags -->
+| elevation_min_m         = 1562
+| elevation_min_ft        = 
+<!-- population ---------------->
+| population_footnotes    = 
+| population_total        = 31805
+| population_as_of        = 2021
+| population_rank         = 
+| population_density_km2  = <!-- for automatic calculation of any density field, use: auto -->
+| population_density_sq_mi= 
+| population_est          = 
+| pop_est_as_of           = 
+| population_urban        = 17101<ref>[https://www.citypopulation.de/en/guatemala/admin/solol%C3%A1/0713__san_lucas_tolim%C3%A1n/ San Lucas Tolimán]</ref>
+| population_density_urban_km2   = 
+| population_density_urban_sq_mi = 
+| population_metro        = 
+| population_density_metro_km2   = 
+| population_density_metro_sq_mi = 
+| population_density      = 
+| population_density_rank = 
+| population_blank1_title = 
+| population_blank1       = 
+| population_density_blank1_km2  = 
+| population_density_blank1_sq_mi= 
+| population_blank2_title = 
+| population_blank2       = 
+| population_density_blank2_km2  = 
+| population_density_blank2_sq_mi= 
+| population_demonym      = <!-- demonym, ie. Liverpudlian for someone from Liverpool -->
+| population_note         = 
+<!-- demographics (section 1) -->
+| demographics_type1      = 
+| demographics1_footnotes = <!-- for references: use <ref> tags -->
+| demographics1_title1    = 
+| demographics1_info1     = <!-- etc., up to demographics1_title5 / demographics1_info5 -->
+<!-- demographics (section 2) -->
+| demographics_type2      = 
+| demographics2_footnotes = <!-- for references: use <ref> tags -->
+| demographics2_title1    = 
+| demographics2_info1    = <!-- etc., up to demographics2_title5 / demographics2_info5 -->
+<!-- time zone(s) -------------->
+| timezone1              = [[Central Time Zone|Central Time]]
+| utc_offset1             = -6
+| timezone1_DST      = 
+| utc_offset1_DST     = 
+<!-- postal codes, area code --->
+| postal_code_type   = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal_code           = 
+| postal2_code_type = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal2_code         = 
+| area_code_type     = [[list of country calling codes|Country calling code]]<!-- defaults to: Area code(s) -->
+| area_code             = 502
+| geocode                =
+| iso_code               = 
+<!-- twin cities --------------->
+| twin1                    = 
+| twin1_country       = 
+| twin2                    = 
+| twin2_country       = <!-- etc., up to twin9 / twin9_country -->
+<!-- blank fields (section 1) -->
+| blank_name_sec1 = [[Köppen climate classification|Climate]]
+| blank_info_sec1    = [[Tropical savanna climate|Aw]]
+| blank1_name_sec1 = 
+| blank1_info_sec1    = 
+| blank2_name_sec1 = 
+| blank2_info_sec1    = <!-- etc., blank6_name_sec1 / blank6_info_sec1 -->
+<!-- blank fields (section 2) -->
+| blank_name_sec2   = 
+| blank_info_sec2      = 
+| blank1_name_sec2 = 
+| blank1_info_sec2    = 
+| blank2_name_sec2 = 
+| blank2_info_sec2    = <!-- etc., blank6_name_sec2 / blank6_info_sec2 -->
+<!-- website, footnotes -------->
+| website                 = [http://www.inforpressca.com/sltoliman/ www.inforpressca.com/sltoliman]
+| footnotes               = 
+}}
+
+'''San Lucas Tolimán''' is a [[Municipalities of Guatemala|municipality]] in the [[Sololá Department|Sololá department]] of [[Guatemala]].<ref>{{cite web|url=http://www.sanlucasmission.org |title=San Lucas Mission |publisher=San Lucas Mission}}</ref> The town of 17,000 people sits on the southeastern shore of [[Lago de Atitlán]]. The population is 90–95% Highland Maya. There is a population of about the same size living in the surrounding villages.
+
+At {{convert|1700|m|ft}} altitude the town offers "eternal spring" with annual temperatures ranging from 50 to 80 degrees F. The dry season runs from November through June/July (called "summer" locally) and the rainy season runs the other six months ("winter"). The area is free of malaria due to its elevation. The area's elevation ranges from {{convert|1562|m|ft}} along the lake to {{convert|3144|m|ft}} at the summit of [[Volcán Tolimán]]. Volcán Tolimán is just west of town.
+
+==History==
+
+===Spanish colony===
+
+After the [[Spanish conquest of Guatemala]], San Lucas Tolimán was part of the [[Tecpán Guatemala|Tecpán Atitlán]] "corregimiento" (English: Province) and when it turned into a major municipality in 1730, it became part of it as well;<ref name=anoveros891/> regarding the [[Roman Catholic Church|Catholic faith]], this was in charge of the [[franciscans]], who had convents and doctrines in the area covered by the modern departments of [[Sacatepéquez]], [[Chimaltenango Department|Chimaltenango]], [[Sololá Department|Sololá]], [[Quetzaltenango Department|Quetzaltenango]], [[Totonicapán Department|Totonicapán]], [[Suchitepéquez Department|Suchitepéquez]] and [[Escuintla Department|Escuintla]]. The "Provincia del Santísimo Nombre de Jesús" (English:"Province of the most Holy Name of Jesus"), as the Franciscan area was then called, reached up to 24 convents.<ref name=anoveros891>{{harvnb|García Añoveros|1989|p=891}}</ref> In 1586, friar Alonso Ponce refers to San Lucas Tolimán as "little town".<ref>{{Cite web |url=http://www.sanlucasmission.com/ |title=San Lucas Mission |access-date=2008-06-13 |archive-date=2008-05-09 |archive-url=https://web.archive.org/web/20080509160807/http://www.sanlucasmission.com/ |url-status=dead }}</ref>
+
+Under franciscan tenure, both in the [[Santiago Atitlán]] convent town as in the native towns in its annexed doctrines —such as San Lucas Tolimán—, there was religious teaching for 6-year-old girls and older starting at 2:00 pm and for boys of the same age starting at sunset;  the class lasted for 2 hours and consisted on memorizing the church teaching and prayers and to make some exercises with the [[catechism]] and it was run by a priest or by elder natives, called "fiscales".<ref name=anoveros896>{{harvnb|García Añoveros|1989|p=896}}</ref> Adults attended Mass every Sunday and holiday and after mass, there were religious teachings in their own language.<ref name=anoveros896/> [[Lent]] was a time of the year when the friars prepared the natives thoroughly, using their own language to accomplish their goals; every Friday of Lent there was a procession following the Rosary steps all the way to the Calvary temple.<ref name=anoveros897>{{harvnb|García Añoveros|1989|p=897}}</ref>
+
+In 1754, as part of the [[borbon reforms]], the Franciscans where forced to, give their doctrines to the [[secular clergy]];{{sfn|Juarros|1818|p=338}} thus, when archbishop [[Pedro Cortés y Larraz]] visited Panajachel in 1770, he described it as a member of the "Santiago Atitlan parish".{{sfn|Cortés y Larraz|2001|p=409-412}}
+
+===After independence from Spain===
+{{See also|Justo Rufino Barrios}}
+
+The town was elevated to municipality category on 2 September 1877, during the liberal regime of general [[Justo Rufino Barrios]].<ref>{{cite web|url=http://www.sanlucasmission.org/history_sanlucas.php|title=History of San Lucas Tolimán|website=San Lucas Mission|access-date=14 October 2015|location=Guatemala|url-status=dead|archive-url=https://web.archive.org/web/20120305045031/http://www.sanlucasmission.org/history_sanlucas.php|archive-date=5 March 2012}}</ref>
+
+===20th century: San Lucas Mission===
+
+The area is well known as being the site of the [[San Lucas Tolimán Mission]], overseen by the [[Diocese of New Ulm]] in the city of [[New Ulm, Minnesota]], which is a suffragan see in the [[Ecclesiastical Province]] of the [[Archdiocese of Saint Paul and Minneapolis]]. The Mission was founded in the 1960s by [[Monsignor]] [[Gregory Thomas Schaffer]], who was responsible for starting up a series of education, health, and agriculture initiatives, including the granting of 3 acres of land each to 4,000 families, the launch of medical clinics, and the start of a fair-price coffee initiative. Katie Wallyn, a missionary for the [[Catholic Church]] from [[Minnesota]], has been helping the downtrodden their with her foundation [[L.E.A.S.T]], helping the elderly with a loving manner.<ref name=lucas12>{{cite web|date=6 June 2012|title=San Lucas Mission|url=http://www.catholicnews.com/data/briefs/cns/20120606.htm#head4|archive-url=https://web.archive.org/web/20120608170844/http://www.catholicnews.com/data/briefs/cns/20120606.htm#head4|url-status=dead|archive-date=June 8, 2012|website=Catholics News Service|access-date=6 July 2012}}</ref> Monsignor Schaffer encouraged a group of his lay volunteers to found Agua del Pueblo (AdP).<ref>{{Cite journal|last1=Chipman |first1=C. |first2=V. |last2=Strait |first3=B. |last3=Clemens |year=2014 |title=Who Cares About the Community? Agua del Pueblo as a case study for water-related non-profit work |journal=American Journal of Social Issues and Humanities|volume=4|issue=6|pages=319–334}}</ref> AdP is the oldest non governmental organization dedicated to water supply and sanitation in the world. Following the death of Monsignor Schaffer at the age of 78 in St. Paul of a rare form of [[lymphoma]], a new group called the "Friends of San Lucas" has been appointed to continue the work in the area.<ref name=lucas12/>
+
+===21st century===
+
+On 13 October 2015, the [[Santiago Atitlán]] Courthouse issued a warrant for the arrest of the still mayor of San Lucas Tolimán, Oscar Pic Solís, for several charges; municipality secretary, Gaspar Cholotió Hernández, and treasurer, Alberto Cumes Cali were also arrested.<ref name=alcalde>{{cite news|url=http://elperiodico.com.gt/2015/10/13/pais/alcalde-de-san-lucas-toliman-es-buscado-por-la-ley/ |title=Alcalde de San Lucas Tolimán es buscado por la ley |newspaper=[[El Periódico (Guatemala)|ElPeriódico]] |location=Guatemala |date=13 October 2015 |access-date=14 October 2015 |url-status=dead |archive-url=https://web.archive.org/web/20151014203548/http://elperiodico.com.gt/2015/10/13/pais/alcalde-de-san-lucas-toliman-es-buscado-por-la-ley/ |archive-date=October 14, 2015 }}</ref> Pic Solis had been mayor since 2007, with the [[Unidad Nacional de la Esperanza]] party, but he was not re-elected in the 2015 elections.<ref name=alcalde/>
+
+== Culture ==
+=== Music ===
+[[The San Lucas Band]] were founded in San Lucas Tolimán in 1921, and recorded their album ''Music of Guatemala'' there in 1974.<ref>{{citation |url=https://www.rts.ch/info/culture/musiques/14662488-experience-musicale-inouie-lalbum-du-san-lucas-band-est-reedite-par-bongo-joe.html |title=Expérience musicale inouïe, l'album du San Lucas Band est réédité par Bongo Joe |trans-title=An unprecedented musical experience, the San Lucas Band album is being reissued by Bongo Joe |website=[[Radio Télévision Suisse]] |author=Thierry Sartoretti |language=fr |date=2024-02-02 |access-date=2024-12-18}}</ref>
+
+== Territory ==
+
+San Lucas Tolimán has an area of 116 [[Square kilometer|km<sup>2</sup>]] and is divided as follows:
+
+{|class="wikitable"
+|+ San Lucas Tolimán Administrative division<ref name=Zetina6>{{harvnb|Zetino Boteo|2008|p=6}}</ref>
+|-
+! Category
+! As of 1985
+! As of 1994
+|-
+! Municipal capital
+| style="text-align: center" colspan=2|San Lucas Tolimán
+|-
+! Villages
+|
+* Pachitulul
+* Panimaquip
+| style="text-align: center"|Panimaquip
+|-
+! Rural settlements
+|Tzlamabaj
+|{{div col|colwidth=10em}}
+* Pachojilá
+* Pachitulul
+* Pacoc
+* La Puerta
+* San Martín
+* Tierra Santa
+* Totolyá
+* Pampojilá
+{{div col end}}
+|-
+! Micro sections
+|
+* Pampojilá
+* Patzibir
+* Chanán
+| style="text-align: center"|N/A 
+|-
+! Residential neighborhoods
+| style="text-align: center"|N/A
+|
+* El Mirador
+* La Nueva Esperanza
+|}
+
+==Climate==
+
+San Lucas Tolimán has tropical climate ([[Köppen climate classification|Köppen]]: ''Aw'').
+
+{{Weather box
+|width=auto
+|location = San Lucas Tolimán
+|metric first = yes
+|single line = yes
+|Jan mean C = 18.8
+|Feb mean C = 18.6
+|Mar mean C = 19.5
+|Apr mean C = 19.6
+|May mean C = 19.6
+|Jun mean C = 18.9
+|Jul mean C = 19.3
+|Aug mean C = 19.0
+|Sep mean C = 18.7
+|Oct mean C = 18.8
+|Nov mean C = 18.8
+|Dec mean C = 18.3
+|year mean C = 
+|Jan high C = 25.5
+|Feb high C = 25.4
+|Mar high C = 26.3
+|Apr high C = 25.7
+|May high C = 25.3
+|Jun high C = 23.3
+|Jul high C = 24.4
+|Aug high C = 24.3
+|Sep high C = 23.7
+|Oct high C = 24.0
+|Nov high C = 24.9
+|Dec high C = 24.9
+|year high C =
+|Jan low C = 12.2
+|Feb low C = 11.9
+|Mar low C = 12.8
+|Apr low C = 13.5
+|May low C = 14.0
+|Jun low C = 14.5
+|Jul low C = 14.2
+|Aug low C = 13.8
+|Sep low C = 13.8
+|Oct low C = 13.6
+|Nov low C = 12.8
+|Dec low C = 11.8
+|year low C =
+|Jan precipitation mm = 3
+|Feb precipitation mm = 18
+|Mar precipitation mm = 16
+|Apr precipitation mm = 51
+|May precipitation mm = 144
+|Jun precipitation mm = 387
+|Jul precipitation mm = 209
+|Aug precipitation mm = 220
+|Sep precipitation mm = 388
+|Oct precipitation mm = 214
+|Nov precipitation mm = 44
+|Dec precipitation mm = 10
+|year precipitation mm =
+|source 1 = Climate-Data.org<ref name="Climate-Data.org">
+{{cite web|url=http://en.climate-data.org/location/216888/
+|title= Climate: San Lucas Tolimán
+|access-date= 11 October 2015
+|website= Climate-Data.org}}</ref>
+}}
+
+== Geographic location ==
+Located 42&nbsp;km south of department capital, [[Sololá, Sololá]].
+
+{{Geographic location
+|Center=San Lucas Tolimán
+|North=[[San Antonio Palopó]] and [[Lake Atitlán]], in [[Sololá Department]]
+|East= [[Pochuta]] and [[Patzún]], [[Chimaltenango Department]] municipality<ref name=segeplan>{{cite web|author=SEGEPLAN |url=http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=20:solola&Itemid=333 |title=Municipios del departamento de Sololá |website=SEGEPLAN |location=Guatemala |access-date=7 July 2015 |language=es |url-status=dead |archive-url=https://web.archive.org/web/20150707072558/http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=20:solola&Itemid=333 |archive-date=July 7, 2015 }}</ref>
+|West=[[Santiago Atitlán]], [[Sololá Department]] municipality
+|South=[[Patulul]], [[Suchitepéquez Department]] municipality<ref name=segeplan/>
+}}
+
+==See also==
+* {{Portal-inline|Guatemala}}
+* {{Portal-inline|Geography}}
+* [[La Aurora International Airport]]
+* [[List of places in Guatemala]]
+
+== Notes and references ==
+
+=== References ===
+{{Reflist}}
+
+===Bibliography===
+{{Refbegin}}
+
+* {{cite book|title=Descripción Geográfico-Moral de la Diócesis de Goathemala
+|url=https://books.google.com/books?id=h5ZaAAAAMAAJ|author-link=Pedro Cortés y Larraz|series=Corpus Hispanorum de Pace. Segunda Serie|issn=0589-8056 |last=Cortés y Larraz|first=Pedro|editor=García, Jesús María |editor2=Blasco, Julio Martín|publisher=Consejo Superior de Investigaciones Científicas|year=2001 |isbn=9788400080013 |orig-year=1770|language=es}}
+* {{cite journal|last=García Añoveros|first=Jesús|title=Las misiones franciscanas de la Mosquitia nicaragüense|journal=Actas del III Congreso Internacional Sobre los Franciscanos en el Nuevo Mundo (Siglo XVII)|year=1989|url=http://dspace.unia.es/bitstream/handle/10334/1844/20García.pdf|language=es}}
+* {{cite book|last=Juarros|first=Domingo|title=Compendio de la historia de la Ciudad de Guatemala|year=1818|publisher=Ignacio Beteta|location=Guatemala|url=https://archive.org/stream/compendiodelahis21juar#page/n3/mode/2up|language=es}}
+* {{cite book|last1=Maudslay|first1=Alfred Percival|author-link=Alfred Percival Maudslay|title=A glimpse at Guatemala, and some notes on the ancient monuments of Central America|last2=Maudslay|first2=Anne Cary|location=London, UK|publisher=John Murray|year=1899|url=https://commons.wikimedia.org/wiki/File:A_Glimpse_at_Guatemala.pdf}}
+* {{cite book|url=http://biblioteca.usac.edu.gt/EPS/03/03_0680_v18.pdf|last=Zetino Boteo|first=Rony Arceny|chapter=Costos y rentabilidad de unidades agroindustrailes (fabricación de café molido)|title=Diagóstico socioeconómico, potencialidades productivas y propuestas de inversión, municipio de San Lucas Tolimán, departamento de Sololá|volume=18|series=Ejercicio profesional supervisado|location=Guatemala|year=2008|publisher=Facultad de Ciencias Económicas de la [[Universidad de San Carlos de Guatemala]]|language=es}}
+{{Refend}}
+
+==External links==
+* [http://www.sanlucasmission.org San Lucas Mission]
+
+{{Sololá Department}}
+{{Authority control}}
+{{Coord|14|38|N|91|08|W|display=title|region:GT_type:city_source:GNS-enwiki}}
+
+{{DEFAULTSORT:San Lucas Toliman}}
+[[Category:Municipalities of the Sololá Department]]

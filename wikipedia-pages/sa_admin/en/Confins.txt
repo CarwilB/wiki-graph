@@ -1,0 +1,84 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->| official_name = Confins
+| other_name = 
+| native_name = <!-- for cities whose native name is not in English -->
+| nickname = 
+| settlement_type = City
+| motto = <!-- images and maps  ----------->
+| image_skyline = Vista parcial de Confins MG.JPG
+| imagesize = 280px
+| image_caption = Partial view of Confins
+| image_flag = File:Flag of Confins - MG - Brazil.png
+| flag_size = 
+| image_shield = Coat of Arms of Confins - MG - Brazil.png
+| image_map = File:MinasGerais Municip Confins.svg
+| mapsize = 
+| map_caption = Location in Minas Gerais
+| pushpin_map = Brazil
+| pushpin_map_caption = Location in [[Brazil]]
+| subdivision_type = Country
+| subdivision_name = {{flag|Brazil}}
+| subdivision_type1 = [[Regions of Brazil|Region]]
+| subdivision_name1 = [[Southeast Region, Brazil|Southeast]]
+| subdivision_type2 = [[States of Brazil|State]]
+| subdivision_name2 = [[Minas Gerais]]
+| subdivision_type3 = [[Mesoregion (Brazil)|Mesoregion]]
+| subdivision_name3 = [[Metropolitan of Belo Horizonte (Mesoregion)|Metropolitan of Belo Horizonte]]
+| subdivision_type4 = [[Microregion (Brazil)|Microregion]]
+| subdivision_name4 = [[Belo Horizonte (Microregion)|Belo Horizonte]]
+<!-- Politics ----------------->| government_footnotes = 
+| government_type = 
+| leader_title = Mayor
+| leader_name = Geraldo Gonçalves dos Santos
+| established_title = [[Municipal incorporation|Incorporated]]
+| established_date = December 21, 1995
+<!-- Coordinates --------------------->| coordinates = {{coord|19|37|45|S|43|59|30|W|region:BR|display=inline,title}}
+| elevation_footnotes = <!--for references: use <ref> tags-->
+| elevation_m = 
+| elevation_ft = <!-- accord. to Google Earth-->
+<!-- Area    --------------------->| unit_pref = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+| area_magnitude = 
+| area_total_km2 = 42008
+| area_land_km2 = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+| area_footnotes = <ref name ="IBGE_Área">{{cite web|url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm|title=Área territorial oficial|language=pt|trans-title=Official Territorial Area|access-date=2010-12-05|date=2002-10-10|publisher=[[Brazilian Institute of Geography and Statistics|Brazilian Institute of Geography and Statistics (IBGE)]]|archive-url=https://web.archive.org/web/20120106154550/http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm|archive-date=2012-01-06|url-status=dead}}</ref>
+<!-- Population   ----------------------->| population_as_of = [[2022 Brazilian Census|2022 Census]]
+| population_footnotes = <ref name="IBGE">{{cite web |url=https://cidades.ibge.gov.br/brasil/mg/confins/panorama |title=IBGE 2025 |author=Brazilian Institute of Geography and Statistics (IBGE)}}</ref>
+| population_note = 
+| population_total = 7,350
+| population_density_km2 = <!-- General information  --------------->
+| population_est = 7,758
+| pop_est_as_of = 2025
+| pop_est_footnotes = <ref name="IBGE"/>
+| timezone = [[Time in Brazil|BRT]]
+| utc_offset = &minus;3
+| timezone_DST = 
+| utc_offset_DST = <!-- Area/postal codes & others -------->
+| postal_code_type = 
+| postal_code = 
+| area_code = 31
+| blank_name = '''[[Human Development Index|HDI]]''' (2010) <ref name="IDH_2010">{{cite web |url= http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |title= Ranking decrescente do IDH-M dos municípios do Brasil | language=pt|trans-title=Ranking of HDI-M of Brazilian Municipalities |date= 2010 |publisher=[[United Nations Development Programme|United Nations Development Programme (UNDP)]] |format=PDF |access-date= 2013-08-03 }}</ref>
+| blank_info = 0.747
+| blank_footnote = 
+| website = [http://www.confins.mg.gov.br/ Official Website]
+| footnotes = 
+}}
+
+'''Confins''' is a Brazilian [[Municipalities of Brazil|municipality]] located in the state of [[Minas Gerais]]. Its population as of 2025 is estimated to be 7,758 people.<ref name="IBGE" /> The area of the municipality is {{cvt|42.008|km2}}. The city belongs to the mesoregion Metropolitana de Belo Horizonte and to the microregion of Belo Horizonte. It is home of the international airport of Belo Horizonte, [[Tancredo Neves International Airport]].
+
+==See also==
+* [[List of municipalities in Minas Gerais]]
+
+== References ==
+{{reflist}}
+
+==External links==
+* [http://www.portaldeconfins.com.br/ The official site of City of Confins]
+* [http://www.infraero.gov.br/portal/index.php/us/airports/minas-gerais/tancredo-airport.html Tancredo Neves International Airport|Confins]{{Dead link|date=July 2020 |bot=InternetArchiveBot |fix-attempted=yes }}
+
+{{Municipalities of Minas Gerais|state=collapsed}}
+
+{{DEFAULTSORT:Confins}}
+[[Category:Municipalities in Minas Gerais]]
+
+{{BeloHorizonte-geo-stub}}

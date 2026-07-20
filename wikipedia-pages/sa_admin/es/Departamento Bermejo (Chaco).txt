@@ -1,0 +1,74 @@
+{{Ficha de entidad subnacional
+| nombre = Bermejo
+| nombre completo = Bermejo
+| unidad = [[Departamentos y partidos de la Argentina|Departamento]]
+| tipo_superior_1 = [[Provincias de la Argentina|Provincia]]
+| superior_1 = {{bandera2|Provincia del Chaco}}
+| mapa = Bermejo (Provincia del Chaco - Argentina).svg
+| mapa_loc = 
+| capital = [[La Leonesa]]
+| capital_denominación = [[Capital (política)|Cabecera]]
+| subdivisión = [[Anexo:Municipios del Chaco|6 municipios]]:<br />[[General Vedia (Chaco)|General Vedia]]<br />[[Isla del Cerrito]]<br />[[La Leonesa (Chaco)|La Leonesa]]<br />[[Las Palmas (Chaco)|Las Palmas]]<br />[[Puerto Bermejo]]<br />[[Puerto Eva Perón]]
+| superficie = 2562
+| superficie_puesto = 12
+| superficie_post = 
+| población = 28144<ref name="INDEC">{{cita web |url=https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf |título=Cuadro 1.4 Provincia del Chaco. Población por sexo registrado al nacer y edad mediana, según departamento. - Año 2022 |publicación=Censo Nacional de Población, Hogares y Viviendas 2022. - Resultados definitivos |editorial=Instituto Nacional de Estadística y Censos (INDEC) |ubicación=Buenos Aires |fecha= Noviembre de 2023 |isbn=978-950-896-632-2 |página=33}}</ref>
+| población_puesto = 
+| población_año = 2022
+| población_post = 
+| densidad = 10.99<ref name = "City">{{cita web |url=https://www.citypopulation.de/en/argentina/admin/chaco/22014__bermejo/ |título=Bermejo - Department in Chaco (Argentina) |publicación=Citypopulation |idioma=en |fecha=28 de noviembre de 2023}}</ref>
+| densidad_año = 2022
+| capital_población  = (2010) 8823<ref name = "City Loc">{{cita web |url=https://www.citypopulation.de/en/argentina/chaco/22014__bermejo/ |título=Bermejo - Department in Chaco - Localities|publicación=CityPopulation |fecha=26 de diciembre de 2013 |idioma=inglés}}</ref>
+| ciudad_grande = [[La Leonesa - Las Palmas]]
+| capital_coor = 27_02_30_S_58_42_20_W
+}}
+[[Archivo:Bermejo (Chaco, Argentina).jpg|miniaturadeimagen|Atardecer en Bermejo]]
+'''Bermejo''' es uno de los 25 departamentos en los que se divide la [[provincia del Chaco]] ([[Argentina]]).
+
+== Historia ==
+Fue creado el 1 de julio de 1953, mediante la Ley provincial N.º 6. Esta norma estableció 24 divisiones administrativas en la entonces recientemente creada [[Provincia Presidente Perón]], actual provincia del Chaco.{{refn|group=Nota|La Ley Nª 6 de división política de la provincia estableció el nombre "Partido" para cada una de las unidades definidas. En 1972 se promulgó la Ley 1099 por la cual el nombre "Partido" fue reemplazado por "Departamento" en las normas vinculadas al ordenamiento territorial.<ref name= “L1099”>{{cita web |url=https://digesto.legislaturachaco.gob.ar/Documentos/Ley/VistaPublicaLey/300958 |título=SUSTITUYE "PARTIDO" POR "DEPARTAMENTO" EN LS.6; 63; 120 Y 631 |publicación=Poder Legislativo de la Provincia del Chaco}}</ref>}} Al momento de su creación, el departamento Bermejo fue llamado «Partido 4 de Junio» y su cabecera era la localidad de [[Las Palmas (Chaco)|Las Palmas]].{{harvnp|Leoni|2022|p=33 - Nota al pie 106}}
+
+En 1954, mediante la Ley N.º 63 se estableció que la cabecera del partido de 4 de Junio pasaría a ser la localidad de [[La Leonesa]],<ref name = "L63">{{cita web |url=https://digesto.legislaturachaco.gob.ar/Documentos/Ley/VistaPublicaLey/300953 |título=MODIFICA ART.3 L.6 |publicación=Poder Legislativo de la Provincia del Chaco}}</ref> dado que la localidad de Las Palmas estaba en su totalidad asentada y era propiedad de la compañía Las Palmas del Chaco Austral S.A.{{harvnp|Leoni|2022|p=34}}
+
+== Superficie y límites ==
+El departamento tiene una superficie de {{formatnum|2562}} [[Kilómetro cuadrado|km²]] y limita al norte con la [[provincia de Formosa]], al noroeste con el departamento [[Departamento Libertador General San Martín (Chaco)|Libertador General San Martín]], al sur y oeste con el departamento [[Departamento Primero de Mayo|Primero de Mayo]] y al este con la [[Paraguay|República de Paraguay]].
+
+== Demografía ==
+Cuenta con {{indec|28144|2022}}, lo que representa un incremento promedio anual del 1% frente a los {{indec|25052|2010}} del censo anterior.<ref name = "City"/> La mediana de edad se estableció en 30 años.<ref name="INDEC"/>
+
+{{Gráfica de evolución|tipo=demográfica|color_30=blue|nombre= Departamento Bermejo|altura=300|anchura=300|1991|23046|2001|24215|2010|25052|2022|28144|notas=<small>Fuente: censos nacionales del [[INDEC]]</small>}}
+
+== Localidades ==
+La mayor parte de la población se concentra en la [[La Leonesa|ciudad cabecera]] y en la ciudad de [[Las Palmas (Chaco)|Las Palmas]], que por su cercanía y expansión constituyen el conglomerado urbano [[La Leonesa-Las Palmas]]. El resto de la población se distribuye en pequeñas localidades de carácter rural o se encuentra dispersa.<ref name = "City Loc"/>
+{| class="wikitable"
+|- bgcolor="#e0e0e0"
+!Cabecera<br><small>(Población 2010)</small>
+!Ciudades<br><small>(Población 2010)</small>
+!Localidades<br><small>(Población 2010)</small>
+|-
+|[[La Leonesa]] <small>({{formatnum|8823}} hab.)</small>
+|
+* [[Las Palmas (Chaco)|Las Palmas]] <small>({{formatnum|4914}} hab.)</small>
+|
+* [[General Vedia]] <small>({{formatnum|1751}} hab.)</small>
+* [[Isla del Cerrito (localidad)|Isla del Cerrito]] <small>({{formatnum|1758}} hab.)</small>
+* [[Puerto Bermejo Nuevo]] <small>({{formatnum|1733}} hab.)</small>
+* [[Puerto Bermejo Viejo]] <small>({{formatnum|86}} hab.)</small>
+* [[Puerto Eva Perón]] <small>({{formatnum|609}} hab.)</small>
+|-|- bgcolor="#f0f0f0"
+|}
+
+== Economía ==
+La economía del departamento Bermejo se basa en el [[sector primario]]. Hacia 2018/2019 concentraba la totalidad de la producción de arroz de la provincia del Chaco; la ganadería más significativa es la cría de [[porcino]]s.<ref>{{cita publicación |url=https://repositorio.inta.gob.ar/xmlui/bitstream/handle/20.500.12123/10601/INTA_CRChacoFormosa_Piedra_D_sector_agropecuario_agroindustrial_provincia_Chaco.pdf?sequence=1&isAllowed=y |título=El sector agropecuario/agroindustrial de la provincia del Chaco |autor1=Piedra, Diana |autor2=Pellerano, Laura |autor3=Tortarolo, Gabriel |autor4=Ordenavía, María Noelia |autor5=D’Angelo, María Leonor |editorial=Instituto Nacional de Tecnología Agropecuaria |año=2020 |páginas=11 y 24}}</ref>
+
+== Notas == 
+{{listaref|group=Nota}}
+
+== Referencias ==
+{{listaref}}
+
+== Bibliografía ==
+* {{cita publicación |apellido={{versalita|Leoni}} |nombre=María Silvia |título=Los comienzos del Chaco provincializado : 1951-1955 |editorial=Instituto de Investigaciones Geohistóricas |año=2022 |isbn=978-987-4450-15-9|url=https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2022/08/Leoni-Los-comienzos-del-Chaco-provincializado-2ed.pdf }}
+
+{{Control de autoridades}}
+[[Categoría:Departamento Bermejo (Chaco)| ]]

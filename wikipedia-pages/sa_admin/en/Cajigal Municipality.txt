@@ -1,0 +1,63 @@
+{{Short description|Venezuelan municipality}}
+{{Infobox settlement 
+| name                    = Cajigal Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Cajigal
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = 
+| image_caption           = 
+| image_flag               = {{#property:P41}}
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Sucre State|Sucre]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Cajigal Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Sucre State|Sucre]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 
+| population_note         = 
+| population_total        = 
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = {{official website|{{#property:P856}}}}
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+'''Cajigal''' is a municipality of [[Sucre (state)|Sucre]], [[Venezuela]]. The capital is [[Yaguaraparo]]. As of 2015, Cajigal had a population of 25,225.<ref>{{Cite web|title=Cajigal - Population - CityFacts|url=https://www.city-facts.com/cajigal|access-date=2021-05-20|website=www.city-facts.com}}</ref><ref>{{Cite web|title=+Bioline International Official Site (site up-dated regularly)|url=http://www.bioline.org.br/request?cg09054|access-date=2021-05-20|website=www.bioline.org.br}}</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Municipalities of Sucre (state)]]
+
+{{SucreVE-geo-stub}}

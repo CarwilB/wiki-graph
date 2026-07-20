@@ -1,0 +1,69 @@
+{{Ficha de entidad subnacional
+| nombre             = General Donovan
+| nombre completo    = General Donovan
+| unidad             = [[Departamentos y partidos de la Argentina|Departamento]]
+| tipo_superior_1    = [[Provincias de la Argentina|Provincia]]
+| superior_1         = {{bandera2|Provincia del Chaco}}
+| mapa               = General Donovan (Provincia del Chaco - Argentina).svg
+| mapa_loc           = 
+| capital            = [[Makallé]]
+| capital_denominación = [[Capital (política)|Cabecera]]
+| subdivisión        = [[Anexo:Municipios del Chaco|4 municipios]]:<br />[[La Escondida (Chaco)|La Escondida]]<br />[[La Verde (Chaco)|La Verde]]<br />[[Lapachito]]<br />[[Makallé (Chaco)|Makallé]]
+| superficie         = 1487
+| superficie_puesto  = 
+| superficie_post    = 
+| población          = 15096<ref name="INDEC">{{cita web |url=https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf |título=Cuadro 1.4 Provincia del Chaco. Población por sexo registrado al nacer y edad mediana, según departamento. - Año 2022 |publicación=Censo Nacional de Población, Hogares y Viviendas 2022. - Resultados definitivos |editorial=Instituto Nacional de Estadística y Censos (INDEC) |ubicación=Buenos Aires |fecha= Noviembre de 2023 |isbn=978-950-896-632-2 |página=33}}</ref>
+| población_puesto   = [[Anexo:Departamentos de la Provincia del Chaco|18]]
+| población_año      = 2022
+| población_urb      = (2010) 10300<ref name = "City Loc">{{cita web |url=https://www.citypopulation.de/en/argentina/chaco/22056__general_donovan/ |título=General Donovan - Department in Chaco - Localities|publicación=CityPopulation |fecha=26 de diciembre de 2013 |idioma=inglés}}</ref>
+| población_post     = 
+| densidad           = 10.15<ref name = "City">{{cita web |url=https://www.citypopulation.de/en/argentina/admin/chaco/22056__general_donovan/ |título=General Donovan - Department in Chaco (Argentina) |publicación=Citypopulation |idioma=en |fecha=28 de noviembre de 2023}}</ref>
+| densidad_año       = 2022
+| ciudad_grande      = [[Makallé]]
+| capital_población  = (2010) 4322<ref name = "City Loc"/>
+| capital_coor       = 27_12_26_S_59_17_18_W
+}}
+
+'''General Donovan''' es un departamento en la [[provincia del Chaco]], [[Argentina]].
+
+== Historia ==
+Fue creado el 1 de julio de 1953, mediante la Ley Provincial N.º 6.<ref>{{cita web |url=https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2022/08/Leoni-Los-comienzos-del-Chaco-provincializado-2ed.pdf |título=Los comienzos del Chaco provincializado : 1951-1955 |autor= Leoni, María Silvia |editorial=Instituto de Investigaciones Geohistóricas |año=2022 |isbn=978-987-4450-15-9 |página=33 Nota al pie Nº 106}}</ref> Esta norma estableció 24 divisiones administrativas en la entonces recientemente creada [[provincia Presidente Perón]], actual provincia del Chaco.{{refn|group=Nota|La Ley Nª 6 de división política de la provincia estableció el nombre "Partido" para cada una de las unidades definidas. En 1972 se promulgó la Ley 1099 por la cual el nombre "Partido" fue reemplazado por "Departamento" en las normas vinculadas al ordenamiento territorial.<ref name= “L1099”>{{cita web |url=https://digesto.legislaturachaco.gob.ar/Documentos/Ley/VistaPublicaLey/300958 |título=SUSTITUYE "PARTIDO" POR "DEPARTAMENTO" EN LS.6; 63; 120 Y 631 |publicación=Poder Legislativo de la Provincia del Chaco}}</ref>}}
+
+El [[censo argentino de 1960]] relevó una población de {{formatnum|10228}} habitantes, entre los que {{formatnum|2044}} personas fueron registradas como población urbana.<ref>{{cita publicación |url=https://biblioteca.indec.gob.ar/bases/minde/1c1960_6.pdf |título=Cuadro Nº 1 - Población total urbana y rural según sexo y densidad media por Departamento |publicación=Censo Nacional de Población 1960 - Tomo VI Zona Chaqueña |editorial=Dirección Nacional de Estadística y Censos |página=p. 2}}</ref>
+
+El nombre homenajea al general [[Antonio Dónovan]], segundo gobernador del [[Territorio Nacional del Chaco]], desde abril de 1887 a agosto de 1893. 
+
+== Superficie y límites ==
+El departamento tiene una superficie de 1487 km².<ref name = "City"/>
+Limita al norte con el departamento [[Departamento Sargento Cabral|Sargento Cabral]], al este con el departamento [[Departamento Primero de Mayo|Primero de Mayo]], al sur y sudeste con el departamento [[Departamento Libertad|Libertad,]] al sudoeste con el departamento [[Departamento Tapenagá|Tapenagá]] y al oeste con el departamento [[Departamento Presidencia de la Plaza|Presidencia de la Plaza]].
+
+== Demografía ==
+Cuenta con {{indec|15096|2022}}, lo que representa un incremento promedio anual del 0.98% frente a los {{indec|13490|2010}} del censo anterior.<ref name = "City"/> La mediana de edad se estableció en 30 años.<ref name="INDEC"/>
+
+{{Gráfica de evolución|tipo=demográfica|color_30=blue|nombre= Departamento General Donovan|altura=300|anchura=300|1991|11456|2001|13385|2010|13490|2022|15096|notas=<small>Fuente: censos nacionales del [[INDEC]]</small>}}
+
+== Localidades ==
+La mayor parte de la población se concentra en la [[Makallé|ciudad cabecera]] y en las ciudades de [[La Escondida (Chaco)|La Escondida]] y [[La Verde (Chaco)|La Verde]]. El resto de la población se agrupa en pequeños asentamientos de carácter rural o se encuentra dispersa.<ref name = "City Loc"/>
+{| class="wikitable"
+|- bgcolor="#e0e0e0"
+!Cabecera<br><small>(Población 2010)</small>
+!Ciudades<br><small>(Población 2010)</small>
+!Localidades<br><small>(Población 2010)</small>
+|-
+| [[Makallé]] <small>({{formatnum|4322}} hab.)</small>
+|
+* [[La Escondida (Chaco)|La Escondida]] <small>({{formatnum|3261}} hab.)</small>
+* [[La Verde (Chaco)|La Verde]] <small>({{formatnum|2717}} hab.)</small>
+|
+* [[Lapachito]] <small>({{formatnum|888}} hab.)</small>
+|-|- bgcolor="#f0f0f0"
+|}
+
+== Notas == 
+{{listaref|group=Nota}}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento General Donovan| ]]

@@ -1,0 +1,120 @@
+{{Ver desambig|prefixo=Se procura|pelo município brasileiro do estado do [[Amazonas]]|Humaitá (Amazonas)}}
+----
+{{Info/Município do Brasil
+| nome = Humaitá RS
+| foto = 
+| leg_foto = 
+| bandeira = Humaitársbanders.png
+| brasão = Brasão Humaitá.jpg
+| link_bandeira = 
+| link_brasão = 
+| link_hino = 
+| lema = 
+| gentílico = humaitense
+| mapa = Locator map of Humaitá in Rio Grande do Sul.svg
+| latP = S
+| latG = 27
+| latM = 33
+| latS = 46
+| lonP = O
+| lonG = 53
+| lonM = 58
+| lonS = 26
+| estado = Rio Grande do Sul
+| região_metropolitana = 
+| vizinhos = [[Boa Vista do Buricá]], [[Bom Progresso]], [[Campo Novo]], [[Crissiumal]], {{nowrap|[[Nova Candelária]]}}, [[Sede Nova]] e {{nowrap|[[Três Passos]]}}
+| dist_capital = 473
+| fundação = {{nowrap|{{dtlink|18|2|1959|idade}}}}
+| prefeito = Luiz Carlos Sandri
+| partido = [[PP]]
+| área = 135.01
+| área_ref = <ref name="ATT_BOT_AREA_0522">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/rs/humaita.html |titulo=Cidades e Estados |publicado=[[IBGE]] |ano=2021 |acessodata= 12 de maio de 2023}}</ref>
+| população = 4712
+| data_pop = 2021
+| população_ref = <ref name="ATT_BOT_POP_0522">{{Citar web |url=https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2021/POP2021_20221212.pdf |titulo=ESTIMATIVAS DA POPULAÇÃO RESIDENTE NO BRASIL E UNIDADES DA FEDERAÇÃO COM DATA DE REFERÊNCIA EM 1º DE JULHO DE 2021 |publicado=[[IBGE]] |ano=2021 |acessodata= 12 de maio de 2023}}</ref>
+| população_pos = [[Lista de municípios do Rio Grande do Sul por população|RS: 282º]] [[Lista de municípios do Brasil por população|BR: 4435º]]
+| clima = subtropical
+| sigla_clima = Cfa
+| altitude = 
+| idh = 0.738
+| data_idh = 2010
+| idh_ref = <ref name="ATT_BOT_IDH_0522">{{Citar web |url=http://www.atlasbrasil.org.br/ranking |titulo=Ranking |publicado=[[IBGE]] |ano=2010 |acessodata= 12 de maio de 2023}}</ref>
+| idh_pos = [[Lista de municípios do Rio Grande do Sul por IDH-M|RS: 170º]] [[Lista de municípios do Brasil por IDH|BR: 823º]]
+| pib = {{fmtn |184330.84 |mil}}
+| data_pib = 2020
+| pib_ref = <ref name="ATT_BOT_PIB_0522">{{Citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2020/base/base_de_dados_2010_2020_xls.zip |titulo=Produto Interno Bruto dos Municípios - 2010 a 2020 |publicado=[[IBGE]] |ano=2020 |acessodata= 12 de maio de 2023}}</ref>
+| pib_pos = [[Lista de municípios do Rio Grande do Sul por PIB|RS: 268º]] [[Lista de municípios do Brasil por PIB|BR: 3077º]]
+| pib_per_capita = 38921.21
+| data_pib_per_capita = 2020
+| fim_mandato = 2028
+}}
+'''Humaitá''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Rio Grande do Sul]].
+
+==Geografia==
+Sua população estimada em 2018 era de 4.788 pessoas,<ref name="IBGEest2018"/> sendo que a população no último censo (2010) era de 4.919 pessoas.<ref name="IBGE_POP">{{citar web |url=https://cidades.ibge.gov.br/brasil/rs/humaita/panorama |titulo=Estimativas da população residente com data de referência 1o de julho de 2017 |publicado=IBGE, Diretoria de Pesquisas, Coordenação de População e Indicadores Sociais}}</ref>
+
+==População==
+Referência:<ref>{{citar web |url=https://humaita.rs.gov.br/perfil-do-municipio/|titulo=Perfil do Município |publicado=Município de Humaitá |acessodata=11 de novembro de 2018}}</ref>
+<timeline>
+Colors =
+  id:lightgrey value:gray(0.9)
+  id:darkgrey  value:gray(0.7)
+  id:sfondo value:rgb(1,1,1)
+  id:barra value:rgb(0.6,0.7,0.8)
+
+ImageSize  = width:400 height:250
+PlotArea   = left:50 bottom:50 top:30 right:30
+DateFormat = x.y
+Period     = from:0 till:12000
+TimeAxis   = orientation:vertical
+AlignBars  = justify
+ScaleMajor = gridcolor:darkgrey increment:4000 start:0
+ScaleMinor = gridcolor:lightgrey increment:2000 start:0
+BackgroundColors = canvas:sfondo
+ 
+BarData=
+  bar:1970 text:1970
+  bar:1980 text:1980
+  bar:1991 text:1991
+  bar:2000 text:2000
+  bar:2010 text:2010
+  bar:2018 text:2018
+
+PlotData=
+  bar:1970 from:0 till:11262
+  bar:1980 from:0 till:8342
+  bar:1991 from:0 till:6030
+  bar:2000 from:0 till:5228
+  bar:2010 from:0 till:4919
+  bar:2018 from:0 till:4788
+
+PlotData=
+  bar:1970 at:11262 fontsize:M text:11.262 shift:(-12,5)
+  bar:1980 at:8342 fontsize:M text:8.342 shift:(-12,5)
+  bar:1991 at:6030 fontsize:M text:6.030 shift:(-12,5)
+  bar:2000 at:5228 fontsize:M text:5.228 shift:(-12,5)
+  bar:2010 at:4919 fontsize:M text:4.919 shift:(-12,5)
+  bar:2018 at:4788 fontsize:M text:4.788 shift:(-12,5)
+
+TextData=
+ fontsize:S pos:(19,32)
+  text:
+</timeline>
+
+{{Referências}}
+
+==Ver também==
+* Rota do Yucumã
+* [[Lista de municípios do Rio Grande do Sul]]
+* [[Lista de municípios do Rio Grande do Sul por população]]
+* [[Lista de municípios do Rio Grande do Sul por data de criação]]
+
+==Ligações externas==
+* [http://www.humaita.rs.gov.br/ Página da Prefeitura Municipal]
+* [http://www.camarahumaita.rs.gov.br/ Página da Câmara Municipal]
+
+{{Esboço-municípiosbr/Rio Grande do Sul}}
+{{Municípios do Rio Grande do Sul}}
+
+{{DEFAULTSORT:Humaita}}
+[[Categoria:Municípios do Rio Grande do Sul|{{PAGENAME}}]]

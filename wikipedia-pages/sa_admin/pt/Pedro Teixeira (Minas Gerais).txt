@@ -1,0 +1,66 @@
+{{Info/Município do Brasil
+<!-- GeoID=3149408 -->
+<!-- Cabeçalho -->
+| nome                 = Pedro Teixeira
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+| padroeiro            = [[Nossa Senhora de Lourdes]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=15 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão               = 
+| bandeira             = 
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = s:Hino do município de Pedro Teixeira
+| CEP                  = 36148-000 a 36149-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| aniversário          = 
+| fundação             ={{nowrap|{{dtlink|1|3|1963|idade}}}}
+| gentílico            =pedro-teixerense <ref name = IBGE>{{citar web|URL=https://cidades.ibge.gov.br/brasil/mg/pedro-teixeira/panorama |título=IBGE|publicado=Censo Demográfico - 2022}}</ref>
+| lema                 = 
+| prefeito             = Reinaldo Manoel de Oliveira<ref>{{citar web |url=https://divulgacandcontas.tse.jus.br/divulga/#/candidato/SUDESTE/MG/2045202024/130001904391/2024/49875|título=TSE|publicado=Divulgação de Candidaturas e Contas Eleitorais - Resultado / 2024 }}</ref>
+| partido              = [[Progressistas|PP]]
+| fim_mandato          = 2028
+| mapa                 = MinasGerais Municip PedroTeixeira.svg
+| latP                 = S | latG = 21 | latM = 42 | latS = 21
+| lonP                 = O | lonG = 43 | lonM = 44 | lonS = 45
+| estado               = Minas Gerais
+| mesorregião          = [[Mesorregião da Zona da Mata|Zona da Mata]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Juiz de Fora|Juiz de Fora]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Bias Fortes]], [[Lima Duarte (Minas Gerais)|Lima Duarte]], [[Juiz de Fora]]
+| dist_capital         = 259
+<!-- Características geográficas -->
+| área                 = 112.959
+| área_ref             = <ref name =IBGE/>
+| população            = 1810
+| data_pop             = Censo [[IBGE]]/[[2022]]<ref name=IBGE/>
+| altitude             = 
+| clima                = 
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.637 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/[[2010]] <ref name=IDH>{{citar web |url=https://www.undp.org/pt/brazil/idhm-municipios-2010|titulo=PNUD|publicado=Índice de Desenvolvimento Humano Municipal - 2010}}</ref>
+| pib                  = {{formatnum:30267.885}} mil
+| data_pib             = [[IBGE]]/[[2021]]<ref name=PIB>{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3149408|titulo=PIB por Município|publicado=Produto Interno Bruto dos Municípios - 2021}}</ref>
+| pib_per_capita       = 16778.21
+| data_pib_per_capita  = [[IBGE]]/[[2021]]<ref name=PIB/>
+| site_prefeitura      = [http://www.pedroteixeira.mg.gov.br www.pedroteixeira.mg.gov.br]
+| site_câmara          = [http://www.pedroteixeira.cam.mg.gov.br www.pedroteixeira.cam.mg.gov.br]
+}}
+'''Pedro Teixeira''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Sua população recenseada em 2022 era de 1.810 habitantes. <ref name = IBGE/>
+
+Desmembrado do Município de [[Lima Duarte (Minas Gerais)|Lima Duarte]] através de projeto do então deputado estadual Lourival Brasil Filho, que atendeu pedido do seu amigo o médico Joaquim Manoel de Oliveira, natural do até então distrito de Lima Duarte.
+
+{{referências}}
+
+==Ligações externas==
+{{Commonscat}}
+* [http://www.pedroteixeira.mg.gov.br Página da Prefeitura Municipal]
+* [http://www.pedroteixeira.cam.mg.gov.br Página da Câmara Municipal]
+* [http://www.cidades.ibge.gov.br/brasil/mg/pedro-teixeira Pedro Teixeira no IBGE Cidades]
+
+{{Esboço-municípiosbr/Minas Gerais}}
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1963]]

@@ -1,0 +1,71 @@
+{{one source|date=November 2025}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Capital Department
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| settlement_type         = [[Departments of Argentina|Department]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              = 
+| flag_alt                = 
+| nickname                = 
+| motto                   = 
+| image_map               = Departamento_Capital_(Santiago_del_Estero_-_Argentina).png
+| map_alt                 = 
+| mapsize                 = 180px
+| map_caption             = Location of Capital Department within Santiago del Estero Province
+| pushpin_map             = <!-- Argentina -->
+| pushpin_label_position  = 
+| pushpin_map_alt         = 
+| pushpin_map_caption     = Location of Capital Department within Santiago del Estero Province
+| coordinates             = {{coord|27|48|00|S|64|16|00|W|region:AR_type:adm2nd|display=inline,title}}
+| coor_pinpoint           = Santiago del Estero
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Argentina}}
+| subdivision_type1       = [[Provinces of Argentina|Province]]
+| subdivision_name1       = [[Santiago del Estero Province|Santiago del Estero]]
+| established_title       = 
+| established_date        = 
+| founder                 = 
+| seat_type               = Head town
+| seat                    = [[Santiago del Estero]]
+| government_footnotes    = 
+| leader_party            = 
+| leader_title            = 
+| leader_name             = 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 2116
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 
+| population_footnotes    = 
+| population_total        = 267125 
+| population_as_of        = 2010
+| population_density_km2  = auto
+| population_demonym      = 
+| population_note         = 
+| timezone1               = [[Time in Argentina|ART]]
+| utc_offset1             = -3
+| postal_code_type        = 
+| postal_code             = 
+| area_code_type          = 
+| area_code               = 
+| iso_code                = 
+| website                 = <!-- [http://www.example.com example.com] -->
+| footnotes               = 
+}}
+
+'''Capital Department''' ({{langx|es|Departamento Capital}}) is a [[Departments of Argentina|department of Argentina]] in [[Santiago del Estero Province]].<ref>{{cite news|url=https://www.argentina.gob.ar/ciencia/conae/educacion-y-formacion-masiva/materiales-educativos/santiago-del-estero-capital-y-sus-alrededores-imagen-landsat-5-tm-4-de-mayo-de-2011-0|title=Santiago del Estero, Capital y sus alrededores. Imagen Landsat 5 TM – 4 de Mayo de 2011|website=argentina.gob.ar|access-date=21 November 2025|language=es}}</ref> The capital city of the department is situated in [[Santiago del Estero]].
+
+==References==
+{{reflist}}
+
+{{Departments of Santiago del Estero Province}}
+
+[[Category:Departments of Santiago del Estero Province]]
+
+{{SantiagodelEstero-geo-stub}}

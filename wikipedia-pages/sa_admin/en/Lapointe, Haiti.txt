@@ -1,0 +1,125 @@
+{{coord|19|57|00|N|72|47|00|W|display=title|region:HT_type:city_source:GNS-enwiki}}
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Lapointe
+|nickname               = 
+|native_name            =
+|settlement_type        = [[List of communes of Haiti|Commune]]
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            = Haiti <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_relief         =
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location in Haiti
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Haiti.svg|25px]] [[Haiti]]
+|subdivision_type1      = [[Departments of Haiti|Department]]
+|subdivision_name1      = [[Nord-Ouest (department)|Nord-Ouest]]
+|subdivision_type2      = [[Arrondissements of Haiti|Arrondissement]]
+|subdivision_name2      = [[Port-de-Paix Arrondissement|Port-de-Paix]]
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =
+|area_footnotes           =
+|area_total_km2           = <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               = 2015 est.
+|population_footnotes           = <ref name=IHSI>{{cite web|url=http://www.ihsi.ht/pdf/projection/Estimat_PopTotal_18ans_Menag2015.pdf |title=Mars 2015 Population Totale, Population de 18 Ans et Plus Menages et Densites Estimes En 2015 |publisher=Institut Haïtien de Statistique et d’Informatique (IHSI) |accessdate=19 February 2015 |url-status=dead |archiveurl=https://web.archive.org/web/20151106110552/http://www.ihsi.ht/pdf/projection/Estimat_PopTotal_18ans_Menag2015.pdf |archivedate= 6 November 2015 }}</ref>
+|population_note                =
+|population_demonym      =
+|population_total               = 9,930
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =
+|population_blank1              =
+|population_blank2_title        =
+|population_blank2              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|19|57|00|N|72|47|00|W|region:HT|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}}
+
+'''Lapointe''' ({{IPA|fr|lapwɛ̃t}}; or '''La Pointe''') is a [[List of communes of Haiti|commune]] in the [[Port-de-Paix Arrondissement]], in the [[Nord-Ouest (department)|Nord-Ouest]] [[Departments of Haiti|department]] of [[Haiti]].<ref>[http://www.geographic.org/geographic_names/name.php?uni=-99215&fid=2263&c=haiti Geographic Names - La Pointe: Haiti (National Geospatial-Intelligence Agency, Bethesda, MD, USA)]</ref><ref>[http://haiti-reference.com/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/ Haiti-Référence: 7320.- Arrondissements et communes d’Haiti]</ref> Once a ''[[communal section]]'', a presidential decree on 22 July 2015 made it a commune.<ref>{{cite web|url=http://lenouvelliste.com/lenouvelliste/article/148647/Creation-de-cinq-nouvelles-communes-par-decret-presidentiel |title=Création de cinq nouvelles communes par décret présidentiel |editor=Olivier, Louis-Joseph |publisher=Le Nouvelliste |accessdate=2 April 2016}}</ref>
+
+==References==
+{{reflist}}
+
+{{Communes of Haiti}}
+
+[[Category:Communes of Nord-Ouest (department)]]
+
+{{NordOuest-geo-stub}}

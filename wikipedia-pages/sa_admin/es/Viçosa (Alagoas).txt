@@ -1,0 +1,42 @@
+{{Ficha de entidad subnacional
+|nombre = Viçosa
+|imagen = Igreja do Rosário.jpg
+|unidad = [[Municipio]]
+|tipo_superior_1 = [[Anexo:Estados de Brasil|Estado]]
+|superior_1 = {{BRA|AL}}
+|tipo_superior_3 = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3 = [[Mesorregión del Este Alagoano|Este Alagoano]]
+|tipo_superior_4 = [[Microrregiones de Brasil|Microrregión]]
+|superior_4 = [[Microrregión Serrana dos Quilombos|Serrana dos Quilombos]]
+|bandera = Bandeira de viçosa.jpg
+|escudo = no
+|mapa =Alagoas Municip Vicosa.svg
+|tamaño_mapa = 260px
+|pie_mapa = Mapa
+|dirigentes_títulos = [[Prefecto]]
+|altitud = 210
+|superficie = 354.762
+|superficie_post =<ref name ="IBGE_Área">{{cita web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial|fecha=10 de octubre de 2002|autor=IBGE|editorial=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|población = 26249
+|población_año = Censo [[IBGE]]/2014<ref name="IBGE_Pop_2014">{{cita web |url= http://www.ibge.gov.br/home/estatistica/populacao/estimativa2014/|título=Estimativa populacional 2014 IBGE| obra = Estimativa populacional 2014|autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|fecha=1 de julio de 2014 |fechaacceso= 29 de agosto de 2014}}</ref>
+|PIB = {{formatnum:86494.372}} mil
+|PIB_per_capita = 3227.52
+|PIB_tipo = PBI ([[IBGE]]/2008)<ref name="IBGE_PIB">{{cita web|url = http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/|título = Producto Interno Bruto de los Municipios 2004-2008|fechaacceso = 11 de diciembre de 2010|editorial = Instituto Brasileiro de Geografia e Estatística |urlarchivo = }}</ref>
+|IDH = 0.607
+|IDH año = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{cita web|url = http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm|título = Ranking decreciente del IDH-M de los municipios del Brasil|fechaacceso = 11 de octubre de 2008|fecha = 2000|editorial = Programa das Nações Unidas para o Desenvolvimento (PNUD)|urlarchivo = https://web.archive.org/web/20091003103229/http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20%28pelos%20dados%20de%202000%29.htm|fechaarchivo = 3 de octubre de 2009}}</ref>
+|campo1_nombre = Datos mesorregión
+|campo1 = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |título=Divisão Territorial do Brasil |fecha=1 de julio de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |editorial=Instituto Brasileiro de Geografia e Estatística (IBGE) |fechaacceso=6 de enero de 2019 |urlarchivo=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip |fechaarchivo=14 de junio de 2020 }}</ref>
+|campo2_nombre = Datos microrregión
+|campo2 = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+}}
+'''Viçosa''' es un [[municipio]] [[brasil]]eño del [[estados del Brasil|estado]] de [[Alagoas]]. Su población estimada en 2014 es de 26&nbsp;249 habitantes, según el censo [[IBGE]].<ref name="IBGE_Pop_2014"/>
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|Viçosa (Alagoas)}}
+{{Traducido ref |pt|Viçosa (Alagoas)|trad=parcial}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Alagoas]]

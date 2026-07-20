@@ -1,0 +1,83 @@
+{{ver desambiguação}}
+{{Info/Município do Brasil
+<!-- GeoID=3146602 -->
+<!-- Cabeçalho -->
+| nome                 = Paiva
+| apelido              = 
+| padroeiro            = [[São Sebastião]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=2 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| foto                 = 
+| bandeira             =
+| brasão               = 
+| link_hino            = 
+| CEP                  = 36195-000 a 36199-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| aniversário          = 
+| fundação             ={{nowrap|{{dtlink|12|12|1953|idade}}}}
+| gentílico            =paivense <ref name=IBGE>{{citar web|URL=https://cidades.ibge.gov.br/brasil/mg/paiva/panorama|título=IBGE|publicado=Censo Demográfico - 2022}}</ref>
+| lema                 = 
+| prefeito             = Bruno Viera de Paula<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/mg/paiva|título=Candidatos a vereador Paiva-MG|publicado=Estadão|acessodata =25 de abril de 2021}}</ref>
+| partido              = [[PSC]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = MinasGerais Municip Paiva.svg
+| latG = 21 
+| estado               = Minas Gerais
+| latP                 = S 
+| latM = 17 
+| lonP                 = O 
+| lonG = 43 
+| lonM = 24 
+| latS = 20
+| lonS = 57
+| mesorregião          = [[Mesorregião da Zona da Mata|Zona da Mata]]
+| microrregião         = [[Microrregião de Juiz de Fora|Juiz de Fora]]
+| região_metropolitana = 
+| vizinhos             = [[Aracitaba]]; [[Oliveira Fortes]]; e [[Mercês (Minas Gerais)|Mercês]]. 
+| dist_capital         = 228
+<!-- Características geográficas -->
+| área                 = 58.419
+| área_ref             = <ref name =IBGE/>
+| população            = 1474
+| altitude             = 
+| clima                = 
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.720 <!--favor manter o formato-->
+| pib                  = {{formatnum:27300.805}} mil
+| pib_per_capita       = 17996.58
+| leg_foto             = 
+| link_brasão          = 
+| link_bandeira        = 
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| data_pop             = Censo [[IBGE]]/2022<ref name=IBGE/>
+| data_idh             = [[PNUD]]/[[2010]] <ref name=PNUD>{{citar web |url=https://www.undp.org/pt/brazil/idhm-municipios-2010 |titulo=PNUD|publicado=Ìndice de Desenvolvimento Municipal - 2010}}</ref>
+| data_pib             = [[IBGE]]/[[2021]]<ref name=PIB>{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3146602 |titulo=PIB por Município|publicado=Produto Interno Bruto dos Municípios - 2021}}</ref>
+| data_pib_per_capita  = [[IBGE]]/[[2021]]<ref name=PIB/>
+| site_prefeitura      = [http://www.paiva.mg.gov.br www.paiva.mg.gov.br]
+| site_câmara          = [http://www.paiva.mg.leg.br www.paiva.mg.leg.br]
+}}
+
+'''Paiva''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Sua população recenseada em 2022 era de 1 474 habitantes.<ref name=IBGE/>
+
+==Geografia==
+Localiza-se na [[Mesorregião da Zona da Mata]].<ref name=IBGE/>
+
+== Ver também ==
+* [[Arquidiocese de Mariana]]
+
+{{Referências}}
+
+==Ligações externas==
+{{Commonscat}}
+* {{Link||2=http://www.paiva.mg.gov.br |3=Página da Prefeitura Municipal}}
+* {{Link||2=http://www.paiva.mg.leg.br |3=Página da Câmara Municipal}}
+* {{Link||2=http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=314660# |3=Informações do município na página do IBGE}}
+* {{Link||2=http://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/paiva.pdf |3=Enciclopédia dos municípios}}
+
+{{Portal3|Brasil|Minas Gerais}}
+
+{{Esboço-municípiosbr/Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1953]]

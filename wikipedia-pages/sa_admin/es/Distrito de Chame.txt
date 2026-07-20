@@ -1,0 +1,64 @@
+{{Ficha de entidad subnacional
+| nombre = Chame
+| nombre_oficial = Chame
+| unidad = [[Anexo:Distritos de Panamá|Distrito]]
+| capital = [[Chame]]
+| tipo_superior_1 = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+| superior_1 = {{PAN|10}}
+| tipo_div_1 = Corregimientos
+| div_1 = 11
+| lema = 100% chamero
+| bandera = no
+| escudo = no
+| mapa = Panamá - Panamá Oeste - Chame.svg
+| tamaño_mapa = 250px
+| mapa1 = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=9}}
+| imagen = 
+| pie_de_imagen = 
+| superficie = 375
+| superficie_post = <ref name="censo">{{cita web |url=http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=27 de octubre de 2014 |obra=Censos de 1990 a 2010 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+| elevación_media = 
+| campo1_nombre = Temperatura
+| campo1 = 
+| campo2_nombre = Distancia
+| campo2 = 
+| fundación = 18 de septiembre de 1855
+| población = 28535
+| población_año = 2023
+| población_post = <ref name="censo"/>
+| gentilicio = Chamero
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = [[Francisco León Fu]]<br/>
+| página web = 
+| imageninferior = Distrito de Chame (ubicación).svg
+| imageninferior_pie = Distrito de Chame
+| país = 
+}}
+
+El '''distrito de Chame''' es una de las divisiones que conforma la [[provincia de Panamá Oeste]], situado en la República de [[Panamá]]. El distrito cuenta con una población de 24.471 habitantes (2010).<ref>{{cita web|url=http://www.contraloria.gob.pa/inec/Publicaciones/00-01-01/Cuadro11.xls|título=Censo del año 2010|fechaacceso=28 de abril de 2012|urlarchivo=https://web.archive.org/web/20120626204121/http://www.contraloria.gob.pa/INEC/Publicaciones/00-01-01/Cuadro11.xls|fechaarchivo=26 de junio de 2012}}</ref> La capital está situada en la localidad de [[Chame]].<ref>{{cita web |url=http://www.statoids.com/ypa.html |título=Districts of Panama |editorial=Statoids |fechaacceso=12 de abril de 2009}}</ref>
+
+== División político-administrativa ==
+
+Está conformado por once corregimientos: 
+# [[Chame]].
+# [[Bejuco (Panamá)|Bejuco]].
+# [[Buenos Aires (Panamá)|Buenos Aires]].
+# [[Cabuya (Panamá Oeste)|Cabuya]].
+# [[Chicá]].
+# [[El Líbano (Panamá)|El Líbano]].
+# [[Las Lajas (Panamá Oeste)|Las Lajas]].
+# [[Nueva Gorgona]].
+# [[Punta Chame]].
+# [[Sajalices]].
+# [[Sorá]].
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Distritos de la provincia de Panamá Oeste|Chame]]

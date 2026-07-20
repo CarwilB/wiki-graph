@@ -1,0 +1,64 @@
+{{Info/Município do Brasil
+ | nome                 = Nossa Senhora dos Remédios
+ | apelido              = Peixe
+ | foto                 =
+ | leg_foto             =
+ | bandeira             = Bandeira do Município de Nossa Senhora dos Remédios-PI.png
+ | brasão               = BRASÃO DE ARMAS DO MUNICÍPIO DE NOSSA SENHORA DOS REMÉDIOS-PIAUÍ.png
+ | link_brasão          = 
+ | link_hino            = s:Hino do município de Nossa Senhora dos Remédios
+ | aniversário          =15 de dezembro
+ | fundação             ={{nowrap|{{dtlink|15|12|1961|idade}}}}
+ | gentílico            =remediense
+ | lema                 = <!-- NÃO É APELIDO, NEM SLOGAN ELEITOREIRO OU DE GOVERNO -->
+ | prefeito             = José Fernando Oliveira de Brito
+ | partido              = [[Partido Social Democrático (2011)|PSD]]
+ | fim_mandato          = 2028
+<!-- Localização -->
+ | mapa                 = Piaui Municip NossaSenhoradosRemedios.svg
+ | latG                 = 03
+ | estado               = Piauí
+ | latP                 = S
+ | latM                 = 58
+ | lonP                 = O
+ | lonG                 = 42
+ | lonM                 = 37
+ | latS                 = 44
+ | lonS                 = 15
+ | mesorregião          = [[Mesorregião do Norte Piauiense|Norte Piauiense]]
+ | microrregião         = [[Microrregião do Baixo Parnaíba Piauiense|Baixo Parnaíba Piauiense]]
+ | data_mesorregião     = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+ | data_microrregião    = IBGE/2008<ref name="IBGE_DTB_2008" />
+ | região_metropolitana =
+ | vizinhos             = [[Porto (Piauí)|Porto]], [[Campo Largo do Piauí]], [[Barras]] e [[Miguel Alves]]
+ | dist_capital         = 170
+<!-- Características geográficas -->
+ | área                 = 358.364
+ | área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+ | população            = 8214
+ | data_pop             = IBGE/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+ | altitude             = 53
+ | clima                = quente e úmido
+ | sigla_clima          =
+<!-- Indicadores -->
+ | idh                  = 0.523 <!--favor manter o formato-->
+ | pib                  = {{formatnum:21155.745}} mil
+ | pib_per_capita       = 2556.28
+ | data_idh             = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+ | data_pib             = IBGE/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+ | data_pib_per_capita  = IBGE/200]<ref name="IBGE_PIB"/>
+ | site_prefeitura      = https://nossasenhoradosremedios.pi.gov.br
+}}
+'''Nossa Senhora dos Remédios''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Piauí]].
+
+Com altitude de 53 metros, o município se localiza à [[latitude]] 03°58'46" [[sul]] e à [[longitude]] 42°37'14" [[oeste]]. Sua população estimada em [[2010]] era de {{formatnum|8214}} habitantes, distribuídos em {{formatnum|358.364}}&nbsp;km² de área.
+
+{{Referências}}
+{{Esboço-municípiosbr/Piauí}}
+{{Municípios do Piauí}}
+{{Cocais do Piauí}}
+{{Portal3|Piauí}}
+[[Categoria:Cocais (Piauí)]]
+{{DEFAULTSORT:Nossa Senhora Remedios Piaui}}
+[[Categoria:Municípios do Piauí]]
+[[Categoria:Fundações no Piauí em 1961]]

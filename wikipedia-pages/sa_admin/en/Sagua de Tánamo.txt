@@ -1,0 +1,109 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Sagua de Tánamo
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = A gas Station in Sagua de Tanamo.jpg
+|image_caption          = A gas station in Sagua de Tánamo
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Sagua de Tánamo (Cuban municipal map).png
+|map_caption            = Sagua de Tánamo municipality (red) within <br/> Holguín Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Holguín Province|Holguín]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Established
+|established_date       = 1804<ref name=guije/>
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 704
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 44,872
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|35|9|N|75|14|30|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 10
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-24
+|website                = https://www.saguadetanamo.gob.cu/es/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Sagua de Tánamo''' ({{IPA|es|ˈsaɣwa ðe ˈtamano}}) is a municipality and town in the [[Holguín Province]] of [[Cuba]].
+
+==Overview==
+The [[Sierra Cristal National Park]] ({{langx|es|Parque Nacional Sierra Cristal}}) is partly located in the Sagua de Tánamo municipality and partly in neighboring [[Mayarí, Cuba|Mayarí]].<ref name=rhc>{{Cite web|url=http://www.radiohc.cu/espanol/medioambiente/parques/sierracristal1.htm |title=Parque Nacional Sierra Cristal |author=Radio Habana |access-date=2007-10-09 |url-status=dead |archive-url=https://web.archive.org/web/20071004222518/http://www.radiohc.cu/espanol/medioambiente/parques/sierracristal1.htm |archive-date=October 4, 2007 |language=es}}</ref>
+
+The municipality is divided into the [[barrio]]s of Barrederas, Bazán, Cananovas, Catalina, Esterón, Juan Díaz, Miguel, Pueblo, Sitio and Zabala.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/osagua/index.htm|title=Sagua de Tánamo|author=Guije.com|accessdate=2007-10-05|language=es}}</ref> Carpintero, la Rosa, Rio Grande, La Guira, Naranjo.
+
+==Demographics==
+In 2022, the municipality of Sagua de Tánamo had a population of 44,872.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|704|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids| accessdate=2007-10-05}}</ref> it has a population density of {{convert|64|/km2|/sqmi|abbr=on}}.
+
+==See also==
+* [[List of cities in Cuba]]
+* [[Municipalities of Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Sagua de Tánamo
+ | N  = [[Frank País, Cuba|Frank País]]
+ | E  = [[Moa, Cuba|Moa]]
+ | SE = [[Yateras]] ([[Guantánamo Province|Guantánamo]])
+ | S  = [[El Salvador, Cuba|El Salvador]] ([[Guantánamo Province|Guantánamo]]), [[Guantánamo]] ([[Guantánamo Province|Guantánamo]])
+ | SW = [[Segundo Frente]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+ | NW = [[Mayarí]]
+}}
+{{Municipalities in Holguín}}
+{{Authority control}}
+
+{{DEFAULTSORT:Sagua de Tanamo}}
+[[Category:Populated places in Holguín Province]]
+[[Category:1800s in Cuba]]
+[[Category:Populated places established in 1804]]
+[[Category:1804 establishments in New Spain]]
+[[Category:1800s establishments in the Spanish West Indies]]
+
+
+{{Cuba-geo-stub}}

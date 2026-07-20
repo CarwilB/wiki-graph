@@ -1,0 +1,75 @@
+{{Info/Município do Brasil
+<!-- GeoID=4126009 -->
+<!-- Cabeçalho -->
+| nome = São Sebastião da Amoreira
+| foto = Praça Central Geremias Lunardelli.jpg
+| leg_foto = Praça Central Geremias Lunardelli
+| apelido = 
+<!-- Dados gerais -->
+| brasão = Brasão de São Sebastião da Amoreira.jpg
+| bandeira = Bandeira de São Sebastião da Amoreira.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 14 de novembro
+| fundação = {{dtlink|||1951|idade|lang=br}}
+| gentílico = amoreirense
+| lema = 
+| prefeito = Exilaine Gaspar (Laine)
+| partido = [[Movimento Democrático Brasileiro (1980)|MDB]]
+| fim_mandato = 2024
+<!-- Localização -->
+| mapa = Parana Municip SaoSebastiaodaAmoreira.svg
+| latP = S
+| latG = 23
+| latM = 27
+| latS = 54
+| lonP = O
+| lonG = 50
+| lonM = 45
+| lonS = 39
+| estado = Paraná
+| mesorregião = [[Mesorregião do Norte Pioneiro Paranaense|Norte Pioneiro Paranaense]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Assaí|Assaí]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Nova América da Colina]], [[Nova Fátima (Paraná)|Nova Fátima]], [[Santo Antônio do Paraíso]], {{nowrap|[[Nova Santa Bárbara]]}}, {{nowrap|[[Santa Cecília do Pavão]]}} e [[Assaí]]
+| dist_capital = 375
+<!-- Características geográficas -->
+| área = 226.872 <!--favor manter o formato-->
+| área_ref = <ref name="IBGE_Área">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/pr/sao-sebastiao-da-amoreira.html |titulo=Área |acessodata=2023-10-21 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref>
+| área_urbana = 2.41
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/quijingue/panorama|título=Meio Ambiente|autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|acessodata=19 de outubro de 2023}}</ref>
+| população = 8063 <!--favor manter o formato, sem pontos nem espaços-->
+| data_pop = Censo [[IBGE]]/[[2022]]<ref name="IBGE_Pop">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/pr/sao-sebastiao-da-amoreira.html |titulo=Censo Populacional 2022 |acessodata=2023-10-21 |website=Cidades e Estados |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref>
+| altitude = 664
+| clima = [[Subtropical]]
+| sigla_clima = Cfa
+<!-- Indicadores -->
+| idh = 0.724 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2000]]<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:77718.093}} mil
+| data_pib = [[IBGE]]/[[2020]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+| pib_per_capita = 27499.55
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site                = [https://www.amoreira.pr.gov.br/ amoreira.pr.gov.br]
+}}
+
+'''São Sebastião da Amoreira''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Paraná]].
+
+== Administração ==
+* [[Prefeitura (Brasil)|Prefeito(a)]]: Exilaine Gaspar (Laine)<ref>{{Citar web|url=https://g1.globo.com/pr/norte-noroeste/noticia/2021/01/01/prefeita-e-vereadores-de-sao-sebastiao-da-amoreira-tomam-posse-veja-lista-de-eleitos.ghtml|titulo=Prefeita e vereadores de São Sebastião da Amoreira tomam posse; veja lista de eleitos|data=2021-01-01|acessodata=2023-10-21|website=G1|lingua=pt-br}}</ref>
+
+{{Referências}}
+
+== Ligações externas ==
+* {{Link||2=http://www.amoreira.pr.gov.br/ |3=Página da Prefeitura}}
+* {{Link||2=http://www.cnm.org.br/dado_geral/mumain.asp?iIDMUN=100141359 |3=Confederação Nacional de Municípios}}
+* {{Link||2=https://www.amoreira.pr.gov.br/pagina/historia-de-sao-sebastiao-da-amoreira |3=História de São Sebastião da Amoreira}}
+
+{{Portal3|Paraná|Brasil}}
+{{Controle de autoridade}}
+{{DEFAULTSORT:Sao Sebastiao Amoreira}}
+[[Categoria:Municípios do Paraná]]
+[[Categoria:Fundações no Paraná em 1951]]

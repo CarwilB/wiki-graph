@@ -1,0 +1,61 @@
+{{Info/Município do Brasil
+<!-- GeoID=4103222 -->
+<!-- Cabeçalho -->| nome = Bom Sucesso do Sul
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Bom Sucesso do Sul - Brasão.jpg
+| bandeira = Bandeira de Bom Sucesso do Sul PR.svg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|8|1|1990|idade}}}}<br />(Lei Estadual n.º 9.183)<ref name=IBGEci>{{citar web|url= https://cidades.ibge.gov.br/brasil/pr/bom-sucesso-do-sul/historico|título= Bom Sucesso do Sul|publicado=IBGE Cidades|acessodata=1/4/2022}}</ref>
+| gentílico = bom-sucessense-do-sul
+| lema = Bom Sucesso do Sul sempre avante!
+| prefeito = Nilson Antonio Feversani
+| partido = [[PSDB]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Parana Municip BomSucessodoSul.svg
+| latP = S
+| latG = 26
+| latM = 04
+| latS = 33
+| lonP = O
+| lonG = 52
+| lonM = 50
+| lonS = 02
+| estado = Paraná
+| mesorregião = [[Mesorregião do Sudoeste Paranaense|Sudoeste Paranaense]]
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Pato Branco|Pato Branco]]
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = {{nowrap|[[Francisco Beltrão]]}}, {{nowrap|[[Itapejara d'Oeste]]}}, {{nowrap|[[Pato Branco]]}}, [[Vitorino (Paraná)|Vitorino]]
+| dist_capital = 460
+<!-- Características geográficas -->| área = 195.867
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 3264
+| data_pop = estimativa populacional — IBGE/2019<ref name="IBGE_POP">{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?=&t=resultados|título=Estimativas da população residente no Brasil e unidades da federação com data de referência em 1º de julho de 2019|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=2019|acessodata=13 de março de 2020}}</ref>
+| altitude = 640
+| clima = [[Subtropical]]
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.776 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:65380.080}} mil
+| data_pib = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 21042.83
+| data_pib_per_capita = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+| site_prefeitura = {{url|bomsucessodosul.pr.gov.br}}
+| site_câmara = 
+}}
+'''Bom Sucesso do Sul''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Paraná]]. Sua população, conforme estimativas do IBGE de 2019, era de {{fmtn|3264}} habitantes.<ref name="IBGE_POP"/>
+
+{{Referências}}
+{{Esboço-municípiosbr/Paraná}}
+{{Portal3|Paraná|Brasil}}
+
+{{DEFAULTSORT:Bom Sucesso Sul}}
+[[Categoria:Municípios do Paraná]]
+[[Categoria:Bom Sucesso]]
+[[Categoria:Fundações no Paraná em 1990]]

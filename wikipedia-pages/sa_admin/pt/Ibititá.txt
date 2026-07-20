@@ -1,0 +1,61 @@
+{{Info/Município do Brasil
+<!-- GeoID=2913101 -->
+<!-- Cabeçalho -->| nome = Ibititá
+| foto = 
+| leg_foto = 
+| apelido = Rochedo
+<!-- Dados gerais -->| brasão = Brasão_de_Ibititá.png
+| bandeira = Bandeira de Ibititá.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = [[17 de outubro]]
+| fundação = {{nowrap|{{dtlink|17|10|1961|idade}}}}
+| gentílico = [[wikt:ibititaense|ibititaense]]
+| lema = 
+| prefeito = Nilva Barreto dos Santos<ref>{{citar web |url=https://www.cidade-brasil.com.br/resultatdos-da-eleicao-ibitita.html|título=Eleição para prefeitura de Ibitita|publicado=Cidade Brasil|acessodata =24 de abril de 2021}}</ref>
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Bahia Municip Ibitita.svg
+| latP = S
+| latG = 11
+| latM = 32
+| latS = 49
+| lonP = O
+| lonG = 41
+| lonM = 58
+| lonS = 40
+| estado = Bahia
+| mesorregião = [[Mesorregião do Centro-Norte Baiano|Centro Norte Baiano]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Irecê|Irecê]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| vizinhos = [[Lapão (Bahia)|Lapão]] (Norte); [[Canarana (Bahia)|Canarana]] e [[Barro Alto (Bahia)|Barro Alto]] (Leste); [[Ibipeba]] (Sul); [[Uibaí]] e [[Presidente Dutra (Bahia)|Presidente Dutra]] (Oeste)
+| dist_capital = 497
+<!-- Características geográficas -->| área = 564.921
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 16969
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| população_ref = <ref name="IBGE">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/ibitita.html|título=Cidades e Estados|publicado=IBGE|data=28 de junho de 2023|acessodata=28 de julho de 2023}}</ref>
+| altitude = 782
+| população_pos = ([[Lista de municípios da Bahia por população|BA: 204º]]){{·}}([[Lista de municípios da Região Nordeste do Brasil por população|NE: 742°]]){{·}}([[Lista de municípios do Brasil por população|BR: 2034º]]) (2022)<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2023/06/28/populacao-de-ibitita-ba-e-de-16-969-pessoas-aponta-o-censo-do-ibge.ghtml|título=População de Ibititá (BA) é de 16.969 pessoas, aponta o Censo do IBGE|publicado=g1|acessodata=28-07-2023}}</ref>
+| clima = Semiárido
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.602 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=24 de agosto de 2013}}</ref>
+| pib = {{formatnum:62360}} mil
+| data_pib = [[IBGE]]/[[2009]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2005_2009/tabelas_pdf/tab01.pdf |titulo=Produto Interno Bruto dos Municípios 2005-2009 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010 |arquivourl=https://web.archive.org/web/20160303231555/http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2005_2009/tabelas_pdf/tab01.pdf# |arquivodata=3 de março de 2016 |urlmorta=yes }}</ref>
+| pib_per_capita = 3213.13
+| data_pib_per_capita = [[IBGE]]/[[2009]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://ibitita.ba.gov.br/ ibitita.ba.gov.br]
+}}
+'''Ibititá''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] da [[Bahia]].
+
+{{Referências}}
+
+{{Esboço-municípiosbr/Bahia}}
+{{Municípios da Bahia}}
+{{Portal3|Bahia}}
+
+[[Categoria:Ibititá]]
+[[Categoria:Fundações na Bahia em 1961]]

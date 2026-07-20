@@ -1,0 +1,775 @@
+{{Ficha de entidad subnacional
+| unidad = [[Anexo:Municipios de Guatemala|Ciudad]]
+| tipo_superior_1 = [[Departamentos de Guatemala|Departamento]]
+| superior_1 = {{GTM|GU}}
+| tipo_superior_3 = [[Mancomunidad]]
+| superior_3 = [[Mancomunidad Gran Ciudad del Sur]]
+| bandera = 
+| imagen = {{Imagen múltiple
+| perrow            = 1/2/1/2/3/2
+| image_style = background-color:white; border:1px solid white;
+| ancho_total       = 290
+| foto1 = Condado Naranjo - Mixco, Guatemala.jpg
+| foto2 = San Cristóbal, Mixco GT.jpg
+| foto3 = Naranjo Mall - Mixco - 51909319780.jpg
+| foto4 = Panorámica Mixco.jpg
+| foto5 = Rutas Express, Guatemala City-Mixco.jpg
+| foto6 = Calzada Roosevelt - Guatemala.jpg
+| foto7 = Ancona aptos.jpg
+| foto8 = Edificios en el Naranjo.jpg
+| foto9 =Condominios en Mixco.jpg
+| foto10 = Paso a Desnivel Ruta Interamericana CA-1.jpg
+| borde             = infobox
+| posición_tabla    = center
+| alineación_texto  = center
+| posición          = center
+}}
+| pie_de_imagen = '''Desde arriba y de izquierda a derecha:''' Condado Naranjo; [[Ciudad San Cristóbal]]; Naranjo Mall; panorámica de la ciudad; [[Rutas Express]]; calzada Roosevelt; edificios residenciales y el paso a desnivel ruta Interamericana.
+| mapa_loc = Guatemala
+| mapa_alternativo = Relief map of Guatemala.jpg
+| pos_etiqueta_loc = <!-- posición de la etiqueta dentro del mapa: left, right, top, bottom, none -->
+| tam_mapa_loc = 275
+| imagen_marca_loc = <!-- nombre de la imagen de la marca a utilizar, por defecto es una esfera roja -->
+| tam_marca_loc = <!-- tamaño de la marca a utilizar, por defecto es 6 -->
+| mapa_loc_1 = Departamento de Guatemala
+| pos_etiqueta_loc_1 = <!-- posición de la etiqueta dentro del segundo mapa: left, right, top, bottom, none -->
+| tam_mapa_loc_1 = 275
+| imagen_marca_loc_1 = <!-- nombre de la imagen de la marca a utilizar, por defecto es una esfera roja -->
+| tam_marca_loc_1 = <!-- tamaño de la marca a utilizar, por defecto es 6 -->
+| mapa = {{map draw
+ | latitude  = 14.6284
+ | longitude = -90.5925
+ | height    = 300 
+ | width     = 300
+ | zoom      = 11
+ | stroke    = 	#FF0000
+ | ids       = Q948953
+ | stroke-width   = 2.2
+ | stroke-opacity = 1
+ | fill-opacity   = 0.3
+ | geotype1 = geoshape
+ | title1= Mixco
+}}
+| pie_mapa = Límite Territorial de Mixco.
+| distancia = 10
+| referencia = [[Ciudad de Guatemala]]
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = [[Neto Bran]]
+| PIB = {{creciente}} [[US$]] 5 287 Millones<ref name="PIB ">{{cita web |url=https://www.fundesa.org.gt/indices-y-evaluaciones-de-pais/indice-de-competitividad-local |fechaacceso=28 de octubre de 2022 |apellido= |nombre=  |título= PIB  |año=2022 |editorial= www.fundesa.org.gt}}</ref>
+| PIB_per_capita = {{creciente}} [[US$]] 10 424<ref name="PIB per Capita ">{{cita web |url=https://www.fundesa.org.gt/indices-y-evaluaciones-de-pais/indice-de-competitividad-local |fechaacceso=28 de octubre de 2022 |apellido= |nombre=  |título=PIB per Capita  |año=2022 |editorial= www.fundesa.org.gt}}</ref>
+| PIB_año = 2021
+| PIB puesto = [[Anexo:Departamentos de Guatemala por PIB#PIB per cápita y PIB por departamento|3]]
+| IDH = 0,792
+| IDH año = 2018
+| IDH categoría = <span style="color:#009900;">'''Alto'''</span>
+| IDH puesto = [[Anexo:Departamentos de Guatemala por IDH #TOP 100: Municipios con más IDH|Puesto 2]]
+| población = 517505
+| población_puesto = [[Anexo:Ciudades_más_pobladas_de_Guatemala|2]]
+| población_año = 2022
+| población_post = <ref name=INE>{{harvnb|Instituto Nacional de Estadística (INE)|2018|p=}}</ref><ref name="Población2022">{{cita web|url=https://www.ine.gob.gt/ine/proyecciones/|título=Población por municipios 2015-5035|fechaacceso=15 de noviembre de 2022|apellido=|nombre=|año=2020|editorial=www.ine.gob.gt|fechaarchivo=15 de julio de 2013|urlarchivo=https://web.archive.org/web/20130715105232/https://www.ine.gob.gt/ine/proyecciones/|deadurl=}}</ref>
+| fundación = 1526
+| gentilicio = mixqueño/a
+| idioma = [[Idioma español|Español]]
+| otros_idiomas = [[Idioma poqomam|pocomam central]]
+| fiestas_mayores = 4 de agosto, en honor a Santo Domingo de Guzmán.
+Y último domingo de enero, en honor a la Virgen del Rosario de Morenos.
+| clima = [[#Clima|templado, Csb]]
+| miembro_de = [http://anam.org.gt Asociación Nacional de Municipalidades de Guatemala]
+| página web = www.munimixco.gob.gt/
+| nombre = Mixco
+| país = {{Guatemala}}
+| subdivisión = 11 Zonas
+| hermandad = {{Flag|Argentina}} [[Buenos Aires]]
+}}
+
+'''Mixco'''  (del náhuatl «''mistli / mis''» "puma" y «''co''» "lugar", significa "Lugar del Puma"<ref name=":0">{{Cita libro|apellidos=van Akkeren|nombre=Ruud|enlaceautor=Ruud Van Akkeren|título=Estudios Indiana 13: Culturas visuales indígenas y las prácticas estéticas en las Américas desde la antigüedad hasta el presente|url=https://www.researchgate.net/publication/335753883_Sanja_Savkic_ed_en_colaboracion_con_Hannah_Baader_Estudios_Indiana_13_Culturas_visuales_indigenas_y_las_practicas_esteticas_en_las_Americas_desde_la_antiguedad_hasta_el_presente_Estudios_Indiana_13_In|fechaacceso=26 de enero de 2025|año=2018|editorial=Ibero-Amerikanisches Institut Preußischer Kulturbesitz|editor=Sanja Savkić y Hannah Baader|ubicación=Berlín|página=60|capítulo=Cerro de Maguey: el nombre original de Kaminal Juyú}}</ref>) es una [[ciudad]] estratégica del [[Departamento de Guatemala]], integrada al [[Área Metropolitana de Guatemala]] y constituida como el segundo núcleo más poblado de la [[República de Guatemala]] con 517,505 habitantes según el [[Instituto Nacional de Estadística (Guatemala)|Instituto Nacional de Estadística]] para 2022,<ref name="Población2020">{{cita web |url=https://www.ine.gob.gt/ine/proyecciones/|título=Población por municipios 2015-2035 |fechaacceso=15 de noviembre de 2022 |año=2020 |editorial= www.ine.gob.gt|autor=Instituto Nacional de Estadística (INE)}}</ref> y una de las [[Anexo:Ciudades más pobladas de América Central|ciudades más pobladas de Centroamérica]]. Su territorio se extiende sobre 132&nbsp;[[km²]] y presenta un clima templado, con temperaturas que oscilan entre 3 °C y 25 °C. La ciudad inicia aproximadamente en el kilómetro 12.7 de la Calzada Roosevelt y 39 Avenida, y se extiende hacia el oeste hasta el kilómetro 24.9, donde inicia [[San Lucas Sacatepéquez]]. Mixco se encuentra rodeada de núcleos urbanos clave: al sur limita con [[Villa Nueva (Guatemala)|Villa Nueva]], al este con la [[Ciudad de Guatemala]], al oeste con San Lucas Sacatepéquez y al norte con [[San Pedro Sacatepéquez (Guatemala)|San Pedro Sacatepéquez]], formando un bloque urbano continuo que articula transporte, comercio, industria y desarrollo residencial dentro del AMG.
+
+La estructura urbana de Mixco es policéntrica, integrando zonas residenciales de alta densidad, subcentros comerciales consolidados y sectores industriales, junto con espacios rurales y reservas naturales donde se protege la vegetación. Entre sus subcentros urbanos más relevantes se encuentra [[Ciudad San Cristóbal]], que concentra actividad residencial, comercial y servicios de alto impacto dentro del territorio. La ciudad forma parte de la [[Mancomunidad Gran Ciudad del Sur]], cuyo objetivo es promover la planificación urbana sostenible y el desarrollo económico de la región sur del departamento mediante la coordinación entre municipalidades, sector público, sector privado, banca de desarrollo y comunidad local. Esta integración fortalece su papel como nodo estratégico de conectividad y articulación regional, potenciando la dinámica laboral, logística y comercial en conjunto con Villa Nueva, [[San Miguel Petapa]] y la Ciudad de Guatemala.
+
+Aunque sus orígenes datan de la época colonial, cuando fue establecida como [[reducción de indios|doctrina]] de los [[dominicos en Guatemala|frailes dominicos]] hasta su transferencia al clero secular en 1754, el crecimiento contemporáneo de Mixco se centra en su función como motor secundario del AMG, consolidando subcentros urbanos, comercio, servicios e industria que sostienen la dinámica metropolitana del sur. En la actualidad, Mixco se distingue por su densidad poblacional, diversificación de subcentros urbanos y su contribución al desarrollo económico del AMG, reafirmando su rol como nodo estratégico dentro del entramado metropolitano regional.
+
+== Etimología ==
+Según investigaciones recientes, el topónimo Mixco (que en los documentos coloniales su ortografía se encuentra invariablemente escrita como "Misco") se deriva de los términos [[náhuatl]] «mistli / mis» "puma"<ref>Hill (1989, 34) y Dobbels (2003, 412).</ref> y el locativo «co», por lo que "Mixco" significa "Lugar del Puma",<ref>{{Cita libro|apellidos=van Akkeren|nombre=Ruud|enlaceautor=Ruud Van Akkeren|título=Estudios Indiana 13: Culturas visuales indígenas y las prácticas estéticas en las Américas desde la antigüedad hasta el presente|url=https://www.iai.spk-berlin.de/fileadmin/dokumentenbibliothek/Estudios_Indiana/EI-13-web.pdf|fechaacceso=26 de enero de 2015|año=2018|editorial=Ibero-Amerikanisches Institut Preußischer Kulturbesitz|editor=Sanja Savkić y Hannah Baader|ubicación=Berlín|página=60|capítulo=Cerro de Maguey: el nombre original de Kaminal Juyú}}</ref> lo que se apoya en el hecho que el apellido «Cacoj» (Kaqkoj) fue un importante apellido de origen poq'om y significa también "puma"<ref>{{Cita libro|apellidos=van Akkeren|nombre=Ruud|enlaceautor=Ruud Van Akkeren|título=Estudios Indiana 13: Culturas visuales indígenas y las prácticas estéticas en las Américas desde la antigüedad hasta el presente|url=https://www.iai.spk-berlin.de/fileadmin/dokumentenbibliothek/Estudios_Indiana/EI-13-web.pdf|fechaacceso=26 de enero de 2025|año=2018|editorial=Ibero-Amerikanisches Institut  Preußischer Kulturbesitz|editor=Sanja Savkić y Hannah Baader|ubicación=Berlín|página=57|capítulo=Cerro de Maguey: el nombre original de Kaminal Juyú}}</ref> además de la gran cantidad de figurillas prehispánicas encontradas en el departamento de Guatemala de felinos pintados de rojo.<ref>{{Cita libro|apellidos=van Akkeren|nombre=Ruud|enlaceautor=Ruud Van Akkeren|título=Estudios Indiana 13: Culturas visuales indígenas y las prácticas estéticas en las Américas desde la antigüedad hasta el presente|url=https://www.iai.spk-berlin.de/fileadmin/dokumentenbibliothek/Estudios_Indiana/EI-13-web.pdf|fechaacceso=26 de enero de 2025|año=2018|editorial=Ibero-Amerikanisches Institut Preußischer Kulturbesitz|editor=Sanja Savkić y Hannah Baader|ubicación=Berlín|páginas=60-62|capítulo=Cerro de Maguey: el nombre original de Kaminal Juyú}}</ref> 
+
+=== Otras teorías ===
+El significado etimológico de Mixco según Antonio de Fuentes y Guzmán (quien muchas veces se equivocó frente a topónimos indígenas, como en el sonado error en el caso de la ubicación de Mixco Viejo) quien interrogó al indígena Marcos Tahuit, el término proviene de Mixco Cucul, que se traduce como «Pueblo de Loza Pintada». 
+
+Mientras que según Luis Arriola la palabra Mixco viene del Nahuatl Mixconco, que significa «Lugar Cubierto de Nubes».
+
+== Historia ==
+{{AP|Historia de Guatemala}}
+
+=== Época precolombina ===
+
+[[Archivo:Guatemala - Mixco.png|miniaturadeimagen|izquierda|200px|Mapa del [[Guatemala (departamento)|departamento de Guatemala]], mostrando el municipio de Mixco.]]
+
+Antes de la llegada de los españoles a Guatemala, la periferia de lo que en la actualidad es el valle de Guatemala, desde [[San Lucas Sacatepéquez]] hasta [[San Pedro Ayampuc]], fue dominado por un señorío indígena de [[Idioma pocomam|idioma poq'omam]] que tenía su centro político-militar en el sitio conocido con el nombre de Belej (Chinautla Viejo). Este lugar había sido fundado durante las primeras guerras entre [[Quiché (etnia)|k’iche’s]] y kaqchiqueles, aproximadamente entre 1200 y 1250. En su desarrollo, los mixqueños habían hecho alianza con los chinautlecos, del mismo grupo poq'om, tributario a su vez de los [[Achí (etnia)|achíes]] de [[Rabinal]].
+
+=== Época colonial: doctrina de los dominicos ===
+{{AP|Dominicos en Guatemala}}
+
+[[Archivo:Orderofpreachears.png|miniaturadeimagen|140px|izquierda|Escudo de la [[Orden de Predicadores]].]]
+
+Basado en escritos antiguos e historias que verbalmente fueron narradas de padres a hijos, se ha determinado que el ayuntamiento local se inició con la [[Conquista de Guatemala|llegada de los españoles en la década de 1520]], y fue precisamente el conquistador [[Pedro de Alvarado]] quién la inauguró en 1526. 
+
+La Corona española se enfocó en la catequización de los indígenas; las congregaciones fundadas por los misioneros reales en el Nuevo Mundo fueron llamadas «doctrinas de indios» o simplemente «doctrinas».<ref name=vanoss17>{{harvnb|van Oss|1986|p=17-19}}</ref> Originalmente, los frailes tenían únicamente una misión temporal: enseñarle la fe católica a los indígenas, para luego dar paso a parroquias seculares como las establecidas en España; con este fin, los frailes debían haber enseñado los evangelios y el idioma español a los nativos.<ref name=vanoss17/> Ya cuando los indígenas estuvieran catequizados y hablaran español, podrían empezar a vivir en parroquias y a contribuir con el diezmo, como hacían los peninsulares.<ref name=vanoss53>{{harvnb|van Oss|1986|p=53}}</ref>
+
+Pero este plan nunca se llevó a cabo, principalmente porque la corona perdió el control de las órdenes regulares tan pronto como los miembros de éstas se embarcaron para América.<ref name=vanoss25>{{harvnb|van Oss|1986|p=25}}</ref> Por otra parte, protegidos por sus privilegios apostólicos para ayudar a la conversión de los indígenas, los misionares solamente atendieron a la autoridad de sus priores y provinciales, y no a la de las autoridades españolas ni a las de los obispos. Los provinciales de las órdenes, a su vez, únicamente rendían cuentas a los líderes de su orden y no a la corona; una vez habían establecido una doctrina, protegían sus intereses en ella, incluso en contra de los intereses del rey y de esta forma las doctrinas pasaron a ser pueblos de indios que se quedaron establecidos para todo el resto de la colonia.<ref name=vanoss53/>
+
+Las doctrinas fueron fundadas a discreción de los frailes, ya que tenían libertad completa para establecer comunidades para catequizar a los indígenas, con la esperanza de que estas pasaran con el tiempo a la jurisdicción de una parroquia secular a la que se le pagaría el diezmo; en realidad, lo que ocurrió fue que las doctrinas crecieron sin control y nunca pasaron al control de parroquias.<ref name=vanoss53/> La administración colectiva por parte del grupo de frailes eran la característica más importante de las doctrinas ya que garantizaba la continuación del sistema de la comunidad en caso falleciese uno de los dirigentes.{{harvnp|van Oss|1986|p=54}}
+
+En 1638, los dominicos separaron a sus grandes doctrinas —que les representaban considerables ingresos económicos— en grupos centrados en sus seis conventos:{{harvnp|Belaubre|2001|p=39}}  Los conventos estaban en: la ciudad de [[Santiago de los Caballeros de Guatemala]], Amatitlán, [[Verapaz (Guatemala)|Verapaz]], [[Sonsonate]], [[San Salvador]] y Sacapulas.{{harvnp|Belaubre|2001|p=39}} Específicamente el convento de Amatitlán, la doctrina abarcaba los poblados de [[Amatitlán (Guatemala)|Amatitlán]], [[San Miguel Petapa|Petapa]], Mixco y [[Palín (municipio)|San Cristóbal]].{{harvnp|Belaubre|2001|p=39}}
+
+[[Archivo:Carlos de Borbón, rey de las Dos Sicilias.jpg|200px|izquierda|miniaturadeimagen|Rey [[Carlos III de España]], promotor de las reformas borbónicas.]]
+
+En 1754, en virtud de una Real Cédula parte de las [[Reformas Borbónicas]], todos los curatos de las órdenes regulares fueron traspasados al [[clero secular]].{{harvnp|Juarros|1818|p=338}}
+
+En 1765 se publicaron las reformas borbónicas de la Corona española, que pretendían recuperar el poder real sobre las colonias y aumentar la recaudación fiscal.{{harvnp|Melchor Toledo|2011|p=110}}<ref name=estrada>{{harvnb|Estrada Herrera|s.f.|p=}}</ref> Con estas reformas se crearon los estancos para controlar la producción de las bebidas embriagantes, el tabaco, la pólvora, los naipes y el patio de gallos. La real hacienda subastaba el estanco anualmente y un particular lo compraba, convirtiéndose así en el dueño del monopolio de cierto producto. Ese mismo año se crearon cuatro subdelegaciones de la Real Hacienda en [[San Salvador]], Ciudad Real, [[Comayagua]] y [[León (Nicaragua)|León]] y la estructura político administrativa de la [[Capitanía General de Guatemala]] cambió a quince provincias:<ref name=melchor111>{{harvnb|Melchor Toledo|2011|p=111}}</ref>
+
+Además de esta redistribución administrativa, la Corona española estableció una política tendiente a disminuir el poder de la [[Iglesia católica]],{{harvnp|Melchor Toledo|2011|p=111}} el cual hasta ese momento era prácticamente absoluto sobre los vasallos españoles. Esta política de disminución de poder de la iglesia se basaba en la [[Ilustración]]{{harvnp|Melchor Toledo|2011|p=112}}
+
+=== Época independiente ===
+
+[[Archivo:Mixco1900.jpg|200px|derecha|miniaturadeimagen|Procesión frente a la iglesia en 1910. Fotografía de [[Alberto G. Valdeavellano]].]]
+[[Archivo:Mixco1910.jpg|200px|derecha|miniaturadeimagen|Indígenas artesanos en el camino a Mixco, aproximadamente en 1910.]]
+
+Tras la [[Independencia de Centroamérica]] en 1821, la constitución del Estado de Guatemala promulgada el 11 de octubre de 1825 estableció los circuitos para la administración de justicia en el territorio del Estado; allí se menciona que Mixco pertenecía al [[Departamento de Guatemala|circuito Sur-Guatemala]] junto con los barrios de las parroquias de [[Iglesia de Santo Domingo (Ciudad de Guatemala)|Santo Domingo]] y de Los [[El Calvario (Ciudad de Guatemala)|Remedios]] en la [[Ciudad de Guatemala]], y los poblados de San Pedro Las Huertas, Ciudad Vieja, Guadalupe, [[Santa Catarina Pinula|Pinula]], [[Fraijanes|Arrazola]], [[San Miguel Petapa|los Petapas]], [[Villa Nueva (Guatemala)|Villa Nueva]] y [[Amatitlán (Guatemala)|Amatitlán]].{{harvnp|Pineda de Mont|1869|pp=465-466}}
+
+Tras la [[Reforma Liberal]] de 1871, dirigida por los generales [[Justo Rufino Barrios]] y [[Miguel García Granados]], todas las municipalidades de Guatemala obtuvieron la autonomía en la firma del acta de Patzicía de 1877. Sin embargo, a 1915 aún mantenían la costumbre de tener dos alcaldes: uno ladino y uno indígena, a este último lo llamaban «Alcaldito». La mayoría de alcaldes ladinos, eran personajes de la “Calle Real”, que voluntariamente aceptaban el cargo por un período no mayor de un año, sin sueldo al igual que el alcalde de indígenas, que era electo por el pueblo en la «Cofradía de Santo Domingo de Guzmán».{{cr}}
+
+En 1971 se derribaron las galeras y el arco que ocupaba la municipalidad de Mixco de aquel entonces, iniciándose la construcción de los dos primeros niveles del edificio municipal en la administración de Julio Ambrosio; concluyéndose cuatro días antes de entregar el cargo a Enrique Ramírez en 1974, quien durante su administración construyó el primer edificio anexo actual, finalizándolo en julio de 1978. El tercer nivel del edificio central, se construyó en la administración de Berta Argelia Herrera de Ruano.<ref name="Antecedentes">[http://www.munimixco.com/publicaciones/publicacion.php?newsid=378&catalogid=122 Generalidades del municipio].</ref>
+
+=== Ciudad ===
+
+La Villa de Mixco fue elevada a la categoría de ciudad el 1 de agosto de 2008, después de nueve años de haber sido aprobado el Acuerdo Gubernativo 524-99. La publicación en el ''[[Diario de Centro América]]'' -órgano divulgativo oficial del gobierno- el Ministerio de Gobernación acordó «elevar a la categoría de Ciudad el lugar denominado "Villa de Mixco"».<ref name=Villa>{{harvnb|Villa de Mixco|s.f.|p=}}</ref>
+[[Archivo:El Naranjo, Mixco.jpg|centro|miniaturadeimagen|Edificios en la zona 4 de Mixco ]]
+
+== Demografía  ==
+[[Archivo:Población del Área Metropolitana de Guatemala.png|thumb|200px|Población de Mixco dentro del Área Metropolitana de Guatemala.]]
+Según los datos del censo general de población de 1950, Mixco contaba con un total de 11&nbsp;784 habitantes, correspondiendo a la población urbana 4181 y el área rural 7653. Al año de 1986 el municipio mixqueño tenía una población de 297&nbsp;387 habitantes. La información del último censo del Instituto Nacional de Estadística, [[Instituto Nacional de Estadística (Guatemala)|INE]], indica que en el año 2002 había 403&nbsp;689 habitantes, en una superficie de 132 kilómetros cuadrados de extensión territorial, lo que equivalía a 3.058 habitantes por kilómetro cuadrado. “El desarrollo urbanístico del municipio de Mixco de los últimos años y la tendencia de la tasa de crecimiento de estudios anteriores indicaban que en 1993 aproximadamente el 85% del espacio habitacional estaba construido en el municipio.<ref name=INE/> En el censo realizado en 2018 la población era de 476&nbsp;736 habitantes mostrando que la población aumentó en esos años<ref name="Población2020" />
+
+== División política ==
+
+Territorialmente el municipio está dividido en once zonas, conformadas por colonias, aldeas, cantones y la cabecera municipal. Sin embargo, por su proximidad a la [[ciudad de Guatemala]], algunas aldeas se convirtieron en colonias residenciales y lotificaciones de carácter residencial. 
+
+<div align=center>
+{|class="wikitable" width=65% align=center style='font-size:0.9em'
+|+style=color:black;|División política del municipio de Mixco
+|-style=color:white; align=center
+!style=background:#659ec7;|Categoría
+!style=background:#659ec7;|Listado
+|-
+!style=background:lemonchiffon;|Aldeas
+|<div style="-moz-column-count:4; column-count:4;">
+#El Campanero
+#El Naranjito
+#San José La Comunidad
+#Sacoj
+#Lo de Coy INEB
+
+#Buena Vista
+#Lo de Bran
+#El Aguacate
+#Lo de Fuentes
+#El Manzanillo
+|- 
+!style=background:lemonchiffon;|Colonias<br /> residenciales
+|<div style="-moz-column-count:4; column-count:4;">
+#San José Las Rosas
+#El Milagro
+#Monte Real
+#Primero de Julio
+#Monte Verde
+#San Francisco
+#El Castaño
+#El Caminero
+#Pablo VI
+#Carolingia
+#Belencito
+#Las Brisas
+#Molino de Las Flores
+#La Brigada
+#Ciudad San Cristóbal
+#Belén
+#Lomas de Portugal
+#Lomas de San Jacinto
+#El Rosario
+#Tierra Blanca
+#Nueva Monserrat
+#Monserrat 1
+#Monserrat 2
+#Bosques de San Nicolás
+#Las Minervas
+#El Tesoro
+#El Tesoro Banvi 
+#Nueva Vida
+#Ciudad Satélite
+#Santa Marta
+#Condado Naranjo
+#Primero de Mayo
+#Colonia Santa Rita 1
+#Colonia Santa Rita 2
+#Colonia Santa Mónica
+#La Escuadrilla
+#Urbanización González.
+#Villaflor
+|}
+</div>
+De las colonias se excluye «La Florida», por haber pasado a formar parte de la [[Ciudad de Guatemala]] en 1958.
+
+== Zonas de Mixco ==
+[[Archivo:Mixco Map by 11 zones in Guatemala.svg|miniaturadeimagen|250x250px|Zonas de Mixco]]
+[[Archivo:Bandera_de_Mixco_(Guatemala).png|25x25px]] '''Mixco''' posee un total de 11 zonas dentro de su jurisdicción, las cuales van de las 1 a la 11. 
+
+A continuación un listado de las zonas y su población correspondiente:
+{| class="wikitable sortable"
+! rowspan="2" |Zona
+! colspan="3" |Población 
+|-
+!2022 E
+!2018
+!%
+|-
+|'''Zona 1'''
+!51 119
+!47 092
+|'''9.9'''
+|-
+|'''Zona 2'''
+!20 738
+!19 104
+|'''4.0'''
+|-
+|'''Zona 3'''
+!26 007
+!23 958
+|'''5.0'''
+|-
+|'''Zona 4'''
+!47 130
+!43 417
+|'''9.1'''
+|-
+|'''Zona 5'''
+!26 715
+!24 610
+|'''5.2'''
+|-
+|'''Zona 6'''
+!111 208
+!102 447
+|'''21.5'''
+|-
+|'''Zona 7'''
+!60 553
+!55 783
+|'''11.7'''
+|-
+|'''Zona 8'''
+!51 726
+!47 651
+|'''10.0'''
+|-
+|'''Zona 9'''
+!16 798
+!15 475
+|'''3.2'''
+|-
+|'''Zona 10'''
+!49 262
+!45 381
+|'''9.5'''
+|-
+|'''Zona 11'''
+!56 249
+!51 818
+|'''10.9'''
+|-
+![[Archivo:Bandera_de_Mixco_(Guatemala).png|25x25px]] Mixco
+!517 505
+!476 736
+!100
+|}
+
+== Lugares Poblados ==
+Véase también: [[Anexo:Lugares Poblados de Mixco]]
+
+'''[[Archivo:Bandera_de_Mixco_(Guatemala).png|25x25px]] Mixco''' se posiciona como el segundo municipio más poblado de [[Guatemala]] con un total de '''465 773''' habitantes hasta el [[Censo de Guatemala de 2018|Censo 2018]]. El municipio alberga un total de '''669''' lugares poblados incluidos [[Aldea|aldeas]], [[Asentamiento|asentamientos]],[[Colonia administrativa|colonias]], [[Finca|fincas]] y [[ciudad]]. Entre los 20 lugares más poblados, vive el '''45%''' de la población mixqueña.
+A continuación un listado de los 20 lugares más poblados del municipio de '''Mixco''':
+{| class="wikitable sortable"
+!#
+!Código
+!Lugar
+!Tipo
+!Población
+!Zona 
+|-
+!1
+|108135
+|El Milagro
+|Colonia
+!25 651
+|6
+|-
+!2
+|108001
+|Mixco '''(Centro)'''
+|Ciudad
+!20 691
+|1
+|-
+!3
+|108200
+|La Brigada
+|Colonia 
+!19 961
+|7
+|-
+!4
+|108004
+|Primero de Julio
+|Aldea
+!16 298
+|5
+|-
+!5
+|108251
+|Lo de Fuentes
+|Aldea
+!13 324
+|11
+|-
+!6
+|108044
+|Belen
+|Colonia
+!12 836
+|7
+|-
+!7
+|108247
+|Lo de Bran I
+|Aldea
+!11 251
+|6
+|-
+!8
+|108339
+|Nueva Monserrat
+|Colonia
+!10 552
+|3
+|-
+!9
+|108103
+|Ciudad Satélite I
+|Colonia
+!10 297
+|9
+|-
+!10
+|108447
+|Santa Marta
+|Colonia
+!9 886
+|5
+|-
+!11
+|108249
+|Lo de Coy
+|Colonia
+!7 592
+|1
+|-
+!12
+|108419
+|San Ignacio
+|Colonia
+!7 267
+|7
+|-
+!13
+|108629
+|San José de las Rosas II
+|Colonia
+!7 169
+|6
+|-
+!14
+|108324
+|Moserrat II
+|Colonia
+!5 721
+|3
+|-
+!15
+|108323
+|Moserrat I
+|Colonia
+!5 383
+|4
+|-
+!16
+|108071
+|Carolingia I
+|Colonia
+!5 208
+|6
+|-
+!17
+|108083
+|Colinas de Minerva
+|Colonia
+!5 146
+|11
+|-
+!18
+|108365
+|Planes de Minerva
+|Colonia
+!5 028
+|11
+|-
+!19
+|108115
+|El Aguacate
+|Aldea
+!5 006
+|9
+|-
+!20
+|108416
+|San Francisco I
+|Colonia
+!4 923
+|6
+|-
+! colspan="4" |[[Archivo:Bandera_de_Mixco_(Guatemala).png|25x25px]] Mixco
+! colspan="2" |465 773
+|}
+
+== IDH por Zonas de Mixco ==
+[[Archivo:Datos Completos IDH Mixco.png|miniaturadeimagen|369x369px|Comparativa Mixco 2002 vs 2018]] Véase también: [[Anexo:Departamentos de Guatemala por IDH]]
+[[Archivo:Mixco IDH por Zona 2018.svg|miniaturadeimagen|330x330px|Mapa por '''Zona de Mixco''' según Indice de Desarrollo Humano
+
+'''{{legend|#005500ff|(0.850 - 0.899)}}{{legend|#1c721cff|(0.800 - 0.849)}}{{legend|#3CB371|(0.750 - 0.799)}}''']]
+[[Archivo:Bandera_de_Mixco_(Guatemala).png|25x25px]] Mixco posee un [[Anexo:Departamentos de Guatemala por IDH|IDH]] de '''{{Color|#3CB371|0,792}}''' categorizado como '''{{Color|#3CB371|Alto}}''' para el año '''2018''', En el '''2002''' el municipio tenía un [[Anexo:Departamentos de Guatemala por IDH|IDH]] de '''{{Color|#0BDA51|0,734}}'''. Mixco se encuentra empatado con [[Ciudad de Guatemala]] como los municipios más desarrollados de [[Guatemala]]. Entre sus 11 zonas, se destaca la [[Ciudad San Cristóbal|Zona 8]] de Mixco que posee un desarrollo de '''{{Color|#006400|0,862}}''' considerado la zona más desarrollada del municipio, debido a la gran influencia e infraestructura del lugar y a la explosión de desarrollo en [[Ciudad San Cristóbal]] mientras la zona menos desarrollada se destaca la Zona 9, que se ha estancado y donde se ha visto altos niveles de pobreza, la zona tiene como base a Ciudad Satélite con un IDH de '''{{Color|#3CB371|0,766}}''' <ref name=":02">{{Cita web|url=https://indhguatemala.org/app/uploads/2022/07/IDH_Guatemala_FINAL_WEB.pdf|título=Informe de Desarrollo Humano La celeridad del cambio, una mirada
+territorial del desarrollo humano 2002 - 2019 - PNUD Guatemala}}</ref><ref>{{Cita web|url=https://indhguatemala.org/|título=Informe Nacional de Desarrollo Humano INDH PNUD Guatemala|fechaacceso=2023-12-21|sitioweb=PNUD|idioma=en-US}}</ref>
+{| class="wikitable sortable"
+! rowspan="2" |Zona
+! rowspan="2" |Lugar Referencia
+![[Anexo:Departamentos de Guatemala por IDH|IDH]] 
+! rowspan="2" |Categoría
+! rowspan="2" |Población
+|-
+!2018
+|-
+|'''Zona 1'''
+|<u>Centro de Mixco</u>
+! style="background:#66bd63;" |0,770
+!'''{{Color|#3CB371|Alto}}'''
+!51 119
+|-
+|'''Zona 2'''
+|<u>Molino de las Flores</u>
+! style="background:#228B22	;" |{{Color|Blanco|0,822}}
+!'''{{Color|#1c721cff|Muy Alto}}'''
+!20 738
+|-
+|'''Zona 3'''
+|<u>Montserrat/ Roosevelt</u>
+! style="background:#228B22	;" |{{Color|Blanco|0,824}}
+!'''{{Color|#1c721cff|Muy Alto}}'''
+!26 007
+|-
+|'''Zona 4'''
+|<u>San Nicolás / El Naranjo</u>
+! style="background:#228B22	;" |{{Color|Blanco|0,819}}
+!'''{{Color|#1c721cff|Muy Alto}}'''
+!47 130
+|-
+|'''Zona 5'''
+|<u>Primero de Julio</u>
+! style="background:#228B22	;" |{{Color|Blanco|0,833}}
+!'''{{Color|#1c721cff|Muy Alto}}'''
+!26 715
+|-
+|'''Zona 6'''
+|<u>El Milagro</u>
+! style="background:#66bd63;" |0,775
+!'''{{Color|#3CB371|Alto}}'''
+!111 208
+|-
+|'''Zona 7'''
+|<u>La Brigada</u>
+! style="background:#66bd63;" |0,769
+!'''{{Color|#3CB371|Alto}}'''
+!60 553
+|-
+|'''Zona 8'''
+|<u>Ciudad San Cristóbal</u>
+! style="background:#006400;" |{{Color|Blanco|0,862}}
+!'''{{Color|#005500ff|Muy Alto}}'''
+!51 726
+|-
+|'''Zona 9'''
+|<u>Ciudad Satélite</u>
+! style="background:#66bd63;" |0,756
+!'''{{Color|#3CB371|Alto}}'''
+!16 798
+|-
+|'''Zona 10'''
+|<u>La Comunidad</u>
+! style="background:#66bd63;" |0,768
+!'''{{Color|#3CB371|Alto}}'''
+!49 262
+|-
+|'''Zona 11'''
+|<u>Minerva</u>
+! style="background:#228B22	;" |{{Color|Blanco|0,815}}
+!'''{{Color|#1c721cff|Muy Alto}}'''
+!56 249
+|-
+! colspan="2" |[[Archivo:Bandera_de_Mixco_(Guatemala).png|25x25px]] Mixco
+! style="background:#66bd63;" |0,792
+!'''{{Color|#3CB371|Alto}}'''
+!517 505
+|}
+
+== Geografía física ==
+
+=== Clima ===
+
+La cabecera municipal de Mixco tiene clima templado ([[Clasificación de Köppen|Köppen]]: ''Csb'').
+
+{{Weather box
+|location = Mixco
+|metric first = yes
+|single line = yes
+|Jan mean C = 16.4
+|Feb mean C = 17.1
+|Mar mean C = 18.2
+|Apr mean C = 19.1
+|May mean C = 19.3
+|Jun mean C = 18.9
+|Jul mean C = 18.7
+|Aug mean C = 18.7
+|Sep mean C = 18.4
+|Oct mean C = 17.9
+|Nov mean C = 17.2
+|Dec mean C = 16.5
+|year mean C = 
+|Jan high C = 22.3
+|Feb high C = 23.4
+|Mar high C = 24.8
+|Apr high C = 25.3
+|May high C = 24.9
+|Jun high C = 23.4
+|Jul high C = 23.4
+|Aug high C = 23.7
+|Sep high C = 23.0
+|Oct high C = 22.4
+|Nov high C = 22.3
+|Dec high C = 22.2
+|year high C =
+|Jan low C = 10.6
+|Feb low C = 10.9
+|Mar low C = 11.7
+|Apr low C = 13.0
+|May low C = 13.8
+|Jun low C = 14.5
+|Jul low C = 14.1
+|Aug low C = 13.8
+|Sep low C = 13.9
+|Oct low C = 13.5
+|Nov low C = 12.2
+|Dec low C = 10.9
+|year low C =
+|Jan precipitation mm = 2
+|Feb precipitation mm = 1
+|Mar precipitation mm = 2
+|Apr precipitation mm = 31
+|May precipitation mm = 124
+|Jun precipitation mm = 239
+|Jul precipitation mm = 202
+|Aug precipitation mm = 194
+|Sep precipitation mm = 226
+|Oct precipitation mm = 128
+|Nov precipitation mm = 22
+|Dec precipitation mm = 7
+|year precipitation mm =
+|source 1 = Climate-Data.org<ref name="Climate-Data.org">
+{{cita web|url=http://en.climate-data.org/location/5979/
+|título= Climate: Mixco
+|fechaacceso= 27 de octubre de 2015
+|website= Climate-Data.org|idioma=en}}</ref><br />[[Instituto Nacional de Sismología, Vulcanología, Meteorología e Hidrología de Guatemala]]<ref>{{harvnb|Departamento de Investigación y servicios meteorológicos|s.f.|p=}}</ref>
+}}
+
+=== Ubicación geográfica ===
+
+Mixco está localizado en el [[departamento de Guatemala]], y está rodeado por municipios del mismo:
+
+* Norte: [[San Pedro Sacatepéquez (Guatemala)|San Pedro Sacatepéquez]], municipio del departamento de Guatemala
+* Sur: [[Villa Nueva (Guatemala)|Villa Nueva]], municipio del departamento de Guatemala
+* Este: [[Chinautla]] y [[Ciudad de Guatemala]], municipios del departamento de Guatemala
+* Sureste: [[Ciudad de Guatemala]], municipio del [[departamento de Guatemala]] y capital de la [[República de Guatemala]]
+* Oeste: [[Sacatepéquez]], departamento
+
+{{Ubicación geográfica
+|Centro=Mixco
+|Norte=[[San Pedro Sacatepéquez (Guatemala)|San Pedro Sacatepéquez]]
+|Este=[[Chinautla]]<br />[[Ciudad de Guatemala]]<ref name=segeplan>{{harvnb|SEGEPLAN|2012|p=}}</ref>
+|Sureste = [[Ciudad de Guatemala]] y [[Villa Nueva (Guatemala)|Villa Nueva]]<ref name=segeplan/> 
+|Sur=[[Villa Nueva (Guatemala)|Villa Nueva]]<ref name=segeplan/>
+|Oeste=[[Sacatepéquez]]
+}}
+
+== Gobierno municipal==
+{{AP|Anexo:Alcaldes de Mixco}}
+
+El gobierno de los municipios de Guatemala está a cargo de un Concejo Municipal, de conformidad con el artículo 254 de la [[constitución de Guatemala|Constitución Política de la República de Guatemala]], que establece que «el gobierno municipal será ejercido por un consejo municipal».<ref name=asamblea85/> A su vez, el código municipal —que tiene carácter de ley ordinaria y contiene disposiciones que se aplican a todos los municipios de Guatemala— establece en su artículo 9 que «el consejo municipal es el órgano colegiado superior de deliberación y de decisión de los asuntos municipales… y tiene su sede en la circunscripción de la cabecera municipal». Por último, el artículo 33 del mencionado código establece que al «gobierno del municipio [le] corresponde con exclusividad al consejo municipal el ejercicio del gobierno del municipio».<ref name="congreso2012">{{harvnb|Congreso de Guatemala|2012|p=}}</ref>
+
+El consejo municipal se integra de conformidad con lo que establece la Constitución en su artículo 254, es decir «por un consejo el cual se integra con el alcalde, los síndicos y concejales, electos directamente por sufragio universal y secreto para un periodo de cuatro años, pudiendo ser reelectos».<ref name=asamblea85>{{harvnb|Asamblea Constituyente|1985|p=}}</ref> Al respecto, el código municipal en el artículo 9 establece «que se integra por el alcalde, los síndicos y los concejales, todos electos directa y popularmente en cada municipio de conformidad con la ley de la materia».
+
+<div align=center>
+{|class="wikitable" width=65% align=center style='font-size:0.9em; text-align:center;'
+|+style=color:black;|Listado de alcaldes electos desde 1986
+|-style=color:white; align=center
+!style=background:#659ec7;|Alcalde de Mixco
+!style=background:#659ec7;|Período
+!style=background:#659ec7;|Partido
+|-
+!style=background:lemonchiffon;|Juan Guillermo Gómez Valdez
+| 15 de enero de 1986 - 15 de enero de 1991
+|[[Archivo:DCG Logo.svg|40px]]
+|-
+!style=background:lemonchiffon;| Víctor Manuel Ruano Herrera
+| 15 de enero de 1991 - 15 de enero de 1996
+| rowspan="2" | 
+|-
+!style=background:lemonchiffon;| Edgar Abraham Rivera Sagastume
+| 15 de enero de 1996 - 15 de enero de 2000
+|-
+!style=background:lemonchiffon;| Elmer Morales Fión 
+| 15 de enero de 2000 - 15 de enero de 2004
+|[[Archivo:FRG Logo.svg|40px]]
+|-
+!style=background:lemonchiffon; rowspan=2| [[Amílcar Rivera]]
+| 15 de enero de 2004 - 15 de enero de 2008
+| 
+|-
+| 15 de enero de 2008 - 15 de enero de 2012
+|rowspan=2| 
+|-
+!style=background:lemonchiffon;| [[Otto Pérez Leal]]
+| 15 de enero de 2012 - 15 de enero de 2016
+|-
+!style=background:lemonchiffon;|[[Neto Bran]]
+| 15 de enero de 2016 -Presente
+|[[Archivo:MR Logo.svg|40px]]<ref name=neto>{{cita web|url=http://www.publinews.gt/nacionales/esto-le-escribio-otto-perez-leal-a-neto-bran-nuevo-alcalde-de-mixco/Tetoig---SMCG8MaQlKG0A/|título=Esto le escribió Otto Pérez Leal a Neto Bran, nuevo alcalde de Mixco|website=Publinews|fecha=8 de septiembre de 2015|fechaacceso=8 de septiembre de 2015|ubicación=Guatemala|ref=harv|urlarchivo=https://web.archive.org/web/20150908044102/http://www.publinews.gt/nacionales/esto-le-escribio-otto-perez-leal-a-neto-bran-nuevo-alcalde-de-mixco/Tetoig---SMCG8MaQlKG0A/|fechaarchivo=8 de septiembre de 2015}}</ref>
+|-
+|}
+</div>
+
+==Sistema de transporte==
+[[Archivo:Ruta Express de Mixco, Guatemala.jpg|miniaturadeimagen|250px|Unidad de las [[Rutas Express (Mixco)|Rutas Express]] de Mixco.]]
+===Buses Rojos===
+
+En Mixco, el servicio de los tradicionales «[[Buses rojos (Guatemala)|buses rojos]]» hacia la [[Ciudad de Guatemala]] se caracterizó históricamente por altos índices de violencia, extorsiones y hacinamiento. Sin embargo, a raíz de la pandemia de 2020, este sistema fue sustituido por las [[Rutas Express]], las cuales asumieron los recorridos que anteriormente cubrían dichas unidades.
+
+===Microbuses===
+
+En el Centro del municipio son microbuses los que operan como transporte público, estas unidades son más seguras que los buses Rojos, una de las rutas más utilizada es la de Ciudad San Cristóbal que conecta Pacific Center en la zona 11 de [[Ciudad Guatemala|Guatemala]] con La fuente en San Cristóbal y finaliza en el paso a desnivel de Villa Lobos en la zona 7 de [[Villa Nueva (Guatemala)|Villa Nueva]].
+
+===Rutas Express===
+
+Desde el 17 de diciembre de 2017 la Comuna de Mixco puso en funcionamiento un proyecto nuevo para el transporte público de dicho municipio y son las [[Rutas Express (Mixco)|Rutas Express]] que se caracterizan por ser unidades nuevas y con seguridad en su interior, actualmente hay dos rutas en funcionamiento, una es la ruta Express Naranjo que sale de la zona 5 de Mixco con destino al Anillo Periférico vía el Naranjo y la otra ruta es la Express Roosevelt que inicia en la zona 1 de Mixco y finaliza en el Obelisco en la ciudad de [[Ciudad Guatemala|Guatemala]].
+
+===Metro Subterráneo===
+
+Actualmente está en proceso de evaluación la línea A del metro subterráneo que conectaría con el [[MetroRiel (Guatemala)|MetroRiel]] dentro del [[Área Metropolitana de Guatemala]], específicamente este sistema enlazaría Mixco con la zona 15 de la Ciudad de Guatemala.<ref name="Metrosubterraneo">{{cita web |url=https://www.prensalibre.com/guatemala/comunitario/municipalidad-capitalina-evalua-la-construccion-de-un-metro-subterraneo-en-la-ciudad/|título=Municipalidad capitalina evalúa la construcción de un metro subterráneo en la ciudad|fechaacceso=16 de noviembre de 2020 |apellido= |nombre=  |año=10 de febrero de 2020 |editorial=https://www.prensalibre.com}}</ref><ref>{{Cita web|url=https://metro.com.gt/#:~:text=La%20l%C3%ADnea%20A%20del%20Metro,para%20su%20construci%C3%B3n%20y%20operaci%C3%B3n.|título=Metro Subterraneo de Guatemala|fechaacceso=2020-11-16|sitioweb=|idioma=|fechaarchivo=27 de febrero de 2021|urlarchivo=https://web.archive.org/web/20210227123315/https://www.metro.com.gt/#:~:text=La%20l%C3%ADnea%20A%20del%20Metro,para%20su%20construci%C3%B3n%20y%20operaci%C3%B3n.|deadurl=yes}}</ref>
+
+== Fiesta ==
+En honor a la Virgen del Rosario de Morenos, el último domingo de enero; y el 4 de agosto, en honor a Santo Domingo de Guzmán.<ref name="fiestas">[https://web.archive.org/web/20110924132137/http://viajeaguatemala.com/Guatemala/105820293342.htm Festividades].</ref>
+
+== En el cine ==
+
+* En 1969, la producción mexicano-guatemalteca ''[[El ogro]]'', protagonizada por el primer actor mexicano [[Germán Valdez]] la primera actriz guatemalteca [[Concha Deras]] y el primer actor guatemalteco [[Herbert Meneses]] fue filmada en [[Tikal]] y Mixco.  Las escenas filmadas en Mixco incluyen a Germán Valdez y a un grupo de niños que escuchan sus historias fantásticas.<ref name=barillas>{{harvnb|Barillas|2013|p=}}</ref>
+
+== Deporte ==
+[[Archivo:Estadio Santo Domingo de Guzmán.jpg|miniaturadeimagen|200x200px|[[Estadio Santo Domingo de Guzmán]].]]
+
+=== Estadio Santo Domingo de Guzmán ===
+En Mixco se sitúa el [[Estadio Santo Domingo de Guzmán]], un recinto deportivo de fútbol. Fue construido entre 2017 y 2018, y ampliado en 2019. Tiene una capacidad actual de 5.200 espectadores y se construyó con el objetivo de ser el estadio local del [[Deportivo Mixco]], club que juega en la [[Liga Nacional de Fútbol de Guatemala|Liga Nacional]].<ref>{{Cita web|url=https://www.sicultura.gob.gt/directory-directorio_c/listing/estadio-santo-domingo-de-guzman-mixco/|título=Estadio Santo Domingo de Guzmán, Mixco – SIC|fechaacceso=2025-01-12|sitioweb=www.sicultura.gob.gt}}</ref>
+
+== Ciudades Hermanadas ==
+
+* Ciudad de Guatemala, 2019
+
+== Véase también ==
+{{Portal|Guatemala|Geografía}}
+* [[Departamento de Guatemala]]
+* [[Elecciones municipales de Guatemala de 2015]]
+* [[Elecciones municipales de Guatemala de 2019]]
+* [[Elecciones municipales de Guatemala de 2023]]
+* [[Historia Territorial de Guatemala]]
+* [[Organización territorial de Guatemala]]
+* [[Anexo:Ciudades más pobladas de América Central]]
+* [[Anexo:Ciudades más pobladas de Guatemala]]
+
+== Referencias ==
+{{listaref|2}}
+
+=== Bibliografía ===
+{{refcomienza}}
+* {{cita libro|autor=Asamblea Constituyente|título=Constitución Política de la República de Guatemala|año=1985|editorial=Gobierno de Guatemala|ubicación=Guatemala|url=http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf|urlarchivo=https://web.archive.org/web/20160202083342/http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf|fechaarchivo=2 de febrero de 2016}}
+* {{cita web|url=http://sitios.usac.edu.gt/revistahistoria/index.php?id=71|título=50 películas filmadas en Guatemala y una que no (1935-1996). Apuntes para una cartografía de los lugares filmados en Guatemala|apellido=Barillas|nombre=Edgar|website=Revista Historia de la [[Universidad de San Carlos de Guatemala]]|ubicación=Guatemala|fecha=2013|fechaacceso=22 de octubre de 2015|urlarchivo=https://web.archive.org/web/20151022163747/http://sitios.usac.edu.gt/revistahistoria/index.php?id=71|fechaarchivo=22 de octubre de 2015}}
+* {{cita publicación|apellido=Belaubre|nombre=Christopohe|título=Poder y redes sociales en Centroamérica: el caso de la Orden de los Dominicos (1757-1829)|publicación=Mesoamérica|volumen=41|año=2001|ref=harv|url=http://dialnet.unirioja.es/descarga/articulo/2458303.pdf|urlarchivo=https://web.archive.org/web/20150121173246/http://dialnet.unirioja.es/descarga/articulo/2458303.pdf|fechaarchivo=21 de enero de 2015}}
+* {{cita libro|autor=Congreso de Guatemala|título=Código Municipal de Guatemala|año=2012|editorial=Gobierno de Guatemala|ubicación=Guatemala|url=http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf|urlarchivo=https://web.archive.org/web/20150807042527/http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf|fechaarchivo=7 de agosto de 2015}}
+* {{cita web|fecha=s.f.|fechaacceso=2011|url=http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mn-abs.jpg|autor=Departamento de Investigación y servicios meteorológicos|título=Isotermas de temperatura mínima absoluta anual|sitioweb=Insivumeh.gob.gt|urlarchivo=https://web.archive.org/web/20120517095244/http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mn-abs.jpg|fechaarchivo=17 de mayo de 2012}}
+* {{cita web|autor=Departamento de Investigación y servicios meteorológicos|máscaraautor=1|fecha=s.f.|url=http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mx-abs.jpg|título=Isotermas de temperatura máxima absoluta anual|sitioweb=Insivumeh.gob.gt|fechaacceso=2011|8=|urlarchivo=https://web.archive.org/web/20120524204623/http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mx-abs.jpg|fechaarchivo=24 de mayo de 2012}}
+* {{cita web|autor=Departamento de Investigación y servicios meteorológicos|máscaraautor=1|fecha=s.f.|url=http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mx-prom.jpg|título=Isotermas de temperatura máxima promedio anual|sitioweb=Insivumeh.gob.gt|fechaacceso=2011|8=|urlarchivo=https://web.archive.org/web/20120515143756/http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mx-prom.jpg|fechaarchivo=15 de mayo de 2012}}
+* {{cita web|autor=Departamento de Investigación y servicios meteorológicos|máscaraautor=1|fecha=s.f.|url=http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mn-prom.jpg|título=Isotermas de temperatura mínima promedio anual|sitioweb=Insivumeh.gob.gt|fechaacceso=2011|8=|urlarchivo=https://web.archive.org/web/20120529150210/http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/t-mn-prom.jpg|fechaarchivo=29 de mayo de 2012}}
+* {{cita web|autor=Departamento de Investigación y servicios meteorológicos|máscaraautor=1|fecha=s.f.|url=http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/d-lluvia.jpg|fechaacceso=2011|ubicación=Guatemala|sitioweb=Instituto Nacional de Sismología, Vulcanología, Meteorología e Hidrología|título=Sumatoria de días con lluvia promedio anual|10=|urlarchivo=https://web.archive.org/web/20120515150925/http://www.insivumeh.gob.gt/hidrologia/ATLAS_HIDROMETEOROLOGICO/Atlas_Climatologico/d-lluvia.jpg|fechaarchivo=15 de mayo de 2012}}
+* {{cita publicación|url=http://www.fuac.edu.co/recursos_web/descargas/grafia/borbon.pdf|título=Marco y propósitos generales de las Reformas Borbónicas|apellido=Estrada Herrera|nombre=Fabiola|fecha=s.f.|publicación=|editorial=Fundación Universidad Autónoma de Colombia|urlarchivo=https://web.archive.org/web/20150727222406/http://www.fuac.edu.co/recursos_web/descargas/grafia/borbon.pdf|fechaarchivo=27 de julio de 2015}}
+* {{Cita web|autor=Instituto Nacional de Estadística (INE)|título=XII Censo Nacional de Población y VII de Habitación (Censo 2018)|año=2018|ubicación=Guatemala|sitioweb=Ine.gob.gt|url=https://www.censopoblacion.gt/|fechaacceso=2022|urlarchivo=https://web.archive.org/web/20080824044850/https://www.ine.gob.gt/ine/proyecciones/|fechaarchivo=24 de agosto de 2020}}
+* {{cita libro|apellido=Juarros|nombre=Domingo|título=Compendio de la historia de la Ciudad de Guatemala|cita=Note del libro: El Br. Juarros era presbítero secular y examinador sinodal del arzobispado de Guatemala|año=1818|editorial=Ignacio Beteta|ubicación=Guatemala|url=https://archive.org/stream/compendiodelahis21juar#page/n3/mode/2up}}
+* {{cita publicación|apellido=Melchor Toledo|nombre=Johann Estuardo|título=El arte religioso de la Antigua Guatemala, 1773-1821; crónica de la emigración de sus imágenes|publicación=tesis doctoral en Historia del Arte|editorial=[[Universidad Nacional Autónoma de México]]|año=2011|ubicación=México, D.F.|url=http://132.248.9.195/ptd2012/febrero/0677645/0677645_A1.pdf|fechaacceso=10 de noviembre de 2014}}
+* {{cita libro|apellido=Pineda de Mont|nombre=Manuel|año=1869|título=Recopilación de las leyes de Guatemala, 1821-1869|volumen=I|ubicación=Guatemala|editorial=Imprenta de la Paz en el Palacio|url=https://archive.org/details/recopilacindelas01guat}}
+* {{cita web|autor=SEGEPLAN|año=2012|url=http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=8:guatemala&Itemid=333|título=Municipios del departamento de Guatemala|fechaacceso=22 de julio de 2015|website=SEGEPLAN|ubicación=Guatemala|urlarchivo=https://web.archive.org/web/20150707073241/http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=8:guatemala&Itemid=333|fechaarchivo=7 de julio de 2015}}
+* {{cita libro|título=Catholic Colonialism: A Parish History of Guatemala, 1524-1821|apellido=van Oss|nombre=Adriaan C.|idioma=inglés|url=http://books.google.com/books?id=apazT06Y15cC&pg=PA37&lpg=PA37|año=1986|editorial=[[Cambridge University Press]]|ubicación=Cambridge, [[Inglaterra]]}}
+* {{cita web|autor=Villa de Mixco|url=http://VilladeMixco.com/index.php?option=com_content&task=view&id=160&Itemid=50|título=Villa de Mixco elevada a categoría de ciudad|website=VilladeMixco.com|año=s.f.|ubicación=Mixco, Guatemala|fechaacceso=2 de enero de 2020|urlarchivo=https://web.archive.org/web/20190116002553/http://www.villademixco.com/index.php?option=com_content&task=view&id=160&Itemid=50|fechaarchivo=16 de enero de 2019}}
+* {{cita web|url=https://www.publinews.gt/gt/noticias/2017/12/13/nueva-ruta-expressnaranjo-servicio-estara-disponible-partir-del-domingo.html|título=Nueva ruta ExpressNaranjo estará disponible a partir del domingo|fechaacceso=19 de mayo de 2019|fecha=13 de diciembre de 2017}}
+* {{cita web|url=https://republica.gt/2017/08/13/cronica-el-martirio-de-viajar-en-los-buses-rojos-de-guatemala/|título=Crónica: El martirio de viajar en los buses rojos de Guatemala|fechaacceso=19 de mayo de 2019|fecha=13 de agosto de 2017}}
+* {{cita web|url=http://guatenews.com/majadas-news/express-roosevelt-cuenta-nuevos-horarios/|título=Express Roosevelt cuenta con nuevos horarios|fechaacceso=19 de mayo de 2019|fecha=9 de junio de 2018}}
+* {{cita web|url=http://www.mancogranciudaddelsur.org/|título=Gran Ciudad del Sur|fechaacceso=19 de mayo de 2019|fecha=16 de febrero de 2014}}
+{{reftermina}}
+
+== Enlaces externos ==
+{{refcomienza}}
+* {{commonscat}}
+* [https://web.archive.org/web/20140523083308/http://www.chimaltenango.org/departamentos/region-metropolitana/guatemala/mixco Historia Completa del Municipio de Mixco]
+* [https://www.munimixco.gob.gt/ Sitio Oficial de la Municipalidad de Mixco]
+* [https://web.archive.org/web/20150927023055/http://casadelaculturamixco.com/ La Casa de La Cultura de Mixco]
+* [https://web.archive.org/web/20190721194959/http://villademixco.com/ Mixco Tierra de Campeones]
+{{reftermina}}
+
+=== Multimedia ===
+{{refcomienza}}
+* {{YouTube|Giu6f3U-hdg|Municipio de Mixco Parte 1}}
+* {{YouTube|YCpvLFNvbI0|Municipio de Mixco Parte 2}}
+* {{YouTube|CJikw7Luoxs|Municipio de Mixco Parte 3}}
+* {{YouTube|ozwyHLbsblQ|Municipio de Mixco Parte 4}}
+* {{YouTube|wnENWk5czgk|Municipio de Mixco Parte 5}}
+* {{YouTube|G_sKxkh6rek|Municipio de Mixco Parte 6}}
+* {{YouTube|INQmbvTgA10|Municipio de Mixco Parte 7}}
+* {{YouTube|eEaofEqebxc|Municipio de Mixco Parte 8}}
+* {{YouTube|BNLNDPaqPPk|Mixco Viejo Parte 1}}
+* {{YouTube|UqHKbXtVMf0|Mixco Viejo Parte 2}}
+{{reftermina}}
+
+{{Departamento de Guatemala}}
+{{Control de autoridades}}
+[[Categoría:Doctrinas coloniales de los dominicos en Guatemala]]
+[[Categoría:Municipios del departamento de Guatemala]]
+[[Categoría:Patronazgo de Santo Domingo de Guzmán]]

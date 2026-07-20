@@ -1,0 +1,155 @@
+{{ver desambiguação}}
+{{Info/Município do Brasil
+<!-- GeoID=5002100 -->
+<!-- Cabeçalho -->
+| nome                 = Bela Vista
+| foto                 = Quartel do Exército em Bela Vista - panoramio (cropped).jpg
+| leg_foto             = Quartel do Exército em Bela Vista
+| apelido              =
+<!-- Dados gerais -->
+| brasão               = Brasão de Bela Vista, MS.jpg
+| bandeira             = Bandeira Bela Vista-MS.png
+| link_brasão          =
+| link_bandeira        =
+| link_hino            =
+| aniversário          = 20 de julho
+| fundação             = {{Dtlink|10|4|1900|idade}}
+| emancipação          = {{nowrap|{{dtlink|20|7|1908|idade}}}}
+| gentílico            = bela-vistense
+| lema                 = <!-- NÃO É SLOGAN DE GOVERNO NEM DE CAMPANHA ELEITORAL -->
+| padroeiro            = [[Afonso de Ligório|Santo Afonso]]
+| prefeito<!--enciclopédia, sem apelidos! -->= Reinaldo Miranda Benites<ref>[https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2021/01/01/prefeito-e-vereadores-de-bela-vista-tomam-posse-veja-lista-de-eleitos.ghtml Prefeito e vereadores de Bela Vista tomam posse] Portal G1 - acessado em 2 de fevereiro de 2021</ref>
+| partido              = [[PSDB]]
+| mandato_início       = 2021
+| fim_mandato          = 2024 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores           = 11
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Bela Vista location map.svg
+| latP                 = S | latG = 22 | latM = 06 | latS = 32
+| lonP                 = O | lonG = 56 | lonM = 31 | lonS = 15
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Bodoquena|Bodoquena]]
+| data_microrregião    = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana =
+| vizinhos             = [[Antônio João]], [[Ponta Porã]], [[Jardim (Mato Grosso do Sul)|Jardim]], [[Caracol (Mato Grosso do Sul)|Caracol]] e [[Bella Vista Norte|República do Paraguai]]
+| dist_capital         = 309
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 4895.543
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 21º]]
+| área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:7.830}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 7º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Bela Vista (sede) e [[Nunca-Te-Vi]]
+| população            = 24842 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 19º]]
+| data_pop             = estimativa IBGE/2021<ref name="IBGE_Pop_2021">{{citar web |url=https://cidades.ibge.gov.br/brasil/ms/bela-vista/panorama|título=Estimativa populacional 2021 IBGE|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=28 de agosto de 2021 |acessodata = 28 de agosto de 2021}}</ref>
+| densidade            = {{Formatnum:4.757}}
+| altitude             = 180
+| clima                = [[Clima tropical|tropical]]
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.755 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 27º]]
+| data_idh             = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.450}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 58º]]
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI |data=2000 |obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011}}</ref>
+| pib                 = {{formatnum:212799.978}} mil
+| data_pib            = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_pos             = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 33º]]
+| pib_per_capita      = 9031.49
+| data_pib_per_capita = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+'''Bela Vista''' é um [[Município (Brasil)|município brasileiro]] da [[Região Centro-Oeste do Brasil|região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+== Geografia ==
+=== Localização ===
+A cidade de Bela Vista está localizada no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], a sudoeste de Mato Grosso do Sul e na fronteira com o [[Paraguai]]. Localiza-se à [[latitude]] 22º06'32" Sul e à [[longitude]] 56º31'16" Oeste. Distâncias:
+* 349&nbsp;km da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]])
+* 1483&nbsp;km da capital federal ([[Brasília]]).
+
+=== Geografia física ===
+; Solo
+Latossolo roxo
+
+; Clima e temperatura
+Tendo clima tropical, as temperaturas médias do mês mais frio fica entre 15&nbsp;°C e 20&nbsp;°C.
+
+; Relevo
+Sua altitude é de 180 metros.
+
+; Vegetação
+Savana Parque (campo sujo), contatos Savana/Floresta Estacional e Várzeas.
+
+; Hidrografia
+Bela Vista é banhada pelo [[rio Apa]], um dos principais do estado de Mato Grosso do Sul.
+
+=== Geografia política ===
+; Fuso horário
+Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Meridiano de Greenwich|Greenwich]].
+
+; Área
+Possui área de 4908,25&nbsp;km².
+
+; Subdivisões
+Bela Vista (sede) e [[Nunca-Te-Vi]]
+
+; Limites
+Antônio João, Ponta Porã, Jardim, Caracol e República do Paraguai.
+
+== Topônimo ==
+É desconhecida a origem do topônimo do município. Supõe-se que seja por influência da localização do Fortim Bela Vista, plantado na cidade de igual denominação, no Paraguai e confrontante com a sede do município brasileiro.
+
+== Economia e infraestrutura ==
+=== Centro de zona B ===
+Bela Vista, com 23 mil habitantes e 1 relacionamento direto, é um Centro de Zona B. Nível formado por cidades de menor porte e com atuação restrita à sua área imediata; exercem funções de gestão elementares.<ref>{{citar web|url=http://www.ibge.gov.br/home/presidencia/noticias/noticia_visualiza.php?id_noticia=1246&id_pagina=1|título=notícias}} IBGE</ref> A cidade exerce influência sobre a cidade de [[Caracol (Mato Grosso do Sul)|Caracol]] (Centro Local).
+
+=== Infraestrutura ===
+; Forças armadas
+{| class="wikitable"
+|- bgcolor="#ececec"
+|+'''Comando do Exército'''
+|-
+! Organização
+! Sigla
+|-
+| 10.º Regimento de Cavalaria Mecanizado || 10º R C Mec
+|}
+
+; Outros serviços
+* Correios
+* Hospital de Pronto Socorro - HPS
+* Controladoria Geral do Município de Bela Vista
+
+== Filhos ilustres ==
+* ''Ver [[:Categoria:Naturais de Bela Vista|Biografias de bela-vistenses notórios]]''
+
+{{Referências}}
+
+== Ligações externas ==
+{{Correlatos
+|commons      = Bela Vista
+|wikisource   =
+|wikiquote    =
+|wikilivros   =
+|wikinoticias =
+|wikcionario  =
+|wikispecies  =
+}}
+* [http://www.belavista.ms.gov.br Página oficial]
+
+{{Bloco de navegação
+
+|Fronteiras do Brasil
+|Mercocidades
+}}
+{{esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Bela Vista| ]]
+[[Categoria:Fundações em Mato Grosso em 1900]]

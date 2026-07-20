@@ -1,0 +1,101 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Jobabo
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Jobabo (Cuban municipal map).png
+|map_caption            = Jobabo municipality (red) within <br> Las Tunas Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Las Tunas Province|Las Tunas]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 884
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 40,345
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|54|28|N|77|16|59|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 50
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-31
+|website                = https://www.jobabo.gob.cu/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Jobabo''' is a municipality and town in the [[Las Tunas Province]] of [[Cuba]]. It is located in the southern part of the province, {{convert|34|km|mi|abbr=on}} south of [[Las Tunas (city)|Las Tunas]], the provincial capital.
+
+==Overview==
+Jobabo is named from the [[Taíno language|taino]] word jobabol, meaning ''"a place where many jobo trees grow"''.<ref name=periodico26>{{Cite web|url=http://www.periodico26.cu/english/tunas_profile/jobabo.htm |title=Jobabo |author=Periodico 26 |accessdate=2007-10-06 |archiveurl=https://web.archive.org/web/20070623052104/http://www.periodico26.cu/english/tunas_profile/jobabo.htm |archivedate=2007-06-23 |url-status=dead }}</ref>
+
+==Demographics==
+In 2022, the municipality of Jobabo had a population of 40,345.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|884|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-06}}</ref> it has a population density of {{convert|46|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Jobabo
+ | N  = [[Guáimaro]] ([[Camagüey Province|Camagüey]])
+ | E  = [[Las Tunas (city)|Las Tunas]]
+ | SE = [[Río Cauto, Cuba|Río Cauto]] ([[Granma Province|Granma]])
+ | S  = ''[[Gulf of Guacanayabo]]''
+ | W  = [[Colombia, Cuba|Colombia]]
+}}
+{{Municipalities in Las Tunas}}
+
+[[Category:Populated places in Las Tunas Province]]
+
+
+{{Cuba-geo-stub}}

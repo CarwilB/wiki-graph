@@ -1,0 +1,309 @@
+{{For|the city by this name in Oaxaca, Mexico|Santiago Atitlán, Oaxaca}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+|name                    = Santiago Atitlán <!-- at least one of the first two fields must be filled in -->
+|official_name           = 
+|native_name             = Tz'ikin Jaay
+|native_name_lang        = <!-- e.g. "fr" for French. If more than one, use {{lang}} instead -->
+|other_name              = 
+|settlement_type         = City<!-- such as Town, Village, City, Borough etc. -->
+<!-- images, nickname, motto --->
+|image_skyline           = Volcan-San-Pedro-Panorama.JPG
+|imagesize               = 
+|image_alt               = panorama of Lake Atitlán and Santiago.
+|image_caption           = Santiago (on right) and Lake Atitlán from Volcan San Pedro
+|image_flag              = 
+|flag_size               = 
+|flag_alt                = 
+|flag_link               =
+|image_seal              = 
+|seal_size               = 
+|seal_alt                = 
+|seal_link               = 
+|image_shield            = 
+|shield_size             = 
+|shield_alt              = 
+|shield_link             = 
+|image_blank_emblem      = 
+|blank_emblem_type       = <!-- defaults to Logo -->
+|blank_emblem_size       = 
+|blank_emblem_alt        = 
+|blank_emblem_link       = 
+|nickname                = 
+|motto                   = 
+<!-- maps and coordinates ------>
+|pushpin_map             = Guatemala <!-- name of a location map as per Template:Location_map -->
+|pushpin_label_position  = right<!-- position of the pushpin label: left, right, top, bottom, none -->
+|pushpin_map_alt         = Location map of Santiago Atitlan 
+|pushpin_mapsize         = 
+|pushpin_map_caption     = Location in Guatemala 
+|pushpin_map1            = 
+|pushpin_label_position1 = 
+|pushpin_map_alt1        = 
+|pushpin_mapsize1        = 
+|pushpin_map_caption1    = 
+|coordinates             = {{coord|14|38|N|91|14|W|region:GT|display=inline,title}}
+|coor_pinpoint           = <!-- to specify exact location of coordinates (was coor_type) -->
+|coordinates_footnotes   = <!-- for references: use <ref> tags -->
+<!-- location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Guatemala.svg|25px]] [[Guatemala]]
+|subdivision_type1      = [[Departments of Guatemala|Department]] 
+|subdivision_name1      = [[Image:Flag of Sololá Department.svg|25px]] [[Sololá Department|Sololá]]
+|subdivision_type2       = 
+|subdivision_name2       = <!-- etc., subdivision_type6 / subdivision_name6 -->
+<!-- established --------------->
+|established_title       = <!-- Settled -->
+|established_date        = 
+|established_title1      = <!-- Incorporated (town) -->
+|established_date1       = 
+|established_title2      = <!-- Incorporated (city) -->
+|established_date2       = 
+|established_title3      = 
+|established_date3       = 
+|extinct_title           = 
+|extinct_date            = 
+|founder                 = 
+|named_for               = 
+<!-- government type, leaders -->
+|government_footnotes    = <!-- for references: use <ref> tags -->
+|government_type         = 
+|leader_party            = 
+|leader_title            = 
+|leader_name             = <!-- add &nbsp; (no-break space) to disable automatic links -->
+|leader_title1           = 
+|leader_name1            = <!-- etc., up to leader_title4 / leader_name4 -->
+<!-- display settings  --------->
+|total_type              = <!-- to set a non-standard label for total area and population rows -->
+|unit_pref               = <!-- enter: Imperial, to display imperial before metric -->
+<!-- area ---------------------->
+|area_footnotes          = <!-- for references: use <ref> tags -->
+|area_magnitude          = <!-- use only to set a special wikilink -->
+|area_total_km2          = <!-- ALL fields with measurements have automatic unit conversion -->
+|area_total_sq_mi        = <!-- see table @ Template:Infobox settlement for details -->
+|area_land_km2           = 
+|area_land_sq_mi         = 
+|area_water_km2          = 
+|area_water_sq_mi        = 
+|area_water_percent      = auto
+|area_urban_km2          = 
+|area_urban_sq_mi        = 
+|area_metro_km2          = 
+|area_metro_sq_mi        = 
+|area_blank1_title       = 
+|area_blank1_km2         = 
+|area_blank1_sq_mi       = 
+|area_blank2_title       = 
+|area_blank2_km2         = 
+|area_blank2_sq_mi       = 
+<!-- elevation ----------------->
+|elevation_footnotes     = <ref name="google_earth">Google Earth</ref> <!-- for references: use <ref> tags -->
+|elevation_m             = 1567
+|elevation_ft            = 
+|elevation_max_footnotes = <ref name=google_earth /> <!-- for references: use <ref> tags -->
+|elevation_max_m         = 3516
+|elevation_max_ft        = 
+|elevation_min_footnotes = <ref name=google_earth /> <!-- for references: use <ref> tags -->
+|elevation_min_m         = 1562
+|elevation_min_ft        = 
+<!-- population ---------------->
+|population_footnotes    = <!-- for references: use <ref> tags -->
+|population_total        = 44854
+|population_as_of        = 
+|population_density_km2  = auto <!-- for automatic calculation of any density field, use: auto -->
+|population_density_sq_mi= auto 
+|population_est          = 
+|pop_est_as_of           = 
+|population_urban        = 
+|population_density_urban_km2   = auto
+|population_density_urban_sq_mi = auto
+|population_metro        = 
+|population_density_metro_km2   = auto
+|population_density_metro_sq_mi = auto
+|population_blank1_title = 
+|population_blank1       = 
+|population_density_blank1_km2  = auto
+|population_density_blank1_sq_mi= auto
+|population_blank2_title = 
+|population_blank2       = 
+|population_density_blank2_km2  = auto
+|population_density_blank2_sq_mi= auto
+|population_note         = 
+<!-- demographics (section 1) -->
+|demographics_type1      = 
+|demographics1_footnotes = <!-- for references: use <ref> tags -->
+|demographics1_title1    = 
+|demographics1_info1     = <!-- etc., up to demographics1_title5 / demographics1_info5 -->
+<!-- demographics (section 2) -->
+|demographics_type2      = 
+|demographics2_footnotes = <!-- for references: use <ref> tags -->
+|demographics2_title1    = 
+|demographics2_info1     = <!-- etc., up to demographics2_title5 / demographics2_info5 -->
+<!-- time zone(s) -------------->
+|timezone1               = [[North American Central Time Zone|Central Time]]
+|utc_offset1             = -6
+|timezone1_DST           = 
+|utc_offset1_DST         = 
+<!-- postal codes, area code --->
+|postal_code_type        = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code             = 
+|area_code_type          = [[list of country calling codes|Country calling code]]<!-- defaults to: Area code(s) -->
+|area_code               = 502
+<!-- twin cities --------------->
+|twin1                   = 
+|twin1_country           = 
+|twin2                   = 
+|twin2_country           = <!-- etc., up to twin9 / twin9_country -->
+<!-- blank fields (section 1) -->
+|blank_name_sec1         = [[Köppen climate classification|Climate]]
+|blank_info_sec1         = [[Tropical savanna climate|Aw]]
+|blank1_name_sec1        = 
+|blank1_info_sec1        = 
+|blank2_name_sec1        = 
+|blank2_info_sec1        = <!-- etc., blank6_name_sec1 / blank6_info_sec1 -->
+<!-- blank fields (section 2) -->
+|blank_name_sec2         = 
+|blank_info_sec2         = 
+|blank1_name_sec2        = 
+|blank1_info_sec2        = 
+|blank2_name_sec2        = 
+|blank2_info_sec2        = <!-- etc., blank6_name_sec2 / blank6_info_sec2 -->
+<!-- website, footnotes -------->
+|website                 = 
+|footnotes               = 
+}}
+
+'''Santiago Atitlán''' ({{IPA|es|sanˈtjaɣo atiˈtlan}}, from [[Nahuatl]] ''atitlan'', "at the water", in [[Tz'utujil language|Tz'utujil]] ''Tz'ikin Jaay'', "birdhouse")<ref>[http://www.tzununya.com/about%20us/tzunun.htm Tz'unun Ya'?], tzununya.com</ref> is a [[Municipalities of Guatemala|municipality]] in the [[Sololá Department|Sololá department]] of [[Guatemala]].
+==Geography==
+The town is situated on [[Lake Atitlán]], which has an elevation of {{convert|5105|ft|m}}. The town sits on a bay of Lake Atitlán between two volcanoes. [[Volcán San Pedro]] rises to {{convert|2846|m|ft}} west of the town and [[Volcan Toliman]] rises to {{convert|3144|m|ft}} southeast of the town. [[Volcán Atitlán]], with an elevation of {{convert|3516|m|ft}}, is south-southeast of the town.<ref name=google_earth /> Santiago Atitlan is southwest of [[Panajachel]] across the lake.<ref name="google_earth"/> Major highways reach Lake Atitlán at [[San Lucas Toliman]] and Panajachel. A road links Santiago to San Lucas Tolliman. Boats connect the numerous communities around the lake.
+
+===Climate===
+Santiago Atitlán has a [[tropical savanna climate]] ([[Köppen climate classification|Köppen]]: ''Aw'') with warm days and cool nights. Santiago Atitlán has a [[wet season]] extending from May to October. The rainiest months are typically June and September.
+
+{{Weather box
+ | width       = auto
+ | collapsed   = yes
+ | metric first = yes
+ | single line = yes
+ | location    = Santiago Atitlán (1991–2020)
+ | Jan record high C = 29.2
+ | Feb record high C = 29.5
+ | Mar record high C = 30.5
+ | Apr record high C = 33.0
+ | May record high C = 31.8
+ | Jun record high C = 30.6
+ | Jul record high C = 30.5
+ | Aug record high C = 30.0
+ | Sep record high C = 30.5
+ | Oct record high C = 29.0
+ | Nov record high C = 29.5
+ | Dec record high C = 29.5
+ | year record high C = 33.0
+ | Jan high C = 25.2
+ | Feb high C = 25.5
+ | Mar high C = 25.9
+ | Apr high C = 26.1
+ | May high C = 25.4
+ | Jun high C = 24.8
+ | Jul high C = 25.9
+ | Aug high C = 25.6
+ | Sep high C = 24.7
+ | Oct high C = 24.8
+ | Nov high C = 25.2
+ | Dec high C = 25.3
+ | year high C = 25.4
+ | Jan mean C = 18.1
+ | Feb mean C = 18.5
+ | Mar mean C = 18.9
+ | Apr mean C = 19.7
+ | May mean C = 19.9
+ | Jun mean C = 19.6
+ | Jul mean C = 20.2
+ | Aug mean C = 19.7
+ | Sep mean C = 18.9
+ | Oct mean C = 18.9
+ | Nov mean C = 18.8
+ | Dec mean C = 18.3
+ | year mean C = 19.1
+ | Jan low C = 11.2
+ | Feb low C = 11.2
+ | Mar low C = 12.4
+ | Apr low C = 13.4
+ | May low C = 14.6
+ | Jun low C = 14.6
+ | Jul low C = 14.5
+ | Aug low C = 14.4
+ | Sep low C = 14.2
+ | Oct low C = 13.7
+ | Nov low C = 12.8
+ | Dec low C = 11.8
+ | year low C = 13.2
+ | Jan record low C = 3.0
+ | Feb record low C = 6.2
+ | Mar record low C = 6.0
+ | Apr record low C = 7.8
+ | May record low C = 10.1
+ | Jun record low C = 9.0
+ | Jul record low C = 9.9
+ | Aug record low C = 10.0
+ | Sep record low C = 7.1
+ | Oct record low C = 8.6
+ | Nov record low C = 4.0
+ | Dec record low C = 5.7
+ | year record low C = 3.0
+ | precipitation colour = green
+ | Jan precipitation mm = 6.6
+ | Feb precipitation mm = 10.8
+ | Mar precipitation mm = 27.5
+ | Apr precipitation mm = 58.9
+ | May precipitation mm = 169.1
+ | Jun precipitation mm = 279.4
+ | Jul precipitation mm = 133.4
+ | Aug precipitation mm = 151.7
+ | Sep precipitation mm = 237.2
+ | Oct precipitation mm = 183.7
+ | Nov precipitation mm = 37.4
+ | Dec precipitation mm = 13.6
+ | year precipitation mm = 1309.3
+ | unit precipitation days = 1.0 mm
+ | Jan precipitation days = 0.9
+ | Feb precipitation days = 1.0
+ | Mar precipitation days = 2.8
+ | Apr precipitation days = 5.0
+ | May precipitation days = 13.7
+ | Jun precipitation days = 20.0
+ | Jul precipitation days = 14.2
+ | Aug precipitation days = 15.1
+ | Sep precipitation days = 19.8
+ | Oct precipitation days = 13.9
+ | Nov precipitation days = 3.9
+ | Dec precipitation days = 1.5
+ | year precipitation days = 111.8
+ | source 1 = [[National Oceanic and Atmospheric Administration|NOAA]]<ref name="WMONormals">{{cite web
+|url = https://www.nodc.noaa.gov/archive/arc0216/0253808/2.2/data/0-data/Region-4-WMO-Normals-9120/Guatemala/CSV/SantiagoAtitlan_NA.csv
+|title = World Meteorological Organization Climate Normals for 1991-2020 — Santiago Atitlán
+|publisher = National Oceanic and Atmospheric Administration
+|access-date = February 2, 2024}}</ref>
+}}
+
+==Demography==
+The majority of the residents are [[Indigenous peoples of the Americas|indigenous]] [[Maya peoples|Maya]]. It was the capital of the [[Tz'utujil people]] in [[pre-Columbian]] times and its name was Chuitinamit.
+
+Santiago Atitlán is the home of the Cojolya Weaving Center and Museum, founded by the Cojolya Association of Maya Women Weavers. The museum shows the history, tradition, and process of backstrap-loom weaving, the evolution of the traditional costume of the Tzutujil, and tells about the indigenous people of Santiago Atitlán.
+
+==History==
+Santiago Atitlán was the site of considerable state-sponsored violence during the country's [[Guatemalan Civil War|civil war]]. Some of the most notable incidents that occurred during the war include the assassination of Roman Catholic priest [[Stanley Rother]] by right-wing death squads on 28 July 1981,<ref>[http://www.catharchdioceseokc.org/history/Murder.htm Father Stanley Rother Oklahoma missionary murdered in Guatemala] {{webarchive|url=https://web.archive.org/web/20070704144630/http://www.catharchdioceseokc.org/history/Murder.htm |date=2007-07-04 }}</ref> and the massacre of 14 people (and wounding of 21 others) when the [[Guatemalan Army]] opened fire on a crowd of unarmed civilians on 2 December 1990.<ref>{{cite web|url=http://www.culturalsurvival.org/publications/csq/csq-article.cfm?id=917|title=Cultural Survival Quarterly|work=Cultural Survival}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{wikivoyage-inline|Santiago Atitlán}}
+* [http://www.cojolya.org Cojolya Weaving Center and Museum]
+* [http://www.santiagoatitlan.com]
+{{Sololá Department}}
+{{Authority control}}
+
+{{DEFAULTSORT:Santiago Atitlan}}
+[[Category:Municipalities of the Sololá Department]]
+[[Category:Tz'utujil people]]

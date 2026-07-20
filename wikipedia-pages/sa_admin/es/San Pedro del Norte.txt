@@ -1,0 +1,87 @@
+{{Ficha de entidad subnacional
+| nombre = San Pedro del Norte
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|CI}}
+| apodo = San Pedro de Potrero Grande
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.2800
+ |longitude= -86.8460
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=11}}
+| subdivisión = 10 comarcas
+| elevación_media = 494
+| superficie = 71.50
+| superficie_puesto = 132
+| número_entidades = 153
+| población_puesto = 148
+| población_año = 2022
+| población = 5361
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/chinandega/3005__san_pedro_del_norte/ Estimación del 2022] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 1070
+| densidad = 74.98
+| gentilicio = Norsampedrano,-na <br />Norsampedrino, -a
+| fundación = 9 de abril de 1889 ({{Edad|9|4|1889}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 27300
+}}
+
+'''San Pedro del Norte''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Chinandega|Chinandega]] en la República de [[Nicaragua]]. Extraoficialmente denominado también '''San Pedro de Potrero Grande'''.
+
+== Geografía ==
+El término municipal limita al norte y oeste con la República de [[Honduras]], al sur con el municipio de [[Cinco Pinos]], y al este con el municipio de [[San Francisco del Norte]] y la República de Honduras.<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=30 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 240 kilómetros de la capital de [[Managua]].
+
+Su sistema montañoso está constituido por las estribaciones de la cordillera de La Botija, que colinda en su región noroeste con el territorio de la República de Honduras. Riegan el área municipal los ríos Guasaule y El Torondano, con algunos de sus afluentes orientales de su curso sur.<ref name='INIFOM'/>
+
+== Historia ==
+Este municipio junto con los municipios de San Francisco de Cuajiniquilapa y Santo Tomás del Nance fueron creados por una misma ley legislativa, el 9 de abril de 1889.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2022)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 2,639 (49.2%)
+| valor1 = 49.2
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 2,722 (50.8%)
+| valor2 = 50.8
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2022)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 4,291 (80%)
+| valor1 = 80
+| color1 = #109618
+| etiqueta2 = Urbano: 1,070 (20%)
+| valor2 = 20
+| color2 = #FF9900
+}}
+San Pedro del Norte tiene una población actual de 5,361 habitantes. De la población total, el 49.2% son hombres y el 50.8% son mujeres. Casi el 20% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima tropical]] cálido con precipitaciones anuales de 1200 mm.<ref name='INIFOM'/>
+
+== Localidades ==
+Además del pequeño casco urbano, existen un total de 14 comunidades rurales:<ref>Alcaldía de San Pedro del Norte.</ref> Comarca El Panal, Palo Blanco, La Vijagua, La Montaña, Plan grande, Los araditos, Monte redondo, El Falcón, Loma verde, Loma de Piedra, La Polvazón, El Polvón, El Chaparral, La Unión.
+
+== Economía ==
+La principal actividad económica es la agricultura, con cultivo de granos básicos y una economía de subsistencia, sembrándose el [[Zea mays|maíz]], [[Sesamum indicum|ajonjolí]] y [[Phaseolus vulgaris|frijol]] principalmente.<ref name='INIFOM'/>
+
+== Cultura ==
+Las fiestas tradicionales se celebran cada 25 de marzo en honor a la celebración de la Anunciación del Señor, y cuando está fiesta es Semana Santa se trasladan al fin de semana posterior,  por disposición de acuerdo de alcaldía e Iglesia católica, que son fiestas tradicionales del pueblo sampedrano, y las patronales del municipio que es el 29 de junio se celebra la fiesta a los Santos Pedro y Pablo que son solamente religiosa por acuerdos del 2009 entre alcaldía municipal e iglesia católica del pueblo.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Chinandega]]
+[[Categoría:Municipios del departamento de Chinandega]]

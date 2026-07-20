@@ -1,0 +1,100 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Najasa
+|other_name             = 
+|native_name            = 
+|nickname               = Sohail
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Najasa CF9A3580 Sierra Najasa.jpg
+|imagesize              = 250px
+|image_caption          = Sierra Najasa
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = Coat_of_arms_of_Najasa.jpg
+|shield_size            = 120x90px
+|image_map              = Najasa (Cuban municipal map).png
+|map_caption            = Najasa municipality (red) within <br> Camagüey Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Camagüey Province|Camagüey]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = President
+|leader_name            = Yudit Rojas Peña
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=citypopulation/>
+|area_total_km2         = 885.32
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 14,732
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|21|05|1|N|77|44|50|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 100
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-322
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Najasa''' ({{IPA|es|naˈxasa}}) is a municipality and town in the [[Camagüey Province]] of [[Cuba]].
+
+==Demographics==
+In 2022, the municipality of Najasa had a population of 14,732.<ref name="citypopulation2">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|885.32|km2|sqmi|abbr=on}},<ref name="citypopulation">{{Cite web |author=citypopulation.de |year=2015 |title=Population of Najasa (Municipality) |url=https://www.citypopulation.de/php/cuba-admin.php?adm2id=3012 |accessdate=March 5, 2017}}{{cbignore|bot=medic}}</ref> it has a population density of {{convert|17.6|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Najasa Municipal Museum]]
+*[[List of cities in Cuba]]
+*[[Municipalities of Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Najasa
+ | N  = [[Sibanicú]]
+ | NE = [[Guáimaro]]
+ | SE = [[Amancio, Cuba|Amancio]] ([[Las Tunas Province|Las Tunas]])
+ | SW = [[Santa Cruz del Sur]]
+ | W  = [[Vertientes]]
+ | NW = [[Jimaguayú]]
+}}
+{{Municipalities in Camagüey}}
+
+[[Category:Populated places in Camagüey Province]]
+
+
+{{Cuba-geo-stub}}

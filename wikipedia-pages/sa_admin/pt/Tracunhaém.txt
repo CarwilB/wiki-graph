@@ -1,0 +1,68 @@
+{{Info/Município do Brasil
+<!-- GeoID=2615508 -->
+<!-- Cabeçalho -->| nome = Tracunhaém
+| preposição = de
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = 
+| bandeira = Tracunhaém-pe.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 20 de dezembro
+| fundação = {{nowrap|{{dtlink|30|11|1892|idade}}}}
+| emancipação {{nowrap|{{dtlink|20|12|1963}}}}
+| gentílico = tracunhaense
+| lema = 
+| prefeito = Aluizio Xavier
+| partido = [[Partido Liberal (2006)|PL]]
+| fim_mandato = 2024<!-- Localização -->
+| mapa = Brazil Pernambuco Tracunhaém location map.svg
+| latP = S
+| latG = 07
+| latM = 48
+| latS = 18
+| lonP = O
+| lonG = 35
+| lonM = 14
+| lonS = 24
+| estado = Pernambuco
+| mesorregião = [[Mesorregião da Mata Pernambucana|Mata Pernambucana]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião da Mata Setentrional Pernambucana|Mata Setentrional Pernambucana]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = Norte: [[Nazaré da Mata]]; Sul: [[Paudalho]]; Leste: [[Itaquitinga]] e [[Araçoiaba]]; Oeste: [[Carpina]]
+| dist_capital = 48
+<!-- Características geográficas -->| área = 116.659 <!--favor manter o formato-->
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 13547 <!--favor manter o formato-->
+| data_pop = estatísticas [[IBGE]]/[[2014]]<ref name="IBGE_Pop_2014">{{citar web |url = http://cod.ibge.gov.br/36SAG |título=Estimativa Populacional 2014 | obra =Estimativa Populacional 2014 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=agosto de 2014 |acessodata = 29 de agosto de 2014}}</ref>
+| altitude = 120
+| clima = [[Tropical]]
+| sigla_clima = As'
+<!-- Indicadores -->| idh = 0.605 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=1 de outubro de 2013}}</ref>
+| pib = {{formatnum:74 319}} mil
+| data_pib = [[IBGE]]/[[2012]]<ref name="IBGE_PIB">{{citar web |url=http://cod.ibge.gov.br/3PL92 |titulo=Produto Interno Bruto dos Municípios 2012 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2014}}</ref>
+| pib_per_capita = 5649,50
+| data_pib_per_capita = [[IBGE]]/[[2012]]<ref name="IBGE_PIB"/>
+| site = http://tracunhaem.pe.gov.br/
+}}
+'''Tracunhaém''' é um [[Município (Brasil)|município brasileiro]] do [[estado (subdivisão)|estado]] de [[Pernambuco]]. Localiza-se a uma [[latitude]] 07º48'17" [[sul]] e a uma [[longitude]] 35º14'24" [[oeste]], estando a uma altitude de 120 metros. Sua população estimada em [[2004]] era de 12.630 habitantes. Possui uma área de 141,67&nbsp;km². 
+==História==
+
+Originalmente, Tracunhaém foi um distrito criado em 30 de novembro de 1892, subordinado ao município de [[Nazaré da Mata]] (na época chamado apenas de "Nazaré"), pela lei municipal nº 5. Essa situação se manteria até {{dtlink|20|12|1963}}, quando a lei estadual nº 4.950 elevaria o distrito à condição de município, desmembrando-o de Nazaré da Mata.<ref name=IBGEci>{{citar web|url= https://cidades.ibge.gov.br/brasil/pe/tracunhaem/historico|título=Tracunhaém |publicado=IBGE Cidades|acessodata=1/4/2022}}</ref>
+
+==Geografia==
+Compõe o município apenas o distrito-sede (Tracunhaém).<ref name=IBGEci />
+{{Referências}}
+
+{{Esboço-municípiosbr/Pernambuco}}
+{{Municípios de Pernambuco}}
+{{Portal3|Brasil}}
+
+[[Categoria:Municípios de Pernambuco]]
+[[Categoria:Fundações em Pernambuco em 1963]]
+[[Categoria:Deserto de notícias]]

@@ -1,0 +1,149 @@
+{{Info/Município do Brasil
+<!-- GeoID=5007307 -->
+<!-- Cabeçalho -->
+| nome                 = Rio Negro
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Bandeira Rio Negro-MS.png
+| link_brasão          = 
+| link_bandeira        =
+| link_hino            = 
+| aniversário          =9 de maio
+| fundação             ={{nowrap|{{dtlink|18|3|1964|idade}}}}
+| emancipação          ={{nowrap|{{dtlink|9|5|1965|idade}}}}
+| gentílico            =[[wikt:rionegrense|rionegrense]]
+| lema                 = 
+| padroeiro            = [[Nossa Senhora de Fátima]]
+| prefeito             = Henrique Ezoe<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=6 de janeiro de 2025}}</ref>
+| partido              = [[PSDB]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Rio Negro location map.svg
+| latP                 = S | latG = 19 | latM = 26 | latS = 56
+| lonP                 = O | lonG = 54 | lonM = 59 | lonS = 13
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Centro-Norte de Mato Grosso do Sul|Centro Norte de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Campo Grande|Campo Grande]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Aquidauana]], [[Rio Verde de Mato Grosso]], [[São Gabriel do Oeste]] e [[Corguinho]]
+| dist_capital         = 160
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 1807.665 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 55º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:0.368}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Rio Negro (sede), [[Nova Esperança (Rio Negro)|Nova Esperança]]
+| população            = 5038 <!--favor manter o formato-->
+| população_pos        = [[Anexo:Lista de municípios de Mato Grosso do Sul por população|MS: 71º]]
+| data_pop             = est. [[IBGE]] 2011<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| altitude             = 279
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|autor=|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[tropical]]
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.723 <!--favor manter o formato-->
+| idh_pos              = [[Anexo:Lista de municípios de Mato Grosso do Sul por IDH|MS: 52º]]
+| data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.420}}
+| gini_pos             = [[Anexo:Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 12º]] 
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:69813}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 78º]]
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 9572.68
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Rio Negro''' é um [[Município (Brasil)|município brasileiro]] da região [[Região Centro-Oeste do Brasil|Centro-Oeste]], situado no [[unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+==Geografia==
+===Localização===
+O município de  está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Centro-Norte de Mato Grosso do Sul|Centro Norte de Mato Grosso do Sul]] ([[Microrregião de Campo Grande]]). Localiza-se na [[latitude]] 19º26'58" [[sul]] e a uma [[longitude]] 54º59'13" [[oeste]]. Distâncias:
+*{{fmtn|144|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]])
+*{{fmtn|1044|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Na região centro-norte do município predomina o Latossolo Vermelho-Amarelo, de textura agilosa e média, tem-se porções significativas ocupadas com Neossolos, sendo que quanto a fertilidade natural, domina, em todo o município, o caráter álico. E ainda pequenas áreas de Luvissolos.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|279|m}}. O município se localiza em duas Regiões: 
+*Região Planalto da Borda Ocidental da Bacia do Paraná, com as unidades geomorfológicas: Primeiro Patamar da Borda Ocidental, Depressão InterPatamares e Segundo Patamar da Borda Ocidental
+*Região dos Chapadões Residuais da Bacia do Paraná com a unidade: Chapadão de São Gabriel.
+ 
+Apresenta relevo plano geralmente elaborado por várias fases de retomada erosiva e com relevos elaborados pela ação fluvial.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[AW]]), com características do clima úmido a sub-úmido. Apresenta índice efetivo de umidade com valores anuais variando de 20 a 40%. A precipitação pluviométrica anual varia entre 1.500 a 1.750mm, excedente hídrico anual de 800 a 1.200mm durante um a seis meses e deficiência hídrica de 350mm durante quatro meses. 
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]]. Rios do município:
+*Rio Negro: rio que batizou o município. Afluente pela margem esquerda do rio Paraguai que nasce na serra da Boa Sentença, no município de Corguinho. Faz divisa entre Corguinho e Rio Negro e entre o município de Rio Negro e Rio Verde de Mato Grosso. Atravessa  o Pantanal de Aquidauana. A bacia do alto-rio-negro é formada por nascentes localizadas nos municípios de Rio Negro. O rio flui para a planície pantaneira da qual é um dos principais provedores.
+*Rio Negrinho: afluente pela margem direita do rio Negro; nasce na serra de Maracaju, no município de Rio Verde de Mato Grosso, fazendo divisa entre este município e o de Rio Negro.
+*Rio do Peixe: afluente pela margem esquerda do rio Negrinho, no município de Rio Negro.
+Suas nascentes se localizam na serra Negra, a 550m de altitude.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. É a pastagem plantada a cobertura vegetal predominante, encontrando-se também expressiva quantidade de vegetação natural representada pela Cerrado Arbóreo Denso (Cerradão) e pelo seu contato com a Floresta Estacional. Em pequena proporção aparece a lavoura.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação ao [[Meridiano de Greenwich]] ([[Tempo Universal Coordenado]])
+
+;Área
+
+Ocupa uma superfície de {{fmtn|1807.665|km²}}.
+ 
+;Subdivisões
+
+Rio Negro (sede) e Nova Esperança<ref>https://cidades.ibge.gov.br/brasil/ms/rio-negro/historico</ref>
+
+;Arredores
+
+Aquidauana, Rio Verde de Mato Grosso, São Gabriel d'Oeste e Corguinho
+
+==Histórico==
+Em 1948, Joaquim de Almeida e Artur Alves Pereira, fizeram um abaixo assinado solicitando ao governo do estado, a doação de 4.000 hectares de terras, para formação de uma colônia agrícola nesta região. O pedido foi negado e por volta do ano de 1950, o deputado Nelson Evangelista de Souza, baiano, dedicado ao comércio de diamantes, eleito por esta região, apresentou projeto de lei criando a tão sonhada colônia, em terras da fazenda Santa Luzia.<ref>Barros, Padre Waldemar. Rio Negro, Ontem e hoje, ed. ANE 1996
+</ref>
+No final de 1952 vieram para a região algumas famílias originárias do Japão. Dentre vários colonizadores, o que mais se destacou foi Massato Matsubara. Com a abertura de uma estrada ligando a região de Campo Grande, iniciou-se o povoamento denominado "Faca de Pau", onde Matsubara, projetou e implantou um loteamento dando origem a cidade de Rio Negro. Predominava naquela época as lavouras cafeeiras, que enchiam os olhos daqueles que ali chegavam, passando com o tempo a se plantar lavouras diversificadas, das quais acentuadamente o arroz, feijão e milho. As prospectivas de progresso eram animadora e logo a colônia de Rio Negro de Santa Luzia passava a situação de Distrito de Rio Negro, pertencente ao município de Corguinho em 1959.
+
+Foi elevada a distrito pela Lei n° 168, de 21 de novembro de 1958 e o município criado pela Lei nº 2.141, de 18 de março de 1964, desmembrado do município de Corguinho e instalado em 9 de maio de 1965.
+
+Em 1977 o município passa a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+===Topônimo===
+Primeiro chamada de "Faca-de-pau" a localidade recebeu o nome em homenagem ao rio do mesmo nome que corta o município e passa cerca de um quilômetro da sede.
+
+==Turismo==
+A cidade possui cachoeiras que favorecem ao turismo e a prática de esportes radicais como rapel. A cachoeira do Rio do Peixe como é conhecida possui 65 metros, localizada a 17&nbsp;km da cidade é uma das mais visitadas, balneário da Neide, está a 2&nbsp;km da cidade, está localizado no rio Negro, compreende de cachoeiras, quedas d'água. Cachoeira da Dona Avelina, também é um dos belos pontos turísticos, com duas quedas d'água, totalizando 60 metros. Também possui um sítio arquelógico que remete aos povos primitivos da região.{{carece de fontes}}
+
+==Demografia==
+Sua população estimada em 2011 era de 5.006 habitantes.
+
+{{Referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons=Rio Negro (Mato Grosso do Sul)
+}}
+*[http://www.rionegro.ms.gov.br Site oficial]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul|Rio Negro]]
+[[Categoria:Fundações em Mato Grosso em 1964]]

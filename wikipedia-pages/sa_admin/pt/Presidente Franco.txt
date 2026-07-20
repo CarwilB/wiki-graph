@@ -1,0 +1,231 @@
+{{Ver desambig|o presidente paraguaio|Manuel Franco}}
+
+{{Info/Cidade do Paraguai
+|nome                    = Presidente Franco
+|nome_nativo             = Presidente Franco
+|imagem                  = Saltos del Monday, Presidente Franco, Paraguay.jpg
+|legenda                 =
+|bandeira                = Bandera de Presidente Franco.PNG
+|brasao                  = Escudo de Presidente Franco.PNG
+|mapa_localizacao        = Paraguai
+|lema                    =
+|nome_oficial            =
+|departamento            = [[Alto Paraná]]
+|distrito                =
+|fundacao                = [[13 de outubro]] de [[1929]]
+|intendente              = Celso Miranda
+|populacao_distrito      = 
+|populacao_metropolitana = 101.720
+|densidade               = 834 hab./km²
+|gentilico               = Franquenho/a
+|idh                     = 
+|area                    = 122 km²
+|altitude                = 184
+|temperatura_media       = 15
+|codigo_telefonico       =
+|fuso_horario            = -3
+|utc                     = 
+|utc_verao               =
+|pib_per_capita          = 
+|sitio_web               =
+|latP                    =  S |latG =25 |latM =32 |latS =56    
+|lonP                    =  O |lonG =54 |lonM =36 |lonS =44    
+}}
+
+'''Presidente Franco''' é uma cidade de fronteira do [[Paraguai]], localizada na parte leste do país, nas margens do [[Rio Paraná]], no departamento do [[Alto Paraná]]. É conhecida como a cidade das Três Fronteiras, pois faz divisa com as cidades de [[Puerto Iguazú]], pertencente a [[Argentina]], e [[Foz do Iguaçu|Foz de Iguaçu]], pertencente ao [[Brasil]].
+
+== Etimologia ==
+O termo "Presidente Franco" é uma homenagem ao [[Manuel Franco|Dr. Manuel Franco]], presidente do Paraguai de 1916 a 1919.<ref name=":0">{{Citar web|titulo=Presidente Franco|url=http://www.altoparana.gov.py/v0/index.php/presidente-franco|lingua=es-es}}</ref>
+
+== História ==
+A cidade foi fundada em 1929, por Vicente Antonio Matiauda, ​​às margens dos rios [[Rio Paraná|Paraná]] e [[Rio Monday|Monday]], e constitui um dos portos mais importantes da região, principalmente para o transporte de madeira e [[erva-mate]], tendo sido a primeira cidade do distrito a ser fundada.<ref name=":0" />
+
+Em 1974, foi declarado município de terceira categoria e, em 1979, foi declarado município de primeira categoria. Após vários anos de desenvolvimento e aumento populacional, a cidade tornou-se a cabeça de outros portos fluviais, como Puerto Indio, [[Hernandarias (Paraguai)|Hernandarias]], [[Marangatu|Marangatú]] e [[Carlos Antonio López (cidade)|Carlos Antonio López]]. Desempenhou um importante papel comercial, pois importantes produtos entraram no Paraguai através de seu porto.
+
+Foi a primeira cidade onde instituições estaduais se estabeleceram. Na década de 1940, foi instalado o Hospital de Assistência Social, depois outras instituições, como Senepa e a Administração Paraguaia de Álcool (APAL), que na época exportavam bebidas alcoólicas para o [[Brasil]] e [[Argentina]].<ref>{{Citar web|titulo=La ciudad de Presidente Franco celebra mañana su fiesta aniversario|url=https://www.ultimahora.com/la-ciudad-presidente-franco-celebra-manana-su-fiesta-aniversario-n568450.html|lingua=es-ES}}</ref>
+
+== Geografia ==
+
+=== Clima ===
+Segundo a [[Classificação climática de Köppen-Geiger|classificação climática de Köppen]], o clima de Presidente Franco é subtropical úmido (Cfa), com temperatura média anual é de 21&nbsp;°C; as máximas chegam aos 38&nbsp;°C e as mínimas atingem 0&nbsp;°C. O maior índice de pluviosidade do Paraguai ocorre no [[Alto Paraná (departamento)|Departamento do Alto Paraná]] e, particularmente, as chuvas na cidade são um pouco mais volumosas que em Ciudad del Este. No inverno, o orvalho e a névoa são permanentes.<ref>{{Citar web|titulo=Clima Presidente Franco: Temperatura, Climograma y Tabla climática para Presidente Franco - Climate-Data.org|url=https://es.climate-data.org/america-del-sur/paraguay/alto-parana/presidente-franco-48802/}}</ref>
+
+=== Localização ===
+A cidade está localizada nas coordenadas 25° 32' 52" S e 54° 36' 44" O. É limitada a norte por [[Ciudad del Este]], a oeste por [[Los Cedrales]], e a sul e a leste com o rio Paraná, sendo a sul, a outra margem pertencendo a [[Puerto Iguazú|Puerto Iguazu]], Argentina, e a leste, a outra margem pertencendo a [[Foz do Iguaçu]].
+
+== Demografia ==
+Presidente Franco possuí uma ópulação de 101 mil habitantes e uma densidade demográfica de 834 hab./km², sendo a 16° cidade mais populosa do país. Forma uma [[conurbação]] junto com [[Ciudad del Este]], [[Minga Guazú]] e [[Hernandarias (Paraguai)|Hernandarias]], sendo parte integrante da [[Região Metropolitana de Ciudad del Este]].
+
+=== Evolução demográfica ===
+Apesar mais antiga que sua vizinha Ciudad del Este, Presidente Franco sempre foi menos populosa que a capital do departamento. Atualmente, especula uma projeção de crescimento contínuo, chegando aos 120 mil habitantes em 2025.
+{| class="wikitable"
+!Evolução demográfica de Presidente Franco (2000-2025)
+|- align="center"
+|<timeline>
+Colors=
+  id:lightgrey value:rgb(0.95,0.95,0.99)
+  id:darkgrey value:rgb(0.80,0.70,0.95)
+  id:sfondo value:rgb(1,1,1)
+  id:barra value:rgb(0.20,0.80,0.40)
+
+ImageSize  = width:650 height:250
+PlotArea   = left: 60 bottom: 30 top: 20 right: 20
+DateFormat = x.y
+Period     = from:20000 till:150000
+TimeAxis   = orientation:vertical
+AlignBars  = late
+ScaleMajor = gridcolor:lightgrey increment:10000 start:20000
+ScaleMinor = gridcolor:lightgrey increment:5000 start:20000
+BackgroundColors = canvas:sfondo
+
+BarData=
+
+  bar: 2000 text: 2000
+  bar: 2005 text: 2005
+  bar: 2010 text: 2010
+  bar: 2015 text: 2015
+  bar: 2018 text: 2018
+  bar: 2019 text: 2019
+  bar: 2020* text: 2020*
+  bar: 2022* text: 2022*
+  bar: 2025* text: 2025*
+
+PlotData=
+  color:barra width:20 align:center
+
+  bar: 2000 from:51713 till: 20000
+  bar: 2005 from:63927 till: 20000
+  bar: 2010 from:76772 till: 20000
+  bar: 2015 from:90292 till: 20000
+  bar: 2018 from:98805 till: 20000
+  bar: 2019 from:101720 till: 20000
+  bar: 2020* from:104677 till: 20000
+  bar: 2022* from:110739 till: 20000
+  bar: 2025* from:120208 till: 20000
+PlotData=
+
+  bar: 2000 at: 51713 fontsize:S text: 51.713 shift:(0,5)
+  bar: 2005 at: 63927 fontsize:S text: 63.927 shift:(0,5)
+  bar: 2010 at: 76772 fontsize:S text: 76.772 shift:(0,5)
+  bar: 2015 at: 90292 fontsize:S text: 90.292 shift:(0,5)
+  bar: 2018 at: 98805 fontsize:S text: 98.805 shift:(0,5)
+  bar: 2019 at: 101720 fontsize:S text: 101.720 shift:(0,5)
+  bar: 2020* at: 104677 fontsize:S text: 104.677 shift:(0,5)
+  bar: 2022* at: 110739 fontsize:S text: 110.739 shift:(0,5)
+  bar: 2025* at: 120208 fontsize:S text: 120.208 shift:(0,5)
+</timeline>
+|-
+|<small>'''Fonte: [[DGEEC]]'''</small>
+|}
+
+=== Faixa etária ===
+Assim como na maior parte do país, a cidade possuí um grande número de jovens e um pequeno número de idosos.
+{| class="wikitable"
+!Faixa etária
+!Homens
+!Mulheres
+!Total
+|-
+|0 a 4 anos
+|5.161
+|5.143
+|10.304
+|-
+|5 a 14 anos
+|10.355
+|10.303
+|20.658
+|-
+|15 a 29 anos
+|14.310
+|13.988
+|28.298
+|-
+|30 a 44 anos
+|10.177
+|11.142
+|21.319
+|-
+|45 a 64 anos
+|8.210
+|8.256
+|16.466
+|-
+|65 a 79 anos
+|2.110
+|1.906
+|4.016
+|-
+|Mais de 80 anos
+|319
+|340
+|659
+|-
+|'''Total'''
+|'''50.640'''
+|'''51.079'''
+|'''101.720'''
+|}
+
+== Governo ==
+O atual intendente municipal é Roque Godoy.<ref>{{Citar web|titulo=Fronteira: Prefeito de Puerto Presidente Franco confirma apoio para construção de nova ponte|url=https://www.primeiralinha.com.br/home2/noticia_online.php?noticia_online=1007&titulo=fronteira:-prefeito-de-puerto-presidente-franco-confirma-apoio-para-construcao-de-nova-ponte|lingua=pt-br}}</ref>
+
+=== Geminações ===
+
+* {{ARGb}} [[Puerto Iguazú]], Argentina;
+* {{SWIb}} [[Acquarossa]], Suíça.<ref>{{Citar web|titulo=Firman acuerdo de hermandad entre Franco y ciudad de Suiza|url=https://paraguaynoticias247.com/%ef%bb%bffirman-acuerdo-de-hermandad-entre-franco-y-ciudad-de-suiza/|data=2019-04-11|lingua=es|ultimo=paraguaynoticias}}</ref>
+
+== Economia ==
+Presidente Franco possuí uma economia essencialmente agrária, cujas práticas são realizadas na margem sul do Rio Monday. Madeira e soja são os principais produtos exportados pela cidade. Os laticínios também se fazem presente na cidade. Algumas atrações turísticas e um comércio pouco explorado complementam o setor terciário.
+
+=== Turismo ===
+A cidade apresenta algumas atrações turísticas, sendo as principais:
+
+'''[[Marco das Três Fronteiras]]:''' localizado a três quilômetros do centro da cidade, onde é possível observar a confluência do [[Rio Iguaçu]] no [[Rio Paraná]], assim como a tríplice fronteira entre [[Brasil]], [[Paraguai]] e [[Argentina]].<ref>{{Citar web|titulo=Foz do Iguaçu: Marco 3 fronteiras • Traveleiros|url=https://traveleiros.com/marco-das-3-fronteiras-argentina-brasil-e-paraguai/|data=2018-06-18|lingua=pt-BR}}</ref>
+
+'''[[Saltos do Monday]]:''' localizados no [[Rio Monday]], é uma série de saltos de até 40 metros de altura.<ref>{{Citar web|titulo=Saltos del Monday no Paraguai|url=https://www.iguassu.com.br/articles/post/saltos-del-monday-no-paraguai/|data=2018-04-06|lingua=en}}</ref>
+
+== Infraestrutura ==
+
+===Educação===
+A cidade possuí três universidades:
+
+* Escuela Superior de Bellas Artes (ESBA UNE);<ref>{{Citar web|titulo=Escuela Superior de Bellas Artes|url=http://www.esba.une.edu.py/v1/|lingua=es-AR}}</ref>
+* Universidade Centuria;
+* Universidade Privada del Este (UPE).
+
+=== Ponte da Integração ===
+A [[Ponte da Integração Brasil-Paraguai|Ponte da Integração]] irá ligar Presidente Franco diretamente a Foz do Iguaçu, Brasil. A estrada seguirá um trajeto contornando a Região Metropolitana de Ciudad del Este, até chegar a Ruta 7. É vista como importante componente para o desenvolvimento de Presidente Franco.<ref>{{Citar web|titulo=Segunda ponte que liga Brasil e Paraguai terá trânsito liberado para todo tipo de veículo, diz Codefoz|url=https://g1.globo.com/pr/oeste-sudoeste/noticia/2020/01/29/segunda-ponte-que-liga-brasil-e-paraguai-tera-transito-liberado-para-todos-veiculos-diz-codefoz.ghtml|lingua=pt-br}}</ref><ref>{{Citar web|titulo=Ponte da Integração Brasil-Paraguai: obra avança em Foz do Iguaçu {{!}} ITAIPU BINACIONAL|url=https://www.itaipu.gov.br/sala-de-imprensa/noticia/ponte-da-integracao-brasil-paraguai-obra-avanca-em-foz-do-iguacu}}</ref>
+
+=== Transporte ===
+O município de Presidente Franco é servido pela seguinte rodovia:
+* [[Avenida Monday]] que liga [[Ciudad del Este]] à [[Los Cedrales]] <ref>http://www.abc.com.py/edicion-impresa/suplementos/escolar/rutas-del-paraguay-572133.html</ref><ref>https://www.mopc.gov.py/mopcweb.old/red-vial-s1</ref><ref>https://www.ultimahora.com/mopc-elabora-mapa-actualizado-rutas-del-paraguay-n773147.html</ref>
+
+== Cultura ==
+[[Ficheiro:Gritos_del_Monday_-_Largometraje.jpg|miniaturadaimagem|Gritos del Monday, mais importante filme do terror paraguaio.]]
+
+=== Cinema ===
+Presidente Franco foi palco de um importante filme do terror paraguaio, Gritos del Monday, lançado em 2016, com cenas gravadas em 2013 na cidade.<ref>{{Citar web|titulo=“Gritos del Monday”, la película - Paraguay.com|url=http://www.paraguay.com/espectaculos/-gritos-del-monday-la-pelicula-142338/pagina/3}}</ref>
+
+=== Mídia ===
+A cidade é coberta pelas emissoras de rádio e televisão de Ciudad del Este, com poucas instalações midiáticas próprias. Possuí uma emissora de televisão e três de rádio:
+
+==== Televisão ====
+
+* Teledifusura del Este
+
+==== Rádio ====
+
+* Radio Concierto
+* Radio Teko Porã
+* Radio Paraná
+
+=== Esporte ===
+Presidente Franco possuí um clube de futebol no campeonato paraguaio da terceira divisão, o [[Club Cerro Porteño (Presidente Franco)|Club Cerro Porteño PF]], que manda seus jogos no [[Estádio Felipe Giménez]].<ref>{{Citar web|titulo=Estádio do Club Cerro Porteño (Presidente Franco)|url=https://maisfutebol.iol.pt/cerro-porteno-pf/estadio/8144/3890|lingua=pt}}</ref>
+
+==Ver também==
+*[[Francisco Franco]]
+
+{{referências}}{{Departamento de Alto Paraná}}
+{{Esboço-geopy}}
+
+[[Categoria:Distritos do departamento de Alto Paraná]]

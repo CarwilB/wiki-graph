@@ -1,0 +1,127 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Napo District
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Napo in the [[Maynas Province, Peru|Maynas Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Loreto Region|Loreto]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Maynas Province, Peru|Maynas]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = July 2, 1943
+| seat_type               = [[Capital city|Capital]]
+| seat                    = [[Santa Clotilde, Maynas Province|Santa Clotilde]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Rogerio Quevedo Rivadeneyra
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 24298.1
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 100
+| population_footnotes    = 
+| population_total        = 15097
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 160107
+| website                 = 
+| footnotes               = 
+}}
+
+[[File:NapoVillagePeru02-02.jpg | thumb | right]]
+'''Napo District'''  is one of thirteen [[Districts of Peru|districts]] of the [[Maynas Province, Peru|Maynas Province]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080417091049/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-17 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Santa Clotilde, Napo, elevation {{convert|118|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 31.6
+|Feb high C = 31.6
+|Mar high C = 31.5
+|Apr high C = 31.1
+|May high C = 30.6
+|Jun high C = 30.1
+|Jul high C = 30.3
+|Aug high C = 31.5
+|Sep high C = 32.3
+|Oct high C = 32.3
+|Nov high C = 32.0
+|Dec high C = 31.8
+|year high C = 
+|Jan low C = 22.5
+|Feb low C = 22.5
+|Mar low C = 22.6
+|Apr low C = 22.6
+|May low C = 22.4
+|Jun low C = 22.1
+|Jul low C = 21.7
+|Aug low C = 21.5
+|Sep low C = 22.0
+|Oct low C = 22.4 
+|Nov low C = 22.5
+|Dec low C = 22.4
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 217.2
+|Feb precipitation mm = 202.8
+|Mar precipitation mm = 285.8
+|Apr precipitation mm = 263.8
+|May precipitation mm = 267.0
+|Jun precipitation mm = 209.0
+|Jul precipitation mm = 193.9
+|Aug precipitation mm = 165.9
+|Sep precipitation mm = 168.0
+|Oct precipitation mm = 170.6
+|Nov precipitation mm = 197.6
+|Dec precipitation mm = 237.6
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Loreto Region}}
+
+{{coord|2.4888|S|73.6793|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Maynas province]]
+[[Category:Districts of the Department of Loreto]]
+
+
+{{Loreto-geo-stub}}

@@ -1,0 +1,101 @@
+{{More citations needed|date=January 2021}}
+{{Infobox settlement
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = Nindirí
+|settlement_type        = Municipality<!--For Town or Village (Leave blank for the default City)-->
+|other_name             =
+|native_name            = <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Nicaragua<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = left
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Nicaragua
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Nicaragua}}
+|subdivision_type1      = [[Departments of Nicaragua|Department]]
+|subdivision_name1      = [[Masaya (department)|Masaya department]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         =
+|area_total_km2         = 143<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2          = <!--See table @ Template:Infobox settlement for details on automatic unit conversion-->
+|area_water_km2         =
+|area_total_sq_mi       =
+<!-- Population   ----------------------->
+|population_as_of               = 2022 estimate
+|population_footnotes           = <ref>[https://www.citypopulation.de/en/nicaragua/admin/nindir%C3%AD/6005/ Citypopulation.de] Population of Nindiri municipality</ref>
+|population_note                =
+|population_total               = 61816
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 29566
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|12|00|17|N|86|07|10|W|region:NI|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             = [[Köppen climate classification|Climate]]
+|blank_info             = [[Tropical savanna climate|Aw]]
+|website                = 
+|footnotes              = 
+}}
+
+'''Nindirí''' is a town and a  municipality in the [[Masaya (department)|Masaya department]] of [[Nicaragua]].
+
+In 2022 the population was 61,816 in the municipality, and 29,566 in the town. Nindirí is located 3.5&nbsp;km from downtown [[Masaya]] and form the southeastern part of [[Managua|Managua Metropolitan Area]].
+
+== References ==
+{{reflist}}
+
+{{Masaya Department}}
+
+{{DEFAULTSORT:Nindiri, Masaya}}
+[[Category:Populated places in Nicaragua]]
+[[Category:Municipalities of the Masaya Department]]
+
+
+{{Nicaragua-geo-stub}}

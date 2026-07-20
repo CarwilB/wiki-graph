@@ -1,0 +1,63 @@
+{{Info/Município do Brasil
+<!-- GeoID=1507466 -->
+<!-- Cabeçalho -->| nome = São João da Ponta
+| apelido = <!-- Dados gerais -->
+| foto = 
+| leg_foto = 
+| bandeira = 
+| brasão = 
+| link_hino = 
+| lema = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|27|12|1995|idade}}}}
+| gentílico = pontense
+| prefeito<!--enciclopédia, sem apelidos! --> = Lidiane Feitosa
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 9
+<!-- Localização -->| mapa = Para Municip SaoJoaodaPonta.svg
+| latP = S
+| latG = 00
+| latM = 51
+| latS = 00
+| lonP = O
+| lonG = 47
+| lonM = 55
+| lonS = 12
+| estado = Pará
+| mesorregião = [[Mesorregião do Nordeste Paraense|Nordeste Paraense]]
+| microrregião = [[Microrregião do Salgado|Salgado]]
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Curuçá]], [[Terra Alta (Pará)|Terra Alta]], [[Vigia (Pará)|Vigia]], [[São Caetano de Odivelas]].
+| dist_capital = 120
+<!-- Características geográficas -->| área = 195.987
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 dez. 2010|data=10 out. 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 5884
+| data_pop = [[IBGE]]/2016<ref name="IBGE_Pop_2016">{{citar web |url= ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2016/estimativa_dou_2016_20160913.pdf|título=Estimativa populacional 2016| obra = Estimativa populacional 2016|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=1 de julho de 2016 |acessodata = 2 de janeiro de 2017}}</ref>
+| altitude = 34
+| clima = 25 a 26º
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.583 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=21 de setembro de 2013}}</ref>
+| pib = {{formatnum:35430.14}} mil
+| pib_per_capita = 6212.54
+| data_pib = [[IBGE]]/2014<ref name="PIBMunicipal2010-2014">{{citar web |url=ftp://ftp.ibge.gov.br/Pib_Municipios/2014/base/base_de_dados_2010_2014.xls |titulo=PIB Municipal 2010-2014 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=2 jan. 2017}}</ref>
+| data_pib_per_capita = [[IBGE]]/2014<ref name="PIBMunicipal2010-2014"/>
+| site_prefeitura = https://saojoaodaponta.pa.gov.br/
+}}
+'''São João da Ponta''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] do [[Pará]]. Localiza-se a uma [[latitude]] 00º50'59" sul e a uma [[longitude]] 47º55'12" oeste, estando a uma altitude de 34 metros. Sua população estimada em 2016 era de {{fmtn|5884}} habitantes. Possui uma área de 196,9739&nbsp;km².
+
+== História ==
+Foi elevado à categoria de município com a denominação de São João da Ponta, pela lei estadual nº 5920, de 27 de dezembro de 1995, desmembrado de [[São Caetano de Odivelas]].
+
+{{Referências}}
+
+==Ligações externas==
+*[http://saojoaodaponta.pa.gov.br/ Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Pará}}
+
+[[Categoria:Municípios do Pará|Sao Joao Ponta]]
+[[Categoria:Fundações no Pará em 1995]]

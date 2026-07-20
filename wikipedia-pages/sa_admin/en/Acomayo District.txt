@@ -1,0 +1,130 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Acomayo
+| native_name             = Aqumayu
+| native_name_lang        = qu<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Acomayo in the [[Acomayo Province|Acomayo]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Cusco Region|Cusco]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Acomayo Province|Acomayo]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Acomayo]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Moises Ramos Villares
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 141.27
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3207
+| population_footnotes    = 
+| population_total        = 5062
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 080201
+| website                 = 
+| footnotes               = 
+}}
+'''Acomayo''' or '''Aqumayu''' ([[Quechua language|Quechua]] ''aqu'' sand, ''mayu'' river, "sand river") is one of seven [[Districts of Peru|districts]] of the province [[Acomayo Province|Acomayo]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+== Ethnic groups ==
+The people in the district are mainly [[Indigenous peoples of the Americas|indigenous]] citizens of [[Quechua people|Quechua]] descent. [[Quechua language|Quechua]] is the language which the majority of the population (74.78%) learnt to speak in childhood, 25.18% of the residents started speaking using the [[Spanish language|Spanish]] language ([[2007 Peru Census]]).<ref>[http://iinei.inei.gob.pe/iinei/RedatamCpv2007.asp?id=ResultadosCensales?ori=C inei.gob.pe] {{webarchive|url=https://web.archive.org/web/20130127005551/http://iinei.inei.gob.pe/iinei/RedatamCpv2007.asp?id=ResultadosCensales%3Fori%3DC |date=2013-01-27 }} INEI, Peru, Censos Nacionales 2007, Frequencias: Preguntas de Población</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y
+|collapsed = Y
+|location = Acomayo, elevation {{convert|3212|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 20.4
+|Feb high C = 20.2
+|Mar high C = 20.3
+|Apr high C = 20.9
+|May high C = 21.1
+|Jun high C = 20.8
+|Jul high C = 20.7
+|Aug high C = 21.7
+|Sep high C = 22.2
+|Oct high C = 22.5
+|Nov high C = 22.6
+|Dec high C = 21.3
+|year high C = 
+|Jan low C = 8.4
+|Feb low C = 8.3
+|Mar low C = 8.1
+|Apr low C = 6.5
+|May low C = 3.4
+|Jun low C = 1.4
+|Jul low C = 1.1
+|Aug low C = 2.9
+|Sep low C = 5.4
+|Oct low C = 7.1
+|Nov low C = 7.6
+|Dec low C = 8.0
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 160.0
+|Feb precipitation mm = 146.7
+|Mar precipitation mm = 126.7
+|Apr precipitation mm = 50.4
+|May precipitation mm = 6.3
+|Jun precipitation mm = 3.2
+|Jul precipitation mm = 4.0
+|Aug precipitation mm = 6.9
+|Sep precipitation mm = 15.1
+|Oct precipitation mm = 47.0
+|Nov precipitation mm = 70.1
+|Dec precipitation mm = 120.8
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climaticás Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 25 October 2023}}</ref>
+}}
+
+== See also ==
+* [[Aqumayu (Cusco)|Aqumayu]]
+* [[Hatun Urqu (Acomayo)|Hatun Urqu]]
+* [[Maranniyuq]]
+
+==References==
+{{Reflist}}
+
+{{Districts of Acomayo Province}}
+
+{{Cusco-geo-stub}}
+
+{{coord|13|55|08|S|71|41|06|W|type:adm3rd_source:kolossus-itwiki|display=title}}
+[[Category:Districts of the Acomayo province]]

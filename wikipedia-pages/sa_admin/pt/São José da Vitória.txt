@@ -1,0 +1,155 @@
+{{Info/Município do Brasil
+<!-- GeoID=2929354 -->
+<!-- Cabeçalho -->| nome = São José da Vitória
+| preposição = de
+| foto = 
+| leg_foto = 
+| apelido = Cidade serrana
+<!-- Dados gerais -->| brasão = Brasão de São José da Vitória.png
+| bandeira = Bandeira_de_São_José_da_Vitória.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = [[13 de junho]]
+| fundação = 
+| emancipação = {{Dtlink|13|6|1989|idade}}<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/historico|título=São José da Vitória {{!}} História & Fotos|publicado=IBGE|acessodata=15 de agosto de 2025}}</ref>
+| gentílico = [[wikt:são-joseense|são-joseense]]<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-jose-da-vitoria.html|título=Cidades e Estados {{!}} São José da Vitória|publicado=IBGE|acessodata=15 de agosto de 2025}}</ref>
+| lema = ''No trabalho e na virtude a cidade floresce''
+| prefeito = Rodson Pereira Costa (Professor Rodson)
+| partido = [[Podemos (Brasil)|Podemos]] [PODE]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 9<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-sao-jose-da-vitoria-tomam-posse-veja-lista-de-eleitos.ghtml|título=Prefeito e vereadores de São José da Vitória tomam posse; veja lista de eleitos|publicado=g1|data=1 de janeiro de 2021|acessodata=02-07-2023}}</ref>
+| mapa = Bahia Municip SaoJosedaVitoria.svg
+| latP = S
+| latG = 15
+| latM = 05
+| latS = 02
+| lonP = O
+| lonG = 39
+| lonM = 20
+| lonS = 20
+| estado = Bahia
+| mesorregião = [[Mesorregião do Sul Baiano|Sul Baiano]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Ilhéus-Itabuna|Ilhéus-Itabuna]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Arataca]], [[Buerarema]], [[Itabuna]], [[Jussari]] e [[Una]]
+| dist_capital = <!-- Características geográficas -->
+| área = 127.925
+| área_ref = (IBGE/2022)<ref name="IBGE_Área_2022">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-jose-da-vitoria.html|título=Cidades e Estados|publicado=IBGE|acessodata=12 de fevereiro de 2023}}</ref>
+| área_urbana = {{fmtn|0.61}}
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama |título=Meio Ambiente |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de janeiro de 2023}}</ref>
+| população = 5315 <!-- MANTER A POPULAÇÃO DO CENSO 2022 -->
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| altitude = 
+| população_ref = <ref name="IBGE">{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|título=São José da Vitória {{!}} Panorama {{!}} POPULAÇÃO|publicado=IBGE|acessodata=14 de fevereiro de 2026}}</ref>
+| população_pos = [[Lista de municípios da Bahia por população|BA: 404º]]{{·}}[[Lista de municípios da Região Nordeste do Brasil por população|NE: 1519°]]{{·}}[[Lista de municípios do Brasil por população|BR: 4156º]]
+| população_est = 5432 <!-- ATUALIZAR AS ESTIMATIVAS AQUI -->
+| população_est_em = 2025<ref name="IBGE">{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|título=São José da Vitória {{!}} Panorama {{!}} POPULAÇÃO|publicado=IBGE|acessodata=14 de fevereiro de 2026}}</ref>
+| clima = [[clima tropical|tropical]]
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.546 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=25 de agosto de 2013}}</ref>
+| idh_pos = [[Lista de municípios da Bahia por IDH-M|BA: 377°]]
+| gini = 0,45
+| data_gini = AtlasBR/2010<ref name="AtlasBR">{{citar web|url=http://www.atlasbrasil.org.br/perfil/municipio/292935#sec-renda|título=Renda|autor=Atlas do Desenvolvimento Humano no Brasil|data=2010|publicado=Atlas Brasil|acessodata=02-03-2023}}</ref>
+| pib = {{formatnum:67085.37}} mil
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/pesquisa/38/46996|titulo=Produto Interno Bruto dos Municípios|publicado=IBGE|acessodata=13 de setembro de 2024}}</ref>
+| pib_pos = ([[Lista de municípios da Bahia por PIB|BA: 401º]]){{·}}([[Lista de municípios do Brasil por PIB|BR: 4956°]]) (2021)<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/pesquisa/38/46996?tipo=ranking|título=Produto Interno Bruto dos Municípios|publicado=IBGE|acessodata=13 de setembro de 2024}}</ref>
+| pib_per_capita = 12061.38
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.saojosedavitoria.ba.gov.br/ saojosedavitoria.ba.gov.br]
+| imagem_montagem = {{multiple image
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 280
+ | image1 = São José da Vitória.jpg
+ | caption1 = Praça Paulo Portela, centro da cidade, em dezembro de 2022
+ | image2 = São José da Vitória - State of Bahia, Brazil - panoramio.jpg
+ | caption2 = Rodovia [[BR-101]]
+ | color  = white
+ | footer =
+}}
+}}
+'''São José da Vitória'''<ref>{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-jose-da-vitoria.html |titulo=São José da Vitória (BA) {{!}} Cidades e Estados {{!}} IBGE |acessodata=2021-06-08 |website=www.ibge.gov.br}}</ref> é um [[Municípios do Brasil|município brasileiro]] do [[Interior da Bahia|interior]] e sul do [[Unidades federativas do Brasil|estado]] da [[Bahia]]. É um dos menores municípios da Bahia em população, além de ter uma das menores áreas urbanas do estado.
+
+Na segunda metade do século XX, São José da Vitória foi um distrito de [[Buerarema]] e chamava-se "São José do Macuco".<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/historico|titulo=História & Fotos|acessodata=2024-09-14|website=cidades.ibge.gov.br}}</ref>
+
+== Demografia ==
+
+=== População (censo) ===
+Segundo o [[Censo 2022]] do [[IBGE]], a população de São José da Vitória é de 5 315 habitantes, ocupando a posição 404ª na Bahia, 1519ª no [[Região Nordeste do Brasil|Nordeste]] e 4156ª no Brasil. Em comparação com o [[Censo demográfico do Brasil de 2010|Censo 2010]], houve uma queda de -11,77%. Está entre os [[Lista de municípios da Bahia por população (2022)|15 municípios de menor população na Bahia]].<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|titulo=População|acessodata=2023-07-27|website=cidades.ibge.gov.br}}</ref><ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2023/06/28/populacao-de-sao-jose-da-vitoria-ba-e-de-5-315-pessoas-aponta-o-censo-do-ibge.ghtml|titulo=População de São José da Vitória (BA) é de 5.315 pessoas, aponta o Censo do IBGE|data=2023-06-28|acessodata=2023-07-27|website=G1|lingua=pt-br}}</ref> Mais dados da população abaixo:
+
+* População (Censo 2022): 5 315.
+* População (Censo 2010): 5 715.<ref name="cidades.ibge.gov.br">{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/pesquisa/23/27652?detalhes=true|titulo=POPULAÇÃO RESIDENTE|acessodata=2023-07-27|website=cidades.ibge.gov.br}}</ref>
+* População ([[Censo demográfico do Brasil de 2000|Censo 2000]]): 6 210.<ref>{{Citar web|url=https://ftp.ibge.gov.br/Censos/Censo_Demografico_2000/Indicadores_Sociais/UFs/ba.zip|título=População total e sua respectiva distribuição percentual, por sexo e situação do domicílio, proporção de pessoas naturais dos municípios - Bahia - 2000|data=2000|acessodata=27-07-2023|publicado=IBGE}}</ref>
+* População ([[Censo demográfico do Brasil de 1991|Censo 1991]]): 8 768.<ref>{{Citar web|url=https://ftp.ibge.gov.br/Censos/Censo_Demografico_1991/Populacao_Residente_Urbana_Rural/Bahia.zip|título=Censo Populacional 1991 - Bahia|publicado=IBGE|data=1991|acessodata=18-07-2023}}</ref>
+Conforme se ver, entre os censos de 1991, 2000, 2010 e 2022, a população do município teve uma queda gradativa.
+
+=== População (estimativa) ===
+De acordo com a estimativa de 2024 do IBGE, a população do município era de 5 451 habitantes.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|titulo=POPULAÇÃO|acessodata=2024-09-14|website=cidades.ibge.gov.br}}</ref>
+
+=== População (urbana, rural e por sexo) ===
+
+* População urbana (2010): 5 162.
+* População rural (2010): 553.
+* População masculina (2010): 2 902.
+* População feminina (2010): 2 813.<ref name="cidades.ibge.gov.br"/>
+
+== Geografia ==
+
+=== Área ===
+O município de São José da Vitória tem uma área territorial de 127,925 km², segundo o IBGE.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|titulo=Território|acessodata=2024-09-14|website=cidades.ibge.gov.br}}</ref> Já sua área urbana é de apenas 0,61 km², sendo a 411ª da Bahia e uma das sete menores do estado.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|titulo=Meio Ambiente|acessodata=2024-09-14|website=cidades.ibge.gov.br}}</ref>
+
+=== Clima ===
+O clima de São José da Vitória é [[Clima tropical|tropical]]. Sua temperatura média é 22.7 °C.<ref>{{Citar web|url=https://pt.climate-data.org/america-do-sul/brasil/bahia/sao-jose-da-vitoria-312770/|titulo=Clima São José da Vitória: Temperatura, Tempo e Dados climatológicos São José da Vitória|acessodata=2024-09-14|website=pt.climate-data.org}}</ref><ref>{{Citar web|url=https://www.saojosedavitoria.ba.gov.br/Handler.ashx?f=f&query=9a355855-c8da-41c3-b214-c4296b4afe2b.pdf|título=São José da Vitória (INTRODUÇÃO e pág. 3)|publicado=Diário Oficial do MUNICÍPIO|acessodata=14 de setembro de 2024}}</ref>
+
+=== Hidrografia ===
+O município de São José da Vitória é cortado pelo [[rio]] Una. O rio abastece a cidade, assim como também Buerarema.<ref>{{Citar web|url=https://www.saojosedavitoria.ba.gov.br/Handler.ashx?f=f&query=9a355855-c8da-41c3-b214-c4296b4afe2b.pdf|título=São José da Vitória (INTRODUÇÃO pág. 3)|publicado=Diário Oficial do MUNICÍPIO|acessodata=14 de setembro de 2024}}</ref><ref>{{Citar web|url=https://drive.google.com/file/d/1qb9mUBXd8gaehYjyItJGWEA4zn9KgTgj/view?usp=sharing|titulo=RESUMO DOS MANANCIAIS (pág. 2)|acessodata=14 de setembro de 2024|website=Embasa}}</ref>
+
+=== Bioma ===
+O [[bioma]] de São José da Vitória é a [[Mata Atlântica]].<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|titulo=MEIO AMBIENTE|acessodata=2024-09-14|website=cidades.ibge.gov.br}}</ref>
+
+== Economia ==
+São José da Vitória tinha, em 2020, um [[PIB]] de R$ 57 milhões, segundo o [[IBGE]]. É um dos quinze [[Lista de municípios da Bahia por PIB (2020)|municípios mais pobres da Bahia]] e tem a menor economia do sul do estado. Em 2020, tinha um [[Renda per capita|PIB per capita]] de R$ 10 166,93, ocupando a posição 231'''º''' na Bahia e 4572'''º''' no [[Brasil]]. Já em 2010, tinha um PIB per capita de R$ 4 257,94. Entre 2010 e 2020, seu PIB per capita mais que dobrou.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|título=Economia|acessodata=2023-03-26|website=cidades.ibge.gov.br}}</ref><ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-jose-da-vitoria.html|titulo=São José da Vitória (BA) {{!}} Cidades e Estados {{!}} IBGE|acessodata=2023-03-26|website=www.ibge.gov.br}}</ref><ref>{{Citar web|url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2929354|titulo=Produto Interno Bruto dos Municípios {{!}} IBGE|acessodata=2023-03-26|website=www.ibge.gov.br}}</ref>
+
+Entre as classes econômicas, a concentração de renda em São José da Vitória é muito baixa. A população mais pobre participa com mais de 80% do total de remunerações da cidade. A administração pública é a que mais emprega.<ref>{{Citar web|url=https://www.caravela.info/regional/s%C3%A3o-jos%C3%A9-da-vit%C3%B3ria---ba|titulo=Economia de São José da Vitória - BA|acessodata=2023-03-26|website=Caravela|lingua=pt}}</ref> Em 2020, o salário médio mensal dos trabalhadores formais era de 1,4 salários mínimos.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|título=Trabalho e Rendimento|acessodata=2023-03-27|website=cidades.ibge.gov.br}}</ref>
+
+Na agricultura, o município se destaca na produção de [[cacau]].<ref>{{Citar web|url=https://www.estadosecidades.com.br/ba/ba_producao-cacau.html|titulo=Principais municípios produtores de Cacau da Bahia|acessodata=2023-03-27|website=Estados e Cidades do Brasil|lingua=pt-br}}</ref>
+
+== Política e administração ==
+O [[município]] de São José da Vitória possui uma estrutura político-administrativa composta pelo [[Poder Executivo]], chefiado por um [[prefeito]] eleito por sufrágio universal, o qual é auxiliado diretamente por [[Secretário de Estado#Brasil|secretários municipais]] nomeados por ele, e pelo [[Poder Legislativo]], institucionalizado pela [[Câmara Municipal (Brasil)|Câmara Municipal de São José da Vitória]], órgão colegiado de representação dos munícipes que é composto por 9 [[vereadores]] também eleitos por sufrágio universal.<ref name=":0">{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-sao-jose-da-vitoria-tomam-posse-veja-lista-de-eleitos.ghtml|titulo=Prefeito e vereadores de São José da Vitória tomam posse; veja lista de eleitos|data=2021-01-01|acessodata=2024-02-20|website=G1|lingua=pt-br}}</ref>
+
+=== Poder Executivo ===
+O [[Prefeitura (Brasil)|prefeito]] de São José da Vitória é Rodson Pereira Costa, também conhecido como Professor Rodson, do [[Podemos (Brasil)|Podemos]] (PODE), que assumiu o cargo em 2025 para seu primeiro mandato. O [[vice-prefeito]] é Fernando Pereira Barros, também conhecido como Fernandinho, do Podemos.<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/eleicoes/2024/noticia/2024/12/31/prefeito-de-sao-jose-da-vitoria-ba-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|titulo=Prefeito de São José da Vitória (BA) toma posse nesta quarta (1º); veja lista de vereadores eleitos {{!}} Eleições 2024 na Bahia|data=2024-12-31|acessodata=2025-01-01|website=G1|lingua=pt-br}}</ref><ref>{{Citar web|url=https://www.otempo.com.br/eleicoes/2024/candidatos/bahia/sao-jose-da-vitoria/prefeito/professor-rodson-20|titulo=Professor Rodson 20 prefeito eleito de São José Da Vitória em 2024. Biografia e Proposta {{!}} O TEMPO|acessodata=2025-01-01|website=www.otempo.com.br|lingua=pt-BR}}</ref><ref>{{Citar web|url=https://www.otempo.com.br/eleicoes/2024/candidatos/bahia/sao-jose-da-vitoria/vice-prefeito/fernandinho-20|titulo=Fernandinho 20 para vice-prefeito de São José Da Vitória em 2024. Veja biografia, propostas e tudo sobre sua campanha! {{!}} O TEMPO|acessodata=2025-01-01|website=www.otempo.com.br|lingua=pt-BR}}</ref>
+
+=== Poder Legislativo ===
+A Câmara Municipal de São José da Vitória é composta por nove [[Vereador|vereadores]].<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-sao-jose-da-vitoria-tomam-posse-veja-lista-de-eleitos.ghtml|titulo=Prefeito e vereadores de São José da Vitória tomam posse; veja lista de eleitos {{!}} Bahia|data=2021-01-01|acessodata=2024-11-23|website=G1|lingua=pt-br}}</ref>
+
+== Dados gerais ==
+*'''Área:''' 127,925&nbsp;km².
+*'''População:''' 5 715 (Censo 2010); 5 315 (Censo 2022).
+*'''População urbana:''' 5 162 (2010).
+*'''População rural:''' 553 (2010).
+*'''PIB:''' R$ 57 milhões (2020). 
+*'''PIB''' '''per''' '''capita:''' R$ 10 166,93 (2020). 
+*'''IDH:''' 0,546 (2010).
+*'''Bioma:''' [[Mata Atlântica]].
+*'''DDD:''' 073.
+*'''Número de vereadores:''' 9.<ref name="cidades.ibge.gov.br"/><ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-jose-da-vitoria/panorama|título=São José da Vitória|acessodata=2023-01-27|website=cidades.ibge.gov.br}}</ref><ref>{{Citar web|url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2929354|titulo=Produto Interno Bruto dos Municípios {{!}} IBGE|acessodata=2023-01-27|website=www.ibge.gov.br}}</ref><ref>{{Citar web|url=https://www.codigosddd.com.br/sao-jose-da-vitoria/|titulo=DDD de São José da Vitória, Bahia|acessodata=2023-01-27|website=Códigos DDD|lingua=pt-BR}}</ref><ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-sao-jose-da-vitoria-tomam-posse-veja-lista-de-eleitos.ghtml|titulo=Prefeito e vereadores de São José da Vitória tomam posse; veja lista de eleitos|acessodata=2023-01-27|website=G1|lingua=pt-br}}</ref>
+ 
+{{Referências}}
+
+== Ligações externas ==
+{{Commonscat}}
+* {{Link|pt|2=https://www.saojosedavitoria.ba.gov.br/|3=Página oficial da Prefeitura}}
+
+{{Esboço-municípiosbr/Bahia}}
+{{Municípios da Bahia}}
+{{Portal3|Bahia}}
+
+{{DEFAULTSORT:Sao Jose Vitoria}}
+[[Categoria:Fundações na Bahia em 1989]]
+[[Categoria:Municípios da Bahia|Sao Jose Vitória]]

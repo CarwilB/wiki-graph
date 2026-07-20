@@ -1,0 +1,456 @@
+{{Info/Município do Brasil
+<!-- GeoID=3548708 -->
+<!-- Cabeçalho -->| nome = São Bernardo do Campo
+| imagem_montagem = {{Imagem múltipla
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 300
+ |caption_align = center
+ | image1   = Visão Panorâmica de São Bernardo do Campo.jpg
+ | caption1 = Panorama parcial da cidade
+ | image2   = Igreja Matriz de Nossa Senhora da Boa Viagem, São Bernardo do Campo (SP).jpg
+ | caption2 = Igreja Matriz de Nossa Senhora da Boa Viagem
+ | image3   = Prefeitura de São Bernardo (493971467).jpg
+ | caption3 = Paço Municipal
+ | image4   = 2010SindicatoMetalurgicosABCP8140089.jpg
+ | caption4 = Monumento ao [[Sindicato dos Metalúrgicos do ABC|Sindicato dos Metalúrgicos]]
+ | image5   = Riacho Grande - Vista Aérea.jpg
+ | caption5 = [[Riacho Grande]]
+ | color    = white
+}}
+| apelido = "Bernô", "SBC", "Autocap", "Capital do Automóvel", "Detroit Brasileira"
+| brasão = Brasão São Bernardo do Campo.jpg
+| bandeira = Bandeira de São Bernardo do Campo.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = {{nowrap|{{dtlink|20|8|1553|idade}}}}<ref name="funda" />
+| fundação = {{dtlink|||1553|idade}}<ref name="funda">{{Citar web|url=http://www.saobernardo.sp.gov.br/historia-da-cidade|titulo=História da Cidade|acessodata=2018-03-03|publicado=Prefeitura do Município de São Bernardo do Campo|lingua=pt-br}}</ref>
+{{Dtlink|||1717|idade}}<ref name="funda">{{Citar web|url=http://www.saobernardo.sp.gov.br/historia-da-cidade|titulo=História da Cidade|acessodata=2018-03-03|publicado=Prefeitura do Município de São Bernardo do Campo|lingua=pt-br}}</ref> e {{nowrap|{{dtlink|23|9|1812|idade}}}}<ref name="freguezia">{{Citar web|url=http://bd.camara.gov.br/bd/bitstream/handle/bdcamara/18322/colleccao_leis_1812_parte1.pdf?sequence=1|titulo=Resolução de Consulta da Mesa de Consciência e Ordens de 23 de Setembro de 1812|acessodata=2018-03-03|publicado=Câmara dos Deputados|lingua=pt-br|arquivourl=https://web.archive.org/web/20180304231521/http://bd.camara.gov.br/bd/bitstream/handle/bdcamara/18322/colleccao_leis_1812_parte1.pdf?sequence=1|arquivodata=2018-03-04|urlmorta=yes}}</ref>
+| emancipação = {{nowrap|{{dtlink|12|3|1889|idade}}}}<ref name="municipio">{{Citar web|url=https://www.al.sp.gov.br/norma/138561|titulo=Lei n° 38, de 12/03/1889 ( Lei 38/1889 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref> e {{nowrap|{{dtlink|30|11|1944|idade}}}}<ref name="emancipa">{{Citar web|url=https://www.al.sp.gov.br/norma/122331|titulo=Decreto-Lei n° 14.334, de 30/11/1944 ( Decreto-Lei 14334/1944 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>
+| gentílico = são-bernardense<ref>https://www.al.sp.gov.br/documentacao/municipios-paulistas/</ref><ref>http://www.aulete.com.br/s%C3%A3o-bernardense Dicionário Aulete</ref>
+| lema = ''Pavlistarvm Terra Mater''<br/><small>''"Terra-Mãe dos Paulistas"''</small>
+| padroeiro = [[Nossa Senhora da Boa Viagem]]<ref>{{citar web|URL=https://saobernardodocampo.info/2711/festa-da-padroeira-de-sao-bernardo-do-campo-veja-a-programacao/ |título=Festa da Padroeira de São Bernardo do Campo: veja a programação |autor=São Bernardo do Campo Notícias |publicado=saobernardodocampo.info |acessodata=31 de agosto de 2016 |wayb=20160826055940}}</ref>
+| prefeito = [[Marcelo Lima (político)|Marcelo Lima]]<ref name>{{Citar web|url= https://www.poder360.com.br/poder-justica/stj-determina-que-prefeito-de-sao-bernardo-volte-ao-cargo/}}</ref>
+| partido = [[Podemos (Brasil)|PODE]]
+| mandato_início = 2025
+| mandato_fim = 2028
+| mapa = SaoPaulo Municip SaoBernardodoCampo.svg
+| latP = S
+| latG = 23
+| latM = 41
+| latS = 38
+| lonP = O
+| lonG = 46
+| lonM = 33
+| lonS = 54
+| estado = São Paulo
+| região_metropolitana = [[Região Metropolitana de São Paulo|São Paulo]]
+| vizinhos = [[Diadema]] (N e NO), [[São Paulo]] (O E NO), [[São Caetano do Sul]] (NE), [[Santo André (São Paulo)|Santo André]] (L e NE), [[Cubatão]] (SE) e [[São Vicente (São Paulo)|São Vicente]] (S).
+| dist_capital = 22
+| dist_capital_ref = <ref name=distance>{{citar web|url=http://www.emsampa.com.br/xspxspint.htm |título=Distâncias entre a cidade de São Paulo e todas as cidades do interior paulista|acessodata=26 de janeiro de 2011}}</ref>
+<!-- Características geográficas -->| área = <!--Manter o formato-->409.532
+| área_ref = <ref name="IBGE_Pop"/>
+| distritos = distrito-sede e [[Riacho Grande]]
+| distritos_ref = <ref>{{citar web|URL=https://cidades.ibge.gov.br/brasil/sp/sao-bernardo-do-campo/historico|título=Formação administrativa do município|autor=[[IBGE]]|data=|publicado=|acessodata=2019-01-09}}</ref>
+| população = <!--Manter o formato-->810729
+| população_pos = [[Lista de municípios de São Paulo por população|SP: 4º]]
+| população_ref = <ref name=IBGE_Pop>{{citar web |url=https://cidades.ibge.gov.br/brasil/sp/sao-bernardo-do-campo/panorama|titulo=São Bernardo do Campo|website=[[IBGE]]|acessodata=23 de março de 2025}}</ref>
+| data_pop = [[IBGE]]/2022
+| altitude = 762
+| clima = [[subtropical]]
+| sigla_clima = Cfb
+<!-- Indicadores -->| idh = 0.805 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de São Paulo por IDH|SP: 14°]]
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf
+|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de julho de 2013}}</ref>
+| pib = {{formatnum:58277014}} mil
+| pib_pos = [[Lista de municípios do Brasil por PIB|BR: 16º]]
+| data_pib = [[IBGE]]/2022<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/sp/sao-bernardo-do-campo.html|titulo=Produto Interno Bruto dos Municípios 2022 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=2 de junho de 2024}}</ref>
+| pib_per_capita = 68571.36
+| data_pib_per_capita = [[IBGE]]/2022<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.saobernardo.sp.gov.br/ www.saobernardo.sp.gov.br]
+| site_câmara = [http://www.camarasbc.sp.gov.br/ www.camarasbc.sp.gov.br]
+}}
+
+'''São Bernardo do Campo,''' ou simplesmente '''São Bernardo'''<ref>{{Citar web|url=https://www.saobernardo.sp.gov.br/historia-da-cidade|titulo=História da Cidade - São Bernardo|acessodata=2025-12-14|website=www.saobernardo.sp.gov.br|lingua=pt-BR|arquivourl=http://web.archive.org/web/20251002130353/https://www.saobernardo.sp.gov.br/historia-da-cidade|arquivodata=2025-10-02}}</ref>, é um [[Municípios do Brasil|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[São Paulo (estado)|São Paulo]], na [[Região Geográfica Imediata de São Paulo|Região Imediata de São Paulo]]. Pertence a [[Zona Sudeste de São Paulo#Sub-Região Sudeste da Grande São Paulo|Zona Sudeste da Grande São Paulo]], em conformidade com a lei estadual nº 1.139, de 16 de junho de 2011<ref>{{citar web|url=http://www.al.sp.gov.br/repositorio/legislacao/lei.complementar/2011/lei.complementar-1139-16.06.2011.html|titulo=Lei Complementar nº 1.139, de 16 de junho de 2011|data=|acessodata=1 de fevereiro de 2017|publicado=Assembléia Legislativa do Estado de São Paulo|ultimo=|primeiro=}}</ref> e, consequentemente, com o ''[[Plano de Desenvolvimento Urbano Integrado da Região Metropolitana de São Paulo (PDUI)]],''<ref>{{citar web|url=https://www.pdui.sp.gov.br/rmsp/|titulo=Região Metropolitana de São Paulo|data=|acessodata=1 de fevereiro de 2017|publicado=Plano de Desenvolvimento Urbano Integrado da Região Metropolitana de São Paulo|ultimo=|primeiro=|arquivourl=http://archive.is/8EaLe|arquivodata=27 de janeiro de 2017}}</ref> e também à região não-oficial do [[Região do Grande ABC|Grande ABC]].
+
+A área total do município é de 409,532&nbsp;km² e sua população, conforme o [[Censo demográfico do Brasil de 2022|Censo de 2022]], é de {{fmtn|810729}} habitantes,<ref>“Panorama do Censo de 2022”. Disponível em: https://censo2022.ibge.gov.br. Acesso em: 17 nov. 2025</ref> o que resulta em uma [[densidade demográfica]] de {{fmtn|2075.2}} hab/km². O município é formado pela sede e pelo distrito de [[Riacho Grande]].<ref>{{citar web|url=http://www.igc.sp.gov.br/produtos/arquivos/municipios_e_distritos.pdf|titulo=Municípios e Distritos do Estado de São Paulo|data=|acessodata=|publicado=IGC - Instituto Geográfico e Cartográfico|ultimo=|primeiro=}}</ref><ref>{{citar web|url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2015/|titulo=Divisão Territorial do Brasil|data=|acessodata=|publicado=IBGE - Instituto Brasileiro de Geografia e Estatística|ultimo=|primeiro=}}</ref><ref>{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/sp/sao-bernardo-do-campo.html  |título=IBGE 2021 (São Bernardo do Campo) |autor=Instituto Brasileiro de Geografia e Estatística (IBGE)  |acessodata=21 de fevereiro de 2022}}</ref>
+
+A origem da cidade remonta a 1553, quando é oficializada a Vila de [[Santo André da Borda do Campo]], fundada pelo português [[João Ramalho]], junto a seu sogro [[Tibiriçá]]. A Vila foi o primeiro núcleo de povoamento do território brasileiro fora do litoral. O nome do município provém da Fazenda de São Bernardo, fundada pelos monges [[Ordem de São Bento|beneditinos]] em 1717, origem da ocupação moderna da cidade.
+
+De acordo com dados de 2021, do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), o município de São Bernardo do Campo tem o [[Lista de municípios do Brasil por PIB|16.º maior produto interno bruto]] (PIB) entre as cidades brasileiras.<ref name="Economia"/>
+
+== História ==
+=== Borda do Campo ===
+[[Ficheiro:José Wasth Rodrigues - João Ramalho e Filho, Acervo do Museu Paulista da USP 2.jpg|esquerda|miniaturadaimagem|upright|João Ramalho e seu filho]]
+A Primeira fase do povoamento do território que atualmente compõe o Município remonta a 1553,<ref>{{citar web|URL=http://www.saobernardo.sp.gov.br/historia-da-cidade#_ftn1 |título=História da Cidade |autor=Prefeitura de São Bernardo do Campo |publicado=saobernardo.sp.gov.br |acessodata=23 de setembro de 2018 |wayb=20160623134232}}</ref> quando, por ordem de [[Martim Afonso de Sousa]], donatário da [[Capitania de São Vicente]], oficializa-se o povoamento que existia "serra acima". Este povoado, cujas origens remontam, segundo algumas pesquisas, a 1549, foi criado como resultado da aproximação de um português, cuja chegada ao Brasil se deu em data e por motivos ainda não esclarecidos a atual costa paulista: [[João Ramalho]], e o senhor da nação dos [[Guaianás|Guaianases]], [[Tibiriçá]]. Recebido por estes, e vivendo, literalmente, como um deles, Ramalho tinha como esposa a filha de Tibiriçá, [[Bartira]]<ref name="Não-nomeado-xXQ4-1">{{Citar web |url=http://www.saopaulo.sp.leg.br/apartes-anteriores/revista-apartes/numero-20/perfil-joao-ramalho/ |titulo=Nº20 – Perfil > João Ramalho |acessodata=2020-10-04 |website=Revista Apartes (edições anteriores) |lingua=pt-BR}}</ref>. Ao chegar ao Brasil para tomar posse de sua capitania, em 1532, Martim Afonso de Souza se deparou, em [[São Vicente (São Paulo)|São Vicente]], com um imenso cerco empreendido pelos nativos - foi do meio deste cerco, para a surpresa dos portugueses que ali estavam, que surgiu Ramalho, falando português e esclarecendo que todos ali estavam em paz.<ref>{{Citar web |url=http://www.saovicentealternativa.com.br/publico/noticia.php?codigo=206 |titulo=JOÃO RAMALHO - São Vicente Alternativa |acessodata=2020-10-04 |website=www.saovicentealternativa.com.br}}</ref> Graças a este "acordo de paz" e a descrição do aldeamento em que vivia, serra acima, Martim Afonso ordena a Ramalho, com a colaboração dos seus, a formação de um povoamento, onde ele e seu sogro chegaram a reunir, segundo fontes, mais de cinco mil nativos. Em 8 de Abril de 1553, nasce [[Santo André da Borda do Campo]], com forais de vila e tendo João Ramalho como seu primeiro [[Alcaide|alcaide-do-campo]].<ref name="Não-nomeado-xXQ4-1"/>
+
+O povoado enfrentava a oposição e as constantes investidas das nações rivais dos guaianases, notadamente os [[carijós]]. Localizada em sítio desfavorável, era difícil de ser protegida e fortificada, o que resultou em diversos "assaltos" perpetrados pelos carijós que colocavam sua existência em risco constante. Além disso, após o estabelecimento do [[Pátio do Colégio|Colégio dos Jesuítas]], em Piratininga, a partir de 1554, a Vila, João Ramalho, sua família e seus costumes são alvos constantes dos jesuítas, entre eles [[Manuel da Nóbrega|Manoel da Nóbrega]], que, entre outros, acusava Ramalho de "viver em pecado" ou sob os costumes e regras dos nativos que o cercavam. Chegou a ser alvo de excomunhão ''(pelo [[Leonardo Nunes|Padre Leonardo Nunes]], na Borda do Campo)'', e, chegou a se casar oficialmente com Bartira segundo a tradição católica romana, tendo esta sido batizada com o nome de ''Isabel'' enquanto seu pai, Tibiriçá, recebeu o nome de ''Martim Afonso.'' Enfrentando toda a sorte de oposição e de ataques, a Vila conhece seu fim prematuro em 1560, quando por ordem do governador-geral do Brasil é extinta e tem seu pelourinho, população e forais transferidos para o Colégio de Piratininga, situado em local mais propenso a defesa e sob a tutela dos jesuítas, que criticavam a antiga vila também sob o pretexto de que ela era "antro de pecadores". Participou ainda junto a seu sogro da defesa de Piratininga. A ele é oferecido um cargo de vereador na nova [[São Paulo de Piratininga|Vila de São Paulo de Piratininga]], cargo que este recusa. Assim, João Ramalho se retira em direção ao atual [[Vale do Paraíba]], onde morreria por volta de 1580, segundo alguns, com 80 anos de idade.<ref name="Não-nomeado-xXQ4-1"/> Após a transferência da sede da vila, que oficializa a atual Cidade de São Paulo, a região da Borda do Campo vive um período de grande estagnação, sendo convertida em [[sesmaria]], da qual [[Amador de Medeiros]] era o provedor. Em 1637, [[Miguel Aires Maldonado]], genro de [[Amador de Medeiros]],<ref>{{citar periódico|ultimo=Castro Coelho|primeiro=H. V.|data=|titulo=Povoadores de S. Paulo: Amador de Medeiros|url=http://www.asbrap.org.br/documentos/revistas/rev16_art6.pdf|jornal=Revista da ASBRAP nº 16|acessodata=}}</ref> doaria a sesmaria aos [[Ordem dos Beneditinos|monges beneditinos]] do [[Mosteiro de São Bento]], que a transformam em duas grandes fazendas, a de São Caetano e a de São Bernardo.<ref>{{Citar periódico|data=2017-12-12|titulo=Palestra e celebração resgata legado dos beneditinos no tricentenário da primeira capela de São Caetano  - Diocese de Santo André|url=https://diocesesa.org.br/2017/12/12/palestra-e-celebracao-resgata-legado-dos-beneditinos-no-tricentenario-da-primeira-capela-de-sao-caetano/|jornal=Diocese de Santo André|lingua=pt-BR}}</ref><ref>{{Citar periódico|titulo=1717, o elo histórico de duas cidades-irmãs - Diário do Grande ABC|url=http://www.dgabc.com.br/Noticia/2766156/1717-o-elo-historico-de-duas-cidades-irmas|jornal=Jornal Diário do Grande ABC|lingua=pt-BR}}</ref>
+
+Em 1717, o Abade Frei Bartolomeu da Conceição ordenara a construção de uma capela dedicada a São Bernardo. A fazenda dos monges emprestaria o nome à região, que passaria a ser conhecida como bairro de São Bernardo, da vila de São Paulo.<ref name="funda" />
+
+Ao redor da capela, dentro do largo território que compunha a fazenda beneditina, nasce um povoado, conhecido por várias designações, tais como São Bernardo, São Bernardo da Borda do Campo ou Borda do Campo, simplesmente. Por força legal, a Vila não poderia ser estabelecida ali, pois a capela e a propriedade eram consideradas particulares. Sendo assim, acompanhando o curso do Ribeirão dos Meninos em direção as suas nascentes, dois sítios são escolhidos para sediar a vila: a região das Paineiras (atual DER) e a planície comprida e estreita, dividida ao meio pelo Ribeirão dos Meninos. Por sua posição mais protegida das intempéries, a opção recai sobre a planície. Por volta de 1812, as primeiras ruas e o largo da Igreja Matriz (atual Praça da Matriz e ruas Padre Lustosa, Rio Branco, Doutor Fláquer, entre outras) são abertos. Essa região, hoje o Centro do Município, passa a ser conhecida por "São Bernardo Novo", enquanto a pequena vila ao redor da igreja dos beneditinos, e dentro do território da fazenda, passa a ser chamada de "São Bernardo Velho".
+
+=== Núcleo Colonial ===
+Em 1877, a já decadente Fazenda de São Bernardo é desapropriada pelo Império, e sedia, de acordo com os planos do então governador da [[Província de São Paulo]], [[João Teodoro Xavier de Matos|João Teodoro Xavier]], um dos núcleos coloniais instalados nas cercanias de São Paulo. Além do Núcleo Colonial de São Bernardo, são criados também os de [[São Caetano do Sul|São Caetano]], Glória e [[Santana (bairro de São Paulo)|Santana]]. Se inicia assim o estabelecimento das primeiras levas de imigrantes em São Bernardo, notadamente de [[italianos]], especialmente os [[vêneto]]s, mas também com destaque para os [[alemães]] e [[poloneses]]. Dos quatro núcleos coloniais estabelecidos, São Bernardo era o maior deles e o que, oficialmente, durou mais tempo. Sua sede foi instalada no antigo casarão que era a residência da fazenda de Francisco Bonilha, o Alferes Bonilha, um dos mais proeminentes e participativos cidadãos do lugar no Século XIX. Entre 1887 e 1891, o núcleo ainda seria ampliado junto as suas "linhas", tais como "Borda do Campo", "São Bernardo Novo", "Galvão Bueno", "Capivary", "Rio dos Meninos", "Jurubatuba", entre outras, a maior parte delas, responsáveis diretas e indiretas pela formação da maioria dos atuais bairros da cidade. Em 1894 e 1897, respectivamente, abrem-se as duas últimas linhas coloniais: Campos Salles e Bernardino de Campos. Em 1898, as linhas mais antigas se emancipam. Em 1902, todas as terras que compunham o núcleo são oficialmente devolvidas ao município, extinguindo-se assim a tutela estadual ou federal sobre o núcleo. Entre 1876 e 1897, um total de 1535 imigrantes se estabelecem no núcleo, sendo 1255 italianos, 168 alemães, 75 austríacos e 37 nacionais. Destes últimos, 11 eram provenientes do Pilar (atual [[Mauá]]), 2 do Estado do [[Ceará]] e 24 de [[Santo Amaro (distrito de São Paulo)|Santo Amaro]]. Entre 1890 e 1897, ainda recebe 420 poloneses, 10 [[Magiares|húngaros]], 11 [[dinamarqueses]], 13 [[franceses]], 8 [[Suíça|suíços]], 5 [[portugueses]], 4 [[espanhóis]], dois [[armênios]] provindos da [[Argentina]], além de alguns alemães provenientes de [[Colónia|colônias]] de [[Santa Catarina]]. Para efeitos de comparação, até a chegada do núcleo colonial, São Bernardo possuía cerca de 157 moradores. Em 1897, já contava com 2170.<ref>{{Citar web |ultimo=Yumpu.com |url=https://www.yumpu.com/pt/document/read/38853359/os-imigrantes-do-nucleo-colonial-de-sao-diversitas-usp |titulo=Os imigrantes do Núcleo Colonial de São ... - Diversitas - USP |acessodata=2020-10-04 |website=yumpu.com |lingua=pt}}</ref>
+
+=== Freguesia e Município ===
+[[File:Freguesia de São Bernardo (1827).jpg|thumb|Aquarela do centro da Freguesia em 1827, por [[Charles Landseer]].<ref>{{Citar web|url=https://www.saobernardo.sp.gov.br/web/cultura/sao-bernardo-na-decada-de-1820|título= São Bernardo na década de 1820 |acessodata=2021-03-11|arquivourl=https://web.archive.org/web/20210120140622/https://www.saobernardo.sp.gov.br/web/cultura/sao-bernardo-na-decada-de-1820|arquivodata=2021-01-20|urlmorta=não}}</ref>]]
+Em 1812, o [[Luís Teles da Silva Caminha e Meneses|Marquês de Alegrete]] eleva São Bernardo à [[freguesia]] do então Município de São Paulo, pela Resolução Régia de 23 de setembro de 1812<ref name="freguezia" />, abrangendo todas as atuais cidades da [[Região do Grande ABC]]. Anos mais tarde, por força da Lei Provincial nº 38, de 12 de março de 1889, São Bernardo adquire o status de [[vila]].<ref name="municipio" /> Apesar de oficializado ainda durante o [[Império do Brasil|Império]], o [[município]] só é instalado de fato em 1890, já durante o [[Brasil República|regime republicano]], com o nome de [[São Bernardo (1889-1938)|São Bernardo]].<ref>https://www.al.sp.gov.br/norma/65161</ref>
+
+A abertura da [[São Paulo Railway]], em 1867, ligando São Paulo a [[Santos]], corta todo o território do município de norte a sul. Porém, a estrada de ferro passa longe da sede do município (a atual São Bernardo do Campo). O entorno da estação de São Bernardo (atual Santo André), distante oito quilômetros da sede do município e conhecida por Bairro da Estação, ou "Estação São Bernardo" experimenta um acelerado processo de desenvolvimento a partir da inauguração da ferrovia, assim como os distritos do município servidos por ela: São Caetano, Ribeirão Pires, Pilar (Mauá), Rio Grande (Rio Grande da Serra) e Alto da Serra (Paranapiacaba). A ferrovia desvia o fluxo de cargas entre o interior da província e Santos. São Bernardo, cortada pelo Caminho do Mar, experimenta um longo período de estagnação. Os tropeiros, que antes cortavam o núcleo urbano da cidade diariamente por conta das viagens entre São Paulo e Santos, desaparecem junto a suas tropas de mulas e seus pousos ao longo do caminho. Já os distritos cortados pela ferrovia, florescem e se industrializam rapidamente, principalmente a partir do final do século XIX e início do século XX.
+
+Ao longo dos anos, o desenvolvimento trazido pela SPR impulsiona estes locais, o que leva a administração do município a criar vários [[distrito]]s em São Bernardo, os quais dariam origem a atuais cidades da região. Em 1896 é criado o Distrito de Paz de Ribeirão Pires<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/64492|titulo=Lei n° 401, de 22/06/1896 ( Lei 401/1896 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref> e em 1907 é criado o Distrito de Paz de Paranapiacaba<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/65241|titulo=Lei n° 1.098, de 05/11/1907 ( Lei 1098/1907 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>, ambos no município de São Bernardo.
+
+=== Rebaixamento e Autonomia ===
+[[Ficheiro:Mapa-sao-bernardo-1902.tif|esquerda|thumb|Mapa da cidade em 1902.]]
+Por força da Lei nº 1.222-A, de 14 de dezembro de 1910, é criado o Distrito de Paz de Santo André<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/65381|titulo=Lei n° 1.222-A, de 14/12/1910 ( Lei 1222-A/1910 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>, compreendendo o Bairro da Estação. Em 1916 é criado o Distrito de Paz de São Caetano<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/65713|titulo=Lei n° 1.512, de 04/12/1916 ( Lei 1512/1916 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref> e em 1934, é criado o Distrito de Paz de Mauá.<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/130940|titulo=Decreto n° 6.780, de 18/10/1934 ( Decreto 6780/1934 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>
+
+Em 1938, em pleno [[Ditadura|regime ditatorial]] da [[era Vargas]], o [[interventor federal]] [[Ademar de Barros]] determina, pelo Decreto nº 9.775, de 30 de novembro de 1938, que o distrito de Santo André passa a ser a sede do município, e não mais a Vila de São Bernardo<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/125103|titulo=Decreto n° 9.775, de 30/11/1938 ( Decreto 9775/1938 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>, o que se justificaria pela maior prosperidade do núcleo/distrito de Santo André, em virtude da proximidade com a ferrovia. O próprio nome do município é alterado para [[Santo André (São Paulo)|Santo André]]. A antiga sede municipal, emancipada desde 1889, passa a ser considerada como o Distrito de São Bernardo parte, agora, de Santo André.
+[[File:Região Central de São Bernardo do Campo (pré-1902).jpg|thumb|Região central de São Bernardo antes de 1902.<ref name=His>{{Citar web|url=https://www.saobernardo.sp.gov.br/web/cultura/historia-da-cidade|título=História da cidade|acessodata=2021-07-23|arquivourl=https://web.archive.org/web/20201128202115/https://www.saobernardo.sp.gov.br/web/cultura/historia-da-cidade|arquivodata=2020-11-28|urlmorta=não}}</ref>]]
+
+A partir deste rebaixamento político-administrativo, moradores de São Bernardo fundam a "Associação Amigos de São Bernardo" com o objetivo de recuperar a autonomia do município, conquistado em 30 de novembro 1944<ref name="Memória">{{citar web |url=http://www.dgabc.com.br/Noticia/397413/na-emancipacao-surge-o-sao-bernardo-do-campo-|titulo=Na emancipação, surge o São Bernardo ‘do Campo’ |data=30 de novembro de 2011 |obra=Ademir Medici|publicado=Diário do Grande ABC |acessodata=10 de outubro de 2016}}</ref> (Decreto-Lei nº 14.334, de 30 de novembro de 1944<ref name="emancipa" />) e oficializada em 1° de Janeiro de 1945, com a instalação do município de São Bernardo do Campo, desmembrado de Santo André, tendo como primeiro prefeito [[Wallace Cockrane Simonsen|Wallace Cochrane Simonsen]], presidente da associação que almejava a recuperação da autonomia.<ref>{{citar web|url=https://academiadefilosofia.org/sao-bernardo-do-campo/|titulo=História |acessodata=29 de julho de 2019 |arquivourl=https://web.archive.org/web/20180831102733/https://academiadefilosofia.org/sao-bernardo-do-campo/|arquivodata=31 de agosto de 2018|urlmorta=no}}</ref>
+
+Em 1948 é criado o Distrito de Diadema, no município de São Bernardo do Campo, pela Lei nº 233, de 24 de dezembro de 1948<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/32116|titulo=Lei n° 233, de 24/12/1948 ( Lei 233/1948 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>, compreendendo Vila Conceição, os bairros Piraporinha, Eldorado e parte do Taboão. Em 1958 ocorre um plebiscito pelo qual este distrito obtém sua emancipação política, vindo a tornar-se, em 1959, o município de [[Diadema]].<ref>{{Citar web|url=https://www.al.sp.gov.br/norma/40034|titulo=Lei n° 5.285, de 18/02/1959 ( Lei 5285/1959 )|acessodata=2018-02-15|obra=www.al.sp.gov.br|lingua=pt-br}}</ref>
+
+=== Industrialização e crescimento ===
+[[File:Instalação do Município de São Bernardo do Campo.jpg|esquerda|thumb|[[Wallace Cockrane Simonsen|Wallace Simonsen]], 4º da esq-dir, em 1 de janeiro de 1945, quando da instalação do município.<ref name=His/>]]
+A abertura da [[São Paulo Railway]] em 1867, cortando o território do antigo município (correspondente as atuais sete cidades do chamado [[Região do Grande ABC|Grande ABC]]) ao meio, de norte a sul, foi o marco indutor das primeiras experiências industriais em São Bernardo, porém, restritas as áreas lindeiras a ferrovia, fizeram prosperar os Distritos de [[Santo André (São Paulo)|Santo André]] e [[São Caetano do Sul|São Caetano]], enquanto a atual São Bernardo do Campo, longe de sua própria estação, experimentava uma experiência baseada em indústrias de pequeno porte. No território correspondente ao atual Município de São Bernardo do Campo, o pioneirismo coube a Bortolo Basso, que com a força das águas do [[Rio Grande (São Paulo)|Rio Grande]], hoje o principal formador da [[Represa Billings]], instalou no município a primeira serraria, em fins do século XIX. A atividade madeireira, a época, era a mais praticada e exercida. Outro dos pioneiros, Ítalo Setti, instalou uma fábrica de charutos, denominada "A Delícia". A abundância da atividade madeireira e a instalação de mais serrarias, possibilitou a criação das primeiras indústrias de móveis, em um ofício dominado principalmente por italianos e alemães. Nas quatro primeiras décadas do século XX o parque industrial moveleiro de São Bernardo do Campo cresce vertiginosamente. Ainda incipiente se comparado ao desenvolvimento industrial alcançado pelos antigos bairros, e hoje municípios de Santo André e São Caetano, era extremamente significativo para a realidade da cidade, que viu pequenas fábricas quase artesanais tornarem-se grandes indústrias do ramo. A qualidade dos móveis, deu para São Bernardo o títiulo de "capital do móvel", com estes produtos atingindo todo o Estado e também outros estados do país. A abertura da [[Rodovia Anchieta|Via Anchieta]], e sua inauguração, em 1947, transfiguraram a cidade definitivamente. Assim como a ferrovia, no passado, havia deslocado a indústria, serviços e comércio, além dos grandes núcleos urbanos formados ao redor dela - deixando São Bernardo estagnada ao lado do velho [[Caminhos do mar de São Paulo|Caminho do Mar]], a Via Anchieta, cortando o território do município desde a divisa com [[São Paulo]], a norte, até a divisa com [[Cubatão]], no extremo sul, aliada a política de industrialização dos anos [[Getúlio Vargas|Vargas]] e [[Juscelino Kubitschek|JK]] e também ao [[Rodoviarismo no Brasil|Rodoviarismo]], transformaram a cidade em pólo estratégico para a implantação de indústrias. Grandes terrenos disponíveis e a estratégica posição entre São Paulo e [[Santos]] fizeram com que, a partir dos anos 50 do século XX São Bernardo experimentasse um crescimento sem precedentes. As pioneiras foram Varam Motores e Brasmotor (depois, ''[[Brastemp]]''), que traziam veículos [[CKD|desmontados]] e semi desmontados da Europa e Estados Unidos, e os montavam aqui. Além delas, se multiplicaram ainda nos anos 1940 as tecelagens. Na mesma época a cidade ganhou até mesmo uma fábrica de discos: a Odeon. Já no governo Juscelino Kubitschek, a política de atração de multinacionais e da criação da indústria automobilística brasileira tornou São Bernardo do Campo sede de praticamente todas as grandes indústrias do ramo: [[Willys-Overland do Brasil|Willys-Overland]], [[Volkswagen]] (primeira unidade fora da Alemanha),[[Toyota do Brasil|Toyota]], [[Mercedes-Benz]], [[Scania]], [[Karmann Ghia|Karmann-Ghia]], [[Simca]], [[Chrysler do Brasil|Chrysler]], [[Indústria Brasileira de Automóveis Presidente|IBAP]], [[Ford do Brasil|Ford]], [[Volkswagen Caminhões e Ônibus|Volkswagen Caminhões]] além de, literalmente, centenas de indústrias de auto peças, converteram a antiga vila, estagnada, em uma das maiores concentrações industriais do planeta, e com sua população crescendo vertiginosamente entre 1950 e 1970.<ref>{{citar web|url=https://www.saobernardo.sp.gov.br/web/cultura/as-primeiras-montadoras-de-automoveis-de-sao-bernardo-do-campo|titulo=As primeiras montadoras de automóveis de São Bernardo do Campo|acessodata=17-04-2023|website=Secretaria de Cultura e Juventude do município de São Bernardo do Campo}}</ref> Nesse período, São Bernardo saltou de uma população inferior a 40 mil habitantes para mais de 200 mil habitantes. Nos anos 1980, atingiria a marca de mais de 420 mil habitantes.<ref>{{citar web |ultimo=de Aguilar |primeiro=Carolina Bracco |url=http://tede.mackenzie.br/jspui/bitstream/tede/2657/2/Carolina%20Bracco%20Delgado%20de%20Aguilar2.pdf |titulo=Espaço Urbano em São Bernardo do Campo |data= |acessodata= |publicado=Universidade Presbiteriana Mackenzie}}</ref>
+
+== Geografia ==
+[[Imagem:Parque Estoril 03.jpg|thumb|[[Parque Estoril (São Bernardo do Campo)|Parque Estoril]].]]
+[[Imagem:Represa Billings - panoramio.jpg|thumb|[[Represa Billings]].]]
+[[Imagem:Ribeirao-dos-Meninos.jpg|thumb|[[Ribeirão dos Meninos]], divisa com Santo André]]
+
+Localiza-se no alto da [[Serra do Mar]], do planalto Atlântico, ocupa uma área de 408,45 [[quilômetro]]s quadrados, e a altitude varia entre 60 metros do nível do mar, na junção do rio Passareúva com o rio dos Pilões (pé da Serra) até 986,5 metros, no [[Pico do Bonilha]], no bairro Montanhão.<ref>{{citar web|url=http://www.saobernardo.sp.gov.br/documents/10181/37461/02+-+Capítulo+II+-+Geografia+e+meio+ambiente/b0d4c100-9778-441e-9906-1f3be6e1d2a1?version=1.1|titulo=Geografia e Meio Ambiente|acessodata=30 de julho de 2019 |arquivourl=https://web.archive.org/web/20190731002219/http://www.saobernardo.sp.gov.br/documents/10181/37461/02+-+Cap%C3%ADtulo+II+-+Geografia+e+meio+ambiente/b0d4c100-9778-441e-9906-1f3be6e1d2a1?version=1.1|arquivodata=31 de julho de 2019|urlmorta=no}}</ref>
+
+===Parques===
+
+A cidade possui alguns parques recreativos, voltados para a prática de atividades físicas e esportivas, como o Cittá di Maróstica, no Centro da cidade, o Parque Raphael Lazzuri, localizado na Avenida Kennedy, bairro Anchieta (próximo ao Ginásio Poliesportivo Adib Moisés Dib) e o Parque Engenheiro Salvador Arena, que fica na Av. Caminho do Mar, no bairro Rudge Ramos. Em São Bernardo está localizado também o Parque Estoril,  no bairro Riacho Grande, situado às margens da represa Billings, e que conta com um teleférico e um zoológico, o que ajuda a proporcionar um maior contato com a fauna e a natureza. Além disso, em São Bernardo do Campo está situado o Parque de Diversões [[Cidade da Criança (São Bernardo do Campo)|Cidade da Criança]], que foi construído em 1968 no Jardim do Mar, atrás dos Estúdios Vera Cruz, e que foi o primeiro parque temático do Brasil.<ref>{{Citar web|titulo=Cidade da Criança - São Bernardo|url=https://www.saobernardo.sp.gov.br/cidade-da-crianca|obra=www.saobernardo.sp.gov.br|acessodata=2019-06-05|lingua=pt-BR}}</ref>
+
+=== Clima ===
+Em São Bernardo do Campo, as condições climáticas são classificadas como amenas e moderadas. Há muita chuva mesmo no mês mais seco. O clima é classificado como [[Clima subtropical úmido|Clima subtropical úmido - Cfa]], de acordo com [[Classificação climática de Köppen-Geiger|Köppen e Geiger]]. A temperatura média aqui é de 19.2 °C. Cerca de 2133 mm da precipitação cai anualmente. A cidade localiza-se no hemisfério sul. Os dias amenos do verão começam no final de dezembro e terminam em março. Esse período engloba os meses: dezembro, janeiro, fevereiro, março. A melhor época para viajar é fevereiro, março, dezembro.<ref name="Subdivisão" />
+
+A temperatura média é de 18&nbsp;°C, tendo as estações do ano já relativamente bem definidas. Os verões se caracterizam pelo clima quente e úmido (com pluviosidade média de 234&nbsp;mm no mês de janeiro), enquanto os invernos têm como característica temperaturas mais frias e menor incidência de chuvas ([[pluviosidade]] média em torno dos 44&nbsp;mm em Julho, com estiagens mais severas em alguns anos e umidade relativa do ar abaixo de 40%, devida ao fenômeno das [[ilhas de calor]] urbanas. Primavera e outono se caracterizam como estações de transição.{{carece de fontes|data=janeiro de 2010}}
+
+Apesar dessas definições, certas variações de temperatura podem ser sentidas mesmo nas épocas mais quentes ou mais frias do ano. É bastante comum, principalmente no verão, as temperaturas ultrapassarem os 30&nbsp;°C durante a tarde e temperaturas superiores a 20&nbsp;°C durante a madrugada, especialmente nas áreas mais urbanizadas. No inverno, a penetração de massas de ar polar provenientes do sul fazem, pelo menos uma vez por ano, os termômetros caírem a 10&nbsp;°C ou menos. Já houve registros de dias em que no inverno a temperatura alcançou sequer a marca dos 8&nbsp;°C durante a tarde, no período considerado como o mais quente do dia. Em contrapartida, nos dias atuais em decorrência das ilhas de calor, é comum a temperatura ultrapassar a marca dos 25&nbsp;°C em alguns dias nos meses de julho e agosto. Em julho de 2008 a precipitação foi de 0mm.<ref name="Subdivisão" />
+
+São Bernardo destaca-se, principalmente durante o outono e primavera, pela grande frequência de nevoeiros ao longo da manhã e algumas vezes à tarde, proveniente de resfriamento intenso da temperatura durante a madrugada (parte da manhã) e grande atuação de ventos marítimos que chegam da serra, local próximo da cidade (parte da tarde). É muito comum durante o outono dias muito frios pela manhã com muitas nuvens e neblina, e tardes amenas ensolaradas e muito secas, com exceção dos bairros mais próximos da serra, tais como Assunção, Demarchi e o distrito de Riacho Grande.{{carece de fontes|data=janeiro de 2010}}
+
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de novembro de 1971 a junho de 1976, a menor [[temperatura]] registrada em São Bernardo do Campo foi de {{fmtn|0.1|°C}} em 18 de julho de 1975,<ref name="TempMínINMET_SBC-SP"/> e a maior atingiu {{fmtn|34.8|°C}} em 27 de outubro de 1972.<ref name="TempMáxINMET_SBC-SP"/> O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas foi de 145,8 milímetros entre os dias 10 e 11 de março de 2019,<ref>{{citar web|url=http://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/governador-sobrevoa-areas-alagadas-e-anuncia-medidas-emergenciais/|título=Governador sobrevoa áreas alagadas e anuncia medidas emergenciais|publicado=Defesa Civil do Estado de São Paulo|acessodata=11 de março de 2019}}</ref> e o menor índice de [[Umidade relativa|umidade relativa do ar]] de 19%, nos dias 24 de junho de 1972 e 4 de agosto de 1975.<ref>{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83819&btnProcesso=serie&mRelDtInicio=01/11/1971&mRelDtFim=30/06/1976&mAtributos=,,,,1,,,,,,,,,,,,|título=BDMEP - Série Histórica - Dados Horários - Umidade Relativa (%) - São Bernardo do Campo|publicado=Instituto Nacional de Meteorologia|acessodata=10 de julho de 2015}}</ref>
+{{Tabela/Clima
+|localidade = São Bernardo do Campo
+|larguraporcentagem = 100
+
+|Jan_REC_Max_°C = 33.5 |Jan_REC_Min_°C = 8
+|Fev_REC_Max_°C = 34.7 |Fev_REC_Min_°C = 13.9
+|Mar_REC_Max_°C = 32.2 |Mar_REC_Min_°C = 13.9
+|Abr_REC_Max_°C = 31.5 |Abr_REC_Min_°C = 6.8
+|Mai_REC_Max_°C = 29.6 |Mai_REC_Min_°C = 5.5
+|Jun_REC_Max_°C = 28.9 |Jun_REC_Min_°C = 3.8
+|Jul_REC_Max_°C = 27.8 |Jul_REC_Min_°C = 0.1
+|Ago_REC_Max_°C = 31.5 |Ago_REC_Min_°C = 5
+|Set_REC_Max_°C = 32.7 |Set_REC_Min_°C = 5
+|Out_REC_Max_°C = 34.8 |Out_REC_Min_°C = 7.8
+|Nov_REC_Max_°C = 34.7 |Nov_REC_Min_°C = 9
+|Dez_REC_Max_°C = 33.3 |Dez_REC_Min_°C = 11.3
+|Max_Rec_Ano_°C = 34.8 |Min_Rec_Ano_°C = 0.1
+
+|Jan_Max_°C = 25.2 |Jan_Min_°C = 16.3
+|Fev_Max_°C = 25.3 |Fev_Min_°C = 16.6
+|Mar_Max_°C = 24.7 |Mar_Min_°C = 15.9
+|Abr_Max_°C = 22.9 |Abr_Min_°C = 13.7
+|Mai_Max_°C = 20.9 |Mai_Min_°C = 11.4
+|Jun_Max_°C = 20.1 |Jun_Min_°C = 9.9
+|Jul_Max_°C = 19.6 |Jul_Min_°C = 9.2
+|Ago_Max_°C = 20.5 |Ago_Min_°C = 10.1
+|Set_Max_°C = 21.4 |Set_Min_°C = 11.5
+|Out_Max_°C = 22.2 |Out_Min_°C = 13
+|Nov_Max_°C = 23.4 |Nov_Min_°C = 14.4
+|Dez_Max_°C = 24.3 |Dez_Min_°C = 15.3
+|Max_Ano_°C = 22.5 |Min_Ano_°C = 13.1
+
+|Jan_Med_°C = 20.7
+|Fev_Med_°C = 20.9
+|Mar_Med_°C = 20.3
+|Abr_Med_°C = 18.3
+|Mai_Med_°C = 16.1
+|Jun_Med_°C =  15
+|Jul_Med_°C = 14.4
+|Ago_Med_°C = 15.3
+|Set_Med_°C = 16.4
+|Out_Med_°C = 17.6
+|Nov_Med_°C = 18.9
+|Dez_Med_°C = 19.8
+|Med_Ano_°C = 17.8
+
+|Jan_Precip_mm = 234
+|Fev_Precip_mm = 221
+|Mar_Precip_mm = 187
+|Abr_Precip_mm = 94
+|Mai_Precip_mm = 63
+|Jun_Precip_mm = 55
+|Jul_Precip_mm = 44
+|Ago_Precip_mm = 50
+|Set_Precip_mm = 87
+|Out_Precip_mm = 149
+|Nov_Precip_mm = 137
+|Dez_Precip_mm = 203
+|Ano_Precip_mm = 1524
+
+|fonte = Climate-Data (médias climatológicas)<ref name="Climatologia_SBC-SP">{{citar web|url=http://pt.climate-data.org/location/9602/|título=Clima: São Bernardo do Campo|publicado=Climate-Data|acessodata=10 de julho de 2015|arquivourl=https://archive.is/GQSe6|arquivodata=10 de julho de 2015}}</ref> e [[Instituto Nacional de Meteorologia]] (recordes de temperatura de 01/11/1971 a 30/06/1976).<ref name="TempMínINMET_SBC-SP">{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83819&btnProcesso=serie&mRelDtInicio=01/11/1971&mRelDtFim=30/06/1976&mAtributos=,,,1,,,,,,,,,,,,,|título=BDMEP - Série Histórica - Dados Diários - Temperatura Mínima (°C) - São Bernardo do Campo|publicado=Instituto Nacional de Meteorologia|acessodata=10 de julho de 2015}}</ref><ref name="TempMáxINMET_SBC-SP">{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83819&btnProcesso=serie&mRelDtInicio=01/11/1971&mRelDtFim=30/06/1976&mAtributos=,,1,,,,,,,,,,,,,,|título=BDMEP - Série Histórica - Dados Diários - Temperatura Máxima (°C) - São Bernardo do Campo|publicado=Instituto Nacional de Meteorologia|acessodata=10 de julho de 2015}}</ref>
+}}
+
+== Demografia ==
+{{Crescimento populacional do Censo do Brasil
+| 1900 = 10124
+| 1920 = 25215
+| 1950 = 29295
+| 1960 = 82411
+| 1970 = 201662
+| 1980 = 425611
+| 1991 = 566893
+| 2000 = 703177
+| 2010 = 765463
+| rodape   =<div class="center">Censos demográficos do<br />IBGE (1872-2022).<ref>{{citar web|URL=https://sidra.ibge.gov.br/tabela/1286|título=Tabela 1286 - População e Distribuição da população pelas Grandes Regiões e Unidades da Federação nos Censos Demográficos|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=9 de dezembro de 2022}}</ref><ref>{{citar web|URL=https://sidra.ibge.gov.br/tabela/4714|título=Tabela 4714 - População Residente, Área territorial e Densidade demográfica|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=9 de dezembro de 2022}}</ref>
+|2022=810729}}
+
+* População estimada (2021) - 849 874
+* População no último censo (2010) - 765 463
+* Densidade demográfica (2010) - 1.869,36 hab/km²
+* Residentes (2000) - 703 177 habitantes
+* Pessoal ocupado (2015) - 307 986 pessoas
+* Salário médio mensal dos trabalhadores formais (2015)	- 4,3 salários mínimos
+* Taxa de escolarização de 6 a 14 anos de idade (2010)	97,6 %
+* Mortalidade Infantil (2014) - 9,86 óbitos por mil nascidos vivos
+* Esgotamento sanitário adequado (2010) - 91,9 %
+* Arborização de vias públicas (2010) - 84,1 %
+Fonte: IBGE<ref name="IBGE_Pop"/>
+
+=== Composição étnica ===
+Em 2022, segundo dados do Censo do Instituto Brasileiro de Geografia e Estatística, a população do município era composta por 477.984 [[Brasileiros brancos|brancos]] (58,96%), 261.363 [[pardos]] (32,24%), 58.608 [[Afro-brasileiros|pretos]] (7,23%), 11.702 [[Brasileiros asiáticos|amarelos]] (1,44%) e 1.043 [[Povos indígenas do Brasil|indígenas]] (0,13%).<ref>{{Citar web|url=https://sidra.ibge.gov.br/tabela/9605|titulo=Tabela 9605: População residente, por cor ou raça, nos Censos Demográficos|acessodata=2026-03-27|website=sidra.ibge.gov.br}}</ref>
+
+== Política e administração ==
+=== Governo ===
+{{Artigo principal|Lista de prefeitos de São Bernardo do Campo|Lista de vereadores de São Bernardo do Campo}}
+[[Imagem:Sao-Bernardo-Camara-Vereadores.jpg|thumb|Praça Samuel Sabatini (Paço Municipal), edifício da Prefeitura e da Câmara Municipal]]
+* [[Prefeito]]: [[Marcelo Lima (político)|Marcelo Lima]] ([[Podemos (Brasil)|PODE]]) (2025/2028)<ref name=":1">{{citar web|url=https://www.camarasbc.sp.gov.br/noticia/candidatos-eleitos-sao-diplomados-na-camara-municipal-1000265|titulo=Candidatos eleitos são diplomados na Câmara Municipal|data=2024-12-19|acessodata=2025-01-18|website=Câmara Municipal de São Bernardo do Campo}}</ref>
+* [[Presidente da câmara de vereadores|Presidente]] da [[Lista de vereadores de São Bernardo do Campo|Câmara]]: Danilo Lima ([[Partido da Social Democracia Brasileira|PSDB]]) (2023/2025).<ref>{{Citar web|url=http://www.folhadoabc.com.br/index.php/politica/vereadores/item/25294-danilo-lima-assumira-a-presidencia-da-camara-de-sao-bernardo|título= Danilo Lima assumirá a presidência da Câmara de São Bernardo |data=2023-01-28|acessodata=2023-02-01}}</ref><ref>{{Citar web|url=https://g1.globo.com/sp/sao-paulo/noticia/2025/08/14/primo-do-prefeito-presidente-da-camara-de-sao-bernardo-e-afastado-das-funcoes-publicas-acusado-de-receber-altas-quantias-em-dinheiro.ghtml|titulo=Primo do prefeito, presidente da Câmara de São Bernardo é afastado das funções públicas acusado de receber 'altas quantias em dinheiro'|data=2025-08-14|acessodata=2025-08-18|website=G1|lingua=pt-br}}</ref>
+
+=== Cidades-irmãs ===
+[[Geminação de cidades|Cidades-irmãs]] é uma iniciativa do Núcleo das Relações Internacionais, que busca a [[Integral|integração]] entre a cidade e demais municípios nacionais e estrangeiros. A integração entre os municípios é firmada por meio de convênios de cooperação, que têm o objetivo de assegurar a manutenção da [[paz]] entre os povos, baseada na [[fraternidade]], [[felicidade]], [[amizade]] e [[respeito]] recíproco entre as nações. Oficialmente, as cidades irmãs de São Bernardo do Campo são:<ref>{{citar web|url=https://www.saobernardo.sp.gov.br/cidades-irmas|título= Cidades-Irmãs |autor=Prefeitura|data=|acessodata=2 de outubro de 2020|arquivourl=https://web.archive.org/web/20191228200103/http://www.saobernardo.sp.gov.br/cidades-irmas|arquivodata=28 de dezembro de 2019|urlmorta=não}}</ref>
+{{dividir em colunas|cols=3}}
+*{{BRAb}} [[Açucena (Minas Gerais)|Açucena]] 
+*{{SWEb}} [[Linköping]] 
+*{{BRAb}} [[Monte Azul]] 
+*{{BRAb}} [[Várzea Alegre]] 
+*{{BRAb}} [[Ouro Preto]] 
+*{{ARGb}} [[General San Martín (Buenos Aires)|General San Martín]] 
+*{{BRAb}} [[Aparecida (São Paulo)|Aparecida]] 
+*{{BRAb}} [[Governador Valadares]] 
+*{{PORb}} [[Aveiro]] 
+*{{BRAb}} [[Xapuri]] 
+*{{BRAb}} [[Diadema]]
+*{{CUBb}} [[Havana]] 
+*{{NICb}} [[Manágua]] 
+*{{ITAb}} [[Marostica]] 
+*{{ITAb}} [[Vittorio Veneto]] 
+*{{JPNb}} [[Shunan]] 
+{{dividir em colunas fim}}
+
+== Subdivisões ==
+[[Ficheiro:SBC Bairros.png|upright=1.6|Divisão política de São Bernardo do Campo.]]
+=== Zona urbana<ref name="Subdivisão">{{citar web|url=http://www.saobernardo.sp.gov.br/SECRETARIAS/sp/geoportal/COMPENDIO/geografia.pdf|titulo=Compêndio Estatístico de São Bernardo do Campo|acessodata=3 de março de 2010|arquivourl=https://web.archive.org/web/20120118041436/https://www.saobernardo.sp.gov.br/SECRETARIAS/sp/geoportal/COMPENDIO/geografia.pdf|arquivodata=18 de janeiro de 2012}}</ref> ===
+{{Dividir em colunas|cols=4}}
+* Alves Dias
+* [[Anchieta (São Bernardo do Campo)|Anchieta]]
+* [[Assunção (São Bernardo do Campo)|Assunção]]
+* [[Baeta Neves (São Bernardo do Campo)|Baeta Neves]]
+* Balneária
+* Batistini
+* Botujuru
+* Centro
+* Cooperativa
+* [[Demarchi]]
+* [[Bairro dos Alvarengas|Dos Alvarengas]]
+* Dos Casa
+* Dos Finco
+* Ferrazópolis
+* Independência
+* [[Jordanópolis (São Bernardo do Campo)|Jordanópolis]]
+* Montanhão
+* [[Nova Petrópolis (São Bernardo do Campo)|Nova Petrópolis]]
+* Pauliceia
+* Planalto
+* [[Riacho Grande|Rio Grande]]
+* [[Rudge Ramos]]
+* Santa Terezinha
+* [[Taboão (São Bernardo do Campo)|Taboão]]{{dividir em colunas fim}}
+
+=== Zona rural ===
+A [[Zona rural]] de São Bernardo do Campo corresponde praticamente à região coberta pela [[Serra do Mar]]. Localizada ao sul da cidade, ela é separada da área urbana pela [[represa Billings]]. Os [[bairro]]s que fazem parte da Zona Rural de São Bernardo do Campo são:<ref name="Subdivisão"/>
+
+{{Dividir em colunas|cols=2}}
+* Alto da Serra
+* Capivari
+* Curucutu
+* Dos Imigrantes
+* Rio Pequeno
+* Santa Cruz
+* Taquacetuba
+* Tatetos
+* Varginha
+* Zanzalá
+{{dividir em colunas fim}}
+
+== Economia ==
+[[Imagem:Sao-Bernardo-do-Campo-2018.jpg|thumb|Panorama da Praça Samuel Sabatini e Avenida Senador Vergueiro.]]
+[[Imagem:Toyota São Bernardo.jpg|thumb|Fábrica da [[Toyota]] em São Bernardo do Campo]]
+[[Imagem:Mercedes-Benz Brazil Central Office (2012).jpg|thumb|Sede da [[Mercedes-Benz]] Brasil em São Bernardo do Campo.]]
+
+De acordo com dados de 2021, do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), o município de São Bernardo do Campo tem o [[Lista de municípios do Brasil por PIB|16.º maior produto interno bruto]] (PIB) entre as cidades brasileiras, com 58,2 bilhões de reais, ou 0,6% do PIB brasileiro.<ref name="Economia">{{citar web|url=https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/e20dd3361ea8b74ed6274b5240d3c3cb.pdf|titulo=Produto Interno Bruto dos Municípios: 2021|data=|acessodata=2 de junho de 2024|website=[[IBGE]]|editor=}}</ref> No mesmo ano, de janeiro a abril, foi o nono município que mais perdeu postos de trabalho com carteira assinada em decorrência da [[Crise econômica brasileira de 2014|crise econômica de 2014 no país]].<ref name=":0">{{Citar web|url=https://exame.com/brasil/as-100-cidades-que-mais-fecharam-empregos-no-brasil-ate-hoje/|titulo=As 100 cidades que mais fecharam empregos no Brasil|acessodata=2017-07-26|obra=EXAME|wayb=20201127200826}}</ref>
+
+Desde a década de 1950, o município tem sua economia baseada na [[indústria automobilística]] - sede das primeiras montadoras de veículos do [[Brasil]], tais como [[Volkswagen]], [[Ford]], [[Scania]], [[Toyota]], [[Mercedes-Benz]], [[Karmann Ghia]] e [[Willys-Overland]] - além  das indústrias de autopeças que as suportam, de indústrias de tintas, como a Basf, que produz as tintas [[Suvinil]], e da maior planta industrial do mundo de dentifrícios da [[Colgate-Palmolive]].{{carece de fontes|data=janeiro de 2010}}
+
+Na década de 1990, a economia da região teve uma grande diversificação, o que elevou a importância do setor de serviços na cidade. O comércio é variado e encontrado em todos os bairros, destacando-se o tradicional comércio da Rua Marechal Deodoro e adjacências, e o conhecido nacionalmente ''Centro Moveleiro da Jurubatuba'', que dá a São Bernardo do Campo a denominação de ''Capital do Móvel''.{{carece de fontes|data=janeiro de 2010}}
+
+A construção civil e a reforma urbana se impulsionaram com a construção do trecho sul do [[Rodoanel]], um anel viário da [[Região Metropolitana de São Paulo]], na Avenida Pery Ronchetti com a duplicação e canalização do córrego Saracantan, além da construção de muitos [[edifício]]s, a maioria residencial, com reformas do Shopping Metrópole, do Golden Shopping, a inauguração do Shopping São Bernardo Plaza, a desconstrução do antigo prédio do Best Shopping e revitalização da região do bairro Parque dos Pássaros, e da nova Câmara Municipal.{{carece de fontes|data=janeiro de 2010}}
+
+== Infraestrutura ==
+=== Transportes ===
+O município é atendido por ônibus da empresa [[BR7 Mobilidade]], consórcio que opera as linhas municipais, pela [[Empresa Metropolitana de Transportes Urbanos de São Paulo|EMTU]], que opera o [[Corredor Metropolitano São Mateus - Jabaquara]], interligando São Bernardo do Campo (Terminal São Bernardo e Terminal Ferrazópolis) aos municípios vizinhos de Diadema, Santo André e São Paulo, além de ônibus de empresas que gerem linhas intermunicipais que passam por São Bernardo.{{carece de fontes|data=janeiro de 2010}}
+
+==== Rodovias ====
+São Bernardo do Campo é atendida pelas seguintes rodovias:
+[[Imagem:Viaduto Tereza Delta - km 20.7 Via Anchieta - sentido Santos - panoramio.jpg|thumb|Viaduto Tereza Delta, [[Rodovia Anchieta]], sentido [[Santos]].]]
+
+*[[Ficheiro:SP-150.png|100x20px]] [[Rodovia Anchieta]] - principal acesso à cidade. Liga a cidade de [[São Paulo]] até a Região da [[Baixada Santista]], atravessando São Bernardo do Campo. Faz parte do [[Sistema Anchieta-Imigrantes]].
+*[[Ficheiro:SP-160.png|100x20px]] [[Rodovia dos Imigrantes]] - assim como a Rodovia Anchieta, liga a capital paulista ao litoral sul de São Paulo, passando por São Bernardo. Também faz parte do sistema viário supracitado.
+*[[Ficheiro:SP-021.png|100x20px]] [[Rodoanel Mário Covas|Rodoanel]] - acessível em São Bernardo através do sistema Anchieta-Imigrantes, possibilitando o deslocamento a outras cidades da [[Região Metropolitana de São Paulo|Grande São Paulo]].
+*[[Ficheiro:SP-031.svg|22x22px]] [[Rodovia Índio Tibiriçá]] - liga São Bernardo do Campo até o município de [[Suzano]], na [[Região do Alto Tietê]].
+*[[Ficheiro:SP-148.png|100x20px]] [[SP-148|Caminho do Mar]] - liga o [[Planalto Paulista]] até a Baixada Santista. Atualmente encontra-se fechada para veículos de passeio no trecho de serra.{{carece de fontes|data=janeiro de 2010}}
+
+=== Comunicações ===
+O sistema de telefones automáticos foi inaugurado na cidade em 1958 pela [[Companhia Telefônica da Borda do Campo|Companhia Telefônica da Borda do Campo (CTBC)]],<ref>{{citar web|URL=https://web.archive.org/web/19990420131912/http://www.ctbc.com.br:80/ctbc/hist.htm|título=História da CTBC|data=1999-04-20|acessodata=2025-04-27|website=www.ctbc.com.br|publicado=Página oficial da Companhia Telefônica da Borda do Campo (arquivada)|ultimo=|primeiro=}}</ref> empresa subsidiária da [[Telecomunicações de São Paulo|Telecomunicações de São Paulo (TELESP)]] a partir de 1973,<ref>{{Citar web|url=https://web.archive.org/web/19980114175120/http://www.telesp.com.br:80/paginas/06_casasua/060202_operacional.htm|titulo=Área de operação da Telesp em São Paulo|data=1998-01-14|acessodata=2025-04-27|website=www.telesp.com.br|publicado=Página oficial da Telecomunicações de São Paulo (arquivada)|ultimo=|primeiro=}}</ref> que também implantou o [[Lista de municípios de São Paulo por código DDD|sistema de discagem direta à distância (DDD)]] em 1973 com o código de área (011).<ref>{{Citar web|url=https://web.archive.org/web/19980114162505/http://www.telesp.com.br/paginas/ddd_pref/ddd_pref.htm|titulo=Telesp - Código DDD e Prefixos|data=1998-01-14|acessodata=2025-04-27|website=www.telesp.com.br|publicado=Página oficial da Telecomunicações de São Paulo (arquivada)|ultimo=|primeiro=}}</ref>
+
+=== Educação ===
+[[Ficheiro:Fachada da FDSBC.JPG|thumb|[[Faculdade de Direito de São Bernardo do Campo]].]]
+[[Ficheiro:CENFORPE de São Bernardo do Campo - by Lucas.JPG|thumb|Centro de Formação de Professores (CENFORPE).]]
+
+São Bernardo tem várias universidades e faculdades:
+<!-- escrever em minúsculas -->
+{{Dividir em colunas|cols=2}}
+* [[UFABC|Universidade Federal do ABC (UFABC)]]
+* Faculdade Engenheiro Salvador Arena (FESA), antiga Faculdade de Tecnologia Termomecânica
+* [[SENAI|Faculdade SENAI de Tecnologia Ambiental]]
+* [[Faculdade de Engenharia Industrial|Centro Universitário da FEI]]
+* Faculdade de Tecnologia de São Bernardo do Campo (FATEC)
+* Faculdade PanAmérica (FAPAN)
+* Faculdade de São Bernardo do Campo (FASB)
+* Faculdade Anhanguera (abriga as áreas da antiga Faculdade Anchieta e da antiga [[Universidade Bandeirante de São Paulo|UNIBAN]])
+* [[Faculdade de Direito de São Bernardo do Campo]]
+* [[Universidade Metodista de São Paulo]] (UMESP)
+* Seminário Presbiteriano Conservador
+* Universidade Nove de Julho
+* Universidade São Judas
+{{dividir em colunas fim}}
+
+Além destas, a cidade abrigou também a Faculdade Interação Americana (FAINAM), extinta em 2021.<ref>{{Citar web|url=https://emec.mec.gov.br/emec/consulta-cadastro/detalhes-ies/d96957f455f6405d14c6542552b0f6eb/ODAz|titulo=(803) FACULDADE INTERAÇÃO AMERICANA - FIA|acessodata=2025-01-18|website=e-MEC - Ministério da Educação}}</ref> 
+
+== Cultura e lazer ==
+[[Ficheiro:BIBLIOTECA MUNICIPAL MONTEIRO LOBATO R. JURUBATUBA , 1415 , CENTRO, SÃO BERNARDO DO CAMPO - SP - panoramio (1).jpg|miniaturadaimagem|Biblioteca Municipal Monteiro Lobato (São Bernardo do Campo)|Biblioteca Municipal Monteiro Lobato.]]
+[[Imagem:Pinacoteca de São Bernardo do Campo 02.jpg|thumb|[[Pinacoteca de São Bernardo do Campo]].]]
+[[Ficheiro:Inauguração da Fábrica de Cultura de São Bernardo do Campo.jpg |thumb|Fábrica de Cultura 4.0.]]
+
+===Bibliotecas===
+De acordo com a lista de bibliotecas  do [[Sistema Nacional de Bibliotecas Públicas]], São Bernardo do Campo tem várias bibliotecas públicas municipais, entre as quais a Biblioteca Municipal Monteiro Lobato e a Biblioteca Malba Tahan, localizadas nos bairros mais importantes da cidade: o Centro e o Rudge Ramos, respectivamente.<ref>Sistema Nacional de Bibliotecas Públicas - [http://snbp.culturadigital.br/wp-content/arquivos/2014/03/SP-Lista-das-Bibliotecas-Publicas.pdf Relação de Bibliotecas Públicas no Estado de São Paulo] - novembro de 2013. SNBP. Acesso feito em 9 de agosto de 2018.</ref>
+
+===Teatros===
+São Bernardo possui também teatros que contam com peças dos mais variados tipos, como, por exemplo, o Teatro Cacilda Becker, situado junto ao Paço Municipal, na região central da cidade; o Teatro Lauro Gomes, localizado no bairro Rudge Ramos, e o Teatro Elis Regina, no bairro Assunção.<ref>{{Citar web|titulo=Centros Culturais - São Bernardo|url=https://www.saobernardo.sp.gov.br/centros-culturais|obra=www.saobernardo.sp.gov.br|acessodata=2019-06-05|lingua=pt-BR}}</ref>
+
+===Fábrica de Cultura 4.0===
+São Bernardo possui a primeira ''Fábrica de Cultura 4.0'', próxima ao Paço Municipal, focada no ensino de Artes&Tecnologia.<ref>{{Citar web|url=https://saobernardodocampo.info/50928/fabrica-de-cultura-sbc/|título=Fábrica de Cultura de São Bernardo abre as portas nesta quarta-feira (30)|data=30 de setembro de 2020|acessodata=5 de outubro de 2020|arquivourl=https://web.archive.org/web/20201006012842/https://saobernardodocampo.info/50928/fabrica-de-cultura-sbc/|arquivodata=5 de outubro de 2020|urlmorta=não}}</ref> Em 19 de maio de 2021, a [[Lista de vereadores de São Bernardo do Campo#18ª Legislatura|Câmara de São Bernardo]] aprovou a mudança do nome para "Fábrica de Cultura Bruno Covas", homenageando o falecido [[Lista de prefeitos da cidade de São Paulo|prefeito de São Paulo]], [[Bruno Covas]].<ref>{{Citar web|url=https://g1.globo.com/sp/sao-paulo/noticia/2021/05/19/camara-de-sao-bernardo-aprova-projeto-que-da-nome-de-bruno-covas-a-fabrica-de-cultura-do-municipio-da-grande-sp.ghtml|título=Câmara de São Bernardo aprova projeto que dá nome de Bruno Covas à Fábrica de Cultura do município da Grande SP |data=2021-05-19|acessodata=2021-07-17|arquivourl=https://web.archive.org/web/20210519231710/https://g1.globo.com/sp/sao-paulo/noticia/2021/05/19/camara-de-sao-bernardo-aprova-projeto-que-da-nome-de-bruno-covas-a-fabrica-de-cultura-do-municipio-da-grande-sp.ghtml|arquivodata=2021-05-19|urlmorta=não}}</ref>
+
+=== Feriados ===
+Em São Bernardo do Campo, há quatro [[feriado]]s municipais, definidos pela Decreto n° {{formatnum:17279}} de 26 de outubro de 2010, oito feriados nacionais e cinco pontos facultativos. Os feriados municipais são: a [[Sexta-Feira Santa]], que ocorre sempre em março ou abril; o [[Corpus Christi]], que sempre é realizado na quinta-feira seguinte ao domingo da [[Trindade (cristianismo)|Santíssima Trindade]]; o dia 20 de agosto, aniversário do município; e o [[Dia da Consciência Negra]], comemorado em 20 de novembro.<ref>{{citar web|url=http://www.saobernardo.sp.gov.br/comuns/pqt_container_r01.asp?srcpg=calendario_feriados&lIHTM=true |titulo=CALENDÁRIO ADMINISTRATIVO DE 2011 |autor=Prefeitura |acessodata=4 de maio de 2011}}</ref> De acordo com a lei federal nº 9.093 de 12 de setembro de 1995, os municípios podem ter no máximo quatro feriados municipais, já incluída a [[Sexta-Feira Santa]].<ref name="GuiaTrabalhistaCarnaval">{{citar web|url=http://www.guiatrabalhista.com.br/tematicas/carnaval.htm|titulo=Carnaval - é ou não feriado? folga automática pode gerar alteração contratual |autor= Sérgio Ferreira Pantaleão |publicado = Guia Trabalhista |acessodata=4 de maio de 2011}}</ref><ref name="GuiaTrabalhistaLei">{{citar web|url=http://www.planalto.gov.br/ccivil_03/Leis/L9093.htm|titulo= Lei Nº 9.093, de 12 de setembro de 1995 |autor= Presidência da República |acessodata=4 de maio de 2011}}</ref>
+
+=== Esportes ===
+Os Jogos escolares são um dos maiores eventos esportivos da cidade de São Bernardo, toda a comunidade escolar participa ativamente desta competição, que teve início em 1965 como "I Torneio Colegial" com a participação de 416 alunos divididos em 6 modalidades. Em 2008, aconteceu sua 42º edição com a participação de 87 estabelecimentos de ensino disputando 17 modalidades coletivas e individuais. Todo esse sucesso só foi e é possível graças aos professores e alunos das escolas das redes pública e privada nas categorias A, B, C e D.{{carece de fontes|data=janeiro de 2010}}
+[[Ficheiro:O Estádio Municipal Primeiro de Maio . Rua Olavo Bilac - Jardim Olavo Bilac, São Bernardo do Campo – SP - panoramio.jpg|miniaturadaimagem|esquerda|Estádio Primeiro de Maio]]
+
+Além dos jogos escolares, São Bernardo do Campo também tem como atrações esportivas o [[São Bernardo Futebol Clube]] que disputa o [[Campeonato Paulista de Futebol|Campeonato Paulista de Futebol A1]]<ref>{{citar web|URL=https://ge.globo.com/sp/tem-esporte/futebol/campeonato-paulista/noticia/agua-santa-e-sao-bernardo-sobem-e-definem-os-16-participantes-do-paulistao-de-2022-veja.ghtml |título=Água Santa e São Bernardo sobem e definem os 16 participantes do Paulistão 2022 |autor=GloboEsporte |publicado=ge.globo.com |acessodata=27 de maio de 2021}}</ref> e o [[Campeonato Brasileiro de Futebol - Série B|Brasileirão Série B]]<ref>{{citar web|URL=https://ge.globo.com/sp/futebol/times/sao-bernardo/noticia/2022/08/27/sao-bernardo-sobe-para-serie-c-pela-primeira-vez-na-historia.ghtml |título=São Bernardo sobe pra Série C pela 1ª vez na história |autor=Globo Esporte |publicado=ge.globo.com |acessodata=27 de agosto de 2022}}</ref>, o [[Esporte Clube São Bernardo|EC São Bernardo]], o Cachorrão, que disputa a [[Campeonato Paulista de Futebol - Série A3|Série A3]] do Paulista, fundado em 1928 e o [[Palestra São Bernardo|Palestra]], licenciado, que são times de [[futebol]] da cidade.
+
+Outros esportes também são populares na cidade. O [[Associação Desportiva e Cultural Metodista (voleibol masculino)|BMG/São Bernardo]], clube de [[vôlei]], disputa a [[Superliga de Voleibol do Brasil|Superliga Masculina e Feminina]]. Ainda se destaca também em competições de basquete, handebol, entre outras com o clube da [[Universidade Metodista de São Paulo]] (UMESP) com as equipes de basquete campeãs regional e estadual e também com o time feminino e masculino de Handebol que é o melhor do país e o maior campeão da Liga Nacional. Entre as várias arenas esportivas se destacam o [[Estádio 1º de Maio (São Bernardo do Campo)|Estádio 1º de Maio]], o [[Estádio Municipal Giglio Portugal Pichinin|Estádio Baetão]] e o Ginásio Poliesportivo Adib Móysés Dib, com capacidade para 7.500 pessoas.{{carece de fontes|data=janeiro de 2010}}
+
+== Pessoas ilustres ==
+* [[:Categoria:Naturais de São Bernardo do Campo|Paulistas de São Bernardo do Campo]]
+
+== Religião ==
+[[Ficheiro:Igreja Matriz de Nossa Senhora da Boa Viagem, São Bernardo do Campo (SP).jpg|miniaturadaimagem|Basílica Menor de Nossa Senhora da Boa Viagem]]
+Segundo o censo brasileiro de 2022, a composição religiosa da cidade era de 51,16% católica, 26,19% evangélica ou protestante, 3,66% espírita, 1,8% umbandista ou candomblecista, 0,02% religião tradicional, 6,04% outra religião, 10,95% irreligiosa, 0,08% desconhecida e 0,09% não declarada.<ref>{{Citar web|url=https://g1.globo.com/economia/censo/noticia/2025/06/06/mapa-censo-ibge-religiao.ghtml|titulo=MAPA: Qual é a religião mais popular da sua cidade?|data=2025-06-06|acessodata=2025-06-07|website=G1|lingua=pt-br}}</ref><ref>{{Citar web|url=https://sidra.ibge.gov.br/tabela/2094|titulo=Tabela 2094: População residente por cor ou raça e religião|acessodata=2025-04-27|website=sidra.ibge.gov.br}}</ref>
+
+O [[Cristianismo]] se faz presente na cidade da seguinte forma:<ref>O termo "cristão" (em [[Língua grega|grego]] Χριστιανός, [[Transliteração|transl]] ''Christianós'') foi usado pela primeira vez para se referir aos discípulos de [[Jesus|Jesus Cristo]] na cidade de [[Antioquia]] ([https://www.bible.com/pt/bible/212/ACT.11.arc95 Atos cap. 11, vers. 26]), por volta de 44 d.C., significando "seguidores de Cristo". O primeiro registro do uso do termo "cristianismo" (em grego Χριστιανισμός, ''Christianismós'') foi feito por [[Inácio de Antioquia]], por volta do ano 100. ''Tyndale Bible Dictionary'', pp. 266, 828</ref>
+
+=== Igreja Católica ===
+* A igreja faz parte da [[Diocese de Santo André]].<ref>{{Citar web|url=https://www.catholic-hierarchy.org/country/r10br.html|titulo=Sul 1 Region of Brazil [Catholic-Hierarchy]|acessodata=2025-04-27|website=www.catholic-hierarchy.org}}</ref>
+O [[catolicismo]] na cidade é bem forte, sendo seu próprio nome em honra a [[São Bernardo de Claraval]], um santo católico da [[Ordem Cisterciense]]. São Bernardo conta com 86 capelas organizadas em 24 paróquias, [[Nossa Senhora Aparecida]] tem mais capelas em sua honra na cidade, totalizando 10 capelas (duas são paróquias), [[São Francisco de Assis]] tem 7 capelas, [[São José]] e [[Nossa Senhora de Fátima]] tem seis capelas cada um.{{carece de fontes|data=janeiro de 2010}}
+
+Se encontra também no bairro dos Finco, [[Riacho Grande]], o movimento de evangelização da [[Milícia da Imaculada (Brasil)|Milícia da Imaculada]], onde está a [[Rádio Imaculada Conceição]].
+
+=== Igrejas Evangélicas ===
+Entre as igrejas [[Protestantismo|protestantes históricas]], [[Pentecostalismo|pentecostais]] e [[Neopentecostalismo|neopentecostais]], encontram-se na cidade:<ref>{{Citar periódico |url=https://www.oxfordreference.com/display/10.1093/acref/9780192802903.001.0001/acref-9780192802903 |título=The Oxford Dictionary of the Christian Church |data=2009-01-01 |acessodata=2025-04-27 |publicado=Oxford University Press |editor-sobrenome=Cross |editor-nome=F. L. |lingua=en-US |doi= |isbn=978-0-19-280290-3 |editor-sobrenome2=Livingstone |editor-nome2=E. A.}}</ref>
+* [[Assembleias de Deus no Brasil|Assembleia de Deus Ministério do Belém]].<ref>{{Citar web|url=https://confradesp.com.br/campos-eclesiasticos/|titulo=Campos Eclesiásticos|data=2018-12-10|acessodata=2025-04-27|website=CONFRADESP|lingua=pt-BR}}</ref><ref>{{Citar web|url=https://ad.org.br/locations/|titulo=Arquivos: Locais|acessodata=2025-04-27|website=Assembleia de Deus Belém – Sede|lingua=pt-BR}}</ref>
+* [[Congregação Cristã no Brasil]].<ref>{{Citar web|url=https://congregacaocristanobrasil.org.br/localidade|titulo=Localidade - Congregação Cristã no Brasil|acessodata=2025-04-27|website=congregacaocristanobrasil.org.br}}</ref>
+* [[Igreja Presbiteriana Independente do Brasil]],<ref>{{Citar web|url=https://ipib.org.br/igrejas-do-estado-de-sao-paulo/|titulo=Igrejas do Estado de São Paulo – Igreja Presbiteriana Independente do Brasil|acessodata=2025-04-27|lingua=pt-BR}}</ref> a qual foi a primeira igreja evangélica a se estabelecer em 1951 na Rua Dr. Fláquer, 824 - hoje patrimônio tombado pela Prefeitura e onde funciona a Casa de Cultura.
+* Além de inúmeras igrejas batistas, Igreja Universal do Reino de Deus, Igreja Presbiteriana, Igreja Metodista, entre outras.
+
+=== Outras religiões ===
+Possui uma [[Mesquita]], tendo-se também Lojas de [[Maçonaria]] como a 9 de Maio no Baeta Neves, a [[Antiga e Mística Ordem Rosae Crucis]], AMORC de São Bernardo do Campo, e um Departamento da [[Sociedade Brasileira de Eubiose]]. Há também muitos Centros [[Espíritas]] e Terreiros de [[Umbanda]] no município.{{carece de fontes|data=janeiro de 2010}}
+
+== Ver também == 
+* [[Lista de municípios de São Paulo por data de criação]]
+* [[Lista de municípios de São Paulo por população (2022)]]
+* [[Lista de municípios de São Paulo por domicílios]]
+* [[Lista de municípios de São Paulo por área (2023)]]
+* [[Lista de municípios de São Paulo por CEP]]
+* [[Lista de municípios de São Paulo por código DDD|Lista de municípios de São Paulo por DDD]]
+
+{{Referências|col=2}}
+
+== Ligações externas ==
+{{Correlatos
+|commons         = 
+|commonscat      = São Bernardo do Campo
+|wikisource      =
+|wikiquote       = 
+|wikilivros      =
+|wikinoticias    = 
+|wikinoticiascat = 
+|wikcionario     =
+|wikispecies     =
+|wikiversidade   =
+|wikivoyage      = São Bernardo do Campo
+|meta            =
+}}
+* {{Link||2=http://www.saobernardo.sp.gov.br/ |3=Página da prefeitura}}
+* {{Link||2=http://www.camarasbc.sp.gov.br/ |3=Página da câmara}}
+* {{Link||2=http://www.saobernardo.sp.gov.br/SECRETARIAS/sp/geoportal/index.asp |3=Portal da "Divisão de Geopolíticas e Estatísticas" com informações do Município}}
+* {{Link||2=http://freehosting.unihostbrasil.com.br/evolucao-sao-bernardo-do-campo/ |3=Fotos, estatísticas e dados da evolução de São Bernardo do Campo}}
+* {{Link||2=http://WikiMapia.org/#lat=-23.71&lon=-46.54&z=13&l=0&m=a&v=2&search=S%C3%A3o%20Bernardo%20do%20Campo |3=São Bernardo do Campo no WikiMapia}}
+
+{{Bloco de navegação
+|Mercocidades
+|50 maiores cidades do Brasil
+|Região do Grande ABC
+|Subdivisões de São Paulo
+|Região Metropolitana de São Paulo
+}}
+{{Portal3|São Paulo}}
+{{controle de autoridade}}
+
+{{DEFAULTSORT:Sao Bernardo Campo}}
+[[Categoria:São Bernardo do Campo| ]]
+[[Categoria:Fundações no Brasil em 1553]]
+[[Categoria:Região do Grande ABC]]
+[[Categoria:Municípios históricos do Brasil]]

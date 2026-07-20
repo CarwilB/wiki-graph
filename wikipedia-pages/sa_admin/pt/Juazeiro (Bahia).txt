@@ -1,0 +1,496 @@
+{{Mais notas|data=dezembro de 2024}}
+{{Info/Município do Brasil
+<!-- GeoID=2918407 -->
+<!-- Cabeçalho -->
+| nome = Juazeiro
+| apelido = Terra das Carrancas"<br />"Oásis do Sertão
+| imagem_montagem = {{multiple image
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 300
+ |caption_align = center
+ | image1 = Vista_da_orla_de_Juazeiro.jpg
+ | caption1 = [[Panorama urbano]] da orla de Juazeiro 
+ | image2 = Catedral_juazeiro.jpg
+ | caption2 = Catedral Nossa Senhora das Grotas
+ | image3 = Orla_de_Juazeiro-BA_(14849586197).jpg
+ | caption3 = Orla do [[rio São Francisco]]
+ | image4 = Avenida Adolfo Viana Juazeiro.png
+ | caption4 = Avenida Adolfo Viana Juazeiro
+ | image5 = Juazeiro_da_Bahia.jpg
+ | caption5 = [[Ponte Presidente Dutra (rio São Francisco)|Ponte Presidente Dutra]]
+ | color  = white
+}}
+<!-- Dados gerais -->
+| bandeira = Bandeira de Juazeiro.svg
+| brasão = Brasão de Juazeiro.svg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Juazeiro
+| aniversário = 15 de julho<ref name=ibge_hist>{{citar web | url=http://www1.ibge.gov.br/cidadesat/painel/historico.php?codmun=291840&search=bahia%7cjuazeiro%7cnfograficos:-historico&lang=_ES | título = Bahia - Juazeiro - Infográficos: Histórico | publicado = [[Instituto Brasileiro de Geografia e Estatística|Instituto Brasileiro de Geografia e Estatística (IBGE)]] | acessodata=23 de maio de 2014}}</ref>
+| fundação = {{nowrap|{{dtlink|15|7|1878|idade}}}} <ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/juazeiro/historico|título=História & Fotos|publicado=IBGE|acessodata=12-07-2023}}</ref>
+| gentílico = [[wikt:juazeirense|juazeirense]]
+| lema = ''Amor labore omnia vincit''<br /><small>''"O amor e o trabalho tudo conquistam"''</small>
+| padroeiro = Nossa Senhora das Grotas
+| CEP = 48900-000
+| prefeito<!--enciclopédia, sem apelidos! --> = Andrei Gonçalves 
+| partido = [[MDB]]
+| mandato_início = 2025
+| fim_mandato = 2028<!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 21
+<!-- Localização -->| mapa = Bahia Municip Juazeiro.svg
+| latP = S
+| latG = 09
+| latM = 24
+| latS = 50
+| lonP = O
+| lonG = 40
+| lonM = 30
+| lonS = 10
+| estado = Bahia
+| mesorregião = [[Mesorregião do Vale São-Franciscano da Bahia|Vale São-Franciscano da Bahia]]
+| microrregião = [[Microrregião de Juazeiro|Juazeiro]]
+| região_metropolitana = [[Região Administrativa Integrada de Desenvolvimento do Polo Petrolina e Juazeiro|Polo Petrolina e Juazeiro]]
+| vizinhos = [[Campo Formoso]], [[Jaguarari]] (S), [[Curaçá]] (L) e [[Sobradinho (Bahia)|Sobradinho]] (O) em território baiano. [[Petrolina]] e [[Lagoa Grande (Pernambuco)|Lagoa Grande]] (N) em território pernambucano.
+| dist_capital = 502
+| dist_capital_ref = <!-- Características geográficas -->
+| área = 6721.237
+| área_pos = [[Lista de municípios do Brasil por área|BR: 232º]]
+| área_ref = IBGE/2022<ref name="IBGE_Área_2022">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/juazeiro.html|título=Cidades e Estados|publicado=IBGE|acessodata=17 de maio de 2023}}</ref>
+| área_urbana = {{fmtn|39.78}}
+| área_urbana_pos = [[Lista de municípios do Brasil por área urbana|BR: 157]]
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/juazeiro/panorama |título=Meio Ambiente |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=8 de fevereiro de 2023}}</ref>
+| população = 237821 <!-- MANTER A POPULAÇÃO DO CENSO 2022 -->
+| população_ref = <ref name="IBGE">{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/juazeiro/panorama|título=POPULAÇÃO|publicado=IBGE|acessodata=17 de dezembro de 2024}}</ref>
+| população_pos = [[Lista de municípios da Bahia por população|BA: 5°]]
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| população_est = 256122<!-- ATUALIZAR AS ESTIMATIVAS AQUI -->
+| população_est_em = 2025<ref name="IBGE_POP">{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html|título=Estimativas da população residente para os municípios e para as unidades da federação - IBGE|publicado=www.ibge.gov.br|acessodata=31 de agosto de 2025}}</ref>
+| altitude = 368
+| clima = [[Clima semiárido|Semiárido]]
+| sigla_clima = BSh
+<!-- Indicadores -->| idh = 0.677 <!--favor manter o formato-->
+| gini = {{Formatnum:0.56}}
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| capital_link = Salvador
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=7 de agosto de 2013}}</ref>
+| data_gini = [[PNUD]]/2010<ref name="PNUD">{{citar web |url=http://atlasbrasil.org.br/2013/pt/perfil/juazeiro_ba|titulo=Perfil do município de Juazeiro - BA |autor= Programa das Nações Unidas para o Desenvolvimento |publicado= Atlas do Desenvolvimento Humano no Brasil 2013 |data= 2010 |acessodata= 4 de março de 2014 }}</ref>
+| pib = {{fmtn|5181529.25|mil}}
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB">{{citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2021/base/base_de_dados_2010_2021_xlsx.zip|titulo=Produto Interno Bruto dos Municípios - 2010 à 2021|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=1º de janeiro de 2024}}</ref>
+| pib_per_capita = 23601.32
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.juazeiro.ba.gov.br/ juazeiro.ba.gov.br]
+| site_câmara = [http://www.juazeiro.ba.leg.br www.juazeiro.ba.leg.br]
+}}
+'''Juazeiro''' é um [[Município (Brasil)|município brasileiro]] no interior e norte do [[estados do Brasil|estado]] da [[Bahia]], localizado na [[Mesorregião do Vale São-Franciscano da Bahia]] e [[Microrregião de Juazeiro]]. Sua população em 2022 era de {{fmtn|237821}} habitantes, de acordo com o [[Censo demográfico do Brasil de 2022|Censo 2022]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), sendo o quinto município mais populoso da Bahia<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/juazeiro/panorama|titulo=População|acessodata=2024-12-18|website=cidades.ibge.gov.br}}</ref> e o [[Lista dos cinquenta municípios mais populosos do interior do Nordeste do Brasil|nono do interior do Nordeste]]. Situado no [[Sertão]] da [[Região Nordeste do Brasil]], na região submédia da [[Bacia hidrográfica do São Francisco]], em conjunto com o vizinho município pernambucano de [[Petrolina]] forma o maior aglomerado urbano do [[Semiárido brasileiro]] e do interior nordestino.
+
+A cidade, inserida na [[Região Administrativa Integrada de Desenvolvimento do Pólo Petrolina e Juazeiro]], destaca-se pela [[irrigação|agricultura irrigada]].
+
+É conhecida como a ''Terra das [[Carranca]]s'', figuras antropomorfas que adornam [[embarcação|embarcações]] típicas no [[rio São Francisco]]. Seu nome se origina da árvore do [[juazeiro]], endêmica do sertão nordestino.<ref>{{Citar web|ultimo=contato@juniorlisboa.com.br|primeiro=Junior Lisboa-|url=https://www.crcba.org.br/servicos/delegacias/delegacia-de-juazeiro/sobre-juazeiro/|titulo=Sobre Juazeiro – CRCBA|acessodata=2023-01-16|lingua=pt-BR}}</ref>
+
+== História ==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+O município de Juazeiro, no [[norte]] do estado da Bahia, implantado à margem direita do Velho Chico, situa-se no ponto exato onde ocorria o cruzamento de duas importantes e estratégicas [[estrada]]s [[interior]]es do Brasil.
+
+A primeira, fluvial, representada pelo [[Rio São Francisco]], integrando o norte ao sul. A segunda, um caminho das [[bandeiras]], aberto pelos paulistas, sob o comando de [[Domingos do Sertão]], pelos baianos sob o comando de [[Garcia d'Ávila II]], cujas terras se estendiam até onde é hoje a Praia do Forte,vizinha a Salvador, e pelos nativos sob o comando de [[Manuel Nunes Viana]].
+
+Somente no fim do [[século XVII]], à sombra protetora da [[árvore]], mãe do sertão, o juazeiro, começa a surgir o que hoje se constitui num dos mais importantes [[núcleo urbano|núcleos urbanos]] do [[Sertão Nordestino]].
+
+Foi criado em 1833, sendo que desde 1596 seu território já era percorrido pelo bandeirante [[Belquior Dias Moreira]]. Em 1706, chegava à região uma missão franciscana para [[catequização|catequizar]] os [[índio]]s da região. Ergueram um [[convento]] e [[capela]] com uma imagem da [[Maria (mãe de Jesus)|Virgem]] que, de acordo com a lenda local, fora encontrada em [[gruta]]s das imediações, por um indígena. Deu-se ao local o nome de ''Nossa Senhora das Grotas do Juazeiro'', que deu origem à atual sede do município.
+
+Juazeiro, sucessivamente, elevada à categoria de [[vila]], posteriormente, [[comarca]], e transforma-se pela Lei n.º 1.814 de [[15 de julho]] de [[1878]], em cidade.
+
+Era do porto de Juazeiro que partiam as embarcações conhecidas como ''vapor'' (existe uma relíquia deste, que funciona como restaurante no centro da cidade). O porto mais importante do São Francisco se comunicava com outros municípios ribeirinhos Baianos e diretamente com Minas Gerais através deste meio de transporte, e daí para a antiga Capital do País, o Rio de Janeiro.
+
+A via férrea funcionava a partir de Juazeiro rumo a Salvador desde o início do século passado.<ref>{{Citar web|url=https://www.juazeiro.ba.gov.br/historia/|titulo=História|acessodata=2023-01-16|website=Prefeitura de Juazeiro - BA|lingua=pt-br}}</ref>
+
+== Geografia ==
+[[Imagem:COHAB São Francisco, Petrolina - PE, Brazil.jpg|miniatura|[[Rio São Francisco]] entre Juazeiro e [[Petrolina]]-[[Pernambuco|PE]].|esquerda]]O [[relevo (geografia)|relevo]] pode ser caracterizado como pediplano [[sertanejo]], [[várzea]]s e [[terraço]]s aluviais. Enquanto que o [[solo]]s variam entre [[eutrófico]]s, vertissolos, litólicos eutróficos, [[cambissolo]], aluviais, pozólico vermelho - amarelo eutrófico e regossolo distrófico. Nessas terras, encontra-se alguns [[mineral|minerais]], como o [[amianto]], [[cobre]], [[mármore]], [[calcário]], [[jaspe]], [[salitre]], [[calcita]] e [[manganês]]. A [[geologia]] classifica os solos juazeirenses como [[rocha]]s básicas [[quartzo]] [[biotita]], biotita [[granito]]s, [[depósito]]s aluviares e coluionares. Ou ainda, ultra básicas anfibiólitos, calcários, depósitos fluviais.[[Imagem:Petrolina - PE, águas do Rio São Francisco, Brazil.jpg|miniatura|Juazeiro ao fundo, visto de Petrolina.]]A [[vegetação]] que cobre o município é a [[caatinga]] arbórea aberta com e sem [[palmeira]]s e caatinga [[arbóreo|arbórea]] densa sem palmeiras.
+
+Juazeiro está incluso na [[bacia hidrográfica do São Francisco]], e território do município encontra-se os rios São Francisco, [[rio Curaçá|Curaçá]], [[rio Malhada da Areia|Malhada da Areia]], Salitre, [[rio Tourão|Tourão]], [[rio Mandacaru|Mandacaru]] e [[rio Maniçoba|Maniçoba]].{{carece de fontes}}
+
+A cidade está localizada à margem direita do Rio São Francisco, no extremo norte da Bahia, comunicando-se com a cidade de [[Petrolina]], pela [[Ponte Presidente Dutra (rio São Francisco)|ponte Presidente Dutra]].
+
+=== Acesso ===
+O acesso a Juazeiro pode ser feito por [[transporte terrestre|via terrestre]], utilizando as [[rodovia]]s [[BR-235]] e [[BR-407]], usando a [[via férrea]] de Salvador a Juazeiro ou por [[ônibus]], que são diários e partem da capital baiana e de outras cidades da Bahia e de outros estados, como [[Fortaleza]], [[São Paulo (cidade)|São Paulo]] e [[Brasília]]. Partindo de Salvador a Juazeiro passaremos por Feira de Santana, Tanquinho, Riachão do Jacuípe, Nova Fátima, Gavião, Capim Grosso e Jacobina. As empresas de ônibus são: [[Expresso Guanabara]], Viação Itapemirim, Viação Nossa Senhora da Penha, Falcão Real Transportes, etc. Também é possível por [[transporte aéreo|via aérea]] através do [[aeroporto]] de [[aeroporto de Petrolina|Petrolina]], que está a 15&nbsp;km da sede, em [[Pernambuco]], ou ainda por um dos [[campo de pouso|campos de pouso]] existentes na região, como em [[Sobradinho (Bahia)|Sobradinho]]. E ainda por [[transporte fluvial|via fluvial]] utilizando a [[hidrovia do São Francisco]], navegando pelo [[rio São Francisco]], partindo de [[Pirapora]], [[Minas Gerais]], e pode-se destacar o [[Porto de Juazeiro|porto fluvial da cidade]] que se encontra nas proximidades do perímetro urbano.<ref>{{Citar web|url=https://www.web4business.com.br//sites/faco-site-cacador-em-juazeiro/|titulo=faço site caçador em Juazeiro|acessodata=2023-01-16|website=Web4business|lingua=pt-br}}</ref>
+
+=== Acidentes geográficos ===
+A gruta do Convento está localizada no interior do município de [[Campo Formoso]], a 100&nbsp;km de Juazeiro, é uma [[aventura]] imperdível para quem gosta de passeios ecológicos. [[Cortina]]s e [[torre]]s são formadas pelas [[estalactite]]s e [[estalagmite]]s que dão forma a [[gruta]] de 40 m de largura e 30 m de altura, composta ainda por dois [[lago]]s tornando o cenário mais belo. Para conhecer a gruta é necessário um guia nativo.
+
+A [[cachoeira do Salitre]] está localizada no [[Vale do Salitre]], na ''Fazenda Félix'', a 39&nbsp;km de Juazeiro, a [[Queda de água|cachoeira]] com salto de pouco mais de 2 m de altura é excelente para [[banho]] e muito apreciada pelas crianças da região, que se divertem nas águas do [[rio Salitre]]. O acesso é feito pela [[BA-210]], sentido Sobradinho. Também formada pelo rio Salitre, a [[cachoeira da Gameleira]] fica a 68&nbsp;km de Juazeiro, escondida entre a [[vegetação]] fechada da [[caatinga]]. Num cenário paradisíaco, a [[queda d'água]] escorre entre um [[cânion]], onde predomina um enorme [[gameleira]], cujas [[raíz]]es se espalham formando sombra em parte da cachoeira. A profundidade do lago permite saltos do alto da cachoeira de aproximadamente 5 m.<ref>{{Citar web|ultimo=Siqueira|primeiro=Cristiane|url=https://www.turismoecia.net/o-que-fazer-em-juazeiro-10-melhores-pontos-turisticos/|titulo=O que fazer em Juazeiro: 10 melhores pontos turísticos|data=2020-10-02|acessodata=2023-01-16|website=Turismo & Cia|lingua=pt-BR}}</ref>
+
+[[Imagem:Ilha do Rodeadouro, Rio São Francisco.jpg|miniatura|Ilha do Rodeadouro]]
+
+A [[ilha Culpe o Vento]] é deserta e ideal para prática de camping selvagem. O acesso é feito pela rodovia [[BA-210]], que liga Juazeiro a [[Curaçá]], aproximadamente 15&nbsp;km até o local da travessia que é feita por barcos localizados às margens do rio.<ref>{{Citar web|url=https://www.guiadoturismobrasil.com/gastronomia/3/pizzaria/9/BA/juazeiro/277|titulo=Gastronomia - Juazeiro - BA|acessodata=2023-01-16|website=Guia do Turismo Brasil|lingua=pt-br}}</ref>
+
+=== Clima ===
+Juazeiro está localizado numa área de [[clima semiárido|semiárido]], com alto risco de [[seca]] e que o período [[chuva|chuvoso]] ocorre entre os meses de novembro e março, ou seja, no [[verão]]. Dados do Departamento de Ciências Atmosféricas, da [[Universidade Federal de Campina Grande]], mostram que Juazeiro apresenta um clima com média pluviométrica anual de 425,2&nbsp;mm<ref name="DCA_Chuva">{{citar web|URL=http://www.dca.ufcg.edu.br/clima/chuvaba.htm|título=PRECIPITACAO MENSAL|data=1911–1990|acessodata=29-12-2021|publicado=Departamento de Ciências Atmosféricas}}</ref> e temperatura média anual de 26,0&nbsp;°C.<ref name="DCA_TempMédia">{{citar web|URL=http://www.dca.ufcg.edu.br/clima/tmedba.htm|título=TEMPERATURA COMPENSADA MENSAL E ANUAL DA BAHIA|acessodata=29-12-2021|publicado=Departamento de Ciências Atmosféricas}}</ref>
+
+{{Tabela climática
+|localidade = Juazeiro
+|larguraporcentagem = 72
+|lang = br
+
+|Jan_Max_°C = 35.3
+|Fev_Max_°C = 35.4
+|Mar_Max_°C = 34.9
+|Abr_Max_°C = 33.4
+|Mai_Max_°C = 30.8
+|Jun_Max_°C = 29.5
+|Jul_Max_°C = 29.1
+|Ago_Max_°C = 30.4
+|Set_Max_°C = 33.2
+|Out_Max_°C = 35.6
+|Nov_Max_°C = 36.3
+|Dez_Max_°C = 35.2
+|Max_Ano_°C = 33.3
+
+|Jan_Med_°C = 27.6
+|Fev_Med_°C = 27.7
+|Mar_Med_°C = 27.4
+|Abr_Med_°C = 26.5
+|Mai_Med_°C = 24.9
+|Jun_Med_°C = 23.6
+|Jul_Med_°C = 22.8
+|Ago_Med_°C = 23.4
+|Set_Med_°C = 25.4
+|Out_Med_°C = 27.4
+|Nov_Med_°C = 28.2
+|Dez_Med_°C = 27.4
+|Med_Ano_°C = 26.0
+
+|Jan_Min_°C = 20.8
+|Fev_Min_°C = 21.2
+|Mar_Min_°C = 21.1
+|Abr_Min_°C = 20.7
+|Mai_Min_°C = 19.7
+|Jun_Min_°C = 18.2
+|Jul_Min_°C = 17.2
+|Ago_Min_°C = 17.4
+|Set_Min_°C = 18.9
+|Out_Min_°C = 20.4
+|Nov_Min_°C = 21.0
+|Dez_Min_°C = 20.8
+|Min_Ano_°C = 19.8
+
+|Jan_Precip_mm = 69.4
+|Fev_Precip_mm = 71.1
+|Mar_Precip_mm = 96.2
+|Abr_Precip_mm = 40.9
+|Mai_Precip_mm = 7.9
+|Jun_Precip_mm = 2.6
+|Jul_Precip_mm = 3.2
+|Ago_Precip_mm = 1.9
+|Set_Precip_mm = 4.0
+|Out_Precip_mm = 9.9
+|Nov_Precip_mm = 46.6
+|Dez_Precip_mm = 60.6
+|Ano_Precip_mm = 425.2
+
+|fonte = Departamento de Ciências Atmosféricas.<ref name="DCA_TempMédia"/><ref name="DCA_TempMínima">{{citar web|URL=http://www.dca.ufcg.edu.br/clima/tminba.htm|título=TEMPERATURA MÍNIMA MENSAL E ANUAL DA BAHIA|publicado=Departamento de Ciências Atmosféricas|acessodata=29-12-2021 }}</ref><ref name="DCA_Chuva"/><ref name="DCA_TempMáxima">{{citar web|URL=http://www.dca.ufcg.edu.br/clima/tmaxba.htm|título=TEMPERATURA MAXIMA MENSAL E ANUAL DA BAHIA|data=1911–1980|publicado=Departamento de Ciências Atmosféricas|acessodata=29-12-2021 }}</ref>
+
+}}
+== Demografia ==
+{{Crescimento populacional do Censo do Brasil
+| 1872 =7683
+| 1890 =10693
+| 1900 =13797
+| 1920 =24255
+| 1940 =25523
+| 1950 =34416
+| 1960 =40532
+| 1970 = 61648
+| 1980 = 118175
+| 1991 = 128767
+| 2000 = 174567
+| 2010 = 197965
+| estimado = 219544
+| ano_est  = 2021
+| ref_est  =<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/juazeiro/panorama|título=POPULAÇÃO|publicado=IBGE|acessodata=12-07-2023}}</ref>
+| rodape   =Fonte: [[Instituto Brasileiro de Geografia e Estatística|Instituto Brasileiro de<br /> Geografia e Estatística]] (IBGE)<ref>{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/protabl.asp?c=200&i=P&nome=on&qtu8=137&qtu14=3&notarodape=on&tab=200&opn8=0&opn14=0&unit=0&pov=3&poc2=1&opc1=1&OpcTipoNivt=1&opn1=0&nivt=0&poc1=1&sec58=0&orp=6&qtu3=29&qtu13=47&opv=2&opc2=1&sec1=0&pop=3&opn2=0&opn15=0&orv=2&orc2=3&opc58=1&qtu2=5&qtu15=3&sev=93&sec2=0&opp=2&opn3=0&qtu6=5566&opn13=0&orc1=4&poc58=1&qtu1=1&opn9=0&cabec=on&orc58=5&opn7=0&decm=99&ascendente=on&sep=36960&orn=1&qtu7=36&pon=1&qtu9=558&opn6=3&digt6=Juazeiro&OpcCara=44&proc=1 |arquivodata=25 de setembro de 2014 |título=Tabela 200 - População residente por sexo, situação e grupos de idade - Amostra - Características Gerais da População |autor=Sistema IBGE de Recuperação Automática (SIDRA) |data=2010 |acessodata=25 de setembro de 2014}}</ref>
+}}
+
+=== Pirâmide etária ===
+Dados:<ref>{{Citar web|url=http://cidades.ibge.gov.br/painel/populacao.php?lang=&codmun=291840&search=bahia%7Cjuazeiro%7Cinfogr%25E1ficos:-evolu%25E7%25E3o-populacional-e-pir%25E2mide-et%25E1ria|titulo=IBGE &#124; Cidades &#124; Infográficos &#124; Bahia &#124; Juazeiro &#124; População|acessodata=2016-08-01|obra=cidades.ibge.gov.br}}</ref>
+{| class="wikitable"
+!Idade
+! colspan="2" |Juazeiro
+! colspan="2" |Bahia
+! colspan="2" |Brasil
+|-
+!
+!Homens
+!Mulheres
+!Homens
+!Mulheres
+!Homens
+!Mulheres
+|-
+!0 a 4 anos
+|8.856
+|8.477
+|538.436
+|521.448
+|7.016.614
+|6.778.795
+|-
+!5 a 9 anos
+|9.313
+|9.159
+|606.386
+|584.262
+|7.623.749
+|7.344.867
+|-
+!10 a 14 anos
+|9.936
+|9.617
+|681.596
+|657.965
+|8.724.960
+|8.440.940
+|-
+!15 a 19 anos
+|9.642
+|9.603
+|668.390
+|658.891
+|8.558.497
+|8.431.641
+|-
+!20 a 24 anos
+|9.675
+|9.755
+|647.103
+|657.259
+|8.629.807
+|8.614.581
+|-
+!25 a 29 anos
+|8.803
+|9.505
+|642.500
+|666.361
+|8.460.631
+|8.643.096
+|-
+!30 a 34 anos
+|8.442
+|8.782
+|572.894
+|597.929
+|7.717.365
+|8.026.554
+|-
+!35 a 39 anos
+|7.247
+|7.594
+|478.068
+|504.281
+|6.766.450
+|7.121.722
+|-
+!40 a 44 anos
+|6.276
+|6.724
+|439.416
+|464.198
+|6.320.374
+|6.688.585
+|-
+!45 a 49 anos
+|5.187
+|5.416
+|378.264
+|402.691
+|5.691.791
+|6.141.128
+|-
+!50 a 54 anos
+|3.951
+|4.192
+|318.097
+|345.639
+|4.834.828
+|5.305.231
+|-
+!55 a 59 anos
+|2.846
+|3.251
+|252.207
+|281.419
+|3.902.183
+|4.373.673
+|-
+!60 a 64 anos
+|2.329
+|2.654
+|206.217
+|230.511
+|3.040.897
+|3.467.956
+|-
+!65 a 69 anos
+|1.788
+|2.062
+|157.729
+|182.523
+|2.223.953
+|2.616.639
+|-
+!70 a 74 anos
+|1.223
+|1.596
+|118.548
+|144.445
+|1.667.289
+|2.074.165
+|-
+!75 a 79 anos
+|718
+|1.083
+|77.380
+|101.452
+|1.090.455
+|1.472.860
+|-
+!80 a 84 anos
+|443
+|717
+|51.141
+|69.908
+|668.589
+|998.311
+|-
+!85 a 89 anos
+|252
+|406
+|26.657
+|38.095
+|310.739
+|508.702
+|-
+!90 a 94 anos
+|118
+|194
+|11.954
+|19.224
+|114.961
+|211.589
+|-
+!95 a 99 anos
+|30
+|79
+|4.147
+|7.697
+|31.528
+|66.804
+|-
+!Mais de 100 anos
+|10
+|14
+|1.136
+|2.442
+|7.245
+|16.987
+|}
+
+== Governo ==
+=== Geminações ===
+
+Juazeiro tem [[Dois|Duas]] [[Geminação de cidades|Cidades Irmãs]], sendo uma no [[Sertão nordestino|Sertão de]] [[Pernambuco]], e uma no [[México]]. <ref>{{citar web|ultimo=Cidade|primeiro=Brasil|url=https://www.cidade-brasil.com.br/municipio-juazeiro.html|titulo=Cidade Brasil|acessodata=2026-03-13|website=Cidade Brasil|urlmorta=não}}</ref><ref>{{citar web|ultimo=DB|primeiro=City|url=https://pt.db-city.com/Brasil--Bahia--Juazeiro|titulo=DB City|acessodata=2026-03-13|website=DB City|urlmorta=não}}</ref> 
+
+• {{ÍconeBandeira|Brasil}}{{ÍconeBandeira|Pernambuco}}{{BR-PE-Petrolina}}, [[Pernambuco]].
+
+• {{ÍconeBandeira|Mexico}}{{ÍconeBandeira|Chihuahua}} [[Ciudad Juárez]], No Estado de [[Chihuahua]], [[México]].<ref>{{citar web|ultimo=Cidade|primeiro=Brasil|url=https://www.cidade-brasil.com.br/municipio-juazeiro.html|titulo=Cidade Brasil|acessodata=2026-03-13|urlmorta=não}}</ref>
+
+== Economia ==
+A cidade de Juazeiro é a mais [[industrialização|industrializada]] do [[vale do São Francisco]], pois conta em seu distrito industrial (DISF - [[Distrito Industrial do São Francisco]]) com diversas [[indústria]]s e outros tipos de empresas. Está localizado ao sul da cidade de Juazeiro, cortado pela BR-407 e BR-210. Tendo uma área total de 3.626.012,22 m², com uma distância de 8&nbsp;km do porto fluvial de Juazeiro e 24&nbsp;km do [[Aeroporto de Petrolina|Aeroporto Internacional de Petrolina]].
+
+O Juá Garden Shopping, administrado pela Tenco Shopping Centers, está estrategicamente localizado as margens da Rod. Lomanto Júnior, km 06, uma das principais vias de acesso ao Vale do São Francisco. A vizinha [[Petrolina]] está só a 9&nbsp;km de distância, sendo ligadas pela [[Ponte Presidente Dutra (rio São Francisco)|Ponte Presidente Dutra]] sobre o [[Rio São Francisco]] pela BR 407.Com área de influência com&nbsp;400 mil consumidores, movimenta 250 milhões em vendas anualmente e gera  cerca de três mil empregos, diretos e indiretos.São 40 mil m² de área construída, que consumiram 14,5 mil m³ de concreto, 175 mil blocos de concreto e duas mil toneladas de aço. O shopping tem 22 mil m² de área destinada às lojas, das quais cinco âncoras, cinco mega lojas, uma área de lazer completa, quatro salas de cinema com tecnologia 3D e seis lojas de serviço. A praça de alimentação também merece destaque, são dois restaurantes e 18 opções de fast-food. O estacionamento foi projetado para comportar o grande volume de veículos, são mais de 1.100 vagas. Vale ressaltar que no interior do mall tem rede wi-fi gratuita, permitindo assim acessar a internet enquanto estiver no shopping.<ref>{{citar web|url=https://sead.ufba.br/juazeiro|titulo=Juazeiro|acessodata=16 de janeiro de 2023}}</ref>
+
+=== Produto Interno Bruto (valor adicionado) ===
+{| class="wikitable"
+!Variável
+!Juazeiro
+!Bahia
+!Brasil
+|-
+!Agropecuária
+|115.573
+|6.725.960
+|105.163.000
+|-
+!Indústria
+|286.744
+|25.160.405
+|539.315.998
+|-
+!Serviços
+|1.368.830
+|46.352.387
+|1.197.774.001
+|}
+[[Imagem:Juazeiro - State of Bahia, Brazil.jpg|miniatura|[[Ponte Presidente Dutra (Rio São Francisco)|Ponte Presidente Dutra]] Juazeiro/Petrolina.]]
+
+=== RIDE Juazeiro/Bahia e Petrolina/Pernambuco ===
+O [[Região Administrativa Integrada de Desenvolvimento do Polo Petrolina e Juazeiro|Polo Petrolina-Juazeiro]] foi instituído pela lei complementar nº 113, de 19 de setembro de 2001, foi regulamentada pelo decreto nº 4366, de 9 de setembro de 2002. A região detém uma área de aproximadamente 35&nbsp;000&nbsp;km² englobando uma população de cerca de 700&nbsp;000 habitantes. A RIDE abrange quatros municípios pernambucanos: Petrolina, [[Lagoa Grande (Pernambuco)|Lagoa Grande]], [[Santa Maria da Boa Vista]] e [[Orocó]]; e quatro municípios baianos: Juazeiro, [[Casa Nova]], [[Curaçá]] e [[Sobradinho (Bahia)|Sobradinho]]. O acesso entre as duas maiores cidades da região é feita pela [[Ponte Presidente Dutra (Rio São Francisco)|Ponte Presidente Dutra]].<sup>[[Petrolina|31]]</sup>
+
+=== Agricultura ===
+[[Imagem:Vale do São Francisco.jpg|miniatura|O cultivo da [[Manga (fruta)|manga]] é destaque no município.]]
+A região compreendida pelas cidades de Juazeiro e Petrolina tornou-se o maior centro produtor de frutas tropicais do país, tendo destaque para os cultivos de [[Manga (fruta)|manga]], [[uva]], [[melancia]], [[melão]], [[coco]], [[banana]], dentre outros; este desempenho é responsável pela crescente [[exportação]] de [[fruta]]s além da produção de vegetais a região é conhecida nacional e internacionalmente pela produção e qualidade dos [[vinho]]s, que tiveram grande crescimento com a implantação de mecanismos de [[irrigação]], tornando-se a única região do país a colher duas [[safra]]s de uvas por ano, e a maior exportadora e produtora de frutas do Brasil, mesmo se localizando no centro do [[polígono das secas]].
+
+Vale ressaltar que em Juazeiro se encontra um dos maiores "CEASAS" (central de abastecimento) do Brasil, sendo o maior do interior do [[norte brasileiro|norte]]-[[nordeste do Brasil]], sendo maior até que muitos Ceasas de várias capitais e responsável pela produção agrícola que abastece várias regiões do país.<ref>{{citar web|url=https://www.al.ba.gov.br/midia-center/noticias/37349|titulo=Aniversário de Juazeiro|acessodata=16 de janeiro de 2023}}</ref>
+
+=== Turismo ===
+[[Imagem:Santo Antonio, Juazeiro - BA, Brazil.jpg|miniatura|[[Porto de Juazeiro]].]]
+O [[turismo]] vem recebendo [[investimento]]s destinados ao desenvolvimento turístico da Zona turística dos Lagos do São Francisco, uma das [[zona]]s da Bahia com potencial turístico na qual está inserido. A [[estátua]] Nego D'água está localizada dentro do rio São Francisco, na margem juazeirense. É uma [[homenagem]] juazeirense às [[lenda]]s e [[folclore]]s do rio e dos ribeirinhos.<ref>{{Citar web|ultimo=www.beeweb.com.br|primeiro=BeeWeb Agência Digital-|url=https://abihbahia.org.br/localidade/juazeiro|titulo=Juazeiro - Vale do São Francisco {{!}} ABIH - Associação Brasileira da Indústria de Hotéis - Bahia|acessodata=2023-01-16|website=Associação Brasileira da Indústria de Hotéis da Bahia - ABIH - BAHIA - BRASIL|lingua=pt-br}}</ref>
+
+== Infraestrutura ==
+
+=== Saúde ===
+[[Imagem:Hospital Regional de Juazeiro vai beneficiar 2 milhões de pessoas (3726554623).jpg|miniatura|Hospital Regional de Juazeiro.]]
+Em 2009, o município possuía 87 estabelecimentos de saúde, entre eles hospitais, [[Departamento de emergência|pronto-socorros]], [[Posto de saúde|postos de saúde]] e [[Odontologia|serviços odontológicos]], sendo 36 estabelecimentos privados e 51 estabelecimentos públicos.<ref name="Saúde">{{citar web|url=http://cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=291840&idtema=5&search=bahia%7cjuazeiro%7cservicos-de-saude-2009|arquivodata=15 de fevereiro de 2014 |titulo=Serviços de Saúde 2009 |autor=IBGE |data=15 de fevereiro de 2014 |acessodata=15 de fevereiro de 2014}}</ref>
+
+==== Morbidade hospitalar ====
+Dados:<ref>{{Citar web|url=http://cidades.ibge.gov.br/painel/saude.php?lang=&codmun=291840&search=bahia%7Cjuazeiro%7Cinfogr%25E1ficos:-estabelecimentos-de-sa%25FAde-e-morbidade-hospitalar|titulo=IBGE &#124; Cidades &#124; Infográficos &#124; Bahia &#124; Juazeiro &#124; Estabelecimentos de saúde e morbidade hospitalar|acessodata=2016-08-01|obra=cidades.ibge.gov.br}}</ref>
+
+{| class="wikitable"
+!Variável
+!Juazeiro
+!Bahia
+!Brasil
+|-
+!Homens
+|331
+|14.506
+|242.238
+|-
+!Mulheres
+|251
+|12.325
+|205.787
+|}
+
+== Cultura ==
+Terra natal de diversos artistas e com uma história que se confunde com a da ocupação do rio São Francisco, Juazeiro abriga o ''[[Museu Regional do São Francisco]]'', instituição cultural que possui um acervo que retrata a história da região, administrado pela ''Fundação Museu do São Francisco'' e sediado no casarão que pertenceu ao coronel Miguel Siqueira, latifundiário que foi liderança política na primeira metade do século XX.<ref>{{Citar web|url=https://www.guiadasartes.com.br/bahia/juazeiro/museus/museu-regional-do-sao-francisco|titulo=Museu Regional do São Francisco|acessodata=2023-01-25|publicado=Guia das Artes}}</ref>
+
+{{Referências}}
+
+== Ligações externas ==
+* {{Link|pt|2=http://www.juazeiro.ba.gov.br|3=Página da prefeitura}}
+* {{Link|pt|2=http://www.juazeiro.ba.leg.br|3=Página da câmara}}
+* {{Link|pt|2=http://www.cidades.ibge.gov.br/brasil/ba/juazeiro|3=Dados do IBGE de Juazairo}}
+
+{{Bloco de navegação
+|Região Administrativa Integrada de Desenvolvimento do Pólo Petrolina e Juazeiro
+|Subdivisões da Bahia
+|Cidades históricas do Brasil
+}}
+{{Municípios da Bahia}}
+{{Portal3|Bahia}}
+
+{{DEFAULTSORT:Juazeiro}}
+[[Categoria:Juazeiro (Bahia)| ]]
+[[Categoria:Fundações na Bahia na década de 1870]]

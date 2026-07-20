@@ -1,0 +1,99 @@
+{{Use dmy dates|date=October 2022}}
+{{More citations needed|date=January 2007}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = El Ranco Province
+| official_name           = 
+| native_name             = Provincia del Ranco
+| native_name_lang        = es
+| settlement_type         = [[Provinces of Chile|Province]]
+| image_skyline           =
+| image_alt               =
+| image_caption           =
+| nickname                =
+| motto                   =
+| image_seal              = Logo de la DPP del Ranco.svg
+| image_map               = Provincia del Ranco.svg
+| mapsize                 = 175px
+| map_alt                 = Location in the Los Ríos Region
+| map_caption             = Location in the Los Ríos Region
+| pushpin_map             = Chile 
+| pushpin_map_alt         = Location in Chile
+| pushpin_mapsize         = 175<!--omit "px"-->
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|40|20|S|72|30|W|type:adm2nd_region:CL-LR|display=inline,title}}
+| coordinates_footnotes   =
+| subdivision_type        = Country
+| subdivision_name        = [[Chile]]
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = [[Los Ríos Region|Los Ríos]]
+| established_title       = 
+| established_date        =
+| seat_type               = Capital
+| seat                    = [[La Unión, Chile|La Unión]]
+| parts_type              = [[Communes of Chile|Communes]]
+| parts_style             = coll 
+| parts                   = List of 4:
+| p1                      = [[Futrono]]
+| p2                      = [[La Unión, Chile|La Unión]]
+| p3                      = [[Río Bueno, Chile|Río Bueno]]
+| p4                      = [[Lago Ranco, Chile|Lago Ranco]]
+| government_footnotes    = 
+| government_type         = [[Province|Provincial]]
+| leader_party            = [[Political Evolution|EVOP]]
+| leader_title            = Governor
+| leader_name             = [[Alsono Pérez de Arce Carrasco]] 
+| unit_pref               = Metric
+| area_footnotes          =<ref name="INE">{{cite web|url=http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/dpa_completa.pdf |title=Territorial division of Chile |access-date=18 March 2011 |publisher=[[National Statistics Institute (Chile)|National Statistics Institute]] |year=2007 |language=es |url-status=dead |archive-url=https://web.archive.org/web/20101114052159/http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/DPA_COMPLETA.pdf |archive-date=14 November 2010 }}</ref>
+| area_total_km2          = 8232.3
+| elevation_footnotes     = 
+| elevation_m             =
+| population_footnotes    =<ref name="INE"/>
+| population_total        = 91656
+| population_as_of        = 2012 Census
+| population_density_km2  = auto
+| population_demonym      = 
+| population_blank1_title = Urban
+| population_blank1       = 51,273
+| population_blank2_title = Rural
+| population_blank2       = 45,880
+| demographics_type1      = Sex
+| demographics1_footnotes =<ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1          = 49,485
+| demographics1_title2    = Women
+| demographics1_info2       = 47,668
+| timezone = [[Time in Chile|CLT]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-time.htm |access-date=28 July 2010 |title=Chile Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archive-date=11 September 2007 }}</ref>
+| utc_offset = -4
+| timezone_DST = [[Time in Chile|CLST]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-summer-time.htm |access-date=28 July 2010 |title=Chile Summer Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archive-date=11 September 2007 }}</ref>
+| utc_offset_DST = -3
+| postal_code_type        =
+| postal_code             =
+| area_code_type          =
+| area_code               = 56 + 63
+| website                 = [http://www.gobernacionranco.gov.cl/ Government of El Ranco]
+| footnotes               =
+}}
+'''El Ranco Province'''<ref>[http://www.leychile.cl/Navegar?idNorma=278859 law 20.294]</ref> ({{langx|es|link=no|Provincia del Ranco}}) is one of two [[Provinces of Chile|provinces]] of the southern [[Chile]]an [[Regions of Chile|region]] of [[Los Ríos Region|Los Ríos]]. It is named after [[Ranco Lake]] shared by the [[Communes of Chile|communes]] (''comunas'') of [[Futrono]] and [[Lago Ranco, Chile|Lago Ranco]]. The lake is drained by the [[Bueno River]], on which basin lies most of the province. [[La Unión, Chile|La Unión]] is the provincial capital.
+
+==Administration==
+As a second-level [[administrative divisions of Chile|administrative division]], the province comprises four communes, each with its own governing municipality. [[Alsono Pérez de Arce Carrasco]] is the provincial governor.
+
+===Communes===
+*[[Futrono]]
+*[[Lago Ranco, Chile|Lago Ranco]]
+*[[La Unión, Chile|La Unión]]
+*[[Río Bueno, Chile|Río Bueno]]
+
+==Geography and demography==
+According to the 2002 census by the [[National Statistics Institute (Chile)|National Statistics Institute]] (''INE''), the province spans an area of {{convert|8232.3|sqkm|0|abbr=on}}<ref name="INE"/> and had a population of 97,153 inhabitants (49,485 men and 47,668 women), giving it a population density of {{convert|11.8|PD/sqkm|0|abbr=on}}.  Of these, 51,273 (52.8%) lived in urban areas and 45,880 (47.2%) in rural areas. Between the 1992 and 2002 censuses, the population grew by 1% (924 persons).<ref name= "INE"/>
+
+==References==
+{{reflist}}
+
+{{Provinces of Chile}}
+{{Communes in Los Ríos Region}}
+
+[[Category:Provinces of Chile]]
+[[Category:Provinces of Los Ríos Region]]
+[[Category:2007 in Chilean law]]

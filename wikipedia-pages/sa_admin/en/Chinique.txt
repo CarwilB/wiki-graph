@@ -1,0 +1,106 @@
+{{Infobox settlement
+|dot_x =  |dot_y =
+|pushpin_map            = Guatemala<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location in Guatemala
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[File:Flag of Guatemala.svg|25px]] [[Guatemala]]
+|subdivision_type1      = [[Departments of Guatemala|Department]] 
+|subdivision_name1      = [[Image:Flag of Quiché Department.svg|25px]] [[Quiché Department|El Quiché]]
+|subdivision_type2      = [[Municipalities of Guatemala|Municipality]]
+|subdivision_name2      = Chinique de las Flores
+|government_type        = [[Municipal]]
+|leader_title           = Mayor 
+|unit_pref                = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_total_km2           = 41 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|population_as_of               = Census 2002 
+|population_total               = 8009
+|population_urban               = 2290
+|population_blank1_title        =Ethnicities
+|population_blank1              = [[K'iche' people|K'iche']], [[Ladino people|Ladino]]
+|population_blank2_title        =Religions
+|population_blank2              =[[Roman Catholicism]], [[Evangelicalism]], [[Maya religion|Maya]]
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+|elevation_max_m        = 2310
+|elevation_min_m        = 1196
+|blank_name             = [[Köppen climate classification|Climate]]
+|blank_info             = [[Oceanic climate#Subtropical highland variety (Cfb, Cwb)|Cwb]]
+|website                = http://www.inforpressca.com/chinique/}} 
+
+'''Chinique''', from the [[Kʼicheʼ language]] «chinic´aj taka´aj»,<ref>[https://web.archive.org/web/20080824044850/http://www.ine.gob.gt/index.php?option=com_content&view=article&id=75%3Acenso2002&catid=42%3Ademografiaypoblacion&Itemid=69 XI Censo Nacional de Poblacion y VI de Habitación (Censo 2002) Instituto Nacional de Estadística]</ref> is a [[Municipalities of Guatemala|municipality]] in the [[Guatemala]]n [[Departments of Guatemala|department]] of [[Quiché Department|El Quiché]].<ref>{{cite book |last=Tetzagüic |first=Manuel de Jesús Salazar |year=2003 |title=Culturas e interculturalidad de Guatemala |publisher=Universidad Rafael Landírvar |page=6}}</ref> In 1892 [[Alfred Maudslay]] and his wife Anne reported that the place was a small group of houses made from adobe with thatched roofs.<ref>''A Glimpse at Guatemala'' by Maudslay and Maudslay Published in 1899, page 75</ref> Its population as of 2023 is 14,052.<ref>{{Cite web |title=Chinique (Municipality, Guatemala) - Population Statistics, Charts, Map and Location |url=https://www.citypopulation.de/en/guatemala/admin/quich%C3%A9/1403__chinique/ |access-date=2023-11-02 |website=www.citypopulation.de}}</ref>
+
+==References==
+{{reflist}}
+
+{{Weather box
+|location = Chinique
+|metric first = yes
+|single line = yes
+|Jan mean C = 14.0
+|Feb mean C = 14.6
+|Mar mean C = 16.0
+|Apr mean C = 17.0
+|May mean C = 17.6
+|Jun mean C = 17.0
+|Jul mean C = 16.5
+|Aug mean C = 16.6
+|Sep mean C = 16.6
+|Oct mean C = 16.0
+|Nov mean C = 15.0
+|Dec mean C = 14.4
+|year mean C = 
+|Jan high C = 19.8
+|Feb high C = 21.0
+|Mar high C = 22.5
+|Apr high C = 23.3
+|May high C = 23.0
+|Jun high C = 21.6
+|Jul high C = 21.3
+|Aug high C = 22.0
+|Sep high C = 21.6
+|Oct high C = 20.8
+|Nov high C = 20.6
+|Dec high C = 20.2
+|year high C =
+|Jan low C = 8.2
+|Feb low C = 8.3
+|Mar low C = 9.5
+|Apr low C = 10.8
+|May low C = 12.3
+|Jun low C = 12.5
+|Jul low C = 11.8
+|Aug low C = 11.2
+|Sep low C = 11.6
+|Oct low C = 11.2
+|Nov low C = 9.4
+|Dec low C = 8.6
+|year low C =
+|Jan precipitation mm = 6
+|Feb precipitation mm = 5
+|Mar precipitation mm = 12
+|Apr precipitation mm = 33
+|May precipitation mm = 90
+|Jun precipitation mm = 239
+|Jul precipitation mm = 180
+|Aug precipitation mm = 173
+|Sep precipitation mm = 193
+|Oct precipitation mm = 125
+|Nov precipitation mm = 41
+|Dec precipitation mm = 5
+|year precipitation mm =
+|source 1 = Climate-Data.org<ref name="Climate-Data.org">
+{{cite web|url=https://en.climate-data.org/location/54058/
+|title = Climate: Chinique
+|access-date= 1 November 2015
+|website= Climate-Data.org|language=en}}</ref>
+}}
+
+{{Quiché Department}}
+
+{{Authority control}}
+[[Category:Municipalities of the Quiché Department]]
+{{Guatemala-geo-stub}}
+
+{{Coord missing|Guatemala}}

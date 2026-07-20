@@ -1,0 +1,92 @@
+{{Info/Município do Brasil
+<!-- GeoID=5215900 -->
+<!-- Cabeçalho -->| nome = Palminópolis
+| foto = 
+| leg_foto = 
+| apelido = São Bento
+<!-- Dados gerais -->| brasão = Brasao de Palminopolis.png
+| bandeira = Bandeira de Palminopolis.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 31 de outubro
+| fundação = {{nowrap|{{dtlink|31|10|1967|idade}}}}
+| gentílico = palminopolino
+| lema = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| prefeito<!--enciclopédia, sem apelidos! --> = Franc Helvis Vaz<ref>[https://g1.globo.com/go/goias/noticia/2021/01/01/prefeito-e-vereadores-de-palminopolis-tomam-posse-veja-lista-de-eleitos.ghtml Prefeito e vereadores de Palminópolis tomam posse] Portal G1 - acessado em 2 de janeiro de 2021</ref>
+| partido = [[Progressistas]]
+| mandato_início = 2021
+| fim_mandato = 2024 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 9
+<!-- Localização -->| mapa = Goias Municip Palminopolis.svg
+| latP = S
+| latG = 16
+| latM = 47
+| latS = 45
+| lonP = O
+| lonG = 50
+| lonM = 09
+| lonS = 54
+| estado = Goiás
+| mesorregião = [[Mesorregião do Sul Goiano|Sul Goiano]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Vale do Rio dos Bois|Vale do Rio dos Bois]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Jandaia (Goiás)|Jandaia]], [[Paraúna]], [[Palmeiras de Goiás]], [[Turvânia]] e [[São João da Paraúna]].
+| dist_capital = 108
+<!-- Características geográficas -->| área = 387.693 <!--favor manter o formato-->
+| área_ref = <ref name="IBGEPopArea"/>
+| população = 3585 <!--favor manter o formato-->
+| data_pop = est. [[IBGE]]/[[2019]]<ref name="IBGEPopArea">{{citar web |url=https://cidades.ibge.gov.br/brasil/go/palminopolis/panorama |título=IBGE Cidades - Panorama |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)   |acessodata=27 de janeiro de 2020}}</ref>
+| altitude = 
+| clima = Tropical
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.753 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:32284.368}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 8620.66
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+'''Palminópolis''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Goiás]]. Recebeu esta denominação, por estar localizada entre as cidade goianas de [[Palmeiras de Goiás]] e [[Firminópolis]]. Sua população estimada em 2019 foi de {{fmtn|3585}} [[habitante]]s.<ref name="IBGEPopArea"/> A economia é baseada na agropecuária. A cidade localiza-se a 108 km da capital, [[Goiânia]].
+
+== Religião ==
+
+{{Gráfico circular
+| thumb = left
+| título =Religiões em Palminópolis (2022)<ref name=religiao2022>{{citar web|url=https://noticias.r7.com/mapa-censo-ibge-religiao/|título=Religião predominante em cada município do Brasil|acessodata=10 de abril de 2026|publicado=[[R7]]|data=6 de maio de 2025}}</ref>
+| rótulo1 =[[Protestantismo]] 
+| valor1 =49.21
+| cor1 = Darkblue
+| rótulo2 =[[Igreja Católica Apostólica Romana|Catolicismo Romano]]
+| valor2 =40.01
+| cor2 =Lightblue
+| rótulo3 =Sem religião
+| valor3 =6.55
+| cor3 =Yellow
+| rótulo4 =Outras religiões
+| valor4 =4.23
+| cor4 =Gray
+}}
+
+Na divulgação dos resultados preliminares, do Censo de 2022, o IBGE informou que a população do município era composta, no ano da realização do Censo, por: 49,21% [[protestantismo|protestantes]], 40,01% de [[Igreja Católica Apostólica Romana|católicos romanos]],  6,55% sem religião e 4,23% de outras religiões.<ref name=religiao2022/>
+
+No mesmo ano, em nível nacional, a proporção de católicos romanos era de 56,7%, protestantes 26,9%, espíritas 1,8%, religiões afro-brasileiras 1%, sem religião 9,3%, tradições indígenas 0,1%, 4% outras religiões e 0,2% não sabia ou não respondeu ao questionário. Sendo assim, a proporção de católicos romanos na população do município era cerca de 16% menor do que na população do país. A proporção de protestantes, por outro lado, é cerca de 23% maior no município do que na população brasileira.<ref>{{citar web|url=https://static.poder360.com.br/2025/06/censo-demografico-IBGE-2022-religioes.pdf|título=Censo Demográfico de 2022|subtítulo=Resultados Preliminares|página=32|publicado=[[Instituto Brasileiro de Geografia e Estatística]]|arquivourl=https://web.archive.org/web/20250606230640/https://static.poder360.com.br/2025/06/censo-demografico-IBGE-2022-religioes.pdf |arquivodata=6 de junho de 2025|data=6 de junho de 2025|acessodata=6 de junho de 2025}}</ref>
+
+
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+{{Referências}}
+
+== Ver também ==
+* [[Lista de municípios de Goiás]]
+* [[Lista de municípios do Brasil]]
+
+== Ligações externas ==
+* [http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=521590#historico ibge.gov.br: Perfil do município]
+
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Palminópolis| ]]
+[[Categoria:Fundações em Goiás em 1967]]

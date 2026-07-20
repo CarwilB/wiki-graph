@@ -1,0 +1,141 @@
+{{refimprove|date=March 2020}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+|name                   = Dabeiba
+|native_name            =
+|nickname               = 
+|motto                  = 
+|settlement_type        = [[Municipalities of Colombia|Municipality]] and town
+|image_skyline          = Lallorona.JPG
+|imagesize              = 
+|image_caption          = '''Bold t§ext'''
+|image_flag             = Flag of Dabeiba (Antioquia).svg
+|image_shield           = Escudo de Dabeiba.svg
+|image_map              = Colombia - Antioquia - Dabeiba.svg
+|mapsize                = 250px
+|map_caption            = Location of the municipality and town of Dabeiba in the Antioquia Department of Colombia
+|pushpin_map            = Colombia
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Colombia
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Colombia}}
+|subdivision_type1      = [[departments of Colombia|Department]]
+|subdivision_name1      = {{flagicon image|Flag of Antioquia Department.svg}} [[Antioquia Department]]
+|subdivision_type2      = Subregion
+|subdivision_name2      = [[Western Antioquia|Western]]
+|leader_title           = 
+|leader_name            = 
+|established_title      = 
+|established_date       = 
+|area_magnitude         = 
+|area_total_km2         = 1883
+|area_total_sq_mi       = 
+|area_land_km2          = 
+|area_land_sq_mi        = 
+|area_water_km2         = 
+|area_water_sq_mi       = 
+|area_water_percent     = 
+|area_urban_km2         = 
+|area_urban_sq_mi       = 
+|area_metro_km2         = 
+|area_metro_sq_mi       = 
+|population_as_of       = Census 2018<ref name="Censo">{{cite web|url=https://sitios.dane.gov.co/cnpv/#!/ |title=Censo Nacional de Población y Vivienda 2018|lang=es |access-date=23 April 2020}}</ref>
+|population_note        = 
+|population_total       = 22717
+|population_density_km2 = auto
+|population_density_sq_mi = 
+|population_metro       =
+|population_density_metro_km2 =
+|population_density_metro_sq_mi =
+|population_urban       = 
+|coordinates            = {{coord|7|0|5|N|76|15|40|W|display=inline}}
+|timezone               = Colombia Standard Time
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|elevation_m            = 	450
+|elevation_ft           = 
+|website                = 
+|footnotes              = 
+}}
+'''Dabeiba''' ({{IPA|es|daˈβejβa}}) is a town and [[Municipalities of Colombia|municipality]] in the [[Colombia]]n [[Departments of Colombia|department]] of [[Antioquia Department|Antioquia]]. The population was 22,717 at the 2018 census. The [[Battle of Dabeiba]] took place there in October 2000.<ref>[https://news.bbc.co.uk/2/hi/americas/982460.stm Dozens die in Colombia battle]</ref>  
+
+==Climate==
+Dabeiba has a [[tropical rainforest climate]] ([[Köppen climate classification|Köppen]] ''Af'') with very heavy rainfall most of the year and a drier season from January to March, when there is still between {{convert|90|and|110|mm|in|1}} of rain. The climate is markedly less extreme than the core of the [[El Chocó|Chocó]] to its south, receiving less than half the rainfall of such towns as [[Andagoya]], [[Quibdó]] or [[Buenaventura, Valle del Cauca|Buenaventura]].
+{{Weather box
+|location = Dabeiba
+|single line = Yes
+|metric first = Yes
+|collapsed = Yes
+|temperature colour = pastel
+|Jan high C = 31.5
+|Feb high C = 31.6
+|Mar high C = 32.1
+|Apr high C = 31.5
+|May high C = 30.4
+|Jun high C = 30.6
+|Jul high C = 30.7
+|Aug high C = 30.7
+|Sep high C = 29.9
+|Oct high C = 29.8
+|Nov high C = 29.8
+|Dec high C = 30.3
+|year high C =
+|Jan mean C = 25.7
+|Feb mean C = 26.1
+|Mar mean C = 26.6
+|Apr mean C = 26.1
+|May mean C = 25.6
+|Jun mean C = 25.6
+|Jul mean C = 25.6
+|Aug mean C = 25.7
+|Sep mean C = 25.2
+|Oct mean C = 25.1
+|Nov mean C = 25.1
+|Dec mean C = 25.3
+|year mean C = 
+|Jan low C = 20.0
+|Feb low C = 20.6
+|Mar low C = 21.1
+|Apr low C = 20.8
+|May low C = 20.8
+|Jun low C = 20.6
+|Jul low C = 20.6
+|Aug low C = 20.7
+|Sep low C = 20.6
+|Oct low C = 20.5
+|Nov low C = 20.5
+|Dec low C = 20.4
+|year low C =
+
+|rain colour = green
+|Jan rain mm = 95
+|Feb rain mm = 91
+|Mar rain mm = 108
+|Apr rain mm = 274
+|May rain mm = 342
+|Jun rain mm = 331
+|Jul rain mm = 319
+|Aug rain mm = 359
+|Sep rain mm = 349
+|Oct rain mm = 385
+|Nov rain mm = 299
+|Dec rain mm = 209
+|year rain mm =
+|source 1 = Climate-Data.org<ref>{{cite web
+|url = https://en.climate-data.org/location/50267/
+|title = Climate: Dabeiba
+|publisher=Climate-Data.org
+|access-date = August 30, 2020}}</ref>
+}}
+
+==References==
+<references/>
+
+{{Department of Antioquia}}
+
+{{coord|7|00|N|76|15|W|region:CO_type:adm2nd_source:GNS-enwiki|display=title}}
+
+[[Category:Municipalities of Antioquia Department]]
+[[Category:Villages in Colombia]]
+{{Antioquia-geo-stub}}

@@ -1,0 +1,105 @@
+{{Info/Município do Brasil
+<!-- GeoID=1720259 -->
+<!-- Cabeçalho -->| nome = São Salvador do Tocantins
+| foto = São_Salvador_do_Tocantins.svg
+| leg_foto = Vista aérea do município
+| apelido = Cidade Ribeirinha
+<!-- Dados gerais -->| brasão = Brasaosaosalvadordotocantins(1).svg
+| bandeira = Bandeirasaosalvadordotocantins(1).svg
+| link_brasão = 
+| link_bandeira = 
+| emancipação = {{nowrap|{{dtlink|20|02|1991|idade}}}}
+| aniversário = 20 de fevereiro
+| distritos = [[Povoado do Retiro]]
+| fundação = {{nowrap|{{dtlink|01|01|1988|idade}}}}
+| gentílico = [[wikt:são salvadorense|são salvadorense]]
+| link_hino = 
+| lema = 
+| prefeito = André Miguel Ribeiro dos Santos {{Small|André Borba}}<ref>{{Citar web|url=https://g1.globo.com/to/tocantins/eleicoes/2024/noticia/2024/12/31/prefeito-de-sao-salvador-do-tocantins-to-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|titulo=Prefeito de São Salvador do Tocantins (TO) toma posse nesta quarta (1º); veja lista de vereadores eleitos|data=2024-12-31|acessodata=2026-03-23|website=[[G1]]|publicado=[[Globo.com]]|língua=pt-BR|arquivourl=https://web.archive.org/web/20260323114854/https://g1.globo.com/to/tocantins/eleicoes/2024/noticia/2024/12/31/prefeito-de-sao-salvador-do-tocantins-to-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|arquivodata=2026-03-23}}</ref><ref>{{Citar web|url=https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/to/prefeito/andre-borba-270002209157.shtml|titulo=Eleições 2024: Andre Borba, candidato a prefeito de São Salvador do Tocantins-TO|data=2024-11-30|acessodata=2026-03-23|website=[[Folha de S.Paulo]]|arquivourl=https://web.archive.org/web/20260323115101/https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/to/prefeito/andre-borba-270002209157.shtml|arquivodata=2026-03-23}}</ref>
+| partido = [[Republicanos_(partido_político)|Republicanos]]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 9
+| mapa = Tocantins Municip SaoSalvadordoTocantins.svg
+| latP = S
+| latG = 12
+| latM = 44
+| latS = 38
+| lonP = O
+| lonG = 48
+| lonM = 14
+| lonS = 08
+| estado = Tocantins
+| mesorregião = [[Mesorregião Ocidental do Tocantins|Ocidental do Tocantins]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Gurupi (Tocantins)|Gurupi]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Região Metropolitana de Gurupi|Gurupi]]<ref name="regmetro">{{citar periódico |url=https://doe.to.gov.br/diario/5624/download |título=Lei Complementar n.º 172, de 11 de fevereiro de 2026: Institui as Regiões Metropolitanas de Palmas, Araguaína e Gurupi, dispõe sobre sua organização e funcionamento, e adota outras providências. |acessodata=2026-02-12 |periódico=Diário Oficial do Estado do Tocantins |publicado=Estado do Tocantins |número=6 998 |autor=Tocantins |ano=2026 |pagina=1 |formato=pdf |arquivourl=https://archive.ph/2NCiB |arquivodata=2026-02-12 |arquivoformato=pdf |urlmorta=no}}</ref>
+| vizinhos = [[Palmeirópolis]], [[Peixe (Tocantins)|Peixe]], [[Paranã]] e [[Jaú do Tocantins]]
+| dist_capital = 397
+<!-- Características geográficas -->| área = 1422.025
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 dez. 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 2910
+| data_pop = [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude = 120
+| clima = [[Clima tropical com estação seca|Tropical com estação seca]]
+| sigla_clima = Aw
+<!-- Indicadores -->| CEP = 77368-000
+| idh = 0.605 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=https://cidades.ibge.gov.br/brasil/to/sao-salvador-do-tocantins/panorama |titulo=IBGE Cidades |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=4 de janeiro de 2021}}</ref>
+| pib = {{formatnum:12342.000}} mil
+| data_pib = [[IBGE]]/2010<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 28440.98
+| data_pib_per_capita = [[IBGE]]/2010<ref name="IBGE_PIB"/>
+| padroeiro = [[Ana, mãe de Maria|Nossa Senhora de Santana]]
+| site = [http://www.saosalvador.to.gov.br/ saosalvador.to.gov.br]
+}}
+'''São Salvador do Tocantins''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Tocantins]], localizado na região sul do estado.
+
+==História==
+O primeiro núcleo de povoação foi oriundo da aglomeração de humildes lavradores, que surgiram às margens do Rio Tocantins no ponto de travessia do
+rio, na ligação entre Paranã e Palmeirópolis.
+Sua emancipação deu-se por ação do vereador designado daquele povoado, Sr. Luiz Furtado de Almeida, que concorrendo às primeiras eleições do
+município foi eleito prefeito. A Lei Estadual nº. 251/91, de 20 de fevereiro de 1991, deu emancipação política ao município de São Salvador do Tocantins,
+desmembrado de Palmeirópolis e instalando em 1º de janeiro de 1992, com posse do 1º prefeito e da Câmara de Vereadores.
+
+==Geografia==
+[[Ficheiro:São Salvador do Tocantins (2).svg|esquerda|miniaturadaimagem|Vista aérea de São Salvador do Tocantins/TO]]
+Localiza-se a uma [[latitude]] 12º44'37" sul e a uma [[longitude]] 48º14'08" oeste, estando a uma altitude de 120 metros. Sua população estimada em 2004 era de 2 802 habitantes.
+Possui uma área de 1427,61&nbsp;km².O município de São Salvador do Tocantins localiza-se na região sul do Estado, ficando a 397&nbsp;km da capital Palmas, a margem esquerda do [[Rio Maranhão]] (afluente do [[Rio Tocantins|Rio Tocantins)]] <ref>{{citar web|ultimo=Oliveira|primeiro=Maria|url=https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548772006_b310d87153f8d22b614b00b701e85fb3.pdf|titulo=Rio Tocantins: eco de diferentes vozes|data=2009|acessodata=16-07-2024}}</ref>
+entre as Fozes dos Rios Mutum e Almas.
+
+== Relevo, Vegetação e Clima ==
+O município conta com a vegetação típica de cerrado com montanhas e planícies, de clima tropical com duas estações distintas: seca (maio a setembro) e
+chuvosa (outubro a abril), a temperatura média é de 30&nbsp;°C, variando de acordo com as estações.
+Limita-se ao norte com o município de Peixe; ao Sul com
+Palmeirópolis: ao leste com Paranã e ao oeste com Jaú do Tocantins e Peixe.
+
+== População e Religião ==
+[[Ficheiro:São Salvador do Tocantins (3).svg|esquerda|miniaturadaimagem|Entrada da cidade pela TO-387]]
+A população conta com a presença de migrantes do Maranhão, Minas Gerais, Ceará, dentre outros, e conta também com a presença de imigrantes
+italianos que exercem grandes influências no município.
+A população tem sua cultura própria com suas crenças e valores. A religião predominante é a católica, mas a igreja evangélica tem seus seguidores
+representados pela Assembleia de Deus.
+
+==Economia==
+[[Ficheiro:São Salvador do Tocantins (4).svg|borda|esquerda|miniaturadaimagem|Avenida Praião, Setor Central]]
+São Salvador é uma cidade polo da Microrregião do Sul do Estado do Tocantins, com destacada relevância econômica na região, tem um comércio local expressivo, com diversos mercados, variados estabelecimentos comerciais, hotéis, restaurantes, cerâmicas, agência do Correio, correspondentes bancários, agência lotérica, postos de combustível, escola municipal, colégio estadual, hospital público, cartório, usina hidrelétrica. As terras do município são férteis, há um numeroso rebanho bovino de gado de corte e de produção de leite, a agricultura está voltada para a produção de soja, arroz, milho, banana, melão e abóbora, dentre outros.
+
+[[Ficheiro:São Salvador do Tocantins (1).svg|esquerda|miniaturadaimagem|Praia da Moreninha]]
+
+{{referências}}
+
+==Ligações externas==
+* [http://www.saosalvador.to.gov.br/ Página da Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Tocantins}}
+
+{{Subdivisões do Tocantins}}
+{{Região Metropolitana de Gurupi}}
+{{Controle de autoridade}}
+{{Portal3|Geografia|Tocantins|Brasil}}
+
+{{DEFAULTSORT:Sao Salvador Tocantins}}
+[[Categoria:Tocantins]]
+[[Categoria:Municípios do Tocantins|Sao Salvador do Tocantins]]

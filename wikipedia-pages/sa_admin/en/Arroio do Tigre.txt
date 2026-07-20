@@ -1,0 +1,124 @@
+{{Short description|Municipality of Rio Grande do Sul, Brazil}}
+{{Expand Portuguese|topic=geo}}
+{{Infobox settlement
+<!--See Template:Infobox Settlement for additional fields that may be available-->
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+| name                   = Arroio do Tigre
+| nickname               = Celeiro do centro-serra
+| settlement_type        = [[Municipalities of Brazil|Municipality]]
+| motto                  =
+<!-- images and maps  ----------->
+| image_skyline          =
+| image_caption          =
+| image_flag             = Bandeira_Arroio_do_Tigre.png
+| image_shield           = Brasão_Arroio_do_Tigre.png
+| image_map              = Locator map of Arroio do Tigre in Rio Grande do Sul.svg
+| map_caption            =
+| pushpin_map            = <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+| pushpin_label_position = <!-- the position of the pushpin label: left, right, top, bottom, none -->
+| pushpin_map_caption    =
+<!-- Location ------------------>
+| subdivision_type       = Country
+| subdivision_name       = [[Brazil]]
+| subdivision_type1      = State
+| subdivision_name1      = [[Rio Grande do Sul]]
+| subdivision_type2      = Mesoregion
+| subdivision_name2      = [[Mesorregião do Centro Oriental Rio-Grandense|Centro Oriental Rio-grandense]]<ref name="IBGE_DTB_2008" />
+| subdivision_type3      = Microregion
+| subdivision_name3      = [[Microrregião de Santa Cruz do Sul|Santa Cruz do Sul]]<ref name="IBGE_DTB_2008" /> 
+<!-- Politics ----------------->
+| government_footnotes   =
+| government_type        =
+| leader_title           = Mayor
+| leader_name            = Gilberto Rathke
+| leader_party           =
+| established_title      = Founded
+| established_date       = November 6, 1963
+<!-- Area    --------------------->
+| unit_pref              = <!--Enter: Imperial, to display imperial  before metric-->
+| area_footnotes         =
+| area_total_km2         = 318.524
+| area_land_km2          = <!--See table @ Template:Infobox Settlement for details on unit conversion-->
+| area_water_km2         =
+| area_water_percent     =
+<!-- Elevation -------------------------->
+| elevation_footnotes    = <!--for references: use <ref> tags-->
+| elevation_m            = 409
+<!-- Population   ----------------------->
+| population_as_of       = 2020 <ref>[https://cidades.ibge.gov.br/brasil/rs/arroio-do-tigre/panorama IBGE 2020]</ref>
+| population_footnotes   = 
+| population_note        =
+| population_total       = 13,413
+| population_density_km2 = auto
+<!-- General information  --------------->
+| timezone               = [[Time in Brazil|BRT]]
+| utc_offset             = &minus;3
+| timezone_DST           =
+| utc_offset_DST         = 
+| coordinates            = {{coord|29|19|58|S|53|05|34|W|region:BR|display=inline,title}}
+<!-- Area/postal codes & others -------->
+| postal_code_type       = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal_code            = 96950-000
+| area_code              = +55 51
+| website                = [http://www.arroiodotigre.rs.gov.br/ arroiodotigre.rs.gov.br]
+| footnotes              =
+| blank_name_sec1        = [[Human Development Index|HDI]]
+| blank_info_sec1        = 0.764<ref name="PNUD_IDH_2000" />
+| blank1_name_sec1       = [[GDP]]
+| blank1_info_sec1       = [[Brazilian real|R$]] 125,575,000<ref name="IBGE_PIB_2005" />
+| blank2_name_sec1       = GDP per capita
+| blank2_info_sec1       = [[Brazilian real|R$]]10,093.00
+}}
+'''Arroio do Tigre''' is a municipality in the state of [[Rio Grande do Sul]], [[Brazil]].
+
+The municipality is partly flooded by the reservoir of the [[Dona Francisca Hydroelectric Plant]] on the upper [[Jacuí River]].<ref>{{citation|language=pt|ref={{harvid|Dona Francisca – OSAB}}|title=Dona Francisca|publisher=OSAB: Observatório Sócio-Ambiental da Baragens|url=http://www.observabarragem.ippur.ufrj.br/barragens/9/dona-francisca|access-date=2017-01-20|archive-date=2019-05-23|archive-url=https://web.archive.org/web/20190523184533/http://www.observabarragem.ippur.ufrj.br/barragens/9/dona-francisca|url-status=dead}}</ref>
+
+==History==
+
+The principal settlement of the region occurred around 1900, when German settlers migrated from the "Colônias Velhas" region (called ''die Altkolonie'', in the regional German dialect [[Riograndenser Hunsrückisch]]) of [[Santa Cruz do Sul]] and the surrounding areas. Afterwards there was an influx of [[Italian Brazilian]]s and [[Portuguese Brazilian]]s. In 1920 it began to be known as Vila Tigre, and found its first commercial buildings, Catholic and Evangelical churches, and later, the Hospital Santa Rosa de Lima and Colégio Sagrado  Coração de Jesus. In 1920 an agricultural cooperative, Cooperativa Agrícola Mista Linha Cereja (COMACEL), was founded, which is still active.
+
+Until 1929 the region was part of the municipality of [[Soledade]], then became the third district of [[Sobradinho, Rio Grande do Sul|Sobradinho]]. It became its own municipality on November 6, 1963, by the Law No. 605A.
+
+== See also ==
+* [[List of municipalities in Rio Grande do Sul]]
+
+==References==
+{{Reflist|refs=
+<ref name="IBGE_DTB_2008">{{cite web
+| url        = https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip
+| title      = Divisão Territorial do Brasil
+| access-date = 11 October 2008
+| date       = 1 July 2008
+| work       = Divisão Territorial do Brasil e Limites Territoriais
+| publisher  = Instituto Brasileiro de Geografia e Estatística (IBGE)
+}}</ref>
+<ref name="PNUD_IDH_2000">{{cite web
+ |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm 
+ |title=Ranking decrescente do IDH-M dos municípios do Brasil 
+ |access-date=11 October 2008 
+ |date=2000 
+ |work=Atlas do Desenvolvimento Humano 
+ |publisher=Programa das Nações Unidas para o Desenvolvimento (PNUD) 
+ |url-status=dead 
+ |archive-url=https://web.archive.org/web/20091003103229/http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20%28pelos%20dados%20de%202000%29.htm 
+ |archive-date=3 October 2009 
+}}</ref>
+<ref name="IBGE_PIB_2005">{{cite web
+ |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2005/tab01.pdf 
+ |title=Produto Interno Bruto dos Municípios 2002-2005 
+ |access-date=11 October 2008 
+ |date=19 December 2007 
+ |publisher=Instituto Brasileiro de Geografia e Estatística (IBGE) 
+ |archive-url=https://web.archive.org/web/20081002024524/http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2005/tab01.pdf 
+ |archive-date=2 October 2008 
+ |url-status=dead 
+}}</ref>
+}}
+
+{{Municipalities of Rio Grande do Sul}}
+
+{{DEFAULTSORT:Arroio Do Tigre}}
+[[Category:Municipalities in Rio Grande do Sul]]
+
+{{RioGrandedoSul-geo-stub}}

@@ -1,0 +1,63 @@
+{{Info/Município do Brasil
+<!-- GeoID=2409332 -->
+<!-- Cabeçalho -->| nome = Santa Maria
+| foto = Prefeitura de Santa Maria - RN.JPG
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Santa Maria-RN.jpg
+| bandeira = Bandeira de Santa Maria-RN.jpg
+| link_brasão = 
+| link_bandeira = 
+| aniversário = 21 de dezembro
+| fundação = {{nowrap|{{dtlink|23|10|1974|idade}}}}
+| emancipação = {{nowrap|{{dtlink|21|12|1995|idade}}}}
+| gentílico = santa-mariense
+| link_hino = File:Hino de Santa Maria - RN.ogg
+| lema = 
+| prefeito = Raniery Soares Câmara
+| partido = [[Partido dos Trabalhadores|PT]]
+| mandato_início = 2021
+| fim_mandato = 2028
+| vereadores = 9
+| mapa = Brazil Rio Grande do Norte Santa Maria location map.svg
+| latP = S
+| latG = 05
+| latM = 50
+| latS = 24
+| lonP = O
+| lonG = 35
+| lonM = 41
+| lonS = 42
+| estado = Rio Grande do Norte
+| região_intermediária = Natal
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = São Paulo do Potengi
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = [[Bento Fernandes]], [[São Paulo do Potengi]], [[Ielmo Marinho]], [[São Pedro (Rio Grande do Norte)|São Pedro]] e [[Riachuelo (Rio Grande do Norte)|Riachuelo]]
+| dist_capital = 60
+<!-- Características geográficas -->| área = 219.570
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/rn/santa-maria.html |título=Área territorial oficial |acessodata=9 de janeiro de 2021|data=31 de agosto de 2020|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 4992
+| data_pop = [[IBGE]]/2024<ref name="IBGE_Pop_2024">{{citar web |url = https://www.ibge.gov.br/cidades-e-estados/rn/santa-maria.html |título=Censo Populacional 2024| obra = Censo Populacional 2024 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=31 de agosto de 2022 |acessodata = 2 de janeiro de 2025}}</ref>
+| altitude = 115
+| clima = Semiárido
+| sigla_clima = <!-- Indicadores -->
+| CEP = 59464-000
+| idh = 0.59 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=4 de setembro de 2013}}</ref>
+| pib = {{formatnum:78032.47}} mil
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/rn/santa-maria/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=2 de janeiro de 2025}}</ref>
+| pib_per_capita = 13716.38
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB"/>
+| site_prefeitura = http://www.santamaria.rn.gov.br/
+}}
+'''Santa Maria''' é um [[município]] [[brasileiro]] do estado do [[Rio Grande do Norte]]. De acordo no censo realizado pelo [[IBGE]] (Instituto Brasileiro de Geografia e Estatística) no ano 2022, sua população era de 4.847 habitantes.<ref>{{Citar web|url=https://g1.globo.com/rn/rio-grande-do-norte/noticia/2023/06/28/populacao-de-santa-maria-rn-e-de-4-847-pessoas-aponta-o-censo-do-ibge.ghtml|titulo=População de Santa Maria (RN) é de 4.847 pessoas, aponta o Censo do IBGE|data=2023-06-28|acessodata=2024-11-01|website=G1|lingua=pt-br}}</ref> Área territorial de 219.570 km².
+
+{{Referências}}
+
+{{Portal3|Brasil|Rio Grande do Norte}}
+{{Esboço-municípiosbr/Rio Grande do Norte}}
+
+[[Categoria:Municípios do Rio Grande do Norte]]
+[[Categoria:Fundações no Rio Grande do Norte em 1995]]

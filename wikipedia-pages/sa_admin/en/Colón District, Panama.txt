@@ -1,0 +1,119 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                            = Colón District
+|other_name                      = 
+|native_name                     = <!-- for cities whose native name is not in English -->
+|nickname                        = 
+|settlement_type                 = [[Districts of Panama|District]] 
+|motto                           = 
+<!-- images and maps  ----------->
+|image_skyline                   = CO-colon-2000-02.jpg
+|imagesize                       = 300px
+|image_caption                   = 
+|image_flag                      = 
+|flag_size                       = 
+|image_seal                      = 
+|seal_size                       = 
+|image_shield                    = 
+|shield_size                     = 
+|image_map                       = Panamá - Colón - Colón.svg
+|mapsize                         = 300px
+|map_caption                     = 
+|pushpin_map                     = Panama<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position          = right
+|pushpin_mapsize                 = 300
+|pushpin_map_caption             = Location of the district capital in Panama
+<!-- Location ------------------>
+|subdivision_type                = Country
+|subdivision_name                = {{flag|Panama}}
+|subdivision_type1               = [[Provinces of Panama|Province]]
+|subdivision_name1               = [[Colón Province]]
+|subdivision_type2               = [[Capital city|Capital]]
+|subdivision_name2               = [[Colón, Panama|Colón City]]
+|subdivision_type3               = 
+|subdivision_name3               = 
+|<!-- Politics ----------------->
+|government_footnotes            = 
+|government_type                 = 
+|leader_title                    = 
+|leader_name                     = 
+|leader_title1                   = <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1                    = 
+|established_title               = <!-- Settled -->
+|established_date                = 
+<!-- Area    --------------------->
+|area_magnitude                  = 
+|unit_pref                       = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes                  = 
+|area_total_km2                  = 1180 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2                   = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of                = 2019
+|population_footnotes            = 
+|population_note                 = official estimate<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref>
+|population_total                = 253366
+|population_density_km2          = auto
+|population_density_sq_mi        = 
+|population_metro                = 
+|population_density_metro_km2    = 
+|population_density_metro_sq_mi  = 
+|population_blank1_title         = Ethnicities
+|population_blank1               = 
+|population_density_blank1_km2   = 
+|population_density_blank1_sq_mi = 
+<!-- General information  --------------->
+|timezone                        = [[Eastern Time Zone|ETZ]]
+|utc_offset                      = -5
+|timezone_DST                    = 
+|utc_offset_DST                  = 
+|coordinates                     = {{coord|9|20|N|79|54|W|region:PA|display=inline,title}}
+|elevation_footnotes             = <!--for references: use <ref> </ref> tags-->
+|elevation_m                     = 
+|elevation_ft                    = 
+<!-- Area/postal codes & others -------->
+|postal_code_type                = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code                     = 
+|area_code                       = 
+|blank_name                      = 
+|blank_info                      = 
+|blank1_name                     = 
+|blank1_info                     = 
+|website                         = 
+|footnotes                       = 
+}}
+
+''' Colón District ''' is a [[districts of Panama|district]] (''distrito'') of [[Colón Province]] in [[Panama]]. The population according to the [[2000 Panamanian census|2000 census]] was 174,059;<ref name="Statoids">{{cite web|url=https://www.statoids.com/ypa.html|title=Districts of Panama|publisher=Statoids|access-date=April 10, 2009}}</ref> the latest official estimate (for 2019) is 253,366.<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref> The district covers a total area of {{cvt|1180|km2}}. The capital lies at the city of [[Colón, Panama|Colón City]].<ref name="Statoids"/>
+
+==Administrative divisions==
+Colón District is divided administratively into the following ''[[Corregimientos of Panama|corregimientos]]'':
+
+*[[Barrio Norte, Panama|Barrio Norte]]<sup>1</sup>
+*[[Barrio Sur, Panama|Barrio Sur]]<sup>1</sup>
+*[[Buena Vista, Colón|Buena Vista]]
+*[[Cativá]]
+*[[Ciricito]]
+*[[Sabanitas]]
+*[[Salamanca, Colón|Salamanca]]
+*[[Limón, Panama|Limón]]
+*[[Nueva Providencia]]
+*[[Puerto Pilón]]
+*[[Cristóbal, Colón|Cristóbal]]
+*{{Interlanguage link|Cristóbal Este|es|Cristóbal Este}}
+*[[Escobal]]
+*[[San Juan, Colón|San Juan]]
+*[[Santa Rosa, Colón|Santa Rosa]]
+
+<sup>1</sup> - These ''corregimientos'' represent as [[Colón, Panama|Colón City]], the capital of the district.
+
+== References ==
+{{reflist}}
+
+{{Colón Province}}
+{{Districts of Panama}}
+
+{{DEFAULTSORT:Colon District, Panama}}
+[[Category:Districts of Colón Province]]
+
+
+{{Colón-geo-stub}}

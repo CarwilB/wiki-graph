@@ -1,0 +1,108 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Quillota Province
+| official_name           = 
+| native_name             = Provincia de Quillota
+| native_name_lang        = es
+| settlement_type         = [[Provinces of Chile|Province]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| nickname                = 
+| image_seal              = Logo de la DPP Quillota.svg
+| motto                   = 
+| image_map               = Provincia de Quillota.svg
+| mapsize                 = 175px
+| map_alt                 = Location in the Valparaíso Region 
+| map_caption             = Location in the Valparaíso Region
+| pushpin_map             = Chile
+| pushpin_mapsize         = 175<!--omit "px"-->
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|32|52|S|71|14|W|type:adm2nd_region:CL-VL|display=inline,title}}
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Chile}}
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = {{flag|Valparaíso}}
+| parts_type              = [[Communes of Chile|Communes]]
+| parts_style             = coll
+| parts                   = List of 5:
+| p1                      = [[Quillota]]
+| p2                      = [[La Calera, Chile|La Calera]]
+| p3                      = [[Nogales, Chile|Nogales]]
+| p4                      = [[Hijuelas]]
+| p5                      = [[La Cruz, Chile|La Cruz]]
+| established_title       = 
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Quillota]]
+| government_footnotes    = 
+| government_type         = [[Province|Provincial]]
+| leader_party            = [[Democratic Revolution]]
+| leader_title            = [[Presidential Provincial Delegate]]
+| leader_name             = [[José Orrego Ramírez]]
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{in lang|es}} [http://www.ine.cl/canales/chile_estadistico/censos_poblacion_vivienda/censo_pobl_vivi.php Instituto Nacional de Estadísticas]</ref>
+| area_total_km2          = 1113.1
+| area_rank               = 7
+| elevation_footnotes     = 
+| elevation_m             = 
+| elevation_max_footnotes = 
+| elevation_max_m         = 
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 190525
+| population_as_of        = 2012 Census
+| population_rank         = 3
+| population_density_km2  = auto
+| population_blank1_title = [[Urban area|Urban]]
+| population_blank1       = 151,366
+| population_blank2_title = [[Rural area|Rural]]
+| population_blank2       = 24,551
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1     = 86,620
+| demographics1_title2    = Women
+| demographics1_info2     = 89,297
+| timezone                = [[Time in Chile|CLT]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-time.htm |access-date=2010-07-28 |title=Chile Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archive-date=September 11, 2007 }}</ref>
+| utc_offset              = -4
+| timezone_DST            = [[Time in Chile|CLST]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-summer-time.htm |access-date=2010-07-28 |title=Chile Summer Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archive-date=September 11, 2007 }}</ref>
+| utc_offset_DST          = -3
+| postal_code_type        = 
+| postal_code             = 
+| area_code_type          = 
+| area_code               = ''country'' 56 + ''area'' 33
+| website                 = [http://dppQuillota.gob.cl Delegation of Quillota]
+| footnotes               = 
+}}
+
+'''Quillota Province''' ({{langx|es|Provincia de Quillota}}) is one of eight [[Provinces of Chile|province]]s of the central [[Chile]]an [[Regions of Chile|region]] of [[Valparaíso Region|Valparaíso]] (V). Its capital is the city of [[Quillota]] (pop. 75,916).<ref name="INE"/>
+
+==Administration==
+As a [[province]], Quillota is a second-level [[administrative divisions of Chile|administrative division]], governed by a provincial delegate who is appointed by the [[President of Chile|president]].
+
+===Communes===
+The province comprises five [[Communes of Chile|communes]] ([[Spanish language|Spanish]]: ''comunas''), each governed by a municipality consisting of an [[alcalde]] and [[municipal council]]:
+*[[Quillota]] (capital)
+*[[La Calera, Chile|La Calera]]
+*[[Nogales, Chile|Nogales]]
+*[[Hijuelas]]
+*[[La Cruz, Chile|La Cruz]]
+
+==History==
+On March 11, 2010, the communes of [[Limache]] and [[Olmué]] were transferred to [[Marga Marga Province]] under Law 20,368 (signed August 25, 2009).
+
+==Geography and demography==
+The province spans a landlocked area of {{convert|1,113.1|sqkm|0|abbr=on}}, the smallest in the Valparaíso Region with the exception of [[Isla de Pascua]] (Easter Island). According to the 2002 census, Quillota is the third most populous province in the region with a population of 175,917. At that time, there were 151,366 people living in [[urban area]]s, 24,551 people living in [[rural area]]s, 86,620 men and 89,297 women.<ref name="INE"/>
+
+==References==
+<references/>
+
+==External links==
+* {{in lang|es}} [http://www.gobernacionQuillota.gov.cl Official link]
+
+{{Provinces of Chile}}
+{{Communes in Valparaíso Region}}
+
+[[Category:Provinces of Chile]]
+[[Category:Provinces of Valparaíso Region]]

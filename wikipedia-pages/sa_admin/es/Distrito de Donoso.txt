@@ -1,0 +1,64 @@
+{{Ficha de entidad subnacional
+| nombre         = Donoso
+| nombre_oficial = Donoso
+| unidad         = [[Anexo:Distritos de Panamá|Distrito]]
+| capital        = [[Miguel de la Borda]]
+| tipo_superior_1 = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+| superior_1      = {{PAN|3}}
+| tipo_div_1      = Corregimientos
+| div_1           = 5
+| lema            =
+| bandera         = no
+| escudo          = no
+| mapa            = Panamá - Colón - Donoso.svg
+| tamaño_mapa     = 250px
+|mapa1 = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=8}}
+| imagen          = Panama - panoramio (9).jpg
+| pie_de_imagen   = Paisaje de Donoso.
+| latitud         = 
+| longitud        = 
+| superficie      = 1627.8
+| superficie_post = <ref name="censo"/>
+| elevación_media =
+| campo1_nombre   = Temperatura
+| campo1          = 
+| campo2_nombre   = Distancia
+| campo2          = 
+| fundación       = 1864
+| población       = 12274
+| población_año   = 2023
+| población_post  = <ref name="censo"/>
+| gentilicio      = 
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = 
+| página web      =
+}}
+
+El '''distrito de Donoso''' es una de las divisiones que conforma la [[provincia de Colón]], situado en la República de [[Panamá]]. Su capital es San Miguel de la Borda.
+
+Tenía una población de 12.274 habitantes en 2023.<ref name="censo">{{cita web |url=https://www.inec.gob.pa/archivos/P0705547520231109105354CUADRO%2010.pdf |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=17 de diciembre de 2025 |obra=Censos de 2000 a 2023 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+
+== Historia ==
+Fue fundado en 1858 (aunque fue ratificado por ley en 1864) como un distrito del [[departamento de Coclé]], teniendo como capital el pueblo de Boca de Coclé. Posteriormente en 1879, se trasladó su capital a Miguel de la Borda y en 1880 todo el distrito fue traspasado al [[departamento de Colón (Panamá)|departamento de Colón]] (actual provincia de Colón).<ref name="Cocle">{{cita libro |apellido=Rosas Quirós |nombre=Gaspar |enlaceautor= |título=Coclé de Natá |url=http://bdigital.binal.ac.pa/binal/iframes/cldetalle.php?id=178096&from=l|fechaacceso=21 de noviembre de 2016 |idioma= |año= 1998|editorial=Editorial Universitaria|ubicación=Panamá|isbn= |páginas=169-171}}</ref>
+
+El 20 de febrero de 2018 fue segregado parte de su territorio para crear el [[Distrito Especial Omar Torrijos Herrera]].<ref name=Gaceta>{{cita web|url=https://www.gacetaoficial.gob.pa/pdfTemp/28469_B/66175.pdf|título=Ley 11 del 20 de febrero de 2018|autor=[[Gaceta Oficial de Panamá]]|fecha=21 de febrero de 2018|fechaacceso=21 de febrero de 2018}}</ref>
+
+== División político-administrativa ==
+Está conformado por cinco corregimientos:<ref name=Gaceta/>
+
+* [[Miguel de la Borda]]
+* [[Coclé del Norte]]
+* [[El Guásimo (Colón)|El Guásimo]]
+* [[Gobea]]
+* [[Río Indio (Colón)|Río Indio]]
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Distritos de Colón|Donoso]]

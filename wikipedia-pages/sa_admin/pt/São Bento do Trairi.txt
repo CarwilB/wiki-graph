@@ -1,0 +1,66 @@
+{{Info/Município do Brasil
+<!-- GeoID=2411700 -->
+<!-- Cabeçalho -->| nome = São Bento do Trairi
+| foto = São Bento do Trairi-RN.jpg
+| leg_foto = Vista Aérea de São Bento do Trairi-RN
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de São Bento do Trairi.png
+| bandeira = Bandeira de São Bento do Trairi.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|||1907|idade}}}}
+| emancipação = {{nowrap|{{dtlink|31|12|1958|idade}}}}
+| gentílico = trairiense<ref>{{citar web|url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/riograndedonorte/saobentodotrairi.pdf|título=Histórico|publicado=Biblioteca IBGE|acessodata=22 de janeiro de 2012|arquivourl=https://www.webcitation.org/64tSmKtJS?url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/riograndedonorte/saobentodotrairi.pdf|arquivodata=2012-01-23|urlmorta=no}}</ref>
+| lema = 
+| prefeito<!--enciclopédia, sem apelidos! --> = RAFAEL DOS SANTOS MATIAS<ref>[https://g1.globo.com/rn/rio-grande-do-norte/eleicoes/2024/noticia/2024/10/07/eleicoes-2024-rafael-matias-do-psd-e-eleito-prefeito-de-sao-bento-do-trairi-no-1o-turno.ghtml] Portal G1 - acessado em 10 de janeiro de 2025</ref>
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| mandato_início = 2025
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 9
+| mapa = Brazil Rio Grande do Norte São Bento do Trairi location map.svg
+| latP = S
+| latG = 06
+| latM = 20
+| latS = 31
+| lonP = O
+| lonG = 36
+| lonM = 05
+| lonS = 13
+| estado = Rio Grande do Norte
+| região_intermediária = Natal
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = Santa Cruz
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = [[Santa Cruz (Rio Grande do Norte)|Santa Cruz]], [[Japi]], [[Coronel Ezequiel]], [[Jaçanã]] e [[Cuité (Paraíba)|Cuité]]/PB
+| dist_capital = 137
+<!-- Características geográficas -->| área = 190.818
+| área_ref = <ref name ="cidades.ibge.gov.br">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/rn/sao-bento-do-trairi.html</ref>
+| população = 3892
+| data_pop = Estimativa IBGE/2024<ref name ="cidades.ibge.gov.br"/>
+| altitude = 384
+| clima = Semi-árido
+| sigla_clima = <!-- Indicadores -->
+| CEP = 59210-000
+| idh = 0.595 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=4 de setembro de 2013}}</ref>
+| gini = 0,49
+| data_gini = 2020
+| pib = {{formatnum:45623.72}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2021/ |titulo=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=20 de janeiro de 2025}}</ref>
+| pib_per_capita = 10047.06
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| site_prefeitura = {{Url|https://pmsbt.rn.gov.br}}
+| site_câmara = {{Url|https://www.saobentodotrairi.rn.leg.br}}
+}}
+'''São Bento do Trairi''', município no estado do [[Rio Grande do Norte]] ([[Brasil]]). De acordo com Estimativa realizado pelo Instituto Brasileiro de Geografia e Estatística no ano 2024, sua população é de 3.892 habitantes. Área territorial de 190 km².
+
+{{Referências}}
+{{esboço-municípiosbr/Rio Grande do Norte}}
+{{Portal3|Rio Grande do Norte}}
+
+{{DEFAULTSORT:Sao Bento Trairi}}
+[[Categoria:Municípios do Rio Grande do Norte]]
+[[Categoria:Fundações no Rio Grande do Norte em 1958]]

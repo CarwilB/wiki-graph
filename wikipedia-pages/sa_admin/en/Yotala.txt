@@ -1,0 +1,230 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Yotala
+|other_name             =
+|native_name            =
+|nickname               =
+|settlement_type        = Town
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = Catedral de Yotala.JPG
+|imagesize              =
+|image_caption          = Catedral de la Villa de Yotala
+|image_flag             = 
+|flag_size              = 
+|image_seal             =
+|seal_size              =
+|image_shield           =
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              =
+|mapsize                =
+|map_caption            =Location within Chuquisaca Department
+|image_map1             =
+|mapsize1               =
+|map_caption1           =
+|image_dot_map          =
+|pushpin_map            =Bolivia<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location within Bolivia
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       ={{flag|Bolivia}}
+|subdivision_type1      = [[Departments of Bolivia|Department]]
+|subdivision_name1      = [[Chuquisaca Department]]
+|subdivision_type2      = [[Provinces of Bolivia|Province]]
+|subdivision_name2      = [[Oropeza Province]]
+|subdivision_type3      = [[Municipalities of Bolivia|Municipality]]
+|subdivision_name3      = [[Yotala Municipality]]
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|leader_title2          =
+|leader_name2           =
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|established_title      = <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      =
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         =
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           =<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               = 2001
+|population_footnotes           =<ref>[http://www.ine.gob.bo www.ine.gov.bo] (Spanish)</ref>
+|population_note                =
+|population_total               = 1538
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =
+|population_blank2_title        =Religions
+|population_blank2              =
+|population_density_blank1_km2 =
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = BOT
+|utc_offset             = -4
+|timezone_DST           =
+|utc_offset_DST         =
+|coordinates            = {{coord|19|14|S|65|16|W|region:BO|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                =
+|footnotes              =
+}}
+'''Yotala''' is a small town in the [[Chuquisaca Department]] of [[Bolivia]].
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location =  Yotala, elevation {{convert|2520|m|ft|abbr=on}}
+|Jan high C = 	25.6
+|Feb high C = 	25.3
+|Mar high C = 	25.3
+|Apr high C = 	25.5
+|May high C = 	25.0
+|Jun high C = 	24.3
+|Jul high C = 	24.2
+|Aug high C = 	25.1
+|Sep high C = 	26.1
+|Oct high C = 	27.0
+|Nov high C = 	27.3
+|Dec high C = 	26.5
+| year high C = 	
+|Jan mean C = 	18.7
+|Feb mean C = 	18.5
+|Mar mean C = 	18.2
+|Apr mean C = 	17.5
+|May mean C = 	15.0
+|Jun mean C = 	13.4
+|Jul mean C = 	13.3
+|Aug mean C = 	14.9
+|Sep mean C = 	16.8
+|Oct mean C = 	18.4
+|Nov mean C = 	19.2
+|Dec mean C = 	19.0
+| year mean C = 	
+|Jan low C = 	11.7
+|Feb low C = 	11.7
+|Mar low C = 	11.0
+|Apr low C = 	9.4
+|May low C = 	5.0
+|Jun low C = 	2.4
+|Jul low C = 	2.2
+|Aug low C = 	4.6
+|Sep low C = 	7.4
+|Oct low C = 	9.8
+|Nov low C = 	11.0
+|Dec low C = 	11.6
+| year low C = 	
+|precipitation colour = green	
+|Jan precipitation mm = 	131.3
+|Feb precipitation mm = 	105.5
+|Mar precipitation mm = 	72.8
+|Apr precipitation mm = 	18.0
+|May precipitation mm = 	3.0
+|Jun precipitation mm = 	2.5
+|Jul precipitation mm = 	2.2
+|Aug precipitation mm = 	5.6
+|Sep precipitation mm = 	22.1
+|Oct precipitation mm = 	41.6
+|Nov precipitation mm = 	47.8
+|Dec precipitation mm = 	99.0
+|year precipitation mm = 	
+| Jan precipitation days = 	12.3
+| Feb precipitation days = 	9.5
+| Mar precipitation days = 	7.3
+| Apr precipitation days = 	2.5
+| May precipitation days = 	0.7
+| Jun precipitation days = 	0.5
+| Jul precipitation days = 	0.4
+| Aug precipitation days = 	1.2
+| Sep precipitation days = 	3.0
+| Oct precipitation days = 	4.8
+| Nov precipitation days = 	6.0
+| Dec precipitation days =	9.8
+| year precipitation days =	
+| Jan humidity = 	66.5
+| Feb humidity = 	69.4
+| Mar humidity = 	66.0
+| Apr humidity = 	63.6
+| May humidity = 	56.0
+| Jun humidity = 	52.0
+| Jul humidity = 	50.4
+| Aug humidity = 	47.8
+| Sep humidity = 	53.3
+| Oct humidity = 	55.1
+| Nov humidity = 	57.0
+| Dec humidity = 	62.2
+| year humidity =	
+|source 1 = Servicio Nacional de Meteorología e Hidrología de Bolivia<ref name="SENAMHI">
+{{cite web 
+| archive-url = https://web.archive.org/web/20180607025840/http://senamhi.gob.bo/index.php/sismet
+| archive-date = 7 June 2018
+| url = http://senamhi.gob.bo/index.php/sismet
+| title = Base de datos Sistema Meteorológico–SISMET
+| publisher = Servicio Nacional de Meteorología e Hidrología de Bolivia
+| language = es
+| access-date = 15 June 2024}}</ref><ref name="SENAMHI2">
+{{cite web 
+| url = https://www.scribd.com/document/542708736/Indices-Agrometeorologicos-149-Estaciones
+| title = índices climáticos para 149 estaciones meteorológicas en Bolivia
+| publisher = Servicio Nacional de Meteorología e Hidrología de Bolivia
+| language = es
+| access-date = 15 June 2024}}</ref>
+}}
+
+== References ==
+{{Reflist}}
+
+{{Chuquisaca Department}}
+
+[[Category:Populated places in Chuquisaca Department]]
+
+{{Chuquisaca-geo-stub}}

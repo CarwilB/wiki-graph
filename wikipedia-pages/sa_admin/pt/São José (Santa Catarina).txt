@@ -1,0 +1,422 @@
+{{Info/Município do Brasil
+<!--GeoID=4216602-->
+<!--Cabeçalho-->| nome = São José
+| imagem_montagem = {{multiple image
+ | perrow         = 1/2/1/2/1
+ | border         = infobox
+ | total_width    = 280
+ | caption_align = center
+ | image1 = SaoJose058.JPG
+ | caption1 = [[Panorama urbano]] de São José
+ | image2 = Igreja-matriz-sj.png
+ | caption2 =[[Igreja Matriz de São José (São José)|Igreja Matriz de São José]] 
+ | image3 = Centro-sj.png
+ | caption3 =Casa de Cultura e [[Teatro Adolpho Mello]]
+ | image4 = Beira-mar-sj.png
+ | caption4 =Beira-Mar de São José
+ | image5 = Monumento-açorianos-sj.png
+ | caption5 = Monumento aos [[Açores (região autónoma)|Açorianos]]
+ | image6 = Sobre-Voo Policia Militar ao fundo Pedra Branca By Mauro Soares - panoramio (cropped).jpg
+ | caption6 =[[Morro da Pedra Branca]]
+ | image7 = Baia-sj2.png
+ | caption7 =[[Baía Sul|Baía de São José]]
+ | color  = white
+ | footer =
+}}
+| apelido = <!--Dados gerais-->
+| brasão = Brasão Municipal de São José.png
+| bandeira = Bandeira Municipal de São José.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de São José
+| emancipação = {{nowrap|{{dtlink|1|3|1833|idade}}}}
+| aniversário = 19 de março
+| capital_link = Florianópolis
+| fundação = {{nowrap|{{dtlink|26|10|1750|idade}}}}
+| gentílico = josefense <ref>[https://cidades.ibge.gov.br/brasil/sc/sao-jose/panorama São José - IBGE Cidades]</ref>
+| lema = 
+| prefeito = Orvino Coelho de Ávila<ref>[https://g1.globo.com/sc/santa-catarina/noticia/2021/01/01/prefeito-e-vereadores-de-sao-jose-tomam-posse-veja-lista-de-eleitos.ghtml Prefeito e vereadores de São José tomam posse] Portal G1 - acessado em 2 de janeiro de 2021</ref>
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| mandato_início = 2021
+| fim_mandato = 2024 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 19
+<!--Localização-->| mapa = SantaCatarina Municip SaoJose.svg
+| latP = S
+| latG = 27
+| latM = 36
+| latS = 57
+| lonP = O
+| lonG = 48
+| lonM = 37
+| lonS = 54
+| estado = Santa Catarina
+| mesorregião = [[Mesorregião da Grande Florianópolis|Grande Florianópolis]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Florianópolis|Florianópolis]]
+| data_microrregião = IBGE/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Região Metropolitana de Florianópolis|Florianópolis]]
+| vizinhos = [[Antônio Carlos (Santa Catarina)|Antônio Carlos]], [[Biguaçu]], [[Florianópolis]], [[Palhoça]], {{nowrap|[[Santo Amaro da Imperatriz]]}}, {{nowrap|[[São Pedro de Alcântara]]}}
+| dist_capital = 6
+<!--Características geográficas-->| área = 150.499
+| área_pos = [[Lista de municípios do Brasil por área|BR: 5007º]]
+| área_ref = 
+| população = 289949
+| data_pop = Censo IBGE/2024<ref name="IBGE_Pop_2024">{{citar web |url=https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2024/estimativa_dou_2024.pdf IBGE| obra = |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=29 de agosto de 2024 |acessodata = 31 de agosto de 2024}}</ref>
+| população_ref = 
+| altitude = 0
+| população_pos = [[Lista de municípios de Santa Catarina por população|SC: 4º]]
+| clima = [[subtropical]]
+| sigla_clima = Cfa
+<!--Indicadores-->| idh = 0.809 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de agosto de 2013}}</ref>
+| gini = 0.44
+| data_gini = 2010
+| gini_ref = <ref name="Atlas Brasil">{{citar web |url=http://www.atlasbrasil.org.br/2013/pt/perfil_m/sao-jose_sc |titulo=Atlas do desenvolvimento humano no Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de agosto de 2013}}</ref>
+| pib = {{formatnum|11290447.89}}
+| data_pib = IBGE/2019<ref name="IBGE_PIB">{{citar web |url=http://cod.ibge.gov.br/1RPXC |titulo=Produto Interno Bruto dos Municípios 2019 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=17 de novembro de 2022}}</ref>
+| pib_per_capita = {{formatnum|45787.06}}
+| data_pib_per_capita = IBGE/2019<ref name="IBGE_PIB"/>
+| padroeiro = [[São José]]
+| site = [https://www.saojose.sc.gov.br/ saojose.sc.gov.br]
+| site_câmara = [https://www.cmsj.sc.gov.br/ cmsj.sc.gov.br]
+}}
+'''São José''' é um [[Município brasileiro|município]] localizado no estado de [[Santa Catarina]], na [[região Sul do Brasil]]. Sua população, de acordo com o Censo do [[IBGE]] de 2022, é de 270 299 habitantes.<ref>{{citar web|url=https://www.ibge.gov.br/cidades-e-estados/sc/sao-jose.html|titulo=Cidades e Estados: São José - SC|acessodata=20/03/2024|website=IBGE}}</ref> É a quarta maior cidade de Santa Catarina e a [[Lista de municípios do Brasil acima de cem mil habitantes|104ª do Brasil]]. Faz parte da [[Região metropolitana de Florianópolis|Grande Florianópolis]], com sua [[Zona urbana|área urbana]] [[Conurbação|conurbada]] com as cidades vizinhas de [[Florianópolis]], [[Biguaçu]] e [[Palhoça]], formando assim, a [[Lista de concentrações urbanas do Brasil por população|maior concentração urbana de Santa Catarina]].
+
+A cidade, colonizada principalmente por [[Açores|açorianos]], é povoada desde o [[século XVIII]] e teve diversas fases na sua história, tendo sido por décadas um importante entreposto comercial, recebido os primeiros [[Imigração alemã no Brasil|colonos alemães]] de Santa Catarina e atingido um status de eixo comercial e cultural. Uma fase de decadência se seguiu entre os anos 1930 e 1960, quando o município virou uma [[cidade dormitório]] de Florianópolis, que compartilha sua única fronteira terrestre com São José. Essa situação mudou nos últimos anos, e apesar da capital ainda influenciar o município vizinho, seus bairros principais hoje são tão relevantes quanto os de Florianópolis, a economia é uma das maiores do estado, tendo o [[Lista de municípios de Santa Catarina por PIB|5º PIB de Santa Catarina]],<ref name=":1">{{Citar web|url=https://cidades.ibge.gov.br/brasil/sc/sao-jose|titulo=cidades.ibge.gov.br/brasil/sc/sao-jose|acessodata=2018-06-04|obra=cidades.ibge.gov.br}}</ref> foi uma das 20 cidades que mais geraram emprego no Brasil no ano de 2019<ref>{{Citar periódico|ultimo=|primeiro=|data=|outros=Infográfico|titulo=Onde estão as vagas? Veja as cidades que mais geraram emprego em 2019|url=https://economia.ig.com.br/2019-09-26/onde-estao-as-vagas-veja-as-cidades-que-mais-geraram-emprego-em-2019.html|jornal=IG|lingua=pt-br|acessodata=}}</ref> e a qualidade de vida tem índices elevados para os padrões brasileiros.<ref>{{citar web|url=http://atlasbrasil.org.br/2013/pt/perfil_m/sao-jose_sc|titulo=Atlas do Desenvolvimento Humano - São José, SC|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref>
+
+A economia josefense hoje é bastante diversa, sendo hoje baseada na comércio e serviços, além da indústria, que é praticamente inexistente na capital catarinense e acaba sendo suprida por São José e as outras cidades da região. A cidade se destaca na [[Tecnologia|indústria tecnológica]], [[Indústria alimentar|de alimentos]], [[Indústria metalmecânica|metalmecânica]] e na construção civil, sendo uma das dez cidades mais verticalizadas proporcionalmente do Brasil.<ref name=":2">{{citar web|url=https://ndonline.com.br/florianopolis/noticias/especial-industrias-em-sao-jose|titulo=Produtos desenvolvidos em São José ganham o mundo|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref><ref name=":0">{{citar web|url=http://www.diariodolitoral.com.br/cotidiano/santos-e-a-cidade-mais-verticalizada-do-brasil-aponta-pesquisa/117399/|titulo=Santos é a cidade mais verticalizada do Brasil, aponta pesquisa|data=21/09/2018|acessodata=|publicado=Diário do Litoral|ultimo=|primeiro=|citacao="Ainda no top dez, aparecem empatadas com 38%, a cidade paulista [[São Caetano do Sul]], a capital carioca [[Rio de Janeiro]] e a catarinense [[Florianópolis]]; seguidas da mineira [[Viçosa (Minas Gerais)|Viçosa]] (36%) e da catarinense [[São José (Santa Catarina)|São José]] (34%)."}}</ref>
+
+A região mais urbanizada fica em volta da [[BR-101]], tendo bairros recentes e verticais como o Kobrasol e grandes loteamentos urbanos. Também passam pela cidade a [[BR-282]] e o [[Contorno Viário da Grande Florianópolis]]. A parte a oeste ainda possui morros com vegetação abundante e áreas rurais. No sul fica o [[Aeroclube de Santa Catarina]]. São José ainda sedia campi do [[Instituto Federal de Santa Catarina|Instituto Federal de Santa Catarina (IFSC)]], da [[Universidade do Vale do Itajaí|Universidade do Vale do Itajaí (Univali)]] e da [[Universidade Estácio de Sá]].
+
+==História==
+
+=== Carijós ===
+Até a chegada dos colonizadores, no século XVI, todo o atual litoral do estado de Santa Catarina era habitado por índios guaranis chamados pelos europeus de [[carijó]]s. 
+
+Um sítio arqueológico na Ilha da Casca, próxima a foz do [[Rio Imaruí|rio Maruim]], comprova a presença dos carijós em São José, que devem ter aproveitado as vantagens geográficas da região para sua subsistência. Eram um povo receptivo aos estrangeiros, o que não impediu seu desaparecimento - foram escravizados pelos habitantes do [[Florianópolis|Desterro]] e, no século XVII, já eram raros.<ref name=":3">{{citar web|url=https://repositorio.ufsc.br/xmlui/bitstream/handle/123456789/88531/248380.pdf?sequence=1&isAllowed=y|titulo=Centro histórico de São José (SC): patrimônio e memória urbana|data=|acessodata=|publicado=|ultimo=Silva|primeiro=Tatiana Cristina da}}</ref>
+
+=== Ocupação da terra e colonização açoriana  ===
+O controle efetivo da [[região Sul do Brasil]], palco de conflitos fronteiriços entre [[Império Espanhol|espanhóis]] e [[Reino de Portugal|portugueses]], e a necessidade de mais matérias-primas e produtos para a venda tornava necessária a ocupação do território por parte dos lusitanos. Moradores dos [[Açores]], tendo problemas no arquipélago com a superpopulação, terremotos e epidemias, sugeriram a mudança para a então [[Colonização portuguesa da América|América Portuguesa]].
+
+O [[José da Silva Pais|Brigadeiro José da Silva Paes]], nomeado o primeiro presidente da província de Santa Catarina, pediu logo que chegou a [[Ilha de Santa Catarina]] em 1739 que viessem os [[Açores|açorianos]] para ocupar a região, pois a ocupação ainda era precária - haviam apenas três núcleos de povoação: [[São Francisco do Sul]], [[Florianópolis|Nossa Senhora do Desterro]] e [[Laguna (Santa Catarina)|Santo Antonio dos Anjos da Laguna]] - o que deixaria a terra propensa a invasões, e para aumentar a mão-de-obra e o plantio.
+
+As primeiras levas iniciaram em 1748. Em 1750 chegaram à capitania do [[Desterro]] 182 casais açorianos que, no dia 26 de outubro de 1750, fundaram o povoado de [[São José da Terra Firme]], o quatro mais antigo de Santa Catarina. No fim do mesmo ano, a população chegou a 338 pessoas. Em 1755 já existia uma [[Igreja Matriz de São José (São José)|pequena capela]] e um vigário, José Antônio da Silveira. O título de [[freguesia]] chegou seis anos após a fundação do povoado, em 1756. O povoamento do território, partindo do povoado original, seguiu pelo litoral e pelo vale do rio Maruim.<ref name=":3" />
+
+O território de São José ia de [[Lages]] ao [[Estreito (Florianópolis)|Estreito]]. Com o passar dos anos, O vice-rei [[Luís de Vasconcelos e Sousa, 4.º Conde de Figueiró|Luís de Vasconcelos e Sousa]] ordenou, em 1787, que o governador da província na época, [[José Pereira Pinto]], convocasse o [[alferes]] [[Antônio José da Costa]], para fazer o reconhecimento da terra, o que levou ao estabelecimento de um caminho ligando as duas cidades e, por consequência, a Serra Catarinense ao litoral. 
+
+Isso torna São José um entreposto comercial com os anos, visto que Lages passou a ser parte do [[Caminho das Tropas|Caminho dos Tropeiros]], além da atividade portuária que envolvia a ligação com Desterro. Em 1797 já havia uma população de 2079 pessoas, entre pessoas livres e escravizadas, e povoações agrícolas indo de [[Barreiros (São José)|Barreiros]] a Ponta de Baixo.<ref name=":3" />
+
+=== Período imperial ===
+O [[século XIX]] trouxe diversas mudanças políticas e econômicas no mundo e também na freguesia. A abertura dos portos, resultado das [[Guerras Napoleônicas]] e do fim do [[Pacto Colonial]], permite que a cidade seja visitada por estrangeiros a partir de 1808. Após a [[Independência do Brasil]] em 1822, uma nova leva de ocupação da terra começa em 1829, com a chegada dos primeiros [[Imigração alemã em Santa Catarina|imigrantes alemães]]. As 146 famílias com 523 indivíduos vindos principalmente de [[Bremen]], no norte da atual [[Alemanha]], criam a colônia de [[São Pedro de Alcântara]], que é a primeira colônia alemã de Santa Catarina.<ref name=":4">FARIAS, Vilson Francisco de. São José: 250 anos: natureza, história e cultura. 2ª ed. São José: Edição do autor, 2001.</ref><ref>PAIVA, J. G. de O. Memória Histórica sobre a colônia alemã de São Pedro de Alcântara. In: PHILIPPI, Aderbal João. São Pedro de Alcântara – A primeira colônia alemã de Santa Catarina. 1995.</ref>
+
+Em 1 de março de 1833 São José passou de freguesia a vila, formada por duas freguesias, São José e Enseada do Brito, hoje parte da [[Palhoça]]. O limite norte, com Biguaçu - a época, [[São Miguel da Terra Firme|São Miguel]] - no rio Carolina, permanece o mesmo até hoje. Em 1844, São Pedro de Alcântara também se torna uma freguesia. Os alemães encontraram dificuldades na adaptação por lá, tendo se espalhado pelo território josefense e vizinhanças, tanto na agricultura quanto no comércio, com destaque para a Praia Comprida.<ref name=":4" />
+
+Durante a [[Guerra dos Farrapos]] as [[Exército Imperial Brasileiro|forças imperiais]] buscavam impedir os avanços dos gaúchos em Santa Catarina, estando presentes em São José e [[Florianópolis|Desterro]]. O tenente-coronel [[Joaquim Xavier Neves]], morador de São José e considerado amigo de [[David Canabarro]], foi eleito em [[Laguna (Santa Catarina)|Laguna]] presidente da efêmera [[República Juliana]] em 1839. Porém, ele nunca pode sequer deixar a cidade, que estava sob o controle do Império. A guerra não chegou a ameaçar a cidade após a vitória imperial sobre os farroupilhas no Morro dos Cavalos, perto do [[rio Maciambu]].<ref>{{citar livro|título=Entre contrabando e iniquidades: outros aspectos da República Juliana - Laguna - 1836-1845|ultimo=COSTA|primeiro=Gustavo Marangoni da|editora=UFSC|ano=2006|local=Florianópolis|acessodata=}}</ref><ref>{{citar livro|url=https://www2.senado.leg.br/bdsf/bitstream/handle/id/530470/001077982_Garibaldi_Guerra_Farrapos.pdf?sequence=1|titulo=Garibaldi e a Guerra dos Farrapos|ultimo=Collor|primeiro=Lindolfo|data=2016|editora=Edições do Senado Federal|local=Brasília|isbn=|pagina=270-318}}</ref>
+
+São José recebeu a visita do [[Pedro II do Brasil|Imperador Dom Pedro II]] e [[Teresa Cristina de Bourbon-Duas Sicílias|Imperatriz Teresa Cristina]] em 1845. Joaquim Xavier Neves comandou um grupo de homens que construiu pontes até as águas termais de Caldas do Cubatão, que passou a se chamar [[Caldas da Imperatriz]] após a visita, e teve sua casa, o Solar dos Neves, convertido em Paço Imperial.<ref name="Prefeitura de São José">{{citar web|url=http://www.pmsj.sc.gov.br/index.php?option=com_content&view=article&id=26&Itemid=47|título=História do Município|publicado=www.pmsj.sc.gov.br}} — ''Prefeitura de São José. Página visitada em 08/08/2012.''.</ref> O casal imperial fez doações em dinheiro para a Igreja Matriz e assistiu a uma corrida de cavalos e laçamento de bois em [[Campinas (São José)|Campinas]], evento esse que atraiu moradores da serra catarinense e gaúchos para a cidade e é considerado o primeiro [[rodeio]] organizado da história do país.<ref>{{citar web|url=https://www.nsctotal.com.br/noticias/rodeio-nacional-em-sao-jose-aguarda-mais-de-50-mil-pessoas|titulo=Rodeio nacional em São José aguarda mais de 50 mil pessoas|data=25/04/2014|acessodata=24/05/2020|publicado=[[Diário Catarinense]]|ultimo=|primeiro=}}</ref><ref name=":4" />
+
+Em 4 de maio de 1856, São José foi declarada cidade. [[Feliciano Nunes Pires]] foi nomeado presidente da província. Outras freguesias foram criadas e passaram a ser divisões de São José, mesmo antes dela se tornar cidade: [[Garopaba]] em 1846, [[Santo Amaro da Imperatriz|Santo Amaro do Cubatão]] em 1854 e Palhoça, antes uma terra comunal de Desterro, passa a fazer parte de São José oficialmente em 1852 e se torna freguesia em 1882. Em 1886, Águas Mornas se torna freguesia também. 
+
+O período imperial foi bastante benéfico para São José, que dispunha de um grande território, exportava café, tapioca, açúcar, lenha, farinha de mandioca, cachaça e algodão, além de produtos de linho e da pesca, tinha um comércio ativo e era um entreposto comercial, com as duas rotas de tropas de bois que desciam da Serra Catarinense para a capital - a que ia por [[Angelina (Santa Catarina)|Angelina]], margeando o rio Maruim, e a que ia por [[Rancho Queimado]], chegando ao litoral pela atual [[Santo Amaro da Imperatriz]] - ficando nas terras josefenses. A atividade [[Olaria|oleira]] também se torna bastante comum. No período imperial, São José era um eixo comercial e cultural em Santa Catarina, a ponto do primeiro teatro do estado e o terceiro do Brasil, o [[Teatro Adolpho Mello]], ter sido fundado na cidade em 1854. A cidade tinha 20.602 pessoas em 1866.<ref name=":3" /><ref name=":4" />
+
+=== Do fim do Império aos anos 1940 ===
+Em 1894, acontece a emancipação da Palhoça, a primeira grande perda de território de São José. Essa emancipação foi também uma represália do governador de Santa Catarina devido ao apoio de lideranças josefenses aos revoltosos na [[Revolta da Armada]] de 1893, que pretendia restaurar a [[Império do Brasil|monarquia]], [[Proclamação da República do Brasil|derrubada em 1889]]. A nova cidade ficou com mais da metade do território josefense na época. Nesse mesmo ano, surge a freguesia de Angelina após a divisão da freguesia de São Pedro de Alcântara.
+
+Em 1910, foi criada a [[Usina Gustavo Richard|Usina de Geração de Energia Gustavo Richard]], na região do Salto do Maruim, localidade na época habitada principalmente por alemães. Essa usina hidrelétrica começou a ser construida em 1907 e foi a principal fonte de eletricidade para São José, Biguaçu e Florianópolis por décadas. Desativada em 1972, foi tombada como patrimônio em 2005 e foi restaurada e reaberta em 2024.<ref name=":5" /><ref>PISTORELLO, D. Uma usina hidrelétrica ao sul do Brasil: tombar para preservar?. '''Faces da História''', v. 4, n. 1, p. 30-52, 7 set. 2017.</ref> Em 1941, é instalado na mesma região o [[Instituto de Psiquiatria de Santa Catarina|Hospital Colônia Santana]], voltado a [[psiquiatria]], que acaba renomeando a localidade: o bairro Colônia Santana, formado no entorno do hospital, se torna o único bairro interiorano com características urbanas por muito tempo. O hospital manteve as atividades até 1995, e sua estrutura deu lugar ao atual [[Instituto de Psiquiatria de Santa Catarina]], criado no ano seguinte.<ref name=":03">{{citar web |ultimo=Marcela |primeiro=Ximenes |url=https://ndmais.com.br/noticias/colonia-santana-o-hospital-que-deu-origem-ao-bairro-em-sao-jose/ |titulo=Colônia Santana: o hospital que deu origem ao bairro em São José |data=18/01/2020 |acessodata=06/04/2021 |publicado=ND+}}</ref>
+
+Até a década de 1930, São José permanece com bastante relevância, entretanto, vários fatores começam a iniciar uma dramática decadência: as atividades comerciais da região do Vale do Itajaí começam a superar em importância as de Florianópolis e São José, o rodoviarismo iniciado pela inauguração da [[Ponte Hercílio Luz]] diminui a importância da posição geográfica portuária e de entreposto comercial com a capital, e finalmente, a perda de território para Florianópolis em 1944, quando o Distrito de João Pessoa, a atual parte continental de Florianópolis, passa a fazer parte do cidade vizinha. Com isso, a cidade perdeu um dos seus principais portos e uma parte da sua relevância. [[Rancho Queimado]], até então parte da Palhoça, foi anexado a São José como compensação.<ref name=":3" />
+
+=== Crescimento populacional e urbano ===
+A decadência josefense fez com que a cidade se colocasse como [[cidade dormitório]] de Florianópolis. Combinado a isso, migrações do campo para a cidade, em especial do Oeste Catarinense, e de outros estados como o Rio Grande do Sul fizeram com que a população da cidade começasse a crescer a partir dos anos 1950. O avanço urbano leva a criação do distrito de Barreiros em 1959 e formação de conjuntos habitacionais e loteamentos públicos e privados. A expansão é aumentada pela construção da [[BR-101]] e o desenvolvimento de Florianópolis, que cresce com as instalações da [[Universidade Federal de Santa Catarina]] e da [[Eletrobras CGT Eletrosul|Eletrosul]] e gera demanda habitacional. Há ainda uma mudança territorial, com a emancipação de Angelina e Rancho Queimado em 1961 e 1962, respectivamente.<ref>SUGAI, Maria Inês. Segregação Silenciosa: Investimentos Públicos e Distribuição Sócio-Espacial na Área Conurbada de Florianópolis. Tese de Doutorado: USP. 2002.</ref>
+
+Além de Barreiros, as regiões de [[Campinas (São José)|Campinas]] - chamada assim por ser uma região de pastagem até então - e Picadas, ocupada por fazendas há séculos, são loteadas desde então. Os Conjunto Habitacionais Bela Vista começam a ser construidos nas margens da BR-101 na década de 1960, se transformando oficialmente no atual bairro Bela Vista em 1973. Na região de Picadas no Norte, onde já haviam sido construídos loteamentos menores, o Conjunto Habitacional Forquilhinhas é entregue em 1977, renomeando o bairro com seu nome. Ambos são de iniciativa pública. A iniciativa privada, por sua vez, cria loteamentos como o [[Kobrasol]] em 1977, criado em Campinas na área onde havia o [[Aeroclube de Santa Catarina|Aeroclube]], mudado para a área do [[Sertão do Maruim]] onde permanece até hoje, e se tornando um bairro posteriormente. Nos anos 1980 surgem outros loteamentos no entorno dos primeiros, formando e consolidando bairros como Ipiranga, Serraria e Flor de Nápolis. Os bairros do interior também são ocupados, regularmente ou não, a medida que as terras mais próximas a BR-101 vão acabando.
+
+Instalada em terras que antes pertenciam a [[Max Hablitzel|Max Habitzel]] - outra parte delas se torna a [[Fazenda Santo Antônio (São José)|Fazenda Santo Antônio]] - foi também criada o Distrito Industrial entre 1973 e 1974. A cidade passa de 31 mil habitantes nos anos 1960 para 87 mil nos anos 1980, passando dos 100 mil habitantes até o final da década.<ref name=":3" />
+
+=== Anos recentes ===
+São José acabou estabelecendo núcleos urbanos que diminuem um pouco a dependência de Florianópolis e afastando a cidade do estereótipo da cidade dormitório. As posições geográficas de Barreiros, do distrito de Campinas e de Forquilhinha os tornam centralidades locais, com variedade de serviços e comércio. A instalação do Distrito Industrial e de outros equipamentos urbanos como o Centro de Abastecimento de Alimentos (CEASA) em Barreiros ainda nos anos 1970, o [[Hospital Regional de São José|Hospital Regional de São José Doutor Homero de Miranda Gomes]] na Praia Comprida e o primeiro ''shopping center'' de Santa Catarina, o Shopping Itaguaçu, nos anos 1980, demonstram como a cidade deixou a decadência para trás e voltou a se desenvolver num novo cenário econômico e social. Em 1991, a população chegou a 139.493 habitantes e continuou em crescimento.<ref name=":7">{{citar web|url=https://saojose.sc.gov.br/downloads/Planejamento/Plano%20Municipal%20de%20Saneamento%20B%C3%A1sico%20de%20S%C3%A3o%20Jos%C3%A9/Produto%202%20-%20Diagnostico%20Territorial%2C%20Ambiental%20e%20Socioeconomico.pdf|titulo=REVISÃO DO PLANO MUNICIPAL DE SANEAMENTO BÁSICO DE SÃO JOSÉ/SC|acessodata=26/09/2024}}</ref> 
+
+Uma última mudança territorial acontece quando [[São Pedro de Alcântara]] se torna município em 1995. Mais uma vez São José perdeu cerca da metade do território até então e a maior parte da sua região rural.<ref name="IBGE">{{citar web | url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1 | título=História do Município | publicado=www.ibge.gov.br | acessodata=2012-08-09 | arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1 | arquivodata=2012-04-30 | urlmorta=yes }} — ''Cidades@ - São José. Página visitada em 08/08/2012.''.</ref> Os anos 1990 trazem mais avanço urbano, aumento de comunidades carentes de infraestrutura e a resolução de disputas territoriais com a Palhoça, onde o [[Morro da Pedra Branca]] passa ser oficialmente parte de São José.<ref name=":02">{{citar web|url=https://ndonline.com.br/florianopolis/noticias/pedra-branca-e-marco-historico-nos-limites-entre-palhoca-e-sao-jose-e-monumento-natural-esquecido|titulo=Pedra Branca é marco histórico nos limites entre Palhoça e São José e monumento natural esquecido|data=17/04/2016|acessodata=08/02/2020|publicado=[[Notícias do Dia]]|ultimo=Rosa|primeiro=Edson}}</ref> Uma nova expansão viária começa no fim dos anos 1990 e início dos anos 2000, com uma gestão municipal que investiu agressivamente em infraestrutura, em especial no asfaltamento e abertura de novas avenidas como a Avenida das Torres e a Beira-Mar de São José, feita sobre um aterro, que gerou polêmicas quanto a questões de patrimônio e meio ambiente, mas serviu para recuperar a orla do distrito de Campinas. Essa gestão acabou catapultando o prefeito josefense [[Dário Berger]] a [[Lista de prefeitos de Florianópolis|prefeitura de Florianópolis]] nos anos seguintes e ao [[Senado Federal do Brasil|Senado]] na sequência.<ref name=":3" />
+
+O Censo de 2010 contabilizou que a cidade passou dos 200 mil habitantes, e a estimativa mais recente do [[Instituto Brasileiro de Geografia e Estatística|IBGE]], de 2024, coloca a população em mais de 289 mil habitantes.<ref name=":8">{{citar web|url=https://cidades.ibge.gov.br/brasil/sc/sao-jose/panorama|titulo=Panorama: São José|acessodata=26/09/2024|website=cidades.ibge.gov.br}}</ref> Projeções indicam que a cidade pode chegar aos 300 mil ainda nesta década.<ref name=":7" /> Apesar de manter seu índices de desenvolvimento urbano e econômicos em alta, a cidade sofre com problemas urbanos, como de drenagem, com algumas partes da cidade sofrendo alagamentos, e mobilidade, com congestionamentos e sistema de transporte deficiente. São planejadas novas vias para estruturar melhor a cidade, como a Avenida Beira-Rio, cujo primeiro trecho está em construção nas margens do Rio Forquilhas, e a Beira-mar de Barreiros, no litoral norte.<ref>{{citar web|url=https://ndmais.com.br/infraestrutura/beira-mar-de-barreiros-sao-jose-avanca-nas-negociacoes-para-financiamento-internacional/|titulo=Beira-mar de Barreiros: São José avança nas negociações para financiamento internacional|data=28/03/2024|acessodata=10/09/2024|website=ND+}}</ref><ref>{{citar web|url=https://tudoaquisc.com/ultimas-noticias/sao-jose-tera-pacotao-de-obras-que-custara-mais-de-r-50-milhoes/|titulo=São José terá pacotão de obras que custará mais de R$ 50 milhões|data=13/03/2023|acessodata=27/06/2023|website=Tudo Aqui SC}}</ref> Em 2024, o [[Contorno Viário da Grande Florianópolis]], [[Rodoanel|arco viário]] que passa no interior do município, passou a ajudar a diminuir o tráfego na BR-101, rodovia que está saturada pelo trânsito urbano e tem acidentes frequentes.<ref name=":6">{{citar web|url=https://g1.globo.com/jornal-hoje/noticia/2023/06/27/saiba-quais-trechos-mais-criticos-para-acidentes-nas-rodovias-federais-de-acordo-com-a-prf.ghtml|titulo=Saiba quais as duas rodovias federais líderes em acidentes graves|data=27/06/2023|acessodata=27/06/2023|website=Jornal Hoje}}</ref><ref name="RIMA" /> Além do Contorno Viário, em 2024 também foi promulgado o novo Plano Diretor, que passou por anos de discussões e planejamento e substitui o antigo, que datava de 1987, trazendo diversas atualizações como regulamentações sobre preservação de áreas de preservação ambiental, incentivo à mobilidade urbana alternativa e possibilidade de aumento da verticalização para até 25 andares.<ref>{{citar web|url=https://ndmais.com.br/infraestrutura/camara-de-sao-jose-aprova-novo-plano-diretor-e-autoriza-predios-de-ate-25-andares/|titulo=Câmara de São José aprova novo Plano Diretor e autoriza prédios de até 25 andares|data=08/08/2024|acessodata=26/09/2024}}</ref>
+
+==Geografia==
+[[Ficheiro:Ponte do Imarui.jpg|miniaturadaimagem|354x354px|As ruínas da antiga ponte sobre o rio Maruim no bairro Ponta de Baixo. O rio divide a cidade do município da Palhoça.]]
+
+===Limites===
+O limite municipal norte, com [[Biguaçu]], é marcada pelo rio Carolina ou Serraria na parte mais litorânea, continuando pelo interior no maciço do Morro Biguaçu. No sul, a limite é com a Palhoça. Parte dela também é feita por um rio, o [[Rio Imaruí|Maruim]]. 
+
+Há dois pequenos limites no oeste com [[Antônio Carlos (Santa Catarina)|Antônio Carlos]] no noroeste e com [[Santo Amaro da Imperatriz]] no sudoeste. A maior parte da linha de limite no oeste, entre morros, é com o município de [[São Pedro de Alcântara]]. 
+
+Ao leste, São José faz o único limite terrestre de [[Florianópolis]] com outra cidade. Em seus trecho finais, os [[Rio Büchler|rios Büchler]], em Barreiros; e [[Rio Araújo|Araújo]], em Campinas, servem de divisa física com a capital catarinense. Na atualidade, a [[conurbação]] torna a divisão entre Florianópolis, São José, Biguaçu e Palhoça quase imperceptíveis em alguns pontos.<ref>{{citar web|url=https://leismunicipais.com.br/a/sc/s/sao-jose/lei-ordinaria/2000/351/3514/lei-ordinaria-n-3514-2000-estabelece-os-limites-intermunicipais-define-os-limites-entre-os-distritos-e-suas-areas-urbanas-e-define-os-bairros-com-seus-limites-e-revoga-a-lei-n-3468-99|titulo=LEI Nº 3514, DE 05 DE JUNHO DE 2000.|data=|acessodata=|publicado=|ultimo=|primeiro=|outros=ESTABELECE OS LIMITES INTERMUNICIPAIS, DEFINE OS LIMITES ENTRE OS DISTRITOS E SUAS ÁREAS URBANAS E DEFINE OS BAIRROS COM SEUS LIMITES, E REVOGA A LEI Nº 3468/99.}}</ref>
+
+===Subdivisões===
+{{Anexo|Lista de distritos e bairros de São José (Santa Catarina)|l1=}}
+
+São José é formado por 30 [[bairro]]s, 28 urbanos e 2 rurais, divididos em três [[distrito]]s: o atual Distrito Sede, São José, antes chamado distrito de Campinas, o distrito de [[Barreiros (São José)|Barreiros]] e o distrito do Centro Histórico de São José - que era o antigo Distrito Sede. 
+
+Enquanto o distrito de São José tem apenas dois bairros, os verticalizados [[Campinas (São José)|Campinas]] e [[Kobrasol]], o distrito do Centro Histórico de São José compreende a maior parte do território e tem os dois únicos bairros rurais, Alto Forquilhas e Pagará, e o Distrito Industrial, que apesar do nome, é um bairro. Já o distrito de Barreiros é a parte nordeste da cidade. Algumas localidades são por vezes chamadas bairros, porém não o são, como é o caso do Loteamento Dona Adélia (parte de [[Areias (São José)|Areias]]), Benjamin (parte de Forquilhinha), e do Lisboa (parte de [[Forquilhas]]).<ref name="lei3514">{{citar web|url=https://www.leismunicipais.com.br/a/sc/s/sao-jose/lei-ordinaria/2000/351/3514/lei-ordinaria-n-3514-2000-estabelece-os-limites-intermunicipais-define-os-limites-entre-os-distritos-e-suas-areas-urbanas-e-define-os-bairros-com-seus-limites-e-revoga-a-lei-n-3468-99-2000-06-05.html|titulo=LEI Nº 3514, DE 05 DE JUNHO DE 2000. ESTABELECE OS LIMITES INTERMUNICIPAIS, DEFINE OS LIMITES ENTRE OS DISTRITOS E SUAS ÁREAS URBANAS E DEFINE OS BAIRROS COM SEUS LIMITES, E REVOGA A LEI Nº 3468/99.|data=9 de junho de 2000|acessodata=8 de dezembro de 2013|autor=DÁRIO ELIAS BERGER, Prefeito Municipal}}</ref><ref>{{citar web|url=https://saojose.sc.gov.br/wp-content/uploads/2024/09/MAPA-01-PERIMETRO-URBANO-1.pdf|titulo=Perímetro Urbano - Município de São José/SC|acessodata=02/06/2025}}</ref>{{Location map+|São José (Santa Catarina)|caption=Localização dos bairros de São José.|AlternativeMap=Bairros de São José, SC.svg|width=800|float=center|places={{Location map~|São José (Santa Catarina)|label=[[Areias (São José)|Areias]]|label_size=85|position=left|lat=-27.557|long=-48.6319}}
+{{Location map~|São José (Santa Catarina)|label=[[Jardim Santiago|Jd. Santiago]]|label_size=85|position=right|lat=-27.556|long=-48.618}}
+{{Location map~|São José (Santa Catarina)|label=[[Ipiranga (São José)|Ipiranga]]|label_size=85|position=right|lat=-27.566|long=-48.6317}}
+{{Location map~|São José (Santa Catarina)|label=[[Bela Vista (São José)|Bela Vista]]|label_size=85|position=right|lat=-27.575|long=-48.627}}
+{{Location map~|São José (Santa Catarina)|label=[[Nossa Senhora do Rosário (São José)|N.S. do Rosário]]|label_size=85|position=right|lat=-27.579|long=-48.62}}
+{{Location map~|São José (Santa Catarina)|label=[[Jardim Cidade de Florianópolis]]|label_size=85|position=right|lat=-27.5635|long=-48.617}}
+{{Location map~|São José (Santa Catarina)|label=[[Real Parque (São José)|Real Parque]]|label_size=85|position=left|lat=-27.567|long=-48.64}}
+{{Location map~|São José (Santa Catarina)|label=[[Pedregal (São José)|Pedregal]]|label_size=85|position=left|lat=-27.572|long=-48.644}}
+{{Location map~|São José (Santa Catarina)|label=[[Barreiros (São José)|Barreiros]]|label_size=85|position=right|lat=-27.576|long=-48.608}}
+{{Location map~|São José (Santa Catarina)|label=[[Bosque das Mansões]]|label_size=85|position=left|lat=-27.583|long=-48.624}}
+{{Location map~|São José (Santa Catarina)|label=[[São Luiz (São José)|São Luiz]]|label_size=85|position=left|lat=-27.592|long=-48.631}}
+{{Location map~|São José (Santa Catarina)|label=[[Roçado (São José)|Roçado]]|label_size=85|position=right|lat=-27.596|long=-48.627}}
+{{Location map~|São José (Santa Catarina)|label=[[Campinas (São José)|Campinas]]|label_size=85|position=right|lat=-27.5970|long=-48.6100}}
+{{Location map~|São José (Santa Catarina)|label=[[Centro (São José)|Centro]]|label_size=85|position=right|lat=-27.615|long=-48.625}}
+{{Location map~|São José (Santa Catarina)|label=[[Kobrasol]]|label_size=85|position=right|lat=-27.592|long=-48.615}}
+{{Location map~|São José (Santa Catarina)|label=[[Praia Comprida]]|label_size=85|position=right|lat=-27.605|long=-48.623}}
+{{Location map~|São José (Santa Catarina)|label=[[Serraria (São José)|Serraria]]|label_size=85|position=right|lat=-27.543|long=-48.6320}}
+{{Location map~|São José (Santa Catarina)|label=[[Potecas]]|label_size=85|position=left|lat=-27.5795|long=-48.642}}
+{{Location map~|São José (Santa Catarina)|label=[[Forquilhas|Forquilhas do Leste]]|label_size=85|position=left|lat=-27.5790|long=-48.6600}}
+{{Location map~|São José (Santa Catarina)|label=[[Forquilhas|Forquilhas do Oeste]]|label_size=85|position=left|lat=-27.575|long=-48.685}}
+{{Location map~|São José (Santa Catarina)|label=[[Forquilhas|Alto Forquilhas]]|label_size=85|position=left|lat=-27.558|long=-48.705}}
+{{Location map~|São José (Santa Catarina)|label=[[Ponta de Baixo]]|label_size=85|position=right|lat=-27.627|long=-48.630}}
+{{Location map~|São José (Santa Catarina)|label=[[Fazenda Santo Antônio (São José)|Fazenda Santo Antônio]]|label_size=85|position=left|lat=-27.620|long=-48.635}}
+{{Location map~|São José (Santa Catarina)|label=[[Picadas do Sul]]|label_size=85|position=right|lat=-27.610|long=-48.643}}
+{{Location map~|São José (Santa Catarina)|label=[[Flor de Nápolis]]|label_size=85|position=left|lat=-27.604|long=-48.644}}
+{{Location map~|São José (Santa Catarina)|label=[[Forquilhinha (São José)|Forquilhinha]]|label_size=85|position=left|lat=-27.598|long=-48.642}}
+{{Location map~|São José (Santa Catarina)|label=[[Distrito Industrial (São José)|Distrito Industrial]]|label_size=85|position=left|lat=-27.620|long=-48.650}}
+{{Location map~|São José (Santa Catarina)|label=[[Sertão do Maruim]]|label_size=85|position=left|lat=-27.598|long=-48.667}}
+{{Location map~|São José (Santa Catarina)|label=[[Pagará (São José)|Pagará]]|label_size=85|position=left|lat=-27.598|long=-48.72}}
+{{Location map~|São José (Santa Catarina)|label=[[Colônia Santana]]|label_size=85|position=right|lat=-27.585|long=-48.715}}|border=}}
+
+=== Clima e relevo ===
+O clima de São José é [[subtropical]], com estações bem definidas.
+
+O relevo possui poucas variações, com algumas colinas, como o Morro da Coruja na [[Praia Comprida]], o Morro do Avaí no Bairro São Luiz, o Morro Forquilhas em [[Forquilhas]] e o [[Morro da Pedra Branca]] entre a [[Colônia Santana]] e o [[Sertão do Maruim]]. Alguns rios pequenos cortam o município: o Rio Forquilhas, no Centro-Oeste, Maruim, no Sul, Büchler e Araujo, no leste, e Três Henriques e Carolina, no norte.<ref name="RIMA">{{citar web | url=http://www2.prsc.mpf.gov.br/destaques/RIMA%20-%20Contorno%20Florianopolis.pdf | título= Contorno de Florianópolis - Relatório de Impacto sobre o Meio Ambiente | publicado=www2.prsc.mpf.gov.br }} — ''RIMA - Contorno de Florianópolis, pg. 34 (em PDF). Página visitada em 08/08/2012.''.</ref> 
+
+O litoral josefense é banhado pelas duas baías que separam a cidade da [[Ilha de Santa Catarina]]: a [[Baía Norte]], que banha o distrito de Barreiros e na qual desaguam os rios Três Henriques, Buchler e Carolina, e a [[Baía Sul]], onde desaguam os rios Maruim e Araújo. O trecho da Baía Sul entre o bairro florianopolitano do Abraão e a Ponta de Baixo acaba formando uma [[enseada]] conhecida como Baía de São José, onde foi construído o aterro da Beira-Mar de São José entre a Praia Comprida e Campinas.<ref>{{citar web|url=https://www.correiosc.com.br/analise-preliminar-indica-multiplicacao-de-microalgas-na-baia-de-sao-jose/|titulo=Análise preliminar indica multiplicação de microalgas na baía de São José|data=06/03/2024|acessodata=26/09/2024|website=Correio de Santa Catarina}}</ref> Um aterro similar na Baía Norte, ligando a Beira-mar Continental de Florianópolis a BR-101 e a foz do rio Três Henriques, está em planejamento e é chamado de Beira-mar de Barreiros.<ref>{{citar web|url=https://www.nsctotal.com.br/noticias/video-megaobra-na-beira-mar-de-sao-jose-tera-mudanca-na-mobilidade-e-lazer-da-regiao|titulo=VÍDEO: Megaobra na beira-mar de São José terá mudança na mobilidade e lazer da região|data=20/09/2023|acessodata=26/09/2023|website=NSC Total}}</ref>
+
+== Demografia ==
+{{Crescimento populacional do Censo do Brasil
+| 1872 = 22805
+| 1890 = 33084
+| 1900 = 10450
+| 1920 = 18688
+| 1940 = 28378
+| 1950 = 22798
+| 1960 = 31696
+| 1970 = 42535
+| 1980 = 87822
+| 1991 = 139493
+| 2000 = 173559
+| 2010 = 209804
+| 2022 = 270299
+| ano_censo  = 2022
+| ref_censo  =
+| rodape   =Fontes: Censo IBGE/2022<ref>{{citar web|URL=https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/evolucao_da_divisao_territorial_do_brasil/evolucao_da_divisao_territorial_do_brasil_1872_2010/evolucao_da_populacao_segundo_os_municipios.pdf|título=Evolução da população, segundo os municípios - 1872/2010|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=18 de abril de 2023}}</ref>}}
+
+Com 270.299 habitantes segundo o [[Censo demográfico do Brasil de 2022|Censo 2022]], São José é o quarto município mais populoso do estado, atrás de [[Joinville]], [[Florianópolis]] e [[Blumenau]].<ref name=":8" /> A cidade pertence à mais populosa região metropolitana de Santa Catarina, com cerca de 1,049 milhão de moradores.
+
+Em 2010, a [[densidade populacional]] foi contabilizada em 1.388,17 habitantes por km², com 101.392 habitantes sendo homens e 108.412 habitantes sendo mulheres. Ainda segundo o mesmo censo, 108.412 habitantes moravam na área urbana, e 2.496 moravam na zona rural. Além disso, Florianópolis e São José estão entre as dez cidades mais verticalizadas do Brasil - são a 8ª e a 10ª, respectivamente, com São José tendo uma taxa de verticalização de 34%. 129.549 moradores são [[eleitores]].<ref name=":0" />
+
+O [[Índice de Desenvolvimento Humano|Índice de Desenvolvimento Humano Municipal]] (IDH-M) de São José (ano 2000), considerado "elevado" pelo [[PNUD|Programa das Nações Unidas para o Desenvolvimento (PNUD)]], é de 0.849, estando entre as 50 primeiras cidades do ranking. Considerando apenas a educação o índice é de 0.925 (muito elevado), enquanto o do Brasil é 0,849 - a população alfabetizada é de 189.183 pessoas. O índice da longevidade é de 0.839 (o brasileiro é 0,638); e o de renda é de 0.784 (o do país é 0,723). A renda per capita é de 20.786,92 reais.
+
+Em 2010 a maioria da população era de ascendência [[açores|açoriana]], mas existiam também os descendentes de [[Alemanha|alemães]], [[Polônia|poloneses]] e [[Espanha|espanhóis]].{{carece de fontes|data=junho de 2017}} 176.987 se declararam brancos, 20.820 pardos e 10.782 negros.<ref name="IBGE - SJ">{{citar web | url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1 | título=Título ainda não informado (favor adicionar) | publicado=www.ibge.gov.br | acessodata=2012-08-09 | arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1 | arquivodata=2012-04-30 | urlmorta=yes }}Cidades@] — ''IBGE. Página visitada em 09/08/2012.''.</ref>[[Ficheiro:Bairro Kobrasol.jpg|alt=|miniaturadaimagem|348x348px|Os bairros Kobrasol e Campinas são os mais verticalizados da cidade.]]
+{| class="wikitable sortable"
+!Bairro
+! align="center" |População
+<small>(Censo 2022)</small>
+|-
+|[[Forquilhas]] (Leste e Oeste)
+| align="right" |30.318
+|-
+|Serraria
+| align="right" |30.170
+|-
+|[[Barreiros (São José)|Barreiros]]
+| align="right" |24.432
+|-
+|[[Areias (São José)|Areias]]
+| align="right" |18.949
+|-
+|[[Campinas (São José)|Campinas]]
+| align="right" |17.714
+|-
+|Forquilhinha (ou Forquilhinhas)
+| align="right" |15.941
+|-
+|[[Ipiranga (São José)|Ipiranga]]
+| align="right" |15.123
+|-
+|[[Kobrasol]]
+| align="right" |13.331
+|-
+|Bela Vista
+| align="right" |10.472
+|-
+|Nossa Senhora do Rosário
+| align="right" |8.739
+|-
+|Sertão do Maruim
+| align="right" |8.726
+|-
+|[[Potecas]]
+| align="right" |8.016
+|-
+|[[Fazenda Santo Antônio (São José)|Fazenda Santo Antônio]] (ou Fazenda do Max)
+| align="right" |7.631
+|-
+|[[Real Parque (São José)|Real Parque]]
+| align="right" |7.561
+|-
+|Jardim Cidade de Florianópolis
+| align="right" |7.440
+|-
+|Roçado
+| align="right" |6.056
+|-
+|Praia Comprida
+| align="right" |5.043
+|-
+|Centro (ou Centro Histórico)
+| align="right" |4.337
+|-
+|Picadas do Sul
+| align="right" |4.113
+|-
+|Flor de Nápolis
+| align="right" |3.887
+|-
+|Colônia Santana
+| align="right" |3.505
+|-
+|São Luiz
+| align="right" |2.040
+|-
+|Ponta de Baixo
+| align="right" |2.019
+|-
+|[[Pedregal (São José)|Pedregal]]
+| align="right" |1.380
+|-
+|Bosque das Mansões
+| align="right" |932
+|-
+|Jardim Santiago
+| align="right" |771
+|-
+|Distrito Industrial
+| align="right" |149
+|}
+
+==Política==
+[[Ficheiro:PrefeituraSJ.png|miniaturadaimagem|344x344px|Prédio da Prefeitura, na Praia Comprida.]]
+Em São José, o [[poder executivo]] é representado pelo [[Lista de prefeitos de São José (Santa Catarina)|prefeito]] e gabinete de secretários, em conformidade ao modelo proposto pela [[Constituição brasileira de 1988|Constituição Federal]]. A sede atual da prefeitura fica na Praia Comprida. A cidade faz parte da Associação dos Municípios da Grande Florianópolis (Granfpolis).<ref>{{citar web|url=https://saojose.sc.gov.br/orvino-coelho-de-avila-e-eleito-presidente-da-granfpolis/21818/|titulo=Orvino Coelho de Ávila é eleito presidente da Granfpolis|data=18/02/2022|acessodata=29/06/2025|website=Prefeitura de São José}}</ref> 
+
+O [[poder legislativo]] é constituído pela câmara municipal, composta por 19 [[vereador]]es<ref>{{citar web|url=http://g1.globo.com/sc/santa-catarina/noticia/2014/03/camara-municipal-de-sao-jose-aprova-aumento-no-numero-de-vereadores.html|titulo=Câmara Municipal de São José aprova aumento no número de vereadores|data=12 de março de 2014|acessodata=29 de julho de 2017|publicado=G1|ultimo=|primeiro=}}</ref> eleitos para mandatos de quatro anos.<ref>{{citar web |url=http://www.senado.gov.br/atividade/const/con1988/con1988_15.09.2015/art_29_.asp |publicado=Senado Federal |titulo=Constituição da República Federativa do Brasil: Artigo 29 |acessodata=24 de outubro de 2008}}</ref> Cabe aos vereadores elaborar e votar leis fundamentais à administração e ao executivo. Como o prefeito possui poder de veto assegurado, o processo de votação das leis que se lhe opõe costuma gerar conflitos entre executivo e legislativo. A Câmara Municipal fica no Centro Histórico, de frente a Praça Central.
+
+==Economia==
+[[Ficheiro:Saojose312.jpg|miniaturadaimagem|345x345px|Panorâmica de São José, com o bairro Praia Comprida no primeiro plano e os prédios do Kobrasol e de Campinas. No fundo, a [[Ilha de Santa Catarina]].]]
+A economia josefense é bem diversificada, hoje estruturada no comércio e serviços, além da indústria. A cidade se destaca na [[Tecnologia|indústria tecnológica]], [[Indústria alimentar|de alimentos]], [[Indústria metalmecânica|metalmecânica]] e na construção civil, sendo uma das cidades mais verticalizadas proporcionalmente do Brasil.<ref name=":2" /><ref name=":0" />
+
+A cidade está no 5º lugar no ranking da economia dos municípios catarinenses<ref name=":1" />, graças principalmente ao Distrito Industrial no sul da cidade, com um grande número de empreendimentos. Há também outras indústrias em outros pontos, principalmente em torno da BR-101, SC-281 e Avenida das Torres, e áreas industriais menores em Forquilhas e no Sertão do Maruim.
+
+O comércio de São José é bastante diversificado, concentra-se principalmente em bairros como Campinas, Kobrasol, Barreiros e Forquilhinha, outras regiões da cidade também tem o seu comercio em expansão é o caso dos bairros Bela Vista, Ipiranga, Areias, Praia Comprida, Lisboa e fazenda Santo Antonio. A cidade possui alguns centros comerciais, entre eles o, Shopping Itaguaçu, que possui o titulo de mais antigo ''shopping center'' de [[Santa Catarina]], e o Continente Shopping, considerado o maior ''shopping'' de Santa Catarina.<ref>{{Citar web|url=https://freguesiacult.com.br/continente-shopping-completa-seis-anos-e-anuncia-novas-lojas/|titulo=Continente Shopping completa seis anos e anuncia novas lojas|acessodata=24/05/2020|data=|publicado=Freguesia Cult|ultimo=|primeiro=}}</ref>
+
+== Cultura ==
+A cultura josefense tem relação com suas fases de ocupação e os povos que o formaram. Ainda há grande presença das culturas açoriana e alemã nas empresas e nomes de ruas e comércios. A tradição pesqueira portuguesa resiste até hoje. Povos africanos e de outros estados, como os gaúchos, também trouxeram seus costumes e ajudaram a formar a cultura josefense.<ref>{{citar web|url=https://www.saojose.sc.gov.br/index.php/turista/tradicoes-culturais|titulo=Tradições Culturais|data=|acessodata=|publicado=Prefeitura de São José|ultimo=|primeiro=}}</ref>
+
+Na arquitetura histórica, o complexo arquitetônico do Centro com casarios de origem luso-brasileira dos séculos XVIII, XIX e XX são o maior destaque, com a [[Igreja Matriz de São José (São José)|Igreja Matriz]], o [[Teatro Adolpho Mello]], o mais antigo de Santa Catarina, o Beco da Carioca, a Casa da Cultura, a Biblioteca Municipal e a Fundação Municipal de Cultura e Turismo, a Casa da Municipalidade e o Museu Histórico, sediado no [[Solar Ferreira de Mello]]. 
+
+Outros pontos históricos são a [[Igreja de Nossa Senhora de Fátima e Santa Filomena]], na Praia Comprida, e a [[Usina Gustavo Richard]], entre o Sertão do Maruim e a Colônia Santana, a segunda usina hidrelétrica mais antiga de Santa Catarina, que foi recentemente restaurada e reaberta.<ref name=":5">{{citar web|url=http://www.saojose.sc.gov.br/index.php/turista/pontos-turisticos|titulo=Pontos Turísticos|data=|acessodata=29/07/2017|publicado=Prefeitura de São José|ultimo=|primeiro=}}</ref><ref>{{citar web|url=https://estado.sc.gov.br/noticias/governo-do-estado-e-celesc-reativam-historica-usina-maruim-em-sao-jose/|titulo=Governo do Estado e Celesc reativam histórica Usina Maruim em São José|data=27/10/2024|acessodata=28/10/2024|website=sc.gov.br}}</ref>
+
+São José ainda abriga a única escola de oleiros da América Latina, a [[Escola de Oleiros Joaquim Antônio de Medeiros]], um resquício de quando essa atividade tinha grande importância na cidade<ref>{{citar web|url=https://leismunicipais.com.br/a/sc/s/sao-jose/lei-ordinaria/2010/496/4953/lei-ordinaria-n-4953-2010-denomina-de-rota-dos-oleiros-a-rua-assis-brasil-no-bairro-ponta-de-baixo-no-trajeto-compreendido-entre-o-seu-inicio-defronte-a-igreja-nosso-senhor-dos-passos-e-o-seu-entroncamento-com-a-rua-frederico-afonso?q=4953|titulo=DENOMINA DE ROTA DOS OLEIROS, A RUA ASSIS BRASIL NO BAIRRO PONTA DE BAIXO, NO TRAJETO COMPREENDIDO ENTRE O SEU INÍCIO DEFRONTE A IGREJA NOSSO SENHOR DOS PASSOS E O SEU ENTRONCAMENTO COM A RUA FREDERICO AFONSO.|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref>, e também um dos primeiros jardins botânicos de Santa Catarina, o [[Jardim Botânico de São José|Jardim Botânico de São José Max Hablitzel]] em Potecas.<ref>{{citar web|url=http://cotidiano.sites.ufsc.br/primeiro-jardim-botanico-do-estado-e-inaugurado-em-sao-jose/|titulo=Primeiro jardim botânico do estado é inaugurado em São José|data=3 de novembro de 2015|acessodata=|publicado=Cotidiano UFSC|ultimo=|primeiro=}}</ref>
+
+=== Feriado ===
+A data de criação da cidade - a chegada dos [[açorianos]] - foi estabelecida por lei como sendo no dia 19 de março de 1750. Na realidade, a chegada dos açorianos se deu em outubro de 1750, mas a lei foi feita para coincidir a data tradicional de comemoração do aniversário da cidade, que é o dia do padroeiro, [[São José]]. Assim, esse dia é considerado o aniversário do município, sendo o único feriado relacionado a cidade.<ref>{{citar web|url=https://www.saojose.sc.gov.br/index.php/sao-jose/feriados|titulo=Feriados|data=|acessodata=|publicado=Prefeitura de São José|ultimo=|primeiro=}}</ref>
+
+=== Festas e eventos ===
+[[Ficheiro:Arena Petry fevereiro 2020.jpg|miniaturadaimagem|322x322px|Arena Opus, no Sertão do Maruim.]]
+[[Ficheiro:Sobre-Voo Policia Militar ao fundo Pedra Branca By Mauro Soares - panoramio.jpg|alt=|miniaturadaimagem|325x325px|O Morro da Pedra Branca, o ponto mais alto de São José, é bastante usado por praticantes de trilhas.]]
+Na atualidade, dois grandes espaços para eventos se destacam: o [[Centro Multiuso de São José]], equipamento público localizado na Beira-mar de São José<ref>{{citar web|url=https://www.saojose.sc.gov.br/index.php/sao-jose/noticias-desc/prefeitura-de-saeo-jose-inicia-revitalizacaeo-do-centro-multiuso|titulo=Prefeitura de São José realiza a revitalização do Centro Multiuso|data=14 de maio de 2019|acessodata=19 de junho de 2020|publicado=Prefeitura de São José|ultimo=|primeiro=}}</ref>, e a [[Arena Opus]], no Sertão do Maruim.<ref>{{citar web|url=https://revistabusiness.com.br/mercado/arena-petry-e-hard-rock-international-oficializam-parceria-para-desenvolvimento-do-hard-rock-florianopolis/|titulo=Arena Petry e Hard Rock International oficializam parceria para desenvolvimento do Hard Rock Florianópolis|data=6 de fevereiro de 2020|acessodata=|publicado=Business|ultimo=|primeiro=}}</ref> A Beira-mar de São José também recebe eventos com frequência.
+
+Em março, o aniversário da cidade costuma ser comemorado com um circuito de eventos, muitas vezes com shows. 
+
+Durante a década de 2000, foram feitas por alguns anos uma festa de valorização da cultura açoriana, a Açorfesta, que tinha como objetivo se tornar a festa de outubro do município, a exemplo de outras cidades catarinenses que tem as suas, como a [[Oktoberfest (Blumenau)|Oktoberfest]] de [[Blumenau]] ou a [[Marejada]] de [[Itajaí]].
+
+Anualmente, também é realizada a Festa do Divino de São José, no Centro. Ela faz parte do circuito de Festas do Divino da Grande Florianópolis e acontece durante o outono. Outra tradição religiosa é a Procissão Nosso Senhor dos Passos, que também acontece no Centro e é patrimônio imaterial da cidade a exemplo da sua [[Procissão do Senhor dos Passos|equivalente florianopolitana]]. O Centro também recebe a Feira da Freguesia no segundo domingo de cada mês, sendo uma iniciativa da prefeitura para retomada da vocação turística do bairro histórico.
+
+O CTG Os Praianos, um dos maiores de Santa Catarina, realiza periodicamente rodeios nacionais e internacionais, com grandes shows. Há também blocos e escolas de samba na cidade, como a [[Jardim das Palmeiras (escola de samba)|GRCES Jardim das Palmeiras]], que desfila em Florianópolis - no passado, São José já realizou desfiles na cidade com os blocos e escolas locais durante o carnaval, e alguns blocos seguem fazendo o carnaval na cidade.<ref name=":12">{{citar web|url=http://www.tudosobrefloripa.com.br/index.php/desc_noticias/escola_de_samba_de_saeo_jose_volta_a_nego_quirido_no_carnaval_2020|titulo=Escola de Samba de São José volta à Nego Quirido no Carnaval 2020|data=|acessodata=|publicado=Tudo Sobre Floripa|ultimo=|primeiro=}}</ref>
+
+=== Esporte ===
+São José tem tido destaque em diversos esportes, como o atletismo,<ref>{{citar web|url=http://www.saojose.sc.gov.br/index.php/sao-jose/noticias-desc/equipe-de-atletismo-de-saeo-jose-disputa-trofeu-brasil|titulo=Atletismo|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref> o ciclismo, o triatlo<ref>{{citar web|url=https://ge.globo.com/sc/olimpiadas/noticia/2024/05/28/djenyfer-arnold-garante-vaga-no-triatlo-para-a-olimpiada-de-paris.ghtml|titulo=Djenyfer Arnold garante vaga no triatlo para a Olimpíada de Paris|data=28/05/2024|acessodata=10/09/2024|website=ge.globo}}</ref> e o futebol americano - com a equipe do [[São José Istepôs]], que joga suas partidas no campo do Forquilhão.<ref>{{citar web|url=http://www.istepos.com.br/sao-jose-istepos-faz-sua-estreia-no-xii-campeonato-catarinense-neste-sabado/|titulo=São José Istepôs faz sua estreia no XII Campeonato Catarinense neste sábado|data=8 de abril de 2017|acessodata=29 de julho de 2017|publicado=|ultimo=|primeiro=}}</ref> São realizados na cidade eventos como a [[Meia maratona|meia-maratona]]<ref>{{citar web|url=http://www.saojose.sc.gov.br/index.php/sao-jose/noticias-desc/mais-de-15-mil-atletas-participaraeo-da-meia-maratona-de-saeo-jose|titulo=Meia-maratona de São José|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref> e diversos eventos de motocross aconteceram no antigo Motódromo Marronzinho, em Potecas.<ref>{{citar web|url=https://ndonline.com.br/florianopolis/noticias/motodromo-pedra-branca-em-potecas-recebe-circuito-de-velocross|titulo=Motódromo Pedra Branca, em Potecas, recebe Circuito de Velocross|data=18 de abril de 2012|acessodata=29 de julho de 2017|publicado=Notícias do Dia|ultimo=|primeiro=}}</ref><ref>{{citar web|url=http://brmx.com.br/marronzinho-vira-nome-de-motodromo-em-homenagem-postuma-na-pista-de-potecas/|titulo=Marronzinho vira nome de motódromo em homenagem póstuma na pista de Potecas|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref>  
+
+Uma equipe de futebol masculino foi fundada na cidade em 2020, o [[Clube Atlético Catarinense (Criciúma)|Atlético Catarinense]]. Enquanto estava em São José, o time venceu a [[Campeonato Catarinense de Futebol - Série C|terceira divisão catarinense]] de 2020 e chegou a jogar a primeira divisão do Campeonato Catarinense em 2023. Após isso, o time se transferiu para [[Criciúma]].<ref>{{citar web |url=https://globoesporte.globo.com/sc/futebol/campeonato-catarinense/noticia/atletico-catarinense-perde-jogo-da-volta-para-o-nacao-mas-garante-titulo-da-serie-c-estadual.ghtml |titulo=Atlético Catarinense perde jogo da volta para o Nação, mas garante título da Série C estadual |data=30/01/2021 |acessodata=06/04/2021 |publicado=ge}}</ref> No passado, a cidade também teve equipes de [[futebol feminino]] - o Scorpions - e de vôlei masculino - [[Santa Catarina Voleybol Clube (voleibol masculino)|Intelbras/São José]] e [[Unisul Esporte Clube (voleibol masculino)|Unisul]] - além de ter recebido partidas da [[Superliga Brasileira de Voleibol Masculino|Superliga Masculina]] e das [[Copa Brasil de Voleibol Feminino de 2024|Copa Brasil Feminina]] e [[Copa Brasil de Voleibol Masculino de 2024|Masculina]] no Centro Multiuso.<ref>{{citar web|url=http://www.correiodobrasil.com.br/sao-jose-sediara-superliga-de-voleibol-masculino-a-disputa-sera-entre-cimedsky-e-bmgmontes-claros/|titulo=São José sediará Superliga de Voleibol Masculino: a disputa será entre Cimed/Sky e BMG/Montes Claros|data=|acessodata=|publicado=|ultimo=|primeiro=}}</ref>
+
+O [[Morro da Pedra Branca]], localizado no oeste da cidade, na divisa com a Palhoça, é famoso pelas trilhas e pela vista, além de sua forma característica ser vista de boa parte da Grande Florianópolis.
+
+==Saúde==
+{{Artigo principal|Lista de unidades de saúde de São José (Santa Catarina)}}
+Há um hospital público de grande porte, o [[Hospital Regional de São José]], mantido pelo governo do estado de Santa Catarina, e um grande hospital particular, o Hospital Unimed. Ambos atendem toda a Grande Florianópolis, e o Regional conta com o Instituto de Cardiologia de Santa Catarina em anexo. Um complexo hospitalar estadual deve ser instalado com uma reforma e ampliação do Hospital Regional e do Instituto de Cardiologia, e outra unidade, municipal, deve ser criada no Sertão do Maruim, onde ficava um campus da Univali.<ref>{{citar web|url=https://ndmais.com.br/saude/o-novo-complexo-hospitalar-da-grande-florianopolis/|titulo=O novo Complexo Hospitalar da Grande Florianópolis|data=26/09/2024|acessodata=24/02/2024}}</ref><ref>{{citar web|url=https://www.nsctotal.com.br/colunistas/anderson-silva/novo-complexo-de-saude-publica-na-grande-florianopolis-tera-300-novos-leitos-saiba-mais|titulo=Novo complexo de saúde pública na Grande Florianópolis terá 300 novos leitos; saiba mais|data=08/04/2024|acessodata=26/09/2024}}</ref><ref>{{citar web|url=https://upiara.net/sao-jose-tera-complexo-hospitalar-em-oito-meses/|titulo=São José terá Complexo Hospitalar em oito meses|data=15/08/2024|acessodata=26/09/2024}}</ref>
+
+Além dos hospital, também existem várias Unidades Básicas de Saúde espalhados pelos bairros e três policlínicas, em Campinas, Barreiros e Forquilhinha, esta última com Unidade de Pronto Atendimento 24 horas, além de várias unidades particulares.<ref>{{citar web|url=http://horadesantacatarina.clicrbs.com.br/sc/geral/noticia/2017/10/emergencia-do-hospital-regional-de-sao-jose-so-atende-pacientes-em-estado-grave-devido-a-superlotacao-9945540.html|titulo=Emergência do Hospital Regional de São José só atende pacientes em estado grave devido à superlotação|data=11/10/2017|acessodata=19/12/2017|publicado=Hora de Santa Catarina|ultimo=|primeiro=}}</ref><ref>{{citar web|url=http://horadesantacatarina.clicrbs.com.br/sc/geral/noticia/2015/04/recem-inaugurada-policlinica-de-barreiros-em-sao-jose-promete-desafogar-o-atendimento-em-saude-4743379.html|titulo=Recém-inaugurada, Policlínica de Barreiros, em São José, promete desafogar o atendimento em saúde|data=19/04/2015|acessodata=20/12/2017|publicado=Hora de Santa Catarina|ultimo=|primeiro=}}</ref><ref>{{citar web|url=http://dc.clicrbs.com.br/sc/estilo-de-vida/noticia/2017/12/apos-seis-anos-policlinica-de-forquilhinhas-em-sao-jose-e-inaugurada-10057119.html|titulo=Após seis anos, Policlínica de Forquilhinhas, em São José, é inaugurada|data=08/12/2017|acessodata=20/12/2017|publicado=Diário Catarinense|ultimo=|primeiro=}}</ref>
+
+Na Colônia Santana esta localizado o [[Instituto de Psiquiatria de Santa Catarina]], sucessor do Hospital Colônia Sant’Ana, instituição que funcionou até 1996 e era destinado a segregação de pacientes com doenças mentais. Com os avanços nos estudos psiquiátricos, o Hospital foi substituído pelo Instituto, que dá um tratamento mais moderno aos pacientes, sendo referência na área.
+
+==Transportes==
+[[Ficheiro:São José, Santa Catarina 2941.jpg|alt=|miniaturadaimagem|351x351px|A Avenida Acioni Souza Filho, a Beira-Mar de São José, e seu aterro, construído no início dos anos 2000.]]
+São José é cortada pela [[BR-101]] de norte a sul em sua faixa leste, na área mais urbanizada da cidade. A rodovia se tornou parte da malha urbana, perdendo sua característica de via rápida. O trânsito intenso da região metropolitana e a passagem de grandes veículos como  caminhões pelo meio da cidade torna o trecho josefense o mais perigoso entre todas as rodovias federais do Brasil.<ref name=":6" /> Para tentar desviar parte do tráfego, foi criado o [[Contorno Viário da Grande Florianópolis|Contorno Viário de Florianópolis]], que passa na faixa mais a oeste, entre os bairros Forquilhas, Sertão do Maruim e Colônia Santana.<ref>{{citar web|url=https://ndonline.com.br/florianopolis/noticias/contorno-viario-de-florianopolis-muda-o-cenario-da-zona-rural-e-separa-familias|titulo=Contorno viário de Florianópolis muda o cenário da zona rural e separa famílias|data=5 de novembro de 2016|acessodata=29 de julho de 2017|publicado=Notícias do Dia|ultimo=Gonçalve|primeiro=Michael}}</ref>
+
+Também passa pela cidade a [[BR-282]], que atravessa o estado e que liga o litoral ao oeste. O trecho de São José é parcialmente sobreposto a BR-101, se separando na ligação entre São José e Florianópolis, onde passa a ser a Via Expressa, principal acesso rodoviário a capital do estado. A [[SC-281]] é a única rodovia estadual em São José: ela começa no sul do município e liga a cidade a [[São Pedro de Alcântara]] e [[Angelina (Santa Catarina)|Angelina]], além de fazer a única ligação rodoviária da cidade com o Contorno Viário.
+
+A cidade sofre com congestionamentos crônicos em vários pontos. A frota soma 112.522 veículos, segundo o Censo 2010. Embora tenha sido construída a [[Beira-Mar de São José|Avenida Beira-Mar de São José]] sobre um aterro ela pouco aliviou o trânsito no sentido Florianópolis-bairros de São José. A [[Avenida Presidente Kennedy]] sofreu uma readequação para tentar atenuar o problema, com faixas exclusivas para ônibus por um tempo. 
+
+Outras vias importantes são a Avenida Leoberto Leal, importante via de ligação com Florianópolis, no bairro Barreiros e a Avenida das Torres, que liga a Via Expressa ao limite com Biguaçu, pelo interior do município, passando por oito bairros, seguindo as linhas elétricas de alta tensão, suspensas por 18 torres cercadas pela via, que é a segunda via pública municipal mais extensa, com 5,7 km<ref>{{Citar web|titulo=Iluminaç?o especial vai destacar torres da maior avenida de S?o José|url=http://portaldailha.com.br/noticias/lernoticia.php?id=12675|obra=Portal da Ilha Digital|acessodata=2019-12-08|lingua=en}}</ref>.
+
+;Transporte Coletivo
+Assim como toda a Grande Florianópolis, São José é bastante dependente do sistema de [[ônibus]]. Quatro empresas operam na cidade. Todas elas também operam nos municípios vizinhos. Todas fazem parte do Metropolis, uma associação privada das empresas, com algumas já tendo integrado seus sistemas de bilhetagem eletrônica.<ref>{{citar web|url=https://www.metropolisc.com.br/cartoes/cartao-cidadao/|titulo=Cartão Cidadão|data=27/06/2023|acessodata=27/06/2023|website=Metropolis}}</ref>
+*A Jotur – Auto Ônibus e Turismo Josefense Ltda. atua a leste da BR-101 da Praia Comprida até a Palhoça.
+*Rodoviária Santa Terezinha Agência de Viagens e Turismo Ltda. – RST atua a oeste da BR-101 nos bairros as margens da SC-281.
+*Biguaçu Transportes Coletivos Administração e Participação Ltda. atua no Roçado e no distrito de Barreiros.
+*Transporte Coletivo Estrela Ltda. atua a oeste da BR-101 (exceto Roçado e margens da SC-281) e no distrito de Campinas.
+
+A cidade possui linhas interbairros e intermunicipais, principalmente no sentido bairros-centro de [[Florianópolis]].
+
+==Educação==
+===Infantil e fundamental===
+[[Ficheiro:Cefetscsaojose.JPG|miniaturadaimagem|311x311px|Campus São José do Instituto Federal de Santa Catarina.]]
+A prefeitura mantém 23 centros educacionais municipais - os CEMs - e 36 centros de educação infantil<ref name="PMSJ - CEI">{{citar web | url=http://www.saojose.sc.gov.br/index.php/sao-jose/noticias-desc/24-mil-alunos-de-saeo-jose-voltam-as-aulas-na-proxima-segunda-feira-13 | título= 24 mil alunos da rede municipal de São José voltam às aulas na segunda-feira (13) | publicado=www.saojose.sc.gov.br }} — ''Prefeitura de São José. Página visitada em 29/07/2017.''.</ref> - os CEIs. Há também um número considerável de escolas estaduais e particulares. São José ainda possui duas escolas ambientais - a Escola do Mar na Serraria e a Escola do Meio Ambiente, o "Horto Florestal", em Forquilhas.
+
+===Técnica e superior===
+Existem várias instituições de ensino técnico e superior instaladas na cidade, destacando-se o Campus São José do [[Instituto Federal de Santa Catarina|Instituto Federal de Santa Catarina (IFSC)]] na Praia Comprida, um campus da [[Universidade do Vale do Itajaí|Univali]] no Kobrasol, a Faculdade Estácio de Sá em Barreiros e a Faculdade de Tecnologia SENAI-SC na Área Industrial, além de uma unidade do Senac no Kobrasol e as escolas profissionais municipais espalhadas por oito bairros.<ref name="PMSJ - EP">{{citar web | url=http://www.pmsj.sc.gov.br/index.php?option=com_content&view=article&id=568&Itemid=111 | título= Escolas Profissionais | publicado=www.pmsj.sc.gov.br }} — ''Prefeitura de São José. Página visitada em 09/08/2012.''.</ref> 
+
+Outras instituições incluem a Escola Superior de Educação Corporativa (ESEC), Faculdade de Santa Catarina (FASC), Faculdade de Tecnologia Internacional (Fatec), Faculdade Internacional de Curitiba (Facinter), Faculdade União Bandeirante (Uniban), Instituto de Ensino Superior da Grande Florianópolis (IESGF), a Universidade do Contestado (UnC) e a Universidade Paulista (UNIP).
+
+===USJ===
+Mantido pela Fundação Municipal Educacional de São José, o [[Centro Universitário Municipal de São José]] (USJ) foi a primeira universidade municipal pública do Brasil e oferecia quatro cursos de [[graduação]]: [[administração]], [[ciências contábeis]], [[ciência da religião]] e [[pedagogia]]; e um curso de [[pós-graduação]] lato sensu de gestão em defesa civil.<ref name="USJ">{{citar web | url=http://www.usj.edu.br/templates/169/conteudo_visualizar_dinamico.jsp?idConteudo=5680&idUser=72913&tituloConteudo=Institucional&idEmpresa=194 | título=USJ - Institucional | publicado=www.usj.edu.br }}{{Ligação inativa|1={{subst:DATA}} }} — ''USJ. Página visitada em 09/08/2012.''.</ref>
+
+Criado em 2005, o centro universitário contava com um quadro discente de mais de 900 acadêmicos e com um corpo docente de 93 professores - dentre os quais 70% são doutores. O USJ foi a única instituição de ensino superior catarinense que conquistou nota máxima (5) no Índice Geral de Cursos (IGC) 2009, do [[Ministério da Educação (Brasil)|Ministério da Educação]] (MEC), que avalia a qualidade dos cursos de graduação e de pós-graduação e cursos superiores de tecnologia.<ref name="A Notícia">{{citar web |url=http://www.clicrbs.com.br/anoticia/jsp/default2.jsp?uf=2&local=18&source=a3572196.xml&template=4187.dwt&edition=18428&section=2000 |titulo=USJ atinge nota máxima no IGC do MEC (24/11/2011) |publicado=A Notícia| acessodata=11 de dezembro de 2010}}</ref> Entre 2021 e 2022, o USJ teve as atividades encerradas, com os alunos restantes sendo transferidos para outros instituições.<ref>{{citar web|url=https://ndmais.com.br/educacao/cerca-de-900-alunos-da-universidade-de-sao-jose-serao-transferidos-a-outras-instituicoes/|titulo=Cerca de 900 alunos da universidade de São José serão transferidos a outras instituições|data=05/11/2021|acessodata=13/05/2023|website=ND+}}</ref>
+
+== Cidades-irmãs ==
+* {{flagicon|Argentina}} [[Córdoba (Argentina)|Córdoba]], [[Argentina]]
+* {{flagicon|United States}} [[Burbank]], [[Estados Unidos]]
+* {{flagicon|Açores}} [[Ilha Terceira]], Arquipélago dos [[Açores]]
+* {{flagicon|United States}} [[San José (Califórnia)|San José]], [[Estados Unidos]]
+
+{{notas}}
+
+{{Referências|col=2}}
+
+==Ver também==
+*[[Lista de municípios de Santa Catarina por data de criação]]
+*[[Lista de municípios de Santa Catarina por população]]
+*[[Lista de prefeitos de São José (Santa Catarina)|Lista de prefeitos de São José]]
+*[[Lista de municípios do Brasil acima de cem mil habitantes]]
+
+==Ligações externas==
+*[https://www.saojose.sc.gov.br/ Página da Prefeitura]
+
+{{Bairros de São José (Santa Catarina)}}
+{{Subdivisões de Santa Catarina}}
+{{Região Metropolitana de Florianópolis}}
+
+{{controle de autoridade}}
+[[Categoria:São José (Santa Catarina)| ]]
+[[Categoria:Fundações no Brasil em 1750]]

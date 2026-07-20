@@ -1,0 +1,118 @@
+{{Ficha de entidad subnacional
+| nombre = Macuelizo
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|NS}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.6900
+ |longitude= -86.6000
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| subdivisión = 26 comarcas
+| elevación_media = 694
+| superficie = 254.6
+| superficie_puesto = 94
+| número_entidades = 153
+| población_puesto = 143
+| población_año = 2023
+| población = 7326
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/nueva_segovia/0535__macuelizo/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 883
+| densidad = 28.78
+| fundación = 1815
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 38300
+}}
+'''Macuelizo''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Nueva Segovia|Nueva Segovia]] en la República de [[Nicaragua]]. Se localiza al norte de la región central montañosa del país a una distancia de 18 kilómetros de la ciudad de [[Ocotal (Nicaragua)|Ocotal]], y a 246 kilómetros de la capital de [[Managua]].
+
+== Toponimia ==
+De acuerdo con lo afirmado por el escritor e investigador [[Fernando Silva Espinoza|Fernando Silva]] (miembro de número de la [[Academia Nicaragüense de la Lengua]]), '''Macuelizo''' es la castellanización {{eti|náhuatl|Makwil Mikistli}} ("''[[Macuilmiquiztli]]''"; "''[[Macuiltonaleque]]''"), que se traduce como "''Cinco muertes''" en la lengua [[náhuatl]], el nombre del caudillo amerindio (personaje histórico ¿[[Nicarao]]? ¿[[Diriangén]]?) que sale al encuentro de los españoles ([[Gil González Dávila]]) a orillas del [[Gran Lago de Nicaragua]].
+
+Otra versión sugiere que Macuelizo proviene de "''maquilishuat''" en lengua [[Idioma matagalpa|matagalpa]] significa "''cinco flores''", el nombre se atribuye a la existencia en el lugar del '''árbol de Macuelizo''', un árbol grande y que produce unas flores color rosado y lila.<ref>Real Academia Española. Diccionario de la lengua española. macuelizo. https://dle.rae.es/macuelizo</ref>
+
+== Geografía ==
+=== Límites ===
+El término municipal limita al: 
+* norte con la República de [[Honduras]]
+* sur con el municipio de [[Somoto]]
+* este con los municipios de [[Dipilto]] y [[Ocotal (Nicaragua)|Ocotal]] 
+* oeste con el municipio de [[Santa María (Nicaragua)|Santa María]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=25 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref>
+
+=== Relieve ===
+El relieve es montañoso y con muchos accidentes geográficos, quebrado con leves planicies de poca extensión. 
+
+Las principales alturas se encuentran en los cerros El Ayote (1,571 {{esd|m s. n. m.}}), El Copetudo (1,225 {{esd|m s. n. m.}}), El Puntal (1,294 {{esd|m s. n. m.}}), El Carrizal (1,335 {{esd|m s. n. m.}}), El Tapacales (1,104 {{esd|m s. n. m.}}), La Peña (1,456 {{esd|m s. n. m.}}), Marimacho (1,410 {{esd|m s. n. m.}}), Suyatal (1,265 {{esd|m s. n. m.}}) y El Gritón (1,424 {{esd|m s. n. m.}}). 
+
+Son notables las mesetas de Icalules, del Cacao y de Alcayán. 
+
+Entre sus ríos destacan el [[río Coco]] o Segovia y el Macuelizo.<ref name='INIFOM'/>
+
+== Historia ==
+En el año 1801 se descubrió minerales preciosos en la zona, lo que originó la migración de una población que trabajaba en la extracción de [[oro]] y [[plata]] por lo que en el año 1813 se crea [[caserío]] de Macuelizo.
+
+Fue elevado a la categoría de [[pueblo]] en el año 1815. 
+
+Se tiene conocimiento que los primeros pobladores del actual casco urbano fueron las familias Cáceres y Ramírez provenientes de Honduras; los que con el tiempo pasaron hacer los administradores de las minas.<ref name='INIFOM'/>
+
+== Naturaleza y clima ==
+El [[Clima tropical de sabana|clima de sabana tropical]] se caracteriza por ser de altura, con temperaturas que oscilan entre los 24 a 25&nbsp;°C y una precipitación anual media de 1000 mm.<ref name='INIFOM'/>
+
+Existe una gran variedad de animales silvestres, que habitan considerables extensiones de bosques de [[Pinidae|coníferas]], por lo que se considera una zona maderera y, a pesar de que ha sido muy irracional la explotación de la madera en esta zona, aún se encuentran especies de madera como el [[Pinus|pino]], [[Laurus nobilis|laurel]], [[Cedrus|cedro]], [[caoba]], [[liquidambar]] y [[roble]].<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 3,847 (52.5%)
+| valor1 = 52.5
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 3,479 (47.5%)
+| valor2 = 47.5
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 6,443 (87.9%)
+| valor1 = 87.9
+| color1 = #109618
+| etiqueta2 = Urbano: 883 (12.1%)
+| valor2 = 12.1
+| color2 = #FF9900
+}}
+Macuelizo tiene una población actual de 7,326 habitantes. De la población total, el 52.5% son hombres y el 47.5% son mujeres. Casi el 12.1% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Localidades ==
+Además del casco urbano municipal consta de 26 comunidades rurales que son: Amatillo, Apapuerta, Arrayanes,  Batidero, Brujil,  Calabaceras, Caliguate, Cañas #1, Cañas #2, Calpules,  El Encino, El Higuito,  Guazure,  Jicarito,   Las Peraltas, Loma Larga,  Mata de Plátano,  Mesas de Alcayán, Ococona,  Ocote Seco, Papelillos, Pilas, Suyatal y Zurzular.
+
+== Economía ==
+La actividad productiva del municipio en la actualidad se basa específicamente en la [[agricultura]] (granos básicos), la [[ganadería]] y cultivo de [[Coffea|café]].<ref name='INIFOM'/>
+
+== Cultura ==
+Desde el 2015 se convierte en sede [[Parroquia (religión)|parroquial]] en honor a [[Mónica de Hipona|Santa Mónica de Hipona]] cuya memoria se celebra el 27 de agosto (''Novus Ordo''), pasando como fiesta tradicional el 12 de diciembre día de la [[Virgen de Guadalupe]].<ref name='INIFOM'/>
+
+Otras celebraciones religiosas y tradicionales se realizan en comunidades del municipio:
+* [[Epifanía|Día de Reyes Magos]], en Ococona dos fines de semana a partir del 6 de enero.
+* '''Feria del [[Coffea|Café]]''', en Suyatal tercer fin de semana de febrero.
+* '''Feria del [[Zea mays|Maíz]]''', en Ococona tercer fin de semana de septiembre.
+* '''Feria del [[Musa (planta)|Plátano]]''', en Suyatal tercer viernes de octubre.
+* '''Feria de las Flores''', en todo el municipio el 1 y 2 de noviembre.
+* '''Feria Municipal del [[Frijol]]''', en el casco urbano primer viernes de diciembre.
+* '''Concurso municipal de [[Inmaculada Concepción|altares a La Purísima]]''', en el casco urbano primera semana de diciembre.
+* '''Concurso municipal de [[Belenismo|nacimientos al Niño Dios]]''' en el casco urbano tercera semana de diciembre.
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Nueva Segovia]]
+[[Categoría:Municipios de Nueva Segovia]]
+[[Categoría:Toponimia náhuatl de Nicaragua]]

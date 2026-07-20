@@ -1,0 +1,85 @@
+{{Ficha de entidad subnacional
+| nombre		= Provincia de Abaroa
+| nombre completo	= Provincia de Abaroa
+| unidad		= [[Provincia de Bolivia|Provincia]]
+| mapa			= Bolivia Oruro Eduardo Abaroa.png
+| capital		= [[Challapata]]
+| capital_población	= 
+| capital_coor		= 
+| tipo_superior_1	= [[Departamento de Bolivia|Departamento]]
+| superior_1		= [[Departamento de Oruro]]
+| subdivisión		= 2 [[Municipios de Bolivia|municipios]]
+| superficie		= 4 015 	
+| superficie_puesto	= 
+| prefijo telefónico	= 
+| código ISO		= 
+| población		    = 40444
+| población_año     = 2024
+| población_puesto	= 
+| densidad		= 
+| dirigentes_títulos	= [[Subgobernador de Bolivia|Subgobernador]]
+| dirigentes_nombres	= Irineo Valencia
+| horario               = [[UTC]] -4
+| lengua                = [[Idioma español|Castellano (español)]], [[Idioma aymara|aymara]] y [[Quechua sureño|quechua]]
+| nota1			= 
+|imageninferior       = {{Recortar imagen
+|Imagen = Bolivia Oruro Eduardo Abaroa.png
+|bSize = 1300
+|cWidth = 280
+|cHeight = 280
+|oTop = 730
+|oLeft = 170
+|Location = center
+|Description =  
+}}
+| imageninferior_tamaño= 300px
+| imageninferior_pie   = Ubicación de la provincia de Abaroa <br/> en el [[departamento de Oruro]]
+}}
+
+La '''provincia de Abaroa''' (o Avaroa, o Eduardo Avaroa<ref>''[https://legislacion.com.bo/norma/7057-ley-n-2632 LEY N° 2632]''</ref>) es una provincia de [[Bolivia]] en el [[departamento de Oruro]]. Según el censo de 2012, tenía una población de {{formatnum|32355}} habitantes ([[Censo boliviano de 2012|Censo INE]]).<ref name=ine>{{cita web|título=Censo INE|url=http://censosbolivia.ine.gob.bo/censofichacomunidad/c_listadof/listar_comunidades|editorial=Instituto Nacional de Estadística|idioma=español|fechaacceso=23 de mayo de 2019|fechaarchivo=7 de noviembre de 2014|urlarchivo=https://web.archive.org/web/20141107025542/http://censosbolivia.ine.gob.bo/censofichacomunidad/c_listadof/listar_comunidades|deadurl=yes}}</ref>
+
+Está conformada por dos municipios, físicamente separados por la [[provincia de Sebastián Pagador]]: [[Challapata]] y [[Quillacas]].
+
+== Historia ==
+La provincia se creó en el gobierno de [[José Manuel Pando]], por Ley de 16 de octubre de 1903, al dividir la antigua provincia de [[Provincia de Paria|Paria]] en las nuevas provincias de Abaroa y [[provincia de Poopó]].<ref name=ley1903>{{cita web|título=Ley de 16 de octubre de 1903|url=https://www.lexivox.org/norms/BO-L-19031016.html|editorial=Lexivox.org|fechaacceso=27 de marzo de 2024}}</ref> Se le dio el nombre en honor a [[Eduardo Abaroa Hidalgo|Eduardo Abaroa]], protagonista de la defensa de [[Calama]] durante la [[guerra del Pacífico]].
+
+== Geografía ==
+La provincia se ubica en el sureste del departamento de Oruro, separada físicamente en dos partes por la provincia de Sebastián Pagador. La parte norte, compuesta por el municipio de Challapata, limita al norte con la [[provincia de Poopó]] y el [[departamento de Potosí]], al oeste con la [[provincia de Sud Carangas]], al sur con la provincia de Sebastián Pagador, y al este con el departamento de Potosí. La parte sur, compuesta por el municipio de Quillacas, limita al norte con la provincia de Sebastián Pagador, al oeste con la [[provincia de Ladislao Cabrera]],y al sur y al este con el departamento de Potosí.
+
+== Demografía ==
+De acuerdo con el [[censo boliviano de 2024]], la población de la provincia de Abaroa es de 40 444 habitantes.<ref name="resultados2024">{{cita web|url=https://nubecpv.ine.gob.bo/index.php/apps/onlyoffice/s/fBDwRbxQKgAxegF?fileId=548802|título=Resultados CPV 2024|fechaacceso=29 de abril de 2025|fecha=Septiembre de 2024|editorial=Instituto Nacional de Estadística de Bolivia}}</ref>
+
+La población de la provincia ha aumentado casi tres cuartas partes en las últimas tres décadas:
+{| class="wikitable"
+!Año
+!Habitantes
+!Fuente
+|- align="center"
+|1992
+!23 147
+|<small>Censo</small>
+|- align="center"
+|2001
+!27 675
+|<small>Censo</small>
+|- align="center"
+|2012
+!33 248
+|<small>Censo</small>
+|- align="center"
+|2024
+!40 444
+|<small>Censo</small>
+|}
+{{Gráfica de evolución|tipo=demográfica|color_12=blue|nombre=la Provincia de Eduardo Abaroa|altura=200|anchura=200|1992|23147|2001|27675|2012|32355|notas=<small>Fuente: Instituto Nacional de Estadística de Bolivia</small>}}
+
+== Véase también ==
+* [[Eduardo Abaroa]]
+* [[Lago Poopó]]
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Provincias del departamento de Oruro|Abaroa]]
+[[Categoría:Toponimia vasca de Bolivia|Abaroa]]

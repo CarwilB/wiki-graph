@@ -1,0 +1,73 @@
+{{Infobox settlement 
+| name                    = Tovar Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Tovar
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline    = Collage_Tovar_joan.jpg 
+| image_caption    = '''Left''':Liano Bullring Colseum Tovar Rose Mysical of Altar, Lagoon Mariño in Juan Pablo Peñolaza National Park, '''Middle''':Tovar Cristo Ray Monument, La Batalla Mariño Monument, '''Right''':Tovar Cathedral, Campesino Monument in Tovar Compesino Square, Tovar Bolivar Square (all item from above to bottom) 
+| image_flag               = {{#property:P41}}
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Mérida (state)|Mérida]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Tovar Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Mérida (state)|Mérida]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             =  Yvan Di Marcantonio ([[PSUV]]))
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 2013
+| population_note         = 
+| population_total        = 41,867
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 0275
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = 
+| footnotes               = {{EditOnWikidata}}
+}}
+
+'''Tovar Municipality''' is a municipality in [[Mérida State]], [[Venezuela]]. The population of Tovar measured by the 2013 census was 41,867.<ref>{{cite web|title=Estado Merida : Primeros Resultados XIII Censo General de Poblacion y Vivienda (Merida State : First Results XIII General Census of Population and Housing|url=http://www.ine.gob.ve/censo/fichascenso/tiro.asp?cod_entidad=14|publisher=Instituto Nacional de Estadistica|accessdate=12 September 2012|date=November 2002}}</ref> It is the birthplace of [[Major League Baseball]] player, [[Johan Santana]].<ref>{{cite book|last=Friedman|first=Ian C.|title=Latino Athletes|year=2007|publisher=Facts on File|location=New York|isbn=9780816063840|url=https://books.google.com/books?id=PiTnVkcqmiEC&dq=%22Tovar%2C+M%C3%A9rida%2C+Venezuela%22&pg=PA216|accessdate=12 September 2012|page=216}}</ref>
+
+People native to Tovar are referred to as Tovareños. There is a recent movement to preserve some vintage photos of the town and its people.<ref>{{Cite web|url=https://tovarmemoriacolectiva.blogspot.com/|title=Tovar - Memoria Colectiva}}</ref>
+
+<gallery mode="packed" heights=165>
+File:Plaza de Toros Coliseo el Llano de Tovar.jpg|Tovar Bullring arena
+</gallery>
+
+==References==
+{{Reflist}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Tovar Municipality, Merida}}
+[[Category:Municipalities of Mérida (state)]]
+[[Category:Tovar, Mérida]]
+
+{{MéridaVE-geo-stub}}

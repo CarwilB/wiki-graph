@@ -1,0 +1,116 @@
+{{Infobox settlement
+|name                   = Limones
+|native_name            = 
+|settlement_type        = [[Corregimientos of Panama|Corregimiento]]
+|image_skyline          = 
+|image_caption          = 
+|image_alt              = 
+|pushpin_map            = Panama
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Panama}}
+|subdivision_type1      = [[Provinces of Panama|Province]]
+|subdivision_name1      = [[Chiriquí Province|Chiriquí]]
+|subdivision_type2      = [[Districts of Panama|District]]
+|subdivision_name2      = [[Barú District, Chiriquí|Barú]]
+|leader_title           = 
+|leader_name            = 
+|established_title      = Established
+|established_date       = 
+|area_land_km2          = 53.8
+|area_footnotes         = <ref name=inec>[http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls "Cuadro 11 (Superficie, población y densidad de población en la República...)" [Table 11 (Area, population, and population density in the Republic...)<nowiki>]</nowiki>] {{webarchive|url=https://web.archive.org/web/20160304030354/http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls |date=2016-03-04 }} (.xls). In {{cite web|title=Resultados Finales Básicos |trans-title=Basic Final Results |url=https://www.contraloria.gob.pa/inec/publicaciones/Publicaciones.aspx?ID_SUBCATEGORIA=59&ID_PUBLICACION=360&ID_IDIOMA=1&ID_CATEGORIA=13 |publisher=[[National Institute of Statistics and Census of Panama]] |access-date=May 26, 2015 |language=Spanish |url-status=dead |archiveurl=https://web.archive.org/web/20150710070123/http://www.contraloria.gob.pa/inec/Publicaciones/Publicaciones.aspx?ID_SUBCATEGORIA=59&ID_PUBLICACION=360&ID_IDIOMA=1&ID_CATEGORIA=13 |archivedate=July 10, 2015 }}</ref>
+|population_as_of       = 2010
+|population_total       = 1040
+|population_footnotes   = <ref name=inec/>
+|population_density_km2 = 19.3
+|population_note        = Population density calculated based on land area.
+|timezone1              = [[Eastern Time|EST]]
+|utc_offset1            = −5
+|blank_name             = [[Köppen climate classification|Climate]]
+|blank_info             = [[Tropical monsoon climate|Am]]
+|coordinates            = 
+}}
+
+'''Limones''' is a [[Corregimientos of Panama|corregimiento]] in [[Barú District, Chiriquí|Barú District]], [[Chiriquí Province]], [[Panama]]. It has a land area of {{convert|53.8|sqkm|sqmi}} and had a population of 1,040 as of 2010, giving it a population density of {{convert|19.3|PD/sqkm|PD/sqmi}}.<ref name=inec/> Its population as of 1990 was 974; its population as of 2000 was 948.<ref name=inec/>
+
+==Climate==
+Limones has a [[tropical monsoon climate]] (Am) with moderate to little rainfall from December to April and heavy to very heavy rainfall from May to November.
+
+{{Weather box
+|metric first = Y
+|single line = Y
+|collapsed = 
+|location = Limones
+|Jan high C = 31.8
+|Feb high C = 32.7
+|Mar high C = 33.4
+|Apr high C = 33.0
+|May high C = 31.6
+|Jun high C = 30.5
+|Jul high C = 30.7
+|Aug high C = 30.5
+|Sep high C = 30.1
+|Oct high C = 29.6
+|Nov high C = 29.7
+|Dec high C = 30.8
+|year high C =
+
+|Jan mean C = 26.0
+|Feb mean C = 26.4
+|Mar mean C = 27.3
+|Apr mean C = 27.5
+|May mean C = 27.0
+|Jun mean C = 26.1
+|Jul mean C = 26.2
+|Aug mean C = 26.0
+|Sep mean C = 25.8
+|Oct mean C = 25.4
+|Nov mean C = 25.3
+|Dec mean C = 25.6
+
+|Jan low C = 20.2
+|Feb low C = 20.2
+|Mar low C = 21.2
+|Apr low C = 22.0
+|May low C = 22.4
+|Jun low C = 21.8
+|Jul low C = 21.8
+|Aug low C = 21.6
+|Sep low C = 21.5
+|Oct low C = 21.3
+|Nov low C = 21.0
+|Dec low C = 20.4
+|year low C =
+
+|rain colour = green
+|Jan rain mm = 40.0
+|Feb rain mm = 19.8
+|Mar rain mm = 42.0
+|Apr rain mm = 106.7
+|May rain mm = 268.8
+|Jun rain mm = 333.3
+|Jul rain mm = 287.1
+|Aug rain mm = 371.0
+|Sep rain mm = 511.1
+|Oct rain mm = 573.2
+|Nov rain mm = 359.9
+|Dec rain mm = 102.7
+|source 1=Datos Climáticos Históricos (Historical Climate Data) (rainfall)<ref name="climate">{{cite web|title=Datos Climáticos Históricos (Historical Climate Data)|url=http://www.hidromet.com.pa/clima_historicos.php|website=Hidromereorologia (Hydrometeorology)|publisher= Datos Climáticos Históricos|access-date=6 September 2020|language=Spanish}}</ref>
+|source 2 = Climate-Data.org (temperature) <ref>{{cite web
+|url = https://en.climate-data.org/location/775443/
+|title = Climate: Limones
+|publisher=Climate-Data.org
+|access-date = September 6, 2020}}</ref>
+}}
+
+==References==
+{{reflist}}
+
+{{Chiriquí Province}}
+
+{{coord|8.0997|N|82.8667|W|source:wikidata|display=title}}
+
+{{DEFAULTSORT:Limones, Chiriqui}}
+[[Category:Corregimientos of Chiriquí Province]]
+
+
+{{Chiriquí-geo-stub}}

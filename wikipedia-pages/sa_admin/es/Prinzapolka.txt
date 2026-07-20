@@ -1,0 +1,91 @@
+{{Ficha de entidad subnacional
+| nombre = Prinzapolka
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Región autónoma]]
+| superior_1 = {{NIC|CN}}
+| imagen = no
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.5360
+ |longitude= -84.1160
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=8}}
+| capital = Alamikamba
+| subdivisión = 32 comunidades<br />3 sectores
+| elevación_media = 4
+| superficie = 7,020
+| superficie_puesto = 2
+| número_entidades = 153
+| población_puesto = 41
+| población_año = 2022
+| población = 45230
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/costa_caribe_norte/9135__prinzapolka/ Estimación del 2022] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 8176
+| densidad = 6.443
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 72500
+}}
+'''Prinzapolka''' es un [[Anexo:Municipios de Nicaragua|municipio]] de la [[Región Autónoma de la Costa Caribe Norte]] en la República de [[Nicaragua]]. La cabecera es la localidad de '''Alamikamba'''.
+
+== Geografía ==
+El término municipal limita al norte con los municipios de [[Rosita (Nicaragua)|Rosita]] y [[Puerto Cabezas]], al sur con los municipios de [[La Cruz de Río Grande]] y [[Desembocadura de Río Grande]], al este con el [[Mar Caribe]] y al oeste con los municipios de [[Siuna]] y [[Mulukukú]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=14 de marzo de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref>
+
+La cabecera municipal, Alamikamba, está ubicada a 630 kilómetros de la capital de [[Managua]].
+
+== Historia ==
+[[Archivo:Prinzapolka Dock.jpg|thumb|left|280px|Muelle donde se embarcan los metales extraídos en las minas de Siuna y Bonanza.]]
+El municipio surge a finales del {{siglo|XIX||s}}, ligado a la presencia de compañías bananeras y mineras que utilizaban el paso natural del río Prinzapolka para transportar sus productos. El nombre proviene de los Indios prinsus (de origen sumo) quienes fueron los primeros habitantes en llegar a Prinzapolka al ser desalojados por los misquitos en 1860 desde sus tierras originales. Desde inicio del {{siglo|XIX||s}} hasta mediados de los años 1870 el río sirvió de vía fluvial para transportar abundantes riquezas, consistentes en oro, plata, cobre, zinc, madera y banano extraídas por empresas norteamericanas.<ref name='INIFOM'/>
+
+Prinzapolka fue fundada en 1889 como un distrito después de que se descubriera oro a lo largo del río Prinzapolka y llegara un gran número de buscadores de oro a la zona.
+{{clr|left}}
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2022)
+| tamaño1 = 40
+| posición1 = right
+| etiqueta1 = Hombres: 23,050 (51%)
+| valor1 = 51
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 22,180 (49%)
+| valor2 = 49
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2022)
+| tamaño1 = 40
+| posición1 = right
+| etiqueta1 = Rural: 37,054 (81.9%)
+| valor1 = 81.9
+| color1 = #109618
+| etiqueta2 = Urbano: 8,176 (18.1%)
+| valor2 = 18.1
+| color2 = #FF9900
+}}
+Prinzapolka tiene una población actual de 45,230 habitantes. De la población total, el 51% son hombres y el 49% son mujeres. Casi el 18.1% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima tropical]].<ref name='INIFOM'/>
+ 
+== Localidades ==
+Las 32 comunidades del municipio se subdividen en tres sectores cada uno de los cuales posee sus propias características geográficas y culturales:<ref>Ayuntamiento de Prinzapolka.</ref>
+
+* Comunidades costeras del Mar Caribe.
+* Curso inferior del río Prinzapolka.
+* Curso superior del río.
+
+== Economía ==
+El índice de pobreza es muy grande, siendo la agricultura la principal actividad económica del municipio y es practicada por todas las comunidades. De la producción obtenida el 70% es destinado a la comercialización y el 30% restante al autoconsumo.<ref name='INIFOM'/>
+
+La actividad pesquera ocupa un lugar importante en el municipio, tanto para el autoconsumo como para la venta. Se pescan camarones, langostas y varias especies de peces, siendo los más apreciados el róbalo y la palometa. Cabe destacar que también se pescan tiburones para vender sus aletas en el mercado internacional.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de la RAAN]]

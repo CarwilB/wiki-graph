@@ -1,0 +1,944 @@
+{{ver desambig|texto=Para outros significados veja [[Pato (desambiguação)]].}}
+
+{{Info/Município do Brasil
+<!-- GeoID=3148004 -->
+<!-- Cabeçalho -->| nome = Patos de Minas
+| foto = Patos-de-Minas-MG.jpg
+| leg_foto = Imagem aérea da área central
+| apelido = Capital Nacional do Milho"<br/>"Patos"<br/>"PDM"
+<!-- Dados gerais -->| brasão = Coat of arms of Patos de Minas MG.png
+| bandeira = Flag of Patos de Minas MG.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{dtlink|||1868|idade}}
+| emancipação = {{dtlink|24|5|1892|idade}}
+| gentílico = patense<ref name="IBGE_Panorama">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/patos-de-minas/panorama |titulo=Patos de Minas |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) | acessodata=2023-08-22}}</ref>
+| lema = 
+| padroeiro = [[Santo Antônio de Lisboa|Santo Antônio]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=5 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+| CEP = 38700-000 a 38719-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito = Sandra Cristina Gomes Silva
+| partido = <nowiki>[[Partido Liberal[PL]]</nowiki>
+| fim_mandato = 2028
+<!-- Localização -->| mapa = MinasGerais Municip PatosdeMinas.svg
+| latP = S
+| latG = 18
+| latM = 35
+| latS = 13
+| lonP = O
+| lonG = 46
+| lonM = 30
+| lonS = 53
+| estado = Minas Gerais
+| mesorregião = [[Mesorregião do Triângulo Mineiro e Alto Paranaíba|Triângulo Mineiro/Alto Paranaíba]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Patos de Minas|Patos de Minas]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Carmo do Paranaíba]], [[Coromandel]], [[Cruzeiro da Fortaleza]], [[Guimarânia]], [[Lagamar]], [[Lagoa Formosa]], [[Presidente Olegário]], [[Serra do Salitre]], [[Tiros]] e [[Varjão de Minas]]
+| dist_capital = 415
+<!-- Características geográficas -->| área = 3190.456
+| área_pos = [[Lista de municípios do Brasil por área|Brasil: 483º, MG: 27º]]
+| área_ref = <ref name="IBGE_Panorama"/>
+| área_urbana = 36.71
+| área_urbana_pos = [[Lista das maiores áreas urbanas de Minas Gerais por município|MG: 19º]]
+| área_urbana_ref = IBGE/2019<ref name="IBGE_Panorama"/>
+| distritos = Patos de Minas, Santana de Patos, Chumbo, Bom Sucesso de Patos, Major Porto, [[Pindaíbas]], [[Pilar (Patos de Minas)|Pilar]] e Alagoas
+| distritos_ref = <ref name="enciclopédia"/>
+| população = 159235
+| população_pos = [[Lista de municípios do Brasil por população|Brasil: 189º]] / [[Lista de municípios de Minas Gerais por população|MG: 16º]]
+| população_est = 169173 <!-- ATUALIZAR AS ESTIMATIVAS AQUI -->
+| data_pop = censo IBGE/2022<ref name="IBGE_Panorama"/>
+| altitude = 832
+| população_est_em = 2025<ref name="IBGE">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/patos-de-minas/panorama|título=POPULAÇÃO|publicado=IBGE|acessodata=20 de julho de 2025}}</ref>
+| clima = [[Clima tropical de altitude|tropical de altitude]]
+| sigla_clima = Cwa
+<!-- Indicadores -->| idh = 0.765<!--favor manter o formato-->
+| idh_pos = Brasil: 289º / [[Lista de municípios de Minas Gerais por IDH|MG: 20º]]
+| data_idh = [[PNUD]]/2020<ref name="PNUD_IDH_2020">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/mg/patos-de-minas.html |titulo=Patos de Minas |data=2020 |obra=Atlas do Desenvolvimento Humano dos Municípios do Brasil 2020|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=25 de dezembro de 2020}}</ref>
+| gini = 0.50
+| data_gini = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.atlasbrasil.org.br/2013/perfil/patos-de-minas_mg |titulo=Patos de Minas |data=2013 |obra=Atlas do Desenvolvimento Humano dos Municípios do Brasil 2013|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=30 de julho de 2013}}</ref>
+| pib = {{formatnum:8.151.000.000}}
+| pib_pos = [[Lista de municípios do Brasil por PIB|Brasil: 245º, MG: 22º]]
+| data_pib = IBGE/2023<ref name="IBGE_PIB">{{Citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3148004 |título=Produto Interno Bruto dos Municípios |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=2024-05-24}}</ref>
+| pib_per_capita = 51.190,81
+| data_pib_per_capita = IBGE/2023<ref name="IBGE_PIB_per_capita">{{Citar web |url=https://cidades.ibge.gov.br/brasil/mg/patos-de-minas/panorama |título=PIB per capita 2023 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=2023-10-09}}</ref>
+| site_prefeitura = [http://www.patosdeminas.mg.gov.br// www.patosdeminas.mg.gov.br]
+| site_câmara = [http://www.camarapatos.mg.gov.br// www.camarapatos.mg.gov.br]
+}}
+'''Patos de Minas''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Minas Gerais]], [[Região Sudeste do Brasil|região sudeste]] do país. Localiza-se a uma [[latitude]] de aproximadamente 18°34'44" [[sul]] e a uma [[longitude]] de 46°31'04" [[oeste]], estando a uma altitude de 832 metros.
+
+De acordo com o [[Censo demográfico do Brasil de 2022|censo de 2022]], o município possuía naquele ano uma população de {{fmtn|159434}} habitantes, uma densidade demográfica de 49,91 habitantes por quilômetro quadrado, e uma área de {{fmtn|3190.456|km²}}.<ref name="IBGE_Panorama"/> Em 2025, o IBGE estimou a população em '''169.173''' pessoas.  Está situado na [[Mesorregião do Triângulo Mineiro e Alto Paranaíba]], distando 415 quilômetros da capital [[Belo Horizonte]].<ref>{{Citar web|url=https://patoshoje.com.br/noticias/presidente-do-trf6-visita-patos-de-minas-e-destaca-importancia-da-justica-federal-na-regiao-86643.html|titulo=Presidente do TRF6 visita Patos de Minas e destaca importância da justiça federal na região|acessodata=2024-08-27|website=Patos Hoje|lingua=pt-br}}</ref>
+
+Sua economia é fundamentada nas atividades de [[agricultura]], [[pecuária]] e [[mineração]], representando o [[Lista de municípios de Minas Gerais por PIB|22.º maior PIB de Minas Gerais]] em 2020.<ref>{{Citar web|url=https://web.archive.org/web/20230822035153/https://cidades.ibge.gov.br/brasil/mg/patos-de-minas/pesquisa/38/47001?tipo=ranking|titulo=Minas Gerais - Ranking|acessodata=2023-08-22|website=web.archive.org}}</ref>
+
+
+== Topônimo ==
+O nome Patos é uma referência à grande quantidade destas aves que habitavam as várias lagoas da região. A primeira fazenda instalada no local, Os Patos, em meados do século XIX, já fazia esta referência.<ref name="historia Prefeitura"/>
+
+Em 1828, o povoado construído ao redor da igreja foi batizado de Santo Antônio da Beira do Rio Paranaíba, nome que mudou para Santo Antônio dos Patos da Beira do Rio Paranaíba em 1842, quando a cidade se tornou um distrito de [[Patrocínio]].<ref name="ReferenceC"/>
+
+Em 1866, a vila se tornou independente, a referência às aves continuou, sendo batizada de Santo Antônio dos Patos, nome que foi simplificado apenas para Patos em 1892, quando foi elevada à condição de município.<ref name="historia Prefeitura"/><ref name="ReferenceC"/>
+
+Em 1944, o [[Governo do Estado de Minas Gerais|governo do estado de Minas Gerais]] mudou o nome da cidade para Guaratinga, provocando insatisfação na população. Atendendo aos apelos populares, em 3 de junho de 1945, o município é finalmente batizado de Patos de Minas, para distingui-lo de [[Patos]], no estado da [[Paraíba]], mais antigo.<ref name="historia Prefeitura"/>
+[[Ficheiro:Patos 2025 1.jpg|esquerda|miniaturadaimagem|400x400px|Área central de Patos de Minas, 2025]]
+{|class="wikitable" style="font-size: 85%; text-align:left"
+|+ Cronologia das denominações do atual município de Patos de Minas<ref name="ReferenceC"/>
+|-
+! 1826!! 1828 !! 1842 !! 1866 !! 1892 !! 1944 !! 1945
+|-
+| <div style="text-align: center;">Os Patos</div> || <div style="text-align: center;">Santo Antônio da Beira do Rio Paranaíba</div> || <div style="text-align: center;">Santo Antônio dos Patos da Beira do Rio Paranaíba</div> || <div style="text-align: center;">Santo Antônio dos Patos</div> || <div style="text-align: center;">Patos</div> || <div style="text-align: center;">Guaratinga</div> || <div style="text-align: center;">Patos de Minas</div>
+|-
+| <div style="text-align: center;">Fazenda</div> || <div style="text-align: center;">Povoado</div> || <div style="text-align: center;">Distrito</div> || <div style="text-align: center;">Vila</div> || <div style="text-align: center;">Cidade</div> || <div style="text-align: center;">Cidade</div> || <div style="text-align: center;">Cidade</div>
+|}
+
+== História ==
+=== Pré-história ===
+Segundo estudos arqueológicos realizados na região central do Brasil, os primeiros seres humanos a ocuparem a região onde hoje é o município de Patos de Minas foram os [[indígenas]] da tradição Aratu/Sapucaí, que ocuparam grande parte de Minas Gerais, [[Goiás]] e [[Mato Grosso]].<ref name="historia Prefeitura">{{citar web|url=http://www.patosdeminas.mg.gov.br/acidade/historia.php|título= A Cidade - História|acessodata=20 de novembro de 2013|data= |publicado=Prefeitura Municipal de Patos de Minas}}</ref><ref name="museu">{{citar web|url=http://museudacidade.com.br/p/cidade_22.html|título= A Cidade|acessodata=20 de novembro de 2013|data= |publicado=Museu da Cidade de Patos de Minas}}</ref>
+
+Numerosos e organizados em grandes vilas, os Aratu/Sapucaí acumularam bastantes recursos. Por essa razão, suas terras eram ambicionadas por outros grupos. Contudo, sua grande habilidade militar impediu a penetração de outros grupos. Suas aldeias tinham a capacidade de se fixar por bastante tempo e, quando necessário, mudar de lugar.<ref>{{citar web|url=http://www.comciencia.br/comciencia/?section=8&edicao=42&id=504|título= Tópicos para construção da ocupação pré-histórica do Cerrado|acessodata=20 de novembro de 2013|autor=Altair Sales Barbosa |data=10 de fevereiro de 2009 |publicado=ComCiência}}</ref>
+
+Uma [[urna funerária]] desse povo, fabricada de [[cerâmica]], foi encontrada em 1999 na Fazenda de Contendas, distrito de Santana de Patos. Datada de 3 mil anos antes do presente, (ou seja, cerca de [[1000 a.C.]]), ela é o registro mais antigo da presença humana na região, estando exposta no Museu da Cidade de Patos de Minas.<ref name="museu"/>
+
+=== Século XVII ===
+Duas histórias dão conta do início da povoação pelo homem branco na localidade hoje chamada Patos de Minas. Em uma delas, a povoação teria acontecido por conta de uma grande lagoa, existente até hoje na cidade, localizada a 3&nbsp;km do [[Rio Paranaíba]]. Essa lagoa, fartamente povoada por [[pato]]s serviria de abrigo a [[tropeiros]] que desbravavam o interior do país no [[século XVIII]]. Com o passar do tempo, alguns começaram a construir ranchos, e, posteriormente, pequenas casas, iniciando a ocupação definitiva do espaço.<ref name="historia IBGE">{{citar web|url=http://cod.ibge.gov.br/7UF|título= Histórico de Patos de Minas (MG) |acessodata=20 de novembro de 2013|data= |obra=Canal das Cidades |publicado=IBGE}}</ref>
+
+Na região, passava a Picada dos Aragões, uma variante da [[Picada de Goiás]], que partia de [[Guarda dos Ferreiros]]. Uma [[bandeirante|bandeira]] comandada por [[Lourenço Castanho Taques]], em 1670, é a primeira cuja passagem no município se tem notícia. O grupo passou pelas regiões de mineração de [[Paracatu]] rumo ao município de [[Buritis]].<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=83 }}</ref>
+
+A outra versão para a fundação da cidade é de que negros fugidos das regiões de [[mineração]] de [[Paracatu]] e [[Goiás]] teriam estabelecido [[quilombos]] na região, e que, frequentemente, entravam em confronto com capitães do mato que os tentavam capturar.<ref name="historia IBGE"/>
+
+=== Século XVIII ===
+[[Imagem:Painting of Dona Maria I held at the Instituto Histórico Geográfico da Bahia.jpg|thumb|esquerda|Retrato de [[D. Maria I]], soberana portuguesa que doou as primeiras terras de Patos de Minas]]
+Por ser constante abrigo de [[escravos]] fugidos, [[D. Maria I]], a então soberana de [[Portugal]] (o [[Brasil Colônia|Brasil era uma colônia portuguesa]]), doou parte das terras, então devolutas, a Manoel Afonso Pereira, em sesmaria datada de 29 de maio de 1770.<ref name="historia IBGE"/>
+
+{{citação2|Manoel Afonso Pereira, homem viandante do caminho do Rio de Janeiro, uma faixa de terra nos sertões das margens do rio chamado Paranaíba, terra de campos e matas devolutas servindo as mesmas de asilo aos negros fugidos dos moradores de Paracatu e Goiás|trecho da sesmaria de [[D. Maria I]] doando terras de onde hoje é Patos de Minas<ref name="historia IBGE"/>}}
+
+O documento seguinte que trata da história do município é a célebre carta da então Câmara Municipal de Tamanduá (hoje município de [[Itapecerica (Minas Gerais)|Itapecerica]]), que versa sobre as divisas entre os estados de Minas Gerais e Goiás. Destinada a [[D. Maria I]], a carta conta que, nas localidades de Aragão, Onça e Babilônia, povoadas por Manoel Afonso Pereira de Araújo, depois de matarem dois escravos, roubaram-lhe mais de 6 mil [[cruzados]], além de ouro em pó.<ref name="historia IBGE"/>
+
+Escrita 26 anos depois da sesmaria, acredita-se que a carta faça referência à mesma pessoa, já que as comunidades de Onça e Aragão ainda existem no município, e Babilônia deu origem à cidade vizinha de [[Lagoa Formosa]]. Não se tem notícia, contudo, do que teria acontecido com Manoel Afonso Pereira, já que não há qualquer menção a ele em documento posterior. Acredita-se que ele teria morrido sem deixar herdeiros, ou deixado a região.<ref name="historia IBGE"/>
+
+=== Século XIX ===
+[[Imagem:Casarão em Patos de Minas2.jpg|thumb|direita|Casarão erguido no final do século XIX, um dos remanescentes da fundação da cidade de Patos de Minas]]
+[[Imagem:Cruzeiro de Patos de Minas.jpg|thumb|Cruzeiro na praça Dom Eduardo em frente ao local onde foi instalada a primeira igreja do município, no século XIX]]
+No [[século XIX]], a região abrigava uma fazenda denominada Os Patos, de propriedade do casal Antônio da Silva Guerra e Luíza Corrêa de Andrade. Uma escritura particular datada de 19 de julho de 1826 transfere parte da fazenda para a construção de uma igreja dedicada a [[Santo Antônio]] e uma vila ao seu redor.<ref name="historia IBGE"/>
+
+{{Citação2|...uma gleba de terras de cultura e campos na fazenda denominada "Os Patos" ao glorioso Santo Antônio, a fim de se lhe edificar um templo e também para cômodos dos povos...|trecho da escritura que permite a criação da igreja e vila que originaram a cidade<ref name="historia IBGE"/>}}
+
+O padre José de Brito Freire e Vasconcelos mudou-se para o lugar, tornando-se o primeiro [[vigário]] local, entre 1831 a 1839, ano em que foi construída a primeira capela, dedicada a [[Santo Antônio]]. Atualmente demolida, localizava-se onde se encontra hoje o Memorial do Centenário de Patos de Minas, na Praça Dom Eduardo. Sediou a primeira paróquia, criada através da Lei Provincial nº 472 de 31 de maio de 1850. Com a paróquia, a região, pertencente a [[Patrocínio]], adquiriu direitos, como o de uma sessão eleitoral e de eleger um representante junto a Câmara Municipal de Patrocínio.<ref name="historia IBGE"/><ref name="diocese">{{citar web|url=http://www.diocesedepatosdeminas.org.br/index.php?pagina=grupo_conteudo&tela=10&usuarioparoquia=&sub=Hist%C3%B3rico&subtela=|título=A Igreja em Patos de Minas |acessodata=21 de novembro de 2013|data=|publicado=Diocese de Patos de Minas}}</ref><ref name="ReferenceA">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=91 }}</ref>
+
+Oito anos antes, a Vila de Patrocínio foi elevada à condição de [[município]], tornando a localidade de Santo Antônio dos Patos da Beira do Rio Paranaíba um distrito do novo município.
+
+Em 1856, os moradores da vila realizaram um [[abaixo-assinado]] pedindo ao Governo de Minas a emancipação política da cidade. A vila, contudo, só se tornou independente do município de Patrocínio através da Lei Provincial nº 1291, de 30 de outubro de 1866, denominando-se Vila de Santo Antônio dos Patos. A lei foi assinada pelo então vice-governador em exercício Cônego Joaquim José de Santana.
+
+Não era interesse, contudo, de Patrocínio, a emancipação de seu distrito. Assim, a instalação só aconteceu quase dois anos depois, em 29 de fevereiro de 1868, após a posse da primeira Câmara Municipal, eleita em 8 de dezembro de 1867. A instalação marcaria a desvinculação definitiva de [[Patrocínio]].<ref name="ReferenceA"/>
+
+Em 1874, a Vila de Santo Antônio dos Patos era formada basicamente pelos largos da Matriz (atual Praça dom Eduardo), do Rosário (na altura de onde é a Rádio Clube de Patos, que dispunha de uma igreja dedicada a Nossa Senhora do Rosário), do Caixeta (próximo à Cadeia), Municipal (atual praça Juquinha Caixeta) e Antônio Dias; pelas ruas Teófilo Otoni, 7 de setembro, da Cruz (hoje Santa Cruz), da Lagoa (hoje João da Rocha Filgueira), Tiradentes (a mais antiga rua da cidade), Independência, General Osório, 1 de Março (atual Tenente Bino) e 7 de Abril (atual Afonso Pena), além de diversos becos, todos inexistentes na configuração urbanística atual, entre eles o Beco do Fogo, que deu origem à Rua Major Gote, atualmente a principal da cidade.<ref name="ReferenceB">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=101 }}</ref>
+
+A Lei Estadual nº 2, de 14 de setembro de 1891, confirmou a elevação à categoria de vila, que incluía terras do que anteriormente eram os municípios de [[Patrocínio]], [[Paracatu]] e São Francisco das Chagas de Campo Grande (atual [[Rio Paranaíba (Minas Gerais)|Rio Paranaíba]]).<ref name="historia IBGE"/><ref name="história Câmara">{{citar web|url=http://www.camarapatos.mg.gov.br/index.php?option=com_content&view=article&id=51&Itemid=60|título= Conhecendo melhor a história de Patos de Minas |acessodata=21 de novembro de 2013|data=|publicado=Câmara Municipal de Patos de Minas}}</ref>
+
+De acordo com a Lei Estadual nº 23, de 24 de maio de 1892, a vila independente foi elevada à condição de [[município]], tendo seu nome simplificado como Cidade de Patos. A lei, de autoria do representante patense na [[Assembleia Provincial]] [[Olegário Maciel]], foi assinada pelo então presidente do estado [[Eduardo Ernesto da Gama Cerqueira]].<ref name="historia IBGE"/><ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=93 }}</ref>
+
+=== Século XX ===
+[[Imagem:Fórum Olympio Borges.jpg|esquerda|thumb|Edifício [[Art déco|Art Déco]] do Fórum Olympio Borges, erguido na década de 1930]]
+O primeiro ciclo de desenvolvimento do município aconteceu na [[década de 1930]] do século XX, quando um morador da cidade, [[Olegário Maciel]], tornou-se [[Lista de governadores de Minas Gerais|presidente do estado de Minas Gerais]], então denominação dos governadores de estado. Neste período, foi construída a Escola Normal Oficial de Patos de Minas (hoje, Escola Estadual Professor Antônio Dias Maciel), o Hospital Regional Antônio Dias Maciel, o Fórum "Olympio Borges" e o grupo escolar (hoje Escola Estadual) Marcolino de Barros, estruturas que ampliaram a influência da cidade na região.<ref name="historia Prefeitura"/>
+
+O primeiro registro topográfico da cidade foi realizado por volta de 1935. Nele a maioria das ruas atuais do Centro já existia, porém com outras denominações. As duas principais, Avenida Getúlio Vargas e Rua Major Gote, eram denominadas Avenida Municipal e Rua Desembargador Frederico, respectivamente. O bairro Lagoa Grande era então denominado Bairro da Chapada.<ref name="ReferenceB"/>
+
+Nos anos 1950, com o forte desenvolvimento da agricultura, aconteceu o segundo ciclo de desenvolvimento da região, com forte crescimento populacional, fruto do surto migratório para o município. No contexto da [[Revolução Verde]], o agrônomo [[Antônio Secundino de São José]] instalou na cidade a base para o uso das primeiras sementes de [[Milho|milho híbrido]] do país, que possibilitaram, pela primeira vez, o desenvolvimento da produção em larga escala.<ref name="historia Prefeitura"/><ref name="milho">{{Citar periódico |url=http://www.correiobraziliense.com.br/app/noticia/ciencia-e-saude/2011/01/10/interna_ciencia_saude,231596/antonio-secundino-levou-o-brasil-a-ser-maior-plantador-de-milho-do-mundo.shtml |título=Antônio Secundino levou o Brasil a ser o maior plantador de milho do mundo |nome=Max Milliano |sobrenome=Melo |jornal=Correio Braziliense |data=10 de janeiro de 2011 |local=Brasília |editora=Diários Associados |acessadoem=7 de fevereiro de 2015}}</ref>
+
+A cultura do milho tornou a cidade nacionalmente conhecida e levou à criação da Festa do Milho, até hoje principal atividade cultural da região. O decreto 56.286, de 17 de maio de 1965, transformou a comemoração local em [[Festa Nacional do Milho]], incluindo-a no calendário oficial do Brasil, além de transformar o dia 24 de maio, aniversário da cidade, em Dia Nacional do Milho.{{Carece de fontes|Brasil=sim|data=abril de 2017}} A Lei 13101, de 27 de janeiro de 2015, reedita e atualiza o decreto de 1965.<ref name="historia Prefeitura"/><ref name="ReferenceC">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=94 }}</ref><ref name="milho"/><ref>{{citar web |url=http://www.planalto.gov.br/CCIVIL_03/_Ato2015-2018/2015/Lei/L13101.htm |título=Lei 13101, de 27 de janeiro de 2015 |acessodata=24 de abril de 2017}}</ref>
+
+[[Imagem:Colégio Estadual Patos de Minas2.jpg|thumb|direita|Escola Estadual Professor Zama Maciel, popularmente conhecida como Colégio Estadual, em Patos de Minas]]
+Os anos 1960 marcaram a estagnação econômica do município, em grande medida, pela fundação da nova capital do país, [[Brasília]], para onde grande parte da população patense se mudou, e onde ainda hoje existe uma grande colônia de pessoas originárias de Patos de Minas. Apesar disso, algumas importantes melhorias no município foram feitas nesta época, como a criação da subsidiária da [[Cemig]], fundação da Escola Estadual Professor Zama Maciel e do primeiro curso superior da cidade, na [[Fundação Educacional de Patos de Minas]] (Fepam).<ref name="historia Prefeitura"/>
+
+Nos anos 1970, foi descoberta, na comunidade de Serrinha, a maior jazida de [[fosfato]] sedimentar das [[América]]s, o que deu novo impulso à economia local. Na ocasião a cidade recebeu, pela primeira vez, um [[Presidente do Brasil|presidente da república]], o [[Ernesto Geisel|General Ernesto Geisel]], em 1974.<ref name="historia Prefeitura"/>
+
+No mesmo período, a cidade recebeu a Colônia Gaúcha, grupo de agricultores provenientes do [[Rio Grande do Sul]] que promoveram a colonização agrícola das terras do [[cerrado]].<ref name="historia Prefeitura"/>
+
+Nos anos 1990, foi iniciada a industrialização do município, com a criação da filial da CICA, maior processadora de [[tomate]]s da [[América Latina]]. A empresa chegou a responder sozinha por 30% do ICMS arrecadado na cidade, permanecendo em Patos de Minas por cerca de dez anos, quando mudou-se para o estado de [[Goiás]]. Também instalou-se, na mesma época em Patos, uma fábrica da [[Coca-Cola]], hoje também desativada.<ref name="historia Prefeitura"/><ref>{{citar web|url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/patosdeminas.pdf|título=Diretores da Unilever descartam retorno da CICA para Patos de Minas |acessodata=21 de novembro de 2013|autor=Lindomar Tavares |data= |publicado=Patos Urgente}}</ref><ref>{{citar web|url=http://www.istoedinheiro.com.br/noticias/113498_COM+COMPRA+DE+FABRICA+DA+UNILEVER+PREDILECTA+QUER+REDUZIR+IMPORTACOES|título=Coca-cola anuncia nova fábrica e esquece estrutura abandonada em Patos de Minas |acessodata=21 de novembro de 2013|autor=Maurício Rocha |data=6 de maio de 2011 |publicado=Patos Urgente}}</ref>
+
+=== Século XXI ===
+O [[século XXI]] vem sendo marcado pela retomada do processo de industrialização de Patos de Minas. Em 1999, instalou-se na cidade uma fábrica da Cemil, produtora de derivados de leite. Em 2003, foi fundado na cidade o Suinco, segundo maior frigorífico suíno de Minas Gerais, e em 2013, a Predilecta assumiu a antiga fábrica desativada da CICA, produzindo tomate, milho, batata e ervilha em conserva.<ref>{{citar web|url=http://www.agenciaminas.mg.gov.br/multimidia/galerias/governador-anastasia-participa-de-inauguracao-de-nova-planta-industrial-da-cemil/|título=Governador Anastasia participa de inauguração de nova planta industrial da Cemil |acessodata=21 de novembro de 2013|data=19 de dezembro de 2012 |publicado=Agência Minas}}</ref><ref>{{citar web|url=http://www.suinco.com.br/historico.asp|título=Histórico |acessodata=21 de novembro de 2013|data= |publicado=Suinco}}</ref><ref>{{citar web|url=http://www.patoshoje.com.br/noticias/patos-de-minas/15677-prestes-a-se-tornar-a-2-maior-de-minas-suinco-vai-lancar-produto-na-fenamilho.html|título=Prestes a se tornar a 2ª maior de Minas, Suinco vai lançar produto na Fenamilho|acessodata=21 de novembro de 2013|autor=Maurício Rocha |data=16 de maio de 2012 |publicado=Suinco}}</ref><ref>{{citar web|url=http://www.istoedinheiro.com.br/noticias/113498_COM+COMPRA+DE+FABRICA+DA+UNILEVER+PREDILECTA+QUER+REDUZIR+IMPORTACOES|título=Com compra de fábrica da Unilever, Predilecta quer reduzir importações |acessodata=21 de novembro de 2013|autor=Luiz Gustavo |data=4 de março de 2013 |publicado=IstoÉ Dinheiro}}</ref>
+
+Em 2010, começaram os trabalhos de exploração de [[gás natural]] no município, o que dará novo fôlego à mineração local. A expectativa é que, a partir de 2016, a cidade esteja produzindo gás comercialmente.<ref name="gas1">{{citar web|url=http://oglobo.globo.com/economia/exploracao-de-gas-natural-ja-muda-rotina-de-cidades-de-minas-gerais-6633723|título=Exploração de gás natural já muda rotina de cidades de Minas Gerais|acessodata=1 de outubro de 2013|autor=Bruno Rosa|data=4 de novembro de 2013 |publicado=O Globo}}</ref><ref name="gas2">{{citar web|url=http://oglobo.globo.com/economia/autossuficiencia-em-gas-natural-pode-vir-em-em-ate-cinco-anos-6633708|título=Autossuficiência em gás natural pode vir em até cinco anos|acessodata=1 de outubro de 2013|autor=Bruno Rosa|data=4 de novembro de 2013 |publicado=O Globo}}</ref>
+
+== Geografia ==
+=== Relevo ===
+O município está situado no [[Planalto Central]], portanto seu relevo é caracterizado por grandes extensões altas e planas entrecortadas por serras e vales. A topografia do terreno está dividida em 5% de área plana, 90% ondulada e 5% de área montanhosa. O ponto mais alto de Patos de Minas está localizado na Serra do Pântano, na divisa com [[Coromandel]]. O mais baixo, a 750 metros, na foz do [[Rio Paranaíba]], no extremo noroeste. A altitude média do município é de 900 metros. A altitude no ponto central da cidade é de 833,84 metros.<ref name="fisicos">{{citar web|url=http://www.nhardes.com/vovomanoel/patosdeminas.html|título= Aspectos Físicos|acessodata=21 de novembro de 2013|data= |publicado=Família Bernardes Dias}}</ref><ref>MELLO, p. 55</ref>
+
+O conjunto de serras mais importantes do município é o Espigão Mestre, que funciona como divisor de águas das [[bacia hidrográfica|bacias hidrográficas]] [[Bacia do São Francisco|do São Francisco]] e [[Bacia do Paraná|do Paraná]]. Na região ele assume a denominação de Mata da Corda, onde se destacam as serras dos Magalhães, Grande, de Santa Maria e do Leal.<ref>MELLO, pag. 55</ref>
+
+Além destas, também estão entre as mais importantes do município as serras do Baú, do Barbosa, da Paciência, do Mamão e do Pião.<ref>MELLO, p.59</ref>
+
+=== Hidrografia ===
+; Bacia do Paraná
+[[Imagem:Rio Paranaíba.jpg|thumb|esquerda|[[Rio Paranaíba]], na divisa entre os municípios de Patos de Minas e [[Lagamar]].]]
+
+A porção centro oeste, que inclui o distrito-sede de Patos de Minas, Pilar e Santana de Patos, pertence à Bacia do Paranaíba, parte integrante da [[Bacia do Paraná]].<ref name="bacias">{{citar web|url=http://www.mg.gov.br/governomg/portal/c/governomg/conheca-minas/geografia/5667-bacias-hidrograficas/69546-bacias-hidrograficas/5146/5044|título= Bacias Hidrográficas|acessodata=22 de novembro de 2013|data= |publicado=Portal Minas}}</ref><ref name="instituto"/>
+
+Desta bacia fazem parte o Ribeirão de Santo Antônio das Minas Vermelhas, na região norte do município, o [[Córrego Rico]], que passa por região com grande concentração de atividades agropecuárias,<ref name=cartadobrasil1>{{citar mapa |publicado=IBGE |url=https://biblioteca.ibge.gov.br/visualizacao/mapas/GEBIS%20-%20RJ/SE-23-Y-A.jpg |titulo=Patos de Minas (SE-23-Y-A) |series=Carta do Brasil |autor=[[Instituto Brasileiro de Geografia e Estatística]] |escala=[1:250&nbsp;000] |data=1979 |edicao=1ª |arquivourl=http://web.archive.org/web/20070724002354/https://biblioteca.ibge.gov.br/visualizacao/mapas/GEBIS%20-%20RJ/SE-23-Y-A.jpg |arquivodata=24 de julho de 2007}}</ref> e o [[Rio Paranaíba]], principal formador do [[Rio Paraná]]. O Paranaíba nasce na serra da Mata da Corda, município de [[Rio Paranaíba (Minas Gerais)|Rio Paranaíba]]. Tem aproximadamente 1.070&nbsp;km de curso até a confluência com o [[Rio Grande (Minas Gerais)|Rio Grande]], onde passam a formar o Rio Paraná, no ponto que marca o encontro entre os estados de [[São Paulo]], Minas Gerais e [[Mato Grosso do Sul]].<ref name="bacias"/><ref name="instituto">{{citar web|url=http://licht.io.inf.br/mg_mapas/mapa/cgi/iga_comeco1024.htm|título=Buscar "Patos de Minas"|acessodata=22 de novembro de 2013|data=|obra=Cidades|publicado=Instituto de Geociências Aplicadas (IGA)|arquivourl=https://web.archive.org/web/20100211214908/http://licht.io.inf.br/mg_mapas/mapa/cgi/iga_comeco1024.htm|arquivodata=2010-02-11|urlmorta=yes}}</ref>
+
+Em Patos de Minas o Rio Paranaíba, que corta o município, é responsável pelo abastecimento urbano, recebendo como afluentes o Ribeirão da Mata, o Ribeirão da Fábrica (também conhecido como Ribeirão do Monjolo), o Rio Espírito Santo, o Ribeirão das Contendas, o Ribeirão da Cota e o Ribeirão do Mata Burro.<ref>MELLO, pag. 65</ref>
+
+O curso d'água é o responsável pelo abastecimento urbano de Patos de Minas, apesar disso se encontra bastante poluído, pelo lançamento do esgoto da cidade, e de municípios vizinhos como [[Carmo do Paranaíba]] e [[Lagoa Formosa]]. Uma estação de tratamento de esgoto se encontra em instalação em Patos de Minas para solucionar o problema ambiental.<ref name="estacao">{{citar web|url=http://www.patoshoje.com.br/noticias/patos-de-minas/19344-estacao-de-tratamento-de-esgoto-ja-funciona-mas-ainda-esta-longe-da-conclusao.html|título= Estação de Tratamento de Esgoto já funciona, mas ainda está longe da conclusão|acessodata=21 de novembro de 2013|autor=Maurício Rocha |data=6 de setembro de 2013 |publicado=Patos Hoje}}</ref><ref>MELLO, p. 65</ref>
+
+A Bacia do Paranaíba, como um todo, tem grande importância para a indústria extrativista, já que serve para o beneficiamento de bens minerais, em especial nos municípios de Patos de Minas, [[Araxá]] e [[Uberlândia]].<ref>{{citar web|url=http://www.paranaiba.cbh.gov.br/Bacia.aspx|título= Bacia Hidrográfica do rio Paranaíba|acessodata=22 de novembro de 2013|autor=Comitê da Bacia Hidrográfica do Rio Paranaíba |data= |publicado=Agência Nacional de Águas}}</ref>
+
+; Bacia do São Francisco
+[[Imagem:Lagoa Grande Patos de Minas.jpg|thumb|direita|Lagoa Grande, em frente à Rodoviária de Patos de Minas.]]
+A porção leste do município, onde estão localizados os distritos de [[Pindaíbas]], Chumbo, Major Porto e Bom Sucesso de Patos, faz parte da [[Bacia do São Francisco]]. Nesta região estão localizados o Rio da Prata (que nasce na região da Colônia Agrícola, próximo a comunidade rural de Leal), o Córrego das Posses, o [[Rio Abaeté]] e o Ribeirão do Areado, o Ribeirão da Extrema e o Córrego Lajeado.<ref name="instituto"/>
+
+A [[Bacia do São Francisco]] é a terceira maior [[bacia hidrográfica]] do Brasil e abrange uma área de 2,3 bilhões de km² apenas em Minas Gerais. A cabeceira do Velho Chico, nome popular do rio, fica na [[Serra da Canastra]], no [[Alto Paranaíba]], e a foz, no oceano [[Oceano Atlântico]], entre os estados de [[Sergipe]] e [[Alagoas]].<ref name="bacias"/>
+
+; Lagoas
+A Lagoa dos Patos, de onde se originou o nome da cidade, está totalmente ocupada pelo solo urbano do centro da cidade. Sua antiga localização hoje é ocupada pelo pentágono formado pelas ruas Major Jerônimo, João da Rocha Filgueira, Padre Caldeira, Teófilo Otoni e pela Avenida Paracatu. Com seus limites reduzidos por conta de ações de aterramento e urbanização persistem na zona urbana a Lagoa Grande e a Lagoinha. Nas proximidades da cidade, se encontram a Lagoa Fria e a Lagoa do Patão.<ref>MELLO, p. 59 e 65</ref>
+
+=== Clima ===
+{| class=wikitable style="float:left; margin:0.5em; border-collapse:border; text-align:center; font-size:90%"
+! colspan="6"| Maiores acumulados de precipitação em 24 horas<br/>registrados em Patos de Minas por meses ([[Instituto Nacional de Meteorologia|INMET]])<ref name="Precipitação-INMET">{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83531&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/05/2018&mAtributos=,,,,,,,,,,1,,,,,,|título=BDMEP - Série Histórica - Dados Diários - Precipitação (mm) - Patos de Minas|publicado=Instituto Nacional de Meteorologia|acessodata=18/06/2015}}</ref>
+|-
+! Mês
+! Acumulado
+! Data
+! Mês
+! Acumulado
+! Data
+|-
+| Janeiro
+| {{fmtn|194.8|mm}}
+| 01/01/2011
+| Julho
+| {{fmtn|64.2|mm}}
+| 13/07/1972
+|-
+| Fevereiro
+| {{fmtn|129.6|mm}}
+| 03/02/1995
+| Agosto
+| {{fmtn|45.9|mm}}
+| 30/08/2001
+|-
+| Março
+| {{fmtn|110.2|mm}}
+| 27/03/1991
+| Setembro
+| {{fmtn|56.4|mm}}
+| 04/09/1968
+|-
+| Abril
+| {{fmtn|108.3|mm}}
+| 14/04/2014
+| Outubro
+| {{fmtn|119|mm}}
+| 29/10/1977
+|-
+| Maio
+| {{fmtn|63.2|mm}}
+| 02/05/2009
+| Novembro
+| {{fmtn|150.4|mm}}
+| 11/11/2009
+|-
+| Junho
+| {{fmtn|45|mm}}
+| 06/06/2012
+| Dezembro
+| {{fmtn|172.4|mm}}
+| 15/12/2005
+|-
+| colspan="6" style="font-size:84%" | '''Período''': 01/01/1961 a 31/12/1984, 01/01/1986 a 31/12/1986 e 01/01/1991 a 31/05/2018
+|}
+O clima da cidade é o [[tropical de altitude]], com [[temperatura]] média anual é de 21,5&nbsp;°C. Média máxima anual de 28&nbsp;°C e média mínima anual é de 16,5&nbsp;°C.<ref name="NCB_1981-2010"/> O período onde são registradas as mais altas temperaturas é compreendido entre setembro e março. Por outro lado, entre maio e agosto são registradas as menores médias térmicas.<ref name="MELLO, p. 74">MELLO, p. 74</ref> O [[índice pluviométrico]] é superior a {{fmtn|1400}} milímetros (mm). O período de maior pluviosidade ocorre entre outubro e abril. Os ventos são, em geral, fracos, e sua maior força ocorre em agosto.<ref name="fisicos"/><ref name="MELLO, p. 74"/>
+
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de 1961 a 1984, 1986 e de 1991 a 2018, a menor temperatura registrada em Patos de Minas foi de {{fmtn|1.9|°C}} em 1° de junho de 1979,<ref name="Temp-mín-INMET"/> e a maior atingiu {{fmtn|37.9|°C}} em 22 de outubro de 2015.<ref name="Temp-máx-INMET"/> O maior acumulado de precipitação em 24 horas foi de {{fmtn|194.8|mm}} em 1° de janeiro de 2011. Outros grandes acumulados foram {{fmtn|172.4|mm}} em 15 de dezembro de 2005, {{fmtn|150.4|mm}} em 11 de novembro de 2009, {{fmtn|150.2|mm}} em 13 de janeiro de 1978, {{fmtn|131.9|mm}} em 13 de dezembro de 1962, {{fmtn|129.6|mm}} em 3 de fevereiro de 1995, {{fmtn|119|mm}} em 29 de outubro de 1977, {{fmtn|111.8|mm}} nos dias 14 de novembro de 1969 e 2 de dezembro de 2010, {{fmtn|110.2|mm}} em 27 de março de 1991, {{fmtn|108.3|mm}} em 14 de abril de 2014, {{fmtn|108|mm}} em 2 de março de 1992 e {{fmtn|101|mm}} em 26 de dezembro de 1975.<ref name="Precipitação-INMET"/> Dezembro de 1962, com {{fmtn|556|mm}}, seguido por dezembro de 2008 ({{fmtn|516.2|mm}}) e janeiro de 1992 ({{fmtn|515.7|mm}}).<ref>{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao=83531&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/05/2018&mAtributos=,,,,,,,,,1,,,,,,,|título=BDMEP - série histórica - dados mensais - precipitação total (mm) - Patos de Minas|publicado=Instituto Nacional de Meteorologia|acessodata=18/06/2015}}</ref>
+{{Tabela climática
+|localidade = Patos de Minas
+|larguraporcentagem = 100
+
+|Jan_REC_Max_°C = 34.9 |Jan_REC_Min_°C = 13.3
+|Fev_REC_Max_°C = 34.5 |Fev_REC_Min_°C = 14
+|Mar_REC_Max_°C = 33.9 |Mar_REC_Min_°C = 12.9
+|Abr_REC_Max_°C = 32.5 |Abr_REC_Min_°C = 10
+|Mai_REC_Max_°C = 32.9 |Mai_REC_Min_°C = 4.7
+|Jun_REC_Max_°C = 30.3 |Jun_REC_Min_°C = -1.2
+|Jul_REC_Max_°C = 31.9 |Jul_REC_Min_°C = 1.9
+|Ago_REC_Max_°C = 35.1 |Ago_REC_Min_°C = 4.5
+|Set_REC_Max_°C = 37.1 |Set_REC_Min_°C = 9.6
+|Out_REC_Max_°C = 37.9 |Out_REC_Min_°C = 11.7
+|Nov_REC_Max_°C = 35.7 |Nov_REC_Min_°C = 11.7
+|Dez_REC_Max_°C = 36.5 |Dez_REC_Min_°C = 14.1
+|Max_Rec_Ano_°C = 37.9 |Min_Rec_Ano_°C = 1.9
+
+|Jan_Max_°C = 28.5
+|Fev_Max_°C = 29.2
+|Mar_Max_°C = 28.7
+|Abr_Max_°C = 28.5
+|Mai_Max_°C = 27
+|Jun_Max_°C = 26.3
+|Jul_Max_°C = 26.6
+|Ago_Max_°C = 28.5
+|Set_Max_°C = 29.8
+|Out_Max_°C = 30.2
+|Nov_Max_°C = 28.6
+|Dez_Max_°C = 28.1
+|Max_Ano_°C = 28.3
+
+|Jan_Med_comp_°C = 22.5
+|Fev_Med_comp_°C = 22.8
+|Mar_Med_comp_°C = 22.4
+|Abr_Med_comp_°C = 21.7
+|Mai_Med_comp_°C = 19.8
+|Jun_Med_comp_°C = 18.7
+|Jul_Med_comp_°C = 18.9
+|Ago_Med_comp_°C = 20.7
+|Set_Med_comp_°C = 22.4
+|Out_Med_comp_°C = 23.3
+|Nov_Med_comp_°C = 22.5
+|Dez_Med_comp_°C = 22.3
+|Med_comp_Ano_°C = 21.5
+
+|Jan_Min_°C = 18.6
+|Fev_Min_°C = 18.4
+|Mar_Min_°C = 18.3
+|Abr_Min_°C = 16.9
+|Mai_Min_°C = 14.4
+|Jun_Min_°C = 12.9
+|Jul_Min_°C = 13
+|Ago_Min_°C = 14.4
+|Set_Min_°C = 16.5
+|Out_Min_°C = 18
+|Nov_Min_°C = 18.4
+|Dez_Min_°C = 18.6
+|Min_Ano_°C = 16.5
+
+|Jan_Precip_mm = 287
+|Fev_Precip_mm = 187.2
+|Mar_Precip_mm = 209.8
+|Abr_Precip_mm = 62.5
+|Mai_Precip_mm = 32.1
+|Jun_Precip_mm = 10.6
+|Jul_Precip_mm = 2.9
+|Ago_Precip_mm = 12.1
+|Set_Precip_mm = 43.6
+|Out_Precip_mm = 94
+|Nov_Precip_mm = 210.6
+|Dez_Precip_mm = 311.8
+|Ano_Precip_mm = 1464.2
+
+|Precip_Min = ≥ 1 mm
+|Jan_dprecip = 18
+|Fev_dprecip = 13
+|Mar_dprecip = 14
+|Abr_dprecip = 6
+|Mai_dprecip = 3
+|Jun_dprecip = 1
+|Jul_dprecip = 1
+|Ago_dprecip = 1
+|Set_dprecip = 4
+|Out_dprecip = 8
+|Nov_dprecip = 14
+|Dez_dprecip = 19
+|Ano_dprecip = 102
+
+|Jan_umid_comp = 80.5
+|Fev_umid_comp = 77.4
+|Mar_umid_comp = 79.6
+|Abr_umid_comp = 74.8
+|Mai_umid_comp = 70.8
+|Jun_umid_comp = 66
+|Jul_umid_comp = 59.7
+|Ago_umid_comp = 53
+|Set_umid_comp = 55.3
+|Out_umid_comp = 62.8
+|Nov_umid_comp = 75.1
+|Dez_umid_comp = 80.8
+|Ano_umid_comp = 69.7
+
+|Jan_hsol = 155.3
+|Fev_hsol = 177.6
+|Mar_hsol = 180.1
+|Abr_hsol = 222.3
+|Mai_hsol = 239.4
+|Jun_hsol = 251
+|Jul_hsol = 259.4
+|Ago_hsol = 269.2
+|Set_hsol = 212.3
+|Out_hsol = 198.9
+|Nov_hsol = 158
+|Dez_hsol = 142.6
+|Ano_hsol = 2466.1
+
+|fonte = [[Instituto Nacional de Meteorologia]] (INMET) (normal climatológica de 1981-2010;<ref name="NCB_1981-2010">{{citar web|URL=http://www.inmet.gov.br/portal/index.php?r=clima/normaisclimatologicas|título=NORMAIS CLIMATOLÓGICAS DO BRASIL|publicado=Instituto Nacional de Meteorologia|acessodata=02/07/2018}}</ref> recordes de temperatura: 01/01/1961 a 31/12/1984, 01/01/1986 a 31/12/1986 e 01/01/1991 a 31/05/2018)<ref name="Temp-mín-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83531&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/05/2018&mAtributos=,,,1,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura mínima (°C) - Patos de Minas|publicado=Instituto Nacional de Meteorologia|acessodata=18/06/2015}}</ref><ref name="Temp-máx-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83531&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/05/2018&mAtributos=,,1,,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura máxima (°C) - Patos de Minas|publicado=Instituto Nacional de Meteorologia|acessodata=18/06/2015}}</ref>
+}}
+
+=== Vegetação ===
+Patos de Minas faz parte do [[bioma]] [[Cerrado]], assim como 50% do estado de Minas Gerais, caracterizado pelas estações seca e chuvosa são bem definidas e com vegetação composta de gramíneas, arbustos e árvores.<ref>{{citar web|url=http://www.mg.gov.br/governomg/portal/c/governomg/conheca-minas/geografia/5668-clima-vegetacao-e-relevo/27208-vegetacao/5146/5044|título= Clima, vegetação e relevo |acessodata=21 de novembro de 2013|data= |publicado=Portal Minas}}</ref> A vegetação original do município está praticamente extinta em função da expansão da agricultura e da grande ocorrência na região de madeiras nobres como o cedro, jatobá, sucupira, angico e ipê. No Parque do Mocambo, localizado na área central da cidade há um resíduo da Mata do Tonheco.<ref>MELLO, p.72</ref>
+
+Próxima a região norte da cidade está localizada a Mata do Catingueiro, reserva ambiental transformada em [[Área de Preservação Permanente]] pela lei municipal 3088/92. Com cerca de 300 hectares a APP é delimitada pela avenida Marabá, rodovia MGT-354 e rodovia de acesso ao bairro Sebastião Amorim. Sua proximidade com a área urbana faz com que seja alvo constante de queimadas, frequentemente criminosas.<ref>{{citar web|url=http://www.patosdeminas.mg.gov.br/noticias/read.php?id=230|título=Secretaria Municipal de Infraestrutura constrói aceiros no entorno da Mata do Catingueiro.|acessodata=9 de setembro de 2013|data= |publicado=Prefeitura Municipal de Patos Minas}}</ref>
+
+== Demografia ==
+[[Imagem:Piramide etaria patos de minas.JPG|thumb|direita|Pirâmides Etárias de Patos de Minas em 1991, 2000 e 2010]]
+A população do atual município de Patos de Minas teve sua origem nos tropeiros que faziam expedições ao interior do Brasil e nos negros fugidos das minas de [[Paracatu]] e [[Goiás]], no século XIX. Nesta altura a presença indígena deixa de ser expressiva pois com a fixação de brancos e negros as populações nativas se afastaram para zonas não povoadas. Nos anos 1970 a chegada de [[gaúcho]]s, principalmente de origem alemã, se somou a este quadro. Para os habitantes de outras regiões que se fixam em Patos de Minas se adota o gentílico "patureba".<ref>MELLO, p. 76</ref>
+
+A população do município segundo o censo de 2010 era de {{fmtn|138710}} habitantes. Entre 2000 e 2010, o [[crescimento vegetativo]] foi de 1,14%. Na década anterior, de 1991 a 2000, a taxa média de crescimento anual foi de 2,08%, valores acima das médias estaduais e federais. No Estado, estas taxas foram de 1,01% tanto 2000 e 2010 quanto entre 1991 e 2000. No país, foram de 1,01% entre 2000 e 2010 e 1,02% entre 1991 e 2000.
+
+Ainda segundo o Censo de 2010, 48,97% eram homens, e 51.03% eram mulheres. A diferença entre a população masculina e feminina se ampliou na última década, já que em 2000 a população masculina era de 49,41% e a feminina 50,59%. O valor é bastante semelhante ao levantamento anterior, realizado em 1991 (49,35% de homens e 50,65% de mulheres).<ref name="atlas">{{citar web|url=http://atlasbrasil.org.br/2013/perfil/patos-de-minas_mg|título= Perfil Patos de Minas|acessodata=26 de novembro de 2013|autor=[[Programa das Nações Unidas para o Desenvolvimento]] (Pnud) |autor2=[[Fundação João Pinheiro]] e [[Instituto de Pesquisa Econômica Aplicada]] (Ipea) |data= |obra=Atlas do Desenvolvimento Humano no Brasil em 2013 |publicado=AtlasBrasil.org}}</ref>
+
+A taxa de envelhecimento da população vem aumentando, passando de 4,46% em 1991, para 5,61% em 2000 e 7,98% em 2010. A população patense é composta de 20,66% de pessoas com menos de 15 anos, 71,36% entre 15 e 64 anos e 7,98 com mais de 65 anos.<ref name="atlas"/>
+
+Patos de Minas já alcançou um dos [[Objetivos de Desenvolvimento do Milênio]] em que o país deve reduzir a [[mortalidade infantil]] para menos de 17,9 por mil até 2015. Em 2010 a mortalidade infantil no município era de 14,5 por mil, enquanto Minas Gerais registrava 15,1 e o [[Brasil]] 16,7.<ref name="atlas"/>
+
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+|+ Mortalidade de Crianças em Patos de Minas <small><sup>(por mil nascidos vivos)</sup></small><ref name="atlas"/>
+! Ano || Até 1 ano || Até 5 anos
+|-
+|<div style="text-align: center;">1991</div> || <div style="text-align: center;">29,5</div> || <div style="text-align: center;">38,9</div>
+|-
+|<div style="text-align: center;">2000</div> || <div style="text-align: center;">18,0</div> || <div style="text-align: center;">19,5</div>
+|-
+|<div style="text-align: center;">2010</div> || <div style="text-align: center;">14,5</div> || <div style="text-align: center;">16,7</div>
+|-
+|}
+
+A [[taxa de fecundidade]] da cidade está abaixo da taxa de reposição, com 1,6 filhos por mulher, enquanto a [[esperança de vida]] ao nascer aumentou 8,3 anos nas últimas duas décadas, passando de 68 anos em 1991, para 73,9 em 2000 e 76,3 em 2010, número mais alto do que o do estado e o Brasil em 2010 registravam 15,3 anos e 73,9 anos.<ref name="atlas"/>
+
+=== Urbanização ===
+Patos de Minas é um município essencialmente urbano. Segundo o Censo de 2010 do IBGE dos 138 710 habitantes da cidade, 127 724 (92,08%) vivem na cidade, enquanto 10 986 (7,92%) são moradores do campo. Com uma área de 3.189,771&nbsp;km², a [[densidade demográfica]] do município é de 43,49 hab/km². A taxa de urbanização apresentou nas últimas duas décadas um crescimento de 8,45%, passando de 84,90% em 1991, para 89,87 em 2000 até os 92,08% de 2010.<ref name="história Câmara"/><ref name="atlas"/><ref>{{citar web|url=http://cod.ibge.gov.br/75C|título= Patos de Minas|acessodata=21 de novembro de 2013|data= |obra=Canal das Cidades |publicado=IBGE}}</ref>
+
+Cerca de 99% das ruas da cidade são asfaltadas e possuem iluminação pública e 96,53% dos habitantes recebem água tratada. O sistema de abastecimento de água da [[Copasa]] em Patos foi premiado por duas vezes (1999 e 2002) pela Associação Brasileira de Engenharia Sanitária e Ambiental (Abes), recebendo o Prêmio Nacional de Qualidade em Saneamento.<ref name="infra">{{citar web|url=http://www.patosdeminas.mg.gov.br/acidade/infraestrutura.php|título= A Cidade - Infraestrutura|acessodata=21 de novembro de 2013|data= |publicado=Prefeitura Municipal de Patos de Minas}}</ref>
+
+O sistema de coleta de esgotamento sanitário atinge cerca de 98% da população e, atualmente encontra-se em construção uma estação de tratamento de esgoto para que os resíduos não sejam despejados no [[Rio Paranaíba]].<ref name="estacao"/><ref name="infra"/>
+
+A energia elétrica chega a 99,86% dos domicílios (incluindo os da zona rural) e na cidade a coleta de lixo alcança 99,65% das residências. Cerca de 0,25% dos habitantes vivem em locais sem água e esgotamento sanitário adequados.<ref name="atlas"/>
+
+=== Religião ===
+Católica:61,03%
+Evangélica:35,86%
+Outras:3.11%
+
+Patos de Minas é sede da [[Diocese de Patos de Minas]], que compreende 24 municípios do [[Triângulo Mineiro]], [[Alto Paranaíba]] e [[Noroeste de Minas]]: [[Abadia dos Dourados]], [[Arapuá]], [[Carmo do Paranaíba]], [[Coromandel]], [[Cruzeiro da Fortaleza]], [[Douradoquara]], [[Guimarânia]], [[Ibiá]], [[Iraí de Minas]], [[Lagamar]], [[Lagoa Formosa]], [[Lagoa Grande]], [[Matutina]], [[Monte Carmelo]], Patos de Minas, [[Patrocínio]], [[Perdizes]], [[Presidente Olegário]], [[Rio Paranaíba]], [[São Gonçalo do Abaeté]], [[São Gotardo]], [[Serra do Salitre]], [[Tiros]] e [[Varjão de Minas]]<ref>{{citar web|url=http://www.diocesedepatosdeminas.org.br/index.php?pagina=grupo_conteudo&tela=8&sub=Apresenta%C3%A7%C3%A3o|título=Mapa da Diocese|acessodata=1 de outubro de 2013|autor=Diocese de Patos de Minas|data= }}</ref>
+
+=== Indicadores sociais ===
+==== IDH ====
+Segundo o ''Atlas do Desenvolvimento Humano 2010'' elaborado pelo [[Programa das Nações Unidas para o Desenvolvimento]] o [[Índice de Desenvolvimento Humano]] de Patos de Minas é 0,765, sendo portanto classificado na faixa "alto". A cidade possui o 289º melhor índice dentre os 5.565 municípios do [[Brasil]] e o 20º dentre os 853 municípios de Minas Gerais, estando portanto entre os 5,18% melhores do país, e os 2,23% melhores do estado.<ref name="atlas"/>
+
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+|+ Evolução do IDH de Patos de Minas<ref name="atlas"/>
+! Ano || IDH-M || Faixa || Ranking Nacional || Ranking Estadual
+|-
+|<div style="text-align: center;">1991</div> || <div style="text-align: center;">0,525</div> || style="background: #FFA500" | <div style="text-align: center;">baixo</div> || <div style="text-align: center;">453º</div> || <div style="text-align: center;">31º</div>
+|-
+|<div style="text-align: center;">2000</div> || <div style="text-align: center;">0,675</div> || style="background: #FFD700" | <div style="text-align: center;">médio</div> || <div style="text-align: center;">302º</div> || <div style="text-align: center;">19º</div>
+|-
+|<div style="text-align: center;">2010</div> || <div style="text-align: center;">0,765</div> || style="background: #98FB98" | <div style="text-align: center;">alto</div> || <div style="text-align: center;">289º</div> || <div style="text-align: center;">20º</div>
+|-
+|}
+
+Entre 1991 e 2000 O IDHM passou de 0,525 em 1991 para 0,675 em 2000, uma taxa de crescimento de 28,57%. O hiato de desenvolvimento humano, ou seja, a distância entre o IDHM do município e o limite máximo do índice, que é 1, foi reduzido em 31,58%. Na década seguinte, entre 2000 e 2010, o IDHM passou de 0,675 em 2000 para 0,765 em 2010, uma taxa de crescimento de 13,33%. O hiato de desenvolvimento humano foi reduzido em 27,69%.<ref name="atlas"/>
+
+Considerando-se os intervalo de 20 anos em que é calculado o IDH (1991 - 2010) o município teve um incremento no seu IDH de 45,71%, abaixo da média de crescimento nacional (47,46%) e abaixo da média de crescimento estadual (52,93%). O hiato de desenvolvimento humano foi reduzido em 50,53% no período.<ref name="atlas"/>
+
+Dentre os três componentes que fazem parte do [[IDH]], longevidade é o mais alto, 0,855, classificado na faixa "muito alto". Renda é o segundo, calculado em 0,749, portanto na faixa "alto", seguido por Educação, 0,698, na faixa "médio".<ref name="atlas"/>
+
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+|+ Componentes do IDH de Patos de Minas<ref name="atlas"/>
+! Componente|| IDH-M 2010 || Faixa || IDH-M 2000 || Faixa || IDH-M 1991 || Faixa
+|-
+|<div style="text-align: center;">Renda</div> || <div style="text-align: center;">0,749</div> || style="background: #98FB98" | <div style="text-align: center;">alto</div> || <div style="text-align: center;">0,694</div> || style="background: #FFD700" | <div style="text-align: center;">médio</div> || <div style="text-align: center;">0,641</div> || style="background: #FFD700" | <div style="text-align: center;">médio</div>
+|-
+|<div style="text-align: center;">Longevidade</div> || <div style="text-align: center;">0,855</div> || style="background: #1E90FF" | <div style="text-align: center;">muito alto</div> || <div style="text-align: center;">0,816</div> || style="background: #1E90FF" | <div style="text-align: center;">muito alto</div> || <div style="text-align: center;">0,717</div> || style="background: #98FB98" | <div style="text-align: center;">alto</div>
+|-
+|<div style="text-align: center;">Educação</div> || <div style="text-align: center;">0,698</div> || style="background: #FFD700" | <div style="text-align: center;">médio</div> || <div style="text-align: center;">0,542</div> || style="background: #FFA500" | <div style="text-align: center;">baixo</div> || <div style="text-align: center;">0,315</div> || style="background: #FF4500" | <div style="text-align: center;">muito baixo</div>
+|-
+|}
+
+Entre 1991 e 2000, a dimensão que mais cresceu em termos absolutos foi Educação, com crescimento de 0,227, seguida por Longevidade e por Renda. Entre 2000 e 2010, a dimensão que mais cresceu em termos absolutos também foi Educação, com acréscimo de 0,156, seguida por Renda e por Longevidade. Contudo, como educação era o mais baixo índice em 1991, o componente continua como o mais fraco.<ref name="atlas"/>
+
+==== Gini ====
+O [[Índice de Gini]], que mede a desigualdade, registrado em Patos de Minas em 2010 era de 0,50. A [[pobreza extrema]] no município era de 0,87%, e a população pobre somava 4,55%. No mesmo ano, a renda per capita do patense era de R$843,57.<ref name="atlas"/>
+
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+|+ Desigualdade social em Patos de Minas<ref name="atlas"/>
+! Ano || Gini || Renda Per Capita || Pobreza Extrema || Pobreza
+|-
+|<div style="text-align: center;">1991</div> || <div style="text-align: center;">0,58</div> || <div style="text-align: center;">R$430,92</div> || <div style="text-align: center;">7,54%</div> || <div style="text-align: center;">29,56%</div>
+|-
+|<div style="text-align: center;">2000</div> || <div style="text-align: center;">0,54</div> || <div style="text-align: center;">R$602,52</div> || <div style="text-align: center;">2,09%</div> || <div style="text-align: center;">11,50%</div>
+|-
+|<div style="text-align: center;">2010</div> || <div style="text-align: center;">0,50</div> || <div style="text-align: center;">R$843,57</div> || <div style="text-align: center;">0,87%</div> || <div style="text-align: center;">4,55%</div>
+|-
+|}
+
+=== Hierarquia urbana ===
+O governo do estado divide o território mineiro em dez regiões de planejamento. Patos de Minas é o mais populoso município da Região V, [[Alto Paranaíba]].<ref>{{citar web|url=http://www.mg.gov.br/governomg/portal/c/governomg/conheca-minas/geografia/5671-regioes-de-planejamento/69548-as-regioes-de-planejamento/5146/5044|título= Regiões de Planejamento|acessodata=21 de novembro de 2013|data= |publicado=Portal Minas Gerais}}</ref>
+
+== Subdivisões ==
+[[Imagem:Mapa Município de Patos de Minas.jpg|thumb|esquerda|300px|Mapa de Patos de Minas, em vermelho as sedes dos distritos]]
+A população distribui-se, além do distrito-sede de Patos de Minas, nos distritos de Santana de Patos, Chumbo, Bom Sucesso de Patos, Major Porto, [[Pindaíbas]], [[Pilar (Patos de Minas)|Pilar]] e Alagoas.<ref name="enciclopédia">{{citar web|url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/patosdeminas.pdf|título= Patos de Minas |acessodata=30 de julho de 2010|data= |obra=Enciclopédia dos Municípios |publicado=IBGE}}</ref>
+
+O distrito-sede foi elevado a distrito em 1850, batizado então de Santo Antônio dos Patos, subordinado a [[Patrocínio]]. Em 1866, recebeu o status de vila independente e, em 1892 sede do município.<ref name="enciclopédia"/>
+
+Santana de Patos foi tornada um distrito da vila de Santo Antônio dos Patos em 1872, denominado Santana do Paranaíba, nomenclatura que persistiu até 1920, quando passou a se chamar apenas Santana, nome que teve até a data atual, assumida em 1933.<ref name="enciclopédia"/>
+
+O distrito de Chumbo foi criado em 1876, também vinculado à vila de Santo Antônio dos Patos, sendo denominado até 1923 como Dores do Areado. Em 1966, o município de Patos de Minas foi dividido em mais dois distritos, Major Porto e Bom Sucesso, o último sendo chamado até 1988 de Bom Sucesso de Patos. [[Pindaíbas]] foi elevado a distrito em 1976 e Pilar em 1992. Pilar já havia sido um distrito entre 1923 e 1936, sendo denominado Minas Vermelhas.<ref name="enciclopédia"/>
+
+Alagoas é a mais recente localidade a ganhar a caracterização de distrito, através de uma lei municipal promulgada em 2012.<ref name="alagoas">{{citar web|url=http://www.patoshoje.com.br/noticia/camara-aprova-criacao-do-distrito-de-alagoas-aumentando-para-sete-o-numero-de-distritos-17016.html|título= Câmara aprova criação do Distrito de Alagoas e aumenta para 7 os distritos|acessodata=29 de janeiro de 2015|data=9 de novembro de 2011 |publicado=Patos Hoje}}</ref>
+
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+|+ Divisão política do município de Patos de Minas
+|-
+! Distrito !! Ano de Criação !! População<sup>(hab)</sup> !! Área <sup>(km²)</sup> !! Ref.
+|-
+| <div style="text-align: center;">Patos de Minas</div> || <div style="text-align: center;">1850</div> || <div style="text-align: center;">124.466</div> || <div style="text-align: center;">1.197,78</div> ||<center><ref name="enciclopédia"/><ref name="ReferenceD">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=121 }}</ref></center>
+|-
+| <div style="text-align: center;">Santana de Patos</div> || <div style="text-align: center;">1872</div> || <div style="text-align: center;">2.231</div> || <div style="text-align: center;">548,44</div> ||<center><ref name="enciclopédia"/><ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=135 e 139 }}</ref></center>
+|-
+| <div style="text-align: center;">Chumbo</div> || <div style="text-align: center;">1876</div> || <div style="text-align: center;">1.233</div> || <div style="text-align: center;">233,56</div>||<center><ref name="enciclopédia"/><ref name="ReferenceE">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=165 e 169 }}</ref></center>
+|-
+| <div style="text-align: center;">Bom Sucesso de Patos</div> || <div style="text-align: center;">1966</div> || <div style="text-align: center;">622</div> || <div style="text-align: center;">137,67</div>||<center><ref name="enciclopédia"/><ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=213 e 217 }}</ref></center>
+|-
+| <div style="text-align: center;">Major Porto</div> || <div style="text-align: center;">1966</div> || <div style="text-align: center;">1.523</div> || <div style="text-align: center;">306,91</div>||<center><ref name="enciclopédia"/><ref name="ReferenceF">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=192 e 196 }}</ref></center>
+|-
+| <div style="text-align: center;">[[Pindaíbas]]</div> || <div style="text-align: center;">1976</div> || <div style="text-align: center;">1.678</div> || <div style="text-align: center;">171,47</div>||<center><ref name="enciclopédia"/><ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=238 e 242 }}</ref></center>
+|-
+| <div style="text-align: center;">[[Pilar (Patos de Minas)|Pilar]]*</div> || <div style="text-align: center;">1992</div> || <div style="text-align: center;">1.506</div> || <div style="text-align: center;">591,7</div>||<center><ref name="enciclopédia"/><ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=269 e 274 }}</ref></center>
+|-
+| <div style="text-align: center;">Alagoas</div> || <div style="text-align: center;">2012</div> || <div style="text-align: center;">não definido**</div> || <div style="text-align: center;">não definido**</div>||<center><ref name="alagoas"/></center>
+|-
+|colspan="7" style="font-size: 100%"|
+(*) A região teve status de distrito entre 1926 e 1936 com o nome de Minas Vermelhas.
+
+(**) Sem a demarcação dos limites do distrito, área e população não podem ser determinados.
+
+|-
+|}
+
+=== Patos de Minas ===
+O distrito-sede de Patos de Minas está a uma altitude média de 833 metros, com extensão territorial de 1.197,78&nbsp;km², incluindo os 50&nbsp;km² da área urbana. Seus limites são: ao norte o município de [[Presidente Olegário]], ao sul o município de [[Lagoa Formosa]] e o distrito de Santana de Patos, a oeste o distrito de Pilar, a leste o distrito de Pindaíbas e o distrito de Chumbo e a sudoeste os municípios de [[Coromandel]] e [[Guimarânia]].
+
+Segundo o [[IBGE]], considera-se "povoado" as aglomerações com mais de 50 domicílios. Assim, a região possui dois povoados: Alagoas (elevado a categoria de distrito em 2012) e Boaçara.<ref name="ReferenceD"/>
+
+O ponto mais elevado do município, na Serra do Pântano, a 1.178 metros, está localizado no distrito-sede, originalmente coberto pela Mata da Corda, uma [[floresta tropical]] [[latifoliada]], hoje praticamente extinta.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=131 }}</ref>
+
+Segundo dados do IBGE, em 2007, a população do distrito somava 124 466 habitantes, destes, 118 374 residiam na cidade, que tinha uma área aproximada de 22,7&nbsp;km²<ref name="ReferenceD"/>
+
+=== Santana de Patos ===
+Localizado a uma altitude de 851,39 metros e ocupando uma área de 548,44 m² está o distrito de [[Santana de Patos]]. Ele se delimita ao norte com o distrito-sede, ao sul com os municípios de [[Cruzeiro da Fortaleza]], [[Serra do Salitre]] e [[Carmo do Paranaíba]], a oeste com os municípios de Cruzeiro da Fortaleza e [[Guimarânia]] e a leste com o município de [[Lagoa Formosa]].
+
+As comunidades rurais mais importantes da região são: Vieiras, Contendas, Quebra Rabo, Lanhosos, Paraíso, Barreiro e Campo Alegre.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=135 }}</ref>
+
+Trata-se de uma das regiões com maior abundância de água e com relevo bastante plano, o que facilita a exploração agrícola da região.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=136 }}</ref>
+
+A região foi uma das primeiras a serem ocupadas no atual município de Patos de Minas. Em 1806, iniciou-se a sua povoação, acelerada com com a construção de uma [[ermida]] em 1816. Em 1822, foi doada, por Ana Soares da Encarnação, uma área para a construção de uma capela em homenagem a [[Sant'Ana]], daí o nome da região. No final do século XIX, foi erguida uma nova igreja, que ainda existe na região.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=141 }}</ref>
+
+A população de Santana de Patos, em 2007, era de 2 231 habitantes, dos quais 788 residentes na sede do distrito.<ref name="ReferenceG">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=169 }}</ref>
+
+=== Chumbo ===
+A uma altitude de 800 metros e com uma área de 233,56&nbsp;km² está o distrito de Chumbo. Seus limites são ao norte o município de [[Presidente Olegário]], a noroeste o distrito-sede, a nordeste o município de [[Varjão de Minas]], ao sul o distrito de [[Pindaíbas]] e a leste o distrito de [[Major Porto]].<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=165 }}</ref>
+
+O primeiro arraial do Chumbo foi abandonado, no início do século XIX e, a 20&nbsp;km distante do local, foi construída a atual sede do distrito, passando a chamar-se de Nossa Senhora da Conceição do Areado. A partir de 1869, uma decisão do governo estadual definiu que a localidade pertenceria civilmente a Patos de Minas, e eclesiasticamente a São Francisco das Chagas (atual município de Rio Paranaíba). A partir de 1876, a localidade passa a ser um distrito da então Vila de Santo Antônio dos Patos, recuperando-se o topônimo original.<ref name="enciclopédia"/><ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=170 }}</ref>
+
+A região está compreendida na [[Bacia do São Francisco]] tendo como principal curso de água o Rio da Prata, além dos córregos do Bebedouro, da Confusão e do Areado. O Morro Agudo e a Serra Grande são as duas principais formações de relevo do local.<ref name="ReferenceE"/>
+
+A população de Chumbo, em 2007, era de 1 233 habitantes, dos quais 427 residentes na sede do distrito.<ref name="ReferenceG"/>
+
+=== Bom Sucesso de Patos ===
+O distrito de Bom Sucesso de Patos está localizado a uma altitude de 830 metros e ocupa uma área de 137,67&nbsp;km² sendo, portanto, o menor distrito do município de Patos de Minas. Limita-se ao norte com [[Varjão de Minas]], ao sul com [[Carmo do Paranaíba]], a oeste com o distrito de Major Porto e a leste com o município de [[Tiros]].<ref name="ReferenceH">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=213 }}</ref>
+
+A ocupação da região é relativamente recente. Os primeiros a se estabelecerem no local foram garimpeiros de [[diamante]]s no Rio Abaeté. A criação do povoado se iniciou em 1924 com a doação de terreno e construção de uma capela dedicada ao [[Senhor Bom Jesus]]. A edificação primitiva foi demolida e deu lugar à atual em 1945. O morador da região João Porto Filho liderou uma comitiva a [[Belo Horizonte]] e ao [[Rio de Janeiro]] em 1943, onde se encontraram com o governador estadual [[Benedito Valadares Ribeiro]] e com o presidente da república [[Getúlio Vargas]] e solicitaram melhorias para a região, que passou a se desenvolver e foi elevada à categoria de distrito em lei aprovada em 1962, com instalação em 1964.<ref name="ReferenceI">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=217 }}</ref>
+
+O [[Rio Abaeté]], o Ribeirão Extrema, o Córrego de Bom Sucesso de Patos e o Rio Areado são os principais cursos d'água da região. Sua principal formação geográfica é a Serra de Santa Maria, que corta o distrito no sentido norte/noroeste.<ref name="ReferenceH"/>
+
+Em 2007 a população de Bom Sucesso de Patos era de 622 habitantes, dos quais 374 residentes na sede do distrito, configurando-se assim como o distrito menos populoso do município.<ref name="ReferenceI"/>
+
+=== Major Porto ===
+Em uma das regiões de menor altitude do município, o distrito de Major Porto localiza-se a cerca de 750 metros do nível do mar. Com uma área de 306,91&nbsp;km², ao norte faz limite com o município de [[Varjão de Minas]], ao sul com os municípios de [[Lagoa Formosa]] e [[Carmo do Paranaíba]], a oeste com o distrito de Chumbo, e ao sul com o de Bom Sucesso.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=192 }}</ref>
+
+Um arraial abandonado no final do século XIX chamado Capelinha do Chumbo foi reocupado no início do século XX pelo fazendeiro Major Francisco José da Mota que se instaloue no local junto com cinco outras famílias. A localidade teve seu progresso acentuado a partir dos anos 1940, o que culminou com a elevação à categoria de distrito em lei aprovada em 1964 (a instalação ocorreu em 1966). O nome foi uma homenagem a Major Augusto Porto, patriarca de uma das famílias do local.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=196 e 197 }}</ref>
+
+Seus principais cursos d'água são o Rio Areado e os córregos das Batatas e do Bebedouro. Em seu relevo, destaca-se a Serra Grande, a Serra da Quina, o Morro da Pedra e a Chapada dos Tavares.<ref name="ReferenceF"/>
+
+A população de Major Porto, em 2007, era de 1 523 habitantes, dos quais 777 residentes na sede do distrito.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=196 }}</ref>
+
+=== Pindaíbas ===
+{{Artigo principal|Pindaíbas}}
+O distrito de Pindaíbas é o que tem a maior altitude do município: seus 171,47&nbsp;km² estão a uma altitude média de 900 metros acima do nível do mar. A região limita-se ao norte com o distrito-sede, a sul e a oeste com o município de [[Lagoa Formosa]] e a leste com o distrito de Chumbo. Suas principais comunidades, além da sede do distrito, são Abelha, Firmes, Baú e Gameleira.<ref name="ReferenceJ">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=238 }}</ref>
+
+Há duas versões sobre o povoamento da região. Na primeira, a povoação surgiu em 1946, com a fundação de um pequeno comércio, ao qual se somou uma escola, criada por lei municipal em 1948. A outra explicação teria sito a decisão de fazendeiros da região, em 1953, de erguerem uma capela dedicada a [[Nossa Senhora Aparecida]]. No mesmo ano, um projeto de lei e de resolução tramitou na Câmara Municipal de Patos de Minas. Apesar de aprovada, a medida não entrou em vigor pois, àquela altura, a criação de distritos cabia ao governo estadual. Em 1976, após mudanças na legislação, a divisão do distrito de Pilar para a criação de Pindaíbas foi aprovada e o novo distrito instalado no ano seguinte.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=242 e 243 }}</ref>
+
+O termo "pindaíbas" se refere a uma árvore anonácea de lugares úmidos, abundante na região. "Pindá" significa anzol e "yba", planta, árvore. Assim, para os indígenas, pindaíba significa vara de pescar.<ref name="ReferenceK">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=242 }}</ref>
+
+Em sua hidrografia, pertencente à [[Bacia do São Francisco]], destacam-se o Córrego das Posses e o Ribeirão das Pindaíbas. Já em seu relevo, bastante ondulado e com terras com alto teor de tufito, destacam-se a Serra Grande, o Espigão Mestre, o Morro da Chácara, a Serra dos Cabritos e a Serra do Leal.<ref name="ReferenceJ"/>
+
+A população de Pindaíbas, em 2007, era de 1 678 habitantes, dos quais 719 residentes na sede do distrito.<ref name="ReferenceK"/>
+
+=== Pilar ===
+{{Artigo principal|Pilar (Patos de Minas)}}
+Com uma área de 591,7&nbsp;km² e uma altitude média de 750 metros acima do nível do mar está localizado o distrito de Pilar. Faz divisa ao norte com os municípios de [[Lagamar]] e [[Presidente Olegário]], a oeste a sul com [[Coromandel]] e a leste com o distrito-sede. Além da sede do distrito, suas principais comunidades são Santo Antônio, Extrema, Paciência, Porteiros, Fazenda Velha, São Luiz, Santo Antônio das Minas Vermelhas, Bebedouro, Cabral e Canastreu.<ref name="ReferenceL">{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=259 }}</ref>
+
+Em sua hidrografia, destaca-se o [[Rio Paranaíba]] e os córregos da Estiva, da Divisa, da Fazenda Velha, do Pilar, do Barreiro, do Brejão e da Extrema. A sede do distrito fica entre três serras: Barbosa, Rochedo e Paciência, como se fossem três [[pilar]]es, daí o nome da região.<ref name="ReferenceL"/>
+
+Uma lei estadual de 1923 criou na região o distrito de Minas Vermelhas. Como ele nunca foi instalado, um decreto-lei de 1938 terminou por extingui-lo. A criação do atual distrito se iniciou com a construção de uma capela em 1930 na fazenda de mesmo nome. O local passou a atrair posseiros, até que, no final da década de 1970, a capela localizada na região foi demolida e, em outro ponto do arraial, construída uma nova, bem como a região passou por um planejamento urbanístico com a delimitação de ruas e quarteirões. Em 1992, uma lei municipal elevou a localidade à condição de distrito.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=264 e 265 }}</ref>
+
+A população de Pilar, em 2007, era de 1 506 habitantes, dos quais 566 residentes na sede do distrito.<ref>{{Citar livro |nome=Antônio de |sobrenome=Oliveira Mello |título= Patos de Minas, meu bem querer |local=Patos de Minas |editora=Prefeitura Municipal/SEMED |ano=2008 |edição=3ª |página=264 }}</ref>
+
+=== Alagoas ===
+O distrito de Alagoas, o oitavo no município foi criado a partir da lei municipal aprovada em novembro de 2012. Na época, a localidade dispunha de duas escolas com cerca de 400 alunos, aproximadamente 200 moradias e 841 eleitores. Seus limites estão sendo demarcados pelo Executivo Municipal.<ref name="alagoas"/>
+
+=== Desmembramentos ===
+Em 1938, os distritos patenses de Santa Rita de Patos e Ponte Firme foram desmembrados para a criação de [[Presidente Olegário]], município do qual em 1962 desmembrou-se [[Lagamar]] e em 1992 [[Lagoa Grande]].<ref name="enciclopédia"/>
+
+Na reestruturação política de 1938, o distrito de Quintinos também foi desanexado de Patos de Minas e anexado ao município de [[Carmo do Paranaíba]], sob dependência do qual permanece até hoje.<ref name="enciclopédia"/>
+
+Em 1962, o distrito de Guimarães foi desmembrado para a criação do município de [[Guimarânia]] e [[Lagoa Formosa]] também deixou a dependência política de Patos de Minas para formar a cidade homônima.<ref name="enciclopédia"/>
+
+== Economia ==
+O Produto Interno Bruto ([[PIB]]) de Patos de Minas está entre os [[Lista de municípios de Minas Gerais por PIB|25 maiores de Minas Gerais]], crescendo entre 2002 e 2012, em média 10,9% ao ano.<ref name="BasePIB">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/protabl.asp?c=21&i=P&nome=on&qtu8=137&notarodape=on&tab=21&opn8=0&unit=0&pov=1&OpcTipoNivt=1&opn1=0&nivt=0&orp=3&qtu3=27&opv=1&pop=3&opn2=0&orv=2&qtu2=5&sev=37&opp=1&opn3=0&qtu6=5565&ascendente=on&sep=50292&sep=45472&sep=40617&sep=31084&sep=12864&sep=12863&sep=12862&sep=12861&sep=12860&sep=12859&sep=12858&sep=12857&sep=8724&sep=8707&orn=1&pon=1&qtu9=558&opn6=3&digt6=Patos+de+Minas&OpcCara=44&proc=1&qtu1=1&opn9=0&cabec=on&decm=99|título=PIB Municipal - Patos de Minas|acessodata=31 de janeiro de 2015|autor=IBGE|data= |formato=-xls|publicado= Base de Dados Sidra}}</ref>
+
+{|
+<center>
+{|class="wikitable" style="font-size: 85%; text-align:left"
+|+ PIB de Patos de Minas e sua variação em relação ao ano anterior (2002 - 2012) <sup>(em milhões de R$)</sup><ref name="BasePIB"/>
+|-
+! 2002 !! 2003 !! 2004 !! 2005 !! 2006 !! 2007 !! 2008 !! 2009 !! 2010 !! 2011 !! 2012
+|-
+| <div style="text-align: center;">815,12</div> || <div style="text-align: center;">963,63</div> || <div style="text-align: center;">1.141,75</div> || <div style="text-align: center;">1.235,11</div> || <div style="text-align: center;">1.290,12</div> || <div style="text-align: center;">1.416,36</div> || <div style="text-align: center;">1.623,57</div> || <div style="text-align: center;">1.749,40</div> || <div style="text-align: center;">1.999,57</div> || <div style="text-align: center;">2.261,43</div> || <div style="text-align: center;">2.495,73</div>
+|-
+| <div style="text-align: center;">{{increase}}8,9%</div> || <div style="text-align: center;">{{increase}}15,4%</div> || <div style="text-align: center;">{{increase}}15,6%</div> || <div style="text-align: center;">{{increase}}7,5%</div> || <div style="text-align: center;">{{increase}}7,5%</div> || <div style="text-align: center;">{{increase}}8,9%</div> || <div style="text-align: center;">{{increase}}12,7%</div> || <div style="text-align: center;">{{increase}}7,1%</div> || <div style="text-align: center;">{{increase}}12,5%</div> || <center>{{increase}}13,4% || <div style="text-align: center;">{{increase}}10,4%
+|}
+
+Do PIB de R$ 2.495.732.000 registrado em 2012, a maior parte foi proveniente do setor de [[serviço]]s, principal atividade econômica do município. Naquele ano, o [[PIB per capita]] ficou em R$17.706,50 por habitante.<ref name="Pib1012">{{citar web|url=http://cod.ibge.gov.br/3PFK6|título= Produto Interno Bruto dos Municípios - 2012|autor=IBGE|data=|publicado=Canal dos Municípios|acessodata=31 de janeiro de 2015}}</ref>
+
+{|
+<center>
+{|class="wikitable" style="font-size: 85%; text-align:left"
+|+ Componentes do PIB de Patos de Minas em 2012<ref name="Pib1012"/>
+|-
+! Serviços !! Indústria !! Agropecuária !! Impostos
+|-
+| <div style="text-align: center;">R$ 1.558.725.000</div> || <div style="text-align: center;">R$ 432.152.000</div> || <div style="text-align: center;">R$ 255.908.000</div> || <div style="text-align: center;">R$ 248.946.000</div>
+|-
+| <div style="text-align: center;">62,46%</div> || <div style="text-align: center;">17,32%</div> || <div style="text-align: center;">10,25%</div> || <div style="text-align: center;">9,97%</div>
+|}
+
+As finanças públicas do município aprese em 2009 apresentaram [[superávit primário]] de R$ 12.323.589,34, ou 7,42% das receitas municipais, que foram de R$ 166.125.061,94. Naquele ano as despesas do município somaram R$ 153.801.472,60.<ref>{{citar web|url=http://cod.ibge.gov.br/799|título= Despesas e Receitas Orçamentárias e Pib|autor=IBGE|data=|publicado=Canal dos Municípios|acessodata=31 de janeiro de 2015}}</ref>
+
+Naquele ano haviam no município 4.967 empresas atuantes no município. A população ocupada era de 41.592 pessoas, sendo que 34.552 eram assalariadas, que juntos recebiam um total de R$ 573.401.000. O rendimento médio do trabalhador era de 2,5 [[salário mínimo|salários mínimos]].<ref>{{citar web|url=http://cod.ibge.gov.br/2RLCQ|título= Estatísticas do Cadastro Central de Empresas - 2012|autor=IBGE|data=|publicado=Canal dos Municípios|acessodata=31 de janeiro de 2015}}</ref>
+
+O município dispunha em 2013 de 13 agências bancárias. A poupança municipal era de R$ 490.094.389 e haviam R$ 1.623.089.601 em operações de crédito.<ref>{{citar web|url=http://cod.ibge.gov.br/34X2F|título= Instituições Financeiras - 2013|autor=IBGE|data=|publicado=Canal dos Municípios|acessodata=31 de janeiro de 2015}}</ref>
+
+=== Agricultura ===
+O solo rico em tufito (cinerito ou [[tufo vulcânico]]), um tipo de cinza expelida por vulcões que posteriormente, passou por processo de cimentação, torna o solo da região de Mata da Corda, que cobre boa parte do município, altamente fértil favoreceu a agricultura como uma das atividades econômicas mais tradicionais do município de Patos de Minas. Nas regiões de [[cerrado]], onde o cultivo exige tecnologias de correção de solo o uso agrícola é mais recente, a partir dos anos 1970, em fazenda empresariais.<ref name="MELLO, p.288">MELLO, p.288</ref>
+
+Outra característica marcante da agricultura patense é a quase ausência de [[latifúndio]]s. Predominam as pequenas propriedades rurais familiares que, frequentemente, comercializam parte de sua produção (em especial de hortifrutigranjeiros) diretamente para o consumidor final, em feiras e na CEASA Regional de Patos de Minas. A mais importante é a Feira do Produtor Rural do bairro Lagoa Grande.<ref>MELLO, p.286 a 288</ref>
+
+Além disso a cidade dispõe de um Centro Integrado de Abastecimento (Ceasa Regional) onde os gêneros alimentícios são comercializados com municípios da região e/ou exportados para o exterior. Mantida pela Prefeitura, a Ceasa Regional atende principalmente 25 municípios do [[Alto Paranaíba]] e do [[Noroeste de Minas]] com a comercialização de, em média, 1.280 toneladas de gêneros alimentícios por mês.<ref name="MELLO, p.288"/>
+
+[[Imagem:Trigo.jpg|thumb|direita|Trigo foi a primeira cultura de destaque nacional de Patos de Minas.]]
+A agricultura é a mais tradicional atividade econômica do município e remonta ao início da ocupação do território onde hoje está Patos de Minas: a fazenda Os Patos, em meados do [[século XIX]]. A partir da década de 1930, especialmente durante o período da [[Segunda Guerra Mundial]] a cidade ficou conhecida como "Terra do Trigo e do Diamante". Com a dificuldade de se obter o produto no mercado internacional por conta do conflito armado e com o solo altamente rico da região, foi iniciado no município pelo produtor Moacyr Viana de Novais a plantio do [[cereal]].<ref name="MELLO, p.294">MELLO, p.294</ref>
+
+No auge da produção foi fundado na cidade a Companhia Moinhos Minas Gerais S/A, primeiro moinho de trigo do estado. No mesmo período, em 1940, o [[Ministério da Agricultura, Pecuária e Abastecimento|Ministério da Agricultura]] criou na cidade o Posto de Multiplicação de Sementes de Trigo (hoje Fazenda Experimental de Sertãozinho, pertencente a [[Epamig]]), uma propriedade de 795 hectares de apoio a produção trigueira.<ref name="MELLO, p.294"/><ref>{{citar web|url=http://www.epamig.br/index.php?option=com_content&task=view&id=70&Itemid=168|título=FEST - Fazenda Experimental de Sertãozinho|data=|publicado=[[EPAMIG]]|acessodata=31 de janeiro de 2015}}</ref>
+
+Contudo, com o fim do [[Segunda Guerra Mundial|conflito]], em 1945, os preços internacionais do cereal caíram e os incentivos estatais cessaram, o que levou ao colapso da cultura, que se tornou inviável economicamente. Na tentativa de reverter esse quadro o governo federal instalou na região, em 1946, a Colônia Agrícola de Patos de Minas: uma área de 1.200 hectares divida em lotes de 30 hectares e repassadas a colonos, no caso, italianos. Os desconhecimento de técnicas agrícolas tropicais e de manejo da cultura do trigo por parte dos colonos impediu o sucesso do projeto, que marcou o fim definitivo da cultura do trigo no município (atualmente há apenas 80 hectares plantados). Da Colônia Agrícola resta apenas o nome dado à região.<ref>MELLO, p. 121</ref><ref name="agricultura temporária"/>
+
+A recuperação do setor primário veio nos anos 1950 quando [[Antônio Secundino de São José]] fundou na cidade a Agroceres e iniciou a produção de [[milho]], produto que, até então, nunca havia sido produzido comercialmente em regiões tropicais. Foi preciso desenvolver um novo tipo de semente, híbrida, e convencer os agricultores a apostarem na nova, e arriscada, cultura.<ref name="milho" />
+{{citação2|Secundino fazia pequenos saquinhos de 1&nbsp;kg de semente e saía de fazenda em fazenda. Para convencer os produtores das vantagens dos híbridos, ele fazia um acordo: só lhe pagariam pela semente se a produção fosse boa como ele prometia.|Marialda Cury, diretora da Memorial Casa da Cultura do Milho de Patos de Minas, em entrevista ao [[Correio Braziliense]]<ref name="milho" />}}
+
+[[Imagem:Lixeira Patos de Minas.jpg|thumb|esquerda|A cultura do milho é tão valorizada na cidade que está presente até mesmo nas lixeiras.]]
+A cultura fez tanto sucesso que logo se espalhou por outras regiões do país e fez do Brasil o principal plantador de milho do mundo. Na cidade, se tornou a principal referência cultural com a criação, em 1958, da [[Festa Nacional do Milho]], e com a elevação da cidade, através de decreto presidencial, á categoria de Capital Nacional do Milho. O aniversário da cidade (24 de maio) foi declarado Dia Nacional do Milho<ref name="milho"/>
+
+A partir dos anos 1970 com a chegada da Colônia Gaúcha, grupo de agricultores, principalmente de descendência alemã, provenientes do [[Rio Grande do Sul]], as terras de cerrado, então pouco exploradas para a agricultura, diversificaram a economia agrícola do município. Atualmente os principais produtos agrícolas do município são: [[milho]], [[feijão]], [[mandioca]], [[soja]] e [[café]].<ref name="agricultura temporária">{{citar web|url=http://cod.ibge.gov.br/3QCI5|título=Produção Agrícola Municipal - Lavoura Temporária 2013|autor=IBGE|autorlink=IBGE|data=|publicado=Canal Cidades|acessodata=31 de janeiro de 2015}}</ref><ref name="agricultura permanente">{{citar web|url=http://cod.ibge.gov.br/3Q7O2|título=Produção Agrícola Municipal - Lavoura Permanente 2013|autor=IBGE|autorlink=IBGE|data=|publicado=Canal Cidades|acessodata=31 de janeiro de 2015}}</ref><ref>MELLO, p.286 e 287</ref>
+
+{|
+<center>
+{|class="wikitable" style="font-size: 85%; text-align:left"
+|+ Principais culturas agrícolas de Patos de Minas<ref name="agricultura temporária"/><ref name="agricultura permanente"/>
+|-
+! Cultura !! [[Hectare]]s plantados !! Produção<sup>(toneladas)</sup> !! Produtividade<sup>(kg/hec.)</sup>
+|-
+| <div style="text-align: center;">Milho</div>|| <div style="text-align: center;">9.200</div>|| <div style="text-align: center;">72,6 mil</div> || <div style="text-align: center;">7.891</div>
+|-
+| <div style="text-align: center;">Soja</div>|| <div style="text-align: center;">8.000</div>|| <div style="text-align: center;">24 mil</div> || <div style="text-align: center;">3.000</div>
+|-
+| <div style="text-align: center;">Café</div>|| <div style="text-align: center;">6.308</div>|| <div style="text-align: center;">15 mil</div> || <div style="text-align: center;">2.378</div>
+|-
+| <div style="text-align: center;">Mandioca</div> || <div style="text-align: center;">1.180</div>|| <div style="text-align: center;">22,7 mil</div> || <div style="text-align: center;">19.237</div>
+|-
+| <div style="text-align: center;">Feijão</div> || <div style="text-align: center;">4.500</div>|| <div style="text-align: center;">10,5 mil</div> || <div style="text-align: center;">2.333</div>
+|}
+
+No caso do café o município faz parte da região com [[denominação de origem]] do Café do Cerrado, que também fazem parte outros 54 municípios da região que detém a exclusividade na produção da bebida.<ref>{{citar web|url=http://cerradomineiro.org/regiao/a-regiao/|título=Uma região de atitude, para o novo mundo do café|data=|publicado=Região do Cerrado Mineiro|acessodata=31 de janeiro de 2015}}</ref>
+
+Em menor espaço há ainda lavouras de [[cana-de-açúcar]] (911 hectares), [[tomate]] (379 hectares), [[sorgo]] (250 hectares), e [[batata-doce]] (150 hectares).<ref name="agricultura temporária"/><ref name="agricultura permanente"/>
+
+Apesar de sua importância histórica e cultural para o município, do ponto de vista econômico, a [[agropecuária]] representa apenas 10,25% do [[Produto Interno Bruto]] de Patos de Minas, com uma contribuição de R$255,9 milhões ao PIB local.<ref>{{citar web|url=http://cod.ibge.gov.br/3PFK6|título=PIB municipal 2012 - Patos de Minas |acessodata=31 de janeiro de 2015|autor=IBGE|data= |publicado=Canal Cidades}}</ref>
+
+=== Pecuária ===
+Ao lado da agricultura, a pecuária também tem relevância cultural e histórica no município. Destacam-se atualmente a bonivocultura (especialmente a leiteira), a suinocultura e a avicultura (de galináceos).<ref name="pecuaria">{{citar web|url=http://cod.ibge.gov.br/3RC91|título=Patos de Minas - Pecuária 2013|autor=IBGE|autorlink=IBGE|data=|publicado=Canal Cidades|acessodata=31 de janeiro de 2015}}</ref>
+
+{|
+<center>
+{|class="wikitable" style="font-size: 85%; text-align:left"
+|+ Principais rebanhos de Patos de Minas<ref name="pecuaria"/>
+|-
+! Rebanho !! Número de cabeças
+|-
+| <div style="text-align: center;">Bovino</div>|| <div style="text-align: center;">217.469</div>
+|-
+| <div style="text-align: center;">Galináceo</div> || <div style="text-align: center;">326.159</div>
+|-
+| <div style="text-align: center;">Suíno</div> || <div style="text-align: center;">189.549</div>
+|}
+
+No rebanho bovino destaca-se o leiteiro. Patos de Minas é o segundo maior produtor de leite do país, produzindo cerca de 155.023 mil litros de leite por ano (o primeiro colocado era o município de paranaense de [[Castro]], com 230.700 mil litros). De acordo com os dados do [[IBGE]], 60.215 vacas são ordenhadas no município, gerando R$ 164,3 milhões em leite.<ref name="pecuaria"/><ref>{{citar web|url=http://g1.globo.com/minas-gerais/triangulo-mineiro/noticia/2014/12/produtores-de-leite-de-patos-de-minas-apostam-em-novas-tecnologias.html|título=Produtores de leite de Patos de Minas apostam em novas tecnologias|acessodata=31 de janeiro de 2015|autor=G1 Triângulo Mineiro|data=27 de dezembro de 2014 |publicado=[[G1]]}}</ref><ref>{{citar web|url=http://cod.ibge.gov.br/232WH|título=Produção de Leite - Comparação entre os municípios de Patos de Minas e Castro|acessodata=31 de janeiro de 2015|data=27 de dezembro de 2014 |publicado=[[IBGE]]}}</ref>
+
+Já o rebanho galináceo é composto por 326,1 mil animais, dos quais, são 108.546 são galinhas que, juntas, produzem 879 mil dúzias de ovos, gerando R$ 2,55 milhões.<ref name="pecuaria"/>
+
+Na produção suína Patos de Minas é destaque nacional por deter 70% da tecnologia nacional em melhoramento suíno. A produção, voltada para a exportação, abastece mercados como da [[Europa]], [[Hong Kong]], [[Filipinas]] e [[Rússia]]. Do rebanho de 189,5 mil cabeças, cerca de 19 mil são matrizes.<ref name="pecuaria"/><ref>{{citar web|url=http://exame.abril.com.br/revista-exame/edicoes/753/noticias/crise-so-no-dicionario-m0052602|título=Crise, só no dicionário|autor=Nely Caixeta|data=7 de novembro de 2001|publicado=[[Revista Exame]]|acessodata=31 de dezembro de 2015}}</ref><ref>{{citar web|url=http://www.patosdeminas.mg.gov.br/acidade/negocios.php|título=Negócios - Pecuária|data=|publicado=Prefeitura Municipal de Patos de Minas|acessodata=31 de dezembro de 2015}}</ref>
+
+Em menor escala há ainda a criação de [[equinos]] (5 mil cabeças), peixes (10,5 toneladas de [[tilápia]], gerando R$ 58 mil), [[búfalo]]s (129 cabeças), [[caprino]]s (371 cabeças) e [[ovino]]s (1,2 mil cabeças). A [[apicultura]] gera 11 toneladas de mel, que rendem R$21 mil.<ref name="pecuaria"/>
+
+=== Silvicultura ===
+A [[silvicultura]] no município de Patos de Minas está ligada ao cultivo de [[eucalipto]]. A cidade produz anualmente, segundo dados do [[IBGE]], 2.905 toneladas de carvão vegetal de eucalipto (que somam um montante de R$ 1,3 milhões), 54.259 metros cúbicos de lenha de eucalipto (que somam um montante de R$ 1,62 milhões) e 31.000 metros cúbicos de madeira de tora de eucalipto para outras finalidades (que somam um montante de R$ 2 milhões)<ref>{{citar web|url=http://cod.ibge.gov.br/3W2JO|título= Extração Vegetal e Silvicultura - 2013 |autor=IBGE|data=|publicado=Canal dos Municípios|acessodata=31 de janeiro de 2015}}</ref>
+
+=== Indústria ===
+A atividade industrial da cidade está diretamente ligada à agroindústria, destacando a indústria de leite e derivados,<ref>{{citar web|url=http://www.cemil.com.br/cemil.html|título=A empresa|acessodata=1 de outubro de 2013|autor=Cemil|data= }}</ref><ref>{{citar web|url=http://www.coopatos.com.br/institucional|título=Institucional|acessodata=1 de outubro de 2013|autor=Coopatos|data= }}</ref> sementes e adubos defensivos agrícolas,<ref>{{citar web|url=http://www.agroceres.com.br/empresa_unidades.jsp|título=Empresa|acessodata=1 de outubro de 2013|autor=Agroceres|data= }}</ref><ref>{{citar web|url=http://www.grupofarroupilha.com|título=História|acessodata=1 de outubro de 2013|autor=Grupo Farroupilha|data= }}</ref> carne suína e derivados,<ref>{{citar web|url=http://www.dbdanbred.com.br/site/views/empresa/index.php|título=Empresa|acessodata=1 de outubro de 2013|autor=DB-Dan Bread|data= }}</ref> alimentos enlatados<ref>{{citar web|url=http://www.agenciaminas.mg.gov.br/noticias/grupo-predilecta-inaugura-nova-fabrica-na-cidade-de-patos-de-minas/|título=Grupo Predilecta inaugura nova fábrica na cidade de Patos de Minas|acessodata=1 de outubro de 2013|autor=Agência Minas|data= }}</ref> e suplementos para ração.<ref>{{Citar web|url=http://www.patense.com.br|titulo=:: Carregando ::|acessodata=2018-11-17|obra=www.patense.com.br}}</ref>
+
+Atividades do setor secundário correspondem a 20% do PIB de Patos de Minas.<ref>{{citar web|url=http://cidades.ibge.gov.br/painel/economia.php?lang=&codmun=314800&search=minas-gerais%7cpatos-de-minas%7cinfograficos:-despesas-e-receitas-orcamentarias-e-pib|título=Economia - Patos de Minas |acessodata=1 de outubro de 2013|autor=IBGE|data= }}</ref>
+
+Além da forte presença da [[agroindústria]], Patos de Minas também abriga um setor industrial diversificado, com destaque para as indústrias de [[metalurgia]], [[confecção]], [[móveis]], e [[materiais de construção]]. O município conta com distritos industriais planejados e incentivos fiscais que atraem investimentos e promovem o desenvolvimento econômico regional. A produção de máquinas e equipamentos agrícolas também tem se expandido, atendendo à demanda do setor do [[agronegócio]] em toda a região do [[Triângulo Mineiro]] e do [[Alto Paranaíba]]. A cidade se beneficia ainda da proximidade com rodovias estratégicas, como a [[BR-365]], que facilita a logística de distribuição para os centros consumidores do [[Minas Gerais|estado de Minas Gerais]] e de outras regiões do [[Sudeste do Brasil]]. Esse cenário favorece a geração de [[emprego]], o fortalecimento das micro e pequenas empresas e o crescimento da [[indústria de transformação]] no município.<ref>{{Citar web|ultimo=patosdeminas.net.br|url=https://patosdeminas.net.br/|titulo=patosdeminas.net.br {{!}} Guia de empresas e serviços em Patos de Minas|acessodata=2025-04-22|website=patosdeminas.net.br|lingua=pt}}</ref>
+
+=== Turismo ===
+[[Imagem:Monumento ao Centenário de Patos de Minas2.jpg|thumb|Monumento erguido em 1992 para a comemoração do 1º Centenário de Patos de Minas, no local onde a primeira igreja do município se localizava.]]O principal atrativo turístico da cidade é a [[Festa Nacional do Milho]], conjunto de festejos que acontecem na última semana de maio e primeira semana de junho e que atraem anualmente para a cidade 300 mil turistas, para atividades como shows, bailes, desfiles, festivais gastronômicos, feiras de gado e de máquinas agrícolas.<ref>{{citar web|url=http://saothomedasletras.net/cidade/?p=23656|título=Circuito Turístico Tropeiros de Minas|acessodata=1 de outubro de 2013|autor=São Thomé das Letras|data= }}</ref>
+
+A cidade também faz parte do Circuito Turístico Tropeiros de Minas, ligada ao turismo rural, hotéis fazenda e gastronomia típica do interior mineiro.<ref>{{citar web|url=http://www.etur.com.br/conteudocompleto.asp?idconteudo=3113|título=Sebrae ganha prêmio com Circuito Tropeiros de Minas|acessodata=1 de outubro de 2013|autor=Agência Sebrae de Notícias|data= }}</ref>
+
+=== Mineração ===
+A cidade, viveu nos anos 1970 e 1980 forte expansão graças a descoberta da maior jazida de [[Fosfato|fosfato sedimentar]] das Américas. Após o fim da exploração do mineral, a atividade foi extinta, nos anos 1990.
+
+Em 2012 começaram as obras para a extração de gás natural da cidade. A expectativa é que o mineral esteja sendo explorado de maneira comercial em 2014.
+
+== Infraestrutura ==
+=== Educação ===
+[[Imagem:Escola Estadual Marcolino de Barros.jpg|thumb|Escola Estadual Marcolino de Barros]]
+[[Imagem:Escola Normal Patos de Minas.jpg|esquerda|thumb|Escola Estadual Professor Antônio Dias Maciel, conhecida popularmente como "Escola Normal"]]
+O [[analfabetismo]] em Patos de Minas é de 6,66% da população, enquanto 15,49% da população completou até o [[Ensino Fundamental]], 24,41% tem até o [[Ensino Médio]] completo, e 12,17% possuem ensino superior completo. Os 41,27% estão incluídos em outros grupos, como os que sabem ler e escrever mas não frequentaram o ensino regular ou os que não concluíram o Ensino Fundamental. O analfabetismo da população caiu 6,6% desde 1991.<ref name="atlas"/>
+
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+|+ Escolaridade da população de Patos de Minas com 25 anos ou mais<ref name="atlas"/>
+! Escolaridade || 1991 || 2000 || 2010
+|-
+|<div style="text-align: center;">Analfabetos</div> || <div style="text-align: center;">15,44%</div> || <div style="text-align: center;">9,16%</div> || <div style="text-align: center;">6,66%</div>
+|-
+|<div style="text-align: center;">Fundamental Completo</div> || <div style="text-align: center;">9,32%</div> || <div style="text-align: center;">12,00%</div> || <div style="text-align: center;">15,49%</div>
+|-
+|<div style="text-align: center;">Médio Completo</div> || <div style="text-align: center;">12,34%</div> || <div style="text-align: center;">16,85%</div> || <div style="text-align: center;">24,41%</div>
+|-
+|<div style="text-align: center;">Superior Completo</div> || <div style="text-align: center;">4,79%</div> || <div style="text-align: center;">6,02%</div> || <div style="text-align: center;">12,17%</div>
+|-
+|<div style="text-align: center;">Outros</div> || <div style="text-align: center;">58,11%</div> || <div style="text-align: center;">55,94%</div> || <div style="text-align: center;">41,27%</div>
+|-
+|}
+
+Em 2010, Patos de Minas tinha 9,86 [[anos esperados de estudo]], valor menor do que o de 2000 (10,46 anos). Em 1991 eram 9,47% anos esperados de estudo. Cerca de 92,24% das crianças de 5 a 6 anos frequentavam alguma instituição de ensino, 89,14% das crianças entre 11 e 13 anos, 70,67% dos adolescentes entre 15 e 17 anos e 55,20% dos jovens de 18 a 20 anos. Ao todo 1,41% das crianças de 6 a 14 anos não frequentavam nenhuma instituição de ensino, percentual que, entre os jovens de 15 a 17 anos atingia 15,14%.
+
+O [[Índice de Desenvolvimento da Educação Básica]] do município nas séries fundamentais do Ensino Fundamental é de 6.9 e nas séries finais é de 5,2. Os valores alcançam as metas para 2019 e 2017, respectivamente.<ref name="ideb">{{citar web|url=http://ideb.inep.gov.br/resultado/resultado/resultado.seam?cid=6374182|título=Resultados do IDEB - Patos de Minas|acessodata=22 de janeiro de 2015|autor=INEP|data= }}</ref>
+{|
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:center"
+|+IDEB para 1ª a 5ª séries<ref name="ideb"/>
+! Ano|| Meta|| Nota
+|-
+|2005 || align=center| - ||align=center| 5.3
+|-
+|2007 || align=center| 5.3||align=center style="background: #ffdddd" | 5.2
+|-
+|2009 || align=center| 5.6 ||align=center style="background: #ddffdd" | 6.6
+|-
+|2011 || align=center| 6.0 ||align=center style="background: #ddffdd"| 6.8
+|-
+|2013 || align=center| 6.2 ||align=center style="background: #ddffdd"| 6.9
+|-
+|2015 || align=center| 6.5 ||align=center | -
+|-
+|}
+|-
+{|class="wikitable sortable" style="font-size: 85%; text-align:center"
+|+IDEB para 6ª a 9ª séries<ref name="ideb"/>
+! Ano|| Meta|| Nota
+|-
+|2005 || align=center| - ||align=center| 3.9
+|-
+|2007 || align=center| 4.0 ||align=center style="background: #ffdddd" | 4.3
+|-
+|2009 || align=center| 4.1 ||align=center style="background: #ddffdd" | 4.7
+|-
+|2011 || align=center| 4.4 ||align=center style="background: #ddffdd"| 5.2
+|-
+|2013 || align=center| 4.8 ||align=center style="background: #ddffdd"| 5.4
+|-
+|2015 || align=center| 5.1 ||align=center | -
+|-
+|}
+
+Segundo a última edição do [[IDEB]], medido pelo [[Ministério da Educação (Brasil)|Ministério da Educação]] a cidade tem a terceira melhor educação pública do país nas séries iniciais do ensino fundamental, entre os municípios com mais de 100 mil habitantes, atrás de [[Sobral (Ceará)|Sobral]], no [[Ceará]] e [[Foz do Iguaçu]], no [[Paraná]].<ref>{{citar web|url=http://timblindim.files.wordpress.com/2012/08/ideb-2011-dos-municc3adpios-brasileiros_series-iniciais-ensino-fundamental.pdf|título=Lista de Municípios Brasileiros por IDEB|acessodata=1 de outubro de 2013|autor=INEP|data= }}</ref>
+
+{|
+<div style="text-align: center;">
+{|class="wikitable sortable" style="font-size: 85%; text-align:left"
+! # || Município|| Nota
+|-
+|1|| {{BR-CEb}} [[Sobral (Ceará)|Sobral]]||align=center| 7.3
+|-
+|2 || {{BR-PRb}} [[Foz do Iguaçu]]||align=center |7.0
+|-
+|3 || {{BR-MGb}} Patos de Minas||align=center |6.8
+|-
+|4 || {{BR-SPb}} [[Sertãozinho (São Paulo)|Sertãozinho]]||align=center |6,4
+|-
+|4 || {{BR-PRb}} [[Toledo (Paraná)|Toledo]]||align=center| 6,4
+|-
+|}
+
+==== Básica ====
+A cidade é sede da 28ª Superintendência Regional de Ensino que abrange 14 municípios da região. Segundo o Censo 2010 do [[IBGE]], Patos de Minas tem 28.121 alunos matriculados nos três níveis da Educação Básica. A cidade conta com 132 estabelecimentos de ensino, entre públicos e privados, nos três níveis da Educação Básica.<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|título=Portal das Cidades - Patos de Minas|acessodata=1 de outubro de 2013|autor=IBGE|data=|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:center"
+|+Distribuição de alunos e estabelecimentos de ensino em Patos de Minas<ref name="ideb"/>
+! Nível|| Alunos|| Percentual de Alunos || Estabelecimentos|| Percentual de Estabelecimentos
+|-
+|Educação Infantil || align=center| 2.509 ||align=center| 8.9% || align=center| 58 ||align=center| 43.9%
+|-
+|Ensino Fundamental || align=center| 19.209||align=center| 68.1% || align=center| 52 ||align=center| 39.4%
+|-
+|Ensino Médio || align=center| 6.503||align=center| 23% || align=center| 22 ||align=center| 16.7%
+|-
+|}</center>
+
+Segundo dados do Censo da Educação de 2013, 98,6% dos alunos matriculados nas instituições de ensino patenses no fim dos primeiros anos do Ensino Fundamental (atual 5º ano, antiga 4ª série) foram aprovados para continuar seus estudos. Este índice cai para 94,4% de aprovação na final do Ensino Fundamental (atual 9º ano, antiga 8ª série) e para 83,5% ao fim do Ensino Médio.<ref name="TxRend">{{citar web|url=http://www.qedu.org.br/cidade/1845-patos-de-minas/taxas-rendimento|título=Taxas de Rendimento (2013) - Patos de Minas|acessodata=22 de janeiro de 2015|autor=QEdu|data= }}</ref>
+
+<center>
+{|class="wikitable sortable" style="font-size: 85%; text-align:center"
+|+Taxa de conclusão da educação em Patos de Minas<ref name="TxRend"/>
+! Nível|| Aprovados || Reprovados || Abandonos
+|-
+|5º ano do Ensino Fundamental|| align=center| 98,6 % || align="center" | 1,1% || align=center| 0,3%
+|-
+|9º ano do Ensino Fundamental || align=center| 94,4% ||align=center| 3,8% || align=center| 1,8%
+|-
+|3º ano do Ensino Médio || align=center| 85,5% ||align=center| 10,0% || align=center| 6,%5
+|}</center>
+
+Ainda segundo o Censo da Educação, a distorção idade-série, ou seja, a quantidade de alunos com dois ou mais anos de atraso em relação a série indicada para sua idade era, em 2013, de 6% nos anos iniciais do Ensino Fundamental, 18% nos anos finais do Ensino Fundamental e 21% no Ensino Médio. O número inclui tanto instituições de ensino públicas quanto privadas.<ref name="distorcao">{{citar web|url=http://www.qedu.org.br/cidade/1845-patos-de-minas/distorcao-idade-serie?dependence=0&localization=0&stageId=initial_years&year=2013|título=Distorção Idade-Séria (2013) - Patos de Minas|acessodata=22 de janeiro de 2015|autor=QEdu|data= }}</ref>
+
+==== Profissional ====
+O município dispõe de um campus do [[Instituto Federal do Triângulo Mineiro - Campus Patos de Minas|Instituto Federal do Triângulo Mineiro]] (IFTM), que oferece os cursos técnicos em Logística e em Eletrotécnica,<ref name="IFTM">{{citar web|url=http://www.iftm.edu.br/patosdeminas/cursos/index.php|título=IFTM Patos de Minas - Cursos|acessodata=22 de janeiro de 2015|autor=Instituto Federal de Ciência e Tecnologia do Triângulo Mineiro|data= }}</ref> além de unidades do [[Serviço Nacional de Aprendizagem Industrial]] (Senai)<ref name="SENAI">{{citar web|url=http://www7.fiemg.com.br/regionais/alto-paranaiba/unidade/senai-patos-de-minas-cfp-anavio-braz-de-queiroz|título=Senai Patos de Minas|acessodata=22 de janeiro de 2015|autor=Federação das Indústrias de Minas Gerais|data= }}</ref> e o [[Serviço Nacional de Aprendizagem Comercial]] (Senac),<ref name="SENAC">{{citar web|url=http://www.mg.senac.br/internet/unidades/unidades/patosminas/aunidade.htm|título=Senac Patos de Minas|acessodata=22 de janeiro de 2015|autor=Federação do Comércio de Minas Gerais|data= }}</ref> que oferecem alguns cursos profissionais.
+
+==== Superior ====
+[[Imagem:Centro Administrativo do Unipam2.jpg|thumb|esquerda|Centro Administrativo do Centro Universitário de Patos de Minas (Unipam)]]
+Quatro instituições de ensino superior dispõem de campus na cidade de Patos de Minas. A instituição mais antiga pertence a [[Fundação Educacional de Patos de Minas]] (FEPAM). Em funcionamento desde os anos 1970, o hoje denominado Centro Universitário de Patos de Minas (UNIPAM) oferece 30 cursos de graduação (Administração, Agronegócio, Agronomia, Arquitetura e Urbanismo, Ciências Biológicas, Ciências Contábeis, Direito, Educação Física, Enfermagem, Engenharia Ambiental e Sanitária, Engenharia Civil, Engenharia Elétrica, Engenharia Mecânica, Engenharia de Produção, Engenharia Química, Farmácia, Fisioterapia, Gestão Comercial, História, Jornalismo, Letras, Medicina, Medicina Veterinária, Nutrição, Pedagogia, Psicologia, Publicidade e Propaganda, Sistemas de Informação, Zootecnia e Odontologia) e possui [[Índice Geral de Cursos]] 4.<ref>{{citar web|url=http://www2.unipam.edu.br/cursos;jsessionid=961B5453E5405D7294036D42BF77C39E|título=Cursos|acessodata=22 de janeiro de 2015|autor=Centro Universitário de Patos de Minas|data= }}</ref><ref>{{citar web|url=http://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MzM3MQ=|título=IGC - Unipam|acessodata=1 de outubro de 2013|autor=Ministério da Educação (MEC)|data= }}</ref>
+
+A segunda instituição de ensino superior mais antiga da cidade é a Faculdade Patos de Minas (FPM), privada, foi instalada em 2004. Atualmente oferece 17 cursos superiores de graduação (Administração, Biologia, Biomedicina, Ciências Contábeis, Educação Física, Enfermagem, Engenharia Civil, Engenharia de Produção, Engenharia Elétrica, Farmácia, Fisioterapia, Gastronomia, Matemática, Medicina Veterinária, Odontologia, Pedagogia e Psicologia), e possui um [[Índice Geral de Cursos]] 3.<ref>{{citar web|url=http://faculdadepatosdeminas.edu.br/cursos|título=Cursos de Graduação|acessodata=31 de janeiro de 2015|autor=Faculdade Patos de Minas|data= }}</ref><ref>{{citar web|url=http://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MjkxNQ==|título=IGC - FPM|acessodata=1 de outubro de 2013|autor=Ministério da Educação (MEC)|data= }}</ref>
+
+[[Imagem:Palácio dos Cristais - UFU Patos de Minas.jpg|direita|thumb|Palácio Dona Filomena, antigo Palácio dos Cristais, atualmente sede da Universidade Federal de Uberlândia (UFU)]]. No contexto de expansão das instituições de ensino superior através do [[REUNI]], a [[Universidade Federal de Uberlândia]] (UFU) instalou-se em 2010 [[Campus de Patos de Minas da Universidade Federal de Uberlândia|na cidade]]. Com [[Índice Geral de Cursos]] 4, a instituição oferece em Patos de Minas três cursos: Biotecnologia, Engenharia de Alimentos e Engenharia Eletrônica e de Telecomunicações.<ref>{{citar web|url=http://www.ufu.br/pagina/cursos-presenciaisr|título=Cursos Presenciais|acessodata=1 de outubro de 2013|autor=Universidade Federal de Uberlândia (UFU)|data= }}</ref><ref>{{citar web|url=http://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTc=|título=IGC - UFU|acessodata=1 de outubro de 2013|autor=Ministério da Educação (MEC)|data= }}</ref>
+
+A mais recente instituição de ensino superior a iniciar suas atividade em Patos de Minas foi a Faculdade do Noroeste de Minas (Finom). Privada, foi instalada na cidade em 2011 e oferece atualmente três cursos: Engenharia Civil, Engenharia de Produção e Engenharia Elétrica. A instituição ainda não foi avaliada segundo o Índice Geral de Cursos.<ref>{{citar web|url=http://www.finom.edu.br/pm/index.asp|título=Faculdade do Noroeste de Minas|acessodata=31 de janeiro de 2015|autor=Finom|data= }}</ref><ref>{{citar web|url=http://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTM4NzM=|título=IGC - Finom Patos de Minas|acessodata=31 de janeiro de 2015|autor=Ministério da Educação (MEC)|data= }}</ref>
+
+=== Comunicação ===
+A cidade conta com uma emissora de TV, a NTV; cinco rádios FM, a Clube FM, a FM Liberdade, a Nossa FM, a [[Jovem Pan]] e a Educadora FM; duas rádios AM, a Clube AM e a Radiopatos; um semanário, a [[Folha Patense]]; e nove portais de notícias, o Patos Hoje, o Patos Notícias, o Clube da Notícia, o Patos Urgente, o Patos 1, o Patos Agora, o Patos em Destaque, o AG Esporte e o TV LUX.
+
+=== Transportes ===
+Quatro rodovias federais (BR's) e uma estadual (MG) cortam o município de Patos de Minas.
+
+{| class="wikitable sortable" style="font-size: 85%; text-align:left"
+|-
+! Rodovia !! Início !! Término!! Acesso à Patos de Minas
+|-
+| <div style="text-align: center;">[[BR-365]]</div> || <div style="text-align: center;">[[Montes Claros]]</div> || <div style="text-align: center;">[[Uberlândia]]</div> || Liga a cidade ao Norte de Minas Gerais e ao Nordeste do Brasil, e ao Triângulo Mineiro, em especial [[Uberlândia]]
+|-
+| <div style="text-align: center;">[[BR-146]]</div> || <div style="text-align: center;">Patos de Minas</div> || <div style="text-align: center;">[[São Paulo]]</div> || Nasce próximo à comunidade de Santana de Patos e segue pelo Sul de Minas até o Estado de [[São Paulo]]. O trecho entre Patos de Minas e [[Araxá]] foi asfaltado nos últimos anos
+|-
+| <center>[[BR-352]]|| <center>[[Goiânia]] || <center>[[Pará de Minas]] || O trecho entre a divisa GO/MG ainda não foi construído. A rodovia renasce em Patos de Minas, e segue em leito coincidente com a [[BR-354]] até a região de [[Carmo do Paranaíba]], onde muda de direção, passando pelos municípios de [[Tiros]] e [[Abaeté]] até chegar próximo à [[Região Metropolitana de Belo Horizonte]]. O trecho entre [[Arapuá]] e Abaeté, cortando a cidade de Tiros não é asfaltado.
+|-
+| <div style="text-align: center;">[[BR-354]]</div>|| <div style="text-align: center;">[[Cristalina]]</div> || <div style="text-align: center;">[[Rio de Janeiro]]</div> || Seu leito entre Cristalina e [[Vazante]] é não pavimentado. De Vazante a Patos de Minas segue o leito coincidente com a MG-354, passando por [[Presidente Olegário]]. De Patos segue em leito coincidente com a [[BR-352]] até [[Carmo do Paranaíba]]. De lá, segue sozinha até [[Luz (Minas Gerais)|Luz]], dando acesso a [[Belo Horizonte]].
+|-
+|<div style="text-align: center;"> MG-354</div> || <div style="text-align: center;">[[Vazante]]</div> || <div style="text-align: center;">Patos de Minas</div> || Nasce em [[Vazante]] e segue até Patos de Minas em leito coincidente com a [[BR-354]]. É muito usada para o acesso a [[Presidente Olegário]] e como parte do caminho para [[Brasília]].
+|}
+
+[[Imagem:Mural Rodoviaria Patos de Minas.jpg|thumb|Detalhe de um dos murais que enfeita a rodoviária de Patos de Minas]]
+A cidade conta ainda com um terminal rodoviário no qual operam linhas para diversas cidades do país:
+* Gontijo: Belo Horizonte, Uberaba, Araxá, São Gotardo, Varjão de Minas, São Gonçalo do Abaeté, Três Marias, Pirapora, Goiânia, São José do Rio Preto, Bom Jesus da Lapa, Vitória da Conquista, Feira de Santana, Aracaju, Maceió e Recife.
+* São Cristóvão: Uberlândia, Araguari, Monte Carmelo, Paracatu, Unaí, João Pinheiro, Brasilândia de Minas, Cristalina, Luziânia e Brasília.
+* Expresso de Luxo: Lagoa Formosa e Carmo do Paranaíba.
+* Santa Rita: Presidente Olegário e Lagoa Grande.
+* União: Palmas, Caldas Novas, Uberlândia, Uberaba, Guimarânia, Patrocínio, Pirapora, Montes Claros e Rio de Janeiro.
+* Leãozinho: Coromandel.
+* Continental: Franca, Ribeirão Preto, Campinas e São Paulo.
+* Expresso Adamantina: São Paulo, Ribeirão Preto e Campinas
+
+Desde dezembro de 2022, o [[Aeroporto de Patos de Minas]] tem voos comerciais com a rota Patos de Minas - [[Aeroporto Internacional de Belo Horizonte-Confins|Belo Horizonte/Confins]], operada pela companhia [[Azul Linhas Aéreas Brasileiras|Azul]].<ref>{{Citar web|ultimo=Martins|primeiro=Carlos|ultimo2=Martins|primeiro2=Carlos|url=https://aeroin.net/azul-lancara-voos-ineditos-para-quatro-cidades-do-interior-de-minas/|titulo=Azul anuncia voos inéditos para quatro cidades do interior de Minas|data=2022-09-23|acessodata=2022-09-25|website=AEROIN|lingua=pt-BR}}</ref><ref>{{Citar web|url=https://patoshoje.com.br/noticias/patos-de-minas-passara-a-ter-voos-diarios-para-belo-horizonte-a-partir-de-1o-de-julho-84684.html|titulo=Patos de Minas passará a ter voos diários para Belo Horizonte a partir de 1º de julho|acessodata=2024-06-03|website=Patos Hoje|lingua=pt-br}}</ref><ref>{{Citar web|url=https://patoshoje.com.br/noticias/solenidade-marca-reinauguracao-do-aeroporto-de-patos-de-minas-e-inicio-de-voos-maiores-com-escala-em-uberlandia-82778.html|titulo=Solenidade marca reinauguração do aeroporto de Patos de Minas e início de voos maiores com escala em Uberlândia|acessodata=2024-06-03|website=Patos Hoje|lingua=pt-br}}</ref>
+
+== Parceria Público-Privada (PPP) - Usina Solar Fotovoltaica ==
+A administração municipal de Patos de Minas firmou uma [[Parceria público-privada|Parceria Público-Privada]] (PPP) para a instalação de uma [[usina solar]] fotovoltaica, visando atender à demanda energética dos prédios públicos e reduzir significativamente os gastos com [[energia]]<ref>{{Citar web|url=https://patoshoje.com.br/noticias/prefeitura-quer-implantar-energia-solar-nos-predios-publicos-consulta-publica-ja-esta-aberta-73834.html|titulo=Prefeitura quer implantar energia solar nos prédios públicos; consulta já está aberta|acessodata=2024-10-21|website=Patos Hoje|lingua=pt-br}}</ref>. O projeto promove economia aos cofres públicos e avança na sustentabilidade local, com a implantação, operação e manutenção de uma microusina solar [[fotovoltaica]] de 2,1 MW de potência nominal por ano. Esse contrato representa um marco para a administração, sendo o primeiro desse tipo firmado pela [[prefeitura]].<ref>{{Citar web|url=https://patosdeminas.mg.gov.br/ppp/fotovoltaica/|titulo=PPP – Usina Solar Fotovoltaica|acessodata=2024-10-21|website=Patos de Minas|lingua=pt-BR}}</ref> O projeto foi desenvolvido em parceria com o Instituto de Planejamento e Gestão de Cidades ([[IPGC]]).<ref>{{Citar web|url=https://ipgc.com.br/projetos-realizados/patos-de-minas-mg/|titulo=Patos de Minas – MG – IPGC|acessodata=2024-10-21|website=ipgc.com.br}}</ref>
+
+== Esportes ==
+O futebol é o principal esporte da cidade, com o basquete vindo em segundo lugar. A [[União Recreativa dos Trabalhadores]], e [[Esporte Clube Mamoré]] são as duas equipes de futebol profissional da cidade, figurando entre os grandes da elite mineira. No futebol amador se destacam o Paranaíba; o Clube Atlético Olaria, do Bairro Rosário e o Vila Esporte Clube, do Bairro Vila Garcia. As escolinhas de futebol mais importantes da cidade são essas, juntamente com a do PTC e do Caiçaras Country Club, principais clubes recreativos da cidade.
+
+O desporto em todas as suas esferas é coordenado pela Liga Patense de Desportos (LPD). Também merecem destaque a importância que vem ganhando alguns esportes como o mountain bike e o motocross. As instituições de ensino também realizam um trabalho com os estudantes e todos os anos são realizados os JOJU - Jogos da Juventude. Em 2006 a cidade sediou as finais do [[Jogos do Interior de Minas|JIMI - Jogos do Interior de Minas]], e os JUEMG - Jogos Universitários do Estado de Minas Gerais, que foram realizados no Unipam.
+
+== Célebres patenses ==
+[[Imagem:Diploma de mulher vereadora em 1912 TSE.jpg|miniaturadaimagem|Diploma de Vereadora de [[Nilda Iris Vaz Borges]], expedido pela zona eleitoral de Patos de Minas no ano de 1972 em exposição no [[Museu do Voto]] do [[Tribunal Superior Eleitoral]]<ref>{{citar web | url=http://www.tse.jus.br/institucional/museu-do-voto/diplomas-eleitorais | título=Museu do Voto - TSE }} [[Tribunal Superior Eleitoral]]. Acesso em de janeiro de 2015</ref>]]
+* [[Antônio Andrade]]
+* [[Antônio Carlos de Almeida Castro]]
+* [[Arlindo Porto Neto]]
+* [[Augusto Silveira de Carvalho]]
+* [[Autran Dourado]]
+* [[Bernardo Rubinger de Queiroz]]
+* [[Carmo Bernardes]]
+* [[Elmiro Alves do Nascimento]]
+* [[Fernando Diniz Silva]]
+* [[Geraldo Magela (político)|Geraldo Magela]]
+* [[Leopoldo Dias Maciel]]
+* [[Luiz Fernando Machado]]
+* [[Lysâneas Maciel]]
+* [[Paulo Piau]]
+* [[Renner Reis]]
+
+== Ver também ==
+* [[Lista de municípios de Minas Gerais|Lista dos municípios do estado de Minas Gerais]]
+* [[Lista de prefeitos de Patos de Minas]]
+
+== Bibliografia ==
+* MELLO, Antônio de Oliveira. '''Patos de Minas, meu bem querer.''' 3. ed. Patos de Minas: Edição Prefeitura Municipal/SEMED, 2008.
+
+{{Referências}}
+
+== Ligações externas ==
+{{commonscat|Patos de Minas}}
+* [http://www.patosdeminas.mg.gov.br/ Prefeitura Municipal de Patos de Minas]
+* [http://www.camarapatos.mg.gov.br/ Câmara Municipal de Patos de Minas]
+* [http://www.mg.gov.br/ Governo do Estado de Minas Gerais]
+* [http://www.cidades.ibge.gov.br/brasil/mg/patos-de-minas Dados do IBGE de Patos de Minas]
+
+{{Patos de Minas}}
+{{Subdivisões de Minas Gerais}}
+{{Portal3|Minas Gerais|Brasil}}
+
+{{DEFAULTSORT:Patos de Minas}}
+[[Categoria:Patos de Minas| ]]
+[[Categoria:Fundações em Minas Gerais em 1892]]
+[[Categoria:Municípios de Minas Gerais]]

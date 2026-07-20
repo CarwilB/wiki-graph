@@ -1,0 +1,70 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Hermoso Campo
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| settlement_type         = [[List of cities in Argentina|Town]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| motto                   = 
+| image_map               = 
+| map_alt                 = 
+| map_caption             = 
+| pushpin_map             = Argentina
+| pushpin_label_position  = 
+| pushpin_map_alt         = 
+| pushpin_map_caption     = Location of Hermoso Campo in Argentina
+| coordinates             = {{coord|27|37|S|61|21|W|region:AR_type:city|display=inline,title}}
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Argentina}}
+| subdivision_type1       = [[Provinces of Argentina|Province]]
+| subdivision_name1       = [[Chaco Province|Chaco]]
+| subdivision_type2       = [[Departments of Argentina|Department]]
+| subdivision_name2       = [[Dos de Abril Department|Dos de Abril]]
+| established_title       = 
+| established_date        = 
+| founder                 = 
+| government_footnotes    = 
+| leader_party            = 
+| leader_title            = 
+| leader_name             = 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 63
+| population_footnotes    = 
+| population_total        = 4402
+| population_as_of        = 
+| population_density_km2  = auto
+| population_demonym      = 
+| population_note         = 
+| timezone1               = [[Time in Argentina|ART]]
+| utc_offset1             = &minus;3
+| timezone1_DST           = 
+| utc_offset1_DST         = 
+| postal_code_type        = [[Argentine postal code|CPA base]]
+| postal_code             = [[ISO 3166-2:AR|H]]3733
+| area_code_type          = [[Telephone numbering in Argentina|Dialing code]]
+| area_code               = +54 3735
+| website                 = <!-- [http://www.example.com example.com] -->
+| footnotes               = 
+}}
+'''Hermoso Campo''' is a town in [[Chaco Province]], Argentina. It is the head town of the [[Dos de Abril Department]].
+
+==Economy==
+The local economy is mainly based around the production of [[Soybean|soya]], [[maize]] and [[cotton]].
+
+==External links==
+{{ar-mi-muni|CHA027}}
+
+[[Category:Populated places in Chaco Province]]
+
+{{ChacoAR-geo-stub}}

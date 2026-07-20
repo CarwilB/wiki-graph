@@ -1,0 +1,70 @@
+{{Info/Município do Brasil
+<!-- GeoID=4117107 -->
+<!-- Cabeçalho -->
+ |nome                 = Nova Londrina
+ |foto                 = Vista aérea do centro da cidade.jpg
+ |apelido              = 
+<!-- "Rainha do Noroeste" -->
+ |brasão               = Brasão de Nova Londrina.jpg
+ |bandeira             = Bandeira_de_Nova_Londrina.jpg
+ |link_brasão          = 
+ |link_bandeira        = 
+ |link_hino            = 
+ |aniversário          = [[15 de março]]
+ |fundação             = {{dtlink|||1956|idade}}
+ |gentílico            = Nova-londrinense
+ |lema                 = 
+ |prefeito             = Otávio Henrique Grendene Bono<ref>[https://www.eleicoes2016.com.br/vico-psc/ Vico é Prefeito Eleito de Nova Londrina pelo PSC na coligação PACTO PELO DESENVOLVIMENTO] Eleições 2016 - 1° de janeiro de 2017</ref>
+ |partido              = [[Partido Social Cristão|PSC]]
+ |fim_mandato          = 2024
+<!-- Localização -->
+ |mapa                 = Parana Municip NovaLondrina.svg
+ |latP                 = S | latG = 22 | latM = 45 | latS = 57
+ |lonP                 = O | lonG = 52 | lonM = 59 | lonS = 06
+ |estado               = Paraná
+ |mesorregião          = [[Mesorregião do Noroeste Paranaense|Noroeste Paranaense]]
+ |data_mesorregião     = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+ |microrregião         = [[Microrregião de Paranavaí|Paranavaí]]
+ |data_microrregião    = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+ |região_metropolitana = 
+ |vizinhos             = [[Diamante do Norte]], [[Itaúna do Sul]], [[Marilena]], [[Loanda]], [[Guairaçá]], [[Terra Rica]] (A fronteira é bem pequena) e [[Rosana]] (estado de São Paulo).
+ |dist_capital         = 575
+<!-- Características geográficas -->
+ |área                 = 269.389
+ |área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 dez. 2010 |data=10 out. 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+ |população            = 13188
+ |data_pop             = estimativa [[IBGE]]/2021<ref name="IBGE_Panorama">{{citar web|url= https://cidades.ibge.gov.br/brasil/pr/nova-londrina/panorama |título=Nova Londrina |autor = Instituto Brasileiro de Geografia e Estatística (IBGE) |data=27 de agosto de 2020 |acessodata= 19/08/2022 }}</ref>
+ |altitude             = 
+ |clima                = [[Subtropical]]
+ |sigla_clima          = Cfa
+<!-- Indicadores -->
+ |idh                  = 0.758 <!--favor manter o formato-->
+ | idh_pos             = [[Lista de municípios do Paraná por IDH|PR: 21º]]
+ | data_idh            = [[Programa das Nações Unidas para o Desenvolvimento|PNUD]]/[[2010]]<ref name="IDH_2010">{{citar web |url= http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |titulo= Ranking decrescente do IDH-M dos municípios do Brasil |data= 2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |formato=PDF |acessodata= 3 de agosto de 2013 }}</ref>
+ |pib                  = {{formatnum:146023.151}} mil
+ |data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+ |pib_per_capita       = 11290.74
+ |data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+ |site_prefeitura      = [https://www.novalondrina.pr.gov.br/ novalondrina.pr.gov.br]
+}}
+'''Nova Londrina''' é um [[município]] [[brasileiro]] do interior do [[estados do Brasil|estado]] do [[Paraná]]. Faz fronteira com os municípios de [[Diamante do Norte]], [[Itaúna do Sul]], [[Marilena]], [[Loanda]], [[Guairaçá]], [[Terra Rica]] e com o estado de São Paulo. Sua população foi estimada em {{fmtn|13188}} habitantes, conforme dados do IBGE de 2021.<ref name="IBGE_Panorama" />
+
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+
+== Administração ==
+{{Artigo principal|Lista de prefeitos de Nova Londrina}}
+
+<gallery>
+Ficheiro:Nova Londrina no Inverno 05.06.10.JPG|Ipês na área urbana do município.
+Ficheiro:Avenida Londrina.jpg|Cruzamento das Avenidas Londrina e Antônio Ormeneze.
+Ficheiro:Av. Brasil (1) 20.12.09.JPG|Avenida Brasil.
+Ficheiro:Igreja Católica ano de 2009.JPG|Igreja Católica ano de 2009.
+Ficheiro:Igreja Católica no cair da tarde.jpg|Igreja Católica no cair da tarde.
+</gallery>
+
+{{Referências}}
+{{Esboço-municípiosbr/Paraná}}
+{{Portal3|Paraná|Brasil}}
+{{Controle de autoridade}}
+[[Categoria:Nova Londrina| ]]
+[[Categoria:Fundações no Paraná em 1954]]

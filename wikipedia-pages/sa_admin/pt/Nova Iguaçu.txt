@@ -1,0 +1,684 @@
+{{Info/Município do Brasil
+<!-- GeoID=3303500 -->| nome = Nova Iguaçu
+| bandeira = Bandeira de Nova Iguaçu.svg
+| brasão = Brasão de Nova Iguaçu.svg
+| link_bandeira = 
+| link_brasão = 
+| gentílico = [[wikt:iguaçuano|iguaçuano(a)]]<ref name="IBGE_NovaIguaçu">{{citar web |url=https://cidades.ibge.gov.br/brasil/rj/nova-iguacu/panorama |título=Nova Iguaçu |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=30 de julho de 2023 |wayb=20181206195925}}</ref>
+| mapa = RiodeJaneiro Municip NovaIguacu.svg
+| latP = S
+| latG = 22
+| latM = 45
+| latS = 37.16
+| lonP = O
+| lonG = 43
+| lonM = 26
+| lonS = 51.82
+| estado = Rio de Janeiro
+| região_metropolitana = [[Região Metropolitana do Rio de Janeiro|Grande Rio]]
+| vizinhos = <small>'''Norte:''' [[Miguel Pereira]];<br > '''Nordeste:''' [[Duque de Caxias (Rio de Janeiro)|Duque de Caxias]];<br > '''Leste:''' [[Belford Roxo]];<br >'''Sudeste:''' [[Mesquita (Rio de Janeiro)|Mesquita]];<br> '''Sul:''' [[Rio de Janeiro]];<br> '''Sudoeste:''' [[Seropédica]];<br> '''Oeste:''' [[Queimados]];<br>'''Noroeste:''' [[Japeri]].</small>
+| dist_capital = 40
+| dist_capital_ref = <ref>{{citar web|url=https://pt.distance.to/Rio-de-Janeiro,BRA/Nova-Igua%C3%A7u,Rio-de-Janeiro,BRA|título=Distância Rio de Janeiro — Nova Iguaçu|publicado=pt.distance.to|acessodata=10 de outubro de 2019}}</ref>
+<!-- Características geográficas -->| fundação = {{nowrap|{{dtlink|15|1|1833|idade}}}}
+| prefeito = [[Dudu Reina]]
+| partido = [[Progressistas]]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 23
+| área = 520.581
+| área_ref = <ref name="area" >{{citar web|url=https://www.ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/15761-areas-dos-municipios.html?=&t=downloads|título=Áreas Territoriais|autor=IBGE|ano=2020|publicado=ibge.gov.br|acessodata=23/02/2022}}</ref>
+| área_urbana = {{fmtn|95.3363}}
+| área_urbana_ref = est. [[Embrapa]]<ref name="Embrapa_RJ">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/rj.html
+|título=Rio de Janeiro |autor=Embrapa Monitoramento por Satélite |acessodata=15 de junho de 2011 |wayb=20141029062109}}</ref>
+| população = 785867
+| data_pop = Censo [[IBGE]]/2022<ref name="IBGE_NovaIguaçu"/>
+| população_pos = [[Lista de municípios do Rio de Janeiro por população|RJ: 4º]]; [[Lista de municípios do Brasil acima de cem mil habitantes|BR: 24º]]
+| população_est = 843220
+| população_est_em = 2025
+| clima = [[Clima tropical|tropical]]
+| sigla_clima = Aw
+<!-- Indicadores -->| altitude = 25
+| altitude_ref = <ref>{{citar web|url=https://www.apolo11.com/latlon.php?uf=rj&cityid=3622 |título=Latitude e Longitude das cidades Brasileiras |autor=Apolo11 |acessodata=5 de fevereiro de 2013 |wayb=20181206200245}}</ref>
+| idh = 0.713 <!--favor manter o formato-->
+| data_idh = [[Programa das Nações Unidas para o Desenvolvimento|PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |título=Ranking decrescente do IDH-M dos municípios do Brasil |autor=Atlas do Desenvolvimento Humano |data=29 de julho de 2013 |publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=20 de setembro de 2016 |wayb=20140708233352}}</ref>
+| idh_pos = [[Lista de municípios do Rio de Janeiro por IDH-M|RJ: 43º]]
+| pib = {{fmtn|20518623.98|mil}}
+| data_pib = [[IBGE]]/2023<ref name="IBGE_PIB_2023">{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3303500 |título=Produto Interno Bruto dos Municípios - 2019 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2019 |acessodata=27 de Julho de 2022 |arquivourl=http://archive.today/2022.07.27-145052/https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3303500 |arquivodata=2022-07-27 |urlmorta=no }}</ref>
+| pib_per_capita = 26 109,54
+| data_pib_per_capita = [[IBGE]]/2023<ref name="IBGE_NovaIguaçu" />
+| site_prefeitura = [http://www.novaiguacu.rj.gov.br www.novaiguacu.rj.gov.br]
+| site_câmara = [https://www.cmni.rj.gov.br/ www.cmni.rj.gov.br]
+| apelido = Capital da Baixada
+Cidade Perfume
+"Mamãeiguaçu"
+<!-- Dados gerais -->| hino = s:Hino do município de Nova Iguaçu
+| aniversário = [[15 de janeiro]]
+| padroeiro = [[Santo António de Lisboa|Santo Antônio de Jacutinga]]
+| área_urbana_pos = [[Lista de municípios do Brasil por área urbana|BR: 27º]]
+| imagem_montagem = {{multiple image
+ | perrow         = 2/2/2/2
+ | border         = infobox
+ | total_width    = 280
+ | image1 = Rodovia Via Light no Centro de Nova Iguaçu.jpg
+ | image2 = Catedral de Nova Iguaçu.jpg
+ | image3 = Cruzamento roberto silveira com athaide pimenta.jpg
+ | image4 = Ruínas Fazenda São Bernardino.jpg
+ | image5 = Conjunto Urbano da Extinta Vila de Iguaçu HDR.jpg
+ | image6 = Calçadão de Nova Iguaçu em 2022.jpg
+ | image7 = Shopping nova iguaçu.jpg
+ | image8 = Universidade Estácio, Campus Nova Iguaçu, Rio de Janeiro.jpg
+ | color  = white
+ | footer = <div style="text-align: justify;">'''Do topo para baixo e da esquerda para direita:''' Via Light no [[Centro (Nova Iguaçu)]]; a Catedral de Santo Antônio; Cruzamento no [[TopShopping]]; [[Fazenda São Bernardino]] em ruínas; extinta da Vila de Iguaçu; Calçadão de Nova Iguaçu; [[Shopping Nova Iguaçu]] em 2016; Universidade Estácio em Campus Nova Iguaçu</div>
+}}
+}}
+
+'''Nova Iguaçu''' (pronuncia-se {{IPA2|ˈnɔvɐ iɡwɐˈsu}}) é um [[Unidades federativas do Brasil|município brasileiro]] do [[Unidades federativas do Brasil|estado]] do [[Rio de Janeiro (estado)|Rio de Janeiro]], [[Região Sudeste do Brasil|Região Sudeste]] do país. Localizado na [[Baixada Fluminense]], na [[Região Metropolitana do Rio de Janeiro]], possui o título de Capital da Baixada pelas várias [[província]]s, [[freguesia]]s e [[distrito]]s que ao longo dos anos buscaram uma [[divisão política]] para municipalidades. Sua população estimativa de 2025 era de {{fmtn|843220}} habitantes, sendo o [[Lista de municípios do Rio de Janeiro por população|quarto mais populoso do estado]] e o [[Lista de municípios do Brasil acima de cem mil habitantes|24º mais populoso do país]].<ref name="IBGE_NovaIguaçu" /><ref name="area" />
+
+É a cidade mais antiga da [[Baixada Fluminense]], sendo considerada a Cidade-Mãe de outras cidades da região. Registrada em 1719, a freguesia de Nossa Senhora da Piedade de Iguaçu, ou Nossa Senhora da Piedade do Caminho Velho, depois [[Iguaçu Velho]]. Dela surgiram todas as cidades que compõem a [[Baixada Fluminense]] e, junto com [[Niterói]], [[Magé]] e [[Itaguaí]], são as mais antigas da [[Região Metropolitana do Rio de Janeiro]]. Possui um dos maiores centros comerciais e financeiros da [[Baixada Fluminense]].<ref>{{Citar web|url=https://g1.globo.com/rj/rio-de-janeiro/noticia/2020/05/11/nova-iguacu-decide-fechar-calcadao-mas-movimentacao-segue-intensa-com-lojas-abertas.ghtml|titulo=Nova Iguaçu decide fechar calçadão, mas movimentação segue intensa com lojas abertas {{!}} Rio de Janeiro|data=2020-05-11|acessodata=2024-12-30|website=G1|lingua=pt-br}}</ref> Há grandes e modernos conjuntos de edifícios comerciais e residenciais de alto padrão, implicando um grande deslocamento terrestre pelas rodovias, aéreo pelo [[Aeroclube de Nova Iguaçu]] que hoje poucas aeronaves de pequeno porte utilizam e também pelo [[Heliporto]].
+
+Está localizada na zona tropical do país e tem uma temperatura média anual de 23,4&nbsp;°C.<ref>{{citar web | url =http://www.tempoagora.com.br/previsaodotempo.html/brasil/climatologia/NovaIguacu-RJ/ | titulo =Climatologia em Nova Iguaçu |publicado=Tempo Agora | lingua = |acessodata=1 de janeiro de 2013}}</ref> Na vegetação original do município predomina a [[mata atlântica]]. Em relação à frota automobilística, em 2009 foram contabilizados {{fmtn|148655}} veículos.<ref name="Informações do Brasil Censo 2010">{{citar web | url= http://www.informacoesdobrasil.com.br/dados/rio-de-janeiro/nova-iguacu/frota-automoveis-2010/ |titulo =Censo 2010 |publicado=Informações do Brasil | lingua = |acessodata=6 de fevereiro de 2013}}</ref> Com 99% de seus habitantes vivendo na zona urbana,<ref name="UOL Notícias Censo 2010">{{citar web | url =http://noticias.uol.com.br/censo-2010/populacao-urbana-e-rural/rj/ | titulo =Censo 2010 |publicado=[[UOL]] | lingua = |acessodata=6 de fevereiro de 2013}}</ref> o município contava em 2009 com 242 estabelecimentos de saúde.<ref>{{citar web | url= http://www.informacoesdobrasil.com.br/dados/rio-de-janeiro/nova-iguacu/pesquisa-servicos-saude-2009/|titulo =Censo 2010 |publicado=''Informações do Brasil'' | lingua = |acessodata=6 de fevereiro de 2013}}</ref> O seu [[IDH|Índice de Desenvolvimento Humano Municipal]] (IDHM), segundo dados do censo de 2010, é de {{fmtn|0.713}}, classificando-se assim como "elevado", porém abaixo da média estadual e nacional no mesmo período, que registravam, respectivamente, {{fmtn|0.761}} e {{fmtn|0.727}}. Neste sentido, Nova Iguaçu é o [[Lista de municípios do Rio de Janeiro por IDH|41º município com melhor IDHM do estado do Rio de Janeiro]].<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+
+Dentro do contexto da [[região metropolitana]] do Rio de Janeiro, Nova Iguaçu é historicamente considerada como uma "[[cidade dormitório]]". No entanto, a cidade  vem se desenvolvendo  e mudando seu perfil sócio-econômico. Atualmente, Nova Iguaçu é, juntamente com [[Duque de Caxias (Rio de Janeiro)|Duque de Caxias]], um polo de atração do [[Migração pendular|deslocamento pendular diário]] de trabalhadores de todos os demais municípios da Baixada Fluminense, caracterizando-se um núcleo regional dessa porção do Grande Rio.<ref>{{citar web|url=https://sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/RJ/Menu%20Institucional/SEBRAE_EPG_set13_mob_urb_merc_trab_rj.pdf |título=Mobilidade urbana e mercado de trabalho na Região Metropolitana do Rio de Janeiro |data=setembro de 2013 |número=6 |local=Rio de Janeiro|website=Sebrae|acessodata=15 de janeiro de 2026}}</ref><ref>{{citar web|url=https://www.caurj.gov.br/wp-content/uploads/2013/05/Luis_Valverde_Geotese_CPUA2015DIVULGA.pdf|título=Wayback Machine|website=www.caurj.gov.br}}</ref> Possui ainda importantes centros de ensino e pesquisa, tais como o [[Centro Federal de Educação Tecnológica|CEFET/RJ]],<ref name="CEFET UnED Nova Iguaçu">{{citar web| url =http://portal.cefet-rj.br/unidades-de-ensino/nova-iguacu.html| titulo =Unidade de Ensino à Distância de Nova Iguaçu| obra =Centro Federal de Educação Tecnológica Celso Suckow da Fonseca |acessodata =6 de fevereiro de 2013 | arquivourl = https://web.archive.org/web/20130129112349/http://portal.cefet-rj.br/unidades-de-ensino/nova-iguacu.html| arquivodata =2013-01-29| urlmorta =sim}}</ref> [[SENAI]],<ref name="SENAI">{{citar web| url =http://www.firjan.org.br/data/pages/40288094212F7901012130FD8E3F5C28.htm| titulo =SENAI/FIRJAN| publicado =Site oficial da FIRJAN | acessodata =28 de março de 2015| arquivourl =https://web.archive.org/web/20140404040523/http://www.firjan.org.br/data/pages/40288094212F7901012130FD8E3F5C28.htm| arquivodata =2014-04-04| urlmorta =yes}}</ref> [[Universidade Federal Rural do Rio de Janeiro|UFRRJ]],<ref name="UFRRJ Campus Nova Iguaçu">{{citar web|url=http://r1.ufrrj.br/im/portal/|titulo=Campus Nova Iguaçu|publicado=Universidade Federal Rural do Rio de Janeiro|lingua=|acessodata=6 de fevereiro de 2013|arquivourl=https://web.archive.org/web/20130222043546/http://r1.ufrrj.br/im/portal/|arquivodata=2013-02-22|urlmorta=yes}}</ref> [[UGB]],<ref name="UGB">{{citar web | url= http://www.ugb.edu.br/web/telefones_enderecos.html| titulo =UGB|publicado=Site oficial da UGB |acessodata=28 de março de 2015}}</ref> [[Universidade Estácio de Sá|UNESA]],<ref name="Estácio Campus Nova Iguaçu">{{citar web | url= http://www.estacio.br/campus/nova_iguacu/| titulo =Campus Nova Iguaçu|publicado=Universidade Estácio de Sá| editora=| lingua = |acessodata=6 de fevereiro de 2013}}</ref> [[UNIABEU Centro Universitário|UNIABEU]],<ref name="UNIABEU">{{citar web | url= http://www.uniabeu.edu.br/| titulo =UNIABEU Centro Universitário|publicado=Site oficial da UNIABEU | lingua = |acessodata=5 de março de 2014}}</ref> [[Universidade Iguaçu|UNIG]]<ref name="UNIG">{{citar web | url= http://www.unig.br/| titulo =Universidade Iguaçu|publicado=Site oficial da UNIG | lingua = |acessodata=6 de fevereiro de 2013}}</ref> e [[Universidade do Grande Rio|Unigranrio]].
+
+Além da importância econômica, Nova Iguaçu é um notável centro turístico da [[Região Metropolitana do Rio de Janeiro|Região Metropolitana]]. A [[Reserva Biológica do Tinguá]]<ref name="ReBio Tinguá">{{citar web | url= http://www.icmbio.gov.br/portal/biodiversidade/unidades-de-conservacao/biomas-brasileiros/mata-atlantica/unidades-de-conservacao-mata-atlantica/2143-rebio-do-tingua.html| titulo= Reserva Biológica do Tinguá|publicado=Instituto Chico MendesI editora=| lingua = |acessodata=6 de fevereiro de 2013}}</ref> e o [[Parque Municipal de Nova Iguaçu|Parque Municipal]]<ref>{{citar web | url= http://www.pmni.infotrilhas.com/| titulo= Parque Natural Municipal de Nova Iguaçu|publicado=Site da Prefeitura de Nova Iguaçu |acessodata=6 de fevereiro de 2013}}</ref> configuram-se como grandes áreas de preservação ambiental, enquanto que a Serra do Vulcão, com a prática de voo livre, é um relevante ponto de visitação localizado na zona suburbana.<ref name="Prefeitura Municipal de Nova Iguaçu">{{citar web | url= http://www.pmni.infotrilhas.com/lazer_rampa.html| titulo= Rampa de voo livre de Nova Iguaçu|publicado= Site da Prefeitura de Nova Iguaçu| lingua = |acessodata=6 de fevereiro de 2013}}</ref> O patrimônio histórico é constituído pelas ruínas de [[Iguaçu Velho]] e da Fazenda São Bernardino.<ref name="Fazenda São Bernardino: os restos de uma história">{{citar web | url= http://extra.globo.com/noticias/rio/baixada-fluminense/fazenda-sao-bernardino-os-restos-de-uma-historia-4927819.html| titulo= Fazenda São Bernardino: os restos de uma história|publicado= Extra online (19 de maio de 2012)| lingua = |acessodata=6 de fevereiro de 2013}}</ref>
+
+Nova Iguaçu possui importantes centros de cultura, lazer e entretenimento. Há eventos culturais realizados no Espaço Cultural Sylvio Monteiro, órgão responsável por projetar a vida cultural iguaçuana.<ref name="Espaço Cultural Sylvio Monteiro">{{citar web | url= http://www.overmundo.com.br/guia/espaco-cultural-sylvio-monteiro| titulo= Espaço Cultural Sylvio Monteiro|publicado= Overmundo (16 de maio de 2007)| lingua = |acessodata=6 de fevereiro de 2013}}</ref> O [[Nova Iguaçu Futebol Clube]] é um orgulho da cidade,<ref name="NIFC, orgulho da Baixada">{{citar web | url= http://www.overmundo.com.br/guia/nifc-o-orgulho-da-baixada| titulo= Nova Iguaçu Futebol Clube, orgulho da Baixada|publicado= Overmundo (1 de julho de 2007)| lingua = |acessodata=6 de fevereiro de 2013}}</ref> que ainda possui como destaques os Polos Gastronômicos da Via Light, o Baixo Iguaçu e a rua que ficou conhecida como Rua da Lama.<ref name="Polo Gastronômico">{{citar web | url= http://www.baixadaonline.com/nova-iguacu/nova-iguacu/146-polo-gastronomico.html| titulo= Polo Gastronômico|publicado=Baixada online| lingua = |acessodata=6 de fevereiro de 2013}}</ref> Também foi o berço do [[skate]], tendo a primeira pista da [[América Latina]], que está localizada na [[Praça do Skate]].
+
+== Etimologia ==
+{{VT|Topônimos de origem tupi no Brasil}}
+[[Imagem:Etimologia de Iguaçu.svg|thumb|esquerda|Etimologia de iguaçu, termo provavelmente de origem [[Guarani antigo|guarani]]. É composto pela palavra ''y'' no [[Língua tupi#Aumentativo e diminutivo|grau aumentativo]]]]
+[[Ficheiro:Green reflections.jpg|thumb|esquerda|200px|O [[Rio Iguaçu (Rio de Janeiro)|Rio Iguaçu]], que originou o nome da cidade.]]
+
+O vocábulo "Iguaçu" é um termo proveniente do [[língua tupi|tupi]], originalmente ''ygûasu''. Seu significado é "rio grande" ou ainda "água grande", através da junção dos termos ''y'' (rio, água)<ref name="Vocabulário Tupi-Português">{{citar web |url=http://tupi.fflch.usp.br/node/5 |título=Vocabulário Tupi-Português do Curso Elementar de Tupi Antigo |autor=Professor [[Eduardo de Almeida Navarro]] |data= |publicado=USP - Universidade de São Paulo |acessodata=5 de fevereiro de 2013}}</ref> e ''gûasu'' (sufixo que forma o grau aumentativo).<ref name="Vocabulário Tupi-Português"/><ref>NAVARRO, E. [[Método Moderno de Tupi Antigo|''Método moderno de tupi antigo'': a língua do Brasil dos primeiros séculos]]. Terceira edição revista e aperfeiçoada. São Paulo. Global. 2005. p. 22.</ref> É uma referência dos índios jacutingas, naturais da região, ao [[Rio Iguaçu (Rio de Janeiro)|Rio Iguaçu]], outrora um rio caudaloso.
+
+Quando foi aportuguesado, o termo grafava-se, à época, ''Iguassú''. Em 1891, a sede de município foi transferida para o arraial de Maxambomba, às margens da [[Estrada de Ferro Dom Pedro II]],<ref name="Relatos de Viagem">{{citar web |url=http://www.rdvetc.com/2011/maxabomba-e-a-iguacu-velha/|título=Maxambomba e a Iguaçu Velha |autor=Luiz Antônio Dória|data= |publicado=19 de agosto de 2011 |acessodata=5 de fevereiro de 2013}}</ref> e em 1916 passou a se chamar ''Nova Iguassú'', em oposição à antiga sede, que ficou conhecida como ''Iguassú Velho''. Com o [[Acordo Ortográfico de 1945]], o nome foi alterado, finalmente, para Nova Iguaçu.<ref>{{citar web |url=http://www.filologia.org.br/revista/artigo/5(15)58-67.html |titulo=REFORMA ORTOGRÁFICA E NACIONALISMO LINGÜÍSTICO NO BRASIL  |data= |autor =Maurício Silva ([[Universidade de São Paulo]])  |publicado=CiFEFiL - Círculo Fluminense de Estudos Filológicos e Linguísticos |acessodata=20 de setembro de 2016 |arquivourl=https://web.archive.org/web/20090220184816/http://www.filologia.org.br/revista/artigo/5(15)58-67.html |arquivodata=20/02/2009}}</ref>
+
+== História ==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+
+=== Primeiras ocupações ===
+[[File:Nova Iguaçu - visão parcial do Centro - 2019.jpg | thumb|282px| Visão parcial do centro de Nova Iguaçu em 2019]]
+Antes de os portugueses chegarem ao [[Rio de Janeiro]] (em 1503), os [[Povos indígenas do Brasil|índio]]s jacutingas já habitavam a margem ocidental do [[Rio Iguaçu (Rio de Janeiro)|rio Iguaçu]]. Esses índios ajudaram os franceses quando eles chegaram à região. {{Artigo principal|[[França Antártica]]}}
+
+Em torno de 1565, após a expulsão dos franceses da [[Baía de Guanabara]], a cidade de São Sebastião do Rio de Janeiro foi fundada. Havia, àquela época, intensa pirataria promovida por [[corsário]]s franceses, ingleses e holandeses no litoral da colônia.
+
+Em 1575, o então governador da [[capitania do Rio de Janeiro]], [[Antônio Salema]], reuniu um exército português apoiado por uma tropa de índios catequizados, com o objetivo de exterminar o domínio franco-tamoio que já durava vinte anos no litoral norte da capitania. Temendo perder seus territórios, os índios tamoios, ainda aliados aos franceses, foram praticamente dizimados por conta da insurreição denominada "Guerra de Cabo Frio". As tropas vencedoras exterminaram aproximadamente 500 indígenas, escravizando outros 1 500. Foram condenados à forca dois franceses, um inglês e o [[pajé]] tupinambá. Não obstante, as tropas adentraram o sertão incendiando aldeias e matando outros milhares de [[tamoios]]. A Guerra de Cabo Frio resultou na completa expulsão dos franceses da região.
+
+No entanto, outros piratas europeus, principalmente ingleses e holandeses, continuaram a piratear o [[pau-brasil]], causando mortes que se provaram inúteis, uma vez que a ausência de colonização no litoral fluminense continuou a proporcionar lucro aos corsários europeus. Não houve interesse da [[Império Português|metrópole]] em colonizar a região do Cabo Frio após este massacre, entretanto os colonizadores decidiram povoar o Recôncavo Fluminense (região em torno da [[Baía de Guanabara]]). Começaram a se fixar às margens dos grandes rios da região, em especial os rios [[Rio Iguaçu (Rio de Janeiro)|Iguaçu]], [[Rio Meriti|Meriti]], [[Rio Sarapuí|Sarapuí]], Saracuruna, Jaguaré, Pilar, Marapicu, Jacutinga, Mantiqueira e Inhomirim.
+
+Ainda em 1575, o [[capitão-mor]] [[Belchior Azeredo]] construiu uma ermida em louvor a [[Santo António de Lisboa|Santo Antônio]], no sopé de uma colina a 750 metros da maior curva do Rio Santo Antônio, atual Rio Sarapuí, em terras jacutingas. A construção, erguida em [[taipa (material)|taipa]], foi determinante para que Belchior Azeredo conquistasse as terras dos índios jacutingas em forma de [[sesmaria]], através do governador [[Cristóvão de Barros]], batizando-as como Engenho Santo Antônio da Aldeia dos Jacutingas. O capitão-mor ainda concedeu a si mesmo uma sesmaria próxima ao [[Rio Majé]], onde construiu um engenho (coordenadas: 22º45'38" S ; 43º23'23" O). Nas décadas posteriores, a pequena ermida foi alçada à categoria de capela-colada, de capela-curada e, finalmente, de igreja-matriz (freguesia), neste local permanecendo por mais de 130 anos, até a década de 1700.
+[[Ficheiro:Novaiguacu fotonova.jpg|thumb|Vista do alto de Nova Iguaçu em janeiro de 2003.]]
+Uma vez a ocupação da bacia dos rios Iguaçu, Sarapuí e Meriti efetivada, o que ocorreu a partir do final do [[século XVI]], as tradicionais trilhas indígenas viraram estradas. Uma delas, a longa trilha  dos indígenas [[jacutingas]], foi transformada na Estrada Geral, que ligava a Freguesia de Nossa Senhora da Conceição de Marapicu (atual [[Marapicu]]) à Freguesia de Santo Antônio da Aldeia dos Jacutingas (atual [[Centro (Belford Roxo)|Belford Roxo]], próxima à fábrica da [[Bayer]]). O leito da estrada é, atualmente, ocupado pela rodovia [[RJ-105]]. A velha ponte sobre o Sarapuí era o ponto de junção entre a Estrada Geral e a Estrada Real (atual Avenida Pastor Martin Luther King Júnior). A Estrada Real seguia em direção à [[Igreja de Nossa Senhora da Candelária]], no [[Centro (bairro do Rio de Janeiro)|Centro]] do Rio de Janeiro, passando antes pela Freguesia de [[São João de Meriti|São João do Orago do Rio Merity]], pelo porto da [[Pavuna]] (que por um pequeno período foi distrito da cidade até os anos 20), por [[Inhaúma (bairro do Rio de Janeiro)|Inhaúma]] e pela Freguesia de Nossa Senhora da Apresentação do [[Irajá (bairro do Rio de Janeiro)|Irajá]].
+
+Esses caminhos constituíram, por longo tempo, a melhor opção terrestre para adentrar o Recôncavo Fluminense, já que o acesso era difícil devido à grande quantidade de pântanos e de rios caudalosos e de considerável largura. Para estabelecer a rota da Estrada Real, foram considerados os melhores pontos para a transposição dos rios Meriti e Sarapuí, observando locais onde estes rios formavam [[vau]]s.
+
+A colonização da região exigia rotas para o escoamento da produção dos engenhos. Inicialmente, isso foi possível graças às vias fluviais, quando os rios serviam de estradas, uma vez que as trilhas indígenas (e as estradas derivadas delas) eram rústicas e os rios eram o modo mais fácil de adentrar no Recôncavo Fluminense para a sua colonização.
+
+=== Freguesia de Nossa Senhora da Piedade do Iguaçu ===
+[[Ficheiro:Iguaçu Velho - Ruínas da Igreja de N S da Piedade 4.jpg|thumb|direita|250px|<center>Ruínas da igreja de Nossa Senhora da Piedade (Foto com data indeterminada. Certamente, no início do [[século XX]])</center>]]
+
+Logo que passou a ser explorado, o ouro das Minas Gerais era levado por terra até o porto de [[Parati]] e daí, por via marítima, até a cidade do [[Rio de Janeiro]], de onde seguia para [[Portugal]]. Como a rota do litoral entre Parati e o Rio de Janeiro era infestada por corsários e piratas, foi necessário a abertura de caminhos terrestres mais curtos e seguros para trazer o ouro das Minas Gerais até o Rio de Janeiro.
+{{commonscat|Iguaçu Velho|Iguaçu Velho}}
+No século XVII, [[Garcia Rodrigues Paes]] ligou [[Paraíba do Sul]] ao porto do [[Pilar do Iguaçu]] para o escoamento do ouro trazido de [[Minas Gerais]]. Essa ligação foi chamada Caminho do Pilar ou, mais comumente, [[Caminho Novo]] das Minas, pois substituiu o antigo Caminho de Paraty. Do Rio Pilar, podia-se navegar até o Rio Iguaçu para [[Iguaçu Velho]], que tem sua foz no interior da [[Baía de Guanabara]], área com fortificações e mais protegida dos ataques de piratas e corsários.
+
+Posteriormente, foram também abertos o Caminho da Terra Firme e a Variante do Proença, visando a facilitar o escoamento do ouro, já que o trânsito no Caminho do Pilar tinha diversos problemas. Com a redução de seu uso, o Caminho Novo logo passou a ser chamado de Caminho Velho.
+
+O Arraial de Nossa Senhora da Piedade do Iguaçu (à época, grafava-se "Iguassú") nasceu ao redor de um porto fluvial nas margens do [[Rio Iguaçu (Rio de Janeiro)|Rio Iguaçu]]. Em 1699, a localidade já tinha uma capela curada. Na época do Marquês do Pombal, em 1750, foi elevada à categoria de freguesia. O Porto de Piedade de Iguassu prosperou em razão da intensa movimentação dos tropeiros pelo Caminho Novo.
+
+== Conde e Condessa de Iguaçu ==
+[[Pedro Caldeira Brant|Pedro Caldeira Brant, Conde de Iguaçu]] e [[Maria Isabel de Alcântara Bourbon|Maria Isabel de Alcântara]], filha de [[Pedro I do Brasil|Dom Pedro]] e a [[Domitila de Castro Canto e Melo|Marquesa dos Santos]].
+
+[[Pedro Caldeira Brant]] foi o primeiro e único Conde de Iguaçu. Era filho de [[Felisberto Caldeira Brant Pontes de Oliveira e Horta|Felisberto Caldeira Brant Pontes de Oliveira e Horta, Marquês de Barbacena]], Residiam na [[Nova Iguaçu#Freguesia de Nossa Senhora da Piedade do Iguaçu|Freguesia, vila e cidade de Nossa Senhora da Piedade do Iguaçu]], no Engenho de Santo Antônio de Jacutinga. A propriedade (hoje em ruínas), se localiza no alto de uma colina atrás do [[UNIABEU Centro Universitário|Uniabeu]], o que hoje é o município de [[Belford Roxo]], na [[Baixada Fluminense]].
+
+=== Vila de Iguaçu ===
+{| style="float: center; margin: 1em 0em 1em 2em"
+|- align="center"
+! colspan="3" |Mapa da vila de Iguaçu (1837)
+|- align="center"
+| colspan="3" |[[Ficheiro:Novaiguacu mapaantigo.jpg|600px|Mapa da vila de Iguaçu (1837)]]
+|-
+|1 — Morro da Cadeia||10 — Largo dos Ferreiros||19 — Morro Demetriano
+|-
+|2 — Caminho da Serra||11 — Armazém Soares e Melo||20 — Brejo Cambambé
+|-
+|3 — Porto do Pinto||12 — Porto de Iguaçu||21 — Marambaia
+|-
+|4 — Porto do Viana||13 — Morro do Pessoa ||22 — Caminho dos Velhacos
+|-
+|5 — Porto Soares e Mello||14 — Morro do Marinho||23 — Caminho para Tinguá
+|-
+|6 — Porto dos Passageiros||15 — Largo do Vítor||24 — Estrada do Comércio
+|-
+|7 — Porto dos Saveiros||16 — Largo Lava-pés||25 — Estrada do Cambambé
+|-
+|8 — Câmara (Paço) Municipal||17 — Matriz de N.S. da Piedade||26 — Córrego Mangangá
+|-
+|9 — Cadeia de Iguaçu||18 — Morro M. Lima||27 — Estrada da Olaria
+|}
+
+{| class="wikitable" style="float: right; margin: 2em 0em 2em 2em"
+|-
+| width="250"|
+
+''Iguassu é uma rua comprida e mal calçada que à esquerda segue para o porto e à direita termina numa bifurcação. Aí se comprimem os armazéns, as construções, as casas dos consignatários que exportam para o Rio. É a bolsa, o mercado, o entreposto. É a vida de Iguassu. Consta de duas mil almas a população desse burgo-capital... No porto, o rio é estreito e baixo. Os cavaleiros da jarreteira poderiam passá-lo facilmente. Os barcos carregados são impelidos a vara até o mar... Antes de deixar Iguassu, sua hospedaria onde se agita toda uma geração de mestiços e sua casaria acaçapada, tive ensejo de ver um desses longos comboios de mulas carregadas que denominamos tropa.'' Descrição feita por Charles Ribeirolles em 1859<ref name="ribeyrolles">[http://books.google.com.br/books?id=FdvkzNJEDhsC&pg=RA2-PR5&dq=Brazil+Pittoresco RIBEYROLLES, Charles. Brazil Pittoresco: Historia - Descripções - Viagens - Instituições - Colonisação. Rio de Janeiro:Typographia Nacional; 1ª ed: 1859; pag.  81]. Ou edição mais recente: RIBEYROLLES, Charles. Brasil Pitoresco. Vol. 1. BH: Itatiaia; SP: Editora da USP, 1980: 218-219.</ref>
+|}
+
+A área total da vila de Iguaçu era, à época de sua criação, de 1 305,47&nbsp;km². Na sede, havia um quartel com uma cadeia anexa, a Câmara de Vereadores, o Fórum, casas comerciais e cerca de cem casas. Nos portos, eram embarcadas mercadorias em direção ao [[Rio de Janeiro]]. A população em 1879 era estimada em 21 703 pessoas, sendo 7 622 escravos.
+
+Apesar do grande progresso em seus primeiros anos de independência administrativa (embora até 1919 as funções de executivo fossem de responsabilidade do intendente, representado pelo presidente da câmara), a Vila de Iguaçu entrou em decadência na segunda metade do século XIX. Alguns fatores podem ser citados, como a criação das estradas de ferro, a construção de uma ponte sobre o Rio Iguaçu e epidemias de cólera, varíola e malária.
+
+A [[Abolicionismo|abolição da escravatura]] também ajudou no declínio da economia do município, que se sustentava na exploração dos escravos negros na agricultura da [[cana-de-açúcar]]. Havia canaviais por todo o município, além de plantações de milho, feijão, mandioca, café e arroz.
+
+=== Maxambomba ===
+
+[[Maxambomba]] é o nome de um mecanismo de tração, operado sobre um ou dois trilhos, utilizado na época do Brasil colonial pelos senhores de engenho para assentar uma carga com segurança sobre a embarcação destinada para fazer o transporte fluvial da produção do Engenho. O mecanismo de grua permitia locomover para baixar a carga sobre a canoa chalana, observando o centro de gravidade da embarcação para a distribuição uniforme do peso da carga, evitando que o carregamento gerasse oscilações que pudessem acidentalmente lançar a carga ao rio durante o carregamento.
+
+Assim vemos que um mecanismo de grua serviu para nomear o rio que atravessava as terras do Engenho Maxambomba. Este Rio Maxambomba era chamado de ''Apeterei'' pelos índios Jacutingas (antigos donos da terra). ''Apeterei'', em [[língua tupi]], significa "Rio do Meio". Atualmente, o rio está canalizado sob os quarteirões situados entre as ruas Luis Guimarães / Nilo Peçanha e a Otávio Tarquínio. A Serra de Madureira (Serra do Engenho do Madureira) também foi denominada de Serra de Maxambomba (Serra do Engenho Maxambomba). O Rio Maxambomba nasce na Serra de Maxambomba e atravessa as terras do antigo Engenho Maxambomba e era designado como Apeterei (Rio do Meio), porque localiza-se entre dois rios maiores: Rio das Botaes (Riachão) e o Rio Caxoeira (atual Rio da Prata).
+
+Uma canoa de fundo chato, conhecida como [[chalana]] ou chalupa, era o transporte mais apropriado para navegar o talvegue raso do curso d´água (um afluente de rio) utilizado pelo engenho como via fluvial para transporte.
+
+A produção do Engenho Maxambomba escoava através de um portinho existente no Rio da Prata, afluente do Rio Sarapuí. O carregamento também seguia através do Rio Maxambomba, principalmente quando o Rio da Prata estava obstruído por árvores caídas ou por desmoronamentos das margens, o que provocava assoreamento acidental.
+
+A produção de [[cana-de-açúcar]] seguia as diretrizes de Portugal para o [[Brasil Colônia]]. As raízes fracas e finas da cana provocam a erosão dos terrenos desmatados e o consequente assoreamento dos rios. Porque, ao ser desmatada a terra e removidas as árvores com raízes fortes que seguravam a terra, substituídas pelo plantio da cana, com raízes fracas e finas que não seguravam a terra, esta era levada pelas chuvas torrenciais e depositadas no fundo dos rios, sedimentando-os e diminuindo-lhes a profundidade.
+
+Através do portinho existente no Rio Maxambomba, a produção escoava até o Porto dos Saveiros (em Tinguá) ou via Rio da prata até o Porto do Rio Sarapuí, onde era reembarcada em saveiros ou faluas, embarcações maiores, com destino ao Cais dos Mineiros, no Rio de Janeiro (que situava-se ao lado do Arsenal de Marinha, na atual [[Rua Primeiro de Março|Rua 1º de Março]])
+
+Para carregar as chalanas, o engenho contava com dois portinhos fluviais: um deles localizava-se no atual Bairro da Vila Nova (instalado no Rio da Prata); o outro existia à montante do Rio Maxambomba (atual Centro de Nova Iguaçu). Na periferia do Engenho Maxambomba, ao redor do portinho do Rio Maxambomba, gradativamente foi-se assentando um pequeno comércio, seguido por um pequeno núcleo populacional que foi prosperando até se transformar no pequeno Arraial de Maxambomba.
+
+Assim, na periferia das terras do Engenho Maxambomba, nasceu o Arraial Maxambomba. Desenvolveu-se e prosperou ao redor do portinho que existiu próximo à atual Rua Floresta Miranda. O transporte fluvial e marítimo foi utilizado até 1728, quando o Caminho do Tinguá foi concluído pelo mestre de campo Estêvão Pinto. Esse caminho, que ficou conhecido como [[Caminho de Terra Firme]], fugia da planície inundada e pantanosa para transpassar a muralha da Serra do Mar a caminho das Minas Gerais. Passava no antigo Engenho Maxambomba, de propriedade de [[Martim Corrêa Vasques]]. O Caminho de Terra Firme foi o único que deixou vestígios, pois, sobre parte de seu percurso, foram assentados, em 1858, os trilhos da [[Estrada de Ferro Dom Pedro II]], (atualmente sob concessão à [[Supervia]]).
+
+O Engenho de Maxambomba (localização exata de onde situava-se o engenho:  latitude 22°45'36.69"S longitude 43°25'59.90"W) integrava a  jurisdição (distrito) da [[Freguesia de Santo Antônio de Jacutinga]]. No século XVII, o Engenho Maxambomba surgiu em razão do desmembramento do Engenho de Santo Antônio de Jacutinga, localizado nas terras da antiga aldeia dos índios Jacutingas. A sesmaria do Engenho Santo Antônio foi concedida pelo Governador [[Cristóvão de Barros]], para um de seus capitães, de nome [[Belchior de Azeredo]], homem de confiança de Cristóvão de Barros que era o quarto governador do Rio de Janeiro. O engenho ficou séculos nas mãos da família Azeredo, passando para José de Azeredo e seu filho Antônio de Azeredo (descendentes de Belchior), até ser desmembrado e extinto no século XIX, com as terras integradas ao Engenho do Brejo (Belford Roxo) e Engenho Maxambomba (Nova Iguaçu).
+
+No século XVII, o Engenho Maxambomba era propriedade de [[Salvador Correia de Sá e Benevides (militar)|Salvador Correia de Sá e Benevides]], neto paterno de [[Salvador Correia de Sá, o Velho|Salvador Correia de Sá (o Velho)]], que era o maior latifundiário do Rio de Janeiro, dono de vários engenhos e de mais de setecentos escravos e que foi governador do Rio de Janeiro por três mandatos intercalados. Ele morava na Rua Direita, atual Rua 1º de Março, no Centro do Rio de Janeiro. Na primeira metade do século XVIII, pertenceu a Martim Corrêa Vasques. Na segunda metade do mesmo século, o Engenho Maxambomba passou para o Padre [[José Vasques de Souza]], cujo irmão inteiro era o capitão Manuel Correia Vasques, proprietário do Engenho Caxoeira (atual município de [[Mesquita (Rio de Janeiro)|Mesquita]]). Ambos eram descendentes diretos de Salvador Correia de Sá e Benevides, de [[Mem de Sá]] e de [[Estácio de Sá]].
+
+A sede colonial do Engenho Maxambomba situava-se no cume da alta colina em cuja encosta setentrional localiza-se, atualmente, o Bairro Califórnia e em cuja encosta meridional está assentado o Bairro da [[Vila Nova (Nova Iguaçu)|Vila Nova]]. A sede do Engenho Maxambomba estava a 1,65&nbsp;km (um quarto de légua) de distância da Matriz da Freguesia de Santo Antônio de Jacutinga (atual [[Igreja da Prata]]). A localização é dada com exatidão por [[Monsenhor Pizarro]], no relatório das suas visitas pastorais no ano de 1794. Ele descreve com clareza solar a direção do engenho (poente) e a equidistância, em léguas, levando em consideração, como ponto de partida, a atual Igreja de Santo Antônio da Prata, que, em 1794, era a Matriz de Santo Antônio de Jacutinga (Localização da atual Igreja de Santo Antônio da Prata = Latitude: 22°45'38.68"S e Longitude: 43°24'56.99"W).
+
+Escravos fugitivos do Engenho Jacutinga, do Engenho do Brejo e do Engenho Maxambomba utilizavam o leito do Rio da Prata para chegar às encostas da Serra Maxambomba (atual Serra do Madureira), onde, no atual bairro do K-11, fundaram o Quilombo de Cauanza. K-11 é uma corruptela de Kwanza que também é o maior rio de Angola e o nome atual da moeda angolana.
+
+Os pequenos rios, vias fluviais que serviam os engenhos, foram perdendo sua capacidade de manter talvegue apropriado para serventia e, em razão de assoreamentos, obstruções e contínuo desmatamento das margens, gradativamente foram substituídos por estradas ou carreteiras (estradas para carroças).
+
+A Estrada Geral é uma das mais antigas da região, caminho utilizado bem antes do período colonial. Já era uma antiquíssima trilha dos índios Jacutingas (um ''apékatu'', que, em [[língua tupi]], significa: "bom caminho"<ref>NAVARRO, E. [[Método Moderno de Tupi Antigo|''Método moderno de tupi antigo'': a língua do Brasil dos primeiros séculos]]. Terceira edição revista e aperfeiçoada. São Paulo. Global. 2005. p. 29, 79.</ref>). A Estrada Geral ligava a Freguesia de Nossa Senhora da Conceição de Mariapicu à Freguesia de Santo Antônio da Aldeia dos Jacutingas (atual Centro de Belford Roxo). Hoje, a Estrada Geral está dividida em duas: Estrada Doutor Plínio Casado e Estrada Abílio Augusto de Távora (antiga Estrada do Engenho do Madureira), que, em 1930 foi reformada.
+
+A carreteira mais extensa construída pelo colonizador na Freguesia de Santo Antônio de Jacutinga, em linha quase reta, iniciava no atual Centro de Nova Iguaçu, na Rua Floresta Miranda, seguindo pela Rua Comendador Francisco Soares, Rua do Encanamento, atravessando a atual Rodovia Presidente Dutra (que não existia na época), seguindo por Heliópolis (Rua Maria/Avenida Heliópolis), passando pelo Bairro Baby até chegar ao Porto dos Saveiros (Tinguá). Outras carreteiras importantes foram melhoradas quando as vias fluviais deixaram de ser utilizadas, como é o caso da atual Rua Barros Júnior, que se conecta com a Estrada do Iguaçu (atravessando a Via Presidente Dutra). Estas carreteiras eram a serventia para transporte da produção do Engenho do Madureira, Engenho da Posse, Fazenda Caioaba e Fazenda Filgueiras (atual bairro Filgueiras, em Nova Iguaçu). O escoamento destinava as produções dos engenhos para embarque nos portos fluviais de Piedade de Iguaçu.
+
+A importância que o [[Rio Iguaçu (Nova Iguaçu)|Rio Iguaçu]] tinha para a comunicação entre a vila e o [[Rio de Janeiro]] diminuiu com a implantação das estradas de ferro, que eram um meio de transporte mais rápido, barato e seguro.
+
+À época do Segundo Império, a população da Vila Maxambomba assistiu entusiasmada à chegada das locomotivas a vapor, popularmente conhecidas por "maria-fumaças". Em 29 de março de 1858, a Estrada de Ferro Dom Pedro II (atual [[Estrada de Ferro Central do Brasil]]) foi inaugurada pelo próprio Imperador Pedro II e ligou o Campo da Aclamação (no [[Rio de Janeiro]]) ao Pouso dos Queimados (atual Município de [[Queimados]]) e, no ano seguinte, chegou a Belém (atual [[Japeri]]). Na parada ferroviária de Maxambomba, a produção da Fazenda Maxambomba passou a ser embarcada para a corte. A implantação da estrada de ferro aumentou o comércio estabelecido na região. A atividade no arraial prosperou tanto que isso fez com que, em 1862, a Matriz da Freguesia de Santo Antônio de Jacutinga fosse transferida para perto da estação.
+
+Outra estrada de ferro importante foi a Rio do Ouro, que começava no bairro do Caju, no Rio de Janeiro) e seguia até a localidade de [[Rio D'Ouro|Rio d'Ouro]], em Nova Iguaçu. Sua construção foi iniciada em agosto de 1876 e concluída em 1883. Em 1886, foi adaptada para o transporte de cargas e passageiros e contava com três ramais em seus 53 quilômetros: Xerém, Tinguá e São Pedro (Jaceruba). Nos [[década de 1960|anos 60]], contudo, a estrada de ferro foi, aos poucos, desativada. Segundo os responsáveis por sua manutenção, ela não dava lucro.
+
+A ponte construída sobre o Rio Iguaçu em 1886 na localidade de São Bento acabou de vez com a importância do rio para o desenvolvimento da região, pois impediu o tráfego dos saveiros e faluas. A chegada da ferrovia na região, a proclamação da Lei Áurea no dia 13 de maio de 1888 (que causou a ruína a considerável parte da aristocracia rural) e as epidemias de [[cólera]], [[varíola]] e [[malária]] fizeram com que a população da Vila de Iguaçu abandonasse o local, transferindo-se para o Arraial de Maxambomba.
+
+Devido, especialmente, a esses fatores, em [[1 de maio|1º de maio]] de 1891, através de decreto assinado por [[Francisco Portela]], a sede do município foi transferida definitivamente para Maxambomba, que foi elevada à categoria de vila. A antiga Vila de Iguaçu passou a ser conhecida por Iguaçu Velha.
+
+No limiar da década de 1950, época da inauguração da Rodovia Presidente Dutra, as terras remanescentes do antigo engenho colonial Maxambomba foram desapropriadas pelo presidente [[Getúlio Vargas]], que urbanizou a antiga Fazenda Maxambomba, transformando-a em bairro modelo, com o objetivo de oferecer moradias à classe dos marítimos, uma categoria de servidores do estado, transformando a Fazenda Maxambomba no Bairro Califórnia.
+
+=== Nova Iguaçu ===
+[[Ficheiro:Novaiguacu fotoantiga.jpg|thumb|Vista da cidade de Nova Iguaçu, mostrando a Matriz de Santo Antônio de Jacutinga e vários laranjais (1932).|254x254px]]
+
+A Vila de Maxambomba, que hoje abrange o centro de Nova Iguaçu, recebeu oficialmente o nome de "Nova Iguassú" Também substituindo o Nome de Vila do Iguassú, através da Lei 1 331, de 9 de novembro de 1916, de autoria do deputado estadual Manuel Reis. A grafia do nome da cidade só mudou para "Nova Iguaçu" tempos depois, após reformas ortográficas da [[língua portuguesa]].
+
+Após o declínio da agricultura da [[cana-de-açúcar]], a cultura da [[laranjeira|laranja]] passou a ser a mais importante para o município. Vinda de [[São Gonçalo (Rio de Janeiro)|São Gonçalo]], a laranja encontrou solo ideal em Nova Iguaçu. Apenas para citar um exemplo, todo o bairro da [[Posse (Nova Iguaçu)|Posse]] era, antigamente, uma grande fazenda produtora de laranjas.
+
+Praticamente toda a produção de laranjas era exportada, trazendo para o município um grande desenvolvimento econômico. A exportação começou a ocorrer no ano de 1891, juntamente com o desmatamento (lenha e carvão, madeiras de lei).
+
+O auge da citricultura em Nova Iguaçu foi dos [[Década de 1930|anos 30]] a 1956. De 1930 a 1940, a cidade de Nova Iguaçu era chamada de "Cidade Perfume", porque as laranjeiras, em floração, perfumavam todo o roteiro das ferrovias.<ref name="Encontra Nova Iguaçu">{{citar web | url= http://www.encontranovaiguacu.com.br/nova-iguacu/| titulo =Sobre Nova Iguaçu |publicado= Encontra Nova Iguaçu| lingua = |acessodata=6 de fevereiro de 2013}}</ref>
+
+A construção de casas de beneficiamento e embalagem da produção na segunda metade do século XX trouxe novo fôlego para a exportação. Porém, durante a [[Segunda Guerra Mundial]], houve interrupção do transporte marítimo, impedindo a exportação das laranjas. Com isso, as áreas dos antigos laranjais começaram a ser loteadas e novos bairros surgiram.
+
+A partir da "crise da laranja", Nova Iguaçu passou a se concentrar num processo de industrialização, beneficiado pela facilidade de escoamento da produção graças, especialmente, às rodovias que cortam o município, entre elas a BR-116 ([[Rodovia Presidente Dutra]]). Além disso, nessa época era possível encontrar com facilidade amplos terrenos a preço baixo e mão de obra barata. Nova Iguaçu passou então a contar com um significativo parque industrial e uma grande atividade comercial.
+
+=== Emancipações ===
+[[Imagem:Evolução Territorial de Nova Iguaçu.gif|thumb|Desmembramentos de distritos e evolução territorial de Nova Iguaçu durante o século XX.]]
+
+O município de Nova Iguaçu possuía uma área territorial, quando de sua fundação, muito maior do que na atualidade. Somando-se a área de todos os municípios que eram integrantes do território Iguaçuano, tem-se que, à época de sua criação, o então município de Iguaçu possuía uma área de 1.318,244&nbsp;km<sup>2</sup>, ou seja, mais de duas vezes e meia a área atual. Porém, as diversas emancipações de distritos que queriam sua independência administrativa marcaram a história do município.
+
+==== Século XIX ====
+O primeiro desmembramento foi em 1843 com [[Vila da Estrela]], um antigo território que em 1891 entrou em decadência e retornou a Nova Iguaçu, porém sua antiga sede, [[Vila Inhomirim]], foi dividida com [[Magé]] na mesma época. Atualmente encontra-se de posse dos municípios de [[Magé]] e [[Duque de Caxias (Rio de Janeiro)|Duque de Caxias]].
+
+Depois veio Desligamento da [[Pavuna]] (que chegou ser Tratado como Distrito até os anos 20), perdendo acesso ao importante porto do [[rio Pavuna]], porém parte da Região ainda ficou na freguesia Iguaçuana de [[São João de Meriti|São João do Orago do Rio Merity]] e outra maior foi incorporada a freguesia de Nossa Senhora da Apresentação de [[Irajá (bairro do Rio de Janeiro)|Irajá]].
+
+==== Século XX ====
+O recém criado Distrito de [[Duque de Caxias]] foi a primeira emancipação oficial no século 20, ocorrida em 31 de dezembro de 1943, quando também foram desmembrados do município de Nova Iguaçu os distritos de Caxias, [[São João de Meriti]] (que, por sua vez, alcançaria a independência administrativa em 1947<ref name="Emancipação de São João de Meriti">{{citar web | url= http://cidades.ibge.gov.br/painel/historico.php?lang=_EN&codmun=330510&search=rio-de-janeiro | titulo =Emancipação de São João de Meriti|publicado= IBGE Cidades|acessodata=31 de março de 2017}}</ref>), Bonfin, Xerém ([[Pilar do Iguaçu]]), [[Taquara (Duque de Caxias)|Taquara]] e Imbariê ([[Vila da Estrela]]). Com isso, Nova Iguaçu perdeu acesso à [[Baía de Guanabara]], a uma pequena parte de [[Santana das Palmeiras]] (levando parte da [[Reserva Biológica Federal do Tinguá]]) e a uma grande área de [[Belford Roxo]].
+
+Em 1947, foi a vez do então Distrito de [[Nilópolis]] se emancipar.<ref name="Emancipação de Nilópolis">{{citar web | url= http://www.cidades.ibge.gov.br/painel/historico.php?codmun=330320| titulo =Emancipação de Nilópolis|publicado=IBGE Cidades|acessodata=31 de março de 2017}}</ref> Contudo, as emancipações que mais marcaram a economia de Nova Iguaçu foram as ocorridas no início dos anos 1990.
+
+Mesmo com as emancipações dos anos 1940, Nova Iguaçu tornou-se, ao longo dos anos, uma das principais cidades do estado, tanto em população quanto em geração de renda. Em 1989, a cidade chegou a ter 1 700 000 habitantes, sendo a sexta mais populosa do Brasil na época. Mas essa realidade foi abalada após as emancipações de importantes distritos.
+
+Em abril de 1990, houve a emancipação do então Distrito de [[Belford Roxo]] (segundo menor distrito, porém um dos mais populosos),<ref name="Emancipação de Belford Roxo">{{citar web | url= https://gov-rj.jusbrasil.com.br/legislacao/151398/lei-1640-90| titulo =Emancipação de Belford Roxo|publicado=JusBrsil| lingua = |acessodata=31 de março de 2017}}</ref>
+
+Seguido, em dezembro, pelo então Distrito de [[Queimados]] (no qual estava localizado o Polo Industrial de Nova Iguaçu que, logicamente, passou a ser administrado pelo novo município).<ref name="Emancipação de Queimados">{{citar web | url= https://gov-rj.jusbrasil.com.br/legislacao/151299/lei-1773-90| titulo =Emancipação de Queimados|publicado=JusBrasil|acessodata=31 de março de 2017}}</ref>
+
+Em 1991, foi a vez do então Distrito de [[Japeri]] se emancipar.<ref name="Emancipação de Japeri">{{citar web | url= http://alerjln1.alerj.rj.gov.br/scpro99.nsf/dae85f46f020c57003256bc60068cf57/7388b41671c8ef6103256b1200529993?OpenDocument| titulo =Emancipação de Japeri|publicado=Assembleia Legislativa do Estado do Rio de Janeiro (ALERJ)|acessodata=31 de março de 2017}}</ref> No ano de 1951, a antiga Belém passa a constituir, juntamente com Engenheiro Pedreira, o 6º distrito de Nova Iguaçu: Japeri. Por haver, em um só distrito, duas localidades distintas, foram criadas as Administrações Regionais de Engenheiro Pedreira e de Japeri. Por estarem politicamente constituídas em um único distrito.
+
+Em 1999, [[Mesquita (Rio de Janeiro)|Mesquita]], distrito de apenas 35&nbsp;km², também se emancipou, tendo sua primeira eleição para prefeito no pleito municipal de 2000.<ref name="Emancipação de Mesquita">{{citar web | url= http://alerjln1.alerj.rj.gov.br/contlei.nsf/b24a2da5a077847c032564f4005d4bf2/22ca8342f1205432032567fa0064cc44?OpenDocument| titulo =Emancipação de Mesquita|publicado=Assembleia Legislativa do Estado do Rio de Janeiro (ALERJ)| lingua = |acessodata=31 de março de 2017}}</ref>
+
+As emancipações trouxeram uma decadência econômica para o município de Nova Iguaçu, que teve população e, consequentemente, arrecadação reduzidas, apesar de ter mantido praticamente o mesmo volume de gastos públicos.
+
+Antes de iniciar seu ciclo de industrialização, Nova Iguaçu era uma cidade-dormitório, designação dada aos municípios cuja maior parte da população trabalha em outra cidade (no caso, o [[Rio de Janeiro]]). Além disso, praticamente não havia infraestrutura urbana, já que a cidade acabara de sair de um período dedicado apenas à citricultura.
+
+{|  border="0" style="background:#ffffff" width="70%" align="center" class="sortable wikitable"
+|+ align="center" style="background:saddlebrown; color:white" |<big>'''Municípios emancipados de Nova Iguaçu'''</big>
+|-
+! style="background:cornsilk; color:black"|Bandeira
+! style="background:cornsilk; color:black"|[[Município]]
+! style="background:cornsilk; color:black"|[[Área]] (km²)
+! style="background:cornsilk; color:black"|[[População]] (cen. 2022)<ref name="Dane">{{citar web |url=http://www.dane.gov.co/censo/files/presultados.pdf |publicado=Dane.gov.co |autor= |formato=PDF |título=Resultados del Censo DANE 2005 |data= |acessodata= |língua= }}</ref>
+! style="background:cornsilk; color:black"|Data da emancipação
+|-
+| [[Imagem:Bandeira_caxiense.png|70px]] || [[Duque de Caxias (Rio de Janeiro)|Duque de Caxias]] || align="right"| 467,62<ref name="Área de Duque de Caxias">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=duque+de+caxias&codigo=&submit.x=0&submit.y=0| titulo =Área de Duque de Caxias|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right"| 808.161<ref name="População de Duque de Caxias">{{citar web | url= http://cidades.ibge.gov.br/v3/cidades/municipio/3301702| titulo =População de Duque de Caxias|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right" | 31 de dezembro de 1943<ref name="Emancipação de Duque de Caxias">{{citar web|url=http://cidades.ibge.gov.br/painel/historico.php?lang=_EN&codmun=330170&search=rio-de-janeiro|titulo=Emancipação de Duque de Caxias|acessodata=31 de março de 2017|publicado=IBGE Cidades|lingua=}}</ref>
+|-
+| [[Imagem:Bandeira-saojoaodemeriti.JPG|border|70px]] || [[São João de Meriti]] ''(emancipado de [[Duque de Caxias (Rio de Janeiro)|Duque de Caxias]])''|| align="right"| 35,216<ref name="Área de São João de Meriti">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=s%E3o+jo%E3o+de+meriti&codigo=&submit.x=0&submit.y=0| titulo =Área de São João de Meriti|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right"| 440.962<ref name="População de São João de Meriti">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=s%E3o+jo%E3o+de+meriti&codigo=&submit.x=0&submit.y=0| titulo =População de São João de Meriti|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right" | 21 de agosto de 1947<ref name="Emancipação de São João de Meriti"/>
+|-
+| [[Imagem:Bandeira_Nilopolis.png|border|70px]] || [[Nilópolis]] || align="right"| 19,393<ref name="Área de Nilópolis">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=nil%F3polis&codigo=&submit.x=0&submit.y=0| titulo =Área de Nilópolis|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref>|| align="right"| 146.774<ref name="População de Nilópolis">{{citar web | url= http://cidades.ibge.gov.br/v3/cidades/municipio/3303203| titulo =População de Nilópolis|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right" | 21 de agosto de 1947<ref name="Emancipação de Nilópolis"/>
+|-
+| [[Imagem:Bandeira_de_Belford_Roxo.svg|70px]] || [[Belford Roxo]] || align="right"| 77,815<ref name="Área de Belford Roxo">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=belford+roxo&codigo=&submit.x=0&submit.y=0| titulo =Área de Belford Roxo|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right"| 483.087<ref name="População de Belford Roxo">{{citar web | url= http://cidades.ibge.gov.br/v3/cidades/municipio/3300456| titulo =População de Belford Roxo|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref>|| align="right" | 3 de abril de 1990<ref name="Emancipação de Belford Roxo"/>
+|-
+| [[Imagem:Bandeira_de_Queimados.svg|70px]] || [[Queimados]] || align="right"| 75,695<ref name="Área de Queimados">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=belford+roxo&codigo=&submit.x=0&submit.y=0| titulo =Área de Queimados|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right"| 140.523<ref name="População de Queimados">{{citar web | url= http://cidades.ibge.gov.br/v3/cidades/municipio/3304144| titulo =População de Queimados|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref>|| align="right" | 21 de dezembro de 1990<ref name="Emancipação de Queimados"/>
+|-
+| [[Imagem:Bandeira_de_Japeri.svg|70px]] || [[Japeri]] || align="right"| 81,869<ref name="Área de Japeri">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=japeri&codigo=&submit.x=0&submit.y=0| titulo =Área de Japeri|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right"| 96.289<ref name="População de Japeri">{{citar web | url= http://cidades.ibge.gov.br/v3/cidades/municipio/3302270| titulo =População de Japeri|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref>|| align="right" | 2 de dezembro de 1991<ref name="Emancipação de Japeri"/>
+|-
+| [[Imagem:Bandeira_de_Mesquita_(Rio_de_Janeiro).svg|70px]] || [[Mesquita (Rio de Janeiro)|Mesquita]] || align="right"| 41,477<ref name="Área de Mesquita">{{citar web | url= http://www.ibge.gov.br/home/geociencias/areaterritorial/area.php?nome=mesquita&codigo=&submit.x=24&submit.y=11| titulo =Área de Mesquita|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref> || align="right"| 167.127<ref name="População de Mesquita">{{citar web | url= http://cidades.ibge.gov.br/v3/cidades/municipio/3302858| titulo =População de Mesquita|publicado=IBGE | lingua = |acessodata=31 de março de 2017}}</ref>|| align="right" | 25 de setembro de 1999<ref name="Emancipação de Mesquita"/>
+|-
+|}
+
+== Geografia ==
+De acordo com a [[Regiões geográficas intermediárias e imediatas|divisão regional vigente]] desde 2017, instituída pelo IBGE,<ref>{{citar web|url=https://www.ibge.gov.br/geociencias-novoportal/cartas-e-mapas/redes-geograficas/2231-np-divisoes-regionais-do-brasil/15778-divisoes-regionais-do-brasil.html |título=Divisão Regional do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=6 de dezembro de 2018 |wayb=20181206173157}}</ref> o município pertence às [[Lista de regiões geográficas intermediárias e imediatas do Rio de Janeiro|Regiões Geográficas]] Intermediária e Imediata do Rio de Janeiro.<ref name="IBGE-DTB-2022">{{citar web|url=https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2022/|título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil|data=2022|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|acessodata=30/07/2023}}</ref> Até então, com a vigência das divisões em [[Mesorregiões e microrregiões do Brasil|microrregiões e mesorregiões]], fazia parte da microrregião do Rio de Janeiro, que por sua vez estava incluída na [[Lista de mesorregiões e microrregiões do Rio de Janeiro|mesorregião Metropolitana do Rio de Janeiro]].<ref name="IBGE_DTB_2016">{{citar web|url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2016/DTB_2016_v2.zip |título=Divisão Territorial Brasileira 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=6 de dezembro de 2018}}</ref>
+
+* Extensão: Norte-Sul - 36&nbsp;km / Leste-Oeste - 24&nbsp;km.
+* Rios: Maxambomba, da Prata, [[Rio Iguaçu (Nova Iguaçu)|Iguaçu]], [[Rio Guandu|Guandu]], [[Rio Botas|Botas]], [[Rio Sarapuí|Sarapuí]] e [[Rio Tinguá|Tinguá]].
+* Temperatura média anual: 23,4&nbsp;°C.
+* Precipitação média anual: 2 105mm.
+
+=== Clima ===
+[[Ficheiro:Tornado nova iguaçu,rj 2011 bem atrás da montanha e apontando para o vortex dele que está nos bairros..jpg|miniaturadaimagem|[[Tornado]] moderado F1 que atingiu Nova Iguaçu em janeiro de 2011.]]
+O [[clima]] de Nova Iguaçu é [[Clima tropical|tropical]] (tipo Aw segundo [[Classificação climática de Köppen-Geiger|Köppen]]),<ref name="vetmedunivienna">{{citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Fkoeppen-geiger.vu-wien.ac.at%2Fpics%2Fkottek_et_al_2006.gif&date=2011-04-24 |titulo=World Map of the Köppen-Geiger climate classification |autor=World Map of the Köppen-Geiger climate classification |publicado=Institute for Veterinary Public Health |acessodata=10 de junho de 2011}}</ref> com diminuição de [[chuva]]s no [[inverno]] e temperatura média anual de 23,4&nbsp;°C, tendo invernos secos e [[Verão|verões]] chuvosos com [[temperatura]]s altas. O mês mais quente, janeiro, conta com temperatura média de 24,9&nbsp;°C, sendo a média máxima de 32,7&nbsp;°C e a mínima de 23,6&nbsp;°C. E o mês mais frio, julho, de 25,4&nbsp;°C, sendo 27,1&nbsp;°C e 16,7&nbsp;°C a média máxima e mínima, respectivamente. [[Outono]] e [[primavera]] são estações de transição.<ref name="tempoagora.com.br">{{citar web | url =http://www.tempoagora.com.br/previsaodotempo.html/brasil/climatologia/NovaIguacu-RJ/ | titulo =Climatologia em Nova Iguaçu |publicado=''Tempo Agora'' |acessodata=11 de fevereiro de 2013}}</ref><ref>{{citar web | url =http://www.rio2016.com/pregamestraining/sites/default/files/nova_iguacu_pt_1.pdf| titulo =Dados climáticos -Nova Iguaçu |publicado=INMET | editora=| lingua = |acessodata=11 de fevereiro de 2013}}</ref>
+
+A precipitação média anual é de 2105,0 [[Milímetro|mm]], sendo julho o mês mais seco, quando ocorrem apenas 41,7mm distribuídos em 9 dias. Em janeiro, o mês mais chuvoso, a média fica em 233,1mm, em 18 dias de chuva.<ref name="tempoagora.com.br"/><ref name="Não_nomeado-y8_q-1">{{citar web | url =http://www.rio2016.com/pregamestraining/sites/default/files/nova_iguacu_pt_1.pdf| titulo =Dados climáticos - Nova Iguaçu |publicado=INMET |acessodata=11 de fevereiro de 2013}}</ref> Nos últimos anos, os dias de verão em Nova Iguaçu têm sido cada vez mais quentes, com temperaturas não raro beirando a casa dos 40&nbsp;°C.<ref>{{citar web | url =http://noticias.r7.com/rio-de-janeiro/noticias/com-calor-de-40-c-moradores-do-rio-sofrem-com-falta-d-agua-20121208.html|titulo =Com calor de 40°C, falta de luz deixa Rio e Baixada Fluminense sem água |publicado=[[R7]] |data=8 de dezembro de 2012 |acessodata=20 de setembro de 2016}}</ref> Durante o verão, são comuns dias com elevadas temperaturas e intensa [[evapotranspiração]], provocando intensas chuvas ao fim do tarde. Tais condições, aliadas a outros fatores, possibilitaram a ocorrência de um fenômeno meteorológico extremo: em 19 de janeiro de 2011, um [[tornado]] atingiu a região sudoeste do município, provocando estragos e prejuízo. Em locais como a Rua Flor de Maio, no bairro Lagoinha, muitos moradores tiveram suas casas destelhadas pela ventania. As instalações elétricas foram arrebentadas e árvores derrubadas. Algumas casas ficaram sem energia elétrica por mais de 10 horas.<ref name="Bom Dia Brasil">{{citar web | url =http://g1.globo.com/bom-dia-brasil/noticia/2011/01/tornado-causa-destruicao-em-nova-iguacu-no-rio-de-janeiro.html|titulo =Tornado causa destruição em Nova Iguaçu, no Rio de Janeiro|publicado=G1 (20 de janeiro de 2011)|acessodata=11 de fevereiro de 2013}}</ref><ref name="O Globo">{{citar web | url =http://oglobo.globo.com/rio/tornado-causa-estragos-em-nova-iguacu-2834342| titulo =Tornado causa estragos em Nova Iguaçu|publicado=O Globo (20 de janeiro de 2011)|acessodata=11 de fevereiro de 2013}}</ref><ref name="Extra online">{{citar web | url =http://extra.globo.com/noticias/rio/tornado-atinge-estado-do-rio-pela-primeira-vez-905420.html| titulo =Tornado atinge o Estado do Rio pela primeira vez|publicado=Extra online (21 de janeiro de 2011)|acessodata=11 de fevereiro de 2013}}</ref>
+
+A temperatura mínima na cidade pode atingir 9ºC, nos meses de Maio a Agosto.<ref name="Não_nomeado-y8_q-1"/> Levando-se em conta o [[gradiente térmico]], que estabelece a variação de 0,65&nbsp;°C para cada 100 metros de [[altitude]],<ref>{{citar web|url=http://www.infoaviacao.com/2012/04/temperatura-do-ar.html|titulo=Temperatura do Ar|publicado=Info Aviação|data=|acessodata=3 de abril de 2017|arquivourl=https://web.archive.org/web/20170404042933/http://www.infoaviacao.com/2012/04/temperatura-do-ar.html|arquivodata=2017-04-04|urlmorta=yes}}</ref> é possível que, nas partes mais altas do município (notadamente a [[Serra do Tinguá]], cuja altitude máxima é cerca de 1600 metros) a temperatura seja cerca de 10&nbsp;°C mais baixa que na sede. A Serra do Vulcão de Nova Iguaçu também se destaca com temperaturas amenas, com média de 9ºC em dias de ondas de frio mais intensas na região. Pela existência de bairros mais próximos da Serra do Vulcão, como Bairro da Luz, Jardim Alvorada, Valverde e Cabuçu, estes bairros tendem a ser mais frios nestas épocas do ano, devido a proximidade com a Serra do Vulcão.
+
+{{Tabela climática de Nova Iguaçu}}
+
+=== Localização ===
+A cidade de Nova Iguaçu apresenta-se geograficamente limitada pelos seguintes municípios: [[Rio de Janeiro]], a sul; [[Mesquita (Rio de Janeiro)|Mesquita]], a sudeste; [[Belford Roxo]], a leste; [[Duque de Caxias]], a nordeste; [[Miguel Pereira]], a norte; [[Japeri]], a noroeste; [[Queimados]], a oeste; e [[Seropédica]], a sudoeste. Longitudinalmente, apresenta uma extensão máxima de 36,33&nbsp;km e 31,28&nbsp;km de extensão máxima transversal, perfazendo uma área de 524,5&nbsp;km², que a torna o maior município da [[Baixada Fluminense]].
+
+O município situa-se na região mais importante, econômica e financeiramente, do estado do [[Rio de Janeiro (estado)|Rio de Janeiro]], a denominada Região Metropolitana, da qual fazem parte, além de Nova Iguaçu, os municípios de Belford Roxo, Duque de Caxias, [[Guapimirim]], [[Itaboraí]], [[Itaguaí]], Japeri, [[Magé]], [[Mangaratiba]], [[Maricá]], [[Mesquita]], [[Nilópolis]], [[Niterói]], [[Paracambi]], Queimados, Rio de Janeiro, [[São João de Meriti]], [[São Gonçalo (Rio de Janeiro)|São Gonçalo]], Seropédica, [[Tanguá]], Rio Bonito, Cachoeiras de Macacu e Petrópolis.
+
+Em virtude de seu posicionamento geográfico, a cidade desempenha o papel de centro de negócios e de comércio para os municípios vizinhos, situados a oeste da [[Baía de Guanabara]].
+
+A cidade de Nova Iguaçu situa-se a 35&nbsp;km da Cidade do Rio de Janeiro, como demonstra o marco quilométrico instalado na estação ferroviária da antiga Estrada de Ferro Central do Brasil. O diagrama seguinte representa os [[município]]s periféricos a Nova Iguaçu, num [[raio (geometria)|raio]] de 40&nbsp;km. As distâncias são em linha reta.
+
+<div style="position: relative; float:left; width:500px;">
+
+[[Ficheiro:Blank map.svg|400px|esquerda|Localidades na vizinhança.]]
+
+{{Image label|x=0.5|y=0.5|scale=400|text=[[Ficheiro:Map pointer black.svg|20px|Nova Iguaçu.]]'''Nova Iguaçu'''}}
+
+{{Image label|x=0.5635|y=0.50525|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 480555 habitantes (2007).]]<small>[[Belford Roxo]] (5 km)</small>}}
+
+{{Image label|x=0.52425|y=0.5305|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 187949 habitantes (2007).]]<small>[[Mesquita (Rio de Janeiro)|Mesquita]] (3 km)</small>}}
+
+{{Image label|x=0.544125|y=0.566625|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 159000 habitantes (2007).]]<small>[[Nilópolis]] (6 km)</small>}}
+
+{{Image label|x=0.59725|y=0.56|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 464282 habitantes (2007).]]<small>[[São João de Meriti|S. J. Meriti]] (9 km)</small>}}
+
+{{Image label|x=0.67375|y=0.53675|scale=400|text=[[Ficheiro:Small-city-symbol.svg|18px|Localidades com 842686 habitantes (2007).]]<small>[[Duque de Caxias]] (14 km)</small>}}
+
+{{Image label|x=0.36385|y=0.439375|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 130275 habitantes (2007).]]<small>[[Queimados]] (12 km)</small>}}
+
+{{Image label|x=0.82825|y=0.698875|scale=400|text=[[Ficheiro:Dot-yellow.svg|20px|Localidades com 6161047 habitantes (200).]]<small>[[Rio de Janeiro]] (31 km)</small>}}
+
+{{Image label|x=0.9415|y=0.66825|scale=400|text=[[Ficheiro:Small-city-symbol.svg|18px|Localidades com 474000 habitantes (20007).]]<small>[[Niterói]] (38 km)</small>}}
+
+{{Image label|x=0.170875|y=0.47375|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 72466 habitantes (2000).]]<small>[[Seropédica]] (26 km)</small>}}
+
+{{Image label|x=0.083125|y=0.625|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 103515 habitantes (2007).]]<small>[[Itaguaí]] (35 km)</small>}}
+
+{{Image label|x=0.23775|y=0.337875|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 93200 habitantes (2000).]]<small>[[Japeri]] (25 km)</small>}}
+
+{{Image label|x=0.1625|y=0.294|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 44629 habitantes (2007).]]<small>[[Paracambi]] (31 km)</small>}}
+
+{{Image label|x=0.198625|y=0.213625|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 13127 habitantes (2000).]]<small>[[Engenheiro Paulo de Frontin]] (33 km)</small>}}
+
+{{Image label|x=0.49735|y=0.09325|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 24585 habitantes (2007).]]<small>[[Miguel Pereira]] (33 km)</small>}}
+
+{{Image label|x=0.533|y=0.04|scale=400|text=[[Ficheiro:Small-city-symbol.svg|15px|Localidades com 26100 habitantes (2007).]]<small>[[Paty do Alferes]] (38 km)</small>}}
+
+{{Image label|x=0.833125|y=0.147125|scale=400|text=[[Ficheiro:Small-city-symbol.svg|18px|Localidades com 306465 habitantes (2007).]]<small>[[Petrópolis]] (39 km)</small>}}
+
+</div>{{limpar|left}}
+
+Nota-se a grande proximidade dos centros dos municípios de [[Mesquita (Rio de Janeiro)|Mesquita]], [[Belford Roxo]], [[Nilópolis]], [[São João de Meriti]] e [[Duque de Caxias]] a Nova Iguaçu.
+
+=== Geologia ===
+
+A [[geologia]] de Nova Iguaçu está representada por três grandes grupos de rochas, de origem, composição e idades diferenciadas.
+
+;Formação sedimentar
+
+São terras formadas por sedimentos inconsolidados com idade inferior a 2 milhões de anos responsáveis pela cobertura [[rocha sedimentar|sedimentar]]. Os locais planos e os sopés dos [[maciço]]s e [[morro|colinas]] são formados por esse tipo de cobertura.
+
+Constituem as planícies e as terras baixas da [[Posse (Nova Iguaçu)|Posse]], [[Comendador Soares]], Cabuçu, [[Paraíso (Nova Iguaçu)|Jardim Paraíso]] e km 32, além de áreas isoladas, como as terras pantanosas do noroeste de Campo Alegre, as margens do rio Iguaçu em [[Geneciano]] e a planície de [[Iguaçu Velho]].
+
+;Formação de rochas ígneas alcalinas
+
+A maioria do maciço [[Gericinó]]-[[Serra do Mendanha|Mendanha]], situa-se na porção meridional do [[município]] de Nova Iguaçu, comprimento aproximado de 15&nbsp;km, largura de 5&nbsp;km e altura relativa de 900 m, sobressaindo da planície da [[Baixada Fluminense]] com altitude em torno de 30&nbsp;m onde a cidade de Nova Iguaçu está presente. Este maciço é constituído principalmente por [[nefelina sienito]] e [[sienito|álcali sienito]]. Essas rochas são originado de resfriamento de magma, denominadas [[rochas ígneas]], e são compostas de [[minerais|mineral]] de tamanho grande, sendo identificável a olho nu, chamadas de [[rocha plutônica|rochas plutônicas]], com aparência visual similar de [[granito]]. Essas rochas formam um corpo [[intrusão|intrusivo]] de tamanho quilométrico, que formava uma câmara magmática que se situava em 3 a 4&nbsp;km de profundidade. O tamanho milimétrico dos minerais indica que o resfriamento lento do magma ocorreu em localidades subterrâneas com uma grande profundidade. Nefelina sienito é constituído por [[feldspato alcalino]], [[nefelina]], [[clinopiroxênio]], [[anfibólio]] e [[biotita]]. Esta é classificada como uma rocha alcalina de strict-sensu devido à existência de nefelina. Nefelina sienito é extraída como uma [[rocha ornamental]] no pico do [[Marapicu]], na borda oeste do maciço Mendanha, com nome comercial de Granito Cinza Ás de Paus. Álcali sienito é composto de minerais similares porém não contem nefelina. Ocorrem também [[traquito]] como corpos intrusivos pequenos tal como [[dique]]s. Esta rocha é constituída por feldspato alcalino, clinopiroxênio e anfibólio. Álcali sienito e traquito são extraídos na margem nordeste do maciço Mendanha como matéria prima para a brita de excelente qualidade química e física, que possibilita longevidade das construções civis, sendo um raro exemplo do mundo.
+
+Os minerais constituintes de traquito são pequenos, sendo invisíveis a olho nu, indicando resfriamento rápido. Em algumas localidades isoladas, encontra-se [[brecha]]s vulcânicas que constituem condutos subvulcânicos. Conforme às [[Datação absoluta|datações]] Ar-Ar pelo método laser-spot, a idade da intrusão e do resfriamento do [[magma]] ocorreu em 59 a 67 milhões de anos, mais provavelmente em torno de 60 milhões de anos, o que corresponde ao Eo[[cenozóico]], o período logo após a extinção de dinossauros.
+
+A brecha vulcânica e traquito eram interpretadas como rochas formadas por [[extrusão]] magmática na superfície da Terra, sendo formadoras de um [[vulcão]] extinto com suposta presença de [[cratera]], denominado "[[Vulcão de Nova Iguaçu]]". A hipótese do Vulcão de Nova Iguaçu foi comentado frequentemente na imprensa e programas de televisão, tais como [[Folha de S.Paulo]] e [[TV Globo]], porém não havia [[Artigo científico|artigos]] completos publicados em [[periódicos]] científicos. Por outro lado, as pesquisas científicas no Século XXI demonstraram os dados científicos incompatíveis à hipótese do [[vulcão extinto]], esclarecendo geologicamente a inexistência da [[lava]], o [[fluxo piroclástico]] e a [[bomba]] vulcânica, que eram comentados em [[palestra]]s e [[discurso]]s. As pesquisas [[geomorfologia|geomorfológicas]] com base na técnica de [[seppômen]] comprovaram a inexistência da cratera e o [[cone]] vulcânico.<ref>{{Citar web |título=Reavaliação genética do modelo do Vulcão de Nova Iguaçu, RJ: origem eruptiva ou intrusão subvulcânica? |último1=Motoki |primeiro1=Akihisa |último2=Soares |primeiro2=Rodrigo |último3=Netto |primeiro3=Ana Maria |último4=Sichel |primeiro4=Susanna Eleonora |último5=Aires |primeiro5=José Ribeiro |último6=Lobato |primeiro6=Marcela |obra=scielo.br |data= |acessodata=23 de julho de 2024 |url= https://www.scielo.br/j/rem/a/PNVBdDPYQKmLsg4BKSrr7Qm/?format=pdf&lang=pt}}</ref><ref>{{Citar web |título=Feições intempéricas em rochas alcalinas félsicas de Nova Iguaçu, RJ |último1=Motoki |primeiro1=Akihisa |último2=Soares |primeiro2=Rodrigo |último3=Sichel |primeiro3=Susanna Eleonora |último4=Aires |primeiro4=José Ribeiro |último5=Lobato |primeiro5=Marcela |obra=scielo.br |data= |acessodata=23 de julho de 2024 |url= https://www.scielo.br/j/rem/a/cZmqZD6jzzBJZgTyPSCRC4f/?format=pdf&lang=pt }}</ref>
+
+De fato, houve atividades vulcânicas nesta região, porém o vulcão antigo da era dos dinossauros foi eliminado completamente por intensa [[erosão]] tropical. A superfície da Terra naquele tempo corresponde a cerca de 3000 a 4000 m de altitude atual e a exposição geológica atual corresponde à estrutura subvulcânica por 3 a 4&nbsp;km de profundidade da época do magmatismo. O corpo intrusivo de rochas sieníticas constituía uma câmara magmática abaixo da área vulcânica daquele tempo e, portanto hoje em dia não existe mais o edifício vulcânico.<ref name="vulcão">{{citar web|url=http://vulcaodenovaiguacu.tripod.com|título=Vulcão de Nova Iguaçu}}</ref> Entretanto, fora das comunidades acadêmicas e científicas, o mito do vulcão ainda continua.
+
+=== Vegetação ===
+
+{| class="wikitable" style="float: right; margin: 1em 1em 1em 1em"
+!Classe de uso do solo ||% ||Área
+|-align="right"
+|align="left"|[[Mata Atlântica|Floresta ombrófila densa]] ||32,88% ||175,5&nbsp;km²
+|-align="right"
+|align="left"|Área urbana ||30,66% ||163,4&nbsp;km²
+|-align="right"
+|align="left"|Pastagens (campos) ||19,85% ||105,7&nbsp;km²
+|-align="right"
+|align="left"|Vegetação secundária ||7,36% ||39,2&nbsp;km²
+|-align="right"
+|align="left"|Área degradada ||4,52% ||24,0&nbsp;km²
+|-align="right"
+|align="left"|Área rural ||2,94% ||15,6&nbsp;km²
+|-align="right"
+|align="left"|Formação pioneira ||1,27% ||6,8&nbsp;km²
+|-align="right"
+|align="left"|Corpos d'água ||0,52% ||2,7&nbsp;km²
+|-align="right"
+|align="left"|Total ||100% ||532,9&nbsp;km²
+|}
+
+Em Nova Iguaçu, cerca de 40 por cento da área total da cidade encontra-se coberta por [[vegetação|formações vegetais]] significativas (vegetações primárias, secundárias ou pioneiras). Desse total, 32,88 por cento correspondem à cobertura original da [[Mata Atlântica]], um dos mais ricos [[ecossistema]]s do planeta. Cerca de 30 por cento está comprometido com o uso urbano e o restante corresponde à atividade agrícola (2,94 por cento) e as áreas de campo e pastagem, ou seja, as áreas onde a vegetação natural ou primitiva foi substituída para práticas de [[agricultura]] ou para o [[pecuária|criatório]]. Uma pequena parcela da superfície total do município corresponde a [[pântano|áreas sujeitas a inundações]] e áreas degradadas.
+
+=== Hidrografia ===
+
+Nova Iguaçu conta com diversos [[rio]]s, [[córrego]]s e [[canal|canais]] que constituem as bacias dos rios [[Rio Iguaçu (Nova Iguaçu)|Iguaçu]] e [[Sarapuí]] (que, regionalmente, integram a bacia da [[Baía de Guanabara]]) e a do [[rio Guandu]] (que integra a bacia da [[Baía de Sepetiba]]).
+
+A bacia do rio Guandu abrange os rios [[Rio Santana (Guandu)|Santana]], [[Rio São Pedro (Nova Iguaçu)|São Pedro]], [[Rio Santo Antônio (Nova Iguaçu)|Santo Antônio]], [[Rio D'Ouro (Nova Iguaçu)|d'Ouro]], [[Rio Sarapó|Sarapó]], [[Rio Ipiranga (Nova Iguaçu)|Ipiranga]], [[Rio Cabuçu (Nova Iguaçu)|Cabuçu]], [[Rio Cabenga|Cabenga]] e [[Rio Guandu-Mirim|Guandumirim]].
+
+A bacia do rio Iguaçu abrange os rios [[Rio Paiol|Paiol]], [[Rio das Velhas (Nova Iguaçu)|das Velhas]], [[Rio Botas|Botas]], [[Canal AnaFelícia|Ana Felícia]], [[Rio Tinguá|Tinguá]], [[Rio Barreiras|Barreiras]], [[Rio Boa Esperança (Nova Iguaçu)|Boa Esperança]] e [[Rio Adrianino|Adrianino]].
+
+A bacia do rio Sarapuí é constituída pelos rios [[Rio Maxambomba|Maxambomba]], [[Rio da Prata (Nova Iguaçu)|da Prata]] e [[Rio Dona Eugênia|Dona Eugênia]].
+
+A partir de 2008, teve início o Projeto Iguaçu, que vem revitalizando, desassoreando e construindo áreas de lazer ao longo dos rios de Nova Iguaçu e redondezas, com o objetivo de evitar enchentes, queda de barreiras e construções nas margens dos rios.
+
+=== Unidades de conservação da natureza ===
+{{commonscat|Tinguá|Tinguá}}
+
+Diversos tipos de Unidades de Conservação da Natureza foram instituídos em Nova Iguaçu, correspondendo a correspondem a 50 por cento{{Carece de fontes|data=Dezembro de 2008}} da área total da cidade.
+
+Na porção sul do município, localiza-se a área de proteção ambiental (APA) do ''Mendanha'', unidade de uso sustentável administrada pelo Governo Estadual. Dentro dessa APA, encontra-se o [[Parque Municipal de Nova Iguaçu]], unidade de proteção integral instituída pelo Poder Público Municipal.
+
+Ao norte, encontramos a [[Reserva Biológica Federal do Tinguá]], unidade de proteção integral instituída pelo Governo Federal. Margeando essa reserva, encontramos as Áreas de Proteção Ambiental de [[Jaceruba]], Rio d'Ouro e Tinguá, todas instituídas por leis municipais.
+
+Outras quatro áreas de proteção ambiental municipais são: Guanduaçu, Morro Agudo, Tinguazinho e Retiro, localizadas, respectivamente, nas porções sudoeste, noroeste e nordeste do município.
+
+Sua área verde, com diversas opções de ecoturismo lhe garantiu o apelido de "Capital dos esportes de aventura".<ref>{{Citar periódico|titulo=Nova Iguaçu: capital dos esportes de aventura|url=https://extra.globo.com/noticias/eu-sou-nova-iguacu/nova-iguacu-capital-dos-esportes-de-aventura-22659823.html|jornal=Extra Online|lingua=pt-BR}}</ref>
+
+== Demografia ==
+
+{{Crescimento populacional do Censo do Brasil
+| 1872 =26351
+| 1890 =104026
+| 1900 =113611
+| 1920 =132750
+| 1940 =153564
+| 1950 =253577
+| 1960 =360823
+| 1970 = 727140
+| 1980 = 1094805
+| 1991 = 1286337
+| 2000 = 915366
+| 2010 = 796257
+| 2015 = 
+| rodape   =Fonte: População do Estado do <br>Rio de Janeiro - Censo 2010<ref name="ibge.gov.br">{{citar web|url=http://www.ibge.gov.br/home/presidencia/noticias/noticia_impressao.php?id_noticia=2204|título=População do Estado do Rio de Janeiro - Censo 2010|autor=IBGE|data=|publicado=IBGE (31 de agosto de 2012)|acessodata=12 de fevereiro de 2013}}</ref> e <br> População do Estado do Rio de <br>Janeiro - Censos de 2010, 2000 e 1991<ref>{{citar web|url=http://noticias.uol.com.br/censo-2010/populacao/rj|título=População do Estado do Rio de Janeiro - Censos de 2022, 2010, 2000 e 1991|autor=IBGE|data=|publicado=UOL Censo 2010|acessodata=12 de fevereiro de 2013}}</ref>
+|2022=785867|2024=843046|ref_est=|ano_est=2025|estimado=843220}}
+
+Em 2022, a população do município foi contada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) em 785.867 habitantes, sendo o [[Lista de municípios do Rio de Janeiro por população|quarto mais populoso do estado]] e também da [[Região Metropolitana do Rio de Janeiro]], apresentando uma [[densidade populacional]] de 1509,6 habitantes por km².<ref name="http">{{citar web|url=https://censo2022.ibge.gov.br/panorama/|título=População do Estado do Rio de Janeiro - Censo 2022|data=|acessodata=20 de agosto de 2023|publicado=IBGE|autor=IBGE}}</ref> Segundo o [[Censo demográfico do Brasil de 2022|Censo 2022]], {{fmtn|373517}} habitantes eram homens e {{fmtn|412350}} habitantes mulheres. Ainda segundo o Censo 2010, {{fmtn|786536}} habitantes viviam na [[zona urbana]] e {{fmtn|8676}} na [[zona rural]]..<ref name="http"/> Já segundo estatísticas divulgadas em 2015, a população municipal era de {{fmtn|807492}} habitantes.<ref name="ibge.gov.br"/>
+
+O [[Índice de Desenvolvimento Humano]] Municipal (IDH-M) de Nova Iguaçu é considerado médio pelo Programa das Nações Unidas para o Desenvolvimento ([[Programa das Nações Unidas para o Desenvolvimento|PNUD]]). Seu valor é de 0,762, sendo o [[Lista de municípios do Rio de Janeiro por IDH|45º maior de todo o estado do Rio de Janeiro]] (em 92 municípios).<ref>{{citar web|url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm|título=Índice de Desenvolvimento Humano de todos os municípios do Brasil|autor=PNUD|data=|publicado=PNUD|acessodata=12 de fevereiro de 2013}}</ref>
+
+=== Composição étnica e religiosa ===
+No censo de [[Censo demográfico do Brasil de 2022|2022]], a população de Nova Iguaçu era formada por 255 892 [[brancos]] (32,60%), 145 899 [[pretos]] (18,60%), 382 631 [[pardos]] (47,70%) e 563 [[indígenas]] (0,09%).<ref>{{Citar web |título=IBGE {{!}} Cidades@ {{!}} Rio de Janeiro {{!}} Nova Iguaçu {{!}} Pesquisa {{!}} Censo 2022 {{!}} Território |obra=cidades.ibge.gov.br |acessodata=23 de julho de 2024 |url= https://cidades.ibge.gov.br/brasil/rj/nova-iguacu/pesquisa/10102/122229}}</ref> O censo de 2010 também revelou-se que a composição religiosa da população de Nova Iguaçu era formada por: 294 099 [[Protestantismo|evangélicos]] (36,94%), 263 499 [[Catolicismo romano|católicos]] (33,09%), 141 [[A Igreja de Jesus Cristo dos Santos dos Últimos Dias|mórmons]] (0,02%), 92 [[Judaísmo|judeus]] (0,01%), 7123 [[testemunhas de Jeová]] (0,89%), 20 914 [[Espiritismo|espíritas]] (2,63%), 7 302 seguem a [[Religiões de matriz africana|umbanda ou candomblé]] (0,92%), 168 600 [[Irreligião|não possuem nenhuma afiliação religiosa]] (21,17%) e 33 442 (4,33%) seguem outras crenças ou não respondeu. Neste mesmo censo foi registrado um crescimento das [[Protestantismo|igrejas protestantes e evangélicas]] de quase 8 pontos percentuais, enquanto que a [[Igreja Católica Romana|igreja católica]] registrou uma queda de 10 pontos percentuais, em Nova Iguaçu, assim como na [[Baixada Fluminense]] a maioria da população é evangélica/protestante e esse número só tende a crescer.<ref>{{citar web|url=https://extra.globo.com/noticias/rio/baixada-fluminense |título= maioria-da-populacao-da-baixada-de-evangelicos-seropedica-lidera-ranking-5531876.html}}</ref>
+
+=== Subdivisões ===
+[[Ficheiro:Bairros de Nova Iguaçu em mapa.png|miniaturadaimagem|Abairramento de Nova Iguaçu]]
+{{Artigo principal|[[Lista de bairros de Nova Iguaçu]]}}
+
+Em 1997, o município de Nova Iguaçu passou a denominar-se Cidade de Nova Iguaçu, pela Lei Complementar 6, e foi dividido administrativamente em nove Unidades Regionais de Governo, cada uma delas, por sua vez, divididas em bairros.
+
+As unidades foram criadas para oferecer os serviços ordinários à população, descentralizando, assim, alguns serviços rotineiros realizados apenas no [[Centro (Nova Iguaçu)|Centro]] da cidade. Os [[bairro]]s, por sua vez, são oficialmente as menores unidades administrativas da cidade, porém cada bairro conta com diversos sub-bairros, vilas, lugarejos e povoados, o que pode levar a uma nova organização política dentro de poucos anos. A atual relação de bairros de Nova Iguaçu foi definida pela Leis 2.952, de 17 de dezembro de 1998, e pelo Decreto 6.083, de 12 de janeiro de 1999.
+
+A divisão política oficial da cidade leva em conta tanto características histórico-culturais dos diferentes bairros de Nova Iguaçu como fatores de ordem prática ou natural (como a divisão de duas URGs em uma avenida importante ou um rio, por exemplo). O atual Plano Diretor, Lei Municipal 4 092, de 28 de junho de 2011, prevê que o Poder Executivo, após 180 dias, revise a delimitação dos bairros e  unidades regionais de governo da cidade, promovendo discussões em todos os bairros com a sociedade civil. Prevê, ainda, a realização de audiências públicas para a discussão do projeto de lei a ser enviado à Câmara de Vereadores.
+
+A zona de preservação ambiental da Reserva Biológica do Tinguá e a Área de Proteção Ambiental do Mendanha (Parque Municipal de Nova Iguaçu) são áreas não abairráveis. Em 2004 foram criadas mais oito (08) novas unidades de conservação municipais, somando assim dez Áreas de Proteção Ambiental. São as APAs [[Rio D'Ouro]], [[Guandu-Açu]], [[Tinguazinho]], Retiro, [[Serra do Mendanha|Mendanha]], [[Tinguá]], [[Maxambomba]], [[Jaceruba]] e [[Morro Agudo]].
+
+== Política ==
+* Número de eleitores: 617.000 / Zonas 6 / Seções 557 (dados da eleição de 2024)<ref>{{Citar web|url=https://www.tse.jus.br/eleicoes/estatisticas/estatisticas-de-eleitorado/consulta-por-municipio-zona|titulo=Estatísticas do eleitorado – Consulta por município/zona eleitoral|acessodata=2026-01-04|website=Justiça Eleitoral|lingua=pt-br}}</ref>
+
+=== Câmara municipal ===
+A Câmara de Vereadores de Nova Iguaçu foi instalada em 29 de julho de 1833, com a posse dos primeiros [[vereador]]es. O primeiro presidente foi [[Inácio Antônio de Sousa Amaral]]. Até a criação da Prefeitura, pouco mais de 86 anos depois, a Câmara de Vereadores acumulou os poderes [[Legislativo]] e [[Executivo]].
+
+Entre 1891 e 1908, a Câmara de Vereadores (Paço Municipal) não teve sede. Em 1908, foi inaugurado um edifício na avenida Marechal Floriano, onde a Câmara funcionou junto com o Paço da Intendência Municipal (onde ficava o gabinete do Intendente Geral) até a criação da prefeitura, que assumiu o [[poder executivo]] municipal (até então nas mãos do Intendente, que era o presidente da Câmara) e também passou a utilizar o prédio.
+[[Ficheiro:Official logo of Nova Iguaçu (2024).png|esquerda|miniaturadaimagem|Logomarca da Prefeitura de Nova Iguaçu na gestão de ([[Rogerio Lisboa|Rogério Lisboa]] e atual Dudu Reina)]]
+Com a criação da Prefeitura de Nova Iguaçu, em 26 de novembro de 1919, a Câmara dos Vereadores passou a ser responsável apenas pelo [[poder legislativo]] municipal. Contudo, as primeiras eleições para prefeito ocorreram apenas em 9 de julho de 1922.
+A [[Revolução de 1930]] fez com que o Congresso Nacional fosse dissolvido e as Assembleias dos Estados e Câmaras de Vereadores fossem fechadas. A Câmara de Vereadores de Nova Iguaçu ficou em recesso até 1935. Porém, o retorno aos trabalhos foi curto, pois em 10 de novembro de 1937, o [[Estado Novo (Brasil)|Estado Novo]] de [[Getúlio Vargas]] fez com que as Câmaras fossem fechadas novamente. A de Nova Iguaçu voltou a funcionar apenas em 1947, após as eleições municipais de 28 de setembro daquele ano.
+
+Após o longo recesso, a Câmara de Vereadores precisou mudar de endereço, pois a Prefeitura não aceitou continuar compartilhando o prédio. A Câmara passou a funcionar em um sobrado também na avenida Marechal Floriano. Esse novo endereço permaneceu o mesmo até 1959.
+
+O prédio original da Câmara (fundado em 1908), foi demolido nos [[década de 1960|anos 60]], durante a [[ditadura militar]], pelo prefeito de então, que pretendia construir o "Palácio da Municipalidade". Contudo, por motivos diversos, o "Palácio" não foi construído e o local acabou sendo transformado em estacionamento tempos depois. Em 11 de julho de 1959 foram inauguradas as instalações da Câmara de Vereadores, na Travessa Rosinda Martins, 71, 3º andar. Em 16 de abril de 2010 o legislativo municipal ganhou uma nova sede na Rua Prefeito João Luiz do Nascimento, 38. O novo prédio conta com quatro andares e gabinete para os 17 vereadores, um avanço em relação ao anterior que possuía somente oito gabinetes. Além disso, a nova sede conta com melhor acessibilidade para pessoas idosas e portadoras de necessidades especiais, permitindo fácil acesso ao povo para acompanhamento das sessões.
+
+O último recesso imposto à Câmara de Vereadores foi em 8 de maio de 1969, sob o Ato Complementar nº 53, do governo militar. A Câmara voltou às suas atividades no ano seguinte, em 15 de julho de 1970. Atualmente, a Câmara de Nova Iguaçu conta com 23 vereadores.<ref>{{Citar web|url=https://g1.globo.com/rj/rio-de-janeiro/eleicoes/2024/noticia/2024/12/31/prefeito-de-nova-iguacu-rj-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|titulo=Prefeito de Nova Iguaçu (RJ) toma posse nesta quarta (1º); veja lista de vereadores eleitos {{!}} Eleições 2024 no Rio de Janeiro|data=2024-12-31|acessodata=2025-01-01|website=G1|lingua=pt-br}}</ref>
+
+=== Prefeitura ===
+{{Artigo principal|[[Lista de prefeitos de Nova Iguaçu]]}}
+
+[[Ficheiro:Novaiguacu prefeitura.jpg|thumb|211x211px|Sede da Prefeitura de Nova Iguaçu.]]
+
+A Prefeitura foi criada em 26 de novembro de 1919, através do Decreto 1 716. Com isso, a Câmara de Vereadores passaria a cuidar apenas das funções [[Legislativo|legislativas]] (até então, também era responsável pelo [[Executivo]]).
+
+O então presidente (governador) do estado do [[Rio de Janeiro (estado)|Rio de Janeiro]], [[Raul de Morais Veiga]], nomeou [[Mário Pinotti]] como prefeito de Nova Iguaçu, contudo os vereadores consideraram a criação da Prefeitura um desrespeito à autonomia municipal.
+
+O presidente da Câmara de Vereadores, [[Ernesto França Soares]], entrou na justiça e, através de um ''habeas corpus'', assumiu o cargo de prefeito em 26 de maio de 1920. As primeiras eleições para prefeito ocorreram apenas em 9 de julho de 1922, sendo eleito o médico [[Manoel Francisco Salles Teixeira]] (tomou posse em 22 de novembro de 1922).
+
+A atual sede da prefeitura foi construída durante o governo de [[João Ruy de Queiroz Pinheiro]], no final da [[década de 1970]] e inaugurada no início dos anos 1980, como atesta o marco de inauguração fixado em seu hall de entrada.
+
+== Economia ==
+
+Nova Iguaçu é a segunda maior economia da Baixada Fluminense. Em 2023, a cidade possuía um PIB de R$ 20 518 623,98 mil, de acordo com o IBGE.<ref name="IBGE_PIB_2016">{{citar web |url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=destaques&c=3303500 |título=Produto Interno Bruto dos Municípios - 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=5 de janeiro de 2019 |arquivourl=https://archive.today/20181206200946/https://cidades.ibge.gov.br/brasil/rj/nova-iguacu/pesquisa/38/46996 |arquivodata=2018-12-06 |urlmorta=no }}</ref><ref>{{Citar periódico |url=https://pt.wikipedia.org/w/index.php?title=Lista_de_munic%C3%ADpios_do_Brasil_por_PIB&oldid=71436099 |título=Lista de municípios do Brasil por PIB |data=2025-12-27 |acessodata=2026-01-04 |periódico=Wikipédia, a enciclopédia livre |lingua=pt}}</ref>
+
+[[File:Calçadão comercial de Nova Iguaçu.jpg | thumb|300x300px| right | Calçadão de Nova Iguaçu, um dos maiores centros comerciais a céu aberto do estado do Rio de Janeiro.]]
+
+=== Comércio e serviços ===
+
+A principal fonte de arrecadação do município é sem dúvidas o comércio e os serviços, possuindo um dos centros comerciais mais importante do estado, contando com as principais lojas e serviços do país.
+
+Nova Iguaçu conta com grande infraestrutura comercial além do Centro, nos bairros de Jardim Alvorada, Califórnia, Miguel Couto, Cabuçu, Km 32, Comendador Soares, Austin, Posse, Cerâmica e Rancho Novo.
+
+=== Indústria ===
+
+A indústria na cidade tem uma grande relevância econômica. A cidade conta com indústrias nos ramos alimentício, de siderurgia e de cosméticos.
+
+Além dos setores já mencionados, Nova Iguaçu também se destaca no segmento de química fina, com empresas especializadas na produção de produtos químicos industriais, que têm papel crucial na [[cadeia de suprimentos]] de diversos outros setores industriais. Destaca-se, igualmente, a presença de indústrias de [[material de construção]], que apoiam o crescimento urbano e a infraestrutura local, contribuindo significativamente para a economia do [[Rio de Janeiro (estado)|estado do Rio de Janeiro]]. A cidade, por sua estratégica posição geográfica próxima a grandes centros como o [[Rio de Janeiro (cidade)|Rio de Janeiro]], beneficia-se de acessos facilitados, como os proporcionados pela [[Rodovia Presidente Dutra|Via Dutra]], potencializando sua capacidade de distribuição e logística.<ref>{{Citar web|url=https://www.encontranovaiguacu.com.br/|titulo=Nova Iguaçu - Guia do cidade Nova Iguaçu -RJ Aqui você Encontra !|acessodata=2025-03-13|website=www.encontranovaiguacu.com.br|lingua=pt-br}}</ref>
+
+=== Agricultura ===
+
+O plantio de café e a agricultura em geral em Tinguá e áreas próprias na cidade de Nova Iguaçu estão sendo retomados por projetos e iniciativas iguais a do líder político iguaçuano [[Luis Carlos Magalhães]], que, no dia 6 de agosto de 2005, apresentou projeto para reativar a agricultura em grande escala no município de Nova Iguaçu.
+
+O projeto foi apresentado na segunda conferência das cidades, realizada na [[Universidade Federal Rural do Rio de Janeiro]], em Seropédica.
+
+Dentro do projeto, além da reativação da agricultura em áreas não povoadas e abandonadas de domínio do estado e/ou particular, está a iniciativa da criação de uma nova central de abastecimento nos moldes da [[Ceasa]], central essa que comercializará principalmente os produtos plantados na região da Baixada Fluminense e atenderá comerciantes, feirantes e o público alvo dos produtos oferecidos.
+
+Hoje, comerciantes da Baixada Fluminense em geral vão à Ceasa localizada no município do Rio de Janeiro para efetuar suas compras, sendo que diversos produtos negociados lá são produzidos na própria Baixada Fluminense.
+
+Este desencontro por si só já elevam os preços dos produtos se levarmos em conta somente um item. Transporte = Frete. Uma vez que o produto é levado da Baixada Fluminense para o Ceasa e o consumidor Fluminense precisa ir a Ceasa buscá-lo e voltar a sua origem.
+
+Nova Iguaçu já foi grande exportadora de laranjas, que lhe garantiu à época o apelido de "Capital da laranja" no sudeste.<ref>{{Citar periódico|titulo=De capital da Laranja a exportadora de futebol, Nova Iguaçu se destaca no esporte|url=https://extra.globo.com/noticias/eu-sou-nova-iguacu/de-capital-da-laranja-exportadora-de-futebol-nova-iguacu-se-destaca-no-esporte-22535896.html|jornal=Extra Online|lingua=pt-BR}}</ref>
+
+=== Turismo ===
+{{Artigo principal|[[Turismo em Nova Iguaçu]]}}
+
+# [[Reserva Biológica Federal do Tinguá|Reserva Biológica do Tinguá]] — É a maior área de preservação da Região Metropolitana do Rio de Janeiro; uma opção é visitar as ruínas da Fazenda de São Bernardino, uma das construções mais antigas e conhecidas de toda a cidade.
+# [[Iguaçu Velho]] — O local que foi a primeira sede do município de Nova Iguaçu, atualmente chamado de [[Iguaçu Velho]], é um sítio arqueológico tombado pelo [[IPHAN]] e [[INEPAC]].
+# [[Parque Municipal de Nova Iguaçu|Parque Natural Municipal de Nova Iguaçu]] — É um [[parque]] localizado na borda norte do [[Serra do Mendanha|Maciço Mendanha]], no estado do [[Rio de Janeiro (estado)|Rio de Janeiro]], no [[Brasil]]. Faz parte da [[Área de proteção ambiental|área de proteção natural]] (APA) do Gericinó-Mendanha. Foi criado em 1998.
+# [[Praça do Skate]] — Apesar das modernas pistas de [[skate]] da Via Light terem a preferência dos praticantes desse esporte radical, a antiga pista da praça do Skate, em frente ao viaduto Padre João Müsch, tem sua importância, pois foi a primeira pista de skate da [[América Latina]]. Seu formato continua o mesmo desde quando foi construída, pouco "radical" para os padrões atuais, mas ainda constituindo-se em importante marco.
+# Serra do Vulcão — Localiza-se na borda norte-nordeste do [[maciço do Mendanha]] ([[Gericinó]]). Está a 885 metros acima do [[nível do mar]] e, portanto, é favorável para voo livre de [[asa delta]]. A serra do Vulcão é freqüentemente confundida com o chamado "[[Vulcão de Nova Iguaçu]]", embora se trate de localidades diferentes, afastadas a 3,7 [[quilômetro]]s uma da outra. Apesar do nome, a rocha constituinte da serra não é de origem vulcânica, mas sim, traquito de caráter intrusivo. A idade de intrusão é de 59 milhões de anos. Existe acesso via uma trilha a partir do campus da [[Universidade de Nova Iguaçu]] (UNIG).
+# [[Shopping Nova Iguaçu]] — Foi inaugurado no dia 28 de abril de 2016.
+# [[TopShopping]] — Foi inaugurado no dia 28 de outubro de 1996.
+
+== Transporte ==
+Principais acessos rodoviários: [[Rodovia Presidente Dutra|Via Dutra]], [[BR-465|Antiga Estrada Rio-São Paulo]], [[Avenida Abílio Augusto Távora|Estrada de Madureira]], [[Estrada Zumbi dos Palmares]], [[RJ-113|Estrada de Adrianópolis]] e [[Via Light]].
+
+Destaca-se ainda na região, linhas de ônibus urbanas intermunicipais importantes no movimento coletivo da cidade, tais como:
+
+*444B Cabuçu x Central via Km 32 (Real Rio)
+*490B Miguel Couto x Central via Dutra (Tinguá)
+*450T Nova Iguaçu x Itacuruçá (Ponte Coberta)
+*405T Nova Iguaçu x Barra da Tijuca via Saída 7 (Novanil)
+*407T Nova Iguaçu x Recreio dos Bandeirantes via Transolímpica (Novanil)
+*134B Nova Iguaçu x Vila Isabel (Evanil)
+*749L Morro Agudo x Pavuna via light (Vila Rica)
+*113B Nova Iguaçu x Central (Evanil)
+*133B Nova Iguaçu x Central (N.S.Penha)
+*551L Nova Iguaçu x Penha (N.S.Penha)
+*603I Nova Iguaçu x Magé (Rio de Janeiro)
+*460I Nova Iguaçu x Delamare via Mesquita (Vila Rica)
+
+==== Rodoviário ====
+Nova Iguaçu conta com uma vasta malha viária, sendo cortada por importantes [[rodovia]]s e [[estrada]]s.
+
+Destaca-se as linhas rodoviárias, que partem do terminal rodoviário de Nova Iguaçu:
+
+*Nova Iguaçu x Niterói (Rio de Janeiro)
+*Nova Iguaçu x Cabo Frio (1001)
+*Nova Iguaçu x Macaé (1001)
+*Nova Iguaçu x São Paulo (1001/Águia Branca)
+*Nova Iguaçu x Petrópolis (Única/Fácil)
+*Nova Iguaçu x Angra dos Reis (Costa Verde)
+
+; Rodovias federais
+* [[Rodovia Presidente Dutra|BR-116]], ''Rodovia Presidente Dutra''. Em território iguaçuano, possui 15&nbsp;km de extensão e corta o município de leste a oeste, margeando dezesseis bairros.
+* [[BR-465]], a ''Antiga Estrada Rio-São Paulo''. Rota para São Paulo até a [[década de 1950]], com a construção da Rodovia Presidente Dutra, a BR-465 é uma estrada de ligação entre a Dutra e a [[Avenida Brasil (Rio de Janeiro)|Avenida Brasil]]. Corta Nova Iguaçu na porção sudoeste com 6&nbsp;km de extensão, passando por 4 bairros.
+
+; Rodovias estaduais
+* [[Via Light]], Via de extrema importância para a cidade, por cortar o Centro e ligá-lo futuramente à [[Avenida Brasil (Rio de Janeiro)|Avenida Brasil]], poderá ter 6&nbsp;km em território iguaçuano e corta o Centro e mais 3 bairros.
+* [[Estrada Rio d'Ouro (RJ-085)|RJ-085, a Estrada Rio d'Ouro]] Situada no extremo leste do município, serve por 1,5&nbsp;km como fronteira entre Nova Iguaçu e [[Duque de Caxias]], no bairro de [[Geneciano]].
+* [[RJ-105]] (trecho sul), Avenida Abílio Augusto Távora, popularmente conhecida como "Estrada de Madureira". Possui 22&nbsp;km, corta a cidade do Centro ao sudoeste, dá acesso a [[BR-465]] e passa por 14 bairros.
+* [[RJ-105]] (trecho norte), Estrada Doutor Plínio Casado. Liga Nova Iguaçu a Belford Roxo, passando por 5 bairros e 3&nbsp;km.
+* [[RJ-109]], Rodovia Raphael de Almeida Magalhães (Arco Metropolitano), Corta o município entre [[Geneciano]] e o bairro Amaral, tendo acesso pela [[RJ-113|Estrada de Adrianópolis]]
+* [[RJ-111]], Estrada Zumbi dos Palmares. Liga a região central do município à [[Reserva Biológica do Tinguá]]. Possui 16&nbsp;km e passa por quatro bairros.
+* [[RJ-113]], a "Estrada de Adrianópolis". Liga a região central do município ao longínquo bairro de [[Jaceruba]], no noroeste. Possui 22&nbsp;km de extensão e passa por 4 bairros.
+* [[RJ-115]], a antiga "Estrada Real do Commercio". Oficialmente, liga [[Miguel Pereira]] à [[BR-040]], passando por [[Tinguá]] e [[Xerém (Duque de Caxias)|Xerém]], mas na prática a pista é em leito natural e sua medição é muito complicada devido ao trecho dentro da Reserva Biológica do Tinguá.
+* [[RJ-119]], a "Estrada Jaceruba-Japeri". Como o nome sugere, faz a ligação intermunicipal do distante noroeste iguaçuano ao município vizinho de [[Japeri]]. Tem 10&nbsp;km de extensão do centro de Jaceruba até a fronteira com o município supracitado.
+
+; Vias municipais
+{{Sistema Viário de Nova Iguaçu}}
+
+==== Ônibus ====
+Nova Iguaçu possui uma rodoviária e linhas para Duque de Caxias, Itaguaí, Niterói e Rio de Janeiro (Zona Norte e Centro), além de ônibus para: Região dos Lagos, Serrana, Sul Fluminense, Norte Fluminense, Costa Verde, e cidades, como: Barbacena, Cons. Lafaiete, Juiz de Fora, Belo Horizonte e São Paulo.
+
+As empresas que servem o município são: Evanil, Novanil, Linave, Nossa Senhora da Penha, Costa Verde, São José, Transportes Flores, Brazinha (Rio D'ouro), Transportadora Tinguá, Transportes Blanco, Expresso São Francisco, Mirante, Vila Rica, Nilopolitana, 1001, Itapemirim, Águia Branca, Master, Continental, Vera Cruz, Real Rio, Expresso Nossa Senhora da Glória, Ponte Coberta e Fazeni (atuando em Rio D'ouro e Jaceruba). Tais empresas de ônibus, além do transporte complementar de vans intramunicipal (legalizado pela prefeitura) e intermunicipal (legalizado pelo Departamento de Transportes Rodoviários do Estado do Rio de Janeiro) atuando diariamente em Nova Iguaçu.
+
+==== Metrô ====
+Nova Iguaçu está integrada ao [[metrô do Rio de Janeiro]] através da Via Light, pelas linhas de ônibus operadas pelas empresas Master, [[Viação São José]] e Viação Vila Rica (18 minutos do Centro de Nova Iguaçu). Além da integração com o Centro, possui integração para os bairros de Miguel Couto, Ponto Chique, Comendador Soares, Santa Rita e Cacuia.
+
+==== Ferroviário ====
+
+{| class="wikitable" style="float: right; margin: 1em 0em 1em 2em"
+! colspan="2"|Serviços semi-diretos do ramal [[Linha Japeri da SuperVia|Japeri]]
+|-
+! Linha || Estações
+|-
+| [[Estação Central do Brasil|Central do Brasil]] ↔ [[Estação Japeri|Japeri]] ||align="right"|20
+|-
+|[[Estação Central do Brasil|Central do Brasil]] ↔ [[Estação Queimados|Queimados]]||align="right"|18
+|-
+|[[Estação Central do Brasil|Central do Brasil]] ↔ [[Estação Nova Iguaçu|Nova Iguaçu]]||align="right"|14
+|}
+
+O transporte ferroviário de Nova Iguaçu é importante hoje em dia, mas já foi o principal meio de transporte para a população até a [[década de 1960]].
+
+Desde o início da expansão ferroviária promovida pelo imperador [[Pedro II do Brasil|D. Pedro II]], em 1855, Nova Iguaçu já foi muito bem servida pelo transporte ferroviário. A estação de [[Estação Nova Iguaçu|Maxambomba]] foi inaugurada em 1858, cujo nome foi alterado para ''Nova Iguaçu'' em 1916. No primeiro trecho construído da [[Estrada de Ferro Central do Brasil|Estrada de Ferro Dom Pedro II]], foram construídas, além da estação de Maxambomba, as estações [[Estação Queimados|Queimados]] e [[Estação Japeri|Belém]], atual [[Japeri]], ambas na época pertencentes a Nova Iguaçu. Com a proclamação da República, em 1889, o nome da ferrovia foi alterado para Estrada de Ferro Central do Brasil.
+
+Ainda na chamada ''Linha do Centro'' da EFCB, Nova Iguaçu teve as seguintes estações, na ordem: [[Estação Olinda|Olinda]] e [[Estação Nilópolis|Nilópolis]] (até 1947, quando [[Nilópolis]] se emancipou); [[Estação Édson Passos|Édson Passos]], [[Estação Mesquita|Mesquita]] e [[Estação Juscelino|Presidente Juscelino]] (até 1999, quando [[Mesquita (Rio de Janeiro)|Mesquita]] se emancipou); [[Estação Comendador Soares|Comendador Soares]] e [[Estação Austin|Austin]], iguaçuanas até hoje; [[Estação Queimados|Queimados]] (até 1990, quando [[Queimados]] se emancipou); [[Estação Engenheiro Pedreira|Engenheiro Pedreira]] e [[Estação Japeri|Japeri]] (até 1991, quando [[Japeri]] se emancipou).
+
+Na chamada [[Linha Auxiliar (Estrada de Ferro Central do Brasil)|Linha Auxiliar]] da EFCB, antiga Estrada de Ferro Melhoramentos, Nova Iguaçu já teve as seguintes estações, desativadas nos anos 60, na ordem: São João de Meriti, Engenheiro Belford, São Mateus (desativada em 1993), Tomazinho e Éden (até 1943, quando [[São João de Meriti|Meriti]] desligou-se de Nova Iguaçu); Rocha Sobrinho, atual estação de cargas da [[MRS Logística S.A.|MRS Logística]], Prata, Andrade Araújo, Caioaba, Ambaí, Santa Rita, Ahiva, Amaral e Carlos Sampaio, no território atual; Aljezur e Teófilo Cunha, atualmente em [[Japeri]].
+
+A [[Estrada de Ferro Rio d'Ouro|Estrada de Ferro Rio D'Ouro]], concebida nos últimos anos do Império para garantir a manutenção do sistema de abastecimento de água da Corte, obtida nas nascentes da Serra do Tinguá, tinha as seguintes estações (linha desativada nos anos 60), na ordem: [[Estação Vila Rosali|Vila Rosali]], [[Estação Agostinho Porto|Agostinho Porto]], [[Estação Coelho da Rocha|Coelho da Rocha]] e [[Estação Belford Roxo|Belford Roxo]], atualmente utilizadas pelas SuperVia; Areia Branca, Heliópolis e Itaipu, ainda em [[Belford Roxo]]; Retiro (Miguel Couto), [[Figueiras (Nova Iguaçu)|Figueiras]] e José Bulhões (Vila de Cava), pelo Ramal de Cava. Ramal Jaceruba: Paineiras (Adrianópolis), Rio d'Ouro, Santo Antônio, Saudade e São Pedro (Jaceruba). Ramal Tinguá: São Bernardino, Iguaçu, Barreira e Tinguá. Ramal Xerém: Aurora, quilômetro 33 e Babi (atualmente em Belford Roxo); Pontal do Iguaçu; quilômetro 43, João Pinto (Mantiqueira) e Xerém (até 1943, quando [[Duque de Caxias]] se emancipou). Os ramais da Rio d'Ouro foram todos desativados e extintos entre o final dos anos 60 e o início dos anos 70.
+
+Atualmente, a [[SuperVia]] administra o sistema ferroviário metropolitano fluminense. Nova Iguaçu conta com duas linhas: o [[Linha Japeri|Ramal Japeri]] (antiga Linha do Centro), voltada ao transporte suburbano de passageiros e operado pela concessionária SuperVia e a Linha Auxiliar (Japeri-Arará) da antiga [[Estrada de Ferro Central do Brasil]], hoje concedida à MRS Logística para o transporte de cargas.
+
+==== Aeromóvel ====
+Nova Iguaçu ingressou, em setembro de 2010, no seleto grupo de cidades interessadas em implementar o [[aeromóvel]], um [[meio de transporte]] urbano de concepção inteiramente [[brasil]]eira, em seu sistema urbano de transportes.<ref name="extra.globo.com">{{citar web|url=http://extra.globo.com/noticias/rio/nova-iguacu-projeta-aeromovel-360560.html.htm|título=Nova Iguaçu projeta aeromóvel|autor=|data=|publicado=Extra online (12 de novembro de 2010)|acessodata=12 de fevereiro de 2013}}{{Ligação inativa|data=maio de 2019 }}</ref><ref>{{citar web|url=http://odia.ig.com.br/portal/rio/o-dia-baixada/aerom%C3%B3vel-entra-na-reta-final-em-nova-igua%C3%A7u-1.456380|título=Aeromóvel entra na reta final em Nova Iguaçu|data=26 de junho de 2012|publicado=O Dia|acessodata=18 de outubro de 2013}}</ref> Na cidade brasileira de [[Porto Alegre]] há um projeto de implantação desse meio de transporte, que opera desde 1989 em [[Jacarta]], capital da [[Indonésia]].<ref>{{citar web|url=http://portoimagem.wordpress.com/2012/02/07/aeromovel-coester-quer-realizar-um-sonho/|título=Aeromóvel: Coester quer realizar um sonho|autor=Gilberto Simon|data=|publicado=Porto Imagens (7 de fevereiro de 2012)|acessodata=12 de fevereiro de 2013}}</ref>
+
+O aeromóvel é um [[veículo leve sobre trilhos]] em via elevada e que utiliza um singular sistema<ref>{{citar web|url=http://www.freepatentsonline.com/5845582.html|título=Slot sealing system for a pneumatic transportation system guideway|autor=Oskar Hans Wolfgang Coester e Carlos Antonio Campani|data=13 de novembro de 1997|publicado=Free Patents Online (8 de dezembro de 1998)|acessodata=12 de fevereiro de 2013}}</ref> de propulsão pneumática, inventado por [[Oskar H.W. Coester]]. O nome aeromóvel deriva de '''Aero'''dynamic '''Mov'''ement '''El'''evated.<ref>{{citar web|url=http://www.aeromovel.com/|título=Aeromovel|autor=|data=|publicado=Aeromovel Global Corp|acessodata=12 de fevereiro de 2013}}</ref>
+
+O projeto do aeromóvel de Nova Iguaçu foi desenvolvido pelo engenheiro Fernando Mac Dowell, especialista em transportes, e prevê intervenções urbanísticas no [[Centro (Nova Iguaçu)|Centro]], inclusive a recuperação do [[Aeroclube de Nova Iguaçu|aeródromo]]. O projeto seria bancado pela iniciativa privada, com concessão por 25 anos.<ref name="extra.globo.com"/>
+
+O sistema, caso estivesse em operação, seria constituído por duas linhas: a primeira, partindo do Terminal Rodoviário Municipal, seguirá para sudoeste, em direção a Cabuçu, e a segunda, ligará o [[Centro (Nova Iguaçu)|Centro]] a [[Santa Rita (Nova Iguaçu)|Santa Rita]], passando pelo [[Aeroclube de Nova Iguaçu|aeródromo]]. As plataformas serão suspensas, a sete metros do chão. Em princípio, há oito estações previstas no: [[Top Shopping]], [[Aeroclube de Nova Iguaçu|Aeródromo]], [[Posse (Nova Iguaçu)|Posse]], [[Hospital Geral de Nova Iguaçu|Hospital da Posse]], [[Ponto Chic (Nova Iguaçu)|Ponto Chic]], [[Três Corações (Nova Iguaçu)|Três Corações]], Bairro Botafogo, [[Centro Federal de Educação Tecnológica Celso Suckow da Fonseca|CEFET]] e [[Santa Rita (Nova Iguaçu)|Santa Rita]].<ref name="extra.globo.com"/>
+
+==== Aeroviário ====
+
+Nova Iguaçu não possui grandes [[aeroporto]]s comerciais em seu território. A única pista de pouso da cidade e da [[Baixada Fluminense]] é o [[Aeroclube de Nova Iguaçu]] {{códigos aeroporto|QNV|SDNY}}, que teve suas operações suspensas pela [[Agência Nacional de Aviação Civil|ANAC]] em 2004. O aeródromo já operou com serviços de táxi aéreo, após obras de modernização, em 2009.<ref>{{citar web|url=http://oglobo.globo.com/rio/bairros/posts/2009/07/06/aeroporto-de-nova-iguacu-201210.asp|título=Aeroporto de Nova Iguaçu|autor=|data=|publicado=O Globo nos bairros|acessodata=8 de fevereiro de 2013}}</ref> Porém, devido à sua localização no cone de aproximação do [[Aeroporto Santos Dumont]], o aeroporto atualmente encontra-se sem voos comerciais.
+
+As opções de voo comerciais para a população de Nova Iguaçu encontram-se fora da cidade. O [[Aeroporto Internacional do Rio de Janeiro-Galeão|Aeroporto Internacional do Galeão]], ou ''Aeroporto Internacional [[Antônio Carlos Jobim]]'' {{códigos aeroporto|GIG|SBGL}} encontra-se na capital, o [[Rio de Janeiro]], a 34&nbsp;km do centro de Nova Iguaçu, via [[Linha Vermelha (Rio de Janeiro)|Linha Vermelha]]. Situado na [[ilha do Governador]], [[Zona Norte (Rio de Janeiro)|zona norte]] da capital, o aeroporto é a segunda principal porta de entrada para o Brasil.<ref>{{citar web|url=http://www.infraero.gov.br/index.php/br/aeroportos/rio-de-janeiro/aeroporto-internacional-do-rio-de-janeiro.html|publicado=Infraero - Empresa Brasileira de Infraestrutura Aeroportuária|titulo=Aeroporto Internacional do Galeão - Antônio Carlos Jobim |acessodata=27 de setembro de 2012}}</ref><ref>{{citar web|url=http://www.ecobrasil.org.br/publique/cgi/cgilua.exe/sys/start.htm?infoid=30&sid=5|título=Turismo no Brasil|autor=Onstituto Eco Brasil|data=|publicado=|acessodata=27 de setembro de 2012}}</ref> Com capacidade para atender até 17,3 milhões de usuários ao ano, o complexo aeroportuário é servido por dois terminais de passageiros e oferece conexões para dezenove países..<ref>{{citar web|url=http://www.infraero.gov.br/index.php/br/aeroportos/rio-de-janeiro/aeroporto-internacional-do-rio-de-janeiro/complexo-aeroportuario.html|título=Complexo Aeroportuário, Aeroporto Internacional do Galeão - Antônio Carlos Jobim|autor=|data=|publicado=Infraero - Empresa Brasileira de Infraestrutura Aeroportuária|acessodata=27 de setembro de 2012|arquivourl=https://web.archive.org/web/20121123092510/http://www.infraero.gov.br/index.php/br/aeroportos/rio-de-janeiro/aeroporto-internacional-do-rio-de-janeiro/complexo-aeroportuario.html|arquivodata=2012-11-23|urlmorta=yes}}</ref>
+
+Outra importante opção para Nova Iguaçu é o [[Aeroporto Santos Dumont]] {{códigos aeroporto|SDU|SBRJ}}, que fica no [[Centro (Rio de Janeiro)|centro do Rio de Janeiro]]. Localizado a 39&nbsp;km de Nova Iguaçu, via [[Avenida Brasil (Rio de Janeiro)|Avenida Brasil]], o aeroporto serve principalmente à [[ponte aérea Rio-São Paulo]], bem como a voos estaduais e regionais. Segundo a [[INFRAERO]], o Santos Dumont era, em 2010, o 6º aeroporto mais movimentado do país.<ref name="Infraero">{{citar web|url=http://www.infraero.gov.br/index.php/br/aeroportos/rio-de-janeiro/aeroporto-santos-dumont.html|publicado=Infraero - Empresa Brasileira de Infraestrutura Aeroportuária|titulo=Aeroporto Santos Dumont|acessodata=8 de fevereiro de 2013}}</ref>
+
+=== Carnaval ===
+{{Artigo principal|[[Carnaval de Nova Iguaçu]]}}
+
+=== Esporte ===
+Em Nova Iguaçu, se encontra a primeira pista de ''skate'' do Brasil e da América Latina,<ref>{{citar web |url=http://oglobo.globo.com/rio/primeira-pista-de-skate-do-brasil-faz-30-anos-no-domingo-4539620 |título=Primeira pista de skate do Brasil faz 30 anos no domingo |publicado=O Globo |data=12 de dezembro de 2006}}</ref><ref>{{citar web |url=http://tvcultura.cmais.com.br/woohoonews/35-anos-da-primeira-pista-de-skate-do-rio-encontro-de-geracoes |título=35 anos da Primeira Pista de Skate do Rio – Encontro de Gerações |publicado=TV Cultura |data=30 de novembro de 2011}}</ref><ref>{{citar web |url=http://g1.globo.com/rio-de-janeiro/parceiro-rj/noticia/2012/03/parceiro-do-rj-descobre-pista-de-skate-pioneira-da-america-latina.html |título=Parceiro do RJ descobre pista de skate pioneira da América Latina |publicado=G1 |data=2 de março de 2012}}</ref><ref>{{citar web |url=http://odia.ig.com.br/portal/rio/o-dia-baixada/primeira-pista-de-skate-do-pa%C3%ADs-est%C3%A1-cheia-de-buracos-1.512920 |título=Primeira pista de skate do país está cheia de buracos |publicado=O Dia |data=10 de novembro de 2012}}</ref> que foi inaugurada em dezembro de 1976, construída na época do governo Lubanco. A pista situa-se na [[Praça do Skate]], no [[Centro (Nova Iguaçu)|Centro]].
+
+O Nova Iguaçu Futebol Clube também se destaca na cidade, com seu estádio e CT localizados no bairro Moquetá.
+[[Ficheiro:amotoki NovaIguacu 20060413 SerraDoVulcao.jpg|thumb|Rampa de [[asa-delta]] da [[Serra do Vulcão]] (2006).]]
+
+=== Feriados municipais ===
+* [[15 de janeiro]] — Aniversário da cidade
+* [[13 de junho]] — Dia do padroeiro: [[Santo António de Lisboa|Santo Antônio]]
+
+== Filhos ilustres ==
+*''Ver [[:Categoria:Naturais de Nova Iguaçu|Biografias de iguaçuanos notórios]]''
+<!-- NÃO INCLUA NOMES AQUI: BIOGRAFE E CATEGORIZE -->
+
+== Ver também ==
+* [[Baixada Fluminense]]
+* [[Câmara Municipal de Nova Iguaçu]]
+* [[Lista de prefeitos de Nova Iguaçu]]
+* [[Lista de bairros de Nova Iguaçu]]
+* [[Lista de municípios do Rio de Janeiro]]
+* [[Lista de municípios do Brasil]]
+* [[Lista de municípios do Brasil acima de cem mil habitantes]]
+* [[:Categoria:Naturais de Nova Iguaçu|Naturais de Nova Iguaçu]]
+* [[Região Metropolitana do Rio de Janeiro]]
+* [[Terrorista de Nova Iguaçu]]
+
+{{Referências}}
+
+==Ligações externas==
+{{Commonscat|Nova Iguaçu}}
+* [https://novaiguacu.rj.gov.br/ Prefeitura de Nova Iguaçu]
+* [https://www.cmni.rj.gov.br/site/ Câmara Municipal]
+* [https://www.openstreetmap.org/relation/2709115 Nova Iguaçu no OpenStreetMap]
+
+{{Bloco de navegação
+|50 maiores cidades do Brasil
+|Subdivisões do Rio de Janeiro
+|Região Metropolitana do Rio de Janeiro
+|Subdivisões de Nova Iguaçu
+}}
+{{controle de autoridade}}
+{{Portal3|Rio de Janeiro|Brasil}}
+
+{{DEFAULTSORT:Nova Iguacu}}
+[[Categoria:Nova Iguaçu| ]]
+[[Categoria:1833 no Brasil]]
+[[Categoria:Topônimos de origem tupi no Rio de Janeiro]]

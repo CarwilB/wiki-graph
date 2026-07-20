@@ -1,0 +1,114 @@
+{{Short description|Municipality in Cienfuegos Province}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+<!-- Basic info  ---------------->
+|official_name          = Abreus
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              = 
+|image_seal             = Coat of arms of Abreus.jpg
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Abreus (Cuban municipal map).png
+|map_caption            = Abreus municipality (red) within <br> Cienfuegos Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Cienfuegos Province|Cienfuegos]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Founded
+|established_date       = 1840<ref name=guije/>
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = 
+|population_density_km2 = {{#expr:30719/579 round 0}}
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2019
+|population_footnotes   = <ref name=one2019/>
+|population_note        = 
+|population_total       = 30,719{{Update after|2024|10|25}}
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|16|50|N|80|34|4|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 60
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-432
+|website                = https://abreus.gob.cu/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Abreus''' ({{IPA|es|aˈβɾews}}) is a municipality and town in the [[Cienfuegos Province]] of [[Cuba]]. It was founded in 1840.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/vabreu/index.htm|title=Abreus|author=Guije.com|accessdate=7 October 2007| archiveurl= https://web.archive.org/web/20071012221925/http://guije.com/pueblo/municipios/vabreu/index.htm| archivedate= 12 October 2007 | url-status= live|language=es}}</ref>
+
+==History==
+Abreus was founded as San Segundo de los Abreu in 1840 by Trinidadian landowners during an economic boom of slave-labor sugar cane plantations.<ref>{{cite web|url=https://abreus.gob.cu/nuestra-region/region-cizq/un-poco-de-historia|title=Un poco de historia|date=2019-11-17|language=es|publisher=Government of Abreus|access-date=2021-07-13|archive-date=2024-04-14|archive-url=https://web.archive.org/web/20240414202215/https://abreus.gob.cu/nuestra-region/region-cizq/un-poco-de-historia|url-status=dead}}</ref>
+
+==Geography==
+The municipality includes the town of Abreus<ref name=guije/> and the villages of Babiney, Carmelina, Cayo Grande, Charcas, Cienguita, Constancia, Horquitas, [[Juraguá]], [[Matun, Cuba|Matun]], Mijailito, Navarra, Nueva Juraguá, San Ignacio, Simpatía and Yaguaramas. It is bordered by [[Zapata Swamp|Ciénaga de Zapata]] and [[Calimete]], both in [[Matanzas Province]], and by [[Aguada de Pasajeros]], [[Rodas]] and [[Cienfuegos]].
+
+==Demographics==
+In 2019, the municipality of Abreus had a population of 30,719; 51% of the population identified as men.<ref name=one2019>{{cite web|url=http://www.onei.gob.cu/sites/default/files/anuario_est_municipal/00_anuario_abreus_.pdf|title=ANUARIO ESTADÍSTICO 2019 CINFUEGOS ABREUS|date=2019|publisher=Oficina Nacional de Estadística|language=es|access-date=2021-07-13|archive-url=https://web.archive.org/web/20210713054540/http://www.onei.gob.cu/sites/default/files/anuario_est_municipal/00_anuario_abreus_.pdf|archive-date=2021-07-13}}</ref> With a total area of {{convert|579|km2|sqmi|abbr=on}} it has a population density of {{convert|53|/km2|/sqmi|abbr=on}}.<ref name=one2019/>
+
+==Notable natives==
+*[[Ángel Fleitas]] (1914–2006), baseball player
+*[[José Irisarri]] (1895–1968), politician and lawyer
+*[[Yoán Moncada]] (born 1995), baseball player
+*[[Olfides Sáez]] (born 1994), weightlifter
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+*[[Juragua Nuclear Power Plant]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+
+{{Adjacent communities
+ | Centre = Abreus
+ | N  = 
+ | NE = [[Rodas]]
+ | E  = [[Cienfuegos]]
+ | SE = 
+ | S  = ''[[Caribbean Sea]]''
+ | SW = [[Ciénaga de Zapata]] ([[Matanzas Province|Matanzas]])
+ | W  = [[Calimete]] ([[Matanzas Province|Matanzas]])
+ | NW = [[Aguada de Pasajeros]]
+}}
+{{Municipalities in Cienfuegos}}
+
+[[Category:Populated places in Cienfuegos Province]]
+
+
+{{Cuba-geo-stub}}

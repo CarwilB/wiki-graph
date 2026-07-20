@@ -1,0 +1,107 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->| official_name      = Cueto
+| other_name         = 
+| native_name        = 
+| nickname           = 
+| settlement_type    = [[Municipalities of Cuba|Municipality]]
+| motto              = <!-- images and maps  ----------->
+| image_skyline      = Marcane Cuba.jpg
+| image_caption      = Near Marcané
+| image_flag         = 
+| flag_size          = 
+| image_seal         = 
+| seal_size          = 
+| image_shield       = 
+| shield_size        = 120x90px
+| image_map          = Cueto (Cuban municipal map).png
+| map_caption        = Cueto municipality (red) within <br> Holguín Province (yellow) and Cuba
+<!-- Location ------------------>| subdivision_type   = Country
+| subdivision_name   = [[Cuba]]
+| subdivision_type1  = [[Provinces of Cuba|Province]]
+| subdivision_name1  = [[Holguín Province]]
+| subdivision_type2  = 
+| subdivision_name2  = <!-- Politics ----------------->
+| government_footnotes = 
+| government_type    = 
+| leader_title       = 
+| leader_name        = 
+| leader_title1      = 
+| leader_name1       = 
+| established_title  = 
+| established_date   = 
+| established_title2 = <!-- Incorporated (town) -->
+| established_date2  = 
+| established_title3 = <!-- Incorporated (city) -->
+| established_date3  = <!-- Area    --------------------->
+| area_magnitude     = 
+| unit_pref          = 
+| area_footnotes     = 
+| area_total_km2     = 329
+| area_land_km2      = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+| area_water_km2     = <!-- Population   ----------------------->
+| population_as_of   = 2018
+| population_footnotes = <ref name=atenas/>
+| population_note    = 
+| population_total   = 31,552
+| population_density_km2 = 95.9 <!-- General information  --------------->
+| timezone           = [[Eastern Time Zone|EST]]
+| utc_offset         = -5
+| timezone_DST       = 
+| utc_offset_DST     = 
+| coordinates        = {{coord|20|38|53|N|75|55|54|W|region:CU|display=inline,title}}
+| elevation_footnotes = <!--for references: use <ref> </ref> tags-->
+| elevation_m        = 55
+<!-- Area/postal codes & others -------->| postal_code_type   = 
+| postal_code        = 
+| area_code          = +53-24
+| website            = 
+| footnotes          = 
+| name               = 
+}}
+'''Cueto''' is a [[municipality]] and [[town]] in [[Holguín Province]], [[Cuba]].
+
+==Geography==
+The municipality is located southwest of the Holguín Province, next to the border with [[Santiago de Cuba Province]]. It borders with the municipalities of [[Báguanos]], [[Mayarí]], [[Mella, Cuba|Mella]] and [[Urbano Noris]] (San Germán). In addition to Cueto itself, the municipal territory includes the villages of Alto Cedro, Barajagua, [[Birán]],<ref name="OSM">{{OSM|r|5904273|Cueto}}</ref><ref>{{OSM|n|1336109283|Birán}}</ref> Marcané, and other minor localities.<ref name="OSM" />
+
+Birán, best known as the birthplace of [[Fidel Castro|Fidel]], [[Raúl Castro|Raúl]] and [[Ramón Castro Ruz|Ramón Castro]], was part of the neighboring municipality of Mayarí until the 1976 reform.<ref>[http://www.guije.com/pueblo/municipios/omayari/index.htm Mayarí on guije.com]</ref>
+
+==Demographics==
+In 2018, the municipality of Cueto had a population of 31,552, of which 16,308 were men and 15,244 were women<ref name="atenas">{{Cite web|title=Anuario Estadístico Cueto 2018|url=http://www.onei.gob.cu/sites/default/files/anuario_est_municipal/10_cueto_.pdf|author=|first=|year=2019|website=|language=es|archiveurl=|archivedate=|accessdate=}}</ref> With a total area of {{convert|329|km2|sqmi|abbr=on}},<ref>{{Cite web|title=Cuba Municipalities|url=http://www.statoids.com/ycu.html|last=Statoids|date=|website=www.statoids.com|url-status=live|archive-url=https://web.archive.org/web/20040225085955/http://www.statoids.com:80/ycu.html |archive-date=2004-02-25 |access-date=2020-05-15}}</ref> it has a population density of {{convert|95.9|/km2|/sqmi|abbr=on}}. The town of Cueto, as of the 2017 census, had a registered population of 15,111 living in just over 11,000 homes.
+
+==Popular culture==
+The name of the town, along with its municipal villages of '''Alto Cedro''' and '''Marcané''', figures in the following lyrics of the song ''[[Chan Chan (song)|Chan Chan]]'', composed in 1984 and released in 1996 by [[Compay Segundo]], and also performed by the [[Buena Vista Social Club (album)|Buena Vista Social Club]]:
+{|
+| style="padding-right:3em;" |''De Alto Cedro voy para Marcané''
+
+''Llego a Cueto voy para Mayarí''
+|
+|From Alto Cedro I go to Marcané
+
+I get to Cueto, then head for Mayarí
+|}
+The same line is repeated in a chorus of the 2011 song "''Buena''" by a Polish band [[Blue Cafe]].
+
+==See also==
+*[[List of cities in Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+*{{in lang|es}} [[:es:Cueto_(Cuba)|Cueto, Cuba]]
+
+{{Adjacent communities
+ | Centre = Cueto
+ | N = [[Báguanos]]
+ | E = [[Mayarí]]
+ | S = [[Mella, Cuba|Mella]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+ | W = [[Urbano Noris]]
+}}
+{{Municipalities in Holguín}}
+
+[[Category:Populated places in Holguín Province]]
+
+
+{{Cuba-geo-stub}}

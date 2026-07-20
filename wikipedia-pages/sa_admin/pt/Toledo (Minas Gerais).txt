@@ -1,0 +1,76 @@
+{{Info/Município do Brasil
+<!-- GeoID=3169109 -->
+<!-- Cabeçalho -->
+| nome = Toledo
+| foto = 
+| apelido = 
+| padroeiro = [[São José]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=7 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->| brasão = 
+| bandeira = 
+| link_hino = 
+| emancipação ={{nowrap|{{dtlink|27|12|1953|idade}}}}
+| fundação =1841
+| gentílico =toledense<ref name=IBGE_Toledo/>
+| lema = 
+| CEP = 37630-000 a 37639-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito = Edio Donizeti Leme
+| partido = [[Partido da Social Democracia Brasileira|PSDB]]
+| fim_mandato = 2024
+<!-- Localização -->
+| mapa = MinasGerais Municip Toledo.svg
+| latP = S
+| latG = 22
+| latM = 44
+| latS = 34
+| lonP = O
+| lonG = 46
+| lonM = 22
+| lonS = 19
+| estado = Minas Gerais
+| região_intermediária = 
+| região_imediata = 
+| região_metropolitana = 
+| vizinhos = [[Munhoz]], [[Itapeva (Minas Gerais)|Itapeva]], [[Extrema]], [[Pedra Bela]] e [[Socorro (município)|Socorro]]
+| dist_capital = 497
+<!-- Características geográficas -->
+| área = 136.776
+| área_ref = <ref name=IBGE_Toledo/>
+| população = 7214
+| data_pop = censo IBGE/2022<ref name=IBGE_Toledo/>
+| altitude = 1128
+| clima = [[tropical de altitude]]
+| sigla_clima = Cwb
+<!-- Indicadores -->
+| idh = 0.661 <!--favor manter o formato-->
+| pib = {{formatnum:33875.766}} mil
+| pib_per_capita = 5677.19
+| leg_foto = 
+| link_brasão = 
+| link_bandeira = 
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking IDHM Municípios 2010 |data=2013 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=15 de junho de 2015}}</ref>
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.toledo.mg.gov.br/ toledo.mg.gov.br]
+| site_câmara = [http://www.toledo.mg.leg.br/ toledo.mg.leg.br]
+}}
+'''Toledo''' é um [[Município (Brasil)|município brasileiro]] do [[estado (subdivisão)|Estado]] de [[Minas Gerais]], na microrregião de Pouso Alegre. Localiza-se a uma [[latitude]] 22º44'35" sul e a uma [[longitude]] 46º22'19" oeste, estando a uma [[altitude]] de 1128 metros. Sua população, segundo o [[Censo demográfico do Brasil de 2022|censo demográfico de 2022]], é de {{fmtn|7214}} habitantes. Possui uma área de {{fmtn|136.776|km²}} e uma densidade demográfica de 52,74 habitantes por quilômetro quadrado.<ref name=IBGE_Toledo>{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/mg/toledo.html |titulo=Toledo |acessodata=2024-03-18 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref>
+
+Os municípios limítrofes são [[Munhoz]] a norte e nordeste, [[Itapeva (Minas Gerais)|Itapeva]] a leste, [[Extrema]] a sudeste e os [[São Paulo (estado)|paulistas]] [[Pedra Bela]] a sudoeste e [[Socorro (município)|Socorro]] a oeste.
+
+Atualmente a cidade de Toledo conta com acesso por estradas pavimentadas para a Rodovia Fernão Dias (BR-381), Extrema (MG), Munhoz (MG) e Pedra Bela (SP).
+
+{{Sem imagem}}
+
+{{Crescimento populacional do Censo do Brasil|1991=4664|2000=5222|2010=5764|rodapé=https://www.ibge.gov.br/cidades-e-estados/mg/toledo.html|2022=7214}}
+
+{{Referências}}
+
+== Ligações externas ==
+* [http://www.toledo.mg.gov.br/ Prefeitura de Toledo]
+* [http://www.toledo.mg.leg.br/ Câmara de Toledo]
+* [http://www.cidades.ibge.gov.br/brasil/mg/toledo Toledo no IBGE Cidades]
+
+{{Esboço-municípiosbr/Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1953]]

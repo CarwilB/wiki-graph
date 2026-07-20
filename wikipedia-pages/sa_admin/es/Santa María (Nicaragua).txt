@@ -1,0 +1,89 @@
+{{Ficha de entidad subnacional
+| nombre = Santa María
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|NS}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.7400
+ |longitude= -86.7200
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| subdivisión = 6 microrregiones
+| elevación_media = 778
+| superficie = 157.5
+| superficie_puesto = 111
+| número_entidades = 153
+| población_puesto = 149
+| población_año = 2023
+| población = 5193
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/nueva_segovia/0540__santa_mar%C3%ADa/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 863
+| densidad = 32.97
+| fundación = 1850
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 38600
+}}
+'''Santa María''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Nueva Segovia|Nueva Segovia]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte y oeste con la República de [[Honduras]], al sur con el municipio de [[Somoto]] y al este con el municipio de [[Macuelizo (Nicaragua)|Macuelizo]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=26 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 276 kilómetros de la capital de [[Managua]].
+
+Los suelos del municipio son quebrados y montañosos, pues ocupan los descensos del sur de la cordillera de Dipilto, con regulares fuentes de agua para la agricultura y la ganadería. Riegan sus suelos los ríos del Zuyatal, Zapotal y partes del Macuelizo.<ref name='INIFOM'/>
+
+== Historia ==
+Es probable que su fundación esté en torno al año 1850, pues en un documento económico como "''asiento de los índices de tierra''", se lee textualmente: 
+
+:''"Del acuerdo de octubre de 1850, por el que se dispone la reducción de varios valles, bajo una sola población, con el nombre de Santa María del Pedregalito."''<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 2,674 (51.5%)
+| valor1 = 51.5
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 2,519 (48.5%)
+| valor2 = 48.5
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 4,330 (83.4%)
+| valor1 = 83.4
+| color1 = #109618
+| etiqueta2 = Urbano: 863 (16.6%)
+| valor2 = 16.6
+| color2 = #FF9900
+}}
+Santa María tiene una población actual de 5,193 habitantes. De la población total, el 51.5% son hombres y el 48.5% son mujeres. Casi el 16.6% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El [[Clima tropical de sabana|clima de sabana tropical]] del municipio es de altura, con temperaturas que oscilan entre los 23 a 24&nbsp;°C y una precipitación de 1000 mm.<ref name='INIFOM'/>
+
+== Localidades ==
+El municipio está dividido en 6 microrregiones por las comunidades integradas de la siguiente manera:<ref>Alcaldía de Santa María.</ref>
+* Microrregión 1: Santa María, Las Joyas, El Tule, Las Minas, El Higuito, Carrizal, Planes, Tempisque.
+* Microrregión 2: El Rodeo, Flor Blanca, El Encino, Chinampa, Robles.
+* Microrregión. 3 Llano, Calabaceras, Coyolar.
+* Microrregión 4: La Quemazón, Aguacate, La Calera, Carrizal, El Hato, El Tizo, Carboneras, Cañas, Plansitos, Caliguate.
+* Microrregión 5: Palo Verde, Robles, Palmas, Quesera, El Cristo, Vijagual, Las Trojas.
+* Microrregión 6: Brisas, Congojas, Cipilde, Jácaro, Vado Grande, Ato Viejo, Maylote, Guayabal, Vueltas, La Presa, Río Arriba, Las Canogas, La Ceiba, Aguas Calientes, Cacao, Calpule, Batidero, Las Pilas, Guasimo.
+
+== Economía ==
+La principal actividad económica es la agricultura de granos básicos, siendo sus principales cultivos: [[Phaseolus vulgaris|frijoles]], [[Zea mays|maíz]], maicillo o millón, [[Sorghum|sorgo]]; también la [[ganadería]] y [[Coffea|café]] en pequeña escala.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Nueva Segovia]]
+[[Categoría:Municipios de Nueva Segovia]]

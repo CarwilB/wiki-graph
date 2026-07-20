@@ -1,0 +1,101 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Imías
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Memorial of José Martí landing (11 April 1895) at Imías.jpg
+|image_caption          = Memorial of [[José Martí]] landing of 11 April 1895
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Imías (Cuban municipal map).png
+|map_caption            = Imías municipality (red) within <br> Guantánamo Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Guantánamo Province|Guantánamo]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 524
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 21,005
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|04|36|N|74|39|7|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 30
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-21
+|website                = https://www.imias.gob.cu/es/
+|footnotes              = 
+}} <!--Infobox ends-->
+
+'''Imías''' is a municipality and town in the [[Guantánamo Province]] of [[Cuba]]. It is located on the southern coast of Cuba, bordering the [[Caribbean Sea]] to the south.
+
+==Geography==
+The municipality of Imías borders with [[San Antonio del Sur]], [[Baracoa]] and [[Maisí]]. The town is crossed by the [[Carretera Central (Cuba)|Carretera Central]], a west–east highway spanning the length of Cuba, and counts [[Imías Airport|a little airport]].<ref>[http://airportdatabase.net/cuba/imias-airport_46384.html Imías Airport on Airport Database website]</ref>
+
+==Demographics==
+In 2022, the municipality of Imías had a population of 21,005.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|524|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids| accessdate=2007-10-05}}</ref> it has a population density of {{convert|40.0|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Imías
+ | N = [[Baracoa]]
+ | E = [[Maisí]]
+ | S = ''[[Caribbean Sea]]''
+ | W = [[San Antonio del Sur]]
+}}
+{{Municipalities in Guantánamo}}
+
+{{DEFAULTSORT:Imias}}
+[[Category:Populated places in Guantánamo Province]]
+
+
+{{Cuba-geo-stub}}

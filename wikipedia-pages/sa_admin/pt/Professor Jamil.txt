@@ -1,0 +1,64 @@
+{{Info/Município do Brasil
+<!-- GeoID=5218391 -->
+<!-- Cabeçalho -->| nome = Professor Jamil
+| foto = 
+| leg_foto = 
+| apelido = Jamil
+<!-- Dados gerais -->| brasão = Brasão Professor Jamil-GO.png
+| bandeira = Bandeira Professor Jamil-GO.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|16|1|1991|idade}}}}
+| gentílico = Jamilense
+| lema = 
+| prefeito = Ney Fabio de Novaes
+| partido = [[Partido dos Trabalhadores|PT]]
+| fim_mandato = 2028
+| mapa = Goias Municip ProfessorJamil.svg
+| latP = S
+| latG = 17
+| latM = 15
+| latS = 03
+| lonP = O
+| lonG = 49
+| lonM = 14
+| lonS = 38
+| estado = Goiás
+| mesorregião = [[Mesorregião do Sul Goiano|Sul Goiano]]
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Meia Ponte|Meia Ponte]]
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Piracanjuba]]
+| dist_capital = 70
+<!-- Características geográficas -->| área = 347.465 <!--favor manter o formato-->
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 3390 <!--favor manter o formato-->
+| data_pop = [[IBGE]]/2014<ref name="IBGE_Pop_2014">{{citar web |url= http://www.ibge.gov.br/home/estatistica/populacao/estimativa2014/|título=Estimativa populacional 2014 IBGE| obra = Estimativa populacional 2014|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=1 de julho de 2014 |acessodata = 29 de agosto de 2014}}</ref>
+| altitude = 684
+| clima = Tropical com estação seca
+| sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.736 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:22038.424}} mil
+| data_pib = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 6508.69
+| data_pib_per_capita = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://professorjamil.go.gov.br/ professorjamil.go.gov.br]
+}}
+'''Professor Jamil''' é um [[município]] [[brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Goiás]]. Sua população, estimada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), era de {{fmtn|3649}} habitantes em 2022.
+
+{{referências}}
+
+== Ver também ==
+* [[Lista de municípios de Goiás]]
+* [[Lista de municípios do Brasil]]
+
+{{Esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Municípios de Goiás]]
+[[Categoria:Fundações em Goiás em 1991]]

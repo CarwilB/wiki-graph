@@ -1,0 +1,155 @@
+{{Mais notas|data=dezembro de 2021}}
+{{Info/Município do Brasil
+<!-- GeoID=5005152 -->
+<!-- Cabeçalho -->
+| nome                 = Juti
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Band Juti.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 14 de dezembro
+| fundação             = {{nowrap|{{dtlink|14|12|1987|idade}}}}
+| emancipação          = {{dtlink|1|1|1989|idade}}
+| gentílico            = [[wikt:jutiense|jutiense]]
+| lema                 = 
+| padroeiro            = [[Santa Luzia]]
+| prefeito<!--enciclopédia, sem apelidos! -->= Gilson Cruz<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=7 de janeiro de 2025}}</ref>
+| partido              = [[PSDB]]
+| mandato_início       = 2025
+| fim_mandato          = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores           = 9
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Juti location map.svg
+| latP                 = S | latG = 22 | latM = 51 | latS = 39
+| lonP                 = O | lonG = 54 | lonM = 36 | lonS = 10
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Dourados|Dourados]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Caarapó]], [[Amambai]], [[Vicentina]], [[Jateí]], [[Naviraí]], [[Iguatemi (Mato Grosso do Sul)|Iguatemi]]
+| dist_capital         = 302
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 1584.599 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 59º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:0.368}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Juti (sede), Porto Felicidade
+| população            = 6638 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 68º]]
+| data_pop             = estimativa [[IBGE]]/2018<ref name="IBGE_Pop_2018">{{citar web |url=https://cidades.ibge.gov.br/brasil/ms/juti/panorama|título=Estimativa populacional 2018 IBGE| obra = |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=29 de agosto de 2018 |acessodata = 18 de setembro de 2018}}</ref>
+| altitude             = 373
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[tropical]]
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.710 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 65º]]
+| data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.420}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 12º]]
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1#|arquivodata=30 de abril de 2012|urlmorta=yes}}</ref> 
+| pib                  = {{formatnum:54336.248}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 71º]]
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 9847.09
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Juti''' é um município do [[Unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+==História==
+<!-- Não copie nada para a Wikipédia, não é permitido. Leia: Wikipedia:Coisas a não fazer -->
+A vila foi fundada entre 1912 e 1915 por influencia do progresso da extração da [[erva-mate]]. O primeiro morador foi Sérgio Maciel de Oliveira, que chegou nos campos de Santa Luzia em 13 de dezembro de 1898, onde construiu uma parada provisória, para daí, seguir em direção leste, margem do rio Laranjaí, ou margem esquerda do rio Amambai. Seus irmãos (Cassimiro e Genésio Maciel) resolveram ficar em Santa Luzia, e foram para a costa do rio Amambaí, no porto Palermo, onde se fixaram definitivamente. Genésio ficou nas cabeceiras do São Lucas, onde ergueu a Fazenda Belo Horizonte. Anos depois começaram a chegar novos moradores tanto para morar quanto para montar seu comércio e a vila foi se desenvolvendo, e entre 1912 e 1920, construiu-se um amontoado de ranchos de capim, tabuinha ou de zinco. A partir de 1920 a vila cresceu assustadoramente, a ponto de se tornar o maior centro comercial da Região, com exceção da Campanário, chegando a ter em média 2.500 casas, entre residências e casas comerciais. O Distrito de Paz de Santa Luzia ou de Juti, como ficou denominado, foi criado para a Vila de Caarapó, pela lei Estadual nº 1.021, de 21 de setembro de 1929, no governo de Mário Correia, governador do Estado de Mato Grosso. A Lei nº1.021 entrou em vigor, na data do seu veredito, no dia 13 de janeiro de 1930. O cartório foi instalado, na vila de Caarapó, em 16 de março de 1930, com a posse das primeiras autoridades: Juiz de Paz, Francisco Serejo e para escrivão de Paz foi nomeado Antônio Batista Júnior. Aníbal Toledo, até então presidente do estado de Mato Grosso e descontente com a perda do mandato, em 30 de novembro de 1930, pouco antes de ser destituído do poder, expediu um ato ou decreto, transferindo a sede do Distrito de Juti, da Vila de Caarapó, para a Vila de Santa Luzia alegando ser um lugar de maior progresso. Ele também era Presidente da [[Companhia Mate Laranjeira]], empresa contrária a toda espécie de ocupação de terras, no sul do Estado de Mato Grosso. A região foi por muitos anos sustentada pelo apoio da Companhia Matte Laranjeira, que nos fins de semana permitia que os seus peões pudessem fazer compras em Santa Luzia. Isso ocorria principalmente nos dias de Semana Santa e nos dias de Carreiradas (Corridas de cavalos), uma das poucas diversões na época. Entre novembro e dezembro de 1930, o cartório foi levado para a Vila de Santa Luzia.
+
+Com a queda do [[Território Federal de Ponta Porã]], em 18 de setembro de 1946, e a decretação do contrato de arrendamento dos ervais pela [[Companhia Mate Laranjeira]] no mesmo ano, a Vila entrou em decadência e perdeu a maior parte de sua população. O cartório foi parar em Santa Luzia e a Vila de Caarapó perdeu sua jurisdição de Vila. A condição de distrito e passou a pertencer a Santa Luzia até seu desmembramento, em 1948, com a criação do Cartório ou Distrito de Paz de Caarapó pela Lei nº188 em 16 de novembro de 1948. A vila de Santa Luzia (ou Distrito de Juti), era apenas um ponto de paragem de carreteiros das barrancas dos rios Paraná, Amambaí e Laranjaí que seguiam para Campanário, Ponta Porã, Aquidauana, Nioaque, Porto Murtinho ou Concepcion, no Paraguai. Muito viam na região um recanto, onde a pastagem era abundante e rica em espécies e variedades em teor alimentício. As dificuldades na região eram enormes, visto que a atenção e o auxilio governamental era deficiente, com exceção da ajuda que recebeu da Prefeitura Municipal de Caarapó. A Vila de Santa Luzia, em 1950, estava arruinado e fora ainda mais prejudicado por causa de guerras, pela fome e pela peste.
+
+Em 1977 o município passa a fazer parte do atual estado de Mato Grosso do Sul e em 14 dezembro de 1987, pela lei número 800, foi criado o município de Juti, pelo, então, governador Marcelo Miranda Soares, ficando o mesmo, pertencendo a comarca de Caarapó.
+
+==Geografia==
+===Localização===
+A cidade está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Lista de mesorregiões e microrregiões de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]] ([[Lista de mesorregiões e microrregiões de Mato Grosso do Sul|Microrregião de Dourados]]). Localiza-se a uma [[latitude]] 22º51'38" [[sul]] e a uma [[longitude]] 54º36'10" [[oeste]]. Distâncias:
+* {{fmtn|306|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]) 
+* {{fmtn|1332|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Predomina, o Latossolo Vermelho-Escuro de textura média associado a Neossolos, verifica-se ainda, a ocorrência de manchas isoladas de Latossolo  de textura argilosa de baixa fertilidade natural e Argissolos de textura arenosa ou média, com o caráter álico.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|373|m}}. A geomorfologia encontra-se na Região dos Planaltos Arenítico Basálticos Interiores, dividindo-se em duas unidades geomorfológicas: Divisores das Sub-Bacias Meridionais e Planalto de Dourados. Apresenta relevo plano, geralmente elaborado por várias fases de retomada erosiva, com relevos elaborados pela ação fluvial.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[AW]]) e apresenta-se com período de chuvas de novembro a maio, com maior intensidade de dezembro a janeiro e um período seco de um a dois meses em média. A precipitação anual encontra-se entre 1.400 e 1.700mm, sendo bem distribuído durante o ano. 
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do rio da Prata|Bacia do Rio da Prata]]. Principais rios:
+* Rio Amambai: afluente pela margem direita do rio Paraná; limite entre os municípios de Amambai e Juti. Possui 340&nbsp;km de extensão, sendo 90&nbsp;km navegáveis. 
+* Rio Bonito: afluente pela margem esquerda do rio Amambai, no município de Juti.
+* Rio Guiraí: afluente pela margem direita do rio Ivinhema, limite entre os municípios de Juti e Jateí. 
+* Rio Gurupaí: afluente pela margem direita do rio Ivinhema, limite entre os municípios de Jateí e Juti. 
+* Rio Laranjaí: afluente pela margem direita do rio Ivinhema, no município de Naviraí; sua nascente é anterior a uma linha seca de limites no município de Juti. 
+* Rio Taquara: afluente pela margem esquerda do rio Amambai, no município de Juti.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. A pastagem plantada corresponde a mais de 90% da área do município. O Cerrado Arbóreo 
+Aberto (Campo Cerrado) e a Floresta Estacional complementam a cobertura vegetal.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a Brasília e -4 com relação a [[Meridiano de Greenwich]].
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|1584.599|km²}}.
+ 
+;Subdivisões
+
+Juti (sede) e Porto Felicidade.
+
+;Arredores
+
+[[Caarapó]], [[Amambai]], [[Vicentina]], [[Jateí]], [[Naviraí]] e [[Iguatemi]]
+
+==Demografia==
+Sua população, conforme estimativas do IBGE de 2018, era de {{fmtn|6638}} habitantes.<ref name="IBGE_Pop_2018"/>
+
+==Ver também==
+* [[Yuty]]
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Juti
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* {{oficial|http://www.juti.ms.gov.br/}}
+* {{link|pt|2=http://www.wikimapia.org/#lat=-22.860991&lon=-54.6047974&z=10&l=9&m=b|3=Vista de Juti no satélite}}
+
+{{Esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1987]]

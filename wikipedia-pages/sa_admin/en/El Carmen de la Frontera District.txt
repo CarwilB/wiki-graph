@@ -1,0 +1,126 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = El Carmen de la Frontera
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of El Carmen de la Frontera in the [[Huancabamba Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Piura Region|Piura]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Huancabamba Province|Huancabamba]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = December 4, 1964
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Sapalache]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Ismael Huayama Neira
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 678.24
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 2450
+| population_footnotes    = 
+| population_total        = 12693
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 200303
+| website                 = 
+| footnotes               = 
+}}
+
+'''El Carmen de la Frontera District''' is one of eight [[Districts of Peru|districts]] of the province [[Huancabamba Province|Huancabamba]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=April 23, 2008 }}''. Retrieved April 17, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Salala, El Carmen de la Frontera, elevation {{convert|2974|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 16.9
+|Feb high C = 16.7
+|Mar high C = 16.8
+|Apr high C = 16.9
+|May high C = 16.8
+|Jun high C = 15.7
+|Jul high C = 15.4
+|Aug high C = 15.7
+|Sep high C = 16.2
+|Oct high C = 17.2
+|Nov high C = 18.1
+|Dec high C = 17.3
+|year high C = 
+|Jan low C = 7.3
+|Feb low C = 7.2
+|Mar low C = 7.6
+|Apr low C = 7.5
+|May low C = 7.6
+|Jun low C = 7.2
+|Jul low C = 6.9
+|Aug low C = 6.6
+|Sep low C = 6.9
+|Oct low C = 7.0
+|Nov low C = 6.8
+|Dec low C = 7.1
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 115.7
+|Feb precipitation mm = 119.5
+|Mar precipitation mm = 128.7
+|Apr precipitation mm = 110.2
+|May precipitation mm = 92.3
+|Jun precipitation mm = 64.7
+|Jul precipitation mm = 58.3
+|Aug precipitation mm = 32.2
+|Sep precipitation mm = 33.8
+|Oct precipitation mm = 87.5
+|Nov precipitation mm = 87.4
+|Dec precipitation mm = 101.6
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Huancabamba Province}}
+
+{{coord|5.1483|S|79.4281|W|source:wikidata-and-enwiki-cat-tree_region:PE|display=title}}
+
+[[Category:Districts of the Department of Piura]]
+[[Category:Districts of the Huancabamba province]]
+
+
+{{Piura-geo-stub}}

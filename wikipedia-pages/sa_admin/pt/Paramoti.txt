@@ -1,0 +1,63 @@
+{{Info/Município do Brasil
+<!-- GeoID=2310407 -->
+<!-- Cabeçalho -->| nome = Paramoti
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Paramoti CE.jpg
+| bandeira = Bandeira Paramoti-CE FGLA-pt.br.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = {{dtlink|25|1|1958|idade}}
+| fundação = {{nowrap|{{dtlink|10|12|1957|idade}}}}
+| gentílico = paramotiense
+| prefeito<!--enciclopédia, sem apelidos! --> = Antônia Telvânia Ferreira Braz Barreto (PSB, 2024 - 2028)
+| partido = Partido socialista brasileiro
+| mandato_início = 2024
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 9
+<!-- Localização -->| mapa = Brazil Ceará Paramoti location map.svg
+| latP = S
+| latG = 04
+| latM = 05
+| latS = 49
+| lonP = O
+| lonG = 39
+| lonM = 14
+| lonS = 20
+| estado = Ceará
+| mesorregião = [[Mesorregião do Norte Cearense|Norte Cearense]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Canindé|Canindé]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = <small>'''Norte:''' [[General Sampaio]] e [[Apuiarés]];<br> '''Sul:''' [[Canindé (Ceará)|Canindé]];<br> '''Leste:''' [[Caridade (Ceará)|Caridade]], [[Pentecoste]];<br> '''Oeste:''' [[Canindé (Ceará)|Canindé]]</small>
+| dist_capital = 104
+<!-- Características geográficas -->| área = 482.648
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 12252
+| data_pop = estimativa IBGE/2020<ref name="IBGE_Pop_2020">{{citar web |url=https://cidades.ibge.gov.br/brasil/ce/paramoti/panorama|título=Estimativa populacional 2020 IBGE|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=28 de agosto de 2020 |acessodata = 28 de fevereiro de 2021}}</ref>
+| altitude = 83
+| clima = tropical quente semiárido
+| sigla_clima = <!-- Indicadores -->
+| idh = 0,583
+| data_idh = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:40707.646}} mil
+| data_pib = -
+| pib_per_capita = 3383.28
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.paramoti.ce.gov.br/ paramoti.ce.gov.br]
+}}
+'''Paramoti''' é um [[Município (Brasil)|município]] [[brasileiro]] do [[unidades federativas do Brasil|estado]] do [[Ceará]]. Sua população foi estimada em 2020 pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) em {{fmtn|12252}} habitantes.<ref name="IBGE_Pop_2020"/>
+
+Seu nome se origina do tupi e significa rio seco ou rio que se estreita. A hospitalidade e a forma pacífica de convivência são características marcantes do seu povo, o que lhe proporcionou o título de “Cidade da Paz”.<ref name="PARAMOTI_2010">{{citar web |url=http://www.paramoti.ce.gov.br |titulo=Prefeitura Municipal de Paramoti |data=26 de novembro de 2008 |obra=Paramoti - Ceará| publicado=Prefeitura de Paramoti |acessodata=2 de setembro de 2010}}</ref>
+
+{{referências}}
+
+{{esboço-municípiosbr/Ceará}}
+{{Municípios do Ceará}}
+
+[[Categoria:Paramoti| ]]
+[[Categoria:Sertão de Canindé]]
+[[Categoria:Fundações no Ceará em 1957]]

@@ -1,0 +1,107 @@
+{{Ficha de entidad subnacional
+| nombre = Yalagüina
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|MD}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.4830
+ |longitude= -86.4860
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=11}}
+| subdivisión = 22 comunidades<br/>7 microrregiones
+| elevación_media = 640
+| superficie = 70.92
+| superficie_puesto = 133
+| número_entidades = 153
+| población_puesto = 111
+| población_año = 2023
+| población = 13902
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/madriz/2030__yalag%C3%BCina/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 3222
+| densidad = 196.0
+| gentilicio = Yalagüinense
+| fundación = 1725
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 35100
+}}
+
+'''Yalagüina''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Madriz|Madriz]] en la República de [[Nicaragua]].
+
+== Toponimia ==
+Existen dos teorías acerca del origen del nombre de ''Yalagüina'':
+
+* Según el lingüista nicaragüense Alfonso Valle Candia significa "''gente o pueblo de pescadores''", de las voces [[Idioma matagalpa|matagalpa]] "''Yal''" que significa "''pez''" y "''Guiña''" "''pueblo''".
+
+* Según el escritor Julián N. Guerrero, el nombre es de origen [[Idioma chorotega|chorotega]] que significa "''pueblo de las alturas o de los montes''" de las voces "''Yale o Yare''" que significa "''monte o altura''" y de la voz "''Guiña''" que indica "''Gente o Pueblo''".
+
+== Geografía ==
+En término municipal limita al norte con el municipio de [[Totogalpa]], al sur con el municipio de [[Pueblo Nuevo (Nicaragua)|Pueblo Nuevo]], al este con el municipio de [[Palacagüina]] y al oeste con el municipio de [[Somoto]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=27 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 205 kilómetros de la capital de [[Managua]].
+
+== Historia ==
+[[Archivo:TITULO REAL YALAGUINA.jpg|miniaturadeimagen|Título de tierras ejidales del municipio de Yalagüina.]]
+
+Yalagüina es una antigua comunidad nativa mencionada ya en 1603 en la primera evaluación española de la [[Departamento de Nueva Segovia|Nueva Segovia]]. 
+
+Sea como fuere, los aborígenes eran agricultores y artesanos que se dedicaban a trabajar con fibras de [[Agave sisalana|cabuya]] y de penca para hacer [[hamaca]]s. También se dedicaban al trabajo del [[cuero]] y de la [[alfarería]].<ref name='INIFOM'/> 
+
+El municipio se fundó en 1725 y es el único que posee, por derecho de compra, un título real de tierras [[Ejido|ejidales]] pertenecientes a la comunidad indígena. 
+
+En el año de 1935, durante la [[intervención militar]], soldados estadounidense destruyeron el centro antiguo.<ref name='INIFOM'/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima tropical de sabana]] de altura (seco), la precipitación pluvial oscila entre 1000 y 1200 mm, caracterizado por una buena distribución durante todo el año. Sin embargo, las aguas se han profundizado, debido a la tala indiscriminada y quemas que se han desarrollado últimamente. La temperatura anual oscila entre los 23 a 24&nbsp;°C.<ref name='INIFOM'/>
+
+La vegetación del municipio es pobre y se compone principalmente de malezas y tacotales con una mínima presencia de pino y caoba, mientras que las cuencas de los ríos quedaron desérticas después del pase del [[huracán Mitch]], por la destrucción de la flora y fauna.<ref name='INIFOM'/>
+
+== Economía ==
+Yalagüina se caracteriza por ser uno de los municipios más pobres del departamento de Madriz. El 51% de las familias depende de la producción agropecuaria, para el autoconsumo y el resto son asalariados, que emigran a otros municipios en busca de trabajo para su manutención. Con relación a los productores, estos trabajan sin financiamiento debido a que sus tierras son de bajo rendimiento productivo. El cultivo predominante es la producción de granos básicos ([[Zea mays|maíz]], [[Phaseolus vulgaris|fríjol]], [[Sorghum|sorgo]]) para el autoconsumo.<ref name='INIFOM'/>
+
+== Localidades ==
+Yalagüina tiene 22 comunidades rurales, 4 sectores y dos barrios urbanos, dividido en las 7 microrregiones siguientes:<ref>Alcaldía de Yalagüina.</ref>
+# Centro urbano con dos barrios.
+# Cerro Grande, Quebrada Arriba, Samascunda.
+# La Esperanza, Arado Quemado, San Antonio, Santa Ana.
+# El Chagüite, El Terreno, Cofradía.
+# San Ramón, La Cruz, Trapichito.
+# Los Encuentros, El Hatillo, Río Abajo, El Plan.
+# Las Cruces, El Jocote, La Muta.
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 6,955 (50%)
+| valor1 = 50
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 6,947 (50%)
+| valor2 = 50
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 10,680 (76.8%)
+| valor1 = 76.8
+| color1 = #109618
+| etiqueta2 = Urbano: 3,222 (23.2%)
+| valor2 = 23.2
+| color2 = #FF9900
+}}
+Yalagüina tiene una población actual de 13,902 habitantes. De la población total, el 50% son hombres y el 50% son mujeres. Casi el 23.2% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Cultura ==
+El 26 de julio de cada año se celebran las fiestas en honor [[Ana (madre de María)|Santa Ana]], cuya venerada imagen según la tradición local fue traída desde [[El Salvador]].<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Madriz]]

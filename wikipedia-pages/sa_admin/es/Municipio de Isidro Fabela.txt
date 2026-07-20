@@ -1,0 +1,306 @@
+{{Ficha de entidad subnacional
+| nombre               = Municipio de Isidro Fabela
+| país                 = [[México]]
+| unidad               = [[Anexo:Municipios del Estado de México|Municipio]]
+| tipo_superior_1      = [[Anexo:Entidades federativas de México|Estado]]
+| superior_1           = [[Estado de México]]
+| imagen               = Presa Iturbide.jpg
+| pie_de_imagen        = Presa Iturbide.
+| mapa                 = {{Map draw|geotype=geoshape|width=250|height=250|align=center|zoom=10|fill=#4D87CA|fill-opacity=0.1}}
+
+| capital_denominación = Cabecera municipal
+| capital              = [[Tlazala de Fabela]]
+| dirigentes_títulos   = Presidente municipal
+| dirigentes_nombres   = [[Archivo:PVE logo (Mexico).svg|20px|link=Partido Verde Ecologista de México]] Carolina Flores Campos {{small|([[Anexo:Presidentes municipales del Estado de México (2024-2027)|2024-2027]])}}
+| subdivisión          = 
+| superficie           = 75.971
+| población            = 10308
+| población_año        = 2010
+| población_post       = <ref name="INEGI">{{cita web |url=http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&s=est |título=Principales resultados por localidad 2010 (ITER) |año=2010 |autor=Instituto Nacional de Estadística y Geografía}}</ref>
+| densidad             = 135.68
+| página web           = 
+| apodo                = 
+| fecha_de_creación    = 
+| elevación_alta       = 3 800
+| elevación_baja       = 2 400
+| gentilicio           = 
+| PIB_per_capita       = 
+| IDH                  = 
+}}
+El '''municipio de Isidro Fabela''' es uno de los [[Anexo:Municipios del estado de México|125 municipios]] que conforman al [[Estado de México]], [[México]]. Su cabecera es la localidad de [[Tlazala de Fabela]]. El municipio es parte de la [[Zona metropolitana del valle de México]].
+
+== Geografía ==
+El municipio de Isidro Fabela se encuentra localizado en el centro-oeste del territorio del estado de México, al noroeste del [[Valle de México]]. Tiene una extensión territorial de 75.971 kilómetros cuadrados, que equivalen al 0.34 % de la extensión total del estado de México; sus coordenadas geográficas extrema son 19°30′ - 19°36′ de latitud norte y 99°20′ - 99°32′ de longitud oeste y su altitud se encuentra entre un máximo de 3800 y un mínimo de 2400 metros sobre el nivel del mar.
+
+Limita al norte con el [[municipio de Nicolás Romero]], al este con el [[municipio de Atizapán de Zaragoza]], al sur con el [[municipio de Jilotzingo]] y el [[municipio de Otzolotepec]] y al oeste con el [[Temoaya|municipio de Temoaya]].
+
+=== Clima ===
+La temperatura promedio en Isidro Fabela es de 6 a 14 [[Grado Celsius|grados celcius]] y el rango de precipitación promedio es de 800 a 1300 mm.
+
+{{Clima
+|lugar = Municipio de Isidro Fabela
+|width = 
+
+<!--Las temperaturas máximas registradas son opcionales-->
+<!--Temperaturas máximas (ºC)-->   <!--Temperaturas máximas registradas (ºC)-->
+|ene_max = 19.2                        |ene_max_reg = 24.6
+|feb_max = 19.9                        |feb_max_reg = 26.0
+|mar_max = 21.5                        |mar_max_reg = 26.3
+|abr_max = 22.3                        |abr_max_reg = 26.5
+|may_max = 22.3                        |may_max_reg = 29.0
+|jun_max = 20.9                        |jun_max_reg = 25.3
+|jul_max = 20.0                        |jul_max_reg = 22.9
+|ago_max = 19.8                        |ago_max_reg = 23.4
+|sep_max = 19.5                        |sep_max_reg = 22.9
+|oct_max = 19.4                        |oct_max_reg = 23.8
+|nov_max = 19.4                        |nov_max_reg = 24.1
+|dic_max = 19.0                        |dic_max_reg = 24.6
+|anual_max = 20.3                      |anual_max_reg = 29.0
+<!--Las temperaturas mínimas registradas son opcionales-->
+<!--Temperaturas mínimas (ºC)-->   <!--Temperaturas mínimas registradas (ºC)-->
+|ene_min = 2.1                        |ene_min_reg = -1.4
+|feb_min = 3.2                        |feb_min_reg = -0.4
+|mar_min = 4.9                        |mar_min_reg = 1.3
+|abr_min = 6.2                        |abr_min_reg = 3.8
+|may_min = 7.2                        |may_min_reg = 5.2
+|jun_min = 7.5                        |jun_min_reg = 5.5
+|jul_min = 7.4                        |jul_min_reg = 4.7
+|ago_min = 7.2                        |ago_min_reg = 4.3
+|sep_min = 7.1                        |sep_min_reg = 5.0
+|oct_min = 5.7                        |oct_min_reg = 2.4
+|nov_min = 3.7                        |nov_min_reg = -0.6
+|dic_min = 2.9                        |dic_min_reg = -2.8
+|anual_min = 5.4                      |anual_min_reg = -2.8
+<!--Temperatura diaria promedio (ºC)-->
+|ene_prom = 10.6
+|feb_prom = 11.6
+|mar_prom = 13.2
+|abr_prom = 14.2
+|may_prom = 14.7
+|jun_prom = 14.2
+|jul_prom = 13.7
+|ago_prom = 13.5
+|sep_prom = 13.3
+|oct_prom = 12.5
+|nov_prom = 11.6
+|dic_prom = 11.0
+|anual_prom = 12.8<!--Opcional, si no se especifica, hace el cálculo automáticamente con los datos de los 12 meses -->
+
+<!--Precipitación total (mm/cm)-->
+<!-- IMPORTANTE: usa mm o cm pero NO ambos! -->
+|ene_precip = 15.2
+|feb_precip = 18.8
+|mar_precip = 15.4
+|abr_precip = 46.5
+|may_precip = 83.3
+|jun_precip = 196.4
+|jul_precip = 257.7
+|ago_precip = 237.5
+|sep_precip = 239.0
+|oct_precip = 89.9
+|nov_precip = 31.9
+|dic_precip = 12.5
+|anual_precip = 1244.1 <!--Opcional, si no se especifica, hace el cálculo automáticamente con los datos de los 12 meses -->
+<!--Días de Precipitación sólida, líquida y/o mixta -->
+|u_precip_días =
+|ene_precip_días = 2.2
+|feb_precip_días = 2.9
+|mar_precip_días = 3.1
+|abr_precip_días = 7.3
+|may_precip_días = 11.1
+|jun_precip_días = 16.9
+|jul_precip_días = 22.6
+|ago_precip_días = 20.9
+|sep_precip_días = 18.1
+|oct_precip_días = 10.2
+|nov_precip_días = 4.9
+|dic_precip_días = 2.8
+|anual_precip_días = 123.0<!--Opcional, si no se especifica, hace el cálculo automáticamente con los datos de los 12 meses -->
+
+|fuente = Servicio Meteorológico Nacional.<ref>{{cita web |url=http://smn.cna.gob.mx/tools/RESOURCES/Normales5110/NORMAL15114.TXT |título=Normales climatológicas. Santiago Tlazala, Isidro Fabela |fecha=2010 |fechaacceso=15 de junio de 2017 |autor=Servicio Meteorológico Nacional }}</ref>
+|fechaacceso = 
+}}
+
+== Demografía ==
+De acuerdo al último censo, realizado por el [[Instituto Nacional de Estadística y Geografía]] en 2010, en el municipio habitan 10&nbsp;308 personas, repartidas entre 19 localidades.<ref>{{Cita web|url=http://www.microrregiones.gob.mx/catloc/LocdeMun.aspx?tipo=clave&campo=loc&ent=15&mun=038|título=Catálogo de localidades. Isidro Fabela, Estado de México|fechaacceso=15 de junio de 2017|autor=SEDESOL|enlaceautor=Secretaría de Desarrollo Social de México|fecha=2010|fechaarchivo=21 de octubre de 2020|urlarchivo=https://web.archive.org/web/20201021225110/http://www.microrregiones.gob.mx/catloc/LocdeMun.aspx?tipo=clave&campo=loc&ent=15&mun=038|deadurl=yes}}</ref> Del total de habitantes, 50 de ellos hablan alguna lengua indígena.<ref>{{Cita web|url=http://www.beta.inegi.org.mx/app/areasgeograficas/?ag=15038|título=Isidro Fabela (15038)|fechaacceso=15 de junio de 2017|autor=INEGI|enlaceautor=Instituto Nacional de Estadística y Geografía|fecha=2010}}</ref>
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de Isidro Fabela contaba con 16 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. México|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197889.pdf|fechaacceso=septiembre de 2025|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2025|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|150380001
+|'''[[Tlazala de Fabela]]'''
+| align="right" |2&nbsp;399
+|-
+|150380016
+|[[Ejido Palma]]
+| align="right" |1&nbsp;639
+|-
+|150380006
+|[[Colonia Palma (Estado de México)|Colonia Palma]]
+| align="right" |1&nbsp;406
+|-
+|150380019
+|[[Ejido Miraflores]]
+| align="right" |1&nbsp;257
+|-
+|150380020
+|[[Ejido los Jarros]]
+| align="right" |1&nbsp;090
+|-
+|150380015
+|Colonia Miraflores
+| align="right" |889
+|-
+|150380003
+|Cañada de Onofres
+| align="right" |836
+|-
+|150380002
+|Colonia Aurora
+| align="right" |806
+|-
+|150380004
+|Colonia Laureles
+| align="right" |522
+|-
+|150380021
+|Ampliación Ejido Miraflores
+| align="right" |245
+|-
+|150380013
+|Endeguido
+| align="right" |238
+|-
+|150380014
+|Los Lavaderos
+| align="right" |173
+|-
+|150380012
+|Caixte
+| align="right" |153
+|-
+|150380007
+|Ranchería Palomas
+| align="right" |119
+|-
+|150380010
+|Ampliación Ejido Palma
+| align="right" |114
+|-
+|150380011
+|Las Canoitas
+| align="right" |43
+|-
+! colspan="2" |Total municipal
+!11&nbsp;929
+|}
+== Patrimonio ==
+
+=== Parque Ecológico Presa de Iturbide ===
+El municipio cuenta con distintas zonas naturales entre ellas el parque ecológico Presa de Iturbide<ref>{{Cita web|url=https://experiencia.edomex.gob.mx/recursos_turisticos/mostrarDetalleRecursos/2109|título={{!}} Secretaría de Cultura y Turismo|fechaacceso=2023-08-10|sitioweb=experiencia.edomex.gob.mx}}</ref> al cual se puede llegar por las carreteras de Nicolás Romero-Toluca, Jiquipilco-Naucalpan e Ixtlahuaca-Naucalpan-Santa Ana Jilotzingo. 
+
+=== Reserva de la biosfera Piedra Colgada ===
+El municipio cuenta con la Reserva de la biosfera Piedra colgada<ref>{{Cita web|url=https://experiencia.edomex.gob.mx/recursos_turisticos/mostrarDetalleRecursos/2110|título={{!}} Secretaría de Cultura y Turismo|fechaacceso=2023-08-10|sitioweb=experiencia.edomex.gob.mx}}</ref> ingresando por la calle Correcaminos la cual es en trayecto de bosque, se encuentra a media hora de la explanada municipal.
+
+=== Patrimonio Cultural ===
+El municipio  cuenta con una casa de cultura llamada Isidro Fabela<ref>{{Cita web|url=https://sic.cultura.gob.mx/ficha.php?table=centro_cultural&table_id=288|título=Casa de Cultura Isidro Fabela|fechaacceso=2023-08-10|sitioweb=Secretaría de Cultura/Sistema de Información Cultural|idioma=es}}</ref> fundada el 10 de abril de 1997 la cual brinda distintas actividades artísticas y culturales ubicada en Av. Constitución s/n Col. Aurora.
+
+así mismo se cuenta con una biblioteca de nombre Eulalio Núñez Alonso<ref>{{Cita web|url=https://sic.gob.mx/ficha.php?table=rnbp&table_id=76713|título=Eulalio Núñez Alonso|fechaacceso=2023-08-10|sitioweb=Secretaría de Cultura/Sistema de Información Cultural|idioma=es}}</ref> ubicada  en Av. Revolución s/n ( dentro de la casa de la cultura).
+
+=== Patrimonio Histórico ===
+El municipio cuenta con la parroquia Santiago Apóstol de Tlazala<ref>{{Cita web|url=https://experiencia.edomex.gob.mx/recursos_turisticos/mostrarDetalleRecursos/2080|título={{!}} Secretaría de Cultura y Turismo|fechaacceso=2023-08-10|sitioweb=experiencia.edomex.gob.mx}}</ref> construida en el {{siglo|XVIII||s}} ubicada en calle Constitución, a  un costado de la presidencia municipal.
+
+=== Patrimonio  Intangible ===
+Dentro del municipio se lleva a cabo la Feria del hongo y de la trucha<ref>{{Cita web|url=https://experiencia.edomex.gob.mx/mapa_pagina_frontal/mostrarDetalle/1759|título={{!}} Secretaría de Cultura y Turismo|fechaacceso=2023-08-10|sitioweb=experiencia.edomex.gob.mx}}</ref> realizado con especies de hongos endémicas de este municipio y realzando una de las actividades económicas del municipio.
+
+== Deporte ==
+El municipio cuenta con distintos centros deportivos como lo son  Deportivo San Martin, deportivo Laureles, deportivo Rincón bonito, deportivo Canalejas, deportivo la Mora Y plaza Bicentenario<ref>{{Cita web|url=https://isidrofabela.edomex.gob.mx/sites/isidrofabela.edomex.gob.mx/files/files/Plan%20de%20Desarrollo%20Munipal/PDM%2022%2024.pdf|título=Experiencia Edomex}}</ref>
+
+=== Medallistas ===
+voleibol<ref>{{Cita web|url=https://isidrofabela.edomex.gob.mx/sites/isidrofabela.edomex.gob.mx/files/files/Plan%20de%20Desarrollo%20Munipal/PDM%2022%2024.pdf|título=Isidro Fabela}}</ref>
+
+== Política ==
+{| class="wikitable"
+|- align=center style="background:#d8edff"
+!Alcalde!!Periodo
+|-
+|[[Archivo:PRD logo without border (Mexico).svg|18px]] Agustin Eusebio Vazquez
+|1996-2000
+|-
+| [[Archivo:PRD logo without border (Mexico).svg|18px]] Francisco Arana López || 2000-2003
+|-
+| [[Archivo:Partido de la Sociedad Nacionalista.svg|18px]] Felipe Nolasco Trejo || 2003-2006
+|-
+| [[Archivo:Alianza por México (2006).svg|18px]] Abel Rosas Vargas || 2006-2009 
+|-
+| [[Archivo:CON logo (Mexico).svg|18px]] Enrique Prudencio Aranda || 2009-2012
+|-
+| [[Archivo:PRI Party (Mexico).svg|18px]] Lizeth González Mondragon || 2012-2015 
+|-
+| [[Archivo:PRD logo without border (Mexico).svg|18px]] Leonardo Mondragón Ortega || 2015-2018
+|-
+| [[Archivo:PRI Party (Mexico).svg|18px]] Astrid Anita Dávila Ordoñez || 2019-2024 
+|-
+|}
+
+=== Representación legislativa ===
+Para la elección de diputados locales al [[Congreso del Estado de México]] y de diputados federales a la [[Cámara de Diputados (México)|Cámara de Diputados]] federal, el municipio de Isidro Fabela se encuentra integrado en los siguientes distritos electorales:
+
+'''Local:'''
+* [[Distrito electoral local de 17 del estado de México]] con cabecera en [[Huixquilucan|Huixquilucan de Degollado]].<ref>{{cita web |url = http://cartografia.ife.org.mx//descargas/distritacion2017/local/15/D15.pdf |título = Descriptivo de la distritación Local, México, 2016 | fechaacceso = 20 de febrero de 2020 |autor = Instituto Nacional Electoral}}</ref>
+
+'''Federal:'''
+* [[Distrito electoral federal 4 del estado de México]] con cabecera en [[Ciudad Nicolás Romero|Nicolás Romero]].<ref>{{cita web |url = http://cartografia.ife.org.mx//descargas/distritacion2017/federal/15/D15.pdf |título = Descriptivo de la distritación Federal, México, Marzo de 2017 | fechaacceso = 20 de febrero de 2020 |autor = Instituto Nacional Electoral}}</ref>
+
+== Referencias ==
+{{listaref|2}}
+
+=== Fuentes ===
+* {{Cita web
+|1 = 
+|apellido = Instituto Nacional para el Federalismo y el Desarrollo Municipal
+|nombre = Secretaría de Gobernación
+|enlaceautor = Secretaría de Gobernación (México)
+|título = Enciclopedia de los Municipios de México
+|año = 2005
+|Edición = 
+|ubicación = 
+|editorial = 
+|id = 
+|url = http://siglo.inafed.gob.mx/enciclopedia/EMM15mexico/municipios/15038a.html
+|fechaacceso = 20 de febrero de 2020
+|fechaarchivo = 15 de septiembre de 2019
+|urlarchivo = https://web.archive.org/web/20190915053930/http://siglo.inafed.gob.mx/enciclopedia/EMM15mexico/municipios/15038a.html
+|deadurl = yes}}
+* {{cita web
+|apellido = Instituto Nacional de Estadística y Geografía
+|enlaceautor = Instituto Nacional de Estadística y Geografía
+|título = Compendio de información geográfica municipal 2010. Isidro Fabela, México.
+|año = 2010
+|url = http://geoweb2.inegi.org.mx/compendiosmun/ctrlpant
+|fechaacceso = 20 de febrero de 2020
+|urlarchivo = https://web.archive.org/web/20181222034138/http://geoweb2.inegi.org.mx/compendiosmun/ctrlpant
+|fechaarchivo = 22 de diciembre de 2018
+}}
+* {{cita web
+|apellido = Secretaría de Desarrollo Social
+|enlaceautor = Secretaría de Desarrollo Social (México)
+|título = Unidad de Microrregiones, Cédula de Identificación Municipal. Isidro Fabela, México.
+|año = 2017
+|url = http://www.microrregiones.gob.mx/zap/datGenerales.aspx?entra=nacion&ent=15&mun=038
+|fechaacceso = 20 de febrero de 2020
+|fechaarchivo = 30 de enero de 2017
+|urlarchivo = https://web.archive.org/web/20170130093416/http://www.microrregiones.gob.mx/zap/datGenerales.aspx?entra=nacion&ent=15&mun=038
+|deadurl = yes
+}}
+
+== Enlaces externos ==
+{{commonscat|Isidro Fabela Municipality}}
+{{Página web|http://isidrofabela.gob.mx/turistico/inicio.php}}
+
+{{ORDENAR:Isidro Fabela}}
+{{Control de autoridades}}
+[[Categoría:Municipio de Isidro Fabela| ]]

@@ -1,0 +1,41 @@
+{{Ficha de entidad subnacional
+| nombre = Chacabuco
+| nombre completo = Chacabuco
+| unidad = [[Departamentos y partidos de la Argentina|Departamento]]
+| tipo_superior_1 = [[Provincias de la Argentina|Provincia]]
+| superior_1 = {{bandera2|Provincia del Chaco}}
+| mapa = {{Mapa interactivo localidad}}
+| mapa_loc = 
+| capital = [[Charata]]
+| capital_denominación = [[Capital (política)|Cabecera]]
+| subdivisión = [[Anexo:Municipios del Chaco|2 municipios]]:<br />[[Charata]] 
+[[Estación Charata]]
+| superficie = 1378
+| superficie_puesto = 
+| superficie_post = 
+| población = 34598<ref name="INDEC">{{cita web |url=https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf |título=Cuadro 1.4 Provincia del Chaco. Población por sexo registrado al nacer y edad mediana, según departamento. - Año 2022 |publicación=Censo Nacional de Población, Hogares y Viviendas 2022. - Resultados definitivos |editorial=Instituto Nacional de Estadística y Censos (INDEC) |ubicación=Buenos Aires |fecha= Noviembre de 2023 |isbn=978-950-896-632-2 |página=33}}</ref>
+| población_puesto = [[Anexo:Departamentos de la Provincia del Chaco|8]]
+| población_año = 2022
+| población_post = 
+| densidad = 25.11<ref name = "City">{{cita web |url=https://www.citypopulation.de/en/argentina/admin/chaco/22028__chacabuco/ |título=Chacabuco - Department in Chaco (Argentina) |publicación=Citypopulation |idioma=en |fecha=28 de noviembre de 2023}}</ref>
+| densidad_año = 2022
+| ciudad_grande = [[Charata]]
+| capital_población = (2010) 26497<ref name = "City Loc">{{cita web |url=https://www.citypopulation.de/en/argentina/chaco/22028__chacabuco/ |título=Chacabuco - Department in Chaco - Localities|publicación=CityPopulation |fecha=26 de diciembre de 2013 |idioma=inglés}}</ref>
+| capital_coor = 27_13_05_S_61_11_14_W
+}}
+'''Chacabuco''' es un departamento en la [[provincia del Chaco]], [[Argentina]].
+
+Fue creado el 1 de julio de 1953, mediante la Ley Provincial N.º 6. Esta norma estableció 24 divisiones administrativas en la entonces recientemente creada [[provincia Presidente Perón]], actual provincia del Chaco.<ref>{{cita web |url=https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2022/08/Leoni-Los-comienzos-del-Chaco-provincializado-2ed.pdf |título=Los comienzos del Chaco provincializado : 1951-1955 |autor= Leoni, María Silvia |editorial=Instituto de Investigaciones Geohistóricas |año=2022 |isbn=978-987-4450-15-9 |página=33 Nota al pie Nº 106}}</ref>
+
+== Demografía ==
+El [[censo argentino de 1960|censo de 1960]] fue el primer relevamiento nacional luego establecerse la división política en Chaco. Relevó una población de {{formatnum|16402}} habitantes, de los cuales algo más del 50%, —8953 personas—, fueron registradas como población urbana.<ref>{{cita publicación |url=https://biblioteca.indec.gob.ar/bases/minde/1c1960_6.pdf |título=Cuadro Nº 1 - Población total urbana y rural según sexo y densidad media por Partido |publicación=Censo Nacional de Población 1960 - Tomo VI Zona Chaqueña |editorial=Dirección Nacional de Estadística y Censos |página=2}}</ref><br>
+Diez años después, el [[Censo argentino de 1970|censo de 1970]] registró una población de {{formatnum|14654}} habitantes.<ref>{{cita publicación |url=https://biblioteca.indec.gob.ar/bases/minde/1c1970_1master.pdf |título=Cuadro 7.2 - Población por departamento, según zona urbana o rural y sexo |publicación=CENSO NACIONAL DE POBLACION, FAMILIAS Y VIVIENDAS DE 1970 |editorial = INDEC|página=82}}</ref>
+
+Cuenta con {{indec|34598|2022}}, lo que representa un incremento promedio anual del 1.1% frente a los {{indec|30590|2010}} del censo anterior.<ref name = "City"/> La mediana de edad se estableció en 30 años.<ref name="INDEC"/>
+{{Gráfica de evolución|tipo=demográfica|color_12=blue|nombre=Departamento Chacabuco|altura=300|anchura=300|1991|23015|2001|27813|2010|30590|2022|34598|notas=<small>Fuente: Censos nacionales del [[INDEC]]</small>}}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento Chacabuco (Chaco)| ]]

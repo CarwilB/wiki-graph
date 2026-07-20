@@ -1,0 +1,66 @@
+{{Info/Município do Brasil
+<!-- GeoID=2210102 -->
+<!-- Cabeçalho -->
+ | nome                 = São José do Peixe
+ | foto                 = 
+ | leg_foto             = 
+ | apelido              = São José
+<!-- Dados gerais -->
+ | brasão               = 
+ | bandeira             = Bandeira de São José do Peixe.png
+ | link_brasão          = 
+ | link_bandeira        = 
+ | link_hino            = 
+ | aniversário          = 
+ | fundação             ={{dtlink|||1956|idade}}
+ | gentílico            = sãojoseense ou sanjoséense
+ | lema                 = 
+ | prefeito             = Celso Antônio Mendes Coimbra
+ | partido              = [[Partido dos Trabalhadores|PT]]
+ | fim_mandato          = 2028
+<!-- Localização -->
+ | mapa                 = Piaui Municip SaoJosedoPeixe.svg
+ | latP                 = S | latG = 07 | latM = 29 | latS = 38
+ | lonP                 = O | lonG = 42 | lonM = 33 | lonS = 50
+ | estado               = Piauí
+ | mesorregião          = [[Mesorregião do Sudoeste Piauiense|Sudoeste Piauiense]]
+ | data_mesorregião     = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+ | microrregião         = [[Microrregião de Floriano|Floriano]]
+ | data_microrregião    = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+ | região_metropolitana = 
+ | vizinhos             = [[São Francisco do Piauí]], [[Colônia do Piauí]], [[São Miguel do Fidalgo]], [[Socorro do Piauí]], [[Ribeira do Piauí]], [[Flores do Piauí]], [[Itaueira]], [[Floriano (Piauí)|Floriano]] e [[Nazaré do Piauí]]
+ | dist_capital         = 268
+<!-- Características geográficas -->
+ | área                 = 1339.496
+ | área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+ | população            = 3741
+ | data_pop             = estimativa IBGE/2020<ref name="IBGE_Pop_2020">{{citar web |url =https://cidades.ibge.gov.br/brasil/pi/sao-jose-do-peixe/panorama|título=estimativa populacional 2020| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de agosto de 2020 |acessodata = 11 de novembro de 2020}}</ref>
+ | altitude             = 170
+ | clima                = 
+ | sigla_clima          = 
+<!-- Indicadores -->
+ | idh                  = 0.609 <!--favor manter o formato-->
+ | data_idh             = [[PNUD]]/[[2000]]<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+ | pib                  = {{formatnum:12560.572}} mil
+ | data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+ | pib_per_capita       = 3273.54
+ | data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''São José do Peixe''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Piauí]]. Localiza-se a uma [[latitude]] 07º29'37" sul e a uma [[longitude]] 42º33'49" oeste, estando a uma altitude de 170 metros. Sua população estimada em 2020 era de 3.741 habitantes.
+
+Possui uma área de 1370,1&nbsp;km².
+
+{{Referências}}
+
+==Ligações externas==
+* [https://www.saojosedopeixe.pi.gov.br/ Página da Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Piauí}}
+{{Municípios do Piauí}}
+{{Vale dos Rios Piauí e Itaueiras}}
+{{Portal3|Piauí}}
+[[Categoria:Vales do Rio Piauí e Itaueiras]]
+{{DEFAULTSORT:Sao Jose Peixe}}
+[[Categoria:Municípios do Piauí]]
+[[Categoria:Fundações no Piauí em 1956]]

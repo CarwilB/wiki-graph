@@ -1,0 +1,104 @@
+{{Ficha de entidad subnacional
+| nombre completo = Chuquihuta
+| unidad = [[Municipios de Bolivia|Municipio]]
+| bandera = 
+| escudo = 
+| mapa_loc = Bolivia
+| mapa_loc_1 = Potosí
+| mapa1 = <mapframe align="center" width="280" height="310" zoom="17" latitude="-18.592394" longitude="-66.362389"> 
+[{"type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q238079",
+    "properties": {
+      "stroke": "#000000",
+      "stroke-width": 5,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}},
+{ "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q1360897",
+    "properties": {
+      "stroke": "#996515", 
+      "stroke-width": 4,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}},
+{ "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q1642052",
+    "properties": {
+      "stroke": "#0047AB", 
+      "stroke-width": 4,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}},]
+</mapframe></center>
+| pie_mapa1 = Vista del municipio de Chuquihuta dentro <br/> de la [[provincia de Rafael Bustillo]] <br/>en el [[departamento de Potosí]]. <br/>
+| imagen = 
+| pie_de_imagen = 
+| tipo_superior_1 = [[Departamentos de Bolivia|Departamento]]
+| superior_1 = {{BOL|P}}
+| tipo_superior_2 = [[Provincias de Bolivia|Provincia]]
+| superior_2 = [[Provincia de Rafael Bustillo|Rafael Bustillo]]
+| dirigentes_títulos = [[Alcalde]]
+| dirigentes_nombres = Eulogio Llanque Choque
+| fundación = 
+| fundador = 
+| población = 8220
+| población_urb = 
+| población_met = 
+| población_año = 2014
+| población_post = 
+| superficie = 
+| superficie_post = 
+| altitud = 
+| gentilicio = Chuquihuteño -a
+| horario = [[UTC]] -4
+| lengua = [[Idioma español|Castellano, quechua (español)]]
+| prefijo = +591 2
+| página web = 
+| población_h = 4489
+| población_m = 3731
+}}
+'''Chuquihuta''', oficialmente '''Chuquihuta Ayllu Jucumani''',<ref name="ley" /> es una localidad y [[municipio]] de [[Bolivia]], ubicado en la [[provincia de Rafael Bustillo]] del [[departamento de Potosí]]. El municipio cuenta con una población de 8.019 habitantes (según el [[Censo boliviano de 2012|Censo INE 2012]]).<ref name=ine>{{cita web|título=Censo INE|url=http://censosbolivia.ine.gob.bo/censofichacomunidad/c_listadof/listar_comunidades|editorial=Instituto Nacional de Estadística|idioma=español|fechaacceso=23 de mayo de 2019|fechaarchivo=7 de noviembre de 2014|urlarchivo=https://web.archive.org/web/20141107025542/http://censosbolivia.ine.gob.bo/censofichacomunidad/c_listadof/listar_comunidades|deadurl=yes}}</ref> El municipio se ubica cercano a las altas montañas de la [[Cordillera Central (Bolivia)|Cordillera Central]] de los [[Andes]] bolivianos.
+
+Es uno de los municipios más jóvenes del país, desprendiéndose del municipio de [[Uncía]] al ser creado mediante la Ley 4039 el 17 de junio de 2009.<ref name=ley>{{cita web|título=Bolivia LEY No 4039 del 17 Junio 2009|url=https://www.derechoteca.com/gacetabolivia/ley-4039-del-17-junio-2009/|editorial=Gaceta Oficial de Bolivia|idioma=español|fecha=1 de julio de 2009|fechaacceso=19 de julio de 2019}}</ref>
+
+== Geografía ==
+Limita al oeste con el municipio de [[Uncía]], al sur con el [[departamento de Oruro]], al este con la [[provincia de Chayanta]] y al norte con el municipio de [[Chayanta]].
+
+== Demografía ==
+De acuerdo con el [[censo boliviano de 2024]], la población del municipio de Chuquihuta es de 8 220 habitantes.<ref name="resultados2024">{{cita web|url=https://nubecpv.ine.gob.bo/index.php/apps/onlyoffice/s/fBDwRbxQKgAxegF?fileId=548802|título=Resultados CPV 2024|fechaacceso=29 de abril de 2025|fecha=Septiembre de 2024|editorial=Instituto Nacional de Estadística de Bolivia}}</ref>
+
+La población del municipio aumentó en más de un tercio entre 1992 y 2024:
+{| class="wikitable"
+!Año
+!Habitantes (municipio)
+!Fuente
+|- align="center"
+|1992
+!5 916
+|<small>Censo</small>
+|- align="center"
+|2001
+!6 658
+|<small>Censo</small>
+|- align="center"
+|2012
+!8 019
+|<small>Censo</small>
+|- align="center"
+|2024
+!8 220
+|<small>Censo</small>
+|}
+
+== Transporte ==
+Chuquihuta se encuentra a 120 kilómetros por carretera al sureste de [[Oruro]], capital del departamento homónimo.
+
+Desde Oruro, la carretera asfaltada [[Ruta 1 (Bolivia)|Ruta 1]] conduce al sur 22 km vía [[Vinto]] hasta Machacamarquita, ocho kilómetros al norte de [[Machacamarca]]. En Machacamarquita, la [[Ruta 6 (Bolivia)|Ruta 6]] se bifurca en dirección sureste y, luego de 79 km, llega a la localidad de [[Llallagua]] por [[Huanuni]]. Desde allí, la Ruta 6 conduce otros 38 km por [[Uncía]] y Cala Cala hasta Chuquihuta y otros 53 km más hasta Pocoata y Macha.
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios del departamento de Potosí]]
+[[Categoría:Localidades de la provincia de Rafael Bustillo]]

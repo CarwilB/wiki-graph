@@ -1,0 +1,67 @@
+{{Info/Município do Brasil
+<!-- GeoID=2513158 -->
+<!-- Cabeçalho -->| nome = Santa Cecília
+| foto = 
+| leg_foto = 
+| apelido = Cecília
+<!-- Dados gerais -->| brasão = Brasão Santa Cecilia-PB.jpg
+| bandeira = Bandeira santa cecilia.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 13 de Dezembro
+| fundação = {{nowrap|{{dtlink|14|12|1995|idade}}}}
+| gentílico = ceciliense<ref>[http://biblioteca.ibge.gov.br/visualizacao/dtbs/paraiba/santacecilia.pdf Histórico de Santa Cecília no site do IBGE]</ref>
+| lema = 
+| prefeito = Marcílio Farias
+| partido = [[PSB]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Brazil Paraíba Santa Cecília location map.svg
+| latP = S
+| latG = 07
+| latM = 44
+| latS = 20
+| lonP = O
+| lonG = 35
+| lonM = 52
+| lonS = 44
+| estado = Paraíba
+| região_intermediária = Campina Grande
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |arquivourl=https://www.webcitation.org/6scTsdWoX?url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |arquivodata=2017-08-10 |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=17 de agosto de 2017 |urlmorta=no }}</ref>
+| região_imediata = Campina Grande
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017"/>
+| região_metropolitana = [[Região Metropolitana de Campina Grande|Campina Grande]]
+| vizinhos = [[Umbuzeiro]] (leste), [[Alcantil]] (oeste), [[Barra de Santana]] e [[Gado Bravo]] (norte) e [[Pernambuco]] (sul)
+| dist_capital = 200
+<!-- Características geográficas -->| área = 217.577
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=2 de dezembro de 2022|data=10 de outubro de 2022|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 7678
+| data_pop = [[IBGE]]/2022<ref name="IBGE_Pop_2022">{{citar web |url = https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-2020-censo4.html?=&t=resultados |título=Prévia do Censo Populacional 2022| obra = Censo Populacional 2022 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=28 de dezembro de 2022 |acessodata = 29 de dezembro de 2022}}</ref>
+| altitude = 505
+| clima = semiárido
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.520 <!-- Não mudar de ponto pra vírgula! -->
+| data_idh = [[PNUD]]/2000
+| pib = {{formatnum:54465,41}} mil
+| data_pib = [[IBGE]]/2019<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2513158 |titulo=Produto Interno Bruto dos Municípios 2019 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=12 de outubro de 2022}}</ref>
+| pib_per_capita = 8.305,19
+| data_pib_per_capita = [[IBGE]]/2019<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://santacecilia.pb.gov.br/ santacecilia.pb.gov.br]
+}}
+'''Santa Cecília''' é um [[Município (Brasil)|município brasileiro]] do estado da [[Paraíba]]. De acordo com o [[IBGE]] (Instituto Brasileiro de Geografia e Estatística), no ano de 2021 sua população foi estimada em  6 526 habitantes. Área territorial de 217,577&nbsp;km².
+
+==Geografia== 
+Com uma área total de 217,577&nbsp;km², o município está incluído na área geográfica de abrangência do [[clima semiárido|semiárido]] brasileiro, definida pelo [[Ministério da Integração Nacional]] em 2005<ref>[http://www.integracao.gov.br/desenvolvimentoregional/publicacoes/delimitacao.asp Ministério da Integração Nacional, 2005. Nova delimitação do semiárido brasileiro] {{Wayback|url=http://www.integracao.gov.br/desenvolvimentoregional/publicacoes/delimitacao.asp |date=20100326174954 }}.</ref>.  Esta delimitação tem como critérios o índice pluviométrico, o índice de aridez e o risco de [[seca]]. O município é delimitado ao norte pelo Rio Paraíba e ao leste e oeste por seus afluentes.
+
+==Ligações externas==
+*[http://www.ubam.com.br/ UNIÃO BRASILEIRA DE MUNICÍPIOS]
+*[http://www.cprm.gov.br/publique/cgi/cgilua.exe/sys/start.htm?sid=36&infoid=317 Dados municipais e mapa de alta resolução em PDF]
+
+{{Referências}}
+
+{{Região Metropolitana de Campina Grande}}
+{{Portal3|Brasil|Paraíba}}
+{{Esboço-municípiosbr/Paraíba}}
+
+[[Categoria:Municípios da Paraíba]]
+[[Categoria:Fundações na Paraíba em 1995]]

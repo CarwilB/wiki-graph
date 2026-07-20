@@ -1,0 +1,996 @@
+{{ver desambig|este=um município brasileiro||Dourado}}
+{{Mais notas|data=maio de 2022}}
+{{Formatar referências|data=dezembro de 2020}}
+{{Info/Município do Brasil
+<!-- GeoID=5003702 -->| nome = Dourados
+| preposição = de
+| foto = Imagem_aérea_de_Dourados_-_2019.jpg
+| leg_foto = [[Fotografia aérea]] de Dourados
+| brasão = Brasao Dourados MatoGrossodoSul Brasil.svg
+| bandeira = Bandeira de Dourados (MS).svg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino de Dourados
+| lema = ''Terra de Antônio João''
+| apelido = [[Lista de apelidos das cidades no Brasil|Portal do Mercosul]]"<ref>{{citar web|url=http://www.destinoshow.com/article/265/atravesse-o-portal-do-mercosul-e-descubra-dourados|título=Atravesse o Portal do Mercosul e descubra Dourados|autor=|data=|publicado=Portal Destinoshow|acessodata=27 de fevereiro de 2013|arquivourl=https://web.archive.org/web/20131230234612/http://www.destinoshow.com/article/265/atravesse-o-portal-do-mercosul-e-descubra-dourados|arquivodata=2013-12-30|urlmorta=yes}}</ref><br>"[[Lista de apelidos das cidades no Brasil|Cidade Modelo]]<ref>{{citar web|url=http://www.progresso.com.br/caderno-a/dourados-de-municipio-modelo-a-polo-regional|título=Dourados, de município modelo a polo regional|autor=|data=21 de dezembro de 2012|publicado=[[O Progresso]]|acessodata=23 de fevereiro de 2013}}</ref><!-- Dados gerais -->
+| gentílico = [[wikt:douradense|douradense]]<ref>{{citar web|url=http://www.ihgms.com.br/_upload/livros/QM4.pdf|título=Gentílico dos municípios de Mato Grosso do Sul - IHGMS (PDF)}}{{Ligação inativa|data=maio de 2019 }}</ref>
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Dourados location map.svg
+| latP = S
+| latG = 22
+| latM = 13
+| latS = 15
+| lonP = O
+| lonG = 54
+| lonM = 48
+| lonS = 21
+| estado = Mato Grosso do Sul
+| região_intermediária = Dourados
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=2 de fevereiro de 2018}}</ref>
+| região_imediata = Dourados
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017"/>
+| região_metropolitana = [[Região da Grande Dourados|Grande Dourados]] (não-oficial)
+| vizinhos = {{Collapsible list |titlestyle=font-weight:normal; background: transparent; text-align:left;|title=Ver lista
+|'''Norte:''' [[Itaporã]], [[Douradina]], [[Maracaju]] e [[Rio Brilhante]]
+|'''Sul:''' [[Ponta Porã]], [[Laguna Carapã]], [[Caarapó]] e [[Fátima do Sul]]
+|'''Leste:''' [[Deodápolis]]
+|'''Oeste:''' [[Ponta Porã]]
+}}
+| dist_capital = 214
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025|wayb=20220614064216 }}</ref>
+| fundação = {{Dtlink|15|06|1914|idade}}
+| emancipação = {{Dtlink|20|12|1935|idade}}<br>- de [[Ponta Porã]]
+| aniversário = 20 de dezembro
+| distritos = Dourados (sede)<br>
+[[Guaçu]]<br>
+[[Indápolis]]<br>
+[[Itaum (distrito)|Itaum]]<br>
+[[Panambi (Dourados)|Panambi]]<br>
+[[Picadinha]]<br>
+[[São Pedro (Dourados)|São Pedro]]<br>
+[[Vila Formosa (Dourados)|Vila Formosa]]<br>
+[[Vila Vargas]]
+| prefeito = [[Marçal Filho]]
+| partido = [[Partido da Social Democracia Brasileira|PSDB]]
+| fim_mandato = 2028
+| vereadores = 19
+| área = 4086.387
+| área_pos = [[Lista de municípios do Brasil por área|BR: 361º]] [[Lista de municípios de Mato Grosso do Sul por área|MS: 26º]]
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = 205.990
+| área_urbana_pos = [[Lista das maiores áreas urbanas do Brasil por município|BR: 10º]] [[Lista de municípios de Mato Grosso do Sul por área urbana|MS: 2º]]
+| área_urbana_ref = est. [[Prefeitura de Dourados]]<ref name="Área_urbana">{{citar web |url=http://www.ibeas.org.br/congresso/Trabalhos2012/XI-055.pdf|titulo= Caracterização geofísica da vulnerabilidade ambiental na cidade de Dourados |autor= Camila Souza de Andrade (Universidade Federal da Grande Dourados) |publicado= Instituto Brasileiro de Ensino e Aperfeiçoamento em Saúde (IBEAS)|página=3|data= 2011 |acessodata= 4 de maio de 2015}}</ref><ref name="Área_urbana_1">{{citar web |url=http://www.progresso.com.br/caderno-a/ampliacao-do-perimetro-urbano-e-positiva-diz-nogueira|titulo= “Ampliação é positiva”, diz Nogueira |autor= Cesar Cordeiro (redação) |publicado= [[O Progresso (jornal)|O Progresso]] |data= 14 de setembro de 2011 |acessodata= 5 de maio de 2015}}</ref>
+| população = 264017<!--favor manter o formato-->
+| população_pos = [[Lista de municípios do Brasil acima de cem mil habitantes|BR: 123º]] [[Lista de municípios da região Centro-Oeste do Brasil por população|CO-BR: 8º]] [[Lista de municípios de Mato Grosso do Sul por população|MS: 2º]]
+| data_pop = Estimativa Censo IBGE 2025
+| altitude = 430
+| altitude_ref = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|autor=|data=|publicado=Embrapa|acessodata=19 de julho de 2011|wayb=20201115011851}}</ref>
+| clima = [[Tropical]] [[Aw]] e [[subtropical]]<ref name="Clima">[http://www.accuweather.com/en/br/dourados/33742/january-weather/33742?monyr=1/1/2012&view=table Tabela climática de Dourados] - Accu Weather</ref>
+| sigla_clima = Cfa
+| CEP = 79.800-000 a 79.849-999<ref name="Correios">{{Citar web|url= http://www.correios.com.br/|titulo=CEP de cidades brasileiras|publicado=[[Empresa Brasileira de Correios e Telégrafos|Correios]]|acessodata=31 de Julho de 2008}}</ref>
+| idh = 0.747 <!--favor manter o formato-->
+| idh_pos = BR: 599° [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 14º]]
+| data_idh = [[PNUD]]/2010<ref name="PNUD">{{citar web |url=http://atlasbrasil.org.br/2013/perfil/dourados_ms|titulo=Perfil do município de Dourados - MS |autor= Programa das Nações Unidas para o Desenvolvimento|publicado= Atlas do Desenvolvimento Humano no Brasil 2013 |data= 2010 |acessodata= 28 de dezembro de 2013 |wayb= 20180526041837 }}</ref>
+| gini = {{Formatnum:0.52}}
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 16º]]
+| data_gini = [[PNUD]]/2010<ref name="PNUD"/>
+| pib = {{formatnum:20258000.000}} mil
+| pib_pos = [[Lista de municípios do Brasil por PIB|BR: 81º]] [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 2º]]
+| data_pib = [[IBGE]]/[[2023]]<ref name="PIB">[https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?edicao=38672&t=resultados IBGE-produto-interno-bruto-dos-municipios]</ref>
+| pib_per_capita = 83.240,35
+ ([[Lista de municípios do Brasil por PIB per capita|BR: 663º]] [[Lista de municípios de Mato Grosso do Sul por PIB per capita|MS: 20º]])
+| data_pib_per_capita = [[IBGE]]/[[2021]]
+| padroeiro = [[Nossa Senhora da Imaculada Conceição]] <small>([[Lista de padroeiros de Mato Grosso do Sul|Rel. MS]])</small>
+| site_prefeitura = {{Link|pt|2=http://www.dourados.ms.gov.br|3=www.dourados.ms.gov.br}}
+| site_câmara = {{Link|pt|2=http://www.camaradourados.ms.gov.br/|3=www.camaradourados.ms.gov.br}}
+}}
+
+'''Dourados''' é um [[Município (Brasil)|município brasileiro]] da [[Regiões do Brasil|região]] [[Região Centro-Oeste do Brasil|Centro-Oeste]], localizado no sul do estado de [[Mato Grosso do Sul]]. Um dos mais promissores municípios da [[região Centro-Oeste]], sendo o maior município do interior de [[Mato Grosso do Sul]].
+
+O município está situado entre a [[Serra de Maracaju]] e a [[bacia do Rio Paraná]] sendo também parte integrante da na [[Região geográfica intermediária|Região Geográfica Intermediária]] de [[Região Geográfica Intermediária de Dourados|Dourados]] e [[Região geográfica imediata|Região Geográfica Imediata]] de [[Região Geográfica Imediata de Dourados|mesmo nome]].<ref name="IBGE_DTB_2017" /> Assim como no resto do [[Mato Grosso do Sul|estado]], sua bebida característica é o [[tereré]], que é de fácil preparo e tomado principalmente nos encontros informais entre familiares e amigos.
+
+Fundada em 1935, Dourados teve desenvolvimento lento até a segunda metade do século XX, por causa das deficiências de meios de transporte e vias de comunicação com outras cidades e estados. Nos [[anos 1940]], a cidade já contava com 14.985 [[habitante]]s. A partir dos [[anos 1950]], com a abertura de rodovias, acelerou-se seu desenvolvimento{{carece de fontes|data=abril de 2017}} e Dourados tornou-se importante centro agropecuário e de serviços a partir de então. Nos [[anos 1960]] o município já possuía 84.955 habitantes (466,9% habitantes a mais que em 1940), sendo nessa época o município mais populoso de todo o [[Mato Grosso]] (suplantando então [[Campo Grande (Mato Grosso do Sul)|Campo Grande]] e [[Cuiabá]]). Já nos [[anos 1980]] sua população somava 106 483 habitantes, ou 25,3% de saldo em duas décadas. Nos [[anos 1990]], além do crescimento da [[agropecuária]], o desenvolvimento comercial e de serviços na zona urbana foi decisivo para que Dourados se consolidasse como centro de serviços e agropecuário. Nos [[anos 2000]] já eram 164 700 habitantes (54,7% de crescimento em vinte anos). Nos dez anos seguintes houve um acréscimo de 19% em sua população, que somou quase 200 mil habitantes.<ref name="IBGE_Censo_2010" /> Em mais de 70 anos de existência, a cidade de Dourados teve crescimento demográfico total de 1 208,4% entre 1940 e 2010. Atualmente a cidade é um importante polo regional, de serviços e agropecuário{{carece de fontes|data=abril de 2017}} para uma região com cerca de 1 milhão de habitantes, incluindo parte do [[Paraguai]], o que lhe confere a alcunha "Portal do Mercosul".<ref>{{Citar web|ultimo=News|primeiro=Campo Grande|url=https://www.campograndenews.com.br/reportagens-especiais/chamada-de-portal-do-mercosul-2a-cidade-de-ms-comemora-oito-decadas|titulo=Chamada de Portal do Mercosul, 2ª cidade de MS comemora oito décadas|acessodata=2023-12-03|website=Campo Grande News|lingua=pt-BR|wayb=20250809181817}}</ref>
+
+De acordo com estimativas do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) de 2021, possui uma população de {{fmtn|227990}} habitantes (e {{fmtn|55|habitantes por km²}}), sendo a [[Lista de municípios de Mato Grosso do Sul por população|cidade mais populosa]] do Interior de Mato Grosso do Sul, além de ser o [[Lista de municípios do Brasil acima de cem mil habitantes|137º maior município brasileiro]] e o [[Lista de municípios da região Centro-Oeste do Brasil por população|9º maior município]] do [[Centro-Oeste do Brasil]].<ref name="IBGE_Pop"/> Seu aeroporto é uma das principais portas de acesso para turistas que desejam visitar a cidade juntamente com seu terminal rodoviário. E também por ambos é possível visitar a partir de Dourados as regiões de [[Bonito (Mato Grosso do Sul)|Bonito]] e o [[Pantanal]].{{carece de fontes|data=abril de 2017}} Com cerca de [[R$]] 7,3 bi de PIB em 2015, Dourados tem o [[Lista de municípios de Mato Grosso do Sul por PIB|terceiro maior PIB]] entre os municípios de MS, representando cerca de 9% do total das riquezas produzidas no estado, e entre os [[Lista de municípios do Brasil por PIB|140 maiores PIB]] entre os municípios do Brasil. Já o PIB per capita é de R$ 34,2 mil no mesmo ano.<ref name="IBGE_PIB"/> A cidade também ficou com o 114º maior potencial de consumo (IPC Marketing) entre todas as cidades brasileiras em 2014, com índice de {{fmtn|0.128|%}}. No estado ficou em segundo lugar.<ref name="Consumo"/> A cidade também é a 129ª menos violenta entre os municípios brasileiros com mais de 100 mil habitantes considerando mortes por agressão (homicídios) e em mortes violentas por causas indeterminadas (MVCI), onde registrou 60 assassinatos (28,2 mortes por 100 mil habitantes) segundo estudo do [[Instituto de Pesquisa Econômica Aplicada]] (IPEA).<ref name="At_Vi_2017"/>
+
+O município é destaque na educação sendo considerada um pólo educacional e universitário de Mato Grosso do Sul,  tendo como principais instituições à Universidade Federal da Grande Dourados (UFGD), Universidade Estadual de Mato Grosso do Sul e a Centro Universitário da Grande Dourados (UNIGRAN)<ref>{{Citar web|url=https://www.douradosagora.com.br/dourados/dourados-se-consolida-como-cidade-universitaria|titulo=Dourados se consolida como Cidade Universitária|acessodata=2018-07-05|obra=Dourados Agora - Notícias de Dourados-MS e Região.|lingua=pt-BR|wayb=20241130100517}}</ref> o município oferece uma boa variedade de opções para os ensino [[Ensino médio|médio]], [[Ensino técnico|técnico]] e [[Ensino superior|superior]]. O município conta ainda com a presença de instituições que promovem educação não formal sendo pioneira na fundação do movimento [[Escotismo|escoteiro]] no Estado tendo como principal instituição o [http://07ms.org.br/ Grupo Escoteiro São Jorge]  que vem promovendo ações sociais e educativas no município.<ref>{{Citar web|url=https://www.douradosagora.com.br/noticias/dourados/dourados-sedia-projeto-nacional-de-educacao-escoteira-para-comunidade|titulo=Dourados sedia projeto nacional de educação escoteira para comunidade|acessodata=2018-07-05|obra=Dourados Agora - Notícias de Dourados-MS e Região.|lingua=pt-BR|wayb=20180719054743}}</ref>
+== Geminação ==
+'''Dourados''' possui quatro [[cidades-irmãs]]:
+* {{JAPb}} [[:en:Memuro,_Hokkaido|Memuro]], [[Japão]]. (Desde 2015) <ref>{{citar web|ultimo=Portal|primeiro=Dourados|url=https://portal.dourados.ms.gov.br/index.php/prefeituras-de-dourados-e-memuro-do-japao-estreitam-lacos-culturais/|titulo=Dourados e Memuro são irmãs agora|website=Portal de Dourados|urlmorta=não}}</ref>
+* {{Flagicon|EUA}} [[Kearney (Missouri)|Kearney]], [[Estados Unidos]]. (Desde 2025) <ref>{{citar web|ultimo=Portal|primeiro=Dourados|url=https://portal.dourados.ms.gov.br/index.php/murilo-assina-acordo-de-cooperacao-com-cidade-americana-para-desenvolvimento-humano/|titulo=Dourados Gamha cidade irma americana|data=2025|acessodata=2026-05-21|urlmorta=não}}</ref>
+* {{ARGb}} [[Jujuy]], [[Argentina]]. (Desde 2025) <ref name=":0">{{Citar web|ultimo=Rios|primeiro=Matheus|url=https://rotabioceanica.com.br/2025/10/campo-grande-firma-acordos-de-cidades-irmas-com-jujuy-e-iquique/|titulo=Dourados firma acordos de Cidades-Irmãs com Jujuy e Iquique • Rota Bioceânica|data=2025-10-11|acessodata=2026-05-21|website=Rota Bioceânica|língua=pt-BR|wayb=20251206120403}}</ref>
+* {{flagicon|Chile}} [[Iquique|Iqueque]], [[Chile]]. (Desde 2025) <ref name=":0" />
+
+== História ==
+[[Ficheiro:Praça Antônio João.jpg|miniaturadaimagem|Praça Antônio João na década de 1940|esquerda]]
+{{Artigo principal|História de Dourados}}
+Em 1870, com o término da [[Guerra do Paraguai]], iniciou-se um povoamento mais efetivo nessa região, que foi percorrida também pelos espanhóis e bandeirantes em busca de riquezas naturais. Em 1884, formou-se o povoado de São João Batista de Dourados, próximo ao Rio Dourados.
+
+Em 1909, cerca de 50 pioneiros (destacava-se nesse grupo Marcelino Pires, Januário Pereira de Araújo e Joaquim Teixeira Alves) que iniciam um trabalho apoiado na criação de um patrimônio. Pela da Lei nº 658, de 15 de junho de 1914, Dourados é elevado a distrito do município de Ponta Porã, e sua abrangência incluía os dois distritos policiais existentes na época (que foram criados em 1910). Foi aí que surgiu o Distrito de Paz. Nessa época algumas pessoas já haviam fixado residência com suas famílias na região.
+
+A vila se desenvolvia quando, pelo decreto estadual de nº 30 de 20 de dezembro de 1935, foi oficialmente criado o município de Dourados, sendo desmembrado de Ponta Porã em 22 de janeiro de 1936. Seu primeiro prefeito nomeado foi João Vicente Ferreira. Em 13 de setembro de 1943 foi criado o [[Território Federal de Ponta Porã]] pelo presidente Getúlio Vargas, que abrangia os municípios de Dourados, Porto Murtinho, Miranda, Nioaque, Bela Vista, Ponta Porã, Maracaju e Bonito (sendo Ponta Porã sua capital). Este durou apenas três anos (1943 a 1946), sendo reintroduzido ao estado de Mato Grosso em 7 de janeiro de 1947.<ref>[http://www.achetudoeregiao.com.br/ms/ponta_pora/historia.htm História de Ponta Porã] - Ache Tudo e Região</ref> Em [[1960]] o município já possuía 84.955 habitantes, sendo nessa época o município mais populoso de todo o [[Mato Grosso]] (suplantando então [[Campo Grande (Mato Grosso do Sul)|Campo Grande]] e [[Cuiabá]]).
+
+Em 11 de outubro de 1977 Dourados passa a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+=== Imigração ===
+A partir dos [[anos 1950]] a cidade começou a receber um grande fluxo de migrantes de várias partes do Brasil e também imigrantes. Esses forasteiros ocuparam várias regiões do município. Seu povoamento foi efetuado principalmente:
+* pela fixação de ex-combatentes;
+* pela vinda de gaúchos, fugitivos na sua maioria, das consequências da revolução federalista, ocorrida no Rio Grande do Sul entre 1893 e 1895. Mais tarde, nos anos 1970, mais uma leva chega a região em razão dos preços das terras serem baixos;
+* pelo desenvolvimento da cultura pastoril, principalmente por famílias mineiras;
+* pela construção da [[Estrada de Ferro Noroeste do Brasil]], de 1904 a 1914, atraindo paulistas para região;
+* pela ação da [[Companhia Mate Laranjeira|Companhia Mate Laranjeira S/A]], que deteve o monopólio da exploração dos ervais em toda a região, entre os anos de 1882 e 1924.
+
+=== Topônimo ===
+Seu nome vem da primeira metade do século XIX, onde formou-se o núcleo populacional de São João Batista de Dourados, nome que tomou o povoado por ser próximo ao rio Dourados.
+
+== Geografia ==
+{{Artigo principal|Geografia de Dourados}}
+===Localização===
+O município de Dourados está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]] e na zona do planalto do estado de Mato Grosso do Sul, próximo à Serra de Maracaju e na [[bacia do Rio Paraná]]. Até 2017 se localizava oficialmente na [[Mesorregião do Sudoeste de Mato Grosso do Sul]] e [[Microrregião de Dourados]].<ref name="IBGE_DTB_2008">{{Citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref> Com a nova divisão regional do país criada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) em 2017, passou a integrar a [[Região geográfica intermediária|Região Geográfica Intermediária]] de [[Região Geográfica Intermediária de Dourados|Dourados]] e [[Região geográfica imediata|Região Geográfica Imediata]] de [[Região Geográfica Imediata de Dourados|mesmo nome]].<ref name="IBGE_DTB_2017"/>
+
+Situa-se próximo à divisa com o estado do Paraná e próximo à fronteira com o Paraguai (cerca de 120 [[km]]). Dourados conta com um solo rico em matéria prima, o que se traduz em produção diversificada. Localiza-se na [[latitude]] de 22º13’18.54” [[Sul]] e [[longitude]] de 54°48’23.09” [[Oeste]]. Distâncias:
+* {{fmtn|235|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]).
+* {{fmtn|1250|km}} da capital federal ([[Brasília]]).
+
+=== Geografia física ===
+[[Ficheiro:Rio Dourados - panoramio - Alceu Mauro Denes (2).jpg|esquerda|miniaturadaimagem|Rio Dourados]]
+Os solos mais comumente encontrados em Dourados são os latossolos vermelhos distroférricos (76,2%) e eutroférricos (5,1%), outrora chamados de [[Terra roxa|Latossolos Roxos ou “terras roxas”]] no dizer popular. Outros solos comumente encontrados no município são areia, cascalho e basalto para brita.
+
+No relevo, Dourados está próxima à [[serra de Maracaju]]. Apesar de estar a mais de 400 m de altitude média, a cidade tem topografia plana. O [[Rio Dourados]], o principal de Dourados, faz parte da bacia do [[rio Paraná]] e sub-bacia do [[rio Ivinhema]]. Outros rios que banham o município são o próprio Ivinhema, que recebe o nome de Brilhante ao passar pelo município do mesmo nome, além dos rios Santa Maria e Peroba. A vegetação natural é de campos limpos, possuindo também grandes partes de cerrados e grandes manchas de matas tropicais.
+
+Tem clima tropical de altitude, de verões brandos, sendo seco no inverno e tropical úmido no verão. Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de 1971 (a partir de 4 de dezembro) a 1984 e a partir de 1993, a menor [[temperatura]] registrada em Dourados foi de {{fmtn|-1.7|°C}} em 20 de julho de 1981 e a maior atingiu {{fmtn|41.2|°C}} em 16 de setembro de 2019. O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas foi de {{fmtn|123.6}} milímetros (mm) em 12 de março de 1999.<ref name="bdmep.inmet.gov.br"/><ref name="Estação: DOURADOS (A721)"/>
+{{Tabela climática de Dourados}}
+
+=== Geografia política ===
+{{AP|[[Lista de bairros de Dourados]]}}
+Fuso de -1h com relação a [[Brasília]] e de -4h do [[Tempo Universal Coordenado]] com relação a [[Greenwich]].
+
+A área total do município é de 4 096,90&nbsp;km²<ref name ="IBGE_Área"/> e a área urbana totaliza 205,990&nbsp;km² segundo a prefeitura.<ref name="Área_urbana"/>
+
+Dourados tem como distritos [[Guaçu]], [[Indápolis]], [[Itaum (distrito)|Itaum]], [[Panambi (Dourados)|Panambi]], [[Picadinha]], [[São Pedro (Dourados)|São Pedro]], [[Vila Formosa (Dourados)|Vila Formosa]] e [[Vila Vargas]]
+
+Na sede possui no total 170 bairros.
+
+==== Limites ====
+O município faz divisa, ao Norte, com Itaporã, Douradina, Maracaju e Rio Brilhante; ao Sul, com Ponta Porã, Laguna Carapã, Caarapó e Fátima do Sul; ao Leste, com Deodápolis; e a Oeste, com Ponta Porã.
+
+== Demografia ==
+Desde a sua fundação, em 1935, Dourados passou por vários processos de desenvolvimento, sempre com altos e baixos. Inicialmente tinha desenvolvimento lento em função de seus acessos precários para outras cidades e estados. Nos [[anos 1940]], a cidade já contava com 14.985 habitantes e a partir dos [[anos 1950]], com a abertura de rodovias, acelerou-se seu desenvolvimento e Dourados tornou-se importante centro agropecuário e de serviços a partir de então, já possuindo 22.834 habitantes (52,4% de crescimento). Nos [[anos 1960]] o município já possuía 84 955 habitantes (272,1% habitantes a mais que em 1950) e nos [[anos 1970]] o município decaiu sua população para 79.186 habitantes (recaída de -6,8% habitantes) em função do desmembramento de alguns municípios como [[Fátima do Sul]], [[Caarapó]] e [[Naviraí]] na década anterior. Já nos [[anos 1980]] sua população somava 106 483 habitantes, ou 34,5% de saldo em dez anos. Nos [[anos 1990]], além do crescimento da [[agropecuária]], o desenvolvimento comercial e de serviços na zona urbana foi decisivo para que Dourados se consolidasse como centro de serviços e agropecuário a partir de então, o que fez sua população saltar para 135 984 ou 27,7% a mais com relação a 1980. Nos [[anos 2000]] já eram 164.700 habitantes (21,1% a mais em dez anos). Nos dez anos seguintes houve um acréscimo de 19% em sua população, deixando-a próximo dos 200 mil habitantes. Em mais de 70 anos de existência, a cidade de Dourados teve crescimento demográfico total de 1 208,4% entre 1940 e 2010.
+
+Segundo o censo de 2010, a população do município foi contada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) em {{fmtn|196068}} habitantes, apresentando uma densidade populacional de {{fmtn|47.98}} habitantes por km². Segundo o censo de 2010, {{fmtn|96274}} habitantes eram homens e {{fmtn|99761}} habitantes eram mulheres. Ainda segundo o mesmo censo, 92,31% da população era urbana ({{fmtn|181005}} habitantes viviam na zona urbana e {{fmtn|15030}} na zona rural). Segundo o censo de 2010 do [[Instituto Brasileiro de Geografia e Estatística|IBGE]], a população douradense é formada por [[Brasileiros brancos|brancos]] (55,77%), [[pardos]] (35,32%), [[Afro-brasileiros|negros]] (3,95%), [[Povos indígenas do Brasil|indígenas]] (3,48%)  e [[Brasileiros asiáticos|amarelos]] (1,48%).<ref name="IBGE_Censo_2010"/> Dourados também foi incluída em um estudo divulgado em 2017 pelo [[Instituto de Pesquisa Econômica Aplicada]] (IPEA) que analisa taxas de homicídios. Segundo o estudo, a cidade está entre as 150 cidades menos violentas (129ª posição) entre os municípios com mais de 100 mil habitantes. Considerando mortes por agressão (homicídios) a cidade registrou 56 assassinatos (26,3 mortes por 100 mil habitantes) e em mortes violentas por causas indeterminadas (MVCI) 4 assassinatos (1,9 mortes por 100 mil habitantes). No somatório de ambos os índices totalizou 60 assassinatos (28,2 mortes por 100 mil habitantes).<ref name="At_Vi_2017">[http://www.ipea.gov.br/portal/images/170602_atlas_da_violencia_2017.pdf Atlas da Violência 2017] – Ipea</ref>
+
+{| class=wikitable style="float:right; margin: 1em;border-collapse:border;"
+! colspan=2|Crescimento da população<ref name="IBGE_Pop"/>
+|-
+! 1940
+| 14 985
+|-
+! 1950
+| 22 834
+|-
+! 1960
+| 84 955
+|-
+! 1970
+| 79 186
+|-
+! 1980
+| 106 483
+|-
+! 1991
+| 135 984
+|-
+! 1996
+| 153 191
+|-
+! 2000
+| 164 700
+|-
+! 2006
+| 186 357
+|-
+! 2010
+| 196 068
+|-
+! 2012
+| 200 729
+|-
+! 2014
+| 210 218
+|-
+! 2015
+| 212 870
+|-
+! 2016
+| 215 486
+|-
+! 2017
+| 218 069
+|-
+!2018
+!220 965
+|}
+
+Sua população estimada pelo IBGE em 2016 foi de {{fmtn|218069}} habitantes, com uma densidade demográfica de {{fmtn|53.36}} habitantes por quilômetro quadrado.<ref name="IBGE_Pop"/> Dourados é o [[Lista de municípios de Mato Grosso do Sul por população|maior município]] do interior de Mato Grosso do Sul e está entre os [[Lista de municípios do Brasil acima de cem mil habitantes|150 maiores do Brasil]], além de ser o [[Lista de municípios da região Centro-Oeste do Brasil por população|10º maior município]] da [[região Centro-Oeste do Brasil]]. Pela estimativa a cidade de Dourados tem hoje 220 965 habitantes. Fonte: IBGE - Cidades 2018.
+
+=== Religião ===
+Em Dourados são diversas as manifestações religiosas existentes na cidade. Embora se desenvolveu sobre uma sociedade eminentemente [[Catolicismo no Brasil|católica]], tanto devido à colonização quanto à imigração — e até hoje a maioria dos douradenses se declara católica — é possível também encontrar atualmente pelo município dezenas de denominações protestantes diferentes. Entre elas as [[religiões orientais]] têm relevância entre as crenças mais praticadas pelos douradenses. Também são consideráveis as comunidades [[Espiritismo|espíritas]], [[testemunhas de jeová]], além dos [[ateu]]s.
+
+De acordo com dados do [[Censo demográfico|censo]] de 2000 realizado pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), a população de Dourados está composta por 98,04% de cristãos, que se divide em católicos e ortodoxos (58,62%), protestantes (29,14%), restauracionista (0,52%) e outros cristãos (10,26%). Há ainda os reencarnacionista (1,75%), africanos (0,16%), orientais (0,71%), tradições indígenas (0,04%), tradições esotéricas (0,01%), não definida (0,76%) e os não religiosos (14,85%).<ref name="SIDRA_Religião">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião |autor= Sistema IBGE de Recuperação Automática (Sidra) |data=2000 |acessodata=6 de abril de 2012}}</ref><ref name="Grupos_religiosos">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=14 de maio de 2013|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref> De acordo com o censo brasileiro de 2022, a composição religiosa da cidade era de 50,83% católicos, 32,16% evangélicos ou protestantes, 1,56% espíritas, 0,52% umbandistas ou candomblecistas, 0,09% de religião tradicional, 3,87% de outras religiões, 10,73% irreligiosos, 0,08% desconhecidos e 0,16% não declarados.
+
+==== Cristãos ====
+É de longe o maior grupo religioso presente em Dourados, onde é composto por 98,04% dos seus habitantes. Desses, 58,62% são católicos e ortodoxos, 29,14% são protestantes, 0,52% restauracionista e 10,26% representados por outras opções.<ref name="SIDRA_Religião2">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião|data=2000|acessodata=6 de abril de 2012|autor=Sistema IBGE de Recuperação Automática (Sidra)}}</ref><ref name="Grupos_religiosos2">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|acessodata=14 de maio de 2013|publicado=Instituto Brasileiro de Geografia e Estatística|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref>
+
+==== Católicos e ortodoxos ====
+[[Ficheiro:Murillo_immaculate_conception.jpg|direita|miniaturadaimagem|308x308px|Exemplo de uma imagem de [[Imaculada Conceição]], padroeira do município de Dourados]]
+Dourados se situa no país mais católico do mundo em números absolutos. A [[Igreja Católica]] teve seu estatuto jurídico reconhecido pelo governo federal em outubro de 2009,<ref>{{Citar web|url=http://oglobo.globo.com/economia/mat/2009/10/08/senado-aprova-acordo-com-vaticano-767959739.asp|título=Senado aprova acordo com o Vaticano|data=8 de outubro de 2009|acessodata=26 de março de 2010|publicado=O Globo|autor=Cristiane Agostine|arquivourl=https://www.webcitation.org/61tYcvRxj?url=http://oglobo.globo.com/economia/mat/2009/10/08/senado-aprova-acordo-com-vaticano-767959739.asp|arquivodata=2011-09-22|urlmorta=no}}</ref> ainda que o Brasil seja atualmente um [[Estado secular|estado oficialmente laico]].<ref>{{citar web|ultimo=Fernando Fonseca de Queiroz|url=https://jus.com.br/artigos/8519/brasil-estado-laico-e-a-inconstitucionalidade-da-existencia-de-simbolos-religiosos-em-predios-publicos|titulo=Brasil: Estado laico e a inconstitucionalidade da existência de símbolos religiosos em prédios públicos|data=Outubro de 2005|acessodata=21/06/2022|publicado=Jus Navigandi|wayb=20251220070817}}</ref>
+
+A [[Igreja Católica]] reconhece como [[Padroeiro|padroeiros]] da cidade [[Imaculada Conceição]]. O município faz parte da Circunscrições eclesiásticas da Regional Oeste I (que atende [[Mato Grosso do Sul]]) e de acordo com a divisão resolvida pela [[Igreja Católica]], o município de Dourados pertence à Província Eclesiática de Campo Grande, mais precisamente à [[Diocese de Dourados]] e divide o território do município de Dourados em duas foranias eclesiásticas (Leste e Oeste) e é sede de 9 paróquias e cinco foranias. Seu atual [[bispo]] é, desde 2001, [[Redovino Rizzardo|Dom Redovino Rizzardo]]. Com 58,62% da população, a igreja católica e ortodoxa no município de Dourados é formado por representantes da Igreja Católica Apostólica Romana (58,42%), Católica Apostólica Brasileira (0,16%) e Católica Ortodoxa (0,04%).<ref name="SIDRA_Religião3">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião|data=2000|acessodata=6 de abril de 2012|autor=Sistema IBGE de Recuperação Automática (Sidra)}}</ref><ref name="Grupos_religiosos3">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|acessodata=14 de maio de 2013|publicado=Instituto Brasileiro de Geografia e Estatística|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref>
+
+; Igreja Matriz
+
+A Catedral Nossa Senhora da Imaculada Conceição: começou a ser construída em 1925, sendo inaugurada no ano seguinte. A população levou para a capela uma imagem de Nossa Senhora da Conceição, trazida da França. A Paróquia foi criada em 1935. A atual edificação foi construída em 1943 e reformada em 1953, abrigando em seu interior um belo mosaico em cerâmica.<ref>{{citar web|url=http://www.diocesedourados.com.br/?modulo=verparoquia_new&id=4101|titulo=Diocese de Dourados|acessodata=19 de junho de 2014|wayb=20140812144753}}</ref>
+
+==== Protestantes ====
+A cidade de Dourados possui os mais diversos credos protestantes, sendo representado por 29,14% dos habitantes do município, sendo evangélicos históricos (5,53% de adeptos) e evangélicos pentecostais e neopentecostais (14,22%) as duas principais correntes representantes.<ref name="SIDRA_Religião4">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião|data=2000|acessodata=6 de abril de 2012|autor=Sistema IBGE de Recuperação Automática (Sidra)}}</ref><ref name="Grupos_religiosos4">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|acessodata=14 de maio de 2013|publicado=Instituto Brasileiro de Geografia e Estatística|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref>
+
+===== Evangélicos históricos =====
+A cidade possui as mais diversas subdivisões de evangélicos de missão. Representado por 5,53% dos munícipes, 0,33% são luteranos, 1,68% são presbiterianos, 0,21% são metodistas, 2,32% são batistas e 0,99 são adventistas.<ref name="SIDRA_Religião4">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião|data=2000|acessodata=6 de abril de 2012|autor=Sistema IBGE de Recuperação Automática (Sidra)}}</ref><ref name="Grupos_religiosos4">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|acessodata=14 de maio de 2013|publicado=Instituto Brasileiro de Geografia e Estatística|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref>
+
+===== Evangélicos Pentecostais e Neopentecostais =====
+Evangélicos pentecostais e neopentecostais são representado por 14,22% da população. Desse total, 3,82% da Assembleia de Deus, 1,53% são da Congregação Cristã no Brasil, 0,08% da Brasil para Cristo, 1,78% da Evangelho Quadrangular, 0,48% da Universal do Reino de Deus, 1,09% da Deus é Amor, 0,04% da Maranata, 0,06 da Comunidade Evangélica e 5,36% não especificado.<ref name="SIDRA_Religião5">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião|data=2000|acessodata=6 de abril de 2012|autor=Sistema IBGE de Recuperação Automática (Sidra)}}</ref><ref name="Grupos_religiosos5">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|acessodata=14 de maio de 2013|publicado=Instituto Brasileiro de Geografia e Estatística|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref>
+
+==== Outros cristãos ====
+Na cidade existem também cristãos de outras denominações, representados por 10,26%, sendo 9,38% da população são de outras igrejas evangélicas e 0,88 são de outras religiosidades cristãs.<ref name="SIDRA_Religião6">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=15&i=P&c=2094|titulo=População residente por religião|data=2000|acessodata=6 de abril de 2012|autor=Sistema IBGE de Recuperação Automática (Sidra)}}</ref><ref name="Grupos_religiosos6">{{citar web|URL=http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|título=Censo 2010 - Lista municípios e religiões, Exibir Registro|data=2010|acessodata=14 de maio de 2013|publicado=Instituto Brasileiro de Geografia e Estatística|arquivourl=https://web.archive.org/web/20140808050232/http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?goto=1|arquivodata=2014-08-08|urlmorta=yes}}</ref>
+
+=== Indicadores ===
+; Indicadores gerais
+
+O [[Índice de Desenvolvimento Humano]] Municipal (IDH-M) da cidade de Dourados no ano de 2010 é considerado alto pelo [[Programa das Nações Unidas para o Desenvolvimento]] (PNUD) totalizando 0,747 pontos e sendo o [[Lista de municípios de Mato Grosso do Sul por IDH|3° maior de todo estado de Mato Grosso do Sul]] e o 599 maior no Brasil.
+
+{| class=wikitable
+! colspan=5|IDH-M de Dourados<ref name="PNUD"/>
+|-
+! Ano
+! IDH
+! Pos nac
+! Pos est
+|-
+! 2010
+| 0,747
+| 599
+| 3
+|-
+! 2000
+| 0,636
+| 869
+| 4
+|-
+! 1991
+| 0,512
+| 625
+| 5
+|}
+
+Já o '''Índice Firjan de Desenvolvimento Municipal (IFDM)''' é um indicador que tem como objetivo medir o grau de desenvolvimento municipal por meio de indicadores que mostram o grau de evolução dos [[município]]s brasileiros. A leitura do IFDM varia entre 0 (desenvolvimento nulo) e 1 (desenvolvimento perfeito). Em 2013 Dourados atingiu 0.7631 pontos de IFDM, o que colocou a cidade em 883º lugar no Brasil e 11º lugar no estado.<ref name="IFDM"/>
+
+{| class=wikitable
+! colspan=5|IFDM de Dourados<ref name="IFDM"/>
+|-
+! Ano
+! IFDM
+! Pos nac
+! Pos est
+|-
+! 2013
+| 0,7631
+| 883º
+| 11º
+|-
+! 2012
+| 0,7734
+| 653º
+| 7º
+|-
+! 2011
+| 0,7695
+| 620º
+| 6º
+|-
+! 2010
+| 0,8054
+| 301º
+| 2º
+|-
+! 2009
+| 0,7985
+| 249º
+| 2º
+|-
+! 2008
+| 0,7681
+| 448º
+| 2º
+|-
+! 2007
+| 0,7228
+| 884º
+| 6º
+|-
+! 2006
+| 0,6995
+| 1079º
+| 9º
+|-
+! 2005
+| 0,7591
+| 455º
+| 2º
+|-
+! 2000
+| 0,6105
+| 1500º
+| 16º
+|}
+
+; Distribuição de rendimentos
+
+Em Dourados o IDH-M renda é de 0,753 (o do país é 0,739), índice maior que 2000 (0,698) e 1991 (0,645).<ref name="PNUD"/> E o [[coeficiente de Gini]] do município, que mede a [[Desigualdade econômica|desigualdade social]], é de 0,46 em 2003 (variando entre 0,44 e 0,47), sendo que 1,00 é o pior número e 0,00 é o melhor, o que coloca o município em [[Lista de municípios de Mato Grosso do Sul por índice de Gini|69º lugar]] entre os municípios do estado.<ref name="CidadeSat"/>
+
+A incidência da pobreza, medida pelo IBGE, é de 33,28%, o limite inferior da incidência de pobreza é de 31,43%, o superior é de 35,12%.<ref name="CidadeSat"/>
+
+Em 2010, os 20% mais ricos eram responsáveis pelo acúmulo de 57,93% da renda de Dourados. Quando esse índice sobe para 40%, já acumula 76,35% da renda. Já entre os mais pobres, os índices são de 3,98% (20% mais pobres), 11,83% (40% mais pobres), 23,65% (60% mais pobres) e 42,07% (80% mais pobres).<ref name="Portal_ODM_Pobreza">{{citar web|url=http://www.portalodm.com.br/relatorios/1-acabar-com-a-fome-e-a-miseria/BRA005050032/dourados---ms|titulo=Acabar com a fome e a miséria em Dourados|publicado=Portal ODM|acessodata=24 de maio de 2013|wayb=20140311080838}}</ref>
+
+A [[renda per capita]] de Dourados é considerada relativamente alta para os padrões nacionais, totalizando em média {{fmtn|[[R$]]|983.73}} [[reais]] mensais, o que daria uma renda anual de {{fmtn|[[R$]]|11804.76}} por habitante. Esse índice coloca a cidade na [[Lista de municípios do Brasil por renda per capita|367ª posição]] no Brasil e na [[Lista de municípios de Mato Grosso do Sul por renda per capita|4.ª posição]]) no [[Mato Grosso do Sul|estado]].<ref name="Renda"/>
+
+Em 2013 Dourados atingiu 0,7140 pontos de IFDM renda, o que colocou a cidade em 379º lugar no Brasil e 8º lugar no estado.<ref name="IFDM"/>
+
+{| class=wikitable
+! colspan=5|IFDM emprego e renda<ref name="IFDM"/>
+|-
+! Ano
+! IFDM
+! Pos nac
+! Pos est
+|-
+! 2013
+| 0,7140
+| 379º
+| 8º
+|-
+! 2012
+| 0,7633
+| 222º
+| 5º
+|-
+! 2011
+| 0,7695
+| 102º	
+| 2º
+|-
+! 2010
+| 0,8550
+| 83º	
+| 2º
+|-
+! 2009
+| 0,8405
+| 67º	
+| 2º
+|-
+! 2008
+| 0,7588
+| 209º	
+| 2º
+|-
+! 2007
+| 0,6203
+| 495º	
+| 5º
+|-
+! 2006
+| 0,5830
+| 640º	
+| 9º
+|-
+! 2005
+| 0,7607
+| 215º	
+| 2º
+|-
+! 2000
+| 0,4437
+| 1525º	
+| 19º
+|}
+
+; Coeficiente de nascimento, saúde e mortalidade
+
+O índice da longevidade do IDH em Dourados é de 0,843 em 2010 (o brasileiro é 0,816), sendo este índice maior que o de 2000 (0,758) e quase 0,150 com relação a 1991 (0,713).<ref name="PNUD"/>
+
+Seu índice de sobrevivência em crianças de 0 a 6 anos está em condições satisfatórias. Uma das ações importantes para a redução da mortalidade infantil é a prevenção através de imunização contra doenças infecto-contagiosas. A taxa de mortalidade de menores de 5 anos em 1995 era de 37,36 óbitos a cada 1 000 nascidos vivos. Em 2011 este percentual passou para 15,39 óbitos a cada 1 000 nascidos vivos, representando redução de 58,81% da mortalidade infantil. O número total de óbitos de crianças menores de 5 anos no município entre 1995 e 2011, foi 1.842. Já a taxa de mortalidade de menores de um ano para o município, estimada a partir dos dados do Censo 2010, é de 18,92 a cada 1 000 crianças menores de um ano. Das crianças de até 1 ano de idade, em 2010, 8,50% não tinham registro de nascimento em cartório. Este percentual cai para 7,88% entre as crianças até 10 anos. A imunização é considerada uma das ações que contribuem para a redução da mortalidade infantil. Em 2012, 92,08% das crianças menores de 1 ano estavam com a carteira de vacinação em dia.<ref name="Portal_ODM_Mortalidade">[http://www.portalodm.com.br/relatorios/4-reduzir-a-mortalidade-infantil/BRA005050032/dourados---ms Reduzir a mortalidade infantil em Dourados] - Portal ODM</ref> Segue abaixo os coeficientes de mortalidade:
+* Mortalidade Geral: 5,6<ref name="SEMAC_MS">[http://www.semac.ms.gov.br/controle/ShowFile.php?id=143016 Perfil de Dourados] – SEMAC-MS</ref>
+* Mortalidade Infantil até 1 ano: 15,39<ref name="Portal_ODM_Mortalidade"/>
+* Mortalidade Neonatal: 8,9<ref name="Urbanização"/>
+
+O número de óbitos maternos no município entre 1996 a 2011 foi 45 por mil habitantes e a proporção de gestantes sem acompanhamento pré-natal em 2011 foi de 1,25%. Já as gestantes com 7 ou mais consultas foram 68,88%. Em 2011 99,17% dos nascidos vivos tiveram seus partos assistidos por profissionais qualificados de saúde. Em 2001, 24,21% das crianças que nasceram em Dourados eram de mães adolescentes passando para 20,87% em 2011, o que representa 1 a cada 5 nascidos vivos. Ao analisar a população de 10 a 19 anos, percebe-se que ocorreu redução do percentual de adolescentes que são mães. O índice passou de 5,06% em 2001 para 4,52% em 2011.<ref name="Portal_ODM_Gestantes">[http://www.relatoriosdinamicos.com.br/portalodm/5-melhorar-a-saude-das-gestantes/BRA005050032/dourados---ms Educação básica de qualidade para todos em Dourados] - Portal ODM</ref>
+
+O índice de saúde do IFDM em Dourados foi de 0,8630 em 2013, colocando o município em 985º lugar no país e 13º lugar no estado.<ref name="IFDM"/>
+
+{| class=wikitable
+! colspan=5|IFDM saúde de Dourados<ref name="IFDM"/>
+|-
+! Ano
+! IFDM
+! Pos nac
+! Pos est
+|-
+! 2013
+| 0,8630
+| 985º
+| 13º
+|-
+! 2012
+| 0,8527
+| 1 007º
+| 14º
+|-
+! 2011
+| 0,8144
+| 1 365º	
+| 21º
+|-
+! 2010
+| 0,8335
+| 2 323º	
+| 44º
+|-
+! 2009
+| 0,8323
+| 2 192º	
+| 37º
+|-
+! 2008
+| 0,8311
+| 2 049º	
+| 39º
+|-
+! 2007
+| 0,8327
+| 1 822º	
+| 31º
+|-
+! 2006
+| 0,8268
+| 1 709º	
+| 30º
+|-
+! 2005
+| 0,8169
+| 1 635º	
+| 29º
+|-
+! 2000
+| 0,7224
+| 1 933º	
+| 32º
+|}
+
+; Educação
+
+Considerando apenas a Educação, o IDH de Dourados é de 0,657 (médio) em 2010, enquanto o do Brasil é 0,637. Maior, portanto, que os 0,487 registrados em 2000 e mais que o dobro do valor registrado em 1991 (0,292).<ref name="PNUD"/>
+
+Para assegurar um tempo mais longo no convívio escolar e mais oportunidades de aprender às crianças, o Ministério da Educação estabeleceu a implantação do ensino fundamental de nove anos. Em 1991, 86,23% das crianças de 7 a 14 anos estavam cursando o ensino fundamental, índice elevado para 90,42% em 2000. Já em 2010 o índice cai para 83,82%. No caso da faixa entre a faixa de 15 a 17 anos, os índices são de 17,81%, 35,65% e 42,53% respectivamente. Com relação a conclusão, em 1991 22,52% dos jovens de 15 a 17 anos concluíram o ensino fundamental, índice elevado para 45,07% em 2000 e para 2010 o índice sobe para 54,12%. No caso da faixa entre a faixa de 18 a 24 anos, os índices são de 17,70%, 35,10% e 54,15% respectivamente.<ref name="Portal_ODM_Gestantes"/>
+
+O percentual de alfabetização de jovens e adolescentes entre 15 e 24 anos, em 2010, era de 99,11%. Em 2012, entre alunos do ensino fundamental, 22,60% estão com idade superior à recomendada nos anos iniciais e 37,50% nos anos finais. A defasagem chega a 30,50% entre os que alcançam o ensino médio. O aluno é considerado em situação de distorção idade-série quando a diferença entre a idade do aluno e a idade prevista para a série é de dois anos ou mais. Percebe-se que a distorção idade-série eleva-se à medida que se avança nos níveis de ensino.<ref name="Portal_ODM_Gestantes"/>
+
+O IDEB é um índice que combina o rendimento escolar às notas do exame Prova Brasil, aplicado a crianças da 4ª e 8ª séries, podendo variar de 0 a 10. Este município, em 2.011, está na 2 839ª posição, entre os 5 565 municípios do Brasil, quando avaliados os alunos da 4ª série (anos iniciais), e na 3 420ª, no caso dos alunos da 8ª série (anos finais). Quando analisada a posição do município em seu Estado, Dourados é o 36º posição nos anos iniciais e na 33º, nos anos finais. O IDEB nacional, em 2011, foi de 4,7 para os anos iniciais do ensino fundamental em escolas públicas e de 3,6 para os anos finais. Nas escolas particulares, as notas médias foram, respectivamente, 6,5 e 6,0. Ainda considerando o IDEB de 2011, nos anos iniciais somente 711 municípios brasileiros obtiveram nota acima de 6,0; a situação é ainda mais crítica quando se verificam os anos finais, apenas 10 municípios brasileiros conseguiram nota acima de 6,0.<ref name="Portal_ODM_Gestantes"/>
+
+O índice de educação do IFDM registrado em Dourados em 2013 foi de 0,7124 pontos, o que coloca o município em 3436º lugar no país e 47º lugar no estado.<ref name="IFDM"/>
+
+{| class=wikitable
+! colspan=5|IFDM educação de Dourados<ref name="IFDM"/>
+|-
+! Ano
+! IFDM
+! Pos nac
+! Pos est
+|-
+! 2013
+| 0,7124
+| 3 436º
+| 47º
+|-
+! 2012
+| 0,7041
+| 3 132º
+| 40º
+|-
+! 2011
+| 0,6963
+| 3 151º	
+| 38º
+|-
+! 2010
+| 0,7276
+| 3 116º	
+| 41º
+|-
+! 2009
+| 0,7225
+| 2 787º	
+| 38º
+|-
+! 2008
+| 0,7144
+| 2 483º	
+| 31º
+|-
+! 2007
+| 0,7155
+| 2 384º	
+| 35º
+|-
+! 2006
+| 0,6886
+| 2 149º	
+| 22º
+|-
+! 2005
+| 0,6997
+| 1 961º	
+| 19º
+|-
+! 2000
+| 0,6655
+| 1 550º	
+| 12º
+|}
+O município possui destaque na educação superior tendo duas universidades públicas a [[Universidade Federal da Grande Dourados]] (UFGD) e a [[Universidade Estadual de Mato Grosso do Sul]], além das instituições particulares, assim o município possui 202 cursos de graduação e pós-graduação, nas modalidades presencial e EaD (Ensino à Distância)<ref>{{Citar periódico|titulo=Dourados é um dos principais polos de educação superior no país|url=http://www.dourados.ms.gov.br/index.php/dourados-e-um-dos-principais-polos-de-educacao-superior-no-pais/|wayb=20230605232905}}</ref> além de universidades a cidade conta com um campus do [[Instituto Federal de Mato Grosso do Sul]] (IFMS) que em 2018 passa a oferecer além de curso técnico o curso superior.<ref>{{Citar periódico|titulo=IFMS ofertará seis novos cursos de ensino superior em 2018|url=http://www.ifms.edu.br/noticias/ifms-ofertara-seis-novos-cursos-de-graduacao-em-2018|jornal=IFMS Instituto Federal de Mato Grosso do Sul|lingua=pt-BR}}</ref>
+
+A cidade é destaque também na educação não formal possuído um dos grupos escoteiros mais antigos do Estado o [http://07ms.org.br/ Grupo Escoteiro São Jorge 07/MS], que existe desde 1991, atuando no bairro Parque Alvorada.<ref>{{Citar web|url=http://07ms.org.br/quem-somos/missao-visao-e-valores/nossa-historia/|titulo=Nossa História|acessodata=2018-01-21|obra=07ms.org.br|lingua=pt-br}}</ref> O movimento [[Escotismo|escoteiro]] é movimento para jovens com o apoio de adultos voluntários, que trabalhar principalmente o caráter dos jovens,<ref>{{Citar periódico|ultimo=Comunicação|primeiro=Escoteiros do Brasil - Comissão Nacional de Imagem e|titulo=Dia da Água|url=http://www.escoteiros.org.br/|lingua=pt-br|wayb=20260120024748}}</ref> nós últimos anos o Grupo Escoteiro São Jorge tem realizado diversas ações sócias<ref>{{Citar web|url=http://www.folhadedourados.com.br/noticias/dourados/acao-social-do-grupo-escoteiro-sao-jorge-arrecada-roupas|titulo=Ação social do Grupo Escoteiro São Jorge arrecada roupas|acessodata=2018-01-21|obra=Folha de Dourados|lingua=pt-BR|wayb=20180121184245}}</ref> no município como combate a dengue<ref>{{Citar web|url=http://www.douradosagora.com.br/noticias/dourados/grupo-escoteiro-sao-jorge-faz-acao-contra-dengue|titulo=Grupo Escoteiro São Jorge faz ação contra dengue|acessodata=2018-01-21|obra=Dourados Agora - Notícias de Dourados e Região|lingua=pt-BR}}</ref> ações que buscam preservar o meio ambiente, distribuição de roupas a comunidades carentes<ref>{{Citar web|url=http://www.douradosnews.com.br/dourados/grupo-escoteiro-sao-jorge-realiza-acao-social-em-dourados/688967/|titulo=Grupo Escoteiro São Jorge realiza ação social em Dourados|acessodata=2018-01-21|obra=www.douradosnews.com.br|ultimo=http://www.dothnews.com.br|wayb=20250425122754}}</ref> entre outras. O Grupo Escoteiro São Jorge é uma instituição em fins lucrativos, de caráter educacional, cultural, beneficente, filantrópica e comunitária sendo associada à [[União dos Escoteiros do Brasil]] (UEB) e reconhecido como utilidade pública municipal.<ref>{{Citar web|url=http://07ms.org.br/quem-somos/|titulo=Quem somos|acessodata=2018-01-21|obra=07ms.org.br|lingua=pt-br|wayb=20250427090634}}</ref> Sendo premiado diversas vezes tendo destaque as diversas menções honrosa da câmara de vereadores do município, o troféu araucária pelas boa e eficiente atividade desenvolvidas, o destaque nos mensageiros da paz<ref>{{Citar web|url=https://www.scout.org/node/380206|titulo=Projeto Mosquitoeira Ecológica|acessodata=2018-01-21|obra=www.scout.org|lingua=en}}</ref> e o prêmio de grupo padrão ouro.
+
+=== Douradenses notórios ===
+: Ver ''[[:Categoria:Naturais de Dourados]]''
+
+== Urbanização ==
+[[Imagem:Samerica vir 2012202 lrg (large).jpg|thumb|280px|right|Vista por satélite de parte da região Centro-Sul do Brasil, com Dourados situada no canto superior esquerdo (Créditos: [[NASA]]).]]
+A partir de 1950 Dourados sofre um impulso desenvolvimentista graças a construção de estradas, o que desencadeou o início desenfreado de novas construções e um crescimento desordenado. Sendo o maior e mais desenvolvido [[centro urbano]] do interior do estado de [[Mato Grosso do Sul]], possui um considerável índice de urbanização. Enquanto a média brasileira de pessoas que vivem em centros urbanos é de 84,4%, em Dourados é de mais de 90%. Dos 196 035 habitantes residentes na cidade em 2010, 181 005 moravam em zona urbana e 15 030 na zona rural (92,33% e 7,67% respectivamente).<ref name="IBGE_Censo_2010"/><ref name="População urbana 2">{{citar web|url=http://noticias.uol.com.br/cotidiano/ultimas-noticias/2011/04/29/em-20-anos-zonas-urbanas-do-pais-crescem-o-equivalente-a-duas-xangai.htm |título=Em 20 anos, zonas urbanas do país crescem o equivalente a duas Xangai |autor=Notícias UOL |data=29 de abril de 2011 |acessodata=6 de abril de 2012|wayb=20231225154507 }}</ref>
+
+=== Características urbanas ===
+Dourados possui [[área urbana]] total de 205,990&nbsp;km² segundo a [[Prefeitura de Dourados|prefeitura]].<ref name="Área_urbana"/> Urbanisticamente possui uma mancha contínua com quadras que formam desenho que lembra um tabuleiro de xadrez em grande parte de sua zona urbana. O núcleo central da cidade possui uma desenvolvida verticalização, caracterizando-se pela presença de [[edifício]]s [[Comércio|comerciais]] e de [[serviços]] (como shoppings, hipermercados e conveniências) e a [[periferia]] da cidade desenvolve-se, de forma geral, com casas e edificações baixas. Até pouco tempo atrás, a [[Usucapião|Lei do Uso do Solo]] de Dourados previa que os edifícios podiam atingir no máximo 12 andares, mas com a nova Lei do Uso do Solo da cidade não há mais restrição do número de andares que os edifícios de Dourados podem ter. Apesar disso quase todos os prédios construídos até hoje na cidade tem até 12 andares. Todavia, é a segunda cidade no estado em quantidade de prédios, de acordo com a página especializada em pesquisa de dados sobre edificações ''Emporis Buildings''.<ref name="Urbanização">{{citar web |url= http://www.douradosnews.com.br/dourados/alteracao-na-lei-do-uso-do-solo-ajuda-o-empreendedor-diz-alan-guedes |publicado= Dourados News |titulo=“Alteração na lei do uso do solo ajuda o empreendedor”, diz Alan Guedes  |acessodata=20 de novembro de 2008|wayb=20250423233949}}</ref><ref>{{citar web |url= http://www.emporis.com/city/dourados-brazil|publicado=Emporis.com |titulo=Dourados |acessodata=20 de novembro de 2008|wayb=20141202015311}}</ref>
+
+Alguns pontos de Dourados passaram a concentrar núcleos de comércio, o que incentivou a criação de novas zonas comerciais do ponto de vista socioeconômico. A cidade também passou por vários surtos de desenvolvimento ao longo dos últimos anos. Houve a criação de novos centros [[indústria|industria]]is e empresas comerciais na cidade vindas de outras [[cidade]]s ou [[Unidades federativas do Brasil|estados]], sendo que várias áreas que antes eram galpões de antigas fábricas ou mesmo abandonados a anos transformaram-se em áreas comerciais ou mesmo residenciais.<ref name="Urbanização"/>
+
+=== Habitação ===
+Em Dourados há um total de 67 767 imóveis (sendo 67 671 particulares e 96 públicos) segundo dados do censo do [[IBGE]] de 2010<ref name="IBGE_CENSO_2010">{{citar web|url=http://www.ibge.gov.br/home/estatistica/populacao/censo2010/tabelas_pdf/total_domicilios_mato_grosso_do_sul.pdf|titulo=População do Brasil|data=2010|obra= Domicílios particulares permanentes|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|acessodata=5 de agosto de 2011|wayb=20160303225914}}</ref> ([[Lista de municípios do Brasil por domicílios|138º lugar entre todos os municípios brasileiros]] e no estado é o [[Lista de municípios de Mato Grosso do Sul por domicílios|2º maior]]).
+
+{| class="wikitable"
+|-
+! colspan=2|Domicílios de Dourados
+|-
+| '''''Total de domicílios''''' || {{fmtn|67767|domicílios}}<ref name="IBGE_CENSO_2010"/>
+|-
+| '''Domicílios particulares''' || {{fmtn|67671|(99,86%)}}
+|-
+| '''Domicílios coletivos''' || {{fmtn|96|(0,14%)}}
+|-
+! colspan=2|Domicílios por rendimento ''per capita''<ref name="IBGE_SIDRA_2010">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=4&i=P&c=3261|titulo=Classes sociais do Brasil |data=2010|obra= Domicílios particulares permanentes, por classes de rendimento nominal mensal domiciliar per capita - Resultados Preliminares do Universo|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=3 de agosto de 2011}}</ref>
+|-
+| Mais de {{fmtn|5|salários}} || {{percentagem|5|4,91|0000FF}}
+|-
+| De 2 a 5 salários || {{percentagem|14|14,78|FF33FF}}
+|-
+| De 1 a 2 salários || {{percentagem|27|27,67|FFFF00}}
+|-
+| De 0,5 a 1 salário || {{percentagem|32|32,24|FFCC00}}
+|-
+| De 0,25 a 0,5 salários || {{percentagem|14|14,76|FF6600}}
+|-
+| Até {{fmtn|0.25|salários ou sem rendimento}}  || {{percentagem|5|5,63|FF0000}}
+|-
+! colspan=2|Distribuição das classes sociais<ref name="IBGE_SIDRA_2010"/>
+|-
+| [[Classe social|Classe A]] || {{percentagem|5|4,91|0000FF}}
+|-
+| [[Classe social|Classe B]] || {{percentagem|14|14,78|FF33FF}}
+|-
+| [[Classe social|Classe C]] || {{percentagem|60|59,91|FFFF00}}
+|-
+| [[Classe social|Classe D]] || {{percentagem|14|14,76|FFCC00}}
+|-
+| [[Classe social|Classe E]] || {{percentagem|5|5,63|FF0000}}
+|-
+|
+|
+|-
+| ''Classe alta (A - B)'' || {{percentagem|19|19,67|000000}}
+|-
+| ''Classe média (C - D)'' || {{percentagem|74|74,67|000000}}
+|-
+| ''Classe consumidora (A - B - C - D)'' || {{percentagem|94|94,36|000000}}
+|-
+| ''Classe periférica (E)'' || {{percentagem|5|5,63|000000}}
+|-
+|}
+
+; Energia Elétrica
+
+Em Dourados o serviço de energia elétrica é distribuída pela companhia responsável ([[Enersul]], privada) para uso exclusivo no município. O sistema elétrico que atende a região de Dourados é gerido pela [[Eletrosul]] e encontra-se incorporado ao [[Usina Hidrelétrica de Itaipu|Sistema Interligado Sul/Sudeste/Centro-Oeste]] do país, o que representa sua elevada importância e seu significativo grau de confiabilidade. Apesar de haver necessidades de ampliação da rede elétrica para residências e indústrias, nos últimos anos essas deficiências diminuíram.<ref>[http://www.eletrosul.gov.br/home/conteudo.php?cd=1530 Sistemas de transmissão – instalações em operação] – Portal Eletrosul</ref>
+
+Em Dourados são 79 381 ligações de energia elétrica em aproximadamente mil&nbsp;km de rede de distribuição urbana. Esses quase 80 mil consumidores consomem 476 575 [[Watt-hora|MWh]] por ano. Desse total 68 414 (145 259 MWh/ano) são consumidores residenciais, 662 (142 722 MWh/ano) consumidores industriais e industriais livres, 7 414 (103 025 MWh/ano) consumidores comerciais e comerciais livres, 2 192 (25 994 MWh/ano) consumidores rurais, 527 (41 549 MWh/ano) do poder e serviço público, 160 (17 648 MWh/ano) da iluminação pública e 12 (378 MWh/ano) consumidor de finalidade própria<ref name="Urbanização"/>
+
+; Recursos hídricos
+
+Com relação aos recursos hídricos, o abastecimento em Dourados é considerado bastante satisfatório pela população. A captação de água local é proveniente do [[Rio Dourados]], uma vez que o referido [[rio]] ainda mantém boa qualidade ambiental.<ref name="Urbanização"/>
+Dourados é dotada de 60.851 ligações de água. Em números absolutos a rede geral soma {{fmtn|48554|unidades}}, poços ou nascentes somam {{fmtn|11424|unidades}} e outras formas somam {{fmtn|873|unidades}}. Com relação a existência de sanitários {{fmtn|60694|domicílios}} eram com sanitários e {{fmtn|157|unidades}} não tinham sanitários, sendo que a extensão da rede de esgoto soma {{fmtn|294923|m}} com número de economias totalizando 24 742. No saneamento possui {{fmtn|826882|m}} de extensão de rede, sendo 63 851 ligações reais e 58 660 economias reais com volume produzido de {{fmtn|18894892|m3}}, volume consumido de {{fmtn|9727002|m3}} e volume faturado de {{fmtn|10753942|m3}}.<ref name="Urbanização"/>
+
+; Coleta de lixo e reciclagem
+
+O serviço de [[coleta de lixo]] em Dourados é considerado satisfatório. Em 2010, dos 60.851 domicílios da cidade, 92,57% ou {{fmtn|56328|unidades}} dos domicílios particulares permanentes contavam com o serviço de coleta de resíduos e as outras {{fmtn|4523|unidades}} (7,43%) tinha outros destinos.<ref name="Urbanização"/>
+
+=== Infraestrutura ===
+Com um total de 3 888 empresas de serviços segundo o CAGED,<ref name=CAGED>{{citar web|url=http://bi.mte.gov.br/bgcaged/caged_perfil_municipio/index.php|titulo=CAGED - Perfil do Município|publicado=Ministério do Trabalho e Emprego|acessodata=10 de fevereiro de 2015|wayb=20230216160058}}</ref> Dourados exerce o papel de '''centro de serviços''' para uma região que compreende mais de 1 milhão de pessoas, incluindo parte do Paraguai. É um dos mais importantes centros de serviços do estado de Mato Grosso do Sul, principalmente na região meridional do mesmo. Ali se concentram todos os principais bancos do Brasil e possui também uma boa densidade de logística ferroviária, rodoviária e da sua estrutura aeroportuária, que fazem ser um ponto de convergência para os transportes internacionais. Essa situação proporciona um papel considerável à cidade e nela tendem a concentrar, ao extremo, muitas instituições públicas importantes das esferas municipais, estaduais e federais.
+
+==== Ensino e pesquisa ====
+[[Imagem:UEMS Sede Dourados.JPG|right|250px|thumb|Vista parcial da [[Universidade Estadual de Mato Grosso do Sul]], uma das principais universidades da cidade.]]
+A rede de [[ensino]] de Dourados é uma das mais extensas do [[Mato Grosso do Sul|estado]]. O município possui um sistema de [[ensino primário]] e [[Ensino secundário|secundário]] público e privado com uma variedade de profissionais de escolas técnicas. Com {{fmtn|122}} estabelecimentos de ensino, 83 são do ensino pré-escolar (18 privadas e 65 pública municipal), 79 do ensino fundamental (18 privadas, 20 públicas estaduais e 45 públicas municipais) e 25 do ensino médio (sendo 7 privadas e 18 públicas estaduais). Com relação as matriculas, Dourados registrou no ensino fundamental 47 770 matriculados, sendo 6 325 (428 rurais) no ensino infantil, 33 800 (5 037 rurais) no fundamental e 7 645 (411 rurais) no ensino médio.<ref name="Urbanização"/>
+
+Já no ensino superior destacam-se importantes [[Universidade pública|universidades públicas]] e privadas, algumas consideradas centros de referência em determinadas áreas. Entre as instituições públicas de [[ensino superior]], podem-se destacar a [[Universidade Federal da Grande Dourados| Universidade Federal da Grande Dourados (UFGD)]], criada em 1 de agosto de 2005, quando foi desmembrado dos quadros da [[Universidade Federal de Mato Grosso do Sul|Universidade Federal de Mato Grosso do Sul (UFMS)]]. A UFGD também é aquela com o maior número de vagas de [[graduação]] e de [[pós-graduação]] em Dourados, sendo responsável também pela formação do maior número de [[Mestrado|mestres]] e [[Doutorado|doutores]] na cidade, bem como responsável por grande parte de toda a produção científica do estado de Mato Grosso do Sul.<ref name="UFGD">{{citar web|url= http://www.ufgd.edu.br|título=A UFGD|autor=[[Universidade Federal da Grande Dourados]]|data=2005|acessodata=2 de setembro de 2014|wayb=20260331055350}}</ref> Há ainda a [[Universidade Estadual de Mato Grosso do Sul|Universidade Estadual de Mato Grosso do Sul (UEMS)]]<ref name="UEMS">{{citar web|url= http://www.uems.edu.br|título=A UEMS|autor=[[Universidade Estadual de Mato Grosso do Sul]] |data=1993|acessodata=2 de setembro de 2014}}</ref> e o [[Instituto Federal de Mato Grosso do Sul|Instituto Federal de Mato Grosso do Sul (IFMS)]], que está em implantação no município.<ref>{{citar web|url=http://www.ifms.edu.br/2014/06/27/divulgado-resultado-de-remocao-para-docentes-e-tecnicos/|título=Instituto Federal de Mato Grosso do Sul - Campus Dourados|autor=[[Instituto Federal de Mato Grosso do Sul]]|acessodata=2 de setembro de 2014|wayb=20160303171532}}</ref> O município também possui faculdades particulares com grande reputação regional e estadual, como o [[Centro Universitário da Grande Dourados|Centro Universitário da Grande Dourados (UNIGRAN)]]<ref>{{citar web|url= http://www.unigran.br/|título=Portal Unigran|autor=[[Centro Universitário da Grande Dourados]]|data=1976|acessodata=2 de setembro de 2014|wayb=20260515050346}}</ref> e a [[Faculdade Anhanguera de Dourados|Faculdade Anhanguera de Dourados (FAD)]], mantida pelo grupo Universidade Anhanguera,<ref>{{citar web|url= http://www.anhanguera.com/home/|título=Portal Anhanguera|autor=[[Faculdade Anhanguera de Dourados]]|data=|acessodata=2 de setembro de 2014|wayb=20260209015550}}</ref> além de diversos institutos de ensino superior e pesquisa em áreas específicas, entre os quais podem ser destacados a [[Escola Superior de Direito do Mato Grosso do Sul|Escola Superior de Direito do Mato Grosso do Sul (ESUD)]] (direito)<ref>{{citar web|url=http://www.telelistas.net/locais/ms/dourados/faculdades+e+universidades/279268976/esud+escola+superior+de+direito+do+mato+grosso+do+sul|título=Escola Superior de Direito do Mato Grosso do Sul|autor=Telelistas|data=2014|acessodata=2 de setembro de 2014|wayb=20140912091619}}</ref> e a [[Faculdade Teológica Batista Ana Wollerman|Faculdade Teológica Batista Ana Wollerman (FTBAW)]] (teologia) <ref>{{citar web|url=http://www.anawollerman.com.br/ |título=Portal FTBAW|autor=[[Faculdade Teológica Batista Ana Wollerman]]|data=2014|acessodata=2 de setembro de 2014|wayb=20230130044823}}</ref>
+
+Um polo de pesquisa importante do município é a [[Embrapa Agropecuária Oeste]], fundado em 13 de junho de 1975, e atualmente vinculado ao [[Ministério da Agricultura, Pecuária e Abastecimento|Ministério da Agricultura, Pecuária e Abastecimento (Mapa)]], um centro de renome internacional em [[pesquisa científica]], onde desenvolve ações de pesquisa e transferência de tecnologia para a sustentabilidade da agricultura na região.<ref>{{citar web |url=https://www.embrapa.br/agropecuaria-oeste |publicado=Embrapa |titulo= Embrapa Agropecuária Oeste |acessodata=2 de setembro de 2014|wayb=20260308170233 }}</ref>
+
+==== Hospedagem ====
+Com mais de 3 mil leitos hoteleiros, a hospedagem em Dourados no geral exerce o comércio da recepção e de alojamento dos [[Turismo|turistas]] e visitantes em geral em seus meios de hospedagem, que totalizam 29 unidades.<ref>[http://www.douranews.com.br/opiniao/item/73968-investimento-em-hot%C3%A9is-reflete-crescimento-de-dourados Novos investimentos em hotéis refletem crescimento de Dourados] - Dourados News</ref>
+
+Os hotéis geralmente são constituídos de um edifício ou prédio contendo [[unidades habitacionais]], uma [[Recepção (atendimento)|recepção]] e uma [[governança]], para hóspedes. Podendo ter ainda o serviço de alimentos e bebidas, na sua estrutura, que para isso necessitar de: [[cozinha]], [[adega]], [[restaurante]], [[Bar (estabelecimento)|bar]], [[cantina]] e despensa. Pode contar ainda com [[estacionamento]] externo, [[garagem]] interna e área de [[lazer]].
+
+A [[Pousada (hotelaria)|Pousada]] é caracterizada por ser um meio de hospedagem instalada em edificação de valor histórico e é denominada popularmente como um modelo rústico de hospedagem contando com [[unidades habitacionais]] individualizadas e com [[decoração]] identificada com a localidade.
+
+O [[Albergue]] caracteriza-se por dispor de acomodações coletivas e seu público alvo são os jovens e mochileiros.
+
+==== Infra-estrutura financeira ====
+{| class=wikitable style="float:right; margin: 1em;border-collapse:border;"
+! colspan=2|Movimentação financeira (fonte: [[IBGE]] 2016)<ref name="CidadeSat"/>
+|-
+! Tipo de movimentação
+! Valor (R$)
+|-
+| Operações de Crédito	  	
+| 2.776.385.089,00  	 	  	
+|-
+| Poupança	  	
+| 531.623.712,00	
+|-
+| Obrigações por Recebimento	  	
+| 682.688,00	  		
+|-
+| Depósitos à vista - governo	  	
+| 4.091.690,00	 	  	
+|-
+| Depósitos à vista - privado	  	
+| 133.876.868,00	  	 	  	
+|-
+| Depósitos a prazo	  	
+| 253.883.876,00	 	  	
+|-
+| '''Total'''
+| '''3.700.543.923,00'''
+|}
+
+Com uma movimentação financeira de R$ 3,7 bilhões de reais (R$ 17 173,01 per capita) em 2016 segundo o [[IBGE]], Dourados possui variadas opções de estabelecimentos financeiros que oferecem variados serviços, entre bancos e financeiras. são 21 agências, entre elas estão cinco agências do [[Banco do Brasil]],<ref name="BB">[http://www37.bb.com.br/portalbb/redeAtendimento/Inicio,2,2316,2316.bbx# Rede de atendimento] {{Wayback|url=http://www37.bb.com.br/portalbb/redeAtendimento/Inicio,2,2316,2316.bbx |date=20140604082515 }} - Banco do Brasil</ref> três do [[Bradesco]],<ref name="Bradesco">[http://institucional.bradesco.com.br/netredeatendimento/site/conteudo/home/default.aspx?origem=&h=1#result Agências] - Bradesco</ref> quatro da [[Caixa Econômica Federal]],<ref name="CEF">[http://www1.caixa.gov.br/atendimento/encontre_acaixa.asp?TipoParametro=agencia_sem_penhor Agências] - CEF</ref> três do [[Itaú]],<ref name="Itaú">[https://www.itau.com.br/#AGINST Agências] - Itaú</ref> uma do [[HSBC]],<ref name="HSBC">[http://www.hsbc.com.br/1/2/portal/pt/help/localize-sua-agencia Agências] - HSBC</ref> uma do Pan (antigo Panamericano),<ref name="Pan">[https://www.bancopan.com.br/SitePages/inicio.aspx Agências] - Banco Pan</ref> duas do [[Banco Santander (Brasil)|Santander]]<ref name="Santander">[http://www.santander.com.br/portal/wps/script/templates/GCMRequest.do?page=6491 Agências] - Santander</ref> e três do [[SICREDI]].<ref name="Sicredi">[http://www.sicredi.com.br/ Portal Sicred]</ref>
+
+Naturalmente os caixas eletrônicos são um complemento das agências bancárias correspondentes, sendo quatorze do [[Banco do Brasil]],<ref name="BB"/> dez do [[Bradesco]],<ref name="Bradesco"/> nove da [[Caixa Econômica Federal]],<ref name="CEF"/> três do [[Itaú]],<ref name="Itaú"/> três do [[HSBC]],<ref name="HSBC"/> uma do Pan (antigo Panamericano),<ref name="Pan"/> duas do [[Banco Santander (Brasil)|Santander]],<ref name="Santander"/> três do [[SICREDI]]<ref name="Sicredi"/> e sete do banco 24 Horas.<ref>[http://www.tecban.com.br/pt-br/banco24horas/busca.jsp Localização dos bancos 24 horas] - Tec Ban</ref>
+
+Além das modalidades financeiras citadas acima, ainda há serviços de crédito pessoal,<ref>[http://www.telelistas.net/templates/resultado_busca.aspx?q=credito%2BDourados&orgm=0&cod_localidade=66058&atividade=credito&nome=&uf_busca=ms&image.x=-1020&image.y=-235 Crédito pessoal em Dourados] - telelistas.net</ref> as nove lotéricas da Caixa Econômica Federal,<ref>[http://www1.caixa.gov.br/loterias/loterias/ Lotericas da Caixa] - CEF</ref> e o Banco Postal dos Correios,<ref>[http://www.correios.com.br/servicos/agencias/ag_endereco.cfm Banco Postal] - Correios</ref> onde os dois últimos funcionam como agência bancária.
+
+==== Banco Comunitário ====
+Banco Pirê.<ref>{{citar web|url=https://www.bancopire.com.br/|titulo=Banco Pirê|data=2 de janeiro de 2020|acessodata=2 de janeiro de 2020|publicado=Banco Pirê|ultimo=Banco Pirê|primeiro=Banco Pirê|wayb=20260313193027}}</ref>
+
+==== Meios de comunicação ====
+{{AP|[[Mídia de Dourados]]}}
+A partir de 1 de setembro de 2008 o município passou a ser servido pela [[Portabilidade de números telefónicos|portabilidade telefônica]] e na telefonia móvel a cidade é atendida pelas empresas [[Vivo]],<ref>[http://www.vivo.com.br/portalweb/appmanager/env/regional?_nfls=false# Vivo]</ref> [[TIM]],<ref>[http://www.tim.com.br/ TIM]</ref> [[Claro]]<ref>[http://www.claro.com.br/ Claro]</ref> e [[Oi (empresa)|Oi]].<ref>[http://www.oi.com.br/oi/pre-home?url=http%3A//www.oi.com.br/oi/oi-pra-voce OI]</ref> Assim como no restante de MS, o [[Discagem direta a distância|código de área]] em Dourados é 0XX67.<ref name="Guia_DDD">{{citar web|url=http://www.webbusca.com.br/atlas/ddd/mato_grosso_do_sul.asp |titulo=DDD de Mato Grosso do Sul (MS)|publicado=Web Busca|acessodata=27 de janeiro de 2014|wayb=20160303183258}}</ref> Em Dourados há 71 439 terminais telefonia fixa instalados e 38.483 terminais de serviços atendidos pela operadora Oi.<ref name="Urbanização"/> Ainda em dados da [[ANATEL]], Dourados  possuía 89 483 [[telefone]]s móveis, com um índice por área de [[Discagem direta a distância|DDD]] de 1 aparelho celular para cada 3 habitantes.{{carece de fontes|data=novembro de 2021}} A cidade conta com serviços de [[internet]] discada e [[banda larga]] ([[Asymmetric Digital Subscriber Line|ADSL]]) sendo oferecidos por diversos [[Fornecedor de acesso à Internet|provedores de acesso]] gratuitos e pagos. A rede de internet no município é em fibra Ótica representada por [[Oi Velox]],<ref>{{citar web|URL= http://oi-velox.assinebandalarga.uol.com.br/ |título=Acesso Banda Larga|acessodata=16 de maio de 2013}}</ref> [[Claro]],<ref>{{citar web|url=http://www.claro.com.br/atendimento/internet/cobertura/regiao/ddd67/MS/tv-2/|titulo=Cobertura da Claro no Brasil|publicado=Claro|acessodata=21 de Julho de 2013|arquivourl=https://web.archive.org/web/20131224113726/http://www.claro.com.br/atendimento/internet/cobertura/regiao/ddd67/MS/tv-2/|arquivodata=2013-12-24|urlmorta=yes}}</ref> [[TIM]]<ref>{{citar web|url=http://qualidade.tim.com.br/|titulo=Cobertura da TIM no Brasil|publicado=TIM|acessodata=21 de Julho de 2013|wayb=20211018034419}}</ref> e [[Vivo]].<ref>{{citar web|url=http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_pageLabel=vivoVcCobNacCoberturaVivoPage&WT.ac=portal.movel.coberturaeroaming.coberturanacional.coberturavivo&cliente=0&cltype=c291Y2xpZW50ZQ&regional=MS|titulo=Cobertura Vivo|publicado=Vivo|acessodata=21 de Julho de 2013|wayb=20170808001141}}</ref>
+
+O serviço postal é atendido por 3 agências da [[Empresa Brasileira de Correios e Telégrafos]] funcionando na cidade. Há também 1 agência de correio comunitário. O [[Código postal|Código de Endereçamento Postal]] em Dourados vai de 79.800-000 a 79.849-999.<ref name="Correios"/><ref name="Urbanização"/>
+
+Há transmissão de canais nas faixas ''[[Very High Frequency]]'' (VHF) e ''[[Ultra High Frequency]]'' (UHF). Entre os canais de [[TV]] analógico operando na cidade estão a MS Record – [[RecordTV|Record]] (canal 4), [[RIT Dourados]] – [[RIT]] (canal 5), [[SBT MS]] – [[SBT]] (canal 10), [[Record News]] (canal 16), [[Canção Nova]] (canal 21), [[TV Morena]] – [[Rede Globo]] (canal 25) e [[Rede Vida]] (canal 27). Já entre os digitais estão [[TV Brasil Pantanal]] – [[TV Brasil]] (canal 29), [[TV Morena]] – [[Rede Globo]] (canal 31 – 13.1), MS Record – [[RecordTV|Record]] (canal 34 – 4.1), [[Record News]] (canal 36 - 16.1), [[RIT Dourados]] – [[RIT]] (canal 41 - 5.1), [[Rede Vida]] (canal 43 - 27.1) e [[Canção Nova]] (canal 54 - 21.1).<ref name="Midias">Mídias de Dourados – Portal Line Up (lineup-br.com)</ref> A cidade sedia ainda onze emissoras de rádio, sendo seis em [[modulação em frequência]] (FM) comercial, duas FM comunitárias e três em [[modulação em amplitude]] (AM). Existem [[rádio (comunicação)|rádios]] como a Boa Nova (87.9 FM comunitária),<ref>[http://www.boanova87.fm.br/ Boa Nova 87]</ref> [[Grande FM]] (92.1 FM), [[94 FM Dourados]] (94.7 FM), [[Coração FM]] (95.7 FM),<ref>[http://www.radiocoracao.org/ Portal Rádio Coração FM]</ref> Harmonia (98.3 FM comunitária),<ref>[http://www.harmonia98fm.com.br Harmonia 98 FM]</ref> [[Cidade 101]] (101.9 FM), [[Transamérica Hits]] (103.7 FM), [[Band FM]] (104.7 FM), [[Rádio Deus é Amor]] (720 AM), [[Rádio Alvorada]] (770 AM) e [[Rádio Imaculada Conceição]] (1 060 AM)<ref name="Midias"/>
+
+De acordo com o site Radios.com.br, a FM mais ouvida na cidade é a [[94 FM Dourados]], seguida pelas rádios [[Cidade 101]] e [[Band FM]].<ref>[http://www.radios.com.br/relatorios/stat_2014-09_regiao_12-130 Rádios brasileiras mais acessadas por região] - Radios.com.br</ref>
+
+Existem ainda seis jornais em circulação no município, sendo dois deles diário. Destaca-se [[O Progresso]],<ref>[http://www.progresso.com.br Jornal O Progresso]</ref> e [[Diário MS]].<ref>[http://www.diarioms.com.br Diário MS]</ref> Já entre os jornais semanários estão [[Jornal O Vigilante MS]], [[Folha de Dourados]],<ref>[http://www.folhadedourados.com.br Folha de Dourados]</ref> [[Gazeta Popular]],<ref>{{Citar web |url=http://www.gazetapopularms.com.br/home/ |titulo=Gazeta Popular |acessodata=2014-09-12 |arquivourl=https://web.archive.org/web/20140912084351/http://www.gazetapopularms.com.br/home/ |arquivodata=2014-09-12 |urlmorta=yes }}</ref> e [[Repórter MS]]<ref>[http://www.reporterms.com.br Reporter MS]</ref> Com relação ás revistas, Dourados possui a Saúde Atual, Arandu, Troféu, Corpo e Mente, Bom de Ler e Vendas Diretas, além de revistas da UNIGRAN (3 revistas), UFGD (11 revistas), UEMS (7 revistas) e Anhanguera Educacional (11 revistas), além de distribuição de revistas de outros estados e/ou nacionais como Veja, Isto É, Época e Haley (de [[Ribeirão Preto]] – [[SP]]).<ref>[http://novo.dourados.ms.gov.br/wp-content/uploads/2014/07/introducaoodourados20121.pdf Indicadores socioeconomicos de Dourados] {{Wayback|url=http://novo.dourados.ms.gov.br/wp-content/uploads/2014/07/introducaoodourados20121.pdf |date=20140912073631 }} – Prefeitura de Dourados</ref>
+
+==== Meios de transporte ====
+[[Imagem:Aeroporto de Dourados MS.jpg|right|250px|thumb|Saguão do [[Aeroporto Regional de Dourados]], um dos principais do estado.]]
+{{AP|[[Lista dos meios de transporte e acessos em Dourados]]}}
+A cidade de Dourados está localizada no centro-sul do estado de Mato Grosso do Sul e possui um sistema modal de transporte aéreo, rodoviário e ferroviário que ligam a cidade com o resto do Brasil e também com o exterior. Seu complexo sistema intermodal de transporte inclui linha aérea, rodovias e estrada de ferro ligando a cidade ao resto do país e a interligação com Distritos, vilas, lugarejos, sítios e fazendas pode ser feito por estradas pavimentadas que permitem acesso durante todo o ano. Com uma frota de {{fmtn|123595}} [[veículo]]s em 2013, estima-se que o município de Dourados alcançou uma taxa de motorização de 0,595 veículos por habitante, o que corresponde aproximadamente a um veículo para cada dois habitantes. Do total da frota local, divide-se em 56 158 automóveis, 42 411 motocicletas e motonetas, 5 245 caminhões, 14 578 camionetas, caminhonetes e utilitários, 668 ônibus e micro-ônibus e 4.545 outros veículos.<ref name="CidadeSat"/><ref name="Frota_Denatran"/>
+[[Ficheiro:Ponte de Fatima do Sul, MS - panoramio.jpg|left|250px|thumb|Ponte na [[BR-376]], na divisa com o município de [[Fátima do Sul]]]]
+O município de Dourados também é servido por algumas rodovias na sua extensão territorial. A principal delas é a [[BR-163]], uma rodovia federal que é um dos principais corredores rodoviários do município. No estado faz a ligação de Dourados às cidades de [[Mundo Novo (Mato Grosso do Sul)|Mundo Novo]], [[Naviraí]], [[Rio Brilhante]], [[Campo Grande (Mato Grosso do Sul)|Campo Grande]] e [[Coxim]].<ref>[http://www2.transportes.gov.br/bit/02-rodo/3-loc-rodo/loc-rodo/br-163/gbr-163.htm Percurso detalhado da BR-163] {{Wayback|url=http://www2.transportes.gov.br/bit/02-rodo/3-loc-rodo/loc-rodo/br-163/gbr-163.htm |date=20121122064222 }} - Ministério dos Transportes</ref> Também há outras rodovias federais como a [[BR-376]]<ref>{{Citar web |url=http://www.dnit.gov.br/menu/rodovias/mapas |titulo=Mapas rodoviários do Brasil e dos estados (BR-376) |acessodata=2014-09-12 |arquivourl=https://web.archive.org/web/20100131005333/http://www.dnit.gov.br/menu/rodovias/mapas |arquivodata=2010-01-31 |urlmorta=yes }}</ref> e a [[BR-463]].<ref>{{Citar web |url=http://www.dnit.gov.br/menu/rodovias/mapas |titulo=Mapas rodoviários do Brasil e dos estados (BR-463) |acessodata=2014-09-12 |arquivourl=https://web.archive.org/web/20100131005333/http://www.dnit.gov.br/menu/rodovias/mapas |arquivodata=2010-01-31 |urlmorta=yes }}</ref> Há ainda rodovias que são administradas pelo poder estadual, como a [[MS-156]], [[MS-162]], [[MS-276]], [[MS-274]] e [[MS-379]]. Na região central da cidade encontra-se o Terminal Rodoviário Renato Lemes Soares, o maior terminal do interior sul-mato-grossense. Com 15 empresas atuantes, possui linhas de [[ônibus]] para diversos municípios do estado e para muitos outros estados do país, além de linhas para outros países sul-americanos, como [[Paraguai]] e [[Bolívia]]. O terminal é anexo ao [[Avenida Center Dourados|Shopping Avenida Center]], o principal centro de compras da referida cidade, e é quase integrado ao [[Parque Arnunpho Fioravante]]. No transporte ferroviário, o município era servido pelo antigo [[Ramal de Ponta Porã]], que já funcionou conduzindo passageiros com a função de turismo ou de comércio de exportação. O embarque em Dourados era feito na [[Estação Ferroviária de Dourados|Estação Itaum]], que situava-se fora do seu perímetro urbano. Este ramal possui 410 [[km]] que começa em [[Campo Grande (Mato Grosso do Sul)|Campo Grande]] e vai até [[Ponta Porã]], fronteira com o Paraguai. Esse ramal é continuação do trecho [[Bauru]]-[[Campo Grande (Mato Grosso do Sul)|Campo Grande]], que totaliza 1250&nbsp;km. Fez sua última viagem em 1996 para logo depois ser desativado. Atualmente a [[ALL]] administra o trecho transportando apenas carga. Até o momento não há previsão para reativar o trecho para passageiros. No município há um complexo aeroportuário, o [[Aeroporto Regional de Dourados]], que está localizado próximo à fronteira com o Paraguai (cerca de 110&nbsp;km), estando assim situado dentro da faixa de fronteira do Brasil com o Paraguai, na [[Região da Grande Dourados]], que concentra 38 Municípios, onde a agricultura é pujante, sendo uma região estratégica de Mato Grosso do Sul em que atende aproximadamente 1 milhão de pessoas.
+
+Os sistemas de [[transporte público]] representa um papel fundamental no dia a dia da municipalidade e apenas uma empresa faz o serviço de transporte coletivo no município, a Viação Medianeira. Dourados conta com uma mediana estrutura de linhas de [[ônibus]], com uma frota de cerca de 57 unidades, entre [[ônibus]] comuns e articulados.<ref>[http://www.medianeiradourados.com.br/ Medianeira Dourados]</ref> Além disso, Dourados possui a maior frota de táxis e mototáxis do interior de [[Mato Grosso do Sul]]. Já o sistema viário do município é cortado por algumas grandes vias que têm papel estruturador, tanto na escala infraurbana quanto na intermunicipal: Avenida Marcelino Pires, Avenida Weimar Gonçalves, Rua Presidente Vargas e Rua Coronel Ponciano. Estas "[[artéria]]s" são consideradas as principais vias estruturais (ou ''[[via expressa|vias expressas]]'') do município, sendo que, a elas, conectam-se diversas [[rodovia]]s, dentre as quais a [[BR-163]], [[BR-376]] e [[BR-463]]. Além do mais, recentemente foi inaugurado o [[Anel Viário Norte de Dourados|Anel Viário Norte]], que permitirá o acesso a quem margear a cidade vindo do sentido norte do município.
+
+==== Sistema de saúde e óbito ====
+Dourados é um dos principais polos de saúde da [[Região Centro-Oeste do Brasil|Região Centro-Oeste]] e é sede de instituições de todos os três níveis de governo: federal, estadual e municipal. O setor privado de saúde também é relevante e a grande parte dos melhores hospitais brasileiros está localizada na cidade. Os serviços públicos de saúde são geralmente de responsabilidade do governo municipal e estão espalhados por todo o território municipal. Totalizando 356 unidades de saúde de todo tipo em todo o município, possui no total 30 unidades básicas de saúde (UBS), e várias clínicas ambulatoriais e de emergência. A Secretaria Municipal de Saúde tem 51 funcionários, entre eles 4 médicos. Em 2014, a cidade de Dourados tinha vários centros e escritórios de profissionais (médicos, dentistas e outros), além de 9 hospitais. Juntos, estas unidades oferecem um total de 618 leitos hospitalares, que se dividem em 391 [[Sistema Único de Saúde|públicos]] e 227 privados.<ref>{{citar web|url=http://cnes.datasus.gov.br/Mod_Ind_Unidade.asp?VEstado=50&VMun=500370|titulo=unidades de saúde de Dourados|publicado=Cnes|acessodata=9 de Julho de 2010|wayb=20131224110139}}</ref>
+
+===== Cemitérios =====
+Os cemitérios de Dourados são lugares onde são [[sepultamento|sepultados]] os [[cadáver]]es, sendo o mesmo que [[necrópole]] ou sepulcrário. Na maioria dos casos os cemitérios são [[lugares de prática religiosa]] e os ritos funerários são cumpridos de acordo com a respectiva religião ([[Igreja Católica|católica]], [[protestantismo|protestante]], [[judaísmo|judaica]], [[islamismo|islâmica]]) ou fraternidade ([[Maçonaria|maçônica]]). Em Dourados destaca-se os cemitérios [[Cemitério Luterano|Luterano]], [[Cemitério Parque de Dourados|Cemitério Parque]] (privados), [[Cemitério Bom Jesus|Bom Jesus]] e Santo Antônio de Pádua (públicos).
+
+==== Segurança ====
+Em termos gerais, a segurança pública em Dourados assegura o bem-estar das pessoas e dos bens, sobretudo através da aplicação da [[lei]]. Por extensão, o termo "polícia" é também utilizado para designar as [[corporação|corporações]] e as pessoas que têm como principal função o exercício daquela atividade. Hoje em dia, o termo "polícia" está normalmente associado aos serviços e agentes do [[estado]] nos quais o mesmo delega a autoridade para o exercício dos seus poderes de polícia, dentro de um limite definido de responsabilidade legal, territorial ou funcional. Normalmente, aos agentes de autoridade policial é concedido o poder para o uso legítimo da força no âmbito do cumprimento da sua missão. Apesar de ser normalmente associada exclusivamente à atividade de aplicação da lei, a atividade policial é bastante mais abrangente. Para além da preservação da lei e da ordem, a polícia pode incluir outras atividades como o [[defesa civil|socorro em situações de acidente ou catástrofe]], o [[planeamento urbano]], a [[educação|educação de menores]] e até a [[assistência social]]. Em Dourados há as seguintes instituições de segurança pública
+; [[Polícia Federal]]
+Possui uma Delegacia com infraestrutura completa e policiais especializados em trabalhos dentro da cidade.
+; [[Polícia Rodoviária Federal]]
+Possui uma delegacia e posto situado no km 267 da BR-163.
+; [[Polícia Civil do Estado de Mato Grosso do Sul|Polícia Civil]]
+A [[Polícia Civil do Estado de Mato Grosso do Sul|Polícia Civil]] está presente no município com sua delegacias e departamento especializados:
+* Delegacia Regional de Polícia de Dourados
+* Delegacia de Atendimento à Infância, Juventude e Idoso - DAIJI
+* Delegacia de Atendimento à Mulher  - DAM
+* Primeira Delegacia de Polícia de Dourados
+* Segunda Delegacia de Polícia de Dourados
+; [[Polícia Militar de Mato Grosso do Sul|Polícia Militar]]
+A [[Polícia Militar de Mato Grosso do Sul|Polícia Militar]] faz o trabalho ostensivo e repressivo no combate a criminalidade na cidade.
+* 3º BPM – Dourados
+* GPM – Distrito de Indápolis
+* 2º Pel/2ª Cia – Distrito de Itaum
+* 1º GPM/1º Pel/3ª Cia - Distrito de Vila Formosa
+* 2º GPM/1º Pel/3ª Cia - Distrito de Vila Vargas
+* 3º GPM/1º Pel/3ª Cia - Distrito de Panambi
+* 4º Pel/1ª Cia/15º BPM Ambiental
+; Guarda Municipal
+Realiza rondas patrimonais na cidade, atua na fiscalização de trânsito, bem como trabalha em cooperação com secretarias e demais órgãos de segurança pública presentes, destacando-se as equipes de ronda ostensiva motorizada, ronda escolar e Guarda Municipal Ambiental. Possui uma sede principal, bem como postos nos parques Antenor Martins, Primo Fioravanti, Praça Antônio João, Terminal Rodoviário e futura sede ambiental no Espaço Feira Central Prefeito João Totó da Câmara.
+
+== Gestões multifacetárias locais ==
+O termo "administração" vem do latim ''administratione'', que significa ''direção, gerência''. Ou seja, é o ato de administrar ou gerenciar negócios, pessoas ou recursos, com o objetivo de alcançar metas definidas.<ref>[http://www.significados.com.br/administracao/ Significado de Administração]. Acesso em 16 de junho de 2013.</ref> '' É uma área do conhecimento fundamentada em um conjunto de princípios, normas e funções elaboradas para disciplinar os fatores de produção, tendo em vista o alcance de determinados fins como maximização de lucros ou adequada prestação de serviços públicos.<ref>Administração. In: FERREIRA, A. B. de H. Novo Dicionário da Língua Portuguesa. 1. ed. São Paulo: Nova Fronteira, 1981. p. 38.</ref>
+
+Segundo o portal Empresômetro, Dourados tem um total de {{fmtn|22170|empresas ativas}} (sendo 8,68% do total de empresas do estado), o que coloca o município em [[Lista de municípios do Brasil por empresas ativas|132º lugar]] no [[Brasil]] e [[Lista de municípios de Mato Grosso do Sul por empresas ativas|2º lugar]] no [[Mato Grosso do Sul|estado]]. Há várias empresas e cooperativas na cidade de pequeno, médio e grande portes tais como indústrias, comércio e órgãos públicos.<ref name="Empresômetro"/>
+
+=== Gestão Pública ===
+{{Artigo principal|[[Gestão Pública de Dourados]]}}
+
+Refere-se a toda administração promovida pelo poder público, entre eles vereadores, prefeitos, juízes e advogados. A Constituição atual (de 1988) proporciona um nova concepção aos '''gestores douradenses''', que passa a obter mais direitos e recursos financeiros do governo federal e adquire a si responsabilidades na saúde, educação e gestão ambiental. A política local, através de ações, desenvolve um papel importante que podem transformar as áreas social, econômico, ambiental e territorial, já que a classe política local (vereadores e prefeito) é detentora do poder na sua plenitude para promover.
+
+Dourados tem alguns símbolos oficiais tais como hino, brasão e bandeira. Conta também com o maior colégio eleitoral do interior do estado de Mato Grosso do Sul com eleitorado total de 152 169 pessoas (8,112% do total do estado), divididos em 71 527 eleitores homens e 80 642 mulheres.{{carece de fontes|data=julho de 2017}} Desse total, 6 195 são servidores públicos (ou 2,9 servidores para cada 100 habitantes).<ref name="REM-F">[http://www1.folha.uol.com.br/remf/#/municipio/2554/navirai Ranking de Eﬁciência dos Municípios] – Folha</ref>
+
+Há mais de 1 100 órgãos públicos na cidade.<ref name="Forum Permanente">[http://www.forumpermanente.smpe.gov.br/ Forum Permanente]</ref> Assim como no resto do Brasil, o poder público local douradense é representado pelos 3 poderes oficiais:
+*No '''Legislativo''' é representado pela [[Poder Legislativo de Dourados|Câmara de Vereadores]], que são responsáveis pela apreciação e aprovação de leis municipais. A cidade é representada por um total de 19 vereadores sendo composto por vários partidos.
+*No '''Executivo''' é representado pela [[Poder Executivo de Dourados|Prefeitura]], onde prefeito, vice-prefeito e secretários municipais são responsáveis pela promulgação e aplicação das leis municipais. A atual prefeita é Délia Razuk, do [[Partido da República|PR]], eleita em 2016.
+*No '''Judiciário''' o município tem como principal cobertura o Tribunal de Justiça, representado pela [[Comarca de Dourados]] ([[Fórum João Adolfo Astolfi]]) sediado na cidade. Este de gestão estadual, assim como a Defensoria e o Ministério Público do Estado. Há ainda órgãos federais sediados no município tais como a Justiça Federal e o Ministério Público da União.
+
+==== Cidades-irmãs ====
+* {{Flagicon|Chile}} [[Iquique]], [[Chile]]
+* {{Flagicon|USA}} [[Kearney]], [[USA]]
+
+=== Gestão privada ===
+{{Artigo principal|[[Economia de Dourados]]}}
+Refere-se a toda administração promovida pelo setor privado (empresas). Dourados é o principal centro urbano do interior do estado, muito próspera em arrecadação tributária do estado de Mato Grosso do Sul especialmente por causa da agropecuária. Apesar disso, a indústria desponta como alternativa ao município e à região e está em franco crescimento. Com razoável desenvolvimento comercial e de serviços, Dourados possui no total segundo o Empresômetro, quase 20 mil estabelecimentos privados atacadistas, varejistas e também de serviços.<ref name="Forum Permanente"/>
+
+A cidade possui vários centros de compras, entre galerias, supermercados e lojas de conveniências. Se destaca cada vez mas também no setor automotivo abastecendo a região com venda de veículos novos e usados. Dourados esta se inserindo cada vez mais no mundo chamando a atenção de novas empresas e recentemente instalou-se em Dourados vários centros de economia privada.
+
+=== Gestão comunitária ===
+Refere-se a todas as [[iniciativas privadas]] de utilidade [[pública]] com origem na [[sociedade civil]], ou seja, define as diversas [[organizações]] sem vínculos diretos com o [[Setor público]] (o [[Estado]]) e o [[Setor Privado]] (o [[Mercado]]). A sua composição é lastreada por organizações sem fins lucrativos, criadas e mantidas pela participação voluntária, de natureza [[privada]], não submetidas ao controle direto do Estado, dando continuidade às práticas tradicionais da caridade, da [[filantropia]], trabalhando para realizar objetivos sociais ou públicos, proporcionando à [[sociedade]] a melhoria na [[qualidade de vida]], atendimento médico, eventos culturais, campanhas educacionais, entre tantas outras atividades.
+
+Dentre essas [[organizações]] estão as [[ONG]]s (Organizações Não Governamentais), [[Entidade filantrópica|entidades filantrópicas]], [[OSCIP]] ([[Organização da Sociedade Civil de Interesse Público]]), [[organizações sem fins lucrativos]] e outras formas de associações civis sem fins lucrativos.
+
+=== Gestão e projetos mistos ===
+Refere-se a todas as iniciativas de utilidade ao menos ambígua que define as diversas organizações que tem vínculos diretos ou apenas entre esferas públicas (nacional, estadual ou municipal) ou então entre o setor público e o setor privado (o mercado).
+
+A sua composição é composta por organizações que pode ser com e sem fins lucrativos, criadas e mantidas pela participação de natureza privada e pública ou apenas pública, podendo não ser submetidas ao controle apenas do Estado, que dá continuidade às práticas tradicionais variadas e trabalha para realizar objetivos sociais ou públicos, proporcionando à sociedade a melhoria na qualidade de vida, atendimento médico, eventos culturais, campanhas educacionais, entre tantas outras atividades.
+
+Dentre essas organizações podem estar vários perfis de empresas tais como as ONGs (Organizações Não Governamentais), entidades filantrópicas, OSCIP (Organização da Sociedade Civil de Interesse Público), organizações sem fins lucrativos, entre outras.
+
+== Turismo ==
+{{Wikivoyage|Dourados}}
+Sentir todas as culturas, experimentar o sabor da diversidade, ter novas oportunidades negócios, eventos e turismo, a região de Dourados é um ótimo local para fazer turismo e conhecer, possuindo atrativos naturais, histórico-cultural, lazer e entretenimento. Dourados se localiza no centro sul de Mato Grosso do Sul sendo um dos principais centros turísticos de MS e sua população representa aproximadamente 10% do total do Estado, tendo mais de 210 mil habitantes. Seu potencial turístico está sendo despertado na área de agroindústria, eventos, comércio e artesanato. As feiras agropecuárias, as festas de peão de boiadeiro, festas religiosas, festas tradicionais e muitos outros eventos do gênero, proporcionam a evolução dos mercados turísticos, entretenimento e de artesanato, consolidando a região, contribuindo e fortalecendo a inserção social, econômica e cultural das comunidades da região. A cidade tem seu próprio gestor de turismo, o [[Grande Dourados Convention & Visitors Bureau]]. Já na indústria turística, o município de Dourados faz parte da chamada [[Região Turística Grande Dourados]].<ref name="Turismo">[http://www.turismo.ms.gov.br/index.php?inside=1&tp=3&comp=&show=3505 Fundação de Turismo de Mato Grosso do Sul] - Governo de MS</ref> Segue abaixo as opções turísticas locais.
+
+=== Turismo de contemplação ===
+==== Áreas verdes ====
+[[Ficheiro:Dourados - Parque dos Ipês.jpg|thumb|225px|right|[[Parque dos Ipês]], um dos tantos existentes na cidade de Dourados.]]
+Dourados dispõe das principais áreas verdes:
+; Parques
+* [[Horto Florestal de Dourados|Horto Florestal]]: área verde localizada mais ao sul da cidade de Dourados.
+* [[Parque Antenor Martins]]: o parque foi fundado em 1977 e possui aproximadamente 7.700 m². Seu destaque é um grande lago onde são realizados campeonatos de pesca. O parque já abrigou grandes eventos como o Verão Dourados.
+* [[Parque Arnulpho Fioravanti]]: se localiza ao lado do terminal rodoviário e shopping center, possuindo um imenso lago e uma grande área de lazer.
+* [[Parque Córrego Rêgo d'Água]]: parque em área de proteção ambiental, ao longo do leito do córrego Rego D'Água.[[Parque dos Ipês]]: inaugurado no final de 1995, já abrigou manifestações culturais de grande importância na cidade, como o "mercado étnico", recentemente realizado.
+; Praças
+* [[Praça Antonio Álvares Duarte]]: situada em frente ao Hospital Evangélico, a praça abriga o único terminal de transbordo de Dourados.
+* [[Praça Antonio João]]: localizada no centro de Dourados, possui um calçadão, conhecido como calçadão central. Ainda fica na Praça a Igreja Católica Central Imaculada Conceição, mais conhecido por Igreja Matriz.
+* [[Praça do Cinqüentenário]]: relata a história, que a praça foi construída quando Dourados completava 50 anos, em 1985. Eventos musicais, de dança e de teatro são frequentes nessa área pública. Esta praça também recebe eventos religiosos.
+* [[Praça Paraguaia]]: praça de pequeno porte que abriga uma capela da Virgem Madre de Caacupê.
+====Monumentos====
+* [[Casa de Madeira]] (BR-163, Rodovia Dourados - Campo Grande): na data de seu tombamento, era de propriedade de Albino Gonçalves da Silva, no perímetro urbano a do Distrito da Vila São Pedro.
+* [[Cruzeiros de Dourados|Cruzeiros]]: um deles foi tombado como patrimônio histórico do município o "Cruzeiro" é marco do início da colonização do Núcleo Colonial de Dourados. O outro se localiza na CAND (Colônia Agrícola Nacional de Dourados).
+* [[Estação Ferroviária de Itahum]] (distrito de Itaum): prédio usado para o embarque e desembarque de passageiros.
+* [[Figueiras de Dourados|Figueiras]]: se situam nas ruas Wlademiro Muller do Amaral, em frente ao n 274 (1 figueira); Vila Amaral - Av. Pres. Vargas entre Marcelino Pires e Onofre P de Mattos (17 figueiras);Rua João Candido Câmara entre João Vicente Ferreira e Oliveira Marques (12 figueiras); Rua João Rosa Góis entre Joaquim T Alves e Cuiabá (9 figueiras); Avenida Aniz Rasselen, BR-463 (1 figueira).
+* [[Marco de Cimento de Dourados|Marco de Cimento]] (Parque dos Ipês): delimita a divisa entre o núcleo urbano de Dourados e a Colônia Agrícola Nacional de Dourados. Foi tombado pelo Patrimônio Histórico Municipal "Presidente Getúlio Vargas".
+* [[Monumento do Colono]]: popularmente conhecido como "Mão do Bráz"
+* [[Usina Filinto Müller]]: conhecida também como Usina Velha, na data de seu tombamento ficou estipulado que a antiga usina seria transformada no Museu de Dourados, restaurada pelo poder público municipal, a usina está localizada em uma área de 12 222 m².
+
+=== Turismo agrícola ===
+Considerada, hoje, a maior fronteira agrícola do País, a região despertou também para outra riqueza: o turismo agrícola, que visa levar o homem da cidade a conhecer as maiores fazendas de soja, milho, trigo e outros grãos dentro da melhor técnica, desde o plantio até a colheita.
+
+=== Turismo de eventos ===
+A cidade possui várias opções, entre elas cinemas, restaurantes, teatros, bares, [[chope]]rias e tomar tereré, possuindo também uma vida noturna bastante rica. Atrai visitantes por eventos como a EXPOAGRO (Feira Agropecuária de Dourados), o Campeonato Brasileiro de Motocross, Festa das Nações, Festa do Peixe, Temporadas Populares e eventos científicos realizados em suas [[universidades]].
+
+==== Eventos ====
+; Data móvel
+* Carnaval Comunitário (Folia Popular): Importante festa popular que aqui acontece também nos bairros populares. Sempre se apresentam grupos de animação conhecidos e renomados.
+; Janeiro
+* Exposição de Fotografias: exposição da memória e história douradense. Exposição de todo acervo pertencente ao [[Museu Histórico de Dourados]]. Mostram a história dos significativos eventos em Dourados.
+; Fevereiro
+* Verão Dourados: promove shows artísticos, apresentações e várias opções de lazer. Realiza também campeonatos desportivos.
+; Março
+* Encena Dourados: o Encena Dourados é uma mostra de teatro infantil que tem por finalidade possibilitar o acesso às artes cênicas para um público de aproximadamente 5.000 alunos da rede Municipal de Ensino e dos projetos sociais da administração municipal.
+; Abril
+* Festa do Peixe: Campeonato de pesca entre a comunidade douradense. Acontece campeonato de pesca durante o dia e a noite é promovida várias atrações artísticas.
+; Junho
+* Festa Junina: esta festa tem por objetivo cultivar a tradição do ciclo junino em Dourados, reservar a identidade cultural do município e região, e ainda proporcionar horas de lazer e cultura para a comunidade local. A festa junina tem participação de várias entidades que montam barracas. Também acontece na festa o concurso de quadrilhas e o campeonato do pau de sebo com premiação.
+* Mostra de Dança: Mostra de dança não competitiva que reúne grupos de todo MS.
+; Julho
+* Festa do Caminhoneiro: festa dedicada aos caminhoneiros
+* Temporadas Populares: quem organiza é o Mercado Cultural e é direcionado à escritores que não têm oportunidade de ter seus trabalhos publicados.
+; Agosto
+* Concurso Literário de Dourados: esta mostra tem como finalidade difundir e estimular a Arte Literária do Município.
+* Exposição do SAD: exposição promovida pelo [[Salão de Artes de Dourados]], com obras de artistas douradenses e da região. É realizado desde 1997.
+; Setembro
+* Encontro de Corais: tradicional, reúne grupos corais do Brasil inteiro bem como de países vizinhos como Paraguai, Uruguai e outros.
+* Festival Universitário de Teatro de Dourados (FESTUDO): Festival de teatro que movimento toda a cidade. Grupos do Brasil e de países vizinhos são selecionados por uma comissão de jurados para se apresentarem. Funciona como uma mostra, mas não é competitiva.
+; Novembro
+* Concurso de Bandas e Fanfarras: nesse concurso apresentam-se bandas de toda a região de Dourados.
+* Indareta: carnaval fora de época que ocorre na região do Indaiá.
+; Dezembro
+* Aniversário de Dourados: vários eventos são promovidos em comemoração ao Aniversário de Dourados. Cada secretaria prepara algo na sua área para inserir ao evento
+* Festa das Nações: com comidas típicas e apresentações culturais dos países participantes.
+
+== Desportos ==
+Possui vários outros equipamentos esportivos que impulsionam mais o turismo esportivo e atraem milhares de pessoas, entre eles um motódromo, dois estádios (o principal é o [[Estádio Fredis Saldivar|Douradão]]), cinco ginásios e dois times de futebol.
+
+=== Automobilismo ===
+A cidade possui os seguintes equipamentos automobilísticos:
+* Kartódromo de Dourados
+* [[Motódromo Fae Bianchi]]: pista para disputa automobilístico. Quando acontece eventos é utilizado a estrutura do Douradão.
+
+==== Futebol ====
+Os três times de maior expressão são o [[Clube Desportivo 7 de Setembro]], [[Dourados Atlético Clube]] e o [[Ubiratan Esporte Clube]], estando este último recentemente retornado ao âmbito profissional do futebol. Os estádios que sediam jogos oficiais no município são:
+* [[Estádio Fredis Saldivar]]: apelidado de Douradão, é o 2º maior estádio do MS e um dos maiores estádios da [[Região Centro-Oeste do Brasil]], com capacidade para 30.000 pessoas. Foi sede de importantes jogos de futebol e atrai visitantes de outras cidades. Além de eventos esportivos, o estádio já recebeu shows musicais, entre outros eventos culturais.
+* [[Estádio Napoleão de Souza]]: conhecido também por Estádio da LEDA, possui capacidade para receber 10.000 pessoas, tendo 2 banheiros e 2 vestiários. Já recebeu jogos importantes da Copa do Brasil e da Seleção Brasileira de Masters. O campo possui medidas oficiais e gramado esmeralda.
+
+==== Outros esportes ====
+Dourados ainda conta com 5 ginásios:
+* [[Centro de Atividades Mário Amato]]: ginásio pertencente ao Sesi, possui uma quadra poliesportiva coberta, com o piso de assoalho.
+* [[Unigran|Ginásio da Unigran]]: além do ginásio possui um campo de futebol suíço de grama esmeralda.
+* [[Ginásio Municipal de Esportes de Dourados|Ginásio Municipal de Esportes]]: principal ginásio de esportes da cidade de Dourados, abriga com destaque eventos esportivos e culturais, como o Carnaval de Cristo que há 14 anos é tradição na cidade. No que se refere a eventos esportivos de destaque, o ginásio já recebeu jogos do Campeonato Estadual de Futsal, além dos jogos escolares do município.
+* [[SESC Dourados|Ginásio Poliesportivo do SESC]]: além do ginásio, o Sesc de Dourados tem parque aquático com uma piscina semi-olímpica e uma de biribol, equipamentos para natação e estrutura para competição.
+* Futebol Americano: Dourados possui um time de Futebol Americano, que vem expandindo o esporte pela cidade.
+
+== Cultura e literatura ==
+A identificação do espaço geográfico local de Dourados ocorre com seus elementos, formas e funções culturais muito específicas e estimulantes. A cidade está formando sua identidade cada vez mais através da cultura e dos costumes de seu povo, com espírito guerreiro e forte herdado dos indígenas e a força da agropecuária que refletem na cultura e nos costumes do povo desta região. Há a necessidade ainda de apreender um espaço que tem se inscrito na história precedente e recente do município, sendo bem desenvolvida culturalmente. Possui várias opções que abrangem assuntos culturais locais.
+
+=== Cultura popular ===
+==== Produtos regionais ====
+Em Dourados, entre o [[artesanato]] que pode ser encontrado à venda, entre outros lugares, na Casa do Artesão, encontram-se peças de [[cerâmica]] que podem ser pintadas de forma colorida, ou não, muitas vezes representando animais da região e do [[Pantanal]]. Estes trabalhos muitas vezes apresentam detalhes em madeiras típicas da região. Também é possível encontrar peças, como vasos, que possuem utilidade mais que puramente decorativa. Artesãos da cidade ainda produzem rendas de alta qualidade e outros tipos de tecelagem.
+
+==== Costumes ====
+===== Influência =====
+É composta de influências originárias dos estados e países de seus povoadores: entre as principais destas influências estão as culturas paulista, sulista e de países como [[Síria]], [[Líbano]], [[Japão]] e [[Paraguai]]. Ainda partilha a cultura do estado em que está inserido, o [[Mato Grosso do Sul]]. Entre os costumes mais fortes da cultura de Dourados tem relação com o meio rural, em eventos como a exposição agropecuária local, por exemplo. A influência que o campo exerce na cidade é grande e percebe-se através dos alimentos.
+
+===== Músicas típicas =====
+Na música destacam-se géneros provenientes do Paraguai como o [[chamamé]], polca e [[guarânia]], visto que a cidade tem laços estreitos com aquele país.
+; Instrumentos
+* [[Acordeão]]: o som do acordeão é criado quando o ar que está no fole passa por entre duas palhetas (localizadas no chamado castelo, dentro do fole), que vibram mais grave ou agudo de acordo com a distância entre elas (quando mais distantes, mais grave o som) e seu tamanho (quanto maior, mais grave o som produzido). Quanto mais forte o ar é forçado para as palhetas, mais intenso é o som. O ar é proveniente do fole, que é aberto ou fechado com o auxílio do braço esquerdo. A maioria dos acordeões tem quatro vozes, que são diferentes oitavas para uma mesma tecla ou botão. Portanto, num acordeão de quatro vozes com o registro 'master' pressionado, ao tocar um Dó, na verdade são tocados dois Dós na oitava que pressionou, um Dó uma oitava acima e um Dó na oitava abaixo, e isso é responsável pelo som único do acordeão.<ref>[http://www.accordion-yellowpages.com/ Tudo sobre acordiões] - accordion-yellowpages</ref>
+* [[Flauta]]: possui um som melodioso, de timbre suave e doce.<ref>{{citar web|url=http://www.mundomax.com.br/blog/instrumentos-musicais/flauta-doce-e-flauta-transversal-qual-a-diferenca/|título=Flauta Doce e Flauta Transversal: Qual a diferença?|publicado=mundomax.com.br|acessodata=17 de fevereiro de 2012}}</ref> Seu som depende essencialmente, por um lado, da natureza e da direção da onda de ar e, por outro, do comprimento da coluna de ar. O som fundamental da flauta é o DÓ3, a partir do qual a extensão do instrumento é de 3 oitavas, graças aos harmónicos 2 e 4 (oitava e dupla oitava), cuja emissão é obtida pela modificação da pressão do sopro.<ref>{{citar web|url=http://agnazare.ccems.pt/EB23EMUS/instrumentos/flauta.htm|título=Instrumentos -Flauta|publicado=agnazare.ccems.pt|acessodata=17 de fevereiro de 2012|arquivourl=https://web.archive.org/web/20120204035759/http://agnazare.ccems.pt/EB23EMUS/instrumentos/flauta.htm|arquivodata=2012-02-04|urlmorta=yes}}</ref>
+* [[Harpa]] com formato sempre triangular lembrando um [[arco (arma)|arco de caça]], a harpa é constituída pela caixa de ressonância, coluna, pescoço(s), pedais e cordas.<ref>Minidicionário Ruth Rocha, Editora Scipione (Português)</ref>
+* [[Violão]]: possui corda de ''[[nylon]]'' ou [[aço]], concebida inicialmente para a interpretação de peças de [[música erudita]]. O corpo é oco e chato, em forma de oito, e feito de várias [[madeira]]s diferentes. O braço possui [[traste]]s que a tornam um instrumento [[temperamentos musicais|temperado]]. As versões mais comuns possuem seis cordas de ''nylon'', mas há violões com outras configurações, como o '''[[violão de sete cordas]]''' e o '''[[violão baixo]]''', com 4 cordas, afinadas uma [[oitava]] abaixo das 4 cordas mais [[grave]]s do violão.<ref name=andrade>{{citar livro|autor=Andrade, Mário de|título=Dicionário Musical Brasileiro|idioma=|edição=1|local=|editora=Villa Rica|ano=1989|páginas=701|volume=|id=|isbn=8531900220 }}</ref>
+* [[Viola caipira]]: a viola caipira tem características muito semelhantes ao violão. Tanto no formato quanto na disposição das cordas e acústica, porém é um pouco menor. Existem diversos tipos de afinações para este instrumento, sendo utilizados de acordo com a preferência do violeiro. As mais conhecidas são Cebolão, Rio Abaixo, Boiadeira e Natural.<ref name="vilela1">{{Citar livro|autor=[[Ivan Vilela]]|url=http://www.ivanvilela.com.br/sobre/artigo_caipira.pdf/|título=O caipira e a Viola em: Sonoridades luso-afro-brasileiras|subtítulo=Brasileira|língua=|edição=|local=Lisboa|editora=ICS|ano=2003|páginas=173-189|volume=|id=|acessodata=2014-09-15|arquivourl=https://web.archive.org/web/20080820005726/http://www.ivanvilela.com.br/sobre/artigo_caipira.pdf|arquivodata=2008-08-20|urlmorta=yes}}</ref>
+; Gêneros
+Os gêneros musicais típicos de Naviraí é grande parte proveniente do Paraguai em função da proximidade com aquele país:
+* [[Chamamé]]: é um [[gênero musical]] tradicional da província de [[Corrientes (província)|Corrientes]] ([[Argentina]]), apreciado também no [[Paraguai]] e em vários locais do [[Brasil]] ([[Mato Grosso do Sul]], [[Paraná]], [[Rio Grande do Sul]]). Em sua origem se integram raízes [[culturais]] dos povos indígenas [[guaranis]], dos exploradores [[Espanha|espanhóis]] e até de [[Imigração italiana no Brasil|imigrantes italianos]]. Na Argentina, o chamamé é dançado em compasso ternário, ou seja o chamamé valsado, na língua indígena guarani, chamamé quer dizer improvisação. O chamamé é o resultado do [[amor]], da fusão de [[raça]]s ([[etnia]]s), que misturadas com o tempo contaram a [[história]] do ser humano e de sua [[paisagem]], projetando-se inclusive para outras fronteiras. Utiliza o [[acordeão]] e o [[violão]] como instrumentos principais.
+* [[Guarânia]]: [[gênero musical]] de origem [[paraguai]]a, em [[andamento]] lento, geralmente em [[Escala menor|tom menor]]. As canções mais conhecidas são: Índia, Ne rendápe aju, Panambi Vera e Paraguaýpe criado orquestra sinfônica modo baseado em poemas, canções com sinfônico accompaniments. O gênero seduz as populações urbanas, mas não no interior. Isto é provavelmente devido ao interesse das pessoas por estilos mais rápido como a [[Polka]] ou o [[Purahéi Jahe'o]].
+* [[Polca paraguaia]]: também chamada de ''Danza Paraguaya'' (ou dança paraguaia em espanhol), é um [[estilo musical]] criado no [[Paraguai]] no [[século XIX]].
+; Danças
+As danças típicas de Naviraí têm origens diversas, mas grande parte origina de seus semelhantes do [[Paraguai]] e [[Sul do Brasil]].<ref>[http://www.etur.com.br/conteudocompleto.asp?idconteudo=4892 Danças típicas do Mato Grosso do Sul] - Etur</ref>
+* Chupim: dança que simboliza a polca paraguaia, representado por três pares, que imitam a ave de mesmo nome cortejando as fêmeas. Frequentemente vai-se ao encontro do Carão, imitação do pássaro de mesmo nome, que é um ave de rapina que tenta roubar de qualquer jeito a fêmea/dama do seu companheiro. É acrescentado ainda toques de castanholas, com os dedos das mãos, da aculturação dos espanhóis. Possui como movimentos a catena, tourear o par, danças e rodar o par.
+* Mazurca: dança igual a rancheira, que é muito comum na região Sul do Brasil e segue o mesmo formato dos bailes sulistas.
+* Palomita: dança de salão executada sob o som de polca paraguaia e/ou chamamé. No Paraguai se utiliza um gênero de mesmo nome para tal dança, com revezamento entre casais participantes.
+* Polca de Carão: chamada também de Polca do Fora, a dança é uma brincadeira que consiste em os dançantes levarem um carão (ou um fora) do seu pretendente. E continua até que todos levem um carão.
+* Toro Candil: caracteriza-se mais como uma brincadeira do que como dança ou folguedo. É feita com o boi (toro em espanhol) feito de arame, pano e a ossada natural da cara do boi, que é abatido para a festa. Duas tochas com fogo aceso são colocadas ao chifre do boi candeeiro (candil em espanhol). Brincantes mascarados (mascaritas em espanhol) fazem apresentações vestidos para não serem reconhecidos (ambos os sexos) brincando entre si e mudam o seu idioma para o [[Língua guarani|guarani]]. Enquanto o Toro Candil não chega, faz-se a brincadeira do bola-ta-ta (bola de pano embebida em óleo e acesa), daí chuta-se a bola de um brincante para outro até ela apagar totalmente. Então entra em cena o Toro Candil para alcance do auge da festa. Quando ficam cansados, vão para o salão e dançam (pode-se dançar com outro brincante do mesmo sexo, pois eles não se conhecem) no ritmo de salsas e merengues.
+* Xote aos Pares: também chamado de Xote de Três, é uma dança equivalente ao Xote de Duas Damas, que é muito executado na [[Região Sul do Brasil]].
+* Xote Inglês: trazida pelos migrantes do Sul do Brasil, possui formato de xote com duas divisões bem definidas: uma com o ritmo que leva a marcação do giro executado pelo par com seis passos girando á esquerda e depois mais seis passos para a direita e na sequência marca-se dois passos para a esquerda e dois para a direita com um giro para a direita com mais três passos repetidos nessa segunda parte. Após volta-se ao início e a dança continua até o fim.
+
+=====Gastronomia e bebidas=====
+[[Ficheiro:Mate containing tereré.JPG|thumb|225px|Tereré.]]
+Dourados incorpora elementos da cultura paraguaia e indígena em sua gastronomia, visto que recebe influência desses dois meios. Com destaque para as [[xipa]]s paraguaias. Uma bebida muito comum na cidade é o consumo do [[tereré]] (feito com infusão de [[erva-mate]] e água gelada), servido numa guampa geralmente de chifre de boi e com uma bomba, de fácil preparo e tomado nos encontros especialmente em grupos jovens. Existem regras que não podem ser quebradas numa roda de tereré e que devem ser respeitadas. A bebida é consumida especialmente nos fins-de-semana, acompanhada de música regional (antigamente [[guarânia]] e [[chamamé]], hoje, principalmente, [[sertanejo]]).
+
+==== Grupos de teatro e dança ====
+Principais grupos de teatro e dança na ativa em Dourados:
+* [[New Street Power]]: Um grupo criado em Julho de 2001, formado por 10 Integrantes, já conquistou muitos prêmios e é um dos maiores grupos de Dança de Rua da Cidade. Famoso por ser cobiçado e almejado por muitas pessoas, se tornou grande após participações nos Festivais de Dança do Município, seu principal coreógrafo: Luciano Lima, integrante também do grupo: TWB e que já foi integrante de outro grupo de Dança, o Street Art de Dourados.
+* [[Agnus Street Dance]]: estilo dança de rua, o grupo existe há três anos, sendo responsável Claudinei Pires da Cruz (Ney). Nesse período de existência o grupo apresentou-se constantemente no Projeto Arte na Escola no município de Dourados. Além disso, o grupo obteve a 6ª colocação no 3º Festival Internacional de Hip Hop, realizado em Curitiba-PR no ano de 2004. Foi o único grupo de Mato Grosso do Sul a competir no Festival, concorreu na categoria juvenil. Sediado no Sesc Dourados.
+* [[Companhia de Teatro Rebuliço]]: o grupo, de atuação infantil, infanto-juvenil, empresarial e adulto apresenta-se em teatros, anfiteatros, escolas e teatro de rua, trabalhando ainda com bonecos, realizam cursos e palestras.
+* [[Ginasloucos]]: basquete acrobático, é formado por alunos da Unigran (Centro Universitário da Grande Dourados), eles fazem abertura de jogos municipais e já participaram do quadro "Se vira nos 30" no programa do Faustão em 2003 e 2004, Programa da Eliana (SBT), Ana Rickmann (Record) e de festivais em SP, RJ, PR. Os participantes não são jogadores de basquete, usam desse esporte técnicas para apresentar shows de enterradas de forma acrobática. O líder do grupo é Rogério da Cruz Montes, professor de Educação Física.
+* [[Grupo de Atores Independentes]]: de estilo contemporâneo, o grupo existe desde 1996 e participa frequentemente dos Festivais Sul Mato Grossense de Teatro, organizados pela Fesmat, e também do evento Dourados em Cena. Seus trabalhos são voltados para o teatro infantil, adulto e peças de rua. O grupo fez recentemente as campanhas de prevenção da Aids da Dengue (Dia D) na cidade de Dourados, quando foram contratados pela Secretaria Municipal de Saúde local.
+* [[Grupo de Dança Las Calândrias]]: especializado em danças típicas do Paraguai, o Grupo de dança Las Calândrias existe desde 1998 e durante este tempo apresentou-se por todo estado e ainda em Cuiabá-MT, Brasília-DF, Assunção-Paraguai. Participou também do 5º Festival de Inverno de Bonito.
+* [[Grupo de Dança Xirú]]: especializado em danças típicas gauchescas, esse grupo é subdividido em mirim, juvenil, adulto e xirú. O grupo costuma se apresentar no CTG, em escolas, eventos sociais e jantares de confraternização.
+* [[Grupo de Teatro Teic a Trango]]: grupo de teatro da Escola Imaculada Conceição. De estilo infantil, é composto por alunos da escola e formado por 4 turmas de 15 atores. Apresentam-se em diversos eventos infantis, como na semana da criança.
+* [[Grupo Experimental Anna Pavlowa]]: de estilo balé clássico, moderno, contemporâneo, dança do ventre, é formado por meninas que dançam na escola de balé Anna Pavlowa, que fazem apresentações artística em encontros de academias e festivais de dança.
+* [[Grupo Padrões Cia de Dança]]: de estilo contemporâneo e teatro de dança, apresentam-se em várias ocasiões, com vários estilos como dança de salão, jazz, contemporâneo e moderno.
+* [[Grupo de Teatro Passa Anel]]: O grupo de teatro infantil existe desde 2000 na Escola Franciscana Imaculada Conceição, porém, só recebeu o nome no ano de 2009. O grupo é formado por duas turmas de 20 alunos. Sempre fez apresentações internas e sua estreia no Teatro Municipal foi no ano passado com a Peça "Foi na casa do mestre André" de direção e autoria da Professora Rejani Betoni Garcia Vendramini e será reapresentado em 2010 por convite da FUNCED - Dourados.
+* [[Grupo de teatro Borboletas na Barriga]] O Grupo de teatro infantil da Escola MACE, dirigido pela professora Rejani Betoni Garcia Vendramini, existe desde 2006 e todos os anos se apresenta para a comunidade no evento anual Palco MACE. "Encanta Criança" (2006), "Se liga no nosso som" (2007), "Viagem ao mundo do cinema"(2008), "Tem vaga pra Chapeuzinho."(2009)
+* [[Grupo Teatral Entreartes]]: de estilo contemporâneo e infantil, o grupo existe desde 1991 e ao longo deste período já apresentou inúmeras peças, entre as quais muitas delas receberam premiações e menções honrosas. Entre as peças montadas pelo grupo podemos destacar: o primeiro espetáculo realizado pelo grupo que foi em 1992, "O mistério da feiurinha", "Alice no país das maravilhas" (1993), "A sementinha" (1994) que recebeu menção honrosa no 2º Festival de Monólogos de Dourados, "Pluft" vencedor de 9 prêmios no 1º Festival Universitário de Teatro Amador de Dourados, além de ter recebido três indicações no Festival de Teatro de MS nas categorias de melhor direção, cenário e espetáculo. Há ainda as peças "Peter Pan" e "Morte Vida Severina" (1996), onde a primeira fora vencedora de sete prêmios no 3º Festival de Teatro Brasil-96, "A menina e o Vento" e "O Patinho Feio" (1997) onde com a segunda peça receberam o prêmio de ator revelação (Rafael Franzini) no 19º Festival de Teatro de MS. Em 1998 o grupo montou e apresentou as peças "Claudinho estala fora" e "Tarde chuvosa". No ano seguinte (1999) com a peça "Menino Maluquinho" o grupo foi vencedor de 6 prêmios no 2º Festival de Teatro Universitário de Dourados (Festudo) e com a mesma peça foram vencedores dos prêmios de melhor direção, espetáculo e atriz no 21º Festival de Teatro de MS. O grupo foi responsável pela montagem e apresentação dos espetáculos "Sítio do Pica-pau-amarelo", "Bom dia Comadre" e pela remontagem de "Peter Pan" nos anos 2000, 2001 e 2002 respetivamente. Meire Milan é a responsável pelo grupo.
+* [[Cia. Teatral Trupe Zomba]]: de estilo contemporâneo, a Cia. Teatral Trupe Zomba foi fundada em agosto de 2004 na cidade de Dourados/MS com o objetivo de promover a formação de alunos-atores, montagem de espetáculos e intervenções. Fez parte de um projeto de extensão da Universidade Estadual do Mato Grosso do Sul – UEMS (2004-2009) e tem apoio de outras instituições como FUNCED, Casa da Cultura da UEMS e SESC-Dourados. O primeiro trabalho teatral da companhia foi à peça Fuck You, Baby de Mário Bortolotto em 2005. No período de 2006 foi realizada a I Mostra de Sketches com diferentes linguagens teatrais: poesia, realismo, o absurdo, a comédia e o sarcasmo. As pesquisas e a escolha das peças são direcionadas com a relevância social através de parcerias com instituições como SENTINELA (2005), CORREIO (2006). No ano de 2007 e 2008 realizou a montagem de Inimigos de Classe de Nigel Willians (violência na escola); Quando as Máquinas Param de Plínio Marcos, II Mostras de Esquetes circulando em Dourados e região. Realizam apresentações de poesia ao pé-do-ouvido (aberturas de eventos institucionais). Produção para empresas como o SIPAT (Semana Interna de Prevenção de Acidentes do Trabalhado): Doux-Frangosul (2008-2009); Eletrosul (2009/2011); Embrapa (2009) SESI/DOURADOS (2013); Campanha publicitária para UNIMED 30 anos (2009); Campanha publicitária para SICRED Pouped (educação financeira) – mais de 30 apresentações pelo sul do Estado (2009/2013). Montagem e circulação do esquete “Claro” de David Ives (teatro absurdo) - 2009; “Hotel Lancaster” de Mário Botolotto (2009) e das peças infantis “Luas e Luas” de James Thurber (2009/2010/2013) e “Operação Planeta” de Lucas Sayão e Rodrigo Perandré (2012/2013). Até o ano de 2009 a Cia. Teatral foi dirigida pela Professora Paula Regina Alvarenga, a partir de então a Trupe Zomba é dirigida pelo Educador Social: Lucas Gabriel dos Santos Sayão.
+* [[Hendÿ]]: foi um Grupo de Experimento e Pesquisa em Teatro. Foi um grupo independente no município de Dourados, de carater experimental e foi aprovado em importantes editais a nível regional e estadual. Em seus quatro anos de atividade procurou desenvolver atividades teatrais de qualidade no estado de Mato Grosso do Sul.
+* '''Grupo Mandi´o''': Grupo Mandi´o é um grupo que nasce no curso de graduação Bacharelado e Licenciatura em Artes Cênicas na Universidade Federal da Grande Dourados UFGD, tem caráter interdisciplinar  nos campos de Pesquisa, Ensino, Extensão e Arte, sobre cultura brasileira ameríndia, atua desde 2010 e&nbsp; procura criar, identificar, compreender e refletir como ocorre e se perpetuam as diversas formas de processos de criação em Artes da Cena em relação as manifestações da Cultura brasileira ameríndia e suas especificidades na região fronteiriça de Mato Grosso do Sul. Além de elucidar a relação destas manifestações na sociedade contemporânea. Os projetos inseridos no Grupo relacionam-se com as Comunidades Guarani Kaiowá de Panambi, Panambizinho, Aldeia Bororó e Jaguapiru, indígenas Kaiowá acampados em Lagoa Rica; Ita´y e Guyracamby´i,  além de jovens e crianças dos assentamentos da fazenda Nova Itamarati. Nossas ações são sempre construídas junto com esses grupos e desenvolvidas como uma rede que permite a interação prática, teórica e artística, em um viver comunitário. O objetivo é a criação de processos artísticos que reflitam crítica e criativamente a condição social e intercultural a que os Kaiowá e nós estamos expostos. Nós nos entendemos como um grupo de pesquisa de dança/teatro contemporânea e das expressões culturais enraizadas no solo sul-mato-grossense. O  grupo circulou diversas regiões do Brasil com o espetáculo " ARA PYAHU; (des)caminhos do contar-se" contemplado em 2014-2016 pelo prêmio Klauss Vianna de Dança.
+
+==== Centros culturais e de exposições ====
+* [[UEMS|Casa de Cultura da UEMS]]: é vinculada a Universidade Estadual de Mato Groso do Sul. Não tem como função principal ser um local para exposições, mas sim um centro de ensino e manifestação cultural. Realiza eventos culturais articulados com a UEMS, dentre esses possui oficinas de teatro, corais, coordenados por professores da UEMS e com o alvo voltado para a comunidade. Ainda possui um centro popular de estudos musicais, com aulas gratuitas de música para a comunidade carente.
+* [[Centro Cultural Perpétuo Socorro]]: conhecido também como IAD, é um espaço cultural que promove mostras culturais e artesanais.
+* [[Salão de Artes de Dourados]] (SAD): situado no antigo Supermercado Catarinense, promove exposição de obras de artistas douradenses e da região.
+
+==== Museu ====
+* [[Museu Histórico de Dourados]]: o acervo do museu conta com documentos sobre a história de Dourados: fotografias e objetos pessoais de pioneiros como Marcelino Pires, moedas, móveis antigos, indumentárias, livros, revistas, além de um acervo indígena. O Museu foi criado em 1977 e reinaugurado em 20 de dezembro de 2002.
+
+=== Instituições literárias ===
+==== Entidades ====
+* Academia Douradense de Letras: com sigla A.D.L., é uma associação de duração ilimitada, que tem finalidade exclusivamente literária e cultural, legalmente constituída em pessoa jurídica. É a associação literária máxima que representa a cidade de Dourados perante a [[Academia Brasileira de Letras]].
+* [[Grupo Literário Arandu]]: fundado em 17 de maio de 1997, pelos escritores Carlos Magno Mieres Amarilha, Edy Salis Leite, Luciano Serafim, Maria Lucia Tolouei, Nicanor Coelho, Regina Meyer e Simone Areco, com objetivo de incentivar a publicação de obras literárias dos novos autores douradenses. O Grupo se apresentou à sociedade por meio da realização da ''1ª Feira de Poesia'', nos dias 17 e 18 de maio de 1997, evento que contou com a exposição de varais com poemas de poetas já consagrados em Dourados e de estudantes de escolas públicas e particulares, no Parque dos Ipês, além de apresentações musicais e de capoeira. Na ocasião, foi publicado o ''Manifesto Arandu'', que reivindicava espaços para a difusão e valorização da literatura sul-mato-grossense. Em julho de 1997, o Grupo lançou a ''Revista Arandu'', para a publicação de artigos científicos produzidos na Região e é publicada até hoje.
+
+==== Bibliotecas ====
+[[Imagem:Biblioteca central UFGD.JPG|right|250px|thumb|Vista da biblioteca da [[Universidade Federal da Grande Dourados]].]]
+* [[Universidade Estadual de Mato Grosso do Sul|Biblioteca UEMS]]: incorporada à biblioteca da UFGD, aberta para visitação.
+* [[Universidade Federal da Grande Dourados|Arquivo Público da UFGD]]: situado dentro da UFGD.
+* [[Biblioteca Pública Municipal Vicente de Carvalho]]: tem um acervo de 14.500 livros. A biblioteca foi fundada em 1967 e possui uma área para estudo que suporta 32 pessoas sentadas.
+* [[SESC Dourados|Biblioteca do SESC Dourados]]: possui 3 800 livros e recebe 7 periódicos semanais e mensais. A biblioteca possui internet e ar-condicionado.
+* Biblioteca da Academia Douradense de Letras: a biblioteca possui 3 827 livros e 186 apostilas de 2º grau.
+* [[Universidade Federal da Grande Dourados|Biblioteca Isaura Higa]]: situada dentro da UFGD, possui 22 462 títulos, 44.305 exemplares, 619 periódicos, 614 teses e ainda jornais locais e revistas. Possui local para estudos, ar-condicionado e computadores.
+* [[Centro Universitário da Grande Dourados|Bliblioteca da UNIGRAN, a maior de Dourados, com mais de 80 mil exemplares, entre livros e periódicos. É estruturada também com computadores e acesso à internet]]: localiza-se dentro da UNIGRAN.
+* [[Centro Social Marista Dourados|Biblioteca Interativa Centro Social Marista Dourados]]: possui cerca de 3 500 livros entre Literatura, Didático, Paradidático, Vestibular/Concurso e Pastoral, recebe 6 periódicos semanais e mensais e assina dois jornais locais. Possui local para estudos e computadores.
+* [[Biblioteca Pública Municipal Prof. Chester Soares Bonfim]]: a Biblioteca fundada pelo prefeito José Laerte Tetila localiza-se na Praça do Cinquentenário.
+
+== Ver também ==
+* [[Lista de municípios do Brasil acima de cem mil habitantes]]
+* [[Interior do Brasil]]
+* [[Agronegócio no Brasil]]
+* [[Mercocidades]]
+
+{{notas}}
+{{Referências}}
+
+== Ligações externas ==
+{{Correlatos
+ |commonscat      = Dourados
+ |commons         = Dourados
+ |wikisource      = Hino do município de Dourados
+ |wikisourcecat   =
+ |wikiquote       =
+ |wikilivros      = Dourados
+ |wikinoticias    =
+ |wikinoticiascat =
+ |wikcionario     = Dourados
+ |wikispecies     =
+}}
+* {{Link|pt|2=http://www.sidra.ibge.gov.br/bda/territorio/infounit.asp?codunit=4720&codunitibge=5003702&nomeunit=Dourados+%2D+MS&n=6&nomenivel=Munic%EDpio&z=t&o=4 |3=Sidra - Dourados}}
+* {{Link|pt|2=http://www.igeo.uerj.br/VICBG-2004/Eixo5/e5%20214.htm |3=Estudo universitário sobre a economia de Dourados}}
+
+{{Limpar}}
+{{Bloco de navegação
+ |title= {{MS-Dourados}}
+ |Subdivisões de Dourados
+ |Cidade de Dourados
+ |Transporte e logística de Dourados
+}}
+{{Bloco de navegação
+ |title= Dourados em Mato Grosso do Sul
+ |Subdivisões de Mato Grosso do Sul
+ |Municípios do Mato Grosso do Sul
+}}
+{{Bloco de navegação
+ |title= Dourados no Centro-Oeste
+}}
+{{Bloco de navegação
+ |title= Dourados no Brasil
+}}
+{{Bloco de navegação
+ |title= Dourados no exterior
+ |Mercocidades
+}}
+{{Portal3|Brasil|Região Centro-Oeste do Brasil|Mato Grosso do Sul|Dourados}}
+
+[[Categoria:Dourados| ]]
+[[Categoria:Fundações em Mato Grosso em 1914]]

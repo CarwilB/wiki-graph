@@ -1,0 +1,129 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                            = Panamá
+|other_name                      = 
+|native_name                     = <!-- for cities whose native name is not in English -->
+|nickname                        = 
+|settlement_type                 = [[Districts of Panama|District]] 
+|motto                           = 
+<!-- images and maps  ----------->
+|image_skyline                   = 
+|imagesize                       = 
+|image_caption                   = 
+|image_flag                      = 
+|flag_size                       = 
+|image_seal                      = 
+|seal_size                       = 
+|image_shield                    = 
+|shield_size                     = 
+|image_map                       = Panamá - Panamá - Panamá.svg
+|mapsize                         = 300px
+|map_caption                     = 
+|pushpin_map                     = Panama<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position          = right
+|pushpin_mapsize                 = 300
+|pushpin_map_caption             = Location of the district capital in Panama
+<!-- Location ------------------>
+|subdivision_type                = Country
+|subdivision_name                = {{flag|Panama}}
+|subdivision_type1               = [[Provinces of Panama|Province]]
+|subdivision_name1               = [[Panamá Province|Panamá]]
+|subdivision_type2               = [[Capital city|Capital]]
+|subdivision_name2               = [[Panama City]]
+|subdivision_type3               = 
+|subdivision_name3               = 
+|<!-- Politics ----------------->
+|government_footnotes            = 
+|government_type                 = 
+|leader_title                    = 
+|leader_name                     = 
+|leader_title1                   = <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1                    = 
+|established_title               = <!-- Settled -->
+|established_date                = 
+<!-- Area    --------------------->
+|area_magnitude                  = 
+|area_footnotes                  = 
+|area_total_km2                  = 2031<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2                   = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of                = 2019
+|population_footnotes            = 
+|population_note                 = official estimate<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref>
+|population_total                = 1183333
+|population_density_km2          = auto
+|population_density_sq_mi        = 
+|population_metro                = 
+|population_density_metro_km2    = 
+|population_density_metro_sq_mi  = 
+|population_blank1_title         = Ethnicities
+|population_blank1               = 
+|population_density_blank1_km2   = 
+|population_density_blank1_sq_mi = 
+<!-- General information  --------------->
+|timezone                        = [[Eastern Time Zone|ETZ]]
+|utc_offset                      = -5
+|timezone_DST                    =  
+|utc_offset_DST                  = 
+|coordinates                     = {{coord|8|59|N|79|31|W|region:PA|display=inline,title}}
+|elevation_footnotes             = <!--for references: use <ref> </ref> tags-->
+|elevation_m                     = 
+|elevation_ft                    = 
+<!-- Area/postal codes & others -------->
+|postal_code_type                = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code                     = 
+|area_code                       = 
+|blank_name                      = 
+|blank_info                      = 
+|blank1_name                     = 
+|blank1_info                     = 
+|website                         = 
+|footnotes                       = 
+}}
+
+'''Panamá''' is a [[districts of Panama|district]] (''distrito'') of [[Panamá Province]] in [[Panama]]. The population according to the 2010 census was 880,691;<ref name="Statoids">{{cite web|url=http://www.statoids.com/ypa.html|title=Districts of Panama|publisher=Statoids|access-date=September 23, 2014}}</ref> the latest official estimate (for 2019) is 1,183,333.<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref> The district covers a total area of 2,031&nbsp;km<sup>2</sup>. The district seat is [[Panama City]].<ref name="Statoids"/>
+
+==Administrative divisions==
+Panamá District is divided administratively into the following ''[[Corregimientos of Panama|corregimientos]]'':
+
+{{col-begin|width=40%}}
+{{col-break}}
+*[[24 de Diciembre]]
+*[[Ancón, Panama|Ancón]]
+*[[Bella Vista, Panama City|Bella Vista]]
+*[[Betania, Panama|Betania]]
+*[[Calidonia, Panamá|Calidonia]]
+*[[Chilibre]]
+*[[Curundú]]
+*[[El Chorrillo]]
+*[[Juan Díaz, Panama City|Juan Díaz]]
+*[[Las Cumbres]]
+*[[Las Mañanitas, Panama|Las Mañanitas]]
+*[[Pacora]]
+{{col-break}}
+*[[Parque Lefevre]]
+*[[Pedregal, Panamá District|Pedregal]]
+*[[Pueblo Nuevo, Panama|Pueblo Nuevo]]
+*[[Río Abajo]]
+*[[San Felipe, Panama|San Felipe]]
+*[[San Francisco, Panamá|San Francisco]]
+*[[San Martín, Panama|San Martín]]
+*[[Santa Ana, Panama City|Santa Ana]]
+*[[Tocumen]]
+*[[Alcalde Díaz]]
+*[[Ernesto Córdoba Campos]]
+*[[Caimitillo]]
+{{col-end}}
+
+==References==
+{{reflist}}
+
+{{Districts of Panama}}
+{{Panamá Province}}
+
+{{DEFAULTSORT:Panama District}}
+[[Category:Panamá District| ]]
+
+
+{{PanamáPA-geo-stub}}

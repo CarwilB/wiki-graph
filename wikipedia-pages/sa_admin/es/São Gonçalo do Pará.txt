@@ -1,0 +1,45 @@
+{{Ficha de entidad subnacional
+|nombre = São Gonçalo do Pará
+|imagen = Sgp1.jpg
+|unidad = [[Municipio]]
+|tipo_superior_1 = [[Anexo:Estados de Brasil|Estado]]
+|superior_1 = {{BRA|MG}}
+|tipo_superior_3 = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3 = [[Mesorregión del Oeste de Minas|Oeste de Minas]]
+|tipo_superior_4 = [[Microrregiones de Brasil|Microrregión]]
+|superior_4 = [[Microrregión de Divinópolis|Divinópolis]]
+|bandera = Bandeira São Gonçalo do Pará, MG.jpg
+|escudo = Brasao sgp.jpg
+|mapa = MinasGerais Municip SaoGoncalodoPara.svg
+|tamaño_mapa = 260px
+|pie_mapa = Mapa
+|dirigentes_títulos = [[Prefecto]]
+|altitud = 750
+|superficie = 265.578
+|superficie_post =<ref name ="IBGE_Área">{{cita web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial|fecha=10 de octubre de 2002|autor=IBGE|editorial=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|población = 10405
+|población_año = Censo [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{cita web|url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm|título = Censo Populacional 2010|fechaacceso = 11 de diciembre de 2010|fecha = 29 de noviembre de 2010|editorial = Instituto Brasileiro de Geografia e Estatística (IBGE)|urlarchivo = https://web.archive.org/web/20101213005600/http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm|fechaarchivo = 13 de diciembre de 2010}}</ref>
+|PIB = {{formatnum:91557.134}} mil
+|PIB_per_capita = 8362.15
+|PIB_tipo = PBI ([[IBGE]]/2008)<ref name="IBGE_PIB">{{cita web|url = http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/|título = Producto Interno Bruto de los Municipios 2004-2008|fechaacceso = 11 de diciembre de 2010|editorial = Instituto Brasileiro de Geografia e Estatística }}</ref>
+|IDH = 0.744
+|IDH año = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{cita web|url = http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm|título = Ranking decreciente del IDH-M de los municipios del Brasil|fechaacceso = 11 de octubre de 2008|fecha = 2000|editorial = Programa das Nações Unidas para o Desenvolvimento (PNUD)|urlarchivo = https://web.archive.org/web/20091003103229/http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20%28pelos%20dados%20de%202000%29.htm|fechaarchivo = 3 de octubre de 2009}}</ref>
+|campo1_nombre = Datos mesorregión
+|campo1 = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |título=Divisão Territorial do Brasil |fecha=1 de julio de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |editorial=Instituto Brasileiro de Geografia e Estatística (IBGE) |fechaacceso=6 de enero de 2019 |urlarchivo=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip |fechaarchivo=14 de junio de 2020 }}</ref>
+|campo2_nombre = Datos microrregión
+|campo2 = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+}}
+
+'''São Gonçalo do Pará''' es un [[municipio]] [[brasil]]eño del [[estados del Brasil|estado]] de [[Minas Gerais]]. Su población estimada en 2010 es de 10&nbsp;405 habitantes, según el censo [[IBGE]].<ref name="IBGE_Pop_2010"/>
+
+El municipio está totalmente ubicado dentro de la cuenca del [[Río Pará (Minas Gerais)|río Pará]], que forma parte de la región hidrográfica del [[Río San Francisco (Brasil)|río São Francisco]]. La mayor parte del territorio del municipio, aproximadamente el 71,0 %, se encuentra dentro de la subcuenca ''Baixo Rio Pará''. El resto del territorio, del 29,0 %, se encuentra en la subcuenca ''Rio São João''.<ref name="planodiretor">{{cita web |editorial= Associação de Usuarios da Bacia Hidrográfica do Rio Pará |url= http://www.cbhpara.org.br/PLANODIRETOR/Etapa5.pdf |título= Plano Diretor da Bacia Hidrográfica do Rio Pará |fecha= 14 de setiembre de 2016 |fechaacceso= 6 de enero de 2019 |urlarchivo= https://web.archive.org/web/20160921211154/http://www.cbhpara.org.br/PLANODIRETOR/Etapa5.pdf |fechaarchivo= 21 de septiembre de 2016 }}</ref><ref name="silveira" >{{cita web |editorial=Centro de Sensoriamento Remoto da UFMG, Moisés Júnio da Silveira |url=http://csr.ufmg.br/geoprocessamento/publicacoes/MOISES.pdf |título=Sistema de informações geográficas de baixo custo para apoio à gestão de bacias hidrográficas |fecha=13 de septiembre de 2016 |fechaacceso=6 de enero de 2019 |fechaarchivo=30 de diciembre de 2018 |urlarchivo=https://web.archive.org/web/20181230191635/http://www.csr.ufmg.br/geoprocessamento/publicacoes/MOISES.pdf |deadurl=yes }}</ref>
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|São Gonçalo do Pará}}
+{{Traducido ref |pt|São Gonçalo do Pará|trad=parcial}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Minas Gerais]]

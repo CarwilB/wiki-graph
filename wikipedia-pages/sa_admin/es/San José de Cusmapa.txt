@@ -1,0 +1,87 @@
+{{Ficha de entidad subnacional
+| nombre = San José de Cusmapa
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|MD}}
+| imagen = Alrededores de San Jose de Cusmapa.jpg
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.2700
+ |longitude= -86.6860
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| subdivisión = 12 comunidades
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = Guillermo Maradiaga Padilla
+| elevación_media = 1,288
+| superficie = 129.9
+| superficie_puesto = 121
+| número_entidades = 153
+| población_puesto = 132
+| población_año = 2023
+| población = 8505
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/madriz/2045__san_jos%C3%A9_de_cusmapa/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 2238
+| densidad = 65.46
+| fundación = 6 de enero de 1963<br />({{Edad|6|1|1963}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| gentilicio = Cusmapeño, -ña.
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 35600
+}}
+'''San José de Cusmapa''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Madriz|Madriz]] en la República de [[Nicaragua]]. Está situado a una distancia de 248  kilómetros de la capital de [[Managua]], y a 30 kilómetros de la ciudad de [[Somoto]].
+
+== Geografía ==
+El término municipal limita al norte con el municipio de [[Las Sabanas]], al sur y este con el municipio de [[San Juan de Limay]] y al oeste con el municipio de [[San Francisco del Norte]] y la República de [[Honduras]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=26 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 248 kilómetros de la capital de [[Managua]].
+
+El municipio más elevado de Nicaragua es a 1,288 m s. n. m.
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 4,356 (51.2%)
+| valor1 = 51.2
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 4,149 (48.8%)
+| valor2 = 48.8
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 6,267 (73.7%)
+| valor1 = 73.7
+| color1 = #109618
+| etiqueta2 = Urbano: 2,238 (26.3%)
+| valor2 = 26.3
+| color2 = #FF9900
+}}
+San José de Cusmapa tiene una población actual de 8,505 habitantes. De la población total, el 51.2% son hombres y el 48.8% son mujeres. Casi el 26.3% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima tropical]].<ref name='INIFOM'/> Su temperatura oscila entre los 26 a 28&nbsp;°C y precipitaciones anuales de 1200 – 1400 m s. n. m. Posee unos de los Miradores más emblemáticos de Nicaragua, con una bella vista hacia el pacífico nicaragüense donde se observa la cordillera volcánica y el golfo de Fonseca. Debido a la ausencia de fuente hídricas de agua dulce, este territorio sufre de constantes sequías.
+
+== Localidades ==
+Existen un total de 12 comunidades agrupadas en tres microrregiones siguientes:<ref>Alcaldía de San José de Cusmapa.</ref>
+* Microrregión 1: La Jabonera, El Chilamatal y La Jagua.
+* Microrregión 2: El Carrizo, El Lajero, El Ángel y Aguas Calientes.
+* Microrregión 3: Jocomico, El Horno, El Gavilán, Imires y Apante.
+
+== Economía ==
+La principal actividad económica es la agricultura y ganadería y [[Coffea|café]] en poca escala; así como también el cultivo de granos básicos como [[Zea mays|maíz]], [[Phaseolus vulgaris|fríjol]] y [[Sorghum|sorgo]], para el consumo local, además de esto una actividad económica que se da es la extracción de madera en mediana escala. La actividad económica industrial no existe ni se desarrolla en el municipio.<ref name='INIFOM'/>
+
+== Cultura ==
+La población del municipio conserva en su mayoría los rasgos fisonómicos de sus antepasados, los indígenas, antiguos pobladores del continente americano.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Madriz]]

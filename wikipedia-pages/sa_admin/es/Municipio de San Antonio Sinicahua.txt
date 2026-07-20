@@ -1,0 +1,115 @@
+{{Ficha de entidad subnacional
+|nombre                = Municipio de<br>San Antonio Sinicahua
+|país                  = [[México]]
+|unidad                = [[Municipios de México|Municipio]]
+|tipo_superior_1       = [[Organización territorial de México|Estado]]
+|superior_1            = [[Oaxaca]]
+|tipo_superior_2       = [[Regiones de Oaxaca|Región]]
+|superior_2            = [[Región mixteca oaxaqueña|Mixteca]]
+|tipo_superior_3       = [[Distritos de Oaxaca|Distrito]]
+|superior_3            = [[Distrito de Tlaxiaco|Tlaxiaco]]
+|imagen                = 
+|pie_de_imagen         = 
+|mapa                  = {{Map draw|geotype=geoshape|width=250|height=300|align=center|zoom=12|fill=#4D87CA|fill-opacity=0.1}}
+
+|capital_denominación  = Cabecera municipal
+|capital               = [[San Antonio Sinicahua]]
+|dirigentes_títulos    = Presidente municipal
+|dirigentes_nombres    = 
+|subdivisión           = 10 localidades
+|fundación             = 
+|patrón                = [[Antonio Abad|San Antonio Abad]]
+|fiestas_mayores       = 17 de enero
+
+|superficie            = 37.664
+|superficie_post       = <ref name="INEGI">{{cita web |url=http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |título=México en cifras. Oaxaca |autor=INEGI |fechaacceso=septiembre de 2015 |fecha=2010 |urlarchivo=https://web.archive.org/web/20131029194731/http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |fechaarchivo=29 de octubre de 2013 }}</ref>
+|población             = 1603
+|población_año         = 2010
+|población_post        = <ref name="INEGI" />
+|altitud               = 2100
+|elevación_alta        = 2800
+|elevación_baja        = 1800
+|horario               = [[UTC|UTC -6]]
+
+|código_postal         = 
+|prefijo telefónico    = 
+|página web            = 
+}}
+El '''municipio de San Antonio Sinicahua''' {{etimología|náhuatl|sinacahua|Cabeza de las peñas}} es uno de los [[Anexo:Municipios de Oaxaca|570 municipios]] que conforman al estado [[México|mexicano]] de [[Oaxaca]]. Pertenece al [[distrito de Tlaxiaco]], dentro de la [[Región mixteca oaxaqueña|región mixteca]]. Su cabecera es la localidad de [[San Antonio Sinicahua]].<ref>{{cita web
+ | url       = http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20110a.html
+ | título       = Oaxaca. San Antonio Sinicahua
+ | fechaacceso       = 2 de septiembre de 2015
+ | autor       = INAFED
+ | fecha       = 2012
+ | fechaarchivo       = 24 de septiembre de 2015
+ | urlarchivo       = https://web.archive.org/web/20150924042534/http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20110a.html
+ | deadurl       = yes
+ }}</ref>
+
+== Geografía ==
+El municipio abarca 37.664 km² y se encuentra a una altitud promedio de 2100 {{esd|[[m s. n. m.]]}}, oscilando entre 2800 y 1800 {{esd|[[m s. n. m.]]}}<ref name="INEGI" /><ref>{{cita web
+ | url       = http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20110.pdf
+ | título       = Pontuario de información municipal. San Antonio Sinicahua
+ | fechaacceso       = 2 de septiembre de 2015
+ | autor       = INEGI
+ | fecha       = 2010
+ }}</ref>
+
+== Demografía ==
+
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de San Antonio Sinicahua contaba con 10 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Oaxaca|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197933.pdf|fechaacceso=enero de 2026|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2026|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|201100009
+|Santa Cruz
+| align="right" |386
+|-
+|201100002
+|Buenavista
+| align="right" |209
+|-
+|201100004
+|San José
+| align="right" |192
+|-
+|201100001
+|'''[[San Antonio Sinicahua]]'''
+| align="right" |167
+|-
+|201100005
+|La Unión
+| align="right" |157
+|-
+|201100006
+|Yosocahua
+| align="right" |156
+|-
+|201100003
+|Jayucunino
+| align="right" |154
+|-
+|201100010
+|San Isidro Siniyuco
+| align="right" |114
+|-
+|201100007
+|Loma de Juárez
+| align="right" |72
+|-
+|201100008
+|Barrio San Isidro
+| align="right" |61
+|-
+! colspan="2" |Total municipal
+!1&nbsp;668
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipio de San Antonio Sinicahua| ]]

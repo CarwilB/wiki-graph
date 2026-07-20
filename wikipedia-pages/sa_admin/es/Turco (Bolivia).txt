@@ -1,0 +1,121 @@
+{{Ficha de entidad subnacional
+| nombre = Turco
+| nombre original = 
+| nombre completo = Turco
+| país = {{Bolivia}}
+| unidad = [[Municipios de Bolivia|Municipio]]
+| tipo_superior_1 = [[Departamento de Bolivia|Departamento]]
+| superior_1 = [[Departamento de Oruro|Oruro]]
+| tipo_superior_2 = [[Provincia de Bolivia|Provincia]]
+| superior_2 = [[Provincia de Sajama|Sajama]]
+| bandera = 
+| bandera_borde = 
+| artículo bandera = 
+| escudo = 
+| escudo artículo = 
+| mapa_loc = Bolivia
+| mapa_loc_1 = Oruro
+| mapa = <center><mapframe text="Ubicación de la población de Turco en el municipio de Turco" width="275" height="400" zoom="8" latitude="-18.375300" longitude="-68.361100"> 
+[
+  {
+    "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q796998",
+    "properties": {
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "fill-opacity": 0.1,
+      "fill": "#4D87CA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": { "type": "Point", "coordinates": [ -68.192050, -18.181970] },                 // secuencia aqui: longitud, latitud !!
+    "properties": {
+    "title": "Turco",
+    "marker-color": "228b22",
+    "marker-symbol":"town"  
+    }
+  }
+]
+</mapframe></center>
+| pie_mapa = Mapa del municipio de Turco
+| imagen = Vista de la plaza de turco.JPG
+| pie_de_imagen = Plaza principal de Turco.
+| dirigentes_títulos = [[Alcalde]]
+| dirigentes_nombres = Grover Richard Pérez Marca
+| superficie = 4827
+| superficie_puesto = 
+| superficie_post = 
+| superficie_tierra = 
+| superficie_agua = 
+| población = 5803
+| población_puesto = [[Anexo:Municipios de Bolivia por población|268]]
+| población_año = 2024
+| población_post = 
+| densidad = 
+| densidad_post = 
+| altitud = 
+| horario = [[UTC]]-4
+| imageninferior = 
+| imageninferior_tamaño = 
+| imageninferior_pie = 
+| idiomas = [[Idioma español|Castellano (español)]] y [[Idioma aymara|aymara]]
+| gentilicio = Turqueño -a
+| página web = www.turco.bolivia.bo/
+| población_h = 3028
+| población_m = 2775
+}}
+'''Turco''' es una localidad y [[municipio]] de [[Bolivia]], ubicado en la [[provincia de Sajama]] del [[departamento de Oruro]]. El municipio tiene una superficie de 4.827 km² y cuenta con una población de 5.207 habitantes (según el [[Censo boliviano de 2012|Censo INE 2012]]).<ref name=ine>{{cita web|título=Censo INE|url=http://censosbolivia.ine.gob.bo/censofichacomunidad/c_listadof/listar_comunidades|editorial=Instituto Nacional de Estadística|idioma=español|fechaacceso=23 de mayo de 2019|fechaarchivo=7 de noviembre de 2014|urlarchivo=https://web.archive.org/web/20141107025542/http://censosbolivia.ine.gob.bo/censofichacomunidad/c_listadof/listar_comunidades|deadurl=yes}}</ref> La localidad se encuentra a 157 km al oeste de la ciudad de [[Oruro]], la capital departamental, y a una altura es de 3860 {{esd|m s. n. m.}}
+
+El municipio fue creado por Ley de 20 de febrero de 1957 durante el gobierno de [[Hernán Siles Suazo]].<ref name=gaceta>{{Citation | last1 = Gaceta Oficial de Bolivia |title = Ley de 20 de febrero de 1957| year = 1957 | url =  http://www.gacetaoficialdebolivia.gob.bo | accessdate = {{Fecha|10|08|2013}}}}</ref>
+
+== Geografía ==
+Su topografía está conformada por suelos de tipo volcánico, generalmente livianos, con escasa posibilidad de aprovechamiento agrícola.<ref name=educa>{{cita web|título=¿Cómo es el municipio del Turco?|url=https://www.educa.com.bo/geografia/turco-municipio-de-sajama|editorial=Educa Bolivia|idioma=español|fechaacceso=28 de julio de 2019}}</ref> Respecto a sus recursos hídricos, se encuentra ubicado en la subcuenca del [[lago Coipasa]], constituida por las cuencas del [[río Lauca]], [[Nevado Sajama|Sajama]], Cosapa y la cuenca del [[río Turco]].
+
+Turco está ubicado en la parte sur de la provincia de Sajama, al extremo oeste del departamento de Oruro. Limita al norte con el municipio de [[Curahuara de Carangas]], al noreste con la [[provincia de San Pedro de Totora]], al este con la [[provincia de Carangas]], al sur con las provincias de [[Provincia del Litoral (Bolivia)|Litoral]] y [[Provincia de Sabaya|Sabaya]], y al oeste con la [[República de Chile]].
+
+== Demografía ==
+De acuerdo con el [[censo boliviano de 2024]], la población del municipio de Turco es de 5 803 habitantes.<ref name="resultados2024">{{cita web|url=https://nubecpv.ine.gob.bo/index.php/apps/onlyoffice/s/fBDwRbxQKgAxegF?fileId=548802|título=Resultados CPV 2024|fechaacceso=29 de abril de 2025|fecha=Septiembre de 2024|editorial=Instituto Nacional de Estadística de Bolivia}}</ref>
+
+La población del municipio aumentó en más de un tercio entre 1992 y 2024:
+{| class="wikitable"
+!Año
+!Habitantes (municipio)
+!Fuente
+|- align="center"
+|1992
+!3 799
+|<small>Censo</small>
+|- align="center"
+|2001
+!3 818
+|<small>Censo</small>
+|- align="center"
+|2012
+!5 207
+|<small>Censo</small>
+|- align="center"
+|2024
+!5 803
+|<small>Censo</small>
+|}
+
+== Economía ==
+La principal actividad económica de la población de Turco es la crianza de camélidos, asociada a un conjunto de factores naturales, como la presencia de praderas extensas con variedad de pastos y gramíneas que aseguran la alimentación del ganado. En este rubro, la tecnología utilizada por los ganaderos les ha permitido alcanzar notables ejemplares para la reproducción controlada de sus hatos y rendimientos en calidad y cantidad. El municipio administra, con la Asociación de Productores de Turco (AGT), el primer matadero del país para camélidos, asistido por veterinarios que garantizan la calidad de la carne y han logrado posicionar la comercialización y la industrialización de la carne de llama y en particular del popular 'charque". Esta carne se comercializa en los principales mercados de ciudades como Oruro, [[La Paz]], [[Cochabamba]], [[Potosí]], entre otros.
+
+Debido a su gran vocación en este rubro, Turco ha sido declarada por Ley N.º 3157 del 25 de agosto de 2005, como la "capital de los camélidos sudamericanos de Bolivia".<ref name=capital>{{cita noticia|apellidos1=Luna Acevedo|nombre1=Ismael|título=Turco: 50 años de pujanza camélida|url=https://www.eldia.com.bo/index.php?c=Portada&articulo=Turco:-50-anos-de-pujanza-camelida&cat=1&pla=3&id_articulo=283110|fechaacceso=28 de julio de 2019|obra=El Día|fecha=28 de julio de 2019|idioma=español}}</ref>
+
+== Véase también ==
+* [[Cosapa (Sajama)|Cosapa]]
+* [[Tambo Quemado]]
+* [[Macizo de Pacuni]]
+* [[Chachacomani (Oruro)|Chachacomani]]
+* [[Asunción de Laca Laca]]
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios del departamento de Oruro]]
+[[Categoría:Localidades de la provincia de Sajama]]

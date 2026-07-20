@@ -1,0 +1,181 @@
+{{Ficha de entidad subnacional
+| nombre = Marcovia
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| mapa_loc = Honduras
+| subdivisión = 21 aldeas y 166 caseríos
+| elevación_media = 14
+| superficie = 487.5
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 48333
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0607__marcovia/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| población_urb = 23201
+| densidad = 99.15
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''Marcovia''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]].
+<ref>{{Cita web
+ |url=https://temp.ine.gob.hn/wp-content/uploads/2025/02/Marcovia-Choluteca-2018.pdf
+ |título=Marcovia, Choluteca: Indicadores Municipales 2018
+ |autor=Instituto Nacional de Estadística (INE)
+ |fecha=2018
+ |editor=INE Honduras
+ |formato=PDF
+ |idioma=es
+}}</ref>
+
+== Toponimia ==
+El nombre Marcovia se debe al Presidente [[Marco Aurelio Soto]] por haberla encontrado en la Vía que llevaba de [[Amapala]] a [[Choluteca]]: ''Marco‐Vía''.<ref>Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref> Fue presidente de Honduras entre 1876 y 1883. Fue el principal artífice de la Reforma Liberal en el país, impulsando la modernización estatal, la educación laica y el desarrollo económico, tras asumir el poder con apoyo de Guatemala. Nació en Tegucigalpa el 13 de noviembre de 1846 y falleció en París, Francia el 25 de febrero de 1908.
+
+== Límites ==
+Ocupa la parte suroeste del departamento de Choluteca y su cabecera se encuentra en la ribera izquierda del [[río Choluteca]].
+
+{| class="wikitable"
+|+Límites de Marcovia
+!Código
+!Límite
+|-
+| rowspan="2" |Norte
+|Municipio de [[Choluteca]], Choluteca
+|-
+|Municipio de [[San Lorenzo (Honduras)|San Lorenzo]], Valle
+|-
+|Sur
+|Municipio de Choluteca, Choluteca
+|-
+|Este
+|[[Golfo de Fonseca]]
+|-
+|Oeste
+|Golfo de Fonseca<ref name="OT">{{enlace roto|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/marcovia.pdf|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/marcovia.pdf|bot=InternetArchiveBot}} Datos de organización territorial de Honduras</ref>
+|}
+
+== Historia ==
+En 1882, el presidente [[Marco Aurelio Soto]] elevó la aldea denominada hasta entonces "Pueblo Nuevo" a municipio, denominándolo Marcovia.
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 23,676 (49%)
+| valor1 = 49
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 24,656 (51%)
+| valor2 = 51
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 15,333 (31.7%)
+| valor1 = 31.7
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 30,074 (62.2%)
+| valor2 = 62.2
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 2,925 (6.1%)
+| valor3 = 6.1
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 25,131 (52%)
+| valor1 = 52
+| color1 = #109618
+| etiqueta2 = Urbano: 23,201 (48%)
+| valor2 = 48
+| color2 = #FF9900
+}}
+Marcovia tiene una población actual de 48,333 habitantes. De la población total, el 49% son hombres y el 51% son mujeres. Casi el 48% de la población vive en la zona urbana.<ref name="INE"/>
+
+== División política ==
+*Aldeas: 21 (2013)
+*Caseríos: 166 (2013)
+{| class="wikitable"
+|+Aldeas de Marcovia
+!Código
+!Aldea
+|-
+|060701
+|Marcovia (cabecera del municipio)
+|-
+|060702
+|Cedeño
+|-
+|060703
+|Colonia Buena Vista
+|-
+|060704
+|El Botadero
+|-
+|060705
+|El Obraje
+|-
+|060706
+|El Papalón
+|-
+|060707
+|Guapinol
+|-
+|060708
+|La Gervacia
+|-
+|060709
+|La Joyada
+|-
+|060710
+|Las Arenas
+|-
+|060711
+|Las Pozas
+|-
+|060712
+|Los Llanitos
+|-
+|060713
+|Los Mangles
+|-
+|060714
+|Monjarás
+|-
+|060715
+|Piedra de Agua
+|-
+|060716
+|Pueblo Nuevo
+|-
+|060717
+|Punta Ratón
+|-
+|060718
+|San José de Las Conchas
+|-
+|060719
+|San Juan Bosco N.º 2
+|-
+|060720
+|Santa Cruz
+|-
+|060721
+|Tambor Abajo
+|-
+|
+|La Lucha
+|-
+|
+|El Cerro
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Choluteca]]

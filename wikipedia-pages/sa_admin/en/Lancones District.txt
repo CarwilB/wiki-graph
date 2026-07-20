@@ -1,0 +1,128 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Lancones
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Lancones in the [[Sullana Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Piura Region|Piura]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Sullana Province|Sullana]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = December 3, 1917
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Lancones]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 2189.35
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 120
+| population_footnotes    = 
+| population_total        = 13302
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 200604
+| website                 = 
+| footnotes               = 
+}}
+
+'''Lancones District''' is one of eight [[Districts of Peru|districts]] of the province [[Sullana Province|Sullana]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 17, 2008.</ref>
+
+In 2016, the Lancones District recorded a temperature of {{convert|39.8|C|F|abbr=on}}, which is the joint highest temperature to have ever been recorded in Peru along with [[Chulucanas]].<ref>{{Cite web|last=PERU21|first=NOTICIAS|date=2019-01-26|title=Récords de calor en el norte {{!}} OPINION|url=https://peru21.pe/opinion/records-calor-norte-455686-noticia/|access-date=2022-01-25|website=Peru21|language=es}}</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Lancones, elevation {{convert|136|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 33.8
+|Feb high C = 34.2
+|Mar high C = 33.9
+|Apr high C = 33.5
+|May high C = 31.5
+|Jun high C = 29.5
+|Jul high C = 29.0
+|Aug high C = 29.6
+|Sep high C = 30.7
+|Oct high C = 31.1
+|Nov high C = 31.7
+|Dec high C = 32.6
+|year high C = 
+|Jan low C = 21.4
+|Feb low C = 22.6
+|Mar low C = 22.3
+|Apr low C = 21.4
+|May low C = 19.8
+|Jun low C = 17.7
+|Jul low C = 16.8
+|Aug low C = 16.6
+|Sep low C = 16.8
+|Oct low C = 17.1
+|Nov low C = 17.9
+|Dec low C = 19.3
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 46.7
+|Feb precipitation mm = 102.2
+|Mar precipitation mm = 149.5
+|Apr precipitation mm = 47.3
+|May precipitation mm = 6.9
+|Jun precipitation mm = 0.2
+|Jul precipitation mm = 0.0
+|Aug precipitation mm = 0.0
+|Sep precipitation mm = 0.0 
+|Oct precipitation mm = 1.3
+|Nov precipitation mm = 0.4
+|Dec precipitation mm = 21.3
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Sullana Province}}
+
+{{coord|4.6408|S|80.5487|W|source:wikidata-and-enwiki-cat-tree_region:PE|display=title}}
+
+[[Category:Districts of the Department of Piura]]
+[[Category:Districts of the Sullana province]]
+
+
+{{Piura-geo-stub}}

@@ -1,0 +1,99 @@
+{{Short description|Municipality of Rio Grande do Sul, Brazil}}
+{{Expand Portuguese|topic=geo}}
+{{Infobox settlement
+<!--See Template:Infobox Settlement for additional fields that may be available-->
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+| name                   = Arroio do Sal
+| nickname               =
+| settlement_type        = [[Municipalities of Brazil|Municipality]]
+| total_type             = <!-- to set a non-standard label for total area and population rows -->
+| motto                  =
+<!-- images and maps  ----------->
+| image_skyline          =
+| image_caption          =
+| image_flag             = Bandeira_oficial_Arroio_do_Sal.png
+| image_seal             =
+| image_shield           = Brasao_oficial_de_Arroio_do_Sal.jpg
+| image_map              = Locator map of Arroio do Sal in Rio Grande do Sul.svg
+| map_caption            =
+| pushpin_map            = <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+| pushpin_label_position = <!-- the position of the pushpin label: left, right, top, bottom, none -->
+| pushpin_map_caption    =
+<!-- Location ------------------>
+| subdivision_type       = Country
+| subdivision_name       = [[Brazil]]
+| subdivision_type1      = State
+| subdivision_name1      = Rio Grande do Sul
+| subdivision_type2      = Mesoregion
+| subdivision_name2      = Metropolitana de Porto Alegre<ref name="IBGE_DTB_2008" /> 
+| subdivision_type3      = Microregion
+| subdivision_name3      = Osório<ref name="IBGE_DTB_2008" /> 
+<!-- Politics ----------------->
+| government_footnotes   =
+| government_type        =
+| leader_title           = Mayor
+| leader_name            = João Luiz da Rocha
+| leader_party           =
+| established_title      = Founded
+| established_date       = April 22, 1988
+<!-- Area    --------------------->
+| unit_pref              = <!--Enter: Imperial, to display imperial  before metric-->
+| area_footnotes         =
+| area_total_km2         = 120.939
+| area_land_km2          = <!--See table @ Template:Infobox Settlement for details on unit conversion-->
+| area_water_km2         =
+| area_water_percent     =
+<!-- Elevation -------------------------->
+| elevation_footnotes    = <!--for references: use <ref> tags-->
+| elevation_m            = 6
+<!-- Population   ----------------------->
+| population_as_of       = 2020<ref>[https://cidades.ibge.gov.br/brasil/rs/arroio-do-sal/panorama IBGE 2020]</ref>
+| population_footnotes   =  
+| population_note        =
+| population_total       = 10,279
+| population_est         =
+| pop_est_as_of          =
+| population_density_km2 = auto
+<!-- General information  --------------->
+| coordinates            = {{coord|29|33|03|S|49|53|20|W|region:BR|display=inline,title}}
+| timezone               = [[Time in Brazil|BRT]]
+| utc_offset             = &minus;3
+| timezone_DST           = 
+| utc_offset_DST         = 
+<!-- Area/postal codes & others -------->
+| postal_code_type       = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal_code            =
+| area_code              =
+| website                = [http://www.arroiodosal.rs.gov.br/ arroiodosal.rs.gov.br]
+| footnotes              =
+| blank_name_sec1        = [[Human Development Index|HDI]]
+| blank_info_sec1        = 0.813<ref name="PNUD_IDH_2000" />
+| blank1_name_sec1       = [[GDP]]
+| blank1_info_sec1       = [[Brazilian real|R$]] 54,357,000<ref name="IBGE_PIB_2005" />
+| blank2_name_sec1       = GDP per capita
+| blank2_info_sec1       = [[Brazilian real|R$]]8,140.00
+}}
+
+'''Arroio do Sal''' is a municipality in the state of [[Rio Grande do Sul]], [[Brazil]]. It is about 30&nbsp;km south of [[Torres, Rio Grande do Sul|Torres]] and 30&nbsp;km north of [[Capão da Canoa]], thus in about the northern half of the state's shoreline. It is 175&nbsp;km from [[Porto Alegre]], with which it is connected via BR 101 and BR 290.
+
+Though the population is only about 10,000, during the summer tourism season the number of people increases to about 90,000. It includes 27&nbsp;km of the Atlantic coast and has about 60 beaches.
+
+== See also ==
+* [[List of municipalities in Rio Grande do Sul]]
+
+==References==
+{{Reflist|refs=
+<ref name="IBGE_DTB_2008">{{cite web|url=https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip|title=Divisão Territorial do Brasil|access-date=11 October 2008|date=1 July 2008|work=Divisão Territorial do Brasil e Limites Territoriais|publisher=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref>
+<ref name="PNUD_IDH_2000">{{cite web|url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |title=Ranking decrescente do IDH-M dos municípios do Brasil |access-date=11 October 2008 |date=2000 |work=Atlas do Desenvolvimento Humano |publisher=Programa das Nações Unidas para o Desenvolvimento (PNUD) |url-status=dead |archive-url=https://web.archive.org/web/20091003103229/http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20%28pelos%20dados%20de%202000%29.htm |archive-date=3 October 2009 }}</ref>
+<ref name="IBGE_PIB_2005">{{cite web|url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2005/tab01.pdf |title=Produto Interno Bruto dos Municípios 2002-2005 |access-date=11 October 2008 |date=19 December 2007 |publisher=Instituto Brasileiro de Geografia e Estatística (IBGE) |archive-url=https://web.archive.org/web/20081002024524/http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2005/tab01.pdf |archive-date=2 October 2008 |url-status=dead }}</ref>
+}}
+
+{{Municipalities of Rio Grande do Sul}}
+{{Authority control}}
+
+{{DEFAULTSORT:Arroio Do Sal}}
+[[Category:Populated coastal places in Rio Grande do Sul]]
+[[Category:Municipalities in Rio Grande do Sul]]
+
+{{RioGrandedoSul-geo-stub}}

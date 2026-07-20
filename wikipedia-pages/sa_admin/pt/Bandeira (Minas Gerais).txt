@@ -1,0 +1,69 @@
+{{Info/Município do Brasil
+<!-- GeoID=3105202 -->
+<!-- Cabeçalho -->
+| nome                 = Bandeira
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+| padroeiro            = [[Senhor Bom Jesus]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=8 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão               = Brasão de Bandeira - MG.jpg
+| bandeira             = Bandeira de Bandeira - MG.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = s:Hino do município de Bandeira
+| CEP                  = 39917-000 a 39919-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| aniversário          = 1 de março
+| fundação             = {{nowrap|{{dtlink|30|12|1962|idade}}}}
+| gentílico            = bandeirense
+| lema                 = 
+| prefeito             = Sidnei Alves dos Santos<ref name="g1posse">{{Citar web |url=https://g1.globo.com/mg/vales-mg/noticia/2021/01/01/prefeito-e-vereadores-de-bandeira-tomam-posse-veja-lista-de-eleitos.ghtml |titulo=Prefeito e vereadores de Bandeira tomam posse; veja lista de eleitos |data=2021-01-01 |acessodata=2021-02-28 |publicado=[[G1]] |lingua=pt-BR |wayb=20210228181601}}</ref>
+| partido              = [[Republicanos (partido político)|Republicanos]]
+| fim_mandato          = 2024
+| vereadores           = 9
+| vereadores_ref       = <ref name="g1posse"/>
+<!-- Localização -->
+| mapa                 = MinasGerais Municip Bandeira.svg
+| latP                 = S | latG = 15 | latM = 53 | latS = 06
+| lonP                 = O | lonG = 40 | lonM = 33 | lonS = 32
+| estado               = Minas Gerais
+| mesorregião          = [[Mesorregião do Jequitinhonha|Jequitinhonha]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Almenara|Almenara]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Almenara]], [[Jacinto (Minas Gerais)|Jacinto]], [[Jordânia (Minas Gerais)|Jordânia]], [[Mata Verde]], [[Divisópolis]] e [[Macarani]] <ref>{{citar web |url=https://www.almg.gov.br/consulte/info_sobre_minas/index.html?aba=js_tabMunicipios&sltMuni=52 |título=Bandeira |publicado=Assembleia Legislativa do Estado de Minas Gerais |acessodata=1 de dezembro de 2019}}</ref>
+| dist_capital         = 856
+<!-- Características geográficas -->
+| área                 = 484.680
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 4738
+| data_pop             = [[IBGE]]/2021<ref name="IBGE_Panorama">{{citar web |url = https://cidades.ibge.gov.br/brasil/mg/bandeira/panorama |título=Bandeira |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata = 2022-01-22}}</ref>
+| altitude             = 292
+| clima                = Tropical de altitude
+| sigla_clima          = Cwa
+<!-- Indicadores -->
+| idh                  = 0.599 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2010 <ref name="PNUD_IDH_2010">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/bandeira/pesquisa/37/30255 |titulo=Índice de Desenvolvimento Humano |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=2022-01-22}}</ref>
+| pib                  = {{formatnum:23979.972}} mil
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 4354.45
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura      = [http://www.bandeira.mg.gov.br/ bandeira.mg.gov.br]
+| site_câmara          = [http://www.camarabandeira.mg.gov.br/ camarabandeira.mg.gov.br]
+}}
+'''Bandeira''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Localiza-se a uma [[latitude]] 15º53'05" sul e a uma [[longitude]] 40º33'34" oeste, estando a uma altitude de 292 metros. Sua população estimada em 2021 era de {{fmtn|4738}} habitantes.<ref name="IBGE_Panorama"/> Possui uma área de {{fmtn|484.680|km²}}.<ref name ="IBGE_Área"/>
+
+{{Referências}}
+
+== Ligações externas ==
+{{Commonscat}}
+* [http://www.bandeira.mg.gov.br/ Prefeitura de Bandeira]
+* [http://www.camarabandeira.mg.gov.br/ Câmara municipal de Bandeira]
+* [http://www.cidades.ibge.gov.br/brasil/mg/bandeira Bandeira no IBGE Cidades]
+
+{{Portal3|Minas Gerais}}
+{{Esboço-municípiosbr/Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1962]]

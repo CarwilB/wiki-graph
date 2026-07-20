@@ -1,0 +1,132 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Pichanaqui
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = {{Photomontage
+| photo1a = Pichanaqui - panoramio (2).jpg
+| photo2a = Pichanaqui - panoramio (1).jpg
+| photo2b = Pichanaqui - panoramio.jpg
+| photo3a = Pichanaqui - panoramio (3).jpg
+| size = 250
+}}
+| image_alt               = 
+| image_caption           = 
+| image_flag              = Bandera_de_Pichanaki.png
+| flag_alt                = 
+| image_shield            = Escudo_de_Pichanaki.png
+| shield_alt              = 
+| nickname                = 
+| image_map               = District of Pichanaqui.svg
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Pichanaqui in the [[Chanchamayo Province|Chanchamayo]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = [[List of sovereign states|Country]]
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Junín Region|Junín]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Chanchamayo Province|Chanchamayo]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = September 24, 1977
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Bajo Pichanaqui]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Raul Aliaga Sotomayor
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 1496.59
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 525
+| population_footnotes    = 
+| population_total        = 39054
+| population_as_of        = [[2017 Peru Census|2017 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 120303
+| website                 = {{URL|munipichanaqui.gob.pe/}}
+| footnotes               = 
+}}
+
+'''Pichanaqui District''' is one of six [[Districts of Peru|districts]] of the province [[Chanchamayo Province|Chanchamayo]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}.'' Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Pichanaki, Pichanaqui, elevation {{convert|497|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 31.1
+|Feb high C = 30.5
+|Mar high C = 31.1
+|Apr high C = 31.5
+|May high C = 31.4
+|Jun high C = 31.4
+|Jul high C = 31.7
+|Aug high C = 32.6
+|Sep high C = 33.1
+|Oct high C = 32.8
+|Nov high C = 32.1
+|Dec high C = 31.0
+|year high C = 
+|Jan low C = 21.0
+|Feb low C = 21.0
+|Mar low C = 21.0
+|Apr low C = 20.9
+|May low C = 20.2
+|Jun low C = 19.3
+|Jul low C = 18.7
+|Aug low C = 19.0
+|Sep low C = 19.5
+|Oct low C = 20.6
+|Nov low C = 21.1
+|Dec low C = 21.1
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 253.2
+|Feb precipitation mm = 241.9
+|Mar precipitation mm = 191.0
+|Apr precipitation mm = 90.5
+|May precipitation mm = 62.6
+|Jun precipitation mm = 28.1
+|Jul precipitation mm = 36.5
+|Aug precipitation mm = 40.8
+|Sep precipitation mm = 61.7
+|Oct precipitation mm = 105.2
+|Nov precipitation mm = 127.4
+|Dec precipitation mm = 280.7
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Chanchamayo Province}}
+
+{{coord|10.9247|S|74.8768|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Chanchamayo province]]
+[[Category:Districts of the Department of Junín]]
+
+
+{{Junín-geo-stub}}

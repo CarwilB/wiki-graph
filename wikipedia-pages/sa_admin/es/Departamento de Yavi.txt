@@ -1,0 +1,114 @@
+{{Ficha de entidad subnacional
+| nombre = Yavi
+| nombre completo = Yavi
+| unidad = [[Departamentos y partidos de la Argentina|Departamento]]
+| imagen = Hacia Cieneguillas - panoramio.jpg
+| tipo_superior_1 = [[Provincias de la Argentina|Provincia]]
+| superior_1 = {{bandera2|Provincia de Jujuy}}
+| mapa = Yavi (Provincia de Jujuy - Argentina).svg
+| tamaño_mapa = 280px
+| mapa1 = <mapframe frameless align=center width="280" height="300" zoom="8" latitude="-22.257220" longitude="-65.559300"> 
+[{"type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q1063330",
+    "properties": {
+      "stroke": "#0047AB",
+      "stroke-width": 4,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}},
+{ "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q44764",
+    "properties": {
+      "stroke": "#000000", 
+      "stroke-width": 5,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}}]
+</mapframe>
+| pie_mapa1 = Vista del '''Departamento de Yavi''' <br/>dentro de la '''[[Provincia de Jujuy]]'''. <br/>'''(Pulse para ver mapa interactivo)'''
+| capital = [[La Quiaca]]
+| tipo_div_1 = Municipios
+| div_1 = [[La Quiaca]]
+| tipo_div_2 = Comisiones municipales
+| div_2 = [[Yavi]]<br />[[Pumahuasi]]<br />[[Cangrejillos]]<br />[[El Cóndor (Yavi)|El Cóndor]]
+| superficie = 2942
+| superficie_puesto = 9
+| superficie_post = 
+| población = 25868
+| población_puesto = [[Anexo:Departamentos de Jujuy por población|6]]
+| población_año = 2022
+| población_urb = 
+| población_post = 
+| densidad = 8.6
+| densidad_post = 
+| ciudad_grande = [[La Quiaca]]
+| capital_población = 16874
+| capital_coor = 22_6_4_S_65_35_44_W 22°6′4″S, 65°35′44″O
+| página_web = 
+| fundación_hitos = Creación
+| fundación_fechas = 
+}}
+
+'''Yavi''' (antiguamente también '''Yaví''') es uno de los 16 departamentos en los que se divide la [[provincia de Jujuy]] en [[Argentina]].
+
+== Superficie y límites ==
+El departamento tiene 2942&nbsp;km² y limita al norte con el [[Bolivia|Estado Plurinacional de Bolivia]], al este con la [[provincia de Salta]], al sur con los departamentos de [[departamento Cochinoca|Cochinoca]] y [[Rinconada (departamento)|Rinconada]] y al oeste con el departamento de [[Departamento Santa Catalina|Santa Catalina]].<ref>{{cita web |url=http://www.dipec.jujuy.gov.ar/mapasgeoreferenciados.html |título=Provincia de Jujuy por departamento. Mapa político. |obra=Dirección Provincial de Estadística y Censos - Provincia de Jujuy |fecha= |fechaacceso=14 de diciembre de 2016 |fechaarchivo=14 de noviembre de 2016 |urlarchivo=https://web.archive.org/web/20161114215039/http://www.dipec.jujuy.gov.ar/mapasgeoreferenciados.html |deadurl=yes }}</ref><br />
+
+La principal vía de acceso al departamento es la [[Ruta Nacional 66 (Argentina)|RN 9]].<ref>{{cita web |url=http://localidades.cfi.org.ar/Jujuy/La-Quiaca/ComoLlegar/1821/28458 |título=Cómo llegar. La Quiaca |obra=Consejo Federal de Inversiones |fecha= |fechaacceso=14 de diciembre de 2016 |urlarchivo=https://web.archive.org/web/20161221152800/http://localidades.cfi.org.ar/Jujuy/La-Quiaca/ComoLlegar/1821/28458 |fechaarchivo=21 de diciembre de 2016 }}</ref>
+
+Entre 1939 y 1940 se realizó la demarcación fronteriza con Bolivia, tras la puesta en vigor el 11 de octubre de 1938 del tratado de límites firmado el 9 de julio de 1925.
+
+== Población ==
+Contó con {{indec|20806|2010}}, lo que representó un incremento del 14.57 % frente a los {{indec|18160|2001}} del censo anterior.
+
+Para el censo 2022 el departamento registró {{esd|25 868}} habitantes. Esto representó un aumento en la cantidad de personas del 24.3%, mayor que el crecimiento poblacional provincial.<ref>{{cita web|url=https://censo.gob.ar/index.php/datos_definitivos_jujuy/|título=Resultados del Censo 2022 definitivos:
+Cuadros población por departamento y densidad. Provincia de Jujuy. Población total por sexo, índice de masculinidad y densidad de población según división político-administrativa. Año 2022|fecha=2022|publicación=INDEC - Argentina}}</ref>
+{{Gráfica de evolución|tipo=demográfica|color_12=blue|nombre=Departamento Yavi|altura=300|anchura=250|1991|16533|2001|18160|2010|20806|notas=<small>Fuente: censos nacionales del [[INDEC]]</small><ref>{{cita web |url=http://www.indec.gob.ar/censos_provinciales.asp?id_tema_1=2&id_tema_2=41&id_tema_3=136&p=38&d=999&t=1&s=0&c=1991 |título=Provincia de Jujuy. Población total por sexo, índice de masculinidad y densidad de población según división político-administrativa. Año 1991 |obra=INDEC - Censo Nacional de Población y Vivienda 1991|fecha= }}</ref><ref>{{cita web |url=http://www.indec.gob.ar/censos_provinciales_2001.asp?id_tema_1=2&id_tema_2=41&id_tema_3=134&c=38&j=1&t=999&ce=2001 |título=Departamento Yavi, Provincia de Jujuy. Población por sexo según grupos de edad. Año 2001 |obra=INDEC - Censo Nacional de Población, Hogares y Viviendas 2001 |fecha= }}</ref><ref>{{cita web |url=http://www.indec.gob.ar/ftp/censos/2010/CuadrosDefinitivos/P2-D_38_112.pdf |título=Provincia de Jujuy, departamento Yavi. Población total por sexo e índice de masculinidad, según edad en años simples y grupos quinquenales de edad. Año 2010 |obra=INDEC - Censo Nacional de Población, Hogares y Viviendas 2010 |fecha= }}</ref>|2022|25868}}
+
+== Ciudades, localidades y parajes ==
+Según datos correspondientes al censo del año 2010, la mayor parte de la población se concentra en la ciudad cabecera del departamento. Existen además algunas pequeñas localidades y parajes con población rural dispersa.<ref>{{cita web |url=https://www.citypopulation.de/php/argentina-jujuy_s.php?adm2id=38112 |título=Yavi (Departamento) |obra=City Population |fecha=13 de mayo de 2014 }}</ref>
+{{lista de columnas|3|
+* [[Cangrejillos]] 181 hab.
+* [[El Cóndor (Yavi)|El Cóndor]] 146 hab.
+* [[La Intermedia]] 178
+* [[La Quiaca]] 16.874 hab.
+* [[Llulluchayoc]] 91
+* [[Pumahuasi]] 233 hab.
+* [[Yavi]] 378 hab.
+* [[Yavi Chico]] 33
+* [[Barrios (Jujuy)|Barrios]] 187 hab.|divcolend}}
+
+'''Parajes'''
+{{lista de columnas|3|
+* [[Alto del Pelador]]
+* [[Cajas (Yavi)|Cajas]]
+* [[Caracara (Yavi)|Caracara]]
+* [[Cerrillos (Yavi)|Cerrillos]]
+* [[Corral Blanco]]
+* [[Inti Cancha (Yavi)|Inti Cancha]]
+* [[Mina Bélgica]]
+* [[Mina Pulpera]]
+* [[San Juancito (Yavi)|San Juancito]]
+* [[Mina Sol de Mayo]]
+* [[Suripugio]]|divcolend}}
+
+== Salud y educación ==
+El departamento cuenta con 19 centros de salud, la mayoría de ellos dedicados a la atención primaria.<ref>{{cita web |url=http://centrosmedicosyhospitales.com/argentina/hospitales/JUJUY/YAVI |título=Centros de salud y Hospitales en Yavi |obra= |fecha= }}</ref>
+
+Según datos oficiales, en el año 2011 el departamento contaba con un total de 74 establecimientos educativos, la mayoría de ellos de gestión pública, que atienden los requerimientos de niños y jóvenes desde el jardín de infantes hasta la etapa posterior al nivel secundario.<ref>{{cita web |url=http://www.dipec.jujuy.gov.ar/is_educacion.html |título=Cuadros de educación - Unidades educativas por nivel y sector según departamento. Año 2011. |obra=Dirección Provincial de Estadística y Censos - Provincia de Jujuy |fecha= |fechaacceso=11 de enero de 2017 |fechaarchivo=13 de enero de 2017 |urlarchivo=https://web.archive.org/web/20170113142514/http://www.dipec.jujuy.gov.ar/is_educacion.html |deadurl=yes }}</ref>
+
+== Relieve ==
+La totalidad de la superficie del departamento se extiende en la región [[Provincia fitogeográfica puneña|puna]]. Es una extensa planicie de altura en la que sobresalen cordones montañosos o picos aislados como los llamados Siete Hermanos, Negro (5029 [[altitud|{{esd|m s. n. m.}}]]), Soyano ({{esd|4948 m s. n. m.}}), Potrero ({{esd|4925 m s. n. m.}}), Morado ({{esd|4876 m s. n. m.}}) y Bayo ({{esd|4800 m s. n. m}}).<ref>{{cita web |url=http://www.jujuyenlinea.com/engine/0/123/4/Yavi/false/es/ |título=Yavi - Departamento |obra= Jujuy en línea |fecha=2016 }}</ref>
+
+== Sismicidad ==
+La sismicidad del área de Jujuy es frecuente y de intensidad baja, y un silencio sísmico de terremotos medios a graves cada 40 años.<ref name=rio/>
+
+* [[terremoto de Jujuy de 1863|Sismo de 1863]]: aunque dicha actividad geológica catastrófica, ocurre desde épocas prehistóricas, el terremoto del {{fecha|4|1|1863|edad}},<ref name=scielo/> señaló un hito importante dentro de la historia de eventos sísmicos jujeños, con 6.4 Richter.<ref name=rio> [https://web.archive.org/web/20130220160119/http://www.inpres.gov.ar/seismology/historicos.php Terremotos históricos ocurridos en la República Argentina]</ref>
+* [[Terremoto de Salta de 1948|Sismo de 1948]]: el {{fecha|25|8|1948|edad}} con 7.0 Richter, el cual destruyó edificaciones y abrió numerosas grietas en inmensas zonas<ref name=scielo>{{cita web |url=http://www.scielo.org.ar/scielo.php?pid=S0004-48222006000400011&script=sci_arttext |título=Fenómenos de licuefacción asociados a terremotos históricos. Su análisis en la evaluación del peligro sísmico en la Argentina |fechaacceso=24 de septiembre de 2012 |urlarchivo=https://web.archive.org/web/20131012053128/http://www.scielo.org.ar/scielo.php?pid=S0004-48222006000400011&script=sci_arttext |fechaarchivo=12 de octubre de 2013 }}</ref><ref name=rio/>
+* [[Terremoto de Jujuy de 2011|Sismo de 2011]]: el {{fecha|6|10|2011|edad}} con 6.2 Richter, produjo rotura de vidrios y mampostería.<ref name=rio/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento de Yavi| ]]

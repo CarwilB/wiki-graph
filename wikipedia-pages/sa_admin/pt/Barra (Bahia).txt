@@ -1,0 +1,199 @@
+{{Parcial|Brasil=sim|data=agosto de 2021}}
+{{mais fontes|Brasil=sim|data=setembro de 2017}}
+{{Wikificação|Brasil=sim|data=setembro de 2017}}
+{{Info/Município do Brasil
+<!-- GeoID=2902708 -->
+<!-- Cabeçalho -->
+| nome = Barra
+| foto = Barrabahia.png
+| leg_foto = Barra em 2019.
+| apelido = Princesa do São Francisco
+<!-- Dados gerais -->
+| brasão = Brasãobarra.jpg
+| bandeira = Bandeira de Barra.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Barra
+| aniversário = 16 de junho
+| fundação = {{Dtlink|16|6|1873|idade}}
+| emancipação = {{nowrap|{{dtlink|23|8|1753|idade}}}}
+| gentílico = [[wikt:barrense|barrense]]
+| lema = ''Pax et libertas''<br />''<small>"Paz e liberdade"</small>''
+| padroeiro = [[São Francisco das Chagas]]
+| CEP = 47100-000
+| prefeito<!--enciclopédia, sem apelidos! --> = Romeu Júnior
+| partido = Partido dos Trabalhadores - PT
+| mandato_início = 2024
+| fim_mandato = 
+| vereadores = 15
+<!-- Localização -->
+| mapa = Bahia Municip Barra.svg
+| latP = S
+| latG = 11
+| latM = 05
+| latS = 20
+| lonP = O
+| lonG = 43
+| lonM = 08
+| lonS = 31
+| estado = Bahia
+| mesorregião = [[Mesorregião do Vale São-Franciscano da Bahia|Vale São-Franciscano da Bahia]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Barra|Barra]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Buritirama]] e [[Pilão Arcado]] (norte); [[Cotegipe]], [[Mansidão]] e [[Wanderley (Bahia)|Wanderley]] (oeste); [[Muquém do São Francisco]] (sul) e [[Xique-Xique]], [[Morpará]] e [[Ibotirama]] (leste)
+| dist_capital = 650
+<!-- Características geográficas -->
+| área = 11428.112
+| área_pos = [[Lista de municípios do Brasil por área|BR: 120º]]
+| área_ref = IBGE/2022<ref name="IBGE_Área">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/barra.html|título=Cidades e Estados|publicado=IBGE|acessodata=27 de julho de 2024}}</ref>
+| área_urbana = {{fmtn|7.62}}
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/barra/panorama|título=MEIO AMBIENTE|publicado=IBGE|acessodata=27 de julho de 2024}}</ref>
+| população = 53528
+| data_pop = 2024
+| população_ref = <ref name="IBGE_POP">{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=41105&t=resultados|título=Estimativas da população residente para os municípios e para as unidades da federação - IBGE|publicado=www.ibge.gov.br|acessodata=13 de setembro de 2024}}</ref>
+| altitude = 406
+| população_pos = [[Lista de municípios da Bahia por população|BA: 42º]]{{·}}[[Lista de municípios da Região Nordeste do Brasil por população|NE: 171°]]{{·}}[[Lista de municípios do Brasil por população|BR: 645º]]
+| clima = Semi-árido quente
+| sigla_clima = BSh 
+<!-- Indicadores -->
+| idh = 0.557 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de agosto de 2013}}</ref>
+| pib = {{formatnum:430649.22}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2021/base/base_de_dados_2010_2021_xlsx.zip|titulo=Produto Interno Bruto dos Municípios - 2010 à 2021|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=13 de setembro de 2024}}</ref>
+| pib_pos = [[Lista de municípios da Bahia por PIB|BA: 76°]]
+| pib_per_capita = 7941.89
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://barra.ba.gov.br/ barra.ba.gov.br]
+| site_câmara = [https://www.barra.ba.leg.br/ barra.ba.leg.br]
+}}
+'''Barra''' é um [[Município (Brasil)|município brasileiro]] no [[estados do Brasil|estado]] da [[Bahia]], localizado no encontro do [[Rio Grande (Bahia)|Rio Grande]] com o [[Rio São Francisco]].
+
+== História ==
+A região era povoada originalmente pelos indígenas [[acroás]], na margem esquerda do Rio São Francisco, e pelos indígenas mocoazes, na direita, além de [[Tupiniquins]], [[Xacriabás]], [[Caiapós]], [[Cariris]] e Aricobés. O povoamento contemporâneo da região por populações não indígenas surgiu a partir de uma fazenda de gado trazido do litoral no ponto onde o Rio Grande desemboca no Rio São Francisco, pertencente à [[Casa da Torre]], então chefiada pelo 2º Francisco Dias de Ávila Pereira, entre 1670 e 1680. Esta fazenda foi nomeada Fazenda Barra do Rio Grande, posteriormente chamada de Fazenda Barra do Rio Grande do sul para distinguir do Rio Grande do Norte.
+
+Lugar pouco povoado e sem leis, começa a crescer e ter um fluxo de pessoas quando os franciscanos da [[Capitania de Pernambuco]] ergueram na região a capela de São Francisco das Chagas da Barra do Rio Grande do Sul, criando um aldeamento de indígenas catequizados no lugar que posteriormente vira o pilar fundamental do municipio<ref name="IBGE_bar">{{citar web |url= https://cidades.ibge.gov.br/brasil/ba/barra/historico |título=História & Fotos| obra= IBGE Cidades |publicado=[[Instituto Brasileiro de Geografia e Estatística|IBGE]] |data= |acessodata= 2023-05-02}}</ref>
+
+Posteriormente foi elevada à categoria de povoação, sendo um povoado da [[Capitania de Pernambuco]]. A atividade econômica da povoação consistia na criação de gado e agricultura, com o cultivo da cana-de-açúcar. Abrigava grande diversidade populacional: portugueses, africanos, brasileiros, filhos de portugueses, mestiços de branco e indígena, indígenas puros, holandeses, flamengos e espanhóis.
+
+A vila foi criado por carta regia de D. José I em 1º de dezembro de 1752 e a freguesia (paróquia) em 5 de dezembro do mesmo ano (esta desligada de Cabrobó), mas a instalação só ocorreu em 23 de agosto de 1753, quando foi instalada a nova '''Vila de São Francisco das Chagas da Barra do Rio Grande''', emancipando politicamente, constituída de câmara de vereadores, pelourinho e coletoria. A instalação foi feita pelo Ouvidor e Corregedor da Comarca de Jacobina Henrique Correia Lobato.<ref name="IBGE_bar"/>
+
+[[D. João VI]], por alvará de 3 de junho de 1820 cria a [[Comarca do Rio de São Francisco|Comarca do São Francisco]], e Barra passa a ser a cabeça da nova comarca.
+
+Em 7 de julho de 1824, a Comarca do São Francisco foi desligada de [[Pernambuco]] como punição pelo movimento separatista conhecido como [[Confederação do Equador]], passando à jurisdição de Minas Gerais. Em seguida, no dia 15 de outubro de 1827, passou a pertencer em definitivo à Bahia, sendo que ambas as alterações se deram por decretos de [[Dom Pedro I do Brasil]]. A vila foi elevada a cidade em 1873 (na época do Império o termo "cidade" era mais figurativo e nada somava-se administrativamente), quando passou a chamar-se Barra do Rio Grande. Em 1931 sua denominação mudou para Barra.
+
+Barra teve seu território desmembrado para formar os Municípios de Campo Largo-Cotegipe (1820), Carinhanha (1832), Ibipetuba, atual Santa Rita de Cássia, em 1840, Buritirama (1986) e Muquém do São Francisco (1989). Elevado à categoria de freguesia com a denominação de Barra do Rio Grande, pela provisão de 5 de dezembro de 1752. Elevado à categoria de vila com a denominação de Barra do Rio Grande, pela Resolução régia de 1º de dezembro de 1752. Instalado em 23 a 27 de agosto de 1753. Elevado à condição de cidade, sob a denominação de Florescente da Barra do Rio Grande, pela lei provincial nº 1.320, de 16 de junho de 1873.<ref name="IBGE_bar"/>
+
+Em 1875, o primeiro jornal da região oeste passou a ser impresso em Barra, com oficinas próprias: era o ''Eco do São Francisco''.
+
+Pela sua localização geográfica, tornou-se ponto de passagem obrigatório para quem se dirigia ao sertão do São Francisco e das boiadas do [[Piauí]], [[Maranhão]] e [[Goiás]], vivendo grande efervescência comercial e social entre 1891 e 1912. Em 1902 o vapor Saldanha Marinho começou a trafegar regularmente entre [[Pirapora]], [[Minas Gerais]], e [[Juazeiro]], Bahia, passando por Barra, o que reforçou o comércio da região. A exploração de borracha de [[maniçoba]] também deu um impulso econômico à região. Esta cultura sofre declínio a partir de 1912.
+
+Em 1913 Barra torna-se [[diocese]] e a igreja matriz Senhor Bom Jesus da Boa Morte torna-se [[catedral]].
+
+Somente em 1998 Barra integra-se à malha rodoviária brasileira com a ligação da cidade à BR-242, a rodovia federal Salvador-Brasília.
+
+== Geografia ==
+[[Imagem:BalneariodaBarra.jpg|thumb|212x212px|Balneário Cabeça do  Touro|esquerda]]
+Com área territorial de 11 428,112 km², é o sexto município em extensão territorial na Bahia. Sua população, conforme o [[Censo 2022]] do [[Instituto Brasileiro de Geografia e Estatística]], é de 51 092 habitantes, sendo o 42º no ranking populacional do estado.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/barra/panorama|titulo=Panorama|acessodata=2024-07-27|website=cidades.ibge.gov.br}}</ref>
+
+=== Clima ===
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), desde 1977 a menor [[temperatura]] registrada em Barra foi de {{fmtn|10.2|°C}} em 3 de agosto de 1985,<ref name="Temp-mín-INMET"/> e a maior atingiu {{fmtn|40.6|°C}} em 22 de outubro de 2015.<ref name="Temp-máx-INMET"/> O maior acúmulo de [[Precipitação (meteorologia)|precipitação]] em 24 horas atingiu 164,8 milímetros (mm) em 22 de março de 1997. Outros grandes acumulados superiores a 100 mm foram {{fmtn|124.1|mm}} em 11 de abril de 1996, {{fmtn|117.4|mm}} em 4 de novembro de 2002, {{fmtn|117.1|mm}} em 18 de março de 1997, {{fmtn|110.2|mm}} em 5 de abril de 1978, {{fmtn|102.6|mm}} em 24 de fevereiro de 2011 e {{fmtn|100.3|mm}} em 17 de março de 1991.<ref>{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83179&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,,,,,,,,,1,,,,,,|título=BDMEP - série histórica - dados diários - precipitação (mm) - Barra|autor=INMET|acessodata=9/5/2018}}</ref> Dezembro de 1989, com {{fmtn|498.5|mm}} registrados, foi o mês de maior precipitação, seguido por março de 1997 ({{fmtn|443.5|mm}}) e janeiro de 2016 ({{fmtn|412.8|mm}}).<ref>{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao=83179&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,,,,,,,,1,,,,,,,|título=BDMEP - série histórica - dados mensais - precipitação total (mm) - Barra|autor=INMET|acessodata=9/5/2018}}</ref>
+{{Tabela climática
+|localidade  = Barra
+|larguraporcentagem  =  100
+
+|Jan_REC_Max_°C = 38.8 |Jan_REC_Min_°C = 13.2
+|Fev_REC_Max_°C = 39.2 |Fev_REC_Min_°C = 14.9
+|Mar_REC_Max_°C = 38.2 |Mar_REC_Min_°C = 13.2
+|Abr_REC_Max_°C = 38.2 |Abr_REC_Min_°C = 13.1
+|Mai_REC_Max_°C = 37.6 |Mai_REC_Min_°C = 11.3
+|Jun_REC_Max_°C = 36.9 |Jun_REC_Min_°C = 10.9
+|Jul_REC_Max_°C = 36.4 |Jul_REC_Min_°C = 10.4
+|Ago_REC_Max_°C = 38.1 |Ago_REC_Min_°C = 10.2
+|Set_REC_Max_°C = 39.7 |Set_REC_Min_°C = 13.6
+|Out_REC_Max_°C = 40.6 |Out_REC_Min_°C = 12.9
+|Nov_REC_Max_°C =  40  |Nov_REC_Min_°C = 14.1
+|Dez_REC_Max_°C = 39.9 |Dez_REC_Min_°C = 13.5
+|Max_Rec_Ano_°C = 40.6 |Min_Rec_Ano_°C = 10.2
+
+|Jan_Max_°C = 33.4 |Jan_Med_comp_°C = 27.1 |Jan_Min_°C = 21.7
+|Fev_Max_°C = 33.3 |Fev_Med_comp_°C = 27 |Fev_Min_°C = 21.8
+|Mar_Max_°C = - |Mar_Med_comp_°C = - |Mar_Min_°C = -
+|Abr_Max_°C = 33.2 |Abr_Med_comp_°C = 26.8 |Abr_Min_°C = 21
+|Mai_Max_°C = 33 |Mai_Med_comp_°C = 26.3 |Mai_Min_°C = 19.8
+|Jun_Max_°C = 32.5 |Jun_Med_comp_°C = 25.2 |Jun_Min_°C = 17.8
+|Jul_Max_°C = 32.4 |Jul_Med_comp_°C = 24.7 |Jul_Min_°C = 16.9
+|Ago_Max_°C = 33.4 |Ago_Med_comp_°C = 25.8 |Ago_Min_°C = 17.9
+|Set_Max_°C = 34.9 |Set_Med_comp_°C = 27.7 |Set_Min_°C = 20.4
+|Out_Max_°C = 35.7 |Out_Med_comp_°C = 28.9 |Out_Min_°C = 22.4
+|Nov_Max_°C = 34.3 |Nov_Med_comp_°C = 27.9 |Nov_Min_°C = 22.1
+|Dez_Max_°C = 33.6 |Dez_Med_comp_°C = 27.2 |Dez_Min_°C = 21.7
+|Max_Ano_°C = 33.6 |Med_comp_Ano_°C = 26.7 |Min_Ano_°C = 20.3
+
+|Jan_Precip_mm =  97.9 |Jan_dprecip = 7
+|Fev_Precip_mm = 100.4 |Fev_dprecip = 7
+|Mar_Precip_mm = 125.5 |Mar_dprecip = 8
+|Abr_Precip_mm =  77.9 |Abr_dprecip = 5
+|Mai_Precip_mm =  15.3 |Mai_dprecip = 2
+|Jun_Precip_mm =    2  |Jun_dprecip = 0
+|Jul_Precip_mm =   0.2 |Jul_dprecip = 0
+|Ago_Precip_mm =   0.6 |Ago_dprecip = 0
+|Set_Precip_mm =   8.5 |Set_dprecip = 1
+|Out_Precip_mm =  33.5 |Out_dprecip = 3
+|Nov_Precip_mm =  93.5 |Nov_dprecip = 7
+|Dez_Precip_mm = 115.1 |Dez_dprecip = 8
+|Ano_Precip_mm = 670.4 |Ano_dprecip = 48 |Precip_Min  =  ≥ 1 mm
+
+|Jan_umid_comp = 62.7
+|Fev_umid_comp = 61.8
+|Mar_umid_comp = 64.6
+|Abr_umid_comp = 61.3
+|Mai_umid_comp = 57.8
+|Jun_umid_comp = 56.6
+|Jul_umid_comp = 53.1
+|Ago_umid_comp = 48.9
+|Set_umid_comp = 45.1
+|Out_umid_comp = 47.1
+|Nov_umid_comp = 55.2
+|Dez_umid_comp = 61.6
+|Ano_umid_comp = 56.3
+
+|Jan_hsol =  241.9
+|Fev_hsol =  220.3
+|Mar_hsol =   239
+|Abr_hsol =   251
+|Mai_hsol =  268.2
+|Jun_hsol =  279.3
+|Jul_hsol =  301.8
+|Ago_hsol =  309.1
+|Set_hsol =  290.7
+|Out_hsol =  273.7
+|Nov_hsol =  232.4
+|Dez_hsol =  226.2
+|Ano_hsol = 3133.6
+
+|fonte = Instituto Nacional de Meteorologia (INMET) (normal climatológica de 1981-2010);<ref name="NCB_1981-2010">{{citar web|URL=http://www.inmet.gov.br/portal/index.php?r=clima/normaisclimatologicas|título=NORMAIS CLIMATOLÓGICAS DO BRASIL|autor=INMET|acessodata=9/5/2018}}</ref> (temperatura máxima média, temperatura média compensada e temperatura mínima média: normal climatológica 1991-2020); (recordes de temperatura: 01/01/1977-presente)<ref name="Temp-mín-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83179&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,,1,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura mínima (°C) - Barra|autor=[[Instituto Nacional de Meteorologia]] (INMET)|acessodata=9/5/2018}}</ref><ref name="Temp-máx-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83179&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,1,,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura máxima (°C) - Barra|autor=INMET|acessodata=9/5/2018}}</ref>
+}}
+
+== Filhos Ilustres ==
+* [[Antônio Mariani Primo]], primeiro e único [[Cotegipe|Barão de Campo Largo]].
+* [[Deocleciano Martins de Oliveira Filho]] (''pseudônimo Deomar Barrense''), escultor, jornalista, escritor, comissário de polícia, auditor de guerra e desembargador. Foi membro da [[Academia Carioca de Letras]]. Foi premiado pela [[Academia Brasileira de Letras]] nos anos de 1932 e 1942.<ref>{{Citar web|ultimo=On|primeiro=Suporte|url=https://www.catalogodasartes.com.br/artista/Deocleciano%20Martins%20de%20Oliveira/|titulo=Deocleciano Martins de Oliveira - Biografia do Artista|acessodata=2024-07-20|website=Catálogo das Artes|lingua=pt-BR}}</ref><ref>{{Citar web|ultimo=UFSC-NUPILL|primeiro=UFSC-INE|url=https://www.literaturabrasileira.ufsc.br/|titulo=Biblioteca Digital de Literatura de Países Lusófonos|acessodata=2024-07-20|website=www.literaturabrasileira.ufsc.br|lingua=pt-br}}</ref>
+* [[Francisco Bonifácio de Abreu]], primeiro e único [[Barra (Bahia)|Barão da Vila da Barra]].
+* [[Geraldo Rocha|Antonio Geraldo Rocha Filho]], empresário e jornalista brasileiro.
+* [[Guttemberg Guarabyra|Guttemberg Nery Guarabyra Filho]], [[músico]], [[compositor]], [[escritor]] e [[poeta]] [[Brasileiros|brasileiro]].
+* [[João Maurício Wanderley]], primeiro e único [[Cotegipe|Barão de Cotegipe]], foi [[Lista de primeiros-ministros do Brasil|Presidente do Conselho de Ministros]] de 1885 a 1888, sendo o primeiro e único [[chefe de governo]] do [[Brasil]] originário do [[Oeste Baiano|oeste da Bahia]].
+* [[Maria Alexandrina de Almeida Franco]], primeira '''[[Barão de Santa Luzia|Baronesa de Santa Luzia]].'''
+* [[Ramiro Emerenciano]], [[engenheiro]] e [[político]] [[Brasil|brasileiro]].
+
+{{Referências}}
+
+== Ligações externas ==
+* [http://www.barra.ba.gov.br Página da Prefeitura]
+
+{{Municípios da Bahia}}
+{{Portal3|BahiaBahia|geografia}}
+{{Controle de autoridade}}
+
+[[Categoria:Barra (Bahia)| ]]
+[[Categoria:Fundações na Bahia na década de 1870]]

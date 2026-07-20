@@ -1,0 +1,70 @@
+{{Info/Município do Brasil
+<!-- GeoID=4205209 -->
+<!-- Cabeçalho -->
+|nome                 = Erval Velho
+|foto                 =Igreja de São Sebastião Herval Velho SC.JPG
+|leg_foto             = 
+|apelido              = 
+<!-- Dados gerais -->
+|brasão               = Brasao ErvalVelho SantaCatarina Brasil.jpg
+|bandeira             = Bandeira ervalvelho.jpg
+|link_brasão          = 
+|link_bandeira        = 
+|link_hino            = 
+|aniversário          = 
+|fundação             ={{nowrap|{{dtlink|18|6|1963|idade}}}}
+|gentílico            =ervalense<ref name="ibgepdf" />
+|lema                 = 
+|prefeito             =Severino Jaime Schmidt<ref>[https://g1.globo.com/sc/santa-catarina/noticia/2021/01/01/prefeito-e-vereadores-de-erval-velho-tomam-posse-veja-lista-de-eleitos.ghtml Prefeito e vereadores de Erval Velho tomam posse; veja lista de eleitos] em g1.globo.com</ref><ref>[https://www.cidade-brasil.com.br/resultatdos-da-eleicao-erval-velho.html</ref>
+|partido              =[[Progressistas|PP]]
+|fim_mandato          =2024
+<!-- Localização -->
+|mapa                 = SantaCatarina Municip ErvalVelho.svg
+|latP                 = S | latG = 27 | latM = 16 | latS = 27.7
+|lonP                 = O | lonG = 51 | lonM = 26 | lonS = 34.58
+|estado               = Santa Catarina
+|mesorregião          = [[Mesorregião do Oeste Catarinense|Oeste Catarinense]]
+|data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+|microrregião         = [[Microrregião de Joaçaba|Joaçaba]]
+|data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+|região_metropolitana = 
+|vizinhos             = [[Herval d'Oeste]], [[Capinzal]], {{nowrap|[[Campos Novos]]}}, [[Lacerdópolis]]
+|dist_capital         = 400
+<!-- Características geográficas -->
+|área                 = 207.686
+|área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|população            = 4353
+|data_pop             = Censo [[IBGE]]/[[2010]]<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+|altitude             = 674
+|clima                = Subtropical
+|sigla_clima          = 
+<!-- Indicadores -->
+|idh                  = 0.723 <!--favor manter o formato-->
+|data_idh             = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=30 de junho de 2014}}</ref>
+|pib                  = {{formatnum:65147.951}} mil
+|data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+|pib_per_capita       = 15492.97
+|data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+'''Erval Velho''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Santa Catarina]]. Localiza-se a uma [[latitude]] 27º16'32" [[sul]] e a uma [[longitude]] 51º26'31" [[oeste]], estando a uma altitude de 674 metros. Sua população é de 4.418 habitantes (Fonte: IBGE 2020).
+
+== História ==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+
+Erval Velho recebeu status de município pela lei estadual nº 889 de 18 de junho de 1963, com território desmembrado de [[Campos Novos]].<ref name="ibgepdf">{{citar web|url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/santacatarina/ervalvelho.pdf|titulo=Erval Velho Santa Catarina - SC Histórico|data=04/04/2011|obra=IBGE|acessodata=07/05/2013}}</ref>
+
+==Ver também==
+*[[Lista de municípios de Santa Catarina por data de criação]]
+*[[Lista de municípios de Santa Catarina por população]]
+
+{{Referências|col=2}}
+
+==Ligações externas==
+*[http://www.ervalvelho.sc.gov.br Página da prefeitura]
+*[http://camaraervalvelho.sc.gov.br Portal da Câmara de Vereadores]
+
+{{Região Metropolitana do Contestado}}
+{{Esboço-municípiosbr/Santa Catarina}}
+
+[[Categoria:Municípios de Santa Catarina]]
+[[Categoria:Fundações em Santa Catarina em 1963]]

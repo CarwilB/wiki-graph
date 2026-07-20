@@ -1,0 +1,116 @@
+{{distinguish|Valparaíso (historical province)}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Valparaíso Province
+| official_name           = 
+| native_name             = Provincia de Valparaíso 
+| native_name_lang        = es
+| settlement_type         = [[Provinces of Chile|Province]]
+| image_skyline           =
+| image_alt               =
+| image_caption           =
+| image_seal              = Logo de la Gobernación Provincial de Valparaíso.svg
+| image_map               = Provincia de Valparaíso.svg
+| map_alt                 = Location in the Valparaíso Region
+| map_caption             = 
+| pushpin_map             = Chile
+| pushpin_map_narrow = yes
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|33|02|S|71|33|W|type:adm2nd_region:CL-VL|display=inline,title}}
+| coordinates_footnotes   =
+| subdivision_type        = Country
+| subdivision_name        = [[Chile]]
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = [[Valparaíso Region|Valparaíso]]
+| parts_type              = [[Communes of Chile|Communes]]
+| named_for               = [[Valparaíso de Arriba]], Spain
+| parts_style             = coll
+| parts                   = List of 7:
+| p1                      = [[Valparaíso]]
+| p2                      = [[Viña del Mar]]
+| p3                      = [[Concón]]
+| p4                      = [[Quintero]]
+| p5                      = [[Puchuncaví]]
+| p6                      = [[Casablanca, Chile|Casablanca]]
+| p7                      = [[Juan Fernández (commune)|Juan Fernández]]
+| established_title       = 
+| established_date        =
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Valparaíso]]
+| government_footnotes    =
+| government_type         = [[Province|Provincial]]
+| leader_party            = 
+| leader_title            = [[Presidential Provincial Delegate]]
+| leader_name             = None
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{in lang|es}} [http://www.ine.cl/canales/chile_estadistico/censos_poblacion_vivienda/censo_pobl_vivi.php Instituto Nacional de Estadísticas]</ref>
+| area_total_km2          = 2146.6
+| area_rank               = 4
+| elevation_footnotes     =
+| elevation_m             =
+| elevation_max_footnotes = 
+| elevation_max_m         =
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 713065
+| population_as_of        = 2012 Census
+| population_rank         = 1
+| population_density_km2  = auto 
+| population_blank1_title = [[Urban area|Urban]]
+| population_blank1       = 639,255
+| population_blank2_title = [[Rural area|Rural]]
+| population_blank2       = 12,566
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1     = 315,785
+| demographics1_title2    = Women
+| demographics1_info2     = 336,036
+| timezone = [[Time in Chile|CLT]]<ref>{{cite web |url=http://www.world-time-zones.org/zones/chile-time.htm |access-date=2010-07-28 |title=Chile Time |publisher=WorldTimeZones.org |archive-url=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archive-date=2007-09-11 |url-status=dead }}</ref>
+| utc_offset = -4
+| timezone_DST = [[Time in Chile|CLST]]<ref>{{cite web |url=http://www.world-time-zones.org/zones/chile-summer-time.htm |access-date=2010-07-28 |title=Chile Summer Time |publisher=WorldTimeZones.org |archive-url=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archive-date=2007-09-11 |url-status=dead }}</ref>
+| utc_offset_DST = -3
+| postal_code_type        =
+| postal_code             =
+| area_code_type          =
+| area_code               = ''country'' 56 + ''area'' 32
+| website                 = [http://www.gobernacionValparaiso.gov.cl/ Governorate of Valparaíso]
+| footnotes               =
+}}
+
+'''Valparaíso Province''' ({{langx|es|Provincia de Valparaíso}}) is one of eight [[Provinces of Chile|province]]s of the central [[Chile]]an [[Regions of Chile|region]] of [[Valparaíso Region|Valparaíso]] (V). Its capital is the coastal city of [[Valparaíso]] (pop. 275,982).<ref name="INE"/>
+
+==Administration==
+As a province, Valparaíso is a second-level [[administrative divisions of Chile|administrative division]], it was governed by a provincial [[governor]] who was appointed by the [[President of Chile|president]]. Since 2021, however, it is directly governed by a regional presidential delegate, also appointed by the President, because one of its communes is the regional capital.
+
+===Communes===
+The province comprises seven [[Communes of Chile|communes]] ([[Spanish language|Spanish]]: ''comunas''), each governed by a municipality consisting of an [[alcalde]] and [[municipal council]]:
+{{Div col}}
+*[[Valparaíso]]
+*[[Viña del Mar]]
+*[[Concón]]
+*[[Quintero]]
+*[[Puchuncaví]]
+*[[Casablanca, Chile|Casablanca]]
+*[[Juan Fernández (commune)|Juan Fernández]]
+{{Div col end}}
+
+==History==
+The province was created on 1 January 1976. On March 11, 2010, the communes of [[Quilpué]] and [[Villa Alemana]] were transferred to [[Marga Marga Province]] under Law 20,368 (signed August 25, 2009).
+
+==Geography and demography==
+The province spans a coastal area of {{convert|2146.6|sqkm|0|abbr=on}}, the fourth largest in the Valparaíso Region. According to the 2002 census, Valparaíso was the most populous province in the region with a population of 651,821. At that time, there were 639,255 people living in [[urban area]]s, 12,566 people living in [[rural area]]s, 315,785 men and 336,036 women.<ref name="INE"/>
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|Valparaíso Province}}
+* [http://www.gobernacionValparaiso.gov.cl/ Official link]
+
+{{Provinces of Chile}}
+{{Communes in Valparaíso Region}}
+{{Authority control}}
+
+{{DEFAULTSORT:Valparaiso Province}}
+[[Category:Provinces of Chile]]
+[[Category:Provinces of Valparaíso Region]]

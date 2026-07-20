@@ -1,0 +1,109 @@
+{{Info/Município do Brasil
+<!-- GeoID=5105309 -->
+<!-- Cabeçalho -->
+| nome                 = Luciara
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = Brasão_Luciara_MT.png 
+| bandeira             =
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          ={{dtlink|10|5|}}
+| fundação             = 
+| gentílico            =luciarense
+| lema                 = <!-- Não é slogan eleitoreiro -->
+| prefeito             = Parassu de Souza Freitas<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/mt/luciara|título=Candidatos a vereador Luciara-MT|publicado=Estadão|acessodata =14 de junho de 2021}}</ref>
+| partido              = [[MDB]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = MatoGrosso Municip Luciara.svg
+| latP                 = S | latG = 11 | latM = 13 | latS = 19
+| lonP                 = O | lonG = 50 | lonM = 40 | lonS = 08
+| estado               = Mato Grosso
+| mesorregião          = [[Mesorregião do Nordeste Mato-Grossense|Nordeste Mato-Grossense]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião do Norte Araguaia|Norte Araguaia]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = 
+| dist_capital         = 1167
+<!-- Características geográficas -->
+| área                 = 4145.262
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 2058 <!-- Favor, Manter o Formato sem vírgula espaços ou pontos -->
+| data_pop             = estimativas IBGE/2020<ref name="IBGE_Pop_2020">{{citar web |url =https://cidades.ibge.gov.br/brasil/mt/luciara/panorama|título=Estimativa IBGE 2020| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data = 1 de Setembro de 2020 |acessodata = 2 de novembro de 2020}}</ref>
+| altitude             = 197
+| clima                = 
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.691
+| data_idh             = [[PNUD]]/2000
+| pib                  = {{formatnum:17235.104}} mil
+| data_pib             = IBGE/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 6972.13
+| data_pib_per_capita  = IBGE/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Luciara''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Mato Grosso]]. Localiza-se à [[latitude]] 11º13'20" sul e à [[longitude]] 50º40'09" oeste, estando a 197 metros de altitude. Sua população estimada em 2020 era de {{formatnum|2058}} habitantes, distribuídos em 4.662,87&nbsp;km² de área.
+
+== Últimos prefeitos eleitos ==
+{| class="wikitable"
+|+
+!Ano
+!Prefeito
+!Partido
+!Votos
+!%
+!Ref
+|-
+|2004
+|Dr. Nagib
+|[[Progressistas|PP]]
+|894
+|52,22
+|<ref>{{Citar web|url=https://eventos.noticias.uol.com.br/eleicoes/MT/index-91057.html|titulo=UOL Eleições 2004|acessodata=2024-06-02|website=eventos.noticias.uol.com.br}}</ref>
+|-
+|2008
+|Parassu
+|[[Movimento Democrático Brasileiro (1980)|PMDB]]
+|774
+|59,86
+|<ref>{{Citar web|url=https://apuracao.terra.com.br/2008/1turno/mt/91057/index.shtml|titulo=Terra - EleiÃ§Ãµes 2008 - reportagens, notÃ­cias, fotos, vÃ­deos, guia do eleitor, prefeitos, vereadores Terra|acessodata=2024-06-02|website=apuracao.terra.com.br}}</ref>
+|-
+|2012
+|Faustinho
+|[[Partido Socialista Brasileiro (1985)|PSB]]
+|727
+|42,99
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/apuracao/luciara.html|titulo=Apuração das Eleições 2012 em Luciara {{!}} Mato Grosso {{!}} G1|acessodata=2024-06-04|website=g1.globo.com|lingua=pt}}</ref>
+|-
+|2016
+|Faustinho
+|[[Partido Liberal (2006)|PR]]
+|691
+|40,22
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2016/apuracao/luciara.html|titulo=Resultado da apuração das Eleições 2016 em Luciara para prefeito e vereador|acessodata=2024-06-04|website=g1|lingua=pt-br}}</ref>
+|-
+|2020
+|Parassu
+|[[Movimento Democrático Brasileiro (1980)|MDB]]
+|894
+|49,69
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2020/resultado-das-apuracoes/luciara.ghtml|titulo=Resultado das Eleições e Apuração Luciara-MT no 1º Turno {{!}} G1 Eleições|acessodata=2024-06-04|website=G1|lingua=pt-br}}</ref>
+|}
+
+{{Referências}}
+
+==Ligações externas==
+* [http://www.luciara.mt.gov.br/ Página da Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Mato Grosso}}
+{{Municípios do Mato Grosso}}
+{{Portal3|Mato Grosso}}
+
+[[Categoria:Municípios de Mato Grosso]]
+[[Categoria:Fundações em Mato Grosso em 1961]]
+[[Categoria:Luciara| ]]

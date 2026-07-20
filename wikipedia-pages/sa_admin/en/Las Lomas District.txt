@@ -1,0 +1,129 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Las Lomas
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              = Bandera_Las_Lomas.png
+| flag_alt                = 
+| image_shield            = Escudo_Las_Lomas.png
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Las Lomas in the [[Piura Province]]
+| coor_pinpoint           = 
+| coordinates             = {{coord|4|41|21|S|80|12|52|W}}
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Piura Region|Piura]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Piura Province|Piura]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = April 3, 1936
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Las Lomas, Piura Province|Las Lomas]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Santos Neira Simbala<br><small>(2015–2018)</small>
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 522.47
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 236
+| population_footnotes    = 
+| population_total        = 26,547
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 200111
+| website                 = [http://www.munilaslomas.gob.pe Municipalidad Distrital de Las Lomas]
+| footnotes               = 
+}}
+
+'''Las Lomas District''' is one of ten [[Districts of Peru|districts]] of the province [[Piura Province|Piura]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 17, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Partidor, Las Lomas, elevation {{convert|218|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 33.2
+|Feb high C = 32.9
+|Mar high C = 32.7
+|Apr high C = 32.1
+|May high C = 30.8
+|Jun high C = 29.5
+|Jul high C = 29.5
+|Aug high C = 30.1
+|Sep high C = 31.2
+|Oct high C = 31.2
+|Nov high C = 31.6
+|Dec high C = 32.5
+|year high C = 
+|Jan low C = 21.6
+|Feb low C = 22.6
+|Mar low C = 22.4
+|Apr low C = 21.3
+|May low C = 19.5
+|Jun low C = 18.0
+|Jul low C = 17.0
+|Aug low C = 16.7
+|Sep low C = 16.5
+|Oct low C = 17.1
+|Nov low C = 17.9
+|Dec low C = 19.6
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 48.7
+|Feb precipitation mm = 141.9
+|Mar precipitation mm = 183.7
+|Apr precipitation mm = 51.5
+|May precipitation mm = 6.7
+|Jun precipitation mm = 1.2
+|Jul precipitation mm = 0.2
+|Aug precipitation mm = 0.1
+|Sep precipitation mm = 0.2
+|Oct precipitation mm = 1.5
+|Nov precipitation mm = 2.2
+|Dec precipitation mm = 18.4
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.inei.gob.pe INEI Perú] {{Webarchive|url=https://web.archive.org/web/19970412040139/http://www.inei.gob.pe/ |date=1997-04-12 }}
+
+{{Districts of Piura Province}}
+{{coord|4|41|21|S|80|12|52|W|display=title}}
+
+[[Category:Districts of the Department of Piura]]
+[[Category:Districts of the Piura province]]
+[[Category:1936 establishments in Peru]]
+
+
+{{Piura-geo-stub}}

@@ -1,0 +1,88 @@
+{{Ficha de entidad subnacional
+| nombre = El Rosario
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|CA}}
+| imagen = El Rosario, Carazo.jpg
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 11.8360
+ |longitude= -86.1500
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=12}}
+| subdivisión = 3 comarcas
+| elevación_media = 455
+| superficie = 14.08
+| superficie_puesto = 149
+| número_entidades = 153
+| población_puesto = 130
+| población_año = 2023
+| población = 8602
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/carazo/7525__el_rosario/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 4537
+| densidad = 610.9
+| gentilicio = Rosariero, -ra<br />Rosarino, -na
+| fundación = 9 de marzo de 1848 ({{Edad|9|3|1848}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 46200
+| país = Nicaragua
+}}
+'''El Rosario''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Carazo|Carazo]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte con el municipio de [[Masatepe]], al sur con el municipio de [[Santa Teresa (Nicaragua)|Santa Teresa]], al este con el municipio de [[La Paz de Oriente]] y al oeste con el municipio de [[Jinotepe]].<ref name='INIFOM'>{{Cita web|url=http://www.inifom.gob.ni/municipios/municipios.html|título=Instituto Nicaragüense de Fomento Municipal|fechaacceso=15 de abril de 2011|urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html|fechaarchivo=7 de abril de 2011}}</ref> La cabecera municipal está ubicada a 51 kilómetros de la capital de [[Managua]].
+
+=== Topografía ===
+La topografía es accidentada con pendiente casi plana que no supera los 15% de declive, existe una quebrada que atraviesa el municipio en la cual convergen una serie de cavadas menores que sirven de drenaje natural a las aguas pluviales que caen en el municipio con rumbo al [[Lago Cocibolca]]; no presenta fenómenos hidrográficos ni orográficos destacables.<ref name='INIFOM'/>
+
+== Historia ==
+La fecha aproximada en que se constituyó como municipio es a final del {{siglo|XIX||s}}, teniendo al inicio el nombre de caserío El Chompipe. Los primeros pobladores fueron personas desplazadas del pueblo de [[Masaya|Catarina]] hacia estas tierras, siendo las primeras familias de apellidos Ruiz y Nicaragua. El 9 de marzo de 1848 por decreto legislativo se fijó los límites del municipio y se le dio el nombre actual.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 4,284 (49.8%)
+| valor1 = 49.8
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 4,318 (50.2%)
+| valor2 = 50.2
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 4,065 (47.3%)
+| valor1 = 47.3
+| color1 = #109618
+| etiqueta2 = Urbano: 4,537 (52.7%)
+| valor2 = 52.7
+| color2 = #FF9900
+}}
+El Rosario tiene una población actual de 8,602 habitantes. De la población total, el 49.8% son hombres y el 50.2% son mujeres. Casi el 52.7% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+La precipitación promedio anual oscila entre los 1200 y 1400 mm. Su temperaturavaría entre 25 a 26&nbsp;°C, definiéndose como [[Clima tropical de sabana|clima de sabana tropical]] (semi-húmedo).<ref name='INIFOM'/> Los suelos son de muy buena capa vegetal o material orgánicos de gran fertilidad.
+
+== Localidades ==
+La jurisdicción de El Rosario comprende su casco urbano y 3 comarcas rurales: El Panamá N.º 2, Berta Díaz y Cañas Blancas N.º 2.<ref>Alcaldía de El Rosario.</ref>
+
+== Economía ==
+La actividad económica de mayor relevancia del municipio es el sector agrícola; se destaca por el cultivo de granos básicos como: [[Oryza sativa|arroz]], [[Saccharum officinarum|caña de azúcar]], [[Phaseolus vulgaris|frijoles]] y [[Zea mays|maíz]]. La actividad económica de los pobladores gira en torno a pequeños negocios familiares o microempresas.<ref name='INIFOM'/>
+
+== Cultura ==
+Lo tradicional y popular son las fiestas de Nuestra Señora del Rosario, que se llevan a efecto en la primera quincena del mes de enero, el propio día de la Virgen es el 7 de octubre, pero los pobladores anteriores lo trasladaron al mes de enero debido a las torrenciales lluvias que caían ese mes.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Carazo]]
+[[Categoría:Localidades de Carazo]]

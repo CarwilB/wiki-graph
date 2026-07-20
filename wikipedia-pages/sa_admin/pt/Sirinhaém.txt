@@ -1,0 +1,627 @@
+{{ver desambig|este=o município|o rio|Rio Sirinhaém}}
+{{mais notas|Brasil=sim|data=abril de 2013}}
+{{Reciclagem|Brasil=sim|data=novembro de 2012}}
+{{Info/Município do Brasil
+<!-- GeoID=2614204 -->
+<!-- Cabeçalho -->| nome = Sirinhaém
+| preposição = de
+| foto = Ilha de Santo Aleixo - Pernambuco.jpg
+| leg_foto = [[Ilha de Santo Aleixo]]
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Sirinhaém 2.png
+| bandeira = Bandeira de Sirinhaém.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| fundação = {{Dtlink|1|7|1627|idade}}<ref>[http://lhs.unb.br/atlas/Formosa_de_Sirinhaém#cite_note-1 Atlas Digital da América Lusa]</ref>
+| emancipação = {{Dtlink|12|6|1895|idade}}
+| gentílico = Sirinhaense ou Sirinhadoara
+| lema = 
+| prefeito = Manoel Soares de Souza Filho<ref>[https://cidades.ibge.gov.br/brasil/pe/sirinhaem/panorama l Portal cidades IBGE] IBGE - acessado em 16 de fevereiro de 2025</ref>
+| partido = [[Podemos_(Brasil)|Podemos]]
+| mandato_início = 2025
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 13
+<!-- Localização -->| mapa = Brazil Pernambuco Sirinhaém location map.svg
+| latP = S
+| latG = 08
+| latM = 35
+| latS = 27
+| lonP = O
+| lonG = 35
+| lonM = 06
+| lonS = 57
+| estado = Pernambuco
+| região_intermediária = Recife
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |arquivourl=https://www.webcitation.org/6scTsdWoX?url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |arquivodata=2017-08-10 |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=17 de agosto de 2017 |urlmorta=no }}</ref>
+| região_imediata = Barreiros - Sirinhaém
+| data_região_imediata = IBGE/2017<ref name="IBGE_DTB_2017"/>
+| vizinhos = [[Ipojuca]], [[Escada (Pernambuco)|Escada]], [[Rio Formoso]], [[Tamandaré (Pernambuco)|Tamandaré]] e [[Ribeirão (Pernambuco)|Ribeirão]].
+| dist_capital = 75
+| distritos = [[Distrito-Sede (Sirinhaém)|Distrito-Sede]]<br/>[[Barra do Sirinhaém]]<br/>[[Ibiratinga]]<ref>{{citar web|url=https://cidades.ibge.gov.br/brasil/pe/sirinhaem/historico|título=Formação Administrativa|data=2020|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=13 de novembro de 2020}}</ref>
+<!-- Características geográficas -->| área = 374.321
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/pe/sirinhaem.html |título=Área territorial oficial |autor=IBGE |acessodata=31 de outubro de 2020|data= 2019}}</ref>
+| população = 39233
+| população_pos = [[Lista de municípios de Pernambuco por população|PE: 46°]]
+| data_pop = Estimativa Populacional IBGE/2024 <ref>[https://cidades.ibge.gov.br/brasil/pe/sirinhaem/panorama Instituto Brasileiro de Geografia e Estatística]</ref>
+| altitude = 49
+| clima = [[Tropical]]
+| sigla_clima = As'
+<!-- Indicadores -->| idh = 0.597 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de Pernambuco por IDH|PE: 86°]]
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |título=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=1 de outubro de 2013}}</ref>
+| pib = {{formatnum:722 495}} mil
+| pib_pos = [[Lista de municípios de Pernambuco por PIB|PE: 38°]]
+| data_pib = IBGE/2021<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/pe/sirinhaem/panorama |título=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=28 de março de 2024}}</ref>
+| pib_per_capita = 15423,1
+| data_pib_per_capita = IBGE/2021<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.sirinhaem.pe.gov.br/ www.sirinhaem.pe.gov.br]
+| site_câmara = [http://camarasirinhaem.pe.gov.br/ www.camarasirinhaem.pe.gov.b]
+}}
+{| class="infobox" style="font-size: 95%; width: 24em; text-align: left;"
+|+ style="font-size: 1.25em; font-weight: bold;" | Outras informações
+|-
+| colspan="2" style="text-align: left;" |
+{| align="center" cellpadding="2" width="100%" style="background: none;"
+|-
+! colspan="2" style="background-color: #87cefa; text-align: center;" | Ficha técnica
+|-
+! [[Código de Endereçamento Postal|CEP]]
+| 55580-000<ref>{{citar web|url= https://www.correios.com.br/|titulo=CEP de cidades brasileiras|publicado=[[Empresa Brasileira de Correios e Telégrafos|Correios]]|acessodata=6 de fevereiro de 2014}}</ref>
+|-
+! [[Padroeiro]]
+| [[Nossa Senhora da Conceição]]
+|-
+! [[Eleitores]]
+| 27.768 [[TRE]]-PE
+|-
+! [[País]]
+| {{BRA}}
+|-
+! [[Regiões do Brasil|Macrorregião]]
+| [[Região Nordeste do Brasil|Nordeste]]
+|-
+! [[Perímetro urbano|Área urbana]]
+| 356,7 [[quilômetro quadrado|km²]]<ref>{{citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=6 de fevereiro de 2014}}</ref>
+|-
+! [[Domicílio]]s
+| 10.020 <ref>{{citar web|url=http://cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=261420&idtema=94&search=pernambuco%7csirinhaem |título=Censo demografico 2010 |acessodata=6 de fevereiro de 2014}}</ref>
+|-
+! [[Empresa|Unidades locais]]
+| 295 empresas est. IBGE/2017<ref>{{citar web|url=https://cod.ibge.gov.br/18HA5 |título=Sirinhaém Estatísticas do cadastro central de empresas 2017|acessodata=5 de Junho de 2020}}</ref>
+|-
+|}
+|}
+'''Sirinhaém''' é um município [[brasileiro]] do litoral sul do estado de [[Pernambuco]]. Localiza-se a 75&nbsp;km da capital do estado, [[Recife]].<ref>[https://binged.it/2CI9Z9s Bing Mapas]</ref> É formado por 3 distritos: Distrito-Sede, [[Barra do Sirinhaém]] e [[Ibiratinga]].<ref name="cidades.ibge.gov.br" /> Sua população, conforme o Censo do IBGE de 2022, é de 37 596 habitantes<ref name="IBGE_Pop_2021" />.
+
+Ocupa uma área de 374,321&nbsp;km², integrando a [[Região Geográfica Intermediária do Recife]] e à [[Região Geográfica Imediata de Barreiros-Sirinhaém]]. Seu território municipal  já abrangiu uma área maior no passado, incluindo os atuais municípios de [[Gameleira (Pernambuco)|Gameleira]] e [[Palmares]] e atingindo o atual estado de [[Alagoas]].
+
+Destaca-se pelas suas belas praias e por sua magnífica [[Ilha de Santo Aleixo]], local mais visitado por turistas no município. No mês de Janeiro acontece a tradicional festa de [[Santo Amaro]], no povoado de mesmo nome, que reúne milhares de fiéis [[igreja católica|católicos]] vindos de várias regiões do estado.
+
+Em 2024, Sirinhaém recebeu um importante reconhecimento internacional<ref>{{Citar web|url=https://amelhorpraia.com.br/praia-de-guadalupe/historia-e-cultura/2024/10/17/sirinhaem-e-um-dos-100-destinos-turisticos-mais-sustentaveis-do-mundo.html|titulo=Sirinhaém é um dos 100 destinos turísticos mais sustentáveis do mundo|data=2024-10-17|acessodata=2024-10-18|website=JC|lingua=pt-br}}</ref> ao ser incluído na lista dos [https://www.greendestinations.org/wp-content/uploads/2024/09/Top-100-2024-GPS-Sirinhaem-Community-based-Tourism_-a-protagonism-of-shellfish-woman.pdf 100 destinos turísticos mais sustentáveis do mundo]. O título foi concedido pela organização Green Destinations<ref>{{Citar web|url=https://www.greendestinations.org/|titulo=Green Destinations {{!}} Tourism for People, Nature & Climate.|acessodata=2024-10-18|lingua=en-US}}</ref>, que anualmente avalia diferentes regiões do mundo em critérios de [[sustentabilidade]] e [[conservação ambiental]].
+
+'''Sirinhaém''' destacou-se por implementar iniciativas de preservação da biodiversidade local<ref>{{Citar web|url=https://amelhorpraia.com.br/praia-de-guadalupe/historia-e-cultura/2024/06/18/preservacao-ambiental-como-proteger-as-praias-durante-as-visitas.html|titulo=Preservação ambiental: Como proteger as praias durante as visitas?|data=2024-06-18|acessodata=2024-10-18|website=JC|lingua=pt-br}}</ref> e promover o turismo de forma responsável<ref>{{Citar web|url=https://www.turismo.gov.br/seloresponsavel/|titulo=Turismo Responsável|acessodata=2024-10-18|website=www.turismo.gov.br}}</ref>, minimizando os impactos ambientais.
+
+Entre as ações adotadas estão o incentivo ao uso consciente dos recursos naturais, a educação ambiental voltada para a comunidade e os visitantes, além do incentivo ao [[ecoturismo]].<ref>{{Citar web|url=https://www.instagram.com/p/DBMj5BizEUv/?ig_rid=930bf8d3-5bcb-4845-a35a-5aa0108274ad|titulo=Instagram|acessodata=2024-10-18|website=www.instagram.com}}</ref>
+
+== Topônimo ==
+{{VT|Topônimos tupis no Brasil}}
+"Sirinhaém" é uma referência ao [[Rio Sirinhaém]], que banha o município. É um termo oriundo da [[língua tupi]] e significa "prato de [[siri]]", através da junção de ''siri'' (siri) e ''nha'ẽ'' (prato).<ref>''Vocabulário tupi-português das lições''. Disponível em http://www.fflch.usp.br/dlcv/tupi/vocabulario.htm. Acesso em 7 de novembro de 2012.</ref>
+
+== História ==
+=== Início do povoamento ===
+O litoral de Pernambuco era habitado por [[Povos indígenas do Brasil|índios]] do [[tronco linguístico]] [[macro-jê]] há milhares de anos. Por volta do ano 1000, a região foi conquistada por povos de língua tupi procedentes da [[Amazônia]]. Um destes povos, os [[Caetés (tribo)|caetés]], ocupavam a região do atual município de Sirinhaém no século XVI, quando os portugueses chegaram à região. Os portugueses escravizaram os caetés e ocuparam suas terras.<ref>BUENO, E. ''Brasil'': uma história. Segunda edição. São Paulo. Ática. 2003. p. 19.</ref>
+
+[[Ficheiro:Selo da Câmara de Sirinhaém.png|miniaturadaimagem|Selo da Câmara de Sirinhaém durante a ocupação holandesa.]]
+A povoação de Sirinhaém, que inicialmente era denominada Vila Formosa de Sirinhaém, data de 1610, quando moradores da região construíram ali uma capela dedicada a [[São Roque]]. Entre 1620 e 1621, foi construída uma igreja sob a invocação de [[Nossa Senhora da Conceição]] e a vila foi elevada à categoria de [[freguesia]]. A criação do município autônomo data de 3 de agosto de 1892.
+
+O povoado nucleou-se às margens do Rio Sirinhaém, a cerca de duas milhas do litoral e possuía um porto. Em 1627, foi elevado à categoria de vila e possuía cerca de 500 habitantes. Nesta época, a região contava com doze a 13 engenhos e uma produção de açúcar relevante e de boa qualidade, que era escoada pelo porto.
+
+=== Invasões holandesas ===
+[[Imagem:Serinhaim.jpg|miniaturadaimagem|esquerda|Gravura de 1645, do holandês [[Frans Post]], retratando Sirinhaém]]
+Quando os [[Invasões holandesas do Brasil|holandeses ocuparam Pernambuco]], após dominarem Recife e o norte, marcharam pelo sul e chegaram a Sirinhaém em 1632. Neste ano, cerca de 500 soldados e 100 marinheiros holandeses desembarcaram pelo rio Sirinhaém e invadiram, saquearam e queimaram o engenho de Romão Perez. O capitão Mateus Gomes de Lemos e Albuquerque organizou uma resistência com cerca de 60 homens. Os holandeses se retiraram. Com a queda da resistência no norte e em Recife, os holandeses planejavam a conquista do sul de Pernambuco para chegar à [[Bahia]]. As tropas luso-brasileiras resistiam a partir de três frentes: cerca de 450 homens compunham a resistência no Arraial (Velho) do Bom Jesus, 600 no Forte de Nazaré e 300 em Sirinhaém. Sirinhaém foi um dos últimos redutos da resistência, que foi derrotada após Maurício de Nassau chegar a Pernambuco e organizar o ataque à vila.
+
+Durante o domínio holandês, Sirinhaém foi um dos quatro distritos nos quais foi dividida a Capitania de Pernambuco: [[Olinda]] (a mais importante), [[Igarassu]], Vila Formosa de Sirinhaém e a quarta, que tinha início em Sirinhaém e ia até o [[Rio São Francisco]].
+
+Em 1645, a região foi reconquistada pela [[Insurreição Pernambucana|Companhia da Restauração]] comandada pelo capitão Paulo da Cunha Souto Maior, assistido por [[André Vidal de Negreiros|Vidal de Negreiros]].
+
+=== Formação administrativa ===
+Distrito criado com a denominação de Formosa, por alvará, de 26 de junho de 1759. Elevado à categoria de vila com a denominação de Formosa, em 1 de julho de 1627, segundo outra fonte a vila foi criada com a denominação de vila Formosa de Sirinhãem, em 19 de dezembro de 1627.<ref name="cidades.ibge.gov.br">{{citar web | url=http://cidades.ibge.gov.br/painel/historico.php?lang=&codmun=261420&search=pernambuco%7csirinhaem%7cinfograficos:-historico | título=Instituto Brasileiro de Geografia e Estatística }} (IBGE). Página visitada em 27 de março de 2014.</ref>
+
+Elevado à condição de cidade e sede do município com a denominação de Serinhãem, pela lei estadual nº 100, de 12 de junho de 1895.
+Pela lei municipal de 30 de dezembro de 1907, é criado o distrito de Cucaú e anexado ao município de Serinhãem. Em divisão administrativa referente ao ano de 1911, o município aparece constituído de 3 distritos: Serinhãem, Cucaú e Pau Branco. Pela lei estadual nº 1365, de 16 de maio de 1919, o distrito de Cucaú passa a pertencer ao município de [[Rio Formoso]]. Pela lei municipal nº 70, de 27 de maio de 1920, é criado o distrito de Barra de Serinhãem e anexado ao município de Serinhãem. Em divisão administrativa referente ao ano de 1933, o município é constituído de 3 distritos: Serinhãem, Barra de Serinhãem e Pau Branco. Assim permanecendo em divisões territoriais datadas 31 de dezembro 1936 e 31 de dezembro de 1937. Pelo decreto-lei estadual nº 235, de 9 de dezembro de 1938, o município passou a ser grafado Sirinhaém e o distrito de Pau Branco passou a denominar-se Ibiratinga.<ref name="cidades.ibge.gov.br"/>
+
+No quadro fixado para vigorar no período de 1944 a 1948, o município é constituído de 3 distritos: Sirinhaém ex-Serinhãem, Barra do Sirinhaém ex-Barra e Ibiratinga ex-Pau Branco. Em divisão territorial datada de 1 de julho de 1960, o município é constituído de 3 distritos: Sirinhaém, [[Barra do Sirinhaém]] e [[Ibiratinga]].
+Assim permanecendo em divisão territorial datada de 2020.<ref name="cidades.ibge.gov.br"/>
+
+== Geografia ==
+Localiza-se à latitude 8º35'27" sul e à longitude de 35º06'58" oeste; sua altitude é de 49 metros e ocupa uma área territorial de cerca de 374,321&nbsp;km², tendo 1,510&nbsp;km² desse total formando a área urbana municipal e os 372,811&nbsp;km² constituindo a zona rural.<ref name="Território">{{citar web |url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/pe.html |arquivourl=https://www.webcitation.org/6NGWcBurf?url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/pe.html |arquivodata=2014-02-09 |título=Urbanização |autor=CNPM |acessodata=25 de dez. de 2015 |urlmorta=no }}</ref><ref>[https://www.geografos.com.br/cidades-pernambuco/sirinhaem.php]</ref>
+
+=== Limites ===
+{| class="wikitable" width ="60%" border = 2 align="center"
+|-----
+| width ="35%" align="center" | ''Noroeste:'' [[Escada (Pernambuco)|Escada]]
+| width ="30%" align="center" | ''Norte:'' [[Ipojuca]] e [[Escada (Pernambuco)|Escada]]
+| width ="35%" align="center" | ''Nordeste:'' [[Ipojuca]]
+|-----
+| width ="10%" align="center" | ''Oeste:'' [[Ribeirão (Pernambuco)|Ribeirão]]
+| width ="35%" align="center" | [[Imagem:Rosa de los vientos.svg|75px]]
+| width ="30%" align="center" | ''Leste:'' [[Oceano Atlântico]]
+|-----
+| width ="35%" align="center" | ''Sudoeste:'' [[Rio Formoso]]
+| width ="30%" align="center" | ''Sul:'' [[Rio Formoso]] e [[Tamandaré (Pernambuco)|Tamandaré]]
+| width ="35%" align="center" | ''Sudeste:'' [[Tamandaré (Pernambuco)|Tamandaré]]
+|}
+
+=== Relevo ===
+O relevo do município é formado por [[mar de morros]].<ref>[http://rigeo.cprm.gov.br/xmlui/bitstream/handle/doc/16836/Rel_Sirinh%C3%A9m.pdf?sequence=1 CPRM - Diagnóstico do Município de Sirinhaém]</ref>
+
+Nomes de [[Morro]]s, [[Outeiro]]s, [[Serra]]s e [[Montanha|Montes]] do município: Morro Pedra Brilhante, Morro Uma Só Pedra, Morro São Félix, Serra dos Três Marcos, Monte Santo, Morro dos Bambus, Morro da Muriçoca, Morro Tejupaba, Morro Cantagalo, Morro da Misericórdia, Serra Selada, Serra do Cão, Outeiro do Carmo, Outeiro do Livramento, Morro da Igreja, Morro do Abacaxi e Morro do Bonito.<ref>[https://www.openstreetmap.org/relation/303578 Cumes de Sirinhaém no OSM]</ref>
+
+=== Vegetação ===
+A vegetação é composta por [[mata atlântica]].<ref name="cprm.gov.br">[http://www.cprm.gov.br/rehi/atlas/pernambuco/relatorios/SIRI151.pdf]</ref>
+[[Imagem:Sirinhaém, Brazil (Unsplash).jpg|miniaturadaimagem|direita|Espécie de [[lagarto]] vista na vegetação de [[mata atlântica]] em Sirinhaém]]
+
+=== Geologia ===
+O município encontra-se inserido, geologicamente, na Província Borborema.<ref name="cprm.gov.br"/>
+
+=== Hidrografia ===
+O município de Sirinhaém encontra-se inserido nos domínios da Bacia Hidrográfica do Rio
+Sirinhaém e do Grupo de Bacias de Pequenos Rios Litorâneos. Seus principais tributários são os Rios Tapiraçu, Diamante, São Lourenço, Sibiró, Sirinhaém, Camaragibe, Trapiche, da Palma,
+Goicana, dos Passos e Formoso, além dos riachos: Canta Galo, Todos os Santos, Boca da mata,
+Caoité, Jaguarezinho, Rubi, Triunfo, São José, Cigarra e Aprumado.<ref>[http://www.cprm.gov.br/rehi/atlas/pernambuco/relatorios/SIRI151.pdf] Diagnóstico do município de Sirinhaém</ref>
+
+=== Clima ===
+O clima de Sirinhaém é o [[Clima tropical úmido|tropical]], do tipo ''As'''. No verão é quente e menos úmido, com máximas de 29&nbsp;°C, e mínimas de 22&nbsp;°C. No inverno é ameno e chuvoso, com máximas de 26&nbsp;°C e mínimas de 20&nbsp;°C.
+
+* Precipitação pluviométrica: {{fmtn|2076}} milímetros
+* Temperatura média anual: 24,4&nbsp;°C
+* Meses mais chuvosos: abril a julho
+
+{{Tabela/Clima
+|localidade = Sirinhaém
+|larguraporcentagem = 70
+
+|Jan_Max_°C = 28.7 |Jan_Min_°C = 22.5
+|Fev_Max_°C = 28.6 |Fev_Min_°C = 22.5
+|Mar_Max_°C = 28.6 |Mar_Min_°C = 22.2
+|Abr_Max_°C = 28.2 |Abr_Min_°C = 21.8
+|Mai_Max_°C = 27.2 |Mai_Min_°C = 21.3
+|Jun_Max_°C = 26.4 |Jun_Min_°C = 20.7
+|Jul_Max_°C = 25.9 |Jul_Min_°C =  20
+|Ago_Max_°C = 25.9 |Ago_Min_°C = 19.8
+|Set_Max_°C = 26.4 |Set_Min_°C = 20.5
+|Out_Max_°C = 27.3 |Out_Min_°C = 21.2
+|Nov_Max_°C =  28  |Nov_Min_°C = 21.7
+|Dez_Max_°C = 28.3 |Dez_Min_°C = 22.3
+|Max_Ano_°C = 27.5 |Min_Ano_°C = 21.4
+
+|Jan_Med_°C = 25.6
+|Fev_Med_°C = 25.5
+|Mar_Med_°C = 25.4
+|Abr_Med_°C =  25
+|Mai_Med_°C = 24.2
+|Jun_Med_°C = 23.5
+|Jul_Med_°C = 22.9
+|Ago_Med_°C = 22.8
+|Set_Med_°C = 23.4
+|Out_Med_°C = 24.2
+|Nov_Med_°C = 24.8
+|Dez_Med_°C = 25.3
+|Med_Ano_°C = 24.4
+
+|Jan_Precip_mm = 98
+|Fev_Precip_mm = 131
+|Mar_Precip_mm = 199
+|Abr_Precip_mm = 270
+|Mai_Precip_mm = 295
+|Jun_Precip_mm = 323
+|Jul_Precip_mm = 297
+|Ago_Precip_mm = 186
+|Set_Precip_mm = 112
+|Out_Precip_mm = 57
+|Nov_Precip_mm = 45
+|Dez_Precip_mm = 63
+|Ano_Precip_mm = 2076
+
+|fonte = Climate Data.<ref name="Climatologia_SirinhaémPE">{{citar web|url=http://webcache.googleusercontent.com/search?q=cache:jkSZt7hCWRgJ:pt.climate-data.org/location/4459/+&cd=1&hl=pt-BR&ct=clnk&gl=br|título=Clima: Sirinhaém|publicado=Climate Data|acessodata=28 de outubro de 2014}}{{Ligação inativa|1={{subst:DATA}} }}</ref>
+}}
+{{Tabela/Clima
+|localidade = Sirinhaém (Barra do Sirinhaém)<ref>{{citar web|url=http://pt.climate-data.org/location/315064/|título=Clima: Barra do Sirinhaém|acessodata=3 de fevereiro de 2016}}</ref>
+|collapsed = s
+|larguraporcentagem = 100
+
+|Jan_Max_°C = 28.9 |Jan_Min_°C = 22.8
+|Fev_Max_°C = 28.8 |Fev_Min_°C = 22.8
+|Mar_Max_°C = 28.8 |Mar_Min_°C = 22.6
+|Abr_Max_°C = 28.4 |Abr_Min_°C = 22.2
+|Mai_Max_°C = 27.5 |Mai_Min_°C = 21.7
+|Jun_Max_°C = 26.7 |Jun_Min_°C = 21.0
+|Jul_Max_°C = 26.1 |Jul_Min_°C = 20.4
+|Ago_Max_°C = 26.2 |Ago_Min_°C = 20.1
+|Set_Max_°C = 26.7 |Set_Min_°C = 20.8
+|Out_Max_°C = 27.6 |Out_Min_°C = 21.6
+|Nov_Max_°C = 28.1 |Nov_Min_°C = 22.0
+|Dez_Max_°C = 28.5 |Dez_Min_°C = 22.5
+|Max_Ano_°C = 27.7 |Min_Ano_°C = 21.7
+
+|Jan_Med_°C =  25.8
+|Fev_Med_°C = 25.8
+|Mar_Med_°C = 25.7
+|Abr_Med_°C = 25.3
+|Mai_Med_°C = 24.6
+|Jun_Med_°C = 23.8
+|Jul_Med_°C = 23.2
+|Ago_Med_°C = 23.1
+|Set_Med_°C = 23.7
+|Out_Med_°C = 24.6
+|Nov_Med_°C = 25.0
+|Dez_Med_°C = 25.5
+|Med_Ano_°C = 24.7
+
+|Jan_Precip_mm = 93
+|Fev_Precip_mm = 124
+|Mar_Precip_mm = 188
+|Abr_Precip_mm = 246
+|Mai_Precip_mm = 280
+|Jun_Precip_mm = 305
+|Jul_Precip_mm = 271
+|Ago_Precip_mm = 175
+|Set_Precip_mm = 99
+|Out_Precip_mm = 53
+|Nov_Precip_mm = 42
+|Dez_Precip_mm = 59
+|Ano_Precip_mm = 1935
+
+|fonte = Climate-Data.org
+}}
+{{Tabela/Clima
+|localidade = Sirinhaém ([[Ibiratinga]])<ref>{{citar web|url=http://pt.climate-data.org/location/315065/|título=Clima:  Ibiratinga|acessodata=3 de fevereiro de 2016}}</ref>
+|collapsed = s
+|larguraporcentagem = 100
+
+|Jan_Max_°C = 28.4 |Jan_Min_°C = 21.5
+|Fev_Max_°C = 28.3 |Fev_Min_°C = 21.6
+|Mar_Max_°C = 28.2 |Mar_Min_°C = 21.3
+|Abr_Max_°C = 27.7 |Abr_Min_°C = 21.1
+|Mai_Max_°C = 26.7 |Mai_Min_°C = 20.6
+|Jun_Max_°C = 25.8 |Jun_Min_°C = 19.8
+|Jul_Max_°C = 25.2 |Jul_Min_°C = 19.1
+|Ago_Max_°C = 25.3 |Ago_Min_°C = 18.9
+|Set_Max_°C = 26   |Set_Min_°C = 19.6
+|Out_Max_°C = 27   |Out_Min_°C = 20.2
+|Nov_Max_°C = 27.8 |Nov_Min_°C = 20.8
+|Dez_Max_°C = 28.1 |Dez_Min_°C = 21.3
+|Max_Ano_°C = 26.4 |Min_Ano_°C = 20.5
+
+|Jan_Med_°C =  25.3
+|Fev_Med_°C = 25.3
+|Mar_Med_°C = 25.1
+|Abr_Med_°C = 24.6
+|Mai_Med_°C = 24
+|Jun_Med_°C = 23.2
+|Jul_Med_°C = 22.7
+|Ago_Med_°C = 22.5
+|Set_Med_°C = 23.2
+|Out_Med_°C = 24
+|Nov_Med_°C = 24.5
+|Dez_Med_°C = 25
+|Med_Ano_°C = 23.7
+
+|Jan_Precip_mm = 91
+|Fev_Precip_mm = 116
+|Mar_Precip_mm = 204
+|Abr_Precip_mm = 254
+|Mai_Precip_mm = 276
+|Jun_Precip_mm = 299
+|Jul_Precip_mm = 318
+|Ago_Precip_mm = 173
+|Set_Precip_mm = 109
+|Out_Precip_mm = 58
+|Nov_Precip_mm = 47
+|Dez_Precip_mm = 66
+|Ano_Precip_mm = 2011
+
+|fonte = Climate-Data.org
+}}
+{{Tabela/Clima
+|localidade = Sirinhaém (Santo Amaro)<ref>{{citar web|url=http://pt.climate-data.org/location/709169/|título=Clima: Santo Amaro|acessodata=3 de fevereiro de 2016}}</ref>
+|collapsed = s
+|larguraporcentagem = 100
+
+|Jan_Max_°C = 28.4 |Jan_Min_°C = 22.2
+|Fev_Max_°C = 28.4 |Fev_Min_°C = 22.2
+|Mar_Max_°C = 28.3 |Mar_Min_°C = 21.9
+|Abr_Max_°C = 27.8 |Abr_Min_°C = 21.5
+|Mai_Max_°C = 26.9 |Mai_Min_°C = 21.1
+|Jun_Max_°C = 26.1 |Jun_Min_°C = 20.4
+|Jul_Max_°C = 25.6 |Jul_Min_°C = 19.8
+|Ago_Max_°C = 25.6 |Ago_Min_°C = 19.5
+|Set_Max_°C = 26.2 |Set_Min_°C = 20.2
+|Out_Max_°C = 27.1 |Out_Min_°C = 20.9
+|Nov_Max_°C = 27.7 |Nov_Min_°C = 21.4
+|Dez_Max_°C = 28   |Dez_Min_°C = 22
+|Max_Ano_°C = 26.8 |Min_Ano_°C = 20.7
+
+|Jan_Med_°C =  25.3
+|Fev_Med_°C = 25.3
+|Mar_Med_°C = 25.1
+|Abr_Med_°C = 24.6
+|Mai_Med_°C = 24
+|Jun_Med_°C = 23.2
+|Jul_Med_°C = 22.7
+|Ago_Med_°C = 22.5
+|Set_Med_°C = 23.2
+|Out_Med_°C = 24
+|Nov_Med_°C = 24.5
+|Dez_Med_°C = 25
+|Med_Ano_°C = 24.1
+
+|Jan_Precip_mm = 96
+|Fev_Precip_mm = 129
+|Mar_Precip_mm = 200
+|Abr_Precip_mm = 269
+|Mai_Precip_mm = 297
+|Jun_Precip_mm = 323
+|Jul_Precip_mm = 299
+|Ago_Precip_mm = 185
+|Set_Precip_mm = 111
+|Out_Precip_mm = 57
+|Nov_Precip_mm = 45
+|Dez_Precip_mm = 62
+|Ano_Precip_mm = 2073
+
+|fonte = Climate-Data.org
+}}
+
+== Demografia ==
+A população do município de Sirinhaém, de acordo com o último censo realizado pelo IBGE - Instituto Brasileiro de Geografia e Estatística, divulgado em 1 de dezembro de 2010, apresenta os seguintes dados:
+
+* População masculina: 20.348 habitantes - 50,5%,
+* População feminina: 19.948 habitantes - 49,5%,
+** Total das populações por gênero: 40.296 habitantes - 100,00%.
+* Zona urbana: 21.484 habitantes - 53,32%
+* Zona rural: 18.812 habitantes - 46,68%
+** Total da população do município: 40.296 habitantes - 100,00%.
+* [[Densidade demográfica]] (hab./km²): 107,57
+* Área de 374,611&nbsp;km²
+
+=== Indicadores sociais ===
+* [[Mortalidade infantil]] até 1 ano (por mil): 17,7
+* [[Taxa de fecundidade]] (filhos por mulher): 2,4
+* [[Alfabetização|Taxa de alfabetização]]: 66,2%
+* [[Índice de Desenvolvimento Humano]] (IDH-M): 0,597 (Baixo)
+** IDH-M Renda: 0,568
+** IDH-M Longevidade: 0,763
+** IDH-M Educação: 0,492
+
+:: Fonte: [[Atlas do Desenvolvimento Humano do Brasil]] '' <ref>[http://atlasbrasil.org.br/2013/pt/perfil_m/sirinha%C3%A9m_pe Atlas do Desenvolvimento Humano do Brasil]</ref>
+
+=== Religião ===
+{| class="wikitable"
+|- style="background:#87CEFA; color:white"
+| '''Religião'''<ref>[http://www.mai.org.br/tabelas/municipios/censo2010_listareligioes_list.php?a=integrated&ctlSearchFor=Sirinha%E9m&simpleSrchFieldsComboOpt=&simpleSrchTypeComboNot=&simpleSrchTypeComboOpt=&criteria=and Religião]{{Ligação inativa|1={{subst:DATA}} }}</ref>
+| '''Porcentagem'''
+|- align="center"
+|[[Evangélicos]]
+|38,51%
+|- align="center"
+|[[Católicos]]
+|33,22%
+|- align="center"
+|[[irreligião|Sem religião]]
+|25,14%
+|- align="center"
+|[[Testemunhas de Jeová]]
+|0,47%
+|- align="center"
+|[[Espiritismo|Espíritas]]
+|0,18%
+|- align="center"
+|'''Outra Religião'''
+|1,5%
+|}
+
+=== Evolução populacional ===
+{| class="wikitable"
+!colspan=2| Evolução de habitantes
+|-
+! Ano
+| Cidadãos
+|-
+! 1970
+| 24.806
+|-
+! 1980
+| 29.061
+|-
+! 1991
+| 33.258
+|-
+! 1996
+| 31.998
+|-
+! 2000
+| 33.046
+|-
+! 2004
+| 32.937
+|-
+! 2007
+| 36.414
+|-
+! 2010
+| 40.296
+|-
+! 2022
+| 37.596
+|}
+
+Fonte: IBGE<ref>[https://cod.ibge.gov.br/2L60 Instituto Brasileiro de Geografia e Estatística]</ref>
+
+=== Etnias ===
+No ano de 2010 a população sirinhaense era composta por 27 018 [[pardos]] (67,05%), 9 352 [[brancos]] (23,21%), 3 546 [[pretos]] (8,80%), 375 [[amarelos]] (0,93%) e 5 [[indígenas]] (0,01%).<ref>{{Citar web|url=https://sidra.ibge.gov.br/Tabela/3175|titulo=Tabela 3175: População residente, por cor ou raça, segundo a situação do domicílio, o sexo e a idade|acessodata=2018-06-04|obra=sidra.ibge.gov.br}}</ref>
+
+== Administração pública ==
+=== Poder Executivo ===
+Sirinhaém teve os seguintes prefeitos:<ref>[http://www.sirinhaemcamara.com.br/lista-de-prefeitos Lista de Prefeitos de Sirinhaém]{{Ligação inativa|1={{subst:DATA}} }}</ref>
+* Luiz Cavalcanti de Albuquerque Uchôa (1893-1914)
+* Joel Regueira Pinto (1915-1918)
+* Manoel Wanderlei Lins (1919-1926)
+* Antônio Cardoso da Fonte (1927-1936)
+* Oscar Cardoso da Fonte (1937-1942)
+* Jorge Coelho da Silveira (1943-1946)
+* Hipácio do Nascimento Feitosa (1947-1948)
+* Manoel Ferreira Gomes (1948-1949)
+* João Dourado Cavalcanti (1950-1951)
+* Heleno Luiz Soares (1952-1955)
+* Laurindo Gonçalves de Lima (1956-1959)
+* Marcelo Mário Carneiro Leão (1960-1963)
+* Luiz Peregrino Ferreira Júnior (1964-1968)
+* Ives Nicéas de Albuquerque (1969-1972)
+* Laurindo Gonçalves de Lima (2º Mandato: 1973-1976)
+* Livaldo Brito da Silva (1977-1982)
+* Alberto Machado Gouveia Lins (1983-1988)
+* José Luiz Martins Canavello (1989-1992)
+* Alberto Machado Gouveia Lins (2º Mandato: 1993-1996)
+* José Hildo Hacker (1997-2000)
+* José Hildo Hacker (2º Mandato: 2001-2004)
+* Fernando Luiz Urquiza Lima (2005-2008)
+* Fernando Luiz Urquiza Lima (2º Mandato: 2009-2012)
+* Franz Araújo Hacker (2013-2016)
+* Franz Araújo Hacker (2º Mandato: 2017-2020)
+* Camila Machado (2021-2024)
+* Manoel Soares de Souza Filho (2025-atualidade)
+
+=== Poder Legislativo ===
+O [[poder legislativo]] é representado pela [[Câmara Municipal (Brasil)|Câmara Municipal]], composta por 13 vereadores.
+
+== Transportes ==
+{| class=wikitable style="float:right; margin:1em; border-collapse:border; text-align:center;"
+! colspan=3|Distância de Sirinhaém aos principais centros nacionais
+|- 3.556.096 60,77 1.034.009 17,67 781.080 13,35 201.714 3,45 72.946 1,25 36.273 0,62 29.831 0,51 23.862 0,41 12.741
+! '''Cidade'''
+! '''Distância (em [[Quilômetro|km]])'''<ref name="maps.google.com">{{citar web |url=http://maps.google.com/ |titulo=Google Maps/Dist |acessodata=25 de dezembro de 2015}}</ref>
+|-
+! [[Recife]]
+| 75
+|-
+! [[João Pessoa]]
+| 191
+|-
+! [[Salvador (Bahia)|Salvador]]
+| 772
+|-
+! [[Rio de Janeiro (cidade)|Rio de Janeiro]]
+| 2.287
+|-
+! [[São Paulo (cidade)|São Paulo]]
+| 2.654
+|-
+! [[Brasília]]
+| 2.085
+|-
+! [[Belo Horizonte]]
+| 2.009
+|-
+|}
+
+O município é servido pelas rodovias [[PE-060]], PE-064, PE-009 e PE-061; que ligam os distritos e a sede aos municípios vizinhos. O aeroporto mais próximo é o [[Aeroporto Internacional do Recife]], estando a aproximadamente 65&nbsp;km do centro da cidade.<ref>{{citar web | url=https://www.ferias.tur.br/cidade/5459/sirinhaem-pe.html | título=Férias.tur (2014). Informações. }} Página visitada em 05 de agosto de 2014.</ref>
+
+Em 2014 a frota municipal era de 5.011 veículos, sendo 2.513 [[automóveis]], 196 [[Camião|caminhões]], 232 [[caminhonete]]s, 296 caminhonetas, 23 [[micro-ônibus]], 1.569 [[motocicleta]]s, 85 [[motoneta]]s, 79 [[ônibus]], 5 caminhões-trator e 13 utilitários.<ref>{{citar web | url=https://cod.ibge.gov.br/B1J7 | título=IBGE (2014). Frota - 2014. }} Página visitada em 20 de fevereiro de 2016.</ref>
+
+== Saúde ==
+Em 2009 o município possuía 11 estabelecimentos de saúde, entre eles [[pronto-socorro]], [[posto de saúde]] e [[odontologia|serviços odontológicos]], sendo 10 públicos e 1 privado. Em 2008 possuía 73 leitos para internação, sendo 36 deles públicos e 37 privados.<ref>[http://www.cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=261420&idtema=5&search=pernambuco%7Csirinhaem%7Cservicos-de-saude-2009] IBGE - Serviços de saúde 2009</ref> Em 2010 a taxa de mortalidade infantil era de 17,7 para cada mil nascidos vivos. Segundo o PNUD, em 2010, o índice referente à saúde no município era de 0,763, considerado baixo.<ref>[http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx] PNUD - Ranking IDHM Municípios 2010</ref>
+
+== Educação ==
+
+Segundo o censo IBGE de 2010, o IDH-M de educação do município é de 0,492, considerado baixo. Ainda segundo o mesmo, a taxa de alfabetização da população é de 66%. A proporção de crianças de 5 a 6 anos na escola era de 90,75%, em 2010. No mesmo ano, a proporção de jovens de 18 a 20 anos com ensino médio completo representava 21,36%.
+
+O município possui as seguinte(s) escola(s) estadual(s):
+
+* Escola de Referência em Ensino Médio Doutor Eurico Chaves (integral)
+* Escola de Referência em Ensino Médio Barra de Sirinhaém (integral)
+* Escola Teotônio Correia da Silva
+* Escola Dr. Miguel Arraes de Alencar
+* Escola Escritor Maximiano Accioly Campos<ref>[http://www.educacao.pe.gov.br/portal/upload/galeria/4324/rel_escolas_gre_litoralsul.pdf Escolas estaduais de Sirinhaém]</ref>
+
+== Turismo ==
+=== Praias ===
+* [[Praia de Barra do Sirinhaém|Barra do Sirinhaém]]: sua extensão é de aproximadamente 8 quilômetros, com areias douradas de grãos médios e vegetação de coqueiros. Localiza-se na desembocadura do Rio Sirinhaém, em frente a [[Ilha de Santo Aleixo]].<ref>{{citar web | url=http://sirinhaemsite.xpg.uol.com.br/praias.htm | título=Informações Históricas e Turísticas de Sirinhaém }} Página visitada em 10 de fevereiro de 2016.</ref>
+[[Imagem:Praia de Guadalupe - Pernambuco (2).jpg|miniaturadaimagem|direita|Praia de Guadalupe]]
+* [[Praia do Gamela|Gamela]]: sua extensão é de aproximadamente 4 quilômetros em praia de morfologia ondulada e quebrada, com areias douradas finas, vegetação rasteira e extenso coqueiral. Localizada entre a praia de [[Barra do Sirinhaém]], ao norte, e a Praia de Guadalupe, ao sul, suas águas são pouco profundas com pequena intensidade de ondas. Gamela é a praia mais procurada da cidade nos fins de semana. Em sua orla, encontram-se diversos bares.<ref>{{citar web | url=http://sirinhaemsite.xpg.uol.com.br/praias_gamela.htm | título=Informações Históricas e Turísticas de Sirinhaém }} Página visitada em 10 de fevereiro de 2016.</ref>
+* Guadalupe: sua extensão é de aproximadamente 3 quilômetros em praia fluvio-marinha de morfologia quebrada e ondulada, com areias douradas de grãos médios e vegetação rasteira, arbustiva e de coqueiros. Localizada entre a praia do Gamela e a foz do Rio Formoso, suas águas são pouco profundas com pequena intensidade de ondas.<ref>{{citar web | url=http://sirinhaemsite.xpg.uol.com.br/praias_guadalupe.htm | título=Informações Históricas e Turísticas de Sirinhaém }} Página visitada em 10 de fevereiro de 2016.</ref><ref>[http://www.turismodonordeste.com/sirinhaem.htm Turismo do Nordeste]</ref>
+* [[Ilha de Santo Aleixo]]: trata-se de uma [[ilha]] oceânica, com área de 450 000 metros quadrados. Situada em mar aberto, a cerca de dois quilômetros a leste de [[Barra do Sirinhaém]], sua área balneável está localizada na parte oeste, sua praia apresenta morfologia quebrada, com areias douradas de grãos médios e vegetação rasteira, arbustiva e arbórea de forma espaçada, além de palmáceas. Suas águas são pouco profundas com pequena intensidade de ondas.<ref>{{citar web | url=http://sirinhaemsite.xpg.uol.com.br/praias_ilha.htm | título=Informações Históricas e Turísticas de Sirinhaém }} Página visitada em 10 de fevereiro de 2016</ref>
+
+=== Monumentos históricos ===
+Outras opções do município são os monumentos históricos, como engenho de açúcar, casarões e a Casa de Câmara e Cadeia, construção do meio do século XIX. Outros pontos são a Igreja de Nossa Senhora da Conceição, Capela de Santo Amaro, Capela de São Roque e o Convento de Santo Antônio construído em 1645.
+
+== Cultura ==
+Os principais eventos culturais são:<ref>{{citar web | url=https://www.ferias.tur.br/informacoes/5459/sirinhaem-pe.html | título=Portal Férias. }} Visitado em 04 de fevereiro de 2016.</ref>
+* Festa de [[Santo Amaro]] (15 de janeiro);
+* Festa de [[São Roque]] (15 de agosto);
+* Festa de São Sebastião (20 de Janeiro em Barra do Sirinhaém);
+* Festa da Pescaria (Julho);
+* Festival de Crustáceos (Janeiro);
+
+== Feriados municipais ==
+* Santo Amaro (15 de janeiro);
+* Emancipação de Sirinhaém (12 de junho);
+* São Roque (15 de agosto);
+* Dia da Consciência Cristã (31 de outubro)
+* [[Nossa Senhora da Conceição]] (8 de dezembro);<ref>{{citar web | url=https://www.feriadosmunicipais.com.br/pernambuco/sirinhaem/ | título=Feriados municipais. }} Visitado em 04 de fevereiro de 2016.</ref>
+
+== Subdivisões ==
+Sirinhaém é formado por três distritos: Distrito-Sede, [[Barra do Sirinhaém]] e [[Ibiratinga]]. Ainda é composto pelos povoados: Santo Amaro, Usina Trapiche, Agrovila Trapiche, 31 de Março e [[Aver-o-Mar (Sirinhaém)|Aver-o-Mar]].<ref>[http://www2.transparencia.pe.gov.br/c/document_library/get_file?p_l_id=98754&folderId=308521&name=DLFE-33422.pdf] Perfil municípal de Sirinhaém. Informações. Página visitada em 06 de agosto de 2014.</ref><ref>[http://www.sirinhaem.pe.gov.br/plano_diretor/diagnostico_situacional/dimensao_geoambiental/diag_geoamb_sirinhaem.pdf PLANO DIRETOR DE SIRINHAÉM. Organização Espacial]</ref>
+
+=== Bairros ===
+;Distrito Sede
+{{duas colunas|*Cavoco
+*Centro
+*Cohab
+*Nova Esperança
+*Outeiro do Carmo
+*Outeiro do Livramento/Guararapes
+*Porto de Pedra
+*São Roque
+*Vila Nova
+*Vila Operária<ref>[http://www.sirinhaem.pe.gov.br/plano_diretor/diagnostico_situacional/dimensao_geoambiental/setores_pesquisa_geoamb.pdf Prefeitura Municipal]</ref>}}
+
+=== Principais ruas ===
+*Rua Sebastião Chaves
+*Rua Marquês de Olinda
+*Rua Antônio Ribeiro
+*Rua Cardoso da Fonte
+*Rua do Comércio<ref>{{citar web | url=http://www.sirinhaem.pe.gov.br/plano_diretor/legislacao/leg_urb_basica/lei_de_par_uso_e_ocupacao/lei_de_parcelamento_uso_e_ocupacao_do_solo_de_sirinhaem.pdf | título=Principais vias de Sirinhaém }}Página visitada em 08 de fevereiro de 2016.</ref>
+
+== Economia ==
+Segundo dados sobre o [[produto interno bruto]] dos municípios, divulgado pelo IBGE referente ao ano de 2021, a soma das riquezas produzidas no município é de 722.495 mil reais ([[Lista de municípios de Pernambuco por PIB|38° maior do estado]]). Sendo o setor de serviços o mais mais representativo na [[economia]] sirinhaense, somando 172.543 mil. Já os setores industrial e da [[agricultura]] representam 127.951 mil e 150.069 mil, respectivamente. O PIB per capita do município é de 15.423,10 reais, terceiro maior da [[Região Geográfica Imediata de Barreiros-Sirinhaém]].<ref>[https://cidades.ibge.gov.br/brasil/pe/sirinhaem/panorama] Visitado em 28 de março de 2024.</ref>
+
+== Sirinhaenses notórios ==
+*''Ver [[:Categoria:Naturais de Sirinhaém|Biografias de sirinhaenses notáveis]]''
+==Galeria==
+
+<gallery>
+Ficheiro:Manguezal da barra do Sirinhaém.jpg|Manguezal em [[Barra do Sirinhaém]]
+Ficheiro:Rio sirinhanhém.jpg|[[Rio Sirinhaém]]
+Ficheiro:Píer Mariassú 3.jpg|Rio Mariassú
+</gallery>
+{{Referências|col=2}}
+
+== Ligações externas ==
+{{commonscat|Sirinhaém}}
+* [http://www.sirinhaem.pe.gov.br Prefeitura de Sirinhaém]
+* [https://goo.gl/maps/LaENbV6dSC92 Sirinhaém no Google Maps]
+* [http://www.bing.com/maps/?v=2&cp=-8.590833~-35.115833&style=r&lvl=13&sp=Point.-8.590833_-35.115833_Sirinha%C3%A9m&ignoreoptin=1 Sirinhaém no Bing Mapas]
+
+{{Controle de autoridade}}
+{{Municípios de Pernambuco}}
+{{Subdivisões de Pernambuco}}
+{{Turismo no Brasil}}
+{{Portal3|PernambucoBrasil|PernambucoPernambuco}}
+
+{{DEFAULTSORT:Sirinhaem}}
+[[Categoria:Sirinhaém| ]]
+[[Categoria:Fundações em Pernambuco em 1895]]
+[[Categoria:Municípios históricos do Brasil]]
+[[Categoria:Topônimos de origem tupi em Pernambuco]]

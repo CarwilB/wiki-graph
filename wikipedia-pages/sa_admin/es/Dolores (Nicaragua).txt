@@ -1,0 +1,88 @@
+{{Ficha de entidad subnacional
+| nombre = Dolores
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|CA}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 11.8560
+ |longitude= -86.2185
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=13}}
+| subdivisión = 6 comarcas
+| elevación_media = 585
+| superficie = 2,62 
+| superficie_puesto = 153
+| número_entidades = 153
+| población_puesto = 127
+| población_año = 2023
+| población = 9029
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/carazo/7515__dolores/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 7880
+| densidad = 3,446
+| gentilicio = Dolorense,<br />Doloreño, -ña
+| fundación = 14 de octubre de 1904 ({{Edad|14|10|1904}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 46100
+}}
+'''Dolores''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Carazo|Carazo]] en la República de [[Nicaragua]]. Es el municipio más pequeño de Nicaragua, ya que está constituido únicamente
+por el casco urbano o viviendas de su cabecera.
+
+== Geografía ==
+El término municipal limita al norte y oeste con el municipio de [[Diriamba]] y al sur y este con el municipio de [[Jinotepe]].<ref name='INIFOM'>{{Cita web|url=http://www.inifom.gob.ni/municipios/municipios.html|título=Instituto Nicaragüense de Fomento Municipal|fechaacceso=15 de abril de 2011|urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html|fechaarchivo=7 de abril de 2011}}</ref> La cabecera municipal está ubicada a 44 kilómetros de la capital de [[Managua]] y a tan sólo 1 kilómetro de la ciudad de Jinotepe.
+
+Posee una topografía regular plana, cuenta con ríos que son parte de la cuenca del Río Grande de Carazo.<ref name='INIFOM'/>
+
+== Historia ==
+Existen dos teorías sobre el origen del nombre del municipio, algunos historiadores aseguran que entre los años 1890 a 1895 se encontró en el lugar la imagen de la Santísima Virgen de los Dolores y fue llevada en una procesión hacia la iglesia parroquial de Jinotepe lugar de su asiento definitivo. Otra versión sostiene que el nombre se debe a una de las primeras familias fundadoras del municipio, en la cual había una señora llamada Dolores, razón por la cual se tomó el nombre que hoy lleva el municipio.<ref name='INIFOM'/>
+
+Dolores fue elevado a la categoría de Pueblo por Ley Legislativa el 14 de octubre de 1904.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 4,225 (46.8%)
+| valor1 = 46.8
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 4,804 (53.2%)
+| valor2 = 53.2
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 1,149 (12.7%)
+| valor1 = 12.7
+| color1 = #109618
+| etiqueta2 = Urbano: 7,880 (87.3%)
+| valor2 = 87.3
+| color2 = #FF9900
+}}
+Dolores tiene una población actual de 9,029 habitantes. De la población total, el 46.8% son hombres y el 53.2% son mujeres. Casi el 87.3% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[Clima tropical de sabana|clima de sabana tropical]] (semi-húmedo). Tiene una precipitación que varía entre los 1200 y 1400 mm caracterizándose por una buena distribución de las lluvias durante todo el año. La temperatura oscila entre los 22 y 23&nbsp;°C durante todo el año.<ref name='INIFOM'/>
+
+== Localidades ==
+En el casco urbano hay once barrios: Sandino, Cristo Rey, Guadalupe, Alfonso Pascual, Zona Central, Los Ramos, 3 de Mayo, San Antonio, Santa Ana, San Pablo, Héroes y Mártires. Mientras que en la zona rural hay seis comarcas: El Panamá, El Paso Real, El Guachipilín, El Limón, 19 de Julio, Sandineña.<ref>Alcaldía de Dolores.</ref>
+
+== Economía ==
+La actividad económica del municipio es eminentemente agrícola, caracterizándose por la variedad de granos básicos: [[Oryza sativa|arroz]], [[Phaseolus vulgaris|frijoles]] y [[hortaliza]]s, el municipio cuenta con un total de 400 manzanas sembradas.<ref name='INIFOM'/>
+
+== Cultura ==
+Las festividades se realizan del 1 al 10 de mayo, el día 3 de mayo se realizan procesiones por todas las calles de la ciudad, desfile de carrozas, con las reinas de las fiestas. Durante las festividades, se destacan las diferentes comidas y bebidas propias a las costumbres y tradiciones del municipio de Dolores.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Carazo]]
+[[Categoría:Localidades de Carazo]]

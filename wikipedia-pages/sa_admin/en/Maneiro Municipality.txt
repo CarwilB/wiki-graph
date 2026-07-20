@@ -1,0 +1,63 @@
+{{Infobox settlement 
+| name                    = Maneiro Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Maneiro
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = 
+| image_caption           = 
+| image_flag               = {{#property:P41}}
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Nueva Esparta]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Maneiro Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Nueva Esparta]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 
+| population_note         = 
+| population_total        = 
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = 
+| footnotes               = {{EditOnWikidata}}
+}}
+'''Maneiro''' is one of 11 municipalities that make up [[Isla Margarita]] in the state of [[Nueva Esparta]], [[Venezuela]]. The capital is [[Pampatar]].<ref name=DPT>{{cite web |url=http://www.ine.gov.ve/documentos/AspectosFisicos/DivisionpoliticoTerritorial/pdf/DPTconFinesEstadisticosOperativa2013.pdf |title=División Político Territorial de la República Bolivariana de Venezuela |access-date=25 October 2015 |date=September 2013 |website=[[Instituto Nacional de Estadística (Venezuela)|INE]] |archive-date=24 March 2023 |archive-url=https://web.archive.org/web/20230324042920/http://www.ine.gov.ve/documentos/AspectosFisicos/DivisionpoliticoTerritorial/pdf/DPTconFinesEstadisticosOperativa2013.pdf |url-status=dead}}</ref> In the 2011 census (published 2014) Maneiro had a population of 48,952 people.<ref name=censo>{{cite web |url=http://www.ine.gov.ve/documentos/Demografia/CensodePoblacionyVivienda/pdf/nuevaesparta.pdf |title=Resultados por entidad federal y municipios del Estado Nueva Esparta |website=Censo nacional de población y vivienda 2011 |access-date=25 October 2015 |date=December 2014 |editor=[[Instituto Nacional de Estadística (Venezuela)|INE]] |archive-date=1 March 2021 |archive-url=https://web.archive.org/web/20210301103755/http://www.ine.gov.ve/documentos/Demografia/CensodePoblacionyVivienda/pdf/nuevaesparta.pdf |url-status=dead }}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Municipalities of Nueva Esparta]]
+[[Category:Margarita Island]]
+
+{{NuevaEsparta-geo-stub}}

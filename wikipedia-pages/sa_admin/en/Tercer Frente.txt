@@ -1,0 +1,102 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Tercer Frente
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Mausoleo a los Mártires del Tercer Frente.jpg
+|image_caption          = A mausoleum in Cruce de los Baños
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Tercer Frente (Cuban municipal map).png
+|map_caption            = Tercer Frente municipality (red) within <br> Santiago Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Santiago de Cuba Province|Santiago de Cuba]]
+|subdivision_type2      = Seat
+|subdivision_name2      = Cruce de los Baños
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = 
+|area_total_km2         = 364.3
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = 
+|population_note        = 
+|population_total       = 30,237
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|10|19|N|76|19|39|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 225
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-226
+|website                = https://www.tercerfrente.gob.cu/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Tercer Frente''' ({{IPA|es|teɾˈseɾ ˈfɾente}}, [[Spanish language|Spanish]] for "Third Front") is a municipality in the [[Santiago de Cuba Province]] of [[Cuba]]. It is centered on the town, and municipal seat, of '''Cruce de los Baños'''.
+
+==Geography==
+The municipality is located in the western part of the province, neighboring the province of [[Granma Province|Granma]], and borders with the municipalities of [[Guisa]], [[Jiguaní]], [[Contramaestre]], [[Palma Soriano]] and [[Guamá, Cuba|Guamá]].
+
+It includes the town of Cruce de los Baños and the villages of El Yayal, Manaca and Matias.<ref>{{OSM|r|5919056|Tercer Frente}}</ref>
+
+==Demographics==
+In 2022, the municipality of Tercer Frente had a population of 30,237.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|364|km2|sqmi|abbr=on}}, it has a population density of {{convert|83|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Tercer Frente
+ | N  = [[Contramaestre, Cuba|Contramaestre]]
+ | E  = [[Palma Soriano]]
+ | S  = [[Guamá, Cuba|Guamá]]
+ | W  = [[Guisa]] ([[Granma Province|Granma]])
+ | NW = [[Jiguaní]] ([[Granma Province|Granma]])
+}}
+{{Municipalities in Santiago de Cuba}}
+
+[[Category:Populated places in Santiago de Cuba Province]]
+
+
+{{Cuba-geo-stub}}

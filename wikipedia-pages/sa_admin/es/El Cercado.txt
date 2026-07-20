@@ -1,0 +1,211 @@
+{{otros usos|El Cercado (Nueva Esparta)|la localidad de Venezuela}}
+{{Ficha de entidad subnacional
+| nombre = El Cercado<br/><small>''San Pedro de El Cercado''</small>
+| país = [[República Dominicana]]
+| lema = ''Tierra de Historia y Fé''
+| tipo_superior_1 = [[Provincias de la República Dominicana|Provincia]]
+| superior_1 = [[San Juan (República Dominicana)|San Juan]]
+| tipo_div_1 = [[Distrito municipal|Distritos Municipales]]
+| div_1 = 3
+| bandera = 
+| escudo = 
+| mapa_loc = República Dominicana
+| lengua = [[Idioma español|Español]]
+| superficie = 283,05
+| población = 17 987
+| población_año = 2022
+| población_post = <ref name="informe_xcnpv_p92" />
+| densidad = 85.4
+| horario = [[UTC-4]]
+| fundación = 9 de septiembre de 1907
+| gentilicio = cercadense
+}}
+
+'''El Cercado''' (denominado localmente '''''San Pedro de El Cercado'''''<ref>{{cite web |url=https://pueblos20.net/republica-dominicana/provincia-de-san-juan/san-pedro-de-el-cercado.html |título=San Pedro de El Cercado |sitioweb=pueblos20.net}}</ref>), es un [[Municipios de la República Dominicana|municipio]] de la [[República Dominicana]], que está situado en la [[Provincias de la República Dominicana|provincia]] de [[San Juan (República Dominicana)|San Juan]].<ref name=imede>[http://www.lmd.gob.do/transparencia/phocadownload/Publicaciones/Division-Territorial-2015.pdf Pdf oficial de la República Dominicana con descripción de la división territorial actualizada al año 2015.] {{Wayback|url=http://www.lmd.gob.do/transparencia/phocadownload/Publicaciones/Division-Territorial-2015.pdf |date=20180823212926 }} Consultado el 3 de septiembre de 2018. Páginas 354 a 356.</ref>
+
+== Toponimia ==
+Su nombre se debe a que el municipio está "cercado" (rodeado) de montañas.
+
+== Límites ==
+Municipios limítrofes:<ref>[https://www.openstreetmap.org/relation/7155990 Página de OpenStreetMap donde constan los datos de referencia.] Consultado el 5 de octubre de 2018.</ref>
+<center>
+{| border="2" cellpadding="4" cellspacing="0" style="margin: 0.5em 0.5em 0.5em 1em; padding: 0.5em; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;{{{1}}}" width="60%" align="center" {| class="{{{class}}}" {{{2}}}<noinclude>
+|-----
+| width ="35%" align="center" | 
+| width ="30%" align="center" | ''Norte:'' [[Juan Santiago (Elías Piña)|Juan Santiago]], [[Las Matas de Farfán]] y [[San Juan (municipio)|San Juan]] 
+| width ="35%" align="center" | 
+|-----
+| width ="10%" align="center" | ''Oeste:'' [[Juan Santiago (Elías Piña)|Juan Santiago]]
+| width ="35%" align="center" | [[Archivo:Rosa de los vientos.svg|75px]]
+| width ="30%" align="center" | ''Este:'' [[San Juan (municipio)|San Juan]] y [[Vallejuelo (San Juan)|Vallejuelo]] y [[Neiba]]
+|-----
+| width ="35%" align="center" | 
+| width ="30%" align="center" | ''Sur:'' [[Postrer Río]], [[Los Ríos (República Dominicana)|Los Ríos]], [[Villa Jaragua]] y [[Neiba]]
+| width ="35%" align="center" |
+|}</center>
+
+== Geografía ==
+=== Clima ===
+La ubicación geográfica y la altitud del municipio lo hacen gozar de temperaturas moderadas; las temperaturas más elevadas suelen registrarse entre los meses de junio y octubre. Durante esta época del año, las temperaturas máximas promedio rondan los 28-30 °C.
+En cambio, el periodo más fresco abarca los meses de diciembre a marzo. En esta época las temperaturas mínimas promedio descienden a 16-18 °C. Algunos de esos meses registran temperaturas mínimas absolutas de 14 °C.
+En cuanto a la temporada de lluvias, los meses con mayores registros son: mayo, agosto, septiembre y octubre, con precipitaciones mensuales que oscilan entre 88 y 104 mm.<ref name="meteoblue_cercado" />
+
+{{Clima
+|open         = yes
+|metric first = yes
+|single line  = yes
+|location     = El Cercado 
+|temperature colour= pastel
+ 
+<!--Record high temperatures-->  
+<!--Note that record temperatures should be used sparingly in main city articles, and should only be used when the data period is of the greatest length possible.-->
+|Jan record high C= 29
+|Feb record high C= 29
+|Mar record high C= 29
+|Apr record high C= 29
+|May record high C= 30
+|Jun record high C= 31
+|Jul record high C= 32
+|Aug record high C= 32
+|Sep record high C= 31
+|Oct record high C= 30
+|Nov record high C= 29
+|Dec record high C= 29
+|year record high C= 32
+<!--Average high temperatures-->
+|Jan high C= 27
+|Feb high C= 27
+|Mar high C= 27
+|Apr high C= 28
+|May high C= 28
+|Jun high C= 29
+|Jul high C= 30
+|Aug high C= 30
+|Sep high C= 29
+|Oct high C= 28
+|Nov high C= 28
+|Dec high C= 27
+|year high C= 
+<!--Average low temperatures-->
+|Jan low C= 16
+|Feb low C= 16
+|Mar low C= 18
+|Apr low C= 19
+|May low C= 19
+|Jun low C= 20
+|Jul low C= 20
+|Aug low C= 20
+|Sep low C= 20
+|Oct low C= 19
+|Nov low C= 18
+|Dec low C= 17
+|year low C= 
+<!--Record low temperatures-->
+<!--Note that record temperatures should be used sparingly in main city articles, and should only be used when the data period is of the greatest length possible.-->
+|Jan record low C=  13
+|Feb record low C=  14
+|Mar record low C= 14
+|Apr record low C= 16
+|May record low C= 17
+|Jun record low C= 18
+|Jul record low C= 18
+|Aug record low C= 18
+|Sep record low C= 18
+|Oct record low C= 17
+|Nov record low C= 15
+|Dec record low C= 14
+|year record low C= 13
+
+<!--Rainfall-->
+|rain colour= <!--Enter "green" for green rainfall colours, remove this line for blue colouring.-->
+<!--IMPORTANT: use mm or cm but NOT both!-->
+|Jan rain cm=  |Jan rain mm=  11
+|Feb rain cm=  |Feb rain mm=  23
+|Mar rain cm=  |Mar rain mm=  64
+|Apr rain cm=  |Apr rain mm=  91
+|May rain cm=  |May rain mm= 104
+|Jun rain cm=  |Jun rain mm= 54
+|Jul rain cm=  |Jul rain mm= 49
+|Aug rain cm=  |Aug rain mm= 88
+|Sep rain cm=  |Sep rain mm= 93
+|Oct rain cm=  |Oct rain mm= 101
+|Nov rain cm=  |Nov rain mm= 56
+|Dec rain cm=  |Dec rain mm=  21
+|year rain cm=  |year rain mm= 
+
+<!--Mandatory fields, source-->
+|source 1= Meteoblue<ref name="meteoblue_cercado">
+{{cita web
+ |url=https://www.meteoblue.com/es/tiempo/historyclimate/climatemodelled/cercado-abajo_rep%C3%BAblica-dominicana_3509882
+ |título=Clima y datos meteorológicos de Cercado Abajo, República Dominicana
+ |fechaacceso=11 de noviembre de 2025
+ |sitioweb=Meteoblue
+ |idioma=es
+}}
+</ref>
+}}
+
+
+== Población ==
+Tiene una población según el censo de 2022 de 17{{esd}}987 habitantes, 9{{esd}}653 son hombres y 8{{esd}}334 mujeres,<ref name="informe_xcnpv_p92">
+{{cita web
+ |url=https://www.one.gob.do/media/atbcumc0/informe-general-xcnpv-completo.pdf
+ |título=Informe General del X Censo Nacional de Población y Vivienda 2022
+ |páginas=92
+ |fechaacceso=11 de noviembre de 2025
+ |sitioweb=Oficina Nacional de Estadística (ONE)
+ |idioma=es
+}}
+</ref> su población ha bajado en los últimos años ya que muchas personas emigran a Santo Domingo y otras zonas del país buscando una mejoría de vida, así como también por razones de estudio.<ref name="tu_municipio_en_cifras_el_cercado_2024">
+{{cita web
+ |url=https://www.one.gob.do/publicaciones/2024/tu-municipio-en-cifras-el-cercado/?altTemplate=publicacionOnline
+ |título=Tu municipio en cifras: El Cercado
+ |fechaacceso=11 de noviembre de 2025
+ |sitioweb=Oficina Nacional de Estadística (ONE)
+ |idioma=es
+}}
+</ref>
+
+La mayor parte de su población está concentrada en zonas rurales, aproximadamente el 70,36 %, unos 12 656 habitantes, mientras que la población urbana corresponde a 5 331 habitantes.<ref name="informe_xcnpv_p92" />
+
+== Distritos municipales ==
+Está formado por los distritos municipales de:<ref name=imede/>
+{| border="0" align="center" style="border: 1px solid #999; background-color:#FFFFFF" text-align:"center"; cellspacing="3px" cellpadding="5px"
+|-align="center" bgcolor="#CCCCCC"
+! Nombre !! Código
+|-	
+|  valign=top| [[El Cercado (distrito)|El Cercado]] || valign=top| 07220301  
+|-bgcolor="#EFEFEF"
+| valign=top| [[Derrumbadero]] || valign=top| 07220302  
+|-
+|  valign=top| [[Batista (El Cercado)|Batista]] || valign=top| 07220303  
+|-bgcolor="#EFEFEF"
+|}
+
+== Historia ==
+La comunidad de '''El Cercado''' fue fundada en 1845 por el presidente Pedro Santana. Anteriormente perteneció al municipio de [[Bánica]] y se llamaba ''Sabana del Bohío''. En 1888 fue fundada la parroquia San Pedro Apóstol, en visita pastoral del Arzobispo Fernando Arturo de Meriño, quien había sido Presidente de la República en el periodo 1880-1882.
+
+El Padre de la Patria Francisco del Rosario Sánchez fue capturado en el paraje en el sector de Los Guineos paraje de Juan Santiago, Juan Santiago limita con El Cercado pero esa localidad hoy día es un Municipio perteneciente a la provincia de Elías Piñas, Sánchez fue capturado herido luego de ser traicionado por el comandante en jefe de puesto en el Cercado Sr. Rumardo De Óleo el día 1 de junio de 1861. En el lugar de la captura fue construida una plazoleta con la estatua del prócer de la patria.
+
+== Economía ==
+Las actividades económicas del municipio se basan en la agricultura de larga escala y el comercio. Las cosechas principales son habichuelas, gandules, cebolla,aguacate, naranja agrias y dulce, maíz, arroz, batata, auyama y café; otros frutos menores y vegetales también se producen allí. También hay personas que se dedican a las crianzas de ganado caprino, bobino, vacuno y otros, así como a la compra y venta de animales, funcionas un mercado municipal los días martes y viernes dónde se comercializan productos comestibles, ropa,cosméticos y otros.
+
+
+La población económicamente activa (PEA) consiste de 7,845 personas, de los cuales 5,803 (74%) están actualmente empleados. De esos empleados, 548 ( 9%) trabajan como servidores públicos. Actualmente el cercado es uno de los municipios más destacados de todo San Juan
+
+== Fiestas patronales ==
+Las fiestas patronales son el 29 de junio en honor a San Pedro, su santo patrón.
+
+== Fuentes ==
+# Plan Decenal del Municipio de El Cercado. Plan Decenal de Educación SEEBAC/ ADP/ EDUCA/ PLAN EDUCATIVO/ PNUD Sto. Dgo., noviembre de 1992
+# ONE 1993
+# Censo Nacional de Servidores Públicos. Datos Preliminares ONE. Marzo de 1998.
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|El cercado (San Juan)}}
+	
+{{Control de autoridades}}
+[[Categoría:Municipios de San Juan (República Dominicana)|El Cercado]]

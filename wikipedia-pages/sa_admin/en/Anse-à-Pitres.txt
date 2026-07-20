@@ -1,0 +1,128 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Anse-à-Pitres
+|nickname               =
+|native_name            = {{unbulleted list| <small>''{{lang|ht|Ansapit}}''</small>}}
+|settlement_type        = [[List of communes of Haiti|Commune]]
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = Anse-à-Pitres and Pedernales (DR) Markets.jpg
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+| mapframe = yes
+|mapsize                = 
+|map_caption            = 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            = Haiti <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_relief         =
+|pushpin_label_position = left
+|pushpin_map_caption    = Location in Haiti
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Haiti]]
+|subdivision_type1      = [[Departments of Haiti|Department]]
+|subdivision_name1      = [[Sud-Est (department)|Sud-Est]]
+|subdivision_type2      = [[Arrondissements of Haiti|Arrondissement]]
+|subdivision_name2      = [[Belle-Anse Arrondissement|Belle-Anse]]
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =
+|area_footnotes           =
+|area_total_km2           = 185.19<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         = 
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of       = 2015
+|population_footnotes   = <ref>{{Cite web|title=POPULATION TOTALE, POPULATION DE 18 ANS ET PLUS - MÉNAGES ET DENSITÉS ESTIMÉS EN 2015|url= https://www.haiti-now.org/wp-content/uploads/2021/01/Estimat_PopTotal_18ans_Menag2015-1.pdf}}</ref>
+|population_note                =
+|population_total               = 30,146
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =
+|population_blank1              =
+|population_blank2_title        =
+|population_blank2              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = −05:00
+|timezone_DST           = [[Eastern Time Zone|EDT]]
+|utc_offset_DST         = −04:00
+|coordinates            = {{coord|18|3|0|N|71|45|0|W|region:HT|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 20
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       = Postal code
+|postal_code            = HT 9340
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}}
+
+'''Anse-à-Pitres''' ({{IPA|fr|ɑ̃s a pitʁ}}; {{langx|ht|Ansapit}}), or '''''Anse-à-Pitre'''''<ref>{{cite web|title=National Geospatial-Intelligence Agency|url=http://geonames.nga.mil/namesgaz/ |website=GeoNames Search|access-date=3 June 2017}}</ref> is a [[List of communes of Haiti|commune]] in the [[Belle-Anse Arrondissement]], in the [[Sud-Est (department)|Sud-Est]] [[Departments of Haiti|department]] of [[Haiti]]. Its [[Dominican Republic–Haiti border|border]] crossing to [[Pedernales, Dominican Republic|Pedernales]] is one of the four chief land crossings to the [[Dominican Republic]].
+
+==References==
+{{Reflist}}
+
+{{Communes of Haiti}}
+{{Authority control}}
+
+{{DEFAULTSORT:Anse-a-Pitres}}
+[[Category:Communes of Sud-Est (department)]]
+[[Category:Dominican Republic–Haiti border crossings]]
+
+
+{{SudEst-geo-stub}}

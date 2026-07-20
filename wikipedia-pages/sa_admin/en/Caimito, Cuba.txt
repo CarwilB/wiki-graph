@@ -1,0 +1,99 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->| official_name            = Caimito
+| other_name               = 
+| native_name              = 
+| nickname                 = 
+| settlement_type          = [[Municipalities of Cuba|Municipality]]
+| motto                    = <!-- images and maps  ----------->
+| image_skyline            = Carretera Doble-Via Caimito-Guayabal.jpg
+| imagesize                = 
+| image_caption            = The road to Guayabal outside Caimito
+| image_flag               = Flag of Caimito, Cuba.svg
+| flag_size                = 
+| image_seal               = 
+| seal_size                = 
+| image_shield             = Coat_of_arms_of_Caimito.png
+| shield_size              = 120x90px
+| image_map                = Caimito (Cuban municipal map).png
+| map_caption              = Caimito municipality (red) within <br> Artemisa Province (yellow) and Cuba
+<!-- Location ------------------>| subdivision_type         = Country
+| subdivision_name         = {{CUB}}
+| subdivision_type1        = [[Provinces of Cuba|Province]]
+| subdivision_name1        = [[Artemisa Province|Artemisa]]
+| subdivision_type2        = 
+| subdivision_name2        = <!-- Politics ----------------->
+| government_footnotes     = 
+| government_type          = 
+| leader_title             = 
+| leader_name              = 
+| leader_title1            = 
+| leader_name1             = 
+| established_title        = Founded
+| established_date         = 1910<ref name=guije/>
+| established_title2       = <!-- Incorporated (town) -->
+| established_date2        = 
+| established_title3       = <!-- Incorporated (city) -->
+| established_date3        = <!-- Area    --------------------->
+| area_magnitude           = 
+| unit_pref                = 
+| area_footnotes           = <ref name=statoids/>
+| area_total_km2           = 238
+| area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+| area_water_km2           = <!-- Population   ----------------------->
+| population_as_of         = 2022
+| population_footnotes     = <ref name=citypopulation/>
+| population_note          = 
+| population_total         = 42,552
+| population_density_km2   = auto
+<!-- General information  --------------->| timezone                 = [[Eastern Time Zone|EST]]
+| utc_offset               = -5
+| timezone_DST             = 
+| utc_offset_DST           = 
+| coordinates              = {{coord|22|57|27|N|82|35|47|W|region:CU|display=inline,title}}
+| elevation_footnotes      = <!--for references: use <ref> </ref> tags-->
+| elevation_m              = 95
+<!-- Area/postal codes & others -------->| postal_code_type         = 
+| postal_code              = 
+| area_code                = +53-7
+| blank_name               = [[Köppen climate classification|Climate]]
+| blank_info               = [[Tropical monsoon climate|Am]]
+| website                  = 
+| footnotes                = 
+| image_blank_emblem       = Emblem of Caimito, Cuba.svg
+| blank_emblem_type        = Emblem
+}}
+ <!--Infobox ends-->
+'''Caimito''' is a municipality and town in [[Artemisa Province]] of [[Cuba]].
+The town was founded in 1820. The municipality of '''''Caimito del Guayabal''''' was created in 1910, based on the previously existing (1879–1902) municipality of Guayabal in the [[Pinar del Río Province]].<ref name=guije/> Since 1976, the official name is Caimito.
+
+==Geography==
+The municipality is divided into the villages of Caimito, Guayabal, Ceiba del Agua, Pueblo Nuevo, Rancho Grande, Capellanías, Vereda Nueva, Los Naranjos, Aguacate, Banes, Habana Libre and Menelao Mora.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/hcaimito/index.htm|title=Caimito|author=Guije.com|accessdate=2007-10-08|language=es}}</ref>
+
+==Demographics==
+In 2022, the municipality of Caimito had a population of 42,552.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|238|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-08}}</ref> it has a population density of {{convert|180|/km2|/sqmi|abbr=on}}.
+
+==Transport==
+Caimito, crossed by the [[Carretera Central (Cuba)|Carretera Central]], is served by [[Autopista A4 (Cuba)|A4 motorway]], passing some km north. From 2014, it counts a railway station on the new [[Havana]]-[[Guanajay]]-[[Artemisa]]/[[Mariel, Cuba|Mariel]] line, part of the [[Havana–Pinar del Río railway|Havana-Artemisa-Pinar del Río line]]. [[Playa Baracoa Airport]], serving Havana, is located in the municipal territory, and lies in front of [[Playa Baracoa]], a village belonging to the neighboring municipality of [[Bauta, Cuba|Bauta]].<ref>{{OSM|n|455624731|Playa Baracoa}}</ref><ref>{{OSM|n|259849770|Playa Baracoa Airport}}</ref>
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Caimito
+ | N  = ''[[Straits of Florida]]''
+ | E  = [[Bauta, Cuba|Bauta]]<br/>[[San Antonio de los Baños]]
+ | S  = [[Alquízar]]
+ | SW = [[Artemisa]]
+ | W  = [[Mariel, Cuba|Mariel]]<br/>[[Guanajay]]
+}}
+{{Municipalities in Artemisa}}
+
+[[Category:Populated places in Artemisa Province]]

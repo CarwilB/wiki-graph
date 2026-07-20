@@ -1,0 +1,69 @@
+{{Info/Município do Brasil
+<!-- GeoID=2411601 -->
+<!-- Cabeçalho -->| nome = São Bento do Norte
+| foto = São Bento do Norte-RN.jpg
+| leg_foto = Vista aérea do município
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de São Bento do Norte-RN, Brasil.png
+| bandeira = Bandeira São Bento do Norte-RN, Brasil.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = File:Hino-Oficial-da-Cidade-de-São-Bento-do-Norte-RN.ogg
+| aniversário = 25 de novembro
+| fundação = {{dtlink|31|10|1938|idade}}
+| emancipação = {{dtlink|25|11|1953|idade}}
+| gentílico = são-bento-Nortense
+| lema = 
+| prefeito = João Maria Montenegro da Silva
+| partido = [[Movimento Democrático Brasileiro (1980)|MDB]]
+| mandato_início = 2021
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 9
+| mapa = Brazil Rio Grande do Norte São Bento do Norte location map.svg
+| latP = S
+| latG = 05
+| latM = 10
+| latS = 19
+| lonP = O
+| lonG = 36
+| lonM = 05
+| lonS = 07
+| estado = Rio Grande do Norte
+| região_intermediária = Natal
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = João Câmara
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = Norte: [[Oceano Atlântico]]; Sul: [[Jandaíra (Rio Grande do Norte)|Jandaíra]] e [[Parazinho]]; Leste: [[Caiçara do Norte]]; e Oeste: [[Galinhos]].
+| dist_capital = <!-- Características geográficas --> 145
+| área = 288.761
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 dez. 2010|data=10 out. 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 3426
+| data_pop = [[IBGE ]] Estimativa 2024<ref name="IBGE_Pop_2024">{{citar web |url =https://www.ibge.gov.br/cidades-e-estados/rn/sao-bento-do-norte.html |título= Estimativa Populacional 2024| obra = Estimativa Populacional das cidades 2022 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=27 de novembro de 2024 |acessodata = 2 de janeiro de 2025}}</ref>
+| altitude = 16
+| clima = semi-árido
+| sigla_clima = <!-- Indicadores -->
+| CEP = 59592-000
+| idh = 0.555 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=4 de setembro de 2013}}</ref>
+| gini = 0,54
+| data_gini = 2020
+| pib = {{formatnum:549242.83}} mil
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/rn/sao-bento-do-norte/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=23 Dezembro 2024}}</ref>
+| pib_per_capita = 204407.46
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB"/>
+| site_prefeitura = {{url|http://saobentodonorte.rn.gov.br/}}
+| site_câmara = {{url|https://www.cmsaobentodonorte.rn.gov.br/}}
+}}
+'''São Bento do Norte''', município no estado do [[Rio Grande do Norte]] ([[Brasil]]), localizado na microrregião de João Câmara. De acordo com censo do  [[IBGE]] (Instituto Brasileiro de Geografia e Estatística), no ano 2022 sua população era em 3.304 habitantes. Área territorial de 289 km².
+
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso!
+-->
+{{Referências}}
+
+{{esboço-municípiosbr/Rio Grande do Norte}}
+{{Portal3|Rio Grande do Norte}}
+
+{{DEFAULTSORT:Sao Bento Norte}}
+[[Categoria:Municípios do Rio Grande do Norte]]
+[[Categoria:Fundações no Rio Grande do Norte em 1953]]

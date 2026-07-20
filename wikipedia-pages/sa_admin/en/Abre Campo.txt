@@ -1,0 +1,82 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Abre Campo
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|settlement_type        =  [[Municipalities of Brazil|Municipality]]
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 200px
+|image_caption          = 
+|image_flag             = File:Bandeira Abre Campo.jpg
+|flag_size = 
+|image_shield           = File:Coat of Arms of Abre Campo - MG - Brazil.png
+|image_map              = MinasGerais Municip AbreCampo.svg
+|mapsize                = 
+|map_caption            = Location in [[Minas Gerais]]
+|pushpin_map            = Brazil
+|pushpin_map_caption    = Location in [[Brazil]]
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Brazil}}
+|subdivision_type1      = [[Regions of Brazil|Region]] 
+|subdivision_name1      = [[Southeast Region, Brazil|Southeast]]
+|subdivision_type2      = [[States of Brazil|State]]
+|subdivision_name2      = [[Minas Gerais]]
+|subdivision_type3      = [[Mesoregion (Brazil)|Mesoregion]]
+|subdivision_name3      = [[Zona da Mata (Minas Gerais)|Zona da Mata]]
+|subdivision_type4      = [[Microregion (Brazil)|Microregion]]
+|subdivision_name4      = [[Microregion of Manhuaçu|Manhuaçu]]
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = Mayor
+|leader_name            = Márcio Moreira Victor<ref>{{cite web |url = http://www.eleicoes2012.info/marcio-victor/ |title = Eleições 2012 |access-date = 21 January 2013}}</ref>
+|established_title      = Founded
+|established_date       = July 27th, 1889
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                = metric
+|area_footnotes           = <ref name ="IBGE_area">{{cite web |url=https://www.ibge.gov.br/geociencias-novoportal/organizacao-do-territorio/estrutura-territorial/15761-areas-dos-municipios.html?t=destaques&c=3100302 |title=Área dos municípios | language=pt |trans-title=Area of the municipalities |publisher=[[Brazilian Institute of Geography and Statistics|Brazilian Institute of Geography and Statistics (IBGE)]] | access-date=2018-04-17}}</ref>
+|area_total_km2           = 470.551
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of               = 2020 <ref>[https://cidades.ibge.gov.br/brasil/mg/abre-campo/panorama IBGE 2020]</ref>
+|population_footnotes           = 
+|population_note                = (estimated)
+|population_total               = 13,444
+|population_density_km2         =
+<!-- General information  --------------->
+|timezone               = [[Time in Brazil|BRT]]
+|utc_offset             = &minus;3
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|18|03|S|42|28|40|W|region:BR|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 
+|elevation_ft           = <!-- accord. to Google Earth-->
+<!-- Area/postal codes & others -------->
+|postal_code_type         = [[Código de Endereçamento Postal|CEP]] postal code
+|postal_code              = 35365-000
+|area_code_type           = [[List of dialling codes in Brazil|Area code]]
+|area_code                = 31
+|blank_name               = '''[[Human Development Index|HDI]]''' <ref name ="IBGE_area"/>
+|blank_info               = 0,654
+|website                  = [https://www.abrecampo.mg.gov.br abrecampo.mg.gov.br]
+|footnotes                = 
+}}
+
+'''Abre Campo''' is a city in the [[Brazil]]ian state of [[Minas Gerais]]. The city belongs to the mesoregion of Zona da Mata and to the microregion of Manhuaçu. In 2020, its population was estimated to be 13,444.
+
+==See also==
+* [[List of municipalities in Minas Gerais]]
+
+==References==
+<references />
+
+{{Municipalities of Minas Gerais}}
+[[Category:Municipalities in Minas Gerais]]
+
+{{JuizdeFora-geo-stub}}

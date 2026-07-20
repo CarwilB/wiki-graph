@@ -1,0 +1,153 @@
+{{Ficha de entidad subnacional
+| nombre                     = Jaraguá do Sul
+| nombre_oficial             = Jaraguá do Sul
+| país                       = {{BRA}}
+| unidad                     = [[Anexo:Municipios de Brasil|Municipio]]
+| tipo_superior_1            = [[Regiones de Brasil|Región]]
+| superior_1                 = [[Región Sur de Brasil]]
+| tipo_superior_2            = [[Anexo:Estados de Brasil|Estado]]
+| superior_2                 = {{BRA|SC}}
+| tipo_superior_3            = [[Regiones geográficas intermedias e inmediatas|Intermedia]]
+| superior_3                 = [[Región Geográfica Intermedia de Joinville|Joinville]]
+| tipo_superior_4            = [[Regiones geográficas intermedias e inmediatas|Inmediata]]
+| superior_4                 = [[Región Geográfica Inmediata de Joinville|Joinville]]
+| bandera                    = 
+| escudo                     = 
+| imagen                     = Jaraguá do Sul Landscape.jpg
+| imagesize                  = 220px
+| pie_de_imagen              = Vista aérea de Jaraguá do Sul
+| mapa                       = 
+| tamaño_mapa                = 240px
+| pie_mapa                   = Localización de Jaraguá do Sul en Santa Catarina
+|mapa_loc                    = Brasil
+|campo1_nombre = [[Anexo:Regiones metropolitanas del Brasil|Región metropolitana]]
+|campo1 = [[Región metropolitana del Norte-Nordeste Catarinense|Norte-Nordeste Catarinense]]
+|campo2_nombre = Ciudades vecinas
+|campo2 = [[Blumenau]], [[Campo Alegre (Santa Catarina)|Campo Alegre]], [[Corupá]], [[Guaramirim]], [[Joinville]], [[Massaranduba]], [[Pomerode]], [[Rio dos Cedros]], [[São Bento do Sul]] y [[Schroeder (Santa Catarina)|Schroeder]]
+| clima                      = [[Clima subtropical|subtropical]] ([[Clasificación climática de Köppen|Cfa]])
+| superficie                 = 530.894
+| población                  = 182{{esd}}660
+| población_año              = [[Instituto Brasileño de Geografía y Estadística|IBGE]]/2022
+| densidad                   = 344.06
+| horario                    = [[UTC-3]]
+|fundación_hitos             = Emancipación
+|fundación_fechas            = {{fecha|25|7|1876|edad}}<br />{{fecha|26|3|1934|edad}}
+| lema                       = ''Grandeza pelo trabalho''<br>(en [[Portugués brasileño|portugués]]:''Grandeza para el trabajo'')
+| gentilicio                 = jaraguaense
+| código_postal_nombre       = [[Código postal]]
+| prefijo telefónico nombre  = [[Prefijo telefónico|Código de área]]
+<!-- Otros -->
+| altitud                    = 
+| IDH                        = {{creciente}} 0.803
+| IDH categoría              = <span style="color:#00CC00">'''Muy alto'''</span> [[PNUD]]/2010
+| dirigentes_títulos         = [[Alcalde|Prefecto]]
+| dirigentes_nombres         = José Jair Franzner  <small>(2021-2024)</small> ([[Movimiento Democrático Brasileño (1980)|MDB]])
+| PIB                        = 
+| PIB_per_capita             = [[R$]] 55{{esd}}108.89 <small>[[IBGE]]/2020</small>
+<!-- Sitio web -->
+| página web                 =  https://www.jaraguadosul.sc.gov.br/
+}}
+
+'''Jaraguá do Sul''' es un [[Anexo:Municipios de Brasil|municipio]] [[Brasil|brasileño]] del estado de [[Santa Catarina]]. Tiene una población estimada al 2022 de 182{{esd}}660 habitantes. Pertenece a la [[Región metropolitana del Norte-Nordeste Catarinense]].<ref>{{Cita web|url=https://www.ibge.gov.br/cidades-e-estados/sc/jaragua-do-sul.html|título=Jaraguá do Sul (SC) {{!}} Cidades e Estados {{!}} IBGE|fechaacceso=12 de Noviembre de 2023|sitioweb=www.ibge.gov.br}}</ref>
+
+== Toponimia ==
+El topónimo Jaraguá es de origen [[Lenguas tupí-guaraní|tupí-guaraní]] y significa "Señor del Valle".<ref>{{Cita libro|edición=3a edição revista e aperfeiçoada|título=Método moderno de tupi antigo: a língua do Brasil dos primeiros séculos|editorial=Global editora|fecha=2005|fechaacceso=12 de Noviembre de 2023|isbn=978-85-260-1058-1|serie=Série Antropologia & educação|nombre=Eduardo de Almeida|apellidos=Navarro}}</ref>
+
+== Historia ==
+El territorio donde se ubica el actual municipio, entre el [[Río Itapocu]] y el [[Río Jaraguá]], fue loteado en 1875 por el ingeniero y coronel [[Emílio Carlos Jourdan]] en la época del [[Imperio del Brasil]]. En esta época se instaló un molino y un [[Ingenio azucarero]].
+
+Con la llegada de la República de Brasil en 1893, comenzó la colonización del lugar por parte de inmigrantes húngaros, alemanes e italianos. 
+
+Como distrito, Jaraguá fue parte de los municipios de [[São Francisco do Sul]], Paraty (actualmente [[Araquari]]) y [[Joinville]], hasta su emancipación el 26 de marzo de 1934. Adoptó el nombre de Jaraguá do Sul el 31 de diciembre de 1943 para diferenciarlo de [[Jaraguá (Goiás)|Jaraguá]] del estado de [[Goiás]].<ref>{{Cita web|url=https://www.jaraguadosul.sc.gov.br/sintese-da-historia-da-cidade-jaragua-do-sul|título=Prefeitura de Jaraguá do Sul|fechaacceso=12 de Noviembre de 2023|sitioweb=www.jaraguadosul.sc.gov.br}}</ref>
+
+== Demografía ==
+''Evolución poblacional''
+<timeline>
+Colors=
+  id:lightgrey value:gray(0.9)
+  id:darkgrey  value:gray(0.7)
+  id:sfondo value:rgb(1,1,1)
+  id:barra value:rgb(0.6,0.7,0.8)
+
+ImageSize = width:600 height:373
+PlotArea = left:50 bottom:50 top:30 right:30
+DateFormat = x.y
+Period = from:0 till:200000
+TimeAxis = orientation:vertical
+AlignBars = justify
+ScaleMajor = gridcolor:darkgrey increment:10000 start:0
+ScaleMinor = gridcolor:lightgrey increment:5000 start:0
+BackgroundColors = canvas:sfondo
+
+BarData=
+  bar:1940 text:1940
+  bar:1950 text:1950
+  bar:1960 text:1960
+  bar:1970 text:1970
+  bar:1980 text:1980
+  bar:1991 text:1991
+  bar:1996 text:1996
+  bar:1999 text:1999
+  bar:2000 text:2000
+  bar:2001 text:2001
+  bar:2002 text:2002
+  bar:2003 text:2003
+  bar:2004 text:2004
+  bar:2021 text:2021
+
+PlotData=
+  color:barra width:20 align:left
+
+  bar:1940 from:0 till: 23495
+  bar:1950 from:0 till: 27240
+  bar:1960 from:0 till: 23197
+  bar:1970 from:0 till: 30246
+  bar:1980 from:0 till: 48534
+  bar:1991 from:0 till: 76994
+  bar:1996 from:0 till: 93082
+  bar:1999 from:0 till: 102580
+  bar:2000 from:0 till: 108489
+  bar:2001 from:0 till: 112245
+  bar:2002 from:0 till: 115121
+  bar:2003 from:0 till: 118199
+  bar:2004 from:0 till: 124661
+  bar:2021 from:0 till: 184579
+
+PlotData=
+
+  bar:1940 at: 23495 fontsize:S text: 23495 shift:(-8,5)
+  bar:1950 at: 27240 fontsize:S text: 27240 shift:(-13,5)
+  bar:1960 at: 23197 fontsize:S text: 23197 shift:(-13,5)
+  bar:1970 at: 30246 fontsize:S text: 30246 shift:(-13,5)
+  bar:1980 at: 48534 fontsize:S text: 48534 shift:(-13,5)
+  bar:1991 at: 76994 fontsize:S text: 76994 shift:(-13,5)
+  bar:1996 at: 93082 fontsize:S text: 93082 shift:(-13,5)
+  bar:1999 at: 102580 fontsize:S text: 102580 shift:(-15,5)
+  bar:2000 at: 108489 fontsize:S text: 108489 shift:(-15,5)
+  bar:2001 at: 112245 fontsize:S text: 112245 shift:(-15,5)
+  bar:2002 at: 115121 fontsize:S text: 115121 shift:(-15,5)
+  bar:2003 at: 118199 fontsize:S text: 118199 shift:(-15,5)
+  bar:2004 at: 124661 fontsize:S text: 124661 shift:(-15,5)
+  bar:2021 at: 184579 fontsize:S text: 184579 shift:(-15,5)
+
+TextData=
+  fontsize:S pos:(20,20)
+  text:Fuonte IBGE
+
+</timeline>
+
+== Jaraguaenses destacados ==
+* [[Aloísio Sebastião Boeing]], [[venerable]]
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+* [https://www.jaraguadosul.sc.gov.br/ Sitio del municipio]
+* [https://www.jaraguadosul.sc.leg.br/ Sitio de la cámara del municipio]
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Santa Catarina]]
+[[Categoría:Localidades establecidas en 1934]]
+[[Categoría:Brasil en 1934]]
+[[Categoría:Toponimia guaraní de Brasil]]

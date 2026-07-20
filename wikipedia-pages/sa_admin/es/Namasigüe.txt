@@ -1,0 +1,149 @@
+{{Ficha de entidad subnacional
+| nombre = Namasigüe
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| mapa_loc = Honduras
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = José Cirilo García
+| subdivisión = 9 aldeas y 105 caseríos
+| elevación_media = 40
+| superficie = 216.8
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 33888
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0609__namasigue/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| población_urb = 7320
+| densidad = 156.3
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''Namasigüe''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]].
+<ref>{{Cita web
+ |url=https://temp.ine.gob.hn/wp-content/uploads/2025/02/Namasigue-Choluteca-2018.pdf
+ |título=Namasigüe, Choluteca: Indicadores Municipales 2018
+ |autor=Instituto Nacional de Estadística (INE)
+ |fecha=2018
+ |editor=INE Honduras
+ |formato=PDF
+ |idioma=es
+}}</ref>
+
+== Toponimia ==
+La palabra es ''Amacihuarl'' en mexicano “Agua de las Mujeres”.<ref name="Fiallos">Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref>
+
+== Límites ==
+Está situado al sur del departamento de Choluteca y sus terrenos abarcan hasta el Golfo de Fonseca.
+
+{| class="wikitable"
+|+Límites de Namasigüe
+!Orientación
+!Límite
+|-
+| rowspan="2" |Norte
+|Municipio de [[Santa Ana de Yusguare]], Choluteca
+|-
+|Municipio de [[Choluteca]], Choluteca
+|-
+|Sur
+|Municipio de [[El Triunfo (Honduras)|El Triunfo]], Choluteca
+|-
+| rowspan="2" |Este
+|Municipio de El Triunfo, Choluteca
+|-
+|Municipio de [[El Corpus]], Choluteca
+|-
+|Oeste
+|[[Golfo de Fonseca]]<ref>http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/namasigue.pdf Datos de organización territorial de Honduras</ref>
+|}
+
+== Historia ==
+En 1791, en el recuento de población de 1791 figuraba como pueblo de Choluteca.
+
+En 1887, en el censo de 1887 estaba como municipio.<ref name="Fiallos" />
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 17,121 (50.5%)
+| valor1 = 50.5
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 16,767 (49.5%)
+| valor2 = 49.5
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 10,579 (31.2%)
+| valor1 = 31.2
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 21,277 (62.8%)
+| valor2 = 62.8
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 2,032 (6%)
+| valor3 = 6
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 26,568 (78.4%)
+| valor1 = 78.4
+| color1 = #109618
+| etiqueta2 = Urbano: 7,320 (21.6%)
+| valor2 = 21.6
+| color2 = #FF9900
+}}
+Namasigüe tiene una población actual de 33,888 habitantes. De la población total, el 50.5% son hombres y el 49.5% son mujeres. Casi el 21.6% de la población vive en la zona urbana.<ref name="INE"/>
+
+== División política ==
+Aldeas: 9 (2013)
+
+Caseríos: 105 (2013) 
+{| class="wikitable"
+|+Aldeas de Namasigüe
+!Código
+!Aldea
+|-
+|060901
+|Namasigüe (cabecera del municipio)
+|-
+|060902
+|San Bernardo
+|-
+|060903
+|San Francisco
+|-
+|060904
+|San Isidro
+|-
+|060905
+|San Jerónimo
+|-
+|060906
+|San Rafael
+|-
+|060907
+|Santa Irene
+|-
+|060908
+|Tierra Blanca
+|-
+|060909
+|Yorolán
+|-
+|
+|El Quebracho
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Choluteca]]

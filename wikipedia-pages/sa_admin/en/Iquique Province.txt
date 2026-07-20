@@ -1,0 +1,93 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Iquique
+| official_name           = 
+| native_name             = Provincia de Iquique
+| native_name_lang        = es
+| settlement_type         = [[Provinces of Chile|Province]]
+| image_skyline           = Vista de Iquique, Chile, 2016-02-11, DD 20.JPG
+| image_alt               =
+| image_caption           = Iquique
+| nickname                =
+| image_flag                    = Bandera de Iquique.svg
+| image_seal              = Logo de la Gobernación Provincial de Iquique.svg
+| motto                   =
+| image_map               = Provincia de Iquique.svg
+| mapsize                 = 175px
+| map_alt                 = Location in the Tarapacá Region
+| map_caption             = Location in the Tarapacá Region
+| pushpin_map             = Chile
+| pushpin_map_alt         = Location in Chile
+| pushpin_mapsize         = 175<!--omit "px"-->
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|20|12|50|S|70|9|9|W|type:adm2nd_region:CL-TA|display=inline,title}}
+| coordinates_footnotes   =
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Chile}}
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = {{flag|Tarapacá}}
+| parts_type              = [[Communes of Chile|Communes]]
+| parts                   = [[Iquique]]<br>[[Alto Hospicio]]
+| established_title       = 
+| established_date        =
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Iquique]]
+| government_footnotes = <ref name="Gobernadores">{{cite web|url=http://www.subdere.gov.cl/1510/w3-article-67516.html |access-date=18 March 2011 |title=Gobierno de Chile: Gobernadores |work=[[Government of Chile]] |language=es |url-status=dead |archive-url=https://web.archive.org/web/20110707010623/http://www.subdere.gov.cl/1510/w3-article-67516.html |archive-date= 7 July 2011 }}</ref>
+| leader_party            = 
+| leader_title            = [[Presidential Provincial Delegate]]
+| leader_name             = None
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{cite web|url=http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/dpa_completa.pdf |format=PDF |title=Territorial division of Chile |access-date=18 March 2011 |publisher=[[National Statistics Institute (Chile)|National Statistics Institute]] |year=2007 |language=es |url-status=dead |archive-url=https://web.archive.org/web/20130308201322/http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/DPA_COMPLETA.pdf |archive-date= 8 March 2013 }}</ref>
+| area_total_km2          = 2835.3
+| area_rank               = 2
+| elevation_footnotes     = 
+| elevation_max_m         =
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 275042
+| population_as_of        = 2012 census
+| population_rank         = 1
+| population_density_km2  = auto
+| population_blank1_title = Urban
+| population_blank1       = 214,586
+| population_blank2_title = Rural
+| population_blank2       = 1,833
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1          = 108,897
+| demographics1_title2    = Women
+| demographics1_info2       = 107,522
+| timezone                = [[Time in Chile|CLT]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-time.htm |access-date=26 September 2010 |title=Chile Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archive-date=11 September 2007 }}</ref>
+| utc_offset              = -4
+| timezone_DST            = [[Time in Chile|CLST]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-summer-time.htm |access-date=26 September 2010 |title=Chile Summer Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archive-date=11 September 2007 }}</ref>
+| utc_offset_DST          = -3
+| postal_code_type        =
+| postal_code             =
+| area_code_type          =
+| area_code               = 56 + 57
+| website                 =
+| footnotes               =
+}}
+
+'''Iquique Province''' ({{langx|es|Provincia de Iquique}}) is one of two [[Provinces of Chile|provinces]] in the northern [[Chile]]an [[Regions of Chile|region]] of [[Tarapacá Region|Tarapacá]]. Its capital is the port city of [[Iquique]].
+
+==History==
+Until October 2007, the Province of Iquique was composed of 7 communes: Alto Hospicio, Camina, Colchane, Huara, Iquique, Pica and Pozo Almonte, but since then, with the creation of the Region of Arica and Parinacota, much of the province, specifically the municipalities of Huara, Camina, Colchane, Pozo Almonte and Pica, was transferred administratively to Tamarugal Province, leaving Iquique Province consists of two communes.{{cn|date=January 2023}}
+
+==Geography and demography==
+According to the 2012 census by the [[National Statistics Institute (Chile)|National Statistics Institute]] (''INE''), the province spans an area of {{convert|2835.3|sqkm|0|abbr=on}} and had a population of 275,042 inhabitants, giving it a population density of {{convert|76.3|PD/sqkm|0|abbr=on}}. Between the 1992 and 2002 censuses, the population grew by 30.8% (50,959 persons).<ref name= "INE"/>
+
+==Administration==
+As a [[province]], Iquique is a second-level [[administrative division of Chile]], which is further divided into two [[Communes of Chile|communes]] (''comunas''): the capital Iquique and its suburb [[Alto Hospicio]]. The province is administered by the presidentially appointed regional delegate.<ref name="Gobernadores"/>
+
+==References==
+{{Commons category|Iquique Province}}
+{{Reflist}}
+
+{{Communes in Tarapacá Region}}
+{{Provinces of Chile}}
+{{Authority control}}
+
+[[Category:Iquique Province| ]]
+[[Category:Provinces of Tarapacá Region]]
+[[Category:Provinces of Chile]]

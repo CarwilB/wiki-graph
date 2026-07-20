@@ -1,0 +1,89 @@
+{{Ficha de entidad subnacional
+|nombre                = Municipio de San Juan Lajarcia
+|país                  = [[México]]
+|unidad                = [[Municipios de México|Municipio]]
+|tipo_superior_1       = [[Organización territorial de México|Estado]]
+|superior_1            = [[Oaxaca]]
+|tipo_superior_2       = [[Regiones de Oaxaca|Región]]
+|superior_2            = [[Región Sierra Sur|Sierra sur]]
+|tipo_superior_3       = [[Distritos de Oaxaca|Distrito]]
+|superior_3            = [[Distrito de Yautepec|Yautepec]]
+|imagen                = 
+|pie_de_imagen         = 
+|mapa                  = {{Map draw|geotype=geoshape|width=250|height=250|align=center|zoom=11|fill=#4D87CA|fill-opacity=0.1}}
+
+|capital_denominación  = Cabecera municipal
+|capital               = [[San Juan Lajarcia]]
+|dirigentes_títulos    = Presidente municipal
+|dirigentes_nombres    = 
+|subdivisión           = 3 localidades
+|fundación             = 
+|patrón                = [[San Juan Bautista]]
+|fiestas_mayores       = 24 de junio
+
+|superficie            = 108.61
+|superficie_post       = <ref name="INEGI">{{cita web |url=http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |título=México en cifras. Oaxaca |autor=INEGI |fechaacceso=septiembre de 2015 |fecha=2010 |urlarchivo=https://web.archive.org/web/20131029194731/http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |fechaarchivo=29 de octubre de 2013 }}</ref>
+|población             = 715
+|población_año         = 2010
+|población_post        = <ref name="INEGI" />
+|altitud               = 900
+|elevación_alta        = 1200
+|elevación_baja        = 600
+|horario               = [[UTC|UTC -6]]
+
+|código_postal         = 
+|prefijo telefónico    = 
+|página web            = 
+}}
+El '''municipio de San Juan Lajarcia''' es uno de los [[Anexo:Municipios de Oaxaca|570 municipios]] que conforman al estado [[México|mexicano]] de [[Oaxaca]]. Pertenece al [[distrito de Yautepec]], dentro de la [[Región Sierra Sur|región sierra sur]]. Su cabecera es la localidad de [[San Juan Lajarcia]].<ref>{{cita web
+ | url       = http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20204a.html
+ | título       = Oaxaca. San Juan Lajarcia
+ | fechaacceso       = 29 de octubre de 2015
+ | autor       = INAFED
+ | fecha       = 2012
+ | fechaarchivo       = 18 de enero de 2017
+ | urlarchivo       = https://web.archive.org/web/20170118024646/http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20204a.html
+ | deadurl       = yes
+ }}</ref>
+
+== Geografía ==
+El municipio abarca 108.61 km² y se encuentra a una altitud promedio de 900 {{esd|[[m s. n. m.]]}}, oscilando entre 1200 y 600 {{esd|[[m s. n. m.]]}}<ref name="INEGI" /><ref>{{cita web
+ | url       = http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20204.pdf
+ | título       = Pontuario de información municipal. San Juan Lajarcia
+ | fechaacceso       = 29 de octubre de 2015
+ | autor       = INEGI
+ | fecha       = 2010
+ | urlarchivo       = https://web.archive.org/web/20160304130319/http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20204.pdf
+ | fechaarchivo       = 4 de marzo de 2016
+ }}</ref>
+
+== Demografía ==
+
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de San Juan Lajarcia contaba con 3 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Oaxaca|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197933.pdf|fechaacceso=enero de 2026|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2026|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|202040001
+|'''[[San Juan Lajarcia]]'''
+| align="right" |411
+|-
+|202040003
+|El Coyul
+| align="right" |184
+|-
+|202040005
+|Las Minas
+| align="right" |39
+|-
+! colspan="2" |Total municipal
+!634
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipio de San Juan Lajarcia| ]]

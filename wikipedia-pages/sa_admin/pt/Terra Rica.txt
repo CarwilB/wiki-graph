@@ -1,0 +1,66 @@
+{{Info/Município do Brasil
+<!-- GeoID=4127304 -->
+<!-- Cabeçalho -->| nome = Terra Rica
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão Terra Rica.jpg
+| bandeira = TerraRicaFlag.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = [[4 de dezembro]]
+| fundação = {{nowrap|{{dtlink|26|11|1954|idade}}}}
+| gentílico = terra-riquense
+| lema = 
+| prefeito = Agnaldo De Souza Costa<ref>[https://www.otempo.com.br/eleicoes/2024/candidatos/parana/terra-rica/prefeito/agnaldo-11 </ref>
+| partido = [[Partido Progressistas (2023)|PP]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Parana Municip TerraRica.svg
+| latP = S
+| latG = 22
+| latM = 42
+| latS = 32
+| lonP = O
+| lonG = 52
+| lonM = 37
+| lonS = 01
+| estado = Paraná
+| mesorregião = [[Mesorregião do Noroeste Paranaense|Noroeste Paranaense]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Paranavaí|Paranavaí]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = ''Norte:'' [[Teodoro Sampaio]] (SP), [[Euclides da Cunha Paulista]]; ''Sul:'' [[Guairaçá]]; ''Leste:'' [[Paranavaí]]; ''Oeste:'' [[Nova Londrina]], [[Diamante do Norte]], [[Itaúna do Sul]] (todos municípios paranaenses).
+| dist_capital = 556
+<!-- Características geográficas -->| área = 700.587
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)|wayb=20191019162946}}</ref>
+| população = 14961
+| data_pop = Estimativa [[IBGE]]/[[2025]]<ref name="IBGE_Pop_2025">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/pr/terra-rica.html |título=Terra Rica (PR) — população estimada |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=2026-06-03|wayb=20250503124056 }}</ref>
+| altitude = 420 metros
+| clima = Tropical controlado por massas de ar tropicais e polares
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.746 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:148128.717}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010|wayb=20170812035138 }}</ref>
+| pib_per_capita = 9904.96
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+'''Terra Rica''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Paraná]].
+
+==História==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Terra Rica foi elevado à categoria de município e distrito pela lei estadual n.º 253, de 26 de novembro de 1954.
+<ref>{{citar web |url= http://biblioteca.ibge.gov.br/visualizacao/dtbs/parana/terrarica.pdf |title=Terra Rica - Histórico (IBGE) |first= |last=|work=biblioteca.ibge.gov.br |year=2010 |accessdate=31 de outubro de 2012}}</ref>
+
+{{Referências}}
+
+==Ligações externas==
+* {{oficial|http://www.terrarica.pr.gov.br}}
+
+{{Esboço-municípiosbr/Paraná}}
+{{Portal3|Brasil|Paraná|Região Sul do Brasil}}
+{{Controle de autoridade}}
+[[Categoria:Terra Rica| ]]
+[[Categoria:Fundações no Paraná em 1954]]

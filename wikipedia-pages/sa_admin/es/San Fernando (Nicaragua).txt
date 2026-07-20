@@ -1,0 +1,88 @@
+{{Ficha de entidad subnacional
+| nombre = San Fernando
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|NS}}
+| imagen = Divisando el este.jpg
+| pie_de_imagen = Vista desde la subida del cerro [[Mogotón]] hacia [[Jalapa (Nicaragua)|Jalapa]]
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.7500
+ |longitude= -86.2975
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| subdivisión = 14 comunidades
+| elevación_media = 733
+| superficie = 236.0
+| superficie_puesto = 97
+| número_entidades = 153
+| población_puesto = 113
+| población_año = 2023
+| población = 12550
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/nueva_segovia/0520__san_fernando/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 5713
+| densidad = 53.18
+| gentilicio = Sanfernandino, -na
+| fundación = 7 de octubre de 1897 ({{Edad|7|10|1897}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 38500
+}}
+'''San Fernando''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Nueva Segovia|Nueva Segovia]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte con la República de [[Honduras]], al sur con el municipio de [[Ciudad Antigua]], al este con los municipios de [[Jalapa (Nicaragua)|Jalapa]] y [[El Jícaro (Nicaragua)|El Jícaro]] y al oeste con el municipio de [[Mozonte]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=26 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 245 kilómetros de la capital de [[Managua]].
+
+Cuenta con elevaciones que oscilan entre los 760 y 1800 m s. n. m.
+
+== Historia ==
+San Fernando fue fundado el 7 de octubre de 1897, bajo el gobierno del general [[José Santos Zelaya]], los documentos que registran su nacimiento narran la existencia del municipio a través de dos familias de origen español, los Herrera y los Ortez, siendo el propietario de estas tierras en aquella época y fundador del pueblo el Sr. Fernando Herrera.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 6,388 (50.9%)
+| valor1 = 50.9
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 6,162 (49.1%)
+| valor2 = 49.1
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 6,837 (54.5%)
+| valor1 = 54.5
+| color1 = #109618
+| etiqueta2 = Urbano: 5,713 (45.5%)
+| valor2 = 45.5
+| color2 = #FF9900
+}}
+San Fernando tiene una población actual de 12,550 habitantes. De la población total, el 50.9% son hombres y el 49.1% son mujeres. Casi el 45.5% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[Clima tropical de sabana|clima de sabana tropical]], con precipitaciones que oscilan entre los 23 a 24&nbsp;°C. La precipitación pluvial anual es de 1400 mm.<ref name='INIFOM'/>
+
+Las diferentes rocas reconocidas en el área presentan un relieve muy característico de cada unidad, los esquistos generalmente presentan cerros en forma piramidal, cuando se observan meteorizados y erosionados originan un relieve del tipo semicircular originados por la erosión lineal, en torno. La flora del municipio es considerada como un recurso potencial ya que predomina el [[Pinus|pino]] como una fuente de divisas.<ref name='INIFOM'/>
+
+== Localidades ==
+El municipio está compuesto por 14 comunidades, los cuales están distribuidos en dos microrregiones:<ref>Alcaldía de San Fernando.</ref>
+* Microrregión I: El Casco urbano de San Fernando, Santa Rosa, Achuapa, Alalí, Orosí, y Salamají.
+* Microrregión II: Santa Clara, La Puerta, El Prado, Aranjuez, Apali, San Nicolás, El Ural, y El Amparo.
+
+== Economía ==
+Las principales actividades económicas que predominan en el municipio son la ganadería de [[Bos primigenius taurus|vacuno]], así como la agricultura de granos básicos y el cultivo del [[Coffea|café]].<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Nueva Segovia]]
+[[Categoría:Municipios de Nueva Segovia]]

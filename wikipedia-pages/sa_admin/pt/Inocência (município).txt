@@ -1,0 +1,139 @@
+{{mais fontes||Brasil|geo|data=janeiro de 2019}}
+{{Info/Município do Brasil
+<!-- GeoID=5004403 -->
+<!-- Cabeçalho -->
+| nome                 = Inocência
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = Brasao inocencia.JPG
+| bandeira             = Band_Inocencia.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 4 de abril
+| fundação             = {{nowrap|{{dtlink|4|4|1959|idade}}}}
+| emancipação          = 4 de abril de 1959
+| gentílico            =[[wikt:inocenciense|inocenciense]] ou [[wikt:inocentino|inocentino]]
+| lema                 = 
+| padroeiro            = [[Bom Jesus da Lapa]]
+| prefeito             = Toninho da Cofapi<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=13 de janeiro de 2025}}</ref>
+| partido              = [[PP]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Inocencia location map.svg
+| latP                 = S | latG = 19 | latM = 43 | latS = 33
+| lonP                 = O | lonG = 51 | lonM = 55 | lonS = 48
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Leste de Mato Grosso do Sul|Leste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião         = [[Microrregião de Paranaíba|Paranaíba]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = Norte: [[Paranaíba]] e [[Cassilândia]] - Sul: [[Água Clara]] - Leste: [[Três Lagoas]] e [[Selvíria]] - Oeste: [[Camapuã]]
+| dist_capital         = 312
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 5776.261 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 13º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:0.72}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 56º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Inocência (sede), Morangas, São José do Sucuriú e São Pedro
+| população            = 7687 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 61º]]
+| data_pop             = [[IBGE]]/[[2014]]<ref name="IBGE_Pop_2014">{{citar web |url= http://www.ibge.gov.br/home/estatistica/populacao/estimativa2014/|título=Estimativa populacional 2014 IBGE| obra = Estimativa populacional 2014|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data=1 de julho de 2014 |acessodata = 29 de agosto de 2014}}</ref>
+| altitude             = 502
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[tropical de altitude]]
+| sigla_clima          = Cwa
+<!-- Indicadores -->
+| idh                  = 0.772 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 14º]]
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.43}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 26º]] 
+| data_gini            = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1#|arquivodata=30 de abril de 2012|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:132802.689}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 48º]]
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 17608.42
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+'''Inocência''' é um [[município]] [[brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]], [[Região Centro-Oeste do Brasil|Região Centro-Oeste]] do país.
+
+== Etimologia ==
+
+O topônimo do município foi adotado numa homenagem ao romance ''[[Inocência (livro)|Inocência]]'', de [[Visconde de Taunay|Alfredo de Escragnolle Taunay]], Visconde de Taunay, cujo enredo retrata fatos e costumes da região.
+
+== História ==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+
+As terras ocupadas pelo Município de Inocência, foram inicialmente povoadas por criadores de gado, que aí aportaram em busca de melhores pastagens para seus rebanhos. As terras foram loteadas e, iniciadas as vendas, foram aparecendo as primeiras construções. Surgia então um novo povoado que tomou a denominação de Bocaina, que depois passou-se a chamar São Pedro. Em 1943 o povoado teve posteriormente sua denominação alterada para Inocência. Com seus estabelecimentos já alicerçados, começaram a ressentir as dificuldades de comunicação e comercialização, pois se encontravam distantes dos núcleos urbanos. Em vista disso, tomaram a iniciativa de fundar, nestas paragens, um povoado e com essa finalidade, em [[1947]], reuniram-se Juventino Campos, João Barbosa Ferreira, Symphrônio Júnior, José Maria Albino, Francisco Albino, Antônio Ferreira Leal, Lauriston, Amâncio Nepomuceno, Franklin Gomes da Silva, Pedro Paulo de Queiróz, Alexandre Batista Garcia, Júlio José dos Santos, Aurélio Valadão e outros, estabelecendo, na ocasião, as bases empreendimento. Em nome de Alexandre Batista Garcia, Pedro Vilela Valadão e Raul Rached foram adquiridas, da Fazenda Bocaina (de propriedade de Emílio José da Costa), 4 alqueires goianos de terras, localizadas entre os córregos Sanfona e Viola. Em 1951, em imóvel cedido por Alexandre Batista Garcia, foi instalada a primeira escola, tendo como professora Maria Aurora de Oliveira. Nesse mesmo ano, por iniciativa e colaboração de seus habitantes, erigiu-se a Igreja Católica.
+
+Em [[17 de novembro]] de [[1958]], pela Lei Estadual nº 1129, Inocência é elevada à categoria de município, desmembrado de Paranaíba. Em [[1977]] o município passa a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+== Formação administrativa ==
+
+Em divisões territoriais datadas de [[31 de julho]] de [[1936]] e [[31 de julho]] de [[1937]], figura no Município de Santana do Paranaíba o Distrito de São Pedro. Pelo Decreto-Lei Estadual nº 208, de [[26 de outubro]] de [[1938]], o Município de Santana do Paranaíba passou a denominar-se Paranaíba. Pelo Decreto-Lei Estadual nº 545, de [[31 de dezembro]] de [[1943]], o Distrito de São Pedro passou a denominar-se Inocência. No quadro para vigorar no período entre [[1954]] e [[1958]], o Distrito de Inocência permanece no Município de Paranaíba. Elevado à categoria de município com a denominação de Inocência, pela Lei Estadual nº 1129, de [[17 de novembro]] de [[1958]], desmembrado de Paranaíba. Sede no antigo Distrito de Inocência. Constituído de 2 Distritos: Inocência e São Pedro. Foi instalado em [[4 de abril]] de [[1959]]. Em divisão territorial datada de [[1 de julho]] de [[1960]], município é constituído de 2 Distritos: Inocência e São Pedro. Pela Lei Estadual nº 2070, de [[14 de dezembro]] de [[1963]], é criado o Distrito de São José do Sucuriú e incorporado ao Município de Inocência.
+
+== Geografia ==
+
+O município está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Leste de Mato Grosso do Sul|Leste de Mato Grosso do Sul]] ([[Microrregião de Paranaíba]]). Localiza-se a uma [[latitude]] 19º43'32" [[sul]] e a uma [[longitude]] 51º55'48" [[oeste]]. Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Greenwich]]. 
+
+;Distâncias:
+
+*{{fmtn|337|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]])
+*{{fmtn|737|km}} da capital federal ([[Brasília]]).
+
+=== Solo ===
+
+No município de Inocência há ocorrência predominante de Luvissolos e Nitossolos, além de ser significativa a presença de Neossolos principalmente ao sul da sede municipal, e de Latossolos. Salienta-se que há dominância da textura média e arenosa/média (caso dos Podzólicos), prevalecendo a baixa fertilidade natural dos solos.
+
+=== Relevo ===
+
+Ocupa uma superfície de {{fmtn|5776.261|km²}} e está a uma altitude de {{fmtn|502|m}}. Apresentando topos colinosos, ressaltos topográficos e algumas cuestas no extremo norte do município, esta topografia é entremeada de áreas planas e tabulares, sendo que a leste do município, o rio, que é seu limite, apresenta planície de acumulação em sua margem. O município de Inocência encontra-se na Região dos  Planaltos Arenítico-Basálticos Interiores, dividindo-se em duas unidades geomorfológicas: Divisores Tabulares dos Rios Verde e Pardo e Patamares da Serra do Aporé.
+
+Apresenta relevo plano, geralmente elaborado por várias fases de retomada erosiva; Modelados de Dissecação – D, com  relevos elaborados pela ação fluvial e áreas planas resultante de acumulação fluvial sujeita a inundações periódicas.
+
+=== Clima ===
+
+Está sob influência do clima tropical de altitude ([[Cwa]]), sendo as temperaturas médias dos meses mais frios são maiores que 15&nbsp;°C e menores que 20&nbsp;°C. O período seco estende-se de dois a três  meses. O período chuvoso mais intenso de setembro a abril. A precipitação anual varia de 1.500 a 1.700mm anuais. 
+ 
+=== Hidrografia ===
+
+Está sob influência da [[Bacia do Rio da Prata]] (Sub-[[Bacia do Rio Paraná]]). Principais rios:
+
+*Rio das Morangas: afluente pela margem esquerda do rio Sucuriú, no município de Inocência.
+*Rio Pântano: afluente pela margem direita do rio Paraná; limite entre os municípios de Aparecida do Taboado e Inocência, no seu alto curso.
+*Rio Quitéria: afluente pela margem direita do rio Paraná, sua nascente está no município de Inocência; limite entre os municípios de Inocência e Paranaíba.
+*Rio São José: afluente pela margem esquerda do rio Sucuriú, no município de Inocência.
+*Rio São Mateus: afluente pela margem esquerda do rio Sucuriú, no município de Inocência.
+*Rio São Pedro: afluente pela margem esquerda do rio Sucuriú, no município de Inocência.
+*Rio Sucuriú: afluente pela margem direita do rio Paraná. Extensão: 450&nbsp;km. Nasce no município de Costa Rica, na divisa com o estado de Goiás e deságua pouco acima da cidade de Três Lagoas. Apresenta muitas cachoeiras, principalmente na parte superior. Faz divisa entre o município de Inocência e Três Lagoas e Inocência e Água Clara.
+
+=== Vegetação ===
+
+Predominando e bem distribuídas quase que equitativamente no município de Inocência, encontram-se a pastagem plantada e a Cerrado Arbóreo Denso (Cerradão). A lavoura é pouco expressiva, concentrando-se na porção nordeste do município.
+
+=== Demografia ===
+
+Sua população estimada em [[2011]] era de 7.653 habitantes segundo o [[IBGE]], sendo portanto o 61º maior município em população do estado. Subdivisões deste município são a sede, Morangas, São José do Sucuriú e São Pedro.<ref>{{citar web|url=https://www.inocencia.ms.gov.br/portal/cidade/2/O-Munic%C3%ADpio|titulo=Formação Administrativa|acessodata=10/10/2019|publicação=www.inocencia.ms.gov.br|arquivourl=http://archive.is/taws6|arquivodata=10/10/2019}}}</ref>
+
+{{Referências|col=2}} {{Sem imagem}}
+
+== Ligações externas ==
+
+{{Correlatos
+|commons =Inocência
+}}
+*[http://www.inocencia.ms.gov.br/ Sítio da prefeitura]
+*[http://www.wikimapia.org/#lat=-19.7253422&lon=-51.9268799&z=11&l=9&m=b Inocência no Wikimapia]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso em 1959]]

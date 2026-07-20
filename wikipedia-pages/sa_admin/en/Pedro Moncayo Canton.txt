@@ -1,0 +1,260 @@
+{{Infobox settlement
+<!--See Template:Infobox settlement for additional fields that may be available-->
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = Pedro Moncayo<!-- at least one of the first two fields must be filled in -->
+|official_name          = Pedro Moncayo Canton
+|other_name             =
+|native_name            = Cantón Pedro Moncayo <!-- if different from the English name -->
+|native_name_lang       = es <!-- Use ISO639 code, e.g. "fr" for French.
+                           If there is more than one native name, in different languages,
+                           enter those names using {{lang}}, instead -->
+|nickname               = 
+|settlement_type        = Canton <!--such as Town, Village, City, Borough etc.-->
+|total_type             = <!-- to set a non-standard label for total area and population rows -->
+|motto                  =
+|translit_lang1= 
+|translit_lang1_type=
+|translit_lang1_info=
+|translit_lang1_type1=
+|translit_lang1_info1=
+|translit_lang1_type2=
+|translit_lang1_info2=
+|translit_lang1_type3=
+|translit_lang1_info3=
+|translit_lang1_type4=
+|translit_lang1_info4=
+|translit_lang1_type5=
+|translit_lang1_info5=	
+|translit_lang1_type6=
+|translit_lang1_info6=
+
+|translit_lang2=
+|translit_lang2_type=
+|translit_lang2_info=
+|translit_lang2_type1=
+|translit_lang2_info1=
+|translit_lang2_type2=
+|translit_lang2_info2=
+|translit_lang2_type3=
+|translit_lang2_info3=
+|translit_lang2_type4=
+|translit_lang2_info4=
+|translit_lang2_type5=
+|translit_lang2_info5=
+|translit_lang2_type6=
+|translit_lang2_info6=
+<!-- images and maps  ----------->
+|image_skyline          = Cochasquí View from the site to the southwest 5.jpg
+|imagesize              = 
+|image_caption          = View from [[Cochasquí]] to the southwest
+|image_flag             = Flag of Pedro Moncayo.svg
+|flag_size              = 100px
+|image_seal             = 
+|seal_size              = 70px
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = Pichincha in Ecuador.svg
+|mapsize                =
+|map_caption            = Location of Pichincha Province in Ecuador.
+|image_map1             = Pedro Moncayo in Pichincha (Ecuador).svg
+|mapsize1               =
+|map_caption1           = Pedro Moncayo Canton in Pichincha Province
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            = <!-- name of a location map as per Template:Location_map -->
+|pushpin_label_position = <!-- position of the pushpin label: left, right, top, bottom, none -->
+|pushpin_map_caption    =
+|pushpin_mapsize        =
+<!-- Location ------------------>
+|subdivision_type       = Country <!--Country-->
+|subdivision_name       = {{ECU}} <!--the name of the country-->
+|subdivision_type1      = Province
+|subdivision_name1      = [[Pichincha Province|Pichincha]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+|subdivision_type3      = 
+|subdivision_name3      = 
+|subdivision_type4      = 
+|subdivision_name4      =
+<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
+|seat_type              = Canton seat
+|seat                   = [[Tabacundo]]
+|parts_type             = Parishes
+|parts_style            = para <!-- =list (for list), coll (for collapsed list), para (for paragraph format)
+                               Default is list if up to 5 items, coll if more than 5-->
+|parts                  = <!-- parts text, or header for parts list -->
+|p1                     = [[Tabacundo]]
+|p2                     = [[La Esperanza, Pedro Moncayo|La Esperanza]]
+|p3                     = [[Malchinguí]]
+<!-- etc. up to p50: for separate parts to be listed--> 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        = Municipality
+|leader_party           = 
+|leader_title           = Mayor
+|leader_name            =  <!--add &nbsp; (no-break space) to leader names to disable automatic links-->
+|leader_title1          =  
+|leader_name1           =
+|leader_title2          =
+|leader_name2           =
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|established_title      = <!-- Settled -->
+|established_date       = 
+|established_title1     =  <!-- Incorporated (town) -->
+|established_date1      = 
+|established_title2     = Creation of the canton <!-- Incorporated (city) --> 
+|established_date2      = 1911-09-26
+|established_title3     =  
+|established_date3      =
+|extinct_title          =
+|extinct_date           =
+|founder                =
+|named_for              = [[Pedro Moncayo]]
+<!-- Area    --------------------->
+|area_magnitude         = <!-- use only to set a special wikilink --> 
+|unit_pref                = <!--Enter: Imperial, to display imperial before metric-->
+|area_footnotes           =
+|area_total_km2           = 334.3<!-- ALL fields with measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox settlement for details on unit conversion-->
+|area_water_km2           =
+|area_total_dunam         = <!--Used in Middle East articles only-->
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Elevation -------------------------->
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+|elevation_max_m            = 
+|elevation_max_ft           =
+|elevation_min_m            = 
+|elevation_min_ft           =
+<!-- Population   ----------------------->
+|population_as_of               = 2022 census 
+|population_footnotes           = <ref>[http://www.citypopulation.de/en/ecuador/admin/pichincha/1704__pedro_moncayo/ Citypopulation.de] Population and area of Pedro Moncayo Canton</ref>
+|population_notes               = 
+|population_total               = 40483
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_est                 =
+|pop_est_as_of                  =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =
+|population_blank1              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+|demographics_type1             =
+|demographics1_footnotes        =
+|demographics1_title1           =
+|demographics1_info1            =
+|demographics1_title2           =
+|demographics1_info2            =
+|demographics1_title3           =
+|demographics1_info3            =
+|demographics1_title4           =
+|demographics1_info4            =
+|demographics1_title5           =
+|demographics1_info5            =
+|demographics_type2             =
+|demographics2_footnotes        =
+|demographics2_title1           =
+|demographics2_info1            =
+|demographics2_title2           =
+|demographics2_info2            =
+|demographics2_title3           =
+|demographics2_info3            =
+|demographics2_title4           =
+|demographics2_info4            =
+|demographics2_title5           =
+|demographics2_info5            =
+<!-- General information  --------------->
+|timezone1               = [[Ecuador Time|ECT]]
+|utc_offset1             = -5
+|timezone1_DST           = 
+|utc_offset1_DST         = 
+<!-- Area/postal codes & others -------->
+|postal_code_type       = Postal code <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            = EC1704 (''new format''), P04 (''old format'')
+|postal2_code_type      =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal2_code           =
+|area_code_type         =
+|area_code              = 593 2
+|twin1                  =
+|twin1_country          =
+|twin2                  =
+|twin2_country          =
+|twin3                  =
+|twin3_country          =
+|twin4                  =
+|twin4_country          =
+|twin5                  =
+|twin5_country          =
+|twin6                  =
+|twin6_country          =
+|twin7                  =
+|twin7_country          =
+|blank_name_sec1        =
+|blank_info_sec1        =
+|blank1_name_sec1       =
+|blank1_info_sec1       =
+|blank2_name_sec1       =
+|blank2_info_sec1       =
+|blank3_name_sec1       =
+|blank3_info_sec1       =
+|blank4_name_sec1       =
+|blank4_info_sec1       =
+|blank5_name_sec1       =
+|blank5_info_sec1       =
+|blank6_name_sec1       =
+|blank6_info_sec1       =
+|blank_name_sec2        = 
+|blank_info_sec2        =
+|blank1_name_sec2       = 
+|blank1_info_sec2       =
+|blank2_name_sec2       = 
+|blank2_info_sec2       =
+|blank3_name_sec2       = 
+|blank3_info_sec2       =
+|blank4_name_sec2       = 
+|blank4_info_sec2       =
+|blank5_name_sec2       = 
+|blank5_info_sec2       =
+|blank6_name_sec2       = 
+|blank6_info_sec2       =
+|website                = http://www.pedromoncayo.gov.ec
+|footnotes              = 
+}} 
+
+'''Pedro Moncayo''' is a [[canton (administrative division)|canton]] in the north of the [[Pichincha Province]], [[Ecuador]]. The seat of the canton is the city of [[Tabacundo]]. The canton is named after politician [[Pedro Moncayo]]. The canton is separated by the [[Mojanda]] volcano from the canton of [[Otavalo Canton|Otavalo]] in the province of [[Imbabura Province|Imbabura]] in the north. It borders the same-province cantons of [[Cayambe Canton|Cayambe]] and [[Quito Canton|Quito]].
+
+{{coord|0|13|S|78|31|W|source:eswiki_region:EC|display=title}}
+{{Cantons of Pichincha}}
+
+==References==
+{{Reflist}}
+
+{{Cantons of Ecuador}}
+
+[[Category:Cantons of Pichincha Province]]

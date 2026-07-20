@@ -1,0 +1,102 @@
+{{Info/Município do Brasil
+<!-- GeoID=2807303 -->
+<!-- Cabeçalho -->
+| nome = Telha
+| preposição = de
+| foto = 
+| leg_foto = 
+| apelido = 
+<!-- Dados gerais -->
+| brasão = Brasão Municipal de Telha, Sergipe.jpg
+| bandeira = Bandeira de Telha SE.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Telha
+| aniversário = 20 de janeiro
+| fundação = {{dtlink|20|1|1964|idade}}
+| gentílico = Telhense
+| lema = 
+| padroeiro = [[Nossa Senhora do Perpétuo Socorro]]
+| prefeito = Lucas Freire Vasco
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato = 2028
+<!-- Localização -->
+| mapa = Sergipe Municip Telha.png
+| latP = S
+| latG = 10
+| latM = 12
+| latS = 28
+| lonP = O
+| lonG = 36
+| lonM = 53
+| lonS = 02
+| estado = Sergipe
+| mesorregião = [[Mesorregião do Leste Sergipano|Leste Sergipano]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Propriá|Propriá]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Propriá]], [[Cedro de São João]], [[Amparo de São Francisco]]
+| dist_capital = 107
+<!-- Características geográficas -->
+| área = 49.452
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 3274 <!--favor manter o formato, sem pontos nem espaços-->
+| data_pop = [[IBGE]]/[[2022]]<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude = 23
+| clima = [[Tropical]]
+| sigla_clima = 
+<!-- Indicadores -->
+| idh = 0.604 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=26 de agosto de 2013}}</ref>
+| pib = {{formatnum:15994.559}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 5440.33
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site                = [https://www.telha.se.gov.br/ telha.se.gov.br]
+}}
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+'''Telha''' é um [[Município (Brasil)|município brasileiro]] do [[estado (subdivisão)|estado]] de [[Sergipe]]. Está localizado no Leste Sergipano. É o terceiro município menos populoso do estado.<ref>https://www.ibge.gov.br/cidades-e-estados/se/telha.html</ref>
+
+== Demografia ==
+{{Historical populations
+|title        = População Histórica
+|align        =
+|clear        =
+|direction    =
+|percentages  = 
+|state        = 
+|type         = 
+|shading      = 
+|width        = 
+|subbox       =
+|pop_name     =
+|year_name    =
+|percent_name =
+|source       = 
+|graph-pos    =
+|graph-width  =
+|graph-height =
+|percol       =
+|cols         =
+|perrow       =
+|rows         =
+|1991 |2205
+|2000 |2638
+|2010 |2957
+|2022 |3274
+||footnote=Censo demográfico brasileiro<ref name="Censo demográficobrasileiro">{{cite web|url=https://www.ibge.gov.br/cidades-e-estados/se/|título=IBGE, censo demográfico e população: Telha }}</ref>
+}}
+
+==Ver também==
+*[[Lista de municípios de Sergipe por população]]
+
+{{Referências}}
+
+==Ligações externas==
+* [http://www.telha.se.gov.br/ Página da Prefeitura Municipal]
+
+{{Portal3|Sergipe|Brasil}}
+{{esboço-municípiosbr/Sergipe}}
+
+[[Categoria:Municípios de Sergipe]]

@@ -1,0 +1,117 @@
+{{Info/Município do Brasil
+<!-- GeoID=2911006 -->
+<!-- Cabeçalho -->| nome = Floresta Azul
+| preposição = de
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão_de_Floresta_Azul.png
+| bandeira = Bandeira de Floresta Azul.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 23 de abril
+| fundação = 
+| gentílico = [[wikt:floresta-azulense|floresta-azulense]]<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/floresta-azul.html|título=Cidades e Estados|publicado=IBGE|acessodata=16 de setembro de 2024|wayb=20241227150801}}</ref>
+| lema = 
+| prefeito = Hermanio Leonardo Santos da Silva (Bambu)<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/eleicoes/2024/noticia/2024/12/31/prefeito-de-floresta-azul-ba-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|título=Prefeito de Floresta Azul (BA) toma posse nesta quarta (1º); veja lista de vereadores eleitos|publicado=g1|acessodata=17 de fevereiro de 2025}}</ref><ref>{{Citar web|url=https://www.otempo.com.br/eleicoes/2024/candidatos/bahia/floresta-azul/prefeito/bambu-40|título=Eleições 2024 – Perfil do Prefeito Eleito Bambu|publicado=O Tempo|acessodata=17 de fevereiro de 2025}}</ref>
+| partido = [[Partido Socialista Brasileiro (1985)|Partido Socialista Brasileiro]] [PSB]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Bahia Municip FlorestaAzul.svg
+| latP = S
+| latG = 14
+| latM = 51
+| latS = 36
+| lonP = O
+| lonG = 39
+| lonM = 39
+| lonS = 36
+| estado = Bahia
+| mesorregião = [[Mesorregião do Sul Baiano|Sul Baiano]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Ilhéus-Itabuna|Ilhéus-Itabuna]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_intermediária = 
+| região_imediata = 
+| região_metropolitana = 
+| vizinhos = [[Almadina]], [[Ibicaraí]], [[Itapé]], [[Itaju do Colônia]], [[Santa Cruz da Vitória]] e [[Ibicuí]]
+| dist_capital = <!-- Características geográficas -->
+| área = 321.013
+| área_ref = IBGE/2022<ref name="IBGE_Área_2022">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/floresta-azul.html|título=Cidades e Estados|publicado=IBGE|acessodata=25 de junho de 2023|wayb=20241227150801}}</ref>
+| área_urbana = {{fmtn|0.85}}
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/panorama |título=Meio Ambiente |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=13 de fevereiro de 2023|wayb=20240914173618 }}</ref>
+| população = 11059 <!-- MANTER A POPULAÇÃO DO CENSO 2022 -->
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| altitude = 
+| população_ref = <ref name="IBGE">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/floresta-azul.html|título=Cidades e Estados {{!}} Floresta Azul|publicado=IBGE|acessodata=18 de maio de 2026|wayb=20241227150801}}</ref>
+| população_pos = [[Lista de municípios da Bahia por população|BA: 305º]]
+| população_est = 11455 <!-- ATUALIZAR AS ESTIMATIVAS AQUI -->
+| população_est_em = 2025<ref name="IBGE">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/floresta-azul.html|título=Cidades e Estados {{!}} Floresta Azul|publicado=IBGE|acessodata=18 de maio de 2026|wayb=20241227150801}}</ref>
+| clima = 
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.557 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=25 de agosto de 2013|wayb=20160831043940 }}</ref>
+| pib = {{formatnum:101546.31}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2021/base/base_de_dados_2010_2021_xlsx.zip|titulo=Produto Interno Bruto dos Municípios - 2010 à 2021|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de janeiro de 2025|wayb=20260518201915}}</ref>
+| pib_pos = [[Lista de municípios da Bahia por PIB|BA: 331º]]
+| pib_per_capita = 9648.10
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| imagem_montagem = {{multiple image
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 280
+ | image1 = Floresta Azul 2.jpg
+ | caption1 = Entrada da [[cidade]] de Floresta Azul
+ | imagem2 = Floresta Azul 4.jpg
+ | caption2 = Parte da cidade
+ | image3 = Floresta Azul 55 anos 10* Festival de Motocross (34307182555).jpg
+ | caption3 = Festival de Motocross no município
+ | image4 = Floresta Azul.jpg
+ | caption4 = Avenida 23 de Abril, Centro
+ | color  = white
+ | footer =
+}}
+}}
+'''Floresta Azul''' é um [[Municípios do Brasil|município brasileiro]] do [[Interior da Bahia|interior]] e [[Sul da Bahia|sul]] do [[Unidades federativas do Brasil|estado]] da [[Bahia]], na microrregião Ilhéus-Itabuna.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/panorama|titulo=TERRITÓRIO|acessodata=2024-09-16|website=cidades.ibge.gov.br|wayb=20240914173618}}</ref> Está localizado na [[Região Cacaueira]].<ref>{{Citar web|url=http://amurc.com/noticias/24-floresta-azul/1765-piscicultura-e-uma-alternativa-viavel-em-floresta-azul|titulo=Piscicultura é uma alternativa viável em Floresta Azul|data=2014-02-11|acessodata=2025-02-17|website=AMURC|lingua=pt-br}}</ref><ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/historico|titulo=História & Fotos|acessodata=2025-02-17|website=cidades.ibge.gov.br|wayb=20241227161132}}</ref>
+
+O nome '''Floresta Azul''' tem origem controversa. Alguns dizem que foi inspirado na observação da mata fechada, enquanto outros atribuem sua origem às baronesas em flor que havia no Rio Salgado, que corta o município.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/historico|titulo=História & Fotos|acessodata=2024-09-16|website=cidades.ibge.gov.br|wayb=20241227161132}}</ref>
+
+== Demografia ==
+=== População ===
+Segundo o [[Censo 2022]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), a [[Lista de municípios da Bahia por população (2022)|população]] do município de Floresta Azul foi de 11 059 habitantes. Já na [[Lista de municípios da Bahia por população (2024)|estimativa de 2024]], a população foi de 11 442 habitantes.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/panorama|titulo=Panorama {{!}} POPULAÇÃO|acessodata=2024-09-16|website=cidades.ibge.gov.br|wayb=20240914173618}}</ref>
+
+==== População (Censo 2010) ====
+No [[Censo demográfico do Brasil de 2010|Censo 2010]] do Instituto Brasileiro de Geografia e Estatística, o município de Floresta Azul registrou uma [[Lista de municípios da Bahia por população (2010)|população]] de 10 660 habitantes.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/pesquisa/23/27652?detalhes=true|titulo=Pesquisas {{!}} Censo 2010|acessodata=2024-09-16|website=cidades.ibge.gov.br|wayb=20241227155525}}</ref>
+
+==== População (urbana e rural) ====
+Segundo o Censo 2010 do Instituto Brasileiro de Geografia e Estatística, a população urbana de Floresta Azul foi de 7 343 habitantes e a [[Zona rural|rural]] de 3 317 habitantes.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/pesquisa/23/27652?detalhes=true|titulo=Pesquisas {{!}} Censo 2010|acessodata=2024-09-16|website=cidades.ibge.gov.br|wayb=20241227155525}}</ref>
+
+== Geografia ==
+
+=== Bioma ===
+O [[bioma]] de Floresta Azul é a [[Mata Atlântica]].<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/floresta-azul/panorama|titulo=MEIO AMBIENTE|acessodata=2025-02-17|website=cidades.ibge.gov.br|wayb=20240914173618}}</ref><ref>{{Citar web|url=https://jornalgrandebahia.com.br/tag/floresta-azul/|titulo=Arquivo de Município de Floresta Azul|acessodata=2025-02-17|website=Jornal Grande Bahia (JGB)|lingua=pt-PT|wayb=20220816162602}}</ref>
+<gallery mode="packed" heights="170px">
+Ficheiro:Tarde linda.jpg|[[Paisagem natural]] em Floresta Azul, no final da [[tarde]]
+</gallery>
+
+== Economia ==
+A economia do município de Floresta Azul sempre esteve baseada na cultura do [[cacau]] e na [[pecuária]]. Durante décadas, as grandes [[Fazenda|fazendas]] foram fundamentais para a renda local, sobretudo no auge da produção de cacau nos anos 1970, quando o município teve um crescimento expressivo. Todavia, a chegada da praga conhecida como [[vassoura-de-bruxa]] na década de 1980 afetou drasticamente a lavoura cacaueira, levando ao declínio econômico e ao [[êxodo rural]]. Desde então, o município tem buscado reinventar-se economicamente, contando com atividades diversificadas, como [[agricultura]], pecuária e comércio.<ref>{{Citar web|url=http://amurc.com/noticias/24-floresta-azul/1765-piscicultura-e-uma-alternativa-viavel-em-floresta-azul|titulo=Piscicultura é uma alternativa viável em Floresta Azul|data=2014-02-11|acessodata=2025-02-17|website=AMURC|lingua=pt-br}}</ref><ref>{{Citar web|url=https://jornalgrandebahia.com.br/tag/floresta-azul/|titulo=Arquivo de Município de Floresta Azul|acessodata=2025-02-17|website=Jornal Grande Bahia (JGB)|lingua=pt-PT|wayb=20220816162602}}</ref>
+
+Além do cacau, há também em Floresta Azul a produção de [[banana]] e [[seringueira]].<ref>{{Citar web|url=https://jornalgrandebahia.com.br/tag/floresta-azul/|titulo=Arquivo de Município de Floresta Azul|acessodata=2025-02-17|website=Jornal Grande Bahia (JGB)|lingua=pt-PT|wayb=20220816162602}}</ref>
+
+Os setores de comércio e serviços têm uma participação significativa na economia do município.<ref>{{Citar web|url=https://jornalgrandebahia.com.br/tag/floresta-azul/|titulo=Arquivo de Município de Floresta Azul|acessodata=2025-02-17|website=Jornal Grande Bahia (JGB)|lingua=pt-PT|wayb=20220816162602}}</ref>
+<gallery mode="packed" heights="170px">
+Ficheiro:Floresta Azul 3.jpg|Avenida 23 de Abril, Centro de Floresta Azul
+Ficheiro:Só Deus.jpg|Floresta Azul no final da tarde
+</gallery>
+
+{{Referências}}
+
+== Ligações externas ==
+* [http://florestaazul.ba.gov.br/ Página da Prefeitura Municipal]
+
+{{Municípios da Bahia}}
+{{Esboço-municípiosbr/Bahia}}
+{{Portal3|BahiaBahia}}
+
+[[Categoria:Floresta Azul| ]]
+[[Categoria:Fundações na Bahia em 1962]]

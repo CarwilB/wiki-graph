@@ -1,0 +1,122 @@
+{{Infobox settlement
+<!--See Template:Infobox Settlement for additional fields that may be available-->
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = Montrouis
+|official_name          = 
+|other_name             =
+|native_name            =  <!-- if different from the English name -->
+|nickname               = 
+|settlement_type        = [[Communal section]]
+|total_type             = <!-- to set a non-standard label for total area and population rows -->
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            = Haiti
+|pushpin_relief         =
+|pushpin_label_position = 
+|pushpin_map_caption    = Location in Haiti
+|pushpin_mapsize        =
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Haiti.svg|25px]] [[Haiti]]
+|subdivision_type1      = [[Departments of Haiti|Department]]
+|subdivision_name1      = [[Artibonite (department)|Artibonite]]
+|subdivision_type2      = [[Arrondissements of Haiti|Arrondissement]]
+|subdivision_name2      = [[Saint-Marc Arrondissement|Saint-Marc]]
+<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
+|seat_type              =
+|seat                   =
+|parts_type             =
+|parts_style            = <!-- =list (for list), coll (for collapsed list), para (for paragraph format)
+                               Default is list if up to 5 items, coll if more than 5-->
+|parts                  = <!-- parts text, or header for parts list -->
+|p1                     =
+|p2                     = <!-- etc. up to p50: for separate parts to be listed--> 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =  <!--add   (no-break space) to leader names to disable automatic links-->
+|leader_title1          =  
+|leader_name1           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                = <!--Enter: Imperial, to display imperial  before metric-->
+|area_footnotes           =
+|area_total_km2           = <!-- ALL fields with measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+<!-- Elevation -------------------------->
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+|elevation_max_m            = 
+|elevation_max_ft           =
+|elevation_min_m            = 
+|elevation_min_ft           =
+<!-- Population   ----------------------->
+|population_as_of               =
+|population_footnotes           =
+|population_note                =
+|population_total               = 18,419
+|population_density_km2         = <!--For automatic calculation, any density field may contain: auto -->
+|population_density_sq_mi       =
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coor_type              = <!-- can be used to specify what the coordinates refer to -->
+|coordinates            = {{coord|18|57|2|N|72|42|16|W|region:HT|display=inline,title}}
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|website                = 
+|footnotes              = 
+}}
+
+'''Montrouis''' is a coastal [[communal section]] in [[Haiti]], located in the department of [[Artibonite (department)|Artibonite]],<ref>{{cite web|url=https://www.fallingrain.com/world/HA/11/Bois_Moquette.html |title=Montrouis, Haiti Page |accessdate=7 May 2014}}</ref> south of [[Saint-Marc]]. Montrouis is one of the most important beach tourism destinations in Haiti, with several well renowned hotels and resorts, including the [[Moulin-sur-Mer]]. The town is located on the [[Côtes-des-Arcadins]], one of Haiti's longest stretches of pure white sand beaches. It is also an exceptional place for sailing and fishing.
+
+==25th Session of the IARP General Assembly==
+The 25th session of the [[Amateur radio international operation]] general assembly was held in Montrouis in December 1994. This session adopted a convention allowing amateur radio operators to operate in an IARP member country temporarily while using a permit issued by another member country.<ref>{{cite web|url=https://www.oas.org/ext/en/main/oas/our-structure/agencies-and-entities/citel/Alliances/protocol-of-amendment-to-the-inter-american-convention-on-the-international-amateur-radio-permit-iarp-1994|title=Protocol of Amendment to the Inter-American Convention on the International Amateur Radio Permit (IARP) - 1994|accessdate=28 Dec 2023}}</ref>
+
+==References==
+{{Reflist}}
+
+{{Authority control}}
+
+[[Category:Communal sections of Haiti]]
+[[Category:Populated places in Ouest (department)]]
+[[Category:Populated coastal places in Haiti]]
+
+
+{{Ouest-geo-stub}}

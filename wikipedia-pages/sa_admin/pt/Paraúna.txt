@@ -1,0 +1,74 @@
+{{ver desambig|este=um município brasileiro|o rio|Rio Paraúna}}
+{{Info/Município do Brasil
+<!-- GeoID=5216403 -->
+<!-- Cabeçalho -->
+| nome                 = Paraúna
+| foto                 = Paraúna - State of Goiás, Brazil - panoramio.jpg
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = 
+| bandeira             = Bandeira Paraúna.jpg
+| link_hino            = 
+| aniversário          = 
+| fundação             = {{dtlink|10|11|1934|idade}}
+| gentílico            = Paraunense
+| lema                 = ''União e trabalho''
+| prefeito             = Paulo José Martins
+| partido              = [[Republicanos (partido político)|Republicanos]]
+| fim_mandato          = 2024
+| mapa                 = Goias Municip Parauna.svg
+| latP                 = S 
+| latG = 16 
+| latM = 56 
+| latS = 52
+| lonP                 = O 
+| lonG = 50 
+| lonM = 26 
+| lonS = 56
+| estado               = Goiás
+| mesorregião          = [[Mesorregião do Sul Goiano|Sul Goiano]]
+| microrregião         = [[Microrregião do Vale do Rio dos Bois|Vale do Rio dos Bois]]
+| região_metropolitana = 
+| vizinhos             = [[Jandaia]], [[Acreúna]], [[Santo Antônio da Barra]], [[Rio Verde]], [[Montividiu]], [[Ivolândia]], [[Cachoeira de Goiás]], [[Aurilândia]], [[São João da Paraúna]] e [[Palminópolis]]
+| dist_capital         = 150 
+<!-- Características geográficas -->
+| área                 = 3779.385
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/cidadesat/xtras/perfil.php?codmun=521640 |título=Paraúna |autor=IBGE |acessodata=11 de julho de 2013|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 10980
+| altitude             = 
+| clima                = 
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.742 <!--favor manter o formato-->
+| pib                  = {{formatnum:194825.555}} mil
+| pib_per_capita       = 17267.18
+| leg_foto             = 
+| link_brasão          = 
+| link_bandeira        = 
+| site                 = http://www.parauna.go.gov.br/
+   
+<!-- Localização -->
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| data_pop             = Censo [[IBGE]]/[[2010]]<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/default.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| Aniversário = 10 de novembro
+}}
+
+'''Paraúna''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Goiás]], [[Região Centro-Oeste do Brasil|Região Centro-Oeste]] do país. Sua população estimada em 2020 era de aproximadamente {{formatnum|10980}} habitantes.
+
+== Topônimo ==
+{{VT|Topônimos tupis no Brasil}}
+"Paraúna" é um termo de origem [[Língua tupi|tupi]] e significa "rio preto", através da junção dos termos ''pará'' ("rio") e ''un'' ("preto")<ref>http://www.fflch.usp.br/dlcv/tupi/vocabulario.htm</ref>. Ou ainda, Rio (pará) de Pedra (una).
+
+{{referências}}
+
+{{Esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Municípios de Goiás]]
+[[Categoria:Fundações em Goiás em 1934]]
+[[Categoria:Topônimos de origem tupi em Goiás]]

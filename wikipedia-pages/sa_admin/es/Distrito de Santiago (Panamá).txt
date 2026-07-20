@@ -1,0 +1,92 @@
+{{Ficha de entidad subnacional
+| nombre         = Santiago
+| nombre_oficial = Santiago
+| unidad         = [[Anexo:Distritos de Panamá|Distrito]]
+| capital        = [[Santiago de Veraguas]]
+| tipo_superior_1 = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+| superior_1      = [[Provincia de Veraguas|Veraguas]]
+| tipo_div_1      = Corregimientos
+| div_1           = 16
+| lema            =
+| bandera         = no
+| escudo          = no
+| mapa            = Panamá - Veraguas - Santiago.svg
+| tamaño_mapa     = 250px
+| imagen          = 
+| pie_de_imagen   = 
+|mapa1 = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=8}}
+| latitud         = 
+| longitud        = 
+| superficie      = 970.9
+| superficie_post = <ref name="censo">{{cita web |url=http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=27 de octubre de 2014 |obra=Censos de 1990 a 2010 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+| elevación_media =
+| campo1_nombre   = Temperatura
+| campo1          = 
+| campo2_nombre   = Distancia
+| campo2          = 
+| fundación       = 1824
+| población       = 110,245 
+| población_año   = 2014
+| población_post  = <ref name="censo"/>
+| gentilicio      = Santiagueño
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = Eric Jaén
+| página web      =
+}}
+El '''distrito de Santiago''' es una de las divisiones que conforma la [[provincia de Veraguas]], situado en la República de [[Panamá]].
+
+== Historia ==
+La Ciudad de Santiago es la capital de la Provincia de Veraguas.
+
+== Geografía ==
+=== División político-administrativa ===
+
+Está conformado por 16 [[corregimiento]]s:
+
+* [[Santiago de Veraguas|Santiago]] (cabecera)
+* [[La Colorada (Veraguas)|La Colorada]]
+* [[La Peña (Veraguas)|La Peña]]
+* [[La Raya de Santa María]]
+* [[Ponuga]]
+* [[San Pedro del Espino]]
+* [[Canto del Llano]]
+* [[Los Algarrobos (Veraguas)|Los Algarrobos]]
+* [[Carlos Santana Ávila (Veraguas)|Carlos Santana Ávila]]
+* [[Edwin Fábrega (Veraguas)|Edwin Fábrega]]
+* [[San Martín de Porres (Veraguas)|San Martín de Porres]]
+* [[Urracá (Veraguas)|Urracá]]
+* [[Rodrigo Luque]]
+* [[Nuevo Santiago]]
+* [[Santiago Este]]
+* [[Santiago Sur]]
+
+=== Ubicación ===
+<center>
+{| class="wikitable" width ="60%" border = 2 align="center"
+|-
+| width ="35%" align="center" | ''Noroeste:'' [[Distrito de Cañazas]]
+| width ="30%" align="center" | ''Norte:'' [[Distrito de San Francisco (Veraguas)|Distrito de San Francisco]] y [[Distrito de Calobre]]
+| width ="35%" align="center" | ''Noreste:'' [[Distrito de Calobre]] y [[Provincia de Coclé]]
+|-
+| width ="10%" align="center" | ''Oeste:'' [[Distrito de La Mesa]], [[Distrito de Río de Jesús]] y [[Distrito de Montijo]]
+| width ="35%" align="center" | [[Archivo:Rosa de los vientos.svg|75px]]
+| width ="30%" align="center" | ''Este:'' [[Distrito de Atalaya]], [[Provincia de Coclé]] y [[Provincia de Herrera]]
+|-
+| width ="35%" align="center" | ''Suroeste:'' [[Distrito de Montijo]]
+| width ="30%" align="center" | ''Sur:'' [[Distrito de Mariato]] y [[Provincia de Herrera]]
+| width ="35%" align="center" | ''Sureste:'' [[Provincia de Herrera]]
+|}</center>
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+[https://web.archive.org/web/20080402031024/http://www.santiagoenlinea.es/ Información turística de la ciudad]
+
+{{Control de autoridades}}
+[[Categoría:Distritos de Veraguas|Santiago]]

@@ -1,0 +1,131 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Capachica
+| native_name             = Qapachiqa
+| native_name_lang        = qu<!-- ISO 639-2 code e.g. "qu" for Quechua -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = Capachica.jpg
+| image_alt               = 
+| image_caption           = Capachica peninsula
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Capachica in the [[Puno Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Puno Region|Puno]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Puno Province|Puno]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = Capachica
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Ascencion Laquise Humpire
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 117.06
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3860
+| population_footnotes    = 
+| population_total        = 10320
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 210105
+| website                 = 
+| footnotes               = 
+}}
+'''Capachica District''' is one of fifteen [[Districts of Peru|districts]] of the province [[Puno Province|Puno]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=April 23, 2008 }}''. Retrieved April 11, 2008.</ref> Its seat is Capachica.
+
+== Ethnic groups ==
+The people in the district are mainly [[Indigenous peoples of the Americas|indigenous]] citizens of [[Quechua people|Quechua]] descent. [[Quechua language|Quechua]] is the language which the majority of the population (87.17%) learnt to speak in childhood, 12.37% of the residents started speaking using the [[Spanish language|Spanish]] language according to a [[2007 Peru Census]].<ref>[http://iinei.inei.gob.pe/iinei/RedatamCpv2007.asp?id=ResultadosCensales?ori=C inei.gob.pe]  {{webarchive|url=https://web.archive.org/web/20130127005551/http://iinei.inei.gob.pe/iinei/RedatamCpv2007.asp?id=ResultadosCensales%3Fori%3DC |date=January 27, 2013 }} INEI, Peru, Censos Nacionales 2007, Frequencias: Preguntas de Población: Idioma o lengua con el que aprendió hablar (in Spanish)</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y
+|collapsed = Y
+|location = Capachica, elevation {{convert|3822|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 14.6
+|Feb high C = 14.5
+|Mar high C = 14.7
+|Apr high C = 14.9
+|May high C = 14.7
+|Jun high C = 14.1
+|Jul high C = 14.0
+|Aug high C = 14.6
+|Sep high C = 15.3
+|Oct high C = 15.8
+|Nov high C = 16.2
+|Dec high C = 15.6
+|year high C = 
+|Jan low C = 5.0
+|Feb low C = 5.0
+|Mar low C = 4.5
+|Apr low C = 2.6
+|May low C = -1.0
+|Jun low C = -3.2
+|Jul low C = -3.3
+|Aug low C = -2.1
+|Sep low C = 0.3
+|Oct low C = 2.3
+|Nov low C = 3.2
+|Dec low C = 4.2
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 170.6
+|Feb precipitation mm = 162.7
+|Mar precipitation mm = 134.0
+|Apr precipitation mm = 47.1
+|May precipitation mm = 6.6
+|Jun precipitation mm = 3.5
+|Jul precipitation mm = 4.5
+|Aug precipitation mm = 12.5
+|Sep precipitation mm = 25.9
+|Oct precipitation mm = 44.5
+|Nov precipitation mm = 47.9
+|Dec precipitation mm = 105.1
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 25 October 2023}}</ref>
+}}
+
+== See also ==
+* [[Tikunata]]
+
+==References==
+{{Reflist}}
+
+{{Districts of Puno Province}}
+
+{{coord|15.6394|S|69.9768|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Department of Puno]]
+[[Category:Districts of the Puno province]]
+
+
+{{Puno-geo-stub}}

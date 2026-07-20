@@ -1,0 +1,377 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = San Antonio Palopó <!-- at least one of the first two fields must be filled in -->
+| official_name           = 
+| native_name             = <!-- if different from the English name -->
+| native_name_lang        = <!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| other_name              = 
+| settlement_type         = Municipality and village <!-- such as Town, Village, City, Borough etc. -->
+<!-- images, nickname, motto --->
+| image_skyline           = {{Photomontage
+| photo1a = Lake Atitlan & Volcanoes from the East (6996008535).jpg
+| photo2a = Mayan Melodies.jpg
+| photo2b = 2010.05.02.123258 San Antonio Palopó Atitlán Guatemala.jpg
+| photo3a = San Antonio 1988 002.png
+| photo3b = San Antonio Palopó 1.jpg
+| position = center
+| color_border  = white
+| color = white
+| size = 250
+}}
+|image_caption = {{hlist|'''From top, left to right''': View of San Antonio Palopo and Lake Atitlán • The marimba in San Antonio Palopo • Another panoramic view of San Antonio Palopo • Agriculture in San Antonio Palopo • The town and Central Park}}
+| image_flag              = 
+| flag_size               = 
+| flag_alt                = 
+| flag_link               =
+| image_seal              = 
+| seal_size               = 
+| seal_alt                = 
+| seal_link               = 
+| image_shield            = 
+| shield_size             = 
+| shield_alt              = 
+| shield_link             = 
+| image_blank_emblem      = 
+| blank_emblem_type       = <!-- defaults to Logo -->
+| blank_emblem_size       = 
+| blank_emblem_alt        = 
+| blank_emblem_link       = 
+| nickname                = 
+| motto                   = 
+| anthem                  = 
+<!-- maps and coordinates ------>
+| image_map               = 
+| mapsize                 = 
+| map_alt                 = 
+| map_caption             = 
+| image_map1              = 
+| mapsize1                = 
+| map_alt1                = 
+| map_caption1            = 
+| pushpin_map             = Guatemala <!-- name of a location map as per Template:Location_map -->
+| pushpin_label_position  = right <!-- position of the pushpin label: left, right, top, bottom, none -->
+| pushpin_map_alt         = map: location of San Antonio Palopó in Guatemala
+| pushpin_mapsize         = 
+| pushpin_map_caption     = location of San Antonio Palopó in Guatemala
+| pushpin_map_alt1        = 
+| pushpin_mapsize1        = 
+| coordinates             = {{coord|14|42|N|91|7|W|display=inline}}
+| coor_pinpoint           = <!-- to specify exact location of coordinates (was coor_type) -->
+| coordinates_footnotes   = <!-- for references: use <ref> tags -->
+<!-- location ------------------>
+| subdivision_type        = [[List of sovereign states|Country]]
+|subdivision_name       = [[Image:Flag of Guatemala.svg|25px]] [[Guatemala]]
+|subdivision_type1      = [[Departments of Guatemala|Department]] 
+|subdivision_name1      = [[File:Flag of Sololá Department.svg|25px]] [[Sololá Department|Sololá]]
+| subdivision_type2       = 
+| subdivision_name2       = <!-- etc., subdivision_type6 / subdivision_name6 -->
+<!-- established --------------->
+| established_title       = <!-- Settled -->
+| established_date        = 
+| established_title1      = <!-- Incorporated (town) -->
+| established_date1       = 
+| established_title2      = <!-- Incorporated (city) -->
+| established_date2       = 
+| established_title3      = 
+| established_date3       = 
+| extinct_title           = 
+| extinct_date            = 
+| founder                 = 
+| named_for               = [[Anthony of Padua|St. Anthony of Padua]]
+<!-- government type, leaders -->
+| government_footnotes    = <!-- for references: use <ref> tags -->
+| government_type         = Municipal
+| leader_party            = 
+| leader_title            = Mayor (2016-2020)
+| leader_name             = Francisco Calabajay Díaz<ref>{{cite web|url=http://www.municipalidadesdeguatemala.info/alcaldes-16/alcaldes-solola-16.php |title=Alcaldes electos en el departamento de Sololá |website=Municipalidades de Guatemala |date=7 September 2015 |access-date=12 October 2015 |location=Guatemala |language=es |url-status=usurped |archive-url=https://web.archive.org/web/20151012152026/http://www.municipalidadesdeguatemala.info/alcaldes-16/alcaldes-solola-16.php |archive-date=October 12, 2015 }}</ref>
+| leader_title1           = 
+| leader_name1            = <!-- etc., up to leader_title4 / leader_name4 -->
+<!-- display settings  --------->
+| total_type              = <!-- to set a non-standard label for total area and population rows -->
+| unit_pref               = <!-- enter: Imperial, to display imperial before metric -->
+<!-- area ---------------------->
+| area_footnotes          = <!-- for references: use <ref> tags -->
+| area_magnitude          = <!-- use only to set a special wikilink -->
+| area_total_km2          = <!-- ALL fields with measurements have automatic unit conversion -->
+| area_total_sq_mi        = <!-- see table @ Template:Infobox settlement for details -->
+| area_land_km2           = 
+| area_land_sq_mi         = 
+| area_water_km2          = 
+| area_water_sq_mi        = 
+| area_water_percent      = 
+| area_urban_footnotes    = <!-- for references: use <ref> tags -->
+| area_urban_km2          = 
+| area_urban_sq_mi        = 
+| area_metro_footnotes    = <!-- for references: use <ref> tags -->
+| area_metro_km2          = 
+| area_metro_sq_mi        = 
+| area_rank               = 
+| area_blank1_title       = 
+| area_blank1_km2         = 
+| area_blank1_sq_mi       = 
+| area_blank2_title       = 
+| area_blank2_km2         = 
+| area_blank2_sq_mi       = 
+| area_note               = 
+<!-- elevation ----------------->
+| elevation_footnotes     = <!-- for references: use <ref> tags -->
+| elevation_m             = 
+| elevation_ft            = 
+| elevation_max_footnotes = <!-- for references: use <ref> tags -->
+| elevation_max_m         = 
+| elevation_max_ft        = 
+| elevation_min_footnotes = <!-- for references: use <ref> tags -->
+| elevation_min_m         = 1562
+| elevation_min_ft        = 
+<!-- population ---------------->
+| population_footnotes    = <!-- for references: use <ref> tags -->
+| population_total        = 15362
+| population_as_of        = 2018
+| population_rank         = 
+| population_density_km2  = <!-- for automatic calculation of any density field, use: auto -->
+| population_density_sq_mi= 
+| population_est          = 
+| pop_est_as_of           = 
+| population_urban        = 
+| population_density_urban_km2   = 
+| population_density_urban_sq_mi = 
+| population_metro        = 
+| population_density_metro_km2   = 
+| population_density_metro_sq_mi = 
+| population_density      = 
+| population_density_rank = 
+| population_blank1_title = 
+| population_blank1       = 
+| population_density_blank1_km2  = 
+| population_density_blank1_sq_mi= 
+| population_blank2_title = 
+| population_blank2       = 
+| population_density_blank2_km2  = 
+| population_density_blank2_sq_mi= 
+| population_demonym      = <!-- demonym, ie. Liverpudlian for someone from Liverpool -->
+| population_note         = 
+<!-- demographics (section 1) -->
+| demographics_type1      = 
+| demographics1_footnotes = <!-- for references: use <ref> tags -->
+| demographics1_title1    = 
+| demographics1_info1     = <!-- etc., up to demographics1_title5 / demographics1_info5 -->
+<!-- demographics (section 2) -->
+| demographics_type2      = 
+| demographics2_footnotes = <!-- for references: use <ref> tags -->
+| demographics2_title1    = 
+| demographics2_info1     = <!-- etc., up to demographics2_title5 / demographics2_info5 -->
+<!-- time zone(s) -------------->
+| timezone1               = [[Central Time Zone|Central Time]]
+| utc_offset1             = -6
+| timezone1_DST           = 
+| utc_offset1_DST         = 
+<!-- postal codes, area code --->
+| postal_code_type        = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal_code             = 
+| postal2_code_type       = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal2_code            = 
+| area_code_type          = [[list of country calling codes|Country calling code]]<!-- defaults to: Area code(s) -->
+| area_code               = 502
+| geocode                 =
+| iso_code                = 
+<!-- twin cities --------------->
+| twin1                   = 
+| twin1_country           = 
+| twin2                   = 
+| twin2_country           = <!-- etc., up to twin9 / twin9_country -->
+<!-- blank fields (section 1) -->
+| blank_name_sec1         = [[Köppen climate classification|Climate]]
+| blank_info_sec1         = [[Oceanic climate#Subtropical highland variety (Cfb, Cwb)|Cwb]]
+| blank1_name_sec1        = 
+| blank1_info_sec1        = 
+| blank2_name_sec1        = 
+| blank2_info_sec1        = <!-- etc., blank6_name_sec1 / blank6_info_sec1 -->
+<!-- blank fields (section 2) -->
+| blank_name_sec2         = 
+| blank_info_sec2         = 
+| blank1_name_sec2        = 
+| blank1_info_sec2        = 
+| blank2_name_sec2        = 
+| blank2_info_sec2        = <!-- etc., blank6_name_sec2 / blank6_info_sec2 -->
+<!-- website, footnotes -------->
+| website                 = 
+| footnotes               = 
+}}
+
+'''San Antonio Palopó''' is a [[Municipalities of Guatemala|municipality]] in the [[Sololá Department]] of [[Guatemala]]. The village is on the eastern shore of [[Lago de Atitlán|Lake Atitlán]]. The lowest elevation is {{convert|1562|m|ft}} at the shoreline. The people of the region are [[Kaqchikel people|Cakchiquel]] [[Maya peoples|Maya]] with a distinctive style of clothing. The patron saint of the village is [[Anthony of Padua|St. Anthony of Padua]]. The annual festival takes place on 13 June.<ref>{{cite web |url=http://www.visitguatemala.com/nuevo/ver_destino.asp?id=864 |title=San Antonio Palopó |publisher=INGUAT, the Guatemalan Ministry of Tourism |language=Spanish }}{{Dead link|date=August 2025 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+== History ==
+
+===Spanish colony: Franciscan doctrine===
+
+After the [[Spanish conquest of Guatemala]] the town was in charge of the  [[franciscans]], who had convents and doctrines in the area covered by the modern departments of [[Sacatepéquez]], [[Chimaltenango Department|Chimaltenango]], [[Sololá Department|Sololá]], [[Quetzaltenango Department|Quetzaltenango]], [[Totonicapán Department|Totonicapán]], [[Suchitepéquez Department|Suchitepéquez]] and [[Escuintla Department|Escuintla]].  The "Provincia del Santísimo Nombre de Jesús" (English:"Province of the most Holy Name of Jesus"), as the Franciscan area was then called, reached up to 24 convents by 1700.<ref name=anoveros891>{{harvnb|García Añoveros|1989|p=891}}</ref>
+
+The franciscans tried to have daily religious teaching for 6-year-old girls and older starting at 2:00 pm and for boys of the same age starting at sunset;  the class lasted for 2 hours and consisted on memorizing the church teaching and prayers and to make some exercises with the [[catechism]] and it was run by a priest or by elder natives, called "fiscales".<ref name=anoveros896>{{harvnb|García Añoveros|1989|p=896}}</ref>  Adults attended Mass every Sunday and holiday and after mass, there were religious teachings in their own language.<ref name=anoveros896/>
+
+[[Lent]] was a time of the year when the friars prepared the natives thoroughly, using their own language to accomplish their goals; every Friday of Lent there was a procession following the Rosary steps all the way to the Calvary temple.<ref name=anoveros897>{{harvnb|García Añoveros|1989|p=897}}</ref>
+
+In 1754, as part of the [[borbon reforms]], the Franciscans were forced to give their doctrines to the [[secular clergy]];{{sfn|Juarros|1818|p=338}} thus, when archbishop [[Pedro Cortés y Larraz]] visited town in 1770, he described it as part of the "San Francisco Panajachel parish".{{sfn|Cortés y Larraz|2001|p=409-412}}
+
+===1892 archeologist Alfred P. Maudslay visit ===
+{{Main|Alfred Percival Maudslay}}
+
+[[File:Sanantoniopalopo1895a.JPG|180px|thumb|left|A view of San Antonio Palopó in 1895.  Photograph by [[Alfred Percival Maudslay]].<ref name=maudslay53>{{harvnb|Maudslay|Maudslay|1899|p=53}}</ref>]]
+[[File:Sanantoniopalopoescuela1895.JPG|180px|thumb|left|School children from San Antonio Palopó in 1895.  Children attended school three hours a day, even though they did not know any Spanish and their ladino teacher did not know their native language. Photograph by [[Alfred Percival Maudslay]].<ref name=maudslay54/>]]
+[[File:Sanantoniopalopohombre1895.JPG|200px|thumb|Men from San Antonio Palopó in 1895; due to their reluctance to have their picture taken, Maudslay and his wife had to beg this group to have the picture made.<ref name=maudslay55/>]]
+
+In 1892, British archeologist [[Alfred Percival Maudslay]] and his wife Anne Maudslay visited Guatemala and traveled throughout it on mules, arriving to San Antonio Palopó on their way through [[Sololá Department|Sololá]]; Anne Maudslay's impressions were recorded in her book ''A glimpse at Guatemala'' where tells how, in order to reach Panajachel coming from [[Chimaltenango Department|Chimaltenango]], they had to go down a very steep path, forcing them to send their belongings ahead with several natives who were used to the path, while they took a longer way with their mules.<ref name=maudslay51>{{harvnb|Maudslay|Maudslay|1899|p=51}}</ref>  Once they reached Lake Atitlan level, the climb a small hill to get to the native town of San Antonio.<ref name=maudslay51/>
+
+The Maudslays climbed the steep street towards town hall, where they intended to spend the night but found out that the corridors were already crowded with native travelers and their cargo;  when they inquired about the building rooms, they found out that there were only two: one that was used as prison and was crowded with prisoners, and one that was used for municipal business.<ref name=maudslay52>{{harvnb|Maudslay|Maudslay|1899|p=52}}</ref> They had to look for another shelter, and finally found it in the local school, where they were allowed to spend the night in the girls classroom, which had no windows and no lights.  While searching for a place to stay the nights, they noticed that the local church had no roofing, as a results of the periodic earthquakes that affect the area.<ref name=maudslay52/>
+
+The year the Maudslays visited town, there were only five ladinos living in it: the school teacher and his wife, the municipality secretary and two ladies that had a small grocery shop; everybody else was native Guatemalan, and even the municipality was completely led by native people.<ref name=maudslay53/>  Due to the rise of coffee plantations in those years, a road had just been built, to shorten the travel time from the south shores of Guatemala to [[Quetzaltenango]], thus, bringing San Antonio Palopó out of it partial isolation; nevertheless, Anne Maudslay found strange that both women and girls would flee shyly after glancing at them, and were reluctant to have their pictures taken.<ref name=maudslay53/> In spite of that, the Maudslay could observe that the female population was clean and tidy with their clothes, and numerous women were by the lake shore washing their hair.<ref name=maudslay55>{{harvnb|Maudslay|Maudslay|1899|p=55}}</ref>
+
+There was another custom that the Maudslays observed:  since it was Sunday, all the municipality authorities were out in a procession, going house by house talking to their constituents about the business for the upcoming days: dressed with their black clothes and their mayoral sticks, theirs was a solemn procession; once all the houses had been notified, one of the men shouted some more instructions that were repeated in farther locations for two or three times and with that, the group dissolved.<ref name=maudslay54>{{harvnb|Maudslay|Maudslay|1899|p=54}}</ref>
+
+Since they were staying at the town school, they could see a class: little boys showed up early, dressed exactly like their parents with the difference that the red handkerchief on their heads looked older and seemed to have been passed from fathers to sons; the kids put literally their faces in their books, too shy to see the visitors until the teacher came and took roll call.<ref name=maudslay54/>  After that, the teacher stepped out and the children went back to their book, for the next three hours, as the teacher could not speak their language and they did not know any Spanish.<ref name=maudslay54/> That day there was not class for the girls, who were dismissed because the visitors were staying at their class.<ref name=maudslay54/>
+
+Like other native towns that they had visited, the Maudslay reported that the clothing the people used was all handcrafted and made in their own homes using primitive systems, similar to those pictured in the ''Codex Mendoza'', who Alfred Maudslay had seen back in [[England]].{{sfn|Maudslay|Maudslay|1899|p=56}}
+
+== Administrative division==
+The municipality has an area of 34 [[km²]] and one municipal capital, two villages, five settlements and three neighborhoods.<ref name=mazariegos8>{{harvnb|Mazariegos Guzmán|2008|p=8}}</ref>
+
+{|class="wikitable"
+|+ San Antonio Palopó's administrative division<ref name=mazariegos8/>
+|-
+! Administrative location
+! List
+|-
+! Municipal capital
+|San Antonio Palopó
+|-
+! Villages
+|
+* Agua Escondida
+* Xequistel 
+|-
+! Settlements
+|
+* Cuiquistel
+* Cuisajcap
+* El Porvenir Chipop
+* Patzaj
+* San José Xiquinabaj
+|-
+!Neighborhoods
+|
+* Chitulul
+* Ojo de Agua
+* Tzampetey
+* El Naranjo
+* Tzancorral
+* San Gabriel
+|}
+
+==Climate==
+
+[[File:Sanantoniopalopo1895.JPG|200px|thumb|San Antonio Palopó in 1895. Photograph by [[Alfred Percival Maudslay]].<ref name="maudslay52"/>]]
+
+San Antonio Palopó has temperate climate ([[Köppen climate classification|Köppen]]: ''Csb'').
+
+{{Weather box
+|width=auto
+|location = San Antonio Palopó
+|metric first = yes
+|single line = yes
+|Jan mean C = 16.2
+|Feb mean C = 16.3
+|Mar mean C = 17.4
+|Apr mean C = 18.2
+|May mean C = 18.7
+|Jun mean C = 17.7
+|Jul mean C = 18.0
+|Aug mean C = 18.0
+|Sep mean C = 17.7
+|Oct mean C = 17.5
+|Nov mean C = 16.8
+|Dec mean C = 16.1
+|year mean C = 
+|Jan high C = 22.6
+|Feb high C = 23.0
+|Mar high C = 24.2
+|Apr high C = 24.4
+|May high C = 24.2
+|Jun high C = 22.1
+|Jul high C = 22.9
+|Aug high C = 22.3
+|Sep high C = 22.6
+|Oct high C = 22.6
+|Nov high C = 22.7
+|Dec high C = 22.4
+|year high C =
+|Jan low C = 9.8
+|Feb low C = 9.6
+|Mar low C = 10.7
+|Apr low C = 12.1
+|May low C = 13.2
+|Jun low C = 13.4
+|Jul low C = 13.1
+|Aug low C = 12.7
+|Sep low C = 12.8
+|Oct low C = 12.5
+|Nov low C = 11.0
+|Dec low C = 9.8
+|year low C =
+|Jan precipitation mm = 1
+|Feb precipitation mm = 7
+|Mar precipitation mm = 6
+|Apr precipitation mm = 30
+|May precipitation mm = 102
+|Jun precipitation mm = 298
+|Jul precipitation mm = 168
+|Aug precipitation mm = 168
+|Sep precipitation mm = 304
+|Oct precipitation mm = 156
+|Nov precipitation mm = 44
+|Dec precipitation mm = 7
+|year precipitation mm =
+|source 1 = Climate-Data.org<ref name="Climate-Data.org">
+{{cite web|url=https://en.climate-data.org/location/204846/
+|title= Climate: San Antonio Palopó
+|access-date= 11 October 2015
+|website= Climate-Data.org}}</ref>
+}}
+
+== Geographic location==
+San Antonio is located 27&nbsp;km south of [[Sololá, Sololá|Sololá]], the department capital and 158&nbsp;km west of [[Guatemala City]]. It is surrounded by [[Sololá Department]] municipalities, except on the east, where it borders [[Patzún]], a [[Chimaltenango Department]] municipality.<ref name=segeplan/>
+
+{{Geographic location
+|Center=San Antonio Palopó
+|North=[[San Andrés Semetabaj]] and [[Santa Catarina Palopó]]
+|East=[[Patzún]], [[Chimaltenango Department]] municipality<ref name=segeplan/>
+|West=[[Lake Atitlán]]
+|South=[[San Lucas Tolimán]]<ref name=segeplan>{{cite web|author=SEGEPLAN |url=http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=20:solola&Itemid=333 |title=Municipios del departamento de Sololá |website=SEGEPLAN |location=Guatemala |access-date=7 July 2015 |language=es |url-status=dead |archive-url=https://web.archive.org/web/20150707072558/http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=20:solola&Itemid=333 |archive-date=July 7, 2015 }}</ref>
+}}
+
+==See also==
+* {{Portal-inline|Guatemala}}
+* {{Portal-inline|Geography}}
+* [[List of places in Guatemala]]
+
+==References==
+{{Reflist}}
+
+===Bibliography===
+{{Refbegin}}
+* {{cite book|title=Descripción Geográfico-Moral de la Diócesis de Goathemala
+|url=https://books.google.com/books?id=h5ZaAAAAMAAJ|authorlink=Pedro Cortés y Larraz|series=Corpus Hispanorum de Pace. Segunda Serie|issn=0589-8056 |last=Cortés y Larraz|first=Pedro|editor=García, Jesús María |editor2=Blasco, Julio Martín|publisher=Consejo Superior de Investigaciones Científicas|year=2001 |isbn=9788400080013 |orig-year=1770|language=es}}
+* {{cite journal|last=García Añoveros|first=Jesús|title=Las misiones franciscanas de la Mosquitia nicaragüense|journal=Actas del III Congreso Internacional Sobre los Franciscanos en el Nuevo Mundo (Siglo XVII)|location=Madrid, Spain|publisher=DEIMOS; Universidad Internacional de Andalucía|year=1989|url=http://dspace.unia.es/bitstream/handle/10334/1844/20García.pdf|language=es}}
+* {{cite book|last=Juarros|first=Domingo|title=Compendio de la historia de la Ciudad de Guatemala|year=1818|publisher=Ignacio Beteta|location=Guatemala|url=https://archive.org/stream/compendiodelahis21juar#page/n3/mode/2up|language=es}}
+* {{cite book|last1=Maudslay|first1=Alfred Percival|authorlink=Alfred Percival Maudslay|title=A glimpse at Guatemala, and some notes on the ancient monuments of Central America|last2=Maudslay|first2=Anne Cary|location=London, UK|publisher=John Murray|year=1899|url=https://commons.wikimedia.org/wiki/File:A_Glimpse_at_Guatemala.pdf}}
+* {{cite book|url=http://biblioteca.usac.edu.gt/EPS/03/03_0690_v5.pdf|title=Municipio de San Antonio Palopó, departamento de Sololá: Organización empresarial (engorde de ganado porcino) y proyecto de producción de arveja china|last=Mazariegos Guzmán|first=Erik Ovidio|location=Guatemala|year=2008|series=Ejercicio profesional supervisado|publisher=Facultad de Ciencias Económicas de la [[Universidad de San Carlos de Guatemala]]|language=es}}
+{{Refend}}
+
+==External links==
+* {{Commons category-inline}}
+
+{{Sololá Department}}
+{{Authority control}}
+
+{{Coord|14|42|N|91|07|W|display=title|region:GT_type:city_source:GNS-enwiki}}
+
+{{DEFAULTSORT:San Antonio Palopo}}
+[[Category:Municipalities of the Sololá Department]]

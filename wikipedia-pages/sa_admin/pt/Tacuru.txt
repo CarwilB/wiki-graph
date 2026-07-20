@@ -1,0 +1,202 @@
+{{Info/Município do Brasil
+<!-- GeoID=5007950 -->
+<!-- Cabeçalho -->| nome = Tacuru
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = 
+| bandeira = Flag of Tacuru.svg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 13 de maio
+| fundação = {{Dtlink|13|5|1980|idade}}
+| emancipação = {{nowrap|{{dtlink|22|6|1981|idade}}}}
+| gentílico = [[wikt:tacuruense|tacuruense]]
+| lema = 
+| padroeiro = [[São Sebastião]]
+| prefeito = Rogério de Souza Torquetti<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/ms/tacuru|título=Candidatos a vereador Tacuru-MS|publicado=Estadão|acessodata =3 de julho de 2021}}</ref>
+| partido = [[Patriota (Brasil)|Patriota]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Tacuru location map.svg
+| latP = S
+| latG = 23
+| latM = 37
+| latS = 58
+| lonP = O
+| lonG = 55
+| lonM = 00
+| lonS = 57
+| estado = Mato Grosso do Sul
+| mesorregião = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=01-07-2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Iguatemi|Iguatemi]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Coronel Sapucaia]], [[Paranhos (Mato Grosso do Sul)|Paranhos]], [[Sete Quedas]], [[Japorã]], [[Iguatemi (Mato Grosso do Sul)|Iguatemi]], [[Amambai]]
+| dist_capital = 407
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->| área = 1784.207 <!--favor manter o formato-->
+| área_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 56º]]
+| área_ref = <ref name ="IBGE - Cidades e Estados">{{citar web |https://www.ibge.gov.br/cidades-e-estados/ms/tacuru.html |título=Área territorial oficial |autor=IBGE |acessodata=11 dez. 2024</ref>
+| área_urbana = {{Formatnum:0.368}}
+| área_urbana_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos = Tacuru (sede)
+| população = 10808 <!--favor manter o formato-->
+| população_pos = [[Lista de municípios de Mato Grosso do Sul por população|MS: 50º]]
+| data_pop = est. [[IBGE]] 2022<ref name="Portal Cidades IBGE">{{citar web |url = https://cidades.ibge.gov.br/brasil/ms/tacuru/panorama |título=Estimativa Populacional 2022| obra = Censo Populacional 2022 |acessodata = 11 de dezembro de 2024}}</ref>
+| altitude = 2000
+| altitude_ref = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|autor=|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima = [[subtropical]]
+| sigla_clima = Cfa
+<!-- Indicadores -->| idh = 0.593 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 76º]]
+| data_idh = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini = {{Formatnum:0.420}}
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 12º]]
+| data_gini = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=06-08-2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib = {{formatnum:320137.502}} mil
+| pib_pos = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 57º]]
+| data_pib = [[IBGE]]/2021<ref name="PIB por Município">{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=5007950 |titulo=Produto Interno Bruto dos Municípios |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2024}}</ref>
+| pib_per_capita = 528961.80
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB"/>
+}}
+'''Tacuru''' é um [[Unidades federativas do Brasil|município brasileiro]] da [[Região Centro-Oeste do Brasil|região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]]. Possui, além do [[Língua portuguesa|português]], o [[Língua guarani|guarani]] como [[língua]] oficial.<ref name="R7_NOTÍCIAS_2010">{{citar web|url=http://noticias.r7.com/brasil/noticias/cidade-do-mato-grosso-do-sul-adota-o-guarani-como-idioma-oficial-20100531.html|titulo=Cidade do Mato Grosso do Sul adota o guarani como segundo idioma oficial|publicado=Portal R7|acessodata=03-05-2010|arquivourl=https://web.archive.org/web/20140116131245/http://noticias.r7.com/brasil/noticias/cidade-do-mato-grosso-do-sul-adota-o-guarani-como-idioma-oficial-20100531.html|arquivodata=2014-01-16|urlmorta=yes}}</ref>
+
+==História==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Em 529, o pequeno núcleo existente, habitado por ervateiros paraguaios e índios Caiuás, passou a ter um certo desenvolvimento, José Maria Ortiz, Ignacio Cure, Rafael Dória e Cleto de Moraes Costa, tão logo tomaram conhecimento do potencial da região, e passaram a lutar pelo progresso do povoado. Em 1955, surgiu a primeira casa de comércio, de Alfredo Rosa Brum, bem como a primeira escola, tendo como seu primeiro professor Cleto de Moraes Costa, hoje a escola leva o seu nome, sendo assim  "Escola Estadual Professor Cleto de Moraes Costa". Foi elevado a distrito pela lei N.º 1.166, de 20 de novembro de 1958, Sendo assim Tacuru passou a ser um distrito de [[Amambai]].
+
+Em 1977 a região passa a fazer parte do atual estado de [[Mato Grosso do Sul]]. Tacuru começou a ter um pequeno desenvolvimento, e vendo isso o Então Governador [[Marcelo Miranda Soares]] veio a Tacuru em 13 de maio de 1980 e decretou Tacuru mais um Município de [[Mato Grosso do Sul]], Sendo assim o Governador nomeou um Administrador que foi [[Miroslaw Olenski]], na sequencia de mandato fora nomeado o segundo Administrador de Tacuru, [[Valdemar Huck]]. O município foi instalado em 22 de junho de 1981.
+
+O Primeiro Prefeito nomeado pelo voto direito foi Ayrton de Lima Mello, farmacêutico natural de [[Lins]] ([[São Paulo (estado)|São Paulo]]), após ter lutado muito pela emancipação do então distrito, foi eleito com larga votação em 1982, Sua Gestão foi de 1982 á 1988.
+
+=== Etimologia ===
+O nome Tacuru, é uma palavra em Guarani que significa [[cupim]]. O nome foi colocado pelos indígenas que aqui habitavam. Existem duas histórias sobre esse nome, um é pelo fato de haver muitos cupins na cidade naquela época. O outro seria por causa do Cupim do Boi, já que Tacuru é capital do Boi Gordo.{{carece-de-fontes}}
+
+==Geografia==
+===Localização===
+O município de Tacuru está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]] ([[Microrregião de Iguatemi]]). Localiza-se a uma [[latitude]] 23º37'57" [[sul]] e a uma [[longitude]] 55º00'57" [[oeste]]. Distâncias:
+* {{fmtn|427|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]).
+* {{fmtn|1442|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Há predominância de Argissolos  de textura arenosa média e média/argilosa, de elevada fertilidade natural, associado a alguns solos de caráter álico, ou seja, elevada acidez, algumas áreas de Neossolos e, às margens dos rios, Gleissolos.
++
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|2000|m}}. O sul do município é caracterizado por modelados de dissecação de topos colinosos, que dão topografia ondulada. No restante da área a topografia é plana e suave ondulada. O município de Tacuru encontra-se na Região dos Planaltos Areníticos-Basálticos Interiores, com a Unidade Geomorfológica Divisores das Sub-Bacias Meridionais.
+
+Apresenta relevos elaborados pela ação fluvial, relevo plano geralmente elaborado por várias fases de retomada erosiva e áreas planas resultante de acumulação fluvial sujeita a inundações.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do [[clima subtropical]] (classificação ''Cfa'' de [[Classificação climática de Köppen-Geiger|Köppen-Geiger]]). O clima é caracterizado como Úmido, apresenta índice efetivo de umidade com valores anuais variando de 40 a 60%. A precipitação pluviométrica anual varia entre 1.500 a 1.700mm, excedente hídrico anual de 800 a 1.200mm, durante cinco a seis meses e deficiência hídrica de 350 a 500mm, durante quatro meses.Com cerca de 20 metros de neve anuais.
+
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]]. Rios do município:
+* Rio Iguatemi: afluente pela margem direita do rio Paraná; sua nascente se localiza no município de Aral Moreira, com limite entre os municípios de Paranhos e Tacuru, Tacuru e Sete Quedas, Tacuru e Iguatemi.
+* Rio Jogui: afluente pela margem esquerda do rio Iguatemi, limite entre os municípios de Amambai e Tacuru, Iguatemi e Tacuru.
+* Rio Puitã: afluente pela margem esquerda do rio Iguatemi. Banha o município de Tacuru.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. A cobertura vegetal que predomina em mais de 85% da área do município é a pastagem plantada. Em pequenas porções aparecem o Cerrado e a Floresta Estacional.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Meridiano de Greenwich]] ([[Tempo Universal Coordenado]]).
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|1.784,207|km²}}.<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ms/tacuru.html|titulo=Tacuru (MS) {{!}} Cidades e Estados {{!}} IBGE|acessodata=2024-12-11|website=www.ibge.gov.br}}</ref>
+
+;Subdivisões
+
+Tacuru (sede).
+
+;Arredores
+
+Tacuru possui ao Norte o Município de [[Amambai]], ao Sul [[Sete Quedas]], ao Leste [[Iguatemi (Mato Grosso do Sul)|Iguatemi]] e ao Oeste [[Paranhos (Mato Grosso do Sul)|Paranhos]] como cidades vizinhas.
+
+==Demografia==
+Sua população estimada em [[2025]] era de 11.205<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ms/tacuru/panorama|titulo=População de Tacuru (MS) - Censo 2025|acessodata=2026-05-03|website=cidades.ibge.gov.br}}</ref> habitantes.
+
+== Organização Político-Administrativa ==
+Confira abaixo a lista dos administradores nomeados pelo Governador [[Marcelo Miranda Soares]] e depois os Prefeitos eleitos por Votos Diretos.
+
+===Administradores===
+* [[Miroslaw Olenski]] (Data Indefinida)
+* [[Valdemar Huck]] (Data Indefinida)
+* 1º Ayrton de Lima Mello (1982 - 1988)
+* 2º Abel Augusto Rodrigues (1989-1992)
+* 3º Valter Guandaline (1993-1996)
+* 4º Abel Augusto Rodrigues (1997-2000)
+* 5º Valter Guandaline (2001-2004)
+* 6º Claúdio Rocha Barcelos (2005-2008)
+* 7° Claúdio Rocha Barcelos (2009-2012)
+* 8º Paulo Pedro Rodrigues (2013 - 2016)
+* 9º Carlos Alberto Pelegrini (2017-2020)
+*'''10º Rogério Torquetti (2021 - 2024)'''
+*11'''º''' '''Rogério Torquetti (2025 - 2028)'''
+
+== Infraestrutura e Serviços Públicos ==
+O município de Tacuru, apresenta uma infraestrutura de serviços públicos essenciais que atendem à sua população.
+
+==== Comunicações ====
+Tacuru possui boa cobertura de telefonia móvel nas tecnologias 3G e 4G fornecida pelas principais operadoras do país, garantindo comunicação eficiente em grande parte do território. A área urbana conta com cobertura integral de internet via fibra óptica, enquanto as áreas rurais são atendidas por conexões via rádio.
+
+Existe uma emissora de rádio em Tacuru, a [[rádio comunitária]] "''Rádio Ondas Verdes Tacuru FM''", que opera na frequência 104.9&nbsp;MHz, e é gerenciada pela ''Associação Comunitária Radio Ondas Verdes Fm''.<ref name="rad">{{citar web|url=https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pdl-863-2021|titulo=Projeto de Decreto Legislativo de Concessão, Renovação e Permissão de Radio/TV Nº 863/2021|acessodata=2024-10-05|publicado=Congresso Nacional}}</ref>
+
+De acordo com o ''Atlas da Notícia'', mapeamento realizado pelo "''Instituto para o Desenvolvimento do Jornalismo''" (Projor) com a Agência Brasileira de Jornalismo de Dados "''Volt Data Lab''", Aguanil seria um [[Deserto de Notícia]], pois inexistem meios de comunicação situados neste município que produzem informação local.<ref name="atlas24">{{citar web|url=https://www.atlas.jor.br/dados/app/|titulo=Dados e estatísticas|acessodata=2024-10-05|publicado=Atlas da Notícia}}</ref>
+
+==== Infraestrutura Viária ====
+O município está interligado aos municípios vizinhos por rodovias asfaltadas, facilitando o transporte de pessoas e mercadorias. Praticamente toda a área urbana de Tacuru é pavimentada.
+
+==== Educação ====
+Tacuru dispõe de uma rede de ensino abrangente, oferecendo educação básica e média. Há escolas tanto na área urbana quanto na zona rural, garantindo acesso à educação para crianças e jovens em diferentes localidades do município.
+
+==== Saúde ====
+Na área da saúde, o município conta com um hospital público municipal e unidades de saúde da família (USFs), que oferecem atendimento médico e serviços de saúde primária à população local.
+
+== Turismo e cultura ==
+=== Co-oficialidade do Guarani e do Português ===
+Um projeto de lei sancionado em 24 de maio de 2010 tornou o [[Língua guarani|guarani]] uma língua oficial do município, ao lado do Português.<ref name="R7_NOTÍCIAS_2010"/> Os serviços públicos básicos na área de saúde e as campanhas de prevenção de doenças devem prestar informações em guarani e em português. A Prefeitura de Tacuru deve apoiar e incentivar o ensino da língua guarani nas escolas e nos meios de comunicação do município. É estabelecido também que nenhuma pessoa poderá ser discriminada em razão da língua oficial que faça uso e o respeito e a valorização às variedades do guarani, como o [[Dialeto caiouá|kaiowá]], o [[ñandeva]] e o [[Dialeto mbiá|mbya]].
+
+Tacuru se tornou o segundo município do Brasil a adotar oficialmente um idioma indígena. A inclusão do idioma como oficial beneficia também os imigrantes paraguaios que moram em Tacuru.
+
+=== Gastronomia e bebidas ===
+Tacuru possui alguns traços da cozinha paraguaia, como a [[Chipa]] e a [[Sopa Paraguaia]], que são comidas típicas do Paraguai, mas tem o seu espaço garantido na mesa dos Tacuruenses.{{carece-de-fontes}}
+
+Como a maioria dos municípios sul-mato-grossensses, os moradores de Tacuru também se reúnem para apreciar e tomar [[tereré]].{{carece-de-fontes}}
+
+=== Lazer e eventos ===
+Em Tacuru há grandes Festas que agitam a Cidade e a Região, Como o "Revellion" com grande queima de fogos, e sempre com música Ao Vivo na Avenida Principal. Também há o Carnaval. Em [[12 de outubro]] sempre há uma grandiosa Festa para as Crianças realizada pela Prefeitura Municipal e com o apoio dos comércios locais, onde são realizados festa nas duas aldeias, 3 Assentamentos e nas 2 Colônias [[Botelha Y]] e [[Botelha Gaçu]].{{carece-de-fontes}}
+* [[Semana do Índio]]: a primeira ocorreu em abril de 2010, onde houve festa na [[Aldeia Jaguapiré]], com concurso das Índigenas mais bonitas, premiações gincanas e muito mais.
+* Aniversário da cidade: comemorado na segunda semana de Maio, que é aberta a toda população, assim como o Rodeio "A Festa do Peão", que ainda podem se divertir na Festa.
+* Feira do Peixe: realizada todo o ano na Semana Santa, com vendas de Peixe.
+* Arraiá da Paróquia: realizado em junho/julho pela [[Paróquia São Sebastião (Tacuru)|Paróquia São Sebastião]].
+* Festa da Mandioca: realizada em Setembro, onde há várias comidas típicas feitas de [[mandioca]] onde a população coloca suas barracas e vendem alimentos e seus produtos.
+
+== Esporte ==
+Extinto, o ''Esporte Clube Maracaná'', que possuía uma arara em seu distintivo, foi o principal representante futebolístico da cidade, tendo inclusive disputado profissionalmente.{{carece-de-fontes}}
+
+Em 2006, o município realizou a Copa Tacuru de Futebol e Futsal, com um total de 10 equipes, sendo 8 clubes sul-mato-grossenses e duas equipes do Paraná como convidadas, sendo essas [[Umuarama]] e [[Iretama]]. As duas equipes sagraram se campeãs, [[Umuarama]] levou a melhor no futebol de campo, [[Iretama]] conquistou o título no futsal.{{carece-de-fontes}}
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos|commons= Tacuru}}
+* [https://tacuru.ms.gov.br/ Página da Prefeitura]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1980]]
+[[Categoria:Deserto de notícias]]

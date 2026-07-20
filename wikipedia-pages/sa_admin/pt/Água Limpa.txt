@@ -1,0 +1,67 @@
+{{Info/Município do Brasil
+<!-- GeoID=5200209 -->
+<!-- Cabeçalho -->| nome = Água Limpa
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Água Limpa.jpg
+| bandeira = Bandeira de Água Limpa.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 11 de novembro
+| fundação = {{nowrap|{{dtlink|11|11|1958|idade}}}}
+| gentílico = água-limpense
+| lema = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| prefeito = José Carlos Guimarães Filho<ref>{{Citar web |url=https://g1.globo.com/go/goias/noticia/2021/01/01/prefeito-e-vereadores-de-agua-limpa-tomam-posse-veja-lista-de-eleitos.ghtml |titulo=Prefeito e vereadores de Água Limpa tomam posse; veja lista de eleitos |acessodata=2021-01-31 |website=G1 |lingua=pt-br}}</ref>
+| partido = [[Podemos (Brasil)|PODE]]
+| fim_mandato = 2024
+<!--| vereadores = 9-->
+| mapa = Goias Municip AguaLimpa.svg
+| latP = S
+| latG = 18
+| latM = 04
+| latS = 26
+| lonP = O
+| lonG = 48
+| lonM = 45
+| lonS = 43
+| estado = Goiás
+| mesorregião = [[Mesorregião do Sul Goiano|Sul Goiano]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Meia Ponte|Meia Ponte]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Marzagão (Goiás)|Marzagão]], [[Buriti Alegre]], [[Corumbaíba]], [[Rio Quente]] e [[Morrinhos (Goiás)|Morrinhos]]
+| dist_capital = 195
+<!-- Características geográficas -->| área = 452.856 <!--favor manter o formato-->
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 1850 <!--favor manter o formato-->
+| data_pop = est. [[IBGE]]/[[2019]]<ref name="Estimativa de 2019">{{citar web |url= ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2019/estimativa_dou_2019.pdf |publicado = Instituto Brasileiro de Geografia e Estatística (IBGE) |titulo= Estimativa populacional de 2019 |acessodata = 28 de agosto de 2019 }}</ref>
+| altitude = 
+| clima = 
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.722 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de julho de 2013}}</ref>
+| pib = {{formatnum:22907.585}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 10800.37
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://agualimpa.go.gov.br/ agualimpa.go.gov.br]
+| site_câmara = https://agualimpa.go.leg.br/
+}}
+'''Água Limpa''' é um [[Município (Brasil)|município brasileiro]] do [[Interior de Goiás|interior]] do [[Unidades federativas do Brasil|estado]] de [[Goiás]], [[Região Centro-Oeste do Brasil|Região Centro-Oeste]] do país. Sua população, segundo o estimativas do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) era de {{fmtn|1850}} habitantes em 2019.
+
+{{Referências|col=2}}
+
+== Ver também ==
+* [[Lista de municípios de Goiás]]
+* [[Lista de municípios do Brasil]]
+
+{{Esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+{{DEFAULTSORT:Agua Limpa}}
+[[Categoria:Municípios de Goiás]]
+[[Categoria:Fundações em Goiás em 1958]]

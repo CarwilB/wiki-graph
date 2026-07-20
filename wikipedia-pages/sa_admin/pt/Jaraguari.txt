@@ -1,0 +1,154 @@
+{{Info/Município do Brasil
+<!-- GeoID=5004908 -->
+<!-- Cabeçalho -->
+| nome                 = Jaraguari
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Band_Jaraguari.gif‎ 
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          =12 de dezembro
+| fundação             ={{nowrap|{{dtlink|12|12|1953|idade}}}}
+| emancipação          ={{dtlink|18|1|1954|idade}}
+| gentílico            =[[wikt:jaraguariense|jaraguariense]] ou [[wikt:jaguariano|jaguariano]]
+| lema                 = 
+| padroeiro            = [[Santa Rita de Cássia]]
+| prefeito             = Claudião<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=7 de janeiro de 2025}}</ref>
+| partido              = [[PSDB]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Jaraguari location map.svg
+| latP                 = S | latG = 20 | latM = 08 | latS = 31
+| lonP                 = O | lonG = 54 | lonM = 23 | lonS = 56
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Centro-Norte de Mato Grosso do Sul|Centro Norte de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião         = [[Microrregião de Campo Grande|Campo Grande]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Bandeirantes (Mato Grosso do Sul)|Bandeirantes]], [[Rochedo]], [[Campo Grande (Mato Grosso do Sul)|Campo Grande]] e [[Ribas do Rio Pardo]] 
+| dist_capital         = 43
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 2913.000 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 42º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:0.368}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Jaraguari (sede), Bom Fim e Jatobá
+| população            = 6414 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 65º]]
+| data_pop             = est. [[IBGE]] [[2011]]<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| altitude             = 589
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[tropical de altitude]]
+| sigla_clima          = Cwa
+<!-- Indicadores -->
+| idh                  = 0.734 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 41º]]
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.4}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 1º]] 
+| data_gini            = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1#|arquivodata=30 de abril de 2012|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:80439.745}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 65º]]
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 14001.70
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''Jaraguari''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste do Brasil]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+==Geografia==
+===Localização===
+O município de Jaraguari está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Centro-Norte de Mato Grosso do Sul|Centro Norte de Mato Grosso do Sul]] ([[Microrregião de Campo Grande]]). Localiza-se a uma [[latitude]] 20º08'30" [[sul]] e a uma [[longitude]] 54º23'58" [[oeste]]. Distâncias:
+* {{fmtn|44|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]) 
+* {{fmtn|981|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Na porção oeste do município de Jaraguari e ao longo de importantes cursos d'água, verifica-se a ocorrência dominante de Latossolo de textura argilosa e com fertilidade natural variável (alta e baixa), no restante do município há ocorrência de solos de textura mais arenosa, representado pelo Latossolo Vermelho-Escuro de textura média e pelos Neossolos.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|589|m}}. Na porção oeste do município de Jaraguari há uma série de cuestas e ressaltos topográficos, este relevo é ladeado por modelados colinosos e tabulares com declividades de até 5°, os quais são entremeados por áreas planas. O município de Jaraguari encontra-se em duas regiões geomorfológicas: região dos Planaltos Arenítico-Basálticos Interiores e região dos Planaltos da Borda Ocidental da Bacia do Paraná.
+ 
+Apresenta relevo plano, geralmente elaborado por várias fases de retomada erosiva e com relevos elaborados pela ação fluvial e áreas planas resultante de acumulação fluvial, sendo sujeita a inundações periódicas.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical de altitude ([[CFA]]), apresentando clima úmido a sub-úmido. As temperaturas médias do mês mais frio são menores que 20&nbsp;°C e maiores que 18&nbsp;°C e o período seco estende-se de quatro a cinco meses. A precipitação anual varia de 1.200 a 1.500mm.
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]], representado pelos córregos Marimbondo e Perdiz.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. A cobertura predominante é a pastagem plantada, encontrando-se em menores proporções, o 
+Cerrado com fisionomia Arbórea Aberta (Campo Cerrado), Parque (Campo Sujo) e Arbórea Densa (Cerradão).
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação ao [[Meridiano de Greenwich]].
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|2913.000|km²}}.
+ 
+;Subdivisões
+
+Hoje o município tem as localidades de:
+* Jaraguari: é a sede do município que hoje se denomina Jaraguari Velho. 
+* Jatobá: para onde foi transferida toda a administração executiva, judicial e legislativa do município e maioria do comércio, distante 7&nbsp;km da [[BR-163]]. 
+* Bom Fim: situado 6&nbsp;km de Jaraguari Velho (a sede do município) e á 3&nbsp;km da [[BR-163]]
+
+;Arredores
+
+Bandeirantes, Rochedo, Campo Grande e Ribas do Rio Pardo
+
+==História==
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+O povoamento da região teve seu início em fins do [[século XIX]] quando famílias de mineiros e goianos se instalaram nas cabeceiras dos córregos Marinbondo, Jatobá e Cervo, a cerca de 50&nbsp;km de Campo Grande. Em abril de 1910 foi solicitado ao presidente de Mato Grosso a concessão de área para a formação do então “Patrimonio Senhor Divino Espírito Santo”. Em [[28 de março]] de [[1911]] pelo decreto 278, foi destinado uma área de 3.600 [[hectare]]s na Cabeceira do Marinbondo, em Campo Grande, para fundar a povoação de Jaraguari. Em [[7 de outubro]] de [[1921]] criou-se o distrito de paz de Jaraguari no município de Campo Grande (Resolução 856), autorizando reserva de área de 3.600 has para colonização além das já reservadas para o rocio do Patrimônio. Em [[5 de junho]] de [[1925]], sua agência postal, instalado em [[1920]], foi incendiada pelos componentes da “[[Coluna Prestes]]”, que invadiram a vila de Jaraguari, naquele dia. A [[18 de janeiro]] de [[1930]], pelo decreto nº 898, o governo de Mato Grosso reservou uma área de 8.702 hectares no lugar denominado “Cervinho” onde se formou a “Colônia Bandeirantes” a 24&nbsp;km de Vila de Jaraguari. Mais tarde colonos japoneses formaram mais outra colônia agrícola, com predominância de café, e transformada atualmente no Distrito de Bom Fim. Em [[8 de setembro]] de [[1937]] foi inaugurada uma capela, em alvenaria, sob a invocação do Senhor Divino Espírito Santo, em substituição à anterior, destruída por incêndio em [[1930]]. Tendo sido celebrada a missa inaugural pelo Padre [[João Grippa]], com a presença de Dom [[Francisco de Aquino Corrêa]], então [[bispo]] da [[Arquidiocese de Cuiabá|Diocese de Cuiabá]].
+
+Foi elevada a município pela Lei nº 692, de [[12 de dezembro]] de [[1953]], sendo instalado em [[18 de janeiro]] de [[1954]]. Em [[1977]] o município passa a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+===Topônimo===
+Seu topônimo deriva do Córrego Jaraguá  que nas proximidades de sua confluência, onde se originou a povoação, passa a denominar-se Jaraguari.
+
+===Lista de prefeitos===
+*Edson Rodrigues Nogueira (PSDB) (2017-2020)
+* Prof. Vagner Gomes Vilela (PDT) (2013–2016)
+* Albertino Nunes Ferreira (PDT) (2009–2012)
+
+==Demografia==
+Sua população estimada em [[2011]] era de 6.414 habitantes e densidade demográfica de {{fmtn|2.201|hab/km²}}
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Jaraguari
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.jaraguari.ms.gov.br/ www.jaraguari.ms.gov.br - Página Oficial]
+* [http://wikimapia.org/#lat=-20.1010752&lon=-54.4372559&z=10&l=9&m=b Jaraguari via satélite]
+
+{{sem imagem}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso em 1953]]

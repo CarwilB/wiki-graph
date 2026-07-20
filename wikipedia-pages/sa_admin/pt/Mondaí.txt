@@ -1,0 +1,87 @@
+{{Info/Município do Brasil
+<!-- GeoID=4211009 -->
+<!-- Cabeçalho -->
+| nome = Mondaí
+| foto = Mondai panoramica.jpg
+| leg_foto = 
+| apelido = Capital da Fruta
+<!-- Dados gerais -->
+| brasão = Brasao Mondai SantaCatarina Brasil.jpg
+| bandeira = Bandeira Mondai SantaCatarina Brasil.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|20|5|1922|idade}}}}
+| emancipação = {{nowrap|{{dtlink|27|2|1954|idade}}}}
+| gentílico = mondaiense
+| lema = 
+| prefeito = Elizandro Mainardi
+| partido = [[Partido Liberal (2006)|PL]]
+| fim_mandato = 2028
+<!-- Localização -->
+| mapa = SantaCatarina Municip Mondai.svg
+| latP = S
+| latG = 27
+| latM = 06
+| latS = 10
+| lonP = O
+| lonG = 53
+| lonM = 24
+| lonS = 07
+| estado = Santa Catarina
+| mesorregião = [[Mesorregião do Oeste Catarinense|Oeste Catarinense]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de São Miguel do Oeste|São Miguel do Oeste]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Região Metropolitana do Extremo Oeste|Extremo Oeste]]
+| vizinhos = [[Riqueza (Santa Catarina)|Riqueza]], [[Caibi]], [[Iporã do Oeste]], [[São João do Oeste]], [[Itapiranga (Santa Catarina)|Itapiranga]], [[Vicente Dutra]] (RS) e [[Caiçara (Rio Grande do Sul)|Caiçara]] (RS)
+| dist_capital = 693
+<!-- Características geográficas -->
+| área = 202.145 <!--favor manter o formato-->
+| área_ref = <ref name="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010 |data=10 de outubro de 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 11889 <!--favor manter o formato, sem pontos ou vírgulas separando os milhares-->
+| data_pop = est. [[IBGE]]/[[2020]]<ref name="IBGE_Pop">{{citar web |url=https://cidades.ibge.gov.br/brasil/sc/mondai/panorama  |título=Estimativa populacional de 2020 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=28 de dezembro de 2020}}</ref>
+| altitude = 235
+| clima = Mesotérmico úmido
+| sigla_clima = 
+<!-- Indicadores -->
+| idh = 0.748 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=25 de agosto de 2013}}</ref>
+| pib = {{formatnum:231201.274}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 24468.33
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site = [https://www.mondai.sc.gov.br/ mondai.sc.gov.br]
+}}
+'''Mondaí''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Santa Catarina]]. Localiza-se a uma [[latitude]] 27º06'10" sul e a uma [[longitude]] 53º24'07" oeste, estando a uma altitude de 235 metros. Sua população estimada em 2020 é de 11.889 habitantes.<ref name="IBGE_Pop"/>
+Possui uma área de 215,31 km².
+
+== História ==
+Sua colonização iniciou-se por volta de [[1922]] com a vinda de moradores de [[Panambi]] e região. No início da colonização praticamente todos os moradores eram alemães.{{Carece de fontes|data=março de 2010}}
+
+==Rodovias==
+*[[SC-283]]
+*[[BR-283]]
+*[[BR-386]]
+
+==Administração==
+*[[Prefeitura (Brasil)|Prefeito]]: Elizandro Mainardi
+
+==Ver também==
+*[[Lista de municípios de Santa Catarina por data de criação]]
+*[[Lista de municípios de Santa Catarina por população]]
+
+{{Referências|col=2}}
+
+==Ligações externa ==
+*{{Link||2=https://www.mondai.sc.gov.br/ |3=Página da prefeitura}}
+*[https://camaramondai.sc.gov.br/ Portal da Câmara de Vereadores]
+
+{{Região Metropolitana do Extremo Oeste}}
+{{Portal3|Brasil|Santa Catarina}}
+{{Esboço-municípiosbr/Santa Catarina}}
+
+{{DEFAULTSORT:Mondai}}
+[[Categoria:Mondaí| ]]
+[[Categoria:Fundações em Santa Catarina em 1922]]

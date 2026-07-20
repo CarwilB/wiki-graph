@@ -1,0 +1,90 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Chépica
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| settlement_type         = [[List of towns in Chile|Town]] and [[Communes of Chile|Commune]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              = 
+| flag_alt                = Flag
+| image_shield            = 
+| shield_alt              = Coat of arms
+| image_map               = Comuna de Chépica.svg
+| map_alt                 = Map of the Chépica commune in O'Higgins Region
+| map_caption             = Map of the Chépica commune in O'Higgins Region
+| pushpin_map_narrow      = yes
+| pushpin_map             = Chile
+| pushpin_label_position  = bottom
+| pushpin_map_alt         = Location in Chile
+| pushpin_map_caption     = Location in [[Chile]]
+| coordinates             = {{coord|34|44|S|71|17|W|region:CL-LI|display=inline,title}}
+| coor_pinpoint           = town
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flagicon|Chile}} [[Chile]]
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = {{flagicon|O'Higgins}} [[O'Higgins Region|O'Higgins]]
+| subdivision_type2       = [[Provinces of Chile|Province]]
+| subdivision_name2       = {{flagicon|Colchagua}} [[Colchagua Province|Colchagua]]
+| established_title       = 
+| established_date        = 
+| founder                 = 
+| seat_type               = 
+| seat                    = 
+| government_type         = [[Municipality]]
+| government_footnotes    = <ref name="Official">{{Cite web |url = http://www.municipalidadchepica.cl/ |title = Municipality of Chépica |accessdate = 3 December 2010 |language = es |archive-date = 3 January 2014 |archive-url = https://web.archive.org/web/20140103222112/http://municipalidadchepica.cl/ |url-status = dead }}</ref>
+| leader_party            = 
+| leader_title            = [[Alcalde]]
+| leader_name             = Fabián Soto
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{Cite web |url= http://www.ine.cl/canales/chile_estadistico/censos_poblacion_vivienda/censo_pobl_vivi.php |title= National Statistics Institute |accessdate=3 December 2010|language=es}}</ref>
+| area_total_km2          = 503.4
+| elevation_footnotes     = 
+| elevation_m             = 182
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 14425
+| population_as_of        = 2012 Census
+| population_density_km2  = auto
+| population_blank1_title = [[Urban area|Urban]]
+| population_blank1       = 6949
+| population_blank2_title = [[Rural area|Rural]]
+| population_blank2       = 6908
+| population_demonym      = 
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1     = 7,100
+| demographics1_title2    = Women
+| demographics1_info2     = 6,757
+| timezone                = [[Time in Chile|CLT]]<ref>{{cite web |url=http://www.world-time-zones.org/zones/chile-time.htm |accessdate=2010-07-28 |title=Chile Time |publisher=WorldTimeZones.org |url-status=dead |archiveurl=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archivedate=2007-09-11 }}</ref> 
+| utc_offset              = -4
+| timezone_DST            = [[Time in Chile|CLST]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-summer-time.htm |accessdate=2010-07-28 |title=Chile Summer Time |publisher=WorldTimeZones.org |url-status=dead |archiveurl=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archivedate=2007-09-11 }}</ref> 
+| utc_offset_DST          = -3
+| postal_code_type        = 
+| postal_code             = 
+| area_code_type          = 
+| area_code               = ''country'' 56 + ''city'' 72
+| website                 = {{URL|http://www.municipalidadchepica.cl/}}
+| footnotes               = 
+}}
+
+'''Chépica''' is a [[Chile]]an [[List of towns in Chile|town]] and [[Communes of Chile|commune]] in [[Colchagua Province]], [[O'Higgins Region]].
+
+==Demographics==
+According to the 2002 [[census]] of the [[National Statistics Institute (Chile)|National Statistics Institute]], Chépica spans an area of {{convert|503.4|sqkm|0|abbr=on}} and has 13,857 inhabitants (7,100 men and 6,757 women). Of these, 6,949 (50.1%) lived in [[urban area]]s and 6,908 (49.9%) in [[rural area]]s. The population fell by 1.7% (244 persons) between the 1992 and 2002 censuses.<ref name= "INE"/>
+
+==Administration==
+As a commune, Chépica is a third-level [[administrative division of Chile]] administered by a [[municipal council]], headed by an [[alcalde]] who is directly elected every four years. The 2021-24 alcalde is Fabián Soto.<ref name="Official"/>
+
+<!-- Within the [[electoral divisions of Chile]], Chépica is represented in the [[Chamber of Deputies of Chile|Chamber of Deputies]] by Ramón Barros ([[Independent Democratic Union|UDI]]) and Juan Carlos Latorre ([[Christian Democratic Party|PDC]]) as part of the 35th electoral district, together with [[Placilla]], [[Nancagua]], [[Santa Cruz, Chile|Santa Cruz]], [[Lolol]], [[Pumanque]], [[Palmilla]], [[Peralillo]], [[Navidad, Chile|Navidad]], [[Litueche]], [[La Estrella, Chile|La Estrella]], [[Pichilemu]], [[Marchihue]] and [[Paredones]]. The commune is represented in the [[Senate of Chile|Senate]] by [[Andrés Chadwick|Andrés Chadwick Piñera]] (UDI) and Juan Pablo Letelier Morel ([[Socialist Party of Chile|PS]]) as part of the 9th senatorial constituency (O'Higgins Region). -->
+
+==References==
+<references/>
+
+{{Communes in O'Higgins Region}}
+
+{{DEFAULTSORT:Chepica}}
+[[Category:Communes of Chile]]
+[[Category:Populated places in Colchagua Province]]

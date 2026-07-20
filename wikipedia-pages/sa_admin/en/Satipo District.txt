@@ -1,0 +1,127 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Satipo
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = Satipo.png
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Satipo District in the [[Satipo Province]]
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Junín Region|Junín]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Satipo Province|Satipo]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = December 18, 1940
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Satipo (town)|Satipo]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Cesar Augusto Merea Tello
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 732.02
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 632
+| population_footnotes    = 
+| population_total        = 41939
+| population_as_of        = [[2017 Peru Census|2017]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 120601
+| website                 = 
+| footnotes               = 
+}}
+
+'''Satipo District''' is one of eight [[districts of Peru|districts]] of the [[Satipo Province]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Satipo, elevation {{convert|577|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 30.7
+|Feb high C = 30.4
+|Mar high C = 30.8
+|Apr high C = 31.4
+|May high C = 30.0
+|Jun high C = 30.9
+|Jul high C = 31.2
+|Aug high C = 32.1
+|Sep high C = 32.4
+|Oct high C = 32.4
+|Nov high C = 32.2
+|Dec high C = 30.8
+|year high C = 
+|Jan low C = 19.8
+|Feb low C = 19.7
+|Mar low C = 19.6
+|Apr low C = 19.4
+|May low C = 18.8
+|Jun low C = 17.7
+|Jul low C = 16.7
+|Aug low C = 16.8
+|Sep low C = 17.6
+|Oct low C = 18.8
+|Nov low C = 19.5
+|Dec low C = 19.6
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 307.5
+|Feb precipitation mm = 293.1
+|Mar precipitation mm = 248.1
+|Apr precipitation mm = 144.6
+|May precipitation mm = 86.8
+|Jun precipitation mm = 75.6
+|Jul precipitation mm = 61.6
+|Aug precipitation mm = 96.2
+|Sep precipitation mm = 108.0
+|Oct precipitation mm = 175.4
+|Nov precipitation mm = 169.1
+|Dec precipitation mm = 247.0
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Satipo Province}}
+
+{{coord|11.2499|S|74.6423|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Department of Junín]]
+[[Category:Districts of the Satipo province]]
+[[Category:1940 establishments in Peru]]
+
+
+{{Junín-geo-stub}}

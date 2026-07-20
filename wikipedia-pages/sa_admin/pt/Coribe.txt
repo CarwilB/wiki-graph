@@ -1,0 +1,74 @@
+{{Info/Município do Brasil
+<!-- GeoID=2909109 -->
+<!-- Cabeçalho -->| nome = Coribe
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão_de_Coribe_BA.jpg
+| bandeira = Bandeira de Coribe BA.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 14 de agosto
+| fundação = 
+| gentílico = [[wikt:coribense|coribense]]<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/coribe.html|título=Cidades e Estados {{!}} Coribe|publicado=IBGE|acessodata=25 de novembro de 2025}}</ref>
+| lema = Opus et honestatis
+| prefeito = Murilo Ferreira Viana (Doutor Murillo)<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/eleicoes/2024/noticia/2024/12/31/prefeito-de-coribe-ba-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|título=Prefeito de Coribe (BA) toma posse nesta quarta (1º); veja lista de vereadores eleitos|publicado=g1|data=31 de dezembro de 2024|acessodata=25 de novembro de 2025}}</ref><ref>{{Citar web|url=https://www.otempo.com.br/eleicoes/2024/candidatos/bahia/coribe/prefeito/doutor-murillo-44|título=Eleições 2024 – Perfil do Prefeito Eleito Doutor Murillo|publicado=O Tempo|acessodata=25 de novembro de 2025}}</ref><ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-coribe-tomam-posse-veja-lista-de-eleitos.ghtml|título=Prefeito e vereadores de Coribe tomam posse; veja lista de eleitos|publicado=g1|data=1 de janeiro de 2021|acessodata=25 de novembro de 2025}}</ref>
+| partido = [[União Brasil]]
+| mandato_início = 2021
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Bahia Municip Coribe.svg
+| latP = S
+| latG = 13
+| latM = 49
+| latS = 44
+| lonP = O
+| lonG = 44
+| lonM = 27
+| lonS = 14
+| estado = Bahia
+| mesorregião = 
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = 
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Carinhanha]], [[Cocos]], [[Feira da Mata]], [[Jaborandi_(Bahia)|Jaborandi]] e [[São Félix do Coribe]]<ref>{{Citar web|url=https://www.coribe.ba.gov.br/site/ConvenioTransferenciaDetalhe/748|título=Detalhes do Convênio|publicado=Prefeitura Municipal de Coribe|acessodata=25 de novembro de 2025}}</ref><ref>{{Citar web|url=https://www.al.ba.gov.br/midia-center/noticias/37738|título=Jusmari Oliveira comemora aniversário dos municípios de Coribe, Ibotirama e Cocos|publicado=Assembleia Legislativa da Bahia (ALBA)|acessodata=25 de novembro de 2025}}</ref>
+| dist_capital = <!-- Características geográficas -->
+| área = 2665.141
+| área_ref = (2024)<ref name="IBGE_Área">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/coribe.html|título=Cidades e Estados {{!}} Coribe|publicado=IBGE|acessodata=25 de novembro de 2025}}</ref>
+| área_urbana = {{formatnum:4.38}}
+| distritos = 
+| área_urbana_data = 2019/[[IBGE]]
+| área_urbana_ref = <ref name="IBGE_Áreaurbananizada2019">{{Citar web |url=https://cidades.ibge.gov.br/brasil/ba/coribe/panorama|título=Coribe {{!}} Panorama {{!}} Meio Ambiente|publicado=IBGE|acessodata=25 de novembro de 2025}}</ref>
+| população = 13990 <!-- MANTER A POPULAÇÃO DO CENSO 2022 -->
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| população_ref = <ref name="IBGE">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/coribe.html|título=Cidades e Estados {{!}} Coribe|publicado=IBGE|acessodata=25 de novembro de 2025}}</ref>
+| altitude = 
+| população_est = 14463 <!-- ATUALIZAR AS ESTIMATIVAS AQUI -->
+| população_est_em = 2025<ref name="IBGE">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/coribe.html|título=Cidades e Estados {{!}} Coribe|publicado=IBGE|acessodata=25 de novembro de 2025}}</ref>
+| clima = 
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.600 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=16 de agosto de 2013}}</ref>
+| pib = {{formatnum:54861.975}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 3674.37
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''Coribe''' é um [[Municípios do Brasil|município brasileiro]] do [[Interior da Bahia|interior]] e oeste do [[Unidades federativas do Brasil|estado]] da [[Bahia]].<ref>{{Citar web|url=https://www.coribe.ba.gov.br/site/ConvenioTransferenciaDetalhe/748|titulo=SAI - Detalhes Convênio - Prefeitura Municipal de Coribe|acessodata=2025-11-25|website=www.coribe.ba.gov.br}}</ref> Está localizado na [[Região Geográfica Intermediária de Barreiras|Região Intermediária de Barreiras]].<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/coribe/panorama|titulo=Coribe {{!}} Panorama {{!}} TERRITÓRIO|acessodata=2025-11-25|website=IBGE}}</ref>
+
+Possui uma [[população]] de 14 463 habitantes, conforme a [[Lista de municípios da Bahia por população (2025)|estimativa de 2025]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE).<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/coribe.html|titulo=Coribe (BA) {{!}} Cidades e Estados {{!}} IBGE|acessodata=2025-11-25|website=www.ibge.gov.br}}</ref>
+
+{{Referências}}
+
+==Ligações externas==
+*[http://www.coribe.ba.gov.br/ Prefeitura]
+
+{{Esboço-municípiosbr/Bahia}}
+{{Municípios da Bahia}}
+{{Portal3|Bahia|Geografia}}
+
+[[Categoria:Coribe| ]]
+[[Categoria:Fundações na Bahia em 1958]]
+[[Categoria:Topônimos de origem tupi na Bahia]]

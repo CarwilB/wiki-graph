@@ -1,0 +1,75 @@
+{{Info/Município do Brasil
+<!-- GeoID=3116902 -->
+<!-- Cabeçalho -->
+| nome = Comendador Gomes
+| foto = 
+| leg_foto = 
+| apelido = 
+| padroeiro = [[São Sebastião]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=1 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão = Comendador Gomesmgbrasao.png
+| bandeira = Comendador Gomesmgbandeira.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| CEP = 38250-000 a 38259-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| fundação = {{nowrap|{{dtlink|27|12|1948|idade}}}}
+| gentílico = comendadorense <ref name = IBGE>{{citar web |url= https://cidades.ibge.gov.br/brasil/mg/comendador-gomes/panorama|título=IBGE|publicado = Censo Demográfico - 2022}}</ref>
+| lema = 
+| prefeito = Reginaldo da Silva <ref name = TSE>{{citar web |url= https://divulgacandcontas.tse.jus.br/divulga/#/candidato/SUDESTE/MG/2045202024/130002231338/2024/43370|título=TSE|publicado = Divulgação de Candidaturas e Contas Eleitorais - Resultado / 2024}}</ref>
+| partido = [[Partido Liberal (2006)|PL]]
+| fim_mandato = 2028 
+<!-- Localização -->
+| mapa = MinasGerais Municip ComendadorGomes.svg
+| latP = S
+| latG = 19
+| latM = 41
+| latS = 52
+| lonP = O
+| lonG = 49
+| lonM = 04
+| lonS = 51
+| estado = Minas Gerais
+| mesorregião = [[Mesorregião do Triângulo Mineiro e Alto Paranaíba|Triângulo Mineiro/Alto Paranaíba]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Frutal|Frutal]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Prata (Minas Gerais)|Prata]], [[Itapagipe]], [[Frutal]], [[Campo Florido]], [[Campina Verde]]
+| dist_capital = 617
+<!-- Características geográficas -->
+| área = 1041.047
+| área_ref = <ref name = IBGE/>
+| população = 2773
+| data_pop = Censo [[IBGE]]/2022<ref name=IBGE/>
+| altitude = 
+| clima = tropical
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.697 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2000">{{citar web |url=https://www.undp.org/pt/brazil/idhm-municipios-2010|titulo=PNUD|publicado=Índice de Desenvolvimento Humano dos Municípios - 2010}}</ref>
+| pib = {{formatnum:154809.443}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name=PIB>{{citar web |url= https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3116902|titulo=PIB por Município|publicado=Produto Interno Bruto dos Municípios - 2021}}</ref>
+| pib_per_capita = 49491.51
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name=PIB/>
+| site_prefeitura = [http://www.comendadorgomes.mg.gov.br/ comendadorgomes.mg.gov.br]
+| site_câmara = [http://www.comendadorgomes.mg.leg.br/ comendadorgomes.mg.leg.br]
+}}
+'''Comendador Gomes''' é um [[Município (Brasil)|município brasileiro]] do [[Interior de Minas Gerais|interior]] do [[Unidades federativas do Brasil|estado]] de [[Minas Gerais]], [[Região Sudeste do Brasil|Região Sudeste]] do país. De acordo com o censo de 2022, sua população naquele ano era de {{fmtn|2773}} habitantes.<ref name=IBGE/>
+
+== História ==
+O [[Distritos do Brasil|distrito]] de Comendador Gomes foi criado em 1923 e elevado à categoria de município em 1948, desmembrando-se de [[Frutal]]<ref name="IBGE_história">{{Citar web |url=https://cidades.ibge.gov.br/brasil/mg/comendador-gomes/historico |titulo=Comendador Gomes |acessodata=2022-01-20 |publicado=Instituto Brasileiro de Geografia e Estatística}}</ref>
+
+==Geografia==
+
+Localiza-se na Mesorregião do [[Triângulo Mineiro]]. <ref name = IBGE/>
+== Ligações externas ==
+* {{Link||2=https://www.comendadorgomes.mg.gov.br |3=Prefeitura}}
+* {{Link||2=https://www.comendadorgomes.mg.leg.br |3=Câmara}}
+
+{{referências}}
+
+{{Esboço-municípiosbr/Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais|Comendador Gomes]]
+[[Categoria:Fundações em Minas Gerais em 1948]]

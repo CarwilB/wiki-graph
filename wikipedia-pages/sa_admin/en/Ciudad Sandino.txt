@@ -1,0 +1,111 @@
+{{Infobox settlement
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = Ciudad Sandino
+|settlement_type        = Municipality<!--For Town or Village (Leave blank for the default City)-->
+|other_name             =
+|native_name            = <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Nicaragua<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = right
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Nicaragua
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Nicaragua}}
+|subdivision_type1      = [[Departments of Nicaragua|Department]]
+|subdivision_name1      = [[Managua (department)|Managua]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = Mayor
+|leader_name            = 
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         =
+|area_total_km2         = 51.1 |area_land_km2          = <!--See table @ Template:Infobox settlement for details on automatic unit conversion-->
+|area_water_km2         =
+|area_total_sq_mi       =
+<!-- Population   ----------------------->
+|population_as_of               = 2022 estimate
+|population_footnotes           = <ref>[https://www.citypopulation.de/en/nicaragua/admin/ciudad_sandino/5522/ Citypopulation.de] Population of Ciudad Sandino municipality</ref>
+|population_note                =
+|population_total               = 129610
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 127517 <small>([[List of Nicaraguan cities by population|5th Nicaragua]])</small>
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|12|9|N|86|21|W|region:NI|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|website                = 
+|footnotes              = 
+}}
+
+'''Ciudad Sandino''' is a city and [[Municipalities of Nicaragua|municipality]] in the [[Managua (department)|Managua]] [[Departments of Nicaragua|department]] of [[Nicaragua]].
+
+Located just outside western Managua, it had an estimated population of 109,644 in mid-2015.<ref>Official government estimate.</ref>
+
+== History ==
+The beginning of the foundation of Ciudad Sandino goes back to 1969 when serious floods occurred due to the rise of [[Lake Managua|Lake Xolotlán]] as a result of a tropical depression in Nicaragua. The neighborhoods adjacent to the coast of the lake such as La Tejera, Miralagos, Quinta Nina, Acahualinca and others were affected by the phenomenon, causing some inhabitants to move to a safer place.{{cn|date=January 2023}}
+
+== Notable residents ==
+
+* [[Yader Cardoza|Yader Cardozo]]
+
+== See also ==
+
+* [[CECIM]]
+
+==References==
+{{Reflist}}
+
+{{Managua Department}}
+{{Authority control}}
+
+{{Coord|12|9|55.64|N|86|21|28.39|W|source:itwiki_region:NI|display=title}}
+
+[[Category:Municipalities of the Managua Department]]
+
+
+{{Nicaragua-geo-stub}}

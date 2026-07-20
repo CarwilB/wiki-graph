@@ -1,0 +1,154 @@
+{{Info/Município do Brasil
+<!-- GeoID=5100250 -->
+<!-- Cabeçalho -->| nome = Alta Floresta
+| foto = Alta Floresta from ISS2011.jpg
+| leg_foto = Vista da cidade de Alta Floresta, fotografada pela [[Estação Espacial Internacional]] (EEI)
+| apelido = <!-- Dados gerais -->
+| brasão = Alta Floresta.PNG
+| bandeira = Bandeira de Alta Floresta.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|19|5|1976|idade}}}}
+| gentílico = alta-florestense<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/mt/alta-floresta.html|título=Cidades e Estados|publicado=IBGE|acessodata=21 de março de 2025}}</ref>
+| lema = ''Nada resiste ao trabalho''<ref>{{citar web|url=http://altafloresta.mt.gov.br/simbolosmunicipais/|titulo=Símbolos Municipais|publicado=Prefeitura Municipal de Alta Floresta|data=2010|acessodata=2019-06-05|wayb=20110430081343}}</ref>
+| prefeito<!--enciclopédia, sem apelidos! --> = Valdemar Gamba (Chico Gamba)<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2024/noticia/2024/12/31/prefeito-de-alta-floresta-mt-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|título=Prefeito de Alta Floresta (MT) toma posse nesta quarta (1º); veja lista de vereadores eleitos|publicado=g1|data=2024|acessodata=21 de março de 2025}}</ref><ref>{{Citar web|url=https://www.otempo.com.br/eleicoes/2024/candidatos/mato-grosso/alta-floresta/prefeito/chico-gamba-44|título=Eleições 2024 – Perfil do Prefeito Eleito Chico Gamba|publicado=O Tempo|acessodata=21 de março de 2025}}</ref><ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/noticia/2021/01/01/prefeito-e-vereadores-de-alta-floresta-tomam-posse-veja-lista-de-eleitos.ghtml|título=Prefeito e vereadores de Alta Floresta tomam posse; veja lista de eleitos|publicado=g1|data=2021|acessodata=21 de março de 2025}}</ref>
+| partido = [[União Brasil]]
+| mandato_início = 2021
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 15<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2024/noticia/2024/12/31/prefeito-de-alta-floresta-mt-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|título=Prefeito de Alta Floresta (MT) toma posse nesta quarta (1º); veja lista de vereadores eleitos|publicado=g1|data=2024|acessodata=21 de março de 2025}}</ref>
+<!-- Localização -->| mapa = MatoGrosso Municip AltaFloresta.svg
+| latP = S
+| latG = 09
+| latM = 52
+| latS = 32
+| lonP = O
+| lonG = 56
+| lonM = 05
+| lonS = 10
+| estado = Mato Grosso
+| mesorregião = [[Mesorregião do Norte Mato-Grossense|Norte Mato-grossense]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Alta Floresta|Alta Floresta]]
+| data_microrregião = IBGE/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = '''Norte:''' [[Pará|Estado do Pará]]; '''Sul:''' [[Tabaporã]], [[Nova Canaã do Norte]] e [[Juara]]; '''Leste:''' [[Guarantã do Norte]] e [[Carlinda]]; '''Oeste:''' [[Nova Monte Verde]] e [[Paranaíta]]
+| dist_capital = 800
+<!-- Características geográficas -->| área = 8947.069
+| área_pos = [[Lista de municípios do Brasil por área|BR: 153º]]
+| área_ref = <ref name="IBGE_Área">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/mt/alta-floresta.html? |titulo=Área |acessodata=2024-02-20 |publicado=IBGE}}</ref>
+| população = 58613
+| data_pop = Censo Demográfico 2022<ref name="IBGE_CD_2022">{{citar web |url=https://cidades.ibge.gov.br/brasil/mt/alta-floresta/panorama|título=Censo Demográfico 2022| obra = |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|data= 25 de outubro de 2023 |acessodata = 15 de janeiro de 2025}}</ref>
+| altitude = 283
+| clima = tropical chuvoso
+| sigla_clima = Awi
+<!-- Indicadores -->| idh = 0.714 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web|url=http://www.atlasbrasil.org.br/2013/pt/ranking |título=Ranking decrescente do IDH-M dos municípios do Brasil|data=2010|obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD)|acessodata=15 de janeiro de 2017}}</ref>
+| pib = {{formatnum:2.111.882,50}} mil
+| data_pib = IBGE/2021<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/mt/alta-floresta/pesquisa/38/46996  |titulo=Produto Interno Bruto de Alta Floresta|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=30 de Janeiro de 2021}}</ref>
+| pib_per_capita = 40531.28
+| data_pib_per_capita = IBGE/2021<ref name="IBGE_PIB"/>
+| site_oficial = http://www.altafloresta.mt.gov.br/
+}}
+'''Alta Floresta''' é um [[Municípios do Brasil|município brasileiro]] do norte do [[Unidades federativas do Brasil|estado]] de [[Mato Grosso]].
+
+'''Alta Floresta''' recebeu esse nome em referência à vegetação característica da região, composta por uma [[floresta]] alta e densa, localizada na [[Amazônia]] mato-grossense.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/mt/alta-floresta/historico|titulo=História & Fotos|acessodata=2025-03-21|website=cidades.ibge.gov.br}}</ref>
+
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->== Demografia ==
+
+=== População ===
+Segundo o [[Censo demográfico do Brasil de 2022|Censo 2022]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), a [[Lista de municípios de Mato Grosso por população|população]] do município de Alta Floresta foi de 58 613 habitantes. Já de acordo com a estimativa de 2024, a população foi de 61 291 habitantes.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/mt/alta-floresta/panorama|titulo=POPULAÇÃO|acessodata=2025-03-21|website=cidades.ibge.gov.br}}</ref>
+
+== Geografia ==
+
+=== Clima ===
+
+O [[clima]] local é [[Clima tropical|tropical]] chuvoso, com duas estações bem definidas: [[verão]] chuvoso e [[inverno]] seco. As temperaturas anuais variam entre 20°C e 38°C, com média de 26°C, nas as máximas podem beirar os 40°C (máxima de 37,8 °C, em [[7 de setembro]] de [[2010]] e [[19 de setembro]] de [[2011]]). Nos meses chuvosos, pode atingir 2.750mm (o máximo acumulado em 24h foi de 182,0 mm, em [[10 de janeiro]] de [[1980]]).<ref name="Agritempo">{{citar web |url=http://www.agritempo.gov.br/agroclima/pesquisaWeb?uf=MT |título=Dados Meteorológicos - Mato Grosso |autor=Sistema de Monitoramento Agrometeorológico (Agritempo) |acessodata=13 de janeiro de 2013 |arquivourl=https://web.archive.org/web/20131014063526/http://www.agritempo.gov.br/agroclima/pesquisaWeb?uf=MT |arquivodata=2013-10-14 |urlmorta=yes }}</ref>
+
+=== Bioma ===
+O [[bioma]] de Alta Floresta é a Amazônia.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/mt/alta-floresta/panorama|titulo=MEIO AMBIENTE|acessodata=2025-03-21|website=cidades.ibge.gov.br}}</ref>
+
+== Últimos prefeitos eleitos ==
+{| class="wikitable"
+|+
+!Ano
+!Prefeito
+!Partido
+!Votos
+!%
+!Ref
+|-
+|2004
+|Maria Izaura
+|[[Partido Democrático Trabalhista|PDT]]
+|9.014
+|34,74
+|<ref>{{Citar web|url=https://eventos.noticias.uol.com.br/eleicoes/MT/index-89877.html|titulo=UOL Eleições 2004|acessodata=2024-01-26|website=eventos.noticias.uol.com.br}}</ref>
+|-
+|2008
+|Maria Izaura
+|[[Partido Democrático Trabalhista|PDT]]
+|11.592
+|42,89
+|<ref>{{Citar web|url=http://apuracao.terra.com.br/2008/1turno/mt/89877/index.shtml|titulo=Terra - EleiÃ§Ãµes 2008 - reportagens, notÃ­cias, fotos, vÃ­deos, guia do eleitor, prefeitos, vereadores Terra|acessodata=2024-01-27|website=apuracao.terra.com.br}}</ref>
+|-
+|2012
+|Dr. Asiel
+|[[Movimento Democrático Brasileiro (1980)|PMDB]]
+|16.761
+|60,98
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/apuracao/alta-floresta.html|titulo=Apuração das Eleições 2012 em Alta Floresta {{!}} Mato Grosso {{!}} G1|acessodata=2024-01-27|website=g1.globo.com|lingua=pt}}</ref>
+|-
+|2016
+|Dr. Asiel
+|[[Movimento Democrático Brasileiro (1980)|PMDB]]
+|11.759
+|44,56
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2016/apuracao/alta-floresta.html|titulo=Resultado da apuração das Eleições 2016 em Alta Floresta para prefeito e vereador|acessodata=2024-01-27|website=g1|lingua=pt-br}}</ref>
+|-
+|2020
+|Chico Gamba
+|[[Partido da Social Democracia Brasileira|PSDB]]
+|11.739
+|42,44
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2020/resultado-das-apuracoes/alta-floresta.ghtml|titulo=Resultado das Eleições e Apuração Alta Floresta-MT no 1º Turno {{!}} G1 Eleições|acessodata=2024-01-27|website=g1|lingua=pt-br}}</ref>
+|-
+|2024
+|Chico Gamba
+|[[União Brasil|UNIÃO]]
+|23.912
+|82,46
+|<ref>{{Citar web|url=https://g1.globo.com/mt/mato-grosso/eleicoes/2024/resultado-das-apuracoes/alta-floresta.ghtml|titulo=Apuração das Eleições em Alta Floresta (MT) {{!}} Eleições 2024|acessodata=2025-03-16|website=G1|lingua=pt-br}}</ref>
+|}
+
+{{Referências}}
+
+== Ligações externas ==
+{{Correlatos
+|commons         =
+|commonscat      = Alta Floresta
+|wikisource      =
+|wikiquote       =
+|wikiquotecat    =
+|wikilivros      =
+|wikinoticias    =
+|wikinoticiascat =
+|wikcionario     = Alta Floresta
+|wikispecies     =
+|wikiversidade   =
+|meta            =
+|metacat         =
+}}
+* [http://www.altafloresta.mt.gov.br Prefeitura Municipal]
+* [http://www.altafloresta.mt.leg.br/ Câmara Municipal]
+* [http://www.fundacaocristalino.org.br Fundação Ecológica Cristalino]
+
+{{Esboço-municípiosbr/Mato Grosso}}
+{{Subdivisões de Mato Grosso}}
+{{Municípios do Mato Grosso}}
+{{Portal3|Mato Grosso}}
+
+{{DEFAULTSORT:Alta Floresta}}
+[[Categoria:Alta Floresta| ]]
+[[Categoria:Fundações em Mato Grosso em 1976]]

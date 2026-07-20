@@ -1,0 +1,518 @@
+{{Formatar referências|data=setembro de 2022}}
+{{Info/Município do Brasil
+<!-- GeoID=2403103 -->
+<!-- Cabeçalho -->| nome = Currais Novos
+| apelido = Princesa do Seridó"<br />"Capital da Scheelita
+<!-- Dados gerais -->| brasão = Brasão de Currais Novos-RN.jpg
+| bandeira = Bandeira_curraisnovos_rn.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = File:Hino Oficial da Cidade de Currais Novos RN.ogg
+| aniversário = [[15 de outubro]]
+| fundação = {{nowrap|{{dtlink|||1755|idade}}}}
+| emancipação = {{dtlink|15|10|1890|idade}}|Padroeiro(a):[[Sant'Ana]]
+| gentílico = currais-novense
+| lema = <!-- SLOGAN DE GOVERNO OU DE CAMPANHA NÃO É LEMA -->
+| prefeito = Lucas Galvão da Cruz
+| partido = [[Partido dos Trabalhadores|PT]]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 13
+| mapa = Brazil Rio Grande do Norte Currais Novos location map.svg
+| latP = S
+| latG = 06
+| latM = 15
+| latS = 39
+| lonP = O
+| lonG = 36
+| lonM = 30
+| lonS = 54
+| estado = Rio Grande do Norte
+| região_intermediária = Caicó
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = Currais Novos
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = Norte: [[Lagoa Nova]] e [[Cerro Corá (Rio Grande do Norte)|Cerro Corá]]; Sul: [[Frei Martinho]] e [[Picuí]], ambas na [[Paraíba]]; Leste: [[Campo Redondo]] e [[São Tomé (Rio Grande do Norte)|São Tomé]]; e Oeste: [[São Vicente (Rio Grande do Norte)|São Vicente]] e [[Acari (Rio Grande do Norte)|Acari]].
+| dist_capital = 186
+| dist_capital_ref = <ref name="Distância entre Natal e municípios do Rio Grande do Norte">{{citar web|url=http://www.femurn.org.br/femurn/municipio/distancias.asp|titulo=Distâncias dos Municípios do Rio Grande do Norte a Natal-RN|autor=FEMURN|data=|acessodata=7 de agosto de 2011|arquivourl=https://web.archive.org/web/20101216173239/http://www.femurn.org.br/femurn/municipio/distancias.asp|arquivodata=2010-12-16|urlmorta=sim}}</ref>
+<!-- Características geográficas -->| área = 864.349
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = 8510
+| área_urbana_data = 2019
+| população = 42930
+| população_pos = [[Lista de municípios do Rio Grande do Norte por população|RN: 11º]]
+| população_est = 42930
+| data_pop = [[IBGE]]/2024<ref name="IBGE_Pop_2024">{{citar web|url=https://cidades.ibge.gov.br/brasil/rn/currais-novos/panorama}}</ref>
+| altitude = 445
+| população_est_em = 2024
+| clima = [[semiárido]]
+| sigla_clima = BSh
+<!-- Indicadores -->| CEP = 59380-000
+| idh = 0.691 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios do Rio Grande do Norte por IDH|RN: 6°]]
+| gini = 0,58
+| data_gini = 2020
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf
+|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data= 2010 |obra= Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=6 de agosto de 2013}}</ref>
+| pib = {{formatnum:955846.89}} mil
+| data_pib = [[IBGE]]/[[2023]]<ref name="IBGE_PIB">{{citar web|url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2403103}}</ref>
+| pib_per_capita = 23136.71
+| data_pib_per_capita = [[IBGE]]/[[2023]]<ref name="IBGE_PIB">{{citar web|url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2403103}}</ref>
+| site_prefeitura = {{Url|https://curraisnovos.rn.gov.br}}
+| site_câmara = {{Url|https://www.curraisnovos.rn.leg.br}}
+| mesorregião = Central Potiguar
+| microrregião = Seridó Oriental
+| imagem_montagem = {{Imagem múltipla
+|border            = infobox
+|perrow            = 1/2/2/1
+|total_width       = 300
+|caption_align = center
+ | image1   = Vista Currais Novos.jpg
+ | caption1 = Panorama urbano da cidade
+ | image2   = Matriz de Sant'Ana (Currais Novos).jpg
+ | caption2 = Matriz de Sant'Ana  
+ | image3   = Monumento Cristo Rei.jpg
+ | caption3 = Praça Cristo Rei
+ | image4   = Currais Novos vista aérea panorama.jpg
+ | caption4 = Vista Aérea Panoramica da Cidade BR-226
+ | color  = white
+}}
+}}
+'''Currais Novos''' é um [[Município (Brasil)|município brasileiro]] no [[Interior do Rio Grande do Norte|interior]] do [[Unidades federativas do Brasil|estado]] do [[Rio Grande do Norte]]. Localiza-se na região do [[Seridó]], junto à divisa com o estado da [[Paraíba]], a 186 km da capital estadual, [[Natal (Rio Grande do Norte)|Natal]]. De acordo com a estimativa realizada pelo IBGE ([[Instituto Brasileiro de Geografia e Estatística]]) no ano de 2024 sua população era estimada em 42.930 habitantes, sendo assim o [[Lista de municípios do Rio Grande do Norte por população|décimo primeiro mais populoso de todo o estado]].<ref>ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2021/estimativa_dou_2021_20210827.pdf</ref><ref>http://g1.globo.com/rn/rio-grande-do-norte/noticia/2012/08/dez-maiores-municipios-do-rn-somam-1724986-habitantes.html</ref><ref>http://www.jeansouza.com.br/sem-categoria/segundo-ibge-currais-novos-e-9a-cidade-mais-populosa-rn-com-44-710-habitantes/</ref><ref>http://www.gomesdemelo.com.br/curraisnovos.html</ref> Dados do [https://cidades.ibge.gov.br/brasil/rn/currais-novos/panorama IBGE Cidades], indicam que, em 2022, o município estava na sexagésima terceira posição entre os municípios mais populosos do estado, e na 785ª entre os municípios brasileiros.
+
+Desde o início de sua fundação, sempre se destacou e se diferenciou das outras [[Seridó (Rio Grande do Norte)|cidades adjacentes]]. Ao lado de [[Paris]] e do [[Rio de Janeiro (cidade)|Rio de Janeiro]] a cidade avançou repentinamente em vários aspectos, sendo eles: [[Arquitetura|arquitetônicos]], [[político]]s, [[Economia|econômicos]], [[geográficos]], [[Hierarquia urbana|hierárquicos]], [[culturais]]. No [[século XX]] a cidade já contava com ideias [[cosmopolita]]s e [[progressista]]s possuindo código de postura de acordo com os prenúncios que regem o progresso e a [[civilidade]] da nação brasileira, se tornando uma das cidades mais urbanizadas e modernas do [[Brasil]],  portanto sendo comparada aos principais centros urbanos existentes.<ref>http://cchla.ufrn.br/espacialidades/v3n2/genison.pdf</ref> Sendo uma das cidades mais importantes e influentes do [[Nordeste brasileiro|Nordeste]] e a principal da região<ref>http://www2.ifrn.edu.br/ocs/index.php/congic/ix/paper/viewFile/1218/133</ref> foi a primeira cidade do [[Norte brasileiro|Norte]]-[[Região Nordeste do Brasil|Nordeste]] a possuir [[TV a cabo|TV a Cabo]],<ref>http://www.cnagitos.com/index.php/noticias/item/2182-siderley-menenzes-lan%C3%A7a-projeto-de-expans%C3%A3o-da-sidys</ref> e ainda hoje se destaca pela abundância de meios de comunicação, prova disso, são as diversas empresas de mídas presentes em seu território e o forte papel que elas exercem.<ref>http://www.cnagitos.com/index.php</ref><ref>http://fotovideo.cuiket.com.br/rio-grande-do-norte/emissoras-e-retransmissoras-radio/currais-novos/</ref>
+
+Seu símbolo turístico é a estátua "Cristo-Rei", réplica fiel, mas em menor proporção, da estátua do [[Cristo Redentor]], que foi trazida da [[França]] e doada por Cel. Manoel Salustino em [[1937]].<ref>{{Citar web |url=http://www.curraisnovos.rn.gov.br/portal1/municipio/ponto_turistico.asp?iIdMun=100124035 |título=Turismo |data= |acessodata= |arquivourl=https://web.archive.org/web/20110917030641/http://www.curraisnovos.rn.gov.br/portal1/municipio/ponto_turistico.asp?iIdMun=100124035 |arquivodata=2011-09-17 |urlmorta=sim }}</ref>
+
+Na [[Hierarquia urbana do Brasil|hierarquia urbana federal]] é considerada um [[Demografia do Brasil#Hierarquia urbana|centro sub-regional]], deste modo tem uma influencia direta sobre os municípios subordinados de [[Acari (Rio Grande do Norte)|Acari]], [[Bodó]], [[Carnaúba dos Dantas]], [[Cerro Corá (Rio Grande do Norte)|Cerro Corá]], [[Florânia]], [[Lagoa Nova]], [[São Vicente (Rio Grande do Norte)|São Vicente]], [[Tenente Laurentino Cruz]] e [[Frei Martinho]] (este último na [[Paraíba]]).<ref>http://www.mma.gov.br/estruturas/PZEE/_arquivos/regic_28.pdf</ref> Suas principais atividades econômicas são a [[agricultura]], [[pecuária]], [[comércio]] e a [[extração mineral]]. De forte formação geológica, o município também se destaca por abrigar a Mina Brejuí, a maior mina de [[scheelita]] da [[América do Sul]]<ref>{{Citar web |url=http://www.minabrejui.com.br/ |título= Minabrejui.com|data= |acessodata=}}</ref> e o [[cânion dos Apertados]], único [[Canhão (geologia)|cânion]] de rocha [[granito|granítica]] do mundo.<ref>http://www.aventuramango.com.br/2011/07/destinos-de-turismo-de-aventura-currais.html</ref>
+
+== Etimologia ==
+Desde a sua fundação, Currais Novos já aspirava ao novo com a edificação dos currais de gado de Cipriano Lopes Galvão, fundador da cidade. Esses currais, tidos como modernos atraíam a atenção das pessoas que vinham de longe para conhecer essa obra que, naquele momento, era fruto de uma engenhosidade nunca vista na região. E foi desses currais feitos de pau a pique que Currais Novos herdou sua toponímia e, a partir daí, se expandiu através de uma urbanização geometricamente traçada, de influência jesuítica, com ruas largas, assumindo ao longo do tempo " ares de cidade grande ".
+
+== História ==
+=== Origens ===
+A cidade de Currais Novos foi colonizada inicialmente por Criadores de Gado, dentre os quais o mais importante foi [[Cipriano Lopes Galvão]], nomeado Coronel do Regimento de Cavalaria da Ribeira do Seridó pelo então governador [[Pedro de Albuquerque Melo]], e agricultores que têm em sua origem cristãos-novos vindos dos [[Açores]] e de [[Portugal]] continental.
+
+Cipriano Lopes Galvão veio de Igarassu- PE com sua esposa Adriana de Holanda e Vasconcelos no ano de 1754 para a região do Totoró. No local, fixou residência e fundou uma fazenda de gado. Quando requereu as terras em 1754, cujo requerimento consta no livro número 5 de [[Sesmaria]]s do Rio Grande do Norte, já morava no local há anos e tinha seu rebanho bovino com os devidos empregados, chamados de [[vaqueiro]]s. É certo que sua sesmaria abrangia desde a bifurcação entre os rios Totoró e Maxinaré até a região do [[rio Currais Novos|rio São Bento]].
+
+Na época, não existia o município de [[Acari (Rio Grande do Norte)|Acari]] nem o de Vila do Príncipe (atual [[Caicó]]) e toda a região, então denominada Ribeira do seridó, pertencia à Paraíba.
+
+Aproveitando as boas pastagens que o Rio São Bento oferecia, o gado de seu rebanho se deslocava até aí para se alimentar e beber, fato que dificultava o trabalho dos seus empregados. Observando tal dificuldade, resolveu construir [[curral|currais]] de [[pau a pique]], com troncos de aroeira, nos quais tirava- se o leite das vacas, adestrava-se os bezerros e marcava-se o restante do gado com o método do ferro moldado e aquecido no fogo. Contavam com uma infraestrutura para a troca e comercialização, bem como para a hospedagem dos parceiros comerciais. A partir destes, casas começaram a ser construídas e vários outros fazendeiros passaram a requerer terras nas circunvizinhanças para aproveitar a proximidade com a emergente [[feira de gado]].
+
+=== Origem e evolução do nome ===
+Com o crescimento da feira de gado, o Coronel Cipriano resolveu desmembrar o espaço de suas terras, dando-lhe o nome de Fazenda Bela Vista. Após sua morte em 1764, seu filho, o Capitão-Mor Cipriano Lopes Galvão Filho, assumiu os negócios, reformou os currais e investiu cada vez mais no comércio do gado. Bela Vista foi ficando cada vez mais movimentada, já que era ponto de encontro comercial de várias partes do estado. Todos os [[tropeiro]]s e viajantes marcavam suas reuniões nos "Currais Novos do Capitão", nome pelo qual o crescente povoado passou a ser designado.
+
+A partir de 1813, com a morte do seu dono, mudou-se o nome definitivamente para povoado Currais Novos, nome que persiste até os nossos dias, a preferência pelo nome  "Currais Novos" fundamenta-se na troca feita pelos moradores, isto é, as pessoas que residiam próximo aos currais velhos existentes no povoado passaram a residir perto dos novos currais.
+
+No início do século XX, surgiu dentre os mais influentes a proposta de mudança do nome para Galvanópolis, em homenagem ao fundador. Tal ideia, apesar de ter ganhado força, não atingiu seu objetivo, uma vez que o próprio nome Currais Novos já relembra toda a origem e história do município.
+
+=== Povoado, Distrito, Vila e Município Emancipado ===
+O Totoró ficava na Ribeira do Seridó, pertencente à comarca da [[Paraíba]]. Criado o município de [[Caicó]] em [[31 de julho]] de [[1788]], com a denominação oficial de Vila do Príncipe, Currais Novos passou a partencer a Caicó.
+
+Depois da morte do idealizador da capela em [[13 de dezembro]] de [[1813]], o Capitão Gonsalo Lopes Galvão ficou na chefia das terras e do povoado. Organizou a construção das casas obedecendo o alinhamento de ruas, construiu a primeira [[casa paroquial]] e a primeira escola (só para meninos, como era de costume), além de outras obras de urbanização.
+
+Passou então ao município de [[Acari (Rio Grande do Norte)|Acari]] com a criação deste em [[11 de abril]] de [[1833]].
+
+Durante o reinado de [[Pedro II do Brasil|Dom Pedro II]], a povoação foi instituída Distrito de paz, através da resolução provincial nº 301 de [[6 de setembro]] de [[1854]].
+
+A Vila foi criada e desmembrada de Acari em [[15 de outubro]] de 1890 pelo Decreto Estadual nº 59, do então governador provisório [[Pedro Velho de Albuquerque Maranhão]], com instalação em Sessão Solene realizada no dia 26 de fevereiro de [[1891]] pelo então presidente da Intendência acariense, O Capitão Cipriano Bezerra de Santa Rosa.
+
+Após o desmembramento, o município de Currais Novos teve sua área delimitada pelo topógrafo Juventino da Silveira Borges. A posse da Intendência foi solenizada pelo Governador do Estado, sendo constituída pelos cidadãos: Laurentino Bezerra de Medeiros Galvão (presidente), seguindo-se dos Conselheiros (no papel de vereadores) Juventino da Silveira Borges, Sérvulo Pires de Albuquerque Galvão Filho, Francisco Bezerra de Medeiros e Moisés de Oliveira Galvão
+
+O município foi elevado à condição de cidade pela Lei nº 486, de [[29 de novembro]] de [[1920]], sancionada pelo Governador [[Antônio José de Melo e Sousa]], no 32º ano da República. Nessa época, a população era de 14 mil habitantes, com 12 ruas, 1 avenida, 2 praças e 3 travessas.
+
+== Geografia ==
+O território de Currais Novos corresponde a [[Lista de municípios do Rio Grande do Norte por área|1,6367% da superfície estadual]], com {{fmtn|864.349}} {{Abreviatura discreta|km²|quilômetro quadrado}} de área,<ref>{{citar web|url=https://www.ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/15761-areas-dos-municipios.html?t=acesso-ao-produto&c=2403103|título=Currais Novos {{!}} código: 2403103|autor=IBGE|acessodata=22/12/2023}}</ref> dos quais [[Lista de municípios do Rio Grande do Norte por área urbana|8,5106 km² em área urbana]].<ref>{{citar web|url=https://sidra.ibge.gov.br/Tabela/8418#/k/-497573414/resultado|título=Tabela 8418 - Áreas urbanizadas, Loteamento vazio, Área total mapeada e Subcategorias|autor=IBGE|ano=2019|acessodata=22/12/2023}}</ref> É limitado a norte por [[Lagoa Nova]] e [[Cerro Corá (Rio Grande do Norte)|Cerro Corá]]; a sul por [[Acari (Rio Grande do Norte)|Acari]], [[Frei Martinho]] e [[Picuí]], os dois últimos na [[Paraíba]]; a leste por [[Campo Redondo]] e [[São Tomé (Rio Grande do Norte)|São Tomé]] e a oeste por [[São Vicente (Rio Grande do Norte)|São Vicente]] e novamente Acari.<ref name="Perfil do seu município: Currais Novos"/> Pertence à região geográfica imediata de Currais Novos, que faz parte da região intermediária de Caicó, conforme nova divisão territorial em regiões geográficas vigente desde 2017;<ref>{{citar web |url=https://www.ibge.gov.br/geociencias/cartas-e-mapas/redes-geograficas/15778-divisoes-regionais-do-brasil.html?=&t=acesso-ao-produto |título=Acesso ao produto - 2017 Regiões Geográficas |autor=IBGE |acessodata=22/12/2023}}</ref> até essa data, quando vigoravam as [[Mesorregiões e microrregiões do Brasil|mesorregiões e microrregiões]], fazia parte da microrregião do Seridó Oriental, dentro da mesorregião Central Potiguar.<ref>{{citar web|url=https://www.ibge.gov.br/geociencias/cartas-e-mapas/redes-geograficas/15778-divisoes-regionais-do-brasil.html?edicao=16163&t=acesso-ao-produto |título=Acesso ao produto - 1990 Mesorregiões e Microrregiões Geográficas |autor=IBGE |acessodata=22/12/2023}}</ref>
+
+[[Imagem:Geosítio Canyon dos Apertados.jpg|thumb|O Rio Picuí no ''[[Cânion dos Apertados]]'', uma formação geológica inserida no Geoparque Seridó, uma área reconhecida em 2022 como um território de relevância mundial pela {{Abreviatura discreta|UNESCO|Organização das Nações Unidas para a Educação, Ciência e Cultura}} e que abrange Currais Novos e outros cinco municípios do Seridó potiguar, com área total de 2,8 mil km².<ref>{{citar web|url=https://g1.globo.com/rn/rio-grande-do-norte/noticia/2022/04/14/conheca-o-geoparque-serido-reconhecido-pela-unesco-como-territorio-de-relevancia-mundial.ghtml|título=Conheça o Geoparque Seridó, reconhecido pela Unesco como território de relevância mundial|data=14/04/2022|acessodata=22/12/2023}}</ref>]]
+O [[relevo]] do município, com altitudes entre 200 e 500 metros, está inserido no [[Planalto da Borborema]], constituído por [[rocha]]s [[Pré-Cambriana|pré-cambrianas]] dos grupos Caicó (com idade entre um bilhão e 2,5 bilhões de anos) e Seridó (de 570 milhões a um bilhão de anos), ambas pertencentes ao [[embasamento cristalino]].<ref name="Perfil do seu município: Currais Novos">{{citar web|url=http://adcon.rn.gov.br/ACERVO/idema/DOC/DOC000000000016632.PDF|título=Perfil do seu município: Currais Novos|autor={{Abreviatura discreta|IDEMA|Instituto de Desenvolvimento Sustentável e Meio Ambiente do Rio Grande do Norte}}|data=2008|acessodata=22/12/2023}}</ref> Dentre as formações naturais estão o [[Cânion dos Apertados]], a Lagoa do Santo (onde estão as pedras do Sino e das Tartarugas), a Mina Brejuí (maior mina de ''[[scheelita]]'' da [[América do Sul]]), o Morro do Cruzeiro e o Pico do Totoró, todos inseridos no Geoparque Seridó.
+
+Os solos do município são bastante férteis e com [[textura]] mista, formada tanto por [[areia]] e [[argila]], porém pouco profundos, com [[drenagem]] entre imperfeita a moderada, característicos dos solos litólicos eutróficos ou [[neossolo]]s. Por serem pouco desenvolvidos, são cobertos pela [[caatinga]], uma [[vegetação]] de pequeno porte que perde suas folhas na [[estação seca]]. Segundo o Plano Nacional de Combate à Desertificação (PNCD), que define desertificação como a degradação de terras nas zonas áridas, semiáridas e subúmidas, resultante de fatores diversos tais como as variações climáticas e as atividades humanas, Currais Novos está inserido em uma área susceptível em categoria muito grave.
+
+Na [[hidrografia]], todo o território municipal está inserido nos domínios da [[bacia hidrográfica]] do [[Rio Piranhas–Açu]]. Corta o perímetro urbano o rio Currais Novos ou São Bento, represado pelo Açude Dourado, o principal manancial do município, com capacidade para {{fmtn|10321600}} {{Abreviatura discreta|m³|metro cúbico}}.<ref>{{citar web|url=http://sistemas.searh.rn.gov.br/MonitoramentoVolumetrico/Monitoramento/FichaTecnica?idReservatorio=36|título=Ficha técnica do Reservatório Dourado|acessodata=22/12/2023|wayb=20221128040846}}</ref> Também se destaca o Rio Picuí, que nasce na Paraíba, atravessa o Cânion dos Apertados ao adentrar o território do Rio Grande do Norte e, ao se encontrar com o rio Currais Novos, forma o rio Acauã.<ref>DE OLIVEIRA, Antônia Vilaneide Lopes Costa; CESTARO, Luiz Antonio. [https://periodicos.ufam.edu.br/index.php/revista-geonorte/article/view/2033/1911 Caracterização do meio físico para subsidiar um zoneamento geoambiental do município de Currais Novos – RN - Brasil]. '''Revista Geonorte''', v. 3, n. 6, p. 1419-1432, 2012.</ref> Além do açude Dourado, outros mananciais com capacidade igual ou superior a {{fmtn|100000|m³}} são os açudes do Pico ou Totoró, Barra do Catunda, Úrsula Medeiros e do Feijão.<ref name="Perfil do seu município: Currais Novos"/>
+
+Currais Novos apresenta um dos índices pluviométricos mais baixos do estado do Rio Grande do Norte, possuindo [[clima semiárido]], com uma [[estação chuvosa]] compreendida entre fevereiro e maio.<ref>DINIZ, Marco Túlio Mendonça; PEREIRA, Vítor Hugo Campelo. [https://www.redalyc.org/pdf/3371/337142817008.pdf Climatologia do estado do Rio Grande do Norte, Brasil: sistemas atmosféricos atuantes e mapeamento de tipos de clima]. '''Boletim Goiano de Geografia''', v. 35, n. 3, p. 488-506, 2015.</ref> Desde 1911, ano em que teve início o monitoramento pluviométrico na cidade, o maior acumulado diário foi registrado em 11 de maio de 2004, chegando a {{fmtn|178|mm}} em 24 horas.<ref name="relatorios-pluviometricos"/> A partir de outubro de 2020, quando entrou em operação uma [[estação meteorológica automática]] da Empresa de Pesquisa Agropecuária do Rio Grande do Norte (EMPARN) na cidade, a menor temperatura ocorreu em 10 de agosto de 2023 ({{fmtn|16.9|°C}}) e a maior em 31 de outubro do mesmo ano ({{fmtn|38.4|°C}}).<ref name="estacaoId=1081"/>
+{{Tabela climática
+|localidade         = Currais Novos
+|larguraporcentagem = 100
+
+|Jan_REC_Max_°C = 36.4 |Jan_REC_Min_°C = 20.9 |Jan_Precip_mm = 38.9
+|Fev_REC_Max_°C = 37.1 |Fev_REC_Min_°C = 19.9 |Fev_Precip_mm = 67.5
+|Mar_REC_Max_°C = 36.1 |Mar_REC_Min_°C = 20.9 |Mar_Precip_mm = 111.2
+|Abr_REC_Max_°C = 35.5 |Abr_REC_Min_°C = 19.8 |Abr_Precip_mm = 108.9
+|Mai_REC_Max_°C = 34.9 |Mai_REC_Min_°C = 19.1 |Mai_Precip_mm = 59.5
+|Jun_REC_Max_°C =  36  |Jun_REC_Min_°C =  19  |Jun_Precip_mm = 25.6
+|Jul_REC_Max_°C = 35.6 |Jul_REC_Min_°C = 17.6 |Jul_Precip_mm = 16.8
+|Ago_REC_Max_°C = 35.4 |Ago_REC_Min_°C = 16.9 |Ago_Precip_mm = 6
+|Set_REC_Max_°C = 36.5 |Set_REC_Min_°C = 19.3 |Set_Precip_mm = 0.9
+|Out_REC_Max_°C = 38.4 |Out_REC_Min_°C = 19.8 |Out_Precip_mm = 3.4
+|Nov_REC_Max_°C = 37.1 |Nov_REC_Min_°C = 20.1 |Nov_Precip_mm = 3.3
+|Dez_REC_Max_°C = 36.6 |Dez_REC_Min_°C = 20.9 |Dez_Precip_mm = 10.8
+|Max_Rec_Ano_°C = 38.4 |Min_Rec_Ano_°C = 16.9 |Ano_Precip_mm = 452.8
+
+|fonte = EMPARN (recordes de temperatura: 20/10/2020-presente;<ref name="estacaoId=1081">{{citar web|url=https://meteorologia.emparn.rn.gov.br/relatorios/relatorio-variaveis?estacaoId=1081|título=Relatório de variáveis meteorológicas|autor=EMPARN|acessodata=22/12/2023}}</ref> médias de precipitação: 1911-2020)<ref name="relatorios-pluviometricos">{{citar web|url=https://meteorologia.emparn.rn.gov.br/relatorios/relatorios-pluviometricos|título=Relatório pluviométrico|autor=EMPARN|acessodata=22/12/2023}}</ref>
+ 
+}}
+
+== Demografia ==
+
+Segundo estimativa do [[Instituto Brasileiro de Geografia e Estatística]], em 2025 a cidade de Currais Novos possuía uma população de 42.922 habitantes<ref>{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html|titulo=Estimativas da população residente para os municípios e para as unidades da federação {{!}} IBGE|acessodata=2026-02-19|website=www.ibge.gov.br}}</ref> em uma área de 864.349 km² , resultando uma densidade demográfica de 49,67 hab./km².<ref>https://censo2022.ibge.gov.br/panorama/</ref> Sendo o município mais populoso da [[Seridó Oriental|microrregião]], e o segundo da [[Seridó (Rio Grande do Norte)|região]] e [[Mesorregião Central Potiguar|mesorregião]]. A cidade conta com 21 Bairros.<ref name="Não_nomeado-20250106104517">{{Citar web|url=https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=5300108&tema=1|titulo=Panorama do Censo 2022|acessodata=2024-11-18|website=Panorama do Censo 2022|lingua=en}}</ref> Segundo dados do censo 2022 o maior bairro da cidade é o J.K com 4.495 habitantes,<ref name="Não_nomeado-20250106104517"/> em segundo lugar o Prof. Gilberto Cunha com 4.379 habitantes, o terceiro maior bairro é o Radir Pereira com 4.049 habitantes, sendo o bairro Valfredo Galvão com o menor número de habitantes, 1.167. 
+
+A população de alguns bairros são superiores a vários municípios do estado.                                            
+{| class="wikitable"
+|+População de Alguns Bairros (IBGE2022)<ref name="Não_nomeado-20250106104517"/>
+!Bairro
+!Habitantes
+|-
+|Manoel Salustino
+|2.940
+|-
+|Dr. José Bezerra
+|2.160
+|-
+|J.K
+|4.495
+|-
+|José Dantas
+|2.389
+|-
+|Tomaz Araujo
+|4.038
+|-
+|Paizinho Maria
+|2.065
+|-
+|Parque Dourado
+|2.561
+|-
+|Gilberto Cunha
+|4.379
+|-
+|Radir Pereira
+|4.049
+|-
+|Santa Maria Gorete
+|3.451
+|-
+|Silvio Bezerra
+|3.384
+|-
+|Valfredo Galvão
+|1.167
+|}
+{| class="wikitable"
+|+'''Crescimento Populacional da cidade de Currais Novos'''<ref>http://www.cidades.ibge.gov.br/painel/populacao.php?lang=&codmun=240310&search=rio-grande-do-norte|currais-novos|infogr%E1ficos:-evolu%E7%E3o-populacional-e-pir%E2mide-et%E1ria</ref><ref name="Não_nomeado_2-20250106104517">{{Citar web|url=https://censo2022.ibge.gov.br/panorama/|titulo=Panorama do Censo 2022|acessodata=2024-11-18|website=Panorama do Censo 2022|lingua=pt-BR}}</ref>
+!Ano
+!Currais Novos
+!RN
+|-
+|1970
+|26.179
+|1.611.606
+|-
+|1980
+|34.979
+|1.933.126
+|-
+|1991
+|40.227
+|2.415.567
+|-
+|1996
+|40.459
+|2.548.745
+|-
+|2000
+|40.791
+|2.776.782
+|-
+|2007
+|42.066
+|3.013.740
+|-
+|2010
+|42.652
+|3.168.027
+|-
+|2024
+|42.930
+|3.446.071
+|}
+{| class="wikitable"
+|+Gênero (IBGE2022)<ref name="Não_nomeado_2-20250106104517"/>
+!Gênero
+!Habitantes
+|-
+|Homens
+|19.723
+|-
+|Mulheres
+|21.590
+|}
+
+=== Produção agrícola ===
+{| class="wikitable mw-collapsible mw-collapsed"
+|+<small>[[IBGE]] (2003)</small>
+!Lavoura
+!Quantidade produzida (ton.)
+!Valor da produção (R$ mil)
+!Área plantada (ha.)
+!Área colhida (ha.)
+!Rendimento médio (kg/ha.)
+|-
+|[[Castanha de caju]]
+|7
+|7
+|24
+|24
+|291
+|-
+|[[Batata-doce]]
+|60
+|15
+|10
+|10
+|6.000
+|-
+|[[Coco-da-baía]]
+|288 (mil frutos)
+|115
+|72
+|72
+|4.000 (frutos/ha.)
+|-
+|[[Feijão]] (em grão)
+|32
+|48
+|785
+|88
+|363
+|-
+|[[Goiabeira|Goiaba]]
+|33
+|20
+|11
+|11
+|3.000
+|-
+|[[Manga (fruta)|Manga]]
+|360
+|90
+|60
+|60
+|6.000
+|-
+|[[Milho]]
+|17
+|9
+|775
+|39
+|435
+|-
+|[[Tomate]]
+|840
+|336
+|28
+|28
+|30.000
+|-
+|[[Mamão]]
+|750
+|150
+|10
+|10
+|75.000
+|-
+|[[Maracujá]]
+|14
+|4
+|3
+|3
+|4.666
+|-
+|[[Melancia]]
+|84
+|17
+|3
+|3
+|28.000
+|}
+
+=== Pecuária ===
+{| class="wikitable mw-collapsible mw-collapsed"
+|+<small>IBGE (2003)</small>
+!Rebanho
+!Efetivo (cabeças)
+|-
+|Bovino
+|16.331
+|-
+|Suíno
+|1.190
+|-
+|Equinos
+|515
+|-
+|Asininos <small>(jumentos)</small>
+|1.090
+|-
+|Muares <small>(mulas)</small>
+|259
+|-
+|Ovinos
+|5.992
+|-
+|Galinhas
+|47.071
+|-
+|Galos, frangas, frangos e pintos
+|86.384
+|-
+|Caprinos
+|2.070
+|-
+|Vacas ordenhadas
+|5.089
+|}
+
+{| class="wikitable mw-collapsible mw-collapsed"
+|+<small>IBGE (2002)</small>
+!Gênero
+!Produção
+|-
+|Leite de vaca
+|7.664 (mil litros)
+|-
+|Ovos de galinha
+|717 (mil dúzias)
+|-
+|Mel de abelha
+|4.205 (kg)
+|}
+
+== Educação ==
+[[Ficheiro:Campus UFRN-FELCS (Currais Novos).png|miniaturadaimagem|Entrada do Campus UFRN/FELCS]]
+[[Ficheiro:IFRN Campus Currais Novos.jpg|miniaturadaimagem|Entrada do Campus IFRN (Currais Novos)]]
+Importante polo educacional, conta com conceituadas instituições de ensino fundamental, médio, técnico e superior.
+
+A cidade abriga os Campus da UFRN (Universidade Federal do Rio Grande do norte), denominado FELCS (Faculdade de Engenharia, Letras e Ciências Sociais do Seridó);<ref>{{Citar web|ultimo=UFRN|url=https://ufrn.br/institucional/unidades-institucionais/felcs|titulo=Faculdade de Engenharia, Letras e Ciências Sociais do Seridó - FELCS|acessodata=2024-11-18|website=Portal da UFRN|lingua=pt-BR}}</ref> Anhanguera; FAS (Faculdade do Seridó); [[Instituto Federal do Rio Grande do Norte em Currais Novos|IFRN (Instituto Federal do Rio Grande do Norte)]]; UNIP (Universidade Paulista); Faculdade Três Marias (Centro Educacional Três Marias);<ref>{{Citar web|url=https://cn.tresmarias.edu.br/?gad_source=1&gad_campaignid=23052201256&gbraid=0AAAABBi-PbHg_BodorXcnebyZ13khj_hU&gclid=EAIaIQobChMInJjaqaLMkgMV_WFIAB2I_S0xEAAYASAAEgKlEvD_BwE|titulo=Faculdade Três Marias - Currais Novos|acessodata=2026-02-09|website=cn.tresmarias.edu.br}}</ref> Única Master; CCT (Colégio Camilo Toscano); EECMG (Escola Estadual Capitão Mor Galvão); EETB (Escola Estadual Tristão de Barros). Esta última conquistando um prêmio nacional com um projeto de cunho social e ambiental na qual disputava com mais outros 364 projetos, sendo aclamadíssimo positivamente pela mídia e o público em geral.<ref>http://www.emater.rn.gov.br/Conteudo.asp?TRAN=ITEM&TARG=78314&ACT=null&PAGE=null&PARM=null&LBL=NOT%C3%8DCIA</ref><ref>http://www.jeansouza.com.br/educacao/escola-tristao-de-barros-ganha-sala-interativa-da-samsung-como-premio-de-projeto-inovador/</ref><ref>http://g1.globo.com/rn/rio-grande-do-norte/bom-dia-rn/videos/t/edicoes/v/alunos-de-escola-estadual-em-currais-novos-rn-recebem-premio-de-inovacao-em-tecnologia/4231444/</ref><ref>http://g1.globo.com/bom-dia-brasil/videos/t/edicoes/v/estudantes-do-rn-criam-bengala-para-cegos-com-lixo-eletronico/3831581/</ref>
+{| class="wikitable"
+|+<small>IBGE (2022)[https://cidades.ibge.gov.br/brasil/rn/currais-novos/pesquisa/13/78117]</small>
+!Ensino
+!Alunos matriculados
+!Professores
+|-
+|Infantil
+|1.936
+|124
+|-
+|Fundamental
+|5.017
+|333
+|-
+|Médio
+|1.940
+|167
+|}
+{| class="wikitable"
+|+IBGE (2022)[https://cidades.ibge.gov.br/brasil/rn/currais-novos/pesquisa/13/78117]
+!Nível
+!Escolas
+|-
+|Infantil
+|23
+|-
+|Fundamental
+|31
+|-
+|Médio
+|9
+|}
+* [[Analfabeto]]s com mais de quinze anos: 22,06% <small>(IBGE, Censo 2010).</small>
+
+== Economia ==
+Currais Novos, possui uma economia diversificada, com destaque para atividades tradicionais como a [[agropecuária]], o [[comércio]] e a [[mineração]]. A cidade desempenha um papel relevante na região do Seridó, sendo um dos principais polos econômicos dessa área semiárida do Nordeste brasileiro. Segundo o IBGE, em 2023, o [[Produto interno bruto|PIB per capita]] era de R$ 23.136,71.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/rn/currais-novos/panorama|acessodata=2024-11-19|website=cidades.ibge.gov.br}}</ref> Correspondendo ao 2° lugar na [[região geográfica imediata]], apenas atrás do Município de [[Caicó]]. 
+
+A agropecuária é historicamente uma base econômica de Currais Novos, impulsionada pela criação de gado e pela produção de leite. A pecuária leiteira, em particular, tem grande relevância, consolidando o município como um dos principais produtores de leite no estado no século XX. Esse setor é fortalecido pela presença de pequenas e médias propriedades rurais, que operam em um modelo de produção familiar. Além disso, culturas agrícolas como milho e feijão são cultivadas, embora sejam influenciadas pelas condições climáticas adversas da região.<ref name="Não_nomeado_3-20250106104517">{{Citar web|url=https://curraisnovos.rn.gov.br/|titulo=Prefeitura Municipal de Currais Novos/RN|acessodata=2024-11-19|website=curraisnovos.rn.gov.br}}</ref>
+
+Outro setor importante é a mineração. Currais Novos possui um histórico de exploração de minerais, como [[scheelita]], um minério usado na produção de [[tungstênio]]. A cidade já foi um dos maiores polos de extração desse minério no Brasil, mas as oscilações do mercado internacional impactaram a viabilidade econômica dessa atividade. Atualmente, ainda há exploração mineral, mas em menor escala, com iniciativas que buscam agregar valor à produção local. <ref>{{Citar periódico |url=https://repositorio.ufersa.edu.br/items/d1d611db-ddde-48f7-89ab-9d499f31f2a4 |título=A exploração do minério Scheelita: estudo de caso: Mina Brejuí - Currais Novos - RN |data=2018-04-17 |acessodata=2024-11-19 |ultimo=Moreira |primeiro=Gabriel Luídy |lingua=pt-BR}}</ref>
+
+Atualmente, ocorre o processo de implementação, para a exploração/mineração de Ouro na cidade,<ref>{{Citar web|url=https://www.conexaomineral.com.br/noticia/3736/borborema-projeto-da-aura-minerals-no-rio-grande-do-norte-deve-comecar-ramp-up-no-inicio-de-2025.html|titulo=Borborema, projeto da Aura Minerals no Rio Grande do Norte, deve começar ramp up no início de 2025|acessodata=2024-11-19|website=notícias|lingua=pt-BR}}</ref> espera-se que a [[Aura Minerals|Aura]], invista mais de US$ 145 milhões para financiar a construção de Borborema e também finaliza o processo de captação do Projeto, cujo investimento previsto é de US$ 188 milhões.<ref>{{Citar web|ultimo=Moreira|primeiro=Felipe|url=https://www.infomoney.com.br/mercados/aura-minerals-aura33-firma-acordo-de-royalties-para-financiamento-do-projeto-borborema/|titulo=Aura Minerals (AURA33) firma acordo de royalties para financiamento do Projeto Borborema|data=2023-12-20|acessodata=2024-11-19|website=InfoMoney|lingua=pt-BR}}</ref> Nos próximos anos, deve-se observar um grande desenvolvimento no município. 
+
+O comércio e os serviços também desempenham um papel central na economia de Currais Novos. Como cidade-polo, o município atrai consumidores de localidades vizinhas, o que dinamiza o setor comercial. A feira livre da cidade é um exemplo da vitalidade econômica local, oferecendo produtos diversos, desde alimentos a artigos de uso cotidiano. O setor de serviços também tem se expandido, especialmente em áreas como educação, saúde e turismo.<ref>{{Citar web|url=https://fecomerciorn.com.br/noticias/comercio-de-currais-novos-e-bem-avaliado-pela-populacao-da-cidade/|titulo=Comércio de Currais Novos é bem avaliado pela população da cidade|data=2016-09-09|acessodata=2024-11-19|website=Fecomércio RN|lingua=pt}}</ref>
+
+O turismo, embora ainda emergente, apresenta potencial de crescimento. A cidade conta com atrativos naturais, como a [[Lista de mesorregiões e microrregiões do Rio Grande do Norte|Serra de Santana]], [[Cânion dos Apertados|Cânions dos Apertados]], [[Mina Brejui|Mina Brejuí]], e a Pedra do Cruzeiro, além de eventos culturais e religiosos que atraem visitantes como a Vaquejada e a Festa de Sant’Ana, que consiste um dos maiores eventos religiosos da região, contribui para movimentar a economia local, especialmente os setores de hospedagem e alimentação.<ref>{{Citar web|url=http://geoparqueserido.com.br/?page_id=8236|titulo=Inventários Municipais – Seridó Geoparque Mundial da UNESCO|acessodata=2024-11-19|lingua=pt-BR}}</ref>
+
+=== Composição do PIB ===
+O PIB do municipio de Currais Novos correspondeu, no ano de 2023, a R$ 955.846,897.<ref name=":0">{{Citar web|url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2403103|titulo=Produto Interno Bruto dos Municípios {{!}} IBGE|acessodata=2026-02-09|website=www.ibge.gov.br}}</ref> Sendo o 10° maior [[Produto interno bruto do Brasil|PIB]] do estado (excluindo a [[Região Metropolitana de Natal|região metropolitana de Natal]]), e o Segundo maior da Região do [[Seridó (Rio Grande do Norte)|Seridó]]. 
+{| class="wikitable"
+|+PIB Municipal<ref name=":0" />
+!
+!Valor (R$)
+|-
+|'''Impostos, líquidos de subsídios, sobre produtos, a preços correntes'''
+|87.213,86
+|-
+|'''Valor adicionado bruto a preços correntes'''
+|717.010,36
+|-
+| ''Agropecuária'' 
+|''<small>19.164,341</small>''
+|-
+| ''Indústria''
+|''<small>80.320,913</small>''
+|-
+| ''Serviços''
+|''<small>364.932,297</small>''
+|-
+| ''Administração, defesa, educação e saúde públicas e seguridade social''
+|''<small>252.592,808</small>''
+|}
+
+== Arquitetura ==
+[[Ficheiro:Matriz de Sant'Ana (Currais Novos).jpg|miniaturadaimagem|Igreja Matriz de Sant'Ana em Currais Novos]]
+A cidade de Currais Novos passou por significativas transformações econômicas, políticas e sociais a partir do início da exploração das jazidas de [[Scheelita]], em meados do século XX. Reconhecida por suas reservas minerais, a região tornou-se, durante a [[Segunda Guerra Mundial]], um ponto estratégico de interesse para as tropas americanas, que buscavam a matéria-prima para a produção de tungstênio. Este metal era de grande importância, sendo amplamente utilizado na fabricação de máquinas modernas, como aviões, armas, veículos e outros equipamentos. Nesse contexto, destacou-se o desembargador Tomaz Salustino, proprietário da principal fonte de scheelita, a Mina Brejuí. Sua prosperidade foi tamanha que chegou a ser considerado um dos homens mais ricos do mundo. Com sua riqueza, Tomaz Salustino investiu consideravelmente em Currais Novos, promovendo o desenvolvimento local com a criação de empreendimentos modernos para a época, como a Rádio Brejuí, o Aeroclube, o Cine-Teatro, um campo de pouso, um campo de futebol ([[Estádio Municipal Coronel José Bezerra|Coronel José Bezerra]]) e, principalmente, o emblemático Hotel Tungstênio.<ref>{{Citar web|ultimo=Paiva|primeiro=Lara|url=https://brechando.com/2021/03/25/tomaz-salustino-criador-da-mina-brejui/|titulo=Tomaz Salustino, criador da Mina Brejuí|data=2021-03-25|acessodata=2024-11-19|website=Brechando|lingua=pt-BR}}</ref>[[Ficheiro:Monumento Cristo Rei.jpg|miniaturadaimagem|Monumento Cristo Rei, construído no ano de 1937.|165x165px]]Destacam-se, também, a [[Matriz de santana|Matriz de Sant'Ana]], Matriz da [[Imaculada Conceição]], Prefeitura Municipal, Monumento Cristo Rei, e o Coreto. Pontos estes, que representam a cidade de [[Currais Novos]], sendo conhecidos em todo o Estado.<ref name="Não_nomeado_3-20250106104517"/>
+
+
+== Saúde ==
+A cidade representa um importante polo de saúde no [[Seridó]]. Em relação a saúde pública, Currais Novos contempla as seguintes unidades: Hospital Regional Dr. Mariano Coelho (HRMC), com aproximadamente 8 mil metros quadrados, Policlínica Monsenhor Ausônio de Araújo Filho, Pronto Atendimento Municipal, assim como dispõe de Unidades Básicas de [[Unidade básica de saúde|Saúde]] - UBS localizadas em cada bairro. Contando também, com diversas clinicas particulares e de exames laboratoriais. <ref>{{Citar web|url=https://curraisnovos.rn.gov.br/servico-de-saude/|titulo=Prefeitura Municipal de Currais Novos/RN: Serviço de Saúde|acessodata=2024-11-18|website=curraisnovos.rn.gov.br}}</ref>
+
+No ano de 2024, foi inaugurado o CDES, Centro de Diagnóstico e Ensino do [https://ligacontraocancer.com.br/sobre/unidades/ Seridó], uma unidade ambulatorial de diagnóstico e tratamento da Liga Contra o Câncer no interior do estado, que realiza um leque de possibilidades de medicina diagnóstica, como mamografia, ultrassonografia, tomografia e ressonância magnética. O centro dispõe de uma sala de pequenas cirurgias, uma sala de quimioterapia e seis consultórios de várias especialidades, como urologia, ginecologia, mastologia, dermatologia e cirurgia [[Oncologia|oncológica]]. O centro abriga o Instituto de Ensino, Pesquisa e Inovação – IEPI, voltado para a formação e capacitação de profissionais de saúde que atendem a comunidade na atenção básica.
+
+== Transporte ==
+[[Ficheiro:Rodoviária Currais Novos.jpg|miniaturadaimagem|Terminal Rodoviário de Currais Novos]]
+A cidade possui uma localização central no estado, fazendo também, ligação/divisa com o [[Paraíba|estado da paraíba]]. Atualmente é cortada pela [[BR-226]], [[BR-427]] e RN-041. O município conta com um dos melhores Terminais Rodoviários do interior, com aprox. 1.200 metros quadrados construídos, localizado na região central da cidade. Atendendo a diversas empresas de Transporte Interurbano e Interestadual, como: Gontijo, Guanabara<ref>{{Citar web|url=https://www.viajeguanabara.com.br/onibus/currais_novos-rn|titulo=Viaje Guanabara: Compre sua passagem de ônibus|acessodata=2024-11-21|website=www.viajeguanabara.com.br}}</ref> e Jardinense. 
+
+Segundo o IBGE,no ano de 2024, a frota de veículos registrados no municipio corresponde a 26.190 veículos; sendo 8.988 Automóveis e 9.512 motocicletas.  <ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/rn/currais-novos/pesquisa/22/28120?localidade1=240200|acessodata=2026-02-09|website=cidades.ibge.gov.br}}</ref> 
+
+Atualmente, o Aeródromo do Município ([[Organização da Aviação Civil Internacional|ICAO]]: SNKN)[https://www.gov.br/anac/pt-br/assuntos/regulados/aeroportos-e-aerodromos] encontra-se impossibilitado de receber voos civis, apenas operando pousos e decolagens de emergência.  
+
+== Segurança Pública ==
+A cidade é sede do [[13° Batalhão de Policia Militar do RN]], que abrange 12 municipios da região. Possuindo um contingente de 421 militares, sendo 22 oficiais e 399 praças.<ref>{{Citar web|url=https://g1.globo.com/rn/rio-grande-do-norte/noticia/2021/10/16/decretos-criam-novo-batalhao-da-policia-militar-do-rn-em-currais-novos-e-companhia-independente-em-patu.ghtml|titulo=Decretos criam batalhão da Polícia Militar do RN em Currais Novos e companhia independente em Patu|data=2021-10-16|acessodata=2026-02-12|website=G1|lingua=pt-BR}}</ref> Sendo dividido em 3 Companhias. A cidade ainda conta com a [[11ª Delegacia Regional de Plantão]] (DR), que atende 12 municipios proximos. a delegacia tem uma área total de 375 metros quadrados e dois pavimentos. No primeiro andar, há quatro salas, alojamento e banheiros. O prédio também dispõe de uma plataforma elevatória para acessibilidade. O investimento total na obra foi de R$ 480 mil.<ref>{{citar web|ultimo=Rio Grande do Norte|primeiro=Governo|url=https://www.rn.gov.br/materia/governo-do-rn-inaugura-delegacia-regional-de-currais-novos/|titulo=Governo do RN inaugura Delegacia Regional de Currais Novos|acessodata=|website=governo do estado do rio grande do norte}}</ref> A cidade tambem conta com uma Unidade do [[Corpos de bombeiros militares do Brasil|Corpo de Bombeiros Militar]] - 2ºSGB/4ºGB que é responsável pelo atendimento a ocorrências de emergência na região do [[Seridó (Rio Grande do Norte)|Seridó]], do Trairi e em municípios circunvizinhos. Sua atuação abrange desde o combate a incêndios até salvamentos diversos, contribuindo com a segurança e bem-estar das populações dessas importantes regiões do interior potiguar<ref>{{citar web|ultimo=Bombeiros Militar|primeiro=Corpo de|url=http://www.cbm.rn.gov.br/Conteudo.asp?TRAN=ITEM&TARG=47644&ACT=&PAGE=0&PARM=&LBL=Estrutura|titulo=Comando, Diretorias e Unidades do CBMRN|acessodata=|website=Corpo de bombeiros militar do RN}}</ref>
+
+== Esportes ==
+[[Ficheiro:Estadio Municipal Coronel Jose Bezerra.jpg|miniaturadaimagem|Estádio Municipal Coronel José Bezerra]]
+A cidade consiste em um dos mais importantes centros esportivos do interior do estado. Sendo sede do clube de futebol profissional [[Associação Cultural e Desportiva Potyguar Seridoense|Potyguar Seridoense]], fundado nos anos 1960, Tem como seus maiores títulos o do [[Campeonato Potiguar de Futebol - Segunda Divisão|Campeonato Potiguar - Série B]], conquistados em 2007, 2012 e 2021, além do título da Taça Cidade de Natal, em 2009. Disputou a [[Copa do Brasil de Futebol de 2010|Copa do Brasil]] em 2010. Como o principal centro esportivo, a cidade conta com o [[Estádio Municipal Coronel José Bezerra]], com a capacidade total para 2.440 pessoas, pista de atletismo em [[saibro]], saídas de emergência e licenca para receber jogos da primeira divisão do [[Campeonato Potiguar de Futebol|campeonato potiguar]].  A cidade conta com vários ginásios poliesportivos, sendo o principal deles, o Geraldão.<ref>{{Citar web|url=https://curraisnovos.rn.gov.br/prefeitura-de-currais-novos-anuncia-revitalizacao-do-ginasio-geraldao-com-projeto-moderno-e-dentro-dos-padroes-oficiais/|titulo=Prefeitura de Currais Novos anuncia revitalização do Ginásio Geraldão com projeto moderno e dentro dos padrões oficiais – Prefeitura de Currais Novos|acessodata=2026-02-12|lingua=pt-BR}}</ref> No que diz respeito aos eventos esportivos sediados na cidade, podem ser citados os [[Jogos Municipais Esportivos e Culturais (JOMEC)]], [[Jogos Escolares do Rio Grande do Norte (JERNS)]], assim como a [[Copa Nordeste de Voleibol]] – Troféu Jorge Guimarães <ref>{{Citar web|url=https://cnbv.voleibol.esp.br/|titulo=CNBV-COPA NORDESTE BRASILEIRO DE VOLEIBOL|acessodata=2026-02-12|website=cnbv.voleibol.esp.br}}</ref> uma das maiores competições de [[voleibol]] do Brasil. Em relação aos grandes atletas naturais e revelados na cidade, podem ser citados: [[Cláudio Richardson dos Santos]], multicampeão na modalidade de [[marcha atlética]]. <ref>{{citar web|ultimo=do Norte|primeiro=Tribuna|url=https://tribunadonorte.com.br/esportes/currais-novense-e-campeao-brasileiro-de-marcha-nos-50km/|titulo=Currais-novense é Campeão Brasileiro de Marcha nos 50Km|acessodata=|website=Tribuna do Norte}}</ref> assim como, [[Vicente Lenílson|Vicente Lenílson de Lima]] velocista medalhista de prata nos [[Jogos Olímpicos de Verão de 2000|jogos Olimpicos de Sidney 2000]] e de bronze nos [[Jogos Olímpicos de Verão de 2008|jogos Olimpicos de Pequim 2008]], ambas nas modalidades [[4 x 100 metros estafetas|4x100m]].<ref>{{Citar web|url=https://cbat.org.br/atletas/8529/vicente-lenilson-de-lima?tipo=idolo|titulo=Vicente Lenilson de Lima {{!}} Atletas - CBAt|acessodata=2026-02-12|website=cbat.org.br|lingua=pt-BR}}</ref>
+
+== Ver também ==
+* [[:Categoria:Naturais de Currais Novos|Potiguares de Currais Novos]]
+* [[Lista de prefeitos de Currais Novos]]
+
+== Bibliografia ==
+* ALVES, Celestino. ''Retoques da História de Currais Novos''. Brasília: Gráfica do Senado Federal, 1981.
+* SOUZA, Joabel R. de. ''Sant'Ana, uma bela festa; uma longa história. Currais Novos:s. ed., 2008. Impressão feita sob ajuda do Senador Garibaldi Alves Filho''
+
+{{Referências}}
+
+{{bloco de navegação
+|Seridó
+
+|Subdivisões do Rio Grande do Norte
+}}
+{{Controle de autoridade}}
+{{Portal3|Rio Grande do Norte|Brasil}}
+
+{{DEFAULTSORT:Currais Novos}}
+[[Categoria:Currais Novos| ]]
+[[Categoria:Fundações no Rio Grande do Norte em 1890]]

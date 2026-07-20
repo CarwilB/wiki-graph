@@ -1,0 +1,153 @@
+{{Info/Município do Brasil
+<!-- GeoID=5004304 -->
+<!-- Cabeçalho -->
+| nome                 = Iguatemi 
+| foto                 =
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = 1176674394brasao iguatemi-1-.jpg
+| bandeira             = 1176674401bandeira iguatemi-1-.jpg
+| link_brasão          = 
+| link_hino            = s:Hino do município de Iguatemi
+| aniversário          = 8 de maio
+| fundação             ={{nowrap|{{dtlink|8|5|1965|idade}}}}
+| emancipação          = 8 de maio de 1965
+| gentílico            =[[wikt:iguatemiense|iguatemiense]]
+| lema                 = ''Deus, Pátria, família''
+| padroeiro            = [[Nossa Senhora da Imaculada Conceição]]
+| prefeito             = Lídio Ledesma<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/ms/iguatemi|título=Candidatos a vereador Iguatemi-MS|publicado=Estadão|acessodata =12 de junho de 2021}}</ref>
+| partido              = [[Progressistas|PP]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Iguatemi location map.svg
+| latP                 = S | latG = 23 | latM = 40 | latS = 48
+| lonP                 = O | lonG = 54 | lonM = 33 | lonS = 39
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Iguatemi|Iguatemi]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = Ao norte, faz divisa com [[Juti]] e [[Naviraí]]; ao leste, com [[Itaquiraí]] e [[Eldorado (Mato Grosso do Sul)|Eldorado]]; ao oeste, com [[Amambai]] e [[Tacuru]]; e, ao sul, faz divisa com a cidade de [[Japorã]].
+| dist_capital         = 451
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 2946.677 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 40º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:2.579}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 34º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Iguatemi (distrito-únco)
+| população            = 14972 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 39º]]
+| data_pop             = est. [[IBGE]] 2011<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| densidade            = {{fmtn|5.08|hab/km²}}
+| altitude             = 342
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[subtropical]]
+| sigla_clima          = Cfa
+<!-- Indicadores -->
+| idh                  = 0.731 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 44º]]
+| data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.44}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 43º]] 
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1#|arquivodata=30 de abril de 2012|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:196025.361}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 35º]]
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 12994.72
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Iguatemi''' é um [[Município (Brasil)|município]] do [[Unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]], no [[Brasil]].
+
+==Topônimo==
+{{VT|Topônimos de origem tupi no Brasil}}
+O atual nome do município é uma referência ao [[rio Iguatemi]], que banha o território do município. "Iguatemi" é derivado do termo [[Língua tupi|tupi]] ''ygatim'y'', que significa "rio das canoas emproadas" (''ygara'', [[canoa]] + ''tĩ'', [[proa]] + '''y'', rio).<ref>NAVARRO, E. A. ''[[Dicionário de Tupi Antigo|Dicionário de tupi antigo: a língua indígena clássica do Brasil]]''. São Paulo. Global. 2013. p. 568.</ref>
+
+==História==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+A cidade se desenvolveu às voltas da nascente do córrego Sacarón. Antigamente, se chamava Vila Sacarón. O povoamento de origem europeia da região teve início com a Colônia Militar de Iguatemi, que veio a ser destruída pelos espanhóis comandados por dom Agostinho Fernandes de Pinedo, governador do [[Paraguai]]. Em 1909, por iniciativa de [[Francisco Fernandes Filho]], [[Miguel Severo do Nascimento Gonçalves]], [[Policarpo Nogueira]] e [[Bonifácio Fernandes]], foram lançados os alicerces de uma nova povoação. A primeira casa comercial ali edificada pertenceu ao fundador do povoado, Francisco Fernandes Filho.
+
+Foi elevada a [[Distritos do Brasil|distrito]] pela Lei 7 161, de 14 de outubro de 1948, e o município criado pela Lei 1 951, de 11 de novembro de 1963, sendo desmembrado de Amambai. Sua instalação oficial, no entanto, se deu em 8 de maio de 1965, com a criação da primeira câmara e a posse do primeiro prefeito eleito pelo povo, Waloszek Konrad. Em 1977, o município passou a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+==Geografia==
+===Localização===
+O município está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]] ([[Microrregião de Iguatemi]]). Localiza-se a uma [[latitude]] 23º40'49" [[sul]] e a uma [[longitude]] 54º33'40" [[oeste]]. Distâncias:
+* {{fmtn|461|quilômetros}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]) 
+* {{fmtn|1415|quilômetros}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Predomínio de [[latossolo]] de textura média e, acompanhando as drenagens principais, [[nitossolo]]s de textura arenosa e média, ambos com baixa fertilidade natural, e os [[gleissolo]]s.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|342|metros}}. Os modelados de dissecação tabulares dominam grande área do município, dá continuidade a esta paisagem, ao norte, uma topografia mais suave. As áreas planas de acumulação acompanham as margens dos rios limítrofes. O município de Iguatemi encontra-se na Região dos Planaltos Arenítico-Basálticos Interiores, com uma unidade geomorfológica: Divisores das Sub Bacias Meridionais. Apresenta relevo plano.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do [[clima subtropical úmido]], apresentando índice efetivo de umidade com valores anuais variando de 40 a 60 por cento. A precipitação pluviométrica anual varia entre 1 500 a 1 700 milímetros, excedente hídrico anual de 800 a 1 200 milímetros, durante cinco a seis meses e deficiência hídrica de 350 a 500 milímetros, durante quatro meses.
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]] ([[Bacia do Rio Paraná]]). Principais rios:
+* [[Rio Iguatemi]]: afluente pela margem direita do rio Paraná, sua nascente se localiza no
+município de Aral Moreira, fazendo limite entre os municípios de Japorã e Iguatemi. 
+* [[Rio Jogui]]: afluente do rio Iguatemi, divisa dos municípios de Iguatemi e Tacuru.
+* [[Rio Maracaí]]: afluente pela margem direita do rio Paraná, no seu alto curso é limite entre
+os municípios de [[Amambai]] e Iguatemi e, no seu médio curso, entre os de Iguatemi e [[Itaquiraí]].
+* [[Rio Amambai]]: afluente pela margem direita do [[rio Paraná]], no limite entre os municípios de
+Naviraí e Iguatemi. Possui 340 quilômetros de extensão, sendo 90 deles navegáveis.
+
+; Vegetação
+
+Predomina a pastagem plantada, sendo de pequena expressão as áreas de vegetação natural, representada pelo cerrado arbóreo denso (cerradão), arbóreo aberto (campo cerrado), floresta estacional e contato cerrado/floresta.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação ao [[Tempo Universal Coordenado]].
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|2946.677|quilômetros quadrados}}.
+ 
+;Subdivisões
+
+Iguatemi (distrito único)
+
+;Arredores
+
+Ao norte, faz divisa com Juti e Naviraí; ao leste, com Itaquiraí e Eldorado; ao oeste, com Amambai e Tacuru; e, ao sul, faz divisa com a cidade de Japorã.
+
+==Demografia==
+Sua população estimada em 2011 era de 14 972 habitantes, segundo o [[Instituto Brasileiro de Geografia e Estatística]]. É o 39º mais populoso município do estado.
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Iguatemi (Brazil)
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.iguatemi.ms.gov.br/ Página da Prefeitura Municipal]
+* {{link|pt|2=http://www.wikimapia.org/#lat=-23.6898045&lon=-54.5581055&z=10&l=9&m=b|3=Iguatemi via satélite}}
+* {{link|pt|2=http://www.portaldasletras.com.br|3=Página do Portal das Letras}}
+
+{{Esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Iguatemi (Mato Grosso do Sul)| ]]
+[[Categoria:Fundações em Mato Grosso em 1965]]
+[[Categoria:Topônimos de origem tupi em Mato Grosso do Sul]]

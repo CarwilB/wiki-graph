@@ -1,0 +1,130 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Moho
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = Moho Catedral.jpg
+| image_alt               = 
+| image_caption           = Church of Moho
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Moho in the [[Moho Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Puno Region|Puno]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Moho Province|Moho]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Moho, Peru|Moho]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Randolfo Mamani Aracayo
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 495.8
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3841
+| population_footnotes    = 
+| population_total        = 16847
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 210901
+| website                 = 
+| footnotes               = 
+}}'''Moho District''' is one of four [[Districts of Peru|districts]] of the province [[Moho Province|Moho]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+== Ethnic groups ==
+The people in the district are mainly [[Indigenous peoples of the Americas|indigenous]] citizens of [[Aymara people|Aymara]] descent. [[Aymara language|Aymara]] is the language which the majority of the population (80.47%) learnt to speak in childhood, 18.60% of the residents started speaking using the [[Spanish language|Spanish]] language ([[2007 Peru Census]]).<ref>[http://iinei.inei.gob.pe/iinei/RedatamCpv2007.asp?id=ResultadosCensales?ori=C inei.gob.pe] {{webarchive|url=https://web.archive.org/web/20130127005551/http://iinei.inei.gob.pe/iinei/RedatamCpv2007.asp?id=ResultadosCensales%3Fori%3DC |date=2013-01-27 }} INEI, Peru, Censos Nacionales 2007, Frequencias: Preguntas de Población: Idioma o lengua con el que aprendió hablar (in Spanish)</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y
+|collapsed = Y
+|location = Huaraya Moho, elevation {{convert|3836|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 14.6
+|Feb high C = 14.7
+|Mar high C = 14.6
+|Apr high C = 14.7
+|May high C = 14.5
+|Jun high C = 13.8
+|Jul high C = 13.9
+|Aug high C = 14.7
+|Sep high C = 15.7
+|Oct high C = 16.1
+|Nov high C = 16.6
+|Dec high C = 15.6
+|year high C = 
+|Jan low C = 5.0
+|Feb low C = 4.9
+|Mar low C = 4.2
+|Apr low C = 2.7
+|May low C = 0.0
+|Jun low C = -1.6
+|Jul low C = -1.9
+|Aug low C = -0.9
+|Sep low C = 1.3
+|Oct low C = 2.9
+|Nov low C = 3.7
+|Dec low C = 4.6
+|year low C =   
+|precipitation colour = green
+|Jan precipitation mm = 178.4
+|Feb precipitation mm = 147.1
+|Mar precipitation mm = 102.5
+|Apr precipitation mm = 49.6
+|May precipitation mm = 13.2
+|Jun precipitation mm = 7.2
+|Jul precipitation mm = 6.0
+|Aug precipitation mm = 11.9
+|Sep precipitation mm = 31.5
+|Oct precipitation mm = 59.3
+|Nov precipitation mm = 61.3
+|Dec precipitation mm = 138.1
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 25 October 2023}}</ref>
+}}
+
+== See also ==
+* [[Mirq'imarka]]
+
+==References==
+{{Reflist}}
+
+{{Districts of Moho Province}}
+
+{{coord|15.3606|S|69.4997|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Department of Puno]]
+[[Category:Districts of the Moho province]]
+
+
+{{Puno-geo-stub}}

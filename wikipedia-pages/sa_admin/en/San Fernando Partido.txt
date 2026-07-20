@@ -1,0 +1,112 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = San Fernando
+| native_name             = ''Partido de San Fernando''
+| native_name_lang        = es
+| settlement_type         = [[Partidos of Buenos Aires|''Partido'']]
+| image_skyline           =
+| image_alt               =
+| image_caption           =
+| image_flag              = 
+| flag_alt                =
+| image_seal              =
+| seal_alt                =
+| image_shield            = Escudo del partido de San Fernando.png
+| shield_alt              =
+| image_blank_emblem      = Municipio sanfernando logo.png
+| blank_emblem_type       = Logo
+| blank_emblem_size       = 150 
+| nickname                =
+| motto                   =
+| image_map               = {{maplink
+|text=<div style="text-align: center;">'''Location of San Fernando'''</div>
+|frame=yes
+|frame-width=260
+|frame-height=200
+|frame-align=center
+|zoom=8
+|type=shape
+|stroke-colour=#555555
+|stroke-width=2
+}}
+| image_map1              = Argentina - Buenos Aires - San Fernando.svg
+| map_alt                 =
+| map_caption1            = Location of continental part of San Fernando Partido in [[Greater Buenos Aires]] and [[Buenos Aires Province]]
+| pushpin_map             =
+| pushpin_map_alt         =
+| pushpin_map_caption     =
+| coordinates             = {{coord|34|27|S|58|34|W}}
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = [[Argentina]]
+| subdivision_type1       = 
+| subdivision_name1       = 
+| subdivision_type2       =
+| subdivision_name2       =
+| established_title       = Established
+| established_date        = 
+| founder                 = 
+| seat_type               = Seat
+| seat                    = [[San Fernando, Buenos Aires|San Fernando]]
+| government_footnotes    =
+| leader_party            = [[Renewal Front|FR]]-[[Frente de Todos (2019 coalition)|FdT]]
+| leader_title            = [[Intendant#Argentina|Intendant]]
+| leader_name             = Juan Andreotti
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          =
+| area_total_km2          = 950 
+| area_land_km2           =
+| area_water_km2          =
+| area_water_percent      =
+| area_note               =
+| elevation_footnotes     =
+| elevation_m             =
+| population_footnotes    = <ref name=SanFerPoblación>{{cite web|title=Estudios de POBLACIÓN de la provincia de Buenos Aires|url=http://www.estadistica.ec.gba.gov.ar/dpe/images/Poblaci%C3%B3n_4.pdf|publisher=Buenos Aires Province Statistical Agency|access-date=12 May 2020|page=72|language=es|date=June 2017|archive-date=19 October 2023|archive-url=https://web.archive.org/web/20231019095106/http://www.estadistica.ec.gba.gov.ar/dpe/images/Poblaci%C3%B3n_4.pdf|url-status=dead}}</ref>
+| population_total        = 163240
+| population_as_of        = 
+| population_density_km2  = auto
+| population_demonym      =  sanfernandino/a 
+| population_note         = 
+| timezone1               =
+| utc_offset1             =
+| timezone1_DST           =
+| utc_offset1_DST         =
+| postal_code_type        = Postal Code
+| postal_code             = B1646
+| postal2_code_type       = IFAM
+| postal2_code            = [http://www.mininterior.gov.ar/municipios/masinfo.php?municipio=BUE114 BUE114]
+| area_code_type          = Area Code
+| area_code               = 011
+| iso_code                = 
+| blank_name_sec1         = Patron saint
+| blank_info_sec1         = Nuestra Señora de Aránzazu
+| website                 ={{URL|http://www.sanfernando.gob.ar}}
+| footnotes               = 
+}}
+
+'''San Fernando''' is a ''[[Partidos of Buenos Aires|partido]]'' of [[Buenos Aires Province]], [[Argentina]], in the north of [[Greater Buenos Aires]]. Its capital is [[San Fernando, Buenos Aires|San Fernando]]. It is twenty-eight kilometers from the city of [[Buenos Aires]].
+
+==Population distribution (2010)==
+Of the 163,240 inhabitants recorded in the 2010 census, the distribution is:<ref name=SanFerPoblación/>
+*[[San Fernando de la Buena Vista|San Fernando]]: 76,726
+*[[Victoria, Buenos Aires|Victoria]]: 44,959
+*[[Virreyes, Buenos Aires|Virreyes]]: 38,599
+
+==References==
+{{reflist}}
+
+== External links ==
+{{commons cat}}
+* {{official website}} {{in lang|es}}
+
+{{Greater Buenos Aires}}
+
+{{Partidos of Buenos Aires Province}}
+
+[[Category:San Fernando Partido| ]]
+[[Category:Partidos of Buenos Aires Province]]
+[[Category:States and territories established in 1805]]
+[[Category:1805 establishments in the Spanish Empire]]
+
+
+{{BuenosAiresAR-geo-stub}}

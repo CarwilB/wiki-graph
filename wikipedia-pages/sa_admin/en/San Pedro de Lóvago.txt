@@ -1,0 +1,102 @@
+{{refimprove|date=August 2024}}
+{{Infobox settlement
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = San Pedro de Lóvago
+|settlement_type        = Municipality<!--For Town or Village (Leave blank for the default City)-->
+|other_name             =
+|native_name            = <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Nicaragua<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = right
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Nicaragua
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Nicaragua}}
+|subdivision_type1      = [[Departments of Nicaragua|Department]]
+|subdivision_name1      = [[Chontales Department]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         =
+|area_total_km2         = 467<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2          = <!--See table @ Template:Infobox settlement for details on automatic unit conversion-->
+|area_water_km2         =
+|area_total_sq_mi       =
+<!-- Population   ----------------------->
+|population_as_of               = 2005
+|population_footnotes           =
+|population_note                =
+|population_total               = 7650
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 3415
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|12|08|N|85|07|W|region:NI|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|website                = 
+|footnotes              = 
+}}
+
+'''San Pedro de Lóvago''' ({{IPA|es|sam ˈpeðɾo ðe ˈloβaɣo}}) is a [[city]]{{cn|date=August 2024}} in the [[Chontales Department]] of [[Nicaragua]].<ref>{{cite web | url=https://www.google.com/maps/place//@12.133333,-85.116667,12z/data=!4m2!3m1!1s0x0:0x0!5m1!1e4?hl=en | title=Google Maps }}</ref> It is a small town, which mainly consists of farming. It is a region located in the highlands of central Nicaragua.
+
+
+==References==
+{{Reflist}}
+
+{{Coord|12|08|N|85|07|W|region:NI_type:city|display=title}}
+
+{{Chontales Department}}
+{{Authority control}}
+
+{{DEFAULTSORT:San Pedro De Lovago}}
+[[Category:Municipalities of the Chontales Department]]
+
+
+{{Nicaragua-geo-stub}}

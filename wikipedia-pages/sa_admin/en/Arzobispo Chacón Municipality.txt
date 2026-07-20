@@ -1,0 +1,61 @@
+{{Infobox settlement 
+| name                    = Arzobispo Chacón Municipality
+| native_name             = Municipio Arzobispo Chacón
+| native_name_lang        = es
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_flag               = {{#property:P41}}
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Mérida (state)|Mérida]]
+| pushpin_map             = Venezuela
+| pushpin_map_alt         = Map showing the location of Arzobispo Chacón Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Mérida (state)|Mérida]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = Gustavo Sosa 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 2007
+| population_total        = 15850
+| population_density_km2  = auto
+| established_title       = Founded
+| established_title1      = Established
+| established_title2      = Incorporated
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 0275
+| postal_code_type        = [[Postal code]](s)
+| website                 = {{official website|{{#property:P856}}}}
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+The '''Arzobispo Chacón Municipality''' is one of the 23 [[Municipalities of Venezuela|municipalities]] ([[municipio]]s) that makes up the [[Venezuela]]n state of [[Mérida (state)|Mérida]] and, according to a 2007 population estimate by the National Institute of Statistics of Venezuela, the municipality has a population of 15,850.<ref>{{Cite web |title=Sintesise Stadistica |url=http://www.ine.gob.ve/sintesisestadistica/estados/merida/cuadros/Poblacion6.xls |website=www.ine.gob.ve}}{{dead link|date=November 2023}}</ref> The town of [[Canaguá]] is the [[County seat|shire town]] of the Arzobispo Chacón Municipality.<ref name="ine.gob.ve">{{Cite web |title=Merida Division |url=http://www.ine.gob.ve/secciones/division/Merida.zip |website=www.ine.gob.ve}}{{dead link|date=November 2023}}</ref>
+
+==Demographics==
+The Arzobispo Chacón Municipality, according to a 2007 population estimate by the National Institute of Statistics of Venezuela, has a population of 15,850 (up from 15,586 in 2000). This amounts to 1.9% of the state's population.<ref>{{Cite web |title=Poblacion 5 |url=http://www.ine.gob.ve/sintesisestadistica/estados/merida/cuadros/Poblacion5.xls |website=www.ine.gob.ve}}{{dead link|date=November 2023}}</ref> The municipality's population density is {{convert|9.4|PD/sqkm}}.<ref>{{Cite web |title=Poblacion 4 |url=http://www.ine.gob.ve/sintesisestadistica/estados/merida/cuadros/Poblacion4.xls |website=www.ine.gob.ve}}{{dead link|date=November 2023}}</ref>
+
+==Government==
+The mayor of the Arzobispo Chacón Municipality is Carlos Andrès Chacòn Mora, elected on October 31, 2004, with 61% of the vote.<ref>{{Cite web |title=Regionales 2004 |url=http://www.cne.gob.ve/regionales2004/12/alcaldedis=0&edo=12&mun=3&par=0&cen=0&mesa=0&cua=0.html |website=www.cne.gob.ve}}</ref> He replaced Gerardo Duran shortly after the elections.<ref>{{cite web|url=http://www.cne.gob.ve/estadisticas/e016.pdf |title=Archived copy |accessdate=2008-03-15 |url-status=dead |archiveurl=https://web.archive.org/web/20061002063906/http://www.cne.gob.ve/estadisticas/e016.pdf |archivedate=2006-10-02 }}</ref> The municipality is divided into seven [[parish]]es; Capital Arzobispo Chacón, Capurí, Chacantá, El Molino, Guaimaral, Mucutuy, and Mucuchachí.<ref name="ine.gob.ve" />
+
+==See also==
+*[[Canaguá]]
+*[[Mérida (state)|Mérida]]
+*[[Municipalities of Venezuela]]
+
+==References==
+{{reflist|2}}
+
+{{DEFAULTSORT:Arzobispo Chacon Municipality}}
+[[Category:Municipalities of Mérida (state)]]
+
+
+{{MéridaVE-geo-stub}}

@@ -1,0 +1,105 @@
+{{Distinguish|Alquézar}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+<!-- Basic info  ---------------->| official_name      = Alquízar
+| other_name         = 
+| native_name        = 
+| nickname           = 
+| settlement_type    = [[Municipalities of Cuba|Municipality]]
+| motto              = <!-- images and maps  ----------->
+| image_skyline      = Alquizar, Cuba (1907-1931).jpg
+| imagesize          = 
+| image_caption      = Alquizar (1907-1931)
+| image_flag         = 
+| flag_size          = 
+| image_seal         = 
+| seal_size          = 
+| image_shield       = Escudo_de_Alquizar.jpg
+| shield_size        = 120x90px
+| image_map          = Alquízar (Cuban municipal map).png
+| map_caption        = Alquízar municipality (red) within <br> Artemisa Province (yellow) and Cuba
+
+<!-- Location ------------------>| subdivision_type   = Country
+| subdivision_name   = [[Cuba]]
+| subdivision_type1  = [[Provinces of Cuba|Province]]
+| subdivision_name1  = [[Artemisa Province|Artemisa]]
+| subdivision_type2  = 
+| subdivision_name2  = <!-- Politics ----------------->
+| government_footnotes = 
+| government_type    = 
+| leader_title       = 
+| leader_name        = 
+| leader_title1      = 
+| leader_name1       = 
+| established_title  = Founded
+| established_date   = 1879<ref name=guije/>
+| established_title2 = Established
+| established_date2  = January 1, 1879
+| established_title3 = <!-- Incorporated (city) -->
+| established_date3  = <!-- Area    --------------------->
+| area_magnitude     = 
+| unit_pref          = 
+| area_footnotes     = <ref name=statoids/>
+| area_total_km2     = 193
+| area_land_km2      = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+| area_water_km2     = <!-- Population   ----------------------->
+| population_as_of   = 2022
+| population_footnotes = <ref name=citypopulation/>
+| population_note    = 
+| population_total   = 33,510
+| population_density_km2 = auto
+| timezone           = [[Eastern Time Zone|EST]]
+| utc_offset         = -5
+| timezone_DST       = 
+| utc_offset_DST     = 
+| coordinates        = {{coord|22|48|24|N|82|34|58|W|region:CU|display=inline,title}}
+| elevation_footnotes = <!--for references: use <ref> </ref> tags-->
+| elevation_m        = 25
+<!-- Area/postal codes & others -------->| postal_code_type   = 
+| postal_code        = 
+| area_code          = +53-7
+| blank_name         = [[Köppen climate classification|Climate]]
+| blank_info         = [[Tropical savanna climate|Aw]]
+| website            = 
+| footnotes          = 
+}}
+ <!--Infobox ends-->
+'''Alquízar''' ({{IPA|es|alˈkisaɾ}}) is a town and municipality in the [[Artemisa Province]] of [[Cuba]].
+
+==History==
+The settlement was first mentioned in 1616, as a coffee plantation owned by ''Don Sancho de Alquízar'', who gives the name of the community. In 1826, a garrison was established here,<ref name=guije/> and it was incorporated in 1879.
+
+==Geography==
+The town is located in the south-east corner of the province, south-west of [[San Antonio de los Baños]] and west of [[Güira de Melena]].
+
+The municipality was formerly divided into the [[barrio]]s of Guanímar, La Paz, Pueblo (capital), San Andrés and Tumbadero.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/halquizar/index.htm|title=Alquízar|author=Guije.com|accessdate=2007-10-07| archiveurl= https://web.archive.org/web/20071012211345/http://guije.com/pueblo/municipios/halquizar/index.htm| archivedate= 12 October 2007 | url-status= live|language=es}}</ref>
+
+The municipality is divided into [[Consejo popular|consejos populares]] (i.e. "popular councils"):  Mayorquín Sur (main town is [[El Mayorquín]]), Norte, Dagame, and Pulido - Guanímar. <ref>{{Cite web |title=Ubicación |url=https://www.alquizar.gob.cu/es/un-poco-de-historia/6979-un-poco-de-historia |website=Official website of Alquizar}}</ref>
+
+==Demographics==
+In 2022, the municipality of Alquízar had a population of 33,510.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|193|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-07| archiveurl= https://web.archive.org/web/20071012141831/http://statoids.com/ycu.html| archivedate= 12 October 2007 | url-status= live}}</ref> it has a population density of {{convert|170|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Alquízar Municipal Museum]]
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Alquízar
+ | N  = [[Caimito, Cuba|Caimito]]
+ | NE = [[San Antonio de los Baños]]
+ | E  = [[Güira de Melena]]
+ | S  = ''[[Gulf of Batabanó]]''
+ | W  = [[Artemisa]]
+}}
+{{Municipalities in Artemisa}}
+{{Authority control}}
+
+{{DEFAULTSORT:Alquizar}}
+[[Category:Populated places in Artemisa Province]]

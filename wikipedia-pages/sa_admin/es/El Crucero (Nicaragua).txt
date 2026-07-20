@@ -1,0 +1,107 @@
+{{Ficha de entidad subnacional
+| nombre = El Crucero
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|MN}}
+| mapa_loc = Nicaragua
+| imagen = Jatropha multifida 1.JPG
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 12.0145
+ |longitude= -86.3520
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| dirigentes_títulos = Alcaldesa
+| dirigentes_nombres = [[Archivo:Flag of the FSLN.svg|20px|link=Frente Sandinista de Liberación Nacional]] Adelayda Carrión Rodríguez<ref>{{Cita web|url=http://www.inifom.gob.ni/contactenos/AlcaldesNicaragua.pdf|título=Autoridades Municipales de Nicaragua|editorial=Uniform|fechaacceso=18 de julio de 2013|fechaarchivo=27 de septiembre de 2013|urlarchivo=https://web.archive.org/web/20130927002136/http://www.inifom.gob.ni/contactenos/AlcaldesNicaragua.pdf|deadurl=yes}}</ref>
+| elevación_media = 930
+| superficie = 225.7
+| superficie_puesto = 101
+| número_entidades = 153
+| población_puesto = 101
+| población_año = 2022
+| población = 16127
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/managua/5532__el_crucero/ Estimación del 2022] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 10435
+| densidad = 71.45
+| fundación = 11 de enero de 2000<br/>({{Edad|11|1|2000}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| gentilicio = Crucerense,<br />Crucereño, -ña.
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 16100
+}}
+'''El Crucero''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Managua|Managua]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El municipio de El Crucero tiene una extensión de 225.7 km², está ubicada entre las coordenadas 11° 58′ 60″ de latitud norte y 86° 19′ 0″ de longitud oeste, a una altitud de 930 m s. n. m.
+
+=== Límites ===
+==== Municipios adyacentes ====
+{| class="wikitable" width ="40%" border = 2 align="center"
+|-----
+| width ="20%" align="center" | ''Noroeste:''<br/>{{bandera|Departamento de Managua}} Villa El Carmen
+| width ="30%" align="center" | ''Norte:''<br/>{{bandera|Departamento de Managua}} [[Managua]]
+| width ="20%" align="center" | ''Noreste:''<br/> {{bandera|Departamento de Managua}} Managua
+|-----
+| width ="20%" align="center" | ''Oeste:''<br/>{{bandera|Departamento de Managua}} [[Villa El Carmen]]
+| width ="30%" align="center" | [[Archivo:Rosa de los vientos.svg|75px]]
+| width ="20%" align="center" | ''Este:''<br/>{{bandera|Departamento de Managua}} [[Ticuantepe]] y<br />{{bandera|Departamento de Masaya}} [[La Concepción (Nicaragua)|La Concepción]]
+|-----
+| width ="20%" align="center" | ''Suroeste:''<br/>{{bandera|Departamento de Managua}} Villa El Carmen
+| width ="30%" align="center" | ''Sur:''<br/>{{bandera|Departamento de br/>{{bandera|Departamento de Carazo}} [[San Marcos (Nicaragua)|San Marcos]]
+|}
+
+== Historia ==
+El Crucero era anteriormente el [[Distrito VII (Managua)|Distrito VII]] de Managua, pero se convirtió en municipio independiente en 2000.
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2022)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 8,018 (49.7%)
+| valor1 = 49.7
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 8,109 (50.3%)
+| valor2 = 50.3
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2022)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 5,692 (35.3%)
+| valor1 = 35.3
+| color1 = #109618
+| etiqueta2 = Urbano: 10,435 (64.7%)
+| valor2 = 64.7
+| color2 = #FF9900
+}}
+El Crucero tiene una población actual de 16,127 habitantes. De la población total, el 49.7% son hombres y el 50.3% son mujeres. Casi el 64.7% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== División territorial ==
+¿Extensión territorial de mi municipio?
+
+* 30 comarcas
+* 3 asentamientos espontáneos
+* 1 urbanización progresiva
+* 3 barrios populares
+* 2 zonas residenciales
+* 4 barrios tradicionales
+
+== Religión	==
+El Crucero celebra su fiesta el 7 de octubre en memoria de Nuestra Señora de la Victoria.
+
+== Referencias ==
+<div class="references-small">
+{{listaref}}
+</div>
+
+== Enlaces externos ==
+* [https://web.archive.org/web/20071026135024/http://crucero.venamisitio.com/ Página oficial de la Alcaldía El Crucero]
+
+{{Control de autoridades}}
+[[Categoría:Área metropolitana de Managua]]
+[[Categoría:Municipios del departamento de Managua]]

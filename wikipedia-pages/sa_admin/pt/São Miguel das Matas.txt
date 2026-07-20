@@ -1,0 +1,157 @@
+{{Info/Município do Brasil
+<!-- GeoID=2929404 -->
+<!-- Cabeçalho -->| nome = São Miguel das Matas
+| foto = 
+| leg_foto = 
+| apelido = São Miguel
+| brasão = 
+| bandeira = Bandeira de São Miguel das Matas.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| emancipação = {{nowrap|{{dtlink|8|6|1891|idade}}}}
+| aniversário = {{dtlink|8|6|}}
+| fundação = 
+| gentílico = [[wikt:miguelense|miguelense]]<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-miguel-das-matas.html|título=Cidades e Estados|acessodata=27-08-2023}}</ref>
+| lema = 
+| prefeito = Valdelino de Jesus Santos
+| partido = [[Partido da Social Democracia Brasileira|PSDB]]
+| mandato_início = 2021
+| fim_mandato = 2024
+| vereadores = 9 <ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-sao-miguel-das-matas-tomam-posse-veja-lista-de-eleitos.ghtml|título=Prefeito e vereadores de São Miguel das Matas tomam posse; veja lista de eleitos|publicado=g1|acessodata=27-08-2023}}</ref>
+| mapa = Bahia Municip SaoMigueldasMatas.svg
+| latP = S
+| latG = 13
+| latM = 02
+| latS = 52
+| lonP = O
+| lonG = 39
+| lonM = 27
+| lonS = 21
+| estado = Bahia
+| mesorregião = [[Mesorregião do Centro-Sul Baiano|Centro-Sul Baiano]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais | publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Jequié|Jequié]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Amargosa]], [[Santo Antônio de Jesus]], [[Varzedo]] e [[Laje (Bahia)|Laje]]
+| dist_capital = 224 ou 135 (via ferry boat)
+<!-- Características geográficas -->| área = 230.906
+| área_ref = IBGE/2022<ref name="IBGE_Área">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-miguel-das-matas.html|título=Cidades e Estados|publicado=IBGE|acessodata=27 de agosto de 2023}}</ref>
+| área_urbana = {{fmtn|0,72}}
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/sao-miguel-das-matas/panorama |título=Meio Ambiente |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=27 de agosto de 2023}}</ref>
+| população = 10334
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| clima_ref = <ref name=":1">{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/conheca-um-pouco-da-historia-de-sao-miguel-das-matas/ |titulo=Conheça um pouco da história de São Miguel das Matas |data=22-05-2019 |acessodata=13-09-2021 |website=Criativa Online}}</ref>
+| população_ref = <ref name="IBGE">{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/sao-miguel-das-matas/panorama|título=População|publicado=IBGE|data=28 de junho de 2023|acessodata=27 de agosto de 2023}}</ref>
+| população_pos = ([[Lista de municípios da Bahia por população|BA: 331º]]){{·}}([[Lista de municípios da Região Nordeste do Brasil por população|NE: 1126°]]){{·}}([[Lista de municípios do Brasil por população|BR: 2976º]]) (2022)<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2023/06/28/populacao-de-sao-miguel-das-matas-ba-e-de-10-334-pessoas-aponta-o-censo-do-ibge.ghtml|título=População de São Miguel das Matas (BA) é de 10.334 pessoas, aponta o Censo do IBGE|publicado=g1|acessodata=27-08-2023}}</ref>
+| clima = úmido-subúmido
+| sigla_clima = <!-- Indicadores -->
+| CEP = 44580-000
+| idh = 0.593 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]
+| idh_ref = <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=25 de agosto de 2013}}</ref>
+| pib = {{formatnum:139091.55}} mil
+| data_pib = [[IBGE]]/[[2020]]<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=2929404|titulo=Produto Interno Bruto dos Municípios |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=27 de agosto de 2023}}</ref>
+| pib_pos = ([[Lista de municípios da Bahia por PIB|BA: 257º]]){{·}}([[Lista de municípios do Brasil por PIB|BR: 3533°]])
+| pib_per_capita = 11884.10
+| data_pib_per_capita = [[IBGE]]/[[2020]]<ref name="IBGE_PIB"/>
+| padroeiro = [[Miguel (arcanjo)|São Miguel]]
+| site_prefeitura = {{url|saomigueldasmatas.ba.gov.br}}
+| site_câmara = {{url|camarasaomigueldasmatas.ba.gov.br}}
+}}
+'''São Miguel das Matas''' é um [[Unidades federativas do Brasil|município brasileiro]] do [[estados do Brasil|estado]] da [[Bahia]]. Sua população é de 10 334 habitantes, segundo o [[Censo 2022|Censo 2022 do IBGE]].<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/sao-miguel-das-matas.html|titulo=São Miguel das Matas (BA) {{!}} Cidades e Estados {{!}} IBGE|acessodata=2023-08-28|website=www.ibge.gov.br}}</ref>
+
+== Geografia ==
+O município de São Miguel das Matas está localizado no [[Vale do Jequiriçá|Vale do Jiquiriçá]] da Bahia, limitando-se com os municípios de [[Laje (Bahia)|Laje]] (ao Sul), [[Amargosa]] e [[Elísio Medrado]] (ao Norte), [[Varzedo]] (ao leste) e [[Santo Antônio de Jesus]] (ao oeste), tendo população estimada em 2005 de 10 464 habitantes e uma densidade demográfica de 50,55 hab/km², segundo projeção do [[Instituto Brasileiro de Geografia e Estatística|IBGE]].<ref name=":0">{{citar web |ultimo=Fiusa |primeiro=Rodrigo |url=https://repositorio.ufba.br/ri/bitstream/ri/30106/1/TCC_Memoria_Rodrigo.pdf |titulo=RETRATOS IMAGINADOS - Memória do Livro Fotográfico |data=2011 |acessodata=13-09-2021 |publicado=[[Universidade Federal da Bahia|UFBA]]}}</ref>
+
+A sede municipal está a uma altitude média de 293m ao nível do mar, possui as coordenadas geográficas de 13° 03' de latitude sul e 29° 28' de longitude oeste, com área de 207,45&nbsp;km². A sede do município fica a uma distância de 224&nbsp;km da capital ([[Salvador]]), cujo acesso se faz por pelas vias BR 116 e 324, pela BA 045 via Santo Antônio de Jesus - [[Balsa|ferry-boat]] - Bom Despacho.<ref name=":0" />
+
+O município de São Miguel das Matas está localizado na Microrregião Homogênea de [[Jequié]], na Região de Planejamento do [[Rio Paraguaçu|Paraguaçu]], e faz parte da Região Administrativa de Amargosa, bem como da [[Região econômica|Região Econômica]] do Recôncavo Sul. Possui relevo formado por tabuleiros pré-litorâneos e o tipo climático é de úmido a subúmido, com temperatura média de 23,4°C, que varia entre 28,6°C e 19,6°C. O período chuvoso é entre abril e junho tendo uma pluviosidade anual mínima de 360&nbsp;mm, média de 989&nbsp;mm e máxima de 1.579&nbsp;mm com tem risco de seca média.<ref>{{citar web |ultimo=Onofre |primeiro=Jair |url=http://www.bahianapolitica.com.br/noticias/36602/sao-miguel-das-matas-comemora-seus-124-anos-de-emancipacao.html |titulo=São Miguel das Matas comemora seus 124 anos de emancipação |data=08-06-2015 |acessodata=13-09-2021 |website=Bahia na Política}}</ref>
+
+== História ==
+Em 1557, [[João III de Portugal|D. João III]] doou a [[Álvaro da Costa (armeiro-mor)|D. Álvaro da Costa]], filho do então [[Estado do Brasil|governador-geral]] do Brasil, D. Duarte da Costa, "as terras que então se achavam incultas e não povoadas, entre os dois rios do braço do mar: Jaguaripe e Paraguaçu, em 4 léguas de costa na largura e de comprimento, 10 léguas para o sertão e pelos ditos rios acima, que fica tudo em distância de 15 e 16 léguas dessa cidade (Salvador) que lhe passou carta em 16 de janeiro de 1557". Isto incluiu as terras que atualmente correspondem ao município de São Miguel das Matas.<ref>{{citar web |url=http://www.upb.org.br/noticias/sao-miguel-das-matas-festeja-seus-123-anos |titulo=São Miguel das Matas festeja seus 123 anos |data=06-06-2014 |acessodata=13-09-2021 |publicado=União dos Municípios da Bahia}}</ref>
+
+Na segunda metade do [[século XVII]], o [[rei]] de [[Portugal]], através de [[Carta régia|Carta Régia]], determinou que se criasse, no fundo da Vila de Maragogipe, a Vila de Jaguaripe, no mesmo local da Freguesia de Nossa Senhora D'Ajuda, existente desde 1613, que somente 80 anos mais tarde, em 27 de dezembro de 1693, foi elevado à categoria de município, o primeiro do Recôncavo Baiano, denominado Vila de Nossa Senhora D'Ajuda de Jaguaripe. Em 1931, foi extinto e anexado ao município de [[Aratuípe]], mas devido a protestos dos moradores, voltou a ser um município no mesmo ano.<ref name=":1" />
+
+Nos limites mais distantes da [[vila]] supracitada, pouco depois surgiu a Vila de São Miguel da Aldeia. A denominação do nome Vila de São Miguel da Aldeia está ligado à visita de um [[caboclo]] que passara pela região pedindo ajuda para festejar o [[santo]] [[Miguel (arcanjo)|São Miguel Arcanjo]], na Vila de Jaguaripe. Por ser uma pessoa desconhecida, os moradores da Vila não ofertaram suas ajudas, sugerindo que o caboclo retornasse à sua vila e trouxesse a imagem do referido santo, a fim de que pudesse confirmar a veracidade da promessa. Durante o retorno à Vila de Jaguaripe, o caboclo foi acometido do vírus da [[varíola]], o que o levou a óbito.<ref name=":1" />
+
+A partir desse fato, em 1765, o [[Povoado|lugarejo]] passou a ser chamado de São Miguel da Aldeia. "São Miguel" em referência ao arcanjo Miguel, e "Aldeia" em referência as leis de proteção às [[Aldeia|aldeias]]. As primeiras casas, sedes de [[Fazenda|fazendas]], localizavam-se na antiga Rua de Telha (onde hoje se localiza o Clube Social), e outras se localizavam próximo a [[estação ferroviária]] e na entrada principal da cidade, hoje chamado Baixa de Areia.<ref name=":1" />
+
+Em decorrência de uma grande [[epidemia]] de varíola que assolou a vila, na [[década de 1790]], o que ocasionou um grande número de mortes, os moradores das fazendas da Baixinha, conhecida como Triângulo, fizeram uma promessa a São Roque, protetor das pestes, construindo posteriormente, em 1802, uma pequena [[capela]] em frente ao local onde foram enterradas as vítimas, onde a partir do fim da peste passou a ser o principal local das celebrações religiosas realizadas pelos padres [[franciscanos]] de Acaju ou Cajueiro. Os franciscanos utilizavam-se de sermões educativos sobre o modo de plantar, de colher e de beneficiar o cultivo do [[café]], bem como distribuíam [[Semente|sementes]] aos [[Colono|colonos]] miguelenses.<ref name=":1" />
+
+Com o desenvolvimento da cultura da [[mandioca]], do café, da [[cana-de-açúcar]], do [[fumo]] e da [[Pecuária|criação de gado]], o lugarejo se desenvolvia com pequenas casas comerciais e algumas moradias em torno da Capela de São Roque, fatos que influenciaram a coroa portuguesa a elevar o local a Freguesia de São Miguel da Aldeia. Ato feito através de [[alvará]] de 24 de novembro de 1823, quando o [[imperador]] [[Pedro I do Brasil|D. Pedro I]] cria a primeira [[freguesia]] do império. O arraial de Nova Laje passou a fazer parte da Freguesia de São Miguel da Aldeia, que por integrar ao seu território o novo arraial, passou a ser chamado de São Miguel da Nova Laje, sendo este o quinto distrito da Vila de Jaguaripe.<ref name=":1" />
+
+As disputas de posses de terras eram frequentes e ceifaram a vida de muitos colonos. As leis eram feitas de acordo com a conveniência e influência que cada um tinha perante o governador da província, mesmo sobre a égide da Justiça de Jaguaripe. A representação legal da justiça em São Miguel da Nova Laje era exercida pelo [[juiz de paz]]. Na inexistência de alguém que residisse no local e atendesse a todos os requisitos exigidos pelo posto, o [[vigário]] assumia essa função. Nesse período, o vigário, o [[professor]] e o juiz de paz eram as pessoas mais respeitadas do lugar.<ref name=":1" />
+
+Em São Miguel da Aldeia, os padres [[Companhia de Jesus|jesuítas]] ajudavam os [[indígenas]] da [[escravidão]] que os [[bandeirantes]] e os [[Sertanismo|sertanistas]] impunham aos habitantes das aldeias, deslocando-os para longe das rotas dos desbravadores. A topografia das aldeias também contribuía para que os povos indígenas se protegessem dos invasores, que ao perceber a aproximação refugiavam-se nas matas, sobretudo na Mata do Cruzeiro, formando novas aldeias. Em 1758, o [[Sebastião José de Carvalho e Melo|Marquês de Pombal]] autorizou o governador-geral do Brasil a expulsar os jesuítas.<ref name=":1" />
+
+Com a expulsão dos jesuítas da vila de São Miguel da Aldeia, suas terras foram redistribuídas em formas de [[Sesmaria|sesmarias]], através do [[Afonso de Portugal, 1.º marquês de Aguiar|D. Afonso de Portugal e Castro]], em 22 de janeiro de 1780. As terras do padre José Ferreira de San Payo foram divididas entre três sesmeiros: José Felix da Motta, Manoel da Motta de Carvalho e Francisco Gonçalves da Motta, que residiam às margens do rio da Dona. Restando apenas aos herdeiros da família do Padre San Payo a sede da fazenda, situada próximo a cidade de [[Varzedo]], no ponto San Payo da antiga estrada de ferro.<ref name=":1" /> 
+
+Em 24 de novembro de 1823, foi criado um distrito com a denominação de São Miguel, sendo subordinado a Santo Antônio de Jesus. Foi desmembrado de Santo Antônio de Jesus em 1 de junho de 1891, sendo elevado a município com administração autônoma em 8 de junho de 1891, quando foi marcada sua emancipação. Em 31 de dezembro de 1943, foi extinto, tendo seu território anexado novamente a Santo Antônio de Jesus. Por meio de um decreto de 1 de junho de 1944, foi elevado novamente a município, adotando finalmente a denominação de São Miguel das Matas.<ref>{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/sao-miguel-das-matas/historico |titulo=História São Miguel das Matas Bahia — BA |acessodata=13-09-2021 |publicado=[[Instituto Brasileiro de Geografia e Estatística]] (IBGE)}}</ref>
+
+== Organização Político-Administrativa ==
+{{Principal|Lista de prefeitos de São Miguel das Matas}}O município de São Miguel das Matas possui uma estrutura político-administrativa composta pelo [[Poder Executivo]], chefiado por um [[Prefeito]] eleito por sufrágio universal, o qual é auxiliado diretamente por [[Secretário de Estado#Brasil|secretários municipais]] nomeados por ele, e pelo [[Poder Legislativo]], institucionalizado pela [[Câmara Municipal (Brasil)|Câmara Municipal de São Miguel das Matas]], órgão colegiado de representação dos munícipes que é composto por 9 [[vereadores]] também eleitos por sufrágio universal.<ref name="">MEIRELLES, Hely Lopes. ''Direito municipal brasileiro''. 18. ed. São Paulo: Malheiros, 2017.</ref>
+
+=== Atuais autoridades municipais de São Miguel das Matas ===
+
+* [[Prefeitura (Brasil)|Prefeito]]: Valdelino de Jesus Santos "Baleia" - [[Partido da Social Democracia Brasileira|PSDB]] ([[2021]]/-)<ref name="ga">{{citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-sao-miguel-das-matas-tomam-posse-veja-lista-de-eleitos.ghtml|título=Prefeito e vereadores de São Miguel das Matas tomam posse; veja lista de eleitos|data=2021-01-01|acessodata=2022-10-29|publicado=[[G1]]|língua=pt}}</ref>
+* [[Vice-prefeito]]: Gilson da Silva Andrade "Gilson da Saúde" - [[Partido da Social Democracia Brasileira|PSDB]] ([[2021]]/-)<ref name="ga" />
+* [[Presidente da câmara de vereadores|Presidente da Câmara]]: José Gomes Vieira - [[Partido da Social Democracia Brasileira|PSDB]] ([[2021]]/-)<ref>{{citar web|url=https://criativaonline.com.br/ze-pires-e-reeleito-presidente-da-camara-de-sao-miguel-das-matas/|titulo=Zé Pires é reeleito presidente da Câmara de São Miguel das Matas|data=29-06-2022|acessodata=02-11-2022|website=Criativa Online}}</ref>
+
+== Infraestrutura ==
+
+=== Saúde ===
+O município conta com o [[Hospital]] Ademário Vilas Boas, um estabelecimento privado que presta serviços gratuitos de cirurgias e internamentos por meio de uma pactuação com a Secretaria Municipal de Saúde e com o [[Sistema Único de Saúde|Sistema Único de Saúde (SUS)]],<ref>{{citar web|ultimo=Bastos|primeiro=Magno|url=https://criativaonline.com.br/criativa-acompanha-a-abertura-do-hospital-ademario-vilas-boas-em-sao-miguel-das-matas/|titulo=Criativa acompanha a reabertura do Hospital Ademário Vilas Boas em São Miguel das Matas|data=17-06-2023|acessodata=18-06-2023|website=Criativa Online}}</ref> e quatro [[Posto de saúde|postos de saúde]],<ref>{{citar web |url=http://www1.saude.ba.gov.br/mapa_bahia/servicos/pesq_estabelecimentos.asp?COD_MUN=292940&DESC_MUN=S%C3O%20MIGUEL%20DAS%20MATAS&LATITUDE=&LONGITUDE |titulo=Todos as Unidades Prestadoras de Serviços de Saúde de SÃO MIGUEL DAS MATAS |acessodata=13-09-2021 |publicado=Secretaria de Saúde do Estado da Bahia}}</ref> sendo um localizado na zona urbana<ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://midiabahia.com.br/posto-de-saude-em-sao-miguel-das-matas-passa-a-funcionar-24-horas/ |titulo=Posto de Saúde em São Miguel das Matas passa a funcionar 24 horas |data=26-02-2015 |acessodata=12-09-2021 |website=Mídia Bahia}}</ref> e três na zona rural.<ref>{{citar web |ultimo=Alves |primeiro=Elenildo |url=https://criativaonline.com.br/equipe-de-saude-de-nossa-senhora-de-fatima-esta-completa-novamente-em-sao-miguel/ |titulo=Equipe de Saúde de Nossa Senhora de Fátima está completa novamente em São Miguel das Matas |data=03-03-2020 |acessodata=12-09-2021 |website=Criativa Online}}</ref><ref>{{citar web|ultimo=Bastos|primeiro=Magno|url=https://criativaonline.com.br/secretario-de-saude-ressalta-compromisso-com-a-saude-em-sao-miguel/|titulo=Secretário de Saúde ressalta compromisso com a Saúde em São Miguel|data=14-06-2015|acessodata=13-09-2021|website=Criativa Online}}</ref> A existência de apenas uma instituição privada para atender urgências e emergências na cidade fez com que, por diversas vezes, moradores do município precisassem se deslocar para cidades vizinhas, nas ocasiões em que a unidade fechou por conta de questões administrativas e/ou políticas.<ref name=":4">{{citar web|url=https://www.reconcavonews.com/2017/01/sao-miguel-das-matas-policlinica.html|titulo=São Miguel das Matas: Policlínica completa dois anos fechada e população sofre sem hospital|data=27-01-2017|acessodata=27-08-2023|website=Recôncavo News}}</ref> 
+
+Em agosto de 2009, quando era chamado de Policlínica São Miguel, o estabelecimento chegou a ficar com seus serviços reduzidos por quase um mês. Na época, o ex-prefeito Reinaldo Sandes anunciou que a então Policlínica São Miguel estava suspendendo alguns atendimentos e corria risco de ser fechada devido a cortes nos repasses de Autorizações de Internação Hospitalar (AIH) do SUS por parte da prefeitura, acusando inclusive o prefeito Teté de praticar "perseguição política" contra o estabelecimento, que pertencia a ele.<ref name=":22">{{citar web|ultimo=Valente|primeiro=Leo|url=https://blogdovalente.com.br/sem-categoria/2009/09/policlinica-pode-fechar-em-sao-miguel-das-matas/|titulo=Policlínica pode fechar em São Miguel das Matas|data=04-09-2009|acessodata=07-11-2022|website=Blog do Valente}}</ref> Em entrevista ao portal Criativa Online em 25 de agosto, o secretário de saúde Kledson Mota afirmou que os laudos não autorizados eram de pacientes de municípios que não tinham pactuação com a policlínica, em conformidade com uma orientação do SUS.<ref name=":3">{{citar web|ultimo=Bastos|primeiro=Ivanildo|url=https://criativaonline.com.br/realizada-passeata-contra-fechamento-de-hospital-em-sao-miguel-das-matas/|titulo=Realizada passeata contra fechamento de Hospital em São Miguel das Matas|data=01-09-2009|acessodata=07-11-2022|website=Criativa Online}}</ref> 
+
+O prefeito Teté, por sua vez, justificou os cortes afirmando que a policlínica deixava de atender pacientes por falta de médicos, e prometeu que a prefeitura iria iniciar ainda em 2009 as obras de um Hospital Municipal por meio de recursos iniciais de R$ 200 mil, o que não ocorreu.<ref name=":22" /> A policlínica só retomou os serviços que estavam suspensos em 19 de setembro, com apoio da 29ª Diretoria Regional de Saúde do governo estadual, sediada em Amargosa.<ref>{{citar web|url=https://www.youtube.com/watch?v=RMCIX1_kN6Q|titulo=Reabertura policlínica Dr Ludgarde|data=20-09-2009|acessodata=07-11-2022|publicado=Criativa On Line|via=[[YouTube]]}}</ref>
+
+Em 3 de agosto de 2013, com problemas administrativos e estruturais, a Policlínica São Miguel passou a ser administrada pela Fundação José Silveira. A administração seguiu até janeiro de 2015, quando o estabelecimento voltou a paralisar suas atividades.<ref name=":4" /> Desta vez, o espaço ficou inutilizado até 19 de setembro de 2018, quando foi reinaugurado como Hospital São Miguel, sob administração da União Comunitária dos Médicos da Bahia.<ref>{{citar web|url=https://criativaonline.com.br/prefeitura-inaugura-hospital-sao-miguel-nesta-segunda-feira-dia-17-de-setembro/|titulo=Prefeitura inaugura Hospital São Miguel nesta segunda-feira dia 17 de setembro|data=17-09-2018|acessodata=27-08-2023|website=Criativa Online}}</ref>
+
+=== Segurança pública ===
+São Miguel das Matas conta com um complexo policial<ref>{{citar web |ultimo=Bastos |primeiro=Ivanildo |url=https://criativaonline.com.br/dr-edilson-magalhaes-assumira-como-delegado-substituto-em-sao-miguel/ |titulo=Dr. Edilson Magalhães assume como delegado substituto em São Miguel |data=04-08-2021 |acessodata=12-09-2021 |website=Criativa Online}}</ref> e um [[pelotão]] de [[Polícia Militar da Bahia|Polícia Militar]] (3º Pelotão da 99ª Companhia Independente de Polícia Militar).<ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/tenente-marcelo-fala-do-trabalho-da-policia-militar-em-sao-miguel-das-matas/ |titulo=Tenente Marcelo fala do trabalho da Polícia Militar em São Miguel das Matas |data=14-11-2020 |acessodata=12-09-2021 |website=Criativa Online}}</ref>
+
+=== Educação ===
+A cidade conta com 17 [[Escola|escolas]] públicas municipais e o Colégio Estadual Aldemiro Vilas Boas.<ref>{{citar web |url=https://onciencias.org/classificados/estado/para-2-fase-onc-2019/BA/cidade/S%C3%A3o%20Miguel%20das%20Matas |titulo=Alunos classificados para a 2ª FASE da ONC 2019 - Município: São Miguel das Matas |acessodata=12-09-2021 |publicado=Olimpíada Nacional de Ciências}}</ref> Além disso, existem duas escolas privadas, a Escola Pingo de Gente<ref>{{citar web |url=https://criativaonline.com.br/matriculas-abertas-e-bolsas-com-50-de-desconto-na-escola-pingo-de-gente/ |titulo=Matrículas Abertas e Bolsas com 50% de desconto na Escola Pingo de Gente |data=19-12-2018 |acessodata=12-09-2021 |website=Criativa Online}}</ref> e a Escola Dinâmica.<ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/escola-dinamica-em-sao-miguel-das-matas-realiza-drive-thru-solidario/ |titulo=Escola Dinâmica em São Miguel das Matas realiza Drive Thru Solidário |data=17-06-2020 |acessodata=12-09-2021 |website=Criativa Online}}</ref>
+
+==== Escolas municipais ====
+
+* Creche Escola Vovó Joana
+* Escola Municipal de 1° Grau Jonival Lucas
+* Escola Municipal Antônio de Souza Andrade
+* Escola Municipal Professora Marineide Regina Santos Sousa
+* Escola Municipal Doutor Lomanto Júnior
+* Escola Municipal Eraldo Tinoco
+* Escola Municipal Humberto Castelo Branco
+* Escola Municipal Iza Marta
+* Escola Municipal José Marcelino
+* Escola Municipal Laudelina Vilas Boas
+* Escola Municipal Leovigildo Bitencourt
+* Escola Municipal Manoel Honorato Fonseca
+* Escola Municipal Manoel Josino Bitencourt
+* Escola Municipal Monteiro Lobato
+* Escola Municipal Padre Gilberto Vaz Sampaio
+* Escola Municipal Professora Marlene Santos
+* Escola Municipal São Vicente
+* Escola Municipal Vereador Esmeraldo Barreto
+
+=== Comunicações ===
+O município de São Miguel das Matas conta com serviços de [[Telefone celular|telefonia móvel]] da [[Claro]] e da [[Vivo]].<ref name=":2">{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/telefonia-movel-e-internet-voltam-aos-poucos-a-funcionar-em-sao-miguel/ |titulo=Telefonia móvel e internet voltam aos poucos a funcionar em São Miguel |data=18-02-2021 |acessodata=12-09-2021 |website=Criativa Online}}</ref> O município comportou uma [[estação de televisão]] repetidora (canal 13 analógico), da [[TV Subaé]] de [[Feira de Santana]], afiliada à [[TV Globo]], operada através de uma torre do [[Instituto de Radiodifusão Educativa da Bahia|IRDEB]] instalada na cidade.<ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/torre-do-irdeb-em-sao-miguem-das-matas-segue-abandonada/ |titulo=Torre do Irdeb em São Miguel das Matas segue em total abandono |data=07-12-2020 |acessodata=12-09-2021 |website=Criativa Online}}</ref> Em fevereiro de 2023, foi ativada a estação repetidora digital do programa Digitaliza Brasil,<ref>{{citar web|url=https://criativaonline.com.br/torre-de-tv-digital-ja-esta-instalada-em-sao-miguel-e-breve-o-sinal-estara-no-ar/|titulo=Torre de TV Digital já está instalada em São Miguel e em breve o sinal estará no ar|data=28-10-2022|acessodata=01-07-2023|website=Criativa Online}}</ref> retransmitindo a programação das emissoras TV Subaé (canal 13.1), [[TV Brasil]] (canal 2.1) e [[TV Câmara]] (canal 9.1).<ref>{{citar web |url=https://www.portalbsd.com.br/terrestres_channels.php?cidade=1386 |titulo=São Miguel das Matas - BA |acessodata=12-09-2021 |website=Portal BSD}}</ref> Com a implantação do sinal digital, a repetidora analógica foi desligada em 15 de julho.<ref>{{citar web|url=https://redeglobo.globo.com/redebahia/noticia/novas-cidades-serao-afetadas-com-o-desligamento-do-sinal-analogico-saiba-quais.ghtml|titulo=Novas cidades serão afetadas com o desligamento do sinal analógico; saiba quais|data=22-06-2023|acessodata=27-08-2023|website=Rede Globo|publicado=Rede Bahia}}</ref> São Miguel das Matas conta também com duas provedoras de internet: News Telecom e MMA Telecom.<ref name=":2" /><ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/mma-deixa-professor-sem-dar-aula-na-manha-desta-terca-feira/ |titulo=MMA em São Miguel deixa professor sem dar aula na manhã desta terça-feira |data=23-02-2021 |acessodata=13-09-2021 |website=Criativa Online}}</ref>
+
+=== Transportes ===
+São Miguel das Matas conta com serviços de transporte coletivo da [[Cooperativismo|cooperativa]] Coopersaj,<ref>{{citar web |ultimo=Moreira |primeiro=Jéssica |url=https://blogdovalente.com.br/noticias/saj/2018/08/presidente-da-coopesaj-nega-impedir-passageiros-de-entrar-em-transporte-alternativo-de-outra-cidade-entenda/ |titulo=Presidente da COOPERSAJ nega impedir passageiros de entrar em transporte alternativo de outra cidade; entenda |data=02-08-2018 |acessodata=13-09-2021 |website=Blog do Valente}}</ref> com linhas para outros municípios da região, além de linhas de [[ônibus]] das empresas Cidade Sol, Jauá e Rota.<ref>{{citar web|ultimo=Bastos|primeiro=Ivanildo|url=https://criativaonline.com.br/mais-de-25-anos-depois-linha-de-onibus-sai-direto-de-sao-miguel/|titulo=Mais de 25 anos depois linha de ônibus intermunicipal sai direto de São Miguel|data=05-11-2015|acessodata=13-09-2021|website=Criativa Online}}</ref><ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/onibus-nao-sobe-ate-o-centro-de-sao-miguel-e-retorna-da-baixa-de-areia/ |titulo=Ônibus não sobe até o centro de São Miguel e retorna da Baixa de Areia |data=19-01-2021 |acessodata=13-09-2021 |website=Criativa Online}}</ref> A cidade também já comportou uma [[estação ferroviária]]. Em 2 de fevereiro de 1892, foi inaugurada a Estação Ferroviária de Nazaré, que funcionou até 1967, quando, sob protestos, foi desativada.<ref>{{citar web |url=http://www.estacoesferroviarias.com.br/ba_ilheus/smiguel.htm |titulo=E. F. de Nazaré (1892-c.1967) |acessodata=13-09-2021 |website=Estações Ferroviárias do Brasil}}</ref>
+
+=== Estrutura esportiva ===
+Existem, na cidade, o Estádio Municipal Odílio Fernandes de Souza,<ref>{{citar web |ultimo=Bastos |primeiro=Magno |url=https://criativaonline.com.br/quatro-jogos-marcam-reabertura-do-estadio-de-sao-miguel-das-matas/ |titulo=Quatro jogos marcam reabertura do estádio de São Miguel das Matas |data=29-08-2021 |acessodata=13-09-2021 |website=Criativa Online}}</ref> a Quadra Municipal José Francisco de Andrade (ambos localizados no bairro do Onha)<ref>{{citar web |url=https://criativaonline.com.br/quadra-em-sao-miguel-estava-sendo-frequentado-nesta-sexta-feira/ |titulo=Quadra em São Miguel estava sendo frequentado nesta sexta-feira |data=27-03-2020 |acessodata=13-09-2021 |website=Criativa Online}}</ref> e duas quadras poliesportivas na Praça Orlando Spínola, sendo uma delas coberta.<ref>{{citar web |url=https://www.youtube.com/watch?v=UHJZnQ5S4S4 |titulo=Matéria da Quadra Praça Orlando Spínola |data=16-08-2009 |acessodata=13-09-2021 |publicado=TV Criativa On Line |via=[[YouTube]]}}</ref><ref>{{citar web |url=https://www.youtube.com/watch?v=BKmDfroYfWA |titulo=Inauguração da Quadra Esportiva Coberta em São Miguel das Matas |data=09-07-2018 |acessodata=13-09-2021 |publicado=TV Criativa On Line |via=[[YouTube]]}}</ref>{{Referências}}
+
+==Ligações externas==
+* [http://www.saomigueldasmatas.ba.gov.br/ Página da Prefeitura Municipal]
+
+{{Municípios da Bahia}}
+{{Portal3|Bahia}}
+
+{{DEFAULTSORT:Sao Miguel Matas}}
+[[Categoria:Municípios da Bahia|São Miguel Matas]]
+[[Categoria:Fundações na Bahia em 1891]]

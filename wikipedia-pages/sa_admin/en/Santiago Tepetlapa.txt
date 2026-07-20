@@ -1,0 +1,109 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+<!-- Basic info  ---------------->
+|name          =Santiago Tepetlapa 
+|settlement_type        =[[Municipalities of Mexico|Municipality]] and town
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          =
+|imagesize              =
+|image_caption          =
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           =
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              =
+|mapsize                = 
+|map_caption            = Location of the municipality in Oaxaca
+|pushpin_map            = Mexico<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =above
+|pushpin_mapsize        =
+|pushpin_map_caption    =Location in Mexico
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Mexico}}
+|subdivision_type1      = [[Administrative divisions of Mexico|State]]
+|subdivision_name1      = [[Oaxaca]]
+|subdivision_type2      = 
+|subdivision_name2      =
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            = President known as of 2012 is Heladio Montalban De La Rosa
+|established_title      = <!-- Settled -->
+|established_date       = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                = 
+|area_footnotes           =
+|area_total_km2           =
+<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               =2010
+|population_footnotes           =
+|population_note                =
+|population_total               = 131
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 101
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+<!-- General information  --------------->
+|timezone               = [[North American Central Time Zone|Central Standard Time]]
+|utc_offset             = -6 
+|timezone_DST           = [[North American Central Time Zone|Central Daylight Time]]
+|utc_offset_DST         = -5
+|coordinates            = {{coord|17|46|55|N|97|24|03|W|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 2172
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              =
+}}
+'''Santiago Tepetlapa''' is a town and [[Municipalities of Oaxaca|municipality]] in [[Oaxaca]], in southeastern [[Mexico]]. The municipality has an area of 13.624 km<sup>2</sup> and is part of the [[Coixtlahuaca District, Oaxaca|Coixtlahuaca district]] in the [[Mixteca Region, Oaxaca|Mixteca Region]].
+
+==Demography==
+As of the 2010 census, the town (locality) had a population of 101 inhabitants, while the municipality had a total population of 131 inhabitants.<ref>[http://mapserver.inegi.org.mx/mgn2k/?s=geo&c=1223 2010 census tables: INEGI] {{webarchive|url=https://web.archive.org/web/20130502025339/http://mapserver.inegi.org.mx/mgn2k/?s=geo&c=1223 |date=2013-05-02 }}</ref> It is the second-smallest municipality in Mexico in population, larger than only [[Santa Magdalena Jicotlán]], also in Oaxaca.
+
+==References==
+{{Reflist}}
+
+{{Oaxaca-geo-stub}}
+{{Coixtlahuaca District, Oaxaca}}
+
+{{coord|17|46|55|N|97|24|03|W|display=title|region:MX_type:city_source:INEGI_scale:25000}}
+
+[[Category:Municipalities of Oaxaca]]

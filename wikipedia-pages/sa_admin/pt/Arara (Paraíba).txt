@@ -1,0 +1,409 @@
+{{Info/Município do Brasil
+<!-- GeoID=2500908 -->
+<!-- Cabeçalho -->
+ |nome = Arara
+ |foto = Ararapb.jpg
+ |leg_foto = Vista aérea da região central da cidade, a partir do final da rua Hermes Lira
+ |apelido = Terra das Araras"<br />"Terra Paraíbana de Padre Ibiapina"<br />"Terra de tradição e fé"<br />"Porta de entrada do brejo<!-- Dados gerais -->
+ |brasão = Brasao arara pb.jpg
+ |bandeira = Flag of Arara.svg
+ |link_brasão =
+ |link_bandeira =
+ |link_hino = s:Hino do município de Arara
+ |aniversário = [[19 de dezembro]]
+ |fundação = {{dtlink|19|12|1961|idade}}
+ |gentílico = [[wikt:ararense|ararense]]
+ |lema =
+ |padroeiro = [[Nossa Senhora da Piedade]]
+ | prefeito = José Ailton Pereira da Silva
+ | partido = [[AVANTE]]
+ | fim_mandato = 2024
+<!-- Localização -->
+ |mapa = Brazil Paraíba Arara location map.svg
+ |latP = S | latG = 06| latM = 49 | latS = 40
+ |lonP = O | lonG = 35| lonM = 45 | lonS = 28
+ |estado = Paraíba
+ | região_intermediária = João Pessoa
+ | data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |arquivourl=https://www.webcitation.org/6scTsdWoX?url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |arquivodata=2017-08-10 |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=17 de agosto de 2017 |urlmorta=no }}</ref>
+ | região_imediata = Guarabira
+ | data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017"/>
+ |região_metropolitana = [[Região Metropolitana de Guarabira|Guarabira]]
+ |vizinhos = '''Norte:''' [[Solânea]]<br />'''Sul:''' [[Areia (Paraíba)|Areia]]<br />'''Leste:''' [[Serraria (Paraíba)|Serraria]] e [[Pilões (Paraíba)|Pilões]]<br />'''Oeste:''' [[Casserengue]] e [[Algodão de Jandaíra]].
+ |dist_capital = 155
+<!-- Características geográficas -->
+ |área = 99.112
+ |área_pos = [[Lista de municípios da Paraíba|PB: 173º]]
+ | área_ref =<ref name="IBGE_Área">{{citar web |url=http://www.in.gov.br/visualiza/index.jsp?data=23/01/2013&jornal=1&pagina=57&totalArquivos=104 |título=Área territorial |autor=IBGE |acessodata=6 de setembro de 2013 |data=23 de janeiro de 2013 }}{{Ligação inativa|1={{subst:DATA}} }}</ref>
+ |área_urbana = 1,2407
+ |área_urbana_pos = [[Lista de municípios da Paraíba por área urbana|PB: 55º]]
+ |área_urbana_ref = [[Empresa Brasileira de Pesquisa Agropecuária|Embrapa]]/2000<ref name="Embrapa_PB">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/pb.html|título=Paraíba |autor=Embrapa Monitoramento por Satélite|autorlink=Embrapa Monitoramento por Satélite |acessodata=3 de junho de 2015}}</ref>
+ |população = 13538
+ |população_pos = [[Lista de municípios da Paraíba por população|PB: 68º]]
+ |data_pop = [[IBGE]]/2017<ref name="IBGE_Pop_2017">{{citar web |url = ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2017/estimativa_dou_2017.pdf |título= ESTIMATIVAS DA POPULAÇÃO RESIDENTE NOS MUNICÍPIOS BRASILEIROS COM DATA DE REFERÊNCIA EM 1 DE JULHO DE 2017 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2016 |acessodata = 6 de setembro de 2017}}</ref>
+ |altitude = 467
+ |altitude_pos = [[Lista de municípios da Paraíba por altitude|PB: 74º]]
+ |clima = [[tropical]]
+ |sigla_clima = As
+<!-- Indicadores -->
+ |idh = 0.548 <!--favor manter o formato-->
+ |idh_pos = [[Lista de municípios da Paraíba por IDH|PB: 197°]]
+ |data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |titulo=Ranking IDH-M 2010 |data=2010 |obra=Atlas do Desenvolvimento Humano do Brasil |publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=3 de agosto de 2013 |arquivourl=https://www.webcitation.org/6IYLoOoJw?url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |arquivodata=2013-08-01 |urlmorta=no }}</ref>
+ |pib = {{formatnum:78169.000}} mil
+ |pib_pos = [[Lista de municípios da Paraíba por PIB|PB: 74º]]
+ |data_pib = [[IBGE]]/[[2014]]<ref name="IBGE_PIB">{{citar web |url=http://cidades.ibge.gov.br/v3/cidades/municipio/2500908 |titulo=Produto Interno Bruto dos Municípios 2014 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=2 de janeiro de 2017}}</ref>
+ |pib_per_capita = 5895.99
+ |data_pib_per_capita = [[IBGE]]/[[2014]]<ref name="IBGE_PIB"/>
+ |site_prefeitura = [http://www.arara.pb.gov.br <small>www.arara.pb.gov.br</small>]
+ |site_câmara = [http://www.arara.pb.leg.br <small>www.arara.pb.leg.br</small>]
+}}
+'''Arara''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] da [[Paraíba]].
+Localiza-se na [[Região Geográfica Intermediária de João Pessoa]] e na [[Região Geográfica Imediata de Guarabira]]. Em [[2017]], possuía uma população de 13.427 habitantes, em uma área territorial de 99&nbsp;km². Sua principal via de acesso é pela [[rodovia]] [[PB-105]], está distante 155 [[quilômetros]] de [[João Pessoa]], a capital do estado.
+
+A sede municipal tem uma temperatura média anual de {{fmtn|22.4|°C}} e a [[vegetação]] predominante é a [[caatinga]], tendo remanescentes de [[mata atlântica]] na região leste do município, localizando-se, neste modo, numa área de transição. Cerca de 70% da população vive na [[zona urbana]].
+
+O município foi emancipado da cidade de [[Serraria (Paraíba)|Serraria]] e instalado em [[1961]]. A origem de seu nome se deve pela grande quantidade de aves deste tipo ([[arara]]s) que existiam antigamente no local.
+
+Tradicionalmente desde o ano de [[1887]], a cidade costuma realizar no mês de setembro a festa da [[padroeira]] do município, consta na programação a apresentação de bandas Filarmônica, pregações religiosas, desfiles cívicos e apresentações de [[banda musical|banda]]s populares. O ponto principal das festividades é a [[procissão]] da [[Nossa Senhora da Piedade]], onde os fiéis percorrem as principais [[rua]]s do município levando a imagem da santa, louvando-a com cânticos religiosos.
+
+== História ==
+{{revisão}}
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+
+A origem do povoado de Arara, ocorreu na segunda metade do [[século XIX]], quando [[tropeiros]] viajantes que faziam o transporte de [[carne de sol]], farinha de [[mandioca]] e [[rapadura]], entre o Curimataú, Seridó e o Brejo Paraibano, aproveitavam as sombras das copas das inúmeras [[árvore]]s da família das "[[baraúnas]]" que existiam nas proximidades de um riacho, situado ao norte do Engenho Porções, nos contrafortes do [[Planalto da Borborema]], depois de três léguas de cavalgada no local onde hoje se encontra edificada a cidade de Arara.
+[[Imagem:Padre Ibiapina 1.jpg|thumb|160px|esquerda|Padre-Mestre-Doutor [[José Antônio Maria Ibiapina]], foi muito importante para o povoamento das "Baraúnas das Araras.]]
+Aos poucos, este local tornou-se ponto de encontro e de comércio entre os [[tropeiros]] viajantes que demandavam do [[Microrregião do Brejo Paraibano|Brejo]] ou da região do [[Microrregião do Curimataú Ocidental|Curimataú]] onde faziam suas compras de carne de sol, [[farinha de mandioca]] e [[rapadura]], alimentos de primeira necessidade negociados entre os "sertanejos" e "brejeiros" naquela área, que logo ficaria conhecida pelo nome de "Baraúnas das Araras" em virtude do grande número de aves desta espécie ali existentes ainda por volta de [[1860]].
+
+Foi então que nesta mesma época, proveniente do estado do [[Ceará]], chegou a região o Padre-Mestre-Doutor [[José Antônio Maria Ibiapina]], que muito influenciou para o desbravamento e progresso da região do [[Curimataú]], onde hoje se encontra o município de Arara. Ele fundou próximo a atual cidade de Arara a Casa de Caridade de Santa Fé, instalada no ano de 1866, em um terreno doado pelo Major [[Antônio José da Cunha]] e sua esposa Cândida Americana Hermogenes de Miranda Cunha, proprietários de jazidas de calcário na região.
+
+O Major Antônio José da Cunha, também construiu a primeira casa da futura povoação de Arara e muito contribuiu para o seu desenvolvimento até o ano de [[1881]] quando veio a falecer com 94 anos de idade. Sua esposa Cândida Americana, que era muito religiosa, fez a doação ao Padre Ibiapina, de parte da fazenda, com casas, bovinos, asininos e muares para construção de mais uma casa de caridade em Santa Fé. A Igreja Matriz de Arara sob a invocação de [[Nossa Senhora da Piedade]], teve sua construção iniciada também pelo [[Padre Ibiapina]], que chegou a prestar igualmente relevantes serviços à comunidade que ali se formava.
+
+Em [[1876]] o povoado já tinha cerca de 80 casas e 500 habitantes. Cândida Americana morreu pobre e esquecida, no final do Século XIX, em um humilde casebre, edificado em frente a Igreja Matriz de Arara. Como no Brasil, tem-se o costume de se esquecer a memória dos antepassados, o nome de Cândida Americana ficou esquecido por mais de cinquenta anos, quando finalmente foi lembrada na década de [[1970]], denominando uma rua secundária na cidade de Arara.
+
+Arara foi mencionada como distrito do município de [[Serraria (Paraíba)|Serraria]] na divisão administrativa do [[Brasil]] no ano de [[1937]] e [[1938]]. No início da [[década de 1960]] Arara já era maior e mais acessível do que a própria sede do município, mesmo assim continuava atrelada ao domínio administrativo dos serrarienses. Porém pouco tempo depois Arara conseguiu sua emancipação política conseguida através da Lei n° 2.602, de [[1 de dezembro]] de [[1961]], ocorrendo sua instalação oficial no dia 19 do mesmo mês e ano, desmembrando-se de Serraria. Muitos trabalharam pela sua emancipação, dentre eles podemos destacar a família de [[Marísio da Cunha Moreno]].
+
+Após sua emancipação política, Arara teve como primeiro prefeito [[Dedício Pereira Maia]], que governou por apenas 1 ano como determinava o ato de sua nomeação, foi um período de poucas mudanças, já em 1963 assumiu o poder Marísio da Cunha Moreno, sendo o primeiro prefeito eleito em [[7 de outubro]] do ano anterior, sendo uma figura muito importante desde a época do antigo distrito, pela maneira educada com a qual tratava as pessoas. Durante o seu mandato, Marísio Moreno, tomou sérias medidas administrativas que desagradaram muito aos [[comerciante]]s da recém-emancipada cidade, dentre as mais impopulares, consta a transferência da [[feira livre]] para o local atual, que naquela época era visto como despovoado, distante e desfavorável, além da proibição de se criar [[animais]] soltos nas ruas recém-calçadas.
+
+== Geografia ==
+=== Localização ===
+[[Imagem:Arararr.png|thumb|240px|direita|Arara e municípios limítrofes.]]
+O município de Arara está localizado na [[Mesorregião do Agreste Paraibano]] e na [[Microrregião do Curimataú Ocidental]], tem como coodernadas geográficas: 06°49'40" de [[latitude]] sul e 35°45'28" de [[longitude]] [[oeste]], segundo o meridiano de [[Meridiano de Greenwich|Greenwich]].
+
+A sede municipal encontra-se em uma [[altitude]] média de 467 m. A cidade encontra-se distante 155&nbsp;km da [[capital]] do estado, [[João Pessoa]] por [[asfalto|rodovia asfaltada]], e 103&nbsp;km em linha reta. Sua área total é de 99,112&nbsp;km², essa área total do município representa 0.1574% do estado, 0.0057% da região [[Nordeste]] e 0.001% de todo território [[brasil]]eiro.
+
+Seus municípios limítrofes são [[Solânea]] (norte), [[Areia (Paraíba)|Areia]] (sul), [[Serraria (Paraíba)|Serraria]] e [[Pilões (Paraíba)|Pilões]] (leste), [[Casserengue]] e [[Algodão de Jandaíra]] (oeste).
+
+=== Clima ===
+O município está incluído na área geográfica de abrangência do [[clima semiárido]] brasileiro, definida pelo [[Ministério da Integração Nacional]] em 2005.<ref>{{Citar web |url=http://www.integracao.gov.br/desenvolvimentoregional/publicacoes/delimitacao.asp |titulo=Ministério da Integração Nacional, 2005. Nova delimitação do semiárido brasileiro. |acessodata=2009-09-26 |arquivourl=https://web.archive.org/web/20100715200338/http://www.integracao.gov.br/desenvolvimentoregional/publicacoes/delimitacao.asp |arquivodata=2010-07-15 |urlmorta=yes }}</ref> Esta delimitação tem como critérios o índice pluviométrico, o índice de aridez e o risco de [[seca]].
+
+Levando-se em conta apenas a precipitação, o município de Arara possui [[clima tropical]] [[Classificação do clima de Köppen|''As'']], segundo a classificação do clima de Köppen. Tal tipo climático se caracteriza por ser um [[clima tropical]], com estação chuvosa no [[inverno]] e seca no [[verão]]. A pluviosidade média é de 922 [[mm]]/ano, sendo abril o mês mais chuvoso, com 152&nbsp;mm, e outubro o mais seco, com 14&nbsp;mm, podendo variar dependendo do ano.
+
+Por estar localizada em uma região serrana a uma [[altitude]] de 467 metros, no alto do [[Planalto da Borborema]], a cidade apresenta temperaturas mais amenas do que no litoral. A [[temperatura]] média anual oscila em torno de 22 [[°C]], sendo as menores temperaturas registradas em agosto (média mínima em torno dos 16&nbsp;°C) e as mais altas em janeiro (média máxima próxima de 29&nbsp;°C).
+{{Tabela/Clima
+|localidade = Arara
+|larguraporcentagem = 100
+|lang = br
+
+|Jan_Max_°C = 29.1 |Jan_Min_°C = 18.5
+|Fev_Max_°C = 29 |Fev_Min_°C = 18.7
+|Mar_Max_°C = 28.4 |Mar_Min_°C = 18.9
+|Abr_Max_°C = 27.4 |Abr_Min_°C = 18.8
+|Mai_Max_°C = 26 |Mai_Min_°C = 18.3
+|Jun_Max_°C = 24.6 |Jun_Min_°C = 17.4
+|Jul_Max_°C = 24.1 |Jul_Min_°C = 16.5
+|Ago_Max_°C = 24.5 |Ago_Min_°C = 16.2
+|Set_Max_°C = 26.2 |Set_Min_°C = 16.9
+|Out_Max_°C = 27.8 |Out_Min_°C = 17.3
+|Nov_Max_°C = 28.7 |Nov_Min_°C = 17.7
+|Dez_Max_°C = 28.9 |Dez_Min_°C = 18.2
+|Max_Ano_°C = 27 |Min_Ano_°C = 17.7
+
+|Jan_Med_°C = 23.8
+|Fev_Med_°C = 23.8
+|Mar_Med_°C = 23.6
+|Abr_Med_°C = 23.1
+|Mai_Med_°C = 22.1
+|Jun_Med_°C = 21
+|Jul_Med_°C = 20.3
+|Ago_Med_°C = 20.3
+|Set_Med_°C = 21.5
+|Out_Med_°C = 22.5
+|Nov_Med_°C = 23.2
+|Dez_Med_°C = 23.5
+|Med_Ano_°C = 22.3
+
+|Jan_Precip_mm = 49
+|Fev_Precip_mm = 73
+|Mar_Precip_mm = 136
+|Abr_Precip_mm = 152
+|Mai_Precip_mm = 115
+|Jun_Precip_mm = 122
+|Jul_Precip_mm = 122
+|Ago_Precip_mm = 60
+|Set_Precip_mm = 38
+|Out_Precip_mm = 14
+|Nov_Precip_mm = 15
+|Dez_Precip_mm = 26
+|Ano_Precip_mm = 922
+
+|fonte = Climate Data.<ref name="Climatologia_AraraPB">{{citar web|url=http://pt.climate-data.org/location/42678/|título=Clima: Arara|publicado=Climate Data|acessodata=6 de outubro de 2014|arquivourl=http://pt.climate-data.org/location/42678/|arquivodata=6 de outubro de 2014}}</ref>
+}}
+
+=== Hidrografia ===
+[[Imagem:Rio-Mamanguape-2.jpg|thumb|210px|direita|[[Rio Mamanguape]].]]
+A área onde está localizado o município de Arara é recortada por rios temporários, este se encontra inserido nos domínios da [[Bacia hidrográfica]] do [[Rio Mamanguape]], segundo a Agência Executiva de Gestão das Águas do Estado da Paraíba ([[AESA]]).
+
+Os principais cursos d'água no município tem regime de escoamento Intermitente e o padrão de drenagem é o dendrítico, em sua grande maioria pequenos [[riacho]]s, porém podemos destacar os seguintes rios [[Rio Jacaré]] e o [[Rio Araçagi|Rio Araçagi-mirim]], afluente do rio Mamanguape.
+
+=== Relevo ===
+O [[Relevo (geografia)|relevo]] existente no município de Arara e suave ondulado de solos litólicos eutróficos, com fraca textura arenosa e média fase pedregosa, de relevo hipoxerófila ondulado substrato [[gnaisse]] e [[granito]], típico da região do [[Planalto da Borborema]], uma região formada por maciços e outeiros altos, no município as altitudes variam entre 330 até 570 metros de altitude acima do nível do mar.
+
+Esse planalto ocupa uma área de arco que se estende do sul de [[Alagoas]], abrangendo grande parte dos estados de [[Pernambuco]] e da [[Paraíba]] é termina no [[Rio Grande do Norte]]. No município de Arara essa forma de relevo apresenta-se de forma geralmente movimentada, com muitos vales profundos e estreitos dissecados, no município podemos destacar a [[Serra do Serrote Branco]] e a [[Serra de Arara]].
+
+=== Vegetação ===
+A [[vegetação]] predominante no município é a [[caatinga]], com presença de remanescentes de [[mata atlântica]] em brejos de altitude, no leste do município em regiões próximas da divisa com [[Areia (Paraíba)|Areia]] e [[Pilões (Paraíba)|Pilões]]. A caatinga é composta por espécies hiperxerófilas, com a forte presença de arbustos com galhos retorcidos e com raízes profundas. As espécies mais encontradas são os [[Cactaceae|cactos]], [[caroá]], [[aroeira]], [[angico]], [[juazeiro]], [[mandacaru]] e a [[Schinopsis brasiliensis|baraúna]].{{carece de fontes|data=fevereiro de 2026}}
+
+Já a mata atlântica, típica dos [[Brejos de Altitude|brejos de altitude]] é constituída por árvores de médio e grande porte, formada por floresta densa e fechada. Sendo muito rica em biodiversidade, as árvores de grande porte formam um microclima dentro da mata, com sombra e muita umidade. As espécies mais comuns são: [[palmeira]]s, [[bromélia]], [[begônia]]s, [[orquídeas]], [[cipó]]s, [[Bryophyta sensu lato|briófitas]], [[Caesalpinia echinata|pau-brasil]], [[jacaranda]], [[Aspidosperma spruceanum|peroba]], [[jequitibá-rosa]], [[Pinaceae|cedro]], [[andira]], [[ananas]] e [[figueira]]s.{{carece de fontes|data=fevereiro de 2026}}
+
+== Demografia ==
+{{Crescimento populacional do Censo do Brasil
+| 1950 = 6062
+| 1970 = 7704
+| 1980 = 8493
+| 1991 = 9654
+| 2000 = 11530
+| 2010 = 12653
+| estimado = 13448
+| ano_est = 2016
+| ref_est =
+| rodape = <center>Fonte: [[Instituto Brasileiro de Geografia e Estatística|IBGE]] (1950-2016).
+}}
+A [[população]] total do município, segundo os dados da estimativa populacional realizado pelo [[IBGE]] em 2016, era de 13.448 habitantes, sendo o [[Lista de municípios da Paraíba por população|68° município mais populoso do estado]], apresentando uma [[densidade populacional]] de 135,6 habitantes por [[km²]], muito superior à do estado, que ultrapassava pouco mais de 69 habitantes por km².<ref name="IBGE_Pop_2010">{{citar web|url=http://www.censo2010.ibge.gov.br/sinopse/index.php?uf=25&dados=21|título=Tabela 2.1 - População residente, total, urbana total e urbana na sede municipal, em números absolutos e relativos, com indicação da área total e densidade demográfica, segundo as Unidades da Federação e os municípios – 2010|data=2010|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=16 de outubro de 2014}}</ref>
+
+Segundo o [[censo demográfico]] de 2010 a população de Arara era de 12.653 habitantes, desse total 8.924 viviam na [[zona urbana]] (70,00%) e 3.729 na [[zona rural]] (30,00%). Ao mesmo tempo, {{fmtn|6074}} eram do [[sexo masculino]] e {{fmtn|6579}} do [[sexo feminino]], tendo uma [[Razão sexual|razão de sexo]] de 92,32.<ref>{{citar web|url=http://censo2010.ibge.gov.br/sinopse/index.php?uf=25&dados=2R|título=Razão de sexo, população de homens e mulheres, segundo os municípios – 2010|data=2010|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=16 de outubro de 2014}}</ref>
+
+O [[Índice de Desenvolvimento Humano]] Municipal (IDH-M) de Arara é considerado baixo, segundo o [[Programa das Nações Unidas para o Desenvolvimento]] (PNUD), sendo seu valor de 0,548, no ano de 2010. Considerando apenas a [[renda]] o valor do índice é de 0.569, o índice da [[longevidade]] é de 0.712 e o da [[educação]] é de 0.407.
+
+=== Composição étnica ===
+Segundo dados do censo demográfico de 2000, os diferentes grupos [[étnico]]s que formavam a [[população]] do [[município]] dividia-se assim: sexo, 5.943 [[mulhere]]s e 5.587 [[homens]]. A cor dos habitantes era dividida da seguinte forma: 7.109 [[pardos]] (61,66%), 4.033 [[brancos]] (34,98%) e 350 [[pretos]] (3,03%), 37 pessoas não declararam a cor (0,32%).
+
+Já sobre a [[religião]] dos ararenses, o município dividia-se da seguinte forma: 10.832 diziam-se [[católico]]s apostólicos romanos (93,95%), 358 [[evangélico]]s (3,11%), 12 [[testemunhas de Jeová]] (0,10%), 306 sem religião (2,65%), 17 não determinada (0,15%) e cinco pessoas sem declaração (0,04%).<ref>[http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=7&i=P&c=2094 IBGE]</ref>
+
+O [[estado civil]] da população era dividido assim: pessoas de dez anos ou mais de [[idade]], 9.245 pessoas, 6.037 eram [[solteira]]s, 2.840 [[casada]]s, 42 desquitas ou separadas judicialmente, 19 [[divorcio|divorciada]] e 307 (76 homens e 231 mulheres) viúvas.<ref>[http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=6&i=P&c=1624 IBGE]</ref>
+
+== Subdivisões ==
+[[Imagem:Mapa ararapb ruas.png|thumb|240px|direita|Mapa das ruas de Arara.]]
+Segundo o [[IBGE]], Arara é formada por um único distrito, o distrito-sede, dentro do município existe a [[zona urbana]] que é a cidade, e a [[zona rural]] que são os [[sítios]] ou comunidades rurais.
+
+=== Comunidades rurais ===
+{|
+|
+* Araçá
+* Boca de Tanque
+* Cachoeira
+* Cajazeiras
+* Catolé
+* Cuité de Araçá
+* Cuités dos Bitus
+* Gameleiro
+* Gravatá
+* Jaboticaba
+* Jucá
+* Lagoa de Pedra
+* Limpo Grande
+* Malhada de Dentro
+* Pau Barriga
+|
+* Pirauá
+* Poço do Gado
+* Ponte de Pedra
+* Rancho Fundo
+* Riacho da Extrema
+* Riacho do Saguim
+* Riacho Fundo
+* Saco de Arara
+* Salamandra
+* São Bento
+* Serra
+* Serrote Branco
+* Uruçu
+* Volta de Baixo
+* Volta de Cima
+|
+|}
+
+=== Zona urbana ===
+A cidade de Arara não é zoneada, portanto não possui [[zona]]s e nem [[bairros]], toda [[zona urbana]] e considera centro. A cidade possui cerca de 100 [[rua]]s.
+
+== Turismo ==
+=== Festa da Padroeira ===
+A Festa de Nossa Senhora da Piedade é um evento [[religioso]] celebrado no município, todos os anos no início do mês de setembro.
+
+No [[Brasil]], as cidades interioranas têm nas suas festas em [[louvor]] a(o) [[santa]](o) [[padroeira]](o) da comunidade, seu mais disputado [[evento]] anual. O costume foi herdado dos colonizadores portugueses, que enalteciam sua religiosidade através de [[festa]]s em louvor a determinados santos padroeiros das povoações, posteriormente, o louvor se misturou às festividades profanas e constitui-se grandes eventos em comemoração à boa [[colheita]] do [[ano]].
+
+Em Arara é assim, tudo começa nos dias 04 à 8 de setembro de todos os anos, a festa popular juntamente com as Celebrações Litúrgicas em homenagem à Nossa Senhora da Piedade, padroeira do município, em comemoração as boas colheitas de [[feijão]] e [[algodão]] do ano em curso. O costume já é secular e começou desde a fundação da sua Igreja Matriz de Nossa Senhora da Piedade, em [[1887]].
+
+Consta na programação a apresentação da Banda Filarmônica Municipal, Novenário, pregações religiosas, desfiles cívicos e apresentações de [[banda musical|banda]]s populares. O ponto principal das festividades é a [[procissão]] da [[Nossa Senhora da Piedade]], onde os fiéis percorrem as principais [[rua]]s do município levando a [[imagem]] da santa, louvando-a com cânticos religiosos.
+
+Durante o dia uma série de atrações anima a população local; desfiles cívicos, bandas de [[forró]], [[parques de diversão]], [[feira]]s de [[artesanato]], carreatas e eventos diversos. A partir das 22h00, aglomera-se uma multidão em torno do palco principal, onde se apresentam bandas nacionalmente conhecidas e estilos variados. No palco secundário a animação fica por conta do forró pé de serra.
+
+===Pedra da Glória===
+Localizada a 9&nbsp;km a leste da cidade de Arara, existe um lugar maravilhoso e privilegiado com uma imensa variedade natural, chamada de Pedra da Glória, o local possui uma bela [[cachoeira]], e ainda existe uma [[pedra]] com algumas inscrições [[Arte rupestre|rupestres]], feitas possivelmente há milhares de anos pelos primeiros [[habitante]]s da região. Essas escritas nunca foram decifradas. Existe também um imenso rio de pedras com formatos de [[jarro]]s e várias [[pegada]]s gigantes.{{carece de fontes}}
+
+== Esportes ==
+=== Futebol ===
+O futebol é a principal atividade esportiva dos ararenses. Os times mais tradicionais de [[futebol amador]] da cidade são: o Santa Fé e o atual Bicampeão municipal Guarani. A principal praça de esportes da cidade onde as equipes costumam realizar suas partidas no Módulo Esportivo José Olinto de Souza, conhecido popularmente como o campo da rua verde.{{carece de fontes}}
+
+== Economia ==
+A [[economia]] ararense baseia-se primordialmente nas atividades de [[comércio]] e [[serviços]]. Os principais produtos produzidos pelo município são; na Agricultura: [[milho]], [[feijão]], [[mandioca]], [[fava]], [[algodão]]; pecuária: [[bovinos]], [[ovinos]], [[caprinos]], [[suínos]]; indústria: [[carvão vegetal]]. Segundo o [[IBGE]].
+
+O [[produto interno bruto]] de Arara foi de [[R$]] 56.449.000,00 em [[2011]], gerando uma [[média]] [[per capita]] de R$ 4.431,52 por habitante. Destes, R$ 2.832.000,00 provém da [[agropecuária]]; R$ 6.539.000,00 é acrescentado pela [[indústria]], R$ 45.341.000,00 é adicionado pelos serviços e R$ 1.737.000,00 provém de [[imposto]]s.<ref name="IBGE_CIDADES_ARARA_PB">{{citar web|url=http://cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=250090&idtema=125&search=paraiba%7carara%7cproduto-interno-bruto-dos-municipios-2011=Arara|titulo=ARARA - PB |autor=Cidades@ - IBGE |acessodata=8 de outubro de 2011}}</ref>
+
+=== Agricultura ===
+{| border="1" cellpadding="4" cellspacing="1" width="100% style="margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; text-align:right; border-collapse: collapse; font-size: 80%; float:left;"
+|-
+!style="background-color:#E9E9E9" align=left |Produto
+!style="background-color:#E9E9E9" align=right|Produção
+|-
+| align=left|[[Algodão]] herbáceo || 52 toneladas
+|-
+| align=left|[[Batata-doce]] || 280 toneladas
+|-
+| align=left|[[Fava]] || 66 toneladas
+|-
+| align=left|[[Feijão]] || 518 toneladas
+|-
+| align=left|[[Mandioca]] || 800 toneladas
+|-
+| align=left|[[Milho]] || 640 toneladas
+|-
+| align=left|[[Castanha de caju]] || 10 toneladas
+|-
+| align=left|[[Manga (fruta)|Manga]] || 66 toneladas
+|-
+|align="left" colspan="2" style="background-color:#E9E9E9"|Principais produtos agrícolas de<br />Arara, segundo [[IBGE]] em [[2006]].
+|}
+
+Os principais produtos agrícolas do município de Arara, são respectivamente, de acordo com sua área plantada, o [[milho]] em grão que foi cultivado em 2006, em 1600 [[hectare]]s, sendo colhidas 1600 [[tonelada]]s, gerando um incremento de R$ 224.000,00 ao [[produto interno bruto]] do município. Devemos destacar também a produção do [[feijão]] em grão, produzido em uma área de 1.480 hectares, sendo colhidas 1.480 toneladas, acrescentando um valor de 622.000,00 ao produto interno bruto ararense em [[2006]].
+
+Outros produtos que merecem ser citados são a [[Batata-doce]], com produção de 280 toneladas, gerando um valor de {{formatnum:112000}} [[reais]]; a [[Mandioca]], com produção de 800 toneladas, gerando um valor de 92 mil reais; e a [[Fava]] em grão, com produção de 66 toneladas, gerando um valor de 119 mil reais.
+
+A [[silvicultura]] do município teve uma produção de 2.800 [[metro cúbico|metros cúbicos]] de [[lenha]] e 9 toneladas de [[carvão vegetal]], obtendo um valor de produção de 28 e 3 mil reais respectivamente.
+
+=== Pecuária ===
+Segundo o [[IBGE]] em [[2006]] o município de Arara possuía um rebanho efetivo de 5136 [[bovinos]], 350 [[suínos]], 110 [[equinos]], 80 [[asinino]]s, 66 [[Mula|muar]]es, 1490 [[ovino]]s, 472 [[caprino]]s e 6980 [[galinha]]s, 8170 [[galo]]s, [[frango]]s e [[pinto]]s, e 668 [[vaca]]s ordenhadas.
+
+Neste mesmo ano de 2006 o município produziu 470 kl de [[leite]] de vaca e foram também produzidos 16 milhares de dúzias de ovos de galinha.
+
+== Infraestrutura ==
+=== Saúde ===
+Arara faz parte da 3ª Gerência Regional de Saúde da Paraíba,<ref>{{citar web|url=http://www.saude.pb.gov.br/site/sedem.html|título=Gerência Regional de Saúde|publicado=Secretaria de Saúde da Paraíba|acessodata=19 de maio de 2015|arquivourl=https://www.webcitation.org/6HwEA0fNn?url=http://www.saude.pb.gov.br/site/sedem.html|arquivodata=2013-07-07|urlmorta=no}}</ref> o atendimento emergências de casos mais leves são feitos no [[Hospital Municipal Natanael Alves]], os casos mais graves são encaminhados para hospitais de [[Campina Grande]].
+
+Em 2009, Arara possuía 5 estabelecimentos de saúde, sendo todos públicos, com um total de 12 leitos para internação.<ref>{{citar web | url=http://cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=250090&idtema=5&search=paraiba%7carara%7cservicos-de-saude-2009 | título=IBGE Serviços de Saúde - 2009 }}]</ref>
+
+No fim do ano de 2015 e início do ano de 2016, Arara tornou-se noticiário nacional ao se deparar com uma epidemia de Dengue, da febre ''Chikungunya'' e o ''Zika Virus,'' sendo uma das cidades paraibanas que mais registraram casos em relação a densidade demográfica.
+
+=== Educação ===
+Segundo dados do [[censo demográfico]] realizado em [[2000]], das 10.445 pessoas de cinco e mais, residentes no município, destas 5.334, ou seja, 51,07% sabiam [[ler]] e [[escrever]] e 5.111, ou seja, 48,93% da [[população]] não era alfabetizada.<ref>[http://www.sidra.ibge.gov.br/bda/tabela/listabl.asp?z=cd&o=12&i=P&c=2972 IBGE]</ref>
+
+O município conta, com 24 [[Ensino fundamental|estabelecimentos de ensino fundamental]], 23 [[Educação infantil|unidades pré-escolares]], e duas [[Ensino secundário|escolas de nível médio]]. Ao total, são 3.327 matrículas e 150 [[Professor|docentes]] registrados.
+
+{| class="wikitable"
+|+ '''[[IBGE]]/[[2007]]'''
+| style="background:#cccccc;" |
+! style="background:#cccccc;" | Matrículas (Total)
+! style="background:#cccccc;" | Professores (Total)
+! style="background:#cccccc;" | Escolas (Total)
+! style="background:#cccccc;" | Escolas Públicas
+! style="background:#cccccc;" | Escolas Privadas
+|-
+! style="background:#cccccc;" | Ensino Pré-Escolar
+| align="center" | 338 || align="center" | 14 || align="center" | 23 || align="center" | 22 || align="center" | 2
+|-
+! style="background:#cccccc;" | Ensino Fundamantal
+| align="center" | 2.519 || align="center" | 115 || align="center" | 24 || align="center" | 23 || align="center" | 2
+|-
+! style="background:#cccccc;" | Ensino Médio
+| align="center" | 470 || align="center" | 21 || align="center" | 2 || align="center" | 1 || align="center" | 1
+|-
+|}
+
+=== Transportes ===
+[[Imagem:Mapa rodoviario Arara-pb.png|thumb|250px|direita|Mapa das estradas de Arara.]]
+As principais [[estrada]]s que ligam a cidade são a [[PB-105]], uma das principais [[rodovia]]s do estado, que liga a cidade até as cidades vizinhas de [[Remígio]] e [[Solânea]] e faz a ligação de [[Campina Grande]] até a região do [[Microrregião do Brejo Paraibano|Brejo paraibano]], outra rodovia importante e a [[PB-085]], que liga o município até a cidade de [[Serraria (Paraíba)|Serraria]].
+
+A sede municipal é ligada às outras demais cidades vizinhas por estrada de rodagem, ficando distante por meio de rodovia, com Solânea (15[[Km]]), Serraria (17Km), Remígio (15Km) e [[Casserengue]] (9Km).
+
+A frota municipal no ano de 2015 era de {{fmtn|1668}} veículos, sendo {{fmtn|581}} [[motocicleta]]s, {{fmtn|639}} [[Automóvel|automóveis]], {{fmtn|96}} [[motoneta]]s, {{fmtn|143}} [[caminhonete]]s, 79 [[Caminhão|caminhões]], 80 [[camioneta]]s, 20 [[ônibus]], 9 [[micro-ônibus]] e 7 caminhões trator. Outros tipos de veículos incluíam 14 unidades.<ref>{{citar web|url=http://www.cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=250090&idtema=153&search=paraiba%7carara%7cfrota-2015|título=Paraíba » Arara » Frota - 2015|data=2015|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=1 de junho de 2015}}</ref> Há no município aproximadamente apenas 25 [[quilômetros]] de estrada de rodagem, sendo umas das menores malhas rodoviárias de todo estado.
+
+O acesso a cidade por [[asfalto|via asfáltica]] é feito, a partir de [[João Pessoa]], pelas rodovias federais [[BR-230]], [[BR-104]] e pela rodovia estadual PB-105.
+
+Distâncias entre Arara e algumas cidades do estado:
+
+{|
+|
+* 155&nbsp;km - [[João Pessoa]]
+* 55&nbsp;km - [[Campina Grande]]
+* 226&nbsp;km - [[Patos]]
+* 356&nbsp;km - [[Sousa (Paraíba)|Sousa]]
+|
+* 393&nbsp;km - [[Cajazeiras]]
+* 49&nbsp;km - [[Guarabira]]
+* 27&nbsp;km - [[Areia (Paraíba)|Areia]]
+* 18&nbsp;km - [[Bananeiras]]
+|
+|}
+
+== Política ==
+{{Artigo principal|[[Lista de prefeitos de Arara (Paraíba)|Lista de prefeitos de Arara]]}}
+{{Artigo principal|[[Lista de vereadores de Arara (Paraíba)|Lista de vereadores de Arara]]}}
+Criado em [[1961]] o [[município]] de Arara teve como primeiro prefeito interino o senhor [[Dedício Pereira de Maia]], ele governou por apenas 1 ano, como determinava o ato de sua nomeação. Já em [[1962]] ocorreu a primeira [[eleição]] municipal para [[prefeito]], o candidato eleito foi [[Marísio da Cunha Moreno]] (1963 - 1966), consequentemente sendo o primeiro prefeito eleito do município de Arara recebendo 592 votos validos, seu vice foi Manoel Cândido do Nascimento, ambos pertencentes ao já extinto partido da [[União Democrática Nacional]].
+
+Os primeiros [[vereadores]] eleitos foram Anisio Duarte dos Santos, Zé Sobrinho, Luiz Leite da Silva, Manoel Bento da Silva, José Avelino dos Santos, Joaquim de Abreu Lima e José da Cunha Pinto.
+
+O atual prefeito é [[José Ailton Pereira da Silva]] (2017 - 2020), do ([[Partido Social Liberal|PSL]]), assumiu o cargo em janeiro de 2017, sendo eleito com 60,79% dos votos validos recebidos, vencendo na disputa Antônio Ernesto dos Santos, do (PMDB), que obteve 39,21% dos votos válidos, que na ocasião buscava juntamente com Tony sua primeira eleição como prefeito do município.
+
+A [[Câmara Municipal (Brasil)|câmara de vereadores)]] ararense é formada por nove [[vereador]]es, e está composta da seguinte forma: três cadeiras do [[Partido do Movimento Democrático Brasileiro]] (PMDB); duas cadeiras do [[Partido Social Democrático (2011)|Partido Social Democrático]] (PSD); uma cadeira do partido do Partido Social Liberal (PSL); uma cadeira do [[Partido Trabalhista Brasileiro]] (PTB); uma cadeira do [[Partido Progressista (Brasil)|Partido Progressista]] (PP) e uma cadeira do [[Partido dos Trabalhadores]] (PT).
+
+Segundo as últimas eleições municipais, ocorridas no ano de 2012 o número de [[eleitor]]es no município é de 9.528 pessoas.
+
+== Rádios ==
+[[Rádio Comunitária Arara FM 87.9 MHz]]
+
+== Ver também ==
+* Igreja Nossa Senhora da Piedade
+* [[Santuário de Santa Fé]]
+* [[Diocese de Guarabira]]
+* [[Comarca de Arara]]
+
+== Bibliografia ==
+* Antonio Gregório da Silva; trabalho mimeografado "Arara, 125 anos depois… Fatos que devem ser Lembrados".
+
+{{Referências|col=2}}
+
+== Ligações externas ==
+{{Correlatos
+|commons = Arara (Paraíba)
+|wikisource = Hino do município de Arara (Paraíba)
+|wikiquote =
+|wikilivros =
+|wikinoticias = Portal:Arara (Paraíba)
+|wikcionario = Arara
+|wikispecies =
+|wikiversidade =
+|wikivoyage = Arara
+|meta =
+}}
+* [http://www.arara.pb.gov.br Página da prefeitura]
+* [http://www.arara.pb.leg.br Página da Câmara]
+* [https://web.archive.org/web/20140119111506/http://www.panoramio.com/map/#lt=-6.866439&ln=-35.712776&z=5&k=2&a=1&tab=2 Fotos de Arara no site Panoramio]
+* [http://www.famup.com.br/ Federação dos Municípios da Paraíba]
+* [http://www.cprm.gov.br/rehi/atlas/paraiba/relatorios/ARAR012.pdf Dados municipais de Arara em PDF]
+* [http://www.cprm.gov.br/rehi/atlas/paraiba/mapas/ARAR012.pdf Mapa de alta resolução de Arara em PDF]
+
+{{Municípios da Paraíba}}
+{{Arara (Paraíba)}}
+{{Região Metropolitana de Guarabira}}
+{{Portal3|Arara (Paraíba)|Paraíba}}
+
+[[Categoria:Arara (Paraíba)| ]]
+[[Categoria:Fundações na Paraíba em 1961]]

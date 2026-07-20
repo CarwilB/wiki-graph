@@ -1,0 +1,166 @@
+{{Ficha de entidad subnacional
+| nombre = El Corpus
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| mapa_loc = Honduras
+| subdivisión = 17 aldeas y 244 caseríos
+| elevación_media = 406
+| superficie = 248.9
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 26352
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0605__el_corpus/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| densidad = 105.9
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''El Corpus''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]].
+<ref>{{Cita web
+ |url=https://temp.ine.gob.hn/wp-content/uploads/2025/02/El-Corpus-Choluteca-2018.pdf
+ |título=El Corpus, Choluteca: Indicadores Municipales 2018
+ |autor=Instituto Nacional de Estadística (INE)
+ |fecha=2018
+ |editor=INE Honduras
+ |formato=PDF
+ |idioma=es
+}}</ref>
+
+== Toponimia ==
+El nombre de este municipio proviene del [[Corpus Christi]], que en latín significa "Cuerpo de Cristo".
+
+== Límites ==
+Este municipio se encuentra situado al este del departamento de Choluteca y su cabecera está situada en una altura, de donde se ve el panorama del Llano de Choluteca.
+
+{| class="wikitable"
+|+Límites de El Corpus
+!Orientación
+!Límite
+|-
+|Norte
+|Municipio de [[Apacilagua]], Choluteca
+|-
+|Sur
+|Municipio de [[El Triunfo (Honduras)|El Triunfo]], Choluteca
+|-
+| rowspan="2" |Este
+|Municipio de [[San Marcos de Colón]], Choluteca
+|-
+|Municipio de [[Concepción de María]], Choluteca
+|-
+| rowspan="2" |Oeste
+|Municipio de [[Santa Ana de Yusguare]], Choluteca
+|-
+|Municipio de [[Namasigüe]], Choluteca<ref name="OT">{{enlace roto|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/El_Corpus.pdf|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/El_Corpus.pdf|bot=InternetArchiveBot}} Datos de organización territorial de Honduras</ref>
+|}
+
+== Datos históricos ==
+En 1585, su fundación se debió al descubrimiento que se hizo de una mina llamada Clavo Rico.
+
+En 1889, en la División Política Territorial de 1889 era cabecera de distrito formado por los municipios de El Corpus, Concepción de María y El Triunfo.<ref>Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 13,875 (52.7%)
+| valor1 = 52.7
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 12,477 (47.3%)
+| valor2 = 47.3
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 7,694 (29.2%)
+| valor1 = 29.2
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 16,384 (62.2%)
+| valor2 = 62.2
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 2,274 (8.6%)
+| valor3 = 8.6
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 26,352 (100%)
+| valor1 = 100
+| color1 = #109618
+}}
+El Corpus tiene una población actual de 26,352 habitantes. De la población total, el 52.7% son hombres y el 47.3% son mujeres. Casi el 100% de la población vive en la zona rural.<ref name="INE"/>
+
+== División política ==
+Aldeas: 17 (2013)
+
+Caseríos: 244 (2013)
+
+{| class="wikitable"
+|+Aldeas de El Corpus
+!Código
+!Aldea
+|-
+|060501
+|El Corpus (cabecera del municipio)
+|-
+|060502
+|Agua Fría
+|-
+|060503
+|Calaire
+|-
+|060504
+|Cayanini
+|-
+|060505
+|El Baldoquín
+|-
+|060506
+|El Banquito
+|-
+|060507
+|El Despoblado
+|-
+|060508
+|El Naranjal
+|-
+|060509
+|El Pedregal
+|-
+|060510
+|El Zapotal
+|-
+|060511
+|La Albarrada
+|-
+|060512
+|La Fortuna
+|-
+|060513
+|La Galera
+|-
+|060514
+|San Isidro
+|-
+|060515
+|San Juan Abajo
+|-
+|060516
+|San Juan Arriba
+|-
+|060517
+|San Judas
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+
+[[Categoría:Municipios de Choluteca]]

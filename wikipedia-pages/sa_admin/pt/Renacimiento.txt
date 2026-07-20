@@ -1,0 +1,101 @@
+{{Info/Assentamento
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|nome_oficial          = Renacimiento
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|assentamento_tipo        = [[Distritos do Panamá|Distrito]]
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_map              = 
+|mapsize                =
+|map_caption            = 
+|mapa_alfinete           = Panamá<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|mapa_alfinete_posição  =right
+|mapa_alfinete_tamanho        =300
+|mapa_alfinete_legenda    =Localização da capital do distrito do Panamá
+<!-- Location ------------------>
+|coordinates_display    = inline,title
+|coordinates_region     = PA
+|subdivisão_tipo        = País
+|subdivisão_nome       = {{flag|Panamá}}
+|subdivisão_tipo1      = [[Províncias do Panamá|Província]]
+|subdivisão_nome1      = [[Chiriquí (província)|Chiriquí]]
+|subdivisão_tipo2      = Capital
+|subdivisão_nome2      = [[Río Sereno]]
+|subdivisão_tipo3      =
+|subdivisão_nome3      = 
+|<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|área_total_km2           =428 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|populaçãon_em               =2000
+|population_footnotes           =
+|population_note                =
+|população_total               =18,257
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =
+|population_density_blank1_km2 = 
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               =[[Eastern Time Zone|ETZ]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|latd=8|latm=49 |lats=12|latNS=N
+|longd=82|longm=51|longs=36|longEW=W
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}}
+'''Renacimiento''' é um [[Distritos do Panamá|distrito]] (''distrito'') da [[Chiriquí (província)|província de Chiriquí]] no [[Panamá]]. A população de acordo com o [[Censo do Panamá de 2000|censo de 2000]] era de {{fmtn|18257}} habitantes.<ref name="Statoids">{{citar web|url=http://www.statoids.com/ypa.html|título=Distritos do Panamá|publicado=Statoids|acessodata=10 de abril de 2009}}</ref> O distrito abrange uma área total de 428 km². A capital encontra-se na cidade de [[Río Sereno]].<ref name="Statoids"/>
+
+== Divisões administrativas ==
+O distrito é dividido administrativamente nos seguintes ''[[corregimentos do Panamá|corregimentos]]'':
+
+[[Río Sereno]] (capital), [[Breñón]], [[Cañas Gordas]], [[Monte Lirio]], [[Plaza de Caisán]], [[Santa Cruz (Chiriquí)|Santa Cruz]], [[Dominical (Chiriquí)|Dominical]] e [[Santa Clara (Chiriquí)|Santa Clara]].
+
+{{Referências}}
+
+{{Distritos do Panamá}}
+{{Portal3|Geografia|Panamá}}
+{{Esboço-geopa}}
+
+[[Categoria:Distritos do Panamá]]

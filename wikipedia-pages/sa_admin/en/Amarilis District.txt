@@ -1,0 +1,126 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Amarilis
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Amarilis in the [[Huánuco Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Huánuco Region|Huánuco]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Huánuco Province|Huánuco]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = June 1, 1982
+| seat_type               = [[Capital city|Capital]]
+| seat                    = [[Paucarbamba]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Sergio Antonio Martinez Fernandez
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 134.69
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 1910
+| population_footnotes    = 
+| population_total        = 67346
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 100102
+| website                 = 
+| footnotes               = 
+}}
+
+'''Amarilis District''' is one of twelve [[Districts of Peru|districts]] of the province [[Huánuco Province|Huánuco]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20100501234242/http://desa.inei.gob.pe/mapas/bid/ |date=May 1, 2010 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Huanuco, Amarilis, elevation {{convert|1919|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 26.1
+|Feb high C = 26.0
+|Mar high C = 25.9
+|Apr high C = 26.8
+|May high C = 27.1
+|Jun high C = 26.5
+|Jul high C = 26.2
+|Aug high C = 26.7
+|Sep high C = 27.0
+|Oct high C = 27.0
+|Nov high C = 27.0
+|Dec high C = 26.2
+|year high C = 
+|Jan low C = 15.3
+|Feb low C = 15.4
+|Mar low C = 15.2
+|Apr low C = 14.8
+|May low C = 13.9
+|Jun low C = 12.6
+|Jul low C = 11.7
+|Aug low C = 12.5
+|Sep low C = 13.9
+|Oct low C = 14.9
+|Nov low C = 15.6
+|Dec low C = 15.2
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 53.1
+|Feb precipitation mm = 59.0
+|Mar precipitation mm = 76.9
+|Apr precipitation mm = 34.4
+|May precipitation mm = 11.7
+|Jun precipitation mm = 5.5
+|Jul precipitation mm = 4.1
+|Aug precipitation mm = 6.7
+|Sep precipitation mm = 12.9
+|Oct precipitation mm = 43.5
+|Nov precipitation mm = 50.0
+|Dec precipitation mm = 70.0
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Huánuco Province}}
+
+{{coord|9|56|30|S|76|14|25|W|region:PE_type:adm3rd_source:kolossus-itwiki|display=title}}
+
+[[Category:Districts of the Department of Huánuco]]
+[[Category:Districts of the Huánuco province]]
+
+
+{{Huánuco-geo-stub}}

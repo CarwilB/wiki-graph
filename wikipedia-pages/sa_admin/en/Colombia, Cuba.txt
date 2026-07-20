@@ -1,0 +1,97 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Colombia
+|other_name             = Central Elia
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Colombia (Cuban municipal map).png
+|map_caption            = Colombia municipality (red) within <br> Las Tunas Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Las Tunas Province|Las Tunas]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 563
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 31,482
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|59|26|N|77|24|57|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 65
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 77600
+|area_code              = +53-31
+|website                = https://www.colombia.gob.cu/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Colombia''' is a municipality and town in the [[Las Tunas Province]] of [[Cuba]]. It is located in the western part of the province, {{convert|10|km|mi}} south of [[Guáimaro, Cuba|Guáimaro]]. Río Tana flows through the community.
+
+==Demographics==
+In 2022, the municipality of Colombia had a population of 31,482.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|563|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=https://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-06}}</ref> it has a population density of {{convert|56|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Colombia
+ | N = [[Guáimaro]] ([[Camagüey Province|Camagüey]])
+ | E = [[Jobabo]]
+ | S = ''[[Gulf of Guacanayabo]]''
+ | W = [[Amancio, Cuba|Amancio]]
+}}
+{{Municipalities in Las Tunas}}
+
+[[Category:Populated places in Las Tunas Province]]
+
+
+{{Cuba-geo-stub}}

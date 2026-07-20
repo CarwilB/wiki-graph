@@ -1,0 +1,106 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name          = Balboa
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|settlement_type        = [[Districts of Panama|District]] 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = San Miguel (1).jpg
+|imagesize              = 300px
+|image_caption          = San Miguel 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_map              = Panamá - Panamá - Balboa.svg
+|mapsize                = 300px
+|map_caption            = 
+|pushpin_map            = Panama<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =right
+|pushpin_mapsize        =300
+|pushpin_map_caption    =Location of the district capital in Panama
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Panama}}
+|subdivision_type1      = [[Provinces of Panama|Province]]
+|subdivision_name1      = [[Panamá Province|Panamá]]
+|subdivision_type2      =Capital
+|subdivision_name2      = [[San Miguel, Panamá Province|San Miguel]]
+|subdivision_type3      =
+|subdivision_name3      = 
+|<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|area_footnotes           =
+|area_total_km2           =333<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of               =2019
+|population_footnotes           =
+|population_note                =official estimate<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref>
+|population_total               =3332
+|population_density_km2         =auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               =[[Eastern Time Zone|ETZ]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|8|22|9|N|78|54|37|W|region:PA|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}}
+
+'''Balboa''' is an island [[Districts of Panama|district]] (''distrito'') of [[Panamá Province]] in [[Panama]], covering the offshore [[Pearl Islands]] lying in the Gulf of Panama southeast of Panama City. The population according to the [[2000 Panamanian census|2000 census]] was 2,336;<ref name="Statoids">{{cite web|url=http://www.statoids.com/ypa.html|title=Districts of Panama|publisher=Statoids|access-date=April 12, 2009}}</ref> the latest official estimate (for 2019) is 3,332.<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref> The district covers a total area of 333&nbsp;km<sup>2</sup>. The capital lies at the town of [[San Miguel, Panamá Province|San Miguel]].<ref name="Statoids"/>
+
+==Administrative divisions==
+Balboa District is divided administratively into the following ''[[Corregimientos of Panama|corregimientos]]'':
+
+*[[San Miguel, Panamá Province|San Miguel]] (capital)
+*[[La Ensenada]]
+*[[La Esmeralda, Panama|La Esmeralda]]
+*[[La Guinea]]
+*[[Pedro González, Panama|Pedro González]]
+*[[Saboga]]
+
+==References==
+{{Reflist}}
+
+{{Panamá Province}}
+{{Districts of Panama}}
+
+[[Category:Districts of Panamá Province]]
+
+
+{{PanamáPA-geo-stub}}

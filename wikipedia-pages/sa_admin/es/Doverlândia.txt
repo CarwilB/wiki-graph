@@ -1,0 +1,71 @@
+{{Ficha de entidad subnacional
+|nombre              = Doverlândia
+|imagen              = 
+|unidad              = [[Municipio]]
+|tipo_superior_1     = [[Anexo:Estados de Brasil|Estado]]
+|superior_1          = Goiás
+|tipo_superior_3     = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3          = [[Mesorregión del Sur Goiano|Sur Goiano]]
+|tipo_superior_4     = [[Microrregiones de Brasil|Microrregión]]
+|superior_4          = [[Microrregión del Sudoeste de Goiás|Sudoeste de Goiás]]
+|mapa                = Goias Municip Doverlandia.svg
+|tamaño_mapa         = 260px
+|pie_mapa            = Mapa
+<!-- Mapas de localización -->
+|mapa_loc            = Brasil
+|pos_etiqueta_loc    = <!-- posición de la etiqueta dentro del mapa: left, right, top, bottom, none -->
+|pie_mapa_loc        = Ubicación de Doverlândia en Brasil.
+|tam_mapa_loc        = 
+|imagen_marca_loc    = 
+|tam_marca_loc       = <!-- tamaño de la marca a utilizar, por defecto es 6 -->
+|mapa_loc_1          = <!-- nombre de un segundo mapa de localización dado por la Plantilla:Mapa de localización -->
+|pos_etiqueta_loc_1  = <!-- posición de la etiqueta dentro del segundo mapa: left, right, top, bottom, none -->
+|pie_mapa_loc_1      = 
+|tam_mapa_loc_1      = 
+|imagen_marca_loc_1  = <!-- nombre de la imagen de la marca a utilizar, por defecto es una esfera roja -->
+|tam_marca_loc_1     = <!-- tamaño de la marca a utilizar, por defecto es 6 -->
+<!-- Coordenadas del lugar, usadas por los mapas de localización y 
+por la etiqueta de coordenadas en la parte superior derecha del artículo --->
+|dirigentes_títulos  = [[Prefecto]]
+|superficie          = 3207.543
+|superficie_post     = <ref name="IBGE_Área">{{cita web|url = http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área Territorial Oficial |fechaacceso = 5 de diciembre de 2010|fecha = 10 de octubre de 2002|editorial = Resolução da Presidência do IBGE de n° 5 (R.PR-5/02) |urlarchivo=https://web.archive.org/web/20040929065323/http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |fechaarchivo=29 de septiembre de 2004 }}</ref>
+|población           = 7892
+|población_año       = Censo [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{cita web|url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=População por município |fechaacceso = 11 de diciembre de 2010|fecha = 29 de noviembre de 2010|editorial = Instituto Brasileiro de Geografia e Estatística (IBGE) |urlarchivo=https://web.archive.org/web/20101202041553/http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |fechaarchivo=2 de diciembre de 2010cita = }}</ref>
+|apodo               = 
+|fundación           = 14 de mayo de 1982
+|campo7_nombre       = Aniversario
+|clima               = semi-húmedo caliente
+|elevación_media     = 509
+|gentilicio          = doverlandense
+|PIB                 = {{formatnum:96283.899}} mil
+|PIB_per_capita      = 11227.13
+|PIB_tipo            = [[IBGE]]/2008<ref name="IBGE_PIB">{{cita web|url = http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/|título = Producto Interno Bruto de los Municipios 2004-2008|fechaacceso = 11 de diciembre de 2010|editorial = Instituto Brasileiro de Geografia e Estatística |urlarchivo = }}</ref>
+|IDH                 = 0.71
+|IDH año             = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{cita web|url = http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm|título = Ranking decreciente del IDH-M de los municipios del Brasil|fechaacceso = 11 de octubre de 2008|fecha = 2000|editorial = Programa das Nações Unidas para o Desenvolvimento (PNUD)|urlarchivo = https://web.archive.org/web/20091003103229/http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20%28pelos%20dados%20de%202000%29.htm|fechaarchivo = 3 de octubre de 2009}}</ref>
+|campo1_nombre       = Datos mesorregión
+|campo1              = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web|url = ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip|título = División Territorial del Brasil|fechaacceso = 11 de octubre de 2008|fecha = 1 de julio de 2008|editorial = Instituto Brasileiro de Geografia e Estatística (IBGE)|urlarchivo = https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip|fechaarchivo = 14 de junio de 2020}}</ref>
+|campo2_nombre       = Datos microrregión
+|campo2              = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+|campo3_nombre       = Región metropolitana
+|campo4_nombre       = Municipios vecinos
+|campo4              = [[Baliza]], [[Caiapônia]] y [[Mineiros]]
+|campo5_nombre       = Dist. Cap.
+|campo5              = 401
+|campo6_nombre       = Sigla clima
+|campo6              = tropical
+}}
+'''Doverlândia''' es un [[municipio]] [[brasil]]eño del [[estados del Brasil|estado]] de [[Goiás]]. La población total del municipio era de 8.558 habitantes, de acuerdo con el censo demográfico del [[IBGE]] (2000) y la estimación de 2006 fue de 7.892<ref name="IBGE_Pop">{{cita web|url = http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=520725|fechaacceso = 25 ago 2011|fecha = 29 de noviembre de 2010|editorial = Instituto Brasileiro de Geografia e Estatística (IBGE) |urlarchivo=https://web.archive.org/web/20101202041553/http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |fechaarchivo=2 de diciembre de 2010cita = }}</ref> habitantes mostrando un decrecimiento de la población. Su área es de 3.208&nbsp;km² representando el 0.9432% del Estado, 0.2004% de la región y 0.0378% de todo el territorio brasileño. La población urbana constituye el 62,27% del total y la población rural en 37,73%.
+
+== Referencias ==
+{{Listaref}}
+
+
+
+
+
+== Enlaces externos ==
+{{Traducido ref |pt|Doverlândia |Portugués|oldid=  |trad=[[PR:ATRAD|automática]]}}
+
+{{DEFAULTSORT:Doverlandia}}
+{{Control de autoridades}}
+[[Categoría:Localidades de Goiás]]

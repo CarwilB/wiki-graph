@@ -1,0 +1,112 @@
+{{Short description|Municipality of Bahia, Brazil}}
+
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Nazaré
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|settlement_type        =Municipality
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = Nazar%C3%A9,_Bahia,_Brasil.jpg 
+|imagesize              = 
+|image_caption          = View of Nazaré
+|image_flag             = Nazar%C3%A9,_Bahia.jpg
+|flag_size              =
+|image_shield           = Sic_Illa_Ad_Arcam_Reversa_Est.jpg
+|shield_size            =
+|image_map              = Bahia_Municip_Nazare.svg
+|mapsize                = 
+|map_caption            = Location of Nazaré in Bahia
+|pushpin_map            = Brazil
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location in Brazil
+|subdivision_type       = Country
+|subdivision_name       ={{flag|Brazil}}
+|subdivision_type1      = [[Regions of Brazil|Region]] 
+|subdivision_name1      =[[Northeast Region, Brazil|Nordeste]]
+|subdivision_type2      = [[States of Brazil|State]]
+|subdivision_name2      =[[Bahia]]
+|subdivision_type3      =
+|subdivision_name3      = <!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = Mayor
+|leader_name            = 	Benom Cardoso
+|established_title      =  <!-- Settled -->
+|established_date       = 1572
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           = 278.6
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of               = 2020 (est.) <ref>[https://cidades.ibge.gov.br/brasil/ba/nazare/panorama IBGE 2020]</ref>
+|population_footnotes           =
+|population_note                =
+|population_total               = 28,594
+|population_density_km2         = 
+<!-- General information  --------------->
+|timezone               = [[Time in Brazil|BRT]]
+|utc_offset             = &minus;3
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates        = {{coord|13|02|06|S|39|00|50|W|region:BR|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 39
+|elevation_ft           = <!-- accord. to Google Earth-->
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|website                = 
+|footnotes              = 
+}}
+
+'''Nazaré''', also known as '''Nazaré das Farinhas''', is a [[Municipalities of Brazil|municipality]] in the [[states of Brazil|state]] of [[Bahia]] in the [[Nordeste|North-East region]] of [[Brazil]]. The municipality has a population of 28,594 with a [[population density]] of 107 inhabitants per square kilometer. It is located {{convert|110|km|mi|abbr=on}} from the state capital of Bahia, [[Salvador, Bahia|Salvador]]. Nazaré is within the [[Bahian Recôncavo]], an interior region of the state of Bahia. It borders the municipalities of [[Muniz Ferreira]], [[Aratuípe]], [[Jaguaripe]], [[São Felipe]], and [[Maragogipe]]. The [[Jaguaripe River]] crosses through the middle of the town. It is sits on the intersection of two Bahian state highways, [[BA-001]] and [[BA-046]].<ref name="i"/>
+
+==History==
+
+Nazaré was settled by the [[Tupinambá people]]. Portuguese settlers arrived in the second half of the sixteenth century. Fernão Cabral de Ataíde settled on the right bank of the [[Jaguaripe River]], and called the settlement the Sesmaria de Jaguaripe.
+
+==Economy==
+
+Nazaré is noted for its production of [[palm oil]], cachaça, and ceramics. The town also supports a small fishing industry.<ref name="g"/>
+
+==Historic structures==
+
+Nazaré is home to several colonial-period historic structures, some designated as Brazilian national monuments by the [[National Historic and Artistic Heritage Institute]].<ref name="iphan"/>
+
+*[[Chapel of Our Lady of the Conception (Nazaré)|Chapel of Our Lady of the Conception]] (Igreja Matriz de Nossa Senhora de Nazaré)
+*[[Chapel of Our Lady of Nazareth at Camamu (Nazaré)|Chapel of Our Lady of Nazareth at Camamu]] (Igreja de Nossa Senhora de Nazaré de Camamú)
+*[[Chapel of Our Lady of the Conception (Nazaré)|Chapel of Our Lady of the Conception]] (Igreja de Nossa Senhora da Conceição)
+
+The Cine Teatro Rio Branco is the oldest functioning cinema in Brazil.<ref name="g"/>
+
+==See also==
+*[[List of municipalities in Bahia]]
+
+==References==
+
+{{Reflist|2|refs=
+
+<ref name="g">{{cite web |url=http://www.guiadoturismobrasil.com/cidade/BA/288/nazare |title=Nazaré, BA |language=pt | place = São Paulo, Brazil |publisher= Guia do Turismo Brasil Guia do Turismo Brasil |date=2017 |access-date=2017-11-14}}</ref>
+
+<ref name="i">{{cite web |url= https://cidades.ibge.gov.br/brasil/ba/nazare/panorama |title= Nazaré |language=pt |publisher=Instituto Brasileiro de Geografia e Estatística (Brazilian Institute of Geography and Statistics) | place = Brasília, Brazil |date=2017 |access-date=2017-11-14}}</ref>
+
+<ref name="iphan">{{cite web |url=http://portal.iphan.gov.br/uploads/ckfinder/arquivos/2016-11-25_Lista_Bens_Tombados.pdf |format=PDF |title=BENS TOMBADOS E PROCESSOS DE TOMBAMENTO EM ANDAMENTO (Atualização: 25.11.2016) |language=pt |publisher=Instituto do Patrimônio Histórico e Artístico Nacional |date=2016 |access-date=2017-11-14 |archive-url=https://web.archive.org/web/20170110134559/http://portal.iphan.gov.br/uploads/ckfinder/arquivos/2016-11-25_Lista_Bens_Tombados.pdf |archive-date=2017-01-10 |url-status=dead }}</ref>
+
+}}
+
+{{Municipalities of Bahia}}
+{{Authority control}}
+
+{{DEFAULTSORT:Nazare, Bahia}}
+[[Category:Municipalities in Bahia]]
+
+{{Bahia-geo-stub}}

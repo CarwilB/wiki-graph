@@ -1,0 +1,62 @@
+{{Info/Município do Brasil
+<!-- GeoID=4103057 -->
+<!-- Cabeçalho -->| nome = Boa Vista da Aparecida
+| foto = 
+| leg_foto = 
+| apelido = Terra do Sol
+<!-- Dados gerais -->| brasão = Brasão de Boa Vista da Aparecida - PR.png
+| bandeira = Bandeira Boa Vista da Aparecida.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 22 de dezembro
+| fundação = {{nowrap|{{dtlink|22|12|1981|idade}}}}
+| gentílico = boavistense
+| lema = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| prefeito = Eduardo Henrichs
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Parana Municip BoaVistadaAparecida.svg
+| latP = S
+| latG = 25
+| latM = 26
+| latS = 09
+| lonP = O
+| lonG = 53
+| lonM = 24
+| lonS = 28
+| estado = Paraná
+| mesorregião = [[Mesorregião do Oeste Paranaense|Oeste Paranaense]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Cascavel (Paraná)|Cascavel]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Região Metropolitana de Cascavel|Cascavel]]
+| vizinhos = [[Capitão Leônidas Marques]], [[Cascavel (Paraná)|Cascavel]], [[Nova Prata do Iguaçu]], [[Santa Lúcia (Paraná)|Santa Lúcia]], [[Três Barras do Paraná]]
+| dist_capital = 600
+<!-- Características geográficas -->| área = 256.296
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 7998
+| data_pop = Estimativa [[IBGE]]/[[2014]]<ref name="IBGE_Pop_2014">{{citar web |url = ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2014/estimativa_dou_2014.pdf |título=Censo Populacional 2010| obra = Estatística Populacional 2014 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de agosto de 2014 |acessodata = 29 de agosto de 2014}}</ref>
+| altitude = 
+| clima = [[Subtropical]]
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.670 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=2 de agosto de 2013}}</ref>
+| pib = {{formatnum:57477.640}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 7209.94
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = {{url|boavistadaaparecida.pr.gov.br}}
+| site_câmara = 
+}}
+
+'''Boa Vista da Aparecida''' é um [[Município (Brasil)|município brasileiro]] localizado na região Oeste do [[estados do Brasil|estado]] do [[Paraná]]. Sua população é estimada em {{fmtn|7998}} habitantes, conforme dados do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE).<ref>[http://cidades.ibge.gov.br/xtras/perfil.php?codmun=410305 IBGE Perfil]</ref>
+
+A distância rodoviária até a [[Curitiba|capital administrativa estadual]] é de 487&nbsp;km.
+
+{{Referências}}
+{{Esboço-municípiosbr/Paraná}}
+{{Portal3|Paraná|Brasil}}
+{{Controle de autoridade}}
+[[Categoria:Boa Vista da Aparecida| ]]
+[[Categoria:Fundações no Paraná em 1981]]

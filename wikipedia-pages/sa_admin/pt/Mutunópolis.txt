@@ -1,0 +1,74 @@
+{{Info/Município do Brasil
+<!-- GeoID=5214101 -->
+<!-- Cabeçalho -->
+| nome = Mutunópolis
+| foto = 
+| leg_foto = 
+| apelido = Mutum
+<!-- Dados gerais -->
+| brasão = 
+| bandeira = Bandeira de Mutunópolis.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 14 de novembro
+| fundação = {{dtlink|||1958|idade}}
+| gentílico = Mutunopolitano
+| lema =  
+| prefeito = Luiz Martins de Oliveira (Luizinho)<ref>https://g1.globo.com/go/goias/eleicoes/2024/resultado-das-apuracoes/mutunopolis.ghtml</ref>
+| partido = [[Movimento Democrático Brasileiro (1980)|MDB]]
+| fim_mandato = 2028
+| mapa = Goias Municip Mutunopolis.svg
+| latP = S
+| latG = 13
+| latM = 43
+| latS = 58
+| lonP = O
+| lonG = 49
+| lonM = 16
+| lonS = 30
+| estado = Goiás
+| mesorregião = [[Mesorregião do Norte Goiano|Norte Goiano]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Porangatu|Porangatu]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Santa Teresa de Goiás]], [[Porangatu]] e [[Estrela do Norte (Goiás)|Estrela do Norte]]
+| dist_capital = 384 
+<!-- Características geográficas -->
+| área = 869.033
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 3540
+| data_pop = Estimativa [[IBGE]]/[[2025]]<ref name="IBGE_Pop_2025">{{citar web|URL=https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2025/estimativa_dou_2025.pdf|título=Estimativas da população residente no Brasil e Unidades da Federação|autor=|data=1 de julho de 2025|publicado=[[Instituto Brasileiro de Geografia e Estatística]]|acessodata=4 de fevereiro de 2026}}</ref>
+| altitude = 413
+| clima = Tropical
+| sigla_clima = 
+<!-- Indicadores -->
+| idh = 0.722 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2000]]<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:29963.529}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 7347.60
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura     = [https://www.mutunopolis.go.gov.br/ mutunopolis.go.gov.br]
+}}
+'''Mutunópolis''' é um [[município]] do [[estados do Brasil|estado]] de [[Goiás]], no [[Brasil]]. Sua população estimada em [[2025]] era de {{fmtn|3540}} habitantes.<ref name="IBGE_Pop_2025" /> Possui área de 869 quilômetros quadrados.<ref name ="IBGE_Área" /> A cidade possui um estádio chamado José de Oliveira Neto.<ref>{{citar web |url=https://fgf.esp.br/pt/noticias/view.php?q=10027 |título=Preço dos ingressos para os jogos da Terceira Divisão - 2009 |autor= |data= |website=Federação Goiana de Futebol |publicado= |acessodata=4 de fevereiro de 2026 |língua= |arquivourl= |arquivodata= |urlmorta=}}</ref>
+
+== Topônimo ==
+"Mutunópolis" é formado pela junção do termo de origem [[Língua tupi|tupi]] "[[mutum]]" com o termo de origem [[Língua grega|grega]] ''pólis'' (cidade),<ref>FERREIRA, A. B. H. ''Novo Dicionário da Língua Portuguesa''. Segunda edição. Rio de Janeiro: Nova Fronteira, 1986. p.1 354</ref> significando, portanto, "cidade dos mutuns".
+
+==Ver também==
+*[[Lista de municípios de Goiás]]
+*[[Lista de municípios do Brasil]]
+
+{{Referências|col=2}}
+ 
+==Ligações externas==
+*[http://www.mutunopolis.go.gov.br Página da prefeitura]
+
+{{Esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Mutunópolis| ]]
+[[Categoria:Fundações em Goiás em 1958]]

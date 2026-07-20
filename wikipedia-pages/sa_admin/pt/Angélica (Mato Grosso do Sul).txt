@@ -1,0 +1,88 @@
+{{Info/Município do Brasil
+<!-- GeoID=5000856 -->
+<!-- Cabeçalho -->| nome = Angélica
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = 
+| bandeira = Bandeira de Angélica.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Angélica
+| aniversário = 13 de maio
+| fundação = {{nowrap|{{dtlink|13|5|1963|idade}}}}
+| emancipação = 13 de maio de 1976
+| gentílico = [[wikt:angeliquense|angeliquense]]
+| lema = 
+| padroeiro = [[São Pedro Apóstolo]]
+| prefeito = Geraldo Rodrigues ''Sub Judice''<ref>{{citar web |url=https://midiamax.uol.com.br/politica/2021/com-prefeito-eleito-impedido-presidente-da-camara-assume-interinamente-em-angelica|título=Com prefeito eleito impedido, presidente da Câmara assume interinamente em Angélica|publicado=Midiamax|acessodata =13 de maio de 2021}}</ref>
+| partido = [[Partido da Social Democracia Brasileira|PSDB]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Angelica location map.svg
+| latP = S
+| latG = 22
+| latM = 09
+| latS = 10
+| lonP = O
+| lonG = 53
+| lonM = 46
+| lonS = 15
+| estado = Mato Grosso do Sul
+| mesorregião = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Iguatemi|Iguatemi]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = ao norte de [[Rio Brilhante]], ao sul de [[Ivinhema]] a leste de [[Nova Andradina]] e a oeste de [[Deodápolis]]
+| dist_capital = 243
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->| área = 1283.627
+| área_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 63º]]
+| área_ref = <ref name="IBGE_Panorama" />
+| área_urbana = {{Formatnum:0.368}}
+| área_urbana_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos = Angélica (sede), [[Ipezal]] com 4.000 habitantes
+| população = 10729 <!--favor manter o formato-->
+| população_pos = [[Lista de municípios de Mato Grosso do Sul por população|MS: 55º]]
+| data_pop = [[IBGE]]/2022<ref name="IBGE_Panorama">{{citar web|url= https://cidades.ibge.gov.br/brasil/ms/angelica/panorama |título=Angélica |autor = Instituto Brasileiro de Geografia e Estatística (IBGE) |data=27 de agosto de 2020 |acessodata= 25 de abril de 2021 }}</ref>
+| densidade = {{Formatnum:7.324}}
+| altitude = 358
+| clima = [[tropical]]
+| sigla_clima = Aw
+| fuso_hor = -4
+<!-- Indicadores -->| idh = 0.697 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 30º]]
+| data_idh = [[PNUD]]/2010<ref name="IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=2 de agosto de 2013}}</ref>
+| gini = {{Formatnum:0.410}}
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 4º]]
+| data_gini = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib = 1.184.827,98
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB_2021">{{Citar web |url=https://cidades.ibge.gov.br/brasil/ms/angelica/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios (2021) |acessodata=2024-02-01 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}{{Ligação inativa|1={{subst:DATA}} }}</ref>
+| pib_pos = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 17º]]
+| pib_per_capita = 106.924,28
+| data_pib_per_capita = [[IBGE]]/2021 <ref name="IBGE_PIB_2021" />
+}}'''Angélica''' é um [[Município (Brasil)|município brasileiro]] da região Centro-Oeste, situado no [[Unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+== Política ==
+Segundo dados e Estatísticas do TRE-MS (2016) Angélica tem 8.177 eleitores.<ref>{{Citar web|url=http://www.tre-ms.jus.br/eleicoes/estatisticas-do-eleitorado/estatisticas-do-eleitorado|titulo=Estatísticas do Eleitorado|acessodata=2016-12-11|obra=www.tre-ms.jus.br}}</ref>
+
+==Ligações externas==
+{{Correlatos
+|commons      = Angélica (Brazil)
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+*[https://angelica.ms.gov.br/ Prefeitura Municipal]
+
+{{Referências}}
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso em 1963]]

@@ -1,0 +1,73 @@
+{{Ver desambig||Montividiu}}
+{{Info/Município do Brasil
+<!-- GeoID=5213772 -->
+<!-- Cabeçalho -->
+| nome = Montividiu do Norte
+| nome_oficial = Municipio de Quebra Rola
+| foto = 
+| leg_foto = 
+<!-- Dados gerais -->
+| brasão = 
+| bandeira = Bandeira de Montividiu do Norte.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 29 de abril
+| fundação = {{dtlink|29|4|1992|idade}}
+| gentílico = montividense
+| lema = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| prefeito = Clemerson Lopes{{Carece de fontes}}
+| partido = [[Partido Renovação Democrática|PRD]]
+| fim_mandato = 2028
+<!-- Localização -->
+| mapa = Goias Municip MontividiudoNorte.svg
+| latP = S
+| latG = 13
+| latM = 06
+| latS = 46
+| lonP = O
+| lonG = 48
+| lonM = 36
+| lonS = 25
+| estado = Goiás
+| mesorregião = [[Mesorregião do Norte Goiano|Norte Goiano]]
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Porangatu|Porangatu]]
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_intermediária = 
+| região_imediata = 
+| região_metropolitana = 
+| dist_capital = 440
+| vizinhos = [[Porangatu]], [[Trombas]], [[Minaçu]], [[Jaú do Tocantins]]<ref>http://mochileiro.tur.br/mapago.htm</ref>
+<!-- Características geográficas -->
+| área = 1332.996 <!--favor manter o formato-->
+| área_ref = <ref name="IBGEPopArea"/>
+| população = 3770 <!--favor manter o formato-->
+| data_pop = est. [[IBGE]]/2024<ref name="IBGEPopArea">{{citar web |url=https://cidades.ibge.gov.br/brasil/go/montividiu-do-norte/panorama |título=IBGE Cidades - Panorama |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)  |acessodata=27 de janeiro de 2024}}</ref>
+| altitude = 
+| clima = Tropical com estação seca
+| sigla_clima = AW
+<!-- Indicadores -->
+| idh = 0.654 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2023}}</ref>
+| pib = {{formatnum:124.015,25
+}} mil
+| data_pib = [[IBGE]]/2023<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2023/ |titulo=Produto Interno Bruto dos Municípios 2004-2023 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2023}}</ref>
+| pib_per_capita = 32.816,95
+| data_pib_per_capita = [[IBGE]]/2023<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.montividiudonorte.go.gov.br/ montividiudonorte.go.gov.br]
+}}
+'''Montividiu do Norte''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Goiás]]. Sua população estimada em 2024 era de 3.770 habitantes.<ref name="IBGEPopArea"/>
+
+{{Referências}}
+
+==Ver também==
+*[[Lista de municípios de Goiás]]
+*[[Lista de municípios do Brasil]]
+
+{{Esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Municípios de Goiás]]
+[[Categoria:Fundações em Goiás em 1992]]

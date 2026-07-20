@@ -1,0 +1,140 @@
+{{Infobox settlement
+<!--See Template:Infobox settlement for additional fields that may be available-->
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = Rawson
+|official_name          = Departamento Rawson
+|other_name             =
+|native_name            =  <!-- if different from the English name -->
+|native_name_lang       =  <!-- Use ISO639 code, e.g. "fr" for French.
+                           If there is more than one native name, in differenet languages,
+                           enter those names using {{tl|lang}}, instead -->
+|nickname               = 
+|settlement_type        = [[Departments of Argentina|Department]] <!-- e.g. Town, Village, City, etc.-->
+|total_type             = <!-- to set a non-standard label for total area and population rows -->
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = Rawson department.gif
+|mapsize                = 125px
+|map_caption            = location of Rawson Department in Chubut Province 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            = <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = <!-- the position of the pushpin label: left, right, top, bottom, none -->
+|pushpin_map_caption    =
+|pushpin_mapsize        =
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Argentina]] {{flagicon|Argentina}}
+|subdivision_type1      = Province
+|subdivision_name1      = [[Chubut Province|Chubut]] [[Image:Flag of chubut province in argentina - bandera de chubut.svg|30px|Coat of Arms of Catamarca Province]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
+|seat_type              = Capital
+|seat                   = [[Rawson, Chubut|Rawson]]
+|parts_type             =
+|parts_style            = <!-- =list (for list), coll (for collapsed list), para (for paragraph format)
+                               Default is list if up to 5 items, coll if more than 5-->
+|parts                  = <!-- parts text, or header for parts list -->
+|p1                     =
+|p2                     = <!-- etc. up to p50: for separate parts to be listed--> 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = 
+|leader_name            = 
+|leader_title1          =  
+|leader_name1           =
+|established_title      = Foundation
+|established_date       = February 25, 1906
+|founder                = ?
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                = <!--Enter: Imperial, to display imperial  before metric-->
+|area_footnotes           =
+|area_total_km2           = 3922 <!-- ALL fields with measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+<!-- Elevation -------------------------->
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 
+|elevation_ft           =
+|elevation_max_m            = 
+|elevation_max_ft           =
+|elevation_min_m            = 
+|elevation_min_ft           =
+<!-- Population   ----------------------->
+|population_as_of               = {{census-ar|2001}}
+|population_footnotes           = 
+|population_blank1_title        = Change 1991-2001
+|population_blank1              = +15.55%
+|population_total               = 115829
+|population_est                 =
+|pop_est_as_of                  = 
+|population_density_km2         = auto <!--For automatic calculation, any density field may contain: auto -->
+|population_density_sq_mi       =
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coor_pinpoint         =<!-- can be used to specify exactly where/what the coordinates refer to -->
+|coordinates            = {{coord|43|17|S|65|05|W|display=inline,title}}
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  Post code
+|postal_code            = U9200 
+|area_code              = 02965  
+|website                = https://www.rawson.gov.ar
+|footnotes              = 
+|blank_name             = Resident
+|blank_info             = ?
+|blank1_name            = Distance to [[Buenos Aires]]
+|blank1_info            = 1,404km
+|blank2_name            = Patron
+|blank2_info            = ?
+}}
+'''Rawson Department''' is a  [[Departments of Argentina|department]] of [[Chubut Province]] in [[Argentina]].
+
+The provincial subdivision has a population of about 115,829 inhabitants in an area of 3,922&nbsp;km<sup>2</sup>, and its capital city is [[Rawson, Chubut|Rawson]], which is located around 1,404&nbsp;km from the [[Capital federal]].
+
+==Settlements==
+
+*[[Playa Unión]]
+*[[Puerto Rawson]] 
+*'''[[Rawson, Chubut|Rawson]]'''
+*[[Trelew]]
+*[[Playa Magagna]]
+*[[Punta Ninfas, Chubut|Punta Ninfas]]
+*[[Playa Santa Isabel]]
+*[[Playa El Faro]]
+
+==External links==
+*[https://www.rawson.gov.ar Rawson website] {{in lang|es}}
+
+{{Departments Chubut}}
+
+[[Category:Departments of Chubut Province]]
+
+{{Chubut-geo-stub}}

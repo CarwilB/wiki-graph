@@ -1,0 +1,90 @@
+{{Info/Assentamento
+|nome_oficial            = Morelos
+|assentamento_tipo       = Município
+|imagem_horizonte        = 
+|imagem_tamanho          = 
+|imagem_legenda          = 
+|imagem_bandeira         = 
+|bandeira_tamanho        = 
+|imagem_selo             = 
+|selo_tamanho            = 
+|imagem_escudo           = Escudo Morelos.jpg
+|escudo_tamanho          = 
+|imagem_emblema_vazio    = 
+|apelido                 = 
+|lema                    = 
+|imagem_mapa             = 
+|mapa_tamanho            = 
+|mapa_legenda            = 
+|imagem_mapa_ponto       = 
+|mapa_ponto_tamanho      = 
+|mapa_ponto_legenda      = 
+|ponto_x = |ponto_y = 
+|mapa_alfinete           = México
+|mapa_alfinete_posição   = 
+|mapa_alfinete_tamanho   = 250
+|mapa_alfinete_legenda   = Localização de Morelos no México
+|latd  = 19|latm  = 47|lats  = 13|latNS  = N
+|longd = 99|longm = 40|longs = 4|longEW = O
+|subdivisão_tipo         = [[Países do Mundo|País]]
+|subdivisão_nome         = {{MEX}}
+|subdivisão_tipo1        = [[Estados do México|Estado]]
+|subdivisão_nome1        = [[México (estado)|México]]
+|subdivisão_tipo2        = 
+|subdivisão_nome2        = 
+|estabelecido_título     = Município desde
+|estabelecido_data       = [[29 de novembro]] de [[1820]]
+|fundador                = 
+|nomeado_por             = 
+|sede_tipo               = Sede
+|sede                    = San Bartolo Morelos
+|governo_notas           = 
+|governo_tipo            = 
+|líder_partido           = [[PRI]]
+|líder_título            = Pres. municipal
+|líder_nome              = lic. Jose Carrasco Mejia
+|líder_título1           = 
+|líder_nome1             = 
+|total_tipo              = 
+|unid_pref               = Metric
+|área_notas              = <ref name=geohive/>
+|área_magnitude          = 
+|área_total_km2          = 223
+|área_total_sq_mi        = 
+|área_total_dunam        = 
+|área_terra_km2          = 
+|área_terra_sq_mi        = 
+|área_água_km2           = 
+|área_água_sq_mi         = 
+|área_água_percent       = 
+|altitude_notas          = 
+|altitude_max_m          = 2700
+|altitude_ft             = 
+|população_notas                 = <ref name=geohive>{{citar web |url=http://www.geohive.com/cntry/mexico.aspx |publicado=Geohive.com |título=The United Mexican States -  Administrative units - GeoHive |data= |acessodata= |língua=en |arquivourl=https://web.archive.org/web/20161028033205/http://www.geohive.com/cntry/Mexico.aspx# |arquivodata=28 de outubro de 2016 |urlmorta=yes }}</ref>
+|população_total                 = 28422
+|população_em                    = <small>Censo 31 de maio de 2010</small>
+|população_densidade_km2         = auto
+|população_densidade_sq_mi       = 
+|população_est                   = 
+|população_est_em                = 
+|população_obs                   = 
+|gentílico               = moralense {{es}}
+|timezone                = CST
+|utc_offset              = -6
+|timezone_DST            = CDT
+|utc_offset_DST          = -5
+|código_postal_tipo      = 
+|código_postal           = 
+|código_área_tipo        = 
+|código_área             = 
+|sítio                   = 
+|notas                   = 
+}}
+
+'''Morelos''' é um [[município]] do [[estados do México|estado]] do [[México (Estado)|México]], no [[México]].
+
+{{Referências}}
+
+{{Esboço-geomx}}
+
+[[Categoria:Municípios do México (estado)]]

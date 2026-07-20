@@ -1,0 +1,108 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name          = Taboga
+|other_name    =
+|native_name   =  <!-- for cities whose native name is not in English -->
+|nickname      = 
+|settlement_type = [[Districts of Panama|District]] 
+|motto         =
+<!-- images and maps  ----------->
+|image_skyline = 
+|imagesize     = 
+|image_caption = 
+|image_flag    = 
+|flag_size     =
+|image_seal    = 
+|seal_size     =
+|image_shield  = 
+|shield_size   =
+|image_map     = Panamá - Panamá - Taboga.svg
+|mapsize       = 300px
+|map_caption   = 
+|pushpin_map   = Panama<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position=right
+|pushpin_mapsize =300
+|pushpin_map_caption=Location of the district capital in Panama
+<!-- Location ------------------>
+|subdivision_type  = Country
+|subdivision_name  = {{flag|Panama}}
+|subdivision_type1 = [[Provinces of Panama|Province]]
+|subdivision_name1 = [[Panamá Province|Panamá]]
+|subdivision_type2 = Capital
+|subdivision_name2 = [[Taboga, Panama|Taboga]]
+|subdivision_type3 =
+|subdivision_name3 = 
+|<!-- Politics ----------------->
+|government_footnotes=
+|government_type   =
+|leader_title      =
+|leader_name       =
+|leader_title1     =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1      =
+|established_title =  <!-- Settled -->
+|established_date  = 
+<!-- Area    --------------------->
+|area_magnitude    = 
+|unit_pref         = Metric
+|area_footnotes    =
+|area_total_km2    =12.1<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2     = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of        = 2019
+|population_footnotes    =
+|population_note         = official estimate<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref>
+|population_total        = 1387
+|population_density_km2  = auto
+|population_density_sq_mi=
+|population_metro        =
+|population_density_metro_km2=
+|population_density_metro_sq_mi=
+|population_blank1_title =Ethnicities
+|population_blank1       =
+|population_density_blank1_km2=   
+|population_density_blank1_sq_mi=
+<!-- General information  --------------->
+|timezone        =[[Eastern Time Zone|ETZ]]
+|utc_offset      = -5
+|timezone_DST    = 
+|utc_offset_DST  = 
+|coordinates     = {{coord|8|48|N|79|33|W|region:PA|display=inline,title}}
+|elevation_footnotes = <!--for references: use <ref> </ref> tags-->
+|elevation_m      = 
+|elevation_ft     =
+<!-- Area/postal codes & others -------->
+|postal_code_type =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code      =
+|area_code        =
+|blank_name       =
+|blank_info       =
+|blank1_name      =
+|blank1_info      =
+|website          = 
+|footnotes        = 
+}}
+
+'''Taboga''' ({{IPA|es|taˈβoɣa}}) is a [[Districts of Panama|district]] (''distrito'') of [[Panamá Province]] in [[Panama]]. The population according to the [[2000 Panamanian census|2000 census]] was 1,402;<ref name="Statoids">{{cite web|url=http://www.statoids.com/ypa.html|title=Districts of Panama|publisher=Statoids|access-date=April 12, 2009}}</ref> the latest official estimate (for 2019) is 1,387.<ref name="ReferenceA">Instituto Nacional de Estadística y Censo, Panama.</ref> The district covers a total area of {{cvt|12.1|km2}}. The capital lies at the town of [[Taboga, Panama|Taboga]].<ref name="Statoids"/>
+
+Taboga is an island district that includes the islands of Taboga, Taboguilla, Otoque, Urabá, Melones, Chamá, and Estivá. Taboga itself is {{convert|8|mi}} long and is {{convert|12|mi}} away from the mainland.
+
+It was the home of [[Francisco Pizarro]], where he built boats for his conquest of the Incas in 1539.
+
+==Administrative divisions==
+Taboga District is divided administratively into the following ''[[Corregimientos of Panama|corregimientos]]'':
+
+*[[Taboga, Panama|Taboga]] (capital)
+*[[Otoque Occidente]]
+*[[Otoque Oriente]]
+
+==References==
+{{reflist}}
+
+{{Panamá Province}}
+{{Districts of Panama}}
+
+[[Category:Districts of Panamá Province]]
+
+
+{{PanamáPA-geo-stub}}

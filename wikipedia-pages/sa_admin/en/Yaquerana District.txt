@@ -1,0 +1,126 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Yaquerana
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Yaquerana in the [[Requena Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Loreto Region|Loreto]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Requena Province|Requena]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = July 2, 1943
+| seat_type               = [[Capital city|Capital]]
+| seat                    = [[Angamos, Requena|Angamos]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Pepe Fasabi Rimachi
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 10947.2
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 130
+| population_footnotes    = 
+| population_total        = 2445
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 160511
+| website                 = 
+| footnotes               = 
+}}
+
+'''Yaquerana District''' is one of eleven [[Districts of Peru|districts]] of the province [[Requena Province|Requena]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital]''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Angamos, Yaquerana, elevation {{convert|101|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 31.1
+|Feb high C = 31.2
+|Mar high C = 30.9
+|Apr high C = 30.9
+|May high C = 30.5
+|Jun high C = 30.5
+|Jul high C = 30.7
+|Aug high C = 32.0
+|Sep high C = 32.2
+|Oct high C = 31.9
+|Nov high C = 31.7
+|Dec high C = 31.5
+|year high C = 
+|Jan low C = 22.2
+|Feb low C = 22.2
+|Mar low C = 22.3
+|Apr low C = 22.0
+|May low C = 21.6
+|Jun low C = 21.1
+|Jul low C = 20.5
+|Aug low C = 21.0
+|Sep low C = 21.4
+|Oct low C = 22.0
+|Nov low C = 22.3
+|Dec low C = 22.4
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 258.7
+|Feb precipitation mm = 245.4
+|Mar precipitation mm = 298.6
+|Apr precipitation mm = 253.2
+|May precipitation mm = 234.5
+|Jun precipitation mm = 167.6
+|Jul precipitation mm = 130.5
+|Aug precipitation mm = 124.6
+|Sep precipitation mm = 146.3
+|Oct precipitation mm = 210.2
+|Nov precipitation mm = 234.9
+|Dec precipitation mm = 290.6
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Loreto Region}}
+
+{{coord|5.1492|S|72.8795|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Requena province]]
+[[Category:Districts of the Department of Loreto]]
+
+
+{{Loreto-geo-stub}}

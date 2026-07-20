@@ -1,0 +1,111 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Santo Domingo
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = CCStoDomingo.JPG
+|imagesize              = 
+|image_caption          = The [[Carretera Central (Cuba)|Carretera Central]] across Santo Domingo
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Santo Domingo (Cuban municipal map).png
+|map_caption            = Santo Domingo municipality (red) within <br> Villa Clara Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Villa Clara Province|Villa Clara]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Founded
+|established_date       = 1819<ref name=guije/>
+|established_title2     = Established
+|established_date2      = 1879 (Municipality)
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 883
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 46,984
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|35|0|N|80|14|18|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 50
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-422
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Santo Domingo''' is a municipality and town in the [[Villa Clara Province]] of [[Cuba]].
+
+It was founded in 1819<ref name=guije/> and established as a municipality in 1879.
+
+==Geography==
+The town is divided into the wards (''[[barrio]]s'') of Este (east) and Oeste (west). The municipality includes the villages of Álvarez, Amaro, Arenas, Baracaldo, Bermejal, [[Cascajal]], Cayo Bejuco, Cerrito, [[George Washington (Santo Domingo, Cuba)|George Washington]], Jiquiabo, La Criolla, Las Casimbas, [[Manacas]], [[Mordazo]], Puerto Escondido, Río, Rodrigo, Sabino Hernández, San Bartolomé, San Juan de Amaro, San Marcos, Ulacia (Carlos Baliño), Ventiseis de Julio, Yabucito. Until the 1977 municipal reform, Santo Domingo included Jicotea too, nowadays part of [[Ranchuelo]] municipality.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/vsanto/index.htm|title=Santo Domingo|author=Guije.com|accessdate=2007-10-09|language=es}}</ref><ref>{{OSM|r|5884805|Santo Domingo}}</ref> 
+
+The wards ("consejos populares" in spanish) of the municipality are [[Cascajal]], [[Mordazo]], [[Sabino Hernández, Cuba|Sabino Hernández]], [[Manacas, Cuba|Manacas]], [[George Washington, Cuba|Washington]], [[La Palma y El Jardín]] (main town of Santo Domingo), [[26 de Julio (Santo Domingo)|26 de Julio]], [[Baliño, Cuba|Baliño]], and [[Rodrigo-Amaro]].<ref>{{Cite web |title=Sobre Nosotros |url=https://www.somossantodomingo.gob.cu/nuestra-region/sobre-el-municipio/sobre-nosotros |archive-date=2023-05-27 |website=Somos Santo Domingo |language=es |access-date=2022-10-02 |archive-url=https://web.archive.org/web/20230527024541/https://somossantodomingo.gob.cu/nuestra-region/sobre-el-municipio/sobre-nosotros |url-status=dead }}</ref> 
+
+==Demographics==
+In 2022, the municipality of Santo Domingo had a population of 46,984.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|883|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-09}}</ref> it has a population density of {{convert|53|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Santo Domingo
+ | N  = [[Quemado de Güines]]
+ | NE = [[Sagua La Grande]]
+ | E  = [[Cifuentes, Cuba|Cifuentes]]
+ | SE = [[Ranchuelo]]
+ | S  = [[Lajas, Cuba|Lajas]] ([[Cienfuegos Province|Cienfuegos]])
+ | SW = [[Rodas]] ([[Cienfuegos Province|Cienfuegos]])
+ | W  = [[Los Arabos]] ([[Matanzas Province|Matanzas]])
+ | NW = [[Corralillo]]
+}}
+{{Municipalities in Villa Clara}}
+
+[[Category:Populated places in Villa Clara Province]]
+[[Category:1819 establishments in North America]]
+[[Category:Populated places established in 1819]]
+[[Category:1819 establishments in the Spanish Empire]]
+
+{{Cuba-geo-stub}}

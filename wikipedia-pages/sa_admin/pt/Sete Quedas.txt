@@ -1,0 +1,161 @@
+{{ver desambiguação}}
+{{Info/Município do Brasil
+<!-- GeoID=5007703 -->
+<!-- Cabeçalho -->| nome = Sete Quedas
+| foto = 
+| leg_foto = 
+| apelido = 7Quedas
+<!-- Dados gerais -->| brasão = Brasão_Sete_Quedas_MS.png
+| bandeira = Bandeira Sete Quedas MS.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Sete Quedas
+| aniversário = 13 de maio
+| fundação = {{Dtlink|13|5|1980|idade}}
+| emancipação = {{nowrap|{{dtlink|22|6|1981|idade}}}}
+| gentílico = [[wikt:setequedense|setequedense]]
+| lema = 
+| padroeiro = [[Nossa Senhora do Perpétuo Socorro]]
+| prefeito = Erlon Fernando Possa Daneluz
+| partido = [[PSDB]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Sete Quedas location map.svg
+| latP = S
+| latG = 23
+| latM = 58
+| latS = 12
+| lonP = O
+| lonG = 55
+| lonM = 02
+| lonS = 09
+| estado = Mato Grosso do Sul
+| mesorregião = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Iguatemi|Iguatemi]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Tacuru]], [[Paranhos (Mato Grosso do Sul)|Paranhos]], [[Japorã]] e [[Corpus Christi (Paraguai)|Corpus Christi]] ([[Paraguai]])
+| dist_capital = 452
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->| área = 825.925 <!--favor manter o formato-->
+| área_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 71º]]
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = {{Formatnum:2.515}}
+| área_urbana_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 36º]]
+| área_urbana_ref = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de julho de 2008}}</ref>
+| distritos = Sete Quedas (sede)
+| população = 10994<!--favor manter o formato-->
+| população_pos = [[Lista de municípios de Mato Grosso do Sul por população|MS: 49º]]
+| data_pop = [[Censo demográfico do Brasil de 2022 |Censo de 2022]]<ref name="IBGE_População">{{citar web|url= https://cidades.ibge.gov.br/brasil/ms/sete-quedas/panorama |título = Censo demográfico do Brasil de 2022 |autor = Instituto Brasileiro de Geografia e Estatística (IBGE) |data = 28 de maio de 2023 |acessodata = 26 de setembro de 2023}}</ref>
+| altitude = 407
+| altitude_ref = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|autor=|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima = [[subtropical]]
+| sigla_clima = Cfa
+<!-- Indicadores -->| idh = 0.789 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 28º]]
+| data_idh = [[PNUD]]/[[2000]]<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini = {{Formatnum:0.420}}
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 12º]]
+| data_gini = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib = {{formatnum:85887.712}} mil
+| pib_pos = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 60º]]
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 7835.04
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+'''Sete Quedas''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+== Dados históricos ==
+Fundada em [[13 de maio]] de [[1980]], seu nome provavelmente foi uma homenagem ao [[Salto de Sete Quedas]], situado no [[Rio Paraná]], que foi [[desintegrado]] para dar lugar a [[Hidrelétrica de Itaipu]] ne mesma época.
+
+== Geografia ==
+O município está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], a uma [[latitude]] 23º58'13" [[sul]] e a uma [[longitude]] 55º02'08" [[oeste]]. Situa-se a {{fmtn|470|km}} da capital estadual, [[Campo Grande (Mato Grosso do Sul)|Campo Grande]], e a {{fmtn|1486|km}} da capital federal ([[Brasília]]).  Ocupa uma superfície de de {{fmtn|825.925|km²}}, representando 0.2313% do Estado, 0.0516% da Região e 0.0097% de todo o território brasileiro. Faz fronteira ao sul com [[Corpus Christi (Paraguai)|Corpus Christi]], no [[Paraguai]], ao norte com o município de [[Tacuru]], ao leste com o município de [[Japorã]] e ao oeste com o município de [[Paranhos (Mato Grosso do Sul)|Paranhos]]. Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Meridiano de Greenwich]].
+
+Está a uma altitude de {{fmtn|407|m}}. O município de Sete Quedas encontra-se se na Região dos Planaltos Arenítico-Basálticos Interiores, com unidade geomorfológica; Divisores das Sub-Bacias Meridionais. Apresenta Modelados Planos-P, relevo plano, geralmente elaborado por várias fases de retomada erosiva; Modelados de Dissecação – D, com relevos elaborados pela ação fluvial e Modelados de Acumulação Fluvial – Af, área plana resultante de acumulação fluvial sujeita a inundação periódica. A predominância é de solos minerais não hidromórficos, Argissolos bem desenvolvidos, profundos e, geralmente, bem drenados. Variam muito quanto à fertilidade, com textura predominantemente arenosa e média e Gleissolos.
+
+Localiza-se na região de influência do [[Cerrado]]. A vegetação revela o domínio da Floresta Estacional Semidecidual, apresentando fisionomias de Cerrado e, devido às ações antrópicas, vem cedendo lugar às atividades agropecuárias, ampliando o domínio da pastagem. Está sob influência da [[Bacia do Rio da Prata]]. O rio Iguatemi é afluente pela margem direita do rio Paraná e sua nascente se localiza no município de Aral Moreira; limite entre os municípios de Tacuru e Sete Quedas.
+
+=== Clima ===
+Cidade mais fria do estado. Está sob influência do [[clima subtropical]] (Cfa) do sul de Mato Grosso do Sul e apresenta índice efetivo de umidade com valores anuais vaiando de 40 a 60%. A precipitação pluviométrica anual varia entre 1.500 a 1.700mm anuais, excedente hídrico anual de 800 a 1.200mm, durante cinco a seis meses e deficiência hídrica de 350 a 500mm, durante quatro meses.
+
+É uma das cidades mais frias de Mato Grosso do Sul devido a três fatores a seguir: Sua latitude/posição sul ao [[trópico de capricórnio]], sua altitude em relação a outros municípios do estado e sua posição em relação à recepção de massas polares vindas da [[Argentina]] passando pelas fronteiras paraguaias adicionadas com a umidade advindas do [[pantanal]] e da região amazônica, fator ao qual mantém-se sempre mais fresca que as demais cidades do estado. Possível ocorrência de geadas.
+
+Segundo dados da [[estação meteorológica]] automática do [[Instituto Nacional de Meteorologia]] (INMET) no município, em operação desde junho de 2008, a menor [[temperatura]] registrada em Sete Quedas foi {{fmtn|-0.1|°C}} em 18 de julho de 2017 e a maior atingiu {{fmtn|40.6|°C}} em 30 de outubro de 2019. O menor índice de [[Umidade relativa|umidade relativa do ar]] (URA) foi de 10%, nas tardes dos dias 28 de agosto de 2010, 13 de setembro de 2010, 9 de outubro de 2016 e 9 de setembro de 2018. A [[rajada de vento]] mais forte alcançou {{fmtn|25|m/s}} ({{fmtn|90|km/h}}) em 31 de outubro de 2019.<ref name="INMET-A751-Sete-Quedas-MS"/><ref name="Gráficos-INMET-A751-Sete-Quedas-MS"/>
+{{Tabela climática
+|localidade = Sete Quedas
+|larguraporcentagem = 65
+
+|Jan_REC_Max_°C = 37.3 |Jan_REC_Min_°C = 13.9
+|Fev_REC_Max_°C = 37.8 |Fev_REC_Min_°C = 10.2
+|Mar_REC_Max_°C = 38.4 |Mar_REC_Min_°C =  9.4
+|Abr_REC_Max_°C =  36  |Abr_REC_Min_°C =  6.5
+|Mai_REC_Max_°C = 32.6 |Mai_REC_Min_°C =  5.4
+|Jun_REC_Max_°C = 31.6 |Jun_REC_Min_°C =  0.4
+|Jul_REC_Max_°C = 32.5 |Jul_REC_Min_°C = -0.1
+|Ago_REC_Max_°C = 35.6 |Ago_REC_Min_°C =    2
+|Set_REC_Max_°C = 39.6 |Set_REC_Min_°C =  1.9
+|Out_REC_Max_°C = 40.6 |Out_REC_Min_°C =  9.4
+|Nov_REC_Max_°C = 37.2 |Nov_REC_Min_°C = 10.9
+|Dez_REC_Max_°C = 37.4 |Dez_REC_Min_°C =   12
+|Max_Rec_Ano_°C = 40.6 |Min_Rec_Ano_°C = -0.1
+
+|Jan_Max_°C =  31  |Jan_Med_°C = 25.4 |Jan_Min_°C = 19.9
+|Fev_Max_°C = 30.5 |Fev_Med_°C =  25  |Fev_Min_°C = 19.5
+|Mar_Max_°C = 28.7 |Mar_Med_°C = 23.6 |Mar_Min_°C = 18.5
+|Abr_Max_°C = 26.2 |Abr_Med_°C = 20.9 |Abr_Min_°C = 15.6
+|Mai_Max_°C = 23.6 |Mai_Med_°C = 18.2 |Mai_Min_°C = 12.9
+|Jun_Max_°C = 22.6 |Jun_Med_°C = 16.4 |Jun_Min_°C = 10.3
+|Jul_Max_°C = 24.2 |Jul_Med_°C = 17.5 |Jul_Min_°C = 10.8
+|Ago_Max_°C =  26  |Ago_Med_°C = 19.2 |Ago_Min_°C = 12.5
+|Set_Max_°C = 26.6 |Set_Med_°C = 20.4 |Set_Min_°C = 14.2
+|Out_Max_°C = 28.7 |Out_Med_°C = 22.3 |Out_Min_°C = 15.9
+|Nov_Max_°C = 30.1 |Nov_Med_°C = 23.8 |Nov_Min_°C = 17.6
+|Dez_Max_°C = 29.2 |Dez_Med_°C = 23.9 |Dez_Min_°C = 18.7
+|Max_Ano_°C = 27.3 |Med_Ano_°C = 21.4 |Min_Ano_°C = 15.5
+
+|Jan_Precip_mm = 148
+|Fev_Precip_mm = 150
+|Mar_Precip_mm = 131
+|Abr_Precip_mm = 134
+|Mai_Precip_mm = 130
+|Jun_Precip_mm = 102
+|Jul_Precip_mm = 87
+|Ago_Precip_mm = 76
+|Set_Precip_mm = 126
+|Out_Precip_mm = 180
+|Nov_Precip_mm = 188
+|Dez_Precip_mm = 188
+|Ano_Precip_mm = 1640
+
+|fontes = Climate-data.org (médias)<ref>{{citar web|url=https://pt.climate-data.org/america-do-sul/brasil/mato-grosso-do-sul/sete-quedas-43483/|título=DADOS CLIMATOLÓGICOS PARA SETE QUEDAS|acessodata=29-07-2020|wayb=20200729143030}}</ref> e [[Instituto Nacional de Meteorologia]]<br/>(INMET) (recordes de temperatura: 03/06/2008-presente)<ref name="INMET-A751-Sete-Quedas-MS">{{citar web|url=https://tempo.inmet.gov.br/TabelaEstacoes/A751|título=Estação: SETE QUEDAS (A751)|autor=[[Instituto Nacional de Meteorologia]] (INMET)|acessodata=29-07-2020}}</ref><ref name="Gráficos-INMET-A751-Sete-Quedas-MS">{{citar web|url=https://tempo.inmet.gov.br/GraficosDiarios/A751|título=Gráficos|autor=INMET|acessodata=29-07-2020}}</ref>
+}}
+
+== Demografia ==
+Sua população estimada em 2011 era de 10.768 habitantes.
+
+== Economia ==
+As principais fontes de renda são a pecuária bovina, soja e o cultivo da mandioca.
+
+{{referências}}
+
+== Ligações externas ==
+{{Correlatos
+|commons      = Sete Quedas
+|wikisource   =
+|wikiquote    =
+|wikilivros   =
+|wikinoticias =
+|wikcionario  =
+|wikispecies  =
+}}
+* [http://www.setequedas.ms.gov.br/ Prefeitura Municipal]
+
+{{Esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Fronteiras do Brasil}}
+{{Portal3|Mato Grosso do Sul}}
+
+{{DEFAULTSORT:Sete Quedas}}
+[[Categoria:Sete Quedas| ]]
+[[Categoria:Municípios fronteiriços do Brasil]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1980]]

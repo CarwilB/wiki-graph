@@ -1,0 +1,368 @@
+{{Info/Município do Brasil
+<!-- GeoID=4119954 -->
+<!-- Cabeçalho -->| nome = Pontal do Paraná
+| foto = Pontal_do_Parana,_Praia_de_Leste.jpg
+| apelido = Litoral do Paraná
+<!-- Dados gerais -->| brasão = Brasao pontal do parana.jpg
+| bandeira = Bandeira de Pontal do Paraná.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|lang=br|20|12|1995|idade}}}}
+| gentílico = Pontalense
+| lema = 
+| prefeito<!--enciclopédia, sem apelidos! --> = Rudisney Gimenes Filho<ref>[https://g1.globo.com/pr/parana/eleicoes/2024/noticia/2024/12/31/prefeito-de-pontal-do-parana-pr-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml Prefeito de Pontal do Paraná (PR) toma posse nesta quarta (1º); veja lista de vereadores eleitos] Portal G1 - acessado em 28 de fevereiro de 2025</ref>
+| partido = [[Movimento Democrático Brasileiro (1980)|MDB]]
+| mandato_início = 2025
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 11
+<!-- Localização -->| mapa = Parana Municip PontaldoParana.svg
+| latP = S
+| latG = 25
+| latM = 40
+| latS = 26
+| lonP = O
+| lonG = 48
+| lonM = 30
+| lonS = 39
+| estado = Paraná
+| mesorregião = [[Mesorregião Metropolitana de Curitiba|Metropolitana de Curitiba]]
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Paranaguá|Paranaguá]]
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Paranaguá]] e [[Matinhos]]
+| dist_capital = 100
+<!-- Características geográficas -->| área = 200.551
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 30425
+| data_pop = 2022
+| população_ref = <ref name="IBGE_Pontal_do_Parana_Populacao_2022">{{citar web
+|url=https://cidades.ibge.gov.br/brasil/pr/pontal-do-parana/panorama
+|titulo=População de Pontal do Paraná – Panorama do município
+|obra=IBGE Cidades – Instituto Brasileiro de Geografia e Estatística
+|publicado=IBGE, 2022
+|acessodata=22 de janeiro de 2026
+}}</ref>
+| altitude = 
+| população_est = 33131
+| população_est_em = IBGE/2025
+| densidade = {{!}} densidade_demográfica = {{formatnum:{{#expr: 30425 / 200.551 round 0}}}} hab./km²
+| clima = Subtropical
+| sigla_clima = Cfa
+<!-- Indicadores -->| idh = 0.738 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:809.708.32}} mil
+| data_pib = 2023
+| pib_ref = <ref name="IBGE_Pontal_do_Parana_2023">{{citar web
+|url=https://cidades.ibge.gov.br/brasil/pr/pontal-do-parana/pesquisa/38/46996
+|titulo=Pontal do Paraná – Perfil do município
+|obra=IBGE Cidades
+|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE), 2023
+|acessodata=22 de janeiro de 2026
+}}</ref>
+| pib_per_capita = 26.613.26
+| data_pib_per_capita = 2023 <ref name="IBGE_Pontal_do_Parana_2023">{{citar web
+|url=https://cidades.ibge.gov.br/brasil/pr/pontal-do-parana/pesquisa/38/46996
+|titulo=Pontal do Paraná – Perfil do município
+|obra=IBGE Cidades
+|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE), 2023
+|acessodata=22 de janeiro de 2026
+}}</ref>
+}}
+'''Pontal do Paraná''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Paraná]], sendo desmembrado do município de [[Paranaguá]] em 20 de dezembro de 1995. Sua população, conforme estimativas do [[Instituto Brasileiro de Geografia e Estatística|IBGE]] de 2025, era de 33.131 habitantes.<ref name="IBGE_Pontal_do_Parana_Panorama_Populacao_2022">{{citar web|url=https://cidades.ibge.gov.br/brasil/pr/pontal-do-parana/panorama|titulo=Panorama de Pontal do Paraná – População|acessodata=22 de janeiro de 2026|obra=IBGE Cidades – Instituto Brasileiro de Geografia e Estatística|publicado=IBGE, 2022}}</ref> O município possui como destaque as belezas naturais como grande atrativo local. Possui 23 km de orla subdividida em mais de 40 praias.<ref name=viajeparana>{{citar web|url=https://www.viajeparana.com/Pontal-do-Parana|título=Pontal do Paraná: Cidade das areias brancas e águas convidativas|publicado=Viaje Paraná|autor=Secretaria da Comunicação Social do Paraná|data=|acessodata=2024-04-21}}</ref>
+
+==História==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+=== Origens ===
+[[Imagem:Alfredo Andersen - Entrada da Barra do Sul.jpg|left|thumb|300px|Pintura, óleo sobre tela, Entrada da Barra do Sul, de [[Alfredo Andersen]], mostrando a Ilha do Mel a partir da Praia de Pontal do Sul]]A área que hoje compõe o município de Pontal do Paraná apresenta ocupação humana muito anterior à formação político-administrativa recente do território. Documentos técnicos e de planejamento do litoral paranaense registram que a região é conhecida e habitada desde a primeira metade do século XVI, com evidências arqueológicas como sambaquis associados ao rio Guaraguaçu.<ref name="SEDEST_Caderno1">{{citar web|url=https://www.sedest.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-03/caderno1_a.pdf|titulo=Plano Diretor de Desenvolvimento Integrado de Pontal do Paraná — 1º Caderno: Aspectos históricos do município|acessodata=23 de janeiro de 2026|publicado=Secretaria de Estado do Desenvolvimento Sustentável e do Turismo do Paraná (SEDEST)|formato=pdf}}</ref> Assim como em outras áreas do litoral brasileiro, Pontal do Paraná foi inicialmente povoado por [[Povos indígenas do Brasil|povos indígenas]] e, posteriormente, ocupado por imigrantes europeus durante fluxos migratórios do [[século XVII]], no contexto da colonização do território do atual estado do [[Paraná]].<ref name="IBGE_DTB_Pontal">{{citar web|url=https://biblioteca.ibge.gov.br/visualizacao/dtbs/pontaldoparana.pdf|titulo=Pontal do Paraná (PR) — Histórico e formação administrativa|acessodata=23 de janeiro de 2026|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|formato=pdf}}</ref>
+
+A ocupação urbana intensificou-se especialmente a partir de meados do século XX, associada ao veraneio e ao turismo litorâneo, com valorização imobiliária e abertura de acessos rodoviários. A ocupação mais intensa da costa ocorreu a partir de cerca de 1950, com a abertura da Estrada das Praias (atual [[PR-407]]), interligando a [[BR-277]] ao balneário de Praia de Leste, em um contexto de expansão do turismo e especulação imobiliária.<ref name="SEDEST_Caderno1" /> Ainda segundo esse levantamento, em 1951 o [[Governo do Paraná|Governo do Estado]] doou ao município de [[Paranaguá]] uma grande área costeira, posteriormente repassada à Empresa Balneária Pontal do Sul, e o parcelamento/planejamento inicial nem sempre foi seguido, com crescimento urbano descrito como desordenado em diversos trechos.<ref name="SEDEST_Caderno1" />
+
+Na segunda metade do século XX, o território também recebeu estruturas e atividades ligadas à pesquisa e à indústria. O diagnóstico histórico registra que, em 1980, foi implantado na área conhecida como Ponta do Poço (Pontal do Sul) um canteiro industrial voltado à construção de plataformas para exploração de petróleo, o que atraiu contingentes de trabalhadores; no mesmo período foi implementado o Centro de Biologia Marinha, atual [[Centro de Estudos do Mar]] da [[Universidade Federal do Paraná]], com pesquisas em oceanografia.<ref name="SEDEST_Caderno1" />
+
+No plano político-administrativo, a região integrava o município de Paranaguá com a denominação de “praias de Paranaguá”.<ref name="IBGE_DTB_Pontal" /> A mobilização pela emancipação teve início em 1983 e, em 1995, foi aprovada por meio de plebiscito popular, no qual 87,98% dos votantes manifestaram-se favoravelmente à emancipação, resultando na promulgação da Lei Estadual nº 11.252, de 20 de dezembro de 1995,<ref name="Menegusso2014p32">{{citar tese|sobrenome=Menegusso|nome=Thiago Martins|titulo=Uma análise dos determinantes do desenvolvimento econômico do município de Pontal do Paraná|tipo=Trabalho de conclusão de curso (Graduação em Ciências Econômicas)|local=Curitiba|publicado=Universidade Federal do Paraná|ano=2014|url=https://acervodigital.ufpr.br/xmlui/bitstream/handle/1884/38280/THIAGO-MARTINS-MENEGUSSO.pdf?isAllowed=y&sequence=1|formato=PDF|pagina=32|acessodata=23 de janeiro de 2026}}</ref> que criou o município de Pontal do Paraná, instalado em 1º de janeiro de 1997.<ref name="Camara_Historia">{{citar web|url=https://www.pontaldoparana.pr.leg.br/institucional/historia|titulo=História de Pontal|acessodata=23 de janeiro de 2026|publicado=Câmara Municipal de Pontal do Paraná}}</ref><ref name="IBGE_DTB_Pontal" />
+
+Além da faixa de praias e balneários, Pontal do Paraná consolidou-se como um dos pontos de embarque para a Ilha do Mel a partir do balneário de Pontal do Sul; a Ilha do Mel pertence ao município de Paranaguá e o acesso é feito por via marítima.<ref name="IAT_PEIM">{{citar web|url=https://www.iat.pr.gov.br/Pagina/Parque-Estadual-da-Ilha-do-Mel-PEIM|titulo=Parque Estadual da Ilha do Mel (PEIM)|acessodata=23 de janeiro de 2026|publicado=Instituto Água e Terra (IAT)}}</ref><ref name="SEDEST_Visitar_IlhaDoMel">{{citar web|url=https://www.sedest.pr.gov.br/servicos/Cultura-e-Lazer/Turismo/Visitar-a-Ilha-do-Mel-6K3Wpvrm|titulo=Visitar a Ilha do Mel|acessodata=23 de janeiro de 2026|publicado=Secretaria de Estado do Desenvolvimento Sustentável e do Turismo do Paraná (SEDEST)}}</ref>
+=== Etimologia ===
+
+Há muito tempo a localidade era chamada de Pontal do Sul. A origem etimológica do nome Pontal é geográfica, porque a localização da cidade fica em uma ponta feita de terra e areia que vai em direção  às águas marítimas. A expressão "do Paraná" é o nome da [[Unidades federativas do Brasil|unidade federativa brasileira]] onde fica o município.
+
+=== História recente ===
+Com a instalação do município em 1º de janeiro de 1997,<ref name="Camara_historia">{{citar web|url=https://www.pontaldoparana.pr.leg.br/institucional/historia|titulo=História de Pontal|acessodata=23 de janeiro de 2026|publicado=Câmara Municipal de Pontal do Paraná}}</ref> iniciou-se a organização das primeiras administrações locais. No primeiro pleito municipal após a emancipação (eleições municipais de 1996, para o mandato iniciado em 1997), Hélio Gaissler de Queiroz ([[Partido Democrático Trabalhista|PDT]]) foi eleito prefeito, com 1.562 votos (49,85% dos votos válidos),<ref name="TREPR_1996">{{citar web|url=https://apps.tre-pr.jus.br/files/resultados/19961003A75523.pdf|titulo=Consulta de Resultados Eleitorais — Eleições Municipais de 1996 (Pontal do Paraná)|acessodata=23 de janeiro de 2026|publicado=Tribunal Regional Eleitoral do Paraná (TRE-PR)|formato=pdf}}</ref> tendo José Antônio da Silva como vice-prefeito.<ref name="ALEP_2007">{{citar web|url=https://www.assembleia.pr.leg.br/comunicacao/noticias/com-representacao-politica-pontal-recebeu-r-700-mil-para-saude|titulo=Com Representação Política Pontal Recebeu R$ 700 Mil Para Saúde|acessodata=23 de janeiro de 2026|publicado=Assembleia Legislativa do Estado do Paraná (ALEP)}}</ref>
+
+Nas eleições municipais de 2000, José Antônio da Silva foi eleito prefeito, com 2.913 votos (39,24% dos votos válidos), tomando posse em 2001.<ref name="TREPR_2000">{{citar web|url=https://apps.tre-pr.jus.br/files/resultados/20001001A75523.pdf|titulo=Relatório de Resultado da Votação dos Candidatos por Município — Eleições Municipais de 2000 (Pontal do Paraná)|acessodata=23 de janeiro de 2026|publicado=Tribunal Regional Eleitoral do Paraná (TRE-PR)|formato=pdf}}</ref><ref name="ALEP_2007" /> Em 2004, Rudisney Gimenes ([[Movimento Democrático Brasileiro (1980)|PMDB]]) venceu a eleição para o Executivo municipal, com 3.912 votos (42,74% dos votos válidos),<ref name="TREPR_2004">{{citar web|url=https://apps.tre-pr.jus.br/files/resultados/20041003A75523.pdf|titulo=Consulta de Resultados Eleitorais — Eleições Municipais de 2004 (Pontal do Paraná)|acessodata=23 de janeiro de 2026|publicado=Tribunal Regional Eleitoral do Paraná (TRE-PR)|formato=pdf}}</ref> e, em 2008, foi reeleito, com 5.383 votos (51,27% dos votos válidos).<ref name="TREPR_2008">{{citar web|url=https://apps.tre-pr.jus.br/files/resultados/20081005A75523.pdf|titulo=Resultado de votação de candidatos por município — Eleições 2008 (Pontal do Paraná)|acessodata=23 de janeiro de 2026|publicado=Tribunal Regional Eleitoral do Paraná (TRE-PR)|formato=pdf}}</ref>
+
+== Geografia ==
+O município de Pontal do Paraná enquadra-se na planície costeira, com fisiografia predominantemente uniforme e de baixa altitude, formada por terraços arenosos de origem marinha.<ref name="ProjetoOrla_Pontal_2004_localizacao">{{citar web|url=https://www.sedest.pr.gov.br/sites/default/arquivos_restritos/files/documento/2019-11/pontalpr.pdf|titulo=Projeto de Gestão Integrada da Orla Marítima — Município de Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Secretaria do Desenvolvimento Sustentável (SEDEST)|formato=PDF}}</ref> Ao longo da faixa litorânea ocorre vegetação de [[restinga]] em corredor, com fragmentos de mata nativa intercalados por trechos urbanizados e por diversos corpos d’água (naturais e artificiais) associados à drenagem costeira.<ref name="ProjetoOrla_Pontal_2004_sintese">{{citar web|url=https://www.sedest.pr.gov.br/sites/default/arquivos_restritos/files/documento/2019-11/pontalpr.pdf|titulo=Projeto de Gestão Integrada da Orla Marítima — Município de Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Secretaria do Desenvolvimento Sustentável (SEDEST)|pagina=9|formato=PDF}}</ref> Em áreas próximas e conectadas a esses ambientes de planície (como a Estação Ecológica de Guaraguaçu), a topografia é descrita como praticamente plana, com altitudes baixas (cerca de 2 a 5 m).<ref name="IAT_EEGuaraguacu_Intro">{{citar web|url=https://www.iat.pr.gov.br/sites/agua-terra/arquivos_restritos/files/documento/2020-07/ee_guaraguacu_3intro.pdf|titulo=Plano de Manejo da Estação Ecológica de Guaraguaçu — Introdução|acessodata=23 de janeiro de 2026|publicado=Instituto Água e Terra (IAT)|formato=PDF}}</ref>
+
+=== Pluviosidade ===
+O clima predominante no litoral paranaense é do tipo [[Clima subtropical úmido|Cfa]] (subtropical úmido), sem estação seca definida, sob influência de sistemas atmosféricos tropicais e polares; a distribuição anual das chuvas tende a concentrar maiores totais no verão e menores no inverno.<ref name="ABClima_2008_Cfa">{{citar web|url=https://revistas.ufpr.br/revistaabclima/article/download/25423/17042/92707|titulo=O clima do litoral do Estado do Paraná|acessodata=23 de janeiro de 2026|publicado=Revista Brasileira de Climatologia (UFPR)|ano=2008|formato=PDF}}</ref> Em [[Guaratuba]], [[Matinhos]] e Pontal do Paraná, a literatura climatológica indica totais médios anuais elevados, em torno de 2.300 mm, com a maior intensidade pluviométrica nos meses de verão (especialmente janeiro e fevereiro) e menores médias no inverno (com valores típicos de cerca de 80 a 150 mm em agosto, dependendo da localidade e da série analisada).<ref name="ABClima_2008_chuvas">{{citar web|url=https://revistas.ufpr.br/revistaabclima/article/download/25423/17042/92707|titulo=O clima do litoral do Estado do Paraná|acessodata=23 de janeiro de 2026|publicado=Revista Brasileira de Climatologia (UFPR)|ano=2008|pagina=58|formato=PDF}}</ref>
+
+=== Limites ===
+Pontal do Paraná limita-se com [[Matinhos]] (a sudoeste) e com [[Paranaguá]] (a noroeste), sendo delimitado ao nordeste pelo estuário/baía de Paranaguá e ao sudeste pelo [[Oceano Atlântico]].<ref name="ProjetoOrla_Pontal_2004_localizacao" /> O mapeamento técnico vinculado ao [[Plano Diretor Municipal|Plano Diretor municipal]] representa o limite municipal e a relação com os municípios vizinhos, além do recorte costeiro voltado ao oceano e à baía.<ref name="Pontal_Mapa_Zoneamento_2015">{{citar web|url=https://www.sedest.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-03/anexo_v_mapa_de_zoneamneto_uso_e_ocupacao_do_solo.pdf|titulo=Anexo V — Mapa de Zoneamento, Uso e Ocupação do Solo (Plano Diretor de Pontal do Paraná)|acessodata=23 de janeiro de 2026|publicado=Secretaria do Desenvolvimento Sustentável (SEDEST)|formato=PDF}}</ref>
+
+=== Pontos de destaque ===
+O litoral do Paraná tem cerca de 100 km de extensão, concentrando intensa atividade turística sazonal.<ref name="ABClima_2008_Cfa" /> Em Pontal do Paraná, o recorte costeiro reúne aproximadamente 22 km de praias e 48 balneários.<ref name="ProjetoOrla_Pontal_2004_localizacao" /> A vegetação de restinga, presente em trechos da orla, é apontada em estudos como elemento importante de proteção e estabilidade costeira, com registros de recuperação natural após eventos de ressaca e indicação de sua função de proteção da infraestrutura urbana em áreas litorâneas do município (como Praia de Leste).<ref name="Restinga_Ressaca_2021">{{citar web|url=https://periodicos.unespar.edu.br/luminaria/article/download/3728/2773/0|titulo=Dinâmica de restinga de praia após evento de ressaca no município de Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Revista Luminária (UNESPAR)|ano=2021|formato=PDF}}</ref>
+
+O município também é um dos principais pontos de embarque para a [[Ilha do Mel (Paraná)|Ilha do Mel]], com travessias pelo terminal de Pontal do Sul (cerca de 30 minutos)..<ref name="IAT_PEIM_Acesso">{{citar web|url=https://www.iat.pr.gov.br/Pagina/Parque-Estadual-da-Ilha-do-Mel-PEIM|titulo=Parque Estadual da Ilha do Mel (PEIM) — Como chegar|acessodata=23 de janeiro de 2026|publicado=Instituto Água e Terra (IAT)}}</ref><ref name="SEDEST_Visitar_IlhaDoMel2">{{citar web|url=https://www.sedest.pr.gov.br/servicos/Cultura-e-Lazer/Turismo/Visitar-a-Ilha-do-Mel-6K3Wpvrm|titulo=Visitar a Ilha do Mel|acessodata=23 de janeiro de 2026|publicado=Secretaria do Desenvolvimento Sustentável (SEDEST)}}</ref> A [[Agência reguladora|Agência Reguladora]] do Paraná orienta que o embarque em Pontal do Paraná seja realizado no Terminal Aquaviário de Pontal do Sul, com uso de embarcações autorizadas e bilhetes adquiridos em pontos oficiais.<ref name="AGEPAR_Travessias_IlhaDoMel">{{citar web|url=https://www.agepar.pr.gov.br/Pagina/Travessias-maritimas-Ilha-do-Mel|titulo=Travessias marítimas — Ilha do Mel|acessodata=23 de janeiro de 2026|publicado=Agência Reguladora do Paraná (Agepar)}}</ref>
+
+No mar em frente à costa do município situa-se o [[Parque Nacional Marinho das Ilhas dos Currais]], unidade federal criada pela Lei nº 12.829/2013, com área informada de 1.359,70 hectares, sob gestão do [[Instituto Chico Mendes de Conservação da Biodiversidade|ICMBio]].<ref name="ICMBio_Currais">{{citar web|url=https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-marinho-das-ilhas-dos-currais|titulo=PARNA Marinho das Ilhas dos Currais|acessodata=23 de janeiro de 2026|publicado=Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)}}</ref>
+
+O [[Instituto Água e Terra]] (IAT) mantém monitoramento e divulgação de boletins; durante o verão, a atualização é informada como semanal.<ref name="IAT_Balneabilidade_Servico">{{citar web|url=https://www.iat.pr.gov.br/servicos/Servicos/Apoio-ao-turista/Consultar-boletim-de-balneabilidade-PlNaQANO|titulo=Consultar boletim de balneabilidade|acessodata=23 de janeiro de 2026|publicado=Instituto Água e Terra (IAT)}}</ref> Em boletim divulgado na temporada 2025–2026, noticiou-se que, em Pontal do Paraná, apenas um dos 11 pontos analisados estava classificado como impróprio na semana de referência, com destaque para diversos balneários próprios para banho no período.<ref name="AEN_Balneabilidade_2026">{{citar web|url=https://www.parana.pr.gov.br/aen/Noticia/Bandeira-verde-praias-do-Parana-tem-85-de-aguas-proprias-para-banho|titulo=Bandeira verde: praias do Paraná têm 85% de águas próprias para banho|data=19 de janeiro de 2026|acessodata=23 de janeiro de 2026|publicado=Agência Estadual de Notícias (AEN)}}</ref>
+
+=== Balneários ===
+A ocupação urbana de Pontal do Paraná é marcada por uma sequência de [[Balneário|balneários]] ao longo da orla marítima, que funcionam na prática como bairros litorâneos (com nomes próprios para cada trecho da costa). Fontes de turismo estadual e documentos técnicos ligados ao planejamento local descrevem que o município possui cerca de 23 km de praias e dezenas de balneários distribuídos ao longo dessa faixa costeira.<ref name="ViajeParana-Pontal">{{citar web|url=https://www.viajeparana.com/Pontal-do-Parana|título=Pontal do Paraná|acessodata=22 de janeiro de 2026|publicado=Viaje Paraná}}</ref><ref name="IDR-Plano-PTP">{{citar web|url=https://www.idrparana.pr.gov.br/system/files/publico/Transparecia%20Institucional/TermosCooperacaoMunicipios/2022/P/PontalDoParanaPlano.pdf|título=Plano Integrado — Município de Pontal do Paraná|acessodata=22 de janeiro de 2026|publicado=Instituto de Desenvolvimento Rural do Paraná (IDR-Paraná)|formato=PDF}}</ref>
+
+Entre os balneários mais conhecidos e citados em materiais institucionais e de divulgação turística estão Praia de Leste, Ipanema, Santa Terezinha, Shangri-lá, Atami e Pontal do Sul, além de outras localidades que se sucedem pela costa.<ref name="ViajeParana-Pontal" /><ref name="IDR-Plano-PTP" /> A conectividade entre esses balneários é fortemente associada à Rodovia das Praias (PR-412), descrita em relatório ambiental como o principal eixo viário que liga o trecho de Praia de Leste até Pontal do Sul.<ref name="IAT-RIMA">{{citar web|url=https://www.iat.pr.gov.br/sites/agua-terra/arquivos_restritos/files/documento/2020-07/obra_656_rima_pontal.pdf|título=RIMA — Faixa de Infraestrutura (Pontal do Paraná)|acessodata=22 de janeiro de 2026|publicado=Instituto Água e Terra (IAT)|formato=PDF}}</ref>
+
+Além da orla, o município inclui comunidades e áreas interiores (por exemplo, Colônia Pereira, Guaraguaçu e Ilha do Maciel), que aparecem em documentos de planejamento e caracterização territorial do poder público estadual.<ref name="IDR-Plano-PTP" /><ref name="IBGE-Pontal2">{{citar web|url=https://www.ibge.gov.br/cidades-e-estados/pr/pontal-do-parana.html|título=Pontal do Paraná (PR)|acessodata=22 de janeiro de 2026|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|Cidades e Estados}}</ref>
+{{Imagem múltipla
+| align             = center
+| direction         = horizontal
+| header            = 
+| width             = 
+| image1            = Praia de Leste no Paraná.jpg
+| width1            = 312
+| caption1          = {{Centro|Praia de Leste}}
+| alt1              = Praia do Leste
+| image2            = Pontal do Paraná - Praia.jpg
+| width2            = 300
+| caption2          = {{Centro|Praia de Pontal do Sul}}
+| alt2              = Praia do Pontal do Sul
+| footer            = 
+}}
+
+=== Clima ===
+O clima de Pontal do Paraná é influenciado pela maritimidade do Oceano Atlântico e pelo relevo próximo da [[Serra do Mar]], fatores associados à elevada umidade e à dinâmica atmosférica característica da faixa [[Litoral do Paraná|litorânea do estado]].<ref name="Vanhoni2008">{{citar periódico |url=https://revistas.ufpr.br/revistaabclima/article/download/25423/17042/92707 |título=O clima do litoral do Estado do Paraná |data=2008 |acessodata=22 de janeiro de 2026 |periódico=Revista Brasileira de Climatologia |formato=PDF |issn=1980-055X |sobrenome1=Vanhoni |nome1=Felipe |sobrenome2=Mendonça |nome2=Francisco}}</ref> De acordo com a classificação climática de [[Classificação climática de Köppen-Geiger|Köppen-Geiger]] aplicada ao Brasil, a área é predominantemente enquadrada no tipo subtropical úmido (Cfa) com verão quente e ausência de estação seca bem definida.<ref name="Alvares2013">{{citar periódico |título=Köppen's climate classification map for Brazil |periódico=Meteorologische Zeitschrift |número=6 |ano=2013 |páginas=711–728 |doi=10.1127/0941-2948/2013/0507 |sobrenome3=Sentelhas |nome3=Paulo Cesar |nome4=José Leonardo de Moraes |nome5=Gerd |volume=22 |sobrenome1=Alvares |nome1=Clayton Alcarde |sobrenome2=Stape |nome2=José Luiz |sobrenome4=Gonçalves |sobrenome5=Sparovek}}</ref>
+
+A pluviosidade é elevada ao longo do ano, com maiores totais no verão e redução relativa no inverno, padrão descrito para o litoral do Paraná.<ref name="Vanhoni2008" /> A tabela a seguir resume médias mensais de temperatura, precipitação, umidade, dias chuvosos e insolação com base nas Normais Climatológicas 1991–2020 publicadas pelo [[Instituto Nacional de Meteorologia]] (INMET), calculadas a partir de séries históricas de 30 anos.<ref name="INMET1991-2020">{{citar web|url=https://portal.inmet.gov.br/uploads/normais/NORMAISCLIMATOLOGICAS.pdf|título=Normais Climatológicas do Brasil 1991–2020|data=2022|acessodata=22 de janeiro de 2026|publicado=Instituto Nacional de Meteorologia (INMET)|local=Brasília, DF|formato=PDF}}</ref>
+{| class="wikitable" style="text-align:center; width:100%; font-size:90%; line-height:1.15;"
+|+Normais climatológicas — Pontal do Paraná (médias mensais)
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Variável
+! style="padding:.18em .35em;" |Janeiro
+! style="padding:.18em .35em;" |Fevereiro
+! style="padding:.18em .35em;" |Março
+! style="padding:.18em .35em;" |Abril
+! style="padding:.18em .35em;" |Maio
+! style="padding:.18em .35em;" |Junho
+! style="padding:.18em .35em;" |Julho
+! style="padding:.18em .35em;" |Agosto
+! style="padding:.18em .35em;" |Setembro
+! style="padding:.18em .35em;" |Outubro
+! style="padding:.18em .35em;" |Novembro
+! style="padding:.18em .35em;" |Dezembro
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Temperatura média (°C)
+| style="background:#ff3b30; padding:.16em .30em;" |25,0
+| style="background:#ff3b30; padding:.16em .30em;" |25,2
+| style="background:#ff5a3d; padding:.16em .30em;" |24,4
+| style="background:#ff8a3d; padding:.16em .30em;" |22,7
+| style="background:#ffb347; padding:.16em .30em;" |19,8
+| style="background:#ffd34d; padding:.16em .30em;" |18,2
+| style="background:#ffe066; padding:.16em .30em;" |17,2
+| style="background:#ffdb4d; padding:.16em .30em;" |17,8
+| style="background:#ffc94d; padding:.16em .30em;" |19,0
+| style="background:#ffb347; padding:.16em .30em;" |20,7
+| style="background:#ff8a3d; padding:.16em .30em;" |22,0
+| style="background:#ff5a3d; padding:.16em .30em;" |23,9
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Temperatura mínima média (°C)
+| style="background:#ffb199; padding:.16em .30em;" |22,8
+| style="background:#ffb199; padding:.16em .30em;" |23,0
+| style="background:#ffc1a8; padding:.16em .30em;" |22,3
+| style="background:#ffd2b8; padding:.16em .30em;" |20,5
+| style="background:#ffe2c7; padding:.16em .30em;" |17,5
+| style="background:#fff0d1; padding:.16em .30em;" |15,8
+| style="background:#fff6d9; padding:.16em .30em;" |14,8
+| style="background:#fff2d4; padding:.16em .30em;" |15,4
+| style="background:#ffebcc; padding:.16em .30em;" |16,9
+| style="background:#ffdcc0; padding:.16em .30em;" |18,7
+| style="background:#ffd2b8; padding:.16em .30em;" |20,0
+| style="background:#ffc1a8; padding:.16em .30em;" |21,7
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Temperatura máxima média (°C)
+| style="background:#ff2d2d; padding:.16em .30em;" |27,6
+| style="background:#ff2d2d; padding:.16em .30em;" |27,7
+| style="background:#ff3f3f; padding:.16em .30em;" |26,9
+| style="background:#ff6b3d; padding:.16em .30em;" |25,2
+| style="background:#ff9a3d; padding:.16em .30em;" |22,5
+| style="background:#ffb347; padding:.16em .30em;" |21,0
+| style="background:#ffc94d; padding:.16em .30em;" |20,1
+| style="background:#ffc04d; padding:.16em .30em;" |20,8
+| style="background:#ffb347; padding:.16em .30em;" |21,7
+| style="background:#ff9a3d; padding:.16em .30em;" |23,3
+| style="background:#ff6b3d; padding:.16em .30em;" |24,6
+| style="background:#ff3f3f; padding:.16em .30em;" |26,5
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Precipitação (mm)
+| style="background:#1f4b99; color:#fff; padding:.16em .30em;" |289
+| style="background:#2456a8; color:#fff; padding:.16em .30em;" |270
+| style="background:#2f6ac0; color:#fff; padding:.16em .30em;" |227
+| style="background:#77a8e5; padding:.16em .30em;" |134
+| style="background:#7fb0ea; padding:.16em .30em;" |127
+| style="background:#a9c9f2; padding:.16em .30em;" |96
+| style="background:#aecdf4; padding:.16em .30em;" |94
+| style="background:#c6ddf7; padding:.16em .30em;" |79
+| style="background:#6fa1e0; padding:.16em .30em;" |139
+| style="background:#699cdd; padding:.16em .30em;" |145
+| style="background:#5f90d6; padding:.16em .30em;" |161
+| style="background:#3c79c8; color:#fff; padding:.16em .30em;" |203
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Umidade relativa (%)
+| style="background:#2f6ac0; color:#fff; padding:.16em .30em;" |82
+| style="background:#2456a8; color:#fff; padding:.16em .30em;" |84
+| style="background:#2a61b4; color:#fff; padding:.16em .30em;" |83
+| style="background:#2f6ac0; color:#fff; padding:.16em .30em;" |82
+| style="background:#3a79c8; color:#fff; padding:.16em .30em;" |80
+| style="background:#2a61b4; color:#fff; padding:.16em .30em;" |83
+| style="background:#2456a8; color:#fff; padding:.16em .30em;" |84
+| style="background:#2456a8; color:#fff; padding:.16em .30em;" |84
+| style="background:#2f6ac0; color:#fff; padding:.16em .30em;" |82
+| style="background:#2f6ac0; color:#fff; padding:.16em .30em;" |82
+| style="background:#346fbd; color:#fff; padding:.16em .30em;" |81
+| style="background:#346fbd; color:#fff; padding:.16em .30em;" |81
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Dias chuvosos (dias)
+| style="background:#2f6ac0; color:#fff; padding:.16em .30em;" |18
+| style="background:#3b7dd0; color:#fff; padding:.16em .30em;" |16
+| style="background:#3573c6; color:#fff; padding:.16em .30em;" |17
+| style="background:#6fa1e0; padding:.16em .30em;" |13
+| style="background:#86b3ea; padding:.16em .30em;" |11
+| style="background:#c6ddf7; padding:.16em .30em;" |7
+| style="background:#b9d5f5; padding:.16em .30em;" |8
+| style="background:#c6ddf7; padding:.16em .30em;" |7
+| style="background:#86b3ea; padding:.16em .30em;" |11
+| style="background:#6fa1e0; padding:.16em .30em;" |13
+| style="background:#5f90d6; padding:.16em .30em;" |14
+| style="background:#4f86d2; color:#fff; padding:.16em .30em;" |15
+|-
+! style="padding:.18em .35em; text-align:left; white-space:nowrap;" |Média de horas de sol (h/dia)
+| style="background:#f6c343; padding:.16em .30em;" |6,9
+| style="background:#f2b93c; padding:.16em .30em;" |7,0
+| style="background:#f7d56a; padding:.16em .30em;" |6,2
+| style="background:#f8dc78; padding:.16em .30em;" |6,0
+| style="background:#f9e087; padding:.16em .30em;" |5,9
+| style="background:#fae79b; padding:.16em .30em;" |5,6
+| style="background:#fbeba6; padding:.16em .30em;" |5,5
+| style="background:#fcefb2; padding:.16em .30em;" |5,3
+| style="background:#fff3c4; padding:.16em .30em;" |4,7
+| style="background:#fff3c4; padding:.16em .30em;" |4,7
+| style="background:#fdf0bb; padding:.16em .30em;" |5,4
+| style="background:#f7d56a; padding:.16em .30em;" |6,2
+|-
+| colspan="13" style="text-align:left; padding:.25em .45em;" |<small>Fonte: <ref>https://pt.climate-data.org/america-do-sul/brasil/parana/pontal-do-parana-43749/</ref>.</small>
+|}
+
+== Demografia ==
+{| class="toccolours" style="float:right; clear:right; margin:0 0 1em 1em; font-size:90%; text-align:center;"
+|+'''Crescimento populacional'''
+!Censo
+!Pop.
+!%
+|-
+|2000
+|14.323
+|—
+|-
+|2010
+|20.920
+|46,1%
+|-
+|2022
+|30.425
+|45,4%
+|-
+| colspan="3" style="text-align:left;" |Fonte: Instituto Brasileiro de Geografia e Estatística (IBGE).<ref name="IBGE_Censo2010_Sinopse2.9">{{Citar web|url=https://censo2010.ibge.gov.br/sinopse/index.php?dados=29&uf=41|titulo=Censo 2010 – Sinopse: Tabela 2.9 (Paraná)|acessodata=23 de janeiro de 2026|autor=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref><ref name="IBGE_Cidades_Estados_Pontal">{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/pr/pontal-do-parana.html|titulo=Pontal do Paraná (PR)|acessodata=23 de janeiro de 2026|autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|Cidades e Estados}}</ref>
+|}
+Em 2022, a população foi de 30.425 habitantes pelo censo daquele ano, realizado pelo Instituto Brasileiro de Geografia e Estatística (IBGE).<ref name="IBGE_Cidades_Estados_Pontal" /> Em 2010, a população era de 20.920 habitantes, enquanto em 2000 era de 14.323 habitantes.<ref name="IBGE_Censo2010_PR_total_pop">{{Citar publicação|autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|titulo=Censo 2010: Total da população (Paraná)|url=https://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/resultados/tabelas_pdf/total_populacao_parana.pdf|formato=pdf|acessodata=23 de janeiro de 2026}}</ref> Segundo o censo de 2010, 10&nbsp;355 habitantes eram homens e 10.564 eram mulheres; ainda segundo o mesmo censo, 20.742 habitantes viviam na zona urbana e 177 na [[zona rural]] (urbanização de aproximadamente 99,15%).<ref name="IBGE_Censo2010_PR_total_pop" />
+
+O [[Índice de Desenvolvimento Humano Municipal]] (IDHM) de Pontal do Paraná era de 0,738 em 2010, conforme indicador divulgado em bases oficiais.<ref name="IBGE_Cidades_Estados_Pontal" /><ref name="PNUD_IDHM_2010">{{Citar web|url=https://www.br.undp.org/content/brazil/pt/home/idh0/rankings/idhm-municipios-2010.html|titulo=Ranking do IDHM dos municípios (2010)|acessodata=23 de janeiro de 2026|autor=Programa das Nações Unidas para o Desenvolvimento (PNUD)}}</ref> 
+
+Em recortes de indicadores socioeconômicos derivados do Censo 2010, Pontal do Paraná aparece com taxa de pobreza de 5,98% em 2010.<ref name="ANPUR_Microrregiao_Paranagua">{{Citar publicação|titulo=XIX Encontro Nacional da ANPUR (2022) – Indicadores socioeconômicos (Microrregião de Paranaguá, 2010)|url=https://www.sisgeenco.com.br/anais/enanpur/2022/arquivos/GT11_SEM_873_300_20211215222255.pdf|formato=pdf|acessodata=23 de janeiro de 2026}}</ref>
+
+=== Religião ===
+{{Gráfico circular|thumb=right|título=Religião em Pontal do Paraná (Censo 2022, 10+ anos)|rótulo1=Catolicismo Romano|valor1=52.61|cor1=royalblue|rótulo2=Protestantismo|valor2=28.68|cor2=firebrick|rótulo3=Espiritismo|valor3=1.54|cor3=gold|rótulo4=Umbanda e Candomblé|valor4=1.86|cor4=darkorange|rótulo5=Tradições indígenas|valor5=0.16|cor5=saddlebrown|rótulo6=Outras religiosidades|valor6=5.19|cor6=mediumseagreen|rótulo7=Sem religião|valor7=9.90|cor7=gray|rótulo8=Não sabe|valor8=0.00|cor8=lightgray|rótulo9=Sem declaração|valor9=0.06|cor9=black}}Segundo o [[Censo demográfico do Brasil de 2022|Censo Demográfico 2022]] (resultados preliminares da amostra), no recorte da população residente de 10 anos ou mais de idade, Pontal do Paraná apresentou maioria de católicos apostólicos romanos (52,61%), seguida por evangélicos (28,68%). Também foram registrados 9,90% de pessoas sem religião, 5,19% em outras religiosidades, 1,86% em umbanda e candomblé, 1,54% em espiritismo, 0,16% em tradições indígenas, além de 0,06% que não declararam religião.<ref name="IBGE_Religiao_Pontal_2022">{{citar web|url=https://cidades.ibge.gov.br/brasil/pr/pontal-do-parana/pesquisa/10105/292691|titulo=Percentual da população residente de 10 anos ou mais de idade, distribuído por religião (%)|acessodata=24 de janeiro de 2026|obra=Panorama do Censo 2022|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref> A publicação temática do [[Instituto Brasileiro de Geografia e Estatística|IBGE]] informa que o quesito de religião foi aplicado à população de 10 anos ou mais no questionário da amostra, e que os dados divulgados são estimativas preliminares produzidas a partir das áreas de ponderação preliminares do Censo 2022.<ref name="IBGE_Publicacao_Religioes_2022">{{citar web|url=https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/3f1708b5d315aca50d5a7d8764469c45.pdf|titulo=Censo Demográfico 2022: Religiões: Resultados preliminares da amostra|data=2025|acessodata=24 de janeiro de 2026|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)|formato=pdf}}</ref>
+
+No calendário religioso municipal, [[São José]] é reconhecido como padroeiro de Pontal do Paraná e o dia 19 de março é feriado municipal, com celebrações religiosas e programação associada ao Santuário São José, localizado no balneário de Praia de Leste.<ref name="PMPP_Feriado_SaoJose">{{citar web|url=https://www.pontaldoparana.pr.gov.br/index.php?id=1469543&sessao=b054603368vfb0|titulo=Feriado no dia 19 de Março, Dia de São José, Santo Padroeiro de Pontal do Paraná|acessodata=24 de janeiro de 2026|publicado=Prefeitura Municipal de Pontal do Paraná}}</ref> No âmbito eclesiástico, a [[Diocese de Paranaguá]] lista a Paróquia Santuário São José e São Sebastião (Praia de Leste), com comunidades e capelas atendidas no território municipal.<ref name="Diocese_SJ_SS_Pontal">{{citar web|url=https://diocesedeparanagua.org.br/17-paroquia-sao-jose-e-sao-sebastiao/|titulo=Paróquia Santuário São José e São Sebastião|acessodata=24 de janeiro de 2026|publicado=Diocese de Paranaguá}}</ref>
+
+== Economia ==
+A economia de Pontal do Paraná é marcada pela predominância do setor de serviços e pelo caráter sazonal típico dos balneários do litoral paranaense, com forte influência do turismo de verão na geração de renda e emprego em atividades como hospedagem, alimentação, comércio varejista e serviços ligados a imóveis de temporada.<ref name="AEN_verao_comercio_2026">{{citar web|url=https://www.comunicacao.pr.gov.br/noticias/aen/9d21a119-1632-4435-b9b7-103b5370c6b1|titulo=Pontal do Paraná e Guaratuba têm comércios aquecidos e ocupação maior no começo do verão|data=7 de janeiro de 2026|acessodata=23 de janeiro de 2026|publicado=Agência Estadual de Notícias (AEN)}}</ref> Estudos sobre a urbanização local associam a dinâmica turística à expansão de segundas residências e ao setor imobiliário, que influenciam a ocupação urbana e a economia do município.<ref name="Corbari_2023_turismo_imobiliario">{{citar web|url=https://dialnet.unirioja.es/descarga/articulo/10319642.pdf|titulo=Um olhar sob a produção socioespacial de Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Dialnet (PDF do artigo)|ano=2023|formato=PDF}}</ref>
+
+Indicadores econômicos oficiais do [[Instituto Brasileiro de Geografia e Estatística|IBGE]] apontam um [[PIB per capita]] de R$ 26.613,26 (2023).<ref name="IBGE_CidadesEstados_Pontal">{{citar web|url=https://www.ibge.gov.br/cidades-e-estados/pr/pontal-do-parana.html|titulo=Pontal do Paraná (PR)|acessodata=23 de janeiro de 2026|obra=Cidades e Estados|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref> Na mesma fonte, constam dados de finanças públicas recentes, como receitas orçamentárias brutas realizadas (2024) e despesas orçamentárias brutas empenhadas (2024), refletindo o peso da administração pública e de serviços municipais na circulação econômica local.<ref name="IBGE_CidadesEstados_Pontal" />
+
+Apesar do predomínio do terciário, o município também abriga atividades industriais e de engenharia ligadas ao setor offshore. Em Pontal do Paraná (região de Pontal do Sul), funciona a Unidade Offshore da Techint, inaugurada na década de 1980, voltada à construção, montagem e comissionamento de estruturas e módulos para a indústria offshore; segundo a empresa, a unidade recebeu investimentos relevantes e ampliação de capacidade ao longo do tempo, com foco em projetos de FPSOs.<ref name="Techint_UOT_2024">{{citar web|url=https://www.techint.com/pt/noticias/2024/unidade-offshore-techint-e-apresentada-em-evento-do-instituto-brasileiro-de-petroleo-e-gas|titulo=Unidade Offshore Techint é apresentada em evento do Instituto Brasileiro de Petróleo e Gás|data=6 de maio de 2024|acessodata=23 de janeiro de 2026|publicado=Techint Engenharia e Construção}}</ref> Em 2025, a imprensa especializada registrou planos de retomada/modernização das operações da unidade, motivados por demanda do mercado ligado à Petrobras e a novos projetos de FPSOs.<ref name="Eixos_Techint_2025">{{citar web|url=https://eixos.com.br/petroleo-e-gas/mercado-offshore/techint-prepara-retomada-de-unidade-offshore-de-olho-em-demanda-da-petrobras/|titulo=Techint prepara retomada de unidade offshore de olho em demanda da Petrobras|data=2 de maio de 2025|acessodata=23 de janeiro de 2026|publicado=eixos}}</ref>
+Outras atividades tradicionais e complementares incluem a pesca artesanal e a aquicultura/maricultura. O [[Governo do Paraná]] já registrou ações de apoio à Colônia de Pescadores local, com aquisição de equipamentos e estímulo à melhor comercialização do pescado, apontando a importância social e econômica do segmento no município.<ref name="AEN_pesca_2019">{{citar web|url=https://www.parana.pr.gov.br/aen/Noticia/Governo-entrega-material-para-pescadores-de-Pontal-do-Parana|titulo=Governo entrega material para pescadores de Pontal do Paraná|data=22 de março de 2019|acessodata=23 de janeiro de 2026|publicado=Agência Estadual de Notícias (AEN)}}</ref> No campo da maricultura, o IDR-Paraná descreve atuação técnica voltada à implantação e orientação de projetos comunitários, com destaque para a criação de ostras nativas e ações de manejo e comercialização.<ref name="IDR_Maricultura">{{citar web|url=https://www.idrparana.pr.gov.br/Pagina/Pesca-e-Maricultura|titulo=Pesca e Maricultura|acessodata=23 de janeiro de 2026|publicado=Instituto de Desenvolvimento Rural do Paraná (IDR-Paraná)}}</ref> Pesquisas e extensão universitária também têm presença no município, com o Centro de Estudos do Mar da UFPR (campus em Pontal do Paraná) e projetos associados a temas costeiros e a cadeias produtivas como a de moluscos cultivados no litoral.<ref name="UFPR_CEM_Campus">{{citar web|url=https://www.cem.ufpr.br/|titulo=Centro de Estudos do Mar (CEM/UFPR) — Campus Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Universidade Federal do Paraná (UFPR)}}</ref><ref name="UFPR_ostras_2014">{{citar web|url=https://ufpr.br/pesquisadores-da-ufpr-monitoram-qualidade-de-ostras-cultivadas-no-litoral-do-parana/|titulo=Pesquisadores da UFPR monitoram qualidade de ostras cultivadas no litoral do Paraná|data=29 de janeiro de 2014|acessodata=23 de janeiro de 2026|publicado=Universidade Federal do Paraná (UFPR)}}</ref>
+
+No âmbito logístico e de investimentos, a economia local é impactada por debates e projetos de infraestrutura portuária e de acesso. Empreendimentos de terminal portuário na área de Pontal do Paraná passaram por etapas de licenciamento ambiental federal e judicialização; em 2015, o TRF4 noticiou decisão mantendo licenças ambientais para a construção de porto no município.<ref name="TRF4_licencas_2015">{{citar web|url=https://www.trf4.jus.br/trf4/controlador.php?acao=noticia_visualizar&id_noticia=18033|titulo=TRF4 mantém licença para a construção de porto em Pontal do Paraná|data=10 de novembro de 2015|acessodata=23 de janeiro de 2026|publicado=Tribunal Regional Federal da 4ª Região (TRF4)}}</ref> Em 2024, o MPPR e o MPF divulgaram recomendação administrativa buscando a anulação de licença ambiental concedida a terminal de contêineres no litoral, citando irregularidades no procedimento.<ref name="MPPR_MPF_licenca_2024">{{citar web|url=https://mppr.mp.br/Noticia/Recomendacao-administrativa-conjunta-do-MPPR-e-do-MPF-busca-anulacao-de-licenca-ambiental|titulo=Recomendação administrativa conjunta do MPPR e do MPF busca a anulação de licença ambiental irregular concedida a terminal de contêineres|data=22 de março de 2024|acessodata=23 de janeiro de 2026|publicado=Ministério Público do Paraná (MPPR)}}</ref>
+
+Paralelamente, projetos de infraestrutura terrestre associados à chamada “Zona Especial Portuária” (ZEP) e à ligação com a malha rodoviária estadual foram objeto de estudos ambientais; o RIMA da “Faixa de Infraestrutura” descreve um corredor com aproximadamente 19–20 km, conectando a [[PR-407]] à área portuária/industrial prevista em Pontal do Sul.<ref name="RIMA_FaixaInfra_Pontal">{{citar web|url=https://www.iat.pr.gov.br/sites/agua-terra/arquivos_restritos/files/documento/2020-07/obra_656_rima_pontal.pdf|titulo=RIMA — Faixa de Infraestrutura Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Instituto Água e Terra (IAT)|formato=PDF}}</ref> Em 2025, a Agência Estadual de Notícias informou decisão do TRF4 permitindo a continuidade do licenciamento estadual da Faixa de Infraestrutura, etapa considerada necessária para avançar nas fases seguintes do processo.<ref name="AEN_faixa_2025">{{citar web|url=https://www.parana.pr.gov.br/aen/Noticia/Estado-ganha-decisao-no-TRF4-e-continuara-licenciamento-da-Faixa-de-Infraestrutura|titulo=Estado ganha decisão no TRF4 e continuará licenciamento da Faixa de Infraestrutura|data=16 de julho de 2025|acessodata=23 de janeiro de 2026|publicado=Agência Estadual de Notícias (AEN)}}</ref>
+
+=== Eventos ===
+Na chamada baixa temporada, a dinâmica econômica local tende a depender mais de atividades tradicionais (como a pesca artesanal) e do calendário de eventos, que ajuda a manter o fluxo de visitantes ao longo do ano.<ref name="AEN_Pesca_2019">{{citar web|url=https://www.parana.pr.gov.br/aen/Noticia/Governo-entrega-material-para-pescadores-de-Pontal-do-Parana|titulo=Governo entrega material para pescadores de Pontal do Paraná|data=22 de março de 2019|acessodata=23 de janeiro de 2026|publicado=Agência Estadual de Notícias (AEN)}}</ref><ref name="SEDEST_PDDI_Caderno2A_Eventos">{{citar web|url=https://www.sedest.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-03/caderno2_a.pdf|titulo=Plano Diretor de Desenvolvimento Integrado de Pontal do Paraná — Caderno 2A|acessodata=23 de janeiro de 2026|publicado=Secretaria do Desenvolvimento Sustentável e do Turismo do Paraná (SEDEST)|formato=pdf}}</ref> No planejamento urbano do município, o calendário municipal de eventos é descrito como instrumento de apoio e divulgação de comemorações religiosas, civis, esportivas e turísticas, voltado tanto à população residente quanto à população flutuante (finais de semana, feriados e temporada).<ref name="SEDEST_PDDI_Caderno2A_Eventos" />
+
+Entre os eventos recorrentes de maior destaque encontram-se:
+
+* '''Festa de São José (padroeiro do município)''' — realizada no balneário de Praia de Leste, tendo como referência o Santuário São José, reúne programação religiosa (missas e novenas) e atividades sociais e culturais, com praça de alimentação/quermesse e apresentações musicais.<ref name="BemParana_SaoJose_2025">{{citar web|url=https://www.bemparana.com.br/noticias/parana/litoraldoparana/25-a-festa-de-sao-jose-acontece-em-pontal-do-parana/|titulo=25.ª Festa de São José acontece em Pontal do Paraná|data=6 de março de 2025|acessodata=23 de janeiro de 2026|publicado=Bem Paraná}}</ref>
+
+* '''Camacho (Festa do Camarão e do Chope)''' — evento gastronômico baseado na culinária de frutos do mar, tendo o camarão como elemento simbólico, associado a atrações musicais e atividades culturais e de lazer.<ref name="ViajeParana_FestasFrutosMar">{{citar web|url=https://www.viajeparana.com/Pontal-do-Parana|titulo=Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Viaje Paraná}}</ref> Documentos de diagnóstico do Plano Diretor registram a Festa do Camacho como parte do calendário municipal, com realização indicada para o mês de setembro.<ref name="SEDEST_PDDI_Caderno2A_Eventos" />
+
+* '''Festival do Caranguejo''' — festival gastronômico associado à tradição caiçara e ao consumo de pratos à base de caranguejo, com participação de restaurantes distribuídos por diferentes balneários do município.<ref name="ViajeParana_FestasFrutosMar" /> Na 22.ª edição (2025), o evento reuniu 25 restaurantes e foi realizado de 5 a 28 de dezembro, integrando a programação do verão no litoral paranaense.<ref name="RPC_Caranguejo_2025">{{citar web|url=https://redeglobo.globo.com/rpc/diversao-e-arte/Curitiba/noticia/festival-do-caranguejo-chega-a-22a-edicao-e-movimenta-o-verao-em-pontal-do-parana.ghtml|titulo=Festival do Caranguejo chega à 22ª edição e movimenta o verão em Pontal do Paraná|data=18 de dezembro de 2025|acessodata=23 de janeiro de 2026|publicado=RPC}}</ref> As matérias sobre a edição destacaram a oferta de cardápios especiais (dos pratos tradicionais a releituras contemporâneas) e a realização do evento pela Prefeitura, por meio da Secretaria Municipal de Turismo e Desenvolvimento Econômico, em parceria com entidades do trade turístico.<ref name="RPC_Caranguejo_2025" /><ref name="FestivalCaranguejo_Site">{{citar web|url=https://festivalcaranguejopontalpr.com.br/|titulo=Festival do Caranguejo — Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Festival do Caranguejo (site oficial)}}</ref>
+
+Além desses, existem outras comemorações e eventos ao longo do ano, como Ano Novo, Carnaval, Paixão de Cristo, Festa do Turismo e Frutos do Mar, Dia das Crianças, Aniversário do Município e Natal.<ref name="SEDEST_PDDI_Caderno2A_Eventos" />
+
+
+
+== Turismo ==
+
+[[Ficheiro:Pontal do Parana, Praia de Leste.jpg|thumb|300px|Praia de Leste, um dos principais balneários de Pontal do Paraná.]]
+
+O turismo é a principal atividade econômica sazonal de Pontal do Paraná. O município recebe centenas de milhares de visitantes durante a temporada de verão, concentrados nos mais de 40 balneários distribuídos ao longo dos 23 quilômetros de orla. A diversidade de praias — de extensos arenais abertos a enseadas abrigadas — atende desde famílias com crianças a praticantes de surf, pesca esportiva e esportes aquáticos.
+
+O [[Terminal Aquaviário de Pontal do Sul]] é o principal ponto de embarque para a [[Ilha do Mel]], a [[Ilha das Peças]] e outras destinações do [[Complexo Estuarino de Paranaguá]]. As travessias regulares de barco partem de Pontal do Sul durante todo o ano, com intensificação na temporada de dezembro a março. A [[Ilha do Mel]], com suas praias preservadas e acesso proibido a veículos motorizados, é um dos destinos naturais mais procurados do estado do Paraná.
+
+[[Ficheiro:Pontal do Paraná.jpg|thumb|300px|Vista da [[Ilha do Mel]] a partir da praia de Pontal do Sul.]]
+
+O balneário de [[Atami (Pontal do Paraná)|Atami]] destaca-se pelo turismo imobiliário e pela elevada concentração de apartamentos de temporada, chalés e flats voltados ao aluguel sazonal. O mercado de aluguel por temporada movimenta a economia local entre dezembro e março, com alta demanda por imóveis próximos ao mar. Em 2024–2025, o preço médio de imóveis residenciais em Pontal do Paraná variava entre R== Cultura ==nbsp;2.800 e R== Cultura ==nbsp;5.500/m², dependendo do balneário e da distância ao mar.<ref name="biavati-mercado">{{citar web |url=https://www.biavati.com.br/mercado-imobiliario-matinhos |titulo=Mercado Imobiliário no Litoral do Paraná — Preços e Dados 2025–2026 |autor=Biavati Imóveis |data=2026-03-01 |acessodata=3 de maio de 2026}}</ref>
+
+O balneário de [[Shangri-lá (Pontal do Paraná)|Shangri-lá]] é conhecido pelo seu calçadão e pela grande concentração de quiosques e restaurantes de frutos do mar. Já [[Pontal do Sul]] combina o perfil pesqueiro e caiçara com o acesso às ilhas, atraindo turistas que buscam paisagens menos urbanizadas.
+
+[[Ficheiro:Palmeiras Pontal do Paraná.jpg|thumb|200px|Vegetação nativa de Pontal do Paraná, com palmeiras ao longo do litoral.]]
+
+=== Ecoturismo ===
+
+A variedade de ecossistemas do município — praias abertas, restingas, manguezais e remanescentes de [[Mata Atlântica]] — sustenta uma oferta crescente de ecoturismo. A [[Estação Ecológica de Guaraguaçu]], uma das últimas reservas de floresta tropical atlântica do sul do Brasil, abriga espécies ameaçadas da [[fauna]] e [[flora]] nativas e integra roteiros de observação de aves e trilhas guiadas.
+
+O [[Parque Nacional Marinho das Ilhas dos Currais]], a poucos quilômetros da costa de Pontal do Sul, é destino para [[mergulho]] e observação de vida marinha. O arquipélago recebe colônias de pinguins-de-Magalhães (''Spheniscus magellanicus'') durante o inverno austral, tornando-se um dos únicos pontos da costa paranaense onde é possível observar a espécie in loco. O complexo estuarino de Paranaguá, o maior estuário de planície costeira do hemisfério sul em extensão, oferece passeios de barco, observação de botos-cinza e pesca artesanal guiada.
+
+== Cultura ==
+=== Culinária ===
+A culinária local possui influência da cultura [[caiçara]], com ingredientes como pescados de água salgada e frutos do mar. O prato considerado típico do município de Pontal do Paraná é a ''cambira'', preparação que remete ao passado dos pioneiros do litoral paranaense. A iguaria é uma refeição tipo prato principal, feita à base de filé de peixe [[cação]] seco e defumado, com banana e temperos, e para acompanhar, serve-se arroz, pirão e saladas.<ref name=viajeparana/>
+
+== Educação ==
+A educação básica no município é ofertada por redes municipal e estadual, além de estabelecimentos particulares. Segundo informações divulgadas pela imprensa local com base na Secretaria Municipal de Educação, a rede municipal de Pontal do Paraná inclui 13 Centros Municipais de Educação Infantil (CMEIs), 8 escolas de [[Ensino fundamental no Brasil|Ensino Fundamental]] e uma estrutura voltada à educação especial (com ações associadas a [[equoterapia]]), com expansão de vagas e ampliação do atendimento em tempo integral ao longo dos últimos anos.<ref name="JBLitoral_RedeMunicipal_2023">{{citar web|url=https://jblitoral.com.br/cidades/pontal-do-parana-investe-em-ampliacao-de-cmeis-e-quantidade-de-vagas-em-turno-integral-sera-maior-em-2024-diz-prefeitura/|titulo=Pontal do Paraná investe em ampliação de CMEIs e quantidade de vagas em turno integral será maior em 2024, diz prefeitura|data=11 de outubro de 2023|acessodata=23 de janeiro de 2026|publicado=JB Litoral}}</ref>
+
+Dados do sistema estadual de consulta de escolas indicam que, na rede pública estadual, o município conta com 6 escolas estaduais, somando 158 turmas e 3 778 matrículas.<ref name="SEED_ConsultaEscolas_Pontal">{{citar web|url=https://www.consultaescolas.pr.gov.br/consultaescolas/pages/templates/initial2.xhtml?codigoMunicipio=2014|titulo=Município de Pontal do Paraná — Consulta Escolas|acessodata=23 de janeiro de 2026|publicado=Secretaria de Estado da Educação do Paraná (SEED-PR)}}</ref> A mesma base registra, ainda, atendimento conveniado em educação especial (1 escola, 20 turmas e 140 matrículas).<ref name="SEED_ConsultaEscolas_Pontal" />
+
+O município abriga o [[Centro de Estudos do Mar|Campus Pontal do Paraná – Centro de Estudos do Mar]] (CPP-CEM) da [[Universidade Federal do Paraná|Universidade Federal do Paraná (UFPR)]], considerado um campus avançado voltado ao ensino, pesquisa e extensão em áreas ligadas às Ciências do Mar e engenharias no ambiente costeiro.<ref name="UFPR_CursosPontal">{{citar web|url=https://ufpr.br/cursos-em-pontal-do-parana/|titulo=Cursos em Pontal do Paraná|acessodata=23 de janeiro de 2026|publicado=Universidade Federal do Paraná (UFPR)}}</ref> De acordo com a UFPR, o CPP-CEM oferta cinco cursos de graduação (Licenciatura em Ciências Exatas, Engenharia Civil, Engenharia Ambiental e Sanitária, Engenharia de Aquicultura e Oceanografia), além do Programa de Pós-Graduação em Sistemas Costeiros e Oceânicos (PGSISCO) e um curso de especialização em educação ambiental marinho-costeira.<ref name="UFPR_40anos_CPP-CEM_2022">{{citar web|url=https://ufpr.br/campus-de-pontal-do-parana-completa-40-anos-com-5-graduacoes-e-650-alunos/|titulo=Campus de Pontal do Paraná completa 40 anos com cinco graduações e 650 alunos|data=18 de março de 2022|acessodata=23 de janeiro de 2026|publicado=Universidade Federal do Paraná (UFPR)}}</ref>
+
+A estrutura do campus inclui atividades acadêmicas em Pontal do Sul e em uma segunda unidade no balneário de Mirassol (próximo a Praia de Leste), inaugurada em 2014, com salas e laboratórios utilizados por cursos do CPP-CEM.<ref name="UFPR_CEM_35anos_2017">{{citar web|url=https://ufpr.br/centro-de-estudos-do-mar-da-ufpr-comemora-35-anos/|titulo=Centro de Estudos do Mar da UFPR comemora 35 anos|data=17 de março de 2017|acessodata=23 de janeiro de 2026|publicado=Universidade Federal do Paraná (UFPR)}}</ref> A UFPR também descreve a sede em Pontal do Sul como composta por prédio com laboratórios, biblioteca, auditório e salas, e menciona o uso de embarcações em projetos de ensino, pesquisa e extensão.<ref name="UFPR_40anos_CPP-CEM_2022" />
+
+==Transporte==
+[[Ficheiro:Mel2.jpg|esquerda|miniaturadaimagem|Cais de Pontal do Sul (Pontal do Paraná).]]
+O sistema de transportes de Pontal do Paraná é fortemente condicionado pela sua configuração linear na faixa costeira e pela função turística do município. O principal eixo viário litorâneo é a [[PR-412]] (Rodovia das Praias), que acompanha a sequência de balneários e concentra a maior parte dos deslocamentos internos, além de conectar o município a Matinhos e ao entroncamento com a PR-407 na localidade de Praia de Leste.<ref name="DER-PR412">{{citar web|url=https://www.der.pr.gov.br/Noticia/Duplicacao-em-concreto-da-PR-412-entre-Matinhos-e-Pontal-do-Parana-chega-653|título=Duplicação em concreto da PR-412 entre Matinhos e Pontal do Paraná chega a 6,53%|data=17 de dezembro de 2025|acessodata=22 de janeiro de 2026|publicado=Departamento de Estradas de Rodagem do Paraná (DER/PR)}}</ref> A ligação rodoviária do município com o corredor regional de acesso ao litoral (BR-277) é realizada principalmente pela [[PR-407]], descrita pelo governo estadual como o principal acesso para Pontal do Paraná.<ref name="AEN-PR407">{{citar web|url=https://www.parana.pr.gov.br/aen/Noticia/Lote-2-preve-duplicacao-de-13-km-da-PR-407-principal-acesso-para-Pontal-do-Parana-no|título=Lote 2 prevê duplicação de 13 km da PR-407, principal acesso para Pontal do Paraná, no Litoral|data=21 de setembro de 2023|acessodata=22 de janeiro de 2026|publicado=Agência Estadual de Notícias (AEN)}}</ref>
+
+Além do transporte rodoviário, o município abriga o Terminal Aquaviário de Pontal do Sul, utilizado nas travessias para a [[Ilha do Mel (Paraná)|Ilha do Mel]]; o serviço é operado por embarcações autorizadas e os horários podem sofrer alterações ou interrupções em função das condições de navegação.<ref name="TurPR-TerminalIlha">{{citar web|url=https://www.turismo.pr.gov.br/Endereco/Terminal-de-Embarque-para-Ilha-do-Mel-Pontal-do-Sul|título=Terminal de Embarque para Ilha do Mel — Pontal do Sul|acessodata=22 de janeiro de 2026|publicado=Secretaria do Turismo do Paraná}}</ref><ref name="AGEPAR-IlhaTravessia">{{citar web|url=https://www.agepar.pr.gov.br/Pagina/Travessias-maritimas-Ilha-do-Mel|título=Travessias marítimas — Ilha do Mel|acessodata=22 de janeiro de 2026|publicado=Agência Reguladora do Paraná (AGEPAR)}}</ref><ref name="SEDEST-VisitarIlha">{{citar web|url=https://www.sedest.pr.gov.br/servicos/Cultura-e-Lazer/Turismo/Visitar-a-Ilha-do-Mel-6K3Wpvrm|título=Visitar a Ilha do Mel|acessodata=22 de janeiro de 2026|publicado=Secretaria de Estado do Desenvolvimento Sustentável (SEDEST)}}</ref>{{referências}}
+
+==Ligações externas==
+* [http://www.pontaldoparana.pr.gov.br/ Página da prefeitura]
+* [http://www.cem.ufpr.br/ Centro de Estudos do Mar - UFPR]
+
+{{Esboço-municípiosbr/Paraná}}
+{{Portal3|Paraná|Brasil}}
+{{Controle de autoridade}}
+
+{{DEFAULTSORT:Pontal Parana}}
+[[Categoria:Pontal do Paraná| ]]
+[[Categoria:Fundações no Paraná em 1995]]

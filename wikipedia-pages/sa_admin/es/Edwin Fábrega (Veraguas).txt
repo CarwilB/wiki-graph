@@ -1,0 +1,41 @@
+{{Ficha de entidad subnacional
+|nombre              = Edwin Fábrega
+|nombre_oficial      = Edwin Fábrega
+|unidad              = [[Anexo:Corregimientos de Panamá|Corregimiento]]
+|tipo_superior_1     = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+|superior_1          = [[Provincia de Veraguas|Veraguas]]
+|tipo_superior_2     = [[Anexo:Distritos de Panamá|Distrito]]
+|superior_2          = [[Distrito de Santiago (Panamá)|Santiago]]
+|bandera             = no
+|escudo              = no
+|imagen              = 
+|pie_de_imagen       = 
+|mapa_loc            = Panamá
+|mapa_loc_1          = Provincia de Veraguas
+|mapa = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=13}}
+|superficie          = 35.4
+|superficie_post     = <ref name="censo"/>
+|elevación_media     = 
+|fundación           = 
+|población           = 3434
+|población_año       = 2010
+|gentilicio          = 
+|dirigentes_títulos  = Representante
+|dirigentes_nombres  = Eric Ramos
+|página web          = 
+}}
+
+'''Edwin Fábrega''' es un [[corregimiento]] del [[Distrito de Santiago (Panamá)|distrito de Santiago]] en la [[provincia de Veraguas]], República de [[Panamá]]. La localidad tiene 3.434 habitantes (2010).<ref name="censo">{{cita web |url=http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=27 de octubre de 2014 |obra=Censos de 1990 a 2010 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+
+Su nombre proviene del político, ingeniero y sexto rector de la Universidad de Panamá, Ing. Edwin Fábrega Velarde (1929-1983).<ref>{{cita publicación|título=Origen del nombre de los corregimientos|url=http://www.tribunal-electoral.gob.pa/html/fileadmin/user_upload/publicaciones/origenes_de_los_correg.pdf|editorial=Imprenta del Tribunal Electoral de Panamá|año=2014|fechaacceso=15 de mayo de 2017|página=209|urlarchivo=https://web.archive.org/web/20160804084608/http://www.tribunal-electoral.gob.pa/html/fileadmin/user_upload/publicaciones/origenes_de_los_correg.pdf|fechaarchivo=4 de agosto de 2016}}</ref>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Corregimientos de la provincia de Veraguas]]

@@ -1,0 +1,133 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = San Andrés
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|settlement_type        = Municipality
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          =  
+|imagesize              =
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|dot_mapsize            =
+|dot_map_caption        =
+|dot_x =  |dot_y =
+|pushpin_map            = Guatemala<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location in Guatemala
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Guatemala.svg|25px]] [[Guatemala]]
+|subdivision_type1      = [[Departments of Guatemala|Department]]
+|subdivision_name1      = [[Image:Flag of El Petén Department.svg|25px]] [[Petén Department|El Petén]]
+|subdivision_type2      = [[Municipalities of Guatemala|Municipality]]
+|subdivision_name2      = San Andrés
+|subdivision_type3      = 
+|subdivision_name3      = 
+|subdivision_type4      = 
+|subdivision_name4      =
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        = [[Municipal]]
+|leader_title           = Mayor
+|leader_name            = Milton Méndez
+|leader_party           = [[Patriotic Party (Guatemala)|PP]]
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|leader_title2          =
+|leader_name2           =
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                = <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           = 8874 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               = Census 2002
+|population_footnotes           = 
+|population_note                = 
+|population_total               = 20295
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_urban               = 5740
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =[[Q'eqchi' people|Q’eqchi]], [[ladino people|Ladino]]
+|population_blank2_title        =Religions
+|population_blank2              =[[Roman Catholicism]], [[Evangelicalism]], [[Maya religion|Maya]]
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|16|58|03|N|89|54|37|W|region:GT|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 150
+|elevation_max_m        = 
+|elevation_min_m        = 
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             = [[Köppen climate classification|Climate]]
+|blank_info             = [[Tropical monsoon climate|Am]]
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}}
+'''San Andrés''' is a [[Municipalities of Guatemala|municipality]] in the department of [[El Petén]] in [[Guatemala]]. The municipality is formed by the town of San Andrés, located on the north-western shore of [[Lake Petén Itzá]], and 55 rural communities, with a total population of 20,295 people (census 2002).<ref>{{cite web |author= |title=Municipalidad de San Andrés, Petén - Diagnóstico Institucional |url=http://www.marn.gob.gt/documentos/AMPI/B/B7/B7.2/B7.2.2.doc. |publisher=marn.gob.gt |location=Guatemala |year=2007 |accessdate=2009-07-26 |format=doc |language=Spanish }}{{Dead link|date=August 2025 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+The municipality was created in 1962 and has a territory 8,874&nbsp;km<sup>2</sup>, equivalent to 25% of the department of El Petén. In the 1990s, more than 93% (8,288&nbsp;km<sup>2</sup>) of the municipality's territory was declared protected nature reserve by the central government.<ref name="Morales">{{cite web |author=Morales Santizo, Karla Lorena |title=Municipio de San Andrés, Departamento de Petén - "Administración del Riesgo" |url=http://biblioteca.usac.edu.gt/EPS/03/03_0665_v16.pdf |publisher=USAC |location=Guatemala |year=2008 |accessdate=2009-07-26 |format=pdf |language=Spanish}}</ref>
+
+==References==
+{{reflist}}
+
+{{Petén Department}}
+
+{{DEFAULTSORT:San Andres, El Peten}}
+[[Category:Municipalities of the Petén Department]]
+{{Guatemala-geo-stub}}

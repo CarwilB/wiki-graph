@@ -1,0 +1,93 @@
+{{Ficha de entidad subnacional
+| nombre = Valle Grande
+| nombre completo = Valle Grande
+| unidad = [[Departamentos y partidos de la Argentina|Departamento]]
+| imagen = San Francisco, Jujuy.jpg
+| tipo_superior_1 = [[Provincias de la Argentina|Provincia]]
+| superior_1 = {{bandera2|Provincia de Jujuy}}
+| mapa = Valle Grande (Provincia de Jujuy - Argentina).svg
+| tamaño_mapa = 280px
+| mapa1 = <mapframe frameless align=center width="280" height="300" zoom="9" latitude="-23.478670" longitude="-64.989726"> 
+[{"type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q1063527",
+    "properties": {
+      "stroke": "#0047AB",
+      "stroke-width": 4,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}},
+{ "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q44764",
+    "properties": {
+      "stroke": "#000000", 
+      "stroke-width": 5,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}}]
+</mapframe>
+| pie_mapa1 = Vista del '''Departamento de Valle Grande''' <br/>dentro de la '''[[Provincia de Jujuy]]'''. <br/>'''(Pulse para ver mapa interactivo)'''
+| capital = [[Valle Grande]]
+| tipo_div_1 = Comisiones municipales
+| div_1 = [[Caspalá]]<br />[[Pampichuela]]<br />[[San Francisco (Jujuy)|San Francisco]]<br />[[Santa Ana (Valle Grande)|Santa Ana]]<br />[[Valle Grande]]
+| superficie = 962
+| superficie_puesto = 13
+| superficie_post = 
+| población = 2509
+| población_puesto = [[Anexo:Departamentos de Jujuy por población|16]]
+| población_año = 2022
+| población_urb = 
+| población_post = 
+| densidad = 2.1
+| densidad_post = 
+| ciudad_grande = [[Valle Grande]]
+| capital_población = 528
+| capital_coor = 23_28_33_S_64_56_52_W 23°28′33″S, 64°56′52″O
+| página_web = 
+| fundación_hitos = Creación
+| fundación_fechas = 
+}}
+
+'''Valle Grande''' es un departamento en la [[provincia de Jujuy]] en el [[norte]] de [[Argentina]]. Entre 1924 y 1938 el departamento se llamó Gobernador Tello, en homenaje al exgobernador [[Eugenio Tello]].
+
+== Superficie y límites ==
+El departamento tiene una superficie de {{formatnum:962}} km², lo que al año 2010 determina una densidad de 2.5 hab/km².<ref>{{cita web |url=http://www.dipec.jujuy.gov.ar/dc_poblacion/2.2.5.pdf |título=Población. Superficie y Densidad Poblacional, según Departamentos. Años 1991-2001-2010 |obra=Dirección Provincial de Estadística y Censos - Provincia de Jujuy |fecha= |fechaacceso=10 de diciembre de 2016 |urlarchivo=https://web.archive.org/web/20160828122414/http://dipec.jujuy.gov.ar/dc_poblacion/2.2.5.pdf |fechaarchivo=28 de agosto de 2016 }}</ref><br />
+Limita al noreste con la provincia de [[provincia de Salta|Salta]], al noroeste con el departamento [[departamento Humahuaca|Humahuaca]], al suroeste con el departamento [[departamento Tilcara|Tilcara]] y al sureste con el departamento [[departamento Ledesma|Ledesma]].<ref>{{cita web |url=http://www.dipec.jujuy.gov.ar/mapasgeoreferenciados.html |título=Provincia de Jujuy por departamento. Mapa político. |obra=Dirección Provincial de Estadística y Censos - Provincia de Jujuy |fecha= |fechaacceso=17 de diciembre de 2016 |fechaarchivo=14 de noviembre de 2016 |urlarchivo=https://web.archive.org/web/20161114215039/http://www.dipec.jujuy.gov.ar/mapasgeoreferenciados.html |deadurl=yes }}</ref><br />
+
+== Población ==
+Contó con {{indec|2451|2010}}, lo que representó un incremento del 2.72 % frente a los {{indec|2386|2001}} del censo anterior.<ref>{{cita web |url=http://www.dipec.jujuy.gov.ar/dc_poblacion/2.1.1.pdf |título=Población por censos según departamentos. Censos 1869 – 2010. |obra=Dirección Provincial de Estadística y Censos - Provincia de Jujuy |fecha= |fechaacceso=16 de diciembre de 2016 |urlarchivo=https://web.archive.org/web/20161220160228/http://www.dipec.jujuy.gov.ar/dc_poblacion/2.1.1.pdf |fechaarchivo=20 de diciembre de 2016 }}</ref>
+
+Para el censo 2022 el departamento registró 2509 habitantes. Esto representó un aumento en la cantidad de personas del 2,4%, mucho mayor que el crecimiento poblacional provincial.<ref>{{cita web|url=https://censo.gob.ar/index.php/datos_definitivos_jujuy/|título=Resultados del Censo 2022 definitivos:
+Cuadros población por departamento y densidad. Provincia de Jujuy. Población total por sexo, índice de masculinidad y densidad de población según división político-administrativa. Año 2022|fecha=2022|publicación=INDEC - Argentina}}</ref>Estos datos le valieron ser el tercer departamento que menos creció y el tercero más despoblado de la provincia.
+{{Gráfica de evolución|tipo=demográfica|color_12=blue|nombre=Departamento Valle Grande|altura=300|anchura=250|1991|1976|2001|2386|2010|2451|notas=<small>Fuente: censos nacionales del [[INDEC]]</small><ref>{{cita web |url=http://www.indec.gob.ar/censos_provinciales.asp?id_tema_1=2&id_tema_2=41&id_tema_3=136&p=38&d=999&t=1&s=0&c=1991 |título=Provincia de Jujuy. Población total por sexo, índice de masculinidad y densidad de población según división político-administrativa. Año 1991 |obra=INDEC - Censo Nacional de Población y Vivienda 1991|fecha= }}</ref><ref>{{cita web |url=http://www.indec.gob.ar/censos_provinciales_2001.asp?id_tema_1=2&id_tema_2=41&id_tema_3=134&c=38&j=1&t=999&ce=2001 |título=Departamento Valle Grande, Provincia de Jujuy. Población por sexo según grupos de edad. Año 2001 |obra=INDEC - Censo Nacional de Población, Hogares y Viviendas 2001 |fecha= }}</ref><ref>{{cita web |url=http://www.indec.gob.ar/ftp/censos/2010/CuadrosDefinitivos/P2-D_38_105.pdf |título=Provincia de Jujuy, departamento Valle Grande. Población total por sexo e índice de masculinidad, según edad en años simples y grupos quinquenales de edad. Año 2010 |obra=INDEC - Censo Nacional de Población, Hogares y Viviendas 2010 |fecha= }}</ref>|2022|2509}}
+
+== Localidades ==
+Según datos correspondientes al censo del año 2010, la población se distribuye de modo homogéneo entre las pequeñas localidades de departamento.<ref>{{cita web |url=https://www.citypopulation.de/php/argentina-jujuy_s.php?adm2id=38105 |título=Valle Grande (Departamento) |obra=City Population |fecha=13 de mayo de 2014 }}</ref>
+* [[Pampichuela]] 130 hab.
+* [[Valle Colorado]] 146 hab.
+* [[Caspalá]] 225 hab.
+* [[Santa Ana (Valle Grande)|Santa Ana]] 416 hab.
+* [[San Francisco (Jujuy)|San Francisco]] 504 hab. 
+* [[Valle Grande]] 538 hab.
+
+== Salud y educación ==
+El departamento cuenta con 10 centros de salud, la mayoría de ellos dedicados a la atención primaria.<ref>{{cita web |url=http://centrosmedicosyhospitales.com/argentina/hospitales/JUJUY/VALLE%2BGRANDE |título=Centros de salud y Hospitales en Valle Grande |obra= |fecha= }}</ref>
+
+Según datos oficiales, en el año 2011 el departamento contaba con un total de 21 establecimientos educativos de gestión pública, que atienden los requerimientos de niños y jóvenes desde el jardín de infantes hasta el nivel secundario.<ref>{{cita web |url=http://www.dipec.jujuy.gov.ar/is_educacion.html |título=Cuadros de educación - Unidades educativas por nivel y sector según departamento. Año 2011. |obra=Dirección Provincial de Estadística y Censos - Provincia de Jujuy |fecha= |fechaacceso=11 de enero de 2017 |fechaarchivo=13 de enero de 2017 |urlarchivo=https://web.archive.org/web/20170113142514/http://www.dipec.jujuy.gov.ar/is_educacion.html |deadurl=yes }}</ref>
+
+== Características geográficas ==
+El departamento está ubicado sobre el centro este de la provincia, en una zona caracterizada por bosques de montaña o nuboselvas. Junto con los departamentos de [[Departamento San Pedro (Jujuy)|San Pedro]], [[Departamento Ledesma|Ledesma]] y [[Departamento Santa Bárbara (Argentina)|Santa Bárbara]], forma parte de la región conocida como El Ramal o Yungas.<ref>{{cita web |url=http://www.turismo.jujuy.gov.ar/region/yungas/ |título=Región de Yungas |obra=Secretaría de Turismo de la Provincia de Jujuy |fecha= |fechaacceso=16 de diciembre de 2016 |fechaarchivo=20 de diciembre de 2016 |urlarchivo=https://web.archive.org/web/20161220160905/http://www.turismo.jujuy.gov.ar/region/yungas/ |deadurl=yes }}</ref><br />
+Hay varios cursos de agua, como los ríos Valle Grande, San Lucas, Jordán, San Francisco, Santa Rosa, Acheral, Sunchal, Duraznal o Tormenta y Yerba Buena. El río Jordán presenta la particularidad de que en su curso se forman piletones de aguas termales.<br />
+El departamento está limitado por las serranías de Zenta en el norte y la serranía de Calilegua en el sur.<ref>{{cita web |url=http://www.jujuyenlinea.com/engine/0/127/4/Valle%20Grande/false/es/ |título=Valle Grande - Departamento |obra=Jujuy en línea |fecha=2016 }}</ref>
+
+== Sismicidad ==
+La sismicidad del área de Jujuy es frecuente y de intensidad baja, y un silencio sísmico de terremotos medios a graves cada 40 años.<ref name=rio/>
+
+* [[terremoto de Jujuy de 1863|Sismo de 1863]]: aunque dicha actividad geológica catastrófica, ocurre desde épocas prehistóricas, el terremoto del {{fecha|4|1|1863|edad}},<ref name=scielo/> señaló un hito importante dentro de la historia de eventos sísmicos jujeños, con 6.4 Richter.<ref name=rio> [https://web.archive.org/web/20130220160119/http://www.inpres.gov.ar/seismology/historicos.php Terremotos históricos ocurridos en la República Argentina]</ref>
+* [[Terremoto de Salta de 1948|Sismo de 1948]]: el {{fecha|25|8|1848|edad}} con 7.0 Richter, el cual destruyó edificaciones y abrió numerosas grietas en inmensas zonas<ref name=scielo>{{cita web |url=http://www.scielo.org.ar/scielo.php?pid=S0004-48222006000400011&script=sci_arttext |título=Fenómenos de licuefacción asociados a terremotos históricos. Su análisis en la evaluación del peligro sísmico en la Argentina |fechaacceso=24 de septiembre de 2012 |urlarchivo=https://web.archive.org/web/20131012053128/http://www.scielo.org.ar/scielo.php?pid=S0004-48222006000400011&script=sci_arttext |fechaarchivo=12 de octubre de 2013 }}</ref><ref name=rio/>
+* [[Terremoto de Jujuy de 2011|Sismo de 2011]]: el {{fecha|6|10|2011|edad}} con 6.2 Richter, produjo rotura de vidrios y mampostería.<ref name=rio/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento de Valle Grande| ]]

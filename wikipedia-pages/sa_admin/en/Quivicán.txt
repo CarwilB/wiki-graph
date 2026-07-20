@@ -1,0 +1,111 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Quivicán
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Glorieta de Quivicán.JPG
+|imagesize              = 
+|image_caption          = The "Glorieta" bandstand
+|image_flag             = Bandera de Quivicán, Cuba.svg
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Cuba (Quivicán Municipality).svg
+|map_caption            = Quivicán municipality (red) within Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Mayabeque Province|Mayabeque]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Founded
+|established_date       = 1700<ref name=guije/>
+|established_title2     = Established
+|established_date2      = 1919 (Municipality)
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 283
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 30,016
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|49|29|N|82|21|21|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 50
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-7
+|website                = https://www.quivican.gob.cu/es/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Quivicán''' is a town and municipality in [[Mayabeque Province]] of [[Cuba]]. It is located in the south west of the province, bordering the [[Gulf of Batabanó]]. The name is of [[Taíno people|Taino]] origin (spelled '' Quibicán'').<ref name=taino>{{Cite web|url=http://www.uctp.org/VocesIndigena.html |title= Taíno Dictionary |author= United Confederation of Taíno People |access-date=2007-10-18|language=es |archive-url = https://web.archive.org/web/20071016055722/http://www.uctp.org/VocesIndigena.html <!-- Bot retrieved archive --> |archive-date = 2007-10-16}}</ref> It was founded in 1700.<ref name=guije/>
+
+==Geography==
+The municipality is divided into the [[barrio]]s of Quivican Pueblo, La Salud, San Felipe, Pablo Noriega, San Agustín, Guiro Boñingal, Güiro Marrero, Santa Mónica, Aguacate and Fajardo.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/hquivican/index.htm|title=Quivicán|author=Guije.com|access-date=2007-10-07|language=es}}</ref>
+
+==Demographics==
+In 2022, the municipality of Quivicán had a population of 30,016.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|283|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| access-date=2007-10-07}}</ref> it has a population density of {{convert|110|/km2|/sqmi|abbr=on}}.
+
+==Notable people==
+* [[Bebo Valdés]] (b. 1918), pianist
+* [[Chucho Valdés]] (b. 1941), pianist
+* [[Alejandro Miguel Portal Oliva]] (b. 1995), soccer player
+
+==See also==
+*{{Portal-inline|Cuba}}
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+*[[Quivicán Municipal Museum]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Quivicán
+ | N  = [[Bejucal]]
+ | NE = [[San José de las Lajas]]
+ | E  = [[Batabanó, Cuba|Batabanó]]
+ | S  = ''[[Gulf of Batabanó]]''
+ | W  = [[San Antonio de los Baños]] ([[Artemisa Province|Artemisa]])<br/>[[Güira de Melena]] ([[Artemisa Province|Artemisa]])
+}}
+{{Municipalities in Mayabeque}}
+{{Authority control}}
+
+{{DEFAULTSORT:Quivican}}
+[[Category:Populated places in Mayabeque Province]]
+[[Category:People from Quivicán| ]]
+
+
+{{Cuba-geo-stub}}

@@ -1,0 +1,126 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Requena
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Requena in the [[Requena Province]]
+| coor_pinpoint           = 
+| coordinates             = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Loreto Region|Loreto]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Requena Province|Requena]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = July 2, 1943
+| seat_type               = [[Capital city|Capital]]
+| seat                    = [[Requena, Loreto|Requena]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Orlando Ernig Jakers Huaymacari
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 3038.56
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 114
+| population_footnotes    = 
+| population_total        = 25313
+| population_as_of        = 2017
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 160501
+| website                 = 
+| footnotes               = 
+}}
+
+'''Requena District''' is one of eleven [[Districts of Peru|districts]] of the province [[Requena Province|Requena]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Requena, elevation {{convert|109|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 31.1
+|Feb high C = 31.5
+|Mar high C = 31.5
+|Apr high C = 31.3
+|May high C = 31.0
+|Jun high C = 30.8
+|Jul high C = 30.8
+|Aug high C = 32.0
+|Sep high C = 32.5
+|Oct high C = 32.5
+|Nov high C = 32.1
+|Dec high C = 31.5
+|year high C = 
+|Jan low C = 22.5
+|Feb low C = 22.4
+|Mar low C = 22.4
+|Apr low C = 22.4
+|May low C = 22.1
+|Jun low C = 21.7
+|Jul low C = 21.5
+|Aug low C = 21.8
+|Sep low C = 22.2
+|Oct low C = 22.5
+|Nov low C = 22.6
+|Dec low C = 22.5
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 219.2
+|Feb precipitation mm = 211.3
+|Mar precipitation mm = 269.5
+|Apr precipitation mm = 211.6
+|May precipitation mm = 205.6
+|Jun precipitation mm = 150.1
+|Jul precipitation mm = 121.1
+|Aug precipitation mm = 102.8
+|Sep precipitation mm = 149.3
+|Oct precipitation mm = 190.6
+|Nov precipitation mm = 213.3
+|Dec precipitation mm = 273.4
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Loreto Region}}
+
+{{coord|5.0637|S|73.8586|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Requena province]]
+[[Category:Districts of the Department of Loreto]]
+
+
+{{Loreto-geo-stub}}

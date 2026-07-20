@@ -1,0 +1,83 @@
+{{Info/Município do Brasil
+<!-- GeoID=3109451 -->
+<!-- Cabeçalho --> 
+| nome                 = Cabeceira Grande
+| foto                 =
+| leg_foto             = Praça Cabeceira Grande 
+| apelido              = 
+| padroeiro            = [[São José]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=7 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão               = Cabeceira Grandemgbrasao.jpg
+| bandeira             = Cabeceira Grandemgbandeira.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 
+| fundação             ={{nowrap|{{dtlink|22|12|1995|idade}}}}
+| gentílico            =cabeceirense<ref name=IBGE>{{citar web| url =  https://cidades.ibge.gov.br/brasil/mg/cabeceira-grande/panorama|titulo=IBGE|publicado=Censo Demográfico - 2022}}</ref>
+| lema                 = 
+| CEP                  = 38625-000 a 38629-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito             = Eldson Amorim Duarte<ref>[https://politica.estadao.com.br/eleicoes/2020/candidatos/mg/cabeceira-grande]</ref>
+| partido              = [[AVANTE]]
+| fim_mandato          = 2024
+| início_mandato       = 2021
+<!-- Localização -->   = 
+| mapa                 = MinasGerais Municip CabeceiraGrande.svg
+| latP                 = S | latG = 16 | latM = 01 | latS = 48
+| lonP                 = O | lonG = 47 | lonM = 05 | lonS = 27
+| estado               = Minas Gerais
+| mesorregião          = [[Mesorregião do Noroeste de Minas|Noroeste de Minas]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Unaí|Unaí]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Região Integrada de Desenvolvimento do Distrito Federal e Entorno|Distrito Federal e Entorno]]
+| vizinhos             = [[Unaí]], [[Cristalina|Cristalina (GO)]], [[Paranoá|Paranoá (DF)]], [[Formosa (Goiás)|Formosa (GO)]] e [[Cabeceiras|Cabeceiras (GO)]]
+| dist_capital         = 639 <ref>{{citar web
+| url = http://www.der.mg.gov.br/images/stories/mapa_internet2/mapa-rodoviario.htm |titulo=DERMG |obra=Distâncias BH/Municípios 
+|publicado=Departamento de Estradas de Rodagem de Minas Gerais (DER/MG) |acessodata=19 de agosto de 2009}}</ref>
+<!-- Características geográficas -->
+| área                 = 1033.055
+| área_ref             = <ref name =IBGE/>
+| população            = 6627
+| data_pop             = Censo [[IBGE]]/2022<ref name=IBGE/>
+| altitude             = 
+| clima                = [[Tropical]]   <ref name="vetmedunivienna">{{citar web
+| url = http://koeppen-geiger.vu-wien.ac.at/pics/kottek_et_al_2006.gif |titulo=World Map of the Köppen-Geiger climate classification 
+|obra=World Map of the Köppen-Geiger climate classification |publicado=Institute for Veterinary Public Health  | acessodata=24 de fevereiro de 2010}}</ref>
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.648 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2010 <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de julho de 2013}}</ref>
+| pib                  = {{formatnum:186136.47}} mil
+| data_pib             = [[IBGE]]/2016<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=destaques&c=3109451 |titulo=Produto Interno Bruto dos Municípios 2016 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=18 de fevereiro de 2019}}</ref>
+| pib_per_capita       = 26972.39
+| data_pib_per_capita  = [[IBGE]]/2016<ref name="IBGE_PIB"/>
+| site_prefeitura      = [http://www.cabeceiragrande.mg.gov.br cabeceiragrande.mg.gov.br]
+| site_câmara          = [http://www.cabeceiragrande.mg.leg.br www.cabeceiragrande.mg.leg.br]
+}}
+'''Cabeceira Grande''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Minas Gerais]]. É o único município de Minas Gerais que faz divisa com o [[Distrito Federal (Brasil)|Distrito Federal]]. Dista cerca de 665&nbsp;km da capital estadual, [[Belo Horizonte]] e 117&nbsp;km da capital nacional, [[Brasília]]. Sua população em 2022 era de 6 627 habitantes.<ref name = IBGE/> O município possui dois [[Distritos do Brasil|distritos]], o distrito-sede de Cabeceira Grande e o distrito de [[Palmital de Minas]].<ref name=IBGE-Historico>{{citar web |autor=Instituto Brasileiro de Geografia e Estatística |url=https://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/cabeceiragrande.pdf |titulo=Cabeceira Grande - Minas Gerais |acessodata=31 de março de 2018}}</ref> A economia local vem da safra de grãos e da agropecuária.
+
+== História ==
+As primeiras doações de terras para a formação do povoado foram feitas por Trajano Caetano Costa e Pedro Costa Filho. A localidade foi constituída em distrito pela lei estadual nº 2 674, de 30 de dezembro de 1962, subordinada ao município de [[Unaí]]. Seu crescimento foi impulsionado pela construção de [[Brasília]] e pela abertura da estrada Unaí–Brasília, que passa pela região. Pela lei estadual nº 12 030, de 21 de dezembro de 1995, foi elevada à categoria de município, desmembrando-se de Unaí, com instalação em 1º de janeiro de 1997. Em 1999, foi criado o distrito de [[Palmital de Minas]], anexado ao município.<ref name=IBGE-Historico/>
+
+== Geografia ==
+O município integra a [[Mesorregião do Noroeste de Minas|mesorregião do Noroeste de Minas]] e a [[Microrregião de Unaí|microrregião de Unaí]], além de fazer parte da [[Região Integrada de Desenvolvimento do Distrito Federal e Entorno]] (RIDE-DF). Ocupa uma área de 1 033,055 [[Quilómetro quadrado|km²]] e é o único município mineiro a fazer divisa com o [[Distrito Federal (Brasil)|Distrito Federal]].<ref name=IBGE/> Faz limite ainda com [[Unaí]], [[Cristalina]] e [[Formosa (Goiás)|Formosa]] (em [[Goiás]]), [[Cabeceiras]] (GO) e o [[Paranoá]] (DF). O clima é tropical (tipo Aw).
+
+== Demografia ==
+Segundo o [[Censo demográfico de 2022 no Brasil|Censo de 2022]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), a população do município era de {{fmtn|6627}} habitantes; os naturais são denominados cabeceirenses.<ref name=IBGE/> O [[Índice de Desenvolvimento Humano]] municipal (IDH-M) era de 0,648 em 2010.<ref name="PNUD_IDH_2010"/>
+
+== Economia ==
+A base econômica de Cabeceira Grande é a [[agricultura]] de grãos e a [[pecuária]]. Em 2016, o [[produto interno bruto]] (PIB) per capita do município era de R$ 26 972,39.<ref name="IBGE_PIB"/>
+
+{{Referências|col=2}}
+
+==Ligações externas==
+*{{link|pt|2=http://www.cabeceiragrande.mg.gov.br |3=Prefeitura Municipal}}
+*{{link|pt|2=http://www.cabeceiragrande.mg.leg.br |3=Câmara Municipal}}
+*{{link|pt|2=http://www.cidades.ibge.gov.br/brasil/mg/cabeceira-grande |3=Cabeceira Grande no IBGE Cidades}}
+
+{{Região Integrada de Desenvolvimento do Distrito Federal e Entorno}}
+
+[[Categoria:Cabeceira Grande| ]]
+[[Categoria:Fundações em Minas Gerais em 1995]]
+[[Categoria:Municípios de Minas Gerais]]

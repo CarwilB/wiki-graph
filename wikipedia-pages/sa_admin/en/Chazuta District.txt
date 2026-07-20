@@ -1,0 +1,123 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Chazuta District
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              = 
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| pushpin_map             = Peru
+| map_alt                 = 
+| map_caption             = Location of Chazuta in the [[San Martín Province|San Martín]] province
+| coordinates             = {{coord|-6.5736|-76.1324|region:PE_type:adm3rd|display=inline,title}}
+| coordinates_footnotes   = <ref>{{cite web |url=http://geonames.nga.mil/namesviewer/ |title=GeoNames Search |work=Geographic Names Database |publisher=National Geospatial-Intelligence Agency, USA |accessdate=26 December 2016}}</ref>
+| subdivision_type        = Country
+| subdivision_name        = Peru
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[San Martín Region|San Martín]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[San Martín Province|San Martín]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = January 2, 1857
+| seat_type               = [[Capital city|Capital]]
+| seat                    = [[Chazuta]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Isaac Tangoa Panaifo
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 966.38
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 150
+| population_footnotes    = 
+| population_total        = 9563
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 220904
+| website                 = 
+| footnotes               = 
+}}
+
+'''Chazuta District''' is one of fourteen [[Districts of Peru|districts]] of the province [[San Martín Province|San Martín]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=April 23, 2008 }}''. Retrieved April 11, 2008.</ref> San Martín Province is located in north central Peru, in [[San Martín Region]], a highland area on the edge of the [[Amazon Basin]]. Immediately to the east of San Martín Region is the large lowland region of [[Loreto Region|Loreto]], in the northeast corner of Peru. The area is home to members of the [[Kichwa-Lamista people|Kichwa-Lamista]] ethnicity, who migrated to the area from [[Lamas Province|province of Lamas]] between 1850 and 1920.<ref name="Chaparro 2">{{cite book |last1=Chaparro |first1=Anahí |editor1-last=Ministerio de Desarrollo Agrario y Riego Dirección General de Saneamiento de la Propiedad Agraria y Catastro Rural |title=TERRITORIOS Y RECURSOS NATURALES DE LOS PUEBLOS INDÍGENAS EN LA AMAZONÍA PERUANA |date=2021 |publisher=Ministerio de Desarrollo Agrario y Riego Dirección General de Saneamiento de la Propiedad Agraria y Catastro Rural |location=Lima |pages=107–120 |url=https://cdn.www.gob.pe/uploads/document/file/2798646/La%20situación%20de%20tierras%2C%20territorios%20y%20recursos%20naturales%20de%20los%20pueblos%20ind%C3%ADgenas%20en%20la%20Amazon%C3%ADa%20Peruana.pdf |access-date=4 June 2023 |chapter=Los Kichwa de San Martín: impactos de las dinámicas territoriales en las cuencas de los ríos Mayo y Huallaga}}</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Chazuta, elevation {{convert|203|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 33.0
+|Feb high C = 32.8
+|Mar high C = 32.1
+|Apr high C = 32.4
+|May high C = 32.5
+|Jun high C = 32.4
+|Jul high C = 33.1
+|Aug high C = 34.0
+|Sep high C = 34.8
+|Oct high C = 34.1
+|Nov high C = 33.6
+|Dec high C = 33.2
+|year high C = 
+|Jan low C = 22.6
+|Feb low C = 22.6
+|Mar low C = 22.4
+|Apr low C = 21.7
+|May low C = 22.3
+|Jun low C = 21.3
+|Jul low C = 20.4
+|Aug low C = 20.7
+|Sep low C = 21.5
+|Oct low C = 21.9
+|Nov low C = 22.8
+|Dec low C = 22.5
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 143.2
+|Feb precipitation mm = 175.6
+|Mar precipitation mm = 189.3
+|Apr precipitation mm = 141.8
+|May precipitation mm = 101.0
+|Jun precipitation mm = 74.4
+|Jul precipitation mm = 69.5
+|Aug precipitation mm = 59.9
+|Sep precipitation mm = 95.6
+|Oct precipitation mm = 137.8
+|Nov precipitation mm = 152.0
+|Dec precipitation mm = 152.9
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+== References ==
+{{Reflist}}
+
+{{Districts of San Martín Province}}
+
+[[Category:Districts of the Department of San Martín]]
+[[Category:Districts of the San Martín province]]
+
+
+{{SanMartín-geo-stub}}

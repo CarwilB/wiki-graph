@@ -1,0 +1,75 @@
+{{Info/Município do Brasil
+<!-- GeoID=4115358 -->
+<!-- Cabeçalho -->
+| nome                 = Maripá
+| foto                 =
+| leg_foto             =
+| apelido              = Cidade das Orquídeas
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Bandeira-maripá.png
+| link_brasão          =
+| link_bandeira        =
+| link_hino            =
+| aniversário          =
+| fundação             ={{dtlink|||1993|idade}}
+| gentílico            = maripaense
+| lema                 = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| prefeito             = Rodrigo André Schanoski<ref>[https://politica.estadao.com.br/eleicoes/2020/candidatos/pr/maripa/prefeito]</ref>
+| partido              = [[Partido Liberal (2006)|PL]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Parana Municip Maripa.svg
+| latP                 = S | latG = 24 | latM = 25 | latS = 04
+| lonP                 = O | lonG = 53 | lonM = 49 | lonS = 48
+| estado               = Paraná
+| mesorregião          = [[Mesorregião do Oeste Paranaense|Oeste Paranaense]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Toledo|Toledo]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = [[Região Metropolitana de Toledo]]
+| vizinhos             = [[Palotina]], [[Assis Chateaubriand (Paraná)|Assis Chateaubriand]], [[Toledo (Paraná)|Toledo]], [[Nova Santa Rosa]]
+| dist_capital         = 568
+<!-- Características geográficas -->
+| área                 = 283.793
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 5603
+| data_pop             = est. [[IBGE]]/2019<ref name="IBGE_Pop_2019">{{citar web |url= https://cidades.ibge.gov.br/brasil/pr/maripa/panorama |título= Estimativa Populacional para 2019 |obra= |publicado= Instituto Brasileiro de Geografia e Estatística (IBGE) |data= 1 de julho de 2019 |acessodata= 19 de outubro de 2019}}</ref>
+| altitude             = 402
+| clima                = Subtropical
+| sigla_clima          = Cfa
+<!-- Indicadores -->
+| idh                  = 0.845 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| idh_pos              =
+| pib                  = {{formatnum:145028.507}} mil
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+| pib_per_capita       = 25452.53
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+| site_prefeitura      = [http://maripa.pr.gov.br/ maripa.pr.gov.br]
+}}
+'''Maripá''' é um [[Município (Brasil)|município brasileiro]] do estado do [[Paraná]], localizado na região oeste do estado. Em 2010 contava com uma população estimada em torno de 5.889 habitantes. Também é conhecida regionalmente como a ''Cidade das Orquídeas'', pelo cultivo da mesmas nas arvores da cidade, e pelo arrancadão de tratores, evento tradicional da cidade realizado anualmente.
+Considerado o quinto município do Paraná em qualidade de vida, e 49º no pais pelo Índice de Desenvolvimento Humano (2000). {{carece de fontes|data=abril de 2017}}
+
+==Economia==
+Sua economia se baseia na produção agrícola onde se destacam a produção de soja, milho, mandioca, criação de bovinos na produção de leite, produção de frangos e suínos para abate.
+
+==Administração politica==
+O atual prefeito é Anderson Bento Maria.
+
+==História==
+Fundada em 4 de junho de 1953, por colonizadores vindos principalmente de Santa Catarina e Rio Grande do Sul, em grande parte de origem germânica.
+Maripá deve este nome devido a sua colonizadora que tinha o nome de Madeireira Rio Paraná onde as iniciais do nome da empresa formam a sigla Maripá.
+A emancipação da cidade ocorreu em 17 de abril de 1990.
+
+{{Referências}}
+
+== Ligações externas ==
+* [https://web.archive.org/web/20070928190139/http://muninet.org.br/banco/index.php?g_cod_hierarquia=4153&letra=m Rede Brasileira para o Desenvolvimento Municipal]
+{{Esboço-municípiosbr/Paraná}}
+{{Região Metropolitana de Toledo}}
+{{Portal3|Paraná|Brasil}}
+{{Controle de autoridade}}
+
+[[Categoria:Municípios do Paraná]]
+[[Categoria:Fundações no Paraná em 1990]]

@@ -1,0 +1,107 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = San Luis
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Paseo Juana Romero.jpg
+|image_caption          = The ''Paseo Juana Romero''
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = Shield_of_San_Luis,_Pinar_del_Rio.jpg
+|shield_size            = 120x90px
+|image_map              = San Luis, PR (Cuban municipal map).png
+|map_caption            = San Luis municipality (red) within <br> Pinar del Río Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Pinar del Río Province|Pinar del Río]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Founded
+|established_date       = 1827<ref name=guije/>
+|established_title2     = Established
+|established_date2      = 1879
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 765
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 31,242
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|16|58|N|83|46|5|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 25
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-82
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''San Luis''' is a municipality and town in the [[Pinar del Río Province]] of [[Cuba]]. It is centered mainly on agriculture ([[tobacco]], [[rice]], fruit crops), [[Livestock|stock]] raising.
+
+==History==
+It was founded in 1827,<ref name=guije/> and established as a municipality in 1879, when it split from [[San Juan y Martínez]]. Until 1977, its territory included the seaport village of [[La Coloma]], currently part of Pinar del Río.<ref>{{in lang|es}} [http://www.guije.com/pueblo/municipios/pluis/coloma/index.htm La Coloma] on guije.com</ref>
+
+==Geography==
+The municipality is located west of [[Pinar del Río]] and includes the villages of Barbacoa, Barrigonas, Buenavista, El Corojo, El Retiro, Llanadas, Palizada, Santa María and Tirado.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/pluis/index.htm|title=San Luis|author=Guije.com|accessdate=2007-10-07|language=es}}</ref>
+
+==Demographics==
+In 2022, the municipality of San Luis had a population of 31,242.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|765|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-07}}</ref> it has a population density of {{convert|41|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+*[[San Luis Municipal Museum]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = San Luis
+ | N = [[Pinar del Río]]
+ | E = [[Pinar del Río]]
+ | S = ''[[Caribbean Sea]]''
+ | W = [[San Juan y Martínez]]
+}}
+{{Municipalities in Pinar del Río}}
+{{Authority control}}
+
+{{DEFAULTSORT:San Luis, Pinar del Rio}}
+[[Category:Populated places in Pinar del Río Province]]
+[[Category:Populated places established in 1827]]
+[[Category:1827 establishments in the Spanish Empire]]
+
+
+{{Cuba-geo-stub}}

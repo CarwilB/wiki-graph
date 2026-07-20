@@ -1,0 +1,92 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Copiapó Province
+| official_name           = 
+| native_name             = Provincia de Copiapó
+| native_name_lang        = es
+| settlement_type         = [[Provinces of Chile|Province]]
+| image_skyline           =
+| image_alt               =
+| image_caption           =
+| nickname                =
+| motto                   =
+| image_seal              = Logo de la Gobernación Provincial de Copiapó.svg
+| image_map               = Provincia de Copiapó.svg
+| mapsize                 = 175px
+| map_alt                 = Location in the Atacama Region
+| map_caption             = Location in the Atacama Region
+| pushpin_map             = Chile 
+| pushpin_map_alt         = Location in Chile
+| pushpin_mapsize         = 175<!--omit "px"-->
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|27|27|S|70|00|W|type:adm2nd_region:CL-AT|display=inline,title}}
+| coordinates_footnotes   =
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Chile}}
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = {{flag|Atacama}}
+| parts_type              = [[Communes of Chile|Communes]]
+| parts                   = [[Copiapó]]<br>[[Caldera, Chile|Caldera]]<br>[[Tierra Amarilla, Chile|Tierra Amarilla]]
+| established_title       = 
+| established_date        =
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Copiapó]]
+| government_footnotes = <ref name="Gobernadores">{{cite web|url=http://www.subdere.gov.cl/1510/w3-article-67516.html |accessdate=18 March 2011 |title=Gobierno de Chile: Gobernadores |work=[[Government of Chile]] |language=es |url-status=dead |archiveurl=https://web.archive.org/web/20110707010623/http://www.subdere.gov.cl/1510/w3-article-67516.html |archivedate=7 July 2011 }}</ref>
+| government_type         = [[Province|Provincial]]
+| leader_party            = 
+| leader_title            = [[Presidential Provincial Delegate]]
+3| leader_name             = None
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{cite web|url=http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/dpa_completa.pdf |format=PDF |title=Territorial division of Chile |accessdate=18 March 2011 |publisher=[[National Statistics Institute (Chile)|National Statistics Institute]] |year=2007 |language=es |url-status=dead |archiveurl=https://web.archive.org/web/20101114052159/http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/DPA_COMPLETA.pdf |archivedate=14 November 2010 }}</ref>
+| area_total_km2          = 32538.5
+| elevation_footnotes     = 
+| elevation_m             =
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 183973
+| population_as_of        = 2012 Census
+| population_density_km2  = auto
+| population_demonym      = 
+| population_blank1_title = Urban
+| population_blank1       = 148,101
+| population_blank2_title = Rural
+| population_blank2       = 7,612
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1          = 79,436
+| demographics1_title2    = Women
+| demographics1_info2       = 76,277
+| timezone = [[Time in Chile|CLT]]<ref>{{cite web |url=http://www.world-time-zones.org/zones/chile-time.htm |accessdate=2010-07-28 |title=Chile Time |publisher=WorldTimeZones.org |url-status=dead |archiveurl=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archivedate=2007-09-11 }}</ref>
+| utc_offset = -4
+| timezone_DST = [[Time in Chile|CLST]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-summer-time.htm |accessdate=2010-07-28 |title=Chile Summer Time |publisher=WorldTimeZones.org |url-status=dead |archiveurl=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archivedate=2007-09-11 }}</ref>
+| utc_offset_DST = -3
+| postal_code_type        =
+| postal_code             =
+| area_code_type          =
+| area_code               = 56 + 52
+| website                 =
+| footnotes               =
+}}
+
+'''Copiapó Province''' ({{langx|es|Provincia de Copiapó}}) is one of three [[Provinces of Chile|provinces]] of the northern [[Chile]]an [[Regions of Chile|region]] of [[Atacama Region|Atacama]] (III). Its capital is the city of [[Copiapó]].
+
+==Geography and demography==
+According to the 2012 census by the [[National Statistics Institute (Chile)|National Statistics Institute]] (''INE''), the province spans an area of {{convert|32538.5|sqkm|0|abbr=on}}<ref name="INE"/> and had a population of 183,973 inhabitants, giving it a population density of {{convert|4.8|PD/sqkm|0|abbr=on}}. It is the tenth largest province in the country. Between the 1992 and 2002 censuses, the population grew by 24.9% (31,021 persons).<ref name= "INE"/>
+
+==Administration==
+As a [[province]], Copiapó is a second-level [[administrative division of Chile]], which is further divided into three [[Communes of Chile|communes]] (''comunas''). The province is administered by a presidentially appointed regional delegate.<ref name="Gobernadores"/>
+
+===Communes===
+#[[Copiapó]]
+#[[Caldera, Chile|Caldera]]
+#[[Tierra Amarilla, Chile|Tierra Amarilla]]
+
+==References==
+<references/>
+
+{{Provinces of Chile}}
+{{Communes in Atacama Region}}
+
+{{DEFAULTSORT:Copiapo Province}}
+[[Category:Provinces of Atacama Region]]
+[[Category:Provinces of Chile]]

@@ -1,0 +1,101 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Segundo Frente
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Mayari arriba CF9A6195.jpg
+|image_caption          = Apartment buildings in Mayarí Arriba
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Segundo Frente (Cuban municipal map).png
+|map_caption            = Segundo Frente municipality (red) within <br> Santiago Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Santiago de Cuba Province|Santiago de Cuba]]
+|seat                   = Mayarí Arriba
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = 
+|area_total_km2         = 540.2
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 40,196
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|24|43|N|75|31|43|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 180
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-226
+|website                = https://www.segundofrente.gob.cu/
+|footnotes              = 
+}}
+'''Segundo Frente'''<ref name="santiagomun">{{Cite web |author=Santiago.cu |year=2006 |title=Municipalities of Santiago de Cuba |url=http://www.santiago.cu/nuestrostgo/Municipio/2.htm |url-status=dead |archiveurl=https://web.archive.org/web/20071215121200/http://www.santiago.cu/nuestrostgo/Municipio/2.htm |archivedate=2007-12-15 |accessdate=2007-10-05 |language=es}}</ref> ([[Spanish language|Spanish]] for "Second Front") is a municipality in the [[Santiago de Cuba Province]] of [[Cuba]]. Located in the northern part of the province, it is centered on the town, and municipal seat, of '''Mayarí Arriba'''.
+
+==Geography==
+The municipality is located north of the province, neighboring the provinces of [[Holguín Province|Holguín]] and [[Guantánamo Province|Guantánamo]]; and is partly included into [[Sierra Cristal National Park]]'s territory. It borders with the municipalities of [[Mayarí]], [[Frank País, Cuba|Frank País]], [[Sagua de Tánamo]], [[El Salvador, Cuba|El Salvador]], [[Songo – La Maya|Songo-La Maya]] and [[San Luis, Santiago de Cuba|San Luis]].
+
+It includes the town of Mayarí Arriba and the villages of Boca de Micara, Loma Blanca, Sabanilla, San Benito de Mayarí, Soledad and Tumba Siete.<ref>{{OSM|r|5919054|Segundo Frente}}</ref>
+
+==Demographics==
+In 2022, the municipality of Segundo Frente had a population of 40,885.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|540|km2|sqmi|abbr=on}}, it has a population density of {{convert|74|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[List of cities in Cuba]]
+*[[Municipalities of Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Segundo Frente
+ | NE = [[Sagua de Tánamo]] ([[Holguín Province|Holguín]])
+ | SE = [[El Salvador, Cuba|El Salvador]] ([[Guantánamo Province|Guantánamo]])
+ | S  = [[Songo – La Maya]]
+ | SW = [[San Luis, Santiago de Cuba|San Luis]]
+ | NW = [[Mayarí]] ([[Holguín Province|Holguín]])
+}}
+{{Municipalities in Santiago de Cuba}}
+
+[[Category:Populated places in Santiago de Cuba Province]]
+
+
+{{Cuba-geo-stub}}

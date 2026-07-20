@@ -1,0 +1,100 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->| official_name            = Jiguaní
+| other_name               = 
+| native_name              = 
+| nickname                 = 
+| settlement_type          = [[Municipalities of Cuba|Municipality]]
+| motto                    = <!-- images and maps  ----------->
+| image_skyline            = Jiguaní DSC09667.jpg
+| imagesize                = 250px
+| image_caption            = 
+| image_flag               = 
+| flag_size                = 
+| image_seal               = 
+| seal_size                = 
+| image_shield             =
+| shield_size              = 120x90px
+| image_map                = Jiguaní (Cuban municipal map).png
+| map_caption              = Jiguaní municipality (red) within <br> Granma Province (yellow) and Cuba
+<!-- Location ------------------>| subdivision_type         = Country
+| subdivision_name         = [[Cuba]]
+| subdivision_type1        = [[Provinces of Cuba|Province]]
+| subdivision_name1        = [[Granma Province|Granma]]
+| subdivision_type2        = 
+| subdivision_name2        = <!-- Politics ----------------->
+| government_footnotes     = 
+| government_type          = 
+| leader_title             = 
+| leader_name              = 
+| leader_title1            = 
+| leader_name1             = 
+| established_title        = Established
+| established_date         = 1701<ref name=guije/>
+| established_title2       = <!-- Incorporated (town) -->
+| established_date2        = 
+| established_title3       = <!-- Incorporated (city) -->
+| established_date3        = <!-- Area    --------------------->
+| area_magnitude           = 
+| unit_pref                = 
+| area_footnotes           = <ref name=statoids/>
+| area_total_km2           = 646
+| area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+| area_water_km2           = <!-- Population   ----------------------->
+| population_as_of         = 2022
+| population_footnotes     = <ref name=citypopulation/>
+| population_note          = 
+| population_total         = 58,982
+| population_density_km2   = auto
+<!-- General information  --------------->| timezone                 = [[Eastern Time Zone|EST]]
+| utc_offset               = -5
+| timezone_DST             = 
+| utc_offset_DST           = 
+| coordinates              = {{coord|20|22|23|N|76|25|20|W|region:CU|display=inline,title}}
+| elevation_footnotes      = <!--for references: use <ref> </ref> tags-->
+| elevation_m              = 125
+<!-- Area/postal codes & others -------->| postal_code_type         = 
+| postal_code              = 
+| area_code                = +53-23
+| website                  = https://www.jiguani.gob.cu/es/
+| footnotes                = 
+}}
+ <!--Infobox ends-->
+
+'''Jiguaní''' ({{IPA|es|xiɣwaˈni}}) is a town and municipality in the [[Granma Province]] of [[Cuba]]. It is located {{convert|25|km|mi}} east of [[Bayamo]], the provincial capital.
+
+==Overview==
+The municipality is divided into the [[barrio]]s of Babiney, Baire, Bijagual, La Villa, Los Negros, Maffo, Rihito and Santa Rita.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/ojiguani/index.htm|title=Jiguaní|author=Guije.com|accessdate=2007-10-06|language=es}}</ref>
+
+The name "Jiguaní" is of [[Taíno people|Taíno]] origin, and means "height of the river".<ref name=taino>{{Cite web|url=http://www.uctp.org/VocesIndigena.html |title=Taíno Dictionary |author=[[United Confederation of Taíno People]] |accessdate=2007-10-18 |language=Spanish |archiveurl=https://web.archive.org/web/20071016055722/http://www.uctp.org/VocesIndigena.html |archivedate=2007-10-16 |url-status=dead }}</ref>{{better|date=May 2026}} The town of Jiguaní was a stronghold and a starting point in the [[Cuban War of Independence|independence war]] of 1895.
+
+==Demographics==
+In 2022, the municipality of Jiguaní had a population of 58,982.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|646|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-06}}</ref> it has a population density of {{convert|91|/km2|/sqmi|abbr=on}}.
+
+==See also==
+{{Portal|Cuba}}
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Jiguaní
+ | N  = [[Urbano Noris]] ([[Holguín Province|Holguín]])
+ | E  = [[Contramaestre, Cuba|Contramaestre]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+ | SE = [[Tercer Frente]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+ | S  = [[Guisa]]
+ | W  = [[Bayamo]]
+ | NW = [[Cauto Cristo]]
+}}
+{{Municipalities in Granma}}
+
+{{DEFAULTSORT:Jiguani}}
+[[Category:Populated places in Granma Province]]
+
+
+{{Cuba-geo-stub}}

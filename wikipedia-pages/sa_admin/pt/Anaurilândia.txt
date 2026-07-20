@@ -1,0 +1,169 @@
+{{Info/Município do Brasil
+<!-- GeoID=5000807 -->
+<!-- Cabeçalho -->
+| nome                 = Anaurilândia
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Band Anaurilandia.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 11 de novembro
+| fundação             ={{nowrap|{{dtlink|11|11|1963|idade}}}}
+| emancipação          = {{Dtlink|25|4|1965|idade}}
+| gentílico            = [[wikt:anaurilandense|anaurilandense]]
+| lema                 = 
+| padroeiro            = [[João Batista|São João Batista]] 
+| prefeito             = Professor Rafael<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=7 de janeiro de 2025}}</ref>
+| partido              = [[PP]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Anaurilandia location map.svg
+| latP                 = S | latG = 22 | latM = 11 | latS = 16
+| lonP                 = O | lonG = 52 | lonM = 43 | lonS = 04
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Leste de Mato Grosso do Sul|Leste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Nova Andradina|Nova Andradina]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Bataguassu]], [[Bataiporã]], [[Nova Andradina]] e [[Rosana]] (SP)
+| dist_capital         = 367
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 3395.540 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 35º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:0.450}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 57º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Anaurilândia (sede) e Quebracho
+| população            = 8534 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 56º]]
+| data_pop             = est. [[IBGE]] 2011<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| densidade            = {{fmtn|2.513|hab/km²}}
+| altitude             = 312
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[Subtropical]]
+| sigla_clima          = Cfa
+<!-- Indicadores -->
+| idh                  = 0.72 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 57º]] 
+| data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.43}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 26º]] 
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:94976.892}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 54º]]
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 10999.06 <!--favor manter o formato-->
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Anaurilândia''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste]], situado no [[estados do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+==Geografia==
+===Localização===
+O município de Anaurilândia está localizado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], á [[Mesorregião do Leste de Mato Grosso do Sul|leste de Mato Grosso do Sul]] ([[Microrregião de Nova Andradina]]) e na divisa com [[Paraná]]/[[São Paulo (estado)|São Paulo]]. Possui [[latitude]] de 22º11’15” e [[longitude]] de 52°43’04”. Distâncias:
+*{{fmtn|372|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]).
+*{{fmtn|1067|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+No município de Anaurilândia, predomina o Latossolo Vermelho-Escuro álico de textura média, que são solos minerais, não [[hidromórfico]]s, altamente intemperizados, profundos, bem drenados, sendo encontrados, geralmente, em regiões planas ou suave onduladas, às margens do Rio Paraná, Argissolos que são solos minerais, não hidromórficos, com perfis bem desenvolvidos, Planossolos, solos típicos de relevo plano e áreas rebaixadas evidenciados por um [[hidromorfismo]] acentuado, Neossolo Quartzarênico de baixa fertilidade natural, são solos pouco desenvolvidos, profundos e muito profundos, excessivamente drenados, mas com baixa capacidade de retenção de água, torna esse solo desaconselhável à utilização agrícola; e a Associação Complexa, unidade composta por vários tipos de solos, onde não é possível identificar qual deles é o dominante, sendo difícil a separação, mesmo em estudo em escalas maiores, no caso de Anaurilândia foi identificado o AC2: Planossolo + Gleissolos + Neossolos + Organossolos, ocorrendo em área marginal ao Rio Paraná.
+
+; Relevo
+
+Está a uma altitude de {{fmtn|312|m}}. Município com características de relevo plano e suave ondulado, destaca-se no interior, 
+modelados planos e dissecados tabulares, sendo as acumulações fluviais muito significativa e amplas, devido a sua proximidade à calha do rio Paraná. O município de Anaurilândia encontra-se na Região dos Planaltos Arenítico-Basálticos Interiores, dividindo-se em duas unidades geomorfológicas; Superfície Rampeada de Nova Andradina, e Vale do Paraná.
+ 
+Apresenta relevo plano geralmente elaborado por várias fases de retomada erosiva, relevos elaborados pela ação fluvial e áreas planas resultante de acumulação fluvial sujeita a inundações periódicas.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[AW]]). Na porção N e NE do município apresenta clima úmido a sub-úmido, com índices de umidade variando de 20 a 40%. A precipitação anual varia entre 1.500 a 1.750mm e o excedente hídrico anual de 800 a 1.200mm durante cinco a seis meses, deficiência hídrica de 350 a 500mm durante quatro meses.
+ 
+Na porção Oeste, Sudoeste e Sul do município, apresenta característica do clima úmido, com valores anuais variando de 40 a 60%, a precipitação pluviométrica varia entre 1.750 a 2.000mm anuais com excedente hídrico anual de 1.200 a 1.400mm durante sete a oito meses e deficiência hídrica de 200 a 350mm durante três meses. 
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do rio Paraná]], pertencente á [[Bacia do Rio da Prata]]. Rios do município:
+
+*'''[[Rio Paraná]]'''
+
+Formado pela confluência dos rios Paranaíba (nasce em Goiás) e o Grande (cujas cabeceiras ficam na serra da Mantiqueira, em Minas Gerais), a uns 10&nbsp;km a nordeste da cidade de Aparecida do Taboado. Daí até o ponto extremo de Mato Grosso do Sul faz divisa entre este Estado (município de Anaurilândia) e o Estado  de São Paulo. É o principal rio da bacia do mesmo nome.
+
+*'''Outros rios'''
+*Rio Baía: afluente pela margem direita do rio Paraná, corre paralelo à margem direita do rio Paraná. Em seu alto curso, era a continuidade do rio Três Barras. O rio Baía foi alagado pela barragem da Usina Hidrelétrica Engenheiro Sérgio Motta, também conhecida por Usina de Porto Primavera.
+*Rio Quiterói: afluente pela margem direita do rio Paraná, no município de Anaurilândia.
+*Rio Três Barras: corta o município de Anaurilândia e deságua na lagoa Baía, paralela ao rio Paraná, no município de Anaurilândia. A referida lagoa foi alagada pela barragem da [[Usina Hidrelétrica Engenheiro Sérgio Motta]], conhecida como Usina de Porto Primavera.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. A vegetação do município revela o predomínio da pastagem plantada; a vegetação natural de Cerrado é ainda representada pelas fisionomias Arbóreo Denso (Cerradão), Arbóreo Aberto (Campo Cerrado) e pelos contatos com a Floresta Aluvial e Submontana.
+
+===Geografia política===
+;Fuso horário
+
+Apesar de estar na linha de  -1 hora com relação a [[Brasília]] e -4 com relação ao [[Meridiano de Greenwich]] ([[Tempo Universal Coordenado]]), oficialmente usa o horário de Brasília.
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|3395.540|km²}} e a área urbana totaliza {{fmtn|0.45|km²}}.
+ 
+;Subdivisões
+
+Anaurilândia (sede) e [[Quebracho]].
+
+;Arredores
+
+Limita-se com [[Bataguassu]], [[Bataiporã]], [[Nova Andradina]] e [[Rosana]] (SP).
+
+==Historia==
+Em 1916 vieram para a região Ciriaco Gonzáles e o Major Cecílio Manoel da Costa Lima, ambos se radicaram às margens do Riacho Quiteroizinho. Ciriaco Gonzáles foi influenciado por seu cunhado Deocleciano Paes (então irmão da esposa de Ciriaco Gonzáles, Anaurelíssia Gonzáles) a lotear parte da fazenda Água Amarela, onde foi edificado um povoado, dando origem a Vila Água Amarela. Luciano da Costa Lima, outro pioneiro e desbravador, foi o fundador do Distrito Quebracho.
+
+A principal fonte de economia da região era a exploração da erva-mate, planta nativa da região. O principal ervateiro foi Eduardo Fernando dos Santos, representante da Companhia Mate Laranjeira. Até então as pessoas tomavam apenas mate (chimarrão ou terere), mate doce ou chá mate. Foi quando José Martins trouxe o primeiro café para Anaurilândia. O primeiro porto de navegação da região foi o porto Sete de Setembro, descoberto por uma caravana de 900 soldados agregados por Ciriaco Gonzáles e Cristino Severino da Silva. Os Soldados foram comandados por José Lito. Edufo Quinhone foi o pioneiro no setor do comércio, trazia mercadorias de São Paulo através do porto São José para comercializar na região. Vendia calçados, peças de tecidos, ferramentas, munição e remédios.
+
+No período entre final da década de 1950 e antes de 1965 Anaurilandia se chamou Distrito de Ivinhema o qual possuiu um cartório de Paz e que segundo informação,  os livros do  mesmo, encontra-se no Cartório de Anaurilandia.
+
+Em 11 de Novembro de 1963 ocorre o desmembramento da Vila Água Amarela que passa a se chamar Município de Anaurilândia, sendo uma homenagem a esposa de Ciriaco Gonzáles, Anaurelíssia Gonzáles. Foi instalado em 25 de abril de 1965. Em 1977 o sul de Mato Grosso se emancipa formando o atual estado de Mato Grosso do Sul, a qual Anaurilandia faz parte atualmente.
+
+==Politica==
+*1º Prefeito: Lázaro Severino da Silva - Vice-Prefeito: Olímpio José da Silva.
+*2º Prefeito: José Xavier Prates - Vice-Prefeito: Geraldo Destro.
+*3º Prefeito: Laur Severino Correa - Vice-Prefeito: Izidoro Pereira de Souza.
+*4º Prefeito: João Aranda Guirado - Vice-Prefeito: Olívio Redivo.
+*5º Prefeito: Napoleão Pereira de Lima - Vice-Prefeito: Auro Corrêa Franco.
+*6º Prefeito: Benedito Alves de Godoy - Vice-Prefeito: Idenor Ribeiro dos Santos.
+*7º Prefeito: Napoleão Pereira de Lima - Vice-Prefeito: José Xavier Prates.
+*8º Prefeito: Edon Carlos Gonzales - Vice-Prefeito: Nilson Oliveira da Silva.
+*9º Prefeito: Edson Stefano Takazono - Vice-Prefeito: Antonio Carlos da Silva.
+*10º Prefeito: Edson Stefano Takazono - Vice-Prefeito: Antonio Carlos da Silva.
+*11º Prefeito: Antonio Eduardo De Lima Ricardo - Vice-Prefeita: Maria Ap. da Silva.
+*12º Prefeito: Edson Stefano TAkazono - Vice Prefeito: Antonio Carlos da Silva.
+13º: Vagner Alves Guirado - Vice Prefeito: Antonio Carlos da Silva.
+
+Atual Prefeito: Edson Stefano Takazono - Vice Prefeito: Adolfo Casado Filho.<ref>prefeitura municipal</ref>
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Anaurilândia
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+*[http://www.anaurilandia.ms.gov.br/ Página oficial]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso em 1963]]

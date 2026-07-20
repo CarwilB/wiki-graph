@@ -1,0 +1,47 @@
+{{Ficha de entidad subnacional
+|nombre = Santiago
+|unidad = [[Distritos de Costa Rica|Distrito]]
+|mapa = {{map draw
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3}}
+|pie_mapa = Santiago
+|mapa_loc = Costa Rica
+|mapa_loc_1 = Provincia de Alajuela
+|fundación = 19 de abril de 1911
+|superficie = <!-- wikidata -->
+|elevación_media = <!-- wikidata -->
+|población = <!-- wikidata -->
+|población_año = <!-- wikidata -->
+|tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+|superior_1 = {{CRI|A}}
+|tipo_superior_2 = [[Cantones de Costa Rica|Cantón]]
+|superior_2 = {{Bandera2|Cantón de Palmares}}
+|horario = [[UTC-6]]
+|código_postal_nombre = [[Anexo:Códigos postales de Costa Rica|Código postal]]
+|cp = <!-- wikidata -->
+}}
+{{Población histórica por censo de Costa Rica}}
+'''Santiago''' es un distrito del cantón de [[Cantón de Palmares|Palmares]], en la provincia de [[Provincia de Alajuela|Alajuela]], de [[Costa Rica]].<ref name="dta2017">{{cita libro|título=División Territorial Administrativa de la República de Costa Rica|fecha=8 de marzo de 2017|editorial=Editorial Digital de la Imprenta Nacional|isbn=978-9977-58-477-5|url=https://www.imprentanacional.go.cr/editorialdigital/libros/historiaygeografia/division_17.pdf}}</ref>
+== Historia ==
+Santiago fue creado el 19 de abril de 1911 por medio de Decreto Ejecutivo 12. Segregado de canton [[Cantón de Atenas|Atenas]].<ref name="dta2017" />
+== Geografía ==
+{{Cita geográfica de región de Costa Rica}}
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}
+
+== Localidades ==
+* '''Poblados:''' La Mina, Pinos (parte).
+* '''Barrios:''' La Chola, Calle San José, Pata de Gallo (parte), Bajo Las Palmas (parte).
+
+== Transporte ==
+=== Carreteras ===
+Al distrito lo atraviesan las siguientes rutas nacionales de carretera:
+*[[Archivo:CR RNT 713.svg|25px]] [[Ruta 713 (Costa Rica)|Ruta nacional 713]]
+*[[Archivo:CR RNT 714.svg|25px]] [[Ruta 714 (Costa Rica)|Ruta nacional 714]]
+
+== Referencias ==
+{{Listaref}}
+{{Control de autoridades}}
+[[Categoría:Distritos del cantón de Palmares]]

@@ -1,0 +1,70 @@
+{{Info/Município do Brasil
+<!-- GeoID=4110904 -->
+<!-- Cabeçalho -->| nome = Itaguajé
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = 
+| bandeira = 
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 30 de novembro
+| fundação = {{nowrap|{{dtlink|30|11|1951|idade}}}}
+| gentílico = itaguajeense
+| lema = 
+| prefeito = Renato Felix de Souza
+| partido = [[PSD]]
+| fim_mandato = 2028  <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| mapa = Parana Municip Itaguaje.svg
+| latP = S
+| latG = 22
+| latM = 37
+| latS = 04
+| lonP = O
+| lonG = 51
+| lonM = 57
+| lonS = 57
+| estado = Paraná
+| mesorregião = [[Mesorregião do Norte Central Paranaense|Norte Central Paranaense]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião = [[Microrregião de Astorga|Astorga]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Jardim Olinda]] (8 km), [[Paranapoema]] (8 km), [[Santa Inês (Paraná)|Santa Inês]] (9 km), [[Colorado (Paraná)|Colorado]] (25 km), [[Sandovalina]], [[São Paulo (estado)|SP]]
+| dist_capital = 533
+<!-- Características geográficas -->| área = 190.614
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R. PR-5/02)}}</ref>
+| população = 4568
+| data_pop = Censo [[IBGE]]/[[2010]]<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude = 349
+| clima = [[Tropical]]
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.723 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:30819.101}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 6685.27
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.itaguaje.pr.gov.br itaguaje.pr.gov.br]
+}}
+'''Itaguajé''' é um [[Município (Brasil)|município brasileiro]] da região noroeste do [[estados do Brasil|estado]] do [[Paraná]].
+
+==História==
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Em 14 de novembro de 1951, a lei estadual nº 790 elevou o distrito de Santo Inácio à condição de município, e o Patrimônio de Boa Esperança, à condição de distrito administrativo desse novo município, situação que se manteve até {{dtlink|26|11|1954}}, quando a lei estadual nº 253 alterou o nome de Boa Esperança para Itaguajé e o elevou à categoria de município autônomo, desmembrando-o de [[Santo Inácio (Paraná)|Santo Inácio]].<ref name=IBGEci>{{citar web|url= https://cidades.ibge.gov.br/brasil/pr/itaguaje/historico|título= Itaguajé|publicado=IBGE Cidades|acessodata=22/3/2022}}</ref> 
+
+== Hidrografia ==
+
+*[[Rio Paranapanema]]
+*[[Rio Pirapó]]
+*[[Usina Hidrelétrica de Taquaruçu]]
+
+{{referências}}
+
+{{Esboço-municípiosbr/Paraná}}
+{{sem imagem}}
+
+[[Categoria:Itaguajé| ]]
+[[Categoria:Fundações no Paraná em 1954]]
+[[Categoria:Colonização espanhola do Paraná]]

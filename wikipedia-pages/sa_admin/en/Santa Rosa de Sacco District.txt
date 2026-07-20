@@ -1,0 +1,124 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Santa Rosa de Sacco
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| pushpin_map             = Peru
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Santa Rosa de Sacco in the [[Yauli Province|Yauli]] province
+| coordinates             = {{Coord|-11.5662|-75.9564|display=title}}
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Junín Region|Junín]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Yauli Province|Yauli]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = June 1, 1968
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Santa Rosa de Sacco]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Hugo Donato Huaman Timoteo
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 101.09
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3845
+| population_footnotes    = 
+| population_total        = 11806
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 120808
+| website                 = 
+| footnotes               = 
+}}
+
+'''Santa Rosa de Sacco District''' is one of ten [[Districts of Peru|districts]] of the province [[Yauli Province|Yauli]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = La Oroya, Santa Rosa de Sacco, elevation {{convert|3842|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 15.4
+|Feb high C = 15.1
+|Mar high C = 15.0
+|Apr high C = 15.5
+|May high C = 16.0
+|Jun high C = 15.6
+|Jul high C = 15.3
+|Aug high C = 15.7
+|Sep high C = 15.8
+|Oct high C = 16.0
+|Nov high C = 16.8
+|Dec high C = 15.5
+|year high C = 
+|Jan low C = 3.4
+|Feb low C = 4.1
+|Mar low C = 4.0
+|Apr low C = 2.7
+|May low C = 0.4
+|Jun low C = -1.7
+|Jul low C = -2.3
+|Aug low C = -1.3
+|Sep low C = 0.9
+|Oct low C = 2.1
+|Nov low C = 2.3
+|Dec low C = 3.4
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 93.2
+|Feb precipitation mm = 102.8
+|Mar precipitation mm = 81.2
+|Apr precipitation mm = 46.6
+|May precipitation mm = 22.3
+|Jun precipitation mm = 13.5
+|Jul precipitation mm = 13.3
+|Aug precipitation mm = 17.4
+|Sep precipitation mm = 37.3
+|Oct precipitation mm = 52.0
+|Nov precipitation mm = 57.0
+|Dec precipitation mm = 91.0
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Yauli Province}}
+
+[[Category:Districts of the Department of Junín]]
+[[Category:Districts of the Yauli province]]
+
+
+{{Junín-geo-stub}}

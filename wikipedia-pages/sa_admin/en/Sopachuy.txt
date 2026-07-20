@@ -1,0 +1,130 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Sopachuy
+|other_name             =
+|native_name            =  
+|nickname               = 
+|settlement_type        = <!--For Town or Village (Leave blank for the default City)-->
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = Vista de Sopachuy.jpg
+|imagesize              = 
+|image_caption          = view on Sopachuy
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|image_map1             = 
+|mapsize1               = 
+|map_caption1           = 
+|image_dot_map          =
+|pushpin_map            = Bolivia<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location within Bolivia
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Image:Flag of Bolivia.svg|25px]] [[Bolivia]]
+|subdivision_type1      = [[Departments of Bolivia|Department]]
+|subdivision_name1      = [[Chuquisaca Department]]
+|subdivision_type2      = [[Provinces of Bolivia|Province]]
+|subdivision_name2      = [[Tomina Province]]
+|subdivision_type3      = [[Municipalities of Bolivia|Municipality]]
+|subdivision_name3      = [[Sopachuy Municipality]]
+|subdivision_type4      =  
+|subdivision_name4      =  
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = Mayor
+|leader_name            = Mario Núñez S. (2010–15)<ref>{{cite web |url=https://docplayer.es/59827398-A-los-cuatro-vientos-proclamo-con-amor-desmedido-mi-pasion-a-esta-tierra-radiante-y-fecunda-cuna-de-unidad-y-fervor.html |title=A los cuatro vientos proclamo con amor desmedido mi pasión a esta tierra radiante y fecunda cuna de unidad y fervor |at=section 3 |trans-title=To the four winds I proclaim with boundless love my passion for this radiant and fertile land, cradle of unity and fervor |language=es |archive-url=https://web.archive.org/web/20231210160140/https://docplayer.es/59827398-A-los-cuatro-vientos-proclamo-con-amor-desmedido-mi-pasion-a-esta-tierra-radiante-y-fecunda-cuna-de-unidad-y-fervor.html |archive-date=10 December 2023 |access-date=17 August 2024}}</ref>
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|leader_title2          =
+|leader_name2           =
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           = 741
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               = 2001
+|population_footnotes           =
+|population_note                =
+|population_total               = 7.241
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        = 
+|population_blank1              = 
+|population_blank2_title        =
+|population_blank2              =
+|population_density_blank1_km2 =   
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = BOT
+|utc_offset             = -4
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|19|11|S|64|28|W|region:BO|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 2080
+|elevation_ft           = 
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                = 
+|footnotes              = 
+}} 
+'''Sopachuy''' is a town located in [[Tomina Province]] in the [[Chuquisaca Department]] in south-central [[Bolivia]]. It is the seat of the [[Municipalities of Bolivia|municipality]] of the same name. At the time of the [[2001 Bolivian census|2001 census]], the municipality had 7,241 inhabitants.<ref>{{cite web |url=https://www.udape.gob.bo/portales_html/portalSIG/atlasUdape1234567/atlas04_2003/CUADROS/Poblacion.htm |title=Municipios: Población Total Área y Sexo, Censo 2001 |language=es |trans-title=Municipalities: Total Population Area and Sex, 2001 Census |access-date=17 August 2024}}</ref>
+
+Sopachuy was founded on 30 October 1581, and was the site of the [[Battle of Sopachuy]] in 1817.
+
+== References ==
+{{reflist}}
+
+{{Chuquisaca Department}}
+{{coord|19|29|S|64|28|W|display=title|region:BO_type:city_source:GNS-enwiki}}
+
+[[Category:Populated places in Chuquisaca Department]]

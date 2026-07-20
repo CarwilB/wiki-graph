@@ -1,0 +1,97 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->| official_name            = Santa María Chiquimula
+| other_name               = 
+| native_name              = <!-- for cities whose native name is not in English -->
+| nickname                 = 
+| settlement_type          = Municipality
+| motto                    = <!-- images and maps  ----------->
+| image_skyline            = Iglesia católica de Santa María Chiquimula.jpg
+| image_caption            = Catholic church of Santa María Chiquimula
+| image_flag               = 
+| flag_size                = 
+| image_seal               = 
+| seal_size                = 
+| image_shield             = Escudo de Santa María Chiquimula.jpg
+| shield_size              = 
+| image_map                = Totonicapán - Santa María Chiquimula.png
+| mapsize                  = 150px
+| map_caption              = Santa María Chiquimula within Totonicapán
+| image_map1               = TotonicapanGUAT.PNG
+| mapsize1                 = 150px
+| map_caption1             = Totonicapán within Guatemala
+| pushpin_map              = <!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+| pushpin_label_position   = bottom
+| pushpin_map_caption      = <!-- Location ------------------>
+| subdivision_type         = Country
+| subdivision_name         = [[Image:Flag of Guatemala.svg|25px]] [[Guatemala]]
+| subdivision_type1        = [[Departments of Guatemala|Department]]
+| subdivision_name1        = [[Image:Flag of Totonicapán Department.svg|25px]] [[Totonicapán Department|Totonicapán]]
+| subdivision_type2        = 
+| subdivision_name2        = <!-- Politics ----------------->
+| government_footnotes     = 
+| government_type          = [[Municipal]]
+| leader_title             = Mayor
+| leader_name              = 
+| leader_title1            = <!-- for places with, say, both a mayor and a city manager -->
+| leader_name1             = 
+| established_title        = <!-- Settled -->
+| established_date         = 
+| established_title2       = <!-- Incorporated (town) -->
+| established_date2        = 
+| established_title3       = <!-- Incorporated (city) -->
+| established_date3        = <!-- Area    --------------------->
+| unit_pref                = <!--Enter: Imperial, if Imperial (metric) is desired-->
+| area_footnotes           = 
+| area_total_km2           = 236<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+| area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+| area_water_km2           = <!-- Population   ----------------------->
+| population_as_of         = 2018 census
+| population_footnotes     = <ref>[https://www.citypopulation.de/en/guatemala/admin/ Citypopulation.de] Population of Department and municipalities in Guatemala</ref>
+| population_note          = 
+| population_total         = 55013
+| population_density_km2   = auto
+| population_blank1_title  = Ethnicities
+| population_blank1        = [[Kʼicheʼ people|Kʼicheʼ]], [[Ladino people|Ladino]]
+| population_blank2_title  = Religions
+| population_blank2        = [[Catholicism]], [[Evangelicalism]], [[Maya religion|Maya]]
+<!-- General information  --------------->| timezone                 = 
+| utc_offset               = 
+| timezone_DST             = 
+| utc_offset_DST           = 
+| coordinates              = {{coord|15|01|45|N|91|19|46|W|region:GT|display=inline}}
+| elevation_footnotes      = <ref name="Muni_geo">{{cite web |url=http://munisantamariachiquimula.org/datosgeograficos.htm |title=Santa María Chiquimula. Datos geográficos |accessdate=2012-02-28 |publisher=Municipalidad de Santa María Chiquimula |url-status=dead |archiveurl=https://web.archive.org/web/20120218204530/http://munisantamariachiquimula.org/datosgeograficos.htm |archivedate=2012-02-18 }}</ref>
+| elevation_m              = 2130
+| elevation_max_m          = 
+| elevation_min_m          = <!-- Area/postal codes & others -------->
+| postal_code_type         = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal_code              = 
+| area_code                = 
+| blank_name               = [[Köppen climate classification|Climate]]
+| blank_info               = [[Oceanic climate#Subtropical highland variety (Cfb, Cwb)|Cwb]]
+| website                  = [http://munisantamariachiquimula.org Official site]
+| footnotes                = 
+}}
+
+'''Santa María Chiquimula''' is a town, with a population of 15,919 (2018 census),<ref>[https://www.citypopulation.de/en/guatemala/cities/ Population of cities & towns in Guatemala]</ref> and a [[Municipalities of Guatemala|municipality]] in the [[Totonicapán Department|Totonicapán department]] of [[Guatemala]]. Located in the western highlands of Guatemala at an altitude of 2130 metres.<ref name="Muni_geo"/> The municipality has an area of {{cvt|236|km2}} and a population of 55,013 (2018 census). The Mayan [[Kʼicheʼ language]] is spoken among the indigenous people here, but [[Spanish language|Spanish]] is also widely spoken. The main products of the region are corn and black beans.
+
+[[Image:Guat2004 0416 160148chiquimula.JPG|thumb|Welcome sign for Santa María Chiquimula, 2004-04-16]]
+
+==Dialect==
+
+The [[Kʼicheʼ language|Kʼicheʼ]] spoken in Santa María Chiquimula is marked by intervocalic {{IPA|/l/}} transitioning into {{IPA|[ð]}}, especially among women.<ref>{{Cite book|title=Language and Ethnicity among the Kʼicheeʼ Maya|last=Romero|first=Sergio|year=2015|pages=42|language=English|chapter=“Each Town Speaks Its Own Language”: The Social Value of Dialectal Variation in Kʼicheeʼ |isbn=9781607813989}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Commons category-inline|Santa María Chiquimula}}
+
+{{Totonicapán Department}}
+{{Authority control}}
+
+{{DEFAULTSORT:Santa Maria Chiquimula}}
+[[Category:Municipalities of the Totonicapán Department]]
+
+
+{{Guatemala-geo-stub}}

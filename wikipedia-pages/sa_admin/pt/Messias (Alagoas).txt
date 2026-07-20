@@ -1,0 +1,69 @@
+{{Info/Município do Brasil
+<!-- GeoID=2705200 -->
+<!-- Cabeçalho -->
+|nome                 = Messias
+|foto                 = 
+|leg_foto             = 
+|apelido              = Curralinho
+<!-- Dados gerais -->
+|brasão               =
+|bandeira             =
+|link_brasão          = 
+|link_bandeira        = 
+|link_hino            = 
+|aniversário          =6 de setembro
+|fundação             ={{dtlink|||1962|idade}}
+|gentílico            =messiense
+|lema                 = Messias, terra de progresso e liberdade!
+|padroeiro            = [[São Sebastião]]
+|prefeito             = Marcos José Herculano da Silva<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/al/messias|título=Candidatos a vereador Messias-AL|publicado=Estadão|acessodata =9 de junho de 2021}}</ref>
+|partido              = [[Partido Trabalhista Brasileiro (1981)|PTB]]
+|fim_mandato          = 2024
+<!-- Localização -->
+|mapa                 = Messias.png
+|latP                 =S   | latG =09| latM =22    | latS =58
+|lonP                 =O   | lonG =35| lonM =50    | lonS =31
+|estado               = Alagoas
+|mesorregião          = [[Mesorregião do Leste Alagoano|Leste Alagoano]]
+|data_mesorregião     = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+|microrregião         = [[Microrregião da Mata Alagoana|Mata Alagoana]]
+|data_microrregião    = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+|região_metropolitana = [[Região Metropolitana de Maceió|Maceió]]
+|vizinhos             = [[Murici (Alagoas) |Murici]], [[Flexeiras]], [[Rio Largo]] e [[Maceió]]
+|dist_capital         = 33
+<!-- Características geográficas -->
+|área                 = 112.856
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|população            = 18031
+|data_pop             = Estimativa [[IBGE]]/[[2020]]<ref name="IBGE_Pop_2020">{{citar web |url = https://cidades.ibge.gov.br/brasil/al/messias/panorama |título=Estimativa Populacional 2020| obra = Estimativa Populacional IBGE|publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2020 |acessodata = 3 de julho de 2021}}</ref>
+|altitude             = 148
+|clima                = Tropical Chuvoso
+|sigla_clima          = 
+<!-- Indicadores -->
+|idh                  = 0.598 <!--favor manter o formato-->
+|data_idh             = [[PNUD]]/[[2000]]<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+|pib                  = {{formatnum:51962.534}} mil
+|data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+|pib_per_capita       = 3342.29
+|data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+|site_prefeitura      = [http://www.messias.al.gov.br/ messias.al.gov.br]
+}}
+'''Messias''' é um [[município]] [[brasil]]eiro do [[Unidades federativas do Brasil|estado]] de [[Alagoas]], localizado na [[Região Metropolitana de Maceió]].
+
+== História ==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Messias (até 1943: Floriano), antigo distrito subordinado ao município de [[Murici (Alagoas)|Murici]] e (a partir de 1960) [[Flexeiras]], foi elevado à categoria de município pela lei nº 2475 de 6 de setembro de 1962. Um dos expoentes que contribuíram para a emancipação do Município foi o então Deputado Estadual Pedro Timóteo Acioli Filho, co-fundador de Messias, Branquinha e Flexeiras.<ref>{{citar web |url= http://biblioteca.ibge.gov.br/visualizacao/dtbs/alagoas/messias.pdf |titulo=Messias - Histórico (IBGE) |primeiro= |último=|work=biblioteca.ibge.gov.br |ano=2008 |acessodata=21 de agosto de 2012}}</ref>
+
+==Geografia==
+Seus limites são: [[Flexeiras]], ao norte e ao leste; [[Rio Largo]], ao sul e [[Murici (Alagoas)|Murici]], a oeste.
+
+{{Referências}}
+
+{{esboço-municípiosbr/Alagoas}}
+{{Municípios de Alagoas}}
+{{Região Metropolitana de Maceió}}
+{{Portal3|Brasil}}
+
+{{DEFAULTSORT:Messias (Alagoas)}}
+[[Categoria:Municípios de Alagoas]]
+[[Categoria:Fundações em Alagoas em 1962]]

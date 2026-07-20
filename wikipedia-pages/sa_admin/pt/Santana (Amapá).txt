@@ -1,0 +1,398 @@
+{{Info/Município do Brasil
+<!-- GeoID=1600600 -->
+<!-- Cabeçalho -->| nome = Santana
+| foto = Porto de Santana, Amapá.jpg
+| leg_foto = Porto de Santana
+| apelido = [[Lista de apelidos das cidades no Brasil|Cidade-Porto do Amapá]]
+<!-- Dados gerais -->| brasão = Brasao de Santana.jpg
+| bandeira = Bandeira de Santana.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Santana
+| aniversário = 17 de dezembro<ref name=”Geral”>[http://www.amapadigital.net/santana.php Amapá Digital]</ref>
+| fundação = {{nowrap|{{dtlink|4|2|1758|idade}}}}<ref name=”Geral”/>
+| emancipação = {{nowrap|{{dtlink|17|12|1987|idade}}}}<br />- de [[Macapá]]<ref name=”Geral”/>
+| gentílico = [[wikt:santanense|santanense]]<ref name=”Geral”/>
+| CEP = 68.925-001 a 68.939-999<ref name="Correios">{{Citar web|url= http://www.buscacep.correios.com.br/sistemas/buscacep/resultadoBuscaFaixaCEP.cfm |titulo=CEP de cidades brasileiras|publicado=[[Empresa Brasileira de Correios e Telégrafos|Correios]]|acessodata=31 de Julho de 2008}}</ref>
+| padroeiro = [[Ana, mãe de Maria|Santa Ana]]
+| prefeito = [https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Bala_Rocha Bala Rocha]
+| partido = [[Progressistas|PP]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Amapa Municip Santana.svg
+| latP = S
+| latG = 00
+| latM = 02
+| latS = 06
+| lonP = O
+| lonG = 51
+| lonM = 10
+| lonS = 30
+| estado = Amapá
+| região_intermediária = Macapá
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=6 de novembro de 2017}}</ref>
+| região_imediata = Macapá
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = [[Região Metropolitana de Macapá|Macapá]]
+| vizinhos = [[Macapá]] a '''nordeste'''; foz do [[rio Amazonas]] a '''sudeste'''; [[Mazagão (Amapá)|Mazagão]] a '''sudoeste'''; [[Porto Grande]] a '''nordoeste'''.
+| dist_capital = 30
+| dist_capital_ref = <ref name="Distância">www.rotamapas.com.br</ref>
+<!-- Características geográficas -->| área = 1541.224<!--favor manter o formato-->
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=https://www.ibge.gov.br/geociencias-novoportal/organizacao-do-territorio/estrutura-territorial/2225-np-areas-dos-municipios/15761-areas-dos-municipios.html?t=destaques&c=1600600 |título=Áreas dos Municípios |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=15 de janeiro de 2013 |acessodata=6 de novembro de 2017 |wayb=20171106155114}}</ref>
+| área_pos = [[Lista de municípios do Brasil por área|BR: 933º]] AP: 16º
+| área_urbana = {{Formatnum: 24.536}}
+| área_urbana_ref = est. [[Embrapa]]<ref name="Embrapa_RR">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/rr.html |arquivourl=http://www.webcitation.org/62IGZi5e0 |arquivodata=8 de outubro de 2011 |titulo=Roraima |autor=[[Embrapa Monitoramento por Satélite]] |acessodata=8 de outubro de 2011}}</ref>
+| área_urbana_pos = AP: 2º
+| distritos = Santana, [[Anauerapucu]], [[Igarapé do Lago]], [[Ilha de Santana]], [[Piaçacá]] e [[Pirativa]]
+| população = 119610
+| data_pop = estimativa [[IBGE]]//[[2018]]<ref name="Estimativa 2018">{{citar web |url=ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2018/estimativa_dou_2018.pdf |publicado = Instituto Brasileiro de Geografia e Estatística (IBGE) |titulo= Estimativa populacional 2018 |acessodata= 29 de agosto de 2018 }}</ref>
+| população_pos = BR: 276º [[Lista de municípios do Amapá por população|AP: 2º]]
+<!-- |densidade = Se os parâmetros "população" e "área" são informados corretamente (usando ponto no lugar de vírgula, sem inserir espaços entre os dígitos e sem acrescentar caracteres que não sejam algarismos), NÃO é necessário informar a densidade, pois nesse caso ela é calculada *automaticamente* -->| altitude = 15
+| clima = [[Clima tropical|tropical]]<ref name="Clima">[https://pt.climate-data.org/america-do-sul/brasil/amapa/santana-33753/ Climate-data]</ref>
+| sigla_clima = Am
+<!-- Indicadores -->| idh = 0.692<!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD">{{citar web |url=http://atlasbrasil.org.br/2013/pt/perfil_m/santana_ap|titulo=Perfil do município de Santana - AP|autor= Programa das Nações Unidas para o Desenvolvimento |publicado= Atlas do Desenvolvimento Humano no Brasil 2013 |data= 2010 |acessodata= 28 de dezembro de 2013 }}</ref>
+| idh_pos = BR: 2134°
+| gini = {{Formatnum:0.55}}
+| data_gini = [[PNUD]]/[[2010]]<ref name="PNUD"/>
+| pib = {{formatnum: 1809277.000}} mil<!--favor manter o formato-->
+| data_pib = [[IBGE]]/[[2016]]<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=destaques&c=5300108 |título=Produto Interno Bruto dos Municípios - 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=28 de dezembro de 2018 |wayb=20180210213403}}</ref>
+| pib_pos = [[Lista de municípios do Amapá por PIB|AP: 2º]]
+| pib_per_capita = 15891.21
+| data_pib_per_capita = (AP: 6º) - [[IBGE]]/2016<ref name="IBGE_PIB"/>
+<!-- Página oficial -->| site_prefeitura = [https://santana.ap.gov.br/ santana.ap.gov.br]
+| site_câmara = [https://santana.ap.leg.br/ santana.ap.leg.br]
+}}
+'''Santana''' é um [[Município (Brasil)|município brasileiro]] no [[Unidades federativas do Brasil|estado]] do [[Amapá]], [[Região Norte do Brasil|Região Norte]] do país. Santana tem uma conurbação com o município de [[Macapá]], a capital do estado, formando a [[Região Metropolitana de Macapá]]. As duas totalizam quase 630 mil habitantes em [[2018]].<ref name="Estimativa 2018"/>
+
+É o segundo município mais populoso do estado, com cerca de 120 mil habitantes, conforme estatísticas de [[2018]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE).<ref name="Estimativa 2018"/> É conhecida por ''Cidade-Porto do Amapá'' por sediar o [[Porto de Santana|principal porto do estado]] do [[Amapá]].
+
+== História ==
+A história do município de Santana teve início do agrupamento populacional na Ilha de Santana, localizada em frente, à margem esquerda do rio Amazonas, em [[1753]]. Os primeiros habitantes eram moradores portugueses e mestiços vindos do Pará, além de indígenas Tucuju vindos de aldeamentos originários do [[Rio Negro]] e comandados pelo português Francisco Portilho de Melo. Contrabandista de pedras preciosas e escravos, Portilho (ou Portillo) evadiu-se para esta região fugindo das autoridades fiscais paraenses em razão do comércio clandestino de escravos e metais.<ref name=”Geral”/>
+
+Santana em muitos aspectos aproxima-se do que ocorrera com a cidade de Macapá, no momento em que o Governador do  [[Estado do Grão-Pará e Maranhão]] (Capitão-General [[Francisco Xavier de Mendonça Furtado]]), fundou a Vila de São José de Macapá no dia [[4 de fevereiro]] de [[1758]]. Prosseguiu viagem para a [[Capitania de São José do Rio Negro]] e deparou-se com a Ilha de Santana, situada na margem esquerda do Rio Amazonas, elevando-a à categoria de povoado.<ref name=”Geral”/>
+
+Em [[31 de agosto]] de [[1981]], Santana é elevada a categoria de Distrito de Macapá, através da Lei nº 153/81-PMM, sendo o distrito instalado oficialmente em [[1 de janeiro]] de [[1982]], e o pioneiro Francisco Correa Nobre como o primeiro Agente Distrital. Santana foi elevada à categoria de município através do Decreto-lei nº 7639 de [[17 de dezembro]] de [[1987]]. Através do Decreto (P) nº 0894 de [[1 de julho]] de [[1988]], o Governador [[Jorge Nova da Costa]] nomeia o professor Heitor de Azevedo Picanço, para exercer o cargo de Prefeito Interino, que estruturou a administração pública municipal, criando condições para o futuro prefeito que seria eleito diretamente pelo povo em [[15 de novembro]] de [[1988]], Rosemiro Rocha Freires.<ref name=”Geral”/>
+
+== Geografia ==
+Santana, de acordo com a divisão do [[Instituto Brasileiro de Geografia e Estatística]] vigente desde 2017,<ref>{{citar web|URL=https://www.ibge.gov.br/geociencias-novoportal/cartas-e-mapas/redes-geograficas/2231-np-divisoes-regionais-do-brasil/15778-divisoes-regionais-do-brasil.html |título=Divisão Regional do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=6 de novembro de 2017 |wayb=20171106152751}}</ref> pertencia às Regiões Geográficas [[Região geográfica intermediária|Intermediária]] e [[Região geográfica imediata|Imediata]] de Macapá.<ref name="IBGE_DTB_2017"/> Até então, com a vigência das divisões em [[Microrregiões do Brasil|microrregiões]] e [[Mesorregiões do Brasil|mesorregiões]], o município fazia parte da [[microrregião de Macapá]], que por sua vez estava incluída na [[mesorregião do Sul do Amapá]].<ref>{{Citar periódico |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |ano=1990 |título=Divisão regional do Brasil em mesorregiões e microrregiões geográficas |jornal=Biblioteca IBGE |página=29 |volume=1 |url=http://biblioteca.ibge.gov.br/visualizacao/livros/liv2269_1.pdf |acessadoem=6 de novembro de 2017 |wayb=20171106152422}}</ref>
+
+Localizada na desembocadura do [[Rio Amazonas]] e na região centro-sul do estado, Santana é o menor município do [[Amapá]] em área territorial. A área do município é menor inclusive que a da capital [[Macapá]] (cerca de um quarto deste, a qual é conurbana e a distância entre o centro de ambas é de 30 km), possuindo 1 541,22 km².<ref name ="IBGE_Área"/>
+
+Seus limites são [[Macapá]] (a '''nordeste'''), a foz do [[Rio Amazonas]] (a '''sudeste''') e [[Mazagão (Amapá)|Mazagão]] (a '''sudoeste''').<ref name=”Geral”/>
+
+===Distâncias===
+Santana está situado a:<ref name="Distância"/>
+*30&nbsp;km de Macapá
+*282&nbsp;km de Laranjal do Jari
+*587&nbsp;km de Oiapoque
+*336&nbsp;km de Belém (linha reta)
+*1 785&nbsp;km de Brasília (linha reta)
+*2 657&nbsp;km de São Paulo (linha reta)
+*2 685&nbsp;km do Rio de Janeiro (linha reta)
+
+===Vegetação===
+No município são cinco as vegetações predominantes: [[cerrado]], [[floresta tropical]] densa, área alagada, [[floresta de várzea]] e tensão ecológica.<ref name=”Geral”/>
+
+===Hidrografia===
+Há no município vários [[rio]]s e [[igarapé]]s, e os mais importantes são o [[rio Amazonas]], [[rio Matapi]], rio Maruanum, rio Tributário, rio Piaçacá, [[rio Vila Nova]], [[Igarapé do Lago]] e Igarapé Fortaleza.<ref name=”Geral”/>
+
+=== Clima ===
+O clima em Santana é tropical. Segundo a Köppen e Geiger a classificação do clima é Am. Santana tem uma temperatura média de 27,1 °C.<ref name="Clima"/>
+
+Em Santana na maioria dos meses do ano existe uma pluviosidade significativa. Só existe uma curta época seca e não é muito eficaz. A pluviosidade média anual é 2 465 mm.<ref name="Clima"/>
+
+== População ==
+A população de Santana é de uma [[cidade média]], ou seja, acima de 100 mil habitantes. Segundo o Censo de [[2010]] a população de Santana era de 101.262 habitantes. 
+
+Atualmente, Santana possui de acordo com estimativas do IBGE {{fmtn|119610}} habitantes e {{fmtn|77.61|hab/km²}} e atualmente é o [[Lista de municípios do Brasil por população|276º município brasileiro mais populoso]] e o [[Lista de municípios do Amapá por população|2º maior município estadual]] em população, estando atrás da [[Macapá|capital do estado]].<ref name="Estimativa 2018"/>
+
+{{Evolução demográfica de Santana}}
+
+== Política ==
+{{imagem múltipla
+ | align     = right
+ | direction = vertical
+ | header    = Símbolos de Santana | header_align = center | footer_align = center | width     = 210
+ | image1    = Brasao de Santana.jpg | caption1 = Brasão
+ | image2    = Bandeira de Santana.jpg | caption2  = Bandeira
+}}
+Com a [[Constituição de 1988]] ficou determinado a Santana um [[Nova República|novo perfil a política local]], que obtém mais verbas do [[União (Brasil)|governo federal]] e adquire mais responsabilidades na saúde, educação e segurança. Segundo o CAGED, há no total 8 estabelecimentos do setor público atuando na cidade,<ref name=CAGED/> onde trabalham 2.864 servidores (densidade de 2,6 servidores para cada 100 habitantes).<ref name="REM-F">[https://www1.folha.uol.com.br/remf/#/municipio/4656/santana Ranking de Eﬁciência dos Municípios] – Folha</ref>
+
+=== Indicadores ===
+O Índice Firjan de Gestão Fiscal (IFGF) é um indicador que tem como objetivo medir o grau de responsabilidade administrativa por meio de indicadores que mostram o grau de evolução das políticas de recursos públicos e gestão fiscal dos municípios brasileiros. A leitura do IFGF varia entre 0 (gestão ruim) e 1 (gestão perfeita) e Santana atingiu o índice IFGF de 0.2781 em 2013 (4586º no país e 6º no estado).<ref name="IFGF">[http://www.firjan.org.br/IFGF/ Índice Firjan de Gestão Fiscal] - Sistema Firjan</ref> Já pelo Ranking de Eﬁciência dos Municípios – Folha (ou REM-F), que tem a finalidade de medir o grau de eficiência dos municípios brasileiros e vai de 0 (ineficiente) a 1 (eficiente), atestou que Santana atingiu índice de 0,348 (índice considerado ineficiente), colocando a cidade em 4.656º lugar no Brasil.<ref name="REM-F"/>
+
+=== Símbolos ===
+Os [[símbolo]]s do município de Santana são a [[bandeira]], o [[brasão]] e o [[Hino (canção)|hino]].
+
+=== Poder legislativo ===
+No legislativo possui 15 vereadores.<ref>[https://www.gazetadopovo.com.br/apuracao/resultados-eleicoes-2016-primeiro-turno/santana-ap/vereador/ Eleição vereadores]</ref> e é representado pela Câmara de Santana.
+
+=== Poder executivo ===
+É representado pela Prefeitura de Santana. O prefeito atual é [[Sebastião Bala Rocha|Bala Rocha]], do PP, eleito em 2020 para a gestão 2021-2024 e reeleito em 2024 para a gestão 2025-2028.<ref>https://g1.globo.com/ap/amapa/eleicoes/2024/resultado-das-apuracoes/santana-ap.ghtml#executivo </ref>
+
+=== Poder judiciário ===
+No judiciário Santana é uma [[Tribunal de Justiça do Amapá|comarca da Justiça Estadual]] e conta com um fórum. Possui as seguintes varas: <ref>{{Citar web|url=http://www.tjap.jus.br/portal/home/conheca-o-tribunal.html|titulo=Conheça o Tribunal|data=|acessodata=2017-11-24|obra=www.tjap.jus.br|publicado=|lingua=pt-br}}</ref>
+*3 Varas Cíveis de Competência Geral
+*2 Varas Criminais de Competência Geral
+*1 Vara de Infância e Juventude
+*1 Vara de Juizado Especial Cível e Criminal
+*1 Vara de Violência Doméstica por instalar
+
+==Esportes==
+Na cidade há o Estádio Augusto Antunes. Também há a Vila Olímpica, além do Ginásio Poliesportivo de Santana.<ref name=”Geral”/>
+
+==Economia==
+O município de Santana, segundo dados do [[Instituto Brasileiro de Geografia e Estatística|IBGE]], tinha em [[2016]] o Produto Interno Bruto de cerca de [[R$]] {{fmtn|1809277000.00}} e o PIB ''per capita'' era de R$ {{fmtn|15891.21}}.<ref name="IBGE_PIB"/>  Possui o [[Lista de municípios do Amapá por PIB|segundo maior]] [[Produto interno bruto]] (PIB) dentre os municípios do Amapá, sendo superado apenas pela [[Macapá|capital estadual]], estando caracterizada também como a [[Lista de municípios do Brasil por PIB|448ª maior economia do Brasil]]. 
+
+Santana, segundo o Cadastro Geral de Empregados e Desempregados (CAGED), possui no total 1.548 empresas.<ref name=CAGED>{{citar web|url=http://bi.mte.gov.br/bgcaged/caged_perfil_municipio/index.php|titulo=CAGED - Perfil do Município|publicado=Ministério do Trabalho e Emprego|acessodata=6 de fevereiro de 2015}}</ref> E segundo o Empresômetro esse número é ainda maior, totaliza mais de 4.800 empresas atuantes.<ref>[https://www.empresometro.com.br/Home/Estatisticas Empresômetro]</ref>
+
+===Setor primário===
+Nesse setor é comandado pela criação de gados bovino, bubalino e suíno, além da atividade pesqueira e a extração da madeira, além da venda de produtos tipicamente nortistas (madeira e açaí), que contribuem também para o desenvolvimento econômico de Santana. No [[setor primário]] do município há um total de 14 empresas segundo o CAGED.<ref name=CAGED/>
+
+===Setor secundário=== 
+Santana mantém sob o seu domínio o Distrito Industrial de Santana, cujo parque sofre constante ampliação. Entretanto, funcionam as empresas Flórida e Equador, e também as empresas Reama (que industrializa a Coca-Cola no Estado) e Amcel (responsável pela plantação de pinhos e eucalipto), dentre outras. Segundo o Caged, totalizam 119 estabelecimentos (sendo 116 industriais e 3 extrativos) atuando na cidade.<ref name=CAGED/>
+
+===Setor terciário=== 
+O comércio (incluindo a Área de Livre Comércio de Macapá e Santana - ALCMS) e os serviços contribuem economicamente. Segundo o CAGED, há no total 1.407 estabelecimentos de [[setor terciário]] atuando na cidade, sendo:<ref name=CAGED/> 
+*824 de comércio (sendo 766 varejista e 58 atacadista)
+*486 de serviços
+*89 de construção civil
+*8 de serviços industriais de utilidade pública 
+
+== Turismo e lazer ==
+Na [[Ilha de Santana (distrito)|Ilha de Santana]], que fica do outro lado da cidade, se encontra o Balneário Recanto da Aldeia, lugar bastante frequentado nos finais de semana.<ref name="”Geral”" />
+
+No centro de Santana também há a Praça Cívica que ao seu redor conta com pequenos restaurantes e pizzarias, além de também ser de frente para a Igreja de Nossa Senhora de Fátima e Sant'Ana, além disso há o templo Sede da Assembleia de Deus.
+
+==Cultura==
+A cultura de Santana é vibrante e diversa, marcada por eventos que refletem a forte religiosidade e a riqueza das tradições populares. O Círio de Nossa Senhora de Nazaré é um dos momentos mais esperados do calendário religioso da cidade, reunindo cerca de 50 mil pessoas no terceiro domingo de outubro. Para não coincidir com os tradicionais Círios de Belém e Macapá, realizados no segundo domingo do mês, a procissão em Santana carrega devoção e emoção, unindo fiéis em um espetáculo de fé que toma conta das ruas, enquanto flores, promessas e preces ecoam pela cidade.<ref name="”Geral”" />
+
+Outro destaque é a Festividade em honra a Sant’Ana, padroeira da cidade, celebrada no dia 27 de julho. Esta festa, assim como o "Santana na Roça" durante o período junino, são sinônimos de animação e tradição. Desde 1994, o ''Forrozão do Tio Gigante'' agita o mês de junho até o início de julho, com danças, cores e música que simbolizam a identidade cultural local. Grandes grupos juninos, como ''Constelação Junina'', ''Estrela Santanense'', ''Minha Deusa'' e ''Fogo na Roça'', transformam as festividades em uma verdadeira competição de talento e criatividade, cativando o público com coreografias impecáveis e figurinos deslumbrantes. No início do ano, o [[Divino Espírito Santo]] em [[2 de janeiro]] e realizados em [[29 de junho]] os festejos em louvor à [[Mãe de Deus]]<ref name="”Geral”" />, mantendo vivas as tradições religiosas que conectam a comunidade.
+
+A dança, outro elemento vital da cultura santanense, brilha durante todo o ano. Grupos como a ''Companhia de Dança Encanto Norte'', que une o tradicional e o contemporâneo, e a ''Companhia de Dança On Dance'', que oferece uma miscelânea de ritmos, promovem espetáculos que encantam públicos de todas as idades. Não podemos esquecer o ''Grupo de Dança Amigos da Toada Santana'', que mantém viva a essência da dança indígena e o boi-bumbá, com sua defesa apaixonada do ''Garantido''. Além desses, grupos como ''Xamã'' e ''Step Dance'' adicionam camadas à cena cultural de Santana, oferecendo desde danças folclóricas até performances modernas.<ref name="”Geral”" />
+
+No campo das artes cênicas, o ''Cine Teatro Municipal Silvio Romero'' é um verdadeiro símbolo cultural. Inaugurado em homenagem ao artista santanense Silvio Romero, falecido em 2011, o teatro ocupa uma área de mais de 2 mil metros quadrados e é um espaço fundamental para a promoção das artes na cidade. Com capacidade para 500 espectadores e infraestrutura moderna, o teatro se tornou palco de diversas apresentações artísticas, oficinas e eventos comunitários, contribuindo para o fortalecimento da cultura local. Além disso, o Cine Teatro oferece um ambiente acessível e inclusivo, com áreas projetadas para garantir o conforto de todos os visitantes.
+
+Em Santana, a cultura é um elo que une gerações e histórias, refletindo a pluralidade de uma comunidade que, ano após ano, transforma eventos tradicionais em grandes celebrações da identidade local.
+
+O ''Cine Teatro Municipal Silvio Romero'' é um espaço cultural localizado na Rua General Ubaldo Figueira, no bairro Nova Brasília, na cidade de Santana, Amapá. O teatro foi construído em homenagem ao artista santanense Silvio Romero, que faleceu em 2011 em um acidente de trânsito. [https://santana.ap.gov.br/inauguracao-do-cine-teatro-municipal-silvio-romero-tera-virada-cultural-e-atracao-nacional-2/ Matéria]
+[[Ficheiro:Cine teatro Silvio Romero.jpg|alt=Foto: Cine Teatro Silvio Romero|miniaturadaimagem|Cine Teatro Silvio Romero]]
+
+
+Com uma área de mais de 2 mil metros quadrados e um custo estimado de R$ 6 milhões, o projeto foi financiado através de emendas parlamentares do senador Davi Alcolumbre, em parceria com a Prefeitura de Santana. O teatro possui uma capacidade para acomodar 500 pessoas em seu salão principal, além de contar com um palco de 180 metros quadrados. Há também uma sala menor, com 80 lugares e um palco dedicado a apresentações mais íntimas.
+
+O prédio foi projetado para garantir acessibilidade, com rampas e elevadores que permitem o acesso a pessoas com mobilidade reduzida tanto no pavimento térreo quanto no superior. A estrutura inclui, ainda, uma sala de convenções, espaços para oficinas de teatro, música e arte, uma sala de leitura, área de espera, camarins masculino e feminino, bilheteria e videoteca. Além disso, dispõe de salas para administração, coordenação, secretaria, depósito e copa, oferecendo assim um ambiente completo para diversas atividades culturais.
+
+== Urbanização ==
+A zona urbana de Santana se divide em duas partes. A primeira e mais antiga se localiza na [[Ilha de Santana]] e a outra no continente, onde se localiza grande parte dos moradores. Entre ambas [http://wikimapia.org/#lang=pt&lat=-0.064373&lon=-51.168480&z=14&v=2 não há ligação por rodovias], apesar de serem bem próximas. A [[área urbana]], de {{Formatnum:24.536}} km², é a segunda maior do Amapá e praticamente se conurba com a da capital.<ref name="Embrapa_RR"/>
+
+=== Bairros ===
+{| class = "wikitable sortable" width = "100%"
+|+ style="caption-side:bottom; text-align: left;" | '''Referências:'''<ref name="Bairros ">{{citar web |url=http://populacao.net.br/os-maiores-bairros-santana_ap.html|título=Bairros de Santana |acessodata=12 de agosto de 2017|publicado=População-Net}}</ref>
+! Bairro	!! População
+|-
+| Paraíso || 17.434
+|-
+| Bairro dos Remédios || 12.607
+|-
+| Fonte Nova || 12.005
+|-
+| Central || 9.923
+|-
+| Comercial || 8.575
+|-
+| Hospitalidade	|| 8.533
+|-
+| Nova Brasília || 6.407
+|-
+| Provedor || 5.269
+|-
+| Elesbão || 4.737
+|-
+| Igarapé de Fortaleza  || 4.122
+|-
+| Novo Horizonte || 3.095
+|-
+| Vila Amazonas || 1.317
+|-
+| Daniel || 1.060
+|-
+| Outros bairros || 6.178
+|}
+
+=== Comunicação ===
+O município possui representação dos Correios, linha telefônica fixa normal, linha celular, emissoras de rádio e emissora de TV <ref name=”Geral”/>
+
+=== Saúde ===
+Na [[saúde]], existe dois hospitais:
+*Hospital Estadual de Santana
+*Hospital Vila Amazonas
+Alem de 5 [[Unidade básica de saúde|UBS]]
+
+* Policlinica Maria Tadeu
+* Unidade Basica de Saúde das laranjeiras
+* Unidade Basica de Saúde Dr. Iacy Alcântara
+* Posto de Saúde Antônio Sirieiro
+* Unidade Basica de Saúde Piçarreira 
+
+=== Educação ===
+Existem no município 36 escolas de [[ensino fundamental]] e 3 de [[ensino médio]], que são a Escola Estadual João Rogélio, Escola Estadual José Vieira Sales Guerra e a Escola Estadual Castelo Branco.
+
+Dentre os projetos do Plano de Desenvolvimento da Educação, vinculado ao Ministério da Educação, executado pelo INEP, Instituto Nacional de Estudos e Pesquisas Educacionais [[Anísio Teixeira]], na Região Norte, Estado do Amapá, as Escolas Públicas Urbanas estabelecidas de Santana obtiveram os seguintes IDEB (Índice de Desenvolvimento da Educação Básica), em 2005:
+
+{| class="wikitable"
+!colspan=3| IDEB, escola e ranking estadual
+|-
+! Nota
+| Escola
+| Ranking
+|-
+! 3,8
+| Escola estadual São Bento
+| 11º
+|-
+! 3,8
+| Escola estadual São Paulo
+| 12º
+|-
+! 3,7
+| Escola estadual Professora Joanira Del Castilo
+| 19º
+|-
+! 3,6
+| Escola estadual Everaldo da S. Vasconcelos Júnior
+| 33º
+|-
+! 3,6
+| Escola municipal Professor Maria Ilnah de Souza Almeida
+| 34º
+|-
+! 3,4
+| Escola municipal Amazonas
+| 54º
+|-
+! 3,4
+| Escola municipal Professora Gentila Anselmo Nobre
+| 55º
+|-
+! 3,3
+| Escola estadual São Benedito
+| 64º
+|-
+! 3,3
+| Escola estadual São João
+| 65º
+|-
+! 3,3
+| Escola municipal Padre Angelo Biraghi
+| 66º
+|-
+! 3,2
+| Escola estadual Fonte Nova
+| 77º
+|-
+! 3,2
+| Escola estadual Novo Horizonte
+| 78º
+|-
+! 3,2
+| Escola municipal Iranilde de Araújo Ferreira
+| 79º
+|-
+! 3,1
+| Escola estadual Almirante Barroso
+| 92º
+|-
+! 3,1
+| Escola estadual Padre Simão Corridori
+| 93º
+|-
+! 3,0
+| Escola estadual Professora Denise de Melo Vasconcelos
+| 105º
+|-
+! 3,0
+| Escola estadual Professora Izanete Victor dos Santos
+| 106º
+|-
+! 3,0
+| Escola estadual Professor José Ribamar Pestana
+| 107
+|-
+! 3,0
+| Escola estadual Professor Waldecy Correa Ferreira
+| 108º
+|-
+! 2,9
+| Escola municipal Padre Fulvio Giulliano
+| 117º
+|-
+! 2,7
+| Escola estadual Professor Afonso Arinos
+| 124º
+|-
+! 2,4
+| Escola estadual Ana Dias da Costa
+| 130º
+|-
+! 2,1
+| Escola municipal Piauí
+| 137º
+|-
+|}
+
+=== Abastecimento ===
+Conta com um sistema de rede de distribuição de [[água]]. 
+
+A [[energia elétrica]] é distribuída pela [[Companhia de Eletricidade do Amapá]] (CEA).
+
+=== Segurança ===
+Abaixo as delegacias e órgãos de segurança da cidade.
+* [[Polícia Militar do Estado do Amapá|11° Batalhão de Polícia Militar]]
+* [[Polícia Civil do Estado do Amapá#Delegacias do Interior|Delegacia de Polícia Civil]]
+* [[Polícia Civil do Estado do Amapá#Delegacias do Interior|Delegacia Civil de Crime Contra a Mulher]]
+* [[Polícia Civil do Estado do Amapá#Delegacias do Interior|Delegacia Civil da Infância e Juventude]]
+*[[13° Batalhão de Polícia Militar do Amapá|13° Batalhão de Polícia Militar (Batalhão Ambiental)]]
+
+=== Transporte ===
+====Aéreo====
+Por Santana se localizar praticamente conturbada com a capital, onde se localiza o [[Aeroporto Internacional de Macapá]], a população de Santana acaba fazendo uso deste para transporte aéreo.
+
+====Fluvial====
+Para as localidades vizinhas, as vias de acesso são feitas através dos transportes fluviais através do [[Porto de Santana]], principal porto do estado.<ref name=”Geral”/> 
+
+Ao Estado do [[Pará]] (por [[Almeirim]]) dá-se através de embarcações conhecidas na região por [[Catraia (embarcação)|catraias]]. Para algumas cidades, pode ser feito através de barcos com uma duração média de 16 horas.<ref name=”Geral”/>  
+
+====Terrestre====
+Já é possível fazer trajeto por via rodoviária e a principal [[estrada]] federal que passa no município é a [[BR-156]], que é grande parte asfaltada, mas tem muitos buracos e nem todo trajeto é pavimentado. Na cidade há o Terminal Rodoviário de Santana, com horário direto para [[Macapá]], [[Laranjal do Jari]], [[Mazagão]], [[Porto Grande]] e [[Oiapoque]].<ref>[https://pt.foursquare.com/v/terminal-rodovi%C3%A1rio-de-santana/4f4cd52de4b0b2a2fd13e46e Rodoviária de Santana] - foursquare.com</ref><ref>[https://www.guichevirtual.com.br/ Guichê Virtual]</ref>
+
+O transporte urbano é feito por empresas de ônibus atendendo a toda zona urbana.<ref name=”Geral”/>
+
+==Ver também==
+* [[Interior do Brasil]]
+* [[Lista de municípios do Amapá por população]]
+* [[Lista de municípios do Brasil acima de cem mil habitantes]]
+* [[Lista de prefeitos de Santana (Amapá)|Lista de prefeitos de Santana]]
+
+{{Referências|col=2}}
+
+== Ligações externas ==
+{{Correlatos
+|commonscat   = Santana (Amapá)
+|commons      = Santana (Amapá)
+|wikisource   = Hino do município de Santana (Amapá)
+|wikisourcecat   =
+|wikiquote    =
+|wikilivros   = 
+|wikinoticias =
+|wikinoticiascat =
+|wikcionario  = 
+}}
+* [http://WikiMapia.org/#y=-26779&x=-51145477&z=11&l=9&m=a Macapá, Santana e Mazagão no WikiMapia]
+
+{{Região Metropolitana de Macapá}}
+{{Subdivisões do Amapá}}
+{{Portal3|Brasil|Amapá}}
+
+[[Categoria:Santana (Amapá)| ]]
+[[Categoria:Fundações no Amapá em 1987]]

@@ -1,0 +1,89 @@
+{{Info/Município do Brasil
+<!-- GeoID=1709005 -->
+<!-- Cabeçalho -->| nome = Goiatins
+| foto = 
+| leg_foto = 
+| apelido = Piacá
+<!-- Dados gerais -->| brasão = Brasão_de_Goiatins.png
+| bandeira = Bandeira_de_Goiatins.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = {{dtlink|1|1|1954|idade}}
+| fundação = {{nowrap|{{dtlink|12|12|1953|idade}}}}<ref name="IBGE_Histórico">{{citar web |url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/tocantins/goiatins.pdf |arquivourl=https://www.webcitation.org/6Lc1MYeam?url=http://biblioteca.ibge.gov.br/visualizacao/dtbs/tocantins/goiatins.pdf |arquivodata=2013-12-04 |título=Goiatins  - Histórico |autor=[[Enciclopédia dos Municípios Brasileiros]] |data=2007 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=4 de dezembro de 2013 |urlmorta=no}}</ref>
+| gentílico = goiatinense<ref name="IBGE_Goiatins">{{citar web |url=https://cidades.ibge.gov.br/brasil/to/goiatins/panorama |título=Goiatins |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=30 de outubro de 2017 |wayb=20190811200621}}</ref>
+| lema = 
+| prefeito = Manoel Natalino Pereira Soares
+| partido = [[Avante (partido político)|Avante]]
+| fim_mandato = 2024
+| padroeiro = São [[Francisco de Assis]]
+<!-- Localização -->| mapa = Tocantins Municip Goiatins.svg
+| latP = S
+| latG = 07
+| latM = 42
+| latS = 36
+| lonP = O
+| lonG = 47
+| lonM = 18
+| lonS = 50
+| estado = Tocantins
+| região_intermediária = Araguaína
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=30 de outubro de 2017}}</ref>
+| região_imediata = Araguaína
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = [[Região Metropolitana de Araguaína|Araguaína]]<ref name="regmetro">{{citar periódico |url=https://doe.to.gov.br/diario/5624/download |título=Lei Complementar n.º 172, de 11 de fevereiro de 2026: Institui as Regiões Metropolitanas de Palmas, Araguaína e Gurupi, dispõe sobre sua organização e funcionamento, e adota outras providências. |acessodata=2026-02-12 |periódico=Diário Oficial do Estado do Tocantins |publicado=Estado do Tocantins |número=6 998 |autor=Tocantins |ano=2026 |pagina=1 |formato=pdf |arquivourl=https://archive.ph/2NCiB |arquivodata=2026-02-12 |arquivoformato=pdf |urlmorta=no}}</ref>
+| vizinhos = <small>'''Norte:''' [[Barra do Ouro]] e [[Filadélfia (Tocantins)|Filadélfia]];<br> '''Oeste:''' [[Itapiratins]] e [[Palmeirante]];<br> '''Sul:''' [[Recursolândia]] e [[Itacajá]];<br> '''Oeste:''' [[Carolina (Maranhão)|Carolina]] ([[Maranhão|MA]]) e [[Campos Lindos]].</small>
+| dist_capital = 380
+| distritos = [[Cartucho (Goiatins)|Cartucho]], [[Craolândia]] e Goiatins (sede)<ref name="IBGE_Distritos">{{citar web|URL=http://www.sidra.ibge.gov.br/bda/territorio/tabunitsub.asp?codunit=4749&nsub=10&z=t&o=4&i=P |arquivourl=http://www.webcitation.org/6Lc2v7Gzu |arquivodata=4 de dezembro de 2013 |título=Goiatins - Unidades territoriais do nível Distrito |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=9 de setembro de 2013 |acessodata=4 de dezembro de 2013}}</ref>
+<!-- Características geográficas -->| área = 6408.602
+| área_ref = <ref name="IBGE_Goiatins"/>
+| população = 12942
+| data_pop = estatísticas [[IBGE]]/2018<ref name="IBGE_Goiatins"/>
+| altitude = 192
+| clima = [[clima tropical|tropical]]
+| sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.576 <!--favor manter o formato-->
+| data_idh = [[Programa das Nações Unidas para o Desenvolvimento|PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |título=Ranking decrescente do IDH-M dos municípios do Brasil |autor=Atlas do Desenvolvimento Humano |data=29 de julho de 2013 |publicado=[[Programa das Nações Unidas para o Desenvolvimento]] (PNUD) |acessodata=9 de setembro de 2013 |wayb=20140708233352}}</ref>
+| pib = {{fmtn|149237.69|mil}}
+| data_pib = [[IBGE]]/2016<ref name="IBGE_PIB_2016">{{citar web |url=https://cidades.ibge.gov.br/brasil/to/goiatins/pesquisa/38/46996 |título=Produto Interno Bruto dos Municípios - 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=30 de outubro de 2017 |wayb=20190811200952}}</ref>
+| pib_per_capita = 11574.20
+| data_pib_per_capita = [[IBGE]]/2016<ref name="IBGE_PIB_2016"/>
+}}
+'''Goiatins''' é um [[Município (Brasil)|município brasileiro]] do [[unidades federativas do Brasil|estado]] do [[Tocantins]], [[Região Norte do Brasil|Região Norte]] do país. Sua população estimada em 2022 era de {{fmtn|12433}} habitantes.<ref name="IBGE_Goiatins"/>
+
+Ocupa a 19° colocação no estado, no que se refere a números populacionais. Em outro aspecto se destaca bastante em relação aos demais municípios do estado, ocupando a 7° posição em dimensão territorial. Sua extensa área o posiciona entre os maiores municípios do Brasil, se tratando de território, se mantendo assim na 225° colocação nacional, em uma escalada ocupada por 5 568 municípios brasileiros. 
+
+== História ==
+A história de Goiatins tem início a partir de um porto (Porto do Jabuti), onde era feita a travessia de [[sal]] pelas margens do [[Rio Manuel Alves Grande]]. No ano de 1919, o então porto foi desativado, devido à lenda de um peixe [[pirarara]], que arrastaria para o fundo do rio os animais dos tropeiros que faziam constantemente travessias neste porto. Em 1920, chega ao lugar o comerciante Montano Araripe Nunes (Montano Nunes), vindo de [[Balsas]], no [[Maranhão]], instalando o comércio do sal e dando início ao povoamento da região. Algumas décadas mais tarde ocorre um novo impulso de desenvolvimento na comercialização e exportação dos produtos agrícolas, com a inauguração das rodovias GO-388 (Goiatins–[[Araguaína]]) e GO-134 (Goiatins–[[Itacajá]]).<ref name="IBGE_Histórico"/>
+
+A área do atual município pertencia até então a [[Pedro Afonso (Tocantins)|Pedro Afonso]], vindo a emancipar-se pela lei estadual nº 891, de 12 de dezembro de 1953, com a denominação de Piacá. A instalação ocorreu em 1º de janeiro de 1954, recebendo seu nome atual (Goiatins) na década de 60. Na ocasião, constituía-se do Distrito-Sede e [[Craolândia]]. Pela lei municipal nº 2, de 9 de fevereiro de 1966, foi criado o distrito de [[Cartucho (Goiatins)|Cartucho]].<ref name="IBGE_Histórico"/>
+
+== Geografia ==
+De acordo com a [[Regiões geográficas intermediárias e imediatas|divisão regional vigente]] desde 2017, instituída pelo IBGE,<ref>{{citar web|URL=http://www.ibge.gov.br/home/geociencias/geografia/default_div_int.shtm |título=Divisão Regional do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=30 de outubro de 2017 |wayb=20171030151811}}</ref> o município pertence às [[Lista de regiões geográficas intermediárias e imediatas do Tocantins|Regiões Geográficas]] Intermediária e Imediata de Araguaína.<ref name="IBGE_DTB_2017"/> Até então, com a vigência das divisões em [[Mesorregiões e microrregiões do Brasil|microrregiões e mesorregiões]], fazia parte da microrregião do Jalapão, que por sua vez estava incluída na [[Lista de mesorregiões e microrregiões do Tocantins|mesorregião Oriental do Tocantins]].<ref name="IBGE_DTB_2016">{{citar web|URL=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2016/DTB_2016_v2.zip |título=Divisão Territorial Brasileira 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=30 de outubro de 2017}}</ref>
+
+Goiatins está situado à margem esquerda do [[Rio Manuel Alves Grande]], na região norte do estado do [[Tocantins]]. Tem acesso à capital, [[Palmas]], através da [[BR-153]]. Suas principais atividades econômicas são a agricultura de subsistência e pecuária.
+
+== Atrativos ==
+'''Praia Manuel Alves Grande:''' Atrai turistas do Brasil inteiro nas altas temporadas de praia no Estado, lugar aconchegante e de pura diversão. 
+
+'''Balneário Bráulio:''' Sem deixar dúvidas, Balneário Bráulio carrega uma das paisagens mais lindas do Brasil, bem natural composto por vários poços de águas cristalinas, sua exuberância atrai olhares de turistas de todo o mundo. Hoje é considerando uma das maiores riquezas naturais do Estado do Tocantins.  
+
+'''Evento Rally das águas:''' O evento mais esperado pelos goiatinenses e turistas, o Rally das Águas em Goiatins já virou tradição, considerado o maior evento aquático do Estado, é realizado durante a temporada de Praia, no mês de julho. O evento concentra uma presença massiva de turistas de todo o Estado, que junto com os moradores da cidade, realizam e contemplam todos os anos uma logística de descida de boias e balsas em curso do Rio Vermelho, sentido ao Rio Manuel Alves Grande. Se presencia um ambiente de muita diversão, reza a lenda, que quem ousa participar uma vez, jamais deixará de faltar ao evento anualmente, o Rally das Águas em Goiatins é com toda certeza um dos maiores eventos do Tocantins, vale a pena sentir a emoção e participar. 
+
+== Festas populares ==
+Festas populares: São Francisco de Assis, aniversário da cidade e Festa de São João.
+
+{{Referências|col=2}}
+
+== Ligações externas ==
+* {{Commonscat em linha|Goiatins}}
+* [http://www.goiatins.to.gov.br/ Prefeitura de Goiatins]
+
+{{Subdivisões do Tocantins}}
+{{Região Metropolitana de Araguaína}}
+{{Controle de autoridade}}
+{{Portal3|Geografia|Tocantins|Brasil}}
+
+{{Esboço-municípiosbr/Tocantins}}
+
+[[Categoria:Goiatins| ]]

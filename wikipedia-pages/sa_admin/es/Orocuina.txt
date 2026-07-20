@@ -1,0 +1,140 @@
+{{Ficha de entidad subnacional
+| nombre = Orocuina
+| nombre original = San Andrés de Orocuina
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| imagen = Orocuina Honduras.jpg
+| mapa_loc = Honduras
+| subdivisión = 9 aldeas y 143 caseríos
+| elevación_media = 117
+| superficie = 125.2
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 18970
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0610__orocuina/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| población_urb = 2639
+| densidad = 151.6
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''Orocuina''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]]. Se divide administrativamente en '''9 aldeas''' (incluyendo la cabecera municipal) y más de 140 caseríos.
+
+== Toponimia ==
+''Oloquiri'' es una palabra mexicana que significa “Río de los Olotes”.<ref name="Fiallos">Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref>
+
+== Límites ==
+{| class="wikitable"
+|+Límites de Orocuina
+!Orientación
+!Límite
+|-
+|Norte
+|Municipio de [[Soledad (Honduras)|Soledad]], El Paraíso
+|-
+|Sur
+|Municipio de [[Choluteca]], Choluteca
+|-
+| rowspan="2" |Este
+|Municipio de [[Liure]], El Paraíso
+|-
+|Municipio de [[Apacilagua]], Choluteca
+|-
+| rowspan="2" |Oeste
+|Municipio de [[Pespire]], Choluteca
+|-
+|Municipio de Choluteca, Choluteca<ref name="OT">{{enlace roto|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/orocuina.pdf|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/orocuina.pdf|bot=InternetArchiveBot}} Datos de organización territorial de Honduras</ref>
+|}
+
+== Datos históricos ==
+Orocuina fue en una época una aldea de Texíguat, que es un municipio del vecino departamento de El Paraíso. 
+
+Se ha dicho que San Andrés de Orocuina fue fundada en 1521 [cita requerida], pero para el historiador Marxis Lenin Hernández este es un claro error histórico, ya que para 1521 los españoles aún no habían llegado a la zona del [[Golfo de Fonseca]], recordando que [[Andrés Niño]] llega por esa zona hasta en 1522, descubriendo el mencionado golfo [cita requerida]. 
+
+En 1646, fue declarado Municipio.<ref>{{Cita web|url=https://odh.sedh.gob.hn/category/view/263/orocuina|título=DERECHOS HUMANOS EN CIFRAS|fechaacceso=2026-03-10|sitioweb=odh.sedh.gob.hn|idioma=en}}</ref>
+
+En 12 de octubre de 1908, se traslada la cabecera del Distrito de Orocuina a Apacilagua.<ref name="Fiallos" />
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 9,554 (50.4%)
+| valor1 = 50.4
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 9,417 (49.6%)
+| valor2 = 49.6
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 5,518 (29.1%)
+| valor1 = 29.1
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 11,802 (62.2%)
+| valor2 = 62.2
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 1,650 (8.7%)
+| valor3 = 8.7
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 16,332 (86.1%)
+| valor1 = 86.1
+| color1 = #109618
+| etiqueta2 = Urbano: 2,639 (13.9%)
+| valor2 = 13.9
+| color2 = #FF9900
+}}
+Orocuina tiene una población actual de 18,970 habitantes. De la población total, el 50.4% son hombres y el 49.6% son mujeres. Casi el 13.9% de la población vive en la zona urbana.<ref name="INE"/>
+
+== División política ==
+Aldeas: 9 (2021)
+
+Caseríos: 143 (2021)
+{| class="wikitable"
+|+Aldeas de Orocuina
+!Código
+!Aldea
+|-
+|061001
+|Orocuina (cabecera del municipio)
+|-
+|061002
+|Concepción
+|-
+|061003
+|El Barreal
+|-
+|061004
+|La Trinidad
+|-
+|061005
+|San Andrés
+|-
+|061006
+|San José
+|-
+|061007
+|Santa Ana
+|-
+|061008
+|Santa Cruz
+|-
+|061009
+|Santa Lucía
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Choluteca]]
+[[Categoría:Nueva España en 1646]]

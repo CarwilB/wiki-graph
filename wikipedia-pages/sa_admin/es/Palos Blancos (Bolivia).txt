@@ -1,0 +1,87 @@
+{{Ficha de entidad subnacional
+| nombre completo = Palos Blancos
+| unidad = [[Municipios de Bolivia|Municipio]]
+| bandera = 
+| escudo = 
+| mapa_loc = Bolivia
+| mapa_loc_1 = La Paz
+| mapa = <mapframe frameless align=center text="Municipio de Palos Blancos" width="300" height="420" zoom="9" latitude="-15.410900" longitude="-67.258400"> 
+  {
+    "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q1551606",
+    "properties": {
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "fill-opacity": 0.1,
+      "fill": "#4D87CA" 
+    }
+  }
+</mapframe>
+| pie_mapa = Mapa interactivo del municipio de Palos Blancos
+| tipo_superior_1 = [[Departamentos de Bolivia|Departamento]]
+| superior_1 = [[Departamento de La Paz (Bolivia)|La Paz]]
+| tipo_superior_2 = [[Provincias de Bolivia|Provincia]]
+| superior_2 = [[Provincia de Sud Yungas|Sud Yungas]]
+| dirigentes_títulos = [[Gobiernos Municipales de Bolivia|Alcalde]]
+| dirigentes_nombres = Jesús Chucamani Aguilar
+| fundación_fechas = 
+| nombre_fundación = 
+| superficie = 3 430
+| población = 27137
+| población_año = 2024
+| densidad = 
+| gentilicio = 
+| población_m = 12796
+| población_h = 14341
+}}
+
+'''Palos Blancos'''<ref>{{cita web |url=http://www.fichas.fam.bo/m/21104/Ley_786.pdf |título=Ley de 7 de febrero de 1986 |fechaacceso=24 de marzo de 2012 |autor=Gobierno de Bolivia |fecha=1986 |idioma=español }}</ref> es una pequeña [[ciudad]] y un [[Municipios de Bolivia|municipio]] de [[Bolivia]], ubicado en la región subandina en la [[provincia de Sud Yungas]] en el [[Departamento de La Paz (Bolivia)|departamento de La Paz]]. Tiene una superficie de 3430 [[km²]] y una población de 16&nbsp;786 habitantes ([[Instituto Nacional de Estadística de Bolivia|INE]] 2001).<ref>{{cita web |url=http://www.ine.gob.bo/indice/visualizador.aspx?ah=PC20102.HTM |título=Población Censo INE 2001 |fechaacceso=24 de marzo de 2012 |autor=Instituto Nacional de Estadística |fecha=2001 |idioma=español |urlarchivo=https://web.archive.org/web/20111113150222/http://www.ine.gob.bo/indice/visualizador.aspx?ah=PC20102.HTM |fechaarchivo=13 de noviembre de 2011 }}</ref>
+
+Limita al norte con la [[provincia de Franz Tamayo]], al oeste con las provincias de [[provincia de Larecaja|Larecaja]] y [[Provincia de Caranavi|Caranavi]], al este con el [[departamento del Beni]] y al sur con el municipio de [[La Asunta]].
+
+== Demografía ==
+[[Archivo:BAJO INICUA - MUNICIPIO PALOS BLANCOS (LA PAZ - BOLIVIA).jpg|miniatura|izquierda|Río Inicua]]
+De acuerdo con el [[censo boliviano de 2024]], la población del municipio de Palos Blancos es de 27 137 habitantes.<ref name="resultados2024">{{cita web|url=https://nubecpv.ine.gob.bo/index.php/apps/onlyoffice/s/fBDwRbxQKgAxegF?fileId=548802|título=Resultados CPV 2024|fechaacceso=29 de abril de 2025|fecha=Septiembre de 2024|editorial=Instituto Nacional de Estadística de Bolivia}}</ref>
+
+La población del municipio aumentó más del doble entre 1992 y 2024:
+{| class="wikitable"
+!Año
+!Habitantes (municipio)
+!Fuente
+|-
+|1992
+!12.643
+|<small>Censo</small>
+|-
+|2001
+!16.786
+|<small>Censo</small>
+|-
+|2012
+!24.636
+|<small>Censo</small>
+|-
+|2024
+!27.137
+|<small>Censo</small>
+|}
+El municipio posee una superficie de 3430 km². Su densidad poblacional es, por tanto, de 7,87 hab./km².
+
+* 7,430 Mujeres (44,26%) y 9,356 Hombres (55,74%).
+* 2,961 Urbana (17,64%) y 13,825 Rural (82,36%).
+
+== Véase también ==
+* [[Covendo]]
+* [[Sapecho]]
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+* [http://www.ine.gob.bo/publicaciones/visorPdf.aspx?Codigo=021104&tipo=1 Información y Mapa del INE]
+* {{Enlace roto|1=[http://www.fichas.fam.bo/ficha.asp?id=21104 Datos Municipales] |2=http://www.fichas.fam.bo/ficha.asp?id=21104 |bot=InternetArchiveBot }}
+
+{{Control de autoridades}}
+[[Categoría:Municipios del departamento de La Paz (Bolivia)]]
+[[Categoría:Localidades de la provincia de Sud Yungas]]

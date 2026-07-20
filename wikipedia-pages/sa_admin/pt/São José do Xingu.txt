@@ -1,0 +1,75 @@
+{{Info/Município do Brasil
+<!-- GeoID=5107354 -->
+<!-- Cabeçalho -->
+| nome = São José do Xingu
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = 
+| bandeira = 
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|20|12|1991|idade}}}}
+| gentílico = xinguense
+| lema = 
+| prefeito = Sandro José Luiz Costa<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/mt/são-jose-do-xingu|título=Candidatos a vereador São José do Xingu-MT|publicado=Estadão|acessodata =26 de junho de 2021}}</ref>
+| partido = [[União Brasil|UNIÃO]] <ref>{{Citar web|url=https://uniaobrasil.org.br/representantes/|titulo=Representantes|acessodata=2022-09-29|website=União Brasil|lingua=pt-BR}}</ref>
+| fim_mandato = 2024
+| mapa = MatoGrosso Municip SaoJosedoXingu.svg
+| latP = S
+| latG = 10
+| latM = 48
+| latS = 14
+| lonP = O
+| lonG = 52
+| lonM = 44
+| lonS = 38
+| estado = Mato Grosso
+| mesorregião = [[Mesorregião do Nordeste Mato-Grossense|Nordeste Mato-Grossense]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Norte Araguaia|Norte Araguaia]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[São Félix do Araguaia]], [[Canabrava do Norte]], [[Porto Alegre do Norte]], [[Confresa]], [[Santa Cruz do Xingu]], [[Peixoto de Azevedo]] e [[Marcelândia]].
+| dist_capital = 950
+<!-- Características geográficas -->
+| área = 7465.563 <!--favor manter o formato-->
+| área_ref = <ref name="IBGE_SãoJosédoXingu">{{Citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |titulo=Área territorial oficial |data=10 de outubro de 2002 |acessodata=5 de dezembro de 2010 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02) |autor=IBGE}}</ref>
+| população = 5964 <!--favor manter o formato-->
+| data_pop = Censo IBGE/2022 [[IBGE]]/2021<ref name="IBGE_SãoJosédoXingu" />
+| altitude = 337
+| clima = Tropical
+| sigla_clima = 
+<!-- Indicadores -->
+| idh = 0.681 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2022<ref name="PNUD_IDH_2000">{{Citar web |url=https://cidades.ibge.gov.br/brasil/mt/sao-jose-do-xingu/pesquisa/37/30255?ano=2010 |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |acessodata=2024-02-10 |website=Portal Cidades |publicado=IBGE}}</ref>
+| pib = {{formatnum:934693.81}} mil
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB">{{Citar web |url=https://cidades.ibge.gov.br/brasil/mt/sao-jose-do-xingu/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios |acessodata=2024-02-10 |publicado=Instituto Brasileiro de Geografia e Estatística}}</ref>
+| pib_per_capita = 165549.74
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB" />
+| site                = [https://www.saojosedoxingu.mt.gov.br/ saojosedoxingu.mt.gov.br]
+}}
+'''São José do Xingu''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Mato Grosso]].
+
+== Administração ==
+* [[Prefeitura (Brasil)|Prefeito]]: Sandro José Luz Costa (2025/2028)
+* [[Vice-prefeito]] silva Correia De Moraes Silva (2025/2028)
+* [[Presidente da câmara de vereadores|Presidente da câmara]]: Wanderson Gomes Leonel (2025/2026)
+
+{{Referências}}
+
+== Ligações externas ==
+* {{Link||2=http://www.saojosedoxingu.mt.gov.br |3=Página da prefeitura}}
+* {{Link||2=http://WikiMapia.org/#lat=-10.3349318&lon=-53.1996632&z=14&l=9&m=s&v=2&search=10%2020s%2C%2053%2012w |3=São José no WikiMapia}}
+
+{{Esboço-municípiosbr/Mato Grosso}}
+{{Xingu}}
+{{Municípios do Mato Grosso}}
+{{Portal3|Mato Grosso}}
+
+{{DEFAULTSORT:Sao Jose Xingu}}
+[[Categoria:Municípios de Mato Grosso]]
+[[Categoria:Fundações em Mato Grosso em 1991]]
+[[Categoria:São José do Xingu| ]]

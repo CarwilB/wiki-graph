@@ -1,0 +1,277 @@
+{{otros usos|Mytilidae|el molusco bivalvo conocido comúnmente como '''mejillón'''}}
+{{Ficha de entidad subnacional
+|nombre             = Mejillones
+|unidad = [[Comuna de Chile|Comuna]]
+|tipo_superior_1    = [[Regiones de Chile|Región]]
+|superior_1         = {{bandera|II Región de Antofagasta}} [[Región de Antofagasta|Antofagasta]]
+|tipo_superior_2    = [[Provincias de Chile|Provincia]]
+|superior_2         = [[Provincia de Antofagasta|Antofagasta]]
+|tipo_superior_3    = [[División electoral de Chile#Estructura actual|Circunscripción]]
+|superior_3         = II - Antofagasta
+|tipo_superior_4    = [[División electoral de Chile#Estructura actual|Distrito]]
+|superior_4         = N.º 4
+|mapa               = <mapframe text="Ciudad y comuna de Mejillones" width="280" height="280" zoom="7" latitude="-22.8781" longitude="-70.1923">
+[
+  {
+    "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q16928",
+    "properties": {
+      "stroke": "#ffb100",
+      "stroke-width": 1,
+    }
+  },
+  {
+    "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q721396",
+    "properties": {
+      "stroke": "#ffb100",
+      "stroke-width": 1,
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": { "type": "Point", "coordinates": [-22.8781, -70.1923] },
+    "properties": {
+    "title": "Mejillones",
+    "marker-color": "228b22",
+    "marker-symbol":"city"
+    }
+  }
+]
+</mapframe>
+|dirigentes_títulos = [[Anexo:Alcaldes de Mejillones|Alcalde]]
+|dirigentes_nombres = Marcelino Carvajal Ferreira
+|superficie         = 3.803,9
+| población       = 13467 <!-- no agregar &+"nbsp" : el número es leído para calcular la densidad de pobla -->
+| población_post  = <ref name=censo17>{{cita web |url=http://www.censo2017.cl/descargue-aqui-resultados-de-comunas/|título=Plantilla Censo 2017 |fechaacceso=23 de diciembre de 2017|fecha=|obra=CENSO |idioma=inglés |cita= }}</ref>
+| población_año   = [[Censo chileno de 2017|2017]]
+
+|gentilicio         = Mejillonino, -na
+<!-- Mapas de localización -->
+|mapa_loc           = 
+|pos_etiqueta_loc   = 
+<!-- Parámetros históricos -->
+|fundación          = 1842
+<!-- Parámetros geográficos -->
+|horario            = [[Hora oficial de Chile|UTC−3]]
+<!-- Códigos y otros-->
+|código_postal      = 
+|prefijo telefónico = 
+|página web         = www.mejillones.cl
+}}
+'''Mejillones''' es una [[Comuna de Chile|comuna]] y [[Ciudad de Chile|ciudad]] del [[Norte Grande de Chile|Norte Grande]] de [[Chile]], situada a 65 kilómetros al norte de la ciudad de [[Antofagasta]], en [[Provincia de Antofagasta|la provincia]] y [[Región de Antofagasta|región del mismo nombre]].
+
+El nombre “Mejillones” viene a ser plural de “mejillón”, [[Choromytilus chorus]], un [[molusco]] de la familia [[Mytilidae]] conocido en Chile como "choro" y que se caracteriza por ser un pequeño bivalvo que abunda en las costas del norte del país y que constituyó uno de los alimentos principales de los habitantes aborígenes de la zona.
+
+
+== Historia ==
+[[Archivo:Límite entre Chile y Perú en el río Loa, Plano General del Reyno de Chile en la América Meridional de Andrés Baleato (1793) (Editado).jpg|izquierda|miniaturadeimagen|Mapa de Andrés Baleato, de 1793 mostrando el límite entre Chile y Perú en el [[río Loa]].]]
+[[Archivo:Desierto de Atacama en la Carta esférica de las costas del Reyno de Chile (1799).jpg|miniaturadeimagen|izquierda|La costa de la actual región de Antofagasta en la Carta esférica de las costas del Reyno de Chile de 1799.]]
+
+Durante la época del [[Imperio español]], Mejillones aparece mencionada como parte del [[corregimiento de Copiapó]] de la [[Capitanía General de Chile]].<ref name=Eyzaguirre>{{Cita libro |año=1967 |título=Breve historia de las fronteras de Chile |autor=[[Jaime Eyzaguirre]]}}</ref>
+
+El 6 de septiembre de 1777 se emite una [[Real Orden]] referida al cobro relacionada con el [[almojarifazgo]] y [[alcabalas]] en Chile el cual hace mención de Mejillones y los pueblos circundantes como parte de la jurisdicción chilena:
+
+{{cita|Aunque en el corregimiento de Copiapó, cuya cabeza es la villa de San Francisco de la Selva, se contienen los puertos de Cobija y bahía de '''Mexillones''', puerto de Betas, el de Juncal, el de Copiapó o la Caldera, Bahía Salada, puerto del Totoral y el del Huasco, como son tan accidentales las arribadas de navíos con este arreglo, y también a las cortas entradas que puedan ocurrir por la cordillera, camino del Despoblado y de territorio de aquella jurisdicción, el administrador de este destino propondrá el sujeto o sujetos que conceptuare necesarios para la mejor recaudación de dichos ramos y aumento de la Real hacienda|Archivo General de Indias de Sevilla, Audiencia de Chile, legajo 328.<ref>: ''{{cita publicación|título=Nuevos testimonios de la jurisdicción del reino de Chile en el desierto de Atacama|autor=Jaime Eyzaguirre y Fernando Silva|publicación="Historia"|volumen=N° 5|ubicación=Santiago de Chile|año=1966.}}</ref>}}
+
+Asimismo en el mapa levantado por la Armada española en 1792 se incluye dentro de Chile desde el paralelo 22° al sur, en otras palabras, desde la zona del [[río Loa]]. En el mapa de 1793 elaborado por [[Andrés Baleato]], director de la Escuela Náutica de Lima, por orden del virrey [[Francisco Gil de Taboada|Francisco Gil de Taboada y Lemus]], Chile tiene como frontera norte el grado 21° y medio, en específico la desembocadura del río Loa, haciendo mención explícita que la zona estaba despoblada y recién habían poblados desde el paralelo 24°.<ref name=Eyzaguirre/><ref name=HistoriaDeLasFronteras>{{cita libro|autor1=Lagos Carmona, Guillermo|título=Los Títulos Históricos - Historia de las fronteras de Chile Volumen 3|fecha=1980|editorial=Editorial Jurídica de Chile}}</ref>
+
+[[Hipólito Unanue]] publica sobre el Perú en 1793 lo siguiente: {{cita|La ensenada de Túmbez lo separa por el norte del [[Nuevo Reino de Granada]] y el río Loa por el sur del desierto de Atacama y reino de Chile|''Guía política, eclesiástica y militar del virreinato del Perú'' de 1793<ref name=Eyzaguirre/>}}
+
+En la memoria del Francisco Gil de Taboada que le dio a su sucesor [[Ambrosio O'Higgins]] en 1795 se describe el límite entre el Perú y Chile el río Loa.<ref name=Eyzaguirre/><ref name=HistoriaDeLasFronteras/>
+
+[[Archivo:Disputa limítrofe del desierto de Atacama entre Bolivia y Chile (1825 - 1879).svg|miniaturadeimagen|250px|[[Disputa del desierto de Atacama]] entre Bolivia y Chile.]]
+Entre 1838 y 1839, Domingo Latrille descubre y explota guano blanco en la ensenada e islotes aledaños a Punta Angamos. Tal actividad genera la dictación de una Ley el año 1841 mediante la cual Chile define como su frontera norte el paralelo 23.
+
+El presidente de Chile, [[Manuel Bulnes]], envió expertos a reconocer la costa atacameña. De esto dio cuenta al Congreso en un mensaje dirigido el 13 de julio de 1842, en que informaba que juzgó:
+
+{{Cita|necesario mandar una comisión exploradora a examinar el litoral comprendido entre el puerto de Coquimbo y el morro de Mejillones con el fin de descubrir si en el territorio de la República existían algunas guaneras cuyo beneficio pudiera proporcionar un ramo nuevo de ingreso a la hacienda pública...|Manuel Bulnes}}
+
+Como resultado de dicha investigación, se dictó la ley de 13 de octubre de 1842, que declaró de propiedad nacional las guaneras al sur de la bahía de Mejillones, y que dispuso que ningún barco podría cargar este producto sin permiso de las autoridades chilenas.<ref>{{cita web|título=Orígenes - El impacto de la guerra del Pacífico (1879-1929)|url=https://www.memoriachilena.gob.cl/602/w3-article-96541.html|editorial=Memoria Chilena|fechaacceso=3 de enero de 2023}}</ref> Se facultaba además al Presidente de la República para gravar la exportación del guano con derechos de aduana.
+
+=== Fundación ===
+Mejillones nació oficialmente el 24 de diciembre de 1862 cuando el Gobierno chileno otorga terrenos en el sector de La Caleta a la sociedad guanífera conformada por [[Juan "Chango" López]], Matías Torres y Juan Garday.
+
+El año 1856 se agotan estos yacimientos, pero el año 1862 Juan “Chango" López descubre guano rojo en la cima del cerro de Mejillones, conocido como "el Morro". Junto a Matías Torres y Juan Garday forman una sociedad que explota estos yacimientos, pero el 17 de febrero de 1863 el Gobierno chileno le revoca los permisos, debido a reclamaciones de Bolivia.
+
+El año 1866, Chile y Bolivia llegan a un acuerdo mediante el cual Chile retrocede desde el paralelo 23 al 24, entregando a Bolivia la soberanía de Mejillones y Antofagasta. A su vez se define una repartición común de impuestos a la explotación de guano, salitre y otras sustancias entre los paralelos 23 y 25 (Tratado de la medianería), por lo cual se construye una aduana interventora en Mejillones.
+
+[[Archivo:Mejillones 1870 plano.JPG|200px|miniaturadeimagen|derecha|Plano del Puerto de Mejillones de 1870 por el Ingeniero Hugo Reck.]]
+[[Archivo:El puerto de Mejillones 1890.png|200px|miniaturadeimagen|derecha|El Puerto de Mejillones en 1890.]]
+
+En 1874, dicho tratado es reemplazado por otro que elimina el concepto de medianería, con la sola excepción de que Bolivia se compromete a no modificar los gravámenes a productos de compañías chilenas por 25 años. Tras cambio de régimen, en 1878 Bolivia establece un [[Impuesto de los 10 centavos|impuesto de 10 centavos al quintal de salitre]], lo que a juicio de Chile quebranta el Tratado y hace exigible su retorno a las antiguas fronteras, en el paralelo 23. El 14 de febrero de 1879 [[Ocupación chilena de Antofagasta|Chile se toma Antofagasta]], iniciándose la [[Guerra del Pacífico]].
+Esta invasión gatilla un tratado de defensa recíproca suscrito secretamente entre Perú y Bolivia, por lo cual este país también ingresa a la Guerra.
+
+Paradójicamente el destino de esa guerra se zanja en gran parte frente a las costas de Mejillones, cuando el 8 de octubre de 1879 la flota chilena captura al [[Monitor Huáscar|Huáscar]], muriendo en combate su comandante [[Miguel Grau]], la amenaza más seria al poderío bélico chileno. Chile gana la guerra y se anexa la actual Región de Antofagasta, que estaba en poder de Bolivia, y las regiones de Iquique y Arica, que pertenecían al Perú.
+
+En cuanto al perfil urbano de la ciudad, se cree que el primer plano de Mejillones como ciudad puerto fue diseñado por Ramón González, aunque también se baraja la opción de que realmente pudo ser diseñado por el Capitán de Puerto y Jefe del Resguardo Marítimo de ese entonces Capitán Juan Forestal. Este plano de 35 manzanas, ordenadas según el diseño español de Damero tiene fecha de 1871 en el libro “Mejillones, un pueblo con historia”, también se baraja la opción de que el plano sea aproximadamente de 1867.
+
+Tras este diseño, viene el ambicioso proyecto del ingeniero chileno Hugo Reck en 1873. Este proyecto de 680 manzanas debía reemplazar a la destrozada ciudad de Cobija, mas, producto de la Guerra y de otras causas externas, el proyecto no se pudo llevar a cabo.
+
+Culminada la Guerra del Pacífico, se inicia un ordenamiento administrativo completo en la recién anexada zona norte de Chile, que en el caso de Mejillones involucra la confección de un nuevo plano de la ciudad que el gobierno procede a lotear para su posterior remate.
+
+[[Francisco Solano Asta-Buruaga y Cienfuegos|Francisco Astaburoaga]] escribió en 1899 en su [[s:Diccionario Geográfico de la República de Chile/M|Diccionario Geográfico de la República de Chile]]<ref>{{cita DGRCh|M|Mejillones (Bahía de)}}</ref>{{rp|436}} sobre la Bahía de Mejillones su puerto, instalaciones y servicios existentes:
+
+{{cita|'''Mejillones (Bahía de)'''.-—Se abre en la costa del departamento de Antofagasta, entre la punta de Angamos al S., y la de Chacaya al N., formando una ensenada como medio círculo con fondo hacia el SE. y de un ancho de unos 20 kilómetros. La rodean cerros medianos desnudos de toda vegetación, siendo el más conspicuo el morro de su propio nombre. Su mejor surgidero se halla a su fondo por los 23° 02' Lat. y 70° 30' Lon.; es amplio y abrigado. En tierra, frente á él, existió un fortín levantado en 1845 que dió principio á la población posterior del puerto. Por decreto de 15 de octubre de 1857 se habilitó éste como puerto menor para servir á la exportación del guano y del cobre, que se comenzaba á extraer de sus inmediaciones. En 1863 se paralizaron tales trabajos y se despobló á causa de disturbios ocurridos con Bolivia, los que habiendo cesado por el tratado de 1866, se promovieron en este punto mejoras que trajeron en octubre de 1871 el establecimiento de oficinas de aduana y el de una vía carril á los minerales de Cerro Gordo, y en 1873 el caserío de San Luciano. Tiene desde el 12 de abril de 1878 el caracter de puerto mayor, pero su movimiento marítimo es reducido. El nombre es el del marisco llamado comumente choro (''Mytilus chilensis'').}}
+
+[[Archivo:Mejillones por Mattensohn & Grimm.jpg|200px|left|thumb|Mejillones [[Circa|c.]] 1910.]]
+Años más tarde, en 1906 se contrata a don Emilio De Vidts cuando la necesidad de modernizar la infraestructura urbana, de la mano de la Compañía de Ferrocarril Antofagasta Bolivia (FCAB), se hacía cada vez más urgente. Este plano, menor que el anterior, de solo de 139 manzanas, tampoco se llevó a cabo entero y además tiene la particularidad de tener algunas manzanas idénticas al plano de Reck.<ref>{{Cita web |url=http://wikimejillones.bluecompany.cl/index.php/Mapa |título=Copia archivada |fechaacceso=18 de diciembre de 2010 |urlarchivo=https://web.archive.org/web/20080714202525/http://wikimejillones.bluecompany.cl/index.php/Mapa |fechaarchivo=14 de julio de 2008 }}</ref>
+
+El geógrafo chileno, [[Luis Risopatrón]] lo describe como un ‘pueblo’ en su libro [[s: Diccionario Jeográfico de Chile/M|Diccionario Jeográfico de Chile]] en el año 1924:<ref name="LRisopatron">{{cita libro|apellido=Risopatrón|nombre=Luis|título=Diccionario Jeográfico de Chile|año=1924|editorial=Imprenta Universitaria|url=http://www.memoriachilena.gob.cl/archivos2/pdfs/mc0007829.pdf}}</ref>{{rp|542}}
+
+{{cita|'''Mejillones (Pueblo) 23° 07' 70° 30''''. Es de corto caserío i está asentado en la márjen S de la bahía de Mejillones del Sur, donde existió un fortín, construido en 1845 i el antiguo pueblo de San Luciano (1873); una amplia estación de ferrocarril se encuentra a 14 m de altitud, la que está comunicada por una línea de 69 kilómetros de lonjitud, con la ciudad de Antofagasta.}}
+
+En 1970, se aprobó por mayoría de votos el proyecto presentado por el alcalde Don Luis Cuadra Araya para financiar la construcción de un teatro municipal ubicado en la parte posterior de la plaza de armas de la ciudad, ubicada en calle Almirante Latorre. Los trabajos se llevaron a cabo con aportes concedido por el [[Ministerio de Vivienda y Urbanismo (Chile)|Ministerio de Vivienda y Urbanismo]], por la suma de 500.000 [[Escudo (moneda de Chile)|escudos]] de la época, obras que quedaron inconclusas pues dicho financiamiento no satisfacía la demanda íntegra que implicaba la total operatividad del proyecto, paralizando los trabajos en el año 1972. Por lo anterior el gobierno de la [[Provincia de Antofagasta (1888-1974)|Provincia de Antofagasta]] negociaba un nuevo préstamo el cual no logró concretarse por el [[Golpe de Estado en Chile de 1973|golpe de Estado de las Fuerzas Armadas del 11 de septiembre de 1973]].
+
+==Medio ambiente==
+===Geomorfología y componentes abióticos===
+[[Archivo:Medio ambiente de Chile (2023) - comuna de Mejillones.svg|thumb|Trazado simplificado de los ecosistemas y cuerpos de agua presentes en la comuna de Mejillones.]]
+La comuna de Mejillones se encuentra emplazada en las unidades geomorfológicas de [[Farellón costero]], [[Planicie marina o fluviomarina]] y [[Cordillera de la Costa (Chile)|Cordillera de la costa]];<ref>{{Cita publicación |url=http://datos.cedeus.cl/layers/geonode:cl_unidades_geomorfologicas_geo |título=Unidades Geomorfológicas Chile |apellidos=Albers |nombre=Christoph  |fecha=septiembre de 2015 |publicación=GeoNode Cedeus |fechaacceso=1 de julio de 2023}}</ref> y presenta según la [[clasificación climática de Köppen]] [[clima desértico]] cálido (BWh), [[clima desértico]] frío (BWk) y [[clima desértico]] frío de lluvia invernal (BWk (s)).<ref>{{Cita web |url=http://www.geoportal.cl/geoportal/catalog/search/resource/details.page?uuid=%257BFC85D54E-34B7-416D-ABC3-E0E3FAC45A31%257D |título=Zonas climáticas de Chile según Köppen-Geiger escala 1:1.500.000 |fechaacceso=1 de julio de 2023 |autor=Departamento de Geografía Universidad de Chile |año=2017 |sitioweb=Catálogo Nacional de Información Geoespacial}}</ref> Esta además se halla entre las [[Anexo:Cuencas hidrográficas de Chile|cuencas hidrográficas]] de Costeras del [[río Loa]] y [[Quebrada Caracoles]], [[Quebrada Caracoles]] y [[río Loa]].<ref>{{Cita web |url=https://dga.mop.gob.cl/administracionrecursoshidricos/inventario_cuencas_lagos/Paginas/default.aspx |título=Inventario Público de Cuencas Hidrográficas y Lagos |fechaacceso=1 de julio de 2023 |autor=Dirección General de Aguas |sitioweb=Ministerio de Obras Públicas Dirección de General de Aguas}}</ref><ref>{{Cita web |url=https://www.bcn.cl/siit/mapas_vectoriales/index_html |título=SIIT {{!}} Mapas vectoriales |fechaacceso=1 de julio de 2023 |apellido=rbenavente |sitioweb=Biblioteca del Congreso Nacional}}</ref>
+===Componentes bióticos===
+Dentro del territorio de la comuna se pueden hallar los siguientes ecosistemas:<ref name=L&P2019>{{Cita libro |apellidos=Luebert |nombre=Federico |título=Sinopsis bioclimática y vegetacional de Chile |url=https://www.worldcat.org/oclc/78891317 |fechaacceso=1 de julio de 2023 |año=2006 |editorial=Editorial Universitaria |isbn=956-11-1832-7 |fecha-publicación=2019 |edición=3. ed |idioma=es |oclc=78891317 |apellidos2=Pliscoff |nombre2=Patricio}}</ref><ref>{{Cita publicación |url=https://zenodo.org/record/60800 |título=Sinopsis bioclimática y vegetacional de Chile / Bioclimatic and vegetational synopsis of Chile |apellidos=Luebert |nombre=Federico |apellidos2=Pliscoff |nombre2=Patricio |fecha=2016-08-24 |editorial=Editorial Universitaria |fechaacceso=1 de julio de 2023 |doi=10.5281/zenodo.60800}}</ref><ref>{{Cita publicación |url=https://mma.gob.cl/wp-content/uploads/2016/08/Informe-final-Eval_ecosistemas_para_publicacion_16_12_15_sfm.pdf |título=Aplicación de los criterios de la Unión Internacional para la Conservación de la Naturaleza (IUCN) para la evaluación de riesgo de los ecosistemas terrestres de Chile |apellidos=Pliscoff |nombre=Patricio |fecha=2015 |publicación=Ministerio del Medio Ambiente |fechaacceso=1 de julio de 2023}}</ref>    
+* [[Desierto#Desiertos costeros|Desierto tropical interior con vegetación escasa]] (Preocupación menor)
+* [[Herbazal efímero|Herbazal efímero tropical costero]] donde predominan ''[[Nolana adansonii]]'' y ''[[Nolana lycioides]]'' (Preocupación menor)
+* [[Matorral desértico|Matorral desértico tropical-mediterráneo costero]] donde predominan ''[[Copiapoa boliviana]]'' y ''[[Heliotropium pycnophyllum]]'' (Preocupación menor)
+* [[Matorral desértico|Matorral desértico tropical-mediterráneo costero]] donde predominan ''[[Ephedra breana]]'' y ''[[Eulychnia iquiquensis]]'' (Vulnerable)  
+==== Flora y fauna ====
+El gaviotín chico (''[[Sternula lorata]]'') está clasificado como en peligro de extinción a nivel nacional y mundial por la Comisión Nacional del Medio Ambiente, y por la Unión Internacional para la Conservación de la Naturaleza (UICN) respectivamente.<ref>{{Cita web |url=https://www.gaviotinchico.cl/el-gaviotin-chico/ |título=EL GAVIOTÍN CHICO |fechaacceso=31 de enero de 2024 |autor=Fundación gaviotín Chico}}</ref>
+
+En los últimos años, se ha consolidado el trabajo de la Fundación para la Sustentabilidad del Gaviotín Chico, destinado a contribuir en la conservación del Gaviotín Chico y su hábitat, considerando el desarrollo industrial de la comuna.
+
+El ''[[parque nacional Morro Moreno]]'', ubicado en la [[península de Mejillones]], es uno de los sitios de biodiversidad que posee la comuna.
+===Medidas de protección ambiental y conflictos socioambientales===
+Hasta 2022, la comuna de Mejillones cuenta con las siguientes zonas que poseen algún nivel de [[Áreas silvestres protegidas de Chile|protección ambiental]]:<ref>{{Cita web |url=https://apps.mma.gob.cl/visorsimbio |título=GEOPORTAL SIMBIO |fechaacceso=1 de julio de 2023 |autor=Ministerio del Medio Ambiente |sitioweb=apps.mma.gob.cl}}</ref>   
+*[[Península de Mejillones]] (Bien Nacional Protegido y Sitios Ley 19.300)<ref>{{cita web |url= https://simbio.mma.gob.cl/AreaProtegida/Details/1083 |título= Península de Mejillones |fechaacceso=1 de julio de 2023 |autor= Sistema de Información y Monitoreo de Biodiversidad – SIMBIO }}</ref><ref>{{cita web |url= https://simbio.mma.gob.cl/AreaProtegida/Details/1368 |título= Península de Mejillones |fechaacceso=1 de julio de 2023 |autor= Sistema de Información y Monitoreo de Biodiversidad – SIMBIO }}</ref> 
+*[[Santuario de la Naturaleza Itata Gualguala]] (Santuario de la Naturaleza)<ref>{{cita web |url= https://simbio.mma.gob.cl/AreaProtegida/Details/2075 |título= Santuario de la Naturaleza Itata Gualguala |fechaacceso=1 de julio de 2023 |autor= Sistema de Información y Monitoreo de Biodiversidad – SIMBIO }}</ref>
+
+== Demografía ==
+La superficie total de la comuna es de 3.803,9 km². Según los datos del censo 2017 entregados por el Instituto Nacional de Estadísticas (INE), el total de habitantes de Mejillones es de 13.467
+
+== Administración ==
+[[Archivo:MuniMej1.jpg|200px|right|thumb|Edificio de la ilustre municipalidad de Mejillones.]]
+===Municipalidad===
+Su actual alcalde (periodo 2021-2024) es [[Marcelino Carvajal Ferreira]] ([[Partido por la Democracia|PPD]])
+
+El alcalde cuenta con un [[concejo municipal]] que está conformado por:
+
+* Manuel Monardes Rojas  (Ind./[[Partido por la Democracia|PPD]])
+* Vladimir Pizarro Callejas ([[Partido Comunista de Chile|PC]])
+* María Brevis Navarrete ([[Partido Humanista|PH]])
+* Elsie Biaggini Gómez (Ind./[[Renovación Nacional|RN]])
+* Grecia Biaggini Sánchez ([[Renovación Nacional|RN]])
+* María Cabello Gutiérrez (Ind./[[Partido por la Democracia|PPD]])
+{{VT|Anexo:Alcaldes de Mejillones}}
+===Representación parlamentaria===
+Mejillones pertenece al [[División electoral de Chile|Distrito Electoral]] n.º 4 y a la segunda [[División electoral de Chile|Circunscripción Senatorial]] (''Antofagasta''). Es representada en la [[Cámara de Diputados de Chile|Cámara de Diputados]] del [[Congreso Nacional de Chile|Congreso Nacional]] por las diputadas [[Marcela Hernando Pérez]] del [[Partido Radical Socialdemócrata]] y [[Paulina Núñez Urrutia]] de [[Renovación Nacional]]. A su vez, es representada en el Senado por los senadores [[Alejandro Guillier|Alejandro Guillier Álvarez]] (Independiente pro PRSD) y [[Pedro Araya Guerrero]] (Independiente pro [[Nueva Mayoría (Chile)|Nueva Mayoría]]).
+
+== Economía ==
+En 2018, la cantidad de empresas registradas en Mejillones fue de 217.<ref>{{Cita web|url=https://adalytics.cl/geo/2/21/2102|título=React App|fechaacceso=4 de septiembre de 2020|sitioweb=adalytics.cl}}</ref> El Índice de Complejidad Económica (ECI) en el mismo año fue de -0,74, mientras que las actividades económicas con mayor índice de Ventaja Comparativa Revelada (RCA) fueron Fabricación de Productos Primarios de Metales Preciosos y Metales no Ferrosos (96,96), Generación en Otras Centrales Termoeléctricas (92,34) y Fabricación de Sustancias Químicas Básicas (38,11).
+=== Industrialización ===
+[[Archivo:Panorámica Puerto-Angamos Mejillones.jpg|thumb|Panorámica de Puerto Angamos Mejillones al atardecer.]]
+Dada su posición costera en una protegida [[bahía]], Mejillones se ha visto afectado esta última [[década]] por un creciente proceso de industrialización, teniendo como principal cliente a las mineras de la región.
+
+Las primeras manifestaciones del crecimiento económico en la ciudad, se ven reflejadas a comienzos de los años 80 en las plantas procesadoras de [[Harina de pescado]]. Con 3 de estas industrias funcionando a máxima capacidad (Guanaye, Angamos y Loa), la ciudad se vuelca de esta manera al sector [[pesquero]]. Pese a los largos años de auge económico y laboral, la alta demanda en la cuota de captura del pescado termina por agotar parcialmente el vital [[recurso]], poniendo fin, de esta manera al periodo de bonanza en este importante sector empresarial, lo cual se ve reflejado en el cierre y desmantelamiento de 2 de las 3 plantas procesadoras (Guanaye y Loa) quedando, de esta manera solamente en funcionamiento la actual Pesquera Angamos produciendo de manera esporádica.
+
+[[Archivo:Planta Corpesca Mejillones.JPG|thumb|Planta Corpesca Mejillones.]]
+En el periodo que va desde mediados de los años 90 hasta la actualidad, se han desarrollado en la comuna una gran cantidad de [[industrias]] ligadas al sector [[minero]]. Entre ellas destacan las centrales termoeléctricas de la empresa ''Edelnor'' y la Central Térmica de ciclo Combinado ''Gas Atacama'', que en conjunto proveen de energía a gran parte del norte grande y en especial a la minería. Además actualmente se ejecutan variados proyectos, como lo son; la construcción de la central termoeléctrica ''Cobra S.A'' y también la central térmica propiedad de ''Posco E&C''. Además del proyecto de planta de procesamiento de gas natural ''GNL'' entre otros. 
+
+Es necesario nombrar el proyecto ''Complejo Portuario Mejillones S.A. (CPM)''. La preparación de este gran mega-proyecto se llevó a cabo a través de [[licitación]] [[Comunidad internacional|internacional]], con objeto de adjudicar una [[concesión]] de carácter privado para su construcción.
+
+[[Archivo:Cobra Mejillones.JPG|thumb|Central térmica Cobra Mejillones durante su construcción.]]
+El proyecto consta de 6 etapas, de las cuales la primera ya está en total funcionamiento y orientada al mercado minero del [[Norte Grande]], sus abastecedores son, principalmente la minería, como así también empresas e industrias de países vecinos.
+
+Las características de la bahía y sus terrenos hacen del Puerto de Mejillones una de las instalaciones portuarias e industriales más atractivas de la costa [[pacífico]] de [[América del Sur]]. El proyecto ira tomando forma a medida en que aumenten las exportaciones y el tráfico marítimo. Por consiguiente, su término definitivo está previsto entre 40 y 50 años más aproximadamente. El Complejo Portuario Mejillones incorpora [[tecnología]] de última generación, única en [[Sudamérica]]. Parte de su equipamiento lo constituyen dos [[grúa (barco)|grúas]] portuarias con capacidad para cargar hasta 100 [[toneladas]] cada una. Además de un moderno sistema de descarga de concentrado de plomo.
+
+== Cultura ==
+[[Archivo: Locomotora-Mejillones.jpg|thumb|Monumento al trabajador ferroviario.]]
+
+En el ámbito artístico, desde 1976 a la fecha existe la Escuela Literaria "Azotacalles", que nació el 26 de noviembre de 1976 bajo el nombre de Grupo Literario Genésis Poético y que en 1980 adquirió su nominación actual. La han integrado escritores como Patricio Tapia Fredes(1948 -2013), Florentino Novoa Saavedra y [[Wilfredo Santoro Cerda]] (Hagamos una selva, El Chango López y la lagartija, Poetas y Pioneros, Las huaneras de Mejillones reedición), todos ellos integrantes de la SECH (Sociedad de Escritores de Chile). También forma parte de ésta el periodista Víctor Santoro Flores, autor del libro "La caja de las especies".
+
+
+Mejillones danza: Academia de danza con 15 años de trayectoria en la comuna, parte de la fundación de cultura y turismo de Mejillones. Dirigida por el destacado profesora de danza y coreógrafo Patricio Angel.
+
+=== Infraestructura ===
+La ciudad cuenta con una amplia gama de edificios históricos, característicos de la influencia europea de principios del {{siglo|XIX||s}} y que reflejan de forma fidedigna el pujante pasado ferrocarrilero de la región.
+
+El edificio del Ex Servicio de Aduanas fue construido entre los años 1906 y 1910. Actualmente funciona como Museo histórico y Natural de Mejillones. Contiene valiosa información histórica de Mejillones desde sus inicios en el {{siglo|XIX||s}} como centro extractor de guano hasta el presente. Libros y fotografías testimonian su evolución tanto comunal como regional. 
+En abril de 1909 se licitó la construcción de tres edificios correspondientes a los servicios de Aduana, como lo fueron el edificio de la Tenencia de Aduana, el Resguardo y las oficinas de Aduana. El costo de esta construcción alcanzó a $ 34.704,50 y de acuerdo a lo establecido en el Decreto N.º 2102 del 11 de octubre de 1904, este importe fue asumido por la empresa del Ferrocarril.
+Se le asigna la manzana 20 del loteo original del proyecto del Ingeniero consultor de la Armada Don Emilio de Vidts y ejecutado en 1906.
+
+Su fachada mantuvo en sus primeros años de uso, una pérgola de madera que cubría todo el acceso y que fuera retirada posteriormente. El cerco de madera que protegía el acceso hasta los dos metros de altura, fue recortado a la mitad, tal como se presenta hoy.<ref>http://www.mejillones.cl/2010/monumentos-de-la-ciudad/</ref>
+
+La Capitanía de Puerto se ha transformado en una de las postales más significativas de la ciudad. Su construcción data de 1910 y se enmarca dentro del plano de la nueva ciudad de Mejillones. Los planos del edificio se atribuyen al Arquitecto Leonello Bottacci, de la Inspección de Arquitectura de la Dirección de Obras Públicas de la Región de Antofagasta.
+
+Considerado siempre para labores de control marítimo, fue denominado como “Capitanía de Puerto” asignada en la manzana 19 del loteo original del plano comunal del Ingeniero consultor de la Armada Don Emilio de Vidts confeccionado en 1906 según Decreto N.º 2102 del 11 de octubre de 1904. Está ubicada en la calle Francisco Antonio Pinto s/n, en el borde costero. Su construcción se alza en dos pisos y su frontis apunta directamente al Pacífico. Posterior a su construcción (1914) el edificio fue reforzado con un muros de concreto y anclajes de rieles para proteger el frente del intenso oleaje que cada cierto tiempo afecta las costas del norte. Sus ornamentos (adornos de fachada) se destacan por las aplicaciones en las cornisas y frontones superiores que reafirman el estilo del edificio, balaustradas y columnas en balcones y escaleras, le asignan un detalle armonioso en toda la figura del inmueble, tanto en el interior como exterior del mismo.<ref>http://www.mejillones.cl/2010/subdelegacion-maritima/</ref>
+
+El Templo Católico Corazón de María corresponde uno de los edificios centenarios de la comuna. En abril de 1907 la Dirección de Obras Públicas, procedió a formar los proyectos de edificios públicos de Mejillones, entre ellos los del “Templo Católico” de acuerdo a lo dispuesto en la Ley 1829 del 7 de febrero de 1906. Años más tarde, el 11 de diciembre de 1908, se aprueba el nuevo diseño del futuro templo, trabajo del arquitecto chileno Onofre Montané Urrejola, según los dictámenes del estado chileno, que para esa época estaba ligado la Iglesia Católica.
+
+Se le asigna la manzana 42 del loteo original del proyecto del Ingeniero consultor de la Armada Don Emilio de Vidts, ejecutado en 1906. Construcción se basa enteramente de madera de pino oregón, se dice traída en abundancia desde Estados Unidos como lastre por los veleros que venían a cargar salitre. Construcción alzada en un piso y emplazada al vértice noreste del sitio, adosado al cuerpo principal, se ubican las oficinas parroquiales y Casa del Párroco que complementan la fachada.
+
+Se destaca la amplitud al interior de la nave principal del templo y los ornamentos en madera natural a la vista del altar y púlpito. Por el exterior, el diseño de la nave principal, se compone de un cuerpo central que alcanza la máxima [[cumbrera]], mientras que los cuerpos laterales de menor altura complementan el templo en toda su extensión.
+
+Por el costado e inmediatamente sobre la altura de las techumbres de los laterales, se diseñaron 6 ventanales por lado, que permiten el ingreso de luz hacia el interior. El campanario también de madera, se alza en el frontis sobre la cumbrera, se destacan las celosías en sus cuatro costados. Las aplicaciones decorativas en la fachada principal muestran un estilo tradicional para este tipo de edificaciones, típico de la influencia europea en el país a principios del {{siglo|XIX||s}}.<ref>http://www.mejillones.cl/2010/templo-catolico-corazon-de-maria/</ref>
+
+El edificio del Juzgado de Sub-Delegación nace de una necesidad urgente de establecer un organismo judicial en la naciente comuna. Mejillones, no siendo una localidad políticamente definida quedó como Subdelegación dependiente de la Comuna de Antofagasta y por ello, una de las autoridades más importantes fue el Juez de Subdelegación, atendiendo todos los casos menores de delitos ocurridos en la circunscripción.
+
+Se le asigna la manzana 24 del loteo original proyecto del Ingeniero consultor de la Armada don Emilio de Vidts y ejecutado en 1906 según el Decreto N.º 2102 del 11 de octubre de 1904.-
+
+De estilo típico neoclásico inglés, construcción mixta estructurada con vigas y pilares de madera de pino oregón y muros de paneles prefabricados de concreto, su diseño se basa en dos bloques, que identifican el primer piso con el segundo, los cuales hacían diferenciar las oficinas del Juzgado con las dependencias destinadas a la casa del Juez.<ref>http://www.mejillones.cl/2010/juzgado-de-sub-delegacion/</ref>
+
+Mejillones es una de las pocas ciudades de Chile en ser "ciudad digital", ya que está en funcionamiento la señal WiFi internet libre para toda la comunidad. Los cursos de alfabetización digital fueron realizados exitosamente.
+
+== Transporte ==
+===Transporte público===
+La ciudad cuenta con un servicio de transporte público de Taxis Básicos y de Turismo, los cuales realizan viajes dentro y fuera de la ciudad de Mejillones. 
+
+===Transporte interurbano===
+Además se cuenta con Buses Biaggini con salidas cada media Hora a la ciudad de [[Antofagasta]], aproximadamente desde las 6:15 y hasta las 22:30 horas.
+
+A Mejillones además se puede llegar desde otras localidades de [[Chile]] en Buses Interurbanos como [[Pullman Bus]], [[TurBus]], entre otros.
+
+== Deportes ==
+=== Fútbol ===
+Mejillones desde el año 2007 está siendo representada por el Club [[Municipal Mejillones]] que se encuentra en la [[Tercera División A de Chile]], ejerce su localía en el principal reducto deportivo de la ciudad, el [[Estadio Municipal de Mejillones]]. Anteriormente Mejillones fue representada en el [[Fútbol]] por el Club [[Cooferro]], quien participó en la Tercera División Norte durante el año 2006 pero por falta de apoyo económicos debió volver a participar en su asociación local. Cuenta además con una liga local amateur de fútbol que integra varios clubes, entre ellos, [[Club deportivo y social Manuel Prado]], Fertilizantes, [[Cooferro]], Ferroviario-Angamos, Unión Marítimo, Estibadores de Génova, Juventus y Aviación.
+
+== Medios de comunicación ==
+Estos son los medios de comunicación que se captan en el Puerto de Mejillones:
+
+=== Radioemisoras ===
+==== FM ====
+
+* '''94.3 MHz''' - Rinconada FM (Local)
+* '''95.5 MHz''' - [[FM Plus]] (Repetidora local, transmite desde [[Antofagasta]])
+* '''98.1 MHz''' - Radio Atacama (Repetidora local, transmite desde [[Copiapó]])
+* '''100.9 MHz''' - Radio Mejillones FM (Local)
+* '''102.1 MHz''' - [[Radio Canal 95]] (Repetidora local, transmite desde [[Antofagasta]])
+* '''102.9 MHz''' - Radio Gamelín FM (Local)
+* '''104.3 MHz''' - Radio Litoral FM (Local)
+
+=== Diarios ===
+* Diario Electrónico de Mejillones.
+
+== Véase también ==
+* [[Antofagasta]]
+* [[Sierra Gorda (Chile)|Sierra Gorda]]
+* [[Taltal]]
+* [[Balneario Hornitos]]
+
+== Referencias ==
+{{listaref|2}}
+
+== Enlaces externos ==
+{{commonscat|Mejillones}}
+* [http://www.mejillones.cl Ilustre Municipalidad de Mejillones]
+* {{Enlace roto|1=[http://reportescomunales.bcn.cl/index.php/Mejillones Indicadores comunales de Mejillones en la Biblioteca del Congreso Nacional de Chile] |2=http://reportescomunales.bcn.cl/index.php/Mejillones |bot=InternetArchiveBot }}
+* Benjamin Ballester y Alejandro Clarot, {{Enlace roto|1=[https://www.museodeantofagasta.gob.cl/629/articles-71422_archivo_01.pdf La gente de los cúmulos de tierra] |2=https://www.museodeantofagasta.gob.cl/629/articles-71422_archivo_01.pdf }}.
+{{Control de autoridades}}
+[[Categoría:Mejillones| ]]
+
+<ref>{{Cita web
+|url=https://www.mejillones.cl/noticias/municipalidad-de-mejillones-reconocio-a-estudiantes-por-destacados-puntajes-en-la-paes/
+|título=Municipalidad de Mejillones reconoció a estudiantes por destacados puntajes en la PAES
+|fecha=13 de enero de 2026
+|obra=Municipalidad de Mejillones
+|idioma=es
+}}</ref>

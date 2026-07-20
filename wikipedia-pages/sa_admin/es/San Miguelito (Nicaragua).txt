@@ -1,0 +1,81 @@
+{{Ficha de entidad subnacional
+| nombre = San Miguelito
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|SJ}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 11.4500
+ |longitude= -84.7200
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=9}}
+| subdivisión = 32 comarcas
+| elevación_media = 49
+| superficie = 1,097
+| superficie_puesto = 28
+| número_entidades = 153
+| población_puesto = 85
+| población_año = 2023
+| población = 19543
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/r%C3%ADo_san_juan/8515__san_miguelito/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 4289
+| densidad = 17.82
+| fundación = 1850
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 92100
+}}
+'''San Miguelito''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Río San Juan|Río San Juan]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte con los municipios de [[Morrito]] y [[El Almendro (Nicaragua)|El Almendro]], al sur con el municipio de [[San Carlos (Nicaragua)|San Carlos]], al este con el municipio de [[Nueva Guinea (Nicaragua)|Nueva Guinea]] y al oeste con el [[Lago Cocibolca]]; las islas El Boquete, El Carrizal y El Guarumo, pertenecen a este municipio.<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=6 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 284 kilómetros de la capital de [[Managua]].
+
+Toda la región del municipio se caracteriza por ser montañosa, con excepción de la franja costera en el margen oriental del Gran Lago de Nicaragua. En materia hidrográfica el municipio cuenta con los ríos Tepenaguasapa, Tule, Cojo, Fajardo, Zapote, Fajardito. Jícaro, Guayabal, Camastro, Tulito y alrededor de unas 20 quebradas grandes.
+
+== Historia ==
+El primer asentamiento en la zona fue conocido con el nombre de "Las Aldeas" y estaba al oriente de la actual ubicación, el cual fue fundado por los huleros y raicilleros entre los años 1850 y 1855. En el siglo pasado San Miguelito tuvo gran importancia comercial, esta actividad se desarrollaba a través del proyecto de ferrocarril que cubría la ruta
+desde este municipio hasta Punta Mico, en el [[Océano Atlántico]], para aprovechar la extracción de hule y raicilla que abundaba en la zona.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 10,013 (51.2%)
+| valor1 = 51.2
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 9,530 (48.8%)
+| valor2 = 48.8
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 15,254 (78.1%)
+| valor1 = 78.1
+| color1 = #109618
+| etiqueta2 = Urbano: 4,289 (21.9%)
+| valor2 = 21.9
+| color2 = #FF9900
+}}
+San Miguelito tiene una población actual de 19,543 habitantes. De la población total, el 51.2% son hombres y el 48.8% son mujeres. Casi el 21.9% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima tropical]] húmedo, caracterizado como semi-húmedo. La temperatura media oscila entre los 25 a 26&nbsp;°C. La precipitación pluvial varía entre los 2000 y 2400 mm caracterizándose por una buena distribución durante todo el año.<ref name='INIFOM'/> Cuenta con bosque seco tropical, caducifolio.
+ 
+== Localidades ==
+Existen cuatro asentamientos, la cabecera municipal y las siguientes 32 comarcas:<ref>Alcaldía de San Miguelito.</ref> San Miguelito, Never Oporta, Las Palomas, El Tule, Los Ángeles, La Conquista #1, Los Potreros, Mancha de Coyol, San Felipe, Emp. Los Sánchez, El Peñón, El Tamboral #1, Los Arroyos, Los Pantanos, El Ojoche, Quebrada Seca, Guachipilín, La Conquista #2, El Cacao, El Tamboral #2, El Congo, Las Nubes, El Caracol, El Roble, El Jícaro, Espino Blanco, Las Coreas, El Camastro #1, El Camastro #2, Poza Azul, Las Parcelas, La Tigra, El Dorado, El Cojo, El Naranjo, Aguas Calientes, El Ayote y La Paila.
+
+== Economía ==
+El municipio se destaca por ser uno de los grandes ganaderos del departamento de Río San Juan, si bien producen leche poco más que para el autoconsumo; también destaca la agricultura y la pesca.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Río San Juan]]

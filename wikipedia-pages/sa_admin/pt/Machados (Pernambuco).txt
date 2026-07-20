@@ -1,0 +1,68 @@
+{{Info/Município do Brasil
+<!-- GeoID=2609105 -->
+<!-- Cabeçalho -->| nome = Machados
+| preposição = 
+| foto = 
+| leg_foto = 
+| apelido = Capital da banana
+<!-- Dados gerais -->| brasão = 
+| bandeira = Machados-pe.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 20 de dezembro
+| fundação = {{dtlink|||1963|idade}}
+| gentílico = machadense
+| lema = 
+| prefeito = Juarez Rodrigues Fernandes
+| partido = [[PSD]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Brazil Pernambuco Machados location map.svg
+| latP = S
+| latG = 07
+| latM = 41
+| latS = 09
+| lonP = O
+| lonG = 35
+| lonM = 30
+| lonS = 54
+| estado = Pernambuco
+| mesorregião = [[Mesorregião do Agreste Pernambucano|Agreste Pernambucano]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Médio Capibaribe|Médio Capibaribe]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[São Vicente Férrer (Pernambuco)|São Vicente Férrer]], [[Vicência]], [[Bom Jardim (Pernambuco)|Bom Jardim]] e [[Orobó]].
+| dist_capital = 105
+<!-- Características geográficas -->| área = 56.957 <!--favor manter o formato-->
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 15046 <!--favor manter o formato-->
+| data_pop = estatísticas [[IBGE]]/[[2014]]<ref name="IBGE_Pop_2014">{{citar web |url = http://cod.ibge.gov.br/36SAG |título=Estimativa Populacional 2014 | obra =Estimativa Populacional 2014 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=agosto de 2014 |acessodata = 29 de agosto de 2014}}</ref>
+| altitude = 416
+| clima = [[Tropical]]
+| sigla_clima = As'
+<!-- Indicadores -->| idh = 0.578 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=1 de outubro de 2013}}</ref>
+| pib = {{formatnum:84 432}} mil
+| data_pib = [[IBGE]]/[[2012]]<ref name="IBGE_PIB">{{citar web |url=http://cod.ibge.gov.br/3PKCB |titulo=Produto Interno Bruto dos Municípios 2012 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2014}}</ref>
+| pib_per_capita = 5984,23
+| data_pib_per_capita = [[IBGE]]/[[2012]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.machados.pe.gov.br/ machados.pe.gov.br]
+}}
+'''Machados''' é um [[Município (Brasil)|município brasileiro]] do [[estado (subdivisão)|estado]] de [[Pernambuco]]. Limita-se ao norte e a oeste com [[Orobó]], ao sul com [[São Vicente Férrer (Pernambuco)|São Vicente Férrer]], ao sudeste com [[Bom Jardim (Pernambuco)|Bom Jardim]], e a leste com [[Vicência (Pernambuco)|Vicência]].
+
+== História ==
+
+O município foi criado pela lei estadual 4.994, que desmembrou de [[Bom Jardim (Pernambuco)|Bom Jardim]] seu antigo distrito.<ref>Leis, Decretos e Atos do Governo do Estado do ano de 1963 - outubro/dezembro. Recife:Imprensa Oficial, 1963, p. 344.</ref><ref name="FIAM">* ''Calendário Oficial de Datas Históricas dos Municípios do Interior de Pernambuco.'' Recife: FIAM / CEHM, 1994.</ref><ref name=IBGEci>{{citar web|url= https://cidades.ibge.gov.br/brasil/pe/machados/historico|título=Machados |publicado=IBGE Cidades|acessodata=27/4/2022}}</ref>
+
+== Geografia ==
+Composto apenas por seu distrito-sede<ref name=IBGEci /><ref>D. O. E. Ano XLVI, nº 179. Recife, 06/08/1969, p. 6.502-6.503.</ref> e com altitude de 416 metros, o município se localiza à [[latitude]] 07°40'56" [[sul]] e à [[longitude]] 35°31'22" [[oeste]]. Sua população estimada em [[2010]] era de 13 mil habitantes.
+
+{{Referências}}
+
+{{Esboço-municípiosbr/Pernambuco}}
+{{Municípios de Pernambuco}}
+{{Portal3|Brasil}}
+
+[[Categoria:Municípios de Pernambuco]]
+[[Categoria:Fundações em Pernambuco em 1963]]

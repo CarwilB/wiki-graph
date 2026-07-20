@@ -1,0 +1,420 @@
+{{Info/Município do Brasil
+<!-- GeoID=3555406 -->
+<!-- Cabeçalho -->| nome = Ubatuba
+| nome_oficial = Estância Balneária de Ubatuba
+| preposição = da
+| imagem_montagem = {{multiple image
+|border            = infobox
+|perrow            = 1/3/2/2
+|total_width       = 305
+|caption_align = center
+ | image1   = Vista aérea de Ubatuba.png
+ | caption1 = Vista panorâmica de Ubatuba
+ | image2   =  20230726 072551 01.jpg
+ | caption2 = [[Homenagem ao Caiçara|O Caiçara]]
+ | image3   =20230725 084402.jpg
+ | caption3 = [[Sobrado do Porto]]
+ | image4   = Ruinas da Lagoinha 2017 29.jpg
+ | caption4 = [[Ruínas da Lagoinha]]
+ | image5 =Gruta que chora (26219871263).jpg
+ | caption5 =[[Praia da Sununga]] vista da Gruta que chora
+ | image6 = Picinguaba_-_Harbour_View_7_(161620630).jpg
+ | caption6 = [[Vila de Picinguaba]]
+ | image7 =Praia do Estaleiro - Ubatuba.png
+ | caption7 =A [[Serra do Mar]], considerada [[Patrimônio Mundial]] da [[UNESCO]]
+ | image8 =6 ILHA DAS COUVES - UBATUBA.jpg
+ | caption8 = [[Ilha das Couves]]
+ | color  = white
+ | footer =
+}}
+| bandeira = Bandeira de Ubatuba.svg
+| brasão = Ubatuba_brasao.gif
+| link_bandeira = 
+| link_brasão = 
+| link_hino = s:Ubatuba, sim!
+| lema = ''Unitatem Servavit Patriae Et Fidei'' <br> <small> "Conservou a Unidade da Pátria e da Fé"
+| gentílico = ubatubense
+| mapa = SaoPaulo Municip Ubatuba.svg
+| latP = S
+| latG = 23
+| latM = 26
+| latS = 02
+| lonP = O
+| lonG = 45
+| lonM = 04
+| lonS = 15
+| estado = São Paulo
+| região_metropolitana = [[Região Metropolitana do Vale do Paraíba e Litoral Norte|Vale do Paraíba e Litoral Norte]]
+| vizinhos = [[Cunha (São Paulo)|Cunha]], a norte; [[Paraty]] a nordeste; [[Caraguatatuba]] a sudoeste; [[Natividade da Serra]] e [[São Luiz do Paraitinga]] a noroeste.
+| dist_capital = 223
+| dist_capital_ref = <ref>{{citar web|url=http://www.emsampa.com.br/xspxspint.htm |título=Distâncias entre a cidade de São Paulo e todas as cidades do interior paulista|acessodata=31 de janeiro de 2011}}</ref>
+<!-- Características geográficas -->| fundação = {{nowrap|{{dtlink|28|10|1637|idade}}}}
+| prefeito = Flávia Pascoal
+| partido = [[Partido Liberal (2006)|PL]]
+| mandato_início = 2024<ref name="Flaviaret">{{Citar web|url=https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2024/03/27/flavia-pascoal-pl-reassume-cargo-de-prefeita-de-ubatuba-e-anuncia-novo-secretariado-para-a-gestao-veja-lista.ghtml|titulo=Flávia Pascoal (PL) reassume cargo de prefeita de Ubatuba e anuncia novo secretariado para a gestão; veja nomes|data=2024-03-27|acessodata=2026-05-07|website=[[G1]]}}</ref>
+| mandato_fim = 2028
+| área = 708.105
+| área_ref = <ref name="IBGE_Pop"/>
+| população = 92819 <!--favor manter o formato-->
+| data_pop = {{nowrap|estimativa IBGE/2021}}<ref name="IBGE_Pop">{{citar web |url=https://cidades.ibge.gov.br/brasil/sp/ubatuba/panorama|título= Ubatuba|publicado= IBGE|data= 1/7/2021|acessodata = 7/10/2021}}</ref>
+| densidade = 
+| clima = [[tropical úmido]]
+| sigla_clima = Af
+<!-- Indicadores -->| altitude = 3
+| idh = 0.751 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2013<ref name="PNUD_IDH_2013">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib = {{formatnum:723522.919}} mil
+| data_pib = IBGE/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+| pib_per_capita = 10.404,04
+| data_pib_per_capita = IBGE/2009<ref name="IBGE_PIB"/>
+| apelido = Capital do Surfe<ref>{{Citar web |url=https://www.al.sp.gov.br/norma/?id=74261 |titulo=Lei nº 12.718, de 05 de outubro de 2007 |acessodata=2021-07-12 |website=www.al.sp.gov.br |lingua=pt-br}}</ref> 
+<!-- Dados gerais -->| aniversário = 28 de outubro
+| região_intermediária = São José dos Campos
+| data_região_intermediária = [[IBGE]]/2017 <ref name= Recorte>{{citar web |url=https://ia601502.us.archive.org/27/items/RegiesGeogrrficasBrasil2017/Regi%C3%B5es%20geogr%C3%A1ficas_Brasil%202017.pdf |titulo= O recorte das Regiões Geográficas Imediatas e Intermediárias de 2017 |data=2017 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |página= 20–34|acessodata=10 de agosto de 2017}}</ref>
+| região_imediata = Caraguatatuba-Ubatuba-São Sebastião
+| data_região_imediata = IBGE/2017
+}}
+'''Ubatuba''', oficialmente '''Estância Balneária de Ubatuba''', é um [[Unidades federativas do Brasil|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[São Paulo (estado)|São Paulo]]. Localizada na [[Lista de mesorregiões e microrregiões de São Paulo|Mesorregião do Vale do Paraíba Paulista]] e na [[Lista de mesorregiões e microrregiões de São Paulo|Microrregião de Caraguatatuba]], trata-se de uma [[Estância turística (São Paulo)|estância balneária]] cujo território ocupa uma área de {{Fmtn|708.105}}km², sendo 83% coberto pelo [[Parque Estadual da Serra do Mar]]. O [[Censo demográfico do Brasil de 2022|Censo 2022]] apontou que sua população era de 92 981 habitantes, resultando em uma [[densidade populacional]] de 131,1 hab/km².<ref name=":1" /> O município é formado pela sede e pelo distrito de [[Picinguaba]].<ref name=":1">{{citar web|url=http://www.igc.sp.gov.br/produtos/arquivos/municipios_e_distritos.pdf|titulo=Municípios e Distritos do Estado de São Paulo|data=|acessodata=|publicado=IGC - Instituto Geográfico e Cartográfico|ultimo=|primeiro=}}</ref><ref>{{citar web|url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2015/|titulo=Divisão Territorial do Brasil|data=|acessodata=|publicado=IBGE - Instituto Brasileiro de Geografia e Estatística|ultimo=|primeiro=}}</ref> 
+
+A região atual do município era ocupada pelos [[tupinambás]] muito antes da [[Brasil Colônia|chegada dos portugueses ao Brasil]].<ref>{{Citar web|ultimo=Naturam|url=https://naturam.com.br/historia-de-ubatuba/|titulo=História de Ubatuba|data=2017-04-27|acessodata=2025-02-24|website=Naturam|lingua=pt-BR}}</ref> O povoado foi elevado à [[Vila]] em 28 de outubro de 1637.<ref name=":2">{{Citar web|ultimo=Alves|primeiro=Marcio|url=https://www.cidadeecultura.com/historia-de-ubatuba/|titulo=História de Ubatuba - Origem de bravos guerreiros|data=2016-03-31|acessodata=2025-02-24|website=Cidade e Cultura|lingua=pt-BR}}</ref> 
+
+Ubatuba foi palco de importantes eventos para a história brasileira, como um dos primeiros conflitos e tratados do país: a [[Confederação dos Tamoios]]. No [[século XIX]], tornou-se um importante polo portuário e econômico.<ref name=":2" /> 
+
+Devido às suas praias paradisíacas, muitas delas cercadas pela [[Serra do Mar]] e consideradas entre as mais bonitas do país,<ref>{{Citar web|url=https://noticiasdaspraias.com/2025/02/20/ubatuba-domina-top-10-das-praias-preferidas-pelos-turistas-no-litoral-paulista-confira-o-ranking/|titulo=Ubatuba domina “Top 10” das praias preferidas pelos turistas no Litoral Paulista. Confira o ranking: – Notícias das Praias|data=2025-02-20|acessodata=2025-02-24|lingua=pt-PT}}</ref> às belezas naturais e à rica cultura e [[Culinária caiçara|culinária]] [[Caiçaras|caiçara]], com locais tombados pelo [[Conselho de Defesa do Patrimônio Histórico|Condephaat]] como [[Patrimônio histórico|Patrimônio Histórico]], Ubatuba é considerada um dos mais belos e famosos destinos turísticos brasileiros e atrai milhões de turistas anualmente, sendo reconhecida como uma [[Estância turística (São Paulo)|Estância Balneária]] e a "Capital do Surfe".<ref>{{Citar web|url=https://g1.globo.com/sp/vale-do-paraiba-regiao/verao-2024/noticia/2024/01/09/ubatuba-saiba-quais-as-principais-praias-outras-atracoes-como-chegar-e-valor-de-taxa-ambiental.ghtml|titulo=Ubatuba: saiba quais as principais praias, outras atrações, como chegar e valor de taxa ambiental|data=2024-01-09|acessodata=2025-02-24|website=G1|lingua=pt-br}}</ref>
+
+== Estância balneária ==
+{{Artigo principal|[[Estância turística (São Paulo)]]}}
+São Sebastião é um dos 15 municípios paulistas considerados estâncias balneárias pelo [[São Paulo (estado)|Estado de São Paulo]], por cumprir determinados pré-requisitos definidos por lei estadual. Tal status garante a esses municípios uma verba maior por parte do Estado para a promoção do turismo regional. Também, o município adquire o direito de agregar a seu nome o título de Estância Balneária, termo pelo qual passa a ser designado tanto pelo expediente municipal oficial quanto pelas referências estaduais.<ref>{{Citar web|ultimo=Paulo|primeiro=Secretaria de Turismo e Viagens do Estado de São|url=https://www.turismo.sp.gov.br/onepage/mapasinterativos/estanciasturisticas|titulo=Mapa das Regiões Turísticas do Estado de São Paulo|acessodata=2025-05-18|website=OnePage|lingua=pt-br}}</ref>
+
+== Toponímia ==
+{{VT|Topônimos de origem tupi no Brasil}}
+Há pelo menos duas interpretações para "Ubatuba". Em tupi, ''ubá'' significa [[canoa]], enquanto ''u'ubá'' significa [[cana-do-rio]], que corresponde a uma gramínea que era utilizada na confecção de flechas pelos indígenas.<ref>{{citar web|url=http://www.litoralvirtual.com.br/ubatuba/historia.htm|autor=Ubatuba Virtual|titulo=História de Ubatuba|acessodata=2011-03-09|arquivourl=https://web.archive.org/web/20101218174935/http://litoralvirtual.com.br/ubatuba/historia.htm|arquivodata=18 de dezembro de 2010|urlmorta=yes}}</ref><ref>NAVARRO, E. A. ''[[Método Moderno de Tupi Antigo|Método moderno de tupi antigo: a língua do Brasil dos primeiros séculos]]''. Terceira edição. São Paulo: Global, 2005. p. 205</ref> Como ''tyba'' indica "ajuntamento",<ref>{{Citar web |url=http://www.fflch.usp.br/dlcv/tupi/vocabulario.htm |titulo=Cópia arquivada |acessodata=10 de setembro de 2012 |arquivourl=https://web.archive.org/web/20120809053512/http://www.fflch.usp.br/dlcv/tupi/vocabulario.htm |arquivodata=9 de agosto de 2012 |urlmorta=yes }}</ref> os dois termos, formando uma [[relação genitiva]], podem significar tanto "ajuntamento de canoas" como "ajuntamento de canas-do-rio".<ref name="DTA" />
+
+[[Eduardo Navarro]], em seu ''[[Dicionário de Tupi Antigo]]'' (2013), explica que ''ubá'' no sentido de canoa surgiu apenas no final do século XVII, enquanto o nome Ubatuba data do século XVI. Portanto, a segunda hipótese seria mais plausível.<ref name="DTA">NAVARRO, Eduardo de Almeida. ''[[Dicionário de Tupi Antigo|Dicionário de tupi antigo: a língua indígena clássica do Brasil]]''. São Paulo. Global. 2013</ref>
+
+== História ==
+=== Ocupação indígena ===
+No século XVI, Ubatuba fazia parte de uma região litorânea maioritariamente ocupada pelos indígenas [[tupinambás]]. A primeira possível referência ao local aparece na obra de [[Hans Staden]], que permaneceu cativo numa aldeia chamada ''Uwatibi'', em Angra dos Reis. Essa aldeia tinha o mesmo nome do local da atual cidade de Ubatuba, sítio em que os índios tupinambás se reuniam com muitas canoas para expedições de guerra contra os [[tupiniquins]] e os portugueses em ''Burikioca'' ([[Bertioga]]) e ''Upau-Nema'' ([[São Vicente (São Paulo)|São Vicente]]).<ref name=Staden>{{Citar livro|autor=Hans Staden|título=Hans Staden's True History: An Account of Cannibal Captivity in Brazil|editora=Duke University Press|ISBN=978-0-8223-4231-1}}</ref>
+
+Tanto Hans Staden quanto outros autores europeus da época<ref>{{Citar livro|nome=Jean|sobrenome=de Lery|título=Histoire d'un Voyage Fait a la Terre du Brésil, Autrement Dite Amerique|ano=1578}}</ref><ref>{{Citar livro|nome=André|sobrenome=Thevet|título=Les Singularités de la France Antarctique|ano=1557}}</ref> mencionam que o chefe supremo dos tupinambás era [[Cunhambebe]] e que seu território se estendia desde o [[Rio Juqueriquerê]], em [[Caraguatatuba]], até o [[Cabo de São Tomé]], no leste do estado do [[Rio de Janeiro (estado)|Rio de Janeiro]], abrangendo também todo o território ao longo do [[Rio Paraíba do Sul]]. Apenas décadas mais tarde, nos relatos de [[José de Anchieta]], é que encontramos menção à aldeia de ''Iperoig'', que pode significar "rio do tubarão" ou "rio das perobas".<ref>{{citar web|autor=|url=http://www.jornalcanalaberto.com.br/index.php?pagina=materias&cod_editoria=27&cod_materia=1199 |título=Origens da colonização de Ubatuba está ligada ao Rio de Janeiro|acessodata=}}</ref>
+
+=== Iperoig e a luta contra os franceses ===
+{{Artigo principal|Confederação dos Tamoios}}
+Os índios tupinambás estiveram entre os primeiros [[povos indígenas do Brasil|índios brasileiros]] a sofrer o impacto dos portugueses, uma vez que foram [[escravidão indígena no Brasil|escravizados]] para os [[Ciclo da cana-de-açúcar|engenhos de cana-de-açúcar em São Vicente]]. Isso motivou uma firme aliança dos tupinambás com os franceses da [[França Antártica]], que ocuparam a região da [[baía de Guanabara]]. Essa aliança, liderada por Cunhambebe, ficou conhecida como [[Confederação dos Tamoios]].
+
+Em 1563, José de Anchieta partiu com [[Manuel da Nóbrega]] de São Vicente para a aldeia de Iperoig, com o objetivo de pacificar os tupinambás. Anchieta permaneceu [[refém]] durante vários meses em Iperoig, enquanto Manuel da Nóbrega voltou a São Vicente acompanhado de Cunhambebe para acertar o [[tratado de paz]] conhecido como [[Paz de Iperoig]].
+
+Com a paz estabelecida com os índios tupinambás fronteiriços a São Vicente, os portugueses destruíram boa parte da nação tupinambá em conflitos na baía de Guanabara (em [[Entrincheiramento de Uruçumirim|Uruçumirim]] - atual [[aterro do Flamengo]]) e em [[Guerra de Cabo Frio|Cabo Frio]], expulsando os franceses da região.<ref>''Cartas Jesuíticas, séc. XVI''</ref>
+
+=== Criação da vila ===
+Enquanto os remanescentes tupinambás da Guanabara e de Cabo Frio se embrenharam mata adentro, abrindo espaço para a fundação do Rio de Janeiro, a população da região de Iperoig, em sua maioria, permaneceu em seus locais. Com o objetivo de assegurar a posse portuguesa da colônia, o então [[governador-geral]] empreendeu um esforço para colonizar a área. Assim, em 28 de outubro de 1637, a Aldeia de Iperoig foi elevada a vila, com o nome de Vila Nova da Exaltação à Santa Cruz do Salvador de Ubatuba, subordinada à sessão norte da Capitania de Itanhaém.<ref>{{Citar web |url=http://www.novomilenio.inf.br/santos/calixtoch17.htm |titulo=Novo Milênio: Calixto e as Capitanias Paulistas - 17 |acessodata=2021-09-27 |website=www.novomilenio.inf.br}}</ref><ref>{{Citar web |url=http://www.itanhaem.sp.gov.br/turismo/cidade/capitania_conceicao.html |titulo=Cópia arquivada |acessodata=2014-06-10 |arquivourl=https://web.archive.org/web/20140707191305/http://www.itanhaem.sp.gov.br/turismo/cidade/capitania_conceicao.html |arquivodata=2014-07-07 |urlmorta=yes }}</ref> Entre os primeiros sesmeiros de Ubatuba estão lnocêncio de Unhate, Miguel Gonçalves, Capitão Gonçalo Correa de Sã, Martim de Sã, Capitão Jordão Homem Albernaz da Costa, Diogo Conqueiro (primeiro juiz ordinário da região) e Belchior Conqueiro, filhos do Capitão-mor da Capitania de São Vicente [[Gaspar Conqueiro]].<ref>{{Citar web|url=https://ubatubense.blogspot.com/2025/10/ubatuba-e-sua-historia.html|titulo=UBATUBA E SUA HISTÓRIA|acessodata=2025-12-17|website=UBATUBA E SUA HISTÓRIA}}</ref><ref>{{citar periódico |url=https://www.google.com.br/books/edition/Revista_do_Arquivo_Municipal_de_S%C3%A3o_Pau/AbXTBbfRF6EC?hl=pt-BR&gbpv=1&dq=ubatuba+diogo+conqueiro&pg=PA38&printsec=frontcover |título=Os Capitães-Mores de Itanhaém. |data=1940 |acessodata=17 de dezembro de 2025 |periódico=Revista do Arquivo Municipal de São Paulo |publicado=Departamento de Cultura de São Paulo |ultimo=Franco |primeiro=Francisco Carvalho |pagina=37 |volume=LXX}}</ref><ref>{{citar livro|url=https://www.google.com.br/books/edition/Sesmarias_1602_1642/MuxMAQAAMAAJ?hl=pt-BR&gbpv=1&dq=sesmarias+1602+1642&printsec=frontcover|título=Sesmarias 1602-1642|ultimo=São Paulo|editora=Typografia Piratininga|ano=1921|local=São Paulo|página=173}}</ref>
+
+Ao longo do século XVIII, a produção agrícola cresceu e a Baía de Ubatuba se transformou no mais movimentado porto da [[Capitania de São Vicente]].<ref name=":0">{{Citar web |url=https://www.al.sp.gov.br/noticia/?id=318364 |titulo=Ubatuba: mar e Mata Atlântica |acessodata=2021-09-27 |website=www.al.sp.gov.br |lingua=pt-br}}</ref> Em 1789, entretanto, o governo de [[Bernardo José Maria Lorena e Silveira|Lorena]] determinou que toda exportação só poderia ser feita pelo [[Porto de Santos]], o que levou à primeira decadência econômica de Ubatuba. O governador seguinte, [[Melo de Castro e Mendonça]], concedeu novamente o direito ao livre comércio da vila.
+
+=== Ascensão e decadência econômica ===
+Ao longo do [[século XIX]], Ubatuba foi uma cidade rica, graças à atividade portuária. Em 1855, a cidade passou de vila a [[comarca]]. Alguns exportadores cogitaram a construção de uma ferrovia, para rivalizar com os portos de Santos e do Rio de Janeiro. Essa ferrovia foi impedida pelo governo brasileiro, através de [[moratória]].<ref name=":0" /> Com a gradual perda de importância para suas concorrentes melhor abastecidas, no final do século, Ubatuba mergulhava em isolamento e decadência econômica.
+
+=== Recuperação turística ===
+[[Ficheiro:Mini-shopping em Ubatuba-SP (2870891166).jpg|esquerda|miniaturadaimagem|[[Centro comercial]] na cidade]]
+Em 21 de abril de 1933, o engenheiro Mariano Montesanti inaugurou sua rodovia descendo para Ubatuba a partir de [[Taubaté]], fazendo a primeira ligação por estrada com o planalto e o vale do Paraíba. Essa estrada deu grande impulso ao turismo no litoral recortado do município, principalmente da população de Taubaté. As casas de veraneio passaram a abundar na cidade. Em 1948, Ubatuba conquistou a categoria de [[Estância turística (São Paulo)|estância balneária]].
+
+Em 1977, foi criado o [[Parque Estadual da Ilha Anchieta]] na ilha homônima, localizada a menos de um quilômetro do litoral de Ubatuba, que passou a ser [[área de proteção ambiental]].<ref>[http://www.al.sp.gov.br/repositorio/legislacao/decreto/1977/decreto-9629-29.03.1977.html Decreto n° 9.629, de 29/03/1977] Assembleia Legislativa do Estado de São Paulo</ref> Entre 1908 e 1955, a ilha Anchieta abrigou um presídio federal, desativado três anos depois da [[Rebelião da Ilha Anchieta]], protagonizada em 20 de junho de 1952.
+
+A [[especulação imobiliária]] e turística, entretanto, contribuiu para a rápida destruição do [[patrimônio histórico]] de Ubatuba. Hoje, sobram poucas mostras da ocupação antiga: um exemplo notável é o [[Sobrado do Porto|Sobradão do Porto]]. Hoje, Ubatuba resgata seu passado na cultura [[caiçara]], nas ruas, nas festas de origem portuguesa, na tradição quilombola e indígena, e nos edifícios históricos restantes, revelando seu potencial como estância balneária para o turismo.
+
+== Geografia ==
+[[Ficheiro:Ubatuba Landsat 8.jpg|miniaturadaimagem|Imagem do satélite [[Landsat 8]] do território do município de Ubatuba.]]
+A cidade de Ubatuba está localizada no litoral norte do Estado de São Paulo, distante 250 quilômetros da [[São Paulo|capital estadual]]. Limita-se ao norte com [[Paraty]] (Rio de Janeiro), ao sul com [[Caraguatatuba]], a oeste com [[Cunha (São Paulo)|Cunha]], [[São Luiz do Paraitinga]] e [[Natividade da Serra]] e a leste com o [[Oceano Atlântico]], achando-se na [[latitude]] 23°26'21,45". A cidade é cortada pelo [[Trópico de Capricórnio]], passando em frente à pista do [[aeroporto]] local.
+[[Ficheiro:Ubatuba de cima.png|direita|miniaturadaimagem|219x219px|A cidade é cercada pela Serra do Mar]]
+Ubatuba é cercada pela [[Serra do Mar]] e sua exuberante [[Mata Atlântica]]. Quase oitenta por cento do território da cidade de Ubatuba consiste em áreas de preservação. O [[Parque Estadual da Serra do Mar]], criado para proteger e preservar a mata atlântica, tem três núcleos dentro de Ubatuba: [[Núcleo Cunha-Indaiá|Cunha-Indaiá]], [[Núcleo Santa Virgínia|Santa Virgínia]] e [[Núcleo Picinguaba|Picinguaba]]. Além disso, a cidade possui uma sede do [[Projeto TAMAR]], destinada à conservação das espécies de [[Cheloniidae|tartarugas-marinhas]] do [[litoral do Brasil|litoral brasileiro]].
+
+=== Hidrografia ===
+Os rios e córregos que cortam Ubatuba são: Rio da Prata, Rio Maranduba, Rio Escuro, Rio Grande de Ubatuba, Rio Indaiá, Rio Itamambuca, Rio Purumã, Rio Iriri, Rio Fazenda, Rio das Bicas, córrego Duas Irmãs, Córrego Lagoinha, Rio Acaraú, Rio Promirim, Rio Quiririm e Rio Ubatumirim.
+
+=== Clima ===
+{| class=wikitable style="float:left; margin:1em; border-collapse:border; text-align:center; font-size:90%"
+! colspan="6"|Maiores acumulados de precipitação em 24 horas<br />registrados em Ubatuba por meses ([[Instituto Nacional de Meteorologia|INMET]])<ref name="Precipitação-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83786&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/03/2009&mAtributos=,,,,,,,,,,1,,,,,,|título=BDMEP - série histórica - dados diários - precipitação (mm) - Ubatuba|publicado=Instituto Nacional de Meteorologia|acessodata=20/6/2015}}</ref>
+|-
+! Mês
+! Acumulado
+! Data
+! Mês
+! Acumulado
+! Data
+|-
+| Janeiro
+| {{fmtn|344.1|mm}}
+| 22/01/1976
+| Julho
+| {{fmtn|114.7|mm}}
+| 07/07/1986
+|-
+| Fevereiro
+| {{fmtn|246.3|mm}}
+| 13/02/1996
+| Agosto
+| {{fmtn|59.2|mm}}
+| 17/08/1983
+|-
+| Março
+| {{fmtn|201.8|mm}}
+| 12/03/1998
+| Setembro
+| {{fmtn|139.4|mm}}
+| 28/09/1976
+|-
+| Abril
+| {{fmtn|276|mm}}
+| 05/04/2005
+| Outubro
+| {{fmtn|149.1|mm}}
+| 09/10/1992
+|-
+| Maio
+| {{fmtn|194|mm}}
+| 03/05/1992
+| Novembro
+| {{fmtn|168.8|mm}}
+| 27/11/1992
+|-
+| Junho
+| {{fmtn|135.2|mm}}
+| 12/06/1989
+| Dezembro
+| {{fmtn|197.3|mm}}
+| 19/12/1986
+|-
+| colspan="6" style="font-size:85%" | '''Período dos dados''': 01/01/1961-31/08/1967, 01/07/1971-06/03/2009
+|}
+O [[clima]] de Ubatuba é o [[tropical úmido|tropical litorâneo húmido]] ou tropical atlântico, com [[chuva]]s abundantes ao longo do ano,  mais frequentes no [[verão]], sem [[estação seca]], e com mês mais frio possuindo temperatura média igual ou acima de {{fmtn|18|°C}}. Com quase {{fmtn|1700}} horas de sol por ano, a [[umidade do ar]] é relativamente elevada e o [[índice pluviométrico]] é de {{fmtn|2520}} milímetros/ano,<ref name="NCB_1981-2010"/> o que é refletido pelo apelido ''Ubachuva'' que a cidade recebe, devido ao seu clima chuvoso.
+
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de 1961 a 1967 e 1971 a 2009, a [[temperatura]] mínima absoluta registrada em Ubatuba foi de {{fmtn|3.7|°C}} em 1° de junho de 1979,<ref name="Temp-mín-INMET"/> e a maior atingiu {{fmtn|40.8|°C}} em 9 de setembro de 1997.<ref name="Temp-máx-INMET"/> O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas atingiu {{fmtn|344.1|mm}} em 22 de janeiro de 1976. Outros grandes acumulados superiores a 200&nbsp;mm foram {{fmtn|276|mm}} em 5 de abril de 2005, {{fmtn|262.8|mm}} em 5 de janeiro de 1992, {{fmtn|259.4|mm}} em 1° de abril de 1985, {{fmtn|246.3|mm}} em 13 de fevereiro de 1996, {{fmtn|230.3|mm}} em 19 de abril de 1990, {{fmtn|210.8|mm}} em 11 de janeiro de 1978 e {{fmtn|201.8|mm}} em 12 de março de 1998.<ref name="Precipitação-INMET"/> O menor índice de [[Umidade relativa|umidade relativa do ar]] foi de 21% em 1997, nos dias 8 de junho e 9 de setembro daquele ano.<ref>{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83786&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/03/2009&mAtributos=,,,,1,,,,,,,,,,,,|título=BDMEP - série histórica - dados horários - umidade relativa (%) - Ubatuba|publicado=Instituto Nacional de Meteorologia|acessodata=20/6/2015}}</ref>
+{{Tabela/Clima
+|localidade = Ubatuba
+|larguraporcentagem = 100
+|lang = br
+
+|Jan_REC_Max_°C = 38.8 |Jan_REC_Min_°C = 12.7
+|Fev_REC_Max_°C = 38.8 |Fev_REC_Min_°C = 14.8
+|Mar_REC_Max_°C = 38.2 |Mar_REC_Min_°C = 13.1
+|Abr_REC_Max_°C = 36.6 |Abr_REC_Min_°C = 10.2
+|Mai_REC_Max_°C =  36  |Mai_REC_Min_°C = 6.4
+|Jun_REC_Max_°C = 34.9 |Jun_REC_Min_°C = 3.7
+|Jul_REC_Max_°C = 35.2 |Jul_REC_Min_°C = 5.3
+|Ago_REC_Max_°C = 38.9 |Ago_REC_Min_°C = 5.6
+|Set_REC_Max_°C = 40.8 |Set_REC_Min_°C = 6.9
+|Out_REC_Max_°C =  38  |Out_REC_Min_°C = 10.2
+|Nov_REC_Max_°C = 39.4 |Nov_REC_Min_°C = 11.1
+|Dez_REC_Max_°C = 37.8 |Dez_REC_Min_°C = 12.9
+|Max_Rec_Ano_°C = 40.8 |Min_Rec_Ano_°C = 3.7
+
+|Jan_Max_°C = 30.3 |Jan_Med_comp_°C = 25.3 |Jan_Min_°C = 21.5
+|Fev_Max_°C =  31  |Fev_Med_comp_°C = 25.6 |Fev_Min_°C = 21.5
+|Mar_Max_°C = 29.9 |Mar_Med_comp_°C = 24.7 |Mar_Min_°C = 20.9
+|Abr_Max_°C = 28.4 |Abr_Med_comp_°C = 23.1 |Abr_Min_°C = 19.2
+|Mai_Max_°C = 26.1 |Mai_Med_comp_°C = 20.4 |Mai_Min_°C = 16.3
+|Jun_Max_°C = 25.3 |Jun_Med_comp_°C = 18.8 |Jun_Min_°C = 14.5
+|Jul_Max_°C = 24.4 |Jul_Med_comp_°C =  18  |Jul_Min_°C = 13.6
+|Ago_Max_°C = 24.9 |Ago_Med_comp_°C = 18.9 |Ago_Min_°C = 14.3
+|Set_Max_°C = 24.5 |Set_Med_comp_°C = 19.8 |Set_Min_°C =  16
+|Out_Max_°C = 25.9 |Out_Med_comp_°C = 21.5 |Out_Min_°C =  18
+|Nov_Max_°C = 27.5 |Nov_Med_comp_°C = 22.9 |Nov_Min_°C = 19.2
+|Dez_Max_°C =  29  |Dez_Med_comp_°C = 24.3 |Dez_Min_°C = 20.4
+|Max_Ano_°C = 27.3 |Med_comp_Ano_°C = 21.9 |Min_Ano_°C =  18
+
+|Jan_Precip_mm =  312.9 |Jan_dprecip = 17
+|Fev_Precip_mm =  290.5 |Fev_dprecip = 15
+|Mar_Precip_mm =  311.1 |Mar_dprecip = 16
+|Abr_Precip_mm =  232.5 |Abr_dprecip = 13
+|Mai_Precip_mm =  122.9 |Mai_dprecip = 9
+|Jun_Precip_mm =   94.2 |Jun_dprecip = 7
+|Jul_Precip_mm =   92.6 |Jul_dprecip = 8
+|Ago_Precip_mm =   74.4 |Ago_dprecip = 8
+|Set_Precip_mm =  196.9 |Set_dprecip = 13
+|Out_Precip_mm =  245.5 |Out_dprecip = 15
+|Nov_Precip_mm =  263.6 |Nov_dprecip = 16
+|Dez_Precip_mm =  280.4 |Dez_dprecip = 17
+|Ano_Precip_mm = 2517.5 |Ano_dprecip = 154 |Precip_Min  =  ≥ 1 mm
+
+|Jan_umid_comp = 82.4
+|Fev_umid_comp = 82.7
+|Mar_umid_comp = 84.6
+|Abr_umid_comp = 84.8
+|Mai_umid_comp = 84.7
+|Jun_umid_comp = 84.4
+|Jul_umid_comp = 84.3
+|Ago_umid_comp = 83.3
+|Set_umid_comp = 85.3
+|Out_umid_comp = 84.5
+|Nov_umid_comp = 82.7
+|Dez_umid_comp = 82.2
+|Ano_umid_comp = 83.8
+
+|Jan_hsol = 143.6
+|Fev_hsol = 157.5
+|Mar_hsol =  152
+|Abr_hsol = 151.9
+|Mai_hsol = 150.8
+|Jun_hsol = 154.5
+|Jul_hsol =  154
+|Ago_hsol = 155.1
+|Set_hsol = 105.2
+|Out_hsol = 110.9
+|Nov_hsol =  121
+|Dez_hsol = 131.5
+|Ano_hsol = 1688
+
+|fonte = [[Instituto Nacional de Meteorologia]] (INMET) (normal climatológica de 1981-2010;<ref name="NCB_1981-2010">{{citar web|URL=http://www.inmet.gov.br/portal/index.php?r=clima/normaisclimatologicas|título=NORMAIS CLIMATOLÓGICAS DO BRASIL|publicado=Instituto Nacional de Meteorologia|acessodata=9/5/2018}}</ref> recordes de temperatura: 01/01/1961-31/08/1967, 01/07/1971-06/03/2009)<ref name="Temp-mín-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83786&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/03/2009&mAtributos=,,,1,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura mínima (°C) - Ubatuba|publicado=Instituto Nacional de Meteorologia|acessodata=20/6/2015}}</ref><ref name="Temp-máx-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83786&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/03/2009&mAtributos=,,1,,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura máxima (°C) - Ubatuba|publicado=Instituto Nacional de Meteorologia|acessodata=20/6/2015}}</ref>
+}}
+
+== Demografia ==
+[[Ficheiro:Quilombo da Caçandoca - Ubatuba - panoramio.jpg|miniaturadaimagem|[[Quilombo Caçandoca|Quilombo da Caçandoca]]]]
+
+=== População ===
+{| border="0"
+|-
+|
+{{Crescimento população dos municípios de São Paulo
+| 1872 = 7565
+| 1890 = 9612	
+| 1900 = 11984
+| 1910 = 9049
+| 1920 = 10179
+| 1925 = 12615
+| 1934 = 7593
+| 1937 = 8117
+| 1940 = 7255
+| 1946 = 10407
+| 1950 = 7941
+| 1958 = 9023
+| 1960 = 10294
+| 1970 = 15203
+| 1980 = 27139
+| 1991 = 47398
+| 2000 = 66861
+| 2010 = 78801
+| 2022 = 92981
+| estimado = 96598
+| ano_est  = 2024
+| ref_est  = <ref>{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=41105|titulo=Estimativas da população residente para os municípios e para as unidades da federação (2024) {{!}} IBGE|website=www.ibge.gov.br}}</ref>
+}}
+|}
+=== Composição étnica ===
+Em 2022, segundo dados do Censo do Instituto Brasileiro de Geografia e Estatística, a população do município era composta por 49.447 [[Brasileiros brancos|brancos]] (53,18%), 34.925 [[pardos]] (37,56%), 7.364 [[Afro-brasileiros|pretos]] (7,92%), 698 [[Brasileiros asiáticos|amarelos]] (0,75%) e 546 [[Povos indígenas do Brasil|indígenas]] (0,59%).<ref>{{Citar web|url=https://sidra.ibge.gov.br/tabela/9605|titulo=Tabela 9605: População residente, por cor ou raça, nos Censos Demográficos|acessodata=2026-03-27|website=sidra.ibge.gov.br}}</ref>
+
+=== Religião ===
+[[Ficheiro:ROGERIOCASSIMIRO IGREJAMATRIZ UBATUBA SP (40248423064).jpg|miniaturadaimagem|Paróquia Exaltação da Santa Cruz, no Centro Histórico]]
+De acordo com o [[Censo demográfico do Brasil de 2022|Censo 2022 (IBGE)]], 73,32% da população do município é [[Jesus|cristã]], sendo 40,85% católicos e 32,47% evangélicos. Outras religiões representam 11,65% da população total.<ref>{{Citar web|url=https://sidra.ibge.gov.br/tabela/6417|titulo=Tabela 6417: Pessoas de 10 anos ou mais de idade, por cor ou raça, segundo o sexo e a religião|acessodata=2026-03-20|website=sidra.ibge.gov.br}}</ref>
+
+O [[Cristianismo]] se faz presente na cidade da seguinte forma:<ref>O termo "cristão" (em [[Língua grega|grego]] Χριστιανός, [[Transliteração|transl]] ''Christianós'') foi usado pela primeira vez para se referir aos discípulos de [[Jesus|Jesus Cristo]] na cidade de [[Antioquia]] ([https://www.bible.com/pt/bible/212/ACT.11.arc95 Atos cap. 11, vers. 26]), por volta de 44 d.C., significando "seguidores de Cristo". O primeiro registro do uso do termo "cristianismo" (em grego Χριστιανισμός, ''Christianismós'') foi feito por [[Inácio de Antioquia]], por volta do ano 100. ''Tyndale Bible Dictionary'', pp. 266, 828</ref>
+
+A [[Igreja Católica]] é representada na cidade pela [[Diocese de Caraguatatuba]].<ref>{{Citar web|url=https://www.catholic-hierarchy.org/country/r10br.html|titulo=Sul 1 Region of Brazil [Catholic-Hierarchy]|acessodata=2025-05-18|website=www.catholic-hierarchy.org}}</ref>
+
+Entre as igrejas [[Protestantismo|protestantes históricas]], [[Pentecostalismo|pentecostais]] e [[Neopentecostalismo|neopentecostais]], encontram-se na cidade:<ref>{{Citar periódico |url=https://www.oxfordreference.com/display/10.1093/acref/9780192802903.001.0001/acref-9780192802903 |título=The Oxford Dictionary of the Christian Church |data=2009-01-01 |acessodata=2025-05-18 |publicado=Oxford University Press |editor-sobrenome=Cross |editor-nome=F. L. |lingua=en-US |doi= |isbn=978-0-19-280290-3 |editor-sobrenome2=Livingstone |editor-nome2=E. A.}}</ref>
+* [[Assembleias de Deus no Brasil|Assembleia de Deus Ministério do Belém]].<ref>{{Citar web|url=https://confradesp.com.br/campos-eclesiasticos/|titulo=Campos Eclesiásticos|data=2018-12-10|acessodata=2025-05-18|website=CONFRADESP|lingua=pt-BR}}</ref><ref>{{Citar web|url=https://ad.org.br/locations/|titulo=Arquivos: Locais|acessodata=2025-05-18|website=Assembleia de Deus Belém – Sede|lingua=pt-BR}}</ref>
+* [[Congregação Cristã no Brasil]].<ref>{{Citar web|url=https://congregacaocristanobrasil.org.br/localidade|titulo=Localidade - Congregação Cristã no Brasil|acessodata=2025-05-18|website=congregacaocristanobrasil.org.br}}</ref>
+* [[Igreja Batista]]<ref>{{Citar web|url=https://cbesp.org.br/missoes/|titulo=Missões • CBESP - Convenção Batista do Estado de São Paulo|acessodata=2025-06-24|website=CBESP - Convenção Batista do Estado de São Paulo|lingua=pt-BR}}</ref>
+
+== Política e administração ==
+=== Governo ===
+Os atuais líderes políticos de Ubatuba são:
+* [[Prefeito|Prefeita]]: Flávia Pascoal ([[Partido Liberal (2006)|PL]])<ref name="Flaviaret"/>
+* [[Presidente da câmara municipal|Presidente da Câmara]]: Gady Gonzalez ([[Movimento Democrático Brasileiro (1980)|MDB]])
+
+== Infraestrutura ==
+=== Educação ===
+A cidade de Ubatuba abriga um ''campus'' da [[Universidade de Taubaté]] (UNITAU), que oferece diversos cursos de graduação em nível superior na modalidade [[educação a distância]] (EAD).<ref>{{Citar web |url=https://www.unitau.br/departamentos/campus-ubatuba/ |titulo=Campus Ubatuba - Universidade de Taubaté - UNITAU |acessodata=2021-09-27 |website=www.unitau.br |lingua=pt-br}}</ref>
+
+=== Transportes ===
+*[[Aeroporto de Ubatuba]]
+*Verde Bus
+*Terminal Rodoviário Intermunicipal de Ubatuba
+Os principais acessos à cidade são:<ref>{{Citar web|url=https://www.der.sp.gov.br/WebSite/Servicos/ServicosOnline/CamerasOnlineMapa.aspx?camera=31|titulo=DER/SP: Câmeras Online|acessodata=2025-06-24|website=www.der.sp.gov.br}}</ref>
+
+* Rodovia Oswaldo Cruz ([[Rodovia Oswaldo Cruz|SP-125)]]
+* Rodovia Rio-Santos ([[BR-101]])
+* Rodovia dos Tamoios ([[Rodovia dos Tamoios|SP-099]])
+
+=== Comunicações ===
+O sistema de telefones automáticos foi inaugurado na cidade pela [[Companhia de Telecomunicações do Estado de São Paulo|Companhia de Telecomunicações do Estado de São Paulo (COTESP)]] em 1971, com duas centrais telefônicas (Ubatuba e Praia do Lázaro).<ref>{{citar web|url=https://acervo.folha.com.br/compartilhar.do?numero=5421&anchor=4343297&pd=daf90eb0fd8b1d9b9b9f5e4f3dca13f2|titulo=Telesp vai servir mais 86 cidades do estado|website=Folha de S.Paulo|data=1975-03-12|acessodata=2025-05-17}}</ref><ref>{{citar web|url=https://www.imprensaoficial.com.br/DO/BuscaDO2001Documento_11_4.aspx?link=/1976/ineditoriais/setembro/03/pag_0037_EV0CPMCLDJIU3eEI7BM260PCR3N.pdf&pagina=37&data=03/09/1976&caderno=Ineditoriais&paginaordenacao=100037|titulo=Patrimônio da COTESP incorporado pela TELESP|data=|acessodata=|publicado=Diário Oficial do Estado de São Paulo|ultimo=|primeiro=}}</ref> Já o [[Lista de municípios de São Paulo por código DDD|sistema de discagem direta à distância (DDD)]] foi implantado em 1976 pela [[Telecomunicações de São Paulo|Telecomunicações de São Paulo (TELESP)]], com o código de área (0124).<ref>{{Citar web|url=https://web.archive.org/web/19980114175120/http://www.telesp.com.br:80/paginas/06_casasua/060202_operacional.htm|titulo=Área de operação da Telesp|data=1998-01-14|acessodata=2025-05-17|website=web.archive.org}}</ref> 
+
+Na década de 90 o código DDD da cidade foi alterado para (012), para padronização do sistema telefônico com a telefonia celular que estava sendo implantada em todo o estado.<ref>{{Citar web|url=https://web.archive.org/web/19980114162505/http://www.telesp.com.br/paginas/ddd_pref/ddd_pref.htm|titulo=Telesp - Código DDD e Prefixos|data=1998-01-14|acessodata=2025-05-17|website=web.archive.org}}</ref>
+
+== Cultura e lazer ==
+=== Arquitetura Histórica ===
+[[Ficheiro:Ubatuba trip (Jul 2023) 053.jpg|esquerda|miniaturadaimagem|Fórum municipal]]
+Ubatuba é uma das mais antigas cidades e povoadas do [[Litoral Norte de São Paulo]]. Mesmo assim, pouco de suas características arquitetônicas originais encontram-se preservadas. Grande parte dos antigos casarões da cidade foram demolidos com o passar dos anos, devido ao aumento da especulação imobiliária e do desinteresse e desinformação sobre tais casas. <ref>{{Citar web|url=https://www.ubatuba.sp.gov.br/a-cidade/|titulo=A Cidade|acessodata=2023-05-16|website=Prefeitura Municipal de Ubatuba|lingua=pt-BR}}</ref>
+
+Restando poucos exemplares dessa história, encontra-se na região central da cidade, a Igreja Matriz, construída em 1866, com características barrocas<ref>{{Citar web|ultimo=Administrador|url=https://www.curiosidadesdeubatuba.com.br/igreja-matriz-exaltacao-da-santa-cruz/|titulo=Igreja Matriz de Ubatuba Exaltação da Santa Cruz, localizada no Centro da Cidade|data=2018-11-30|acessodata=2023-05-16|lingua=pt-BR}}</ref>; próximo à ela existe o [[Sobrado do Porto|Casarão/Sobradão do Porto]], erguido em 1846 pelo armador português Manoel Baltazar da Cunha Fortes.<ref>{{Citar web|url=https://fundart.com.br/dt_portfolio/sobradao-do-porto/|titulo=Sobradão do Porto|acessodata=2023-05-16|website=FundArt|lingua=pt-BR}}</ref> Há também o Ateneu Ubatubense, construção do séc. XIX, e antiga residência do Professor Thomaz Galhardo, autor da primeira cartilha de alfabetização do Brasil. O prédio já serviu como casa, Câmara Municipal e atualmente funciona como Secretaria de Municipal de Turismo. <ref>{{Citar web|url=https://turismo.ubatuba.sp.gov.br/pontosturisticos/casaateneu/|titulo=Casarão Ateneu Ubatubense|acessodata=2023-05-16|website=Turismo|lingua=pt-BR}}</ref>
+
+A antiga Cadeia Municipal (Cadeia Velha), é um prédio atualmente na região comercial de Ubatuba; construído no século XX e projetado por [[Euclides da Cunha]], atualmente funciona nela o [[Museu Histórico Washington de Oliveira|Museu Histórico de Ubatuba]].<ref>{{Citar web|url=https://fundart.com.br/dt_portfolio/museu-historico-washington-de-oliveira/|titulo=Museu Histórico “Washington de Oliveira” (Cadeia Velha)|acessodata=2023-05-16|website=FundArt|lingua=pt-BR}}</ref>
+
+Mais afastado do centro da cidade, no bairro da Lagoinha, existem as [[Ruínas da Lagoinha]], conjunto arquitetônico composto pelo que restou do antigo [[Engenho de açúcar|engenho]] da Fazenda do Bom Retiro, e dos pilares de uma suposta fábrica de vidros (tida como a primeira do Brasil).<ref>{{Citar web|url=https://fundart.com.br/dt_portfolio/ruinas-da-lagoinha/|titulo=Ruínas da Lagoinha|acessodata=2023-05-16|website=FundArt|lingua=pt-BR}}</ref>
+
+Destaca-se também as [[Parque Estadual da Ilha Anchieta|Ruínas da Ilha Anchieta]], local onde funcionava a Colônia Correcional da Ilha dos Porcos; inicialmente um presídio para presos comuns e menores infratores; o local recebeu também presos políticos durante a primeira metade do século XX. Em 1952, ocorre uma sangrenta rebelião e fuga de prisioneiros, considerada uma das piores rebeliões do sistema carcerário brasileiro. O presídio foi desativado em 1955 e a ilha tornou-se Parque Estadual, tombado em 1985.<ref>{{Citar web|url=http://memorialdaresistenciasp.org.br/lugares/presidio-ilha-anchietaera-vargas/|titulo=Presídio da Ilha Anchieta|acessodata=2023-05-16|website=Memorial da Resistência|lingua=pt-BR}}</ref><ref>{{Citar web|url=https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2022/06/19/rebeliao-na-ilha-anchieta-a-historia-por-tras-da-fuga-de-cinema-da-prisao-que-completa-70-anos.ghtml|titulo=Rebelião na Ilha Anchieta: a história por trás da fuga de cinema da prisão, que completa 70 anos|data=2022-06-19|acessodata=2023-05-16|website=G1|lingua=pt-br}}</ref>
+
+=== Eventos culturais ===
+==== Festa do Divino Espírito Santo ====
+Uma das mais antigas manifestações religiosas do Brasil, trazida pela rainha [[Isabel de Aragão, Rainha de Portugal|Isabel de Portugal]], a novena é rezada há mais de dois séculos, segundo antigos caiçaras. A festa é comemorada há mais de 150 anos, de Norte à Sul da cidade.<ref>{{citar web|url=https://www.curiosidadesdeubatuba.com.br/festa-do-divino-2/|titulo=Festa do Divino Espírito Santo|acessodata=16/05/2023|website=Curiosidades de Ubatuba}}</ref>
+
+Embora liturgicamente o Divino Espírito Santo seja comemorado no dia de [[Pentecostes]], na cidade a festa ocorre tradicionalmente no mês de Julho, coincidindo com a época de migração das [[Tainha|Tainhas]], que eram pescadas e assadas na brasa, tornando esta a principal iguaria culinária da festa. <ref>{{citar web|url=https://fundart.com.br/154a-festa-do-divino-acontece-a-partir-do-dia-9-em-ubatuba/|titulo=FUNDART UBATUBA - INFORMAÇÕES SOBRE A FESTA DO DIVINO NA CIDADE|data=07/07/2020|acessodata=16/05/2023|website=FUNDART - UBATUBA}}</ref>
+
+A festividade ocorre anualmente e conta com programação litúrgica e religiosa (como novena, missas e procissões), gastronômica (com as barracas de comidas típicas) e cultural (com shows, apresentações de danças típicas da cidade, além da coroação do Imperador e Imperatriz). <ref>{{citar web|url=https://www.ubatuba.sp.gov.br/noticias/confira-a-programacao-da-152a-festa-do-divino-de-ubatuba/|titulo=Site da FUNDART UBATUBA com a programação de uma das edições da Festa do Divino|data=11/07/2018|acessodata=16/05/2023}}</ref>
+
+==== Festa de São Pedro Pescador ====
+Festa da cidade com quase 100 anos de tradição. A comemoração é feita em honra do padroeiro de Ubatuba, [[Pedro (apóstolo)|São Pedro]]. Ocorre no mês de [[junho]], período da festa litúrgica de São Pedro e que também coincide com a época de migração das [[Tainha|Tainhas]] (portanto, um período de maior abastança para as comunidades de pescadores tradicionais).
+
+Desde [[1954]] é realizado junto da festa, a procissão marítima, com [[Barco|barcos]] e [[Canoa|canoas]] que saem do Rio Grande de Ubatuba em direção ao mar e realizam uma oração para a cidade além da Benção dos Anzóis, pedindo uma pesca abundante durante todo o ano. Alguns anos depois foi criado o Concurso Rainha dos Pescadores, que escolhe entre as jovens da cidade uma Miss. <ref>{{Citar web|url=https://fundart.com.br/dt_portfolio/festa-de-sao-pedro/|titulo=Festa de São Pedro Pescador|acessodata=2023-05-16|website=FundArt|lingua=pt-BR}}</ref>
+
+Com o passar dos anos, a festa foi crescendo e impactando cada vez mais no turismo da cidade, tendo uma programação cultural (com shows, barracas de comidas típicas, danças, leilão de remos e apresentações da cidade, além de shows com bandas e músicos), além de uma programação religiosa (que culmina com a Missa Campal, no dia 29 de Junho, dia de São Pedro e feriado municipal). <ref>{{citar web|url=https://www.ubatuba.sp.gov.br/secretarias/finalfestasaopedro/|titulo=Tradicional Festa de São Pedro Pescador é sucesso em Ubatuba|data=30/06/2022|acessodata=16/05/2023|website=Prefeitura Municipal de Ubatuba}}</ref>
+
+==== Peregrinações e Romarias ====
+A cidade tem tradição com peregrinações a pé e romarias, em direção a [[Aparecida (São Paulo)|Aparecida]]. Houve práticas de antigos caiçaras de realizar esse trajeto como forma de agradecer ou pedir graças à [[Nossa Senhora da Conceição Aparecida|Nossa Senhora Aparecida]]. Na região do centro, a mais antiga e tradicional romaria ocorre há mais de 20 anos, saindo todos os anos entre os meses de [[novembro]] e [[dezembro]] da Paróquia Exaltação à Santa Cruz, tendo duração aproximada de cinco dias. Esta romaria é geralmente a mais numerosa da cidade (contando também com a participação de romeiros de cidades próximas que vão a Ubatuba para realizar o trajeto) e impacta na vida cultural, religiosa e econômica de Ubatuba, e também nos locais de passagem, como [[Catuçaba]] e [[Lagoinha (São Paulo)|Lagoinha]].<ref>{{Citar web|ultimo=Administrador|url=https://www.curiosidadesdeubatuba.com.br/romaria-ate-aparecida-do-norte/|titulo=A Caminhada até Aparecida do Norte - Curiosidades de Ubatuba|data=2018-11-20|acessodata=2023-05-16|lingua=pt-BR}}</ref>
+
+=== Esportes ===
+[[Ficheiro:Serra de Ubatuba, SP.jpg|miniaturadaimagem|Serra de Ubatuba]]
+Ubatuba é muito frequentada por esportistas náuticos:
+* [[Surfe]]: Ubatuba possui praias com ondas para campeonatos internacionais como a [[Itamambuca]], e algumas com ondas excelentes como a praia Vermelha do Norte, Sapê, Toninhas e Praia Grande, entre muitas outras. Todos os anos é realizada uma competição internacional de surfe na praia de [[Itamambuca]].
+* [[Vela (esporte)|Vela]]: Na praia do Saco da Ribeira pratica-se vela e a região de Ubatuba é rica em ilhas, mares, ventos, águas abrigadas e rápido acesso ao alto mar.
+* [[Skate]]: Ubatuba possui uma pista ótima para os iniciantes e profissionais do skate, ela contém ''halfs'', ''quarters'', escadarias, entre outros obstáculos. Esta pista está situada na Avenida Iperoig, no Centro, em frente ao aeroporto. E também há vários outros ''mini-ramps'' espalhados pela cidade, como as do bairro do Ranário, Itamambuca e Jardim Carolina.
+
+== Turismo ==
+[[Ficheiro:Praia-vermelha-do-centro-ubatuba-120221-019.jpg|thumb|Praia Vermelha]]
+[[Ficheiro:Praia_Grande_Ubatuba_04.jpg|thumb|Praia Grande]]
+[[Ficheiro:Praia do Português e Félix.png|miniaturadaimagem|Praia do Português e Félix]]
+[[Ficheiro:Praia-das-toninhas-ubatuba-170206-046.jpg|thumb|Praia das Toninhas]]
+[[Ficheiro:Praia-do-pereque-acu-ubatuba-170118-010.jpg|thumb|Praia do Perequê-Açu]]
+[[Ficheiro:Praia-do-tenorio-ubatuba-110916-006.jpg|thumb|Praia do Tenório]]
+[[Ficheiro:Visão do morro da Praia do Cedro - Ubatuba - São Paulo.jpg|thumb|Praia do Cedro]]
+[[Ficheiro:Vista-da-Serra-do-Mar-Ubatuba-170717.jpg|thumb|Praia do Ubatumirim]]
+Ubatuba possui mais de 100 praias distribuídas pelo seu litoral. Dentre elas, as mais conhecidas são: [[Maranduba]], [[Itamambuca]], [[Praia Vermelha do Norte|Vermelha do Norte]], [[Praia Grande (Ubatuba)|Grande]], [[praia da Enseada (Ubatuba)|Enseada]], [[praia do Lázaro (Ubatuba)|Lázaro]], [[praia da Santa Rita|Santa Rita]], [[praia do Félix|Félix]], Toninhas, Perequê e Saco da Ribeira.
+
+Além disso, a cidade possui algumas ilhas, como a [[Ilha das Couves]], [[Ilha da Almada]] e a [[Ilha Anchieta]]. Esta última possui [[presídio]] desativado, que, no passado, foi utilizado para também manter [[Preso político|presos políticos]]; ela pode ser acessada a partir do Saco da Ribeira, é possível visitar as suas ruínas e conhecer a [[Praia do Presídio (Ilha Anchieta)|praia do Presídio]].
+
+== Ver também == 
+* [[Lista de municípios de São Paulo por data de criação]]
+* [[Lista de municípios de São Paulo por população (2022)]]
+* [[Lista de municípios de São Paulo por domicílios]]
+* [[Lista de municípios de São Paulo por área (2023)]]
+* [[Lista de municípios de São Paulo por CEP]]
+* [[Lista de municípios de São Paulo por código DDD|Lista de municípios de São Paulo por DDD]]
+* [[Francisco Matarazzo Sobrinho]]
+
+{{Referências}}
+
+== Ligações externas ==
+{{Commonscat|Ubatuba}}
+{{wikivoyage|Ubatuba}}
+* {{Link||2=http://www.ubatuba.sp.gov.br |3=Página da prefeitura}}
+* {{Link||2=http://WikiMapia.org/#lat=-23.441357&lon=-45.062313&z=13&l=9&m=s&v=2 |3=Ubatuba no WikiMapia}}
+{{Ubatuba}}
+{{Região Metropolitana do Vale do Paraíba e Litoral Norte}}
+{{Litoral de São Paulo}}
+{{Parque Estadual da Serra do Mar}}
+{{controle de autoridade}}
+{{Portal3|Geografia||São Paulo}}
+
+[[Categoria:Ubatuba| ]]
+[[Categoria:Fundações no Brasil em 1637]]
+[[Categoria:Topônimos de origem tupi em São Paulo]]
+[[Categoria:Municípios do Vale do Paraíba]]

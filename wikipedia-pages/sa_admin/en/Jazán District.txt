@@ -1,0 +1,127 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Jazán
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = 
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Amazonas (Peruvian department)|Amazonas]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Bongará Province|Bongará]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = 
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 
+| population_footnotes    = 
+| population_total        = 
+| population_as_of        = 
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 
+| website                 = 
+| footnotes               = 
+}}
+[[File:Ciudad_de_Pedro_Ruíz_Gallo,_Perú.jpg | thumb | right | alt=alt=Refer to caption | Panoramic view of the city of Pedro Ruíz Gallo, capital of the District of Jazán.]]
+'''Jazán''' is a district of [[Bongará Province]], [[Peru]].<ref name="Amazonas">{{cite web|url=http://www.regionamazonas.gob.pe/sede/detalle_directorio.php?id=35|title=Provincias y Distritos|date=n.d.|language=es|website=Gobierno Regional de Amazonas|archive-url=https://web.archive.org/web/20130615121036/http://www.regionamazonas.gob.pe/sede/detalle_directorio.php?id=35|archive-date=15 June 2013|url-status=dead|access-date=15 November 2014}}</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Jazán, elevation {{convert|1354|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 26.5
+|Feb high C = 26.1
+|Mar high C = 25.7
+|Apr high C = 25.4
+|May high C = 25.2
+|Jun high C = 24.7
+|Jul high C = 24.8
+|Aug high C = 26.0
+|Sep high C = 26.4
+|Oct high C = 27.0
+|Nov high C = 27.5
+|Dec high C = 26.7
+|year high C = 
+|Jan low C = 16.3
+|Feb low C = 16.4
+|Mar low C = 16.4
+|Apr low C = 16.1
+|May low C = 15.7
+|Jun low C = 14.6
+|Jul low C = 13.7
+|Aug low C = 13.4
+|Sep low C = 14.1
+|Oct low C = 15.6
+|Nov low C = 16.0
+|Dec low C = 16.4
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 54.2
+|Feb precipitation mm = 63.2
+|Mar precipitation mm = 102.8
+|Apr precipitation mm = 101.5
+|May precipitation mm = 78.5
+|Jun precipitation mm = 57.9
+|Jul precipitation mm = 50.2
+|Aug precipitation mm = 38.7
+|Sep precipitation mm = 69.4
+|Oct precipitation mm = 81.0
+|Nov precipitation mm = 60.8
+|Dec precipitation mm = 68.4
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Amazonas Region}}
+
+{{coord|6|1|S|77|55|W|source:itwiki_type:adm3rd|display=title}}
+
+{{DEFAULTSORT:Jazan District}}
+[[Category:Districts of the Bongará province]]
+[[Category:Districts of the Amazonas Region]]
+
+
+{{AmazonasPE-geo-stub}}

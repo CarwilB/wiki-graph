@@ -1,0 +1,138 @@
+{{distinguir|Parque Nacional da Serra da Bodoquena}}
+{{Info/Município do Brasil
+<!-- GeoID=5002159 -->
+<!-- Cabeçalho -->
+| nome                 = Bodoquena
+| foto                 =
+| leg_foto             =
+| apelido              = Cidade serrana
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Bandeira Bodoquena-MS.jpg
+| link_brasão          =
+| link_bandeira        =
+| link_hino            =
+| aniversário          = 13 de maio 
+| fundação             ={{nowrap|{{dtlink|14|12|1963|idade}}}}
+| emancipação          = {{Dtlink|13|5|1980|idade}}<br>- de [[Miranda]]
+| gentílico            =[[wikt:bodoquenense|bodoquenense]]
+| lema                 = 
+| padroeiro            = [[Nossa Senhora do Perpétuo Socorro]]
+| prefeito             = Girleide<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=13 de janeiro de 2025}}</ref>
+| partido              = [[MDB]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Bodoquena location map.svg
+| latP                 = S | latG = 20 | latM = 32 | latS = 20
+| lonP                 = O | lonG = 56 | lonM = 42 | lonS = 54
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Bodoquena|Bodoquena]]
+| data_microrregião    = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana =
+| vizinhos             = [[Bonito (Mato Grosso do Sul)|Bonito]]; [[Corumbá]]; [[Miranda (Mato Grosso do Sul)|Miranda]] e [[Porto Murtinho]]
+| dist_capital         = 253
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 2507.244
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 46º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:1.585}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 53º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Bodoquena (sede), Morraria do Sul
+| população            = 7875 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 58º]]
+| data_pop             = est. [[IBGE]]/[[2019]]<ref name="IBGE_Pop_2019">{{citar web |url= https://cidades.ibge.gov.br/brasil/ms/bodoquena/panorama |título= IBGE Cidades |obra= Estimativa Populacional de 2019 |publicado= Instituto Brasileiro de Geografia e Estatística (IBGE) |data= 1 de julho de 2019 |acessodata= 12 de setembro de 2019}}</ref>
+| altitude             = 132
+| clima                = [[tropical]]
+| sigla_clima          = Aw
+| fuso_hor             = -4 (Brasília -1)
+<!-- Indicadores -->
+| idh                  = 0.708 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 68º]]
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.430}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 26º]] 
+| data_gini            = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI |data=2000 |obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011}}</ref>
+| pib                  = {{formatnum:114137}} mil
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 49º]]
+| pib_per_capita       = 13.586,10
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''Bodoquena''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste do Brasil]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]]. Situada na região da Serra da Bodoquena, está a 70&nbsp;km da cidade de Bonito. É um dos municípios que integram o complexo turístico do [[Parque Nacional da Serra da Bodoquena]], apresentando grande potencial turístico. E juntamente com [[Bonito (Mato Grosso do Sul)|Bonito]], [[Jardim (Mato Grosso do Sul)|Jardim]] e [[Guia Lopes da Laguna]], a cidade forma um importante cinturão turístico de Mato Grosso do Sul, com mais de 30 atrações diferentes.
+
+Com o objetivo de incrementar o ecoturismo o [[Programa de Desenvolvimento do Turismo]], recentemente houve investimentos de mais de R$ 130 milhões em obras e programas de saneamento, pavimentação e incentivo ao ecoturismo na região da [[Serra da Bodoquena]].<ref>etur.com.br, 13/11/2005: [http://www.etur.com.br/conteudocompleto.asp?IDConteudo=8671 Prodetur investe R$ 133 milhões na região da Bodoquena], acessado em 16 de setembro de 2009</ref>
+
+==Geografia==
+===Localização===
+A cidade de Bodoquena está localizada no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], a oeste de Mato Grosso do Sul e próximo à fronteira com o [[Paraguai]] e [[Bolívia]]. Localiza-se a uma [[latitude]] 20º32'19" [[sul]] e a uma [[longitude]] 56º42'54" [[oeste]]. Distâncias:
+*251&nbsp;km da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]])
+*1.385&nbsp;km da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Quanto ao solo, são encontrados diferentes tipos, concentrando o rendizina a oeste ocupando 52,1 % do total do município, o podzólico vermelho escuro na porção central com 10,7 % e o brunizém avermelhado com 8,4 % também na porção central, e o regossolo a leste ocupando 19,9 % do Município. Além destes também são encontrados em quantidade menor o solonetz solodizado, o glei pouco úmido e os solos litólicos.
+
+;Clima e temperatura
+
+O clima no município é caracterizado como Termoxeroquimênico Atenuado. A temperatura média do mês mais frio é maior que 15&nbsp;°C e menor que 20&nbsp;°C.
+
+A duração do período seco é de 3 a 4 meses e as precipitações variam entre 1.200 a 1.500&nbsp;mm anuais.
+
+;Relevo e altitude
+
+A [[Serra da Bodoquena]], situada na borda sudeste do [[Complexo do Pantanal]], é formada pelas cidades de [[Bonito (Mato Grosso do Sul)|Bonito]], [[Jardim (Mato Grosso do Sul)|Jardim]] e Bodoquena. Conta com o ''Parque Nacional da Serra da Bodoquena'', criado em novembro de [[2000]], com 76.400 [[Hectare|ha]]. Possui altitude de 132 metros.
+
+;Vegetação
+
+A análise da vegetação do município revela o domínio da [[savana]] ([[cerrado]]) nas fisionomias arbórea densa, gramíneo-lenhosa (Campo Limpo) e contato com floresta estacional e floresta estacional decidual. Com o passar do tempo, esta vegetação natural vem sendo descaracterizada devido a ações antrópicas, cedendo lugar às atividades agropecuárias, ampliando o domínio da pastagem.
+
+;Hidrografia
+
+O Município de Bodoquena pertence à [[Bacia Hidrográfica do Paraguai]], [[Sub-bacia do Miranda]]. Nascem no município os rios Betione e Chapena e os córregos Furadinho e Campina. Fazem divisa com outros municípios os seguintes cursos d’água: rios Salobra e Miranda e córrego Furadinho com o Município de Miranda; córrego Taquarussú e o rio Chapena com o Município de Bonito.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Greenwich]].
+
+;Área
+
+Possui área de 2.507,24&nbsp;km². A sede do [[município]] está localizada na porção central com uma [[área urbana]] de 963,2139 Ha e perímetro de 16.878,79 m, de acordo com a última lei de expansão urbana, Lei nº 257 de 26 de junho de 1.996, divididos em uma área central e 11 bairros, todos dentro do perímetro urbano.
+
+;Subdivisões
+
+Possui um distrito denominado Morraria do Sul.
+
+;Limites
+
+Localizada no entorno do [[Parque Nacional da Serra da Bodoquena]], Bodoquena Limita-se ao Norte com o Município de [[Miranda (Mato Grosso do Sul)|Miranda]], ao Sul e ao Leste com o Município de [[Bonito (Mato Grosso do Sul)|Bonito]], a Oeste com o Município de [[Porto Murtinho]] e [[Corumbá]].
+
+==Ligações externas==
+{{Correlatos
+|commons      = Bodoquena
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.bodoquena.ms.gov.br/ Página da Prefeitura Municipal]
+* [http://www.wikimapia.org/#lat=-20.5505089&lon=-56.6757202&z=11&l=9&m=b Bodoquena no Wikimapia]
+
+{{Referências}}
+{{Subdivisões de Complexo do Pantanal}}
+{{Esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+{{DEFAULTSORT:Bodoquena}}
+[[Categoria:Complexo do Pantanal]]
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso em 1963]]

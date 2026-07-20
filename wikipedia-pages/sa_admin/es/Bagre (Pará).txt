@@ -1,0 +1,50 @@
+{{Ficha de entidad subnacional
+|nombre = Bagre
+|imagen =  
+|unidad = [[Municipio]]
+|tipo_superior_1 = [[Anexo:Estados de Brasil|Estado]]
+|superior_1 = {{BRA|PA}}
+|tipo_superior_3 = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3 = [[Mesorregión del Marajó|Marajó]]
+|tipo_superior_4 = [[Microrregiones de Brasil|Microrregión]]
+|superior_4 = [[Microrregión de Portel|Portel]]
+|mapa = Para Municip Bagre.svg
+|tamaño_mapa = 260px
+|pie_mapa = Mapa
+|dirigentes_títulos = [[Prefecto]]
+|superficie = 4397.290
+|superficie_post =<ref name="IBGE_Área">{{cita web|url = http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área Territorial Oficial |fechaacceso = 5 de octubre de 2010|fecha = 10 de octubre de 2002|editorial = Resolución de la Presidencia del IBGE n° 5 (R.PR-5/02) |urlarchivo=https://web.archive.org/web/20040929065323/http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |fechaarchivo=29 de septiembre de 2004 }}</ref>
+|población = 23855
+|población_año = [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{cita web|url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=População por município |fechaacceso = 11 de diciembre de 2010|fecha = 29 de noviembre de 2010|editorial = [[Instituto Brasileño de Geografía y Estadística]] (IBGE)|urlarchivo = https://web.archive.org/web/20101213005600/http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm|fechaarchivo = 13 de diciembre de 2010}}</ref>
+|apodo = 
+|fundación = 25 de marzo de 1961
+|campo7_nombre = Aniversario
+|campo7 = 25 de marzo
+|gentilicio = bagrense
+|PIB = {{formatnum:41373.227}} mil
+|PIB_per_capita = 2091.67
+|PIB_tipo = [[IBGE]]/2008<ref name="IBGE_PIB">{{cita web|url = http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/|título = Producto Interno Bruto de los Municipios 2004-2008|fechaacceso = 11 de diciembre de 2010|editorial =  Instituto Brasileño de Geografía y Estadística }}</ref>
+|IDH = 0.571 
+|IDH año = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{Enlace roto|1={{cita web|url =http://www.pnud.org.00br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm|título =Ranking decreciente del IDH-M de los municipios del Brasil|fechaacceso =11 de octubre de 2008|apellido =|nombre =|enlaceautor =|fecha =2000|editorial =[[Programa de las Naciones Unidas para el Desarrollo]] (PNUD)|urlarchivo =|cita =}} |2=http://www.pnud.org.00br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |bot=InternetArchiveBot }}</ref>
+|campo1_nombre = Datos mesorregión
+|campo1 = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web|url = ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip|título = División Territorial del Brasil|fechaacceso = 11 de octubre de 2008|fecha = 1 de julio de 2008|editorial = Instituto Brasileño de Geografía y Estadística (IBGE)|urlarchivo = https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip|fechaarchivo = 14 de junio de 2020}}</ref>
+|campo2_nombre = Datos microrregión
+|campo2 = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+|campo3_nombre = Región metropolitana
+|campo4_nombre = Municipios vecinos
+|campo4 = 
+|campo5_nombre = Dist. Cap.
+|campo5 = 
+|campo6_nombre = Sigla clima
+|campo6 = 
+}}
+'''Bagre''' es un [[municipio]] [[brasil]]eño del [[estados de Brasil|estado]] de [[Pará]]. Su población estimada para el año 2010 según el [[IBGE]], es de 23855 habitantes.<ref name="IBGE_Pop_2010" />
+
+== Historia ==
+La población fue fundada en el {{siglo|XIX||s}}, perteneciendo entonces al municipio de [[Oeiras do Pará]]. En 1883 pasó a pertenecer al municipio de [[Melgaço (Pará)|Melgaço]] y en 1887 fue elevada a parroquia. Fue municipio autónomo entre 1890 y 1930. En ese año fue anexada al municipio de [[Portel (Pará)|Portel]] como distrito. Este fue, no obstante, transferido para el municipio de [[Curralinho]] hasta 1935. En 1938 volvió al municipio de Oeiras do Pará, entonces conocido como ''Araticu'', donde se mantuvo hasta que su autonomía fue restaurada en 1961.
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Pará]]

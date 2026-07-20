@@ -1,0 +1,80 @@
+{{Infobox settlement 
+| name                    = Santa Bárbara Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Santa Bárbara
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = Monumento_a_Santa_Barbara_en_el_Estado_Monagas.jpg
+| image_caption           = Santa Barbara monument
+| image_flag               = Flag of Santa Barbara municipality.webp
+{{#property:P41}}
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Monagas (state)|Monagas]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Santa Bárbara Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Monagas (state)|Monagas]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = Roselis León Castellanos ([[PSUV]])
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 
+| population_note         = 
+| population_total        = 
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = 
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+'''Santa Bárbara''' is one of the 13 municipalities of the state of [[Monagas]], [[Venezuela]]. The municipality's capital is [[Santa Bárbara, Monagas|Santa Bárbara]].
+
+== History ==
+In December 2021, Carmen Tillero was elected mayor of the municipality.<ref>{{Cite web|last=admin|title=Juramentada Carmen Tillero como alcaldesa de Santa Bárbara|url=https://laverdaddemonagas.com/2021/12/07/juramentada-carmen-tillero-como-alcaldesa-de-santa-barbara/|access-date=2022-01-02|language=es}}</ref>
+
+== Geography ==
+The municipality Santa Bárbara is located to the west of the Monagas State. Has a tropical dry forest vegetation and another tropical humid forest, has an average annual temperature of 26.8&nbsp;°C and rainfall of 1,092&nbsp;mm (annual average).{{citation needed|date=January 2023}}
+
+== Economy ==
+The economy is farm, among the main crops are sugarcane, cotton, maize, soy and sorghum.{{citation needed|date=January 2023}}
+
+== Culture ==
+=== Public holidays ===
+In December, they hold in honor of the patron of the municipality, Santa Barbara.<ref>{{cite news|title=Inician festividades en Santa Bárbara|url=http://ciudadmaturin.info.ve/portal/2016/11/24/inician-festividades-en-santa-barbara/|accessdate=6 July 2017|date=24 November 2016|archive-date=6 February 2017|archive-url=https://web.archive.org/web/20170206115646/http://ciudadmaturin.info.ve/portal/2016/11/24/inician-festividades-en-santa-barbara/|url-status=dead}}</ref>
+
+== Mayor ==
+* José Malavé (2013—2017)(2017-2021). [[PSUV]].
+* Carmen Tillero (2021—2025). [[PSUV]].
+
+==References==
+{{reflist}}
+
+[[Category:Municipalities of Monagas]]
+
+{{Monagas-geo-stub}}

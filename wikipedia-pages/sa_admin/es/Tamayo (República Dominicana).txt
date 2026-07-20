@@ -1,0 +1,278 @@
+{{Referencias adicionales|t=20181024023140}}
+{{Ficha de entidad subnacional
+|nombre completo       = Tamayo
+|país                  = [[República Dominicana]]
+|tipo_superior_1       = [[Provincias de la República Dominicana|Provincia]]
+|superior_1            = [[Bahoruco]]
+|tipo_div_1            = [[Municipio|Distritos Municipales]]
+|div_1                 = 7
+|bandera               =
+|escudo                = no
+|mapa_loc              = República Dominicana
+|lengua                = [[Idioma español|Español]]
+|superficie            = 455,85
+|población             = 30 666
+|población_año         = 2022
+|población_post        = <ref name="informe_xcnpv_p87"/>
+|densidad              = 51
+|horario               = [[UTC-4]]
+|fundación         = 18 de marzo de 1943
+|fiestas_mayores       = 13 de junio
+|gentilicio = Tamayero/a
+|patrón                = [[Antonio de Padua|San Antonio]]
+}}
+
+'''Tamayo''' es un [[Municipios de la República Dominicana|municipio]] de la [[República Dominicana]], que está situado en la [[Provincia de Bahoruco]].<ref name=imede>[http://www.lmd.gob.do/transparencia/phocadownload/Publicaciones/Division-Territorial-2015.pdf Pdf oficial de la República Dominicana con descripción de la división territorial actualizada al año 2015.] {{Wayback|url=http://www.lmd.gob.do/transparencia/phocadownload/Publicaciones/Division-Territorial-2015.pdf |date=20180823212926 }} Consultado el 24 de octubre de 2018. Páginas 68 a 69.</ref>
+
+== Geografía ==
+=== Ubicación ===
+Tamayo se encuentra en la parte este del valle de Neiba, en la orilla occidental del [[río Yaque del Sur]]. Este importante río constituye el límite natural que separa los municipios de Tamayo y [[Vicente Noble (municipio)|Vicente Noble]], este último perteneciente a la provincia de Barahona.<ref name="historia_tamayo"/>
+
+=== Clima ===
+
+El municipio posee un [[clima desértico]] ([[Clasificación climática de Köppen#Clima B - Seco (Árido y Semiárido)|BWhw]] en la [[clasificación climática de Köppen]]), con precipitaciones inferiores a los 470 [[mm]] de lluvias anuales y una temperatura [[media (estadística)|media]] anual de 30,3 [[grado Celsius|°C]].
+
+El periodo más fresco de municipio abarca los meses de diciembre a marzo. En esta época las temperaturas mínimas promedio descienden a 19-20 °C. Algunos de esos meses registran temperaturas mínimas absolutas de 16 °C.
+{{Clima
+|open         = yes
+|metric first = yes
+|single line  = yes
+|location     = Tamayo 
+|temperature colour= pastel
+ 
+<!--Record high temperatures-->  
+<!--Note that record temperatures should be used sparingly in main city articles, and should only be used when the data period is of the greatest length possible.-->
+|Jan record high C= 31
+|Feb record high C= 31
+|Mar record high C= 31
+|Apr record high C= 32
+|May record high C= 32
+|Jun record high C= 33
+|Jul record high C= 34
+|Aug record high C= 34
+|Sep record high C= 34
+|Oct record high C= 33
+|Nov record high C= 32
+|Dec record high C= 31
+|year record high C= 34
+<!--Average high temperatures-->
+|Jan high C= 29
+|Feb high C= 29
+|Mar high C= 29
+|Apr high C= 30
+|May high C= 30
+|Jun high C= 31
+|Jul high C= 32
+|Aug high C= 32
+|Sep high C= 32
+|Oct high C= 31
+|Nov high C= 30
+|Dec high C= 29
+|year high C= 
+<!--Average low temperatures-->
+|Jan low C= 18
+|Feb low C= 19
+|Mar low C= 20
+|Apr low C= 21
+|May low C= 22
+|Jun low C= 22
+|Jul low C= 22
+|Aug low C= 22
+|Sep low C= 22
+|Oct low C= 22
+|Nov low C= 21
+|Dec low C= 19
+|year low C= 
+<!--Record low temperatures-->
+<!--Note that record temperatures should be used sparingly in main city articles, and should only be used when the data period is of the greatest length possible.-->
+|Jan record low C=  16
+|Feb record low C=  16
+|Mar record low C= 17
+|Apr record low C= 19
+|May record low C= 20
+|Jun record low C= 20
+|Jul record low C= 21
+|Aug record low C= 21
+|Sep record low C= 21
+|Oct record low C= 20
+|Nov record low C= 18
+|Dec record low C= 17
+|year record low C= 16
+
+<!--Rainfall-->
+|rain colour= <!--Enter "green" for green rainfall colours, remove this line for blue colouring.-->
+<!--IMPORTANT: use mm or cm but NOT both!-->
+|Jan rain cm=  |Jan rain mm=  5
+|Feb rain cm=  |Feb rain mm=  11
+|Mar rain cm=  |Mar rain mm=  32
+|Apr rain cm=  |Apr rain mm=  47
+|May rain cm=  |May rain mm= 61
+|Jun rain cm=  |Jun rain mm= 35
+|Jul rain cm=  |Jul rain mm= 29
+|Aug rain cm=  |Aug rain mm= 64
+|Sep rain cm=  |Sep rain mm= 61
+|Oct rain cm=  |Oct rain mm= 70
+|Nov rain cm=  |Nov rain mm= 38
+|Dec rain cm=  |Dec rain mm=  14
+|year rain cm=  |year rain mm= 
+
+<!--Mandatory fields, source-->
+|source 1= Meteoblue<ref name="clima_tamayo_meteoblue">
+{{cita web
+ |url=https://www.meteoblue.com/es/tiempo/historyclimate/climatemodelled/tamayo_rep%C3%BAblica-dominicana_3492520
+ |título=Clima histórico modelado en Tamayo, República Dominicana
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=meteoblue
+ |idioma=es
+}}
+</ref>
+}}
+
+== Límites ==
+Municipios limítrofes:<ref>[https://www.openstreetmap.org/relation/7394842 Página de OpenStreetMap donde constan los datos de referencia.] Consultado el 10 de octubre de 2018.</ref>
+<center>
+{| {| border="2" cellpadding="4" cellspacing="0" {{#if:{{{class}}}|class="{{{class}}}"}} style="margin: 0.5em 0.5em 0.5em 1em; padding: 0.5em; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;{{{1}}}" {{{2}}}<noinclude> width ="60%" border = 2 align="center"
+|-----
+| width ="35%" align="center" | 
+| width ="30%" align="center" | ''Norte:'' [[Vallejuelo (San Juan)|Vallejuelo]], [[San Juan (municipio)|San Juan]] y [[Azua (República Dominicana)|Azua]]
+| width ="35%" align="center" | 
+|-----
+| width ="10%" align="center" | ''Oeste:'' [[Galván (República Dominicana)|Galván]] y [[Neiba]]
+| width ="35%" align="center" | [[Archivo:Rosa de los vientos.svg|75px]]
+| width ="30%" align="center" | ''Este:'' [[Vicente Noble (municipio)|Vicente Noble]]
+|-----
+| width ="35%" align="center" | 
+| width ="30%" align="center" | ''Sur:'' [[Cristóbal (República Dominicana)|Cristóbal]] y [[El Peñón (República Dominicana)|El Peñón]]
+| width ="35%" align="center" |
+|}</center>
+
+== Distritos municipales ==
+Está formado por los distritos municipales de:<ref name=imede/>
+{| border="0" align="center" style="border: 1px solid #999; background-color:#FFFFFF" text-align:"center"; cellspacing="3px" cellpadding="5px"
+|-align="center" bgcolor="#CCCCCC"
+! Nombre !! Código
+|-	
+|  valign=top| [[Tamayo (distrito)|Tamayo]] || valign=top| 06030301  
+|-bgcolor="#EFEFEF"
+| valign=top| [[Uvilla (Tamayo)|Uvilla]] || valign=top| 06030302
+|-
+|  valign=top| [[Santana (Tamayo)|Santana]] || valign=top| 06030303
+|-bgcolor="#EFEFEF"
+| valign=top| [[Monserrate (Tamayo)|Monserrate]] || valign=top| 06030304
+|-
+|  valign=top| [[Cabeza de Toro]] || valign=top| 06030305
+|-bgcolor="#EFEFEF"
+| valign=top| [[Mena (Tamayo)|Mena]] || valign=top| 06030306
+|-
+|  valign=top| [[Santa Bárbara El 6]] || valign=top| 06030307
+|-bgcolor="#EFEFEF"
+|}
+
+== Demografía ==
+Según el Censo de Población y Vivienda del año 2022, el municipio tiene una población total de 30 666 habitantes, de los cuales 15 649 eran hombres y 15 017 mujeres. La población urbana del municipio era del 70,30 %.<ref name="informe_xcnpv_p87">
+{{cita web
+ |url=https://www.one.gob.do/media/atbcumc0/informe-general-xcnpv-completo.pdf
+ |título=Informe General del X Censo Nacional de Población y Vivienda 2022
+ |páginas=87
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=Oficina Nacional de Estadística (ONE)
+ |idioma=es
+}}
+</ref>
+
+Actualmente la población ha aumentado significativamente; los datos intercensales muestran que, desde el año 2002, la población ha crecido un 32,27 %.<ref name="municipio_en_cifras_tamayo_p2">
+{{cita web
+ |url=https://www.one.gob.do/media/1hhcenvm/municipio-en-cifras-tamayo.pdf
+ |título=Municipio en cifras: Tamayo
+ |páginas=2
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=Oficina Nacional de Estadística (ONE)
+ |idioma=es
+}}
+</ref> 
+
+== Historia ==
+Estas tierras fueron pobladas a lo largo del {{siglo|XVIII||s}} por familias llegadas de [[Galván (República Dominicana)|Cambronal]] (hoy Galván), [[Jarabacoa]], [[Neiba]], [[Azua (República Dominicana)|Azua]] y [[El Cercado]]. El lugar donde se ubicaron, a orillas del río Yaque del Sur, recibió el nombre de «Hatico».<ref name="historia_tamayo">
+{{cita web
+ |url=https://ayuntamientotamayo.gob.do/historia/
+ |título=Historia – Ayuntamiento Municipal de Tamayo
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=Ayuntamiento Municipal de Tamayo
+ |idioma=es
+}}
+</ref>
+
+En el año 1908, con el paso de un gran huracán por la isla, el río Yaque del Sur creció e inundó los terrenos de Hatico, destruyendo este poblado. Fue la inundación más grande de la que se tiene noticias; pasadas las inundaciones comenzó a repoblarse el lugar con personas de distintas partes del país..<ref name="tamayo_72_anos">
+{{cita web
+ |url=https://diarionoticias.do/tamayo-celebra-sus-72-anos-de-vida-municipal/
+ |título=Tamayo celebra sus 72 años de vida municipal
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=Diario Noticias
+ |autor=Claudia Fabián Pineda
+ |fecha=2014
+ |idioma=es
+}}
+</ref>
+
+La primera casa de madera en Hatico la construyó el general Joaquín Campos y la segunda casa era de la señora María Antonia Gómez. En ella funcionó la primera escuela que hubo en el lugar, de la que fuera maestra la misma María Antonia Gómez, cuyo nombre lleva el liceo del municipio en la actualidad.<ref name="historia_tamayo" />
+
+Hatico fue elevado a la categoría de común (municipio) el 10 de marzo de 1943, otorgándosele el nombre actual de Tamayo en memoria de un líder indígena.<ref name="tamayo_cacique_valiente">
+{{cita web
+ |url=https://www.elcaribe.com.do/gente/cultura/tamayo-un-cacique-valiente/
+ |título=Tamayo: Un cacique valiente
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=El Caribe
+ |autor=Teófilo Lappot Robles
+ |fecha=21 de octubre de 2017
+ |idioma=es
+}}
+</ref>
+
+== Economía ==
+Tamayo es una de las zonas agrícolas donde se registra la mayor producción de plátanos, sobre todo de los célebres plátanos barahoneros, denominados así porque, en la división administrativa del sector agropecuario, el municipio pertenece a la región agrícola de [[Barahona (República Dominicana)|Barahona]].<ref name="feda_tamayo_capital_platano">
+{{cita web
+ |url=https://n.com.do/2020/10/23/feda-anuncia-convertira-municipio-de-tamayo-en-la-capital-del-platano/
+ |título=FEDA anuncia convertirá municipio de Tamayo en la capital del plátano
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=N Digital
+ |fecha=23 de octubre de 2020
+ |idioma=es
+}}
+</ref>
+
+Al igual que el municipio de Vicente Noble, la vida económica de Tamayo se ha dinamizado más en los últimos tiempos, debido a las remesas que envían cientos de los nativos que emigraron a [[Europa]] a finales de la década de los ochenta, especialmente a [[España]].
+
+== Cultura ==
+=== Educación ===
+En el municipio funcionan unas dieciocho escuelas básicas, la mayoría con tanda extendida y dos liceos de educación secundaria.
+
+=== Salud ===
+Siete clínicas rurales y un hospital municipal conforman la infraestructura física en salud con que cuenta el municipio de Tamayo. Como en otros municipios vecinos, los casos que requieren atención médica especializada son enviados al Hospital Regional Universitario Jaime Mota, ubicado en la ciudad de Barahona.
+
+=== Religiosidad ===
+[[Antonio de Padua|San Antonio]] es el [[santo patrón]] de los tamayeros, quienes celebran sus fiestas patronales el día 13 de junio de cada año.<ref name="fiestas_patronales_tamayo_2023">
+{{cita web
+ |url=https://ayuntamientotamayo.gob.do/alcaldia-de-tamayo-cierra-en-grande-las-fiestas-patronales-san-antonio-de-padua-2023/
+ |título=Alcaldía de Tamayo cierra en grande las fiestas patronales San Antonio de Padua 2023
+ |fechaacceso=15 de octubre de 2025
+ |sitioweb=Ayuntamiento Municipal de Tamayo
+ |idioma=es
+}}
+</ref> Tamayo, también celebra un carnaval con comparsas y carrozas;<ref name="cultura_tamayo">
+{{cita web  
+ |url=https://ayuntamientotamayo.gob.do/cultura/  
+ |título=Cultura – Ayuntamiento Municipal de Tamayo  
+ |fechaacceso=15 de octubre de 2025  
+ |sitioweb=Ayuntamiento Municipal de Tamayo  
+ |idioma=es  
+}}
+</ref> el Día de la Cosecha, en el que se organiza una feria agropecuaria, y el aniversario de Radio Enriquillo, festividad ésta que se ha convertido en una tradición para esta comunidad y para toda la región.
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|Tamayo (Bahoruco)}}
+	
+{{Control de autoridades}}
+[[Categoría:Municipios de Bahoruco|Tamayo (República Dominicana)]]

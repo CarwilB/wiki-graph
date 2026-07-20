@@ -1,0 +1,66 @@
+{{ver desambig|este=um município brasileiro}}{{Info/Município do Brasil
+<!-- GeoID=2406601 -->
+<!-- Cabeçalho -->| nome = Lagoa Salgada
+| apelido = <!-- Dados gerais -->
+| foto = Vista da Lagoa Salgada-RN.jpg
+| bandeira = Bandeira de Lagoa Salgada-RN.jpg
+| brasão = Brasão de Lagoa Salgada-RN.jpg
+| link_hino = 
+| aniversário = 07 de Maio
+| fundação = {{nowrap|{{dtlink|24|11|1953|idade}}}}
+| emancipação = {{nowrap|{{dtlink|07|05|1962|idade}}}}
+| gentílico = lagoa-salgadense <ref>http://cidades.ibge.gov.br/xtras/perfil.php?lang=&codmun=240660 IBGE</ref>
+| lema = 
+| prefeito = Francisco Canindé Freire
+| partido = [[Partido da Social Democracia Brasileira|PSDB]]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 9
+| mapa = Brazil Rio Grande do Norte Lagoa Salgada location map.svg ‎
+| estado = Rio Grande do Norte
+| latP = S
+| latG = 06
+| latM = 08
+| latS = 02
+| lonP = O
+| lonG = 35
+| lonM = 29
+| lonS = 38
+| região_intermediária = Natal
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = Natal
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = ''Norte'': [[Vera Cruz (Rio Grande do Norte)|Vera Cruz]] e [[Monte Alegre (Rio Grande do Norte)|Monte Alegre]]; ''Leste'': Monte Alegre; ''Oeste'': [[Boa Saúde]]; ''Sul'': [[Lagoa de Pedras]] e [[Serrinha (Rio Grande do Norte)|Serrinha]]
+| dist_capital = 62
+<!-- Características geográficas -->| área = 79.128
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 8619
+| altitude = 94
+| clima = [[Semiárido]]
+| sigla_clima = <!-- Indicadores -->
+| CEP = 59247-000
+| idh = 0.582 <!--favor manter o formato-->
+| data_gini = 2020
+| pib = {{formatnum:94312.75}} mil
+| pib_per_capita = 11297.65
+| leg_foto = Vista da Lagoa Salgada
+| link_brasão = 
+| link_bandeira = 
+| data_pop = [[IBGE]]/[[2024]]<ref name="IBGE_Pop_2010">{{citar web |url = https://cidades.ibge.gov.br/brasil/rn/lagoa-salgada/panorama |título= Panorama Populacional 2024| obra = Panorama Populacional 2024 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=27 de novembro de 2024 |acessodata = 21 de janeiro de 2025}}</ref>
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=4 de setembro de 2013}}</ref>
+| gini = 0,54
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/rn/lagoa-salgada/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=21 de janeiro de 2025}}</ref>
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| site_prefeitura = {{Url|https://lagoasalgada.rn.gov.br}}
+| site_câmara = {{Url|https://lagoasalgada.rn.leg.br}}
+}}
+'''Lagoa Salgada''' é um [[Município (Brasil)|município brasileiro]] do [[Subdivisões do Brasil|estado]] do [[Rio Grande do Norte]]. De acordo com o Estimativa realizado pelo [[Instituto Brasileiro de Geografia e Estatística|IBGE]] (Instituto Brasileiro de Geografia e Estatística) no ano [[2024|2025]], sua população é de 8.657 habitantes.
+
+{{referências}}
+
+{{Portal3|Brasil|Rio Grande do Norte}}
+{{esboço-municípiosbr/Rio Grande do Norte}}
+
+[[Categoria:Municípios do Rio Grande do Norte]]
+[[Categoria:Fundações no Rio Grande do Norte em 1962]]

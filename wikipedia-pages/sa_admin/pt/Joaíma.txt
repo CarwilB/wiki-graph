@@ -1,0 +1,75 @@
+{{Info/Município do Brasil
+<!-- GeoID=3136009 -->
+<!-- Cabeçalho -->| nome = Joaíma
+| foto = 
+| leg_foto = 
+| apelido = 
+| padroeiro = [[Senhor do Bonfim |Nosso Senhor do Bonfim]]<ref>{{citar web|url=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=14 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->| brasão = 
+| bandeira = Bandeira de Joaíma.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{dtlink|||1948|idade}}
+| CEP = 39890-000 a 39892-999<ref>{{citar web|url=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| gentílico = joaimense <ref name=IBGE>{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/joaima/panorama|titulo=IBGE|publicado=Censo Demográfico 2022 }}</ref>
+| lema = ''Nós amamos, Nós cuidamos''
+| prefeito = Dauro Barreto Melo Filho
+| partido = [[Cidadania (partido político)|Cidadania]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = MinasGerais Municip Joaima.svg
+| latP = S
+| latG = 16
+| latM = 39
+| latS = 14
+| lonP = O
+| lonG = 41
+| lonM = 01
+| lonS = 51
+| estado = Minas Gerais
+| mesorregião = [[Mesorregião do Jequitinhonha|Jequitinhonha]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião = [[Microrregião de Almenara|Almenara]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Jequitinhonha]], [[Felisburgo]], [[Santa Helena de Minas]], [[Fronteira dos Vales]], [[Águas Formosas]], [[Monte Formoso]] e [[Novo Oriente de Minas]]
+| dist_capital = 700
+| dist_capital_ref = <ref name="DER/MG">{{citar web |url=http://www.der.mg.gov.br/distancias-bhmunicipios |titulo=distancias-bhmunicipios |obra=Distâncias BH/Municípios |publicado=Departamento de Estradas de Rodagem de Minas Gerais (DER/MG) |acessodata=19 de agosto de 2009 |arquivourl=https://web.archive.org/web/20090821173321/http://www.der.mg.gov.br/distancias-bhmunicipios# |arquivodata=21 de agosto de 2009 |urlmorta=yes }}</ref>
+<!-- Características geográficas -->| área = 1664.190 <!--favor manter o formato-->
+| área_ref = <ref name="IBGE_Joaíma-MG">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/joaima/panorama |título=IBGE Cidades |autor=  |publicado=[[IBGE]] |acessodata=5 de julho de 2020}}</ref>
+| população = 13888 <!--favor manter o formato-->
+| data_pop = Censo [[IBGE]]/2022<ref name=IBGE/>
+| altitude = 
+| clima = [[semiárido]]<ref name="clima">{{citar web |url=http://www.sudene.gov.br/images/arquivos/semiarido/arquivos/Rela%C3%A7%C3%A3o_de_Munic%C3%ADpios_Semi%C3%A1rido.pdf |título=Nova delimitação Semiárido |publicado=Superintendência do Desenvolvimento do Nordeste |data=2 de abril de 2018 |acessodata=28 de julho de 2019 |página=26 |formato=PDF |arquivodata=18 de julho de 2019 |arquivourl=https://web.archive.org/web/20190718225258/http://www.sudene.gov.br/images/arquivos/semiarido/arquivos/Rela%25C3%25A7%25C3%25A3o_de_Munic%25C3%25ADpios_Semi%25C3%25A1rido.pdf }}</ref>
+| sigla_clima = BSh
+<!-- Indicadores -->| idh = 0.587 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://cidades.ibge.gov.br/xtras/temas.php?lang=&codmun=313600&idtema=118 |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |autor=[[PNUD]] |publicado=[[IBGE]] |acessodata=19 de janeiro de 2017}}</ref>
+| pib = {{formatnum:63668.594}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata= 11 dez. 2010}}</ref>
+| pib_per_capita = 4136.74
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.joaima.mg.gov.br/ joaima.mg.gov.br]
+| site_câmara = [http://www.camarajoaima.mg.gov.br/ camarajoaima.mg.gov.br]
+}}
+'''Joaíma''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Sua população recenseada em 2022 era de 13 888 habitantes. <ref name=IBGE/>
+
+== História ==
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+A região onde se encontra hoje a cidade de Joaíma era habitada por indígenas [[botocudos]]. Na época de [[Bonfim (Minas Gerais)|Bonfim]], Joaíma era um distrito criado em 1911 e subordinado ao município de Arassuaí (hoje [[Araçuaí]]) e mais tarde São Miguel Jequitinhonha (hoje [[Jequitinhonha]]). Em 27 de dezembro de 1943 é elevado à categoria de município com a denominação de Joaíma, sendo instalado em 1 de janeiro de 1949.<ref name=":0">{{Citar web|último=|primeiro=|url=https://cidades.ibge.gov.br/brasil/mg/joaima/historico|título=Joaíma - Histórico|acessodata=4 de dezembro de 2024|obra=biblioteca.ibge.gov.br|ano=2022}}</ref>
+
+== Topônimo ==
+Antes da lei de nº 336 de 27/12/1948, o município carregava o nome de Quartel de Água Branca ou Quartel. A cidade recebeu o nome de Joaíma em homenagem ao indígena Joahyma que era líder de uma comunidade indígena da região.<ref name=":0" /><ref>{{Citar web|url=https://www.joaima.mg.gov.br/o-municipio|titulo=Prefeitura de Joaíma - O Município|acessodata=2024-12-04|website=www.joaima.mg.gov.br}}</ref><ref>{{citar web|ultimo=Ana Laura Grapiuna Murta|url=https://www.monografias.ufop.br/bitstream/35400000/3158/1/LIVRO_Joa%C3%ADmaReconhecendoVale.pdf|titulo=(re)conhecendo o Vale do Jequitinhonha|data=2021|acessodata=4 de dezembro de 2024|website=monografias}}</ref><ref>{{citar web|ultimo=Centro de Documentação Eloy Ferreira da Silva - CEDEFES|url=https://acervo.socioambiental.org/sites/default/files/documents/mkl00001.pdf|titulo=A luta dos índios pela terra|data=1987|acessodata=4 de dezembro de 2024|website=socioambiental}}</ref>  {{Referências}}
+
+== Ligações externas ==
+* [http://www.joaima.mg.gov.br/ Prefeitura de Joaíma]
+* [http://www.camarajoaima.mg.gov.br/ Câmara Municipal de Joaíma]
+* [http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=313600 ibge.gov.br: Perfil do município]
+* [http://cidades.ibge.gov.br/brasil/mg/joaima Joaíma no IBGE Cidades]
+
+{{Esboço-municípiosbr/Minas Gerais}}
+{{Portal3|Brasil}}
+
+[[Categoria:Joaíma| ]]
+[[Categoria:Fundações em Minas Gerais em 1948]]
+[[Categoria:Municípios de Minas Gerais]]

@@ -1,0 +1,55 @@
+{{Ficha de entidad subnacional
+|nombre = Santa Rita
+|unidad = [[Distritos de Costa Rica|Distrito]]
+|mapa = {{map draw
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=12}}
+|pie_mapa = Santa Rita
+|mapa_loc = Costa Rica
+|mapa_loc_1 = Provincia de Alajuela
+|fundación = 11 de octubre de 2018
+|superficie = <!-- wikidata -->
+|elevación_media = <!-- wikidata -->
+|población = <!-- wikidata -->
+|población_año = <!-- wikidata -->
+|tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+|superior_1 = {{CRI|A}}
+|tipo_superior_2 = [[Cantones de Costa Rica|Cantón]]
+|superior_2 = {{Bandera2|Cantón de Río Cuarto}}
+|horario = [[UTC-6]]
+|código_postal_nombre = [[Anexo:Códigos postales de Costa Rica|Código postal]]
+|cp = <!-- wikidata -->
+}}
+{{Población histórica por censo de Costa Rica}}
+'''Santa Rita''' es un distrito del cantón de [[Cantón de Río Cuarto|Río Cuarto]], en la provincia de [[Provincia de Alajuela|Alajuela]], de [[Costa Rica]].<ref name="dta2017">{{cita libro|título=División Territorial Administrativa de la República de Costa Rica|fecha=8 de marzo de 2017|editorial=Editorial Digital de la Imprenta Nacional|isbn=978-9977-58-477-5|url=https://www.imprentanacional.go.cr/editorialdigital/libros/historiaygeografia/division_17.pdf}}</ref>
+== Historia ==
+Santa Rita fue creado el 11 de octubre de 2018 por medio de Acuerdo Ejecutivo N°044-2018-MGP.<ref name="dta2017" />
+
+== Geografía == 
+Santa Rita cuenta con un área desconocida al 2020<ref name="inecarea">{{cita web |título=Área en kilómetros cuadrados, según provincia, cantón y distrito administrativo |url=https://www.inec.cr/anuario-estadistico/anuario-estadistico-geografia |website=Instituto Nacional de Estadística y Censos |fechaacceso=5 de setiembre de 2020 |fechaarchivo=24 de octubre de 2020 |urlarchivo=https://web.archive.org/web/20201024225203/https://www.inec.cr/anuario-estadistico/anuario-estadistico-geografia |deadurl=yes }}</ref> y una elevación media de 236 m s. n. m.<ref name="divadm">{{cita web |título=Declara oficial para efectos administrativos, la aprobación de la División Territorial Administrativa de la República N°41548-MGP |url=http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=88416&nValor3=115607&param2=1&strTipM=TC&lResultado=1&strSim=simp |website=Sistema Costarricense de Información Jurídica |fechaacceso=5 de setiembre de 2020 |fecha=19 de marzo de 2019}}</ref>
+
+== Demografía ==
+Para el último censo efectuado, en el 2011, Santa Rita no había sido creado.<ref name="censo2011">{{cita web |título=Censo. 2011. Población total por zona y sexo, según provincia, cantón y distrito |url=https://www.inec.cr/censos/censos-2011 |website=Instituto Nacional de Estadística y Censos |fechaacceso=20 de octubre de 2021|fecha=2011}}</ref>
+<!--
+== Geografía ==
+{{Cita geográfica de región de Costa Rica}}
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}
+
+== Localidades ==
+* '''Poblados:''' Ángeles Norte, Flor, La Trinidad, Montelirio, Naranjales, Peoresnada, San Gerardo (parte) y Tabla.
+-->
+== Transporte ==
+=== Carreteras ===
+Al distrito lo atraviesan las siguientes rutas nacionales de carretera:
+*[[Archivo:CR RNP 4.svg|25px]] [[Ruta 4 (Costa Rica)|Ruta nacional 4]]
+*[[Archivo:CR RNT 744.svg|25px]] [[Ruta 744 (Costa Rica)|Ruta nacional 744]]
+*[[Archivo:CR RNT 745.svg|25px]] [[Ruta 745 (Costa Rica)|Ruta nacional 745]]
+
+== Referencias ==
+{{Listaref}}
+{{Control de autoridades}}
+[[Categoría:Distritos del cantón de Río Cuarto]]

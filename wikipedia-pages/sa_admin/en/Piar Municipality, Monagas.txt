@@ -1,0 +1,79 @@
+{{Infobox settlement 
+| name                    = Piar Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Piar
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = 
+| image_caption           = 
+| image_flag               = 
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Monagas (state)|Monagas]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Piar Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Monagas (state)|Monagas]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = Mariangellys Tillero ([[PSUV]])
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 
+| population_note         = 
+| population_total        = 
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = 
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+
+'''Piar Municipality''' is a municipality in [[Monagas State]], Venezuela.<ref>{{cite book|title=Minerals Yearbook, 2005, V. 3, Area Reports, International, Latin America and Canada|url=https://books.google.com/books?id=gPpxZeKwHaIC|date=2007-11-16|publisher=United States Department of the Interior|pages=16.2|quote=In June, the Venezuelan National Assembly approved the construction of a cement plant in the municipality of Piar in the State of Monagas.}}</ref> In the north it borders [[Caripe Municipality]].
+
+== History ==
+
+On 2021, Mariangellys Tillero was elected Major.<ref>{{Cite web|date=2021-11-22|title=Distribución de alcaldías en Monagas: PSUV 9 y Oposición 4|url=https://elperiodicodemonagas.com.ve/monagas/distribucion-de-alcaldias-en-monagas-psuv-9-y-oposicion-4/|access-date=2022-01-30|website=El Periódico de Monagas Noticias de Maturín Monagas Venezuela|language=es}}</ref>
+
+==Climate==
+Minimum monthly temperature in the Piar municipality lies between 14.3 and 23.1&nbsp;°C, while maximum temperature is between 23.9 and 33.3&nbsp;°C. Total annual precipitation fluctuates between 1083 and 1898&nbsp;mm. Most rain falls between June and August, while the driest quarter comprises February to April.<ref>{{cite journal|last1=Ferrer-Paris|first1=José R.|title=Caracterización ambiental de la ruta de NeoMapas: NM17 ''Maturín'', estado Monagas (CNEB e21)|journal=Figshare|date=2017|doi=10.6084/m9.figshare.4745674}}</ref>
+
+== Culture ==
+=== Festivities ===
+* Canavales La Maya (La Maya carvivals).<ref>{{Cite web|date=2022-01-29|title=Grito de Carnaval dará inicio a las festividades en Piar y Uracoa|url=https://elperiodicodemonagas.com.ve/monagas/grito-de-carnaval-dara-inicio-a-las-festividades-en-piar-y-uracoa/|access-date=2022-01-30|website=El Periódico de Monagas Noticias de Maturín Monagas Venezuela|language=es}}</ref>
+
+== Mayor ==
+* Miguel Fuentes. (2008 - 2013), (2013 - 2017) [[PSUV]].
+* Mariangellys Tillero (2021 - 2025).
+
+==References==
+{{reflist}}
+
+[[Category:Municipalities of Monagas]]
+[[Category:Aragua de Maturín]]
+
+{{Monagas-geo-stub}}

@@ -1,0 +1,155 @@
+{{Info/Município do Brasil
+<!-- GeoID=5003157 -->
+<!-- Cabeçalho -->
+| nome                 = Coronel Sapucaia
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Band Coronel Sapucaia.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| CEP = 79995-000
+| aniversário          = 15 de dezembro
+| fundação             ={{nowrap|{{dtlink|31|12|1985|idade}}}}
+| emancipação          = 31 de dezembro de 1985
+| gentílico            = [[wikt:sapucaiense|sapucaiense]]
+| lema                 = 
+| padroeiro            = 
+| prefeito             = Rudi Paetzold
+| partido              = [[Partido do Movimento Democrático Brasileiro|MDB]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Coronel Sapucaia location map.svg
+| latP                 = S | latG = 23 | latM = 16 | latS = 19
+| lonP                 = O | lonG = 55 | lonM = 31 | lonS = 44
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Iguatemi|Iguatemi]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Capitán Bado]] ([[Paraguai]]), [[Amambaí]], [[Aral Moreira]] e [[Paranhos (Mato Grosso do Sul)|Paranhos]]
+| dist_capital         = 377
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 1028.898 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 67º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:2.88}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 31º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Coronel Sapucaia (sede)
+| população            = 14160 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 42º]]
+| data_pop             = est. [[IBGE]] [[2011]]<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| densidade            = {{fmtn|13.762|hab/km²}}
+| altitude             = 510
+| clima                = [[tropical de altitude]]
+| sigla_clima          = Cwa
+<!-- Indicadores -->
+| idh                  = 0.713 <!--favor manter o formato-->
+| idh_pos             = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 62º]]
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.42}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 12º]] 
+| data_gini            = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20090816192758/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2009-08-16|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:84539.849}} mil
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 64º]]
+| pib_per_capita       = 5864.31
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''Coronel Sapucaia''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]].
+
+==Geografia==
+===Localização===
+O município de  está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]] ([[Microrregião de Iguatemi]]). Localiza-se a uma [[latitude]] 23º16'18" [[Sul]] e a uma [[longitude]] 55º31'45" [[Oeste]]. Distâncias:
+*{{fmtn|420|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]) 
+*{{fmtn|1554|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Latossolo roxo
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|510|m}}.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical de altitude ([[Cwa]]).
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]].
+
+; Vegetação
+
+Se localiza na região de influência da [[Mata Atlântica]].
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Greenwich]].
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|1028.898|km²}}, representando 0,29 % do Estado, 0,06 % da Região e 0,01 % de todo o território brasileiro.
+ 
+;Subdivisões
+
+Coronel Sapucaia (sede)
+
+== História ==
+O município de Coronel Sapucaia foi um dos distritos “Patrimônio da União” do Município de [[Ponta Porã]], sendo que seu primitivo nome era Nhu-Verá. No lugar, a Companhia Mate Laranjeira Mendes, de propriedade de Tomás Laranjeira, criou um de seus postos de abastecimento para a exploração de erva-mate, conforme autorização obtida em 1889, do Império, para exploração da erva-mate na fronteira. Quando a Comarca de Nioaque distinguiu seus pontos políticos (na Divisão Administrativa Judiciária Territorial), o lugar foi reconhecido com o nome de Distrito de Paz Nhu-Verá, ganhando seus primeiros moradores, na maioria imigrantes. Nhu-Verá foi o berço de fusão de espíritos simples de trabalhadores. Já em 2 de dezembro de 1938 havia sido expedida certidão para a criação do Patrimônio da Povoação de Nhu-Verá, sendo denominado “Distrito de Paz de Antônio João”, situado no Município de Ponta Porã.
+
+Em 1947, acabou o prazo de contrato que a Companhia Mate Laranjeira Mendes mantinha com o estado de [[Mato Grosso]], e as terras que a empresa ocupava, foram sendo liberadas para a ocupação, o que causou um movimento pela legalização das mesmas. Em 6 de dezembro de 1948, o Distrito de Paz de [[Antônio João]] passou a pertencer à Comarca de Ponta Porã, e somente em 12 de novembro de 1968, o Distrito, já então Coronel Sapucaia, passou a fazer parte da Comarca de [[Amambai]].
+
+=== Emancipação ===
+Em 24 de maio de 1985,data em que hoje é comemorado o aniversário da cidade, foi implantada no distrito a subprefeitura, sendo nomeado Cirineu Antônio Garcia para exercê-la. O distrito já contava com dois representantes na Câmara Municipal de Amambai: Eurico Mariano ([[PMDB]]) e Lázaro Fernandes ([[Democratas (Brasil)|PFL]]) eleitos vereadores em 15 de novembro de 1984. O movimento pela emancipação do Distrito e comunitárias, apoiados por grande parcela da população, resultou na elaboração do Projeto de Lei de autoria dos deputados estaduais Onevan de Matos e Zenóbio dos Santos que instituía o Município de Coronel Sapucaia, originando-se a partir daí, a Lei 632/85, de 31 de dezembro de 1985, que finalmente tornava Coronel Sapucaia um Município.
+
+A instalação político-administrativa do município ocorreu em 1 de janeiro de 1987, e a representação política ficou assim constituída: Eurico Mariano, prefeito, e José Elodir Bender, vice-prefeito.
+
+===Coronel Orlando Olsen Sapucaia===
+Coronel Sapucaia é o terceiro nome do [[município]] e veio-lhe em reconhecimento ao grande herói militar do mesmo nome.
+
+Nascido em 30 de outubro de 1918 na cidade de [[Canoinhas]] ([[Santa Catarina]]), cursou o primário em Belo Horizonte e o curso secundário no Colégio Militar do Rio de Janeiro. Em 1937 entrou para a Escola Militar de Realengo, formando-se em 1940 na Arma de Cavalaria. Como Aspirante, em seu 1º Posto, vai servir no 11º RCI (11º Regimento de Cavalaria Independente) na cidade de Ponta Porã. Desde então cada vez que era transferido, pedia para voltar a servir em Ponta Porã. Durante todos os anos que serviu em Mato Grosso, tornou-se um verdadeiro mato-grossense, chegando mesmo a dizer que os melhores anos de sua vida foram passados neste Estado. Fazendo de sua vida Militar um serviço social, de real ajuda a população, foi em terras mato-grossenses, principalmente, onde viveu como queria, sempre trabalhando para um Brasil melhor, mais justo, junto de seu povo. Em 1961 foi transferido para o DAE, em Realengo (Rio de Janeiro), onde faleceu no dia 15 de janeiro de 1963.
+
+==Infraestrutura==
+===Escolas===
+Coronel Sapucaia dispõe de 5 escolas no seu perímetro urbano, são elas:
+*Escola Estadual Eneil Vargas,
+*Escola Estadual Coronel Sapucaia,
+*Escola Municipal Maurício Rodrigues de Paula,
+*Escola Municipal Fernando de Souza Romanini,
+*Escola Municipal Ruy Espíndola,
+
+Além disso possui vários CEI's Centro de Educação Infantil.
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Coronel Sapucaia
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+*[http://www.coronelsapucaia.ms.gov.br/ Página oficial]
+
+{{Mercocidades}}
+{{Fronteiras do Brasil}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Municípios fronteiriços do Brasil]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1985]]

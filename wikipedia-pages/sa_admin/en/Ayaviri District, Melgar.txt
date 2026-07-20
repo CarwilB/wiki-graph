@@ -1,0 +1,143 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Ayaviri
+| native_name             = Ayawiri
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = PanoramAyaviri.jpg
+| image_alt               = 
+| image_caption           = Ayaviri
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Ayaviri in the [[Melgar Province|Melgar]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Puno Region|Puno]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Melgar Province|Melgar]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Ayaviri, Melgar|Ayaviri]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Bernardo Natividad Meza Alvarez
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 1013.14
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3907
+| population_footnotes    = 
+| population_total        = 25346
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 210801
+| website                 = 
+| footnotes               = 
+}}
+'''Ayaviri''' or '''Ayawiri''' ([[Aymara language|Aymara]]) is one of nine [[Districts of Peru|districts]] of the province [[Melgar Province|Melgar]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=April 23, 2008 }}''. Retrieved April 11, 2008.</ref>
+
+== Geography ==
+Some of the highest mountains of the district are listed below:<ref name=escale>escale.minedu.gob.pe - UGEL map of the Melgar Province (Puno Region)</ref>
+
+{{columns-list|colwidth=20em|
+* [[Achuqallani (Puno)|Achuqallani]]
+* Chata
+* [[Ch'ulla Rinri]]
+* Kiswarani
+* Llallawa
+* Llanquni
+* Pukarani
+* T'ant'ani
+* [[T'aqañawi]]
+* Wallatani
+* [[Wisa Wisa (Lampa-Melgar)|Wisa Wisa]]
+* Yana Urqu
+}}
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y
+|collapsed = Y
+|location = Ayaviri, elevation {{convert|3941|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 16.3
+|Feb high C = 16.3
+|Mar high C = 16.4
+|Apr high C = 16.8
+|May high C = 17.0
+|Jun high C = 16.3
+|Jul high C = 16.3
+|Aug high C = 17.4
+|Sep high C = 18.6
+|Oct high C = 18.7
+|Nov high C = 19.0
+|Dec high C = 17.8
+|year high C = 
+|Jan low C = 3.8
+|Feb low C = 3.8
+|Mar low C = 3.1
+|Apr low C = 0.9
+|May low C = -3.5
+|Jun low C = -6.3
+|Jul low C = -6.4
+|Aug low C = -4.6
+|Sep low C = -1.0
+|Oct low C = 1.0
+|Nov low C = 2.0
+|Dec low C = 3.2
+|year low C =   
+|precipitation colour = green
+|Jan precipitation mm = 135.5
+|Feb precipitation mm = 123.5
+|Mar precipitation mm = 102.3
+|Apr precipitation mm = 40.1
+|May precipitation mm = 7.2
+|Jun precipitation mm = 3.3
+|Jul precipitation mm = 2.7
+|Aug precipitation mm = 6.9
+|Sep precipitation mm = 13.6
+|Oct precipitation mm = 45.8
+|Nov precipitation mm = 60.1
+|Dec precipitation mm = 89.8
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 25 October 2023}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Melgar Province}}
+
+{{coord|14|52|55|S|70|35|24|W|source:eswiki|display=title}}
+
+[[Category:Districts of the Department of Puno]]
+[[Category:Districts of the Melgar province]]
+
+
+{{Puno-geo-stub}}

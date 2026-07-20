@@ -1,0 +1,96 @@
+{{Ficha de entidad subnacional
+|nombre                = Municipio de<br>San Andrés Lagunas
+|país                  = [[México]]
+|unidad                = [[Municipios de México|Municipio]]
+|tipo_superior_1       = [[Organización territorial de México|Estado]]
+|superior_1            = [[Oaxaca]]
+|tipo_superior_2       = [[Regiones de Oaxaca|Región]]
+|superior_2            = [[Región mixteca oaxaqueña|Mixteca]]
+|tipo_superior_3       = [[Distritos de Oaxaca|Distrito]]
+|superior_3            = [[Distrito de Teposcolula|Teposcolula]]
+|imagen                = 
+|pie_de_imagen         = 
+|mapa                  = {{Map draw|geotype=geoshape|width=250|height=300|align=center|zoom=12|fill=#4D87CA|fill-opacity=0.1}}
+
+|capital_denominación  = Cabecera municipal
+|capital               = [[San Andrés Lagunas]]
+|dirigentes_títulos    = Presidente municipal
+|dirigentes_nombres    = 
+|fundación             = 1520
+|patrón                = 
+|subdivisión           = 5 localidades
+
+|superficie            = 50.04
+|superficie_post       = <ref name="INEGI">{{cita web |url=http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |título=México en cifras. Oaxaca |autor=INEGI |fechaacceso=septiembre de 2015 |fecha=2010 |urlarchivo=https://web.archive.org/web/20131029194731/http://www3.inegi.org.mx/sistemas/mexicocifras/default.aspx?e=20 |fechaarchivo=29 de octubre de 2013 }}</ref>
+|población             = 505
+|población_año         = 2010
+|población_post        = <ref name="INEGI" />
+|altitud               = 2300
+|elevación_alta        = 2600
+|elevación_baja        = 2000
+|horario               = [[UTC|UTC -6]]
+
+|código_postal         = 
+|prefijo telefónico    = 
+|página web            = 
+}}
+El '''municipio de San Andrés Lagunas''' es uno de los [[Anexo:Municipios de Oaxaca|570 municipios]] que conforman al estado [[México|mexicano]] de [[Oaxaca]]. Pertenece al [[distrito de Teposcolula]], dentro de la [[Región mixteca oaxaqueña|región mixteca]]. Su cabecera es la localidad homónima.<ref>{{cita web
+ | url       = http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20093a.html
+ | título       = Oaxaca. San Andrés Lagunas
+ | fechaacceso       = 1 de septiembre de 2015
+ | autor       = INAFED
+ | fecha       = 2012
+ | fechaarchivo       = 24 de septiembre de 2015
+ | urlarchivo       = https://web.archive.org/web/20150924042514/http://www.inafed.gob.mx/work/enciclopedia/EMM20oaxaca/municipios/20093a.html
+ | deadurl       = yes
+ }}</ref>
+
+== Geografía ==
+El municipio abarca 50.04 km² y se encuentra a una altitud promedio de 2300 {{esd|[[m s. n. m.]]}}, oscilando entre 2600 y 2000 {{esd|[[m s. n. m.]]}}<ref name="INEGI" /><ref>{{cita web
+ | url       = http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20093.pdf
+ | título       = Pontuario de información municipal. San Andrés Lagunas
+ | fechaacceso       = 1 de septiembre de 2015
+ | autor       = INEGI
+ | fecha       = 2010
+ | urlarchivo       = https://web.archive.org/web/20160304114645/http://www3.inegi.org.mx/sistemas/mexicocifras/datos-geograficos/20/20093.pdf
+ | fechaarchivo       = 4 de marzo de 2016
+ }}</ref>
+
+== Demografía ==
+
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de San Andrés Lagunas contaba con 5 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Oaxaca|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197933.pdf|fechaacceso=enero de 2026|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2026|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|200930002
+|San Isidro Lagunas
+| align="right" |232
+|-
+|200930001
+|'''[[San Andrés Lagunas]]'''
+| align="right" |198
+|-
+|200930005
+|Tercera Sección
+| align="right" |70
+|-
+|200930004
+|La Soledad
+| align="right" |17
+|-
+|200930003
+|Guadalupe
+| align="right" |1
+|-
+! colspan="2" |Total municipal
+!518
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipio de San Andrés Lagunas| ]]

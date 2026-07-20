@@ -1,0 +1,105 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Minas
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Minas, Cuba - panoramio (1).jpg
+|image_caption          = Rests of an old mill
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Minas (Cuban municipal map).png
+|map_caption            = Minas municipality (red) within <br> Camagüey Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Camagüey Province|Camagüey]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 1015
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 35,966
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|21|29|22|N|77|36|18|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 70
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-322
+|blank_name             = [[Köppen climate classification|Climate]]
+|blank_info             = [[Tropical savanna climate|Aw]]
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Minas''' is a municipality and town in the [[Camagüey Province]] of [[Cuba]].
+
+==Geography==
+The municipality borders with [[Sierra de Cubitas]], [[Camagüey]], [[Sibanicú]], [[Guáimaro]] and [[Nuevitas]]. Its territory includes the villages of Anguila, Fomento, Gurugú, Las Piedras, [[Lugareño]], Monte Oscuro, Redención and [[Senado (Minas)|Senado]].<ref>{{OSM|r|5892226|Minas}}</ref>
+
+==Demographics==
+In 2022, the municipality of Minas had a population of 35,966.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|1015|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=https://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids| accessdate=2007-10-05}}</ref> it has a population density of {{convert|35|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Minas Municipal Museum]]
+*[[List of cities in Cuba]]
+*[[Municipalities of Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Minas
+ | N  = ''North [[Atlantic Ocean]]''
+ | E  = [[Nuevitas]]
+ | SE = [[Guáimaro]]
+ | S  = [[Sibanicú]]
+ | SW = [[Camagüey]]
+ | W  = [[Sierra de Cubitas]]
+}}
+{{Municipalities in Camagüey}}
+{{Authority control}}
+
+[[Category:Populated places in Camagüey Province]]
+
+
+{{Cuba-geo-stub}}

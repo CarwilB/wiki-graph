@@ -1,0 +1,60 @@
+{{Ficha de entidad subnacional
+| nombre         = Olá
+| nombre_oficial = Olá
+| unidad         = [[Anexo:Distritos de Panamá|Distrito]]
+| capital        = [[Olá (Panamá)|Olá]]
+| tipo_superior_1 = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+| superior_1      = {{PAN|2}}
+| tipo_div_1      = Corregimientos
+| div_1           = 5
+| lema            =
+| bandera         = no
+| escudo          = no
+| mapa            = Panamá - Coclé - Olá.svg
+| tamaño_mapa     = 250px
+| mapa1 = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| imagen          = 
+| pie_de_imagen   = 
+| superficie      = 377.2
+| superficie_post = <ref name="censo"/>
+| elevación_media =
+| campo1_nombre   = Temperatura
+| campo1          = 
+| campo2_nombre   = Distancia
+| campo2          = 
+| fundación       = 1855
+| población       = 6375
+| población_año   = 2023
+| población_post  = <ref name="censo"/>
+| gentilicio      = 
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = 
+| página web      =
+}}
+
+El '''distrito de Olá''' es una de las divisiones que conforma la [[provincia de Coclé]], situado en la República de [[Panamá]].
+
+Tenía una población de 6375 habitantes en 2023.<ref name="censo">{{cita web |url=https://www.inec.gob.pa/archivos/P0705547520231109105354CUADRO%2010.pdf |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=17 de diciembre de 2025 |obra=Censos de 2000 a 2023 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+
+== Toponimia ==
+Su nombre proviene, según varios estudiosos, de una [[figura literaria]] asignada a «olas», de las que un poeta de entre los primeros pobladores, describió los pichachos del lugar simulando a un mar embravecido con sus olas.<ref>{{cita publicación|url=http://www.tribunal-electoral.gob.pa/wp-content/uploads/2017/06/origenes_de_los_correg.pdf|título=Origen del nombre de los corregimientos|fechaacceso=8 de abril de 2018|página=37|editorial=Tribunal Electoral de Panamá|fechaarchivo=19 de enero de 2021|urlarchivo=https://web.archive.org/web/20210119032000/https://www.tribunal-electoral.gob.pa/wp-content/uploads/2017/06/origenes_de_los_correg.pdf|deadurl=yes}}</ref>
+
+== División político-administrativa ==
+Está conformado por cinco corregimientos:
+
+*[[Olá (Panamá)|Olá]]
+*[[El Copé]]
+*[[El Palmar (Coclé)|El Palmar]]
+*[[El Picacho (Coclé)|El Picacho]]
+*[[La Pava]]
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Distritos de Coclé|Ola]]

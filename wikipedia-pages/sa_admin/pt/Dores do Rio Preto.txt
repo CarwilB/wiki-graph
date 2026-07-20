@@ -1,0 +1,70 @@
+{{Info/Município do Brasil
+<!-- GeoID=3202009 -->
+<!-- Cabeçalho -->| nome = Dores do Rio Preto
+| foto = Dores do Rio Preto.JPG
+| leg_foto = Dores do Rio Preto
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Dores do Rio Preto.svg
+| bandeira = Bandeira de Dores do Rio Preto.svg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|7|04|1964|idade}}}}
+| gentílico = rio-pretense<ref name="IBGEPopArea" />
+| lema = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| padroeiro = [[Nossa Senhora das Dores]]
+| CEP = 29580-000 a 29589-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito = Cleudenir José de Carvalho Neto
+| partido = [[Cidadania (partido político)|CIDADANIA]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = EspiritoSanto Municip DoresdoRioPreto.svg
+| latP = S
+| latG = 20
+| latM = 41
+| latS = 20
+| lonP = O
+| lonG = 41
+| lonM = 50
+| lonS = 42
+| estado = Espírito Santo
+| mesorregião = [[Mesorregião do Sul Espírito-Santense|Sul Espírito-santense]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Alegre|Alegre]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Guaçuí]], [[Ibitirama]], [[Divino de São Lourenço]] ([[Espírito Santo (estado)|ES]]), [[Caiana]], [[Espera Feliz]] ([[Minas Gerais|MG]]), [[Porciúncula]] ([[Rio de Janeiro (estado)|RJ]]).
+| dist_capital = 247
+<!-- Características geográficas -->| área = 159.298 <!--favor manter o formato-->
+| área_ref = <ref name="IBGEPopArea" />
+| população = 6596 <!--favor manter o formato-->
+| data_pop = censo IBGE/2022<ref name="IBGEPopArea">{{Citar web |url=https://cidades.ibge.gov.br/brasil/es/dores-do-rio-preto/panorama |titulo=Cidades e Estados |acessodata=2023-10-09 |website=IBGE Cidades - Panorama |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref>
+| altitude = 774
+| clima = [[Tropical de Altitude]]
+| sigla_clima = Cwb
+<!-- Indicadores -->| idh = 0.654 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de agosto de 2013}}</ref>
+| pib = {{formatnum:159782.21}} mil
+| data_pib = [[IBGE]]/[[2021]]
+| pib_per_capita = 23561.60
+| data_pib_per_capita = [[IBGE]]/[[2021]]
+| site_prefeitura = [http://www.pmdrp.es.gov.br/ pmdrp.es.gov.br]
+| site_câmara = [http://www.camaradrpreto.es.gov.br/ camaradrpreto.es.gov.br]
+}}
+'''Dores do Rio Preto''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Espírito Santo (estado)|Espírito Santo]]. Sua população, segundo o [[Censo demográfico do Brasil de 2022|censo de 2022]], é de {{fmtn|6596}} habitantes.<ref name="IBGEPopArea" /> 
+
+== Ver também ==
+* [[Lista de municípios brasileiros mais altos em cada estado|Municípios mais altos em cada estado]]
+
+{{Referências}}
+
+==Ligações externas==
+* {{Link||2=http://www.pmdrp.es.gov.br |3=Página da Prefeitura de Dores do Rio Preto}}
+* {{Link||2=http://www.camaradrpreto.es.gov.br |3=Câmara Municipal de Dores do Rio Preto}}
+* {{Link||2=http://www.cidades.ibge.gov.br/brasil/es/dores-do-rio-preto |3=Dados do município no portal do IBGE}}
+
+{{Portal3|Brasil}}
+
+{{DEFAULTSORT:Dores Rio Preto}}
+[[Categoria:Dores do Rio Preto| ]]
+[[Categoria:Fundações no Espírito Santo em 1964]]

@@ -1,0 +1,157 @@
+{{Ver desambig|o município de Tocantins|Itaporã do Tocantins}}
+{{Info/Município do Brasil
+<!-- GeoID=5004502 -->
+<!-- Cabeçalho -->| nome = Itaporã
+| foto = 
+| leg_foto = 
+| apelido = Cidade do Peixe
+<!-- Dados gerais -->| brasão = Brasao_Itaporã.png
+| bandeira = Bandeira Itaporã.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 10 de dezembro
+| fundação = {{nowrap|{{dtlink|10|12|1953|idade}}}}
+| emancipação = 10 de dezembro de 1953
+| gentílico = itaporanense
+| lema = 
+| padroeiro = [[São José]]
+| prefeito = Tiago Tavares Carbonaro
+| partido = [[Progressistas|PP]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Itapora location map.svg
+| latP = S
+| latG = 22
+| latM = 04
+| latS = 44
+| lonP = O
+| lonG = 54
+| lonM = 47
+| lonS = 20
+| estado = Mato Grosso do Sul
+| mesorregião = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião = [[Microrregião de Dourados|Dourados]]
+| data_microrregião = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Dourados]], [[Douradina (Mato Grosso do Sul)|Douradina]], [[Maracaju]], [[Rio Brilhante]]
+| dist_capital = 231
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->| área = 1322.003 <!--favor manter o formato-->
+| área_pos = [[Lista de municípios do estado de Mato Grosso do Sul por área|MS: 61º]]
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = {{Formatnum:2.97}}
+| área_urbana_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 30º]]
+| área_urbana_ref = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos = Itaporã (sede), [[Carumbé]], [[Montese (Itaporã)|Montese]], [[Piraporã]] e [[Santa Terezinha (Itaporã)|Santa Terezinha]]
+| população = 24137 <!--favor manter o formato-->
+| população_pos = [[Lista de municípios de Mato Grosso do Sul por população|MS: 24º]]
+| data_pop = est. [[IBGE]] [[2023]]<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| densidade = {{fmtn|16.004|hab/km²}}
+| altitude = 390
+| altitude_ref = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima = [[clima tropical|tropical]]
+| sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.712 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 64º]]
+| data_idh = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini = {{Formatnum:0.430}}
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 43º]]
+| data_gini = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib = {{formatnum:226825.682}} mil
+| pib_pos = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 25º]]
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 11821.84
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''Itaporã''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste (Brasil)|região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]]. É conhecida como "Cidade do Peixe", pois possui a maior lâmina d'água do estado em matéria de criação e produção de peixes.
+
+==História==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Na terceira década do século XX, o então presidente do estado de [[Mato Grosso]], [[Pedro Celestino da Costa]], destinou, para fins de colonização, uma área de 50 000 hectares compreendida entre os Rios Brilhante e Panambi, pertencentes ao município de [[Ponta Porã]].
+
+O prefeito de [[Dourados]] deu início aos trabalhos de colonização e criou a denominação "Colônia Municipal de Dourados", procedendo, a seguir, à distribuição dos primeiros lotes do novo povoado, atualmente Itaporã.  O município foi criado pela Lei 659, de 10 de dezembro de 1953.
+
+Em [[1977]] o município passa a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+=== Topônimo ===
+"Itaporã" é um termo de origem [[Língua tupi|tupi]] que significa "pedra bonita", através da junção dos termos ''itá'' ("pedra") e ''porang'' ("bonito")<ref>http://www.fflch.usp.br/dlcv/tupi/vocabulario.htm</ref>.
+
+==Geografia==
+===Localização===
+O município de Itaporã está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]] ([[Microrregião de Dourados]]). Localiza-se a uma [[latitude]] 22º04'44" [[sul]] e a uma [[longitude]] 54º47'22" [[oeste]]. Distâncias:
+*{{fmtn|228|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]]) 
+*{{fmtn|1244|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+No município de Itaporã verifica-se a predominância de Latossolo  de textura argilosa e caráter áulico, portanto, baixa fertilidade natural e Gelissolos com baixa fertilidade.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|390|m}}. O município de Itaporã encontra-se na Região dos Planaltos Arenítico-Basálticos Interiores. Apresenta relevo plano, geralmente elaborado por várias fases de retomada erosiva, com  relevos elaborados pela ação fluvial e áreas planas  resultante de acumulação fluvial sujeita a inundações periódicas.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[Classificação climática de Köppen-Geiger|Aw]]) úmido a sub-úmido, com índice efetivo de umidade com valores anuais variando de 
+20 a 40%. A precipitação pluviométrica anual varia entre 1.500 a 1.750mm, com período seco inferior a quatro meses.
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]]. Principais rios:
+*Rio Brilhante: rio formador, com o rio Dourados, do rio Ivinhema, limite entre os municípios de Rio Brilhante e Itaporã.  
+*Rio Carumbé: afluente pela margem direita do rio Brilhante, no município de Itaporã. 
+*Rio Peroba: afluente pela margem direita do rio Santa Maria. Seu percurso é limite entre os municípios de Dourados e de Itaporã.  
+*Rio Santa Maria: afluente pela margem direita do rio Brilhante, no município de Maracaju. Nasce na serra de Maracaju faz divisa entre o município de Dourados e Itaporã.   
+*Rio São Domingos: afluente pela margem direita do rio Brilhante, no município de Itaporã. 
+*Rio Sardinha
+; Vegetação
+
+Quase totalidade da área do município pertence ao Bioma Cerrado, sendo recoberta por agropecuária e pastagem plantada, remanescentes da  vegetação natural, Região da Floresta Estacional Semi-decidual - Floresta Aluvial margeiam os rios ao norte.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Greenwich]].
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|1322.003|km²}}.
+ 
+;Subdivisões
+
+Itaporã (sede), [[Carumbé]], [[Montese (Itaporã)|Montese]], [[Piraporã]] e [[Santa Terezinha (Itaporã)|Santa Terezinha]].
+
+;Arredores
+
+[[Dourados]], [[Douradina (Mato Grosso do Sul)|Douradina]], [[Maracajú]], [[Rio Brilhante]] e Aldeias Jaguapirú e Bororó;
+
+==Demografia==
+Sua população estimada em 2016 era de 23.200 habitantes.
+
+==Economia==
+Sua principal fonte econômica é a agricultura, pecuária e piscicultura, este último segmento com uma grande expansão na região. Um dos maiores frigoríficos do país fica localizado na própria cidade. Segundo noticiários da região no ano de [[2003]], setenta por cento da produção era exportada para [[Suíça]], [[Alemanha]], [[França]], [[Inglaterra]], [[Estados Unidos]] e [[Chile]]. As espécies produzidas a maior parte são as nativas, como o pacu e pintado.
+
+{{referências}}
+
+== Ligações externas ==
+{{Correlatos
+|commons      = Itaporã
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.itapora.ms.gov.br Página da prefeitura]
+* [http://www.wikimapia.org/#lat=-22.0830948&lon=-54.789505&z=12&l=9&m=b Itaporã no Wikimapia]
+
+{{Esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Itaporã| ]]
+[[Categoria:Fundações em Mato Grosso em 1953]]

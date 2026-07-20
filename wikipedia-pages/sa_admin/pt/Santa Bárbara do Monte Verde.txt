@@ -1,0 +1,66 @@
+{{Info/Município do Brasil
+<!-- GeoID=3157278 -->
+<!-- Cabeçalho -->
+| nome                 = Santa Bárbara do Monte Verde
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = StaBarbaraMteVerde_Brasao.png
+| bandeira             = StaBarbaraMteVerde_Band.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          =4 de dezembro
+| fundação             ={{nowrap|{{dtlink|21|12|1995|idade}}}}
+| gentílico            =barbarense
+| lema                 = 
+| padroeiro            = [[Santa Bárbara]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=13 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+| CEP                  = 36132-000 a 36134-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito             = Fábio Nogueira Machado<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/mg/santa-barbara-do-monte-verde|título=Candidatos a vereador Santa Bárbara do Monte Verde-MG|publicado=Estadão|acessodata =15 de maio de 2021}}</ref>
+| partido              = [[PSC]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = MinasGerais Municip SantaBarbaradoMonteVerde.svg
+| latP                 = S | latG = 21 | latM = 57 | latS = 32
+| lonP                 = O | lonG = 43 | lonM = 42 | lonS = 07
+| estado               = Minas Gerais
+| mesorregião          = [[Mesorregião da Zona da Mata|Zona da Mata]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Juiz de Fora|Juiz de Fora]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Belmiro Braga]], [[Juiz de Fora]], [[Lima Duarte (Minas Gerais)|Lima Duarte]], [[Rio das Flores]] (RJ), [[Rio Preto]], [[Valença (Rio de Janeiro)|Valença]] (RJ)
+| dist_capital         = 334
+<!-- Características geográficas -->
+| área                 = 417.925
+| área_ref             = <ref name =IBGE>{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/santa-barbara-do-monte-verde/panorama |título=IBGE|publicado=Censo Demográfico - 2022}}</ref>
+| população            = 3095
+| data_pop             = Censo [[IBGE]]/2022<ref name=IBGE/>
+| altitude             = 
+| clima                = tropical
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.606 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2010 <ref name="PNUD_IDH_2010">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/santa-barbara-do-monte-verde/panorama |titulo=Panorama de Santa Bárbara do Monte Verde |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de novembro de 2017}}</ref>
+| pib                  = {{formatnum:38745.099}} mil
+| data_pib             = [[IBGE]]/2014<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html |titulo=Produto Interno Bruto dos Municípios 2010-2014 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de novembro de 2017}}</ref>
+| pib_per_capita       = 12293.54
+| data_pib_per_capita  = [[IBGE]]/2014<ref name="IBGE_PIB"/>
+| site_prefeitura      = [https://www.santabarbaradomonteverde.mg.gov.br santabarbaradomonteverde.mg.gov.br]
+| site_câmara          = [https://www.santabarbaradomonteverde.mg.leg.br santabarbaradomonteverde.mg.leg.br]
+}}
+
+'''Santa Bárbara do Monte Verde''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Sua população recenseada pelo [[IBGE]] em 2022 era de 3 095 habitantes. <ref name=IBGE/>
+
+{{Referências}}
+
+== Ligações externas ==
+* {{Link||2=http://www.santabarbaradomonteverde.mg.gov.br|3=Página da prefeitura}}
+* {{Link||2=http://www.santabarbaradomonteverde.mg.leg.br|3=Página da câmara}}
+* {{Link||2=http://www.cidades.ibge.gov.br/brasil/mg/santa-barbara-do-monte-verde|3=Dados do IBGE de Santa Bárbara do Monte Verde}}
+
+{{Esboço-municípiosbr/Minas Gerais}}
+
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1995]]

@@ -1,0 +1,165 @@
+{{Info/Município do Brasil
+<!-- GeoID=5004601 -->
+<!-- Cabeçalho -->
+| nome                 = Itaquiraí
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               =
+| bandeira             = Band_Itaquirai.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          =13 de maio
+| fundação             ={{nowrap|{{dtlink|13|5|1980|idade}}}}
+| emancipação          =13 de maio de 1980
+| gentílico            =[[wikt:itaquiraiense|itaquiraiense]]
+| lema                 = 
+| padroeiro            = [[Nossa Senhora do Perpétuo Socorro]]
+| prefeito             = Thalles Henrique Tomazelli<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/ms/itaquirai|título=Candidatos a vereador Itaquiraí-MS|publicado=Estadão|acessodata =11 de junho de 2021}}</ref>
+| partido              = [[Democratas (Brasil)|DEM]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Itaquirai location map.svg
+| latP                 = S | latG = 23 | latM = 28 | latS = 26
+| lonP                 = O | lonG = 54 | lonM = 11 | lonS = 06
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião         = [[Microrregião de Iguatemi|Iguatemi]]
+| data_microrregião    = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             =[[Naviraí]], [[Eldorado (Mato Grosso do Sul)|Eldorado]] e [[Iguatemi (Mato Grosso do Sul)|Iguatemi]]
+| dist_capital         = 395
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 2063.876 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 51º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:1.845}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 48º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Itaquiraí (sede), Porto Iporã
+| população            = 18832 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 33º]]
+| data_pop             = est. [[IBGE]] 2011<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| densidade            = {{fmtn|9.124|hab/km²}}
+| altitude             = 340
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|autor=|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[subtropical]]
+| sigla_clima          = Cfa
+<!-- Indicadores -->
+| idh                  = 0.71 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 65º]]
+| data_idh             = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.43}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 26º]]
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1#|arquivodata=30 de abril de 2012|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:165431.218}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 41º]]
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+| pib_per_capita       = 9482.47
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Itaquiraí''' é um [[Município (Brasil)|município]] do [[Unidades federativas do Brasil|estado]] de [[Mato Grosso do Sul]], na [[Região Centro-Oeste do Brasil|região Centro-Oeste]], no [[Brasil]].
+
+==História==
+Até o século XVIII, a região era ocupada pelos [[Povos indígenas do Brasil|índios]] [[terenas]] e [[Paí tavyterã|caiuás]]. A partir de então, começou a ser desbravada por [[bandeirantes]]. No início do século XX, ganhou impulso, na região, o cultivo da [[erva-mate]]. Em 1955, a região começou a ser ocupada por migrantes procedentes dos estados de [[São Paulo (estado)|São Paulo]] e [[Paraná]], que ocuparam os terrenos pertencentes ao capitão João Paulo Cabreira e a Geraldo Fernandes Fideles.
+
+Foi elevada a [[Distritos do Brasil|distrito]] pertencente a [[Ponta Porã]] pela Lei 2111, de 26 de dezembro de 1963, com o nome de "Itaquiraí". Posteriormente, passou a pertencer aos municípios de [[Amambai]] e [[Iguatemi (Mato Grosso do Sul)|Iguatemi]]. Em 1980, separou-se de Iguatemi, tornando-se um município autônomo.<ref>''Ache tudo e região: um mundo de informações em suas mãos''. Disponível em http://www.achetudoeregiao.com.br/MS/Itaquirai/historia.htm {{Wayback|url=http://www.achetudoeregiao.com.br/MS/Itaquirai/historia.htm |date=20140911045436 }}. Acesso 22 de novembro de 2013.</ref>
+== Etimologia ==
+{{VT|Topônimos tupis no Brasil}}"Itaquiraí", conforme o [[Dicionário de Tupi Antigo]], vem de "takyra - nome de uma planta + 'y: rio das taquiras."<ref>NAVARRO, Eduardo. [[Dicionário de Tupi Antigo]], 2013</ref>  Recebeu este nome devido ao [[Córrego Itaquiraí]].
+
+==Geografia==
+===Localização===
+O município de  está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Sudoeste de Mato Grosso do Sul|Sudoeste de Mato Grosso do Sul]] ([[Microrregião de Iguatemi]]). Localiza-se na [[latitude]] de 23º28’26” [[Sul]] e [[longitude]] de 54°11’06” [[Oeste]]. Distâncias:
+* {{fmtn|407|km}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]])
+* {{fmtn|1342|km}} da capital federal ([[Brasília]])
+* 69&nbsp;km da fronteira com o Paraguai ([[Salto del Guairá]])
+* 78&nbsp;km da divisa com o estado do Paraná ([[Guaíra (Paraná)|Guaíra]])
+
+===Geografia física===
+;Solo
+
+No município de Itaquiraí, verifica-se a predominância de [[latossolo]] de textura média e, acompanhando as principais linhas de drenagem, [[nitossolo]]s de textura arenosa/média, ambas com baixa fertilidade natural, e algumas áreas de [[neossolo]]s.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|340|m}}. Tem, como característica principal, áreas planas entremeadas com relevos tabulares. As áreas planas de acumulação predominam ao longo dos rios principais, representada por larga faixa próxima ao rio Paraná e, ao norte, com o rio que lhe serve de limite. O município de Itaquiraí encontra-se na Região dos Planaltos Arenítico-Basálticos Interiores, com duas unidades geomorfológicas, Divisores das Sub-Bacias Meridionais e Vale do Paraná.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima subtropical ([[Cfa]]) do sul de Mato Grosso do Sul. A temperatura média dos meses mais frios está entre 14&nbsp;°C a 15&nbsp;°C. As precipitações variam de 1 400 a 1 700 milímetros anuais.
+
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]]. Principais rios:
+* Rio Amambai (pronuncia-se "amambaí"): afluente pela margem direita do rio Paraná; limite entre os municípios de Naviraí e Itaquiraí. Pertence à Bacia do rio Paraná. Possui 340 quilômetros de extensão, sendo 90 quilômetros navegáveis.
+* Rio Maracaí: afluente pela margem direita do rio Paraná, banha o município Itaquiraí, limite entre os municípios de Iguatemi e Itaquiraí.
+* Rio Paraná: formado pela confluência dos rios Paranaíba (nasce em Minas Gerais) e o Grande (cujas cabeceiras ficam na serra da Mantiqueira, em Minas Gerais), a uns 10&nbsp;km a nordeste da cidade de Aparecida do Taboado; daí até o ponto extremo de Mato Grosso do Sul, faz divisa entre este Estado (município de Itaquiraí) e o Estado do  Paraná. É o principal rio da bacia do mesmo nome.
+
+; Vegetação
+
+A vegetação do município de Itaquiraí apresenta predominância da Floresta Estacional Semidecidual com áreas de pastagem plantada. Aparecem, em menor percentual, distribuídas pelo município, a Floresta Estacional e Floresta Submontana.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação ao [[Meridiano de Greenwich]].
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|2063.876|km²}}.
+
+;Subdivisões
+
+Itaquiraí (sede) e Porto Iporã.
+
+;Arredores
+
+Naviraí, Eldorado e Iguatemi.
+
+==Demografia==
+A população é de 18 618 (urbana: 11 015 – rural: 7 603), e a densidade demográfica é de 9,02 hab/km² (Fonte: Censo do 2010 do [[IBGE]]).
+
+==Economia==
+Na produção vegetal, Itaquiraí destaca-se pelo cultivo da lavoura comercial de grãos, sendo que, no ano de 2004, as principais culturas (soja, milho, algodão herbáceo e trigo) produziram, aproximadamente, 60 020 toneladas em uma área colhida de 26 374 hectares, com destaque para a produção de soja, que responde por 48,06% daquele volume e 64,30% da área. O milho vem em segundo lugar, participando com 41,67% da produção e 25 012 toneladas, colhidas em uma área de 6 210 hectares. Também conta com algumas indústrias que contribuem para a economia do município, a maior indústria que fornece geração de emprego é a Bello Alimentos, fornecendo mais de 500 empregos diretos e indiretos.
+Os destaques no comércios ficam por conta das maiores lojas de móveis entre elas Requinte Móveis, Eletromóveis e Gazin.
+
+== Educação ==
+A cidade conta com três escolas que são gerenciadas pelo Governo do Mato Grosso do Sul:
+
+''E.E José Juarez Ribeiro de Oliveira ''
+
+''E.E Manoel Guilherme dos Santos ''
+
+''E.E Leopoldo Dalmolin''
+
+Possui também duas escolas municipais, cuja Escola Municipal Jardim Primavera situa-se dentro da cidade, já a Escola Municipal Santa Rosa situa-se em um assentamento próximo a cidade, e conta também com três creches e uma pré-escola.
+
+Conta com uma universidade privada de ensino à distância. (Anhanguera)
+
+== Transportes ==
+O município não possui transporte público. A cidade é fornecida pela Rodoviária Municipal de Itaquiraí. A BR-163 corta a cidade passando pela Av. Industrial.
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Itaquiraí
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.itaquirai.ms.gov.br/ Página da prefeitura]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1980]]
+[[Categoria:Topônimos de origem tupi em Mato Grosso do Sul]]

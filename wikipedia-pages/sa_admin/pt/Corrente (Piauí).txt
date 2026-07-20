@@ -1,0 +1,135 @@
+{{Info/Município do Brasil
+<!-- GeoID=2202901 -->
+<!-- Cabeçalho -->
+| nome                 = Corrente
+| foto                 = 
+| leg_foto             = 
+| apelido              = Capital da pecuária
+<!-- Dados gerais -->
+| brasão               = Bra-corrente.jpg
+| bandeira             = Bandeira de Corrente PI.jpg
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = s:Hino do município de Corrente
+| aniversário          = 8 de dezembro
+| fundação             = 1754
+| emancipação          ={{nowrap|{{dtlink|8|12|1873|idade}}}}
+| gentílico            =correntense ou correntino
+| lema                 = 
+| CEP                  = 64.980-000<ref name="Correios">{{Citar web|url= http://www.correios.com.br/|titulo=CEP de cidades brasileiras|publicado=[[Empresa Brasileira de Correios e Telégrafos|Correios]]|acessodata=31 de Julho de 2008}}</ref>
+| padroeiro            = [[Nossa Senhora da Conceição Aparecida|Nossa Senhora da Conceição]]
+| prefeito             = Filemon José Francisco de Souza Nogueira Paranaguá
+| partido              = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Piaui Municip Corrente.svg
+| latP                 = S | latG = 10 | latM = 26 | latS = 34
+| lonP                 = O | lonG = 45 | lonM = 09 | lonS = 43
+| estado               = Piauí
+| mesorregião          = [[Mesorregião do Sudoeste Piauiense|Sudoeste Piauiense]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião das Chapadas do Extremo Sul Piauiense|Chapadas do Extremo Sul Piauiense]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Riacho Frio]], [[São Gonçalo do Gurguéia]], [[Parnaguá]], [[Sebastião Barros]], [[Cristalândia do Piauí]], [[Formosa do Rio Preto]] ([[Bahia]])
+| dist_capital         = 864
+<!-- Características geográficas -->
+| área                 = 3051.161
+| área_pos             = [[Lista de municípios do Brasil por área|BR: 506º]] 
+| área_ref             = <ref name="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:1.46}}
+| área_urbana_ref      = est. [[Embrapa]]<ref name="Embrapa_Área_Urbana">{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Corrente
+| população            = 26771 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios do Piauí por população|PI: 20º]]
+| data_pop             = est. IBGE/2021<ref name="IBGE_POP">{{Citar web |ultimo=IBGE |primeiro=IBGE |url=https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2021/estimativa_dou_2021.pdf |título=Estimativas da população residente no Brasil e Unidades da Federação com data de referência em 1º de julho de 2021 |data=27 de agosto de 2021 |acessodata= 28 de agosto de 2021 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)}}</ref>
+| densidade            = 8.55<!--favor manter o formato-->
+| altitude             = 438
+| altitude_ref         = <ref name="Geografia">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/pi.html|título=Piauí|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| bioma                =Cerrado
+| clima                = [[Tropical]]<ref name="Geografia"/><ref name="Clima">{{citar web|url=http://pt.climate-data.org/|título=Clima:Corrente|data=|publicado=climate-data.org|acessodata=17 de janeiro de 2016}}</ref>
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.642 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web|url=http://www.atlasbrasil.org.br/perfil/municipio/220290|titulo=Corrente, PI|acessodata=2024-12-26|website=Atlas do Desenvolvimento Humano no Brasil|publicado=Programa das Nações Unidas para o Desenvolvimento|wayb=20241226154028}}</ref>
+| idh_pos              = BR: 3254° 
+| gini                 = {{Formatnum:0.60}}
+| gini_pos             =  
+| data_gini            = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010"/>
+| pib                  = {{formatnum:203085676.20}}
+| data_pib             = [[IBGE]]/[[2013]]<ref name="IBGE_PIB">{{citar web |url= http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2010_2013/default.shtm|titulo=Produto Interno Bruto dos municípios 2010-2013|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=18 de dezembro de 2015}}</ref>
+| pib_pos              = [[Lista de municípios do Piauí por PIB|PI: 20º]] 
+| pib_per_capita       = 7832.98
+| data_pib_per_capita  = [[IBGE]]/[[2013]]<ref name="IBGE_PIB"/>
+<!-- Página oficial -->
+| site_prefeitura      = [http://corrente.pi.gov.br/ corrente.pi.gov.br]
+| site_câmara          = [http://corrente.pi.leg.br/ corrente.pi.leg.br]
+}}
+'''Corrente''' é um [[Município (Brasil)|município brasileiro]] localizado na extremidade meridional do [[estados do Brasil|estado]] do [[Piauí]]. A cidade é um dos principais centros regionais do [[Microrregião das Chapadas do Extremo Sul Piauiense|sul do Piauí]] e fica próxima da divisa com o estado da [[Bahia]], a poucos quilômetros da cidade de [[Formosa do Rio Preto]] (BA).
+
+== Geografia ==
+Localiza-se à [[latitude]] de -10°43282 e à [[longitude]] de -45°14922, estando a uma [[altitude]] de 438 metros. Possui uma área de 3045,9&nbsp;km<sup>2</sup>.
+
+Possui campos de pastagens e é banhado pelos rios Corrente e [[Rio Paraim|Paraim]], além de vários riachos e riachões. É também porta de entrada para as nascentes do [[Rio Parnaíba]]. Alguns dos seus interiores são os rios Simplicío, Calumbí, Santa Marta, Vereda da Porta, Morro Redondo, entre outros.
+
+== Demografia ==
+{{Crescimento populacional do Censo do Brasil
+| 1970 = 14397
+| 1980 = 21539
+| 1991 = 24964
+| 2000 = 23226
+| 2010 = 25407
+| 2022 = 27278
+| estimado =
+| ano_est  =
+| ref_est  =
+| rodape   = Fonte: [[Instituto Brasileiro de Geografia e Estatística|Instituto Brasileiro de<br>Geografia e Estatística]] (IBGE)<ref>{{citar web|url=https://sidra.ibge.gov.br/Tabela/200|titulo=Tabela 200 - População residente, por sexo, situação e grupos de idade - Amostra - Características Gerais da População|data=2010|acessodata=2024-12-20|website=Sistema IBGE de Recuperação Automática (SIDRA)|publicado=Instituto Brasileiro de Geografia e Estatística}}</ref><ref name="IBGE_Pop_2022">{{citar web|url=https://sidra.ibge.gov.br/Tabela/9514|titulo=Tabela 9514 - População residente, por sexo, idade e forma de declaração da idade|data=2022|acessodata=2024-12-20|website=Sistema IBGE de Recuperação Automática (SIDRA)|publicado=Instituto Brasileiro de Geografia e Estatística}}</ref>
+}}
+Em 2022, a população do município foi contada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) em {{fmtn|27278}} habitantes.<ref name="IBGE_Pop_2022"/> Segundo o [[censo demográfico|censo]] daquele ano, {{fmtn|13787}} habitantes eram homens e {{fmtn|13491}} habitantes mulheres.<ref name="IBGE_Pop_2022"/> Ainda segundo o mesmo censo, {{fmtn|17380}} habitantes viviam na [[zona urbana]] e {{fmtn|9898}} na [[zona rural]].<ref>{{citar web|url=https://sidra.ibge.gov.br/Tabela/9923|titulo=Tabela 9923 - População residente, por situação do domicílio|data=2022|acessodata=2024-12-20|website=Sistema IBGE de Recuperação Automática (SIDRA)|publicado=Instituto Brasileiro de Geografia e Estatística}}</ref> Da população total de 2010, {{fmtn|7753}} habitantes (30,52%) tinham menos de 15 anos de idade, {{fmtn|15957}} habitantes (62,81%) tinham de 15 a 64 anos e {{fmtn|1697}} pessoas (6,68%) possuíam mais de 65 anos, sendo a [[esperança de vida]] ao nascer de 72,31 anos.<ref name="PNUD_IDH_2010"/>
+
+O [[Índice de Desenvolvimento Humano Municipal]] (IDHM) de Corrente é considerado médio pelo [[Programa das Nações Unidas para o Desenvolvimento]] (PNUD), sendo que seu valor é de 0,642 (o 11º maior do Piauí). Considerando-se apenas o índice de educação o valor é de 0,540, o valor do índice de longevidade é de 0,789 e o de renda é de 0,620.<ref name="PNUD_IDH_2010"/> Em 2010, 40,16% da população estava abaixo da [[linha de pobreza]] e o [[coeficiente de Gini]], que mede a [[desigualdade econômica|desigualdade social]], era de 0,60, sendo que 1,00 é o pior número e 0,00 é o melhor.<ref name="PNUD_IDH_2010"/>
+
+=== Religião ===
+{| class="wikitable"
+|+
+!Religião<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/pi/corrente/pesquisa/23/22107?detalhes=true|obra=cidades.ibge.gov.br|acessodata=2019-04-26}}</ref>
+!%
+|-
+|Catolicismo
+|75,6
+|-
+|Protestantismo
+|18,6
+|-
+|Outras
+|1,7
+|-
+|Sem religião
+|4,1
+|}
+
+== Política ==
+A administração municipal se dá pelos Poderes [[Poder Executivo|Executivo]] e [[Poder Legislativo|Legislativo]].<ref>{{citar web|ultimo=M. Lima|primeiro=Flávio Henrique|url=http://jusvi.com/artigos/20074|titulo=O Poder Público Municipal à frente da obrigação constitucional de criação do sistema de controle interno|data=8 de fevereiro de 2006|acessodata=22 de fevereiro de 2015|website=Revista Jus Vigilantibus|arquivourl=https://webcitation.org/64iovlywZ|arquivodata=16 de janeiro de 2012|urlmorta=sim}}</ref> O representante do Poder Executivo de Corrente eleito nas [[Eleições municipais no Brasil em 2024|eleições municipais em 2024]] foi Filemon Paranaguá, do [[Partido Social Democrático (2011)|Partido Social Democrático]] (PSD), que conquistou um total de {{fmtn|11658}} votos (68,86% dos votos válidos),<ref name="prefeito">{{citar web|url=https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleicao-resultados/resultado-da-elei%C3%A7%C3%A3o|titulo=Resultados de eleição - Votação nominal|data=6 de outubro de 2024|acessodata=20 de dezembro de 2024|publicado=Tribunal Superior Eleitoral}}</ref> tendo João Vitor Azevedo como [[vice-prefeito]].
+
+O Poder Legislativo, por sua vez, é constituído pela [[Câmara municipal (Brasil)|câmara]], composta por 11 [[vereador]]es eleitos para mandatos de quatro anos (em observância ao disposto no artigo 29 da [[Constituição brasileira de 1988|Constituição]]<ref>{{citar periódico |url=https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#art29 |título=Constituição da República Federativa do Brasil de 1988 |acessodata=20 de dezembro de 2024 |publicado=Diário Oficial da União}}</ref>). Cabe à casa elaborar e votar leis fundamentais à administração e ao Executivo, especialmente o orçamento participativo ([[Lei de Diretrizes Orçamentárias]]).
+
+== Infraestrutura ==
+=== Aeroporto ===
+{{AP|Aeroporto de Corrente}}
+
+== Ver também ==
+* [[Lista de municípios do Piauí]]
+* [[:Categoria:Naturais de Corrente (Piauí)|Naturais de Corrente (Piauí)]]
+
+{{Referências}}
+
+== Ligações externas ==
+*[https://www.corrente.pi.leg.br/ Câmara Municipal de Corrente]
+
+{{Esboço-municípiosbr/Piauí}}
+{{Subdivisões do Piauí}}
+{{Municípios do Piauí}}
+{{Chapada das Mangabeiras (Piauí)}}
+{{Portal3|Piauí}}
+[[Categoria:Corrente (Piauí)| ]]
+[[Categoria:Fundações no Piauí em 1872]]

@@ -1,0 +1,458 @@
+{{Info/Município do Brasil
+<!-- GeoID=3518800 -->
+<!-- Cabeçalho -->| nome = Guarulhos
+| apelido = <!-- Dados gerais -->
+| imagem_montagem = {{Imagem múltipla
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 300
+ |caption_align = center
+ | image1   = Vista da cidade de Guarulhos (SP).JPG
+ | caption1 = Vista do centro da cidade a partir do bairro de Várzea do Palácio 
+ | image2   = Lago_do_Bosque_Maia,_Guarulhos_(SP).jpg
+ | caption2 = [[Bosque Maia]]
+ | image3   = File_by_Peteris_P1170678_(3667731614).jpg
+ | caption3 = Monumento dos 100 Anos da Imigração Japonesa
+ | image4   = Museu Histórico Municipal de Guarulhos.jpg
+ | caption4 = [[Museu Histórico Municipal de Guarulhos|Museu Histórico]]
+ | image5   = 2021_-_Lago_dos_Patos_1.jpg
+ | caption5 = [[Lago de Vila Galvão]]
+ | image6   = Sao paulo airport terminal 3.jpg
+ | caption6 = [[Aeroporto Internacional de Guarulhos]]  
+ | image7   = Beco_do_Robin_6.jpg
+ | caption7 = [[Beco do Robin]]  
+ | color    = white
+}}
+| brasão = Brasão de Guarulhos.png
+| bandeira = Bandeira de Guarulhos.svg
+| link_brasão = Brasão de Guarulhos
+| link_bandeira = 
+| link_hino = Hino de Guarulhos
+| fundação = {{nowrap|{{dtlink|8|12|1560|idade}}}}
+| emancipação = {{dtlink|24|3|1880|idade}}
+| distritos = 2 distritos e 46 bairros administrativos
+| gentílico = guarulhense
+| lema = ''Vere pavlistarvm sangvis mevs'' <br> ''<small>"O meu sangue é genuinamente paulista"</small>''
+| padroeiro = [[Nossa Senhora da Conceição]]
+| prefeito = Lucas Sanches
+| partido = [[Partido Liberal (2006)|PL]]
+| mandato_início = 2025
+| mandato_fim = 2028
+| mapa = SaoPaulo Municip Guarulhos.svg
+| latP = S
+| latG = 23
+| latM = 27
+| latS = 46
+| lonP = O
+| lonG = 46
+| lonM = 31
+| lonS = 58
+| estado = São Paulo
+| região_intermediária = São Paulo
+| data_região_intermediária = [[IBGE]]/2017<ref name= Recorte>{{citar web |url=https://ia601502.us.archive.org/27/items/RegiesGeogrrficasBrasil2017/Regi%C3%B5es%20geogr%C3%A1ficas_Brasil%202017.pdf |titulo= O recorte das Regiões Geográficas Imediatas e Intermediárias de 2017 |data=2017 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |página= 20–34|acessodata=10 de agosto de 2017}}</ref>
+| região_imediata = São Paulo
+| data_região_imediata = IBGE/2017
+| região_metropolitana = [[Região Metropolitana de São Paulo|São Paulo]]
+| vizinhos = ''6''<br> '''Norte''': [[Mairiporã]] e [[Nazaré Paulista]];<br> '''Nordeste''': [[Santa Isabel (São Paulo)|Santa Isabel]];<br> '''Leste''': [[Arujá]] e [[Itaquaquecetuba]]<br> '''Sul e Sudoeste e Oeste''': [[São Paulo]]
+| dist_capital = 14,35
+| dist_capital_ref = <ref>{{Citar web|url=http://pt.distance.to/São-Paulo/Guarulhos|título=Distância São Paulo-Guarulhos|publicado=Distance.to|acessodata=1 de fevereiro de 2017}}</ref>
+<!-- Características geográficas -->| área = 318.675
+| área_pos = [[Lista dos municípios de São Paulo por área|SP: 282º]]
+| área_ref = IBGE/2022<ref name="IBGE_Área_2022">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/sp/guarulhos.html|título=Cidades e Estados|publicado=IBGE|acessodata=28 de junho de 2023}}</ref>
+| população = 1291784
+| população_pos = [[Lista de municípios de São Paulo por população|SP: 2.º]]
+[[Lista de municípios do Brasil por população (2022)|BR: 13.º]]
+| data_pop = Censo IBGE/2022<ref name="IBGE">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/sp/guarulhos.html|título=Cidades e Estados|publicado=IBGE|data=28 de junho de 2023|acessodata = 28 de junho de 2023}}</ref>
+| altitude = 759
+| clima = [[tropical de altitude]]
+| sigla_clima = Cwa
+<!-- Indicadores -->| CEP = 07000-000 até 07299-999
+| idh = 0.763 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de São Paulo por IDH|SP: 145°]]
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf  |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de julho de 2013}}</ref>
+| pib = {{fmtn|77376467|mil}}
+| pib_pos = [[Lista de municípios do Brasil por PIB|BR: 10.º]]
+| data_pib = IBGE/2021<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3518800 |titulo=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=1 de junho de 2024}}</ref>
+| pib_per_capita = 55084.22
+| data_pib_per_capita = IBGE/2021<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.guarulhos.sp.gov.br/ guarulhos.sp.gov.br]
+| site_câmara = [https://www.guarulhos.sp.leg.br guarulhos.sp.leg.br]
+| mesorregião = Mesorregião Metropolitana de São Paulo
+}}
+'''Guarulhos''' é um [[Unidades federativas do Brasil|município]] da [[Região Metropolitana de São Paulo]], no [[São Paulo (estado)|estado de São Paulo]], no [[Brasil]]. É a [[Lista de municípios de São Paulo por população|segunda cidade mais populosa]] do estado, a [[Lista de municípios do Brasil por população (2022)|13.ª mais populosa]] do país e a [[Lista das cidades mais populosas da América|53.ª mais populosa]] do [[América|continente americano]], com 1 291 784 habitantes, de acordo com o Censo 2022 do [[IBGE]].<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/sp/guarulhos.html|titulo=Guarulhos (SP) {{!}} Cidades e Estados {{!}} IBGE|acessodata=2023-06-29|website=www.ibge.gov.br}}</ref>
+
+Guarulhos foi fundada em 8 de dezembro de 1560, pelo padre [[jesuíta]] [[Manuel de Paiva]], com a denominação de Nossa Senhora da Conceição de Guarulhos. Sua origem está ligada à de cinco outros povoamentos que tinham, como principal objetivo, defender o povoado de [[São Paulo dos Campos de Piratininga]] contra um possível ataque dos [[Tamoios]].
+
+É a cidade não [[Lista de capitais do Brasil|capital]] mais populosa do Brasil e é considerada a [[Lista de municípios do Brasil por PIB|10.ª cidade mais rica do país]]. Em 2020, registrou um [[Produto Interno Bruto]] (PIB) de 77,3 bilhões de reais, o que representa 0,9% de todo PIB nacional,<ref>{{citar web|url=https://biblioteca.ibge.gov.br/visualizacao/livros/liv101990_informativo.pdf|titulo=Produto Interno Bruto dos Municípios 2020|acessodata=15 de fevereiro de 2023|website=[[Instituto Brasileiro de Geografia e Estatística]]}}</ref> além de deter o 3.º [[Lista de municípios de São Paulo por PIB|maior PIB de seu estado]].
+
+Guarulhos sedia o principal aeroporto do país, que serve [[São Paulo]], o [[Aeroporto Internacional de São Paulo-Guarulhos]].
+
+== Etimologia ==
+Segundo [[José de Alcântara Machado de Oliveira]], o nome da cidade decorre da denominação dos [[Povos indígenas do Brasil|indígenas]] que habitavam a região, os guaramomis ou maramomis, que eram um ramo dos [[guaianás]]. O nome do [[Missões jesuíticas na América|aldeamento indígena]] fundado em 1595 que deu origem à cidade era "Conceição dos Guarulhos", em referência a [[Nossa Senhora da Conceição]].<ref>{{Citar livro|url=https://books.google.com.br/books?id=kapMMc9HbN4C&pg=PA128&lpg=PA128&dq=etimologia+guarulhos&source=bl&ots=uf7GfiC-Wo&sig=rJU434mobbB-bff_7VMcjtBlmQk&hl=pt-BR&sa=X&redir_esc=y#v=onepage&q=etimologia%20guarulhos&f=false|titulo=A dinâmica dos nomes na Cidade de São Paulo, 1554-1897|ultimo=Dick|primeiro=Maria Vicentina de Paula do Amaral|data=1992-01-01|editora=Annablume|isbn=9788585596675}}</ref>
+
+== História ==
+{{artigo principal|História de Guarulhos}}
+
+=== Colonização e emancipação ===
+No dia 8 de dezembro de 1560, o jesuíta [[Manuel de Paiva]] fundou, nas margens do [[Rio Tietê]], o Aldeamento de Nossa Senhora da Conceição dos Guarulhos, que dará origem à cidade de Guarulhos. O povoado foi fundado para a catequese dos [[Povos indígenas do Brasil|indígenas]] guaramomis ou guarus, da tribo dos [[Guaianás|guaianases]], - daí o nome - e para a defesa da vila de [[São Paulo dos Campos de Piratininga|São Paulo de Piratininga]] contra um possível ataque dos [[tamoios]].<ref name=":1">{{citar web|ultimo=|primeiro=|url=https://www.guarulhos.sp.gov.br/historia|titulo=História de Guarulhos|data=|acessodata=6/11/2020|publicado=Prefeitura Municipal de Guarulhos}}</ref><ref name=":2">{{Citar web|ultimo=|primeiro=|url=https://guarulhosweb.com.br/noticia/82452|titulo=HISTÓRIA - Conheça um pouco da origem de Guarulhos|data=|acessodata=2020-11-06|website=GuarulhosWeb|publicado=|lingua=pt-br}}</ref>
+
+No final do século XVI e no século XVII, houve a mineração de [[ouro]] no atual norte de Guarulhos, após a descoberta de minas de ouro na região onde atualmente é o bairro de [[Lavras (Guarulhos)|Lavras]], em 1590, por [[Afonso Sardinha (o Moço)|Afonso Sardinha]]. A mineração usava a mão-de-obra de índios escravizados e trouxe crescimento ao aldeamento.<ref name=":2" /><ref name=":3">{{citar periódico |url=https://jornal.usp.br/ciencias/ciencias-humanas/historia-da-mineracao-de-ouro-em-guarulhos-e-resgatada-em-pesquisa/#:~:text=Hist%C3%B3ria%20da%20minera%C3%A7%C3%A3o%20de%20ouro%20em%20Guarulhos%20%C3%A9%20resgatada%20em%20pesquisa,-Entre%20os%20s%C3%A9culos&text=Entre%20os%20s%C3%A9culos%20XVI%20e%20XVII%2C%20antes%20que%20se%20iniciasse,de%20produ%C3%A7%C3%A3o%20aur%C3%ADfera%20do%20Pa%C3%ADs. |titulo=História da mineração de ouro em Guarulhos é resgatada em pesquisa |data=20/06/2016 |acessodata=6/11/2020 |jornal=Jornal da USP |publicado= |ultimo=ARANTES |primeiro=José Tadeu}}</ref>
+
+Em 1600, Nossa Senhora da Conceição dos Guarulhos foi elevada à condição de freguesia, subordinada à vila de São Paulo de Piratininga.<ref name=":4">{{Citar web|url=https://cidades.ibge.gov.br/brasil/sp/guarulhos/historico|titulo=Guarulhos (SP) - histórico|acessodata=2024-04-23|website=IBGE Cidades}}</ref>
+
+Com o declínio da mineração do ouro, a região de Guarulhos passou a ser ocupada por pequenas fazendas, onde criavam-se [[gado bovino]] e [[cavalo]]s e plantava-se [[Algodoeiro|algodão]], [[trigo]] e [[cana-de-açúcar]], utilizando-se inicialmente a mão de obra escrava indígena e depois da mão de obra escrava negra, principalmente de origem sudanesa. No entanto, a agricultura sofreu com o clima úmido e frio, que acarretou em doenças nas plantas. As fazendas também sofriam com outros problemas, como [[enchentes]] e arraste de pontes na época úmida.<ref name=":1" /><ref name=":2" /><ref name=":3" />
+
+Já no século XIX, veio a produção de tijolos ao longo das várzeas dos rios [[Rio Tietê|Tietê]], [[Rio Cabuçu de Cima|Cabuçu de Cima]] e [[Rio Baquirivu-Guaçu|Baquirivu-Guaçu]], surgindo centenas de olarias na cidade. Com a introdução do tijolo como material de construção na cidade de [[São Paulo]], em substituição à taipa de pilão, as olarias guarulhenses passaram a fornecer esse material para a capital. Algumas das principais ruas do que é hoje o centro de Guarulhos eram, no passado, ocupadas por olarias.<ref name=":2" /><ref name=":3" />
+
+A Lei Provincial nº 34, de 24 de março de 1880, elevou Conceição dos Guarulhos à categoria de vila, desmembrando-se de São Paulo. A vila teve seu nome simplificado para Guarulhos por meio da Lei Estadual nº 1.021, de 6 de novembro de 1906, e logo em seguida foi elevada à categoria de cidade, por meio da Lei Estadual nº 1.038, de 19 de dezembro do mesmo ano.<ref name=":4" />
+
+=== Século XX ===
+O início do século XX foi marcado pela chegada da ferrovia e da energia elétrica (''Light & Power''), pelos pedidos para instalação da rede telefônica, licenças para implantação de indústrias, de atividades comerciais e pelos serviços de transporte de passageiros.<ref name=":1" /><ref name=":2" />
+
+Em 1915 Guarulhos recebeu o Ramal Guapira - Guarulhos, do [[Tramway da Cantareira]], possibilitando o escoamento de madeira, pedra e tijolos, fabricados em diversas olarias da região e amplamente utilizados na construção civil na capital. A cidade ganhou cinco estações: Vila Galvão, Torres Tibagy, Gopoúva, Vila Augusta e Guarulhos, além do prolongamento até a Base Aérea, em Cumbica.<ref name=":1" /><ref name=":2" />
+
+A década de 1930 foi marcada pelos atos de [[Intervenção Federal]], Constituição da Junta Governativa de Guarulhos e pelo [[Movimento Constitucionalista]], como reflexos da [[Revolução de 1930]].<ref name=":2" />
+
+Em 1940, foi inaugurada a Biblioteca Pública Municipal. Em 1941, o primeiro Centro de Saúde da cidade. Dez anos após, inaugurou-se a Santa Casa de Misericórdia de Guarulhos. Em 1945, a [[Base Aérea de São Paulo]] (BASP) foi transferida do [[Aeroporto Campo de Marte|Campo de Marte, em São Paulo]], para o bairro de [[Cumbica]].<ref name=":1" />
+
+Na década de 1950, chegaram, ao município indústrias dos setores elétrico, metalúrgico, plástico, alimentício, além das de borracha, calçados, peças para automóveis, relógios e couros. Nesta década, a inauguração das Rodovias [[Rodovia Presidente Dutra|Presidente Dutra]] e [[Rodovia Fernão Dias|Fernão Dias]] aproximou pessoas e mercadorias da cidade. Guarulhos se viu unida a São Paulo, no momento histórico de aceleração industrial, e ao [[Rio de Janeiro]], então capital federal e centro de decisões políticas e econômicas, gerando, portanto, um impulso para instalação de indústrias nos trechos das rodovias que passam pelo município. Nos seus 'anos dourados', Guarulhos também ganhou um [[Rotary Club]] e realizou a 1° Feira da Indústria e Comércio da cidade, no [[Parque Ibirapuera]], em São Paulo.<ref name=":1" />
+
+A fase dos anos 1960 e 1970 foi marcada pela estruturação de atividades industriais, que em grande medida pautaram os caminhos da&nbsp;migração para [[São Paulo (estado)|São Paulo]]. Em 1963 foi fundada a Associação Comercial e Industrial de Guarulhos, hoje, Associação Comercial e Empresarial de Guarulhos (ACE).<ref name=":1" />
+
+Em 20 de janeiro de 1985, foi inaugurado o Aeroporto Internacional de São Paulo, que em 2001 recebeu o nome oficial de [[Aeroporto Internacional de São Paulo-Guarulhos|Aeroporto Internacional de São Paulo/Guarulhos - Governador André Franco Montoro]]. Em 2012 foi concedido à iniciativa privada, quando recebeu a marca ''GRU Airport – Aeroporto Internacional de São Paulo''.<ref name=":1" /><ref name=":2" /><ref name="GA">[https://www.gru.com.br/pt/institucional/sobre-gru-airport/historico GRU Airport]</ref>
+
+== Geografia ==
+[[Ficheiro:SerraCantareira.jpg|thumb|esquerda|Vista da [[Serra da Cantareira]] da torre de controle de [[Cumbica]].]]
+
+Localizado na porção nordeste da [[Região Metropolitana de São Paulo]] (RMSP), Guarulhos é um dos 39 municípios que compõem essa região. Sua área total abrange 341 km², dos quais 197 km² (58%) correspondem a zonas urbanizadas e 144 quilômetros quadrados (42%) destinam-se a usos rurais. Faz fronteira a oeste com a [[capital paulista]], tendo o [[Rio Cabuçu de Cima]] como limite natural, e ao sul com o [[Rio Tietê]]. No entorno, limita-se ainda com [[Itaquaquecetuba]], a sudeste; [[Arujá]], a leste; [[Santa Isabel (São Paulo)|Santa Isabel]], a nordeste; [[Nazaré Paulista]], ao norte; e [[Mairiporã]], a noroeste.<ref name="Geografia">{{citar web |url=https://revistas.ung.br/index.php/educacao/article/download/342/427/1210|titulo=ANÁLISE GEOMORFOLÓGICA DO MUNICÍPIO DE GUARULHOS COM BASE EM CONSTRUÇÃO DE MAQUETE|autor=Dênia Aparecida Soares da Silva; Sandra Emi Sato (orientadora); Antonio Manoel dos Santos Oliveira (co-orientador) |editor=Laboratório de Geoprocessamento da Universidade de Guarulhos|website=Revista Educação|acessodata=15 de agosto de 2025}}</ref>
+
+O relevo insere-se no domínio do [[Planalto Atlântico]], caracterizado por várzeas, planícies aluviais, colinas, morros e serras. O ponto mais elevado do município atinge 1.422 metros de altitude, no Espigão da [[Serra do Itaberaba]], conhecido como Pico do Gil. Já o ponto mais baixo, com 660 metros, está localizado na foz do [[Rio Jaguari (Vale do Paraíba)|Ribeirão Jaguari]], na divisa com Santa Isabel e Arujá.<ref name="Geografia"/>
+{{panorama|Mirante continental (cropped).jpg|1400px|[[Panorama]] da cidade de Guarulhos}}
+
+=== Parques e áreas verdes ===
+[[Imagem:Parque_Estadual_do_Cabuçu_que_conta_com_trilhas_diversas_para_todos_os_públicos._(52786228044).jpg|thumb|[[Parque Estadual Cantareira]] (Núcleo Cabuçu)]]
+[[Imagem:BOSQUE MAIA EM GUARULHOS-SP - panoramio.jpg|thumb|[[Bosque Maia]].]]
+
+Existem atualmente em Guarulhos vários polos de fauna e flora, dentre os quais merecem maior destaque: [[Parque Estadual Cantareira]] (Núcleo Cabuçu), também conhecido por Reserva Estadual da Cantareira, que conta com aproximadamente 2 550 [[hectare]]s; o [[Bosque Maia]], localizado no bairro [[Maia (distrito de Guarulhos)#Subdivisões de Bairros|Jardim Maia]]), é o maior parque urbano de Guarulhos; [[Parque Júlio Fracalanza]], localizado no bairro da [[Vila Augusta (distrito de Guarulhos)|Vila Augusta]], é um importante parque de vizinhança da região e possui a Cidade Mirim, onde crianças aprendem com monitores especializados as regras e sinais de trânsito e aprendem a praticar a cidadania.
+
+O Lago dos Patos ou [[Lago de Vila Galvão]], localizado no bairro da [[Vila Galvão]], o espaço possui 20 mil metros quadrados de água doce e área verde. O Parque Chico Mendes, localizado no bairro Vila Isabel no bairro [[Pimentas]], é a única área verde de importância da região. O espaço também abriga um Centro de Educação Ambiental, sanitários, quadra de esportes, campo de futebol, pista de skate, parquinho, mesas e bancos, quiosques, trilhas na mata e espaço para fabricação de adubo orgânico.<ref>{{citar web |url=https://turismo.guarulhos.sp.gov.br/content/lago-dos-patos|titulo=Lago dos Patos|editor=Prefeitura de Guarulhos|acessodata=15 de agosto de 2025}}</ref>
+
+=== Clima ===
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período entre de 1983 a 2014, a menor [[temperatura]] registrada em Guarulhos foi de {{fmtn|1.6|°C}} em junho de 1994, nos dias 26 e 27, e a maior atingiu {{fmtn|37.5|°C}} em 15 de outubro de 2014. O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas foi de {{Fmtn|140|mm}} em 16 de janeiro de 1991. Outros grandes acumulados foram {{Fmtn|131|mm}} em 1° de fevereiro de 1995, {{Fmtn|127.5|mm}} em 17 de dezembro de 2000, {{Fmtn|121.4|mm}} em 11 de fevereiro de 1999, {{Fmtn|112.2|mm}} em 26 de janeiro de 1987, {{Fmtn|109.4|mm}} em 25 de maio de 2005, {{Fmtn|108.9|mm}} em 1° de março de 2011, {{Fmtn|101.7|mm}} em 29 de dezembro de 1995, {{Fmtn|101.6|mm}} em 9 de setembro de 2009 e {{Fmtn|101.4|mm}} em 11 de janeiro de 2011.<ref name="bdmep.inmet.gov.br"/> O clima é do tipo ''Cwa'' ([[Tropical de Altitude|tropical de altitude]] com inverno seco), de acordo com Köppen.<ref>{{Citar web|url=http://koeppen-geiger.vu-wien.ac.at/present.htm|titulo=World Maps of Köppen-Geiger climate classification|acessodata=2017-02-01|obra=koeppen-geiger.vu-wien.ac.at}}</ref>
+{{Tabela climática
+|localidade  = Guarulhos
+|larguraporcentagem  =  100
+
+|Jan_REC_Max_°C = 36.4 |Jan_REC_Min_°C = 13.3
+|Fev_REC_Max_°C = 36.5 |Fev_REC_Min_°C =   14
+|Mar_REC_Max_°C =  35  |Mar_REC_Min_°C = 11.7
+|Abr_REC_Max_°C =  33  |Abr_REC_Min_°C =  7.4
+|Mai_REC_Max_°C = 31.6 |Mai_REC_Min_°C =    5
+|Jun_REC_Max_°C = 31.2 |Jun_REC_Min_°C =  1.6
+|Jul_REC_Max_°C = 30.8 |Jul_REC_Min_°C =  2.4
+|Ago_REC_Max_°C = 33.6 |Ago_REC_Min_°C =  2.8
+|Set_REC_Max_°C = 35.9 |Set_REC_Min_°C =  3.8
+|Out_REC_Max_°C = 37.5 |Out_REC_Min_°C =  8.5
+|Nov_REC_Max_°C =  36  |Nov_REC_Min_°C = 10.5
+|Dez_REC_Max_°C =  36  |Dez_REC_Min_°C = 12.5
+|Max_Rec_Ano_°C = 37.5 |Min_Rec_Ano_°C =  1.6
+
+|Jan_Max_°C = 29.2 |Jan_Med_comp_°C = 23.4 |Jan_Min_°C = 19.1
+|Fev_Max_°C = 29.4 |Fev_Med_comp_°C = 23.5 |Fev_Min_°C = 19.2
+|Mar_Max_°C = 28.5 |Mar_Med_comp_°C = 22.8 |Mar_Min_°C = 18.6
+|Abr_Max_°C = 26.9 |Abr_Med_comp_°C = 21.3 |Abr_Min_°C = 17.1
+|Mai_Max_°C = 23.9 |Mai_Med_comp_°C = 18.5 |Mai_Min_°C = 14.3
+|Jun_Max_°C =  23  |Jun_Med_comp_°C = 17.1 |Jun_Min_°C = 12.5
+|Jul_Max_°C = 22.8 |Jul_Med_comp_°C = 16.6 |Jul_Min_°C =  12
+|Ago_Max_°C = 24.5 |Ago_Med_comp_°C = 17.8 |Ago_Min_°C = 12.7
+|Set_Max_°C = 24.8 |Set_Med_comp_°C = 18.8 |Set_Min_°C = 14.1
+|Out_Max_°C = 26.6 |Out_Med_comp_°C = 20.4 |Out_Min_°C = 15.8
+|Nov_Max_°C = 27.6 |Nov_Med_comp_°C = 21.5 |Nov_Min_°C = 16.9
+|Dez_Max_°C = 28.4 |Dez_Med_comp_°C = 22.5 |Dez_Min_°C = 18.1
+|Max_Ano_°C = 26.3 |Med_comp_Ano_°C = 20.4 |Min_Ano_°C = 15.9
+
+|Jan_Precip_mm =  269.1 |Jan_dprecip = 16
+|Fev_Precip_mm =  224.9 |Fev_dprecip = 14
+|Mar_Precip_mm =  203.9 |Mar_dprecip = 14
+|Abr_Precip_mm =   86.6 |Abr_dprecip = 7
+|Mai_Precip_mm =   79   |Mai_dprecip = 7
+|Jun_Precip_mm =   41.7 |Jun_dprecip = 4
+|Jul_Precip_mm =   48.5 |Jul_dprecip = 4
+|Ago_Precip_mm =   32.1 |Ago_dprecip = 3
+|Set_Precip_mm =   88.9 |Set_dprecip = 7
+|Out_Precip_mm =  122.5 |Out_dprecip = 9
+|Nov_Precip_mm =  134.8 |Nov_dprecip = 10
+|Dez_Precip_mm =  226.8 |Dez_dprecip = 15
+|Ano_Precip_mm = 1558.8 |Ano_dprecip = 110 |Precip_Min  =  ≥ 1 mm
+
+|Jan_hsol = 141.1
+|Fev_hsol = 136.6
+|Mar_hsol = 156.1
+|Abr_hsol = 162.1
+|Mai_hsol = 157.5
+|Jun_hsol = 155.2
+|Jul_hsol =  162
+|Ago_hsol = 169.9
+|Set_hsol = 127.2
+|Out_hsol = 138.2
+|Nov_hsol = 145.2
+|Dez_hsol = 139.5
+|Ano_hsol = 1790.6
+
+|Jan_umid_comp = 75.4
+|Fev_umid_comp = 75.5
+|Mar_umid_comp = 75.5
+|Abr_umid_comp = 74.6
+|Mai_umid_comp = 75.9
+|Jun_umid_comp = 75.4
+|Jul_umid_comp = 74.1
+|Ago_umid_comp = 69.9
+|Set_umid_comp = 72.6
+|Out_umid_comp = 73.7
+|Nov_umid_comp =  73
+|Dez_umid_comp =  75
+|Ano_umid_comp = 74.2
+
+|fonte = [[Instituto Nacional de Meteorologia|INMET]] (normal climatológica de 1981-2010;<ref name="NCB_1981-2010">{{citar web|URL=https://portal.inmet.gov.br/normais|título=NORMAIS CLIMATOLÓGICAS DO BRASIL|autor=INMET|acessodata=04/03/2025}}</ref> recordes de temperatura: 01/07/1983 a 30/11/2014)<ref name="bdmep.inmet.gov.br">{{citar web |url=https://bdmep.inmet.gov.br/ |título=Banco de dados meteorológicos |autor=INMET |acessodata=04/03/2025}}</ref>
+}}
+
+== Demografia ==
+[[Imagem:Guarulhos - panoramio (18).jpg|thumb|Região central de Guarulhos]]
+[[Ficheiro:Gopouva nova torre.jpg|thumb|Vista do bairro de Gopoúva.]]
+[[Imagem:Guarulhos, Igreja Matriz - panoramio.jpg|thumb|[[Catedral Nossa Senhora da Conceição (Guarulhos)|Catedral Nossa Senhora da Conceição]].]]
+=== População ===
+{| border="0"
+|-
+|
+{{Crescimento população dos municípios de São Paulo
+| 1872 = 
+| 1890 = 3904
+| 1900 = 3455
+| 1910 = 6568
+| 1920 = 5961
+| 1925 = 6795
+| 1934 = 11209
+| 1937 = 11984
+| 1940 = 13439
+| 1946 = 22409
+| 1950 = 34683
+| 1958 = 77620
+| 1960 = 101273
+| 1970 = 236811
+| 1980 = 532724
+| 1991 = 787866
+| 2000 = 1072717
+| 2010 = 1221979
+| 2022 = 1291771
+| estimado = 1345364
+| ano_est  = 2024
+| ref_est  = <ref>{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=41105|titulo=Estimativas da população residente para os municípios e para as unidades da federação (2024) {{!}} IBGE|website=www.ibge.gov.br}}</ref>
+}}
+|}
+=== Dados demográficos ===
+;Censo em 2022
+* População residente: {{fmtn|1291771}}<ref>[https://cidades.ibge.gov.br/brasil/sp/guarulhos/panorama Censo IBGE 2010]</ref>
+** Urbana: {{fmtn|1291152}}
+** Rural: 619
+** Homens: {{fmtn|620809}}
+** Mulheres: {{fmtn|670962}}
+* [[Densidade Demográfica]] (hab./km²): {{fmtn|4053.57}}
+* [[Taxa de fecundidade]] (filhos por mulher): 1,55
+* [[IDH]]-M Renda: 0,746<ref name=":0">{{citar web| url=http://www.atlasbrasil.org.br/2013/ranking|título=''Ranking''_Todo o Brasil (2010) |acessodata=30/05/16}}</ref>
+;População estimada em 2024
+{{fmtn|1345364}}<ref name="IBGE"/>
+
+{| {{Prettytable}}
+ |- style="background:#009966;" colspan="2"
+!<font color="green">Cor/Raça</font>
+!<font color="green">Porcentagem</font>
+ |-
+ |[[Brancos]]
+ |48,64%
+ |-
+ |[[Negros]]
+ |9,53%
+ |-
+ |[[Pardos]]
+ |40,77%
+ |-
+ |[[Amarelos]]
+ |0,94%
+ |-
+ |[[Povos indígenas do Brasil|Indígenas]]
+ |0,12%
+ |}
+''Fonte: Censo 2022''
+
+=== Religião ===
+Segundo o [[Censo demográfico do Brasil de 2010|censo de 2010]], os católicos representam 48 por cento da população, seguido pelos protestantes de várias denominações (33 por cento) e espíritas (3 por cento). Outras religiões representam 16 por cento da população. A igreja mais antiga do município é a Catedral Nossa Senhora da Conceição, edificada em 1560, ano da fundação do município, sendo a sede da [[Diocese de Guarulhos]], criada em 1981.
+
+Segundo o censo brasileiro de 2022, a composição religiosa da cidade era de 43,37% católicos, 30,08% evangélicos ou protestantes, 2,48% espíritas, 1,89% umbandistas ou candomblecistas, 0,04% religião tradicional, 6,58% outra religião, 15,35% irreligiosos, 0,05% desconhecidos e 0,17% não declarados.<ref>{{Citar web|url=https://g1.globo.com/economia/censo/noticia/2025/06/06/mapa-censo-ibge-religiao.ghtml|titulo=MAPA: Qual é a religião mais popular da sua cidade?|data=2025-06-06|acessodata=2025-06-07|website=G1|lingua=pt-br}}</ref>
+
+== Administração ==
+
+=== Câmara Municipal ===
+[[Ficheiro:Câmara Municipal de Guarulhos.png|miniaturadaimagem|Câmara Municipal de Guarulhos]]
+A [[Câmara Municipal de Guarulhos]] é o [[Poder legislativo|órgão legislativo]] do município. Fundada em 1948, a Câmara é responsável por legislar e fiscalizar o Executivo municipal, representando os interesses da população local. A 1ª Legislatura da Câmara Municipal de Guarulhos teve início em 1948, com a participação de 13 vereadores. O primeiro presidente da Câmara Municipal foi [[Rinaldo Poli]], que mais tarde se tornaria o primeiro prefeito eleito de Guarulhos em 1953, obtendo 7.800 votos. Durante sua gestão, a sede da Câmara estava localizada na Rua Dom Pedro II, onde permaneceu até 1951. Entre 1951 e 1976, a Câmara foi transferida para um edifício na Rua Sete de Setembro, que também abrigava o Paço Municipal. De 1976 até 2006, a sede mudou novamente, desta vez para um edifício na Praça Getúlio Vargas. Entre 2006 e 2021, a Câmara ocupou um prédio localizado na esquina da Rua João Gonçalves com a [[Avenida Tiradentes (Guarulhos)|Avenida Tiradentes]], onde anteriormente funcionava o Cine Star. No dia 5 de abril de 2021, foi inaugurada a sede própria da Câmara Municipal de Guarulhos, localizada na [[Avenida Guarulhos]], nº 845. Atualmente, a Câmara Municipal de Guarulhos é composta por 34 vereadores.<ref>{{Citar web|url=https://www.guarulhos.sp.leg.br/pag/sobre-a-camara|titulo=Sobre a Câmara - Câmara Municipal de Guarulhos|acessodata=2024-10-29|website=www.guarulhos.sp.leg.br|lingua=pt-br}}</ref>
+
+=== Subdivisões ===
+{{anexo|Lista de bairros de Guarulhos}}
+
+O município de Guarulhos é divido em 46 [[bairros]] mais o Aeroporto Internacional de São Paulo-Guarulhos. 
+
+{{panorama|Div adm de guarulhos.PNG|500px|Divisão administrativa de Guarulhos}}
+
+== Economia ==
+[[Imagem:Guarulhos, Rua Dom Pedro II, Calçadão - panoramio.jpg|thumb|Calçadão da Rua Dom Pedro II, no Centro]]
+[[Imagem:Tree Map-Atividades Economicas em Guarulhos (2012).png|thumb|Atividades econômicas em Guarulhos (2012)<ref>{{citar web | titulo=Atividades econômicas em Guarulhos (2012)| obra=Plataforma DataViva | url=http://dataviva.info/apps/builder/tree_map/rais/sp090101/all/all/isic?controls=true&year=2012&value_var=num_emp&depth=isic_1&color_var=color | acessodata= 13 de janeiro de 2014 }}</ref>]]
+
+A economia de Guarulhos começou no período colonial, em 1597 por Afonso Sardinha com a mineração de [[ouro]] na região das Lavras Velhas do Geraldo ou Catas Velhas onde hoje é conhecida apenas como bairro das Lavras. Esse período do [[ciclo do ouro]] em Guarulhos durou mais de 200 anos.<ref>{{citar web |url=http://especial.folha.uol.com.br/2016/morar/osasco-abcd-guarulhos/2016/03/1748978-guarulhos-viveu-ciclo-do-ouro-cem-anos-antes-de-minas-gerais.shtml|titulo=Guarulhos viveu ciclo do ouro cem anos antes de Minas Gerais|website=[[Folha de S.Paulo]]|data=13 de março de 2016|autor=Roberta Barbieri|acessodata=15 de agosto de 2025}}</ref> 
+
+Com o fim da exploração aurífera, vieram, depois, os ciclos do tijolo ao longo das várzeas dos rios Tietê, Cabuçu e Baquirivu-guaçu surgindo centenas de [[olaria]]s na cidade, na maioria pelos imigrantes italianos. Com a introdução do tijolo como material de construção substituindo a taipa de pilão, as olarias em Guarulhos encontrou espaço na economia paulista.<ref>{{citar web |url=https://jornal.usp.br/ciencias/ciencias-humanas/historia-da-mineracao-de-ouro-em-guarulhos-e-resgatada-em-pesquisa/|titulo=História da mineração de ouro em Guarulhos é resgatada em pesquisa|website=[[Jornal da USP]]|acessodata=15 de agosto de 2025|data=20 de junho de 2016}}</ref>
+
+O surgimento das indústrias em Guarulhos começou a partir de 1915 com a implantação do ramal da ''Tramway'' da Cantareira que acabaram sendo atendidos pela linha ferroviária. Guarulhos foi considerada a [[Lista de municípios do Brasil por PIB|13ª cidade mais rica do Brasil]], em 2013, com um [[Produto Interno Bruto]] (PIB) na ordem de 49,3 [[bilhões]] de reais, o que representa 1,01% de todo PIB brasileiro na época.<ref name="cidades.ibge.gov.br">{{Citar web|url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=pib-por-municipio&c=3518800=|título=PIB dos Municípios Brasileiros 2016|data=2018|publicado=IBGE}}</ref>
+
+O setor de logística e transportes em Guarulhos é muito vasto, e a partir dessa necessidade diversos cursos de especialização se tornaram presentes na cidades. Entre eles a faculdade pública estadual FATEC.<ref>{{Citar web |url=http://www.fatecguarulhos.edu.br/institucional/historico/ |titulo=Fatec Guarulhos - Histórico |acessodata=2021-06-08 |website=www.fatecguarulhos.edu.br}}</ref>
+
+{{panorama|Guarulhos - SP - panoramio (153) (cropped).jpg|900px|Vista panorâmica da região central de Guarulhos.}}
+
+== Infraestrutura ==
+
+=== Segurança pública e criminalidade ===
+Desde 2000, a cidade tem diminuído a sua [[Taxa (razão)|taxa]] de [[Crime|criminalidade]]. No período entre 1999 e 2009, a taxa de [[homicídio]]s caiu 71% na cidade.<ref>{{Citar periódico|ultimo=ACE-Guarulhos|primeiro=Marketing|titulo=Número de homicídios cai 71% nos últimos 10 anos na cidade, diz SSP|jornal=ACE-Guarulhos|url=http://www.guarulhosempresarial.com.br/content.php?m=20100203123500}}</ref>
+
+{{Homicídios Dolosos por 100 mil habitantes em Guarulhos}}
+
+=== Saúde ===
+[[Imagem:Novo Centro Oncológico do Hospital Geral de Guarulhos amplia o tratamento de câncer pelo SUS. (16509524208).jpg|thumb|Hospital Geral de Guarulhos]]
+[[Imagem:Foto do Prédio Principal do Complexo Padre Bento.jpg|thumb|[[Sanatório Padre Bento]].]]
+O município conta com quinze hospitais (públicos e privados), sendo os que merecem destaque:
+{{dividir em colunas}}
+* Hospital Padre Bento
+* Hospital Unimed;
+* Hospital Bom Clima;
+* Hospital Carlos Chagas;
+* Hospital Stella Maris;
+* Hospital Seisa;
+* Hospital Medtour;
+* Hospital Municipal Pimentas Bonsucesso;
+* Hospital Municipal de Urgências;
+* Hospital Geral de Guarulhos;
+* Hospital Geral de Guarulhos (Santa Casa de São Paulo)
+* Hospital Municipal da Criança e do Adolescente;
+* Hospital e Maternidade Jesus José e Maria;
+* Hospital Brasil;
+* Hospital e Maternidade São Luiz
+{{dividir em colunas fim}}
+
+Também se fazem presentes 69 unidades básicas de saúde,<ref>{{citar web |titulo=Unidades básicas de saúde |editor=Prefeitura de Guarulhos|acessodata=15 de agosto de 2025|url=https://www.guarulhos.sp.gov.br/index.php/unidades-basicas-de-saude-ubs}}</ref> sete pronto atendimentos,<ref>{{citar web |titulo=Policlínicas-UPA |editor=Prefeitura de Guarulhos|acessodata=15 de agosto de 2025|url=https://www.guarulhos.sp.gov.br/policlinicas-upa}}</ref> além de quatro Centro de Especialidades Médicas (Centro, Cantareira, São João e Pimentas-Cumbica),<ref>{{citar web |titulo=CEMEG |editor=Prefeitura de Guarulhos|acessodata=15 de agosto de 2025|url=https://www.guarulhos.sp.gov.br/index.php/cemeg}}</ref> quatro centros odontológicos<ref>{{citar web |titulo=Centro de Especialidades Odontológicas |editor=Prefeitura de Guarulhos|acessodata=15 de agosto de 2025|url=https://www.guarulhos.sp.gov.br/index.php/centro-de-especialidades-odontologicas-ceo}}</ref> e sete unidades psicossociais.<ref>{{citar web |titulo=Centro de Atenção Psicosocial |editor=Prefeitura de Guarulhos|acessodata=15 de agosto de 2025|url=https://www.guarulhos.sp.gov.br/centro-de-atencao-psicossocial-caps}}</ref>
+
+O município apresenta os seguintes índices ligados a saúde:
+
+* [[IDH]]-M Saúde: 0,831<ref name=":0" />
+* [[Expectativa de vida]] (anos): 74,2
+* [[Mortalidade Infantil]] até 1 ano (por mil) 11,46
+
+=== Transportes ===
+[[Ficheiro:Terminal_3_de_Guarulhos.jpg|thumb|Terminal 3 do Aeroporto Internacional de São Paulo-Guarulhos.]]
+[[Ficheiro:Entrega da Linha 13 Jade da CPTM • Estação Aeroporto-Guarulhos • 4.jpg|miniaturadaimagem|A Estação Aeroporto–Guarulhos do Trem Metropolitano.]]
+
+O Aeroporto Internacional de São Paulo-Guarulhos – Governador André Franco Montoro, também conhecido por Aeroporto Internacional de Cumbica (IATA: GRU, ICAO: SBGR), é o principal e o mais movimentado aeroporto do Brasil. Localizado na cidade, no bairro de [[Cumbica]].<ref>{{Citar web |url=https://oglobo.globo.com/boa-viagem/entre-os-maiores-do-mundo-aeroporto-de-guarulhos-o-segundo-mais-pontual-20728827 |titulo=Entre os maiores do mundo, aeroporto de Guarulhos é o segundo mais pontual |data=2017-01-04 |acessodata=2021-10-30 |website=O Globo |lingua=pt-BR}}</ref>
+
+O município é atendido pela [[Linha 13 do Trem Metropolitano de São Paulo|Linha 13–Jade]] do [[Trem Metropolitano de São Paulo]], inaugurada em 31 de março de 2018 que liga a [[Estação Engenheiro Goulart]], em São Paulo, a [[Estação Aeroporto–Guarulhos]], próxima ao Terminal 1 do aeroporto, com [[Estação Guarulhos-Cecap|parada]] junto ao [[Terminal Turístico Rodoviário de Guarulhos|Terminal Rodoviário]] da cidade no [[Parque Cecap]]. A estação é interligada através de passarela ao Terminal Taboão.<ref>{{Citar web|titulo=Trem para o Aeroporto de Guarulhos começa a funcionar após 14 anos de atraso|url=https://g1.globo.com/sp/sao-paulo/noticia/trem-para-o-aeroporto-de-guarulhos-comeca-a-funcionar-apos-13-anos-de-espera.ghtml|obra=G1|acessodata=2019-06-30|lingua=pt-br|data=2018-03-31|publicado=|ultimo=|primeiro=}}</ref>
+
+Há projeto de construção de duas estações da [[Linha 2 do Metrô de São Paulo]] no município, no bairro [[Ponte Grande (Guarulhos)|Ponte Grande]] e próximo à [[Via Dutra]].<ref>{{Citar web|url=https://web.archive.org/web/20131230100259/http://www.estadao.com.br/noticias/impresso,guarulhos-tera-duas-estacoes-do-prolongamento-da-linha-2-verde-,1054951,0.htm|titulo=Guarulhos terá duas estações do prolongamento da Linha 2-Verde - saopaulo - versaoimpressa - Estadão|data=2013-12-30|acessodata=2017-02-01}}</ref>
+
+Atualmente, existe uma réplica da antiga estação de Guarulhos do [[Tramway da Cantareira]] na Praça Quarto Centenário, no centro da cidade. Parte do antigo trajeto do ramal foi reaproveitado no leito da [[Linha 1 do Metrô de São Paulo|Linha 1-Azul]] do [[Metrô de São Paulo]]. O antigo Ramal de Guarulhos do Tramway também seria imortalizado na clássica música [[Trem das Onze]], de [[Adoniran Barbosa]].<ref>{{Citar web |url=https://www.estacoesferroviarias.com.br/g/guarulhos.htm |titulo=Guarulhos -- Estações Ferroviárias do Estado de São Paulo |acessodata=2020-08-31 |website=www.estacoesferroviarias.com.br}}</ref>
+
+==== Rodovias ====
+[[Ficheiro:Ponte de Guarulhos.JPG|thumb|Viaduto Cidade de Guarulhos, construído sobre a [[Rodovia Presidente Dutra]] (BR-116; SP-60)]]
+Guarulhos tem o privilégio de ser cortada por rodovias de grande importância no cenário estadual e federal, sendo elas:
+
+* [[Ficheiro:BR-116.svg|100x20px]] [[Rodovia Presidente Dutra]] - Atravessa o município de leste a oeste, da divisa com o município de Arujá a divisa com a capital paulista. As suas margens, em ambos os sentidos (RJ e SP) é tomada por inúmeras indústrias e comércios dos mais variados segmentos;
+* [[Ficheiro:BR-381.svg|100x20px]] [[Rodovia Fernão Dias]] - Atravessa o extremo sudoeste do município nos bairros de Itapegica e Ponte Grande;
+* [[Ficheiro:SP-070.png|100x20px]] [[Rodovia Ayrton Senna]] - Assim como a Rodovia Presidente Dutra, também corta toda a extensão do município de leste a oeste. Em alguns pontos, a rodovia é o ponto de divisão entre os municípios de Guarulhos e São Paulo;
+* [[Ficheiro:SP-019.svg|100x20px]] [[Ficheiro:BR-610_SP.svg|100x20px]] [[Rodovia Helio Smidt|Rodovia Hélio Smidt]] - Única rodovia que possui 100% de sua extensão localizado no interior do município. Serve como ligação entre a Rodovia Ayrton Senna da Silva e o Aeroporto, passando pela Rodovia Presidente Dutra;
+* [[Ficheiro:SP-036.svg|100x20px]] [[Rodovia Juvenal Ponciano de Camargo]] (''[[Rodovia Juvenal Ponciano de Camargo|Guarulhos-Nazaré Paulista]]'') - Liga o bairro [[São João (distrito de Guarulhos)|São João]] ao município de [[Nazaré Paulista]], às margens da [[Rodovia Dom Pedro I]].
+
+==== Ferrovias ====
+Desde 2018, Guarulhos é servida pela [[Linha 13 do Trem Metropolitano de São Paulo]], que conecta o [[Aeroporto Internacional de São Paulo-Guarulhos]] ao bairro de [[Engenheiro Goulart]], na zona leste da capital paulista e um serviço complementar (''GRU-Express''), um serviço expresso prestado pela [[Companhia Paulista de Trens Metropolitanos|CPTM]], ligando o Aeroporto de Guarulhos à [[Estação da Luz]] no bairro homônimo no centro da capital paulista. No futuro, planeja-se expandir consideravelmente a malha ferroviária da cidade com 4 projetos de obras e expansão. Previsões apontam que até o ano de 2040 podem ser inauguradas a expansão da [[Linha 13 do Trem Metropolitano de São Paulo|Linha 13-Jade]] até o bairro de [[Bonsucesso (Guarulhos)|Bonsucesso]],<ref>{{Citar web|ultimo=Andrade|primeiro=Vinícius|ultimo2=NBZ|primeiro2=Agência|url=https://guarulhostododia.com.br/noticias/2024/12/03/entenda-expansao-da-linha-13-estacoes-no-taboao-sao-joao-presidente-dutra-e-bonsucesso/#:~:text=modal%20de%20transporte.-,Nova%20Linha%2013-Jade,Viagens%20a%20cada%2010%20minutos.|titulo=Entenda expansão da Linha 13: Estações no Taboão, São João, Presidente Dutra e Bonsucesso|data=2024-12-03|acessodata=2025-02-19|website=Guarulhos Todo Dia|lingua=pt-br}}</ref> a expansão da [[Linha 2 do Metrô de São Paulo|Linha 2-Verde]] até a estação [[Estação Dutra|Dutra]]<ref>{{Citar web|url=https://www.metrocptm.com.br/obras-da-linha-2-verde-em-guarulhos-comecam-ate-inicio-de-2026-diz-tarcisio/|titulo=Obras da Linha 2-Verde em Guarulhos começam até início de 2026, diz Tarcísio - Metrô CPTM|data=2024-09-25|acessodata=2025-02-19|website=www.metrocptm.com.br|lingua=pt-BR}}</ref>, a nova [[Linha 19 do Metrô de São Paulo|Linha 19-Celeste]] de metrô<ref>{{Citar web|url=https://www.metrocptm.com.br/obras-da-linha-19-celeste-serao-licitadas-em-marco-com-tres-tuneladoras-operando-simultaneamente/|titulo=Obras da Linha 19-Celeste serão licitadas em março com três tuneladoras operando simultaneamente - Metrô CPTM|data=2025-02-05|acessodata=2025-02-19|website=www.metrocptm.com.br|lingua=pt-BR}}</ref> e a futura [[Linha 14 do Trem Metropolitano de São Paulo|Linha 14-Ônix]] de [[Veículo leve sobre trilhos|VLT]].<ref>{{Citar web|url=https://www.parcerias.sp.gov.br/Parcerias/Projetos/Detalhes/189#prettyPhoto|titulo=Plataforma Digital de Parcerias {{!}} Governo do Estado de São Paulo|acessodata=2025-02-19|website=www.parcerias.sp.gov.br}}</ref><ref>{{Citar web|ultimo=Gualberto|primeiro=Fellipe|url=https://mobilidade.estadao.com.br/mobilidade-para-que/dia-a-dia/linha-14-onix-conheca-o-projeto-e-saiba-por-onde-passara-o-ramal/#:~:text=Como%20ser%C3%A1%20a%20Linha%2014-%C3%94nix?&text=A%20Linha%2014-%C3%94nix%20ter%C3%A1,constru%C3%A7%C3%A3o%20de%2027%20novas%20esta%C3%A7%C3%B5es%E2%80%9D.|titulo=Linha 14-Ônix, conheça o projeto e saiba por onde passará o ramal ferroviário {{!}} Mobilidade Estadão {{!}}|data=2024-12-31|acessodata=2025-02-19|website=Mobilidade Estadão}}</ref> Juntas, essas linhas farão uma integração intermodal necessária para a cidade, ligando pontos de interesse a grandes centros populacionais, atendendo a bairros como [[Pimentas (Guarulhos)|Pimentas]] e [[Bonsucesso (Guarulhos)|Bonsucesso]], além do próprio [[Centro (Guarulhos)|centro da cidade]], suprindo a sua demanda por transporte de alta capacidade, além de fazer a conexão com a capital paulista ainda mais rápida e eficiente.<ref>{{Citar web|ultimo=Lobo|primeiro=Renato|url=https://viatrolebus.com.br/2025/01/estacao-no-bairro-do-pimentas-confira-o-local-e-o-prazo-de-implantacao/#:~:text=A%20nova%20Linha%2014-%C3%94nix,trechos%20em%20elevado%20e%20subterr%C3%A2neo.|titulo=Estação no bairro do Pimentas: confira o local e o prazo de implantação -|data=2025-01-31|acessodata=2025-02-19|website=Via Trolebus|lingua=pt-BR}}</ref>
+
+=== Educação ===
+[[Ficheiro:Campus Guarulhos da Unifesp.jpg|alt=|miniaturadaimagem|[[Escola de Filosofia, Letras e Ciências Humanas da Universidade Federal de São Paulo|Escola de Filosofia, Letras e Ciências Humanas]] da [[Universidade Federal de São Paulo]]]]
+[[Ficheiro:Inauguração da Nova Sede da FATEC de Guarulhos (27365672788).jpg|thumb|[[FATEC]] de Guarulhos.]]
+
+A cidade de Guarulhos conta com universidades como a [[Escola de Filosofia, Letras e Ciências Humanas da Universidade Federal de São Paulo]] no Pimentas, desde 2007, [[Universidade Guarulhos|Universidade de Guarulhos]] (UNG), [[Centro Universitário Metropolitano de São Paulo]] (FIG-UNIMESP), a [[Faculdade de Tecnologia do Estado de São Paulo]] (FATEC).
+
+Além disso, o município conta com as seguintes instituições de ensino superior: [[Universidade Nove de Julho|Uninove]], [[Faculdade Eniac]], Escola Superior Paulista de Administração (Faculdade de Negócios de Guarulhos), Facig, Faculdade IDEPE e Faculdades de Guarulhos, além de contar com um unidade semipresencial da Universidade Metodista de São Paulo (localizada nas dependências do Shopping Bonsucesso).
+
+A cidade também conta com um ''campus'' do [[Instituto Federal de São Paulo|Instituto Federal de Educação, Ciência e Tecnologia de São Paulo]] (IFSP), que, desde o segundo semestre de 2006, ministra os cursos técnicos em manutenção e suporte de informática e automação industrial e, ainda, cursos de nível superior de tecnologia em análise e desenvolvimento de sistemas e automação industrial para o período noturno e, para o diurno, superior em licenciatura em matemática.<ref>{{Citar web |url=http://gru.ifsp.edu.br/ |titulo=IFSP - Câmpus Guarulhos - Página inicial |acessodata=2021-06-08 |website=gru.ifsp.edu.br}}</ref> 
+
+Os índices relacionados à área de educação do município são os seguintes:
+
+* [[IDH]]-M Educação: 0,717<ref name=":0" />
+* [[Alfabetização|Taxa de Alfabetização]]: 94,2%<ref>{{citar web| url=http://www.educacao.mppr.mp.br/arquivos/File/dwnld/analfabetismo/dados_estatisticos/populacao_analfabeta_por_municipio_brasil.pdf|título=''Ranking''_Todo o Brasil |acessodata=30/05/16}}</ref>
+
+=== Comunicações ===
+Em 1960, foi criada a Companhia Telefônica de Guarulhos, numa tentativa de substituir os obsoletos 120 telefones manuais que eram operados pela [[Companhia Telefônica Brasileira]].<ref>{{Citar web |url=https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=443696&view=detalhes |titulo=IBGE {{!}} Biblioteca {{!}} Detalhes {{!}} Companhia Telefônica de Guarulhos : Guarulhos, SP |acessodata=2021-10-11 |website=biblioteca.ibge.gov.br}}</ref>
+
+Em 1962, a Companhia Telefônica de Guarulhos operava 2 000 terminais telefônicos automáticos, com o prefixo 49. Dois anos após a criação do sistema [[Telecomunicações Brasileiras S.A.|Telebrás]], em 1974, a [[Telecomunicações de São Paulo]] adquiriu a Companhia Telefônica de Guarulhos, então com 7 000 terminais, com a condição de que todas as chamadas telefônicas entre os dois municípios fossem consideradas chamadas locais. Na ocasião, o prefixo 49 foi alterado para 209. Em 2003, foi alterado para 6409 e, atualmente é 2409. O número de terminais aumentou para 20 000 em 1977.<ref>{{Citar web |url=https://www.imprensaoficial.com.br/DO/BuscaDO2001Documento_11_4.aspx?link=/1975/ineditoriais/abril/29/p1/pag_0053_3K969TISNT1HVe7RLTPFVPKKR22.pdf&pagina=53&data=29/04/1975&caderno=Ineditoriais&paginaordenacao=100053 |titulo=Diário Oficial do Estado de São Paulo - 29/04/1975 |acessodata=2021-10-11 |website=www.imprensaoficial.com.br}}</ref>
+
+== Cultura ==
+
+=== Centro culturais ===
+[[Ficheiro:Entrada do SESC Guarulhos, Maratona de fotografia, junho de 2019.jpg|thumb|Entrada do [[Sesc Guarulhos]]]]
+
+O [[Arquivo Histórico Municipal (Guarulhos)|Arquivo Histórico Municipal]] é responsável por conservar os itens de valor histórico ou cultural para a cidade. A cidade conta com um sistema de bibliotecas públicas,<ref>{{Citar web|titulo=Guarulhos.org - História da Bibliotéca Municipal Monteiro Lobato|url=http://www.guarulhos.org/biblioteca_m_lobato.php|obra=www.guarulhos.org|acessodata=2019-06-12|data=|publicado=|ultimo=|primeiro=|arquivourl=https://web.archive.org/web/20190612001547/http://www.guarulhos.org/biblioteca_m_lobato.php|arquivodata=2019-06-11}}</ref> com matriz na [[Biblioteca Municipal Monteiro Lobato (Guarulhos)|Biblioteca Monteiro Lobato]].<ref>{{Citar web|titulo=Sobre|url=https://www.biblioguarulhos.com.br/p/sobre.html|acessodata=2019-06-30}}</ref> Há dois teatros na cidade, o [[Teatro Padre Bento]] e o [[Teatro Nelson Rodrigues]].<ref>{{Citar web|titulo=Teatro Nelson Rodrigues - Mapas Culturais|url=http://grucultura.guarulhos.sp.gov.br/espaco/13240/|obra=GruCultura|data=2017-01-03|acessodata=2019-06-30|lingua=pt-BR|ultimo=GruCultura}}</ref> Há locais tombados pela prefeitura, como o [[Casarão José Maurício]]<ref>{{Citar web|titulo=Casarão de José Maurício de Oliveira|url=http://www.saopauloantiga.com.br/jose-mauricio-de-oliveira/|obra=São Paulo Antiga|data=2009-04-28|acessodata=2019-06-30|lingua=pt-BR}}</ref> e o [[Sítio da Candinha]].<ref>{{Citar web|titulo=Patrimônio está aos pedaços em Guarulhos - São Paulo|url=https://sao-paulo.estadao.com.br/noticias/geral,patrimonio-esta-aos-pedacos-em-guarulhos-imp-,881575|obra=Estadão|acessodata=2019-06-30|lingua=pt-BR|data=|publicado=[[Estado de S. Paulo]]|ultimo=|primeiro=|url-access=subscrição}}</ref>
+
+Guarulhos ainda conta com a 44ª unidade do [[Serviço Social do Comércio]], o [[Sesc (Guarulhos)|Sesc Guarulhos]]. O local tem 34 mil m² de área e possui salas de música, teatro, biblioteca, piscinas e áreas esportivas. O prédio também engloba um acervo de arte brasileira, com 24 obras de arte.<ref>{{Citar web|titulo=Sesc Guarulhos abre com programação gratuita que inclui Nação Zumbi e Arnaldo Antunes|url=https://guia.folha.uol.com.br/passeios/2019/05/sesc-guarulhos-abre-com-programacao-gratuita-que-inclui-nacao-zumbi-e-arnaldo-antunes.shtml|obra=Guia Folha|data=2019-05-10|acessodata=2019-06-30|lingua=pt-BR}}</ref><ref>{{Citar web|titulo=Sesc inaugura unidade em Guarulhos em 11 de maio {{!}} Arte ao Redor|url=https://vejasp.abril.com.br/blog/arte-ao-redor/sesc-guarulhos/|obra=VEJA SÃO PAULO|acessodata=2019-06-30|lingua=pt-BR}}</ref>
+
+=== Esportes ===
+[[Ficheiro:Estadio Antônio Soares de Oliveira.JPG|thumb|[[Estádio Municipal Antônio Soares de Oliveira]], durante partida do [[Associação Atlética Flamengo|A.A. Flamengo]].]]
+
+O primeiro clube de futebol de Guarulhos foi o Paulista, que atuava onde hoje está localizada a Praça Getúlio Vargas. Hoje, o município conta com o [[Estádio Municipal Antônio Soares de Oliveira]] e o [[Estádio Municipal Cícero Miranda]]. Atualmente, o município de Guarulhos, que já contou com várias equipes de futebol, possui duas equipes profissionais em atividade: a [[Associação Atlética Flamengo|A.A. Flamengo]] e a [[Associação Desportiva Guarulhos|A.D. Guarulhos]], ambas disputando a [[Campeonato Paulista de Futebol - Segunda Divisão|Segunda Divisão do Campeonato Paulista]], equivalente a quinta divisão do futebol paulista.{{carece de fontes|data=novembro de 2013}}
+
+== Ver também ==
+* [[:Categoria:Naturais de Guarulhos|Paulistas de Guarulhos]]
+* [[Câmara Municipal de Guarulhos]]
+* [[Diocese de Guarulhos]]
+* [[Sanatório Padre Bento]]
+* [[André Luiz (espírito)|Fundação Espírita André Luiz]]
+
+{{Referências}}
+
+== Ligações externas ==
+{{Correlatos
+ |commons         =
+ |commonscat      = Guarulhos
+ |wikisource      =
+ |wikiquote       =
+ |wikilivros      =
+ |wikinoticias    =
+ |wikinoticiascat =
+ |wikcionario     =
+ |wikispecies     =
+ |wikiversidade   =
+ |wikivoyage      = Guarulhos
+ |meta            =
+}}
+* {{Link|pt|2=http://www.guarulhos.sp.gov.br|3=Página da prefeitura}}
+* {{Link|pt|2=http://www.camaraguarulhos.sp.gov.br|3=Página da câmara|ligação inativa=sim}}
+* {{Link|pt|2=http://WikiMapia.org/#lat=-23.434584&lon=-46.473198&z=12&l=9&m=h&v=2|3=Guarulhos no WikiMapia}}
+* {{Link|pt|2=http://www.guarulhos.org|3=''Site'' sobre a cidade}}
+* {{Link|pt|2=http://www.aceguarulhos.com.br|3=''Site'' da Associação Comercial e Empresarial de Guarulhos}}
+* [https://cliquesp.com.br/cidades/feiras-livres-em-guarulhos-sp-locais-horarios-e-dias-de-funcionamento/ Feiras livres em Guarulhos SP]
+
+{{Bloco de navegação
+|Guarulhos
+|Mercocidades
+|50 maiores cidades do Brasil
+|Região Metropolitana de São Paulo
+|Subdivisões de São Paulo
+}}
+{{controle de autoridade}}
+{{Portal3|Brasil|São Paulo (estado)|Região Sudeste do Brasil}}
+
+[[Categoria:Guarulhos| ]]
+[[Categoria:Fundações no Brasil em 1560]]
+[[Categoria:Municípios históricos do Brasil]]

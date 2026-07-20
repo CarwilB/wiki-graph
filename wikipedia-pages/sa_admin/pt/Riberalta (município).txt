@@ -1,0 +1,64 @@
+{{Info/Assentamento
+|nome_oficial          = Riberalta
+|outro_nome             =
+|nome_nativo            = 
+|apelido               = 
+|assentamento_tipo        = Município 
+|lema                  =
+<!-- images and maps  -----------> 
+|mapa_alfinete            =Bolívia<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|mapa_alfinete_posição =bottom
+|mapa_alfinete_legenda    =Localização na Bolívia
+<!-- Location ------------------>
+|subdivisão_tipo       = País
+|subdivisão_nome       ={{flag|Bolívia}}
+|subdivisão_tipo1      = [[Departamentos da Bolívia|Departamento]]
+|subdivisão_nome1      = [[Beni (departamento)|Beni]]
+|subdivisão_tipo2      = [[Províncias da Bolívia|Província]]
+|subdivisão_nome2      = 
+<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
+|sede_tipo              = Sede
+|sede                   =
+<!-- Politics -----------------> 
+|líder_título           = Prefeito
+|líder_nome            = 
+|líder_título1          =Presidente
+|estabelecido_título      = Fundação<!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|área_magnitude         = 
+|unit_pref                =Imperial 
+|área_notas           =
+|área_total_km2           =
+<!-- Population   ----------------------->
+|população_em               = 2001
+|população_footnotes           =
+|população_note                =
+|população_total               = 
+<!-- General information  --------------->
+|timezone               =-4
+|utc_offset             = -4
+|timezone_DST           = 
+|utc_offset_DST         = 
+|latd=|latm=|lats=|latNS=S
+|longd=|longm=|longs=|longEW=W
+|website                = 
+|notas              = 
+}}
+
+'''Riberalta''' é um [[Municípios da Bolívia|município]] do [[Beni (departamento)|Departamento de Beni]] na [[Bolívia]].<ref>[https://web.archive.org/web/20091027220541/http://www.ine.gov.bo/ Instituto Nacional de Estadistica de Bolivia]</ref>
+
+== Referências ==
+{{Reflist}}
+
+{{Departamento de Beni}}
+
+{{coord|11.5|S|66.1667|W|source:kolossus-dewiki|display=title}}
+
+[[Categoria:Municípios do departamento de Beni]]
+
+{{esboço-geobo}}

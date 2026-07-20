@@ -1,0 +1,115 @@
+{{Infobox settlement
+|name                   = Valle Rico
+|native_name            = 
+|settlement_type        = [[Corregimientos of Panama|Corregimiento]]
+|image_skyline          = 
+|image_caption          = 
+|image_alt              = 
+|pushpin_map            = Panama
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Panama}}
+|subdivision_type1      = [[Provinces of Panama|Province]]
+|subdivision_name1      = [[Los Santos Province|Los Santos]]
+|subdivision_type2      = [[Districts of Panama|District]]
+|subdivision_name2      = [[Las Tablas District|Las Tablas]]
+|leader_title           = 
+|leader_name            = 
+|established_title      = Established
+|established_date       = 
+|area_land_km2          = 41.4
+|area_footnotes         = <ref name=inec>[http://www.contraloria.gob.pa/inec/archivos/P3601Cuadro11.xls "Cuadro 11 (Superficie, población y densidad de población en la República...)" [Table 11 (Area, population, and population density in the Republic...)<nowiki>]</nowiki>] (.xls). In {{cite web|title=Resultados Finales Básicos|trans-title=Basic Final Results|url=https://www.contraloria.gob.pa/inec/publicaciones/Publicaciones.aspx?ID_SUBCATEGORIA=59&ID_PUBLICACION=360&ID_IDIOMA=1&ID_CATEGORIA=13|publisher=[[National Institute of Statistics and Census of Panama]]|access-date=May 26, 2015|language=Spanish}}</ref>
+|population_as_of       = 2010
+|population_total       = 400
+|population_footnotes   = <ref name=inec/>
+|population_density_km2 = 9.7
+|population_note        = Population density calculated based on land area.
+|timezone1              = [[Eastern Time|EST]]
+|utc_offset1            = −5
+|coordinates            = 
+}}
+
+'''Valle Rico''' is a [[Corregimientos of Panama|corregimiento]] in [[Las Tablas District]], [[Los Santos Province]], [[Panama]] with a population of 400 as of 2010.<ref name=inec/> Its population as of 1990 was 417; its population as of 2000 was 452.<ref name=inec/>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Valle Rico 2001–2015
+| Jan high C  = 30.4
+| Feb high C  = 31.2
+| Mar high C  = 31.8
+| Apr high C  = 32.1
+| May high C  = 31.3
+| Jun high C  = 30.2
+| Jul high C  = 30.2
+| Aug high C  = 30.1
+| Sep high C  = 30.1
+| Oct high C  = 29.7
+| Nov high C  = 29.9
+| Dec high C  = 30.3
+| year high C = 
+| Jan mean C  = 25.9
+| Feb mean C  = 26.5
+| Mar mean C  = 27.1
+| Apr mean C  = 27.4
+| May mean C  = 26.6
+| Jun mean C  = 25.7
+| Jul mean C  = 25.7
+| Aug mean C  = 25.7
+| Sep mean C  = 25.6
+| Oct mean C  = 25.3
+| Nov mean C  = 25.5
+| Dec mean C  = 25.8
+| year mean C = 
+| Jan low C  = 21.4
+| Feb low C  = 21.8
+| Mar low C  = 22.3
+| Apr low C  = 22.6
+| May low C  = 21.9
+| Jun low C  = 21.2
+| Jul low C  = 21.2
+| Aug low C  = 21.2
+| Sep low C  = 21.1
+| Oct low C  = 20.9
+| Nov low C  = 21.0
+| Dec low C  = 21.3
+| year low C = 
+|rain colour = green	
+|Jan rain mm = 16.6
+|Feb rain mm = 2.5
+|Mar rain mm = 15.2
+|Apr rain mm = 40.0
+|May rain mm = 176.4
+|Jun rain mm = 206.5
+|Jul rain mm = 160.8
+|Aug rain mm = 210.3
+|Sep rain mm = 246.6
+|Oct rain mm = 325.6
+|Nov rain mm = 250.2
+|Dec rain mm = 88.1
+|year rain mm = 	
+|source 1 = INEC<ref>{{cite web
+|url = https://www.inec.gob.pa/buscador/Default.aspx?BUSCAR=meteorolog%C3%ADa
+|title = Meteorología: Años 2001–2015
+|publisher = Instituto Nacional de Estadística y Censo
+|access-date = 22 Mar 2025}}</ref>
+|source 2 = IMHPA<ref>{{cite web
+|url = https://www.imhpa.gob.pa/es/descripcion-generall-clima-panama
+|title = Datos Meteorológicos
+|publisher = Instituto de Meteorología e Hidrología de Panamá
+|access-date = 22 Mar 2025}}</ref>
+}}
+
+==References==
+{{reflist}}
+
+{{Los Santos Province}}
+
+{{coord|7.6167|N|80.3500|W|source:wikidata|display=title}}
+
+[[Category:Corregimientos of Los Santos Province]]
+
+
+{{LosSantos-geo-stub}}

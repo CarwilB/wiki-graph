@@ -1,0 +1,52 @@
+{{Ficha de entidad subnacional
+|nombre = Casa Grande
+|imagen = Casa Grande, MG - Hotel Fazenda - panoramio.jpg
+|unidad = [[Municipio]]
+|tipo_superior_1 = [[Anexo:Estados de Brasil|Estado]]
+|superior_1 = {{BRA|MG}}
+|tipo_superior_3 = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3 = [[Mesorregión Metropolitana de Belo Horizonte|Metropolitana de Belo Horizonte]]
+|tipo_superior_4 = [[Microrregiones de Brasil|Microrregión]]
+|superior_4 = [[Microrregión de Conselheiro Lafaiete|Conselheiro Lafaiete]]
+|bandera = no
+|escudo = no
+|mapa = MinasGerais Municip CasaGrande.svg
+|tamaño_mapa = 260px
+|pie_mapa = Mapa
+|dirigentes_títulos = [[Prefecto]]
+|altitud = 
+|superficie = 157.994
+|superficie_post =<ref name ="IBGE_Área">{{cita web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial|fecha=10 de octubre de 2002|autor=IBGE|editorial=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|población = 2260
+|población_año = Estimación [[IBGE]]/2018<ref name="IBGE_Pop_2018">{{cita web |url=https://www.ibge.gov.br/estatisticas-novoportal/sociais/populacao/9103-estimativas-de-populacao.html?&t=downloads |título= Estimativa de População 2018 IBGE Ciudades |autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|fecha=31 de julio de 2018}}</ref>
+|PIB = {{formatnum:16225.379}} mil
+|PIB_per_capita = 7571.34
+|PIB_tipo = PIB ([[IBGE]]/2008)<ref name="IBGE_PIB">{{cita web|url =http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |título=Produto Interno Bruto dos Municípios 2004-2008 |editorial = Instituto Brasileiro de Geografia e Estatística }}</ref>
+|IDH = 0.711
+|IDH año = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{cita web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|título=Ranking decrescente do IDH-M dos municípios do Brasil |año=2010 |obra=Atlas do Desenvolvimento Humano|editorial=Programa das Nações Unidas para o Desenvolvimento (PNUD) }}</ref>
+|campo1_nombre = Datos mesorregión
+|campo1 = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |título=Divisão Territorial do Brasil |fecha=1 de julio de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |editorial=Instituto Brasileiro de Geografia e Estatística (IBGE) |fechaacceso=16 de enero de 2019 |urlarchivo=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip |fechaarchivo=14 de junio de 2020 }}</ref>
+|campo2_nombre = Datos microrregión
+|campo2 = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+}}
+'''Casa Grande''' es un [[municipio]] [[brasil]]eño del [[estados del Brasil|estado]] de [[Minas Gerais]]. Su población estimada en 2018 es de 2&nbsp;260 habitantes, según el [[Instituto Brasileño de Geografía y Estadística]] (IBGE).<ref name="IBGE_Pop_2018"/>
+
+== Historia ==
+Los primeros habitantes de origen europeo fueron los [[bandeirantes]] que se lanzaron al interior de Minas Gerais en búsqueda de oro durante el Brasil colonial. La minería se efectuaba, por regla general, en los arroyos existentes, y en sus márgenes se instalaban los exploradores. El fundador del pueblo, Bento Correia, mandó construir una casa de grandes proporciones, dividida para que pudieran vivir 15 familias (cerca de 60 personas). El topónimo actual se debe a aquella construcción. De esa casa todavía existen los cimientos. Posteriormente, los habitantes comenzaron a practicar la agricultura y luego la ganadería lechera, actividades que contribuyeron a la evolución de la localidad.<ref name="historia">{{cita web| url =https://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/casagrande.pdf|título=Casa Grande - Histórico |autor = IBGE }}</ref>
+
+En 1891 se crea el distrito de São Caetano do Paraopeba, subordinado al municipio de Queluz (actual [[Conselheiro Lafaiete]]). En 1923 adquiere el nombre de Casa Grande. En 1938, el distrito fue transferido al municipio de [[Lagoa Dourada]] y en 1962 obtiene su autonomía municipal.<ref name="historia"/>
+
+== Clima ==
+Según la [[clasificación climática de Köppen]], el municipio se encuentra en el [[Clima tropical de altitud|clima tropical de altitud ''Cwa'']].<ref name="Clima">{{cita web
+| url = http://koeppen-geiger.vu-wien.ac.at/pics/kottek_et_al_2006.gif |título=World Map of the Köppen-Geiger climate classification |obra=World Map of the Köppen-Geiger climate classification |editorial=Institute for Veterinary Public Health}}</ref>
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|Casa Grande}}
+* [http://www.casagrande.mg.gov.br/ Sitio web oficial] {{pt}}.
+{{Traducido ref|pt|Casa Grande|trad=parcial}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Minas Gerais]]

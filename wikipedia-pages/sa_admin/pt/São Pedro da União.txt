@@ -1,0 +1,76 @@
+{{Info/Município do Brasil
+<!-- GeoID=3163904 -->
+<!-- Cabeçalho -->
+| nome                 = São Pedro da União
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+| padroeiro            = [[São Pedro]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=12 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão               = 
+| bandeira             = 
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 1 de janeiro
+| fundação             = {{nowrap|{{dtlink|1|1|1944|idade}}}}
+| gentílico            = são-pedrense<ref name=IBGE_Panorama/>
+| CEP                  = 37855-000 a 37859-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| lema                 = 
+| prefeito             = Custódio Ribeiro Garcia
+| partido              = [[Partido da Social Democracia Brasileira|PSDB]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = MinasGerais Municip SaoPedrodaUniao.svg
+| latP                 = S | latG = 21 | latM = 07 | latS = 37
+| lonP                 = O | lonG = 46 | lonM = 36 | lonS = 54
+| estado               = Minas Gerais
+| região_intermediária      = Varginha
+| data_mesorregião     = [[IBGE]]/[[2017]]
+| região_imediata        = Guaxupé
+| data_microrregião    = [[IBGE]]/[[2017]]
+| região_metropolitana = 
+| vizinhos             = [[Jacuí]], [[Bom Jesus da Penha]], [[Nova Resende]], [[Juruaia]], [[Guaxupé]], [[Guaranésia]]<ref>{{citar web
+ |url=ftp://geoftp.ibge.gov.br/mapas/tematicos/politico/MG_Politico.pdf
+ |titulo=Mapa Político do Estado de Minas Gerais
+ |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE)
+ |acessodata=29 de junho de 2010
+ |autor = 
+ |data=2009
+ |formato=[[PDF]]
+}}</ref>
+| dist_capital         = 419
+<!-- Características geográficas -->
+| área                 = 258.511
+| área_ref             =<ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial  |acessodata=5 dez. 2010|data=10 out. 2002|autor=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 4885
+| data_pop             = censo IBGE/2022<ref name=IBGE_Panorama>{{citar web |url =https://cidades.ibge.gov.br/brasil/mg/sao-pedro-da-uniao/panorama |título=São Pedro da União |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data= |acessodata = 2024-06-14}}</ref>
+| altitude             = 932
+| clima                = Tropical de Altitude
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.674 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking IDHM Municípios 2010 |data=2013 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de junho de 2015}}</ref>
+| pib                  = {{formatnum:78918.13}} mil
+| data_pib             = [[IBGE]]/[[2015]]<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/sao-pedro-da-uniao/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios 2015 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=22 mar. 2018}}</ref>
+| pib_per_capita       = 15850.20
+| data_pib_per_capita  = [[IBGE]]/[[2015]]<ref name="IBGE_PIB"/>
+| site_prefeitura      = [http://www.saopedrodauniao.mg.gov.br www.saopedrodauniao.mg.gov.br]
+| site_câmara          = [http://www.camarasaopedrodauniao.mg.gov.br camarasaopedrodauniao.mg.gov.br]
+}}
+'''São Pedro da União''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. Sua população recenseada em 2022 era de {{fmtn|4885}} habitantes.<ref name=IBGE_Panorama/>
+
+{{Referências}}
+
+== Ligações externas ==
+* [http://www.saopedrodauniao.mg.gov.br Prefeitura de São Pedro da União]
+* [http://www.camarasaopedrodauniao.mg.gov.br Câmara de São Pedro da União]
+* [http://www.cidades.ibge.gov.br/brasil/mg/sao-pedro-da-uniao São Pedro da União no IBGE Cidades]
+
+{{Esboço-municípiosbr/Minas Gerais}}
+{{Portal3|Minas Gerais}}
+
+{{DEFAULTSORT:Sao Pedro Uniao}}
+[[Categoria:São Pedro da União| ]]
+[[Categoria:Fundações em Minas Gerais em 1944]]
+[[Categoria:Municípios de Minas Gerais]]

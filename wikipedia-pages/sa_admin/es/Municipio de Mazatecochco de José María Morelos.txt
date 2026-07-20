@@ -1,0 +1,91 @@
+{{Ficha de entidad subnacional
+| nombre               = Municipio de Mazatecochco de José María Morelos
+| país                 = [[México]]
+| unidad               = [[Municipios de México|Municipio]]
+| tipo_superior_1      = [[Organización territorial de México|Estado]]
+| superior_1           = [[Tlaxcala]]
+| tipo_superior_2      = [[Área Metropolitana]]
+| superior_2           = [[Zona Metropolitana de Puebla]]
+| bandera              = no
+| escudo               = no
+| mapa                 = {{Map draw|geotype=geoshape|width=250|height=250|align=center|zoom=12|fill=#4D87CA|fill-opacity=0.1}}
+| imagen               = {{Imagen múltiple
+ | posición_tabla = center
+ | ancho_total    = 275
+ | perrow         = 1/2
+ 
+ | foto1          = Parroquia de San Cosme, Mazatecochco, Tlaxcala.jpg
+ | foto2          = Atrio adornado para la fiesta patronal en Mazatecochco, Tlaxcala.jpg
+ | foto3          = Desde Mazatecochco.jpg
+}}
+| pie_de_imagen        = Parroquia de San Cosme y San Damián, centro de Mazatecochco y paisaje del municipio.
+
+| dirigentes_títulos   = Presidente municipal
+| dirigentes_nombres   = [[Archivo:PVE logo (Mexico).svg|20px|link=Partido Verde Ecologista de México]] Emilio González Cortés {{small|([[Anexo:Presidentes municipales de Tlaxcala (2024-2027)|2024-2027]])}}
+| población            = 11 592
+| población_puesto     = 
+| población_año        = 2020
+| población_post       = <ref name="INEGI">{{cita web |url=http://www.inegi.org.mx/sistemas/consulta_resultados/iter2010.aspx?c=27329&s=est |título=Principales resultados por localidad 2010 (ITER) |año=2010 |autor=Instituto Nacional de Estadística y Geografía}}</ref>
+| densidad             = 
+| densidad_post        = 
+| horario              = [[Tiempo del Centro]] ([[UTC -6]])
+| página web           = 
+| lema                 = 
+| apodo                = 
+| fundación            = 
+| fundador             = 
+| gentilicio           = 
+| código_postal        = 
+| prefijo telefónico   = 
+| IDH año              = 2023
+| IDH                  = 0.725
+| IDH categoría        = <span style="color:#009900;">'''Alto'''
+}}
+El '''Municipio de Mazatecochco de José María Morelos''' es uno de los 60 municipios del [[estado de Tlaxcala]], en México. Cuenta con una población de  11 592 (2020) habitantes y se ubica en las faldas del volcán de [[La Malinche (volcán)|la Malinche]]. Fue fundado como municipio libre el 20 de enero de 1943 Su cabecera es la localidad de [[Mazatecochco de José María Morelos]].<ref>{{cita web|título=Mazatecochco de José María Morelos|url=http://www.inafed.gob.mx/work/enciclopedia/EMM29tlaxcala/municipios/29017a.html|obra=Enciclopedia de los Municipios y Delegaciones de México|editorial=Inafed|idioma=español|fechaacceso=20 de junio de 2015|fechaarchivo=27 de mayo de 2018|urlarchivo=https://web.archive.org/web/20180527025251/http://inafed.gob.mx/work/enciclopedia/EMM29tlaxcala/municipios/29017a.html|deadurl=yes}}</ref> Mazatecochco es parte de la [[Zona Metropolitana de Puebla-Tlaxcala]].<ref>{{Cita web|url = http://www.inegi.org.mx/prod_serv/contenidos/espanol/bvinegi/productos/geografia/publicaciones/delimex05/DZMM-2005_34.pdf|título = Zona metropolitana de Puebla-Tlaxcala.|autor = INEGI|enlaceautor = |fecha = 2005|idioma = |editorial = |fechaacceso = 20 de julio de 2015|sitioweb = }}</ref>
+
+== Toponimia ==
+La palabra Mazatecochco proviene del náhuatl de los vocablos mazatl que significa venado, así como de tecochtli que quiere decir agujero o abrevadero y co que significa lugar, de esta forma se puede traducir Mazatecochco como "en el escondite o en el abrevadero de venados". Fue nombrado también en honor al héroe de la independencia [[José María Morelos y Pavón]].
+
+== Geografía ==
+Cuenta con una extensión territorial de 15.467 km², a una altitud media de 2,310 {{esd|m s. n. m.}} Colinda al norte con el [[municipio de Acuamanala de Miguel Hidalgo]]; al sur y al oeste con [[Municipio de Papalotla de Xicohténcatl|Papalotla de Xicohténcatl]];  y al este con [[Municipio de San Pablo del Monte|San Pablo del Monte]].
+
+== Demografía ==
+
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de Mazatecochco contaba con 4 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Tlaxcala|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825198022.pdf|fechaacceso=mayo de 2026|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2026|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|290170001
+|'''[[Mazatecochco de José María Morelos|Mazatecochco]]'''
+| align="right" |11&nbsp;580
+|-
+|290170007
+|Zacatecoma
+| align="right" |5
+|-
+|290170015
+|San Juan Ixhualco
+| align="right" |4
+|-
+|290170018
+|San Isidro
+| align="right" |3
+|-
+! colspan="2" |Total municipal
+!11&nbsp;592
+|}
+
+== Economía ==
+Es un municipio eminentemente agrícola, aunque también se practica la ganadería y la silvicultura.{{Cr}}
+
+== Véase también ==
+* [[Municipios de Tlaxcala]]
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipio de Mazatecochco de José María Morelos| ]]

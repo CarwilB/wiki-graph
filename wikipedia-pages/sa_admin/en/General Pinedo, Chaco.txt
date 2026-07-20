@@ -1,0 +1,69 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = General Pinedo
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| settlement_type         = [[List of cities in Argentina|Town]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| motto                   = 
+| image_map               = 
+| map_alt                 = 
+| map_caption             = 
+| pushpin_map             = Argentina
+| pushpin_label_position  = 
+| pushpin_map_alt         = 
+| pushpin_map_caption     = Location of General Pinedo in Argentina
+| coordinates             = {{coord|27|19|S|61|17|W|region:AR_type:city|display=inline,title}}
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Argentina}}
+| subdivision_type1       = [[Provinces of Argentina|Province]]
+| subdivision_name1       = [[Chaco Province|Chaco]]
+| subdivision_type2       = [[Departments of Argentina|Department]]
+| subdivision_name2       = [[Doce de Octubre Department|12 de Octubre]]
+| established_title       = 
+| established_date        = 
+| founder                 = 
+| government_footnotes    = 
+| leader_party            = 
+| leader_title            = 
+| leader_name             = 
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 
+| population_footnotes    = 
+| population_total        = 15741
+| population_as_of        = 
+| population_density_km2  = auto
+| population_demonym      = 
+| population_note         = 
+| timezone1               = [[Time in Argentina|ART]]
+| utc_offset1             = &minus;3
+| timezone1_DST           = 
+| utc_offset1_DST         = 
+| postal_code_type        = [[Argentine postal code|CPA base]]
+| postal_code             = [[ISO 3166-2:AR|H]]3732
+| area_code_type          = [[Telephone numbering in Argentina|Dialing code]]
+| area_code               = +54 3731
+| blank_name              = [[Köppen climate classification|Climate]]
+| blank_info              = [[Humid subtropical climate|Cwa]]
+| website                 = <!-- [http://www.example.com example.com] -->
+| footnotes               = 
+}}
+'''General Pinedo''' is a town in the south of the [[provinces of Argentina|province]] of [[Chaco Province|Chaco]], Argentina. It has about 16,000 inhabitants as per the {{census-ar|2001}}, and is the head town of the 12 de Octubre Department.
+
+==References==
+{{portal|Argentina}}
+* {{ar-mi-muni|CHA024}}
+
+[[Category:Cities in Chaco Province]]
+{{ChacoAR-geo-stub}}

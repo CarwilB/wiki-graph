@@ -1,0 +1,51 @@
+{{Ficha de entidad subnacional
+|nombre = Matambú
+|unidad = [[Distritos de Costa Rica|Distrito]]
+|mapa = {{map draw
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=13}}
+|pie_mapa = Matambú
+|mapa_loc = Costa Rica
+|mapa_loc_1 = Provincia de Guanacaste
+|fundación = 25 de julio de 2017
+|superficie = <!-- wikidata -->
+|elevación_media = <!-- wikidata -->
+|población = <!-- wikidata -->
+|población_año = <!-- wikidata -->
+|tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+|superior_1 = {{CRI|G}}
+|tipo_superior_2 = [[Cantones de Costa Rica|Cantón]]
+|superior_2 = {{Bandera2|Cantón de Hojancha}}
+|horario = [[UTC-6]]
+|código_postal_nombre = [[Anexo:Códigos postales de Costa Rica|Código postal]]
+|cp = <!-- wikidata -->
+}}
+{{Población histórica por censo de Costa Rica}}
+'''Matambú''' es un distrito del cantón de [[Cantón de Hojancha|Hojancha]], en la provincia de [[Provincia de Guanacaste|Guanacaste]], de [[Costa Rica]].<ref name="dta2017">{{cita libro|título=División Territorial Administrativa de la República de Costa Rica|fecha=8 de marzo de 2017|editorial=Editorial Digital de la Imprenta Nacional|isbn=978-9977-58-477-5|url=https://www.imprentanacional.go.cr/editorialdigital/libros/historiaygeografia/division_17.pdf}}</ref>
+
+Se ubica dentro del [[Territorio Indígena Matambú|territorio indígena Matambú]] de la etnia [[chorotega]].
+
+== Historia ==
+Matambú fue creado el 25 de julio de 2017 por medio de Ley 9463.<ref name="dta2017" />
+
+== Geografía == 
+Matambú cuenta con una elevación media de 300 m s. n. m.<ref name="divadm">{{cita web |título=Declara oficial para efectos administrativos, la aprobación de la División Territorial Administrativa de la República N°41548-MGP |url=http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=88416&nValor3=115607&param2=1&strTipM=TC&lResultado=1&strSim=simp |website=Sistema Costarricense de Información Jurídica |fechaacceso=5 de setiembre de 2020 |fecha=19 de marzo de 2019}}</ref>
+<!--== Geografía ==
+{{Cita geográfica de región de Costa Rica}}
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}-->
+== Transporte ==
+=== Carreteras ===
+Al distrito lo atraviesan las siguientes rutas nacionales de carretera:
+*[[Archivo:CR RNS 158.svg|25px]] [[Ruta 158 (Costa Rica)|Ruta nacional 158]]
+
+== Bibliografía ==
+*{{cita noticia |nombre =Carlos |apellido =Arrieta Pérez |título =Matambú es el nuevo distrito de Hojancha |url =http://www.elpais.cr/2017/07/18/matambu-es-el-nuevo-distrito-de-hojancha/ |periódico =Diario Digital Nuestro País |editorial = |fecha =18 de julio de 2017 |fechaacceso =29 de julio de 2017 }}
+
+== Referencias ==
+{{Listaref}}
+{{Control de autoridades}}
+[[Categoría:Distritos del cantón de Hojancha]]

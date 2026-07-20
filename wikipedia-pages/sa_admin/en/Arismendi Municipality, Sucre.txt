@@ -1,0 +1,62 @@
+{{Infobox settlement 
+| name                    = Arismendi Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Arismendi
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = 
+| image_caption           = 
+| image_flag               = 
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Sucre State|Sucre]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Arismendi Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Sucre State|Sucre]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 
+| population_note         = 
+| population_total        = 
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = {{official website|{{#property:P856}}}}
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+'''Arismendi Blanco''' is a municipality of [[Sucre (state)|Sucre]], [[Venezuela]]. It has five [[Parishes of Venezuela|parishes]], and the municipal seat is in [[Río Caribe]]. As of 2021, it has a population of 54,735.<ref>{{cite web |title=Elecciones Regionales y Municipales – Municipio Arismendi |url=http://www.cne.gob.ve/web/mapas/mapas_cargos_a_elegir/documentos/17_ce_sucre_concejales_2021.pdf |website=Consejo Nacional Electoral |access-date=5 February 2024 |pages=1–2 |date=30 November 2021}}</ref>
+
+== References ==
+{{reflist}}
+
+[[Category:Municipalities of Sucre (state)]]
+
+{{SucreVE-geo-stub}}

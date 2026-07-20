@@ -1,0 +1,121 @@
+{{Ficha de entidad subnacional
+| nombre = San José
+| nombre original = San José del Portillo
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| mapa_loc = Honduras
+| subdivisión = 6 aldeas y 55 caseríos
+| elevación_media = 285
+| superficie = 63.30
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 4910
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0614__san_jos%C3%A9/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| densidad = 77.57
+| fundación = 1861
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''San José''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]].
+
+== Toponimia ==
+Su nombre proviene de [[José de Nazaret]], santo de la Iglesia católica.
+
+== Límites ==
+{| class="wikitable"
+|+Límites de San José
+!Orientación
+!Límite
+|-
+| rowspan="2" |Norte
+|Municipio de [[Alubarén]], Francisco Morazán
+|-
+|Municipio de [[Reitoca]], Francisco Morazán
+|-
+|Sur
+|Municipio de [[Pespire]], Choluteca
+|-
+|Este
+|Municipio de [[La Venta (Honduras)|La Venta]], Francisco Morazán
+|-
+| rowspan="2" |Oeste
+|Municipio de [[San Miguelito (Honduras)|San Miguelito]], Francisco Morazán
+|-
+|Municipio de [[La Libertad (Francisco Morazán)|La Libertad]], Francisco Morazán<ref name="OT">{{enlace roto|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/san_jose_de_choluteca.pdf|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/san_jose_de_choluteca.pdf|bot=InternetArchiveBot}} Datos de organización territorial de Honduras</ref>
+|}
+
+== Historia ==
+Fundada en 1861, era una aldea de Alubarén y formaba parte de Reitoca, hasta 1880 formó parte de Distrito de Pespire con categoría de municipio y con el nombre de San José del Portillo, después cambió el nombre por San José de Choluteca.<ref>Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 2,606 (53.1%)
+| valor1 = 53.1
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 2,305 (46.9%)
+| valor2 = 46.9
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 1,560 (31.8%)
+| valor1 = 31.8
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 2,838 (57.8%)
+| valor2 = 57.8
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 512 (10.4%)
+| valor3 = 10.4
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 4,910 (100%)
+| valor1 = 100
+| color1 = #109618
+}}
+San José, Choluteca tiene una población actual de 4,910 habitantes. De la población total, el 53.1% son hombres y el 46.9% son mujeres. Casi el 100% de la población vive en la zona rural.<ref name="INE"/>
+
+== División política ==
+Aldeas: 6 (2013)
+
+Caseríos: 55 (2013)
+
+{| class="wikitable"
+|+Aldeas de San José
+!Código
+!Aldea
+|-
+|061401
+|San José (cabecera del municipio)
+|-
+|061402
+|Coraycito
+|-
+|061403
+|El Cacao
+|-
+|061404
+|El Macuelizo
+|-
+|061405
+|La Crucita
+|-
+|061406
+|Las Marías
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Choluteca]]

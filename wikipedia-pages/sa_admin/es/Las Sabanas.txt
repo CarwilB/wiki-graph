@@ -1,0 +1,83 @@
+{{Ficha de entidad subnacional
+| nombre = Las Sabanas
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|MD}}
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.3460
+ |longitude= -86.6460
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=11}}
+| subdivisión = 9 comunidades
+| elevación_media = 1,252
+| superficie = 64.54
+| superficie_puesto = 137
+| número_entidades = 153
+| población_puesto = 150
+| población_año = 2023
+| población = 5063
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/madriz/2040__las_sabanas/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 1253
+| densidad = 78.45
+| fundación = 18 de agosto de 1942 ({{Edad|18|8|1942}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 35500
+}}
+'''Las Sabanas''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Madriz|Madriz]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte con el municipio de [[San Lucas (Nicaragua)|San Lucas]], al sur con el municipio de [[San José de Cusmapa]], al este con el municipio de [[Pueblo Nuevo (Nicaragua)|Pueblo Nuevo]] y al oeste con la República de [[Honduras]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=26 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 262 kilómetros de la capital de [[Managua]].
+
+== Historia ==
+En 1900 al territorio del actual municipio de Las Sabanas se le conocía con el nombre de "Sabanetas". Las familias oriundas de este municipio fueron los Castillo, Vanegas, Cálix y López. En años posteriores (1901-1903), la población fue aumentando producto de inmigraciones forzadas de ciudadanos hondureños que huían de la guerra que se desarrollaba en su país. En 1913 se produjeron algunos inconvenientes de carácter legal, que afectaron a los municipios de San Lucas y Las Sabanas, en los que, por error del Congreso, el municipio de San Lucas tomó el nombre de Las Sabanas como si se tratase de un pueblo único y enclavado en un mismo asiento territorial. Para 1937 el territorio del municipio de Las Sabanas se independizó del departamento de [[Departamento de Nueva Segovia|Nueva Segovia]] para integrarse al recién creado departamento de Madriz. Por Ley Legislativa del 18 de agosto de 1942 el actual asentamiento urbano fue erigido con el título de "Pueblo" con el nombre de Las Sabanas; de esta forma queda solucionado el inconveniente entre el municipio de San Lucas y éste.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 2,520 (49.8%)
+| valor1 = 49.8
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 2,543 (50.2%)
+| valor2 = 50.2
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 3,810 (75.3%)
+| valor1 = 75.3
+| color1 = #109618
+| etiqueta2 = Urbano: 1,253 (24.7%)
+| valor2 = 24.7
+| color2 = #FF9900
+}}
+Las Sabanas tiene una población actual de 5,063 habitantes. De la población total, el 49.8% son hombres y el 50.2% son mujeres. Casi el 24.7% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un clima que se caracteriza por ser muy variado, en las partes bajas es de [[Clima semiárido cálido|tipo tropical seco]], tornándose húmedo en las partes elevadas y montañosas. La temperatura oscila entre los 26 a 27&nbsp;°C. La precipitación varía entre los 1200 y 1400 mm.<ref name='INIFOM'/>
+
+Se cuenta con una vegetación variada, por las características semi húmedas, que prevalecen en el territorio; lográndose encontrar pinos, café, roble, guásimo, eucalipto, carbón y cedro.<ref name='INIFOM'/>
+
+== Localidades ==
+Existen un total de 9 comunidades en el término municipal:<ref>Alcaldía de Las Sabanas.</ref> Las Sabanas, El Cipián, Quebrada Honda, Miramar, Buena Vista, Apanaje, Castillito, El Castillo y El Encino.
+
+== Economía ==
+La actividad económica que predomina en el municipio es la agricultura. De acuerdo a datos suministrado por el Instituto Nacional de Tecnología Agropecuaria, delegación Madriz, los cultivos predominantes en el municipio son: [[Phaseolus vulgaris|frijol]], [[Sorghum|sorgo]], [[Zea mays|maíz]] y [[Coffea|café]].<ref name='INIFOM'/>
+
+== Cultura ==
+Las Sabanas celebra sus fiestas patronales en honor a [[Isidro Labrador|San Isidro Labrador]], el 15 de mayo de cada año.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Madriz]]

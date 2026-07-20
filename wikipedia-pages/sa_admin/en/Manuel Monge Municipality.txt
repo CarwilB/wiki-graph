@@ -1,0 +1,78 @@
+{{Infobox settlement 
+| name                    = Manuel Monge Municipality
+| official_name            =
+| other_name              = 
+| native_name             = Municipio Manuel Monge
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = Plaza Bolívar de Yumare.jpg
+| image_caption           = 
+| image_flag               = Flag of Manuel Monge municipality.webp
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Yaracuy]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Manuel Monge Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Yaracuy]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 2011
+| population_note         = 
+| population_total        = 13431
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              =  &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = {{official website|{{#property:P856}}}}
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+'''Manuel Monge''' is one of the 14 municipalities of the state of [[Yaracuy]], [[Venezuela]]. The municipality is located in northern Yaracuy, occupying an area of 474km² with a population of 13,431 inhabitants, as of the 2011 census. The [[municipal seat]] is located in [[Yumare]]. The municipality's economy relies heavily on [[agriculture]] and [[livestock]]. It is a notable regional producer of [[sugarcane]], [[black turtle bean|black beans]], [[sweet potatoes]], and low-acidity [[orange (fruit)|oranges]], alongside a significant dual-purpose [[cattle]] sector where [[milk]] production is a major source of income.
+
+==Economy==
+Like most municipalities in [[Yaracuy]] State, the economy of Manuel Monge is based on [[agriculture]], being the fourth largest producer of [[sweet potatoes]] (13.7%) and [[orange (fruit)|oranges]] (11.9%), as well as [[sugarcane]] (3.8%) and [[black turtle bean|black beans]] (0.9%).<ref name="OQHernández">{{cite web|url=https://bibliofep.fundacionempresaspolar.org/media/1378336/gv_t7_c58_p416_489_yaracuy_lres_single_preview.pdf|title=Estado Yaracuy|trans-title=Yaracuy State|lang=es|first=Octaviano Quiroz|last=Hernández|website=GeoVenezuela|publisher=[[Empresas Polar|Fundación Empresas Polar]]|access-date=31 May 2026}}</ref> Particularly around the capital [[Yumare]], the municipality is well known for its citrus production, which are uniquely characterised by low acidity levels.<ref>{{cite journal |last=Pérez Macías |first=Mercedes |title=Aproximación al comportamiento climático en la zona citrícola de Yumare, estado Yaracuy, Venezuela|trans-title=An approach to climatic behavior in the citrus zone of Yumare, Yaracuy state, Venezuela
+|lang=es|url=https://dialnet.unirioja.es/descarga/articulo/3308308.pdf |journal=Dialnet|access-date=31 May 2026}}</ref>
+
+As well as agriculture, the economy of Manuel Monge municipality relies on livestock with small and medium-scale farms dedicated to dual-purpose [[cattle]] farming, where [[milk]] production serves a primary source of income for the local rural population.<ref>{{cite journal |first1=Jorge A.|last1=Borges |first2=Mariana|last2=Barrios|first3=Espartaco|last3=Sandoval|first4=Darwin|last4=Sánchez|first5=Lisbeth|last5=Dávila|first6=Oswaldo|last6=Márquez |year=2014 |title=Abordaje funcional del subsistema alimentación en fincas doble propósito del valle de Aroa, estado Yaracuy, Venezuela|trans-title=Functional approach of feeding subsystem in dual purpose farms in the Aroa valley, Yaracuy State, Venezuela|lang=es |journal=Zootecnia Tropical |volume=32 |issue=2 |pages=159–169 |url=https://ve.scielo.org/pdf/zt/v32n2/art08.pdf|access-date=31 May 2026}}</ref>
+
+==Demographics==
+Based on the [[2011 Venezuelan census]], The population of the Manuel Monge Municipality was 13,431 people, accounting for 2.09% of the total population of the state of [[Yaracuy]].<ref>{{cite web|url=https://www.citypopulation.de/en/venezuela/admin/22__yaracuy/|title=Yaracuy (State in Venezuela)|website=CityPopulation.de|date=11 May 2019|access-date=31 May 2026}}</ref> Only a third of the population (32.09%) resides in [[Yumare]], the [[municipal seat]] of the municipality.<ref>{{cite web|url=https://www.citypopulation.de/en/venezuela/yaracuy/2208__manuel_monge/|title=Urban Localities in Manuel Monge (Yaracuy, Venezuela)|website=CityPopulation.de|date=25 June 2017|access-date=31 May 2026}}</ref>
+
+By June 2019, official projections from the [[Statistics National Institute (Venezuela)|Venezuelan Statistics National Institute]] estimated the population of Manuel Monge as 15,417 people, representing an [[annual growth rate]] of 1.7% since 2011 and showing a population density of 32.53 inhabitants/km². However, these projections do not account for the impact of emigration linked to the country's recent economic and political circumstances.<ref name="CityPopulation.de">{{cite web|url=https://www.citypopulation.de/en/venezuela/admin/yaracuy/2208__manuel_monge/|title=Manuel Monge (Municipality in Venezuela)|website=CityPopulation.de|date=11 May 2019|access-date=31 May 2026}}</ref>
+
+The [[gender]] distribution of the population showed an even balance with 6,809 men (51.7%) and 6,371 women (48.3%). The [[age distribution]] showed that the largest segment of the population was aged 15 to 64, comprising 63% of the people. Younger people aged 0 to 14 made up 32.1% of the population, while those aged 65 and older accounted for the remaining 4.9%. The municipality is mostly rural, with 67.9% of the inhabitants (8,951) living in [[rural areas]] compared to 32.1% (4,229) in [[urban centers]].<ref name="CityPopulation.de"/>
+
+Ethnically, the municipality identified as predominantly [[Mestizo]] (59%) and [[White people]] (31.5%). Minority groups included 7.3% [[Afro-Venezuelans]] and 2.2% belonging to other ethnic groups, with 11 individuals identifying as [[indigenous peoples|indigenous]]. The [[literacy rate]] was 90%, with 1,044 inhabitants of Manuel Monge not able to read or write.<ref name="CityPopulation.de"/>
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://web.archive.org/web/20090211044801/http://manuelmonge-yaracuy.gob.ve/portal-alcaldias/ Official site]
+
+[[Category:Municipalities of Yaracuy]]

@@ -1,0 +1,106 @@
+{{About|the municipality|the surname|Rodas (surname)}}
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Rodas
+|other_name             = Rose 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              = 
+|image_seal             = Escudo Rodas .jpg
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Rodas (Cuban municipal map).png
+|map_caption            = Rodas municipality (red) within <br> Cienfuegos Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Cienfuegos Province|Cienfuegos]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Founded
+|established_date       = 1859<ref name=guije/>
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 552
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 32,719
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|20|34|N|80|33|19|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 25
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-432
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Rodas''' ({{IPA|es|ˈroðas}}) is a municipality and town in the [[Cienfuegos Province]] of [[Cuba]]. It was founded in 1859<ref name=guije/> under the name of ''Lechuzo''. In 1879 it was renamed Rodas in honour of capitán general ''Caballero de Rodas''.
+
+==Geography==
+The municipality is divided into the [[barrio]]s and villages of Cabecera (the town proper), Ariza, [[Cartagena (Rodas)|Cartagena]], Congojas, Jabacoa, [[La Unión, Cienfuegos|La Unión]], Limones, Medidas, Santiago, Soledad and Turquino. Until the 1977 administrative reform, the village of [[Arriete-Ciego Montero]], currently in the municipality of [[Palmira, Cuba|Palmira]], was part of it.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/vrodas/index.htm|title=Rodas|author=Guije.com|accessdate=2007-10-07|language=es}}</ref>
+
+It is bordered by the municipalities of [[Aguada de Pasajeros]], [[Abreus]], [[Cienfuegos]], [[Palmira, Cuba|Palmira]], [[Lajas, Cuba|Lajas]], [[Santo Domingo, Cuba|Santo Domingo]] (in [[Villa Clara Province]]) and [[Los Arabos]] (in [[Matanzas Province]]).
+
+==Demographics==
+In 2022, the municipality of Rodas had a population of 32,719.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|552|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-07}}</ref> it has a population density of {{convert|59|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Rodas
+ | NE = [[Santo Domingo, Cuba|Santo Domingo]] ([[Villa Clara Province|Villa Clara]])
+ | E  = [[Lajas, Cuba|Lajas]]<br/>[[Palmira, Cuba|Palmira]]
+ | SE = [[Cienfuegos]]
+ | S  = [[Abreus, Cuba|Abreus]]
+ | W  = [[Aguada de Pasajeros]]
+ | NW = [[Los Arabos]] ([[Matanzas Province|Matanzas]])
+}}
+{{Municipalities in Cienfuegos}}
+{{Authority control}}
+
+[[Category:Populated places in Cienfuegos Province]]
+
+
+{{Cuba-geo-stub}}

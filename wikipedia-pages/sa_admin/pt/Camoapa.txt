@@ -1,0 +1,30 @@
+{{Info/Assentamento
+|nome                    = Camoapa
+|assentamento_tipo       = Município
+|imagem_horizonte        = 
+|imagem_tamanho          = 280px
+|imagem_legenda          = 
+|imagem_bandeira         = Bandera de Camoapa.png
+|imagem_escudo           = Escudo de Camoapa.png
+|mapa_alfinete           = Nicarágua
+|mapa_alfinete_posição   = top
+|mapa_alfinete_tamanho   = 280
+|mapa_alfinete_legenda   = Localização de Camoapa na Nicarágua
+|latd  = 12 |latm  = 23 |lats  = 00 |latNS  = N
+|longd = 85 |longm = 31 |longs = 00 |longEW = O
+|subdivisão_tipo         = [[Países do Mundo|País]]
+|subdivisão_nome         = [[Nicarágua]]
+|subdivisão_tipo1        = [[Departamentos da Nicarágua|Departamento]]
+|subdivisão_nome1        = [[Boaco (departamento)|Boaco]]
+|área_total_km2          = 1.483
+|população_notas         = 
+|população_total         = 39.830
+|população_em            = 2020
+|código_postal           = 52100
+}}
+'''Camoapa''' é um [[município]] da [[Nicarágua]], situado no [[Departamentos da Nicarágua|departamento]] de [[Boaco (departamento)|Boaco]]. Tem {{fmtn| 1.483 |[[Quilómetro quadrado|km²]]}} de área e sua população em 2020 foi estimada em 39.830 habitantes.<ref>{{citar web|url=http://pronicaragua.gob.ni/media/publications/Perfil_Demografico_2020_PWsyOuB.pdf|título=Perfil Demográfico - Distribución Poblacional por Departamento 2020|autor=Instituto Nacional de Información de Desarrollo (INIDE)|data=2020|publicado=PRONicarágua|acessodata=10 de junho de 2021|página=44|ling=es}}</ref>
+
+{{referências}}
+{{esboço-geoni}}
+{{Controle de autoridade}}
+[[Categoria:Municípios de Boaco (departamento)]]

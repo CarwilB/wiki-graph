@@ -1,0 +1,94 @@
+{{Ficha de entidad subnacional
+| nombre               = Municipio de<br>Pedro Ascencio Alquisiras
+| unidad               = [[Anexo:Municipios de Guerrero|Municipio]]
+| país                 = [[México]]
+| tipo_superior_1      = [[Anexo:Entidades federativas de México|Estado]]
+| superior_1           = [[Estado de Guerrero|Guerrero]]
+| mapa                 = {{Map draw|geotype=geoshape|width=250|height=250|align=center|zoom=10|fill=#4D87CA|fill-opacity=0.1}}
+| imagen               = 
+| pie_de_imagen        = 
+
+| capital_denominación = Cabecera municipal
+| capital              = [[Ixcapuzalco]]
+| dirigentes_títulos   = Presidente municipal
+| dirigentes_nombres   = [[Archivo:PRD logo (Mexico).svg|20px|link=Partido de la Revolución Democrática]] Austreberta López Rogel {{small|([[Anexo:Presidentes municipales de Guerrero (2024-2027)|2024-2027]])}}
+| subdivisión          = 
+| superficie           = 510.1
+| población            = 6978
+| página web           = 
+| apodo                = 
+| fecha_de_creación    = 28 de noviembre de 1890
+| elevación_alta       = 
+| gentilicio           = 
+| PIB_per_capita       = 
+| IDH                  = 
+}}
+El '''municipio de Pedro Ascencio Alquisiras''' es uno de los [[Anexo:Municipios de Guerrero|85 municipios]] que conforman el [[Estado de Guerrero]] en el sur de [[México]]. Se encuentra ubicado al norte de la ciudad de [[Chilpancingo]].
+
+== Toponimia ==
+El municipio fue fundado el 28 de noviembre de 1890, debe su nombre al insurgente [[Pedro Ascencio Alquisiras]] (1778-1821), quien luchó durante la guerra de la [[independencia de México]]. La cabecera municipal es [[Ixcapuzalco]].
+
+== Geografía ==
+Se encuentra al centro de la [[Norte (Guerrero)|región norte]] del estado de Guerrero entre las coordenadas 18° 39' y 18° 27' latitud norte y entre las coordenadas 99° 45' y 100° 00' longitud oeste. En su frontera norte colinda con el [[Estado de México]]; al poniente con los municipios de [[Ixcateopan de Cuauhtémoc (municipio)|Ixcateopan de Cuauhtémoc]] y [[Taxco de Alarcón (municipio)|Taxco de Alarcón]]; al sur y oeste con el [[municipio de Teloloapan]]. Cuenta con una extensión territorial de 510.1 km² con una altitud media de 283 {{esd|m s. n. m.}}, aunque en su zona montañosa las alturas varían entre los 1000 y 2000 m, siendo su altura más alta el monte de la Tentación.<ref name="E">{{cita web|url=http://www.e-local.gob.mx/work/templates/enciclo/guerrero/municipios/12047a.htm|título=Estado de Guerrero. Pedro Ascencio Alquisiras|fechaacceso=24 de enero de 2013|apellido=|nombre=|fecha=2009|obra=Enciclopedia de los municipios de México|idioma=|cita=|urlarchivo=https://web.archive.org/web/20110617102420/http://www.e-local.gob.mx/work/templates/enciclo/guerrero/municipios/12047a.htm|fechaarchivo=17 de junio de 2011}}</ref>
+
+== Demografía ==
+Según el ''II Conteo de Población y Vivienda'' efectuado por el [[Instituto Nacional de Estadística y Geografía]] (Inegi) en 2005, el municipio de Pedro Ascencio Alquisiras contaba hasta ese año con un total de 6987 habitantes.
+
+Las principales actividades sociales son la [[agricultura]] y la [[ganadería]]. Como actividades secundarias la [[minería]], la [[industria manufacturera]], el [[comercio]] y [[turismo]].<ref name="E"/>
+{| class="wikitable"
+|+'''Población histórica'''
+!Año  
+!Población 
+|-
+|'''1950'''
+|10548
+|-
+|'''1960'''
+|10353
+|-
+|'''1970'''
+|9530
+|-
+|'''1980'''
+|8470
+|-
+|'''1990'''
+|7779
+|-
+|'''2000'''
+|7852
+|-
+|'''2010'''
+|6978
+|}
+'''<u>Evolución de la población</u>'''<graph>{"version":2,"width":264,"height":258,"data":[{"name":"table","values":[{"x":1950,"y":10548,"Año":1950,"Población":10548},{"x":1960,"y":10353,"Año":1960,"Población":10353},{"x":1970,"y":9530,"Año":1970,"Población":9530},{"x":1980,"y":8470,"Año":1980,"Población":8470},{"x":1990,"y":7779,"Año":1990,"Población":7779},{"x":2000,"y":7852,"Año":2000,"Población":7852},{"x":2010,"y":6978,"Año":2010,"Población":6978}]}],"scales":[{"name":"x","type":"ordinal","range":"width","zero":false,"domain":{"data":"table","field":"x"}},{"name":"y","type":"linear","range":"height","nice":true,"domain":{"data":"table","field":"y"}}],"axes":[{"type":"x","scale":"x"},{"type":"y","scale":"y"}],"marks":[{"type":"rect","from":{"data":"table"},"properties":{"enter":{"x":{"scale":"x","field":"x"},"y":{"scale":"y","field":"y"},"y2":{"scale":"y","value":0},"fill":{"value":"steelblue"},"width":{"scale":"x","band":"true","offset":-1}}}}]}</graph>El municipio ha registrado un descenso continuo de su población, solo interrumpido por un leve crecimiento en el año 2000.
+=== Localidades ===
+En el [[Censo de México de 2020|censo de 2020]] el municipio de Pedro Ascencio Alquisiras contaba con 88 localidades.<ref>{{Cita libro|título=Panorama sociodemográfico de México. Guerrero|url=https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197858.pdf|fechaacceso=mayo de 2025|año=2021|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+{| class="wikitable sortable col3der"
+![[Código INEGI]]
+!Localidad
+!Población (2020)<ref>{{Cita web|url=https://www.inegi.org.mx/app/geo2/ahl/default.html#Catalogos_predefinidos|título=Topografía. Archivo histórico de localidades geoestadísticas. Catálogos predefinidos|fechaacceso=2025|fecha=16 de diciembre de 2024|editorial=[[Instituto Nacional de Estadística y Geografía]]}}</ref>
+|-
+|120470001
+|'''[[Ixcapuzalco]]'''
+|737
+|-
+| colspan="2" |''Otras localidades''
+| align="right" |6&nbsp;339
+|-
+! colspan="2" |Total municipal
+!7 076
+|}
+
+== Véase también ==
+* [[Norte (Guerrero)]]
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+* {{cita web |url=http://enciclopediagro.org/index.php/indices/indice-de-municipios/1246-pedro-ascencio-alquisiras?showall=&limitstart= |título=Pedro Ascencio Alquisiras |fechaacceso=24 de enero de 2013  |apellido=Guerrero Cultural Siglo XXI |nombre= |fecha= |obra=Enciclopedia guerrerense |idioma= |cita= }}
+
+{{ORDENAR:Pedro Ascencio Alquisiras}}
+{{Control de autoridades}}
+[[Categoría:Municipio de Pedro Ascencio Alquisiras| ]]

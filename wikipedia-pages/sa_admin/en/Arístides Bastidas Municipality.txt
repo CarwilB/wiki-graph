@@ -1,0 +1,77 @@
+{{Expand Spanish|Municipio Arístides Bastidas (Yaracuy)|topic=geo|date=December 2009}}
+{{Infobox settlement 
+| name                    = Arístides Bastidas Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Arístides Bastidas
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = 
+| image_caption           = 
+| image_flag               =
+| flag_size                = 100px
+| image_shield            = {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Yaracuy]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Arístides Bastidas Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|display=title,inline}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Yaracuy]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = 
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 2011
+| population_note         = 
+| population_total        = 21,546
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = 
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+'''Arístides Bastidas''' is one of the 14 municipalities of the state of [[Yaracuy]], [[Venezuela]]. The municipality is located in northern Yaracuy, occupying an area of 74 km² with a population of 21,546 inhabitants as of the 2011 census. The [[municipal seat]] is in [[San Pablo, Yaracuy|San Pablo]]. The municipality was established in 1993 in honour of Venezuelan journalist and scientist [[Arístides Bastidas]], born locally in San Pablo.
+
+==Name==
+Arístides Bastidas Municipality was established in 1993 in honour of Venezuelan journalist and scientist [[Arístides Bastidas]] who was born locally in [[San Pablo, Yaracuy|San Pablo]].<ref>{{cite web|url=https://albaciudad.org/wp-content/uploads/2017/01/Yaracuy-AristidesBastidas_Sucre.pdf|title=Municipios Arístides Bastidas y Sucre|trans-title=Arístides Bastidas and Sucre Municipalities
+|lang=es|website=Alba Ciudad 96.3 FM|publisher={{ill|Ministry of Culture (Venezuela)|es|Ministerio del Poder Popular para la Cultura (Venezuela)|lt=Ministry of Culture}}|access-date=31 May 2026}}</ref>
+
+==Demographics==
+Based on the [[2011 Venezuelan census]], The population of the Arístides Bastidas Municipality was 21,546 people, accounting for 3.36% of the total population of the state of [[Yaracuy]].<ref>{{cite web|url=https://www.citypopulation.de/en/venezuela/admin/22__yaracuy/|title=Yaracuy (State in Venezuela)|website=CityPopulation.de|date=11 May 2019|access-date=31 May 2026}}</ref> An overwhelming majority of the population (95%) resides in [[San Pablo, Yaracuy|San Pablo]], the [[municipal seat]] of the municipality.<ref>{{cite web|url=https://www.citypopulation.de/en/venezuela/yaracuy/2201__ar%C3%ADstides_bastidas/|title=Urban Localities in Arístides Bastidas (Yaracuy, Venezuela)|website=CityPopulation.de|date=25 June 2017|access-date=31 May 2026}}</ref>
+
+By June 2019, official projections from the [[Statistics National Institute (Venezuela)|Venezuelan Statistics National Institute]] estimated the population of Arístides Bastidas as 25,103 people, representing an [[annual growth rate]] of 1.9% since 2011 and showing a population density of 339.2 inhabitants/km². However, these projections do not account for the impact of emigration linked to the country's recent economic and political circumstances.<ref name="CityPopulation.de">{{cite web|url=https://www.citypopulation.de/en/venezuela/admin/yaracuy/2201__ar%C3%ADstides_bastidas/|title=Arístides Bastidas (Municipality in Venezuela)|website=CityPopulation.de|date=11 May 2019|access-date=31 May 2026}}</ref>
+
+The [[gender]] distribution of the population showed an even balance with 10,303 men (50.3%) and 10,182 women (49.7%). The [[age distribution]] showed that the largest segment of the population was aged 15 to 64, comprising 64.1% of the people. Younger people aged 0 to 14 made up 30.4% of the population, while those aged 65 and older accounted for the remaining 5.5%. The municipality is very highly urbanised, with 95% of the inhabitants (19,459) living in [[urban centers]] compared to only 5% (1,026) in [[rural areas]].<ref name="CityPopulation.de"/>
+
+Ethnically, the municipality identified as predominantly [[Mestizo]] (61.7%) and [[White people]] (32.9%). Minority groups included 5% [[Afro-Venezuelans]] and 0.3% belonging to other ethnic groups, with 9 individuals identifying as [[indigenous peoples|indigenous]]. The [[literacy rate]] was 93%, with 1,151 inhabitants of Arístides Bastidas not able to read or write.<ref name="CityPopulation.de"/>
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://web.archive.org/web/20080424052833/http://aristidesbastidas-yaracuy.gob.ve/portal-alcaldias/ Official site]
+
+[[Category:Municipalities of Yaracuy]]

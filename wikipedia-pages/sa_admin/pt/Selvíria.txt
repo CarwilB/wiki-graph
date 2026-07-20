@@ -1,0 +1,159 @@
+{{Info/Município do Brasil
+<!-- GeoID=5007802 -->
+<!-- Cabeçalho -->
+| nome                 = Selvíria
+| foto                 = Selvíria, State of Mato Grosso do Sul, Brazil - panoramio.jpg
+| leg_foto             = Vista parcial da região de Selvíria
+| apelido              = Dádiva da Represa de Ilha Solteira
+<!-- Dados gerais -->
+| brasão               = Brasao selviria.JPG
+| bandeira             = Band_Selviria.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          =12 de maio
+| fundação             ={{nowrap|{{dtlink|12|5|1980|idade}}}}
+| emancipação          ={{nowrap|{{dtlink|16|6|1981|idade}}}}
+| gentílico            =[[wikt:selvirense|selvirense]]
+| lema                 = 
+| padroeiro            = [[São João]]
+| prefeito             = Jaime<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=13 de janeiro de 2025}}</ref>
+| partido              = [[Partido da Social Democracia Brasileira|PSDB]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Brazil Mato Grosso do Sul Selviria location map.svg
+| latP                 = S | latG = 20 | latM = 22 | latS = 01
+| lonP                 = O | lonG = 51 | lonM = 25 | lonS = 08
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Leste de Mato Grosso do Sul|Leste de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Paranaíba|Paranaíba]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[Ilha Solteira|Ilha Solteira-SP]], [[Aparecida do Taboado]], [[Três Lagoas]] e [[Inocência (município)|Inocência]]
+| dist_capital         = 402
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 3258.653 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 36º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|autor2=IBGE |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:0.368}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Selvíria (sede), Véstia
+| população            = 6303 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 66º]]
+| data_pop             = est. [[IBGE]] 2011<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| altitude             = 357
+| altitude_ref         = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima                = [[tropical]]
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.736 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 40º]]
+| data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.420}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 12º]] 
+| data_gini            = est. [[IBGE]] 2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2000|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=2012-04-30|urlmorta=yes}}</ref>
+| pib                  = {{formatnum:84676.149}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 62º]]
+| data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 12814.19
+| data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+'''Selvíria''' é um [[Município (Brasil)|município brasileiro]] da [[região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]]. A cidade ficou conhecida como a ''Dádiva da Represa de Ilha Solteira'', pois recebeu muitos operários para a construção da represa situada no rio Paraná.
+
+==História==
+<!-- NÃO COPIE  nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Em fins dos anos cinquenta estavam prontos os estudos para o início da obra de construção de uma grande usina hidroelétrica que receberia o nome da Ilha Solteira no Rio Paraná. Em 1963 as obram tem início e logo haveria grande afluxo de trabalhadores de toda a região e estados vizinhos para a cidade-dormitório que se formou no lado paulista. A [[CESP]], construtora da usina em pouco tempo tinha 30 mil pessoas em sua vila, e estimulava o loteamento do povoado que se formava do outro lado, no então Estado de [[Mato Grosso]]. Definido o local onde seria construída a barragem de "Ilha Solteira", João Selvírio de Souza, com a colaboração de Norival Ventura da Silva e Aldo de Queiroz, resolveram implantar uma nova cidade. A locação do loteamento foi entregue a Sebastião Siqueira Júnior a qual, em dezembro de 1965 já haviam sido vendidos cerca de 600 lotes. Prova eloqüente do interesse despertado pela nova cidade.
+
+Os motivos eram óbvios: diminuir o peso de tanta gente dentro de suas instalações e minimizar problemas de habitação, segurança e até da prostituição que tanta população masculina atraia. E assim surgiu o loteamento de Selviria, assim chamada em razão de estar localizada em terras do fazendeiro [[João Selvirio de Souza]], um visionário que soube captar o momento histórico de criar uma vila e lucrar com venda das terras do cerrado. Em 1974, com o fim das obras da usina e consequente migração da mão-de-obra dos peões para outras hidroelétricas, como [[Rosana]], [[Nova Avanhandava]] e [[Água Vermelha]], a vila de Selvíria começou a definhar acompanhando a fuga de recursos. Era então uma vila-dormitório e crescera à sombra da CESP, mas agora o filão escasseava.
+
+Foi elevada a [[Distrito]] de [[Três Lagoas]] pela lei 3.737, de 4 de maio de 1976 e o município criado pela lei 79, de 12 de maio de 1980, sendo instalado em 16 de junho de 1981. Selvíria até hoje espera os royalties prometidos pela inundação de suas terras pela grande usina, pendência política que segue sem solução.
+
+==Geografia==
+===Localização===
+O município de  está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Leste de Mato Grosso do Sul|Leste de Mato Grosso do Sul]] ([[Microrregião de Paranaíba]]). Localiza-se a uma [[latitude]] 20º22'02" [[sul]] e a uma [[longitude]] 51º25'08" [[oeste]]. Distâncias:
+* {{fmtn|410|km}} de Campo Grande(MS), capital estadual. 
+* {{fmtn|798|km}} de Brasília, capital federal.
+* {{fmtn|690|km}} de São Paulo, metrópole nacional ([[São Paulo (estado)|São Paulo]])
+* 76&nbsp;km de Três Lagoas(MS)
+* 12&nbsp;km de Ilha Solteira(SP)
+* 54&nbsp;km de Aparecida do Taboado(MS)
+* 110&nbsp;km de Inocência(MS)
+* 102&nbsp;km de Paranaíba(MS)
+
+===Geografia física===
+;Solo
+
+Verifica-se a predominância de Latossolo Vermelho-Escuro de textura média e caráter álico, seguido pelos Argissolos, de textura média e fertilidade natural variável, e Alissolos e algumas áreas de Planossolos.
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|357|m}}. O norte do município apresenta um terreno mais movimentado, com modelados de dissecação colinosos que dão uma topografia ondulada. O restante da área é composto basicamente por relevos tabulares, sendo que, na medida em que se aproxima da calha do Rio Paraná, a inclinação das vertentes vai se ondulando. O município é composto por uma Região Geomorfológica, Região dos Planaltos AreníticoBasálticos Interiores, com as Unidades: Divisores Tabulares dos Rios Verde e Pardo e Patamares da Serra do Aporé.
+ 
+Apresenta relevo plano, geralmente elaborado por várias fases de retomada erosiva, com  relevos elaborados pela ação fluvial e áreas planas resultante de acumulação fluvial sujeita a inundações periódicas.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[AW]]). Apresenta clima Sub-úmido, com índice efetivo de umidade com valores anuais variando de 0 a 20%. A precipitação pluviométrica anual varia de 1.200 a 1.500mm. Excedente hídrico anual de 400 a 800mm durante três a quatro meses e deficiência hídrica de 500 a 650mm durante cinco meses. As temperaturas dos meses mais frios são maiores que 15&nbsp;°C e menores que 20&nbsp;°C. 
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]]. Rios do município:
+
+''[[Rio Paraná]]''
+
+Rio formado pela confluência dos rios Paranaíba (nasce em Goiás) e o Grande (cujas cabeceiras ficam na serra da Mantiqueira, em Minas Gerais), faz divisa entre Selvíria neste Estado e o Estado de São Paulo.
+
+''Outros rios''
+
+* Rio Pântano: afluente pela margem direita do rio Paraná, com limite entre os municípios de Aparecida do Taboado e Selvíria, no seu baixo curso.  
+* Rio Sucuriú: afluente pela margem direita do rio Paraná. Faz divisa entre os municípios de Selvíria e Três Lagoas, com extensão de 450&nbsp;km. Nasce no município de Costa Rica, na divisa com o Estado de Goiás e deságua pouco acima da cidade de Três Lagoas. Apresenta muitas cachoeiras, principalmente na parte superior.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. A cobertura vegetal predominante é a pastagem plantada, seguida da Savana (Cerrado). Em 
+menores proporções se distribuem várzeas e reflorestamento.
+
+===Geografia política===
+;Fuso horário
+
+Está situada a -1 hora com relação a [[Brasília]] e -4 com relação ao [[Meridiano de Greenwich]] ([[Tempo Universal Coordenado]]), embora no município seja utilizado o Horário de Brasília.
+
+;Área
+
+Ocupa uma superfície de de {{fmtn|3258.653|km²}}.
+ 
+;Subdivisões
+
+Além da sede, constitui ainda o bairro Véstia, outrora chamada de Guadalupe do Alto Paraná, um distrito cuja fundação desta remonta ao início do século XX.
+
+Fazem parte também do município, três assentamentos rurais: Alecrim, São Joaquim e Canoas.
+
+;Arredores
+
+[[Ilha Solteira|Ilha Solteira-SP]], [[Aparecida do Taboado]], [[Três Lagoas]] e [[Inocência]].
+
+==Demografia==
+Sua população estimada em 2011 era de 6.303 habitantes.
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Selvíria
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+* [http://www.selviria.ms.gov.br/ Página da Prefeitura Municipal]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1980]]

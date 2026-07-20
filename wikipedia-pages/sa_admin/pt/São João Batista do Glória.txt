@@ -1,0 +1,62 @@
+{{Info/Município do Brasil
+<!-- GeoID=3162203 -->
+<!-- Cabeçalho -->| nome = São João Batista do Glória
+| foto = Matriz de SJB. Glória.jpg
+| leg_foto = Igreja Matriz de São João Batista do Glória
+| apelido = <!-- Dados gerais -->
+| brasão = Brasaogloria.png
+| aniversário = 24 de junho
+| fundação = {{dtlink|24|6|1949|idade}}
+| gentílico = gloriense<ref name=IBGE>{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/sao-joao-batista-do-gloria/panorama |título=São João Batista do Glória |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=2024-11-17}}</ref>
+| padroeiro = [[São João Batista]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=8 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+| CEP = 37920-000 a 37921-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| prefeito = Eder Garcia
+| partido = [[Solidariedade (partido político)|Solidariedade]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = MinasGerais Municip SaoJoaoBatistadoGloria.svg
+| latP = S
+| latG = 20
+| latM = 38
+| latS = 27
+| lonP = O
+| lonG = 46
+| lonM = 30
+| lonS = 21
+| estado = Minas Gerais
+| região_intermediária = Varginha
+| data_mesorregião = [[IBGE]]/[[2017]]
+| região_imediata = Passos
+| data_microrregião = [[IBGE]]/[[2017]]
+| região_metropolitana = 
+| vizinhos = [[Vargem Bonita (Minas Gerais)|Vargem Bonita]] ao Norte, [[Passos (Minas Gerais)|Passos]] e [[Alpinópolis]] ao Sul, [[Capitólio (Minas Gerais)|Capitólio]] ao Leste e [[Delfinópolis]] a Oeste.
+| dist_capital = 374
+<!-- Características geográficas -->| área = 547.908
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 dez. 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 7652
+| data_pop = censo IBGE/2022<ref name=IBGE/>
+| altitude = 730
+| clima = subtropical quente
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.724 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking IDHM Municípios 2010 |data=2013 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de junho de 2015}}</ref>
+| pib = {{formatnum:344587.218}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 dez. 2010}}</ref>
+| pib_per_capita = 48417.48
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [http://www.gloria.mg.gov.br www.gloria.mg.gov.br]
+| site_câmara = [http://www.camaragloria.mg.gov.br www.camaragloria.mg.gov.br]
+}}
+'''São João Batista do Glória''' é um [[Município (Brasil)|município brasileiro]] situado no [[Sul de Minas Gerais|sul]] do [[estados do Brasil|estado]] de [[Minas Gerais]], sendo parte da [[Região Geográfica Imediata de Passos|Região Geográfica Imediata de Passos.]] Sua população recenseada pelo [[IBGE]] em 2022 era de {{fmtn|7652}} habitantes distribuídos em uma área total de 547,908km².<ref name="IBGE" /> É conhecido por seus moradores e pela região simplesmente como "'''Glória'''". {{Referências}}
+
+== Ligações externas ==
+*[http://www.gloria.mg.gov.br Prefeitura de São João Batista do Glória]
+*[http://www.camaragloria.mg.gov.br Câmara de São João Batista do Glória]
+*[http://www.cidades.ibge.gov.br/brasil/mg/sao-joao-batista-do-gloria Dados do IBGE de São João Batista do Glória]
+
+{{Lago de Furnas}}
+{{Esboço-municípiosbr/Minas Gerais}}
+{{Portal3|Minas Gerais}}
+
+{{DEFAULTSORT:Sao Joao Batista Gloria}}
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1949]]

@@ -1,0 +1,186 @@
+{{Info/Município do Brasil
+<!-- GeoID=5000252 -->
+<!-- Cabeçalho -->| nome = Alcinópolis
+| foto = 
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Alcinópolis.jpg
+| bandeira = Band_Alcinopolis.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 22 de abril
+| fundação = {{nowrap|{{dtlink|22|04|1992|idade}}}}
+| emancipação = {{nowrap|{{dtlink|1|1|1993|idade}}}}
+| gentílico = [[wikt:alcinopolense|alcinopolense]]
+| lema = 
+| padroeiro = [[Nossa Senhora Aparecida]]
+| prefeito = Weliton Guimarães<ref>{{citar web |url=https://www.assomasul.org.br/confira-os-prefeitos-eleitos-e-reeleitos-no-ms/|título=Confira os Prefeitos eleitos e reeleitos no MS|publicado=Assomasul - Associação dos Municípios de Mato Grosso do Sul|acessodata=6 de janeiro de 2025}}</ref>
+| partido = [[PSDB]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Brazil Mato Grosso do Sul Alcinopolis location map.svg
+| latP = S
+| latG = 18
+| latM = 19
+| latS = 26
+| lonP = O
+| lonG = 53
+| lonM = 42
+| lonS = 21
+| estado = Mato Grosso do Sul
+| mesorregião = [[Mesorregião do Centro-Norte de Mato Grosso do Sul|Centro Norte de Mato Grosso do Sul]]
+| data_mesorregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Alto Taquari|Alto Taquari]]
+| data_microrregião = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Pedro Gomes]], [[Coxim (Mato Grosso do Sul)|Coxim]], [[Camapuã]], [[Costa Rica (Mato Grosso do Sul)|Costa Rica]], [[Alto Araguaia]] ([[Mato Grosso|MT]]) e [[Alto Taquari]] (MT)
+| dist_capital = 303
+| dist_capital_ref = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->| área = 4399.676 <!--favor manter o formato-->
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = {{Formatnum:0.368}}
+| área_urbana_pos = [[Lista de municípios de Mato Grosso do Sul por área|MS: 58º]]
+| área_urbana_ref = est. [[Embrapa]]<ref name ="EMBRAPA_Área_Urbana">{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos = Alcinópolis (sede) e Pólvora
+| população = 4637 <!--favor manter o formato-->
+| população_pos = [[Lista de municípios de Mato Grosso do Sul por população|MS: 75º]]
+| data_pop = est. [[IBGE]]/2011<ref name="IBGE_Pop_2011">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/estimativa2011/POP2011_DOU.pdf |título=Estimativa Populacional 2011| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=1 de julho de 2011 |acessodata = 13 de setembro de 2011}}</ref>
+| densidade = {{fmtn|1.053|hab/km²}}
+| altitude = 443
+| altitude_ref = <ref name="Altitude">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/ms.html|título=Mato Grosso do Sul|data=|publicado=Embrapa|acessodata=19 de julho de 2011}}</ref>
+| clima = tropical
+| sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.745 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 34º]]
+| data_idh = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini = {{Formatnum:0.400}}
+| gini_pos = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 1º]]
+| data_gini = est. [[IBGE]]/2003<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI|data=2003|obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011|arquivourl=https://web.archive.org/web/20120430164910/http://www.ibge.gov.br/cidadesat/topwindow.htm?1|arquivodata=30 de Abril de 2012|urlmorta=yes}}</ref>
+| pib = {{formatnum:85065.733}} mil
+| pib_pos = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 61º]]
+| data_pib = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 19158.95
+| data_pib_per_capita = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+}}
+
+'''Alcinópolis''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Mato Grosso do Sul]]. Com uma população de 4 637 habitantes no [[IBGE]] em 2010, a cidade possui o [[Lista de municípios de Mato Grosso do Sul por índice de Gini|melhor índice de Gini]] de Mato Grosso do Sul, com um índice de 0.745, juntamente com as cidades de [[Costa Rica (Mato Grosso do Sul)|Costa Rica]] e [[Jaraguari]].
+
+Alcinópolis está situado numa das regiões agrícolas de maior altitude do estado, produzindo uma grande quantidade de semente de soja e algodão com excelente qualidade. O município é um dos primeiros em produtividade do estado de Mato Grosso do Sul.<!-- carece de fontes -->
+
+==Geografia==
+===Localização===
+O município de Alcinópolis está localizada no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], à [[Mesorregião do Centro-Norte de Mato Grosso do Sul|norte de Mato Grosso do Sul]] ([[Microrregião do Alto Taquari]]) e próximo à divisa com o [[Mato Grosso]]. Localiza-se a uma [[latitude]] 18º19’27” [[sul]] e a uma [[longitude]] 53º42’22” [[oeste]]. A cidade está numa posição estratégica bem situada no coração do Centro-Oeste, distante 300&nbsp;km aproximadamente de [[Campo Grande (Mato Grosso do Sul)]], 600&nbsp;km de [[Cuiabá]], 625&nbsp;km de [[Goiânia]] e 823&nbsp;km de [[Brasília]].
+
+===Geografia física===
+;Solo
+
+No município de Alcinópolis são encontrados os seguintes tipos de solos: Predomínio de [[Neossolo]] Quartzarênico de baixa fertilidade natural, são solos pouco desenvolvidos, profundos e muito profundos, excessivamente drenados, mas com baixa capacidade de retenção de água, torna esse solo desaconselhável à utilização agrícola, associada a [[Latossolo]] Vermelho-Escuro distrófico de textura argilosa e muito argilosa, que são solos minerais, não hidromórficos, altamente intemperizados, profundos, a muito profundos, bem drenados, [[Argissolo]]s, são solos minerais não hidromórficos, geralmente são ácidos e de baixa fertilidade.
+
+; Relevo
+
+Está a uma altitude de {{fmtn|443|m}}. Constituído por modelados de dissecação tabulares colinosos e aguçados. Entremeados a estes, encontram-se uma série de cuestas, pontões e escarpas no extremo Oeste, assim como na região central do município. O município de Alcinópolis encontra-se em duas Regiões Geomorfológicas: 
+* Região dos Planaltos Arenítico-Basálticos Interiores, dividindo-se em três unidades geomorfológicas: Patamares do Taquari-Itiquira, Depressões Interiores e Divisores Tabulares dos Rios Verde e Pardo.
+* Região dos Chapadões Residuais da [[Bacia do Paraná]], na unidade Chapadão das Emas.
+
+Apresenta relevo plano geralmente elaborado por várias fases de retomada erosiva, relevos elaborados pela ação fluvial apresentando topos colinosos e áreas planas resultante de acumulação fluvial sujeita a inundações periódicas.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[AW]]) sub-úmido, com duas estações bem definidas: quente e úmida (período das chuvas), temperatura média 26&nbsp;°C, com regime de chuvas entre os meses de setembro a maio e período seco de junho a setembro. Índice de maior precipitação pluviométrica: 1.450mm (anuais)
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do rio Paraguai]], origem da [[Bacia do Rio da Prata]]. Rios do município:
+*[[Rio Jauru]]: afluente pela margem direita do rio Coxim. Nasce na serra do Taquari, fazendo divisa entre o município de Alcinópolis e Costa Rica e Alcinópolis e Figueirão.
+*[[Rio Taquari (Mato Grosso do Sul)|Rio Taquari]]: afluente pela margem esquerda do rio Paraguai, desaguando nele algumas léguas acima do distrito de Albuquerque ([[Corumbá]]). Suas nascentes ficam na serra do Caiapó, extremo sudeste de Mato Grosso. Faz divisa entre o município de Alcinópolis e o Estado de Mato Grosso e entre os municípios de  Pedro Gomes e Alcinópolis. Com a extensão aproximada de 750&nbsp;km, é navegável de Coxim até a foz (400&nbsp;km), trecho que fica dentro do Pantanal.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]]. A análise da vegetação do município revela o domínio do Cerrado Arbóreo Denso (Campo Cerrado), o aspecto fisionômico desta formação é caracterizado pelo agrupamento de espécies vegetais arbóreas, com circunferência raramente ultrapassando 1,0m e atinge uma altura média de 10m, apresentando-se dispostas de maneira mais ou menos ordenada, revestido por casca grossa e rugosa, folha coriácea, caules tortuosos. Quase equivalente é a área de pastagem plantada e em enclaves com a Floresta Estacional Semidecidual Submontana, formação de caráter interfluvial e que se estende, principalmente, nas áreas onde houve derrames basálticos em altitudes de até 500m em regiões de planaltos e serras. A pastagem plantada é expressiva na porção central. Pequenas áreas de cultura cíclica se integram à vegetação.
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação a [[Meridiano de Greenwich]] ([[Tempo Universal Coordenado]]).
+
+;Área
+
+Ocupa uma superfície de {{fmtn|
+4399 km²}}.<ref name ="IBGE_Área"/> A área urbana totaliza {{fmtn|0.368|km²}} segundo a [[Embrapa Monitoramento por Satélite]].<ref name ="EMBRAPA_Área_Urbana"/>
+ 
+;Subdivisões
+
+Além da sede, possui o distrito de Polvora.
+
+;Arredores
+
+Alcinópolis faz divisa com os municípios de [[Pedro Gomes]], [[Coxim]], [[Camapuã]], [[Costa Rica]] e o estado de [[Mato Grosso]].
+
+==História==
+A região onde se encontra o município era de propriedade do Sr. Pio Martins de Almeida, no início as principais famílias da região eram vindos de [[Goiás]] ([[Mineiros (Goiás)|Mineiros]]), [[São Paulo (estado)|São Paulo]] e de [[Minas Gerais]]. O fundador do município Sr Alcino Fernandes Carneiro adquiriu o quinhão terras e o município de Alcinópolis começou a ser povoado em 8 de outubro de 1975 com o intuito de facilitar as condições de vida das pessoas que moravam nas fazendas. Para tanto a maior prioridade estava na educação, onde fazendeiros com ideias de estudar seus filhos, numa região com grandes dificuldades de acesso ao progresso contratavam professores particulares. A educação foi neste sistema nas décadas de 40, 50, 60 e 70. Em 1977, o sul de Mato Grosso é desmembrado para dar origem ao atual estado de Mato Grosso do Sul, a qual Alcinópolis faz parte atualmente.
+ 
+Em 22 de abril de 1992, pela lei número 1.262, foi criado o Município de Alcinópolis, pelo, então, governador [[Pedro Pedrossian]], ficando o mesmo pertencendo a [[Comarca de Coxim]].
+
+==Economia e serviços==
+===Agropecuária===
+A área agricultável do município de Alcinópolis é de doze mil hectares, em produtividade. Aonde encontra-se a Empresa de sementes em grãos SEMENTES 13 PONTOS, administrada pelo Sementes São Bento (Grupo Argentino) e a Fazenda Pèrola do Planalto (Adroaldo Gozzela).
+Além da soja, que é a cultura dominante no município, a região investe alto em pecuária, plantação de algodão, milho, sorgo, feijão, girassol, milheto, soja e milho de pipoca. Na área da pecuária contamos hoje com trezentos e cinquenta mil cabeças no município, com várias produtores investindo na qualidade genética como na, raças nelore PO, POI e várias outras raças de inseminação.
+
+===Comércio===
+Destaca-se na cidade um comércio atuante, em que grandes empresas encontram-se instaladas no município.
+
+==Infra-estrutura==
+Alcinópolis apresenta boas condições de vida, com escolas em condições ideais de ensino, saúde pública de boa qualidade, e na área de comunicação também está bem servida. Nos últimos anos houve uma especialização maior em torno da cultura da agropecuária de ponta.
+
+===Logística===
+Alcinópolis é vizinha de [[Alto Taquari]], um importante centro de desenvolvimento do estado de Mato Grosso, onde esta situado o maior terminal de transbordo de grãos do estado, movimentando cerca de quatro milhões e meio de toneladas de grãos e derivados por ano. Encontra-se também, um moderno terminal de petróleo, em uma parceria Ipiranga e Petrobrás, distribuindo petróleo para o Centro-oeste, com capacidade operacional de armazenamento de doze milhões e oitocentos mil litros. Esse terminal possui uma descarga operacional de quatro milhões por dia e carregamento de seis milhões de litros por dia, sendo o único terminal de petróleo do estado de Mato Grosso via ferrovia.
+
+==Turismo e cultura==
+Alcinópolis é uma cidade peculiar. Com população reduzida, mas com cultura antiga. Para saber melhor, veja relação dos ícones turísticos abaixo:
+*Casa de pedra: É convidativa a grande angular visão panorâmica proporcionada por este atrativo. Parques e florestas que se esparramam serra abaixo, fartura de verde e outras cores. A Casa de Pedra traz mais do que magia em suas paredes e no que oferece aos olhos e a alma. Localizada na fazenda Turmalina, que tem também grande potencial para Turismo rural, esse sítio fica a 400 metros da sede. O caminho é a estrada da Serra do Bom Sucesso. Endereço: Fazenda do Zé Pertile.
+*Gruta do Pitoco: Conhecida pela arquitetura natural e as misteriosas passagens subterrâneas, a Gruta do Pitoco, repleta de pinturas rupestres, é de fácil acesso e uma das mais completas da cidade. Densas e variadas vegetações do entorno, bem conservada, garantem um status de sítio preservado. A serra é repleta de vestígios dos antigos habitantes, que datam de até 11 mil anos. Gravuras feitas nos paredões internos com sangue de animal e vegetais macerados intrigam pela sua inexplicável origem. Endereço: Serra do Bom Jardim
+*Mão de Deus: Com morros de fácil acesso e escalada, a serra é um convite aos olhos e ao corpo. Possui nascentes nos entornos, sítios arqueológicos compostos de cavernas com inscrições datadas de há milhares de anos, excelentes visuais panorâmicos, paisagens naturais, extraordinária riqueza vegetal e ornitológica. Observatórios naturais de aves raras e curiosas formações rochosas também compõem a paisagem. O local possui inúmeras inscrições rupestres nas paredes e desenhos de animais e cenas de sua realidade como Mão de Deus e Cara do Bezerro, quando ali viveram em períodos que variam de 2000 a 12000 anos. Endereço: Barro Branco
+*Parque Estadual das Nascentes do Rio Taquari: Com uma área de 26.800 hectares no município, o encantamento paisagístico fica por conta do incomparável Canyon do Engano. Com suas formas e desenhos que desafiam a imaginação, a mata intocada por ser de difícil acesso, cachoeiras, vales, paredões, ninhais de araras e grandes pássaros, tornam o local um vasto e inexplorado filão turístico quase desconhecido e um dos mais belos do país.
+* Parque Natural Municipal Templo dos Pilares: Provocante, Belo e Soberbo - 40&nbsp;km. Por sua magnitude e dimensão, é considerado um dos mais importantes da cidade e até mesmo do país. O Templo dos Pilares é único por suas características, canyons, cerrados preservados, fragmentos, vales com vegetação virgem, paredões, ninhais de araras e corujões entre várias outras espécies de aves. O Parque é repleto de vestígios dos antigos habitantes, que datam até 11 mil anos. Gravuras, pinturas em paredes, teto e pilares de formações curiosas compõem o local. Endereço: Serra do Bom Jardim
+
+;Eventos
+
+* Festa da Marculina: Um festa tradicional na região, onde é servido gratuito o churrasco e doces. É encerrado com um grandioso terço (reza). Endereço: Fazenda da Marculina. A festa deixou de acontecer, onde hoje é celebrada apenas o terço, para ainda marcar como memória a tradição.
+
+;Cultura
+
+Alcinópolis é considerado a Capital Estadual da [[Arte rupestre|Arte Rupestre]] do Mato Grosso do Sul, por conter várias artes rupestres desenhos em alto relevo. Ainda se destacam engenhos e comitivas:
+*Templo dos Pilares: sítio arqueológico localizado na Estrada Buriti, com várias inscrições rupestres.
+*Engenho Movido a Cavalo: Engenho tocado a cavalo, poucas regiões no Brasil possuem essa cultura. Endereço: Chácara do Senhor Buava
+*Transporte de gado: na região de Alcinópolis ainda é utilizado o transporte de gado pelas estradas em comitiva de peões de boiadeiros.
+
+==Administração==  
+Alcinópolis demonstra hoje que esta vivendo um novo tempo, graças ao trabalho das autoridades municipais, Estadual, Federal e Senadores. Apesar das melhorias, ainda são necessários investimentos, tanto na área pública, como na privada, na instalação de indústrias, comércio, entre outras.
+
+===Mídias===
+[[Rede Bandeirantes|Band]] (SP), canal 05 - [[TV Morena]] ([[TV Globo|Globo]]), canal 07 - [[RecordTV|Record]] (SP), canal 09 - [[Sistema Brasileiro de Televisão|SBT]] (SP) canal 11
+
+Rádio Educativa FM Comunitária 87.9 FM
+
+Rádio Primavera FM 92.7 FM (em implantação)
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Alcinópolis
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+*[http://www.alcinopolis.ms.gov.br/ Página oficial]
+
+{{Esboço-municípiosbr/Mato Grosso do Sul}}
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Municípios de Mato Grosso do Sul]]
+[[Categoria:Fundações em Mato Grosso do Sul em 1992]]

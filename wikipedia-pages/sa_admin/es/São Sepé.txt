@@ -1,0 +1,97 @@
+{{ficha de entidad subnacional
+| fondo color = 
+| titulo color = 
+| nombre = São Sepé
+| nombre_oficial = São Sepé
+| imagen_bandera = 
+| imagen_escudo = Brasão de São Sepé.svg
+| img_panorama_urb     =
+| tam_img_panorama_urb =
+| pie_img_panorama_urb =
+<!-- mapa de localización  ----------->
+| mapa_loc         = <!--  -->
+| pos_etiqueta_loc = <!-- posición de la etiqueta dentro del mapa: left, right, top, bottom, none -->
+| pie_mapa_loc     =
+| tam_mapa_loc     =
+| imagen_marca_loc = <!-- nombre de la imagen de la marca a utilizar, por defecto es una esfera roja -->
+| tam_marca_loc    = <!-- tamaño de la marca a utilizar, por defecto es 6 -->
+| mapa_loc_1         = <!--  -->
+| pos_etiqueta_loc_1 = <!-- posición de la etiqueta dentro del segundo mapa: left, right, top, bottom, none -->
+| pie_mapa_loc_1     =
+| tam_mapa_loc_1     =
+| imagen_marca_loc_1 = <!-- nombre de la imagen de la marca a utilizar, por defecto es una esfera roja -->
+| tam_marca_loc_1    = <!-- tamaño de la marca a utilizar, por defecto es 6 -->
+<!-- Coordenadas del lugar, usadas por los mapas de localización y 
+por la etiqueta de coordenadas en la parte superior derecha del artículo --->
+| apodo = 
+| lema = ''"Ouro da Terra"''<br />(Oro de la Tierra)
+| país = {{BRA}}
+| tipo_superior_1 = [[Estados de Brasil|Estado]]
+| superior_1 = {{BRA|RS}}
+| tipo_superior_2 = [[Mesorregiones de Brasil|Mesorregión]]
+| superior_2 = [[Mesorregión Centro Occidental Rio-grandense]]
+| tipo_superior_3 = [[Microrregiones de Brasil|Microrregión]]
+| superior_3 = [[Microrregión de Santa Maria]]
+| tipo_superior_4 = 
+| superior_4 = 
+| tipo_código = 
+| código = 
+| altitud = 85
+| altitud_notas =
+| distancia = 270
+| referencia = [[Porto Alegre]]
+| superficie = 2 188,832 
+| superficie_notas =
+| superficie_tierra = 
+| superficie_agua = 
+| superficie_urb =
+| superficie_met =
+| tipo_div_1 = 
+| div_1 = 
+| población = 23.798
+| población_notas =<ref name="censo_2010" />
+| censo = 
+| población_urb =
+| población_met = 
+| densidad = 10,87
+| densidad_urb =
+| densidad_met =
+| crecimiento intercensal = 
+| fundación = {{fecha|29|abril|1876|edad}}
+| fundador = <!-- Necesario para conocer el fundador -->
+| erección = 
+| fecha_de_creación = 
+| gentilicio = ''sepeense''
+| lengua = [[Idioma portugués|Portugués]]
+| concepto_lenguas = 
+| huso_horario = [[Huso_horario#UTC.E2.88.9203:00.2C_P|UTC−03:00]]
+| huso_horario_verano = 
+| cp = 
+| prefijo = 
+| dirigente = 
+| dirigente_cargo = 
+| dirigente1 = 
+| dirigente1_cargo = 
+| dirigente1_año = 
+| dirigente2 = 
+| dirigente2_cargo = 
+| dirigente2_año = 
+| presupuesto = 
+| presupuesto_año = 
+| fiestas_mayores = 
+| hermandad = 
+| patrón = 
+| patrona = 
+| web = http://www.saosepe.rs.gov.br/
+}}
+'''São Sepé''' (San Sepé) es un [[municipio]] [[brasil]]eño del estado de [[Rio Grande do Sul]].<br />Sus coordenadas geográficas son ({{coord|30|09|39|S|53|33|54|W}}), estando a una altitud de 85 [[metros sobre el nivel del mar]]. Su población es de 23.798 habitantes<ref name="censo_2010">[http://www.ibge.gov.br/home/estatistica/populacao/censo2010/tabelas_pdf/total_populacao_rio_grande_do_sul.pdf http://www.ibge.gov.br/home/estatistica/populacao/censo2010/tabelas_pdf/total_populacao_rio_grande_do_sul.pdf] ([[Instituto Brasileño de Geografía y Estadística|IBGE]]) 16 de enero de 2012.</ref><br />El ejido del [[municipio]] abarca una superficie de 2176,4 [[km²]].
+
+== Etimología ==
+El nombre de esta población conmemora al héroe [[Misiones Orientales|misionero oriental]] [[Sepé Tiarayú]] quien, por su trágica muerte ha devenido en un santo popular.
+{{ORDENAR:Sao Sepe}}
+
+==Referencias==
+{{listaref}}
+{{Control de autoridades}}
+[[Categoría:Municipios en el geoparque Paleorrota]]
+[[Categoría:Localidades de Río Grande del Sur]]

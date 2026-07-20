@@ -1,0 +1,104 @@
+{{other uses}}
+{{Infobox settlement
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = El Almendro
+|settlement_type        = Municipality<!--For Town or Village (Leave blank for the default City)-->
+|other_name             =
+|native_name            = <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Nicaragua<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = right
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Nicaragua
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = Nicaragua
+|subdivision_type1      = [[Departments of Nicaragua|Department]]
+|subdivision_name1      = [[Río San Juan (department)|Río San Juan]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         =
+|area_total_km2         = <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2          = 1009<!--See table @ Template:Infobox settlement for details on automatic unit conversion-->
+|area_water_km2         =
+|area_total_sq_mi       =
+<!-- Population   ----------------------->
+|population_as_of               = 2023 estimate
+|population_footnotes           =
+|population_note                =
+|population_total               = 15242
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|11|41|N|84|42|W|region:NI|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|website                = 
+|footnotes              = 
+}}
+
+'''El Almendro''' (meaning "The Almond Tree") is a municipality in the [[Río San Juan Department]] of southeastern Nicaragua. It occupied an area of {{cvt|1009|km2}}, and as per 2023 estimate, the municipality has a population of 15,242 individuals. The settlement was founded in 1892 by [[rubber]] tappers, while the municipality was officially created on 4 July 1974.
+
+==History==
+During the Spanish colonial occupation, the location was used as a port on the Tepenaguasapa River to reach [[Lake Nicaragua]]. El Almendro was founded in 1892, when [[rubber]] tappers (huleros) and [[Carapichea ipecacuanha|Ipecacuanha]] gatherers (raicilleros), including Nery López, Perfecto Romero Acosta, Francisco González, and others arrived in search of natural resources and settled permanently in the area. Over time, it attracted migrants from other parts of Nicaragua. During the late 19th and early 20th centuries, the local economy was strongly based on the extraction of rubber and raicilla (ipecacuanha root), and these products were traded extensively, with rubber production contributing significantly to the national exports. These activities declined after the mid-20th century, and by the 1960s, [[livestock]] rearing had become the dominant economic activity.<ref name="San">{{cite web|url=https://www.riosanjuan.com.ni/en/el-almendro-2/|title=El Almendro – Río San Juan|work=INTUR|access-date=19 May 2026}}</ref>
+
+The municipality was officially created on 4 July 1974 as a result of the territorial separation from the municipality of [[Morrito]]. El Almendro was used as a resettlement area for former combatants of the [[Nicaraguan Resistance]] after the end of the [[Nicaraguan Revolution]] in 1990, and were provided land parcels as part of a national reintegration and reconciliation process.<ref name="San"/>
+
+==Geography and demographics==
+El Almendro is a municipality in the [[Río San Juan Department]] of southeastern Nicaragua.<ref name="San"/><ref>{{cite news|url=https://www.el19digital.com/articulos/ver/166773-destacamento-militar-sur-en-reunion-con-productores-de-diferentes-comunidades-del-municipio-de-el-almendro|title=Destacamento Militar Sur en reunión con productores de diferentes comunidades del municipio de El Almendro|trans-title=Southern Military Detachment in meeting with producers from different communities in the municipality of El Almendro|work=[[El 19]]|date=24 July 2025|access-date=28 February 2026|language=es}}</ref> It occupied an area of {{cvt|1009|km2}}. As per 2023 estimate, the municipality has a population of 15,242 individuals of whom 7,969 were males and 7,273 were females. The rural population was 11,434 (75%) and the rest of the 25% was classified as urban.<ref name="CP">{{cite web |url=https://www.citypopulation.de/en/nicaragua/admin/r%C3%ADo_san_juan/8510__el_almendro/ |title=El Almendro Municipality |work=City Population.de |access-date=19 May 2026}}</ref>
+
+==References==
+{{reflist}}
+
+{{Río San Juan Department}}
+
+{{coord|11.6833|N|84.7|W|source:kolossus-itwiki|display=title}}
+
+[[Category:Municipalities of the Río San Juan Department]]

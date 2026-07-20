@@ -1,0 +1,128 @@
+{{Short description|Municipality of Pernambuco, Brazil}}
+
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->| name = Itapissuma
+| official_name = 
+| native_name = <!-- if different from the English name -->
+| native_name_lang = <!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| other_name = 
+| settlement_type = [[City]]
+<!-- images, nickname, motto --->| image_skyline = 
+| image_caption = 
+| image_flag = Bandeira oficial de Itapissuma.png
+| image_shield = Brasão de Itapissuma.png
+| image_map = 
+| map_caption = 
+| pushpin_map = Brazil
+| pushpin_label = Itapissuma
+| pushpin_map_caption = Itapissuma located in Brazil Map
+| coordinates = {{coord|07|46|33|S|34|53|31|W|format=dms|display=inline,title}}
+<!-- location ------------------>| subdivision_type = Country
+| subdivision_name = {{flagicon|BRA}} [[Brazil]]
+| subdivision_type1 = [[States of Brazil|State]]
+| subdivision_name1 = [[Pernambuco]]
+| subdivision_type2 = Region
+| subdivision_name2 = [[Recife metropolitan area|RMR]] ([[Recife]])
+<!-- established --------------->| established_title = <!-- Settled -->
+| established_date = 
+| leader_party = 
+| leader_title = 
+| leader_name = <!-- add &nbsp; (no-break space) to disable automatic links -->
+| area_total_km2 = 74.25
+| area_land_km2 = 
+| area_water_km2 = <!-- elevation ----------------->
+| elevation_footnotes = 
+| elevation_m = 7
+| elevation_max_m = 
+| elevation_min_m = <!-- population ---------------->
+| population_footnotes = <ref name="IBGE">{{cite web |url=https://cidades.ibge.gov.br/brasil/pe/itapissuma/panorama |title=IBGE 2025 |author=Brazilian Institute of Geography and Statistics (IBGE)}}</ref>
+| population_total = 27,749
+| population_as_of = [[2022 Brazilian Census|2022 Census]]
+| population_density_km2 = <!-- for automatic calculation of any density field, use: auto -->
+<!-- time zone(s) -------------->| population_est = 29,669
+| pop_est_as_of = 2025
+| pop_est_footnotes = <ref name="IBGE"/>
+| timezone1 = 
+| utc_offset1 = [[Time in Brazil|BRT]]
+| timezone1_DST = &minus;3
+| utc_offset1_DST = <!-- postal codes, area code --->
+| postal_code_type = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+| postal_code = 
+| area_code_type = <!-- defaults to: Area code(s) -->
+| area_code = <!-- blank fields (section 1) -->
+| blank_name_sec1 = Average Temperature
+| blank_info_sec1 = {{convert|25.3|C|F|abbr=on}}
+<!-- website, footnotes -------->| website = <!-- {{URL|example.com}} -->
+}}
+
+'''Itapissuma''' is a city in the state of [[Pernambuco]], [[Brazil]]. It is integrated in the [[Recife metropolitan area]] with another 13 cities. Itapissuma has a total area of 74.25 square kilometers and had an estimated population of 26,900 inhabitants in 2020 according to the  [[Brazilian Institute of Geography and Statistics|IBGE]]. The city has the best [[children]]'s [[mortality rate]] in the [[metropolitan area]] and has also the second highest [[GDP per capita]] after [[Ipojuca]].
+
+==Geography==
+* State - [[Pernambuco]]
+* Region - [[Recife metropolitan area|RMR]] ([[Recife]])
+* Boundaries - [[Goiana]] ('''N'''), [[Igarassu, Pernambuco|Igarassu]] ('''S''' and '''W'''), and  [[Itamaraca]] ('''E''')
+* Area - 74.25&nbsp;km<sup>2</sup>
+* Elevation - 7&nbsp;m (22&nbsp;ft)
+* Hydrography - Small coast river
+* Vegetation - [[Mangrove]], [[coconut tree]]s and [[sugarcane]] plantation
+* Climate - Hot tropical and humid
+* Annual average temperature - 25.3 c
+* Main road -  BR 101 and PE 035
+* Distance to [[Recife]] - 39&nbsp;km
+
+==Economy==
+
+The main economic activities in '''Itapissuma''' are based in [[metallurgy|metallurgic]]  ([[aluminium]]) and general industry (which counts for 63% of the local economy) and the primary sector especially [[farm]]s with [[pig]]s and [[coconut]].
+
+===Economic Indicators===
+{| class="wikitable"
+|-
+! Population 
+! [[GDP]] x(1000 R$).<ref>[http://www.ibge.com.br/home/estatistica/economia/pibmunicipios/2003_2007/tab01.pdf Itapissuma 2007 GDP IBGE page 30] {{webarchive|url=https://web.archive.org/web/20160304001818/http://www.ibge.com.br/home/estatistica/economia/pibmunicipios/2003_2007/tab01.pdf |date=2016-03-04 }}</ref>
+! [[GDP per capita|GDP pc]] (R$)
+! [[Pernambuco|PE]]
+! [[Recife metropolitan area|RMR]]
+|-
+| 24.026
+| 424.898
+| 18.593
+| 0.71%
+| 1.06%
+|-
+|}
+'''Economy by Sector''' (2006)
+{| class="wikitable"
+|-
+! [[Primary sector]] 
+! [[Secondary sector]]
+! [[Service sector]]
+|-
+| 4.01%
+| 63.36%
+| 32.63%
+|-
+|}
+
+===Health Indicators===
+{| class="wikitable"
+|-
+! [[Human Development Index|HDI]] (2000)<ref>{{Cite web |url=http://www2.condepefidem.pe.gov.br/web/condepefidem |title=PE State site - City by city profile |access-date=2009-07-03 |archive-date=2009-08-04 |archive-url=https://web.archive.org/web/20090804002205/http://www2.condepefidem.pe.gov.br/web/condepefidem |url-status=dead }}</ref>
+! Hospitals (2012)
+! Hospitals beds (2007)
+! Children's Mortality every 1000 (2005)
+|-
+| 0.695
+| 2
+| 8
+| 7.4  (best rate in [[Recife metropolitan area|RMR]])
+|-
+|}
+
+== See also ==
+* [[List of municipalities in Pernambuco]]
+
+==References==
+{{reflist}}
+
+{{Municipalities of Pernambuco}}
+[[Category:Municipalities in Pernambuco]]

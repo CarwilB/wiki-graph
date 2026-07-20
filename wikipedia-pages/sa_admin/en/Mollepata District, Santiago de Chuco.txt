@@ -1,0 +1,123 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Mollepata
+| native_name             = Mullipata
+| native_name_lang        = qu<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Mollepata in the [[Santiago de Chuco Province|Santiago de Chuco]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[La Libertad Region|La Libertad]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Santiago de Chuco Province|Santiago de Chuco]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Mollepata, Santiago de Chuco|Mollepata]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Simon Walter Avila Lavado
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 71.2
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 2680
+| population_footnotes    = 
+| population_total        = 2851
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 131005
+| website                 = 
+| footnotes               = 
+}}
+'''Mollepata''' or '''Mullipata''' ([[Quechua language|Quechua]] ''mulli'' [[Schinus molle|Peruvian pepper tree]] ''pata'' elevated place / edge, bank (of a river), shore) is one of eight [[Districts of Peru|districts]] of the province [[Santiago de Chuco Province|Santiago de Chuco]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = Mollepata, elevation {{convert|2708|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 21.6
+|Feb high C = 21.5
+|Mar high C = 20.8
+|Apr high C = 21.3
+|May high C = 21.9
+|Jun high C = 22.3
+|Jul high C = 22.6
+|Aug high C = 23.3
+|Sep high C = 23.1
+|Oct high C = 22.4
+|Nov high C = 22.6
+|Dec high C = 21.5
+|year high C = 
+|Jan low C = 11.0
+|Feb low C = 11.4
+|Mar low C = 11.4
+|Apr low C = 10.6
+|May low C = 9.8
+|Jun low C = 9.0
+|Jul low C = 8.8
+|Aug low C = 9.7
+|Sep low C = 10.5
+|Oct low C = 10.6
+|Nov low C = 10.4
+|Dec low C = 11.0
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 100.5
+|Feb precipitation mm = 113.2
+|Mar precipitation mm = 164.3
+|Apr precipitation mm = 62.4
+|May precipitation mm = 15.7
+|Jun precipitation mm = 3.5
+|Jul precipitation mm = 1.2
+|Aug precipitation mm = 1.1
+|Sep precipitation mm = 9.8
+|Oct precipitation mm = 38.5
+|Nov precipitation mm = 38.4
+|Dec precipitation mm = 75.6
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+<references/>
+
+{{Districts of Santiago de Chuco Province}}
+
+[[Category:Districts of the Department of La Libertad]]
+[[Category:Districts of the Santiago de Chuco province]]
+
+
+{{LaLibertad-geo-stub}}

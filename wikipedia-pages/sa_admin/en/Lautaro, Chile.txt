@@ -1,0 +1,120 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Lautaro
+| native_name             =
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "fr" for French. If more than one, use {{lang}} instead -->
+| settlement_type         = [[List of cities in Chile|City]] and [[Communes of Chile|Commune]]
+| image_skyline           = Toqui_Lautaro.jpg
+| imagesize               = 175px
+| image_alt               =
+| image_caption           =
+| image_flag              =
+| flag_alt                = Flag
+| image_shield            = Escudo de Lautaro.svg
+| shield_alt              = Coat of arms
+| named_for               = [[Lautaro (toqui)|Lautaro]]
+| image_map               = Comuna de Lautaro.svg
+| map_alt                 = Location in the [[Araucanía Region]]
+| map_caption             = Location in the [[Araucanía Region]]
+| pushpin_map             = Chile
+| pushpin_map_narrow = yes
+| pushpin_label_position  =
+| pushpin_map_alt         = Location in Chile
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|38|31|S|72|27|W|region:CL-AR|display=inline,title}}
+| coor_pinpoint           =
+| coordinates_footnotes   =
+| subdivision_type        = Country
+| subdivision_name        = [[Chile]]
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = [[Araucanía Region|Araucanía]]
+| subdivision_type2       = [[Provinces of Chile|Province]]
+| subdivision_name2       = [[Cautín Province|Cautín]]
+| established_title       = Founded
+| established_date        = 1881
+| seat_type               = <--[[Capital (political)|Capital]]-->
+| seat                    =
+| government_footnotes    = <ref name="Official">{{Cite web |url= http://www.munilautaro.cl/ |title= Municipality of Lautaro |accessdate=27 July 2010|language=es}}</ref>
+| government_type         = [[Municipality]]
+| leader_party            =
+| leader_title            = [[Alcalde]]
+| leader_name             = Renato Hauri<!-- add &nbsp; (no-break space) to disable automatic links -->
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{cite web |url= http://www.ine.cl/canales/chile_estadistico/censos_poblacion_vivienda/censo_pobl_vivi.php |title= National Statistics Institute |accessdate=27 July 2010|language=es}}</ref>
+| area_total_km2          = 901.1
+| area_rank               = 
+| elevation_footnotes     =
+| elevation_m             = 234
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 34268
+| population_as_of        = 2012 Census
+| population_density_km2  = auto
+| population_rank         = 
+| population_blank1_title = [[Urban area|Urban]]
+| population_blank1       = 21071
+| population_blank2_title = [[Rural area|Rural]]
+| population_blank2       = 11147
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1     = 15,991
+| demographics1_title2    = Women
+| demographics1_info2     = 16,227
+|timezone = [[Time in Chile|CLT]]
+| utc_offset = −4
+|timezone_DST = [[Time in Chile|CLST]]
+| utc_offset_DST = −3
+| postal_code_type        =
+| postal_code             =
+| area_code_type          =
+| area_code               = 56 + 45
+| website                 = [http://www.munilautaro.cl/ Official website] {{in lang|es}}
+| footnotes               =
+}}
+
+'''Lautaro''' is a [[List of cities in Chile|city]] and [[Communes of Chile|commune]] of the [[Cautín Province]] in [[Chile]]'s [[Araucanía Region]]. The area is named in honor of [[Lautaro (toqui)|Lautaro]], [[Mapuche]] leader (''[[toqui]]'') during the [[War of Arauco]].
+
+==Demographics==
+{{Historical populations
+|align=left
+|source={{cite web|url=https://www.ine.gob.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/censo-de-poblacion-y-vivienda|publisher=National Statistics Institute|title=Censo de Población y Vivienda}}
+|percentages=pagr
+|1885 |1438
+|1895 |9325
+|1907 |23720
+|1920 |25113
+|1930 |26280
+|1940 |27634
+|1952 |23130
+|1970 |24855
+|1982 |27525
+|1992 |28725
+|2002 |32218
+|2017 |38013
+|2024 |41936
+}}
+According to the 2002 [[census]] of the [[National Statistics Institute (Chile)|National Statistics Institute]], Lautaro spans an area of {{convert|901.1|sqkm|0|abbr=on}} and has 32,218 inhabitants (15,991 men and 16,227 women). Of these, 21,071 (65.4%) lived in [[urban area]]s and 11,147 (34.6%) in [[rural area]]s. Between the 1992 and 2002 censuses, the population grew by 12.2% (3,493 persons).<ref name= "INE"/>
+
+==Administration==
+As a [[Communes of Chile|commune]], Lautaro is a third-level [[administrative division of Chile]] administered by a communal council headed by an [[alcalde]] who is directly elected every four years. For the years 2008-2012, the alcalde is Renato Hauri, and the council members are:<ref name="Official"/>
+* Raul Schifferli Diaz	
+* Miguel Jaramillo Salazar
+* Carlos Gutierrez Olguin
+* Ricardo Candia Morales
+* Cristian Herrera González
+* Hugo Salazar Becerra
+
+Within the [[electoral divisions of Chile]], Lautaro belongs to the 49th electoral district and 14th senatorial constituency.
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.munilautaro.cl/ Municipality of Lautaro]
+
+{{Communes in Araucanía Region}}
+{{Authority control}}
+
+[[Category:Communes of Chile]]
+[[Category:Populated places in Cautín Province]]
+[[Category:1881 establishments in Chile]]

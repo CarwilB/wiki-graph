@@ -1,0 +1,152 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Yauri
+| native_name             = Kiskachay
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = Plaza de armas de espinar.jpg
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of Espinar in the [[Espinar Province|Espinar]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Cusco Region|Cusco]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Espinar Province|Espinar]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = Yauri
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Lindley Alfredo Salinas Perez
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 747.78
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3915
+| population_footnotes    = 
+| population_total        = 32471
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 080801
+| website                 = 
+| footnotes               = 
+}}
+'''Yauri District''', also known as '''Espinar''' or '''Kiskachay District''', is one of eight [[Districts of Peru|districts]] of the [[Espinar Province]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive |url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=April 23, 2008 }}''. Retrieved April 11, 2008.</ref> Its seat is [[Yauri, Peru|Yauri]] (Yawri).
+
+== Geography ==
+One of the highest peaks of the district is [[Chuqi Pirwa (Arequipa-Cusco)|Chuqi Pirwa]] at approximately {{convert|4800|m|ft|abbr=on}}. Other mountains are listed below:<ref>escale.minedu.gob.pe/ UGEL map Espinar Province (Cusco Region)</ref>
+
+{{columns-list|colwidth=15em|
+* Chuku Chuku
+* Chuwa Chuwa
+* Ch'iyar Jaqhi
+* Hatun Quymi
+* Huch'uy Quymi
+* Janq'u
+* Kimsa Chata
+* Kiska Qhata
+* Llallawa
+* Pallana
+* Pawkara
+* Puka Nasa
+* Qaqa Punku
+* Q'illu Q'illu
+* Thutayuq
+* Urquyuq
+* Wila Wila
+* Wiska Apachita
+* Yuraq Sunquyuq
+}}
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y
+|collapsed = Y
+|location = Yauri, elevation {{convert|3920|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 16.8
+|Feb high C = 16.5
+|Mar high C = 16.6
+|Apr high C = 16.5
+|May high C = 16.4
+|Jun high C = 16.0
+|Jul high C = 15.9
+|Aug high C = 17.0
+|Sep high C = 18.3
+|Oct high C = 18.9
+|Nov high C = 19.5
+|Dec high C = 18.2
+|year high C = 
+|Jan low C = 3.5
+|Feb low C = 3.7
+|Mar low C = 3.2
+|Apr low C = 0.9
+|May low C = -4.7
+|Jun low C = -8.6
+|Jul low C = -8.8
+|Aug low C = -6.9
+|Sep low C = -3.5
+|Oct low C = -0.8
+|Nov low C = 0.2
+|Dec low C = 2.1
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 177.4
+|Feb precipitation mm = 178.8
+|Mar precipitation mm = 134.9
+|Apr precipitation mm = 61.5
+|May precipitation mm = 8.4
+|Jun precipitation mm = 1.9
+|Jul precipitation mm = 2.8
+|Aug precipitation mm = 9.1
+|Sep precipitation mm = 15.5
+|Oct precipitation mm = 45.6
+|Nov precipitation mm = 57.1
+|Dec precipitation mm = 128.0
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climaticás Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 25 October 2023}}</ref>
+}}
+
+== See also ==
+* [[K'anamarka]]
+
+== References ==
+{{Reflist}}
+
+{{Districts of Espinar Province}}
+
+{{coord|14.7925|S|71.4131|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Espinar province]]
+
+
+{{Cusco-geo-stub}}

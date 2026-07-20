@@ -1,0 +1,98 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Bolivia
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Cuba LomaCunagua Ecotourism.jpg
+|imagesize              = 
+|image_caption          = Ecotourism station in Loma de Cunagua reserve
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = Coat of arms of Bolivia, Cuba.jpg
+|shield_size            = 120x90px
+|image_map              = Bolivia (Cuban municipal map).png
+|map_caption            = Bolivia municipality (red) within <br> Ciego de Ávila Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Ciego de Ávila Province|Ciego de Ávila]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 918
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 15,055
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|04|30|N|78|21|1|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 10
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-43
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Bolivia''' is a municipality and town in the [[Ciego de Ávila Province]] of [[Cuba]]. It is located in the north-eastern part of the province, bordering the Bay of Jiguey and [[Cayo Romano]].
+
+==Demographics==
+In 2022, the municipality of Bolivia had a population of 15,055.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|918|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-06}}</ref> it has a population density of {{convert|16|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+*[[Bolivia Municipal Museum]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Bolivia
+ | N = ''[[Cayo Romano]]<br/>Bay of Perros/Bay of Jiguey''
+ | E = [[Esmeralda, Cuba|Esmeralda]] ([[Camagüey Province|Camagüey]])
+ | S = [[Primero de Enero]]
+ | W = [[Morón, Cuba|Morón]]
+}}
+{{Municipalities in Ciego de Ávila}}
+{{Authority control}}
+[[Category:Populated places in Ciego de Ávila Province]]
+
+
+{{Cuba-geo-stub}}

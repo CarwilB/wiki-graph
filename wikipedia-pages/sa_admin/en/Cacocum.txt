@@ -1,0 +1,101 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Cacocum
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Cacocum Cuba aerial.jpg
+|image_caption          = Aerial view of Cacocum on approach to [[Frank País Airport]]
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Cacocum (Cuban municipal map).png
+|map_caption            = Cacocum municipality (red) within <br> Holguín Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Holguín Province|Holguín]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = President
+|leader_name            = Mariela Cruz Herrera
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 661
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 39,153
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|44|38|N|76|19|27|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 75
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-24
+|website                = 
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Cacocum''' is a municipality and town in the [[Holguín Province]] of [[Cuba]].
+
+==Overview==
+It is located south of the city of [[Holguín]] and east of the [[Frank País Airport|Frank País International Airport]] towards the city of [[Bayamo]] on the [[Carretera Central (Cuba)|Carretera Central]] Highway. The area includes extremely flat ground stretching south to the municipality's boundaries with [[Granma Province]]. Its territory is bounded on the west by [[Las Tunas Province]], and on the east with the [[Báguanos, Cuba|Báguanos]] municipality, its nearest neighbor.
+
+[[Carretera Central (Cuba)|Carretera Central]] and the Central Railroad pass near the Cacocum townsite, the most populated settlement of this municipality. Two local [[sugar mill]]s, called ''Antonio Maceo'' and ''Cristino Naranjo'' represent Cacocum's main economic activity.
+
+==Demographics==
+In 2022, the municipality of Cacocum had a population of 39,153.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|661|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids| accessdate=2007-10-05}}</ref> it has a population density of {{convert|59|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[List of cities in Cuba]]
+*[[Municipalities of Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Cacocum
+ | N = [[Holguín]]
+ | E = [[Urbano Noris]]
+ | S = [[Cauto Cristo]] ([[Granma Province|Granma]])
+ | W = [[Calixto García, Cuba|Calixto García]]
+}}
+{{Municipalities in Holguín}}
+
+[[Category:Populated places in Holguín Province]]
+
+
+{{Cuba-geo-stub}}

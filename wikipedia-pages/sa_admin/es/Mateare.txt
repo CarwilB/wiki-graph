@@ -1,0 +1,102 @@
+{{Ficha de entidad subnacional
+| nombre = Mateare
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|MN}}
+| mapa_loc = Nicaragua
+| imagen = Mateare Barco.jpg
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 12.2290
+ |longitude= -86.4090
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| dirigentes_títulos = Alcaldesa
+| dirigentes_nombres = [[Archivo:Flag of the FSLN.svg|20px|link=Frente Sandinista de Liberación Nacional]] María Isabel Ramírez<ref>{{Cita web|url=http://www.inifom.gob.ni/contactenos/Alcaldes%20Municipales.html|título=Alcaldes municipales de Nicaragua|editorial=Uniform|fechaacceso=9 de octubre de 2010|fechaarchivo=21 de octubre de 2010|urlarchivo=https://web.archive.org/web/20101021013414/http://www.inifom.gob.ni/contactenos/Alcaldes%20Municipales.html|deadurl=yes}}</ref>
+| elevación_media = 60
+| superficie = 297.4
+| superficie_puesto = 85
+| número_entidades = 153
+| población_puesto = 21
+| población_año = 2022
+| población = 64732
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/managua/5515__mateare/ Estimación del 2022] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 61234
+| densidad = 217.7
+| fundación = 1898
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| gentilicio = Mateareño, -ña.
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 15500
+}}
+
+'''Mateare''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Managua|Managua]] en la República de [[Nicaragua]], fundado en 1898.
+
+== Geografía ==
+El municipio de Mateare tiene una extensión de 297.4 km², está ubicada entre las coordenadas 12° 14′ 21″ de latitud norte y 86° 25′ 45″ de longitud oeste, a una altitud de 60 m s. n. m.
+
+=== Límites ===
+
+==== Municipios adyacentes ====
+{| class="wikitable" width ="40%" border = 2 align="center"
+|-----
+| width ="20%" align="center" | ''Noroeste:''<br/>Lago Xolotlán
+| width ="30%" align="center" | ''Norte:''<br/>[[Lago Xolotlán]]
+| width ="20%" align="center" | ''Noreste:''<br/>Lago Xolotlán
+|-----
+| width ="20%" align="center" | ''Oeste:''<br/>{{bandera|Departamento de León}} [[Nagarote]]
+| width ="30%" align="center" | [[Archivo:Rosa de los vientos.svg|75px]]
+| width ="20%" align="center" | ''Este:''<br/>{{bandera|Departamento de Managua}} [[Ciudad Sandino]]
+|-----
+| width ="20%" align="center" | ''Suroeste:''<br/> {{bandera|Departamento de León}} Nagarote
+| width ="30%" align="center" | ''Sur:''<br/>{{bandera|Departamento de Managua}} [[Villa El Carmen]] 
+| width ="10%" align="center" | ''Sureste:''<br/>{{bandera|Departamento de Managua}} Ciudad Sandino
+|}
+
+== Historia ==
+Mateare es una de las muchas comunidades nativas americanas que ya existían en el momento de la conquista española de Nicaragua. [[Gonzalo Fernández de Oviedo]] afirma que Mateare tenía más de 10,000 habitantes en 1524 y que el campo circundante estaba hirviendo de gente. El sacerdote Fray [[Francisco de Bobadilla]] visitó el lugar en 1528 cuando bautizó a 421 personas.
+
+Mateare, fundada en 1898, es tan antigua como las primeras ciudades fundadas por los españoles a finales del {{siglo|XIX||s}}. En 1955, el municipio de Mateare sufrió terremotos de hasta 6,0 en la escala de Richter durante un período de 14 días. El terremoto del sábado 26 de abril que midió 6,0 causó severos daños a las casas cercanas. Sin embargo, durante el período de 14 días de terremotos esporádicos no se reportaron muertos ni heridos.
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2022)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 31,654 (48.9%)
+| valor1 = 48.9
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 33,078 (51.1%)
+| valor2 = 51.1
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2022)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 3,498 (5.4%)
+| valor1 = 5.4
+| color1 = #109618
+| etiqueta2 = Urbano: 61,234 (94.6%)
+| valor2 = 94.6
+| color2 = #FF9900
+}}
+Mateare tiene una población actual de 64,732 habitantes. De la población total, el 48.9% son hombres y el 51.1% son mujeres. Casi el 94.6% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Transporte ==
+El municipio está atravesado por la nueva carretera entre [[Managua]] y [[León (Nicaragua)|León]].
+
+Existe transporte que cubre la Ruta Mateare-Managua y los buses León-Managua y [[Chinandega]]-Managua te dejan en puntos Claves de La Zona de Mateare.
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{Portal|Nicaragua}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Managua]]
+[[Categoría:Municipios del departamento de Managua]]

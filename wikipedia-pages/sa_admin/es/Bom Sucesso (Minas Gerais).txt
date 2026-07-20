@@ -1,0 +1,57 @@
+{{Ficha de entidad subnacional
+|nombre = Bom Sucesso
+|imagen = Bom_sucesso.jpg
+|unidad = [[Municipio]]
+|tipo_superior_1 = [[Anexo:Estados de Brasil|Estado]]
+|superior_1 = {{BRA|MG}}
+|tipo_superior_3 = [[Mesorregiones de Brasil|Mesorregión]]
+|superior_3 = [[Mesorregión del Oeste de Minas|Oeste de Minas]]
+|tipo_superior_4 = [[Microrregiones de Brasil|Microrregión]]
+|superior_4 = [[Microrregión de Oliveira|Oliveira]]
+|bandera = Bandeira bom sucesso MG.jpg
+|escudo = Bom Sucessomgbrasao.jpg
+|mapa = MinasGerais Municip BomSucesso.svg
+|tamaño_mapa = 260px
+|mapa_loc = Brasil
+|pie_mapa = Localización de Bom Sucesso en [[Minas Gerais]]
+
+|dirigentes_títulos = [[Prefecto]]
+|altitud = 952
+|superficie = 706.192
+|superficie_post =<ref name ="IBGE_Área">{{cita web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial|fecha=10 de octubre de 2002|autor=IBGE|editorial=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+|población = 17598
+|población_año = Estimación [[IBGE]]/2018<ref name="IBGE_Pop_2018">{{cita web |url=https://www.ibge.gov.br/estatisticas-novoportal/sociais/populacao/9103-estimativas-de-populacao.html?&t=downloads |título= Estimativa de População 2018 IBGE Ciudades |autor=Instituto Brasileiro de Geografia e Estatística (IBGE)|fecha=31 de julio de 2018}}</ref>
+|PIB = {{formatnum:152431.525}} mil
+|PIB_per_capita = 8587.69
+|PIB_tipo = PIB ([[IBGE]]/2008)<ref name="IBGE_PIB">{{cita web|url =http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |título=Produto Interno Bruto dos Municípios 2004-2008 |editorial = Instituto Brasileiro de Geografia e Estatística }}</ref>
+|IDH = 0.754
+|IDH año = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{cita web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|título=Ranking decrescente do IDH-M dos municípios do Brasil |año=2010 |obra=Atlas do Desenvolvimento Humano|editorial=Programa das Nações Unidas para o Desenvolvimento (PNUD) }}</ref>
+|campo1_nombre = Datos mesorregión
+|campo1 = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{cita web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |título=Divisão Territorial do Brasil |fecha=1 de julio de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |editorial=Instituto Brasileiro de Geografia e Estatística (IBGE) |fechaacceso=16 de enero de 2019 |urlarchivo=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip |fechaarchivo=14 de junio de 2020 }}</ref>
+|campo2_nombre = Datos microrregión
+|campo2 = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+}}
+'''Bom Sucesso''' es un [[municipio]] [[brasil]]eño del [[estados del Brasil|estado]] de [[Minas Gerais]]. Su población estimada en 2018 es de 17&nbsp;598 habitantes, según el [[Instituto Brasileño de Geografía y Estadística]] (IBGE).<ref name="IBGE_Pop_2018"/>
+
+== Toponimia ==
+El topónimo se originó de homenaje a la patrona del municipio, Nuestra Señora del Buen Suceso.<ref name="historia"/>
+
+== Historia ==
+Según una leyenda local, hacia 1720, habría pasado por las tierras que constituyen el actual el municipio de Bom Sucesso, un gobernador que se dirigía de [[São Paulo]] a [[Goiás]], con su esposa embarazada. Ella allí sintió los primeros dolores del parto, que ocurrió normalmente. En cumplimiento de una promesa hecha, el gobernador ordenó que allí se erigiera una pequeña capilla, dedicada a la Virgen del Buen Suceso.<ref name="historia">{{cita web| url =https://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/bomsucesso.pdf|título=Bom Sucesso - Histórico |autor = IBGE }}</ref>
+
+La comunidad nació alrededor de la capilla y creció por el comercio y la agricultura. En 1824 fue elevada a parroquia y en 1887 se construyó una estación del [[Ferrocarril Oeste de Minas]]. En 1891 el distrito de Bom Sucesso es subordinado al municipio de [[São João del-Rei]], obteniendo posteriormente la autonomía municipal.<ref name="historia"/>
+
+== Clima ==
+Según la [[clasificación climática de Köppen]], el municipio se encuentra en el [[Clima tropical de altitud|clima tropical de altitud ''Cwa'']].<ref name="Clima">{{cita web
+| url = http://koeppen-geiger.vu-wien.ac.at/pics/kottek_et_al_2006.gif |título=World Map of the Köppen-Geiger climate classification |obra=World Map of the Köppen-Geiger climate classification |editorial=Institute for Veterinary Public Health}}</ref>
+
+== Referencias ==
+{{Listaref}}
+
+== Enlaces externos ==
+{{commonscat|Bom Sucesso (Minas Gerais)}}
+* [http://www.bomsucesso.mg.gov.br/ Sitio web oficial] {{pt}}.
+{{Traducido ref|pt|Bom Sucesso (Minas Gerais)|trad=parcial}}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Minas Gerais]]

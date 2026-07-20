@@ -1,0 +1,73 @@
+{{More citations needed|date=February 2024}}
+{{Infobox settlement
+| name               = Benítez Municipality
+| official_name      = 
+| other_name         = 
+| native_name        = Municipio Benítez
+| native_name_lang   = es
+| nickname           = 
+| settlement_type    = [[Municipalities of Venezuela|Municipality]]
+| image_skyline      = Plaza Bolívar El Pilar.jpg
+| image_caption      = 
+| image_flag         = 
+| flag_size          = 100px
+| image_shield       = {{#property:P94}}
+| seal_size          = 100px
+| image_map          = {{#property:P242}}
+| mapsize            = 300px
+| map_caption        = Location in [[Sucre State|Sucre]]
+| pushpin_map        = Venezuela
+| pushpin_label_position = 
+| pushpin_map_alt    = Map showing the location of Benítez Municipality within Venezuela
+| pushpin_mapsize    = 300px
+| pushpin_map_caption = Location in Venezuela
+| coordinates        = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type   = Country
+| subdivision_name   = {{flag|Venezuela}}
+| subdivision_type1  = [[States of Venezuela|State]]
+| subdivision_name1  = [[Sucre State|Sucre]]
+| seat_type          = [[Municipal seat]]
+| seat               = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title       = Mayor
+| leader_name        = 
+| leader_party       = 
+| elevation_m        = 
+| area_total_km2     = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of   = 
+| population_note    = 
+| population_total   = 
+| population_footnotes = 
+| population_density_km2 = auto
+| established_title  = Founded
+| established_date   = 
+| established_title1 = Established
+| established_date1  = 
+| established_title2 = Incorporated
+| established_date2  = 
+| timezone           = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset         = &minus;4
+| area_code_type     = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code          = 
+| postal_code_type   = [[Postal code]](s)
+| postal_code        = 
+| website            = 
+| footnotes          = {{main other|{{EditOnWikidata}}}}
+}}
+
+'''Benítez'''<ref>{{Cite web |title= |url=http://www.ine.gov.ve/documentos/AspectosFisicos/DivisionpoliticoTerritorial/pdf/DPTconFinesEstadisticosOperativa2013.pdf |access-date=2023-12-31 |archive-url=https://web.archive.org/web/20230324042920/http://www.ine.gov.ve/documentos/AspectosFisicos/DivisionpoliticoTerritorial/pdf/DPTconFinesEstadisticosOperativa2013.pdf |archive-date=2023-03-24 }}</ref> is the largest of the 15 municipalities of [[Sucre (state)|Sucre State]], Venezuela. It is in the southeast of that state, and has an area of 2,733 km² and a population of 40,170 inhabitants (2011 census). Its capital is El Pilar. 
+
+The municipality is composed of six parishes; El Pilar, El Rincón, Francisco A. Vásquez, Guaraunos, Tunapuicito, and Unión.
+
+== Geography ==
+{{Unsourced section|date=May 2026}}
+The municipality is in the southeastern part of the state off the coast of the Gulf of Paria in the Venezuelan Sea. Among the protected areas are the Guarapiche Forest Reserve, declared in 1961, and the Turuépano National Park.
+
+It is bordered to the north by the municipalities of Arismendi and Bermúdez, to the east by the municipality of Libertador and the Gulf of Paria, to the south by the state of Monagas and to the west by the municipalities of Andrés Eloy Blanco and Andrés Mata.
+
+== References ==
+{{DEFAULTSORT:Benitez Municipality}}
+[[Category:Municipalities of Sucre (state)]]
+
+<references />{{SucreVE-geo-stub}}
+
+{{Authority control}}

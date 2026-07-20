@@ -1,0 +1,319 @@
+{{referencias|t=20170326114533}}
+{{Ficha de entidad subnacional
+| nombre = Puntarenas
+| nombre original = Cantón de Puntarenas
+| nombre completo = Cantón de Puntarenas
+| unidad = [[Cantones de Costa Rica|Cantón]]
+| tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+| superior_1 = {{CRI|P}}
+| mapa = Costa Rica - Puntarenas - Puntarenas.svg
+| tamaño_mapa = 250px
+| pie_mapa = Ubicación del cantón de Puntarenas en la provincia homónima
+| imagen = {{Montaje fotográfico 
+          | margen tabla = 0 auto 
+          | posición = centre
+ | color_borde=black
+ | foto1a = Capitanía de Puntarenas. Costa Rica.JPG{{!}}Capitanía del puerto de Puntarenas
+ | foto1b = Puntarenas, Costa Rica - Fishing boats.png{{!}}barcos pesqueros en el Estero de Puntarenas
+ | foto2a = Isla Guayabo, golfo de Nicoya. Costa Rica.jpg{{!}}isla Guayabo
+ | foto2b = Montezuma, Costa Rica.jpg{{!}}playa Montezuma
+ | foto3 = A gorgeous waterfall on isla del coco.jpg{{!}}cascada en isla del Coco
+ | tamaño = 280
+ }}
+| pie_de_imagen = Parajes de Puntarenas
+| capital = [[Puntarenas (ciudad)|Puntarenas]]
+| apodo = 
+| subdivisión = [[Distritos de Costa Rica|15 distritos]]
+| dirigentes_títulos = [[Régimen municipal de Costa Rica|Alcalde]]<br /><br />[[Concejo Municipal de Puntarenas|Presidente municipal]]
+| dirigentes_nombres = Randall Chavarría Matarrita ([[Partido Unidad Social Cristiana|PUSC]])<br /><br />Kerlyn Molina Corella ([[Partido Unidad Social Cristiana|PUSC]])
+| gentilicio = Puntarenense
+| fundación_fechas = 4 de noviembre de 1862
+| clima = Tropical seco<br>tropical húmedo<br>bosque nuboso
+| imageninferior = Capilla Isla San Lucas Puntarenas Costa Rica.jpg
+| imageninferior_pie = Capilla en la [[isla San Lucas]], cantón de Puntarenas.
+| página web = www.puntarenas.go.cr
+| mapa1 = {{map draw
+ |zoom=9
+ |align=center
+ |geotype1=geoshape
+ |ids1=Q2610390
+ |latitude=9.9418
+ |longitude=-84.9586
+ |stroke1=#d40000
+ |fill-opacity1=0.0
+ |geotype2=geoshape
+ |ids2=Q17309927
+ |title2=[[Puntarenas (distrito)|Puntarenas]]
+ |description2=Distrito N.º 1
+ |fill2=#ffffb3
+ |fill-opacity2=0.75
+ |stroke-width2=0.5
+ |geotype3=geoshape
+ |ids3=Q3905820
+ |title3=[[Pitahaya (Costa Rica)|Pitahaya]]
+ |description3=Distrito N.º 2
+ |fill3=#bebada
+ |fill-opacity3=0.75
+ |stroke-width3=0.5
+ |geotype4=geoshape
+ |ids4=Q3675391
+ |title4=[[Chomes]]
+ |description4=Distrito N.º 3
+ |fill4=#fb8072
+ |fill-opacity4=0.75
+ |stroke-width4=0.5
+ |geotype5=geoshape
+ |ids5=Q3830731
+ |title5=[[Lepanto (Puntarenas)|Lepanto]]
+ |description5=Distrito N.º 4
+ |fill5=#80b1d3
+ |fill-opacity5=0.75
+ |stroke-width5=0.5
+ |geotype6=geoshape
+ |ids6=Q3894943
+ |title6=[[Paquera]]
+ |description6=Distrito N.º 5
+ |fill6=#fdb462
+ |fill-opacity6=0.75
+ |stroke-width6=0.5
+ |geotype7=geoshape
+ |ids7=Q3845158
+ |title7=[[Manzanillo de Puntarenas|Manzanillo]]
+ |description7=Distrito N.º 6
+ |fill7=#b3de69
+ |fill-opacity7=0.75
+ |stroke-width7=0.5
+ |geotype8=geoshape
+ |ids8=Q3778030
+ |title8=[[Guacimal]]
+ |description8=Distrito N.º 7
+ |fill8=#fccde5
+ |fill-opacity8=0.75
+ |stroke-width8=0.5
+ |geotype9=geoshape
+ |ids9=Q3635158
+ |title9=[[Barranca de Puntarenas|Barranca]]
+ |description9=Distrito N.º 8
+ |fill9=#d9d9d9
+ |fill-opacity9=0.75
+ |stroke-width9=0.5
+ |geotype10=geoshape
+ |ids10=Q3700063
+ |title10=[[Cóbano]]
+ |description10=Distrito N.º 11
+ |fill10=#bc80bd
+ |fill-opacity10=0.75
+ |stroke-width10=0.5
+ |geotype11=geoshape
+ |ids11=Q3665705
+ |title11=[[Chacarita (Costa Rica)|Chacarita]]
+ |description11=Distrito N.º 12
+ |fill11=#ccebc5
+ |fill-opacity11=0.75
+ |stroke-width11=0.5
+ |geotype12=geoshape
+ |ids12=Q164096
+ |title12=[[Isla de Chira|Chira]]
+ |description12=Distrito N.º 13
+ |fill12=#ffed6f
+ |fill-opacity12=0.75
+ |stroke-width12=0.5
+ |geotype13=geoshape
+ |ids13=Q3603908
+ |title13=[[Acapulco (Costa Rica)|Acapulco]]
+ |description13=Distrito N.º 14
+ |fill13=#8dd3c7
+ |fill-opacity13=0.75
+ |stroke-width13=0.5
+ |geotype14=geoshape
+ |ids14=Q2412778
+ |title14=[[El Roble de Puntarenas|El Roble]]
+ |description14=Distrito N.º 15
+ |fill14=#ffffb3
+ |fill-opacity14=0.75
+ |stroke-width14=0.5
+ |geotype15=geoshape
+ |ids15=Q61695490
+ |title15=[[Arancibia de Puntarenas|Arancibia]]
+ |description15=Distrito N.º 16
+ |fill15=#bebada
+ |fill-opacity15=0.75
+ |stroke-width15=0.5
+ |geotype16=Point
+ |coordinates16=9.976455983516626, -84.83341378030411
+ |title16=Municipalidad de Puntarenas
+ |description16=[[Puntarenas (distrito)|Puntarenas]]
+ |marker-symbol16=town-hall
+ <!-- Isla del Coco, sale fuera del zoom, pero incluida para los curiosos :-) -->
+ |geotype17=geoshape
+ |ids17=Q215081
+ |title17=[[Isla del Coco]]
+ |description17=Distrito N.º 10
+ |fill17=#bebada
+ |fill-opacity17=0.75
+ |stroke-width17=0.5
+ }}
+| pie_mapa1 = Distritos continentales de Puntarenas, excluyendo [[Isla del Coco]].
+| superficie = 1789
+| población = 143 875
+}}
+{{Población histórica por censo de Costa Rica}}
+'''Puntarenas''' es el cantón primero de la [[provincia de Puntarenas]], en la costa pacífica de [[Costa Rica]]. Es el cantón más poblado de la provincia. Su ciudad cabecera es la [[Puntarenas (ciudad)|ciudad de Puntarenas]].
+
+Dentro de la superficie del cantón se encuentra importantes reservas biológicas como [[Cabo Blanco (Costa Rica)|Cabo Blanco]]. Al cantón de Puntarenas también pertenecen varias islas ubicadas en el golfo de Nicoya, como [[isla de Chira|Chira]] y [[isla San Lucas|San Lucas]].
+
+La [[Isla del Coco]] forma parte del cantón al ser el décimo distrito, se encuentra ubicada a 532&nbsp;km del litoral pacífico costarricense y es famosa a nivel mundial por su rica biodiversidad, ha sido declarada [[Patrimonio de la Humanidad]] por la [[Unesco]].
+
+== Historia ==
+{{AP|Anexo:Historia de Puntarenas}}
+El actual territorio de la [[provincia de Puntarenas]] fue habitado en épocas precolombinas por diversos grupos amerindios, que prácticamente ocuparon toda la costa desde el [[golfo de Nicoya]] hasta la [[Punta Burica]]. La región del Pacífico central, donde se halla el cantón de Puntarenas, fue ocupada por los [[huetares|huetares de occidente]], que en tiempos de la llegada española en el {{siglo|XVI||s}}, se hallaban gobernados por el [[rey Garabito]], cuyo asentamiento principal se encontraba en lo que hoy son los llanos de [[Cantón de Esparza|Esparza]], [[Cantón de Orotina|Orotina]] y [[Cantón de San Mateo|San Mateo]], en las faldas de los montes del Aguacate, y su reino se extendía por la cuenca del [[río Grande de Tárcoles]] hasta el [[Valle Central (Costa Rica)|Valle Central de Costa Rica]], así mismo, ocupaba todo el litoral pacífico desde Herradura hasta el [[río Parrita]]. Al noreste del territorio de Garabito, se encontraban los cacicazgos [[chorotegas]] de [[Gurutina]] y [[Chomes]], de influencia [[mesoamerica]]na, mientras que el pueblo de Paro, también de origen mesoamericano, ocupaba las islas de [[isla de Chira|Chira]], [[isla San Lucas|San Lucas]] y Venado, en el golfo de Nicoya, así como la costa de los actuales [[Paquera]], [[Cóbano]] y [[Lepanto (Costa Rica)|Lepanto]]. Toda esta región fue colonizada por los españoles desde 1522 y con el transcurrir del tiempo se incrementó su población, lo que la convirtió en una región muy importante.
+
+El origen de la provincia se remonta a un documento de los Archivos Nacionales del 13 de febrero de 1720, que, hace mención a la llegada del pirata [[John Clipperton|Clipperton]] a la zona hoy denominada [[golfo de Nicoya]], en la cual aparece la descripción referente a una vela de embarcación pequeña en la Punta de Arena. La anterior cita es la más antigua que se tiene conocimiento sobre el sitio, el cual se originó como consecuencia del proceso geomorfológico litoral, que comenzó a principios del {{siglo|XVII||s}}, y dio como resultado la flecha de arena. El primero en utilizarla como puerto de embarque y desembarque fue Miguel Antonio de Unanué.
+
+En 1814 el diputado de la provincia de Costa Rica antes las Cortes de Cádiz, presbítero [[Florencio del Castillo]], logró que éstas otorgaran el rango de Puerto Mayor a Puntarenas, [[Braulio Carrillo Colina]], en 1840 rehabilitó a Puntarenas como puerto para el comercio del Estado. Posteriormente por decreto # 2 del 5 de marzo de 1847 se declaró puerto franco.
+
+La población de Puntarenas, cabecera del cantón, adquiere título de “Ciudad de Puntarenas” el 17 de setiembre de 1858. Justifican tal decisión, emitida por [[Juan Rafael Mora Porras]], en el aumento de población, su desarrollo comercial y portuario los servicios espontáneos que presentara en la campaña contra los filibusteros provenientes del sur de los Estados Unidos; ya que esta ciudad era el paso obligado para dirigirse al norte hacia [[Guanacaste]] por el [[río Tempisque]], de ahí su importancia en la [[Campaña Nacional de 1856-1857]].
+
+Con la administración de [[Rafael Iglesias Castro]], se inicia la construcción del ferrocarril del Pacífico, la cual se concluyó en 1910.
+
+El Congreso Constitucional de la República del 7 de junio de 1909 promulgó la ley # 56 sobre división territorial municipal, que en su artículo primero, incisos 2, estableció las provincias del país para los efectos generales de la Administración Pública, entre los cuales aparece por primera vez Puntarenas con esa categoría.
+
+Se considera que el aumento de la población del cantón se dio luego de que se declarara a Puntarenas como Puerto Franco de altura para las exportaciones de café a [[Inglaterra]] y [[Chile]] en 1847, ayudado por la construcción del burrocarril entre Barranca y [[Cantón de Esparza|Esparza]] y la construcción del ferrocarril entre [[San José (Costa Rica)|San José]] y Puntarenas finalizado en 1910. Para el año 1942 sólo contaba con escuelas y colegios, en 1949 el Liceo Diurno José Martí, y se crean otras escuelas en la ciudad, luego el Colegio Nocturno hoy José Martí, Antonio Gámez, impartiendo clases en la escuela de niños hoy ( Escuela Delia Urbina de Guevara ), en 1972 se instaló un recinto con servicios educativos descentralizados de la [[Universidad de Costa Rica]] y en 1980 se creó el Colegio Universitario de Puntarenas lo que abre la posibilidad de educación superior en la ciudad de Puntarenas.
+                           
+La actividad portuaria, ferrocarrilera, turística tuvo gran realce desde los finales del S XIX, XX, se electrificó el ferrocarril al Pacífico, en 1950 se construyó la carretera interamericana y luego años después se construye la carretera Alberto Echandi a la ciudad de Puntarenas. Luego se produce un gran decaimiento con el traslado del puerto a [[Caldera (Costa Rica)|Caldera]].
+
+El 4 de agosto de 2021 se segrega el distrito de [[Monteverde (Costa Rica)|Monteverde]], por medio del expediente N.º 21618 de la [[Asamblea Legislativa de Costa Rica|Asamblea Legislativa]], luego el 29 de septiembre de 2021 el Poder Ejecutivo firma la ley N.º 10019<ref>{{cita web|título=Monteverde es oficialmente el cantón 83 de Costa Rica|url=https://www.presidencia.go.cr/comunicados/2021/09/monteverde-es-oficialmente-el-canton-83-de-costa-rica/|obra=Presidencia de la República de Costa Rica|fechaacceso=30 de septiembre de 2021}}</ref> lo que convierte al distrito en cantón.
+
+== Ubicación ==
+Los límites del cantón están definidos de la siguiente forma: al norte con la [[sierra de Tilarán]], al este con el río Barranca, al oeste con el río Lagarto, el río Bongo y el océano Pacífico, y al sur con el océano Pacífico. Fue fundado el 4 de noviembre de 1862. Su cabecera es la ciudad de [[Puntarenas (ciudad)|Puntarenas]].
+                     
+*Norte: sierra de Tilarán; [[provincia de Alajuela]], [[provincia de Guanacaste]], [[Monteverde (Costa Rica)|Monteverde]]
+*Sur: océano Pacífico
+*Este: Río Barranca
+*Oeste: Río Lagarto, Río Bongo con Guanacaste y océano Pacífico.
+
+== Geografía ==
+{{Cita geográfica de región de Costa Rica}}
+
+Al ser uno de los cantones más grandes del país, es uno de los pocos con [[microclima]]s tan dispares como los que se dan a la orilla del mar y las montañas cercanas al bosque nuboso. En el cantón se ubican gran cantidad de playas que son destino turístico importante de turistas tanto nacionales como extranjeros.
+
+Es el único cantón del país cuyo territorio se encuentra seccionado por un golfo, en este caso el [[golfo de Nicoya]].
+
+== División administrativa ==
+De acuerdo con la división político-administrativa, el cantón central de Puntarenas es parte de la sexta provincia del país siendo su cabecera.
+                        
+El cantón está integrado por 15 distritos administrativos, la [[Puntarenas (ciudad)|ciudad de Puntarenas]] se compone de tres distritos urbanos; Puntarenas, Chacarita y El Roble,<ref name="adt2019">{{cita web|título=Declara oficial para efectos administrativos, la aprobación de la División Territorial Administrativa de la República N°41548-MGP|url=http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=88416&nValor3=115607&strTipM=TC|fechaacceso=29 de agosto de 2020}}</ref> cuenta también con 12 distritos rurales, y la isla del Coco. Además tiene 3 Concejos Municipales de Distritos ([[Lepanto (Puntarenas)|Lepanto]], [[Paquera]], [[Cóbano]]) ubicados en la [[península de Nicoya]].
+                             
+Los distritos que componen el cantón son:
+* [[Puntarenas (distrito)|Puntarenas]]
+* [[Pitahaya (Costa Rica)|Pitahaya]]
+* [[Chomes]]
+* [[Lepanto (Puntarenas)|Lepanto]]
+* [[Paquera]]
+* [[Manzanillo de Puntarenas|Manzanillo]]
+* [[Guacimal]]
+* [[Barranca de Puntarenas|Barranca]]
+<!-- *[[Monteverde (Costa Rica)|Monteverde]] -->
+* [[Isla del Coco]]
+* [[Cóbano]]
+* [[Chacarita (Costa Rica)|Chacarita]]
+* [[Isla de Chira|Chira]]
+* [[Acapulco (Costa Rica)|Acapulco]]
+* [[El Roble de Puntarenas|El Roble]]
+* [[Arancibia de Puntarenas|Arancibia]]
+
+Una gran parte de la península de Nicoya se encuentra temporalmente bajo la jurisdicción del cantón de Puntarenas de la provincia de Puntarenas. Corresponde a los distritos peninsulares de [[Isla de Chira]], [[Lepanto (Puntarenas)|Lepanto]], [[Paquera]], [[Cóbano]]. Esto puede cambiar en el futuro, ya que existe un debate constante sobre la reasignación del área por efectos históricos.
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}
+
+De acuerdo al censo nacional del 2011, la población del cantón era de 115&nbsp;019 habitantes, de los cuales, el 5,6 % nació en el extranjero. El mismo censo destaca que había 33&nbsp;228 viviendas ocupadas, de las cuales, el 51,1 % se encontraba en buen estado y que había problemas de hacinamiento en el 7,9 % de las viviendas. El 71,5 % de sus habitantes vivían en áreas urbanas. El nivel de alfabetismo del cantón es del 97,1 %, con una escolaridad promedio de 7,6 años. Para el año 2012 presentaba un índice de desarrollo humano de 0.800 según el [[Programa de las Naciones Unidas para el Desarrollo]].
+
+== Economía ==
+El municipio cuenta con todos los servicios básicos, además de un muelle donde atracan cruceros de turistas, en la ciudad de Puntarenas. Cuenta con una economía basada en la pesca artesanal, industrias relacionadas con el sector pesquero, y el turismo.
+
+El censo nacional de 2011 detalla que la población económicamente activa se distribuye de la siguiente manera:
+* Sector primario: 17,2 %
+* Sector secundario: 16,1 %
+* Sector terciario: 66,7 %
+
+=== Sector industrial ===
+Pesca, procesamiento de sardinas y atunes, frigoríficos, fábricas de hielo, fábricas de harina, maquila, ingenios azucareros, industrias de abonos y químicos, embutidos, fábricas de productos lácteos, turismo y hotelería, torrefacción de café, mataderos, fábrica de café, alimentos de animales, industria avícola, etc.
+
+=== Agricultura ===
+Arroz, caña de azúcar, café, frutas (sandía, mango, melones, limones), verduras (tomate, chile), maíz, café, flores, productos agrícolas de autoconsumo familiar.
+
+=== Ganadería ===
+La actividad pecuaria es de carácter extensivo sobre todo la de carne. La ganadería es de doble propósito y se caracteriza por el predominio de animales de raza india y brasileña. Existen algunas explotaciones lecheras en las zonas altas al norte del cantón, particularmente en el distrito de Arancibia. La actividad ganadera de carne se concentra en los distritos de la península, Chomes, Manzanillo, Guacimal y Acapulco.
+
+=== Servicios ===
+* transporte público y privado de personas
+* transporte marítimo (ferry y cabotaje), turístico y aeropuerto
+* centros de recreación (parque marino del Pacífico)
+*centros de estudio (públicos y privados) para diferentes niveles y edades
+*bancos, mutuales, financieras, cajas de cambio.
+*hospitales, clínicas, Ebais, clínicas privadas.
+
+=== Comercio ===
+La mayor actividad comercial se concentra desde el barrio El Carmen hasta el cruce de Barranca, donde existen diversos tipos de comercio como: tiendas, [[bazar]]es, panaderías, supermercados, mercados, ferias agrícolas, ventas de autos, etc.
+
+=== Turismo ===
+{{Imagen múltiple
+ | posición_tabla = right
+ | dirección = horizontal
+ | ancho     = 
+ | título = | posición_título =    | fondo_de_título = 
+ | texto  = | posición =           | fondo_de_texto = 
+ | foto1  = CRI 04 2013 Cruceros Puntarenas 6300.JPG| ancho1 = 250 | texto1 = Cruceros en el muelle de Puntarenas. | alineación_texto1 = 
+ | foto2  = Playa de Puntarenas. Costa Rica (3).JPG| ancho2 = 225 | texto2 = Vista de la playa. | alineación_texto2 = 
+}}
+
+==== Ciudad de Puntarenas ====
+::''Véase también:[[Puntarenas (ciudad)#Turismo|Turismo en la ciudad de Puntarenas]]''
+
+La ciudad de [[Puntarenas (ciudad)|Puntarenas]] fue declarada Balneario Nacional en la década de 1940, debido a su accesibilidad por parte de los habitantes del [[Valle Central (Costa Rica)|Valle Central]]. Actualmente continúa siendo destino turístico principalmente entre los costarricenses, aunque el muelle remodelado permite el atraco de cruceros y esto a su vez genera la incursión de turistas nacionales y extranjeros. Este muelle principal o "muelle grande", cuya construcción original data de 1928, fue el principal punto de [[cabotaje]], que permitió el desarrollo del país gracias a la exportación de [[café de Costa Rica|café]] en el {{siglo|XIX||s}} y parte del {{Siglo|XX}}. El muelle se encuentra ubicado al inicio del paseo León Cortés Castro, conocido popularmente como paseo de los Turistas, bulevar peatonal y vehicular que se encuentra bordeando la playa, y en el cual se pueden encontrar bares, hoteles, restaurantes y áreas para patinar y caminar. Cerca del paseo de los Turistas están las principales terminales de buses que conectan con Puntarenas, y al final del mismo está el ferry que cruza el Golfo de Nicoya, lo que da acceso a muchas playas y lugares turísticos en la [[península de Nicoya]]. En lo que se refiere a turismo educativo, en el parque marino del Pacífico se encuentran diversas especies marinas características del Golfo de Nicoya. La ciudad también cuenta con gran cantidad de edificios históricos como la antigua Capitanía del puerto (edificio icónico de la ciudad), la Casa de la Cultura (ubicada en la antigua Comandancia de Plaza de la Guardia Civil), la Catedral que data de 1845, el parque Mora y Cañas, el parque Victoria, la antigua aduana del puerto, el mercado, la calle del comercio, antiguos hoteles como el Fénix y el Miramar, etc.
+
+==== Isla del Coco ====
+{{AP|Isla del Coco}}
+
+La isla del Coco fue declarada [[Patrimonio de la Humanidad]] por la [[UNESCO]], puesto que el [[Parque nacional Isla del Coco|parque nacional]] localizado en esta isla alberga 235 especies de plantas (70 endémicas), 362 de insectos (64 endémicas) y 2 de reptiles endémicos: la lagartija y la salamandra; 3 de arañas, 85 de aves incluyendo las marinas (4 endémicas), 57 de crustáceos, 118 moluscos marinos, más de 200 de peces y 18 de corales. En sus aguas abundan los tiburones de aleta blanca, los gigantes tiburones martillo, los atunes, los peces loro, las mantas y los jureles. A pesar de su distancia de la costa pacífica del país (532&nbsp;km), es parte del cantón central de Puntarenas.
+
+==== Distritos de la península de Nicoya ====
+Los tres distritos del cantón de Puntarenas ubicados en la [[península de Nicoya]] (Lepanto, [[Cóbano]] y Paquera), allende el [[golfo de Nicoya]], son importantes destinos turísticos debido a que en ellos se localizan atractivas playas como Montezuma, [[Tambor (Costa Rica)|Tambor]], Carmen, Hermosa, Manzanillo, Santa Teresa, Mal País, [[isla Tortuga (Costa Rica)|isla Tortuga]], etc. En Cóbano, también se encuentra la [[Península de Nicoya#Reserva Nacional Absoluta Cabo Blanco|Reserva biológica absoluta Cabo Blanco]], uno de los sitios más importantes y antiguos del país en lo que se refiere a conservación natural. A estos distritos se puede acceder vía ferry desde la ciudad de Puntarenas o por carretera rodeando el golfo de Nicoya por el [[puente de La Amistad de Taiwán]], sobre el [[río Tempisque]], en [[Guanacaste]].
+
+== Cultura ==
+=== Gastronomía ===
+*'''Vigorones''': Los puede encontrar a todo lo largo del paseo de los Turistas, se prepara con repollo picado, le agrega yuca, chicharrones de concha o carne, se adereza con un delicioso chimichurri (tomate picado, con culantro, cebolla, limón y sal). Todo servido en una o dos hojas de almendro.
+*'''Ceviche''': consiste en picar en pequeños trocitos el pescado, chucheca o plátano (menos el camarón que se deja entero) y agregarles después mucho jugo de limón, cebolla, chile dulce, culantro y sal al gusto.
+*'''Escabeche''': se pone a sudar en una sartén con mantequilla y un poquito de agua verduras como chayote, zanahoria, vainicas, coliflor, brócoli y algunos olores y condimentos como cebolla, hoja de laurel y clavo de olor. Luego se deja enfriar, cuando las verduras están tibias se les agrega vinagre y se tapa
+*'''Langosta a la parrilla''': primero se debe poner la langosta en agua hirviendo para eliminar cualquier microorganismo que no se haya desaparecido con el lavado, después se condimenta según el gusto y se coloca en la parrilla no por mucho tiempo hasta que alcance un color parecido al rojo pálido.
+*'''Arroz con calamares''': se pelan los calamares, se lavan y después se cortan en trocitos finos. Mientras se cocinan, se prepara la salsa con tomates y olores. Ya cocinado todo se revuelven los calamares con la salsa y todo se mezcla con el arroz ya preparado.
+*'''Arroz con camarones''': tiene un procedimiento igual al del arroz con calamares.
+*'''Sopas''': de camarón, de mariscos y hasta la famosa olla de carne, que aunque no se haga con mariscos es un platillo representativo de la provincia.
+*'''Salpicón''': se pone a cocinar el atún con olores. Cuando la carne está suave se seca y desmenuza, aparte se hace una salsa con tomates, condimentos y olores bien picados, la cual se pone a hervir a fuego lento. Por último se le rocía la salsa a la carne de atún desmenuzada.
+*'''Arroz Guacho''': es como hacer arroz solamente que se le agrega más agua, que quede como tipo sopa. Se puede elaborar de mariscos de la zona, cerdo, pollo.
+*'''Patacón''': es una torta hecha de plátano la cual se pone a sofreír.
+*'''Resbaladera''': hecha con arroz licuado acompañado de canela, nuez moscada, azúcar al gusto, hielo y leche.
+*'''Tamarindo''': es una bebida muy acostumbrada en Puntarenas.
+*'''Agua de pipa''': bebida preferida para calmar la sed e hidratarse, extraída del fruto de la palmera.
+*'''Horchata''': es una bebida que se hace con maní y arroz licuado, leche, cacao y azúcar.
+*'''Granizados''': helado hecho con hielo raspado, endulzado con cualquier tipo de sirope, acompañado de leche en polvo y leche condensada.
+*'''Churchill''': se prepara igual que el granizado, solamente que se le agrega una o más bolitas de helado al gusto.
+
+== Personas destacadas ==
+*[[Miguel Ángel Pérez Treacy|Miguel Ángel «Lito» Pérez Treacy]]: futbolista puntarenense con cuyo nombre se bautizó el estadio de fútbol.
+*[[Fray Casiano de Madrid]]: fraile franciscano que dedicó su vida a recoger a los niños y a los jóvenes de la calle, brindándoles educación y oficio, la gente en Puntarenas lo considera un Santo y sus restos se encuentran en la iglesia de Nuestra Señora del Carmen.
+
+== Véase también ==
+*[[Concejo Municipal de Puntarenas]]
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+{{Commonscat}}
+*[http://www.museosdecostarica.com/puntarenas.htm Puntarenas en Museos de Costa Rica]
+*[https://web.archive.org/web/20070302045224/http://www.munipuntarenas.go.cr/ Municipalidad de Puntarenas]
+
+{{Control de autoridades}}
+[[Categoría:Cantones de la provincia de Puntarenas|Puntarenas]]

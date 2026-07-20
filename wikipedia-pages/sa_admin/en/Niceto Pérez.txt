@@ -1,0 +1,100 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Niceto Pérez
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Presa La Yaya DSC02244.jpg
+|image_caption          = [[La Yaya Dam|La Yaya Reservoir]]
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Niceto Pérez (Cuban municipal map).png
+|map_caption            = Niceto Pérez municipality (red) within <br> Guantánamo Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Guantánamo Province|Guantánamo]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 640
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 16,181
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|07|39|N|75|20|32|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 60
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-21
+|website                = https://www.nicetoperez.gob.cu/es/
+|footnotes              = 
+}} <!--Infobox ends-->
+
+'''Niceto Pérez''' ({{IPA|es|niˈseto ˈpeɾes}}) is a municipality and town in the [[Guantánamo Province]] of [[Cuba]]. It is located {{convert|10|km|mi}} west of the provincial capital, [[Guantánamo, Cuba|Guantánamo]].
+
+==Demographics==
+In 2022, the municipality of Niceto Pérez had a population of 16,181.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|640|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids| accessdate=2007-10-05}}</ref> it has a population density of {{convert|25|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[List of cities in Cuba]]
+*[[Municipalities of Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Niceto Pérez
+ | N  = [[El Salvador, Cuba|El Salvador]]
+ | E  = [[Guantánamo]]
+ | SE = [[Caimanera]]
+ | S  = ''[[Caribbean Sea]]''
+ | SW = [[Santiago de Cuba]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+ | W  = [[Songo – La Maya]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+}}
+{{Municipalities in Guantánamo}}
+
+{{DEFAULTSORT:Niceto Perez}}
+[[Category:Populated places in Guantánamo Province]]
+
+
+{{Cuba-geo-stub}}

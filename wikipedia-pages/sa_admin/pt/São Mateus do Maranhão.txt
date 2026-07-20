@@ -1,0 +1,164 @@
+{{Info/Município do Brasil
+<!-- GeoID=2111508 -->
+<!-- Cabeçalho -->| nome = São Mateus do Maranhão 
+| foto = 
+| leg_foto = 
+| apelido = Samas
+<!-- Dados gerais -->| brasão = 
+| bandeira = Bandeira de São Mateus MA.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = [[26 de dezembro]]
+| fundação = {{nowrap|{{dtlink|26|12|1961|idade}}}}
+| gentílico = são-mateusense
+| prefeito = Miltinho Aragão <ref>{{Citar web |url=https://www.cnnbrasil.com.br/eleicoes/miltinho-aragao-e-eleito-prefeito-de-sao-mateus-do-maranhao-ma/ |titulo=Miltinho Aragão é eleito prefeito de São Mateus do Maranhão (MA) |data=2024-10-07 |acessodata=2025-07-07 |website=CNN Brasil |lingua=pt-BR |arquivourl=https://web.archive.org/web/20250618164103/https://www.cnnbrasil.com.br/eleicoes/miltinho-aragao-e-eleito-prefeito-de-sao-mateus-do-maranhao-ma/ |arquivodata=2025-06-18}}</ref>
+| partido = [[PSB]]
+| fim_mandato = 2028
+<!-- Localização -->| mapa = Maranhao Municip SaoMateusdoMaranhao.svg
+| latP = S
+| latG = 04
+| latM = 02
+| latS = 24
+| lonP = O
+| lonG = 44
+| lonM = 28
+| lonS = 12
+| estado = Maranhão
+| mesorregião = [[Mesorregião do Centro Maranhense|Centro Maranhense]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião do Médio Mearim|Médio Mearim]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Alto Alegre do Maranhão]], [[Bacabal]], [[Coroatá]], [[Matões do Norte]] e [[Pirapemas]]
+| dist_capital = 180
+<!-- Características geográficas -->| área = 783.220
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02) |arquivourl=http://web.archive.org/web/20040929065323/http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |arquivodata=2004-09-29}}</ref>
+| população = 38.829
+| data_pop = [[IBGE]]/2022<ref name="IBGE_Pop_2022">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ma/sao-mateus-do-maranhao.html |titulo=São Mateus do Maranhão (MA) - Cidades e Estados - IBGE |acessodata=2025-07-07 |website=www.ibge.gov.br |arquivourl=https://web.archive.org/web/20240427005336/https://www.ibge.gov.br/cidades-e-estados/ma/sao-mateus-do-maranhao.html |arquivodata=2024-04-27}}</ref>
+| altitude = 44
+| clima = tropical seco
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.616 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=15 de fevereiro de 2014 |arquivourl=http://web.archive.org/web/20130921053801/http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |arquivodata=2013-09-21}} </ref>
+| pib = {{formatnum:119676.123}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010 |arquivourl=http://web.archive.org/web/20101223021538/http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |arquivodata=2010-12-23}}</ref>
+| pib_per_capita = 3052.18
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site = [http://www.saomateus.ma.gov.br/site/ Site oficial]
+}}
+{{Crescimento populacional do Censo do Brasil
+| 1970 = 17284
+| 1980 = 25008
+| 1991 = 31076
+| 2000 = 34859
+| 2010 = 39093
+| 2022 = 38829
+| ano_censo  = 2022
+| ref_censo  =
+| rodape   =Fontes: Censo IBGE/2022<ref>{{citar web|URL=https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/evolucao_da_divisao_territorial_do_brasil/evolucao_da_divisao_territorial_do_brasil_1872_2010/evolucao_da_populacao_segundo_os_municipios.pdf|título=Evolução da população, segundo os municípios - 1872/2010|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=18 de abril de 2023 |arquivourl=http://web.archive.org/web/20201028204907/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/evolucao_da_divisao_territorial_do_brasil/evolucao_da_divisao_territorial_do_brasil_1872_2010/evolucao_da_populacao_segundo_os_municipios.pdf |arquivodata=2020-10-28}}</ref>}}
+
+'''São Mateus do Maranhão''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Maranhão]]. Sua população, conforme estimativas do IBGE de 2022, é de {{fmtn|38.829}}<ref name="IBGE_Pop_2022" /> habitantes.
+
+A cidade é localizada na [[mesorregião do Centro Maranhense]], na [[microrregião do Médio Mearim]], que teve sua autonomia política em [[23 de setembro]] de [[1963]]. Está a 44m de altitude, 188 km distante da capital [[São Luís (Maranhão)|São Luís]].
+
+== Etimologia ==
+O [[município]] recebeu o nome de [[São Mateus do Maranhão]] por causa dos primeiros povoadores da localidade que eram adeptos fervorosos de [[São Mateus Evangelista|São Mateus]].<ref name=":0">{{Citar web|ultimo=Maranhão|primeiro=Prefeitura Municipal de São Mateus do|url=https://www.saomateus.ma.gov.br/omunicipio.php|titulo=Prefeitura de São Mateus – O Município|acessodata=2025-05-05|website=www.saomateus.ma.gov.br|lingua=pt |arquivourl=http://web.archive.org/web/20210728124609/https://www.saomateus.ma.gov.br/omunicipio.php |arquivodata=2021-07-28}}</ref>
+
+== História ==
+Em 1942, às margens da [[BR-135]], chegaram ao pequeno lugar conhecido hoje como [[São Mateus do Maranhão]] quatro moradores e o piauiense Absalão Cândido Feitosa, juntos iniciaram o desbravamento do local através de grandes lavouras.<ref name=":0" />
+
+A existência de vastos campos, com exuberante pastagem, propiciou a exploração de pecuária, embora em pequena escala. Com meio de subsistência, os lavradores desenvolveram a caça e a pesca, encontradas em abundância.<ref name=":0" />
+
+Com o advento da [[BR-135]], a povoação tomou grande impulso, experimentando elevado crescimento populacional do povoado de São Mateus. Mas só após alguns anos, pela Lei Estadual nº 2.170, de [[26 de dezembro]] de [[1961]], foi criado o município, desmembrado de [[Coroatá]] e [[Bacabal]].<ref name=":0" />
+
+== Geografia ==
+O município de São Mateus do Maranhão possui uma extensão territorial de 800,045 quilômetros quadrados, ocupando a 120 posição entre os 217 municípios maranhenses em termos de área.<ref name="IBGE2022">{{Citar web |url=https://cidades.ibge.gov.br/brasil/ma/sao-mateus-do-maranhao/panorama |titulo=São Mateus do Maranhão - IBGE |acessodata=2025-07-07 |website=cidades.ibge.gov.br |arquivourl=https://web.archive.org/web/20250621125640/https://cidades.ibge.gov.br/brasil/ma/sao-mateus-do-maranhao/panorama |arquivodata=2025-06-21}}</ref>
+
+=== Demografia ===
+Segundo dados do [[Censo demográfico do Brasil de 2022|Censo Demográfico de 2022]], São Mateus do Maranhão contava com 38.829 habitantes, resultando em uma densidade populacional de aproximadamente 48,53 habitante por quilômetro quadrado. No contexto estadual, o município ocupava a 32 posição em número de habitantes e a 26 em densidade demográfica comparando-se com outros municípios do estado do Maranhão. A estimativa populacional para o ano de 2024 era de 40.160 habitantes.<ref name="IBGE2022"/>
+
+=== Educação ===
+Em 2010, a taxa de escolarização de crianças entre 6 e 14 anos em São Mateus do Maranhão era de 95,3 %, colocando o município na 169 colocação entre os 217 do estado. Quanto ao Índice de Desenvolvimento da Educação Básica (IDEB) referente ao ano de 2023, os anos iniciais do ensino fundamental na rede pública apresentaram índice de 4,8 enquanto os anos finais atingiram 4,0.<ref name="IBGE2022"/>
+
+{| class="wikitable"
+|+Dados Educação
+|Taxa de escolarização de 6 a 14 anos de idade <small>[2010]</small>
+|'''95,3 %'''
+|-
+|IDEB – Anos iniciais do ensino fundamental (Rede pública) <small>[2023]</small>
+|'''4,8'''
+|-
+|IDEB – Anos finais do ensino fundamental (Rede pública) <small>[2023]</small>
+|'''4,0'''
+|-
+|Matrículas no ensino fundamental <small>[2023]</small>
+|'''6.099''' matrículas
+|-
+|Matrículas no ensino médio <small>[2023]</small>
+|'''1.795''' matrículas
+|-
+|Docentes no ensino fundamental <small>[2023]</small>
+|'''292''' docentes
+|-
+|Docentes no ensino médio <small>[2023]</small>
+|'''97''' docentes
+|-
+|Número de estabelecimentos de ensino fundamental <small>[2023]</small>
+|'''46''' escolas
+|-
+|Número de estabelecimentos de ensino médio <small>[2023]</small>
+|'''5''' escolas
+|}
+Fonte: IBGE<ref name="IBGE2022"/>
+
+== Economia ==
+Em 2021, o Produto Interno Bruto (PIB) per capita de São Mateus do Maranhão foi de R$ 10.282,41, valor que colocava o município na 75 posição entre os 217 do estado do Maranhão. Já em 2023, as receitas oriundas de fontes externas representavam 85,80 % do total arrecadado pelo município, o que o posicionava em 184 lugar no ranking estadual.<ref name="IBGE2022"/>
+
+{| class="wikitable"
+|+Dados Economia
+|PIB per capita <small>[2021]</small>
+|'''10.282,41 R$'''
+|-
+|Índice de Desenvolvimento Humano Municipal (IDHM) <small>[2010]</small>
+|'''0,616'''
+|-
+|Total de receitas brutas realizadas <small>[2023]</small>
+|'''166.185.462,89 R$'''
+|-
+|Transferências correntes (Percentual em relação às receitas correntes brutas realizadas) <small>[2023]</small>
+|'''85,80 %'''
+|-
+|Total de despesas brutas empenhadas <small>[2023]</small>
+|'''158.432.699,90 R$'''
+|}
+Fonte: IBGE<ref name="IBGE2022"/>
+
+{| class="wikitable"
+|+Trabalho e Rendimento
+|Salário médio mensal dos trabalhadores formais <small>[2022]</small>
+|'''2,1''' salários mínimos
+|-
+|Pessoal ocupado <small>[2022]</small>
+|'''3.062''' pessoas
+|-
+|População ocupada <small>[2022]</small>
+|'''7,89 %'''
+|-
+|Percentual da população com rendimento nominal mensal per capita de até 1/2 salário mínimo <small>[2010]</small>
+|'''52,4 %'''
+|}
+Fonte: IBGE<ref name="IBGE2022"/>
+
+{{Referências|col=2}}
+
+==Ligações externas==
+*[http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=211150 ibge.gov.br: Perfil do município]
+
+{{Esboço-municípiosbr/Maranhão}}
+{{Municípios do Maranhão}}
+{{Portal3|Maranhão}}
+
+{{DEFAULTSORT:Sao Mateus Maranhao}}
+[[Categoria:Municípios do Maranhão|Sao Mateus Maranhao]]
+[[Categoria:Fundações no Maranhão em 1961]]

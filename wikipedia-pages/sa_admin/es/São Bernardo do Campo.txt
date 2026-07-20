@@ -1,0 +1,81 @@
+{{Ficha de entidad subnacional
+|nombre             = São Bernardo do Campo
+|nombre_oficial     = São Bernardo do Campo
+|unidad             = [[Anexo:Municipios de Brasil|Municipio]]
+|país               = {{BRA}}
+|tipo_superior_1    = [[Estados de Brasil|Estado]]
+|superior_1         = {{bandera2|Estado de São Paulo}}
+|bandera            = Bandeira de São Bernardo do Campo.jpg
+|escudo             = Brasão São Bernardo do Campo.jpg
+<!-- Mapas de localización -->
+|mapa               = SaoPaulo Municip SaoBernardodoCampo.svg
+|pie_mapa           = Localización de São Bernardo do Campo
+| mapa1 = <mapframe frameless align=center width="280" height="300" zoom="10" latitude="-23.803057" 
+ longitude="-46.549491"> 
+[{"type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q184403",
+    "properties": {
+      "stroke": "#0047AB",
+      "stroke-width": 4,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}},
+{ "type": "ExternalData",
+    "service": "geoshape",
+    "ids": "Q175",
+    "properties": {
+      "stroke": "#000000", 
+      "stroke-width": 5,
+      "fill-opacity": 0,
+      "fill": "#4D87CA"}}]
+</mapframe>
+| pie_mapa1 = Vista del Municipio de São Bernardo do Campo dentro del [[Estado de São Paulo]]. (Pulse para ver mapa interactivo)
+|mapa_loc           = São Paulo
+<!-- Parámetros históricos -->
+|fundación          = 1553
+|fundador           = João Ramalho
+<!-- Parámetros geográficos -->
+|superficie         = 406,180 [[km²]]
+|elevación_media    = 762
+<!-- Parámetros demográficos -->
+|población          = 878.580 hab. <small>(est. 2008)</small>
+|población_año      = 
+|población_post     =
+|densidad           = 1941.4 hab./km²
+|gentilicio         = ''são-bernardense''
+|idioma             = [[Idioma portugués|Portugués]]
+|página web         = [http://web.archive.org/web/http://www.saobernardo.sp.gov.br/ saobernardo.sp.gov.br/]
+|imagen=Visão_Panorâmica_de_São_Bernardo_do_Campo.jpg}}
+[[São Bernardo do Campo]] es un municipio brasileño del [[Unidad federativa de Brasil|estado]] de [[Estado de São Paulo|São Paulo]], en la Región Inmediata de São Paulo. Pertenece a la Zona Sudeste del Gran São Paulo, de acuerdo con la ley estatal nº 1.139, de 16 de junio de 2011 y, en consecuencia, con el Plan de Desarrollo Urbano Integrado de la Región Metropolitana de São Paulo (PDUI), y también a la región no oficial de Grande ABC.<ref>{{Cita web|url=https://www.encontraemsaobernardo.com.br/|título=EncontraEmSaoBernardo.com.br {{!}} Guia de São Bernardo » EncontraEmSaoBernardo.com.br|fechaacceso=2024-09-26|sitioweb=EncontraEmSaoBernardo.com.br|idioma=pt-BR}}</ref>
+
+== Geografía ==
+Se encuentra ubicado a una latitud de 23° 41' 38" Sur y una longitud de 46° 33' 54" Oeste. Su población estimada para el año 2008 era de 878.580 habitantes.
+Esta importante región [[industria]]l, ocupa una superficie de 406,18 km², y forma parte del "Gran São Paulo" ([[Región metropolitana de São Paulo|Área metropolitana de la ciudad de São Paulo]]).
+
+== Demografía ==
+{| border="0"
+|-
+|
+{{Población histórica - municipios de São Paulo
+| 1920 = 25215
+| 1940 = 
+| 1950 = 29295
+| 1960 = 82411
+| 1970 = 201662
+| 1980 = 425611
+| 1991 = 566893
+| 2000 = 703177
+| 2010 = 765463
+| 2022 = 810729
+}}
+|}
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+* [https://web.archive.org/web/20050303003329/http://www.saobernardo.sp.gov.br/ Página oficial (en portugués)]
+
+{{ORDENAR:Sao Bernardo do Campo}}
+{{Control de autoridades}}
+[[Categoría:São Bernardo do Campo| ]]

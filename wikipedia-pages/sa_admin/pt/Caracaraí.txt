@@ -1,0 +1,313 @@
+{{ver desambig|ave|Carrapateiro}}
+{{Mais notas|data=maio de 2025}}
+{{Info/Município do Brasil
+<!-- GeoID=1400209 -->
+<!-- Cabeçalho -->| nome = Caracaraí
+| foto = Caracaraí, Roraima.JPG
+| leg_foto = Avenida Dr. Zanny na cidade de Caracaraí, Roraima.
+| apelido = Cidade-Porto"<br>"Capital do Centro Roraimense
+<!-- Dados gerais -->| brasão = Brasao Caracarai.jpg
+| bandeira = Bandeira Caracarai.jpg
+| link_brasão = 
+| link_bandeira = 
+| link_hino = s:Hino do município de Caracaraí
+| aniversário = 27 de maio
+| fundação = {{nowrap|{{dtlink|1|12|1938|idade}}}}
+| emancipação = {{nowrap|{{dtlink|27|5|1955|idade}}}}<br />- de [[Boa Vista (Roraima)|Boa Vista]]
+| gentílico = [[wikt:caracaraiense|caracaraiense]]
+| CEP = 69360-000<ref name="Correios">{{Citar web|url= http://www.correios.com.br/|titulo=CEP de cidades brasileiras|publicado=[[Empresa Brasileira de Correios e Telégrafos|Correios]]|acessodata=31 de Julho de 2008}}</ref>
+| padroeiro = [[Nossa Senhora do Livramento]]
+| prefeito = Dianiery de Souza Coelho
+| partido = [[Progressistas|PP]]
+| mandato_início = 2025
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM  COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 11
+<!-- Localização -->| mapa = Brazil Roraima Caracarai location map.svg
+| latP = N
+| latG = 01
+| latM = 48
+| latS = 57
+| lonP = O
+| lonG = 61
+| lonM = 07
+| lonS = 40
+| estado = Roraima
+| região_intermediária = Rorainópolis-Caracaraí
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017b">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = Caracaraí
+| data_região_imediata = <ref name="IBGE_DTB_2017b"/>
+| região_metropolitana = [[Região Metropolitana Central|Central]]
+| vizinhos = [[Iracema (Roraima)|Iracema]], [[Cantá]] e [[Bonfim (Roraima)|Bonfim]] a norte, a [[Guiana]] a nordeste, [[Caroebe]] a sudeste, [[São João da Baliza]], [[São Luiz do Anauá]] e [[Rorainópolis]] ao sul e o município, [[Amazonas|amazonense]] de [[Barcelos (Amazonas)|Barcelos]] a oeste.
+| dist_capital = * {{fmtn|[[Brasília|federal]]:|3648}} km
+* {{fmtn|[[Boa Vista (Roraima)|estadual]]|140}}
+| dist_capital_ref = <ref name="Distância">{{citar web|url=http://viajeaqui.abril.com.br/guia4rodas|titulo=Mapas e rotas|publicado=Guia 4 Rodas|acessodata=3 de novembro de 2011}}</ref>
+<!-- Características geográficas -->| área = 47410.891<!--favor manter o formato-->
+| área_pos = [[Lista de municípios do Brasil por área|BR: 19º]] RR: 1º
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = {{Formatnum:2.514}}
+| área_urbana_pos = RR: 2º
+| área_urbana_ref = est. [[Embrapa]]<ref name="Embrapa_RR">{{citar web|url=http://www.urbanizacao.cnpm.embrapa.br/conteudo/uf/rr.html |arquivourl=http://www.webcitation.org/62IGZi5e0 |arquivodata=8 de outubro de 2011 |titulo=Roraima |autor=[[Embrapa Monitoramento por Satélite]] |acessodata=8 de outubro de 2011}}</ref>
+| distritos = 1
+| população = 21564
+| população_pos = BR: 1792º [[Lista de municípios de Roraima por população|RR: 3º]]
+| data_pop = estimativa [[IBGE]]/2018<ref name="Estimativa 2018">{{citar web |url= ftp://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2018/estimativa_dou_2018.pdf |publicado = Instituto Brasileiro de Geografia e Estatística (IBGE) |titulo= Estimativa populacional 2018 |acessodata= 29 de agosto de 2018 }}</ref>
+<!-- |densidade = Se os parâmetros "população" e "área" são informados corretamente (usando ponto no lugar de vírgula, sem inserir espaços entre os dígitos e sem acrescentar caracteres que não sejam algarismos), NÃO é necessário informar a densidade, pois nesse caso ela é calculada *automaticamente* -->| altitude = 52
+| altitude_ref = <ref name="Embrapa_RR"/>
+| clima = Clima Tropical
+| sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.624<!--favor manter o formato-->
+| idh_pos = BR: 3607°
+| data_idh = [[PNUD]]/2010<ref name="PNUD">{{citar web |url=http://atlasbrasil.org.br/2013/pt/perfil_m/caracarai_rr|titulo=Perfil do município de Caracaraí - RR |autor= Programa das Nações Unidas para o Desenvolvimento |publicado= Atlas do Desenvolvimento Humano no Brasil 2013 |data= 2010 |acessodata= 28 de dezembro de 2013 }}</ref>
+| gini = {{Formatnum:0.56}}
+| data_gini = [[PNUD]]/2010<ref name="PNUD"/>
+| pib = {{formatnum:322843.380}} mil<!--favor manter o formato-->
+| pib_pos = [[Lista de municípios de Roraima por PIB|RR: 3º]]
+| data_pib = [[IBGE]]/2016<ref name="IBGE_PIB">{{citar web |url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=destaques&c=5300108 |título=Produto Interno Bruto dos Municípios - 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=28 de dezembro de 2018 |wayb=20180210213403}}</ref>
+| pib_per_capita = 20537.00
+| data_pib_per_capita = RR: 7º - [[IBGE]]/2016<ref name="IBGE_PIB"/>
+<!-- Página oficial -->| site_prefeitura = {{Link|pt|2=http://www.caracarai.rr.gov.br/|3=www.caracarai.rr.gov.br}}
+| site_câmara = {{Link|pt|2=http://www.caracarai.rr.leg.br/|3=www.caracarai.rr.leg.br}}
+}}
+'''Caracaraí''' é um [[município]] do [[Unidades federativas do Brasil|estado]] [[brasileiro]] de [[Roraima]].
+
+É o terceiro município mais populoso do estado, com 22.283 habitantes, conforme estatísticas de 2020 do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE).<ref>{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/rr/caracarai.html |titulo=Caracaraí (RR) {{!}} Cidades e Estados {{!}} IBGE |acessodata=2021-03-26 |website=www.ibge.gov.br}}</ref> É conhecida por ''Cidade-[[Porto]]'' por ter o maior movimento fluvial do estado.
+
+== História ==
+Nasceu como um local de embarque de gado para a capital [[Amazonas|amazonense]]. Os animais desciam até a ''Boca da estrada'', onde iniciam-se as [[Corredeiras do Bem-Querer]]. Ali eram desembarcados e tangidos até um curral no porto municipal, onde eram embarcados ao matadouro de [[Manaus]].
+
+Mercadorias vindas de Manaus e com destino a [[Boa Vista (Roraima)|Boa Vista]] faziam este caminho em sentido inverso, e isso desenvolveu o lugar.
+
+O município foi criado pela Lei Federal Nº 2.495 de 27 de maio de 1955, com terras desmembradas do município da capital.<ref>{{Citar web |url=https://www2.camara.leg.br/legin/fed/lei/1950-1959/lei-2495-27-maio-1955-361087-publicacaooriginal-1-pl.html#:~:text=Fixa%20a%20divis%C3%A3o%20administrativa%20e,O%20PRESIDENTE%20DA%20REP%C3%9ABLICA,&text=9%C2%BA%20desta%20lei. |titulo=Portal da Câmara dos Deputados |acessodata=2021-03-26 |website=www2.camara.leg.br}}</ref>
+
+== Geografia ==
+{| class="wikitable" style="float:left; margin:1em; border-collapse:border; text-align:center; font-size:84%"
+! colspan="3"| Maiores acumulados de [[Precipitação (meteorologia)|precipitação]]<br />em 24 horas registrados em<br />Caracaraí por meses ([[Instituto Nacional de Meteorologia|INMET]])<ref name="Precipitação-INMET"/>
+|-
+! Mês
+! Acumulado
+! Data
+|-
+| Janeiro
+| {{fmtn|98|mm}}
+| 08/01/2006
+|-
+| Fevereiro
+| {{fmtn|68.7|mm}}
+| 20/02/1982
+|-
+| Março
+| {{fmtn|104|mm}}
+| 14/03/1994
+|-
+| Abril
+| {{fmtn|122|mm}}
+| 03/04/2022
+|-
+| Maio
+| {{fmtn|118|mm}}
+| 15/05/2006
+|-
+| Junho
+| {{fmtn|162.4|mm}}
+| 01/06/2019
+|-
+| Julho
+| {{fmtn|96|mm}}
+| 10/07/1998
+|-
+| Agosto
+| {{fmtn|92.4|mm}}
+| 18/08/2010
+|-
+| Setembro
+| {{fmtn|68|mm}}
+| 14/09/2009
+|-
+| Outubro
+| {{fmtn|82.2|mm}}
+| 11/10/1986
+|-
+| Novembro
+| {{fmtn|102|mm}}
+| 02/11/2006
+|-
+| Dezembro
+| {{fmtn|91|mm}}
+| 20/12/2005
+|-
+| colspan="3" style="font-size:82%"| '''Período''': 01/01/1979 a 30/06/1989 e<br />01/02/1993—presente
+|}
+Caracaraí está localizado no centro-sul do estado, na [[Região geográfica intermediária|Região Geográfica Intermediária]] de [[Região Geográfica Intermediária de Rorainópolis-Caracaraí|Rorainópolis-Caracaraí]] e [[Região geográfica imediata|Região Geográfica Imediata]] de [[Região Geográfica Imediata de Caracaraí|Caracaraí]].<ref name="IBGE_DTB_2017b">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref> Situa-se na [[Região Metropolitana Central]], uma das três em território roraimense. Seus limites são [[Iracema (Roraima)|Iracema]], [[Cantá]] e [[Bonfim (Roraima)|Bonfim]] a norte; a [[Guiana]] a nordeste; [[Caroebe]] a sudeste; [[São João da Baliza]], [[São Luiz (Roraima)|São Luiz]] e [[Rorainópolis]] ao sul e, a oeste, com [[Barcelos (Amazonas)|Barcelos]], no [[Amazonas]].
+
+Situado na margem direita do [[Rio Branco (Roraima)|rio Branco]], Caracaraí é o [[Lista de municípios de Roraima por área|maior município de Roraima em área territorial]], atravessando-o de leste a oeste. A área do município é pouco maior do que os estados brasileiros do [[Rio de Janeiro (estado)|Rio de Janeiro]] ou do [[Espírito Santo (estado)|Espírito Santo]]. Também é maior do que a [[Suíça]], [[Países Baixos|Holanda]], [[Dinamarca]], [[Estónia]] ou [[Butão]], possuindo 47.379,903&nbsp;km².<ref>{{Citar web |ultimo=IBGE |url=https://cidades.ibge.gov.br/brasil/rr/caracarai/panorama |titulo= |acessodata=2021-03-26 |website=cidades.ibge.gov.br}}</ref>
+
+=== Clima ===
+O clima, segundo a [[Classificação climática de Köppen-Geiger|classificação de Köppen-Geiger]] é do tipo tropical chuvoso, com os totais anuais de precipitação pluviométrica relativamente elevados, chegando a {{fmtn|2000}} milímetros. Segundo dados do [[Instituto Nacional de Meteorologia]], referentes ao período de 1979 a 1989 e a partir de 1993 a menor [[temperatura]] registrada em Caracaraí foi de {{fmtn|16|°C}} em cinco ocasiões: 2 de fevereiro de 1985, 5 de março de 1987, 19 de fevereiro de 1993, 10 de março de 1993 e 18 de janeiro de 1994. A temperatura máxima absoluta atingiu {{fmtn|39.2|°C}} em 15 de setembro de 2023.<ref name="NCB-INMET"/>
+
+O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas atingiu {{fmtn|162.4}} milímetros (mm) em 1 de junho de 2019. Outros acumulados iguais ou superiores a {{fmtn|100|mm}} foram: {{fmtn|143|mm}} em 7 de junho de 1989, {{fmtn|132|mm}} em 9 de junho de 1998, {{fmtn|122|mm}} em 3 de abril de 2022, {{fmtn|121.2|mm}} em 14 de abril de 2016, {{fmtn|120|mm}} em 26 de abril de 1999, {{fmtn|118|mm}} em 15 de maio de 2006, {{fmtn|115.4|mm}} em 19 de junho de 1996, {{fmtn|105|mm}} em 13 de junho de 2016, {{fmtn|104|mm}} em 14 de março de 1994, {{fmtn|102|mm}} em 2 de novembro de 2006 e {{fmtn|100|mm}} em 26 de abril de 2022. Junho de 2019, com {{fmtn|619|mm}}, foi o mês de maior precipitação.<ref name="INMET-82042"/>
+{{Tabela climática
+|localidade  = Caracaraí <small>([[Organização Meteorológica Mundial|OMM]]: 82042)</small>
+|larguraporcentagem  =  65
+
+|Jan_Max_°C = 32.6 |Jan_REC_Max_°C = 38.5 |Jan_Med_comp_°C =  27  |Jan_Min_°C = 21.4 |Jan_REC_Min_°C =  16
+|Fev_Max_°C =  33  |Fev_REC_Max_°C = 38.3 |Fev_Med_comp_°C = 27.3 |Fev_Min_°C = 21.6 |Fev_REC_Min_°C =  16
+|Mar_Max_°C = 33.3 |Mar_REC_Max_°C = 38.8 |Mar_Med_comp_°C = 27.6 |Mar_Min_°C = 21.7 |Mar_REC_Min_°C =  16
+|Abr_Max_°C = 32.7 |Abr_REC_Max_°C = 38.3 |Abr_Med_comp_°C = 27.2 |Abr_Min_°C = 22.2 |Abr_REC_Min_°C = 16.6
+|Mai_Max_°C =  31  |Mai_REC_Max_°C = 36.8 |Mai_Med_comp_°C = 26.2 |Mai_Min_°C = 21.8 |Mai_REC_Min_°C = 16.8
+|Jun_Max_°C = 30.9 |Jun_REC_Max_°C = 35.6 |Jun_Med_comp_°C =  26  |Jun_Min_°C = 21.6 |Jun_REC_Min_°C =  17
+|Jul_Max_°C = 31.1 |Jul_REC_Max_°C = 36.6 |Jul_Med_comp_°C = 25.8 |Jul_Min_°C = 21.6 |Jul_REC_Min_°C = 17.6
+|Ago_Max_°C = 32.3 |Ago_REC_Max_°C = 37.8 |Ago_Med_comp_°C = 26.5 |Ago_Min_°C = 21.9 |Ago_REC_Min_°C = 17.4
+|Set_Max_°C = 33.4 |Set_REC_Max_°C = 39.2 |Set_Med_comp_°C = 27.4 |Set_Min_°C = 22.2 |Set_REC_Min_°C = 18.4
+|Out_Max_°C = 34.2 |Out_REC_Max_°C = 38.5 |Out_Med_comp_°C =  28  |Out_Min_°C = 22.5 |Out_REC_Min_°C =  18
+|Nov_Max_°C = 33.8 |Nov_REC_Max_°C =  38  |Nov_Med_comp_°C = 27.8 |Nov_Min_°C = 22.5 |Nov_REC_Min_°C =  18
+|Dez_Max_°C = 32.8 |Dez_REC_Max_°C =  38  |Dez_Med_comp_°C = 27.1 |Dez_Min_°C = 22.1 |Dez_REC_Min_°C = 16.4
+|Max_Ano_°C = 32.6 |Max_Rec_Ano_°C = 39.2 |Med_comp_Ano_°C =  27  |Min_Ano_°C = 21.9 |Min_Rec_Ano_°C =  16
+
+|Precip_Min = ≥ 1 mm       
+|Jan_dprecip =  7   |Jan_Precip_mm = 64.9   |Jan_umid_comp = 77.5 |Jan_hsol = 200.3
+|Fev_dprecip =  6   |Fev_Precip_mm = 50.9   |Fev_umid_comp = 76.3 |Fev_hsol = 166.7
+|Mar_dprecip =  7   |Mar_Precip_mm = 93.4   |Mar_umid_comp =  76  |Mar_hsol = 177.6
+|Abr_dprecip =  14  |Abr_Precip_mm = 196.1  |Abr_umid_comp = 80.1 |Abr_hsol = 147.4
+|Mai_dprecip =  21  |Mai_Precip_mm = 321.1  |Mai_umid_comp = 83.5 |Mai_hsol = 128
+|Jun_dprecip =  21  |Jun_Precip_mm = 336.1  |Jun_umid_comp = 84.6 |Jun_hsol = 124.7
+|Jul_dprecip =  22  |Jul_Precip_mm = 296.1  |Jul_umid_comp = 85.1 |Jul_hsol = 159.6
+|Ago_dprecip =  18  |Ago_Precip_mm = 216.7  |Ago_umid_comp = 82.4 |Ago_hsol = 187.8
+|Set_dprecip =  12  |Set_Precip_mm = 150.7  |Set_umid_comp = 79.8 |Set_hsol = 204.5
+|Out_dprecip =  8   |Out_Precip_mm = 100.8  |Out_umid_comp =  78  |Out_hsol = 218.3
+|Nov_dprecip =  6   |Nov_Precip_mm = 89.6   |Nov_umid_comp = 78.8 |Nov_hsol = 215.9
+|Dez_dprecip =  9   |Dez_Precip_mm = 84.7   |Dez_umid_comp = 80.1 |Dez_hsol = 198.2
+|Ano_dprecip =  151 |Ano_Precip_mm = 2001.1 |Ano_umid_comp = 80.2 |Ano_hsol = 2129
+
+
+|fonte = [[Instituto Nacional de Meteorologia|INMET]] (normal climatológica de 1981-2010;<ref name="NCB-INMET">{{citar web|URL=https://portal.inmet.gov.br/normais|título=Normais climatológicas do Brasil|autor=INMET|acessodata=23/03/2022}}</ref> recordes de<br />temperatura: 01/01/1979 a 30/06/1989 e 01/02/1993—presente)<ref name="INMET-82042">{{citar web|url=https://tempo.inmet.gov.br/TabelaEstacoes/82042|título=Estação: CARACARAI (82042)|autor=INMET|acessodata=01/10/2023}}</ref>
+}}
+
+=== Localidades principais ===
+Segue uma relação de das principais localidades não [[indígena]]s do município e suas respectivas populações segundo o [[Censo demográfico|Censo]] de 2010.<ref>{{citar web | url=http://www.ibge.gov.br/home/ | título= Dados com base em levantamentos utilizando os resultados do Censo 2010 do IBGE. }} Acesso em 7 fev 2012.</ref>
+* 10.910 habitantes - Caracaraí (sede)
+* 617 habitantes - Vila Novo Paraíso
+* 180 habitantes - Vila Petrolina do Norte
+* 574 habitantes - Vila Vista Alegre
+
+== Organização político-administrativa ==
+
+O [[Município]] de ''Caracaraí'' possui uma estrutura político-administrativa composta pelo [[Poder Executivo]], chefiado por um [[Prefeito]] eleito por sufrágio universal, o qual é auxiliado diretamente por [[Secretário de Estado#Brasil|secretários municipais]] nomeados por ele, e pelo [[Poder Legislativo]], institucionalizado pela [[Câmara Municipal (Brasil)|Câmara Municipal de Caracaraí]], órgão colegiado de representação dos munícipes que é composto por 11 [[vereadores]] também eleitos por sufrágio universal.<ref>MEIRELLES, Hely Lopes. ''Direito municipal brasileiro''. 18. ed. São Paulo: Malheiros, 2017.</ref>
+
+=== Atuais autoridades municipais de Caracaraí ===
+* [[Prefeitura (Brasil)|Prefeita]]: Dianiery de Souza Coelho "Diane" - [[Solidariedade (partido político)|SOLIDARIEDADE]] (2021/-)<ref name=ps>{{Citar web |url=https://g1.globo.com/rr/roraima/noticia/2021/01/01/prefeita-e-vereadores-de-caracarai-tomam-posse-veja-lista-de-eleitos.ghtml |titulo=Prefeita e vereadores de Caracaraí tomam posse; veja lista de eleitos |acessodata=2022-10-29 |publicado=[[G1]]|lingua=pt-br}}</ref>
+* [[Vice-prefeito]]: Julio Cesar Reis Silva "Julinho" - [[PROS]] (2021/-)<ref name=ps/>
+* [[Presidente da câmara de vereadores|Presidente da Câmara]]: Victor Marcelo "Victor da Vip Celular" - [[Solidariedade (partido político)|SOLIDARIEDADE]] (2023/-)<ref name=ps/>
+
+=== Símbolos municipais ===
+Os [[símbolo]]s do município de Caracaraí são a [[bandeira]], o [[brasão]] e o [[Hino (canção)|hino]].
+
+=== Órgãos do sistema de Justiça ===
+O Poder Judiciário está presente em Caracaraí pelo fato deste município ser sede de [[Tribunal de Justiça de Roraima|comarca da Justiça Estadual]] que conta com o [[Fórum Paulo Martins de Deus]]. Nesta comarca existem 5 varas: Vara Criminal, Vara Cível, Vara de Infância e Juventude, Vara de Juizado Especial Criminal e Vara de Juizado Especial Cível.
+Neste município consta ainda uma promotoria de justiça do [[Ministério Público do Estado de Roraima]].
+
+== População ==
+A população deste município continua baixa, ao passo que a densidade demográfica também. Segundo o Censo de 2010 a população de Caracaraí era de 18.398 habitantes.
+
+Atualmente, Caracaraí possui de acordo com estimativas do IBGE {{fmtn|21564}} habitantes e {{fmtn|0.45|hab/km²}} e atualmente é o [[Lista de municípios do Brasil por população|1696º município brasileiro mais populoso]] e o [[Lista de municípios de Roraima por população|3º maior município estadual]] em população, estando atrás de [[Boa Vista (Roraima)|Boa Vista]] e [[Rorainópolis]].<ref name="Estimativa 2018"/>
+
+== Economia ==
+Caracaraí possui o [[Lista de municípios de Roraima por PIB|terceiro maior]] [[Produto interno bruto]] (PIB) dentre os municípios de Roraima sendo superado apenas por [[Boa Vista (Roraima)|Boa Vista]] e [[Rorainópolis]], estando caracterizada também como a [[Lista de municípios do Brasil por PIB|1757ª maior economia do Brasil]]. Segundo dados do [[Instituto Brasileiro de Geografia e Estatística|IBGE]], em 2016 seu Produto Interno Bruto foi de [[R$]] {{fmtn|322843380.00}} e o PIB ''per capita'' era de R$ {{fmtn|20537.00}} mil, o sétimo maior do estado.<ref name="IBGE_PIB"/>
+
+Caracaraí possui mais de 1200 empresas atuantes segundo o Empresômetro.<ref>[https://www.empresometro.com.br/Home/Estatisticas Empresômetro]</ref>
+
+===Setor primário===
+A principal atividade econômica é o pescado; o principal mercado consumidor é a capital do Estado de Roraima. Ao mesmo tempo produz-se para autossubsistência a mandioca, arroz, milho, entre outros.
+
+No setor primário do município há um total de 25 empresas de agropecuária, segundo o Cadastro Geral de Empregados e Desempregados (CAGED).<ref name=CAGED>{{citar web|url=http://bi.mte.gov.br/bgcaged/caged_perfil_municipio/index.php|titulo=CAGED - Perfil do Município|publicado=Ministério do Trabalho e Emprego|acessodata=6 de fevereiro de 2015}}</ref>
+
+===Setor secundário===
+Segundo o Cadastro Geral de Empregados e Desempregados (Caged), do [[Ministério do Trabalho (Brasil)]], totalizam 21 estabelecimentos industriais e extrativos atuando na cidade.<ref name=CAGED/>
+
+===Setor terciário===
+Segundo o Cadastro Geral de Empregados e Desempregados (Caged), do [[Ministério do Trabalho (Brasil)]], totalizam 88 estabelecimentos de serviços atuando na cidade.<ref name=CAGED/> E atualmente a prestação de serviços como a construção civil de obras públicas tem sido relevante.
+
+== Turismo e lazer ==
+*Festival Folclórico de Caracaraí: criado de forma discreta em 2006, hoje um dos eventos que mais movimenta o município é o festival folclórico. Inspirado no famoso festival do boi de Parintins, o evento mostra a disputa entre duas agremiações: Gavião Caracará, representado nas cores verde e branco. A agremiação homenageia a ave predominante no local. E a Cobra Mariana, nas cores azul e branco, trás em seu enredo a história da lendária cobra grande que mora nos fundos do Rio Branco.
+*Carafolia: Caracaraí oferece o melhor carnaval do estado de Roraima, com apresentações de blocos e rua e muita diversão para os visitantes que vem de todo o estado.
+*Festejo de Nossa Senhora do Livramento: Homenageia a padroeira do municio, contando a história de como o vaqueiro Bernardino foi salvo pelas mãos de Nossa Senhora de um terrível ferimento causado por um touro, quando a cidade servia apenas como porto de descarga.
+
+==Esportes==
+Na cidade há o [[Estádio Vital Rodrigues]]<ref>{{Citar web |url=http://futeboldonorte.com/noticias_materia.php?id=60919 |titulo=Prefeitura de Caracaraí inaugura estádio nesta segunda :: Futebol do Norte |acessodata=2021-03-27 |website=futeboldonorte.com}}</ref> com capacidade para 3 mil lugares. O mandante é o time local [[Náutico Futebol Clube]].
+
+== Urbanização ==
+O município de Caracaraí, assim como outros do Estado de Roraima, vem crescendo sua demanda populacional, da mesma forma que se torna necessária e indiscutível a ampliação do número de bairros. Levando em consideração as diversas relações que implicam na dinâmica de produção do espaço urbano de Caracaraí, é relevante destacar o processo desigual da vida na cidade e a precariedade em que vive uma parcela da população.<ref name="Urbanização">[http://periodicos.uesb.br/index.php/ascmpa/article/viewFile/4444/4240 DINÂMICA TERRITORIAL URBANA DE CARACARAÍ-RR] - UESB</ref>
+
+=== Bairros ===
+Atualmente a cidade de Caracaraí possui 9 bairros:<ref name="Urbanização"/> 
+*Barão do Rio Branco 
+*Centro
+*Cinturão Verde
+*Monte Sinai
+*Nossa Senhora do Livramento 
+*Santa Luzia 
+*São Francisco 
+*São José Operário
+*Zona Industrial
+*São jorge
+
+== Infraestrutura ==
+[[Imagem:Mapa_Rodoviário_RR_-_detalhado.png|thumb|250px|Mapa detalhado das rodovias de Roraima, com destaque para a BR-174.]]
+Caracaraí tem uma das melhores infraestruturas do interior de Roraima.
+=== Comunicação ===
+O município dispõe de agência de bancos, dos [[Empresa Brasileira de Correios e Telégrafos|Correios]], [[telefone|rede telefônica]] e estação de [[radiodifusão]].
+
+=== Saúde ===
+Na [[saúde]], existe um hospital público com 25 leitos e vários postos no interior.
+
+=== Educação ===
+Existem no município 36 escolas de [[ensino fundamental]] e 3 de [[ensino médio]], que são a Escola Estadual João Rogélio, Escola Estadual José Vieira Sales Guerra e a Escola Estadual Presidente Castelo Branco.
+
+=== Abastecimento ===
+Conta com um sistema de 36&nbsp;km de rede de distribuição de [[água]]. A [[energia elétrica]] é distribuída pela Companhia de Eletricidade de Roraima.
+[[Ficheiro:Rio Branco Caracarai.jpg|miniaturadaimagem|250x250px|Rio Branco em Caracaraí]]
+Possui uma distribuidora de combustível, que fornece aos municípios do estado.
+
+=== Segurança ===
+*[[Polícia Civil de Roraima|Polícia Civil]]: Delegacia Regional de Caracaraí
+*[[Polícia Militar de Roraima|Polícia Militar]]: 2ª CIPM
+*[[Corpo de Bombeiros Militar do Estado de Roraima|Corpo de Bombeiros]]: 1° CIA/BPABM
+
+=== Transporte ===
+O [[Aeroporto de Caracaraí]] possui a quarta maior pista de pouso da Amazônia Ocidental, com 2.500 metros de extensão, concluída pela COMARA - Comissão de Aeroportos da Amazônia, no ano de 2003.
+
+A navegabilidade de Caracaraí a [[Manaus]] pelo baixo [[rio Branco]] é maior que em outros pontos a Norte (ainda que grandes embarcações tenham dificuldades durante as fortes secas).
+[[Ficheiro:Rodoviária de Caracaraí.jpg|esquerda|miniaturadaimagem|280px|Terminal Rodoviário em Caracaraí]]
+As duas maiores e principais [[estradas]] federais de Roraima ([[BR-174]] e [[BR-210]] - "Perimetral Norte") cruzam-se no município, sendo que no trecho de 130 quilômetros entre a sede municipal e a [[Vila Novo Paraíso]] as duas seguem sobrepostas. Em Vila Novo Paraíso há um [[Trevo (construção)|trevo]] em que as duas rodovias supracitadas se cruzam e nele há alguns paradouros e restaurantes. Nas proximidades da cidade há a [[Ponte José Vieira de Sales Guerra]], sobre o rio Branco.
+
+Na cidade há um [[terminal rodoviário]] com horário direto para [[Manaus]], [[Boa Vista (Roraima)|Boa Vista]], [[Presidente Figueiredo]], [[Rorainópolis]] e [[Itacoatiara]].<ref>[https://pt.foursquare.com/v/terminal-rodovi%C3%A1rio-de-caracara%C3%AD/5089b2a4e4b0499bc579b369 Terminal Rodoviario de Caracaraí] - foursquare.com</ref><ref>[https://www.guichevirtual.com.br/ Guichê Virtual]</ref>
+
+O município possui dois pequenos [[aeroporto]]s, um na sede municipal (asfaltado, 2500m x 80m) e outro em Novo Paraíso (asfaltado). Possui ainda a quarta maior pista de pouso da amazônia, localizada na entrada do município, as margens da BR-174.
+
+==Ver também==
+*[[Interior do Brasil]]
+
+{{Referências}}
+
+==Bibliografia==
+*{{citar livro
+ |autor = FREITAS, Aimberê
+ |título = Estudos Sociais - RORAIMA
+ |subtítulo = Geografia e História
+ |edição = 1
+ |local-publicacao = São Paulo
+ |editora = Corprint Gráfica e Editora Ltda.
+ |ano = 1998
+ |páginas = 83|isbn = 34523432}}
+
+== Ligações externas ==
+* [http://WikiMapia.org/#y=1811755&x=-61126556&z=12&l=0&m=a Caracaraí no WikiMapia]
+* [[Roraima]]
+*
+
+{{Fronteiras do Brasil}}
+{{Subdivisões de Roraima}}
+{{Região Metropolitana Central}}
+{{Portal3|Roraima}}
+
+{{DEFAULTSORT:Caracarai}}
+[[Categoria:Caracaraí| ]]

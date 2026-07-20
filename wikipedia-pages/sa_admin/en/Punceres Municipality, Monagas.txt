@@ -1,0 +1,70 @@
+{{Unreferenced|date=July 2019}}
+{{Infobox settlement 
+| name                    = Punceres Municipality
+| official_name            = 
+| other_name              = 
+| native_name             = Municipio Punceres
+| native_name_lang        = es
+| nickname                = 
+| settlement_type         = [[Municipalities of Venezuela|Municipality]]
+| image_skyline           = Monumento a la identidad de Punceres.jpg
+| image_caption           = 
+| image_flag               = 
+Bandera del municipio Punceres.jpg {{#property:P41}}
+| flag_size                = 100px
+| image_shield            = Punceres.jpg {{#property:P94}}
+| seal_size               = 100px
+| image_map               = {{#property:P242}}
+| mapsize                 = 300px
+| map_caption             = Location in [[Monagas (state)|Monagas]]
+| pushpin_map             = Venezuela
+| pushpin_label_position  = 
+| pushpin_map_alt         = Map showing the location of Punceres Municipality within Venezuela
+| pushpin_mapsize         = 300px
+| pushpin_map_caption     = Location in Venezuela
+| coordinates             = {{coord|nosave=1|format=dms|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Venezuela}}
+| subdivision_type1       = [[States of Venezuela|State]]
+| subdivision_name1       = [[Monagas (state)|Monagas]]
+| seat_type               = [[Municipal seat]]
+| seat                    = {{#invoke:Wikidata|getValue|P36|FETCH_WIKIDATA}}
+| leader_title            = [[Mayor]]
+| leader_name             = Angel López Ávila ([[PSUV]])
+| leader_party            = 
+| elevation_m             = 
+| area_total_km2          = {{#invoke:String|replace|{{#invoke:String|replace|{{#invoke:String|replace|{{#property:P2046}}|±0 |replace=}}|square kilometre|replace=}}|pattern=,|replace=}}
+| population_as_of        = 
+| population_note         = 
+| population_total        = 905,443
+| population_footnotes    = 
+| population_density_km2  = auto
+| established_title       = Founded
+| established_date        = 
+| established_title1      = Established
+| established_date1       = 
+| established_title2      = Incorporated
+| established_date2       = 
+| timezone                = [[Venezuelan Standard Time Zone|VET]]
+| utc_offset              = &minus;4
+| area_code_type          = [[Telephone numbers in Venezuela|Area code(s)]]
+| area_code               = 
+| postal_code_type        = [[Postal code]](s)
+| postal_code             = 
+| website                 = 
+| footnotes               = {{main other|{{EditOnWikidata}}}}
+}}
+
+'''Punceres''' is one of the 13 municipalities of the state of [[Monagas]], [[Venezuela]]. The municipality's capital is [[Quiriquire]].
+
+== Geography ==
+Punceres  is located to the north of Monagas State. Presents a vegetation of dry tropical forest and another of humid tropical forest, has an annual average temperature of 26.4&nbsp;°C and rainfall of 1,935&nbsp;mm (annual average).{{citation needed|date=January 2023}}
+
+== Government ==
+=== Mayors ===
+* Jesus Mata. (2008–2013) [[PSUV]].
+* Magalys Villalba. (2013–2017) [[PSUV]].
+
+[[Category:Municipalities of Monagas]]
+
+{{Monagas-geo-stub}}

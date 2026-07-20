@@ -1,0 +1,108 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+<!-- Basic info  ---------------->
+|official_name          = Amancio
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Amancio (Cuban municipal map).png
+|map_caption            = Amancio municipality (red) within <br> Las Tunas Province (yellow) and Cuba
+
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Las Tunas Province|Las Tunas]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 857
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 36,132
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|49|11|N|77|35|4|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 35
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-31
+|website                = https://www.amancio.gob.cu/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Amancio''' ({{IPA|es|aˈmansjo}}) is a municipality and town in the [[Las Tunas Province]] of [[Cuba]]. It is located in the south-western part of the province, and opens to the [[Gulf of Guacanayabo]] to the south.
+
+==Demographics==
+In 2022, Amancio had a population of 36,132.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|857|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids|date=July 2003| accessdate=2007-10-06| archiveurl= https://web.archive.org/web/20071012141831/http://statoids.com/ycu.html| archivedate= 12 October 2007 | url-status= live}}</ref> it has a population density of {{convert|48.5|/km2|/sqmi|abbr=on}}.
+
+==Notable people==
+<!---♦♦♦ Only add a person to this list if they already have their own article on the English Wikipedia ♦♦♦---> 
+<!---♦♦♦ Please keep the list in alphabetical order by LAST NAME ♦♦♦--->
+*[[Salvador Valdés Mesa]] (born 1945), Cuban former trade union leader, politician and current Vice President of Cuba
+
+==See also==
+*[[Municipalities of Cuba]]
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = Amancio
+ | NE = [[Guáimaro]] ([[Camagüey Province|Camagüey]])
+ | E  = [[Colombia, Cuba|Colombia]]
+ | S  = ''[[Gulf of Guacanayabo]]''
+ | W  = [[Santa Cruz del Sur]] ([[Camagüey Province|Camagüey]])
+ | NW = [[Najasa]] ([[Camagüey Province|Camagüey]])
+}}
+{{Municipalities in Las Tunas}}
+
+<!--remove when the wikidata pages will merge-->
+
+{{Authority control}}
+
+[[Category:Populated places in Las Tunas Province]]
+
+
+{{Cuba-geo-stub}}

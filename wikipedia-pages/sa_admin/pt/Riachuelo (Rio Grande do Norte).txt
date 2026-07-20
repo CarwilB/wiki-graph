@@ -1,0 +1,68 @@
+{{Info/Município do Brasil
+<!-- GeoID=2410900 -->
+<!-- Cabeçalho -->| nome = Riachuelo
+| foto = Pórtico de Entrada de Riachuelo-RN.jpg
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Riachuelo-RN.png
+| bandeira = Bandeira de Riachuelo-RN.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 20 de dezembro
+| fundação = {{nowrap|{{dtlink|||1866|idade}}}}
+| emancipação = {{nowrap|{{dtlink|20|12|1963|idade}}}}
+| gentílico = riachuelense
+| lema = 
+| prefeito = João Basílio Neto
+| partido = [[Podemos (Brasil)|PODE]]
+| mandato_início = 2021
+| fim_mandato = 2028
+| vereadores = 9
+| mapa = Brazil Rio Grande do Norte Riachuelo location map.svg ‎
+| latP = S
+| latG = 05
+| latM = 48
+| latS = 54
+| lonP = O
+| lonG = 35
+| lonM = 49
+| lonS = 30
+| estado = Rio Grande do Norte
+| região_intermediária = Natal
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = São Paulo do Potengi
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = [[São Paulo do Potengi]], [[Barcelona (Rio Grande do Norte)|Barcelona]], [[Ruy Barbosa (Rio Grande do Norte)|Ruy Barbosa]], [[Jardim de Angicos]], [[Bento Fernandes]] e [[Santa Maria (Rio Grande do Norte)|Santa Maria]]
+| dist_capital = 77
+| dist_capital_ref = <ref name=distance>{{citar web|url=http://www.femurn.org.br/femurn/municipio/distancias.asp|titulo=Distâncias dos Municípios do Rio Grande do Norte a Natal-RN|autor=FEMURN|data=|acessodata=8 de março de 2011|arquivourl=https://web.archive.org/web/20101216173239/http://www.femurn.org.br/femurn/municipio/distancias.asp|arquivodata=2010-12-16|urlmorta=yes}}</ref>
+<!-- Características geográficas -->| área = 262.887
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 7627
+| data_pop = [[IBGE]]/[[2024]]<ref name="IBGE_Pop_2024">{{citar web |url = https://cidades.ibge.gov.br/brasil/rn/riachuelo/panorama |título=Estimativa Populacional 2024| obra = Estimativa Populacional 2024 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=28 de novembro de 2024 |acessodata = 20 de janeiro de 2025}}</ref>
+| população_pos = [[Lista de municípios do Rio Grande do Norte por população|RN: 88º]]
+| altitude = 142
+| clima = Semiárido
+| sigla_clima = <!-- Indicadores -->
+| CEP = 59470-000
+| idh = 0.592 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=4 de setembro de 2013}}</ref>
+| idh_pos = [[Lista de municípios do Rio Grande do Norte por IDH|RN: 110.º]]
+| gini = 0,54
+| data_gini = 2020
+| pib = {{formatnum:192157.80}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/rn/riachuelo/pesquisa/38/46996|titulo=Produto Interno Bruto dos Municípios 2021 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=20 de janeiro de 2025}}</ref>
+| pib_per_capita = 23123.68
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| site_prefeitura = {{Url|https://riachuelo.rn.gov.br}}
+| site_câmara = {{Url|https://www.riachuelo.rn.leg.br}}
+}}
+'''Riachuelo''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] do [[Rio Grande do Norte]], localizado na [[mesorregião do Agreste Potiguar]]. De acordo com estimativa realizado pelo [[Instituto Brasileiro de Geografia e Estatística]] em [[2024]], sua população é de 7.627 habitantes.<ref name="IBGE_Pop_2010" /> Área territorial de 262 km².<ref name="IBGE_Área" />
+
+{{Referências}}
+{{esboço-municípiosbr/Rio Grande do Norte}}
+{{Portal3|Brasil|Rio Grande do Norte}}
+
+[[Categoria:Municípios do Rio Grande do Norte]]
+[[Categoria:Fundações no Rio Grande do Norte em 1963]]

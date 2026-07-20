@@ -1,0 +1,44 @@
+{{Ficha de entidad subnacional
+| nombre             = Comandante Fernández
+| nombre completo    = Comandante Fernández
+| unidad             = [[Departamentos y partidos de la Argentina|Departamento]]
+| tipo_superior_1    = [[Provincias de la Argentina|Provincia]]
+| superior_1         = [[Provincia del Chaco|Chaco]]
+| mapa               = Comandante Fernández (Provincia del Chaco - Argentina).svg
+| mapa_loc           = 
+| capital            = [[Presidencia Roque Sáenz Peña]]
+| capital_denominación = [[Capital (política)|Cabecera]]
+| subdivisión        = [[Anexo:Municipios del Chaco|1 municipio]]:<br />[[Presidencia Roque Sáenz Peña]]
+| superficie         = 1500<ref name = "City"/>
+| superficie_puesto  = 21
+| superficie_post    = 
+| población          = 101960<ref name="INDEC">{{cita web |url=https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf |título=Cuadro 1.4 Provincia del Chaco. Población por sexo registrado al nacer y edad mediana, según departamento. - Año 2022 |publicación=Censo Nacional de Población, Hogares y Viviendas 2022. - Resultados definitivos |editorial=Instituto Nacional de Estadística y Censos (INDEC) |ubicación=Buenos Aires |fecha= Noviembre de 2023 |isbn=978-950-896-632-2 |página=33}}</ref>
+| población_puesto   = [[Anexo:Departamentos de la Provincia del Chaco|2]]
+| población_año      = 2022
+| población_urb      = (2010) 89882<ref name = "City Loc"/>
+| población_post     = 
+| densidad           = 67.97<ref name = "City">{{cita web |url=https://www.citypopulation.de/en/argentina/admin/chaco/22021__comandante_fern%C3%A1ndez/ |título=Comandante Fernández - Department in Chaco (Argentina) |publicación=Citypopulation |idioma=en |fecha=28 de noviembre de 2023}}</ref>
+| densidad_año       = 2022
+| ciudad_grande      = [[Presidencia Roque Sáenz Peña]]
+| capital_población  = (2010) 89882<ref name = "City Loc">{{cita web |url=https://www.citypopulation.de/en/argentina/chaco/22021__comandante_fern%C3%A1ndez/ |título=Comandante Fernández - Department in Chaco - Localities|publicación=CityPopulation |fecha=26 de diciembre de 2013 |idioma=inglés}}</ref>
+| capital_coor       = 26_47_27_S_60_26_29_W
+}}
+'''Comandante Fernández''' es un departamento en la [[provincia del Chaco]], [[Argentina]].
+
+El nombre del departamento homenajea a [[Carlos Domingo Fernández]], militar del Ejército Argentino fundador de la [[Presidencia Roque Sáenz Peña|ciudad cabecera]].<ref>{{cita web |url=https://saenzpena.gob.ar/ciudad/ |título=Ciudad - Fundación |publicación=Municipalidad de Sáenz Peña, Chaco}}</ref>
+
+Fue creado el 1 de julio de 1953, mediante la Ley Provincial N.º 6. Esta norma estableció 24 divisiones administrativas en la entonces recientemente creada [[provincia Presidente Perón]], actual provincia del Chaco.<ref>{{cita web |url=https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2022/08/Leoni-Los-comienzos-del-Chaco-provincializado-2ed.pdf |título=Los comienzos del Chaco provincializado : 1951-1955 |autor= Leoni, María Silvia |editorial=Instituto de Investigaciones Geohistóricas |año=2022 |isbn=978-987-4450-15-9 |página=33 Nota al pie Nº 106}}</ref>
+
+== Demografía ==
+Cuenta con {{indec|101960|2022}}, lo que representa un incremento promedio anual del 0.44% frente a los {{indec|96944|2010}} del censo anterior.<ref name = "City"/> La mediana de edad se estableció en 30 años.<ref name="INDEC"/>
+
+{{Gráfica de evolución|tipo=demográfica|color_30=blue|nombre= Departamento Comandante Fernández|altura=300|anchura=300|1991|77619|2001|88164|2010|96944|2022|101960|notas=<small>Fuente: Censos nacionales del [[INDEC]]</small>}}
+
+== Economía ==
+La economía del departamento Comandante Fernández se basa en el [[sector primario]]. Junto con otros departamentos del centro-oeste de la provincia integra una región conocida como «Domo Agrícola», caracterizada por la producción agrícola. La horticultura se practica en zonas cercanas a la ciudad de Presidencia Roque Sáenz Peña, con el cultivo de verduras de hoja, tomate, pimiento y mandioca.<ref>{{cita publicación |url=https://repositorio.inta.gob.ar/xmlui/bitstream/handle/20.500.12123/10601/INTA_CRChacoFormosa_Piedra_D_sector_agropecuario_agroindustrial_provincia_Chaco.pdf?sequence=1&isAllowed=y |título=El sector agropecuario/agroindustrial de la provincia del Chaco |autor1=Piedra, Diana |autor2=Pellerano, Laura |autor3=Tortarolo, Gabriel |autor4=Ordenavía, María Noelia |autor5=D’Angelo, María Leonor |editorial=Instituto Nacional de Tecnología Agropecuaria |año=2020 |páginas=11 y 13}}</ref>
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento Comandante Fernández|Comandante Fernández]]

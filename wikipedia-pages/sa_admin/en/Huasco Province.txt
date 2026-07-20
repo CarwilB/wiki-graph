@@ -1,0 +1,91 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = Huasco Province
+| official_name           = 
+| native_name             = Provincia de Huasco
+| native_name_lang        = es
+| settlement_type         = [[Provinces of Chile|Province]]
+| image_skyline           = 
+| image_caption           = 
+| image_seal              = Logo de la DPP Huasco.svg
+| image_map               = Provincia de Huasco.svg
+| mapsize                 = 175px
+| map_alt                 = Location in the Atacama Region
+| map_caption             = Location in the Atacama Region
+| pushpin_map_narrow      = yes
+| pushpin_map             = Chile
+| pushpin_map_alt         = Location in Chile
+| pushpin_map_caption     = Location in Chile
+| coordinates             = {{coord|28|32|S|70|22|W|type:adm2nd_region:CL-AT|display=inline,title}}
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Chile}}
+| subdivision_type1       = [[Regions of Chile|Region]]
+| subdivision_name1       = {{flag|Atacama}}
+| established_title       = 
+| established_date        = 
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Vallenar]]
+| parts_type              = [[Communes of Chile|Communes]]
+| parts                   = List of 4:
+| p1                      = [[Vallenar]]
+| p2                      = [[Huasco, Chile|Huasco]]
+| p3                      = [[Freirina]]
+| p4                      = [[Alto del Carmen]]
+| government_type         = [[Province|Provincial]]
+| government_footnotes    = <ref name="Gobernadores">{{cite web|url=http://www.subdere.gov.cl/1510/w3-article-67516.html |access-date=18 March 2011 |title=Gobierno de Chile: Gobernadores |work=[[Government of Chile]] |language=es |url-status=dead |archive-url=https://web.archive.org/web/20110707010623/http://www.subdere.gov.cl/1510/w3-article-67516.html |archive-date=7 July 2011 }}</ref>
+| leader_party            = Independent
+| leader_title            = [[Presidential Provincial Delegate]]
+| leader_name             = [[Rodrigo Loyola Morenilla]]
+| unit_pref               = Metric
+| area_footnotes          = <ref name="INE">{{cite web|url=http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/DPA_COMPLETA.pdf |format=PDF |title=Territorial division of Chile |access-date=12 March 2011 |publisher=[[National Statistics Institute (Chile)|National Statistics Institute]] |year=2007 |language=es |url-status=dead |archive-url=https://web.archive.org/web/20130308201322/http://www.ine.cl/canales/chile_estadistico/territorio/division_politico_administrativa/pdf/DPA_COMPLETA.pdf |archive-date=8 March 2013 }}</ref>
+| area_total_km2          = 18201.5
+| area_rank               = 3
+| elevation_footnotes     = 
+| elevation_m             = 
+| elevation_max_m         = 
+| population_footnotes    = <ref name="INE"/>
+| population_total        = 72145
+| population_as_of        = 2012 census
+| population_rank         = 2
+| population_density_km2  = auto
+| population_urban        = 53,664
+| population_rural        = 12,827
+| demographics_type1      = Sex
+| demographics1_footnotes = <ref name="INE"/>
+| demographics1_title1    = Men
+| demographics1_info1     = 32,712
+| demographics1_title2    = Women
+| demographics1_info2     = 33,779
+| timezone                = [[Time in Chile|CLT]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-time.htm |access-date=2010-07-28 |title=Chile Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130719/http://www.world-time-zones.org/zones/chile-time.htm |archive-date=2007-09-11 }}</ref>
+| utc_offset              = -4
+| timezone_DST            = [[Time in Chile|CLST]]<ref>{{cite web|url=http://www.world-time-zones.org/zones/chile-summer-time.htm |access-date=2010-07-28 |title=Chile Summer Time |publisher=WorldTimeZones.org |url-status=dead |archive-url=https://web.archive.org/web/20070911130451/http://www.world-time-zones.org/zones/chile-summer-time.htm |archive-date=2007-09-11 }}</ref>
+| utc_offset_DST          = -3
+| postal_code_type        = 
+| postal_code             = 
+| area_code_type          = 
+| area_code               = 56 + 51
+| website                 = {{URL|http://dpphuasco.gob.cl}}
+}}
+
+'''Huasco Province''' ({{IPA|es|ˈwasko}}, {{langx|es|Provincia de Huasco}}) is one of three [[Provinces of Chile|provinces]] of the northern [[Chile]]an [[Regions of Chile|region]] of [[Atacama Region|Atacama]] (III). [[Vallenar]] is the capital city.
+
+==Geography and demography==
+According to the 2012 census by the [[National Statistics Institute (Chile)|National Statistics Institute]], the province spans an area of {{convert|18201.5|sqkm|0|abbr=on}}<ref name="INE"/> and had a population of 72,145, giving it a population density of {{convert|3.7|PD/sqkm|0|abbr=on}}. The province had a 2002 population of 66,491 Of these, 53,664 (80.7%) lived in [[urban area]]s and 12,827 (19.3%) in [[rural area]]s. Between the 1992 and 2002 censuses, the population grew by 2.7% (1,761 persons).<ref name= "INE"/>
+
+==Administration==
+As a [[province]], Huasco is a second-level [[administrative division of Chile]], which is further divided into four [[Communes of Chile|communes]] (''comunas''). The province is administered by a presidentially appointed provincial delegate. [[Rodrigo Loyola Morenilla]] was appointed by [[President of Chile|president]] [[Gabriel Boric]].<ref name="Gobernadores"/>
+
+===Communes===
+#[[Vallenar]]
+#[[Freirina]]
+#[[Huasco, Chile|Huasco]]
+#[[Alto del Carmen]]
+
+==References==
+{{reflist}}
+
+{{Provinces of Chile}}
+{{Communes in Atacama Region}}
+
+[[Category:Provinces of Atacama Region]]
+[[Category:Provinces of Chile]]

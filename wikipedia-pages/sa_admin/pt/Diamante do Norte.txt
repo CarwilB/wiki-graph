@@ -1,0 +1,59 @@
+{{Info/Município do Brasil
+<!-- GeoID=4107108 -->
+<!-- Cabeçalho -->| nome = Diamante do Norte
+| foto = Usina de Rosana - Lago - panoramio.jpg
+| leg_foto = 
+| apelido = <!-- Dados gerais -->
+| brasão = 
+| bandeira = Bandeira Diamante do Norte.webp
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = [[13 de dezembro]] de [[1964]]
+| fundação = {{nowrap|{{dtlink|29|11|1963|idade}}}}
+| gentílico = diamantense
+| lema = <!-- NÃO É SLOGAN DE CAMPANHA ELEITORAL -->
+| prefeito = Eliel dos Santos Corrêa<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/pr/diamante-do-norte|título=Candidatos a vereador Diamante do Norte-PR|publicado=Estadão|acessodata =2 de junho de 2021}}</ref>
+| partido = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato = 2024
+<!-- Localização -->| mapa = Parana Municip DiamantedoNorte.svg
+| latP = S
+| latG = 22
+| latM = 39
+| latS = 21
+| lonP = O
+| lonG = 52
+| lonM = 51
+| lonS = 36
+| estado = Paraná
+| mesorregião = [[Mesorregião do Noroeste Paranaense|Noroeste Paranaense]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Paranavaí|Paranavaí]]
+| data_microrregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Itaúna do Sul]]-PR, [[Terra Rica]]-PR e [[Rosana (São Paulo)|Rosana]]-SP
+| dist_capital = 650
+<!-- Características geográficas -->| área = 242.894
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)|wayb=20191019162946}}</ref>
+| população = 5524
+| data_pop = Censo [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude = 
+| clima = [[Subtropical]]
+| sigla_clima = Cfa
+<!-- Indicadores -->| idh = 0.738 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2000<ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008|wayb=20160807041125 }}</ref>
+| pib = {{formatnum:38047.435}} mil
+| data_pib = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010|wayb=20170812035138 }}</ref>
+| pib_per_capita = 6659.80
+| data_pib_per_capita = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.diamantedonorte.pr.gov.br/ diamantedonorte.pr.gov.br]
+}}
+'''Diamante do Norte''' é um pequeno [[Município (Brasil)|município brasileiro]] do estado do [[Paraná]], microrregião de [[Paranavaí]]. O seu município tem 250&nbsp;km² e uma população de 5.668 habitantes.
+
+{{Referências}}
+{{Esboço-municípiosbr/Paraná}}
+{{Portal3|Brasil}}
+
+{{DEFAULTSORT:Diamante Norte}}
+[[Categoria:Diamante do Norte| ]]
+[[Categoria:Fundações no Paraná em 1963]]

@@ -1,0 +1,106 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Songo - La Maya
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = La Maya DSC02224.jpg
+|image_caption          = Main road in La Maya
+|image_flag             = 
+|flag_size              = 
+|image_seal             = Seal of Songo – La Maya.jpg
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = Songo - La Maya (Cuban municipal map).png
+|map_caption            = Songo - La Maya municipality (red) within <br/> Santiago Province (yellow) and Cuba
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Santiago de Cuba Province|Santiago de Cuba]]
+|subdivision_type2      = Seat
+|subdivision_name2      = [[La Maya, Cuba|La Maya]]
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = Founded
+|established_date       = 1858 (Alto Songo)<ref name=guije/>
+|established_title2     = Incorporated
+|established_date2      = 1879
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = 
+|area_total_km2         = 720.7
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 89,819
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|10|24|N|75|38|47|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 225
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-226
+|website                = https://www.songolamaya.gob.cu/
+|footnotes              = 
+}} <!--Infobox ends-->
+'''Songo – La Maya''' is a municipality in the [[Santiago de Cuba Province]] of [[Cuba]]. It is located north-east of [[Santiago de Cuba]] and is centered on the towns of '''La Maya''' (municipal seat) and '''Alto Songo''' (or Songo).
+
+==History==
+In 1943, the municipality consisted of the [[barrio]]s (neighbourhoods) of Florida Blanca, Jarahueca, La Maya, La Sabana, Morón, Norte Cabecera, Palenque, Socorro, Sur Cabecera and Tí Arriba.<ref name=guije>{{Cite web|url=http://www.guije.com/pueblo/municipios/oalto/index.htm|title=Songo - La Maya|author=Guije.com|accessdate=2007-10-05|language=es}}</ref>
+
+==Geography==
+The municipality is located east of the province, neighboring the provinces of [[Holguín Province|Holguín]] and [[Guantánamo Province|Guantánamo]]; and borders with the municipalities of [[San Luis, Santiago de Cuba|San Luis]], [[Mayarí]], [[Segundo Frente]], [[El Salvador, Cuba|El Salvador]], [[Niceto Pérez]] and [[Santiago de Cuba]].
+
+It includes the town of La Maya and the villages of [[Alto Songo]], Belleza, Bolaño, El Manguito, El Piñon, Jagua, Jarahueca, Jurisdicción, Jutinicú, La Perla, La Prueba, La Sabana, [[Los Reynaldos]], Matahambre, Palmarejo, Río Arriba, San Benito del Crucero, Santa Cruz and Yerba de Guinea.<ref>{{OSM|r|5919055|Songo–La Maya}}</ref>
+
+==Demographics==
+In 2022, the municipality of Songo – La Maya had a population of 89,819.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|721|km2|sqmi|abbr=on}}, it has a population density of {{convert|139.2|/km2|/sqmi|abbr=on}}.
+
+==See also==
+*[[List of cities in Cuba]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Commons category-inline}}
+
+{{Geographic location
+ | Centre    = Songo - La Maya
+ | North     = [[Mayarí]] ([[Holguín Province|Holguín]]), [[Segundo Frente]] 
+ | East      = [[El Salvador, Cuba|El Salvador]] ([[Guantánamo Province|Guantánamo]])
+ | Southeast = [[Niceto Pérez]] ([[Guantánamo Province|Guantánamo]])
+ | South     = [[Santiago de Cuba]]
+ | West      = [[San Luis, Santiago de Cuba|San Luis]]
+ }}
+{{Municipalities in Santiago de Cuba}}
+{{Authority control}}
+
+{{DEFAULTSORT:Songo - La Maya}}
+[[Category:Populated places in Santiago de Cuba Province]]
+
+
+{{Cuba-geo-stub}}

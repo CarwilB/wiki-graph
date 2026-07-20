@@ -1,0 +1,101 @@
+{{Ficha de entidad subnacional
+| nombre = San Lucas
+| unidad = [[Anexo:Municipios de Nicaragua|Municipio]]
+| tipo_superior_1 = [[Anexo:Departamentos de Nicaragua|Departamento]]
+| superior_1 = {{NIC|MD}}
+| imagen = San Lucas, Nicaragua.JPG
+| mapa_loc = Nicaragua
+| mapa = {{map draw
+ |geotype = geoshape
+ |latitude= 13.3925
+ |longitude= -86.6525
+ |height= 250
+ |width= 250
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=10}}
+| subdivisión = 6 microrregiones
+| elevación_media = 789
+| superficie = 152.1
+| superficie_puesto = 113
+| número_entidades = 153
+| población_puesto = 99
+| población_año = 2023
+| población = 16902
+| población_notas = <ref name="INIDE">[https://www.citypopulation.de/en/nicaragua/admin/madriz/2035__san_lucas/ Estimación del 2023] - Instituto Nacional de Información de Desarrollo, Nicaragua</ref>
+| población_urb = 3653
+| densidad = 111.1
+| gentilicio = Sanluqueño, -ña
+| fundación = 7 de febrero de 1913 ({{Edad|7|2|1913}})
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+| código_postal_nombre = [[Anexo:Códigos postales de Nicaragua|Código postal]]
+| cp = 35400
+}}
+'''San Lucas''' es un [[Anexo:Municipios de Nicaragua|municipio]] del departamento de [[Departamento de Madriz|Madriz]] en la República de [[Nicaragua]].
+
+== Geografía ==
+El término municipal limita al norte con el municipio de [[Somoto]], al sur con el municipio de [[Las Sabanas]], al este con municipio de [[Pueblo Nuevo (Nicaragua)|Pueblo Nuevo]] y al oeste con la República de [[Honduras]].<ref name='INIFOM'>{{Cita web |url=http://www.inifom.gob.ni/municipios/municipios.html |título=Instituto Nicaragüense de Fomento Municipal |fechaacceso=27 de abril de 2011 |fechaarchivo=7 de abril de 2011 |urlarchivo=https://web.archive.org/web/20110407113149/http://www.inifom.gob.ni/municipios/municipios.html |deadurl=yes }}</ref> La cabecera municipal está ubicada a 227 kilómetros de la capital de [[Managua]].
+
+== Historia ==
+Los primeros pobladores del municipio fueron tribus de origen Chorotega, provenientes de [[Matagalpa]]. Entre los años 1662 y 1673 la población de San Lucas recibió nueve títulos reales expedidos por el Rey de España, conservándolos secretamente, según la tradición.<ref name='INIFOM'/>
+
+En 1901 el Sr. Pablo José Moreno, donó el terreno que hoy ocupan los pobladores del casco urbano constituyéndose como municipio en 1913. El título de "Pueblo", le fue conferido al asentamiento urbano de este nombre por ley del 7 de febrero de 1913. Como hecho curioso, por decreto legislativo el 18 de agosto de 1942 desaparece legalmente el municipio, fue restablecido por ley legislativa el 17 de agosto de 1945, independizándose del antiguo pueblo de Somoto.<ref name='INIFOM'/>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 8,606 (50.9%)
+| valor1 = 50.9
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 8,296 (49.1%)
+| valor2 = 49.1
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Urbanización (E 2023)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 13,249 (78.4%)
+| valor1 = 78.4
+| color1 = #109618
+| etiqueta2 = Urbano: 3,653 (21.6%)
+| valor2 = 21.6
+| color2 = #FF9900
+}}
+San Lucas tiene una población actual de 16,902 habitantes. De la población total, el 50.9% son hombres y el 49.1% son mujeres. Casi el 21.6% de la población vive en la zona urbana.<ref name="INIDE"/>
+
+== Naturaleza y clima ==
+El municipio tiene un [[clima tropical]] seco, tornándose húmedo en las partes elevadas y montañosas. La temperatura promedio oscila entre los 25 a 27&nbsp;°C. La precipitación media anual varía entre los 1000 y 1400 mm.<ref name='INIFOM'/>
+
+Cuenta con una vegetación semi desértica, compuesta por malezas, arbustos y roble y en las zonas más elevadas se puede encontrar café y pino.<ref name='INIFOM'/>
+
+== Localidades ==
+Existen un total de 30 comunidades rurales, organizadas en 6 microrregiones.<ref name='INIFOM'/>
+* Mal Paso    
+* El Rodeo    
+* La Fuente   
+* Cuyás       
+* El Chichicaste
+* Milquilse   
+* Coyolito    
+* Moropoto
+* Los Mangos
+* Río Arriba
+* Las Lajitas
+* San Francisco Camayra
+
+== Economía ==
+La actividad económica que predomina en el municipio es la agricultura, destacándose por el cultivo de granos básicos.<ref name='INIFOM'/>
+
+== Cultura ==
+La población del municipio celebra sus fiestas patronales en honor a San Lucas, el 18 de octubre de cada año. La pequeña imagen del santo es de aproximadamente 150 años.<ref name='INIFOM'/>
+
+== Referencias ==
+{{listaref}}
+
+{{Enlace roto|1=http://sanlucas.simsan.org/index.php?option=com_content&view=article&id=185&Itemid=707 |2=http://sanlucas.simsan.org/index.php?option=com_content&view=article&id=185&Itemid=707 }}
+
+{{Control de autoridades}}
+[[Categoría:Localidades de Madriz]]

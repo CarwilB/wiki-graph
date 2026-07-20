@@ -1,0 +1,592 @@
+{{Mais notas|data=março de 2020}}
+{{Info/Município do Brasil
+<!-- GeoID=2402006 -->
+<!-- Cabeçalho -->
+| nome = Caicó
+| foto = Caicocentralregion.JPG
+| leg_foto = [[Panorama urbano|Panorama]] do núcleo urbano de Caicó.
+| apelido = Capital do Seridó"<ref>[ftp://ftp.ufrn.br/pub/biblioteca/ext/bdtd/JucieneBFA.pdf UFRN - Dissertações - Caicó: uma cidade entre a recusa e a sedução]</ref><br />"Terra de Sant'Ana"<ref>[http://www.tribunadonorte.com.br/noticia/em-cena-as-trilhas-da-vida-de-danilo-guanais/361258 Tribuna do Norte - Em cena, as trilhas da vida de Danilo Guanais]</ref><br />"Pedacinho do Céu"<br />"Capital da carne de sol e do queijo"<br />"Vila do Príncipe
+<!-- Dados gerais -->
+| brasão = Brasão de Caicó - RN.svg
+| bandeira = Bandeira de Caicó - RN.svg
+| link_brasão = Brasão de Caicó
+| link_bandeira = 
+| link_hino = File:Hino de Caicó - RN.ogg
+| aniversário = [[16 de dezembro]]
+| fundação = {{ani|1788}}
+| emancipação = {{Dtlink|31|07|1788|idade}}
+| gentílico = [[:wikt:caicoense|caicoense]]
+| lema = 
+| padroeiro = [[Sant'Ana]]
+| CEP = 59300-000 a 59300-999<ref>{{Citar web|url= http://www.correios.com.br/|titulo=CEP de cidades brasileiras|publicado=[[Correios]]|acessodata=31 de Julho de 2008}}</ref>
+| prefeito = Judas Tadeu Alves dos Santos
+| partido = [[PSDB]]
+| mandato_início = 2021
+| fim_mandato = 2028
+| vereadores = 15
+<!-- Localização -->
+| mapa = Brazil Rio Grande do Norte Caicó location map.svg
+| latP = S
+| latG = 06
+| latM = 27
+| latS = 28
+| lonP = O
+| lonG = 37
+| lonM = 05
+| lonS = 52
+| estado = Rio Grande do Norte
+| região_intermediária = Caicó
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_imediata = Caicó
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = {{Collapsible list |title=11
+ |'''Norte''': [[Jucurutu]] e [[Florânia]]
+ |'''Sul''': [[São João do Sabugi]], [[Várzea (Paraíba)|Várzea]] ([[Paraíba]])
+ |'''Leste''': [[Cruzeta]], [[São José do Seridó]], [[Jardim do Seridó]] e [[Ouro Branco (Rio Grande do Norte)|Ouro Branco]]
+ |'''Oeste''': [[Serra Negra do Norte]], [[Timbaúba dos Batistas]] e [[São Fernando (Rio Grande do Norte)|São Fernando]]}}
+| dist_capital = *{{fmtn|[[Brasília|federal]]:|2195}} km
+*{{fmtn|[[Natal (Rio Grande do Norte)|estadual]]|267}}
+| dist_capital_ref = <ref name="http://revistapegn.globo.com/Como-abrir-uma-empresa/noticia/2016/06/setor-de-beleza-foca-no-publico-masculino-para-driblar-crise.html">{{citar web|url=http://revistapegn.globo.com/Como-abrir-uma-empresa/noticia/2016/06/setor-de-beleza-foca-no-publico-masculino-para-driblar-crise.html|titulo=SETOR DE BELEZA FOCA NO PÚBLICO MASCULINO PARA DRIBLAR CRISE|autor=Pequenas Empresas, Grandes Negócios|data=|publicado=|acessodata=24 de junho de 2016}}</ref>
+<!-- Características geográficas -->
+| área = 1228.583
+| área_pos = [[Lista de municípios do Rio Grande do Norte por área|RN: 5º]]
+| área_ref = <ref name="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana = {{fmtn|14.709}}
+| área_urbana_pos = [[Lista de municípios do Rio Grande do Norte por área urbana|RN:4º]]
+| área_urbana_ref = Est. [[Embrapa]]<ref name="Embrapa">{{citar web|url= http://geoinfo.cnpm.embrapa.br/layers/geonode%3Aareas_urbanas_br_15 |titulo = Áreas Urbanas no Brasil em 2015 | publicado = [[Empresa Brasileira de Pesquisa Agropecuária]] (EMBRAPA) |acessodata = 29 de dezembro de 2018 }}</ref>
+| distritos = 1
+| população = 63339 <!--favor manter o formato, sem pontos nem espaços-->
+| população_pos = [[Lista de municípios do Rio Grande do Norte por população|RN: 8º]]
+| data_pop = Estimativa IBGE/2024<ref name ="cidades.ibge.gov.br"/>
+| altitude = 208
+| clima = [[Clima semiárido|Semiárido]]
+| sigla_clima = Bsh
+<!-- Indicadores -->
+| idh = 0.710 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios do Rio Grande do Norte por IDH|RN: 4°]]
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.atlasbrasil.org.br/2013/perfil/caico_rn |titulo=Perfil do IDH-M caicoense |data=2013 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=29 de julho de 2013}}</ref>
+| gini = {{Formatnum:0.76}}
+| gini_pos = 
+| data_gini = [[PNUD]]/2010<ref name="PNUD_IDH_2010"/>
+| pib = {{formatnum:1394849.17}} mil
+| data_pib = [[IBGE]]/2021<ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/rn/caico/pesquisa/38/46996 |título=Produto Interno Bruto dos Municípios - 2021 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2021 |acessodata=24 de janeiro de 2025 |wayb=20180210213403}}</ref>
+| pib_pos = BR: 697º RN: 7º
+| pib_per_capita = 20.295,80
+| data_pib_per_capita = [[IBGE]]/2021<ref name="IBGE_PIB"/>
+<!-- Página oficial -->
+| site_prefeitura = [https://www.caico.rn.gov.br/ caico.rn.gov.br]
+| site_câmara = [https://caico.rn.leg.br/ caico.rn.leg.br]
+}}
+'''Caicó''' é um [[Unidades federativas do Brasil|município brasileiro]] pertencente ao [[Unidades federativas do Brasil|estado]] do [[Rio Grande do Norte]]. Principal cidade da região do [[Seridó (Rio Grande do Norte)|Seridó]], localiza-se na [[Mesorregião Central Potiguar|zona central do estado]], distante 267 km da capital estadual, [[Natal (Rio Grande do Norte)|Natal]].<ref>[http://revistapegn.globo.com/Como-abrir-uma-empresa/noticia/2016/06/setor-de-beleza-foca-no-publico-masculino-para-driblar-crise.html PEGN - SETOR DE BELEZA FOCA NO PÚBLICO MASCULINO PARA DRIBLAR CRISE]</ref>  Seu território ocupa uma [[área]] de 1.228,583 km², o equivalente a 2,33% da superfície estadual, posicionando-o como o [[Lista de municípios do Rio Grande do Norte por área|quinto município com maior extensão do Rio Grande do Norte]].<ref name="IBGE_Área"/> Sua população em 2024, de acordo com estimativas do IBGE, era de {{fmtn|63339}} habitantes, o que a coloca como a oitava cidade mais populosa do estado, sendo a segunda mais populosa do [[interior do Rio Grande do Norte]], com uma [[densidade populacional]] de 51,6 habitantes por quilômetro quadrado.<ref>{{citar web|URL=https://g1.globo.com/rn/rio-grande-do-norte/noticia/2023/06/28/populacao-de-caico-rn-e-de-61-146-pessoas-aponta-o-censo-do-ibge.ghtml|título=População de Caicó (RN) é de 61.146 pessoas, aponta o Censo do IBGE|autor= |data=27-08-2020|publicado=G1|língua= |acessodata=28/06/2023}}</ref>
+
+A história de Caicó está intimamente ligada a maneira da vivência de sua população ao longo dos séculos por meio de suas manifestações culturais agregadas ao povo sertanejo. <ref>{{citar web|ultimo=Brito|primeiro=Thaís Fernanda Salves de|url=https://d1wqtxts1xzle7.cloudfront.net/14670523/As_Bordadeiras_de_Caico_abant-libre.pdf?1390863553=&response-content-disposition=inline%3B+filename%3DAs_Bordadeiras_de_Caico_a_Festa_de_Sant.pdf&Expires=1728605163&Signature=N3oW7MytglJMNSTWyIgEFXorhaagHOSmKRpn1z9qNe9MStPBMoHZfgoxMfSmPcLyxAweNTdm2tpLGQoFX6UK9nt3rmZ9SNDmp4txlZScEtGYQ1DpWBsbHPZmJmWLVe96~V3ozfhVM3kIO9O5QyZaSCHKrzUYGy1rBP5u21vDTRcuMDFJ8Td~fvBxHmpPEZ6CYFDaeCrS4R40i383NQMn5aU8yNbfozGIOM2Fw1X3NYgpNClK4Wzi37kg0CnAU~p0Yuu-pNPAWsPJJNpbr36x4gnk9PSvzUFYFtLqJIF8JHllp0JGdm6wQ3zam8HrgOclxUueKjJvO~U7xpoji-hQCg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA|titulo=As Bordadeiras de Caicó: a Festa de Sant´Ana e o uso do Bordado1|acessodata=10/10/2024}}</ref> Situada na confluência dos rios [[Rio Seridó|Seridó]] e [[Rio Barra Nova (Rio Grande do Norte)|Barra Nova]], na microrregião do [[Seridó Ocidental]], exibe uma [[altitude]] média de 208 metros acima do [[Nível médio do mar|nível do mar]]. No âmbito do [[turismo]], sua atração principal é a [[Festa de Santana de Caicó|Festa de Sant'Ana]], realizada no mês de julho, que em 2010 foi tombada como [[patrimônio imaterial]] do Brasil.<ref>{{citar web|url=http://www.iphan.gov.br/bcrE/pages/folBemCulturalRegistradoE.jsf?idBemCultural=52g0_|publicado=Iphan.gov.br|título=Festa de Sant'Ana de Caicó/RN|autor=IPHAN|data=|acessodata=1 de novembro de 2011}}</ref> Caicó também é lembrada por seus [[Bordado seridoense|bordado]]s típicos, sua rica [[Culinária do Seridó|culinária típica]],<ref>{{citar web|url=http://www2.ufpel.edu.br/ich/memoriaemrede/beta-02-01/index.php/memoriaemrede/article/download/24/24.|publicado=www2.ufpel.edu.br|título=Inventário da culinária do Seridó (RN)|autor=|data=|acessodata=1 de novembro de 2011}}</ref> além de seu singular [[Carnaval de Caicó|carnaval]].<ref>[http://g1.globo.com/rn/rio-grande-do-norte/carnaval/2014/noticia/2014/03/carnaval-de-caico-reune-mais-de-70-mil-e-faz-festa-no-bloco-do-magao.html G1 - Carnaval de Caicó reúne mais de 70 mil e faz a festa no Bloco do Magão]</ref>
+
+Conhecido centro pecuarista e algodoeiro, Caicó apresenta o quinto maior [[Índice de Desenvolvimento Humano|Índice de Desenvolvimento Humano (IDH)]] do interior e semiárido nordestino. Alcançando um dos maiores índice de [[longevidade]] do Rio Grande do Norte.<ref>{{Citar web |url=http://www.frigoletto.com.br/GeoEcon/idhrn.htm |publicado=Frigoletto.com.br |autor= |título=Ranking do IDH dos municípios do Rio Grande do Norte|data= |acessodata= }}</ref> O município ainda se destaca por possuir o menor índice de exclusão social do estado segundo o IBGE,<ref>{{citar web|url=http://www.sober.org.br/palestra/6/711.pdf|publicado=Sober.org.br|formato=PDF|título=Agricultura, Meio Ambiente e Desenvolvimento Sustentável|autor=José de Jesus Sousa Lemos|data=2007|acessodata=}}</ref> o quinto menor índice de vulnerabilidade social do Nordeste, além do maior índice de prosperidade social da região segundo o [[Instituto de Pesquisa Econômica Aplicada|IPEA.]]<ref>[http://www.ipea.gov.br/portal/images/stories/PDFs/livros/livros/150901_atlas_da_vulnerabilidade.pdf]</ref>
+
+== Etimologia ==
+{{VT|Topônimos de origem tupi no Brasil}}
+[[Imagem:Poçodesantana.JPG|thumb|esquerda|Poço de Santana, fonte de água onde segundo a lenda se originou a cidade]]
+
+Existem várias versões sobre a origem e adoção do nome do município de "Caicó". Uma teoria é que o topônimo municipal deriva da tribo indígena que povoava a região na época da chegada dos desbravadores - Os [[Caicós]] da família indígena dos [[Cariris]]. Segundo alguns indianistas a palavra significaria "macaco esfolado" e seria alcunha dada à tribo local por outra, sua inimiga. No dicionário da língua [[Língua tupi|tupi]], Lemos Barbosa diz que a palavra Caicó deriva da [[Línguas cariris|língua cariri]] e que significa "mato ralo", em referência ao aspecto da natureza física regional.<ref>{{citar web|URL=https://biblioteca.ibge.gov.br/visualizacao/periodicos/113/col_mono_n281_caico.pdf|título=Caicó - Rio Grande do Norte - Coleção de Monografias 3ª série|autor=IBGE|data=|publicado=29 de dezembro de 1964|acessodata=18 de agosto de 2020}}</ref>
+
+Segundo o pesquisador caicoense [[Olavo de Medeiros Filho]] (1934-2005), o [[topônimo]] vinha de uma ave agourenta, comedora de cobras e que havia em abundância no curso d'água que passava próximo a casa-forte do cuó, chamado [[rio Acauã]]. Os topônimos "acauã" e "cuó" seriam sinônimos, sendo a primeira forma em [[Língua tupi|tupi]] e a segunda em [[tarairiú]] e ambas as formas designavam o pássaro que dava nome ao rio e à região. Considerando a partícula "quei" como sendo "rio", rio Acauã seria o mesmo que "Queicuó", posteriormente Caicó.<ref>{{citar web|URL=https://periodicos.ufrn.br/mneme/article/download/276/252/|título=Contribuição ao estudo da Casa-Forte do Cuó, Caicó-RN|autor=Helder Alexandre Medeiros de Macedo |data=|publicado=dezembro de 2004|acessodata=18 de agosto de 2020}}</ref>
+
+Outra versão é defendida por [[Câmara Cascudo]], que refere sua gênese a partir dos termos "Acauã" e "Cuó", que servem à designação de acidentes geográficos (rio e serra, respectivamente). "Acauã" pertence à língua [[Língua tupi|Tupi]] e "Cuó", ao dialeto dos [[tapuias]] e [[Tarairiús|tarairius]]. Tais tribos ainda identificavam o rio pelo termo "quei", o que sugere que Caicó seja uma corruptela de "Queicuó", o mesmo que rio do Cuó.<ref>{{citar web|URL=http://www.repositorio.ufc.br/bitstream/riufc/8253/1/2012_tese_mbsilva.pdf|título=ATLAS LINGUÍSTICO DO CENTRO-OESTE POTIGUAR |autor=MOISÉS BATISTA DA SILVA|data=|publicado=2012|acessodata=18 de agosto de 2020}}</ref>
+
+=== Versão lendária ===
+{{quote2|''Quando o sertão era virgem, a tribo dos “Caicós”, célebre por sua ferocidade e que se julgava invencível porque Tupã vivia ali, encarnado num touro bravio que habitava um intrincado mofumbal, existente no local onde hoje está situada a cidade. A tribo foi destroçada, mas o misterioso mofumbal, morada de um deus selvagem, permaneceu intacto. Certo dia, um vaqueiro inexperiente penetrou no mofumbal, vendo-se, de repente, atacado pelo touro sagrado. O vaqueiro, no entanto, lembrou-se de fazer voto a Senhora Sant’Ana de construir uma Capela ali, se a Santa o livrasse a tempo do perigo. Milagrosamente o touro desapareceu e o vaqueiro, tão logo possível, desmatou a área e iniciou a construção da capela.''|Manuel Dantas<ref>{{citar web|url=http://www.prefeituradecaico.com.br/blog/historia/|publicado=Prefeituradecaico.com.br|título=Lendas sobre a Origem da Cidade|autor=Prefeitura de Caicó|data=|acessodata=1 de março de 2011}}</ref>}}
+
+== História ==
+=== Pré-história ===
+Entre o fim do [[Pleistoceno]] e início do [[Holoceno]], começaram a ser ocupadas áreas por grupos de caçadores que se estabeleceram próximo aos rios e fontes d’água, adaptando-se, assim, às árduas condições dos sertões. As mais antigas datações radiocarbônicas de enterramentos humanos da região do [[Seridó (Rio Grande do Norte)|Seridó]] são de aproximadamente 10 mil anos atrás, encontrada no município de [[Parelhas]]. Nessa época, os grupos humanos coabitavam com espécimes hoje extintas de megafauna, como [[Smilodon|tigres dentes-de-sabre]], [[mastodonte]]s, [[paleolama]]s, [[Preguiça-gigante|preguiças gigantes]] e [[Gliptodonte|tatus gigantes]].<ref name="CERES_Caicó1"/>
+
+As [[pinturas rupestres]] encontradas na região são agrupadas em uma subtradição, que é a representação visual de um universo simbólico primitivo, não necessariamente pertençam aos mesmos grupos étnicos podendo estar separados por cronologias distantes; sendo chamada de subtradição Seridó, caracterizada por figuras de [[piroga]]s (embarcações rudimentares), objetos e ornamentos corporais e representação de plantas, dando ideia de paisagem. São constantes ainda temas como a [[caça]], envolvendo animais como [[veado]]s, [[ema]]s, [[tucano]]s, [[onça]]s, [[arara]]s e [[capivara]]s; dança ritual em torno de [[árvore]] e o lúdico, na forma de “jogos”. A sociedade da Subtradição Seridó era estritamente hierárquica, caracterizada pelas representações de [[antropomorfo]]s com [[Cocar (indígena)|cocares]] sobre a cabeça, identificadores de sua alta posição social.<ref name="CERES_Caicó1">{{citar web|url=http://www.cerescaico.ufrn.br/rnnaweb/historia/prehistoria/pre2.htm|título=LEVANTAMENTO DOS SÍTIOS ARQUEOLÓGICOS DO SERIDÓ: UMA EXPERIÊNCIA VIVIDA NA DISCIPLINA ARQUEOLOGIA|autor=Paula Sônia de Brito|data=|publicado=2000|acessodata=1 de março de 2012}}</ref>
+
+Hoje ainda são encontradas na região figuras da Tradição [[Itaquatiara]] ou Itaquatiaras, aparecendo em blocos ou rochas ao lado dos cursos d’água, nelas aparecem, comumente, grafismos puros e sinais como tridígitos, círculos, linhas e quadrados, como os encontrados no sítio arqueológico da [[Gruta da Caridade]].<ref>{{citar web|url=http://www.cerescaico.ufrn.br/rnnaweb/historia/prehistoria/pre2/grutadacaridade.htm|título=GRUTA DA CARIDADE|autor= Helder Alexandre Medeiros de Macedo|data=|publicado=2000|acessodata=1 de março de 2012}}</ref> Tais registros reforça a hipótese de que o seu território foi povoado por diversas levas de povos pré-históricos, em diferentes épocas. Esse povoamento, feito através de diferentes grupos humanos, deu origem às [[tribo]]s [[indígena]]s.
+
+=== Colonização e povoamento ===
+[[Imagem:Domingos Jorge Velho.jpg|thumb|150px|esquerda|O bandeirante [[Domingos Jorge Velho]] comandou ataques aos nativos abrindo caminho para o povoamento da região.]]
+
+A região da Ribeira do [[Seridó (Rio Grande do Norte)|Seridó]] era habitada pelos índios [[cariris]] e [[tarairiús]], divididos em cinco grandes grupos: [[canindés]], cariris, [[Jenipapos-canindés|jenipapos]], [[sucurus]] e [[pegas]]. O primeiro contato e tentativa de colonização se deu pelos [[flamengos]], no entanto, não obteve sucesso devido à [[Guerra dos Bárbaros]] ou [[Confederação dos Cariris|Confederação Cariri]].
+
+Em 1687, chega às terras o coronel Antônio de Albuquerque da Câmara, para combater os gentios, usando a [[Casa-Forte do Cuó|Casa Forte do Cuó]] como base militar. No entanto o ambiente continuava tenso, a ponto do então governador-geral do Brasil, [[Matias da Cunha]] em 1688, convocar os serviços do bandeirante [[Domingos Jorge Velho]], que combateu vindo a prender o cacique [[Canindés|Canindé]], que em 1692 firmou um acordo de paz com os [[portugueses]].
+
+O povoamento se deu inicialmente por paraibanos e [[pernambucano]]s à procura de terras para criação de [[gado]], uma vez que a Carta Régia de 1701 proibia o criatório de gado a menos de 10 [[légua]]s do [[litoral]] para não interferir na produção de [[cana-de-açúcar]]. Foram concedidas [[sesmaria]]s como recompensa por feitios militares, como a expulsão dos [[holandeses]] e para [[padre]]s, com a construção da [[Capela Primitiva de Sant'ana|capela]] em honra a [[Sant'Ana]] em 1695. Já em 1700 se deu a fundação do Arraial de Queiquó, por Manuel de Souza Forte. No entanto as primeiras [[família]]s a se instalarem plenamente se deu a partir de 1720, por portugueses vindos principalmente do norte de [[Portugal]] e [[Açores]].
+
+[[Imagem:Louis-Michel van Loo 003.jpg|thumb|Em 1748, [[Marquês de Pombal]] (na foto) elevou o arraial à condição de Vila.|279x279px]]
+
+Em 7 de julho de 1735, o arraial foi elevado a condição de "Povoado de Caicó". No intuito de interiorizar o povoamento do nordeste, o [[Marquês de Pombal]] elevou à condição de Vila, batizando-a de Vila Nova do Príncipe, em homenagem ao então [[príncipe]] e futuro [[rei]] [[Dom João VI]]. Tornando-se assim sede da Freguesia da Gloriosa Senhora Sant'Ana do Seridó, desmembrada em 1748 da Freguesia de Nossa Senhora do Bom Sucesso de Piancó, atual cidade de [[Pombal (Paraíba)|Pombal]], no estado da [[Paraíba]]. E aos 15 de dezembro de 1868 o governador da Província, Manuel José Marinho, assinou a Lei Provincial n.o 612, elevando a mesma à categoria de [[cidade]] com o nome de “Cidade do Príncipe”. Até que, em 1890,  o Governo Provisório alterou o nome para "Cidade do Seridó". Tal decreto revogado em 7 de julho do mesmo ano, alteraria o nome da cidade para Caicó, nome indígena pelo qual era conhecida desde a fundação. A adoção do nome Caicó se deu com objetivo de expurgar as marcas do [[Império]] presentes na terminologia "Cidade do Príncipe", estando inserida no contexto da nova política nacional republicana.<ref>{{citar web|url=http://www.snh2011.anpuh.org/resources/anais/14/1300872496_ARQUIVO_ARTIGOANPUH2011.pdf|publicado=Snh2011.anpuh.org|formato=PDF|título=Em nome(s) de Caicó: a toponimização espacial sob os olhares da República e dos republicanos|língua=|autor= ANDERSON DANTAS DA S. BRITO, OLIVIA MORAIS DE MEDEIROS NETA|data=julho de 2011|acessodata=1 de março de 2012}}</ref>
+
+=== Demarcação do território e integração ao Rio Grande do Norte ===
+{| class=wikitable style="float:left; margin:1em; border-collapse:border; text-align:center; font-size:90%"
+! colspan="2"| Municípios desmembrados de Caicó<ref>{{citar web|url=http://ftp.ufrn.br/pub/biblioteca/ext/bdtd/MariaSSM.pdf|publicado=Ftp.ufrn.br|formato=PDF|título=A produção do espaço das pequenas cidades do Seridó Potiguar|autor=Maria Suelly da Silva Medeiros|data=2005|acessodata=17 de fevereiro de 2010}}</ref>
+|-
+! Município
+! Data
+|-
+| [[Acari (Rio Grande do Norte)|Acari]]
+| 11 de abril de 1835
+|-
+| [[Serra Negra do Norte]]
+| 3 de agosto de 1874
+|-
+| [[Timbaúba dos Batistas]]
+| 10 de maio de 1948
+|-
+| [[Jardim de Piranhas]]
+| 23 de dezembro de 1948
+|-
+| [[São Fernando (Rio Grande do Norte)|São Fernando]]
+| 31 de dezembro de 1948
+|}
+
+Em 1735, a elevação do arraial do Queiquó a povoação e, posteriormente, a sede de freguesia, provocariam uma crise com a província da [[Paraíba]], devido aos limites do território seridoense reivindicado por ambas as províncias. Caicó, judicial e religiosamente, pertencia à comarca e à freguesia de Nossa Senhora do Bonsucesso do [[Piancó]], atualmente cidade de [[Pombal (Paraíba)|Pombal]], no [[sertão da Paraíba]]. A disputa pelos limites administrativos entre as duas províncias decorria, em parte, pela ausência de autonomia do Rio Grande. A capitania esteve subordinada juridicamente à Paraíba até 1818, quando foi criada a Comarca de [[Natal (Rio Grande do Norte)|Natal]].<ref name="Histórico_Caicó_Periódicos_UERN"/>
+
+A interação do sertão com a sede política da Capitania e da Província do Rio Grande foi escassa na Colônia e no [[Império]], no entanto, em 1812, com a formação das Juntas Constitucionais das capitanias por ordem das Cortes de [[Lisboa]], ocorreu a nomeação de dois seridoenses para a Junta Constitucional Provisória da capitania do Rio Grande: o acariense Capitão-mor Manuel de Medeiros Rocha, sendo sucedido pelo Padre Francisco de Brito Guerra, vigário do Príncipe (Caicó), que assumiu sua primeira legislatura, como deputado geral, entre os anos de 1831 e 1833 e foi senador vitalício do Império em 1837.
+
+O Padre Brito Guerra procurando objetivar os limites da Vila Nova do Príncipe propôs ao [[Senado]] a demarcação do território da vila, representando o interesse potiguar. Seu projeto foi ratificado pelo Decreto de 25 de outubro de 1831. Três anos após o decreto publicado, a insatisfação paraibana permanecia. Em 1834, a Assembleia Provincial paraibana, em conjunto com a Câmara da Vila de [[Patos]], representavam à Câmara Nacional, solicitando a revogação do decreto de 1831. No mesmo ano em que a [[Paraíba]] formalizou seu protesto, a [[Assembleia do Rio Grande do Norte]] enviou sua representação "contra as pretensões da Província da Paraíba, que trabalha por destruir a lei de 25 de outubro de 1831.<ref name="Histórico_Caicó_Periódicos_UERN"/>
+
+Ocorreram abaixo-assinados remetidos pelos "juízes de paz, inspetores, guardas nacionais e proprietários", enviados pelas câmaras das Vilas de [[Acari (Rio Grande do Norte)|Acari]] e Príncipe - onde se mostravam "contentes em pertencer à Província do Rio Grande do Norte"-, percebemos que os móveis do descontentamento respondiam pela Freguesia de [[Patos]] e pelas pretensões da Vila de [[Pombal (Paraíba)|Pombal]]. Os limites de Caicó estavam estabelecidos, então delimitou-se a enquadrar-se seu espaço no território do Rio Grande do Norte.<ref name="Histórico_Caicó_Periódicos_UERN">{{citar web|url=http://www.periodicos.ufrn.br/ojs/index.php/mneme/article/view/46/37|título=História e Espaço seridoense entre os séculos XVII e XIX|autor=Prof. Muirakytan K. de Macêdo|outros=ago/set. de 2000|publicado=Periódicos UERN|acessodata=5 de novembro de 2011|arquivourl=http://www.periodicos.ufrn.br/ojs/index.php/mneme/article/view/46/37|arquivodata=5 de outubro de 2011}}</ref>
+
+=== Ciclo do algodão ===
+No final do [[século XIX]], popularizou-se o plantio de [[algodão]] nas terras do [[Seridó (Rio Grande do Norte)|Seridó]], que até então era dominado pela [[pecuária]]. Caicó, assim como toda a região do Seridó, se orgulhava em produzir uma das melhores variedades de algodão do mundo, o algodão Mocó ou algodão Seridó, variedade que resistia às [[seca]]s e fornecia capuchos de fibras longas, resistentes, de brancura única e poucas sementes.<ref name="Ciclo do Algodão"/>
+
+O algodão seridoense abastecia inicialmente as [[indústria]]s [[têxteis]] da [[Inglaterra]], que, até esse momento, se abastecia do algodão [[Estados Unidos|estadunidense]], mas que, por motivo da independência estadunidense, teve seu fornecimento bloqueado. Foi, então, preciso buscar [[matéria-prima]] em outros locais. Quando a Inglaterra retomou o [[comércio]] com os Estados Unidos, o algodão seridoense ficou em segundo plano, mas a produção já tinha destino substitutivo: as indústrias [[São Paulo (estado)|paulistas]] que começavam a surgir.<ref name="Ciclo do Algodão"/>
+
+Em 1905, o algodão superou o ''status'' do [[açúcar]] no estado, que, com o crescimento econômico, fez surgir políticos seridoenses, assim como uma elite agrária local. Ao assegurarem o controle político do estado, buscou-se realizar as melhorias adequadas para o cultivo e escoamento do algodão. Em 1924, foi criado o Departamento de Agricultura, posteriormente o Serviço Estadual do Algodão (1924) e o Serviço de Classificação do Algodão (1927), além de outras melhorias como a construção de rodovias ligando o Seridó à capital.<ref name="Ciclo do Algodão"/>
+
+Mas em meados de 1918, os paulistas começam a investir em sua produção própria, após uma geada que destruiu as plantações de café e gradativamente deixaram de comprar o algodão seridoense; aliados a falta de investimentos em tecnologia, secas prolongadas e a inserção de pragas, como o bicudo que dizimou vastos algodoais, iniciou-se então a decadência do ciclo algodoeiro.
+
+Com interesses políticos, [[Assis Chateaubriand]] se uniu a grupos de indústrias têxteis nacionais, como a [[Fábrica de Tecidos Bangu]] e a [[Companhia de Tecidos Rio Tinto]], no intuito de levar o algodão do Seridó para alta costura, entrou em contato e patrocinou visitas ao Brasil de estilistas europeus, como [[Jacques Fath]], [[Marcel Rochas]] e [[Elsa Schiaparelli]].<ref>{{citar web|URL=https://revistas.ufpr.br/historia/article/view/55382/33514|título=CHATÔ: O REI DO ALGODÃO|autor=Maria Claudia Bonadio|data=|publicado=2017|acessodata=13 de agosto de 2020}}</ref><ref>{{citar web|URL=http://repositorio.unicamp.br/bitstream/REPOSIP/280865/1/Michetti_Miqueli_D.pdf|título=Moda brasileira e mundialização: mercado mundial e trocas simbólicas|autor=MIQUELI MICHETTI|data=|publicado=2012|acessodata=13 de agosto de 2020}}</ref><ref>{{citar web|URL=http://www1.sp.senac.br/hotsites/blogs/revistaiara/wpcontent/uploads/2015/01/05_IARA_vol2_n1_Dossie.pdf|título=ARTE, MODA E INDÚSTRIA NO BRASIL NA DÉCADA DE 1950 -CHRISTIAN DIOR, SALVADOR DALÍ, JACQUES FATH E ELSA SCHIAPARELLI |autor=Joana Pedrassoli Salles|data=|publicado=2009|acessodata=13 de agosto de 2020}}</ref> [[Jacques Fath]] apresentou uma coleção com 25 peças confeccionadas com Algodão Seridó na França, em sua mansão em [[Coberville]] em 3 de agosto de 1952.<ref>{{citar web|URL=https://teses.usp.br/teses/disponiveis/103/103131/tde-25092018-143351/publico/milenamelocorrigida.pdf|título=Desejos frustrados na formação de um colecionismo de moda no MASP|autor=Milena Melo Sales|data=|publicado=2018|acessodata=13 de agosto de 2020}}</ref>
+
+Mesmo com essa situação de decadência, foi em Caicó no ano de 1984, que se deu o primeiro registro da colheita de algodão de fibra colorida, dando a partir daí todo o processo de melhoramento genético dessa linhagem.<ref name="Ciclo do Algodão">{{Citar web |url=http://www.intercostos.org/documentos/custos_330.pdf|publicado=Intercostos.org|formato=PDF|título=Considerações sobre a produção do algodão colorido e a importância do Consórcio Natural Fashion como último elo da cadeia produtiva|língua=|autor=Josenildo Brito de Oliveira e Cosmo Severiano Filho|data=2005|acessodata=31 de dezembro de 2011|arquivourl=http://www.webcitation.org/64LGqvDZu|arquivodata=31 de dezembro de 2011}}</ref>
+
+=== Período republicano ===
+Caicó foi uma das cidades pioneiras a lutar pela instalação da [[República]], sendo a primeira do [[Rio Grande do Norte]] a possuir um núcleo republicano organizado chamado "Centro Republicano Seridoense", fundado em 1886 por Janúncio da Nóbrega. Com o [[República Velha|Período Republicano]] e a [[cotonicultura]], a cidade viveu um momento de rápido desenvolvimento com o deslocamento do centro político e econômico do estado da região litorânea ([[açúcar]]-[[têxtil]]) para o [[Seridó (Rio Grande do Norte)|Seridó]] ([[algodão]]-[[pecuária]]), e com isso derrubar a Oligarquia Maranhão, que dominava o estado desde 1892.<ref name="FUNDAJ_1"/>
+
+Quando em 1923, o então [[presidente]] [[Artur Bernardes]] conduziu o caicoense [[José Augusto Bezerra de Medeiros]] para o governo do estado, abrindo caminho para outros seridoenses, como [[Juvenal Lamartine]] e [[Dinarte Mariz]].<ref name="FUNDAJ_1">{{citar web|url=http://www.fundaj.gov.br/geral/observanordeste/spinelli_05.pdf|publicado=Fundaj.gov.br|formato=PDF|título=Coroneis e oligarquias na Primeira República|autor=JOSÉ ANTONIO SPINELLI|data=1992|acessodata=1 de Novembro de 2011}}</ref> Nessa época, Caicó viveu uma fase de intenso desenvolvimento e modernização, com a melhoria de sua infraestrutura, através da construção da [[ponte]] sobre o [[rio Seridó]], instalação de [[telégrafo]] e rede telefônica, asfaltamento de [[rodovia]]s, construção de aeródromo, "Grande Hotel", cinemas, hospital e colégios. Através de políticas higienistas sanitárias, se deu a ampliação da rede de abastecimento e saneamento, além da criação de um código de uso e ocupação do solo urbano.<ref>{{citar web|url=http://bdtd.bczm.ufrn.br/tedesimplificado/tde_arquivos/16/TDE-2009-09-15T043924Z-2205/Publico/MarcosAAA.pdf|publicado=Bdtd.bczm.ufrn.br|formato=PDF|título=Sobre pedras, entre rios: Modernização do Espaço Urbano de Caicó (1950/1960)|autor=Marcos Antônio Alves de Araújo|data=|acessodata=1 de novembro de 2011}}</ref>
+
+[[Imagem:Caicoskyline.JPG|thumb|centro|800px|Núcleo urbano do município nos dias atuais]]
+
+== Geografia ==
+{{Imagem múltipla
+ | footer    = O solo do município é considerado bastante pedregoso. Na foto, Cânions do Rio Seridó à esquerda e [[Afloramento (geologia)|afloramento rochoso]] conhecido como Serrote Branco à direita.
+ | width     = 220
+ | align     = left
+
+ | image1    = Caicoriver.png
+ | alt1      = Yellow cartouche
+
+ | image2    = Serrotebranco.JPG
+ | alt2      = Red cartouche
+}}
+O município de Caicó está localizado a {{fmtn|282|km}} de [[Natal (Rio Grande do Norte)|Natal]], capital estadual, e é o [[Lista de municípios do Rio Grande do Norte por área|sexto maior município do Rio Grande do Norte em área territorial]], com {{fmtn|1228.583|km²}}.<ref name ="IBGE_Área"/> Limita-se a norte com os municípios de [[Jucurutu]] e [[Florânia]]; a sul [[São João do Sabugi]] e o estado da [[Paraíba]] ([[Várzea (Paraíba)|Várzea]]); a leste [[São José do Seridó]], [[Cruzeta]], [[Jardim do Seridó]] e [[Ouro Branco (Rio Grande do Norte)|Ouro Branco]] e a oeste [[Timbaúba dos Batistas]], [[São Fernando (Rio Grande do Norte)|São Fernando]] e [[Serra Negra do Norte]].
+
+De acordo com a divisão do [[Instituto Brasileiro de Geografia e Estatística]] vigente desde 2017, o município pertence às regiões geográficas [[Região geográfica intermediária|intermediária]] e [[Região geográfica imediata|imediata]] de Caicó.<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref> Até então, com a vigência das divisões em [[Microrregiões do Brasil|microrregiões]] e [[Mesorregiões do Brasil|mesorregiões]], o município fazia parte da [[microrregião do Seridó Ocidental]], que por sua vez estava incluída na [[mesorregião Central Potiguar]].<ref>{{Citar periódico |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |ano=1990 |título=Divisão regional do Brasil em mesorregiões e microrregiões geográficas |jornal=Biblioteca IBGE |página=44–45 |volume=1 |url=http://biblioteca.ibge.gov.br/visualizacao/livros/liv2269_1.pdf |acessadoem=25 de setembro de 2017 |wayb=20170925170313}}</ref>
+
+{{Imagem múltipla
+ | align     = right
+ | direction = vertical
+ | header    =
+ | width     = 220
+
+ | image1    = Saobernardoforest.JPG
+ | caption1  = [[Serra de São Bernardo]] ao fundo, um [[inselberg]] que forma o ponto mais alto do município. Em primeiro plano, vista da Caatinga no período chuvoso.
+
+ | image2    = Serrotebrancocaico.JPG
+ | caption2  = Relevo ondulado presente no bairro Serrote Branco. Ao fundo, serras da Reserva Natural Stoessel de Brito.
+}}
+Sua [[altitude]] varia de cem a duzentos metros. A sede do município se localiza na depressão Sertaneja, terrenos baixos situados entre as partes altas do [[planalto da Borborema]] e da [[chapada do Apodi]]. As [[serra]]s e [[Cume|picos]] mais altos do município pertencem ao planalto da Borborema. Tais picos são conhecidos por campos de ''[[inselberg]]s'', originários de processos tectônicos remotos e pela [[erosão]] diferencial em função das propriedades das [[rocha]]s que a compõe. O ponto mais elevado do município é um ''inselberg'' conhecido como [[Serra de São Bernardo]], exibindo 638 [[metros]] de altitude.<ref>{{citar web|url=http://www.portal.rn.gov.br/contentproducao/aplicacao/idema/anuario/anteriores/anuario2008/em_pdf/1.3.3.1.pdf|publicado=Portal.rn.gov.br|formato=PDF|título=Compartimentos de relevo|autor=IDEMA|data=|acessodata=6 de maio de 2011}}</ref> Segundo o conceituado [[geógrafo]] [[Aziz Ab'Saber]], tais formações formam a área que apresenta as mais bizarras e rústicas paisagens morfológicas e fitogeográficas do [[Brasil]].<ref>{{citar web|url=http://www.revistageonorte.ufam.edu.br/attachments/009_FATORES%20NATURAIS%20NA%20EVOLU%C3%87%C3%83O%20DAS%20PAISAGENS%20NO%20SEMI%C3%81RIDO%20BRASILEIRO%20UMA%20ABORDAGEM%20GERAL.pdf|título=FATORES NATURAIS NA EVOLUÇÃO DAS PAISAGENS NO SEMIÁRIDO BRASILEIRO: UMA ABORDAGEM GERAL|autor=Frederico de Holanda Bastos, Abner Monteiro Nunes Cordeiro|data=2012|publicado=2012|acessodata=18 de novembro de 2012}}</ref>
+
+O [[solo]] predominante é o bruno não cálcico vértico, de fertilidade natural alta, textura arenosa/argilosa e média/argilosa, moderadamente drenado com relevo suave e ondulado. Como ocorrências minerais, encontram-se: [[barita]], [[calcário]], [[talco]], [[ouro]] e [[tungstênio]]; também há existência de recursos minerais associados como rochas ornamentais,especialmente: [[migmatito]]s, [[brita]], rocha dimensionada, [[mármore]] e [[gnaisse]].<ref>{{citar web|url=http://www.google.com.br/urlsa=t&source=web&cd=2&ved=0CB4QFjAB&url=http%3A%2F%2Fwww.idema.rn.gov.br%2Fgoverno%2Fsecretarias%2Fidema%2Fperfil%2FCaico%2FCaico1.doc&ei=zH08Tf6ONcSdgQeems2eCA&usg=AFQjCNHNDtsZ4kzw7YjMu2sFHFGBvDqiIw|publicado=Idema.rn.gov.br|título=Perfil do seu município Caicó|autor=IDEMA|data=|acessodata=1 de novembro de 2011}}</ref>
+
+A [[vegetação]] característica da área é a de [[Caatinga]], de transição entre a Caatinga Hiperxerófila e Caatinga Subdesértica. Suas folhas caem durante o período seco e renascem  após as primeiras chuvas.<ref>{{citar web|URL=http://www.cprm.gov.br/rehi/atlas/rgnorte/relatorios/CAIC025.PDF|título=DIAGNÓSTICO DO MUNICÍPIO DE CAICÓ|autor=Beltrão et.al|data=|publicado=setembro 2005|acessodata=}}</ref><ref>{{citar web|URL=http://www.fapesp.br/eventos/2013/06/bioma-caatinga/Queiroz.pdf|título=a origem, evolução e diversidade da vegetação do bioma caatinga|autor=|data=|publicado=|acessodata=}}</ref> Trata-se da vegetação mais seca do [[Rio Grande do Norte]], cujos componentes predominantes são cactos, árvores e arbustos dotados de microfilia, com um estrato herbáceo efêmero de rápida floração no período chuvoso.<ref>{{citar web|URL=http://www.cbcn.org.br/simposio/2010/palestras/floristico.pdf|título=LEVANTAMENTO FLORÍSTICO PRELIMINAR DA SERRA DA FORMIGA EM CAICÓ – RN|autor=Silva |numero-autores=et al.|data=|publicado=|acessodata=}}</ref> Segundo o Plano Nacional de Combate a [[Desertificação]], Caicó está inserido em área susceptível à desertificação em categoria "Muito Grave".
+
+O município encontra-se totalmente inserido nos domínios da [[bacia hidrográfica]] do rio Piranhas-Açu e ébanhado pelos rios [[Rio Seridó|Seridó]], que nasce na Serra dos Cariris, na [[Paraíba]]; [[Rio Sabugi]], que nasce na Serra dos Teixeiras, na Paraíba; e [[Rio Barra Nova (Caicó)|Barra Nova]], que nasce na Serra do Equador, em [[Parelhas]], no RN. Todos os cursos d'água encontrados no município são de natureza intermitente. Ainda existe uma concentração de pequenas lagoas e açudes de pequeno e grande porte, sendo os mais importantes o [[Açude Itans]] com capacidade para 81.750.000 m³ de água, a [[Barragem Passagem das Traíras]] com capacidade para 49.702.393,65 m³, a Barragem das Carnaúbas com capacidade para 30.000.000 m³ e o Açude Mundo Novo da EMPARN, com capacidade para 3.000.000§m³.
+
+{{Imagem múltipla
+ | align     = center
+ | direction = horizontal
+
+ | image1    = Acuderecreio.JPG
+ | caption1  = [[Açude Recreio]], no bairro Vila do Príncipe. Caicó foi uma das cidades pioneiras na construção de reservatórios hídricos no Brasil.
+ | width1    = 225
+
+ | image2    = Caico rio.JPG
+ | caption2  = O [[Rio Seridó]] corta a cidade e boa parte da região. Devido ao seu regime intermitente, o rio chega a quase desaparecer na estação seca.
+ | width2    = 270
+
+ | image3    = Açude Itans cheio.JPG
+ | caption3  = O [[Açude Itans]] é um dos principais reservatórios que abastecem a cidade
+ | width3    = 204
+}}
+
+=== Clima ===
+{| class=wikitable style="float:left; margin:0.5em; border-collapse:border; text-align:center; font-size:87%"
+! colspan="6"| Maiores acumulados de precipitação em 24 horas<br />registrados em Caicó por meses ([[Instituto Nacional de Meteorologia|INMET]]/[[Agência Nacional de Águas e Saneamento Básico|ANA]]/EMPARN)<ref name="bdmep.inmet.gov.br">{{citar web|url=https://bdmep.inmet.gov.br/|título=Banco de dados meteorológicos|autor=[[Instituto Nacional de Meteorologia]] (INMET)|acessodata=25-04-2021}}</ref><ref name="Não_nomeado-20230316143328">{{citar web|url=http://meteorologia.emparn.rn.gov.br/relatorios/relatorios-pluviometricos|título=Meteorologia EMPARN - Relatórios pluviométricos|acessodata=07/01/2022|website=EMPARN}}</ref>
+|-
+! Mês
+! Acumulado
+! Data
+! Mês
+! Acumulado
+! Data
+|-
+| Janeiro
+| {{fmtn|196|mm}}
+| 05/01/1994
+| Julho
+| {{fmtn|100|mm}}
+| 06/07/1964
+|-
+| Fevereiro
+| {{fmtn|152|mm}}
+| 16/02/1991
+| Agosto
+| {{fmtn|130|mm}}
+| 02/08/2000
+|-
+| Março
+| {{fmtn|151.8|mm}}
+| 22/03/1960
+| Setembro
+| {{fmtn|25|mm}}
+| 12/09/1973
+|-
+| Abril
+| {{fmtn|160|mm}}
+| 02/04/1989
+| Outubro
+| {{fmtn|89|mm}}
+| 23/10/2010
+|-
+| Maio
+| {{fmtn|194|mm}}
+| 27/05/1995
+| Novembro
+| {{fmtn|58.8|mm}}
+| 04/11/2013
+|-
+| Junho
+| {{fmtn|95.2|mm}}
+| 02/06/2004
+| Dezembro
+| {{fmtn|110|mm}}
+| 25/12/1963
+|-
+| colspan="6" style="font-size:85%" | '''Período''': 1 de janeiro de 1922-presente
+|}
+
+Caicó possui [[clima semiárido]] (do tipo ''Bsh'' na [[classificação climática de Köppen-Geiger]]),<ref name="Caicó"/> apresentando [[temperatura]]s elevadas durante todo o ano e [[chuva]]s concentradas entre os meses de janeiro a maio. As [[Precipitação (meteorologia)|precipitações]] ocorrem sob a forma de [[chuva]] e, mais raramente, de [[granizo]].<ref>{{citar web|url=http://deolhonotempo.com.br/site/tempestade-com-ventania-e-granizo-provoca-estragos-em-caico-rn/|título= Tempestade com ventania e granizo provoca estragos em Caicó (RN)|data=26-03-2013|acessodata=24-01-2014|wayb=20140220024916}}</ref> O tempo de insolação é de aproximadamente {{fmtn|2800}} horas/ano,<ref name="NCB_1981-2010"/> de acordo com a [[estação meteorológica]] da [[Universidade Federal do Rio Grande do Norte]] (UFRN), que pertence à rede do [[Instituto Nacional de Meteorologia]] (INMET) e opera desde março de 1995.
+
+Desde a abertura da estação, a menor [[temperatura]] ocorreu em 23 de abril de 1995 ({{fmtn|16.8|°C}}) e a maior em 31 de outubro de 2023 ({{fmtn|40.9|°C}}). Máximas iguais ou superiores a {{fmtn|40|°C}} também ocorreram nos dias  25 de setembro de 2023 ({{fmtn|40.4|°C}}), 3 de dezembro de 2019 ({{fmtn|40.3|°C}}), 7 de dezembro de 2019 ({{fmtn|40.1|°C}}), 25 de outubro de 2023 ({{fmtn|40.1|°C}}), 18 de janeiro de 2003 ({{fmtn|40|°C}}) e 28 de janeiro de 2007 ({{fmtn|40|°C}}).<ref name="bdmep.inmet.gov.br"/>
+
+De acordo com o INMET, a Agência Nacional de Águas e Saneamento ([[Agência Nacional de Águas e Saneamento Básico|ANA]]) e a Empresa de Pesquisa Agropecuária do Rio Grande do Norte (EMPARN), o maior acumulado pluviométrico em 24 horas foi de 196&nbsp;mm em 5 de janeiro de 1994. Outros acumulados de destaque incluem 194&nbsp;mm em 27 de maio de 1995 e 171,2&nbsp;mm em 22 de janeiro de 1996. O recorde mensal é de 728&nbsp;mm em abril de 1989 e o ano mais chuvoso foi 1985, com 1821&nbsp;mm.<ref name="bdmep.inmet.gov.br"/><ref name="Não_nomeado-20230316143328"/>
+{{Tabela climática
+|localidade = Caicó/[[Universidade Federal do Rio Grande do Norte|UFRN]] <small>([[Organização Meteorológica Mundial|OMM]]: 82690)</small>
+|larguraporcentagem = 100
+
+|Jan_REC_Max_°C =  40  |Jan_REC_Min_°C = 20.4
+|Fev_REC_Max_°C = 40.4 |Fev_REC_Min_°C = 20.2
+|Mar_REC_Max_°C = 39.8 |Mar_REC_Min_°C = 17.6
+|Abr_REC_Max_°C = 39.2 |Abr_REC_Min_°C = 16.8
+|Mai_REC_Max_°C = 38.9 |Mai_REC_Min_°C =  17
+|Jun_REC_Max_°C = 37.8 |Jun_REC_Min_°C =  18
+|Jul_REC_Max_°C = 37.6 |Jul_REC_Min_°C = 17.4
+|Ago_REC_Max_°C = 39.8 |Ago_REC_Min_°C = 17.6
+|Set_REC_Max_°C = 40.4 |Set_REC_Min_°C = 18.2
+|Out_REC_Max_°C = 40.9 |Out_REC_Min_°C = 20.2
+|Nov_REC_Max_°C =  40.1  |Nov_REC_Min_°C = 20.4
+|Dez_REC_Max_°C = 40.3 |Dez_REC_Min_°C = 20.2
+|Max_Rec_Ano_°C = 40.9 |Min_Rec_Ano_°C = 16.8
+
+|Jan_Max_°C =  36  |Jan_Min_°C = 24.1
+|Fev_Max_°C = 35.3 |Fev_Min_°C = 23.8
+|Mar_Max_°C = 34.6 |Mar_Min_°C = 23.5
+|Abr_Max_°C = 33.9 |Abr_Min_°C = 23.1
+|Mai_Max_°C = 33.4 |Mai_Min_°C = 22.6
+|Jun_Max_°C = 32.5 |Jun_Min_°C = 21.9
+|Jul_Max_°C =  33  |Jul_Min_°C = 21.5
+|Ago_Max_°C = 33.9 |Ago_Min_°C = 21.5
+|Set_Max_°C = 35.5 |Set_Min_°C = 22.2
+|Out_Max_°C = 36.8 |Out_Min_°C = 23.3
+|Nov_Max_°C = 37.1 |Nov_Min_°C = 23.8
+|Dez_Max_°C = 36.9 |Dez_Min_°C = 24.2
+|Max_Ano_°C = 34.9 |Min_Ano_°C =  23
+
+|Jan_Med_comp_°C = 29.3
+|Fev_Med_comp_°C = 28.7
+|Mar_Med_comp_°C = 28.2
+|Abr_Med_comp_°C = 27.7
+|Mai_Med_comp_°C = 27.4
+|Jun_Med_comp_°C = 26.7
+|Jul_Med_comp_°C = 26.8
+|Ago_Med_comp_°C = 27.3
+|Set_Med_comp_°C = 28.3
+|Out_Med_comp_°C = 29.3
+|Nov_Med_comp_°C = 29.8
+|Dez_Med_comp_°C = 29.8
+|Med_comp_Ano_°C = 28.3
+
+|Jan_Precip_mm = 96.9
+|Fev_Precip_mm = 91.3
+|Mar_Precip_mm = 144.6
+|Abr_Precip_mm = 147.5
+|Mai_Precip_mm = 73.3
+|Jun_Precip_mm = 23.6
+|Jul_Precip_mm = 11.6
+|Ago_Precip_mm = 8.1
+|Set_Precip_mm = 0.7
+|Out_Precip_mm = 9.2
+|Nov_Precip_mm = 2.7
+|Dez_Precip_mm = 20
+|Ano_Precip_mm = 629.5
+
+|Precip_Min  =  ≥ 1 mm
+|Jan_dprecip = 7
+|Fev_dprecip = 7
+|Mar_dprecip = 10
+|Abr_dprecip = 11
+|Mai_dprecip = 8
+|Jun_dprecip = 2
+|Jul_dprecip = 3
+|Ago_dprecip = 1
+|Set_dprecip = 0
+|Out_dprecip = 1
+|Nov_dprecip = 0
+|Dez_dprecip = 2
+|Ano_dprecip = 52
+
+|Jan_hsol = 228.7
+|Fev_hsol = 207.1
+|Mar_hsol =  228
+|Abr_hsol = 213.6
+|Mai_hsol = 204.5
+|Jun_hsol =  167
+|Jul_hsol = 194.2
+|Ago_hsol = 242.2
+|Set_hsol =  283
+|Out_hsol = 294.2
+|Nov_hsol = 282.1
+|Dez_hsol = 248.5
+|Ano_hsol = 2793.1
+
+|Jan_umid_comp =  62
+|Fev_umid_comp = 66.8
+|Mar_umid_comp = 72.3
+|Abr_umid_comp = 74.8
+|Mai_umid_comp = 71.5
+|Jun_umid_comp =  68
+|Jul_umid_comp = 61.9
+|Ago_umid_comp = 56.2
+|Set_umid_comp = 52.6
+|Out_umid_comp = 53.1
+|Nov_umid_comp = 52.3
+|Dez_umid_comp = 55.3
+|Ano_umid_comp = 62.2
+
+|fonte =  [[Instituto Nacional de Meteorologia|INMET]] (normal climatológica de 1981-2010;<ref name="NCB_1981-2010">{{citar web|URL=http://www.inmet.gov.br/portal/index.php?r=clima/normaisclimatologicas|título=NORMAIS CLIMATOLÓGICAS DO BRASIL|autor=INMET|acessodata=24-03-2018}}</ref> recordes de temperatura: 14/03/1995-presente)<ref name="bdmep.inmet.gov.br"/>
+}}
+
+== Demografia ==
+[[Imagem:Centro Caicó.jpg|thumb|direita|Verticalização presente na rua Felipe Guerra no Centro da cidade]]
+
+A população do município, de acordo com o [[Censo demográfico|Censo]] de 2022 promovido pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) era de {{fmtn|61146}} habitantes, sendo o [[Lista de municípios do Rio Grande do Norte por população|oitavo mais populoso do estado]] e apresentando uma [[densidade populacional]] de 49,77 habitantes por km².<ref name="IBGE-IUB">{{citar web|url=https://censo2022.ibge.gov.br/panorama/index.html?localidade=2402006&tema=1|título=Censo 2022 - panorama|data=2022|acessodata=18 de agosto de 2025|publicado=Ibge.gov.br|autor=Instituto  Brasileiro de Geografia e Estatística (IBGE)}}</ref> Segundo o [[Censo demográfico|censo]] de 2022, 52,42% da população eram mulheres ({{fmtn|32052}} habitantes), 47,58% ({{fmtn|29094}} habitantes) homens. Sendo que 93,61% ({{fmtn|57238}} habitantes) vivia na [[zona urbana]] e 6,39% ({{fmtn|3908}} habitantes) na [[zona rural]].<ref name="IBGE-IUB"/>
+
+O [[Índice de Desenvolvimento Humano]] Municipal (IDH-M) de Caicó é considerado "alto" pelo [[Programa das Nações Unidas para o Desenvolvimento]] (PNUD). Seu valor é de 0,710, sendo o quarto maior do estado do [[Rio Grande do Norte]]. Considerando o índice educação (IDHM-E) o valor é de 0,619 (médio). O índice da longevidade (IDHM-L) é de 0,824 (muito alto) e o de renda (IDHM-R) é de 0,703 (alto). O município apresenta a maior expectativa de vida ao nascer do estado, com média de 74,1 anos.<ref>{{citar web|url=http://www.frigoletto.com.br/GeoEcon/idhrn.htm|publicado=Frigoletto.com.br|título=Índice de Desenvolvimento Humano Municipal (IDH-M) 2000|autor=|data=2000|acessodata=8 de maio de 2011}}</ref> Os índices sociais de Caicó são considerados melhores em relação a outros [[município]]s do [[Nordeste]], devido à histórica liderança política determinante para a melhoria da infraestrutura social.<ref>{{citar web|url=http://ainfo.cnptia.embrapa.br/digital/bitstream/item/25730/1/parte4-2caaDesenvolvimentoregionalepressoesantropicasnobiomacaatinga.pdf|publicado=Ainfo.cnptia.embrapa.br|formato=PDF|título=Desenvolvimento regional e pressões antrópicas no bioma Caatinga|autor=Yoni Sampaio, José Edmilson Mazza Batista|data=|acessodata=1 de março de 2012}}</ref>
+
+No período de 2003 a 2008, a região de Caicó cresceu apenas 3,77% devido a sua baixa [[taxa de fecundidade]] geral, fazendo com que a região tivesse a menor taxa de crescimento natural da população do estado do [[Rio Grande do Norte]]. No mesmo período a região de Caicó apresentou o maior [[índice de envelhecimento]] nos respectivos anos; desse modo, tem-se no ano de 2008, aproximadamente uma média de 35 pessoas acima de 65 anos para cada criança entre 0 e 14 anos.<ref>{{citar web|URL=http://www.saude.rn.gov.br/contentproducao/aplicacao/sesap/instituicao/enviados/plano_estadual_saude_2010-2011_29jul2010.pdf|título=Plano Estadual de Saúde do RN, gestão 2008/2011, com vigência 2010/2011|autor=Secretaria de Estado da Saúde Pública do RN|data=2010|publicado=2010|acessodata=1 de março de 2013}}</ref> Entretanto, em 2013 a cidade voltou a registrar uma alta taxa de crescimento populacional com um acréscimo de 4,89% motivada pela chegada de novos investimentos.
+
+=== Religião e composição étnica ===
+{{Imagem dupla|left|Complexoilhacaico.jpg|220|Santanaimagem.JPG|230|[[Ilha de Santana (Rio Grande do Norte)|Ilha de Santana]], praça e espaço de eventos; ao fundo, no topo da rocha, a Capela de São Sebastião|Monumento em homenagem a [[Santa Ana|Sant'Ana]], padroeira de Caicó}}
+A maioria da população se declara [[Igreja Católica Apostólica Romana|Católica Apostólica Romana]], contabilizando 90,48% dos habitantes. Outros 2,72% da população é [[evangélica]] de origem [[pentecostal]], que seguem a [[Assembleias de Deus (Brasil)|Igreja Assembleia de Deus]] (1,44%), [[Igreja Universal do Reino de Deus]] (0,44%), [[Congregação Cristã no Brasil|Igreja Congregação Cristã do Brasil]] (0,37%), [[Igreja Deus é Amor]] (0,22%), entre outras. Seguida dos [[evangélico]]s de missão - 1,19%, que se dividem em [[Presbiteriano]]s (0,59%), [[Igreja Batista|Batistas]] (0,56%) e [[Adventista]]s (0,04%). Entre as minorias temos a [[Igreja de Jesus Cristo dos Santos dos Últimos Dias]] (0,29%), [[Testemunhas de Jeová]] (0,27%), [[Igreja Messiânica Mundial]] (0,26%), [[Budismo]] (0,19%), [[Candomblé]] (0,02%) e [[Islamismo]] (0,02%). Ainda 3,96% dos caicoenses declaram não seguir nenhuma religião.<ref>{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/protabl.asp?c=2094&z=cd&o=11&i=P|publicado=Sidra.ibge.gov.br|título=Tabela 2094 - População residente por religião no ano 2000|autor=IBGE|data=|acessodata=10 de maio de 2011}}</ref>
+
+{{bar box
+|title=<div class="center">Composição étnica em Caicó (2022)<ref>{{citar web|URL=https://censo2022.ibge.gov.br/panorama/index.html?localidade=2402006&tema=1|autor=IBGE|data=2022|acessodata=18-08-2025}}=</ref></div>
+|titlebar=#ddd
+|left1='''Cor/raça'''
+|right1='''%'''
+|float=right
+|bars =
+{{bar percent|[[Branca]]|darkblue|56.91}}
+{{bar percent|[[Parda]]|orange|35.22}}
+{{bar percent|[[Negra]]|yellow|7.71}}
+{{bar percent|[[Indígena]]|black|0.09}}
+{{bar percent|[[Amarela]]|lightblue|0.07}}
+}}
+
+Os fortes traços Europeus da população caicoense fez com que os habitantes recebessem a alcunha de [[galegos]], que era utilizado para designar as pessoas mais claras que vieram majoritariamente de norte de [[Portugal]] e da fronteira [[Galiza|galega]] na [[Espanha]], principalmente da região do vale do [[Minho (província)|Minho]], seguida das regiões de [[Açores]], [[Estremadura]], [[Douro (província)|Douro]] e [[Trás-os-Montes e Alto Douro|Trás-os-Montes,]] onde eram chamados de patrões-marinheiros, em referência a viagem marítima de Portugal ao [[Brasil]]; mas Caicó ainda foi povoada por migrantes de [[Pernambuco]] ([[Goiana]] e [[Igarassu]]), [[Paraíba]] e [[italianos]].<ref>[https://periodicos.ufrn.br/mneme/article/viewFile/169/159]</ref><ref>{{Citar web |url=http://www.tribunadonorte.com.br/noticia/o-ciclo-do-algodão-no-serido-i/150373|publicado=Tribunadonorte.com.br|título=O ciclo do algodão no Seridó - I|autor=Tomislav R. Femenick|data=6 de junho de 2010|acessodata=31 de dezembro de 2011|arquivourl=http://www.webcitation.org/64LLn31me|arquivodata=31 de dezembro de 2011}}</ref> Acredita-se também que parte da população branca possa ter ascendência [[Sefarditas|Sefardita]] oriunda da [[Península Ibérica]], dos chamados [[Cristão-novo|Cristãos-Novos]], pois foram forçados à conversão ao [[catolicismo]], sendo esta uma crença que carece de evidências concretas e que ainda é motivo de estudos.<ref>{{Citar web |url=http://www.etur.com.br/conteudocompleto.asp?idconteudo=7529|publicado=Etur.com.br|autor= |título=Os Judeus Marranos do Rio Grande do Norte|acessodata= |data=18 de julho de 2005|arquivourl=http://www.webcitation.org/64LLrxnyF|arquivodata=31 de dezembro de 2011}}</ref>
+
+A presença [[Holanda (topônimo)|neerlandesa]] no município se limitou a expedições científicas em busca de minérios, onde não deixaram descendentes. A presença de [[negros]] [[africano]]s, apesar de limitada, é muito forte culturalmente na região, onde fundaram a [[Irmandade de Nossa Senhora do Rosário dos Pretos|Irmandade dos Negros do Rosário]]. Em Caicó, os [[escravo]]s foram libertados antes mesmo da [[lei Áurea]].<ref>{{Citar web |url=http://www.cerescaico.ufrn.br/mneme/anais/st_trab_pdf/pdf_st3/claudia_borges_st3.pdf|publicado=Cerescaico.ufrn.br|autor= |formato=PDF |título=Artigo sobre a Irmandade dos Negros do Rosário|data= |acessodata= }}</ref> Os indígenas nativos da região eram originários das famílias [[Tarairiú]] ([[Janduí]]) e [[Cariris|Cariri]], onde se dividiam em cinco grupos: [[Canindés]], [[Jenipapo]]s, [[Sucurus]], Cariris e [[Pegas]].<ref>{{Citar web |url=http://www.cerescaico.ufrn.br/mneme/pdf/mneme01/001-p.pdf|publicado=Cerescaico.ufrn.br|autor= |formato=PDF |título=Artigo História e Espaço seridoense entre os séculos XVII e XIX|data= |acessodata= }}</ref> Atualmente, não existem mais [[Indígenas|índios]] puros na região, pois foram exterminados, miscigenados e/ou assimilados durante a ocupação branca.
+
+== Política e administração ==
+{{Vertambém|Lista de prefeitos de Caicó}}
+
+A administração municipal se dá através de dois poderes: o [[Poder executivo|executivo]] e o [[Poder legislativo|legislativo]]. O poder executivo é representado pelo [[Prefeitura (Brasil)|prefeito]], auxiliado pelo seu gabinete de secretários, em conformidade ao modelo explícito na [[Constituição do Brasil|constituição federal]]. Já o legislativo é constituído pela [[Câmara Municipal (Brasil)|câmara]], composta por quinze vereadores eleitos. Cabe à casa elaborar e votar leis fundamentais à administração e ao executivo, especialmente o [[orçamento]] municipal (conhecido como [[Lei de Diretrizes Orçamentárias]]).<ref name="Lei-orgânica"/>
+
+Em complementação ao processo legislativo e ao trabalho das secretarias, existem também conselhos municipais, cada um deles versando sobre temas diferentes. Caicó se rege pela sua lei orgânica, promulgada em 4 de abril de 1990,<ref name="Lei-orgânica">{{citar web|URL=http://caico.rn.gov.br/post.php?codigo=633|título=Lei Orgânica de Caicó|acessodata=1º de janeiro de 2017}}</ref> e abriga uma comarca do poder judiciário estadual, de terceira entrância, cujos termos são os municípios de [[São Fernando (Rio Grande do Norte)|São Fernando]] e [[Timbaúba dos Batistas]].<ref>{{citar web|url=http://intrasaj.tjrn.jus.br/index.php/category-table/76-mapa-do-rn-dividido-por-comarcas-|título=Mapa do RN Dividido por Comarcas|autor=Wendell de Oliveira Costa|data=10 de maio de 2010|publicado=Tribunal de Justiça do Rio Grande do Norte|acessodata=30 de outubro de 2011|arquivourl=http://www.webcitation.org/62p5IskKA|arquivodata=30 de outubro de 2011}}</ref>
+De acordo com o [[Tribunal Superior Eleitoral]], Caicó pertence à 25ª zona eleitoral do Rio Grande do Norte e possuía, em novembro de 2016, {{fmtn|41289}} eleitores, o que representa 1,721% do eleitorado potiguar.<ref>{{citar web|url=http://www.tse.jus.br/eleitor/estatisticas-de-eleitorado/consulta-por-municipio-zona |título=Estatísticas do eleitorado – Consulta por município/zona|publicado=Tribunal Superior Eleitoral|acessodata=30 de outubro de 2011}}</ref>
+
+== Subdivisões ==
+{{Vertambém|Lista de bairros e distritos de Caicó}}
+[[Imagem:Zcentralcaico.JPG|thumb|Centro de Caicó, bairro mais populoso da cidade]]
+Atualmente, o município de Caicó é dividido em três distritos (Laginhas, Palma e Perímetro Irrigado Itans-Sabugi), sendo que cada uma é administrada por um subprefeito, nomeado pelo prefeito municipal. Além dos distritos, o município também é formado por aproximadamente trinta [[bairro]]s: Centro, Paraíba, Acampamento, Penedo, Nova Descoberta, [[Castelo Branco (Caicó)|Castelo Branco]], Canuto e Filhos, Jardim Satélite - I.P.E., Vila Altiva, Bento XVI, Loteamento Graciosa, Maynard, Itans, Loteamento Santa Clara, Boa Passagem, Vila do Príncipe, Recreio, Darcy Fonseca, Alto da Boa Vista, Samanaú, Salviano Santos, Nova Caicó, Loteamento Serrote Branco, Barra Nova, Barra Nova II, João XXIII, Paulo VI, João Paulo II, Walfredo Gurgel, Adjuto Dias, Frei Damião, Novo Horizonte e Soledade. localizados em cinco zonas distintas (central, norte, sul, leste e oeste).<ref>{{citar web|url=http://www.prefeituradecaico.com.br/mapa.php|autor= |título=Mapa Turísticos|publicado=Prefeitura Municipal de Caicó (RN)|data= |acessodata=15 de novembro de 2011|arquivourl=http://www.webcitation.org/63DwriMoO|arquivodata=15 de novembro de 2011}}</ref>
+
+== Economia ==
+Caicó apresenta uma [[economia]] diversificada com base principal na prestação de serviços e com crescimento de cerca de 250% entre 2000 e 2010. A cidade hospeda 2.758 unidades empresariais,<ref>{{citar web |url=http://tribunadonorte.com.br/noticia/regiao-oeste-e-territorio-atrativo/272164|publicado=tribunadonorte.com.br |autor=Tribuna do Norte|obra= |título= |data= |acessodata= }}</ref> sendo um centro sub-regional de categoria A, a terceira mais elevada na [[hierarquia urbana do Brasil]].
+
+=== Setor primário ===
+[[Imagem:CottonPlant.JPG|thumb|esquerda|O [[algodão]] foi a mais importante [[atividade econômica]] do município]]
+
+Caicó teve no setor primário a base de sua economia até o início dos anos 70. Atualmente, apenas 8,5% da população vive no meio rural. Em 2010 o setor  da agropecuária movimentou cerca de R$ 26.7 milhões, correspondendo a 4,8% do PIB da cidade no período.<ref name="ibge.gov.br">{{citar web |url=http://www.ibge.gov.br/cidadesat/painel/painel.php?codmun=240200 |publicado=Ibge.com.br |autor=IBGE |obra= |título= |data= |acessodata= }}</ref> O meio rural sobrevive da agricultura familiar e da produção de [[leite]], [[carne-de-sol]] e do [[queijo]]s de [[Queijo manteiga|manteiga]] e de [[Queijo coalho|coalho]]. Caicó possui o maior rebanho de [[Bovinos|bovino]]s e a maior produção leiteira do [[Rio Grande do Norte]],<ref>{{citar web |url=http://www.idema.rn.gov.br/anuario.asp |publicado=Idema.rn.gov.br |autor= |obra= |título= |data= |acessodata= }}</ref> fornecendo [[matéria-prima]] para a produção mensal de mais de 72 [[tonelada]]s de [[queijo manteiga|queijo de manteiga]], 27 toneladas de [[queijo coalho]] e mais de 6 mil [[litro]]s de [[manteiga-de-garrafa]] em suas 93 unidades fabris. Sua principal unidade produtora de leite pasteurizado fornece 265 mil litros por mês.<ref name="multipla">{{citar web |url=http://mineiropt.com.br/media/uploads/publications/arq48493a272c5fc.pdf |publicado=Mineiropt.com.br |autor= |formato=PDF |título=Diagnóstico do uso da lenha nas atividades agroindustriais do território do Seridó / RN|data= |acessodata= }}</ref>
+
+A produção de [[cachaça]]s já se destaca a nível nacional, tendo sua qualidade atestada pela [[imprensa]] especializada, a cachaça (Samanaú envelhecida) produzida em Caicó, é considerada a melhor do mundo em avaliação de revista dos [[Estados Unidos]]. No ano de 2000 o rebanho bovino da cidade era de 30508 cabeças, seguido pelo número de 36442 aves, 2094 caprinos e 11898 ovinos. A agricultura comercial destaca-se com o plantio de [[feijão]], [[milho]], [[girassol]] e [[arroz]], mas não exercendo grande representatividade na economia municipal.<ref>{{citar web |url=http://www6.cptec.inpe.br/cgi-bin/proclima/consulta.cgi |publicado=CPTEC |autor= |obra= |título= |data= |acessodata= }}</ref>
+
+=== Setor Secundário ===
+[[Imagem:Industriascaico.JPG|thumb|Indústrias na Zona Oeste da cidade]]
+O setor industrial movimentou no ano de 2010 cerca de R$ 40.4 milhões, correspondendo a 7,4% do PIB da cidade. Em 1980, Caicó contava com 100 unidades industriais; em 1991, passou a contabilizar 141 estabelecimentos, o que representou um crescimento relativo de 41%, e, no ano de 2009 foram notificados 381 estabelecimentos, obtendo uma variação percentual no crescimento, entre 1991 e 2009, da ordem de 170%.<ref name="ibge.gov.br"/> A cidade destaca-se ainda por ser o maior polo de produção de [[boné]]s do [[Nordeste do Brasil]].<ref>{{citar web |url=http://pesquisa.dnonline.com.br/document/?view=26357 |publicado=Pesquisa.dnonline.com.br |autor= |obra= |título= |data= |acessodata= }}</ref> Tradicionalmente a cidade se destaca pela produção de [[Bordado seridoense|bordados artesanais]] típicos que são valorizados no mercado interno e externo.
+
+A [[indústria]] [[têxtil]] vem se consolidando como a vocação da cidade e vem crescendo paulatinamente, principalmente o ramo de confecção de camisetas e ''underwear''. A cidade ainda possui várias indústrias de beneficiamento de alimentos, como de [[laticínios]] (leite pasteurizado, [[queijo]]s e [[iogurte]]); [[café]], [[arroz]] e [[milho]] (torrefação, moagem e embalamento), [[sorvete]]s e panificação.  No setor secundário ainda se destaca a produção de produtos à base de [[argila]], como tijolos, lajotas e telhas, Caicó produz em média 1200 milheiros mensais.<ref name="multipla"/> Quanto à produção de [[cal]], a cidade fornece mais de 245 toneladas por mês.<ref name="multipla"/> A principal matriz energética do município é o uso da lenha extraída de espécies da [[caatinga]], isso se deve a inexistência de um gasoduto que reduzisse o impacto ambiental.<ref name="multipla"/><ref>{{citar web |url=http://www.google.com.br/url?sa=t&source=web&cd=4&ved=0CCoQFjAD&url=http%3A%2F%2Fwww.camara.gov.br%2Fsileg%2Fintegras%2F123753.doc&ei=2T8_TZ2CHovrgQff5djQAg&usg=AFQjCNF2_INl_NRtRwDTbRcPe4N8S0nP5w |publicado=Camara.gov.br |autor= |título=Autoridades avaliam lançamento do Projeto do Gasoduto Assu-Seridó|data= |acessodata= }}</ref>
+
+[[Imagem:Terceirosetorcaico.jpg|thumb|Estabelecimento do terceiro setor na Zona Norte. O aumento da renda e a expansão da cidade têm proporcionado o surgimento de grandes estabelecimentos comerciais]]
+
+=== Setor terciário ===
+O setor de serviços movimentou em 2010 o equivalente a R$ 422.2 milhões, correspondendo a 87,8% de tudo o que é produzido no município. A cidade polariza os serviços da região do [[Seridó]] [[Potiguar]] e [[Paraibano]], com serviços médicos, jurídicos, escolares e bancários; funcionalismo público; a presença das [[Forças Armadas]] - (1º Batalhão de Engenharia de Construção - Batalhão Seridó); além de seu intenso e diversificado comércio realizado com as cidades da região. Outro segmento que cresce no município é o [[turismo]], onde observa-se a cada dia aumentar o número de restaurantes, pousadas, hotéis e a consequente especulação imobiliária.
+
+== Infraestrutura ==
+
+=== Educação ===
+[[Imagem:IFRN Caico.JPG|thumb|O [[Instituto Federal do Rio Grande do Norte]] oferece graduação em [[Física]] e cursos técnicos de [[Vestuário]], [[Eletrotécnica]], [[Indústria têxtil|Têxtil]] e [[Informática]].]]
+[[Imagem:Escola Multicampi de Ciências Médicas de Caicó-RN (2).jpg|thumb|Escola Multicampi de Ciências Médicas, que oferece o curso de [[medicina]].]]
+
+De acordo com os dados do Censo Escolar 2020 do [[INEP]], a cidade conta com 66 estabelecimentos escolares, sendo 31 de administração municipal, 15 escolas sob administração estadual, um estabelecimento sob esfera federal e 19 escolas privadas. Com um total de 12973 alunos matriculados, desses 10 escolas dispõem de ensino médio.<ref>{{citar web|URL=https://inepdata.inep.gov.br/analytics/saw.dll?Dashboard&PortalPath=%2Fshared%2FCenso%20da%20Educa%C3%A7%C3%A3o%20B%C3%A1sica%2F_portal%2FMatr%C3%ADcula%20Inicial&Page=p%C3%A1gina%201|título=Mapa da Coleta - Censo Escolar 2020 - Matrícula Inicial|autor=INEPdata|data=|publicado=2020|acessodata=14 de agosto de 2020}}</ref>
+
+Caicó conta com importantes universidades públicas e privadas:
+
+Temos a [[Educandário Santa Teresinha (Caicó)|Faculdade Católica Santa Teresinha]] oferece cursos de [[Administração]], [[Ciências Contábeis]], [[Serviço social|Serviço Social]].<ref>[http://fcproneves.edu.br/site/index.php/a-fcst/estrutura/estrutura-fisica http://fcproneves.edu.br/site/index.php/a-fcst/estrutura/estrutura-fisica]</ref> A cidade conta com um Polo da [[Universidade Potiguar]] que oferece cursos de graduação ofertados na modalidade semipresencial em Administração, Ciências Contábeis, Enfermagem, Educação Física, Engenharia Civil, Marketing, Nutrição, Pedagogia e Serviço Social.<ref>[https://unp.br/noticias/polo-caico-lanca-cursos-de-gestao-e-educacao-e-oferece-aulas-aos-sabados/ Polo Caicó lança cursos de Gestão e Educação e oferece aulas aos sábados]</ref>
+
+Além disso, Caicó conta também com o [[Centro Regional de Ensino Superior do Seridó]] - [[Universidade Federal do Rio Grande do Norte]], oferecendo cursos presenciais de [[Ciências Contábeis|Contabilidade]], [[Direito]], [[Geografia]], [[História]], [[Pedagogia]], [[Matemática]], [[Sistemas de Informação]] e [[Medicina]] em uma estrutura multicampi.<ref>[http://www.cerescaico.ufrn.br/ceres/ http://www.cerescaico.ufrn.br/ceres/]<br></ref>
+
+A [[Universidade do Estado do Rio Grande do Norte]] (Campus Caicó) dispõe dos cursos de [[Enfermagem]], [[Filosofia]] e [[Odontologia]].<ref>[http://www.uern.br/campus/servico.asp?item=caico http://www.uern.br/campus/servico.asp?item=caico]<br></ref>
+
+O [[Instituto Federal do Rio Grande do Norte]] oferece graduações em [[Física]] e [[Design de Moda|Tecnologia em Design de Moda]], e ainda oferta cursos técnicos na área de [[Eletrotécnica]], [[Informática]], [[Têxtil]] e [[Vestuário]],<ref>{{citar web|URL=http://portal.ifrn.edu.br/campus/caico/ensino/cursos-1|título=Cursos|autor=IFRN|data=05-08-2018|publicado=2018|acessodata=05-08-2018}}</ref> ainda atendendo a três mil alunos com cursos de qualificação e requalificação.<ref>[http://portal.ifrn.edu.br/campus/caico/institucional/infraestrutura.html http://portal.ifrn.edu.br/campus/caico/institucional/infraestrutura.html]<br></ref>
+
+O município dispõe com instituições de ensino técnico como [[SENAC]], [[SENAI]], [[SEBRAE]], [[SESI]], além de cursos privados oferecidos por franquias e escolas de idiomas. Caicó dispõe ainda da Biblioteca Municipal Olegário Vale sediada em um prédio histórico da cidade, que detém um acervo de aproximadamente 8 mil livros. A mesma teve sua estrutura renovada, com rampas de acessibilidade, laboratórios de informática, videoteca, salas de estudo e pesquisa, sala infanto-juvenil e hemeroteca.
+
+=== Saúde ===
+[[Imagem:Hospitaloncologiacaico.JPG|thumb|esquerda|Vista parcial do Hospital de Oncologia do Seridó]]
+A [[cidade]] conta 208 leitos hospitalares,<ref>{{citar web|url=http://cnes.datasus.gov.br/Lista_Tot_Es_Municipio.aspEstado=24&NomeEstado=RIO%20GRANDE%20DO%20NORTE|publicado=cnes.datasus.gov.br|formato=|título=Saúde no RN|autor=Maria Suelly da Silva Medeiros|data=2005|acessodata=17 de fevereiro de 2010}}</ref> sendo 13 unidades do [[Programa Saúde da Família]], 8 unidades básicas, 4 postos de saúde na [[zona rural]], centro clínico, Hospital de Oncologia do Seridó - Liga Norte-rio-grandense contra o Câncer, [[Serviço de Atendimento Móvel de Urgência]] - SAMU, policlínica CRIS-Centro Regional Integrado de Saúde, CEREST-Centro Regional de Referência em Saúde do Trabalhador, Centro de Reabilitação Infantil e Adulto, [[laboratório]] municipal e laboratório regional, Divisão de [[Vigilância Sanitária]], Centro de Controle de Zoonoses, Centro de Apoio Psicossocial-CAPS III (Hospital Psiquiátrico Milton Marinho), Farmácia UNICAT, Hemocentro, Pronto socorro [[Unimed]] 24 horas, Projeto "Saúde na Praça"; além das várias clínicas, laboratórios e consultórios privados.<ref>{{citar web|url=http://cnes.datasus.gov.br/Lista_Es_Municipio.asp?VEstado=24&VCodMunicipio=240200&NomeEstado=RIO%20GRANDE%20DO%20NORTE|publicado=Cnes.datasus.gov.br|título=Estabelecimento de Saúde do Município: CAICO|autor=DATASUS|data=|acessodata=1 de março de 2012}}</ref>
+
+=== Transportes ===
+{{Imagem múltipla
+| align             = right
+| direction         = vertical
+| header            = 
+| width             = 225
+| image1            = Caicorodoviariomapa.png
+| alt1              = 
+| caption1          = Mapa rodoviário com foco na zona urbana do município.
+| image2            = Caicocontorno.jpg
+| alt2              = 
+| caption2          = Contorno rodoviário, construído para aliviar o tráfego de veículos pesados na zona urbana.
+}}
+
+A cidade de Caicó é um dos mais importantes entrepostos rodoviários do Nordeste setentrional graças à sua posição privilegiada entre os estados do [[Ceará]], [[Rio Grande do Norte]] e [[Paraíba]]. Caicó é cortada no sentido [[leste]]-[[oeste]] pela rodovia federal [[BR-427]] ligando a cidade com os municípios de [[Jardim do Seridó]] e [[Serra Negra do Norte]]. A partir dela deriva conexões através de rodovias estaduais, que a interliga com outros municípios, como [[São Fernando]] através da RN 83; [[Timbaúba dos Batistas]] através da RN 84; A RN 288 interliga aos municípios de [[São José do Seridó]], a oeste, e [[Jardim de Piranhas]], à leste. Ainda possui a RN 118 que corta a cidade no sentido [[norte]]-[[sul]] interligando à [[São João do Sabugi]] e [[Jucurutu]].<ref>{{citar web|url=http://www.portal.rn.gov.br/content/aplicacao/der/servicos/gerados/mapa.pdf|publicado=Portal.rn.gov.br|formato=PDF|título=Mapa Rodoviário 2010 Rio Grande do Norte|autor=DER RN|data=2010|acessodata=1 de fevereiro de 2012}}</ref> Estas vias principais formam o complexo rodoviário que torna o acesso à Caicó muito fácil.
+
+Em 2013, finalizou-se a construção do contorno rodoviário de Caicó, conectando as rodovias estaduais RN-118 e RN-288 à BR-427 por fora do perímetro urbano do município, sendo batizada de "estrada do ferro",<ref>{{citar web|url=http://www.der.rn.gov.br/contentproducao/aplicacao/der/arquivos/pdf/constr2010.pdf|publicado=Der.rn.gov.br|formato=PDF|título=PROGRAMA DE CONSTRUÇÃO DE RODOVIAS|autor=DER RN|data=|acessodata=1 de fevereiro de 2012}}</ref> devido a sua função de escoamento da produção de [[minério de ferro]] das minas de [[Jucurutu]]. O transporte rodoviário coletivo intermunicipal é realizado por várias empresas, onde possuem o Terminal Rodoviário Manoel de Neném como ponto de embarque e desembarque. Para transporte aeroviário, o município apresenta o [[Aeroporto de Caicó|Aeródromo Dr. Rui Mariz]] apenas para voos fretados. Em fevereiro de 2014, o ministro Moreira Franco anunciou a construção do Aeroporto Regional de Caicó, com potencial estimado em 18 mil passageiros por ano até 2025.<ref>[http://tribunadonorte.com.br/noticia/ministro-anuncia-construcao-de-novos-aeroportos-em-caico-e-mossoro/274142]</ref>
+
+O transporte cicloviário ainda é tímido, havendo a disponibilidade de 2,1&nbsp;km de ciclovias na cidade. É possível encontrar ciclovias na Ilha de Sant'Ana e às margens do [[Açude Recreio]]. Apesar da fraca presença cicloviária, com um índice de 1&nbsp;km de ciclovias para cada 29 mil habitantes, Caicó é a cidade potiguar mais bem avaliada no quesito.<ref>[http://g1.globo.com/brasil/noticia/2014/03/ciclovias-representam-apenas-1-da-malha-viaria-das-capitais-no-pais.html]</ref>
+
+=== Parques e espaços públicos ===
+[[Imagem:Pracacaico.JPG|thumb|esquerda|A Praça da Liberdade concentra serviços de alimentação e música à noite]][[Imagem:Recreioreservoircaico.JPG|thumb|[[Açude Recreio]], considerado o segundo mais antigo do [[Brasil]] será uma das UCs do município.]]
+A [[Ilha de Santana (Rio Grande do Norte)|Ilha de Sant'ana]] trata-se de um complexo turístico rodeado pelo [[Rio Seridó]] dispondo de ginásio, praça, anfiteatro, área de [[Caatinga]] conservada, ciclovias, pontos geológicos de importância como a Pedra da Baleia, espaço para eventos, dentre outros. Atualmente está em curso o projeto de transformação das margens do [[Açude Recreio|Açude do Recreio]] em unidade de conservação.<ref>[http://www.robsonpiresxerife.com/caico/geografos-escolhem-areas-para-criacao-da-unidade-de-conservacao-em-caico/]<br /></ref> Ainda no início de 2014 foram iniciados estudos para a criação de mais três unidades de conservação (UC) no município através da Secretaria do Meio Ambiente, UFRN e Idema. As áreas escolhidas foram a Serra de São Bernardo, o açude Itans e um sítio privado.<ref>[http://marcosdantas.com/blog/geografos-estudam-criacao-de-unidade-de-conservacao-em-caico]<br /></ref>
+
+=== Segurança Pública ===
+A cidade é guarnecida pelo 6º Batalhão de [[Polícia Militar]], chamado Batalhão [[Dinarte Mariz]], possui contingente de 554 policiais militares divididos em 3 companhias, abrangendo 15 municípios; nas modalidades de policiamento de guarda, policiamento a pé, policiamento motorizado, policiamento montado, policiamento especial - Grupo Tático de Combate e policiamento ambiental. A cidade ainda conta com Delegacia de [[Polícia Civil do Brasil|Polícia Civil]], Delegacia de Atendimento ao Menor e Delegacia de Atendimento a Mulher, além do [[Instituto Técnico-Científico de Polícia (ITEP) (RN)|Instituto Técnico-Científico da Polícia]] - ITEP.<ref>{{citar web|url=http://corregedoria.tjrn.jus.br/index.php?option=com_docman&task=doc_download&gid=483&Itemid=102|publicado=Corregedoria.tjrn.jus.br|título=Relatório de inspeção I|autor=tjrn |data=|acessodata=7 de outubro de 2011}}</ref> Para o cumprimento de mandados de reclusão existe a Casa de Albergue e a Penitenciária Estadual do Seridó. A cidade ainda é sede do 3º Subgrupamento de [[Bombeiros]], contando com 57 militares, abrangendo 26 municípios.<ref>{{citar web|url=http://www.cbm.rn.gov.br/contentproducao/aplicacao/sesed_cbm/estrutura/gerados/unidades.asp|publicado=Cbm.rn.gov.br|título=Unidades do CBMRN|autor=Corpo de Bombeiros Militar do Rio Grande do Norte|data=|acessodata=7 de outubro de 2011}}</ref>
+
+=== Abastecimento ===
+A cidade é abastecida por duas fontes independentes: o [[Açude Itans]] e a [[Barragem Passagem das Traíras]]. No entanto, devido ao [[clima]] adverso, baixo potencial dos aquíferos subterrâneos e topografia desfavorável, foi necessária a construção de uma garantia adicional, através do Sistema adutor Piranhas Caicó, que possui como fonte de água o [[Rio Piranhas-Açu|rio Piranhas]] na cidade de [[Jardim de Piranhas]].<ref>{{citar web|url=http://www.semarh.rn.gov.br/contentproducao/aplicacao/semarh/INFRAESTRUTURA/gerados/adutorapiranhascaico.asp|publicado=Semarh.rn.gov.br|título=SISTEMA ADUTOR PIRANHAS CAICÓ|autor=Secretaria de Estado de Meio Ambiente e Recursos Hídricos|data=|acessodata=7 de outubro de 2011}}</ref> O tratamento e distribuição da água é realizada pela [[Companhia de Águas e Esgotos do Rio Grande do Norte]] - CAERN.
+
+No início de 2017 foi adicionado ao sistema a Adutora Emergencial de Caicó, construída pelo Departamento Nacional de Obras Contra as Secas - DNOCS. A adutora foi implantada com objetivo de reforçar o abastecimento na região do Seridó. A adutora tem 63.134 metros de extensão. Ela foi construída como derivado da adutora Serra de Santana, que capta água na barragem Armando Ribeiro Gonçalves.<ref>{{Citar periódico|titulo=Caern inicia funcionamento em teste da Adutora Emergencial de Caicó|url=http://www.tribunadonorte.com.br/noticia/caern-inicia-funcionamento-em-teste-da-adutora-emergencial-de-caica/379370|jornal=Tribuna do Norte}}</ref>
+
+== Cultura ==
+=== Culinária ===
+[[Imagem:Queijo manteiga.jpg|miniaturadaimagem|Queijo de Manteiga típico do Seridó]]
+A culinária caicoense trata-se da [[gastronomia]] tipicamente praticada na região do [[Seridó]]. Conhecida principalmente pelo consumo de derivados [[bovinos]], como a [[carne-de-sol]] e os queijos típicos ([[queijo manteiga|manteiga]] e [[queijo coalho|coalho]]), é grande parte baseada na [[culinária]] oriunda dos colonizadores [[portugueses]], sofrendo influência dos costumes [[indígenas]] locais, [[judaicos]] e dos escravos [[africanos]]. Conhecida por chefs de cozinha por sua qualidade, exclusividade<ref>{{citar web|url=http://www.tamnasnuvens.com.br/revista/site/zoom.html?path=content/image/2009/junho/popup/&id=46&qtd=148|título=Muita pedra, pouca água e muita festa|autor=[[Ana Luiza Trajano]]|data=|publicado=|acessodata=}}</ref> e valor nutritivo.
+
+=== Arquitetura ===
+[[Imagem:Arquiteturacaico.JPG|miniaturadaimagem|direita|O velho e o novo convivem lado a lado no Centro da cidade. Na imagem, Igreja do Rosário, Antiga Prefeitura e edifício Santa Costa]]
+O patrimônio arquitetônico de Caicó vai do colonial ao moderno. A [[Arquitetura colonial do Brasil|arquitetura colonial]] presente no município foi construído após tal [[Período Colonial|período]], no entanto, houve preservação dessa linha, como pode ser vista na Casa de Pedra do português Gama, considerada primeira residência caicoense, e na antiga cadeia, atual Museu do Seridó. Com o enriquecimento da cidade, mediante a expansão da [[cotonicultura]], Caicó investiu em sua urbanização inspirada nas cidades maiores de [[Pernambuco]] e [[Paraíba]], de onde foram trazidos mestres para a elaboração de [[fachada]]s e [[beiral|beirais]]; Assim como sofreu inspiração europeia, trazida pelos arquitetos italianos "Irmãos Giffoni", que se estabeleceram na cidade durante a segunda metade do [[século XIX]].<ref>{{Citar web |url=http://www.semopcao.net/?pg=caico_turismo_casario|publicado=Semopcao.net|autor= |título= Artigo sobre o Antigo Casario Caicoense|data= |acessodata= |língua=}}</ref> Nessa época vigorou a [[Ecletismo|arquitetura eclética]], vista em residências espalhadas pelo centro da cidade e no Mercado Público Municipal. A partir da [[década de 1940|década de 40]] do século XX, iniciou-se a transição do ecletismo para o proto-modernismo e [[modernismo]], visto em algumas residências e no Centro Educacional José Augusto.<ref>{{Citar web |url=http://www.cerescaico.ufrn.br/mneme/pdf/mneme02/006-p.pdf|formato=PDF|título= Estudo Morfológico de Exemplares do Casario Caicoense|autor=Alani F. Cavalcanti|data=|publicado=2000|acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64Jzk1Cgh|arquivodata=30 de dezembro de 2011}}</ref> O casario rural do município também merece destaque, como nas casas-sede das fazendas com sua arquitetura austera e simplificada, exibindo amplos [[alpendre]]s e sotãos, assim como um dos elementos típicos da região, as cercas de pedra que delimitam as propriedades.<ref>{{Citar web |url=http://www.teses.usp.br/teses/disponiveis/16/16133/tde-04032010-143402/|publicado=Teses.usp.br|título= Tese "As velhas fazendas da Ribeira do Seridó"|autor=Nathália Maria Montenegro Diniz|data=2008|acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64JzpBJ7D|arquivodata=30 de dezembro de 2011}}</ref> Grande parte da arquitetura antiga do município vem sendo destruída ou alterada devido a inexistência de legislação municipal de proteção a esses bens.<ref>{{Citar web |url=http://www.ceci-br.org/novo/revista/docs2007/CT-2007-80.pdf|publicado=Ceci-br.org|formato=PDF|título= SERIDÓ’S BUILT HERITAGE: TO WHOM IT MAY CONCERN|autor=Edja Bezerra F. Trigueiro |numero-autores=et al.|data=2007|acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64Jzs1kMM|arquivodata=30 de dezembro de 2011|língua=inglês}}</ref>
+
+=== Artes ===
+{{Veja|Bordado seridoense}}
+
+[[Imagem:Mosaicocaico.JPG|thumb|esquerda|Mosaico gigante em parede de escola pública do bairro Vila do Príncipe.]]
+
+O [[artesanato]] é uma das formas mais espontâneas da [[expressão cultural]] caicoense. A cidade é nacionalmente conhecida pela qualidade da confecção de bordados, mas ainda possui destaque seus trabalhos em couro e cerâmica. Em várias partes do município é possível encontrar uma produção artesanal diferenciada, feita com [[matéria-prima|matérias-primas]] regionais e criada de acordo com a cultura e o modo de vida local. Alguns grupos reúnem diversos artesãos da região, disponibilizando espaço para confecção, exposição e venda dos produtos artesanais. Normalmente essas peças são vendidas em [[feira]]s, [[exposição|exposições]] ou [[loja]]s de artesanato.<ref>{{citar web|url=http://tribunadonorte.com.br/noticia/artesanato-e-atracao-da-festa-de-sant-ana/190556|título=Artesanato é atração da Festa de Sant´Ana|autor=Sidney Silva|data=30 de julho de 2011|publicado=Tribuna do Norte|acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64KMZgb0L|arquivodata=30 de dezembro de 2011}}</ref> Na cidade destaca-se a ''Feira de Artesanato dos Municípios do Seridó'', que é realizada desde 1983 e ocorre durante os festejos da padroeira de Caicó.<ref>{{citar web|url=http://www.rn.agenciasebrae.com.br/noticia.kmf?canal=670&cod=12183101|publicado=Rn.agenciasebrae.com.br|autor= |título=Famuse reúne o melhor do artesanato potiguar|data=28 de julho de 2011|acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64KN2TMCk|arquivodata=30 de dezembro de 2011}}</ref>
+
+Quanto à música, a cidade possui desde 1907 a Filarmônica Recreio Caicoense sob administração municipal, também apelidada de "A Furiosa";<ref>[http://portal.iphan.gov.br/baixaFcdAnexo.do?id=1866]</ref> e o Coral Sertão Encanto pertencente a UFRN.
+
+=== Atrações turísticas e eventos ===
+{{AP|Turismo em Caicó}}
+[[Imagem:O Arco do Triunfo de Caicó, RN.jpg|thumb|direita|O Arco do Triunfo de Caicó foi construído em 1953 para homenagear a passagem da imagem peregrina de Nossa Senhora de Fátima pela cidade.]]
+Caicó possui diversos pontos turísticos espalhados por seu território, como o Museu do Seridó, o [[Castelo de Engady]], o Largo de Santana, os Balneários do Iate Clube, a Estação de Psicultura do Açude Itans, o [[Mosteiro de Nossa Senhora de Guadalupe|Mosteiro das Clarissas]], o Centro Cultural Deputado Adjuto Dias, o Poço de Sant'Ana, a [[Ilha de Santana (Rio Grande do Norte)|Ilha de Sant'Ana]], a Casa de Pedra, o Sobrado Padre Guerra - Casa da Cultura, a [[Catedral de Sant'Ana de Caicó|Catedral de Sant'Ana]], o [[Colégio Diocesano Seridoense]], o Mercado Público Municipal, o Santuário do Rosário, o Arco do Triunfo, a Praça da Liberdade (ou Praça Senador Dinarte Mariz), a Praça Dr. José Augusto - Praça da Alimentação, o Antigo Casario Caicoense.<ref name="Caicó">{{citar web|url=http://www.idema.rn.gov.br/contentproducao/aplicacao/idema/socio_economicos/arquivos/Perfil%202008/Caic%C3%B3.pdf|autor= |formato=PDF |título=CAICÓ|data=2008|publicado=IDEMA/RN|acessodata=31 de dezembro de 2011|arquivourl=http://www.webcitation.org/64LIRVnwo|arquivodata=31 de dezembro de 2011}}</ref>
+
+Caicó também realiza uma diversa quantidade de eventos todos os anos. Entre eles, destacam-se: o [[Carnaval de Caicó|Carnaval]] (em fevereiro), o ''Caicó Fest'' (no mês de maio), as Vaquejadas, o Curta Caicó (Festival de Cinema, realizado no mês de junho), a [[Festa de Santana de Caicó|Festa de Sant'Ana]] (padroeira caicoense, realizada no mês de julho),  os Jogos Escolares do Rio Grande do Norte - JERN's - (que acontecem em agosto), a Festa do Rosário (realizada no mês de outubro), e a festa de emancipação política de Caicó, celebrada no mês de dezembro.<ref name="Caicó"/>
+
+=== Museus e espaços culturais ===
+[[Imagem:Casadaculturacaicoene.JPG|thumb|Casa da Cultura de Caicó]]
+* Museu do Seridó: é uma instituição da [[Universidade Federal do Rio Grande do Norte]] ([[UFRN]]), sendo uma unidade de preservação, conservação e divulgação da memória e da história seridoense. Sediado no antigo prédio do Senado da Câmara e cadeia pública da Vila do Príncipe, concluída em 1812. O acervo existente foi contextualizado a partir de um tema central - Seridó, terra nossa de cada dia, dividido em cinco núcleos expositivos: Seridó, terra e homem pré-cabralino; Sociedade, produção e trabalho; Devoção e arte no Seridó; Ofício e arte do Seridó; e Indústria alimentícia de subsistência. O museu ainda conta com exposições provisórias de artistas locais.<ref name="Museu do Seridó">{{Citar web |url=http://www.cerescaico.ufrn.br/museu/museu/museu.html|publicado=Cerescaico.ufrn.br|título=O Museu|autor=Profa.Ms. Paula Sônia de Brito|data= |acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64K03jLre|arquivodata=30 de dezembro de 2011}}</ref>
+* Centro Cultural Dep. Adjuto Dias: foi inaugurado em 2002,possui 447 poltronas, 2 camarotes, uma sala de projeção de cinema, 4 camarins, 5 salas para oficinas, estacionamento para 300 carros, além de ar condicionado central. Ele está localizado no bairro Paraíba e ocupa uma área de 1770 m². Destina-se a apresentação de expressões artísticas, como [[teatro]], [[música]], [[dança]] e [[artes plásticas]].<ref>{{Citar web |url=http://www.cerescaico.ufrn.br/historiadecaico/centro_cultural1.htm|publicado=Cerescaico.ufrn.br|título=Centro Cultural Deputado Adjuto Dias|data= |acessodata= |autor=Muirakytan K. de Macêdo|arquivourl=http://www.webcitation.org/64K08j305|arquivodata=30 de dezembro de 2011}}</ref>
+* Casa da Cultura: localizada no sobrado do Padre Brito Guerra, prédio histórico da cidade, o local é dos mais atuantes quanto a presença de manifestações culturais. Contando atualmente com duas exposições permanentes: Brinquedos Populares e Galeria dos Imortais Caicoenses.<ref>{{Citar web |url=http://www.fja.rn.gov.br/fja_site/navegacao/ver_noticia.asp?idnoticia=52|publicado=Fja.rn.gov.br|autor= |título=Casa de Cultura de Caicó: exposições permanentes encantam população local e visitantes|data= |acessodata=30 de dezembro de 2011|arquivourl=http://www.webcitation.org/64K0FU9DR|arquivodata=30 de dezembro de 2011}}</ref>
+
+=== Referências culturais e históricas===
+A cidade é citada na série de composições "[[Bachianas Brasileiras]]" de [[Heitor Villa-Lobos]], mais precisamente no terceiro movimento da "[[Bachianas Brasileiras]] nº04", na forma de Cantiga, recolhida do [[folclore brasileiro]] por [[Teca Calazans]], a mesma já foi gravada por [[Milton Nascimento]], [[Alceu Valença]], [[Pena Branca e Xavantinho]], [[Elba Ramalho]] e [[Ney Matogrosso]],<ref>{{Citar web |url=http://www.boamusicaricardinho.com/villalobos_83.html|publicado=Boamusicaricardinho.com|autor= |título=Informações sobre Bachianas Brasileiras de Heitor Villa-Lobos|data= |acessodata= |língua=}}</ref> sendo ainda utilizada como tema de abertura da série [[3%]] da [[Netflix]], em uma versão estilizada.<ref>{{citar web|URL=https://www.sul21.com.br/colunas/coluna-appoa/2017/01/3-miragem-e-ruinas/|título=3% – miragem e ruínas|autor=Lucia Serrano Pereira|data=|publicado=10 de janeiro de 2017|acessodata=08-08-2018}}</ref>
+
+A música, intitulada "Caicó, Linda Cabocla", dos compositores Francisco Franklin de Souza (instrumentista, melodia e revisão de letra) e José Lucas de Barros (poeta e letrista), a pedido da prefeitura da cidade, compuseram e gravaram esta música no disco (single) em homenagem ao Centenário da cidade, em 1969, que até hoje é cantanda pelos "filhos" de Caicó.<ref>Disco vinil single, oficial da Prefeitura de Caicó RN, Centenário de Caicó.</ref>
+
+Caicó ainda foi tema da canção intitulada "A Prosa Impúrpura do Caicó" também conhecida como "Caicó Arcaico", composta por [[Chico César]], onde faz um trocadilho com o título do filme de [[Woody Allen]]: "[[A Rosa Púrpura do Cairo]]", na canção ele descreve as contradições, realidade e fantasia, existentes na cidade.{{carece de fontes|data=fevereiro de 2026}}
+
+A cidade também é citada na canção "Forrobodó" de Luiz Fidélis, conhecida pela interpretação da [[banda musical|banda]] de [[forró]] [[Mastruz com Leite]].
+
+A canção instrumental "Rock de Caicó" composta por Aroldo Macedo, em homenagem a cidade-natal de sua esposa, lançada no disco "A Banda da Carmen Miranda", considerada uma mistura de [[frevo]] com [[rock]], se tornou um dos hinos de carnaval do [[trio elétrico]] de [[Armandinho, Dodô & Osmar]].<ref>{{citar web|url=https://repositorio.ufba.br/ri/bitstream/ri/24143/1/VARGAS_Alexandre_Guitarra_baiana_uma_proposta_metodol%C3%B3gica_para_o_ensino_instrumental_2015.pdf|título=GUITARRA BAIANA - UMA PROPOSTA METODOLÓGICA PARA O ENSINO INSTRUMENTAL|autor=ALEXANDRE SILES VARGAS|data=|publicado=2015|acessodata=01-04-2021|arquivourl=|arquivodata=|urlmorta=}}</ref> Aroldo criou, em parceria com o luthier Elifas Santana, um modelo de [[guitarra baiana]] denominada "Série Caicó".<ref>{{citar web|url=https://infonet.com.br/blogs/aruana/|título=GUITARRA BAIANA MODELO ARUANA|autor=|data=|publicado=18 jun, 2015|acessodata=01-04-2021|arquivourl=|arquivodata=|urlmorta=}}</ref>
+
+[[Frei Caneca]] descreve Caicó em seu diário durante a [[Confederação do Equador]] em 26 de Novembro de 1824, como uma vila de povo liberal, com uma igreja não pequena, nova e bem paramentada; Elogia o Sobrado do vigário e as casas da vila, descreve o terreno como plano porém pedregoso, relata sobre suas fontes de água e ressalta a pouca ou inexistência de comércio na época.<ref>{{citar web|URL=https://books.google.com.br/books?id=gBlHQKkQosEC&pg=PA144&lpg=PA144&dq=%22frei+caneca%22+caic%C3%B3&source=bl&ots=_v4mVoBbtB&sig=ACfU3U0XsZ7VCIqsopwzUU_vOmR5DH0BYg&hl=pt-BR&sa=X&ved=2ahUKEwjd8eO97JXrAhVmUd8KHfQFDowQ6AEwBHoECAoQAQ#v=onepage&q=%22frei%20caneca%22%20caic%C3%B3&f=false|título=Frei Caneca: gesta da liberdade, 1779-1825|autor=Gilberto Vilar de Carvalho|data=|publicado=|acessodata=12 de agosto de 2020}}</ref>
+
+O [[escritor]] [[Mário de Andrade]] cita Caicó em sua série de crônicas chamada "O Turista Aprendiz" publicadas em 1929 no [[Diário Nacional]], relata a frustração de não ter encontrado os Negros do Rosário, se diz assombrado com as casas novas e bem arrumadas, sentindo progresso em contraste com outras cidades do semiárido. Ainda destaca o solo pedregoso e as cercas das fazendas com seus muros intermináveis de pedra. Destaca a região como a mais progressista do estado pela valorização do algodão mocó e açudagem particular abundante.<ref>{{citar web|URL=http://portal.iphan.gov.br/uploads/publicacao/O_turista_aprendiz.pdf|título=O Turista Aprendiz|autor=Mário de Andrade|data=|publicado=2015|acessodata=12 de agosto de 2020}}</ref>
+
+O poeta modernista [[Manuel Bandeira]] cita o algodão produzido na região na poesia "Não sei dançar" do seu livro intitulado Libertinagem, em meio a um elogio hiperbólico irônico de representações nacionais ufanistas.<ref>{{citar web|URL=http://www.periodicoscientificos.ufmt.br/ojs/index.php/polifonia/article/viewFile/1088/858|título=NÃO SEI DANÇAR: VIOLÊNCIA E REPRESENTAÇÕES ÉTNICORACIAIS EM LIBERTINAGEM DE MANUEL BANDEIRA |autor=Maria Cândida Ferreira de Almeida|data=|publicado=2005|acessodata=12 de agosto de 2020}}</ref>
+
+O Barão de Serra Branca, Felipe Néri de Carvalho e Silva, faleceu nos arredores de Caicó, enquanto voltava de uma viagem a [[Juazeiro do Norte]].<ref>{{citar web|URL=http://www.tribunadonorte.com.br/noticia/o-passado-em-rua-nas-da-atla-ntida-do-serta-o/452365|título=O Passado em ruínas da Atlântida do Sertão|autor=Ramon Ribeiro|data=|publicado=28 de junho de 2019|acessodata=12 de agosto de 2020}}</ref>
+
+=== Esportes ===
+[[Imagem:Ginasiocaico.jpg|thumb|direita|Ginásio Poliesportivo Nonozão, com capacidade para 3000 pessoas, onde são realizados os Jogos Escolares do Rio Grande do Norte - JERNS]]
+O esporte mais popular no município é o [[futebol]], onde os jogos profissionais são sediados no estádio Senador Dinarte Mariz, casa do [[Atlético Clube Corintians]] de Caicó,<ref>{{Citar web |url=http://corintiansdecaico.com/|publicado=Corintiansdecaico.com|autor= |título= Site do Corintians de Caicó|data= |acessodata= |língua=}}</ref> que junto com o [[Caicó Esporte Clube]] formam as únicas equipes profissionais de Caicó. A cidade realiza anualmente a Corrida de Santana,<ref>{{Citar web |url=http://www.fnatletismo.com.br/?pg=noticia&id=544|publicado=Fnatletismo.com.br|autor= |título=Informação sobre a Corrida de Santana|data= |acessodata= }}</ref> principal evento de atletismo, além de possuir tradição em sediar eventos de outros esportes, como [[Artes marciais mistas|MMA]],<ref>{{Citar web |url=http://www.tatame.com.br/2008/07/16/Armagedon-FC-com-dois-GPs|publicado=Tatame.com.br|autor= |título=Informações sobre o evento|data= |acessodata= }}</ref> [[motocross]],<ref>{{Citar web |url=http://www.inforside.com.br/galerias/index.php?album=motocross|publicado=Inforside.com.br|autor= |título=Informações sobre os organizadores do evento|data= |acessodata= }}</ref> e uma das etapas do [[Rally dos Sertões]].<ref>{{Citar web |url=http://www.webventure.com.br/coberturas/sertoes2009/conteudo/noticias/index/id/25863|publicado=Webventure.com.br|autor= |título=Cobertura da etapa de Caicó|data= |acessodata= }}</ref> Tradicionalmente há a realização de [[vaquejada]]s muito procuradas pela população local. Caicó ainda conta com um Clube de [[Tiro]].<ref>{{Citar web |url=http://ataccaico.zip.net/|publicado=Ataccaico.zip.net|autor= |título=Blog do Clube de tiros de Caicó|data= |acessodata= |língua=}}</ref> A cidade sedia anualmente os JERN's - Jogos Escolares do [[Rio Grande do Norte]], onde congrega os municípios da região polarizados por Caicó. Em 2013, houve a Virada Esportiva, realizada no aniversário da emancipação política do município.
+
+=== Feriados municipais ===
+Caicó apresenta em seu calendário dois [[feriado]]s municipais, oito feriados nacionais e três pontos facultativos. Os feriados municipais são no dia [[16 de dezembro]], data de aniversário do município<ref>{{citar web|url=http://www.ampern.org.br/2010/legislacao/cpj/2009/ANEXO%20III%20-%20FERIADOS%20MUNICIPAIS%202010..pdf |publicado=Ampern.org.br |titulo=Anexo III - Feriados Municipais |autor=Associação do Ministério Público do Estado do Rio Grande do Norte (AMPERN) |data= |acessodata=26 de março de 2011 |formato=PDF |arquivourl=http://www.webcitation.org/5wv0ZlpRK |arquivodata=3 de março de 2011}}</ref><ref>{{citar web|url=http://docs.google.com/viewer?a=v&q=cache:ipksqtA-JXgJ:corregedoria.tjrn.jus.br/index.php%3Foption%3Dcom_docman%26task%3Ddoc_download%26gid%3D120%26Itemid%3D86+Feriados+dos+munic%C3%ADpios+do+RN&hl=pt-BR&gl=br&pid=bl&srcid=ADGEESiJeia9GVsXqSiSFDTdq0l-ea45rMXy3X3PpLMDN9NZih_Ci9405WeKPbAjoCI7nPYHvV-pFKfSz73OgrL4--Qebiarx4xEK0mWlHQiDivGTva7VKKCDqQlF-IIKb9guwIT8u3G&sig=AHIEtbSrXFjGXo07NxdBfpQUFbU1k6C5sQ|publicado=Docs.google.com|autor= |título=FERIADOS MUNICIPAIS DAS COMARCAS DO RN – ANO 2010|data= |acessodata=1º de outubro de 2011}}</ref> (apesar de que essa data de 16 de dezembro é referente a ereção da Vila Nova do Príncipe à Cidade do Príncipe, posteriormente nominada de Caicó, sendo 31 de julho de 1788 a real data de emancipação política da Cidade, que foi definida por meio da LEI Nº 5.408, DE 21 DE JULHO DE 2022<ref>{{citar web|ultimo=MUNICÍPIO DE CAICÓ / RN|primeiro=CAICO|url=https://caico.rn.gov.br/arquivos/4760/Leis%20Municipais_5408_2022_0000001.pdf|titulo=MUNICÍPIO DE CAICÓ / RN|data=21/07/2022|acessodata=22/07/2022|website=MUNICÍPIO DE CAICÓ / RN}}</ref> mas o tradicional feriado do dia 16 de dezembro continuou normalmente para se manter as tradições) e um feriado móvel em honra à padroeira da cidade, [[Sant'Ana]], geralmente a última quinta-feira do mês de julho, de acordo com a lei municipal nº 3096 de 12 de junho de 1987.<ref>{{citar web|url=http://www.dfte.ufrn.br/arquivos/documentos/calendario2011.pdf|publicado=Dfte.ufrn.br|formato=PDF|título=Calendário Universitário 2011 - Resolução nº 040/2010 COSAD|autor=UFRN|data=16 de dezembro de 2010|acessodata=30 de janeiro de 2012|arquivourl=http://www.webcitation.org/654s78VvI|arquivodata=30 de janeiro de 2012}}</ref><ref>{{citar web|url=http://jf-rn.jusbrasil.com.br/noticias/2786249/devido-a-feriado-municipal-justica-federal-suspende-atividades-em-caico|publicado=Jf-rn.jusbrasil.com.br|título=Devido a feriado municipal, Justiça Federal suspende atividades em Caicó|autor=Justiça Federal do Estado do Rio Grande do Norte|data=27 de julho de 2011|acessodata=30 de janeiro de 2012|arquivourl=http://www.webcitation.org/654sA6Arm|arquivodata=30 de janeiro de 2012}}</ref><ref>{{citar web|url=http://www.webcitation.org/654sDshCx|publicado=Webcitation.org|título=Justiça Federal em Caicó suspende expediente nesta quinta-feira|língua=|autor=Sidney Silva|data=27 de julho de 2011|acessodata=30 de janeiro de 2012}}</ref><ref>{{citar web|url=http://www.nominuto.com/noticias/cidades/festa-de-santana-programacao-religiosa-continua-nesta-sexta-feira/57102/|publicado=Nominuto.com|título=Festa de Santana: programação religiosa continua nesta sexta-feira|língua=|autor=Artur Dantas|data=22 de julho de 2010|acessodata=1 de janeiro de 2012|arquivourl=http://www.webcitation.org/654sH2anr|arquivodata=30 de janeiro de 2012}}</ref>
+
+== Filhos ilustres ==
+* ''Ver [[:Categoria:Naturais de Caicó|Caicoenses notórios]]''
+<!-- NÃO INSIRA NOMES AQUI -->
+
+{{Referências|col=2}}
+
+== Ligações externas ==
+{{Commonscat|Caicó}}
+* {{Link|pt|2=https://www.caico.rn.gov.br/|3=Site da Prefeitura de Caicó}}
+* {{Link|pt|2=https://caico.rn.leg.br/|3=Site da Câmara Municipal de Caicó}}
+
+{{Bloco de navegação
+|Caicó
+|Seridó
+|Subdivisões do Rio Grande do Norte
+|Atrações turísticas do Rio Grande do Norte
+}}
+{{Portal3|Rio Grande do Norte|Caicó}}
+
+{{DEFAULTSORT:Caico}}
+[[Categoria:Caicó| ]]
+[[Categoria:Fundações no Brasil em 1788]]
+[[Categoria:Topônimos de origem tupi no Rio Grande do Norte]]

@@ -1,0 +1,137 @@
+{{Ficha de entidad subnacional
+| nombre = Santa Ana de Yusguare
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| mapa_loc = Honduras
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = Edas Mauricio Turcios Servellón
+| subdivisión = 8 aldeas y 46 caseríos
+| elevación_media = 60
+| superficie = 71.92
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 15133
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0616__santa_ana_de_yusguare/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| población_urb = 7531
+| densidad = 210.4
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''Santa Ana de Yusguare''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]].
+<ref>{{Cita web
+ |url=https://temp.ine.gob.hn/wp-content/uploads/2025/02/Santa-Ana-de-Yusguare-Choluteca-2018.pdf
+ |título=Santa Ana de Yusguare, Choluteca: Indicadores Municipales 2018
+ |autor=Instituto Nacional de Estadística (INE)
+ |fecha=2018
+ |editor=INE Honduras
+ |formato=PDF
+ |idioma=es
+}}</ref>
+
+== Toponimia ==
+Su nombre parece ser que se compone de la palabra mexicana "''xochitl''" y de la [[Lenguas lencas|palabra lenca]] "''guara''", y significa "''Agua Quebrada''"; mientras que Santa Ana es en honor a [[Ana (madre de María)]], santa de la Iglesia católica.
+
+== Límites ==
+{| class="wikitable"
+|+Límites de Santa Ana de Yusguare
+!Orientación
+!Límite
+|-
+|Norte
+|Municipio de [[Choluteca]], Choluteca
+|-
+|Sur
+|Municipio de [[Namasigüe]], Choluteca
+|-
+|Este
+|Municipio de [[El Corpus]], Choluteca<ref name="OT">{{enlace roto|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/santa_ana_de_yusguare.pdf|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/santa_ana_de_yusguare.pdf|bot=InternetArchiveBot}} Datos de organización territorial de Honduras</ref>
+|-
+|Oeste
+|Municipio de Choluteca, Choluteca
+|}
+
+== Historia ==
+Fue fundado por los indígenas en el lugar de Calderas en donde todavía hay algunos vestigios, se ignora porque fue trasladado al lugar donde está hoy.
+
+En el recuento de población de 1791 ya figuraba el Pueblo de Yusguare del Curato de Choluteca.
+
+En 1887, en el censo de 1887 figuraba como municipio del distrito de Choluteca.<ref>Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 7,434 (49.1%)
+| valor1 = 49.1
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 7,699 (50.9%)
+| valor2 = 50.9
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 4,559 (30.1%)
+| valor1 = 30.1
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 9,619 (63.6%)
+| valor2 = 63.6
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 955 (6.3%)
+| valor3 = 6.3
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 7,602 (50.2%)
+| valor1 = 50.2
+| color1 = #109618
+| etiqueta2 = Urbano: 7,531 (49.8%)
+| valor2 = 49.8
+| color2 = #FF9900
+}}
+Santa Ana de Yusguare tiene una población actual de 15,133 habitantes. De la población total, el 49.1% son hombres y el 50.9% son mujeres. Casi el 49.8% de la población vive en la zona urbana.<ref name="INE"/>
+
+== División política ==
+Aldeas: 7 (2023)
+
+Caseríos: 46 (2023)
+{| class="wikitable"
+|+Aldeas de Santa Ana de Yusguare
+!Código
+!Aldea
+|-
+|061601
+|Santa Ana de Yusguare (cabecera del municipio)
+|-
+|061602
+|Cerco de Piedra
+|-
+|061603
+|El Cerro
+|-
+|061604
+|La Tajeada
+|-
+|061605
+|Pueblo Nuevo
+|-
+|061606
+|Tablones Abajo
+|-
+|061607
+|Tablones Arriba
+|}
+
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Choluteca]]

@@ -1,0 +1,127 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = San Juan de Jarpa
+| native_name             = 
+| native_name_lang        = es<!-- ISO 639-2 code e.g. "es" for Spanish -->
+| settlement_type         = [[Districts of Peru|District]]
+| image_skyline           = 
+| image_alt               = 
+| image_caption           = 
+| image_flag              =  
+| flag_alt                = 
+| image_shield            = 
+| shield_alt              = 
+| nickname                = 
+| image_map               = 
+| mapsize                 = frameless
+| map_alt                 = 
+| map_caption             = Location of San Juan de Jarpa in the [[Chupaca Province|Chupaca]] province
+| coordinates             = 
+| coor_pinpoint           = 
+| coordinates_footnotes   = 
+| subdivision_type        = Country
+| subdivision_name        = {{flag|Peru}}
+| subdivision_type1       = [[Regions of Peru|Region]]
+| subdivision_name1       = [[Junín Region|Junín]]
+| subdivision_type2       = [[Provinces of Peru|Province]]
+| subdivision_name2       = [[Chupaca Province|Chupaca]]
+| parts_type              = [[Subnational entity|Subdivisions]]
+| parts_style             = para
+| p1                      = 
+| established_title       = Founded
+| established_date        = October 16, 1933
+| seat_type               = [[Capital (political)|Capital]]
+| seat                    = [[Jarpa]]
+| leader_party            = 
+| leader_title            = [[Mayor]]
+| leader_name             = Alejandro Camac Salvatierra
+| unit_pref               = Metric<!-- or US or UK -->
+| area_footnotes          = 
+| area_total_km2          = 129
+| area_note               = 
+| elevation_footnotes     = 
+| elevation_m             = 3646
+| population_footnotes    = 
+| population_total        = 3573
+| population_as_of        = [[Peru 2005 Census|2005 census]]
+| population_density_km2  = auto
+| population_note         = 
+| timezone1               = [[Time in Peru|PET]]
+| utc_offset1             = -5
+| blank_name_sec1         = [[UBIGEO]]
+| blank_info_sec1         = 120907
+| website                 = 
+| footnotes               = 
+}}
+
+[[File:Provincia_de_Chupaca.png | thumb|right | alt=Map of Chupaca province | Chupaca Province]]
+'''San Juan de Jarpa District''' is one of nine [[Districts of Peru|districts]] of the province [[Chupaca Province|Chupaca]] in [[Peru]].<ref>{{in lang|es}} [[Instituto Nacional de Estadística e Informática]]. ''[http://desa.inei.gob.pe/mapas/bid/ Banco de Información Distrital] {{webarchive|url=https://web.archive.org/web/20080423164200/http://desa.inei.gob.pe/mapas/bid/ |date=2008-04-23 }}''. Retrieved April 11, 2008.</ref>
+
+==Climate==
+
+{{Weather box|width=auto
+|metric first=y
+|single line=y 
+|collapsed = Y
+|location = San Juan de Jarpa, elevation {{convert|3660|m|ft|abbr=on}}, (1991–2020)
+|Jan high C = 15.9
+|Feb high C = 15.6
+|Mar high C = 15.3
+|Apr high C = 15.9
+|May high C = 16.5
+|Jun high C = 16.2
+|Jul high C = 16.0
+|Aug high C = 16.5
+|Sep high C = 16.7
+|Oct high C = 16.9
+|Nov high C = 17.5
+|Dec high C = 16.3
+|year high C = 
+|Jan low C = 5.2
+|Feb low C = 5.8
+|Mar low C = 5.6
+|Apr low C = 4.1
+|May low C = 1.8
+|Jun low C = 0.0
+|Jul low C = -0.6
+|Aug low C = 0.6
+|Sep low C = 2.6
+|Oct low C = 3.9
+|Nov low C = 4.1
+|Dec low C = 5.0
+|year low C =  
+|precipitation colour = green
+|Jan precipitation mm = 114.7
+|Feb precipitation mm = 147.8
+|Mar precipitation mm = 136.7
+|Apr precipitation mm = 61.4
+|May precipitation mm = 24.2
+|Jun precipitation mm = 5.7
+|Jul precipitation mm = 9.4
+|Aug precipitation mm = 12.3
+|Sep precipitation mm = 40.3
+|Oct precipitation mm = 63.1
+|Nov precipitation mm = 64.4
+|Dec precipitation mm = 106.2
+|year precipitation mm = 
+|source 1 = National Meteorology and Hydrology Service of Peru<ref name = SENAMHI>{{cite web
+| archive-url = https://web.archive.org/web/20230821192714/https://www.senamhi.gob.pe/?p=normales-estaciones
+| archive-date = 21 August 2023
+| url = https://www.senamhi.gob.pe/?p=normales-estaciones
+| title = Normales Climáticas Estándares y Medias 1991-2020
+| publisher=National Meteorology and Hydrology Service of Peru
+| access-date = 17 June 2024}}</ref>
+}}
+
+==References==
+{{Reflist}}
+
+{{Districts of Chupaca Province}}
+
+{{coord|12.1239|S|75.4359|W|source:wikidata|display=title}}
+
+[[Category:Districts of the Chupaca province]]
+[[Category:Districts of the Department of Junín]]
+
+
+{{Junín-geo-stub}}

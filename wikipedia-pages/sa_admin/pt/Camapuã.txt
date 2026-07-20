@@ -1,0 +1,142 @@
+{{Info/Município do Brasil
+<!-- GeoID=5002605 -->
+<!-- Cabeçalho -->
+| nome                 = Camapuã
+| foto                 = Ruapedrocelestino.jpg
+| leg_foto             = Rua Pedro Celestino, no centro de Camapuã
+| apelido              = Capital do bezerro de qualidade
+<!-- Dados gerais -->
+| brasão               = Brasaodecamapua.png
+| bandeira             = Bandeiradecamapua.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 30 de Setembro
+| fundação             ={{nowrap|{{dtlink|30|9|1948|idade}}}}
+| emancipação          = 30 de setembro de 1948
+| gentílico            = camapuense <ref>[https://cidades.ibge.gov.br/brasil/ms/camapua/panorama]</ref>                  
+| padroeiro            = [[João Batista|São João Batista]]  
+| prefeito             = Manoel Eugénio Nery<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/ms/camapuã|título=Candidatos a vereador Camapuã-MS|publicado=Estadão|acessodata =31 de maio de 2021}}</ref>
+| partido              = [[União Brasil]]
+| fim_mandato          = 2024
+| mapa                 = Brazil Mato Grosso do Sul Camapua location map.svg
+| latP                 = S | latG = 19 | latM = 31 | latS = 51
+| lonP                 = O | lonG = 54 | lonM = 02 | lonS = 38
+| estado               = Mato Grosso do Sul
+| mesorregião          = [[Mesorregião do Centro-Norte de Mato Grosso do Sul|Centro Norte de Mato Grosso do Sul]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião do Alto Taquari|Alto Taquari]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[São Gabriel do Oeste]], [[Costa Rica (Mato Grosso do Sul)|Costa Rica]], [[Figueirão]], [[Paraíso das Águas]],  [[Água Clara]], [[Bandeirantes (Mato Grosso do Sul)|Bandeirantes]] e [[Ribas do Rio Pardo]]
+| dist_capital         = 126
+| dist_capital_ref     = <ref>{{citar web |url=http://bdeweb.semade.ms.gov.br/bdeweb/imp.php?page=consulta&action=new |título=Seleção de variáveis - Distância de Campo Grande aos Municípios de MS |autor=Agência Estadual de Gestão de Empreendimentos de Mato Grosso do Sul (AGESUL) |data=2015 |publicado=Secretaria de Estado de Meio Ambiente e Desenvolvimento Econômico de Mato Grosso do Sul (SEMADE) |acessodata=23 de dezembro de 2025}}</ref>
+<!-- Características geográficas -->
+| área                 = 6230.000 <!--favor manter o formato-->
+| área_pos             = [[Lista de municípios de Mato Grosso do Sul por área|MS: 10º]]
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| área_urbana          = {{Formatnum:1.08}}
+| área_urbana_pos      = [[Lista de municípios de Mato Grosso do Sul por área|MS: 55º]]
+| área_urbana_ref      = est. [[Embrapa]]<ref>{{Citar web|url= http://www.urbanizacao.cnpm.embrapa.br/conteudo/base.html|titulo=Urbanização das cidades brasileiras|publicado=[[Embrapa Monitoramento por Satélite]]|acessodata=30 de Julho de 2008}}</ref>
+| distritos            = Camapuã (sede), [[Ponte do Rio Verde]] e [[Pontinha do Coxo]]
+| população            = 13675 <!--favor manter o formato-->
+| população_pos        = [[Lista de municípios de Mato Grosso do Sul por população|MS: 43º]]
+| data_pop             = estimativa [[IBGE]]/2021<ref name="IBGE_Panorama">{{citar web|url= https://cidades.ibge.gov.br/brasil/ms/camapua/panorama |título=Camapuã |autor = Instituto Brasileiro de Geografia e Estatística (IBGE) |data=27 de agosto de 2020 |acessodata= 19/08/2022 }}</ref>
+| densidade            = {{fmtn|2.185|hab/km²}}
+| altitude             = 409
+| clima                = [[tropical]]
+| sigla_clima          = Aw
+<!-- Indicadores -->
+| idh                  = 0.761 <!--favor manter o formato-->
+| idh_pos              = [[Lista de municípios de Mato Grosso do Sul por IDH|MS: 20º]]
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| gini                 = {{Formatnum:0.430}}
+| gini_pos             = [[Lista de municípios de Mato Grosso do Sul por índice de Gini|MS: 26º]] 
+| data_gini            = est. [[IBGE]] [[2003]]<ref>{{citar web|url=http://www.ibge.gov.br/cidadesat/topwindow.htm?1|titulo=Indice GINI |data=2000 |obra=Cidade Sat|publicado=Instituto Brasileiro de Geografia e Estatística|acessodata=6 de agosto de 2011}}</ref>
+| pib                  = {{formatnum:202010.853}} mil
+| pib_pos              = [[Lista de municípios de Mato Grosso do Sul por PIB|MS: 33º]]
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 14895.36
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+}}
+
+'''Camapuã''' é um [[Município (Brasil)|município brasileiro]] da [[Região Centro-Oeste do Brasil|região Centro-Oeste]], situado no [[Estados do Brasil|estado]] de [[Mato Grosso do Sul]]. A cidade fica próxima da capital do estado, a menos de 137&nbsp;km.
+
+==Geografia==
+===Localização===
+O município de Camapuã está situado no sul da região [[Região Centro-Oeste do Brasil|Centro-Oeste]] do [[Brasil]], no [[Mesorregião do Centro-Norte de Mato Grosso do Sul|centro de Mato Grosso do Sul]] ([[Microrregião do Alto Taquari]]). Localiza-se na [[latitude]] de 19º31’51” [[Sul]] e [[longitude]] de 54°02’38” [[Oeste]]. Distâncias:
+*{{fmtn|137|[[km]]}} da capital estadual ([[Campo Grande (Mato Grosso do Sul)|Campo Grande]])
+*{{fmtn|997|km}} da capital federal ([[Brasília]]).
+
+===Geografia física===
+;Solo
+
+Latossolo roxo
+
+; Relevo e altitude
+
+Está a uma altitude de {{fmtn|409|m}}.
+
+; Clima, temperatura e pluviosidade
+
+Está sob influência do clima tropical ([[AW]]).
+ 
+; Hidrografia
+
+Está sob influência da [[Bacia do Rio da Prata]]. Também é banhada pelo Rio Nilo.
+
+; Vegetação
+
+Se localiza na região de influência do [[Cerrado]].
+
+===Geografia política===
+;Fuso horário
+
+Está a -1 hora com relação a [[Brasília]] e -4 com relação ao [[meridiano de Greenwich]].
+
+;Área
+
+Ocupa uma superfície de {{fmtn|6230.0|km²}}.
+ 
+;Subdivisões
+
+Camapuã (sede), Ponte do Rio Verde e Pontinha do Cocho.
+
+;Arredores
+
+Faz divisas com os municípios de [[São Gabriel do Oeste]], [[Paraíso das Águas]], [[Figueirão]], [[Água Clara]], [[Bandeirantes (Mato Grosso do Sul)|Bandeirantes]] e [[Ribas do Rio Pardo]].
+
+==História==
+Em [[1593]], os [[jesuítas]] espanhóis, procedendo da região de Guairá e subindo o rio Paraná e depois o rio Pardo, se estabeleceram com uma redução à margem do ribeirão Camapuã, a 18,0;km do Porto de desembarque no Rio Pardo e a 3,0;km abaixo da atual cidade de Camapuã. Essa redução dos jesuítas concentrou, na época, um grande número de índios catequizados, foi construída pelos paulistas, por volta de [[1650]], e tornou-se pouso das bandeiras que demandavam no [[rio Coxim]], rumo às [[Mina (mineração)|minas]] de [[Cuiabá]]. A rota das longas viagens, de [[São Paulo (estado)|São Paulo]] a Cuiabá (obra de 530 léguas por via fluvial desde Araritaguava, salvo no varadouro de Camapuã, que os irmãos Lemes abriram, em [[1723]], entre o sanguessuga, afluente do rio Pardo e o Coxim, criaram a necessidade de um sítio de abastecimento e proteção aos navegantes). Pela região passou Manoel Dias da Silva que, em [[1739]], organizou força em Goiás para enfrentar os castelhanos, que depois marchou para o Sul. Terminada a febre do ouro e as penetrações das bandeiras, o local caiu em completo abandono. Ao longo dos anos muitos aventureiros atraídos pela lenda de tesouros valiosos, mas sem êxito. Mais tarde [[Júlio Baís]] fincou rancho, instalando-se com a sua comitiva e encontrou apenas ossadas humanas.
+
+O início do seu repovoamento origina-se no início do [[século XX]], quando a região já havia inúmeras e prósperas fazendas de criação de gado e agricultura. Alguns fazendeiros (como Francisco Faustino Alves, Protázio Paulino de Melo, Joaquim Capestana, Benedito Bonfim, Camilo Bonfim e Lázaro Faustino) solicitaram por intermédio da Prefeitura de Coxim a criação do Patrimônio de Camapuã. Essa pretensão se realizou com a Lei nº 845 de [[3 de novembro]] de [[1921]], em que o governo do estado reservou 3.600 hectares para a povoação de Camapuã, no município de Coxim. Em [[1924]], João da Mota construiu no lugar a primeira casa comercial. E logo iniciou a construção de uma igrejinha, mas não foi possível concluir, pois o mesmo faleceu. Em [[19 de maio]] de [[1933]] (pelo Decreto nº. 272) foi criado o Distrito de Paz de Camapuã administrado pela [[Comarca de Coxim]], sendo instalado em [[22 de julho]] de [[1933]] (teve como primeiro Juiz de Paz Manoel Alves Rodrigues e como primeiro Escrivão de Paz e Oficial do Registro Civil, Lafaiete Djalma Coelho). O Decreto nº. 319, de [[30 de outubro]] de [[1933]], reserva 500 hectares para o patrimônio da povoação de Camapuã, no Município de Coxim. A Lei nº. 134, de [[30 de setembro]] de [[1948]] transformou Camapuã em Município.
+
+Em [[1977]] o município passa a fazer parte do atual estado de [[Mato Grosso do Sul]].
+
+[[Ficheiro:Brasaodecamapua.png|alt=Camapuã/MS|esquerda|miniaturadaimagem|155x155px|Brasão de Camapuã]]
+
+==Economia==
+Sua principal atividade é a Pecuária, sendo conhecida nacionalmente como Capital do Bezerro de qualidade.
+
+===Centro de zona B===
+Camapuã, com 13 mil habitantes e 1 relacionamento direto, é um Centro de Zona B. Nível formado por cidades de menor porte e com atuação restrita à sua área imediata, exercem funções de gestão elementares. Camapuã é uma das 364 cidades no Brasil com a classificação Centro de Zona B<ref>http://www.ibge.gov.br/home/presidencia/noticias/noticia_visualiza.php?id_noticia=1246&id_pagina=1</ref>.
+
+{{referências}}
+
+==Ligações externas==
+{{Correlatos
+|commons      = Camapuã
+|wikisource   = 
+|wikiquote    = 
+|wikilivros   = 
+|wikinoticias = 
+|wikcionario  = 
+|wikispecies  = 
+}}
+*[http://www.camapua.ms.gov.br/ Página da prefeitura]
+
+{{Municípios do Mato Grosso do Sul}}
+{{Portal3|Mato Grosso do Sul}}
+
+[[Categoria:Camapuã| ]]
+[[Categoria:Fundações em Mato Grosso em 1948]]

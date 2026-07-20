@@ -1,0 +1,68 @@
+{{Info/Município do Brasil
+<!-- GeoID=2411429 -->
+<!-- Cabeçalho -->| nome = Santana do Seridó
+| foto = Santana do Seridó-RN.jpg
+| leg_foto = Praça em Santana do Seridó-RN
+| apelido = <!-- Dados gerais -->
+| brasão = Brasão de Santana do Seridó, Rio Grande do Norte, Brasil.png
+| bandeira = Bandeira de Santana do Seridó, Rio Grande do Norte, Brasil.png
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| aniversário = 
+| fundação = {{nowrap|{{dtlink|||1927|idade}}}}
+| emancipação = {{nowrap|{{dtlink|9|4|1963|idade}}}}
+| gentílico = santanense
+| lema = 
+| prefeito = Tatiana Fatima Ferreira de Araujo
+| partido = [[Podemos (Brasil)|PODE]]
+| mandato_início = 2025
+| fim_mandato = 2028
+<!-- Localização -->| vereadores = 9
+| mapa = Brazil Rio Grande do Norte Santana do Seridó location map.svg
+| latP = S
+| latG = 06
+| latM = 46
+| latS = 15
+| lonP = O
+| lonG = 36
+| lonM = 43
+| lonS = 58
+| estado = Rio Grande do Norte
+| região_intermediária = Caicó
+| data_região_intermediária = [[IBGE]]/2017<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=29/03/2019}}</ref>
+| região_imediata = Caicó
+| data_região_imediata = [[IBGE]]/2017<ref name="IBGE_DTB_2017" />
+| região_metropolitana = 
+| vizinhos = [[Equador (Rio Grande do Norte)|Equador]], [[Ouro Branco (Rio Grande do Norte)|Ouro Branco]], [[Parelhas]], [[São José do Sabugi]]
+| dist_capital = 253
+| dist_capital_ref = <ref>{{citar web|url=http://www.femurn.org.br/femurn/municipio/distancias.asp|titulo=Distâncias dos Municípios do Rio Grande do Norte a Natal-RN|publicado=FEMURN|acessodata=31 de outubro de 2010|arquivourl=https://web.archive.org/web/20101216173239/http://www.femurn.org.br/femurn/municipio/distancias.asp|arquivodata=2010-12-16|urlmorta=yes}}</ref>
+<!-- Características geográficas -->| área = 188.403
+| área_pos = [[Lista de municípios do Rio Grande do Norte por área|RN: 97º]]
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002 |publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população = 2787
+| população_pos = [[Lista de municípios do Rio Grande do Norte por população|RN: 156º]]
+| data_pop = Estimativa [[IBGE]]/[[2024]]<ref name="IBGE_cidades">{{citar web|url=https://cidades.ibge.gov.br/brasil/rn/santana-do-serido/panorama|título= Brasil / Rio Grande do Norte / Santana do Seridó|acessodata=25/01/2024}}</ref>
+| altitude = 359
+| clima = Semiárido
+| sigla_clima = <!-- Indicadores -->
+| CEP = 59350-000
+| idh = 0.642 <!--favor manter o formato-->
+| idh_pos = [[Lista de municípios do Rio Grande do Norte por IDH|RN: 28°]]
+| gini = 0,41
+| data_gini = 2020
+| data_idh = [[PNUD]]/[[2010]] <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de agosto de 2013}}</ref>
+| pib = {{formatnum:36354.38}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 13469.57
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| site_prefeitura = {{url|https://pmsantanadoserido.rn.gov.br}}
+| site_câmara = {{Url|https://www.santanadoserido.rn.leg.br}}
+}}
+'''Santana do Seridó''' é um [[município]] [[Brasil|brasileiro]] do estado do [[Rio Grande do Norte]], localizado na região do [[Seridó]]. De acordo com estimativa do [[IBGE]] (Instituto Brasileiro de Geografia e Estatística) no ano 2024, sua população é de 2.787 habitantes. Área territorial de 188&nbsp;km².
+
+{{Referências}}
+{{Esboço-municípiosbr/Rio Grande do Norte}}
+
+[[Categoria:Municípios do Rio Grande do Norte]]
+[[Categoria:Fundações no Rio Grande do Norte em 1962]]

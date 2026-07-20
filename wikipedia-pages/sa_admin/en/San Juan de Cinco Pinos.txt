@@ -1,0 +1,125 @@
+{{Infobox settlement
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = Cinco Pinos
+|settlement_type        = Municipality<!--For Town or Village (Leave blank for the default City)-->
+|other_name             =
+|native_name            = <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = Calle central.JPG
+|imagesize              = 
+|image_caption          = Street in Cinco Pinos
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Nicaragua<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = right
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Nicaragua
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Nicaragua}}
+|subdivision_type1      = [[Departments of Nicaragua|Department]]
+|subdivision_name1      = [[Chinandega Department]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         =
+|area_total_km2         = 60<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2          = <!--See table @ Template:Infobox settlement for details on automatic unit conversion-->
+|area_water_km2         =
+|area_total_sq_mi       =
+<!-- Population   ----------------------->
+|population_as_of               = 2005
+|population_footnotes           =
+|population_note                =
+|population_total               = 6781
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 5894
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|13|13|N|86|55|W|region:NI|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|website                = 
+|footnotes              = 
+}}
+
+'''San Juan de Cinco Pinos''', colloquially known as '''Cinco Pinos''', is a town and a municipality in the north of the [[Chinandega Department]] in [[Nicaragua]], situated between [[San Pedro del Norte]] and [[Santo Tomás del Norte]].
+
+==History==
+
+The town was founded in 1879 as a result of the migration of residents from neighboring [[Honduras]]. Prior to that time, there was a small village called ''Villa Salvadorita'', 2&nbsp;km west of the current location of Cinco Pinos. In the early 1950s, with the development of cotton cultivation, the town was renamed to San Juan de Cinco Pinos.{{cn|date=January 2023}}
+
+The festivities of the patron saint of Cinco Pinos is held in honor of ''San Caralampio''. The event takes place every year from February 9 to 11, with the traditional [[Dance in Nicaragua#Toro Huaco|Toro Huaco]] dance and ''chichero'' music.<ref name="inifom">[http://www.inifom.gob.ni/municipios/documentos/CHINANDEGA/cinco_pinos.pdf Caracterización del municipio de Cinco Pinos]</ref>
+
+== Geography ==
+
+The population of San Juan de Cinco Pinos is mainly rural. Only 21% lives in the town of Cinco Pinos and the rest are scattered around the 14 [[comarca]]s of the municipality.<ref name="inifom" />
+
+{{colbegin}}
+*El Carrizal
+*El Cerro 
+*El Espino 
+*El Jícaro 
+*El Pavón
+*El Zacatón
+*La Honda
+*La Montaña
+*Las Lajitas
+*Las Pozas 
+*Los Araditos 
+*Santa Fe
+*Villa Camilo 
+*Villa Francia 
+{{colend}}
+
+==References==
+{{reflist}}
+
+{{Chinandega Department}}
+
+{{coord|13|13|N|86|56|W|region:NI_source:kolossus-eswiki|display=title}}
+
+[[Category:Municipalities of the Chinandega Department]]
+
+
+{{Nicaragua-geo-stub}}

@@ -1,0 +1,121 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+|name                   =Cercado
+|settlement_type        =Province <!--For Town or Village (Leave blank for the default City)-->
+|official_name          = 
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|motto                  = 
+|image_skyline          = Aves en pleno vuelo.jpg
+|imagesize              = 
+|image_caption          = View of a lagoon in the Chuchini Wildlife Reserve.
+|image_flag             = Flag of Cercado (Beni), Bolivia.svg
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = Escudo de Cercado (Beni), Bolivia.png
+|shield_size            =
+|image_blank_emblem              =
+|blank_emblem_size          =
+|image_map              = Bolivia Beni Cercado.png<!-- Bolivia department of beni.png -->  
+|mapsize                = 200px
+|map_caption            = Map of Bolivia highlighting the province of Cercado.
+|image_map1             = Bolivia department of beni.png
+|mapsize1               = 250px
+|map_caption1           = Provinces of the Beni Department
+|pushpin_map            = 
+|pushpin_label_position = 
+|subdivision_type       = [[Countries of the world|Country]]
+|subdivision_name       = {{BOL}}
+|subdivision_type1      = [[Departments of Bolivia|Department]]
+|subdivision_name1      = [[Beni Department|Beni]]
+|subdivision_type2      =
+|subdivision_name2      = 
+|seat_type              =
+|seat                   =
+|parts_type             =Settlements
+|parts_style            = <!-- =list (for list), coll (for collapsed list), para (for paragraph format)
+                               Default is list if up to 5 items, coll if more than 5-->
+|parts                  =Municipalities <!-- parts text, or header for parts list -->
+|p1                     =[[San Javier, Cercado|San Javier]]
+|p2                     =[[Trinidad, Bolivia|Trinidad]]<!-- etc. up to p50: for separate parts to be listed--> 
+|government_type        =
+|leader_title           = 
+|leader_name            = 
+|leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|established_title      =  
+|established_date       = 
+|area_magnitude         = 
+|unit_pref              =Imperial<!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         = 
+|area_total_km2             = 12276
+|area_land_km2              = 
+|area_water_km2             = 
+|area_total_sq_mi        = 14122
+|area_land_sq_mi         = 
+|area_water_sq_mi        = 
+|area_water_percent     = 
+|area_urban_km2             = 
+|area_urban_sq_mi        = 
+|area_metro_km2             = 
+|area_metro_sq_mi        = 
+|population_as_of       = 2024 census
+|population_footnotes   = <ref>[[Instituto Nacional de Estadística de Bolivia]] {{in lang|es}}</ref>
+|population_note        = 
+|population_total       = 132,011
+|population_density_km2     = auto
+|population_density_sq_mi = 
+|population_metro       =
+|population_density_metro_km2 =
+|population_density_metro_sq_mi =
+|population_urban       = 
+|population_density_urban_km2 =
+|population_density_urban_mi2 =
+|timezone               = BOT
+|utc_offset             = -4
+|timezone_DST           = 
+|utc_offset_DST         = 
+|latd=|latm=|lats=|latNS=
+|longd=|longm=|longs= |longEW=
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m              = 
+|elevation_ft           = 
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              = 
+|website                = 
+|footnotes              = 
+}}
+
+'''Cercado''' is a province located in northwestern Bolivia in [[Beni Department]]. It has an area of 12,276&nbsp;km ² with a population estimated by the [[National Institute of Statistics of Bolivia]] for 2024 of 132,011<ref>{{Cite web |title=Bolivia: Administrative Division (Departments and Provinces) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/bolivia/dept/admin/ |access-date=2024-09-10 |website=www.citypopulation.de}}</ref> and a density of 7.67 people / km ².  Its capital is the city of [[Trinidad, Bolivia|Trinidad]].
+
+== Subdivision ==
+Cercado Province is divided into two [[Municipalities of Bolivia|municipalities]] which are partly further subdivided into cantons.
+
+{| class="wikitable" border="1" style="width:45%;" border="1"
+|-bgcolor=#EFEFEF
+! '''Section'''
+! '''Municipality'''
+! '''Inhabitants'''  <small> (2001) </small> 
+! '''Seat'''
+! '''Inhabitants'''  <small> (2001) </small> 
+|-
+| 1st || [[Trinidad Municipality, Beni|Trinidad Municipality]] || align="right"| 79,963 || [[Trinidad, Bolivia|Trinidad]] || align="right"| 75,540 
+|-
+| 2nd || [[San Javier Municipality (Beni)|San Javier Municipality]] ||  align="right"| 2,690 ||  [[San Javier, Cercado|San Javier]] ||  align="right"| 199
+|-
+|}
+
+== References ==
+
+<references/>
+
+{{Beni Department}}
+
+{{coord|14|30|S|64|30|W|type:adm2nd_region:BO|display=title}}
+
+[[Category:Provinces of Beni Department]]
+
+{{Beni-geo-stub}}

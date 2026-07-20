@@ -1,0 +1,543 @@
+{{ver desambig|este=um município brasileiro}}
+{{Info/Município do Brasil
+| nome = Montes Claros
+| imagem_montagem = {{multiple image
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 300
+ |caption_align = center
+ | image1 = MOCcity (cropped).jpg
+ | caption1 = [[Panorama urbano]] de Montes Claros
+ | image2 = Matriz_de_Montes_Claros_-_MG_-_panoramio.jpg
+ | caption2 = [[Catedral Nossa Senhora Aparecida (Montes Claros)|Catedral Nossa Senhora Aparecida]]
+ | image3 = Museu Regional do Norte de Minas.jpg
+ | caption3 = Museu Regional do Norte de Minas
+ | image4 = Parque_Estadual_da_Lapa_Grande-Alisson_Almeida_Santos(10).jpg
+ | caption4 = Parque Estadual da Lapa Grande
+ | image5 =Centro histórico de Montes Claros.jpg
+ | caption5 = Centro Histórico
+ | color  = white
+}}
+| bandeira = Bandeira MontesClaros MinasGerais Brasil.svg
+| brasão = Coat of arms city br Montes Claros.svg
+| link_bandeira = 
+| link_brasão = 
+| link_hino = s:Hino do município de Montes Claros
+| lema = ''Sub Umbra Alarum Tuarum''<br> <small>''"Debaixo da sombra de Tuas asas"''</small>
+| gentílico = montes-clarense<ref name="IBGE_MontesClaros">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/montes-claros/panorama |título=Montes Claros |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=26 de outubro de 2025 |arquivourl=https://archive.is/kYZEM |arquivodata=26 de outubro de 2025}}</ref>
+| mapa = MinasGerais Municip MontesClaros.svg
+| latP = S
+| latG = 16
+| latM = 44
+| latS = 06
+| lonP = O
+| lonG = 43
+| lonM = 51
+| lonS = 43
+| estado = Minas Gerais
+| região_metropolitana = 
+| vizinhos = '''''Norte:''''' [[São João da Ponte]];<br> '''''Nordeste:''''' [[Capitão Enéas]];<br> '''''Leste:''''' [[Francisco Sá (Minas Gerais)|Francisco Sá]];<br> '''''Sudeste:''''' [[Juramento (Minas Gerais)|Juramento]] e [[Glaucilândia]];<br> '''''Sul:''''' [[Bocaiuva]] e [[Engenheiro Navarro]];<br> '''''Sudoeste:''''' [[Claro dos Poções]];<br> '''''Oeste:''''' [[São João da Lagoa]] e [[Coração de Jesus (Minas Gerais)|Coração de Jesus]];<br> '''''Noroeste:''''' [[Mirabela]] e [[Patis]]
+| dist_capital = 417
+| dist_capital_ref = <ref name="DER_Distâncias">{{citar web |url=https://der.mg.gov.br/index.php?option=com_dropfiles&format=&task=frontfile.download&catid=1950&id=22325&Itemid=1000000000000 |título=Mapa Rodoviário do Estado de Minas Gerais 2021 |autor=Departamento de Estradas de Rodagem do Estado de Minas Gerais (DER-MG) |data=2021 |acessodata=26 de outubro de 2025 |wayb=20241209151100}}</ref>
+| emancipação = {{dtlink|13|10|1831|idade}}<ref name="IBGE_Histórico"/>
+| fundação = 
+| distritos = [[Lista de distritos de Montes Claros|11]]
+| distritos_ref = <ref name="IBGE_Distritos">{{citar web |URL=https://sidra.ibge.gov.br/territorio#/N10/IN%20N6%203143302 |título=Unidades territoriais do nível Distrito - Montes Claros |autor=Sistema IBGE de Recuperação Automática (SIDRA) |data=2022 |acessodata=19 de junho de 2025 |arquivourl=https://archive.is/6e5RH |arquivodata=19 de junho de 2025}}</ref>
+| prefeito = Guilherme Guimarães<ref name="IBGE_MontesClaros"/><ref>{{citar web |url=https://www.cnnbrasil.com.br/politica/saiba-a-lista-de-todos-os-prefeitos-eleitos-em-minas-gerais/ |título=Saiba a lista de todos os prefeitos eleitos em Minas Gerais |autor=Douglas Porto e Renata Souza |data=19 de dezembro de 2024 |publicado=CNN Brasil |acessodata=26 de outubro de 2025 |wayb=20251004155914}}</ref>
+| partido = [[União Brasil|UNIÃO]]
+| fim_mandato = 2028
+| área = 3589.811
+| área_ref = <ref name="IBGE_MontesClaros"/>
+| área_urbana = {{fmtn|73.51}}
+| área_urbana_data = [[IBGE]]/2019
+| área_urbana_ref = <ref name="IBGE_MontesClaros"/>
+| população = 414240
+| população_pos = [[Lista de municípios de Minas Gerais por população|MG: 5°]]
+| população_data = Censo [[IBGE]]/2022
+| população_ref = <ref name="IBGE_MontesClaros"/>
+| população_est = 437601
+| população_est_em = IBGE/2025
+| clima = tropical [[Clima semiárido|semiárido]] brando
+| sigla_clima = Aw
+| clima_ref = <ref name="IBGE_Clima"/>
+| altitude = 
+| altitude_ref = 
+| idh = 0.770
+| idh_pos = [[Lista de municípios de Minas Gerais por IDH-M|MG: 18°]]
+| idh_data = [[Programa das Nações Unidas para o Desenvolvimento|PNUD]]/2010
+| idh_ref = <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf |título=Ranking decrescente do IDH-M dos municípios do Brasil |autor=Atlas do Desenvolvimento Humano |data=29 de julho de 2013 |publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=8 de julho de 2014 |wayb=20140708233352 |urlmorta=yes}}</ref>
+| pib = {{fmtn|10800251.12|mil}}
+| pib_data = [[IBGE]]/2021
+| pib_ref = <ref name="IBGE_PIB_2021">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/montes-claros/pesquisa/38/46996 |título=Produto Interno Bruto dos Municípios - 2021 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2021 |acessodata=26 de outubro de 2025 |arquivourl=https://archive.is/bijub |arquivodata=26 de outubro de 2025}}</ref>
+| pib_per_capita = 25870.23
+| pib_per_capita_data = [[IBGE]]/2021
+| site_prefeitura = [https://montesclaros.mg.gov.br/ montesclaros.mg.gov.br]
+| site_câmara = [https://www.montesclaros.mg.leg.br/ montesclaros.mg.leg.br]
+}}
+'''Montes Claros''' é um [[Municípios do Brasil|município brasileiro]] no [[Interior de Minas Gerais|interior]] do [[Unidades federativas do Brasil|estado]] de [[Minas Gerais]], [[Região Sudeste do Brasil|Região Sudeste]] do país. Localiza-se no [[Norte de Minas Gerais|norte mineiro]], estando situado a cerca de {{fmtn|420|km}} da [[Belo Horizonte|capital estadual]]. Ocupa uma [[área]] de aproximadamente {{fmtn|3590|km²}}, sendo que {{fmtn|74|km²}} estão em [[Espaço urbano|área urbana]], e sua [[população]] foi estimada em {{fmtn|437601}} habitantes em 2025, posicionando-se como o [[Lista de municípios de Minas Gerais por população|quinto mais populoso do estado mineiro]].
+
+Montes Claros foi emancipada no século XIX, tendo, há bastante tempo, a [[indústria]] e o [[comércio]] como importantes atividades econômicas, sendo considerada um polo industrial regional. Atualmente é formada por onze [[Distritos do Brasil|distritos]] e subdividida ainda em cerca de 200 bairros e povoados.<ref name="GrandeBrasil_MontesClaros"/> Conta com diversos atrativos naturais, históricos ou culturais, como os Parques Municipal Milton Prates, Guimarães Rosa e Sapucaia, que são importantes áreas verdes, e construções como a [[Catedral]] de [[Nossa Senhora da Conceição Aparecida|Nossa Senhora Aparecida]] e a Igrejinha dos Morrinhos, além dos vários [[Sítio arqueológico|sítios arqueológicos]].<ref name="Prefeitura_Turismo"/>
+
+{{TOC-limitado|3}}
+
+== História ==
+=== Origens e pioneirismo ===
+As terras do atual município de Montes Claros eram, até a década de 1660, habitadas apenas pelos [[Povos indígenas do Brasil|povos indígenas]] [[Anais (povo)|Anais]] e [[Tapuias]]. Por volta do ano de 1554, uma expedição composta por 12 [[bandeirantes]], a Expedição Espinosa, desbravou a região à procura de pedras preciosas, e embrenhou-se pelo sertão do Norte da [[Capitania de São Paulo e Minas de Ouro]]. Contudo, esses aventureiros não se fixaram na região.
+
+Em 1674, [[Fernão Dias Pais]], o governador das esmeraldas, organizou uma [[Bandeirantes|bandeira]], para explorar aquela região, procurando encontrar pedras preciosas.<ref name="Prefeitura_História">{{citar web|url=http://www.montesclaros.mg.gov.br/cidade/aspectosgerais/historia.htm |título=História |autor=Prefeitura Municipal de Montes Claros |acessodata=11 de maio de 2011 |arquivourl=https://web.archive.org/web/20210223144526/http://www.montesclaros.mg.gov.br/cidade/aspectosgerais/historia.htm |arquivodata=2021-02-23}}</ref> [[Antônio Gonçalves Figueira]], que pertencia à Bandeira de Fernão Dias, acompanhou-a até às margens do [[Rio Paraopeba]], onde, com [[Matias Cardoso de Almeida]], abandonou o chefe, que voltou para São Paulo, chegando lá dois anos depois. Naquele lugar, Antônio e Matias construíram fazendas, cujas sedes foram crescendo e se transformando em cidades, mataram povos originários e continuaram a explorar as riquezas da região. 
+
+Pelo alvará de 12 de abril de 1707, [[Antônio Gonçalves Figueira]] obteve a [[sesmaria]] de uma [[légua]] de largura por três comprimentos, que constituiu a Fazenda de Montes Claros (uma das três fazendas), situada nas cabeceiras do [[Rio Verde Grande]], pela margem esquerda. Gonçalves Figueira, para alcançar mercado para o gado, construiu estradas para Tranqueiras, na Bahia, e para o [[Rio São Francisco]].<ref name="Prefeitura_História"/>
+[[Antônio Gonçalves Figueira]], que era natural de São Paulo, decidiu retornar para sua região de origem, deixando a fazenda de Montes Claros aos cuidados de seu irmão [[Manuel Afonso de Siqueira]], que era proprietário de fazendas vizinhas. 
+
+Algum tempo depois, os descendentes de Gonçalves Figueira venderam parte das terras da fazenda Montes Claros. O Alferes [[José Lopes de Carvalho]], cujo sobrinho havia se casado com a neta de Manuel Afonso de Siqueira, adquiriu parte da fazenda Montes Claros, onde ergueu a capela, onde atualmente é a Igreja Matriz Nossa Senhora da Conceição e São José de Montes Claros. Em volta da capela foi se formando o Arraial das Formigas, o segundo povoado da Fazenda Montes Claros, que anos mais tarde se tornou a cidade com mesmo nome.<ref>DE PAULA, Hermes. Montes Claros - sua história sua gente, seus costumes, Belo Horizonte, 1979</ref>
+
+=== Evolução administrativa ===
+[[Ficheiro:Casa do Alferes José Lopes de Carvalho.jpg|thumb|esquerda|Casa do Alferes José Lopes de Carvalho]]
+124 anos após obtenção da Sesmaria, por Antônio Gonçalves Figueira, o arraial já estava suficientemente desenvolvido para tornar-se independente, desmembrando-se do município do Serro Frio (atual [[Serro]]). Pelo esforço dos líderes políticos, o município  foi criado pela Lei de 13 de outubro de 1831, recebendo o nome de Montes Claros de Formigas. Sua vida como município independente iniciou-se em 1832, quando foi eleita e empossada a primeira Câmara Municipal. 
+
+Em 1857, a então Vila (município) de Montes Claros de Formigas possuía pouco mais de 2 mil habitantes, pois os melhoramentos existentes eram os mesmos de quase todos os municípios da Província. Assim, pela Lei 802 de 3 de julho daquele ano, a Vila passou à condição de cidade, com o nome de Montes Claros.<ref name="Prefeitura_História"/> Apesar de ter iniciado sua vida como município independente em 1832 com a posse da primeira Câmara Municipal e a eleição de seu Agente Executivo (cargo equivalente a prefeito), tradicionalmente o aniversário da cidade é comemorado em 3 de julho (referência a 1857) e não em 16 de outubro (1832), quando foi criado o municipio por emancipação do Serro. Tal história foi relatada e esclarecida no artigo "A invenção do 3 de julho"  publicado na revista Unimontes Cientifica.
+
+Pela lei provincial nº 1398, de 27 de novembro de 1867, e lei estadual nº 2, de 14 de setembro de 1891, foi criado o distrito de Brejos das Almas (ex-povoado de São Gonçalo do Brejo das Almas), primeiro distrito do município. Com o passar do tempo, o território montes-clarense sofreu diversas perdas territoriais e reformulações administrativas, com a criação e emancipação de diversos distritos.<ref name="IBGE_Histórico">{{citar web|url=https://biblioteca.ibge.gov.br/visualizacao/dtbs/minasgerais/montesclaros.pdf |título=Histórico |autor=Enciclopédia dos Municípios Brasileiros |autorlink=Enciclopédia dos Municípios Brasileiros |data=2007 |publicado=Biblioteca IBGE |acessodata=11 de maio de 2011 |wayb=20171121212442}}</ref>
+
+=== Após a fundação ===
+Após a emancipação política, com o crescimento populacional, houve a necessidade de investimentos na infraestrutura urbana municipal.<ref name="Prefeitura_História"/> Em 1871, foi criado o Hospital de Caridade, depois chamado "[[Santa Casa da Misericórdia|Santa Casa de Caridade]]". Em 2 de fevereiro de 1880 foi instalada a Escola Normal de Montes Claros. Em 24 de fevereiro de 1884 saiu o primeiro número do Semanário "Correio do Norte". Dia 14 de setembro de 1886 foi a data da inauguração da Capela de Santa Cruz, conhecida simplesmente por Capela do Morrinho. E em 27 de outubro de 1892 foi criada a primeira linha telegráfica da cidade.<ref name="Prefeitura_História"/>
+[[Imagem:Primeiro carro de Montes Claros MG.jpg|thumb|esquerda|Primeiros automóveis da cidade, em 1920.]]
+
+A indústria em Montes Claros começou com a fábrica de tecidos do Cedro, em 1882, que em 25 de julho de 1889 foi destruída por grande incêndio. Contava com ensino primário para instrução de funcionários.<ref>{{citar web|url=http://www.webcitation.org/5yc8CAoMF |título=Vasco Azevedo e a Instrução primária dos operários da indústria têxtil no início do século XX em Minas Gerais |autor=Daqui de Pitangui |data=26 de março de 2011 |acessodata=11 de maio de 2011}}</ref> No comércio destacou-se a criação do Mercado Municipal, cuja inauguração ocorreu no dia 3 de setembro de 1899. Situado no largo de cima, hoje praça Dr. Carlos Versiani, era construção imponente com uma torre bem alta, onde o relógio, doado por Dona Carlota Versiani, tocava a cada hora.<ref name="Prefeitura_História"/> No decorrer do século XX destacaram-se a chegada da energia elétrica à cidade, em 20 de janeiro de 1917, a chegada do primeiro automóvel, em 10 de novembro de 1920, a criação do serviço de água potável, em 18 de dezembro de 1938, e a Instalação do Serviço de Telefone Interurbano, em 30 de junho de 1956.<ref name="Prefeitura_História"/>
+
+=== Crescimento econômico e demográfico ===
+Em Montes Claros houve um grande processo de industrialização a partir da década de 1970. A atividade industrial, implantada a partir de incentivos fiscais e financeiros do poder público (federal, estadual e municipal) através da [[Superintendência de Desenvolvimento do Nordeste]] (SUDENE), fez com que a cidade se tornasse foco de um intenso fluxo migratório, o que gerou um crescimento urbano desordenado. Assim, o rápido processo de urbanização, agravado pela falta de planejamento, resultou numa diferenciação espacial intraurbana, com várias áreas demarcadas por focos de pobreza.<ref name="Observatório_Crescimento">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fobservatoriogeograficoamericalatina.org.mx%2Fegal10%2FGeografiasocioeconomica%2FGeografiadelapoblacion%2F29.pdf&date=2011-06-06 |título=Expansão territorial e os espaços de pobreza na cidade de Montes Claros |autor=Marcos Esdras Leite e Anete Marília Pereira |data=26 de março de 2005 |publicado=Observatório Geográfico América Latina |acessodata=6 de junho de 2011}}</ref> Na década de 1980, alterações importantes ocorreram na malha urbana com a ocupação de vazios urbanos na região sul, reforma de avenidas para permitir um melhor fluxo de veículos, verticalização na área central e suas proximidades, alteração na distribuição espacial de diversas atividades e dispersão da periferia.<ref name="Observatório_Crescimento"/>
+
+Com o passar do tempo, novas melhorias foram feitas, com fim de diminuir o índice de pobreza. Em 1970, 74,79% da população se encontrava em nível de pobreza, enquanto que em 2001 esta taxa era de 33,17%.<ref name="Observatório_Crescimento"/> Hoje a predominância do espaço rural foi e está sendo substituída pelo [[zona urbana|urbano]], para atender às exigências da expansão urbana, dada pelo aumento das atividades produtivas na cidade ([[indústria]], [[comércio]] e [[Serviço (economia)|serviços]]) e pelo aumento da demanda habitacional, gerado pela concentração populacional. O limite entre o campo e a cidade está deixando de ser visível e a população do campo vem decrescendo a cada ano.<ref name="Prefeitura_História"/><ref name="População_Sexo">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Fdemografia%2Fmu_dem_pop_total.asp%3FiIdMun%3D100131502+&date=2011-05-11 |título=Demografia - População Total |autor=Confederação Nacional dos Municípios (CNM) |data=2008 |acessodata=11 de maio de 2011}}</ref>
+
+== Geografia ==
+A área do município, segundo o [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), é de {{fmtn|3589.811|[[Quilómetro quadrado|km²]]}}, sendo que {{fmtn|73.51|km²}} constituem a [[Espaço urbano|zona urbana]].<ref name="IBGE_MontesClaros"/> Situa-se a 16°44'06" de [[latitude]] sul e 43°51'43" de [[longitude]] oeste e está a uma distância de 417 quilômetros a norte da [[Belo Horizonte|capital mineira]].<ref name="DER_Distâncias"/> Seus municípios limítrofes são [[São João da Ponte]], a norte; [[Capitão Enéas]], a nordeste; [[Francisco Sá (Minas Gerais)|Francisco Sá]], a leste; [[Juramento (Minas Gerais)|Juramento]] e [[Glaucilândia]], a sudeste; [[Bocaiuva]] e [[Engenheiro Navarro]], a sul; [[Claro dos Poções]], a sudoeste; [[São João da Lagoa]] e [[Coração de Jesus (Minas Gerais)|Coração de Jesus]], a oeste; e [[Mirabela]] e [[Patis]], a noroeste.<ref name="cidadesnet.com">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fcidadesnet.com%2Fmunicipios%2Fmontesclaros.htm+&date=2011-05-14 |titulo=Montes Claros - MG |autor=Cidades.Net |acessodata=14 de maio de 2011}}</ref><ref name="Prefeitura_Geografia"/>
+
+[[Imagem:Fazenda em Montes Claros MG.jpg|thumb|direita|Pastagens em terreno ondulado na zona rural de Montes Claros.]]
+De acordo com a [[Regiões geográficas intermediárias e imediatas|divisão regional vigente]] desde 2017, instituída pelo IBGE,<ref>{{citar web|URL=https://www.ibge.gov.br/geociencias-novoportal/cartas-e-mapas/redes-geograficas/2231-np-divisoes-regionais-do-brasil/15778-divisoes-regionais-do-brasil.html |título=Divisão Regional do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=21 de novembro de 2017 |wayb=20171121155206}}</ref> o município pertence às [[Lista de regiões geográficas intermediárias e imediatas de Minas Gerais|Regiões Geográficas]] Intermediária e Imediata de Montes Claros.<ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=21 de novembro de 2017}}</ref> Até então, com a vigência das divisões em [[Mesorregiões e microrregiões do Brasil|microrregiões e mesorregiões]], fazia parte da microrregião de Montes Claros, que por sua vez estava incluída na [[Lista de mesorregiões e microrregiões de Minas Gerais|mesorregião do Norte de Minas]].<ref name="IBGE_DTB_2016">{{citar web|URL=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2016/DTB_2016_v2.zip |título=Divisão Territorial Brasileira 2016 |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2016 |acessodata=21 de novembro de 2017}}</ref>
+
+O ponto central da cidade tem uma altitude média de 655,21 [[metro]]s. O ponto culminante do município é o [[Morro Vermelho]], onde a altitude chega aos 1 075 metros. Em Montes Claros predomina um [[Relevo (geografia)|relevo]] ondulado, com mares de morros e montanhas. A altitude mínima, que é de 502 metros, encontra-se na [[foz]] do Ribeirão do Ouro.<ref name="cidadesnet.com"/> 60% do terreno municipal são ondulados, 30% são de áreas planas e os 10 % restantes são zonas montanhosas.<ref name="cidadesnet.com"/>
+
+O município pertence à [[Bacia do rio São Francisco]], além de ser banhado pelos rios [[Rio do Vieira|do Vieira]], [[Rio do Cedro|do Cedro]],<ref name="cidadesnet.com"/> [[Rio Verde Grande|Verde Grande]], [[Rio Pacuí|Pacuí]], [[Rio São Lamberto|São Lamberto]]<ref name="Prefeitura_Geografia">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcidade%2Faspectosgerais%2Fgeografia.htm+&date=2011-05-14 |título=Geografia |autor=Prefeitura |acessodata=14 de maio de 2011}}</ref> e [[Rio Riachão|Riachão]].<ref>{{citar web|url=http://www.atlasdasaguas.ufv.br/alto_e_medio_sao_francisco/impacto_ambiental_relevante_na_sub_bacia_do_rio_riachao_norte_de_minas_gerais.html |título=Impacto ambiental relevante na sub-bacia do rio Riachão, Norte de Minas Gerais |autor=Atlas da Água |data=2010 |acessodata=7 de junho de 2011}}</ref> Ainda há as [[lagoa]]s: Tiriricas, Lagoão, Periperi, São João, Brejão, Garça, Vereda dos Caetanos, Mombuca, São Jorge, Freitas, Matos e Barreiro. No solo de Montes Claros predomina uma [[Pré-Cambriano|formação Pré-cambriana antiga]], com ocorrência de siltito, ardósia, calcários, filitos, calcita, galena, minério de ferro, azotato de potássio, cristal de rocha e ouro de aluvião.<ref name="Prefeitura_Geografia"/>
+
+=== Geologia ===
+Há uma [[falha geológica]] nos entornos da cidade, que é apontada como a responsável por tremores de terra. Ela tem cerca de 3 quilômetros de extensão (estende-se do bairro Vila Atlântica à Serra do Mel) e está situada a uma profundidade de 1,5 a 2 quilômetros. Por conta da "fenda" no subsolo, a terra treme quase que continuamente, segundo informações divulgadas por professores do departamento de Geofísica da [[Universidade de São Paulo]] (USP) e do Observatório Sismológico da [[Universidade de Brasília]] (UnB).<ref>{{citar web |url=http://www.bhaz.com.br/bombeiros-receberam-mais-de-500-ligacoes-apos-tremores-de-terra-registrados-em-montes-claros/ |arquivourl=https://www.webcitation.org/6D2Ob5myA?url=http://www.bhaz.com.br/bombeiros-receberam-mais-de-500-ligacoes-apos-tremores-de-terra-registrados-em-montes-claros/ |arquivodata=2012-12-19 |título=Bombeiros receberam mais de 500 ligações após tremores de terra registrados em Montes Claros |autor=Belo Horizonte de A a Z |data=19 de dezembro de 2012 |acessodata=19 de dezembro de 2012 |urlmorta=no }}</ref>
+
+O abalo de maior intensidade já registrado foi de cerca de 4.2 graus na [[Escala Richter]], ocorrido em 19 de maio de 2012, atingindo 60 casas, sendo que seis delas foram condenadas e duas interditadas pela Defesa Civil da cidade, com as famílias desabrigadas. Segundo informações, tremores superiores a 5 graus na Escala Richter são improváveis e imprevisíveis, mas possíveis. Porém, como os abalos duram segundos, não há risco de causar danos graves. Sismógrafos contabilizaram 174 tremores de terra em Montes Claros de julho a dezembro de 2012.<ref>{{citar web |url=http://exame.abril.com.br/meio-ambiente-e-energia/noticias/montes-claros-registra-pelo-menos-dois-tremores-de-terra |arquivourl=https://www.webcitation.org/6D2Odpz7g?url=http://exame.abril.com.br/meio-ambiente-e-energia/noticias/montes-claros-registra-pelo-menos-dois-tremores-de-terra |arquivodata=2012-12-19 |título=Montes Claros registra pelo menos dois tremores de terra |autor=Paula Laboissière |data=19 de dezembro de 2012 |publicado=Revista Exame |acessodata=19 de dezembro de 2012 |urlmorta=no }}</ref>
+
+=== Clima ===
+{| class=wikitable style="float:left; margin:0.5em; border-collapse:border; text-align:center; font-size:87%"
+! colspan="6"| Maiores acumulados de precipitação em 24 horas<br />registrados em Montes Claros por meses ([[Instituto Nacional de Meteorologia|INMET]])<ref name="bdmep.inmet.gov.br"/><ref name="Estação: MONTES CLAROS (83437)"/>
+|-
+! Mês
+! Acumulado
+! Data
+! Mês
+! Acumulado
+! Data
+|-
+| Janeiro
+| {{fmtn|136.7|mm}}
+| 13/01/1961
+| Julho
+| {{fmtn|27.8|mm}}
+| 22/07/1978
+|-
+| Fevereiro
+| {{fmtn|117.8|mm}}
+| 04/02/2018
+| Agosto
+| {{fmtn|32.2|mm}}
+| 30/08/1990
+|-
+| Março
+| {{fmtn|143|mm}}
+| 02/03/1997
+| Setembro
+| {{fmtn|60.4|mm}}
+| 23/09/2002
+|-
+| Abril
+| {{fmtn|66.1|mm}}
+| 13/04/1996
+| Outubro
+| {{fmtn|78.5|mm}}
+| 30/10/2009
+|-
+| Maio
+| {{fmtn|61.4|mm}}
+| 01/05/2025
+| Novembro
+| {{fmtn|156.7|mm}}
+| 16/11/1971
+|-
+| Junho
+| {{fmtn|24.5|mm}}
+| 24/06/2004
+| Dezembro
+| {{fmtn|145|mm}}
+| 26/12/2002
+|-
+| colspan="6" style="font-size:86%" | '''Período''': 01/01/1961 a 08/02/1963 e 01/10/1968-presente
+|}
+
+O [[clima]] montes-clarense é caracterizado como tropical quente [[Clima semiárido|semiárido]] brando<ref name="IBGE_Clima">{{citar web |url=http://biblioteca.ibge.gov.br/visualizacao/mapas/GEBIS%20-%20RJ/BrasilClimas.jpg |título=Brasil - Climas |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |publicado=Biblioteca IBGE |acessodata=26 de outubro de 2025 |wayb=20131012015042}}</ref> (tipo ''Aw'' segundo [[Classificação climática de Köppen-Geiger|Köppen]]),<ref name="Climatologia_MontesClarosMG">{{citar web|url=https://pt.climate-data.org/america-do-sul/brasil/minas-gerais/montes-claros-2886/ |título=Clima: Montes Claros |autor=Climate-Data.org |acessodata=26 de outubro de 2025 |arquivourl=https://archive.is/unlMw |arquivodata=26 de outubro de 2025}}</ref> tendo [[inverno]]s secos e amenos e [[Verão|verões]] chuvosos com [[temperatura]]s altas, com [[índice pluviométrico]] anual de {{fmtn|1000|mm}}. Durante a [[estação seca]] é comum os índices de [[umidade relativa do ar]] (URA) despencarem, sendo comuns valores abaixo de 30%,<ref>{{citar web|url=http://jornalmontesclaros.com.br/2014/07/09/norte-de-minas-subiu-para-129-o-numero-de-municipios-mineiros-em-situacao-de-emergencia-por-causa-da-seca.html|título=Norte de Minas - Subiu para 129 o número de municípios mineiros em situação de emergência por causa da seca|data=9 de julho de 2014|publicado=Jornal Montes Claros|acessodata=20 de agosto de 2014|arquivourl=http://archive.is/4o4Xk |arquivodata=20 de agosto de 2014}}</ref> ou ainda de 20%,<ref>{{citar web|url=http://montesclaros.com/noticias.asp?codigo=45023|título=OMS pede “alertas” para umidade do ar abaixo de 20%; e ela já chegou a 13% em Montes Claros|data=1 de agosto de 2009|acessodata=20 de agosto de 2014|arquivourl=http://archive.is/7oAbM |arquivodata=20 de agosto de 2014}}</ref> muito abaixo dos 60% recomendáveis pela [[Organização Mundial da Saúde]] (OMS).<ref>{{citar web|url=http://www.climatempo.com.br/destaques/2011/07/13/tempo-de-seca-no-brasil-atencao-com-a-baixa-umidade-do-ar/ |título=Tempo de seca no Brasil: atenção com a baixa umidade do ar |autor=Climatempo |data=13 de julho de 2011 |acessodata=15 de agosto de 2011}}</ref> Nessa mesma época tornam-se mais frequentes os registros de [[queimada]]s, principalmente na zona rural, que, pelo lançamento de poluentes na [[atmosfera]], contribuem para prejudicar a qualidade do ar.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.gazetanortemineira.com.br%2Fnoticias.php%3Fid%3D3703+&date=2011-05-14 |titulo=Queimadas preocupam no Norte de Minas |autor=Paula Machado |data=17 de setembro de 2009 |publicado=Jornal Gazeta Norte Mineira |acessodata=14 de maio de 2011}}</ref>
+
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de 1961 a 1963 e a partir de 1968, a menor temperatura registrada em Montes Claros foi de {{fmtn|5.8|°C}} em 18 de julho de 2000,<ref name="bdmep.inmet.gov.br"/><ref name="Estação: MONTES CLAROS (83437)"/> porém o recorde mínimo absoluto desde 1912 foi de {{fmtn|3.2|°C}} em 18 de junho de 1915.<ref>{{Citar periódico|autor=Fundação João Pinheiro |ano=1994 |título=Anuário Estatístico de Minas Gerais 1990-1993 |jornal=Secretaria de Estado do Planejamento e Coordenação Geral |página=54–55 |issn=0101-7918 |url=http://www.bibliotecadigital.mg.gov.br/consulta/verDocumento.php?iCodigo=51563 |volume=8 |local=Belo Horizonte (MG) |acessadoem=10 de março de 2019 |wayb=20190310025606}}</ref> A maior temperatura, por outro lado, chegou a {{fmtn|40.4|°C}} em 8 de outubro de 2020, superando o recorde anterior de {{fmtn|40.3|°C}} em 6 de novembro de 2015.<ref name="bdmep.inmet.gov.br"/><ref name="Estação: MONTES CLAROS (83437)"/>
+
+Ainda de acordo com o INMET, o maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas no mesmo período chegou a {{fmtn|156.7}} milímetros (mm) em 16 de novembro de 1971. Outros acumulados iguais ou superiores a {{fmtn|100|mm}} foram {{fmtn|143|mm}} em 2 de março de 1997, {{fmtn|136.7|mm}} em 13 de janeiro de 1961, {{fmtn|136|mm}} em 4 de janeiro de 1961, {{fmtn|135.8|mm}} em 11 de janeiro de 1962, {{fmtn|128.3|mm}} em 20 de janeiro de 2013, {{fmtn|117.8|mm}} em 4 de fevereiro de 2018, {{fmtn|114.3|mm}} em 18 de dezembro de 1989, {{fmtn|107.8|mm}} em 5 de novembro de 1998, {{fmtn|105.4|mm}} em 1 de janeiro de 1962 e {{fmtn|101|mm}} em 20 de dezembro de 1993. Janeiro de 1961, com {{fmtn|956.6|mm}}, foi o mês de maior precipitação.<ref name="bdmep.inmet.gov.br"/><ref name="Estação: MONTES CLAROS (83437)"/>
+{{Tabela climática de Montes Claros}}
+[[Ficheiro:Parque Estadual da Lapa Grande-Alisson Almeida Santos(10).jpg|miniaturadaimagem|[[Parque Estadual da Lapa Grande]], localizado em Montes Claros.]]
+
+=== Ecologia e meio ambiente ===
+Montes Claros pertence ao domínio do [[cerrado]], onde há ocorrências do cerrado caducifólio e do cerrado subcaducifólio, com ligeiras ocorrências de cerrado superemifólio Também há trechos com registros de [[caatinga]] hipogerófila. Na [[flora]] regional é comum o desenvolvimento da ''[[tabebuia]]'' (pau-d'arco), do pequizeiro, do bloco de Juriti, do [[jatobá]], da macambira, do ''[[schinopsis brasiliensis]]'' (braúna) e da paineira (barriguda), além de possuir uma flora rica em plantas medicinais.<ref name="Prefeitura_Geografia"/>
+
+Segundo a Lei nº 3754, de 15 de junho de 2007, que institui a política municipal de proteção, preservação, conservação, controle e recuperação do meio ambiente de Montes Claros, o Conselho Municipal de Defesa e Conservação do Meio Ambiente (CODEMA) é o órgão público responsável pela proteção, conservação e melhoria do meio ambiente da cidade. Também é a encarregada de monitorar o uso das Áreas de Proteção Ambiental do município.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fpublica_legais%2Fleis_pdf%2Fleis-2007%2Fjun-07%2Flei-3754-07.pdf+&date=2011-05-14 |título=Lei nº 3754 de 15 de junho de 2007 |autor=Prefeitura |data=15 de junho de 2007 |acessodata=14 de maio de 2011}}</ref>
+
+== Demografia ==
+{| class="toccolours" align="right" cellpadding="1" cellspacing="0" style="margin:0 0 1em 1em; clear:right; text-align:center"
+|-
+! colspan="4" bgcolor="#ccccff" style="background-color:#ccccff; padding-right:3px; padding-left:3px; font-size:110%; text-align:center" | Crescimento populacional de<br /> Montes Claros (MG)<ref name="Observatório_Crescimento"/>
+|- style="font-size:95%"
+| '''Ano'''
+| '''Sede'''
+| '''Distritos'''
+| '''Total'''
+|- align="center"
+|1808
+|{{formatnum:400}}
+|{{formatnum:600}}
+|{{formatnum:1000}}
+|- align="center"
+|1817
+|{{formatnum:800}}
+|{{formatnum:1200}}
+|{{formatnum:2000}}
+|- align="center"
+|1832
+|{{formatnum:1000}}
+|{{formatnum:2350}}
+|{{formatnum:3350}}
+|- align="center"
+|1837
+|{{formatnum:1000}}
+|{{formatnum:4350}}
+|{{formatnum:5350}}
+|- align="center"
+|1838
+|{{formatnum:1000}}
+|{{formatnum:4519}}
+|{{formatnum:5519}}
+|- align="center"
+|1855
+|{{formatnum:}}
+|{{formatnum:}}
+|{{formatnum:24058}}
+|- align="center"
+|1872
+|{{formatnum: 10005}}
+|{{formatnum: 30312}}
+|{{formatnum: 40317}}
+|- align="center"
+|1897
+|{{formatnum:15000}}
+|{{formatnum:27000}}
+|{{formatnum:42000}}
+|- align="center"
+|1900
+|{{formatnum:18000}}
+|{{formatnum:36356}}
+|{{formatnum:54356}}
+|- align="center"
+|1916
+|{{formatnum:28000}}
+|{{formatnum:24000}}
+|{{formatnum:52000}}
+|- align="center"
+|1940
+|{{formatnum:}}
+|{{formatnum:}}
+|{{formatnum:61532}}
+|- align="center"
+|1950
+|{{formatnum:20370}}
+|{{formatnum:51366}}
+|{{formatnum:71736}}
+|- align="center"
+|1955
+|{{formatnum:}}
+|{{formatnum:}}
+|{{formatnum:68971}}
+|- align="center"
+|1960
+|{{formatnum:43097}}
+|{{formatnum:59020}}
+|{{formatnum:102117}}
+|- align="center"
+|1970
+|{{formatnum:85154}}
+|{{formatnum:31332}}
+|{{formatnum:116486}}
+|- align="center"
+|1980
+|{{formatnum:155483}}
+|{{formatnum:22075}}
+|{{formatnum:177302}}
+|- align="center"
+|1991
+|{{formatnum:}}
+|{{formatnum:}}
+|{{formatnum:250062}}
+|- align="center"
+|2000
+|{{formatnum:289183}}
+|{{formatnum:17764}}
+|{{formatnum:306947}}
+|- align="center"
+|2010
+|{{formatnum:344479}}
+|{{formatnum:17492}}
+|{{formatnum:361971}}
+|- align="center"
+|2020
+|{{formatnum:}}
+|{{formatnum:}}
+|{{formatnum:413487}}
+|- align="center"
+|2022
+|{{formatnum:}}
+|{{formatnum:}}
+|{{formatnum:414240}}
+|- align="center"
+|}
+
+A primeira estimativa da quantidade populacional foi expressada quando a cidade de Montes Claros era chamada de Arraial das Formigas. Em viagem realizada em 1817, Saint-Hilaire escreveu: "''Essa povoação, que pode compreender atualmente duzentas casas e mais de oitocentas almas, é certamente uma das mais belas que vi na Província de Minas''". <ref> "SAINT HILAIRE, A. Viagem pelas províncias do Rio de Janeiro e Minas Gerais. Belo Horizonte: Itatiaia, 2000"</ref>
+
+De acordo com o Censo Populacional promovido pelo Império Brasileiro em 1832, em Montes Claros havia {{fmtn|3350}} habitantes, dentre eles 499 pessoas escravizadas (cerca de 0,24% em relação ao total da Província de Minas Gerais).<ref>Botelho, Tarcísio Rodrigues. 1997. “Batismo E Compadrio De Escravos: Montes Claros (MG), século XIX”. Locus: Revista De História 3 </ref>
+
+Conforme o Recenseamento Geral do Império feito em 1872, havia {{fmtn|8862}} pessoas livres e {{fmtn|1143}} pessoas escravizadas no município de Montes Claros, fazendo um total de {{fmtn|10005}} habitantes. Enquanto que a soma total da população, incluindo os distritos e a zona rural totalizava {{fmtn|40317}} habitantes.<ref>BRASIL, Recenseamento Geral do Império, 1872</ref> 
+
+Em 30 de outubro de 1884, o distrito Jequitaí foi elevada à condição de "cidade de Jequitaí", reduzindo a quantidade total da população de Montes Claros. 
+
+Em 1897, no estudo feito pelo desembargador [[Antônio Augusto Velloso]], foi estimada a população do município com 15 mil habitantes. Incluindo os distritos e a zona rural totalizava cerca de 42 mil habitantes. <ref> "VELLOSO, Antônio Augusto. Corografia Mineira. Belo Horizonte, 1897"</ref> 
+
+Em 7 de setembro de 1923, o distrito de Brejo das Almas foi elevado a categoria de cidade de [[Francisco Sá (Minas Gerais)|Francisco Sá]]. Em 10 de setembro de 1925, o distrito de [[Coração de Jesus (Minas Gerais)|Coração de Jesus]] foi elevado ao status de cidade, e por isso a contagem total do crescimento populacional de Montes Claros foi afetada. 
+
+Em 1940, o IBGE contou {{fmtn|61532}} habitantes em Montes Claros, dos quais {{fmtn|28798}} brancos, {{fmtn|10326}} pretos, 2 amarelos, {{fmtn|22396}} pardos e 10 não declarados.<ref>Recenseamento 1940 IBGE https://biblioteca.ibge.gov.br/visualizacao/periodicos/65/cd_1940_p13_t2_mg.pdf </ref>Dez anos depois, com o censo de 1950, o IBGE contou a população de {{fmtn|71736}} habitantes. 
+
+Em 12 de dezembro de 1953, desmembra do município de Montes Claros o distrito de [[Juramento (Minas Gerais)|Juramento]], elevado à categoria de município. Por isso ocorreu diminuição na contagem total da população no censo de 1955.
+
+Em 2000, segundo dados do Censo Instituto Brasileiro de Geografia e Estatística daquele ano, a população montes-clarense era composta por {{fmtn|131231}} brancos (42,75%); {{fmtn|16691}} pretos (5,44%); {{fmtn|156126}} pardos (50,86%); 260 amarelos (0,08%); {{fmtn|1153}} indígenas (0,38%); além de {{fmtn|1485}} sem declaração (0,48%).<ref name="SIDRA_Raça">{{citar web|url=http://www.sidra.ibge.gov.br/bda/tabela/protabl.asp?c=2094&z=cd&o=7&i=P |titulo=População de Montes Claros por raça e cor |autor=Sidra (Sistema IBGE de Recuperação de Dados Automática) |data=2000 |acessodata=21 de maio de 2011}}</ref>
+
+Em 2010, a população do município foi contada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em {{formatnum:361971}} habitantes, sendo o [[Lista de municípios de Minas Gerais por população|sexto mais populoso do estado]] e o [[Lista dos cem municípios mais populosos do Brasil (2010)|62º do país]] e apresentando uma [[densidade populacional]] de 101,05 habitantes por km².<ref name="IBGE_Pop_2010">{{citar web |url=http://www.ibge.gov.br/home/estatistica/populacao/censo2010/tabelas_pdf/total_populacao_minas_gerais.pdf |arquivourl=https://www.webcitation.org/62vRN1jFU?url=http://www.ibge.gov.br/home/estatistica/populacao/censo2010/tabelas_pdf/total_populacao_minas_gerais.pdf |arquivodata=2011-11-03 |título=Censo 2010 - Minas Gerais |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata=6 de setembro de 2013 |urlmorta=no }}</ref> Segundo o [[Censo demográfico|censo]] de 2010, {{formatnum:174281}} habitantes eram homens e {{formatnum:187690}} mulheres. Ainda segundo o mesmo censo, {{formatnum:344479}} habitantes viviam na zona urbana e {{formatnum:17492}} na [[zona rural]].<ref name="IBGE_Pop_2010" />
+
+De acordo com um estudo genético publicado em 2010,<ref>[http://www.funpecrp.com.br/gmr/year2010/vol9-4/pdf/gmr911.pdf]</ref> a composição genética da população pesquisada em Montes Claros naquele ano era a seguinte: 52% de contribuição europeia, 39% de contribuição africana e 9,0% de contribuição indígena.
+
+Segundo o IBGE 2022 a população de Montes Claros se declara Parda 60%,  branca 28%, Preta 10%, indígena 0,11%, amarela 0,1%. <ref>[https://g1.globo.com/economia/censo/noticia/2023/12/22/censo-2022-veja-quais-sao-os-municipios-mais-amarelos-brancos-indigenas-pardos-e-pretos-do-brasil.ghtml]</ref>
+
+=== Índice de Desenvolvimento Humano ===
+Em Montes Claros, assim como em grande parte do país, o crescimento desordenado da população, causado pelo intenso fluxo migratório sofrido na [[década de 1970]], aliado à falta de planejamento, resultou numa diferenciação espacial intraurbana, com várias áreas demarcadas por focos de pobreza.<ref name="Observatório_Crescimento"/> Até por volta de 1970, a ocupação urbana se restringia à região central da cidade e bairros adjacentes. A partir dessa época, a área urbana passou a sofrer alterações significativas, sendo que as zonas norte, leste e sul tiveram uma expansão populacional mais intensa do que a zona oeste, que é ocupada por uma população de maior renda. O processo de ocupação não ocorreu de forma homogênea, existindo, ainda hoje, muitas áreas caracterizadas como vazios urbanos, em contraste com bairros subdesenvolvidos e [[favela]]s.<ref name="Observatório_Crescimento"/>
+
+Na área urbana, a distribuição espacial da população está diretamente relacionada à condição social dos moradores, gerando [[desigualdade econômica]] na cidade. Bairros localizados próximo ao centro possuem população com maior [[poder aquisitivo]], enquanto que a periferia é onde estão localizados os mais subdesenvolvidos.<ref name="Observatório_Crescimento"/> De acordo com o IBGE, em 2002 o Índice de Condições de Vida (ICV) era maior nos bairros Cidade Santa Maria (0,81), Todos os Santos (0,68) e São Luís (0,73), situados na região central. E era menor no Vila Mauriceia (0,31), Vera Cruz (0,37) e Vila Atlântida (0,27), todos localizados em áreas afastadas do centro.<ref name="Observatório_Crescimento"/>
+
+No ano de 2009, de acordo com o IBGE, o [[coeficiente de Gini]], que mede a desigualdade social, era de 0,41, sendo que 1,00 é o pior número e 0,00 é o melhor.<ref name="GINI" /> A incidência da pobreza, medida pelo IBGE, é de 31,37%, o limite inferior da incidência de pobreza é de 21,74%, o superior é de 41,00% e a incidência da pobreza subjetiva é de 26,03%.<ref name="GINI">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dmpobreza2003%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-17 |título=Indicadores sociais dos municípios brasileiros |publicado=IBGE |acessodata=15 de maio de 2011}}</ref>
+
+O [[Índice de Desenvolvimento Humano]] Municipal (IDH-M) de Montes Claros é considerado alto pelo Programa das [[Organização das Nações Unidas|Nações Unidas]] (ONU), para o Desenvolvimento ([[Programa das Nações Unidas para o Desenvolvimento|PNUD]]). Seu valor é de 0,770, sendo o 227° maior de todo país (entre {{fmtn|5565}} municípios). A cidade possui a maioria dos indicadores médios e parecidos com os da média nacional segundo o PNUD.<ref name="PNUD_IDH_2010"/>
+
+=== Religião ===
+[[Imagem:Igreja Matriz de Montes Claros MG.jpg|thumb|esquerda|Igreja Matriz de Montes Claros.]]
+Tal como a variedade cultural em Montes Claros, são diversas as [[Religião|manifestações religiosas]] presentes na cidade. Embora tenha se desenvolvido sobre uma matriz social eminentemente [[Catolicismo|católica]], é possível encontrar atualmente na cidade dezenas de denominações [[Protestantismo|protestantes]] diferentes.<ref name="Religião"/>
+
+O município de Montes Claros está localizado no país mais católico do mundo em números absolutos. A [[Igreja Católica]] teve seu estatuto jurídico reconhecido pelo governo federal em outubro de 2009,<ref>{{Citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Foglobo.globo.com%2Feconomia%2Fmat%2F2009%2F10%2F08%2Fsenado-aprova-acordo-com-vaticano-767959739.asp&date=2011-04-13 |título=Senado aprova acordo com o Vaticano  |autor=Cristiane Agostine |publicado= O Globo |data= 8 de outubro de 2009 |acessodata=15 de maio de 2011}}</ref> ainda que o [[Brasil]] seja atualmente um estado oficialmente laico.<ref>{{citar web|url=https://jus.com.br/artigos/8519/brasil-estado-laico-e-a-inconstitucionalidade-da-existencia-de-simbolos-religiosos-em-predios-publicos |titulo=Brasil: Estado laico e a inconstitucionalidade da existência de símbolos religiosos em prédios públicos |autor=Fernando Fonseca de Queiroz |data=Outubro de 2005 |publicado=Jus Navigandi |acessodata=20 de julho de 2011}}</ref>
+
+O município possui os mais diversos credos evangélicos ou reformados, como a [[Assembleia de Deus (Brasil)|Assembleia de Deus]], a [[Igreja Cristã Maranata]], a [[Presbiterianismo|Igreja Presbiteriana]], as [[Igreja Batista|igrejas batistas]], a [[Igreja Adventista do Sétimo Dia]] e a [[Igreja Universal do Reino de Deus]], entre outras. De acordo com dados do censo de 2000 realizado pelo IBGE, a população de Montes Claros está composta por: [[Catolicismo|católicos]] (77,13%), [[Protestantismo|evangélicos]] (15,58%), [[Sem religião|pessoas sem religião]] (4,02%), [[Espiritismo|espíritas]] (0,66%) e 2,61% estão divididas entre outras religiões.<ref name="Religião">{{citar web |url=http://www.webcitation.org/5yl0zVw22 |titulo=Religião |acessodata=15 de maio de 2011}}</ref> Segundo o censo brasileiro de 2022, a composição religiosa da cidade era de 62,51% católicos, 28,82% evangélicos ou protestantes, 0,91% espíritas, 0,27% umbandistas ou candomblecistas, 0,0% de religião tradicional, 2,95% de outras religiões, 4,46% irreligiosos, 0,03% não informados e 0,04% não declarados.<ref>{{Citar web|url=https://g1.globo.com/economia/censo/noticia/2025/06/06/mapa-censo-ibge-religiao.ghtml|titulo=MAPA: Qual é a religião mais popular da sua cidade?|data=2025-06-06|acessodata=2025-06-09|website=G1|lingua=pt-br}}</ref>
+
+== Política e administração ==
+De acordo com a [[Constituição brasileira de 1988|Constituição de 1988]], Montes Claros está localizada em uma [[república]] [[Federalismo|federativa]] [[Presidencialismo|presidencialista]]. Foi inspirada no modelo [[Estados Unidos|estadunidense]], no entanto, o sistema legal brasileiro segue a tradição [[Direito romano|romano]]-[[Direito germânico|germânica]] do [[Direito positivo]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.oas.org%2Fjuridico%2Fmla%2Fen%2Fbra%2Fen_bra-int-des-ordrjur.html&date=2011-04-13 |titulo=The Brazilian Legal System |língua=Inglês |autor=Organization of American States (OAS) |acessodata=15 de maio de 2011}}</ref> A administração municipal se dá pelo [[poder executivo]] e pelo [[poder legislativo]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fjusvi.com%2Fartigos%2F20074&date=2011-04-13 |titulo=O Poder Público Municipal à frente da obrigação constitucional de criação do sistema de controle interno |autor=Flávio Henrique M. Lima |data=8 de fevereiro de 2006 |publicado=JusVi |acessodata=15 de maio de 2011}}</ref>
+
+Antes de 1930 os municípios eram dirigidos pelos presidentes das câmaras municipais, também chamados de agentes executivos ou intendentes. Somente após a [[Revolução de 1930]] é que foram separados os poderes municipais em executivo e legislativo.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.camarabp.sp.gov.br%2Fconteudo%2Fcamara-municipal-da-estancia-de-braganca-paulista-&date=2011-04-13 |titulo=Câmara Municipal de Bragança Paulista |autor=Câmara Municipal de Bragança Paulista |acessodata=15 de maio de 2011}}</ref> O primeiro intendente do município foi José Pinheiro Neves e o primeiro líder do poder executivo e [[Prefeitura (Brasil)|prefeito]] do município foi Orlando Ferreira Pinto. Em vinte e nove mandatos, 25 prefeitos passaram pela prefeitura de Montes Claros, além dos 22 agentes executivos.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcidade%2Faspectosgerais%2Fprefeitos.htm+&date=2011-05-17 |titulo=Ex-prefeitos |autor=Prefeitura |acessodata=15 de maio de 2011}}</ref> Em 2008, o prefeito que venceu as [[Eleições municipais no Brasil em 2008|eleições municipais]] foi [[Luiz Tadeu Leite]], do [[Partido do Movimento Democrático Brasileiro]] (PMDB), sendo eleito com 96 374 votos (52,58% dos votos válidos) no segundo turno das votações, realizados pelo fato de a cidade ter mais de 200 mil eleitores e de Tadeu não ter conseguido mais de 50% das intenções no primeiro turno.<ref name="G1_Eleições2008">{{citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Fg1.globo.com%2FEleicoes2008%2F0%2C%2CMUL830781-15721%2C00-LUIS%2BTADEU%2BLEITE%2BE%2BELEITO%2BPREFEITO%2BDE%2BMONTES%2BCLAROS%2BMG.html+&date=2011-05-17 |titulo=Luis Tadeu Leite é eleito prefeito de Montes Claros (MG) |autor=G1 |data=26 de outubro de 2008 |acessodata=15 de maio de 2011}}</ref>
+
+O [[Poder legislativo]] é constituído pela [[Câmara municipal (Brasil)|Câmara]], composta por 15 vereadores eleitos para mandatos de quatro anos, em observância ao disposto no artigo 29 da [[Constituição]].<ref>{{citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.dji.com.br%2Fconstituicao_federal%2Fcf029a031.htm&date=2011-04-13 |autor=DJI |titulo=Constituição Federal - CF - 1988 / Art. 29  |acessodata=15 de maio de 2011}}</ref> Cabe à casa elaborar e votar leis fundamentais à administração e ao Executivo, especialmente o orçamento participativo ([[Lei de Diretrizes Orçamentárias]]).
+
+O município de Montes Claros se rege por lei orgânica, criada em 1 de fevereiro de 2007.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fprefeitura%2Flegislacao%2Fpaginas%2Farquivos%2Flei_organica_municipal.pdf&date=2011-05-17 |titulo=Lei Orgânica do Município de Montes Claros |autor=Câmara Municipal |data=1 de fevereiro de 2007 |acessodata=15 de maio de 2011}}</ref> A cidade também é a sede de uma [[Comarca]].<ref name="comarca">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.tjmg.jus.br%2Fjuridico%2Fsf%2Fcomarcas.html&date=2011-04-25 |titulo=Lista de Comarcas do Estado de Minas Gerais |autor= Tribunal de Justiça do Estado de Minas Gerais |acessodata=15 de maio 2011}}</ref> O município possuía, em 2010, 238 405 [[eleitor]]es, um aumento de 10,9% em comparação a 2006.<ref name="Eleitores">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fintertvonline.globo.com%2Fmg%2Fnoticias.php%3Fid%3D7690+&date=2011-05-17 |título=Cresce o número de eleitores em Montes Claros |autor=In360 |data=23 de julho de 2010 |acessodata=15 de maio de 2011}}</ref>
+
+== Subdivisões ==
+{{Ver anexo|Lista de distritos de Montes Claros}}
+Administrativamente o município está dividido em dez [[Distritos do Brasil|distritos]], além da sede: [[Aparecida do Mundo Novo]], [[Ermidinha]], [[Miralta]], [[Nova Esperança (Montes Claros)|Nova Esperança]], [[Panorâmica (Montes Claros)|Panorâmica]], [[Pedra Preta dos Montes]], [[Santa Rosa de Lima (Montes Claros)|Santa Rosa de Lima]], [[São João da Vereda]], [[São Pedro da Garça]] e [[Vila Nova de Minas]].<ref name="FJP_Área">{{citar web|url=https://drive.google.com/file/d/186BPQN8j6izoJo29EM8ZcmslB6xnRUTM/view |título=Relação de 1840 divisões territoriais distritais, sendo 853 distritos-sedes municipais (sede municipal: cidade), e 987 distritos (sede distrital: vila) – dezembro/2024 |página=100 |autor=Fundação João Pinheiro (FJP) |data=2024 |acessodata=19 de junho de 2025 |wayb=20250112145530}}</ref> Desde a emancipação, ocorreram a criação e desmembramento de diversos distritos do município, sendo que a última emancipação foi de [[Juramento (Minas Gerais)|Juramento]], desmembrado em 12 de dezembro de 1953.<ref name="IBGE_Histórico"/> Em 2011, havia aproximadamente 160 [[bairro]]s em Montes Claros, segundo o portal "Grande Brasil".<ref name="GrandeBrasil_MontesClaros">{{citar web|url=http://www.grandebrasil.com.br/Brasil/Cidades/0d1F/Municipio_De_Montes_Claros_Estado_De_Minas_Gerais_mg |título=Município de Montes Claros, estado de Minas Gerais (MG) |autor=Grande Brasil |acessodata=20 de maio de 2011 |wayb=20110605110225}}</ref> Um dos mais populosos é o [[Major Prates]], onde moravam aproximadamente 25 mil pessoas.<ref>{{citar web|url=http://intertvonline.globo.com/mg/noticias.php?id=12717 |título=Major Prates pede mais segurança |autor=In360 |arquivourl=https://www.webcitation.org/query?url=http%3A%2F%2Fintertvonline.globo.com%2Fmg%2Fnoticias.php%3Fid%3D12717&date=2011-05-20 |arquivodata=20 de maio de 2011 |acessodata=20 de maio de 2011}}</ref>
+[[Imagem:Panorâmica de Montes Claros MG.jpg|thumb|centro|780px|Vista panorâmica do distrito-sede de Montes Claros]]
+
+== Economia ==
+O [[Produto Interno Bruto]] (PIB) de Montes Claros é o maior de sua microrregião,<ref name="IBGE_PIB"/> destacando-se na área de [[Setor terciário|prestação de serviços]]. De acordo com dados do IBGE, relativos a 2020, o PIB do município era de {{fmtn|9686454.28|mil}} de reais.<ref name="IBGE_PIB"/> {{fmtn|1056788.90}} mil são de impostos sobre produtos líquidos de subsídios a preços correntes.<ref name="IBGE_PIB">{{citar web|url=https://www.ibge.gov.br/estatisticas-novoportal/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html?t=destaques&c=3143302date=2019-02-16|titulo=Produto Interno Bruto dos Municípios|data=2020|acessodata=14 de março de 2023|autor=IBGE - Montes Claros}}</ref> O PIB ''per capita'' é de {{fmtn|23426.26}} de reais,<ref name="IBGE_PIB" /> e o Índice de Desenvolvimento Humano (IDH) de renda é de 0,707.<ref name="PNUD_IDH_2010"/>
+
+De acordo com o IBGE, a cidade possuía, no ano de 2008, 9 497 unidades locais, 9 127 [[empresa]]s e estabelecimentos comerciais atuantes e {{formatnum:130045}} [[População em Idade Ativa|trabalhadores]], sendo {{formatnum:70691}} o pessoal ocupado total e {{fmtn|59354}} o ocupado assalariado. [[Salário]]s, juntamente com outras remunerações, somavam {{fmtn|691296}} reais e o salário médio mensal de todo o município era de 2,2 [[Salário mínimo|salários mínimos]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dempresas%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-17 |titulo=Estatísticas do Cadastro Central de Empresas |autor=Cidades@ - IBGE |data=2008 |acessodata=17 de maio de 2011}}</ref>
+
+=== Setores ===
+A economia de Montes Claros é diversificada pelas atividades agropecuárias, industriais e de prestação de serviços. A principal fonte econômica está centrada no setor terciário, com seus diversos segmentos de [[comércio]] e prestação de serviços de várias áreas, como na educação e saúde. Em seguida, destaca-se o setor secundário, com complexos industriais de grande porte, além das unidades produtivas de pequeno e médio portes.<ref name="Prefeitura_Geral"/>
+
+; '''Primário'''
+{| class="wikitable" style="font-size: 90%; float:right; margin:1em; border-collapse:border; text-align:center;"
+! colspan="3" class= style="background:#b8860b; text-align:right; font-size:larger; color:indigo;"|'''Produção de cana-de-açúcar, mandioca e milho<ref name="agricultura">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dpamclo_2007%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-17 |título=Produção Agrícola Municipal - Cereais, Leguminosas e Oleaginosas |autor=Cidades@ - IBGE |data=2007 |acessodata=17 de maio de 2011}}</ref>'''
+|- style="background:#f5f5f5;"
+|| '''Produto'''
+|| '''Área colhida (Hectares)'''
+|| '''Produção (Tonelada)'''
+|-
+| Cana-de-açúcar
+| 480
+| 38 400
+|-
+| Mandioca
+| 470
+| 5 640
+|-
+| Milho
+| 2 720
+| 5 440
+|}
+A agricultura é o setor menos relevante da economia de Montes Claros. De todo o PIB da cidade, {{fmtn|77393}} mil reais é o valor adicionado bruto da agropecuária.<ref name="IBGE_PIB"/> Segundo o IBGE, em 2009 o município possuía um rebanho de {{fmtn|159830}} [[bovinos]], {{fmtn|14810}} [[Porco|suínos]], {{fmtn|6596}} [[Equidae|equino]]s, {{fmtn|1130}} [[Mula|muares]], 620 [[Capra aegagrus hircus|caprinos]], 210 [[Asno|asinos]], 630 [[Ovelha|ovinos]] e {{fmtn|2202300}} [[aves]], entre estas {{fmtn|1618000}} [[galinha]]s e {{fmtn|584300}} [[galo]]s, frangos e pintinhos.<ref name="Agropecuária" /> Em 2009 a cidade produziu {{fmtn|25603}} mil [[litro]]s de leite de {{fmtn|20120}} [[Gado bovino|vaca]]s. Foram produzidos {{fmtn|38879}} [[dúzia]]s de ovos de galinha e {{fmtn|11100}} quilos de [[mel]] de [[abelha]].<ref name="Agropecuária">{{citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dprodpec2009%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-17 |titulo=Pecuária 2009 |autor=Cidades@ - IBGE |data=2008 |acessodata=17 de maio de 2011}}</ref> Na [[Agricultura|lavoura]] temporária são produzidos principalmente a [[cana-de-açúcar]] (38 400 toneladas), a [[mandioca]] (5 640 toneladas), e o [[milho]] (5 440 toneladas).<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dlavtemp2009%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-17 |titulo=Lavoura Temporária 2009 |autor=Cidades@ - IBGE |data=2008 |acessodata=17 de maio de 2011}}</ref>
+
+; '''Secundário'''
+A [[indústria]], atualmente, é o segundo setor mais relevante para a economia do município. {{fmtn|774539}} mil reais do PIB municipal são o valor adicionado bruto da indústria ([[setor secundário]]).<ref name="IBGE_PIB"/> A cidade conta com um [[distrito industrial]], composto por diversas empresas, que possui área de 5,2 milhões de m²<ref name="Prefeitura_Geral"/> e é administrado pela [[Companhia de Desenvolvimento Econômico de Minas Gerais]] (CODEMIG),<ref name="cidadesnet.com"/> sendo um dos mais importantes complexos industriais do Estado de Minas Gerais. Atualmente, estuda-se a implantação do Distrito Industrial 2, com área prevista de 1,5 milhão de m². Também se destaca na área industrial uma Usina de [[Biodiesel]] da [[Petrobras]], que foi implantada em 2008 e está em funcionamento.<ref name="Prefeitura_Geral">{{citar web|url=http://www.webcitation.org/5yl1Cya15 |título=Coletânea de informações sobre o município de Montes Claros |autor=Prefeitura |acessodata=17 de maio de 2011}}</ref>
+
+Segundo dados da prefeitura de Montes Claros, em 2011 havia na cidade 954 estabelecimentos e empresas e {{fmtn|9912}} trabalhadores com foco para o setor industrial do município.<ref name="Prefeitura_Geral"/> Algumas das principais empresas com instalações industriais no município são [[Coteminas]], [[Lafarge]], [[Novo Nordisk]], [[Nestlé]] e [[Petrobras]].<ref name="Prefeitura_Geral" />
+
+;'''Terciário'''
+[[Imagem:Interior do Mercado Municipal de Montes Claros MG.jpg|thumb|direita|Interior do Mercado Municipal de Montes Claros.]]
+A prestação de serviços rende {{fmtn|2220660}} reais ao PIB municipal.<ref name="IBGE_PIB"/> O [[setor terciário]] atualmente é, como citado acima, a maior fonte geradora do PIB montes-clarense. Grande parte do valor do setor terciário vem do comércio. Segundo estatísticas da prefeitura, no ano de 2009 a cidade contava com 617 estabelecimentos e {{fmtn|3185}} trabalhadores na área da construção civil; {{fmtn|6777}} estabelecimentos e {{fmtn|14997}} trabalhadores no comércio; e {{fmtn|5091}} estabelecimentos e {{fmtn|24473}} trabalhadores no setor de serviços.<ref name="Prefeitura_Geral"/>
+
+A cidade conta com diversos núcleos ou centros comerciais, como o Mercado Municipal de Montes Claros, inaugurado em 1899;<ref name="Prefeitura_História"/> o Ibituruna Center, criado em 18 de março de 2009;<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibiturunacenter.com.br%2F2010%2F%3F%2Fshopping%2F&date=2011-05-17 |título=O Shopping |autor=Shopping Ibituruna Center |data=2010 |acessodata=17 de maio de 2011}}</ref> o Montes Claros Shopping, fundado em 8 de novembro de 1997;<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclarosshopping.com.br%2Fmoc%2Foshopping%2F&date=2011-05-17 |título=O Shopping  |autor=Montes Claros Shopping |acessodata=17 de maio de 2011}}</ref> e o Shopping Popular Mário Ribeiro, inaugurado em 2003.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.bemnanet.com.br%2Fmaterias.php%3Ftexto%3D1017+&date=2011-05-17 |título=Shopping Popular inaugura nova entrada |autor=Bem Na Net |data=23 de dezembro de 2003 |acessodata=17 de maio de 2011}}</ref> Assim como em grande parte do Brasil, o maior período de vendas é o [[Natal]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.revistatempo.com.br%2Findex.php%2Fnoticias%2Fdetalhes%2Feconomia%2F173&date=2011-05-17 |título=Sonhos de Natal |autor=Revista Tempo |data=15 de novembro de 2010 |acessodata=17 de maio de 2011}}</ref>
+
+=== Incentivos fiscais e financeiros ===
+Embora situado na [[Região Sudeste do Brasil|região Sudeste]] do país, o município de Montes Claros, devido às suas características edafo-climáticas, econômicas, sociais e culturais, está inserido na região mineira da [[Superintendência do Desenvolvimento do Nordeste]] (SUDENE), recebendo incentivos fiscais e financeiros concedidos por essa agência de desenvolvimento regional. Através dela a cidade é contemplada com projetos de investimentos com recursos do Fundo de Desenvolvimento do Nordeste, até o limite de 60% do total dos investimentos fixos e circulantes.<ref name="Prefeitura_Geral"/> Por meio da SUDENE é ainda possível obter isenção do Adicional de Frete para [[Marinha Mercante Brasileira]] (AFRMM), bem como do [[Imposto sobre operações financeiras|Imposto sobre Operações de Crédito, Câmbio e Seguros]] (IOF).<ref name="Prefeitura_Geral"/>
+
+A cidade é servida por ampla rede bancária. Além das várias instituições financeiras privadas e cooperativas de crédito que atuam no município, Montes Claros conta ainda com agências do [[Banco do Brasil]], da [[Caixa Econômica Federal]] e do [[Banco do Nordeste]].<ref name="Prefeitura_Geral"/> Funcionando com várias modalidades de crédito sob amparo do [[Fundo Constitucional de Financiamento do Nordeste]] (FNE) e repasses do [[Banco Nacional de Desenvolvimento Econômico e Social]] (BNDES) e do [[Fundo de Amparo ao Trabalhador]] (FAT), o Banco do Nordeste é, de acordo com a prefeitura, a principal instituição financeira de beneficiamento às atividades econômicas da região.<ref name="Prefeitura_Geral"/>
+
+== Infraestrutura ==
+[[Imagem:Praça da Matriz, Montes Claros MG.jpg|thumb|esquerda|Praça da Matriz, no centro da cidade.]]
+No ano de 2000, o município tinha {{fmtn|75676}} [[domicílio]]s entre [[apartamento]]s, [[casa]]s, e cômodos. Desse total {{fmtn|59703}} eram imóveis próprios, sendo {{formatnum:56714}} próprios já quitados (74,94%), {{fmtn|2989}} em aquisição (3,95%), {{fmtn|10103}} [[Aluguel|alugados]] (13,35%); {{fmtn|5553}} imóveis foram cedidos, sendo {{fmtn|1190}} por empregador (1,57%) e {{fmtn|4363}} cedidos de outra maneira (5,77%). 317 foram ocupados de outra forma (0,40%).<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Finfra%2Fmu_infra_domicilio.asp%3FiIdMun%3D100131502+&date=2011-05-18 |titulo=Infra-Estrutura - Domicílios Particulares Permanentes e Moradores |autor= Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref> O município conta com água tratada, [[energia elétrica]], [[Águas residuais|esgoto]], [[Resíduos sólidos|limpeza urbana]], [[Rede de telefonia fixa|telefonia fixa]] e [[Rede de telefonia celular|telefonia celular]]. Em 2000, 92,77% dos domicílios eram atendidos pela [[Água potável|rede geral de abastecimento de água]];<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Finfra%2Fmu_infra_abastecimento.asp%3FiIdMun%3D100131502+&date=2011-05-18 |titulo=Infra-Estrutura - Abastecimento de Água |autor=Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref> 90,04% das moradias possuíam lixo coletado por serviço de limpeza<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Finfra%2Fmu_infra_lixo.asp%3FiIdMun%3D100131502&date=2011-05-18 |titulo=Infra-Estrutura - Destino do Lixo |autor=Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref> e 85,52% das residências possuíam rede geral de esgoto ou pluvial.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Finfra%2Fmu_infra_esgotamento.asp%3FiIdMun%3D100131502+&date=2011-05-18 |titulo=Infra-Estrutura - Esgotamento Sanitário |autor= Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref>
+
+Montes Claros destaca-se também por sua infraestrutura urbana e logística, sendo um importante polo regional do [[Norte de Minas]]. A cidade é atendida pela BR-135 e pela [[BR-251]], que facilitam o escoamento da produção agrícola e industrial para os grandes centros do [[Sudeste do Brasil|Sudeste]] e do [[Centro-Oeste do Brasil|Centro-Oeste]]. Conta com o [[Aeroporto de Montes Claros]], administrado pela [[Infraero]], que oferece voos regulares para capitais como [[Belo Horizonte]] e [[São Paulo]], contribuindo para a integração regional e nacional<ref>{{Cite web|url=https://www.infraero.gov.br/index.php/br/aeroportos/minas-gerais/aeroporto-de-montes-claros.html|titulo=Aeroporto de Montes Claros|acessodata=23 de junho de 2025|website=Infraero|publicado=Empresa Brasileira de Infraestrutura Aeroportuária}}</ref>. O município também dispõe de [[Distrito Industrial]], com incentivos à instalação de [[indústria de transformação]], e é atendido por sistemas modernos de [[telecomunicações]] e [[internet banda larga]], além de contar com unidades da [[Copasa]] e da [[Cemig]], responsáveis, respectivamente, pelos serviços de abastecimento de água/esgoto e de fornecimento de energia elétrica. A presença de instituições como o Hospital Universitário Clemente de Faria e o Centro de Convenções Sully Prudente complementa a estrutura de apoio urbano, refletindo o papel de Montes Claros como centro regional de [[comércio]], [[educação]], [[saúde]] e [[serviços públicos]].<ref>{{Citar web|url=https://www.encontramontesclaros.com.br/|titulo=Montes Claros - Guia do cidade Montes Claros -MG Aqui você Encontra !|acessodata=2025-06-23|website=www.encontramontesclaros.com.br|lingua=pt-br}}</ref>
+
+=== Saúde ===
+Em 2009, o município possuía 224 estabelecimentos de saúde entre hospitais, [[Departamento de emergência|prontos-socorros]], [[Posto de saúde|postos de saúde]] e [[Odontologia|serviços odontológicos]], sendo 83 deles públicos e 141 privados. Neles a cidade possuía 921 leitos para [[internação]], sendo que 241 estavam nos públicos e os 680 restantes estavam nos privados.<ref>{{Citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dassismed%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-18 |título=Serviços de Saúde 2009 |autor= Cidades@ - IBGE |data= 2009 |acessodata=18 de maio de 2011}}</ref> Na cidade existem seis hospitais gerais, sendo um público, dois privados e três [[Filantropia|filantrópicos]]. Montes Claros conta ainda com 8 780 profissionais de saúde. No ano de 2008 foram registrados 5 167 nascidos vivos, sendo que 7,7% nasceram prematuros, 38,5% foram de partos cesáreos e 16,8% foram de mães entre 10 e 19 anos (0,5% entre 10 e 14 anos). A taxa bruta de natalidade naquele ano foi de 14,4.<ref name="Datasus_Saúde">{{citar web|url= http://www.webcitation.org/query?url=http%3A%2F%2Ftabnet.datasus.gov.br%2Ftabdata%2Fcadernos%2FMG%2FMG_Montes_Claros_Geral.xls+&date=2011-05-18 |titulo=Caderno de Informações de Saúde - Informações Gerais |autor=DATASUS|autorlink=DATASUS |formato=[[Microsoft Excel|xls]] |data=10 de abril de 2010 |acessodata=18 de maio de 2011}}</ref> O [[Índice de Desenvolvimento Humano]] (IDH) da longevidade em Montes Claros é de 0,868.<ref name="PNUD_IDH_2010"/>
+
+São exemplos de hospitais da cidade o Aroldo Tourinho, Clemente de Farias (Universitário), Fundação Hospitalar Dilson de Quadros Godinho (São Lucas), Alpheu de Quadros e Santa Casa.<ref>{{citar web|url=http://www.webcitation.org/5ymlEM1zW |título=Hospitais de Montes Claros recebem recursos para urgência e emergência |autor=Hoje em Dia |data=7 de abril de 2011 |acessodata=18 de maio de 2011}}</ref> A Santa Casa de Monte Claros, denominação comum do hospital Irmandade Nossa Senhora das Mercês, é considerado o maior estabelecimento de saúde da região  norte de Minas Gerais.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.jusbrasil.com.br%2Fnoticias%2F210799%2Fsanta-casa-de-montes-claros-recebe-recursos-do-pro-hosp&date=2011-05-18 |título=Santa Casa de Montes Claros recebe recursos do Pro-Hosp |autor=JusBrasil |data=19 de novembro de 2008 |acessodata=18 de maio de 2011}}</ref>
+
+=== Educação ===
+[[Ficheiro:Colégio Imaculada Conceição, Montes Claros (MG).tif|esquerda|miniaturadaimagem|Colégio Imaculada Conceição, anos 1950. [[Arquivo Nacional (Brasil)|Arquivo Nacional]].]]
+O município conta com [[escola]]s em todas as suas regiões. A população da zona rural tem fácil acesso a escolas em bairros urbanos próximos, em razão da alta taxa de urbanização. O [[Índice de Desenvolvimento da Educação Básica]] (IDEB) médio entre as escolas públicas de Montes Claros era, no ano de 2009, de 4,85; valor acima do das escolas municipais e estaduais de todo o Brasil, que é de 4,0%.<ref name="IDEB_Índice">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fsistemasideb.inep.gov.br%2Fresultado%2F&date=2011-04-13 |titulo=Índice de Desenvolvimento da Educação Básica (IDEB) - Resultados e Metas |autor=Governo Federal |acessodata=18 de maio de 2011}}</ref> O município contava, em 2009, com aproximadamente {{fmtn|83846}} matrículas, {{fmtn|4586}} docentes e 342 escolas nas redes públicas e particulares.<ref name="IBGE_Educação"/> O valor do Índice de Desenvolvimento Humano (IDH) da educação era de 0,744 (classificado como alto).<ref name="PNUD_IDH_2010"/>
+
+Considerado um polo universitário regional, o município conta com três instituições públicas de ensino superior: o [[Instituto Federal do Norte de Minas Gerais]] - ''Campus'' Montes Claros, a [[Universidade Estadual de Montes Claros]] (Unimontes)<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fportal.unimontes.br%2Findex.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D3450%26Itemid%3D212+&date=2011-05-18 |título=Histórico da Unimontes |autor=Universidade Estadual de Montes Claros (Unimontes) |data=29 de março de 2011 |acessodata=18 de maio de 2011}}</ref> e a [[Universidade Federal de Minas Gerais]] (UFMG), por meio do Instituto de Ciências Agrárias (ICA)<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ica.ufmg.br%2Fica%2Findex.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D46%26Itemid%3D68+&date=2011-05-18 |título=O ICA |autor=Instituto de Ciências Agrárias (ICA) |acessodata=18 de maio de 2011}}</ref>, além de diversas faculdades privadas que oferecem cursos nas mais diversas áreas.
+
+Segundo dados do [[Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira]] (INEP) e do [[Ministério da Educação (Brasil)|Ministério da Educação]] (MEC), o índice de [[analfabetismo]] no ano de 2000 entre pessoas de 18 a 24 anos de idade era de 2,51%,<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Feducacao%2Fmu_edu_analfabetismo.asp%3FiIdMun%3D100131502+&date=2011-05-18 |título=Analfabetismo |autor=Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref> enquanto que a taxa de [[alfabetização]] adulta naquele ano era de 90,08% (a do Brasil era de 84%<ref name="Educacional_Analfabetismo">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.educacional.com.br%2Fnoticiacomentada%2F031212_not01_imprimir.asp%3FstrTitulo%3DAfinal%2C%2520quantos%2520analfabetos%2520existem%2520no%2520Brasil%3F&date=2011-04-28 |título=Afinal, quantos analfabetos existem no Brasil? |autor=Educacional |data=3 de dezembro de 2003 |acessodata=18 de maio de 2011}}</ref>).<ref name="UFMS">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.caminhos.ufms.br%2Fmatrizdados%2Fmg%2Fmontesclaros.html+&date=2011-05-17 |título=Montes Claros (MG) |autor=[[Universidade Federal de Mato Grosso do Sul]] (UFMS) |data=26 de abril de 2005 |acessodata=15 de maio de 2011}}</ref>  A taxa bruta de frequência à escola naquele ano era de 74,41%,<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Feducacao%2Fmu_edu_frequencia.asp%3FiIdMun%3D100131502+&date=2011-05-18 |título=Educação - Freqüência Escolar |autor=Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref> sendo que no país esse índice era de 81,5%.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.seplan.am.gov.br%2Farquivos%2Fdownload%2Farqeditor%2Findicadores%2Fperf_mun%2FCondensadov3%2FConteudo%2Fsubregiao7%2F24-frequencia.html&date=2011-04-28 |título=Taxa bruta de freqüência à escola da 7ª Sub-Região do Rio Negro - Solimões |autor=Secretaria de Estado de Planejamento e Desenvolvimento Econômico do Amazonas |data=2000 |acessodata=18 de maio de 2011}}</ref> 10 169 habitantes possuíam menos de 1 ano de estudo ou não contava com instrução alguma.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Feducacao%2Fmu_edu_ano_estudo.asp%3FiIdMun%3D100131502+&date=2011-05-18 |título=Educação - Anos de Estudo |autor=Confederação Nacional de Municípios (CNM) |data=2000 |acessodata=18 de maio de 2011}}</ref> Em 2010, 241 alunos frequentavam o sistema de educação especial e 2 321 crianças estudavam em creches, sendo que 130 alunos de creches possuíam aulas em tempo integral.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cnm.org.br%2Feducacao%2Fmu_edu_fundeb.asp%3FiIdMun%3D100131502&date=2011-05-18 |título=FUNDEB |autor=Confederação Nacional de Municípios (CNM) |data=2010 |acessodata=18 de maio de 2011}}</ref>
+
+{| class=wikitable style="float:center; margin:1em auto; border-collapse:border; text-align:center;"
+! colspan=7|Educação de Montes Claros em números<ref name="IBGE_Educação">{{Citar web |url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Deduca%26codmun%3D314330%26nomemun%3DMontes%2520Claros&date=2011-05-18  |título=Ensino, matrículas, docentes e rede escolar 2009  |autor=Cidades@ - IBGE |data=2009 |acessodata=18 de maio de 2011}}</ref>
+|- pré-escolar 126.100 72,91 7.314 1.492 49,40 754.390 81,48 31.783 1.718 62,98 médio 248.179 85,50 13.452 51,94 285.379 18,38 20.959 9,09
+! '''Nível'''
+! '''Matrículas'''
+! '''Docentes'''
+! '''Escolas (total)'''
+|-
+! [[Educação infantil|Ensino pré-escolar]]
+| style="text-align:right;"| {{formatnum:8997}}
+| 458
+| 126
+|-
+! [[Ensino fundamental]]
+| style="text-align:right;"| {{formatnum:56792}}
+| {{formatnum:2973}}
+| 169
+|-
+! [[Ensino secundário|Ensino médio]]
+| style="text-align:right;"| {{formatnum:18057}}
+| {{formatnum:1155}}
+| 47
+|}
+
+=== Segurança pública e criminalidade ===
+[[Imagem:55bi.png|thumb|direita|100px|Brasão do 55° BI.]]
+Como na maioria dos municípios médios e grandes do Brasil, a criminalidade ainda é um problema em Montes Claros. Em 2008, a taxa de [[homicídio]]s no município foi de 28,7 para cada 100 mil habitantes, ficando no 34° lugar a nível estadual e no 534° lugar a nível nacional.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.sangari.com%2Fmapadaviolencia%2Ftabelas2011%2FHTN.xls&date=2011-02-28 |título=Número e taxas (em 100 mil) de homicídio nos municípios com 10.000 habitantes ou mais |autor=Sangari |data=2011 |acessodata=18 de maio de 2011|formato=xls}}</ref> O índice de [[suicídio]]s naquele ano para cada 100 mil habitantes foi de 8,1, sendo o 81° a nível estadual e o 570° a nível nacional.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.sangari.com%2Fmapadaviolencia%2Ftabelas2011%2FSTN.xls&date=2011-02-28 |título=Número e taxas (em 100 mil) de suicídio nos municípios com 10.000 habitantes ou mais |autor=Sangari |data=2011 |acessodata=18 de maio de 2011 |formato=xls}}</ref> Já em relação à taxa de óbitos por acidentes de trânsito, o índice foi de 33,8 para cada 100 mil habitantes, ficando no 45° lugar a nível estadual e no 389° lugar a nível nacional.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.sangari.com%2Fmapadaviolencia%2Ftabelas2011%2FTTN.xls&date=2011-02-28 |título=Número e taxas (em 100 mil) de Óbitos Ac.Transporte nos municípios com 10.000 habitantes ou mais |autor=Sangari |data=2011 |acessodata=18 de maio de 2011 |formato=xls}}</ref>
+
+Segundo dados da [[Polícia Militar de Minas Gerais]] (PMMG), o batalhão da cidade atende ainda a outros 23 municípios do Norte do Estado, o que força um aumento nas reivindicações por efetivos policiais em Montes Claros. Também de acordo com a PMMG, em 2009 os jovens representavam 74% da população carcerária, sendo que grande parte desses detidos são por causas relacionadas ao [[narcotráfico]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.almg.gov.br%2Fnot%2Fbancodenoticias%2Fnot_754815.asp+&date=2011-05-18 |título=Montes Claros reivindica aumento de efetivos policiais |autor=[[Assembleia Legislativa do Estado de Minas Gerais]] (ALMG) |data=1 de setembro de 2009 |acessodata=18 de maio de 2011}}</ref> O município também é sede do 55º Batalhão de Infantaria (Batalhão Dionísio Cerqueira, ou 55° BI), unidade militar do [[Exército Brasileiro]] que foi criada em 19 de abril de 1851, sendo subordinada à [[4ª Região Militar]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.exercito.gov.br%2Fweb%2Fguest%2F1117&date=2011-05-21 |título=55º Batalhão de Infantaria |autor=Exército Brasileiro|autorlink=Exército Brasileiro |acessodata=21 de maio de 2011}}</ref>
+
+=== Serviços e comunicações ===
+O serviço de abastecimento de água, assim como em toda a região, é feito pela [[Companhia de Saneamento de Minas Gerais|Copasa]] (Companhia de Saneamento de Minas Gerais), também responsável pela coleta de esgoto. No município, assim como em quase todo o estado de Minas Gerais, o serviço de abastecimento de [[energia elétrica]] é feito pela [[Companhia Energética de Minas Gerais]] (Cemig). No ano de 2003 existiam {{formatnum:101502}} consumidores e foram consumidos {{formatnum:368217506}} [[Watt-hora|kWh]] de energia.<ref name="cidadesnet.com" />
+
+Ainda há serviços de [[internet]] discada e [[banda larga]] ([[Asymmetric Digital Subscriber Line|ADSL]]) sendo oferecidos por diversos [[Provedor de acesso à Internet|provedores de acesso]] gratuitos e pagos. O serviço telefônico móvel, por [[telefone celular]], também é feito por várias operadoras. O código de área ([[Discagem direta a distância|DDD]]) de Montes Claros é o 038.<ref name="Guiatel_DDD">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.guiatel.com.br%2Finfo_mg2.htm+&date=2011-05-18 |titulo=Minas Gerais |autor= Guiatel |acessodata=18 de maio de 2011}}</ref> O [[Código postal|Código de Endereçamento Postal]] (CEP) da cidade vai de 39400-001 até 39409-999.<ref>{{citar web|url=http://www.correios.com.br/ |titulo=CEP de cidades brasileiras |autor=[[Empresa Brasileira de Correios e Telégrafos|Correios]] |acessodata=18 de maio de 2011}}</ref> No dia 10 de novembro de 2008 a região de Montes Claros passou a ser servida pela [[Portabilidade de números telefónicos|<span title="Portabilidade">portabilidade</span>]], assim como as outras cidades de DDD 38. A portabilidade é um serviço que possibilita a troca da operadora sem a necessidade de se trocar o número do aparelho.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fmontesclaros.com%2Fnoticias.asp%3Fcodigo%3D41297+&date=2011-05-18 |titulo=Portabilidade numérica (que para nós chegou em 10 de novembro) acrescenta hoje mais 13 milhões de usuários |autor=Montes Claros.com |data=12 de janeiro de 2009 |acessodata=18 de maio de 2011}}</ref>
+
+O município conta ainda com jornais impressos em circulação e jornais digitais. No ano de 2004 havia quatro Jornais impressos no total. Em 2001 existiam oito emissoras de rádio, de acordo com a Associação Mineira de Rádio e TV (AMIRT), e a [[Telecomunicações de Minas Gerais|Telecomunicações de Minas Gerais S.A]] (TELEMIG).<ref name="cidadesnet.com" /> Porém esse número aumentou ao longo dos anos. São exemplos de emissoras de rádio da cidade: a 98 FM, primeira a instalar-se no Norte de Minas, em maio de 1981;<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fmontesclaros.com%2F98%2F&date=2011-05-18 |título=Rádio 98 FM |autor=Montes Claros.com |acessodata=18 de maio de 2011}}</ref> a Rádio Unimontes 101,1 FM;<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.unimontes.br%2Fradio%2Fradio.php&date=2011-05-18 |título=Rádio |autor=Universidade Estadual de Montes Claros (Unimontes) |acessodata=18 de maio de 2011}}</ref> e a [[Rede Transamérica|Rádio Transamérica Pop]] 95,1 FM.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.radios.com.br%2Faovivo%2FRadio-Transamerica-Pop-95.1-FM%2F15718&date=2011-05-18 |título=Rádio Transamérica Pop 95.1 FM - Montes Claros / Minas Gerais |autor=Rádios.com |acessodata=18 de maio de 2011}}</ref>
+
+=== Transportes ===
+[[Imagem:Estrada rural em Montes Claros MG.jpg|thumb|esquerda|Estrada de terra na zona rural.]]
+
+Por não possuir rios em abundância, o município não possui muita tradição no transporte hidroviário. Montes Claros também era servida pela [[Estrada de Ferro Central do Brasil]], que operou entre 1858 e 1969, sendo que a estação da cidade ainda funcionou para embarque de passageiros até 1996, ligando o município a [[Monte Azul]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.estacoesferroviarias.com.br%2Ftrens_mg%2Ftremsertao.htm+&date=2011-05-19 |titulo=Trem do Sertão |autor=Estações Ferroviárias do Brasil |acessodata=19 de maio de 2011}}</ref> Atualmente na estação, somente operam os trens cargueiros.<ref>{{Citar web |url=http://www.estacoesferroviarias.com.br/efcb_mg_linhacentro/montesclaros.htm |titulo=Montes Claros -- Estações Ferroviárias do Estado de Minas Gerais |acessodata=2020-08-02 |website=www.estacoesferroviarias.com.br}}</ref>  O município possui fácil acesso à [[BR-135]], que liga o meio norte do Brasil ([[Maranhão]]) à capital mineira, Belo Horizonte; à [[BR-365]], que liga Montes Claros a [[Pirapora]], e [[Uberlândia]]; à [[BR-251]], que se estende do estado da [[Bahia]] até o estado de [[Mato Grosso]]; e à [[BR-122]], que começa no estado do [[Ceará]], em [[Fortaleza]], e termina em Montes Claros, no trevo da BR-251.<ref name="cidadesnet.com" /><ref>{{citar web|url=http://maps.google.com.br/|título=Google Maps|acessodata=19 de maio de 2011}}</ref> Em Montes Claros está situado o [[Aeroporto de Montes Claros|Aeroporto Mário Ribeiro]], que foi inaugurado em 18 de dezembro de 1939 e hoje possui pista de pouso asfaltada de 45 metros de largura e 2 100 metros de extensão, com capacidade anual de 70 000 passageiros.<ref>{{citar web|url=http://www.montesclaros.mg.gov.br/cidade/voos.htm |título=Aeroporto Mário Ribeiro |autor=Prefeitura |acessodata=19 de maio de 2011}}</ref> Há ainda outros dois pequenos aeroportos, de administração privada, ambos com pista de 1 150 metros de comprimento.<ref name="cidadesnet.com" />
+
+A frota municipal no ano de 2009 era de {{fmtn|120436}} veículos, sendo {{fmtn|53200}} automóveis, {{fmtn|3769}} caminhões, 398 caminhões trator, {{fmtn|8079}} caminhonetes, 204 micro-ônibus, {{fmtn|47095}} motocicletas, {{fmtn|6765}} motonetas, 917 ônibus e nove tratores de roda.<ref name="IBGE_Frota">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ibge.gov.br%2Fcidadesat%2Fxtras%2Fcsv.php%3Ftabela%3Dfrota%26codmun%3D314330%26nomemun%3DMontes%2520Claros+&date=2011-05-19 |titulo=Frota 2009 |autor=Cidades@ - IBGE |data=2009 |acessodata=19 de maio de 2011}}</ref> As [[avenida]]s duplicadas e pavimentadas e diversos [[semáforo]]s facilitam o [[trânsito]] da cidade, mas o crescimento no número de veículos nos últimos dez anos está gerando um tráfego cada vez mais lento de carros, principalmente na sede do município. Além disso, tem se tornado difícil encontrar vagas para estacionar no centro comercial da cidade, o que vem gerando alguns prejuízos ao comércio.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.bemnanet.com.br%2Fmaterias.php%3Ftexto%3D4893&date=2011-05-19 |titulo=Trânsito de Montes Claros está cada vez mais devagar, quase parando |autor=Bem Na Net |data=4 de março de 2011 |acessodata=19 de maio de 2011}}</ref>
+
+A Empresa Municipal de Planejamento, Gestão e Educação em Trânsito e Transportes de Montes Claros (McTrans) regulamenta e regulariza o sistema de transporte público, gerencia o trânsito e, através de seus Agentes de Trânsito, aplica autuações aos motoristas que cometem infrações de trânsito. As autuações agora ganharam a ajuda de radares eletrônicos de velocidade espalhados nas principais avenidas da cidade.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fmctrans%2Findex.htm+&date=2011-05-19 |título=Empresa Municipal de Planejamento, Gestão e Educação em Trânsito e Transportes de Montes Claros - MCTRANS  |autor=Prefeitura |acessodata=19 de maio de 2011}}</ref> Já as encarregadas pela exploração do transporte [[transporte público]] coletivo de Montes Claros são a Transmoc e Alprino.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Ftransmoc.blogspot.com%2F2007%2F08%2Ftransmoc-vence-licitao.html&date=2011-05-19 |título=Transmoc vence a licitação |autor=Transmoc |data=11 de agosto de 2007 |acessodata=19 de maio de 2011}}</ref> A Associação das Empresas de Transporte Coletivo Urbano de Montes Claros (ATCMC), fundada em 23 de fevereiro de 1988, é uma associação de empresas destinada a congregar as empresas com a atividade do transporte público municipal.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.atcmc.com.br%2Fnovo%2F%3F%2Finstitucional%2F&date=2011-05-19 |título=Associação das Empresas de Transporte Coletivo Urbano de Montes Claros |autor=Associação das Empresas de Transporte Coletivo Urbano de Montes Claros (ATCMC) |acessodata=19 de maio de 2011}}</ref> O município também conta com o Terminal Rodoviário Hildeberto Alves de Freitas, que é um dos principais [[terminal rodoviário|terminais rodoviários]] da região, inaugurado em 3 de outubro de 1980.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcidade%2Frodoviaria.htm&date=2011-05-19 |título=Terminal Rodoviário "Hildeberto Alves de Freitas" |autor=Prefeitura |acessodata=19 de maio de 2011}}</ref>
+
+== Cultura ==
+A responsável pelo setor cultural de Montes Claros é a Secretaria Municipal de Cultura, que tem como objetivo planejar e executar a política cultural do município por meio da elaboração de programas, projetos e atividades que visem ao desenvolvimento cultural. Está vinculada ao Gabinete do Prefeito, integra a administração pública indireta do município e possui autonomia administrativa e financeira, assegurada, especialmente, por dotações orçamentárias, patrimônio próprio, aplicação de suas receitas e assinatura de contratos e convênios com outras instituições.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcultura%2Findex.htm+&date=2011-05-20 |título=Secretaria Municipal de Cultura |autor=Prefeitura |acessodata=20 de maio de 2011}}</ref>
+
+=== Artes e artesanato ===
+Atualmente, segundo a prefeitura, Montes Claros não possui casas de espetáculos, a não ser salas de teatro, como a do Colégio Imaculada Conceição. Há também o Centro Cultural de Montes Claros, inaugurado em fevereiro de 2010, que abriga uma biblioteca de temáticas sertanejas, uma livraria dirigida pela Editora [[Universidade Federal de Minas Gerais|UFMG]] e um escritório da Fundação de Desenvolvimento da Pesquisa (Fundep).<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.ufmg.br%2Fonline%2Farquivos%2F014553.shtml&date=2011-05-20 |título=Centro cultural da Universidade em Montes Claros terá biblioteca, livraria da Editora UFMG e escritório da Fundep |autor=Universidade Federal de Minas Gerais (UFMG) |data=5 de fevereiro de 2010 |acessodata=20 de maio de 2011}}</ref> Algumas instituições cuidam da área das artes cênicas de Montes Claros, como o Conservatório Estadual de Música Lorenzo Fernandez e a Faculdade de Educação Artística, que pertence à Universidade Estadual de Montes Claros (UNIMONTES), oferecendo cursos com foco para o setor artístico e realizando peças para o público, além de organizarem movimentos para a construção de uma casa de espetáculos.<ref name="Prefeitura_Cultura">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcidade%2Faspectosgerais%2Fcultura.htm+&date=2011-05-20 |título=Cultura |autor=Prefeitura |acessodata=20 de maio de 2011}}</ref> Um dos principais eventos é o Festival de Cinema de Montes Claros, que acontece todo mês de maio, desde 2010, onde há a exibição de filmes produzidos por diversos diretores brasileiros, assim como de diretores da região norte de Minas Gerais. São realizadas as Mostras "Digital Norte Mineira", "de Filmes Infantis" e "Competitiva de Curtas e Longas".<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.cultura.gov.br%2Fsite%2F2011%2F05%2F17%2Fmontes-claros-promove-festival-de-cinema%2F&date=2011-05-20 |título=Montes Claros promove Festival de Cinema |autor=Débora Palmeira |data=17 de maio de 2011 |publicado=Ministério da Cultura de Minas Gerais |acessodata=20 de maio de 2011}}</ref> No cenário artístico montes-clarense também se destacaram diversas personalidades, como [[Beto Guedes]], [[violonista]], [[cantor]] e [[compositor]];<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.betoguedes.com.br%2Frelease_historico.html+&date=2011-05-20 |título=Histórico |autor=Beto Guedes |acessodata=20 de maio de 2011}}</ref> [[Ciro dos Anjos]], [[Crônica (literatura e jornalismo)|cronista]], [[romancista]], [[ensaísta]] e [[memorialista]];<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.academia.org.br%2Fabl%2Fcgi%2Fcgilua.exe%2Fsys%2Fstart.htm%3Finfoid%3D427%26sid%3D250+&date=2011-05-20 |título=Biografia |autor=Academia Brasileira de Letras|autorlink=Academia Brasileira de Letras |acessodata=20 de maio de 2011}}</ref> [[Tião Carreiro]], cantor [[Música sertaneja|sertanejo]]<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.boamusicaricardinho.com%2Findex_int_22_tiaocarreiro.html&date=2011-05-20 |título=Tião Carreiro |autor=Boa Música Brasileira |acessodata=20 de maio de 2011}}</ref> e o antropólogo, político e escritor [[Darcy Ribeiro]].
+
+O [[artesanato]] também é uma das formas mais espontâneas da [[expressão cultural]] montes-clarense. Em várias partes do município é possível encontrar uma produção artesanal diferenciada, feita com [[matéria-prima|matérias-primas]] regionais de acordo com a cultura e o modo de vida local. Alguns grupos reúnem diversos artesãos da região, disponibilizando espaço para confecção, exposição e venda dos produtos artesanais. Normalmente essas peças são vendidas em [[feira]]s, [[exposição|exposições]] ou [[loja]]s de artesanato.<ref name="Artesanato">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fsonianovaes.blogspot.com%2F2010%2F08%2Fo-artesanato-de-montes-clarosmg.html+&date=2011-05-20 |titulo=O artesanato de Montes Claros (MG) |autor=Sonia Novaes |data=2 de agosto de 2010 |acessodata=20 de maio de 2011}}</ref> Neste setor da cultura, se destacaram personalidades como a artista plástica [[Yara Tupynambá]].<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.yaratupynamba.com.br%2Fsite%2Fartista.php&date=2011-05-20 |título=A Artista |autor=Instituto Yara Tupynambá |acessodata=20 de maio de 2011}}</ref>
+
+=== Turismo e eventos ===
+[[Imagem:Vista noturna da Praça da Matriz, Montes Claros MG.jpg|thumb|direita|Vista noturna da Praça da Matriz.]]
+[[Imagem:Igreja dos Morrinhos.jpg|thumb|direita|Igreja dos Morrinhos.]]
+Montes Claros ainda conta com diversos pontos turísticos, como: o Parque Municipal Milton Prates, que possui uma grande área verde e é onde está situado o Zoológico Municipal; o Parque Sapucaia, que está localizado na Serra do Ibituruna, sendo uma reserva florestal com relevo montanhoso, propícia para prática de esportes radicais; o [[Guimarães Rosa (circuito turístico)|Parque Guimarães Rosa]], criado pela Lei Municipal nº. 793 de 7 de agosto de 1989, é uma das maiores áreas verdes do perímetro urbano municipal; a Lapa Encantada, com cachoeiras com 1&nbsp;km de rios subterrâneos; a Gruta do Engenho, aberta para visitação; o Conjunto Lapa Grande, onde se insere a gruta de mesmo nome que, com seus 3&nbsp;km, está entre as maiores de Minas Gerais, além de abrigar em seus sedimentos restos de animais fósseis; além de construções como a Catedral de Nossa Senhora Aparecida, com 65,08 metros de altura, a Igreja Matriz e a Igrejinha dos Morrinhos.<ref name="Prefeitura_Turismo">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcidade%2Faspectosgerais%2Fturismo.htm+&date=2011-05-20 |título=Turismo |autor=Prefeitura |acessodata=20 de maio de 2011}}</ref> Também possuem destaque os 164 sítios [[arqueologia|arqueológicos]] catalogados, tendo como principal o Complexo Espeleológico da Lapa Grande, dada a sua importância arqueológica, onde aparece a formação do [[vulcão]] [[espeleotema]] de pouquíssima ocorrência no Brasil.<ref name="Prefeitura_Turismo"/>
+
+Para estimular o desenvolvimento socioeconômico local, a prefeitura de Montes Claros, juntamente ou não com empresas locais, investe no segmento de festas e eventos. Essas festas, muitas vezes, atraem pessoas de outras cidades, exigindo uma melhor infraestrutura no município e estimulando a profissionalização do setor, o que é benéfico não só aos turistas, como também a toda a população da cidade. As atividades ocorrem durante o ano inteiro. Há o Festival do [[Pequi]], em janeiro; o Carnamontes, em fevereiro ou março; o Festival Internacional de [[Dança folclórica|Danças Folclóricas]], em maio; as [[Festa junina|Festas Juninas]], em junho ou julho; a Exposição Agropecuária, no Parque de Exposição João Alencar Athayde, em julho; as [[Festas de Agosto de Montes Claros|Festas de Agosto (Catopês)]]; a Feira Nacional da Indústria, Comércio e de Serviços de Montes Claros (FENICS), em agosto; e o Salão Nacional de Poesia Psiu Poético, em outubro.<ref name="Prefeitura_Cultura"/>
+
+=== Esportes ===
+Assim como em grande parte do Brasil, o esporte mais popular em Montes Claros é o [[futebol]]. Na cidade há diversos clubes, destacando-se o [[Montes Claros Futebol Clube]], fundado em 28 de agosto de 1990; o Funorte Esporte Clube, fundado em 4 de maio de 2007; a [[Associação Atlética Cassimiro de Abreu]], fundado em 28 de maio de 1948; a [[Associação Desportiva Ateneu]], criada em 1 de maio de 1947; e o [[North Esporte Clube]], fundado em 27 de junho de 2022. Também existem diversos [[estádio]]s de futebol, como o [[Estádio João Rebello]], com capacidade para 4  550 pessoas; o [[Estádio José Maria de Melo]], com capacidade para 3 346 pessoas; o Estádio Dr. Rubens Durães Peres, 1 000 pessoas; o Estádio Ivani Martins Pereira, 1 000 pessoas, além de pequenos campos distribuídos pela cidade.<ref name="Prefeitura_Esportes">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.montesclaros.mg.gov.br%2Fcidade%2Faspectosgerais%2Fesportes.htm+&date=2011-05-20 |título=Esportes |autor=Prefeitura |acessodata=20 de maio de 2011}}</ref>
+
+Montes Claros também possui destaques em outros esportes, como o [[voleibol]]. A [[Fundação de Apoio ao Desenvolvimento Educacional de Montes Claros]] (FUNADEM) foi criada em 2009, tendo já no final desse ano conseguido visibilidade nacional após ter vencido o Circuito Internacional de Vôlei, evento amistoso realizado na cidade que reuniu alguns times de outros países.<ref>{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.jusbrasil.com.br%2Fpolitica%2F3974729%2Ffunadem-montes-claros-invicto-no-circuito-internacional-de-volei&date=2011-05-20 |título=Funadem/Montes Claros invicto no Circuito Internacional de Vôlei |autor=JusBrasil |data=24 de agosto de 2009 |acessodata=20 de maio de 2011}}</ref> No município também há, de acordo com a prefeitura, cinco ginásios, sendo o maior, o Ginásio Poliesportivo Presidente Tancredo Neves, com capacidade para 12 mil pessoas; seis logradouros próprios para serem usados como pistas de [[caminhada]]; e 15 clubes sociais.<ref name="Prefeitura_Esportes"/>
+
+=== Feriados ===
+Em Montes Claros há três [[feriado]]s municipais, oito feriados nacionais e três pontos facultativos. Os feriados municipais são: o [[Corpus Christi]], que sempre é realizado na quinta-feira seguinte ao domingo da [[Trindade (cristianismo)|Santíssima Trindade]]; o aniversário da emancipação da cidade, dia 3 de julho; e o [[Dia da Consciência Negra]], em 20 de novembro.<ref>Feriado instituído pela Lei Municipal 3.897, de 27 de dezembro de 2007.</ref> De acordo com a lei federal n.º 9.093, aprovada em 12 de setembro de 1995, os municípios podem ter no máximo quatro feriados municipais, já incluída a [[Sexta-Feira Santa]].<ref name="GuiaTrabalhistaCarnaval">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.guiatrabalhista.com.br%2Ftematicas%2Fcarnaval.htm&date=2011-03-03 |titulo=Carnaval - é ou não feriado? folga automática pode gerar alteração contratual |autor= Sérgio Ferreira Pantaleão |publicado = Guia Trabalhista  |acessodata=20 de maio de 2011}}</ref><ref name="GuiaTrabalhistaLei">{{citar web|url=http://www.webcitation.org/query?url=http%3A%2F%2Fwww.planalto.gov.br%2Fccivil_03%2FLeis%2FL9093.htm&date=2011-03-03 |titulo= Lei n.º 9.093, de 12 de setembro de 1995 |autor= Presidência da República |acessodata=20 de maio de 2011}}</ref>
+
+== Ver também ==
+* [[Lista de municípios de Minas Gerais]]
+* [[Lista de municípios do Brasil]]
+* [[Arquidiocese de Montes Claros]]
+* [[Aeroporto de Montes Claros]]
+* [[:Categoria:Naturais de Montes Claros|Naturais de Montes Claros]]
+
+{{Referências|col=3|scroll=s}}
+
+== Bibliografia ==
+* AZEVEDO, Mariângela Praes. Pelos Caminhos do Vieira. Disponível em <http://kawa.soe.umich.edu/riverwalk/Tours/5fb58a0d33edf16312ec68e55faac239/index_html/view>. Acesso em 1 de abril de 2008.
+* OLIVEIRA & RODRIGUES. Formação Social e Econômica do Norte de Minas. Montes Claros: Editora UNIMONTES. 2000.
+* PAULA, Hermes. Montes Claros, sua história e sua gente. 1957
+* PEREIRA e  OLIVEIRA.  A invenção do 03 de julho. UNIMONTES  CIENTÍFICA. http://www.ruc.unimontes.br/index.php/unicientifica/article/view/57
+* VIANNA, Urbino. Monografia Histórica, Geográfica e Descriptiva de Montes Claros. 1916
+
+== Ligações externas ==
+{{Correlatos
+|commonscat   = Montes Claros
+|commons      =
+|wikisource   = Hino do município de Montes Claros
+|wikisourcecat   =
+|wikiquote    =
+|wikilivros   =
+|wikinoticias =
+|wikinoticiascat =
+|wikcionario  = Montes Claros
+|wikispecies  =
+}}
+* {{Link||2=https://www.montesclaros.mg.gov.br/ |3=Prefeitura de Montes Claros}}
+* {{Link||2=https://www.montesclaros.mg.leg.br/ |3=Câmara Municipal}}
+* {{Link||2=https://cidades.ibge.gov.br/brasil/mg/montes-claros/panorama |3=Dados do IBGE de Montes Claros}}
+
+{{Subdivisões de Minas Gerais}}
+{{Portal3|Brasil|Minas Gerais}}
+{{Categorização AD e AB de outras wikis}}
+
+[[Categoria:Montes Claros| ]]
+[[Categoria:Fundações em Minas Gerais em 1857]]
+[[Categoria:Municípios de Minas Gerais]]
+{{Artigo destacado}}

@@ -1,0 +1,57 @@
+{{Ficha de entidad subnacional
+| nombre         = Chagres
+| nombre_oficial = Chagres
+| unidad         = [[Anexo:Distritos de Panamá|Distrito]]
+| capital        = [[Nuevo Chagres]]
+| tipo_superior_1 = [[Anexo:Provincias y comarcas indígenas de Panamá|Provincia]]
+| superior_1      = {{PAN|3}}
+| tipo_div_1      = Corregimientos
+| div_1           = 7
+| lema            =
+| bandera         = no
+| escudo          = no
+| mapa            = Panamá - Colón - Chagres.svg
+| tamaño_mapa     = 250px
+|mapa1 = {{map draw
+ |align=center
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=9}}
+| imagen          = 
+| pie_de_imagen   = 
+| latitud         = 
+| longitud        = 
+| superficie      = 447.2
+| superficie_post = <ref name="censo"/>
+| elevación_media =
+| fundación       = 1855
+| población       = 10968
+| población_año   = 2023
+| población_post  = <ref name="censo"/>
+| gentilicio      = Chagreño, Chagreña.
+| dirigentes_títulos = Alcalde
+| dirigentes_nombres = 
+| página web      =
+}}
+
+El '''distrito de Chagres''' es una de las divisiones que conforma la [[provincia de Colón]], situado en la República de [[Panamá]].
+
+Tenía una población de 10.968 habitantes en 2023.<ref name="censo">{{cita web |url=https://www.inec.gob.pa/archivos/P0705547520231109105354CUADRO%2010.pdf |título=Superficie, población y densidad de población en la República según provincia, comarca, distrito y corregimiento |fechaacceso=17 de diciembre de 2025 |obra=Censos de 2000 a 2023 |editorial=Instituto Nacional de Estadística y Censo (INEC)}}</ref>
+
+== División político-administrativa ==
+Está conformado por siete corregimientos:
+
+*[[Nuevo Chagres]]
+*[[Achiote (Colón)|Achiote]]
+*[[El Guabo (Colón)|El Guabo]]
+*[[La Encantada (Colón)|La Encantada]]
+*[[Palmas Bellas]]
+*[[Piña (Colón)|Piña]]
+*[[Salud (Colón)|Salud]]
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Distritos de Colón|Chagres]]

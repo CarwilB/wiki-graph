@@ -1,0 +1,368 @@
+{{Info/Município do Brasil
+<!-- Cabeçalho -->| nome = Sete Lagoas
+| foto = Sete Lagoas 30.05.2022.jpg
+| leg_foto = Panorama de Sete Lagoas a partir da Lagoa Paulino
+<!-- Dados gerais -->| bandeira = BandeiraSeteLagoas.png
+| brasão = Brasaosetelagoas.png
+| link_bandeira = 
+| link_brasão = 
+| link_hino = 
+| lema = ''Ad Altiora Nata''<br/>''<small>"Nascida para o alto"</small>''
+| gentílico = sete-lagoano<ref name=IBGE_Sete_Lagoas/>
+| padroeiro = [[Santo Antônio de Pádua|Santo Antônio]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=6 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+| mapa = MinasGerais Municip SeteLagoas.svg
+| latP = S
+| latG = 19
+| latM = 27
+| latS = 57
+| lonP = O
+| lonG = 44
+| lonM = 14
+| lonS = 49
+| estado = Minas Gerais
+| vizinhos = [[Araçaí]], [[Paraopeba]], [[Caetanópolis]], [[Inhaúma]], [[Esmeraldas (Minas Gerais)|Esmeraldas]], [[Capim Branco]], [[Prudente de Morais (Minas Gerais)|Prudente de Morais]], [[Funilândia]] e [[Jequitibá (Minas Gerais)|Jequitibá]]<ref name="ALMG">{{citar web |url=https://www.almg.gov.br/consulte/info_sobre_minas/index.html?aba=js_tabMunicipios&sltMuni=672 |título=Sete Lagoas |publicado=Assembleia Legislativa do Estado de Minas Gerais |acessodata=09-08-2021 }}{{Ligação inativa}}</ref>
+| região_geográfica_intermediária = Belo Horizonte
+| região_geográfica_intermediária_ref = <ref name="IBGE_DTB_2017">{{citar web |url=ftp://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xls |título=Base de dados por municípios das Regiões Geográficas Imediatas e Intermediárias do Brasil |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=2017 |acessodata=5 de setembro de 2017}}</ref>
+| região_geográfica_imediata = Sete Lagoas
+| região_geográfica_imediata_ref = <ref name="IBGE_DTB_2017" />
+| dist_capital = 72
+| dist_capital_ref = 
+| fundação = {{dtlink||||idade}}
+| emancipação = {{nowrap|{{dtlink|24|11|1867|idade}}}}<ref>{{citar web|URL=http://memoria.bn.br/DocReader/313394/27752 |título=Almanak Laemmert : Administrativo, Mercantil e Industrial (RJ) |acessodata=29 de setembro de 2022}}</ref>
+| distritos = Sede, [[Silva Xavier]], [[Barreiro de Sete Lagoas]]
+| distritos_ref = <ref name="FJP">{{citar web | url = https://fjp.mg.gov.br/informacoes-territoriais/ | titulo = Municípios e Distritos de Minas Gerais - Junho de 2024 | publicado = Fundação João Pinheiro | acessodata = 5 de julho de 2024}}</ref>
+| prefeito = Douglas Melo <ref> https://g1.globo.com/google/amp/mg/minas-gerais/eleicoes/2024/noticia/2024/12/31/prefeito-de-sete-lagoas-mg-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml </ref>
+| partido = [[PSD]]
+| fim_mandato = 2028
+| vereadores = 19
+| vereadores_ref = <!-- Características geográficas -->
+| área = 536.928
+| área_ref = <ref name=IBGE_Sete_Lagoas>{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/panorama |título=Sete Lagoas |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=09-02-2023}}</ref>
+| área_urbana = 
+| área_urbana_data = 
+| área_urbana_ref = 
+| população = 237931
+| população_pos = [[Lista de municípios de Minas Gerais por população|MG: 11º]]
+| data_pop = estimativa IBGE/2024
+| população_ref = <ref name=IBGE_Pop_2024>{{citar web |url=https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2024/estimativa_dou_2024.pdf |título=Estimativas da população residente no Brasil e unidades da federação com data de referência em 1º de julho de 2024 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=2024-09-01}}</ref>
+| clima = [[Clima tropical de savana|Clima tropical, com inverno seco]]
+| sigla_clima = Aw
+| clima_ref = <ref name ="Clima">{{citar web |url=https://www.cemig.com.br/wp-content/uploads/2021/03/atlas-solarimetrico-vol-ii-mg.pdf |título=Atlas Solarimétrico de Minas Gerais - Volume II |autor=Cemig |acessodata=30 de junho de 2024}}</ref>
+| altitude = 766,73
+| altitude_ref = <!-- Indicadores -->
+| idh = 0.760 <!--favor manter o formato-->
+| idh_data = [[PNUD]]/[[2010]]
+| idh_ref = <ref name="PNUD_IDH_2010">{{citar web|url=http://www.atlasbrasil.org.br/consulta/planilha |arquivourl= |arquivodata= |título=1 - Evolução do desenvolvimento nos municípios brasileiros |autor=PNUD |acessodata= 5 de julho de 2024}}</ref>
+| idh_pos = 
+| gini = 
+| gini_data = 
+| gini_ref = 
+| gini_pos = 
+| pib = {{formatnum:12659739,89}} mil
+| pib_data = [[IBGE]]/[[2021]]
+| pib_ref = <ref name="IBGE_PIB">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/38/46996 |titulo=Produto Interno Bruto dos Municípios |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=5 de julho de 2024}}</ref>
+| pib_pos = [[Lista de municípios do Brasil por PIB|BR: 119º]]
+| pib_per_capita = {{formatnum:51894,81}}
+| pib_per_capita_data = [[IBGE]]/[[2021]]<ref name="IBGE_PIB" />
+| CEP = 35700-000 a 35719-999<ref>{{citar web|url=https://buscacepinter.correios.com.br/app/faixa_cep_uf_localidade/index.php |titulo=CEP de cidades brasileiras |autor=[[Empresa Brasileira de Correios e Telégrafos|Correios]] |acessodata=5 de julho de 2024}}</ref>
+| site_prefeitura = [http://www.setelagoas.mg.gov.br/ www.setelagoas.mg.gov.br]
+| site_câmara = [http://www.setelagoas.mg.leg.br/ www.setelagoas.mg.leg.br]
+}}
+'''Sete Lagoas''' é um [[Município (Brasil)|município brasileiro]] do [[Unidades federativas do Brasil|estado]] de [[Minas Gerais]], localizado a aproximadamente 72 quilômetros de [[Belo Horizonte]]. De acordo com estimativa populacional para 2024, publicada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), o município reúne uma população de {{fmtn|237931}} habitantes, o que o torna o 12º [[Lista de municípios de Minas Gerais por população|mais populoso do estado]] e o mais populoso de sua [[Região Geográfica Imediata de Sete Lagoas|região geográfica imediata]].<ref name=IBGE_Pop_2024/>
+
+== História ==
+=== Origens e povoamento ===
+Sete Lagoas tem uma história rica e multifacetada que remonta aos primórdios do século XVIII. Uma das figuras centrais no início de sua história é [[João Leite da Silva Ortiz]], nascido em [[São Paulo]], filho de Estevão Raposo Bocarro e Dona Maria de Abreu Pedroso Leme. Ortiz, representante da raça dos sertanistas paulistas, era conhecido por sua busca constante por novos territórios e oportunidades.<ref name="dicionario">{{citar livro |ultimo=De Almeida Barbosa |primeiro=Waldemar |data=1995 |titulo=Dicionário Histórico-Geográfico de Minas Gerais}}</ref>
+
+Como [[Bandeirantes|bandeirante]], Ortiz desempenhou um papel crucial na exploração e no desenvolvimento inicial da região. Em 1701 chegou à Serra de Congonhas, onde, em vez de encontrar ouro, como era sua intenção inicial, deparou-se com uma paisagem propícia para a agricultura. Esta descoberta levou-o a estabelecer-se na área, fundando a Fazenda do Cercado, onde iniciou atividades agrícolas e pecuárias.<ref name="dicionario"/>
+
+Em janeiro de 1711, Ortiz obteve a Sesmaria do Cercado e, no mês seguinte, a Sesmaria de Sete Lagoas. Esta última, por razões não documentadas, não foi registrada nos livros oficiais da Secretaria do Governo na época. Além de sua influência em Sete Lagoas, Ortiz é reconhecido por fundar o arraial do Curral del Rei, que eventualmente evoluiu para a cidade de Belo Horizonte, a capital de Minas Gerais.
+
+A história de Sete Lagoas prossegue com a figura de Antônio de Pinto Magalhães, que desempenhou um papel fundamental na evolução da cidade. Ele adquiriu a [[sesmaria]] da região, anteriormente pertencente a João Leite da Silva Ortiz. Esta aquisição, documentada oficialmente, representa um marco importante na continuidade do desenvolvimento de Sete Lagoas. A compra da sesmaria por Magalhães é um reflexo da dinâmica de posse e exploração de terras que caracterizava o [[Brasil Colônia|período colonial brasileiro]].
+
+{{Cquote|... que ele comprara um sítio ao capitão João Leite da Silva, nas Sete Lagoas, distante três léguas de viagem da dita vila (de Sabará) de que lhe dera por títulos uma carta de sesmaria passada pelo governador Antônio de Albuquerque Coelho de Carvalho, em três de abril de mil setecentos e onze, pela qual lhe fizera mercê, em nome de Sua Majestade, que Deus guarde, de duas léguas de terras, na paragem chamada Sete Lagoas, por se achar nela desde o ano de setecentos, com plantas, criações e gado vacum, começando as ditas duas léguas das cabeceiras da Mata do Sumidouro, de um ribeiro que chamam dos Macacos até as Lagoas Grandes, e do pé do Serro onde está a dita fazenda, correndo para a parte do rio das Velhas, até fazer as duas léguas, entrando na dita todos os campos, matas, maninhos, alagadiços e tudo mais que lhe pertencesse e por que até o presente não pudera o dito João Leite da Silva mandar confirmar a dita carta por Sua Majestade...|autor=Arquivo Público Mineiro|fonte=Transcrição de Carta de Sesmaria.<ref name="dicionario"/>}}
+
+Por volta de 1750, a Coroa Portuguesa formalizou a concessão da sesmaria a Antônio de Pinto Magalhães, cobrindo a área que hoje corresponde à cidade de Sete Lagoas. Essa transferência de posse foi um passo significativo na história da região. Posteriormente, após a execução de Magalhães, a sesmaria foi transferida para o Padre Joaquim de Souza, um movimento que reflete as mudanças políticas e sociais da época.<ref>{{citar web|URL=https://setelagoas.com.br/sete-lagoas/cidade/historia |título=História de Sete Lagoas |autor=SeteLagoas.com.br |acessodata=24 de outubro de 2023}}</ref>
+
+Durante o período colonial brasileiro, especialmente nos séculos XVII e XVIII, a [[Coroa portuguesa no Brasil|Coroa Portuguesa]] implementou uma série de medidas para controlar a extração e o tráfego de ouro e diamantes na região das Minas Gerais.
+
+A partir de 1702, a Coroa Portuguesa determinou a organização da exploração das minas através do Regimento das Terras Minerais. Este regimento estabeleceu que a exploração aurífera deveria ser acompanhada pelo pagamento de um imposto denominado “quinto”, que correspondia a um quinto do valor extraído. Além disso, foram criados postos de controle, conhecidos como “quarteis” ou “registros”, em diversas localidades de Minas Gerais, visando cobrar impostos sobre a circulação de mercadorias e escravos. Um desses postos criados foi em Sete Lagoas.
+
+Joaquim José da Silva Xavier, mais conhecido como [[Tiradentes]], teve uma presença significativa na cidade. Ele comandou a guarnição militar responsável pela segurança do posto de arrecadação fiscal em Sete Lagoas. Documentos históricos confirmam a presença de Tiradentes na cidade entre 22 de abril de 1780 e 23 de junho de 1781. Durante este período, além de garantir a segurança do Registro, o destacamento militar sob seu comando também tinha a missão de patrulhar as estradas para coibir o contrabando e auxiliar na cobrança dos impostos.<ref name="dicionario"/>
+
+=== Formação administrativa ===
+O distrito de Sete Lagoas foi criado em 7 de abril de 1841<ref name=IBGE_Sete_Lagoas/>, pela Lei Provincial Nº 211. Inicialmente, este distrito era subordinado ao município de [[Sabará]], sendo transferido para [[Santa Luzia (Minas Gerais)|Santa Luzia]] em 1847, quando esta foi elevada a vila. Alguns anos depois, pela Lei Provincial Nº 1.395, de 24 de novembro de 1867<ref name=IBGE_Sete_Lagoas/>, o distrito foi elevado a vila, desmembrando-se de Santa Luzia. A categoria de cidade foi alcançada em 30 de novembro de 1880, pela Lei Provincial Nº 2.672. Diversos distritos foram criados ao longo dos séculos XIX e XX, posteriormente se emancipando como [[Fortuna de Minas|Fortuna]], [[Jequitibá]] e [[Inhaúma]].<ref name=IBGE_Sete_Lagoas/>
+<!-- === Expansão econômica === -->
+<!-- === História recente === -->
+
+== Geografia ==
+Situada a 72 km de [[Belo Horizonte]], Sete Lagoas está localizada de forma estratégica na [[Região Geográfica Intermediária de Belo Horizonte]], e o município é parte integrante do colar metropolitano da [[Região Metropolitana de Belo Horizonte]]. Dispõe de linha férrea e gasoduto subterrâneo<ref name="gasoduto">{{citar web |url=https://gasmig.com.br/mapa-de-rede/ |titulo=Gasmig - Mapa da rede |acessodata=5 de julho de 2024}}</ref>. Sete Lagoas ocupa o décimo segundo lugar entre as cidades mais populosas de [[Minas Gerais]]. Sete Lagoas se localiza na [[Região Geográfica Imediata de Sete Lagoas|Região Geográfica Imediata homônima]], formada pelos municípios de [[Araçaí]], [[Baldim]], [[Cachoeira da Prata]], [[Caetanópolis]], [[Capim Branco]], [[Conceição do Mato Dentro]], [[Congonhas do Norte]], [[Cordisburgo]], [[Fortuna de Minas]], [[Funilândia]], [[Inhaúma]], [[Jequitibá (Minas Gerais)|Jequitibá]], [[Matozinhos]], [[Morro do Pilar]], [[Paraopeba]], [[Prudente de Morais (Minas Gerais)|Prudente de Morais]], [[Santana de Pirapama]] e [[Santana do Riacho]]<ref name="reg_geografica">{{citar web |url=https://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/mapas/31_regioes_geograficas_minas_gerais.pdf |titulo=Regiões Geográficas Minas Gerais |acessodata=5 de julho de 2024}}</ref>.
+
+=== Geologia e hidrografia ===
+O município, com área de {{fmtn|536.928|km²}}, apresenta relevo constituído por colinas suaves, côncavo-convexas e altimetria média entre 700 e 900 m. As cotas mais baixas situam-se no extremo-noroeste, na bacia do [[Ribeirão São João (Minas Gerais)|Ribeirão São João]].<ref name="Mapas_Dnit">{{citar web |url=https://servicos.dnit.gov.br/vgeo/ |título=Mapas Dnit |autor=DNIT |acessodata=5 de julho de 2024 }}{{Ligação inativa}}</ref> O ponto culminante está localizado [[Serra de Santa Helena]], localizada a noroeste da cidade e possui uma altitude de 1.072 metros<ref name="Mapas_Dnit"/>.
+
+Do ponto de vista geológico, Sete Lagoas está enquadrada numa região de rochas do [[Grupo Bambuí]], constituída de calcários cinzentos intercalados por mármore acinzentado (Formação Basal ou Sete Lagoas) e ardósias sobrepostas ao calcário (Formação Santa Helena). Encontra-se Latossolo Vermelho distroférrico típico A moderado muito argilosos e Latossolo Vermelho-Escuro distrófico textura argilosa fase cerrado.{{carece de fontes|data=julho de 2024}}
+
+O município está localizado na bacia hidrográfica do [[Rio São Francisco]], no qual a Serra de Santa Helena atua como divisor de bacia do [[Rio Paraopeba]] e [[Rio das Velhas]], afluentes do São Francisco. O principal curso da bacia do Paraopeba é o Ribeirão São João. O principal curso da bacia do Rio das Velhas é o Ribeirão Jequitibá, sendo que sua sub-bacia corresponde a 80% do território do município<ref name="hidrografia">{{citar web|url=https://repositorio.ufmg.br/bitstream/1843/MPBB-7QGN97/1/dissertacao_luciobotelho.pdf |título=Gestão dos Recursos Hídricos em Sete Lagoas/MG: uma abordagem a partir da evolução espaço-temporal da demanda e da captação de água |autor=Lúcio Antônio Leite Alvarenga Botelho |acessodata=5 de julho de 2024}}</ref>. 
+
+=== Clima ===
+Domina a área o [[clima tropical de altitude]], com verões quentes e chuvosos e invernos secos. Estação chuvosa de outubro a março e estiagem de abril a setembro. Naturalmente, há anos mais chuvosos ou menos chuvosos em relação a outros. Também têm ocorrido algumas variações desse tipo para cada mês em anos diferentes. O mesmo pode acontecer com relação às temperaturas médias mensais e anuais. Alguns anos podem ser um pouco mais quentes ou um pouco mais frios do que outros. Algo um tanto similar pode ser observado em relação a cada mês específico em anos diferentes.
+
+Em conformidade com dados da estação meteorológica convencional do município, desativada em julho de 2016, a temperatura média compensada de Sete Lagoas entre os anos de 1981 até 2010 foi de 21,5&nbsp;°C e o [[índice pluviométrico]] anual de {{fmtn|1335}} milímetros, com tempo de [[insolação]] de aproximadamente {{fmtn|2650|horas/ano}}.<ref name="NCB_1981-2010">Instituto Nacional de Meteorologia, "Climatologia de Sete Lagoas (1981-2010)", INMET, 2016</ref>
+
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de 1961 a 1983, 1986 e a partir de 1993, a menor temperatura registrada em Sete Lagoas foi de {{fmtn|2.4|°C}} em 1° de junho de 1979,<ref name="Temp-mín-INMET"/> e a maior atingiu {{fmtn|39.7|°C}} em 17 de outubro de 2015.<ref name="Temp-máx-INMET"/> O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas foi de {{fmtn|152.9}} milímetros (mm) em 23 de janeiro de 1977. Outros grandes acumulados foram {{fmtn|147.7|mm}} em 27 de dezembro de 1995, {{fmtn|143.4|mm}} em 14 de fevereiro de 1978, {{fmtn|140.1|mm}} em 31 de janeiro de 2000, {{fmtn|130.4|mm}} em 31 de dezembro de 2001, {{fmtn|130.3|mm}} em 25 de novembro de 1980 e 28 de fevereiro de 2015, {{fmtn|113.4|mm}} em 13 de janeiro de 1978, {{fmtn|112.2|mm}} em 4 de janeiro de 1997, {{fmtn|109.2|mm}} em 14 de dezembro de 1995, {{fmtn|105.6|mm}} em 22 de outubro de 2009, {{fmtn|104.4|mm}} em 7 de março de 1994, {{fmtn|102.9|mm}} em 13 de março de 2012 e {{fmtn|102.8|mm}} em 19 de fevereiro de 1965.<ref>{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83586&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=21/07/2016&mAtributos=,,,,,,,,,,1,,,,,,|título=BDMEP - série histórica - dados diários - precipitação (mm) - Sete Lagoas|publicado=Instituto Nacional de Meteorologia|acessodata=27/8/2014}}</ref> Janeiro de 1961 foi o mês de maior precipitação, com {{fmtn|688.8|mm}}.<ref>{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao=83586&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=31/07/2016&mAtributos=,,,,,,,,,1,,,,,,,|título=BDMEP - série histórica - dados mensais - precipitação total (mm) - Sete Lagoas|publicado=Instituto Nacional de Meteorologia|acessodata=27/8/2014}}</ref><!-- O menor índice de umidade relativa do ar foi de 10% em 22 de junho de 2000.<ref>{{citar web|url=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83586&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=21/07/2016&mAtributos=,,,,1,,,,,,,,,,,,|título=BDMEP - série histórica - dados horários - umidade relativa (%) - Sete Lagoas|publicado=Instituto Nacional de Meteorologia|acessodata=27/8/2014}}</ref> -->
+{{Tabela climática
+|localidade = Sete Lagoas
+|larguraporcentagem = 100
+|lang = br
+
+|Jan_REC_Max_°C = 37.1 |Jan_REC_Min_°C = 13.7
+|Fev_REC_Max_°C = 36.3 |Fev_REC_Min_°C = 13.6
+|Mar_REC_Max_°C = 35.1 |Mar_REC_Min_°C = 10
+|Abr_REC_Max_°C = 33.8 |Abr_REC_Min_°C = 7.9
+|Mai_REC_Max_°C =  33  |Mai_REC_Min_°C = 4.1
+|Jun_REC_Max_°C = 31.2 |Jun_REC_Min_°C = 2.4
+|Jul_REC_Max_°C = 33.4 |Jul_REC_Min_°C = 3.5
+|Ago_REC_Max_°C = 37.6 |Ago_REC_Min_°C = 4.1
+|Set_REC_Max_°C = 39.4 |Set_REC_Min_°C = 8.6
+|Out_REC_Max_°C = 39.7 |Out_REC_Min_°C = 10.2
+|Nov_REC_Max_°C =  38  |Nov_REC_Min_°C = 9.7
+|Dez_REC_Max_°C = 36.1 |Dez_REC_Min_°C = 13.1
+|Max_Rec_Ano_°C = 39.7 |Min_Rec_Ano_°C = 2.4
+
+|Jan_Max_°C = 29.6 |Jan_Med_comp_°C = 23.3 |Jan_Min_°C = 18.9
+|Fev_Max_°C = 30.2 |Fev_Med_comp_°C = 23.5 |Fev_Min_°C = 18.7
+|Mar_Max_°C = 29.6 |Mar_Med_comp_°C = 23.1 |Mar_Min_°C = 18.5
+|Abr_Max_°C = 28.8 |Abr_Med_comp_°C = 21.8 |Abr_Min_°C = 16.8
+|Mai_Max_°C = 27.1 |Mai_Med_comp_°C = 19.4 |Mai_Min_°C =  14
+|Jun_Max_°C = 26.4 |Jun_Med_comp_°C =  18  |Jun_Min_°C = 12.2
+|Jul_Max_°C = 26.7 |Jul_Med_comp_°C = 18.1 |Jul_Min_°C =  12
+|Ago_Max_°C = 28.2 |Ago_Med_comp_°C = 19.7 |Ago_Min_°C = 13.3
+|Set_Max_°C = 29.6 |Set_Med_comp_°C = 21.7 |Set_Min_°C = 15.7
+|Out_Max_°C = 30.1 |Out_Med_comp_°C =  23  |Out_Min_°C = 17.7
+|Nov_Max_°C =  29  |Nov_Med_comp_°C = 22.9 |Nov_Min_°C = 18.5
+|Dez_Max_°C = 28.7 |Dez_Med_comp_°C = 22.9 |Dez_Min_°C = 18.8
+|Max_Ano_°C = 28.7 |Med_comp_Ano_°C = 21.5 |Min_Ano_°C = 16.3
+
+|Jan_Precip_mm =  260.6 |Jan_dprecip = 14
+|Fev_Precip_mm =  143.3 |Fev_dprecip = 10
+|Mar_Precip_mm =  168.7 |Mar_dprecip = 10
+|Abr_Precip_mm =   51.6 |Abr_dprecip = 5
+|Mai_Precip_mm =   27.8 |Mai_dprecip = 3
+|Jun_Precip_mm =    4.5 |Jun_dprecip = 1
+|Jul_Precip_mm =    6.1 |Jul_dprecip = 1
+|Ago_Precip_mm =   13.1 |Ago_dprecip = 2
+|Set_Precip_mm =   39.5 |Set_dprecip = 4
+|Out_Precip_mm =   87.9 |Out_dprecip = 7
+|Nov_Precip_mm =  210.4 |Nov_dprecip = 13
+|Dez_Precip_mm =  321.3 |Dez_dprecip = 17
+|Ano_Precip_mm = 1334.8 |Ano_dprecip = 87 |Precip_Min  =  ≥ 1 mm
+
+|Jan_umid_comp = 74.8
+|Fev_umid_comp = 71.9
+|Mar_umid_comp = 74.3
+|Abr_umid_comp = 71.9
+|Mai_umid_comp = 70.7
+|Jun_umid_comp =  68
+|Jul_umid_comp = 62.5
+|Ago_umid_comp = 56.8
+|Set_umid_comp = 55.9
+|Out_umid_comp = 61.6
+|Nov_umid_comp = 71.8
+|Dez_umid_comp = 76.6
+|Ano_umid_comp = 68.1
+
+|Jan_hsol =  189.3
+|Fev_hsol =   203
+|Mar_hsol =  202.5
+|Abr_hsol =  239.4
+|Mai_hsol =  243.4
+|Jun_hsol =  249.7
+|Jul_hsol =  266.6
+|Ago_hsol =  272.5
+|Set_hsol =  236.3
+|Out_hsol =  211.1
+|Nov_hsol =  174.3
+|Dez_hsol =  157.4
+|Ano_hsol = 2645.7
+
+|fonte = Instituto Nacional de Meteorologia (INMET) (normal climatológica de 1981-presente;<ref name="NCB_1981-presente">{{citar web|URL=https://tempo.inmet.gov.br/Graficos/A001|título=Temperaturas Diárias (Máxima, Média, Mínima) |publicado=Instituto Nacional de Meteorologia|acessodata=17/8/2024}}</ref> recordes de temperatura de 1961 a 1983, 1986 e de 1993 a 2016)<ref name="Temp-mín-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83586&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=21/07/2016&mAtributos=,,,1,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura mínima (°C) - Sete Lagoas|publicado=Instituto Nacional de Meteorologia|acessodata=27/8/2014}}</ref><ref name="Temp-máx-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83586&btnProcesso=serie&mRelDtInicio=01/01/1961&mRelDtFim=21/07/2016&mAtributos=,,1,,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura máxima (°C) - Sete Lagoas|publicado=Instituto Nacional de Meteorologia|acessodata=27/8/2014}}</ref>
+}}
+
+<!-- === Ecologia e meio ambiente === -->
+
+
+== Demografia ==
+{{Crescimento populacional do Censo do Brasil
+| 1872 = 
+| 1890 = 10.154
+| 1900 = 
+| 1920 = 
+| 1940 = 
+| 1950 = 
+| 1960 = 
+| 1970 = 66.585
+| 1980 = 100.618
+| 1991 = 143.611
+| 2000 = 184.871
+| 2010 = 214.152
+| 2022 = 227.397
+| estimado =
+| ano_est  =
+| ref_est  =
+| rodape   = Fonte: [[Instituto Brasileiro de Geografia e Estatística|Instituto Brasileiro de</br> Geografia e Estatística]] (IBGE)<ref name="IBGE_Pop">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/10102/122229 |arquivourl= |arquivodata= |título=Censo 2022 |autor=IBGE |data=2023 |acessodata=5 de julho de 2024}}</ref>
+}}
+Em 2022, a população do município foi contada pelo [[Instituto Brasileiro de Geografia e Estatística]] (IBGE) em {{fmtn|227397}} habitantes.<ref name="IBGE_Pop" /> Referente ao mesmo ano, {{fmtn|109001}} habitantes eram homens e {{fmtn|118396}} habitantes mulheres<ref name="IBGE_Pop" />. Da população total naquele ano, {{fmtn|38747}} habitantes tinham menos de 15 anos de idade, e {{fmtn|38309}} pessoas possuíam mais de 60 anos.<ref name="IBGE_Pop" /> A população do município era composta por {{fmtn|66545}} brancos (29,2%), {{fmtn|26587}} negros (11,6%), {{fmtn|190}} amarelos (0,08%), {{fmtn|133950}} pardos (58,9%) e 117 indígenas (0,05%).<ref name="IBGE_Pop" />
+
+O [[Índice de Desenvolvimento Humano]] Municipal (IDH-M) de Sete Lagoas é considerado alto pelo Programa das Nações Unidas para o Desenvolvimento ([[Programa das Nações Unidas para o Desenvolvimento|PNUD]]), sendo que seu valor é de 0,760 (o 366º maior do Brasil). A cidade possui a maioria dos indicadores próximos à média nacional segundo o PNUD. Considerando-se apenas o índice de educação o valor é de 0,705, o valor do índice de longevidade é de 0,840 e o de renda é de 0,742.<ref name="PNUD_IDH_2010" />
+
+De acordo com dados do censo de 2010 realizado pelo IBGE, a população municipal está composta por: {{fmtn|158889}} [[Catolicismo|católicos]] (74%), {{fmtn|36291}} [[Protestantismo|evangélicos]] (16,9%), {{fmtn|8049}} [[Sem religião|pessoas sem religião]] (3,7%) e 5,2% estão divididos entre outras religiões.<ref name="Religião">{{citar web |url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/23/22107?detalhes=true |arquivourl= |arquivodata= |título=Tabela 2094 - População residente por cor ou raça e religião |autor=IBGE |data=2010 |acessodata= 5 de julho de 2024}}</ref> A cidade sedia a [[Diocese de Sete Lagoas]], cuja sede é representada pela Catedral de Santo Antônio, que corresponde a um dos principais templos da [[Igreja Católica]] e um dos principais pontos turísticos do município. De acordo com o censo brasileiro de 2022, a composição religiosa da cidade era de 67,62% católicos, 20,97% evangélicos ou protestantes, 2,72% espíritas, 0,57% umbanda ou candomblecistas, 0,02% religiões tradicionais, 2,96% outras religiões, 5,01% irreligiosos, 0,03% desconhecidos e 0,11% não declarados.<ref>{{Citar web|url=https://g1.globo.com/economia/censo/noticia/2025/06/06/mapa-censo-ibge-religiao.ghtml|titulo=MAPA: Qual é a religião mais popular da sua cidade?|data=2025-06-06|acessodata=2025-10-29|website=G1|lingua=pt-br}}</ref> <!-- Em relação a outras denominações protestantes e e cristãs, destacam-se... -->
+<!-- :Explorar favelização e migração/emigração. Dividir em subseções caso necessário. -->
+
+== Política e administração ==
+{{Anexo|Lista de prefeitos de Sete Lagoas}}
+A administração municipal se dá pelos Poderes [[Poder Executivo|Executivo]] e [[Poder Legislativo|Legislativo]]. O representante do Poder Executivo de Sete Lagoas eleito nas [[Eleições municipais no Brasil em 2020|eleições municipais em 2024]] foi [[Douglas Melo]], do [[Partido Social Democrático (2011)|PSD]], que conquistou um total de 49.367 votos, 43,23% dos votos válidos., tendo Euro de Andrade como [[vice-prefeito]].<ref name="prefeito">{{citar web |url=https://noticias.uol.com.br/eleicoes/2020/11/15/apuracao-prefeitura-sete-lagoas-mg-resultado-1-turno.htm |arquivourl= |arquivodata= |título=Eleições 2020 - Apuração |autor= |data=15 de novembro de 2020 |acessodata=5 de julho de 2024}}</ref>
+
+O Poder Legislativo, por sua vez, é constituído pela [[Câmara municipal (Brasil)|câmara]], composta por 19 [[vereador]]es eleitos para mandatos de quatro anos (em observância ao disposto no artigo 29 da [[Constituição]]).<ref>{{citar web |url=https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm |autor=Planalto |título=Constituição Federal - CF - 1988 / Art. 29  |acessodata=5 de julho de 2024}}</ref> Cabe à casa elaborar e votar leis fundamentais à administração e ao Executivo, especialmente o orçamento participativo ([[Lei de Diretrizes Orçamentárias]]). Havia {{fmtn|164336}} [[eleitor]]es em julho de 2024, o que representava 0,99% do total do estado.<ref>{{citar web|url=https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/home?p0_municipio=SETE%20LAGOAS&p0_uf=MG&session=105131450355135 |título=Consulta Quantitativo  |autor=[[Tribunal Superior Eleitoral]] (TSE) |acessodata=5 de julho de 2024}}</ref>
+
+O município é dividido em três distritos, sendo o da Sede, que tem categoria de cidade, e os distritos de Silva Xavier, criado pela Lei Estadual Nº 336, de 27 de dezembro de 1948, e Barreiro de Sete Lagoas, criado pela Lei Municipal Nº 8.422, de 31 de março de 2015.<ref name="FJP" />
+<!-- :Explorar [[comarca]], [[lei orgânica]], cidades-irmãs, conselhos municipais e citar sede do governo estadual. -->
+<!-- == Subdivisões == -->
+<!-- :Unir à "Política e administração", caso o tamanho convenha. -->
+<!-- == Economia == -->
+<!-- ;Setor primário -->
+<!-- ;Setor secundário -->
+<!-- ;Setor terciário -->
+
+== Infraestrutura ==
+=== Saúde ===
+O município possuía, em 2009, 130 estabelecimentos de saúde, sendo 73 deles privados e 53 públicos municipais entre hospitais, [[Departamento de emergência|prontos-socorros]], [[Posto de saúde|postos de saúde]] e [[Odontologia|serviços odontológicos]]. Neles havia 268 leitos para internação.<ref name="IBGE_Saúde">{{Citar web |url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/32/28163 |arquivourl= |arquivodata= |título=Serviços de saúde - 2009 |autor=Cidades@ - IBGE |acessodata=5 de julho de 2024}}</ref> Em 2022, foram registrados {{fmtn|2571}} nascidos vivos, ao mesmo tempo que o índice de [[mortalidade infantil]] foi de 14,78 óbitos de crianças menores de cinco anos de idade a cada mil nascidos vivos.<ref name="IBGE_Mortalidade">{{Citar web |url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/39/30279 |arquivourl= |arquivodata= |título=Serviços de saúde - 2009 |autor=Cidades@ - IBGE |acessodata=5 de julho de 2024}}</ref>
+<!-- :Explorar principais equipamentos de saúde no município, dentre unidades de saúde, órgãos e campanhas. -->
+
+=== Educação ===
+<!-- Na área da educação, o [[Índice de Desenvolvimento da Educação Básica]] (IDEB) médio entre as escolas públicas era, no ano de 2021, de 5,1 (numa escala de avaliação que vai de nota 1 à 10), sendo que a nota obtida por alunos do 5º ano (antiga 4ª série) foi de X e do 9º ano (antiga 8ª série) foi de X; o valor das escolas públicas de todo o Brasil era de X.<ref name="ODM_2">{{citar web|url=http://www.relatoriosdinamicos.com.br/portalodm/ |arquivourl= |arquivodata= |título=2 - educação básica de qualidade para todos |autor=Portal ODM |data=2012 |acessodata=22 de fevereiro de 2015}}</ref> Em 2010, X% das [[criança]]s com [[faixa etária]] entre sete e quatorze anos não estavam cursando o ensino fundamental.<ref name="PNUD_Atlas"/> A taxa de conclusão, entre jovens de 15 a 17 anos, era de 38,9% e o percentual de [[alfabetização]] de jovens e adolescentes entre 18 e 24 anos era de X%. A distorção idade-série entre alunos do ensino fundamental, ou seja, com idade superior à recomendada, era de X% para os anos iniciais e X% nos anos finais e, no ensino médio, a defasagem chegava a X%.<ref name="ODM_2"/> Dentre os habitantes de 18 anos ou mais, X% tinham completado o [[ensino fundamental]] e X% o [[ensino médio]], sendo que a população tinha em média X anos esperados de estudo.<ref name="PNUD_Atlas"/> -->
+
+Em 2022, de acordo com dados do Censo escolar, o município contava com {{fmtn|40789}} matrículas nas instituições de ensino da cidade. Desse total, {{fmtn|8101}} frequentavam creches, {{fmtn|25109}} no ensino fundamental, {{fmtn|7579}} no ensino médio.<ref name="IBGE_Educação">{{citar web|URL=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/13/78117?ano=2022 |arquivourl= |arquivodata= |título=Censo Escolar |autor=Cidades@ - IBGE  |acessodata=5 de julho de 2024}}</ref>
+<!-- :Explorar secretaria municipal de educação e programas voltados. Mencionar ensino superior, dentre faculdades e universidades -->
+
+<center>
+{| class=wikitable style="float:center; margin:1em; border-collapse:border; text-align:center;"
+! colspan=7|Educação de Sete Lagoas em números (2022)<ref name="IBGE_Educação" />
+|-
+! '''Nível'''
+! '''Matrículas'''
+! '''Docentes'''
+! '''Escolas (total)'''
+|-
+! [[Educação infantil|Ensino pré-escolar]]
+| 8.101
+| 801
+| 65
+|-
+! [[Ensino fundamental]]
+| 25.109
+| 1.588
+| 80
+|-
+! [[Ensino secundário|Ensino médio]]
+| 7.579
+| 809
+| 43
+|}
+</center>
+<!-- 
+=== Segurança pública e criminalidade ===
+Em 2012, foi registrada uma taxa de X [[homicídio]]s para cada 100 mil habitantes, sendo o X maior índice do estado e o Xº maior do Brasil.<ref name="Violência">{{citar web|url=http://www.mapadaviolencia.org.br/tabelas2014/2014_Homicidio_total.xlsx |título=Número e taxas (por 100 mil) de homicídio em municípios com mais de 20.000 habitantes |autor=Julio Jacobo Waiselfisz |data=2 de julho de 2014 |publicado=Mapa da Violência |acessodata=22 de fevereiro de 2015 |formato=xls}}</ref> O índice de acidentes de trânsito neste mesmo ano foi de X ocorrências para cada 100 mil residentes, ocupando a Xª colocação a nível estadual e a Xª a nível nacional.<ref>{{citar web|url=http://www.mapadaviolencia.org.br/tabelas2013/mapa2013_motos_alfabetica.xlsx |título=Número e taxas (por 100 mil) de óbitos em acidentes de transporte em municípios com mais de 20.000 habitante |autor=Julio Jacobo Waiselfisz |data=2 de julho de 2014 |publicado=Mapa da Violência |acessodata=22 de fevereiro de 2015 |formato=xls}}</ref> Em relação à ocorrência de [[suicídio]]s, a taxa foi de X ocorrências a cada 100 mil habitantes, sendo a Xª maior taxa a nível estadual e a Xª a nível nacional.<ref>{{citar web|url=http://www.sangari.com/mapadaviolencia/tabelas2011/STN.xls |título=Número e taxas (por 100 mil) de suicídio em municípios com mais de 20.000 mil habitantes |autor=Julio Jacobo Waiselfisz |data=2 de julho de 2014 |publicado=Mapa da Violência |acessodata=22 de fevereiro de 2015 |formato=xls}}</ref>
+
+:Explorar organismos, como Defesa Civil, bombeiros, Polícia Militar (batalhões), Policia Civil... Mencionar problemas e outras estatísticas de criminalidade e medidas para melhorar a segurança.
+ -->
+=== Habitação, serviços e comunicações ===
+Sete Lagoas contava, em 2022, com {{fmtn|81943}} domicílios, dos quais {{fmtn|73655}} eram casas, {{fmtn|515}} casas de vila ou em condomínio, {{fmtn|7623}} apartamentos e {{fmtn|138}} eram habitações em casas de cômodos ou cortiço.<ref name="IBGE_Domicílios">{{citar web|url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/10102/122229 |arquivourl= |arquivodata= |título=Censo Demográfico 2022: Características da População e dos Domicílios: Resultados do Universo |autor=Cidades@ - IBGE |acessodata=5 de julho de 2024}}</ref>
+
+O fornecimento de água e a coleta de esgoto da cidade são feitos pelo Serviço Autônomo de Água e Esgoto, autarquia municipal, e em 2022, {{fmtn|80594}} domicílios eram atendidos pela [[Água potável|rede geral de abastecimento]] (98,34% do total) e {{fmtn|81807}} domicílios (99,8% do total) possuíam banheiros para uso exclusivo das residências.<ref name="IBGE_Domicílios"/> 
+
+O código de área ([[Discagem direta a distância|DDD]]) de Sete Lagoas é 031<ref>{{citar web|url=https://www.claro.com.br/blog/celular/ddd-31 |arquivourl= |arquivodata= |título=DDD da Cidade |autor=Claro |acessodata=5 de julho de 2024}}</ref> e o [[Código postal|Código de Endereçamento Postal]] (CEP) vai de 35700-001 a 35719-999.<ref>{{citar web|url=https://buscacepinter.correios.com.br/app/faixa_cep_uf_localidade/index.php |titulo=CEP de cidades brasileiras |autor=[[Empresa Brasileira de Correios e Telégrafos|Correios]] |acessodata=5 de julho de 2024}}</ref>
+<!-- 
+:Detalhar coleta de esgoto, coleta de lixo e reciclagem. Mencionar jornais e emissoras de rádio e TV, Abrir seção separada para comunicações se necessário, onde podem ser aprofundados serviços de internet e telefonia.
+ -->
+=== Transporte ===
+O Sistema de [[Transporte público|transporte coletivo]] de ônibus de Sete Lagoas abrange aproximadamente 30 linhas municipais, exploradas por duas empresas distintas, sendo uma concessionária (TURI) e a outra permissionária (COOPERSELTTA).{{carece de fontes|data=abril de 2024}}
+
+Em 2022, a frota de veículos atingiu a marca de 144.704 veículos.<ref name="frota">{{citar web|url=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas/pesquisa/22/28120 |titulo=Frota 2022  |autor=Cidades@ - IBGE |data=2022 |acessodata=3 de abril de 2024}}</ref> A frota de carros vinha crescendo a taxas que variam em cerca de 8,7% ao ano, acompanhado pela frota de motocicletas, que registrava um crescimento médio de 21% ao ano, contudo ambos setores tiveram estagnação nos últimos anos, crescendo em uma taxa de apenas 2,1% ao ano para carros e 2,7% para motocicletas.<ref name="frota"/> Proporcionalmente, Sete Lagoas tem uma das maiores proporções de veículo por habitante de [[Minas Gerais]]: 1 veículo para cada grupo de 1,5 habitantes (em São Paulo, estima-se um veículo por 1,4 habitante e Belo Horizonte 1 veículo por 1,06  habitantes). Enquanto os ônibus costumam andar lotados com até cem passageiros, os carros costumam circular vazios.{{carece de fontes|data=abril de 2024}}
+
+No sistema de transporte ferroviário o município era atendido pelos trens de passageiros de longa distância da [[Estrada de Ferro Central do Brasil]] (posteriormente [[RFFSA]]), que operavam na chamada [[Linha do Centro (Estrada de Ferro Central do Brasil)|Linha do Centro,]] ligando o município à capital mineira e à cidade de [[Montes Claros]], no norte do estado. Esses trens eram carinhosamente chamados pelos moradores da região como [[Trem do Sertão]] e possuíam uma grande demanda de passageiros que os utilizavam para se deslocar ao norte mineiro. Os últimos trens de passageiros, vindos de Belo Horizonte e de Montes Claros, pararam em sua estação ferroviária pela última vez no dia 17 de dezembro de 1992 e desde então, foi mantido apenas o transporte de cargas na região. Após a inauguração de uma nova variante e uma nova e pequena estação ferroviária pela RFFSA na cidade em 1996, os trilhos da linha original seriam retirados do perímetro urbano logo em seguida, para serem reaproveitados na construção de uma variante na cidade de [[Curvelo]].<ref>{{Citar web |url=http://www.estacoesferroviarias.com.br/efcb_mg_linhacentro/sete.htm |titulo=Sete Lagoas -- Estações Ferroviárias do Estado de Minas Gerais |acessodata=2020-08-08 |website=www.estacoesferroviarias.com.br}}</ref><ref>{{Citar web |url=https://gazetanortemineira.com.br/noticias/regional/trem-do-sertao-completou-20-anos-da-ultima-viagem |titulo=Trem do Sertão completou 20 anos da última viagem |acessodata=2020-08-08 |website=https://gazetanortemineira.com.br/ |lingua=en }}{{Ligação inativa}}</ref><ref>{{Citar web |url=http://vfco.brazilia.jor.br/ferrovias/estrada.de.ferro.central.do.brasil/1992-12-18-ultimo-Trem-Sertao.shtml |titulo=O último Trem do Sertão {{!}} 18 de Dezembro de 1992 - RFFSA - Rede Ferroviária Federal |acessodata=2020-08-08 |website=vfco.brazilia.jor.br}}</ref>
+
+O município é atendido por dois aeroportos localizados na Região Metropolitana de Belo Horizonte. O [[Aeroporto Internacional de Belo Horizonte-Confins|Aeroporto de Confins]] (Aeroporto Internacional Tancredo Neves), construído na década de 1980, é um dos mais modernos do Brasil e capaz de receber cinco milhões de passageiros por ano com conforto e comodidade. Dentro dos limites do município há três pistas de pouso de aeronaves registradas na [[Agência Nacional de Aviação Civil|ANAC]], sendo os três aeródromos privados.<ref>{{Citar web |url=https://www.gov.br/anac/pt-br/assuntos/regulados/aerodromos/lista-de-aerodromos-civis-cadastrados |titulo=Lista de aeródromos civis cadastrados |acessodata=2024-04-03 }}</ref>
+
+;Rodovias
+* [[MG-424]] - Liga Sete Lagoas a [[Prudente de Morais]], [[Pedro Leopoldo]], [[Matozinhos]], Belo Horizonte, [[Vespasiano]], entre outras.
+* [[MG-238]] - Liga Sete Lagoas a distritos e bairros como: Cidade de Deus, Santa Felicidade, entre outros, além de ligar e ser via de acesso a [[Baldim]], [[Jaboticatubas]], [[Conceição do Mato Dentro]] e à cidade de Jequitibá.
+* [[BR-135]] - Liga Minas Gerais ao [[Maranhão]]
+* [[BR-040]] - Mais Conhecida como [[Rodovia Washington Luís]] que liga Sete Lagoas a [[Brasília]] e também ao Rio de Janeiro.
+A partir de setembro de 2009 o trecho da rodovia compreendido entre Brasília e Belo Horizonte passou a chamar-se Rodovia Juscelino Kubitschek por decreto presidencial <ref>[http://www.agenciabrasil.gov.br/noticias/2009/08/27/materia.2009-08-27.7211346784/view Deputados aprovaram projeto que denomina a BR-040, que liga Brasília a Belo Horizonte e ao Rio de Janeiro (RJ), como Rodovia Presidente Juscelino Kubitschek]{{Ligação inativa}}</ref>
+
+;Ferrovias
+* Variante de Sete Lagoas da antiga RFFSA.<ref>{{Citar web |url=http://www.estacoesferroviarias.com.br/efcb_mg_linhacentro/sete-nov.htm |titulo=Sete Lagoas-nova -- Estações Ferroviárias do Estado de Minas Gerais |acessodata=2020-08-08 |website=www.estacoesferroviarias.com.br}}</ref>
+* [[Linha do Centro (Estrada de Ferro Central do Brasil)|Linha do Centro]] da antiga Estrada de Ferro Central do Brasil.<ref>{{Citar web |url=http://www.estacoesferroviarias.com.br/efcb_mg_linhacentro/silva.htm |titulo=Silva Xavier -- Estações Ferroviárias do Estado de Minas Gerais |acessodata=2020-08-08 |website=www.estacoesferroviarias.com.br}}</ref>
+== Cultura e lazer ==
+O município integra o [[Grutas (circuito turístico)|circuito turístico das Grutas]].<ref>{{citar web |url =http://www.turismo.mg.gov.br/images/stories/circuitos/lista-circuitos.pdf |titulo = Listagem dos Circuitos Turísticos |publicado = Secretaria de Estado de Turismo de Minas Gerais |acessodata = 24 de fevereiro de 2013 |data = |página = 11 |arquivourl = https://www.webcitation.org/6GYuYfjSZ?url=http://www.turismo.mg.gov.br/images/stories/circuitos/lista-circuitos.pdf |arquivodata = 2013-05-12 |urlmorta = yes }}</ref>
+[[Ficheiro:GRUTA REI DO MATO - Sete Lagoas-MG (6140989863).jpg|miniaturadaimagem|Gruta Rei do Mato - Sete Lagoas-MG]]
+
+=== Gruta Rei do Mato ===
+A [[Gruta Rei do Mato]] fica a 62 quilômetros de [[Belo Horizonte]] (MG), pela BR-040, junto ao trevo de acesso a Sete Lagoas, cuja entrada para a gruta fica a cerca de 880 metros de altitude, possui um desnível de 30 metros, tem 235 metros de extensão e possui três salões cujas pinturas rupestres, datam de seis mil anos e mostram predominância de figuras monocrômicas e de temática zoofórmica. Suas formações de estalagmite, que são cilíndricas com o diâmetro de aproximadamente 12 pés de altura, segundo os geólogos, são raras no mundo.<ref>{{Citar web|url=https://ief.mg.gov.br/w/mne-gruta-rei-do-mato|titulo=MNE Gruta Rei do Mato|acessodata=2025-02-27|website=IEF|lingua=pt-BR}}</ref>
+
+Nenhuma gruta brasileira tem em seu interior formações como essas. Diversos órgãos governamentais, ligados ao meio ambiente, participaram do projeto de preservação e aproveitamento turístico da Gruta. Projeto este que demorou mais de dois anos em sua execução. Foi um processo de urbanização e não, simplesmente um processo de acesso e iluminação. Os técnicos e cientistas que fizeram parte do projeto previram o que há de mais moderno em urbanização de grutas.<ref>{{Citar web|ultimo=Gerais|primeiro=Portal Minas|url=https://www.minasgerais.com.br/pt/atracoes/sete-lagoas/gruta-rei-do-mato|titulo=Turismo em Minas Gerais {{!}} Monumento Natural Estadual Gruta Rei do Mato|acessodata=2025-02-27|website=Portal Minas Gerais|lingua=pt-br}}</ref><ref>{{Citar web|ultimo=Turismo|url=https://www.secult.mg.gov.br/component/content/article/131-antigas/770-gruta-rei-do-mato-e-reformada-e-reaberta-a-visitacao|titulo=Gruta Rei do Mato é reformada e reaberta à visitação|data=2015-10-26|acessodata=2025-02-27|website=www.secult.mg.gov.br|lingua=pt-br}}</ref>
+
+Na Grutinha, além de pinturas rupestres, feitas com sangue e gordura vegetal, foram encontradas soterradas, ferramentas indígenas petrificadas, em perfeito estado. Nela encontra-se, ainda, uma réplica, em resina, do ''Xenorhinothericen bahiense'' - a macraoquemia - animal herbívoro que habitou [[Minas Gerais|Minas]], [[Bahia]] e sul de [[São Paulo (estado)|São Paulo]], há cerca de seis mil anos. O nome do local, se deve ao fato de ter sido ela habitada por um homem solitário, louro, forte e cabeludo, de identidade ignorada, possivelmente fugitivo da [[Revolução de 1930]], que foi chamado de "Rei do Mato".<ref>{{Citar web|ultimo=Vidotti|primeiro=Alysson|url=https://turismoouropreto.com/grutas/gruta-rei-do-mato-a-beleza-por-dentro-das-montanhas-de-minas/|titulo=Gruta Rei do Mato: A beleza por dentro das montanhas de Minas|data=2022-04-05|acessodata=2025-02-27|website=Turismo Ouro Preto|lingua=pt-BR}}</ref><ref>{{Citar web|ultimo=Dia|primeiro=Hoje em|url=https://www.hojeemdia.com.br/minas/gruta-rei-do-mato-sera-reaberta-para-visitantes-nesta-quinta-feira-1.327128|titulo=Gruta Rei do Mato será reaberta para visitantes nesta quinta-feira|data=2015-10-20|acessodata=2025-02-27|website=Hoje em Dia|lingua=pt-BR}}</ref>[[Ficheiro:Ano-Novo 2010 na Lagoa Paulino, Sete Lagoas MG.jpg|thumb|250px|Celebração de Ano Novo na Lagoa Paulino (2010).]]
+=== Lagoa Paulino ===
+A Lagoa Paulino, localizada no centro de Sete Lagoas, faz parte do complexo turístico da cidade juntamente com outras seis: Boa Vista, José Félix, Cercadinho, Matadouro, Catarina e da Chácara. Ao redor da lagoa, as pessoas costumam caminhar e se encontrar, já que o local é cercado por bares e opções de lazer. Na Praça da Feirinha, próxima à lagoa, ocorre uma feira de artesanato e comidas típicas, realizada todas as sextas e sábados à noite.<ref>{{Citar web|url=https://www.ipatrimonio.org/sete-lagoas-lagoa-paulino|titulo=Sete Lagoas – Lagoa Paulino {{!}} ipatrimônio|acessodata=2025-02-27|lingua=pt-BR}}</ref>
+
+=== Casarão Centro Cultural Nhô Quim Drummond ===
+Construído no século XVIII, o Centro Cultural Nhô-Quim Drummond é um espaço cultural dedicado à preservação e promoção da herança artística de Sete Lagoas e da cultura mineira. Revitalizado em 1988, sua estrutura foi rebatizada em 1991 em homenagem ao historiador Nhô-Quim Drummond.<ref>{{Citar livro|url=https://clubedeautores.com.br/livro/nho-quiim-drummond|título=NHÔ QUIIM DRUMMOND|lingua=pt-br}}</ref> Posteriormente, passou a abrigar o anfiteatro Mauro Faccio Gonçalves, nomeado em tributo ao [[Zacarias (comediante)|comediante setelagoano]], possuindo uma capacidade para 1.500 espectadores. O espaço também é dedicado ao congado do município e da região, além de outros grupos tradicionais da cidade.<ref>{{citar web|url=https://vivasetelagoas.com.br/casarao-centro-cultural-nho-quim-drummond-o-espaco-da-cultura-e-da-historia-em-sete-lagoas/|titulo=Casarão Centro Cultural Nhô-Quim Drummond: O Espaço da Cultura e da História em Sete Lagoas|data=2023-09-13|acessodata=2024-08-31|website=vivasetelagoas}}</ref>
+
+=== CAT JK - Centro de Apoio ao Turista Presidente Juscelino Kubitschek ===
+Situado no centro da cidade, ao lado da Lagoa Paulino, sua construção lembra um pássaro alçando voo. Tem, defronte, uma estátua de [[Juscelino Kubitschek]] cedida à Prefeitura pelo ex-prefeito [[Sérgio Emílio Brant de Vasconcelos Costa|Sérgio Emílio]]. Inaugurado em 12 de setembro de 1990, o local serve como ponto de orientação ao turista. Nele funciona uma feira permanente de amostra dos produtos artesanais e industriais do município, bem como para expor obras de artistas setelagoanos. O CAT JK é aberto para eventos cívicos, culturais e esportivos, oferecendo um espaço para apresentações, solenidades e reuniões organizadas por entidades públicas, educacionais, empresariais e clubes de serviço.<ref>{{Citar web|url=https://www.guiadoturismobrasil.com/cidade/MG/559/sete-lagoas|titulo=Sete Lagoas - MG|acessodata=2024-09-01|website=Guia do Turismo Brasil|lingua=pt-br}}</ref>
+
+=== Serra de Santa Helena ===
+A [[Serra de Santa Helena]] está localizada a noroeste e a 7&nbsp;km do centro da cidade de Sete Lagoas. O ponto mais alto atinge cerca de 1.076 metros de altitude. Possui uma [[Sete Lagoas#V.C3.B4o Livre|rampa]] para a prática de voo livre, sendo a modalidade mais comum o [[Parapente|paraglider]]. Em seu topo está a [[Sete Lagoas#Igreja de Santa Helena|Igrejinha de Santa Helena]] e o cruzeiro, de onde se tem uma bela vista panorâmica da cidade. Outro atrativo da serra é o [[Sete Lagoas#Parque da Cascata|Parque da Cascata]], com restaurantes, quadras de esportes, estacionamento, e praia com lago artificial.[[Imagem:serrinha.jpg|thumb|928x928px|center|Vista panorâmica de Sete Lagoas a partir da Serra de Santa Helena.]]
+=== Parques ===
+==== Parque da Cascata ====
+Além das Sete Lagoas que tornam a cidade um polo de atração turística, na Serra de Santa Helena, a quatro quilômetros do centro, está localizado o Parque da Cascata, numa área de 295 hectares de mata nativa, com reserva de fauna e flora, entremeada de trilhas românticas. Ali foi desenvolvido um amplo projeto turístico do qual constou a implantação de um lago com 450 metros de diâmetro cercado por uma praia artificial e por mata virgem. No interior da mata há uma trilha cimentada que dá acesso a uma cascata com mirante, para que todos possam apreciar sua beleza. Neste local está sendo preservado um santuário ecológico.<ref>{{Citar periódico |url=https://repositorio.ufmg.br/handle/1843/31218 |título=Parques urbanos: o caso do Parque ecológico da Cascata no município de Sete Lagoas/MG |data=2019-03-08 |acessodata=2025-02-27 |ultimo=Moreira |primeiro=Gabriela Afonso}}</ref>
+==== Parque Náutico da Boa Vista ====
+[[Complexo poliesportivo]] localizado na Lagoa da Boa Vista, no bairro do mesmo nome, que foi totalmente recuperada, recebendo nova figuração paisagística e ecológica. O Parque Náutico da Boa Vista ocupa uma área de 18 mil metros quadrados e é dotado de toda a infraestrutura necessária para atender cerca de 8 mil pessoas.
+
+=== Museus ===
+[[Ficheiro:Sete lagoas.jpg|miniaturadaimagem|Antiga Estação Ferroviária, atual Museu do Ferroviário]]
+==== Museu Ferroviário ====
+O Museu Ferroviário se situa no prédio da Antiga Estação Ferroviária de Sete Lagoas (desativada nos anos 1990) e preserva em seu interior várias ferramentas e objetos de época. Na área externa encontram-se em exposição, um antigo vagão de passageiros da extinta [[Rede Ferroviária Federal|RFFSA]], e duas pequenas locomotivas.<ref>{{Citar web|ultimo=Gerais|primeiro=Portal Minas|url=https://www.minasgerais.com.br/pt/atracoes/sete-lagoas/museu-do-ferroviario|titulo=Turismo em Minas Gerais {{!}} Museu do Ferroviário|acessodata=2025-02-27|website=Portal Minas Gerais|lingua=pt-br}}</ref>
+[[Ficheiro:Casa Museu Histórico Municipal de Sete Lagoas, diapositivo de Antônio Luiz Dias de Andrade (Janjão), Centro de Memória - Unicamp (ALA 1.1.3.2.19.2).tif|esquerda|miniaturadaimagem|Casa Museu Histórico Municipal de Sete Lagoas]]
+;Museu Histórico Municipal
+A centenária casa, denominada Fazenda Velha e situada na Praça de Santo Antônio, foi construída após a elevação da Capela de Santo Antônio a Matriz. Sua construção ocorreu após 1841, quando Sete Lagoas ainda era um arraial. A transformação da casa em um museu histórico é uma medida digna de apreço, que certamente contribuirá como um ponto de atração turística para a cidade próspera e hospitaleira. Nesse contexto, o Museu serve como uma importante fonte de pesquisa sobre a história de Sete Lagoas, possuindo um acervo de informações frequentemente não disponíveis em outros locais da cidade.<ref>{{Citar web|ultimo=Gerais|primeiro=Portal Minas|url=https://www.minasgerais.com.br/pt/atracoes/sete-lagoas/museu-historico-municipal|titulo=Turismo em Minas Gerais {{!}} Museu Histórico Municipal|acessodata=2025-02-27|website=Portal Minas Gerais|lingua=pt-br}}</ref>
+
+=== Lazer, turismo e eventos ===
+=== Esporte ===
+[[Ficheiro:ParagliderSeteLagoas.jpg‎|thumb|esquerda|Voo de paraglider na Serra de Santa Helena]]
+
+==== Voo-livre ====
+O voo-livre em Sete Lagoas é praticado na [[Serra de Santa Helena]], o acesso é pavimentado até a rampa, que fica aproximadamente a 5 minutos do centro da cidade, tem um desnível em torno de 200 metros a 1000 metros do nível do mar, vento frontal predominante Leste, com opção também Oeste, porém sem acesso de resgate, proporciona clássicos voos Lifts de frente para cidade, com várias opções de pousos, inclusive na própria rampa que permite pousos seguros sem a presença de rotores, as fortes térmicas permitem ótimas condições para [[Voo cross-country]]. Há possibilidade de decolagens simultâneas. Sendo de setembro a novembro a melhor época para a prática do esporte.<ref>{{Citar web|ultimo=Ascom|url=https://www.setelagoas.mg.gov.br/detalhe-da-materia/info/prefeitura-da-inicio-a-reforma-da-rampa-de-voo-livre-da-serra-de-santa-helena/71099|titulo=Prefeitura dá início à reforma da rampa de voo livre da Serra de Santa Helena|acessodata=2025-02-28|website=Sete Lagoas - Prefeitura Municipal|lingua=pt-br}}</ref>
+
+==== Futebol ====
+Na cidade, está localizado o [[Estádio Joaquim Henrique Nogueira]], também conhecido como ''Arena do Jacaré''. O estádio recebeu esse nome pois foi Joaquim Henrique Nogueira, fazendeiro e membro de uma das mais tradicionais famílias da região, quem doou o terreno onde foi construído. Com capacidade para 20.500 pessoas, o estádio foi inaugurado em 2006. Em 2009, começou a ser preparado para receber os jogos do [[Campeonato Mineiro de Futebol|Campeonato Mineiro]], enquanto o [[Estádio Governador Magalhães Pinto|Mineirão]] passava por reformas para a [[Copa do Mundo FIFA de 2014|Copa do Mundo de 2014]] e o [[Estádio Raimundo Sampaio|Estádio Independência]] estava em construção. Nas primeiras fases do Campeonato Mineiro, os jogos foram divididos entre a Arena do Jacaré, o [[Estádio Municipal João Lamego Netto|Ipatingão]] e o [[Parque do Sabiá]], mas os dois últimos ficavam muito distantes da capital. Atualmente, além dos jogos do Campeonato Mineiro, a Arena do Jacaré também recebe partidas do Campeonato Brasileiro.<ref>{{Citar web|url=https://democratajacare.com.br/arena-jacare/|titulo=Arena do Jacaré|acessodata=2025-02-28|website=Democrata Jacaré|lingua=pt-BR}}</ref>
+
+== Ver também ==
+* [[:Categoria:Naturais de Sete Lagoas|Naturais de Sete Lagoas]]
+* [[Interior de Minas Gerais]]
+
+{{referências}}
+
+==Ligações externas==
+{{commonscat|Sete Lagoas}}
+* {{Link|pt|2=http://www.setelagoas.mg.gov.br/|3=Página da prefeitura}}
+* {{Link|pt|2=http://www.camarasete.mg.gov.br/|3=Página da câmara}}
+* {{Link|pt|2=https://cidades.ibge.gov.br/brasil/mg/sete-lagoas|3=Dados do IBGE de Sete Lagoas}}
+
+{{Subdivisões de Minas Gerais}}
+
+[[Categoria:Sete Lagoas| ]]
+[[Categoria:Fundações em Minas Gerais em 1880]]
+[[Categoria:Municípios de Minas Gerais]]

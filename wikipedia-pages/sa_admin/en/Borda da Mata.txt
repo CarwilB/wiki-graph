@@ -1,0 +1,83 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Borda da Mata
+|other_name             =
+|native_name            =  <!-- for cities whose native name is not in English -->
+|nickname               = 
+|settlement_type        = [[Municipalities of Brazil|Municipality]]
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          =
+|imagesize              = 
+|image_caption          =
+|image_flag             = File:Flag of Borda da Mata - MG - Brazil.png
+|flag_size              =
+|image_shield           = File:Coat of Arms of Borda da Mata - MG - Brazil.png
+|image_map              = File:MinasGerais Municip BordadaMata.svg
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Brazil
+|pushpin_map_caption    = Location in [[Brazil]]
+|subdivision_type       = Country
+|subdivision_name       ={{flag|Brazil}}
+|subdivision_type1      = [[Regions of Brazil|Region]] 
+|subdivision_name1      = [[Southeast Region, Brazil|Southeast]]
+|subdivision_type2      = [[States of Brazil|State]]
+|subdivision_name2      = [[Minas Gerais]]
+|subdivision_type3      = [[Mesoregion (Brazil)|Mesoregion]]
+|subdivision_name3      = [[South and Southwest of Minas Gerais]]
+|subdivision_type4      = [[Microregion (Brazil)|Microregion]]
+|subdivision_name4      = [[Microregion of Pouso Alegre|Pouso Alegre]]
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = Mayor
+|leader_name            = Edmundo Silva Junior
+|established_title      = Founded
+|established_date       = November 24th, 1924
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           = <ref name ="IBGE_Área">{{cite web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |title=Área territorial oficial|language=pt |trans-title=Official Territorial Area |publisher=[[Brazilian Institute of Geography and Statistics|Brazilian Institute of Geography and Statistics (IBGE)]] | access-date=2011-11-03|date=2002-10-10}}</ref>
+|area_total_km2           = 301108
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+|population_as_of               = 2020 <ref>[https://cidades.ibge.gov.br/brasil/mg/borda-da-mata/panorama IBGE 2020]</ref>
+|population_footnotes           = 
+|population_note                = 
+|population_total               = 19,614
+|population_density_km2         =
+<!-- General information  --------------->
+|timezone               = [[Time in Brazil|BRT]]
+|utc_offset             = &minus;3
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|22|16|26|S|46|09|54|W|region:BR|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> tags-->
+|elevation_m            = 803
+|elevation_ft           = <!-- accord. to Google Earth-->
+<!-- Area/postal codes & others -------->
+|postal_code_type       = [[Zip Code]]
+|postal_code            =
+|area_code              =
+|blank_name             = '''[[Human Development Index|HDI]]''' (2010)
+|blank_info             = 0.730
+|website                = [https://bordadamata.mg.gov.br bordadamata.mg.gov.br]
+|footnotes              = 
+}}
+
+'''Borda da Mata''' is a municipality in [[Minas Gerais]], [[Brazil]].
+
+== Personalities ==
+The [[Carmelites|carmelite]] nun [[Tereza Margarida do Coração de Maria]] was born there.
+
+==See also==
+* [[List of municipalities in Minas Gerais]]
+
+== References ==
+{{reflist}}
+
+[[Category:Municipalities in Minas Gerais]]
+
+{{PousoAlegre-geo-stub}}

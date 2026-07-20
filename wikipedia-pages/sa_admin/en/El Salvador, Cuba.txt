@@ -1,0 +1,102 @@
+{{Short description|Municipality and town in Guantánamo, Cuba}}
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = El Salvador
+|other_name             = 
+|native_name            = 
+|nickname               = 
+|settlement_type        = [[Municipalities of Cuba|Municipality]]
+|motto                  = 
+<!-- images and maps  ----------->
+|image_skyline          = Gtmo El Salvador 005.jpg
+|image_caption          = 
+|image_flag             = 
+|flag_size              = 
+|image_seal             = 
+|seal_size              = 
+|image_shield           = 
+|shield_size            = 120x90px
+|image_map              = El Salvador (Cuban municipal map).png
+|map_caption            = El Salvador municipality (red) within <br> Guantánamo Province (yellow) and Cuba
+
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = [[Cuba]]
+|subdivision_type1      = [[Provinces of Cuba|Province]]
+|subdivision_name1      = [[Guantánamo Province|Guantánamo]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   = 
+|government_type        = 
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = 
+|leader_name1           = 
+|established_title      = 
+|established_date       = 
+|established_title2     = <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     = <!-- Incorporated (city) -->
+|established_date3      = 
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = 
+|area_footnotes         = <ref name=statoids/>
+|area_total_km2         = 637
+|area_land_km2          = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2         = 
+<!-- Population   ----------------------->
+|population_as_of       = 2022
+|population_footnotes   = <ref name=citypopulation/>
+|population_note        = 
+|population_total       = 41,420
+|population_urban       = 9,087
+|population_rural       = 32,333
+|population_density_km2 = auto
+<!-- General information  --------------->
+|timezone               = [[Eastern Time Zone|EST]]
+|utc_offset             = -5
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|20|12|34|N|75|13|23|W|region:CU|display=inline,title}}
+|elevation_footnotes    = <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 85
+<!-- Area/postal codes & others -------->
+|postal_code_type       = 
+|postal_code            = 
+|area_code              = +53-21
+|website                = https://www.elsalvador.gob.cu/es/
+|footnotes              = 
+}} <!--Infobox ends-->
+
+'''El Salvador''' is a municipality and town in the [[Guantánamo Province]] of [[Cuba]]. It is located immediately north of the provincial capital, [[Guantánamo, Cuba|Guantánamo]].
+
+==Demographics==
+In 2022, the municipality of El Salvador had a population of 41,420.<ref name="citypopulation">{{Cite web |title=Cuba: Administrative Division (Provinces and Municipalities) - Population Statistics, Charts and Map |url=https://www.citypopulation.de/en/cuba/admin/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref> With a total area of {{convert|637|km2|sqmi|abbr=on}},<ref name=statoids>{{Cite web|url=http://www.statoids.com/ycu.html|title=Municipios of Cuba|author=Statoids| accessdate=2007-10-05}}</ref> it has a population density of {{convert|65|/km2|/sqmi|abbr=on}}. The urban population was 9,087.<ref>{{Cite web |title=El Salvador (Municipality, Cuba) - Population Statistics, Charts, Map and Location |url=https://www.citypopulation.de/en/cuba/admin/guant%C3%A1namo/3501__el_salvador/ |access-date=2024-02-03 |website=www.citypopulation.de}}</ref>
+
+==See also==
+*[[List of cities in Cuba]]
+*[[Municipalities of Cuba]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category-inline}}
+
+{{Adjacent communities
+ | Centre = El Salvador
+ | N  = [[Sagua de Tánamo]] ([[Holguín Province|Holguín]])
+ | E  = [[Guantánamo]]
+ | S  = [[Niceto Pérez]]
+ | W  = [[Songo – La Maya]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+ | NW = [[Segundo Frente]] ([[Santiago de Cuba Province|Santiago de Cuba]])
+}}
+{{Municipalities in Guantánamo}}
+
+[[Category:Populated places in Guantánamo Province]]
+
+
+{{Cuba-geo-stub}}

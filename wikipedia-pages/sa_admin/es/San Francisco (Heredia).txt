@@ -1,0 +1,56 @@
+{{Ficha de entidad subnacional
+|nombre = San Francisco
+|unidad = [[Distritos de Costa Rica|Distrito]]
+|mapa = {{map draw
+ |geotype = geoshape
+ |fill= #4D87CA
+ |fill-opacity= 0.3
+ |zoom=12}}
+|pie_mapa = San Francisco
+|mapa_loc = Costa Rica
+|mapa_loc_1 = Provincia de Heredia
+|fundación = 
+|superficie = <!-- wikidata -->
+|elevación_media = <!-- wikidata -->
+|población = <!-- wikidata -->
+|población_año = <!-- wikidata -->
+|tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+|superior_1 = {{CRI|H}}
+|tipo_superior_2 = [[Cantones de Costa Rica|Cantón]]
+|superior_2 = {{Bandera2|Cantón de Heredia}}
+|horario = [[UTC-6]]
+|código_postal_nombre = [[Anexo:Códigos postales de Costa Rica|Código postal]]
+|cp = <!-- wikidata -->
+}}
+{{Población histórica por censo de Costa Rica}}
+'''San Francisco''' es un distrito del cantón de [[Cantón de Heredia|Heredia]], en la provincia de [[Provincia de Heredia|Heredia]], de [[Costa Rica]].<ref name="dta2017">{{cita libro|título=División Territorial Administrativa de la República de Costa Rica|fecha=8 de marzo de 2017|editorial=Editorial Digital de la Imprenta Nacional|isbn=978-9977-58-477-5|url=https://www.imprentanacional.go.cr/editorialdigital/libros/historiaygeografia/division_17.pdf}}</ref>
+
+== Geografía ==
+{{Cita geográfica de región de Costa Rica}}
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}
+
+== Localidades ==
+* '''Barrios:''' Aries, Aurora (parte), Bernardo Benavides, Chucos, El Cristo (parte), Esmeralda, Esperanza, Granada, Gran Samaria, Guararí, Lagos, Malinches, Mayorga (parte), Nísperos Tres, Palma, Trébol, Tropical, Pali.
+
+== Transporte ==
+=== Carreteras ===
+Al distrito lo atraviesan las siguientes rutas nacionales de carretera:
+*[[Archivo:CR RNP 3.svg|25px]] [[Ruta 3 (Costa Rica)|Ruta nacional 3]]
+*[[Archivo:CR RNS 111.svg|25px]] [[Ruta 111 (Costa Rica)|Ruta nacional 111]]
+*[[Archivo:CR RNS 171.svg|25px]] [[Ruta 171 (Costa Rica)|Ruta nacional 171]]
+
+=== Ferrocarril ===
+El [[Tren Interurbano (Costa Rica)|Tren Interurbano]] administrado por el [[Instituto Costarricense de Ferrocarriles]], atraviesa este distrito.
+
+== Galería ==
+<gallery mode="packed">
+Archivo:PaseoDeLasFlores.JPG|Centro Comercial Paseo de las Flores.
+Archivo:GlobalPark.JPG|Global Park. La Aurora de Heredia.
+Archivo:IglesiaDeSanFrancisco.JPG|Iglesia de San Francisco.</gallery>
+
+== Referencias ==
+{{Listaref}}
+{{Control de autoridades}}
+[[Categoría:Distritos del cantón de Heredia]]

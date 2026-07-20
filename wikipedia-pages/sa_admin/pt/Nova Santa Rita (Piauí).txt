@@ -1,0 +1,61 @@
+{{Info/Município do Brasil
+<!-- GeoID=2207959 -->
+<!-- Cabeçalho -->
+| nome                 = Nova Santa Rita
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = 
+| bandeira             = 
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          ={{nowrap|{{dtlink|26|1|1994|idade}}}}
+| fundação             = 
+| gentílico            = santa-ritense 
+| lema                 = 
+| prefeito             = Heli Marques de Carvalho
+| partido              = [[Progressistas|PP]]
+| fim_mandato          = 2028
+<!-- Localização -->
+| mapa                 = Piaui Municip NovaSantaRita.svg
+| latP                 = S | latG = 08 | latM = 05 | latS = 13
+| lonP                 = O | lonG = 42 | lonM = 03 | lonS = 07
+| estado               = Piauí
+| mesorregião          = [[Mesorregião do Sudeste Piauiense|Sudeste Piauiense]]
+| data_mesorregião     = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião do Alto Médio Canindé|Alto Médio Canindé]]
+| data_microrregião    = [[IBGE]]/[[2008]] <ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos             = [[São João do Piauí]], [[Bela Vista do Piauí]], [[Pedro Laurentino]], [[Campo Alegre do Fidalgo]]
+| dist_capital         = 406
+<!-- Características geográficas -->
+| área                 = 1119.144
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 4192
+| data_pop             = [[IBGE]]/[[2010]]<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude             = 292
+| clima                = 
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.54 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/[[2000]] <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+| pib                  = {{formatnum:12504.020}} mil
+| data_pib             = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 2837.31
+| data_pib_per_capita  = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura      = http://www.novasantarita.pi.gov.br/
+}}
+'''Nova Santa Rita''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Piauí]]. 
+
+Com altitude de 292 metros, o município se localiza à [[latitude]] 08°05'14" [[sul]] e à [[longitude]] 42°03'08" [[oeste]]. Sua população estimada em 2025 era de 4.145 habitantes, distribuídos em {{formatnum|1133.1}}&nbsp;km² de área.
+
+{{Referências}}
+{{Esboço-municípiosbr/Piauí}}
+{{Municípios do Piauí}}
+{{Vale dos Rios Piauí e Itaueiras}}
+{{Portal3|Piauí}}
+[[Categoria:Vales do Rio Piauí e Itaueiras]]
+[[Categoria:Municípios do Piauí]]
+[[Categoria:Fundações no Piauí em 1994]]

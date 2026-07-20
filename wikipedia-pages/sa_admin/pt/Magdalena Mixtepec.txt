@@ -1,0 +1,228 @@
+{{Info/Assentamento
+|nome                    = Magdalena Mixtepec
+|nome_oficial            = 
+|nome_nativo             = <!-- se diferente do nome em português -->
+|nome_nativo_ling        = <!-- código da língua; por exemplo: "fr" para o francês -->
+|outro_nome              = 
+|nome_coord              = <!-- substituir brancos do nome da página por "_" quando usar coordenadas -->
+|assentamento_tipo       = Cidades do México
+<!-- transliterações -->
+|translit_ling1          = 
+|translit_ling1_tipo     = 
+|translit_ling1_info     = 
+|translit_ling1_tipo1    = 
+|translit_ling1_info1    = 
+|translit_ling1_tipo2    = 
+|translit_ling1_info2    = <!-- etc., até translit_ling1_tipo6 / translit_ling1_info6 -->
+|translit_ling2          = 
+|translit_ling2_tipo     = 
+|translit_ling2_info     = 
+|translit_ling2_tipo1    = 
+|translit_ling2_info1    = 
+|translit_ling2_tipo2    = 
+|translit_ling2_info2    = 
+|translit_ling2_tipo3    = <!-- etc., até translit_ling2_tipo6 / translit_ling2_info6 -->
+<!-- Título --> 
+|título_imagem        = <!-- Imagem à esquerda do nome; ex: {{CHN|tamanho=45px}} -->
+|título_margem_direita= <!-- Deve coincidir com a largura de título_imagem -->
+|título_cor_fundo     =
+|título_cor           = 
+|coord_título         = <!-- Se preenchido, coloca as coordenadas no canto sup. direito da página -->
+<!-- imagens, apelido, lema -->
+|imagens_tamanho         =
+|imagem_horizonte        = 
+|imagem_tamanho          = 
+|imagem_legenda          = 
+|imagem_bandeira         = 
+|bandeira_tamanho        = 
+|bandeira_link           = 
+|imagem_selo             = 
+|selo_tamanho            = 
+|selo_link               = 
+|imagem_escudo           = 
+|escudo_tamanho          = 
+|escudo_link             = 
+|imagem_emblema_vazio    = 
+|emblema_vazio_tipo      = 
+|emblema_vazio_tamanho   = 
+|emblema_vazio_link      = 
+|apelido                 = 
+|lema                    = 
+<!-- mapas e coordenadas -->
+|imagem_mapa             = 
+|mapa_tamanho            = 
+|mapa_legenda            = Localização da Cidade em Oaxaca
+|imagem_mapa1            = 
+|mapa_tamanho1           = 
+|mapa_legenda1           = 
+|imagem_mapa_ponto       = 
+|mapa_ponto_tamanho      = 
+|mapa_ponto_legenda      = 
+|ponto_x = |ponto_y = 
+|mapa_alfinete           = México<!-- nome de um mapa de localização, conforme Predefinição:Mapa de localização -->
+|mapa_alfinete_posição   = bottom
+|mapa_alfinete_tamanho   = 
+|mapa_alfinete_legenda   = Localização no México
+|mapa_alfinete1          = 
+|mapa_alfinete_posição1  = 
+|mapa_alfinete_tamanho1  = 
+|mapa_alfinete_legenda1  = 
+|latd  =16|latm  =54|lats= |latNS =N
+|longd =96|longm =54|longs= |longEW =W
+|coord_sufixo            = type:city
+|coord_escala            =
+<!-- localização -->
+|subdivisão_tipo         = País
+|subdivisão_nome         = {{flag|Mexico}}
+|subdivisão_tipo1        = Estados do México
+|subdivisão_nome1        = [[Oaxaca]]
+|subdivisão_tipo2        = 
+|subdivisão_nome2        = <!-- nome do Departamento -->
+|subdivisão_tipo3        = <!-- etc., até subdivisão_tipo6 / subdivisão_nome6 -->
+|subdivisão_nome3        = 
+<!-- estabelecido -->
+|estabelecido_título     = <!-- fundado -->
+|estabelecido_data       = 
+|estabelecido_título1    = <!-- incorporado (vila) -->
+|estabelecido_data1      = 
+|estabelecido_título2    = <!-- incorporado (cidade) -->
+|estabelecido_data2      = 
+|estabelecido_título3    = 
+|estabelecido_data3      = 
+|extinto_título          = 
+|extinto_data            = 
+|fundador                = 
+|nomeado_por             = 
+<!-- Sede da administração e subdivisões dentro do assentamento -->
+|sede_tipo               = <!-- por padrão: Sede -->
+|sede                    = 
+|partes_tipo             = <!-- Para freguesia ou sub-prefeitura (deixe em branco para o padrão: Distritos) -->
+|partes_estilo           = <!-- list, coll (lista compactada), para (formato de parágrafo) -->
+|partes                  = <!-- texto o cabeçalho para a lista das partes -->
+|p1                      = 
+|p2                      = <!-- etc., até p50 -->
+<!-- tipo de administração, líderes -->
+|governo_notas           = <!-- para referências -->
+|governo_tipo            = 
+|líder_partido           = 
+|líder_título            = 
+|líder_nome              = <!-- use   (no-break space) para desactivar ligação interna automática -->
+|líder_título1           = <!-- para lugares que tenham, por exemplo, um prefeito e um administrador -->
+|líder_nome1             = <!-- etc., até líder_título4 / líder_nome4, -->
+<!-- definições de apresentação -->
+|total_tipo              = 
+|unid_pref               = <!-- Imperial, Metric -->
+<!-- área -->
+|área_notas              = <!-- para referências -->
+|área_magnitude          = 
+|área_total_km2          =11.48
+|área_total_sq_mi        = 
+|área_total_dunam        = <!-- apenas para artigos sobre o Médio Oriente -->
+|área_terra_km2          = 
+|área_terra_sq_mi        = 
+|área_água_km2           = 
+|área_água_sq_mi         = 
+|área_água_percent       = 
+|área_urbana_km2         = 
+|área_urbana_sq_mi       = 
+|área_metro_km2          = 
+|área_metro_sq_mi        = 
+|área_vazio1_título      = 
+|área_vazio1_km2         = 
+|área_vazio1_sq_mi       = 
+|área_vazio2_título      = 
+|área_vazio2_km2         = 
+|área_vazio2_sq_mi       = 
+<!-- altitude -->
+|altitude_notas          = <!-- para referências -->
+|altitude_m              = <!-- TODOS OS CAMPOS: Predefinição converte automaticamente de metros para pés (e vice-versa) -->
+|altitude_ft             = 
+|altitude_max_notas      = <!-- para referências -->
+|altitude_max_m          = 
+|altitude_max_ft         = 
+|altitude_min_notas      = <!-- para referências -->
+|altitude_min_m          = 
+|altitude_min_ft         = 
+<!-- população -->
+|população_notas                 = <!-- para referências -->
+|população_total                 = 1101
+|população_em                    = 2005
+|população_densidade_km2         = <!-- TODOS OS CAMPOS: se os campos relevantes estiverem preenchidos, usar: auto -->
+|população_densidade_sq_mi       = 
+|população_est                   = 
+|população_est_em                = 
+|população_urbana                = 
+|população_densidade_urbana_km2  = 
+|população_densidade_urbana_sq_mi= 
+|população_metro                 = 
+|população_densidade_metro_km2   = 
+|população_densidade_metro_sq_mi = 
+|população_vazio1_título         = 
+|população_vazio1                = 
+|população_densidade_vazio1_km2  = 
+|população_densidade_vazio1_sq_mi= 
+|população_vazio2_título         = 
+|população_vazio2                = 
+|população_densidade_vazio2_km2  = 
+|população_densidade_vazio2_sq_mi= 
+|população_obs                   = 
+|gentílico               =
+<!-- demografia (secção 1) -->
+|demografia_tipo1        = 
+|demografia1_notas       = <!-- para referências -->
+|demografia1_título1     = 
+|demografia1_info1       = <!-- etc., até demografia1_título5 / demografia1_info5 -->
+<!-- demografia (secção 2) -->
+|demografia_tipo2        = 
+|demografia2_notas       = <!-- para referências -->
+|demografia2_título1     = 
+|demografia2_info1       = <!-- etc., até demografia2_título5 / demografia2_info5 -->
+<!-- fuso(s) horário(s) -->
+|timezone1               = [[América Central|Central]]
+|utc_offset1             = -6
+|timezone1_DST           = [[América Central|Central]]
+|utc_offset1_DST         = -5
+|timezone2               = 
+|utc_offset2             = 
+|timezone2_DST           = 
+|utc_offset2_DST         = 
+<!-- código postal --->
+|código_postal_tipo      = <!-- CEP, código postal, ... -->
+|código_postal           = 
+|código_postal2_tipo     = 
+|código_postal2          = 
+|código_área_tipo        = 
+|código_área             = 
+<!-- cidades gêmeas -->
+|gêmea1                  = 
+|gêmea1_país             = 
+|gêmea2                  = 
+|gêmea2_país             = <!-- etc., até gêmea9 / gêmea9_país -->
+<!-- campos vazios (secção 1) -->
+|vazio_nome_sec1         = 
+|vazio_info_sec1         = 
+|vazio1_nome_sec1        = 
+|vazio1_info_sec1        = 
+|vazio2_nome_sec1        = 
+|vazio2_info_sec1        = <!-- etc., vazio6_nome_sec1 / vazio6_info_sec1 -->
+<!-- campos vazios (secção 2) -->
+|vazio_nome_sec2         = 
+|vazio_info_sec2         = 
+|vazio1_nome_sec2        = 
+|vazio1_info_sec2        = 
+|vazio2_nome_sec2        = 
+|vazio2_info_sec2        = <!-- etc., vazio6_nome_sec2 / vazio6_info_sec2 -->
+<!-- Site, notas -->
+|sítio                   = 
+|notas                   = 
+|sem imagem              =
+}}
+'''Magdalena Mixtepec''' é uma cidade do Estado de [[Oaxaca]], no sudoeste do [[México]]. O município ocupa uma área de 11.48 km². Ela faz parte do [[Distrito de Zimatlán]] no oeste dos Vales Centrais ([[Valles Centrales]] em espanhol).
+
+Em 2005, tinha uma população estimada em 1101 pessoas<ref>{{citar web|url= http://www.e-local.gob.mx/work/templates/enciclo/oaxaca/municipios/20048a.htm|título= Magdalena Mixtepec|acessodata= 1 de Outubro de 2012|autor= Enciclopedia de los Municipios de México|publicado= [[Instituto Nacional para el Federalismo y el Desarrollo Municipal]]|arquivourl= https://web.archive.org/web/20041211141908/http://www.e-local.gob.mx/work/templates/enciclo/oaxaca/municipios/20048a.htm#|arquivodata= 11 de dezembro de 2004|urlmorta= yes}}</ref>.
+
+{{Referências}}
+
+{{esboço-geo}}
+
+[[Categoria:Cidades do México‏]]

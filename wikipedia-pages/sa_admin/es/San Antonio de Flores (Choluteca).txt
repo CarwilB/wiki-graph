@@ -1,0 +1,121 @@
+{{Ficha de entidad subnacional
+| nombre = San Antonio de Flores
+| unidad = [[Anexo:Municipios de Honduras|Municipio]]
+| tipo_superior_1 = [[Organización territorial de Honduras|Departamento]]
+| superior_1 = [[Departamento de Choluteca|Choluteca]]
+| imagen = 
+| mapa_loc = Honduras
+| subdivisión = 7 aldeas y 49 caseríos
+| elevación_media = 98
+| superficie = 54.65
+| superficie_puesto = 
+| población_puesto = 
+| población_año = 2020
+| población = 5489
+| población_notas = <ref name="INE">[https://www.citypopulation.de/en/honduras/admin/choluteca/0612__san_antonio_de_flores/ Proyección del 2020] - Instituto Nacional de Estadística, Honduras</ref>
+| densidad = 100.4
+| horario = [[Hora estándar del centro|Central]]: [[UTC-06:00|UTC-6]]
+}}
+
+'''San Antonio de Flores''' es un [[Anexo:Municipios de Honduras|municipio]] del departamento de [[Departamento de Choluteca|Choluteca]] en la República de [[Honduras]].
+
+== Toponimia ==
+Su nombre proviene de [[Antonio de Padua]], santo de la iglesia católica y por el cultivo de flores que abundan el municipio.
+
+== Límites ==
+{| class="wikitable"
+|+Límites de San Antonio de Flores
+!Orientación
+!Límite
+|-
+|Norte
+|Municipio de [[La Venta (Honduras)|La Venta]], Francisco Morazán
+|-
+|Sur
+|Municipio de [[Pespire]], Choluteca
+|-
+|Este
+|Municipio de [[San Isidro (Honduras)|San Isidro]], Choluteca<ref name="OT">{{enlace roto|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/san_antonio_de_flores.pdf|http://www.ordenamientoterritorial.hn/images/creacion_municipios/choluteca/san_antonio_de_flores.pdf|bot=InternetArchiveBot}} Datos de organización territorial de Honduras</ref>
+|-
+|Oeste
+|Municipio de Pespire, Choluteca
+|}
+
+== Historia ==
+En 1881, el municipio fue creado.
+
+En 1887, en el censo de 1887 figura como municipio del distrito de Pespire.<ref>Fiallos, Carmen. 1989. "Los Municipios de Honduras".</ref>
+
+== Demografía ==
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Género (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Hombres: 2,722 (49.6%)
+| valor1 = 49.6
+| color1 = #3366CC
+| etiqueta2 = Mujeres: 2,767 (50.4%)
+| valor2 = 50.4
+| color2 = #DC3912
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: Grupos de edad (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = 0-14 años: 1,379 (25.1%)
+| valor1 = 25.1
+| color1 = #3366CC
+| etiqueta2 = 15-64 años: 3,607 (65.7%)
+| valor2 = 65.7
+| color2 = #DC3912
+| etiqueta3 = 65+ años: 503 (9.2%)
+| valor3 = 9.2
+| color3 = #FF9900
+}}
+{{Gráfico circular
+| título = Más información sobre la estructura de la población: urbanización (P 2020)
+| tamaño1 = 100
+| posición1 = right
+| etiqueta1 = Rural: 5,489 (100%)
+| valor1 = 100
+| color1 = #109618
+}}
+San Antonio de Flores, Choluteca tiene una población actual de 6,073 habitantes.<ref>{{Cita web|url=https://www.citypopulation.de/en/honduras/admin/el_para%C3%ADso/0711__san_antonio_de_flores/|título=San Antonio de Flores (Municipality, Honduras) - Population Statistics, Charts, Map and Location|fechaacceso=2023-10-31|sitioweb=www.citypopulation.de}}</ref>De la población total, el 49.6% son hombres y el 50.4% son mujeres. Casi el 100% de la población vive en la zona rural.<ref name="INE"/>
+
+== División política ==
+Aldeas: 7 (2013)
+
+Caseríos: 49 (2013)
+
+{| class="wikitable"
+|+Aldeas de San Antonio de Flores
+!Código
+!Aldea
+|-
+|061201
+|San Antonio de Flores (cabecera del municipio)
+|-
+|061202
+|El Jícaro
+|-
+|061203
+|Las Playitas
+|-
+|061204
+|Moramulca
+|-
+|061205
+|El Rebalse
+|-
+|061206
+|Las Cañas
+|-
+|061207
+|Las Trojas
+|}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Municipios de Choluteca]]

@@ -1,0 +1,308 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+|name                    = San Marcos La Laguna <!-- at least one of the first two fields must be filled in -->
+|official_name           = 
+|native_name             = <!-- if different from the English name -->
+|native_name_lang        = <!-- e.g. "fr" for French. If more than one, use {{lang}} instead -->
+|other_name              = 
+|settlement_type         = Village <!-- such as Town, Village, City, Borough etc. -->
+<!-- images, nickname, motto --->
+|image_skyline           = LagoAtitlan.jpg
+|imagesize               = 
+|image_caption           = View of Lake Atitlan from San Marcos La Laguna
+|image_flag              = 
+|flag_size               = 
+|flag_alt                = 
+|flag_link               =
+|image_seal              = 
+|seal_size               = 
+|seal_alt                = 
+|seal_link               = 
+|image_shield            = 
+|shield_size             = 
+|shield_alt              = 
+|shield_link             = 
+|image_blank_emblem      = 
+|blank_emblem_type       = <!-- defaults to Logo -->
+|blank_emblem_size       = 
+|blank_emblem_alt        = 
+|blank_emblem_link       = 
+|nickname                = 
+|motto                   = 
+<!-- maps and coordinates ------>
+|pushpin_map             = Guatemala <!-- name of a location map as per Template:Location_map -->
+|pushpin_label_position  = right<!-- position of the pushpin label: left, right, top, bottom, none -->
+|pushpin_map_alt         = Location map of Santiago Atitlan 
+|pushpin_mapsize         = 
+|pushpin_map_caption     = Location in Guatemala 
+|pushpin_map1            = 
+|pushpin_label_position1 = 
+|pushpin_map_alt1        = 
+|pushpin_mapsize1        = 
+|pushpin_map_caption1    = 
+|coordinates             = {{coord|14|43|30|N|91|15|30|W|region:GT|display=inline}}
+|coor_pinpoint           = <!-- to specify exact location of coordinates (was coor_type) -->
+|coordinates_footnotes   = <!-- for references: use <ref> tags -->
+<!-- location ------------------>
+| subdivision_type        = Country
+|subdivision_name       = [[Image:Flag of Guatemala.svg|25px]] [[Guatemala]]
+|subdivision_type1      = [[Departments of Guatemala|Department]] 
+|subdivision_name1      = [[Image:Flag of Sololá Department.svg|25px]] [[Sololá Department|Sololá]]
+|subdivision_type2       = 
+|subdivision_name2       = <!-- etc., subdivision_type6 / subdivision_name6 -->
+<!-- established --------------->
+|established_title       = <!-- Settled -->
+|established_date        = 
+|established_title1      = <!-- Incorporated (town) -->
+|established_date1       = 
+|established_title2      = <!-- Incorporated (city) -->
+|established_date2       = 
+|established_title3      = 
+|established_date3       = 
+|extinct_title           = 
+|extinct_date            = 
+|founder                 = 
+|named_for               = 
+<!-- government type, leaders -->
+|government_footnotes    = <!-- for references: use <ref> tags -->
+|government_type         = Municipal
+|leader_party            = 
+|leader_title            = 
+|leader_name             = <!-- add &nbsp; (no-break space) to disable automatic links -->
+|leader_title1           = 
+|leader_name1            = <!-- etc., up to leader_title4 / leader_name4 -->
+<!-- display settings  --------->
+|total_type              = <!-- to set a non-standard label for total area and population rows -->
+|unit_pref               = <!-- enter: Imperial, to display imperial before metric -->
+<!-- area ---------------------->
+|area_footnotes          = <!-- for references: use <ref> tags -->
+|area_magnitude          = <!-- use only to set a special wikilink -->
+|area_total_km2          =12 <!-- ALL fields with measurements have automatic unit conversion -->
+|area_total_sq_mi        = <!-- see table @ Template:Infobox settlement for details -->
+|area_land_km2           = 
+|area_land_sq_mi         = 
+|area_water_km2          = 
+|area_water_sq_mi        = 
+|area_water_percent      = auto
+|area_urban_km2          = 
+|area_urban_sq_mi        = 
+|area_metro_km2          = 
+|area_metro_sq_mi        = 
+|area_blank1_title       = 
+|area_blank1_km2         = 
+|area_blank1_sq_mi       = 
+|area_blank2_title       = 
+|area_blank2_km2         = 
+|area_blank2_sq_mi       = 
+<!-- elevation ----------------->
+|elevation_footnotes     = <ref name=google_earth>Google Earth</ref> <!-- for references: use <ref> tags -->
+|elevation_m             = 1585
+|elevation_ft            = 
+|elevation_max_footnotes = <!-- for references: use <ref> tags -->
+|elevation_max_m         = 
+|elevation_max_ft        = 
+|elevation_min_footnotes = <ref name=google_earth /> <!-- for references: use <ref> tags -->
+|elevation_min_m         = 1562
+|elevation_min_ft        = 
+<!-- population ---------------->
+|population_footnotes    = <!-- for references: use <ref> tags -->
+|population_total        = 2944
+|population_as_of        = 2021
+|population_density_km2  = auto <!-- for automatic calculation of any density field, use: auto -->
+|population_density_sq_mi= auto 
+|population_est          = 
+|pop_est_as_of           = 
+|population_urban        = 
+|population_density_urban_km2   = auto
+|population_density_urban_sq_mi = auto
+|population_metro        = 
+|population_density_metro_km2   = auto
+|population_density_metro_sq_mi = auto
+|population_blank1_title = 
+|population_blank1       = 
+|population_density_blank1_km2  = auto
+|population_density_blank1_sq_mi= auto
+|population_blank2_title = 
+|population_blank2       = 
+|population_density_blank2_km2  = auto
+|population_density_blank2_sq_mi= auto
+|population_note         = 
+<!-- demographics (section 1) -->
+|demographics_type1      = 
+|demographics1_footnotes = <!-- for references: use <ref> tags -->
+|demographics1_title1    = 
+|demographics1_info1     = <!-- etc., up to demographics1_title5 / demographics1_info5 -->
+<!-- demographics (section 2) -->
+|demographics_type2      = 
+|demographics2_footnotes = <!-- for references: use <ref> tags -->
+|demographics2_title1    = 
+|demographics2_info1     = <!-- etc., up to demographics2_title5 / demographics2_info5 -->
+<!-- time zone(s) -------------->
+|timezone1               = [[North American Central Time Zone|Central Time]]
+|utc_offset1             = -6
+|timezone1_DST           = 
+|utc_offset1_DST         = 
+<!-- postal codes, area code --->
+|postal_code_type        = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code             = 
+|postal2_code_type       = <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal2_code            = 
+|area_code_type          = [[list of country calling codes|Country calling code]]<!-- defaults to: Area code(s) -->
+|area_code               = +502
+<!-- twin cities --------------->
+|twin1                   = 
+|twin1_country           = 
+|twin2                   = 
+|twin2_country           = <!-- etc., up to twin9 / twin9_country -->
+<!-- blank fields (section 1) -->
+|blank_name_sec1         = [[Köppen climate classification|Climate]]
+|blank_info_sec1         = [[Tropical savanna climate]] 
+|blank1_name_sec1        = 
+|blank1_info_sec1        = 
+|blank2_name_sec1        = 
+|blank2_info_sec1        = <!-- etc., blank6_name_sec1 / blank6_info_sec1 -->
+<!-- blank fields (section 2) -->
+|blank_name_sec2         = 
+|blank_info_sec2         = 
+|blank1_name_sec2        = 
+|blank1_info_sec2        = 
+|blank2_name_sec2        = 
+|blank2_info_sec2        = <!-- etc., blank6_name_sec2 / blank6_info_sec2 -->
+<!-- website, footnotes -------->
+|website                 = 
+|footnotes               = 
+}}
+
+'''San Marcos La Laguna''' is a village on the western shore of [[Lago de Atitlán|Lago Atitlán]] in the [[Sololá Department]] of [[Guatemala]]. The village is northwest of three volcanos [[Volcán San Pedro]], [[Volcán Tolimán]], and [[Volcán Atitlán]]. The village has an outdoor amphitheater and a few hostels.<ref name=google_earth /> San Marcos connects to other lakeside communities by boat and a narrow road. The nearest city is [[Panajachel]] at the northern side of Lago Atitlán.<ref name=google_earth /> The town sits at an elevation of {{convert|1585|m|ft}}; the lowest elevation is the lake shore at {{convert|1562|m|ft}}.
+
+It is a small village of 2200 inhabitants; the majority of the population are [[Kaqchikel language|Kaqchikel]]-speaking [[Indigenous peoples of the Americas|indigenous]] [[Maya peoples|Mayans]].
+
+San Marcos La Laguna ("San Marcos": in honor of its patron saint Marcos Evangelista; "La Laguna": due to its geographic location close to Lake Atitlán) is a municipality in the department of Sololá in the south-western region of the Republic of Guatemala.
+
+In pre-Columbian times, the first Kachiquel settlers arrived from the area where the modern municipalities of San Lucas Tolimán and Santiago Atitlán are located, specifically from the place called "Pakip". During the colonial era it was an encomienda in charge of the descendants of the Spanish conqueror Sancho de Barahona, among whom is the first president of the Federal Republic of Central America, General Manuel José Arce y Fagoaga.
+
+After the Independence of Central America in 1821, it became part of the department of Sololá/Suchitepéquez;6 and in 1838 it was part of the ephemeral State of Los Altos until it was reincorporated into the State of Guatemala by the conservative general Rafael Carrera in 1840. Later, after the Liberal Reform of 1871, on August 12, 1872, the de facto government of provisional president Miguel García Granados created the department of Quiché, to which it awarded a large part of the territory of Sololá, although San Marcos La Laguna remained in the latter.
+
+Already in the 21st century, in 2005 the municipality was severely affected by storm Stan.
+
+==Place names==
+
+Many of the names of the municipalities and towns of Guatemala consist of two parts: the name of the Catholic saint venerated on the day they were founded and a description with Nahuatl roots; this is because the troops that invaded the region in the 1520s under the command of Pedro de Alvarado were made up of Spanish soldiers and Tlaxcalan and Cholultec indigenous people. In some cases, such as this municipality, the toponym includes the name of San Marcos and the description in Spanish, in this case "La Laguna" due to its geographical proximity to Lake Atitlán.
+
+==Demography==
+The municipality has an approximate population of 2,836 according to the 2018 Population Census with a density of 236 people per square kilometer. There is a proportion of 52% female inhabitants and 48% male inhabitants.
+
+==Physical geography==
+The municipality of San Marcos La Laguna is the smallest municipality in the department of Sololá along with Santa Clara La Laguna and San Pablo La Laguna with 12 km².
+
+===Climate===
+The municipal seat of San Marcos La Laguna has a tropical climate; (Köppen classification: Aw).
+
+===Geographic location===
+San Marcos La Laguna is located in the department of Sololá, and is located at a distance of 48 km from the departmental capital. It is practically surrounded by municipalities of said department:
+
+North: Santa Lucía Utatlán
+South: Lake Atitlán13
+East: Santa Cruz La Laguna
+West: San Pablo La Laguna13
+
+{{Geographic location
+| Center = San Marcos La Laguna
+| North = [[Santa Lucía Utatlán]]
+| East = [[Santa Cruz La Laguna]]
+| South = [[Lake Atitlán]]<ref name=segeplan/>
+| West = [[San Pablo La Laguna]]<ref name=segeplan>{{harvnb|SEGEPLAN|n.d.}}</ref>
+}}
+
+==Municipal government==
+Municipalities are regulated by various laws of the Republic, which establish their form of organization, the composition of their administrative bodies and the taxes allocated to them. Although they are autonomous entities, they are subject to national legislation. The main laws that govern municipalities in Guatemala since 1985 are
+as follows:
+<div align=center>
+{| class="wikitable mw-collapsible" width=80% style='font-size:0.9em'
+|+Main laws that govern the municipalities of Guatemala
+|-style=color:white;
+!style="background:#659ec7;" align=center width=6%|No.
+!style="background:#659ec7;" align=center|Law
+!style="background:#659ec7;" align=center|Description
+|-
+!style=background:lemonchiffon;|1
+|[[Constitution of Guatemala|Political Constitution of the Republic of Guatemala]]
+|It has a specific legal regulation for municipalities in articles 253 to 262.
+|- 
+!style=background:lemonchiffon;|2
+|Electoral and Political Parties Law
+|Constitutional law applicable to municipalities in the matter of the formation of their elected authorities.
+|-
+!style=background:lemonchiffon;|3
+|Municipal Code 
+|Decree 12-2002 of the [[Congress of the Republic of Guatemala]]. It has the category of ordinary law and contains general precepts applicable to all municipalities, and even contains legislation regarding the creation of municipalities.
+|-
+!style=background:lemonchiffon;|4
+|Municipal Service Law
+|Decree 1-87 of the Congress of the Republic of Guatemala. It regulates the relations between the municipality and public servants in labor matters. It has its constitutional basis in article 262 of the constitution that orders the issuance of the same.
+|-
+!style=background:lemonchiffon;|5
+|[[General Law of Decentralization of Guatemala|General Law of Decentralization]]
+|Decree 14-2002 of the Congress of the Republic of Guatemala. Regulates the constitutional duty of the State, and therefore of the municipality, to promote and implement economic and administrative decentralization and deconcentration. 
+|}
+</div>
+
+The government of the municipalities of Guatemala is in charge of a Municipal Council<ref name=asamblea85/> while the municipal code —which has the character of ordinary law and contains provisions that apply to all the municipalities of Guatemala—establishes that "the municipal council is the highest collegiate body for deliberation and decision-making on municipal affairs […] and has its headquarters in the district of the municipal capital." Finally, article 33 of the aforementioned code establishes that "[t]he municipal council is exclusively responsible for exercising the government of the municipality."<ref name=congreso2012/>
+
+The municipal council is made up of the mayor, the trustees and councillors, elected directly by universal and secret suffrage for a period of four years, and may be re-elected.<ref name=asamblea85>{{harvnb|Asamblea Constituyente|1985|p=}}</ref><ref name=congreso2012>{{harvnb|Congreso de Guatemala|2012|p=}}</ref>
+
+
+There are also Auxiliary Mayors, Community Development Committees (COCODE), the Municipal Development Committee (COMUDE), cultural associations and work commissions. The auxiliary mayors are elected by the communities according to their principles, values, procedures and traditions. They meet with the municipal mayor on the first Sunday of each month. The Community Development Committees and the Municipal Development Council have the function of organizing and facilitate the participation of communities by prioritizing needs and problems.
+The mayors who have served in the municipality are as follows:
+
+* 2012-2016: Edwin Enrique Cuá{{harvnb|Prensa Libre|2011|p=}}
+* 2016-2020: Vicente Raúl Puzul Mendoza
+
+==History==
+The first inhabitants of the town were people from the area where the modern municipalities of San Lucas Tolimán and Santiago Atitlán are located, specifically from the place called "Pakip". The people who arrived were of the Kakchiquel race and there are currently more people of that ethnicity in the municipality. The date of the founding of the town is uncertain.
+
+===Foundation of the encomienda===
+After the conquest of the Guatemalan highlands in 1524, the stage of founding encomiendas began, for which the people who accompanied the Spaniards with encomiendas or some dispersed populations that had fled from the occupation were brought together.16 On some occasions, people who spoke the same language were brought together or were simply brought from other places to form the new towns. The foundations were ordered in 1538 at the request of Bishop Francisco Marroquín by decree that had to be reiterated in 1541. The Oidor Juan Rogel Vásquez was sent by the Audience to make the founding of towns a reality, entrusting the religious of the regular orders who knew the indigenous languages to direct the reduction, focusing his attention on the headwaters of the lordships.
+
+The encomiendas not only organized the indigenous population as forced labor but were also a way of rewarding those Spaniards who had distinguished themselves through their services and of ensuring the establishment of a Spanish population in the newly discovered and conquered lands. They also served as a center of acculturation and mandatory evangelization, since the indigenous people were regrouped by the encomenderos in towns called "Doctrinas", where they had to work and receive the teaching of Christian doctrine by religious of the regular orders, and also take charge of the maintenance of the friars.  The encomendero in charge of the Atitlán region was the conqueror Sancho de Barahona after the death of Pedro de Alvarado.
+
+In 1623 Pedro Núñez de Barahona - grandson of the original encomendero Sancho de Barahona - took official possession of the Atitlán encomienda, comprising the towns of Santiago Atitlán, San Lucas Tolimán, San Pedro La Laguna, San Juan La Laguna, San Pablo La Laguna, Santa María Visitación, Santa Cruz La Laguna and San Marcos La Laguna, as well as towns that belong to the modern department of Suchitepéquez.
+
+===After the Independence of Central America===
+After the Independence of Central America according to the Decree of October 11, 1825 of the State of Guatemala, the town was assigned to the Atitlán Circuit, in District No. 11 (Suchitepéquez) for the administration of justice; along with San Marcos were in that district Atitlán, Tolimán, San Pedro La Laguna, Santa Clara, la Visitación, San Pablo, San Miguelito, San Juan de los Leprosos and Santa Bárbara de La Costilla and La Grande.
+
+===The ephemeral state of Los Altos===
+In April 1838, San Marcos La Laguna became part of the region that formed the ephemeral State of Los Altos and that on September 12, 1839 forced the State of Guatemala to reorganize into seven departments and two independent districts:
+
+Departments: Chimaltenango, Chiquimula, Escuintla, Guatemala, Mita, Sacatepéquez, and Verapaz
+Districts: Izabal and Petén20
+The western region of present-day Guatemala had shown intentions of obtaining greater autonomy with respect to the authorities of Guatemala City since colonial times, since the local Creoles considered that the capital Creoles who had the commercial monopoly with Spain did not give them fair treatment.217 But this attempt at secession was crushed by General Rafael Carrera, who reintegrated the State of Los Altos into the State of Guatemala in 1840.
+
+===After the Liberal Reform of 1871===
+After the Liberal Reform of 1871, the provisional de facto president Miguel García Granados decided to create the department of Quiché to improve the territorial administration of the Republic given the enormous extension of the territory of Totonicapán and Sololá.22 Thus, on August 12, 1872, the department of Sololá lost its districts of the Sierra and Quiché and was reduced only to the towns of San Marcos La Laguna, Villa de Sololá, San José Chacallá, Panajachel, Concepción, San Jorge, San Andrés Semetabaj, Santa Lucía Utatlán, Santa Cruz, Santa Bárbara, San Juan de los Leprosos, Visitación, San Pedro, San Juan, San Pablo, Santa Clara, Atitlán, San Lucas Tolimán, San Antonio Palopó, Santa Catarina Palopó and Patulul.
+
+===21st century: storm Stan===
+Hurricane Stan hit Guatemala as a Category I hurricane in early October 2005 and caused damage and losses to the country of around one billion dollars, according to a study by the Economic Commission for Latin America and the Caribbean (ECLAC). According to the report, the hurricane directly affected fourteen of the twenty-two departments of Guatemala; it also caused six hundred and seventy deaths, eight hundred and fifty missing persons and three and a half million homeless people.
+
+The continuous rains revealed Guatemala's environmental disaster: the deforested mountains could not withstand the pockets of water and humidity that formed in those days, causing landslides and mudslides. Most of the rivers that flow from the depredated mountains of the coastal area, with their basins almost devoid of vegetation and the loss of depth in their channels, caused them to overflow and flood large cultivated regions and dozens of rural communities and municipal capitals in the coastal strip of the country. In the central and western highlands, layers and folds of hills and volcanoes collapsed, destroying hundreds of homes and causing human tragedy. From the upper part of the Lake Atitlán basin, landslides were continuous, dragging mud, stones, rocks and sand. The lake, which normally receives the sewage from twelve municipal capitals, was flooded with a large volume of waste that floated for several days.
+
+==Economy==
+The municipality is known for being a very touristic place and visited by people from other municipalities in Guatemala. Lake Atitlán is its most effective economic source since it not only attracts visitors, but it is also a source of fishing that is a very abundant commercial source.
+
+==References==
+{{Reflist}}
+
+==Sources==
+* {{cite book |author=Asamblea Constituyente |lang=es |title=Constitución Política de la República de Guatemala |date=1985 |publisher=Gobierno de Guatemala |url=http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf |archive-url=https://web.archive.org/web/20160202083342/http://www.oas.org/Juridico/MLA/sp/gtm/sp_gtm-int-text-const.pdf |archive-date=2 February 2016}}
+* {{cite book |author=Congreso de Guatemala |lang=es |title=Código Municipal de Guatemala |date=2012 |publisher=Gobierno de Guatemala |url=http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf |archive-url=https://web.archive.org/web/20150807042527/http://derechoyleyes.com/wp-content/uploads/2013/02/Co%CC%81digo-Municipal-Guatemala.pdf |archive-date=7 August 2015}}
+* {{cite web |author=SEGEPLAN |date=n.d. |url=http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=20:solola&Itemid=333 |lang=es |title=Municipios del departamento de Sololá|website=SEGEPLAN |access-date=7 July 2015 |archive-url=https://web.archive.org/web/20150707072558/http://www.segeplan.gob.gt/2.0/index.php?option=com_k2&view=itemlist&task=category&id=20:solola&Itemid=333 |archive-date=7 July 2015}}
+
+==External links==
+*{{wikivoyage-inline|San Marcos La Laguna}}
+
+{{coord|14|43|N|91|16|W|region:GT_type:city|display=title}}
+
+{{Sololá Department}}
+{{Authority control}}
+
+[[Category:Municipalities of the Sololá Department]]

@@ -1,0 +1,74 @@
+{{Info/Município do Brasil
+<!-- GeoID=3163102 -->
+<!-- Cabeçalho -->
+| nome = São José da Varginha
+| foto = 
+| leg_foto = 
+| apelido = 
+| padroeiro = [[São José]]<ref>{{citar web|URL=http://www.descubraminas.com.br/Upload/Biblioteca/0000377.pdf |título=Lista por santos padroeiros |página=7 |autor=Serviço Nacional de Aprendizagem Comercial (SENAC) |publicado=Descubra Minas |acessodata=14 de setembro de 2017 |wayb=20170914163034}}</ref>
+<!-- Dados gerais -->
+| brasão = Brasaosjosevarginha.png
+| bandeira = 
+| link_brasão = 
+| link_bandeira = 
+| link_hino = 
+| CEP = 35694-000 a 35694-999<ref>{{citar web|URL=http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm |título=Busca Faixa CEP |autor=Empresa Brasileira de Correios e Telégrafos |acessodata=1 de fevereiro de 2019}}</ref>
+| aniversário = 1 de março
+| fundação ={{nowrap|{{dtlink|1|3|1963|idade}}}}
+| gentílico =varginense-de-são-josé <ref name = IBGE>{{citar web|URL=https://cidades.ibge.gov.br/brasil/mg/sao-jose-da-varginha/panorama|título=IBGE|publicado=Censo Demográfico 2022}}</ref>
+| lema = 
+| prefeito = Sirley da Silva de Oliveira<ref>{{citar web|url=https://g1.globo.com/google/amp/mg/centro-oeste/eleicoes/2024/noticia/2025/01/16/prefeito-eleito-em-sao-jose-da-varginha-tem-recurso-negado-pelo-tse-e-segue-sem-poder-assumir-o-cargo.ghtml|título=Prefeito eleito em São José da Varginha tem recurso negado pelo TSE e segue sem poder assumir o cargo|publicado=g1|acessodata=12 de fevereiro de 2025}}</ref>
+| partido = [[Partido Progressista|PP]]
+| mandato_início = 2025
+| fim_mandato = indeterminado
+<!-- Localização -->
+| mapa = MinasGerais Municip SaoJosedaVarginha.svg
+| latP = S
+| latG = 19
+| latM = 42
+| latS = 36
+| lonP = O
+| lonG = 44
+| lonM = 33
+| lonS = 25
+| estado = Minas Gerais
+| mesorregião = [[Mesorregião Metropolitana de Belo Horizonte|Metropolitana de Belo Horizonte]]
+| data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião = [[Microrregião de Pará de Minas|Pará de Minas]]
+| data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Fortuna de Minas]], [[Pequi (Minas Gerais)|Pequi]], [[Onça de Pitangui]], [[Pará de Minas]], [[Esmeraldas (Minas Gerais)|Esmeraldas]]
+| dist_capital = 108
+<!-- Características geográficas -->
+| área = 205.501
+| área_ref = <ref name =IBGE/>
+| população = 4536
+| data_pop = Censo [[IBGE]]/2022 <ref name = IBGE/>
+| altitude = 
+| clima = 
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.704 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2000">{{citar web |url=https://www.undp.org/pt/brazil/idhm-municipios-2010|titulo=PNUD|publicado=Índice de Desenvolvimento Humano Municipal - 2010}}</ref>
+| pib = {{formatnum:52719.529}} mil
+| data_pib = [[IBGE]]/[[2008]]<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita = 13199.68
+| data_pib_per_capita = [[IBGE]]/[[2008]]<ref name="IBGE_PIB"/>
+| site_prefeitura = [https://www.saojosedavarginha.mg.gov.br www.saojosedavarginha.mg.gov.br]
+| site_câmara = [https://www.saojosedavarginha.mg.leg.br www.saojosedavarginha.mg.leg.br]
+}}
+'''São José da Varginha''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] de [[Minas Gerais]]. De acordo com o [[Censo demográfico do Brasil de 2022|censo]] realizado em 2022 sua população era de 4 536 habitantes. <ref name = IBGE/>
+
+{{Referências}}
+
+== Ligações externas ==
+{{Commonscat}}
+*[https://www.saojosedavarginha.mg.gov.br Prefeitura de São José da Varginha] 
+*[https://www.saojosedavarginha.mg.leg.br Câmara de São José da Varginha]
+*[http://www.cidades.ibge.gov.br/brasil/mg/sao-jose-da-varginha São José da Varginha no IBGE Cidades]
+
+{{Esboço-municípiosbr/Minas Gerais}}
+{{Portal3|Minas Gerais}}
+
+{{DEFAULTSORT:Sao Jose Varginha}}
+[[Categoria:Municípios de Minas Gerais]]
+[[Categoria:Fundações em Minas Gerais em 1963]]

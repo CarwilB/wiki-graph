@@ -1,0 +1,608 @@
+{{Ficha de entidad subnacional
+| nombre = Desamparados
+| nombre original = Cantón de Desamparados
+| nombre completo = Cantón de Desamparados
+| unidad = [[Cantones de Costa Rica|Cantón]]
+| país = Costa Rica
+| tipo_superior_1 = [[Organización territorial de Costa Rica|Provincia]]
+| superior_1 = {{CRI|SJ}}
+| bandera_borde = si
+| himno = Himno Municipal de Desamparados
+| lema = ''Cultura, Moral y Trabajo''
+| escudo_tamaño = 65px
+| mapa = Costa Rica - San Jose - Desamparados.svg
+| tamaño_mapa = 250px
+| pie_mapa = Ubicación del cantón de Desamparados en la provincia de San José
+| imagen = Collage de Desamparados.png
+| pie_de_imagen = De arriba abajo, de izquierda a derecha: 
+Escuela [[Joaquín García Monge]], calle en [[Desamparados (Costa Rica)|Desamparados]], [[Ruta 39 (Costa Rica)|carretera de Circunvalación]], [[Iglesia de Nuestra Señora de los Desamparados (Desamparados)|
+Parroquia Nuestra Señora de los Desamparados]], iglesia de [[San Rafael Abajo]], [[estadio Jorge Hernán "Cuty" Monge]], vista de la ciudad de Desamparados, costado de la parroquia de Nuestra Señora de los Desamparados, iglesia de [[Rosario de Desamparados|Rosario]].
+| capital = [[Desamparados (Costa Rica)|Desamparados]]
+| capital_coor = 09_48_48_N_84_02_56_W 9°48'48"N, 84°02'56"O
+| subdivisión = [[Anexo:Distritos de la provincia de San José|13 distritos]]
+| dirigentes_títulos = [[Régimen municipal de Costa Rica|Alcaldesa]]<br /><br />[[Concejo Municipal de Desamparados|Presidente municipal]]
+| dirigentes_nombres = María Antonieta Naranjo Brenes ([[Partido Liberación Nacional|PLN]]) <br /><br />Eduardo Guillén Gardela ([[Frente Amplio (Costa Rica)|FA]])
+| superficie = 118,26
+| superficie_puesto = [[Área de los cantones de Costa Rica|60]]
+| gentilicio = Desamparadeño, -a
+| fundación_fechas = 4 de noviembre de 1862
+| clima = Valle Central (Región Montañosa)<ref>{{cita web |url=http://www.imn.ac.cr/publicaciones/estudios/Reg_climaCR.pdf |formato=PDF |título=Regiones y subregiones climáticas de Costa Rica |editorial=Instituto Meteorológico Nacional |urlarchivo=https://web.archive.org/web/20120105104758/http://www.imn.ac.cr/publicaciones/estudios/Reg_climaCR.pdf |fechaarchivo=5 de enero de 2012 }}</ref>
+| Altitud media = 1 161 
+Punto más alto = Cerro el Tablazo (1896 {{esd|m s. n. m.}})
+| IDH año = 2016
+| IDH = 0,753
+| IDH puesto = [[Anexo:Cantones de Costa Rica por IDH|49]]
+| IDH categoría = <span style="color:#098c00;">'''Alto'''
+| horario = [[UTC]]-6
+| campo1_nombre = [[Fiesta|Fiestas patronales]]
+| campo1 = Segundos domingos de mayo<br>Día de la [[Virgen de los Desamparados]]
+| página web = www.desamparados.go.cr/
+| apodo = ''Desampa''
+| mapa1 = {{map draw
+ |zoom=11
+ |align=center
+ |geotype1=geoshape
+ |ids1=Q1444404
+ |stroke1=#d40000
+ |fill-opacity1=0.0
+ |geotype2=geoshape
+ |ids2=Q14108797
+ |title2=[[Desamparados (Costa Rica)|Desamparados]]
+ |description2=Distrito N.º 1
+ |fill2=#ffffb3
+ |fill-opacity2=0.75
+ |stroke-width2=0.5
+ |geotype3=geoshape
+ |ids3=Q3947697
+ |title3=[[San Miguel de Desamparados|San Miguel]]
+ |description3=Distrito N.º 2
+ |fill3=#bebada
+ |fill-opacity3=0.75
+ |stroke-width3=0.5
+ |geotype4=geoshape
+ |ids4=Q3947445
+ |title4=[[San Juan de Dios (Costa Rica)|San Juan de Dios]]
+ |description4=Distrito N.º 3
+ |fill4=#fb8072
+ |fill-opacity4=0.75
+ |stroke-width4=0.5
+ |geotype5=geoshape
+ |ids5=Q3947881
+ |title5=[[San Rafael Arriba]]
+ |description5=Distrito N.º 4
+ |fill5=#80b1d3
+ |fill-opacity5=0.75
+ |stroke-width5=0.5
+ |geotype6=geoshape
+ |ids6=Q3946715
+ |title6=[[San Antonio de Desamparados|San Antonio]]
+ |description6=Distrito N.º 5
+ |fill6=#fdb462
+ |fill-opacity6=0.75
+ |stroke-width6=0.5
+ |geotype7=geoshape
+ |ids7=Q3749237
+ |title7=[[Frailes (Costa Rica)|Frailes]]
+ |description7=Distrito N.º 6
+ |fill7=#b3de69
+ |fill-opacity7=0.75
+ |stroke-width7=0.5
+ |geotype8=geoshape
+ |ids8=Q3897580
+ |title8=[[Patarrá]]
+ |description8=Distrito N.º 7
+ |fill8=#fccde5
+ |fill-opacity8=0.75
+ |stroke-width8=0.5
+ |geotype9=geoshape
+ |ids9=Q3946914
+ |title9=[[San Cristóbal (Costa Rica)|San Cristóbal]]
+ |description9=Distrito N.º 8
+ |fill9=#d9d9d9
+ |fill-opacity9=0.75
+ |stroke-width9=0.5
+ |geotype10=geoshape
+ |ids10=Q3941342
+ |title10=[[Rosario de Desamparados|Rosario]]
+ |description10=Distrito N.º 9
+ |fill10=#bc80bd
+ |fill-opacity10=0.75
+ |stroke-width10=0.5
+ |geotype11=geoshape
+ |ids11=Q3701215
+ |title11=[[Damas (Costa Rica)|Damas]]
+ |description11=Distrito N.º 10
+ |fill11=#ccebc5
+ |fill-opacity11=0.75
+ |stroke-width11=0.5
+ |geotype12=geoshape
+ |ids12=Q3947880
+ |title12=[[San Rafael Abajo]]
+ |description12=Distrito N.º 11
+ |fill12=#ffed6f
+ |fill-opacity12=0.75
+ |stroke-width12=0.5
+ |geotype13=geoshape
+ |ids13=Q3775925
+ |title13=[[Gravilias (Costa Rica)|Gravilias]]
+ |description13=Distrito N.º 12
+ |fill13=#8dd3c7
+ |fill-opacity13=0.75
+ |stroke-width13=0.5
+ |geotype14=geoshape
+ |ids14=Q9024013
+ |title14=[[Los Guido]]
+ |description14=Distrito N.º 13
+ |fill14=#ffffb3
+ |fill-opacity14=0.75
+ |stroke-width14=0.5
+ }}
+| pie_mapa1 = Desamparados y distritos
+| población = 249 367
+| patrona = Virgen de los Desamparados
+}}
+{{Población histórica por censo de Costa Rica}}
+'''Desamparados''' es un [[Cantones de Costa Rica|cantón]] de [[Costa Rica]] situado en el centro de la [[provincia de San José]], sobre la meseta intervolcánica del [[Valle Central (Costa Rica)|Valle Central]], y perteneciente parcialmente a la [[Gran Área Metropolitana (Costa Rica)|Gran Área Metropolitana]]. El cantón cuenta con un total de 249 367 habitantes, según la última proyección demográfica del [[Instituto Nacional de Estadística y Censos de Costa Rica|INEC]],<ref name=":1">{{Cita web|url=http://www.inec.go.cr/poblacion/estimaciones-y-proyecciones-de-poblacion|título=Estimaciones y Proyecciones de población|fechaacceso=24 de junio de 2018|sitioweb=Instituto Nacional de Estadística y Censos|idioma=es}}</ref> ubicándose así como el tercero más poblado del país y el segundo de la provincia. Limita al norte con los cantones de [[Cantón de San José|San José]] y [[Cantón de Curridabat|Curridabat]], al noroeste con el [[cantón de Alajuelita]], al oeste con el [[cantón de Aserrí]], al sur con el [[cantón de León Cortés Castro]], al sureste con el [[cantón de Dota]], al este con los cantones de [[Cantón de El Guarco|El Guarco]] y [[Cantón de Cartago|Cartago]] y al noreste con el [[cantón de La Unión]].
+
+El cantón cuenta con una extensión territorial de 118,26&nbsp;km²,<ref name=":3">{{Cita publicación|url=https://www.inec.cr/sites/default/files/documetos-biblioteca-virtual/repoblacionanuario2016-2018-08_1.xls|título=Área en kilómetros cuadrados, según provincia, cantón y distrito administrativo|apellidos=|nombre=Instituto Nacional de Estadística y Censos (INEC)|fecha=2018|publicación=Anuario Estadístico INEC|fechaacceso=|doi=|pmid=|fechaarchivo=10 de octubre de 2020|urlarchivo=https://web.archive.org/web/20201010232234/https://www.inec.cr/sites/default/files/documetos-biblioteca-virtual/repoblacionanuario2016-2018-08_1.xls|deadurl=yes}}</ref> colocándose como el undécimo más extenso de la provincia. Su cabecera es el [[Desamparados (Costa Rica)|distrito de Desamparados]], con categoría de ciudad, y cuenta con un total de trece distritos: Desamparados, [[San Miguel de Desamparados|San Miguel]], [[San Juan de Dios (Costa Rica)|San Juan de Dios]], [[San Rafael Arriba]], [[San Antonio de Desamparados|San Antonio]], [[Frailes (Costa Rica)|Frailes]], [[Patarrá]], [[San Cristóbal (Costa Rica)|San Cristóbal]], [[Rosario de Desamparados|Rosario]], [[Damas (Costa Rica)|Damas]], [[San Rafael Abajo]], [[Gravilias (Costa Rica)|Gravilias]] y [[Los Guido]].
+
+Fundado en 1862, el cantón se caracteriza por ser uno de los más poblados y densos del Gran Área Metropolitana y del país, el cual a lo largo del tiempo, ha recibido un volumen considerable de inmigración desde el campo y otros países recientemente. Por su forma alargada, que se extiende de norte a sur, cuenta con diversos relieves y poblaciones tanto como urbanas, al norte, como rurales, al sur; además, sus distritos más sureños, Frailes y San Cristóbal, integran la llamada [[Zona de los Santos]], una zona geográfica montañosa y en donde predomina el cultivo de [[Coffea|café]]. El cantón cuenta con un [[Índice de Desarrollo Humano]] de 0,753, clasificado como alto.<ref name=":72">{{Cita web|url=http://desarrollohumano.or.cr/mapa-cantonal/index.php|título=Atlas de Desarrollo Humano Cantonal del Costa Rica 2015|fechaacceso=26 de marzo de 2020|sitioweb=desarrollohumano.or.cr|idioma=es-es|fechaarchivo=9 de octubre de 2020|urlarchivo=https://web.archive.org/web/20201009110558/http://desarrollohumano.or.cr/mapa-cantonal/index.php|deadurl=yes}}</ref>
+
+== Toponimia ==
+El término y el nombre actual del cantón, «Desamparados», hace referencia a la patrona de la localidad y de su parroquia, la [[Virgen de los Desamparados]]. La localidad comenzó a recibir este nombre a partir de 1821, cuando a los pobladores del lugar les fue obsequiado una imagen de la virgen, la cual fue colocada dentro de un [[Oratorio (edificio)|oratorio]]. Para 1825, el oratorio ya era conocido como la [[Iglesia de Nuestra Señora de los Desamparados (Desamparados)|Parroquia de Nuestra Señora de los Desamparados]], y para 1841, la cabecera del cantón ya era conocida bajo este nombre.
+
+Anteriormente, a la localidad se le conocía popularmente con el nombre de «Dos Cercas». Este sobrenombre proviene del hecho de que los primeros pobladores de la localidad ubicaron sus hogares a lo largo de un camino que unía a [[Cantón de Aserrí|Aserrí]] con [[San José (Costa Rica)|San José]], separando sus propiedades con cercas de piedra o árboles.<ref name=":0">{{Cita web|url=https://amprensa.com/2016/06/domingo-conozca-origen-del-nombre-del-canton-desamparados/|título=Conozca el origen del nombre del cantón de Desamparados|fechaacceso=26 de septiembre de 2020|apellido=Aguilar|nombre=Ana Yancy|fecha=26 de junio de 2016|sitioweb=AMPrensa|idioma=es}}</ref><ref name=":2">{{Cita web|url=https://ccp.ucr.ac.cr/bvp/mapoteca/CostaRica/generales/atlas_censal/|título=Atlas Censal de Costa Rica|fechaacceso=27 de septiembre de 2020|sitioweb=Biblioteca Virtual del Centro Centroamericano de Población|editor=Universidad de Costa Rica}}</ref>
+
+== Historia ==
+
+=== Orígenes ===
+Las primeras ocupaciones registradas del territorio al que hoy pertenece el cantón de Desamparados se remontan a entre los siglos {{Siglo|III}} y {{Siglo|XVI}} al arribo de los [[España|españoles]]. El territorio en esta época se encontraba ocupado por el antiguo [[Reino Huetar de Occidente]], una nación amerindia y uno de los dos grandes reinos indígenas de la parte central del país, reinado por el Cacique [[Garabito (rey)|Garabito]]. Sin embargo, la región contaba con fuerte influencia del Cacique [[Aczarri]], quien dominaba una gran parte de lo que compone el actual [[cantón de Aserrí]]. Durante la [[Colonización española de América|Conquista]], el territorio que cubre ambas regiones, Aserrí y Desamparados, se conocía como los ''Valles de Aserrí.'' Este cubría también ciertas partes del actual [[cantón de Alajuelita]], y se extendía, de norte a sur, desde el [[río Tiribí]] hasta el cerro Tablazo, cerca del actual [[Patarrá|distrito de Patarrá]].<ref name=":4">{{Cita web|url=https://www.desamparados.go.cr/es/el-canton/historia|título=Historia|fechaacceso=26 de septiembre de 2020|sitioweb=Municipalidad de Desamparados}}</ref>
+
+En 1561, [[Juan de Cavallón y Arboleda]] atravesó el sector occidental del Valle Central y fundó una ciudad a la cual le dio el nombre de [[Garcimuñoz|Castillo de Garcimuñoz]], en recuerdo de su pueblo natal, y la cual se convirtió en la primera capital de la [[Provincia de Nueva Cartago y Costa Rica|provincia]]. La ubicación exacta de donde se situó la localidad es desconocida, sin embargo, algunos historiadores resaltan que esta ciudad pudo haber estado asentada en el territorio del actual cantón, específicamente, entre los distritos de Desamparados, [[San Juan de Dios (Costa Rica)|San Juan de Dios]] y el cantón de Alajuelita.<ref name=":5">{{Cita libro|apellidos=Molina Montes de Oca|nombre=Carlos|enlaceautor=|título=Garcimuñoz: la ciudad que nunca murió: los primeros cien días de Costa Rica|url=https://books.google.co.cr/books?id=YwIVKFnJ_4oC|fechaacceso=26 de septiembre de 2020|año=1993|editorial=Editorial Universidad Estatal a Distancia|isbn=9977647143|editor=|ubicación=|página=|idioma=|capítulo=}}</ref>
+
+En 1562, cuando [[Juan Vázquez de Coronado]] sustituye a Juan de Cavallón y Arboleda como gobernador de la provincia, inicia el traslado de la ciudad de Castillo de Garcimuñoz a la actual ciudad de [[Cartago (Costa Rica)|Cartago]]. Durante este proceso, los conquistadores y sus familias atravesarían la localidad en dirección a Cartago, sin embargo, varias de las familias tomarían la decisión de permanecer en Garcimuñoz o de regresar a la localidad desde Cartago, motivados por las condiciones climáticas y físicas de la localidad, y por consiguiente asentarse ahí. La localidad comenzó a recibir el nombre de «Mata Redonda», después de que [[Pero Afán de Ribera y Gómez]] reemplazara a Juan Vázquez de Coronado como gobernador de la provincia.<ref name=":4" /><ref name=":5" /><ref>{{Cita web|url=https://sites.google.com/site/bibliotecajgm/desamparados/historia|título=Historia|fechaacceso=26 de septiembre de 2020|sitioweb=Biblioteca Pública de Desamparados|fechaarchivo=16 de octubre de 2020|urlarchivo=https://web.archive.org/web/20201016052537/https://sites.google.com/site/bibliotecajgm/desamparados/historia|deadurl=yes}}</ref>
+
+En este tiempo, el ''Camino Real'' o ''Camino de Cavallón'' era un camino que venía de [[Caldera (Costa Rica)|Caldera]], [[Cantón de Esparza|Esparza]], [[Cantón de Atenas|Balsa de Atenas]], [[Piedras Negras (Costa Rica)|Piedras Negras]], [[Pacaca (Costa Rica)|Pacaca]] y por último, Mata Redonda. De aquí se tomaba al este el camino real a Cartago por Salitral o [[San Antonio de Desamparados|San Antonio]], Patarrá, Picacho, [[Tobosi]], [[Cantón de El Guarco|El Guarco]] y de aquí se podía continuar al [[Provincia de Limón|Atlántico]] por [[Ujarrás]], [[Tucurrique]] y [[Cantón de Matina|Matina]], mientras que al sur, este camino llevaba al [[Provincia de Puntarenas|Pacífico]], tomando Desamparados, Aserrí, [[Cantón de Quepos|Quepos]] y [[Cantón de Parrita|Parrita]], al norte, se pasaba el [[río Virilla]], [[Provincia de Heredia|Heredia]] (Cubujuquí) y [[Cantón de Barva|Barva]].
+
+Entre 1570 y 1575, padres [[Orden Franciscana|franciscanos]] fundan las doctrinas de Barva, Aserrí, [[Cantón de Curridabat|Curridabat]], Ujarrás, Pacaca y San Bernardino de Quepos. Así fue como se crearon las denominadas reducciones: Las más importantes, las del Valle Oriental, integradas por Cot, [[Quircot]], [[Tobosi]] y Ujarrás de Cartago y la reducción del Valle Occidental, integradas por Aserrí, Curridabat, Barva y Pacaca.
+
+Entre 1579 y 1587, según el protocolo de Cartago, el gobernador [[Diego de Artieda Chirino y Uclés]] otorgó títulos de propiedad al capitán y conquistador español [[Juan Solano y Díaz de Tapia]], haciéndolo dueño de los territorios que comprenden Patarrá, Aserrí, [[Cantón de Santa Ana (Costa Rica)|Santa Ana]] y lo que hoy es [[Ciudad Colón (Costa Rica)|Ciudad Colón]]. En ese entonces no se hablaba de Desamparados, sino de ''Patarrá'', (posiblemente por el árbol de ''Putarrá'') y de ''Salitral'' (por el [[salitre]] de la Quebrada Caliente) y Aserrí.
+
+Durante el {{Siglo|XVII||s}}, más personas y familias comienzan a poblar el actual territorio del cantón de Desamparados, entre ellos algunos [[agricultor]]es de [[milpa]], [[Saccharum officinarum|caña de azúcar]], [[tabaco]], [[Triticum|trigo]], [[legumbre]]s y [[fruta]]s, así como [[ganadero]]s. Muchas de estas familias provenían de lugares como El Guarco o Cartago, quienes emigraron hacia el Valle Central al aumentar la población de sus localidades originales. A partir de esto, ciudades vallecentralistas como [[San José (Costa Rica)|San José]], [[Heredia (Costa Rica)|Heredia]] y [[Alajuela (ciudad)|Alajuela]], se fundaron y se poblaron.<ref name=":4" /><ref name=":42">{{Cita web|url=https://www.ifam.go.cr/?page_id=363|título=Desamparados|fechaacceso=26 de septiembre de 2020|sitioweb=Instituto de Fomento y Asesoría Municipal|idioma=es}}</ref>
+
+Un camino que, en específico, conectaba al actual Aserrí con San José, comenzó a ser poblado por familias que ubicaron sus hogares a lo largo de este. Las familias delimitaban sus propiedades con cercas de piedra o árboles, y es por ello que, a raíz de esto, la localidad comenzó a ser conocida como «Dos Cercas».<ref name=":0" />
+
+En 1662, [[Salitrillos]] de Aserrí sobresalía por la siembra de trigo y por tener un molino en 1741. Entre los poblados de Aserrí, Barva y Santa Ana, se contaban con once haciendas de ganado y 159 trapiches.
+
+A partir del {{Siglo|XVIII||s}}, la región se fue poblando de aún más habitantes que buscaban un lugar que les proporcionara leña, agua, pastos y tierras fértiles para sus cultivos, así que habitan el actual Desamparados que estaba rodeado de los ríos Damas, Tiribí y Cucubres y las pequeñas lomas de ''Salitral ''y ''San Antonio'', así como las montañas del sur, que son pequeñas estribaciones de la [[Cordillera de Talamanca]].
+
+En 1821, el caserío de Dos Cercas ya tenía gran importancia y se había planificado muy bien sus primeros cuadrantes, de conformidad con las normas que ordenaba la vetusta ''"Ley de Indias para la formación de cabildos"'', además de que ya contaba con más población que otros asentamientos como Patarrá, San Antonio, Aserrí y el mismo Curridabat. Fue por eso que se construyó un pequeño oratorio que el Padre Esquivel, cura párroco de San José, bendijo el 24 de diciembre de 1821, regalando una pequeña imagen de la [[Virgen de los Desamparados]], la cual se comenzó a venerar desde entonces. Esta imagen, de 50 centímetros de alto, se le llamó "la Peregrina", por cuanto recorría los distritos de la parroquia para recaudar fondos para la fiesta patronal, los segundos domingos de mayo.<ref name=":4" />
+
+El 22 de octubre de 1824, los vecinos de Dos Cercas firmaron una declaración jurada para poner el pequeño caserío bajo la advocación de la virgen y al año siguiente, se fundó la [[Iglesia de Nuestra Señora de los Desamparados (Desamparados)|Parroquia de Nuestra Señora de los Desamparados]]; ello dio motivo a que la localidad lentamente se fuera llamando ''pueblo de los Desamparados'' y posteriormente Desamparados.<ref name=":0" />
+
+En la división territorial administrativa de Costa Rica de 1836, aparece Desamparados como un pueblo en la provincia de San José. Posteriormente, el [[1.º de diciembre]] de 1841, Desamparados pasa a convertirse en un barrio del departamento de San José, y al cual lo conformaban la mayor parte del actual cantón de Desamparados, así como una parte del oeste de los cantones de Cartago y El Guarco, así como del este del cantón de Alajuelita. El barrio de Desamparados quedaba dividido en cinco cuarteles: El Centro (hoy el distrito de Desamparados), San Antonio, San Felipe (hoy el distrito de San Miguel), Patarrá y Palo Grande (hoy el distrito de San Rafael Abajo).<ref name=":2" />
+
+En la [[Constitución Política de Costa Rica de 1847|Constitución Política]] del 30 de noviembre de 1848, se estableció una nueva división política y administrativa que contempló la nomenclatura de provincias, cantones y distritos parroquiales. De entre los cantones de la provincia de San José, se encontraba el cantón de «Curridabat y Aserrí», al cual la mayor parte del actual cantón de Desamparados integraba.<ref name=":2" /><ref>{{Cita web|url=https://www.tse.go.cr/pdf/ifed/creacion_provincias_costa_rica.pdf|título=Creación de las provincias de la República de Costa Rica|fechaacceso=26 de septiembre de 2020|sitioweb=Tribunal Supremo de Elecciones}}</ref>
+
+En ese entonces, la provincia de San José tenía a San José como ciudad capital, y dos villas: [[Escazú (Costa Rica)|Escazú]] y Desamparados, los demás eran pueblos, de tal manera que ser villa ya era un privilegio de pocos, además la población de Desamparados ya contaba con un gran prestigio por la belleza geográfica de su territorio y por su arte, cultura y religión que era sobresaliente, además por los aires de progreso del pujante territorio, que a la vez experimentaba un curioso detalle: muchas de sus familias salieron de la villa para fundar caseríos hacia el sur, que luego se convirtieron en cantones, como [[Cantón de Dota|Dota]], en la [[Zona de los Santos]], Alajuelita y Pérez Zeledón. Esto le valió a Desamparados ser llamado ''“Madre de Pueblos”.<ref name=":2" />''<ref>{{Cita web|url=https://www.nacion.com/opinion/foros/desamparados-madre-de-pueblos/FWMZUA7WPFGKJP7ERO25DFKPJM/story/|título=Desamparados, madre de pueblos|fechaacceso=27 de septiembre de 2020|fecha=25 de febrero de 2012|sitioweb=La Nación|idioma=es}}</ref>
+
+En el gobierno de [[Juan Rafael Mora Porras]], el 4 de julio de 1855, mediante la Ley n.º 20, se le otorgó el título de villa a la población de Desamparados, cabecera del nuevo cantón posteriormente creado.<ref name=":42" />
+
+=== Cantonato ===
+Por medio de la Ley n.° 22 del 4 de noviembre de 1862, Ley de Ordenanzas Municipales, se creó Desamparados como cantón de la provincia de San José, designándose como cabecera la villa de Desamparados, mas no se fijaron los distritos de este nuevo cantón. A pesar de esto, el territorio siguió bajo la administración de la Municipalidad de San José. Cabe destacar además la extensión del nuevo cantón, que ostentó dentro de su jurisdicción a localidades como los actuales cantones de Curridabat, Aserrí, [[Cantón de Acosta|Acosta]], [[Cantón de Tarrazú|Tarrazú]], Dota, [[Cantón de León Cortés Castro|León Cortés Castro]] y Pérez Zeledón, otorgándole así un total de 3 023,99&nbsp;km². Desamparados procede del cantón de San José, establecido este último, en ley n.° 36 del 7 de diciembre de 1848.<ref name=":2" /><ref>{{Cita web|url=http://wvw.nacion.com/zurqui/2004/noviembre/24/zurqui7.html|título=Así nació Desamparados|fechaacceso=27 de septiembre de 2020|fecha=2003|sitioweb=Zurquí, La Nación}}</ref>
+
+Una vez que Desamparados fue nombrado como cantón, sus habitantes iniciaron un movimiento para declarar la autonomía plena e independencia del cantón de San José. Entre ellos se encontraban Jesús Ureña, Leo Madrigal y Nicanor Garbanzo, quienes formaron un [[Gobierno local|cabildo]].<ref name=":4" />
+
+El 7 de agosto de 1868, mediante el Decreto Legislativo n.° 20, Tarrazú (conjunto a los actuales cantones de Pérez Zeledón, Dota y León Cortes Castro) se separa del cantón de Desamparados y se erige como cantón. Posteriormente, el 31 de marzo de 1871, mediante el Decreto n.° 11, Curridabat se separa del cantón de Desamparados y se une al cantón de San José.<ref name=":6">{{Cita web|url=https://www.imprentanacional.go.cr/editorialdigital/libros/historiaygeografia/division_17.pdf|título=División Territorial Administrativa de la República de Costa Rica|fechaacceso=27 de septiembre de 2020|sitioweb=Imprenta Nacional}}</ref>
+
+Mediante la Ley n.° 53 del 23 de diciembre de 1876, se le otorgó autonomía municipal al cantón de Desamparados. El 1 de enero de 1877, se llevó a cabo la primera sesión del [[Concejo Municipal de Desamparados]], integrado por los regidores propietarios Mariano Monge Guillén, como presidente, Juan Monge Guillén, como vicepresidente, y Juan Monge Reyes, como fiscal. El secretario municipal fue Juan Monge López.<ref name=":42" />
+
+El 27 de noviembre de 1882, mediante el Decreto n.° 3, Aserrí se separa del cantón de Desamparados y se erige como cantón.<ref name=":6" />
+
+El 24 de julio de 1918, por medio de la Ley n.º 28, la villa de Desamparados recibe el título de ciudad. Sin embargo, como esta Ley se promulgó durante el gobierno de [[Federico Alberto Tinoco Granados|Federico Tinoco Granados]], un gobierno de facto, se volvió a promulgar otro decreto que nombra a Desamparados como ciudad, este el 20 de julio de 1926.<ref name=":42" />
+
+El 8 de agosto de 1929, mediante el Acuerdo n.º 267, se crea el sétimo distrito de Patarrá, segregado del distrito de San Miguel.
+
+En 1950, se crean los distritos de [[San Cristóbal (Costa Rica)|San Cristóbal]] y [[Rosario de Desamparados|Rosario]], ambos segregados del [[Frailes (Costa Rica)|distrito de Frailes]].
+
+El 8 de octubre de 1968, mediante el Decreto n.º 33, se crea el décimo [[Damas (Costa Rica)|distrito de Damas]], segregado del distrito de Patarrá.
+
+El 11 de octubre de 1968, mediante el Decreto n.º 34, se crea el undécimo [[San Rafael Abajo|distrito de San Rafael Abajo]], segregado del [[San Rafael Abajo|distrito de San Rafael Abajo]].
+
+El 23 de noviembre de 1992, mediante el Decreto Ejecutivo n.º 21752-G, se crea el duodécimo [[Gravilias (Costa Rica)|distrito de Gravilias]], segregado del distrito de Desamparados.
+
+El 22 de octubre de 2003, mediante el Decreto Ejecutivo n.º 3180-G, se crea el decimotercer [[Los Guido|distrito de Los Guido]], segregado del distrito de Patarrá.<ref name=":6" />
+
+== Gobierno local ==
+
+=== Alcaldía ===
+El 4 de febrero del 2024, en las [[Elecciones municipales de Costa Rica de 2024]], fue electa alcaldesa María Antonieta Naranjo Brenes, del [[Partido Liberación Nacional ]], quien asumió el cargo de alcaldesa de Desamparados el 1.º de mayo del 2024.<ref name=":8">{{Cita web|url=https://tse.go.cr/nuestros_gobernantes.htm|título=Tribunal Supremo de Elecciones, Nuestros Gobernantes|fechaacceso=2 de mayo de 2020|sitioweb=tse.go.cr}}</ref>
+
+<center>
+'''Alcaldes desde las [[Elecciones municipales de Costa Rica de 2002|elecciones de 2002]].<ref name=":12">{{Cita web|url=http://www.tse.go.cr/declaratorias.htm|título=Tribunal Supremo de Elecciones, Declaratorias definitivas|fechaacceso=19 de enero de 2019|sitioweb=www.tse.go.cr}}</ref>'''
+{| class="wikitable"
+!Periodo
+!Nombre
+!Partido
+|-
+|[[Elecciones municipales de Costa Rica de 2002|2003-2007]]
+|Carlos Padilla Corella
+| rowspan="8" |[[Archivo:Bandera de Partido Liberación Nacional.svg|22px]] [[Partido Liberación Nacional|PLN]]
+|-
+|[[Elecciones municipales de Costa Rica de 2006|2007-2011]]
+| rowspan="2" |Maureen Fallas Fallas
+|-
+|[[Elecciones municipales de Costa Rica de 2010|2011-2016]]
+|-
+|[[Elecciones municipales de Costa Rica de 2016|2016-2020]]
+| rowspan="2" |[[Gilbert Jiménez Siles]]
+|-
+|[[Elecciones municipales de Costa Rica de 2020|2020-2022]]
+|-
+|2022-2024 
+|Hazel Torres Hernández 
+|-
+|[[Elecciones municipales de Costa Rica de 2024|2024-2028]]
+|rowspan="2" |María Antonieta Naranjo Brenes
+|}
+</center>
+
+=== Concejo municipal ===
+{{AP|Concejo Municipal de Desamparados}}Al igual que la elección de la alcaldía y vicealcaldías, los integrantes del Concejo municipal son electos popularmente cada 4 años. El [[Concejo Municipal de Desamparados]] se integra por un total de 11 regidores, propietarios y suplentes, y 13 síndicos, propietarios y suplentes, y cuyo presidente es el Regidor propietario Eduardo Guillén Gardela, del [[Frente Amplio (Costa Rica)|Frente Amplio]], y su vicepresidenta es la regidora propietaria Karla Vanessa Mora Rodríguez, del [[Partido Liberación Nacional]].<ref>{{Cita web|url=https://www.desamparados.go.cr/es/municipalidad/concejo-municipal|título=Concejo Municipal|fechaacceso=27 de septiembre de 2020|sitioweb=Municipalidad de Desamparados}}</ref> Actualmente está integrado por:
+
+{| align=center class="wikitable"
+|-
+! Colspan=2| Partido  !!  Número de regidores !! Regidores propietarios !! Regidores suplentes  !! Cantidad de Votos Emitidos !! Porcentaje
+|-
+|<center>[[Archivo:Bandera de Partido Liberación Nacional.svg|50px]]</center>
+|[[Partido Liberación Nacional]] || 3|| Gabriel Gustavo Picado Oviedo	<br /> Karla Vanessa Mora Rodríguez  <br /> Juan Chacón Castillo 
+|| Vinicio Valverde Chacón  <br />  Zaira Romero Fallas <br />  Manuel Araya Badilla || 8.522 || 25,61%
+|-
+|<center>[[Archivo:Bandera_del_Partido_Unidad_Social_Cristiana.svg|50px]]
+</center>
+|[[Partido Unidad Social Cristiana]]|| 2 || Jonathan Mauricio Chavarría Sibaja 	<br />María Isabel Llamas Echeverría || Randall Sibaja Miranda	<br /> Carmen Martínez Jackson  || 6.191 || 18,60%
+|-
+|<center>[[Archivo:Bandera_Partido_Progreso_Social_Democrático_Costa_Rica.svg|50px]]
+</center>
+|[[Partido Progreso Social Democrático]]|| 1 ||Ricardo Arce Díaz|| William Solera Alfaro || 4.044 || 12,15%
+|-
+|
+<center>[[Archivo:Bandera_Partido_Liberal_Progresista_Costa_Rica.svg|50px]]
+</center>
+|[[Partido Liberal Progresista (Costa Rica, 2016) | Partido Liberal Progresista]]|| 1 ||Luis Guillermo Gómez Godínez||Javier Umaña Valenciano || 3.206 || 9,63%
+|-
+|<center>[[Archivo:Bandera_Partido_Nuestro_Pueblo_Costa_Rica.svg|50px]]
+</center>
+|[[Partido Nuestro Pueblo]]|| 1 ||Luis José Flores Jiménez||Adrián Monge Monge || 2.286 || 6,87%
+|-
+|<center>[[Archivo:Bandera Partido Nueva República Costa Rica.svg|50px]]</center>
+|[[Partido Nueva República]]|| 1 ||Kristhian Arturo Chacón Ureña||Walter Garro Araya || 2.098 || 6,30%
+|-
+|<center>[[Archivo:Flag of Frente Amplio (Costa Rica) 2013.svg|50px]]
+</center>
+|[[Frente Amplio (Costa Rica) | Frente Amplio]]|| 1 ||Eduardo Guillén Gardela|| Mario Raitt Núñez || 1.900 || 5,71%
+|-
+|<center>[[Archivo:Bandera Partido Ecológico Comunal Costarricense Costa Rica.svg|50x50px]]</center>
+|[[Partido Ecológico Comunal Costarricense|Partido Ecológico Comunal]]|| 1 ||Jesús Rodríguez Gutiérrez  || Marcial Rodríguez Carvajal || 1.590 || 4,77%
+|-
+|}
+
+== Organización territorial ==
+El cantón de Desamparados se divide administrativamente en trece distritos, siendo la cabecera el distrito de Desamparados, y por ello, es uno de los cantones con más distritos del país. Cada distrito, según el [[Régimen municipal de Costa Rica]], posee un Concejo de distrito el cual se encarga de velar por sus temas correspondientes, y se integra por los síndicos, propietarios y suplentes, y los concejales.<ref name=":23">{{Cita web|url=http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=74467&nValor3=91983&strTipM=TC|título=Declaratoria oficial para efectos administrativos la División Territorial Administrativa de la República N.º 37559-G|autor=Sistema Costarricense de Información Jurídica}}</ref>
+
+Es importante destacar que las comunidades de calle Fallas y San Jerónimo, pertenecientes al distrito central de Desamparados, han ido creciendo de una manera tan acelerada que se planea considerarlos como posibles distritos electorales en un futuro cercano, además, existe un proyecto de Ley para declarar a San Juan de Tobosi como el distrito número 14, el proyecto n.° 16 396 del diario La Gaceta n.º 218.<ref>{{Cita web|url=http://alcance.gaceta.go.cr/pub/2013/01/22/ALCA14_22_01_2013.pdf|título=Alcance digital La Gaceta n.° 14|fechaacceso=2 de marzo de 2014|urlarchivo=https://web.archive.org/web/20190102050852/http://alcance.gaceta.go.cr/pub/2013/01/22/ALCA14_22_01_2013.pdf|fechaarchivo=2 de enero de 2019}}</ref>
+
+<Center>
+{| class="wikitable"
+! colspan="5" |Distritos del cantón de Desamparados
+|-
+!#
+!Distrito
+!Área (km²)<ref name=":3" />
+!Población (2016)<ref name=":1" />
+!
+|-
+|1
+|[[Desamparados (Costa Rica)|Desamparados]]
+|3,31
+|36 794 hab.
+| rowspan="13" |[[Archivo:División_administrativa_Desamparados.png|alt=|373x373px]]
+|-
+|2
+|[[San Miguel de Desamparados|San Miguel]]
+|21,36
+|36 199 hab.
+|-
+|3
+|[[San Juan de Dios (Costa Rica)|San Juan de Dios]]
+|2,98
+|22 691 hab.
+|-
+|4
+|[[San Rafael Arriba]]
+|3,21
+|17 305 hab.
+|-
+|5
+|[[San Antonio de Desamparados|San Antonio]]
+|2,10
+|10 856 hab.
+|-
+|6
+|[[Frailes (Costa Rica)|Frailes]]
+|19,57
+|4 380 hab.
+|-
+|7
+|[[Patarrá]]
+|16,09
+|13 846 hab.
+|-
+|8
+|[[San Cristóbal (Costa Rica)|San Cristóbal]]
+|25,47
+|4 530 hab.
+|-
+|9
+|[[Rosario de Desamparados|Rosario]]
+|14,77
+|3 561 hab.
+|-
+|10
+|[[Damas (Costa Rica)|Damas]]
+|2,57
+|14 790 hab.
+|-
+|11
+|[[San Rafael Abajo]]
+|2,01
+|25 901 hab.
+|-
+|12
+|[[Gravilias (Costa Rica)|Gravilias]]
+|2,94
+|16 555 hab.
+|-
+|13
+|[[Los Guido]]
+|3,01
+|28 455 hab.
+|}<br />
+</Center>
+
+== Geografía ==
+=== Localización ===
+El cantón de Desamparados es el tercero de la [[provincia de San José]] y tiene una extensión territorial de 118,26&nbsp;km², y se encuentra ubicado parcialmente dentro del [[Valle Central (Costa Rica)|Valle Central]] de Costa Rica. El cantón tiene una configuración geográfica en forma de L, con dos sectores ampliamente diferentes. Mientras los distritos del norte y más cercanos a la capital tienen una alta densidad demográfica urbana, los del sur (en particular Rosario, Frailes y San Cristóbal) tienen densidades menores.<ref name=":3" /><center>
+{| class="wikitable" width="40%" border="2" align="center"
+|-----
+| width="20%" align="center" |''Noroeste:'' [[Cantón de Alajuelita|Alajuelita]]
+| width="30%" align="center" |''Norte:'' [[Cantón de San José|San José]], [[Cantón de Curridabat|Curridabat]]
+| width="20%" align="center" |''Noreste:'' [[Cantón de Curridabat|Curridabat]], [[Cantón de La Unión|La Unión]]
+|-----
+| width="20%" align="center" |''Oeste:'' [[Cantón de Aserrí|Aserrí]]
+| width="30%" align="center" |[[Archivo:Rosa de los vientos.svg|75px]]
+| width="20%" align="center" |''Este:'' [[Cantón de Cartago|Cartago]], [[Cantón de El Guarco|El Guarco]]
+|-----
+| width="20%" align="center" |''Suroeste:'' [[Cantón de Aserrí|Aserrí]], [[Cantón de León Cortés Castro|León Cortés Castro]]
+| width="30%" align="center" |''Sur:'' [[Cantón de León Cortés Castro|León Cortés Castro]]
+| width="10%" align="center" |''Sureste:'' [[Cantón de Dota|Dota]], [[Cantón de El Guarco|El Guarco]]
+|}
+</center>
+
+=== Relieve ===
+El cantón de Desamparados cuenta con diferentes relieves que varían a lo largo de su territorio. El norte del cantón, que se encuentra urbanizado en casi su totalidad, cuenta con un relieve generalmente plano y con unas cuantas cimas, mientras que el centro y sur del cantón se caracteriza por su complejo relieve. El cantón tiene una elevación media de 1 161 metros sobre el nivel de mar ([[Altitud|{{esd|m s. n. m.}}]]). Las elevaciones sobre el nivel del mar, del centro urbano de los poblados de distritos del cantón, son las siguientes: Desamparados, a 1 155 {{esd|m s. n. m.}}, San Miguel, a 1 215 {{esd|m s. n. m.}}, San Juan de Dios, a 1 190 {{esd|m s. n. m.}}, San Rafael Arriba, a 1180 {{esd|m s. n. m.}}, San Antonio, a 1170 {{esd|m s. n. m.}}, Frailes, a 1590 {{esd|m s. n. m.}}, Patarrá, a 1205 {{esd|m s. n. m.}}, San Cristóbal, a 1710 {{esd|m s. n. m.}}, Rosario, a 1350 {{esd|m s. n. m.}}, Damas, a 1180 {{esd|m s. n. m.}}, San Rafael Abajo, a 1150 {{esd|m s. n. m.}}, Gravilias, a 1160 {{esd|m s. n. m.}}, y Los Guido, a 1260 {{esd|m s. n. m.}}
+
+El punto más alto del cantón se encuentra en el extremo sur del cantón, en el distrito de San Cristóbal, y cerca de la frontera con los cantones de Dota y El Guarco. Cuenta con una elevación de 2365 {{esd|m s. n. m.}}, aproximadamente.<ref>{{Cita web|url=https://es-cr.topographic-map.com/maps/6wbf/Costa-Rica/|título=Mapa topográfico de Costa Rica|fechaacceso=27 de septiembre de 2020|sitioweb=topographic-map.com|idioma=es}}</ref>
+
+=== Clima ===
+Dada su extensión geográfica, el cantón cuenta con una diversidad de microclimas y esto hace que en distritos como Frailes se cuente con una producción cafetalera de alta calidad.
+
+El territorio está cubierto de bosques con flora y fauna variada y abundante. La Loma San Antonio, en el distrito de San Antonio, el cerro Salitral y las montañitas de San Juan de Dios, protegen naturalmente al cantón de los vientos provenientes del [[Océano Atlántico|Atlántico]]. Cuenta con un clima fresco todo el año, con temperatura de entre 20 a 24Cº y poca humedad ambiental. Estas bondades naturales, aunadas a una precipitación anual de 3 169,4 ml, no solo fertilizaban su suelo, sino que hacían distinguirse a Desamparados por sus fuentes de agua natural y sus ríos totalmente limpios, actualmente el ''Balneario Patarrá ''o ''Montaña del Sapo y la Culebra'' se nutre de las fuentes naturales del cerro Salitral.
+
+=== Hidrografía ===
+Los principales ríos que atraviesan Desamparados son:
+
+* [[Río Tiribí]]
+* Río Jorco
+* Río Guatuso
+* Río El Llano San Miguel
+* Río Damas
+* Río Tarrazú
+* Río Azul
+* Río Quebrada Honda
+* Río Jericó
+* Río Grande de Candelaria
+* Río Santa Elena
+* Río Cañas
+
+=== Actividad Sísmica ===
+
+Debido a su ubicación tectónica, este municipio es vulnerable a sufrir daños ocasionados por actividad sísmica generada por fallamientos locales, principalmente debido a su proximidad a las fallas de Frailes, La Cangreja de Puriscal y Agua Caliente de Cartago. Aunque actualmente su actividad sísmica se considera de nivel moderado, es importante tener en cuenta que ha sido permanente, con una cantidad significativa de microtemblores. 
+
+El último temblor importante, que llegó a causar daños moderados en la zona de Frailes y Santa Elena, fue el del 9 de agosto de 1991, con magnitud de 4.9 escala de magnitud momento.
+
+Es importante recalcar que el evento sísmico ocurrido en mayo de 1910 que destruyó la ciudad de Cartago, se generó en una fuente sísmica cuyo límite hacia el noroeste posiblemente se extiende hasta la región cercana a los poblados de San Miguel y Guatuso, que fueron afectados por los llamados temblores del Tablazo que sucedieron en abril de 1910. 
+
+Los eventos sísmicos generados en la zona de subducción (choque entre placas Coco, Caribe y Nazca-Panamá), pueden ser sentidos de manera considerable, sin embargo la posibilidad de que causen daños graves es remota. 
+
+En cuanto a los efectos que produciría un evento sísmico cercano al Cantón de Desamparados, se puede mencionar: 
+
+Amplificaciones de la intensidad sísmica en la región norte (poblados de Desamparados, San Antonio, Patarra, Quebrada Honda, Higuito, etc.), donde características del suelo como aluviones, areniscas y demás, favorecen a que se presente esta clase de fenómeno. 
+
+Por otro lado, hacia el sector sur (Jericó, Frailes, Guadarrama, Rosario, Bustamante, San Cristóbal Sur, La Lucha, etc.), las fuertes pendientes junto con los tipos de rocas característicos del lugar (areniscas y rocas volcánicas muy alteradas), son determinantes para que en caso de eventos sísmicos se genere una cantidad considerable de deslizamientos de diferentes magnitudes, poniendo en peligro líneas vitales (carreteras, líneas de transmisión eléctrica, puentes) e inclusive a la misma población.
+
+=== Deslizamientos e Inestabilidad de suelo s=== 
+
+La mayor parte de los problemas de inestabilidad de suelos se presentan hacia el sur del cantón desamparadeño, donde como se ha mencionado anteriormente, la fuerte pendiente y el tipo de roca favorecen este tipo de fenómeno. 
+
+Las zonas de mayor actividad serían: 
+
+Carretera Interamericana Sur del cruce de San Cristóbal a Las Vueltas en la carretera que comunica San Cristóbal Sur y Norte, con Frailes y Bustamante; las partes altas de las Cuencas de los ríos Jorco, Cañas, Damas y la comunidad de El Rosario.
+
+Se debe hacer hincapié en que además de la actividad sísmica, se han presentado otros factores que han acelerado la formación de deslizamientos en la región, entre ellos se puede destacar: 
+
+Fuertes lluvias.
+
+Deforestación y Quemas.
+
+Cortes de carretera mal diseñados.
+
+Creación de tajos sin control.
+
+Erosión en los pies de las laderas por cauces de ríos. 
+
+Aunque el número de ellos es considerable, en general los deslizamientos que se han presentado en el cantón de Desamparados se han caracterizado por ser de dimensiones relativamente pequeños; salvo el caso del deslizamiento en el Tablazo, ubicado a unos 3 km al sur del poblado de Valverde en San Miguel, el cual afectó la vía secundaria que comunica a Jericó con San Miguel (calle Valverde). 
+
+El deslizamiento es el resultado de la conjugación entre las características como pendiente fuerte (mayor a 30.º), tipo de litología, presencia de gran cantidad de diaclasas y el efecto detonante de fuertes precipitaciones asociadas con la Tormenta Tropical Alma.
+
+La corona de unos 100 metros de longitud y los daños directos causados por el deslizamiento, se asocian con los flujos de lodo que descendieron por la quebrada Reyes la cual desfoga en el río Jorco. 
+
+El efecto principal fue un intenso proceso erosivo en las márgenes de la quebrada, ensayando el preexistente y depositando el material deslizado sobre el sistema fluvial. 
+
+Por otro lado, aunque los terrenos bajos del sector norte, no son vulnerables a ser afectados directamente por deslizamientos, se debe considerar la posibilidad de que represamientos de material se generen en las partes altas de las cuencas, como en el caso del río Jorco, Cañas y Damas; generando avalanchas que afectarían las partes bajas, sobre todo aquellas áreas vulnerables a las inundaciones. 
+
+Entre los efectos de tienen los deslizamientos, podemos mencionar: 
+
+ Caminos y puentes dañados. 
+
+ Casas y vehículos sepultadas. 
+
+ Flujos de lodo, causadas por represamientos en ríos. 
+
+ Daños a los cultivos.
+
+ Pérdidas humanas, forestales y animales.
+
+ Cierre de escuelas, centros de salud, parques, instalaciones deportivas, iglesias, templos, comercios.
+
+== Demografía ==
+{{Cita demográfica de región de Costa Rica}}
+
+Del total de la población estimada en 2016, 36 794 habitantes, que representa el 15,60 % del total de la población del cantón, se concentra en el distrito central de Desamparados, el más poblado. Le sigue, el distrito de San Miguel con un 15,35%, Los Guido con un 12,06%, San Rafael Abajo con un 10,98%, San Juan de Dios con un 9,62%, San Rafael Arriba con un 7,34%, Gravilias con un 7,02%, Damas con un 6,27%, Patarrá con un 5,87%, San Antonio con un 4,60%, San Cristóbal con un 1,92%, Frailes con un 1,86% y Rosario con un 1,51% del total de población.
+
+De acuerdo con el Atlas de Desarrollo Humano Cantonal de Costa Rica 2016, el cantón cuenta con una [[Anexo:Cantones de Costa Rica por Esperanza de Vida|esperanza de vida]] de 77,8 años y una alfabetización del 98,7 %.<ref name=":72"/>
+
+De acuerdo al censo nacional del 2011, el 8,9 % de la población nació en el extranjero. El mismo censo destaca que de las viviendas ocupadas, el 66,0 % se encontraba en buen estado y había problemas de hacinamiento en el 4,8% de las viviendas. El 93,6% de sus habitantes vivían en áreas urbanas. Además, la escolaridad promedio alcanza los 8,9 años. El mismo censo detalla que la población económicamente activa se distribuye de la siguiente manera:
+* Sector Primario: 2,2%
+* Sector Secundario: 19,6%
+* Sector Terciario: 78,2%
+
+== Infraestructura ==
+
+=== Carreteras ===
+
+Las principales carreteras del cantón de Desamparados son las número 2016 y 209. La primera inicia al norte del distrito de Desamparados y conecta a este con el distrito de San Miguel y con el cantón de El Guarco. La segunda une al distrito de Desamparados con los distritos de San Rafael Arriba y San Juan de Dios, y estos con el cantón de Aserrí.
+
+=== Transporte público y privado ===
+
+Los servicios de autobuses son brindados por varias autobuseras, entre estas Autotransportes Desamparados (que opera las rutas de localidades como San Rafael Arriba, Gravilias, Calle Fallas, La Capri y Los Guido; además de algunas localidades del cantón de Aserrí), Autotransportes San Antonio (que opera las rutas de localidades como San Antonio y Patarra, además del distrito josefino de San Francisco de Dos Ríos), Lared (que opera las rutas de localidades como San Rafael Abajo, San Rafael Arriba y San Juan de Dios; además del barrio de Poás de Aserrí y de los barrios josefinos de barrio México, barrio La Cruz y barrio Escalante) y Busmi (que opera las rutas de varias localidades de San Miguel).
+
+También hay servicios hacía Frailes desde San José y desde Cartago. Además, existe un servicio desde Jericó (procedente desde Loma Larga de Corralillo de Cartago) hacia San José.
+
+Desde octubre del 2013, funciona la [[Interlinea]] Desamparados-Moravia, que es administrada por una alianza estratégica entre las empresas Autotransportes Desamparados, Autotransportes San Antonio, Autotransportes Cesmag y Autotransportes Moravia, además desde noviembre de 2019 funciona la Interlinea San Juan de Dios-Desamparados, que es administrada por una alianza estratégica entre las empresas Lared y Autotransportes Desamparados.
+
+Por otra parte, existen multinacionales como [[Amazon]] y [[Teleperformance]] que sub contratan empresas de microbús como Soluciones 506 para transportar a sus empleados a la zona franca, siendo el Parque Centenario y el MultiCentro paradas estratégicas para que dichos empleados aborden o desciendan del microbús.
+
+Adicionalmente se cuenta con el servicio de Taxis los cuales son de color rojo y tienen permiso del Consejo de Transporte Público aunque debido al mal servicio brindado durante décadas las personas actualmente prefieren utilizar plataformas como [[Uber]], [[Didi]] e [[InDriver]], las cuales funcionan en el Casco Urbano del cantón, aunque algunas como Didi restringen el servicio a partir de las 8:30 p.&nbsp;m. por considerar que es una zona peligrosa.
+
+=== Iglesias ===
+
+==== Parroquia de Nuestra Señora de los Desamparados ====
+La [[Iglesia de Nuestra Señora de los Desamparados (Desamparados)|Parroquia Nuestra Señora de los Desamparados]] se ubica frente al parque Central de Desamparados, en el centro de la cabecera cantonal, y su diseño está inspirado por la [[Catedral de San Pablo de Londres|Catedral de San Pablo]] de [[Londres]], obra de Sir [[Christopher Wren]]. Fue construida en el año de 1824.
+
+[[Archivo:IglesiaDesamparados.JPG|miniaturadeimagen|225x225px|[[Iglesia de Nuestra Señora de los Desamparados (Desamparados)|Parroquia Nuestra Señora de los Desamparados]], en el [[Desamparados (Costa Rica)|distrito de Desamparados]].]]
+==== Iglesia de El Rosario ====
+Fue declarada patrimonio arquitectónico-histórico de Costa Rica en el año 2000, y fue construida en 1949. Se encuentra ubicado en la comunidad de El Rosario, a 35&nbsp;km al sureste de San José. La localidad es de perfil agrícola, inmersa en una zona que aún se encuentra inmersa en la actividad cafetalera. Fue restaurada con una inversión de ₡30 millones de colones con aportes del Centro de Patrimonio, la empresa Numar y la comunidad. El templo presenta un estilo ecléctico, con ciertos rasgos neoclásicos, está construida en madera de cedro y latón liso.
+
+[[Archivo:Iglesia.Rosario.Desamparados.CR.jpg|miniaturadeimagen|225x225px|Iglesia de El Rosario, en el [[Rosario de Desamparados|distrito de Rosario]].]]
+
+== Cultura ==
+
+=== Símbolos ===
+
+==== Bandera ====
+La bandera del cantón de Desamparados fue oficializada en el año 2007 mediante un acuerdo del Concejo municipal.
+
+Desde los primeros años del {{Siglo|XX||s}}, se utilizan los colores actuales para la Bandera de Desamparados: el celeste y blanco con una franja delgada color oro. Años anteriores, la bandera siempre tuvo los colores celeste y blanco en forma transversal, con una división entre ambos color oro, pero debido a la destrucción y pérdida de actas municipales, a partir de 1958 se fueron desvirtuando los colores celeste y blanco, y que en su lugar, se utilizaron el azul y blanco, sin la franja color oro.
+
+Dada la situación, el 29 de agosto de 2007, el Concejo acuerda tomar como bandera del cantón de Desamparados la bandera color blanco con una línea celeste transversal de la parte superior izquierda hasta la esquina opuesta, con dos cintas color oro que la delimitan.
+
+==== Escudo ====
+El escudo de Desamparados fue oficializado durante la primera administración de [[Óscar Arias Sánchez]] (1986- 1990), cuando el [[Instituto de Fomento y Asesoría Municipal]] (IFAM) ejerció un proyecto de confeccionar todos los escudos de los cantones del país.
+
+Entre algunos significados presentes en el escudo se encuentran: La montaña, que muestra parte de la geografía de Desamparados; el campo verde y el sol radiante, que hacen alusión a su clima agradable durante todo el año; la imagen de la Escuela Joaquín García Monge, que representa la importancia que siempre ha tenido la educación y la cultura para el cantón; la cúpula de la iglesia de Nuestra Señora de Los Desamparados; que simboliza los valores morales y espirituales; el pico y la pala, que representan el trabajo constante y dedicado de sus habitantes; y las dos ramas de café unidas por un lazo celeste, que representan la principal actividad agrícola desarrollada en muchos de sus distritos: el cultivo del [[café]].<ref>{{Cita web|url=https://www.desamparados.go.cr/es/el-canton/simbolos|título=Sus símbolos {{!}} Municipalidad de Desamparados|fechaacceso=1 de enero de 2019|sitioweb=www.desamparados.go.cr}}</ref>
+
+=== Educación ===
+[[Archivo:Escuela Joaquin Garcia Monge, Desamaparados, San Jose, Costa Rica.jpg|miniaturadeimagen|225x225px|Escuela [[Joaquín García Monge]], en el [[Desamparados (Costa Rica)|distrito de Desamparados]].]]
+En 2014, en el cantón de Desamparados había 72 600 personas que asistían a la educación regular. De este total, el 40,8% asistían al nivel de instrucción primaria, el 36,1% a secundaria, el 17,4% a estudios superiores, y el 5,7% a otros tipos de niveles de instrucción. Por otra parte, un 62,1% de las personas mayores a 15 años asistieron por lo menos durante un año a la secundaria.
+
+Es importante mencionar que el municipio alberga la sede número 42 de la [[Universidad Estatal a Distancia]]
+
+<ref>{{Cita web|url=https://www.inec.cr/sites/default/files/documentos/educacion/estadisticas/resultados/reeducaccenso2011-10.pdf.pdf|título=Costa Rica: Indicadores de Educación y de Contexto|fechaacceso=27 de septiembre de 2020|año=2014|sitioweb=Instituto Nacional de Estadística y Censos|fechaarchivo=2 de diciembre de 2020|urlarchivo=https://web.archive.org/web/20201202183613/https://www.inec.cr/sites/default/files/documentos/educacion/estadisticas/resultados/reeducaccenso2011-10.pdf.pdf|deadurl=yes}}</ref>
+
+=== Deportes ===
+[[Archivo:Estadio-cuty-monge-aerea-stadium-source.jpg|miniaturadeimagen|225x225px|[[Estadio Jorge Hernán "Cuty" Monge]], en el [[Desamparados (Costa Rica)|distrito de Desamparados]].]]
+El cantón de Desamparados es sede de los clubs de fútbol San Rafael Abajo FC y [[Orión FC|Orión F.C.]], ambas en [[LINAFA]] (Liga Nacional de Fútbol Aficionado). El cantón también sobresale al ser campeones nacionales en  , taekwondo, boxeo, balónmano y fútbol sala.
+
+En el cantón se encuentra la Villa Olímpica de Desamparados, un área recreativa especializada en el deporte creada por el Gobierno Central y la Municipalidad para el disfrute de las familias. Alberga actividades culturales, recreativas y del ámbito social para el disfrute de las familias. También se encuentra el [[estadio Jorge Hernán "Cuty" Monge]].<ref>{{Cita web|url=https://www.desamparados.go.cr/es/servicios/villa-olimpica|título=Villa Olímpica|fechaacceso=1 de enero de 2019|sitioweb=Municipalidad de Desamparados}}</ref>
+
+=== Salud ===
+En el cantón se encuentra el CAIS Dr. Marcial Fallas Díaz, en el distrito de Desamparados, el cual pasó de ser un EBÁIS o centro de salud de tercel nivel a un Centro de Atención Integral de Salud  de segundo nivel a partir del 2014, brindando servicios de especialidades como maternidad, radiología, odontología, oftalmología, dermatología, cirugía menor, farmacia, vacunación, emergencias, entre otros.
+
+En cuanto a los EBÁIS, la mayoría de  los distritos como San Antonio, San Miguel, San Rafael Arriba, Los Guido San Juan de Dios y San Rafael Abajo, El Rosario, San Cristóbal y Frailes cuentan con un centro de salud de tercer nivel que atiende medicina general y algunas emergencias pero de ser necesario, el paciente es remitido al CÁIS o bien al Hospital San Juan de Dios, al Hospital México o al Hospital Dr. Rafael Ángel Calderón Guardia.
+
+=== Medios de Comunicación ===
+
+Los desamparadeños suelen informarse mediante la televisión, redes sociales, prensa escrita y la radio.
+
+Entre los medios de comunicación de prensa escrita presentes en Desamparados, destaca el medio digital ''El Desamparadeño'' (de corte [[Centroderecha política | centroderechista]]).<ref>{{Cita web|url=http://www.periodicodesamparados.com/|título=El Desamparadeño|fechaacceso=27 de septiembre de 2020|sitioweb=}}</ref> 
+
+Otro medio regional que ha venido ganando auge es ''El Meridiano Sur'' (de corte [[Extrema izquierda | ultraizquierdista]]) propiedad del ex regidor y comunicador José Hernández del [[Partido Ecológico Comunal]] el cual en un inicio se enfocaba en los dristritos del sur, pero tomó un auge más cantonal a partir del 2016.
+
+En cuanto a radio, destaca la [[radio comunitaria]] Radio Libertad, que pertenece a la Fundación Ciudadelas de Libertad, la cual a su vez es concesionaria de las radioemisoras en FM CRC 89.1, Teletica Radio 91.5 y 103.1 FM. 
+
+Radio Libertad transmite en un 75% del territorio [[Costa Rica|costarricense]] y se puede sintonizar en la frecuencia 570 AM, en horario de lunes a domingo de 6:00 AM a 8:00 PM, y las 24 horas del día en [http://radiolibertad570am.com www.radiolibertad570am.com]
+
+Otras emisoras ampliamente escuchadas por los desamparadeños como Monumental 93.5 FM, Zeta 95.1 FM, Best 103.5 FM, Exa 102.7 FM, La Mejor 99.1 FM, Momentos 94.3 FM y Radio Disney 101.1 FM forman parte del conglomerado Central de Radios, el cual a su vez tiene alianzas con la televisora '''Repretel'''.
+
+Adicionalmente, la comunidad Protestante Evangélica sintoniza emisoras como Stereo Visión Internacional 98.3 FM, Faro del Caribe 97.1 FM, Radio Fides 93.1 FM además de emisoras on line como Enlace Juvenil, Influencia Positiva Radio+, Kyrios Radio, Radio Lira, Radio Unción entre otras.
+
+En cuanto a medios Educativos y Académicos, cabe mencionar que la [[Universidad de Costa Rica]] cuenta con su emisora Radio Universidad transmitida en 87.0 AM así como su página web https://radios.ucr.ac.cr y finalmente la [[Universidad Estatal a Distancia]] cuenta con su propia emisora Onda UNED la cual se transmite por internet a través de https://www.ondauned.com
+
+Puede sintonizar las emisoras de radio costarricense en 
+https://radios.co.cr
+
+=== Sitios de interés ===
+
+* Parroquia Nuestra Señora de los Desamparados
+* Iglesia de El Rosario
+* Museo Joaquín García Monge
+* Municipalidad de Desamparados
+* Villa Olímpica de Desamparados
+* Mall Zona Centro
+* Mall Multicentro
+*Centro Comercial Expreso
+* Zona Franca Las Brisas
+* Cárcel de Mujeres Vilma Curling Rivera
+* Parque Central "Centenario" de Desamparados
+
+=== Personajes ===
+
+* [[Joaquín García Monge]] (1881-1958): [[Escritor]], [[intelectual]], [[educador]] y [[político]]. [[Benemérito de la Patria]] desde 1958 y parte de uno de los movimientos literarios más relevantes de Costa Rica, el [[Repertorio Americano]].
+* [[Máximo Fernández Alvarado]] (1858-1933): Político y [[abogado]]. Fue uno de los principales líderes del [[Partido Republicano Nacional|Partido Republicano]], así como [[diputado]] del [[Congreso Constitucional de Costa Rica]] en varias ocasiones. Candidato a la presidencia de la República en las elecciones costarricenses de [[Elecciones presidenciales de Costa Rica de 1902|1902]], [[Elecciones presidenciales de Costa Rica de 1906|1906]] y [[Elecciones presidenciales de Costa Rica de 1913|1913]].
+* [[Joel Campbell|Joel Campbell Samuels]] (1992-): [[Fútbol|Futbolista]] que juega como [[Delantero#Extremo|extremo derecho]] en el [[Club León]], de la [[primera división de México]], así como para el [[Deportivo Saprissa]] y la [[Selección de fútbol de Costa Rica|selección de Costa Rica]].
+* [[Hernán Medford|Hernán Medford Bryan]] (1968-):  Futbolista y [[entrenador]]. [[Director técnico]] del [[Club Sport Cartaginés]], de la [[primera división de Costa Rica]].
+* [[Carlos Guzmán Bermúdez]] (1957-): [[Músico]], [[compositor]], [[Productor discográfico|productor]], [[Arreglo (música)|arreglista]] y [[director musical]]. Ganador del Premio Nacional de Música Aquileo Echeverría en 2008.
+* [[Walter Muñoz Céspedes]] (1957-): [[Médico]] y político. [[Diputado]] de la [[Asamblea Legislativa de Costa Rica]] en el periodo 2018-2022 y seis veces candidato presidencial del [[Partido Integración Nacional]].
+* [[Jorge Hernán Monge]] (1928-2019): Futbolista que posee el récord del mayor número de anotaciones en un solo encuentro en la Primera División de Costa Rica.
+* [[Natalia Álvarez|Natalia Álvarez Sandoval]] (1988-): [[Presentador]]a y [[comunicador]]a que trabaja para la empresa ESPN. Obtuvo el segundo lugar en [[Miss Costa Rica 2009]].
+* [[Jordan Smith|Jordan Smith Wint]] (1991-): [[Fútbol|Futbolista]] que juega de [[Defensa (fútbol)|lateral derecho]] en la [[Asociación Deportiva San Carlos]], de la Primera División de Costa Rica.
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+* [http://www.desamparados.go.cr/ Municipalidad de Desamparados]
+
+{{Control de autoridades}}
+[[Categoría:Cantones de la provincia de San José]]

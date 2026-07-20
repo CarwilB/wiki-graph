@@ -1,0 +1,65 @@
+{{Info/Município do Brasil
+<!-- GeoID=5201603 -->
+<!-- Cabeçalho -->
+| nome                 = Araçu
+| foto                 = 
+| leg_foto             = 
+| apelido              = 
+<!-- Dados gerais -->
+| brasão               = Brasão de Araçu.png
+| bandeira             = Bandeira de Araçu.png
+| link_brasão          = 
+| link_bandeira        = 
+| link_hino            = 
+| aniversário          = 14 de novembro
+| fundação             ={{nowrap|{{dtlink|14|11|1958|idade}}}}
+| gentílico            =araçuense 
+| lema                 = <!-- NÃO É SLOGAN DE GESTÃO OU CAMPANHA ELEITORAL -->
+| prefeito             = Milton Lemes de Paula<ref>{{citar web |url=https://politica.estadao.com.br/eleicoes/2020/candidatos/go/araçu|título=Candidatos a vereador Araçu-GO|publicado=Estadão|acessodata =1 de junho de 2021}}</ref>
+| partido              = [[Partido Social Democrático (2011)|PSD]]
+| fim_mandato          = 2024
+<!-- Localização -->
+| mapa                 = Goias Municip Aracu.svg
+| latP                 = S | latG = 16 | latM = 21 | latS = 28
+| lonP                 = O | lonG = 49 | lonM = 40 | lonS = 51
+| estado               = Goiás
+| mesorregião          = [[Mesorregião do Centro Goiano|Centro Goiano]]
+| data_mesorregião     = IBGE/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+| microrregião         = [[Microrregião de Anápolis|Anápolis]]
+| data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+|região_intermediária=|região_imediata=| região_metropolitana = 
+| vizinhos             = [[Inhumas]], [[Caturaí]], [[Avelinópolis]], [[Anicuns]], [[Capelinha]], [[Itauçu]] e [[Itaberaí]]
+| dist_capital         = 
+65
+| área                 = 294.6
+| área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 out. 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+| população            = 3785
+| data_pop             = Censo IBGE/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+| altitude             = 692 
+| clima                = tropical
+| sigla_clima          = 
+<!-- Indicadores -->
+| idh                  = 0.693 <!--favor manter o formato-->
+| data_idh             = [[PNUD]]/2010 <ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/arquivos/ranking-idhm-2010.pdf|titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=31 de julho de 2013}}</ref>
+| pib                  = {{formatnum:25471.334}} mil
+| data_pib             = IBGE/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+| pib_per_capita       = 6422.42
+| data_pib_per_capita  = IBGE/2008<ref name="IBGE_PIB"/>
+}}
+'''Araçu''' é um [[Municípios do Brasil|município]] [[brasil]]eiro do [[Interior de Goiás|interior]] do [[Unidades federativas do Brasil|estado]] de [[Goiás]], [[Região Centro-Oeste do Brasil|Região Centro-Oeste]] do país. Sua população foi estimada em [[2010]] como sendo de 3.785 habitantes.
+
+{{referências}}
+
+==Ligações externas==
+* [http://www.aracu.go.gov.br/ Página da Prefeitura Municipal]
+
+== Ver também ==
+* [[Lista de municípios de Goiás]]
+* [[Lista de municípios do Brasil]]
+
+{{esboço-municípiosbr/Goiás}}
+{{Municípios de Goiás}}
+{{Portal3|Goiás}}
+
+[[Categoria:Municípios de Goiás]]
+[[Categoria:Fundações em Goiás em 1958]]

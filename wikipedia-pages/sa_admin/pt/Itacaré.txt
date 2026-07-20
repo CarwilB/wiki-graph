@@ -1,0 +1,118 @@
+{{Info/Município do Brasil
+<!-- GeoID=2914901 -->
+<!-- Cabeçalho -->| nome = Itacaré
+| apelido = <!-- Dados gerais -->
+| brasão = Itacaré - flago.jpg
+| link_brasão = 
+| link_bandeira = 
+| bandeira = 
+| link_hino = 
+| aniversário = 26 de janeiro
+| fundação = {{nowrap|{{dtlink|26|1|1732|idade}}}}
+| gentílico = [[wikt:itacareense|itacareense]]<ref>{{Citar web|url=https://www.ibge.gov.br/cidades-e-estados/ba/itacare.html|título=Cidades e Estados {{!}} Itacaré|publicado=IBGE|acessodata=3 de junho de 2026}}</ref>
+| lema = 
+| prefeito<!--enciclopédia, sem apelidos! --> = Edson Arante Santos Mendes (Nego de Saronga)<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/eleicoes/2024/noticia/2024/12/31/prefeito-de-itacare-ba-toma-posse-nesta-quarta-1o-veja-lista-de-vereadores-eleitos.ghtml|título=Prefeito de Itacaré (BA) toma posse nesta quarta (1º); veja lista de vereadores eleitos|publicado=g1|data=31 de dezembro de 2024|acessodata=16 de junho de 2025}}</ref><ref>{{Citar web|url=https://www.otempo.com.br/eleicoes/2024/candidatos/bahia/itacare/prefeito/nego-de-saronga-13|título=Eleições 2024 – Perfil do Prefeito Eleito Nego De Saronga|publicado=O Tempo|acessodata=16 de junho de 2025}}</ref>
+| partido = [[Partido dos Trabalhadores]] [PT]
+| mandato_início = 2025
+| fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+| vereadores = 11
+<!-- Localização -->| mapa = Bahia Municip Itacare.svg
+| latP = S
+| latG = 14
+| latM = 16
+| latS = 40
+| lonP = O
+| lonG = 38
+| lonM = 59
+| lonS = 49
+| estado = Bahia
+| mesorregião = [[Mesorregião do Sul Baiano|Sul Baiano]]
+| data_mesorregião = [[IBGE]]/2008<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+| microrregião = [[Microrregião de Ilhéus-Itabuna|Ilhéus-Itabuna]]
+| data_microrregião = IBGE/2008<ref name="IBGE_DTB_2008" />
+| região_metropolitana = 
+| vizinhos = [[Uruçuca]], [[Ubaitaba]], [[Maraú]] e [[Aurelino Leal]]
+| dist_capital = 422
+<!-- Características geográficas -->| área = 726.265
+| área_ref = <ref name ="IBGE_Área">{{citar web |url=https://cidades.ibge.gov.br/brasil/ba/itacare/panorama|título=Área territorial oficial |autor=|acessodata=10 de junho de 2020|data=2019|publicado=IBGE}}</ref>
+| área_urbana = {{fmtn|3.40}}
+| área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/itacare/panorama |título=Meio Ambiente |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=10 de fevereiro de 2023}}</ref>
+| população = 27704 <!-- MANTER A POPULAÇÃO DO CENSO 2022 -->
+| população_ref = <ref name="IBGE">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/itacare.html|título=Cidades e Estados {{!}} Itacaré|publicado=IBGE|acessodata=14 de novembro de 2025}}</ref>
+| população_est = 29496 <!-- ATUALIZAR AS ESTIMATIVAS AQUI -->
+| data_pop = [[Censo demográfico do Brasil de 2022|Censo de 2022]]
+| altitude = 29
+| população_est_em = 2025<ref name="IBGE">{{Citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/itacare.html|título=Cidades e Estados {{!}} Itacaré|publicado=IBGE|acessodata=14 de novembro de 2025}}</ref>
+| clima = tropical quente e úmido
+| sigla_clima = <!-- Indicadores -->
+| idh = 0.583 <!--favor manter o formato-->
+| data_idh = [[PNUD]]/2010<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=24 de agosto de 2013}}</ref>
+| pib = {{formatnum:426484.10}} mil
+| data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2021/base/base_de_dados_2010_2021_xlsx.zip|titulo=Produto Interno Bruto dos Municípios - 2010 à 2021|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=14 de setembro de 2024}}</ref>
+| pib_pos = [[Lista de municípios da Bahia por PIB|BA: 104º]]
+| pib_per_capita = 14680.53
+| data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+| imagem_montagem = {{multiple image
+ | perrow         = 1/2/2/2
+ | border         = infobox
+ | total_width    = 280
+ | image1 = MARCIO FILHO ITACARE CIDADE ITACARE BAHIA (40933336562).jpg
+ | caption1 = Vista parcial da [[cidade]] de Itacaré
+ | image2 = MARCIO FILHO PRAIA DA TIRIRICA ITACARE BAHIA (40081480755).jpg
+ | caption2 = [[Praia da Tiririca]]
+ | image3 = Mar cinza.jpg
+ | caption3 = Praia do Pontal
+ | image4 = Itacaré - Bahia. (15265624429).jpg
+ | caption4 = Itacaré em 2014
+ | image5 = Itacaré-3 (54388109223).jpg
+ | caption5 = [[Paisagem natural]], em 2025
+ | image6 = Itacaré (54388067404).jpg
+ | caption6 = Paisagem natural, em 2025
+ | color  = white
+ | footer =
+}}
+}}
+'''Itacaré''' é um [[Municípios do Brasil|município brasileiro]] do [[Litoral da Bahia|litoral]] do [[Unidades federativas do Brasil|estado]] da [[Bahia]].
+
+== Topônimo ==
+{{VT|Topônimos de origem tupi no Brasil}}
+O topônimo "Itacaré" se originou do [[Língua tupi|tupi antigo]]: significa "[[jacaré]] de pedra", através da junção dos termos ''itá'' (pedra) e ''îakaré'' (jacaré).<ref>NAVARRO, E. A. ''[[Dicionário de Tupi Antigo|Dicionário de tupi antigo: a língua indígena clássica do Brasil]]''. São Paulo. Global. 2013. p. 571.</ref>
+
+== História ==
+<!-- NÃO COPIE nada para a Wikipédia, não é permitido (©). Mesmo de sites oficiais! Leia: Wikipedia:Coisas a não fazer! Não apague este aviso! -->
+Por volta do ano 1000, a região foi invadida pelos [[tupis]], que expulsaram os antigos habitantes, falantes de [[Língua natural|línguas]] do [[tronco linguístico]] [[macro-jê]], para o interior do continente. No [[século XVI]], quando os primeiros [[europeus]] chegaram à região, ela estava ocupada pela [[etnia]] tupi dos [[tupiniquins]].<ref>BUENO, E. ''Brasil: uma história''. 2ª edição revista. São Paulo. Ática. 2003. p. 19.</ref> No século XVI, o [[jesuíta]] [[Luís da Grã]] fundou uma [[capela]] dedicada a [[são Miguel]]. O jesuíta, então, batizou a povoação ao redor da capela como "São Miguel da [[Barra]] do [[Rio de Contas]]", juntamente com o município de Ubaitaba, que chamava-se Itapira, sede do município de São Miguel da Barra do Rio de Contas.
+
+A povoação foi elevada a sede de município em 1732 e Ubaitaba (até então denominada Itapira), tornou-se seu distrito, por obra de dona Maria Athaíde e Castro, a condessa do Resende, donatária da [[capitania de Ilhéus]].<ref>''Itacaré.com''. Disponível em http://www.itacare.com.br/itacare/portal.php?content=historia. Acesso em 11 de abril de 2015.</ref> O município passou a ter a sua designação atual somente em 1931.
+
+Itacaré e [[Ubaitaba]] foram desmembradas pelo decreto nº 8567 de 27 de julho de 1933.
+
+Alguns eventos estatisticamente improváveis fizeram, de Itacaré, um lugar especial e com alto grau de preservação:
+
+* tem uma formação [[geologia|geológica]] única no [[Região nordeste do Brasil|Nordeste brasileiro]], com uma faixa costeira dotada de solo fértil e [[falésia]]s rochosas, e por isso a [[Mata Atlântica]] avança até o [[mar]].
+* a cultura agrícola predominante foi o [[cacau]] em sistema de [[cabruca]] (um sistema ecológico de cultivo [[agrofloresta]]l), que precisa da sombra da Mata Atlântica para ser plantado, ao contrário da [[cana-de-açúcar]] e do [[café]], em que seria necessário devastar toda a mata.
+* o município cresceu muito entre 1890 e 1940 graças ao cacau, mas, nos [[década de 1940|anos 1940]], o porto da cidade [[Assoreamento|assoreou]] e o lugar ficou isolado, visto que as estradas eram muito ruins. Esse isolamento dificultou o crescimento até a construção da [[Estrada Parque da Serra Ilhéus-Itacaré]] em 1998, a primeira estrada realmente ecológica do país.<ref>{{citar web|url=http://bahia.com.br/atracao/estrada-parque-da-serra-ilheus-itacare/|autor=Bahia.com.br|titulo=Atração » Estrada Parque da Serra Ilhéus-Itacaré|data=|acessodata=5 de abril de 2014}}</ref>
+
+== Demografia ==
+
+=== População ===
+Segundo o [[Censo demográfico do Brasil de 2022|Censo 2022]] do [[Instituto Brasileiro de Geografia e Estatística]] (IBGE), a [[Lista de municípios da Bahia por população (2022)|população]] do município de Itacaré foi de 27 704 habitantes. Já de acordo com a [[Lista de municípios da Bahia por população (2024)|estimativa de 2024]] do instituto, a população foi de 29 337 habitantes.<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/itacare/panorama|titulo=Itacaré {{!}} Panorama {{!}} POPULAÇÃO|acessodata=2025-06-16|website=IBGE}}</ref> 
+
+== Economia ==
+A principal fonte de economia da cidade é o [[ecoturismo]], que responde por mais de 90% do seu [[produto interno bruto]] (PIB). Os principais segmentos turísticos trabalhados são ecoturismo, sol e praia, turismo de aventura e esportivo.<ref>{{citar web|url=http://bahiaeconomica.com.br/noticia/86641,itacare-ganha-centro-de-atendimento-ao-turista.html|autor=Bahia Econômica|titulo=Itacaré ganha centro de atendimento ao turista|data=5 de abril de 2014|acessodata=5 de abril de 2014|arquivodata=7 de abril de 2014|arquivourl=https://web.archive.org/web/20140407092455/http://bahiaeconomica.com.br/noticia/86641,itacare-ganha-centro-de-atendimento-ao-turista.html}}</ref>
+
+== Esporte ==
+A Praia da Tiririca já foi sede da etapa brasileira da [[Liga Mundial de Surfe]]. Ocorreu em 2013 e 2015 e retornou entre 2017 e 2019.<ref>[https://www.folhadapraia.com.br/itacare-volta-a-sediar-etapa-do-mundial-wsl-de-surf/ Itacaré volta a sediar etapa do mundial WSL de Surf] Folha da Praia - acessado em 12 de novembro de 2020</ref><ref>[https://www.metro1.com.br/noticias/esportes/62050,mundial-de-surf-sera-realizado-este-mes-em-itacare Mundial de Surf será realizado este mês em Itacaré] Metro 1 - acessado em 12 de novembro de 2020</ref>
+
+{{Referências}}
+
+== Ligações externas ==
+{{commonscat|Itacaré}}
+* [http://www.itacare.ba.gov.br/ Prefeitura de Itacaré]
+
+{{Municípios da Bahia}}
+{{Portal3|BahiaBahia|geografia}}
+{{Controle de autoridade}}
+
+[[Categoria:Itacaré| ]]
+[[Categoria:Fundações na Bahia do século XVIII]]
+[[Categoria:Topônimos de origem tupi na Bahia]]

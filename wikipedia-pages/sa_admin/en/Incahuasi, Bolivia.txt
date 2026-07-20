@@ -1,0 +1,133 @@
+{{Infobox settlement
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|official_name          = Incahuasi
+|other_name             =
+|native_name            =
+|nickname               =
+|settlement_type        = Town
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          =
+|imagesize              =
+|image_caption          =
+|image_flag             = 
+|flag_size              = 
+|image_seal             =
+|seal_size              =
+|image_shield           =
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              =
+|mapsize                =
+|map_caption            =Location within Chuquisaca Department
+|image_map1             =
+|mapsize1               =
+|map_caption1           =
+|image_dot_map          =
+|pushpin_map            =Bolivia<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position =bottom
+|pushpin_map_caption    =Location within Bolivia
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = Bolivia
+|subdivision_type1      = [[Departments of Bolivia|Department]]
+|subdivision_name1      = [[Chuquisaca Department]]
+|subdivision_type2      = [[Provinces of Bolivia|Province]]
+|subdivision_name2      = [[Nor Cinti Province]]
+|subdivision_type3      = [[Municipalities of Bolivia|Municipality]]
+|subdivision_name3      = Incahuasi Municipality
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           = 
+|leader_name            = 
+|leader_title1          = <!-- for places with, say, both a mayor and a city manager -->
+|leader_name1           =
+|leader_title2          =
+|leader_name2           =
+|leader_title3          =
+|leader_name3           =
+|leader_title4          =
+|leader_name4           =
+|established_title      = <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      =
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         =
+|unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes           =
+|area_total_km2           =<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+|area_water_km2           =
+|area_total_sq_mi         =
+|area_land_sq_mi          =
+|area_water_sq_mi         =
+|area_water_percent       =
+|area_urban_km2           =
+|area_urban_sq_mi         =
+|area_metro_km2           =
+|area_metro_sq_mi         =
+|area_blank1_title        =
+|area_blank1_km2          =
+|area_blank1_sq_mi        =
+<!-- Population   ----------------------->
+|population_as_of               = 2024
+|population_footnotes           = <ref name="resultados2024">{{cite web|access-date=29 April 2025 |date=September 2024 |publisher=Instituto Nacional de Estadística de Bolivia |title=Resultados CPV 2024 |url=https://nubecpv.ine.gob.bo/index.php/apps/onlyoffice/s/fBDwRbxQKgAxegF?fileId=548802}}<!-- auto-translated from Spanish by Module:CS1 translator --></ref>
+|population_note                =
+|population_total               = 16,311
+|population_density_km2         =
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               =
+|population_density_urban_km2   =
+|population_density_urban_sq_mi =
+|population_blank1_title        =Ethnicities
+|population_blank1              =
+|population_blank2_title        =Religions
+|population_blank2              =
+|population_density_blank1_km2 =
+|population_density_blank1_sq_mi =
+<!-- General information  --------------->
+|timezone               = BOT
+|utc_offset             = −04:00
+|timezone_DST           =
+|utc_offset_DST         =
+|coordinates            = {{coord|20|35|S|64|55|W|region:BO|display=inline,title}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            = 2970
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             =
+|blank_info             =
+|blank1_name            =
+|blank1_info            =
+|website                =
+|footnotes              =
+}}
+
+'''Incahuasi''' is a town and municipality in [[Bolivia]], located in the [[Nor Cinti Province]] in the southwest of the [[Chuquisaca Department]]. The municipality covers an area of 1,598.03 km² and has a population of 16,311 (according to the 2024 INE Census).<ref name="resultados2024"/> The town is 426 km from [[Sucre]], the country's capital, and is connected by road.
+
+The municipality of Incahuasi was created on January 26, 1970, during the government of [[Alfredo Ovando Candia]].<ref name=aniversario>{{cite news|access-date=12 July 2019 |date=26 January 2018 |title=Incahuasi cumple 48 años hoy y se enfoca en caminos y agua |url=https://www.deloscintis.com.bo/actualidad/incahuasi/incahuasi-cumple-48-anos-hoy-y-se-enfoca-en-caminos-y-agua.html |work=DeLosCintis}}<!-- auto-translated from Spanish by Module:CS1 translator --></ref>
+
+==See also==
+*[[Cinti Valley]]
+
+== References ==
+{{Reflist}}
+
+{{Chuquisaca Department}}
+
+[[Category:Populated places in Chuquisaca Department]]
+
+{{Chuquisaca-geo-stub}}

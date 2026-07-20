@@ -1,0 +1,103 @@
+{{Info/Assentamento
+<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+ |nome_oficial          = Olá (distrito)
+ |outro_nome             = 
+ |native_name            =  <!-- for cities whose native name is not in English -->
+ |nickname               = 
+ |assentamento_tipo        = [[Distritos do Panamá|Distrito]]
+ |motto                  = 
+<!-- images and maps  ----------->
+ |image_skyline          = 
+ |imagesize              = 
+ |image_caption          = 
+ |image_flag             = 
+ |flag_size              = 
+ |image_seal             = 
+ |seal_size              = 
+ |image_shield           = 
+ |shield_size            = 
+ |image_map              = 
+ |mapsize                = 
+ |map_caption            = 
+ |mapa_alfinete          = Panamá<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+ |mapa_alfinete_posição =right
+ |mapa_alfinete_tamanho =300
+ |mapa_alfinete_legenda =Localização da capital do distrito no Panamá
+<!-- Location ------------------>
+ |coordinates_region     = PA
+ |subdivisão_tipo       = País
+ |subdivisão_nome       = {{flag|Panamá}}
+ |subdivisão_tipo1      = [[Províncias do Panamá|Província]]
+ |subdivisão_nome1      = [[Coclé (província)]]
+ |subdivisão_tipo2      = Capital
+ |subdivisão_nome2      = [[Olá (cidade do Panamá)|Olá]]
+ |subdivision_type3      = 
+ |subdivision_name3      = 
+ |<!-- Politics ----------------->
+ |government_footnotes   = 
+ |government_type        = 
+ |leader_title           = 
+ |leader_name            = 
+ |leader_title1          =  <!-- for places with, say, both a mayor and a city manager -->
+ |leader_name1           = 
+ |established_title      =  <!-- Settled -->
+ |established_date       = 
+<!-- Area    --------------------->
+ |area_magnitude         = 
+ |unit_pref                =Imperial <!--Enter: Imperial, if Imperial (metric) is desired-->
+ |area_footnotes           = 
+ |área_total_km2           =381 <!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+ |area_land_km2            = <!--See table @ Template:Infobox Settlement for details on automatic unit conversion-->
+<!-- Population   ----------------------->
+ |população_em               =2000
+ |population_footnotes           = 
+ |population_note                = 
+ |população_total               =5,671
+ |population_density_km2         = 
+ |population_density_sq_mi       = 
+ |population_metro               = 
+ |population_density_metro_km2   = 
+ |population_density_metro_sq_mi = 
+ |population_blank1_title        =Ethnicities
+ |population_blank1              = 
+ |population_density_blank1_km2 = 
+ |population_density_blank1_sq_mi = 
+<!-- General information  --------------->
+ |timezone               =[[Eastern Time Zone|ETZ]]
+ |utc_offset             = -5
+ |timezone_DST           = 
+ |utc_offset_DST         = 
+ |latd=8|latm=25|lats=12 |latNS=N
+ |longd=80|longm=38|longs=24 |longEW=W
+ |elevation_footnotes    =  <!--for references: use tags-->
+ |elevation_m            = 
+ |elevation_ft           = 
+<!-- Area/postal codes & others -------->
+ |postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+ |postal_code            = 
+ |area_code              = 
+ |blank_name             = 
+ |blank_info             = 
+ |blank1_name            = 
+ |blank1_info            = 
+ |website                = 
+ |footnotes              = 
+}}
+'''Olá''' é um [[Distritos do Panamá|distrito]] da [[província]] de [[Coclé (província)|Coclé]] no [[Panamá]]. A população de acordo com o ([[censo]] [[2000]]) era 5,671 habitantes, perfazendo uma [[densidade demográfica]] de 14,89 hab./km².<ref name="Statoids">{{Citar web|url=https://www.statoids.com/ypa.html|título=Distritos do Panamá|publicado=Statoids|acessodata=10-04-2009}}</ref> O distrito abrange uma área total de 381 km². Sua [[capital]] é a [[cidade]] de [[Olá (cidade do Panamá)|Olá]].<ref name="Statoids"/>
+
+== Divisões administrativas ==
+O distrito está dividido administrativamente nos seguintes ''[[corregimentos do Panamá|corregimentos]]'':
+
+[[Olá (cidade do Panamá)|Olá]] (capital), [[El Copé]], [[El Palmar (Coclé)|El Palmar]], [[El Picacho]] e [[La Pava]].
+
+{{Referências}}
+
+{{coord|8|25|12|N|80|38|24|W|region:PA-2_type:adm1st|display=title}}
+
+{{Distritos do Panamá}}
+
+{{esboço-geopa}}
+
+{{DEFAULTSORT:Ola}}
+[[Categoria:Distritos do Panamá]]

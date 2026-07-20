@@ -1,0 +1,78 @@
+{{Ficha de entidad subnacional
+| nombre             = Doce de Octubre
+| nombre completo    = Doce de Octubre
+| unidad             = [[Departamentos y partidos de la Argentina|Departamento]]
+| tipo_superior_1    = [[Provincias de la Argentina|Provincia]]
+| superior_1         = {{bandera2|Provincia del Chaco}}
+| mapa               = Doce de Octubre (Provincia del Chaco - Argentina).svg
+| mapa_loc           = 
+| capital            = [[General Pinedo]]
+| capital_denominación = [[Capital (política)|Cabecera]]
+| subdivisión        = [[Anexo:Municipios del Chaco|3 municipios]]:<br />[[Gancedo]]<br />[[General Capdevila (Chaco)|General Capdevila]]<br />[[General Pinedo]]
+| superficie         = 2576
+| superficie_puesto  = 8
+| superficie_post    = 
+| población          = 23222<ref name="INDEC">{{cita web |url=https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_indicadores_demograficos.pdf |título=Cuadro 1.4 Provincia del Chaco. Población por sexo registrado al nacer y edad mediana, según departamento. - Año 2022 |publicación=Censo Nacional de Población, Hogares y Viviendas 2022. - Resultados definitivos |editorial=Instituto Nacional de Estadística y Censos (INDEC) |ubicación=Buenos Aires |fecha= Noviembre de 2023 |isbn=978-950-896-632-2 |página=33}}</ref>
+| población_puesto   = [[Anexo:Departamentos de la Provincia del Chaco|14]]
+| población_año      = 2022
+| población_urb      = (2010) 17326<ref name = "City Loc"/>
+| población_post     = 
+| densidad = 9.015<ref name = "City">{{cita web |url=https://www.citypopulation.de/en/argentina/admin/chaco/22036__doce_de_octubre/ |título=Doce de Octubre - Department in Chaco (Argentina) |publicación=Citypopulation |idioma=en |fecha=28 de noviembre de 2023}}</ref>
+| densidad_año = 2022 
+| ciudad_grande      = [[General Pinedo]]
+| capital_población  = (2010) 13042<ref name = "City Loc">{{cita web |url=https://www.citypopulation.de/en/argentina/chaco/22036__doce_de_octubre/ |título=Doce de Octubre - Department in Chaco - Localities|publicación=CityPopulation |fecha=26 de diciembre de 2013 |idioma=inglés}}</ref>
+| capital_coor       = 27_19_31_S_61_16_52_W
+}}
+'''Doce de octubre''' es un departamento en la [[provincia del Chaco]], [[Argentina]].
+
+== Historia ==
+Fue creado el 1 de julio de 1953, mediante la Ley Provincial N.º 6. Esta norma estableció 24 divisiones administrativas en la entonces recientemente creada [[provincia Presidente Perón]], actual provincia del Chaco.{{refn|group=Nota|La Ley Nª 6 de división política de la provincia estableció el nombre "Partido" para cada una de las unidades definidas. En 1972 se promulgó la Ley 1099 por la cual el nombre "Partido" fue reemplazado por "Departamento" en las normas vinculadas al ordenamiento territorial.<ref name= “L1099”>{{cita web |url=https://digesto.legislaturachaco.gob.ar/Documentos/Ley/VistaPublicaLey/300958 |título=SUSTITUYE "PARTIDO" POR "DEPARTAMENTO" EN LS.6; 63; 120 Y 631 |publicación=Poder Legislativo de la Provincia del Chaco}}</ref>}} Al momento de su creación, el departamento Doce de Octubre fue llamado «Partido 12 de Abril».<ref>{{cita web |url=https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2022/08/Leoni-Los-comienzos-del-Chaco-provincializado-2ed.pdf |título=Los comienzos del Chaco provincializado : 1951-1955 |autor= Leoni, María Silvia |editorial=Instituto de Investigaciones Geohistóricas |año=2022 |isbn=978-987-4450-15-9 |página=33 Nota al pie Nº 106}}</ref>{{refn|group=Nota|La fecha 12 de abril recordaba las [[Elecciones provinciales del Chaco de 1953|primeras elecciones]] que realizara la provincia.}}
+
+En diciembre de 1992 se promulgó la Ley provincial 3814 que creaba el [[departamento 2 de Abril]]. Esta nueva unidad se estableció con parte de la superficie de los departamentos Doce de Octubre y [[departamento Fray Justo Santa María de Oro|Fray Justo Santa María de Oro]].<ref>{{cita publicación |url=https://biblioteca.indec.gob.ar/bases/minde/4si20_25.pdf |título=Situación demográfica de la Provincia del Chaco |número= 25-Serie
+análisis demográfico |editorial=Instituto Nacional de Estadística y Censos |página=13 }}</ref>
+
+== Límites ==
+El departamento limita al norte con el [[Departamento Chacabuco (Chaco)|departamento Chacabuco]], al este con el de [[Departamento Mayor Luis Jorge Fontana|Mayor Luis Fontana]], al sur con los de [[Departamento Fray Justo Santa María de Oro|Fray Justo Santa María de Oro]] y [[Departamento 2 de Abril|Dos de Abril]] y al oeste con la [[provincia de Santiago del Estero]].
+
+== Demografía ==
+Cuenta con {{indec|23222|2022}}, lo que representa un incremento promedio anual del 0.36% frente a los {{indec|22281|2010}} del censo anterior.<ref name = "City"/> La mediana de edad se estableció en 28 años.<ref name="INDEC"/>
+
+{{Gráfica de evolución|tipo=demográfica|color_30=blue|nombre= Departamento Doce de Octubre|altura=300|anchura=300|2001|20149|2010|22281|2022|23222|notas=<small>Fuente: censos nacionales del [[INDEC]]</small>}}
+
+== Localidades ==
+La mayor parte de la población se concentra en la [[General Pinedo|ciudad cabecera]] y en la ciudad de [[Gancedo]]. El resto de la población se distribuye en pequeñas localidades de carácter rural o se encuentra dispersa.<ref name = "City Loc"/>
+{| class="wikitable"
+|- bgcolor="#e0e0e0"
+!Cabecera<br><small>(Población 2010)</small>
+!Ciudades<br><small>(Población 2010)</small>
+!Localidades<br><small>(Población 2010)</small>
+|-
+| [[General Pinedo]] <small>({{formatnum|13042}} hab.)</small>
+|
+* [[Gancedo]] <small>({{formatnum|4284}} hab.)</small>
+|
+* [[General Capdevila]] <small>({{formatnum|405}} hab.)</small>
+* [[Mesón de Fierro]] <small>({{formatnum|423}} hab.)</small>
+* [[Pampa Landriel]] <small>({{formatnum|333}} hab.)</small>
+|-|- bgcolor="#f0f0f0"
+|}
+
+== Economía ==
+La economía del departamento Doce de Octubre se basa en el [[sector primario]]. Junto con otros departamentos del centro-oeste de la provincia integra una región conocida como «Domo Agrícola», caracterizada por la producción agrícola. 
+Junto con el sur del departamento Almirante Brown y los departamentos 9 de Julio, Chacabuco, 2 de Abril y General Belgrano conforma un área que concentra el 61% de la superficie en producción de la provincia.<ref>{{cita publicación |url=https://repositorio.inta.gob.ar/xmlui/bitstream/handle/20.500.12123/10601/INTA_CRChacoFormosa_Piedra_D_sector_agropecuario_agroindustrial_provincia_Chaco.pdf?sequence=1&isAllowed=y |título=El sector agropecuario/agroindustrial de la provincia del Chaco |autor1=Piedra, Diana |autor2=Pellerano, Laura |autor3=Tortarolo, Gabriel |autor4=Ordenavía, María Noelia |autor5=D’Angelo, María Leonor |editorial=Instituto Nacional de Tecnología Agropecuaria |año=2020 |páginas=11 y 13}}</ref>
+
+En Doce de Octubre se encuentra el parque solar fotovoltaico La Corzuela, de 15 MW de potencia, desarrollado por [[MSU Argentina]]. En enero de 2025, el [[Ente Nacional Regulador de la Electricidad]] autorizó la conexión al [[Sistema Argentino de Interconexión]] (SADI) en calidad de prestador adicional.<ref>{{cita publicación |url=https://www.boletinoficial.gob.ar/detalleAviso/primera/319147/20241231
+|título=Autorización de acceso a la capacidad de transporte de energía eléctrica en Chaco|website=Boletín Oficial de la República Argentina|fechaacceso=2024-01-17}}</ref><ref>{{cita publicación |url=https://chacodiapordia.com/autorizacion-clave-para-la-energia-solar-generada-por-el-parque-solar-fotovoltaico-charata-i/
+|título=Autorización clave para la energía solar generada por el Parque Solar Fotovoltaico Charata I|website=Chaco Por Día|fechaacceso=2024-01-17}}</ref>
+
+== Turismo ==
+Un acontecimiento importante para la región es la Fiesta Provincial de la Soja, que se celebra en General Pinedo. Al Sur de Gancedo está [[Campo del Cielo]] con rastros de la lluvia de meteoritos.
+
+== Notas == 
+{{listaref|group=Nota}}
+
+== Referencias ==
+{{listaref}}
+
+{{Control de autoridades}}
+[[Categoría:Departamento Doce de Octubre| ]]

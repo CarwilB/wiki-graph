@@ -1,0 +1,287 @@
+{{Info/Município do Brasil
+<!-- GeoID=2917201 -->
+<!-- Cabeçalho -->| nome = Ituaçu
+ | foto   = Igreja de Nossa Senhora do Alívio, Ituaçu.jpg
+ | leg_foto = Igreja de Nossa Senhora do Alívio
+ | apelido = <!-- Dados gerais -->
+ | brasão = Brasão_de_Ituaçu.jpg
+ | bandeira = Bandeira de Ituaçu.jpg
+ | link_brasão =
+ | link_bandeira =
+ | link_hino =
+ | emancipação = {{dtlink|26|8|1897|idade}}
+ | aniversário = 26 de agosto
+ | fundação = {{dtlink|10|4|1862|idade}}
+ | gentílico = [[wikt:ituaçuense|ituaçuense]]
+ | lema   =
+ | prefeito<!--enciclopédia, sem apelidos! --> = Phellipe Ramonn Gonçalves Brito<ref>[https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-ituacu-tomam-posse-veja-lista-de-eleitos.ghtml Prefeito e vereadores de Ituaçu tomam posse] Portal G1 - acessado em 12 de abril de 2021</ref>
+ | partido = [[PSD]]
+ | mandato_início = 2021
+ | fim_mandato = 2028 <!-- INSERIR SOMENTE O ANO FINAL DO MANDATO, SEM COLCHETES ([[ANO]]) - SEM RESPEITAR ESTAS REGRAS A LINHA É INÓCUA  -->
+ | vereadores = 11<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2021/01/01/prefeito-e-vereadores-de-ituacu-tomam-posse-veja-lista-de-eleitos.ghtml|título=Prefeito e vereadores de Ituaçu tomam posse; veja lista de eleitos|publicado=g1|acessodata=16-08-2023}}</ref>
+ | mapa   = Bahia Municip Ituacu.svg
+ | latP   = S
+ | latG   = 13
+ | latM   = 48
+ | latS   = 46
+ | lonP   = O
+ | lonG   = 41
+ | lonM   = 17
+ | lonS   = 49
+ | estado = Bahia
+ | mesorregião = [[Mesorregião do Centro-Sul Baiano|Centro-Sul Baiano]]
+ | data_mesorregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008 |arquivodata=14 de junho de 2020 |arquivourl=https://web.archive.org/web/20200614144326/https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2008/dtb_2008.zip }}</ref>
+ | microrregião = [[Microrregião de Brumado|Brumado]]
+ | data_microrregião = [[IBGE]]/[[2008]]<ref name="IBGE_DTB_2008" />
+ | região_metropolitana =
+ | vizinhos = [[Jussiape]], [[Barra da Estiva]], [[Contendas do Sincorá]], [[Tanhaçu]], [[Brumado]] e [[Rio de Contas (Bahia)|Rio de Contas]]
+ | dist_capital = 525
+<!-- Características geográficas -->| área = 1199.374
+ | área_ref = IBGE/2022<ref name="IBGE_Área">{{citar web |url=https://www.ibge.gov.br/cidades-e-estados/ba/ituacu.html|título=Cidades e Estados|publicado=IBGE|acessodata=16 de agosto de 2023}}</ref>
+ | área_urbana = {{fmtn|3.06}}
+ | área_urbana_ref = [[IBGE]]/2019<ref name="IBGE_Áreaurbananizada2019">{{citar web|url=https://cidades.ibge.gov.br/brasil/ba/ituacu/panorama |título=Meio Ambiente |autor=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=16 de agosto de 2023}}</ref>
+ | população = 18493
+ | data_pop = 2024
+ | população_ref = <ref name="IBGE_POP">{{Citar web|url=https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=41105&t=resultados|título=Estimativas da população residente para os municípios e para as unidades da federação - IBGE|publicado=www.ibge.gov.br|acessodata=12 de junho 2025}}</ref>
+ | altitude = 520
+ | população_pos = [[Lista de municípios da Bahia por população|BA: 184º]]{{·}}[[Lista de municípios da Região Nordeste do Brasil por população|NE: 670°]]{{·}}[[Lista de municípios do Brasil por população|BR: 1892º]] (2022)<ref>{{Citar web|url=https://g1.globo.com/ba/bahia/noticia/2023/06/28/populacao-de-ituacu-ba-e-de-17-914-pessoas-aponta-o-censo-do-ibge.ghtml|título=População de Ituaçu (BA) é de 17.914 pessoas, aponta o Censo do IBGE|publicado=g1|acessodata=16-08-2023}}</ref>
+ | clima  = tropical com estação seca
+ | sigla_clima = Aw
+<!-- Indicadores -->| idh = 0.570 <!--favor manter o formato-->
+ | data_idh = [[PNUD]]/[[2010]]<ref name="PNUD_IDH_2010">{{citar web |url=http://www.pnud.org.br/atlas/ranking/Ranking-IDHM-Municipios-2010.aspx |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2010 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=24 de agosto de 2013}}</ref>
+ | pib    = {{formatnum:256803.36}} mil
+ | data_pib = [[IBGE]]/[[2021]]<ref name="IBGE_PIB">{{citar web |url=https://ftp.ibge.gov.br/Pib_Municipios/2021/base/base_de_dados_2010_2021_xlsx.zip|titulo=Produto Interno Bruto dos Municípios - 2010 à 2021|publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=12 de junho 2025}}</ref>
+ | pib_pos = [[Lista de municípios da Bahia por PIB|BA: 202°]]{{·}}[[Lista de municípios do Brasil por PIB|BR: 3055°]]
+ | pib_per_capita = 13448.72
+ | data_pib_per_capita = [[IBGE]]/[[2021]]<ref name="IBGE_PIB"/>
+ | padroeiro = [[Nossa Senhora do Alívio]]
+ | site   = https://www.ituacu.ba.gov.br/
+}}
+'''Ituaçu''' é um [[Unidades federativas do Brasil|município]] [[brasil]]eiro no [[ente federativo|estado]] da [[Bahia]], localizado no sudoeste do estado, na [[Serra Geral (Bahia)|Serra Geral]].
+
+== História ==
+A região em que se formou o município de Ituaçu era povoada pelos povos indígenas Maracaiares e Tapajós<ref name=":0">{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/ituacu/historico|titulo=Ituaçu: História & Fotos|acessodata=2023-11-04|website=cidades.ibge.gov.br}}</ref>. Pouco se tem registros dos povos originários da região, ausentes na maioria dos arquivos históricos e sem pesquisas arqueológicas na localidade, restando apenas as escassas narrativas dos bandeirantes e colonizadores portugueses, dizimando os povos indígenas e liberando as rotas em busca de ouro que foram encontrando em [[Rio de Contas (município)|Minas do Rio de Contas]], [[Jacobina]] e [[Minas Gerais]], e outros metais preciosos encontrados na [[Chapada Diamantina]].
+
+A partir de 1720, sob o comando de [[André da Rocha Pinto]], os bandeirantes dominaram os indígenas e se estabeleceram na região<ref name=":0" />.
+
+Em 1732 o Coronel [[André da Rocha Pinto]], proveniente da Freguesia de Nossa Senhora do Desterro do Outeiro Redondo, (atual município de [[São Félix (Bahia)|São Felix]]), ganhou glebas de terra nas localidades Ovelha, Ribeirão da Furna e Brejo Grande por conta de suas incursões nos sertões da Bahia para combater os indígenas da região. Na aldeia dos Maracaiares, o Coronel e o seu filho, Sebastião da Rocha Pinto, estabeleceram as primeiras edificações e denominaram a localidade de Brejo Grande, pela característica da região estar cercada de pântanos<ref name=":1">{{Citar web|url=https://memoria.bn.br/DocReader/docreader.aspx?bib=364568_14&pasta=ano%20195&pesq=&pagfis=19444|titulo=Jornal do Commercio (RJ) - 1950 a 1959 - DocReader Web|acessodata=2023-11-04|website=memoria.bn.br}}</ref>.
+
+[[André da Rocha Pinto]] continuou as bandeiras de dominação indígena descendo o [[rio de Contas]], acabou morto pelos indígenas Aimorés. Sebastião da Rocha Pinto permaneceu em Brejo Grande com sua esposa e seus nove filhos<ref name=":1" />.
+
+De 1780 a 1800 a região começou a receber imigrantes nacionais e estrangeiros, sobretudo provenientes da Freguesia de São Sebastião do Sincorá, fundando as seguintes fazendas: Ribeirão, Riachão, Palmeiras, Bicudo, Angicos e outras. Em 1806 os irmãos Brito Gondim, provenientes da Vila do Príncipe de Sant'Ana de Caetité (atual [[Caetité]]), compraram do [[Conde da Ponte]] a fazenda Ticum, atual Tucum. Em 1823 os Guimarães, provenientes da Vila do Rio de Contas, fugindo da luta de [[Mata-Maroto]], fundaram a fazenda Baixa Grande<ref name=":1" />.
+
+Em 1827 cria-se o Arraial do Brejo Grande pela lei 15 de Novembro de 1827. A partir deste momento, o distrito passa a ter capacidade para a vida política e administrativa<ref name=":0" />. É também desta época a criação da Capela Nossa Senhora do Alívio, filial da Freguesia de São Sebastião do Sincorá<ref name=":2">BARBOSA, Katia Maria de Aguiar (2008). ''Um educador negro na chapada diamantina:'' A história ainda não contada. Dissertação (Mestrado em Educação e Contemporaneidade). Departamento de Educação - DEDC/Campus I, Universidade Estadual da Bahia, Salvador, 2008.</ref>.
+
+Em meados da Segunda Metade do Século XIX, Brejo Grande começa a lutar pela emancipação e passa por grandes transformações antes e após a emancipação política em 1867: Criação da Freguesia de Brejo Grande pela Resolução n. 882 de 10 de Abril de 1862<ref name=":3">{{citar livro|título=Descripções Praticas da Província da Bahia|ultimo=AGUIAR|primeiro=Durval Vieira de|editora=Typographia do "Diário da Bahia"|ano=1888|local=Salvador|página=154-158}}</ref>; Transformação da Capela em Igreja Matriz Nossa Senhora do Alívio e criação da Paróquia Nossa Senhora do Alívio, desmembrada da Freguesia de São Sebastião do Sincorá no mesmo ano de 1862<ref name=":2" /> ; Criação da delegacia de Brejo Grande em 1867<ref>{{Citar web|url=https://memoria.bn.br/DocReader/DocReader.aspx?bib=130605&pesq=Sincor%C3%A1&pagfis=4777|titulo=Relatorio dos Trabalhos do Conselho Interino de Governo (BA) - 1823 a 1889 - DocReader Web|acessodata=2023-11-04|website=memoria.bn.br}}</ref>; Elevação da Freguesia para Vila Agrícola de Nossa Senhora do Alívio do Brejo Grande pela Lei Provincial nº 988, de 9 de outubro de 1867, com território desmembrado da Vila de Santa Izabel do Paraguassú (atual [[Mucugê]])<ref name=":0" /> ; Criação da agência de Correios em 1873; Criação da Aula Noturna para o Ensino Primário de Adultos e Escravos em 1873, e posteriormente transformada na primeira instituição de ensino denominada Escola Pública da Vila de Brejo Grande em 1875<ref name=":2" />.
+
+Em 1872 ocorre o primeiro Censo Geral do Brasil. Pelo Censo temos Brejo Grande subdividido em duas Paróquias: a Paróquia de São Sebastião do Sincorá com 7.714 pessoas livres e 843 escravos e a Paróquia de Nossa Senhora do Alívio do Brejo Grande com 5.533 pessoas livres e 1.098 escravos<ref>{{citar web|url=https://biblioteca.ibge.gov.br/visualizacao/livros/liv25477_v3_ba.pdf|titulo=Recenseamento do Brazil em 1872|data=1872|acessodata=04/11/2023|website=IBGE}}</ref>.
+
+No final do Século XIX, Brejo Grande recebeu dois viajantes de grande importância histórica pelas minuciosas descrições relatadas na localidade.
+
+Em 1888 Brejo Grande recebe a visita de [[Durval Vieira de Aguiar|Durval Vieira Aguiar]] que compõe o seguinte quadro: O município possuía 15.188 habitantes. A Vila possuía 300 casas com edificação baixa e sofrível, 1.800 moradores, 02 escolas primárias, duas praças, boa Igreja Matriz, e feira com comércio animado aos sábados<ref name=":3" />.
+
+Em 1893 Brejo Grande recebe a visita de [[Francisco Vicente Viana|Francisco Vicente Vianna]]. O político faz um relato minucioso da localidade descrevendo sua geografia, a relação de Brejo Grande com outras Vilas e com a Capital da Bahia, as características urbanísticas, a economia, entre outros<ref name=":4">{{Citar periódico |url=https://www2.senado.gov.br/bdsf/handle/id/221732 |título=Memoria sobre o estado da Bahia |data=1893 |acessodata=2023-11-04 |ultimo=Vianna |primeiro=Francisco Vicente |lingua=pt-BR}}</ref>.
+
+Entre as características urbanísticas descritas por Vianna em 1893 destacam-se: edificações feias e baixas, mas aceiadas, caiadas e algumas envidraçadas; ruas planas, não calçadas, algumas largas e outras estreitas; quatro praças: do Mercado, da Matriz, da Escola, e da Cadeia; duas escolas públicas e três particulares; dois cemitérios, sendo um desativado dentro da Vila e outro a um quilômetro de distância<ref name=":4" />.
+
+Na economia, Vianna destacou: Comércio forte aos sábados em que vende produtos para a região e para a Capital com exportação de café, algodão, pele de gado e de cabra. Além disso, aponta cultura de cana, fumo, feijão, milho, mandioca, algodão, arroz e café, bem como indústria de cal, salitre, pólvora e diferentes tecidos de algodão, entre outros<ref name=":4" />.
+
+Em 1897, por força da Lei Estadual nº 216, de 26 de agosto de 1897, alterou-se [[Toponímia|topônimo]] da localidade de Vila Agrícola de Nossa Senhora do Alívio do Brejo Grande para cidade de Ituaçu<ref name=":0" />.
+
+=== Os conflitos sociais ===
+Após o período áureo em meados do Século XIX, com o fim do [[Ciclo do ouro|Ciclo do Ouro]] em [[Rio de Contas (município)|Rio de Contas]], diamantes e pedras preciosas em [[Mucugê]], [[Lençóis|Lençois]] e região, acrescidos da fome de 1890 e da seca de 1893, o interior da Bahia entra em recessão e decadência. Várias localidades e povoados foram abandonados e cidades históricas perderam seus prestígios e status. Neste período, mais da metade da população sertaneja nordestina migrou para São Paulo (60% da população)<ref name=":5">{{Citar web|url=https://memoria.bn.br/DocReader/docreader.aspx?bib=066940&pasta=ano%20191&pesq=Ituassu&pagfis=125|titulo=Bahia Illustrada (BA) - 1917 a 1933 - DocReader Web|acessodata=2023-11-04|website=memoria.bn.br}}</ref>. Posteriormente várias localidades recomeçaram o seu crescimento populacional, embora não chegassem a alcançar o status do período áureo, além de dar início a um ciclo de pobreza geral.
+
+Derivados da crise econômica do sertão nordestino no Brasil, e em especial da decadência geral da riqueza aurífera e de metais preciosos, a Chapada Diamantina e região foram palcos de intensos conflitos sociais precursores do que viriam a formar o [[Cangaço]] durante a Primeira República. Entre os conflitos sociais no interior da Bahia, neste período, destacaram-se o epílogo de [[Canudos]], os conflitos das Lavras Diamantinas, as ocorrências criminais em Ituaçu, [[Vitória da Conquista]], região do [[rio São Francisco]] e outros lugares<ref name=":5" />.
+
+Na segunda metade do Século XIX e início do Século XX, Ituaçu exercia uma forte influência política na região. Entretanto, a rivalidade interna dos conflitos das famílias Silva e Gondim passaram a tomar dimensões que extrapolaram as duas famílias adquirindo contornos políticos cada vez mais extensos com alianças formadas com as famílias Cauaçu e Cesário<ref>{{Citar periódico |url=http://bdor.sibi.ufrj.br/handle/doc/450 |título=Uma comunidade rural do Brasil antigo: (aspectos da vida patriarcal no sertão da Bahia nos séculos XVIII e XIX) |data=1956 |acessodata=2023-11-04 |ultimo=Filho |primeiro=Santos |ultimo2=Castro |primeiro2=Lycurgo de}}</ref>, dividindo não só o município, mas as Lavras Diamantinas e o interior baiano com a incorporação cada vez maior de outras famílias influentes na região sertaneja da [[Chapada Diamantina]] e arredores, cujo expoente culminou na formação do banditismo formado por [[Anésia Cauaçu]] em Jequié<ref name=":6">{{Citar livro|url=https://books.google.com.br/books?id=qMKbuHJbLRQC&pg=PA21&lpg=PA21&dq=%22sebasti%C3%A3o+da+rocha+pinto%22&source=bl&ots=d8QQzMlDqT&sig=ACfU3U3930-BMtIe6DtjrM8nUSMXbd5X9A&hl=pt-BR&sa=X&ved=2ahUKEwjl6PCokMnpAhVsIrkGHYqbCT8Q6AEwBHoECAoQAQ#v=onepage&q&f=false|título=Anésia cauaçu|ultimo=Aílton|primeiro=Domingos|data=2011|editora=Via Litterarum editora|lingua=pt}}</ref>, Zezinho dos Laços em Ituaçu<ref name=":6" />, Marcionillo de Souza em Maracás<ref>{{Citar periódico |url=https://repositorio.ufba.br/handle/ri/11260 |título=De tropeiro a coronel: ascensão e declínio de Marcionillo Antônio de Souza, (1915-1930) |data=2009 |acessodata=2023-11-04 |ultimo=Novaes |primeiro=João Reis |lingua=pt-BR}}</ref>, e [[Horácio de Matos]] na Chapada Velha<ref name=":7">{{Citar periódico |url=https://repositorio.ufba.br/handle/ri/34954 |título=Tecelões da (des)ordem: cotidiano e policiamento nos sertões da Bahia (1891-1930) |data=2021-05-26 |acessodata=2023-11-04 |ultimo=Novaes |primeiro=João Reis}}</ref>.
+
+Nos primeiros anos do Século XX, a reputação de Ituaçu na Bahia da [[Primeira República Brasileira|Primeira República]] não era das melhores e os conflitos sociais trouxeram grande incômodo ao Governo da Bahia. A primeira expedição em 1891 foi derrotada pelos jagunços locais. Em 1902 o Governador [[Severino Vieira|Severino dos Santos Vieira]] encaminha a segunda expedição e nomeia o delegado regional Methodio Coelho para apurar os fatos e restabelecer a ordem da cidade, preocupados que o episódio pudesse desgastar ainda mais a imagem da recém-República, temendo que o massacre de um novo [[Canudos]] viesse a se repetir<ref name=":7" />.
+
+=== As investidas educacionais ===
+Nas décadas seguintes, com o declínio da economia do ouro e diamante da [[Chapada Diamantina]] e, ainda mais, por Ituaçu não fazer parte diretamente da rota do ouro e minérios preciosos, e ainda por sofrer represálias do Governo Estadual rebaixando a Comarca de Brejo Grande para se integrar à Comarca de [[Maracás]] e, posteriormente, Comarca de [[Brumado]]<ref>{{citar livro|título=Bandeirantes e Sertanistas na Chapada Diamantina|ultimo=GUIMARÃES|primeiro=Ordalvio|editora=Tipografia Projeto|ano=2005|local=Salvador}}</ref>, mas ainda na expectativa de ver seu território cortado pelas linhas da Viação Férrea Federal do Leste Brasileiro - VFFLB, Ituaçu começou a inclinar-se para a Educação numa tentativa de firmar sua importância política, descreditada pela decadência econômica geral da região e episódios sangrentos recentes no município. Surgiram então em 1912 as Escolas Reunidas Dr. Joaquim Manoel Rodrigues Lima ofertando o Ensino Primário<ref name=":2" />.
+
+Antes de 1912, a primeira escola primária pública de Ituaçu funcionou em prédio alugado na praça dos Bandeirantes. Havia, também, a oferta de aulas públicas e privadas nas casas dos próprios professores seguindo a tendência educacional no Brasil e na Bahia na época, e que se manteve mesmo após esse período. Em 1912, criam-se as Escolas Reunidas Dr. Joaquim Manoel Rodrigues Lima em prédio próprio na Praça [[Francisco Gomes de Oliveira|Barão do Sincorá]], no Centro da Cidade, demonstrando a centralidade, importância e pioneirismo da Educação na cidade, distinto das demais cidades com edificações educacionais precárias. Posteriormente, em 1950 as Escolas reunidas foram transferidas para o prédio atual da Escola Rodrigues Lima, localizada na Av. José Carlos Brito, cuja arquitetura remonta à concepção de Escola-Parque do educador [[Anísio Teixeira]]<ref name=":2" />.
+
+Embora com redução das tensões nos conflitos entre grupos sociais opostos que marcaram pejorativamente o município de Ituaçu nos finais do Século XIX e início do Século XX, as disputas entre famílias rivais se manteve por décadas, e ainda está presente na atualidade, em menor intensidade, sobretudo na época das eleições municipais. Essa rivalidade também esteva presente no passado das escolas do município com disputas entre famílias para cativar a “melhor” escola na representação das classes sociais da cidade repercutindo no confronto entre os partidários da Escola Rodrigues Lima, geralmente composta por estudantes de famílias da elite ituaçuense, e entre os partidários do Grupo Escolar Conselheiro Luiz Vianna, geralmente composto por famílias menos abastadas e com um poder de influência política e econômica relativamente um pouco menor. As disputas, já amenas, repercutiam nos dias de gincanas e desfiles cívicos com o cativo da comunidade local torcendo ora para uma, ora para outra escola<ref name=":2" />.
+
+Até meados do Século XX, os ituaçuenses que desejassem prosseguir os estudos além das primeiras letras, precisava se deslocar para a Capital ou para alguma cidade do interior com oferta educacional pelo poder público ou privado, geralmente em instituições religiosas<ref name=":2" />.
+
+A porção ao Sul da Chapada Diamantina e região, onde situa o município de Ituaçu, ficou desprovida de educação além das primeiras letras durante toda a primeira metade do Século XX. Em 1960, por iniciativa própria, cansados de esperar pelo poder público estadual, a população consegue criar o Ginásio de Ituaçu, com recursos próprios, mais tarde ampliado para o Colégio Normal de Ituaçu em 1965, estabelecimento particular, sem fins lucrativos<ref name=":2" />.
+
+No intuito de defender uma causa maior e tornar viável a ampliação do ensino em Ituaçu, os grupos rivais se uniram na defesa da fundação do Ginásio e recolhimento dos fundos necessários. Por muito tempo era sinônimo de prestígio social na autoafirmação da população o fato de Ituaçu ser reconhecida como a primeira cidade da região Sul da Chapada a ter um Ginásio, e a única durante décadas posteriores<ref name=":2" />.
+
+No Ginásio de Ituaçu, destacaram-se duas grandes figuras de educadores neste período: Dr. Aderbal de Santana Barbosa, homem negro, médico, Diretor e professor do Ginásio, e Frei Pedro Tomás Margallo, vigário branco, Vice-Diretor e professor de línguas no estabelecimento. Somente em 1991 o Estado alcançaria um estabelecimento público e gratuito, além das primeiras letras, com a criação do Centro Educacional Frei Pedro Tomás Margallo<ref name=":2" />.
+
+Após a centralidade, importância e pioneirismo que o município concedeu à Educação durante início e meados do Século XX, nas décadas sucessivas o município entrou em processo de estagnação educacional juntamente com as estagnações política, econômica e social recentes.
+
+=== Os desmembramentos ===
+No auge de sua vida política, ao ter o seu território próprio desmembrado da Vila de Santa Izabel do Paraguassu (atual [[Mucugê]]), em 1867 o município possuía seus limites geográficos com um território muito maior que o atual. Após a série de decadências que Ituaçu sofreu ao longo dos anos e décadas, vários de seus distritos e povoados passaram a ser alvos de disputas entre os coronéis da cidade que lutaram por emancipação de suas localidades, fragmentando e perdendo ainda mais influência com a redução de seu território. Ituaçu, em 1867 possuía os seguintes territórios, além do atual:
+
+A Norte - todo o território do atual município de [[Barra da Estiva]], desmembrado de Ituaçu em 1890 com sede em Jussiape e transformado em cidade emancipada em 1927<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/barra-da-estiva/historico|titulo=Barra da Estiva: História & Fotos|acessodata=2023-11-04|website=cidades.ibge.gov.br}}</ref>, e todo o território do atual município de [[Iramaia]] (à época, Fazenda Almas), desmembrado e emancipado do município de Barra da Estiva em 1960<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/iramaia/historico|titulo=Iramaia: História & Fotos|acessodata=2023-11-04|website=cidades.ibge.gov.br}}</ref>;
+
+A Oeste - parte do território do município de [[Jussiape]], (à época, Fazenda de Gado), desmembrado de Barra da Estiva e Rio de Contas em 1962<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/jussiape/historico|titulo=Jussiape: História & Fotos|acessodata=2023-11-04|website=cidades.ibge.gov.br}}</ref>;
+
+A Leste - todo o território do atual município de [[Contendas do Sincorá]] (anteriormente Fazenda Riachão), desmembrado e emancipado de Ituaçu em 1961<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/contendas-do-sincora/historico|titulo=Contendas do Sincorá: História & Fotos|acessodata=2023-11-04|website=cidades.ibge.gov.br}}</ref>.
+
+A Sul - todo o território do atual município de [[Tanhaçu]], desmembrado e emancipado de Ituaçu em 1961<ref>{{Citar web|url=https://cidades.ibge.gov.br/brasil/ba/tanhacu/historico|titulo=Tanhaçu: História & Fotos|acessodata=2023-11-04|website=cidades.ibge.gov.br}}</ref>.
+
+== Etimologia ==
+{{VT|Topônimos tupis no Brasil}}
+
+"Ituaçu" é um termo de origem [[Língua tupi|tupi]]-guarani que significa "Brejo Grande", através da junção de ''ytu'' (brejo) e ''açu'' (grande).<ref>NAVARRO, E. A. ''[[Método Moderno de Tupi Antigo|Método moderno de tupi antigo: a língua do Brasil dos primeiros séculos]]''. 3ª edição. São Paulo. Global. 2005. 463 p.</ref>
+
+== Geografia ==
+Municípios limítrofes:
+[[Norte]]: [[Jussiape]] e [[Barra da Estiva]]; [[Sul]]: [[Brumado]] e [[Tanhaçu]]; [[Leste]]: [[Contendas do Sincorá]].
+
+Segundo dados do [[Instituto Nacional de Meteorologia]] (INMET), referentes ao período de 1977 a 1989 e a partir de 1999, a menor [[temperatura]] registrada em Ituaçu foi de {{fmtn|9|[[Grau Celsius|°C]]}} em 13 de julho de 1979,<ref name="Temp-mín-INMET"/> e a maior atingiu {{fmtn|39|°C}} em 31 de outubro de 2012.<ref name="Temp-máx-INMET"/> O maior acumulado de [[Precipitação (meteorologia)|precipitação]] em 24 horas foi de {{fmtn|109.5}} milímetros (mm) em 19 de novembro de 2010, superando o recorde de {{fmtn|109.4|mm}} em 29 de novembro de 1985. Outros grandes acumulados iguais ou superiores a {{fmtn|100|mm}} foram: {{fmtn|104|mm}} em 3 de abril de 1978, {{fmtn|100.4|mm}} em 7 de novembro de 2012 e {{fmtn|100.3|mm}} em 24 de outubro de 2009.<ref>{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83292&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,,,,,,,,,1,,,,,,|título=BDMEP - série histórica - dados diários - precipitação (mm) - Ituaçu|autor=INMET|acessodata=15/7/2018}}</ref>
+
+== Clima ==
+<!-- Janeiro de 2016, com {{fmtn|366.2|mm}}, foi o mês de maior precipitação, superando o recorde anterior de {{fmtn|325.5|mm}} em fevereiro de 2007.<ref>{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao=83292&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,,,,,,,,1,,,,,,,|título=BDMEP - série histórica - dados mensais - precipitação total (mm) - Ituaçu|autor=INMET|acessodata=15/7/2018}}</ref> -->
+
+{{Tabela climática
+|localidade         = Ituaçu
+|larguraporcentagem = 65
+
+|Jan_REC_Max_°C = 36.7
+|Fev_REC_Max_°C = 38.3
+|Mar_REC_Max_°C = 37.6
+|Abr_REC_Max_°C = 36
+|Mai_REC_Max_°C = 35
+|Jun_REC_Max_°C = 36.1
+|Jul_REC_Max_°C = 33.8
+|Ago_REC_Max_°C = 36.5
+|Set_REC_Max_°C = 36.6
+|Out_REC_Max_°C = 39
+|Nov_REC_Max_°C = 37.1
+|Dez_REC_Max_°C = 37.6
+|Max_Rec_Ano_°C = 39
+
+|Jan_Max_°C = 31.6
+|Fev_Max_°C = 32.5
+|Mar_Max_°C = 31.4
+|Abr_Max_°C = 30.6
+|Mai_Max_°C = 29.5
+|Jun_Max_°C = 27.6
+|Jul_Max_°C = 27.5
+|Ago_Max_°C = 28.4
+|Set_Max_°C = 30
+|Out_Max_°C = 31.3
+|Nov_Max_°C = 30.9
+|Dez_Max_°C = 30.8
+|Max_Ano_°C = 30.2
+
+|Jan_Med_comp_°C = 25.7
+|Fev_Med_comp_°C = 26.2
+|Mar_Med_comp_°C = 25.5
+|Abr_Med_comp_°C = 24.8
+|Mai_Med_comp_°C = 23.5
+|Jun_Med_comp_°C = 21.8
+|Jul_Med_comp_°C = 21.5
+|Ago_Med_comp_°C = 22.3
+|Set_Med_comp_°C = 23.9
+|Out_Med_comp_°C = 25.4
+|Nov_Med_comp_°C = 25.5
+|Dez_Med_comp_°C = 25.3
+|Med_comp_Ano_°C = 24.3
+
+|Jan_Min_°C = 20.7
+|Fev_Min_°C = 21.1
+|Mar_Min_°C = 20.8
+|Abr_Min_°C = 20.3
+|Mai_Min_°C = 18.6
+|Jun_Min_°C = 17.1
+|Jul_Min_°C = 16.4
+|Ago_Min_°C = 16.9
+|Set_Min_°C = 18.6
+|Out_Min_°C = 20.2
+|Nov_Min_°C = 20.9
+|Dez_Min_°C = 20.6
+|Min_Ano_°C = 19.4
+
+|Jan_REC_Min_°C = 15.3
+|Fev_REC_Min_°C = 15.2
+|Mar_REC_Min_°C = 16
+|Abr_REC_Min_°C = 13
+|Mai_REC_Min_°C = 10.4
+|Jun_REC_Min_°C = 9.8
+|Jul_REC_Min_°C = 9
+|Ago_REC_Min_°C = 9.8
+|Set_REC_Min_°C = 11.2
+|Out_REC_Min_°C = 13
+|Nov_REC_Min_°C = 15
+|Dez_REC_Min_°C = 15.9
+|Min_Rec_Ano_°C = 9
+
+|Jan_Precip_mm = 76
+|Fev_Precip_mm = 74.7
+|Mar_Precip_mm = 91.9
+|Abr_Precip_mm = 54.4
+|Mai_Precip_mm = 18.6
+|Jun_Precip_mm = 14.7
+|Jul_Precip_mm = 8.8
+|Ago_Precip_mm = 6.3
+|Set_Precip_mm = 17.3
+|Out_Precip_mm = 42.1
+|Nov_Precip_mm = 93
+|Dez_Precip_mm = 120.1
+|Ano_Precip_mm = 617.9
+
+|Precip_Min  = ≥ 1 mm
+|Jan_dprecip = 6
+|Fev_dprecip = 5
+|Mar_dprecip = 8
+|Abr_dprecip = 6
+|Mai_dprecip = 3
+|Jun_dprecip = 4
+|Jul_dprecip = 3
+|Ago_dprecip = 2
+|Set_dprecip = 3
+|Out_dprecip = -
+|Nov_dprecip = 7
+|Dez_dprecip = 8
+|Ano_dprecip = -
+
+|Jan_umid_comp = 65.8
+|Fev_umid_comp = 63.4
+|Mar_umid_comp = 69
+|Abr_umid_comp = 70.7
+|Mai_umid_comp = 70.5
+|Jun_umid_comp = 71.5
+|Jul_umid_comp = 64.8
+|Ago_umid_comp = 61.6
+|Set_umid_comp = 59.8
+|Out_umid_comp = 58.4
+|Nov_umid_comp = 65.4
+|Dez_umid_comp = 68.2
+|Ano_umid_comp = 65.8
+
+|Jan_hsol = 239
+|Fev_hsol = 217.5
+|Mar_hsol = 202.9
+|Abr_hsol = 193
+|Mai_hsol = 202.5
+|Jun_hsol = 169.9
+|Jul_hsol = 197.1
+|Ago_hsol = 219.8
+|Set_hsol = 225.9
+|Out_hsol = 224.9
+|Nov_hsol = 192.7
+|Dez_hsol = 202.4
+|Ano_hsol = 2487.6
+
+|fonte = Instituto Nacional de Meteorologia (INMET) (normal climatológica de 1981-2010;<ref name="NCB_1981-2010">{{citar web|URL=http://www.inmet.gov.br/portal/index.php?r=clima/normaisclimatologicas|título=NORMAIS CLIMATOLÓGICAS DO BRASIL|autor=INMET|acessodata=15/7/2018}}</ref><br />recordes de temperatura: 01/01/1977 a 30/06/1989 e 21/07/1999-presente)<ref name="Temp-mín-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83292&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,,1,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura mínima (°C) - Ituaçu|autor=Instituto Nacional de Meteorologia (INMET)|acessodata=15/7/2018}}</ref><ref name="Temp-máx-INMET">{{citar web|URL=http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=83292&btnProcesso=serie&mRelDtInicio=01/01/1977&mRelDtFim=31/12/2020&mAtributos=,,1,,,,,,,,,,,,,,|título=BDMEP - série histórica - dados diários - temperatura máxima (°C) - Ituaçu|autor=INMET|acessodata=15/7/2018}}</ref>
+}}
+<!--Espaço apenas para melhor visualização no modo leitura. Não remova este espaço.--->
+
+{{Referências|col=2}}
+
+== Ligações externas ==
+* [http://www.turismoruraldabahia.com.br ABATURR Associação Baiana de Turismo Rural]
+
+{{Municípios da Bahia}}
+{{Portal3|Bahia}}
+
+[[Categoria:Ituaçu| ]]
+[[Categoria:Fundações na Bahia na década de 1790]]
+[[Categoria:Topônimos de origem tupi na Bahia]]

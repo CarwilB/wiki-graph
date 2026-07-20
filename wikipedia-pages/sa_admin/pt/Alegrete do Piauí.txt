@@ -1,0 +1,80 @@
+{{Info/Município do Brasil
+<!-- GeoID=2200277 -->
+<!-- Cabeçalho -->
+ | nome                 = Alegrete do Piauí
+ | foto                 =
+ | leg_foto             =
+ | apelido              =
+ | padroeiro            = [[Nossa Senhora de Fátima]]<ref>[https://cidadesnanet.com/news/blogs/blogdoiago/alegrete-do-piaui-celebra-com-muito-fervor-os-festejos-de-nossa-senhora-de-fatima-padroeira-do-municipio/#:~:text=Comments%200%20Redacao-,Alegrete%20do%20Piau%C3%AD%20celebra%20com%20muito%20fervor%20os%20festejos%20de,04%20a%2013%20de%20maio.]</ref>
+<!-- Dados Gerais -->
+ | brasão               =
+ | bandeira             =
+ | link_brasão          =
+ | link_bandeira        = 
+ | link_hino            =
+ | aniversário          = 29 de abril
+ | fundação             = {{dtlink|29|4|1992|idade}}
+ | gentílico            = Alegretense
+ | lema                 = Paz, Amor e Alegria
+ | prefeito             = Márcio William Maia de Alencar
+ | partido              = [[Partido dos Trabalhadores|PT]]
+ | fim_mandato          = 2028
+<!-- Localização -->
+ | mapa                 = Piaui Municip AlegretedoPiaui.svg
+ | latP                 = S | latG = 07 | latM = 14 | latS = 34
+ | lonP                 = O | lonG = 40 | lonM = 51 | lonS = 28
+ | estado               = Piauí
+ | mesorregião          = [[Mesorregião do Sudeste Piauiense|Sudeste Piauiense]]
+ | data_mesorregião     = [[IBGE]]/2008 <ref name="IBGE_DTB_2008">{{citar web |url=ftp://geoftp.ibge.gov.br/Organizacao/Divisao_Territorial/2008/DTB_2008.zip |titulo=Divisão Territorial do Brasil |data=1 de julho de 2008 |obra=Divisão Territorial do Brasil e Limites Territoriais| publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |acessodata=11 de outubro de 2008}}</ref>
+ | microrregião         = [[Microrregião de Pio IX|Pio IX]]
+ | data_microrregião    = [[IBGE]]/2008 <ref name="IBGE_DTB_2008" />
+ | região_metropolitana =
+ | vizinhos             = [[Vila Nova do Piauí]], [[Caldeirão Grande do Piauí]], [[São Julião (Piauí)|São Julião]], [[Padre Marcos]], [[Fronteiras (Piauí)|Fronteiras]] e [[Francisco Macedo]]
+ | dist_capital         = 379
+<!-- Características geográficas -->
+ | área                 = 281.364
+ | área_ref             = <ref name ="IBGE_Área">{{citar web |url=http://www.ibge.gov.br/home/geociencias/cartografia/default_territ_area.shtm |título=Área territorial oficial |autor=IBGE |acessodata=5 de dezembro de 2010|data=10 de outubro de 2002|publicado=Resolução da Presidência do IBGE de n° 5 (R.PR-5/02)}}</ref>
+ | população            = 5153
+ | data_pop             = [[IBGE]]/2010<ref name="IBGE_Pop_2010">{{citar web |url = http://www.ibge.gov.br/home/estatistica/populacao/censo2010/populacao_por_municipio.shtm |título=Censo Populacional 2010| obra = Censo Populacional 2010 |publicado=Instituto Brasileiro de Geografia e Estatística (IBGE) |data=29 de novembro de 2010 |acessodata = 11 de dezembro de 2010}}</ref>
+ | altitude             =200
+ | clima                = Clima semiárido 
+ | sigla_clima          = BSh
+<!-- Indicadores -->
+ | idh                  = 0.566 <!--favor manter o formato-->
+ | data_idh             = [[PNUD]]/2000 <ref name="PNUD_IDH_2000">{{citar web |url=http://www.pnud.org.br/atlas/ranking/IDH-M%2091%2000%20Ranking%20decrescente%20(pelos%20dados%20de%202000).htm |titulo=Ranking decrescente do IDH-M dos municípios do Brasil |data=2000 |obra=Atlas do Desenvolvimento Humano|publicado=Programa das Nações Unidas para o Desenvolvimento (PNUD) |acessodata=11 de outubro de 2008}}</ref>
+ | pib                  = {{formatnum:24013.075}} mil
+ | data_pib             = [[IBGE]]/2008<ref name="IBGE_PIB">{{citar web |url=http://www.ibge.gov.br/home/estatistica/economia/pibmunicipios/2004_2008/ |titulo=Produto Interno Bruto dos Municípios 2004-2008 |publicado=Instituto Brasileiro de Geografia e Estatística |acessodata=11 de dezembro de 2010}}</ref>
+ | pib_per_capita       = 5208.91
+ | data_pib_per_capita  = [[IBGE]]/2008<ref name="IBGE_PIB"/>
+|site_prefeitura=http://www.alegretedopiaui.pi.gov.br/}}
+'''Alegrete do Piauí''' é um [[Município (Brasil)|município brasileiro]] do [[estados do Brasil|estado]] do [[Piauí]]. Localiza-se a uma [[latitude]] 07º14'34" [[sul]] e a uma [[longitude]] 40º51'27" [[oeste]], a 379 quilômetros de distância da capital [[Teresina]], uma altitude de 200 metros. Sua população estimada em 2010 era de 5.153 habitantes segundo o [[Instituto Brasileiro de Geografia e Estatística|IBGE]]. Possui uma área de 281,364&nbsp;km².
+
+== Localização ==
+{| class="wikitable" width ="60%" border = 2 align="center"
+|-----
+| width ="35%" align="center" | ''Noroeste:'' [[São Julião (Piauí)|São Julião]]
+| width ="30%" align="center" | ''Norte:'' [[São Julião (Piauí)|São Julião]]
+| width ="35%" align="center" | ''Nordeste:'' [[Fronteiras (Piauí)|Fronteiras]]
+|-----
+| width ="10%" align="center" | ''Oeste:'' [[Vila Nova do Piauí]]
+| width ="35%" align="center" | [[Imagem:Reinel compass rose.svg|75px]]
+| width ="30%" align="center" | ''Leste:'' [[Fronteiras (Piauí)|Fronteiras]]
+|-----
+| width ="35%" align="center" | ''Sudoeste:'' [[Padre Marcos]]
+| width ="30%" align="center" | ''Sul:'' [[Marcolândia]]
+| width ="35%" align="center" | ''Sudeste:'' [[Caldeirão Grande do Piauí]]
+|}
+
+{{Referências}}
+
+==Ligações externas==
+*[http://cidades.ibge.gov.br/painel/historico.php?lang=&codmun=220027 Histórico no site do IBGE]
+
+{{Esboço-municípiosbr/Piauí}}
+{{Municípios do Piauí}}
+{{Vale do Rio Guaribas}}
+{{Portal3|Piauí}}
+
+[[Categoria:Vale do Rio Guaribas]]
+[[Categoria:Municípios do Piauí]]
+[[Categoria:Fundações no Piauí em 1992]]

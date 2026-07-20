@@ -1,0 +1,122 @@
+{{one source|date=May 2025}}
+{{Infobox settlement
+<!--See the Table at Infobox settlement for all fields and descriptions of usage-->
+<!-- Basic info  ---------------->
+|name                   = San Dionisio
+|settlement_type        = Municipality<!--For Town or Village (Leave blank for the default City)-->
+|other_name             =
+|native_name            = <!-- for cities whose native name is not in English -->
+|nickname               = 
+|motto                  =
+<!-- images and maps  ----------->
+|image_skyline          = 
+|imagesize              = 
+|image_caption          = 
+|image_flag             = 
+|flag_size              =
+|image_seal             = 
+|seal_size              =
+|image_shield           = 
+|shield_size            =
+|image_blank_emblem     =
+|blank_emblem_type      =
+|blank_emblem_size      =
+|image_map              = 
+|mapsize                = 
+|map_caption            = 
+|pushpin_map            = Nicaragua<!-- the name of a location map as per http://en.wikipedia.org/wiki/Template:Location_map -->
+|pushpin_label_position = right
+|pushpin_mapsize        = 250
+|pushpin_map_caption    = Location in Nicaragua
+<!-- Location ------------------>
+|subdivision_type       = Country
+|subdivision_name       = {{flag|Nicaragua}}
+|subdivision_type1      = [[Departments of Nicaragua|Department]]
+|subdivision_name1      = [[Matagalpa (department)|Matagalpa]]
+|subdivision_type2      = 
+|subdivision_name2      = 
+<!-- Politics ----------------->
+|government_footnotes   =
+|government_type        =
+|leader_title           =
+|leader_name            =
+|established_title      =  <!-- Settled -->
+|established_date       = 
+|established_title2     =  <!-- Incorporated (town) -->
+|established_date2      = 
+|established_title3     =  <!-- Incorporated (city) -->
+|established_date3      =
+<!-- Area    --------------------->
+|area_magnitude         = 
+|unit_pref              = metric<!--Enter: Imperial, if Imperial (metric) is desired-->
+|area_footnotes         =
+|area_total_km2         = 166<!-- ALL fields dealing with a measurements are subject to automatic unit conversion-->
+|area_land_km2          = <!--See table @ Template:Infobox settlement for details on automatic unit conversion-->
+|area_water_km2         =
+|area_total_sq_mi       =
+<!-- Population   ----------------------->
+|population_as_of               = 2005
+|population_footnotes           =
+|population_note                =
+|population_total               = 17742
+|population_density_km2         = auto
+|population_density_sq_mi       =
+|population_metro               =
+|population_density_metro_km2   =
+|population_density_metro_sq_mi =
+|population_urban               = 2576
+<!-- General information  --------------->
+|timezone               = 
+|utc_offset             = 
+|timezone_DST           = 
+|utc_offset_DST         = 
+|coordinates            = {{coord|12|45|N|85|51|W|region:NI|display=inline}}
+|elevation_footnotes    =  <!--for references: use <ref> </ref> tags-->
+|elevation_m            =
+|elevation_ft           =
+<!-- Area/postal codes & others -------->
+|postal_code_type       =  <!-- enter ZIP code, Postcode, Post code, Postal code... -->
+|postal_code            =
+|area_code              =
+|blank_name             = [[Köppen climate classification|Climate]]
+|blank_info             = [[Tropical savanna climate|Aw]]
+|website                = 
+|footnotes              = 
+}}
+
+'''San Dionisio''' is a small [[Municipalities of Nicaragua|municipality]] in the [[Matagalpa (department)|Matagalpa]] [[Departments of Nicaragua|department]] of [[Nicaragua]].
+
+Originally named Espino Blanco, the town was renamed San Dionisio in honor of [[Dionisio de Herrera]], former [[President of Nicaragua]]. This small town is {{convert|90|mi|km|order=flip}} away from [[Managua]], the capital of Nicaragua, and {{convert|30|mi|km|sigfig=1|order=flip|abbr=on}} away from [[Matagalpa]] city, the capital of the Matagalpa Department. 
+
+==Population==
+People from this town are informally known as ''"nichanos''".<ref>{{cite news|url=https://www.canal4.com.ni/san-dionisio-dice-vamos-adelante-con-daniel-y-rosario/|title=San Dionisio dice: Vamos adelante con Daniel y Rosario!|first=Kathy Tatiana|last=Mendoza|work=[[Canal 4 (Nicaraguan TV channel)|Canal 4]]|date=27 October 2016|access-date=7 May 2025|language=es|quote=}}</ref> San Dionisio is dominated by [[mestizo]]s, but there are significant native populations in two sections of the municipality, wibuse and Portillo del Jicaro.
+
+==Comarcas==
+The municipality is divided into the comarcas (villages): El Corozo, El Carrizal, Las Cuchillas, El Ocote, Monte Verde, Piedra Larga, Los Limones, Wibuse, El Tempisque, and El Portillo del Jicaro.
+
+==Economy and services==
+Production is mainly devoted to coffee beans, beans, corn, livestock, and vegetables. 
+Education is available through the secondary level. There is currently a medical center, and a hospital too.{{cn|date=January 2023}}
+
+The Rio Calico runs through the town from north-west to south-east. The Matagalpa River is in the south-east.
+Buses runs all day from Matagalpa and Esquipulas.{{cn|date=January 2023}}
+
+==Sports==
+Baseball is the major sport. There are many baseball players from this town playing for the Nicaragua team or major Nicaraguan baseball league.{{cn|date=January 2023}}
+
+==Religion==
+The town is predominantly [[Catholic]], but [[Protestantism|evangelical]] churches are springing up everywhere. There is a Catholic festivity on October 9 to honor [[Pope Dionysius]] (San Dionisio).
+
+Like many small towns in Nicaragua, the residents do not receive much support from central government, only getting attention during [[Political campaign]]s. For this reason, change is slow.
+
+==References==
+{{reflist}}
+
+{{Matagalpa Department}}
+
+{{coord|12|45|N|85|51|W|source:itwiki_region:NI|display=title}}
+
+[[Category:Municipalities of the Matagalpa Department]]
+
+
+{{Nicaragua-geo-stub}}
