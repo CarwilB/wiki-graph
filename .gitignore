@@ -15,3 +15,4 @@ output/locator_maps/workbench/*
 output/locator_maps/*map.svg
 output/locator_maps/*/*map.svg
 maps/*.zip
+data/cache/
