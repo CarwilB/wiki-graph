@@ -14,5 +14,7 @@ docs/ine_igm_spatial_inspection_cache/
 output/locator_maps/workbench/*
 output/locator_maps/*map.svg
 output/locator_maps/*/*map.svg
+# Large map files (>100MB) are stored in ../humdata/maps/ to avoid GitHub size limits
+# References are updated to use relative paths (../humdata/...)
 maps/*.zip
 data/cache/

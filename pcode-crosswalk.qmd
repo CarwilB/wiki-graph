@@ -20,7 +20,7 @@ knitr:
 
 This document builds and evaluates a crosswalk between Wikidata QIDs and OCHA
 p-codes from the Global Administrative Boundaries GDB
-(`maps/global_admin_boundaries_matched_latest.gdb`), which contains:
+(`../humdata/maps/global_admin_boundaries_matched_latest.gdb`), which contains:
 
 - **ADM2**: 19,705 features (provinces, departments, cantons, municipalities)
 - **ADM3**: 55,622 features (municipalities, districts, communes, parishes)
@@ -73,7 +73,7 @@ source("R/create_quick_statement.R")
 ### GDB layers
 
 ```{r load-gdb}
-GDB_PATH <- "maps/global_admin_boundaries_matched_latest.gdb"
+GDB_PATH <- "../humdata/maps/global_admin_boundaries_matched_latest.gdb"
 
 adm2_sf <- st_read(GDB_PATH, layer = "admin2", quiet = TRUE)
 adm3_sf <- st_read(GDB_PATH, layer = "admin3", quiet = TRUE)
