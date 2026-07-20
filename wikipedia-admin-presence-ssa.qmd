@@ -1,0 +1,865 @@
+---
+title: "Wikipedia Presence of Sub-Saharan African Administrative Divisions"
+author: "wiki-graph"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+execute:
+  cache: true
+  warning: false
+  message: false
+knitr:
+  opts_chunk:
+    cache.path: "data/cache/knitr-ssa/"
+---
+
+```{r}
+#| label: setup
+#| cache: false
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(stringr)
+library(purrr)
+library(tidyr)
+library(ggplot2)
+
+source("wikidata_presence_matrix.R")
+source("R/get_wikidata_instances.R")
+source("src/wikipedia-tools.R")
+```
+
+## Shared infrastructure
+
+This document uses the same Wikidata-to-Wikipedia-presence pipeline as the
+Latin America companion document. Two project-level helper files provide the
+core functionality:
+
+- `wikidata_presence_matrix.R` — builds a presence/absence matrix of Wikipedia
+  sitelinks for all instances of a Wikidata class.
+- `R/get_wikidata_instances.R` — batched `wbgetentities` fetcher with resume
+  support.
+
+**Featured languages** for this analysis: English (`en`), French (`fr`),
+Arabic (`ar`), and Swahili (`sw`).
+
+```{r}
+#| label: helpers
+#| cache: false
+cache_dir <- "data/cache"
+dir.create(cache_dir, showWarnings = FALSE, recursive = TRUE)
+
+featured_langs <- c("en", "fr", "ar", "sw")
+featured_labels <- c(en = "English", fr = "French", ar = "Arabic", sw = "Swahili")
+
+# ---- SPARQL helper ----------------------------------------------------------
+sparql_query <- function(query) {
+  r <- GET(
+    "https://query.wikidata.org/sparql",
+    query = list(query = query, format = "json"),
+    user_agent("wiki-graph-admin-presence")
+  )
+  if (status_code(r) != 200) stop("SPARQL query failed: HTTP ", status_code(r))
+  res <- fromJSON(content(r, "text", encoding = "UTF-8"))
+  if (length(res$results$bindings) == 0) return(tibble())
+  as_tibble(res$results$bindings) |>
+    mutate(across(everything(), ~ .x$value))
+}
+
+# ---- Fetch or resume --------------------------------------------------------
+fetch_or_resume <- function(class_qid, slug, n_expected,
+                            prefix     = "ssa_adm2",
+                            languages  = NULL,
+                            batch_size = 30,
+                            limit      = 2000) {
+  cache_file <- file.path(cache_dir, paste0(prefix, "_", slug, ".rds"))
+
+  if (file.exists(cache_file)) {
+    partial <- readRDS(cache_file)
+    n_done  <- nrow(partial$instances)
+    message(slug, ": cache hit (", n_done, "/~", n_expected, " items). ",
+            "Resuming if incomplete…")
+    result <- resume_wikidata_instance_wikipedia_presence(
+      partial_result = partial,
+      class_qid      = class_qid,
+      languages      = languages,
+      limit          = limit,
+      batch_size     = batch_size
+    )
+  } else {
+    message(slug, ": no cache. Fetching fresh…")
+    result <- wikidata_instance_wikipedia_presence(
+      class_qid  = class_qid,
+      languages  = languages,
+      limit      = limit,
+      batch_size = batch_size
+    )
+  }
+
+  saveRDS(result, cache_file)
+  message(slug, ": done — ", nrow(result$data), " items → ", cache_file)
+  result
+}
+
+# ---- Combiner ---------------------------------------------------------------
+combine_presence_data <- function(results_list, registry) {
+  imap_dfr(results_list, function(result, slug) {
+    meta <- registry |> filter(slug == !!slug)
+    result$data |>
+      mutate(
+        country     = meta$country,
+        country_qid = meta$country_qid,
+        class_qid   = meta$class_qid,
+        class_label = meta$class_label,
+        slug        = slug,
+        .before     = everything()
+      )
+  }) |>
+    mutate(across(where(is.integer), ~ replace_na(.x, 0L)))
+}
+```
+
+
+## Sub-Saharan Africa — ADM2 {#sec-ssa-adm2}
+
+Second-level administrative divisions for 46 Sub-Saharan African countries.
+Class QIDs were identified via P150 hierarchy chains on Wikidata and validated
+with direct P31 instance counts (June 2026).
+
+Three countries are excluded:
+
+- **Central African Republic** — sub-prefecture class (Q2355265) has 0
+  instances on Wikidata.
+- **Eswatini** — no ADM2 class (tinkhundla) found on Wikidata.
+- **Comoros** — no ADM2 class found on Wikidata.
+
+::: {.callout-note}
+Some ADM2 classes capture items that are technically ADM1 in their national
+system. For example, Kenya's 47 counties are constitutionally ADM1, but there
+is no sub-county class populated on Wikidata. Sudan's 19 states are similar.
+These are included as the finest available level.
+:::
+
+```{r}
+#| label: ssa-adm2-registry
+ssa_adm2_registry <- tribble(
+  ~country,                           ~country_qid, ~class_qid,    ~class_label,                                    ~n_expected, ~slug,
+  "Nigeria",                          "Q1033",      "Q1639634",    "local government area of Nigeria",               817L,        "nigeria_lga",
+  "Ethiopia",                         "Q115",       "Q219875",     "zone of Ethiopia",                               102L,        "ethiopia_zone",
+  "Democratic Republic of the Congo", "Q974",       "Q117209621",  "commune of the DRC",                              74L,        "drc_commune",
+  "South Africa",                     "Q258",       "Q1589568",    "district municipality of South Africa",            47L,        "southafrica_distmuni",
+  "Tanzania",                         "Q924",       "Q2409750",    "district of Tanzania",                            199L,        "tanzania_district",
+  "Kenya",                            "Q114",       "Q269218",     "county of Kenya",                                  47L,        "kenya_county",
+  "Uganda",                           "Q1036",      "Q3539870",    "district of Uganda",                              137L,        "uganda_district",
+  "Sudan",                            "Q1049",      "Q746290",     "state of Sudan",                                   19L,        "sudan_state",
+  "Angola",                           "Q916",       "Q378508",     "municipality of Angola",                           199L,        "angola_muni",
+  "Ghana",                            "Q117",       "Q545769",     "district of Ghana",                               263L,        "ghana_district",
+  "Madagascar",                       "Q1019",      "Q3556789",    "district of Madagascar",                          129L,        "madagascar_district",
+  "Ivory Coast",                      "Q1008",      "Q617807",     "department of Ivory Coast",                       117L,        "ivorycoast_dept",
+  "Mozambique",                       "Q1029",      "Q2068214",    "district of Mozambique",                          161L,        "mozambique_district",
+  "Cameroon",                         "Q1009",      "Q2306813",    "department of Cameroon",                           58L,        "cameroon_dept",
+  "Burkina Faso",                     "Q965",       "Q852151",     "province of Burkina Faso",                         47L,        "burkinafaso_prov",
+  "Mali",                             "Q912",       "Q1758856",    "commune of Mali",                                 706L,        "mali_commune",
+  "Niger",                            "Q1032",      "Q2914501",    "department of Niger",                              65L,        "niger_dept",
+  "Zambia",                           "Q953",       "Q2744064",    "district of Zambia",                              113L,        "zambia_district",
+  "Chad",                             "Q657",       "Q2711758",    "department of Chad",                              105L,        "chad_dept",
+  "Senegal",                          "Q1041",      "Q751030",     "department of Senegal",                            49L,        "senegal_dept",
+  "Malawi",                           "Q1020",      "Q1058387",    "district of Malawi",                               28L,        "malawi_district",
+  "Zimbabwe",                         "Q954",       "Q5283558",    "district of Zimbabwe",                             62L,        "zimbabwe_district",
+  "Rwanda",                           "Q1037",      "Q1841634",    "district of Rwanda",                               30L,        "rwanda_district",
+  "Benin",                            "Q962",       "Q1780506",    "commune of Benin",                                 81L,        "benin_commune",
+  "Burundi",                          "Q967",       "Q1577513",    "commune of Burundi",                              126L,        "burundi_commune",
+  "Guinea",                           "Q1006",      "Q1394653",    "prefecture of Guinea",                             33L,        "guinea_pref",
+  "South Sudan",                      "Q958",       "Q279479",     "county of South Sudan",                            81L,        "southsudan_county",
+  "Somalia",                          "Q1045",      "Q18555638",   "district of Somalia",                             116L,        "somalia_district",
+  "Togo",                             "Q945",       "Q828485",     "prefecture of Togo",                               39L,        "togo_pref",
+  "Sierra Leone",                     "Q1044",      "Q1298632",    "district of Sierra Leone",                         16L,        "sierraleone_district",
+  "Republic of the Congo",            "Q971",       "Q1958165",    "district of the Republic of the Congo",            93L,        "congo_district",
+  "Liberia",                          "Q1014",      "Q874821",     "county of Liberia",                                15L,        "liberia_county",
+  "Mauritania",                       "Q1025",      "Q3263368",    "department of Mauritania",                         64L,        "mauritania_dept",
+  "Eritrea",                          "Q986",       "Q3729800",    "subregion of Eritrea",                             62L,        "eritrea_subregion",
+  "The Gambia",                       "Q1005",      "Q1504917",    "district of the Gambia",                           40L,        "gambia_district",
+  "Namibia",                          "Q1030",      "Q1853630",    "constituency of Namibia",                         126L,        "namibia_constituency",
+  "Botswana",                         "Q963",       "Q57368",      "district of Botswana",                             11L,        "botswana_district",
+  "Gabon",                            "Q1000",      "Q655851",     "department of Gabon",                              52L,        "gabon_dept",
+  "Lesotho",                          "Q1013",      "Q844531",     "district of Lesotho",                              10L,        "lesotho_district",
+  "Guinea-Bissau",                    "Q1007",      "Q7444736",    "sector of Guinea-Bissau",                          38L,        "guineabissau_sector",
+  "Equatorial Guinea",                "Q983",       "Q126723649",  "district of Equatorial Guinea",                    17L,        "eqguinea_district",
+  "Mauritius",                        "Q1027",      "Q2387050",    "district of Mauritius",                             9L,        "mauritius_district",
+  "Djibouti",                         "Q977",       "Q2982272",    "sub-prefecture of Djibouti",                       10L,        "djibouti_subpref",
+  "Cape Verde",                       "Q1011",      "Q12712991",   "freguesia of Cape Verde",                          32L,        "capeverde_freguesia",
+  "São Tomé and Príncipe",            "Q1039",      "Q911736",     "district of São Tomé and Príncipe",                 7L,        "stp_district",
+  "Seychelles",                       "Q1042",      "Q1149621",    "district of Seychelles",                           28L,        "seychelles_district"
+)
+```
+
+```{r}
+#| label: ssa-adm2-fetch
+#| cache: true
+#| cache-extra: !expr digest::digest(ssa_adm2_registry)
+ssa_adm2_results <- list()
+
+for (i in seq_len(nrow(ssa_adm2_registry))) {
+  entry <- ssa_adm2_registry[i, ]
+  ssa_adm2_results[[entry$slug]] <- fetch_or_resume(
+    class_qid  = entry$class_qid,
+    slug       = entry$slug,
+    n_expected = entry$n_expected,
+    prefix     = "ssa_adm2",
+    batch_size = 30,
+    limit      = 2000
+  )
+}
+
+ssa_adm2_all <- combine_presence_data(ssa_adm2_results, ssa_adm2_registry) |>
+  mutate(adm_level = "ADM2", .before = everything())
+saveRDS(ssa_adm2_all, file.path(cache_dir, "ssa_adm2_all.rds"))
+```
+
+```{r}
+#| label: ssa-adm2-summary
+# Ensure featured language columns exist
+for (lang in featured_langs) {
+  if (!lang %in% names(ssa_adm2_all)) ssa_adm2_all[[lang]] <- 0L
+}
+
+ssa_adm2_all |>
+  group_by(country, class_label) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    fr = sum(fr, na.rm = TRUE),
+    ar = sum(ar, na.rm = TRUE),
+    sw = sum(sw, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_fr = round(100 * fr / n_units, 1)
+  ) |>
+  arrange(desc(n_units)) |>
+  knitr::kable(caption = "SSA ADM2: Wikipedia coverage by country and class")
+```
+
+
+## Sub-Saharan Africa — ADM3 (Top 10 by population) {#sec-ssa-adm3}
+
+Third-level divisions for the eight most populous SSA countries where a viable
+ADM3 class exists on Wikidata. Two of the top 10 are excluded:
+
+- **Kenya** — sub-county class (Q7630574) has 0 instances on Wikidata.
+- **Ghana** — no ADM3 class found.
+
+::: {.callout-warning}
+Nigeria (3,326 wards) and Tanzania (4,187 wards) are large fetches that will
+take 30–60 minutes each on first run. The RDS cache makes subsequent runs
+instant.
+:::
+
+```{r}
+#| label: ssa-adm3-registry
+ssa_adm3_registry <- tribble(
+  ~country,                           ~country_qid, ~class_qid,    ~class_label,                              ~n_expected, ~slug,
+  "Nigeria",                          "Q1033",      "Q60169073",   "ward of Nigeria",                         3326L,       "nigeria_ward",
+  "Ethiopia",                         "Q115",       "Q690840",     "woreda of Ethiopia",                       958L,       "ethiopia_woreda",
+  "Democratic Republic of the Congo", "Q974",       "Q7703797",    "territory of the DRC",                     146L,       "drc_territoire",
+  "South Africa",                     "Q258",       "Q1500352",    "local municipality of South Africa",       245L,       "southafrica_localmuni",
+  "Tanzania",                         "Q924",       "Q18691601",   "ward of Tanzania",                        4187L,       "tanzania_ward",
+  "Uganda",                           "Q1036",      "Q5177124",    "county of Uganda",                         155L,       "uganda_county",
+  "Sudan",                            "Q1049",      "Q505830",     "district of Sudan",                        202L,       "sudan_district",
+  "Angola",                           "Q916",       "Q1841580",    "commune of Angola",                        409L,       "angola_commune"
+)
+```
+
+```{r}
+#| label: ssa-adm3-fetch
+#| cache: true
+#| cache-extra: !expr digest::digest(ssa_adm3_registry)
+ssa_adm3_results <- list()
+
+for (i in seq_len(nrow(ssa_adm3_registry))) {
+  entry <- ssa_adm3_registry[i, ]
+  ssa_adm3_results[[entry$slug]] <- fetch_or_resume(
+    class_qid  = entry$class_qid,
+    slug       = entry$slug,
+    n_expected = entry$n_expected,
+    prefix     = "ssa_adm3",
+    batch_size = 30,
+    limit      = 5000
+  )
+}
+
+ssa_adm3_all <- combine_presence_data(ssa_adm3_results, ssa_adm3_registry) |>
+  mutate(adm_level = "ADM3", .before = everything())
+saveRDS(ssa_adm3_all, file.path(cache_dir, "ssa_adm3_all.rds"))
+```
+
+```{r}
+#| label: ssa-adm3-summary
+for (lang in featured_langs) {
+  if (!lang %in% names(ssa_adm3_all)) ssa_adm3_all[[lang]] <- 0L
+}
+
+ssa_adm3_all |>
+  group_by(country, class_label) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    fr = sum(fr, na.rm = TRUE),
+    ar = sum(ar, na.rm = TRUE),
+    sw = sum(sw, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_fr = round(100 * fr / n_units, 1)
+  ) |>
+  arrange(desc(n_units)) |>
+  knitr::kable(caption = "SSA ADM3: Wikipedia coverage (top 10 countries)")
+```
+
+
+## Combined analysis {#sec-analysis}
+
+```{r}
+#| label: combine-all
+#| cache: false
+all_data <- bind_rows(ssa_adm2_all, ssa_adm3_all)
+
+# Identify language columns
+meta_cols <- c("adm_level", "country", "country_qid", "class_qid",
+               "class_label", "slug", "qid", "label_en", "label_es")
+lang_names <- setdiff(names(all_data), meta_cols) |>
+  {\(x) x[map_lgl(x, ~ is.integer(all_data[[.x]]))]}()
+lang_names <- setdiff(lang_names, "commons")
+
+# Ensure featured languages exist
+for (lang in featured_langs) {
+  if (!lang %in% names(all_data)) all_data[[lang]] <- 0L
+}
+```
+
+### Coverage heatmap
+
+```{r}
+#| label: fig-coverage-heatmap
+#| fig-width: 12
+#| fig-height: 14
+#| fig-cap: "Wikipedia coverage of SSA administrative units in four languages"
+coverage <- all_data |>
+  group_by(country, adm_level) |>
+  summarise(
+    n_units = n(),
+    pct_en = round(100 * sum(en, na.rm = TRUE) / n(), 1),
+    pct_fr = round(100 * sum(fr, na.rm = TRUE) / n(), 1),
+    pct_ar = round(100 * sum(ar, na.rm = TRUE) / n(), 1),
+    pct_sw = round(100 * sum(sw, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  pivot_longer(
+    cols      = starts_with("pct_"),
+    names_to  = "language",
+    values_to = "pct"
+  ) |>
+  mutate(
+    language = recode(language,
+      pct_en = "English", pct_fr = "French",
+      pct_ar = "Arabic", pct_sw = "Swahili"),
+    language = factor(language, levels = c("English", "French", "Arabic", "Swahili")),
+    label    = paste0(round(pct), "%"),
+    country  = reorder(country, pct, FUN = max)
+  )
+
+ggplot(coverage, aes(x = adm_level, y = country, fill = pct)) +
+  geom_tile(color = "white", linewidth = 0.4) +
+  geom_text(aes(label = label), size = 2) +
+  scale_fill_viridis_c(option = "C", limits = c(0, 100), name = "% with\narticle") +
+  facet_grid(. ~ language) +
+  labs(x = "Administrative level", y = NULL) +
+  theme_minimal(base_size = 11) +
+  theme(panel.grid = element_blank(),
+        axis.text.y = element_text(size = 7))
+```
+
+### Unit counts
+
+```{r}
+#| label: tbl-unit-counts
+all_data |>
+  group_by(country, adm_level) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    fr = sum(fr, na.rm = TRUE),
+    ar = sum(ar, na.rm = TRUE),
+    sw = sum(sw, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_fr = round(100 * fr / n_units, 1),
+    pct_ar = round(100 * ar / n_units, 1),
+    pct_sw = round(100 * sw / n_units, 1)
+  ) |>
+  arrange(country, adm_level) |>
+  knitr::kable(caption = "Coverage counts and percentages by country, level, and language")
+```
+
+
+### Language breadth
+
+```{r}
+#| label: compute-breadth
+#| cache: false
+breadth <- all_data |>
+  rowwise() |>
+  mutate(n_langs = sum(c_across(all_of(lang_names)), na.rm = TRUE)) |>
+  ungroup()
+```
+
+```{r}
+#| label: tbl-breadth
+breadth |>
+  group_by(country, adm_level) |>
+  summarise(
+    n_units      = n(),
+    median_langs = median(n_langs),
+    mean_langs   = round(mean(n_langs), 1),
+    max_langs    = max(n_langs),
+    .groups = "drop"
+  ) |>
+  arrange(country, adm_level) |>
+  knitr::kable(caption = "Wikipedia language breadth per unit")
+```
+
+```{r}
+#| label: fig-breadth-boxplot
+#| fig-width: 12
+#| fig-height: 10
+#| fig-cap: "Language count per unit by country and admin level"
+breadth |>
+  mutate(country = reorder(country, n_langs, FUN = median)) |>
+  ggplot(aes(x = n_langs, y = country, fill = adm_level)) +
+  geom_boxplot(outlier.size = 0.3, alpha = 0.7) +
+  labs(x = "Number of Wikipedia languages with an article",
+       y = NULL, fill = "Admin level") +
+  theme_minimal(base_size = 11) +
+  theme(axis.text.y = element_text(size = 7))
+```
+
+
+### Top Wikipedia languages by geographic coverage
+
+```{r}
+#| label: tbl-top-languages
+all_data |>
+  summarise(across(all_of(lang_names), ~ sum(.x, na.rm = TRUE))) |>
+  pivot_longer(everything(), names_to = "language", values_to = "n_articles") |>
+  mutate(pct_of_total = round(100 * n_articles / nrow(all_data), 1)) |>
+  arrange(desc(n_articles)) |>
+  slice_head(n = 25) |>
+  knitr::kable(caption = "Top 25 Wikipedia languages by number of SSA admin-unit articles")
+```
+
+
+### ADM2 → ADM3 coverage drop-off
+
+```{r}
+#| label: fig-adm2-adm3-dropoff
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Wikipedia coverage at ADM2 vs ADM3 in four languages"
+countries_with_both <- all_data |>
+  filter(adm_level %in% c("ADM2", "ADM3")) |>
+  group_by(country) |>
+  filter(n_distinct(adm_level) == 2) |>
+  pull(country) |>
+  unique()
+
+dropoff <- all_data |>
+  filter(country %in% countries_with_both) |>
+  group_by(country, adm_level) |>
+  summarise(
+    n_units = n(),
+    pct_en  = round(100 * sum(en, na.rm = TRUE) / n(), 1),
+    pct_fr  = round(100 * sum(fr, na.rm = TRUE) / n(), 1),
+    pct_ar  = round(100 * sum(ar, na.rm = TRUE) / n(), 1),
+    pct_sw  = round(100 * sum(sw, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  pivot_longer(
+    cols      = starts_with("pct_"),
+    names_to  = "language",
+    values_to = "pct"
+  ) |>
+  mutate(
+    language = recode(language,
+      pct_en = "English", pct_fr = "French",
+      pct_ar = "Arabic", pct_sw = "Swahili"),
+    language = factor(language, levels = c("English", "French", "Arabic", "Swahili"))
+  )
+
+ggplot(dropoff, aes(x = adm_level, y = pct, group = country, color = country)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 2.5) +
+  facet_wrap(~ language, nrow = 1) +
+  scale_y_continuous(limits = c(0, NA)) +
+  labs(x = "Administrative level", y = "% with Wikipedia article",
+       color = "Country") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+
+### English vs French vs Arabic vs Swahili: side-by-side
+
+```{r}
+#| label: fig-quadrilingual-bars
+#| fig-width: 14
+#| fig-height: 12
+#| fig-cap: "Wikipedia coverage by country, admin level, and language"
+quad_data <- all_data |>
+  group_by(country, adm_level) |>
+  summarise(
+    n_units    = n(),
+    English    = round(100 * sum(en, na.rm = TRUE) / n(), 1),
+    French     = round(100 * sum(fr, na.rm = TRUE) / n(), 1),
+    Arabic     = round(100 * sum(ar, na.rm = TRUE) / n(), 1),
+    Swahili    = round(100 * sum(sw, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  pivot_longer(
+    cols      = c(English, French, Arabic, Swahili),
+    names_to  = "language",
+    values_to = "pct"
+  ) |>
+  mutate(
+    language = factor(language, levels = c("English", "French", "Arabic", "Swahili")),
+    country  = reorder(country, pct, FUN = max)
+  )
+
+ggplot(quad_data, aes(x = pct, y = country, fill = language)) +
+  geom_col(position = position_dodge2(preserve = "single", padding = 0.1)) +
+  facet_wrap(~ adm_level) +
+  scale_fill_manual(values = c(English = "#4477AA", French = "#EE6677",
+                               Arabic = "#228833", Swahili = "#CCBB44")) +
+  labs(x = "% of units with Wikipedia article", y = NULL, fill = "Language") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom",
+        axis.text.y = element_text(size = 7))
+```
+
+
+## Wikidata population statistics {#sec-population}
+
+How many SSA administrative units have population data (P1082) on Wikidata,
+and how current is it?
+
+```{r}
+#| label: load-quality-helpers
+#| cache: false
+source("src/admin-article-quality.R")
+```
+
+```{r}
+#| label: fetch-population
+#| cache: true
+ssa_all_qids <- all_data$qid
+
+ssa_pop <- fetch_wikidata_population(
+  qids       = ssa_all_qids,
+  cache_file = file.path(cache_dir, "ssa_population_wikidata.rds"),
+  batch_size = 200
+)
+
+all_data_pop <- all_data |>
+  left_join(ssa_pop, by = "qid")
+```
+
+### Population coverage by country
+
+```{r}
+#| label: tbl-pop-coverage
+all_data_pop |>
+  group_by(country, adm_level) |>
+  summarise(
+    n_units       = n(),
+    has_pop       = sum(!is.na(population)),
+    pct_has_pop   = round(100 * has_pop / n_units, 1),
+    median_pop    = median(population, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  arrange(country, adm_level) |>
+  knitr::kable(caption = "Wikidata population coverage by country and admin level")
+```
+
+### How current is the population data?
+
+```{r}
+#| label: fig-pop-year-dist
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Distribution of population data year on Wikidata"
+all_data_pop |>
+  filter(!is.na(pop_year)) |>
+  count(adm_level, pop_year) |>
+  ggplot(aes(x = pop_year, y = n)) +
+  geom_col() +
+  facet_wrap(~ adm_level) +
+  labs(x = "Census / estimate year", y = "Number of admin units") +
+  theme_minimal(base_size = 12)
+```
+
+
+## Article quality analysis {#sec-article-quality}
+
+For administrative units that have Wikipedia articles in the four featured
+languages (English, French, Arabic, Swahili), we fetch the article wikitext
+and compute quality metrics: article length, citation count, and infobox
+field coverage.
+
+```{r}
+#| label: ssa-article-quality
+#| cache: true
+
+# Collect all cache file paths
+ssa_cache_files <- c(
+  file.path(cache_dir, paste0("ssa_adm2_", ssa_adm2_registry$slug, ".rds")),
+  file.path(cache_dir, paste0("ssa_adm3_", ssa_adm3_registry$slug, ".rds"))
+)
+ssa_cache_files <- ssa_cache_files[file.exists(ssa_cache_files)]
+
+ssa_quality <- run_article_quality_pipeline(
+  cache_files        = ssa_cache_files,
+  languages          = featured_langs,
+  wikitext_cache_base = "wikipedia-pages/ssa_admin",
+  quality_cache_file  = file.path(cache_dir, "ssa_article_quality.rds"),
+  delay              = 0.5
+)
+```
+
+```{r}
+#| label: ssa-quality-join
+#| cache: false
+ssa_quality_joined <- ssa_quality |>
+  left_join(
+    all_data |>
+      select(qid, country, adm_level, class_label) |>
+      distinct(),
+    by = "qid"
+  )
+```
+
+### Article counts by language
+
+```{r}
+#| label: tbl-article-counts-lang
+ssa_quality_joined |>
+  mutate(language = featured_labels[lang]) |>
+  group_by(country, adm_level, language) |>
+  summarise(n_articles = n(), .groups = "drop") |>
+  pivot_wider(names_from = language, values_from = n_articles, values_fill = 0L) |>
+  arrange(country, adm_level) |>
+  knitr::kable(caption = "Number of articles fetched per country, level, and language")
+```
+
+### Article length
+
+```{r}
+#| label: fig-article-length
+#| fig-width: 12
+#| fig-height: 12
+#| fig-cap: "Article length (characters) by country, admin level, and language"
+ssa_quality_joined |>
+  filter(!is.na(n_chars)) |>
+  mutate(
+    language = featured_labels[lang],
+    country  = reorder(country, n_chars, FUN = median, na.rm = TRUE)
+  ) |>
+  ggplot(aes(x = n_chars, y = country, fill = language)) +
+  geom_boxplot(outlier.size = 0.3, alpha = 0.7) +
+  scale_x_log10(labels = scales::comma) +
+  facet_wrap(~ adm_level) +
+  labs(x = "Article length (characters, log scale)", y = NULL, fill = "Language") +
+  theme_minimal(base_size = 10) +
+  theme(legend.position = "bottom",
+        axis.text.y = element_text(size = 7))
+```
+
+### Citation density
+
+```{r}
+#| label: tbl-citation-summary
+ssa_quality_joined |>
+  mutate(language = featured_labels[lang]) |>
+  group_by(language, adm_level) |>
+  summarise(
+    n_articles      = n(),
+    median_chars    = median(n_chars, na.rm = TRUE),
+    median_citations = median(n_citations, na.rm = TRUE),
+    median_refs     = median(n_refs, na.rm = TRUE),
+    pct_zero_refs   = round(100 * sum(n_refs == 0, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  knitr::kable(caption = "Article quality summary by language and admin level")
+```
+
+```{r}
+#| label: fig-chars-vs-refs
+#| fig-width: 10
+#| fig-height: 7
+#| fig-cap: "Article length vs number of references"
+ssa_quality_joined |>
+  filter(!is.na(n_chars), n_chars > 0) |>
+  mutate(language = featured_labels[lang]) |>
+  ggplot(aes(x = n_chars, y = n_refs, color = adm_level)) +
+  geom_point(alpha = 0.3, size = 0.8) +
+  scale_x_log10(labels = scales::comma) +
+  scale_y_log10() +
+  facet_wrap(~ language) +
+  labs(x = "Article length (characters)", y = "Number of references",
+       color = "Admin level") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+
+## Infobox field coverage {#sec-infobox-coverage}
+
+### Infobox presence
+
+```{r}
+#| label: tbl-infobox-presence
+ssa_quality_joined |>
+  mutate(language = featured_labels[lang]) |>
+  group_by(language, adm_level) |>
+  summarise(
+    n_articles     = n(),
+    n_with_infobox = sum(has_infobox, na.rm = TRUE),
+    pct_infobox    = round(100 * n_with_infobox / n_articles, 1),
+    median_fields  = median(n_infobox_fields[has_infobox], na.rm = TRUE),
+    mean_fields    = round(mean(n_infobox_fields[has_infobox], na.rm = TRUE), 1),
+    .groups = "drop"
+  ) |>
+  knitr::kable(caption = "Infobox presence and field count by language and admin level")
+```
+
+### Top infobox fields by language
+
+```{r}
+#| label: fig-infobox-fields-en
+#| fig-width: 10
+#| fig-height: 10
+#| fig-cap: "Top 30 infobox fields across English Wikipedia SSA admin-unit articles"
+en_field_freq <- ssa_quality_joined |>
+  filter(lang == "en", has_infobox) |>
+  summarise_infobox_coverage()
+
+en_field_freq |>
+  slice_head(n = 30) |>
+  mutate(field = forcats::fct_reorder(field, n)) |>
+  ggplot(aes(x = n, y = field)) +
+  geom_col() +
+  labs(x = "Number of articles with field", y = NULL,
+       title = "Top 30 infobox fields — English Wikipedia SSA admin-unit articles") +
+  theme_minimal(base_size = 11)
+```
+
+```{r}
+#| label: fig-infobox-fields-fr
+#| fig-width: 10
+#| fig-height: 10
+#| fig-cap: "Top 30 infobox fields across French Wikipedia SSA admin-unit articles"
+fr_field_freq <- ssa_quality_joined |>
+  filter(lang == "fr", has_infobox) |>
+  summarise_infobox_coverage()
+
+fr_field_freq |>
+  slice_head(n = 30) |>
+  mutate(field = forcats::fct_reorder(field, n)) |>
+  ggplot(aes(x = n, y = field)) +
+  geom_col() +
+  labs(x = "Number of articles with field", y = NULL,
+       title = "Top 30 infobox fields — French Wikipedia SSA admin-unit articles") +
+  theme_minimal(base_size = 11)
+```
+
+### Infobox field count by country
+
+```{r}
+#| label: fig-infobox-fields-by-country
+#| fig-width: 14
+#| fig-height: 14
+#| fig-cap: "Number of infobox fields filled, by country and language"
+ssa_quality_joined |>
+  filter(has_infobox) |>
+  mutate(
+    language = featured_labels[lang],
+    country  = reorder(country, n_infobox_fields, FUN = median, na.rm = TRUE)
+  ) |>
+  ggplot(aes(x = n_infobox_fields, y = country, fill = language)) +
+  geom_boxplot(outlier.size = 0.3, alpha = 0.7) +
+  facet_wrap(~ adm_level) +
+  labs(x = "Number of non-blank infobox fields", y = NULL, fill = "Language") +
+  theme_minimal(base_size = 10) +
+  theme(legend.position = "bottom",
+        axis.text.y = element_text(size = 7))
+```
+
+
+## Appendix {#sec-appendix}
+
+### Registries
+
+```{r}
+#| label: appendix-registries
+#| cache: false
+bind_rows(
+  ssa_adm2_registry |> mutate(tier = "SSA ADM2"),
+  ssa_adm3_registry |> mutate(tier = "SSA ADM3")
+) |>
+  select(tier, country, class_qid, class_label, n_expected) |>
+  knitr::kable(caption = "All class registries used in this analysis")
+```
+
+### Countries excluded from analysis
+
+| Country | Reason |
+|---------|--------|
+| Central African Republic | Sub-prefecture class (Q2355265) has 0 instances on Wikidata |
+| Eswatini | No ADM2 class (tinkhundla) found on Wikidata |
+| Comoros | No ADM2 class found on Wikidata |
+
+### ADM3 exclusions (within top 10 by population)
+
+| Country | Reason |
+|---------|--------|
+| Kenya | Sub-county class (Q7630574) has 0 instances; counties (47) are finest level |
+| Ghana | No ADM3 class found on Wikidata |
+
+### Notes on class selection
+
+- **Kenya**: Counties (47) are constitutionally ADM1. No sub-county class is
+  populated on Wikidata, so counties serve as the finest available unit.
+- **Sudan**: States (19) are ADM1. Districts (Q505830, 202) are used as ADM3.
+- **South Africa**: District municipalities (47) are ADM2; local municipalities
+  (245) are ADM3.
+- **DRC**: Communes (74) as ADM2; territories (146) as ADM3. Provinces (32)
+  are ADM1.
+- **Mali**: Communes (706) — unusually large ADM2 due to Mali's flat hierarchy.
+- **Nigeria**: LGAs (817) at ADM2; wards (3,326) at ADM3 — both are large
+  fetches.
+- **Tanzania**: Districts (199) at ADM2; wards (4,187) at ADM3 — wards are the
+  single largest class in this analysis.
+
+### Session info
+
+```{r}
+#| label: session-info
+#| cache: false
+sessionInfo()
+```

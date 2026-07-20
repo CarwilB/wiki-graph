@@ -1,0 +1,12 @@
+httr
+jsonlite
+dplyr
+stringr
+purrr
+tidyr
+ggplot2
+WikipediR
+tibble
+patchwork
+rnaturalearth
+sf

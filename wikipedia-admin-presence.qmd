@@ -1,0 +1,1373 @@
+---
+title: "Wikipedia Presence of Latin American Administrative Divisions"
+author: "wiki-graph"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+execute:
+  cache: true
+  warning: false
+  message: false
+knitr:
+  opts_chunk:
+    cache.path: "data/cache/knitr/"
+---
+
+```{r}
+#| label: setup
+#| cache: false
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(stringr)
+library(purrr)
+library(tidyr)
+library(ggplot2)
+
+source("wikidata_presence_matrix.R")
+source("R/get_wikidata_instances.R")
+source("src/wikipedia-tools.R")
+```
+
+## Shared infrastructure
+
+The pipeline uses two helper files already in this project:
+
+- `wikidata_presence_matrix.R` — builds a presence/absence matrix of Wikipedia
+  sitelinks for all instances of a Wikidata class.
+- `R/get_wikidata_instances.R` — batched `wbgetentities` fetcher with resume
+  support.
+
+Below we define three reusable pieces: a lightweight SPARQL helper, an
+RDS-backed fetch-or-resume wrapper, and a combiner that aligns heterogeneous
+language columns across classes.
+
+```{r}
+#| label: helpers
+#| cache: false
+cache_dir <- "data/cache"
+dir.create(cache_dir, showWarnings = FALSE, recursive = TRUE)
+
+# ---- SPARQL helper ----------------------------------------------------------
+sparql_query <- function(query) {
+  r <- GET(
+    "https://query.wikidata.org/sparql",
+    query = list(query = query, format = "json"),
+    user_agent("wiki-graph-admin-presence")
+  )
+  if (status_code(r) != 200) stop("SPARQL query failed: HTTP ", status_code(r))
+  res <- fromJSON(content(r, "text", encoding = "UTF-8"))
+  if (length(res$results$bindings) == 0) return(tibble())
+  as_tibble(res$results$bindings) |>
+    mutate(across(everything(), ~ .x$value))
+}
+
+# ---- Fetch or resume --------------------------------------------------------
+# Each registry entry is one cache file. On first run the full presence matrix
+# is fetched from the Wikidata API; on subsequent runs, the cached RDS is
+# loaded and any missing QIDs are back-filled via resume.
+fetch_or_resume <- function(class_qid, slug, n_expected,
+                            prefix     = "sa_adm2",
+                            languages  = NULL,
+                            batch_size = 30,
+                            limit      = 2000) {
+  cache_file <- file.path(cache_dir, paste0(prefix, "_", slug, ".rds"))
+
+  if (file.exists(cache_file)) {
+    partial <- readRDS(cache_file)
+    n_done  <- nrow(partial$instances)
+    message(slug, ": cache hit (", n_done, "/~", n_expected, " items). ",
+            "Resuming if incomplete…")
+    result <- resume_wikidata_instance_wikipedia_presence(
+      partial_result = partial,
+      class_qid      = class_qid,
+      languages      = languages,
+      limit          = limit,
+      batch_size     = batch_size
+    )
+  } else {
+    message(slug, ": no cache. Fetching fresh…")
+    result <- wikidata_instance_wikipedia_presence(
+      class_qid  = class_qid,
+      languages  = languages,
+      limit      = limit,
+      batch_size = batch_size
+    )
+  }
+
+  saveRDS(result, cache_file)
+  message(slug, ": done — ", nrow(result$data), " items → ", cache_file)
+  result
+}
+
+# ---- Combiner ---------------------------------------------------------------
+# Rows from different classes may have different language columns. This aligns
+# them and fills absent languages with 0.
+combine_presence_data <- function(results_list, registry) {
+  imap_dfr(results_list, function(result, slug) {
+    meta <- registry |> filter(slug == !!slug)
+    result$data |>
+      mutate(
+        country     = meta$country,
+        country_qid = meta$country_qid,
+        class_qid   = meta$class_qid,
+        class_label = meta$class_label,
+        slug        = slug,
+        .before     = everything()
+      )
+  }) |>
+    mutate(across(where(is.integer), ~ replace_na(.x, 0L)))
+}
+```
+
+## South America — ADM2 {#sec-sa-adm2}
+
+Second-level administrative divisions (provinces, departments, cantons,
+municipalities, etc.) for 10 South American countries. Argentina is split into
+two classes because Buenos Aires Province uses *partidos* rather than
+departments.
+
+Guyana is omitted (P150 hierarchy not populated on Wikidata).
+
+```{r}
+#| label: sa-adm2-registry
+sa_adm2_registry <- tribble(
+  ~country,    ~country_qid, ~class_qid,   ~class_label,                        ~n_expected, ~slug,
+  "Argentina", "Q414",       "Q952274",    "department of Argentina",            386L,        "argentina_dept",
+  "Argentina", "Q414",       "Q13997861",  "partido of Buenos Aires Province",   135L,        "argentina_partido",
+  "Bolivia",   "Q750",       "Q1062593",   "province of Bolivia",                112L,        "bolivia_prov",
+  "Chile",     "Q298",       "Q1153408",   "province of Chile",                   57L,        "chile_prov",
+  "Colombia",  "Q739",       "Q2555896",   "municipality of Colombia",          1107L,        "colombia_muni",
+  "Ecuador",   "Q736",       "Q1724017",   "canton of Ecuador",                  222L,        "ecuador_canton",
+  "Paraguay",  "Q733",       "Q917092",    "municipality of Paraguay",           268L,        "paraguay_muni",
+  "Peru",      "Q419",       "Q509686",    "province of Peru",                   205L,        "peru_prov",
+  "Suriname",  "Q730",       "Q1539014",   "ressort of Suriname",                 64L,        "suriname_ressort",
+  "Uruguay",   "Q77",        "Q3685434",   "municipality of Uruguay",            126L,        "uruguay_muni",
+  "Venezuela", "Q717",       "Q3327920",   "municipality of Venezuela",          352L,        "venezuela_muni"
+)
+```
+
+```{r}
+#| label: sa-adm2-fetch
+#| cache: true
+#| cache-extra: !expr digest::digest(sa_adm2_registry)
+sa_adm2_results <- list()
+
+for (i in seq_len(nrow(sa_adm2_registry))) {
+  entry <- sa_adm2_registry[i, ]
+  sa_adm2_results[[entry$slug]] <- fetch_or_resume(
+    class_qid  = entry$class_qid,
+    slug       = entry$slug,
+    n_expected = entry$n_expected,
+    prefix     = "sa_adm2",
+    batch_size = 30,
+    limit      = 2000
+  )
+}
+
+sa_adm2_all <- combine_presence_data(sa_adm2_results, sa_adm2_registry) |>
+  mutate(adm_level = "ADM2", region = "South America", .before = everything())
+saveRDS(sa_adm2_all, file.path(cache_dir, "sa_adm2_all.rds"))
+```
+
+```{r}
+#| label: sa-adm2-summary
+sa_adm2_all |>
+  group_by(country, class_label) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    es = sum(es, na.rm = TRUE),
+    pt = if ("pt" %in% names(pick(everything()))) sum(pt, na.rm = TRUE) else NA_integer_,
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_es = round(100 * es / n_units, 1)
+  ) |>
+  knitr::kable(caption = "SA ADM2: Wikipedia coverage by country and class")
+```
+
+
+## South America — ADM3 {#sec-sa-adm3}
+
+Third-level divisions (municipalities, communes, districts, parishes) for South
+American countries where a standard ADM3 exists on Wikidata.
+
+Not all countries have a standard ADM3 tier:
+
+- **Included**: Argentina (83 municipalities typed on Wikidata — partial),
+  Bolivia, Chile, Colombia (corregimientos — partial), Ecuador, Peru, Venezuela.
+- **Excluded**: Paraguay (no ADM3 class below municipalities), Suriname
+  (nothing below ressorts), Uruguay (no standard ADM3).
+
+::: {.callout-note}
+Argentina's 83 municipalities on Wikidata represent a small fraction of the
+\~2,300 actual municipalities. Colombia's corregimientos (108) are also sparse.
+Coverage numbers for these two countries should be read with that caveat.
+:::
+
+```{r}
+#| label: sa-adm3-registry
+sa_adm3_registry <- tribble(
+  ~country,    ~country_qid, ~class_qid,  ~class_label,                ~n_expected, ~slug,
+  "Argentina", "Q414",       "Q3243765",  "municipality in Argentina",       83L,   "argentina_muni",
+  "Bolivia",   "Q750",       "Q1062710",  "municipality of Bolivia",        341L,   "bolivia_muni",
+  "Chile",     "Q298",       "Q1840161",  "commune of Chile",               485L,   "chile_commune",
+  "Colombia",  "Q739",       "Q5172823",  "corregimiento of Colombia",      108L,   "colombia_correg",
+  "Ecuador",   "Q736",       "Q2579179",  "parish of Ecuador",              568L,   "ecuador_parish",
+  "Peru",      "Q419",       "Q2179958",  "district of Peru",              1892L,   "peru_district",
+  "Venezuela", "Q717",       "Q6063801",  "parish of Venezuela",           1185L,   "venezuela_parish"
+)
+```
+
+```{r}
+#| label: sa-adm3-fetch
+#| cache: true
+#| cache-extra: !expr digest::digest(sa_adm3_registry)
+sa_adm3_results <- list()
+
+for (i in seq_len(nrow(sa_adm3_registry))) {
+  entry <- sa_adm3_registry[i, ]
+  sa_adm3_results[[entry$slug]] <- fetch_or_resume(
+    class_qid  = entry$class_qid,
+    slug       = entry$slug,
+    n_expected = entry$n_expected,
+    prefix     = "sa_adm3",
+    batch_size = 30,
+    limit      = 3000
+  )
+}
+
+sa_adm3_all <- combine_presence_data(sa_adm3_results, sa_adm3_registry) |>
+  mutate(adm_level = "ADM3", region = "South America", .before = everything())
+saveRDS(sa_adm3_all, file.path(cache_dir, "sa_adm3_all.rds"))
+```
+
+```{r}
+#| label: sa-adm3-summary
+sa_adm3_all |>
+  group_by(country, class_label) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    es = sum(es, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_es = round(100 * es / n_units, 1)
+  ) |>
+  knitr::kable(caption = "SA ADM3: Wikipedia coverage by country and class")
+```
+
+
+## Mexico, Central America & Caribbean — ADM2 {#sec-newc-adm2}
+
+Second-level administrative divisions for 12 additional countries. Class QIDs
+were validated via direct P31 SPARQL counts (June 2026).
+
+Belize is excluded — its 6 districts are ADM1, with no standard ADM2 below
+them. El Salvador's 45 Wikidata-typed municipalities (of \~262 actual) represent
+partial coverage.
+
+```{r}
+#| label: newc-adm2-registry
+newc_adm2_registry <- tribble(
+  ~country,             ~country_qid, ~class_qid,   ~class_label,                                ~n_expected, ~slug,
+  "Mexico",             "Q96",        "Q1952852",   "municipality of Mexico",                     2465L,       "mexico_muni",
+  "Mexico",             "Q96",        "Q2734310",   "territorial demarcation of Mexico City",        16L,       "mexico_cdmx",
+  "Guatemala",          "Q774",       "Q1872284",   "municipality of Guatemala",                   341L,       "guatemala_muni",
+  "El Salvador",        "Q792",       "Q3556889",   "municipality of El Salvador",                  45L,       "elsalvador_muni",
+  "Honduras",           "Q783",       "Q2602693",   "municipality of Honduras",                    298L,       "honduras_muni",
+  "Nicaragua",          "Q811",       "Q318727",    "municipality of Nicaragua",                   153L,       "nicaragua_muni",
+  "Costa Rica",         "Q800",       "Q953822",    "canton of Costa Rica",                         84L,       "costarica_canton",
+  "Panama",             "Q804",       "Q3710488",   "district of Panama",                           81L,       "panama_district",
+  "Cuba",               "Q241",       "Q558330",    "municipality of Cuba",                        171L,       "cuba_muni",
+  "Dominican Republic", "Q786",       "Q6005581",   "municipality of the Dominican Republic",      157L,       "domrep_muni",
+  "Haiti",              "Q790",       "Q1665357",   "arrondissement of Haiti",                      43L,       "haiti_arrond",
+  "Puerto Rico",        "Q1183",      "Q263639",    "municipality of Puerto Rico",                  78L,       "puertorico_muni"
+)
+```
+
+```{r}
+#| label: newc-adm2-fetch
+#| cache: true
+#| cache-extra: !expr digest::digest(newc_adm2_registry)
+newc_adm2_results <- list()
+
+for (i in seq_len(nrow(newc_adm2_registry))) {
+  entry <- newc_adm2_registry[i, ]
+  newc_adm2_results[[entry$slug]] <- fetch_or_resume(
+    class_qid  = entry$class_qid,
+    slug       = entry$slug,
+    n_expected = entry$n_expected,
+    prefix     = "newc_adm2",
+    batch_size = 30,
+    limit      = 3000
+  )
+}
+
+newc_adm2_all <- combine_presence_data(newc_adm2_results, newc_adm2_registry) |>
+  mutate(adm_level = "ADM2", region = "Central America & Caribbean",
+         .before = everything())
+saveRDS(newc_adm2_all, file.path(cache_dir, "newc_adm2_all.rds"))
+```
+
+```{r}
+#| label: newc-adm2-summary
+newc_adm2_all |>
+  group_by(country, class_label) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    es = sum(es, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_es = round(100 * es / n_units, 1)
+  ) |>
+  knitr::kable(caption = "New countries ADM2: Wikipedia coverage")
+```
+
+
+## Mexico, Central America & Caribbean — ADM3 {#sec-newc-adm3}
+
+Third-level divisions for the subset of new countries where a viable ADM3 class
+exists on Wikidata. Countries without a standard or sufficiently populated ADM3
+are excluded:
+
+- **Included**: Costa Rica (districts, 495), Panama (corregimientos, 698),
+  Haiti (communes, 146), Puerto Rico (barrios, 827).
+- **Excluded**: Mexico (75,898 localities — too large), Guatemala (no ADM3
+  class), El Salvador (16 cantons — too sparse), Honduras (3 aldeas — too
+  sparse), Nicaragua (no class), Cuba (no class), Dominican Republic (no class).
+
+```{r}
+#| label: newc-adm3-registry
+newc_adm3_registry <- tribble(
+  ~country,       ~country_qid, ~class_qid,  ~class_label,                ~n_expected, ~slug,
+  "Costa Rica",   "Q800",       "Q2292572",  "district of Costa Rica",          495L,  "costarica_district",
+  "Panama",       "Q804",       "Q3685463",  "corregimiento of Panama",         698L,  "panama_correg",
+  "Haiti",        "Q790",       "Q3685462",  "commune of Haiti",                146L,  "haiti_commune",
+  "Puerto Rico",  "Q1183",      "Q3677932",  "barrio of Puerto Rico",           827L,  "puertorico_barrio"
+)
+```
+
+```{r}
+#| label: newc-adm3-fetch
+#| cache: true
+#| cache-extra: !expr digest::digest(newc_adm3_registry)
+newc_adm3_results <- list()
+
+for (i in seq_len(nrow(newc_adm3_registry))) {
+  entry <- newc_adm3_registry[i, ]
+  newc_adm3_results[[entry$slug]] <- fetch_or_resume(
+    class_qid  = entry$class_qid,
+    slug       = entry$slug,
+    n_expected = entry$n_expected,
+    prefix     = "newc_adm3",
+    batch_size = 30,
+    limit      = 2000
+  )
+}
+
+newc_adm3_all <- combine_presence_data(newc_adm3_results, newc_adm3_registry) |>
+  mutate(adm_level = "ADM3", region = "Central America & Caribbean",
+         .before = everything())
+saveRDS(newc_adm3_all, file.path(cache_dir, "newc_adm3_all.rds"))
+```
+
+```{r}
+#| label: newc-adm3-summary
+newc_adm3_all |>
+  group_by(country, class_label) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    es = sum(es, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_es = round(100 * es / n_units, 1)
+  ) |>
+  knitr::kable(caption = "New countries ADM3: Wikipedia coverage")
+```
+
+
+## Brazil — ADM2 {#sec-brazil}
+
+Brazil has \~5,570 municipalities (Q3184121), far more than any other country in
+this analysis. The data has been fetched and cached; this section loads from
+cache. To re-fetch, run `fetch_or_resume()` with prefix `"sa_adm2"` and slug
+`"brazil_muni"`.
+
+```{r}
+#| label: brazil-load
+#| cache: true
+brazil_cache <- file.path(cache_dir, "sa_adm2_brazil_df.rds")
+
+if (file.exists(brazil_cache)) {
+  brazil_df <- readRDS(brazil_cache)
+  # Ensure consistent column structure
+  if (!"adm_level" %in% names(brazil_df)) {
+    brazil_df <- brazil_df |>
+      mutate(adm_level = "ADM2", region = "South America", .before = everything())
+  }
+  cat("Brazil loaded from cache:", nrow(brazil_df), "municipalities\n")
+} else {
+  message("Brazil cache not found at ", brazil_cache, ". ",
+          "Run the fetch block below to populate it.")
+  brazil_df <- NULL
+}
+```
+
+```{r}
+#| label: brazil-fetch
+#| eval: false
+# Run this block manually when ready (~20-40 min).
+# The result is saved to data/cache/sa_adm2_brazil_muni.rds and a flat
+# data frame to data/cache/sa_adm2_brazil_df.rds.
+brazil_result <- fetch_or_resume(
+  class_qid  = "Q3184121",
+  slug       = "brazil_muni",
+  n_expected = 5570L,
+  prefix     = "sa_adm2",
+  batch_size = 20,
+  limit      = 6000
+)
+
+brazil_df <- brazil_result$data |>
+  mutate(
+    country     = "Brazil",
+    country_qid = "Q155",
+    class_qid   = "Q3184121",
+    class_label = "municipality of Brazil",
+    slug        = "brazil_muni",
+    adm_level   = "ADM2",
+    region      = "South America",
+    .before     = everything()
+  )
+saveRDS(brazil_df, file.path(cache_dir, "sa_adm2_brazil_df.rds"))
+```
+
+```{r}
+#| label: brazil-summary
+if (!is.null(brazil_df)) {
+  brazil_df |>
+    summarise(
+      n_units = n(),
+      en = sum(en, na.rm = TRUE),
+      es = if ("es" %in% names(pick(everything()))) sum(es, na.rm = TRUE) else NA_integer_,
+      pt = if ("pt" %in% names(pick(everything()))) sum(pt, na.rm = TRUE) else NA_integer_
+    ) |>
+    mutate(
+      pct_en = round(100 * en / n_units, 1),
+      pct_pt = round(100 * pt / n_units, 1)
+    ) |>
+    knitr::kable(caption = "Brazil ADM2: Wikipedia coverage")
+}
+```
+
+
+## Combined analysis {#sec-analysis}
+
+```{r}
+#| label: combine-all
+#| cache: false
+all_tiers <- list(sa_adm2_all, sa_adm3_all, newc_adm2_all, newc_adm3_all)
+if (!is.null(brazil_df)) all_tiers <- c(all_tiers, list(brazil_df))
+
+all_data <- bind_rows(all_tiers)
+
+# Identify language columns (integer 0/1 columns that aren't metadata)
+meta_cols <- c("adm_level", "region", "country", "country_qid", "class_qid",
+               "class_label", "slug", "qid", "label_en", "label_es")
+lang_names <- setdiff(names(all_data), meta_cols) |>
+  {\(x) x[map_lgl(x, ~ is.integer(all_data[[.x]]))]}()
+
+# Remove "commons" if present (Wikimedia Commons, not a Wikipedia)
+lang_names <- setdiff(lang_names, "commons")
+
+# Ensure the three key languages exist as columns
+for (lang in c("en", "es", "pt")) {
+  if (!lang %in% names(all_data)) all_data[[lang]] <- 0L
+}
+```
+
+### Coverage by country and admin level
+
+```{r}
+#| label: coverage-data
+library(rnaturalearth)
+library(sf)
+library(patchwork)
+
+coverage <- all_data |>
+  group_by(region, country, adm_level) |>
+  summarise(
+    n_units = n(),
+    pct_en  = round(100 * sum(en, na.rm = TRUE) / n(), 1),
+    pct_es  = round(100 * sum(es, na.rm = TRUE) / n(), 1),
+    pct_pt  = round(100 * sum(pt, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  pivot_longer(
+    cols      = starts_with("pct_"),
+    names_to  = "language",
+    values_to = "pct"
+  ) |>
+  mutate(
+    language = recode(language,
+      pct_en = "English", pct_es = "Spanish", pct_pt = "Portuguese"),
+    language = factor(language, levels = c("English", "Spanish", "Portuguese")),
+    label    = paste0(round(pct), "%")
+  )
+
+# Country name → ISO 3166-1 alpha-3
+latam_iso <- c(
+  "Argentina" = "ARG", "Bolivia"   = "BOL", "Brazil"       = "BRA",
+  "Chile"     = "CHL", "Colombia"  = "COL", "Ecuador"      = "ECU",
+  "Paraguay"  = "PRY", "Peru"      = "PER", "Suriname"     = "SUR",
+  "Uruguay"   = "URY", "Venezuela" = "VEN",
+  "Mexico"    = "MEX", "Guatemala" = "GTM", "El Salvador"  = "SLV",
+  "Honduras"  = "HND", "Nicaragua" = "NIC", "Costa Rica"   = "CRI",
+  "Panama"    = "PAN", "Cuba"      = "CUB",
+  "Dominican Republic" = "DOM", "Haiti" = "HTI", "Puerto Rico" = "PRI"
+)
+
+# Country polygons for the full region (including Brazil as geographic context)
+latam_sf <- ne_countries(scale = "medium", returnclass = "sf") |>
+  filter(iso_a3 %in% latam_iso) |>
+  select(iso_a3, geometry)
+
+# Interior label points (avoids placing centroids outside concave polygons)
+label_pts <- latam_sf |>
+  st_point_on_surface() |>
+  mutate(
+    lon = st_coordinates(geometry)[, 1],
+    lat = st_coordinates(geometry)[, 2]
+  ) |>
+  st_drop_geometry()
+
+latam_bbox <- st_bbox(latam_sf)
+
+# Join coverage data onto the sf for one language × ADM-level panel
+make_coverage_sf <- function(lang, adm) {
+  cov <- coverage |>
+    filter(language == lang, adm_level == adm) |>
+    mutate(iso_a3 = latam_iso[country]) |>
+    select(iso_a3, pct, label)
+
+  latam_sf |>
+    left_join(cov,       by = "iso_a3") |>
+    left_join(label_pts, by = "iso_a3")
+}
+
+# Choropleth: country polygons filled by % with article.
+# Text is white on dark fills (pct > 55) and black on light fills.
+choropleth_map <- function(lang, adm) {
+  df <- make_coverage_sf(lang, adm)
+  ggplot(df) +
+    geom_sf(aes(fill = pct), color = "white", linewidth = 0.3) +
+    geom_text(
+      aes(x = lon, y = lat, label = label, color = coalesce(pct, 0) > 55),
+      size = 2.2, fontface = "bold", na.rm = TRUE
+    ) +
+    scale_color_manual(
+      values = c("TRUE" = "white", "FALSE" = "black"),
+      guide  = "none"
+    ) +
+    scale_fill_gradient(
+      low      = "#f7fbff",
+      high     = "#08519c",
+      limits   = c(0, 100),
+      name     = "% covered",
+      na.value = "grey85"
+    ) +
+    coord_sf(
+      xlim = c(latam_bbox["xmin"], latam_bbox["xmax"]),
+      ylim = c(latam_bbox["ymin"], latam_bbox["ymax"]),
+      expand = FALSE
+    ) +
+    labs(title = adm, x = NULL, y = NULL) +
+    theme_void(base_size = 11) +
+    theme(
+      plot.title       = element_text(hjust = 0.5, face = "bold", size = 12),
+      legend.position  = "bottom",
+      legend.key.width = unit(1.5, "cm")
+    )
+}
+```
+
+```{r}
+#| label: fig-coverage-heatmap-en
+#| fig-width: 12
+#| fig-height: 8
+#| fig-cap: "English Wikipedia coverage of ADM2 and ADM3 administrative units by country"
+choropleth_map("English", "ADM2") + choropleth_map("English", "ADM3") +
+  plot_layout(guides = "collect") +
+  plot_annotation(title = "English Wikipedia") &
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| label: fig-coverage-heatmap-es
+#| fig-width: 12
+#| fig-height: 8
+#| fig-cap: "Spanish Wikipedia coverage of ADM2 and ADM3 administrative units by country"
+choropleth_map("Spanish", "ADM2") + choropleth_map("Spanish", "ADM3") +
+  plot_layout(guides = "collect") +
+  plot_annotation(title = "Spanish Wikipedia") &
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| label: fig-coverage-heatmap-pt
+#| fig-width: 12
+#| fig-height: 8
+#| fig-cap: "Portuguese Wikipedia coverage of ADM2 and ADM3 administrative units by country"
+choropleth_map("Portuguese", "ADM2") + choropleth_map("Portuguese", "ADM3") +
+  plot_layout(guides = "collect") +
+  plot_annotation(title = "Portuguese Wikipedia") &
+  theme(legend.position = "bottom")
+```
+
+### Unit counts
+
+```{r}
+#| label: tbl-unit-counts
+all_data |>
+  group_by(region, country, adm_level) |>
+  summarise(
+    n_units = n(),
+    en = sum(en, na.rm = TRUE),
+    es = sum(es, na.rm = TRUE),
+    pt = sum(pt, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    pct_en = round(100 * en / n_units, 1),
+    pct_es = round(100 * es / n_units, 1),
+    pct_pt = round(100 * pt / n_units, 1)
+  ) |>
+  arrange(region, country, adm_level) |>
+  knitr::kable(caption = "Coverage counts and percentages by country, level, and language")
+```
+
+
+### Language breadth
+
+How many Wikipedia language editions cover each administrative unit?
+
+```{r}
+#| label: compute-breadth
+#| cache: false
+breadth <- all_data |>
+  rowwise() |>
+  mutate(n_langs = sum(c_across(all_of(lang_names)), na.rm = TRUE)) |>
+  ungroup()
+```
+
+```{r}
+#| label: tbl-breadth
+breadth |>
+  group_by(region, country, adm_level) |>
+  summarise(
+    median_langs = median(n_langs),
+    mean_langs   = round(mean(n_langs), 1),
+    max_langs    = max(n_langs),
+    .groups = "drop"
+  ) |>
+  arrange(region, country, adm_level) |>
+  knitr::kable(caption = "Wikipedia language breadth per unit")
+```
+
+```{r}
+#| label: fig-breadth-boxplot
+#| fig-width: 10
+#| fig-height: 8
+#| fig-cap: "Language count per unit by country and admin level"
+breadth |>
+  mutate(country = reorder(country, n_langs, FUN = median)) |>
+  ggplot(aes(x = n_langs, y = country, fill = adm_level)) +
+  geom_boxplot(outlier.size = 0.5, alpha = 0.7) +
+  facet_grid(region ~ ., scales = "free_y", space = "free_y") +
+  labs(x = "Number of Wikipedia languages with an article",
+       y = NULL, fill = "Admin level") +
+  theme_minimal(base_size = 13)
+```
+
+
+### Top Wikipedia languages by geographic coverage
+
+Which language Wikipedias cover the most administrative units across all
+countries?
+
+```{r}
+#| label: tbl-top-languages
+all_data |>
+  summarise(across(all_of(lang_names), ~ sum(.x, na.rm = TRUE))) |>
+  pivot_longer(everything(), names_to = "language", values_to = "n_articles") |>
+  mutate(
+    pct_of_total = round(100 * n_articles / nrow(all_data), 1)
+  ) |>
+  arrange(desc(n_articles)) |>
+  slice_head(n = 25) |>
+  knitr::kable(caption = "Top 25 Wikipedia languages by number of admin-unit articles")
+```
+
+
+### ADM2 → ADM3 coverage drop-off
+
+For countries with both ADM2 and ADM3 data, how does Wikipedia coverage change
+at finer geographic granularity?
+
+```{r}
+#| label: fig-adm2-adm3-dropoff
+#| fig-width: 10
+#| fig-height: 7
+#| fig-cap: "Wikipedia coverage at ADM2 vs ADM3, by language"
+countries_with_both <- all_data |>
+  filter(adm_level %in% c("ADM2", "ADM3")) |>
+  group_by(country) |>
+  filter(n_distinct(adm_level) == 2) |>
+  pull(country) |>
+  unique()
+
+dropoff <- all_data |>
+  filter(country %in% countries_with_both) |>
+  group_by(region, country, adm_level) |>
+  summarise(
+    n_units = n(),
+    pct_en  = round(100 * sum(en, na.rm = TRUE) / n(), 1),
+    pct_es  = round(100 * sum(es, na.rm = TRUE) / n(), 1),
+    pct_pt  = round(100 * sum(pt, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  pivot_longer(
+    cols      = starts_with("pct_"),
+    names_to  = "language",
+    values_to = "pct"
+  ) |>
+  mutate(
+    language = recode(language,
+      pct_en = "English", pct_es = "Spanish", pct_pt = "Portuguese"),
+    language = factor(language, levels = c("English", "Spanish", "Portuguese"))
+  )
+
+ggplot(dropoff, aes(x = adm_level, y = pct, group = country, color = country)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 2.5) +
+  facet_grid(region ~ language, scales = "free_y", space = "free_y") +
+  scale_y_continuous(limits = c(0, NA)) +
+  labs(x = "Administrative level", y = "% with Wikipedia article",
+       color = "Country") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+
+### English vs Spanish vs Portuguese: side-by-side comparison
+
+```{r}
+#| label: fig-trilingual-bars
+#| fig-width: 12
+#| fig-height: 9
+#| fig-cap: "English, Spanish, and Portuguese Wikipedia coverage by country and admin level"
+tri_data <- all_data |>
+  group_by(region, country, adm_level) |>
+  summarise(
+    n_units = n(),
+    English    = round(100 * sum(en, na.rm = TRUE) / n(), 1),
+    Spanish    = round(100 * sum(es, na.rm = TRUE) / n(), 1),
+    Portuguese = round(100 * sum(pt, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  pivot_longer(
+    cols      = c(English, Spanish, Portuguese),
+    names_to  = "language",
+    values_to = "pct"
+  ) |>
+  mutate(
+    language = factor(language, levels = c("English", "Spanish", "Portuguese")),
+    country  = reorder(country, pct, FUN = max)
+  )
+
+ggplot(tri_data, aes(x = pct, y = country, fill = language)) +
+  geom_col(position = position_dodge2(preserve = "single", padding = 0.1)) +
+  facet_grid(region ~ adm_level, scales = "free_y", space = "free_y") +
+  scale_fill_manual(values = c(English = "#4477AA", Spanish = "#EE6677",
+                               Portuguese = "#228833")) +
+  labs(x = "% of units with Wikipedia article", y = NULL, fill = "Language") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+
+## Wikidata population statistics {#sec-population}
+
+How many of these administrative units have population data (P1082) on Wikidata,
+and how current is it?
+
+```{r}
+#| label: load-quality-helpers
+#| cache: false
+source("src/admin-article-quality.R")
+
+sa_featured_langs <- c("en", "es", "pt", "qu")
+sa_featured_labels <- c(en = "English", es = "Spanish",
+                        pt = "Portuguese", qu = "Quechua")
+```
+
+```{r}
+#| label: fetch-population
+#| cache: true
+all_qids <- all_data$qid
+
+sa_pop <- fetch_wikidata_population(
+  qids       = all_qids,
+  cache_file = file.path(cache_dir, "sa_population_wikidata.rds"),
+  batch_size = 200
+)
+
+all_data_pop <- all_data |>
+  left_join(sa_pop, by = "qid")
+```
+
+### Population coverage by country
+
+```{r}
+#| label: tbl-pop-coverage
+all_data_pop |>
+  group_by(region, country, adm_level) |>
+  summarise(
+    n_units       = n(),
+    has_pop       = sum(!is.na(population)),
+    pct_has_pop   = round(100 * has_pop / n_units, 1),
+    median_pop    = median(population, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  arrange(region, country, adm_level) |>
+  knitr::kable(caption = "Wikidata population coverage by country and admin level")
+```
+
+### How current is the population data?
+
+```{r}
+#| label: fig-pop-year-dist
+#| fig-width: 10
+#| fig-height: 7
+#| fig-cap: "Distribution of population data year on Wikidata"
+all_data_pop |>
+  filter(!is.na(pop_year)) |>
+  count(region, adm_level, pop_year) |>
+  ggplot(aes(x = pop_year, y = n)) +
+  scale_x_continuous(limits = c(1990, 2030)) + 
+  geom_col() +
+  facet_grid(region ~ adm_level, scales = "free_y") +
+  labs(x = "Census / estimate year", y = "Number of admin units") +
+  theme_minimal(base_size = 12)
+```
+
+
+## Article quality analysis {#sec-article-quality}
+
+For administrative units that have Wikipedia articles in the four featured
+languages (English, Spanish, Portuguese, Quechua), we fetch the article
+wikitext and compute quality metrics: article length, citation count, and
+infobox field coverage.
+
+```{r}
+#| label: sa-article-quality
+#| cache: true
+#| cache-extra: !expr digest::digest(readLines("src/admin-article-quality.R"))
+
+# Collect all cache file paths for the presence data
+sa_cache_files <- c(
+  # ADM2
+  file.path(cache_dir, paste0("sa_adm2_", sa_adm2_registry$slug, ".rds")),
+  # ADM3
+  file.path(cache_dir, paste0("sa_adm3_", sa_adm3_registry$slug, ".rds")),
+  # New countries ADM2
+  file.path(cache_dir, paste0("newc_adm2_", newc_adm2_registry$slug, ".rds")),
+  # New countries ADM3
+  file.path(cache_dir, paste0("newc_adm3_", newc_adm3_registry$slug, ".rds"))
+)
+# Add Brazil if available
+brazil_raw_cache <- file.path(cache_dir, "sa_adm2_brazil_muni.rds")
+if (file.exists(brazil_raw_cache)) {
+  sa_cache_files <- c(sa_cache_files, brazil_raw_cache)
+}
+
+# Keep only files that exist
+sa_cache_files <- sa_cache_files[file.exists(sa_cache_files)]
+
+sa_quality <- run_article_quality_pipeline(
+  cache_files        = sa_cache_files,
+  languages          = sa_featured_langs,
+  wikitext_cache_base = "wikipedia-pages/sa_admin",
+  quality_cache_file  = file.path(cache_dir, "sa_article_quality.rds"),
+  delay              = 0.5
+)
+```
+
+```{r}
+#| label: sa-quality-join
+#| cache: false
+# Join quality data back to presence data for country/class context
+sa_quality_joined <- sa_quality |>
+  left_join(
+    all_data |>
+      select(qid, region, country, adm_level, class_label) |>
+      distinct(),
+    by = "qid"
+  )
+```
+
+### Article counts by language
+
+```{r}
+#| label: tbl-article-counts-lang
+sa_quality_joined |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(region, country, adm_level, language) |>
+  summarise(n_articles = n(), .groups = "drop") |>
+  pivot_wider(names_from = language, values_from = n_articles, values_fill = 0L) |>
+  arrange(region, country, adm_level) |>
+  knitr::kable(caption = "Number of articles fetched per country, level, and language")
+```
+
+### Article length
+
+```{r}
+#| label: fig-article-length
+#| fig-width: 12
+#| fig-height: 9
+#| fig-cap: "Article length (characters) by country, admin level, and language"
+sa_quality_joined |>
+  filter(!is.na(n_chars)) |>
+  mutate(
+    language = sa_featured_labels[lang],
+    country  = reorder(country, n_chars, FUN = median, na.rm = TRUE)
+  ) |>
+  ggplot(aes(x = n_chars, y = country, fill = language)) +
+  geom_boxplot(outlier.size = 0.3, alpha = 0.7) +
+  scale_x_log10(labels = scales::comma) +
+  facet_grid(region ~ adm_level, scales = "free_y", space = "free_y") +
+  labs(x = "Article length (characters, log scale)", y = NULL, fill = "Language") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+```
+
+### Citation density
+
+```{r}
+#| label: tbl-citation-summary
+sa_quality_joined |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(language, adm_level) |>
+  summarise(
+    n_articles      = n(),
+    median_chars    = median(n_chars, na.rm = TRUE),
+    median_citations = median(n_citations, na.rm = TRUE),
+    median_refs     = median(n_refs, na.rm = TRUE),
+    pct_zero_refs   = round(100 * sum(n_refs == 0, na.rm = TRUE) / n(), 1),
+    .groups = "drop"
+  ) |>
+  knitr::kable(caption = "Article quality summary by language and admin level")
+```
+
+```{r}
+#| label: fig-chars-vs-refs
+#| fig-width: 10
+#| fig-height: 7
+#| fig-cap: "Article length vs number of references"
+sa_quality_joined |>
+  filter(!is.na(n_chars), n_chars > 0) |>
+  mutate(language = sa_featured_labels[lang]) |>
+  ggplot(aes(x = n_chars, y = n_refs, color = adm_level)) +
+  geom_point(alpha = 0.3, size = 0.8) +
+  scale_x_log10(labels = scales::comma) +
+  scale_y_log10() +
+  facet_wrap(~ language) +
+  labs(x = "Article length (characters)", y = "Number of references",
+       color = "Admin level") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+
+## Infobox field coverage {#sec-infobox-coverage}
+
+### Infobox presence
+
+```{r}
+#| label: tbl-infobox-presence
+sa_quality_joined |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(language, adm_level) |>
+  summarise(
+    n_articles     = n(),
+    n_with_infobox = sum(has_infobox, na.rm = TRUE),
+    pct_infobox    = round(100 * n_with_infobox / n_articles, 1),
+    median_fields  = median(n_infobox_fields[has_infobox], na.rm = TRUE),
+    mean_fields    = round(mean(n_infobox_fields[has_infobox], na.rm = TRUE), 1),
+    .groups = "drop"
+  ) |>
+  knitr::kable(caption = "Infobox presence and field count by language and admin level")
+```
+
+### Top infobox fields by language
+
+```{r}
+#| label: fig-infobox-fields-en
+#| fig-width: 10
+#| fig-height: 10
+#| fig-cap: "Top 30 infobox fields across English Wikipedia admin-unit articles"
+en_field_freq <- sa_quality_joined |>
+  filter(lang == "en", has_infobox) |>
+  summarise_infobox_coverage()
+
+en_field_freq |>
+  slice_head(n = 30) |>
+  mutate(field = forcats::fct_reorder(field, n)) |>
+  ggplot(aes(x = n, y = field)) +
+  geom_col() +
+  labs(x = "Number of articles with field", y = NULL,
+       title = "Top 30 infobox fields — English Wikipedia admin-unit articles") +
+  theme_minimal(base_size = 11)
+```
+
+```{r}
+#| label: fig-infobox-fields-es
+#| fig-width: 10
+#| fig-height: 10
+#| fig-cap: "Top 30 infobox fields across Spanish Wikipedia admin-unit articles"
+es_field_freq <- sa_quality_joined |>
+  filter(lang == "es", has_infobox) |>
+  summarise_infobox_coverage()
+
+es_field_freq |>
+  slice_head(n = 30) |>
+  mutate(field = forcats::fct_reorder(field, n)) |>
+  ggplot(aes(x = n, y = field)) +
+  geom_col() +
+  labs(x = "Number of articles with field", y = NULL,
+       title = "Top 30 infobox fields — Spanish Wikipedia admin-unit articles") +
+  theme_minimal(base_size = 11)
+```
+
+### Infobox field count by country
+
+```{r}
+#| label: fig-infobox-fields-by-country
+#| fig-width: 12
+#| fig-height: 10
+#| fig-cap: "Number of infobox fields filled, by country and language"
+sa_quality_joined |>
+  filter(has_infobox) |>
+  mutate(
+    language = sa_featured_labels[lang],
+    country  = reorder(country, n_infobox_fields, FUN = median, na.rm = TRUE)
+  ) |>
+  ggplot(aes(x = n_infobox_fields, y = country, fill = language)) +
+  geom_boxplot(outlier.size = 0.3, alpha = 0.7) +
+  facet_grid(region ~ adm_level, scales = "free_y", space = "free_y") +
+  labs(x = "Number of non-blank infobox fields", y = NULL, fill = "Language") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+```
+
+
+### Population data in infoboxes {#sec-infobox-pop}
+
+Do articles report a population figure in their infobox, and how current is it?
+`infobox_pop_value` and `infobox_pop_year` are extracted from the article
+wikitext using the cross-language field map in `src/admin-article-quality.R`
+(`población` / `população_total` / `population_total` → canonical
+`population_total`; `población_año` / `população_em` / `population_as_of`
+→ canonical `population_as_of`).
+
+> **Note:** if `infobox_pop_value` and `infobox_pop_year` are absent from
+> `sa_quality_joined`, delete `data/cache/sa_article_quality.rds` to trigger
+> a one-time re-extraction of those columns.
+
+```{r}
+#| label: tbl-infobox-pop-coverage
+#| tbl-cap: "Population field presence in infoboxes, by language and admin level"
+sa_quality_joined |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(language, adm_level) |>
+  summarise(
+    n_articles     = n(),
+    n_with_infobox = sum(has_infobox, na.rm = TRUE),
+    n_with_pop     = sum(!is.na(infobox_pop_value) & has_infobox, na.rm = TRUE),
+    pct_pop_of_ib  = round(100 * n_with_pop / pmax(n_with_infobox, 1), 1),
+    pct_pop_of_all = round(100 * n_with_pop / n_articles, 1),
+    .groups = "drop"
+  ) |>
+  knitr::kable()
+```
+
+```{r}
+#| label: fig-infobox-pop-year
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Distribution of population year recorded in article infoboxes"
+sa_quality_joined |>
+  filter(!is.na(infobox_pop_year)) |>
+  mutate(language = sa_featured_labels[lang]) |>
+  count(language, adm_level, infobox_pop_year) |>
+  ggplot(aes(x = infobox_pop_year, y = n, fill = adm_level)) +
+  geom_col(position = "stack") +
+  facet_wrap(~ language, scales = "free_y") +
+  labs(
+    x    = "Population year in infobox",
+    y    = "Number of articles",
+    fill = "Admin level"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| label: tbl-infobox-pop-year-summary
+#| tbl-cap: "Recency of infobox population data: median year by language and country"
+pop_year_summary <- sa_quality_joined |>
+  filter(!is.na(infobox_pop_year)) |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(language, region, country) |>
+  summarise(
+    n_with_year   = n(),
+    median_year   = as.integer(median(infobox_pop_year)),
+    pct_post_2020 = round(100 * mean(infobox_pop_year >= 2020), 1),
+    .groups = "drop"
+  )
+
+pop_year_summary |>
+  arrange(language, region, country) |>
+  knitr::kable()
+```
+
+```{r}
+#| label: year-choropleth-helper
+#| cache: false
+
+# Choropleth showing median year per country for one Wikipedia language.
+# Color follows the Bolivia census-year scheme: blue (old) → white → warm (recent).
+# Text is white on dark fills (far from midpoint), black on light fills.
+year_choropleth_map <- function(summary_df, lang, year_limits = NULL,
+                                midpoint = 2015, title = lang) {
+  d <- summary_df |>
+    filter(language == lang, !is.na(country)) |>
+    mutate(
+      iso_a3 = latam_iso[country],
+      label  = as.character(median_year)
+    )
+
+  if (is.null(year_limits)) {
+    year_limits <- range(
+      summary_df |> filter(!is.na(country)) |> pull(median_year),
+      na.rm = TRUE
+    )
+  }
+
+  map_df <- latam_sf |>
+    left_join(d |> select(iso_a3, median_year, label), by = "iso_a3") |>
+    left_join(label_pts, by = "iso_a3")
+
+  ggplot(map_df) +
+    geom_sf(aes(fill = median_year), color = "white", linewidth = 0.3) +
+    geom_text(
+      aes(x = lon, y = lat, label = label,
+          color = abs(coalesce(median_year, midpoint) - midpoint) > 8),
+      size = 2.2, fontface = "bold", na.rm = TRUE
+    ) +
+    scale_color_manual(
+      values = c("TRUE" = "white", "FALSE" = "black"),
+      guide  = "none"
+    ) +
+    scale_fill_gradient2(
+      low      = "#2166ac",
+      mid      = "#f7f7f7",
+      high     = "#d6604d",
+      midpoint = midpoint,
+      limits   = year_limits,
+      name     = "Median\nyear",
+      na.value = "grey85"
+    ) +
+    coord_sf(
+      xlim   = c(latam_bbox["xmin"], latam_bbox["xmax"]),
+      ylim   = c(latam_bbox["ymin"], latam_bbox["ymax"]),
+      expand = FALSE
+    ) +
+    labs(title = title, x = NULL, y = NULL) +
+    theme_void(base_size = 11) +
+    theme(
+      plot.title       = element_text(hjust = 0.5, face = "bold", size = 12),
+      legend.position  = "bottom",
+      legend.key.width = unit(1.5, "cm")
+    )
+}
+```
+
+```{r}
+#| label: fig-pop-year-choropleth
+#| fig-width: 16
+#| fig-height: 7
+#| fig-cap: "Median population year in article infoboxes, by Wikipedia language and country. Blue = older data; red = more recent."
+pop_year_limits <- range(
+  pop_year_summary |> filter(!is.na(country)) |> pull(median_year),
+  na.rm = TRUE
+)
+
+year_choropleth_map(pop_year_summary, "English",    pop_year_limits) +
+  year_choropleth_map(pop_year_summary, "Spanish",  pop_year_limits) +
+  year_choropleth_map(pop_year_summary, "Portuguese", pop_year_limits) +
+  plot_layout(guides = "collect") +
+  plot_annotation(title = "Population year in infoboxes") &
+  theme(legend.position = "bottom")
+```
+
+
+### Leader data in infoboxes {#sec-infobox-leader}
+
+Many admin-unit infoboxes include the name of the current mayor, governor, or
+other executive, sometimes with a year or term range in parentheses (e.g.,
+"Juan Pérez (2021–2025)"). The extraction below searches for four-digit years
+in leader-name fields (`leader_name`, `dirigentes_nombres`, `prefeito`,
+`alcalde`, `intendente`) and the explicit `dirigente1_año` field used in
+Spanish Wikipedia templates.
+
+```{r}
+#| label: extract-leader-year
+#| cache: true
+#| cache-extra: !expr digest::digest(readLines("src/admin-article-quality.R"))
+sa_quality_joined <- sa_quality_joined |>
+  mutate(infobox_leader_year = map_int(wikitext, extract_leader_year))
+```
+
+```{r}
+#| label: tbl-infobox-leader-coverage
+#| tbl-cap: "Leader-year field presence in infoboxes, by language and admin level"
+sa_quality_joined |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(language, adm_level) |>
+  summarise(
+    n_articles       = n(),
+    n_with_infobox   = sum(has_infobox, na.rm = TRUE),
+    n_with_leader_yr = sum(!is.na(infobox_leader_year), na.rm = TRUE),
+    pct_of_infobox   = round(100 * n_with_leader_yr / pmax(n_with_infobox, 1), 1),
+    pct_of_all       = round(100 * n_with_leader_yr / n_articles, 1),
+    .groups = "drop"
+  ) |>
+  knitr::kable()
+```
+
+```{r}
+#| label: fig-infobox-leader-year
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Distribution of leader year recorded in article infoboxes"
+sa_quality_joined |>
+  filter(!is.na(infobox_leader_year)) |>
+  mutate(language = sa_featured_labels[lang]) |>
+  count(language, adm_level, infobox_leader_year) |>
+  ggplot(aes(x = infobox_leader_year, y = n, fill = adm_level)) +
+  geom_col(position = "stack") +
+  facet_wrap(~ language, scales = "free_y") +
+  labs(
+    x    = "Leader year in infobox",
+    y    = "Number of articles",
+    fill = "Admin level"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| label: tbl-infobox-leader-year-summary
+#| tbl-cap: "Recency of infobox leader data: median year by language and country"
+leader_year_summary <- sa_quality_joined |>
+  filter(!is.na(infobox_leader_year), !is.na(country)) |>
+  mutate(language = sa_featured_labels[lang]) |>
+  group_by(language, region, country) |>
+  summarise(
+    n_with_year = n(),
+    median_year = as.integer(median(infobox_leader_year)),
+    .groups     = "drop"
+  )
+
+leader_year_summary |>
+  arrange(language, region, country) |>
+  knitr::kable()
+```
+
+```{r}
+#| label: fig-leader-year-choropleth
+#| fig-width: 16
+#| fig-height: 7
+#| fig-cap: "Median leader year in article infoboxes, by Wikipedia language and country. Blue = older data; red = more recent. Portuguese coverage is sparse."
+leader_year_limits <- range(leader_year_summary$median_year, na.rm = TRUE)
+
+year_choropleth_map(leader_year_summary, "English",    leader_year_limits,
+                    title = "English") +
+  year_choropleth_map(leader_year_summary, "Spanish",  leader_year_limits,
+                      title = "Spanish") +
+  year_choropleth_map(leader_year_summary, "Portuguese", leader_year_limits,
+                      title = "Portuguese") +
+  plot_layout(guides = "collect") +
+  plot_annotation(title = "Leader year in infoboxes") &
+  theme(legend.position = "bottom")
+```
+
+
+## Appendix {#sec-appendix}
+
+### Registries
+
+```{r}
+#| label: appendix-registries
+#| cache: false
+bind_rows(
+  sa_adm2_registry  |> mutate(tier = "SA ADM2"),
+  sa_adm3_registry  |> mutate(tier = "SA ADM3"),
+  newc_adm2_registry |> mutate(tier = "New countries ADM2"),
+  newc_adm3_registry |> mutate(tier = "New countries ADM3")
+) |>
+  select(tier, country, class_qid, class_label, n_expected) |>
+  knitr::kable(caption = "All class registries used in this analysis")
+```
+
+### ADM3 coverage notes
+
+Countries where ADM3 was investigated but excluded:
+
+| Country | Reason |
+|---------|--------|
+| Paraguay | No standard ADM3 below municipalities on Wikidata |
+| Suriname | No divisions below ressorts |
+| Uruguay | No standard ADM3 |
+| Mexico | 75,898 localities — too large for this pipeline |
+| Guatemala | No ADM3 class found on Wikidata |
+| El Salvador | Only 16 cantons typed — too sparse |
+| Honduras | Only 3 aldeas typed — too sparse |
+| Nicaragua | No ADM3 class found |
+| Cuba | Consejos populares not typed on Wikidata |
+| Dominican Republic | No ADM3 class found |
+| Brazil | No standard ADM3 below municipalities |
+
+### Session info
+
+```{r}
+#| label: session-info
+#| cache: false
+sessionInfo()
+```

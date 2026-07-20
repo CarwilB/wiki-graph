@@ -61,7 +61,7 @@ params <- list(
   tripoint_buf_peru_brazil = 0.20,  # degrees
 
   # --- Output ---
-  output_dir = "output/locator_maps/workbench_hd",
+  output_dir = "output/locator_maps/workbench_hd_3",
   map_height = 10   # inches; width auto-calculated from aspect ratio
 )
 
@@ -74,7 +74,7 @@ params <- list(
 #           lowland, border, lake-adjacent.
 # Option B: Set run_all = TRUE to generate all ~339 maps.
 
-run_all <- FALSE
+run_all <- TRUE
 
 test_municipalities_tbl <- tribble(
   ~municipality,                     ~department,
@@ -85,8 +85,17 @@ test_municipalities_tbl <- tribble(
   "Oruro",                     "Oruro",
   "Cobija",                    "Pando",
   "Potosí",                    "Potosí",
+  "Llica",                     "Potosí",
+  "Tahua",                     "Potosí",
   "Santa Cruz de la Sierra",   "Santa Cruz",
-  "Tarija",                    "Tarija"
+  "Tarija",                    "Tarija",
+  # Salar de Coipasa municipalities
+  "Esmeralda",                 "Oruro",
+  "Salinas de Garcí Mendoza",  "Oruro",
+  "Sabaya",                    "Oruro",
+  "Coipasa",                   "Oruro",
+  "Chipaya",                   "Oruro",
+  "Belén de Andamarca",        "Oruro"
 )
 
 # Per-municipality parameter overrides. Use this to experiment with different
@@ -110,7 +119,8 @@ colors_2012 <- list(
   surrounding_internal  = "#FDFBEA",
   surrounding_external  = "#DFDFDF",
   borders               = "#656565",
-  water_bodies          = "#C7E7FB"
+  water_bodies          = "#C7E7FB",
+  salars                = "#F0E6C0"   # slightly darker beige for salt flats / dry lakes
 )
 
 
@@ -145,6 +155,10 @@ cat("Loading OCHA admin1 (departments)...\n")
 gadm_adm1 <- st_read(file.path(ocha_dir, "bol_admin1.shp"), quiet = TRUE) |>
   rename(NAME_1 = adm1_name)
 
+cat("Loading OCHA admin0 (country outline)...\n")
+gadm_adm0 <- st_read(file.path(ocha_dir, "bol_admin0.shp"), quiet = TRUE) |>
+  st_make_valid()
+
 dupe_muni_names <- gadm |>
   st_drop_geometry() |>
   count(NAME_3) |>
@@ -153,6 +167,12 @@ dupe_muni_names <- gadm |>
 
 cat("Loading municipality ID lookup table...\n")
 muni_id_lookup_table <- readRDS("data/muni_id_lookup_table.rds")
+
+cat("Loading fondos municipales (current boundaries)...\n")
+fondos_cur <- st_read(
+  "../bolivia-data/fondos/fondos_municipio_geo/fondos:municipio_geo.geojson",
+  quiet = TRUE
+) |> st_make_valid()
 
 # Duplicate muni_anexo names — used for disambiguation in file naming.
 dupe_anexo_names <- muni_id_lookup_table |>
@@ -185,6 +205,30 @@ ne_lakes_10m <- st_read(ne_lakes_path, quiet = TRUE)
 # §5 — PREPARE SHARED LAYERS (uses current `params`)
 # ==============================================================================
 
+# Extract the interior hole (ring) closest to a target lon/lat from a polygon.
+# Returns an sf polygon, or an empty sf if no holes exist.
+extract_hole_near <- function(x, target_lon, target_lat) {
+  geom <- st_geometry(x)[[1]]
+  rings <- if (inherits(geom, "MULTIPOLYGON")) {
+    unlist(lapply(geom, function(poly) {
+      if (length(poly) > 1) poly[2:length(poly)] else list()
+    }), recursive = FALSE)
+  } else if (inherits(geom, "POLYGON") && length(geom) > 1) {
+    geom[2:length(geom)]
+  } else {
+    list()
+  }
+  if (length(rings) == 0) return(st_sf(geometry = st_sfc(crs = st_crs(x))))
+
+  # Find the ring whose centroid is closest to the target
+  dists <- sapply(rings, function(r) {
+    cx <- mean(r[, 1]); cy <- mean(r[, 2])
+    sqrt((cx - target_lon)^2 + (cy - target_lat)^2)
+  })
+  best <- rings[[which.min(dists)]]
+  st_sfc(st_polygon(list(best)), crs = st_crs(x)) |> st_as_sf()
+}
+
 prepare_shared_layers <- function(p = params) {
   cat("Preparing shared layers (simp_mun =", p$simp_municipalities,
       ", simp_bol =", p$simp_bolivia_outline, ")...\n")
@@ -212,16 +256,40 @@ prepare_shared_layers <- function(p = params) {
   } else {
     mun_lake
   }
-  bol_outline_s <- ms_simplify(bol_outline_raw, keep = p$simp_bolivia_outline,
-                                keep_shapes = TRUE)
   prov_s        <- ms_simplify(gadm_adm2 |> st_make_valid(),
                                 keep = p$simp_bolivia_outline, keep_shapes = TRUE)
   dept_s        <- ms_simplify(gadm_adm1 |> st_make_valid(),
                                 keep = p$simp_bolivia_outline, keep_shapes = TRUE)
 
-  # Bolivia cream fill (buffered to close NE/GADM gap)
-  # bol_cream <- st_buffer(bol_outline_s, dist = p$bolivia_cream_buffer)
-  bol_cream <- bol_outline_raw
+  # Fondos municipales: GeoBolivia boundaries include salar/lake territory
+  # that OCHA admin3 excludes.  Used to fill the target municipality's salar
+  # portions red.  Keyed by c_ut (= INE id_muni).
+  fondos_s <- ms_simplify(fondos_cur |> select(c_ut, geometry),
+                           keep = p$simp_municipalities, keep_shapes = TRUE)
+
+  # Bolivia cream fill and international border outline.
+  # OCHA admin3 (municipalities) excludes salt flats and lakes, leaving a
+  # 94-part multipolygon with gaps. OCHA admin0 (country outline) has no such
+  # cutouts — it's a solid polygon covering all of Bolivia, and since it comes
+  # from the same dataset the international border aligns with admin3.
+  bol_cream     <- gadm_adm0 |> select(geometry)
+  bol_outline_s <- ms_simplify(gadm_adm0 |> select(geometry),
+                                keep = p$simp_bolivia_outline, keep_shapes = TRUE)
+
+  # Lake Poopó and Lake Uru Uru: extract from OCHA holes so they align with
+  # muni boundaries. Identified by centroid proximity.
+  poopo   <- extract_hole_near(bol_outline_raw, target_lon = -67.0, target_lat = -18.9)
+  uru_uru <- extract_hole_near(bol_outline_raw, target_lon = -67.1, target_lat = -18.1)
+
+  # Salar areas: admin0 minus the municipality union — the gaps (salt flats,
+  # dry lakes) that OCHA admin3 excludes.  Drawn as a slightly darker beige
+  # with no borders.  Fondos red and the lake layers paint over them later.
+  sf_use_s2(FALSE)
+  salar_areas <- st_difference(
+    gadm_adm0 |> select(geometry),
+    bol_outline_raw
+  ) |> st_make_valid() |> st_as_sf()
+  sf_use_s2(TRUE)
 
   # Neighbour borders with Bolivia-facing segments removed.
   # Uses NE's own Bolivia polygon (not GADM) for coordinate consistency.
@@ -291,6 +359,10 @@ prepare_shared_layers <- function(p = params) {
     titicaca_full    = titicaca_full,
     mun_regular      = mun_regular_s,
     mun_lake         = mun_lake_s,
+    fondos           = fondos_s,
+    salar_areas      = salar_areas,
+    poopo            = poopo,
+    uru_uru          = uru_uru,
     prov_outline     = prov_s,
     dept_outline     = dept_s,
     bol_outline      = bol_outline_s,
@@ -314,6 +386,14 @@ generate_locator_map <- function(municipality, department, layers, p = params) {
   }
 
   others <- layers$mun_regular |> filter(!(NAME_3 == municipality & NAME_1 == department))
+
+  # Fondos polygon for the target municipality (includes salar territory).
+  # Drawn before OCHA municipalities so cream covers any overflow in
+  # non-salar areas; salar gaps in the OCHA layer let the fondos red show.
+  target_id <- muni_id_lookup_table |>
+    filter(muni_gadm == municipality, department == !!department) |>
+    pull(id_muni)
+  target_fondos <- layers$fondos |> filter(c_ut %in% target_id)
 
   # Map dimensions
   map_w <- (p$bbox_xmax - p$bbox_xmin) *
@@ -339,12 +419,23 @@ generate_locator_map <- function(municipality, department, layers, p = params) {
     # 4. Bolivia cream fill
     geom_sf(data = layers$bol_cream,
             fill = colors_2012$surrounding_internal, color = NA) +
-    # 5. Other municipalities
+    # 4b. Salar areas (darker beige, no border)
+    geom_sf(data = layers$salar_areas,
+            fill = colors_2012$salars, color = NA) +
+    # 4c. Target fondos polygon (fills salar territory red)
+    geom_sf(data = target_fondos,
+            fill = colors_2012$territory_of_interest, color = NA) +
+    # 5. Other municipalities (cream covers fondos red outside salar gaps)
     geom_sf(data = others,
             fill = colors_2012$surrounding_internal,
             color = colors_2012$borders, linewidth = p$lw_mun_borders) +
-    # 5. Lake Titicaca GADM polygons (water blue)
+    # 5a. Lake Titicaca GADM polygons (water blue)
     geom_sf(data = layers$mun_lake,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 5b. Lake Poopó and Lake Uru Uru (OCHA holes, water blue, no border)
+    geom_sf(data = layers$poopo,
+            fill = colors_2012$water_bodies, color = NA) +
+    geom_sf(data = layers$uru_uru,
             fill = colors_2012$water_bodies, color = NA) +
     # 6. Target municipality
     geom_sf(data = target,
@@ -545,7 +636,7 @@ cat("Log written to", log_path, "\n")
 #   4  gray gap fill
 #   5  cream Bolivia fill
 #   6  cream other municipalities  (with faint muni borders)
-#   7  blue Lake Titicaca GADM polygons
+#   7  blue Lake Titicaca GADM polygons + Lake Poopó
 #   8  red target-province municipalities  (no internal borders → clean fill)
 #   9  all province outlines  (lw_prov_borders)
 #  10  target province outline redrawn  (lw_target_border — makes it stand out)
@@ -559,7 +650,7 @@ cat("Log written to", log_path, "\n")
 # ==============================================================================
 
 params_prov <- modifyList(params, list(
-  output_dir = "output/locator_maps/prov-maps-hd",
+  output_dir = "output/locator_maps/prov-maps-hd-3",
   lw_mun_borders       = 0.10,   # internal municipality boundaries
   lw_prov_borders      = 0.30,  # provincial boundaries
   lw_dept_borders      = 0.50   # departmental boundaries
@@ -572,7 +663,7 @@ dupe_prov_names <- gadm_adm2 |>
   filter(n > 1) |>
   pull(NAME_2)
 
-prov_run_all <- FALSE
+prov_run_all <- TRUE
 
 # Intentionally diverse test set: capital provinces, Cercado duplicate, large/small.
 test_provinces_tbl <- tribble(
@@ -580,7 +671,7 @@ test_provinces_tbl <- tribble(
   "Cercado",                    "Cochabamba",   # duplicate name — triggers disambiguator
   "Cercado",                    "Oruro",
   "Oropeza",                    "Chuquisaca",   # includes Sucre
-  "Pedro Domingo Murillo",      "La Paz",       # includes La Paz city
+  "Murillo",                    "La Paz",       # includes La Paz city (OCHA name; full name: Pedro Domingo Murillo)
   "Andrés Ibáñez",              "Santa Cruz",   # includes Santa Cruz city
   "Tomás Frías",                "Potosí",       # includes Potosí city
   "Iténez",                     "Beni",         # lowland, large
@@ -613,6 +704,12 @@ generate_prov_locator_map <- function(province, department, layers, p = params_p
   target_prov <- layers$prov_outline |>
     filter(NAME_2 == province, NAME_1 == department)
 
+  # Fondos polygons for all municipalities in the target province
+  target_ids <- muni_id_lookup_table |>
+    filter(muni_gadm %in% target$NAME_3, department == !!department) |>
+    pull(id_muni)
+  target_fondos <- layers$fondos |> filter(c_ut %in% target_ids)
+
   map_w <- (p$bbox_xmax - p$bbox_xmin) *
     cos(((p$bbox_ymin + p$bbox_ymax) / 2) * pi / 180) /
     (p$bbox_ymax - p$bbox_ymin) * p$map_height
@@ -636,12 +733,23 @@ generate_prov_locator_map <- function(province, department, layers, p = params_p
     # 5. Bolivia cream fill
     geom_sf(data = layers$bol_cream,
             fill = colors_2012$surrounding_internal, color = NA) +
-    # 6. Other municipalities (cream with faint borders)
+    # 5b. Salar areas (darker beige, no border)
+    geom_sf(data = layers$salar_areas,
+            fill = colors_2012$salars, color = NA) +
+    # 5c. Target province fondos polygons (fill salar territory red)
+    geom_sf(data = target_fondos,
+            fill = colors_2012$territory_of_interest, color = NA) +
+    # 6. Other municipalities (cream covers fondos red outside salar gaps)
     geom_sf(data = others,
             fill = colors_2012$surrounding_internal,
             color = colors_2012$borders, linewidth = p$lw_mun_borders) +
-    # 7. Lake Titicaca GADM polygons
+    # 7a. Lake Titicaca GADM polygons
     geom_sf(data = layers$mun_lake,
+            fill = colors_2012$water_bodies, color = NA) +
+    # 7b. Lake Poopó and Lake Uru Uru (OCHA holes, water blue, no border)
+    geom_sf(data = layers$poopo,
+            fill = colors_2012$water_bodies, color = NA) +
+    geom_sf(data = layers$uru_uru,
             fill = colors_2012$water_bodies, color = NA) +
     # 8. Target province municipalities (red, no internal borders)
     geom_sf(data = target,

@@ -755,6 +755,20 @@ resume_get_wikidata_instances <- function(partial_result,
 
   # Simplify each half before binding so column types match
   new_df <- bind_rows(new_items) |> simplify_list_columns()
+  partial_result <- partial_result |> simplify_list_columns()
+
+  # Align column types: if partial_result kept a list column (multi-value rows
+
+  # prevented simplification), promote the matching character column in new_df
+  # back to a list so bind_rows() can combine them.
+  shared <- intersect(names(partial_result), names(new_df))
+  for (col in shared) {
+    if (is.list(partial_result[[col]]) && !is.list(new_df[[col]])) {
+      new_df[[col]] <- as.list(new_df[[col]])
+    } else if (!is.list(partial_result[[col]]) && is.list(new_df[[col]])) {
+      partial_result[[col]] <- as.list(partial_result[[col]])
+    }
+  }
 
   combined <- bind_rows(partial_result, new_df) |>
     distinct(qid, .keep_all = TRUE)

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.21">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Carwil Bjork-James">
+<meta name="dcterms.date" content="2026-05-15">
+
+<title>Bolivia Municipal Locator Maps: Production Process</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="locator-maps-process_files/libs/clipboard/clipboard.min.js"></script>
+<script src="locator-maps-process_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="locator-maps-process_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="locator-maps-process_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="locator-maps-process_files/libs/quarto-html/popper.min.js"></script>
+<script src="locator-maps-process_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="locator-maps-process_files/libs/quarto-html/anchor.min.js"></script>
+<link href="locator-maps-process_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="locator-maps-process_files/libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="locator-maps-process_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="locator-maps-process_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="locator-maps-process_files/libs/bootstrap/bootstrap-a74871fe4945b66d259aafc266475145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#what-was-produced" id="toc-what-was-produced" class="nav-link" data-scroll-target="#what-was-produced">What Was Produced</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  <li><a href="#map-design" id="toc-map-design" class="nav-link" data-scroll-target="#map-design">Map Design</a>
+  <ul class="collapse">
+  <li><a href="#color-scheme-wikipedia-2012" id="toc-color-scheme-wikipedia-2012" class="nav-link" data-scroll-target="#color-scheme-wikipedia-2012">Color Scheme (Wikipedia 2012)</a></li>
+  <li><a href="#layer-order" id="toc-layer-order" class="nav-link" data-scroll-target="#layer-order">Layer Order</a></li>
+  <li><a href="#bounding-box" id="toc-bounding-box" class="nav-link" data-scroll-target="#bounding-box">Bounding Box</a></li>
+  </ul></li>
+  <li><a href="#generation-generate_locator_maps_workbench.r" id="toc-generation-generate_locator_maps_workbench.r" class="nav-link" data-scroll-target="#generation-generate_locator_maps_workbench.r">Generation: <code>generate_locator_maps_workbench.R</code></a>
+  <ul class="collapse">
+  <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">§1 — Parameters</a></li>
+  <li><a href="#municipality-selection" id="toc-municipality-selection" class="nav-link" data-scroll-target="#municipality-selection">§2 — Municipality Selection</a></li>
+  <li><a href="#shared-layers-prepare_shared_layers" id="toc-shared-layers-prepare_shared_layers" class="nav-link" data-scroll-target="#shared-layers-prepare_shared_layers">§3 — Shared Layers (<code>prepare_shared_layers()</code>)</a></li>
+  <li><a href="#map-generation-generate_locator_map" id="toc-map-generation-generate_locator_map" class="nav-link" data-scroll-target="#map-generation-generate_locator_map">§4 — Map Generation (<code>generate_locator_map()</code>)</a></li>
+  </ul></li>
+  <li><a href="#upload-upload_to_commons.r" id="toc-upload-upload_to_commons.r" class="nav-link" data-scroll-target="#upload-upload_to_commons.r">Upload: <code>upload_to_commons.R</code></a>
+  <ul class="collapse">
+  <li><a href="#upload-metadata-table" id="toc-upload-metadata-table" class="nav-link" data-scroll-target="#upload-metadata-table">§1 — Upload Metadata Table</a></li>
+  <li><a href="#wikitext" id="toc-wikitext" class="nav-link" data-scroll-target="#wikitext">§2 — Wikitext</a></li>
+  <li><a href="#api-session" id="toc-api-session" class="nav-link" data-scroll-target="#api-session">§3 — API Session</a></li>
+  <li><a href="#dry-run" id="toc-dry-run" class="nav-link" data-scroll-target="#dry-run">§4 — Dry Run</a></li>
+  <li><a href="#upload-loop" id="toc-upload-loop" class="nav-link" data-scroll-target="#upload-loop">§5 — Upload Loop</a></li>
+  <li><a href="#upload-log" id="toc-upload-log" class="nav-link" data-scroll-target="#upload-log">§6 — Upload Log</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#sample-maps" id="toc-sample-maps" class="nav-link" data-scroll-target="#sample-maps">Sample Maps</a></li>
+  <li><a href="#commons-pages" id="toc-commons-pages" class="nav-link" data-scroll-target="#commons-pages">Commons Pages</a></li>
+  <li><a href="#adapting-for-another-country" id="toc-adapting-for-another-country" class="nav-link" data-scroll-target="#adapting-for-another-country">Adapting for Another Country</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bolivia Municipal Locator Maps: Production Process</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Carwil Bjork-James </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 15, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This document describes the pipeline used to generate and upload 339 SVG locator maps — one per Bolivian municipality — to Wikimedia Commons. The maps follow the <a href="https://commons.wikimedia.org/wiki/Category:SVG_locator_maps_(location_map_scheme)">Wikipedia 2012 cartographic convention</a> used for locator maps across Wikipedia. The goal is to provide a complete, reproducible template that could be adapted for any country with GADM administrative boundary data.</p>
+<p>All maps were uploaded to Commons under the category <a href="https://commons.wikimedia.org/wiki/Category:Locator_maps_of_municipalities_in_Bolivia">Locator maps of municipalities in Bolivia</a>. The batch was uploaded by bot account <a href="https://commons.wikimedia.org/wiki/Special:Contributions/Carwil@Bolivia_locator_maps">Carwil@Bolivia_locator_maps</a> on 2026-05-15.</p>
+<hr>
+</section>
+<section id="what-was-produced" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-produced">What Was Produced</h2>
+<ul>
+<li><strong>339 SVG locator maps</strong>, one per municipality</li>
+<li>Uploaded to Wikimedia Commons (318 in the main batch; the first ~19 in an earlier test run)</li>
+<li>Each file includes multilingual descriptions (English, Spanish, Catalan, Quechua), CC0 license, and structured data claims: <em>depicts</em> (P180 → Wikidata QID of the municipality), <em>copyright license</em> (P275 → CC0 1.0), and <em>copyright status</em> (P6216 → public domain)</li>
+<li>A complete upload log (<code>commons_upload_log.rds</code> / <code>commons_upload_log.csv</code>) records Commons filenames, page URLs, M-IDs, Wikidata QIDs, and upload date for all 320 rows in the main batch</li>
+</ul>
+<hr>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Layer</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://gadm.org/">GADM v4.1</a></td>
+<td><code>gadm41_BOL_3.gpkg</code> (ADM_3)</td>
+<td>Municipality polygons</td>
+</tr>
+<tr class="even">
+<td>GADM v4.1</td>
+<td>ADM_2</td>
+<td>Province outlines</td>
+</tr>
+<tr class="odd">
+<td>GADM v4.1</td>
+<td>ADM_1</td>
+<td>Department outlines</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/">Natural Earth 10m cultural</a></td>
+<td><code>ne_10m_admin_0_countries</code></td>
+<td>Neighboring countries (Peru, Brazil, Argentina, Paraguay, Chile)</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.naturalearthdata.com/downloads/10m-physical-vectors/">Natural Earth 10m physical</a></td>
+<td><code>ne_10m_lakes</code></td>
+<td>Lake Titicaca (Bolivia–Peru border)</td>
+</tr>
+</tbody>
+</table>
+<p>GADM and Natural Earth use slightly different Bolivia border geometries, which creates thin slivers where the two data sources meet. This is handled through a gap-fill layer (see §4.4 below).</p>
+<hr>
+</section>
+<section id="map-design" class="level2">
+<h2 class="anchored" data-anchor-id="map-design">Map Design</h2>
+<section id="color-scheme-wikipedia-2012" class="level3">
+<h3 class="anchored" data-anchor-id="color-scheme-wikipedia-2012">Color Scheme (Wikipedia 2012)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 14%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Hex</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Territory of interest</td>
+<td><code>#C12838</code></td>
+<td>Target municipality (red)</td>
+</tr>
+<tr class="even">
+<td>Surrounding internal</td>
+<td><code>#FDFBEA</code></td>
+<td>Other Bolivian municipalities (pale cream)</td>
+</tr>
+<tr class="odd">
+<td>Surrounding external</td>
+<td><code>#DFDFDF</code></td>
+<td>Neighboring countries (light gray)</td>
+</tr>
+<tr class="even">
+<td>Borders</td>
+<td><code>#656565</code></td>
+<td>All political boundaries (dark gray)</td>
+</tr>
+<tr class="odd">
+<td>Water bodies</td>
+<td><code>#C7E7FB</code></td>
+<td>Ocean, lakes (light blue)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="layer-order" class="level3">
+<h3 class="anchored" data-anchor-id="layer-order">Layer Order</h3>
+<p>Maps are composed from bottom to top:</p>
+<ol type="1">
+<li>Full bounding-box background (gray) — ensures NE polygon gaps fall to gray</li>
+<li>Ocean / Pacific coast (blue) — bounding box minus all land polygons</li>
+<li>Neighboring countries (gray fill, no stroke)</li>
+<li>Lake Titicaca from Natural Earth (blue fill)</li>
+<li>Gap-fill layer (gray) — covers slivers where NE polygons fall short of GADM Bolivia</li>
+<li>Bolivia cream fill (unbuffered GADM union)</li>
+<li>All other Bolivian municipalities (cream fill, thin gray borders at 0.15 lw)</li>
+<li>Lago Titicaca GADM polygons (blue fill) — two municipality-level polygons</li>
+<li><strong>Target municipality</strong> (red fill, gray border at 0.40 lw)</li>
+<li>Provincial borders (0.25 lw)</li>
+<li>Departmental borders (0.38 lw)</li>
+<li>Neighbor country borders, Bolivia-facing segments removed (0.45 lw)</li>
+<li>Bolivia international border — GADM outline (0.55 lw)</li>
+</ol>
+<p>All layers are rendered with <code>theme_void()</code>, zero margins, and a blue background to represent the ocean.</p>
+</section>
+<section id="bounding-box" class="level3">
+<h3 class="anchored" data-anchor-id="bounding-box">Bounding Box</h3>
+<p>The fixed bounding box covers all of Bolivia with generous margins:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>bbox_xmin <span class="ot">=</span> <span class="sc">-</span><span class="fl">71.0</span>,  bbox_xmax <span class="ot">=</span> <span class="sc">-</span><span class="fl">56.8</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>bbox_ymin <span class="ot">=</span> <span class="sc">-</span><span class="fl">24.0</span>,  bbox_ymax <span class="ot">=</span>  <span class="sc">-</span><span class="fl">9.0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Using a fixed box means every map shows the same geographic extent, which is standard practice for within-country locator maps. Map width is computed automatically from the aspect ratio at the median latitude:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>map_w <span class="ot">&lt;-</span> (bbox_xmax <span class="sc">-</span> bbox_xmin) <span class="sc">*</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cos</span>(((bbox_ymin <span class="sc">+</span> bbox_ymax) <span class="sc">/</span> <span class="dv">2</span>) <span class="sc">*</span> pi <span class="sc">/</span> <span class="dv">180</span>) <span class="sc">/</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  (bbox_ymax <span class="sc">-</span> bbox_ymin) <span class="sc">*</span> map_height</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="generation-generate_locator_maps_workbench.r" class="level2">
+<h2 class="anchored" data-anchor-id="generation-generate_locator_maps_workbench.r">Generation: <code>generate_locator_maps_workbench.R</code></h2>
+<p>The workbench script is organized into seven sections. <strong>All tunable parameters are at the top</strong> in a single <code>params</code> list, making it easy to adjust simplification levels, line widths, and output paths before running the batch.</p>
+<section id="parameters" class="level3">
+<h3 class="anchored" data-anchor-id="parameters">§1 — Parameters</h3>
+<p>The <code>params</code> list controls simplification (<code>keep</code> ratios via <code>rmapshaper::ms_simplify()</code>), border line widths, the bounding box, and the output directory. The final batch used:</p>
+<ul>
+<li><code>simp_municipalities = 0.05</code> (5% of vertices kept)</li>
+<li><code>simp_bolivia_outline = 0.05</code></li>
+<li><code>simp_neighbors = 0.03</code></li>
+<li><code>simp_titicaca = 0.10</code></li>
+</ul>
+<p>At 5% simplification, each SVG is approximately 2.8 MB. Higher <code>keep</code> values produce larger files; lower values may drop small municipalities.</p>
+</section>
+<section id="municipality-selection" class="level3">
+<h3 class="anchored" data-anchor-id="municipality-selection">§2 — Municipality Selection</h3>
+<p>The script supports two modes:</p>
+<ul>
+<li><strong>Test mode</strong> (<code>run_all = FALSE</code>): a hand-picked set of nine geographically diverse capitals (one per department)</li>
+<li><strong>Batch mode</strong> (<code>run_all = TRUE</code>): all 339 municipalities from GADM</li>
+</ul>
+<p>A <code>per_muni_overrides</code> list allows individual municipalities to use different simplification levels or line widths without re-running the full batch:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>per_muni_overrides <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Cobija|Pando"</span> <span class="ot">=</span> <span class="fu">list</span>(<span class="at">simp_municipalities =</span> <span class="fl">0.10</span>, <span class="at">lw_target_border =</span> <span class="fl">0.6</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>When a simplification override is present, the script re-runs <code>prepare_shared_layers()</code> for that municipality; otherwise the shared layers are reused.</p>
+</section>
+<section id="shared-layers-prepare_shared_layers" class="level3">
+<h3 class="anchored" data-anchor-id="shared-layers-prepare_shared_layers">§3 — Shared Layers (<code>prepare_shared_layers()</code>)</h3>
+<p>Computing and simplifying the background layers (neighbors, outlines, gap fill) is expensive. <code>prepare_shared_layers()</code> runs once and returns a named list used by every map. This is the key performance optimization: the per-municipality loop only needs to filter the municipality layer, not reprocess all geometry.</p>
+<p><strong>Key implementation details:</strong></p>
+<ul>
+<li>Neighbor borders are computed by <code>st_difference()</code>-ing the neighboring country boundaries from a small Bolivia buffer (<code>dist = 0.001</code>). This removes Bolivia-facing segments cleanly.</li>
+<li>A tripoint fix adds back the Chile–Peru and Peru–Brazil borders near Bolivia by using <code>st_intersection()</code> with a wider buffer (0.40° and 0.20° respectively). Without this, the buffer clips a small tail off those borders.</li>
+<li>The <strong>gap-fill layer</strong> is computed as the Bolivia outline buffered outward by 0.55° minus the Natural Earth country union. The resulting geometry covers thin slivers and is rendered as gray.</li>
+<li><code>sf_use_s2(FALSE)</code> is toggled around GEOS-dependent operations (union of near-identical polygon edges) to avoid spurious vertex errors.</li>
+</ul>
+</section>
+<section id="map-generation-generate_locator_map" class="level3">
+<h3 class="anchored" data-anchor-id="map-generation-generate_locator_map">§4 — Map Generation (<code>generate_locator_map()</code>)</h3>
+<p>For each municipality, the function:</p>
+<ol type="1">
+<li>Filters <code>mun_regular</code> to the target municipality</li>
+<li>Constructs the map using the layer ordering above</li>
+<li>Resolves the display name from <code>muni_id_lookup_table</code> (which maps GADM names to official INE names with correct diacritics)</li>
+<li>Constructs a safe ASCII filename by stripping accents with <code>stringi::stri_trans_general(..., "Latin-ASCII")</code></li>
+<li>Saves as SVG to <code>output/locator_maps/muni-maps-final/</code></li>
+</ol>
+<p><strong>Naming convention</strong>: filenames use the official INE name (e.g., <code>Potosi_muni_locator_map.svg</code> locally; <code>Potosí muni locator map.svg</code> on Commons). For the 14 municipalities that share a name, the department is appended in parentheses:</p>
+<pre><code>El_Puente_(Santa_Cruz)_muni_locator_map.svg
+El_Puente_(Tarija)_muni_locator_map.svg</code></pre>
+<p>The batch loop writes a CSV summary (<code>batch_log.csv</code>) recording municipality, department, local file path, and SVG size.</p>
+<hr>
+</section>
+</section>
+<section id="upload-upload_to_commons.r" class="level2">
+<h2 class="anchored" data-anchor-id="upload-upload_to_commons.r">Upload: <code>upload_to_commons.R</code></h2>
+<section id="upload-metadata-table" class="level3">
+<h3 class="anchored" data-anchor-id="upload-metadata-table">§1 — Upload Metadata Table</h3>
+<p><code>upload_meta</code> is built by joining <code>results_df</code> (from the workbench script) with <code>muni_id_lookup_table</code> (for <code>id_muni</code>) and <code>municipalities_wd_ine</code> (for the Wikidata QID). It adds the Commons filename using the same disambiguation logic as the workbench script. A warning is emitted for any municipality missing a QID before uploading begins.</p>
+</section>
+<section id="wikitext" class="level3">
+<h3 class="anchored" data-anchor-id="wikitext">§2 — Wikitext</h3>
+<p>Each file gets a wikitext description page built by <code>build_wikitext()</code> with descriptions in four languages:</p>
+<ul>
+<li><strong>English</strong>: “Locator map showing [municipality] Municipality in a map of Bolivian municipalities, provinces, and departments”</li>
+<li><strong>Spanish</strong>: equivalent</li>
+<li><strong>Catalan</strong>: with correct elision (<em>de</em> / <em>d’</em> before vowels)</li>
+<li><strong>Quechua</strong></li>
+</ul>
+<p>License: <code>{self|cc-zero}</code> (CC0 public domain dedication). Category: <code>[[Category:Locator maps of municipalities in Bolivia]]</code>.</p>
+</section>
+<section id="api-session" class="level3">
+<h3 class="anchored" data-anchor-id="api-session">§3 — API Session</h3>
+<p>The script uses <code>httr2</code> with a persistent cookie file (<code>tempfile()</code>) to maintain a login session across all uploads. CSRF tokens are refreshed every 50 uploads as a safeguard against session expiry.</p>
+</section>
+<section id="dry-run" class="level3">
+<h3 class="anchored" data-anchor-id="dry-run">§4 — Dry Run</h3>
+<p>A <code>dry_run &lt;- TRUE</code> flag at the top of §4 lets you preview the first three wikitext blocks and inspect the metadata table without uploading. Set to <code>FALSE</code> to proceed.</p>
+</section>
+<section id="upload-loop" class="level3">
+<h3 class="anchored" data-anchor-id="upload-loop">§5 — Upload Loop</h3>
+<p>For each municipality the loop:</p>
+<ol type="1">
+<li>Checks the local SVG exists</li>
+<li>Checks whether the file already exists on Commons (<code>file_exists_on_commons()</code>) — skips if so</li>
+<li>Uploads the SVG with <code>upload_file()</code></li>
+<li>Looks up the page ID (returned in the API response, or via a fallback title query) and derives the M-ID (<code>paste0("M", page_id)</code>)</li>
+<li>Adds three structured data claims via <code>add_sdc_for_file()</code>: <em>depicts</em> (P180), <em>copyright license</em> (P275 → CC0 1.0, Q6938433), <em>copyright status</em> (P6216 → public domain, Q19652)</li>
+<li>Sets SDC captions in all four languages via <code>add_sdc_captions()</code></li>
+<li>Sleeps 1.5 seconds between uploads (~40/minute, well within Commons bot rate limits)</li>
+</ol>
+</section>
+<section id="upload-log" class="level3">
+<h3 class="anchored" data-anchor-id="upload-log">§6 — Upload Log</h3>
+<p>After the loop, <code>commons_upload_full</code> is saved as both RDS and CSV to <code>output/locator_maps/muni-maps-final/</code>. This table merges all <code>upload_meta</code> columns with the Commons-specific fields added during upload:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>municipality</code></td>
+<td>Official INE name</td>
+</tr>
+<tr class="even">
+<td><code>department</code></td>
+<td>Bolivian department</td>
+</tr>
+<tr class="odd">
+<td><code>id_muni</code></td>
+<td>6-digit INE municipality code</td>
+</tr>
+<tr class="even">
+<td><code>qid</code></td>
+<td>Wikidata QID</td>
+</tr>
+<tr class="odd">
+<td><code>commons_filename</code></td>
+<td>Filename on Commons (with accents, spaces)</td>
+</tr>
+<tr class="even">
+<td><code>commons_url</code></td>
+<td>Full URL (<code>https://commons.wikimedia.org/wiki/File:…</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>mid</code></td>
+<td>Commons media identifier (M-ID) for SDC</td>
+</tr>
+<tr class="even">
+<td><code>upload_date</code></td>
+<td>Date uploaded (<code>YYYY-MM-DD</code>; <code>NA</code> for skipped rows)</td>
+</tr>
+<tr class="odd">
+<td><code>status</code></td>
+<td><code>"uploaded"</code> / <code>"already_exists"</code> / <code>"error"</code></td>
+</tr>
+<tr class="even">
+<td><code>file</code></td>
+<td>Local SVG path</td>
+</tr>
+<tr class="odd">
+<td><code>size_kb</code></td>
+<td>SVG file size in KB</td>
+</tr>
+<tr class="even">
+<td><code>muni_gadm</code></td>
+<td>Original GADM name (for diagnostics)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Maps generated</td>
+<td>339</td>
+</tr>
+<tr class="even">
+<td>Maps uploaded (main batch)</td>
+<td>318</td>
+</tr>
+<tr class="odd">
+<td>Already existed on Commons</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Average SVG size</td>
+<td>2,837 KB</td>
+</tr>
+<tr class="odd">
+<td>Upload date</td>
+<td>2026-05-15</td>
+</tr>
+<tr class="even">
+<td>Wikidata QIDs linked</td>
+<td>320 / 320</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="sample-maps" class="level2">
+<h2 class="anchored" data-anchor-id="sample-maps">Sample Maps</h2>
+<p>Representative examples across Bolivia’s geography and departments:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Municipality</th>
+<th>Department</th>
+<th>Commons page</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sucre</td>
+<td>Chuquisaca</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Sucre_muni_locator_map.svg">Sucre muni locator map</a></td>
+</tr>
+<tr class="even">
+<td>Oruro</td>
+<td>Oruro</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Oruro_muni_locator_map.svg">Oruro muni locator map</a></td>
+</tr>
+<tr class="odd">
+<td>Potosí</td>
+<td>Potosí</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Potosí_muni_locator_map.svg">Potosí muni locator map</a></td>
+</tr>
+<tr class="even">
+<td>Santa Cruz de la Sierra</td>
+<td>Santa Cruz</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_la_Sierra_muni_locator_map.svg">Santa Cruz de la Sierra muni locator map</a></td>
+</tr>
+<tr class="odd">
+<td>Cobija</td>
+<td>Pando</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Cobija_muni_locator_map.svg">Cobija muni locator map</a></td>
+</tr>
+<tr class="even">
+<td>Tarija</td>
+<td>Tarija</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Tarija_muni_locator_map.svg">Tarija muni locator map</a></td>
+</tr>
+<tr class="odd">
+<td>El Puente (disambiguation)</td>
+<td>Santa Cruz</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:El_Puente_(Santa_Cruz)_muni_locator_map.svg">El Puente (Santa Cruz) muni locator map</a></td>
+</tr>
+<tr class="even">
+<td>El Puente (disambiguation)</td>
+<td>Tarija</td>
+<td><a href="https://commons.wikimedia.org/wiki/File:El_Puente_(Tarija)_muni_locator_map.svg">El Puente (Tarija) muni locator map</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="commons-pages" class="level2">
+<h2 class="anchored" data-anchor-id="commons-pages">Commons Pages</h2>
+<ul>
+<li><strong>Category</strong>: <a href="https://commons.wikimedia.org/wiki/Category:Locator_maps_of_municipalities_in_Bolivia">Locator maps of municipalities in Bolivia</a></li>
+<li><strong>Bot contributions</strong>: <a href="https://commons.wikimedia.org/wiki/Special:Contributions/Carwil@Bolivia_locator_maps">Carwil@Bolivia_locator_maps</a></li>
+</ul>
+<hr>
+</section>
+<section id="adapting-for-another-country" class="level2">
+<h2 class="anchored" data-anchor-id="adapting-for-another-country">Adapting for Another Country</h2>
+<p>The pipeline is generic. To adapt it:</p>
+<p><strong>1. Replace GADM data</strong></p>
+<p>Download GADM for your country at level 2 or 3 (whichever is the target administrative level). Update the <code>st_read()</code> calls and the <code>NAME_3</code>/<code>NAME_1</code> column references to match the GADM field names for your country.</p>
+<p><strong>2. Adjust neighboring countries</strong></p>
+<p>In <code>prepare_shared_layers()</code>, change the <code>filter(ADMIN %in% c(...))</code> to list your country’s neighbors.</p>
+<p><strong>3. Update the bounding box</strong></p>
+<p>Change <code>bbox_xmin</code>, <code>bbox_xmax</code>, <code>bbox_ymin</code>, <code>bbox_ymax</code> in <code>params</code> to cover your country.</p>
+<p><strong>4. Check for lake or coastal features</strong></p>
+<p>If your country has major internal lakes (like Titicaca), add them from the Natural Earth lakes dataset or handle them similarly. If your country has a coastline, the gap-fill and ocean logic should generalize without changes.</p>
+<p><strong>5. Adjust the tripoint fix</strong></p>
+<p>The Chile–Peru–Brazil tripoint fix is Bolivia-specific. For other countries, inspect the neighbor border joins for similar gaps near tripoints and adjust accordingly.</p>
+<p><strong>6. Update wikitext and categories</strong></p>
+<p>Change the descriptions in <code>build_descriptions()</code> and the category in <code>build_wikitext()</code> to match the new country and administrative level. Update the Wikidata properties accordingly if depicting a different administrative level.</p>
+<p><strong>7. Update the municipality name lookup</strong></p>
+<p>The <code>muni_id_lookup_table</code> and <code>municipalities_wd_ine</code> are Bolivia-specific. For another country you need an equivalent table mapping GADM names to display names and Wikidata QIDs.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

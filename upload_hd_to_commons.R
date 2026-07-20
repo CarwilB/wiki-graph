@@ -28,7 +28,7 @@ TODAY       <- format(Sys.Date(), "%Y-%m-%d")
 BOT_USER    <- Sys.getenv("COMMONS_BOT_USER")
 BOT_PASS    <- Sys.getenv("COMMONS_BOT_PASSWORD")
 AUTHOR      <- Sys.getenv("COMMONS_AUTHOR")
-HD_DIR      <- "output/locator_maps/muni-maps-hd"
+HD_DIR      <- "output/locator_maps/muni-map-hd-v3"
 
 stopifnot(
   "COMMONS_BOT_USER not set in .Renviron"     = nzchar(BOT_USER),
@@ -36,6 +36,10 @@ stopifnot(
   "COMMONS_AUTHOR not set in .Renviron"       = nzchar(AUTHOR)
 )
 
+# Prior upload information
+out_dir_prior <- 'output/locator_maps/muni-maps-final'
+rds_path <- file.path(out_dir_prior, "commons_upload_log.rds")
+commons_upload_full <- readRDS(rds_path)
 
 # ==============================================================================
 # §1 — BUILD HD UPLOAD METADATA TABLE
@@ -326,7 +330,7 @@ add_sdc_captions <- function(mid, municipality, csrf_token) {
 # §4 — DRY RUN (set dry_run = FALSE to actually upload)
 # ==============================================================================
 
-dry_run <- TRUE
+dry_run <- FALSE  # Set to TRUE for testing without uploading
 
 if (dry_run) {
   cat("=== DRY RUN — no files will be uploaded ===\n\n")
@@ -340,13 +344,17 @@ if (dry_run) {
   cat("\nMetadata table (first 10 rows):\n")
   print(upload_meta |>
           select(municipality, department, commons_filename, hd_file, upload_date) |>
-          mutate(action = if_else(is.na(upload_date), "NEW", "UPDATE")) |>
+          mutate(action =  "UPDATE") |>
+#          mutate(action = if_else(is.na(upload_date), "NEW", "UPDATE")) |>
           select(-upload_date) |>
           head(10))
   stop("Dry run complete. Set dry_run <- FALSE and re-run to upload.", call. = FALSE)
+  upload_meta <- head(upload_meta, 10)  # For testing: limit to first 10 rows.
+} else {
+  upload_meta <- tail(upload_meta, nrows(upload_meta)-10)  # Already tested, so
+    # skip first 10 rows in actual upload.
 }
 
-# upload_meta <- head(upload_meta, 10)  # For testing: limit to first 10 rows.
 
 
 # ==============================================================================
@@ -448,6 +456,12 @@ for (i in seq_len(nrow(upload_meta))) {
   Sys.sleep(1.5)  # ~40 uploads/minute — well within bot limits
 }
 
+if (dry_run) {
+  upload_log_test <- upload_log
+} else {
+  uplaad_log <- bind_rows(upload_log_test, upload_log))
+}
+
 
 # ==============================================================================
 # §5b — DESCRIPTION-ONLY EDIT PASS
@@ -455,64 +469,64 @@ for (i in seq_len(nrow(upload_meta))) {
 # already correct but the wikitext needs updating (e.g. adding attribution).
 # Acasio and Achacachi (rows 1–2) were already edited; start from row 3.
 # ==============================================================================
-
-desc_edit_start <- 3   # First row to edit (1-indexed into upload_meta)
-
-desc_edit_meta  <- upload_meta[desc_edit_start:nrow(upload_meta), ]
-
-commons_login()
-csrf <- get_csrf_token()
-
-desc_edit_log <- vector("list", nrow(desc_edit_meta))
-t0 <- Sys.time()
-
-for (i in seq_len(nrow(desc_edit_meta))) {
-  row <- desc_edit_meta[i, ]
-
-  # Refresh CSRF token every 50 edits
-  if (i %% 50 == 1) csrf <- get_csrf_token()
-
-  wt   <- build_wikitext(row$municipality, TODAY, AUTHOR)
-  resp <- tryCatch(
-    edit_file_description(row$commons_filename, wt, csrf),
-    error = \(e) list(error = list(info = conditionMessage(e)))
-  )
-
-  if (!is.null(resp$error)) {
-    cat(sprintf("[%3d/%d] ERROR: %s — %s\n",
-                i, nrow(desc_edit_meta), row$commons_filename, resp$error$info))
-    desc_edit_log[[i]] <- tibble(municipality = row$municipality, department = row$department,
-                                 commons_filename = row$commons_filename,
-                                 status = "error", message = resp$error$info)
-    next
-  }
-
-  is_nochange <- isTRUE(!is.null(resp$edit$nochange))
-  elapsed <- as.numeric(difftime(Sys.time(), t0, units = "secs"))
-  eta     <- (elapsed / i) * (nrow(desc_edit_meta) - i)
-  cat(sprintf("[%3d/%d] %s %-55s  (ETA %s)\n",
-              i, nrow(desc_edit_meta),
-              if (is_nochange) "---" else "EDT",
-              row$commons_filename,
-              if (eta > 60) sprintf("%.0f min", eta / 60) else sprintf("%.0f s", eta)))
-
-  desc_edit_log[[i]] <- tibble(municipality = row$municipality, department = row$department,
-                                commons_filename = row$commons_filename,
-                                revid = resp$edit$newrevid %||% NA_integer_,
-                                status = if (is_nochange) "nochange" else "desc_edited")
-
-  Sys.sleep(1)  # description edits are lighter than uploads; 60/min is fine
-}
-
-desc_edit_df <- bind_rows(Filter(Negate(is.null), desc_edit_log))
-cat(sprintf(
-  "\nDescription edit pass done in %.0f min — %d edited, %d already current, %d errors\n",
-  as.numeric(difftime(Sys.time(), t0, units = "mins")),
-  sum(desc_edit_df$status == "desc_edited"),
-  sum(desc_edit_df$status == "nochange"),
-  sum(desc_edit_df$status == "error")
-))
-
+#
+# desc_edit_start <- 3   # First row to edit (1-indexed into upload_meta)
+#
+# desc_edit_meta  <- upload_meta[desc_edit_start:nrow(upload_meta), ]
+#
+# commons_login()
+# csrf <- get_csrf_token()
+#
+# desc_edit_log <- vector("list", nrow(desc_edit_meta))
+# t0 <- Sys.time()
+#
+# for (i in seq_len(nrow(desc_edit_meta))) {
+#   row <- desc_edit_meta[i, ]
+#
+#   # Refresh CSRF token every 50 edits
+#   if (i %% 50 == 1) csrf <- get_csrf_token()
+#
+#   wt   <- build_wikitext(row$municipality, TODAY, AUTHOR)
+#   resp <- tryCatch(
+#     edit_file_description(row$commons_filename, wt, csrf),
+#     error = \(e) list(error = list(info = conditionMessage(e)))
+#   )
+#
+#   if (!is.null(resp$error)) {
+#     cat(sprintf("[%3d/%d] ERROR: %s — %s\n",
+#                 i, nrow(desc_edit_meta), row$commons_filename, resp$error$info))
+#     desc_edit_log[[i]] <- tibble(municipality = row$municipality, department = row$department,
+#                                  commons_filename = row$commons_filename,
+#                                  status = "error", message = resp$error$info)
+#     next
+#   }
+#
+#   is_nochange <- isTRUE(!is.null(resp$edit$nochange))
+#   elapsed <- as.numeric(difftime(Sys.time(), t0, units = "secs"))
+#   eta     <- (elapsed / i) * (nrow(desc_edit_meta) - i)
+#   cat(sprintf("[%3d/%d] %s %-55s  (ETA %s)\n",
+#               i, nrow(desc_edit_meta),
+#               if (is_nochange) "---" else "EDT",
+#               row$commons_filename,
+#               if (eta > 60) sprintf("%.0f min", eta / 60) else sprintf("%.0f s", eta)))
+#
+#   desc_edit_log[[i]] <- tibble(municipality = row$municipality, department = row$department,
+#                                 commons_filename = row$commons_filename,
+#                                 revid = resp$edit$newrevid %||% NA_integer_,
+#                                 status = if (is_nochange) "nochange" else "desc_edited")
+#
+#   Sys.sleep(1)  # description edits are lighter than uploads; 60/min is fine
+# }
+#
+# desc_edit_df <- bind_rows(Filter(Negate(is.null), desc_edit_log))
+# cat(sprintf(
+#   "\nDescription edit pass done in %.0f min — %d edited, %d already current, %d errors\n",
+#   as.numeric(difftime(Sys.time(), t0, units = "mins")),
+#   sum(desc_edit_df$status == "desc_edited"),
+#   sum(desc_edit_df$status == "nochange"),
+#   sum(desc_edit_df$status == "error")
+# ))
+#
 
 # ==============================================================================
 # §6 — SUMMARY AND SAVE

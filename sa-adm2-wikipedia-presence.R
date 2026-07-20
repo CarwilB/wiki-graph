@@ -257,20 +257,20 @@ new_countries <- tribble(
   "Puerto Rico",        "Q1183"
 )
 
-message("Querying ADM2 classes via P150 for new countries...")
-
-sparql_query <- function(query) {
-  r <- GET(
-    "https://query.wikidata.org/sparql",
-    query = list(query = query, format = "json"),
-    user_agent("WikidataR-admin-division-research")
-  )
-  if (status_code(r) != 200) stop("SPARQL failed: ", status_code(r))
-  res <- fromJSON(content(r, "text", encoding = "UTF-8"))
-  if (length(res$results$bindings) == 0) return(tibble())
-  as_tibble(res$results$bindings) |>
-    mutate(across(everything(), ~ .x$value))
-}
+# message("Querying ADM2 classes via P150 for new countries...")
+#
+# sparql_query <- function(query) {
+#   r <- GET(
+#     "https://query.wikidata.org/sparql",
+#     query = list(query = query, format = "json"),
+#     user_agent("WikidataR-admin-division-research")
+#   )
+#   if (status_code(r) != 200) stop("SPARQL failed: ", status_code(r))
+#   res <- fromJSON(content(r, "text", encoding = "UTF-8"))
+#   if (length(res$results$bindings) == 0) return(tibble())
+#   as_tibble(res$results$bindings) |>
+#     mutate(across(everything(), ~ .x$value))
+# }
 
 
 # Better approach: use P150 (contains administrative territorial entity)
@@ -295,7 +295,14 @@ LIMIT 10
 
   tryCatch({
     res <- sparql_query(q)
-    if (nrow(res) == 0) return(tibble(country = country_name, class = NA, classLabel = NA, n = NA))
+    if (nrow(res) == 0) {
+      return(tibble(
+        country = country_name,
+        class = NA_character_,
+        classLabel = NA_character_,
+        n = NA_integer_
+      ))
+    }
     res |> mutate(
       country = country_name,
       class   = str_extract(class, "Q\\d+$"),
@@ -306,6 +313,8 @@ LIMIT 10
     tibble(country = country_name, class = NA_character_, classLabel = NA_character_, n = NA_integer_)
   })
 }
+
+sa_countries <- bind_rows(new_countries)
 
 message("Querying via P150 (contains administrative territorial entity)...")
 second_level_v2 <- purrr::map2_dfr(sa_countries$qid, sa_countries$name,

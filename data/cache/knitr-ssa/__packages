@@ -1,0 +1,7 @@
+httr
+jsonlite
+dplyr
+stringr
+purrr
+tidyr
+ggplot2

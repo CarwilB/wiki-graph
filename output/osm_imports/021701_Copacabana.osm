@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6">
+
+  <node id="-1" action="create" lat="-16.0555401" lon="-69.1315286" />
+  <node id="-2" action="create" lat="-16.0594460" lon="-69.1242199" />
+  <node id="-3" action="create" lat="-16.0613028" lon="-69.1131765" />
+  <node id="-4" action="create" lat="-16.0643141" lon="-69.1128752" />
+  <node id="-5" action="create" lat="-16.0646259" lon="-69.1094818" />
+  <node id="-6" action="create" lat="-16.0673448" lon="-69.1097021" />
+  <node id="-7" action="create" lat="-16.0660599" lon="-69.1057465" />
+  <node id="-8" action="create" lat="-16.0708444" lon="-69.0982483" />
+  <node id="-9" action="create" lat="-16.0736598" lon="-69.0969216" />
+  <node id="-10" action="create" lat="-16.0739169" lon="-69.0932804" />
+  <node id="-11" action="create" lat="-16.0766447" lon="-69.0919215" />
+  <node id="-12" action="create" lat="-16.0769247" lon="-69.0886354" />
+  <node id="-13" action="create" lat="-16.0897838" lon="-69.0758858" />
+  <node id="-14" action="create" lat="-16.0932790" lon="-69.0573446" />
+  <node id="-15" action="create" lat="-16.0966064" lon="-69.0552603" />
+  <node id="-16" action="create" lat="-16.0954143" lon="-69.0502947" />
+  <node id="-17" action="create" lat="-16.0981815" lon="-69.0463492" />
+  <node id="-18" action="create" lat="-16.1007039" lon="-69.0454147" />
+  <node id="-19" action="create" lat="-16.1008249" lon="-69.0390800" />
+  <node id="-20" action="create" lat="-16.1095424" lon="-69.0221182" />
+  <node id="-21" action="create" lat="-16.1127442" lon="-69.0121994" />
+  <node id="-22" action="create" lat="-16.1166246" lon="-69.0074729" />
+  <node id="-23" action="create" lat="-16.1202435" lon="-69.0065527" />
+  <node id="-24" action="create" lat="-16.1276290" lon="-68.9960597" />
+  <node id="-25" action="create" lat="-16.1284385" lon="-68.9911331" />
+  <node id="-26" action="create" lat="-16.1360465" lon="-68.9834835" />
+  <node id="-27" action="create" lat="-16.1406976" lon="-68.9761114" />
+  <node id="-28" action="create" lat="-16.1497494" lon="-68.9744153" />
+  <node id="-29" action="create" lat="-16.1549381" lon="-68.9687453" />
+  <node id="-30" action="create" lat="-16.1589259" lon="-68.9758907" />
+  <node id="-31" action="create" lat="-16.1600031" lon="-68.9852456" />
+  <node id="-32" action="create" lat="-16.1618432" lon="-68.9856460" />
+  <node id="-33" action="create" lat="-16.1790401" lon="-68.9757194" />
+  <node id="-34" action="create" lat="-16.1866940" lon="-68.9745304" />
+  <node id="-35" action="create" lat="-16.1925356" lon="-68.9759180" />
+  <node id="-36" action="create" lat="-16.1900231" lon="-68.9788874" />
+  <node id="-37" action="create" lat="-16.1914161" lon="-68.9850184" />
+  <node id="-38" action="create" lat="-16.1961799" lon="-68.9895853" />
+  <node id="-39" action="create" lat="-16.1997021" lon="-68.9988830" />
+  <node id="-40" action="create" lat="-16.2056770" lon="-69.0052167" />
+  <node id="-41" action="create" lat="-16.2195769" lon="-69.0085669" />
+  <node id="-42" action="create" lat="-16.2230824" lon="-69.0171146" />
+  <node id="-43" action="create" lat="-16.2148852" lon="-69.0206924" />
+  <node id="-44" action="create" lat="-16.2097935" lon="-69.0275760" />
+  <node id="-45" action="create" lat="-16.1981905" lon="-69.0554521" />
+  <node id="-46" action="create" lat="-16.2073987" lon="-69.0621942" />
+  <node id="-47" action="create" lat="-16.2208569" lon="-69.0782783" />
+  <node id="-48" action="create" lat="-16.2256151" lon="-69.0958625" />
+  <node id="-49" action="create" lat="-16.2256369" lon="-69.1024084" />
+  <node id="-50" action="create" lat="-16.2198055" lon="-69.0952008" />
+  <node id="-51" action="create" lat="-16.2155928" lon="-69.0945861" />
+  <node id="-52" action="create" lat="-16.2147824" lon="-69.0931672" />
+  <node id="-53" action="create" lat="-16.2116240" lon="-69.0966949" />
+  <node id="-54" action="create" lat="-16.2071653" lon="-69.0983808" />
+  <node id="-55" action="create" lat="-16.2067033" lon="-69.1068464" />
+  <node id="-56" action="create" lat="-16.2032985" lon="-69.1053409" />
+  <node id="-57" action="create" lat="-16.1979159" lon="-69.1081059" />
+  <node id="-58" action="create" lat="-16.1968563" lon="-69.1160236" />
+  <node id="-59" action="create" lat="-16.1946285" lon="-69.1204571" />
+  <node id="-60" action="create" lat="-16.2006368" lon="-69.1238097" />
+  <node id="-61" action="create" lat="-16.2004878" lon="-69.1255980" />
+  <node id="-62" action="create" lat="-16.1979278" lon="-69.1267530" />
+  <node id="-63" action="create" lat="-16.1855453" lon="-69.1234632" />
+  <node id="-64" action="create" lat="-16.1815636" lon="-69.1196846" />
+  <node id="-65" action="create" lat="-16.1781682" lon="-69.0985547" />
+  <node id="-66" action="create" lat="-16.1672329" lon="-69.0899705" />
+  <node id="-67" action="create" lat="-16.1628554" lon="-69.0934679" />
+  <node id="-68" action="create" lat="-16.1597922" lon="-69.0929506" />
+  <node id="-69" action="create" lat="-16.1578637" lon="-69.0870636" />
+  <node id="-70" action="create" lat="-16.1591495" lon="-69.0831654" />
+  <node id="-71" action="create" lat="-16.1545131" lon="-69.0776664" />
+  <node id="-72" action="create" lat="-16.1470640" lon="-69.0749213" />
+  <node id="-73" action="create" lat="-16.1454120" lon="-69.0773000" />
+  <node id="-74" action="create" lat="-16.1398505" lon="-69.0788924" />
+  <node id="-75" action="create" lat="-16.1396896" lon="-69.0823664" />
+  <node id="-76" action="create" lat="-16.1314240" lon="-69.0896385" />
+  <node id="-77" action="create" lat="-16.1315502" lon="-69.0924146" />
+  <node id="-78" action="create" lat="-16.1299948" lon="-69.0937747" />
+  <node id="-79" action="create" lat="-16.1267302" lon="-69.0909980" />
+  <node id="-80" action="create" lat="-16.1289961" lon="-69.0855406" />
+  <node id="-81" action="create" lat="-16.1249144" lon="-69.0825944" />
+  <node id="-82" action="create" lat="-16.1173885" lon="-69.0848805" />
+  <node id="-83" action="create" lat="-16.1141722" lon="-69.0905930" />
+  <node id="-84" action="create" lat="-16.1084040" lon="-69.0955687" />
+  <node id="-85" action="create" lat="-16.1060941" lon="-69.0954859" />
+  <node id="-86" action="create" lat="-16.1067592" lon="-69.0936169" />
+  <node id="-87" action="create" lat="-16.1053634" lon="-69.0918597" />
+  <node id="-88" action="create" lat="-16.1023066" lon="-69.0928662" />
+  <node id="-89" action="create" lat="-16.1007099" lon="-69.0972944" />
+  <node id="-90" action="create" lat="-16.1042036" lon="-69.0979546" />
+  <node id="-91" action="create" lat="-16.1030973" lon="-69.1011719" />
+  <node id="-92" action="create" lat="-16.1007400" lon="-69.0985746" />
+  <node id="-93" action="create" lat="-16.0992725" lon="-69.1000336" />
+  <node id="-94" action="create" lat="-16.1016015" lon="-69.1025710" />
+  <node id="-95" action="create" lat="-16.1016303" lon="-69.1055115" />
+  <node id="-96" action="create" lat="-16.0972500" lon="-69.1150598" />
+  <node id="-97" action="create" lat="-16.0948056" lon="-69.1165253" />
+  <node id="-98" action="create" lat="-16.0894014" lon="-69.1236203" />
+  <node id="-99" action="create" lat="-16.0828645" lon="-69.1293233" />
+  <node id="-100" action="create" lat="-16.0808416" lon="-69.1328089" />
+  <node id="-101" action="create" lat="-16.0775274" lon="-69.1356237" />
+  <node id="-102" action="create" lat="-16.0906994" lon="-69.1195870" />
+  <node id="-103" action="create" lat="-16.0947232" lon="-69.1117588" />
+  <node id="-104" action="create" lat="-16.0902926" lon="-69.1118101" />
+  <node id="-105" action="create" lat="-16.0809861" lon="-69.1171097" />
+  <node id="-106" action="create" lat="-16.0780686" lon="-69.1208433" />
+  <node id="-107" action="create" lat="-16.0732660" lon="-69.1215736" />
+  <node id="-108" action="create" lat="-16.0733436" lon="-69.1250059" />
+  <node id="-109" action="create" lat="-16.0706170" lon="-69.1251266" />
+  <node id="-110" action="create" lat="-16.0664487" lon="-69.1295891" />
+  <node id="-111" action="create" lat="-16.0641305" lon="-69.1283797" />
+  <node id="-112" action="create" lat="-16.0568309" lon="-69.1326153" />
+  <node id="-113" action="create" lat="-16.0555401" lon="-69.1315286" />
+  <node id="-114" action="create" lat="-15.9806973" lon="-69.1939323" />
+  <node id="-115" action="create" lat="-15.9859766" lon="-69.1910892" />
+  <node id="-116" action="create" lat="-15.9886279" lon="-69.1862611" />
+  <node id="-117" action="create" lat="-15.9927453" lon="-69.1890962" />
+  <node id="-118" action="create" lat="-15.9966846" lon="-69.1856990" />
+  <node id="-119" action="create" lat="-15.9970793" lon="-69.1830577" />
+  <node id="-120" action="create" lat="-15.9956403" lon="-69.1814339" />
+  <node id="-121" action="create" lat="-15.9896976" lon="-69.1796409" />
+  <node id="-122" action="create" lat="-15.9906509" lon="-69.1782998" />
+  <node id="-123" action="create" lat="-15.9893426" lon="-69.1756578" />
+  <node id="-124" action="create" lat="-15.9921118" lon="-69.1739084" />
+  <node id="-125" action="create" lat="-15.9945415" lon="-69.1691441" />
+  <node id="-126" action="create" lat="-15.9967521" lon="-69.1683219" />
+  <node id="-127" action="create" lat="-15.9976452" lon="-69.1706533" />
+  <node id="-128" action="create" lat="-15.9969155" lon="-69.1759883" />
+  <node id="-129" action="create" lat="-15.9953291" lon="-69.1775000" />
+  <node id="-130" action="create" lat="-15.9971870" lon="-69.1814847" />
+  <node id="-131" action="create" lat="-16.0014288" lon="-69.1809460" />
+  <node id="-132" action="create" lat="-16.0087509" lon="-69.1737179" />
+  <node id="-133" action="create" lat="-16.0104899" lon="-69.1740713" />
+  <node id="-134" action="create" lat="-16.0128590" lon="-69.1687223" />
+  <node id="-135" action="create" lat="-16.0094364" lon="-69.1663383" />
+  <node id="-136" action="create" lat="-16.0079466" lon="-69.1624767" />
+  <node id="-137" action="create" lat="-16.0044504" lon="-69.1619621" />
+  <node id="-138" action="create" lat="-16.0092666" lon="-69.1568712" />
+  <node id="-139" action="create" lat="-16.0137154" lon="-69.1549436" />
+  <node id="-140" action="create" lat="-16.0170087" lon="-69.1576024" />
+  <node id="-141" action="create" lat="-16.0191737" lon="-69.1568743" />
+  <node id="-142" action="create" lat="-16.0199741" lon="-69.1509282" />
+  <node id="-143" action="create" lat="-16.0235950" lon="-69.1442243" />
+  <node id="-144" action="create" lat="-16.0257211" lon="-69.1452734" />
+  <node id="-145" action="create" lat="-16.0288183" lon="-69.1430863" />
+  <node id="-146" action="create" lat="-16.0337953" lon="-69.1446923" />
+  <node id="-147" action="create" lat="-16.0435143" lon="-69.1418249" />
+  <node id="-148" action="create" lat="-16.0481581" lon="-69.1435841" />
+  <node id="-149" action="create" lat="-16.0526404" lon="-69.1409923" />
+  <node id="-150" action="create" lat="-16.0528527" lon="-69.1451500" />
+  <node id="-151" action="create" lat="-16.0461549" lon="-69.1478609" />
+  <node id="-152" action="create" lat="-16.0434250" lon="-69.1531323" />
+  <node id="-153" action="create" lat="-16.0397305" lon="-69.1532182" />
+  <node id="-154" action="create" lat="-16.0399245" lon="-69.1577933" />
+  <node id="-155" action="create" lat="-16.0375364" lon="-69.1582514" />
+  <node id="-156" action="create" lat="-16.0384892" lon="-69.1614622" />
+  <node id="-157" action="create" lat="-16.0360210" lon="-69.1620134" />
+  <node id="-158" action="create" lat="-16.0360155" lon="-69.1637858" />
+  <node id="-159" action="create" lat="-16.0329666" lon="-69.1654884" />
+  <node id="-160" action="create" lat="-16.0290858" lon="-69.1727325" />
+  <node id="-161" action="create" lat="-16.0316699" lon="-69.1756321" />
+  <node id="-162" action="create" lat="-16.0371042" lon="-69.1714599" />
+  <node id="-163" action="create" lat="-16.0450669" lon="-69.1691837" />
+  <node id="-164" action="create" lat="-16.0519131" lon="-69.1647257" />
+  <node id="-165" action="create" lat="-16.0564355" lon="-69.1626607" />
+  <node id="-166" action="create" lat="-16.0498080" lon="-69.1709620" />
+  <node id="-167" action="create" lat="-16.0400148" lon="-69.1740564" />
+  <node id="-168" action="create" lat="-16.0327511" lon="-69.1867177" />
+  <node id="-169" action="create" lat="-16.0084625" lon="-69.2018014" />
+  <node id="-170" action="create" lat="-16.0064595" lon="-69.2013420" />
+  <node id="-171" action="create" lat="-16.0123758" lon="-69.1925496" />
+  <node id="-172" action="create" lat="-16.0094259" lon="-69.1898516" />
+  <node id="-173" action="create" lat="-16.0070938" lon="-69.1898143" />
+  <node id="-174" action="create" lat="-15.9995790" lon="-69.1970280" />
+  <node id="-175" action="create" lat="-15.9965227" lon="-69.1974355" />
+  <node id="-176" action="create" lat="-15.9939092" lon="-69.2021102" />
+  <node id="-177" action="create" lat="-15.9914305" lon="-69.2030920" />
+  <node id="-178" action="create" lat="-15.9907558" lon="-69.2055938" />
+  <node id="-179" action="create" lat="-15.9928650" lon="-69.2107221" />
+  <node id="-180" action="create" lat="-15.9882132" lon="-69.2143081" />
+  <node id="-181" action="create" lat="-15.9848014" lon="-69.2106510" />
+  <node id="-182" action="create" lat="-15.9870109" lon="-69.2040685" />
+  <node id="-183" action="create" lat="-15.9858358" lon="-69.2023352" />
+  <node id="-184" action="create" lat="-15.9869224" lon="-69.2005214" />
+  <node id="-185" action="create" lat="-15.9889657" lon="-69.2005356" />
+  <node id="-186" action="create" lat="-15.9905831" lon="-69.1937379" />
+  <node id="-187" action="create" lat="-15.9891666" lon="-69.1922687" />
+  <node id="-188" action="create" lat="-15.9853769" lon="-69.1922267" />
+  <node id="-189" action="create" lat="-15.9806973" lon="-69.1939323" />
+  <node id="-190" action="create" lat="-16.0316528" lon="-69.0818452" />
+  <node id="-191" action="create" lat="-16.0418181" lon="-69.0646793" />
+  <node id="-192" action="create" lat="-16.0479960" lon="-69.0613094" />
+  <node id="-193" action="create" lat="-16.0454543" lon="-69.0651429" />
+  <node id="-194" action="create" lat="-16.0448314" lon="-69.0710104" />
+  <node id="-195" action="create" lat="-16.0348068" lon="-69.0810224" />
+  <node id="-196" action="create" lat="-16.0316528" lon="-69.0818452" />
+  <node id="-197" action="create" lat="-15.9939066" lon="-69.2244482" />
+  <node id="-198" action="create" lat="-15.9948420" lon="-69.2203952" />
+  <node id="-199" action="create" lat="-15.9978087" lon="-69.2143076" />
+  <node id="-200" action="create" lat="-15.9984627" lon="-69.2160918" />
+  <node id="-201" action="create" lat="-15.9939066" lon="-69.2244482" />
+  <node id="-202" action="create" lat="-15.9546791" lon="-69.2176882" />
+  <node id="-203" action="create" lat="-15.9564207" lon="-69.2173626" />
+  <node id="-204" action="create" lat="-15.9583318" lon="-69.2156321" />
+  <node id="-205" action="create" lat="-15.9565414" lon="-69.2181004" />
+  <node id="-206" action="create" lat="-15.9546791" lon="-69.2176882" />
+  <node id="-207" action="create" lat="-15.9757671" lon="-69.1920583" />
+  <node id="-208" action="create" lat="-15.9785726" lon="-69.1906077" />
+  <node id="-209" action="create" lat="-15.9757897" lon="-69.1922103" />
+  <node id="-210" action="create" lat="-15.9757671" lon="-69.1920583" />
+  <node id="-211" action="create" lat="-15.9685723" lon="-69.2075827" />
+  <node id="-212" action="create" lat="-15.9698344" lon="-69.2063135" />
+  <node id="-213" action="create" lat="-15.9710833" lon="-69.2074947" />
+  <node id="-214" action="create" lat="-15.9702232" lon="-69.2080487" />
+  <node id="-215" action="create" lat="-15.9685723" lon="-69.2075827" />
+  <node id="-216" action="create" lat="-15.9664923" lon="-69.2310369" />
+  <node id="-217" action="create" lat="-15.9676454" lon="-69.2286358" />
+  <node id="-218" action="create" lat="-15.9684952" lon="-69.2288323" />
+  <node id="-219" action="create" lat="-15.9677205" lon="-69.2308465" />
+  <node id="-220" action="create" lat="-15.9664923" lon="-69.2310369" />
+  <node id="-221" action="create" lat="-15.9847967" lon="-69.1778236" />
+  <node id="-222" action="create" lat="-15.9873670" lon="-69.1760739" />
+  <node id="-223" action="create" lat="-15.9852053" lon="-69.1785294" />
+  <node id="-224" action="create" lat="-15.9847967" lon="-69.1778236" />
+  <node id="-225" action="create" lat="-16.0507239" lon="-69.1387206" />
+  <node id="-226" action="create" lat="-16.0498279" lon="-69.1375736" />
+  <node id="-227" action="create" lat="-16.0513757" lon="-69.1376020" />
+
+  <way id="-228" action="create">
+    <nd ref="-1"/>
+    <nd ref="-2"/>
+    <nd ref="-3"/>
+    <nd ref="-4"/>
+    <nd ref="-5"/>
+    <nd ref="-6"/>
+    <nd ref="-7"/>
+    <nd ref="-8"/>
+    <nd ref="-9"/>
+    <nd ref="-10"/>
+    <nd ref="-11"/>
+    <nd ref="-12"/>
+    <nd ref="-13"/>
+    <nd ref="-14"/>
+    <nd ref="-15"/>
+    <nd ref="-16"/>
+    <nd ref="-17"/>
+    <nd ref="-18"/>
+    <nd ref="-19"/>
+    <nd ref="-20"/>
+    <nd ref="-21"/>
+    <nd ref="-22"/>
+    <nd ref="-23"/>
+    <nd ref="-24"/>
+    <nd ref="-25"/>
+    <nd ref="-26"/>
+    <nd ref="-27"/>
+    <nd ref="-28"/>
+    <nd ref="-29"/>
+    <nd ref="-30"/>
+    <nd ref="-31"/>
+    <nd ref="-32"/>
+    <nd ref="-33"/>
+    <nd ref="-34"/>
+    <nd ref="-35"/>
+    <nd ref="-36"/>
+    <nd ref="-37"/>
+    <nd ref="-38"/>
+    <nd ref="-39"/>
+    <nd ref="-40"/>
+    <nd ref="-41"/>
+    <nd ref="-42"/>
+    <nd ref="-43"/>
+    <nd ref="-44"/>
+    <nd ref="-45"/>
+    <nd ref="-46"/>
+    <nd ref="-47"/>
+    <nd ref="-48"/>
+    <nd ref="-49"/>
+    <nd ref="-50"/>
+    <nd ref="-51"/>
+    <nd ref="-52"/>
+    <nd ref="-53"/>
+    <nd ref="-54"/>
+    <nd ref="-55"/>
+    <nd ref="-56"/>
+    <nd ref="-57"/>
+    <nd ref="-58"/>
+    <nd ref="-59"/>
+    <nd ref="-60"/>
+    <nd ref="-61"/>
+    <nd ref="-62"/>
+    <nd ref="-63"/>
+    <nd ref="-64"/>
+    <nd ref="-65"/>
+    <nd ref="-66"/>
+    <nd ref="-67"/>
+    <nd ref="-68"/>
+    <nd ref="-69"/>
+    <nd ref="-70"/>
+    <nd ref="-71"/>
+    <nd ref="-72"/>
+    <nd ref="-73"/>
+    <nd ref="-74"/>
+    <nd ref="-75"/>
+    <nd ref="-76"/>
+    <nd ref="-77"/>
+    <nd ref="-78"/>
+    <nd ref="-79"/>
+    <nd ref="-80"/>
+    <nd ref="-81"/>
+    <nd ref="-82"/>
+    <nd ref="-83"/>
+    <nd ref="-84"/>
+    <nd ref="-85"/>
+    <nd ref="-86"/>
+    <nd ref="-87"/>
+    <nd ref="-88"/>
+    <nd ref="-89"/>
+    <nd ref="-90"/>
+    <nd ref="-91"/>
+    <nd ref="-92"/>
+    <nd ref="-93"/>
+    <nd ref="-94"/>
+    <nd ref="-95"/>
+    <nd ref="-96"/>
+    <nd ref="-97"/>
+    <nd ref="-98"/>
+    <nd ref="-99"/>
+    <nd ref="-100"/>
+    <nd ref="-101"/>
+    <nd ref="-102"/>
+    <nd ref="-103"/>
+    <nd ref="-104"/>
+    <nd ref="-105"/>
+    <nd ref="-106"/>
+    <nd ref="-107"/>
+    <nd ref="-108"/>
+    <nd ref="-109"/>
+    <nd ref="-110"/>
+    <nd ref="-111"/>
+    <nd ref="-112"/>
+    <nd ref="-113"/>
+    <nd ref="-114"/>
+    <nd ref="-115"/>
+    <nd ref="-116"/>
+    <nd ref="-117"/>
+    <nd ref="-118"/>
+    <nd ref="-119"/>
+    <nd ref="-120"/>
+    <nd ref="-121"/>
+    <nd ref="-122"/>
+    <nd ref="-123"/>
+    <nd ref="-124"/>
+    <nd ref="-125"/>
+    <nd ref="-126"/>
+    <nd ref="-127"/>
+    <nd ref="-128"/>
+    <nd ref="-129"/>
+    <nd ref="-130"/>
+    <nd ref="-131"/>
+    <nd ref="-132"/>
+    <nd ref="-133"/>
+    <nd ref="-134"/>
+    <nd ref="-135"/>
+    <nd ref="-136"/>
+    <nd ref="-137"/>
+    <nd ref="-138"/>
+    <nd ref="-139"/>
+    <nd ref="-140"/>
+    <nd ref="-141"/>
+    <nd ref="-142"/>
+    <nd ref="-143"/>
+    <nd ref="-144"/>
+    <nd ref="-145"/>
+    <nd ref="-146"/>
+    <nd ref="-147"/>
+    <nd ref="-148"/>
+    <nd ref="-149"/>
+    <nd ref="-150"/>
+    <nd ref="-151"/>
+    <nd ref="-152"/>
+    <nd ref="-153"/>
+    <nd ref="-154"/>
+    <nd ref="-155"/>
+    <nd ref="-156"/>
+    <nd ref="-157"/>
+    <nd ref="-158"/>
+    <nd ref="-159"/>
+    <nd ref="-160"/>
+    <nd ref="-161"/>
+    <nd ref="-162"/>
+    <nd ref="-163"/>
+    <nd ref="-164"/>
+    <nd ref="-165"/>
+    <nd ref="-166"/>
+    <nd ref="-167"/>
+    <nd ref="-168"/>
+    <nd ref="-169"/>
+    <nd ref="-170"/>
+    <nd ref="-171"/>
+    <nd ref="-172"/>
+    <nd ref="-173"/>
+    <nd ref="-174"/>
+    <nd ref="-175"/>
+    <nd ref="-176"/>
+    <nd ref="-177"/>
+    <nd ref="-178"/>
+    <nd ref="-179"/>
+    <nd ref="-180"/>
+    <nd ref="-181"/>
+    <nd ref="-182"/>
+    <nd ref="-183"/>
+    <nd ref="-184"/>
+    <nd ref="-185"/>
+    <nd ref="-186"/>
+    <nd ref="-187"/>
+    <nd ref="-188"/>
+    <nd ref="-189"/>
+    <nd ref="-190"/>
+    <nd ref="-191"/>
+    <nd ref="-192"/>
+    <nd ref="-193"/>
+    <nd ref="-194"/>
+    <nd ref="-195"/>
+    <nd ref="-196"/>
+    <nd ref="-197"/>
+    <nd ref="-198"/>
+    <nd ref="-199"/>
+    <nd ref="-200"/>
+    <nd ref="-201"/>
+    <nd ref="-202"/>
+    <nd ref="-203"/>
+    <nd ref="-204"/>
+    <nd ref="-205"/>
+    <nd ref="-206"/>
+    <nd ref="-207"/>
+    <nd ref="-208"/>
+    <nd ref="-209"/>
+    <nd ref="-210"/>
+    <nd ref="-211"/>
+    <nd ref="-212"/>
+    <nd ref="-213"/>
+    <nd ref="-214"/>
+    <nd ref="-215"/>
+    <nd ref="-216"/>
+    <nd ref="-217"/>
+    <nd ref="-218"/>
+    <nd ref="-219"/>
+    <nd ref="-220"/>
+    <nd ref="-221"/>
+    <nd ref="-222"/>
+    <nd ref="-223"/>
+    <nd ref="-224"/>
+    <nd ref="-225"/>
+    <nd ref="-226"/>
+    <nd ref="-227"/>
+    <nd ref="-1"/>
+  </way>
+
+  <relation id="-229" action="create">
+    <member type="way" ref="-228" role="outer"/>
+    <tag k="type" v="boundary"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="admin_level" v="8"/>
+    <tag k="name" v="Municipio Copacabana"/>
+    <tag k="is_in:country" v="Bolivia"/>
+    <tag k="is_in:state" v="La Paz"/>
+    <tag k="is_in:province" v="Manco Kapac"/>
+    <tag k="wikidata" v="Q520394"/>
+    <tag k="source" v="Instituto Nacional de Estadistica - Bolivia (humdata.org)"/>
+  </relation>
+
+</osm>

@@ -1,0 +1,10 @@
+sf
+httr
+jsonlite
+dplyr
+purrr
+stringr
+tidyr
+tibble
+stringi
+ggplot2
