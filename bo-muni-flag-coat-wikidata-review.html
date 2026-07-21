@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-17">
+<meta name="dcterms.date" content="2026-07-20">
 
 <title>Bolivia Municipalities — Flag &amp; Coat of Arms Wikidata Review</title>
 <style>
@@ -50,10 +50,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link active" data-scroll-target="#how-to-use">How to use</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link active" data-scroll-target="#status">Status</a></li>
   <li><a href="#impact" id="toc-impact" class="nav-link" data-scroll-target="#impact">Impact</a></li>
-  <li><a href="#sec-flags" id="toc-sec-flags" class="nav-link" data-scroll-target="#sec-flags">Flags (P41) — 68 proposed additions</a></li>
-  <li><a href="#sec-coats" id="toc-sec-coats" class="nav-link" data-scroll-target="#sec-coats">Coats of Arms (P94) — 38 proposed additions</a></li>
+  <li><a href="#sec-flags" id="toc-sec-flags" class="nav-link" data-scroll-target="#sec-flags">Flags (P41) — 68 additions</a></li>
+  <li><a href="#sec-coats" id="toc-sec-coats" class="nav-link" data-scroll-target="#sec-coats">Coats of Arms (P94) — 38 additions</a></li>
   <li><a href="#sec-overlap" id="toc-sec-overlap" class="nav-link" data-scroll-target="#sec-overlap">Already linked in Wikidata</a></li>
   <li><a href="#sec-wd-only" id="toc-sec-wd-only" class="nav-link" data-scroll-target="#sec-wd-only">Wikidata claims outside this Commons category</a></li>
   <li><a href="#sec-unmatched" id="toc-sec-unmatched" class="nav-link" data-scroll-target="#sec-unmatched">Unmatched Commons files</a></li>
@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Bolivia Municipalities — Flag &amp; Coat of Arms Wikidata Review</h1>
-<p class="subtitle lead">Visual check before running QuickStatements to add P41 (flag image) and P94 (coat of arms image)</p>
+<p class="subtitle lead">Record of P41 (flag image) and P94 (coat of arms image) additions to Wikidata — data frozen July 2026</p>
 </div>
 
 
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 17, 2026</p>
+      <p class="date">July 20, 2026</p>
     </div>
   </div>
   
@@ -149,14 +149,15 @@ document.addEventListener("DOMContentLoaded", function() {
   ["flag", "coat"].forEach(function(s) { updateCount(s); });
 });
 </script>
-<section id="how-to-use" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use">How to use</h2>
-<ol type="1">
-<li>Scroll through each section and visually verify the images are correct municipal flags / coats of arms.</li>
-<li>Uncheck any rows that look wrong (wrong municipality, poor quality, duplicates, etc.).</li>
-<li>Click <strong>Copy selected QuickStatements</strong> to copy the tab-separated statements.</li>
-<li>Paste into <a href="https://quickstatements.toolforge.org/#/batch">QuickStatements</a> and run.</li>
-</ol>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<p>The Wikidata statements shown in this document have been submitted. The review tables below are a permanent record of what was added and can be used to identify and correct any errors.</p>
+<p>The statements were added in three QuickStatements batches on July 20, 2026:</p>
+<ul>
+<li><a href="https://qs-dev.toolforge.org/batch/42829/">Batch 42829</a></li>
+<li><a href="https://qs-dev.toolforge.org/batch/42830/">Batch 42830</a></li>
+<li><a href="https://qs-dev.toolforge.org/batch/42831/">Batch 42831</a></li>
+</ul>
 <p>All images load directly from Wikimedia Commons — an internet connection is required.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -169,9 +170,9 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>Proposed additions</strong> — cross-check of <a href="https://commons.wikimedia.org/wiki/Category:Flags_of_municipalities_of_Bolivia">Category:Flags of municipalities of Bolivia</a> and <a href="https://commons.wikimedia.org/wiki/Category:Coats_of_arms_of_municipalities_of_Bolivia">Category:Coats of arms of municipalities of Bolivia</a> against existing Wikidata P41/P94 claims for the <code>Q1062710</code> (Municipality of Bolivia) class.</li>
+<li><strong>Additions</strong> — cross-check of <a href="https://commons.wikimedia.org/wiki/Category:Flags_of_municipalities_of_Bolivia">Category:Flags of municipalities of Bolivia</a> and <a href="https://commons.wikimedia.org/wiki/Category:Coats_of_arms_of_municipalities_of_Bolivia">Category:Coats of arms of municipalities of Bolivia</a> against existing Wikidata P41/P94 claims for the <code>Q1062710</code> (Municipality of Bolivia) class.</li>
 <li><strong>Matching</strong> — filenames decoded from Wikidata SPARQL; Commons filenames matched to municipalities by name extraction + fuzzy string match. A few ambiguous files were excluded (see [Unmatched files] below).</li>
-<li><strong>Snapshot date</strong> — July 17, 2026. To refresh, re-run the cross-check block in the analysis session and re-save <code>data/wd_flag_coat_review.rds</code>.</li>
+<li><strong>Data frozen</strong> — July 20, 2026. The source file <code>data/wd_flag_coat_review.rds</code> reflects the state of Commons and Wikidata at that date and should not be refreshed, as the statements have already been submitted.</li>
 </ul>
 </div>
 </div>
@@ -183,21 +184,42 @@ document.addEventListener("DOMContentLoaded", function() {
 <hr>
 </section>
 <section id="sec-flags" class="level2">
-<h2 class="anchored" data-anchor-id="sec-flags">Flags (P41) — 68 proposed additions</h2>
-<p>These 68 municipalities have a flag image in the Commons category but <strong>no P41 claim</strong> in Wikidata. The QuickStatement adds the Commons filename as the value of P41 (flag image).</p>
+<h2 class="anchored" data-anchor-id="sec-flags">Flags (P41) — 68 additions</h2>
+<p>These 68 municipalities had a flag image in the Commons category but no P41 claim in Wikidata. The QuickStatement added the Commons filename as the value of P41 (flag image).</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Known errors in this batch
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following entries were submitted but are incorrect and should be fixed manually in Wikidata:</p>
+<ul>
+<li><strong>San Lorenzo</strong> — wrong department (file belongs to a different San Lorenzo)</li>
+<li><strong>Apolo</strong> — wrong image assigned</li>
+<li><strong>Camiri</strong> — image is missing the sun symbol; a corrected file should be substituted</li>
+<li><strong>Tiquipaya</strong> — flag is upside down; the correct orientation is at <a href="https://commons.wikimedia.org/wiki/File:Bandera-Tiquipaya.png">File:Bandera-Tiquipaya.png</a></li>
+</ul>
+</div>
+</div>
 <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;padding:8px;background:#f6f8fa;border-radius:6px;border:1px solid #e1e4e8"><button class="btn btn-sm btn-outline-secondary" onclick="selectSection('flag',true)">Select all</button><button class="btn btn-sm btn-outline-secondary" onclick="selectSection('flag',false)">Deselect all</button><span id="flag-count" style="color:#586069;font-size:13px">68 selected</span><button id="flag-copy-btn" class="btn btn-sm btn-primary" style="margin-left:auto" onclick="copySection('flag')">Copy selected QuickStatements</button></div><div style="overflow-x:auto">
 <table class="table table-sm table-hover caption-top">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead class="table-light">
 <tr class="header">
 <th style="text-align: center;" data-quarto-table-cell-role="th"></th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Image</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Commons image</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">AMDECRUZ <span style="font-weight:normal;font-size:11px;color:#586069">(circular)</span></th>
 <th data-quarto-table-cell-role="th">Municipality</th>
 <th data-quarto-table-cell-role="th">Department</th>
 <th data-quarto-table-cell-role="th">P41 value (Commons filename)</th>
@@ -207,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1814580 | P41 | &quot;Bandera de Baures, Beni.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Baures%2C%20Beni.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Baures%2C%20Beni.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1814580" target="_blank" rel="noreferrer">Baures</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Baures%2C%20Beni.jpg" target="_blank" rel="noreferrer">Bandera de Baures, Beni.jpg</a></td>
@@ -214,6 +237,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1487963 | P41 | &quot;Bandera de Guayaramerín.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Guayaramer%C3%ADn.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Guayaramer%C3%ADn.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1487963" target="_blank" rel="noreferrer">Guayaramerín</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Guayaramer%C3%ADn.png" target="_blank" rel="noreferrer">Bandera de Guayaramerín.png</a></td>
@@ -221,6 +245,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1814588 | P41 | &quot;Bandera de la municipalidad de Huacaraje.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20la%20municipalidad%20de%20Huacaraje.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20la%20municipalidad%20de%20Huacaraje.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1814588" target="_blank" rel="noreferrer">Huacaraje</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20la%20municipalidad%20de%20Huacaraje.jpg" target="_blank" rel="noreferrer">Bandera de la municipalidad de Huacaraje.jpg</a></td>
@@ -228,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1516817 | P41 | &quot;Bandera Puerto Siles, Beni.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Puerto%20Siles%2C%20Beni.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20Puerto%20Siles%2C%20Beni.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1516817" target="_blank" rel="noreferrer">Puerto Siles</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Puerto%20Siles%2C%20Beni.jpg" target="_blank" rel="noreferrer">Bandera Puerto Siles, Beni.jpg</a></td>
@@ -235,6 +261,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q842368 | P41 | &quot;Bandera de Riberalta.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Riberalta.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Riberalta.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q842368" target="_blank" rel="noreferrer">Riberalta</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Riberalta.png" target="_blank" rel="noreferrer">Bandera de Riberalta.png</a></td>
@@ -242,6 +269,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1516809 | P41 | &quot;Bandera del municipio de Rurrenabaque.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20municipio%20de%20Rurrenabaque.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20del%20municipio%20de%20Rurrenabaque.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1516809" target="_blank" rel="noreferrer">Rurrenabaque</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20municipio%20de%20Rurrenabaque.png" target="_blank" rel="noreferrer">Bandera del municipio de Rurrenabaque.png</a></td>
@@ -249,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q2631821 | P41 | &quot;Bandera de San Borja (Beni).png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20San%20Borja%20%28Beni%29.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20San%20Borja%20%28Beni%29.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q2631821" target="_blank" rel="noreferrer">San Borja</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20San%20Borja%20%28Beni%29.png" target="_blank" rel="noreferrer">Bandera de San Borja (Beni).png</a></td>
@@ -256,6 +285,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1292997 | P41 | &quot;Bandera San Joaquin de aguas dulces, Beni.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20San%20Joaquin%20de%20aguas%20dulces%2C%20Beni.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20San%20Joaquin%20de%20aguas%20dulces%2C%20Beni.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1292997" target="_blank" rel="noreferrer">San Joaquín</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20San%20Joaquin%20de%20aguas%20dulces%2C%20Beni.jpg" target="_blank" rel="noreferrer">Bandera San Joaquin de aguas dulces, Beni.jpg</a></td>
@@ -263,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q685208 | P41 | &quot;Bandera de la ciudad de Santa Ana del Yacuma, Beni, Bolivia.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20la%20ciudad%20de%20Santa%20Ana%20del%20Yacuma%2C%20Beni%2C%20Bolivia.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20la%20ciudad%20de%20Santa%20Ana%20del%20Yacuma%2C%20Beni%2C%20Bolivia.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q685208" target="_blank" rel="noreferrer">Santa Ana del Yacuma</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20la%20ciudad%20de%20Santa%20Ana%20del%20Yacuma%2C%20Beni%2C%20Bolivia.png" target="_blank" rel="noreferrer">Bandera de la ciudad de Santa Ana del Yacuma, Beni, Bolivia.png</a></td>
@@ -270,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1516796 | P41 | &quot;Bandera de Santa Rosa de Yacuma.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Santa%20Rosa%20de%20Yacuma.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Santa%20Rosa%20de%20Yacuma.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1516796" target="_blank" rel="noreferrer">Santa Rosa</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Beni</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Santa%20Rosa%20de%20Yacuma.png" target="_blank" rel="noreferrer">Bandera de Santa Rosa de Yacuma.png</a></td>
@@ -277,6 +309,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q586565 | P41 | &quot;Flag of Culpina.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Culpina.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Culpina.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q586565" target="_blank" rel="noreferrer">Culpina</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Culpina.webp" target="_blank" rel="noreferrer">Flag of Culpina.webp</a></td>
@@ -284,6 +317,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1142208 | P41 | &quot;Flag of El Villar.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20El%20Villar.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20El%20Villar.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1142208" target="_blank" rel="noreferrer">El Villar</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20El%20Villar.webp" target="_blank" rel="noreferrer">Flag of El Villar.webp</a></td>
@@ -291,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q914026 | P41 | &quot;Badera Monteagudo Bolivia.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Badera%20Monteagudo%20Bolivia.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Badera%20Monteagudo%20Bolivia.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q914026" target="_blank" rel="noreferrer">Monteagudo</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Badera%20Monteagudo%20Bolivia.jpg" target="_blank" rel="noreferrer">Badera Monteagudo Bolivia.jpg</a></td>
@@ -298,6 +333,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q182203 | P41 | &quot;Flag of Poroma.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Poroma.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Poroma.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q182203" target="_blank" rel="noreferrer">Poroma</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Poroma.webp" target="_blank" rel="noreferrer">Flag of Poroma.webp</a></td>
@@ -305,6 +341,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q633697 | P41 | &quot;Flag of Tomina.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Tomina.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Tomina.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q633697" target="_blank" rel="noreferrer">Tomina</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Tomina.webp" target="_blank" rel="noreferrer">Flag of Tomina.webp</a></td>
@@ -312,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1142199 | P41 | &quot;Flag of Villa Abecia.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Abecia.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Villa%20Abecia.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1142199" target="_blank" rel="noreferrer">Villa Abecia</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Abecia.webp" target="_blank" rel="noreferrer">Flag of Villa Abecia.webp</a></td>
@@ -319,6 +357,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q955703 | P41 | &quot;Flag of Villa Alcalá.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Alcal%C3%A1.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Villa%20Alcal%C3%A1.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q955703" target="_blank" rel="noreferrer">Villa Alcalá</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Alcal%C3%A1.webp" target="_blank" rel="noreferrer">Flag of Villa Alcalá.webp</a></td>
@@ -326,6 +365,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1146801 | P41 | &quot;Flag of Villa Charcas.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Charcas.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Villa%20Charcas.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1146801" target="_blank" rel="noreferrer">Villa Charcas</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Charcas.webp" target="_blank" rel="noreferrer">Flag of Villa Charcas.webp</a></td>
@@ -333,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1953257 | P41 | &quot;Flag of Villa Serrano.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Serrano.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Villa%20Serrano.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1953257" target="_blank" rel="noreferrer">Villa Serrano</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Chuquisaca</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Serrano.webp" target="_blank" rel="noreferrer">Flag of Villa Serrano.webp</a></td>
@@ -340,6 +381,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1516966 | P41 | &quot;Bandera de Anzaldo.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Anzaldo.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Anzaldo.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1516966" target="_blank" rel="noreferrer">Anzaldo</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Anzaldo.png" target="_blank" rel="noreferrer">Bandera de Anzaldo.png</a></td>
@@ -347,6 +389,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1295948 | P41 | &quot;Cliza, Bolivia.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Cliza%2C%20Bolivia.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cliza%2C%20Bolivia.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1295948" target="_blank" rel="noreferrer">Cliza</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Cliza%2C%20Bolivia.png" target="_blank" rel="noreferrer">Cliza, Bolivia.png</a></td>
@@ -354,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1521204 | P41 | &quot;Bandera municipal de Colomi.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20municipal%20de%20Colomi.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20municipal%20de%20Colomi.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1521204" target="_blank" rel="noreferrer">Colomi</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20municipal%20de%20Colomi.jpg" target="_blank" rel="noreferrer">Bandera municipal de Colomi.jpg</a></td>
@@ -361,6 +405,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1553258 | P41 | &quot;Bandera de Quillacollo.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Quillacollo.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Quillacollo.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1553258" target="_blank" rel="noreferrer">Quillacollo</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Quillacollo.png" target="_blank" rel="noreferrer">Bandera de Quillacollo.png</a></td>
@@ -368,6 +413,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1585069 | P41 | &quot;Bandera de Shinahota.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Shinahota.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Shinahota.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1585069" target="_blank" rel="noreferrer">Shinahota</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Shinahota.png" target="_blank" rel="noreferrer">Bandera de Shinahota.png</a></td>
@@ -375,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1521101 | P41 | &quot;Bandera de SipeSipe.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20SipeSipe.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20SipeSipe.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1521101" target="_blank" rel="noreferrer">Sipe Sipe</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20SipeSipe.jpg" target="_blank" rel="noreferrer">Bandera de SipeSipe.jpg</a></td>
@@ -382,6 +429,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q303590 | P41 | &quot;Bandera de Tiquipaya, Bolivia.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Tiquipaya%2C%20Bolivia.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Tiquipaya%2C%20Bolivia.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q303590" target="_blank" rel="noreferrer">Tiquipaya</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Cochabamba</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Tiquipaya%2C%20Bolivia.jpg" target="_blank" rel="noreferrer">Bandera de Tiquipaya, Bolivia.jpg</a></td>
@@ -389,6 +437,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1552057 | P41 | &quot;Achocalla.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Achocalla.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Achocalla.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1552057" target="_blank" rel="noreferrer">Achocalla</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Achocalla.jpg" target="_blank" rel="noreferrer">Achocalla.jpg</a></td>
@@ -396,6 +445,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1544572 | P41 | &quot;Bandera de Apolo (La Paz - Bolivia) 01.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Apolo%20%28La%20Paz%20-%20Bolivia%29%2001.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Apolo%20%28La%20Paz%20-%20Bolivia%29%2001.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1544572" target="_blank" rel="noreferrer">Apolo</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Apolo%20%28La%20Paz%20-%20Bolivia%29%2001.png" target="_blank" rel="noreferrer">Bandera de Apolo (La Paz - Bolivia) 01.png</a></td>
@@ -403,6 +453,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q916357 | P41 | &quot;Bandera de Caranavi.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Caranavi.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Caranavi.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q916357" target="_blank" rel="noreferrer">Caranavi</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Caranavi.png" target="_blank" rel="noreferrer">Bandera de Caranavi.png</a></td>
@@ -410,6 +461,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q520394 | P41 | &quot;Bandera de copacabana.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20copacabana.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20copacabana.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q520394" target="_blank" rel="noreferrer">Copacabana</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20copacabana.png" target="_blank" rel="noreferrer">Bandera de copacabana.png</a></td>
@@ -417,6 +469,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1552069 | P41 | &quot;Bandera de Coroico.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Coroico.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Coroico.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1552069" target="_blank" rel="noreferrer">Coroico</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Coroico.jpg" target="_blank" rel="noreferrer">Bandera de Coroico.jpg</a></td>
@@ -424,6 +477,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q955745 | P41 | &quot;Bandera de ElAlto.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20ElAlto.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20ElAlto.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q955745" target="_blank" rel="noreferrer">El Alto</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20ElAlto.png" target="_blank" rel="noreferrer">Bandera de ElAlto.png</a></td>
@@ -431,6 +485,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q491527 | P41 | &quot;Bandera del municipio de sapahaqui.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20municipio%20de%20sapahaqui.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20del%20municipio%20de%20sapahaqui.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q491527" target="_blank" rel="noreferrer">Sapahaqui</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">La Paz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20municipio%20de%20sapahaqui.png" target="_blank" rel="noreferrer">Bandera del municipio de sapahaqui.png</a></td>
@@ -438,6 +493,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q647748 | P41 | &quot;Bandera de Caracollo.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Caracollo.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Caracollo.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q647748" target="_blank" rel="noreferrer">Caracollo</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Oruro</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Caracollo.png" target="_blank" rel="noreferrer">Bandera de Caracollo.png</a></td>
@@ -445,6 +501,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198360 | P41 | &quot;Flag of Bella Flor.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Bella%20Flor.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Bella%20Flor.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198360" target="_blank" rel="noreferrer">Bella Flor</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Bella%20Flor.webp" target="_blank" rel="noreferrer">Flag of Bella Flor.webp</a></td>
@@ -452,6 +509,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198353 | P41 | &quot;Flag of Bolpebra.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Bolpebra.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Bolpebra.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198353" target="_blank" rel="noreferrer">Bolpebra</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Bolpebra.webp" target="_blank" rel="noreferrer">Flag of Bolpebra.webp</a></td>
@@ -459,6 +517,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198351 | P41 | &quot;Flag of Ingavi.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Ingavi.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Ingavi.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198351" target="_blank" rel="noreferrer">Ingavi</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Ingavi.webp" target="_blank" rel="noreferrer">Flag of Ingavi.webp</a></td>
@@ -466,6 +525,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198389 | P41 | &quot;Flag of Nueva Esperanza.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Nueva%20Esperanza.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Nueva%20Esperanza.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198389" target="_blank" rel="noreferrer">Nueva Esperanza</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Nueva%20Esperanza.webp" target="_blank" rel="noreferrer">Flag of Nueva Esperanza.webp</a></td>
@@ -473,6 +533,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1953096 | P41 | &quot;Bandera de Porvenir (Bolivia).jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Porvenir%20%28Bolivia%29.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Porvenir%20%28Bolivia%29.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1953096" target="_blank" rel="noreferrer">Porvenir</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Porvenir%20%28Bolivia%29.jpg" target="_blank" rel="noreferrer">Bandera de Porvenir (Bolivia).jpg</a></td>
@@ -480,6 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198392 | P41 | &quot;Flag of Puerto Gonzalo Moreno.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Puerto%20Gonzalo%20Moreno.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Puerto%20Gonzalo%20Moreno.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198392" target="_blank" rel="noreferrer">Puerto Gonzalo Moreno</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Puerto%20Gonzalo%20Moreno.webp" target="_blank" rel="noreferrer">Flag of Puerto Gonzalo Moreno.webp</a></td>
@@ -487,6 +549,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198355 | P41 | &quot;Bandera de Puerto Rico (Bolivia).jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Puerto%20Rico%20%28Bolivia%29.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Puerto%20Rico%20%28Bolivia%29.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198355" target="_blank" rel="noreferrer">Puerto Rico</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Puerto%20Rico%20%28Bolivia%29.jpg" target="_blank" rel="noreferrer">Bandera de Puerto Rico (Bolivia).jpg</a></td>
@@ -494,6 +557,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q195218 | P41 | &quot;Bandera de San Lorenzo (Tarija).png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20San%20Lorenzo%20%28Tarija%29.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20San%20Lorenzo%20%28Tarija%29.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q195218" target="_blank" rel="noreferrer">San Lorenzo</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20San%20Lorenzo%20%28Tarija%29.png" target="_blank" rel="noreferrer">Bandera de San Lorenzo (Tarija).png</a></td>
@@ -501,6 +565,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198363 | P41 | &quot;Flag of Santa Rosa del Abuná.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Santa%20Rosa%20del%20Abun%C3%A1.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Santa%20Rosa%20del%20Abun%C3%A1.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198363" target="_blank" rel="noreferrer">Santa Rosa del Abuná</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Santa%20Rosa%20del%20Abun%C3%A1.webp" target="_blank" rel="noreferrer">Flag of Santa Rosa del Abuná.webp</a></td>
@@ -508,6 +573,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q198357 | P41 | &quot;Flag of Villa Nueva.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Nueva.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20Villa%20Nueva.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q198357" target="_blank" rel="noreferrer">Villa Nueva</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Pando</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20Villa%20Nueva.webp" target="_blank" rel="noreferrer">Flag of Villa Nueva.webp</a></td>
@@ -515,6 +581,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q637643 | P41 | &quot;Bandera de Santiago de Cotagaita.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Santiago%20de%20Cotagaita.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Santiago%20de%20Cotagaita.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q637643" target="_blank" rel="noreferrer">Cotagaita</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Potosí</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Santiago%20de%20Cotagaita.png" target="_blank" rel="noreferrer">Bandera de Santiago de Cotagaita.png</a></td>
@@ -522,6 +589,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q624490 | P41 | &quot;Bandera de Llallagua.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Llallagua.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Llallagua.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q624490" target="_blank" rel="noreferrer">Llallagua</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Potosí</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Llallagua.jpg" target="_blank" rel="noreferrer">Bandera de Llallagua.jpg</a></td>
@@ -529,6 +597,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1477914 | P41 | &quot;Bandera pocoateña.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20pocoate%C3%B1a.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20pocoate%C3%B1a.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1477914" target="_blank" rel="noreferrer">Pocoata</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Potosí</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20pocoate%C3%B1a.jpg" target="_blank" rel="noreferrer">Bandera pocoateña.jpg</a></td>
@@ -536,6 +605,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1335276 | P41 | &quot;Bandera de Potosí (ciudad).png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Potos%C3%AD%20%28ciudad%29.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Potos%C3%AD%20%28ciudad%29.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1335276" target="_blank" rel="noreferrer">Potosí</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Potosí</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Potos%C3%AD%20%28ciudad%29.png" target="_blank" rel="noreferrer">Bandera de Potosí (ciudad).png</a></td>
@@ -543,6 +613,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1478014 | P41 | &quot;Bandera de Uyuni.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Uyuni.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Uyuni.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1478014" target="_blank" rel="noreferrer">Uyuni</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Potosí</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Uyuni.jpg" target="_blank" rel="noreferrer">Bandera de Uyuni.jpg</a></td>
@@ -550,6 +621,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q15835839 | P41 | &quot;Bandera Villazón.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Villaz%C3%B3n.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20Villaz%C3%B3n.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q15835839" target="_blank" rel="noreferrer">Villazón</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Potosí</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Villaz%C3%B3n.jpg" target="_blank" rel="noreferrer">Bandera Villazón.jpg</a></td>
@@ -557,6 +629,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1001757 | P41 | &quot;Bandera de Buena Vista, Santa Cruz (Bolivia).jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Buena%20Vista%2C%20Santa%20Cruz%20%28Bolivia%29.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Buena%20Vista%2C%20Santa%20Cruz%20%28Bolivia%29.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Buenavista/buenavista4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1001757" target="_blank" rel="noreferrer">Buena Vista</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Buena%20Vista%2C%20Santa%20Cruz%20%28Bolivia%29.jpg" target="_blank" rel="noreferrer">Bandera de Buena Vista, Santa Cruz (Bolivia).jpg</a></td>
@@ -564,6 +637,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1029614 | P41 | &quot;Bandera de Camiri.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Camiri.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Camiri.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Camiri/camiri4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1029614" target="_blank" rel="noreferrer">Camiri</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Camiri.png" target="_blank" rel="noreferrer">Bandera de Camiri.png</a></td>
@@ -571,6 +645,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q603654 | P41 | &quot;Bandera de Cotoca.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Cotoca.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Cotoca.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Cotoca/Cotoca4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q603654" target="_blank" rel="noreferrer">Cotoca</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Cotoca.png" target="_blank" rel="noreferrer">Bandera de Cotoca.png</a></td>
@@ -578,6 +653,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108271 | P41 | &quot;Flag of El Carmen Rivero Tórrez.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20El%20Carmen%20Rivero%20T%C3%B3rrez.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20El%20Carmen%20Rivero%20T%C3%B3rrez.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/ElCarmenRiveroT/carmenrivero4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108271" target="_blank" rel="noreferrer">El Carmen Rivero Tórrez</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20El%20Carmen%20Rivero%20T%C3%B3rrez.webp" target="_blank" rel="noreferrer">Flag of El Carmen Rivero Tórrez.webp</a></td>
@@ -585,6 +661,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1107940 | P41 | &quot;Bandera de La Guardia.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20La%20Guardia.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20La%20Guardia.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Laguardia/laguardia4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1107940" target="_blank" rel="noreferrer">La Guardia</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20La%20Guardia.png" target="_blank" rel="noreferrer">Bandera de La Guardia.png</a></td>
@@ -592,6 +669,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108209 | P41 | &quot;Bandera de Mairana.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Mairana.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Mairana.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Mairana/mairana4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108209" target="_blank" rel="noreferrer">Mairana</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Mairana.jpg" target="_blank" rel="noreferrer">Bandera de Mairana.jpg</a></td>
@@ -599,6 +677,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1153550 | P41 | &quot;Bandera de Mineros (Bolivia).png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Mineros%20%28Bolivia%29.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Mineros%20%28Bolivia%29.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Minero/Minero4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1153550" target="_blank" rel="noreferrer">Mineros</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Mineros%20%28Bolivia%29.png" target="_blank" rel="noreferrer">Bandera de Mineros (Bolivia).png</a></td>
@@ -606,6 +685,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1531921 | P41 | &quot;Bandera de Montero.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Montero.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Montero.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/montero/monteroR.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1531921" target="_blank" rel="noreferrer">Montero</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Montero.jpg" target="_blank" rel="noreferrer">Bandera de Montero.jpg</a></td>
@@ -613,6 +693,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108279 | P41 | &quot;Bandera Pailoneña.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Pailone%C3%B1a.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20Pailone%C3%B1a.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Pailon/Pailon4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108279" target="_blank" rel="noreferrer">Pailón</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Pailone%C3%B1a.png" target="_blank" rel="noreferrer">Bandera Pailoneña.png</a></td>
@@ -620,6 +701,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108256 | P41 | &quot;Bandera de Puerto Quijarro.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Puerto%20Quijarro.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Puerto%20Quijarro.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/PuertoQuijarro/puertoquijarro4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108256" target="_blank" rel="noreferrer">Puerto Quijarro</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Puerto%20Quijarro.jpg" target="_blank" rel="noreferrer">Bandera de Puerto Quijarro.jpg</a></td>
@@ -627,6 +709,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108295 | P41 | &quot;Bandera del Municipio Puerto Suárez.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20Municipio%20Puerto%20Su%C3%A1rez.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20del%20Municipio%20Puerto%20Su%C3%A1rez.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Puertosuarez/PuertoSuarez4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108295" target="_blank" rel="noreferrer">Puerto Suárez</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20Municipio%20Puerto%20Su%C3%A1rez.png" target="_blank" rel="noreferrer">Bandera del Municipio Puerto Suárez.png</a></td>
@@ -634,6 +717,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108292 | P41 | &quot;Bandera de Robore.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Robore.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Robore.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/Robore/robore4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108292" target="_blank" rel="noreferrer">Roboré</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Robore.jpg" target="_blank" rel="noreferrer">Bandera de Robore.jpg</a></td>
@@ -641,6 +725,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q507108 | P41 | &quot;Bandera de San Carlos (Santa Cruz).jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20San%20Carlos%20%28Santa%20Cruz%29.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20San%20Carlos%20%28Santa%20Cruz%29.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/SanCarlos/sancarlos4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q507108" target="_blank" rel="noreferrer">San Carlos</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20San%20Carlos%20%28Santa%20Cruz%29.jpg" target="_blank" rel="noreferrer">Bandera de San Carlos (Santa Cruz).jpg</a></td>
@@ -648,6 +733,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1108226 | P41 | &quot;Flag of San Juan de Yapacaní.webp&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20San%20Juan%20de%20Yapacan%C3%AD.webp" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Flag%20of%20San%20Juan%20de%20Yapacan%C3%AD.webp&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/SanJuan/sanjuan5.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1108226" target="_blank" rel="noreferrer">San Juan de Yapacaní</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Flag%20of%20San%20Juan%20de%20Yapacan%C3%AD.webp" target="_blank" rel="noreferrer">Flag of San Juan de Yapacaní.webp</a></td>
@@ -655,6 +741,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q204307 | P41 | &quot;Bandera Oficial de San Julian.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Oficial%20de%20San%20Julian.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20Oficial%20de%20San%20Julian.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px;"><a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer" title="Source: amdecruz.com"><img src="https://amdecruz.com/images/municipios/SanJulian/sanjulian4.svg" class="img-fluid" style="max-height:80px;max-width:80px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('—'))"></a></td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q204307" target="_blank" rel="noreferrer">San Julián</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Oficial%20de%20San%20Julian.png" target="_blank" rel="noreferrer">Bandera Oficial de San Julian.png</a></td>
@@ -662,6 +749,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q1107974 | P41 | &quot;Bandera Santa Cruz de la Sierra.jpg&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Santa%20Cruz%20de%20la%20Sierra.jpg" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20Santa%20Cruz%20de%20la%20Sierra.jpg&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q1107974" target="_blank" rel="noreferrer">Santa Cruz de la Sierra</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Santa Cruz</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20Santa%20Cruz%20de%20la%20Sierra.jpg" target="_blank" rel="noreferrer">Bandera Santa Cruz de la Sierra.jpg</a></td>
@@ -669,6 +757,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="odd">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q328276 | P41 | &quot;Bandera del Municipio de Padcaya y de la Provincia Aniceto Arce.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20Municipio%20de%20Padcaya%20y%20de%20la%20Provincia%20Aniceto%20Arce.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20del%20Municipio%20de%20Padcaya%20y%20de%20la%20Provincia%20Aniceto%20Arce.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q328276" target="_blank" rel="noreferrer">Padcaya</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Tarija</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20del%20Municipio%20de%20Padcaya%20y%20de%20la%20Provincia%20Aniceto%20Arce.png" target="_blank" rel="noreferrer">Bandera del Municipio de Padcaya y de la Provincia Aniceto Arce.png</a></td>
@@ -676,6 +765,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr class="even">
 <td style="text-align: center; vertical-align: middle; padding: 6px 10px; width: 36px;"><input type="checkbox" class="flag-check" data-qs="Q328307 | P41 | &quot;Bandera de Burdett O'Connor y Yunchará.png&quot;" checked="" onchange="updateCount('flag')"></td>
 <td style="text-align: center; vertical-align: middle; padding: 4px; width: 120px;"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Burdett%20O%27Connor%20y%20Yunchar%C3%A1.png" target="_blank" rel="noreferrer"><embed src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bandera%20de%20Burdett%20O%27Connor%20y%20Yunchar%C3%A1.png&amp;width=120" class="img-fluid" style="max-height:90px;max-width:110px;display:block;margin:auto" loading="lazy" onerror="this.replaceWith(document.createTextNode('(no preview)'))"></a></td>
+<td style="text-align: center; vertical-align: middle; padding: 4px; width: 90px; color: #aaa; font-size: 11px;">—</td>
 <td style="vertical-align: middle; padding: 6px 10px"><a href="https://www.wikidata.org/wiki/Q328307" target="_blank" rel="noreferrer">Yunchará</a></td>
 <td style="vertical-align: middle; padding: 6px 10px; color: #555">Tarija</td>
 <td style="vertical-align: middle; padding: 6px 10px; font-size: 11px; font-family: monospace; max-width: 250px; word-break: break-all"><a href="https://commons.wikimedia.org/wiki/File:Bandera%20de%20Burdett%20O%27Connor%20y%20Yunchar%C3%A1.png" target="_blank" rel="noreferrer">Bandera de Burdett O'Connor y Yunchará.png</a></td>
@@ -686,19 +776,22 @@ document.addEventListener("DOMContentLoaded", function() {
 <hr>
 </section>
 <section id="sec-coats" class="level2">
-<h2 class="anchored" data-anchor-id="sec-coats">Coats of Arms (P94) — 38 proposed additions</h2>
-<p>These 38 municipalities have a coat of arms / escudo in the Commons category but <strong>no P94 claim</strong> in Wikidata.</p>
+<h2 class="anchored" data-anchor-id="sec-coats">Coats of Arms (P94) — 38 additions</h2>
+<p>These 38 municipalities had a coat of arms / escudo in the Commons category but no P94 claim in Wikidata.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+<span class="screen-reader-only">Warning</span>Known errors in this batch
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Several of these images have low-quality or unofficial-looking filenames (e.g.&nbsp;<code>ESCUDO OFICIAL-GOBIERNO AUTONOMO...</code>, <code>FB IMG escudo de colquechaca.jpg</code>). Review carefully before accepting.</p>
+<ul>
+<li><strong>San Ramón (Santa Cruz)</strong> — <a href="https://commons.wikimedia.org/wiki/File:Escudo_San_Ramón,_Beni.jpg">File:Escudo San Ramón, Beni.jpg</a> was mistakenly linked to the municipality of San Ramón in Santa Cruz department; it belongs to San Ramón in Beni. The P94 claim on the Santa Cruz item should be removed and the file correctly assigned to the Beni item.</li>
+</ul>
+<p>Several other images in this batch have low-quality or unofficial-looking filenames (e.g.&nbsp;<code>ESCUDO OFICIAL-GOBIERNO AUTONOMO...</code>, <code>FB IMG escudo de colquechaca.jpg</code>) and may warrant further review.</p>
 </div>
 </div>
 <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;padding:8px;background:#f6f8fa;border-radius:6px;border:1px solid #e1e4e8"><button class="btn btn-sm btn-outline-secondary" onclick="selectSection('coat',true)">Select all</button><button class="btn btn-sm btn-outline-secondary" onclick="selectSection('coat',false)">Deselect all</button><span id="coat-count" style="color:#586069;font-size:13px">38 selected</span><button id="coat-copy-btn" class="btn btn-sm btn-primary" style="margin-left:auto" onclick="copySection('coat')">Copy selected QuickStatements</button></div><div style="overflow-x:auto">
@@ -713,7 +806,7 @@ Warning
 <thead class="table-light">
 <tr class="header">
 <th style="text-align: center;" data-quarto-table-cell-role="th"></th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Image</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Commons image</th>
 <th data-quarto-table-cell-role="th">Municipality</th>
 <th data-quarto-table-cell-role="th">Department</th>
 <th data-quarto-table-cell-role="th">P94 value (Commons filename)</th>

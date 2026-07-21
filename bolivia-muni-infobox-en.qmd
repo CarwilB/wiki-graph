@@ -2,7 +2,7 @@
 title: "Bolivia 2026 — Municipality Infoboxes"
 subtitle: "{{Infobox settlement}} wikitext ready to copy to Wikipedia"
 params:
-  wiki_filter: "new"   # "existing", "new", or "all"
+  wiki_filter: "all"   # "existing", "new", or "all"
 format:
   html:
     code-fold: true
@@ -23,8 +23,10 @@ source("src/gh-copy-assets.R")
 
 muni_lookup  <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
 prov_lookup  <- readRDS(here::here("data", "prov_id_lookup_table.rds"))
-concejo_data <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
-alcaldes     <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
+concejo_data  <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
+alcaldes      <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
+muni_roster   <- readRDS(here::here("data", "oep2026", "muni_roster.rds")) |>
+  select(id_muni, page)
 
 bo_municipality_wiki_presence <- readRDS(here::here("data", "bo_municipality_wiki_presence.rds"))
 municipalities_wd_ine <- readRDS(here::here("data", "municipalities_wd_ine.rds"))
@@ -102,20 +104,167 @@ wiki_presence <- bo_municipality_wiki_presence$data |>
 
 munis_with_enwiki <- wiki_presence |> filter(en > 0) |> pull(ine_code)
 
-if (params$wiki_filter == "existing") {
-  muni_lookup <- muni_lookup |> filter(id_muni %in% munis_with_enwiki)
-} else if (params$wiki_filter == "new") {
-  muni_lookup <- muni_lookup |> filter(!id_muni %in% munis_with_enwiki)
-}
-
 # Add id_prov to muni_lookup
 muni_lookup <- muni_lookup |>
   mutate(id_prov = stringr::str_sub(id_muni, 1, 4))
+
+# Split into two subsets: municipalities without an existing EN article
+# (rendered fresh) and those with one (rendered as a merge against the
+# existing infobox). params$wiki_filter selects which subset(s) to show.
+muni_lookup_new      <- muni_lookup |> filter(!id_muni %in% munis_with_enwiki)
+muni_lookup_existing <- muni_lookup |> filter(id_muni %in% munis_with_enwiki)
+
+# Raw wikitext infobox content for existing EN articles, keyed by id_muni.
+# Uses parse_infobox_blocks() (verbatim field blocks, comments intact) rather
+# than extract_infobox_as_list() or extract_infobox(), because those clean/
+# flatten values into single-line strings — exactly the markup structure we
+# need to preserve line-for-line when merging into the new infobox.
+sa_article_quality <- readRDS(here::here("data", "cache", "sa_article_quality.rds"))
+
+existing_wikitext <- muni_lookup_existing |>
+  left_join(wd_ine, by = c("id_muni" = "ine_code")) |>
+  select(id_muni, qid) |>
+  left_join(
+    sa_article_quality |> filter(lang == "en") |> select(qid, wikitext),
+    by = "qid"
+  ) |>
+  filter(!is.na(wikitext))
+
+# NULL / empty for municipalities whose existing EN article has no
+# {{Infobox settlement}} at all (stub articles) — render_existing_blocks()
+# routes those through build_infobox() (fresh scaffold) instead of a merge.
+existing_infobox_blocks <- setNames(
+  purrr::map(existing_wikitext$wikitext, function(wt) {
+    parse_infobox_blocks(extract_infobox_wikitext(wt))
+  }),
+  existing_wikitext$id_muni
+)
 ```
 
 ```{r}
 #| label: helpers
 #| include: false
+
+# ── OEP 2026 source reference ────────────────────────────────────────────────
+oep_source_ref <- paste0(
+  "{{Cite report",
+  "| publisher = Órgano Electoral Plurinacional",
+  "| last1 = Órgano Electoral Plurinacional",
+  "| last2 = Tribunal Supremo Electoral",
+  "| title = Publicación de resultados Elecciones Subnacionales 2026: Elección de Autoridades Políticas Departamentales Regionales y Municipales 2026 (Primera y Segunda Vuelta Electoral)",
+  "| series = Separata de información pública",
+  "| date = 2026-04-23}}"
+)
+
+oep_ref_with_page <- function(page) {
+  base <- sub("\\}\\}$", "", oep_source_ref)
+  paste0("<ref>", base, "| page = ", page, "}}</ref>")
+}
+
+# ── INE 2024 census population reference ─────────────────────────────────────
+ine_pop_ref       <- paste0(
+  '<ref name="ine_pop">{{Cite',
+  "| last = Instituto Nacional de Estadística",
+  "| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC",
+  "| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download",
+  '| date = 2025}}</ref>'
+)
+ine_pop_ref_reuse <- '<ref name="ine_pop" />'
+
+# ── Canonical Infobox settlement field order ─────────────────────────────────
+# Order follows https://en.wikipedia.org/wiki/Template:Infobox_settlement
+# ("Complete empty syntax, with comments"), trimmed to fields we either
+# generate ourselves or have observed in existing Bolivia EN municipality
+# infoboxes. This lets us render both a fresh scaffold (new articles) and a
+# merge with an existing infobox (existing articles) in one consistent order.
+infobox_field_order <- c(
+  "official_name", "other_name", "native_name", "native_name_lang", "name",
+  "nickname", "motto", "settlement_type",
+  "translit_lang1_info1",
+  "image_skyline", "imagesize", "image_alt", "image_caption",
+  "image_flag", "flag_size", "flag_alt",
+  "image_seal", "seal_size",
+  "image_shield", "shield_size", "shield_alt",
+  "image_blank_emblem", "blank_emblem_type", "blank_emblem_size",
+  "image_map", "mapsize", "map_caption",
+  "image_map1", "mapsize1", "map_caption1",
+  "image_dot_map",
+  "pushpin_map", "pushpin_mapsize", "pushpin_label_position", "pushpin_map_caption",
+  "coordinates", "coordinates_footnotes",
+  "subdivision_type", "subdivision_name",
+  "subdivision_type1", "subdivision_name1",
+  "subdivision_type2", "subdivision_name2",
+  "subdivision_type3", "subdivision_name3",
+  "subdivision_type4", "subdivision_name4",
+  "established_title", "established_date",
+  "established_title1", "established_date1",
+  "established_title2", "established_date2",
+  "established_title3", "established_date3",
+  "founder",
+  "seat_type", "seat",
+  "government_footnotes", "government_type",
+  "leader_title", "leader_name",
+  "leader_title1", "leader_name1",
+  "leader_title2", "leader_name2",
+  "leader_title3", "leader_name3",
+  "unit_pref",
+  "area_magnitude", "area_footnotes",
+  "area_total_km2", "area_land_km2", "area_water_km2",
+  "area_blank1_title", "area_blank1_km2",
+  "area_note",
+  "elevation_footnotes", "elevation_m",
+  "population_footnotes", "population_as_of", "population_total",
+  "population_density_km2",
+  "population_urban_footnotes", "population_urban", "population_density_urban_km2",
+  "population_rural_footnotes", "population_rural", "population_density_rural_km2",
+  "population_blank1_title", "population_blank1", "population_density_blank1_km2",
+  "population_blank2_title", "population_blank2",
+  "population_demonym", "population_note",
+  "demographics_type1", "demographics1_footnotes", "demographics1_title1", "demographics1_info1",
+  "timezone", "utc_offset",
+  "timezone1", "utc_offset1",
+  "postal_code_type", "postal_code",
+  "area_code_type", "area_code",
+  "geocode",
+  "blank_name", "blank_info",
+  "website", "footnotes"
+)
+
+# Section-header comments, inserted before the first field of each section
+# (only shown if that field is present in the rendered output).
+infobox_section_headers <- c(
+  official_name         = "<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->\n<!-- Basic info  ---------------->",
+  image_skyline         = "<!-- Images, maps and coordinates  ----------->",
+  subdivision_type      = "<!-- Location ------------------>",
+  established_title     = "<!-- Established -------------------->",
+  seat_type             = "<!-- Seat of government / smaller parts -->",
+  government_footnotes  = "<!-- Politics ----------------->",
+  unit_pref             = "<!-- Area    --------------------->",
+  elevation_footnotes   = "<!-- Elevation -------------------->",
+  population_footnotes  = "<!-- Population   ----------------------->",
+  demographics_type1    = "<!-- Demographics ----------------->",
+  timezone              = "<!-- General information  --------------->",
+  postal_code_type      = "<!-- Area/postal codes & others -------->",
+  website               = "<!-- Website, footnotes ---------->"
+)
+
+# Render a named character vector of field values as {{Infobox settlement}}
+# wikitext, in canonical order, with section-header comments inserted.
+render_infobox_wikitext <- function(fields, order = infobox_field_order,
+                                     section_headers = infobox_section_headers) {
+  present <- order[order %in% names(fields)]
+  # Any fields not in our canonical order (unexpected/unknown existing-article
+  # fields) are appended at the end rather than silently dropped.
+  extra   <- setdiff(names(fields), order)
+  present <- c(present, extra)
+
+  lines <- character(0)
+  for (f in present) {
+    if (f %in% names(section_headers)) lines <- c(lines, section_headers[[f]])
+    lines <- c(lines, sprintf("|%-24s= %s", f, fields[[f]]))
+  }
+  paste0("{{Infobox settlement\n", paste(lines, collapse = "\n"), "\n}}")
+}
 
 # ── Coordinate range formatter ──────────────────────────────────────────────
 # Converts decimal degree ranges to DMS format: "38°24′ N to 41°59′ N"
@@ -134,8 +283,8 @@ fmt_coord_range <- function(lat_min, lat_max, lon_min, lon_max) {
   lon_max_str <- dec_to_dms(lon_max, "E", "W")
   
   list(
-    latitude = paste(lat_min_str, "to", lat_max_str),
-    longitude = paste(lon_min_str, "to", lon_max_str)
+    Latitude = paste(lat_min_str, "to", lat_max_str),
+    Longitude = paste(lon_min_str, "to", lon_max_str)
   )
 }
 
@@ -176,27 +325,43 @@ get_top_ethnicities <- function(id, auto_data, pop_total, threshold = 0.01) {
   groups <- tibble(
     group = grp_cols,
     n     = sapply(grp_cols, function(col) as.double(row[[col]]))
-  ) |>
+  )
+
+  # "Campesino", "Originario", "Indígena", and "Sin especificar" are all
+  # non-specific self-identification categories (rather than named ethnic
+  # groups); combine them into a single "Unspecified Indigenous" total.
+  is_unspecified <- groups$group %in% c("Campesino", "Originario", "Indígena") |
+    grepl("Sin especificar", groups$group, fixed = TRUE)
+  unspecified_n <- sum(groups$n[is_unspecified], na.rm = TRUE)
+
+  groups <- groups |>
+    filter(!is_unspecified)
+
+  if (unspecified_n > 0) {
+    groups <- groups |>
+      add_row(group = "Unspecified Indigenous", n = unspecified_n)
+  }
+
+  groups <- groups |>
     filter(n / pop_total >= threshold) |>
     arrange(desc(n))
 
-  # Exclude non-specific / non-ethnic categories (substring match)
-  groups <- groups |>
-    filter(!grepl("Campesino|Originario", group))
-
   if (nrow(groups) == 0) return("")
 
-  # Translate and link group names
-  linked <- sapply(groups$group, function(g) {
-    if (grepl("Sin especificar", g, fixed = TRUE)) {
-      "Unspecified Indigenous"
+  # Translate and link group names, then format with count and percentage
+  fmt_pct <- function(p) if (p >= 1) sprintf("(%d%%)", round(p)) else sprintf("(%.1f%%)", p)
+
+  entries <- mapply(function(g, n) {
+    label <- if (g == "Unspecified Indigenous") {
+      g
     } else if (g %in% names(ethnicity_wikilinks)) {
       ethnicity_wikilinks[[g]]
     } else {
-      # Strip any trailing parenthetical footnote marker
       trimws(sub("\\s*\\(.*", "", g))
     }
-  }, USE.NAMES = FALSE)
+    pct <- n / pop_total * 100
+    sprintf("%s: %s %s", label, format(round(n), big.mark = ",", scientific = FALSE), fmt_pct(pct))
+  }, groups$group, groups$n, SIMPLIFY = TRUE, USE.NAMES = FALSE)
 
   ine_ref <- paste0(
     "<ref>{{Cite",
@@ -207,14 +372,19 @@ get_top_ethnicities <- function(id, auto_data, pop_total, threshold = 0.01) {
     "}}</ref>"
   )
 
-  paste0(paste(linked, collapse = ", "), ine_ref)
+  paste0(paste(entries, collapse = "<br>"), ine_ref)
 }
 
-# ── Infobox builder ──────────────────────────────────────────────────────────
-build_infobox <- function(id, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
-                          area_muni, alcaldes, auto_data,
+# ── Infobox field computation ─────────────────────────────────────────────────
+# Returns a named character vector of field → value (including deliberately
+# blank scaffold fields), or NULL if the municipality isn't found. This is the
+# single source of truth for "what we know" about a municipality; both the
+# fresh-scaffold render (new articles) and the merge-with-existing render
+# (existing articles) build on top of it.
+compute_infobox_fields <- function(id, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
+                          area_muni, alcaldes, muni_roster, auto_data,
                           commons_log, munis_with_p402, coord_ranges,
-                          wd_images = NULL) {
+                          wd_images = NULL, wd_ine = NULL) {
   ml <- muni_lookup |> filter(id_muni == id) |> slice(1)
   if (nrow(ml) == 0) return(NULL)
 
@@ -239,29 +409,35 @@ build_infobox <- function(id, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
 
   # Area and coordinates
   geo <- area_muni |> filter(id_muni == id) |> slice(1)
-  area_km2   <- if (nrow(geo) > 0) round(geo$area_sqkm) else ""
+  area_val   <- if (nrow(geo) > 0 && !is.na(geo$area_sqkm)) geo$area_sqkm else NA_real_
+  area_km2   <- if (!is.na(area_val)) round(area_val) else ""
   
-  # Coordinate ranges (formatted as Latitude/Longitude fields)
+  # Coordinate ranges. Latitude/Longitude are not real Infobox settlement
+  # parameters (the template uses a single |coordinates= field via {{Coord}}),
+  # so lat_str/lon_str are computed here and reserved for future use (e.g. a
+  # |coordinates= builder) but are NOT included in the returned field vector.
   lat_str <- ""
   lon_str <- ""
   coord_row <- coord_ranges |> filter(id_muni == id) |> slice(1)
   if (nrow(coord_row) > 0) {
     coord_fmt <- fmt_coord_range(coord_row$lat_min, coord_row$lat_max,
                                   coord_row$lon_min, coord_row$lon_max)
-    lat_str <- coord_fmt$latitude
-    lon_str <- coord_fmt$longitude
+    lat_str <- coord_fmt$Latitude
+    lon_str <- coord_fmt$Longitude
   }
 
   # Population density
   density_km2 <- if (!is.na(pop_total) && nrow(geo) > 0 && !is.na(geo$area_sqkm) && geo$area_sqkm > 0) {
-    round(pop_total / geo$area_sqkm)
+    format(signif(pop_total / geo$area_sqkm, 2), scientific = FALSE, trim = TRUE)
   } else ""
 
   # Mayor (source data is ALL CAPS; convert to title case)
   alc <- alcaldes |> filter(id_muni == id) |> slice(1)
   mayor_str <- if (nrow(alc) > 0) {
-    name_tc <- stringr::str_to_title(alc$nombre)
-    paste0(name_tc, " (", alc$sigla, ", 2026)")
+    name_tc  <- stringr::str_to_title(alc$nombre)
+    page_row <- muni_roster |> filter(id_muni == id) |> slice(1)
+    ref_str  <- if (nrow(page_row) > 0) oep_ref_with_page(page_row$page) else ""
+    paste0(name_tc, " (", alc$sigla, ", 2026)", ref_str)
   } else ""
 
   # Ethnicities
@@ -285,9 +461,32 @@ build_infobox <- function(id, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
     sprintf("Location of the %s Municipality within Bolivia", muni_name)
   } else ""
 
+  # QID for OSM maplink id= parameter
+  qid_val <- if (!is.null(wd_ine)) {
+    qr <- wd_ine |> filter(ine_code == id) |> slice(1)
+    if (nrow(qr) > 0 && !is.na(qr$qid)) qr$qid else ""
+  } else ""
+
+  # Zoom level scaled by municipality area
+  zoom_level <- if (!is.na(area_val)) {
+    if      (area_val > 40000) 6L
+    else if (area_val > 15000) 7L
+    else if (area_val > 4000)  8L
+    else if (area_val > 1000)  9L
+    else                       10L
+  } else 8L
+
   # OSM maplink: only include if Wikidata item has P402
   map1_str <- if (id %in% munis_with_p402) {
-    "{{maplink |type=shape |stroke-width=3 |fill=#999999 |frame=yes |plain=yes |frame-align=center |zoom=8}}"
+    id_part <- if (nzchar(qid_val)) paste0(" |id=", qid_val) else ""
+    sprintf(
+      "{{maplink |type=shape |stroke-width=3 |fill=#999999 |frame=yes |plain=yes |frame-align=center |zoom=%d%s}}",
+      zoom_level, id_part
+    )
+  } else ""
+
+  map1_caption <- if (nzchar(map1_str)) {
+    sprintf("%s Municipality and its local surroundings", muni_name)
   } else ""
 
   # Format numbers with commas
@@ -298,94 +497,244 @@ build_infobox <- function(id, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
   flag_file    <- if (nrow(img_row) > 0 && !is.na(img_row$flag_file))    img_row$flag_file    else ""
   coat_file    <- if (nrow(img_row) > 0 && !is.na(img_row$coat_file))    img_row$coat_file    else ""
   seal_file    <- if (nrow(img_row) > 0 && !is.na(img_row$seal_file))    img_row$seal_file    else ""
-  inc_date     <- if (nrow(img_row) > 0 && !is.na(img_row$inception_date)) img_row$inception_date else ""
+  # inception_date (P571) excluded — not reliable enough to include
+  # commons_cat is computed here and reserved for future use, but is no
+  # longer included in the returned field vector — the |commons= infobox
+  # field has been struck in favor of a {{Commons category}} template placed
+  # directly in the article body (see bolivia-muni-generator-en.qmd).
   commons_cat  <- if (nrow(img_row) > 0 && !is.na(img_row$commons_cat))  img_row$commons_cat  else ""
 
-  paste0(
-'{{Infobox settlement
-<!--See the Table at Infobox Settlement for all fields and descriptions of usage-->
-<!-- Basic info  ---------------->
-|official_name          = ', muni_name, '
-|other_name             =
-|native_name            =
-|nickname               =
-|settlement_type        = Municipality
-|motto                  =
-<!-- images and maps  ----------->
-|image_skyline          =
-|imagesize              =
-|image_caption          =
-|image_flag             = ', flag_file, '
-|flag_size              = ', if (nzchar(flag_file)) "150px" else "", '
-|image_seal             = ', seal_file, '
-|seal_size              = ', if (nzchar(seal_file)) "100px" else "", '
-|image_shield           = ', coat_file, '
-|shield_size            = ', if (nzchar(coat_file)) "100px" else "", '
-|image_blank_emblem     =
-|blank_emblem_type      =
-|blank_emblem_size      =
-|image_map              = ', map_file, '
-|mapsize                = 300px
-|map_caption            = ', map_caption, '
-|image_map1             = ', map1_str, '
-|mapsize1               =
-|map_caption1           =
-|image_dot_map          =
-|pushpin_map            = Bolivia
-|pushpin_label_position = bottom
-|pushpin_map_caption    = ', pushpin_caption, '
-<!-- Location ------------------>
-|subdivision_type       = Country
-|subdivision_name       = [[Image:Flag of Bolivia.svg|25px]] [[Bolivia]]
-|subdivision_type1      = [[Departments of Bolivia|Department]]
-|subdivision_name1      = ', dept_link, '
-|subdivision_type2      = [[Provinces of Bolivia|Province]]
-|subdivision_name2      = ', prov_link, '
-|subdivision_type4      = [[Cantons of Bolivia|Cantons]]
-|subdivision_name4      =
-<!-- Smaller parts (e.g. boroughs of a city) and seat of government -->
-|seat_type              = Seat
-|seat                   =
-<!-- Politics ----------------->
-|government_footnotes   =
-|government_type        =
-|leader_title           = Mayor
-|leader_name            = ', mayor_str, '
-|leader_title1          =
-|leader_name1           =
-|established_title      = ', if (nzchar(inc_date)) "Established" else "", '
-|established_date       = ', inc_date, '
-<!-- Area    --------------------->
-|area_magnitude         =
-|unit_pref              = Metric
-|area_footnotes         =
-|area_total_km2         = ', fn(area_km2), '
-|area_land_km2          =
-|area_water_km2         =
-<!-- Population   ----------------------->
-|population_as_of               = 2024
-|population_footnotes           =
-|population_note                = [[2024 Bolivian census]]
-|population_total               = ', fn(pop_total), '
-|population_density_km2         = ', fn(density_km2), '
-|population_urban               = ', fn(urban_pop), '
-|population_blank1_title        = Indigenous ethnicities
-|population_blank1              = ', eth_str, '
-<!-- General information  --------------->
-|timezone               = [[Time in Bolivia|BOT]]
-|utc_offset             = -4
-|latitude               = ', lat_str, '
-|longitude              = ', lon_str, '
-|elevation_footnotes    =
-|elevation_m            =
-<!-- Area/postal codes & others -------->
-|postal_code_type       =
-|postal_code            =
-|area_code              =
-|website                =
-|commons                = ', commons_cat, '
-|footnotes              =
-}}')
+  # INE code and OCHA P-code for |geocode =
+  ocha_pcode   <- paste0("BO", id)
+  geocode_str  <- paste0(
+    id, " ([[National Institute of Statistics of Bolivia|INE code]])",
+    "<br>",
+    ocha_pcode, " ([[United Nations Office for the Coordination of Humanitarian Affairs|OCHA]] [[Place code|P-code]])"
+  )
+
+  c(
+    official_name          = muni_name,
+    other_name             = "",
+    native_name            = "",
+    nickname               = "",
+    settlement_type        = "Municipality",
+    motto                  = "",
+    image_skyline          = "",
+    image_flag             = flag_file,
+    flag_size              = if (nzchar(flag_file)) "150px" else "",
+    # "flag_alt" is the real Infobox settlement parameter for flag/shield
+    # descriptive text (screen-reader alt text, not a visible caption —
+    # this template has no visible-caption field for these images).
+    flag_alt               = if (nzchar(flag_file)) paste0("Flag of ", muni_name, " Municipality") else "",
+    image_seal             = seal_file,
+    seal_size              = if (nzchar(seal_file)) "100px" else "",
+    image_shield           = coat_file,
+    shield_size            = if (nzchar(coat_file)) "100px" else "",
+    shield_alt             = if (nzchar(coat_file)) paste0("Coat of arms of ", muni_name, " Municipality") else "",
+    image_blank_emblem     = "",
+    blank_emblem_type      = "",
+    blank_emblem_size      = "",
+    image_map              = map_file,
+    mapsize                = "300px",
+    map_caption            = map_caption,
+    image_map1             = map1_str,
+    mapsize1               = "",
+    map_caption1           = map1_caption,
+    image_dot_map          = "",
+    pushpin_map            = "Bolivia",
+    pushpin_label_position = "bottom",
+    pushpin_map_caption    = pushpin_caption,
+    subdivision_type       = "Country",
+    subdivision_name       = "[[Image:Flag of Bolivia.svg|25px]] [[Bolivia]]",
+    subdivision_type1      = "[[Departments of Bolivia|Department]]",
+    subdivision_name1      = dept_link,
+    subdivision_type2      = "[[Provinces of Bolivia|Province]]",
+    subdivision_name2      = prov_link,
+    subdivision_type4      = "[[Cantons of Bolivia|Cantons]]",
+    subdivision_name4      = "",
+    government_footnotes   = "",
+    government_type        = "",
+    leader_title           = "Mayor",
+    leader_name            = mayor_str,
+    area_magnitude         = "",
+    unit_pref              = "Metric",
+    area_footnotes         = "",
+    area_total_km2         = fn(area_km2),
+    area_land_km2          = "",
+    area_water_km2         = "",
+    population_as_of               = "2024",
+    population_footnotes           = ine_pop_ref,
+    population_note                = "[[2024 Bolivian census]]",
+    population_total               = fn(pop_total),
+    population_density_km2         = fn(density_km2),
+    population_urban_footnotes     = ine_pop_ref_reuse,
+    population_urban               = fn(urban_pop),
+    population_rural_footnotes     = ine_pop_ref_reuse,
+    population_rural               = fn(rural_pop),
+    population_blank1_title        = "Indigenous ethnicities",
+    population_blank1              = eth_str,
+    timezone                = "[[Time in Bolivia|BOT]]",
+    utc_offset              = "-4",
+    postal_code_type        = "",
+    postal_code             = "",
+    area_code                = "",
+    geocode                  = geocode_str,
+    footnotes                = ""
+  )
+}
+
+# Thin wrapper: fresh infobox scaffold for a municipality with no existing
+# article. Identical to the old build_infobox() output.
+build_infobox <- function(id, ...) {
+  fields <- compute_infobox_fields(id, ...)
+  if (is.null(fields)) return(NULL)
+  render_infobox_wikitext(fields)
+}
+
+# ── Merge with an existing article's infobox ─────────────────────────────────
+# Fields we deliberately force to blank regardless of what the existing
+# article has, because municipalities are areas, not points.
+infobox_force_blank_fields <- c("pushpin_map", "pushpin_label_position")
+
+# Fields struck from the output entirely — omitted even if the existing
+# article's infobox already contains them (unlike force_blank fields above,
+# these are dropped, not rendered as an explicit blank line). Latitude/
+# Longitude aren't real Infobox settlement parameters; commons has been
+# replaced by a {{Commons category}} template in the article body instead
+# (see bolivia-muni-generator-en.qmd).
+infobox_excluded_fields <- c("Latitude", "Longitude", "commons")
+
+# Combine our computed fields with an existing infobox's verbatim raw field
+# blocks (from parse_infobox_blocks()), working line-by-line rather than on
+# cleaned/flattened values. Rule ("only override if non-blank"): for any
+# field, if we have a non-blank computed value, it wins (our data is
+# fresher/sourced) and is rendered as a clean single line; otherwise, if the
+# existing block has real content (ignoring any embedded HTML comments), its
+# ORIGINAL raw text is carried over byte-for-byte — comments, spacing, and
+# all, in whatever position they occupied in the source. Fields that are
+# comment-only (no real value) or absent from both sides are rendered blank.
+# The two pushpin fields are force-blanked regardless of existing content,
+# because that's a deliberate content decision, not a data gap.
+#
+# One arithmetic correction: verbatim blocks already end in a "\n" (the line
+# break that preceded the next "|" in the source); a single trailing "\n" is
+# trimmed per block before joining with "\n" between lines/fields, otherwise
+# every carried-over field would leave a spurious blank line behind it. This
+# does not touch any interior newlines (e.g. a comment sitting on its own
+# line mid-value is left exactly as written).
+#
+# Consecutive identical comment-only lines are also deduplicated — this
+# happens when an existing article's own embedded section-header comment
+# (carried over verbatim from a field) is textually identical to the
+# canonical header we insert before the next field.
+render_infobox_merge_lines <- function(new_fields, existing_blocks,
+                                        order = infobox_field_order,
+                                        section_headers = infobox_section_headers,
+                                        force_blank = infobox_force_blank_fields,
+                                        excluded = infobox_excluded_fields) {
+  trim_one_trailing_newline <- function(x) sub("\n$", "", x)
+
+  existing_by_field <- list()
+  for (b in existing_blocks) existing_by_field[[b$field]] <- b$raw_value
+  existing_by_field[excluded] <- NULL
+
+  new_fields <- new_fields[setdiff(names(new_fields), excluded)]
+
+  new_names      <- names(new_fields)
+  existing_names <- names(existing_by_field)
+
+  # Only emit a field if it has real content on at least one side (or is
+  # explicitly force-blanked) -- don't pad the output with every canonical
+  # field name, nor with placeholder fields that were already blank in the
+  # source article.
+  field_has_content <- function(f) {
+    new_val <- if (f %in% new_names) new_fields[[f]] else NA
+    has_new <- !is.na(new_val) && nzchar(trimws(new_val))
+    if (has_new) return(TRUE)
+    old_raw <- existing_by_field[[f]]
+    !is.null(old_raw) && has_real_content(old_raw)
+  }
+
+  candidate_names <- union(new_names, existing_names)
+  active_names    <- union(force_blank,
+                            candidate_names[vapply(candidate_names, field_has_content, logical(1))])
+  present_order   <- c(order[order %in% active_names], setdiff(active_names, order))
+
+  lines_out <- character(0)
+  origin    <- setNames(character(length(present_order)), present_order)
+
+  # Append a line, skipping it if it's a comment-only line identical to the
+  # immediately preceding line (collapses back-to-back repeated headers).
+  append_line <- function(x) {
+    is_comment_only <- grepl("^\\s*<!--.*-->\\s*$", x)
+    if (is_comment_only && length(lines_out) > 0 &&
+        trimws(lines_out[length(lines_out)]) == trimws(x)) {
+      return(invisible(NULL))
+    }
+    lines_out <<- c(lines_out, x)
+  }
+
+  for (f in present_order) {
+    header <- if (f %in% names(section_headers)) section_headers[[f]] else NULL
+
+    if (f %in% force_blank) {
+      if (!is.null(header)) append_line(header)
+      append_line(sprintf("|%-24s= ", f))
+      origin[[f]] <- "blanked"
+      next
+    }
+
+    new_val <- if (f %in% new_names) new_fields[[f]] else NA
+    has_new <- !is.na(new_val) && nzchar(trimws(new_val))
+
+    if (has_new) {
+      if (!is.null(header)) append_line(header)
+      append_line(sprintf("|%-24s= %s", f, new_val))
+      origin[[f]] <- "new"
+      next
+    }
+
+    old_raw <- existing_by_field[[f]]
+    has_old <- !is.null(old_raw) && has_real_content(old_raw)
+
+    if (has_old) {
+      if (!is.null(header)) append_line(header)
+      field_line <- sprintf("|%-24s=%s", f, trim_one_trailing_newline(old_raw))
+      sub_lines <- strsplit(field_line, "\n")[[1]]
+      for (i in seq_along(sub_lines)) {
+        if (i == 1) lines_out <- c(lines_out, sub_lines[i]) else append_line(sub_lines[i])
+      }
+      origin[[f]] <- "existing"
+      next
+    }
+
+    if (!is.null(header)) append_line(header)
+    append_line(sprintf("|%-24s= ", f))
+    origin[[f]] <- "blank"
+  }
+
+  list(
+    wikitext = paste0("{{Infobox settlement\n", paste(lines_out, collapse = "\n"), "\n}}"),
+    origin   = origin
+  )
+}
+
+# Prose (not list) summary of which fields were carried over unchanged from
+# the existing article.
+describe_preserved_fields <- function(origin) {
+  preserved <- names(origin)[origin == "existing"]
+  if (length(preserved) == 0) {
+    return("No fields were preserved from the existing article — every overlapping field was refreshed with new sourced data.")
+  }
+  tagged <- sprintf("`%s`", preserved)
+  field_txt <- if (length(tagged) == 1) {
+    tagged
+  } else if (length(tagged) == 2) {
+    paste(tagged, collapse = " and ")
+  } else {
+    paste0(paste(tagged[-length(tagged)], collapse = ", "), ", and ", tagged[length(tagged)])
+  }
+  sprintf("Imported unchanged from the existing article: %s.", field_txt)
 }
 
 # ── Wikitext copy block ──────────────────────────────────────────────────────
@@ -414,7 +763,7 @@ wikitext_block <- function(id, label, content) {
 }
 
 # ── Municipality block ───────────────────────────────────────────────────────
-muni_block <- function(id_muni, muni_name, department, infobox_wikitext) {
+muni_block <- function(id_muni, muni_name, department, infobox_wikitext, note = NULL) {
   # Read pre-generated full page wikitext if available
   page_wt_path <- here::here("output", "bolivia-municipality-wikitext",
                               paste0(id_muni, ".txt"))
@@ -437,6 +786,10 @@ muni_block <- function(id_muni, muni_name, department, infobox_wikitext) {
       ),
       tags$div(
         style = "margin-top: 8px; font-size: 12px;",
+        if (!is.null(note)) tags$p(
+          note,
+          style = "color: #586069; margin: 0 0 6px 0; font-style: italic;"
+        ),
         wikitext_block(
           id      = paste0("infobox_", id_muni),
           label   = "Copy infobox",
@@ -462,19 +815,53 @@ muni_block <- function(id_muni, muni_name, department, infobox_wikitext) {
   )
 }
 
-# ── Render all blocks ────────────────────────────────────────────────────────
-render_muni_blocks <- function(lookup) {
+# ── Render blocks: municipalities without an existing article ────────────────
+render_new_blocks <- function(lookup) {
   ids <- lookup |>
     arrange(id_muni) |>
     select(id_muni, muni_anexo, department)
 
   tagList(pmap(ids, function(id_muni, muni_anexo, department) {
     ib <- build_infobox(id_muni, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
-                        area_muni, alcaldes, auto_data,
+                        area_muni, alcaldes, muni_roster, auto_data,
                         commons_log, munis_with_p402, coord_ranges,
-                        wd_images = wd_images)
+                        wd_images = wd_images, wd_ine = wd_ine)
     if (is.null(ib)) return(NULL)
     muni_block(id_muni, muni_anexo, department, ib)
+  }))
+}
+
+# ── Render blocks: municipalities with an existing article (merged) ─────────
+render_existing_blocks <- function(lookup) {
+  ids <- lookup |>
+    arrange(id_muni) |>
+    select(id_muni, muni_anexo, department)
+
+  tagList(pmap(ids, function(id_muni, muni_anexo, department) {
+    existing_blocks <- existing_infobox_blocks[[id_muni]]
+
+    # No {{Infobox settlement}} found in this article at all (stub) — there
+    # is nothing to merge against, so fall back to the fresh-scaffold path.
+    if (is.null(existing_blocks) || length(existing_blocks) == 0) {
+      ib <- build_infobox(id_muni, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
+                          area_muni, alcaldes, muni_roster, auto_data,
+                          commons_log, munis_with_p402, coord_ranges,
+                          wd_images = wd_images, wd_ine = wd_ine)
+      if (is.null(ib)) return(NULL)
+      note <- "No existing infobox was found in this article \u2014 rendering a fresh scaffold instead of a merge."
+      return(muni_block(id_muni, muni_anexo, department, ib, note = note))
+    }
+
+    new_fields <- compute_infobox_fields(id_muni, muni_lookup, prov_lookup, pop_muni, pop_muni_ur,
+                        area_muni, alcaldes, muni_roster, auto_data,
+                        commons_log, munis_with_p402, coord_ranges,
+                        wd_images = wd_images, wd_ine = wd_ine)
+    if (is.null(new_fields)) return(NULL)
+
+    merged <- render_infobox_merge_lines(new_fields, existing_blocks)
+    note   <- describe_preserved_fields(merged$origin)
+
+    muni_block(id_muni, muni_anexo, department, merged$wikitext, note = note)
   }))
 }
 ```
@@ -490,7 +877,7 @@ include_table_assets()
 
 Each municipality has two copy buttons:
 
-- **Copy infobox** — the `{{Infobox settlement}}` template with population, area, coordinates, mayor, and ethnic group data from the 2024 census.
+- **Copy infobox** — the `{{Infobox settlement}}` template with population, area, coordinates, mayor, and ethnic group data from the 2024 census. For municipalities with an existing English Wikipedia article, this is a *merge*: our computed fields take priority when non-blank, otherwise the existing article's field value is kept as-is (with original wikitext markup and citations intact). A short note above the copy button explains which fields were carried over unchanged.
 - **Copy page Wikitext** *(when available)* — the full article text assembled in section order: lead sentence → `==Government==` (mayor paragraph, council size paragraph, council table) → `==Population==` (census population table, population pyramid) → `==Languages and Indigenous identification==` (ethnic identity table, languages table) → `==Communities==`. Generated by the [article content page](bolivia-muni-generator-en.html); render that page first to produce these files.
 
 :::
@@ -499,18 +886,44 @@ Each municipality has two copy buttons:
 #| label: filter-summary
 #| echo: false
 #| results: asis
-n_total <- nrow(muni_lookup)
-filter_label <- switch(params$wiki_filter,
-  existing = "with an existing English Wikipedia article",
-  new      = "without an English Wikipedia article (new)",
-  "all (no filter applied)"
-)
-cat(sprintf("**Rendering infoboxes for %d municipalities %s.**\n\n", n_total, filter_label))
+n_new      <- nrow(muni_lookup_new)
+n_existing <- nrow(muni_lookup_existing)
+
+if (params$wiki_filter == "existing") {
+  cat(sprintf(
+    "**Rendering merged infoboxes for %d municipalities with an existing English Wikipedia article.**\n\n",
+    n_existing
+  ))
+} else if (params$wiki_filter == "new") {
+  cat(sprintf(
+    "**Rendering fresh infoboxes for %d municipalities without an English Wikipedia article.**\n\n",
+    n_new
+  ))
+} else {
+  cat(sprintf(
+    "**Rendering fresh infoboxes for %d municipalities without an existing article, and merged infoboxes for %d municipalities with one.**\n\n",
+    n_new, n_existing
+  ))
+}
 ```
 
 ```{r}
 #| label: infobox-blocks
 #| echo: false
 #| results: asis
-render_muni_blocks(muni_lookup)
+show_new      <- params$wiki_filter %in% c("new", "all")
+show_existing <- params$wiki_filter %in% c("existing", "all")
+
+if (show_new && show_existing) {
+  cat("## Municipalities without an existing English Wikipedia article\n\n")
+}
+if (show_new) {
+  render_new_blocks(muni_lookup_new)
+}
+if (show_new && show_existing) {
+  cat("\n\n## Municipalities with an existing English Wikipedia article (merged infobox)\n\n")
+}
+if (show_existing) {
+  render_existing_blocks(muni_lookup_existing)
+}
 ```

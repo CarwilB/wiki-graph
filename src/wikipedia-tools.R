@@ -853,14 +853,35 @@ extract_infobox_as_list <- function(wikitext) {
   as.character(cleaned[keep][names(cleaned)[keep]])
 }
 
-#' Split a string on "|" characters that are not inside {{ }}
+#' Split a string on "|" characters that are not inside {{ }}, [[ ]], or
+#' <!-- --> comments. HTML comments don't nest and can legitimately contain
+#' "|" (e.g. a commented-out wikilink like <!--[File:X.png|thumb]-->), so
+#' their entire span is copied verbatim before resuming normal scanning —
+#' otherwise a "|" inside a comment gets misread as a field delimiter and
+#' corrupts extraction of that field and the next one.
 split_on_top_level_pipes <- function(text) {
   parts <- character()
   depth <- 0
   current <- ""
 
   i <- 1
-  while (i <= nchar(text)) {
+  n <- nchar(text)
+  while (i <= n) {
+    if (substr(text, i, i + 3) == "<!--") {
+      match_pos <- regexpr("-->", substr(text, i, n), fixed = TRUE)
+      if (match_pos == -1) {
+        # Unclosed comment (pre-existing malformed wikitext): consume the
+        # remainder verbatim rather than let it corrupt further splitting.
+        current <- paste0(current, substr(text, i, n))
+        i <- n + 1
+      } else {
+        end <- i + match_pos + 1  # end index of the closing "-->"
+        current <- paste0(current, substr(text, i, end))
+        i <- end + 1
+      }
+      next
+    }
+
     ch <- substr(text, i, i)
 
     if (ch == "{" && i < nchar(text) && substr(text, i + 1, i + 1) == "{") {
@@ -899,6 +920,48 @@ split_on_top_level_pipes <- function(text) {
   }
   if (nchar(current) > 0) parts <- c(parts, current)
   parts
+}
+
+#' Parse an infobox's raw wikitext into an ordered list of field blocks,
+#' preserving each parameter's text EXACTLY as written (no trimming, no
+#' comment stripping, internal newlines intact). Use this instead of
+#' extract_infobox() when the raw markup itself (including embedded HTML
+#' comments and their exact placement) needs to be carried through a merge
+#' rather than flattened into cleaned single-line values.
+#'
+#' @param infobox_text Raw infobox wikitext, e.g. from extract_infobox_wikitext()
+#' @return A list of list(field = <name>, raw_value = <verbatim text after "=">)
+parse_infobox_blocks <- function(infobox_text) {
+  if (is.null(infobox_text)) return(list())
+
+  inner <- sub(
+    "^\\{\\{\\s*(?:[Ii]nfobox|[Ff]icha\\s+de|[Ii]nfo/)[^\\n|]*",
+    "", infobox_text, perl = TRUE
+  )
+  inner <- sub("\\}\\}$", "", inner)
+
+  parts <- split_on_top_level_pipes(inner)
+
+  blocks <- list()
+  for (part in parts) {
+    if (!grepl("=", part)) next
+    eq_pos <- regexpr("=", part)
+    key <- trimws(substr(part, 1, eq_pos - 1))
+    val_raw <- substr(part, eq_pos + 1, nchar(part))
+    if (nchar(key) == 0) next
+    blocks[[length(blocks) + 1]] <- list(field = key, raw_value = val_raw)
+  }
+  blocks
+}
+
+#' Does a raw (possibly multi-line, comment-laden) infobox field value have
+#' any real content once HTML comments are notionally removed?
+#'
+#' Used only to decide whether a field block should be treated as "blank"
+#' for merge purposes -- never used to alter text that gets emitted.
+has_real_content <- function(raw_value) {
+  no_comments <- gsub("<!--.*?-->", "", raw_value, perl = TRUE)
+  nzchar(trimws(no_comments))
 }
 
 #' Clean wikitext markup from an infobox value

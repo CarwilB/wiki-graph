@@ -1,6 +1,6 @@
 ---
-title: "Bolivia municipality information for Wikipedia"
-subtitle: "Wikitext ready to copy to Wikipedia — 2026 elections and 2024 census"
+title: "Bolivia municipality text and figures for Wikipedia"
+subtitle: "Wikitext ready to copy to Wikipedia — multiple cited sources"
 params:
   wiki_filter: "all"   # "existing", "new", or "all"
 format:
@@ -175,6 +175,13 @@ alcaldes          <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
 
 bo_municipality_wiki_presence <- readRDS(here::here("data", "bo_municipality_wiki_presence.rds"))
 municipalities_wd_ine <- readRDS(here::here("data", "municipalities_wd_ine.rds"))
+
+# Commons category names (from Wikidata P373 via muni_wd_images.rds), used to
+# populate the {{Commons category}} template placed at the end of the article
+# body — this replaced the |commons= Infobox settlement field, which has been
+# struck from bolivia-muni-infobox-en.qmd.
+wd_images <- readRDS(here::here("data", "muni_wd_images.rds")) |>
+  select(ine_code, commons_cat)
 
 roster_pages <- muni_roster |> select(id_muni, page)
 
@@ -616,7 +623,7 @@ build_pop_pyramid <- function(id, pop_data) {
   fmax <- ceiling(max(d$f_pct) * 2) / 2
 
   paste0(
-    "{{Population pyramid 2\n",
+    "{{Population pyramid\n",
     "|year=2024\n",
     m_parts, "\n",
     f_parts, "\n",
@@ -749,6 +756,14 @@ muni_block <- function(id_muni, muni_name, department, concejo) {
   comm          <- compose_community_list_wikitext(id_muni)
   reflist_wt <- "== References ==/n{{Reflist}}/n/n"
 
+  # Commons category template — value from Wikidata (P373) when known,
+  # otherwise left as a blank placeholder for manual completion.
+  commons_cat_row <- wd_images |> filter(ine_code == id_muni) |> slice(1)
+  commons_cat_val <- if (nrow(commons_cat_row) > 0 && !is.na(commons_cat_row$commons_cat)) {
+    commons_cat_row$commons_cat
+  } else " "
+  commons_cat_wt <- sprintf("{{Commons category|%s}}", commons_cat_val)
+
   # Assemble full page wikitext in section order and save to file
   full_page_wt <- paste0(
     lead_wt, "\n\n",
@@ -763,7 +778,9 @@ muni_block <- function(id_muni, muni_name, department, concejo) {
     autoident_wt, "\n\n",
     lang_wt,
     if (!is.null(comm)) paste0("\n\n", comm$wikitext) else "",
-    reflist_wt
+    reflist_wt, "\n",
+    "==External links==\n",
+    commons_cat_wt, "\n"
   )
   writeLines(full_page_wt,
              here::here("output", "bolivia-municipality-wikitext", paste0(id_muni, ".txt")))

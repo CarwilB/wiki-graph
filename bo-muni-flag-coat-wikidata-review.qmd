@@ -1,7 +1,7 @@
 ---
 title: "Bolivia Municipalities — Flag & Coat of Arms Wikidata Review"
-subtitle: "Visual check before running QuickStatements to add P41 (flag image) and P94 (coat of arms image)"
-date: today
+subtitle: "Record of P41 (flag image) and P94 (coat of arms image) additions to Wikidata — data frozen July 2026"
+date: "2026-07-20"
 format:
   html:
     embed-resources: false
@@ -21,6 +21,29 @@ library(htmltools)
 
 d <- readRDS(here::here("data", "wd_flag_coat_review.rds"))
 list2env(d, envir = .GlobalEnv)
+```
+
+```{r amdecruz-lookup}
+# Circular flag images scraped from https://amdecruz.com/asociados.php
+# Only Santa Cruz department municipalities; sc4.svg (generic dept. logo) excluded.
+amdecruz_lookup <- tibble::tribble(
+  ~muni_name,                  ~amdecruz_url,
+  "Buena Vista",               "https://amdecruz.com/images/municipios/Buenavista/buenavista4.svg",
+  "Camiri",                    "https://amdecruz.com/images/municipios/Camiri/camiri4.svg",
+  "Cotoca",                    "https://amdecruz.com/images/municipios/Cotoca/Cotoca4.svg",
+  "El Carmen Rivero Tórrez",   "https://amdecruz.com/images/municipios/ElCarmenRiveroT/carmenrivero4.svg",
+  "La Guardia",                "https://amdecruz.com/images/municipios/Laguardia/laguardia4.svg",
+  "Mairana",                   "https://amdecruz.com/images/municipios/Mairana/mairana4.svg",
+  "Mineros",                   "https://amdecruz.com/images/municipios/Minero/Minero4.svg",
+  "Montero",                   "https://amdecruz.com/images/municipios/montero/monteroR.svg",
+  "Pailón",                    "https://amdecruz.com/images/municipios/Pailon/Pailon4.svg",
+  "Puerto Quijarro",           "https://amdecruz.com/images/municipios/PuertoQuijarro/puertoquijarro4.svg",
+  "Puerto Suárez",             "https://amdecruz.com/images/municipios/Puertosuarez/PuertoSuarez4.svg",
+  "Roboré",                    "https://amdecruz.com/images/municipios/Robore/robore4.svg",
+  "San Carlos",                "https://amdecruz.com/images/municipios/SanCarlos/sancarlos4.svg",
+  "San Juan de Yapacaní",      "https://amdecruz.com/images/municipios/SanJuan/sanjuan5.svg",
+  "San Julián",                "https://amdecruz.com/images/municipios/SanJulian/sanjulian4.svg"
+)
 ```
 
 ```{r helpers}
@@ -50,11 +73,16 @@ wd_link <- function(qid) paste0("https://www.wikidata.org/wiki/", qid)
 # section: short ID used in CSS class names and element IDs ("flag" or "coat")
 # prop_id: Wikidata property being set ("P41" or "P94")
 
-make_review_section <- function(data, section, prop_id) {
+make_review_section <- function(data, section, prop_id, amdecruz_lkp = NULL) {
   n <- nrow(data)
 
   # Escape double-quotes inside HTML data attribute values
   attr_esc <- function(x) gsub('"', "&quot;", x, fixed = TRUE)
+
+  # Pre-index amdecruz lookup for fast lookup by muni_name
+  amdecruz_map <- if (!is.null(amdecruz_lkp)) {
+    setNames(amdecruz_lkp$amdecruz_url, amdecruz_lkp$muni_name)
+  } else NULL
 
   rows_html <- map_chr(seq_len(n), function(i) {
     row       <- data[i, ]
@@ -63,6 +91,26 @@ make_review_section <- function(data, section, prop_id) {
     file_page <- commons_link(row$file)
     item_page <- wd_link(row$qid)
     fname_esc <- htmlEscape(row$file)
+
+    # Build optional AMDECRUZ image cell
+    amdecruz_cell <- if (!is.null(amdecruz_map)) {
+      amd_url <- amdecruz_map[row$muni_name]
+      if (!is.na(amd_url)) {
+        paste0(
+          '<td style="text-align:center;vertical-align:middle;padding:4px;width:90px">',
+            '<a href="https://amdecruz.com/asociados.php" target="_blank" rel="noreferrer"',
+               ' title="Source: amdecruz.com">',
+              '<img src="', amd_url, '"',
+              ' style="max-height:80px;max-width:80px;display:block;margin:auto"',
+              ' loading="lazy"',
+              ' onerror="this.replaceWith(document.createTextNode(\'—\'))">',
+            '</a>',
+          '</td>'
+        )
+      } else {
+        '<td style="text-align:center;vertical-align:middle;padding:4px;width:90px;color:#aaa;font-size:11px">—</td>'
+      }
+    } else ""
 
     paste0(
       '<tr>',
@@ -82,6 +130,8 @@ make_review_section <- function(data, section, prop_id) {
             ' onerror="this.replaceWith(document.createTextNode(\'(no preview)\'))">',
           '</a>',
         '</td>',
+        # AMDECRUZ circular image (only when lookup provided)
+        amdecruz_cell,
         # Municipality → Wikidata link
         '<td style="vertical-align:middle;padding:6px 10px">',
           '<a href="', item_page, '" target="_blank" rel="noreferrer">',
@@ -124,12 +174,18 @@ make_review_section <- function(data, section, prop_id) {
     '</div>'
   )
 
+  # Header: insert AMDECRUZ column only when lookup provided
+  amdecruz_th <- if (!is.null(amdecruz_lkp)) {
+    '<th>AMDECRUZ <span style="font-weight:normal;font-size:11px;color:#586069">(circular)</span></th>'
+  } else ""
+
   table_html <- paste0(
     '<div style="overflow-x:auto">',
     '<table class="table table-sm table-hover" style="font-size:13px;min-width:700px">',
     '<thead class="table-light"><tr>',
       '<th></th>',
-      '<th>Image</th>',
+      '<th>Commons image</th>',
+      amdecruz_th,
       '<th>Municipality</th>',
       '<th>Department</th>',
       '<th>', prop_id, ' value (Commons filename)</th>',
@@ -253,48 +309,67 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>')
 ```
 
-## How to use
+## Status
 
-1. Scroll through each section and visually verify the images are correct municipal flags / coats of arms.
-2. Uncheck any rows that look wrong (wrong municipality, poor quality, duplicates, etc.).
-3. Click **Copy selected QuickStatements** to copy the tab-separated statements.
-4. Paste into [QuickStatements](https://quickstatements.toolforge.org/#/batch) and run.
+The Wikidata statements shown in this document have been submitted. The review tables below are a permanent record of what was added and can be used to identify and correct any errors.
+
+The statements were added in three QuickStatements batches on July 20, 2026:
+
+- [Batch 42829](https://qs-dev.toolforge.org/batch/42829/)
+- [Batch 42830](https://qs-dev.toolforge.org/batch/42830/)
+- [Batch 42831](https://qs-dev.toolforge.org/batch/42831/)
 
 All images load directly from Wikimedia Commons — an internet connection is required.
 
 ::: {.callout-note}
 ## Data sources
 
-- **Proposed additions** — cross-check of [Category:Flags of municipalities of Bolivia](https://commons.wikimedia.org/wiki/Category:Flags_of_municipalities_of_Bolivia) and [Category:Coats of arms of municipalities of Bolivia](https://commons.wikimedia.org/wiki/Category:Coats_of_arms_of_municipalities_of_Bolivia) against existing Wikidata P41/P94 claims for the `Q1062710` (Municipality of Bolivia) class.
+- **Additions** — cross-check of [Category:Flags of municipalities of Bolivia](https://commons.wikimedia.org/wiki/Category:Flags_of_municipalities_of_Bolivia) and [Category:Coats of arms of municipalities of Bolivia](https://commons.wikimedia.org/wiki/Category:Coats_of_arms_of_municipalities_of_Bolivia) against existing Wikidata P41/P94 claims for the `Q1062710` (Municipality of Bolivia) class.
 - **Matching** — filenames decoded from Wikidata SPARQL; Commons filenames matched to municipalities by name extraction + fuzzy string match. A few ambiguous files were excluded (see [Unmatched files] below).
-- **Snapshot date** — `r format(file.mtime(here::here("data","wd_flag_coat_review.rds")), "%B %d, %Y")`. To refresh, re-run the cross-check block in the analysis session and re-save `data/wd_flag_coat_review.rds`.
+- **Data frozen** — July 20, 2026. The source file `data/wd_flag_coat_review.rds` reflects the state of Commons and Wikidata at that date and should not be refreshed, as the statements have already been submitted.
 :::
 
 ## Impact
 
 The goal of this review is to improve the coverage of municipal flags and coats of arms in Wikidata, which in turn will allow the generated infoboxes on English Wikipedia to include these images. If fully implemented (and you need to check for errors first):
 
+
 Of the 195 Bolivian municipality articles currently on English Wikipedia, only 6 include a flag image and 1 includes a seal in the infobox. The generated infoboxes produced by bolivia-muni-infobox-en.qmd would cover all 340 municipalities, and by pulling images already linked in Wikidata, 107 of those would include a flag and 3 would include a coat of arms — a dramatic improvement in coverage, though 65 of those 107 flags correspond to municipalities that already have a Wikipedia article (the remaining 42 would be on new pages). If the new Commons-matched images are first added to Wikidata via the QuickStatements outputs, the generated infoboxes would expand further to 175 municipalities with flags and 41 with coats of arms — representing 22 of the 195 existing articles gaining a coat for the first time, and 96 total existing articles with a flag.
 
 
 ---
 
-## Flags (P41) — `r nrow(review_flags)` proposed additions {#sec-flags}
+## Flags (P41) — `r nrow(review_flags)` additions {#sec-flags}
 
-These `r nrow(review_flags)` municipalities have a flag image in the Commons category but **no P41 claim** in Wikidata. The QuickStatement adds the Commons filename as the value of P41 (flag image).
+These `r nrow(review_flags)` municipalities had a flag image in the Commons category but no P41 claim in Wikidata. The QuickStatement added the Commons filename as the value of P41 (flag image).
+
+::: {.callout-warning}
+## Known errors in this batch
+
+The following entries were submitted but are incorrect and should be fixed manually in Wikidata:
+
+- **San Lorenzo** — wrong department (file belongs to a different San Lorenzo)
+- **Apolo** — wrong image assigned
+- **Camiri** — image is missing the sun symbol; a corrected file should be substituted
+- **Tiquipaya** — flag is upside down; the correct orientation is at [File:Bandera-Tiquipaya.png](https://commons.wikimedia.org/wiki/File:Bandera-Tiquipaya.png)
+:::
 
 ```{r flag-table, results='asis'}
-make_review_section(review_flags, "flag", "P41")
+make_review_section(review_flags, "flag", "P41", amdecruz_lkp = amdecruz_lookup)
 ```
 
 ---
 
-## Coats of Arms (P94) — `r nrow(review_coats)` proposed additions {#sec-coats}
+## Coats of Arms (P94) — `r nrow(review_coats)` additions {#sec-coats}
 
-These `r nrow(review_coats)` municipalities have a coat of arms / escudo in the Commons category but **no P94 claim** in Wikidata.
+These `r nrow(review_coats)` municipalities had a coat of arms / escudo in the Commons category but no P94 claim in Wikidata.
 
 ::: {.callout-warning}
-Several of these images have low-quality or unofficial-looking filenames (e.g. `ESCUDO OFICIAL-GOBIERNO AUTONOMO...`, `FB IMG escudo de colquechaca.jpg`). Review carefully before accepting.
+## Known errors in this batch
+
+- **San Ramón (Santa Cruz)** — [File:Escudo San Ramón, Beni.jpg](https://commons.wikimedia.org/wiki/File:Escudo_San_Ramón,_Beni.jpg) was mistakenly linked to the municipality of San Ramón in Santa Cruz department; it belongs to San Ramón in Beni. The P94 claim on the Santa Cruz item should be removed and the file correctly assigned to the Beni item.
+
+Several other images in this batch have low-quality or unofficial-looking filenames (e.g. `ESCUDO OFICIAL-GOBIERNO AUTONOMO...`, `FB IMG escudo de colquechaca.jpg`) and may warrant further review.
 :::
 
 ```{r coat-table, results='asis'}
