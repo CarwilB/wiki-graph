@@ -18,3 +18,4 @@ output/locator_maps/*/*map.svg
 # References are updated to use relative paths (../humdata/...)
 maps/*.zip
 data/cache/
+.positai
