@@ -842,6 +842,14 @@ muni_block <- function(id_muni, muni_name, department, concejo) {
   } else " "
   commons_cat_wt <- sprintf("{{Commons category|%s}}", commons_cat_val)
 
+  # Poverty and basic services tables
+  poverty_tables <- generate_poverty_service_tables(
+    ine_code = id_muni,
+    muni_display_name = muni_name,
+    dept_display_name = department
+  )
+  poverty_wt <- poverty_tables$wikitable
+
   # Assemble full page wikitext in section order and save to file
   full_page_wt <- paste0(
     lead_wt, "\n\n",
@@ -856,6 +864,8 @@ muni_block <- function(id_muni, muni_name, department, concejo) {
     autoident_wt, "\n\n",
     lang_wt,
     if (!is.null(comm)) paste0("\n\n", comm$wikitext) else "",
+    "==Poverty and Basic Services==\n",
+    poverty_wt, "\n\n",
     reflist_wt, "\n",
     "==External links==\n",
     commons_cat_wt, "\n"

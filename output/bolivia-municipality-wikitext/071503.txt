@@ -190,4 +190,24 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 * Nueva Ascencion
 {{div col end}}
 
+==Poverty and Basic Services==
+{| class="wikitable"
+|+ El Puente Municipality: Poverty and Basic Service Access
+|-
+! align=left | Location !! colspan=3 | Poverty (NBI) !! colspan=3 | Lack of Water Access !! colspan=3 | Lack of Sanitation Access
+|-
+! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
+|-
+| align=left | '''El Puente''' || {{shade|color=red|85%}} || {{shade|color=red|60%}} || {{Decrease}} -24% || {{shade|color=blue|55%}} || {{shade|color=blue|14%}} || {{Decrease}} -40% || {{shade|color=green|34%}} || {{shade|color=green|35%}} || {{Increase}} +0%
+|-
+| align=left | Santa Cruz || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+|-
+| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+|-
+|colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
+|}
+
 == References ==/n{{Reflist}}/n/n
+==External links==
+{{Commons category|El Puente Municipality, Guarayos}}
+

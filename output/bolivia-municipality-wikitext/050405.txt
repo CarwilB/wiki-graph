@@ -90,4 +90,24 @@ San Pedro de Macha has a municipal council with seven seats, as do all municipal
 | Aymara || 325 || 1.5% || 218 || 1.1%
 |-
 |colspan="5"|'''Source:''' 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Idioma en segundo orden de uso, idioma en tercer orden de uso e idiomas hablados (independientemente del orden de uso) de la población de 6 o más años de edad: Tabulados por Municipio/TIOC| url = https://nube.ine.gob.bo/index.php/s/BSHb8IVQGA997Pv/download| date = 2025}}</ref>
-|}== References ==/n{{Reflist}}/n/n
+|}==Poverty and Basic Services==
+{| class="wikitable"
+|+ San Pedro de Macha Municipality: Poverty and Basic Service Access
+|-
+! align=left | Location !! colspan=3 | Poverty (NBI) !! colspan=3 | Lack of Water Access !! colspan=3 | Lack of Sanitation Access
+|-
+! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
+|-
+| align=left | '''San Pedro de Macha''' || {{shade|color=red|94%}} || {{shade|color=red|86%}} || {{Decrease}} -8% || {{shade|color=blue|68%}} || {{shade|color=blue|23%}} || {{Decrease}} -45% || {{shade|color=green|92%}} || {{shade|color=green|79%}} || {{Decrease}} -13%
+|-
+| align=left | Potosí || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+|-
+| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+|-
+|colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
+|}
+
+== References ==/n{{Reflist}}/n/n
+==External links==
+{{Commons category|San Pedro de Macha Municipality}}
+
