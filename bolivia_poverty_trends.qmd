@@ -1,0 +1,528 @@
+---
+title: "Bolivia: Poverty and Basic Services Trends (2001–2024)"
+format: 
+  html:
+    page-layout: full
+    code-tools: true
+---
+
+```{r setup}
+#| message: false
+#| warning: false
+library(tidyverse)
+library(kableExtra)
+library(htmltools)
+source("src/gh-copy-assets.R")
+```
+
+```{r}
+#| label: assets
+#| echo: false
+#| results: asis
+include_table_assets()
+```
+
+This document presents a comparative overview of poverty and basic service access across Bolivia's departments. Data can be exported in HTML or Wikitable (MediaWiki) format.
+
+**Note on temporal coverage**: Water and sanitation data are available for 2001 and 2024. Poverty (NBI) data is available for 2012 and 2024.
+
+```{r load-data}
+# Load the English datasets generated from censo-2024-poverty.qmd
+poverty_nbi_dept <- readRDS("data/cpv2024/poverty_nbi_dept.rds")
+improved_water_dept <- readRDS("data/cpv2024/improved_water_dept.rds")
+improved_sanitation_dept <- readRDS("data/cpv2024/improved_sanitation_dept.rds")
+```
+
+```{r process-data}
+# 1. Extract Poverty (NBI) percentages (2012 and 2024)
+poverty_tab <- poverty_nbi_dept |>
+  select(
+    department,
+    poor_2012 = poor_total_2012,
+    poor_2024 = poor_total_2024,
+    pop_2012 = ref_pop_nbi_2012,
+    pop_2024 = ref_pop_nbi_2024
+  ) |>
+  mutate(
+    poverty_pct_2012 = (poor_2012 / pop_2012) * 100,
+    poverty_pct_2024 = (poor_2024 / pop_2024) * 100,
+    poverty_change = poverty_pct_2024 - poverty_pct_2012
+  ) |>
+  select(department, poverty_pct_2012, poverty_pct_2024, poverty_change)
+
+
+
+# 3. Extract Water Lack (Unimproved) percentages (2001 and 2024)
+water_tab <- improved_water_dept |>
+  select(
+    department,
+    water_lack_2001 = pct_unimproved_water_2001,
+    water_lack_2024 = pct_unimproved_water_2024
+  ) |>
+  mutate(
+    water_change = water_lack_2024 - water_lack_2001
+  ) |>
+  select(department, water_lack_2001, water_lack_2024, water_change)
+
+# 4. Extract Sanitation Lack (Unimproved) percentages (2001 and 2024)
+sanitation_tab <- improved_sanitation_dept |>
+  select(
+    department,
+    sanitation_lack_2001 = pct_unimproved_sanitation_2001,
+    sanitation_lack_2024 = pct_unimproved_sanitation_2024
+  ) |>
+  mutate(
+    sanitation_change = sanitation_lack_2024 - sanitation_lack_2001
+  ) |>
+  select(department, sanitation_lack_2001, sanitation_lack_2024, sanitation_change)
+
+# 5. Extract national totals from raw poverty data (aggregate all departments)
+country_poverty <- poverty_nbi_dept |>
+  summarise(
+    poor_2012 = sum(poor_total_2012),
+    pop_2012 = sum(ref_pop_nbi_2012),
+    poor_2024 = sum(poor_total_2024),
+    pop_2024 = sum(ref_pop_nbi_2024)
+  ) |>
+  mutate(
+    poverty_pct_2012 = (poor_2012 / pop_2012) * 100,
+    poverty_pct_2024 = (poor_2024 / pop_2024) * 100,
+    poverty_change = poverty_pct_2024 - poverty_pct_2012,
+    department = "Bolivia"
+  ) |>
+  select(department, poverty_pct_2012, poverty_pct_2024, poverty_change)
+
+country_water <- improved_water_dept |>
+  summarise(
+    n_unimproved_2001 = sum(n_unimproved_water_2001),
+    n_total_2001 = sum(n_total_2001),
+    n_unimproved_2024 = sum(n_unimproved_water_2024),
+    n_total_2024 = sum(n_total_2024)
+  ) |>
+  mutate(
+    water_lack_2001 = (n_unimproved_2001 / n_total_2001) * 100,
+    water_lack_2024 = (n_unimproved_2024 / n_total_2024) * 100,
+    water_change = water_lack_2024 - water_lack_2001,
+    department = "Bolivia"
+  ) |>
+  select(department, water_lack_2001, water_lack_2024, water_change)
+
+country_sanitation <- improved_sanitation_dept |>
+  summarise(
+    n_unimproved_2001 = sum(n_unimproved_sanitation_2001),
+    n_total_2001 = sum(n_total_2001),
+    n_unimproved_2024 = sum(n_unimproved_sanitation_2024),
+    n_total_2024 = sum(n_total_2024)
+  ) |>
+  mutate(
+    sanitation_lack_2001 = (n_unimproved_2001 / n_total_2001) * 100,
+    sanitation_lack_2024 = (n_unimproved_2024 / n_total_2024) * 100,
+    sanitation_change = sanitation_lack_2024 - sanitation_lack_2001,
+    department = "Bolivia"
+  ) |>
+  select(department, sanitation_lack_2001, sanitation_lack_2024, sanitation_change)
+
+country_row <- country_poverty |>
+  left_join(country_water, by = "department") |>
+  left_join(country_sanitation, by = "department")
+
+# 6. Combine all (excluding marginality) and add country row at bottom
+final_table <- poverty_tab |>
+  left_join(water_tab, by = "department") |>
+  left_join(sanitation_tab, by = "department") |>
+  arrange(department) |>
+  bind_rows(country_row) |>
+  # Keep departments sorted, Bolivia always at bottom
+  mutate(sort_key = if_else(department == "Bolivia", 999, 0)) |>
+  arrange(sort_key, department) |>
+  select(-sort_key)
+
+# Helper for consistent formatting
+format_pct <- function(x) {
+  ifelse(is.na(x), "-", sprintf("%.0f%%", x))
+}
+
+format_chg <- function(x) {
+  if(is.na(x)) return("-")
+  prefix <- if(x > 0) "+" else ""
+  paste0(prefix, sprintf("%.0f%%", x))
+}
+
+# Function to create Wikitext shade syntax
+# color: "red" (poverty), "blue" (water), "green" (sanitation)
+wikitext_shade <- function(value_pct, color) {
+  if(is.na(value_pct)) return("-")
+  # Extract numeric value and format
+  numeric_val <- floor(as.numeric(gsub("%", "", value_pct)))
+  sprintf("{{shade|color=%s|%s}}%%", color, numeric_val)
+}
+```
+
+```{r render-table}
+#| echo: false
+
+# Prepare formatted columns for HTML display
+table_display <- final_table |>
+  mutate(
+    p_12 = map_chr(poverty_pct_2012, format_pct),
+    p_24 = map_chr(poverty_pct_2024, format_pct),
+    p_ch = map_chr(poverty_change, format_chg),
+    w_01 = map_chr(water_lack_2001, format_pct),
+    w_24 = map_chr(water_lack_2024, format_pct),
+    w_ch = map_chr(water_change, format_chg),
+    s_01 = map_chr(sanitation_lack_2001, format_pct),
+    s_24 = map_chr(sanitation_lack_2024, format_pct),
+    s_ch = map_chr(sanitation_change, format_chg)
+  ) |>
+  mutate(
+    # Bold Bolivia row using HTML (since kable doesn't process markdown)
+    department = if_else(department == "Bolivia", paste0("<b>", department, "</b>"), department)
+  ) |>
+  select(
+    department,
+    p_12, p_24, p_ch,
+    w_01, w_24, w_ch,
+    s_01, s_24, s_ch
+  ) |>
+  rename(`Department` = department)
+
+# Render HTML table with nested headers and vertical dividers
+table_display |>
+  kbl(
+    caption = "Comparative Trends in Poverty and Basic Service Access by Department",
+    col.names = c(
+      "Department", 
+      "2012", "2024", "Change",
+      "2001", "2024", "Change",
+      "2001", "2024", "Change"
+    ),
+    align = "lcccccccccc",
+    escape = FALSE
+  ) |>
+  kable_classic(full_width = FALSE) |>
+  add_header_above(c(
+    " " = 1, 
+    "Poverty (NBI)" = 3, 
+    "Lack of Water Access" = 3, 
+    "Lack of Sanitation Access" = 3
+  )) |>
+  column_spec(1, border_right = TRUE) |>
+  column_spec(4, border_right = TRUE) |>
+  column_spec(7, border_right = TRUE)
+
+```
+
+## Municipality Examples
+
+Below are poverty and basic services statistics for six representative municipalities, shown alongside their department and national context.
+
+```{r load-muni-data}
+# Load municipality-level data (all three metrics)
+poverty_nbi_muni <- readRDS("data/cpv2024/poverty_nbi_muni.rds")
+improved_water_muni <- readRDS("data/cpv2024/improved_water_muni.rds")
+improved_sanitation_muni <- readRDS("data/cpv2024/improved_sanitation_muni.rds")
+
+# Extract data for 6 representative municipalities
+muni_list <- list(
+  list(muni = "Sucre",       dept = "Chuquisaca",  ine_code = "010101"),
+  list(muni = "La Paz",      dept = "La Paz",      ine_code = "020101"),
+  list(muni = "Cochabamba",  dept = "Cochabamba",  ine_code = "030101"),
+  list(muni = "Oruro",       dept = "Oruro",       ine_code = "040101"),
+  list(muni = "Santa Cruz",  dept = "Santa Cruz",  ine_code = "070101"),
+  list(muni = "Trinidad",    dept = "Beni",        ine_code = "080101")
+)
+
+# Build municipality data tables with all metrics (2012, 2024, change)
+muni_poverty_data <- poverty_nbi_muni |>
+  filter(ine_code %in% map_chr(muni_list, ~.$ine_code)) |>
+  select(
+    ine_code,
+    municipality,
+    department,
+    poor_2012 = poor_total_2012,
+    poor_2024 = poor_total_2024,
+    pop_2012 = ref_pop_nbi_2012,
+    pop_2024 = ref_pop_nbi_2024
+  ) |>
+  mutate(
+    poverty_pct_2012 = (poor_2012 / pop_2012) * 100,
+    poverty_pct_2024 = (poor_2024 / pop_2024) * 100,
+    poverty_change = poverty_pct_2024 - poverty_pct_2012
+  ) |>
+  select(ine_code, municipality, department, poverty_pct_2012, poverty_pct_2024, poverty_change)
+
+muni_water_data <- improved_water_muni |>
+  filter(ine_code %in% map_chr(muni_list, ~.$ine_code)) |>
+  select(
+    ine_code,
+    municipality,
+    water_lack_2001 = pct_unimproved_water_2001,
+    water_lack_2024 = pct_unimproved_water_2024
+  ) |>
+  mutate(
+    water_change = water_lack_2024 - water_lack_2001
+  ) |>
+  select(ine_code, municipality, water_lack_2001, water_lack_2024, water_change)
+
+muni_sanitation_data <- improved_sanitation_muni |>
+  filter(ine_code %in% map_chr(muni_list, ~.$ine_code)) |>
+  select(
+    ine_code,
+    municipality,
+    sanitation_lack_2001 = pct_unimproved_sanitation_2001,
+    sanitation_lack_2024 = pct_unimproved_sanitation_2024
+  ) |>
+  mutate(
+    sanitation_change = sanitation_lack_2024 - sanitation_lack_2001
+  ) |>
+  select(ine_code, municipality, sanitation_lack_2001, sanitation_lack_2024, sanitation_change)
+```
+
+```{r render-muni-examples}
+#| echo: false
+#| results: asis
+
+# Function to create context table for a municipality (with municipality, department, and Bolivia)
+create_muni_context_table <- function(muni_name, dept_name, ine_code) {
+  # Get municipality data by INE code to avoid name-matching failures
+  muni_pov <- muni_poverty_data |> filter(ine_code == !!ine_code) |> slice(1)
+  muni_wat <- muni_water_data |> filter(ine_code == !!ine_code) |> slice(1)
+  muni_san <- muni_sanitation_data |> filter(ine_code == !!ine_code) |> slice(1)
+  
+  # Get department data
+  dept_pov <- final_table |> filter(department == dept_name) |> slice(1)
+  
+  # Get Bolivia data
+  bolivia_pov <- final_table |> filter(department == "Bolivia")
+  
+  # Combine into context table: municipality | department | Bolivia
+  context_table <- tibble(
+    location = c(muni_name, dept_name, "Bolivia"),
+    poverty_pct_2012 = c(muni_pov$poverty_pct_2012[1], dept_pov$poverty_pct_2012[1], bolivia_pov$poverty_pct_2012[1]),
+    poverty_pct_2024 = c(muni_pov$poverty_pct_2024[1], dept_pov$poverty_pct_2024[1], bolivia_pov$poverty_pct_2024[1]),
+    poverty_change = c(muni_pov$poverty_change[1], dept_pov$poverty_change[1], bolivia_pov$poverty_change[1]),
+    water_lack_2001 = c(muni_wat$water_lack_2001[1], dept_pov$water_lack_2001[1], bolivia_pov$water_lack_2001[1]),
+    water_lack_2024 = c(muni_wat$water_lack_2024[1], dept_pov$water_lack_2024[1], bolivia_pov$water_lack_2024[1]),
+    water_change = c(muni_wat$water_change[1], dept_pov$water_change[1], bolivia_pov$water_change[1]),
+    sanitation_lack_2001 = c(muni_san$sanitation_lack_2001[1], dept_pov$sanitation_lack_2001[1], bolivia_pov$sanitation_lack_2001[1]),
+    sanitation_lack_2024 = c(muni_san$sanitation_lack_2024[1], dept_pov$sanitation_lack_2024[1], bolivia_pov$sanitation_lack_2024[1]),
+    sanitation_change = c(muni_san$sanitation_change[1], dept_pov$sanitation_change[1], bolivia_pov$sanitation_change[1])
+  )
+  
+  return(context_table)
+}
+
+# Display each municipality context table
+for (i in seq_along(muni_list)) {
+  muni_ctx <- create_muni_context_table(muni_list[[i]]$muni, muni_list[[i]]$dept, muni_list[[i]]$ine_code)
+  
+  # Format for display (same as departmental table)
+  display_table <- muni_ctx |>
+    mutate(
+      p_12 = sprintf("%.0f%%", poverty_pct_2012),
+      p_24 = sprintf("%.0f%%", poverty_pct_2024),
+      p_ch = if_else(poverty_change > 0, sprintf("+%.0f%%", poverty_change), sprintf("%.0f%%", poverty_change)),
+      w_01 = sprintf("%.0f%%", water_lack_2001),
+      w_24 = sprintf("%.0f%%", water_lack_2024),
+      w_ch = if_else(water_change > 0, sprintf("+%.0f%%", water_change), sprintf("%.0f%%", water_change)),
+      s_01 = sprintf("%.0f%%", sanitation_lack_2001),
+      s_24 = sprintf("%.0f%%", sanitation_lack_2024),
+      s_ch = if_else(sanitation_change > 0, sprintf("+%.0f%%", sanitation_change), sprintf("%.0f%%", sanitation_change)),
+      # Add " Department" if department name matches municipality name
+      location = case_when(
+        location == muni_list[[i]]$dept & location == muni_list[[i]]$muni ~ paste0(location, " Department"),
+        TRUE ~ location
+      )
+    ) |>
+    select(location, p_12, p_24, p_ch, w_01, w_24, w_ch, s_01, s_24, s_ch) |>
+    rename(`Location` = location)
+  
+  cat("\n### ", muni_list[[i]]$muni, " (", muni_list[[i]]$dept, " Department)\n\n")
+  
+  print(
+    display_table |>
+      kbl(
+        caption = paste("Poverty and Basic Services:", muni_list[[i]]$muni, "Municipality"),
+        col.names = c(
+          "Location",
+          "2012", "2024", "Change",
+          "2001", "2024", "Change",
+          "2001", "2024", "Change"
+        ),
+        align = "lcccccccccc",
+        escape = FALSE
+      ) |>
+      kable_classic(full_width = FALSE) |>
+      add_header_above(c(
+        " " = 1,
+        "Poverty (NBI)" = 3,
+        "Lack of Water Access" = 3,
+        "Lack of Sanitation Access" = 3
+      )) |>
+      column_spec(1, border_right = TRUE) |>
+      column_spec(4, border_right = TRUE) |>
+      column_spec(7, border_right = TRUE)
+  )
+  cat("\n")
+}
+
+```
+
+## Municipality Wikitable Exports
+
+Six representative municipalities with their departmental and national context.
+
+```{r define-wt-helpers}
+#| echo: false
+
+# Helper functions for Wikitable formatting (defined here for use in municipality tables)
+format_change_wt <- function(x) {
+  if(is.na(x)) return("-")
+  if(x > 0) {
+    sprintf("{{Increase}} +%.0f%%", x)
+  } else if(x < 0) {
+    sprintf("{{Decrease}} %.0f%%", x)
+  } else {
+    "0.0%"
+  }
+}
+
+wikitext_shade <- function(value_pct, color) {
+  if(is.na(value_pct)) return("-")
+  sprintf("{{shade|color=%s|%s}}", color, value_pct)
+}
+```
+
+```{r render-muni-wikitables}
+#| echo: false
+#| results: asis
+
+# For each municipality, create a Wikitable export
+for (i in seq_along(muni_list)) {
+  muni_ctx <- create_muni_context_table(muni_list[[i]]$muni, muni_list[[i]]$dept, muni_list[[i]]$ine_code)
+  
+  # Build Wikitable rows with same formatting as departmental table
+  wikitable_rows_muni <- muni_ctx |>
+    mutate(
+      p_12_wt = map_chr(poverty_pct_2012, ~wikitext_shade(sprintf("%.0f%%", .), "red")),
+      p_24_wt = map_chr(poverty_pct_2024, ~wikitext_shade(sprintf("%.0f%%", .), "red")),
+      p_ch_wt = map_chr(poverty_change, format_change_wt),
+      w_01_wt = map_chr(water_lack_2001, ~wikitext_shade(sprintf("%.0f%%", .), "blue")),
+      w_24_wt = map_chr(water_lack_2024, ~wikitext_shade(sprintf("%.0f%%", .), "blue")),
+      w_ch_wt = map_chr(water_change, format_change_wt),
+      s_01_wt = map_chr(sanitation_lack_2001, ~wikitext_shade(sprintf("%.0f%%", .), "green")),
+      s_24_wt = map_chr(sanitation_lack_2024, ~wikitext_shade(sprintf("%.0f%%", .), "green")),
+      s_ch_wt = map_chr(sanitation_change, format_change_wt)
+    ) |>
+    select(
+      location,
+      p_12_wt, p_24_wt, p_ch_wt,
+      w_01_wt, w_24_wt, w_ch_wt,
+      s_01_wt, s_24_wt, s_ch_wt
+    )
+  
+  # Build Wikitable header
+  muni_wt_header <- paste0(
+    "{| class=\"wikitable\"\n",
+    "|+ ", muni_list[[i]]$muni, " Municipality: Poverty and Basic Service Access\n",
+    "|-\n",
+    "! align=left | Location !! colspan=3 | Poverty (NBI) !! colspan=3 | Lack of Water Access !! colspan=3 | Lack of Sanitation Access\n",
+    "|-\n",
+    "! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change\n"
+  )
+  
+  # Build rows
+  muni_wt_rows <- wikitable_rows_muni |>
+    mutate(
+      row_num = row_number(),
+      # Bold municipality name; add " Department" to department row if names match
+      dept_display = case_when(
+        row_num == 1 ~ paste0("'''", location, "'''"),  # First row: municipality in bold
+        row_num == 2 & location == muni_list[[i]]$muni ~ paste0(location, " Department"),  # Second row: dept with " Department" if it matches muni name
+        TRUE ~ location
+      )
+    ) |>
+    glue::glue_data("|-\n| align=left | {dept_display} || {p_12_wt} || {p_24_wt} || {p_ch_wt} || {w_01_wt} || {w_24_wt} || {w_ch_wt} || {s_01_wt} || {s_24_wt} || {s_ch_wt}")
+  
+  # Source row
+  source_text <- "NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census"
+  source_refs <- '{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}'
+  source_line <- paste0('|-\n|colspan="10"|', source_text, '<ref>', source_refs, '</ref>')
+  
+  muni_wt_footer <- paste0("\n", source_line, "\n|}")
+  
+  wikitable_muni_text <- paste0(muni_wt_header, paste(muni_wt_rows, collapse = "\n"), muni_wt_footer)
+  
+  # Display with copy button
+  cat("\n### ", muni_list[[i]]$muni, "\n\n")
+  
+  print(
+    tagList(
+      copy_to_clipboard_button_wt(wikitable_muni_text, "Copy Wikitable to Clipboard"),
+      tags$pre(
+        style = "background-color: #f6f8fa; padding: 12px; border-radius: 6px; overflow-x: auto; max-height: 300px;",
+        wikitable_muni_text
+      )
+    )
+  )
+  cat("\n")
+}
+
+```
+
+## Wikitable Export
+
+Export this table to Wikipedia in Wikitext format with color-coded percentages.
+
+```{r render-wikitable}
+#| echo: false
+
+# Build Wikitable rows with shade-colored percentages and change templates
+wikitable_rows <- final_table |>
+  mutate(
+    p_12_wt = map_chr(poverty_pct_2012, ~wikitext_shade(format_pct(.), "red")),
+    p_24_wt = map_chr(poverty_pct_2024, ~wikitext_shade(format_pct(.), "red")),
+    p_ch_wt = map_chr(poverty_change, format_change_wt),
+    w_01_wt = map_chr(water_lack_2001, ~wikitext_shade(format_pct(.), "blue")),
+    w_24_wt = map_chr(water_lack_2024, ~wikitext_shade(format_pct(.), "blue")),
+    w_ch_wt = map_chr(water_change, format_change_wt),
+    s_01_wt = map_chr(sanitation_lack_2001, ~wikitext_shade(format_pct(.), "green")),
+    s_24_wt = map_chr(sanitation_lack_2024, ~wikitext_shade(format_pct(.), "green")),
+    s_ch_wt = map_chr(sanitation_change, format_change_wt)
+  ) |>
+  select(
+    department,
+    p_12_wt, p_24_wt, p_ch_wt,
+    w_01_wt, w_24_wt, w_ch_wt,
+    s_01_wt, s_24_wt, s_ch_wt
+  ) 
+
+# Build the Wikitable string with align=right
+wt_header <- "{| class=\"wikitable\" align=right\n|+ Comparative Trends in Poverty and Basic Service Access by Department\n|-\n! align=left | Department !! colspan=3 | Poverty (NBI) !! colspan=3 | Lack of Water Access !! colspan=3 | Lack of Sanitation Access\n|-\n! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change\n"
+
+wt_rows <- wikitable_rows |>
+  mutate(
+    dept_display = if_else(department == "Bolivia", paste0("'''", department, "'''"), department)
+  ) |>
+  glue::glue_data("|-\n| align=left | {dept_display} || {p_12_wt} || {p_24_wt} || {p_ch_wt} || {w_01_wt} || {w_24_wt} || {w_ch_wt} || {s_01_wt} || {s_24_wt} || {s_ch_wt}")
+
+# Source row with citations
+source_text <- "NBI indicates a Unsatisfied Basic Needs definition for poverty.  '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census"
+source_refs <- '{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}'
+source_line <- paste0('|-\n|colspan="10"|', source_text, '<ref>', source_refs, '</ref>')
+
+wt_footer <- paste0("\n", source_line, "\n|}")
+
+wikitable_text <- paste0(wt_header, paste(wt_rows, collapse = "\n"), wt_footer)
+
+# Display with copy button
+tagList(
+  h3("Copy WikiText Below"),
+  copy_to_clipboard_button_wt(wikitable_text, "Copy Wikitable to Clipboard"),
+  tags$pre(
+    style = "background-color: #f6f8fa; padding: 12px; border-radius: 6px; overflow-x: auto; max-height: 400px;",
+    wikitable_text
+  )
+)
+
+```

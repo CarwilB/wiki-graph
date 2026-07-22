@@ -120,9 +120,12 @@ library(dplyr)
 library(purrr)
 library(htmltools)
 library(english)
+library(kableExtra)
+library(glue)
 
 source("src/wikipedia-tools.R")
 source("src/gh-copy-assets.R")
+source("src/generate-muni-poverty-tables.R")
 
 dir.create(here::here("output", "bolivia-municipality-wikitext"), recursive = TRUE, showWarnings = FALSE)
 
@@ -194,6 +197,81 @@ lang_data    <- readRDS(here::here("data", "cpv2024", "idiomas_hablados_muni.rds
 auto_data    <- readRDS(here::here("data", "cpv2024", "autoidentificacion_municipio.rds"))
 pop_age_muni <- readRDS(here::here("data", "cpv2024", "population_age_municipality.rds"))
 dept_capital_ids <- paste0(sprintf("%02d", 1:9), "0101")
+
+# Load poverty and basic services data for generate_poverty_service_tables()
+poverty_nbi_muni <- readRDS(here::here("data", "cpv2024", "poverty_nbi_muni.rds"))
+improved_water_muni <- readRDS(here::here("data", "cpv2024", "improved_water_muni.rds"))
+improved_sanitation_muni <- readRDS(here::here("data", "cpv2024", "improved_sanitation_muni.rds"))
+
+# Build departmental summary table (required by generate_poverty_service_tables)
+final_table <- bind_rows(
+  poverty_nbi_muni |>
+    filter(is.na(area) | area == "") |>
+    group_by(department) |>
+    summarise(
+      poor_2012 = sum(poor_total_2012, na.rm = TRUE),
+      poor_2024 = sum(poor_total_2024, na.rm = TRUE),
+      pop_2012 = sum(ref_pop_nbi_2012, na.rm = TRUE),
+      pop_2024 = sum(ref_pop_nbi_2024, na.rm = TRUE),
+      .groups = "drop"
+    ) |>
+    mutate(
+      poverty_pct_2012 = (poor_2012 / pop_2012) * 100,
+      poverty_pct_2024 = (poor_2024 / pop_2024) * 100,
+      poverty_change = poverty_pct_2024 - poverty_pct_2012
+    ) |>
+    left_join(
+      improved_water_muni |>
+        filter(is.na(area) | area == "") |>
+        group_by(department) |>
+        summarise(
+          water_lack_2001 = weighted.mean(pct_unimproved_water_2001, n_total_2001, na.rm = TRUE),
+          water_lack_2024 = weighted.mean(pct_unimproved_water_2024, n_total_2024, na.rm = TRUE),
+          .groups = "drop"
+        ) |>
+        mutate(water_change = water_lack_2024 - water_lack_2001),
+      by = "department"
+    ) |>
+    left_join(
+      improved_sanitation_muni |>
+        filter(is.na(area) | area == "") |>
+        group_by(department) |>
+        summarise(
+          sanitation_lack_2001 = weighted.mean(pct_unimproved_sanitation_2001, n_total_2001, na.rm = TRUE),
+          sanitation_lack_2024 = weighted.mean(pct_unimproved_sanitation_2024, n_total_2024, na.rm = TRUE),
+          .groups = "drop"
+        ) |>
+        mutate(sanitation_change = sanitation_lack_2024 - sanitation_lack_2001),
+      by = "department"
+    ) |>
+    select(department, poverty_pct_2012, poverty_pct_2024, poverty_change, 
+           water_lack_2001, water_lack_2024, water_change, 
+           sanitation_lack_2001, sanitation_lack_2024, sanitation_change),
+  # Add Bolivia national totals
+  tibble(
+    department = "Bolivia",
+    poverty_pct_2012 = (sum(poverty_nbi_muni$poor_total_2012, na.rm = TRUE) / 
+                        sum(poverty_nbi_muni$ref_pop_nbi_2012, na.rm = TRUE)) * 100,
+    poverty_pct_2024 = (sum(poverty_nbi_muni$poor_total_2024, na.rm = TRUE) / 
+                        sum(poverty_nbi_muni$ref_pop_nbi_2024, na.rm = TRUE)) * 100,
+    water_lack_2001 = weighted.mean(improved_water_muni$pct_unimproved_water_2001, 
+                                    improved_water_muni$n_total_2001, na.rm = TRUE),
+    water_lack_2024 = weighted.mean(improved_water_muni$pct_unimproved_water_2024, 
+                                    improved_water_muni$n_total_2024, na.rm = TRUE),
+    sanitation_lack_2001 = weighted.mean(improved_sanitation_muni$pct_unimproved_sanitation_2001, 
+                                         improved_sanitation_muni$n_total_2001, na.rm = TRUE),
+    sanitation_lack_2024 = weighted.mean(improved_sanitation_muni$pct_unimproved_sanitation_2024, 
+                                         improved_sanitation_muni$n_total_2024, na.rm = TRUE)
+  ) |>
+    mutate(
+      poverty_change = poverty_pct_2024 - poverty_pct_2012,
+      water_change = water_lack_2024 - water_lack_2001,
+      sanitation_change = sanitation_lack_2024 - sanitation_lack_2001
+    ) |>
+    select(department, poverty_pct_2012, poverty_pct_2024, poverty_change, 
+           water_lack_2001, water_lack_2024, water_change, 
+           sanitation_lack_2001, sanitation_lack_2024, sanitation_change)
+)
 
 # Wikipedia presence: which municipalities have an English article?
 wiki_presence <- bo_municipality_wiki_presence$data |>
@@ -928,6 +1006,34 @@ muni_block <- function(id_muni, muni_name, department, concejo) {
             )
           )
         }
+      },
+      # Poverty and basic services section
+      {
+        poverty_tables <- generate_poverty_service_tables(
+          ine_code = id_muni,
+          muni_display_name = muni_name,
+          dept_display_name = department
+        )
+        
+        tags$div(
+          style = "margin-top:16px; padding-top:12px; border-top:1px solid #e1e4e8;",
+          tags$h4("Poverty and Basic Services", style = "margin:0 0 8px 0;"),
+          tags$div(
+            style = "display:flex; gap:14px; align-items:flex-start; font-size:12px;",
+            tags$div(
+              style = "flex:1 1 0; min-width:0; overflow-x:auto;",
+              HTML(as.character(poverty_tables$kable))
+            ),
+            tags$div(
+              style = "flex:1 1 0; min-width:0;",
+              wikitext_block(
+                id      = paste0("poverty_en_", id_muni),
+                label   = "Copy poverty table",
+                content = poverty_tables$wikitable
+              )
+            )
+          )
+        )
       }
     ),
     tags$hr(style = "border:none; border-top:1px solid #e1e4e8; margin:4px 0;")

@@ -195,7 +195,7 @@ key_freq |>
 A few observations stand out:
 
 - **Universal fields** (≥185 of 187 articles): `settlement_type`, `subdivision_type`/`subdivision_name` (country, department, province), and `official_name`. These form the reliable core of the infobox data.
-- **Near-universal but slightly less complete**: `unit_pref`, `utc_offset`, `timezone`, `pushpin_map_caption`, and `seat_type` — present in ~178 articles, suggesting a handful of older or stub articles lack them.
+- **Near-universal but slightly less complete**: `unit_pref`, `utc_offset`, `timezone`, `pushpin_map_caption`, and `seat_type` — present in \~178 articles, suggesting a handful of older or stub articles lack them.
 - **Geographic/demographic fields with partial coverage**: `coordinates` (157), `population_total` (153), `leader_name` (92), `elevation_m` (79), `image_skyline` (78), `area_total_km2` (73).
 - **Sparse fields**: `established_date` (10), `population_density_km2` (16), and `native_name` (33) are present in only a minority of articles. Population density in particular appears to be rarely maintained.
 
@@ -290,12 +290,9 @@ wd_only |>
 
 # 6. Infobox completeness maps
 
-These choropleths use the GADM boundary file and the same join infrastructure as
-[`bolivia-wikipedia-completeness.qmd`](bolivia-wikipedia-completeness.qmd),
-linking `muni_result` to spatial boundaries via Wikidata QIDs and INE codes.
+These choropleths use the GADM boundary file and the same join infrastructure as [`bolivia-wikipedia-completeness.qmd`](bolivia-wikipedia-completeness.qmd), linking `muni_result` to spatial boundaries via Wikidata QIDs and INE codes.
 
-White = no English Wikipedia article; grey = has article but field absent or
-not parseable; colors = field value as described per map.
+White = no English Wikipedia article; grey = has article but field absent or not parseable; colors = field value as described per map.
 
 ```{r map-setup}
 library(sf)
@@ -358,8 +355,7 @@ theme_bolivia_map <- function() {
 
 ## 6a. Number of infobox fields filled
 
-White = no Wikipedia article; grey = article exists but no infobox found.
-Color runs from pale (few fields filled) to dark blue (many fields).
+White = no Wikipedia article; grey = article exists but no infobox found. Color runs from pale (few fields filled) to dark blue (many fields).
 
 ```{r map-n-fields}
 #| fig-height: 6
@@ -421,10 +417,7 @@ ggplot(infobox_map_data) +
 
 ## 6c. Mayor election year
 
-The year in parentheses after the mayor's name in `leader_name` indicates when
-that person's term began. Most articles reflect the **2007** Bolivian municipal
-elections and have not been updated since. Bolivia's most recent municipal
-elections were in **2021**; national elections in **2026**.
+The year in parentheses after the mayor's name in `leader_name` indicates when that person's term began. Most articles reflect the **2007** Bolivian municipal elections and have not been updated since. Bolivia's most recent municipal elections were in **2021**; national elections in **2026**.
 
 ```{r map-leader-year}
 #| fig-height: 6
