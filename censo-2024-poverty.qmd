@@ -1,0 +1,508 @@
+---
+title: "Bolivia 2024 Census: Basic Services and Poverty (NBI) by Geography"
+format: 
+  html:
+    code-tools: true
+---
+
+This script ingests published tabulated data from the Bolivian Instituto Nacional de Estadística ([website](https://www.ine.gob.bo/)|Wikipedia) based on the 2024 Census (Censo de Población y Vivienda 2024). It covers two thematic workbooks from the [complete download](https://cpv2024.ine.gob.bo/index.php/tabulados-sobre-la-tematica-pobreza/):
+
+- **SERVICIOS BÁSICOS.xlsx** — Access to improved water (tab 7) and improved sanitation (tab 11)
+- **POBREZA.xlsx** — Population by NBI poverty condition (tab 1) and NBI component indicators (tab 3)
+
+All four tabs share the same geographic row structure as `POBLACION.xlsx` (1398 data rows: 3 country + 27 department + 339 province + 1029 municipality, each with total/Urbana/Rural triples). Data begins at Excel row 8 after a 3-row header block (rows 4–6) and a blank separator (row 7). Column A contains an index link and is dropped automatically by `read_excel`.
+
+See `censo-2024-population.qmd` for the companion population and ethnic identification imports.
+
+```{r setup}
+#| message: false
+library(readxl)
+library(tidyverse)
+library(kableExtra)
+```
+
+## Shared infrastructure
+
+```{r file-paths}
+path_sb  <- "../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/SERVICIOS BÁSICOS.xlsx"
+path_pob <- "../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/POBREZA.xlsx"
+```
+
+```{r crosswalk-tables}
+muni_id_lookup_table <- readRDS("data/muni_id_lookup_table.rds")
+crosswalk_muni <- muni_id_lookup_table |>
+  select(muni_cpv2024, department, id_muni) |>
+  rename(ine_code = id_muni)
+
+prov_id_lookup_table <- readRDS("data/prov_id_lookup_table.rds")
+crosswalk_prov <- prov_id_lookup_table |>
+  select(province_cpv2024, department, id_prov) |>
+  rename(ine_code = id_prov)
+
+dep_crosswalk <- crosswalk_prov |>
+  mutate(id_dep = str_extract(ine_code, "^\\d{2}")) |>
+  select(-province_cpv2024, -ine_code) |>
+  distinct()
+```
+
+```{r ine-code-helpers}
+add_ine_code_muni <- function(df) {
+  df |>
+    left_join(crosswalk_muni, by = c("municipio" = "muni_cpv2024",
+                                     "departamento" = "department")) |>
+    relocate(ine_code, municipio, provincia, departamento, area, nivel)
+}
+
+add_ine_code_prov <- function(df) {
+  df |>
+    left_join(crosswalk_prov, by = c("provincia" = "province_cpv2024",
+                                     "departamento" = "department")) |>
+    relocate(ine_code, provincia, departamento, area, nivel) |>
+    select(-municipio)
+}
+
+add_ine_code_dept <- function(df) {
+  df |>
+    left_join(dep_crosswalk, by = c("departamento" = "department")) |>
+    relocate(id_dep, departamento, area, nivel) |>
+    select(-provincia, -municipio)
+}
+```
+
+```{r disaggregate-helpers}
+subdivisions <- c("Urbana", "Rural")
+
+disaggregate_geo <- function(raw_df) {
+  drop_tim <- function(df) filter(df, provincia != "Territorio Indígena Multiétnico")
+
+  list(
+    raw     = raw_df,
+    country = filter(raw_df, nivel == "País"),
+    dept           = filter(raw_df, nivel == "Departamento", !area %in% subdivisions),
+    dept_urb_rural = filter(raw_df, nivel == "Departamento",  area %in% subdivisions),
+    prov           = filter(raw_df, nivel == "Provincia",     !area %in% subdivisions) |> drop_tim(),
+    prov_urb_rural = filter(raw_df, nivel == "Provincia",      area %in% subdivisions) |> drop_tim(),
+    muni           = filter(raw_df, nivel == "Municipio/TIOC", !area %in% subdivisions),
+    muni_urb_rural = filter(raw_df, nivel == "Municipio/TIOC",  area %in% subdivisions)
+  )
+}
+
+attach_ine_codes <- function(lst) {
+  for (key in names(lst)) {
+    if (!is.data.frame(lst[[key]])) next
+    if (startsWith(key, "dept")) lst[[key]] <- add_ine_code_dept(lst[[key]])
+    if (startsWith(key, "prov")) lst[[key]] <- add_ine_code_prov(lst[[key]])
+    if (startsWith(key, "muni")) lst[[key]] <- add_ine_code_muni(lst[[key]])
+  }
+  lst
+}
+
+save_tab <- function(lst, stem, dir = "data/cpv2024/") {
+  for (key in names(lst)) {
+    if (!is.data.frame(lst[[key]])) next
+    saveRDS(lst[[key]], file.path(dir, paste0(stem, "_", key, ".rds")))
+  }
+  invisible(lst)
+}
+```
+
+### POBREZA normalization
+
+The POBREZA workbook uses slightly different conventions than SERVICIOS BÁSICOS and POBLACION: `nivel` values are `"Pais"` (no accent) and `"Municipio"` (no `/TIOC`), and department names are uppercase. This function normalizes to match the standard labels used across all other census imports.
+
+```{r normalize-pobreza}
+# Title case for department names: "CHUQUISACA" → "Chuquisaca", "LA PAZ" → "La Paz"
+title_case_dept <- function(x) {
+  str_to_title(x) |>
+    str_replace("^La Paz$", "La Paz") |>
+    str_replace("^Santa Cruz$", "Santa Cruz")
+}
+
+normalize_pobreza <- function(df) {
+  df |>
+    mutate(
+      nivel = case_when(
+        nivel == "Pais"      ~ "País",
+        nivel == "Municipio" ~ "Municipio/TIOC",
+        .default = nivel
+      ),
+      departamento = if_else(!is.na(departamento),
+                             title_case_dept(departamento),
+                             departamento),
+      # Total-row area values carry the entity name in uppercase
+      area = if_else(
+        !area %in% c("Urbana", "Rural") & !is.na(area),
+        title_case_dept(area),
+        area
+      )
+    )
+}
+```
+
+```{r english-var-names}
+# Shared geo rename (Spanish → English); used by all tab-specific functions below
+english_geo_fix <- function(df) {
+  df |> rename(
+    department   = any_of("departamento"),
+    province     = any_of("provincia"),
+    municipality = any_of("municipio"),
+    level        = any_of("nivel")
+  )
+}
+
+# Tab 7: agua_mejorado / agua_no_mejorado → improved_water / unimproved_water
+english_agua_fix <- function(df) {
+  english_geo_fix(df) |>
+    # rename "no" variant first to avoid partial match by the plain variant
+    rename_with(~ str_replace(., "agua_no_mejorado", "unimproved_water")) |>
+    rename_with(~ str_replace(., "agua_mejorado",    "improved_water"))
+}
+
+# Tab 11: saneamiento_mejorado / saneamiento_no_mejorado → improved_sanitation / unimproved_sanitation
+english_saneamiento_fix <- function(df) {
+  english_geo_fix(df) |>
+    rename_with(~ str_replace(., "saneamiento_no_mejorado", "unimproved_sanitation")) |>
+    rename_with(~ str_replace(., "saneamiento_mejorado",    "improved_sanitation"))
+}
+
+# Tab 1: NBI poverty condition
+english_nbi_fix <- function(df) {
+  english_geo_fix(df) |>
+    rename(
+      ref_pop_nbi_2012            = any_of("pob_ref_nbi_2012"),
+      non_poor_total_2012         = any_of("no_pobre_total_2012"),
+      non_poor_satisfied_p1_2012  = any_of("no_pobre_nbs_p1_2012"),
+      non_poor_threshold_p2_2012  = any_of("no_pobre_umbral_p2_2012"),
+      poor_total_2012             = any_of("pobre_total_2012"),
+      poor_moderate_p3_2012       = any_of("pobre_moderada_p3_2012"),
+      poor_indigent_p4_2012       = any_of("pobre_indigente_p4_2012"),
+      poor_marginal_p5_2012       = any_of("pobre_marginal_p5_2012"),
+      ref_pop_nbi_2024            = any_of("pob_ref_nbi_2024"),
+      non_poor_total_2024         = any_of("no_pobre_total_2024"),
+      non_poor_satisfied_p1_2024  = any_of("no_pobre_nbs_p1_2024"),
+      non_poor_threshold_p2_2024  = any_of("no_pobre_umbral_p2_2024"),
+      poor_total_2024             = any_of("pobre_total_2024"),
+      poor_moderate_p3_2024       = any_of("pobre_moderada_p3_2024"),
+      poor_indigent_p4_2024       = any_of("pobre_indigente_p4_2024"),
+      poor_marginal_p5_2024       = any_of("pobre_marginal_p5_2024")
+    )
+}
+
+# Tab 3: NBI component indicators
+english_comp_fix <- function(df) {
+  english_geo_fix(df) |>
+    rename_with(~ str_replace_all(., c(
+      "insuf_mat_vivienda"        = "insuf_housing_materials",
+      "insuf_esp_vivienda"        = "insuf_housing_space",
+      "insuf_agua_saneamiento"    = "insuf_water_sanitation",
+      "insuf_insumos_energeticos" = "insuf_energy_inputs",
+      "insuf_educacion"           = "insuf_education",
+      "insuf_salud"               = "insuf_health"
+    )))
+}
+```
+
+### Row-count check helper
+
+```{r check-helper}
+check_row_counts <- function(lst) {
+  cat("Raw rows:               ", nrow(lst$raw),            "\n")
+  cat("Country rows:           ", nrow(lst$country),        "\n")
+  cat("Dept totals:            ", nrow(lst$dept),           "\n")
+  cat("Dept urban+rural rows:  ", nrow(lst$dept_urb_rural), "\n")
+  cat("Province totals:        ", nrow(lst$prov),           "\n")
+  cat("Province urban+rural:   ", nrow(lst$prov_urb_rural), "\n")
+  cat("Municipality totals:    ", nrow(lst$muni),           "\n")
+  cat("Municipality urb+rural: ", nrow(lst$muni_urb_rural), "\n")
+}
+```
+
+---
+
+## Part 1: Improved Water Access (`SERVICIOS BÁSICOS.xlsx`, sheet 7)
+
+Source: sheet "7" of `SERVICIOS BÁSICOS.xlsx`. Population with access to an improved water source, by census year (2001, 2012, 2024). The header spans three rows (Excel rows 4–6):
+
+- **Row 4**: category blocks — `NÚMERO DE PERSONAS` (9 cols) and `DISTRIBUCIÓN PORCENTUAL` (6 cols)
+- **Row 5**: year (2001, 2012, 2024)
+- **Row 6**: measure type (Total, Tiene, No tiene)
+
+The percentage block omits "Total" columns since Tiene + No tiene = 100%.
+
+```{r load-agua}
+#| message: false
+geo_cols <- c("row_num", "nivel", "departamento", "provincia", "municipio", "area")
+
+agua_data_cols <- c(
+  "n_total_2001", "n_agua_mejorado_2001", "n_agua_no_mejorado_2001",
+  "n_total_2012", "n_agua_mejorado_2012", "n_agua_no_mejorado_2012",
+  "n_total_2024", "n_agua_mejorado_2024", "n_agua_no_mejorado_2024",
+  "pct_agua_mejorado_2001", "pct_agua_no_mejorado_2001",
+  "pct_agua_mejorado_2012", "pct_agua_no_mejorado_2012",
+  "pct_agua_mejorado_2024", "pct_agua_no_mejorado_2024"
+)
+
+raw_agua <- read_excel(path_sb, sheet = "7", col_names = FALSE, skip = 7)
+names(raw_agua) <- c(geo_cols, agua_data_cols)
+
+raw_agua <- raw_agua |>
+  mutate(
+    row_num = as.integer(row_num),
+    across(all_of(agua_data_cols), as.numeric)
+  ) |>
+  filter(!is.na(row_num))
+```
+
+```{r disaggregate-agua}
+agua <- raw_agua |>
+  disaggregate_geo() |>
+  attach_ine_codes()
+```
+
+### Quick checks
+
+```{r checks-agua}
+#| echo: false
+#| results: asis
+check_row_counts(agua)
+```
+
+```{r preview-agua-dept}
+agua$dept |>
+  select(departamento, n_agua_mejorado_2024, n_agua_no_mejorado_2024, pct_agua_mejorado_2024) |>
+  arrange(desc(n_agua_mejorado_2024)) |>
+  kbl(caption = "Improved water access by department, 2024") |>
+  kable_classic()
+```
+
+### Save water access outputs
+
+```{r save-agua}
+#| eval: false
+#| echo: true
+save_tab(agua, "agua_mejorada")
+
+agua_en <- lapply(agua, function(df) {
+  if (!is.data.frame(df)) return(df)
+  english_agua_fix(df)
+})
+save_tab(agua_en, "improved_water")
+```
+
+---
+
+## Part 2: Improved Sanitation (`SERVICIOS BÁSICOS.xlsx`, sheet 11)
+
+Source: sheet "11" of `SERVICIOS BÁSICOS.xlsx`. Population with access to improved sanitation. Same structure as Part 1; column names carry `saneamiento` in place of `agua`.
+
+```{r load-saneamiento}
+#| message: false
+saneamiento_data_cols <- c(
+  "n_total_2001", "n_saneamiento_mejorado_2001", "n_saneamiento_no_mejorado_2001",
+  "n_total_2012", "n_saneamiento_mejorado_2012", "n_saneamiento_no_mejorado_2012",
+  "n_total_2024", "n_saneamiento_mejorado_2024", "n_saneamiento_no_mejorado_2024",
+  "pct_saneamiento_mejorado_2001", "pct_saneamiento_no_mejorado_2001",
+  "pct_saneamiento_mejorado_2012", "pct_saneamiento_no_mejorado_2012",
+  "pct_saneamiento_mejorado_2024", "pct_saneamiento_no_mejorado_2024"
+)
+
+raw_saneamiento <- read_excel(path_sb, sheet = "11", col_names = FALSE, skip = 7)
+names(raw_saneamiento) <- c(geo_cols, saneamiento_data_cols)
+
+raw_saneamiento <- raw_saneamiento |>
+  mutate(
+    row_num = as.integer(row_num),
+    across(all_of(saneamiento_data_cols), as.numeric)
+  ) |>
+  filter(!is.na(row_num))
+```
+
+```{r disaggregate-saneamiento}
+saneamiento <- raw_saneamiento |>
+  disaggregate_geo() |>
+  attach_ine_codes()
+```
+
+### Quick checks
+
+```{r checks-saneamiento}
+#| echo: false
+#| results: asis
+check_row_counts(saneamiento)
+```
+
+```{r preview-saneamiento-dept}
+saneamiento$dept |>
+  select(departamento, n_saneamiento_mejorado_2024, n_saneamiento_no_mejorado_2024, pct_saneamiento_mejorado_2024) |>
+  arrange(desc(n_saneamiento_mejorado_2024)) |>
+  kbl(caption = "Improved sanitation by department, 2024") |>
+  kable_classic()
+```
+
+### Save sanitation outputs
+
+```{r save-saneamiento}
+#| eval: true
+#| echo: true
+save_tab(saneamiento, "saneamiento_mejorado")
+
+saneamiento_en <- lapply(saneamiento, function(df) {
+  if (!is.data.frame(df)) return(df)
+  english_saneamiento_fix(df)
+})
+save_tab(saneamiento_en, "improved_sanitation")
+```
+
+---
+
+## Part 3: NBI Poverty Condition (`POBREZA.xlsx`, sheet 1)
+
+Source: sheet "1" of `POBREZA.xlsx`. Population classified by Unsatisfied Basic Needs (NBI) condition, for 2012 and 2024. The header spans three rows (Excel rows 4–6):
+
+- **Row 4**: year (2012, 2024)
+- **Row 5**: poverty status (Población de referencia, No pobre, Pobre)
+- **Row 6**: subcategory (Total, NBS, Umbral, Moderada, Indigente, Marginal)
+
+Each year block has 8 columns: 1 reference population + 3 no-pobre subcategories + 4 pobre subcategories (including pobre total).
+
+```{r load-pobreza-nbi}
+#| message: false
+nbi_data_cols <- c(
+  "pob_ref_nbi_2012",
+  "no_pobre_total_2012", "no_pobre_nbs_p1_2012", "no_pobre_umbral_p2_2012",
+  "pobre_total_2012",    "pobre_moderada_p3_2012", "pobre_indigente_p4_2012", "pobre_marginal_p5_2012",
+  "pob_ref_nbi_2024",
+  "no_pobre_total_2024", "no_pobre_nbs_p1_2024", "no_pobre_umbral_p2_2024",
+  "pobre_total_2024",    "pobre_moderada_p3_2024", "pobre_indigente_p4_2024", "pobre_marginal_p5_2024"
+)
+
+raw_nbi <- read_excel(path_pob, sheet = "1", col_names = FALSE, skip = 7)
+names(raw_nbi) <- c(geo_cols, nbi_data_cols)
+
+raw_nbi <- raw_nbi |>
+  mutate(
+    row_num = as.integer(row_num),
+    across(all_of(nbi_data_cols), as.numeric)
+  ) |>
+  filter(!is.na(row_num)) |>
+  normalize_pobreza()
+```
+
+```{r disaggregate-pobreza-nbi}
+nbi <- raw_nbi |>
+  disaggregate_geo() |>
+  attach_ine_codes()
+```
+
+### Quick checks
+
+```{r checks-pobreza-nbi}
+#| echo: false
+#| results: asis
+check_row_counts(nbi)
+```
+
+```{r preview-pobreza-nbi-dept}
+nbi$dept |>
+  select(departamento,
+         pob_ref_nbi_2024, no_pobre_total_2024, pobre_total_2024,
+         pobre_moderada_p3_2024, pobre_indigente_p4_2024, pobre_marginal_p5_2024) |>
+  arrange(desc(pob_ref_nbi_2024)) |>
+  kbl(caption = "NBI poverty condition by department, 2024") |>
+  kable_classic()
+```
+
+### Save NBI poverty outputs
+
+```{r save-pobreza-nbi}
+#| eval: false
+#| echo: true
+save_tab(nbi, "pobreza_nbi")
+
+nbi_en <- lapply(nbi, function(df) {
+  if (!is.data.frame(df)) return(df)
+  english_nbi_fix(df)
+})
+save_tab(nbi_en, "poverty_nbi")
+```
+
+---
+
+## Part 4: NBI Component Indicators (`POBREZA.xlsx`, sheet 3)
+
+Source: sheet "3" of `POBREZA.xlsx`. Population with each NBI component insufficiency, for 2012 and 2024. The header spans three rows (Excel rows 4–6):
+
+- **Row 4**: year (2012, 2024)
+- **Row 5**: component group (Vivienda, Servicio e Insumos Energéticos, or standalone)
+- **Row 6**: specific component name
+
+Each year block has 6 columns — one per NBI component:
+
+1. Inadecuados Materiales de la Vivienda
+2. Insuficientes Espacios en la Vivienda
+3. Inadecuados Servicios de Agua y Saneamiento
+4. Inadecuados Insumos Energéticos
+5. Insuficiencia en educación
+6. Inadecuada atención en salud
+
+```{r load-pobreza-componentes}
+#| message: false
+comp_data_cols <- c(
+  "insuf_mat_vivienda_2012",       "insuf_esp_vivienda_2012",
+  "insuf_agua_saneamiento_2012",   "insuf_insumos_energeticos_2012",
+  "insuf_educacion_2012",          "insuf_salud_2012",
+  "insuf_mat_vivienda_2024",       "insuf_esp_vivienda_2024",
+  "insuf_agua_saneamiento_2024",   "insuf_insumos_energeticos_2024",
+  "insuf_educacion_2024",          "insuf_salud_2024"
+)
+
+raw_comp <- read_excel(path_pob, sheet = "3", col_names = FALSE, skip = 7)
+names(raw_comp) <- c(geo_cols, comp_data_cols)
+
+raw_comp <- raw_comp |>
+  mutate(
+    row_num = as.integer(row_num),
+    across(all_of(comp_data_cols), as.numeric)
+  ) |>
+  filter(!is.na(row_num)) |>
+  normalize_pobreza()
+```
+
+```{r disaggregate-pobreza-componentes}
+componentes <- raw_comp |>
+  disaggregate_geo() |>
+  attach_ine_codes()
+```
+
+### Quick checks
+
+```{r checks-pobreza-componentes}
+#| echo: false
+#| results: asis
+check_row_counts(componentes)
+```
+
+```{r preview-pobreza-componentes-dept}
+componentes$dept |>
+  select(departamento,
+         insuf_mat_vivienda_2024, insuf_esp_vivienda_2024,
+         insuf_agua_saneamiento_2024, insuf_insumos_energeticos_2024,
+         insuf_educacion_2024, insuf_salud_2024) |>
+  arrange(desc(insuf_educacion_2024)) |>
+  kbl(caption = "NBI component insufficiencies by department, 2024") |>
+  kable_classic()
+```
+
+### Save NBI component outputs
+
+```{r save-pobreza-componentes}
+#| eval: true
+#| echo: true
+save_tab(componentes, "pobreza_componentes")
+
+componentes_en <- lapply(componentes, function(df) {
+  if (!is.data.frame(df)) return(df)
+  english_comp_fix(df)
+})
+save_tab(componentes_en, "poverty_components")
+```

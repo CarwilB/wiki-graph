@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.21">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bolivia 2024 Census: Basic Services and Poverty (NBI) by Geography</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="censo-2024-poverty_files/libs/clipboard/clipboard.min.js"></script>
+<script src="censo-2024-poverty_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="censo-2024-poverty_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="censo-2024-poverty_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="censo-2024-poverty_files/libs/quarto-html/popper.min.js"></script>
+<script src="censo-2024-poverty_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="censo-2024-poverty_files/libs/quarto-html/anchor.min.js"></script>
+<link href="censo-2024-poverty_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="censo-2024-poverty_files/libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="censo-2024-poverty_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="censo-2024-poverty_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="censo-2024-poverty_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="censo-2024-poverty_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="censo-2024-poverty_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Bolivia 2024 Census: Basic Services and Poverty (NBI) by Geography</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This script ingests published tabulated data from the Bolivian Instituto Nacional de Estadística (<a href="https://www.ine.gob.bo/">website</a>|Wikipedia) based on the 2024 Census (Censo de Población y Vivienda 2024). It covers two thematic workbooks from the <a href="https://cpv2024.ine.gob.bo/index.php/tabulados-sobre-la-tematica-pobreza/">complete download</a>:</p>
+<ul>
+<li><strong>SERVICIOS BÁSICOS.xlsx</strong> — Access to improved water (tab 7) and improved sanitation (tab 11)</li>
+<li><strong>POBREZA.xlsx</strong> — Population by NBI poverty condition (tab 1) and NBI component indicators (tab 3)</li>
+</ul>
+<p>All four tabs share the same geographic row structure as <code>POBLACION.xlsx</code> (1398 data rows: 3 country + 27 department + 339 province + 1029 municipality, each with total/Urbana/Rural triples). Data begins at Excel row 8 after a 3-row header block (rows 4–6) and a blank separator (row 7). Column A contains an index link and is dropped automatically by <code>read_excel</code>.</p>
+<p>See <code>censo-2024-population.qmd</code> for the companion population and ethnic identification imports.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="shared-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="shared-infrastructure">Shared infrastructure</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>path_sb  <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/SERVICIOS BÁSICOS.xlsx"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>path_pob <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/POBREZA.xlsx"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>muni_id_lookup_table <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/muni_id_lookup_table.rds"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>crosswalk_muni <span class="ot">&lt;-</span> muni_id_lookup_table <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(muni_cpv2024, department, id_muni) <span class="sc">|&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ine_code =</span> id_muni)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>prov_id_lookup_table <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/prov_id_lookup_table.rds"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>crosswalk_prov <span class="ot">&lt;-</span> prov_id_lookup_table <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(province_cpv2024, department, id_prov) <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ine_code =</span> id_prov)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>dep_crosswalk <span class="ot">&lt;-</span> crosswalk_prov <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">id_dep =</span> <span class="fu">str_extract</span>(ine_code, <span class="st">"^</span><span class="sc">\\</span><span class="st">d{2}"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>province_cpv2024, <span class="sc">-</span>ine_code) <span class="sc">|&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>add_ine_code_muni <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(crosswalk_muni, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"municipio"</span> <span class="ot">=</span> <span class="st">"muni_cpv2024"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"departamento"</span> <span class="ot">=</span> <span class="st">"department"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(ine_code, municipio, provincia, departamento, area, nivel)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>add_ine_code_prov <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(crosswalk_prov, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"provincia"</span> <span class="ot">=</span> <span class="st">"province_cpv2024"</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"departamento"</span> <span class="ot">=</span> <span class="st">"department"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(ine_code, provincia, departamento, area, nivel) <span class="sc">|&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>municipio)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>add_ine_code_dept <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(dep_crosswalk, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"departamento"</span> <span class="ot">=</span> <span class="st">"department"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(id_dep, departamento, area, nivel) <span class="sc">|&gt;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>provincia, <span class="sc">-</span>municipio)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>subdivisions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Urbana"</span>, <span class="st">"Rural"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>disaggregate_geo <span class="ot">&lt;-</span> <span class="cf">function</span>(raw_df) {</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  drop_tim <span class="ot">&lt;-</span> <span class="cf">function</span>(df) <span class="fu">filter</span>(df, provincia <span class="sc">!=</span> <span class="st">"Territorio Indígena Multiétnico"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">raw     =</span> raw_df,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">country =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"País"</span>),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">dept           =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Departamento"</span>, <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">dept_urb_rural =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Departamento"</span>,  area <span class="sc">%in%</span> subdivisions),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">prov           =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Provincia"</span>,     <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions) <span class="sc">|&gt;</span> <span class="fu">drop_tim</span>(),</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">prov_urb_rural =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Provincia"</span>,      area <span class="sc">%in%</span> subdivisions) <span class="sc">|&gt;</span> <span class="fu">drop_tim</span>(),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">muni           =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>, <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions),</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">muni_urb_rural =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>,  area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>attach_ine_codes <span class="ot">&lt;-</span> <span class="cf">function</span>(lst) {</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (key <span class="cf">in</span> <span class="fu">names</span>(lst)) {</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(lst[[key]])) <span class="cf">next</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">startsWith</span>(key, <span class="st">"dept"</span>)) lst[[key]] <span class="ot">&lt;-</span> <span class="fu">add_ine_code_dept</span>(lst[[key]])</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">startsWith</span>(key, <span class="st">"prov"</span>)) lst[[key]] <span class="ot">&lt;-</span> <span class="fu">add_ine_code_prov</span>(lst[[key]])</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">startsWith</span>(key, <span class="st">"muni"</span>)) lst[[key]] <span class="ot">&lt;-</span> <span class="fu">add_ine_code_muni</span>(lst[[key]])</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  lst</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>save_tab <span class="ot">&lt;-</span> <span class="cf">function</span>(lst, stem, <span class="at">dir =</span> <span class="st">"data/cpv2024/"</span>) {</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (key <span class="cf">in</span> <span class="fu">names</span>(lst)) {</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(lst[[key]])) <span class="cf">next</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">saveRDS</span>(lst[[key]], <span class="fu">file.path</span>(dir, <span class="fu">paste0</span>(stem, <span class="st">"_"</span>, key, <span class="st">".rds"</span>)))</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">invisible</span>(lst)</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="pobreza-normalization" class="level3">
+<h3 class="anchored" data-anchor-id="pobreza-normalization">POBREZA normalization</h3>
+<p>The POBREZA workbook uses slightly different conventions than SERVICIOS BÁSICOS and POBLACION: <code>nivel</code> values are <code>"Pais"</code> (no accent) and <code>"Municipio"</code> (no <code>/TIOC</code>), and department names are uppercase. This function normalizes to match the standard labels used across all other census imports.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Title case for department names: "CHUQUISACA" → "Chuquisaca", "LA PAZ" → "La Paz"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>title_case_dept <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_to_title</span>(x) <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace</span>(<span class="st">"^La Paz$"</span>, <span class="st">"La Paz"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace</span>(<span class="st">"^Santa Cruz$"</span>, <span class="st">"Santa Cruz"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>normalize_pobreza <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">nivel =</span> <span class="fu">case_when</span>(</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        nivel <span class="sc">==</span> <span class="st">"Pais"</span>      <span class="sc">~</span> <span class="st">"País"</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        nivel <span class="sc">==</span> <span class="st">"Municipio"</span> <span class="sc">~</span> <span class="st">"Municipio/TIOC"</span>,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">.default =</span> nivel</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">departamento =</span> <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(departamento),</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>                             <span class="fu">title_case_dept</span>(departamento),</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>                             departamento),</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Total-row area values carry the entity name in uppercase</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">area =</span> <span class="fu">if_else</span>(</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span>area <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Urbana"</span>, <span class="st">"Rural"</span>) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(area),</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        <span class="fu">title_case_dept</span>(area),</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>        area</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Shared geo rename (Spanish → English); used by all tab-specific functions below</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>english_geo_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span> <span class="fu">rename</span>(</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">department   =</span> <span class="fu">any_of</span>(<span class="st">"departamento"</span>),</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">province     =</span> <span class="fu">any_of</span>(<span class="st">"provincia"</span>),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">municipality =</span> <span class="fu">any_of</span>(<span class="st">"municipio"</span>),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">level        =</span> <span class="fu">any_of</span>(<span class="st">"nivel"</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 7: agua_mejorado / agua_no_mejorado → improved_water / unimproved_water</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>english_agua_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># rename "no" variant first to avoid partial match by the plain variant</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"agua_no_mejorado"</span>, <span class="st">"unimproved_water"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"agua_mejorado"</span>,    <span class="st">"improved_water"</span>))</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 11: saneamiento_mejorado / saneamiento_no_mejorado → improved_sanitation / unimproved_sanitation</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>english_saneamiento_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"saneamiento_no_mejorado"</span>, <span class="st">"unimproved_sanitation"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"saneamiento_mejorado"</span>,    <span class="st">"improved_sanitation"</span>))</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 1: NBI poverty condition</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>english_nbi_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">ref_pop_nbi_2012            =</span> <span class="fu">any_of</span>(<span class="st">"pob_ref_nbi_2012"</span>),</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_total_2012         =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_total_2012"</span>),</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_satisfied_p1_2012  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_nbs_p1_2012"</span>),</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_threshold_p2_2012  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_umbral_p2_2012"</span>),</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_total_2012             =</span> <span class="fu">any_of</span>(<span class="st">"pobre_total_2012"</span>),</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_moderate_p3_2012       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_moderada_p3_2012"</span>),</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_indigent_p4_2012       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_indigente_p4_2012"</span>),</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_marginal_p5_2012       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_marginal_p5_2012"</span>),</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>      <span class="at">ref_pop_nbi_2024            =</span> <span class="fu">any_of</span>(<span class="st">"pob_ref_nbi_2024"</span>),</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_total_2024         =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_total_2024"</span>),</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_satisfied_p1_2024  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_nbs_p1_2024"</span>),</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_threshold_p2_2024  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_umbral_p2_2024"</span>),</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_total_2024             =</span> <span class="fu">any_of</span>(<span class="st">"pobre_total_2024"</span>),</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_moderate_p3_2024       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_moderada_p3_2024"</span>),</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_indigent_p4_2024       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_indigente_p4_2024"</span>),</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_marginal_p5_2024       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_marginal_p5_2024"</span>)</span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 3: NBI component indicators</span></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>english_comp_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace_all</span>(., <span class="fu">c</span>(</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_mat_vivienda"</span>        <span class="ot">=</span> <span class="st">"insuf_housing_materials"</span>,</span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_esp_vivienda"</span>        <span class="ot">=</span> <span class="st">"insuf_housing_space"</span>,</span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_agua_saneamiento"</span>    <span class="ot">=</span> <span class="st">"insuf_water_sanitation"</span>,</span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_insumos_energeticos"</span> <span class="ot">=</span> <span class="st">"insuf_energy_inputs"</span>,</span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_educacion"</span>           <span class="ot">=</span> <span class="st">"insuf_education"</span>,</span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_salud"</span>               <span class="ot">=</span> <span class="st">"insuf_health"</span></span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>    )))</span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="row-count-check-helper" class="level3">
+<h3 class="anchored" data-anchor-id="row-count-check-helper">Row-count check helper</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>check_row_counts <span class="ot">&lt;-</span> <span class="cf">function</span>(lst) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Raw rows:               "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>raw),            <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Country rows:           "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>country),        <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Dept totals:            "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>dept),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Dept urban+rural rows:  "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>dept_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Province totals:        "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>prov),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Province urban+rural:   "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>prov_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Municipality totals:    "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>muni),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Municipality urb+rural: "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>muni_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-1-improved-water-access-servicios-básicos.xlsx-sheet-7" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-improved-water-access-servicios-básicos.xlsx-sheet-7">Part 1: Improved Water Access (<code>SERVICIOS BÁSICOS.xlsx</code>, sheet 7)</h2>
+<p>Source: sheet “7” of <code>SERVICIOS BÁSICOS.xlsx</code>. Population with access to an improved water source, by census year (2001, 2012, 2024). The header spans three rows (Excel rows 4–6):</p>
+<ul>
+<li><strong>Row 4</strong>: category blocks — <code>NÚMERO DE PERSONAS</code> (9 cols) and <code>DISTRIBUCIÓN PORCENTUAL</code> (6 cols)</li>
+<li><strong>Row 5</strong>: year (2001, 2012, 2024)</li>
+<li><strong>Row 6</strong>: measure type (Total, Tiene, No tiene)</li>
+</ul>
+<p>The percentage block omits “Total” columns since Tiene + No tiene = 100%.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>geo_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"row_num"</span>, <span class="st">"nivel"</span>, <span class="st">"departamento"</span>, <span class="st">"provincia"</span>, <span class="st">"municipio"</span>, <span class="st">"area"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>agua_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2001"</span>, <span class="st">"n_agua_mejorado_2001"</span>, <span class="st">"n_agua_no_mejorado_2001"</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2012"</span>, <span class="st">"n_agua_mejorado_2012"</span>, <span class="st">"n_agua_no_mejorado_2012"</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2024"</span>, <span class="st">"n_agua_mejorado_2024"</span>, <span class="st">"n_agua_no_mejorado_2024"</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_agua_mejorado_2001"</span>, <span class="st">"pct_agua_no_mejorado_2001"</span>,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_agua_mejorado_2012"</span>, <span class="st">"pct_agua_no_mejorado_2012"</span>,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_agua_mejorado_2024"</span>, <span class="st">"pct_agua_no_mejorado_2024"</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>raw_agua <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_sb, <span class="at">sheet =</span> <span class="st">"7"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1407 / R1407C2: got 'Fuente: Instituto Nacional
+de Estadística'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1408 / R1408C2: got 'En el Censo 2001 se
+diferenció entre hogar y vivienda particular con personas presentes.'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1409 / R1409C2: got 'En los censos 2012 y 2024
+una vivienda particular con personas presentes es un hogar.'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1410 / R1410C2: got 'Para la definición del
+indicador se sugiere revisar la Ficha Técnica.'</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_agua) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, agua_data_cols)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>raw_agua <span class="ot">&lt;-</span> raw_agua <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(agua_data_cols), as.numeric)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>agua <span class="ot">&lt;-</span> raw_agua <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="quick-checks" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checks">Quick checks</h3>
+<p>Raw rows: 1398 Country rows: 3 Dept totals: 9 Dept urban+rural rows: 18 Province totals: 112 Province urban+rural: 224 Municipality totals: 343 Municipality urb+rural: 686</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>agua<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento, n_agua_mejorado_2024, n_agua_no_mejorado_2024, pct_agua_mejorado_2024) <span class="sc">|&gt;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_agua_mejorado_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Improved water access by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="lightable-classic caption-top table table-sm table-striped small">
+<caption>Improved water access by department, 2024</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">departamento</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n_agua_mejorado_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n_agua_no_mejorado_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pct_agua_mejorado_2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Santa Cruz</td>
+<td style="text-align: right;">2946087</td>
+<td style="text-align: right;">109990</td>
+<td style="text-align: right;">96.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">La Paz</td>
+<td style="text-align: right;">2667050</td>
+<td style="text-align: right;">304194</td>
+<td style="text-align: right;">89.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cochabamba</td>
+<td style="text-align: right;">1526754</td>
+<td style="text-align: right;">455273</td>
+<td style="text-align: right;">77.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Potosí</td>
+<td style="text-align: right;">727050</td>
+<td style="text-align: right;">119188</td>
+<td style="text-align: right;">85.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Chuquisaca</td>
+<td style="text-align: right;">519752</td>
+<td style="text-align: right;">72989</td>
+<td style="text-align: right;">87.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Oruro</td>
+<td style="text-align: right;">489745</td>
+<td style="text-align: right;">70018</td>
+<td style="text-align: right;">87.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tarija</td>
+<td style="text-align: right;">484223</td>
+<td style="text-align: right;">39032</td>
+<td style="text-align: right;">92.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beni</td>
+<td style="text-align: right;">270153</td>
+<td style="text-align: right;">204438</td>
+<td style="text-align: right;">56.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pando</td>
+<td style="text-align: right;">79143</td>
+<td style="text-align: right;">49051</td>
+<td style="text-align: right;">61.7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="save-water-access-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="save-water-access-outputs">Save water access outputs</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(agua, <span class="st">"agua_mejorada"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>agua_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(agua, <span class="cf">function</span>(df) {</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_agua_fix</span>(df)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(agua_en, <span class="st">"improved_water"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-2-improved-sanitation-servicios-básicos.xlsx-sheet-11" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-improved-sanitation-servicios-básicos.xlsx-sheet-11">Part 2: Improved Sanitation (<code>SERVICIOS BÁSICOS.xlsx</code>, sheet 11)</h2>
+<p>Source: sheet “11” of <code>SERVICIOS BÁSICOS.xlsx</code>. Population with access to improved sanitation. Same structure as Part 1; column names carry <code>saneamiento</code> in place of <code>agua</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>saneamiento_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2001"</span>, <span class="st">"n_saneamiento_mejorado_2001"</span>, <span class="st">"n_saneamiento_no_mejorado_2001"</span>,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2012"</span>, <span class="st">"n_saneamiento_mejorado_2012"</span>, <span class="st">"n_saneamiento_no_mejorado_2012"</span>,</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2024"</span>, <span class="st">"n_saneamiento_mejorado_2024"</span>, <span class="st">"n_saneamiento_no_mejorado_2024"</span>,</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_saneamiento_mejorado_2001"</span>, <span class="st">"pct_saneamiento_no_mejorado_2001"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_saneamiento_mejorado_2012"</span>, <span class="st">"pct_saneamiento_no_mejorado_2012"</span>,</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_saneamiento_mejorado_2024"</span>, <span class="st">"pct_saneamiento_no_mejorado_2024"</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>raw_saneamiento <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_sb, <span class="at">sheet =</span> <span class="st">"11"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1407 / R1407C2: got 'Fuente: Instituto Nacional
+de Estadística'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1408 / R1408C2: got 'En el Censo 2001 se
+diferenció entre hogar y vivienda particular con personas presentes.'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1409 / R1409C2: got 'En los censos 2012 y 2024
+una vivienda particular con personas presentes es un hogar.'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1410 / R1410C2: got 'Para la definición del
+indicador se sugiere revisar la Ficha Técnica.'</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_saneamiento) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, saneamiento_data_cols)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>raw_saneamiento <span class="ot">&lt;-</span> raw_saneamiento <span class="sc">|&gt;</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(saneamiento_data_cols), as.numeric)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>saneamiento <span class="ot">&lt;-</span> raw_saneamiento <span class="sc">|&gt;</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="quick-checks-1" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checks-1">Quick checks</h3>
+<p>Raw rows: 1398 Country rows: 3 Dept totals: 9 Dept urban+rural rows: 18 Province totals: 112 Province urban+rural: 224 Municipality totals: 343 Municipality urb+rural: 686</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>saneamiento<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento, n_saneamiento_mejorado_2024, n_saneamiento_no_mejorado_2024, pct_saneamiento_mejorado_2024) <span class="sc">|&gt;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_saneamiento_mejorado_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Improved sanitation by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="lightable-classic caption-top table table-sm table-striped small">
+<caption>Improved sanitation by department, 2024</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">departamento</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n_saneamiento_mejorado_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n_saneamiento_no_mejorado_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pct_saneamiento_mejorado_2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">La Paz</td>
+<td style="text-align: right;">2177208</td>
+<td style="text-align: right;">794036</td>
+<td style="text-align: right;">73.27597</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Santa Cruz</td>
+<td style="text-align: right;">1798662</td>
+<td style="text-align: right;">1257415</td>
+<td style="text-align: right;">58.85526</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cochabamba</td>
+<td style="text-align: right;">1233510</td>
+<td style="text-align: right;">748517</td>
+<td style="text-align: right;">62.23477</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Potosí</td>
+<td style="text-align: right;">454681</td>
+<td style="text-align: right;">391557</td>
+<td style="text-align: right;">53.72968</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tarija</td>
+<td style="text-align: right;">405191</td>
+<td style="text-align: right;">118064</td>
+<td style="text-align: right;">77.43662</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chuquisaca</td>
+<td style="text-align: right;">401331</td>
+<td style="text-align: right;">191410</td>
+<td style="text-align: right;">67.70765</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Oruro</td>
+<td style="text-align: right;">335001</td>
+<td style="text-align: right;">224762</td>
+<td style="text-align: right;">59.84694</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beni</td>
+<td style="text-align: right;">199052</td>
+<td style="text-align: right;">275539</td>
+<td style="text-align: right;">41.94180</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pando</td>
+<td style="text-align: right;">79088</td>
+<td style="text-align: right;">49106</td>
+<td style="text-align: right;">61.69400</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="save-sanitation-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="save-sanitation-outputs">Save sanitation outputs</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(saneamiento, <span class="st">"saneamiento_mejorado"</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>saneamiento_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(saneamiento, <span class="cf">function</span>(df) {</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_saneamiento_fix</span>(df)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(saneamiento_en, <span class="st">"improved_sanitation"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-3-nbi-poverty-condition-pobreza.xlsx-sheet-1" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-nbi-poverty-condition-pobreza.xlsx-sheet-1">Part 3: NBI Poverty Condition (<code>POBREZA.xlsx</code>, sheet 1)</h2>
+<p>Source: sheet “1” of <code>POBREZA.xlsx</code>. Population classified by Unsatisfied Basic Needs (NBI) condition, for 2012 and 2024. The header spans three rows (Excel rows 4–6):</p>
+<ul>
+<li><strong>Row 4</strong>: year (2012, 2024)</li>
+<li><strong>Row 5</strong>: poverty status (Población de referencia, No pobre, Pobre)</li>
+<li><strong>Row 6</strong>: subcategory (Total, NBS, Umbral, Moderada, Indigente, Marginal)</li>
+</ul>
+<p>Each year block has 8 columns: 1 reference population + 3 no-pobre subcategories + 4 pobre subcategories (including pobre total).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>nbi_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pob_ref_nbi_2012"</span>,</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"no_pobre_total_2012"</span>, <span class="st">"no_pobre_nbs_p1_2012"</span>, <span class="st">"no_pobre_umbral_p2_2012"</span>,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pobre_total_2012"</span>,    <span class="st">"pobre_moderada_p3_2012"</span>, <span class="st">"pobre_indigente_p4_2012"</span>, <span class="st">"pobre_marginal_p5_2012"</span>,</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pob_ref_nbi_2024"</span>,</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"no_pobre_total_2024"</span>, <span class="st">"no_pobre_nbs_p1_2024"</span>, <span class="st">"no_pobre_umbral_p2_2024"</span>,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pobre_total_2024"</span>,    <span class="st">"pobre_moderada_p3_2024"</span>, <span class="st">"pobre_indigente_p4_2024"</span>, <span class="st">"pobre_marginal_p5_2024"</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>raw_nbi <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_pob, <span class="at">sheet =</span> <span class="st">"1"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1407 / R1407C2: got 'Fuente: Instituto Nacional
+de Estadística'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1408 / R1408C2: got '(1) La población de
+referencia para el NBI no incluye a la población que reside en viviendas
+colectivas, que reside habitualmente en el exterior, o aquellas que el día del
+Censo fueron empadronadas en la calle u estuvieron en tránsito y las que no
+proporcionaron información sobre alguna de las preguntas utilizadas en la
+metodología de cálculo.'</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_nbi) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, nbi_data_cols)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>raw_nbi <span class="ot">&lt;-</span> raw_nbi <span class="sc">|&gt;</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(nbi_data_cols), as.numeric)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num)) <span class="sc">|&gt;</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">normalize_pobreza</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>nbi <span class="ot">&lt;-</span> raw_nbi <span class="sc">|&gt;</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="quick-checks-2" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checks-2">Quick checks</h3>
+<p>Raw rows: 1398 Country rows: 3 Dept totals: 9 Dept urban+rural rows: 18 Province totals: 112 Province urban+rural: 224 Municipality totals: 343 Municipality urb+rural: 686</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>nbi<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento,</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>         pob_ref_nbi_2024, no_pobre_total_2024, pobre_total_2024,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>         pobre_moderada_p3_2024, pobre_indigente_p4_2024, pobre_marginal_p5_2024) <span class="sc">|&gt;</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(pob_ref_nbi_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"NBI poverty condition by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="lightable-classic caption-top table table-sm table-striped small">
+<caption>NBI poverty condition by department, 2024</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">departamento</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pob_ref_nbi_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">no_pobre_total_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pobre_total_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pobre_moderada_p3_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pobre_indigente_p4_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pobre_marginal_p5_2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Santa Cruz</td>
+<td style="text-align: right;">2989651</td>
+<td style="text-align: right;">2376459</td>
+<td style="text-align: right;">613192</td>
+<td style="text-align: right;">571546</td>
+<td style="text-align: right;">40653</td>
+<td style="text-align: right;">993</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">La Paz</td>
+<td style="text-align: right;">2914803</td>
+<td style="text-align: right;">1988432</td>
+<td style="text-align: right;">926371</td>
+<td style="text-align: right;">811107</td>
+<td style="text-align: right;">112591</td>
+<td style="text-align: right;">2673</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cochabamba</td>
+<td style="text-align: right;">1946626</td>
+<td style="text-align: right;">1364584</td>
+<td style="text-align: right;">582042</td>
+<td style="text-align: right;">499681</td>
+<td style="text-align: right;">79663</td>
+<td style="text-align: right;">2698</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Potosí</td>
+<td style="text-align: right;">815879</td>
+<td style="text-align: right;">448021</td>
+<td style="text-align: right;">367858</td>
+<td style="text-align: right;">293114</td>
+<td style="text-align: right;">71859</td>
+<td style="text-align: right;">2885</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Chuquisaca</td>
+<td style="text-align: right;">581168</td>
+<td style="text-align: right;">362361</td>
+<td style="text-align: right;">218807</td>
+<td style="text-align: right;">181325</td>
+<td style="text-align: right;">36388</td>
+<td style="text-align: right;">1094</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Oruro</td>
+<td style="text-align: right;">549763</td>
+<td style="text-align: right;">368028</td>
+<td style="text-align: right;">181735</td>
+<td style="text-align: right;">156829</td>
+<td style="text-align: right;">24388</td>
+<td style="text-align: right;">518</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tarija</td>
+<td style="text-align: right;">515726</td>
+<td style="text-align: right;">405476</td>
+<td style="text-align: right;">110250</td>
+<td style="text-align: right;">103543</td>
+<td style="text-align: right;">6617</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beni</td>
+<td style="text-align: right;">458946</td>
+<td style="text-align: right;">258505</td>
+<td style="text-align: right;">200441</td>
+<td style="text-align: right;">177775</td>
+<td style="text-align: right;">20623</td>
+<td style="text-align: right;">2043</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pando</td>
+<td style="text-align: right;">124654</td>
+<td style="text-align: right;">73737</td>
+<td style="text-align: right;">50917</td>
+<td style="text-align: right;">47719</td>
+<td style="text-align: right;">3164</td>
+<td style="text-align: right;">34</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="save-nbi-poverty-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="save-nbi-poverty-outputs">Save NBI poverty outputs</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(nbi, <span class="st">"pobreza_nbi"</span>)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>nbi_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(nbi, <span class="cf">function</span>(df) {</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_nbi_fix</span>(df)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(nbi_en, <span class="st">"poverty_nbi"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-4-nbi-component-indicators-pobreza.xlsx-sheet-3" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-nbi-component-indicators-pobreza.xlsx-sheet-3">Part 4: NBI Component Indicators (<code>POBREZA.xlsx</code>, sheet 3)</h2>
+<p>Source: sheet “3” of <code>POBREZA.xlsx</code>. Population with each NBI component insufficiency, for 2012 and 2024. The header spans three rows (Excel rows 4–6):</p>
+<ul>
+<li><strong>Row 4</strong>: year (2012, 2024)</li>
+<li><strong>Row 5</strong>: component group (Vivienda, Servicio e Insumos Energéticos, or standalone)</li>
+<li><strong>Row 6</strong>: specific component name</li>
+</ul>
+<p>Each year block has 6 columns — one per NBI component:</p>
+<ol type="1">
+<li>Inadecuados Materiales de la Vivienda</li>
+<li>Insuficientes Espacios en la Vivienda</li>
+<li>Inadecuados Servicios de Agua y Saneamiento</li>
+<li>Inadecuados Insumos Energéticos</li>
+<li>Insuficiencia en educación</li>
+<li>Inadecuada atención en salud</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>comp_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_mat_vivienda_2012"</span>,       <span class="st">"insuf_esp_vivienda_2012"</span>,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_agua_saneamiento_2012"</span>,   <span class="st">"insuf_insumos_energeticos_2012"</span>,</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_educacion_2012"</span>,          <span class="st">"insuf_salud_2012"</span>,</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_mat_vivienda_2024"</span>,       <span class="st">"insuf_esp_vivienda_2024"</span>,</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_agua_saneamiento_2024"</span>,   <span class="st">"insuf_insumos_energeticos_2024"</span>,</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_educacion_2024"</span>,          <span class="st">"insuf_salud_2024"</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>raw_comp <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_pob, <span class="at">sheet =</span> <span class="st">"3"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1407 / R1407C2: got 'Fuente: Instituto Nacional
+de Estadística'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting numeric in B1408 / R1408C2: got 'La población de referencia
+de acuerdo a la medición de pobreza por NBI no incluye a la población que
+reside en viviendas colectivas, que reside habitualmente en el exterior, o
+aquellas que el día del Censo fueron empadronadas en la calle u estuvieron en
+tránsito y las que no proporcionaron información sobre alguna de las preguntas
+utilizadas en la metodología de cálculo.'</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_comp) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, comp_data_cols)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>raw_comp <span class="ot">&lt;-</span> raw_comp <span class="sc">|&gt;</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(comp_data_cols), as.numeric)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num)) <span class="sc">|&gt;</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">normalize_pobreza</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>componentes <span class="ot">&lt;-</span> raw_comp <span class="sc">|&gt;</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="quick-checks-3" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checks-3">Quick checks</h3>
+<p>Raw rows: 1398 Country rows: 3 Dept totals: 9 Dept urban+rural rows: 18 Province totals: 112 Province urban+rural: 224 Municipality totals: 343 Municipality urb+rural: 686</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>componentes<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento,</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>         insuf_mat_vivienda_2024, insuf_esp_vivienda_2024,</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>         insuf_agua_saneamiento_2024, insuf_insumos_energeticos_2024,</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>         insuf_educacion_2024, insuf_salud_2024) <span class="sc">|&gt;</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(insuf_educacion_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"NBI component insufficiencies by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="lightable-classic caption-top table table-sm table-striped small">
+<caption>NBI component insufficiencies by department, 2024</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">departamento</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">insuf_mat_vivienda_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">insuf_esp_vivienda_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">insuf_agua_saneamiento_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">insuf_insumos_energeticos_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">insuf_educacion_2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">insuf_salud_2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Santa Cruz</td>
+<td style="text-align: right;">376708</td>
+<td style="text-align: right;">2202809</td>
+<td style="text-align: right;">539052</td>
+<td style="text-align: right;">257259</td>
+<td style="text-align: right;">847458</td>
+<td style="text-align: right;">394890</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">La Paz</td>
+<td style="text-align: right;">704366</td>
+<td style="text-align: right;">1595586</td>
+<td style="text-align: right;">830566</td>
+<td style="text-align: right;">554459</td>
+<td style="text-align: right;">768996</td>
+<td style="text-align: right;">638684</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cochabamba</td>
+<td style="text-align: right;">373690</td>
+<td style="text-align: right;">1205878</td>
+<td style="text-align: right;">613861</td>
+<td style="text-align: right;">315370</td>
+<td style="text-align: right;">656006</td>
+<td style="text-align: right;">303776</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Potosí</td>
+<td style="text-align: right;">293065</td>
+<td style="text-align: right;">481651</td>
+<td style="text-align: right;">378309</td>
+<td style="text-align: right;">305809</td>
+<td style="text-align: right;">351283</td>
+<td style="text-align: right;">143552</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Chuquisaca</td>
+<td style="text-align: right;">156371</td>
+<td style="text-align: right;">360988</td>
+<td style="text-align: right;">192835</td>
+<td style="text-align: right;">185712</td>
+<td style="text-align: right;">261980</td>
+<td style="text-align: right;">73821</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tarija</td>
+<td style="text-align: right;">47476</td>
+<td style="text-align: right;">338755</td>
+<td style="text-align: right;">88687</td>
+<td style="text-align: right;">68416</td>
+<td style="text-align: right;">198085</td>
+<td style="text-align: right;">47377</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Oruro</td>
+<td style="text-align: right;">119875</td>
+<td style="text-align: right;">333417</td>
+<td style="text-align: right;">208229</td>
+<td style="text-align: right;">113249</td>
+<td style="text-align: right;">136958</td>
+<td style="text-align: right;">87472</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beni</td>
+<td style="text-align: right;">205418</td>
+<td style="text-align: right;">374526</td>
+<td style="text-align: right;">222596</td>
+<td style="text-align: right;">115011</td>
+<td style="text-align: right;">127638</td>
+<td style="text-align: right;">56522</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pando</td>
+<td style="text-align: right;">36458</td>
+<td style="text-align: right;">101235</td>
+<td style="text-align: right;">65864</td>
+<td style="text-align: right;">33411</td>
+<td style="text-align: right;">32087</td>
+<td style="text-align: right;">10708</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="save-nbi-component-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="save-nbi-component-outputs">Save NBI component outputs</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(componentes, <span class="st">"pobreza_componentes"</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>componentes_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(componentes, <span class="cf">function</span>(df) {</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_comp_fix</span>(df)</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(componentes_en, <span class="st">"poverty_components"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<!-- -->
+
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Bolivia 2024 Census: Basic Services and Poverty (NBI) by Geography"</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>This script ingests published tabulated data from the Bolivian Instituto Nacional de Estadística (<span class="co">[</span><span class="ot">website</span><span class="co">](https://www.ine.gob.bo/)</span>|Wikipedia) based on the 2024 Census (Censo de Población y Vivienda 2024). It covers two thematic workbooks from the <span class="co">[</span><span class="ot">complete download</span><span class="co">](https://cpv2024.ine.gob.bo/index.php/tabulados-sobre-la-tematica-pobreza/)</span>:</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**SERVICIOS BÁSICOS.xlsx** — Access to improved water (tab 7) and improved sanitation (tab 11)</span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**POBREZA.xlsx** — Population by NBI poverty condition (tab 1) and NBI component indicators (tab 3)</span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>All four tabs share the same geographic row structure as <span class="in">`POBLACION.xlsx`</span> (1398 data rows: 3 country + 27 department + 339 province + 1029 municipality, each with total/Urbana/Rural triples). Data begins at Excel row 8 after a 3-row header block (rows 4–6) and a blank separator (row 7). Column A contains an index link and is dropped automatically by <span class="in">`read_excel`</span>.</span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>See <span class="in">`censo-2024-population.qmd`</span> for the companion population and ethnic identification imports.</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup}</span></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Shared infrastructure</span></span>
+<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a><span class="in">```{r file-paths}</span></span>
+<span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a>path_sb  <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/SERVICIOS BÁSICOS.xlsx"</span></span>
+<span id="cb41-28"><a href="#cb41-28" aria-hidden="true" tabindex="-1"></a>path_pob <span class="ot">&lt;-</span> <span class="st">"../bolivia-data/censo_2024_reportes/tabulados_descarga_completa/POBREZA.xlsx"</span></span>
+<span id="cb41-29"><a href="#cb41-29" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-30"><a href="#cb41-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-31"><a href="#cb41-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{r crosswalk-tables}</span></span>
+<span id="cb41-32"><a href="#cb41-32" aria-hidden="true" tabindex="-1"></a>muni_id_lookup_table <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/muni_id_lookup_table.rds"</span>)</span>
+<span id="cb41-33"><a href="#cb41-33" aria-hidden="true" tabindex="-1"></a>crosswalk_muni <span class="ot">&lt;-</span> muni_id_lookup_table <span class="sc">|&gt;</span></span>
+<span id="cb41-34"><a href="#cb41-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(muni_cpv2024, department, id_muni) <span class="sc">|&gt;</span></span>
+<span id="cb41-35"><a href="#cb41-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ine_code =</span> id_muni)</span>
+<span id="cb41-36"><a href="#cb41-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-37"><a href="#cb41-37" aria-hidden="true" tabindex="-1"></a>prov_id_lookup_table <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/prov_id_lookup_table.rds"</span>)</span>
+<span id="cb41-38"><a href="#cb41-38" aria-hidden="true" tabindex="-1"></a>crosswalk_prov <span class="ot">&lt;-</span> prov_id_lookup_table <span class="sc">|&gt;</span></span>
+<span id="cb41-39"><a href="#cb41-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(province_cpv2024, department, id_prov) <span class="sc">|&gt;</span></span>
+<span id="cb41-40"><a href="#cb41-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ine_code =</span> id_prov)</span>
+<span id="cb41-41"><a href="#cb41-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-42"><a href="#cb41-42" aria-hidden="true" tabindex="-1"></a>dep_crosswalk <span class="ot">&lt;-</span> crosswalk_prov <span class="sc">|&gt;</span></span>
+<span id="cb41-43"><a href="#cb41-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">id_dep =</span> <span class="fu">str_extract</span>(ine_code, <span class="st">"^</span><span class="sc">\\</span><span class="st">d{2}"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-44"><a href="#cb41-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>province_cpv2024, <span class="sc">-</span>ine_code) <span class="sc">|&gt;</span></span>
+<span id="cb41-45"><a href="#cb41-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span>
+<span id="cb41-46"><a href="#cb41-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-47"><a href="#cb41-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-48"><a href="#cb41-48" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ine-code-helpers}</span></span>
+<span id="cb41-49"><a href="#cb41-49" aria-hidden="true" tabindex="-1"></a>add_ine_code_muni <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-50"><a href="#cb41-50" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb41-51"><a href="#cb41-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(crosswalk_muni, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"municipio"</span> <span class="ot">=</span> <span class="st">"muni_cpv2024"</span>,</span>
+<span id="cb41-52"><a href="#cb41-52" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"departamento"</span> <span class="ot">=</span> <span class="st">"department"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-53"><a href="#cb41-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(ine_code, municipio, provincia, departamento, area, nivel)</span>
+<span id="cb41-54"><a href="#cb41-54" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-55"><a href="#cb41-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-56"><a href="#cb41-56" aria-hidden="true" tabindex="-1"></a>add_ine_code_prov <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-57"><a href="#cb41-57" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb41-58"><a href="#cb41-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(crosswalk_prov, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"provincia"</span> <span class="ot">=</span> <span class="st">"province_cpv2024"</span>,</span>
+<span id="cb41-59"><a href="#cb41-59" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"departamento"</span> <span class="ot">=</span> <span class="st">"department"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-60"><a href="#cb41-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(ine_code, provincia, departamento, area, nivel) <span class="sc">|&gt;</span></span>
+<span id="cb41-61"><a href="#cb41-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>municipio)</span>
+<span id="cb41-62"><a href="#cb41-62" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-63"><a href="#cb41-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-64"><a href="#cb41-64" aria-hidden="true" tabindex="-1"></a>add_ine_code_dept <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-65"><a href="#cb41-65" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb41-66"><a href="#cb41-66" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(dep_crosswalk, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"departamento"</span> <span class="ot">=</span> <span class="st">"department"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-67"><a href="#cb41-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(id_dep, departamento, area, nivel) <span class="sc">|&gt;</span></span>
+<span id="cb41-68"><a href="#cb41-68" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>provincia, <span class="sc">-</span>municipio)</span>
+<span id="cb41-69"><a href="#cb41-69" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-70"><a href="#cb41-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-71"><a href="#cb41-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-72"><a href="#cb41-72" aria-hidden="true" tabindex="-1"></a><span class="in">```{r disaggregate-helpers}</span></span>
+<span id="cb41-73"><a href="#cb41-73" aria-hidden="true" tabindex="-1"></a>subdivisions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Urbana"</span>, <span class="st">"Rural"</span>)</span>
+<span id="cb41-74"><a href="#cb41-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-75"><a href="#cb41-75" aria-hidden="true" tabindex="-1"></a>disaggregate_geo <span class="ot">&lt;-</span> <span class="cf">function</span>(raw_df) {</span>
+<span id="cb41-76"><a href="#cb41-76" aria-hidden="true" tabindex="-1"></a>  drop_tim <span class="ot">&lt;-</span> <span class="cf">function</span>(df) <span class="fu">filter</span>(df, provincia <span class="sc">!=</span> <span class="st">"Territorio Indígena Multiétnico"</span>)</span>
+<span id="cb41-77"><a href="#cb41-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-78"><a href="#cb41-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb41-79"><a href="#cb41-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">raw     =</span> raw_df,</span>
+<span id="cb41-80"><a href="#cb41-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">country =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"País"</span>),</span>
+<span id="cb41-81"><a href="#cb41-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">dept           =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Departamento"</span>, <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions),</span>
+<span id="cb41-82"><a href="#cb41-82" aria-hidden="true" tabindex="-1"></a>    <span class="at">dept_urb_rural =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Departamento"</span>,  area <span class="sc">%in%</span> subdivisions),</span>
+<span id="cb41-83"><a href="#cb41-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">prov           =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Provincia"</span>,     <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions) <span class="sc">|&gt;</span> <span class="fu">drop_tim</span>(),</span>
+<span id="cb41-84"><a href="#cb41-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">prov_urb_rural =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Provincia"</span>,      area <span class="sc">%in%</span> subdivisions) <span class="sc">|&gt;</span> <span class="fu">drop_tim</span>(),</span>
+<span id="cb41-85"><a href="#cb41-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">muni           =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>, <span class="sc">!</span>area <span class="sc">%in%</span> subdivisions),</span>
+<span id="cb41-86"><a href="#cb41-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">muni_urb_rural =</span> <span class="fu">filter</span>(raw_df, nivel <span class="sc">==</span> <span class="st">"Municipio/TIOC"</span>,  area <span class="sc">%in%</span> subdivisions)</span>
+<span id="cb41-87"><a href="#cb41-87" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb41-88"><a href="#cb41-88" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-89"><a href="#cb41-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-90"><a href="#cb41-90" aria-hidden="true" tabindex="-1"></a>attach_ine_codes <span class="ot">&lt;-</span> <span class="cf">function</span>(lst) {</span>
+<span id="cb41-91"><a href="#cb41-91" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (key <span class="cf">in</span> <span class="fu">names</span>(lst)) {</span>
+<span id="cb41-92"><a href="#cb41-92" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(lst[[key]])) <span class="cf">next</span></span>
+<span id="cb41-93"><a href="#cb41-93" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">startsWith</span>(key, <span class="st">"dept"</span>)) lst[[key]] <span class="ot">&lt;-</span> <span class="fu">add_ine_code_dept</span>(lst[[key]])</span>
+<span id="cb41-94"><a href="#cb41-94" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">startsWith</span>(key, <span class="st">"prov"</span>)) lst[[key]] <span class="ot">&lt;-</span> <span class="fu">add_ine_code_prov</span>(lst[[key]])</span>
+<span id="cb41-95"><a href="#cb41-95" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">startsWith</span>(key, <span class="st">"muni"</span>)) lst[[key]] <span class="ot">&lt;-</span> <span class="fu">add_ine_code_muni</span>(lst[[key]])</span>
+<span id="cb41-96"><a href="#cb41-96" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb41-97"><a href="#cb41-97" aria-hidden="true" tabindex="-1"></a>  lst</span>
+<span id="cb41-98"><a href="#cb41-98" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-99"><a href="#cb41-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-100"><a href="#cb41-100" aria-hidden="true" tabindex="-1"></a>save_tab <span class="ot">&lt;-</span> <span class="cf">function</span>(lst, stem, <span class="at">dir =</span> <span class="st">"data/cpv2024/"</span>) {</span>
+<span id="cb41-101"><a href="#cb41-101" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (key <span class="cf">in</span> <span class="fu">names</span>(lst)) {</span>
+<span id="cb41-102"><a href="#cb41-102" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(lst[[key]])) <span class="cf">next</span></span>
+<span id="cb41-103"><a href="#cb41-103" aria-hidden="true" tabindex="-1"></a>    <span class="fu">saveRDS</span>(lst[[key]], <span class="fu">file.path</span>(dir, <span class="fu">paste0</span>(stem, <span class="st">"_"</span>, key, <span class="st">".rds"</span>)))</span>
+<span id="cb41-104"><a href="#cb41-104" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb41-105"><a href="#cb41-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">invisible</span>(lst)</span>
+<span id="cb41-106"><a href="#cb41-106" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-107"><a href="#cb41-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-108"><a href="#cb41-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-109"><a href="#cb41-109" aria-hidden="true" tabindex="-1"></a><span class="fu">### POBREZA normalization</span></span>
+<span id="cb41-110"><a href="#cb41-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-111"><a href="#cb41-111" aria-hidden="true" tabindex="-1"></a>The POBREZA workbook uses slightly different conventions than SERVICIOS BÁSICOS and POBLACION: <span class="in">`nivel`</span> values are <span class="in">`"Pais"`</span> (no accent) and <span class="in">`"Municipio"`</span> (no <span class="in">`/TIOC`</span>), and department names are uppercase. This function normalizes to match the standard labels used across all other census imports.</span>
+<span id="cb41-112"><a href="#cb41-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-113"><a href="#cb41-113" aria-hidden="true" tabindex="-1"></a><span class="in">```{r normalize-pobreza}</span></span>
+<span id="cb41-114"><a href="#cb41-114" aria-hidden="true" tabindex="-1"></a><span class="co"># Title case for department names: "CHUQUISACA" → "Chuquisaca", "LA PAZ" → "La Paz"</span></span>
+<span id="cb41-115"><a href="#cb41-115" aria-hidden="true" tabindex="-1"></a>title_case_dept <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb41-116"><a href="#cb41-116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_to_title</span>(x) <span class="sc">|&gt;</span></span>
+<span id="cb41-117"><a href="#cb41-117" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace</span>(<span class="st">"^La Paz$"</span>, <span class="st">"La Paz"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb41-118"><a href="#cb41-118" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace</span>(<span class="st">"^Santa Cruz$"</span>, <span class="st">"Santa Cruz"</span>)</span>
+<span id="cb41-119"><a href="#cb41-119" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-120"><a href="#cb41-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-121"><a href="#cb41-121" aria-hidden="true" tabindex="-1"></a>normalize_pobreza <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-122"><a href="#cb41-122" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb41-123"><a href="#cb41-123" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb41-124"><a href="#cb41-124" aria-hidden="true" tabindex="-1"></a>      <span class="at">nivel =</span> <span class="fu">case_when</span>(</span>
+<span id="cb41-125"><a href="#cb41-125" aria-hidden="true" tabindex="-1"></a>        nivel <span class="sc">==</span> <span class="st">"Pais"</span>      <span class="sc">~</span> <span class="st">"País"</span>,</span>
+<span id="cb41-126"><a href="#cb41-126" aria-hidden="true" tabindex="-1"></a>        nivel <span class="sc">==</span> <span class="st">"Municipio"</span> <span class="sc">~</span> <span class="st">"Municipio/TIOC"</span>,</span>
+<span id="cb41-127"><a href="#cb41-127" aria-hidden="true" tabindex="-1"></a>        <span class="at">.default =</span> nivel</span>
+<span id="cb41-128"><a href="#cb41-128" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb41-129"><a href="#cb41-129" aria-hidden="true" tabindex="-1"></a>      <span class="at">departamento =</span> <span class="fu">if_else</span>(<span class="sc">!</span><span class="fu">is.na</span>(departamento),</span>
+<span id="cb41-130"><a href="#cb41-130" aria-hidden="true" tabindex="-1"></a>                             <span class="fu">title_case_dept</span>(departamento),</span>
+<span id="cb41-131"><a href="#cb41-131" aria-hidden="true" tabindex="-1"></a>                             departamento),</span>
+<span id="cb41-132"><a href="#cb41-132" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Total-row area values carry the entity name in uppercase</span></span>
+<span id="cb41-133"><a href="#cb41-133" aria-hidden="true" tabindex="-1"></a>      <span class="at">area =</span> <span class="fu">if_else</span>(</span>
+<span id="cb41-134"><a href="#cb41-134" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span>area <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Urbana"</span>, <span class="st">"Rural"</span>) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(area),</span>
+<span id="cb41-135"><a href="#cb41-135" aria-hidden="true" tabindex="-1"></a>        <span class="fu">title_case_dept</span>(area),</span>
+<span id="cb41-136"><a href="#cb41-136" aria-hidden="true" tabindex="-1"></a>        area</span>
+<span id="cb41-137"><a href="#cb41-137" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb41-138"><a href="#cb41-138" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb41-139"><a href="#cb41-139" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-140"><a href="#cb41-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-141"><a href="#cb41-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-142"><a href="#cb41-142" aria-hidden="true" tabindex="-1"></a><span class="in">```{r english-var-names}</span></span>
+<span id="cb41-143"><a href="#cb41-143" aria-hidden="true" tabindex="-1"></a><span class="co"># Shared geo rename (Spanish → English); used by all tab-specific functions below</span></span>
+<span id="cb41-144"><a href="#cb41-144" aria-hidden="true" tabindex="-1"></a>english_geo_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-145"><a href="#cb41-145" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span> <span class="fu">rename</span>(</span>
+<span id="cb41-146"><a href="#cb41-146" aria-hidden="true" tabindex="-1"></a>    <span class="at">department   =</span> <span class="fu">any_of</span>(<span class="st">"departamento"</span>),</span>
+<span id="cb41-147"><a href="#cb41-147" aria-hidden="true" tabindex="-1"></a>    <span class="at">province     =</span> <span class="fu">any_of</span>(<span class="st">"provincia"</span>),</span>
+<span id="cb41-148"><a href="#cb41-148" aria-hidden="true" tabindex="-1"></a>    <span class="at">municipality =</span> <span class="fu">any_of</span>(<span class="st">"municipio"</span>),</span>
+<span id="cb41-149"><a href="#cb41-149" aria-hidden="true" tabindex="-1"></a>    <span class="at">level        =</span> <span class="fu">any_of</span>(<span class="st">"nivel"</span>)</span>
+<span id="cb41-150"><a href="#cb41-150" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb41-151"><a href="#cb41-151" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-152"><a href="#cb41-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-153"><a href="#cb41-153" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 7: agua_mejorado / agua_no_mejorado → improved_water / unimproved_water</span></span>
+<span id="cb41-154"><a href="#cb41-154" aria-hidden="true" tabindex="-1"></a>english_agua_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-155"><a href="#cb41-155" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb41-156"><a href="#cb41-156" aria-hidden="true" tabindex="-1"></a>    <span class="co"># rename "no" variant first to avoid partial match by the plain variant</span></span>
+<span id="cb41-157"><a href="#cb41-157" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"agua_no_mejorado"</span>, <span class="st">"unimproved_water"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-158"><a href="#cb41-158" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"agua_mejorado"</span>,    <span class="st">"improved_water"</span>))</span>
+<span id="cb41-159"><a href="#cb41-159" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-160"><a href="#cb41-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-161"><a href="#cb41-161" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 11: saneamiento_mejorado / saneamiento_no_mejorado → improved_sanitation / unimproved_sanitation</span></span>
+<span id="cb41-162"><a href="#cb41-162" aria-hidden="true" tabindex="-1"></a>english_saneamiento_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-163"><a href="#cb41-163" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb41-164"><a href="#cb41-164" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"saneamiento_no_mejorado"</span>, <span class="st">"unimproved_sanitation"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-165"><a href="#cb41-165" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace</span>(., <span class="st">"saneamiento_mejorado"</span>,    <span class="st">"improved_sanitation"</span>))</span>
+<span id="cb41-166"><a href="#cb41-166" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-167"><a href="#cb41-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-168"><a href="#cb41-168" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 1: NBI poverty condition</span></span>
+<span id="cb41-169"><a href="#cb41-169" aria-hidden="true" tabindex="-1"></a>english_nbi_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-170"><a href="#cb41-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb41-171"><a href="#cb41-171" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb41-172"><a href="#cb41-172" aria-hidden="true" tabindex="-1"></a>      <span class="at">ref_pop_nbi_2012            =</span> <span class="fu">any_of</span>(<span class="st">"pob_ref_nbi_2012"</span>),</span>
+<span id="cb41-173"><a href="#cb41-173" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_total_2012         =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_total_2012"</span>),</span>
+<span id="cb41-174"><a href="#cb41-174" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_satisfied_p1_2012  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_nbs_p1_2012"</span>),</span>
+<span id="cb41-175"><a href="#cb41-175" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_threshold_p2_2012  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_umbral_p2_2012"</span>),</span>
+<span id="cb41-176"><a href="#cb41-176" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_total_2012             =</span> <span class="fu">any_of</span>(<span class="st">"pobre_total_2012"</span>),</span>
+<span id="cb41-177"><a href="#cb41-177" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_moderate_p3_2012       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_moderada_p3_2012"</span>),</span>
+<span id="cb41-178"><a href="#cb41-178" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_indigent_p4_2012       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_indigente_p4_2012"</span>),</span>
+<span id="cb41-179"><a href="#cb41-179" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_marginal_p5_2012       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_marginal_p5_2012"</span>),</span>
+<span id="cb41-180"><a href="#cb41-180" aria-hidden="true" tabindex="-1"></a>      <span class="at">ref_pop_nbi_2024            =</span> <span class="fu">any_of</span>(<span class="st">"pob_ref_nbi_2024"</span>),</span>
+<span id="cb41-181"><a href="#cb41-181" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_total_2024         =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_total_2024"</span>),</span>
+<span id="cb41-182"><a href="#cb41-182" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_satisfied_p1_2024  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_nbs_p1_2024"</span>),</span>
+<span id="cb41-183"><a href="#cb41-183" aria-hidden="true" tabindex="-1"></a>      <span class="at">non_poor_threshold_p2_2024  =</span> <span class="fu">any_of</span>(<span class="st">"no_pobre_umbral_p2_2024"</span>),</span>
+<span id="cb41-184"><a href="#cb41-184" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_total_2024             =</span> <span class="fu">any_of</span>(<span class="st">"pobre_total_2024"</span>),</span>
+<span id="cb41-185"><a href="#cb41-185" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_moderate_p3_2024       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_moderada_p3_2024"</span>),</span>
+<span id="cb41-186"><a href="#cb41-186" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_indigent_p4_2024       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_indigente_p4_2024"</span>),</span>
+<span id="cb41-187"><a href="#cb41-187" aria-hidden="true" tabindex="-1"></a>      <span class="at">poor_marginal_p5_2024       =</span> <span class="fu">any_of</span>(<span class="st">"pobre_marginal_p5_2024"</span>)</span>
+<span id="cb41-188"><a href="#cb41-188" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb41-189"><a href="#cb41-189" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-190"><a href="#cb41-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-191"><a href="#cb41-191" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab 3: NBI component indicators</span></span>
+<span id="cb41-192"><a href="#cb41-192" aria-hidden="true" tabindex="-1"></a>english_comp_fix <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb41-193"><a href="#cb41-193" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_geo_fix</span>(df) <span class="sc">|&gt;</span></span>
+<span id="cb41-194"><a href="#cb41-194" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">str_replace_all</span>(., <span class="fu">c</span>(</span>
+<span id="cb41-195"><a href="#cb41-195" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_mat_vivienda"</span>        <span class="ot">=</span> <span class="st">"insuf_housing_materials"</span>,</span>
+<span id="cb41-196"><a href="#cb41-196" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_esp_vivienda"</span>        <span class="ot">=</span> <span class="st">"insuf_housing_space"</span>,</span>
+<span id="cb41-197"><a href="#cb41-197" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_agua_saneamiento"</span>    <span class="ot">=</span> <span class="st">"insuf_water_sanitation"</span>,</span>
+<span id="cb41-198"><a href="#cb41-198" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_insumos_energeticos"</span> <span class="ot">=</span> <span class="st">"insuf_energy_inputs"</span>,</span>
+<span id="cb41-199"><a href="#cb41-199" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_educacion"</span>           <span class="ot">=</span> <span class="st">"insuf_education"</span>,</span>
+<span id="cb41-200"><a href="#cb41-200" aria-hidden="true" tabindex="-1"></a>      <span class="st">"insuf_salud"</span>               <span class="ot">=</span> <span class="st">"insuf_health"</span></span>
+<span id="cb41-201"><a href="#cb41-201" aria-hidden="true" tabindex="-1"></a>    )))</span>
+<span id="cb41-202"><a href="#cb41-202" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-203"><a href="#cb41-203" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-204"><a href="#cb41-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-205"><a href="#cb41-205" aria-hidden="true" tabindex="-1"></a><span class="fu">### Row-count check helper</span></span>
+<span id="cb41-206"><a href="#cb41-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-207"><a href="#cb41-207" aria-hidden="true" tabindex="-1"></a><span class="in">```{r check-helper}</span></span>
+<span id="cb41-208"><a href="#cb41-208" aria-hidden="true" tabindex="-1"></a>check_row_counts <span class="ot">&lt;-</span> <span class="cf">function</span>(lst) {</span>
+<span id="cb41-209"><a href="#cb41-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Raw rows:               "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>raw),            <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-210"><a href="#cb41-210" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Country rows:           "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>country),        <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-211"><a href="#cb41-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Dept totals:            "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>dept),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-212"><a href="#cb41-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Dept urban+rural rows:  "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>dept_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-213"><a href="#cb41-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Province totals:        "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>prov),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-214"><a href="#cb41-214" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Province urban+rural:   "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>prov_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-215"><a href="#cb41-215" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Municipality totals:    "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>muni),           <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-216"><a href="#cb41-216" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Municipality urb+rural: "</span>, <span class="fu">nrow</span>(lst<span class="sc">$</span>muni_urb_rural), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb41-217"><a href="#cb41-217" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-218"><a href="#cb41-218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-219"><a href="#cb41-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-220"><a href="#cb41-220" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb41-221"><a href="#cb41-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-222"><a href="#cb41-222" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 1: Improved Water Access (`SERVICIOS BÁSICOS.xlsx`, sheet 7)</span></span>
+<span id="cb41-223"><a href="#cb41-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-224"><a href="#cb41-224" aria-hidden="true" tabindex="-1"></a>Source: sheet "7" of <span class="in">`SERVICIOS BÁSICOS.xlsx`</span>. Population with access to an improved water source, by census year (2001, 2012, 2024). The header spans three rows (Excel rows 4–6):</span>
+<span id="cb41-225"><a href="#cb41-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-226"><a href="#cb41-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 4**: category blocks — <span class="in">`NÚMERO DE PERSONAS`</span> (9 cols) and <span class="in">`DISTRIBUCIÓN PORCENTUAL`</span> (6 cols)</span>
+<span id="cb41-227"><a href="#cb41-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 5**: year (2001, 2012, 2024)</span>
+<span id="cb41-228"><a href="#cb41-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 6**: measure type (Total, Tiene, No tiene)</span>
+<span id="cb41-229"><a href="#cb41-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-230"><a href="#cb41-230" aria-hidden="true" tabindex="-1"></a>The percentage block omits "Total" columns since Tiene + No tiene = 100%.</span>
+<span id="cb41-231"><a href="#cb41-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-232"><a href="#cb41-232" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-agua}</span></span>
+<span id="cb41-233"><a href="#cb41-233" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb41-234"><a href="#cb41-234" aria-hidden="true" tabindex="-1"></a>geo_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"row_num"</span>, <span class="st">"nivel"</span>, <span class="st">"departamento"</span>, <span class="st">"provincia"</span>, <span class="st">"municipio"</span>, <span class="st">"area"</span>)</span>
+<span id="cb41-235"><a href="#cb41-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-236"><a href="#cb41-236" aria-hidden="true" tabindex="-1"></a>agua_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb41-237"><a href="#cb41-237" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2001"</span>, <span class="st">"n_agua_mejorado_2001"</span>, <span class="st">"n_agua_no_mejorado_2001"</span>,</span>
+<span id="cb41-238"><a href="#cb41-238" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2012"</span>, <span class="st">"n_agua_mejorado_2012"</span>, <span class="st">"n_agua_no_mejorado_2012"</span>,</span>
+<span id="cb41-239"><a href="#cb41-239" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2024"</span>, <span class="st">"n_agua_mejorado_2024"</span>, <span class="st">"n_agua_no_mejorado_2024"</span>,</span>
+<span id="cb41-240"><a href="#cb41-240" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_agua_mejorado_2001"</span>, <span class="st">"pct_agua_no_mejorado_2001"</span>,</span>
+<span id="cb41-241"><a href="#cb41-241" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_agua_mejorado_2012"</span>, <span class="st">"pct_agua_no_mejorado_2012"</span>,</span>
+<span id="cb41-242"><a href="#cb41-242" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_agua_mejorado_2024"</span>, <span class="st">"pct_agua_no_mejorado_2024"</span></span>
+<span id="cb41-243"><a href="#cb41-243" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb41-244"><a href="#cb41-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-245"><a href="#cb41-245" aria-hidden="true" tabindex="-1"></a>raw_agua <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_sb, <span class="at">sheet =</span> <span class="st">"7"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span>
+<span id="cb41-246"><a href="#cb41-246" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_agua) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, agua_data_cols)</span>
+<span id="cb41-247"><a href="#cb41-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-248"><a href="#cb41-248" aria-hidden="true" tabindex="-1"></a>raw_agua <span class="ot">&lt;-</span> raw_agua <span class="sc">|&gt;</span></span>
+<span id="cb41-249"><a href="#cb41-249" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb41-250"><a href="#cb41-250" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb41-251"><a href="#cb41-251" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(agua_data_cols), as.numeric)</span>
+<span id="cb41-252"><a href="#cb41-252" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb41-253"><a href="#cb41-253" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num))</span>
+<span id="cb41-254"><a href="#cb41-254" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-255"><a href="#cb41-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-256"><a href="#cb41-256" aria-hidden="true" tabindex="-1"></a><span class="in">```{r disaggregate-agua}</span></span>
+<span id="cb41-257"><a href="#cb41-257" aria-hidden="true" tabindex="-1"></a>agua <span class="ot">&lt;-</span> raw_agua <span class="sc">|&gt;</span></span>
+<span id="cb41-258"><a href="#cb41-258" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-259"><a href="#cb41-259" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span>
+<span id="cb41-260"><a href="#cb41-260" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-261"><a href="#cb41-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-262"><a href="#cb41-262" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick checks</span></span>
+<span id="cb41-263"><a href="#cb41-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-264"><a href="#cb41-264" aria-hidden="true" tabindex="-1"></a><span class="in">```{r checks-agua}</span></span>
+<span id="cb41-265"><a href="#cb41-265" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb41-266"><a href="#cb41-266" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: asis</span></span>
+<span id="cb41-267"><a href="#cb41-267" aria-hidden="true" tabindex="-1"></a><span class="fu">check_row_counts</span>(agua)</span>
+<span id="cb41-268"><a href="#cb41-268" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-269"><a href="#cb41-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-270"><a href="#cb41-270" aria-hidden="true" tabindex="-1"></a><span class="in">```{r preview-agua-dept}</span></span>
+<span id="cb41-271"><a href="#cb41-271" aria-hidden="true" tabindex="-1"></a>agua<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb41-272"><a href="#cb41-272" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento, n_agua_mejorado_2024, n_agua_no_mejorado_2024, pct_agua_mejorado_2024) <span class="sc">|&gt;</span></span>
+<span id="cb41-273"><a href="#cb41-273" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_agua_mejorado_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb41-274"><a href="#cb41-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Improved water access by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb41-275"><a href="#cb41-275" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span>
+<span id="cb41-276"><a href="#cb41-276" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-277"><a href="#cb41-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-278"><a href="#cb41-278" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save water access outputs</span></span>
+<span id="cb41-279"><a href="#cb41-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-280"><a href="#cb41-280" aria-hidden="true" tabindex="-1"></a><span class="in">```{r save-agua}</span></span>
+<span id="cb41-281"><a href="#cb41-281" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb41-282"><a href="#cb41-282" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb41-283"><a href="#cb41-283" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(agua, <span class="st">"agua_mejorada"</span>)</span>
+<span id="cb41-284"><a href="#cb41-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-285"><a href="#cb41-285" aria-hidden="true" tabindex="-1"></a>agua_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(agua, <span class="cf">function</span>(df) {</span>
+<span id="cb41-286"><a href="#cb41-286" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb41-287"><a href="#cb41-287" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_agua_fix</span>(df)</span>
+<span id="cb41-288"><a href="#cb41-288" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb41-289"><a href="#cb41-289" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(agua_en, <span class="st">"improved_water"</span>)</span>
+<span id="cb41-290"><a href="#cb41-290" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-291"><a href="#cb41-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-292"><a href="#cb41-292" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb41-293"><a href="#cb41-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-294"><a href="#cb41-294" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 2: Improved Sanitation (`SERVICIOS BÁSICOS.xlsx`, sheet 11)</span></span>
+<span id="cb41-295"><a href="#cb41-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-296"><a href="#cb41-296" aria-hidden="true" tabindex="-1"></a>Source: sheet "11" of <span class="in">`SERVICIOS BÁSICOS.xlsx`</span>. Population with access to improved sanitation. Same structure as Part 1; column names carry <span class="in">`saneamiento`</span> in place of <span class="in">`agua`</span>.</span>
+<span id="cb41-297"><a href="#cb41-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-298"><a href="#cb41-298" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-saneamiento}</span></span>
+<span id="cb41-299"><a href="#cb41-299" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb41-300"><a href="#cb41-300" aria-hidden="true" tabindex="-1"></a>saneamiento_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb41-301"><a href="#cb41-301" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2001"</span>, <span class="st">"n_saneamiento_mejorado_2001"</span>, <span class="st">"n_saneamiento_no_mejorado_2001"</span>,</span>
+<span id="cb41-302"><a href="#cb41-302" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2012"</span>, <span class="st">"n_saneamiento_mejorado_2012"</span>, <span class="st">"n_saneamiento_no_mejorado_2012"</span>,</span>
+<span id="cb41-303"><a href="#cb41-303" aria-hidden="true" tabindex="-1"></a>  <span class="st">"n_total_2024"</span>, <span class="st">"n_saneamiento_mejorado_2024"</span>, <span class="st">"n_saneamiento_no_mejorado_2024"</span>,</span>
+<span id="cb41-304"><a href="#cb41-304" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_saneamiento_mejorado_2001"</span>, <span class="st">"pct_saneamiento_no_mejorado_2001"</span>,</span>
+<span id="cb41-305"><a href="#cb41-305" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_saneamiento_mejorado_2012"</span>, <span class="st">"pct_saneamiento_no_mejorado_2012"</span>,</span>
+<span id="cb41-306"><a href="#cb41-306" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pct_saneamiento_mejorado_2024"</span>, <span class="st">"pct_saneamiento_no_mejorado_2024"</span></span>
+<span id="cb41-307"><a href="#cb41-307" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb41-308"><a href="#cb41-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-309"><a href="#cb41-309" aria-hidden="true" tabindex="-1"></a>raw_saneamiento <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_sb, <span class="at">sheet =</span> <span class="st">"11"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span>
+<span id="cb41-310"><a href="#cb41-310" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_saneamiento) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, saneamiento_data_cols)</span>
+<span id="cb41-311"><a href="#cb41-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-312"><a href="#cb41-312" aria-hidden="true" tabindex="-1"></a>raw_saneamiento <span class="ot">&lt;-</span> raw_saneamiento <span class="sc">|&gt;</span></span>
+<span id="cb41-313"><a href="#cb41-313" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb41-314"><a href="#cb41-314" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb41-315"><a href="#cb41-315" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(saneamiento_data_cols), as.numeric)</span>
+<span id="cb41-316"><a href="#cb41-316" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb41-317"><a href="#cb41-317" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num))</span>
+<span id="cb41-318"><a href="#cb41-318" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-319"><a href="#cb41-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-320"><a href="#cb41-320" aria-hidden="true" tabindex="-1"></a><span class="in">```{r disaggregate-saneamiento}</span></span>
+<span id="cb41-321"><a href="#cb41-321" aria-hidden="true" tabindex="-1"></a>saneamiento <span class="ot">&lt;-</span> raw_saneamiento <span class="sc">|&gt;</span></span>
+<span id="cb41-322"><a href="#cb41-322" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-323"><a href="#cb41-323" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span>
+<span id="cb41-324"><a href="#cb41-324" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-325"><a href="#cb41-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-326"><a href="#cb41-326" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick checks</span></span>
+<span id="cb41-327"><a href="#cb41-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-328"><a href="#cb41-328" aria-hidden="true" tabindex="-1"></a><span class="in">```{r checks-saneamiento}</span></span>
+<span id="cb41-329"><a href="#cb41-329" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb41-330"><a href="#cb41-330" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: asis</span></span>
+<span id="cb41-331"><a href="#cb41-331" aria-hidden="true" tabindex="-1"></a><span class="fu">check_row_counts</span>(saneamiento)</span>
+<span id="cb41-332"><a href="#cb41-332" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-333"><a href="#cb41-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-334"><a href="#cb41-334" aria-hidden="true" tabindex="-1"></a><span class="in">```{r preview-saneamiento-dept}</span></span>
+<span id="cb41-335"><a href="#cb41-335" aria-hidden="true" tabindex="-1"></a>saneamiento<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb41-336"><a href="#cb41-336" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento, n_saneamiento_mejorado_2024, n_saneamiento_no_mejorado_2024, pct_saneamiento_mejorado_2024) <span class="sc">|&gt;</span></span>
+<span id="cb41-337"><a href="#cb41-337" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_saneamiento_mejorado_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb41-338"><a href="#cb41-338" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Improved sanitation by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb41-339"><a href="#cb41-339" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span>
+<span id="cb41-340"><a href="#cb41-340" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-341"><a href="#cb41-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-342"><a href="#cb41-342" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save sanitation outputs</span></span>
+<span id="cb41-343"><a href="#cb41-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-344"><a href="#cb41-344" aria-hidden="true" tabindex="-1"></a><span class="in">```{r save-saneamiento}</span></span>
+<span id="cb41-345"><a href="#cb41-345" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb41-346"><a href="#cb41-346" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb41-347"><a href="#cb41-347" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(saneamiento, <span class="st">"saneamiento_mejorado"</span>)</span>
+<span id="cb41-348"><a href="#cb41-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-349"><a href="#cb41-349" aria-hidden="true" tabindex="-1"></a>saneamiento_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(saneamiento, <span class="cf">function</span>(df) {</span>
+<span id="cb41-350"><a href="#cb41-350" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb41-351"><a href="#cb41-351" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_saneamiento_fix</span>(df)</span>
+<span id="cb41-352"><a href="#cb41-352" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb41-353"><a href="#cb41-353" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(saneamiento_en, <span class="st">"improved_sanitation"</span>)</span>
+<span id="cb41-354"><a href="#cb41-354" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-355"><a href="#cb41-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-356"><a href="#cb41-356" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb41-357"><a href="#cb41-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-358"><a href="#cb41-358" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 3: NBI Poverty Condition (`POBREZA.xlsx`, sheet 1)</span></span>
+<span id="cb41-359"><a href="#cb41-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-360"><a href="#cb41-360" aria-hidden="true" tabindex="-1"></a>Source: sheet "1" of <span class="in">`POBREZA.xlsx`</span>. Population classified by Unsatisfied Basic Needs (NBI) condition, for 2012 and 2024. The header spans three rows (Excel rows 4–6):</span>
+<span id="cb41-361"><a href="#cb41-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-362"><a href="#cb41-362" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 4**: year (2012, 2024)</span>
+<span id="cb41-363"><a href="#cb41-363" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 5**: poverty status (Población de referencia, No pobre, Pobre)</span>
+<span id="cb41-364"><a href="#cb41-364" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 6**: subcategory (Total, NBS, Umbral, Moderada, Indigente, Marginal)</span>
+<span id="cb41-365"><a href="#cb41-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-366"><a href="#cb41-366" aria-hidden="true" tabindex="-1"></a>Each year block has 8 columns: 1 reference population + 3 no-pobre subcategories + 4 pobre subcategories (including pobre total).</span>
+<span id="cb41-367"><a href="#cb41-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-368"><a href="#cb41-368" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-pobreza-nbi}</span></span>
+<span id="cb41-369"><a href="#cb41-369" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb41-370"><a href="#cb41-370" aria-hidden="true" tabindex="-1"></a>nbi_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb41-371"><a href="#cb41-371" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pob_ref_nbi_2012"</span>,</span>
+<span id="cb41-372"><a href="#cb41-372" aria-hidden="true" tabindex="-1"></a>  <span class="st">"no_pobre_total_2012"</span>, <span class="st">"no_pobre_nbs_p1_2012"</span>, <span class="st">"no_pobre_umbral_p2_2012"</span>,</span>
+<span id="cb41-373"><a href="#cb41-373" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pobre_total_2012"</span>,    <span class="st">"pobre_moderada_p3_2012"</span>, <span class="st">"pobre_indigente_p4_2012"</span>, <span class="st">"pobre_marginal_p5_2012"</span>,</span>
+<span id="cb41-374"><a href="#cb41-374" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pob_ref_nbi_2024"</span>,</span>
+<span id="cb41-375"><a href="#cb41-375" aria-hidden="true" tabindex="-1"></a>  <span class="st">"no_pobre_total_2024"</span>, <span class="st">"no_pobre_nbs_p1_2024"</span>, <span class="st">"no_pobre_umbral_p2_2024"</span>,</span>
+<span id="cb41-376"><a href="#cb41-376" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pobre_total_2024"</span>,    <span class="st">"pobre_moderada_p3_2024"</span>, <span class="st">"pobre_indigente_p4_2024"</span>, <span class="st">"pobre_marginal_p5_2024"</span></span>
+<span id="cb41-377"><a href="#cb41-377" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb41-378"><a href="#cb41-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-379"><a href="#cb41-379" aria-hidden="true" tabindex="-1"></a>raw_nbi <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_pob, <span class="at">sheet =</span> <span class="st">"1"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span>
+<span id="cb41-380"><a href="#cb41-380" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_nbi) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, nbi_data_cols)</span>
+<span id="cb41-381"><a href="#cb41-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-382"><a href="#cb41-382" aria-hidden="true" tabindex="-1"></a>raw_nbi <span class="ot">&lt;-</span> raw_nbi <span class="sc">|&gt;</span></span>
+<span id="cb41-383"><a href="#cb41-383" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb41-384"><a href="#cb41-384" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb41-385"><a href="#cb41-385" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(nbi_data_cols), as.numeric)</span>
+<span id="cb41-386"><a href="#cb41-386" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb41-387"><a href="#cb41-387" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num)) <span class="sc">|&gt;</span></span>
+<span id="cb41-388"><a href="#cb41-388" aria-hidden="true" tabindex="-1"></a>  <span class="fu">normalize_pobreza</span>()</span>
+<span id="cb41-389"><a href="#cb41-389" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-390"><a href="#cb41-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-391"><a href="#cb41-391" aria-hidden="true" tabindex="-1"></a><span class="in">```{r disaggregate-pobreza-nbi}</span></span>
+<span id="cb41-392"><a href="#cb41-392" aria-hidden="true" tabindex="-1"></a>nbi <span class="ot">&lt;-</span> raw_nbi <span class="sc">|&gt;</span></span>
+<span id="cb41-393"><a href="#cb41-393" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-394"><a href="#cb41-394" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span>
+<span id="cb41-395"><a href="#cb41-395" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-396"><a href="#cb41-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-397"><a href="#cb41-397" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick checks</span></span>
+<span id="cb41-398"><a href="#cb41-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-399"><a href="#cb41-399" aria-hidden="true" tabindex="-1"></a><span class="in">```{r checks-pobreza-nbi}</span></span>
+<span id="cb41-400"><a href="#cb41-400" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb41-401"><a href="#cb41-401" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: asis</span></span>
+<span id="cb41-402"><a href="#cb41-402" aria-hidden="true" tabindex="-1"></a><span class="fu">check_row_counts</span>(nbi)</span>
+<span id="cb41-403"><a href="#cb41-403" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-404"><a href="#cb41-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-405"><a href="#cb41-405" aria-hidden="true" tabindex="-1"></a><span class="in">```{r preview-pobreza-nbi-dept}</span></span>
+<span id="cb41-406"><a href="#cb41-406" aria-hidden="true" tabindex="-1"></a>nbi<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb41-407"><a href="#cb41-407" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento,</span>
+<span id="cb41-408"><a href="#cb41-408" aria-hidden="true" tabindex="-1"></a>         pob_ref_nbi_2024, no_pobre_total_2024, pobre_total_2024,</span>
+<span id="cb41-409"><a href="#cb41-409" aria-hidden="true" tabindex="-1"></a>         pobre_moderada_p3_2024, pobre_indigente_p4_2024, pobre_marginal_p5_2024) <span class="sc">|&gt;</span></span>
+<span id="cb41-410"><a href="#cb41-410" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(pob_ref_nbi_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb41-411"><a href="#cb41-411" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"NBI poverty condition by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb41-412"><a href="#cb41-412" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span>
+<span id="cb41-413"><a href="#cb41-413" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-414"><a href="#cb41-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-415"><a href="#cb41-415" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save NBI poverty outputs</span></span>
+<span id="cb41-416"><a href="#cb41-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-417"><a href="#cb41-417" aria-hidden="true" tabindex="-1"></a><span class="in">```{r save-pobreza-nbi}</span></span>
+<span id="cb41-418"><a href="#cb41-418" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb41-419"><a href="#cb41-419" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb41-420"><a href="#cb41-420" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(nbi, <span class="st">"pobreza_nbi"</span>)</span>
+<span id="cb41-421"><a href="#cb41-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-422"><a href="#cb41-422" aria-hidden="true" tabindex="-1"></a>nbi_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(nbi, <span class="cf">function</span>(df) {</span>
+<span id="cb41-423"><a href="#cb41-423" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb41-424"><a href="#cb41-424" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_nbi_fix</span>(df)</span>
+<span id="cb41-425"><a href="#cb41-425" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb41-426"><a href="#cb41-426" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(nbi_en, <span class="st">"poverty_nbi"</span>)</span>
+<span id="cb41-427"><a href="#cb41-427" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-428"><a href="#cb41-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-429"><a href="#cb41-429" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb41-430"><a href="#cb41-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-431"><a href="#cb41-431" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 4: NBI Component Indicators (`POBREZA.xlsx`, sheet 3)</span></span>
+<span id="cb41-432"><a href="#cb41-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-433"><a href="#cb41-433" aria-hidden="true" tabindex="-1"></a>Source: sheet "3" of <span class="in">`POBREZA.xlsx`</span>. Population with each NBI component insufficiency, for 2012 and 2024. The header spans three rows (Excel rows 4–6):</span>
+<span id="cb41-434"><a href="#cb41-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-435"><a href="#cb41-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 4**: year (2012, 2024)</span>
+<span id="cb41-436"><a href="#cb41-436" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 5**: component group (Vivienda, Servicio e Insumos Energéticos, or standalone)</span>
+<span id="cb41-437"><a href="#cb41-437" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Row 6**: specific component name</span>
+<span id="cb41-438"><a href="#cb41-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-439"><a href="#cb41-439" aria-hidden="true" tabindex="-1"></a>Each year block has 6 columns — one per NBI component:</span>
+<span id="cb41-440"><a href="#cb41-440" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-441"><a href="#cb41-441" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Inadecuados Materiales de la Vivienda</span>
+<span id="cb41-442"><a href="#cb41-442" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Insuficientes Espacios en la Vivienda</span>
+<span id="cb41-443"><a href="#cb41-443" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Inadecuados Servicios de Agua y Saneamiento</span>
+<span id="cb41-444"><a href="#cb41-444" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Inadecuados Insumos Energéticos</span>
+<span id="cb41-445"><a href="#cb41-445" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Insuficiencia en educación</span>
+<span id="cb41-446"><a href="#cb41-446" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Inadecuada atención en salud</span>
+<span id="cb41-447"><a href="#cb41-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-448"><a href="#cb41-448" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-pobreza-componentes}</span></span>
+<span id="cb41-449"><a href="#cb41-449" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb41-450"><a href="#cb41-450" aria-hidden="true" tabindex="-1"></a>comp_data_cols <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb41-451"><a href="#cb41-451" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_mat_vivienda_2012"</span>,       <span class="st">"insuf_esp_vivienda_2012"</span>,</span>
+<span id="cb41-452"><a href="#cb41-452" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_agua_saneamiento_2012"</span>,   <span class="st">"insuf_insumos_energeticos_2012"</span>,</span>
+<span id="cb41-453"><a href="#cb41-453" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_educacion_2012"</span>,          <span class="st">"insuf_salud_2012"</span>,</span>
+<span id="cb41-454"><a href="#cb41-454" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_mat_vivienda_2024"</span>,       <span class="st">"insuf_esp_vivienda_2024"</span>,</span>
+<span id="cb41-455"><a href="#cb41-455" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_agua_saneamiento_2024"</span>,   <span class="st">"insuf_insumos_energeticos_2024"</span>,</span>
+<span id="cb41-456"><a href="#cb41-456" aria-hidden="true" tabindex="-1"></a>  <span class="st">"insuf_educacion_2024"</span>,          <span class="st">"insuf_salud_2024"</span></span>
+<span id="cb41-457"><a href="#cb41-457" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb41-458"><a href="#cb41-458" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-459"><a href="#cb41-459" aria-hidden="true" tabindex="-1"></a>raw_comp <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(path_pob, <span class="at">sheet =</span> <span class="st">"3"</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>, <span class="at">skip =</span> <span class="dv">7</span>)</span>
+<span id="cb41-460"><a href="#cb41-460" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(raw_comp) <span class="ot">&lt;-</span> <span class="fu">c</span>(geo_cols, comp_data_cols)</span>
+<span id="cb41-461"><a href="#cb41-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-462"><a href="#cb41-462" aria-hidden="true" tabindex="-1"></a>raw_comp <span class="ot">&lt;-</span> raw_comp <span class="sc">|&gt;</span></span>
+<span id="cb41-463"><a href="#cb41-463" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb41-464"><a href="#cb41-464" aria-hidden="true" tabindex="-1"></a>    <span class="at">row_num =</span> <span class="fu">as.integer</span>(row_num),</span>
+<span id="cb41-465"><a href="#cb41-465" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">all_of</span>(comp_data_cols), as.numeric)</span>
+<span id="cb41-466"><a href="#cb41-466" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb41-467"><a href="#cb41-467" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(row_num)) <span class="sc">|&gt;</span></span>
+<span id="cb41-468"><a href="#cb41-468" aria-hidden="true" tabindex="-1"></a>  <span class="fu">normalize_pobreza</span>()</span>
+<span id="cb41-469"><a href="#cb41-469" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-470"><a href="#cb41-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-471"><a href="#cb41-471" aria-hidden="true" tabindex="-1"></a><span class="in">```{r disaggregate-pobreza-componentes}</span></span>
+<span id="cb41-472"><a href="#cb41-472" aria-hidden="true" tabindex="-1"></a>componentes <span class="ot">&lt;-</span> raw_comp <span class="sc">|&gt;</span></span>
+<span id="cb41-473"><a href="#cb41-473" aria-hidden="true" tabindex="-1"></a>  <span class="fu">disaggregate_geo</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-474"><a href="#cb41-474" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attach_ine_codes</span>()</span>
+<span id="cb41-475"><a href="#cb41-475" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-476"><a href="#cb41-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-477"><a href="#cb41-477" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick checks</span></span>
+<span id="cb41-478"><a href="#cb41-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-479"><a href="#cb41-479" aria-hidden="true" tabindex="-1"></a><span class="in">```{r checks-pobreza-componentes}</span></span>
+<span id="cb41-480"><a href="#cb41-480" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb41-481"><a href="#cb41-481" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: asis</span></span>
+<span id="cb41-482"><a href="#cb41-482" aria-hidden="true" tabindex="-1"></a><span class="fu">check_row_counts</span>(componentes)</span>
+<span id="cb41-483"><a href="#cb41-483" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-484"><a href="#cb41-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-485"><a href="#cb41-485" aria-hidden="true" tabindex="-1"></a><span class="in">```{r preview-pobreza-componentes-dept}</span></span>
+<span id="cb41-486"><a href="#cb41-486" aria-hidden="true" tabindex="-1"></a>componentes<span class="sc">$</span>dept <span class="sc">|&gt;</span></span>
+<span id="cb41-487"><a href="#cb41-487" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(departamento,</span>
+<span id="cb41-488"><a href="#cb41-488" aria-hidden="true" tabindex="-1"></a>         insuf_mat_vivienda_2024, insuf_esp_vivienda_2024,</span>
+<span id="cb41-489"><a href="#cb41-489" aria-hidden="true" tabindex="-1"></a>         insuf_agua_saneamiento_2024, insuf_insumos_energeticos_2024,</span>
+<span id="cb41-490"><a href="#cb41-490" aria-hidden="true" tabindex="-1"></a>         insuf_educacion_2024, insuf_salud_2024) <span class="sc">|&gt;</span></span>
+<span id="cb41-491"><a href="#cb41-491" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(insuf_educacion_2024)) <span class="sc">|&gt;</span></span>
+<span id="cb41-492"><a href="#cb41-492" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"NBI component insufficiencies by department, 2024"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb41-493"><a href="#cb41-493" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>()</span>
+<span id="cb41-494"><a href="#cb41-494" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb41-495"><a href="#cb41-495" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-496"><a href="#cb41-496" aria-hidden="true" tabindex="-1"></a><span class="fu">### Save NBI component outputs</span></span>
+<span id="cb41-497"><a href="#cb41-497" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-498"><a href="#cb41-498" aria-hidden="true" tabindex="-1"></a><span class="in">```{r save-pobreza-componentes}</span></span>
+<span id="cb41-499"><a href="#cb41-499" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb41-500"><a href="#cb41-500" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb41-501"><a href="#cb41-501" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(componentes, <span class="st">"pobreza_componentes"</span>)</span>
+<span id="cb41-502"><a href="#cb41-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-503"><a href="#cb41-503" aria-hidden="true" tabindex="-1"></a>componentes_en <span class="ot">&lt;-</span> <span class="fu">lapply</span>(componentes, <span class="cf">function</span>(df) {</span>
+<span id="cb41-504"><a href="#cb41-504" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.data.frame</span>(df)) <span class="fu">return</span>(df)</span>
+<span id="cb41-505"><a href="#cb41-505" aria-hidden="true" tabindex="-1"></a>  <span class="fu">english_comp_fix</span>(df)</span>
+<span id="cb41-506"><a href="#cb41-506" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb41-507"><a href="#cb41-507" aria-hidden="true" tabindex="-1"></a><span class="fu">save_tab</span>(componentes_en, <span class="st">"poverty_components"</span>)</span>
+<span id="cb41-508"><a href="#cb41-508" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
