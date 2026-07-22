@@ -1,0 +1,363 @@
+---
+title: "Data Wrangling while using an LLM"
+format: html
+editor: visual
+exec: false
+---
+
+[**Prompt:** Here is the final code I used to extract and process the Tennessee data by county, which came from this page: https://tnsdc.utk.edu/data-and-tools/2020-census/2020-pl-94-171-redistricting-data-summary-file/ Without altering the code statements, use this code and any prompts and responses in our conversation above that helped to generate it to create a qmd book chapter on how to acquire, process, format, and save a publicly available dataset for use in R. Briefly describe how tabulapdf and libr are useful for this process. As this is a book chapter, your response can be longer than usual.]{.aside}
+
+*This text was largely composed by Google Gemini, using the prompt shown to the right. However, Gemini did not follow my prompt to include the entire code, nor did it illustrate how my conversation with the LLM led to generating the code, and it could not have known where it got things wrong and I stepped in to correct its output. I've gone through and extended the text to illustrate that, adding new text in italics. Prompts to Gemini appear in the margin.*
+
+# Chapter 1: Acquiring and Structuring Public Datasets in R
+
+Publicly available datasets, particularly those from the **U.S. Census Bureau**, provide a wealth of information but often arrive in complex, code-heavy formats that are difficult to interpret without technical documentation. In this chapter, we explore a workflow for acquiring, processing, and documenting a public dataset using the **2020 Census Redistricting Data (PL 94-171)** for Tennessee.
+
+We will focus on transforming raw technical metadata into a human-readable data dictionary, ensuring that our analysis remains transparent and reproducible. This chapter demonstrates how to acquire, process, and document publicly available datasets using R, focusing on census data for Tennessee.
+
+------------------------------------------------------------------------
+
+## The Challenges of Public Data
+
+[**Prompt 1:** Where can I find a table of census totals by race in Tennessee from 2020? <br>**Prompt 2:** I need this data broken out by county.]{.aside}
+
+Most decennial census data is distributed via **Summary Files**. (*Actually, that's false; Tennesee's State Data Center went out of its way to generate these summary files. Data can be downloaded as summary files using US Census's [Data Explorer tool](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html#List_909402788), which then will produce downloadable tables.*) *The one we're using here is from the Tennesee State Data Center's [Decennial Census P.L. 94-171 page](https://tnsdc.utk.edu/data-and-tools/2020-census/2020-pl-94-171-redistricting-data-summary-file/); we'll choose files under Counties and download the Excel file*. While powerful, these files often use shorthand codes (e.g., `P0010001`, `P0020005`) instead of descriptive names. To make this data useful, we must bridge the gap between the data file and the official **Technical Documentation**.
+
+### Essential Tooling
+
+To facilitate this process, we utilize two specialized R packages:
+
+- **`tabulapdf`**: A wrapper for the Tabula Java library that allows for precise extraction of tables from PDF documents. It is invaluable for turning "trapped" data in technical PDFs into actionable tibbles.
+- **`libr`**: A package designed for data management that includes a `dictionary()` function. It can scan data frames for metadata attributes and generate a comprehensive codebook.
+
+------------------------------------------------------------------------
+
+## 1. Extracting Metadata from Technical Documentation
+
+[**Prompt 3:** Examine pages 25 to 31 of this PDF. Extract Tables P1 and P2 as tibbles in R.]{.aside} The 2020 Census Technical Documentation contains the "keys" to our dataset on pages 25 through 31 *(these page numbers had to be manually shifted to `99:105` because of how tabulapdf doesn't process assigned page numbers)*. We use a "unite-and-extract" strategy to handle cases where the PDF reader fragments data across columns due to inconsistent whitespace.
+
+*Gemini ignored my instructions and included its original suggested code, not the version I had modified to make it work correctly. It also ignored my instruction to include all of the code in this chapter.*
+
+``` r
+library(tabulapdf)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(purrr)
+
+
+# URL to the official 2020 Census Technical Documentation
+pdf_url <- "https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf"
+
+# Extracting relevant pages
+raw_extraction <- extract_tables(
+  file = pdf_url, 
+  pages = 99:105, 
+  method = "stream", 
+  output = "tibble"
+)
+
+full_df <- bind_rows(raw_extraction) %>%
+  as_tibble() %>%
+  rename(label = 1, ref_name = 2, segment = 3, max_size = 4)
+```
+
+### Creating a Cleaning Function
+
+[**Prompt 4:** The table doesn't begin at the top of page 25. It starts with the line that says "P1. RACE" though its headings are above that line. <br>*The output had data all scrunched in the left two variables* <br>**Prompt 5:** Change this part up a bit so that data populates across four columns… Here's how it looks now. Discard the right two columns. <br>**Gemini** (at the end of a response)**:** Would you like me to wrap this into a single function that can clean both tables at once? <br>**Prompt 6:** Yes, a function would be great. <br>*The function had a minor error that I detected and fixed after seeing the output.*]{.aside}
+
+Because the tables for Race (P1) and Hispanic/Latino Ethnicity (P2) follow similar structures, we define a function to clean the labels and handle data fragmentation.
+
+``` r
+clean_census_metadata <- function(df, table_code) {
+  # Identify the table range
+  start_pattern <- ifelse(table_code == "P001", "P1\\. RACE", "P2\\. HISPANIC")
+  end_pattern   <- ifelse(table_code == "P001", "P2\\. HISPANIC", "P3\\. RACE")
+  
+  start_idx <- which(str_detect(df[[1]], start_pattern))[1]
+  
+  # Determine the end index: either the start of the next table or the end of the data
+  next_table_idx <- which(str_detect(df[[1]], end_pattern))[1]
+  end_idx <- if (!is.na(next_table_idx)) next_table_idx - 1 else nrow(df)
+  
+  df %>%
+    slice(start_idx:end_idx) %>%
+    # Combine all columns except the label into one string to handle fragmentation
+    unite("temp_data", 2:ncol(.), sep = " ", na.rm = TRUE) %>%
+    # Keep only rows that contain the Data Dictionary ID (e.g., P0010001)
+    filter(str_detect(temp_data, table_code)) %>%
+    mutate(
+      # Extract exactly what we need using regex
+      ref_name = str_extract(temp_data, paste0(table_code, "\\d+")),
+      segment  = str_extract(temp_data, "(?<=\\d{7}\\s)\\d{2}"),
+      max_size = str_extract(temp_data, "\\d$"),
+      # Clean label: remove leading dots and trim whitespace
+      label = str_trim(str_remove_all(.[[1]], "\\."))
+    ) %>%
+    # Return only the four requested columns
+    select(label, ref_name, segment, max_size)
+}
+
+table_p1 <- clean_census_metadata(full_df, "P001")
+table_p2 <- clean_census_metadata(full_df, "P002")
+
+saveRDS(table_p1, "data/us_census_2020_P1_race_metadata.rds")
+saveRDS(table_p2, "data/us_census_2020_P2_hispanic_metadata.rds")
+```
+
+------------------------------------------------------------------------
+
+## 2. Processing and Labeling the Dataset
+
+[**Prompt 7:** We've imported a data table: `tn_counties_race_ethnicity` *top of data table included in prompt* <br>Many column names in tn_counties_race_ethnicity correspond to rows in P1 and P2. Use table_p1 and table_p2 to create a libr::dictionary for the table.]{.aside}
+
+Once the metadata is extracted, we import the Tennessee county-level data. We then programmatically assign the extracted labels to the column attributes of the dataframe.
+
+### Assigning Geographic and Demographic Labels
+
+We supplement our extracted P1 and P2 metadata with manual labels for geographic identifiers (like `GEOID` and `SUMLEV`) and specific housing variables.
+
+``` r
+# Import Tennessee County Data from the State Data Center
+tn_counties_race_ethnicity <- readxl::read_excel("data/SDC_TN_PL20_QuickStat_Counties_050.xlsx")
+
+# Combine all metadata sources
+all_metadata <- bind_rows(table_p1, table_p2)
+
+# Assign labels based on column matches
+for (col_name in names(tn_counties_race_ethnicity)) {
+  if (col_name %in% all_metadata$ref_name) {
+    current_label <- all_metadata$label[all_metadata$ref_name == col_name]
+    attr(tn_counties_race_ethnicity[[col_name]], "label") <- current_label
+  }
+}
+```
+
+*Here Gemini skips over some code in the final file. I'll explain it briefly.*
+
+[**Prompt 8:** Suggest labels for these variables in tn_counties_race_ethnicity <br> *output cut and pasted from `str(tn_counties_race_ethnicity)`*]{.aside} *Since there were many variables whose descriptions were listed outside of the P1 and P2 tables, I prompted Gemini for the labels (which were in its training data).*
+
+``` r
+# Define labels for geographic variables
+geo_labels <- c(
+  SUMLEV   = "Summary Level", # 050 = County
+  LOGRECNO = "Logical Record Number",
+  GEOID    = "Full Geographic Identifier",
+  GEOCODE  = "Geographic Code",
+  STATE    = "State FIPS Code",
+  COUNTY   = "County FIPS Code",
+  CBSA     = "Core Based Statistical Area",
+  MEMI     = "Metropolitan/Micropolitan Indicator",
+  CSA      = "Combined Statistical Area",
+  AREALAND = "Area (Land)",
+  AREAWATR = "Area (Water)",
+  NAME     = "Geographic Area Name",
+  BASENAME = "Area Base Name"
+)
+
+# Apply labels to the dataframe
+for (var in names(geo_labels)) {
+  if (var %in% names(tn_counties_race_ethnicity)) {
+    attr(tn_counties_race_ethnicity[[var]], "label") <- geo_labels[[var]]
+  }
+}
+```
+
+[**Prompt 9:** These are the other labels. Make a label list for them and assign them similarly. P0030001: Total population 18 years and over …]{.aside} *I also manually extracted some labels from the PDF and prompted for the revision of other labels.*
+
+``` r
+# 1. Define labels for demographic, housing, and group quarters variables
+extra_labels <- c(
+  P0030001 = "Total population 18 years and over",
+  H0010001 = "Total housing units",
+  H0010002 = "Occupied housing units",
+  H0010003 = "Vacant housing units",
+  P0050001 = "Total population in group quarters",
+  P0050002 = "Institutionalized population",
+  P0050003 = "Correctional facilities for adults",
+  P0050004 = "Juvenile facilities",
+  P0050005 = "Nursing facilities/Skilled-nursing facilities",
+  P0050006 = "Other institutional facilities",
+  P0050007 = "Noninstitutionalized population",
+  P0050008 = "College/University student housing",
+  P0050009 = "Military quarters",
+  P0050010 = "Other noninstitutional facilities"
+)
+
+# 2. Assign these labels to the dataframe attributes
+for (var in names(extra_labels)) {
+  if (var %in% names(tn_counties_race_ethnicity)) {
+    attr(tn_counties_race_ethnicity[[var]], "label") <- extra_labels[[var]]
+  }
+}
+
+# 3. Refresh the dictionary to include all new labels
+tn_data_dictionary <- libr::dictionary(tn_counties_race_ethnicity)
+```
+
+------------------------------------------------------------------------
+
+## 3. Formatting and Clarifying Metadata
+
+[**Prompt 10:** Alter the following labels in both variables: … Further clarify P0020003 through P0020011 by adding "(Not Hispanic or Latino)". Remove trailing colons as you do so.]{.aside} To make the data dictionary truly useful for third-party readers, we must clarify ambiguous labels. For instance, in Table P2, the racial categories specifically refer to the **Not Hispanic or Latino** population. We automate this clarification and remove trailing colons.
+
+``` r
+# Clarifying P2 variables: P0020003 through P0020011
+p2_vars <- c(paste0("P002000", 3:9), "P0020010", "P0020011")
+
+for (var in p2_vars) {
+  if (var %in% names(tn_counties_race_ethnicity)) {
+    current_label <- attr(tn_counties_race_ethnicity[[var]], "label")
+    if (!is.null(current_label)) {
+      new_label <- current_label %>%
+        str_remove(":$") %>%
+        paste("(Not Hispanic or Latino)")
+      attr(tn_counties_race_ethnicity[[var]], "label") <- new_label
+    }
+  }
+}
+```
+
+------------------------------------------------------------------------
+
+## 4. Saving and Exporting for Reuse
+
+The final step in our workflow is generating the dictionary object and saving our work in a serialized format (`.rds`). This allows us to load the labeled data in future sessions without repeating the extraction process.
+
+``` r
+library(libr)
+
+# Generate the final data dictionary
+tn_data_dictionary <- dictionary(tn_counties_race_ethnicity)
+
+# Save the work
+saveRDS(tn_counties_race_ethnicity, "data/tn_counties_census_2020_labeled.rds")
+saveRDS(tn_data_dictionary, "data/tn_counties_census_2020_dictionary.rds")
+```
+
+### Conclusion
+
+By combining the extraction power of `tabulapdf` with the documentation capabilities of `libr`, we transform a cryptic collection of census codes into a well-documented research asset. This workflow ensures that every variable—from `AREALAND` to `P0020005`—carries its full technical definition directly within the R environment.
+
+# Chapter 2: Automated Narrative Reporting with Wikitext
+
+Once a dataset is cleaned and labeled, the next step in the research workflow is often communication. While tables and charts are essential, generating a narrative summary that contextualizes findings can be a repetitive task—especially when dealing with large geographic datasets like the **U.S. Census**. This chapter demonstrates how to use R to transform structured census data into a ready-to-publish Wikitext narrative using the `dplyr`, `scales`, and `glue` packages.
+
+------------------------------------------------------------------------
+
+## Moving from Data to Narrative
+
+[**Prompt 11:** Write code in R to analyze tn_counties_race_ethnicity, and specifically its total population (P0010001) and Black or African American alone (P0010004) columns to replicate the following data summary, but using 2020 Census data. The output should be, like this example, in Wikitext…]{.aside} The goal of this workflow is to replicate a historical population summary—originally written for the 2010 Census—using the latest 2020 data. By automating this, we ensure that the narrative remains accurate, reproducible, and formatted correctly for specific platforms like Wikipedia.
+
+*Here's the sample text, which I wrote myself on Wikipedia in 2015, consulting a Census publication by hand:*
+
+> In the [2010 Census](https://en.wikipedia.org/wiki/2010_United_States_Census "2010 United States Census"), 1,057,315 Tennessee residents were identified as African American (of the total 6,346,105). In 19 of the state's 95 counties, African Americans make up more than 10% of the population: [Shelby](https://en.wikipedia.org/wiki/Shelby_County,_Tennessee "Shelby County, Tennessee") (52.1%), [Haywood](https://en.wikipedia.org/wiki/Haywood_County,_Tennessee "Haywood County, Tennessee") (50.4%), [Hardeman](https://en.wikipedia.org/wiki/Hardeman_County,_Tennessee "Hardeman County, Tennessee") (41.4%), [Madison](https://en.wikipedia.org/wiki/Madison_County,_Tennessee "Madison County, Tennessee") (36.3%), [Lauderdale](https://en.wikipedia.org/wiki/Lauderdale_County,_Tennessee "Lauderdale County, Tennessee") (34.9%), [Fayette](https://en.wikipedia.org/wiki/Fayette_County,_Tennessee "Fayette County, Tennessee") (28.1%), [Davidson](https://en.wikipedia.org/wiki/Davidson_County,_Tennessee "Davidson County, Tennessee") (27.7%), [Lake](https://en.wikipedia.org/wiki/Lake_County,_Tennessee "Lake County, Tennessee") (27.7%), [Hamilton](https://en.wikipedia.org/wiki/Hamilton_County,_Tennessee "Hamilton County, Tennessee") (20.2%), [Montgomery](https://en.wikipedia.org/wiki/Montgomery_County,_Tennessee "Montgomery County, Tennessee") (19.1%), [Gibson](https://en.wikipedia.org/wiki/Gibson_County,_Tennessee "Gibson County, Tennessee") (18.8%), [Tipton](https://en.wikipedia.org/wiki/Tipton_County,_Tennessee "Tipton County, Tennessee") (18.7%), [Dyer](https://en.wikipedia.org/wiki/Dyer_County,_Tennessee "Dyer County, Tennessee") (14.3%), [Crockett](https://en.wikipedia.org/wiki/Crockett_County,_Tennessee "Crockett County, Tennessee") (12.6%), [Rutherford](https://en.wikipedia.org/wiki/Rutherford_County,_Tennessee "Rutherford County, Tennessee") (12.5%), [Obion](https://en.wikipedia.org/wiki/Obion_County,_Tennessee "Obion County, Tennessee") (10.6%), [Giles](https://en.wikipedia.org/wiki/Giles_County,_Tennessee "Giles County, Tennessee") (10.2%), and [Carroll](https://en.wikipedia.org/wiki/Carroll_County,_Tennessee "Carroll County, Tennessee") (10.1%). Most of these counties are in West Tennessee, where plantation agriculture was concentrated. African Americans in the seven counties of Shelby (483,381), Davidson (173,730), Hamilton (67,900), [Knox](https://en.wikipedia.org/wiki/Knox_County,_Tennessee "Knox County, Tennessee") (38,045), Madison (35,636), Montgomery (32,982), and Rutherford (32,886) make up more than 81% of the all African Americans in the state.
+
+## 1. Defining the Analytical Scope
+
+The analysis focuses on two primary metrics: total population (`P0010001`) and the population of individuals identified as "Black or African American alone" (`P0010004`). These codes correspond directly to the structure found in the official **Table P1: Race** technical documentation.
+
+``` r
+library(dplyr)
+
+# 1. Calculate State-wide Totals
+state_total_pop <- sum(tn_counties_race_ethnicity$P0010001)
+state_black_pop <- sum(tn_counties_race_ethnicity$P0010004)
+```
+
+By aggregating these totals at the state level first, we establish the baseline necessary to calculate both county-level concentrations and the overall statewide percentage.
+
+------------------------------------------------------------------------
+
+## 2. Threshold Filtering and Regional Concentration
+
+The narrative requires identifying counties where a specific demographic makes up more than 10% of the population. This is achieved by creating a calculated field (`black_pct`) and filtering the dataset.
+
+``` r
+# 2. Analyze County Percentages
+county_stats <- tn_counties_race_ethnicity %>%
+  mutate(black_pct = (P0010004 / P0010001) * 100)
+
+# Filter for counties > 10% and sort descending
+over_10_pct <- county_stats %>%
+  filter(black_pct > 10) %>%
+  arrange(desc(black_pct))
+```
+
+To make this data "Wiki-ready," we use the `glue` package to generate **piped wikilinks**. For example, the code transforms a row for "Shelby" into `[[Shelby County, Tennessee|Shelby]] (52.1%)`, which allows a Wikipedia page to link to the full county article while displaying only the short name in the text.
+
+``` r
+# Format the list for Wikitext: [[Basename County, Tennessee|Basename]] (XX.X%)
+over_10_list <- over_10_pct %>%
+  mutate(wikilink = glue("[[{BASENAME} County, Tennessee|{BASENAME}]] ({number(black_pct, accuracy = 0.1)}%)")) %>%
+  pull(wikilink) %>%
+  paste(collapse = ", ")
+
+# 3. Analyze Top 7 Counties by Volume
+top_7_counties <- county_stats %>%
+  arrange(desc(P0010004)) %>%
+  slice(1:7)
+
+top_7_sum <- sum(top_7_counties$P0010004)
+top_7_share_of_state <- (top_7_sum / state_black_pop) * 100
+
+# Format the list for Wikitext: Basename (Count)
+top_7_list <- top_7_counties %>%
+  mutate(count_label = glue("{BASENAME} ({comma(P0010004)})")) %>%
+  pull(count_label) %>%
+  paste(collapse = ", ")
+```
+
+------------------------------------------------------------------------
+
+## 3. Formatting for Readability with `scales`
+
+Raw numbers (e.g., `1057315`) are difficult for human readers to process. The `scales` package is used within the script to apply comma separators and precision-controlled percentages.
+
+- **`comma()`**: Used for large population counts like `{comma(state_black_pop)}`.
+- **`number()`**: Used to ensure percentages have a consistent accuracy (e.g., `accuracy = 0.1` for one decimal place).
+
+------------------------------------------------------------------------
+
+## 4. Constructing the Narrative Template
+
+The final narrative is assembled using a **template string**. The `glue` package allows for seamless interpolation of R variables into a large block of text, including the necessary `<ref>` tags for citations.
+
+``` r
+library(glue)
+
+# Constructing the Final Wikitext
+# 4. Construct the Final Wikitext
+wikitext_summary <- glue(
+  "In the [[2020 United States Census|2020 Census]], {comma(state_black_pop)} ",
+  "Tennessee residents were identified as African American (of the total ",
+  "{comma(state_total_pop)}).<ref>This figure refers to those who report ",
+  "African-American and no other race.</ref> In {nrow(over_10_pct)} of the ",
+  "state's 95 counties, African Americans make up more than 10% of the ",
+  "population: {over_10_list}. Most of these counties are in West Tennessee, ",
+  "where plantation agriculture was concentrated. African Americans in the ",
+  "seven counties of {top_7_list} make up more than ",
+  "{floor(top_7_share_of_state)}% of the all African Americans in the state."
+)
+
+citation_tn_data <- "<ref>Data listed under Counties, Tables at {{Cite web| title = 2020 PL 94-171 Redistricting Data Summary File| work = Tennessee State Data Center| access-date = 2026-01-04| url = https://tnsdc.utk.edu/data-and-tools/2020-census/2020-pl-94-171-redistricting-data-summary-file/}}</ref>"
+wikitext_summary <- paste(wikitext_summary, citation_tn_data, sep=" ")
+
+cat(wikitext_summary)
+```
+
+### Dynamic Citation Management
+
+A key feature of this script is the inclusion of a dynamic citation (*Actually a Wikipedia Citation Template*) that links back to the **Tennessee State Data Center**. This ensures that any reader of the generated Wikitext can immediately verify the source of the 2020 redistricting data. *Gemini doesn't handle these mell, so I generated it in Zotero.*
+
+------------------------------------------------------------------------
+
+## Summary of the Workflow
+
+By automating the reporting process, researchers can:
+
+1.  **Eliminate Manual Errors**: Calculations like the "81% of all African Americans in the state" are performed by the computer rather than estimated by hand.
+2.  **Ensure Consistency**: Standardizing the `[[County Name, Tennessee|Basename]]` format ensures all links work correctly across the encyclopedia.
+3.  **Speed Up Updates**: When the 2030 data is eventually released, the same script can be run with the new file to generate an updated narrative in seconds.
+
+This approach demonstrates that R is not just a tool for statistical calculation, but also a powerful engine for **automated, reproducible technical writing**.
