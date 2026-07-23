@@ -122,12 +122,18 @@ library(htmltools)
 library(english)
 library(kableExtra)
 library(glue)
+library(wikitools)
 
-source("src/wikipedia-tools.R")
+source("src/bolivia-builders.R")
 source("src/gh-copy-assets.R")
 source("src/generate-muni-poverty-tables.R")
 
 dir.create(here::here("output", "bolivia-municipality-wikitext"), recursive = TRUE, showWarnings = FALSE)
+
+# Build a full Wikipedia URL from a page title
+wikipedia_url_for <- function(title, lang = "en") {
+  paste0("https://", lang, ".wikipedia.org/wiki/", gsub(" ", "_", title))
+}
 
 # Title case wrapper that preserves lowercase "de" unless it's the first word
 title_case_preserve_de <- function(x) {
@@ -864,7 +870,7 @@ muni_block <- function(id_muni, muni_name, department, concejo) {
     autoident_wt, "\n\n",
     lang_wt,
     if (!is.null(comm)) paste0("\n\n", comm$wikitext) else "",
-    "==Poverty and Basic Services==\n",
+    # "==Poverty and Basic Services==\n",
     poverty_wt, "\n\n",
     reflist_wt, "\n",
     "==External links==\n",
