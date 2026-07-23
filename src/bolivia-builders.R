@@ -10,6 +10,9 @@ library(tibble)
 library(knitr)
 library(htmltools)
 
+# Shared i18n layer: label() accessor + translate_values() + transcats tables.
+source(here::here("src", "muni-i18n.R"))
+
 # ---- Bolivia municipal council wikitable and HTML preview ----------------------
 
 # Language label sets used by both the wikitable and kable builders.
@@ -210,27 +213,29 @@ build_council_kable     <- build_council_kable_en
 
 # ---- Bolivia demographic tables (language use & ethnic identification) --------
 
-# Internal helpers
-.fmt_n   <- function(x) format(round(x), big.mark = ",", scientific = FALSE)
+# Internal helpers: number formatting with language-aware thousands separator.
+# Spanish Wikipedia uses non-breaking space (&nbsp; in wikitext) as thousands separator;
+# English uses comma. Decimal separator is always comma for Bolivian context.
+.fmt_n <- function(x, lang = "en") {
+  big_mark <- if (lang == "es") "&nbsp;" else ","
+  format(round(x), big.mark = big_mark, scientific = FALSE)
+}
 .fmt_pct <- function(x) sprintf("%.1f%%", x * 100)
 
-# Translate an ethnic group column name to a display label.
-# "Sin especificar" (detected as a substring) → "Unspecified Indigenous";
-# any text that follows it in the string is ignored.
-# All other names have trailing parenthetical footnote markers stripped.
-.translate_ethnic_group <- function(g) {
-  ifelse(grepl("Sin especificar", g, fixed = TRUE),
-         "Unspecified Indigenous",
-         trimws(sub("\\s*\\(.*", "", g)))
+# Translate an ethnic-group column name to a display label in `lang`.
+# Backed by the transcats "ethnic_group" translation table (data/translations/):
+# trailing parenthetical footnote markers are stripped in both languages, and
+# "Sin especificar" maps to "Unspecified Indigenous" (en) / "Indígena sin
+# especificar" (es). Unknown values pass through unchanged.
+.translate_ethnic_group <- function(g, lang = "en") {
+  translate_values(g, "ethnic_group", lang)
 }
 
-.clean_lang_name <- function(x) {
-  x |>
-    str_remove("_(2024|2012)$") |>
-    str_replace_all("_", " ") |>
-    str_to_title() |>
-    str_replace("^Castellano$", "Spanish") |>
-    str_replace("^Otras Declaraciones$", "Other")
+# Translate a language column name (with or without a _2024/_2012 suffix) to a
+# display label in `lang`, via the transcats "language" translation table.
+.clean_lang_name <- function(x, lang = "en") {
+  base <- str_remove(x, "_(2024|2012)$")
+  translate_values(base, "language", lang)
 }
 
 # Internal: append optional source row spanning ncols columns
@@ -257,9 +262,10 @@ build_council_kable     <- build_council_kable_en
 #' @param source,source_refs  Optional source row
 #'
 #' @return MediaWiki wikitable string
-build_language_wikitable_en <- function(id_muni, lang_data, pop_data,
-                                         caption = "Languages spoken",
-                                         source = NULL, source_refs = NULL) {
+# Internal: language-use wikitable for a given language
+.build_language_wikitable <- function(id_muni, lang_data, pop_data,
+                                       caption, source, source_refs, lang) {
+  if (is.null(caption)) caption <- label("cap_languages", lang)
   row <- lang_data |> filter(ine_code == id_muni,
                               nivel == "Municipio/TIOC") |>
          slice(1)
@@ -279,7 +285,7 @@ build_language_wikitable_en <- function(id_muni, lang_data, pop_data,
   cols_2024 <- cols_2024[valid]; cols_2012 <- cols_2012[valid]
 
   langs <- tibble(
-    language = .clean_lang_name(cols_2024),
+    language = .clean_lang_name(cols_2024, lang),
     n_2024   = sapply(cols_2024, function(col) as.double(row[[col]])),
     n_2012   = sapply(cols_2012, function(col) as.double(row[[col]])),
     pct_2024 = n_2024 / pop_2024,
@@ -293,20 +299,42 @@ build_language_wikitable_en <- function(id_muni, lang_data, pop_data,
   lines <- c('{| class="wikitable"')
   if (!is.null(caption)) lines <- c(lines, paste0("|+ ", caption))
   lines <- c(lines,
-    "! Language !! 2024 speakers !! 2024 % !! 2012 speakers !! 2012 %")
+    sprintf("! %s !! %s !! %s !! %s !! %s",
+            label("col_language", lang),      label("col_speakers_2024", lang),
+            label("col_pct_2024", lang),      label("col_speakers_2012", lang),
+            label("col_pct_2012", lang)))
 
   for (i in seq_len(nrow(langs))) {
     r <- langs[i, ]
     lines <- c(lines, "|-",
                sprintf("| %s || %s || %s || %s || %s",
                        r$language,
-                       .fmt_n(r$n_2024), .fmt_pct(r$pct_2024),
-                       .fmt_n(r$n_2012), .fmt_pct(r$pct_2012)))
+                       .fmt_n(r$n_2024, lang), .fmt_pct(r$pct_2024),
+                       .fmt_n(r$n_2012, lang), .fmt_pct(r$pct_2012)))
   }
 
-  lines <- .append_source_row(lines, 5L, source, source_refs, "Source")
+  lines <- .append_source_row(lines, 5L, source, source_refs,
+                              label("lbl_source", lang))
   lines <- c(lines, "|}")
   paste(lines, collapse = "\n")
+}
+
+#' @rdname build_language_wikitable
+#' @export
+build_language_wikitable_en <- function(id_muni, lang_data, pop_data,
+                                         caption = NULL,
+                                         source = NULL, source_refs = NULL) {
+  .build_language_wikitable(id_muni, lang_data, pop_data, caption,
+                            source, source_refs, lang = "en")
+}
+
+#' @rdname build_language_wikitable
+#' @export
+build_language_wikitable_es <- function(id_muni, lang_data, pop_data,
+                                         caption = NULL,
+                                         source = NULL, source_refs = NULL) {
+  .build_language_wikitable(id_muni, lang_data, pop_data, caption,
+                            source, source_refs, lang = "es")
 }
 
 #' Build an ethnic-identification wikitable for a municipality (English, 2024 only)
@@ -321,9 +349,10 @@ build_language_wikitable_en <- function(id_muni, lang_data, pop_data,
 #' @param source,source_refs  Optional source row
 #'
 #' @return MediaWiki wikitable string
-build_autoident_wikitable_en <- function(id_muni, auto_data, pop_data,
-                                          caption = "Ethnic identification (2024)",
-                                          source = NULL, source_refs = NULL) {
+# Internal: ethnic-identification wikitable for a given language (2024 only)
+.build_autoident_wikitable <- function(id_muni, auto_data, pop_data,
+                                        caption, source, source_refs, lang) {
+  if (is.null(caption)) caption <- label("cap_autoident", lang)
   row <- auto_data |> filter(ine_code == id_muni,
                               nivel == "Municipio/TIOC") |>
          slice(1)
@@ -349,18 +378,41 @@ build_autoident_wikitable_en <- function(id_muni, auto_data, pop_data,
 
   lines <- c('{| class="wikitable"')
   if (!is.null(caption)) lines <- c(lines, paste0("|+ ", caption))
-  lines <- c(lines, "! Group !! Population !! %")
+  lines <- c(lines, sprintf("! %s !! %s !! %s",
+                             label("col_group", lang),
+                             label("col_population", lang),
+                             label("col_pct", lang)))
 
   for (i in seq_len(nrow(groups))) {
     r <- groups[i, ]
     lines <- c(lines, "|-",
                sprintf("| %s || %s || %s",
-                       .translate_ethnic_group(r$group), .fmt_n(r$n), .fmt_pct(r$pct)))
+                       .translate_ethnic_group(r$group, lang),
+                       .fmt_n(r$n, lang), .fmt_pct(r$pct)))
   }
 
-  lines <- .append_source_row(lines, 3L, source, source_refs, "Source")
+  lines <- .append_source_row(lines, 3L, source, source_refs,
+                              label("lbl_source", lang))
   lines <- c(lines, "|}")
   paste(lines, collapse = "\n")
+}
+
+#' @rdname build_autoident_wikitable
+#' @export
+build_autoident_wikitable_en <- function(id_muni, auto_data, pop_data,
+                                          caption = NULL,
+                                          source = NULL, source_refs = NULL) {
+  .build_autoident_wikitable(id_muni, auto_data, pop_data, caption,
+                             source, source_refs, lang = "en")
+}
+
+#' @rdname build_autoident_wikitable
+#' @export
+build_autoident_wikitable_es <- function(id_muni, auto_data, pop_data,
+                                          caption = NULL,
+                                          source = NULL, source_refs = NULL) {
+  .build_autoident_wikitable(id_muni, auto_data, pop_data, caption,
+                             source, source_refs, lang = "es")
 }
 
 #' HTML kable preview of language use
@@ -370,7 +422,8 @@ build_autoident_wikitable_en <- function(id_muni, auto_data, pop_data,
 #' @param pop_data Data frame with population columns
 #'
 #' @return HTML kable for display
-build_language_kable_en <- function(id_muni, lang_data, pop_data) {
+# Internal: language-use kable preview for a given language
+.build_language_kable <- function(id_muni, lang_data, pop_data, lang) {
   row <- lang_data |> filter(ine_code == id_muni,
                               nivel == "Municipio/TIOC") |>
          slice(1)
@@ -390,22 +443,38 @@ build_language_kable_en <- function(id_muni, lang_data, pop_data) {
   n12 <- sapply(cols_2012, function(col) as.double(row[[col]]))
 
   df <- tibble(
-    Language        = .clean_lang_name(cols_2024),
-    `2024 speakers` = n24,
-    `2024 %`        = sprintf("%.1f%%", n24 / pop_2024 * 100),
-    `2012 speakers` = n12,
-    `2012 %`        = sprintf("%.1f%%", n12 / pop_2012 * 100)
+    language  = .clean_lang_name(cols_2024, lang),
+    spk_2024  = n24,
+    pct_2024  = sprintf("%.1f%%", n24 / pop_2024 * 100),
+    spk_2012  = n12,
+    pct_2012  = sprintf("%.1f%%", n12 / pop_2012 * 100)
   ) |>
-    filter(as.numeric(`2024 speakers`) / pop_2024 >= 0.01 |
-           as.numeric(`2012 speakers`) / pop_2012 >= 0.01) |>
-    arrange(desc(`2024 speakers`)) |>
-    mutate(`2024 speakers` = .fmt_n(`2024 speakers`),
-           `2012 speakers` = .fmt_n(`2012 speakers`))
+    filter(as.numeric(spk_2024) / pop_2024 >= 0.01 |
+           as.numeric(spk_2012) / pop_2012 >= 0.01) |>
+    arrange(desc(spk_2024)) |>
+    mutate(spk_2024 = .fmt_n(spk_2024, lang),
+           spk_2012 = .fmt_n(spk_2012, lang))
+
+  names(df) <- c(label("col_language", lang),  label("col_speakers_2024", lang),
+                 label("col_pct_2024", lang),  label("col_speakers_2012", lang),
+                 label("col_pct_2012", lang))
 
   HTML(
     kable(df, format = "html", escape = TRUE,
           table.attr = 'class="table table-sm table-striped" style="font-size:11px;width:100%;"')
   )
+}
+
+#' @rdname build_language_kable
+#' @export
+build_language_kable_en <- function(id_muni, lang_data, pop_data) {
+  .build_language_kable(id_muni, lang_data, pop_data, lang = "en")
+}
+
+#' @rdname build_language_kable
+#' @export
+build_language_kable_es <- function(id_muni, lang_data, pop_data) {
+  .build_language_kable(id_muni, lang_data, pop_data, lang = "es")
 }
 
 #' HTML kable preview of ethnic identification
@@ -415,7 +484,8 @@ build_language_kable_en <- function(id_muni, lang_data, pop_data) {
 #' @param pop_data Data frame with population columns
 #'
 #' @return HTML kable for display
-build_autoident_kable_en <- function(id_muni, auto_data, pop_data) {
+# Internal: ethnic-identification kable preview for a given language
+.build_autoident_kable <- function(id_muni, auto_data, pop_data, lang) {
   row <- auto_data |> filter(ine_code == id_muni,
                               nivel == "Municipio/TIOC") |>
          slice(1)
@@ -430,17 +500,32 @@ build_autoident_kable_en <- function(id_muni, auto_data, pop_data) {
 
   grp_cols <- names(row)[!names(row) %in% meta_cols]
   df <- tibble(
-    Group   = grp_cols,
-    People  = sapply(grp_cols, function(col) as.double(row[[col]]))
+    group   = grp_cols,
+    people  = sapply(grp_cols, function(col) as.double(row[[col]]))
   ) |>
-    mutate(`%` = sprintf("%.1f%%", People / pop_2024 * 100)) |>
-    filter(People / pop_2024 >= 0.01) |>
-    arrange(desc(People)) |>
-    mutate(Group  = .translate_ethnic_group(Group),
-           People = .fmt_n(People))
+    mutate(pct = sprintf("%.1f%%", people / pop_2024 * 100)) |>
+    filter(people / pop_2024 >= 0.01) |>
+    arrange(desc(people)) |>
+    mutate(group  = .translate_ethnic_group(group, lang),
+           people = .fmt_n(people, lang))
+
+  names(df) <- c(label("col_group", lang), label("col_people", lang),
+                 label("col_pct", lang))
 
   HTML(
     kable(df, format = "html", escape = TRUE,
           table.attr = 'class="table table-sm table-striped" style="font-size:11px;width:100%;"')
   )
+}
+
+#' @rdname build_autoident_kable
+#' @export
+build_autoident_kable_en <- function(id_muni, auto_data, pop_data) {
+  .build_autoident_kable(id_muni, auto_data, pop_data, lang = "en")
+}
+
+#' @rdname build_autoident_kable
+#' @export
+build_autoident_kable_es <- function(id_muni, auto_data, pop_data) {
+  .build_autoident_kable(id_muni, auto_data, pop_data, lang = "es")
 }

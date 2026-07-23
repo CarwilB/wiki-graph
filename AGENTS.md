@@ -12,6 +12,42 @@
 | **Wikipedia Reference Extraction** | Extract citation templates from Wikipedia and import to Zotero. Full pipeline in `wiki-refs-to-zotero.R`; three new helper scripts (template, example, workflow); comprehensive guide in `WIKI-REFS-WORKFLOW.md`. | [`PROJECTS-WIKI-REFS.md`](PROJECTS-WIKI-REFS.md) |
 | **Language Diversity** | Map linguameta language codes to Wikipedia editions. 47 zero-article languages covered (Mar 2026). Main document: `wiki-language-diversity-v2.qmd`. | [`PROJECTS-LANGUAGE-DIVERSITY.md`](PROJECTS-LANGUAGE-DIVERSITY.md) |
 
+## Multilingual Municipality Generator (Jul 2026)
+
+Bilingual (en/es) Wikipedia article generator. Both qmds are thin wrappers over
+a shared, `lang`-aware engine.
+
+**Entry points**: `bolivia-muni-generator-en.qmd` (`lang="en"`),
+`bolivia-muni-generator-es.qmd` (`lang="es"`). Each loads data + derived lookups,
+then calls `render_muni_blocks(muni_lookup, concejo_data, lang=...)`. Full-page
+wikitext is written to `output/bolivia-municipality-wikitext/<lang>/[id].txt`.
+
+**Shared engine (src/)**:
+- `muni-article-functions.R` — all `compose_*` / `build_*` / `muni_block` /
+  `render_muni_blocks`, every function `lang`-aware. Sources the three files below.
+- `bolivia-builders.R` — council/language/autoident wikitable + kable builders;
+  `_en`/`_es` wrappers over `.build_*(..., lang)` internals.
+- `muni-i18n.R` — `label(key, lang)` + `translate_values(x, variable, lang)`,
+  backed by transcats; registers the translation tables on source.
+- `muni-phrases.R` — `phrases[[lang]]` prose dictionary (ordinals, gender,
+  glue templates). Spanish mayor sentence is gendered from `alcaldes$autoridad`
+  ("ALCALDESA" → feminine).
+- `muni-references.R` — `refs[[lang]]` citation registry + `ref_with_page()`.
+  **es citations are UNVERIFIED mechanical {{Cita}} conversions** ([[TODO:es]]).
+
+**Translation assets** (`data/translations/`, see the `transcats` skill):
+`muni_data_values.csv` (ethnic_group, language; source col `raw`),
+`muni_var_labels.csv` (wide label table), `muni_translations.rds` (parsed).
+
+**Other data**: `data/prov_link_lookup.rds` — id_prov → es.wikipedia province
+article title (built from `bo_province_wiki_presence.rds`; 10 manual overrides).
+
+**Known gaps**: poverty table (`generate-muni-poverty-tables.R`) is English-only;
+table cell numbers use comma thousands separators in both languages.
+
+**EN parity**: verified byte-identical to the pre-refactor output except a fixed
+`== References ==/n...` typo (now real newlines).
+
 ## Core Infrastructure
 
 ### `cel_helpers.R`

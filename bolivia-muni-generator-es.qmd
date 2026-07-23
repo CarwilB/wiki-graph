@@ -1,12 +1,37 @@
 ---
-title: "Bolivia 2026 — Tablas del Concejo Municipal"
-subtitle: "Wikitext listo para copiar a Wikipedia"
+title: "Texto y figuras de municipios de Bolivia para Wikipedia"
+subtitle: "Wikitexto listo para copiar a Wikipedia — múltiples fuentes citadas"
+params:
+  wiki_filter: "all"   # "existing", "new", or "all"
 format:
   html:
     code-fold: true
     toc: false
     self-contained: true
 ---
+
+::: {style="font-size: 11px;"}
+
+## Elementos generados por municipio
+
+Cada sección expandible de municipio contiene los siguientes bloques copiables:
+
+- **Copiar wikitexto de introducción** — de una a tres oraciones que identifican la ubicación del municipio, con oraciones opcionales de rango poblacional y contexto provincial.
+- **Copiar wikitexto de gobierno** — dos párrafos para la sección `==Gobierno==` (alcalde/alcaldesa y concejo municipal).
+- **Copiar tabla del concejo** — wikitabla de miembros del concejo (una fila por escaño/tipo).
+- **Copiar tabla de población** — wikitabla horizontal de población censal para `==Demografía==`.
+- **Copiar pirámide de población** — plantilla `{{Pirámide de población}}` con grupos quinquenales del censo de 2024.
+- **Copiar tabla de identidad** e **Copiar tabla de idiomas** — autoidentificación indígena e idiomas hablados (censo de 2024), para `==Idiomas e identificación indígena==`.
+- **Copiar wikitexto de comunidades** — sección `==Comunidades==` con las comunidades en tres columnas.
+
+El **wikitexto de la página completa** se guarda en `output/bolivia-municipality-wikitext/es/[id].txt` y ensambla todas las secciones en orden: introducción → `==Gobierno==` → `==Demografía==` → `==Idiomas e identificación indígena==` → `==Comunidades==`.
+
+> **Nota:** la tabla de pobreza y servicios básicos aún se genera en inglés (proviene de `generate-muni-poverty-tables.R`, que todavía no es multilingüe). Las citas en español (`{{Cita ...}}`) son conversiones mecánicas sin verificar; revísense antes de publicar.
+
+---
+
+:::
+
 
 ```{r}
 #| label: setup
@@ -15,103 +40,177 @@ format:
 library(dplyr)
 library(purrr)
 library(htmltools)
+library(english)
+library(kableExtra)
+library(glue)
+library(wikitools)
 
-source("src/wikipedia-tools.R")
+# Language-aware article engine (sources bolivia-builders.R -> muni-i18n.R,
+# plus muni-phrases.R and muni-references.R).
+source("src/muni-article-functions.R")
 source("src/gh-copy-assets.R")
+source("src/generate-muni-poverty-tables.R")
 
-muni_lookup  <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
-concejo_data <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
-```
+# Language for this render.
+lang <- "es"
 
-```{r}
-#| label: source-data
-#| include: false
+muni_lookup       <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
+prov_lookup       <- readRDS(here::here("data", "prov_id_lookup_table.rds"))
+prov_link_lookup  <- readRDS(here::here("data", "prov_link_lookup.rds"))
+muni_roster       <- readRDS(here::here("data", "oep2026", "muni_roster.rds"))
+concejo_data      <- readRDS(here::here("data", "oep2026", "muni_concejo_comb.rds"))
+concejal_summary  <- readRDS(here::here("data", "oep2026", "concejal_summary.rds"))
+muni_concejal_ioc <- readRDS(here::here("data", "oep2026", "muni_concejal_ioc.rds"))
+alcaldes          <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
 
-# Page numbers from the OEP results PDF, used to cite each municipality's table
-clean       <- readRDS(here::here("data", "oep2026_clean.rds"))
-roster_pages <- clean$muni_roster |>
-  select(id_muni, page)
-rm(clean)
-```
+bo_municipality_wiki_presence <- readRDS(here::here("data", "bo_municipality_wiki_presence.rds"))
+municipalities_wd_ine <- readRDS(here::here("data", "municipalities_wd_ine.rds"))
 
-```{r}
-#| label: helpers
-#| include: false
+wd_images <- readRDS(here::here("data", "muni_wd_images.rds")) |>
+  select(ine_code, commons_cat)
 
-wikitext_block <- function(id, label, content) {
-  tagList(
-    tags$button(
-      class = "copy-btn",
-      style = "margin-bottom: 6px;",
-      onclick = sprintf("copyTableToClipboard('%s', this)", id),
-      label
-    ),
-    tags$pre(
-      tags$code(content),
-      style = paste(
-        "background-color: #f6f8fa; padding: 10px; border-radius: 6px;",
-        "overflow-x: auto; font-size: 11px; white-space: pre; margin: 0;"
-      )
-    ),
-    tags$textarea(
-      id = id,
-      style = "position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;",
-      readonly = TRUE,
-      content
+roster_pages <- muni_roster |> select(id_muni, page)
+
+pop_muni <- readRDS(here::here("data", "cpv2024", "population_municipality.rds")) |>
+  select(id_muni = ine_code, pop_2024 = pop_2024_total, pop_2012 = pop_2012_total)
+
+census_pop   <- readRDS(here::here("data", "cpv2024", "census_pop_historical.rds"))
+lang_data    <- readRDS(here::here("data", "cpv2024", "idiomas_hablados_muni.rds"))
+auto_data    <- readRDS(here::here("data", "cpv2024", "autoidentificacion_municipio.rds"))
+pop_age_muni <- readRDS(here::here("data", "cpv2024", "population_age_municipality.rds"))
+dept_capital_ids <- paste0(sprintf("%02d", 1:9), "0101")
+
+poverty_nbi_muni <- readRDS(here::here("data", "cpv2024", "poverty_nbi_muni.rds"))
+improved_water_muni <- readRDS(here::here("data", "cpv2024", "improved_water_muni.rds"))
+improved_sanitation_muni <- readRDS(here::here("data", "cpv2024", "improved_sanitation_muni.rds"))
+
+# Departmental + national summary required by generate_poverty_service_tables()
+final_table <- bind_rows(
+  poverty_nbi_muni |>
+    filter(is.na(area) | area == "") |>
+    group_by(department) |>
+    summarise(
+      poor_2012 = sum(poor_total_2012, na.rm = TRUE),
+      poor_2024 = sum(poor_total_2024, na.rm = TRUE),
+      pop_2012 = sum(ref_pop_nbi_2012, na.rm = TRUE),
+      pop_2024 = sum(ref_pop_nbi_2024, na.rm = TRUE),
+      .groups = "drop"
+    ) |>
+    mutate(
+      poverty_pct_2012 = (poor_2012 / pop_2012) * 100,
+      poverty_pct_2024 = (poor_2024 / pop_2024) * 100,
+      poverty_change = poverty_pct_2024 - poverty_pct_2012
+    ) |>
+    left_join(
+      improved_water_muni |>
+        filter(is.na(area) | area == "") |>
+        group_by(department) |>
+        summarise(
+          water_lack_2001 = weighted.mean(pct_unimproved_water_2001, n_total_2001, na.rm = TRUE),
+          water_lack_2024 = weighted.mean(pct_unimproved_water_2024, n_total_2024, na.rm = TRUE),
+          .groups = "drop"
+        ) |>
+        mutate(water_change = water_lack_2024 - water_lack_2001),
+      by = "department"
+    ) |>
+    left_join(
+      improved_sanitation_muni |>
+        filter(is.na(area) | area == "") |>
+        group_by(department) |>
+        summarise(
+          sanitation_lack_2001 = weighted.mean(pct_unimproved_sanitation_2001, n_total_2001, na.rm = TRUE),
+          sanitation_lack_2024 = weighted.mean(pct_unimproved_sanitation_2024, n_total_2024, na.rm = TRUE),
+          .groups = "drop"
+        ) |>
+        mutate(sanitation_change = sanitation_lack_2024 - sanitation_lack_2001),
+      by = "department"
+    ) |>
+    select(department, poverty_pct_2012, poverty_pct_2024, poverty_change,
+           water_lack_2001, water_lack_2024, water_change,
+           sanitation_lack_2001, sanitation_lack_2024, sanitation_change),
+  tibble(
+    department = "Bolivia",
+    poverty_pct_2012 = (sum(poverty_nbi_muni$poor_total_2012, na.rm = TRUE) /
+                        sum(poverty_nbi_muni$ref_pop_nbi_2012, na.rm = TRUE)) * 100,
+    poverty_pct_2024 = (sum(poverty_nbi_muni$poor_total_2024, na.rm = TRUE) /
+                        sum(poverty_nbi_muni$ref_pop_nbi_2024, na.rm = TRUE)) * 100,
+    water_lack_2001 = weighted.mean(improved_water_muni$pct_unimproved_water_2001,
+                                    improved_water_muni$n_total_2001, na.rm = TRUE),
+    water_lack_2024 = weighted.mean(improved_water_muni$pct_unimproved_water_2024,
+                                    improved_water_muni$n_total_2024, na.rm = TRUE),
+    sanitation_lack_2001 = weighted.mean(improved_sanitation_muni$pct_unimproved_sanitation_2001,
+                                         improved_sanitation_muni$n_total_2001, na.rm = TRUE),
+    sanitation_lack_2024 = weighted.mean(improved_sanitation_muni$pct_unimproved_sanitation_2024,
+                                         improved_sanitation_muni$n_total_2024, na.rm = TRUE)
+  ) |>
+    mutate(
+      poverty_change = poverty_pct_2024 - poverty_pct_2012,
+      water_change = water_lack_2024 - water_lack_2001,
+      sanitation_change = sanitation_lack_2024 - sanitation_lack_2001
+    ) |>
+    select(department, poverty_pct_2012, poverty_pct_2024, poverty_change,
+           water_lack_2001, water_lack_2024, water_change,
+           sanitation_lack_2001, sanitation_lack_2024, sanitation_change)
+)
+
+# Wikipedia presence in THIS language (Spanish): which municipalities have an article?
+wiki_presence <- bo_municipality_wiki_presence$data |>
+  left_join(
+    municipalities_wd_ine |> select(qid, ine_code),
+    by = "qid"
+  ) |>
+  filter(!is.na(ine_code))
+
+has_lang_col <- lang %in% names(wiki_presence)
+munis_with_wiki <- if (has_lang_col) {
+  wiki_presence |> filter(.data[[lang]] > 0) |> pull(ine_code)
+} else character(0)
+
+if (params$wiki_filter == "existing") {
+  muni_lookup <- muni_lookup |> filter(id_muni %in% munis_with_wiki)
+} else if (params$wiki_filter == "new") {
+  muni_lookup <- muni_lookup |> filter(!id_muni %in% munis_with_wiki)
+}
+
+area_muni <- readxl::read_excel(here::here("maps", "bol_admin_boundaries.xlsx"),
+                                  sheet = "bol_admin3") |>
+  mutate(id_muni = stringr::str_sub(adm3_pcode, 3, 8)) |>
+  select(id_muni, area_sqkm)
+
+muni_lookup <- muni_lookup |>
+  mutate(id_prov = stringr::str_sub(id_muni, 1, 4))
+
+prov_counts <- muni_lookup |> dplyr::count(id_prov, name = "n_prov_munis")
+
+muni_province_context <- muni_lookup |>
+  select(id_muni, id_prov, muni_anexo) |>
+  left_join(prov_counts, by = "id_prov") |>
+  left_join(pop_muni,    by = "id_muni") |>
+  left_join(area_muni,   by = "id_muni") |>
+  left_join(prov_lookup |> select(id_prov, department), by = "id_prov") |>
+  group_by(id_prov) |>
+  mutate(
+    area_rank = rank(-area_sqkm, ties.method = "first"),
+    pop_rank  = rank(-pop_2024,  ties.method = "first")
+  ) |>
+  ungroup() |>
+  mutate(nat_pop_rank = rank(-pop_2024, ties.method = "first")) |>
+  group_by(department) |>
+  mutate(dept_pop_rank = rank(-pop_2024, ties.method = "first")) |>
+  ungroup()
+
+concejal_expected <- concejal_summary |>
+  left_join(pop_muni, by = "id_muni") |>
+  mutate(
+    es_capital = id_muni %in% dept_capital_ids,
+    sillas_esperadas = case_when(
+      es_capital | pop_2024 > 75000 ~ 11L,
+      pop_2024   > 50000            ~  9L,
+      pop_2024   > 15000            ~  7L,
+      !is.na(pop_2024)              ~  5L,
+      TRUE                          ~ NA_integer_
     )
   )
-}
-
-muni_block <- function(id_muni, muni_name, department, concejo) {
-  page <- roster_pages$page[roster_pages$id_muni == id_muni]
-  src  <- paste0(
-    "Órgano Electoral Plurinacional (OEP), ''Elecciones Generales 2025'', p. ", page
-  )
-
-  tagList(
-    tags$details(
-      tags$summary(
-        tags$strong(muni_name),
-        tags$span(
-          paste0(" \u2014 ", department),
-          style = "color: #586069; font-weight: normal;"
-        ),
-        tags$code(
-          paste0(" [", id_muni, "]"),
-          style = "font-size: 11px; color: #999; margin-left: 6px;"
-        )
-      ),
-      tags$div(
-        style = "display:flex; gap:14px; align-items:flex-start; margin-top:8px; font-size:12px;",
-        tags$div(
-          style = "flex:1 1 0; min-width:0; overflow-x:auto;",
-          build_council_kable_es(id_muni, data = concejo)
-        ),
-        tags$div(
-          style = "flex:1 1 0; min-width:0;",
-          wikitext_block(
-            id      = paste0("concejo_es_", id_muni),
-            label   = "Copiar tabla del concejo",
-            content = build_council_wikitable_es(id_muni, data = concejo,
-                                                  source = src)
-          )
-        )
-      )
-    ),
-    tags$hr(style = "border:none; border-top:1px solid #e1e4e8; margin:4px 0;")
-  )
-}
-
-render_muni_blocks <- function(lookup, concejo) {
-  ids <- lookup |>
-    filter(id_muni %in% unique(concejo$id_muni)) |>
-    arrange(id_muni) |>
-    select(id_muni, muni_anexo, department)
-
-  tagList(pmap(ids, function(id_muni, muni_anexo, department) {
-    muni_block(id_muni, muni_anexo, department, concejo)
-  }))
-}
 ```
 
 ```{r}
@@ -122,8 +221,21 @@ include_table_assets()
 ```
 
 ```{r}
+#| label: filter-summary
+#| echo: false
+#| results: asis
+n_total <- nrow(muni_lookup |> filter(id_muni %in% unique(concejo_data$id_muni)))
+filter_label <- switch(params$wiki_filter,
+  existing = "con un artículo existente en la Wikipedia en español",
+  new      = "sin artículo en la Wikipedia en español (nuevos)",
+  "todos (sin filtro aplicado)"
+)
+cat(sprintf("**Generando %d municipios %s.**\n\n", n_total, filter_label))
+```
+
+```{r}
 #| label: council-tables
 #| echo: false
 #| results: asis
-render_muni_blocks(muni_lookup, concejo_data)
+render_muni_blocks(muni_lookup, concejo_data, lang = lang)
 ```

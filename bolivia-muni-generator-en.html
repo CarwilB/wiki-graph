@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -2313,24 +2278,9 @@ vertical-align: -.125em;
 <hr>
 <p><strong>Copy communities Wikitext</strong> — a <code>==Communities==</code> section with all communities listed in three columns using <code>{div col|colwidth=18em}</code>. <em>[Omitted for municipalities with no communities in the 2013 INE geographic classification.]</em></p>
 <hr>
-<p><strong>Full page Wikitext</strong> is saved to <code>output/bolivia-municipality-wikitext/[id].txt</code> and available as a single copy button on the <a href="bolivia-muni-infobox-en.html">infobox page</a>. It assembles all sections above in article order: lead → <code>==Government==</code> → <code>==Population==</code> → <code>==Languages and Indigenous identification==</code> → <code>==Communities==</code>.</p>
+<p><strong>Full page Wikitext</strong> is saved to <code>output/bolivia-municipality-wikitext/en/[id].txt</code> and available as a single copy button on the <a href="bolivia-muni-infobox-en.html">infobox page</a>. It assembles all sections above in article order: lead → <code>==Government==</code> → <code>==Population==</code> → <code>==Languages and Indigenous identification==</code> → <code>==Communities==</code>.</p>
 <hr>
 </section>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>source_wikitext_en <span class="ot">=</span> <span class="st">&quot;Supreme Electoral Tribunal.&quot;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>source_wikitext_es <span class="ot">=</span> <span class="st">&quot;Tribunal Supremo Electoral.&quot;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>source_ref_en  <span class="ot">&lt;-</span> <span class="st">&quot;{{Cite report| publisher = Órgano Electoral Plurinacional| last1 = Órgano Electoral Plurinacional| last2 = Tribunal Supremo Electoral| title = Publicación de resultados Elecciones Subnacionales 2026: Elección de Autoridades Políticas Departamentales Regionales y Municipales 2026 (Primera y Segunda Vuelta Electoral)| series = Separata de información pública| date = 2026-04-23}}&quot;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>source_ref_es <span class="ot">&lt;-</span> source_ref_en</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>source_ref_with_page_number <span class="ot">&lt;-</span> <span class="cf">function</span>(page_number, source_ref) {</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  source_ref_minus_end <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">}</span><span class="sc">\\</span><span class="st">}$&quot;</span>, <span class="st">&quot;&quot;</span>, source_ref)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste0</span>(source_ref_minus_end, <span class="st">&quot; | page = &quot;</span>, page_number, <span class="st">&quot; }}&quot;</span>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
 <style>
 .copy-btn {
 background-color: #24292e;
