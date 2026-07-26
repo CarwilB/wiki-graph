@@ -59,20 +59,17 @@ Villa Tunari has a municipal council with eleven seats, as do all municipalities
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 48,477 || 52,886 || 71,386
 || 93,747
 |}
 
 {{Population pyramid
-|year=2024
-|m0=4.4 |m5=5.4 |m10=5.5 |m15=5.1 |m20=5.3 |m25=5.2 |m30=4.4 |m35=4 |m40=3.4 |m45=2.7 |m50=2.3 |m55=2.1 |m60=1.7 |m65=1 |m70=0.6 |m75=0.3 |m80=0.2 |m85=0.1
-|f0=4.2 |f5=5.1 |f10=5.3 |f15=4.3 |f20=4.5 |f25=4.5 |f30=4 |f35=3.3 |f40=2.7 |f45=2.2 |f50=1.8 |f55=1.5 |f60=1.2 |f65=0.7 |f70=0.5 |f75=0.3 |f80=0.2 |f85=0.1
-|mmax=5.5
-|fmax=5.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=4.4 |m5=5.4 |m10=5.5 |m15=5.1 |m20=5.3 |m25=5.2 |m30=4.4 |m35=4 |m40=3.4 |m45=2.7 |m50=2.3 |m55=2.1 |m60=1.7 |m65=1 |m70=0.6 |m75=0.3 |m80=0.2 |m85=0.1 |f0=4.2 |f5=5.1 |f10=5.3 |f15=4.3 |f20=4.5 |f25=4.5 |f30=4 |f35=3.3 |f40=2.7 |f45=2.2 |f50=1.8 |f55=1.5 |f60=1.2 |f65=0.7 |f70=0.5 |f75=0.3 |f80=0.2 |f85=0.1
+|mmax=5.5 |fmax=5.5
 }}
 
 ==Languages and Indigenous identification==
@@ -443,11 +440,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Villa Tunari''' || {{shade|color=red|79%}} || {{shade|color=red|56%}} || {{Decrease}} -22% || {{shade|color=blue|68%}} || {{shade|color=blue|33%}} || {{Decrease}} -36% || {{shade|color=green|27%}} || {{shade|color=green|31%}} || {{Increase}} +4%
+| align=left | '''Villa Tunari''' || {{shade|color=red|79}}% || {{shade|color=red|56}}% || {{Decrease}} -22% || {{shade|color=blue|68}}% || {{shade|color=blue|33}}% || {{Decrease}} -36% || {{shade|color=green|27}}% || {{shade|color=green|31}}% || {{Increase}} +4%
 |-
-| align=left | Cochabamba || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Cochabamba || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -16% || {{shade|color=blue|35}}% || {{shade|color=blue|23}}% || {{Decrease}} -12% || {{shade|color=green|51}}% || {{shade|color=green|38}}% || {{Decrease}} -14%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

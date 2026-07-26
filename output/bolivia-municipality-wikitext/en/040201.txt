@@ -43,20 +43,17 @@ Challapata has a municipal council with seven seats, as do all municipalities wi
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 20,882 || 24,370 || 28,918
 || 35,427
 |}
 
 {{Population pyramid
-|year=2024
-|m0=4.5 |m5=5.2 |m10=5.9 |m15=5.1 |m20=4.5 |m25=4.4 |m30=3.7 |m35=3.5 |m40=2.9 |m45=2.6 |m50=2.3 |m55=1.9 |m60=1.6 |m65=1.4 |m70=1 |m75=0.8 |m80=0.4 |m85=0.3
-|f0=4 |f5=5.2 |f10=5.2 |f15=4.3 |f20=4.2 |f25=3.9 |f30=3.4 |f35=3.2 |f40=2.7 |f45=2.2 |f50=2 |f55=1.7 |f60=1.7 |f65=1.5 |f70=1.2 |f75=0.8 |f80=0.5 |f85=0.4
-|mmax=6
-|fmax=5.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=4.5 |m5=5.2 |m10=5.9 |m15=5.1 |m20=4.5 |m25=4.4 |m30=3.7 |m35=3.5 |m40=2.9 |m45=2.6 |m50=2.3 |m55=1.9 |m60=1.6 |m65=1.4 |m70=1 |m75=0.8 |m80=0.4 |m85=0.3 |f0=4 |f5=5.2 |f10=5.2 |f15=4.3 |f20=4.2 |f25=3.9 |f30=3.4 |f35=3.2 |f40=2.7 |f45=2.2 |f50=2 |f55=1.7 |f60=1.7 |f65=1.5 |f70=1.2 |f75=0.8 |f80=0.5 |f85=0.4
+|mmax=6 |fmax=5.5
 }}
 
 ==Languages and Indigenous identification==
@@ -250,11 +247,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Challapata''' || {{shade|color=red|74%}} || {{shade|color=red|60%}} || {{Decrease}} -14% || {{shade|color=blue|39%}} || {{shade|color=blue|18%}} || {{Decrease}} -21% || {{shade|color=green|86%}} || {{shade|color=green|59%}} || {{Decrease}} -27%
+| align=left | '''Challapata''' || {{shade|color=red|74}}% || {{shade|color=red|60}}% || {{Decrease}} -14% || {{shade|color=blue|39}}% || {{shade|color=blue|18}}% || {{Decrease}} -21% || {{shade|color=green|86}}% || {{shade|color=green|59}}% || {{Decrease}} -27%
 |-
-| align=left | Oruro || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Oruro || {{shade|color=red|47}}% || {{shade|color=red|33}}% || {{Decrease}} -14% || {{shade|color=blue|29}}% || {{shade|color=blue|12}}% || {{Decrease}} -16% || {{shade|color=green|64}}% || {{shade|color=green|40}}% || {{Decrease}} -24%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

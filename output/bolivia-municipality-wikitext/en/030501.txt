@@ -35,20 +35,17 @@ Arani has a municipal council with five seats, as do all municipalities with pop
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 13,159 || 11,542 || 9,504
 || 11,183
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.2 |m5=4.3 |m10=4.6 |m15=4.1 |m20=4.1 |m25=3.8 |m30=3.6 |m35=3 |m40=2.8 |m45=2.5 |m50=2.1 |m55=2.4 |m60=2.3 |m65=1.9 |m70=1.4 |m75=1 |m80=0.6 |m85=0.5
-|f0=3.3 |f5=4.1 |f10=4.4 |f15=3.8 |f20=4.2 |f25=3.6 |f30=3.6 |f35=3.2 |f40=2.7 |f45=2.7 |f50=2.6 |f55=2.4 |f60=2.7 |f65=2.5 |f70=2.4 |f75=1.7 |f80=1.1 |f85=0.9
-|mmax=5
-|fmax=4.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.2 |m5=4.3 |m10=4.6 |m15=4.1 |m20=4.1 |m25=3.8 |m30=3.6 |m35=3 |m40=2.8 |m45=2.5 |m50=2.1 |m55=2.4 |m60=2.3 |m65=1.9 |m70=1.4 |m75=1 |m80=0.6 |m85=0.5 |f0=3.3 |f5=4.1 |f10=4.4 |f15=3.8 |f20=4.2 |f25=3.6 |f30=3.6 |f35=3.2 |f40=2.7 |f45=2.7 |f50=2.6 |f55=2.4 |f60=2.7 |f65=2.5 |f70=2.4 |f75=1.7 |f80=1.1 |f85=0.9
+|mmax=5 |fmax=4.5
 }}
 
 ==Languages and Indigenous identification==
@@ -143,11 +140,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Arani''' || {{shade|color=red|49%}} || {{shade|color=red|31%}} || {{Decrease}} -19% || {{shade|color=blue|20%}} || {{shade|color=blue|6%}} || {{Decrease}} -14% || {{shade|color=green|60%}} || {{shade|color=green|25%}} || {{Decrease}} -35%
+| align=left | '''Arani''' || {{shade|color=red|49}}% || {{shade|color=red|31}}% || {{Decrease}} -19% || {{shade|color=blue|20}}% || {{shade|color=blue|6}}% || {{Decrease}} -14% || {{shade|color=green|60}}% || {{shade|color=green|25}}% || {{Decrease}} -35%
 |-
-| align=left | Cochabamba || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Cochabamba || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -16% || {{shade|color=blue|35}}% || {{shade|color=blue|23}}% || {{Decrease}} -12% || {{shade|color=green|51}}% || {{shade|color=green|38}}% || {{Decrease}} -14%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

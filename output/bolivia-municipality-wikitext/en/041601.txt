@@ -35,20 +35,17 @@ Huayllamarca has a municipal council with five seats, as do all municipalities w
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 4,900 || 5,790 || 5,502
 || 5,996
 |}
 
 {{Population pyramid
-|year=2024
-|m0=2.5 |m5=3.6 |m10=4.3 |m15=2.7 |m20=2.6 |m25=3.2 |m30=3.1 |m35=3.5 |m40=3.3 |m45=3.7 |m50=3.7 |m55=3.8 |m60=3.6 |m65=2.8 |m70=2.7 |m75=2.1 |m80=1.1 |m85=0.9
-|f0=2.5 |f5=3.2 |f10=3.5 |f15=3 |f20=2.7 |f25=2.8 |f30=2.7 |f35=2.7 |f40=2.7 |f45=3.1 |f50=3.3 |f55=3.1 |f60=3 |f65=2.7 |f70=2.4 |f75=1.7 |f80=1.1 |f85=0.9
-|mmax=4.5
-|fmax=3.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=2.5 |m5=3.6 |m10=4.3 |m15=2.7 |m20=2.6 |m25=3.2 |m30=3.1 |m35=3.5 |m40=3.3 |m45=3.7 |m50=3.7 |m55=3.8 |m60=3.6 |m65=2.8 |m70=2.7 |m75=2.1 |m80=1.1 |m85=0.9 |f0=2.5 |f5=3.2 |f10=3.5 |f15=3 |f20=2.7 |f25=2.8 |f30=2.7 |f35=2.7 |f40=2.7 |f45=3.1 |f50=3.3 |f55=3.1 |f60=3 |f65=2.7 |f70=2.4 |f75=1.7 |f80=1.1 |f85=0.9
+|mmax=4.5 |fmax=3.5
 }}
 
 ==Languages and Indigenous identification==
@@ -153,11 +150,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Huayllamarca''' || {{shade|color=red|91%}} || {{shade|color=red|68%}} || {{Decrease}} -23% || {{shade|color=blue|66%}} || {{shade|color=blue|32%}} || {{Decrease}} -34% || {{shade|color=green|89%}} || {{shade|color=green|70%}} || {{Decrease}} -18%
+| align=left | '''Huayllamarca''' || {{shade|color=red|91}}% || {{shade|color=red|68}}% || {{Decrease}} -23% || {{shade|color=blue|66}}% || {{shade|color=blue|32}}% || {{Decrease}} -34% || {{shade|color=green|89}}% || {{shade|color=green|70}}% || {{Decrease}} -18%
 |-
-| align=left | Oruro || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Oruro || {{shade|color=red|47}}% || {{shade|color=red|33}}% || {{Decrease}} -14% || {{shade|color=blue|29}}% || {{shade|color=blue|12}}% || {{Decrease}} -16% || {{shade|color=green|64}}% || {{shade|color=green|40}}% || {{Decrease}} -24%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

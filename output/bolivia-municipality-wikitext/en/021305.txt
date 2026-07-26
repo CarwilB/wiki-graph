@@ -43,20 +43,17 @@ Patacamaya has a municipal council with seven seats, as do all municipalities wi
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 15,546 || 20,039 || 22,858
 || 25,148
 |}
 
 {{Population pyramid
-|year=2024
-|m0=4 |m5=5.2 |m10=5.3 |m15=4.6 |m20=4.5 |m25=4 |m30=3.6 |m35=3.2 |m40=3.1 |m45=2.4 |m50=2.1 |m55=1.8 |m60=1.8 |m65=1.6 |m70=1.3 |m75=0.8 |m80=0.5 |m85=0.3
-|f0=3.7 |f5=5.1 |f10=5.2 |f15=4.5 |f20=4.5 |f25=4.1 |f30=3.6 |f35=3.2 |f40=2.8 |f45=2.5 |f50=2.2 |f55=2.1 |f60=1.8 |f65=1.6 |f70=1.2 |f75=0.9 |f80=0.5 |f85=0.5
-|mmax=5.5
-|fmax=5.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=4 |m5=5.2 |m10=5.3 |m15=4.6 |m20=4.5 |m25=4 |m30=3.6 |m35=3.2 |m40=3.1 |m45=2.4 |m50=2.1 |m55=1.8 |m60=1.8 |m65=1.6 |m70=1.3 |m75=0.8 |m80=0.5 |m85=0.3 |f0=3.7 |f5=5.1 |f10=5.2 |f15=4.5 |f20=4.5 |f25=4.1 |f30=3.6 |f35=3.2 |f40=2.8 |f45=2.5 |f50=2.2 |f55=2.1 |f60=1.8 |f65=1.6 |f70=1.2 |f75=0.9 |f80=0.5 |f85=0.5
+|mmax=5.5 |fmax=5.5
 }}
 
 ==Languages and Indigenous identification==
@@ -154,11 +151,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Patacamaya''' || {{shade|color=red|67%}} || {{shade|color=red|46%}} || {{Decrease}} -22% || {{shade|color=blue|44%}} || {{shade|color=blue|13%}} || {{Decrease}} -31% || {{shade|color=green|73%}} || {{shade|color=green|45%}} || {{Decrease}} -28%
+| align=left | '''Patacamaya''' || {{shade|color=red|67}}% || {{shade|color=red|46}}% || {{Decrease}} -22% || {{shade|color=blue|44}}% || {{shade|color=blue|13}}% || {{Decrease}} -31% || {{shade|color=green|73}}% || {{shade|color=green|45}}% || {{Decrease}} -28%
 |-
-| align=left | La Paz || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | La Paz || {{shade|color=red|46}}% || {{shade|color=red|32}}% || {{Decrease}} -15% || {{shade|color=blue|24}}% || {{shade|color=blue|10}}% || {{Decrease}} -14% || {{shade|color=green|48}}% || {{shade|color=green|27}}% || {{Decrease}} -22%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

@@ -35,20 +35,17 @@ Yunguyo de Litoral has a municipal council with five seats, as do all municipali
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 92 || 221 || 514
 || 875
 |}
 
 {{Population pyramid
-|year=2024
-|m0=4.2 |m5=5.9 |m10=4.3 |m15=5.3 |m20=4.6 |m25=6.3 |m30=4.3 |m35=3.4 |m40=3.2 |m45=2.3 |m50=1.8 |m55=0.8 |m60=1.5 |m65=1.4 |m70=0.7 |m75=0.6 |m80=0 |m85=0.1
-|f0=4.3 |f5=6.4 |f10=4.1 |f15=2.4 |f20=6.3 |f25=4.6 |f30=2.6 |f35=4.2 |f40=4.2 |f45=2.7 |f50=1.7 |f55=1.8 |f60=1.1 |f65=0.8 |f70=0.7 |f75=0.8 |f80=0.2 |f85=0.1
-|mmax=6.5
-|fmax=6.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=4.2 |m5=5.9 |m10=4.3 |m15=5.3 |m20=4.6 |m25=6.3 |m30=4.3 |m35=3.4 |m40=3.2 |m45=2.3 |m50=1.8 |m55=0.8 |m60=1.5 |m65=1.4 |m70=0.7 |m75=0.6 |m80=0 |m85=0.1 |f0=4.3 |f5=6.4 |f10=4.1 |f15=2.4 |f20=6.3 |f25=4.6 |f30=2.6 |f35=4.2 |f40=4.2 |f45=2.7 |f50=1.7 |f55=1.8 |f60=1.1 |f65=0.8 |f70=0.7 |f75=0.8 |f80=0.2 |f85=0.1
+|mmax=6.5 |fmax=6.5
 }}
 
 ==Languages and Indigenous identification==
@@ -92,11 +89,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Yunguyo de Litoral''' || {{shade|color=red|92%}} || {{shade|color=red|28%}} || {{Decrease}} -65% || {{shade|color=blue|69%}} || {{shade|color=blue|2%}} || {{Decrease}} -68% || {{shade|color=green|95%}} || {{shade|color=green|5%}} || {{Decrease}} -89%
+| align=left | '''Yunguyo de Litoral''' || {{shade|color=red|92}}% || {{shade|color=red|28}}% || {{Decrease}} -65% || {{shade|color=blue|69}}% || {{shade|color=blue|2}}% || {{Decrease}} -68% || {{shade|color=green|95}}% || {{shade|color=green|5}}% || {{Decrease}} -89%
 |-
-| align=left | Oruro || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Oruro || {{shade|color=red|47}}% || {{shade|color=red|33}}% || {{Decrease}} -14% || {{shade|color=blue|29}}% || {{shade|color=blue|12}}% || {{Decrease}} -16% || {{shade|color=green|64}}% || {{shade|color=green|40}}% || {{Decrease}} -24%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

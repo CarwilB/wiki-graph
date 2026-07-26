@@ -43,20 +43,17 @@ Incahuasi has a municipal council with seven seats, as do all municipalities wit
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 10,709 || 13,056
 || 16,484
 |}
 
 {{Population pyramid
-|year=2024
-|m0=4 |m5=4.2 |m10=5.3 |m15=4.5 |m20=4.5 |m25=4.5 |m30=3.8 |m35=3.6 |m40=3.6 |m45=3 |m50=2.5 |m55=2.2 |m60=1.9 |m65=1.4 |m70=1 |m75=0.8 |m80=0.4 |m85=0.3
-|f0=4.3 |f5=4.4 |f10=5 |f15=4.3 |f20=4.8 |f25=3.8 |f30=3.4 |f35=3.2 |f40=2.9 |f45=2.8 |f50=2.2 |f55=2 |f60=1.6 |f65=1.2 |f70=1.1 |f75=0.6 |f80=0.4 |f85=0.5
-|mmax=5.5
-|fmax=5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=4 |m5=4.2 |m10=5.3 |m15=4.5 |m20=4.5 |m25=4.5 |m30=3.8 |m35=3.6 |m40=3.6 |m45=3 |m50=2.5 |m55=2.2 |m60=1.9 |m65=1.4 |m70=1 |m75=0.8 |m80=0.4 |m85=0.3 |f0=4.3 |f5=4.4 |f10=5 |f15=4.3 |f20=4.8 |f25=3.8 |f30=3.4 |f35=3.2 |f40=2.9 |f45=2.8 |f50=2.2 |f55=2 |f60=1.6 |f65=1.2 |f70=1.1 |f75=0.6 |f80=0.4 |f85=0.5
+|mmax=5.5 |fmax=5
 }}
 
 ==Languages and Indigenous identification==
@@ -130,11 +127,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Incahuasi''' || {{shade|color=red|88%}} || {{shade|color=red|73%}} || {{Decrease}} -15% || {{shade|color=blue|63%}} || {{shade|color=blue|35%}} || {{Decrease}} -28% || {{shade|color=green|80%}} || {{shade|color=green|66%}} || {{Decrease}} -13%
+| align=left | '''Incahuasi''' || {{shade|color=red|88}}% || {{shade|color=red|73}}% || {{Decrease}} -15% || {{shade|color=blue|63}}% || {{shade|color=blue|35}}% || {{Decrease}} -28% || {{shade|color=green|80}}% || {{shade|color=green|66}}% || {{Decrease}} -13%
 |-
-| align=left | Chuquisaca || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Chuquisaca || {{shade|color=red|54}}% || {{shade|color=red|38}}% || {{Decrease}} -17% || {{shade|color=blue|41}}% || {{shade|color=blue|12}}% || {{Decrease}} -29% || {{shade|color=green|58}}% || {{shade|color=green|32}}% || {{Decrease}} -26%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

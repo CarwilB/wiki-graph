@@ -43,20 +43,17 @@ Padcaya has a municipal council with seven seats, as do all municipalities with 
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 17,341 || 19,260 || 18,681
 || 17,817
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.3 |m5=4.3 |m10=4.4 |m15=3.7 |m20=4 |m25=4.5 |m30=3.9 |m35=3.7 |m40=3.3 |m45=3.1 |m50=2.9 |m55=2.5 |m60=2.6 |m65=1.9 |m70=1.4 |m75=1.1 |m80=0.5 |m85=0.4
-|f0=2.9 |f5=4.3 |f10=4 |f15=3.2 |f20=3.4 |f25=4.1 |f30=3.8 |f35=3.5 |f40=3.1 |f45=2.8 |f50=2.8 |f55=2.3 |f60=2.4 |f65=2.1 |f70=1.6 |f75=0.8 |f80=0.7 |f85=0.6
-|mmax=4.5
-|fmax=4.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.3 |m5=4.3 |m10=4.4 |m15=3.7 |m20=4 |m25=4.5 |m30=3.9 |m35=3.7 |m40=3.3 |m45=3.1 |m50=2.9 |m55=2.5 |m60=2.6 |m65=1.9 |m70=1.4 |m75=1.1 |m80=0.5 |m85=0.4 |f0=2.9 |f5=4.3 |f10=4 |f15=3.2 |f20=3.4 |f25=4.1 |f30=3.8 |f35=3.5 |f40=3.1 |f45=2.8 |f50=2.8 |f55=2.3 |f60=2.4 |f65=2.1 |f70=1.6 |f75=0.8 |f80=0.7 |f85=0.6
+|mmax=4.5 |fmax=4.5
 }}
 
 ==Languages and Indigenous identification==
@@ -177,11 +174,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Padcaya''' || {{shade|color=red|59%}} || {{shade|color=red|43%}} || {{Decrease}} -16% || {{shade|color=blue|53%}} || {{shade|color=blue|12%}} || {{Decrease}} -41% || {{shade|color=green|76%}} || {{shade|color=green|27%}} || {{Decrease}} -49%
+| align=left | '''Padcaya''' || {{shade|color=red|59}}% || {{shade|color=red|43}}% || {{Decrease}} -16% || {{shade|color=blue|53}}% || {{shade|color=blue|12}}% || {{Decrease}} -41% || {{shade|color=green|76}}% || {{shade|color=green|27}}% || {{Decrease}} -49%
 |-
-| align=left | Tarija || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Tarija || {{shade|color=red|35}}% || {{shade|color=red|21}}% || {{Decrease}} -13% || {{shade|color=blue|19}}% || {{shade|color=blue|8}}% || {{Decrease}} -12% || {{shade|color=green|45}}% || {{shade|color=green|23}}% || {{Decrease}} -22%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

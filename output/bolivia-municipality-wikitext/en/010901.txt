@@ -35,20 +35,17 @@ Villa Abecia has a municipal council with five seats, as do all municipalities w
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 3,160 || 3,195 || 3,514
 || 5,375
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.4 |m5=4 |m10=5.1 |m15=4 |m20=5.2 |m25=4.4 |m30=4.5 |m35=3.5 |m40=3.4 |m45=3.1 |m50=2.1 |m55=2 |m60=1.7 |m65=1.5 |m70=1 |m75=0.9 |m80=0.5 |m85=0.3
-|f0=3.3 |f5=4.2 |f10=3.9 |f15=4.3 |f20=4.1 |f25=4.3 |f30=4.1 |f35=3.4 |f40=3.6 |f45=2.6 |f50=2.4 |f55=2.1 |f60=1.7 |f65=1.6 |f70=1.6 |f75=1 |f80=0.5 |f85=0.6
-|mmax=5.5
-|fmax=4.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.4 |m5=4 |m10=5.1 |m15=4 |m20=5.2 |m25=4.4 |m30=4.5 |m35=3.5 |m40=3.4 |m45=3.1 |m50=2.1 |m55=2 |m60=1.7 |m65=1.5 |m70=1 |m75=0.9 |m80=0.5 |m85=0.3 |f0=3.3 |f5=4.2 |f10=3.9 |f15=4.3 |f20=4.1 |f25=4.3 |f30=4.1 |f35=3.4 |f40=3.6 |f45=2.6 |f50=2.4 |f55=2.1 |f60=1.7 |f65=1.6 |f70=1.6 |f75=1 |f80=0.5 |f85=0.6
+|mmax=5.5 |fmax=4.5
 }}
 
 ==Languages and Indigenous identification==
@@ -101,11 +98,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Villa Abecia''' || {{shade|color=red|76%}} || {{shade|color=red|49%}} || {{Decrease}} -27% || {{shade|color=blue|48%}} || {{shade|color=blue|10%}} || {{Decrease}} -37% || {{shade|color=green|61%}} || {{shade|color=green|50%}} || {{Decrease}} -12%
+| align=left | '''Villa Abecia''' || {{shade|color=red|76}}% || {{shade|color=red|49}}% || {{Decrease}} -27% || {{shade|color=blue|48}}% || {{shade|color=blue|10}}% || {{Decrease}} -37% || {{shade|color=green|61}}% || {{shade|color=green|50}}% || {{Decrease}} -12%
 |-
-| align=left | Chuquisaca || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Chuquisaca || {{shade|color=red|54}}% || {{shade|color=red|38}}% || {{Decrease}} -17% || {{shade|color=blue|41}}% || {{shade|color=blue|12}}% || {{Decrease}} -29% || {{shade|color=green|58}}% || {{shade|color=green|32}}% || {{Decrease}} -26%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

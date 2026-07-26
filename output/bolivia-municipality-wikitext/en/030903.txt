@@ -51,20 +51,17 @@ Tiquipaya has a municipal council with nine seats, as do all municipalities with
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 13,371 || 37,791 || 53,904
 || 61,840
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.6 |m5=4.8 |m10=4.8 |m15=4.6 |m20=4.5 |m25=4.2 |m30=3.8 |m35=3.5 |m40=3.2 |m45=2.7 |m50=2.2 |m55=1.6 |m60=1.5 |m65=1.2 |m70=0.9 |m75=0.6 |m80=0.3 |m85=0.2
-|f0=3.4 |f5=4.6 |f10=4.8 |f15=4.9 |f20=4.9 |f25=4.5 |f30=4.2 |f35=3.9 |f40=3.6 |f45=2.9 |f50=2.4 |f55=2 |f60=1.8 |f65=1.4 |f70=1 |f75=0.8 |f80=0.4 |f85=0.4
-|mmax=5
-|fmax=5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.6 |m5=4.8 |m10=4.8 |m15=4.6 |m20=4.5 |m25=4.2 |m30=3.8 |m35=3.5 |m40=3.2 |m45=2.7 |m50=2.2 |m55=1.6 |m60=1.5 |m65=1.2 |m70=0.9 |m75=0.6 |m80=0.3 |m85=0.2 |f0=3.4 |f5=4.6 |f10=4.8 |f15=4.9 |f20=4.9 |f25=4.5 |f30=4.2 |f35=3.9 |f40=3.6 |f45=2.9 |f50=2.4 |f55=2 |f60=1.8 |f65=1.4 |f70=1 |f75=0.8 |f80=0.4 |f85=0.4
+|mmax=5 |fmax=5
 }}
 
 ==Languages and Indigenous identification==
@@ -129,11 +126,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Tiquipaya''' || {{shade|color=red|35%}} || {{shade|color=red|14%}} || {{Decrease}} -21% || {{shade|color=blue|22%}} || {{shade|color=blue|17%}} || {{Decrease}} -5% || {{shade|color=green|72%}} || {{shade|color=green|33%}} || {{Decrease}} -39%
+| align=left | '''Tiquipaya''' || {{shade|color=red|35}}% || {{shade|color=red|14}}% || {{Decrease}} -21% || {{shade|color=blue|22}}% || {{shade|color=blue|17}}% || {{Decrease}} -5% || {{shade|color=green|72}}% || {{shade|color=green|33}}% || {{Decrease}} -39%
 |-
-| align=left | Cochabamba || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Cochabamba || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -16% || {{shade|color=blue|35}}% || {{shade|color=blue|23}}% || {{Decrease}} -12% || {{shade|color=green|51}}% || {{shade|color=green|38}}% || {{Decrease}} -14%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

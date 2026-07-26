@@ -35,20 +35,17 @@ Taraco has a municipal council with five seats, as do all municipalities with po
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 3,674 || 5,922 || 6,603
 || 7,540
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3 |m5=3.7 |m10=4.3 |m15=2.8 |m20=2.9 |m25=2.8 |m30=2.7 |m35=2.5 |m40=2.4 |m45=3.1 |m50=3.3 |m55=3 |m60=3.5 |m65=2.3 |m70=2.1 |m75=1.8 |m80=1.1 |m85=0.7
-|f0=3.1 |f5=3.7 |f10=3.8 |f15=3 |f20=3.3 |f25=2.8 |f30=2.7 |f35=2.7 |f40=2.7 |f45=3.1 |f50=3.9 |f55=4.1 |f60=3.8 |f65=2.8 |f70=2.3 |f75=2.1 |f80=1.2 |f85=0.8
-|mmax=4.5
-|fmax=4.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3 |m5=3.7 |m10=4.3 |m15=2.8 |m20=2.9 |m25=2.8 |m30=2.7 |m35=2.5 |m40=2.4 |m45=3.1 |m50=3.3 |m55=3 |m60=3.5 |m65=2.3 |m70=2.1 |m75=1.8 |m80=1.1 |m85=0.7 |f0=3.1 |f5=3.7 |f10=3.8 |f15=3 |f20=3.3 |f25=2.8 |f30=2.7 |f35=2.7 |f40=2.7 |f45=3.1 |f50=3.9 |f55=4.1 |f60=3.8 |f65=2.8 |f70=2.3 |f75=2.1 |f80=1.2 |f85=0.8
+|mmax=4.5 |fmax=4.5
 }}
 
 ==Languages and Indigenous identification==
@@ -102,11 +99,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Taraco''' || {{shade|color=red|85%}} || {{shade|color=red|59%}} || {{Decrease}} -26% || {{shade|color=blue|66%}} || {{shade|color=blue|12%}} || {{Decrease}} -54% || {{shade|color=green|79%}} || {{shade|color=green|47%}} || {{Decrease}} -32%
+| align=left | '''Taraco''' || {{shade|color=red|85}}% || {{shade|color=red|59}}% || {{Decrease}} -26% || {{shade|color=blue|66}}% || {{shade|color=blue|12}}% || {{Decrease}} -54% || {{shade|color=green|79}}% || {{shade|color=green|47}}% || {{Decrease}} -32%
 |-
-| align=left | La Paz || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | La Paz || {{shade|color=red|46}}% || {{shade|color=red|32}}% || {{Decrease}} -15% || {{shade|color=blue|24}}% || {{shade|color=blue|10}}% || {{Decrease}} -14% || {{shade|color=green|48}}% || {{shade|color=green|27}}% || {{Decrease}} -22%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

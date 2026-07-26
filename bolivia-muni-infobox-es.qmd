@@ -1,0 +1,186 @@
+---
+title: "Bolivia 2026 — Fichas de municipios"
+subtitle: "Wikitexto de {{Ficha de entidad subnacional}} listo para copiar a Wikipedia"
+params:
+  wiki_filter: "all"   # "existing", "new", or "all"
+format:
+  html:
+    code-fold: true
+    toc: false
+    self-contained: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(dplyr)
+library(purrr)
+library(htmltools)
+library(wikitools)
+
+# Motor de fichas multilingüe (source de muni-article-functions.R ->
+# bolivia-builders.R / muni-i18n.R / muni-phrases.R / muni-references.R).
+source("src/muni-infobox-functions.R")
+source("src/gh-copy-assets.R")
+
+lang <- "es"
+
+muni_lookup  <- readRDS(here::here("data", "muni_id_lookup_table.rds"))
+prov_lookup  <- readRDS(here::here("data", "prov_id_lookup_table.rds"))
+prov_link_lookup <- readRDS(here::here("data", "prov_link_lookup.rds"))
+alcaldes     <- readRDS(here::here("data", "oep2026", "alcaldes.rds"))
+muni_roster  <- readRDS(here::here("data", "oep2026", "muni_roster.rds")) |>
+  select(id_muni, page)
+
+bo_municipality_wiki_presence <- readRDS(here::here("data", "bo_municipality_wiki_presence.rds"))
+
+# Población (total y desagregación urbana/rural)
+pop_muni <- readRDS(here::here("data", "cpv2024", "population_municipality.rds")) |>
+  select(id_muni = ine_code, municipality, department, province,
+         pop_2024 = pop_2024_total, pop_2012 = pop_2012_total,
+         pop_2001 = pop_2001_total)
+
+pop_muni_ur <- readRDS(here::here("data", "cpv2024", "population_municipality_urb_rural.rds")) |>
+  select(id_muni = ine_code, area, pop_2024 = pop_2024_total)
+
+# Autoidentificación indígena
+auto_data <- readRDS(here::here("data", "cpv2024", "autoidentificacion_municipio.rds"))
+
+# Superficie municipal (límites administrativos)
+area_muni <- readxl::read_excel(here::here("maps", "bol_admin_boundaries.xlsx"),
+                                sheet = "bol_admin3") |>
+  mutate(id_muni = stringr::str_sub(adm3_pcode, 3, 8)) |>
+  select(id_muni, area_sqkm)
+
+# Nombres de archivo de los mapas de localización (registro de subida a Commons)
+commons_log <- readr::read_csv(
+  here::here("output", "locator_maps", "muni-maps-final", "commons_upload_log.csv"),
+  show_col_types = FALSE
+) |>
+  select(id_muni, commons_filename) |>
+  filter(!is.na(commons_filename))
+
+# Cruce QID <-> código INE de Wikidata
+wd_ine <- readRDS(here::here("data", "municipalities_wd_ine.rds")) |>
+  select(qid, ine_code)
+
+# Imágenes de Wikidata: bandera (P41), escudo (P94), sello (P158)
+wd_images <- readRDS(here::here("data", "muni_wd_images.rds"))
+
+# Presencia de P402 (ID de relación OSM)
+wd_p402 <- readRDS(here::here("data", "municipalities_wd_p402.rds"))
+munis_with_p402 <- wd_p402 |>
+  filter(!is.na(osm_relation_id)) |>
+  left_join(wd_ine, by = "qid") |>
+  filter(!is.na(ine_code)) |>
+  pull(ine_code)
+
+# ¿Qué municipios tienen artículo en la Wikipedia en español?
+wiki_presence <- bo_municipality_wiki_presence$data |>
+  left_join(wd_ine, by = "qid") |>
+  filter(!is.na(ine_code))
+
+has_lang_col <- lang %in% names(wiki_presence)
+munis_with_wiki <- if (has_lang_col) {
+  wiki_presence |> filter(.data[[lang]] > 0) |> pull(ine_code)
+} else character(0)
+
+# Agregar id_prov a muni_lookup (lo usa el motor)
+muni_lookup <- muni_lookup |>
+  mutate(id_prov = stringr::str_sub(id_muni, 1, 4))
+
+muni_lookup_new      <- muni_lookup |> filter(!id_muni %in% munis_with_wiki)
+muni_lookup_existing <- muni_lookup |> filter(id_muni %in% munis_with_wiki)
+
+# Bloques de campos verbatim de las fichas existentes en es.wikipedia, por
+# id_muni. parse_infobox_blocks() conserva el marcado original (comentarios
+# incluidos), justo lo que necesita la fusión. Los artículos sin ficha (esbozos)
+# quedan vacíos y render_existing_blocks() los enruta al andamiaje nuevo.
+sa_article_quality <- readRDS(here::here("data", "cache", "sa_article_quality.rds"))
+
+existing_wikitext <- muni_lookup_existing |>
+  left_join(wd_ine, by = c("id_muni" = "ine_code")) |>
+  select(id_muni, qid) |>
+  left_join(
+    sa_article_quality |> filter(lang == "es") |> select(qid, wikitext),
+    by = "qid"
+  ) |>
+  filter(!is.na(wikitext))
+
+existing_infobox_blocks <- setNames(
+  purrr::map(existing_wikitext$wikitext, function(wt) {
+    parse_infobox_blocks(extract_infobox_wikitext(wt))
+  }),
+  existing_wikitext$id_muni
+)
+```
+
+```{r}
+#| label: assets
+#| echo: false
+#| results: asis
+include_table_assets()
+```
+
+::: {style="font-size: 11px; margin-bottom: 1em;"}
+
+Cada municipio tiene botones para copiar:
+
+- **Copiar ficha** — la plantilla `{{Ficha de entidad subnacional}}` con población, superficie, alcalde/alcaldesa y grupos étnicos del censo de 2024. Para los municipios con un artículo existente en la Wikipedia en español, es una *fusión*: los campos calculados tienen prioridad cuando no están vacíos; en caso contrario se conserva el valor existente del artículo tal cual (con su marcado y sus citas). Una nota sobre el botón indica qué campos se conservaron sin cambios.
+- **Copiar wikitexto de la página** *(cuando esté disponible)* — el texto completo del artículo en orden de secciones: introducción → `==Gobierno==` → `==Demografía==` → `==Idiomas e identificación indígena==` → `==Comunidades==`. Generado por la [página de contenido del artículo](bolivia-muni-generator-es.html); renderícese esa página primero para producir estos archivos.
+
+> **Nota:** las citas en español (`{{Cita ...}}`) son conversiones mecánicas sin verificar; revísense antes de publicar. Los enlaces a artículos de grupos étnicos provienen de «Grupos étnicos de Bolivia»; **Uru** y **Chipaya** apuntan por ahora a `[[Etnias urus]]`.
+
+:::
+
+```{r}
+#| label: filter-summary
+#| echo: false
+#| results: asis
+n_new      <- nrow(muni_lookup_new)
+n_existing <- nrow(muni_lookup_existing)
+
+if (params$wiki_filter == "existing") {
+  cat(sprintf(
+    "**Generando fichas fusionadas para %d municipios con un artículo existente en la Wikipedia en español.**\n\n",
+    n_existing
+  ))
+} else if (params$wiki_filter == "new") {
+  cat(sprintf(
+    "**Generando fichas nuevas para %d municipios sin artículo en la Wikipedia en español.**\n\n",
+    n_new
+  ))
+} else {
+  cat(sprintf(
+    "**Generando fichas nuevas para %d municipios sin artículo, y fichas fusionadas para %d municipios con uno.**\n\n",
+    n_new, n_existing
+  ))
+}
+```
+
+```{r}
+#| label: infobox-blocks
+#| echo: false
+#| results: asis
+show_new      <- params$wiki_filter %in% c("new", "all")
+show_existing <- params$wiki_filter %in% c("existing", "all")
+
+no_infobox_note <- "No se encontró ninguna ficha en este artículo \u2014 se genera un andamiaje nuevo en lugar de una fusión."
+copy_label <- "Copiar ficha"
+page_label <- "Copiar wikitexto de la página"
+
+if (show_new && show_existing) {
+  cat("## Municipios sin artículo en la Wikipedia en español\n\n")
+}
+if (show_new) {
+  render_new_blocks(muni_lookup_new, lang, copy_label = copy_label, page_label = page_label)
+}
+if (show_new && show_existing) {
+  cat("\n\n## Municipios con artículo en la Wikipedia en español (ficha fusionada)\n\n")
+}
+if (show_existing) {
+  render_existing_blocks(muni_lookup_existing, lang, no_infobox_note,
+                         copy_label = copy_label, page_label = page_label)
+}
+```

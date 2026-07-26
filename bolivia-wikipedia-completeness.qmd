@@ -36,6 +36,8 @@ library(sf)
 library(patchwork)
 library(httr)
 library(jsonlite)
+library(rvest)
+library(wikitools)
 
 source("wikidata_presence_matrix.R")
 source("R/get_wikidata_instances.R")
@@ -100,6 +102,210 @@ if (file.exists(ine_cache)) {
 }
 ```
 
+### Category membership
+
+As a second strategy we pull pages directly from Wikipedia categories. This
+catches articles that exist and are correctly categorised but whose Wikidata
+item lacks a sitelink — a common gap on the Spanish and Quechua editions.
+
+The category structures differ by language edition:
+
+- **English** (`en`): flat — all municipalities in one category.
+- **Quechua** (`qu`): mixed — some pages are directly in *Munisipyu (Buliwya)*
+  and others in its subcategories; we fetch both.
+- **Portuguese** (`pt`): flat — one category, relatively sparse.
+
+Spanish uses a different approach (see below): the curated table on
+*Anexo:Municipios de Bolivia* lists every article with its INE code,
+letting us join directly without going through Wikidata QIDs.
+
+`muni_cat_specs` is the canonical registry; add entries for other editions as
+needed. For each article found, the Wikidata QID is resolved via the MediaWiki
+API and merged into the presence matrix.
+
+```{r fetch-category-presence}
+#| cache: false
+
+# Helper: collect all article titles from a category, optionally descending
+# one level into its subcategories.
+# - include_self    : include pages directly in `category`
+# - include_subcats : also collect pages from every subcategory
+# Subcategory titles returned by the API carry a namespace prefix
+# (e.g. "Categoría:", "Katiguriya:"); strip it before the recursive call
+# because get_wp_category_members() adds the correct prefix internally.
+.get_muni_cat_pages <- function(category, lang,
+                                include_self    = TRUE,
+                                include_subcats = FALSE) {
+  empty <- tibble(pageid = integer(0), ns = integer(0), title = character(0))
+
+  pages <- if (include_self) {
+    get_wp_category_members(category, type = "page", lang = lang)
+  } else {
+    empty
+  }
+
+  if (include_subcats) {
+    subcats <- get_wp_category_members(category, type = "subcat", lang = lang)
+    if (nrow(subcats) > 0) {
+      sub_pages <- map_dfr(subcats$title, function(full_title) {
+        # Strip local namespace prefix ("Categoría:", "Katiguriya:", etc.)
+        cat_base <- sub("^[^:]+:", "", full_title)
+        get_wp_category_members(cat_base, type = "page", lang = lang)
+      })
+      pages <- bind_rows(pages, sub_pages)
+    }
+  }
+
+  distinct(pages, title, .keep_all = TRUE)
+}
+
+# Per-language fetch specs:
+#   category       : top-level category name (no namespace prefix needed)
+#   include_self   : collect pages directly in that category
+#   include_subcats: also collect pages from each subcategory
+muni_cat_specs <- list(
+  en = list(category = "Municipalities of Bolivia",
+            include_self = TRUE,  include_subcats = FALSE),
+  qu = list(category = "Munisipyu_(Buliwya)",
+            include_self = TRUE,  include_subcats = TRUE),
+  pt = list(category = "Municípios da Bolívia",
+            include_self = TRUE,  include_subcats = FALSE)
+)
+
+cat_cache <- "data/bo_municipality_cat_presence.rds"
+
+if (file.exists(cat_cache)) {
+  cat_presence <- readRDS(cat_cache)
+} else {
+  cat_rows <- imap(muni_cat_specs, function(spec, lang) {
+    message("Fetching ", lang, ".wikipedia: ", spec$category, " ...")
+    members <- .get_muni_cat_pages(
+      spec$category, lang,
+      include_self    = spec$include_self,
+      include_subcats = spec$include_subcats
+    )
+    if (nrow(members) == 0) {
+      message("  (empty — skipping)")
+      return(tibble(qid = character(0)))
+    }
+    message("  ", nrow(members), " pages; resolving Wikidata QIDs ...")
+    info <- get_page_info_batch(members$title, lang = lang)
+    tibble(qid = na.omit(info$wikidata_qid)) |>
+      mutate(!!rlang::sym(lang) := 1L)
+  })
+
+  # Full-join per-language tibbles; NA → 0 where a QID is absent for a language
+  non_empty <- keep(cat_rows, ~ nrow(.x) > 0)
+  cat_presence <- if (length(non_empty) == 0) {
+    tibble(qid = character(0))
+  } else if (length(non_empty) == 1) {
+    non_empty[[1]]
+  } else {
+    reduce(non_empty, full_join, by = "qid") |>
+      mutate(across(-qid, ~ replace_na(.x, 0L)))
+  }
+
+  saveRDS(cat_presence, cat_cache)
+}
+```
+
+### Spanish Wikipedia
+
+The Spanish Wikipedia has a curated page —
+[Anexo:Municipios de Bolivia](https://es.wikipedia.org/wiki/Anexo:Municipios_de_Bolivia)
+— that lists every municipality with its *Código INE* and a direct link to
+the article. Because the INE code is already present, we can join directly to
+the GADM boundaries without resolving Wikidata QIDs. Every row in the table
+carries an article link, so presence equals membership in the table.
+
+```{r fetch-es-presence}
+#| cache: false
+
+es_cache <- "data/bo_es_ine_presence.rds"
+
+if (file.exists(es_cache)) {
+  es_ine_presence <- readRDS(es_cache)
+} else {
+  page  <- read_html(
+    "https://es.wikipedia.org/w/index.php?title=Anexo:Municipios_de_Bolivia"
+  )
+  rows  <- page |> html_node("table.wikitable") |> html_nodes("tr")
+
+  # Skip header row; extract INE code (col 1) and Nombre href (col 2)
+  es_ine_presence <- map_dfr(rows[-1], function(row) {
+    cells <- row |> html_nodes("td")
+    if (length(cells) < 2) return(NULL)
+    ine  <- cells[[1]] |> html_text(trim = TRUE)
+    href <- cells[[2]] |> html_nodes("a") |> html_attr("href")
+    if (length(href) == 0 || !grepl("^\\d{6}$", ine)) return(NULL)
+    tibble(ine_code = ine, es_article = href[[1]])
+  }) |>
+    mutate(es = 1L)
+
+  message(nrow(es_ine_presence), " municipalities found in Anexo:Municipios_de_Bolivia")
+  saveRDS(es_ine_presence, es_cache)
+}
+```
+
+### Combine sources
+
+Take the union of the Wikidata sitelink and category-membership strategies for
+English, Quechua, and Portuguese. Spanish is handled separately via the Anexo
+table (INE-code join). Aymara uses Wikidata only.
+
+```{r combine-presence}
+cat_langs <- setdiff(names(cat_presence), "qid")
+
+# Start from Wikidata data (excluding es, which comes from the Anexo table).
+# Full-join category presence so QIDs found only in categories are also retained.
+wd_data <- bo_municipality_wiki_presence$data |>
+  select(qid, any_of(c("en", "qu", "ay", "de", "pt")))
+
+presence_combined <- wd_data |>
+  full_join(
+    cat_presence |> rename_with(~ paste0("cat_", .), .cols = -qid),
+    by = "qid"
+  )
+
+# Union: for each language with a category counterpart, prefer 1 over 0/NA
+for (lang in cat_langs) {
+  cat_col  <- paste0("cat_", lang)
+  lang_sym <- rlang::sym(lang)
+  if (lang %in% names(presence_combined)) {
+    presence_combined <- presence_combined |>
+      mutate(!!lang_sym := pmax(.data[[lang]], .data[[cat_col]], na.rm = TRUE))
+  } else {
+    # Language present only in category data — add the column
+    presence_combined <- presence_combined |>
+      mutate(!!lang_sym := replace_na(.data[[cat_col]], 0L))
+  }
+}
+presence_combined <- presence_combined |> select(-starts_with("cat_"))
+
+# Diagnostic: articles added by the category strategy
+lang_labels <- c(en = "English", es = "Spanish", qu = "Quechua",
+                 ay = "Aymara", de = "German", pt = "Portuguese")
+
+gains <- map_dfr(intersect(cat_langs, setdiff(names(wd_data), "qid")), function(lang) {
+  tibble(
+    language      = lang,
+    Wikipedia     = lang_labels[lang],
+    wikidata_only = sum(wd_data[[lang]] == 1L, na.rm = TRUE),
+    combined      = sum(presence_combined[[lang]] == 1L, na.rm = TRUE),
+    gained        = sum(
+      presence_combined[[lang]] == 1L &
+        (is.na(wd_data[[lang]]) | wd_data[[lang]] == 0L),
+      na.rm = TRUE
+    )
+  )
+})
+
+gains |>
+  select(Wikipedia, `Via Wikidata` = wikidata_only,
+         `Combined` = combined, `Added by category` = gained) |>
+  knitr::kable(caption = "Articles added by the category-membership strategy")
+```
+
 ---
 
 ## Build map dataset
@@ -113,21 +319,27 @@ gadm_sf     <- st_read("data/gadm41_BOL_3.gpkg", layer = "ADM_ADM_3",
   select(NAME_1, NAME_3, geom)
 gadm_lookup <- readRDS("data/gadm_lookup.rds")
 
-# Join presence matrix → INE codes → GADM crosswalk → spatial boundaries
+# Join presence matrix → INE codes → GADM crosswalk → spatial boundaries.
+# en/qu/ay/pt come from presence_combined (Wikidata + category union), joined
+# via Wikidata QID → INE code. Spanish comes from es_ine_presence joined
+# directly on INE code, bypassing QID resolution.
 map_data <- gadm_sf |>
   inner_join(
     gadm_lookup |> select(gadm_dep, gadm_mun, cod.mun),
     by = c("NAME_1" = "gadm_dep", "NAME_3" = "gadm_mun")
   ) |>
   left_join(
-    bo_municipality_wiki_presence$data |>
-      select(qid, en, es, qu, ay, de, pt) |>
-      left_join(
-        municipalities_wd_ine |> select(qid, ine_code),
-        by = "qid"
-      ),
+    presence_combined |>
+      select(qid, any_of(c("en", "qu", "ay", "de", "pt"))) |>
+      left_join(municipalities_wd_ine |> select(qid, ine_code), by = "qid"),
     by = c("cod.mun" = "ine_code")
   ) |>
+  left_join(
+    es_ine_presence |> select(ine_code, es),
+    by = c("cod.mun" = "ine_code")
+  ) |>
+  # es = 0 (not NA) for municipalities absent from the Anexo table
+  mutate(es = replace_na(es, 0L)) |>
   mutate(
     across(c(en, es, qu, ay, de, pt),
            ~ factor(case_when(
@@ -257,7 +469,7 @@ p_en + p_es + p_qu + p_lg +
   plot_layout(design = design, heights = c(1, 0.08, 1)) +
   plot_annotation(
     title   = "Bolivia: Municipal Wikipedia Coverage by Language",
-    caption = "Source: Wikidata (Q1062710 instances); boundaries: GADM 4.1",
+    caption = "Sources: Wikidata sitelinks (Q1062710 instances) + Wikipedia category membership; boundaries: GADM 4.1",
     theme   = theme(
       plot.title = element_text(face = "bold", size = 28, hjust = 0.5)
     )
@@ -300,6 +512,65 @@ map_data |>
   ) |>
   arrange(`INE code`) |>
   knitr::kable(caption = "Municipalities with no article in English, Spanish, Quechua, or Aymara")
+```
+
+---
+
+## Spanish Wikipedia: settlement vs. municipality articles
+
+The coverage count for Spanish Wikipedia understates a structural pattern on
+es.wikipedia. Of the 340 articles listed in
+[Anexo:Municipios de Bolivia](https://es.wikipedia.org/wiki/Anexo:Municipios_de_Bolivia),
+only a minority link to Wikidata items classified as *municipio de Bolivia*
+(Q1062710). The majority are linked instead to the Wikidata item for the
+**municipal capital** — a city, town, or human settlement — which serves double
+duty as the de facto article about both the urban centre and the surrounding
+municipality.
+
+This is not a coverage gap but a structural divergence: es.wikipedia treats the
+settlement and the municipality as a single article subject, while Wikidata
+models them as distinct entities. The Wikidata-only strategy therefore
+undercounts Spanish coverage severely, which is why the Anexo-table approach
+(joined by INE code) is used instead.
+
+```{r es-p31-summary}
+p31_per_article <- readRDS("data/bo_es_anexo_p31.rds")
+
+# Summary by instance type
+p31_per_article |>
+  tidyr::separate_rows(instance_of, sep = "; ") |>
+  count(instance_of, name = "n_articles") |>
+  arrange(desc(n_articles)) |>
+  knitr::kable(
+    col.names = c("Instance of (Wikidata type)", "Articles"),
+    caption   = paste0(
+      "Wikidata instance types for the ", nrow(p31_per_article),
+      " Anexo articles whose items are not classified as Q1062710 ",
+      "(municipality of Bolivia)"
+    )
+  )
+```
+
+Out of the 340 entries in the Anexo:
+
+- **`r nrow(p31_per_article)`** resolve to Wikidata items classified as
+  settlements rather than municipalities — overwhelmingly *human settlement*
+  and *city*, with towns, big cities, and border cities also represented.
+- **`r sum(is.na(page_info$wikidata_qid))`** have no Wikidata item linked to
+  their es.wikipedia article at all.
+- **`r 340L - nrow(p31_per_article) - sum(is.na(page_info$wikidata_qid))`**
+  link directly to a Q1062710 municipality item.
+
+The per-article breakdown (article title, QID, and instance types) is saved to
+`data/bo_es_anexo_p31.rds` for use in downstream analyses.
+
+```{r es-p31-per-article}
+p31_per_article |>
+  arrange(title) |>
+  knitr::kable(
+    col.names = c("es.wikipedia article", "Wikidata QID", "Instance of"),
+    caption   = "es.wikipedia Anexo articles linked to non-municipality Wikidata items"
+  )
 ```
 
 ---

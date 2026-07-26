@@ -35,20 +35,17 @@ Urmiri has a municipal council with five seats, as do all municipalities with po
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 1,521 || 2,025 || 2,759
 || 3,121
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.5 |m5=5.4 |m10=5.1 |m15=4.3 |m20=4.3 |m25=4.5 |m30=4.6 |m35=4.5 |m40=4.8 |m45=4.2 |m50=3.8 |m55=2.3 |m60=2.4 |m65=1.9 |m70=1.4 |m75=1.2 |m80=0.7 |m85=0.4
-|f0=2.9 |f5=3.3 |f10=4.2 |f15=2.9 |f20=3.3 |f25=2.7 |f30=2.3 |f35=2.9 |f40=2.3 |f45=2.4 |f50=2.1 |f55=2.2 |f60=2 |f65=1.7 |f70=1.4 |f75=1 |f80=0.5 |f85=0.6
-|mmax=5.5
-|fmax=4.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.5 |m5=5.4 |m10=5.1 |m15=4.3 |m20=4.3 |m25=4.5 |m30=4.6 |m35=4.5 |m40=4.8 |m45=4.2 |m50=3.8 |m55=2.3 |m60=2.4 |m65=1.9 |m70=1.4 |m75=1.2 |m80=0.7 |m85=0.4 |f0=2.9 |f5=3.3 |f10=4.2 |f15=2.9 |f20=3.3 |f25=2.7 |f30=2.3 |f35=2.9 |f40=2.3 |f45=2.4 |f50=2.1 |f55=2.2 |f60=2 |f65=1.7 |f70=1.4 |f75=1 |f80=0.5 |f85=0.6
+|mmax=5.5 |fmax=4.5
 }}
 
 ==Languages and Indigenous identification==
@@ -111,11 +108,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Urmiri''' || {{shade|color=red|95%}} || {{shade|color=red|87%}} || {{Decrease}} -8% || {{shade|color=blue|61%}} || {{shade|color=blue|34%}} || {{Decrease}} -27% || {{shade|color=green|81%}} || {{shade|color=green|79%}} || {{Decrease}} -1%
+| align=left | '''Urmiri''' || {{shade|color=red|95}}% || {{shade|color=red|87}}% || {{Decrease}} -8% || {{shade|color=blue|61}}% || {{shade|color=blue|34}}% || {{Decrease}} -27% || {{shade|color=green|81}}% || {{shade|color=green|79}}% || {{Decrease}} -1%
 |-
-| align=left | Potosí || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Potosí || {{shade|color=red|60}}% || {{shade|color=red|45}}% || {{Decrease}} -15% || {{shade|color=blue|37}}% || {{shade|color=blue|14}}% || {{Decrease}} -23% || {{shade|color=green|68}}% || {{shade|color=green|46}}% || {{Decrease}} -21%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

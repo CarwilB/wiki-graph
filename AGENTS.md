@@ -45,8 +45,52 @@ article title (built from `bo_province_wiki_presence.rds`; 10 manual overrides).
 **Known gaps**: poverty table (`generate-muni-poverty-tables.R`) is English-only;
 table cell numbers use comma thousands separators in both languages.
 
+## Multilingual Municipality Infobox Generator (Jul 2026)
+
+Bilingual infobox generator. **EN targets `{{Infobox settlement}}`; ES targets a
+different template, `{{Ficha de entidad subnacional}}`** — a field-schema remap,
+not just value/label translation. Every ES field was verified against the live
+template parameter list.
+
+**Entry points**: `bolivia-muni-infobox-en.qmd` (`lang="en"`),
+`bolivia-muni-infobox-es.qmd` (`lang="es"`). Each loads data into globals and
+calls `render_new_blocks()` / `render_existing_blocks()`.
+
+**Shared engine**: `src/muni-infobox-functions.R` — `compute_infobox_data(id)`
+returns language-neutral facts; `infobox_specs[[lang]]` holds the per-template
+spec (template name, field order, section headers, force-blank/excluded sets,
+and a `build` mapper: `build_infobox_fields_en/_es`); `render_infobox_wikitext()`
+and `render_infobox_merge_lines()` are generic. Sources
+`src/muni-article-functions.R` for `prov_link_target()`/`spanish_title_case()`
+and (transitively) `phrases`, `refs`, `label()`. Reads the same global lookups
+as the article engine plus `pop_muni_ur`, `commons_log`, `munis_with_p402`,
+`wd_images`, `wd_ine`, and (for merges) `existing_infobox_blocks`.
+
+- Uses `library(wikitools)` for `extract_infobox`/`clean_infobox_value`; the
+  verbatim-block merge helpers (`extract_infobox_wikitext`,
+  `split_on_top_level_pipes`, `parse_infobox_blocks`, `has_real_content`) are
+  **inlined** into the engine (not exported by wikitools).
+- Citations come from the shared `refs[[lang]]` registry (EN too). ES numbers
+  are emitted raw (no thousands separators) since the template formats them.
+- ES ethnic-group wikilinks come from es.wikipedia "Grupos étnicos de Bolivia";
+  **Uru & Chipaya both point to `[[Etnias urus]]`** for now.
+- ES design decisions: rural population → `campo1` ("Población rural");
+  ethnicities → `campo2`; single shield slot → coat of arms preferred over seal.
+- Merge (`existing_infobox_blocks`) reads es wikitext from
+  `sa_article_quality` (lang=="es"); falls back to a fresh scaffold for stubs.
+
+**EN parity**: byte-identical to the pre-refactor output except the identity
+citation in `population_blank1`, which now comes from the shared registry (same
+fields, `url`/`date` reordered).
+
 **EN parity**: verified byte-identical to the pre-refactor output except a fixed
 `== References ==/n...` typo (now real newlines).
+
+## Skills
+
+| Skill | Description |
+|-------|-------------|
+| **wikitext-preview-block** | Pattern for rendering a side-by-side HTML kable preview + copyable wikitext block in Quarto. Covers `wikitext_block()`, `process_for_display()`, `refs_footnotes()`, `include_table_assets()`, and the `tagList(lapply(...))` rendering pattern. Requires sourcing `src/muni-article-functions.R`. See `skills/wikitext-preview-block/SKILL.md`. |
 
 ## Core Infrastructure
 
@@ -120,5 +164,13 @@ For manually transcribed published tables:
 
 ---
 
-**Last updated**: May 2026  
+## Coding Conventions
+
+- **Function style**: Build multi-row tables with `bind_rows()` and `left_join()`, not by indexing individual rows into a `tibble()` constructor (e.g., avoid `tibble(col = c(df$col[1], df$col[2], ...))`). Pre-compute derived columns (e.g., percentages, changes) once when building a shared dataset, and extract repeated formatting logic into named helper functions rather than inlining it in every call site.
+- **Intermediate data tables**: Save nationwide/shared processed tables as `.rds` files rather than regenerating them each time. (e.g., `poverty_water_sanitation_dept.rds`, `poverty_water_sanitation_muni.rds`). Build functions are kept as a last-resort fallback only.
+- **Verify before asserting**: Do not assume a file does or does not exist based on whether a `saveRDS()` call is commented out. Use `file.exists()` or `ls()` to check.
+
+---
+
+**Last updated**: July 2026  
 **To work on a project**, see its documentation file above (e.g., `PROJECTS-CENSUS.md` for census details).

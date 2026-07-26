@@ -35,20 +35,17 @@ Machacamarca has a municipal council with five seats, as do all municipalities w
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 5,218 || 4,180 || 4,820
 || 6,120
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.9 |m5=4.2 |m10=5.1 |m15=3.9 |m20=3.7 |m25=3.9 |m30=3.6 |m35=3.3 |m40=3.5 |m45=2.7 |m50=2.4 |m55=2.3 |m60=1.9 |m65=2.5 |m70=1.4 |m75=1.1 |m80=0.5 |m85=0.3
-|f0=3.2 |f5=4.5 |f10=4.9 |f15=3.8 |f20=3.7 |f25=3.6 |f30=3.2 |f35=3.4 |f40=2.8 |f45=3 |f50=2.5 |f55=2.6 |f60=2.5 |f65=2.2 |f70=1.8 |f75=1.2 |f80=0.6 |f85=0.6
-|mmax=5.5
-|fmax=5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.9 |m5=4.2 |m10=5.1 |m15=3.9 |m20=3.7 |m25=3.9 |m30=3.6 |m35=3.3 |m40=3.5 |m45=2.7 |m50=2.4 |m55=2.3 |m60=1.9 |m65=2.5 |m70=1.4 |m75=1.1 |m80=0.5 |m85=0.3 |f0=3.2 |f5=4.5 |f10=4.9 |f15=3.8 |f20=3.7 |f25=3.6 |f30=3.2 |f35=3.4 |f40=2.8 |f45=3 |f50=2.5 |f55=2.6 |f60=2.5 |f65=2.2 |f70=1.8 |f75=1.2 |f80=0.6 |f85=0.6
+|mmax=5.5 |fmax=5
 }}
 
 ==Languages and Indigenous identification==
@@ -113,11 +110,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Machacamarca''' || {{shade|color=red|45%}} || {{shade|color=red|27%}} || {{Decrease}} -18% || {{shade|color=blue|28%}} || {{shade|color=blue|10%}} || {{Decrease}} -18% || {{shade|color=green|69%}} || {{shade|color=green|39%}} || {{Decrease}} -31%
+| align=left | '''Machacamarca''' || {{shade|color=red|45}}% || {{shade|color=red|27}}% || {{Decrease}} -18% || {{shade|color=blue|28}}% || {{shade|color=blue|10}}% || {{Decrease}} -18% || {{shade|color=green|69}}% || {{shade|color=green|39}}% || {{Decrease}} -31%
 |-
-| align=left | Oruro || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Oruro || {{shade|color=red|47}}% || {{shade|color=red|33}}% || {{Decrease}} -14% || {{shade|color=blue|29}}% || {{shade|color=blue|12}}% || {{Decrease}} -16% || {{shade|color=green|64}}% || {{shade|color=green|40}}% || {{Decrease}} -24%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

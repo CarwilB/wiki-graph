@@ -35,20 +35,17 @@ Humanata has a municipal council with five seats, as do all municipalities with 
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 5,599 || 5,342
 || 5,658
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3 |m5=4.5 |m10=4.6 |m15=4.2 |m20=3.6 |m25=3.6 |m30=2.8 |m35=3.1 |m40=3.2 |m45=3 |m50=3.1 |m55=3.1 |m60=3.1 |m65=2.6 |m70=1.9 |m75=1.1 |m80=0.7 |m85=0.5
-|f0=3.1 |f5=4.5 |f10=4 |f15=4 |f20=3.1 |f25=2.9 |f30=2.7 |f35=2.2 |f40=2.4 |f45=2.7 |f50=2.9 |f55=2.8 |f60=3 |f65=2.6 |f70=2.1 |f75=1.8 |f80=0.9 |f85=0.5
-|mmax=5
-|fmax=4.5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3 |m5=4.5 |m10=4.6 |m15=4.2 |m20=3.6 |m25=3.6 |m30=2.8 |m35=3.1 |m40=3.2 |m45=3 |m50=3.1 |m55=3.1 |m60=3.1 |m65=2.6 |m70=1.9 |m75=1.1 |m80=0.7 |m85=0.5 |f0=3.1 |f5=4.5 |f10=4 |f15=4 |f20=3.1 |f25=2.9 |f30=2.7 |f35=2.2 |f40=2.4 |f45=2.7 |f50=2.9 |f55=2.8 |f60=3 |f65=2.6 |f70=2.1 |f75=1.8 |f80=0.9 |f85=0.5
+|mmax=5 |fmax=4.5
 }}
 
 ==Languages and Indigenous identification==
@@ -119,11 +116,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Humanata''' || {{shade|color=red|95%}} || {{shade|color=red|86%}} || {{Decrease}} -9% || {{shade|color=blue|58%}} || {{shade|color=blue|27%}} || {{Decrease}} -31% || {{shade|color=green|88%}} || {{shade|color=green|70%}} || {{Decrease}} -19%
+| align=left | '''Humanata''' || {{shade|color=red|95}}% || {{shade|color=red|86}}% || {{Decrease}} -9% || {{shade|color=blue|58}}% || {{shade|color=blue|27}}% || {{Decrease}} -31% || {{shade|color=green|88}}% || {{shade|color=green|70}}% || {{Decrease}} -19%
 |-
-| align=left | La Paz || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | La Paz || {{shade|color=red|46}}% || {{shade|color=red|32}}% || {{Decrease}} -15% || {{shade|color=blue|24}}% || {{shade|color=blue|10}}% || {{Decrease}} -14% || {{shade|color=green|48}}% || {{shade|color=green|27}}% || {{Decrease}} -22%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

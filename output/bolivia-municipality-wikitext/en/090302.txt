@@ -35,20 +35,17 @@ San Lorenzo has a municipal council with five seats, as do all municipalities wi
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 3,067 || 3,471 || 7,652
 || 9,832
 |}
 
 {{Population pyramid
-|year=2024
-|m0=6.3 |m5=6.7 |m10=6.8 |m15=5.3 |m20=5.2 |m25=5.1 |m30=4.4 |m35=3.5 |m40=3 |m45=2 |m50=1.7 |m55=1.2 |m60=0.9 |m65=0.6 |m70=0.5 |m75=0.1 |m80=0.2 |m85=0
-|f0=6.7 |f5=6.3 |f10=5.7 |f15=4.8 |f20=4.6 |f25=4.5 |f30=3.5 |f35=3 |f40=1.9 |f45=1.5 |f50=1.1 |f55=1.2 |f60=0.7 |f65=0.4 |f70=0.2 |f75=0.2 |f80=0.1 |f85=0.1
-|mmax=7
-|fmax=7
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=6.3 |m5=6.7 |m10=6.8 |m15=5.3 |m20=5.2 |m25=5.1 |m30=4.4 |m35=3.5 |m40=3 |m45=2 |m50=1.7 |m55=1.2 |m60=0.9 |m65=0.6 |m70=0.5 |m75=0.1 |m80=0.2 |m85=0 |f0=6.7 |f5=6.3 |f10=5.7 |f15=4.8 |f20=4.6 |f25=4.5 |f30=3.5 |f35=3 |f40=1.9 |f45=1.5 |f50=1.1 |f55=1.2 |f60=0.7 |f65=0.4 |f70=0.2 |f75=0.2 |f80=0.1 |f85=0.1
+|mmax=7 |fmax=7
 }}
 
 ==Languages and Indigenous identification==
@@ -135,11 +132,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''San Lorenzo''' || {{shade|color=red|87%}} || {{shade|color=red|67%}} || {{Decrease}} -20% || {{shade|color=blue|98%}} || {{shade|color=blue|63%}} || {{Decrease}} -35% || {{shade|color=green|49%}} || {{shade|color=green|5%}} || {{Decrease}} -44%
+| align=left | '''San Lorenzo''' || {{shade|color=red|87}}% || {{shade|color=red|67}}% || {{Decrease}} -20% || {{shade|color=blue|98}}% || {{shade|color=blue|63}}% || {{Decrease}} -35% || {{shade|color=green|49}}% || {{shade|color=green|5}}% || {{Decrease}} -44%
 |-
-| align=left | Pando || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | Pando || {{shade|color=red|59}}% || {{shade|color=red|41}}% || {{Decrease}} -18% || {{shade|color=blue|58}}% || {{shade|color=blue|38}}% || {{Decrease}} -20% || {{shade|color=green|65}}% || {{shade|color=green|38}}% || {{Decrease}} -26%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}

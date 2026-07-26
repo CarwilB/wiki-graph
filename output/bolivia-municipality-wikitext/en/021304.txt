@@ -43,20 +43,17 @@ Calamarca has a municipal council with seven seats, as do all municipalities wit
 {| class="wikitable"
 |+ Population in Recent Censuses
 |-
-!! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+! 1992<ref>{{Cite| last = Instituto Nacional de Estadística| title = CENSO NACIONAL DE POBLACIÓN Y VIVIENDA 1992: Ficha Municipal| access-date = 2026-06-22| date = 2018-12-17| url = https://anda.ine.gob.bo/index.php/catalog/47}}</ref> !! 2001 !! 2012 !! 2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
 |-
 || 9,716 || 12,112 || 12,413
 || 15,327
 |}
 
 {{Population pyramid
-|year=2024
-|m0=3.8 |m5=4.9 |m10=4.7 |m15=3.6 |m20=3.9 |m25=3.8 |m30=3.3 |m35=3.1 |m40=3 |m45=3.1 |m50=2.4 |m55=2.8 |m60=2.8 |m65=2 |m70=1.4 |m75=1 |m80=0.6 |m85=0.4
-|f0=3.6 |f5=4.5 |f10=4.8 |f15=4.1 |f20=3.7 |f25=3.8 |f30=3.1 |f35=3 |f40=3 |f45=2.5 |f50=3 |f55=2.6 |f60=2.5 |f65=1.9 |f70=1.4 |f75=1 |f80=0.6 |f85=0.5
-|mmax=5
-|fmax=5
-|source=2024 Bolivian Census
-|sourceref={{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}
+|title=
+|year=2024<ref>{{Cite| last = Instituto Nacional de Estadística| title = Población censada e indicadores demográficos: Tabulados por Municipio/TIOC| date = 2025| url = https://nube.ine.gob.bo/index.php/s/0OrfPjzMB16fATQ/download}}</ref>
+|m0=3.8 |m5=4.9 |m10=4.7 |m15=3.6 |m20=3.9 |m25=3.8 |m30=3.3 |m35=3.1 |m40=3 |m45=3.1 |m50=2.4 |m55=2.8 |m60=2.8 |m65=2 |m70=1.4 |m75=1 |m80=0.6 |m85=0.4 |f0=3.6 |f5=4.5 |f10=4.8 |f15=4.1 |f20=3.7 |f25=3.8 |f30=3.1 |f35=3 |f40=3 |f45=2.5 |f50=3 |f55=2.6 |f60=2.5 |f65=1.9 |f70=1.4 |f75=1 |f80=0.6 |f85=0.5
+|mmax=5 |fmax=5
 }}
 
 ==Languages and Indigenous identification==
@@ -135,11 +132,11 @@ The following communities are located within the municipality:<ref>{{Cite| last 
 |-
 ! align=left | !! 2012 !! 2024 !! Change !! 2001 !! 2024 !! Change !! 2001 !! 2024 !! Change
 |-
-| align=left | '''Calamarca''' || {{shade|color=red|81%}} || {{shade|color=red|54%}} || {{Decrease}} -27% || {{shade|color=blue|57%}} || {{shade|color=blue|18%}} || {{Decrease}} -39% || {{shade|color=green|71%}} || {{shade|color=green|44%}} || {{Decrease}} -28%
+| align=left | '''Calamarca''' || {{shade|color=red|81}}% || {{shade|color=red|54}}% || {{Decrease}} -27% || {{shade|color=blue|57}}% || {{shade|color=blue|18}}% || {{Decrease}} -39% || {{shade|color=green|71}}% || {{shade|color=green|44}}% || {{Decrease}} -28%
 |-
-| align=left | La Paz || {{shade|color=red|NA%}} || {{shade|color=red|NA%}} || - || {{shade|color=blue|NA%}} || {{shade|color=blue|NA%}} || - || {{shade|color=green|NA%}} || {{shade|color=green|NA%}} || -
+| align=left | La Paz || {{shade|color=red|46}}% || {{shade|color=red|32}}% || {{Decrease}} -15% || {{shade|color=blue|24}}% || {{shade|color=blue|10}}% || {{Decrease}} -14% || {{shade|color=green|48}}% || {{shade|color=green|27}}% || {{Decrease}} -22%
 |-
-| align=left | Bolivia || {{shade|color=red|45%}} || {{shade|color=red|30%}} || {{Decrease}} -15% || {{shade|color=blue|27%}} || {{shade|color=blue|13%}} || {{Decrease}} -14% || {{shade|color=green|59%}} || {{shade|color=green|36%}} || {{Decrease}} -22%
+| align=left | Bolivia || {{shade|color=red|45}}% || {{shade|color=red|30}}% || {{Decrease}} -15% || {{shade|color=blue|27}}% || {{shade|color=blue|13}}% || {{Decrease}} -14% || {{shade|color=green|59}}% || {{shade|color=green|36}}% || {{Decrease}} -22%
 |-
 |colspan="10"|NBI indicates a Unsatisfied Basic Needs definition for poverty. '''Source:''' [[National Institute of Statistics of Bolivia|INE Bolivia]], 2024 Bolivian Census<ref>{{Cite| last = Instituto Nacional de Estadística| title = Pobreza: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/KQSoTrfdRQ5jldM/download}}<br/>{{Cite| last = Instituto Nacional de Estadística| title = Servicios Básicos: Tabulados por Municipio/TIOC| access-date = 2026-07-22| date = 2025| url = https://nube.ine.gob.bo/index.php/s/dEJeTU4j0czYIdG/download}}</ref>
 |}
